@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Study · Human Body</title>
+  <meta name="description" content="Test yourself: identify highlighted structures in 3D, flip through flashcards by system or region, and quiz your medical terminology.">
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="../site/site.css">
+</head>
+<body>
+<main class="wrap">
+  <div class="breadcrumb"><a href="../index.html">Home</a> › Study</div>
+  <h1>Study</h1>
+  <p class="lead">Learning anatomy is mostly retrieval practice. Pick a scope, let the atlas highlight a structure, and name it. Scores stay on your device.</p>
+
+  <h2>Identify the structure in 3D</h2>
+  <p class="muted">Each question highlights one structure in the atlas and offers four names from the same system. Keys 1–4 answer.</p>
+  <div class="grid grid-3" id="identify"></div>
+
+  <h2>By region</h2>
+  <div class="chips" id="regions"></div>
+
+  <h2 id="terms">Terminology quiz</h2>
+  <p class="muted">Match the definition to the term. Ten questions per round.</p>
+  <div class="quiz-box" id="termquiz"></div>
+
+  <h2>Flashcards</h2>
+  <p class="muted">The atlas shows a structure; reveal its name and a one-line description, then move on.</p>
+  <div class="chips" id="cards"></div>
+</main>
+<script type="module">
+  import { renderHeader, renderFooter, loadData, link, esc } from '../site/site.js';
+  renderHeader('study'); renderFooter();
+  const { atlas, content, terms } = await loadData();
+  document.getElementById('identify').innerHTML = `<a class="card" href="${link.quiz()}"><h3>Whole body</h3><p>Any of the ${atlas.totals.structures.toLocaleString('en-US')} structures: the full challenge.</p></a>` + atlas.systems.filter(s => s.id !== 'skin' && s.count >= 8).map(s => `<a class="card" href="${link.quiz(s.id)}"><h3><span class="dot" style="background:${s.color}"></span>${esc(s.name)}</h3><p>${esc(s.summary)}</p><div class="meta">${s.count} pieces</div></a>`).join('');
+  document.getElementById('regions').innerHTML = content.regions.map(r => `<a class="chip" href="${link.quiz()}#r=${r.id}">${esc(r.name)} · ${r.structures.length}</a>`).join('');
+  document.getElementById('cards').innerHTML = `<a class="chip" href="${link.cards()}">All systems</a>` + atlas.systems.filter(s => s.id !== 'skin' && s.count >= 8).map(s => `<a class="chip" href="${link.cards(s.id)}">${esc(s.name)}</a>`).join('');
+
+  // terminology quiz
+  const box = document.getElementById('termquiz'); const pool = terms.terms.filter(t => t.definition);
+  let asked = 0, score = 0, current = null;
+  const pick = (arr) => arr[Math.floor(Math.random() * arr.length)];
+  function next() {
+    if (asked >= 10) { box.innerHTML = `<div class="q">Round complete: ${score} / 10</div><button class="btn btn-primary" id="again">Play again</button>`; box.querySelector('#again').addEventListener('click', () => { asked = 0; score = 0; next(); }); return; }
+    const answer = pick(pool); const same = pool.filter(t => t.category === answer.category && t.id !== answer.id);
+    const opts = new Set([answer]); while (opts.size < 4) opts.add(pick(same.length >= 3 ? same : pool.filter(t => t.id !== answer.id)));
+    current = { answer, options: [...opts].sort(() => Math.random() - 0.5), done: false };
+    box.innerHTML = `<div class="eyebrow">Question ${asked + 1} of 10 · ${esc(terms.categories.find(c => c.id === answer.category)?.name || '')}</div><div class="q">${esc(answer.definition)}</div><div class="opts">${current.options.map(t => `<button class="btn" data-id="${t.id}">${esc(t.term)}</button>`).join('')}</div><p class="muted small" id="fb" style="margin-top:10px"></p>`;
+    for (const b of box.querySelectorAll('[data-id]')) b.addEventListener('click', () => answerQ(b.dataset.id));
+  }
+  function answerQ(id) {
+    if (current.done) return; current.done = true; asked++;
+    const right = id === current.answer.id; if (right) score++;
+    for (const b of box.querySelectorAll('[data-id]')) { if (b.dataset.id === current.answer.id) b.classList.add('is-right'); else if (b.dataset.id === id) b.classList.add('is-wrong'); }
+    box.querySelector('#fb').innerHTML = `${right ? 'Correct.' : `Not quite: it is <b>${esc(current.answer.term)}</b>.`} ${current.answer.example ? esc(current.answer.example) : ''} <button class="btn btn-sm btn-primary" id="nx" style="margin-left:8px">Next</button>`;
+    box.querySelector('#nx').addEventListener('click', next);
+  }
+  next();
+</script>
+</body>
+</html>

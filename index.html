@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Human Body · interactive anatomy platform</title>
+  <meta name="description" content="An open, interconnected human body knowledge platform. Explore 2,234 anatomical structures in 3D, browse body systems and organs, learn medical terminology and test yourself.">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="site/site.css">
+</head>
+<body>
+<main class="wrap">
+  <section class="hero">
+    <div>
+      <div class="eyebrow">Human Body Platform · Phase 1</div>
+      <h1>The human body, piece by piece.</h1>
+      <p class="lead">An interactive atlas of <b id="n-pieces">2,234</b> individually selectable anatomical structures in 16 systems, built on the open BodyParts3D dataset, with organ, region and terminology layers that every future section connects to.</p>
+      <div class="actions">
+        <a class="btn btn-primary" href="explorer/index.html">Open the 3D explorer</a>
+        <a class="btn" href="systems/index.html">Browse body systems</a>
+        <a class="btn" href="study/index.html">Study mode</a>
+      </div>
+      <div class="stats" id="stats">
+        <div class="stat"><b>2,234</b><span>modelled pieces</span></div>
+        <div class="stat"><b>1,671</b><span>named structures</span></div>
+        <div class="stat"><b>16</b><span>body systems</span></div>
+        <div class="stat"><b>39</b><span>organs &amp; groups</span></div>
+      </div>
+    </div>
+    <a class="hero-art" href="explorer/index.html" aria-label="Open the 3D explorer"><img src="site/hero.jpg" alt="The 3D atlas showing muscles, skeleton and vessels of the whole body" width="1400" height="900" loading="eager"></a>
+  </section>
+
+  <h2>What you can do today</h2>
+  <div class="grid grid-3">
+    <a class="card" href="explorer/index.html"><div class="eyebrow">Explore</div><h3>3D anatomy explorer</h3><p>Orbit, click and search every structure. Toggle systems, isolate organs, slice the body on three planes, explode it into parts or lay every piece out as an inventory.</p><div class="meta">Streams in seconds · works on phones</div></a>
+    <a class="card" href="systems/index.html"><div class="eyebrow">Human body</div><h3>Body systems</h3><p>Sixteen system pages with overviews, functions, clinical notes and the full list of modelled structures, each linked into the 3D view.</p></a>
+    <a class="card" href="organs/index.html"><div class="eyebrow">Human body</div><h3>Organs</h3><p>Brain, heart, lungs, liver, kidneys and 34 more organs and skeletal groups assembled from their pieces, with a live 3D view on every page.</p></a>
+    <a class="card" href="learn/terminology.html"><div class="eyebrow">Learn</div><h3>Medical terminology</h3><p>Directional terms, planes, movements, regions and the word parts that unlock medical language, each with a jump into the atlas.</p></a>
+    <a class="card" href="study/index.html"><div class="eyebrow">Study</div><h3>Quizzes &amp; flashcards</h3><p>Identify highlighted structures in 3D, flip through flashcards by system or region, and test your terminology.</p></a>
+    <a class="card" href="roadmap/index.html"><div class="eyebrow">Platform</div><h3>Roadmap</h3><p>Symptoms, conditions, tests, imaging, procedures, medications, first aid and health will hang off this same anatomy backbone. See the plan and the data model.</p></a>
+  </div>
+
+  <h2>One connected body of knowledge</h2>
+  <p class="lead">Every page is built from reusable entities with explicit links, so a reader can move naturally from a body part to its function, its conditions and the tests, procedures and treatments that follow.</p>
+  <div class="grid" id="sections"></div>
+
+  <div class="callout">This is an educational atlas of one adult male reference body. It is not a diagnostic tool and does not give medical advice.</div>
+</main>
+<script type="module">
+  import { renderHeader, renderFooter, SECTIONS, loadData, esc } from './site/site.js';
+  renderHeader('home'); renderFooter();
+  document.getElementById('sections').innerHTML = SECTIONS.map(s => `<a class="card ${s.live ? '' : 'planned'}" href="${s.href}"><h3>${esc(s.name)} <span class="badge ${s.live ? 'live' : 'planned'}">${s.live ? 'live' : 'planned'}</span></h3><p>${s.items ? s.items.map(i => i.name).join(' · ') : 'Planned for a later phase; every entry will link back to the anatomy it concerns.'}</p></a>`).join('');
+  loadData().then(({ atlas, content }) => {
+    const set = (i, v) => { document.querySelectorAll('.stat b')[i].textContent = v.toLocaleString('en-US'); };
+    set(0, atlas.totals.pieces); set(1, atlas.totals.structures); set(2, atlas.systems.length); set(3, content.organs.length);
+  }).catch(() => {});
+</script>
+</body>
+</html>

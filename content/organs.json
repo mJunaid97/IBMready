@@ -1,0 +1,601 @@
+[
+ {
+  "id": "brain",
+  "name": "Brain",
+  "system": "nervous",
+  "region": "head",
+  "summary": "The cerebrum, cerebellum and brainstem: about 1.4 kg of tissue that controls thought, movement, sensation and every organ.",
+  "match": {
+   "systems": [
+    "nervous"
+   ],
+   "regex": "gyrus|lobe|cerebell|pons|medulla|midbrain|thalam|hypothalam|amygdala|hippocamp|putamen|caudate nucleus|pallidus|insula|capsule|fornix|corpus callosum|commissure|septum|colliculus|geniculate|mammillary|tuber cinereum|pineal|habenula|stria|peduncle|white matter|ventricle|aqueduct|foramen|lamina terminalis|choroid plexus|optic chiasm|optic tract|fossa|telencephalon"
+  },
+  "aliases": [
+   "cerebrum"
+  ]
+ },
+ {
+  "id": "cerebellum",
+  "name": "Cerebellum",
+  "system": "nervous",
+  "region": "head",
+  "summary": "The 'little brain' behind the brainstem coordinates balance, posture and the timing of movements.",
+  "match": {
+   "names": [
+    "Cerebellum"
+   ]
+  },
+  "aliases": []
+ },
+ {
+  "id": "brainstem",
+  "name": "Brainstem",
+  "system": "nervous",
+  "region": "head",
+  "summary": "Midbrain, pons and medulla connect the brain to the spinal cord and run breathing, heart rate and consciousness.",
+  "match": {
+   "names": [
+    "Midbrain",
+    "Pons",
+    "Medulla oblongata",
+    "Peduncle of midbrain"
+   ]
+  },
+  "aliases": [
+   "brain stem"
+  ]
+ },
+ {
+  "id": "eye",
+  "name": "Eye",
+  "system": "sensory",
+  "region": "head",
+  "summary": "The eyeball and its parts: cornea, lens, iris, retina and the tissues that protect and move it.",
+  "match": {
+   "systems": [
+    "sensory"
+   ],
+   "regex": "eyeball|cornea|sclera|choroid|iris|lens|retina|vitreous|ciliar|lacrimal|tarsal plate"
+  },
+  "aliases": [
+   "eyes",
+   "eyeball",
+   "vision"
+  ]
+ },
+ {
+  "id": "ear",
+  "name": "Ear",
+  "system": "sensory",
+  "region": "head",
+  "summary": "The external ear gathers sound; the middle and inner ear (not modelled here) convert it to nerve signals and sense balance.",
+  "match": {
+   "names": [
+    "External ear"
+   ]
+  },
+  "aliases": [
+   "ears",
+   "hearing"
+  ]
+ },
+ {
+  "id": "nose",
+  "name": "Nose",
+  "system": "respiratory",
+  "region": "head",
+  "summary": "Nasal bones and cartilages shape the nose; the conchae inside warm and filter the air.",
+  "match": {
+   "regex": "nasal|alar cartilage|nose|vomer|concha",
+   "systems": [
+    "skeleton",
+    "respiratory"
+   ]
+  },
+  "aliases": [
+   "nasal"
+  ]
+ },
+ {
+  "id": "tongue",
+  "name": "Tongue",
+  "system": "digestive",
+  "region": "head",
+  "summary": "A muscular organ for taste, chewing, swallowing and speech.",
+  "match": {
+   "names": [
+    "Tongue"
+   ]
+  },
+  "aliases": []
+ },
+ {
+  "id": "larynx",
+  "name": "Larynx",
+  "system": "respiratory",
+  "region": "neck",
+  "summary": "The voice box: a cartilage frame with the vocal ligaments, guarding the airway and producing sound.",
+  "match": {
+   "regex": "thyroid cartilage|cricoid|arytenoid|epiglott|corniculate|cuneiform cartilage|vocal|conus elasticus|thyrohyoid|cricothyroid|crico-arytenoid|vocalis|aryepiglott"
+  },
+  "aliases": [
+   "voice box",
+   "vocal cords"
+  ]
+ },
+ {
+  "id": "trachea-bronchi",
+  "name": "Trachea & bronchial tree",
+  "system": "respiratory",
+  "region": "thorax",
+  "summary": "The windpipe and the branching airways that carry air into every segment of the lungs.",
+  "match": {
+   "regex": "trachea|bronch"
+  },
+  "aliases": [
+   "windpipe",
+   "airway",
+   "airways",
+   "bronchi"
+  ]
+ },
+ {
+  "id": "lungs",
+  "name": "Lungs",
+  "system": "respiratory",
+  "region": "thorax",
+  "summary": "Two spongy organs of gas exchange. This dataset models the lungs through their segmental bronchial trees and pulmonary vessels rather than as solid lobes.",
+  "match": {
+   "regex": "bronchial tree|pulmonary (artery|vein|trunk)|segmental (artery|vein)$|lingular"
+  },
+  "aliases": [
+   "lung",
+   "pulmonary"
+  ]
+ },
+ {
+  "id": "heart",
+  "name": "Heart",
+  "system": "heart",
+  "region": "thorax",
+  "summary": "The four-chambered pump that drives blood around the body.",
+  "match": {
+   "systems": [
+    "heart"
+   ]
+  },
+  "aliases": [
+   "cardiac"
+  ]
+ },
+ {
+  "id": "coronary",
+  "name": "Coronary vessels",
+  "system": "arteries",
+  "region": "thorax",
+  "summary": "The arteries and veins that supply and drain the heart muscle itself.",
+  "match": {
+   "regex": "coronary|interventricular (branch|vein)|cardiac vein|marginal (branch|vein)|conus (branch|artery)|posterior vein of left ventricle|septal branch|diagonal branch"
+  },
+  "aliases": [
+   "coronary arteries",
+   "coronary veins"
+  ]
+ },
+ {
+  "id": "aorta",
+  "name": "Aorta",
+  "system": "arteries",
+  "region": "thorax",
+  "summary": "The largest artery, carrying blood from the left ventricle to the whole body.",
+  "match": {
+   "regex": "aorta$|^aortic|of aorta$|bifurcation of aorta"
+  },
+  "aliases": [
+   "aortic"
+  ]
+ },
+ {
+  "id": "diaphragm",
+  "name": "Diaphragm",
+  "system": "muscles",
+  "region": "thorax",
+  "summary": "The dome-shaped muscle separating chest from abdomen; the main muscle of breathing.",
+  "match": {
+   "names": [
+    "Diaphragm"
+   ]
+  },
+  "aliases": []
+ },
+ {
+  "id": "oesophagus",
+  "name": "Oesophagus",
+  "system": "digestive",
+  "region": "thorax",
+  "summary": "A muscular tube carrying swallowed food from the pharynx to the stomach.",
+  "match": {
+   "names": [
+    "Esophagus"
+   ]
+  },
+  "aliases": [
+   "esophagus",
+   "gullet"
+  ]
+ },
+ {
+  "id": "stomach",
+  "name": "Stomach",
+  "system": "digestive",
+  "region": "abdomen",
+  "summary": "A muscular bag that churns food with acid and enzymes before releasing it into the duodenum.",
+  "match": {
+   "names": [
+    "Stomach"
+   ]
+  },
+  "aliases": [
+   "gastric"
+  ]
+ },
+ {
+  "id": "small-intestine",
+  "name": "Small intestine",
+  "system": "digestive",
+  "region": "abdomen",
+  "summary": "Duodenum, jejunum and ileum: about six metres where most digestion and absorption happens.",
+  "match": {
+   "regex": "duodenum|jejunum|ileum|ileocecal|mesentery of small intestine"
+  },
+  "aliases": [
+   "bowel",
+   "gut",
+   "duodenum",
+   "jejunum",
+   "ileum"
+  ]
+ },
+ {
+  "id": "large-intestine",
+  "name": "Large intestine",
+  "system": "digestive",
+  "region": "abdomen",
+  "summary": "Caecum, appendix, colon and rectum absorb water and form stool.",
+  "match": {
+   "regex": "colon$|^appendix|rectum|taenia|mesoappendix|mesocolon|caecum|cecum"
+  },
+  "aliases": [
+   "colon",
+   "bowel",
+   "rectum",
+   "appendix",
+   "caecum"
+  ]
+ },
+ {
+  "id": "liver",
+  "name": "Liver",
+  "system": "digestive",
+  "region": "abdomen",
+  "summary": "The body's chemical factory: it processes nutrients, detoxifies blood and makes bile. Modelled as eight hepatovenous segments with the biliary tree.",
+  "match": {
+   "regex": "hepatovenous segment|caudate lobe of liver|hepatic duct|biliary tree|duct of caudate lobe"
+  },
+  "aliases": [
+   "hepatic"
+  ]
+ },
+ {
+  "id": "gallbladder",
+  "name": "Gallbladder & bile ducts",
+  "system": "digestive",
+  "region": "abdomen",
+  "summary": "Stores and concentrates bile, releasing it into the duodenum through the cystic and common bile ducts.",
+  "match": {
+   "regex": "gallbladder|cystic duct|hepatic duct|biliary"
+  },
+  "aliases": [
+   "gall bladder",
+   "bile duct",
+   "biliary"
+  ]
+ },
+ {
+  "id": "pancreas",
+  "name": "Pancreas",
+  "system": "digestive",
+  "region": "abdomen",
+  "summary": "Makes digestive enzymes and the hormones insulin and glucagon.",
+  "match": {
+   "regex": "pancrea",
+   "systems": [
+    "digestive"
+   ]
+  },
+  "aliases": [
+   "pancreatic"
+  ]
+ },
+ {
+  "id": "spleen",
+  "name": "Spleen",
+  "system": "lymphatic",
+  "region": "abdomen",
+  "summary": "Filters blood, recycles red cells and houses immune cells.",
+  "match": {
+   "names": [
+    "Spleen"
+   ]
+  },
+  "aliases": [
+   "splenic"
+  ]
+ },
+ {
+  "id": "kidneys",
+  "name": "Kidneys",
+  "system": "urinary",
+  "region": "abdomen",
+  "summary": "Paired filters that clean the blood and regulate fluid and salts.",
+  "match": {
+   "names": [
+    "Left kidney",
+    "Right kidney"
+   ]
+  },
+  "aliases": [
+   "kidney",
+   "renal"
+  ]
+ },
+ {
+  "id": "adrenals",
+  "name": "Adrenal glands",
+  "system": "endocrine",
+  "region": "abdomen",
+  "summary": "Glands on top of each kidney producing cortisol, aldosterone and adrenaline.",
+  "match": {
+   "regex": "adrenal gland"
+  },
+  "aliases": [
+   "adrenal",
+   "adrenal gland",
+   "suprarenal"
+  ]
+ },
+ {
+  "id": "bladder",
+  "name": "Urinary bladder & urethra",
+  "system": "urinary",
+  "region": "pelvis",
+  "summary": "The bladder stores urine; the urethra carries it out of the body.",
+  "match": {
+   "names": [
+    "Urinary bladder",
+    "Urethra"
+   ]
+  },
+  "aliases": [
+   "urinary bladder",
+   "urethra"
+  ]
+ },
+ {
+  "id": "ureters",
+  "name": "Ureters",
+  "system": "urinary",
+  "region": "abdomen",
+  "summary": "Muscular tubes carrying urine from the kidneys to the bladder.",
+  "match": {
+   "regex": "ureter"
+  },
+  "aliases": [
+   "ureter"
+  ]
+ },
+ {
+  "id": "prostate",
+  "name": "Prostate",
+  "system": "reproductive",
+  "region": "pelvis",
+  "summary": "A walnut-sized gland below the bladder that adds fluid to semen.",
+  "match": {
+   "names": [
+    "Prostate"
+   ]
+  },
+  "aliases": []
+ },
+ {
+  "id": "testes",
+  "name": "Testes & epididymis",
+  "system": "reproductive",
+  "region": "pelvis",
+  "summary": "The testes produce sperm and testosterone; the epididymis stores maturing sperm.",
+  "match": {
+   "regex": "testis|epididymis|deferent duct|seminal vesicle"
+  },
+  "aliases": [
+   "testis",
+   "testicle",
+   "testicles",
+   "epididymis"
+  ]
+ },
+ {
+  "id": "penis",
+  "name": "Penis",
+  "system": "reproductive",
+  "region": "pelvis",
+  "summary": "Erectile bodies (corpora cavernosa and spongiosum) and the glans.",
+  "match": {
+   "regex": "penis",
+   "systems": [
+    "reproductive"
+   ]
+  },
+  "aliases": []
+ },
+ {
+  "id": "pituitary",
+  "name": "Pituitary gland",
+  "system": "endocrine",
+  "region": "head",
+  "summary": "The master gland at the base of the brain, controlling growth, thyroid, adrenal and reproductive hormones.",
+  "match": {
+   "names": [
+    "Pituitary gland"
+   ]
+  },
+  "aliases": [
+   "hypophysis"
+  ]
+ },
+ {
+  "id": "thymus",
+  "name": "Thymus",
+  "system": "lymphatic",
+  "region": "thorax",
+  "summary": "Behind the sternum; trains T lymphocytes in childhood and shrinks with age.",
+  "match": {
+   "regex": "thymus"
+  },
+  "aliases": []
+ },
+ {
+  "id": "skull",
+  "name": "Skull",
+  "system": "skeleton",
+  "region": "head",
+  "summary": "22 bones forming the cranium that protects the brain and the facial skeleton.",
+  "match": {
+   "systems": [
+    "skeleton"
+   ],
+   "regex": "frontal bone|parietal bone|temporal bone|occipital bone|sphenoid|ethmoid|zygomatic|maxilla|mandible|nasal bone|lacrimal bone|palatine bone|vomer|nasal concha|hyoid"
+  },
+  "aliases": [
+   "cranium",
+   "head bones",
+   "jaw"
+  ]
+ },
+ {
+  "id": "spine",
+  "name": "Vertebral column",
+  "system": "skeleton",
+  "region": "thorax",
+  "summary": "33 vertebrae with their discs: the flexible pillar that carries the head and protects the spinal cord.",
+  "match": {
+   "regex": "vertebra|^atlas$|^axis$|sacrum|coccyx|intervertebral",
+   "systems": [
+    "skeleton",
+    "joints"
+   ]
+  },
+  "aliases": [
+   "spine",
+   "backbone",
+   "vertebrae",
+   "vertebral column",
+   "spinal column"
+  ]
+ },
+ {
+  "id": "rib-cage",
+  "name": "Rib cage",
+  "system": "skeleton",
+  "region": "thorax",
+  "summary": "Twelve pairs of ribs, their costal cartilages and the sternum protect the heart and lungs and move with breathing.",
+  "match": {
+   "regex": "\\brib$|costal cartilage|sternum|manubrium|xiphoid",
+   "systems": [
+    "skeleton",
+    "joints"
+   ]
+  },
+  "aliases": [
+   "ribs",
+   "rib cage",
+   "chest",
+   "sternum",
+   "breastbone"
+  ]
+ },
+ {
+  "id": "pelvic-girdle",
+  "name": "Bony pelvis",
+  "system": "skeleton",
+  "region": "pelvis",
+  "summary": "The two hip bones with the sacrum and coccyx transfer body weight to the legs and protect pelvic organs.",
+  "match": {
+   "regex": "hip bone|sacrum|coccyx",
+   "systems": [
+    "skeleton",
+    "joints"
+   ]
+  },
+  "aliases": [
+   "pelvis",
+   "hip",
+   "hip bones"
+  ]
+ },
+ {
+  "id": "shoulder-girdle",
+  "name": "Shoulder girdle",
+  "system": "skeleton",
+  "region": "upper-limb",
+  "summary": "Clavicle and scapula link each arm to the trunk.",
+  "match": {
+   "regex": "clavicle|scapula",
+   "systems": [
+    "skeleton",
+    "joints"
+   ]
+  },
+  "aliases": [
+   "shoulder",
+   "collarbone",
+   "shoulder blade"
+  ]
+ },
+ {
+  "id": "hand",
+  "name": "Hand skeleton",
+  "system": "skeleton",
+  "region": "upper-limb",
+  "summary": "27 bones per hand: 8 carpals, 5 metacarpals and 14 phalanges.",
+  "match": {
+   "systems": [
+    "skeleton"
+   ],
+   "regex": "metacarpal|finger|thumb|scaphoid|lunate|triquetr|pisiform|trapezium|trapezoid|capitate|hamate|carpal"
+  },
+  "aliases": [
+   "wrist",
+   "fingers",
+   "carpal bones"
+  ]
+ },
+ {
+  "id": "foot",
+  "name": "Foot skeleton",
+  "system": "skeleton",
+  "region": "lower-limb",
+  "summary": "26 bones per foot: 7 tarsals, 5 metatarsals and 14 phalanges.",
+  "match": {
+   "systems": [
+    "skeleton"
+   ],
+   "regex": "metatarsal|toe|calcaneus|talus|navicular|cuboid|cuneiform bone|tarsal"
+  },
+  "aliases": [
+   "ankle",
+   "toes",
+   "tarsal bones"
+  ]
+ }
+]

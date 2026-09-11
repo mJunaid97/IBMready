@@ -1,0 +1,17 @@
+{
+  "name": "human-atlas-tools",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Offline build pipeline for the Human Atlas: converts BodyParts3D meshes into compressed per-system GLB files.",
+  "type": "module",
+  "scripts": {
+    "build:atlas": "node build-atlas.mjs"
+  },
+  "dependencies": {
+    "gltfpack": "^1.2.0",
+    "three": "0.186.0"
+  },
+  "devDependencies": {
+    "esbuild": "^0.28.2"
+  }
+}

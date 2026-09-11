@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Medical terminology · Human Body</title>
+  <meta name="description" content="A searchable dictionary of anatomical and medical terms: directions, planes, movements, regions, structures and the word parts that build medical language, each linked into the 3D atlas.">
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="../site/site.css">
+</head>
+<body>
+<main class="wrap">
+  <div class="breadcrumb"><a href="../index.html">Home</a> › Learn</div>
+  <h1>Medical terminology</h1>
+  <p class="lead">The vocabulary that anatomy, physiology and clinical medicine are written in. Most terms link straight into the 3D atlas so you can see what the word points at.</p>
+  <div class="search-row"><input id="q" type="search" placeholder="Search terms, e.g. proximal, -itis, sagittal" aria-label="Search terms"></div>
+  <div class="chips" id="cats"></div>
+  <div id="terms"></div>
+</main>
+<script type="module">
+  import { renderHeader, renderFooter, loadData, termLink, esc } from '../site/site.js';
+  renderHeader('terminology'); renderFooter();
+  const data = await loadData(); const { terms } = data;
+  const byId = new Map(terms.terms.map(t => [t.id, t]));
+  let cat = 'all'; const q = document.getElementById('q');
+  const cats = document.getElementById('cats');
+  cats.innerHTML = `<button class="chip is-active" data-cat="all">All ${terms.terms.length}</button>` + terms.categories.map(c => `<button class="chip" data-cat="${c.id}">${esc(c.name)} ${terms.terms.filter(t => t.category === c.id).length}</button>`).join('');
+  cats.addEventListener('click', (e) => { const b = e.target.closest('[data-cat]'); if (!b) return; cat = b.dataset.cat; for (const x of cats.children) x.classList.toggle('is-active', x === b); render(); });
+  q.addEventListener('input', render);
+  function render() {
+    const s = q.value.trim().toLowerCase();
+    const list = terms.terms.filter(t => (cat === 'all' || t.category === cat) && (!s || [t.term, t.definition, t.plain, t.example].join(' ').toLowerCase().includes(s)));
+    const catName = (id) => terms.categories.find(c => c.id === id)?.name || '';
+    document.getElementById('terms').innerHTML = list.length ? list.map(t => {
+      const see = termLink(t, data);
+      const rel = [...(t.opposite ? [['Opposite', t.opposite]] : []), ...(t.related || []).map(r => ['Related', r])].filter(([, id]) => byId.has(id));
+      return `<article class="term" id="${t.id}"><div class="eyebrow">${esc(catName(t.category))}</div><h3>${esc(t.term)}</h3><p>${esc(t.definition)}</p>${t.plain ? `<p class="plain">${esc(t.plain)}</p>` : ''}<dl>${t.example ? `<dt>Example</dt><dd>${esc(t.example)}</dd>` : ''}${rel.map(([k, id]) => `<dt>${k}</dt><dd><a href="#${id}">${esc(byId.get(id).term)}</a></dd>`).join('')}${see ? `<dt>Atlas</dt><dd><a href="${see}">See it in 3D ↗</a></dd>` : ''}</dl></article>`;
+    }).join('') : '<p class="muted">No terms match.</p>';
+  }
+  render();
+  if (location.hash) setTimeout(() => document.getElementById(location.hash.slice(1))?.scrollIntoView({ block: 'center' }), 50);
+</script>
+</body>
+</html>
