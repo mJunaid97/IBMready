@@ -269,13 +269,38 @@ export class AtlasViewer extends EventTarget {
       let sum = 0; for (const v of got.values()) sum += v;
       if (onProgress) onProgress({ fraction: Math.min(1, sum / totalBytes), system: sys.def, loadedSystems: this.systems.filter(s => s.loaded).length, total: this.systems.length });
     };
+    // Geometry is fetched by hand so that hosts which cannot serve .glb files can fall back to a
+    // base64 twin (<file>.glb.json, produced by tools/encode-assets.py); ?assets=json forces it.
+    const forceJson = new URLSearchParams(location.search).get('assets') === 'json';
+    const fetchBytes = async (sys) => {
+      const url = this.dataBase + sys.def.file;
+      if (!forceJson) {
+        try {
+          const res = await fetch(url);
+          if (res.ok) {
+            if (!res.body) return res.arrayBuffer();
+            const reader = res.body.getReader(); const chunks = []; let got = 0;
+            for (;;) { const { done, value } = await reader.read(); if (done) break; chunks.push(value); got += value.byteLength; report(sys, got); }
+            const buf = new Uint8Array(got); let off = 0; for (const c of chunks) { buf.set(c, off); off += c.byteLength; }
+            // 'glTF' magic: anything else (an HTML error page served with 200) means fall back to the JSON twin
+            if (got > 12 && buf[0] === 0x67 && buf[1] === 0x6c && buf[2] === 0x54 && buf[3] === 0x46) return buf.buffer;
+          }
+        } catch (e) { /* fall through to the JSON twin */ }
+      }
+      const res = await fetch(url + '.json');
+      if (!res.ok) throw new Error(`Cannot load ${sys.def.file} (${res.status})`);
+      const text = await res.text(); report(sys, sys.bytes * 0.9);
+      const b64 = JSON.parse(text).b64; const bin = atob(b64); const buf = new Uint8Array(bin.length);
+      for (let i = 0; i < bin.length; i++) buf[i] = bin.charCodeAt(i);
+      return buf.buffer;
+    };
     // Skeleton first so something meaningful appears quickly, then the rest in parallel (browser limits concurrency).
-    const loadOne = (sys) => new Promise((resolve, reject) => {
+    const loadOne = async (sys) => {
       sys.loading = true;
-      loader.load(this.dataBase + sys.def.file, (gltf) => {
-        try { this._addSystem(sys, gltf); report(sys, sys.bytes); resolve(); } catch (e) { reject(e); }
-      }, (ev) => { if (ev.lengthComputable || ev.loaded) report(sys, ev.loaded); }, reject);
-    });
+      const buffer = await fetchBytes(sys);
+      const gltf = await new Promise((resolve, reject) => loader.parse(buffer, this.dataBase, resolve, reject));
+      this._addSystem(sys, gltf); report(sys, sys.bytes);
+    };
     await loadOne(order[0]);
     await Promise.all(order.slice(1).map(loadOne));
     this.dispatchEvent(new CustomEvent('loaded'));
