@@ -34,11 +34,11 @@ jobs:
         run: |
           B="${{ github.event.inputs.base_url || 'https://anatomynexus.com/' }}"
           H=$(echo "$B" | sed -E 's#https?://([^/]+)/?#\1#')
-          for p in "" "anatomy/heart/" "conditions/gout/" "medications/amlodipine/" "explorer/" "sitemap.xml" "sitemaps/conditions.xml" "data/hd/glb/heart.glb" "site/previews/o-heart.jpg" "no-such-page"; do
+          for p in "" "anatomy/heart/" "conditions/gout/" "medications/amlodipine/" "tools/" "tools/drug-interaction-checker/" "editorial/drug-interaction-methodology/" "explorer/" "sitemap.xml" "sitemaps/conditions.xml" "data/hd/glb/heart.glb" "site/previews/o-heart.jpg" "no-such-page"; do
             echo "== ${B}${p}"; curl -sS -m 40 --connect-timeout 15 -o /dev/null -I -H "Accept-Encoding: gzip, br" -w "status %{http_code}  type %{content_type}\n" "${B}${p}" || true
           done
           echo "== redirects (expect 301 to the canonical URL, one hop)"
-          for p in "conditions/gout" "tests/cbc/" "medications/norvasc/" "organs/heart/" "learn/terminology.html" "conditions/condition.html?id=gout" "index.html"; do
+          for p in "conditions/gout" "tests/cbc/" "medications/norvasc/" "organs/heart/" "learn/terminology.html" "conditions/condition.html?id=gout" "index.html" "interactions/" "interactions/?drugs=amlodipine,losartan"; do
             printf "%-40s " "$p"; curl -sS -m 40 --connect-timeout 15 -o /dev/null -I -w "%{http_code} -> %{redirect_url}\n" "${B}${p}" || true
           done
           printf "%-40s " "http://www.$H/"; curl -sS -m 40 --connect-timeout 15 -o /dev/null -I -w "%{http_code} -> %{redirect_url}\n" "http://www.$H/" || true

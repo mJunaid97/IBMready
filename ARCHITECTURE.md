@@ -38,7 +38,7 @@ compiler routes cross-type ids into the matching typed field) and `references`.
 | **Procedure** (14) | `content/procedures.json` | what, why, before, steps, after, recovery, risks, alternatives | `conditions`, `symptoms`, `tests`, `imaging`, `medications`, `physiology` |
 | **Medication** (28) | `content/medications.json` | class, brands and prescription status by region, uses by status and jurisdiction, mechanism (plain and technical), pathway, targets, side effects, warnings, contraindications, interactions, monitoring, special populations, condition cautions, lab effects, pharmacokinetics | `conditions`, `symptoms`, `tests`, `biomarkers`, `targets`, `procedures`, `physiology`, `drugClass` |
 | **DrugClass** (24) | `content/drug-classes.json` | mechanism, targets, members, class effects, class warnings, class interactions, duplication rule | `medications`, `targets`, `conditions`, `physiology` |
-| **DrugInteraction** (69), **MedicationProduct** (14), **Comparison** (7) | `content/interactions.json`, `products.json`, `comparisons.json` | see `CLINICAL.md` | medication ↔ medication / class / named substance; product → ingredients; comparison → two entities |
+| **DrugInteraction** (69), **MedicationProduct** (14), **Comparison** (7) | `content/interactions.json`, `products.json`, `comparisons.json` | see `CLINICAL.md` | medication ↔ medication / class / named substance (`bAgents`); product → ingredients; comparison → two entities; every interaction record carries compiled links to the classes, organs, physiology, tests and biomarkers it concerns |
 | **FirstAidTopic** (16) | `content/first-aid.json` | recognise, steps, children, don't, call for, why (anatomy) | `conditions`, `symptoms`, `physiology`, `medications`, `tests` |
 | **HealthTopic** (7) | `content/health.json` | body, effects per system, guidance | `conditions`, `symptoms`, `physiology`, `tests` |
 | **MedicalTerm** (149) | `content/terms.json` | definition, plain, example, pronunciation, opposite, related, atlas link | `atlas` → structure / organ / region / system / slice |
@@ -102,9 +102,11 @@ each clinical page opens with live 3D of the anatomy it discusses.
 The structured clinical fields (components, thresholds, indications, warnings, contraindications,
 monitoring, populations, interactions, lab effects) are data with a source on every fact, validated
 by the compiler and rendered by `site/entity.js` in the order the specification prescribes; the
-interaction checker (`site/interactions.js`) and the comparisons (`site/compare.js`) read the
-compiled `data/content/interactions.json` and `comparisons.json`. `CLINICAL.md` documents the
-model, the source rules, the severity mapping and the review-status model.
+Drug Interaction Checker (`tools/drug-interaction-checker/`, `site/checker.js` over the pure engine
+`site/interaction-engine.js`) and the comparisons (`site/compare.js`) read the compiled
+`data/content/interactions.json` and `comparisons.json`. `CLINICAL.md` documents the model, the
+source rules, the severity states and their display tiers, the checker's API contract and the
+review-status model.
 
 ## Rendering pipeline (explorer)
 
@@ -168,8 +170,9 @@ Summarised here; `SEO.md` has the full map against the specification.
   (Medications › Class › Medicine), backlinks and `Drug.drugClass` schema.
 - **Biomarkers and drug targets**: two further entity types (`/biomarkers/`, `/targets/`) that tie
   tests to the substances they measure and medicines to what they act on; comparisons live at
-  `/compare/<slug>/`; the interaction checker at `/interactions/` is `noindex` and generates no
-  pair pages.
+  `/compare/<slug>/`; the Drug Interaction Checker at `/tools/drug-interaction-checker/` is one
+  indexable page (its `?drugs=` states canonicalise to it) and generates no pair pages; the
+  clinical tools hub is `/tools/` and the checker's methodology `/editorial/drug-interaction-methodology/`.
 - **Schema for medicines**: `Drug` nodes carry active ingredient, class, mechanism, routes,
   prescription status, contraindications, interacting drugs, food / alcohol / pregnancy /
   breastfeeding warnings and a link to the prescribing information; tests carry their range note

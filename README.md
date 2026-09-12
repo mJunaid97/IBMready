@@ -21,12 +21,13 @@ authoritative medical reference needs (see `SEO.md`).
 | Medical tests | `/tests/<test>/` | 26 tests: what they measure, why ordered, how done, reading the result, limitations. |
 | Imaging | `/imaging/<modality>/` | 7 modalities: how they work, what they show, best for / not for, dose, preparation, common uses. |
 | Procedures | `/procedures/<procedure>/` | 14 procedures step by step: indications, before, steps, after, recovery, risks, alternatives. |
-| Medications | `/medications/<generic-name>/` | 25 medicines by generic name (brand names redirect): class, uses, mechanism, forms, side effects, cautions, monitoring. |
+| Medications | `/medications/<generic-name>/` | 25 medicines by generic name (brand names redirect): class, uses, mechanism, forms, side effects, cautions, monitoring, interactions, and a *Check interactions* entry into the checker. |
 | Drug classes | `/drug-classes/<class>/` | 23 classes: mechanism, biological target, body system, conditions treated, members, class effects, cautions. |
 | First aid | `/first-aid/<topic>/` | 16 topics following Resuscitation Council UK / ERC guidance, each with the anatomy behind it. |
 | Health | `/health/<topic>/` | Exercise, sleep, nutrition, weight, smoking, alcohol, hydration through the systems they act on. |
 | Medical terms | `/medical-terms/` | 149 terms in 8 categories with pronunciation, plain meaning, examples, atlas links and the pages that use them. |
 | Study | `/study/` | Identify and locate structures in 3D, flashcards, quizzes over every section, generated viva questions. |
+| Clinical tools | `/tools/` | The tools hub. Its flagship is the **Drug Interaction Checker** (`/tools/drug-interaction-checker/`): add two or more medicines by generic name, brand, active ingredient or combination product and every pair is checked against the sourced interaction records, results ordered by severity with the state the cited source supports, duplicate ingredients, the cautious no-interaction wording, related anatomy and tests, sources and disclaimers. Its methodology is at `/editorial/drug-interaction-methodology/`. |
 | Search | `/search/` | One index over 2,100 structures, organs, systems, regions, terms and topics; also the header search box on every page. |
 | About | `/about/` … `/contact/` | About, editorial policy, medical review policy, references policy, corrections policy, disclaimer, contact. |
 
@@ -87,7 +88,7 @@ gate. Outputs:
 | `data/content/aliases.json` | URL alias → canonical slug per section (the 301 table) |
 | `data/content/search-index.json` | flat search index over everything |
 | `data/content/knowledge.json` | the whole graph in one file (267 topics, 4,700 typed links, 540 references) |
-| `data/content/interactions.json` | interaction records, class membership, products and the name index the interaction checker uses |
+| `data/content/interactions.json` | interaction records with their knowledge-graph links, class membership, products, named substances, the name index and the source metadata the Drug Interaction Checker uses |
 | `data/content/comparisons.json` | the comparisons |
 | `site/site-meta.js` | the site identity as an ES module for the page shell |
 
@@ -116,8 +117,10 @@ whole layer; `DEPLOY.md` the hosting.
 
 `.github/workflows/qa.yml` runs on every push and pull request:
 
-1. **Content graph** — `python3 tools/build-content.py` must succeed and the compiled
-   `data/content/` and `site/site-meta.js` must match what is committed.
+1. **Content graph** — `python3 tools/build-content.py` must succeed, the compiled
+   `data/content/` and `site/site-meta.js` must match what is committed, and the interaction
+   checker's engine tests (`node tools/qa/engine-test.mjs`: every pair checked, severity mapping,
+   duplication, the no-interaction wording, the API contract) must pass.
 2. **Production build and smoke test** — the package is built with prerendering and served with
    the URL rules emulated; `tools/qa/smoke.mjs` drives headless Chromium through every page
    type and all entity pages (one H1, unique title and description, canonical, robots, Open
@@ -189,14 +192,17 @@ explorer/             3D atlas (app.js, viewer.js, ui.js, search.js, styles.css)
 anatomy/ systems/     anatomy and system pages (templates + page scripts)
 organs/ medical-terms/ study/ search/ roadmap/
 conditions/ … health/ knowledge sections: a hub page and a detail template each, rendered by site/section.js
-biomarkers/ targets/  the clinical layer's own sections; compare/ (site/compare.js) and interactions/ (the checker, site/interactions.js)
+biomarkers/ targets/  the clinical layer's own sections; compare/ (site/compare.js)
+tools/                the clinical tools hub (index.html) and the Drug Interaction Checker (drug-interaction-checker/, site/checker.js
+                      over site/interaction-engine.js); the rest of tools/ is the build pipeline and is never deployed
+editorial/            the drug interaction methodology page (site/methodology.js)
 about/ … contact/     policy pages
 site/                 shared shell: site.js (URLs, header, footer, facade), seo.js (metadata, JSON-LD), entity.js
                       (templates, hubs), site.css, previews/ (3D preview images), site-meta.js (generated)
 data/                 built atlas (hd, lite), compiled content, ATTRIBUTION.md
 content/              editable content sources
 tools/                pipeline: build-content.py, package-site.py, prerender.mjs, render-previews.mjs,
-                      check-references.py, release.py, qa/ (smoke test, serve.py)
+                      check-references.py, release.py, qa/ (smoke test, engine-test.mjs, serve.py)
 vendor/three/         three.js r186 (minified core + the addons used)
 ARCHITECTURE.md       entity model and how sections connect · SEO.md the search architecture · CLINICAL.md the clinical layer
 ```

@@ -25,9 +25,10 @@ class Handler(http.server.SimpleHTTPRequestHandler):
         if m and q.get("id") and re.fullmatch(SLUG, q["id"][0]):
             d = "anatomy" if m.group(1) == "organs" else m.group(1)
             return f"/{d}/{q['id'][0]}/"
+        if path in ("/learn/terminology.html", "/learn", "/learn/"): return "/medical-terms/"
+        if path in ("/interactions", "/interactions/", "/interactions/index.html"): return "/tools/drug-interaction-checker/" + ("?" + query if query else "")
         m = re.match(r"^(/(?:.*/)?)index\.html$", path)
         if m: return m.group(1)
-        if path in ("/learn/terminology.html", "/learn", "/learn/"): return "/medical-terms/"
         m = re.match(r"^/(anatomy|organs)/" + SLUG + r"/?$", path)
         if m:
             slug = m.group(2); target = self.aliases.get("anatomy", {}).get(slug, slug)

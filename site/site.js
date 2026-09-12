@@ -41,7 +41,7 @@ export const TYPES = {
   health:         { name: 'Health',        singular: 'Health topic',     dir: 'health',       page: 'topic.html',      field: 'health',      icon: '🌿', descriptor: 'Effects on the Body & Guidance', blurb: 'Exercise, sleep, nutrition, weight, smoking, alcohol and hydration, explained through the organs they act on.' },
 };
 export const TYPE_ORDER = ['conditions', 'symptoms', 'physiology', 'tests', 'biomarkers', 'imaging', 'procedures', 'medications', 'drug-classes', 'targets', 'first-aid', 'health'];
-export const TYPE_LABEL = { structure: 'Structure', organ: 'Anatomy', system: 'Body system', region: 'Region', term: 'Term', physiology: 'Physiology', symptoms: 'Symptom', conditions: 'Condition', tests: 'Test', biomarkers: 'Biomarker', imaging: 'Imaging', procedures: 'Procedure', medications: 'Medication', 'drug-classes': 'Drug class', targets: 'Drug target', 'first-aid': 'First aid', health: 'Health', product: 'Product' };
+export const TYPE_LABEL = { structure: 'Structure', organ: 'Anatomy', system: 'Body system', region: 'Region', term: 'Term', physiology: 'Physiology', symptoms: 'Symptom', conditions: 'Condition', tests: 'Test', biomarkers: 'Biomarker', imaging: 'Imaging', procedures: 'Procedure', medications: 'Medication', 'drug-classes': 'Drug class', targets: 'Drug target', 'first-aid': 'First aid', health: 'Health', product: 'Product', substance: 'Named substance' };
 
 const esc = (s) => String(s ?? '').replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
 export { esc };
@@ -75,7 +75,10 @@ export const link = {
   search: (q) => url(paths.dir('search')) + (q ? '?q=' + encodeURIComponent(q) : ''),
   preview: (hash) => url(`site/previews/${previewName(hash)}.jpg`),
   compare: (id) => url(id ? paths.entity('compare', 'compare.html', id) : paths.dir('compare')),
-  interactions: (ids) => url(paths.dir('interactions')) + (ids && ids.length ? '?drugs=' + ids.map(encodeURIComponent).join(',') : ''),
+  tools: () => url(paths.dir('tools')),
+  /** The Drug Interaction Checker, optionally with medicines pre-selected: ?drug=<id> for one, ?drugs=<id>,<id> for several. */
+  checker: (ids) => url(paths.dir('tools/drug-interaction-checker')) + (ids && ids.length ? (ids.length === 1 ? '?drug=' : '?drugs=') + ids.map(encodeURIComponent).join(',') : ''),
+  methodology: () => url(paths.dir('editorial/drug-interaction-methodology')),
 };
 export function entityPath(type, id) { const t = TYPES[type]; return paths.entity(t.dir, t.page, id); }
 export function entityLink(type, id) { return TYPES[type] ? url(entityPath(type, id)) : '#'; }
@@ -104,7 +107,7 @@ export function anyLink(type, id) {
     case 'system': return link.systemPage(id);
     case 'region': return link.region(id);
     case 'term': return link.term(id);
-    case 'product': return link.interactions([id]);
+    case 'product': return link.checker([id]);
     default: return entityLink(type, id);
   }
 }
@@ -136,7 +139,7 @@ export function toggleTheme() {
   document.documentElement.dataset.theme = next; try { localStorage.setItem('atlas-theme', next); } catch {}
 }
 export const NAV_PRIMARY = [['anatomy', 'Anatomy', () => link.page('anatomy')], ['systems', 'Systems', () => link.page('systems')], ['conditions', 'Conditions', () => typeLink('conditions')], ['symptoms', 'Symptoms', () => typeLink('symptoms')], ['tests', 'Tests', () => typeLink('tests')], ['medications', 'Medications', () => typeLink('medications')], ['explorer', '3D explorer', () => link.explorer()], ['study', 'Study', () => link.page('study')]];
-export const NAV_MORE = [['organs', 'Organs', () => link.page('organs')], ['physiology', 'Physiology', () => typeLink('physiology')], ['biomarkers', 'Biomarkers', () => typeLink('biomarkers')], ['imaging', 'Imaging', () => typeLink('imaging')], ['procedures', 'Procedures', () => typeLink('procedures')], ['drug-classes', 'Drug classes', () => typeLink('drug-classes')], ['targets', 'Drug targets', () => typeLink('targets')], ['interactions', 'Interaction checker', () => link.interactions()], ['compare', 'Comparisons', () => link.compare()], ['first-aid', 'First aid', () => typeLink('first-aid')], ['health', 'Health', () => typeLink('health')], ['medical-terms', 'Medical terms', () => link.page('medical-terms')], ['search', 'Search everything', () => link.page('search')], ['about', 'About', () => link.page('about')]];
+export const NAV_MORE = [['organs', 'Organs', () => link.page('organs')], ['physiology', 'Physiology', () => typeLink('physiology')], ['biomarkers', 'Biomarkers', () => typeLink('biomarkers')], ['imaging', 'Imaging', () => typeLink('imaging')], ['procedures', 'Procedures', () => typeLink('procedures')], ['drug-classes', 'Drug classes', () => typeLink('drug-classes')], ['targets', 'Drug targets', () => typeLink('targets')], ['tools', 'Clinical tools', () => link.tools()], ['checker', 'Interaction checker', () => link.checker()], ['compare', 'Comparisons', () => link.compare()], ['first-aid', 'First aid', () => typeLink('first-aid')], ['health', 'Health', () => typeLink('health')], ['medical-terms', 'Medical terms', () => link.page('medical-terms')], ['search', 'Search everything', () => link.page('search')], ['about', 'About', () => link.page('about')]];
 
 export function renderHeader(active) {
   initTheme();
@@ -171,7 +174,9 @@ function loadAnalytics() {
   const id = SITE.analytics && SITE.analytics.ga4; if (!id || !/^G-[A-Z0-9]+$/.test(id) || window.__ga4) return;
   window.__ga4 = id; window.dataLayer = window.dataLayer || [];
   window.gtag = function () { window.dataLayer.push(arguments); };
-  window.gtag('js', new Date()); window.gtag('config', id, { send_page_view: true });
+  // The page URL is reported without its query string: a search term (/search/?q=) or a medicine list on the interaction
+  // checker (?drugs=) can be health-related data and is never sent to a third party.
+  window.gtag('js', new Date()); window.gtag('config', id, { send_page_view: true, page_location: location.origin + location.pathname });
   if (!document.querySelector('script[src^="https://www.googletagmanager.com/gtag/js"]')) {
     const s = document.createElement('script'); s.async = true; s.src = 'https://www.googletagmanager.com/gtag/js?id=' + encodeURIComponent(id); document.head.appendChild(s);
   }

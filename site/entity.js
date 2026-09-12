@@ -10,6 +10,7 @@
  */
 import { renderHeader, renderFooter, loadData, loadClinical, loadType, loadInteractions, link, entityLink, typeLink, entityPath, TYPES, TYPE_ORDER, esc, param, pageId, paths, url, ROOT, PRERENDERED, SITE, SEVERITY, breadcrumbHtml, facadeHtml, dateText, canonical } from './site.js';
 import { applyMeta, seoTitle, metaDescription, webPageNode } from './seo.js';
+import { TIERS, tierOf } from './interaction-engine.js';
 
 const SYMPTOM_REGION = { head: 'head', chest: 'thorax', abdomen: 'abdomen', back: 'thorax', arms: 'upper-limb', legs: 'lower-limb' };
 const DISCLAIMER = {
@@ -42,7 +43,7 @@ const causes = (arr) => arr && arr.length ? arr.map(c => `<div class="cause"><b>
 const trim = (s, n = 150) => { s = String(s || ''); return s.length > n ? s.slice(0, n).replace(/\s+\S*$/, '') + '…' : s; };
 export const lead = (e) => e.summary || e.what || e.definition || e.overview || '';
 /** Only plain http(s) URLs may become links; anything else (javascript:, data:, relative) is dropped. */
-const safeUrl = (u) => /^https?:\/\/[^\s"'<>]+$/i.test(String(u || '')) ? String(u) : '';
+export const safeUrl = (u) => /^https?:\/\/[^\s"'<>]+$/i.test(String(u || '')) ? String(u) : '';
 /** Inline source marker for a structured clinical fact: a small link labelled with the source's country, the document and section in the tooltip. */
 export const src = (r) => r && safeUrl(r.url) ? ` <a class="src" href="${esc(safeUrl(r.url))}" target="_blank" rel="noopener noreferrer" title="${esc(r.title)}${r.section ? ' · ' + esc(r.section) : ''}">${esc(r.jurisdiction || 'source')}</a>` : '';
 
@@ -128,25 +129,53 @@ function pathwayHtml(steps) {
   return `<ol class="pathway">${steps.map(s => `<li>${node(s)}</li>`).join('')}</ol>`;
 }
 export const sevBadge = (sev) => { const s = SEVERITY[sev] || SEVERITY.NO_SEVERITY_ASSIGNED; return `<span class="sev ${s.cls}">${esc(s.label)}</span>`; };
-/** One interaction record as a compact card (spec §50): status, mechanism, why it matters, official wording, management, monitoring, sources, review. */
+/** Severity icons: colour is never the only signal, so every tier badge carries an icon and its word. */
+const TIER_ICON = {
+  stop: '<svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M4.5 8h7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>',
+  warning: '<svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 2.2 14.3 13H1.7z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="M8 6.2v3.3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><circle cx="8" cy="11.4" r=".95" fill="currentColor"/></svg>',
+  diamond: '<svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 1.8 14.2 8 8 14.2 1.8 8z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg>',
+  dot: '<svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="3.5" fill="currentColor"/></svg>',
+  question: '<svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M6 6.3a2 2 0 1 1 2.9 1.8c-.6.3-.9.7-.9 1.3" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><circle cx="8" cy="11.6" r=".9" fill="currentColor"/></svg>',
+  duplicate: '<svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="6" cy="8" r="4.2" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="10" cy="8" r="4.2" fill="none" stroke="currentColor" stroke-width="1.6"/></svg>',
+  none: '<svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-dasharray="2.6 2.2"/></svg>',
+};
+export const TIER_EXTRA = { duplication: { label: 'Duplication', short: 'Duplication', cls: 'tier-dup', icon: 'duplicate' }, none: { label: 'No known interaction identified', short: 'None identified', cls: 'tier-none', icon: 'none' } };
+/** The checker's display severity for a record state or a tier key, as a badge with icon, word and colour. */
+export function tierBadge(tier, { short = false, title = true } = {}) {
+  const t = TIERS[tier] || TIER_EXTRA[tier] || TIERS.unknown;
+  return `<span class="tier ${t.cls}"${title && t.meaning ? ` title="${esc(t.meaning)}"` : ''}>${TIER_ICON[t.icon] || ''}<span>${esc(short ? t.short : t.label)}</span></span>`;
+}
+/** Link for a knowledge-graph reference {type, id} on a record (organ, system or an entity type). */
+export const graphLink = (l) => l.type === 'organ' ? link.organPage(l.id) : l.type === 'system' ? link.systemPage(l.id) : entityLink(l.type, l.id);
+const graphChips = (links, cls = 'chip') => (links || []).map(l => `<a class="${cls}" href="${graphLink(l)}" data-related="${esc(l.type)}">${esc(l.name)}</a>`).join('');
+/** The body of one interaction record, in the specification's order: summary, why it can occur, what official information
+ *  says, what to discuss with a clinician, monitoring (linked to the test and biomarker pages), context, the basis of the
+ *  status, sources, review status and the related topics of the knowledge graph. `via` explains a class-level match. */
+export function interactionBody(r, { via = null, related = true } = {}) {
+  const mon = (r.monitoringLinks && r.monitoringLinks.length ? r.monitoringLinks : (r.monitoring || []).map(text => ({ text, links: [] })))
+    .map(m => m.links && m.links.length ? m.links.map(l => `<a href="${graphLink(l)}" data-related="${esc(l.type)}">${esc(m.text)}</a>`).join(' · ') : esc(m.text)).join(' · ');
+  const viaNote = via && via.via === 'class' ? `<p class="small muted ix-via">Applies to ${esc(via.member)} as a member of the <a href="${entityLink('drug-classes', via.classId)}">${esc(via.className)}</a> class: the cited source states the interaction for the class.</p>` : '';
+  return `<p class="ix-summary">${esc(r.effect)}</p>
+    <dl class="ix">
+      <dt>Why it can occur</dt><dd>${esc(r.mechanism)}${r.mechanismNote ? ` · <span class="muted">${esc(r.mechanismNote)}</span>` : ''}</dd>
+      ${r.sourceWording ? `<dt>What official information says</dt><dd>${esc(r.sourceWording)}</dd>` : ''}
+      ${r.action ? `<dt>What to discuss with a clinician</dt><dd>${esc(r.action)}</dd>` : ''}
+      ${mon ? `<dt>What may be monitored</dt><dd>${mon}</dd>` : ''}
+      ${r.onset || r.population ? `<dt>Context</dt><dd>${esc([r.onset && 'Onset: ' + r.onset, r.population].filter(Boolean).join(' · '))}</dd>` : ''}
+      ${r.severity !== 'NO_SEVERITY_ASSIGNED' && r.severitySource ? `<dt>Basis of the status</dt><dd class="small">${esc(r.severitySource)}</dd>` : ''}
+      <dt>Sources</dt><dd>${(r.evidence || []).filter(x => safeUrl(x.url)).map(x => `<a href="${esc(safeUrl(x.url))}" target="_blank" rel="noopener noreferrer" data-source="${esc(x.source || '')}">${esc(x.title)}</a>${x.section ? ` <span class="muted small">(${esc(x.section)})</span>` : ''} <span class="src">${esc(x.jurisdiction || '')}</span>`).join('<br>')}</dd>
+      <dt>Review</dt><dd class="small">${esc(REVIEW_LABEL[r.review] || r.review)}${r.updated ? ` · last reviewed ${esc(dateText(r.updated))}` : ''}</dd>
+    </dl>${viaNote}${related && r.related?.length ? `<div class="ix-related"><span class="eyebrow">Explore</span><div class="chips">${graphChips(r.related)}</div></div>` : ''}`;
+}
+/** One interaction record as a card (spec §50 and the checker's card): pair, display severity with its source-derived state, then the body. */
 export function interactionCard(r, ix, clinical, { self } = {}) {
   const other = r.type === 'drug-class' || (r.type === 'therapeutic-duplication' && r.bClass && !r.b) ? `<a href="${entityLink('drug-classes', r.bClass)}">${esc(ix.classNames?.[r.bClass] || r.bClass)}</a> (class)` : r.b ? entityA(clinical, 'medications', r.b) : esc(r.bName || '');
   const a = entityA(clinical, 'medications', r.a);
   const title = self && self === r.a ? `${esc(nameOf(clinical, 'medications', r.a))} + ${other}` : self && self === r.b ? `${esc(nameOf(clinical, 'medications', r.b))} + ${a}` : `${a} + ${other}`;
   const who = (x) => x === r.a || x === r.b ? nameOf(clinical, 'medications', x) : x;
   const dir = r.perpetrator && r.victim ? `<p class="small muted">Direction: ${esc(who(r.perpetrator))} affects ${esc(who(r.victim))}.</p>` : '';
-  return `<article class="ix-card"><header><h3>${title}</h3>${sevBadge(r.severity)}${r.type === 'therapeutic-duplication' ? '<span class="badge">therapeutic duplication</span>' : ''}</header>
-    <dl class="ix">
-      <dt>Why it matters</dt><dd>${esc(r.effect)}</dd>
-      <dt>Mechanism</dt><dd>${esc(r.mechanism)}${r.mechanismNote ? ` · <span class="muted">${esc(r.mechanismNote)}</span>` : ''}</dd>
-      ${r.sourceWording ? `<dt>What official information says</dt><dd>${esc(r.sourceWording)}</dd>` : ''}
-      ${r.action ? `<dt>General management information</dt><dd>${esc(r.action)}</dd>` : ''}
-      ${r.monitoring?.length ? `<dt>What may be monitored</dt><dd>${esc(r.monitoring.join(' · '))}</dd>` : ''}
-      ${r.onset || r.population ? `<dt>Context</dt><dd>${esc([r.onset && 'Onset: ' + r.onset, r.population].filter(Boolean).join(' · '))}</dd>` : ''}
-      ${r.severity !== 'NO_SEVERITY_ASSIGNED' && r.severitySource ? `<dt>Basis of the status</dt><dd class="small">${esc(r.severitySource)}</dd>` : ''}
-      <dt>Sources</dt><dd>${(r.evidence || []).filter(x => safeUrl(x.url)).map(x => `<a href="${esc(safeUrl(x.url))}" target="_blank" rel="noopener noreferrer">${esc(x.title)}</a>${x.section ? ` <span class="muted small">(${esc(x.section)})</span>` : ''} <span class="src">${esc(x.jurisdiction || '')}</span>`).join('<br>')}</dd>
-      <dt>Review</dt><dd class="small">${esc(REVIEW_LABEL[r.review] || r.review)}${r.updated ? ` · last reviewed ${esc(dateText(r.updated))}` : ''}</dd>
-    </dl>${dir}</article>`;
+  return `<article class="ix-card"><header><h3>${title}</h3>${tierBadge(tierOf(r.severity))}${sevBadge(r.severity)}${r.type === 'therapeutic-duplication' ? '<span class="badge">therapeutic duplication</span>' : ''}</header>
+    ${interactionBody(r)}${dir}</article>`;
 }
 /** The interactions section of a medication page (spec §73): own pair records, class records that apply to it, food, alcohol, supplements, and the checker link. */
 function interactionsSection(e, ix, clinical) {
@@ -161,7 +190,8 @@ function interactionsSection(e, ix, clinical) {
   const sup = (e.supplementInteractions || []).map(f => `<tr><th scope="row">${esc(f.with)}</th><td>${esc(f.effect)}</td><td>${esc(f.management || '')}${src(f.source)}</td></tr>`).join('');
   const al = e.alcohol;
   return `<h2 id="interactions">Interactions</h2>
-    <p>Interactions documented in the official sources cited on each card. The list covers the medicines represented on this site and is not exhaustive. <a class="btn btn-sm" href="${link.interactions([e.id])}">Check ${esc(e.name)} against other medicines</a></p>
+    <div class="check-cta"><div><h3>Check interactions</h3><p>Taking ${esc(e.name)} with other medicines? Add them to the checker to see what the official sources say about each pair: the mechanism, general management and monitoring, never a bare "safe".</p></div><a class="btn btn-primary" href="${link.checker([e.id])}">Check ${esc(e.name)} interactions</a></div>
+    <p>Interactions documented in the official sources cited on each card. The list covers the medicines represented on this site and is not exhaustive; <a href="${link.methodology()}">how the interaction data is compiled</a>.</p>
     ${own.length ? `<h3>Other medicines</h3><div class="ix-list">${own.map(r => interactionCard(r, ix, clinical, { self: e.id })).join('')}</div>` : '<p class="muted">No pair records for this medicine are in the sources currently represented by Anatomy Nexus. Absence from this list does not mean no interaction exists.</p>'}
     ${viaClass.length ? `<h3>As a member of ${esc(ix.classNames?.[cls] || cls)}</h3><p class="small muted">Records written for the whole ${esc((ix.classNames?.[cls] || cls).toLowerCase())} class apply to ${esc(e.name)}.</p><div class="ix-list">${viaClass.map(r => interactionCard(r, ix, clinical)).join('')}</div>` : ''}
     ${dup ? `<div class="callout info"><b>Therapeutic duplication.</b> ${esc(dup.text)}${src(dup.source)}</div>` : ''}
@@ -182,7 +212,7 @@ function clinicalSidebar(type, e, clinical, data, ix) {
     const uses = (e.indications || []).filter(i => i.status === 'licensed' && i.condition).map(i => i.condition).filter((v, i, a) => a.indexOf(v) === i).slice(0, 3).map(id => entityA(clinical, 'conditions', id)).join(', ') || (e.links?.conditions || []).slice(0, 3).map(id => entityA(clinical, 'conditions', id)).join(', ');
     rows = row('Drug class', cls ? entityA(clinical, 'drug-classes', cls) : esc(e.class || '')) + row('Used for', uses) + row('Acts on', (e.links?.targets || []).map(id => entityA(clinical, 'targets', id)).join(', ')) + row('Body system', systems)
       + row('Related tests', (e.links?.tests || []).slice(0, 4).map(id => entityA(clinical, 'tests', id)).join(', ')) + row('Prescription status', e.otc ? esc(e.otc.UK || Object.values(e.otc)[0]) : '')
-      + row('Interactions', `<a href="#interactions">${ix ? (ix.byDrug?.[e.id] || []).length + ' records on this page' : 'See below'}</a> · <a href="${link.interactions([e.id])}">Check interactions</a>`);
+      + row('Interactions', `<a href="#interactions">${ix ? (ix.byDrug?.[e.id] || []).length + ' records on this page' : 'See below'}</a> · <a href="${link.checker([e.id])}">Check interactions</a>`);
   } else if (type === 'tests') {
     rows = row('Type', esc(e.quick?.type || e.testType || '')) + row('Sample', esc(e.quick?.sample || e.specimen || '')) + row('Measures', (e.links?.biomarkers || []).slice(0, 6).map(id => entityA(clinical, 'biomarkers', id)).join(', ') || esc(e.quick?.measures || ''))
       + row('Used for', (e.links?.conditions || []).slice(0, 4).map(id => entityA(clinical, 'conditions', id)).join(', ')) + row('Range policy', e.rangePolicy ? esc(RANGE_POLICY[e.rangePolicy] || e.rangePolicy) : '') + row('Anatomy', organs || systems);
@@ -194,7 +224,7 @@ function clinicalSidebar(type, e, clinical, data, ix) {
       + row('Organ', organs) + row('Body system', systems) + row('Physiology', (e.links?.physiology || []).slice(0, 3).map(id => entityA(clinical, 'physiology', id)).join(', '));
   } else if (type === 'drug-classes') {
     rows = row('Acts on', (e.links?.targets || []).map(id => entityA(clinical, 'targets', id)).join(', ')) + row('Members here', (e.links?.medications || []).map(id => entityA(clinical, 'medications', id)).join(', ')) + row('Used for', (e.links?.conditions || []).slice(0, 4).map(id => entityA(clinical, 'conditions', id)).join(', '))
-      + row('Body system', systems) + row('Interactions', `<a href="${link.interactions()}">Check interactions</a>`);
+      + row('Body system', systems) + row('Interactions', `<a href="${link.checker()}">Check interactions</a>`);
   }
   return rows ? `<section class="side-clinical" aria-label="At a glance"><h2>At a glance</h2><dl>${rows}</dl></section>` : '';
 }
@@ -335,7 +365,7 @@ const T = {
       ${section('Conditions treated', inlineChips(clinical, 'conditions', e.links?.conditions))}
       <div class="pair">${e.classEffects?.length ? `<div><h2>Class effects</h2>${list(e.classEffects)}</div>` : ''}${e.cautions?.length ? `<div><h2>Cautions</h2>${list(e.cautions)}</div>` : ''}</div>
       ${section('Class warnings', e.classWarnings?.length ? `<ul class="plain">${e.classWarnings.map(w => `<li>${esc(w.text)}${src(w.source)}</li>`).join('')}</ul>` : '', 'warnings')}
-      ${section('Class interactions', table(['With', 'Effect', 'Source'], (e.classInteractions || []).map(i => [esc(i.with), esc(i.effect), src(i.source)])) + (classRecs.length ? `<h3>Interaction records that name this class</h3><div class="ix-list">${classRecs.map(r => interactionCard(r, ix, clinical)).join('')}</div>` : '') + (e.duplicationRule ? `<div class="callout info"><b>Therapeutic duplication.</b> ${esc(e.duplicationRule.text)}${src(e.duplicationRule.source)}</div>` : '') + `<p><a class="btn btn-sm" href="${link.interactions()}">Open the interaction checker</a></p>`, 'interactions')}`;
+      ${section('Class interactions', table(['With', 'Effect', 'Source'], (e.classInteractions || []).map(i => [esc(i.with), esc(i.effect), src(i.source)])) + (classRecs.length ? `<h3>Interaction records that name this class</h3><div class="ix-list">${classRecs.map(r => interactionCard(r, ix, clinical)).join('')}</div>` : '') + (e.duplicationRule ? `<div class="callout info"><b>Therapeutic duplication.</b> ${esc(e.duplicationRule.text)}${src(e.duplicationRule.source)}</div>` : '') + `<p><a class="btn btn-sm" href="${link.checker()}">Open the Drug Interaction Checker</a></p>`, 'interactions')}`;
   },
   'first-aid'(e) {
     return `${e.emergency ? `<div class="callout urgent"><h2>Emergency</h2><p style="margin:0">Call emergency services (999 UK · 112 Europe · 911 North America) as soon as you recognise this, or have someone call while you act.</p></div>` : ''}
@@ -424,7 +454,7 @@ export async function renderDetail(type) {
     <h1>${esc(e.name)}</h1>
     ${e.aliases?.length ? `<p class="aliases">Also known as: ${esc(e.aliases.join(', '))}</p>` : ''}
     <p class="lead">${esc(lead(e))}</p>
-    ${hash ? `<div class="actions"><a class="btn btn-primary" href="${link.explorer(hash)}">Open in the 3D explorer</a>${primaryOrgan ? `<a class="btn" href="${link.organPage(primaryOrgan)}">${esc(nameOfOrgan(data, primaryOrgan))} anatomy</a>` : ''}${type === 'medications' ? `<a class="btn" href="${link.interactions([e.id])}">Check interactions</a>` : ''}</div>${facadeHtml(hash, primaryOrgan ? nameOfOrgan(data, primaryOrgan) : e.name)}` : ''}
+    ${hash ? `<div class="actions"><a class="btn btn-primary" href="${link.explorer(hash)}">Open in the 3D explorer</a>${primaryOrgan ? `<a class="btn" href="${link.organPage(primaryOrgan)}">${esc(nameOfOrgan(data, primaryOrgan))} anatomy</a>` : ''}${type === 'medications' ? `<a class="btn" href="${link.checker([e.id])}">Check interactions</a>` : ''}</div>${facadeHtml(hash, primaryOrgan ? nameOfOrgan(data, primaryOrgan) : e.name)}` : ''}
     <div class="two">
       <div>
         ${T[type](e, ctx)}
@@ -468,7 +498,7 @@ export async function renderIndex(type) {
     const path = paths.dir(TT.dir); const title = `${TT.name}: ${type === 'first-aid' ? 'Step-by-Step Guides' : type === 'health' ? 'Lifestyle & the Body' : 'A–Z Guide'} | ${SITE.name}`;
     applyMeta({ title, description: typeData.meta.about || TT.blurb, path, breadcrumbs: crumbs, jsonld: [webPageNode({ path, title, description: metaDescription(typeData.meta.about || TT.blurb), type: 'CollectionPage', updated: typeData.meta.updated }),
       { '@type': 'ItemList', name: `${TT.name} on ${SITE.name}`, numberOfItems: items.length, itemListElement: items.map((e, i) => ({ '@type': 'ListItem', position: i + 1, name: e.name, url: canonical(entityPath(type, e.id)) })) }] });
-    const tools = type === 'medications' || type === 'drug-classes' ? `<p class="actions"><a class="btn btn-primary" href="${link.interactions()}">Medication interaction checker</a><a class="btn" href="${link.compare()}">Comparisons</a></p>` : type === 'tests' || type === 'biomarkers' ? `<p class="actions"><a class="btn" href="${link.compare()}">Compare tests and markers</a></p>` : '';
+    const tools = type === 'medications' || type === 'drug-classes' ? `<p class="actions"><a class="btn btn-primary" href="${link.checker()}">Drug Interaction Checker</a><a class="btn" href="${link.compare()}">Comparisons</a><a class="btn" href="${link.tools()}">All clinical tools</a></p>` : type === 'tests' || type === 'biomarkers' ? `<p class="actions"><a class="btn" href="${link.compare()}">Compare tests and markers</a></p>` : '';
     main.innerHTML = `
       ${breadcrumbHtml(crumbs)}
       <div class="section-hero"><div class="eyebrow">${esc(TT.icon)} Section · ${items.length} ${esc(TT.name.toLowerCase())}</div><h1>${esc(TT.name)}</h1><p class="lead">${esc(typeData.meta.about || TT.blurb)}</p>${tools}</div>
