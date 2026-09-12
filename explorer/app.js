@@ -3,6 +3,8 @@
  */
 import { AtlasViewer } from './viewer.js';
 import { AtlasUI } from './ui.js';
+import { VERSION } from '../site/version.js';
+const stamp = VERSION ? `?v=${encodeURIComponent(VERSION)}` : '';
 
 const $ = (id) => document.getElementById(id);
 const params = new URLSearchParams(location.search);
@@ -29,9 +31,9 @@ async function main() {
   const quality = pickQuality();
   const dataBase = `../data/${quality}/`;
   const [atlas, content, clinical] = await Promise.all([
-    fetch(dataBase + 'atlas.json').then(r => { if (!r.ok) throw new Error('atlas.json ' + r.status); return r.json(); }),
-    fetch('../data/content/atlas-content.json').then(r => r.ok ? r.json() : null).catch(() => null),
-    fetch('../data/content/clinical.json').then(r => r.ok ? r.json() : null).catch(() => null),
+    fetch(dataBase + 'atlas.json' + stamp).then(r => { if (!r.ok) throw new Error('atlas.json ' + r.status); return r.json(); }),
+    fetch('../data/content/atlas-content.json' + stamp).then(r => r.ok ? r.json() : null).catch(() => null),
+    fetch('../data/content/clinical.json' + stamp).then(r => r.ok ? r.json() : null).catch(() => null),
   ]);
   document.title = `3D Anatomy Explorer: ${atlas.totals.pieces.toLocaleString('en-US')} Structures in ${atlas.systems.length} Systems | Anatomy Nexus`;
 

@@ -98,7 +98,16 @@ To roll back: Actions → **Rollback** → Run workflow → enter the version (f
 The server is back on that version within five minutes; nothing in the source changes. Ordinary
 pushes to the branch only run the QA workflow; they never deploy.
 
-## 5. Updating the site
+## 5. Caching after a deploy
+
+Every script, stylesheet, module import and data file in the package carries the release version
+(`/site/site.js?v=1.1.1`), so a browser or CDN that cached one release can never serve its code
+to another release's pages. HTML is cached for ten minutes and everything else for a day or more,
+which is safe because a new release uses new URLs. After a release, purge Hostinger's server-side
+cache once so the new HTML is served immediately: hPanel → Websites → the domain → Advanced →
+Cache manager → Purge all (or the API's clear-cache call).
+
+## 6. Updating the site
 
 Edit `content/*.json` (bump the file's `_updated`), run `python3 tools/build-content.py`, commit
 and push (QA and the reference-link check run), then cut a release with `tools/release.py` or the

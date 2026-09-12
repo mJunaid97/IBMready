@@ -1,5 +1,15 @@
 # Changelog
 
+## v1.1.1 — 2026-09-12
+
+Cache-safe deploys. The first v1.1.0 deploy served pages of the new release with the previous
+release's cached scripts (no fingerprinted file names, one-day cache lifetime), which broke the page
+scripts until the cache expired.
+
+- Every internal module import, script tag, stylesheet link and data fetch in the package carries
+  `?v=<version>`, so cached modules of one release are never used by another
+- Deploy guide: purge the hosting cache once after each release
+
 ## v1.1.0 — 2026-09-12
 
 Search architecture release: the site becomes Anatomy Nexus, every page is prerendered static HTML

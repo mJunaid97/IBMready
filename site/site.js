@@ -196,9 +196,11 @@ function bindFacades() {
 }
 
 // ------------------------------------------------------------------ data
+/** Cache-busting query for data files: the packaged site stamps the same version into every script URL. */
+export const stamp = () => VERSION ? `?v=${encodeURIComponent(VERSION)}` : '';
 const _cache = new Map();
 export function getJSON(rel) {
-  if (!_cache.has(rel)) _cache.set(rel, fetch(ROOT + rel).then(r => { if (!r.ok) throw new Error(`${rel}: HTTP ${r.status}`); return r.json(); }));
+  if (!_cache.has(rel)) _cache.set(rel, fetch(ROOT + rel + stamp()).then(r => { if (!r.ok) throw new Error(`${rel}: HTTP ${r.status}`); return r.json(); }));
   return _cache.get(rel);
 }
 let _data = null;
