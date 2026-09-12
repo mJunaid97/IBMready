@@ -292,3 +292,16 @@ table.compare th[scope="row"] { width: 22%; }
 table.compare thead th a { text-decoration: none; }
 .ref-section { color: var(--muted); font-size: 12.5px; }
 .btn-sm { padding: 6px 12px; font-size: 13px; }
+
+/* ---- taxonomy layer (test categories, medication classes, terminology, facets) */
+.facets { display: flex; flex-wrap: wrap; gap: 10px 18px; margin: 6px 0 14px; }
+.facets .facet { font-size: .9rem; color: var(--muted, #667); display: inline-flex; align-items: center; gap: 6px; }
+.facets select { font: inherit; padding: 4px 8px; border: 1px solid var(--line, #d8dbe0); border-radius: 8px; background: var(--bg, #fff); color: inherit; max-width: 260px; }
+.catalogue li, .classes li { padding: 6px 0; border-bottom: 1px solid var(--line, #e6e8ec); }
+.catalogue li:last-child, .classes li:last-child { border-bottom: 0; }
+.classes li .chips-inline { margin-top: 4px; }
+.tax-area { margin: 26px 0; }
+.tax-area h3 { margin: 18px 0 4px; }
+.code { white-space: nowrap; }
+.code abbr { text-decoration: none; color: var(--ok, #2a7); }
+.grid-table th.mono, .kv th.mono { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; }

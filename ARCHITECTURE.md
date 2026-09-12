@@ -31,13 +31,13 @@ compiler routes cross-type ids into the matching typed field) and `references`.
 | **PhysiologyTopic** (30) | `content/physiology.json` | summary, body, key facts | `conditions`, `tests`, `imaging`, `procedures`, `medications`, `symptoms` |
 | **Symptom** (18) | `content/symptoms.json` | what, anatomy, common / less common causes, associated, urgent, investigations | `associated` (symptoms), `conditions`, `tests`, `imaging`, `procedures`, `medications` |
 | **Condition** (40) | `content/conditions.json` | definition, overview, anatomy, causes, risk factors, symptoms, signs, complications, diagnosis, treatment, prevention, seek care | `symptoms`, `tests`, `imaging`, `procedures`, `medications`, `physiology` |
-| **MedicalTest** (31) | `content/tests.json` | quick summary, why ordered, components → biomarkers, how done, preparation, results (range policy, guideline thresholds), factors, cannot tell, limitations | `conditions`, `symptoms`, `physiology`, `biomarkers` (implied by components) |
-| **Biomarker** (30) | `content/biomarkers.json` | what it is, units, why higher / lower, factors, range note | `tests`, `conditions`, `physiology`, `medications` |
+| **MedicalTest** (38) | `content/tests.json` | kind, categories (36-category taxonomy), specimens, methods, modality, canonical name and abbreviations, LOINC codes, quick summary, why ordered, components → biomarkers and component tests, panel membership, how done, preparation, results (range policy, guideline thresholds), factors, cannot tell, limitations, catalogued concepts covered | `conditions`, `monitors` (conditions), `symptoms`, `physiology`, `biomarkers` (implied by components), `related` (panels ↔ components) |
+| **Biomarker** (34) | `content/biomarkers.json` | what it is, units, why higher / lower, factors, range note | `tests`, `conditions`, `physiology`, `medications` |
 | **BiologicalTarget** (22) | `content/targets.json` | kind, what it does, role, location | `medications`, `drugClasses`, `physiology`, `conditions`, `biomarkers` |
-| **ImagingStudy** (7) | `content/imaging.json` | how it works, shows, best for / not for, dose, preparation, common uses | `conditions`, `symptoms`, `physiology` |
+| **ImagingStudy** (8) | `content/imaging.json` | modality, how it works, shows, best for / not for, dose, preparation, common uses, catalogued studies covered | `conditions`, `symptoms`, `physiology` |
 | **Procedure** (14) | `content/procedures.json` | what, why, before, steps, after, recovery, risks, alternatives | `conditions`, `symptoms`, `tests`, `imaging`, `medications`, `physiology` |
-| **Medication** (28) | `content/medications.json` | class, brands and prescription status by region, uses by status and jurisdiction, mechanism (plain and technical), pathway, targets, side effects, warnings, contraindications, interactions, monitoring, special populations, condition cautions, lab effects, pharmacokinetics | `conditions`, `symptoms`, `tests`, `biomarkers`, `targets`, `procedures`, `physiology`, `drugClass` |
-| **DrugClass** (24) | `content/drug-classes.json` | mechanism, targets, members, class effects, class warnings, class interactions, duplication rule | `medications`, `targets`, `conditions`, `physiology` |
+| **Medication** (39) | `content/medications.json` | product type (small molecule, biologic, vaccine, contrast agent, radiopharmaceutical…), therapeutic areas, routes and dosage forms from the controlled vocabularies, ingredient variants, jurisdiction-aware regulatory status, RxNorm / ATC / FDA EPC codes, vaccine, radiopharmaceutical, contrast and advanced-therapy profiles, class, brands and prescription status by region, uses by status and jurisdiction, mechanism (plain and technical), pathway, targets, side effects, warnings, contraindications, interactions, monitoring, special populations, condition cautions, lab effects, pharmacokinetics | `conditions`, `symptoms`, `tests`, `biomarkers`, `targets`, `procedures`, `physiology`, `drugClass` |
+| **DrugClass** (27) | `content/drug-classes.json` | mechanism, targets, members, class effects, class warnings, class interactions, duplication rule | `medications`, `targets`, `conditions`, `physiology` |
 | **DrugInteraction** (69), **MedicationProduct** (14), **Comparison** (7) | `content/interactions.json`, `products.json`, `comparisons.json` | see `CLINICAL.md` | medication ↔ medication / class / named substance; product → ingredients; comparison → two entities |
 | **FirstAidTopic** (16) | `content/first-aid.json` | recognise, steps, children, don't, call for, why (anatomy) | `conditions`, `symptoms`, `physiology`, `medications`, `tests` |
 | **HealthTopic** (7) | `content/health.json` | body, effects per system, guidance | `conditions`, `symptoms`, `physiology`, `tests` |
@@ -67,7 +67,15 @@ Medication ──interacts_with──▶ Medication | DrugClass | Substance ; Me
 PhysiologyTopic ──explains──▶ BodySystem | Organ ; ──goes_wrong_as──▶ Condition
 FirstAidTopic / HealthTopic ──concerns──▶ Condition | Symptom | PhysiologyTopic
 <any entity> ──uses_term──▶ MedicalTerm
+
+TestConcept (catalogue, 837) ──in_category──▶ TestCategory (36) ; ──covered_by──▶ MedicalTest | ImagingStudy | Procedure (or none: database-only)
+ClassConcept (taxonomy, 536) ──in_area──▶ TherapeuticArea (31) ; ──has_page──▶ DrugClass ; ──has_atc──▶ WHO ATC code
+MedicalTest ──uses_specimen / has_method──▶ Vocabulary term ; Medication ──has_route / has_dosage_form──▶ Vocabulary term
+MedicalTest ──has_code──▶ LOINC ; Medication ──has_code──▶ RxCUI | ATC | FDA EPC (asserted until a release verifies it)
 ```
+
+The named relationship types of the clinical specification (`TEST_MEASURES` … `MEDICATION_EXCRETED_BY`) are emitted as
+typed edges in `data/content/knowledge.json` (`edges`, `edgeTypes`); see `CLINICAL.md` §8.6.
 
 Reverse edges are never authored. `tools/build-content.py` walks every link field and emits
 `backlinks` on each entity plus `organs / systems / structures / terms → {type: [ids]}` maps,
@@ -96,6 +104,15 @@ each clinical page opens with live 3D of the anatomy it discusses.
 6. **Educate, never diagnose**: symptom pages explain reasoning and red flags, medication pages
    explain mechanism and cautions, first-aid pages follow published guidelines and say when to
    call for help; every such page carries the disclaimer for its type.
+
+### Taxonomy and terminology layer (v1.3)
+
+Two taxonomies sit between raw terminology and public pages: `content/test-taxonomy.json` (36 categories, 837 catalogued
+test concepts) and `content/medication-taxonomy.json` (31 therapeutic areas, 536 class concepts with ATC codes). Pages
+declare the concepts they cover; the compiler (`tools/taxonomy.py`) maps the rest by name, builds the category pages,
+the class hub and the hub facets, enforces the controlled vocabularies and the drug-name rules, computes the review
+queues and emits the typed edges. The LOINC and RxNorm pipelines in `tools/terminology/` turn a licensed release into
+candidates for the catalogue and verify the codes the content asserts. `CLINICAL.md` §8 documents the layer.
 
 ### Clinical layer
 

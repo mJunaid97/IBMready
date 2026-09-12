@@ -29,7 +29,9 @@ One canonical, lowercase, hyphenated, trailing-slash URL per entity, flat under 
 | Medical terms | `/medical-terms/#distal` | one substantial glossary page; per-term pages are deliberately not published while entries are short |
 | Hubs | `/anatomy/`, `/organs/`, `/systems/`, `/conditions/` … `/medical-terms/`, `/study/`, `/explorer/` | |
 | Policies | `/about/`, `/editorial-policy/`, `/medical-review-policy/`, `/references-policy/`, `/corrections-policy/`, `/disclaimer/`, `/contact/` | linked from every footer |
-| Noindex | `/search/`, `/roadmap/`, `/explorer/?embed=1`, `?cat=` hub filters (canonical → hub), organ pages without an article, any entity failing the quality gate | |
+| Test taxonomy (v1.3) | `/tests/categories/`, `/tests/categories/blood-haematology/` | the 36 categories of the master test taxonomy; a category page is indexable only when it has at least two pages, otherwise `noindex,follow`; American spellings 301 to the British canonical slug |
+| Medication taxonomy (v1.3) | `/medications/classes/` | therapeutic areas → classes → medicines with ATC codes; `/medications/classes/<class>/` (the specification's recommended address) 301s to the canonical `/drug-classes/<class>/`, and `/tools/drug-interaction-checker/?drug=<ingredient>` 301s to `/interactions/` with the medicine preloaded |
+| Noindex | `/search/`, `/roadmap/`, `/explorer/?embed=1`, `?cat=` hub filters (canonical → hub), organ pages without an article, any entity failing the quality gate, test categories with fewer than two pages | |
 
 Ids were renamed to their canonical form (`cbc → complete-blood-count`, `xray → x-ray`, `ct → ct-scan`,
 `pet → pet-scan`); the old ids live on as aliases.
@@ -114,7 +116,10 @@ the sitemap. Rendering assets are never blocked.
 
 Sections of the sitemap index in v1.2: pages, anatomy, systems, physiology, symptoms, conditions,
 tests, biomarkers, imaging, procedures, medications, drug-classes, targets, first-aid, health,
-compare.
+compare. v1.3 adds the test-category hub and the indexable category pages to `tests.xml` and the
+medication class hub to `medications.xml`; catalogued concepts and class concepts never get URLs of their own
+(specification §86: no thin terminology pages), and `MedicalTest` / `Drug` schema nodes carry `MedicalCode` entries
+for LOINC, RxNorm and ATC identifiers.
 
 ## 9. Performance
 

@@ -41,7 +41,8 @@ export const TYPES = {
   health:         { name: 'Health',        singular: 'Health topic',     dir: 'health',       page: 'topic.html',      field: 'health',      icon: '🌿', descriptor: 'Effects on the Body & Guidance', blurb: 'Exercise, sleep, nutrition, weight, smoking, alcohol and hydration, explained through the organs they act on.' },
 };
 export const TYPE_ORDER = ['conditions', 'symptoms', 'physiology', 'tests', 'biomarkers', 'imaging', 'procedures', 'medications', 'drug-classes', 'targets', 'first-aid', 'health'];
-export const TYPE_LABEL = { structure: 'Structure', organ: 'Anatomy', system: 'Body system', region: 'Region', term: 'Term', physiology: 'Physiology', symptoms: 'Symptom', conditions: 'Condition', tests: 'Test', biomarkers: 'Biomarker', imaging: 'Imaging', procedures: 'Procedure', medications: 'Medication', 'drug-classes': 'Drug class', targets: 'Drug target', 'first-aid': 'First aid', health: 'Health', product: 'Product' };
+export const TYPE_LABEL = { structure: 'Structure', organ: 'Anatomy', system: 'Body system', region: 'Region', term: 'Term', physiology: 'Physiology', symptoms: 'Symptom', conditions: 'Condition', tests: 'Test', biomarkers: 'Biomarker', imaging: 'Imaging', procedures: 'Procedure', medications: 'Medication', 'drug-classes': 'Drug class', targets: 'Drug target', 'first-aid': 'First aid', health: 'Health', product: 'Product',
+  'test-category': 'Test category', 'test-concept': 'Test concept (catalogued)', 'class-concept': 'Drug class (catalogued)', 'medication-area': 'Therapeutic area' };
 
 const esc = (s) => String(s ?? '').replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
 export { esc };
@@ -76,6 +77,10 @@ export const link = {
   preview: (hash) => url(`site/previews/${previewName(hash)}.jpg`),
   compare: (id) => url(id ? paths.entity('compare', 'compare.html', id) : paths.dir('compare')),
   interactions: (ids) => url(paths.dir('interactions')) + (ids && ids.length ? '?drugs=' + ids.map(encodeURIComponent).join(',') : ''),
+  // the master test taxonomy (/tests/categories/, /tests/categories/<category>/) and the medication taxonomy hub (/medications/classes/)
+  testCategories: () => url(PRETTY ? 'tests/categories/' : 'tests/categories/index.html'),
+  testCategory: (id) => url(PRETTY ? `tests/categories/${encodeURIComponent(id)}/` : `tests/category.html?id=${encodeURIComponent(id)}`),
+  medicationClasses: () => url(PRETTY ? 'medications/classes/' : 'medications/classes/index.html'),
 };
 export function entityPath(type, id) { const t = TYPES[type]; return paths.entity(t.dir, t.page, id); }
 export function entityLink(type, id) { return TYPES[type] ? url(entityPath(type, id)) : '#'; }
@@ -105,6 +110,10 @@ export function anyLink(type, id) {
     case 'region': return link.region(id);
     case 'term': return link.term(id);
     case 'product': return link.interactions([id]);
+    case 'test-category': return link.testCategory(id);
+    case 'test-concept': { const [cat, concept] = String(id).split(':'); return link.testCategory(cat) + '#' + encodeURIComponent(concept || ''); }
+    case 'class-concept': return link.medicationClasses() + '#' + encodeURIComponent(id);
+    case 'medication-area': return link.medicationClasses() + '#area-' + encodeURIComponent(id);
     default: return entityLink(type, id);
   }
 }
@@ -136,7 +145,7 @@ export function toggleTheme() {
   document.documentElement.dataset.theme = next; try { localStorage.setItem('atlas-theme', next); } catch {}
 }
 export const NAV_PRIMARY = [['anatomy', 'Anatomy', () => link.page('anatomy')], ['systems', 'Systems', () => link.page('systems')], ['conditions', 'Conditions', () => typeLink('conditions')], ['symptoms', 'Symptoms', () => typeLink('symptoms')], ['tests', 'Tests', () => typeLink('tests')], ['medications', 'Medications', () => typeLink('medications')], ['explorer', '3D explorer', () => link.explorer()], ['study', 'Study', () => link.page('study')]];
-export const NAV_MORE = [['organs', 'Organs', () => link.page('organs')], ['physiology', 'Physiology', () => typeLink('physiology')], ['biomarkers', 'Biomarkers', () => typeLink('biomarkers')], ['imaging', 'Imaging', () => typeLink('imaging')], ['procedures', 'Procedures', () => typeLink('procedures')], ['drug-classes', 'Drug classes', () => typeLink('drug-classes')], ['targets', 'Drug targets', () => typeLink('targets')], ['interactions', 'Interaction checker', () => link.interactions()], ['compare', 'Comparisons', () => link.compare()], ['first-aid', 'First aid', () => typeLink('first-aid')], ['health', 'Health', () => typeLink('health')], ['medical-terms', 'Medical terms', () => link.page('medical-terms')], ['search', 'Search everything', () => link.page('search')], ['about', 'About', () => link.page('about')]];
+export const NAV_MORE = [['organs', 'Organs', () => link.page('organs')], ['physiology', 'Physiology', () => typeLink('physiology')], ['biomarkers', 'Biomarkers', () => typeLink('biomarkers')], ['imaging', 'Imaging', () => typeLink('imaging')], ['procedures', 'Procedures', () => typeLink('procedures')], ['drug-classes', 'Drug classes', () => typeLink('drug-classes')], ['medication-classes', 'Medication taxonomy', () => link.medicationClasses()], ['test-categories', 'Test categories', () => link.testCategories()], ['targets', 'Drug targets', () => typeLink('targets')], ['interactions', 'Interaction checker', () => link.interactions()], ['compare', 'Comparisons', () => link.compare()], ['first-aid', 'First aid', () => typeLink('first-aid')], ['health', 'Health', () => typeLink('health')], ['medical-terms', 'Medical terms', () => link.page('medical-terms')], ['search', 'Search everything', () => link.page('search')], ['about', 'About', () => link.page('about')]];
 
 export function renderHeader(active) {
   initTheme();
@@ -242,6 +251,14 @@ export const loadSearchIndex = () => getJSON('data/content/search-index.json');
 export const loadInteractions = () => getJSON('data/content/interactions.json');
 /** Structured comparisons (data/content/comparisons.json). */
 export const loadComparisons = () => getJSON('data/content/comparisons.json');
+/** The 36 test categories with their pages and catalogued concepts (data/content/test-categories.json). */
+export const loadTestCategories = () => getJSON('data/content/test-categories.json');
+/** Therapeutic areas → classes → pages, plus route / dosage-form / product-type facets (data/content/medication-taxonomy.json). */
+export const loadMedicationTaxonomy = () => getJSON('data/content/medication-taxonomy.json');
+/** Controlled vocabularies with their display names (data/content/vocabularies.json). */
+export const loadVocabularies = () => getJSON('data/content/vocabularies.json');
+/** Name of a vocabulary term, or the id when the vocabulary is not loaded. */
+export const vocabName = (vocab, key, id) => (vocab?.[key] || []).find(v => v.id === id)?.name || id;
 /** Severity states of the interaction records (spec: Clinical Content Depth §43) with their public labels. */
 export const SEVERITY = {
   CONTRAINDICATED: { label: 'Contraindicated in official information', cls: 'sev-1', order: 1 },
@@ -258,7 +275,7 @@ let _entries = null;
 export async function searchEntries() {
   if (_entries) return _entries;
   const idx = await loadSearchIndex();
-  const rank = { system: 3, organ: 2.9, conditions: 2.7, symptoms: 2.7, 'first-aid': 2.6, region: 2.4, tests: 2.5, imaging: 2.5, procedures: 2.5, medications: 2.5, 'drug-classes': 2.4, biomarkers: 2.4, targets: 2.3, product: 2.3, physiology: 2.4, health: 2.4, term: 2.2, structure: 2 };
+  const rank = { system: 3, organ: 2.9, conditions: 2.7, symptoms: 2.7, 'first-aid': 2.6, region: 2.4, tests: 2.5, imaging: 2.5, procedures: 2.5, medications: 2.5, 'drug-classes': 2.4, biomarkers: 2.4, targets: 2.3, product: 2.3, physiology: 2.4, health: 2.4, term: 2.2, structure: 2, 'test-category': 2.3, 'medication-area': 2.2, 'test-concept': 1.9, 'class-concept': 1.9 };
   _entries = idx.entries.map(([type, id, name, aliases, sub]) => {
     const al = aliases ? aliases.split('|').map(normalize) : [];
     return { type, id, name, norm: normalize(name), aliases: al, words: [name, ...al].join(' ').toLowerCase().split(/[^a-z0-9]+/).filter(Boolean), sub, rank: rank[type] ?? 2 };

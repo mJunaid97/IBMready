@@ -1,0 +1,1484 @@
+{
+ "_about": "Controlled vocabularies of the clinical layer (Comprehensive Clinical Tests & Medications specification). Every value a test or medication uses for its kind, specimen, method, imaging modality, route, dosage form, regulatory status, product type, vaccine platform or advanced-therapy kind must come from these lists; tools/build-content.py fails the build on any value outside them. The lists are extended here, never in page code.",
+ "_updated": "2026-09-13",
+ "testKinds": [
+  {
+   "id": "laboratory",
+   "name": "Laboratory test",
+   "entityType": "TEST",
+   "summary": "A measurement or observation made on a specimen (blood, urine, another body fluid, a swab or tissue)."
+  },
+  {
+   "id": "panel",
+   "name": "Test panel",
+   "entityType": "TEST_PANEL",
+   "summary": "A named group of laboratory tests reported together; each component is its own test or biomarker."
+  },
+  {
+   "id": "measurement",
+   "name": "Physiological measurement",
+   "entityType": "MEASUREMENT",
+   "summary": "A bedside measurement of the body: blood pressure, pulse, oxygen saturation, temperature, weight."
+  },
+  {
+   "id": "physiological",
+   "name": "Physiological or functional test",
+   "entityType": "TEST",
+   "summary": "A recording or functional study without a specimen: ECG, spirometry, EEG, nerve conduction, audiometry."
+  },
+  {
+   "id": "imaging",
+   "name": "Imaging study",
+   "entityType": "IMAGING_STUDY",
+   "summary": "A picture of the inside of the body made with X-rays, sound, magnetism or a radioactive tracer."
+  },
+  {
+   "id": "diagnostic-procedure",
+   "name": "Diagnostic procedure",
+   "entityType": "DIAGNOSTIC_PROCEDURE",
+   "summary": "A procedure done to look inside the body or obtain a sample: endoscopy, catheterisation, lumbar puncture."
+  },
+  {
+   "id": "examination",
+   "name": "Clinical examination",
+   "entityType": "TEST",
+   "summary": "A structured bedside or clinic examination: slit-lamp, fundoscopy, dermoscopy, the Dix-Hallpike manoeuvre."
+  },
+  {
+   "id": "screening-tool",
+   "name": "Screening or assessment tool",
+   "entityType": "SCREENING_TOOL",
+   "summary": "A validated questionnaire or score used to screen for or grade a condition; proprietary instruments are described, never reproduced."
+  },
+  {
+   "id": "pathology",
+   "name": "Pathology or cytology test",
+   "entityType": "PATHOLOGY_TEST",
+   "summary": "Examination of tissue or cells under the microscope, with or without special stains."
+  },
+  {
+   "id": "genetic",
+   "name": "Genetic or molecular test",
+   "entityType": "GENETIC_TEST",
+   "summary": "A test of DNA, RNA, chromosomes or gene expression; must state whether it concerns a gene, a variant, a panel or the field in general."
+  },
+  {
+   "id": "microbiology",
+   "name": "Microbiology test",
+   "entityType": "TEST",
+   "summary": "Detection or culture of bacteria, viruses, fungi or parasites, and susceptibility testing."
+  }
+ ],
+ "specimens": [
+  {
+   "id": "venous-blood",
+   "name": "Venous blood",
+   "loincSystem": "Bld",
+   "summary": "Blood drawn from a vein into a tube; the anticoagulant in the tube decides what can be measured."
+  },
+  {
+   "id": "whole-blood",
+   "name": "Whole blood (EDTA)",
+   "loincSystem": "Bld",
+   "summary": "Unseparated blood kept from clotting, used for cell counts and HbA1c."
+  },
+  {
+   "id": "serum",
+   "name": "Serum",
+   "loincSystem": "Ser",
+   "summary": "The fluid left after blood has clotted; most chemistry and antibody tests."
+  },
+  {
+   "id": "plasma",
+   "name": "Plasma",
+   "loincSystem": "Plas",
+   "summary": "The fluid part of anticoagulated blood; coagulation tests need citrate plasma."
+  },
+  {
+   "id": "serum-or-plasma",
+   "name": "Serum or plasma",
+   "loincSystem": "Ser/Plas",
+   "summary": "Either serum or plasma is acceptable for the measurement."
+  },
+  {
+   "id": "capillary-blood",
+   "name": "Capillary (fingerprick) blood",
+   "loincSystem": "BldC",
+   "summary": "A drop of blood from a fingerprick or heel prick, used by point-of-care devices."
+  },
+  {
+   "id": "arterial-blood",
+   "name": "Arterial blood",
+   "loincSystem": "BldA",
+   "summary": "Blood taken from an artery for blood-gas analysis."
+  },
+  {
+   "id": "urine",
+   "name": "Urine (spot sample)",
+   "loincSystem": "Urine",
+   "summary": "A single urine sample, ideally the first of the morning for some tests."
+  },
+  {
+   "id": "midstream-urine",
+   "name": "Midstream urine",
+   "loincSystem": "Urine",
+   "summary": "A clean-catch sample from the middle of the stream, for culture and dipstick."
+  },
+  {
+   "id": "urine-24h",
+   "name": "24-hour urine collection",
+   "loincSystem": "Urine",
+   "summary": "All urine passed over 24 hours, for excretion rates."
+  },
+  {
+   "id": "stool",
+   "name": "Stool",
+   "loincSystem": "Stool",
+   "summary": "A faeces sample for occult blood, calprotectin, culture, parasites or antigens."
+  },
+  {
+   "id": "csf",
+   "name": "Cerebrospinal fluid",
+   "loincSystem": "CSF",
+   "summary": "Fluid obtained by lumbar puncture."
+  },
+  {
+   "id": "sputum",
+   "name": "Sputum",
+   "loincSystem": "Sputum",
+   "summary": "Mucus coughed up from the lower airways."
+  },
+  {
+   "id": "throat-swab",
+   "name": "Throat swab",
+   "loincSystem": "Throat",
+   "summary": "A swab of the tonsils and pharynx."
+  },
+  {
+   "id": "nasopharyngeal-swab",
+   "name": "Nose or nasopharyngeal swab",
+   "loincSystem": "Nph",
+   "summary": "A swab of the nose or nasopharynx, for respiratory viruses and bacteria."
+  },
+  {
+   "id": "wound-swab",
+   "name": "Wound or skin swab",
+   "loincSystem": "Wound",
+   "summary": "A swab of a wound, ulcer or skin lesion."
+  },
+  {
+   "id": "genital-swab",
+   "name": "Genital swab",
+   "loincSystem": "Genital",
+   "summary": "A vaginal, cervical, urethral or rectal swab, often self-taken."
+  },
+  {
+   "id": "tissue",
+   "name": "Tissue",
+   "loincSystem": "Tiss",
+   "summary": "A biopsy or surgical specimen for histopathology."
+  },
+  {
+   "id": "cytology-sample",
+   "name": "Cytology sample",
+   "loincSystem": "Cells",
+   "summary": "Cells scraped, brushed or aspirated from a surface or a lump."
+  },
+  {
+   "id": "bone-marrow",
+   "name": "Bone marrow",
+   "loincSystem": "Marrow",
+   "summary": "Aspirate or trephine biopsy of the marrow, usually from the hip bone."
+  },
+  {
+   "id": "pleural-fluid",
+   "name": "Pleural fluid",
+   "loincSystem": "Plr fld",
+   "summary": "Fluid drawn from around the lung."
+  },
+  {
+   "id": "peritoneal-fluid",
+   "name": "Peritoneal (ascitic) fluid",
+   "loincSystem": "Periton fld",
+   "summary": "Fluid drawn from the abdominal cavity."
+  },
+  {
+   "id": "synovial-fluid",
+   "name": "Synovial (joint) fluid",
+   "loincSystem": "Synv fld",
+   "summary": "Fluid aspirated from a joint."
+  },
+  {
+   "id": "pericardial-fluid",
+   "name": "Pericardial fluid",
+   "loincSystem": "Pericard fld",
+   "summary": "Fluid drawn from around the heart."
+  },
+  {
+   "id": "amniotic-fluid",
+   "name": "Amniotic fluid",
+   "loincSystem": "Amnio fld",
+   "summary": "Fluid drawn from around the fetus."
+  },
+  {
+   "id": "bronchoalveolar-lavage",
+   "name": "Bronchoalveolar lavage fluid",
+   "loincSystem": "BAL",
+   "summary": "Fluid washed out of the airways during bronchoscopy."
+  },
+  {
+   "id": "semen",
+   "name": "Semen",
+   "loincSystem": "Semen",
+   "summary": "A semen sample for fertility or post-vasectomy testing."
+  },
+  {
+   "id": "saliva",
+   "name": "Saliva",
+   "loincSystem": "Saliva",
+   "summary": "Saliva collected for hormone or DNA testing."
+  },
+  {
+   "id": "breath",
+   "name": "Exhaled breath",
+   "loincSystem": "Exhaled gas",
+   "summary": "Breath samples for hydrogen, urea or nitric-oxide tests."
+  },
+  {
+   "id": "hair-or-nail",
+   "name": "Hair or nail",
+   "loincSystem": "Hair",
+   "summary": "Hair or nail clippings for toxicology or fungal culture."
+  },
+  {
+   "id": "none",
+   "name": "No specimen",
+   "summary": "A recording, image, measurement or examination rather than a sample."
+  }
+ ],
+ "methods": [
+  {
+   "id": "automated-cell-count",
+   "name": "Automated cell counter",
+   "summary": "Cells counted and sized by an analyser as they pass a detector."
+  },
+  {
+   "id": "microscopy",
+   "name": "Microscopy",
+   "summary": "Direct examination of a sample under the microscope, with or without staining."
+  },
+  {
+   "id": "blood-film",
+   "name": "Blood film examination",
+   "summary": "A stained smear of blood examined for cell shape and abnormal cells."
+  },
+  {
+   "id": "flow-cytometry",
+   "name": "Flow cytometry",
+   "summary": "Cells labelled with fluorescent antibodies and counted by type."
+  },
+  {
+   "id": "coagulation-assay",
+   "name": "Clot-based coagulation assay",
+   "summary": "The time to form a clot after a reagent is added to citrated plasma."
+  },
+  {
+   "id": "chemistry-analyser",
+   "name": "Chemistry analyser",
+   "summary": "Automated spectrophotometric or electrode-based measurement of a substance."
+  },
+  {
+   "id": "immunoassay",
+   "name": "Immunoassay",
+   "summary": "Detection of a substance by its binding to a specific antibody."
+  },
+  {
+   "id": "electrophoresis",
+   "name": "Electrophoresis",
+   "summary": "Separation of proteins or haemoglobins by their movement in an electric field."
+  },
+  {
+   "id": "chromatography-mass-spectrometry",
+   "name": "Chromatography and mass spectrometry",
+   "summary": "Separation and identification of molecules by mass; the reference method for many hormones and drugs."
+  },
+  {
+   "id": "culture",
+   "name": "Culture",
+   "summary": "Growing organisms from a sample on nutrient media."
+  },
+  {
+   "id": "susceptibility-testing",
+   "name": "Antimicrobial susceptibility testing",
+   "summary": "Testing which antimicrobials inhibit a cultured organism."
+  },
+  {
+   "id": "antigen-detection",
+   "name": "Antigen detection",
+   "summary": "Detection of a component of an organism, often as a rapid test."
+  },
+  {
+   "id": "serology",
+   "name": "Serology (antibody detection)",
+   "summary": "Detection of the antibodies the immune system has made against an organism or the body's own tissues."
+  },
+  {
+   "id": "pcr",
+   "name": "PCR (including RT-PCR and qPCR)",
+   "summary": "Amplification of a specific DNA or RNA sequence to detect or quantify it."
+  },
+  {
+   "id": "naat",
+   "name": "Nucleic acid amplification test",
+   "summary": "Any technique that amplifies an organism's genetic material, PCR included."
+  },
+  {
+   "id": "sequencing",
+   "name": "DNA sequencing",
+   "summary": "Reading the order of bases in a gene, a panel of genes, the exome or the whole genome."
+  },
+  {
+   "id": "karyotype",
+   "name": "Karyotype",
+   "summary": "Chromosomes photographed and arranged from dividing cells."
+  },
+  {
+   "id": "fish",
+   "name": "Fluorescence in situ hybridisation",
+   "summary": "Fluorescent probes that light up specific chromosome regions."
+  },
+  {
+   "id": "microarray",
+   "name": "Chromosomal microarray",
+   "summary": "Detection of gained or lost chromosome segments across the genome."
+  },
+  {
+   "id": "methylation-analysis",
+   "name": "Methylation analysis",
+   "summary": "Testing the chemical marks that switch genes on or off."
+  },
+  {
+   "id": "immunohistochemistry",
+   "name": "Immunohistochemistry",
+   "summary": "Antibody stains applied to tissue sections to identify proteins."
+  },
+  {
+   "id": "immunofluorescence",
+   "name": "Immunofluorescence",
+   "summary": "Fluorescent antibody stains on tissue or cells."
+  },
+  {
+   "id": "histology",
+   "name": "Histology",
+   "summary": "Fixed, sectioned and stained tissue examined under the microscope."
+  },
+  {
+   "id": "cytology",
+   "name": "Cytology",
+   "summary": "Individual cells examined under the microscope."
+  },
+  {
+   "id": "electron-microscopy",
+   "name": "Electron microscopy",
+   "summary": "Very high magnification imaging of tissue ultrastructure."
+  },
+  {
+   "id": "dipstick",
+   "name": "Dipstick",
+   "summary": "A reagent strip that changes colour when dipped into a sample."
+  },
+  {
+   "id": "point-of-care-device",
+   "name": "Point-of-care device",
+   "summary": "A meter or cartridge test run at the bedside or at home."
+  },
+  {
+   "id": "electrophysiology",
+   "name": "Electrophysiological recording",
+   "summary": "Recording the electrical activity of the heart, brain, nerves or muscles."
+  },
+  {
+   "id": "ultrasound",
+   "name": "Ultrasound",
+   "summary": "Images from high-frequency sound reflected by tissues."
+  },
+  {
+   "id": "radiography",
+   "name": "Radiography",
+   "summary": "Images made with X-rays."
+  },
+  {
+   "id": "ct",
+   "name": "Computed tomography",
+   "summary": "Cross-sectional X-ray images reconstructed by computer."
+  },
+  {
+   "id": "mri",
+   "name": "Magnetic resonance imaging",
+   "summary": "Images made with a strong magnetic field and radio waves."
+  },
+  {
+   "id": "nuclear-medicine",
+   "name": "Nuclear medicine",
+   "summary": "Images of where a radioactive tracer accumulates."
+  },
+  {
+   "id": "spirometry",
+   "name": "Spirometry",
+   "summary": "Measurement of the volume and speed of a forced breath out."
+  },
+  {
+   "id": "plethysmography",
+   "name": "Body plethysmography",
+   "summary": "Lung volumes measured in a sealed cabin."
+  },
+  {
+   "id": "gas-transfer",
+   "name": "Gas transfer (DLCO)",
+   "summary": "How well a test gas crosses from the lungs into blood."
+  },
+  {
+   "id": "oximetry",
+   "name": "Pulse oximetry",
+   "summary": "Oxygen saturation estimated from light passed through a fingertip."
+  },
+  {
+   "id": "endoscopy",
+   "name": "Endoscopy",
+   "summary": "A camera passed into the body through a natural opening or a small cut."
+  },
+  {
+   "id": "biopsy",
+   "name": "Biopsy",
+   "summary": "Removal of a sample of tissue for examination."
+  },
+  {
+   "id": "manometry",
+   "name": "Manometry",
+   "summary": "Pressure measurements inside a hollow organ."
+  },
+  {
+   "id": "ph-monitoring",
+   "name": "pH monitoring",
+   "summary": "Acidity recorded over time by a probe."
+  },
+  {
+   "id": "breath-test",
+   "name": "Breath test",
+   "summary": "Analysis of gases in exhaled breath after a test substance."
+  },
+  {
+   "id": "audiometry",
+   "name": "Audiometry",
+   "summary": "Hearing thresholds measured with tones or speech."
+  },
+  {
+   "id": "tonometry",
+   "name": "Tonometry",
+   "summary": "Measurement of the pressure inside the eye."
+  },
+  {
+   "id": "questionnaire",
+   "name": "Questionnaire or score",
+   "summary": "A validated set of questions or a scoring system."
+  },
+  {
+   "id": "clinical-examination",
+   "name": "Clinical examination",
+   "summary": "A structured examination by a clinician."
+  },
+  {
+   "id": "physical-measurement",
+   "name": "Physical measurement",
+   "summary": "A measurement with a cuff, thermometer, scale or tape."
+  },
+  {
+   "id": "calculation",
+   "name": "Calculation from other results",
+   "summary": "A value derived from other measurements by a formula."
+  }
+ ],
+ "imagingModalities": [
+  {
+   "id": "radiography",
+   "name": "X-ray (radiography)",
+   "summary": "Plain X-ray images, including mammography and dental films."
+  },
+  {
+   "id": "fluoroscopy",
+   "name": "Fluoroscopy",
+   "summary": "Real-time X-ray imaging, used for contrast studies and guided procedures."
+  },
+  {
+   "id": "mammography",
+   "name": "Mammography",
+   "summary": "Low-dose X-ray imaging of the breast."
+  },
+  {
+   "id": "ultrasound",
+   "name": "Ultrasound",
+   "summary": "Sound-wave imaging, including Doppler studies of blood flow and echocardiography."
+  },
+  {
+   "id": "ct",
+   "name": "CT (computed tomography)",
+   "summary": "Cross-sectional X-ray imaging, with or without contrast."
+  },
+  {
+   "id": "mri",
+   "name": "MRI (magnetic resonance imaging)",
+   "summary": "Magnetic-field imaging, including angiography, spectroscopy and functional MRI."
+  },
+  {
+   "id": "nuclear-medicine",
+   "name": "Nuclear medicine (scintigraphy, SPECT)",
+   "summary": "Imaging of a gamma-emitting tracer."
+  },
+  {
+   "id": "pet",
+   "name": "PET (positron emission tomography)",
+   "summary": "Imaging of a positron-emitting tracer, usually combined with CT or MRI."
+  },
+  {
+   "id": "dxa",
+   "name": "DXA bone densitometry",
+   "summary": "Two X-ray energies used to measure bone mineral density."
+  },
+  {
+   "id": "angiography",
+   "name": "Catheter angiography",
+   "summary": "Contrast injected through a catheter under fluoroscopy to image vessels."
+  }
+ ],
+ "routes": [
+  {
+   "id": "oral",
+   "name": "Oral",
+   "summary": "Swallowed by mouth."
+  },
+  {
+   "id": "buccal",
+   "name": "Buccal",
+   "summary": "Held against the inside of the cheek."
+  },
+  {
+   "id": "sublingual",
+   "name": "Sublingual",
+   "summary": "Dissolved under the tongue."
+  },
+  {
+   "id": "topical",
+   "name": "Topical",
+   "summary": "Applied to the skin or a surface."
+  },
+  {
+   "id": "transdermal",
+   "name": "Transdermal",
+   "summary": "Absorbed through the skin from a patch or gel into the bloodstream."
+  },
+  {
+   "id": "inhaled",
+   "name": "Inhaled",
+   "summary": "Breathed in from an inhaler."
+  },
+  {
+   "id": "nebulized",
+   "name": "Nebulised",
+   "summary": "Breathed in as a mist from a nebuliser."
+  },
+  {
+   "id": "intranasal",
+   "name": "Intranasal",
+   "summary": "Into the nose."
+  },
+  {
+   "id": "ophthalmic",
+   "name": "Ophthalmic",
+   "summary": "Into the eye."
+  },
+  {
+   "id": "otic",
+   "name": "Otic",
+   "summary": "Into the ear."
+  },
+  {
+   "id": "rectal",
+   "name": "Rectal",
+   "summary": "Into the rectum."
+  },
+  {
+   "id": "vaginal",
+   "name": "Vaginal",
+   "summary": "Into the vagina."
+  },
+  {
+   "id": "urethral",
+   "name": "Urethral",
+   "summary": "Into the urethra."
+  },
+  {
+   "id": "intravenous",
+   "name": "Intravenous",
+   "summary": "Injected or infused into a vein."
+  },
+  {
+   "id": "intramuscular",
+   "name": "Intramuscular",
+   "summary": "Injected into a muscle."
+  },
+  {
+   "id": "subcutaneous",
+   "name": "Subcutaneous",
+   "summary": "Injected under the skin."
+  },
+  {
+   "id": "intradermal",
+   "name": "Intradermal",
+   "summary": "Injected into the skin itself."
+  },
+  {
+   "id": "intraosseous",
+   "name": "Intraosseous",
+   "summary": "Into the bone marrow, an emergency alternative to a vein."
+  },
+  {
+   "id": "intrathecal",
+   "name": "Intrathecal",
+   "summary": "Into the fluid around the spinal cord."
+  },
+  {
+   "id": "epidural",
+   "name": "Epidural",
+   "summary": "Into the space outside the membranes of the spinal cord."
+  },
+  {
+   "id": "intra-articular",
+   "name": "Intra-articular",
+   "summary": "Into a joint."
+  },
+  {
+   "id": "intraperitoneal",
+   "name": "Intraperitoneal",
+   "summary": "Into the abdominal cavity."
+  },
+  {
+   "id": "intravitreal",
+   "name": "Intravitreal",
+   "summary": "Into the jelly of the eye."
+  },
+  {
+   "id": "intracameral",
+   "name": "Intracameral",
+   "summary": "Into the front chamber of the eye."
+  },
+  {
+   "id": "intrauterine",
+   "name": "Intrauterine",
+   "summary": "Into the uterus."
+  },
+  {
+   "id": "implant",
+   "name": "Implant",
+   "summary": "Placed under the skin or in a tissue to release the medicine over months."
+  },
+  {
+   "id": "local-infiltration",
+   "name": "Local infiltration",
+   "summary": "Injected into the tissue to be numbed or treated."
+  },
+  {
+   "id": "enteral-tube",
+   "name": "Enteral tube",
+   "summary": "Given through a feeding tube into the stomach or intestine."
+  }
+ ],
+ "dosageForms": [
+  {
+   "id": "tablet",
+   "name": "Tablet",
+   "usualRoute": "oral"
+  },
+  {
+   "id": "caplet",
+   "name": "Caplet",
+   "usualRoute": "oral"
+  },
+  {
+   "id": "capsule",
+   "name": "Capsule",
+   "usualRoute": "oral"
+  },
+  {
+   "id": "chewable-tablet",
+   "name": "Chewable tablet",
+   "usualRoute": "oral"
+  },
+  {
+   "id": "dispersible-tablet",
+   "name": "Dispersible tablet",
+   "usualRoute": "oral"
+  },
+  {
+   "id": "orally-disintegrating-tablet",
+   "name": "Orally disintegrating tablet",
+   "usualRoute": "oral"
+  },
+  {
+   "id": "effervescent-tablet",
+   "name": "Effervescent tablet",
+   "usualRoute": "oral"
+  },
+  {
+   "id": "immediate-release-tablet",
+   "name": "Immediate-release tablet",
+   "usualRoute": "oral"
+  },
+  {
+   "id": "extended-release-tablet",
+   "name": "Extended-release (modified-release) tablet",
+   "usualRoute": "oral"
+  },
+  {
+   "id": "delayed-release-tablet",
+   "name": "Delayed-release (gastro-resistant) tablet or capsule",
+   "usualRoute": "oral"
+  },
+  {
+   "id": "solution",
+   "name": "Solution",
+   "usualRoute": "oral"
+  },
+  {
+   "id": "suspension",
+   "name": "Suspension",
+   "usualRoute": "oral"
+  },
+  {
+   "id": "syrup",
+   "name": "Syrup",
+   "usualRoute": "oral"
+  },
+  {
+   "id": "elixir",
+   "name": "Elixir",
+   "usualRoute": "oral"
+  },
+  {
+   "id": "drops",
+   "name": "Drops",
+   "usualRoute": "oral"
+  },
+  {
+   "id": "powder",
+   "name": "Powder",
+   "usualRoute": "oral"
+  },
+  {
+   "id": "granules",
+   "name": "Granules",
+   "usualRoute": "oral"
+  },
+  {
+   "id": "sachet",
+   "name": "Sachet",
+   "usualRoute": "oral"
+  },
+  {
+   "id": "lozenge",
+   "name": "Lozenge",
+   "usualRoute": "oral"
+  },
+  {
+   "id": "oral-film",
+   "name": "Oral film",
+   "usualRoute": "oral"
+  },
+  {
+   "id": "spray",
+   "name": "Spray",
+   "usualRoute": "topical"
+  },
+  {
+   "id": "metered-dose-inhaler",
+   "name": "Metered-dose inhaler",
+   "usualRoute": "inhaled"
+  },
+  {
+   "id": "dry-powder-inhaler",
+   "name": "Dry-powder inhaler",
+   "usualRoute": "inhaled"
+  },
+  {
+   "id": "nebulizer-solution",
+   "name": "Nebuliser solution",
+   "usualRoute": "nebulized"
+  },
+  {
+   "id": "cream",
+   "name": "Cream",
+   "usualRoute": "topical"
+  },
+  {
+   "id": "ointment",
+   "name": "Ointment",
+   "usualRoute": "topical"
+  },
+  {
+   "id": "gel",
+   "name": "Gel",
+   "usualRoute": "topical"
+  },
+  {
+   "id": "lotion",
+   "name": "Lotion",
+   "usualRoute": "topical"
+  },
+  {
+   "id": "foam",
+   "name": "Foam",
+   "usualRoute": "topical"
+  },
+  {
+   "id": "paste",
+   "name": "Paste",
+   "usualRoute": "topical"
+  },
+  {
+   "id": "shampoo",
+   "name": "Shampoo",
+   "usualRoute": "topical"
+  },
+  {
+   "id": "patch",
+   "name": "Patch",
+   "usualRoute": "transdermal"
+  },
+  {
+   "id": "suppository",
+   "name": "Suppository",
+   "usualRoute": "rectal"
+  },
+  {
+   "id": "enema",
+   "name": "Enema",
+   "usualRoute": "rectal"
+  },
+  {
+   "id": "pessary",
+   "name": "Pessary",
+   "usualRoute": "vaginal"
+  },
+  {
+   "id": "vaginal-tablet",
+   "name": "Vaginal tablet",
+   "usualRoute": "vaginal"
+  },
+  {
+   "id": "injection",
+   "name": "Injection",
+   "usualRoute": "injection"
+  },
+  {
+   "id": "prefilled-syringe",
+   "name": "Prefilled syringe",
+   "usualRoute": "injection"
+  },
+  {
+   "id": "pen-injector",
+   "name": "Pen injector",
+   "usualRoute": "injection"
+  },
+  {
+   "id": "autoinjector",
+   "name": "Autoinjector",
+   "usualRoute": "injection"
+  },
+  {
+   "id": "infusion",
+   "name": "Infusion",
+   "usualRoute": "intravenous"
+  },
+  {
+   "id": "implant",
+   "name": "Implant",
+   "usualRoute": "implant"
+  },
+  {
+   "id": "depot-injection",
+   "name": "Depot (long-acting) injection",
+   "usualRoute": "injection"
+  },
+  {
+   "id": "eye-drops",
+   "name": "Eye drops",
+   "usualRoute": "ophthalmic"
+  },
+  {
+   "id": "eye-ointment",
+   "name": "Eye ointment",
+   "usualRoute": "ophthalmic"
+  },
+  {
+   "id": "ear-drops",
+   "name": "Ear drops",
+   "usualRoute": "otic"
+  },
+  {
+   "id": "nasal-spray",
+   "name": "Nasal spray",
+   "usualRoute": "intranasal"
+  }
+ ],
+ "regulatoryStatuses": [
+  {
+   "id": "prescription",
+   "name": "Prescription only",
+   "summary": "Supplied only against a prescription (UK POM, US Rx-only)."
+  },
+  {
+   "id": "otc",
+   "name": "Over the counter",
+   "summary": "Sold without a prescription in general retail (UK GSL)."
+  },
+  {
+   "id": "pharmacy",
+   "name": "Pharmacy or behind the counter",
+   "summary": "Sold without a prescription but only from a pharmacy, under a pharmacist's supervision (UK P)."
+  },
+  {
+   "id": "controlled",
+   "name": "Controlled substance",
+   "summary": "Additional legal controls on prescribing, supply and possession (UK Misuse of Drugs schedules, US DEA schedules); always in addition to prescription status."
+  },
+  {
+   "id": "specialist-restricted",
+   "name": "Specialist or restricted",
+   "summary": "Prescribed only by, or on the advice of, a specialist, or within a restricted-access programme."
+  },
+  {
+   "id": "hospital-only",
+   "name": "Hospital only",
+   "summary": "Supplied and administered only in hospital."
+  },
+  {
+   "id": "emergency-use",
+   "name": "Emergency-use authorisation",
+   "summary": "Authorised under an emergency or conditional mechanism rather than a full licence."
+  },
+  {
+   "id": "discontinued",
+   "name": "Discontinued",
+   "summary": "No longer marketed in the jurisdiction, though the licence may remain."
+  },
+  {
+   "id": "withdrawn",
+   "name": "Withdrawn",
+   "summary": "Licence withdrawn or suspended, usually for safety reasons."
+  },
+  {
+   "id": "investigational",
+   "name": "Investigational",
+   "summary": "Not licensed; available only in clinical trials or on a named-patient basis."
+  }
+ ],
+ "productTypes": [
+  {
+   "id": "small-molecule",
+   "name": "Small-molecule medicine",
+   "summary": "A chemically synthesised medicine, the majority of tablets, capsules and injections."
+  },
+  {
+   "id": "biologic",
+   "name": "Biologic",
+   "summary": "A medicine made by or from living cells: antibodies, recombinant proteins, enzymes, cytokines, clotting factors, immunoglobulins. A product type, not a therapeutic class."
+  },
+  {
+   "id": "biosimilar",
+   "name": "Biosimilar",
+   "parent": "biologic",
+   "summary": "A biologic shown to be highly similar to an already licensed reference biologic."
+  },
+  {
+   "id": "monoclonal-antibody",
+   "name": "Monoclonal antibody",
+   "parent": "biologic",
+   "summary": "An antibody engineered to bind one target (names ending in -mab)."
+  },
+  {
+   "id": "recombinant-protein",
+   "name": "Recombinant protein or hormone",
+   "parent": "biologic",
+   "summary": "A human protein made by engineered cells: insulins, growth hormone, erythropoietins, enzymes, clotting factors."
+  },
+  {
+   "id": "vaccine",
+   "name": "Vaccine",
+   "summary": "A product that trains the immune system against a disease target."
+  },
+  {
+   "id": "blood-product",
+   "name": "Blood-derived product",
+   "summary": "Immunoglobulins, albumin, clotting-factor concentrates and other products prepared from blood or plasma."
+  },
+  {
+   "id": "gene-therapy",
+   "name": "Gene therapy",
+   "summary": "A product that adds, replaces or edits genetic material in a person's cells."
+  },
+  {
+   "id": "cell-therapy",
+   "name": "Cell therapy",
+   "summary": "Living cells given as treatment: CAR-T cells, other engineered immune cells, stem-cell-derived products."
+  },
+  {
+   "id": "radiopharmaceutical",
+   "name": "Radiopharmaceutical",
+   "summary": "A radioactive medicine used for imaging (diagnostic) or treatment (therapeutic)."
+  },
+  {
+   "id": "contrast-agent",
+   "name": "Contrast agent",
+   "summary": "A substance given to make blood vessels, organs or cavities show up on imaging."
+  },
+  {
+   "id": "diagnostic-agent",
+   "name": "Diagnostic agent",
+   "summary": "A dye, tracer or challenge substance used in a test rather than as treatment."
+  },
+  {
+   "id": "iv-fluid",
+   "name": "Intravenous fluid",
+   "summary": "Crystalloid or colloid solutions given into a vein."
+  },
+  {
+   "id": "electrolyte",
+   "name": "Electrolyte preparation",
+   "summary": "Potassium, magnesium, calcium, phosphate or bicarbonate preparations."
+  },
+  {
+   "id": "nutrition-product",
+   "name": "Medical nutrition product",
+   "summary": "Parenteral or regulated enteral nutrition."
+  },
+  {
+   "id": "herbal-or-supplement",
+   "name": "Herbal medicine or supplement",
+   "summary": "A product regulated as a herbal medicine or supplement rather than a licensed medicine."
+  },
+  {
+   "id": "other",
+   "name": "Other product type",
+   "summary": "A product that fits none of the other types."
+  }
+ ],
+ "atcGroups": [
+  {
+   "id": "A",
+   "name": "Alimentary tract and metabolism"
+  },
+  {
+   "id": "B",
+   "name": "Blood and blood-forming organs"
+  },
+  {
+   "id": "C",
+   "name": "Cardiovascular system"
+  },
+  {
+   "id": "D",
+   "name": "Dermatologicals"
+  },
+  {
+   "id": "G",
+   "name": "Genitourinary system and sex hormones"
+  },
+  {
+   "id": "H",
+   "name": "Systemic hormonal preparations, excluding sex hormones and insulins"
+  },
+  {
+   "id": "J",
+   "name": "Anti-infectives for systemic use"
+  },
+  {
+   "id": "L",
+   "name": "Antineoplastic and immunomodulating agents"
+  },
+  {
+   "id": "M",
+   "name": "Musculoskeletal system"
+  },
+  {
+   "id": "N",
+   "name": "Nervous system"
+  },
+  {
+   "id": "P",
+   "name": "Antiparasitic products, insecticides and repellents"
+  },
+  {
+   "id": "R",
+   "name": "Respiratory system"
+  },
+  {
+   "id": "S",
+   "name": "Sensory organs"
+  },
+  {
+   "id": "V",
+   "name": "Various"
+  }
+ ],
+ "vaccinePlatforms": [
+  {
+   "id": "inactivated",
+   "name": "Inactivated (killed) whole organism"
+  },
+  {
+   "id": "live-attenuated",
+   "name": "Live attenuated organism"
+  },
+  {
+   "id": "subunit",
+   "name": "Subunit or split antigen"
+  },
+  {
+   "id": "toxoid",
+   "name": "Toxoid"
+  },
+  {
+   "id": "conjugate",
+   "name": "Polysaccharide conjugate"
+  },
+  {
+   "id": "recombinant-protein",
+   "name": "Recombinant protein"
+  },
+  {
+   "id": "virus-like-particle",
+   "name": "Virus-like particle"
+  },
+  {
+   "id": "mrna",
+   "name": "mRNA"
+  },
+  {
+   "id": "viral-vector",
+   "name": "Viral vector"
+  },
+  {
+   "id": "other",
+   "name": "Other platform"
+  }
+ ],
+ "advancedTherapyKinds": [
+  {
+   "id": "gene-replacement",
+   "name": "Gene replacement therapy"
+  },
+  {
+   "id": "gene-editing",
+   "name": "Gene-editing therapy"
+  },
+  {
+   "id": "viral-vector",
+   "name": "Viral-vector gene therapy"
+  },
+  {
+   "id": "car-t",
+   "name": "CAR-T cell therapy"
+  },
+  {
+   "id": "engineered-immune-cell",
+   "name": "Other engineered immune-cell product"
+  },
+  {
+   "id": "stem-cell-derived",
+   "name": "Stem-cell-derived medicinal product"
+  },
+  {
+   "id": "other",
+   "name": "Other advanced therapy medicinal product"
+  }
+ ],
+ "molecularScopes": [
+  {
+   "id": "gene",
+   "name": "A single gene"
+  },
+  {
+   "id": "variant",
+   "name": "A specific variant or mutation"
+  },
+  {
+   "id": "panel",
+   "name": "A panel of genes or variants"
+  },
+  {
+   "id": "overview",
+   "name": "A field of testing described in general"
+  }
+ ],
+ "testRelationships": [
+  {
+   "id": "TEST_MEASURES",
+   "from": "tests",
+   "to": "biomarkers",
+   "summary": "The analyte or component a test reports (from components[].biomarker and biomarkers[])."
+  },
+  {
+   "id": "TEST_USES_SPECIMEN",
+   "from": "tests",
+   "to": "vocab:specimens",
+   "summary": "The specimen a test needs (specimens[])."
+  },
+  {
+   "id": "TEST_EVALUATES_STRUCTURE",
+   "from": "tests",
+   "to": "anatomy",
+   "summary": "The organ or atlas structure the test looks at (anatomy.organs, anatomy.structures)."
+  },
+  {
+   "id": "TEST_EVALUATES_SYSTEM",
+   "from": "tests",
+   "to": "systems",
+   "summary": "The body system the test looks at (anatomy.systems)."
+  },
+  {
+   "id": "TEST_HELPS_EVALUATE_CONDITION",
+   "from": "tests",
+   "to": "conditions",
+   "summary": "A condition the test may help evaluate (conditions[]); never 'proves'."
+  },
+  {
+   "id": "TEST_MONITORS_CONDITION",
+   "from": "tests",
+   "to": "conditions",
+   "summary": "A condition the test is used to monitor over time (monitors[])."
+  },
+  {
+   "id": "TEST_MONITORS_MEDICATION",
+   "from": "tests",
+   "to": "medications",
+   "summary": "A medicine whose sourced monitoring plan names the test (computed from medications[].monitoringPlan)."
+  },
+  {
+   "id": "TEST_RELATED_TO_SYMPTOM",
+   "from": "tests",
+   "to": "symptoms",
+   "summary": "A symptom that commonly leads to the test (symptoms[])."
+  },
+  {
+   "id": "TEST_HAS_COMPONENT",
+   "from": "tests",
+   "to": "tests",
+   "summary": "A panel and the individual test it contains (components[].test)."
+  },
+  {
+   "id": "TEST_PART_OF_PANEL",
+   "from": "tests",
+   "to": "tests",
+   "summary": "The reverse of TEST_HAS_COMPONENT (panelOf[])."
+  },
+  {
+   "id": "TEST_REQUIRES_PREPARATION",
+   "from": "tests",
+   "to": "literal",
+   "summary": "Preparation the person must make (preparation), when there is any."
+  },
+  {
+   "id": "TEST_HAS_METHOD",
+   "from": "tests",
+   "to": "vocab:methods",
+   "summary": "The laboratory or clinical method (methods[])."
+  },
+  {
+   "id": "TEST_HAS_REFERENCE",
+   "from": "tests",
+   "to": "reference",
+   "summary": "An authoritative source cited on the page (references[])."
+  }
+ ],
+ "medicationRelationships": [
+  {
+   "id": "MEDICATION_HAS_INGREDIENT",
+   "from": "products",
+   "to": "medications",
+   "summary": "A brand or combination product and each active ingredient it contains (products.json)."
+  },
+  {
+   "id": "MEDICATION_HAS_BRAND",
+   "from": "medications",
+   "to": "literal",
+   "summary": "A brand name, with the jurisdiction it is sold in (brands{})."
+  },
+  {
+   "id": "MEDICATION_BELONGS_TO_CLASS",
+   "from": "medications",
+   "to": "drug-classes",
+   "summary": "The pharmacologic class (drugClass)."
+  },
+  {
+   "id": "MEDICATION_HAS_ROUTE",
+   "from": "medications",
+   "to": "vocab:routes",
+   "summary": "A route of administration (routeIds[])."
+  },
+  {
+   "id": "MEDICATION_HAS_DOSAGE_FORM",
+   "from": "medications",
+   "to": "vocab:dosageForms",
+   "summary": "A dosage form (dosageFormIds[])."
+  },
+  {
+   "id": "MEDICATION_TREATS_CONDITION",
+   "from": "medications",
+   "to": "conditions",
+   "summary": "A licensed or guideline-supported indication with its source (indications[])."
+  },
+  {
+   "id": "MEDICATION_MAY_CAUSE_EFFECT",
+   "from": "medications",
+   "to": "literal",
+   "summary": "A side effect listed in the cited source (sideEffects)."
+  },
+  {
+   "id": "MEDICATION_INTERACTS_WITH_MEDICATION",
+   "from": "medications",
+   "to": "medications",
+   "summary": "A sourced interaction record (interactions.json); the target may be a class or a named medicine."
+  },
+  {
+   "id": "MEDICATION_REQUIRES_MONITORING_TEST",
+   "from": "medications",
+   "to": "tests",
+   "summary": "A test or biomarker in the sourced monitoring plan (monitoringPlan[])."
+  },
+  {
+   "id": "MEDICATION_AFFECTS_STRUCTURE",
+   "from": "medications",
+   "to": "anatomy",
+   "summary": "An organ or structure the medicine acts on (anatomy.organs, anatomy.structures)."
+  },
+  {
+   "id": "MEDICATION_AFFECTS_SYSTEM",
+   "from": "medications",
+   "to": "systems",
+   "summary": "A body system the medicine acts on (anatomy.systems)."
+  },
+  {
+   "id": "MEDICATION_MODIFIES_PHYSIOLOGY",
+   "from": "medications",
+   "to": "physiology",
+   "summary": "A physiological process the medicine changes (physiology[])."
+  },
+  {
+   "id": "MEDICATION_HAS_CONTRAINDICATION",
+   "from": "medications",
+   "to": "literal",
+   "summary": "A sourced contraindication (contraindications[])."
+  },
+  {
+   "id": "MEDICATION_METABOLIZED_BY",
+   "from": "medications",
+   "to": "anatomy",
+   "summary": "The organ that metabolises the medicine, from the sourced pharmacokinetics (pharmacokinetics.metabolism)."
+  },
+  {
+   "id": "MEDICATION_EXCRETED_BY",
+   "from": "medications",
+   "to": "anatomy",
+   "summary": "The organ that eliminates the medicine, from the sourced pharmacokinetics (pharmacokinetics.elimination)."
+  },
+  {
+   "id": "MEDICATION_RELATED_TO_MEDICATION",
+   "from": "medications",
+   "to": "medications",
+   "summary": "A related medicine that is not a synonym and not necessarily the same class (related[])."
+  }
+ ],
+ "reviewQueues": [
+  {
+   "id": "needs_source",
+   "summary": "Entities with fewer than two references, or a structured fact whose source is missing (the build already fails on the latter)."
+  },
+  {
+   "id": "needs_medical_review",
+   "summary": "Entities whose review status is before clinical review."
+  },
+  {
+   "id": "potential_duplicate",
+   "summary": "Two pages, or a catalogued concept and a page, with the same normalised name."
+  },
+  {
+   "id": "possible_synonym_error",
+   "summary": "An alias that is also the name or alias of another entity of the same kind (a same-class medicine or a sub-test presented as 'also known as')."
+  },
+  {
+   "id": "possible_brand_mapping_error",
+   "summary": "A brand name listed under more than one ingredient, or an alias that looks like a brand but is not in the brands table."
+  },
+  {
+   "id": "possible_active_ingredient_error",
+   "summary": "A product ingredient given as free text although a medication page with that name exists."
+  },
+  {
+   "id": "class_mapping_conflict",
+   "summary": "A medicine whose drugClass differs from the class that lists it as a member, or an alias that names a class."
+  },
+  {
+   "id": "interaction_data_conflict",
+   "summary": "Interaction records left at needs-review because their sources disagree."
+  },
+  {
+   "id": "test_reference_range_risk",
+   "summary": "A test whose text quotes numeric cut-offs without a sourced, jurisdiction-tagged threshold record."
+  },
+  {
+   "id": "regulatory_status_conflict",
+   "summary": "Two regulatory entries for the same jurisdiction with different statuses and no note explaining why."
+  },
+  {
+   "id": "deprecated_terminology",
+   "summary": "Terminology mappings flagged deprecated or discouraged by the terminology release."
+  },
+  {
+   "id": "sparse_public_page",
+   "summary": "Indexable pages with little body text or a single reference."
+  },
+  {
+   "id": "coverage_gap",
+   "summary": "Catalogued test concepts and taxonomy classes that have no public page yet, by category (not thin pages: they are database-only until written)."
+  }
+ ],
+ "provenanceFields": [
+  {
+   "id": "source_name",
+   "summary": "The terminology or document the record was taken from."
+  },
+  {
+   "id": "source_version",
+   "summary": "Release or version of that source."
+  },
+  {
+   "id": "source_release_date",
+   "summary": "Release date of that source."
+  },
+  {
+   "id": "imported_at",
+   "summary": "When the record was ingested."
+  },
+  {
+   "id": "last_verified_at",
+   "summary": "When a person or the pipeline last verified the record against its source."
+  },
+  {
+   "id": "medical_reviewed_at",
+   "summary": "When a clinician reviewed the record."
+  },
+  {
+   "id": "medical_reviewer_id",
+   "summary": "Who reviewed it."
+  }
+ ]
+}

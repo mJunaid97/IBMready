@@ -52,7 +52,7 @@ const inspect = () => page.evaluate(() => {
 
 // 1. every page type renders with complete metadata
 const pages = ['', 'anatomy/', 'organs/', 'systems/', 'medical-terms/', 'study/', 'about/', 'editorial-policy/', 'medical-review-policy/', 'references-policy/', 'corrections-policy/', 'disclaimer/', 'contact/', 'roadmap/', 'search/?q=knee',
-  ...['physiology', 'symptoms', 'conditions', 'tests', 'biomarkers', 'imaging', 'procedures', 'medications', 'drug-classes', 'targets', 'first-aid', 'health', 'compare', 'interactions'].map(t => `${t}/`)].map(p => PRETTY || !p.endsWith('/') ? p : p + 'index.html');
+  ...['physiology', 'symptoms', 'conditions', 'tests', 'biomarkers', 'imaging', 'procedures', 'medications', 'drug-classes', 'targets', 'first-aid', 'health', 'compare', 'interactions', 'tests/categories', 'medications/classes'].map(t => `${t}/`)].map(p => PRETTY || !p.endsWith('/') ? p : p + 'index.html');
 const hrefs = new Set(); const titles = new Map();
 for (const p of pages) {
   await page.goto(base + p, { waitUntil: 'load' });
@@ -140,6 +140,35 @@ const c1 = await chk('lisinopril,ibuprofen'); if (!(c1.chips === 2 && c1.cards >
 const c2 = await chk('paracetamol,co-codamol'); if (!(c2.chips === 2 && c2.dup >= 1)) fail(`checker duplication: ${JSON.stringify(c2)}`); else ok('checker: paracetamol + co-codamol flags therapeutic duplication');
 const c3 = await chk('amoxicillin,cetirizine'); if (!(c3.chips === 2 && c3.cards === 0 && c3.none && !c3.safe)) fail(`checker no-interaction state: ${JSON.stringify(c3)}`); else ok('checker: no-interaction wording is the safe form');
 const c4 = await chk('norvasc,statins'); if (!(c4.chips === 2)) fail(`checker brand and class resolution: ${JSON.stringify(c4)}`); else ok('checker: brand (Norvasc) and class (statins) resolve');
+// the medication page's "Check interactions" link preloads the medicine (spec §100: ?drug=<ingredient>)
+await page.goto(base + 'interactions/' + (PRETTY ? '' : 'index.html') + '?drug=amlodipine', { waitUntil: 'load' }); await page.waitForFunction(() => document.querySelectorAll('#chk-chips .chk-chip').length >= 1, null, { timeout: 30000 });
+const pre = await page.evaluate(() => ({ chips: document.querySelectorAll('#chk-chips .chk-chip').length, text: document.querySelector('#chk-chips')?.textContent || '' }));
+if (!(pre.chips === 1 && /Amlodipine/.test(pre.text))) fail(`checker preload ?drug=amlodipine: ${JSON.stringify(pre)}`); else ok('checker: ?drug=amlodipine preloads the medicine');
+// 4e. taxonomy layer: the test-category hub, a category page, the medication class hub, terminology and availability on entity pages
+await page.goto(base + 'tests/categories/' + (PRETTY ? '' : 'index.html'), { waitUntil: 'load' }); await rendered();
+const hub = await page.evaluate(() => ({ cards: document.querySelectorAll('.card').length, groups: document.querySelectorAll('h2').length, ld: (document.getElementById('jsonld')?.textContent || '').includes('ItemList') }));
+if (!(hub.cards >= 30 && hub.groups >= 4 && hub.ld)) fail(`test categories hub: ${JSON.stringify(hub)}`); else ok(`test categories hub: ${hub.cards} categories in ${hub.groups} groups`);
+await page.goto(PRETTY ? base + 'tests/categories/blood-haematology/' : base + 'tests/category.html?id=blood-haematology', { waitUntil: 'load' }); await rendered();
+const catp = await page.evaluate(() => ({ h1: document.querySelector('h1')?.textContent, pages: document.querySelectorAll('#pages ~ .grid .card, h2#pages + .grid .card').length, catalogue: document.querySelectorAll('.catalogue li').length, crumbs: document.querySelectorAll('.breadcrumb li').length, robots: document.querySelector('meta[name="robots"]')?.content, canonical: document.querySelector('link[rel="canonical"]')?.href || '' }));
+if (!(/haematology/i.test(catp.h1) && catp.pages >= 2 && catp.catalogue >= 10 && catp.crumbs >= 4 && /index/.test(catp.robots) && /tests\/categories\/blood-haematology/.test(catp.canonical))) fail(`test category page: ${JSON.stringify(catp)}`); else ok(`test category page: ${catp.pages} pages, ${catp.catalogue} catalogued concepts`);
+await page.goto(PRETTY ? base + 'tests/categories/sleep/' : base + 'tests/category.html?id=sleep', { waitUntil: 'load' }); await rendered();
+const sleep = await page.evaluate(() => document.querySelector('meta[name="robots"]')?.content || '');
+if (!/noindex/.test(sleep)) fail(`a category without pages must be noindex (sleep: ${sleep})`); else ok('empty test category is noindex');
+await page.goto(base + 'medications/classes/' + (PRETTY ? '' : 'index.html'), { waitUntil: 'load' }); await rendered();
+const cls = await page.evaluate(() => ({ areas: document.querySelectorAll('.tax-area').length, classes: document.querySelectorAll('.classes li').length, linked: document.querySelectorAll('.classes li a[href*="drug-classes"]').length, atc: document.querySelectorAll('#atc ~ .table-wrap tbody tr').length }));
+if (!(cls.areas >= 25 && cls.classes >= 300 && cls.linked >= 20 && cls.atc === 14)) fail(`medication class hub: ${JSON.stringify(cls)}`); else ok(`medication class hub: ${cls.areas} areas, ${cls.classes} classes, ${cls.linked} linked to pages`);
+await page.fill('#q', 'statin'); await page.waitForTimeout(300);
+const filtered = await page.evaluate(() => [...document.querySelectorAll('.classes li')].filter(li => !li.hidden).length);
+if (!(filtered >= 1 && filtered < cls.classes)) fail(`class hub filter: ${filtered} of ${cls.classes}`); else ok(`class hub filter: ${filtered} classes match "statin"`);
+await page.goto(detailUrl('tests', 'test.html', 'creatinine-egfr'), { waitUntil: 'load' }); await rendered();
+const term = await page.evaluate(() => ({ loinc: /LOINC/.test(document.querySelector('.facts')?.textContent || ''), cat: [...document.querySelectorAll('.breadcrumb a')].some(a => /tests\/categories\//.test(a.href)), kind: /Laboratory test/.test(document.querySelector('.facts')?.textContent || ''), monitors: !!document.getElementById('monitors'), ld: (document.getElementById('jsonld')?.textContent || '').includes('MedicalCode') }));
+if (!(term.loinc && term.cat && term.kind && term.monitors && term.ld)) fail(`test page terminology/taxonomy: ${JSON.stringify(term)}`); else ok('test page: LOINC codes, kind, category breadcrumb, monitored medicines, MedicalCode schema');
+await page.goto(detailUrl('medications', 'medication.html', 'omeprazole'), { waitUntil: 'load' }); await rendered();
+const avail = await page.evaluate(() => ({ avail: document.querySelectorAll('#availability ~ .table-wrap tbody tr').length, same: !!document.getElementById('same-class'), rx: /RxNorm/.test(document.querySelector('.facts')?.textContent || ''), routes: /Oral/.test(document.querySelector('.facts')?.textContent || ''), ld: (document.getElementById('jsonld')?.textContent || '').includes('"ATC"') }));
+if (!(avail.avail >= 2 && avail.same && avail.rx && avail.routes && avail.ld)) fail(`medication page taxonomy: ${JSON.stringify(avail)}`); else ok(`medication page: availability by country (${avail.avail} rows), same-class medicines, RxNorm/ATC codes`);
+await page.goto(dirUrl('tests'), { waitUntil: 'load' }); await rendered();
+const facetSel = await page.evaluate(() => document.querySelectorAll('#facets select').length);
+if (facetSel < 2) fail(`tests hub facets: ${facetSel} selects`); else { await page.selectOption('#facets select[data-facet="specimens"]', 'serum'); await page.waitForTimeout(400); const nf = await page.evaluate(() => document.querySelectorAll('#cards .card').length); if (!(nf >= 1 && nf < 25)) fail(`tests hub specimen facet: ${nf} cards`); else ok(`tests hub facets: ${facetSel} selects, ${nf} serum tests`); }
 // typeahead resolves a brand to its generic page
 await page.goto(base, { waitUntil: 'load' }); await page.fill('#hsearch-q', 'cozaar'); await page.waitForTimeout(800);
 const brand = await page.evaluate(() => document.querySelector('#hsearch-results li a')?.getAttribute('href') || '');
@@ -217,7 +246,8 @@ if (PRETTY) {
   if (nf2[0] !== 404) fail(`unknown entity slug returned ${nf2[0]} instead of 404`);
   const expect = [['tests/cbc/', '/tests/complete-blood-count/'], ['medications/norvasc', '/medications/amlodipine/'], ['conditions/heart-attack/', '/conditions/myocardial-infarction/'], ['conditions/gout', '/conditions/gout/'], ['conditions/condition.html?id=gout', '/conditions/gout/'],
     ['organs/heart/', '/anatomy/heart/'], ['organs/organ.html?id=liver', '/anatomy/liver/'], ['anatomy/cardiac/', '/anatomy/heart/'], ['learn/terminology.html', '/medical-terms/'], ['conditions/index.html', '/conditions/'], ['index.html', '/'],
-    ['tests/cardiac-biomarkers/', '/tests/troponin/'], ['tests/inflammatory-markers/', '/tests/crp/'], ['tests/egfr/', '/tests/creatinine-egfr/'], ['biomarkers/hb/', '/biomarkers/haemoglobin/'], ['compare/compare.html?id=crp-vs-esr', '/compare/crp-vs-esr/'], ['compare/crp-vs-esr', '/compare/crp-vs-esr/']];
+    ['tests/cardiac-biomarkers/', '/tests/troponin/'], ['tests/inflammatory-markers/', '/tests/crp/'], ['tests/egfr/', '/tests/creatinine-egfr/'], ['biomarkers/hb/', '/biomarkers/haemoglobin/'], ['compare/compare.html?id=crp-vs-esr', '/compare/crp-vs-esr/'], ['compare/crp-vs-esr', '/compare/crp-vs-esr/'],
+    ['tools/drug-interaction-checker/?drug=amlodipine', '/interactions/?drug=amlodipine'], ['medications/classes/statins/', '/drug-classes/statins/'], ['medications/classes/acei/', '/drug-classes/ace-inhibitors/'], ['tests/category.html?id=blood-haematology', '/tests/categories/blood-haematology/'], ['tests/categories/blood-haematology', '/tests/categories/blood-haematology/'], ['tests/categories/blood-hematology/', '/tests/categories/blood-haematology/']];
   let bad = 0;
   for (const [from, to] of expect) { const [s, loc] = await status(from); if (s !== 301 || !loc.endsWith(to)) { bad++; fail(`redirect ${from}: ${s} ${loc} (expected 301 ${to})`); } }
   ok(`${expect.length} redirect rules checked, ${bad} wrong`);

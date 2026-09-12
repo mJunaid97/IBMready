@@ -114,6 +114,7 @@ q.addEventListener('keydown', (e) => {
 sugg.addEventListener('mousedown', (e) => { const a = e.target.closest('a[data-i]'); if (!a) return; e.preventDefault(); add(results[+a.dataset.i]); q.value = ''; close(); });
 q.addEventListener('blur', () => setTimeout(close, 150));
 document.getElementById('chk-chips').addEventListener('click', (e) => { const b = e.target.closest('.chk-x'); if (!b) return; selected.splice(+b.dataset.i, 1); renderSelected(); });
-for (const tok of (param('drugs') || '').split(',').map(s => s.trim()).filter(Boolean)) add(resolve(tok));
+// preload from ?drugs=a,b (the checker's own links) or ?drug=a (the medication pages and /tools/drug-interaction-checker/?drug=…, spec §100)
+for (const tok of [param('drugs') || '', param('drug') || ''].join(',').split(',').map(s => s.trim()).filter(Boolean)) add(resolve(tok));
 renderSelected();
 document.body.dataset.rendered = '1';

@@ -88,6 +88,7 @@ await browser.close(); server.close();
 // ---- one URL per page: drop the query-URL templates now that every entity page exists as a directory
 let removed = 0;
 for (const [dir, tpl] of Object.entries(TEMPLATES)) { const f = join(dist, dir, tpl); if (existsSync(f)) { unlinkSync(f); removed++; } }
+for (const extra of ['tests/category.html']) { const f = join(dist, extra); if (existsSync(f)) { unlinkSync(f); removed++; } }   // the test-category template (pages live at tests/categories/<id>/)
 const previews = join(dist, 'site', 'previews');
 console.log(`prerendered ${n} pages (${failed} failed), removed ${removed} template pages, ${existsSync(previews) ? readdirSync(previews).length : 0} preview images`);
 if (missingPreviews.size) console.error(`missing preview images (body.jpg used instead): ${[...missingPreviews].join(', ')}`);

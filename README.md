@@ -18,11 +18,11 @@ authoritative medical reference needs (see `SEO.md`).
 | Physiology | `/physiology/<topic>/` | 30 topics on how the body works, sourced to OpenStax *Anatomy & Physiology* and NIH. |
 | Symptoms | `/symptoms/<symptom>/` | 18 symptom pages: anatomy involved, common and less common causes, red flags, related conditions and tests. Educational, never diagnostic. |
 | Conditions | `/conditions/<condition>/` | 40 conditions: definition, affected anatomy, causes, risk factors, symptoms, signs, complications, diagnosis, treatment, prevention, when to seek care. |
-| Medical tests | `/tests/<test>/` | 26 tests: what they measure, why ordered, how done, reading the result, limitations. |
-| Imaging | `/imaging/<modality>/` | 7 modalities: how they work, what they show, best for / not for, dose, preparation, common uses. |
+| Medical tests | `/tests/<test>/` | 38 tests (23 at full clinical depth): kind, category, specimen, method, LOINC codes, what they measure, why ordered, how done, reading the result, limitations. `/tests/categories/` is the master taxonomy: 36 categories over 837 catalogued test concepts. |
+| Imaging | `/imaging/<modality>/` | 8 modalities: how they work, what they show, best for / not for, dose, preparation, common uses. |
 | Procedures | `/procedures/<procedure>/` | 14 procedures step by step: indications, before, steps, after, recovery, risks, alternatives. |
-| Medications | `/medications/<generic-name>/` | 25 medicines by generic name (brand names redirect): class, uses, mechanism, forms, side effects, cautions, monitoring. |
-| Drug classes | `/drug-classes/<class>/` | 23 classes: mechanism, biological target, body system, conditions treated, members, class effects, cautions. |
+| Medications | `/medications/<generic-name>/` | 39 medicines by generic name (brand names redirect), including a vaccine, a contrast agent and a radiopharmaceutical: product type, class, uses, mechanism, routes and dosage forms, availability by country, RxNorm / ATC / FDA class codes, side effects, cautions, interactions, monitoring. `/medications/classes/` is the taxonomy: 31 therapeutic areas, 536 classes with ATC codes. |
+| Drug classes | `/drug-classes/<class>/` | 27 classes: mechanism, biological target, body system, conditions treated, members, class effects, cautions. |
 | First aid | `/first-aid/<topic>/` | 16 topics following Resuscitation Council UK / ERC guidance, each with the anatomy behind it. |
 | Health | `/health/<topic>/` | Exercise, sleep, nutrition, weight, smoking, alcohol, hydration through the systems they act on. |
 | Medical terms | `/medical-terms/` | 149 terms in 8 categories with pronunciation, plain meaning, examples, atlas links and the pages that use them. |
@@ -67,6 +67,10 @@ Editable content lives in `content/` and is compiled into `data/content/` by
   `imaging.json`, `procedures.json`, `medications.json`, `drug-classes.json`, `targets.json`,
   `first-aid.json`, `health.json` — one entity per key, cross-linked by id, each with `aliases`,
   `urlAliases`, `references` and a `review` status
+- `content/vocabularies.json`, `test-taxonomy.json`, `medication-taxonomy.json` — the controlled vocabularies (specimens, methods,
+  modalities, routes, dosage forms, regulatory statuses, product types…), the master test taxonomy with its catalogue of 837
+  concepts, and the medication taxonomy (therapeutic areas → classes with ATC codes); `terminology-verification.json` is
+  written by the terminology pipelines (see `CLINICAL.md` §8)
 - `content/interactions.json`, `products.json`, `comparisons.json` — sourced interaction records,
   brand and combination products mapped to ingredients, and structured comparisons (see `CLINICAL.md`)
 - `content/roadmap.json` — phases, sections, entity model
@@ -89,6 +93,10 @@ gate. Outputs:
 | `data/content/knowledge.json` | the whole graph in one file (267 topics, 4,700 typed links, 540 references) |
 | `data/content/interactions.json` | interaction records, class membership, products and the name index the interaction checker uses |
 | `data/content/comparisons.json` | the comparisons |
+| `data/content/test-categories.json` | the 36 test categories: pages in each, catalogued concepts, counts, indexability |
+| `data/content/medication-taxonomy.json` | therapeutic areas → classes → medicines, plus route / dosage-form / product-type facets |
+| `data/content/review-queues.json` | the editorial review queues computed by the validation rules |
+| `data/content/vocabularies.json` | the controlled vocabularies with display names |
 | `site/site-meta.js` | the site identity as an ES module for the page shell |
 
 To add a condition, test, medication or any other entity: add a key to the matching
@@ -128,7 +136,8 @@ whole layer; `DEPLOY.md` the hosting.
    phone-width layout check, and every page type again with the Content-Security-Policy
    enforced.
 
-`.github/workflows/references.yml` fetches every reference URL weekly and on content changes
+The content job also runs the unit tests of the terminology pipelines (`tools/terminology/`: LOINC and RxNorm
+ingestion on synthetic fixtures). `.github/workflows/references.yml` fetches every reference URL weekly and on content changes
 and fails on a dead link. `live-check.yml` runs the smoke test against the deployed site.
 
 ## Security
@@ -195,8 +204,8 @@ site/                 shared shell: site.js (URLs, header, footer, facade), seo.
                       (templates, hubs), site.css, previews/ (3D preview images), site-meta.js (generated)
 data/                 built atlas (hd, lite), compiled content, ATTRIBUTION.md
 content/              editable content sources
-tools/                pipeline: build-content.py, package-site.py, prerender.mjs, render-previews.mjs,
-                      check-references.py, release.py, qa/ (smoke test, serve.py)
+tools/                pipeline: build-content.py (+ taxonomy.py), package-site.py, prerender.mjs, render-previews.mjs,
+                      check-references.py, release.py, terminology/ (LOINC and RxNorm ingestion), qa/ (smoke test, serve.py)
 vendor/three/         three.js r186 (minified core + the addons used)
 ARCHITECTURE.md       entity model and how sections connect · SEO.md the search architecture · CLINICAL.md the clinical layer
 ```

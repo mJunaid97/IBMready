@@ -8,7 +8,7 @@
  * Under a prerendered page (body[data-prerendered]) neither function redraws the content: the hub
  * only binds its filters and the detail page only binds the 3D facade and the header.
  */
-import { renderHeader, renderFooter, loadData, loadClinical, loadType, loadInteractions, link, entityLink, typeLink, entityPath, TYPES, TYPE_ORDER, esc, param, pageId, paths, url, ROOT, PRERENDERED, SITE, SEVERITY, breadcrumbHtml, facadeHtml, dateText, canonical } from './site.js';
+import { renderHeader, renderFooter, loadData, loadClinical, loadType, loadInteractions, loadVocabularies, vocabName, link, entityLink, typeLink, entityPath, TYPES, TYPE_ORDER, esc, param, pageId, paths, url, ROOT, PRERENDERED, SITE, SEVERITY, breadcrumbHtml, facadeHtml, dateText, canonical } from './site.js';
 import { applyMeta, seoTitle, metaDescription, webPageNode } from './seo.js';
 
 const SYMPTOM_REGION = { head: 'head', chest: 'thorax', abdomen: 'abdomen', back: 'thorax', arms: 'upper-limb', legs: 'lower-limb' };
@@ -29,6 +29,21 @@ const INDICATION_STATUS = { licensed: 'Licensed', 'guideline-supported': 'Guidel
 const WARNING_TYPE = { boxed: 'Boxed warning (US)', contraindication: 'Contraindication', special: 'Special warning', precaution: 'Precaution', monitoring: 'Monitoring', pregnancy: 'Pregnancy', lactation: 'Breastfeeding', renal: 'Kidney', hepatic: 'Liver', driving: 'Driving', other: 'Other' };
 const CAUTION_TYPE = { contraindication: 'Contraindication', warning: 'Warning', precaution: 'Precaution', 'dose-or-monitoring': 'Dose or monitoring dependent', other: 'Other' };
 const POP_LABEL = { pregnancy: 'Pregnancy', lactation: 'Breastfeeding', children: 'Children', older: 'Older adults', renal: 'Kidney impairment', hepatic: 'Liver impairment' };
+const KIND_LABEL = { laboratory: 'Laboratory test', panel: 'Test panel', measurement: 'Physiological measurement', physiological: 'Physiological or functional test', imaging: 'Imaging study', 'diagnostic-procedure': 'Diagnostic procedure', examination: 'Clinical examination', 'screening-tool': 'Screening or assessment tool', pathology: 'Pathology or cytology test', genetic: 'Genetic or molecular test', microbiology: 'Microbiology test' };
+const SCOPE_LABEL = { gene: 'a single gene', variant: 'a specific variant', panel: 'a panel of genes or variants', overview: 'the field in general' };
+/** Terminology identifiers (§2): asserted by the editorial team, verified by tools/terminology/*.py against a licensed release. */
+function terminologyHtml(t) {
+  if (!t) return '';
+  const code = (sys, c, label) => `<span class="code" title="${esc(sys)}${c.name ? ' · ' + esc(c.name) : ''} · ${c.verified ? 'verified against release ' + esc(c.release || '') : 'asserted, pending verification against the release'}"><span class="mono">${esc(label || c.code)}</span>${c.verified ? ' <abbr title="verified">✓</abbr>' : ''}</span>`;
+  const parts = [];
+  if (t.loinc?.length) parts.push(`LOINC ${t.loinc.map(c => code('LOINC', c)).join(', ')}`);
+  if (t.rxcui) parts.push(`RxNorm RxCUI ${code('RxNorm', t.rxcui)}`);
+  if (t.atc?.length) parts.push(`ATC ${t.atc.map(c => code('WHO ATC', c)).join(', ')}`);
+  if (t.fdaEpc?.length) parts.push(`FDA EPC ${t.fdaEpc.map(c => code('FDA Established Pharmacologic Class', c, c.name)).join('; ')}`);
+  return parts.join(' · ');
+}
+const vn = (vocab, key, id) => esc(vocabName(vocab, key, id));
+const vlist = (vocab, key, ids) => (ids || []).map(id => vn(vocab, key, id)).join(', ');
 export const REVIEW_LABEL = { draft: 'Draft', 'source-ingested': 'Structured from sources, not yet checked', 'source-verified': 'Facts checked against the cited sources; not yet clinically reviewed', 'editorial-review': 'In editorial review', 'clinical-review': 'In clinical review', approved: 'Clinically reviewed and approved', published: 'Published after clinical review', 'needs-review': 'Flagged for re-review', archived: 'Archived' };
 
 // ---------------------------------------------------------------- helpers
@@ -182,9 +197,10 @@ function clinicalSidebar(type, e, clinical, data, ix) {
     const uses = (e.indications || []).filter(i => i.status === 'licensed' && i.condition).map(i => i.condition).filter((v, i, a) => a.indexOf(v) === i).slice(0, 3).map(id => entityA(clinical, 'conditions', id)).join(', ') || (e.links?.conditions || []).slice(0, 3).map(id => entityA(clinical, 'conditions', id)).join(', ');
     rows = row('Drug class', cls ? entityA(clinical, 'drug-classes', cls) : esc(e.class || '')) + row('Used for', uses) + row('Acts on', (e.links?.targets || []).map(id => entityA(clinical, 'targets', id)).join(', ')) + row('Body system', systems)
       + row('Related tests', (e.links?.tests || []).slice(0, 4).map(id => entityA(clinical, 'tests', id)).join(', ')) + row('Prescription status', e.otc ? esc(e.otc.UK || Object.values(e.otc)[0]) : '')
-      + row('Interactions', `<a href="#interactions">${ix ? (ix.byDrug?.[e.id] || []).length + ' records on this page' : 'See below'}</a> · <a href="${link.interactions([e.id])}">Check interactions</a>`);
+      + row('Interactions', `<a href="#interactions">${ix ? (ix.byDrug?.[e.id] || []).length + ' records on this page' : 'See below'}</a> · <a href="${link.interactions([e.id])}">Check interactions</a>`)
+      + row('Availability', e.regulatory?.length ? `<a href="#availability">${e.regulatory.length} countr${e.regulatory.length === 1 ? 'y' : 'ies'}</a>` : '');
   } else if (type === 'tests') {
-    rows = row('Type', esc(e.quick?.type || e.testType || '')) + row('Sample', esc(e.quick?.sample || e.specimen || '')) + row('Measures', (e.links?.biomarkers || []).slice(0, 6).map(id => entityA(clinical, 'biomarkers', id)).join(', ') || esc(e.quick?.measures || ''))
+    rows = row('Kind', esc(KIND_LABEL[e.kind] || e.quick?.type || e.testType || '')) + row('Sample', esc(e.quick?.sample || e.specimen || '')) + row('Measures', (e.links?.biomarkers || []).slice(0, 6).map(id => entityA(clinical, 'biomarkers', id)).join(', ') || esc(e.quick?.measures || ''))
       + row('Used for', (e.links?.conditions || []).slice(0, 4).map(id => entityA(clinical, 'conditions', id)).join(', ')) + row('Range policy', e.rangePolicy ? esc(RANGE_POLICY[e.rangePolicy] || e.rangePolicy) : '') + row('Anatomy', organs || systems);
   } else if (type === 'biomarkers') {
     rows = row('Measured by', (e.links?.tests || []).map(id => entityA(clinical, 'tests', id)).join(', ')) + row('Units', esc(e.unit || '')) + row('Organ', organs) + row('Body system', systems)
@@ -198,6 +214,30 @@ function clinicalSidebar(type, e, clinical, data, ix) {
   }
   return rows ? `<section class="side-clinical" aria-label="At a glance"><h2>At a glance</h2><dl>${rows}</dl></section>` : '';
 }
+
+/** Availability by country (§77): jurisdiction-aware regulatory status, each entry with its source; never presented as universal. */
+function availabilityHtml(e, vocab) {
+  if (!e.regulatory?.length) return '';
+  const rows = e.regulatory.map(r => [esc(r.jurisdiction), vn(vocab, 'regulatoryStatuses', r.status), esc(r.note || ''), `${src(r.source)}${r.verifiedAt ? ` <span class="small muted">verified ${esc(dateText(r.verifiedAt))}</span>` : ''}`]);
+  return `<h2 id="availability">Availability by country</h2>${table(['Country', 'Status', 'Note', 'Source'], rows)}<p class="small muted">Legal status differs between countries and can change; each row cites the document it was taken from and applies only to the country named.</p>`;
+}
+/** Same-class medicines (members of the class, linked when they have a page), related medicines, umbrella members, and the product-type blocks (vaccine, radiopharmaceutical, contrast agent, advanced therapy). */
+function medicationExtras(e, clinical, ix, vocab, data) {
+  const cls = e.links?.drugClass?.[0];
+  const memberChip = (n) => { const id = clinical.medicationIndex?.[String(n).toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/[^a-z0-9]+/g, ' ').trim()]; return id && id !== e.id ? `<a class="chip" href="${entityLink('medications', id)}">${esc(n)}</a>` : id === e.id ? '' : `<span class="chip chip-plain">${esc(n)}</span>`; };
+  const classMembers = cls ? (ix?.classMemberNames?.[cls] || []).filter(n => n.toLowerCase() !== e.name.toLowerCase()) : [];
+  const related = (e.links?.related || []).filter(id => id !== e.id);
+  const sameClass = classMembers.length ? `<h3>Same class: ${entityA(clinical, 'drug-classes', cls)}</h3><div class="chips">${classMembers.map(memberChip).join('')}</div><p class="small muted">Medicines that share the class of ${esc(e.name)}. They are separate medicines with their own licences, doses and interactions, not alternative names for ${esc(e.name)}.</p>` : '';
+  const rel = related.length ? `<h3>Related medicines</h3>${inlineChips(clinical, 'medications', related)}<p class="small muted">Medicines often discussed alongside ${esc(e.name)}: used together, compared with it, or acting on the same problem by a different route.</p>` : '';
+  const members = e.members?.length ? section('Medicines in this group', `<div class="chips">${e.members.map(memberChip).join('')}</div><p class="small muted">${esc(e.name)} is a group of related active ingredients; each is a distinct medicine.</p>`, 'members') : '';
+  const v = e.vaccine, r = e.radiopharmaceutical, c = e.contrast, a = e.advancedTherapy;
+  const vaccine = v ? section('Vaccine profile', `<dl class="facts">${[['Disease targets', (v.diseaseTargets || []).map(d => typeof d === 'string' ? esc(d) : d.condition ? entityA(clinical, 'conditions', d.condition) + (d.note ? ` <span class="muted small">(${esc(d.note)})</span>` : '') : esc(d.name || '')).join(', ')], ['Platform', vn(vocab, 'vaccinePlatforms', v.platform)], ['Antigen', esc(v.antigen || '')], ['Combination vaccine', v.combination ? 'Yes' : 'No'], ['Age indication', esc(v.ageIndication || '')], ['Formulation', esc(v.formulation || '')]].filter(([, x]) => x).map(([k, x]) => `<dt>${esc(k)}</dt><dd>${x}</dd>`).join('')}</dl>${v.schedule ? `<div class="callout info"><b>Schedule.</b> ${esc(v.schedule.note)}${src(v.schedule.source)} <span class="small muted">Schedules change; this note is versioned against the cited guidance and dated on this page.</span></div>` : ''}`, 'vaccine') : '';
+  const radio = r ? section('Radiopharmaceutical profile', `<dl class="facts">${[['Isotope', esc(r.isotope || '')], ['Targeting mechanism', esc(r.targeting || '')], ['Use', esc({ diagnostic: 'Diagnostic (imaging)', therapeutic: 'Therapeutic', both: 'Diagnostic and therapeutic' }[r.use] || r.use || '')], ['Related imaging', (r.relatedImaging || []).map(id => entityA(clinical, 'imaging', id)).join(', ')]].filter(([, x]) => x).map(([k, x]) => `<dt>${esc(k)}</dt><dd>${x}</dd>`).join('')}</dl><div class="callout"><b>Radiation precautions.</b> ${esc(r.precautions || '')}</div>`, 'radiopharmaceutical') : '';
+  const contrast = c ? section('Contrast or diagnostic agent profile', `<dl class="facts">${[['Agent class', esc(c.agentClass || '')], ['Used with', (c.relatedImaging || []).map(id => entityA(clinical, 'imaging', id)).join(', ')], ['Route into the body', esc(c.route || '')]].filter(([, x]) => x).map(([k, x]) => `<dt>${esc(k)}</dt><dd>${x}</dd>`).join('')}</dl>`, 'contrast') : '';
+  const adv = a ? section('Advanced therapy profile', `<dl class="facts">${[['Kind', vn(vocab, 'advancedTherapyKinds', a.kind)], ['Vector or cell product', esc(a.vector || '')], ['Target', esc(a.target || '')]].filter(([, x]) => x).map(([k, x]) => `<dt>${esc(k)}</dt><dd>${x}</dd>`).join('')}</dl><div class="callout"><b>Regulatory verification.</b> Gene and cell therapies are described only with their current licence status, verified on the date shown in the availability table.</div>`, 'advanced-therapy') : '';
+  return `${vaccine}${radio}${contrast}${adv}${members}${sameClass || rel ? section('Same-class and related medicines', sameClass + rel, 'same-class') : ''}`;
+}
+function nameOfCategory(clinical, id) { return clinical.testCategoryNames?.[id] || id.replace(/-/g, ' '); }
 
 // ------------------------------------------------------------ templates
 const T = {
@@ -223,19 +263,25 @@ const T = {
       ${section('Prevention', para(e.prevention))}
       ${e.seekCare ? `<div class="callout urgent"><h2>When to seek care</h2><p style="margin:0">${esc(e.seekCare)}</p></div>` : ''}`;
   },
-  tests(e, { clinical }) {
+  tests(e, { clinical, vocab }) {
+    const facts = `<dl class="facts">${[['Canonical name', esc(e.canonicalName || '')], ['Abbreviations', esc((e.abbreviations || []).join(', '))], ['Kind', esc(KIND_LABEL[e.kind] || e.kind || '')],
+      ['Categories', (e.categories || []).map(c => `<a href="${link.testCategory(c)}">${esc(nameOfCategory(clinical, c))}</a>`).join(', ')], ['Specimen', vlist(vocab, 'specimens', e.specimens)], ['Method', vlist(vocab, 'methods', e.methods)], ['Modality', e.modality ? vn(vocab, 'imagingModalities', e.modality) : ''],
+      ['Molecular scope', e.molecular?.scope ? esc(SCOPE_LABEL[e.molecular.scope] || e.molecular.scope) : ''], ['Part of panel', (e.panelOf || []).map(id => entityA(clinical, 'tests', id)).join(', ')],
+      ['Component tests', (e.components || []).filter(c => c.test).map(c => entityA(clinical, 'tests', c.test)).join(', ')], ['Terminology', terminologyHtml(e.terminology)]].filter(([, v]) => v).map(([k, v]) => `<dt>${esc(k)}</dt><dd>${v}</dd>`).join('')}</dl>`;
+    const extras = `${e.monitoredMedications?.length ? section('Medicines monitored with this test', inlineChips(clinical, 'medications', e.monitoredMedications) + '<p class="small muted">Each medicine page cites the official document that names this test in its monitoring plan.</p>', 'monitors') : ''}
+      ${e.concepts?.length > 1 ? section('Catalogued concepts this page covers', `<div class="chips">${e.concepts.map(c => `<a class="chip chip-plain" href="${link.testCategory(c.category)}#${esc(c.id)}">${esc(c.name)}</a>`).join('')}</div><p class="small muted">Concepts of the master test taxonomy that resolve to this page; each links to its category.</p>`, 'covers') : ''}`;
     if (e.depth !== 'full') {
-      return `${section('What it measures', kv((e.measures || []).map(m => [esc(m.item), esc(m.meaning)]), ['Measure', 'What it tells you']))}
+      return `${facts}${section('What it measures', kv((e.measures || []).map(m => [esc(m.item), esc(m.meaning)]), ['Measure', 'What it tells you']))}
         ${section('Why it is ordered', list(e.whyOrdered))}
         ${section('How it is done', para(e.how) + (e.preparation ? `<p><b>Preparation.</b> ${esc(e.preparation)}</p>` : ''))}
         ${section('Reading the result', kv((e.interpretation || []).map(i => [esc(i.finding), esc(i.meaning)]), ['Finding', 'Usual meaning']) + '<p class="small muted">Reference ranges vary by laboratory, method, age, sex and clinical context; a result is read against the person, not a table.</p>')}
-        ${section('Limitations', para(e.limitations))}`;
+        ${section('Limitations', para(e.limitations))}${extras}`;
     }
     // Full-depth test page, in the order of the specification (§16): what, why, measures, how, preparation, results, factors, cannot tell, other tests, anatomy, sources
     const q = e.quick || {};
     const compRows = (e.components || []).map(c => [`${c.biomarker ? entityA(clinical, 'biomarkers', c.biomarker) : esc(c.name)}${c.abbreviation ? ` <span class="muted small">${esc(c.abbreviation)}</span>` : ''}${c.biomarker && c.name !== nameOf(clinical, 'biomarkers', c.biomarker) ? `<div class="small muted">${esc(c.name)}</div>` : ''}`, esc(c.measures), esc(c.high || ''), esc(c.low || '')]);
     const thr = (e.thresholds || []).map(t => [esc(t.name), esc(String(t.value)), esc(t.unit), esc(t.context), `${esc(t.jurisdiction)}${src(t.source)}`]);
-    return `${quickBox([['Type', esc(q.type)], ['Sample', esc(q.sample)], ['Used for', esc(q.usedFor)], ['Measures', esc(q.measures)], ['Result', esc(e.resultType || '')]])}
+    return `${facts}${quickBox([['Type', esc(q.type)], ['Sample', esc(q.sample)], ['Used for', esc(q.usedFor)], ['Measures', esc(q.measures)], ['Result', esc(e.resultType || '')]])}
       ${section('Why is it used?', list(e.whyOrdered), 'why')}
       ${section('What does it measure?', (compRows.length ? table(['Component', 'What it measures', 'A higher value may be seen in', 'A lower value may be seen in'], compRows) : kv((e.measures || []).map(m => [esc(m.item), esc(m.meaning)]), ['Measure', 'What it tells you'])) + '<p class="small muted">A high or low value can be associated with several different situations; the result is interpreted with other results, symptoms, history and clinical findings.</p>', 'measures')}
       ${section('How is it performed?', para(e.how) + (e.specimen ? `<p><b>Specimen.</b> ${esc(e.specimen)}</p>` : ''), 'how')}
@@ -245,7 +291,7 @@ const T = {
         + (thr.length ? `<h3>Guideline thresholds</h3>${table(['Threshold', 'Value', 'Unit', 'Applies to', 'Country · source'], thr)}<p class="small muted">Clinical decision thresholds come from the named guideline and country; they are not laboratory reference intervals, and they change when guidance changes.</p>` : ''), 'results')}
       ${section('What can affect the result?', list(e.factors) + (e.medicinesNote ? `<p><b>Medicines.</b> ${esc(e.medicinesNote)}</p>` : ''), 'factors')}
       ${section('What can the test not tell you?', list(e.cannotTell) + para(e.limitations), 'limits')}
-      ${(e.links?.related?.length || e.links?.imaging?.length) ? section('Other tests commonly used with it', inlineChips(clinical, 'tests', e.links?.related) + inlineChips(clinical, 'imaging', e.links?.imaging), 'with') : ''}`;
+      ${(e.links?.related?.length || e.links?.imaging?.length) ? section('Other tests commonly used with it', inlineChips(clinical, 'tests', e.links?.related) + inlineChips(clinical, 'imaging', e.links?.imaging), 'with') : ''}${extras}`;
   },
   biomarkers(e, { clinical }) {
     return `<dl class="facts">${[['Also known as', esc((e.aliases || []).join(', '))], ['Units', esc(e.unit || '')], ['Measured by', (e.links?.tests || []).map(id => entityA(clinical, 'tests', id)).join(', ')]].filter(([, v]) => v).map(([k, v]) => `<dt>${esc(k)}</dt><dd>${v}</dd>`).join('')}</dl>
@@ -263,13 +309,14 @@ const T = {
       ${section('Medicines that act on it', inlineChips(clinical, 'medications', e.links?.medications) + (e.links?.drugClasses?.length ? `<h3>Drug classes</h3>${inlineChips(clinical, 'drug-classes', e.links.drugClasses)}` : ''))}
       ${e.links?.conditions?.length ? section('Conditions it is involved in', inlineChips(clinical, 'conditions', e.links.conditions)) : ''}`;
   },
-  imaging(e) {
-    const facts = [['Preparation', e.preparation], ['Duration', e.duration], ['Radiation', e.dose], ['Contrast', e.contrast], ['Risks', e.risks]].filter(([, v]) => v);
+  imaging(e, { vocab }) {
+    const facts = [['Modality', e.modality ? vocabName(vocab, 'imagingModalities', e.modality) : ''], ['Preparation', e.preparation], ['Duration', e.duration], ['Radiation', e.dose], ['Contrast', e.contrast], ['Risks', e.risks]].filter(([, v]) => v);
     return `${section('How it works', para(e.how))}
       ${section('What it shows', list(e.shows))}
       <div class="pair">${e.bestFor?.length ? `<div><h2>Best for</h2>${list(e.bestFor)}</div>` : ''}${e.notFor?.length ? `<div><h2>Not the right tool for</h2>${list(e.notFor)}</div>` : ''}</div>
       ${section('What to expect', `<dl class="facts">${facts.map(([k, v]) => `<dt>${esc(k)}</dt><dd>${esc(v)}</dd>`).join('')}</dl>`)}
-      ${section('Common uses', kv((e.commonUses || []).map(u => [esc(u.region), esc(u.use)]), ['Region', 'Typical question']))}`;
+      ${section('Common uses', kv((e.commonUses || []).map(u => [esc(u.region), esc(u.use)]), ['Region', 'Typical question']))}
+      ${e.concepts?.length ? section('Studies this page covers', `<div class="chips">${e.concepts.map(c => `<a class="chip chip-plain" href="${link.testCategory(c.category)}#${esc(c.id)}">${esc(c.name)}</a>`).join('')}</div><p class="small muted">Named studies of the master test taxonomy that this modality page covers; each links to its test category.</p>`, 'covers') : ''}`;
   },
   procedures(e) {
     return `${section('What it is', para(e.what))}
@@ -280,19 +327,22 @@ const T = {
       ${section('Recovery', para(e.recovery))}
       <div class="pair">${e.risks?.length ? `<div><h2>Risks</h2>${list(e.risks)}</div>` : ''}${e.alternatives?.length ? `<div><h2>Alternatives</h2>${list(e.alternatives)}</div>` : ''}</div>`;
   },
-  medications(e, { clinical, data, ix }) {
+  medications(e, { clinical, data, ix, vocab }) {
     const cls = e.links?.drugClass?.[0];
-    const brands = e.brands ? Object.entries(e.brands).map(([j, b]) => `<b>${esc(j)}</b> ${esc(b.join(', '))}`).join(' · ') : '';
-    const otc = e.otc ? Object.entries(e.otc).map(([j, v]) => `<b>${esc(j)}</b> ${esc(v)}`).join(' · ') : '';
-    const facts = [['Generic name', esc(e.name)], ['Drug class', cls ? entityA(clinical, 'drug-classes', cls) : esc(e.class || '')], ['Brand names', brands], ['Prescription status', otc], ['Routes', esc((e.routes || []).join('; '))], ['Also known as', esc((e.aliases || []).join(', '))], ['Forms', esc((e.forms || []).join('; '))], ['Onset and duration', esc(e.onset || '')], ...(e.depth === 'full' ? [] : [['Monitoring', esc(e.monitoring || '')]])].filter(([, v]) => v);
-    const head = `<dl class="facts">${facts.map(([k, v]) => `<dt>${esc(k)}</dt><dd>${v}</dd>`).join('')}</dl>`;
+    const brands = e.brands && Object.keys(e.brands).length ? Object.entries(e.brands).map(([j, b]) => `<b>${esc(j)}</b> ${esc(b.join(', '))}`).join(' · ') : (e.brands ? 'No brand names recorded; supplied as the generic medicine' : '');
+    const otc = e.regulatory?.length ? '' : e.otc ? Object.entries(e.otc).map(([j, v]) => `<b>${esc(j)}</b> ${esc(v)}`).join(' · ') : '';
+    const facts = [['Generic name', esc(e.name)], ['Active ingredient', esc(e.name) + (e.ingredientVariants?.length ? ` <span class="muted">(variants: ${esc(e.ingredientVariants.join(', '))})</span>` : '')], ['Product type', e.productType ? vn(vocab, 'productTypes', e.productType) : ''], ['Drug class', cls ? entityA(clinical, 'drug-classes', cls) : esc(e.class || '')], ['Brand names', brands], ['Prescription status', otc],
+      ['Routes', e.routeIds?.length ? vlist(vocab, 'routes', e.routeIds) + (e.routes?.length ? ` <span class="muted">(${esc(e.routes.join('; '))})</span>` : '') : esc((e.routes || []).join('; '))], ['Dosage forms', e.dosageFormIds?.length ? vlist(vocab, 'dosageForms', e.dosageFormIds) : ''], ['Also known as', esc((e.aliases || []).join(', '))], ['Forms', esc((e.forms || []).join('; '))], ['Onset and duration', esc(e.onset || '')],
+      ['Terminology', terminologyHtml(e.terminology)], ...(e.depth === 'full' ? [] : [['Monitoring', esc(e.monitoring || '')]])].filter(([, v]) => v);
+    const head = `<dl class="facts">${facts.map(([k, v]) => `<dt>${esc(k)}</dt><dd>${v}</dd>`).join('')}</dl>${availabilityHtml(e, vocab)}`;
+    const tail = medicationExtras(e, clinical, ix, vocab, data);
     if (e.depth !== 'full') {
       return `${head}
         ${section('What it is used for', list(e.usedFor))}
         ${section('How it works in the body', para(e.howItWorks))}
         <div class="pair">${e.sideEffects?.common?.length ? `<div><h2>Common side effects</h2>${list(e.sideEffects.common)}</div>` : ''}${e.sideEffects?.serious?.length ? `<div><h2>Serious: seek help</h2>${list(e.sideEffects.serious)}</div>` : ''}</div>
         ${section('Cautions and interactions', list(e.cautions))}
-        ${ix ? interactionsSection(e, ix, clinical) : ''}`;
+        ${ix ? interactionsSection(e, ix, clinical) : ''}${tail}`;
     }
     // Full-depth medication page: the information architecture of the specification (§30, §96)
     const sysName = (id) => data.atlas.systems.find(s => s.id === id)?.name || id;
@@ -324,7 +374,7 @@ const T = {
       ${section('Condition-specific cautions', table(['Condition or factor', 'Type', 'Note', 'Source'], cautions) + '<p class="small muted">Educational summary of drug–condition cautions in the cited sources; not a personal screening.</p>', 'cautions')}
       ${section('Effects on tests and results', labs ? `<ul class="plain">${labs}</ul>` : '', 'labs')}
       ${section('Pharmacokinetics', `<dl class="facts">${[['Absorption', pk.absorption], ['Peak', pk.peak], ['Half-life', pk.halfLife], ['Metabolism', pk.metabolism], ['Elimination', pk.elimination]].filter(([, v]) => v).map(([k, v]) => `<dt>${esc(k)}</dt><dd>${esc(v)}</dd>`).join('')}</dl>${pk.source ? `<p class="small muted">Source: <a href="${esc(safeUrl(pk.source.url))}" target="_blank" rel="noopener noreferrer">${esc(pk.source.title)}</a>${pk.source.section ? ` (${esc(pk.source.section)})` : ''}.</p>` : ''}`, 'pharmacokinetics')}
-      <p class="small muted">Dosing is intentionally not described: doses depend on the indication, the country's licence, kidney and liver function, age, weight and other medicines, and are set by a prescriber.</p>`;
+      <p class="small muted">Dosing is intentionally not described: doses depend on the indication, the country's licence, kidney and liver function, age, weight and other medicines, and are set by a prescriber.</p>${tail}`;
   },
   'drug-classes'(e, { clinical, ix }) {
     const withPage = (e.members || []).map(n => { const id = Object.entries(clinical.names.medications).find(([, nm]) => nm.toLowerCase() === n.toLowerCase())?.[0]; return id ? `<a class="chip" href="${entityLink('medications', id)}">${esc(n)}</a>` : `<span class="chip chip-plain">${esc(n)}</span>`; });
@@ -366,18 +416,22 @@ export function entityNode(type, e, ctx) {
       ...(e.links?.tests?.length ? { typicalTest: names(clinical, 'tests', e.links.tests).map(n => ({ '@type': 'MedicalTest', name: n })) } : {}),
       ...(organs.length ? { associatedAnatomy: organs[0] } : {}), ...(e.links?.medications?.length ? { possibleTreatment: names(clinical, 'medications', e.links.medications).map(n => ({ '@type': 'Drug', name: n })) } : {}) };
     case 'symptoms': return { '@type': 'MedicalSignOrSymptom', ...base, ...(e.commonCauses?.length ? { cause: e.commonCauses.slice(0, 10).map(c => ({ '@type': 'MedicalCause', name: c.name })) } : {}) };
-    case 'tests': return { '@type': 'MedicalTest', ...base, ...(e.links?.conditions?.length ? { usedToDiagnose: names(clinical, 'conditions', e.links.conditions).map(n => ({ '@type': 'MedicalCondition', name: n })) } : {}), ...(e.rangeNote ? { normalRange: e.rangeNote } : {}), ...(e.links?.biomarkers?.length ? { about: names(clinical, 'biomarkers', e.links.biomarkers).map(n => ({ '@type': 'MedicalEntity', name: n })) } : {}) };
+    case 'tests': return { '@type': 'MedicalTest', ...base, ...(e.links?.conditions?.length ? { usedToDiagnose: names(clinical, 'conditions', e.links.conditions).map(n => ({ '@type': 'MedicalCondition', name: n })) } : {}), ...(e.rangeNote ? { normalRange: e.rangeNote } : {}), ...(e.links?.biomarkers?.length ? { about: names(clinical, 'biomarkers', e.links.biomarkers).map(n => ({ '@type': 'MedicalEntity', name: n })) } : {}),
+      ...(e.terminology?.loinc?.length ? { code: e.terminology.loinc.map(c => ({ '@type': 'MedicalCode', codeValue: c.code, codingSystem: 'LOINC' })) } : {}) };
     case 'biomarkers': return { '@type': 'MedicalEntity', ...base, ...(e.links?.tests?.length ? { subjectOf: names(clinical, 'tests', e.links.tests).map(n => ({ '@type': 'MedicalTest', name: n })) } : {}), ...(organs.length ? { associatedAnatomy: organs[0] } : {}) };
     case 'targets': return { '@type': 'MedicalEntity', ...base, ...(organs.length ? { associatedAnatomy: organs[0] } : {}) };
     case 'imaging': return { '@type': 'ImagingTest', ...base, imagingTechnique: e.name };
     case 'procedures': return { '@type': 'MedicalProcedure', ...base, ...(e.steps?.length ? { howPerformed: e.steps.join(' ') } : {}), ...(e.before?.length ? { preparation: e.before.join(' ') } : {}), ...(e.recovery ? { followup: e.recovery } : {}) };
     case 'medications': {
       const cls = e.links?.drugClass?.[0];
-      const uk = e.otc?.UK || ''; const status = uk ? (/prescription only/i.test(uk) ? 'PrescriptionOnly' : 'OTC') : undefined;
+      const reg = (e.regulatory || []).find(r => r.jurisdiction === 'UK') || (e.regulatory || [])[0];
+      const uk = e.otc?.UK || ''; const status = reg ? (reg.status === 'otc' || reg.status === 'pharmacy' ? 'OTC' : reg.status === 'prescription' || reg.status === 'controlled' ? 'PrescriptionOnly' : undefined) : uk ? (/prescription only/i.test(uk) ? 'PrescriptionOnly' : 'OTC') : undefined;
+      const codes = [...(e.terminology?.rxcui ? [{ '@type': 'MedicalCode', codeValue: e.terminology.rxcui.code, codingSystem: 'RxNorm' }] : []), ...(e.terminology?.atc || []).map(c => ({ '@type': 'MedicalCode', codeValue: c.code, codingSystem: 'ATC' }))];
+      const vocab = ctx.vocab;
       const interacting = ix ? [...new Set((ix.byDrug?.[e.id] || []).map(rid => ix.records.find(r => r.id === rid)).filter(Boolean).map(r => r.b ? nameOf(clinical, 'medications', r.b === e.id ? r.a : r.b) : r.bName || ix.classNames?.[r.bClass]).filter(Boolean))].slice(0, 20) : [];
       const info = (e.references || []).find(r => /bnf\.nice\.org\.uk\/drugs/.test(r.url) || /medlineplus\.gov\/druginfo/.test(r.url));
       return { '@type': 'Drug', ...base, nonProprietaryName: e.name, activeIngredient: e.name, ...(cls ? { drugClass: { '@type': 'DrugClass', name: nameOf(clinical, 'drug-classes', cls), url: canonical(entityPath('drug-classes', cls)) } } : {}),
-        ...(e.understand || e.howItWorks ? { mechanismOfAction: e.understand || e.howItWorks } : {}), ...(e.mechanismDetail ? { clinicalPharmacology: e.mechanismDetail } : {}), ...(e.routes?.length ? { administrationRoute: e.routes } : {}), ...(e.forms?.length ? { dosageForm: e.forms } : {}),
+        ...(e.understand || e.howItWorks ? { mechanismOfAction: e.understand || e.howItWorks } : {}), ...(e.mechanismDetail ? { clinicalPharmacology: e.mechanismDetail } : {}), ...(e.routeIds?.length ? { administrationRoute: e.routeIds.map(id => vocabName(vocab, 'routes', id)) } : e.routes?.length ? { administrationRoute: e.routes } : {}), ...(e.dosageFormIds?.length ? { dosageForm: e.dosageFormIds.map(id => vocabName(vocab, 'dosageForms', id)) } : e.forms?.length ? { dosageForm: e.forms } : {}), ...(codes.length ? { code: codes } : {}),
         ...(status ? { prescriptionStatus: status } : {}), ...(info ? { prescribingInfo: info.url } : {}), ...(e.brands ? { alternateName: [...(e.aliases || []), ...Object.values(e.brands).flat()] } : {}),
         ...(e.contraindications?.length ? { contraindication: e.contraindications.map(c => ({ '@type': 'MedicalContraindication', name: c.factor })) } : {}), ...(interacting.length ? { interactingDrug: interacting.map(n => ({ '@type': 'Drug', name: n })) } : {}),
         ...(e.foodInteractions?.length ? { foodWarning: e.foodInteractions.map(f => `${f.with}: ${f.effect}`).join(' ') } : {}), ...(e.alcohol ? { alcoholWarning: e.alcohol.effect } : {}),
@@ -395,22 +449,24 @@ function breadcrumbsFor(type, e, typeData, clinical) {
   const TT = TYPES[type]; const crumbs = [{ name: 'Home', href: link.home() }, { name: TT.name, href: typeLink(type) }];
   const cls = type === 'medications' ? e.links?.drugClass?.[0] : null;
   if (cls) crumbs.push({ name: nameOf(clinical, 'drug-classes', cls), href: entityLink('drug-classes', cls) });
-  else { const cat = (typeData.meta.categories || []).find(c => c.id === e.category); if (cat) crumbs.push({ name: cat.name, href: `${typeLink(type)}?cat=${encodeURIComponent(cat.id)}` }); }
+  else { const cat = (typeData.meta.categories || []).find(c => c.id === e.category); if (cat) crumbs.push({ name: cat.name, href: type === 'tests' ? link.testCategory(cat.id) : `${typeLink(type)}?cat=${encodeURIComponent(cat.id)}` }); }
   crumbs.push({ name: e.name });
   return crumbs;
 }
 
 // -------------------------------------------------------------- pages
 const NEEDS_IX = new Set(['medications', 'drug-classes']);
+const NEEDS_VOCAB = new Set(['tests', 'medications', 'imaging', 'biomarkers', 'drug-classes']);
 export async function renderDetail(type) {
   const TT = TYPES[type]; renderHeader(type); renderFooter();
   if (PRERENDERED) return;                     // content and metadata are already in the HTML
   const main = document.getElementById('main');
-  const [typeData, data, clinical, ix] = await Promise.all([loadType(type), loadData(), loadClinical(), NEEDS_IX.has(type) ? loadInteractions().catch(() => null) : null]);
+  const [typeData, data, clinical, ix, vocab] = await Promise.all([loadType(type), loadData(), loadClinical(), NEEDS_IX.has(type) ? loadInteractions().catch(() => null) : null, NEEDS_VOCAB.has(type) ? loadVocabularies().catch(() => null) : null]);
+  if (type === 'tests') clinical.testCategoryNames = Object.fromEntries((typeData.meta.categories || []).map(c => [c.id, c.name]));
   const id = pageId(); const e = id ? typeData.items[id] : null;
   if (!e) { main.innerHTML = `<h1>Not found</h1><p><a href="${typeLink(type)}">All ${esc(TT.name.toLowerCase())}</a></p>`; applyMeta({ title: `Not found | ${TT.name}`, description: '', path: paths.dir(TT.dir), robots: 'noindex' }); document.body.dataset.status = '404'; return; }
   const cat = (typeData.meta.categories || []).find(c => c.id === e.category);
-  const hash = embedHash(e); const ctx = { data, clinical, ix };
+  const hash = embedHash(e); const ctx = { data, clinical, ix, vocab };
   const groups = relatedGroups(e, clinical);
   const primaryOrgan = e.anatomy?.organs?.[0];
   const crumbs = breadcrumbsFor(type, e, typeData, clinical);
@@ -446,12 +502,16 @@ function letterOf(name) { const c = name.replace(/^the /i, '').charAt(0).toUpper
 export async function renderIndex(type) {
   const TT = TYPES[type]; renderHeader(type); renderFooter();
   const main = document.getElementById('main');
-  let items = null, typeData = null, data = null, clinical = null;
-  const load = async () => { if (!typeData) { [typeData, data, clinical] = await Promise.all([loadType(type), loadData(), loadClinical()]); items = Object.values(typeData.items).sort((a, b) => a.name.localeCompare(b.name)); } };
+  let items = null, typeData = null, data = null, clinical = null, vocab = null;
+  const load = async () => { if (!typeData) { [typeData, data, clinical, vocab] = await Promise.all([loadType(type), loadData(), loadClinical(), NEEDS_VOCAB.has(type) ? loadVocabularies().catch(() => null) : null]); items = Object.values(typeData.items).sort((a, b) => a.name.localeCompare(b.name)); } };
+  const inCat = (e, id) => (e.categories || [e.category]).includes(id);
+  // facets of the specification's hubs (§96): specimen and method for tests; route, dosage form and product type for medicines
+  const FACETS = { tests: [['specimens', 'specimens', 'Specimen'], ['methods', 'methods', 'Method']], medications: [['routeIds', 'routes', 'Route'], ['dosageFormIds', 'dosageForms', 'Dosage form'], ['productType', 'productTypes', 'Product type']] }[type] || [];
+  const facetValue = (e, field) => Array.isArray(e[field]) ? e[field] : e[field] ? [e[field]] : [];
   const sysName = (id) => data.atlas.systems.find(s => s.id === id)?.name; const organName = (id) => data.content.organs.find(o => o.id === id)?.name;
   const cardHtml = (e, cats) => {
     const catName = (id) => cats.find(c => c.id === id)?.name || '';
-    const tags = [catName(e.category), ...(e.anatomy?.organs || []).slice(0, 2).map(organName), ...(!e.anatomy?.organs?.length ? (e.anatomy?.systems || []).slice(0, 2).map(sysName) : [])].filter(Boolean);
+    const tags = [catName(e.category), ...(e.kind && KIND_LABEL[e.kind] ? [KIND_LABEL[e.kind]] : []), ...(e.anatomy?.organs || []).slice(0, 2).map(organName), ...(!e.anatomy?.organs?.length ? (e.anatomy?.systems || []).slice(0, 2).map(sysName) : [])].filter(Boolean);
     return `<a class="card" href="${entityLink(type, e.id)}"><h3>${esc(e.name)}${e.emergency ? ' <span class="badge emergency">emergency</span>' : ''}${e.depth === 'full' ? ' <span class="badge live" title="Full clinical detail">full</span>' : ''}</h3><p>${esc(trim(lead(e), 160))}</p>${tags.length ? `<div class="tags">${tags.map(t => `<span>${esc(t)}</span>`).join('')}</div>` : ''}</a>`;
   };
   const grouped = (list, cats) => {
@@ -460,7 +520,8 @@ export async function renderIndex(type) {
   };
   if (!PRERENDERED) {
     await load();
-    const cats = (typeData.meta.categories || []).map(c => ({ ...c, n: items.filter(i => i.category === c.id).length })).filter(c => c.n);
+    const cats = (typeData.meta.categories || []).map(c => ({ ...c, n: items.filter(i => inCat(i, c.id)).length })).filter(c => c.n);
+    const facetHtml = FACETS.map(([field, key, label]) => { const used = [...new Set(items.flatMap(e => facetValue(e, field)))]; const opts = (vocab?.[key] || []).filter(v => used.includes(v.id)); return opts.length ? `<label class="facet">${esc(label)} <select data-facet="${esc(field)}"><option value="">Any</option>${opts.map(v => `<option value="${esc(v.id)}">${esc(v.name)} (${items.filter(e => facetValue(e, field).includes(v.id)).length})</option>`).join('')}</select></label>` : ''; }).join('');
     const letters = [...new Set(items.map(e => letterOf(e.name)))];
     const priority = (typeData.meta.priority || []).map(id => typeData.items[id]).filter(Boolean);
     const systemsHere = data.atlas.systems.filter(s => items.some(e => e.anatomy?.systems?.includes(s.id) || (e.anatomy?.organs || []).some(oid => data.content.organs.find(o => o.id === oid)?.system === s.id)));
@@ -468,13 +529,14 @@ export async function renderIndex(type) {
     const path = paths.dir(TT.dir); const title = `${TT.name}: ${type === 'first-aid' ? 'Step-by-Step Guides' : type === 'health' ? 'Lifestyle & the Body' : 'A–Z Guide'} | ${SITE.name}`;
     applyMeta({ title, description: typeData.meta.about || TT.blurb, path, breadcrumbs: crumbs, jsonld: [webPageNode({ path, title, description: metaDescription(typeData.meta.about || TT.blurb), type: 'CollectionPage', updated: typeData.meta.updated }),
       { '@type': 'ItemList', name: `${TT.name} on ${SITE.name}`, numberOfItems: items.length, itemListElement: items.map((e, i) => ({ '@type': 'ListItem', position: i + 1, name: e.name, url: canonical(entityPath(type, e.id)) })) }] });
-    const tools = type === 'medications' || type === 'drug-classes' ? `<p class="actions"><a class="btn btn-primary" href="${link.interactions()}">Medication interaction checker</a><a class="btn" href="${link.compare()}">Comparisons</a></p>` : type === 'tests' || type === 'biomarkers' ? `<p class="actions"><a class="btn" href="${link.compare()}">Compare tests and markers</a></p>` : '';
+    const tools = type === 'medications' || type === 'drug-classes' ? `<p class="actions"><a class="btn btn-primary" href="${link.interactions()}">Medication interaction checker</a><a class="btn" href="${link.medicationClasses()}">Classes by therapeutic area</a><a class="btn" href="${link.compare()}">Comparisons</a></p>` : type === 'tests' || type === 'biomarkers' ? `<p class="actions"><a class="btn btn-primary" href="${link.testCategories()}">Browse the ${SITE.counts?.testCategories || 36} test categories</a><a class="btn" href="${link.compare()}">Compare tests and markers</a></p>` : '';
     main.innerHTML = `
       ${breadcrumbHtml(crumbs)}
       <div class="section-hero"><div class="eyebrow">${esc(TT.icon)} Section · ${items.length} ${esc(TT.name.toLowerCase())}</div><h1>${esc(TT.name)}</h1><p class="lead">${esc(typeData.meta.about || TT.blurb)}</p>${tools}</div>
       ${priority.length ? `<section class="start-here"><h2>Start here</h2><div class="chips">${priority.map(e => `<a class="chip chip-lg" href="${entityLink(type, e.id)}">${esc(e.name)}</a>`).join('')}</div></section>` : ''}
       <div class="search-row"><label class="sr-only" for="q">Filter ${esc(TT.name.toLowerCase())}</label><input id="q" type="search" placeholder="Filter ${esc(TT.name.toLowerCase())}…"></div>
-      <div class="filters" id="filters" role="group" aria-label="Browse by category"><button class="chip is-active" data-cat="all" type="button">All ${items.length}</button>${cats.map(c => `<button class="chip" data-cat="${esc(c.id)}" type="button">${esc(c.name)} ${c.n}</button>`).join('')}</div>
+      <div class="filters" id="filters" role="group" aria-label="Browse by category"><button class="chip is-active" data-cat="all" type="button">All ${items.length}</button>${cats.map(c => `<button class="chip" data-cat="${esc(c.id)}" type="button"${type === 'tests' ? ` title="Category page: ${esc(c.name)}"` : ''}>${esc(c.name)} ${c.n}</button>`).join('')}</div>
+      ${facetHtml ? `<div class="facets" id="facets" role="group" aria-label="Filter by facet">${facetHtml}</div>` : ''}
       <nav class="az" aria-label="A to Z">${letters.map(L => `<a href="#az-${L === '#' ? 'other' : L}">${L}</a>`).join('')}</nav>
       <div id="cards">${grouped(items, cats)}</div>
       ${systemsHere.length ? `<h2>Browse by body system</h2><div class="chips">${systemsHere.map(s => `<a class="chip" href="${link.systemPage(s.id)}" style="border-color:${s.color}">${esc(s.name)}</a>`).join('')}</div>` : ''}
@@ -487,13 +549,15 @@ export async function renderIndex(type) {
     await load();
     const cats = (typeData.meta.categories || []);
     const s = q.value.trim().toLowerCase();
-    const list = items.filter(e => (cat === 'all' || e.category === cat) && (!s || [e.name, ...(e.aliases || []), lead(e)].join(' ').toLowerCase().includes(s)));
-    const all = cat === 'all' && !s;
+    const facets = [...document.querySelectorAll('#facets select')].map(sel => [sel.dataset.facet, sel.value]).filter(([, v]) => v);
+    const list = items.filter(e => (cat === 'all' || inCat(e, cat)) && facets.every(([f, v]) => facetValue(e, f).includes(v)) && (!s || [e.name, ...(e.aliases || []), ...(e.abbreviations || []), ...(e.ingredientVariants || []), lead(e)].join(' ').toLowerCase().includes(s)));
+    const all = cat === 'all' && !s && !facets.length;
     if (az) az.hidden = !all;
     cards.innerHTML = list.length ? (all ? grouped(list, cats) : `<div class="grid grid-3">${list.map(e => cardHtml(e, cats)).join('')}</div>`) : '<p class="muted">Nothing matches.</p>';
   }
   filters.addEventListener('click', (ev) => { const b = ev.target.closest('[data-cat]'); if (!b) return; cat = b.dataset.cat; for (const x of filters.children) x.classList.toggle('is-active', x === b); render(); });
   q.addEventListener('input', render);
+  document.getElementById('facets')?.addEventListener('change', render);
   const want = param('cat');
   if (want) { await load(); if ((typeData.meta.categories || []).some(c => c.id === want)) { cat = want; for (const x of filters.children) x.classList.toggle('is-active', x.dataset.cat === want); render(); } }
 }

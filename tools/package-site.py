@@ -158,6 +158,13 @@ def main():
     comparisons = json.load(open(os.path.join(ROOT, "data", "content", "comparisons.json"), encoding="utf-8"))
     cmp_date = max([c.get("updated") or "" for c in comparisons["comparisons"]] + [comparisons.get("updated") or ""]) or site_date
     urls.append({"path": "compare/" if a.pretty else "compare/index.html", "lastmod": cmp_date, "freq": "monthly", "prio": "0.6", "index": True, "section": "compare"})
+    # ---- taxonomy pages: the test-category hub and one page per category (indexable when it has at least two pages), the medication class hub
+    tcats = json.load(open(os.path.join(ROOT, "data", "content", "test-categories.json"), encoding="utf-8"))
+    urls.append({"path": "tests/categories/" if a.pretty else "tests/categories/index.html", "lastmod": tcats.get("updated") or site_date, "freq": "monthly", "prio": "0.7", "index": True, "section": "tests"})
+    for c in tcats["categories"]:
+        urls.append({"path": f"tests/categories/{c['id']}/" if a.pretty else f"tests/category.html?id={c['id']}", "lastmod": tcats.get("updated") or site_date, "freq": "monthly", "prio": "0.6", "index": bool(c.get("seo", {}).get("index")), "section": "tests", "template": f"tests/category.html?id={c['id']}"})
+    mtax = json.load(open(os.path.join(ROOT, "data", "content", "medication-taxonomy.json"), encoding="utf-8"))
+    urls.append({"path": "medications/classes/" if a.pretty else "medications/classes/index.html", "lastmod": mtax.get("updated") or site_date, "freq": "monthly", "prio": "0.7", "index": True, "section": "medications"})
     for c in comparisons["comparisons"]:
         urls.append({"path": detail("compare", "compare.html", c["id"]), "lastmod": c.get("updated") or cmp_date, "freq": "monthly", "prio": "0.6", "index": True, "section": "compare", "template": f"compare/compare.html?id={c['id']}"})
     # hub lastmod for anatomy pages
@@ -193,16 +200,22 @@ def main():
         for d, page in {**ANATOMY, **SECTIONS, **EXTRA, "organs": "organ.html"}.items():
             target = "anatomy" if d == "organs" else d
             rules += [f"  RewriteCond %{{QUERY_STRING}} ^id=([A-Za-z0-9-]+)$", f"  RewriteRule ^{re.escape(d)}/{re.escape(page)}$ {base}{target}/%1/? [R=301,L]"]
+        rules += [f"  RewriteCond %{{QUERY_STRING}} ^id=([A-Za-z0-9-]+)$", f"  RewriteRule ^tests/category\\.html$ {base}tests/categories/%1/? [R=301,L]"]
         rules += ["  # /section/index.html -> /section/ and /index.html -> /", "  RewriteCond %{THE_REQUEST} \\s/+(?:[^?\\s]*/)?index\\.html[\\s?]", f"  RewriteRule ^(.*/)?index\\.html$ {base}$1 [R=301,L]"]
+        rules += ["  # recommended URL families of the clinical specification resolve to the canonical pages in one hop (the query string is kept)",
+                  f"  RewriteRule ^tools/drug-interaction-checker/?$ {base}interactions/ [R=301,L]"]
         rules += ["  # retired paths", f"  RewriteRule ^learn/terminology\\.html$ {base}medical-terms/ [R=301,L]", f"  RewriteRule ^learn/?$ {base}medical-terms/ [R=301,L]"]
         rules.append("  # URL aliases (synonyms, abbreviations, brand names, old ids) -> the canonical page, in one hop")
         for section, table in aliases.items():
             by_target = {}
             for alias, target in sorted(table.items()): by_target.setdefault(target, []).append(alias)
-            dirs = ["anatomy", "organs"] if section == "anatomy" else [section]
+            dirs = ["anatomy", "organs"] if section == "anatomy" else ["drug-classes", "medications/classes"] if section == "drug-classes" else [section]
             for target, als in sorted(by_target.items()):
                 pat = "|".join(re.escape(x) for x in als)
                 for d in dirs: rules.append(f"  RewriteRule ^{d}/({pat})/?$ {base}{section}/{target}/ [R=301,L]")
+        rules += ["  # /medications/classes/<class>/ is the recommended address of a class page; /drug-classes/<class>/ is canonical",
+                  f"  RewriteRule ^medications/classes/([A-Za-z0-9-]+)/?$ {base}drug-classes/$1/ [R=301,L]",
+                  f"  RewriteRule ^tests/categories/([A-Za-z0-9-]+)$ {base}tests/categories/$1/ [R=301,L]"]
         rules += ["  # organ pages moved to /anatomy/", f"  RewriteRule ^organs/([A-Za-z0-9-]+)/?$ {base}anatomy/$1/ [R=301,L]"]
         dirs = "|".join(list(ANATOMY) + list(SECTIONS) + list(EXTRA))
         rules += ["  # trailing slash on every section page", "  RewriteCond %{REQUEST_FILENAME} !-f", f"  RewriteRule ^({dirs})/([A-Za-z0-9-]+)$ {base}$1/$2/ [R=301,L]"]

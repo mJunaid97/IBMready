@@ -1,5 +1,55 @@
 # Changelog
 
+## v1.3.0 — 2026-09-13
+
+Comprehensive tests and medications: the Tests and Medications sections become a terminology-driven, extensible
+clinical knowledge graph (Comprehensive Clinical Tests & Medications Master Specification; see CLINICAL.md §8).
+
+- Master test taxonomy: 36 public categories in four groups over a catalogue of 837 test concepts with abbreviations
+  and synonyms (§4–§40); a category hub at /tests/categories/ and one page per category listing the tests with a page
+  and the catalogued concepts still to be written (indexable only with two or more pages, so the catalogue never
+  produces thin pages)
+- Master medication taxonomy: 31 therapeutic areas → 536 pharmacologic class concepts mapped to WHO ATC codes and to the
+  drug-class pages, browsable at /medications/classes/; the 14 ATC first-level groups (§42–§74)
+- Controlled vocabularies enforced at build time: test kinds, specimens, methods, imaging modalities, 28 routes, 47 dosage
+  forms, 10 jurisdiction-aware regulatory statuses, product types (biologic, vaccine, contrast agent, radiopharmaceutical,
+  gene and cell therapy…), vaccine platforms, advanced-therapy kinds (§3, §75–§77)
+- Canonical terminology identifiers on entities: LOINC on tests and biomarkers, RxNorm RxCUI, ATC and FDA Established
+  Pharmacologic Class on medicines and classes, shown as asserted until a licensed release verifies them; MedicalCode
+  entries in the MedicalTest and Drug schema (§2)
+- Drug-name rules: an alias may never be another ingredient, a class, a class member or a product; brands map to one
+  ingredient; combination products list every ingredient; 60 confusing "also known as" entries removed from existing
+  pages (nifedipine is not a synonym of amlodipine) (§79, §95)
+- Every test now declares its kind, categories, specimen(s) and method(s); panels link their component tests; genetic
+  tests state their scope; tests that are abbreviations carry a canonical name; each page lists the medicines whose
+  sourced monitoring plans name it and the catalogued concepts it covers
+- Every medicine now declares its product type, therapeutic area, vocabulary routes and dosage forms, ingredient
+  variants, availability by country with a source per row, and terminology codes; same-class medicines are shown apart
+  from related medicines; umbrella entities list their members
+- Knowledge graph: 2,336 typed edges with the specification's relationship names (TEST_MEASURES … MEDICATION_EXCRETED_BY),
+  clinical edges emitted only from sourced records (§80–§81)
+- Editorial review queues computed by the build (§94): needs_source, needs_medical_review, potential_duplicate,
+  possible_synonym_error, possible_brand_mapping_error, class_mapping_conflict, test_reference_range_risk,
+  regulatory_status_conflict, deprecated_terminology, sparse_public_page, coverage_gap…; provenance and freshness
+  metadata on every entity (§91)
+- Terminology ingestion pipelines (tools/terminology/): LOINC and RxNorm releases → canonical candidates (variants
+  collapsed, deprecated records flagged, specimens/methods/categories/dose forms/routes/ATC/EPC mapped), matched to the
+  catalogue and pages, review queues, and verification of every asserted code; unit tests on synthetic fixtures run in
+  CI; licensing and cadence documented (§84–§85, §102)
+- New content (Phase 2–3 seed): prothrombin time and INR, iron studies, vitamin B12 and folate, vitamin D, hepatitis B
+  tests, HIV test, blood pressure measurement (with NICE thresholds), DXA scan; clopidogrel, bisoprolol, citalopram,
+  clarithromycin, tramadol, oxycodone, chlorphenamine, inhaled beclometasone; the influenza vaccine, iodinated
+  contrast agents and FDG-18 as first entities of the vaccine, contrast-agent and radiopharmaceutical product types,
+  with their classes; biomarkers INR, vitamin B12, folate, 25-hydroxyvitamin D; interaction records that named
+  clopidogrel and clarithromycin now link their pages
+- Hubs: tests filter by category, specimen and method; medications by therapeutic area, route, dosage form and
+  product type (§96); search resolves canonical names, abbreviations, ingredient variants, brands and every catalogued
+  synonym (§83); the interaction checker preloads ?drug=<ingredient>, and the recommended addresses
+  /tools/drug-interaction-checker/ and /medications/classes/<class>/ redirect in one hop (§97, §100)
+- Compiler: quality gates require a test's purpose, measures, interpretation and limitations and a medicine's product
+  type, brands, class, uses, mechanism, side effects, warnings, interactions, monitoring and regulatory status before
+  indexing (§89–§90); the electrolytes panel lost its prose reference ranges (§41)
+
 ## v1.2.0 — 2026-09-12
 
 Clinical content layer: the tests, medications and interactions of the Clinical Content Depth
