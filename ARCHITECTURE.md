@@ -122,9 +122,10 @@ model, the source rules, the severity mapping and the review-status model.
 
 ## Site shell
 
-`site/site.js` renders the shared header (primary sections, a "More" menu and the header search
-box with typeahead over `data/content/search-index.json`) and footer (policy links, attribution,
-version), holds the entity type registry (`TYPES`, with the SEO descriptor of each type), the URL
+`site/site.js` renders the shared header (the logo, the primary sections, a "More" menu grouped into
+anatomy, clinical, medicines and learning, and the header search box with typeahead over
+`data/content/search-index.json`) and footer (the logo, the content areas, the policies, attribution and
+version), holds the inline SVG icon set (`iconSvg`; `TYPES[].icon` names an icon, never an emoji), holds the entity type registry (`TYPES`, with the SEO descriptor of each type), the URL
 helpers (`paths`, `link`, `entityLink`, `anyLink`, `canonical`; clean trailing-slash URLs when
 `site/config.js` says `prettyUrls`, query URLs otherwise), the click-to-load 3D facade, and the
 cached data loaders (`loadData`, `loadClinical`, `loadType`, `loadSearchIndex`). `site/seo.js`
@@ -183,5 +184,21 @@ Summarised here; `SEO.md` has the full map against the specification.
   failing pages ship `noindex,follow` and stay out of the sitemaps.
 - **Sitemaps**: `sitemap.xml` index → `sitemaps/<section>.xml`, canonical indexable URLs only.
 - **Previews**: `site/previews/<view>.jpg` rendered by `tools/render-previews.mjs` from the
-  explorer for every organ, system and structure view (`site/preview-name.js` names them); used
-  by the facade and as `og:image`.
+  explorer for every organ, system and structure view (`site/preview-name.js` names them), each with
+  the brand plate (the reversed logo and the name of the view) in the corner; used by the facade and as
+  `og:image`. The same tool's `--extras` renders `site/hero.jpg` (the explorer with the heart selected)
+  and `site/og-cover.png` (the site-wide social cover: logo, positioning line, the body on navy).
+
+## Brand system
+
+`site/site.css` starts with the design tokens: the brand palette from `brand/README.txt` (Deep Navy,
+Soft Teal, Cool Gray, Light) and the semantic tokens derived from it (`--surface`, `--text-secondary`,
+`--border`, `--interactive`, `--link`, `--accent-soft`, the status colours, shadows, radii, spacing,
+the type scale, control sizes, container widths), redefined once for the dark theme (explicit toggle) and
+once for the system preference. Every component below reads tokens only. `explorer/styles.css` mirrors
+the same tokens so the explorer reads as part of the product. The logo is served from `site/logo/` as SVG
+(`logoHtml` in `site/site.js` emits the primary and reversed lock-ups and the monogram; two CSS variables,
+`--logo-light` and `--logo-dark`, follow the theme so every placement switches together, and the
+monogram replaces the lock-up below 560px). Inter is self-hosted (`site/fonts/`, the optical-size axis
+gives headings the Display cut). The favicon set and `manifest.webmanifest` come from the kit's
+`Favicon/` folder; the SVG favicon carries a dark-scheme rule so it stays legible on dark tab bars.

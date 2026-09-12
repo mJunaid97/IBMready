@@ -94,7 +94,7 @@ function renderSelected() {
 function add(hit) { if (!hit) return; if (selected.some(s => s.kind === hit.kind && s.id === hit.id)) return; selected.push({ kind: hit.kind, id: hit.id, label: hit.alias ? `${hit.alias} (${hit.label.replace(/ \(.*\)$/, '')})` : hit.label }); renderSelected(); }
 
 app.innerHTML = `
-  <div class="callout urgent"><b>Before you use this tool.</b> ${esc(DISCLAIMER)}</div>
+  <div class="callout important"><b>Before you use this tool.</b> ${esc(DISCLAIMER)}</div>
   <div class="chk-input"><label for="chk-q"><b>Add a medicine, brand, drug class or combination product</b></label>
     <input id="chk-q" type="search" autocomplete="off" placeholder="e.g. amlodipine, Norvasc, ibuprofen, co-codamol, statins…" aria-controls="chk-sugg" aria-autocomplete="list">
     <ul class="hsearch-results chk-sugg" id="chk-sugg" hidden></ul></div>

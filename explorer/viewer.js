@@ -179,7 +179,7 @@ export class AtlasViewer extends EventTarget {
       material.customProgramCacheKey = () => 'atlas-' + pass;
       return material;
     };
-    this._hl = { accent: { value: new THREE.Color('#ffb340') }, alpha: { value: 0.32 } };
+    this._hl = { accent: { value: new THREE.Color('#4E9CAB') }, alpha: { value: 0.32 } };   // brand teal: the selected-structure colour
     this.matOpaque = inject(new THREE.MeshStandardMaterial({ roughness: 0.62, metalness: 0.0, side: THREE.FrontSide }), 'opaque');
     this.matGhost = inject(new THREE.MeshStandardMaterial({ roughness: 0.62, metalness: 0.0, transparent: true, depthWrite: false, side: THREE.FrontSide }), 'ghost');
     // selection silhouette drawn through occluders (depth test off) so a focused organ is never lost inside the body
@@ -231,7 +231,7 @@ export class AtlasViewer extends EventTarget {
         this.baseColor[i * 3] = c.r; this.baseColor[i * 3 + 1] = c.g; this.baseColor[i * 3 + 2] = c.b;
       }
     }
-    this.selectColor = new THREE.Color('#ffb340');
+    this.selectColor = new THREE.Color('#4E9CAB');
     this.hoverBoost = 0.28;
   }
 
@@ -242,7 +242,7 @@ export class AtlasViewer extends EventTarget {
     this.lights.hemi.groundColor.set(dark ? 0x334455 : 0x99a0aa);
     this.lights.hemi.intensity = dark ? 1.0 : 1.25;
     this.lights.key.intensity = dark ? 1.7 : 1.5;
-    this.selectColor.set(dark ? '#ffb340' : '#ff8f1f');
+    this.selectColor.set(dark ? '#78B4BF' : '#4E9CAB');   // brand teal, lifted towards white on the dark background
     this._hl.accent.value.copy(this.selectColor);
     this._dirty = true;
   }

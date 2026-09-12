@@ -1,6 +1,6 @@
 // anatomy/index.js — the anatomy hub (/anatomy/): what is covered, the fully written organ articles first, then every
 // organ and skeletal group grouped by body system, regions and the atlas entry points.
-import { renderHeader, renderFooter, loadData, loadClinical, link, esc, paths, PRERENDERED, SITE, breadcrumbHtml, canonical, fmt } from '../site/site.js';
+import { renderHeader, renderFooter, loadData, loadClinical, link, esc, paths, PRERENDERED, SITE, breadcrumbHtml, canonical, fmt, iconSvg } from '../site/site.js';
 import { relatedCountForAnatomy } from '../site/entity.js';
 import { applyMeta, metaDescription, webPageNode } from '../site/seo.js';
 renderHeader('anatomy'); renderFooter();
@@ -17,7 +17,7 @@ if (!PRERENDERED) {
   const az = [...content.organs].sort((a, b) => a.name.localeCompare(b.name));
   document.getElementById('main').innerHTML = `
     ${breadcrumbHtml(crumbs)}
-    <div class="section-hero"><div class="eyebrow">🫀 Section · ${content.organs.length} anatomy pages · ${fmt(atlas.totals.structures)} structures in 3D</div><h1>Human anatomy</h1>
+    <div class="section-hero"><div class="eyebrow">${iconSvg('anatomy')} Section · ${content.organs.length} anatomy pages · ${fmt(atlas.totals.structures)} structures in 3D</div><h1>Human anatomy</h1>
     <p class="lead">Every organ page answers the same questions: where it is, what it is made of, what supplies it, what it does, what goes wrong and how that is investigated and treated. Each is built on the ${fmt(atlas.totals.pieces)}-piece 3D atlas, so you can open the real shapes, and each links into physiology, symptoms, conditions, tests, imaging, procedures and medications.</p></div>
     <h2>Start here: full anatomy articles</h2>
     <div class="grid grid-3">${written.map(card).join('')}</div>
@@ -30,5 +30,5 @@ if (!PRERENDERED) {
     <h2>A–Z</h2>
     <div class="chips">${az.map(o => `<a class="chip" href="${link.organPage(o.id)}">${esc(o.name)}</a>`).join('')}</div>
     <h2>Keep exploring</h2>
-    <div class="chips"><a class="chip" href="${link.explorer()}">🧊 3D explorer</a><a class="chip" href="${link.page('systems')}">Body systems</a><a class="chip" href="${link.page('organs')}">Organs by system</a><a class="chip" href="${link.page('medical-terms')}">Medical terms</a><a class="chip" href="${link.page('study')}">Study tools</a></div>`;
+    <div class="chips"><a class="chip" href="${link.explorer()}">${iconSvg('explorer')}3D explorer</a><a class="chip" href="${link.page('systems')}">Body systems</a><a class="chip" href="${link.page('organs')}">Organs by system</a><a class="chip" href="${link.page('medical-terms')}">Medical terms</a><a class="chip" href="${link.page('study')}">Study tools</a></div>`;
 }

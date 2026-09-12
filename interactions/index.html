@@ -7,18 +7,20 @@
   <title>Medication Interaction Checker | Anatomy Nexus</title>
   <meta name="description" content="Check two or more medicines, brands, drug classes or combination products against sourced interaction records: what official information says, the mechanism, general management and monitoring.">
   <meta name="robots" content="noindex,follow">
+  <link rel="icon" href="../favicon.ico" sizes="32x32">
   <link rel="icon" href="../favicon.svg" type="image/svg+xml">
-  <meta name="theme-color" content="#d9731a">
+  <meta name="theme-color" content="#0B2D45">
   <link rel="manifest" href="../manifest.webmanifest">
-  <link rel="apple-touch-icon" href="../site/apple-touch-icon.png"><link rel="stylesheet" href="../site/site.css">
+  <link rel="apple-touch-icon" href="../site/apple-touch-icon.png">
+  <link rel="stylesheet" href="../site/site.css">
 </head>
 <body data-nav="interactions" data-canonical="interactions/" data-robots="noindex,follow">
 <main class="wrap" id="main">
   <nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="../">Home</a></li><li aria-current="page">Interaction checker</li></ol></nav>
-  <div class="eyebrow">💊 Tool · educational</div>
+  <div class="eyebrow">Tool · educational</div>
   <h1>Medication interaction checker</h1>
   <p class="lead">Add two or more medicines by generic name, brand, drug class or combination product. Every entry is resolved to its active ingredients and each pair is checked against the interaction records on this site, each of which cites the official document it was taken from. The result describes what those sources say; it does not say whether a combination is safe for you.</p>
-  <div id="checker"><p class="muted" style="padding:20px 0">Loading the checker…</p></div>
+  <div id="checker"><p class="loading-state" aria-busy="true">Loading the checker…</p></div>
   <section class="prose">
     <h2>How the checker works</h2>
     <ul class="plain">

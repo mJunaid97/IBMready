@@ -30,6 +30,24 @@ authoritative medical reference needs (see `SEO.md`).
 | Search | `/search/` | One index over 2,100 structures, organs, systems, regions, terms and topics; also the header search box on every page. |
 | About | `/about/` … `/contact/` | About, editorial policy, medical review policy, references policy, corrections policy, disclaimer, contact. |
 
+## Brand
+
+The Anatomy Nexus identity is the production logo package in `brand/` (SVG, PNG, PDF and EPS lock-ups,
+print-CMYK exports, the favicon set and the vector masters; `brand/README.txt` gives the colours, the
+typography and the usage rules). The site serves only what it needs: the logo SVGs in `site/logo/` (the
+primary horizontal lock-up, the reversed white version for dark surfaces, the AN monogram for small spaces,
+the stacked and wordmark variants), the favicon set (`favicon.svg`, `favicon.ico`, `site/apple-touch-icon.png`,
+`site/icon-192.png`, `site/icon-512.png`, `manifest.webmanifest`) and Inter, self-hosted in `site/fonts/`.
+
+The design tokens at the top of `site/site.css` (and their mirror in `explorer/styles.css`) carry the
+palette, Deep Navy `#0B2D45`, Soft Teal `#4E9CAB`, Cool Gray `#A7B3BD` and Light `#F7F9FB`, and derive
+every surface, border, text and interactive tint from it with `color-mix`, in a light and a dark theme.
+Components never name a raw colour: navy is the anchor (text, primary actions, headings), teal the accent
+(links on hover, active and selected states, focus rings, knowledge connections), gray the support (borders,
+metadata). Amber and red exist only for warnings and serious safety information. One inline SVG icon set
+(`iconSvg` in `site/site.js`, the same stroke style as the explorer's controls) replaces emoji everywhere.
+`brand/` is documentation and source material: `tools/package-site.py` leaves it out of the deployed package.
+
 The site is plain HTML, CSS and ES modules over compiled JSON. For development, serve the
 repository root with any static server and open `/`; detail pages then use query URLs
 (`/conditions/condition.html?id=gout`) and render in the browser. Production is a packaged,
@@ -161,7 +179,7 @@ node build-atlas.mjs --src /path/to/isa_BP3D_4.0_obj_99 --manifest manifest/atla
 node build-atlas.mjs --src /path/to/isa_BP3D_4.0_obj_99 --manifest manifest/atlas-source.json --out ../data/lite --error 0.6 --ratio 0.15 --min-tris 150 --max-tris 40000 --jobs 4
 # 3. compile content, 4. render the 3D preview images (needs a local server on :8123)
 python3 build-content.py
-node render-previews.mjs
+node render-previews.mjs --force --extras      # every preview with the brand plate, plus site/hero.jpg and site/og-cover.png
 ```
 
 `tools/inspect-glb.mjs file.glb` prints what a browser will decode from a GLB.
@@ -191,8 +209,10 @@ organs/ medical-terms/ study/ search/ roadmap/
 conditions/ … health/ knowledge sections: a hub page and a detail template each, rendered by site/section.js
 biomarkers/ targets/  the clinical layer's own sections; compare/ (site/compare.js) and interactions/ (the checker, site/interactions.js)
 about/ … contact/     policy pages
-site/                 shared shell: site.js (URLs, header, footer, facade), seo.js (metadata, JSON-LD), entity.js
-                      (templates, hubs), site.css, previews/ (3D preview images), site-meta.js (generated)
+site/                 shared shell: site.js (URLs, header, footer, icons, facade), seo.js (metadata, JSON-LD), entity.js
+                      (templates, hubs), site.css (design tokens and components), logo/ (the logo SVGs the pages use),
+                      fonts/ (Inter), previews/ (3D preview images with the brand plate), site-meta.js (generated)
+brand/                the Anatomy Nexus logo package: masters, print files, favicon sources, README.txt (colours, type, usage)
 data/                 built atlas (hd, lite), compiled content, ATTRIBUTION.md
 content/              editable content sources
 tools/                pipeline: build-content.py, package-site.py, prerender.mjs, render-previews.mjs,

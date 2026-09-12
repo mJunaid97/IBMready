@@ -8,7 +8,7 @@
  * Under a prerendered page (body[data-prerendered]) neither function redraws the content: the hub
  * only binds its filters and the detail page only binds the 3D facade and the header.
  */
-import { renderHeader, renderFooter, loadData, loadClinical, loadType, loadInteractions, link, entityLink, typeLink, entityPath, TYPES, TYPE_ORDER, esc, param, pageId, paths, url, ROOT, PRERENDERED, SITE, SEVERITY, breadcrumbHtml, facadeHtml, dateText, canonical } from './site.js';
+import { renderHeader, renderFooter, loadData, loadClinical, loadType, loadInteractions, link, entityLink, typeLink, entityPath, TYPES, TYPE_ORDER, esc, param, pageId, paths, url, ROOT, PRERENDERED, SITE, SEVERITY, breadcrumbHtml, facadeHtml, dateText, canonical, iconSvg, emptyHtml } from './site.js';
 import { applyMeta, seoTitle, metaDescription, webPageNode } from './seo.js';
 
 const SYMPTOM_REGION = { head: 'head', chest: 'thorax', abdomen: 'abdomen', back: 'thorax', arms: 'upper-limb', legs: 'lower-limb' };
@@ -471,7 +471,7 @@ export async function renderIndex(type) {
     const tools = type === 'medications' || type === 'drug-classes' ? `<p class="actions"><a class="btn btn-primary" href="${link.interactions()}">Medication interaction checker</a><a class="btn" href="${link.compare()}">Comparisons</a></p>` : type === 'tests' || type === 'biomarkers' ? `<p class="actions"><a class="btn" href="${link.compare()}">Compare tests and markers</a></p>` : '';
     main.innerHTML = `
       ${breadcrumbHtml(crumbs)}
-      <div class="section-hero"><div class="eyebrow">${esc(TT.icon)} Section · ${items.length} ${esc(TT.name.toLowerCase())}</div><h1>${esc(TT.name)}</h1><p class="lead">${esc(typeData.meta.about || TT.blurb)}</p>${tools}</div>
+      <div class="section-hero"><div class="eyebrow">${iconSvg(TT.icon)} Section · ${items.length} ${esc(TT.name.toLowerCase())}</div><h1>${esc(TT.name)}</h1><p class="lead">${esc(typeData.meta.about || TT.blurb)}</p>${tools}</div>
       ${priority.length ? `<section class="start-here"><h2>Start here</h2><div class="chips">${priority.map(e => `<a class="chip chip-lg" href="${entityLink(type, e.id)}">${esc(e.name)}</a>`).join('')}</div></section>` : ''}
       <div class="search-row"><label class="sr-only" for="q">Filter ${esc(TT.name.toLowerCase())}</label><input id="q" type="search" placeholder="Filter ${esc(TT.name.toLowerCase())}…"></div>
       <div class="filters" id="filters" role="group" aria-label="Browse by category"><button class="chip is-active" data-cat="all" type="button">All ${items.length}</button>${cats.map(c => `<button class="chip" data-cat="${esc(c.id)}" type="button">${esc(c.name)} ${c.n}</button>`).join('')}</div>
@@ -479,7 +479,7 @@ export async function renderIndex(type) {
       <div id="cards">${grouped(items, cats)}</div>
       ${systemsHere.length ? `<h2>Browse by body system</h2><div class="chips">${systemsHere.map(s => `<a class="chip" href="${link.systemPage(s.id)}" style="border-color:${s.color}">${esc(s.name)}</a>`).join('')}</div>` : ''}
       <h2>Other sections</h2>
-      <div class="chips">${TYPE_ORDER.filter(t => t !== type).map(t => `<a class="chip" href="${typeLink(t)}">${esc(TYPES[t].icon)} ${esc(TYPES[t].name)}</a>`).join('')}<a class="chip" href="${link.page('anatomy')}">🫀 Anatomy</a><a class="chip" href="${link.search()}">Search everything</a></div>`;
+      <div class="chips">${TYPE_ORDER.filter(t => t !== type).map(t => `<a class="chip" href="${typeLink(t)}">${iconSvg(TYPES[t].icon)}${esc(TYPES[t].name)}</a>`).join('')}<a class="chip" href="${link.page('anatomy')}">${iconSvg('anatomy')}Anatomy</a><a class="chip" href="${link.search()}">${iconSvg('search')}Search everything</a></div>`;
   }
   // ---- interactivity (both modes): category filter and text filter re-render only the card grid
   let cat = 'all'; const q = document.getElementById('q'); const filters = document.getElementById('filters'); const cards = document.getElementById('cards'); const az = document.querySelector('.az');
@@ -490,7 +490,7 @@ export async function renderIndex(type) {
     const list = items.filter(e => (cat === 'all' || e.category === cat) && (!s || [e.name, ...(e.aliases || []), lead(e)].join(' ').toLowerCase().includes(s)));
     const all = cat === 'all' && !s;
     if (az) az.hidden = !all;
-    cards.innerHTML = list.length ? (all ? grouped(list, cats) : `<div class="grid grid-3">${list.map(e => cardHtml(e, cats)).join('')}</div>`) : '<p class="muted">Nothing matches.</p>';
+    cards.innerHTML = list.length ? (all ? grouped(list, cats) : `<div class="grid grid-3">${list.map(e => cardHtml(e, cats)).join('')}</div>`) : emptyHtml('Nothing matches', `No ${esc(TT.name.toLowerCase())} match that filter. Try a shorter word, an alias or another category.`, `<a class="btn btn-sm" href="${link.search(s)}">Search the whole site</a>`);
   }
   filters.addEventListener('click', (ev) => { const b = ev.target.closest('[data-cat]'); if (!b) return; cat = b.dataset.cat; for (const x of filters.children) x.classList.toggle('is-active', x === b); render(); });
   q.addEventListener('input', render);

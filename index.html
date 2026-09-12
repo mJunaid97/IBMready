@@ -7,8 +7,9 @@
   <meta name="referrer" content="strict-origin-when-cross-origin">
   <title>Anatomy Nexus | Interactive Human Anatomy &amp; Medical Knowledge</title>
   <meta name="description" content="Explore interactive human anatomy and learn how body structures connect with physiology, symptoms, conditions, medical tests, imaging, procedures and medications.">
+  <link rel="icon" href="favicon.ico" sizes="32x32">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
-  <meta name="theme-color" content="#d9731a">
+  <meta name="theme-color" content="#0B2D45">
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="apple-touch-icon" href="site/apple-touch-icon.png">
   <link rel="canonical" href="./">
@@ -18,19 +19,23 @@
 <main class="wrap" id="main">
   <section class="hero">
     <div>
-      <div class="eyebrow">Anatomy Nexus</div>
+      <div class="eyebrow">Interactive anatomy · clinical knowledge · learning</div>
       <h1>Explore the Human Body. Understand Medicine.</h1>
-      <p class="lead">Interactive 3D anatomy connected to physiology, symptoms, medical conditions, tests, imaging, procedures, medications and learning resources. Every page names the organs and structures it concerns, so you can move from a symptom to the anatomy behind it, to the condition, the test and the treatment.</p>
+      <p class="lead">Anatomy Nexus connects interactive 3D anatomy with physiology, symptoms, conditions, medical tests, imaging, procedures, medications and learning. Every page names the organs and structures it concerns, so you can move from a symptom to the anatomy behind it, to the condition, the test and the treatment.</p>
+      <form class="hero-search" action="search/" role="search">
+        <label class="hero-field"><span class="hsearch-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="m20 20-4.3-4.3"/></svg></span><input name="q" type="search" placeholder="Search anatomy, symptoms, conditions, tests, medications…" aria-label="Search Anatomy Nexus"></label>
+        <button class="btn" type="submit">Search</button>
+      </form>
+      <p class="hero-note">Try <a href="anatomy/">the heart</a>, chest pain, ECG, MRI, statins or CPR.</p>
       <div class="actions">
-        <a class="btn btn-primary" href="explorer/">Open the 3D explorer</a>
-        <a class="btn" href="anatomy/">Explore anatomy</a>
-        <a class="btn" href="conditions/">Browse conditions</a>
+        <a class="btn btn-primary btn-lg" href="explorer/">Explore the Human Body</a>
+        <a class="btn btn-lg" href="search/">Search Medical Knowledge</a>
       </div>
       <div class="stats" id="stats">
         <div class="stat"><b>2,234</b><span>modelled pieces</span></div>
         <div class="stat"><b>1,671</b><span>named structures</span></div>
-        <div class="stat"><b>206</b><span>clinical &amp; learning topics</span></div>
-        <div class="stat"><b>3,511</b><span>links between them</span></div>
+        <div class="stat"><b>267</b><span>clinical &amp; learning topics</span></div>
+        <div class="stat"><b>4,723</b><span>links between them</span></div>
       </div>
     </div>
     <a class="hero-art" href="explorer/" aria-label="Open the 3D explorer"><img src="site/hero.jpg" alt="The 3D atlas showing the muscles, skeleton and vessels of the whole body" width="1400" height="900" loading="eager" fetchpriority="high"></a>
@@ -48,7 +53,7 @@
   <div class="grid grid-3 type-grid" id="types"></div>
 
   <h2>Everyday and emergency knowledge</h2>
-  <div class="grid grid-3" id="everyday"></div>
+  <div class="grid grid-3 type-grid" id="everyday"></div>
 
   <div class="callout">Anatomy Nexus is an educational platform built on one adult male reference body and public clinical guidance. It is not a diagnostic tool and does not give medical advice. In an emergency, call your local emergency number. Read the <a href="disclaimer/">disclaimer</a> and <a href="editorial-policy/">editorial policy</a>.</div>
 </main>

@@ -1,5 +1,5 @@
 // search/index.js — page script for search/index.html (kept external so the site runs under a strict CSP).
-import { renderHeader, renderFooter, searchEntries, runSearch, anyLink, TYPE_LABEL, TYPES, esc, param } from '../site/site.js';
+import { renderHeader, renderFooter, searchEntries, runSearch, anyLink, TYPE_LABEL, TYPES, esc, param, emptyHtml, typeTag } from '../site/site.js';
 import { applyStaticMeta } from '../site/seo.js';
 renderHeader('search'); renderFooter(); applyStaticMeta();
 const q = document.getElementById('q'), out = document.getElementById('results'), filters = document.getElementById('filters');
@@ -14,9 +14,9 @@ function render() {
   const pool = type === 'all' ? entries : entries.filter(e => e.type === type);
   if (!s) { out.innerHTML = `<p class="muted">Type to search${type !== 'all' ? ` within ${esc(TYPE_LABEL[type] || type)}` : ''}. Results link straight to the page or into the 3D atlas.</p>`; return; }
   const res = runSearch(pool, s, 60);
-  if (!res.length) { out.innerHTML = '<p class="muted">No matches. Try a shorter word, an alias (heart attack, blood thinner) or a Latin name.</p>'; return; }
+  if (!res.length) { out.innerHTML = emptyHtml('No matches', 'Try a shorter word, an alias (heart attack, blood thinner) or a Latin name.'); return; }
   const groups = new Map(); for (const r of res) { if (!groups.has(r.type)) groups.set(r.type, []); groups.get(r.type).push(r); }
-  out.innerHTML = [...groups].map(([t, list]) => `<div class="result-group"><h2>${esc(TYPE_LABEL[t] || t)} <span class="badge">${list.length}</span></h2><ul class="list">${list.map(r => `<li><a href="${anyLink(r.type, r.id)}">${esc(r.name)}</a> <span class="muted small">· ${esc(r.sub)}</span></li>`).join('')}</ul></div>`).join('');
+  out.innerHTML = [...groups].map(([t, list]) => `<div class="result-group"><h2>${typeTag(t)} <span class="badge">${list.length}</span></h2><ul class="list">${list.map(r => `<li><a href="${anyLink(r.type, r.id)}">${esc(r.name)}</a> <span class="muted small">· ${esc(r.sub)}</span></li>`).join('')}</ul></div>`).join('');
   const u = new URL(location.href); u.searchParams.set('q', s); history.replaceState(null, '', u);
 }
 q.value = param('q') || ''; q.addEventListener('input', render); render();

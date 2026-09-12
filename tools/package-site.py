@@ -22,7 +22,7 @@ The output is plain files: upload dist/ (or extract the zip) into the web root o
 import argparse, datetime, json, os, re, shutil, subprocess, sys, zipfile
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-EXCLUDE_DIRS = ("tools/", ".github/", "content/")
+EXCLUDE_DIRS = ("tools/", ".github/", "content/", "brand/")     # brand/: the logo kit (print files, sources); the site serves site/logo/
 KEEP_IN_CONTENT = ("content/roadmap.json",)
 EXCLUDE_FILES = (".gitignore", "vercel.json", "_headers", "tools/qa/shots")
 SECTIONS = {"physiology": "topic.html", "symptoms": "symptom.html", "conditions": "condition.html", "tests": "test.html", "biomarkers": "biomarker.html", "imaging": "study.html",
