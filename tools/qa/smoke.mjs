@@ -161,6 +161,16 @@ else {
 const robots = await (await page.request.get(base + 'robots.txt')).text();
 if (!/Disallow: \/search\//.test(robots) || !/Sitemap:/.test(robots)) fail(`robots.txt: ${robots.slice(0, 120)}`); else ok('robots.txt disallows search and names the sitemap');
 if (STATIC) {
+  // analytics and search-console verification, when configured, must be in the initial HTML of the home page
+  const meta = await (await page.request.get(base + 'site/site-meta.js')).text();
+  const ga4 = /"ga4":\s*"(G-[A-Z0-9]+)"/.exec(meta)?.[1]; const gsc = /"google":\s*"([^"]+)"/.exec(meta)?.[1];
+  if (ga4 || gsc) {
+    const home = await (await page.request.get(base)).text();
+    if (ga4 && !home.includes(`googletagmanager.com/gtag/js?id=${ga4}`)) fail(`home HTML lacks the GA4 tag for ${ga4}`);
+    if (ga4 && !/script-src[^"]*googletagmanager\.com/.test(home)) fail('home CSP does not admit the GA4 tag host');
+    if (gsc && !home.includes(`<meta name="google-site-verification" content="${gsc}">`)) fail('home HTML lacks the google-site-verification meta tag');
+    ok(`analytics/verification present in the initial HTML (${[ga4 && 'GA4 ' + ga4, gsc && 'GSC meta'].filter(Boolean).join(', ')})`);
+  }
   for (const u of ['', detailUrl('conditions', 'condition.html', 'gout'), detailUrl('anatomy', 'organ.html', 'heart'), detailUrl('medications', 'medication.html', 'amlodipine'), dirUrl('tests')]) {
     const html = await (await page.request.get(base + u.replace(base, ''))).text();
     const probs = [];

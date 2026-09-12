@@ -24,11 +24,11 @@ export const SITE = {
     "reviewNote": "Not yet independently reviewed by a clinician. Every substantive claim is sourced; corrections are welcome through the contact page."
   },
   "verification": {
-    "google": "",
+    "google": "TKpH8FvFAJsMPu-qund8Ago4-_5vqrYBEOAZyX7aPM8",
     "bing": ""
   },
   "analytics": {
-    "ga4": "",
+    "ga4": "G-W35QT71BH2",
     "_note": "Google Analytics 4 measurement id (G-XXXXXXXXXX). Empty = no analytics, no third-party scripts."
   },
   "updated": "2026-09-12",
