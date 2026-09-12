@@ -1,5 +1,42 @@
 # Changelog
 
+## v1.4.0 — 2026-09-12
+
+Brand release: the Anatomy Nexus identity from the logo package (`brand/`) is applied across the whole
+product, from the home page to the deepest anatomy, test, medication and condition pages and the 3D
+explorer, on top of the v1.3.0 Drug Interaction Checker.
+
+- Design tokens: `site/site.css` and `explorer/styles.css` open with the brand palette (Deep Navy
+  `#0B2D45`, Soft Teal `#4E9CAB`, Cool Gray `#A7B3BD`, Light `#F7F9FB`) and derive every surface, border,
+  text, link, button and status tint from it for the light theme, the dark toggle and the system
+  preference; spacing, radius, shadow, type, control and container tokens follow; components never name
+  a raw colour, and amber and red are reserved for warnings and serious safety information
+- Logo: the primary horizontal lock-up in the header, footer and explorer top bar, the reversed white
+  version on dark surfaces, the AN monogram on narrow screens, all served as SVG from `site/logo/`
+- Favicon and app icons from the kit (`favicon.ico`, a dark-scheme-aware `favicon.svg`, Apple touch icon,
+  192 and 512 px app icons), manifest colours and a navy theme colour on every page
+- Typography: Inter, self-hosted (variable weight with the optical-size axis), a scale from display to
+  clinical label, body copy at 16px
+- Header with the logo, the primary sections, a "More" menu grouped into anatomy, clinical, medicines
+  and learning, the search box with type-tinted results and a full-height drawer on phones; footer with
+  the logo, content columns, policies, copyright and version
+- One inline SVG icon set replaces every emoji on the home page, hubs, chips, comparisons, the clinical
+  tools hub and the checker
+- Home page: positioning line, universal search, primary and secondary calls to action, the explorer
+  itself as the product preview
+- Components: navy primary buttons, chips, badges, cards, five callout styles (information, clinical
+  note, important, warning, urgent), tables, forms, references with external-link marks, the editorial
+  block, the mechanism pathway with teal connectors, branded empty and loading states, the 404 page
+- Drug Interaction Checker, clinical tools hub and methodology page restyled on the same tokens; the
+  checker's usage note is an important notice and an unmatched entry a warning, red stays for
+  contraindicated or major results
+- 3D explorer: the same tokens, the logo in the top bar and loading card, a teal selection highlight,
+  the hint moved above the toolbar, the piece count no longer runs under the search box
+- Images: every 3D preview re-rendered on the brand backdrop with a brand plate (reversed logo and view
+  name), a new hero and a new social cover (`tools/render-previews.mjs --extras`)
+- Packaging and QA: the kit folder stays out of the deployed package, woff2 and ico media types and
+  caching, the smoke test checks the logo, favicon set and absence of emoji icons on every page
+
 ## v1.3.0 — 2026-09-12
 
 Drug Interaction Checker: the medication interaction checker becomes the flagship clinical tool of
