@@ -1,5 +1,13 @@
 # Changelog
 
+## v1.1.2 — 2026-09-12
+
+Search Console verification meta tag and Google Analytics 4
+
+- Search Console verification token and Google Analytics 4 measurement id for anatomynexus.com
+- Google Analytics 4 behind a config value; clean URLs require prerendering
+- Live check: every curl has a connect and total timeout so a stalled request cannot hang the job
+
 ## v1.1.1 — 2026-09-12
 
 Cache-safe deploys. The first v1.1.0 deploy served pages of the new release with the previous
