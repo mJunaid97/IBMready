@@ -120,7 +120,7 @@ The repository root is the site. Options:
   https://your-domain --pretty --zip` builds a production package with clean URLs, sitemap,
   security and caching headers (`.htaccess`) and a 404 page. The `Deploy to Hostinger` workflow
   publishes that package to the `deploy` branch and a cron job on the server pulls it, which is
-  how https://medical.mjunaid.net is deployed. Step by step in `DEPLOY.md`.
+  how https://anatomynexus.com is deployed. Step by step in `DEPLOY.md`.
 - **Netlify / Cloudflare Pages / Vercel**: deploy the root with no build command; `_headers`
   and `vercel.json` supply the security and caching headers.
 - **Any static server**: `python3 -m http.server`, nginx, S3 + CloudFront, and so on.

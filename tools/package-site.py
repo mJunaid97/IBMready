@@ -40,6 +40,7 @@ def main():
     ap.add_argument("--pretty", action="store_true", help="enable clean URLs (/conditions/gout); requires the .htaccess rewrites or equivalent")
     ap.add_argument("--out", default=os.path.join(ROOT, "dist"))
     ap.add_argument("--zip", action="store_true", help="also write <out>/human-body-site.zip")
+    ap.add_argument("--redirect-host", action="append", default=[], help="old host name to redirect permanently to --site-url (repeatable), e.g. medical.mjunaid.net")
     a = ap.parse_args()
     site = a.site_url.rstrip("/")
     base = "/" + a.base_path.strip("/") + "/" if a.base_path.strip("/") else "/"
@@ -84,6 +85,13 @@ def main():
     s = s.replace('content="site/og-cover.png"', f'content="{origin}site/og-cover.png"')
     s = s.replace('<link rel="canonical" href="index.html">', f'<link rel="canonical" href="{origin}">')
     open(p, "w", encoding="utf-8").write(s)
+
+    # ---- permanent redirects from retired host names to the canonical site
+    if a.redirect_host and site:
+        p = os.path.join(out, ".htaccess"); s = open(p, encoding="utf-8").read()
+        rules = "".join(f"  RewriteCond %{{HTTP_HOST}} ^{re.escape(h)}$ [NC]\n  RewriteRule ^ {site}%{{REQUEST_URI}} [L,R=301]\n" for h in a.redirect_host)
+        s = s.replace("  # ---- clean URLs", "  # ---- retired host names redirect to the canonical site\n" + rules + "\n  # ---- clean URLs", 1)
+        open(p, "w", encoding="utf-8").write(s)
 
     # ---- sub-path installs: root-relative references
     if base != "/":

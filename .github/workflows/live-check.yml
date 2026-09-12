@@ -8,7 +8,7 @@ on:
       base_url:
         description: Base URL of the deployed site
         required: false
-        default: https://medical.mjunaid.net/
+        default: https://anatomynexus.com/
       pretty_urls:
         description: "Clean URLs enabled on that host (1 or 0)"
         required: false
@@ -32,7 +32,7 @@ jobs:
           npx playwright install --with-deps chromium
       - name: Headers and status of key URLs
         run: |
-          B="${{ github.event.inputs.base_url || 'https://medical.mjunaid.net/' }}"
+          B="${{ github.event.inputs.base_url || 'https://anatomynexus.com/' }}"
           for p in "" "explorer/" "conditions/gout" "sitemap.xml" "data/hd/glb/heart.glb" "no-such-page"; do
             echo "== ${B}${p}"; curl -sS -o /dev/null -I -H "Accept-Encoding: gzip, br" -w "status %{http_code}  type %{content_type}\n" "${B}${p}" || true
           done
@@ -40,7 +40,7 @@ jobs:
       - name: Full smoke test against the live site
         working-directory: tools/qa
         env:
-          BASE_URL: ${{ github.event.inputs.base_url || 'https://medical.mjunaid.net/' }}
+          BASE_URL: ${{ github.event.inputs.base_url || 'https://anatomynexus.com/' }}
           PRETTY_URLS: ${{ github.event.inputs.pretty_urls || '1' }}
         run: node smoke.mjs
       - name: Upload screenshots

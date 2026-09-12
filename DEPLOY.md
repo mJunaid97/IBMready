@@ -26,13 +26,13 @@ add `--base-path /atlas/`.
 
 Pick one:
 
-**A. Continuous deployment through git (what medical.mjunaid.net uses).** The GitHub workflow
+**A. Continuous deployment through git (what anatomynexus.com uses).** The GitHub workflow
 "Deploy to Hostinger" builds the package on every push and publishes `dist/` to the `deploy`
 branch. On the hosting account a cron job (hPanel → Advanced → Cron jobs, every five minutes)
 keeps the web root equal to that branch:
 
 ```sh
-cd /home/USER/domains/example.com/public_html/medical && { command -v git >/dev/null && { [ -d .git ] || { git init -q && git remote add origin https://github.com/mJunaid97/IBMready.git; }; } && git fetch -q --depth 1 origin deploy && git checkout -q -f -B deploy origin/deploy && git clean -q -fd -e .well-known && echo "git deploy $(git rev-parse --short HEAD) ok"; } || { mkdir -p "$HOME/tmp/hb" && curl -sL https://codeload.github.com/mJunaid97/IBMready/zip/refs/heads/deploy -o "$HOME/tmp/hb.zip" && rm -rf "$HOME/tmp/hb"/* && unzip -oq "$HOME/tmp/hb.zip" -d "$HOME/tmp/hb" && cp -a "$HOME/tmp/hb"/IBMready-deploy/. . && rm -rf "$HOME/tmp/hb" "$HOME/tmp/hb.zip" && echo "zip deploy ok"; }
+cd /home/USER/domains/example.com/public_html && { command -v git >/dev/null && { [ -d .git ] || { git init -q && git remote add origin https://github.com/mJunaid97/IBMready.git; }; } && git fetch -q --depth 1 origin deploy && git checkout -q -f -B deploy origin/deploy && git clean -q -fd -e .well-known && echo "git deploy $(git rev-parse --short HEAD) ok"; } || { mkdir -p "$HOME/tmp/hb" && curl -sL https://codeload.github.com/mJunaid97/IBMready/zip/refs/heads/deploy -o "$HOME/tmp/hb.zip" && rm -rf "$HOME/tmp/hb"/* && unzip -oq "$HOME/tmp/hb.zip" -d "$HOME/tmp/hb" && cp -a "$HOME/tmp/hb"/IBMready-deploy/. . && rm -rf "$HOME/tmp/hb" "$HOME/tmp/hb.zip" && echo "zip deploy ok"; }
 ```
 
 No credentials are stored anywhere: the repository is public and the server only pulls. The
@@ -46,6 +46,10 @@ delete the zip. Turn on "Show hidden files" and confirm `.htaccess` is present.
 
 **C. FTP.** Any FTP client, or the `SamKirkland/FTP-Deploy-Action` in a workflow with the FTP
 account from hPanel → Files → FTP accounts, uploading `dist/` to `public_html`.
+
+The old address `medical.mjunaid.net` keeps its own checkout of the same branch and answers every
+request with a permanent redirect to `anatomynexus.com` (the `--redirect-host` option of the
+package script writes that rule into `.htaccess`).
 
 ## 3. Switch on HTTPS and check
 

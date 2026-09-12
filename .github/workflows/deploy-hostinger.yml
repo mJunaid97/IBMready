@@ -5,7 +5,7 @@ name: Deploy to Hostinger
 # (see DEPLOY.md), so no hosting credentials are needed in GitHub.
 #
 # Repository variable SITE_URL (Settings → Secrets and variables → Actions → Variables) holds the
-# public URL, e.g. https://medical.mjunaid.net; the manual run form can override it.
+# public URL, e.g. https://anatomynexus.com; the manual run form can override it.
 on:
   workflow_dispatch:
     inputs:
@@ -37,7 +37,7 @@ jobs:
       - name: Validate the content graph
         run: python3 tools/build-content.py && git diff --exit-code --stat -- data/content
       - name: Build the production package
-        run: python3 tools/package-site.py --site-url "${{ github.event.inputs.site_url || vars.SITE_URL || 'https://medical.mjunaid.net' }}" --pretty --out dist
+        run: python3 tools/package-site.py --site-url "${{ github.event.inputs.site_url || vars.SITE_URL || 'https://anatomynexus.com' }}" --pretty --redirect-host medical.mjunaid.net --out dist
       - name: Publish dist/ to the deploy branch
         uses: peaceiris/actions-gh-pages@v4
         with:
