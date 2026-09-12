@@ -9,6 +9,8 @@ import { chromium } from 'playwright';
 import { mkdirSync } from 'node:fs';
 
 const base = (process.env.BASE_URL || 'http://127.0.0.1:8123/').replace(/\/?$/, '/');
+const PRETTY = process.env.PRETTY_URLS === '1';   // set when the server rewrites /<section>/<slug> (see tools/qa/serve.py, .htaccess)
+const detailUrl = (dir, page, id) => PRETTY ? `${base}${dir}/${id}` : `${base}${dir}/${page}?id=${id}`;
 const out = new URL('./shots/', import.meta.url).pathname; mkdirSync(out, { recursive: true });
 const failures = [];
 const fail = (msg) => { failures.push(msg); console.log('FAIL', msg); };
@@ -27,7 +29,7 @@ page.on('response', (r) => { if (r.status() >= 400) failedRequests.push(`${r.sta
 const rendered = () => page.waitForFunction(() => { const m = document.querySelector('main'); return m && !/Loading…/.test(m.textContent) && m.querySelectorAll('a').length > 0; }, null, { timeout: 45000 });
 
 // 1. every page type renders
-const pages = ['', 'systems/', 'systems/system.html?id=heart', 'organs/', 'organs/organ.html?id=liver', 'learn/terminology.html', 'study/', 'roadmap/', 'search/?q=knee',
+const pages = ['', 'systems/', PRETTY ? 'systems/heart' : 'systems/system.html?id=heart', 'organs/', PRETTY ? 'organs/liver' : 'organs/organ.html?id=liver', 'learn/terminology.html', 'study/', 'roadmap/', 'search/?q=knee',
   ...['physiology', 'symptoms', 'conditions', 'tests', 'imaging', 'procedures', 'medications', 'first-aid', 'health'].map(t => `${t}/`)];
 const hrefs = new Set();
 for (const p of pages) {
@@ -45,7 +47,7 @@ for (const [kind, names] of Object.entries(clinical.names)) {
   const t = clinical.types[kind];
   for (const id of Object.keys(names)) {
     n++;
-    await page.goto(`${base}${t.dir}/${t.page}?id=${id}`, { waitUntil: 'load' });
+    await page.goto(detailUrl(t.dir, t.page, id), { waitUntil: 'load' });
     try { await rendered(); } catch { fail(`${kind}/${id} did not render`); continue; }
     const r = await page.evaluate(() => ({ h1: document.querySelector('h1')?.textContent.trim(), undef: (document.body.innerText.match(/\bundefined\b|\[object Object\]/g) || []).length, rel: document.querySelectorAll('.aside .chip').length, hrefs: [...document.querySelectorAll('a[href]')].map(a => a.href) }));
     r.hrefs.forEach(h => hrefs.add(h));
@@ -81,9 +83,17 @@ if (loaded) {
   if (loc !== 'Correct!') fail(`locate mode feedback: ${loc}`); else ok('locate mode answers');
 }
 
+// 5b. canonical link and the custom 404 page
+const canon = await page.evaluate(() => document.querySelector('link[rel="canonical"]')?.href || '');
+await page.goto(detailUrl('conditions', 'condition.html', 'gout'), { waitUntil: 'load' }); await rendered();
+const canon2 = await page.evaluate(() => document.querySelector('link[rel="canonical"]')?.href || '');
+if (!canon2.includes('conditions/')) fail(`canonical link missing on condition page: ${canon2}`); else ok(`canonical: ${canon2.replace(base, '/')}`);
+const nf = await page.request.get(base + 'no-such-page-xyz');
+if (nf.status() !== 404) fail(`missing page returned ${nf.status()} instead of 404`); else ok(`404 status for a missing page${(await nf.text()).includes('not in the body') ? ' with the custom page' : ''}`);
+
 // 6. phone layout has no horizontal overflow
 const m = await (await browser.newContext({ viewport: { width: 390, height: 844 }, isMobile: true, hasTouch: true, bypassCSP: true })).newPage();
-for (const p of ['', 'conditions/condition.html?id=gout', 'first-aid/topic.html?id=cpr', 'search/?q=heart']) {
+for (const p of ['', PRETTY ? 'conditions/gout' : 'conditions/condition.html?id=gout', PRETTY ? 'first-aid/cpr' : 'first-aid/topic.html?id=cpr', 'search/?q=heart']) {
   await m.goto(base + p, { waitUntil: 'load' }); await m.waitForTimeout(1200);
   const w = await m.evaluate(() => ({ s: document.documentElement.scrollWidth, v: innerWidth }));
   if (w.s > w.v + 1) fail(`phone overflow on ${p || '/'}: ${w.s} > ${w.v}`);
@@ -95,7 +105,7 @@ const strict = await (await browser.newContext({ viewport: { width: 1200, height
 const cspMsgs = [];
 strict.on('console', (msg) => { if (msg.type() === 'error' || /Content Security Policy|Refused to/.test(msg.text())) cspMsgs.push(`${strict.url().replace(base, '/')}: ${msg.text().slice(0, 200)}`); });
 strict.on('pageerror', (e) => cspMsgs.push(`${strict.url().replace(base, '/')}: ${e.message.slice(0, 200)}`));
-for (const p of ['', 'systems/system.html?id=heart', 'organs/organ.html?id=liver', 'conditions/condition.html?id=gout', 'first-aid/topic.html?id=cpr', 'study/', 'search/?q=liver', 'learn/terminology.html']) {
+for (const p of ['', PRETTY ? 'systems/heart' : 'systems/system.html?id=heart', PRETTY ? 'organs/liver' : 'organs/organ.html?id=liver', PRETTY ? 'conditions/gout' : 'conditions/condition.html?id=gout', PRETTY ? 'first-aid/cpr' : 'first-aid/topic.html?id=cpr', 'study/', 'search/?q=liver', 'learn/terminology.html']) {
   await strict.goto(base + p, { waitUntil: 'load' }); await strict.waitForTimeout(2000);
   const html = await strict.content();
   if (!/<h1/.test(html) || /Loading…/.test(html)) fail(`CSP pass: ${p || '/'} did not render`);

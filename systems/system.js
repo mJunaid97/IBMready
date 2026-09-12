@@ -1,14 +1,15 @@
 // systems/system.js — page script for systems/system.html (kept external so the site runs under a strict CSP).
-import { renderHeader, renderFooter, loadData, loadClinical, link, esc, fmt, param } from '../site/site.js';
+import { renderHeader, renderFooter, loadData, loadClinical, link, esc, fmt, param, pageId, setCanonical, CONFIG } from '../site/site.js';
 import { relatedForAnatomy, relatedCountForAnatomy } from '../site/entity.js';
 renderHeader('systems'); renderFooter();
 const [{ atlas, content }, clinical] = await Promise.all([loadData(), loadClinical()]);
-const id = param('id'); const sys = atlas.systems.find(s => s.id === id);
+const id = pageId(); const sys = atlas.systems.find(s => s.id === id);
 const main = document.getElementById('main');
 if (!sys) { main.innerHTML = '<h1>System not found</h1><p><a href="index.html">All systems</a></p>'; throw new Error('no system');
 }
 const c = content.systems[id] || {};
 document.title = `${sys.name} · Body systems · Human Body`;
+setCanonical(CONFIG.prettyUrls ? `systems/${id}` : `systems/system.html?id=${id}`);
 const structs = atlas.structures.map((s, i) => ({ ...s, idx: i })).filter(s => s.system === id).sort((a, b) => a.name.localeCompare(b.name));
 const organs = content.organs.filter(o => o.system === id);
 const key = (c.keyStructures || []).map(n => { const s = structs.find(x => x.name === n); return s ? `<a class="chip" href="${link.structure(s.id)}">${esc(n)}</a>` : ''; }).join('');
@@ -30,14 +31,14 @@ main.innerHTML = `
       <p>${esc(c.overview || '')}</p>
       ${c.functions ? `<h3>Functions</h3><ul class="plain">${c.functions.map(f => `<li>${esc(f)}</li>`).join('')}</ul>` : ''}
       ${c.clinical ? `<h3>Clinical notes</h3><ul class="plain">${c.clinical.map(f => `<li>${esc(f)}</li>`).join('')}</ul>` : ''}
-      ${organs.length ? `<h2>Organs &amp; groups in this system</h2><div class="grid">${organs.map(o => `<a class="card" href="../organs/organ.html?id=${encodeURIComponent(o.id)}"><h3>${esc(o.name)}</h3><p>${esc(o.summary)}</p><div class="meta">${o.structures.length} structures</div></a>`).join('')}</div>` : ''}
+      ${organs.length ? `<h2>Organs &amp; groups in this system</h2><div class="grid">${organs.map(o => `<a class="card" href="${link.organPage(o.id)}"><h3>${esc(o.name)}</h3><p>${esc(o.summary)}</p><div class="meta">${o.structures.length} structures</div></a>`).join('')}</div>` : ''}
       <h2>All structures <span class="badge">${structs.length}</span></h2>
       <p class="muted small">${fmt(sys.count)} modelled pieces. Click a structure to open it in the atlas.</p>
       <ul class="list">${structs.map(s => `<li><a href="${link.structure(s.id)}">${esc(s.name)}</a>${s.pieces.length > 1 ? ` <span class="muted small">· ${s.pieces.length} pieces</span>` : ''}</li>`).join('')}</ul>
     </div>
     <aside class="aside">
       ${key ? `<h3>Key structures</h3><div class="chips">${key}</div>` : ''}
-      ${c.related ? `<h3>Related systems</h3><div class="chips">${c.related.map(r => { const rs = atlas.systems.find(s => s.id === r); return rs ? `<a class="chip" href="system.html?id=${encodeURIComponent(r)}">${esc(rs.name)}</a>` : ''; }).join('')}</div>` : ''}
+      ${c.related ? `<h3>Related systems</h3><div class="chips">${c.related.map(r => { const rs = atlas.systems.find(s => s.id === r); return rs ? `<a class="chip" href="${link.systemPage(r)}">${esc(rs.name)}</a>` : ''; }).join('')}</div>` : ''}
       <h3>Facts</h3>
       <dl class="term" style="border:0;padding:0"><dl><dt>Pieces</dt><dd>${fmt(sys.count)}</dd><dt>Structures</dt><dd>${structs.length}</dd><dt>Triangles</dt><dd>${fmt(sys.triangles)}</dd><dt>Download</dt><dd>${(sys.bytes / 1048576).toFixed(2)} MB</dd></dl>
       ${relatedForAnatomy('systems', id, clinical, `Clinical topics · ${relatedCountForAnatomy('systems', id, clinical)}`) || `<h3>Clinical topics</h3><p class="muted small">No clinical pages reference this system yet. <a href="../search/index.html?q=${encodeURIComponent(sys.name)}">Search the platform.</a></p>`}

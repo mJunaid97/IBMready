@@ -116,6 +116,11 @@ The repository root is the site. Options:
 - **GitHub Pages**: in the repository settings choose Pages → Source → *GitHub Actions*; the
   `Deploy to GitHub Pages` workflow publishes on every push to `main` and can be run manually
   from any branch. The site works under a project sub-path.
+- **Hostinger or any Apache / LiteSpeed host**: `python3 tools/package-site.py --site-url
+  https://your-domain --pretty --zip` builds a production package with clean URLs, sitemap,
+  security and caching headers (`.htaccess`) and a 404 page. The `Deploy to Hostinger` workflow
+  publishes that package to the `deploy` branch and a cron job on the server pulls it, which is
+  how https://medical.mjunaid.net is deployed. Step by step in `DEPLOY.md`.
 - **Netlify / Cloudflare Pages / Vercel**: deploy the root with no build command; `_headers`
   and `vercel.json` supply the security and caching headers.
 - **Any static server**: `python3 -m http.server`, nginx, S3 + CloudFront, and so on.

@@ -1,0 +1,48 @@
+name: Deploy to Hostinger
+
+# Builds the production package and publishes it to the `deploy` branch. The web root on
+# Hostinger is a git checkout of that branch, refreshed every five minutes by a cron job
+# (see DEPLOY.md), so no hosting credentials are needed in GitHub.
+#
+# Repository variable SITE_URL (Settings → Secrets and variables → Actions → Variables) holds the
+# public URL, e.g. https://medical.mjunaid.net; the manual run form can override it.
+on:
+  workflow_dispatch:
+    inputs:
+      site_url:
+        description: Public URL of the site (overrides the SITE_URL variable)
+        required: false
+  push:
+    branches: [main, claude/human-anatomy-site-75w0gr]
+    paths-ignore:
+      - ".github/workflows/qa.yml"
+      - "tools/qa/**"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: hostinger-deploy
+  cancel-in-progress: false
+
+jobs:
+  build-and-publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Validate the content graph
+        run: python3 tools/build-content.py && git diff --exit-code --stat -- data/content
+      - name: Build the production package
+        run: python3 tools/package-site.py --site-url "${{ github.event.inputs.site_url || vars.SITE_URL || 'https://medical.mjunaid.net' }}" --pretty --out dist
+      - name: Publish dist/ to the deploy branch
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: deploy
+          publish_dir: ./dist
+          force_orphan: true
+          enable_jekyll: true
+          commit_message: "Production build ${{ github.sha }}"

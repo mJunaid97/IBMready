@@ -4,7 +4,7 @@
  * index page (renderIndex) and a detail page (renderDetail); the entity data comes from
  * data/content/types/<type>.json, names of linked entities from data/content/clinical.json.
  */
-import { renderHeader, renderFooter, loadData, loadClinical, loadType, link, entityLink, typeLink, TYPES, TYPE_ORDER, esc, param, ROOT } from './site.js';
+import { renderHeader, renderFooter, loadData, loadClinical, loadType, link, entityLink, typeLink, TYPES, TYPE_ORDER, esc, param, pageId, setCanonical, entityPath, ROOT } from './site.js';
 
 const SYMPTOM_REGION = { head: 'head', chest: 'thorax', abdomen: 'abdomen', back: 'thorax', arms: 'upper-limb', legs: 'lower-limb' };
 const DISCLAIMER = {
@@ -165,9 +165,11 @@ export async function renderDetail(type) {
   const TT = TYPES[type]; renderHeader(type); renderFooter();
   const main = document.getElementById('main');
   const [typeData, data, clinical] = await Promise.all([loadType(type), loadData(), loadClinical()]);
-  const id = param('id'); const e = typeData.items[id];
+  const id = pageId(); const e = id ? typeData.items[id] : null;
   if (!e) { main.innerHTML = `<h1>Not found</h1><p><a href="index.html">All ${esc(TT.name.toLowerCase())}</a></p>`; document.title = `Not found · ${TT.name}`; return; }
   document.title = `${e.name} · ${TT.name} · Human Body`;
+  setCanonical(entityPath(type, e.id));
+  const md = document.querySelector('meta[name="description"]'); if (md) md.content = `${e.name}: ${lead(e)}`.slice(0, 300);
   const cat = (typeData.meta.categories || []).find(c => c.id === e.category);
   const hash = embedHash(e); const ctx = { data, clinical };
   const groups = relatedGroups(e, clinical);
@@ -200,6 +202,7 @@ export async function renderIndex(type) {
   const main = document.getElementById('main');
   const [typeData, data, clinical] = await Promise.all([loadType(type), loadData(), loadClinical()]);
   document.title = `${TT.name} · Human Body`;
+  setCanonical(`${TT.dir}/`);
   const items = Object.values(typeData.items).sort((a, b) => a.name.localeCompare(b.name));
   const cats = (typeData.meta.categories || []).map(c => ({ ...c, n: items.filter(i => i.category === c.id).length })).filter(c => c.n);
   const sysName = (id) => data.atlas.systems.find(s => s.id === id)?.name; const organName = (id) => data.content.organs.find(o => o.id === id)?.name;
@@ -218,7 +221,7 @@ export async function renderIndex(type) {
     const list = items.filter(e => (cat === 'all' || e.category === cat) && (!s || [e.name, ...(e.aliases || []), lead(e)].join(' ').toLowerCase().includes(s)));
     cards.innerHTML = list.length ? list.map(e => {
       const tags = [catName(e.category), ...(e.anatomy?.organs || []).slice(0, 2).map(organName), ...(!e.anatomy?.organs?.length ? (e.anatomy?.systems || []).slice(0, 2).map(sysName) : [])].filter(Boolean);
-      return `<a class="card" href="${TT.page}?id=${encodeURIComponent(e.id)}"><h3>${esc(e.name)}${e.emergency ? ' <span class="badge emergency">emergency</span>' : ''}</h3><p>${esc(trim(lead(e), 160))}</p>${tags.length ? `<div class="tags">${tags.map(t => `<span>${esc(t)}</span>`).join('')}</div>` : ''}</a>`;
+      return `<a class="card" href="${entityLink(type, e.id)}"><h3>${esc(e.name)}${e.emergency ? ' <span class="badge emergency">emergency</span>' : ''}</h3><p>${esc(trim(lead(e), 160))}</p>${tags.length ? `<div class="tags">${tags.map(t => `<span>${esc(t)}</span>`).join('')}</div>` : ''}</a>`;
     }).join('') : '<p class="muted">Nothing matches.</p>';
   }
   filters.addEventListener('click', (ev) => { const b = ev.target.closest('[data-cat]'); if (!b) return; cat = b.dataset.cat; for (const x of filters.children) x.classList.toggle('is-active', x === b); render(); });

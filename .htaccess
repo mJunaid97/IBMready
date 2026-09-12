@@ -1,0 +1,92 @@
+# Human Body platform — Apache / LiteSpeed configuration (Hostinger shared hosting and similar).
+# Everything here is optional on other hosts; the site also works with no server configuration.
+
+Options -Indexes -MultiViews
+ServerSignature Off
+DirectoryIndex index.html
+
+# ---- HTTPS and one canonical host (Hostinger terminates TLS on a proxy: check the forwarded header too)
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteCond %{HTTPS} !=on
+  RewriteCond %{HTTP:X-Forwarded-Proto} !=https
+  RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+  # ---- clean URLs: /conditions/gout -> conditions/condition.html?id=gout (site/config.js prettyUrls: true)
+  # Only for paths that are not real files or directories, and only for slug-shaped segments (no dots), so
+  # index.html, the section scripts and every asset are served directly.
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule ^physiology/([A-Za-z0-9-]+)/?$ physiology/topic.html?id=$1 [L,QSA]
+  RewriteRule ^symptoms/([A-Za-z0-9-]+)/?$ symptoms/symptom.html?id=$1 [L,QSA]
+  RewriteRule ^conditions/([A-Za-z0-9-]+)/?$ conditions/condition.html?id=$1 [L,QSA]
+  RewriteRule ^tests/([A-Za-z0-9-]+)/?$ tests/test.html?id=$1 [L,QSA]
+  RewriteRule ^imaging/([A-Za-z0-9-]+)/?$ imaging/study.html?id=$1 [L,QSA]
+  RewriteRule ^procedures/([A-Za-z0-9-]+)/?$ procedures/procedure.html?id=$1 [L,QSA]
+  RewriteRule ^medications/([A-Za-z0-9-]+)/?$ medications/medication.html?id=$1 [L,QSA]
+  RewriteRule ^first-aid/([A-Za-z0-9-]+)/?$ first-aid/topic.html?id=$1 [L,QSA]
+  RewriteRule ^health/([A-Za-z0-9-]+)/?$ health/topic.html?id=$1 [L,QSA]
+  RewriteRule ^organs/([A-Za-z0-9-]+)/?$ organs/organ.html?id=$1 [L,QSA]
+  RewriteRule ^systems/([A-Za-z0-9-]+)/?$ systems/system.html?id=$1 [L,QSA]
+</IfModule>
+
+# ---- custom error page
+ErrorDocument 404 /404.html
+
+# ---- correct media types (the explorer checks the glTF magic bytes but browsers still prefer the right type)
+<IfModule mod_mime.c>
+  AddType model/gltf-binary .glb
+  AddType application/json .json
+  AddType application/javascript .js .mjs
+  AddType image/svg+xml .svg
+  AddType application/manifest+json .webmanifest
+  AddType application/wasm .wasm
+  AddCharset utf-8 .html .css .js .mjs .json .svg .md .txt .webmanifest
+</IfModule>
+
+# ---- compression (JSON and JS shrink 4-6x; GLB is already meshopt-compressed but still gains ~10%)
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/plain text/css text/markdown application/javascript application/json application/manifest+json image/svg+xml model/gltf-binary application/xml
+</IfModule>
+<IfModule mod_brotli.c>
+  AddOutputFilterByType BROTLI_COMPRESS text/html text/plain text/css text/markdown application/javascript application/json application/manifest+json image/svg+xml model/gltf-binary application/xml
+</IfModule>
+
+# ---- caching: fingerprint-free but versioned by deploy; geometry and vendor code change rarely
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType text/html "access plus 10 minutes"
+  ExpiresByType application/json "access plus 1 day"
+  ExpiresByType application/javascript "access plus 1 day"
+  ExpiresByType text/css "access plus 1 day"
+  ExpiresByType model/gltf-binary "access plus 30 days"
+  ExpiresByType image/jpeg "access plus 30 days"
+  ExpiresByType image/png "access plus 30 days"
+  ExpiresByType image/svg+xml "access plus 30 days"
+</IfModule>
+<IfModule mod_headers.c>
+  <FilesMatch "\.(glb|jpg|png)$">
+    Header set Cache-Control "public, max-age=2592000, immutable"
+  </FilesMatch>
+  <FilesMatch "\.(js|mjs|css|json)$">
+    Header set Cache-Control "public, max-age=86400"
+  </FilesMatch>
+  <FilesMatch "\.html?$">
+    Header set Cache-Control "public, max-age=600, must-revalidate"
+  </FilesMatch>
+
+  # ---- security headers (the pages also carry a meta CSP; frame-ancestors can only be set here)
+  Header always set Content-Security-Policy "default-src 'self'; script-src 'self' 'wasm-unsafe-eval' 'sha256-0ZYYoMVH8skVI3zJ7AfEL0FDpRE4dS3zbGhdQKihick='; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self'; connect-src 'self'; frame-src 'self'; frame-ancestors 'self'; worker-src 'self' blob:; object-src 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests"
+  Header always set X-Content-Type-Options "nosniff"
+  Header always set Referrer-Policy "strict-origin-when-cross-origin"
+  Header always set Permissions-Policy "camera=(), microphone=(), geolocation=(), payment=()"
+  Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains"
+  Header always set Cross-Origin-Opener-Policy "same-origin-allow-popups"
+  Header unset X-Powered-By
+</IfModule>
+
+# ---- never serve repository housekeeping
+<FilesMatch "^(\.git.*|\.env.*|\.htpasswd|package(-lock)?\.json|.*\.py|.*\.yml|.*\.yaml)$">
+  Require all denied
+</FilesMatch>
+RedirectMatch 404 /\.git

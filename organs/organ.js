@@ -1,20 +1,21 @@
 // organs/organ.js — page script for organs/organ.html (kept external so the site runs under a strict CSP).
-import { renderHeader, renderFooter, loadData, loadClinical, link, termLink, esc, param } from '../site/site.js';
+import { renderHeader, renderFooter, loadData, loadClinical, link, termLink, esc, param, pageId, setCanonical, CONFIG } from '../site/site.js';
 import { relatedForAnatomy, relatedCountForAnatomy } from '../site/entity.js';
 renderHeader('organs'); renderFooter();
 const [data, clinical] = await Promise.all([loadData(), loadClinical()]); const { atlas, content, terms } = data;
-const id = param('id'); const o = content.organs.find(x => x.id === id);
+const id = pageId(); const o = content.organs.find(x => x.id === id);
 const main = document.getElementById('main');
 if (!o) { main.innerHTML = '<h1>Organ not found</h1><p><a href="index.html">All organs</a></p>'; throw new Error('no organ'); }
 const sys = atlas.systems.find(s => s.id === o.system); const region = content.regions.find(r => r.id === o.region);
 document.title = `${o.name} · Organs · Human Body`;
+setCanonical(CONFIG.prettyUrls ? `organs/${o.id}` : `organs/organ.html?id=${o.id}`);
 const structs = o.structures.map(i => atlas.structures[i]);
 const others = content.organs.filter(x => x.system === o.system && x.id !== o.id);
 const relTerms = terms.terms.filter(t => t.atlas && (t.atlas.organ === o.id || (t.atlas.structure && structs.some(s => s.name === t.atlas.structure))));
 const systemText = content.systems[o.system] || {};
 main.innerHTML = `
   <div class="breadcrumb"><a href="../index.html">Home</a> › <a href="index.html">Organs</a> › ${esc(o.name)}</div>
-  <div class="eyebrow">Organ · <a href="../systems/system.html?id=${encodeURIComponent(o.system)}" style="text-decoration:none">${esc(sys ? sys.name : o.system)}</a>${region ? ` · <a href="${link.region(region.id)}" style="text-decoration:none">${esc(region.name)}</a>` : ''}</div>
+  <div class="eyebrow">Organ · <a href="${link.systemPage(o.system)}" style="text-decoration:none">${esc(sys ? sys.name : o.system)}</a>${region ? ` · <a href="${link.region(region.id)}" style="text-decoration:none">${esc(region.name)}</a>` : ''}</div>
   <h1>${esc(o.name)}</h1>
   <p class="lead">${esc(o.summary)}</p>
   <div class="actions">
@@ -33,7 +34,7 @@ main.innerHTML = `
     </div>
     <aside class="aside">
       ${relTerms.length ? `<h3>Related terms</h3><div class="chips">${relTerms.map(t => `<a class="chip" href="../learn/terminology.html#${t.id}">${esc(t.term)}</a>`).join('')}</div>` : ''}
-      ${others.length ? `<h3>Also in this system</h3><div class="chips">${others.map(x => `<a class="chip" href="organ.html?id=${encodeURIComponent(x.id)}">${esc(x.name)}</a>`).join('')}</div>` : ''}
+      ${others.length ? `<h3>Also in this system</h3><div class="chips">${others.map(x => `<a class="chip" href="${link.organPage(x.id)}">${esc(x.name)}</a>`).join('')}</div>` : ''}
       ${relatedForAnatomy('organs', o.id, clinical, `Clinical topics · ${relatedCountForAnatomy('organs', o.id, clinical)}`) || `<h3>Clinical topics</h3><p class="muted small">No physiology, condition, test or procedure pages mention the ${esc(o.name.toLowerCase())} yet. <a href="../search/index.html?q=${encodeURIComponent(o.name)}">Search the platform.</a></p>`}
     </aside>
   </div>`;

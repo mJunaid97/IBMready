@@ -4,6 +4,8 @@
  * small helpers for page scripts: deep links into the explorer and links between entities.
  */
 import { normalize, search as rankSearch } from '../explorer/search.js';
+import { CONFIG } from './config.js';
+export { CONFIG };
 
 export const ROOT = new URL('../', import.meta.url).href;   // absolute site root, works from any depth
 
@@ -121,12 +123,29 @@ export const link = {
   locate: (sys) => `${ROOT}explorer/index.html?study=locate${sys ? '&sys=' + encodeURIComponent(sys) : ''}`,
   cards: (sys) => `${ROOT}explorer/index.html?study=cards${sys ? '&sys=' + encodeURIComponent(sys) : ''}`,
   embed: (hash) => `${ROOT}explorer/index.html?embed=1${hash ? '#' + hash : ''}`,
-  organPage: (id) => `${ROOT}organs/organ.html?id=${encodeURIComponent(id)}`,
-  systemPage: (id) => `${ROOT}systems/system.html?id=${encodeURIComponent(id)}`,
+  organPage: (id) => CONFIG.prettyUrls ? `${ROOT}organs/${encodeURIComponent(id)}` : `${ROOT}organs/organ.html?id=${encodeURIComponent(id)}`,
+  systemPage: (id) => CONFIG.prettyUrls ? `${ROOT}systems/${encodeURIComponent(id)}` : `${ROOT}systems/system.html?id=${encodeURIComponent(id)}`,
   term: (id) => `${ROOT}learn/terminology.html#${encodeURIComponent(id)}`,
 };
-export function entityLink(type, id) { const t = TYPES[type]; return t ? `${ROOT}${t.dir}/${t.page}?id=${encodeURIComponent(id)}` : '#'; }
-export function typeLink(type) { const t = TYPES[type]; return t ? `${ROOT}${t.dir}/index.html` : '#'; }
+export function entityLink(type, id) { const t = TYPES[type]; if (!t) return '#'; return CONFIG.prettyUrls ? `${ROOT}${t.dir}/${encodeURIComponent(id)}` : `${ROOT}${t.dir}/${t.page}?id=${encodeURIComponent(id)}`; }
+export function typeLink(type) { const t = TYPES[type]; if (!t) return '#'; return CONFIG.prettyUrls ? `${ROOT}${t.dir}/` : `${ROOT}${t.dir}/index.html`; }
+/** The entity id for a detail page: `?id=` on plain hosts, the last path segment under pretty URLs (/conditions/gout). */
+export function pageId() {
+  const q = param('id'); if (q) return q;
+  const seg = decodeURIComponent(location.pathname.replace(/\/+$/, '').split('/').pop() || '');
+  return /\.html?$/i.test(seg) || !seg ? null : seg;
+}
+/** Absolute canonical URL for the current page, written into <link rel="canonical"> and used by the sitemap. */
+export function canonical(path) {
+  const base = CONFIG.siteUrl ? CONFIG.siteUrl.replace(/\/$/, '') + '/' : ROOT;
+  return base + path.replace(/^\//, '');
+}
+export function setCanonical(path) {
+  let el = document.querySelector('link[rel="canonical"]');
+  if (!el) { el = document.createElement('link'); el.rel = 'canonical'; document.head.appendChild(el); }
+  el.href = canonical(path);
+}
+export function entityPath(type, id) { const t = TYPES[type]; return CONFIG.prettyUrls ? `${t.dir}/${encodeURIComponent(id)}` : `${t.dir}/${t.page}?id=${encodeURIComponent(id)}`; }
 /** Link for any search-index entry type. */
 export function anyLink(type, id) {
   switch (type) {
