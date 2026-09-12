@@ -13,6 +13,10 @@ on:
         description: "Clean URLs enabled on that host (1 or 0)"
         required: false
         default: "1"
+      redirect_from:
+        description: Old host name that must redirect to the site (blank to skip)
+        required: false
+        default: medical.mjunaid.net
 
 permissions:
   contents: read
@@ -37,6 +41,15 @@ jobs:
             echo "== ${B}${p}"; curl -sS -o /dev/null -I -H "Accept-Encoding: gzip, br" -w "status %{http_code}  type %{content_type}\n" "${B}${p}" || true
           done
           echo "== security headers"; curl -sSI "${B}" | grep -iE "^(content-security-policy|strict-transport-security|x-content-type-options|referrer-policy|content-encoding|cache-control)" || true
+      - name: Old host redirects to the canonical site
+        if: ${{ github.event.inputs.redirect_from != '' }}
+        run: |
+          H="${{ github.event.inputs.redirect_from || 'medical.mjunaid.net' }}"
+          for p in "" "conditions/gout" "explorer/"; do
+            echo "== https://${H}/${p}"; curl -sS -o /dev/null -I -w "status %{http_code}  location %{redirect_url}\n" "https://${H}/${p}"
+          done
+          code=$(curl -sS -o /dev/null -I -w "%{http_code}" "https://${H}/conditions/gout"); loc=$(curl -sS -o /dev/null -I -w "%{redirect_url}" "https://${H}/conditions/gout")
+          case "$code $loc" in 301*anatomynexus.com/conditions/gout*|308*anatomynexus.com/conditions/gout*) echo "redirect ok";; *) echo "redirect NOT as expected: $code $loc"; exit 1;; esac
       - name: Full smoke test against the live site
         working-directory: tools/qa
         env:
