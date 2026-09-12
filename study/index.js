@@ -1,6 +1,7 @@
 // study/index.js — page script for study/index.html (kept external so the site runs under a strict CSP).
 import { renderHeader, renderFooter, loadData, loadType, loadClinical, link, entityLink, TYPES, esc } from '../site/site.js';
-renderHeader('study'); renderFooter();
+import { applyStaticMeta } from '../site/seo.js';
+renderHeader('study'); renderFooter(); applyStaticMeta();
 const { atlas, content, terms } = await loadData();
 const bigSystems = atlas.systems.filter(s => s.id !== 'skin' && s.count >= 8);
 document.getElementById('identify').innerHTML = `<a class="card" href="${link.quiz()}"><h3>Whole body</h3><p>Any of the ${atlas.totals.structures.toLocaleString('en-US')} structures: the full challenge.</p></a>` + bigSystems.map(s => `<a class="card" href="${link.quiz(s.id)}"><h3><span class="dot" style="background:${s.color}"></span>${esc(s.name)}</h3><p>${esc(s.summary)}</p><div class="meta">${s.count} pieces</div></a>`).join('');

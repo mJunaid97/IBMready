@@ -1,10 +1,11 @@
 // search/index.js — page script for search/index.html (kept external so the site runs under a strict CSP).
 import { renderHeader, renderFooter, searchEntries, runSearch, anyLink, TYPE_LABEL, TYPES, esc, param } from '../site/site.js';
-renderHeader('search'); renderFooter();
+import { applyStaticMeta } from '../site/seo.js';
+renderHeader('search'); renderFooter(); applyStaticMeta();
 const q = document.getElementById('q'), out = document.getElementById('results'), filters = document.getElementById('filters');
 const entries = await searchEntries();
 document.getElementById('count').textContent = entries.length.toLocaleString('en-US');
-const types = ['all', 'structure', 'organ', 'system', 'term', 'conditions', 'symptoms', 'physiology', 'tests', 'imaging', 'procedures', 'medications', 'first-aid', 'health'];
+const types = ['all', 'structure', 'organ', 'system', 'term', 'conditions', 'symptoms', 'physiology', 'tests', 'imaging', 'procedures', 'medications', 'drug-classes', 'first-aid', 'health'];
 let type = 'all';
 filters.innerHTML = types.map(t => `<button class="chip ${t === 'all' ? 'is-active' : ''}" data-t="${t}">${t === 'all' ? 'All' : esc(TYPE_LABEL[t] || t)}</button>`).join('');
 filters.addEventListener('click', (e) => { const b = e.target.closest('[data-t]'); if (!b) return; type = b.dataset.t; for (const x of filters.children) x.classList.toggle('is-active', x === b); render(); });

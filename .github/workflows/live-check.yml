@@ -1,7 +1,7 @@
 name: Live site check
 
-# Runs the full smoke test against a deployed copy of the site (default: the Hostinger
-# subdomain), from GitHub's runners: HTTPS, clean URLs, headers, every page, the explorer.
+# Runs the full smoke test against the deployed site from GitHub's runners: HTTPS, one canonical host,
+# clean URLs and the 301 rules, headers, sitemaps, every page (prerendered HTML), the explorer.
 on:
   workflow_dispatch:
     inputs:
@@ -9,10 +9,6 @@ on:
         description: Base URL of the deployed site
         required: false
         default: https://anatomynexus.com/
-      pretty_urls:
-        description: "Clean URLs enabled on that host (1 or 0)"
-        required: false
-        default: "1"
       redirect_from:
         description: Old host name that must redirect to the site (blank to skip)
         required: false
@@ -34,27 +30,36 @@ jobs:
         run: |
           npm ci
           npx playwright install --with-deps chromium
-      - name: Headers and status of key URLs
+      - name: Status, type and canonical rules of key URLs
         run: |
           B="${{ github.event.inputs.base_url || 'https://anatomynexus.com/' }}"
-          for p in "" "explorer/" "conditions/gout" "sitemap.xml" "data/hd/glb/heart.glb" "no-such-page"; do
+          H=$(echo "$B" | sed -E 's#https?://([^/]+)/?#\1#')
+          for p in "" "anatomy/heart/" "conditions/gout/" "medications/amlodipine/" "explorer/" "sitemap.xml" "sitemaps/conditions.xml" "data/hd/glb/heart.glb" "site/previews/o-heart.jpg" "no-such-page"; do
             echo "== ${B}${p}"; curl -sS -o /dev/null -I -H "Accept-Encoding: gzip, br" -w "status %{http_code}  type %{content_type}\n" "${B}${p}" || true
           done
+          echo "== redirects (expect 301 to the canonical URL, one hop)"
+          for p in "conditions/gout" "tests/cbc/" "medications/norvasc/" "organs/heart/" "learn/terminology.html" "conditions/condition.html?id=gout" "index.html"; do
+            printf "%-40s " "$p"; curl -sS -o /dev/null -I -w "%{http_code} -> %{redirect_url}\n" "${B}${p}" || true
+          done
+          printf "%-40s " "http://www.$H/"; curl -sS -o /dev/null -I -w "%{http_code} -> %{redirect_url}\n" "http://www.$H/" || true
+          printf "%-40s " "https://www.$H/"; curl -sS -o /dev/null -I -w "%{http_code} -> %{redirect_url}\n" "https://www.$H/" || true
           echo "== security headers"; curl -sSI "${B}" | grep -iE "^(content-security-policy|strict-transport-security|x-content-type-options|referrer-policy|content-encoding|cache-control)" || true
+          echo "== initial HTML of an entity page"; curl -sS "${B}conditions/gout/" | grep -oE "<title>[^<]+</title>|<link rel=\"canonical\"[^>]+>|<meta name=\"robots\"[^>]+>|<h1[^>]*>[^<]+</h1>|data-prerendered" | head -6
       - name: Old host redirects to the canonical site
         if: ${{ github.event.inputs.redirect_from != '' }}
         run: |
           H="${{ github.event.inputs.redirect_from }}"
-          for p in "" "conditions/gout" "explorer/"; do
+          for p in "" "conditions/gout/" "explorer/"; do
             echo "== https://${H}/${p}"; curl -sS -o /dev/null -I -w "status %{http_code}  location %{redirect_url}\n" "https://${H}/${p}"
           done
-          code=$(curl -sS -o /dev/null -I -w "%{http_code}" "https://${H}/conditions/gout"); loc=$(curl -sS -o /dev/null -I -w "%{redirect_url}" "https://${H}/conditions/gout")
+          code=$(curl -sS -o /dev/null -I -w "%{http_code}" "https://${H}/conditions/gout/"); loc=$(curl -sS -o /dev/null -I -w "%{redirect_url}" "https://${H}/conditions/gout/")
           case "$code $loc" in 301*anatomynexus.com/conditions/gout*|308*anatomynexus.com/conditions/gout*) echo "redirect ok";; *) echo "redirect NOT as expected: $code $loc"; exit 1;; esac
       - name: Full smoke test against the live site
         working-directory: tools/qa
         env:
           BASE_URL: ${{ github.event.inputs.base_url || 'https://anatomynexus.com/' }}
-          PRETTY_URLS: ${{ github.event.inputs.pretty_urls || '1' }}
+          PRETTY_URLS: "1"
+          PRERENDERED: "1"
         run: node smoke.mjs
       - name: Upload screenshots
         if: always()

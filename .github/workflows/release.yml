@@ -1,7 +1,7 @@
 name: Release
 
 # A pushed tag vX.Y.Z (created by tools/release.py) is a release:
-#   1. validate the content graph and build the production package
+#   1. validate the content graph and build the production package (clean URLs, prerendered pages, sitemaps)
 #   2. publish a GitHub Release with the zip attached (the backup of that version)
 #   3. update the `deploy` branch, which the server pulls, and tag it deploy-vX.Y.Z
 # Roll back with the "Rollback" workflow, which points `deploy` at any earlier deploy-vX.Y.Z tag.
@@ -34,8 +34,11 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
       - name: Validate the content graph
-        run: python3 tools/build-content.py && git diff --exit-code --stat -- data/content
+        run: python3 tools/build-content.py && git diff --exit-code --stat -- data/content site/site-meta.js
       - name: Cut the release on the branch (manual runs)
         if: github.event_name == 'workflow_dispatch'
         run: |
@@ -52,23 +55,28 @@ jobs:
         run: |
           V=$(cat VERSION); T="${{ steps.tag.outputs.tag }}"; T="${T#v}"
           [ "$V" = "$T" ] || { echo "VERSION file ($V) does not match tag ($T)"; exit 1; }
+      - name: Install Playwright (prerendering)
+        working-directory: tools/qa
+        run: |
+          npm ci
+          npx playwright install --with-deps chromium
       - name: Build the production package
-        run: python3 tools/package-site.py --site-url "${{ vars.SITE_URL || 'https://anatomynexus.com' }}" --pretty --zip --out dist
+        run: python3 tools/package-site.py --site-url "${{ vars.SITE_URL || 'https://anatomynexus.com' }}" --pretty --prerender --zip --out dist
       - name: Release notes from the changelog
         run: |
           T="${{ steps.tag.outputs.tag }}"
           awk -v v="$T" 'BEGIN{p=0} /^## /{ if (p) exit; if (index($0, v " ") > 0 || $0 == "## " v) p=1; next } p' CHANGELOG.md > notes.md
           [ -s notes.md ] || echo "Release $T" > notes.md
-          cp dist/human-body-site.zip "human-body-site-$T.zip"
+          cp dist/anatomy-nexus-site.zip "anatomy-nexus-site-$T.zip"
       - name: Publish the GitHub Release (backup of this version)
         uses: softprops/action-gh-release@v2
         with:
           tag_name: ${{ steps.tag.outputs.tag }}
           name: ${{ steps.tag.outputs.tag }}
           body_path: notes.md
-          files: human-body-site-${{ steps.tag.outputs.tag }}.zip
+          files: anatomy-nexus-site-${{ steps.tag.outputs.tag }}.zip
       - name: Remove the zip from the deploy tree
-        run: rm -f dist/human-body-site.zip
+        run: rm -f dist/anatomy-nexus-site.zip
       - name: Publish dist/ to the deploy branch
         uses: peaceiris/actions-gh-pages@v4
         with:

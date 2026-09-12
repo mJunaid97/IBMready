@@ -1,0 +1,24 @@
+name: Reference links
+
+# Every reference URL in content/*.json must resolve. Runs weekly, on demand, and whenever content changes;
+# a dead link (404/410) fails the run so it is fixed before the next release.
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "17 6 * * 1"
+  push:
+    paths: ["content/**", "tools/check-references.py"]
+
+permissions:
+  contents: read
+
+jobs:
+  links:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Check every reference URL
+        run: python3 tools/check-references.py --strict

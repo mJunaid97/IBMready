@@ -104,17 +104,57 @@ each clinical page opens with live 3D of the anatomy it discusses.
 ## Site shell
 
 `site/site.js` renders the shared header (primary sections, a "More" menu and the header search
-box with typeahead over `data/content/search-index.json`), holds the entity type registry
-(`TYPES`), the deep-link helpers (`link`, `entityLink`, `anyLink`) and the cached data loaders
-(`loadData`, `loadClinical`, `loadType`, `loadSearchIndex`). `site/entity.js` is the generic
-renderer for every knowledge section: `renderIndex(type)` (filterable, categorised card grid) and
-`renderDetail(type)` (type-specific template in the main column; anatomy, related topics, terms
-and sources in the aside; a 3D embed of the first organ or the listed structures). Section
-directories contain only two one-line shells that call those functions. `systems/`, `organs/`,
-`learn/`, `study/`, `search/` and `roadmap/` are client-rendered templates over the compiled
-JSON as well, so the whole site works from any static host and can move to a framework (Astro,
-Next) later without changing the data.
+box with typeahead over `data/content/search-index.json`) and footer (policy links, attribution,
+version), holds the entity type registry (`TYPES`, with the SEO descriptor of each type), the URL
+helpers (`paths`, `link`, `entityLink`, `anyLink`, `canonical`; clean trailing-slash URLs when
+`site/config.js` says `prettyUrls`, query URLs otherwise), the click-to-load 3D facade, and the
+cached data loaders (`loadData`, `loadClinical`, `loadType`, `loadSearchIndex`). `site/seo.js`
+writes the page metadata: title pattern, description, canonical, robots, Open Graph and Twitter
+tags, and the JSON-LD graph (Organization, WebSite with SearchAction, BreadcrumbList, MedicalWebPage
+with citations, and the entity node). `site/entity.js` is the generic renderer for every knowledge
+section: `renderIndex(type)` (hub: intro, start-here pages, category filters, A–Z card groups,
+body systems, other sections; `CollectionPage` + `ItemList` schema) and `renderDetail(type)`
+(breadcrumbs, type-specific template, facade, anatomy, related topics, terms, structured sources,
+editorial block; per-type schema). Section directories contain only two shells that call those
+functions through `site/section.js`. `anatomy/`, `systems/`, `organs/`, `medical-terms/`,
+`study/`, `search/` and `roadmap/` have their own page scripts over the same data; the policy
+pages are hand-written HTML with `site/page.js`.
+
+**Two rendering modes.** In development every page renders in the browser from the compiled
+JSON. In production `tools/package-site.py --pretty --prerender` runs `tools/prerender.mjs`,
+which opens each page in headless Chromium and writes the finished document to
+`dist/<path>/index.html` with `data-prerendered` on `<body>`. The same scripts then run in
+hydration mode (`PRERENDERED` in `site/site.js`): they bind interactivity (menu, search, theme,
+hub filters, facade) and never redraw content, so crawlers and users get the same HTML, and the
+model, JSON and rendering work stay off the critical path.
 
 The explorer receives `data/content/clinical.json` and uses it for the "Clinical topics" block on
 the structure card, for topic results in its search box (which navigate to the page, in the
-parent window when embedded) and nothing else, so it stays a fast, self-contained viewer.
+parent window when embedded) and nothing else, so it stays a fast, self-contained viewer. In
+embed mode it declares itself noindex; its canonical is always `/explorer/`.
+
+## SEO and credibility layer
+
+Summarised here; `SEO.md` has the full map against the specification.
+
+- **Identity**: `content/site.json` → `site/site-meta.js` (brand, URL, editorial fields,
+  verification codes, counts).
+- **URLs**: one canonical trailing-slash URL per entity; `urlAliases` on every entity are
+  validated for uniqueness and compiled into `data/content/aliases.json`, which becomes the
+  one-hop 301 table in `.htaccess` (with query-URL, `index.html`, trailing-slash and retired-path
+  rules). `tools/qa/serve.py` emulates the rules for local testing.
+- **Anatomy articles**: `content/anatomy.json` enriches an organ with title, descriptor, intro, key
+  facts, sections, structures and references; only organs with an article are indexable.
+- **Drug classes**: a tenth entity type; `drugClass` on a medication is a typed link that yields
+  breadcrumbs (Medications › Class › Medicine), backlinks and `Drug.drugClass` schema.
+- **References**: title, URL, publisher, evidence tier (host table in the compiler) and date
+  checked; rendered as structured sources and as `citation` in the page schema;
+  `tools/check-references.py` verifies availability in CI.
+- **Dates**: `_updated` per content file (and optional `updated` per entity) feeds the visible
+  "Last updated", `dateModified` and the sitemap `lastmod`.
+- **Quality gate**: `seo.index` per entity (lead, body length, references, relationships);
+  failing pages ship `noindex,follow` and stay out of the sitemaps.
+- **Sitemaps**: `sitemap.xml` index → `sitemaps/<section>.xml`, canonical indexable URLs only.
+- **Previews**: `site/previews/<view>.jpg` rendered by `tools/render-previews.mjs` from the
+  explorer for every organ, system and structure view (`site/preview-name.js` names them); used
+  by the facade and as `og:image`.

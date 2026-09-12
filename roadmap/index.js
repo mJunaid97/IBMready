@@ -1,6 +1,7 @@
 // roadmap/index.js — page script for roadmap/index.html (kept external so the site runs under a strict CSP).
 import { renderHeader, renderFooter, ROOT, esc } from '../site/site.js';
-renderHeader('roadmap'); renderFooter();
+import { applyStaticMeta } from '../site/seo.js';
+renderHeader('roadmap'); renderFooter(); applyStaticMeta();
 const rm = await fetch(ROOT + 'content/roadmap.json').then(r => r.json());
 document.getElementById('vision').textContent = rm.vision;
 const badge = (s) => { const k = ['live', 'started', 'planned'].includes(s) ? s : 'planned'; return `<span class="badge ${k === 'live' ? 'live' : k === 'started' ? '' : 'planned'}">${esc(k)}</span>`; };

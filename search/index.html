@@ -4,17 +4,19 @@
   <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self'; connect-src 'self'; frame-src 'self'; worker-src 'self' blob:; object-src 'none'; base-uri 'self'; form-action 'self'">
   <meta name="referrer" content="strict-origin-when-cross-origin">
-  <title>Search · Human Body</title>
-  <meta name="description" content="Search every structure, organ, system, term, condition, symptom, test, imaging study, procedure, medication, first-aid and health topic on the Human Body platform.">
+  <title>Search | Anatomy Nexus</title>
+  <meta name="description" content="Search every structure, organ, system, term, condition, symptom, test, imaging study, procedure, medication, first-aid and health topic on Anatomy Nexus.">
   <link rel="icon" href="../favicon.svg" type="image/svg+xml">
   <meta name="theme-color" content="#d9731a">
   <link rel="manifest" href="../manifest.webmanifest">
   <link rel="apple-touch-icon" href="../site/apple-touch-icon.png"><link rel="stylesheet" href="../site/site.css">
+  <link rel="canonical" href="./">
+  <meta name="robots" content="noindex,follow">
 </head>
-<body>
+<body data-nav="search" data-canonical="search/" data-robots="noindex,follow" data-schema="SearchResultsPage">
 <main class="wrap" id="main">
-  <div class="breadcrumb"><a href="../index.html">Home</a> › Search</div>
-  <h1>Search everything</h1>
+  <nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="../">Home</a></li><li aria-current="page">Search</li></ol></nav>
+  <h1>Search Anatomy Nexus</h1>
   <p class="lead">One index over the whole platform: <span id="count">…</span> structures, organs, systems, regions, terms and clinical topics.</p>
   <div class="search-row"><input id="q" type="search" placeholder="Try: femur, chest pain, ECG, statin, knee…" aria-label="Search" autofocus></div>
   <div class="filters" id="filters"></div>

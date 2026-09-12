@@ -1,5 +1,5 @@
 /**
- * viewer.js — AtlasViewer: the 3D engine behind the Human Atlas explorer.
+ * viewer.js — AtlasViewer: the 3D engine behind the Anatomy Nexus 3D explorer.
  *
  * Design
  *  - One three.js BatchedMesh per anatomical system: 2,234 pieces render in

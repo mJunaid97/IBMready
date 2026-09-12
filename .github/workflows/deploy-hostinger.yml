@@ -25,10 +25,18 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
       - name: Validate the content graph
-        run: python3 tools/build-content.py && git diff --exit-code --stat -- data/content
+        run: python3 tools/build-content.py && git diff --exit-code --stat -- data/content site/site-meta.js
+      - name: Install Playwright (prerendering)
+        working-directory: tools/qa
+        run: |
+          npm ci
+          npx playwright install --with-deps chromium
       - name: Build the production package
-        run: python3 tools/package-site.py --site-url "${{ github.event.inputs.site_url || vars.SITE_URL || 'https://anatomynexus.com' }}" --pretty --out dist
+        run: python3 tools/package-site.py --site-url "${{ github.event.inputs.site_url || vars.SITE_URL || 'https://anatomynexus.com' }}" --pretty --prerender --out dist
       - name: Publish dist/ to the deploy branch
         uses: peaceiris/actions-gh-pages@v4
         with:

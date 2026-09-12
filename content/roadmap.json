@@ -1,5 +1,5 @@
 {
- "vision": "A comprehensive, visual, interconnected Human Body Knowledge Platform. Anatomy is the foundation; every other section connects back to it so a reader can move from body part → structure → function → symptoms → conditions → tests → procedures → treatment → learning.",
+ "vision": "Anatomy Nexus: a comprehensive, visual, interconnected human-body knowledge platform. Anatomy is the foundation; every other section connects back to it so a reader can move from body part → structure → function → symptoms → conditions → tests → procedures → treatment → learning.",
  "entities": [
   {
    "name": "AnatomicalStructure",
@@ -102,7 +102,7 @@
     {
      "name": "3D anatomy explorer (2,234 pieces, 16 systems)",
      "status": "live",
-     "href": "explorer/index.html"
+     "href": "explorer/"
     },
     {
      "name": "Entity data model: structures, systems, organs, regions, terms",
@@ -112,17 +112,17 @@
     {
      "name": "Body system pages",
      "status": "live",
-     "href": "systems/index.html"
+     "href": "systems/"
     },
     {
      "name": "Organ pages with live 3D",
      "status": "live",
-     "href": "organs/index.html"
+     "href": "organs/"
     },
     {
      "name": "Deep links and embeds for every structure, organ, region and system",
      "status": "live",
-     "href": "explorer/index.html#o=heart"
+     "href": "explorer/#o=heart"
     }
    ]
   },
@@ -135,22 +135,22 @@
     {
      "name": "Medical terminology dictionary",
      "status": "live",
-     "href": "learn/terminology.html"
+     "href": "medical-terms/"
     },
     {
      "name": "Student quizzes (identify the structure, terminology)",
      "status": "live",
-     "href": "study/index.html"
+     "href": "study/"
     },
     {
      "name": "Flashcards",
      "status": "live",
-     "href": "explorer/index.html?study=cards"
+     "href": "explorer/?study=cards"
     },
     {
      "name": "Physiology topics per system",
      "status": "live",
-     "href": "physiology/index.html"
+     "href": "physiology/"
     },
     {
      "name": "Histology, pathology and embryology primers",
@@ -168,22 +168,22 @@
     {
      "name": "Diseases & conditions database",
      "status": "live",
-     "href": "conditions/index.html"
+     "href": "conditions/"
     },
     {
      "name": "Symptoms explorer (educational, not diagnostic)",
      "status": "live",
-     "href": "symptoms/index.html"
+     "href": "symptoms/"
     },
     {
      "name": "Medical tests library",
      "status": "live",
-     "href": "tests/index.html"
+     "href": "tests/"
     },
     {
      "name": "Medical imaging library",
      "status": "live",
-     "href": "imaging/index.html"
+     "href": "imaging/"
     }
    ]
   },
@@ -196,17 +196,17 @@
     {
      "name": "Medical procedures",
      "status": "live",
-     "href": "procedures/index.html"
+     "href": "procedures/"
     },
     {
      "name": "Medication information (educational)",
      "status": "live",
-     "href": "medications/index.html"
+     "href": "medications/"
     },
     {
      "name": "Clinical terminology",
      "status": "live",
-     "href": "learn/terminology.html#acute"
+     "href": "medical-terms/#acute"
     }
    ]
   },
@@ -219,12 +219,12 @@
     {
      "name": "First aid & emergency education",
      "status": "live",
-     "href": "first-aid/index.html"
+     "href": "first-aid/"
     },
     {
      "name": "Health & prevention: exercise, sleep, nutrition, smoking, alcohol, hydration",
      "status": "live",
-     "href": "health/index.html"
+     "href": "health/"
     }
    ]
   },
@@ -237,12 +237,12 @@
     {
      "name": "Knowledge graph across all entities",
      "status": "live",
-     "href": "search/index.html"
+     "href": "search/"
     },
     {
      "name": "Locate-the-structure exercises and viva practice",
      "status": "live",
-     "href": "study/index.html#viva"
+     "href": "study/#viva"
     },
     {
      "name": "Progress tracking and personalised learning",
@@ -263,7 +263,7 @@
    "name": "Physiology",
    "summary": "Anatomy explains what is there; physiology explains what it does. Cardiovascular, respiratory, nervous, digestive, renal and endocrine physiology topics will attach to the system and organ pages.",
    "status": "live",
-   "href": "physiology/index.html"
+   "href": "physiology/"
   },
   {
    "id": "learn",
@@ -276,70 +276,70 @@
    "name": "Symptoms explorer",
    "summary": "Start from what a person experiences (headache, chest pain, knee pain…). Each page: what it is, relevant anatomy, common and less common causes, associated symptoms, when to seek urgent care, related conditions, tests and anatomy. The site educates; it does not diagnose.",
    "status": "live",
-   "href": "symptoms/index.html"
+   "href": "symptoms/"
   },
   {
    "id": "conditions",
    "name": "Diseases & conditions",
    "summary": "Structured condition pages: definition, affected body part and system, causes, risk factors, symptoms, complications, diagnosis, imaging, treatment, procedures, prevention and references, all linked to anatomy.",
    "status": "live",
-   "href": "conditions/index.html"
+   "href": "conditions/"
   },
   {
    "id": "tests",
    "name": "Medical tests",
    "summary": "Blood, urine, heart, lung and other tests: what they measure, how they are done, what results generally indicate, and which anatomy they relate to.",
    "status": "live",
-   "href": "tests/index.html"
+   "href": "tests/"
   },
   {
    "id": "imaging",
    "name": "Medical imaging",
    "summary": "X-ray, CT, MRI, ultrasound, PET, mammography and fluoroscopy: how each works, what it shows, how normal anatomy appears and common abnormalities.",
    "status": "live",
-   "href": "imaging/index.html"
+   "href": "imaging/"
   },
   {
    "id": "procedures",
    "name": "Medical procedures",
    "summary": "Appendectomy, knee replacement, angioplasty, endoscopy and more, explained step by step with the anatomy involved.",
    "status": "live",
-   "href": "procedures/index.html"
+   "href": "procedures/"
   },
   {
    "id": "medications",
    "name": "Medications",
    "summary": "Educational medication pages: class, mechanism, target organ or system, side effects, warnings and related conditions.",
    "status": "live",
-   "href": "medications/index.html"
+   "href": "medications/"
   },
   {
    "id": "first-aid",
    "name": "First aid & emergency knowledge",
    "summary": "CPR, choking, bleeding, burns, fractures, fainting, seizures and more, aligned with authoritative guidance.",
    "status": "live",
-   "href": "first-aid/index.html"
+   "href": "first-aid/"
   },
   {
    "id": "health",
    "name": "Health & prevention",
    "summary": "How exercise, sleep, nutrition, smoking, alcohol and hydration act on the organs and systems described in the atlas.",
    "status": "live",
-   "href": "health/index.html"
+   "href": "health/"
   },
   {
    "id": "study",
    "name": "Student learning platform",
    "summary": "Flashcards, quizzes, anatomy identification, labeling exercises, viva practice and exam modes for medicine, nursing, physiotherapy, dentistry and allied health.",
    "status": "live",
-   "href": "study/index.html"
+   "href": "study/"
   },
   {
    "id": "graph",
    "name": "Knowledge graph",
    "summary": "Every entity carries typed links so a reader can keep exploring: Heart → cardiovascular system → cardiac physiology → coronary arteries → ECG → heart failure → angioplasty → medications → symptoms → tests.",
    "status": "live",
-   "href": "search/index.html"
+   "href": "search/"
   },
   {
    "id": "next",

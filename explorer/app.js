@@ -1,5 +1,5 @@
 /**
- * app.js — bootstrap for the Human Atlas explorer.
+ * app.js — bootstrap for the Anatomy Nexus 3D explorer.
  */
 import { AtlasViewer } from './viewer.js';
 import { AtlasUI } from './ui.js';
@@ -33,9 +33,9 @@ async function main() {
     fetch('../data/content/atlas-content.json').then(r => r.ok ? r.json() : null).catch(() => null),
     fetch('../data/content/clinical.json').then(r => r.ok ? r.json() : null).catch(() => null),
   ]);
-  document.title = `Human Atlas · ${atlas.totals.pieces.toLocaleString('en-US')} anatomical pieces in 3D`;
+  document.title = `3D Anatomy Explorer: ${atlas.totals.pieces.toLocaleString('en-US')} Structures in ${atlas.systems.length} Systems | Anatomy Nexus`;
 
-  if (params.get('embed') === '1') { $('app').classList.add('is-embed'); const a = document.createElement('a'); a.className = 'embed-open'; a.target = '_top'; a.textContent = 'Open full atlas ↗'; a.href = location.href.replace(/([?&])embed=1&?/, '$1').replace(/\?$/, ''); $('app').appendChild(a); }
+  if (params.get('embed') === '1') { const nr = document.querySelector('meta[name="robots"]'); if (nr) nr.content = 'noindex,follow'; $('app').classList.add('is-embed'); const a = document.createElement('a'); a.className = 'embed-open'; a.target = '_top'; a.textContent = 'Open full atlas ↗'; a.href = location.href.replace(/([?&])embed=1&?/, '$1').replace(/\?$/, ''); $('app').appendChild(a); }
   const viewer = new AtlasViewer($('view'), atlas, { dataBase, theme });
   const ui = new AtlasUI(viewer, atlas, content, clinical);
   window.atlas = { viewer, ui, data: atlas };

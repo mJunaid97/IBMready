@@ -5,55 +5,43 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self'; connect-src 'self'; frame-src 'self'; worker-src 'self' blob:; object-src 'none'; base-uri 'self'; form-action 'self'">
   <meta name="referrer" content="strict-origin-when-cross-origin">
-  <title>Human Body · interactive anatomy and medical knowledge platform</title>
-  <meta name="description" content="An open, interconnected human body knowledge platform: 2,234 anatomical structures in 3D, body systems and organs, physiology, symptoms, conditions, tests, imaging, procedures, medications, first aid, health and study tools, all linked together.">
+  <title>Anatomy Nexus | Interactive Human Anatomy &amp; Medical Knowledge</title>
+  <meta name="description" content="Explore interactive human anatomy and learn how body structures connect with physiology, symptoms, conditions, medical tests, imaging, procedures and medications.">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <meta name="theme-color" content="#d9731a">
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="apple-touch-icon" href="site/apple-touch-icon.png">
-  <link rel="canonical" href="index.html">
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="Human Body · interactive anatomy and medical knowledge platform">
-  <meta property="og:description" content="Explore 2,234 anatomical structures in 3D, then follow the links into physiology, symptoms, conditions, tests, imaging, procedures, medications, first aid and health.">
-  <meta property="og:image" content="site/og-cover.png">
-  <meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Human Body · interactive anatomy platform">
-  <meta name="twitter:description" content="2,234 anatomical structures in 3D, cross-linked with physiology, conditions, tests, procedures, medications and first aid.">
-  <meta name="twitter:image" content="site/og-cover.png">
+  <link rel="canonical" href="./">
   <link rel="stylesheet" href="site/site.css">
 </head>
-<body>
-<main class="wrap">
+<body data-nav="home" data-canonical="" data-schema="WebPage">
+<main class="wrap" id="main">
   <section class="hero">
     <div>
-      <div class="eyebrow">Human Body Platform</div>
-      <h1>The human body, piece by piece.</h1>
-      <p class="lead">An interactive atlas of <b id="n-pieces">2,234</b> selectable anatomical structures in 16 systems, and a connected body of knowledge around it: what each part does, what goes wrong, how it is found and how it is treated.</p>
+      <div class="eyebrow">Anatomy Nexus</div>
+      <h1>Explore the Human Body. Understand Medicine.</h1>
+      <p class="lead">Interactive 3D anatomy connected to physiology, symptoms, medical conditions, tests, imaging, procedures, medications and learning resources. Every page names the organs and structures it concerns, so you can move from a symptom to the anatomy behind it, to the condition, the test and the treatment.</p>
       <div class="actions">
-        <a class="btn btn-primary" href="explorer/index.html">Open the 3D explorer</a>
-        <a class="btn" href="conditions/index.html">Browse conditions</a>
-        <a class="btn" href="study/index.html">Study mode</a>
+        <a class="btn btn-primary" href="explorer/">Open the 3D explorer</a>
+        <a class="btn" href="anatomy/">Explore anatomy</a>
+        <a class="btn" href="conditions/">Browse conditions</a>
       </div>
       <div class="stats" id="stats">
         <div class="stat"><b>2,234</b><span>modelled pieces</span></div>
         <div class="stat"><b>1,671</b><span>named structures</span></div>
-        <div class="stat"><b>182</b><span>clinical &amp; learning topics</span></div>
-        <div class="stat"><b>3,247</b><span>typed links between them</span></div>
+        <div class="stat"><b>206</b><span>clinical &amp; learning topics</span></div>
+        <div class="stat"><b>3,511</b><span>links between them</span></div>
       </div>
     </div>
-    <a class="hero-art" href="explorer/index.html" aria-label="Open the 3D explorer"><img src="site/hero.jpg" alt="The 3D atlas showing muscles, skeleton and vessels of the whole body" width="1400" height="900" loading="eager"></a>
+    <a class="hero-art" href="explorer/" aria-label="Open the 3D explorer"><img src="site/hero.jpg" alt="The 3D atlas showing the muscles, skeleton and vessels of the whole body" width="1400" height="900" loading="eager" fetchpriority="high"></a>
   </section>
 
   <h2>Start from the body</h2>
-  <div class="grid grid-3">
-    <a class="card" href="explorer/index.html"><div class="eyebrow">Explore</div><h3>3D anatomy explorer</h3><p>Orbit, click and search every structure. Toggle systems, isolate organs, slice the body on three planes, explode it into parts or lay every piece out as an inventory.</p><div class="meta">Streams in seconds · works on phones</div></a>
-    <a class="card" href="systems/index.html"><div class="eyebrow">Human body</div><h3>Body systems</h3><p>Sixteen system pages with overviews, functions, clinical notes, every modelled structure and the conditions, tests and procedures that concern them.</p></a>
-    <a class="card" href="organs/index.html"><div class="eyebrow">Human body</div><h3>Organs</h3><p>Brain, heart, lungs, liver, kidneys and 33 more organs and skeletal groups, each with a live 3D view and its own clinical topics.</p></a>
-    <a class="card" href="physiology/index.html"><div class="eyebrow">Learn</div><h3>Physiology</h3><p>Thirty topics on how the body works: the cardiac cycle, gas exchange, nerve signals, digestion, kidney filtration and hormone control.</p></a>
-    <a class="card" href="learn/terminology.html"><div class="eyebrow">Learn</div><h3>Medical terminology</h3><p>Directions, planes, movements, regions, structural words, word parts, disease processes and clinical terms, each linked into the atlas.</p></a>
-    <a class="card" href="study/index.html"><div class="eyebrow">Study</div><h3>Quizzes, flashcards &amp; viva</h3><p>Identify or locate highlighted structures in 3D, flip through flashcards, and test terminology, conditions, tests and medications.</p></a>
-  </div>
+  <div class="grid grid-3" id="hubs"></div>
+
+  <h2>Popular pages</h2>
+  <p class="lead">A few of the most-asked-about entities, each written to the same template: what it is, where it sits, why it matters, what it connects to, how to explore it further and which sources support it.</p>
+  <div class="chips chips-lg" id="featured"></div>
 
   <h2>Then follow the links into medicine</h2>
   <p class="lead">Every clinical page names the organs and structures it concerns, so a knee pain page leads to the femur, tibia and menisci in 3D, to osteoarthritis, to the X-ray and MRI that show it, to knee replacement and to the painkillers used.</p>
@@ -62,7 +50,7 @@
   <h2>Everyday and emergency knowledge</h2>
   <div class="grid grid-3" id="everyday"></div>
 
-  <div class="callout">This is an educational platform built on one adult male reference body and public clinical guidance. It is not a diagnostic tool and does not give medical advice. In an emergency, call your local emergency number.</div>
+  <div class="callout">Anatomy Nexus is an educational platform built on one adult male reference body and public clinical guidance. It is not a diagnostic tool and does not give medical advice. In an emergency, call your local emergency number. Read the <a href="disclaimer/">disclaimer</a> and <a href="editorial-policy/">editorial policy</a>.</div>
 </main>
 <script type="module" src="site/home.js"></script>
 </body>

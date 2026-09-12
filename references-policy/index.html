@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self'; connect-src 'self'; frame-src 'self'; worker-src 'self' blob:; object-src 'none'; base-uri 'self'; form-action 'self'">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>References policy | Anatomy Nexus</title>
+  <meta name="description" content="How Anatomy Nexus chooses and cites sources: a three-tier hierarchy that prefers official health bodies, guidelines and professional societies, then textbooks and journals, then charities.">
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  <meta name="theme-color" content="#d9731a">
+  <link rel="manifest" href="../manifest.webmanifest">
+  <link rel="apple-touch-icon" href="../site/apple-touch-icon.png"><link rel="stylesheet" href="../site/site.css">
+  <link rel="canonical" href="./">
+</head>
+<body data-nav="about" data-canonical="references-policy/" data-schema="AboutPage">
+<main class="wrap" id="main">
+  <nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="../">Home</a></li><li aria-current="page">References policy</li></ol></nav>
+  <div class="section-hero"><div class="eyebrow">About Anatomy Nexus</div><h1>References policy</h1><p class="lead">Where our information comes from, how sources are ranked and how they are shown.</p></div>
+  <div class="prose">
+    <h2>Source hierarchy</h2>
+    <p>Each reference on the site is tagged with a source and an evidence tier, shown next to it in the <em>Sources</em> list:</p>
+    <div class="table-wrap"><table class="kv"><thead><tr><th scope="col">Tier</th><th scope="col">Sources</th></tr></thead><tbody>
+      <tr><th scope="row">Tier 1</th><td>National health services and agencies (NHS, NHS England, WHO, NICE, NIH institutes, MedlinePlus, CDC, FDA), official clinical guidelines (Resuscitation Council UK, GINA) and professional societies (American Heart Association, Society for Endocrinology, British Burn Association, World Stroke Organization).</td></tr>
+      <tr><th scope="row">Tier 2</th><td>Peer-reviewed journals, medical textbooks (the open OpenStax <em>Anatomy &amp; Physiology</em>), academic medical centres and university resources.</td></tr>
+      <tr><th scope="row">Tier 3</th><td>High-quality secondary resources, chiefly patient charities (British Heart Foundation, Stroke Association, Asthma + Lung UK, British Liver Trust, Epilepsy Action, St John Ambulance). Used for context and patient-facing guidance, not as the sole basis for a major clinical claim.</td></tr>
+    </tbody></table></div>
+    <h2>Rules</h2>
+    <ul class="plain">
+      <li>Every reference is a first-class object with a title, a source, a tier, a URL and the date it was checked; references are never pasted as unstructured text.</li>
+      <li>Only <code>https</code> links to the original publisher are accepted; the build rejects anything else.</li>
+      <li>Medicines are sourced first from official medicines information (NHS medicines pages, FDA labelling and DailyMed, MedlinePlus) and guidelines; textbooks support foundational pharmacology. We do not reproduce copyrighted textbook text or diagrams.</li>
+      <li>Reference ranges are never presented as universal; where shown, pages say that values vary by laboratory, method, age, sex and clinical context.</li>
+      <li>Links are checked automatically for availability; broken links are fixed or replaced in the next release.</li>
+    </ul>
+    <h2>3D anatomy data</h2>
+    <p>Geometry comes from BodyParts3D 4.0 (Database Center for Life Science, CC BY 4.0) and structure names from the Foundational Model of Anatomy. See the <a href="../data/ATTRIBUTION.md">attribution and licences</a> page.</p>
+  </div>
+  <nav class="chips" aria-label="Policies" style="margin-top:32px">
+    <a class="chip" href="../about/">About</a><a class="chip" href="../editorial-policy/">Editorial policy</a><a class="chip" href="../medical-review-policy/">Medical review policy</a><a class="chip" href="../references-policy/">References policy</a><a class="chip" href="../corrections-policy/">Corrections policy</a><a class="chip" href="../disclaimer/">Disclaimer</a><a class="chip" href="../contact/">Contact</a>
+  </nav>
+</main>
+<script type="module" src="../site/page.js"></script>
+</body>
+</html>

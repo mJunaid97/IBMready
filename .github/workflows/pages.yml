@@ -24,11 +24,22 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
-      - name: Leave only what the site serves
-        run: rm -rf tools .github content/*.json.bak 2>/dev/null || true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Install Playwright (prerendering)
+        working-directory: tools/qa
+        run: |
+          npm ci
+          npx playwright install --with-deps chromium
+      - name: Build the production package
+        run: python3 tools/package-site.py --site-url "${{ vars.SITE_URL || 'https://anatomynexus.com' }}" --pretty --prerender --out dist
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: .
+          path: dist
       - id: deployment
         uses: actions/deploy-pages@v4

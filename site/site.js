@@ -1,51 +1,126 @@
 /**
- * site.js — shared shell for the Human Body Platform pages (everything outside the 3D explorer).
+ * site.js — shared shell for the Anatomy Nexus pages (everything outside the 3D explorer).
  * Renders the navigation and header search, loads the anatomy and knowledge data, and offers
- * small helpers for page scripts: deep links into the explorer and links between entities.
+ * the URL helpers every page uses: canonical links between entities, deep links into the
+ * explorer, and the clean-URL / query-URL switch (site/config.js).
+ *
+ * Pages can be served two ways:
+ *   - development: the repository root on any static server; detail pages are
+ *     <section>/<page>.html?id=<slug> and everything renders in the browser.
+ *   - production (tools/package-site.py --pretty): every page is prerendered to
+ *     <section>/<slug>/index.html with `data-prerendered` on <body>; the scripts then only bind
+ *     interactivity (menu, search, theme, filters, the 3D facade) and never redraw the content.
  */
 import { normalize, search as rankSearch } from '../explorer/search.js';
 import { CONFIG } from './config.js';
 import { VERSION, BUILD } from './version.js';
-export { CONFIG, VERSION, BUILD };
+import { SITE } from './site-meta.js';
+import { previewName } from './preview-name.js';
+export { CONFIG, VERSION, BUILD, SITE };
 
 export const ROOT = new URL('../', import.meta.url).href;   // absolute site root, works from any depth
+export const PRETTY = !!CONFIG.prettyUrls;
+export const BRAND = SITE.name;
+/** True when the page arrived as prerendered HTML: bind interactivity, do not re-render content. */
+export const PRERENDERED = typeof document !== 'undefined' && document.body && document.body.hasAttribute('data-prerendered');
 
-/** Entity types of the knowledge graph (mirrors tools/build-content.py TYPES). `field` is the link-field name other entities use. */
+/** Entity types of the knowledge graph (mirrors tools/build-content.py TYPES). `field` is the link-field name other
+ *  entities use; `descriptor` completes the SEO title "[Name]: [Descriptor] | Anatomy Nexus". */
 export const TYPES = {
-  physiology:  { name: 'Physiology',    singular: 'Physiology topic', dir: 'physiology',  page: 'topic.html',      field: 'physiology',  icon: '⚙️', blurb: 'What the body does: cardiac, respiratory, nervous, digestive, renal and endocrine function explained through the anatomy.' },
-  symptoms:    { name: 'Symptoms',      singular: 'Symptom',          dir: 'symptoms',    page: 'symptom.html',    field: 'symptoms',    icon: '🩺', blurb: 'Start from what a person feels: the anatomy involved, common and less common causes, and when to seek urgent care.' },
-  conditions:  { name: 'Conditions',    singular: 'Condition',        dir: 'conditions',  page: 'condition.html',  field: 'conditions',  icon: '📋', blurb: 'Diseases and conditions: definition, affected anatomy, causes, symptoms, diagnosis, treatment and prevention.' },
-  tests:       { name: 'Medical tests', singular: 'Medical test',     dir: 'tests',       page: 'test.html',       field: 'tests',       icon: '🧪', blurb: 'Blood, urine, heart and lung tests: what they measure, how they are done and how results are read.' },
-  imaging:     { name: 'Imaging',       singular: 'Imaging study',    dir: 'imaging',     page: 'study.html',      field: 'imaging',     icon: '🩻', blurb: 'X-ray, CT, MRI, ultrasound, PET, mammography and fluoroscopy: how each works and what it shows.' },
-  procedures:  { name: 'Procedures',    singular: 'Procedure',        dir: 'procedures',  page: 'procedure.html',  field: 'procedures',  icon: '🔧', blurb: 'Operations and procedures step by step, with the anatomy involved, recovery and risks.' },
-  medications: { name: 'Medications',   singular: 'Medication',       dir: 'medications', page: 'medication.html', field: 'medications', icon: '💊', blurb: 'How common medicines work in the body, what they are for and what to watch for. Education, not prescribing.' },
-  'first-aid': { name: 'First aid',     singular: 'First aid topic',  dir: 'first-aid',   page: 'topic.html',      field: 'firstAid',    icon: '🚑', blurb: 'CPR, choking, bleeding, burns, fractures, fainting, seizures and more, aligned with resuscitation guidelines.' },
-  health:      { name: 'Health',        singular: 'Health topic',     dir: 'health',      page: 'topic.html',      field: 'health',      icon: '🌿', blurb: 'Exercise, sleep, nutrition, weight, smoking, alcohol and hydration, explained through the organs they act on.' },
+  physiology:     { name: 'Physiology',    singular: 'Physiology topic', dir: 'physiology',   page: 'topic.html',      field: 'physiology',  icon: '⚙️', descriptor: 'How It Works',                   blurb: 'What the body does: cardiac, respiratory, nervous, digestive, renal and endocrine function explained through the anatomy.' },
+  symptoms:       { name: 'Symptoms',      singular: 'Symptom',          dir: 'symptoms',     page: 'symptom.html',    field: 'symptoms',    icon: '🩺', descriptor: 'Causes & When to Seek Help',      blurb: 'Start from what a person feels: the anatomy involved, common and less common causes, and when to seek urgent care.' },
+  conditions:     { name: 'Conditions',    singular: 'Condition',        dir: 'conditions',   page: 'condition.html',  field: 'conditions',  icon: '📋', descriptor: 'Causes, Symptoms & Treatment',   blurb: 'Diseases and conditions: definition, affected anatomy, causes, symptoms, diagnosis, treatment and prevention.' },
+  tests:          { name: 'Medical tests', singular: 'Medical test',     dir: 'tests',        page: 'test.html',       field: 'tests',       icon: '🧪', descriptor: 'Purpose, Procedure & Results',   blurb: 'Blood, urine, heart and lung tests: what they measure, how they are done and how results are read.' },
+  imaging:        { name: 'Imaging',       singular: 'Imaging study',    dir: 'imaging',      page: 'study.html',      field: 'imaging',     icon: '🩻', descriptor: 'How It Works, Uses & Risks',     blurb: 'X-ray, CT, MRI, ultrasound, PET, mammography and fluoroscopy: how each works and what it shows.' },
+  procedures:     { name: 'Procedures',    singular: 'Procedure',        dir: 'procedures',   page: 'procedure.html',  field: 'procedures',  icon: '🔧', descriptor: 'Steps, Recovery & Risks',        blurb: 'Operations and procedures step by step, with the anatomy involved, recovery and risks.' },
+  medications:    { name: 'Medications',   singular: 'Medication',       dir: 'medications',  page: 'medication.html', field: 'medications', icon: '💊', descriptor: 'Uses, Mechanism & Side Effects', blurb: 'How common medicines work in the body, what they are for and what to watch for. Education, not prescribing.' },
+  'drug-classes': { name: 'Drug classes',  singular: 'Drug class',       dir: 'drug-classes', page: 'class.html',      field: 'drugClass',   icon: '🧬', descriptor: 'Mechanism, Uses & Examples',     blurb: 'Families of medicines that share a mechanism: what they target in the body, which conditions they treat and their members.' },
+  'first-aid':    { name: 'First aid',     singular: 'First aid topic',  dir: 'first-aid',    page: 'topic.html',      field: 'firstAid',    icon: '🚑', descriptor: 'What to Do Step by Step',        blurb: 'CPR, choking, bleeding, burns, fractures, fainting, seizures and more, aligned with resuscitation guidelines.' },
+  health:         { name: 'Health',        singular: 'Health topic',     dir: 'health',       page: 'topic.html',      field: 'health',      icon: '🌿', descriptor: 'Effects on the Body & Guidance', blurb: 'Exercise, sleep, nutrition, weight, smoking, alcohol and hydration, explained through the organs they act on.' },
 };
-export const TYPE_ORDER = ['conditions', 'symptoms', 'physiology', 'tests', 'imaging', 'procedures', 'medications', 'first-aid', 'health'];
-
-export const SECTIONS = [
-  { id: 'body', name: 'Human Body', live: true, href: 'systems/index.html', items: [
-    { name: '3D anatomy explorer', href: 'explorer/index.html', live: true }, { name: 'Body systems', href: 'systems/index.html', live: true }, { name: 'Organs', href: 'organs/index.html', live: true },
-    { name: 'Regions', href: 'explorer/index.html#r=thorax', live: true }, { name: 'Anatomical terms', href: 'learn/terminology.html', live: true } ] },
-  { id: 'learn', name: 'Learn', live: true, href: 'learn/terminology.html', items: [
-    { name: 'Medical terminology', href: 'learn/terminology.html', live: true }, { name: 'Physiology', href: 'physiology/index.html', live: true }, { name: 'Disease processes', href: 'learn/terminology.html#inflammation', live: true }, { name: 'Clinical terms', href: 'learn/terminology.html#acute', live: true }, { name: 'Histology & embryology', href: 'roadmap/index.html#learn', live: false } ] },
-  { id: 'symptoms', name: 'Symptoms', live: true, href: 'symptoms/index.html' },
-  { id: 'conditions', name: 'Conditions', live: true, href: 'conditions/index.html' },
-  { id: 'tests', name: 'Medical tests', live: true, href: 'tests/index.html' },
-  { id: 'imaging', name: 'Imaging', live: true, href: 'imaging/index.html' },
-  { id: 'procedures', name: 'Procedures', live: true, href: 'procedures/index.html' },
-  { id: 'medications', name: 'Medications', live: true, href: 'medications/index.html' },
-  { id: 'first-aid', name: 'First aid', live: true, href: 'first-aid/index.html' },
-  { id: 'health', name: 'Health', live: true, href: 'health/index.html' },
-  { id: 'study', name: 'Study', live: true, href: 'study/index.html', items: [
-    { name: 'Identify the structure', href: 'study/index.html', live: true }, { name: 'Locate the structure', href: 'explorer/index.html?study=locate', live: true }, { name: 'Flashcards', href: 'explorer/index.html?study=cards', live: true }, { name: 'Terminology & clinical quizzes', href: 'study/index.html#terms', live: true }, { name: 'Viva practice', href: 'study/index.html#viva', live: true } ] },
-  { id: 'search', name: 'Search', live: true, href: 'search/index.html' },
-];
+export const TYPE_ORDER = ['conditions', 'symptoms', 'physiology', 'tests', 'imaging', 'procedures', 'medications', 'drug-classes', 'first-aid', 'health'];
+export const TYPE_LABEL = { structure: 'Structure', organ: 'Anatomy', system: 'Body system', region: 'Region', term: 'Term', physiology: 'Physiology', symptoms: 'Symptom', conditions: 'Condition', tests: 'Test', imaging: 'Imaging', procedures: 'Procedure', medications: 'Medication', 'drug-classes': 'Drug class', 'first-aid': 'First aid', health: 'Health' };
 
 const esc = (s) => String(s ?? '').replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
 export { esc };
 
+// ----------------------------------------------------------------- URLs
+/** Canonical paths (relative to the site root, no leading slash). Clean URLs end with a slash; query URLs name the template page. */
+export const paths = {
+  home: () => PRETTY ? '' : 'index.html',
+  dir: (d) => PRETTY ? `${d}/` : `${d}/index.html`,
+  entity: (dir, page, id) => PRETTY ? `${dir}/${encodeURIComponent(id)}/` : `${dir}/${page}?id=${encodeURIComponent(id)}`,
+  explorer: (query = '', hash = '') => `explorer/${PRETTY ? '' : 'index.html'}${query ? '?' + query : ''}${hash ? '#' + hash : ''}`,
+};
+export const url = (path) => ROOT + path;
+export const link = {
+  home: () => url(paths.home()),
+  page: (name) => url(paths.dir(name)),
+  structure: (id) => url(paths.explorer('', `s=${encodeURIComponent(id)}`)),
+  structures: (ids) => url(paths.explorer('', `s=${ids.map(encodeURIComponent).join(',')}`)),
+  organ: (id) => url(paths.explorer('', `o=${encodeURIComponent(id)}`)),
+  region: (id) => url(paths.explorer('', `r=${encodeURIComponent(id)}`)),
+  system: (id) => url(paths.explorer('', `sys=${encodeURIComponent(id)}`)),
+  slice: (axis) => url(paths.explorer('', `slice=${axis}`)),
+  quiz: (sys) => url(paths.explorer(`study=quiz${sys ? '&sys=' + encodeURIComponent(sys) : ''}`)),
+  locate: (sys) => url(paths.explorer(`study=locate${sys ? '&sys=' + encodeURIComponent(sys) : ''}`)),
+  cards: (sys) => url(paths.explorer(`study=cards${sys ? '&sys=' + encodeURIComponent(sys) : ''}`)),
+  explorer: (hash) => url(paths.explorer('', hash || '')),
+  embed: (hash) => url(paths.explorer('embed=1', hash || '')),
+  organPage: (id) => url(paths.entity('anatomy', 'organ.html', id)),
+  systemPage: (id) => url(paths.entity('systems', 'system.html', id)),
+  term: (id) => url(paths.dir('medical-terms')) + '#' + encodeURIComponent(id),
+  search: (q) => url(paths.dir('search')) + (q ? '?q=' + encodeURIComponent(q) : ''),
+  preview: (hash) => url(`site/previews/${previewName(hash)}.jpg`),
+};
+export function entityPath(type, id) { const t = TYPES[type]; return paths.entity(t.dir, t.page, id); }
+export function entityLink(type, id) { return TYPES[type] ? url(entityPath(type, id)) : '#'; }
+export function typeLink(type) { return TYPES[type] ? url(paths.dir(TYPES[type].dir)) : '#'; }
+/** The entity id for a detail page: `?id=` on plain hosts, the last path segment under clean URLs (/conditions/gout/). */
+export function pageId() {
+  const q = param('id'); if (q) return q;
+  const seg = decodeURIComponent(location.pathname.replace(/\/+$/, '').split('/').pop() || '');
+  return /\.html?$/i.test(seg) || !seg ? null : seg;
+}
+/** Absolute canonical URL for a site path: the public origin when configured, else the served origin. */
+export function canonical(path = '') {
+  const base = CONFIG.siteUrl ? CONFIG.siteUrl.replace(/\/$/, '') + '/' : ROOT;
+  return base + String(path).replace(/^\//, '');
+}
+export function setCanonical(path) {
+  let el = document.querySelector('link[rel="canonical"]');
+  if (!el) { el = document.createElement('link'); el.rel = 'canonical'; document.head.appendChild(el); }
+  el.href = canonical(path);
+}
+/** Link for any search-index entry type. */
+export function anyLink(type, id) {
+  switch (type) {
+    case 'structure': return link.structure(id);
+    case 'organ': return link.organPage(id);
+    case 'system': return link.systemPage(id);
+    case 'region': return link.region(id);
+    case 'term': return link.term(id);
+    default: return entityLink(type, id);
+  }
+}
+export function termLink(term, data) {
+  const a = term.atlas; if (!a) return null;
+  if (a.structure) { const si = data.byName.get(a.structure); return si === undefined ? null : link.structure(data.atlas.structures[si].id); }
+  if (a.organ) return link.organ(a.organ);
+  if (a.region) return link.region(a.region);
+  if (a.system) return link.system(a.system);
+  if (a.slice) return link.slice(a.slice);
+  return null;
+}
+export function param(name) { return new URLSearchParams(location.search).get(name); }
+export function fmt(n) { return Number(n).toLocaleString('en-US'); }
+export function dateText(iso) {
+  if (!iso) return '';
+  const d = new Date(iso + 'T00:00:00Z'); if (Number.isNaN(d.getTime())) return iso;
+  return d.toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC' });
+}
+
+// ---------------------------------------------------------------- shell
 export function initTheme() {
   let t = null; try { t = localStorage.getItem('atlas-theme'); } catch {}
   if (t) document.documentElement.dataset.theme = t;
@@ -55,37 +130,69 @@ export function toggleTheme() {
   const next = cur === 'dark' ? 'light' : 'dark';
   document.documentElement.dataset.theme = next; try { localStorage.setItem('atlas-theme', next); } catch {}
 }
+export const NAV_PRIMARY = [['anatomy', 'Anatomy', () => link.page('anatomy')], ['systems', 'Systems', () => link.page('systems')], ['conditions', 'Conditions', () => typeLink('conditions')], ['symptoms', 'Symptoms', () => typeLink('symptoms')], ['tests', 'Tests', () => typeLink('tests')], ['medications', 'Medications', () => typeLink('medications')], ['explorer', '3D explorer', () => link.explorer()], ['study', 'Study', () => link.page('study')]];
+export const NAV_MORE = [['organs', 'Organs', () => link.page('organs')], ['physiology', 'Physiology', () => typeLink('physiology')], ['imaging', 'Imaging', () => typeLink('imaging')], ['procedures', 'Procedures', () => typeLink('procedures')], ['drug-classes', 'Drug classes', () => typeLink('drug-classes')], ['first-aid', 'First aid', () => typeLink('first-aid')], ['health', 'Health', () => typeLink('health')], ['medical-terms', 'Medical terms', () => link.page('medical-terms')], ['search', 'Search everything', () => link.page('search')], ['about', 'About', () => link.page('about')]];
 
 export function renderHeader(active) {
   initTheme();
-  const primary = [['explorer/index.html', 'Explorer', 'explorer'], ['systems/index.html', 'Systems', 'systems'], ['organs/index.html', 'Organs', 'organs'], ['conditions/index.html', 'Conditions', 'conditions'], ['symptoms/index.html', 'Symptoms', 'symptoms'], ['first-aid/index.html', 'First aid', 'first-aid'], ['study/index.html', 'Study', 'study']];
-  const more = [['physiology/index.html', 'Physiology'], ['tests/index.html', 'Medical tests'], ['imaging/index.html', 'Imaging'], ['procedures/index.html', 'Procedures'], ['medications/index.html', 'Medications'], ['health/index.html', 'Health'], ['learn/terminology.html', 'Terminology'], ['search/index.html', 'Search everything'], ['roadmap/index.html', 'Roadmap']];
-  const html = `<a class="skip-link" href="#main">Skip to content</a><header class="site-header"><div class="wrap">
-    <a class="brand" href="${ROOT}index.html"><span class="brand-mark" aria-hidden="true"></span> Human Body</a>
-    <form class="hsearch" id="hsearch" action="${ROOT}search/index.html" role="search" autocomplete="off">
-      <input name="q" id="hsearch-q" type="search" placeholder="Search structures, conditions, tests…" aria-label="Search the site" autocomplete="off">
+  if (!document.querySelector('.site-header')) {
+    const html = `<a class="skip-link" href="#main">Skip to content</a><header class="site-header"><div class="wrap">
+    <a class="brand" href="${link.home()}"><span class="brand-mark" aria-hidden="true"></span> ${esc(BRAND)}</a>
+    <form class="hsearch" id="hsearch" action="${link.search()}" role="search" autocomplete="off">
+      <input name="q" id="hsearch-q" type="search" placeholder="Search anatomy, conditions, tests, medicines…" aria-label="Search the site" autocomplete="off">
       <ul class="hsearch-results" id="hsearch-results" hidden></ul>
     </form>
     <button class="menu-toggle" id="menu-toggle" aria-label="Menu" aria-expanded="false" aria-controls="site-nav">☰</button>
     <nav class="nav" id="site-nav" aria-label="Site">
-      ${primary.map(([h, n, key]) => `<a href="${ROOT}${h}" class="${active === key ? 'is-active' : ''}"${active === key ? ' aria-current="page"' : ''}>${n}</a>`).join('')}
+      ${NAV_PRIMARY.map(([key, n, h]) => `<a href="${h()}" class="${active === key ? 'is-active' : ''}"${active === key ? ' aria-current="page"' : ''}>${n}</a>`).join('')}
       <details><summary>More ▾</summary><div class="menu">
-        ${more.map(([h, n]) => `<a href="${ROOT}${h}">${n}</a>`).join('')}
+        ${NAV_MORE.map(([key, n, h]) => `<a href="${h()}"${active === key ? ' aria-current="page"' : ''}>${n}</a>`).join('')}
       </div></details>
       <button class="theme-btn" id="theme-btn" title="Toggle light / dark" aria-label="Toggle theme"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a9 9 0 1 0 9 9c0-.5 0-1-.1-1.4A6 6 0 0 1 12 3z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg></button>
     </nav></div></header>`;
-  document.body.insertAdjacentHTML('afterbegin', html);
+    document.body.insertAdjacentHTML('afterbegin', html);
+  }
   const main = document.querySelector('main'); if (main && !main.id) main.id = 'main';
   document.getElementById('menu-toggle').addEventListener('click', (e) => { const open = document.getElementById('site-nav').classList.toggle('is-open'); e.currentTarget.setAttribute('aria-expanded', String(open)); });
   document.getElementById('theme-btn').addEventListener('click', toggleTheme);
   bindHeaderSearch();
+  bindFacades();
 }
 
 export function renderFooter() {
+  if (document.querySelector('.site-footer')) return;
+  const policy = [['about', 'About'], ['editorial-policy', 'Editorial policy'], ['medical-review-policy', 'Medical review'], ['references-policy', 'References'], ['corrections-policy', 'Corrections'], ['disclaimer', 'Disclaimer'], ['contact', 'Contact']];
   document.body.insertAdjacentHTML('beforeend', `<footer class="site-footer"><div class="wrap">
-    <p>3D anatomy: <a href="https://dbarchive.biosciencedbc.jp/en/bodyparts3d/" target="_blank" rel="noopener noreferrer">BodyParts3D</a>, © The Database Center for Life Science, licensed under CC BY 4.0. Structure names follow the Foundational Model of Anatomy. Clinical, first-aid and health content is written for education and follows public guidance from the NHS, WHO and Resuscitation Council UK; it is not medical advice, diagnosis or treatment. In an emergency call your local emergency number.</p>
-    <p><a href="${ROOT}roadmap/index.html">Roadmap</a> · <a href="${ROOT}search/index.html">Search</a> · <a href="${ROOT}data/ATTRIBUTION.md">Attribution &amp; licences</a> · <a href="${ROOT}ARCHITECTURE.md">Architecture</a> · <span class="site-version" title="${esc(BUILD ? 'build ' + BUILD : 'development copy')}">v${esc(VERSION)}${BUILD ? ' · ' + esc(BUILD.slice(0, 7)) : ''}</span></p>
+    <nav class="footer-nav" aria-label="About this site">${policy.map(([p, n]) => `<a href="${link.page(p)}">${n}</a>`).join('')}<a href="${link.page('roadmap')}">Roadmap</a><a href="${url('data/ATTRIBUTION.md')}">Attribution &amp; licences</a></nav>
+    <p>${esc(BRAND)} is an educational resource. It does not give medical advice, diagnosis or treatment; in an emergency call your local emergency number. Content is written from the public guidance cited on each page and is <a href="${link.page('medical-review-policy')}">awaiting independent medical review</a>.</p>
+    <p>3D anatomy: <a href="https://dbarchive.biosciencedbc.jp/en/bodyparts3d/" target="_blank" rel="noopener noreferrer">BodyParts3D</a>, © The Database Center for Life Science, licensed under CC BY 4.0. Structure names follow the Foundational Model of Anatomy. <span class="site-version" title="${esc(BUILD ? 'build ' + BUILD : 'development copy')}">v${esc(VERSION)}${BUILD ? ' · ' + esc(BUILD.slice(0, 7)) : ''}</span></p>
   </div></footer>`);
+}
+
+/** Breadcrumb trail: [{name, href}] ending with the current page (no href). Rendered as a list for accessibility; seo.js emits the schema. */
+export function breadcrumbHtml(items) {
+  return `<nav class="breadcrumb" aria-label="Breadcrumb"><ol>${items.map((c, i) => c.href && i < items.length - 1 ? `<li><a href="${esc(c.href)}">${esc(c.name)}</a></li>` : `<li aria-current="page">${esc(c.name)}</li>`).join('')}</ol></nav>`;
+}
+
+/** Click-to-load 3D view: a static preview image with a button that swaps in the explorer iframe (progressive enhancement:
+ *  without scripts the button is a link to the explorer). Keeps the 13 MB model off article pages until it is wanted. */
+export function facadeHtml(hash, name) {
+  if (!hash) return '';
+  return `<figure class="facade" data-embed="${esc(link.embed(hash))}">
+    <img src="${esc(link.preview(hash))}" width="1200" height="630" alt="3D model of the ${esc(name)} in the ${esc(BRAND)} anatomy atlas" loading="lazy" decoding="async">
+    <figcaption><span>Interactive 3D model: ${esc(name)}. Orbit, zoom and click the structures.</span><a class="btn btn-primary facade-load" href="${esc(link.explorer(hash))}">Load the 3D model</a></figcaption>
+  </figure>`;
+}
+function bindFacades() {
+  if (document.body.dataset.facadesBound) return; document.body.dataset.facadesBound = '1';
+  document.addEventListener('click', (e) => {
+    const a = e.target.closest('.facade-load'); if (!a) return;
+    const fig = a.closest('.facade'); const src = fig && fig.dataset.embed; if (!src) return;
+    e.preventDefault();
+    const div = document.createElement('div'); div.className = 'embed';
+    const f = document.createElement('iframe'); f.src = src; f.title = a.closest('figure').querySelector('img')?.alt || '3D view'; f.setAttribute('allow', 'fullscreen'); f.loading = 'eager';
+    div.appendChild(f); fig.replaceWith(div);
+  });
 }
 
 // ------------------------------------------------------------------ data
@@ -112,74 +219,13 @@ export const loadClinical = () => getJSON('data/content/clinical.json');
 export const loadType = (key) => getJSON(`data/content/types/${key}.json`);
 export const loadSearchIndex = () => getJSON('data/content/search-index.json');
 
-// ----------------------------------------------------------------- links
-export const link = {
-  structure: (id) => `${ROOT}explorer/index.html#s=${encodeURIComponent(id)}`,
-  structures: (ids) => `${ROOT}explorer/index.html#s=${ids.map(encodeURIComponent).join(',')}`,
-  organ: (id) => `${ROOT}explorer/index.html#o=${encodeURIComponent(id)}`,
-  region: (id) => `${ROOT}explorer/index.html#r=${encodeURIComponent(id)}`,
-  system: (id) => `${ROOT}explorer/index.html#sys=${encodeURIComponent(id)}`,
-  slice: (axis) => `${ROOT}explorer/index.html#slice=${axis}`,
-  quiz: (sys) => `${ROOT}explorer/index.html?study=quiz${sys ? '&sys=' + encodeURIComponent(sys) : ''}`,
-  locate: (sys) => `${ROOT}explorer/index.html?study=locate${sys ? '&sys=' + encodeURIComponent(sys) : ''}`,
-  cards: (sys) => `${ROOT}explorer/index.html?study=cards${sys ? '&sys=' + encodeURIComponent(sys) : ''}`,
-  embed: (hash) => `${ROOT}explorer/index.html?embed=1${hash ? '#' + hash : ''}`,
-  organPage: (id) => CONFIG.prettyUrls ? `${ROOT}organs/${encodeURIComponent(id)}` : `${ROOT}organs/organ.html?id=${encodeURIComponent(id)}`,
-  systemPage: (id) => CONFIG.prettyUrls ? `${ROOT}systems/${encodeURIComponent(id)}` : `${ROOT}systems/system.html?id=${encodeURIComponent(id)}`,
-  term: (id) => `${ROOT}learn/terminology.html#${encodeURIComponent(id)}`,
-};
-export function entityLink(type, id) { const t = TYPES[type]; if (!t) return '#'; return CONFIG.prettyUrls ? `${ROOT}${t.dir}/${encodeURIComponent(id)}` : `${ROOT}${t.dir}/${t.page}?id=${encodeURIComponent(id)}`; }
-export function typeLink(type) { const t = TYPES[type]; if (!t) return '#'; return CONFIG.prettyUrls ? `${ROOT}${t.dir}/` : `${ROOT}${t.dir}/index.html`; }
-/** The entity id for a detail page: `?id=` on plain hosts, the last path segment under pretty URLs (/conditions/gout). */
-export function pageId() {
-  const q = param('id'); if (q) return q;
-  const seg = decodeURIComponent(location.pathname.replace(/\/+$/, '').split('/').pop() || '');
-  return /\.html?$/i.test(seg) || !seg ? null : seg;
-}
-/** Absolute canonical URL for the current page, written into <link rel="canonical"> and used by the sitemap. */
-export function canonical(path) {
-  const base = CONFIG.siteUrl ? CONFIG.siteUrl.replace(/\/$/, '') + '/' : ROOT;
-  return base + path.replace(/^\//, '');
-}
-export function setCanonical(path) {
-  let el = document.querySelector('link[rel="canonical"]');
-  if (!el) { el = document.createElement('link'); el.rel = 'canonical'; document.head.appendChild(el); }
-  el.href = canonical(path);
-}
-export function entityPath(type, id) { const t = TYPES[type]; return CONFIG.prettyUrls ? `${t.dir}/${encodeURIComponent(id)}` : `${t.dir}/${t.page}?id=${encodeURIComponent(id)}`; }
-/** Link for any search-index entry type. */
-export function anyLink(type, id) {
-  switch (type) {
-    case 'structure': return link.structure(id);
-    case 'organ': return link.organPage(id);
-    case 'system': return link.systemPage(id);
-    case 'region': return link.region(id);
-    case 'term': return link.term(id);
-    default: return entityLink(type, id);
-  }
-}
-export const TYPE_LABEL = { structure: 'Structure', organ: 'Organ', system: 'Body system', region: 'Region', term: 'Term', physiology: 'Physiology', symptoms: 'Symptom', conditions: 'Condition', tests: 'Test', imaging: 'Imaging', procedures: 'Procedure', medications: 'Medication', 'first-aid': 'First aid', health: 'Health' };
-
-export function termLink(term, data) {
-  const a = term.atlas; if (!a) return null;
-  if (a.structure) { const si = data.byName.get(a.structure); return si === undefined ? null : link.structure(data.atlas.structures[si].id); }
-  if (a.organ) return link.organ(a.organ);
-  if (a.region) return link.region(a.region);
-  if (a.system) return link.system(a.system);
-  if (a.slice) return link.slice(a.slice);
-  return null;
-}
-
-export function param(name) { return new URLSearchParams(location.search).get(name); }
-export function fmt(n) { return Number(n).toLocaleString('en-US'); }
-
 // ---------------------------------------------------------------- search
 let _entries = null;
 /** Build ranked-search entries from the flat search index (shared by the header box and the search page). */
 export async function searchEntries() {
   if (_entries) return _entries;
   const idx = await loadSearchIndex();
-  const rank = { system: 3, organ: 2.8, conditions: 2.7, symptoms: 2.7, 'first-aid': 2.6, region: 2.4, tests: 2.5, imaging: 2.5, procedures: 2.5, medications: 2.5, physiology: 2.4, health: 2.4, term: 2.2, structure: 2 };
+  const rank = { system: 3, organ: 2.9, conditions: 2.7, symptoms: 2.7, 'first-aid': 2.6, region: 2.4, tests: 2.5, imaging: 2.5, procedures: 2.5, medications: 2.5, 'drug-classes': 2.4, physiology: 2.4, health: 2.4, term: 2.2, structure: 2 };
   _entries = idx.entries.map(([type, id, name, aliases, sub]) => {
     const al = aliases ? aliases.split('|').map(normalize) : [];
     return { type, id, name, norm: normalize(name), aliases: al, words: [name, ...al].join(' ').toLowerCase().split(/[^a-z0-9]+/).filter(Boolean), sub, rank: rank[type] ?? 2 };

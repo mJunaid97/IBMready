@@ -7,17 +7,25 @@ web root, switch on HTTPS. Nothing runs on the server.
 
 ```sh
 python3 tools/build-content.py                       # validates the content graph
-python3 tools/package-site.py --site-url https://YOUR-DOMAIN --pretty --zip
+cd tools/qa && npm ci && npx playwright install chromium && cd ../..   # once: headless Chromium for prerendering
+python3 tools/package-site.py --site-url https://YOUR-DOMAIN --pretty --prerender --zip
 ```
 
-This writes `dist/` (about 24 MB, 250 files) and `dist/human-body-site.zip`. The package
+This writes `dist/` (about 30 MB, 560 files) and `dist/anatomy-nexus-site.zip`. The package
 contains only what the site serves, plus:
 
+- every page prerendered to static HTML at its clean URL (`conditions/gout/index.html`), so the
+  server sends complete pages with metadata, structured data and links; the scripts only add
+  interactivity
 - `site/config.js` with your public URL and clean URLs switched on
-  (`/conditions/gout` instead of `/conditions/condition.html?id=gout`; `.htaccess` does the rewrite)
-- `sitemap.xml` with every page and entity, `robots.txt`, canonical links, social preview image
-- `.htaccess`: HTTPS redirect, clean-URL rewrites, correct media types, gzip/brotli, caching,
-  security headers, custom 404 page
+- `sitemap.xml` (an index of one sitemap per section), `robots.txt`, canonical links, per-page
+  social preview images
+- `.htaccess`: HTTPS and one host in a single hop, the 301 rules (aliases, query URLs, `index.html`,
+  trailing slashes, retired paths), correct media types, gzip/brotli, caching, security headers,
+  custom 404 page
+
+Without `--prerender` the package still works (the `.htaccess` fallback rewrites clean URLs to
+the templates and the pages render in the browser), but search engines then see empty shells.
 
 If the site will live in a sub-folder of a domain (for example `https://example.com/atlas/`),
 add `--base-path /atlas/`.
@@ -41,7 +49,7 @@ live within five minutes of the workflow finishing. To deploy a different branch
 workflow manually from the Actions tab with the URL in the form.
 
 **B. hPanel file manager (one-off).** Build with `--zip`, then hPanel → Websites → the domain →
-File manager → open `public_html` → Upload `dist/human-body-site.zip` → right-click → Extract →
+File manager → open `public_html` → Upload `dist/anatomy-nexus-site.zip` → right-click → Extract →
 delete the zip. Turn on "Show hidden files" and confirm `.htaccess` is present.
 
 **C. FTP.** Any FTP client, or the `SamKirkland/FTP-Deploy-Action` in a workflow with the FTP
@@ -56,8 +64,9 @@ script writes a permanent redirect for the old name into `.htaccess`.
   free one; subdomains get their own). Then hPanel → Security → Force HTTPS: on.
 - Open `https://YOUR-DOMAIN/` and `https://YOUR-DOMAIN/explorer/`. The explorer's top bar should
   reach "2,234 pieces · 1,671 structures".
-- Open `https://YOUR-DOMAIN/conditions/gout` (clean URL) and a non-existent address to see the
-  404 page.
+- Open `https://YOUR-DOMAIN/conditions/gout/` (clean URL), `https://YOUR-DOMAIN/tests/cbc/`
+  (an alias: it must redirect once to `/tests/complete-blood-count/`) and a non-existent address to
+  see the 404 page. `https://YOUR-DOMAIN/sitemap.xml` must list the section sitemaps.
 - From a terminal:
 
 ```sh
@@ -67,7 +76,8 @@ curl -sI https://YOUR-DOMAIN/data/hd/glb/heart.glb | grep -iE "^(HTTP|content-ty
 ```
 
 Expect `200`, the security headers, `content-encoding: gzip` (or `br`) on JSON, and
-`model/gltf-binary` with a 30-day cache on geometry.
+`model/gltf-binary` with a 30-day cache on geometry. Actions → **Live site check** runs the whole
+smoke test (every page, every redirect rule, the sitemaps, the explorer) against the live site.
 
 ## 4. Versions, backups and rollback
 
@@ -90,8 +100,10 @@ pushes to the branch only run the QA workflow; they never deploy.
 
 ## 5. Updating the site
 
-Edit `content/*.json`, run `python3 tools/build-content.py`, commit and push (QA runs), then
-cut a release with `tools/release.py` as above. The old address `medical.mjunaid.net` has been
+Edit `content/*.json` (bump the file's `_updated`), run `python3 tools/build-content.py`, commit
+and push (QA and the reference-link check run), then cut a release with `tools/release.py` or the
+Release workflow as above. After a release, run the Live site check and, for new pages, ask Search
+Console to recrawl the sitemap (`SEO.md` lists the owner-side steps). The old address `medical.mjunaid.net` has been
 retired. HTML is cached for ten minutes and data for a day; if a
 change does not appear, hPanel → Advanced → Cache manager → Purge, and hard-refresh the browser.
 
@@ -100,7 +112,8 @@ change does not appear, hPanel → Advanced → Cache manager → Purge, and har
 - **Netlify / Cloudflare Pages / Vercel**: deploy `dist/` (built with `--pretty` and the
   matching `_redirects`/rewrites if you want clean URLs), `_headers` and `vercel.json` in the
   repository carry the same security and caching headers.
-- **GitHub Pages**: the `Deploy to GitHub Pages` workflow publishes the repository as-is (query
-  URLs, no custom headers).
+- **GitHub Pages**: the `Deploy to GitHub Pages` workflow builds and publishes the package
+  (Pages has no custom headers or `.htaccess`; clean URLs work because every page is a real
+  directory, but the 301 alias rules do not).
 - **Any static server**: serve the repository root or `dist/`; without rewrites leave `--pretty`
   off so links use the `?id=` form, which works everywhere.

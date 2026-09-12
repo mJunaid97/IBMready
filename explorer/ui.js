@@ -2,6 +2,7 @@
  * ui.js — navigator (systems / organs / regions), search, picking interactions,
  * structure card, toolbar, labels, study mode, keyboard shortcuts and URL state.
  */
+import { CONFIG } from '../site/config.js';
 import { buildIndex, search } from './search.js';
 
 const PRESETS = {
@@ -23,6 +24,7 @@ export class AtlasUI {
     this.content = content || { systems: {}, organs: [], regions: [], structures: {} };
     this.clinical = clinical || null;           // data/content/clinical.json: entity names + organ/system/structure backlinks
     this.embedded = window.self !== window.top;
+    this.pretty = !!CONFIG.prettyUrls;
     this.sysById = new Map(atlas.systems.map(s => [s.id, s]));
     this.structOfPiece = atlas.pieces.map(p => p.structure);
     this.pinned = new Set();
@@ -66,14 +68,15 @@ export class AtlasUI {
   piecesOfStructure(si) { return this.atlas.structures[si].pieces; }
   primaryStructure() { const f = [...this.v.selected][0]; return f === undefined ? -1 : this.structOfPiece[f]; }
   contentOf(si) { return this.content.structures[this.structure(si).id] || null; }
-  topicHref(kind, id) { const t = this.clinical && this.clinical.types[kind]; return t ? `../${t.dir}/${t.page}?id=${encodeURIComponent(id)}` : '#'; }
+  topicHref(kind, id) { const t = this.clinical && this.clinical.types[kind]; if (!t) return '#'; return this.pretty ? `../${t.dir}/${encodeURIComponent(id)}/` : `../${t.dir}/${t.page}?id=${encodeURIComponent(id)}`; }
+  organHref(id) { return this.pretty ? `../anatomy/${encodeURIComponent(id)}/` : `../anatomy/organ.html?id=${encodeURIComponent(id)}`; }
   /** Clinical topics that reference a structure directly or through its organ. Returns [{kind, name, ids}] in a fixed order. */
   clinicalFor(si, organId) {
     if (!this.clinical) return [];
     const st = si >= 0 ? this.structure(si) : null;
     const sources = [st ? this.clinical.structures[st.id] : null, organId ? this.clinical.organs[organId] : null].filter(Boolean);
     if (!sources.length) return [];
-    const order = ['conditions', 'symptoms', 'physiology', 'tests', 'imaging', 'procedures', 'medications', 'first-aid', 'health'];
+    const order = ['conditions', 'symptoms', 'physiology', 'tests', 'imaging', 'procedures', 'medications', 'drug-classes', 'first-aid', 'health'];
     return order.map(kind => ({ kind, name: this.clinical.types[kind].name, ids: [...new Set(sources.flatMap(m => m[kind] || []))] })).filter(g => g.ids.length);
   }
   _renderClinical(groups, organId) {
@@ -81,7 +84,7 @@ export class AtlasUI {
     if (!groups.length) { wrap.hidden = true; box.innerHTML = ''; return; }
     const target = this.embedded ? ' target="_top"' : '';
     box.innerHTML = groups.map(g => `<div class="clin-group"><span class="eyebrow">${esc(g.name)}</span><div class="chips">${g.ids.slice(0, 5).map(id => `<a class="chip" href="${this.topicHref(g.kind, id)}"${target}>${esc(this.clinical.names[g.kind][id] || id)}</a>`).join('')}${g.ids.length > 5 ? `<span class="chip chip-sm">+${g.ids.length - 5}</span>` : ''}</div></div>`).join('')
-      + (organId ? `<a class="clin-more" href="../organs/organ.html?id=${encodeURIComponent(organId)}"${target}>All topics for the ${esc((this.organ(organId) || {}).name || organId).toLowerCase()} ↗</a>` : '');
+      + (organId ? `<a class="clin-more" href="${this.organHref(organId)}"${target}>All topics for the ${esc((this.organ(organId) || {}).name || organId).toLowerCase()} ↗</a>` : '');
     wrap.hidden = false;
   }
   organ(id) { return (this.content.organs || []).find(o => o.id === id); }

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""classify.py — build the Human Atlas source manifest from BodyParts3D tables.
+"""classify.py — build the Anatomy Nexus atlas source manifest from BodyParts3D tables.
 
 Inputs
   --bp3d DIR   BodyParts3D 4.0 is-a release: isa_BP3D_4.0_obj_99/*.obj + isa_element_parts.txt + isa_parts_list_e.txt

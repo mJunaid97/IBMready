@@ -1,39 +1,67 @@
-# Human Body platform — Apache / LiteSpeed configuration (Hostinger shared hosting and similar).
-# Everything here is optional on other hosts; the site also works with no server configuration.
+# Anatomy Nexus — Apache / LiteSpeed configuration (Hostinger shared hosting and similar).
+# tools/package-site.py copies this file into dist/ and fills in the generated URL rules (alias redirects,
+# query-URL redirects, trailing slashes) at the marker below. The site also works with no server
+# configuration at all; these rules add HTTPS, one canonical URL per page, media types, caching and headers.
 
 Options -Indexes -MultiViews
 ServerSignature Off
 DirectoryIndex index.html
 
-# ---- HTTPS and one canonical host (Hostinger terminates TLS on a proxy: check the forwarded header too)
 <IfModule mod_rewrite.c>
   RewriteEngine On
+
+  # ---- HTTPS and one canonical host, in one hop (Hostinger terminates TLS on a proxy: check the forwarded header too)
   RewriteCond %{HTTPS} !=on
   RewriteCond %{HTTP:X-Forwarded-Proto} !=https
-  RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
-  # one host: www.example.com -> example.com
+  RewriteCond %{HTTP_HOST} ^(?:www\.)?(.+)$ [NC]
+  RewriteRule ^ https://%1%{REQUEST_URI} [L,R=301]
   RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
   RewriteRule ^ https://%1%{REQUEST_URI} [L,R=301]
 
-  # ---- clean URLs: /conditions/gout -> conditions/condition.html?id=gout (site/config.js prettyUrls: true)
-  # Only for paths that are not real files or directories, and only for slug-shaped segments (no dots), so
-  # index.html, the section scripts and every asset are served directly.
+  # @@GENERATED-URL-RULES@@
+
+  # ---- clean-URL fallback: /conditions/gout/ -> conditions/condition.html?id=gout when no prerendered page exists
+  # Only for paths that are not real files or directories and only for slug-shaped segments, so index.html, the
+  # section scripts and every asset are served directly. A prerendered site never reaches these rules.
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule ^anatomy/([A-Za-z0-9-]+)/?$ anatomy/organ.html?id=$1 [L,QSA]
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule ^systems/([A-Za-z0-9-]+)/?$ systems/system.html?id=$1 [L,QSA]
   RewriteCond %{REQUEST_FILENAME} !-f
   RewriteCond %{REQUEST_FILENAME} !-d
   RewriteRule ^physiology/([A-Za-z0-9-]+)/?$ physiology/topic.html?id=$1 [L,QSA]
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
   RewriteRule ^symptoms/([A-Za-z0-9-]+)/?$ symptoms/symptom.html?id=$1 [L,QSA]
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
   RewriteRule ^conditions/([A-Za-z0-9-]+)/?$ conditions/condition.html?id=$1 [L,QSA]
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
   RewriteRule ^tests/([A-Za-z0-9-]+)/?$ tests/test.html?id=$1 [L,QSA]
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
   RewriteRule ^imaging/([A-Za-z0-9-]+)/?$ imaging/study.html?id=$1 [L,QSA]
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
   RewriteRule ^procedures/([A-Za-z0-9-]+)/?$ procedures/procedure.html?id=$1 [L,QSA]
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
   RewriteRule ^medications/([A-Za-z0-9-]+)/?$ medications/medication.html?id=$1 [L,QSA]
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule ^drug-classes/([A-Za-z0-9-]+)/?$ drug-classes/class.html?id=$1 [L,QSA]
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
   RewriteRule ^first-aid/([A-Za-z0-9-]+)/?$ first-aid/topic.html?id=$1 [L,QSA]
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
   RewriteRule ^health/([A-Za-z0-9-]+)/?$ health/topic.html?id=$1 [L,QSA]
-  RewriteRule ^organs/([A-Za-z0-9-]+)/?$ organs/organ.html?id=$1 [L,QSA]
-  RewriteRule ^systems/([A-Za-z0-9-]+)/?$ systems/system.html?id=$1 [L,QSA]
 </IfModule>
 
-# ---- custom error page
+# ---- custom error page (a real 404 status, never a 200 "not found" page)
 ErrorDocument 404 /404.html
 
 # ---- correct media types (the explorer checks the glTF magic bytes but browsers still prefer the right type)
@@ -44,7 +72,8 @@ ErrorDocument 404 /404.html
   AddType image/svg+xml .svg
   AddType application/manifest+json .webmanifest
   AddType application/wasm .wasm
-  AddCharset utf-8 .html .css .js .mjs .json .svg .md .txt .webmanifest
+  AddType application/xml .xml
+  AddCharset utf-8 .html .css .js .mjs .json .svg .md .txt .webmanifest .xml
 </IfModule>
 
 # ---- compression (JSON and JS shrink 4-6x; GLB is already meshopt-compressed but still gains ~10%)
@@ -55,7 +84,7 @@ ErrorDocument 404 /404.html
   AddOutputFilterByType BROTLI_COMPRESS text/html text/plain text/css text/markdown application/javascript application/json application/manifest+json image/svg+xml model/gltf-binary application/xml
 </IfModule>
 
-# ---- caching: fingerprint-free but versioned by deploy; geometry and vendor code change rarely
+# ---- caching: fingerprint-free but versioned by deploy; geometry, previews and vendor code change rarely
 <IfModule mod_expires.c>
   ExpiresActive On
   ExpiresByType text/html "access plus 10 minutes"
@@ -66,6 +95,7 @@ ErrorDocument 404 /404.html
   ExpiresByType image/jpeg "access plus 30 days"
   ExpiresByType image/png "access plus 30 days"
   ExpiresByType image/svg+xml "access plus 30 days"
+  ExpiresByType application/xml "access plus 1 hour"
 </IfModule>
 <IfModule mod_headers.c>
   <FilesMatch "\.(glb|jpg|png)$">
@@ -76,6 +106,9 @@ ErrorDocument 404 /404.html
   </FilesMatch>
   <FilesMatch "\.html?$">
     Header set Cache-Control "public, max-age=600, must-revalidate"
+  </FilesMatch>
+  <FilesMatch "\.xml$">
+    Header set Cache-Control "public, max-age=3600"
   </FilesMatch>
 
   # ---- security headers (the pages also carry a meta CSP; frame-ancestors can only be set here)

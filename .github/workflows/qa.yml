@@ -17,17 +17,20 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - name: Compile content (fails on any dangling link)
+      - name: Compile content (fails on any dangling link, alias clash or malformed reference)
         run: python3 tools/build-content.py
       - name: Compiled data must match the committed data
-        run: git diff --exit-code --stat -- data/content
+        run: git diff --exit-code --stat -- data/content site/site-meta.js
 
   smoke:
-    name: Site smoke test in headless Chromium
+    name: Production build and smoke test in headless Chromium
     runs-on: ubuntu-latest
     needs: content
     steps:
       - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
       - uses: actions/setup-node@v4
         with:
           node-version: "22"
@@ -36,12 +39,18 @@ jobs:
         run: |
           npm ci
           npx playwright install --with-deps chromium
-      - name: Serve the site
+      - name: Build the production package (clean URLs, prerendered pages, sitemaps, redirects)
+        run: python3 tools/package-site.py --site-url https://anatomynexus.com --pretty --prerender --out dist
+      - name: Serve the package with the production URL rules emulated
         run: |
-          python3 -m http.server 8123 --bind 127.0.0.1 > /tmp/http.log 2>&1 &
-          for i in $(seq 1 20); do curl -sf http://127.0.0.1:8123/index.html > /dev/null && break; sleep 0.5; done
+          python3 tools/qa/serve.py --dir dist --port 8124 > /tmp/serve.log 2>&1 &
+          for i in $(seq 1 20); do curl -sf http://127.0.0.1:8124/ > /dev/null && break; sleep 0.5; done
       - name: Run smoke test
         working-directory: tools/qa
+        env:
+          BASE_URL: http://127.0.0.1:8124/
+          PRETTY_URLS: "1"
+          PRERENDERED: "1"
         run: node smoke.mjs
       - name: Upload screenshots
         if: always()
