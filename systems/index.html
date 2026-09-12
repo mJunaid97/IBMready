@@ -2,6 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self'; connect-src 'self'; frame-src 'self'; worker-src 'self' blob:; object-src 'none'; base-uri 'self'; form-action 'self'">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
   <title>Body systems · Human Body</title>
   <meta name="description" content="The sixteen anatomical systems of the Human Body atlas: skeleton, muscles, heart, vessels, nerves, organs and more, each with a 3D view.">
   <link rel="icon" href="../favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="../site/site.css">
@@ -13,15 +15,6 @@
   <p class="lead">The atlas groups its 2,234 pieces into sixteen systems. Open a system for an overview, its functions and clinical notes, the organs it contains and every modelled structure.</p>
   <div class="grid grid-3" id="systems"></div>
 </main>
-<script type="module">
-  import { renderHeader, renderFooter, loadData, esc, fmt } from '../site/site.js';
-  renderHeader('systems'); renderFooter();
-  const { atlas, content } = await loadData();
-  document.getElementById('systems').innerHTML = atlas.systems.map(s => {
-    const c = content.systems[s.id] || {};
-    const organs = content.organs.filter(o => o.system === s.id).length;
-    return `<a class="card" href="system.html?id=${s.id}"><h3><span class="dot" style="background:${s.color}"></span>${esc(s.name)}</h3><p>${esc(c.summary || s.summary)}</p><div class="meta">${fmt(s.count)} pieces · ${fmt(s.triangles)} triangles${organs ? ` · ${organs} organ${organs > 1 ? 's' : ''}` : ''}</div></a>`;
-  }).join('');
-</script>
+<script type="module" src="index.js"></script>
 </body>
 </html>

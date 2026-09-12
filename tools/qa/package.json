@@ -1,0 +1,12 @@
+{
+  "name": "human-body-qa",
+  "private": true,
+  "type": "module",
+  "description": "Headless-browser smoke test for the Human Body platform (run by .github/workflows/qa.yml).",
+  "scripts": {
+    "test": "node smoke.mjs"
+  },
+  "devDependencies": {
+    "playwright": "^1.58.2"
+  }
+}

@@ -80,6 +80,46 @@ To add a condition, test, medication or any other entity: add a key to the match
 `python3 tools/build-content.py`, and the page, its links, the reverse links on every page it
 mentions, the explorer's structure cards and the search index all update.
 
+## Quality checks
+
+`.github/workflows/qa.yml` runs on every push and pull request:
+
+1. **Content graph** — `python3 tools/build-content.py` must succeed (any dangling link fails
+   it) and the compiled `data/content/` must match what is committed.
+2. **Smoke test** — `tools/qa/smoke.mjs` drives headless Chromium through every page type, all
+   182 entity pages, every internal link, the header search, the explorer (geometry load,
+   structure card, multi-structure links, locate mode) and a phone-width layout check, then
+   re-visits every page type with the Content-Security-Policy enforced. It fails on any console
+   error, failed request, CSP violation or horizontal overflow.
+
+Run the same checks locally:
+
+```sh
+python3 tools/build-content.py && git diff --exit-code -- data/content
+python3 -m http.server 8123 &            # serve the repository root
+cd tools/qa && npm install && npx playwright install chromium && node smoke.mjs
+```
+
+## Security
+
+There is no server-side code and no third-party script. Every page loads external ES modules
+only and ships a `Content-Security-Policy` meta tag (`script-src 'self'`, `object-src 'none'`,
+`base-uri 'self'`); all content is escaped before rendering, reference links must be `https://`
+(checked by the compiler and at render time), and URL parameters are looked up against known
+ids rather than echoed. `_headers` and `vercel.json` add `frame-ancestors`, `nosniff` and
+`Referrer-Policy` on hosts that support response headers. See `SECURITY.md`.
+
+## Deploying
+
+The repository root is the site. Options:
+
+- **GitHub Pages**: in the repository settings choose Pages → Source → *GitHub Actions*; the
+  `Deploy to GitHub Pages` workflow publishes on every push to `main` and can be run manually
+  from any branch. The site works under a project sub-path.
+- **Netlify / Cloudflare Pages / Vercel**: deploy the root with no build command; `_headers`
+  and `vercel.json` supply the security and caching headers.
+- **Any static server**: `python3 -m http.server`, nginx, S3 + CloudFront, and so on.
+
 ## Rebuilding the atlas from source
 
 Requires Node 18+ and Python 3.

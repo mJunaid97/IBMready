@@ -2,15 +2,14 @@
 <html lang="en">
 <head>
   <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self'; connect-src 'self'; frame-src 'self'; worker-src 'self' blob:; object-src 'none'; base-uri 'self'; form-action 'self'">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
   <title>Imaging · Human Body</title>
   <meta name="description" content="X-ray, CT, MRI, ultrasound, PET, mammography and fluoroscopy: how each works, what it shows, radiation and preparation.">
   <link rel="icon" href="../favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="../site/site.css">
 </head>
-<body>
+<body data-type="imaging" data-page="index">
 <main class="wrap" id="main"><p class="muted" style="padding:40px 0">Loading…</p></main>
-<script type="module">
-  import { renderIndex } from '../site/entity.js';
-  renderIndex('imaging');
-</script>
+<script type="module" src="../site/section.js"></script>
 </body>
 </html>

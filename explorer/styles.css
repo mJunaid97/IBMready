@@ -246,3 +246,5 @@ a.chip { text-decoration: none; color: inherit; display: inline-block; }
   .app.is-embed .panel-right .info-desc, .app.is-embed #info-tags-wrap, .app.is-embed .panel-right .info-section:not(#info-clinical-wrap) { display: none; }
   .app.is-embed #info-clinical .clin-group:nth-child(n+3) { display: none; }
 }
+
+.app.is-embed #toast { display: none !important; }

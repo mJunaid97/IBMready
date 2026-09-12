@@ -2,6 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self'; connect-src 'self'; frame-src 'self'; worker-src 'self' blob:; object-src 'none'; base-uri 'self'; form-action 'self'">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
   <title>Organs · Human Body</title>
   <meta name="description" content="Organs and skeletal groups of the Human Body atlas, from brain and heart to hand and foot, each assembled from its modelled pieces with a live 3D view.">
   <link rel="icon" href="../favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="../site/site.css">
@@ -13,13 +15,6 @@
   <p class="lead">Organs and skeletal groups are assembled from the atlas pieces that make them up, so each one can be selected, isolated and studied as a whole.</p>
   <div id="organs"></div>
 </main>
-<script type="module">
-  import { renderHeader, renderFooter, loadData, esc } from '../site/site.js';
-  renderHeader('organs'); renderFooter();
-  const { atlas, content } = await loadData();
-  const bySys = new Map();
-  for (const o of content.organs) { if (!bySys.has(o.system)) bySys.set(o.system, []); bySys.get(o.system).push(o); }
-  document.getElementById('organs').innerHTML = atlas.systems.filter(s => bySys.has(s.id)).map(s => `<h2><span class="card dot" style="display:inline-block;width:12px;height:12px;border-radius:50%;background:${s.color};padding:0;box-shadow:none;margin-right:6px"></span>${esc(s.name)}</h2><div class="grid grid-3">${bySys.get(s.id).map(o => `<a class="card" href="organ.html?id=${o.id}"><h3>${esc(o.name)}</h3><p>${esc(o.summary)}</p><div class="meta">${o.structures.length} structures${o.region ? ' · ' + esc(content.regions.find(r => r.id === o.region)?.name || '') : ''}</div></a>`).join('')}</div>`).join('');
-</script>
+<script type="module" src="index.js"></script>
 </body>
 </html>

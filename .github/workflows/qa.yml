@@ -1,0 +1,52 @@
+name: QA
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  content:
+    name: Content graph validates and is up to date
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Compile content (fails on any dangling link)
+        run: python3 tools/build-content.py
+      - name: Compiled data must match the committed data
+        run: git diff --exit-code --stat -- data/content
+
+  smoke:
+    name: Site smoke test in headless Chromium
+    runs-on: ubuntu-latest
+    needs: content
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Install Playwright
+        working-directory: tools/qa
+        run: |
+          npm ci
+          npx playwright install --with-deps chromium
+      - name: Serve the site
+        run: |
+          python3 -m http.server 8123 --bind 127.0.0.1 > /tmp/http.log 2>&1 &
+          for i in $(seq 1 20); do curl -sf http://127.0.0.1:8123/index.html > /dev/null && break; sleep 0.5; done
+      - name: Run smoke test
+        working-directory: tools/qa
+        run: node smoke.mjs
+      - name: Upload screenshots
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: smoke-screenshots
+          path: tools/qa/shots
+          if-no-files-found: ignore

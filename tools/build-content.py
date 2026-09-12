@@ -199,6 +199,10 @@ def compile_knowledge(atlas, out_organs, systems, terms):
                         if tt != key or field2 == "related": note(tt, v, key, eid)
                     else: errors.append(f"{key}/{eid}.{field}: unknown {tt} id '{v}'")
             e["links"] = dict(links)
+            # ---- references must be plain https links (they are rendered as outbound anchors)
+            for r in e.get("references", []) or []:
+                if not isinstance(r, dict) or not re.match(r"^https://[^\s\"'<>]+$", str(r.get("url", ""))) or not r.get("title"):
+                    errors.append(f"{key}/{eid}: reference must have a title and an https:// url: {r!r}")
     # ---- attach backlinks (reverse edges) to every entity
     for key, T in types.items():
         for eid, e in T["items"].items():

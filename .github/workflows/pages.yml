@@ -1,0 +1,34 @@
+name: Deploy to GitHub Pages
+
+# Publishes the static site. Enable Pages in the repository settings with "GitHub Actions" as
+# the source, then push to main (or run this workflow manually from any branch).
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Leave only what the site serves
+        run: rm -rf tools .github content/*.json.bak 2>/dev/null || true
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: .
+      - id: deployment
+        uses: actions/deploy-pages@v4

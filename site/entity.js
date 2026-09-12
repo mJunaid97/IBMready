@@ -81,9 +81,11 @@ function termsHtml(e, data) {
   const byId = new Map(data.terms.terms.map(t => [t.id, t]));
   return `<h3>Terms to know</h3><div class="chips">${ids.map(id => byId.get(id)).filter(Boolean).map(t => `<a class="chip" href="${link.term(t.id)}" title="${esc(t.definition)}">${esc(t.term)}</a>`).join('')}</div>`;
 }
+/** Only plain http(s) URLs may become links; anything else (javascript:, data:, relative) is dropped. */
+const safeUrl = (u) => /^https?:\/\/[^\s"'<>]+$/i.test(String(u || '')) ? String(u) : '';
 function referencesHtml(e) {
-  const refs = e.references || []; if (!refs.length) return '';
-  return `<h3>Sources</h3><ul class="plain small">${refs.map(r => `<li><a href="${esc(r.url)}" target="_blank" rel="noopener">${esc(r.title)}</a></li>`).join('')}</ul>`;
+  const refs = (e.references || []).filter(r => r && safeUrl(r.url)); if (!refs.length) return '';
+  return `<h3>Sources</h3><ul class="plain small">${refs.map(r => `<li><a href="${esc(safeUrl(r.url))}" target="_blank" rel="noopener noreferrer">${esc(r.title)}</a></li>`).join('')}</ul>`;
 }
 
 // ------------------------------------------------------------ templates

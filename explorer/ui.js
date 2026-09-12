@@ -611,10 +611,10 @@ export class AtlasUI {
     const p = new URLSearchParams(location.hash.slice(1));
     const q = new URLSearchParams(location.search);
     if (![...p.keys()].length && ![...q.keys()].length) return;
-    if (p.get('sys')) { this.v.setSystemsVisible(p.get('sys').split(',')); this._setPresetActive(null); if (!p.get('s') && !p.get('c') && !p.get('o') && !p.get('r')) this.v.setView('frontLeft', false); }
+    if (p.get('sys')) { const ids = p.get('sys').split(',').filter(id => this.sysById.has(id)); if (ids.length) { this.v.setSystemsVisible(ids); this._setPresetActive(null); if (!p.get('s') && !p.get('c') && !p.get('o') && !p.get('r')) this.v.setView('frontLeft', false); } }
     if (p.get('x') === '1') this.setXray(true);
-    if (p.get('e')) this.v.setExplode(parseFloat(p.get('e')));
-    if (p.get('slice')) this.setSliceAxis(p.get('slice'));
+    if (p.get('e')) { const e = parseFloat(p.get('e')); if (Number.isFinite(e)) this.v.setExplode(Math.min(1, Math.max(0, e))); }
+    if (['x', 'y', 'z'].includes(p.get('slice'))) this.setSliceAxis(p.get('slice'));
     if (p.get('r')) { const ri = (this.content.regions || []).findIndex(r => r.id === p.get('r')); if (ri >= 0) this.isolateRegion(ri); }
     if (p.get('s')) {
       const ids = p.get('s').split(','); const byId = new Map(this.atlas.structures.map((s, i) => [s.id, i]));
@@ -624,7 +624,7 @@ export class AtlasUI {
     }
     if (p.get('c')) { const ci = this.atlas.concepts.findIndex(c => c.id === p.get('c')); if (ci >= 0) this.selectConcept(ci, { focus: true }); }
     if (p.get('o')) { const oi = this.organIndex(p.get('o')); if (oi >= 0) this.selectOrgan(oi, { focus: true }); }
-    if (q.get('study')) { const sys = q.get('sys'); if (sys) { this.v.setSystemsVisible(sys.split(',')); this._setPresetActive(null); } this.toggleStudy(true); this.startStudy(['cards', 'locate'].includes(q.get('study')) ? q.get('study') : 'quiz'); }
+    if (q.get('study')) { const sys = (q.get('sys') || '').split(',').filter(id => this.sysById.has(id)); if (sys.length) { this.v.setSystemsVisible(sys); this._setPresetActive(null); } this.toggleStudy(true); this.startStudy(['cards', 'locate'].includes(q.get('study')) ? q.get('study') : 'quiz'); }
   }
   share() {
     this._updateShareState();

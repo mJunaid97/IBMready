@@ -3,6 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self'; connect-src 'self'; frame-src 'self'; worker-src 'self' blob:; object-src 'none'; base-uri 'self'; form-action 'self'">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
   <title>Human Body · interactive anatomy and medical knowledge platform</title>
   <meta name="description" content="An open, interconnected human body knowledge platform: 2,234 anatomical structures in 3D, body systems and organs, physiology, symptoms, conditions, tests, imaging, procedures, medications, first aid, health and study tools, all linked together.">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
@@ -49,19 +51,6 @@
 
   <div class="callout">This is an educational platform built on one adult male reference body and public clinical guidance. It is not a diagnostic tool and does not give medical advice. In an emergency, call your local emergency number.</div>
 </main>
-<script type="module">
-  import { renderHeader, renderFooter, TYPES, typeLink, loadData, loadClinical, esc } from './site/site.js';
-  renderHeader('home'); renderFooter();
-  const clinical = await loadClinical().catch(() => null);
-  const count = (t) => clinical ? Object.keys(clinical.names[t] || {}).length : '';
-  const card = (t, extra = '') => `<a class="card" href="${typeLink(t)}"><div class="icon">${TYPES[t].icon}</div><h3>${esc(TYPES[t].name)} ${count(t) ? `<span class="badge">${count(t)}</span>` : ''}</h3><p>${esc(TYPES[t].blurb)}</p>${extra}</a>`;
-  document.getElementById('types').innerHTML = ['symptoms', 'conditions', 'tests', 'imaging', 'procedures', 'medications'].map(t => card(t)).join('');
-  document.getElementById('everyday').innerHTML = card('first-aid') + card('health') + `<a class="card" href="search/index.html"><div class="icon">🔍</div><h3>Search everything</h3><p>One search across structures, organs, systems, terms and every clinical topic, with results that link straight into the 3D atlas.</p></a>`;
-  loadData().then(({ atlas, content }) => {
-    const set = (i, v) => { document.querySelectorAll('.stat b')[i].textContent = v.toLocaleString('en-US'); };
-    set(0, atlas.totals.pieces); set(1, atlas.totals.structures);
-    if (clinical) set(2, Object.values(clinical.names).reduce((n, m) => n + Object.keys(m).length, 0));
-  }).catch(() => {});
-</script>
+<script type="module" src="site/home.js"></script>
 </body>
 </html>

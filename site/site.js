@@ -57,29 +57,30 @@ export function renderHeader(active) {
   initTheme();
   const primary = [['explorer/index.html', 'Explorer', 'explorer'], ['systems/index.html', 'Systems', 'systems'], ['organs/index.html', 'Organs', 'organs'], ['conditions/index.html', 'Conditions', 'conditions'], ['symptoms/index.html', 'Symptoms', 'symptoms'], ['first-aid/index.html', 'First aid', 'first-aid'], ['study/index.html', 'Study', 'study']];
   const more = [['physiology/index.html', 'Physiology'], ['tests/index.html', 'Medical tests'], ['imaging/index.html', 'Imaging'], ['procedures/index.html', 'Procedures'], ['medications/index.html', 'Medications'], ['health/index.html', 'Health'], ['learn/terminology.html', 'Terminology'], ['search/index.html', 'Search everything'], ['roadmap/index.html', 'Roadmap']];
-  const html = `<header class="site-header"><div class="wrap">
+  const html = `<a class="skip-link" href="#main">Skip to content</a><header class="site-header"><div class="wrap">
     <a class="brand" href="${ROOT}index.html"><span class="brand-mark" aria-hidden="true"></span> Human Body</a>
     <form class="hsearch" id="hsearch" action="${ROOT}search/index.html" role="search" autocomplete="off">
       <input name="q" id="hsearch-q" type="search" placeholder="Search structures, conditions, tests…" aria-label="Search the site" autocomplete="off">
       <ul class="hsearch-results" id="hsearch-results" hidden></ul>
     </form>
-    <button class="menu-toggle" id="menu-toggle" aria-label="Menu">☰</button>
+    <button class="menu-toggle" id="menu-toggle" aria-label="Menu" aria-expanded="false" aria-controls="site-nav">☰</button>
     <nav class="nav" id="site-nav" aria-label="Site">
-      ${primary.map(([h, n, key]) => `<a href="${ROOT}${h}" class="${active === key ? 'is-active' : ''}">${n}</a>`).join('')}
+      ${primary.map(([h, n, key]) => `<a href="${ROOT}${h}" class="${active === key ? 'is-active' : ''}"${active === key ? ' aria-current="page"' : ''}>${n}</a>`).join('')}
       <details><summary>More ▾</summary><div class="menu">
         ${more.map(([h, n]) => `<a href="${ROOT}${h}">${n}</a>`).join('')}
       </div></details>
-      <button class="theme-btn" id="theme-btn" title="Toggle light / dark" aria-label="Toggle theme">◐</button>
+      <button class="theme-btn" id="theme-btn" title="Toggle light / dark" aria-label="Toggle theme"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a9 9 0 1 0 9 9c0-.5 0-1-.1-1.4A6 6 0 0 1 12 3z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg></button>
     </nav></div></header>`;
   document.body.insertAdjacentHTML('afterbegin', html);
-  document.getElementById('menu-toggle').addEventListener('click', () => document.getElementById('site-nav').classList.toggle('is-open'));
+  const main = document.querySelector('main'); if (main && !main.id) main.id = 'main';
+  document.getElementById('menu-toggle').addEventListener('click', (e) => { const open = document.getElementById('site-nav').classList.toggle('is-open'); e.currentTarget.setAttribute('aria-expanded', String(open)); });
   document.getElementById('theme-btn').addEventListener('click', toggleTheme);
   bindHeaderSearch();
 }
 
 export function renderFooter() {
   document.body.insertAdjacentHTML('beforeend', `<footer class="site-footer"><div class="wrap">
-    <p>3D anatomy: <a href="https://dbarchive.biosciencedbc.jp/en/bodyparts3d/" target="_blank" rel="noopener">BodyParts3D</a>, © The Database Center for Life Science, licensed under CC BY 4.0. Structure names follow the Foundational Model of Anatomy. Clinical, first-aid and health content is written for education and follows public guidance from the NHS, WHO and Resuscitation Council UK; it is not medical advice, diagnosis or treatment. In an emergency call your local emergency number.</p>
+    <p>3D anatomy: <a href="https://dbarchive.biosciencedbc.jp/en/bodyparts3d/" target="_blank" rel="noopener noreferrer">BodyParts3D</a>, © The Database Center for Life Science, licensed under CC BY 4.0. Structure names follow the Foundational Model of Anatomy. Clinical, first-aid and health content is written for education and follows public guidance from the NHS, WHO and Resuscitation Council UK; it is not medical advice, diagnosis or treatment. In an emergency call your local emergency number.</p>
     <p><a href="${ROOT}roadmap/index.html">Roadmap</a> · <a href="${ROOT}search/index.html">Search</a> · <a href="${ROOT}data/ATTRIBUTION.md">Attribution &amp; licences</a> · <a href="${ROOT}ARCHITECTURE.md">Architecture</a></p>
   </div></footer>`);
 }
