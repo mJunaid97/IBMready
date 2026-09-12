@@ -151,7 +151,7 @@ SOURCES = {
     "openstax.org": ("OpenStax, Rice University", 2), "mayoclinic.org": ("Mayo Clinic", 2), "clevelandclinic.org": ("Cleveland Clinic", 2),
     "hopkinsmedicine.org": ("Johns Hopkins Medicine", 2), "bmj.com": ("BMJ", 2), "thelancet.com": ("The Lancet", 2), "nejm.org": ("NEJM", 2), "ncbi.nlm.nih.gov": ("NCBI Bookshelf / PubMed", 2),
     "bhf.org.uk": ("British Heart Foundation", 3), "sja.org.uk": ("St John Ambulance", 3), "asthmaandlung.org.uk": ("Asthma + Lung UK", 3),
-    "britishlivertrust.org.uk": ("British Liver Trust", 3), "stroke.org.uk": ("Stroke Association", 3), "epilepsy.org.uk": ("Epilepsy Action", 3),
+    "britishlivertrust.org.uk": ("British Liver Trust", 3), "lung.org": ("American Lung Association", 3), "stroke.org.uk": ("Stroke Association", 3), "epilepsy.org.uk": ("Epilepsy Action", 3),
 }
 TIER_LABEL = {1: "Official health body, guideline or professional society", 2: "Textbook, journal or academic medical centre", 3: "Charity or other secondary resource"}
 _unknown_hosts = set()
