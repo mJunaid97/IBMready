@@ -13,8 +13,8 @@ where each rule lives, and what an editor must do to add or change clinical cont
 | BiologicalTarget | `content/targets.json` | `targets` | `/targets/<slug>/` | kind (receptor, enzyme, ion channel, transporter, protein, cell, pathway), what it does, role, location, medicines and classes that act on it |
 | Medication | `content/medications.json` | `medications` | `/medications/<slug>/` | brands by region, prescription status by region, routes, targets, pathway, indications by status and jurisdiction, typed warnings, contraindications, monitoring plan, special populations, food / alcohol / supplement interactions, condition cautions, lab effects, pharmacokinetics, sourced side effects |
 | DrugClass | `content/drug-classes.json` | `classes` | `/drug-classes/<slug>/` | mechanism, targets, members, class effects, class warnings, class interactions, therapeutic-duplication rule |
-| DrugInteraction | `content/interactions.json` | `interactions` (list) | medication pages, class pages, `/interactions/` | pair records: drug–drug, drug–class, therapeutic duplication (see §4) |
-| MedicationProduct | `content/products.json` | `products` | search, `/interactions/` | brand or combination product → active ingredients (site medications, or named ingredients with an optional class) |
+| DrugInteraction | `content/interactions.json` | `interactions` (list) | medication pages, class pages, `/tools/drug-interaction-checker/` | pair records: drug–drug, drug–class, therapeutic duplication (see §4) |
+| MedicationProduct | `content/products.json` | `products` | search, `/tools/drug-interaction-checker/` | brand or combination product → active ingredients (site medications, or named ingredients with an optional class) |
 | Comparison | `content/comparisons.json` | `comparisons` (list) | `/compare/<slug>/` | two entities, rows drawn from their properties, where each fits, references |
 
 The canonical medication entity is the active ingredient; brands are `brands` on the ingredient
@@ -87,13 +87,54 @@ Severity states and how they are assigned from the cited wording:
 No state is inferred from the pharmacology; where the sources disagree, both are kept as evidence
 and the record is left at the weaker state with `review: needs-review` until a person resolves it.
 
-The checker (`/interactions/`, `site/interactions.js`, `noindex`) resolves every entry to canonical
-ingredients (brand → product → ingredients; a class is matched through each medicine's class),
-checks every pair, expands combination products, and flags therapeutic duplication (the same
-ingredient from two entries, or two members of a class whose `duplicationRule` is set). It never
-shows "safe": the no-result state reads "No documented interaction found in the sources currently
-indexed by Anatomy Nexus" followed by "Absence from this database does not prove that no
-interaction exists". Its records show their review status on every card.
+A record with `bName` may also carry `bAgents`: the individual medicines the name stands for
+(strings, or `{name, aliases}`), which become **named substances** the checker offers by name
+(`"Clarithromycin or erythromycin"` → Clarithromycin, Erythromycin); a record with `bAgents: []`
+is matched only through the duplicate-ingredient check. Members listed on a class page that have
+no medication page become named substances too, so a class-level record and a duplication rule can
+be applied to them, but only when at least one record can apply (otherwise every result would be
+"no known interaction" for lack of data). The compiler also attaches to every record the
+knowledge-graph links the checker shows: the two drug classes, the organs both medicines share,
+the anatomy and physiology of the sourced mechanism (`MECHANISM_LINKS`) and the test, biomarker or
+physiology page of each monitoring item (`MONITORING_LINKS`, then exact name or alias); every id
+is validated and an item without a page stays plain text.
+
+### The Drug Interaction Checker
+
+`/tools/drug-interaction-checker/` (`site/checker.js` over the pure engine
+`site/interaction-engine.js`, which also runs in Node for `tools/qa/engine-test.mjs`). The engine
+implements the checker's API contract: `check(entries)` for `[{kind: medication | product |
+substance, id}]` returns `{status, medications, pairsChecked, pairs, interactions, duplications,
+noKnownInteractionPairs, summary, related, sources, warnings, sourceMetadata}`. It resolves every
+entry to canonical ingredients (brand → medicine; product → ingredients; named substance), checks
+**every unique pair** of entries across every pair of their ingredients (a medicine–medicine record;
+a class record applied only to a member of that class, as the source states; a record that names
+the substance), reports the same ingredient from two entries and therapeutic duplication within a
+class whose `duplicationRule` is set, lists the pairs with no record under "No known interaction
+identified in the available data" followed by "This does not prove that the combination is safe
+for every person…", and never says "safe". Entries that cannot be resolved (including a drug
+class, which cannot be checked as a whole) become warnings; an entry without a page marks the
+result `partial` ("coverage limited"); more than ten entries is allowed with a warning.
+
+**Display tiers.** The checker shows each record's source state as one of the specification's five
+severity tiers, mapped in `STATE_TIER` without adding information:
+
+| Source state | Display tier |
+| --- | --- |
+| `CONTRAINDICATED`, `AVOID_COMBINATION` | Contraindicated or avoid |
+| `SPECIALIST_OR_CLOSE_MONITORING` | Major |
+| `MONITOR_OR_ADJUST` | Moderate |
+| *(no state)* | Minor: nothing is labelled minor by inference; the sources describe management, not grades of harm |
+| `INTERACTION_DOCUMENTED`, `NO_SEVERITY_ASSIGNED` | Severity not graded (never "minor") |
+
+Results are ordered contraindicated → major → moderate → minor → not graded, then duplication, then
+no known interaction; every card carries the tier, the source state, its `severitySource`, the
+sources and the review status. The tool page is indexable with a fixed canonical; `?drugs=` (or
+`?drug=` from a medication page's *Check interactions* section) pre-selects medicines and is the only
+place a selection lives. Analytics events carry counts and tiers only, and the page URL is reported
+without its query string. The methodology page `/editorial/drug-interaction-methodology/` documents
+the sources, the mapping above (rendered from the same tables), what the checker can and cannot
+detect, the update schedule and the review status.
 
 ## 5. Review status
 
@@ -125,10 +166,15 @@ added under `review` when a review happens and is shown in the editorial block.
 
 Dosing (the specification allows it to be limited in a first release; the medication page says why
 it is absent), a result-explanation tool (§19 of the specification; the biomarker pages carry the
-educational context it would use), indexable pair pages for interactions (§88: the checker is
-`noindex` and no pair pages are generated), and reviewer workflow tooling beyond the status field.
+educational context it would use), indexable pair pages for interactions (§88: the checker is one
+indexable tool page and no pair pages are generated), drug–food, drug–disease, drug–pregnancy,
+drug–allergy and drug–lab interactions in the checker (v1 is drug–drug; the medication pages carry
+food, alcohol and supplement interactions and the special-population notes), a server-side API (the
+site is static; the contract is the engine module, callable from any runtime), and reviewer workflow
+tooling beyond the status field. The clinician-approved validation set the specification requires
+before a clinical release is not yet in place: every record remains `source-verified`.
 
-## 8. Comprehensive tests and medications (v1.3): taxonomy, terminology, quality gates
+## 8. Comprehensive tests and medications (v1.4): taxonomy, terminology, quality gates
 
 How the *Comprehensive Clinical Tests & Medications Master Specification* is implemented. The specification asks
 for an architecture that can represent any clinically meaningful test or medicine that maps to an authoritative

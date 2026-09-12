@@ -21,22 +21,23 @@ class Handler(http.server.SimpleHTTPRequestHandler):
     def redirect_for(self, path, query):
         """The 301 target for a request, or None (mirrors the generated rules in .htaccess)."""
         q = urllib.parse.parse_qs(query)
+        # /tests/category.html?id=<category> -> /tests/categories/<category>/ (before the generic query-URL rule: "tests" is a section)
+        if path == "/tests/category.html" and q.get("id") and re.fullmatch(SLUG, q["id"][0]): return f"/tests/categories/{q['id'][0]}/"
         m = re.match(r"^/(anatomy|organs|systems|" + "|".join(map(re.escape, SECTIONS)) + r")/([a-z]+\.html)$", path)
         if m and q.get("id") and re.fullmatch(SLUG, q["id"][0]):
             d = "anatomy" if m.group(1) == "organs" else m.group(1)
             return f"/{d}/{q['id'][0]}/"
+        if path in ("/learn/terminology.html", "/learn", "/learn/"): return "/medical-terms/"
+        if path in ("/interactions", "/interactions/", "/interactions/index.html"): return "/tools/drug-interaction-checker/" + ("?" + query if query else "")
         m = re.match(r"^(/(?:.*/)?)index\.html$", path)
         if m: return m.group(1)
-        if path in ("/learn/terminology.html", "/learn", "/learn/"): return "/medical-terms/"
         # taxonomy pages and the recommended URL families of the clinical specification
-        if path == "/tests/category.html" and q.get("id") and re.fullmatch(SLUG, q["id"][0]): return f"/tests/categories/{q['id'][0]}/"
         m = re.match(r"^/tests/categories/" + SLUG + r"/?$", path)
         if m:
             slug = m.group(1); target = self.aliases.get("tests/categories", {}).get(slug)
             if target: return f"/tests/categories/{target}/"
             if not path.endswith("/"): return path + "/"
             return None
-        if re.match(r"^/tools/drug-interaction-checker/?$", path): return "/interactions/" + (("?" + query) if query else "")
         m = re.match(r"^/medications/classes/" + SLUG + r"/?$", path)
         if m:
             slug = m.group(1); target = self.aliases.get("drug-classes", {}).get(slug, slug)

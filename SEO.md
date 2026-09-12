@@ -29,17 +29,20 @@ One canonical, lowercase, hyphenated, trailing-slash URL per entity, flat under 
 | Medical terms | `/medical-terms/#distal` | one substantial glossary page; per-term pages are deliberately not published while entries are short |
 | Hubs | `/anatomy/`, `/organs/`, `/systems/`, `/conditions/` … `/medical-terms/`, `/study/`, `/explorer/` | |
 | Policies | `/about/`, `/editorial-policy/`, `/medical-review-policy/`, `/references-policy/`, `/corrections-policy/`, `/disclaimer/`, `/contact/` | linked from every footer |
-| Test taxonomy (v1.3) | `/tests/categories/`, `/tests/categories/blood-haematology/` | the 36 categories of the master test taxonomy; a category page is indexable only when it has at least two pages, otherwise `noindex,follow`; American spellings 301 to the British canonical slug |
-| Medication taxonomy (v1.3) | `/medications/classes/` | therapeutic areas → classes → medicines with ATC codes; `/medications/classes/<class>/` (the specification's recommended address) 301s to the canonical `/drug-classes/<class>/`, and `/tools/drug-interaction-checker/?drug=<ingredient>` 301s to `/interactions/` with the medicine preloaded |
+| Test taxonomy (v1.4) | `/tests/categories/`, `/tests/categories/blood-haematology/` | the 36 categories of the master test taxonomy; a category page is indexable only when it has at least two pages, otherwise `noindex,follow`; American spellings 301 to the British canonical slug |
+| Medication taxonomy (v1.4) | `/medications/classes/` | therapeutic areas → classes → medicines with ATC codes; `/medications/classes/<class>/` (the specification's recommended address) 301s to the canonical `/drug-classes/<class>/`, and `/tools/drug-interaction-checker/?drug=<ingredient>` 301s to `/interactions/` with the medicine preloaded |
 | Noindex | `/search/`, `/roadmap/`, `/explorer/?embed=1`, `?cat=` hub filters (canonical → hub), organ pages without an article, any entity failing the quality gate, test categories with fewer than two pages | |
 
 Ids were renamed to their canonical form (`cbc → complete-blood-count`, `xray → x-ray`, `ct → ct-scan`,
 `pet → pet-scan`); the old ids live on as aliases.
 
 The clinical layer (v1.2) adds `/biomarkers/<slug>/`, `/targets/<slug>/` and `/compare/<slug>/`
-as indexable sections with their own sitemaps, and `/interactions/` (the checker) as a `noindex`
-tool page that is linked but never in a sitemap; no interaction pair pages are generated
-(specification §88). Single-analyte tests that were folded into panel pages now have canonical
+as indexable sections with their own sitemaps. The Drug Interaction Checker lives at
+`/tools/drug-interaction-checker/` (the clinical tools hub is `/tools/`, its methodology page
+`/editorial/drug-interaction-methodology/`): the tool page itself is indexable and in the `pages`
+sitemap, every `?drugs=` / `?drug=` state carries the canonical of the bare page so arbitrary
+combinations are never indexed, and no interaction pair pages are generated (specification §88).
+The old `/interactions/` URL is a one-hop 301 that keeps its query string. Single-analyte tests that were folded into panel pages now have canonical
 pages of their own (`/tests/troponin/`, `/tests/bnp/`, `/tests/crp/`, `/tests/esr/`,
 `/tests/tsh/`, `/tests/ferritin/`, `/tests/creatinine-egfr/`); the old ids
 (`cardiac-biomarkers`, `inflammatory-markers`) and the analyte aliases that pointed at panels
@@ -111,12 +114,12 @@ intestine). Each content file carries `_updated`, changed by hand when visible c
 `/sitemap.xml` is an index of `/sitemaps/pages.xml`, `anatomy.xml`, `systems.xml`, `physiology.xml`,
 `symptoms.xml`, `conditions.xml`, `tests.xml`, `imaging.xml`, `procedures.xml`, `medications.xml`,
 `drug-classes.xml`, `first-aid.xml`, `health.xml`, containing only canonical, indexable, 200-status URLs with
-meaningful `lastmod`. `robots.txt` allows everything except `/tools/`, `/search/` and `?embed=` views and names
+meaningful `lastmod`. `robots.txt` allows everything except `/search/` and `?embed=` views and names
 the sitemap. Rendering assets are never blocked.
 
 Sections of the sitemap index in v1.2: pages, anatomy, systems, physiology, symptoms, conditions,
 tests, biomarkers, imaging, procedures, medications, drug-classes, targets, first-aid, health,
-compare. v1.3 adds the test-category hub and the indexable category pages to `tests.xml` and the
+compare. v1.4 adds the test-category hub and the indexable category pages to `tests.xml` and the
 medication class hub to `medications.xml`; catalogued concepts and class concepts never get URLs of their own
 (specification §86: no thin terminology pages), and `MedicalTest` / `Drug` schema nodes carry `MedicalCode` entries
 for LOINC, RxNorm and ATC identifiers.
