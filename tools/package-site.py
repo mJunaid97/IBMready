@@ -4,7 +4,8 @@
     python3 tools/package-site.py --site-url https://anatomynexus.com --pretty --prerender --zip
 
 What it does
-  * copies only the files the site serves (no tools/, .github/, content sources or tests)
+  * copies only the files the site serves (no build tools, .github/, content sources or tests; the web pages under
+    tools/ — the clinical tools hub and the Drug Interaction Checker — are the exception and are served)
   * writes site/config.js with the public URL and clean-URL mode, and stamps site/version.js
   * writes the sitemap index (sitemap.xml -> sitemaps/<section>.xml, canonical indexable URLs only,
     lastmod from the content dates) and robots.txt with the absolute sitemap link
@@ -23,7 +24,9 @@ import argparse, datetime, json, os, re, shutil, subprocess, sys, zipfile
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 EXCLUDE_DIRS = ("tools/", ".github/", "content/", "brand/")     # brand/: the logo kit (print files, sources); the site serves site/logo/
-KEEP_IN_CONTENT = ("content/roadmap.json",)
+# served files inside the excluded directories: the roadmap data, and the web pages of the clinical tools (tools/ is the URL
+# namespace of the tools hub and the Drug Interaction Checker as well as the build pipeline's directory)
+KEEP_IN_CONTENT = ("content/roadmap.json", "tools/index.html", "tools/drug-interaction-checker/index.html")
 EXCLUDE_FILES = (".gitignore", "vercel.json", "_headers", "tools/qa/shots")
 SECTIONS = {"physiology": "topic.html", "symptoms": "symptom.html", "conditions": "condition.html", "tests": "test.html", "biomarkers": "biomarker.html", "imaging": "study.html",
             "procedures": "procedure.html", "medications": "medication.html", "drug-classes": "class.html", "targets": "target.html", "first-aid": "topic.html", "health": "topic.html"}
@@ -31,9 +34,12 @@ ANATOMY = {"anatomy": "organ.html", "systems": "system.html"}
 EXTRA = {"compare": "compare.html"}                # non-entity sections with their own detail pages (data/content/comparisons.json)
 # static pages: path -> (changefreq, priority); the home page and hubs first
 PAGES = {"": ("weekly", "1.0"), "anatomy/": ("weekly", "0.9"), "explorer/": ("monthly", "0.9"), "systems/": ("monthly", "0.8"), "organs/": ("monthly", "0.6"), "medical-terms/": ("monthly", "0.7"),
-         "study/": ("monthly", "0.6"), "about/": ("yearly", "0.4"), "editorial-policy/": ("yearly", "0.3"), "medical-review-policy/": ("yearly", "0.3"), "references-policy/": ("yearly", "0.3"),
+         "study/": ("monthly", "0.6"), "tools/": ("monthly", "0.7"), "tools/drug-interaction-checker/": ("monthly", "0.8"), "editorial/drug-interaction-methodology/": ("yearly", "0.4"),
+         "about/": ("yearly", "0.4"), "editorial-policy/": ("yearly", "0.3"), "medical-review-policy/": ("yearly", "0.3"), "references-policy/": ("yearly", "0.3"),
          "corrections-policy/": ("yearly", "0.3"), "disclaimer/": ("yearly", "0.3"), "contact/": ("yearly", "0.4")}
-NOINDEX_PAGES = ["search/", "roadmap/", "interactions/"]          # prerendered, linked, but kept out of the sitemaps (the checker is a tool, not content)
+NOINDEX_PAGES = ["search/", "roadmap/"]          # prerendered, linked, but kept out of the sitemaps
+# retired paths -> their canonical page (one hop); the interaction checker moved from /interactions/ to the clinical tools
+RETIRED = [("learn/terminology\\.html", "medical-terms/"), ("learn", "medical-terms/"), ("interactions(?:/index\\.html)?", "tools/drug-interaction-checker/")]
 
 def served_files():
     out = subprocess.check_output(["git", "ls-files", "--cached", "--others", "--exclude-standard"], cwd=ROOT, text=True)
@@ -180,7 +186,7 @@ def main():
     for name, lastmod, _ in sections: idx.append(f"  <sitemap><loc>{esc(origin + 'sitemaps/' + name + '.xml')}</loc><lastmod>{lastmod}</lastmod></sitemap>")
     idx.append("</sitemapindex>")
     open(os.path.join(out, "sitemap.xml"), "w", encoding="utf-8").write("\n".join(idx) + "\n")
-    open(os.path.join(out, "robots.txt"), "w", encoding="utf-8").write(f"User-agent: *\nAllow: {base}\nDisallow: {base}tools/\nDisallow: {base}search/\nDisallow: {base}*?embed=\nSitemap: {origin}sitemap.xml\n")
+    open(os.path.join(out, "robots.txt"), "w", encoding="utf-8").write(f"User-agent: *\nAllow: {base}\nDisallow: {base}search/\nDisallow: {base}*?embed=\nSitemap: {origin}sitemap.xml\n")
 
     # ---- .htaccess: generated URL rules at the marker
     p = os.path.join(out, ".htaccess"); s = open(p, encoding="utf-8").read()
@@ -193,8 +199,8 @@ def main():
         for d, page in {**ANATOMY, **SECTIONS, **EXTRA, "organs": "organ.html"}.items():
             target = "anatomy" if d == "organs" else d
             rules += [f"  RewriteCond %{{QUERY_STRING}} ^id=([A-Za-z0-9-]+)$", f"  RewriteRule ^{re.escape(d)}/{re.escape(page)}$ {base}{target}/%1/? [R=301,L]"]
+        rules += ["  # retired paths, before the index.html rule so each is one hop (the query string, e.g. ?drugs=, is carried over)"] + [f"  RewriteRule ^{pat}/?$ {base}{target} [R=301,L]" for pat, target in RETIRED]
         rules += ["  # /section/index.html -> /section/ and /index.html -> /", "  RewriteCond %{THE_REQUEST} \\s/+(?:[^?\\s]*/)?index\\.html[\\s?]", f"  RewriteRule ^(.*/)?index\\.html$ {base}$1 [R=301,L]"]
-        rules += ["  # retired paths", f"  RewriteRule ^learn/terminology\\.html$ {base}medical-terms/ [R=301,L]", f"  RewriteRule ^learn/?$ {base}medical-terms/ [R=301,L]"]
         rules.append("  # URL aliases (synonyms, abbreviations, brand names, old ids) -> the canonical page, in one hop")
         for section, table in aliases.items():
             by_target = {}

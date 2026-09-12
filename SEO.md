@@ -35,9 +35,12 @@ Ids were renamed to their canonical form (`cbc → complete-blood-count`, `xray 
 `pet → pet-scan`); the old ids live on as aliases.
 
 The clinical layer (v1.2) adds `/biomarkers/<slug>/`, `/targets/<slug>/` and `/compare/<slug>/`
-as indexable sections with their own sitemaps, and `/interactions/` (the checker) as a `noindex`
-tool page that is linked but never in a sitemap; no interaction pair pages are generated
-(specification §88). Single-analyte tests that were folded into panel pages now have canonical
+as indexable sections with their own sitemaps. The Drug Interaction Checker lives at
+`/tools/drug-interaction-checker/` (the clinical tools hub is `/tools/`, its methodology page
+`/editorial/drug-interaction-methodology/`): the tool page itself is indexable and in the `pages`
+sitemap, every `?drugs=` / `?drug=` state carries the canonical of the bare page so arbitrary
+combinations are never indexed, and no interaction pair pages are generated (specification §88).
+The old `/interactions/` URL is a one-hop 301 that keeps its query string. Single-analyte tests that were folded into panel pages now have canonical
 pages of their own (`/tests/troponin/`, `/tests/bnp/`, `/tests/crp/`, `/tests/esr/`,
 `/tests/tsh/`, `/tests/ferritin/`, `/tests/creatinine-egfr/`); the old ids
 (`cardiac-biomarkers`, `inflammatory-markers`) and the analyte aliases that pointed at panels
@@ -109,7 +112,7 @@ intestine). Each content file carries `_updated`, changed by hand when visible c
 `/sitemap.xml` is an index of `/sitemaps/pages.xml`, `anatomy.xml`, `systems.xml`, `physiology.xml`,
 `symptoms.xml`, `conditions.xml`, `tests.xml`, `imaging.xml`, `procedures.xml`, `medications.xml`,
 `drug-classes.xml`, `first-aid.xml`, `health.xml`, containing only canonical, indexable, 200-status URLs with
-meaningful `lastmod`. `robots.txt` allows everything except `/tools/`, `/search/` and `?embed=` views and names
+meaningful `lastmod`. `robots.txt` allows everything except `/search/` and `?embed=` views and names
 the sitemap. Rendering assets are never blocked.
 
 Sections of the sitemap index in v1.2: pages, anatomy, systems, physiology, symptoms, conditions,

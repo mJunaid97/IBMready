@@ -41,9 +41,9 @@ export const TYPES = {
   health:         { name: 'Health',        singular: 'Health topic',     dir: 'health',       page: 'topic.html',      field: 'health',      icon: 'health',      descriptor: 'Effects on the Body & Guidance', blurb: 'Exercise, sleep, nutrition, weight, smoking, alcohol and hydration, explained through the organs they act on.' },
 };
 export const TYPE_ORDER = ['conditions', 'symptoms', 'physiology', 'tests', 'biomarkers', 'imaging', 'procedures', 'medications', 'drug-classes', 'targets', 'first-aid', 'health'];
-export const TYPE_LABEL = { structure: 'Structure', organ: 'Anatomy', system: 'Body system', region: 'Region', term: 'Term', physiology: 'Physiology', symptoms: 'Symptom', conditions: 'Condition', tests: 'Test', biomarkers: 'Biomarker', imaging: 'Imaging', procedures: 'Procedure', medications: 'Medication', 'drug-classes': 'Drug class', targets: 'Drug target', 'first-aid': 'First aid', health: 'Health', product: 'Product' };
+export const TYPE_LABEL = { structure: 'Structure', organ: 'Anatomy', system: 'Body system', region: 'Region', term: 'Term', physiology: 'Physiology', symptoms: 'Symptom', conditions: 'Condition', tests: 'Test', biomarkers: 'Biomarker', imaging: 'Imaging', procedures: 'Procedure', medications: 'Medication', 'drug-classes': 'Drug class', targets: 'Drug target', 'first-aid': 'First aid', health: 'Health', product: 'Product', substance: 'Named substance' };
 /** Search-result families, used to tint the type tag: what it is in the body, what medicine does with it, how to learn it. */
-export const TYPE_KIND = { structure: 'anatomy', organ: 'anatomy', system: 'anatomy', region: 'anatomy', conditions: 'clinical', symptoms: 'clinical', tests: 'clinical', biomarkers: 'clinical', imaging: 'clinical', procedures: 'clinical', medications: 'clinical', 'drug-classes': 'clinical', targets: 'clinical', product: 'clinical', term: 'learn', physiology: 'learn', 'first-aid': 'learn', health: 'learn' };
+export const TYPE_KIND = { structure: 'anatomy', organ: 'anatomy', system: 'anatomy', region: 'anatomy', conditions: 'clinical', symptoms: 'clinical', tests: 'clinical', biomarkers: 'clinical', imaging: 'clinical', procedures: 'clinical', medications: 'clinical', 'drug-classes': 'clinical', targets: 'clinical', product: 'clinical', substance: 'clinical', term: 'learn', physiology: 'learn', 'first-aid': 'learn', health: 'learn' };
 
 const esc = (s) => String(s ?? '').replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
 export { esc };
@@ -70,6 +70,7 @@ const ICON_PATHS = {
   search: '<circle cx="11" cy="11" r="6.5"/><path d="m20 20-4.3-4.3"/>',
   compare: '<rect x="3.5" y="4" width="7" height="16" rx="1.5"/><rect x="13.5" y="4" width="7" height="16" rx="1.5"/>',
   interactions: '<circle cx="9" cy="12" r="5.5"/><circle cx="15" cy="12" r="5.5"/>',
+  tools: '<path d="M14.7 5.3a3.6 3.6 0 0 0-4.6 4.7L4 16.1V20h3.9l6.1-6.1a3.6 3.6 0 0 0 4.7-4.6l-2.4 2.4-2.1-2.1 2.5-2.3Z"/>',
   terms: '<path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v15H6.5A2.5 2.5 0 0 0 4 20.5V5.5Z"/><path d="M4 18a2.5 2.5 0 0 1 2.5-2.5H20M8 7h8M8 10.5h5"/>',
   study: '<path d="M2.5 9 12 4.5 21.5 9 12 13.5 2.5 9Z"/><path d="M6 11v5c0 1.5 3 3 6 3s6-1.5 6-3v-5M21.5 9v5"/>',
   sun: '<circle cx="12" cy="12" r="4"/><path d="M12 2.5v2.5M12 19v2.5M2.5 12H5M19 12h2.5M5.3 5.3l1.8 1.8M16.9 16.9l1.8 1.8M5.3 18.7l1.8-1.8M16.9 7.1l1.8-1.8"/>',
@@ -113,7 +114,10 @@ export const link = {
   search: (q) => url(paths.dir('search')) + (q ? '?q=' + encodeURIComponent(q) : ''),
   preview: (hash) => url(`site/previews/${previewName(hash)}.jpg`),
   compare: (id) => url(id ? paths.entity('compare', 'compare.html', id) : paths.dir('compare')),
-  interactions: (ids) => url(paths.dir('interactions')) + (ids && ids.length ? '?drugs=' + ids.map(encodeURIComponent).join(',') : ''),
+  tools: () => url(paths.dir('tools')),
+  /** The Drug Interaction Checker, optionally with medicines pre-selected: ?drug=<id> for one, ?drugs=<id>,<id> for several. */
+  checker: (ids) => url(paths.dir('tools/drug-interaction-checker')) + (ids && ids.length ? (ids.length === 1 ? '?drug=' : '?drugs=') + ids.map(encodeURIComponent).join(',') : ''),
+  methodology: () => url(paths.dir('editorial/drug-interaction-methodology')),
   logo: (variant = 'anatomy-nexus') => url(`site/logo/${variant}.svg`),
 };
 export function entityPath(type, id) { const t = TYPES[type]; return paths.entity(t.dir, t.page, id); }
@@ -143,7 +147,7 @@ export function anyLink(type, id) {
     case 'system': return link.systemPage(id);
     case 'region': return link.region(id);
     case 'term': return link.term(id);
-    case 'product': return link.interactions([id]);
+    case 'product': return link.checker([id]);
     default: return entityLink(type, id);
   }
 }
@@ -188,7 +192,7 @@ export const NAV_PRIMARY = [['anatomy', 'Anatomy', () => link.page('anatomy')], 
 export const NAV_GROUPS = [
   ['Anatomy', [['anatomy', 'Anatomy A–Z', () => link.page('anatomy')], ['organs', 'Organs by system', () => link.page('organs')], ['systems', 'Body systems', () => link.page('systems')], ['explorer', '3D explorer', () => link.explorer()], ['physiology', 'Physiology', () => typeLink('physiology')]]],
   ['Clinical', [['symptoms', 'Symptoms', () => typeLink('symptoms')], ['conditions', 'Conditions', () => typeLink('conditions')], ['tests', 'Medical tests', () => typeLink('tests')], ['biomarkers', 'Biomarkers', () => typeLink('biomarkers')], ['imaging', 'Imaging', () => typeLink('imaging')], ['procedures', 'Procedures', () => typeLink('procedures')]]],
-  ['Medicines', [['medications', 'Medications', () => typeLink('medications')], ['drug-classes', 'Drug classes', () => typeLink('drug-classes')], ['targets', 'Drug targets', () => typeLink('targets')], ['interactions', 'Interaction checker', () => link.interactions()], ['compare', 'Comparisons', () => link.compare()]]],
+  ['Medicines', [['medications', 'Medications', () => typeLink('medications')], ['drug-classes', 'Drug classes', () => typeLink('drug-classes')], ['targets', 'Drug targets', () => typeLink('targets')], ['checker', 'Drug Interaction Checker', () => link.checker()], ['tools', 'Clinical tools', () => link.tools()], ['compare', 'Comparisons', () => link.compare()]]],
   ['Learn', [['first-aid', 'First aid', () => typeLink('first-aid')], ['health', 'Health', () => typeLink('health')], ['medical-terms', 'Medical terms', () => link.page('medical-terms')], ['study', 'Study tools', () => link.page('study')], ['search', 'Search everything', () => link.page('search')], ['about', 'About Anatomy Nexus', () => link.page('about')]]],
 ];
 export const NAV_MORE = NAV_GROUPS.flatMap(([, items]) => items);
@@ -227,7 +231,9 @@ function loadAnalytics() {
   const id = SITE.analytics && SITE.analytics.ga4; if (!id || !/^G-[A-Z0-9]+$/.test(id) || window.__ga4) return;
   window.__ga4 = id; window.dataLayer = window.dataLayer || [];
   window.gtag = function () { window.dataLayer.push(arguments); };
-  window.gtag('js', new Date()); window.gtag('config', id, { send_page_view: true });
+  // The page URL is reported without its query string: a search term (/search/?q=) or a medicine list on the interaction
+  // checker (?drugs=) can be health-related data and is never sent to a third party.
+  window.gtag('js', new Date()); window.gtag('config', id, { send_page_view: true, page_location: location.origin + location.pathname });
   if (!document.querySelector('script[src^="https://www.googletagmanager.com/gtag/js"]')) {
     const s = document.createElement('script'); s.async = true; s.src = 'https://www.googletagmanager.com/gtag/js?id=' + encodeURIComponent(id); document.head.appendChild(s);
   }
@@ -246,7 +252,7 @@ export function renderFooter() {
       </div>
       ${col('Anatomy', [['Anatomy A–Z', link.page('anatomy')], ['Body systems', link.page('systems')], ['Organs by system', link.page('organs')], ['3D explorer', link.explorer()], ['Physiology', typeLink('physiology')], ['Medical terms', link.page('medical-terms')]])}
       ${col('Clinical', [['Symptoms', typeLink('symptoms')], ['Conditions', typeLink('conditions')], ['Medical tests', typeLink('tests')], ['Biomarkers', typeLink('biomarkers')], ['Imaging', typeLink('imaging')], ['Procedures', typeLink('procedures')], ['First aid', typeLink('first-aid')], ['Health', typeLink('health')]])}
-      ${col('Medicines', [['Medications', typeLink('medications')], ['Drug classes', typeLink('drug-classes')], ['Drug targets', typeLink('targets')], ['Interaction checker', link.interactions()], ['Comparisons', link.compare()], ['Study tools', link.page('study')]])}
+      ${col('Medicines', [['Medications', typeLink('medications')], ['Drug classes', typeLink('drug-classes')], ['Drug targets', typeLink('targets')], ['Drug Interaction Checker', link.checker()], ['Clinical tools', link.tools()], ['Comparisons', link.compare()], ['Study tools', link.page('study')]])}
       ${col('About', [['About', link.page('about')], ['Editorial policy', link.page('editorial-policy')], ['Medical review policy', link.page('medical-review-policy')], ['References policy', link.page('references-policy')], ['Corrections policy', link.page('corrections-policy')], ['Disclaimer', link.page('disclaimer')], ['Contact', link.page('contact')], ['Roadmap', link.page('roadmap')]])}
     </div>
     <div class="footer-bottom">

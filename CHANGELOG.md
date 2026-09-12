@@ -1,5 +1,40 @@
 # Changelog
 
+## v1.3.0 — 2026-09-12
+
+Drug Interaction Checker: the medication interaction checker becomes the flagship clinical tool of
+the platform, at `/tools/drug-interaction-checker/` (the old `/interactions/` URL redirects, query
+string included), with a clinical tools hub at `/tools/` and a methodology page at
+`/editorial/drug-interaction-methodology/`.
+
+- A pure engine (`site/interaction-engine.js`, unit-tested in Node by the QA workflow) implements
+  the checker's API contract: every unique pair of entries is checked across every pair of their
+  active ingredients, records written for a drug class apply only to its members as the source
+  states, duplicate ingredients and therapeutic duplication are reported separately, pairs with no
+  record are listed with the cautious wording, and every result keeps its sources, the document
+  that supports its state and its review status
+- The six source states are mapped onto the specification's display tiers (contraindicated or
+  avoid, major, moderate, minor, not graded) without inference; nothing is labelled minor, and a
+  documented-but-ungraded interaction is shown as not graded
+- Named substances: a record whose other party has no page names its agents (`bAgents`), and class
+  members without a page become selectable too, so "amlodipine + simvastatin", "losartan + naproxen"
+  or "azithromycin + clarithromycin" resolve to their records; brand names, salt forms and true
+  synonyms resolve to the medicine while a grouped page's other members no longer do
+- Every record carries validated knowledge-graph links (classes, shared organs, the anatomy and
+  physiology of its mechanism, the test or biomarker page of each monitoring item), shown on the
+  checker and on the medication and class pages
+- The page: an accessible combobox with spelling tolerance and live announcements, removable chips,
+  a summary panel (medicines checked, pairs reviewed, results by tier), severity-first sections with
+  pair cards, the stronger notice for contraindicated or major results, related topics, the
+  provenance block, references and the medical information notice; indexable with a fixed canonical
+  and `WebApplication` schema, shareable `?drugs=` state, `?drug=` from every medication page's new
+  *Check interactions* section
+- Privacy: analytics receive counts and tiers only, and every page URL is now reported to analytics
+  without its query string
+- Packaging: the two web pages under `tools/` are served, `/tools/` is no longer disallowed in
+  `robots.txt`, `/interactions/` is a one-hop 301, the dev server emulates it, the smoke test covers
+  the checker end to end
+
 ## v1.2.0 — 2026-09-12
 
 Clinical content layer: the tests, medications and interactions of the Clinical Content Depth

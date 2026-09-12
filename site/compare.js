@@ -22,7 +22,7 @@ async function renderIndex() {
   document.getElementById('main').innerHTML = `${breadcrumbHtml(crumbs)}
     <div class="section-hero"><div class="eyebrow">${iconSvg('compare')} Section · ${cmp.comparisons.length} comparisons</div><h1>Comparisons</h1><p class="lead">${esc(cmp.about || '')}</p></div>
     <div class="grid grid-3">${cmp.comparisons.map(c => `<a class="card" href="${link.compare(c.id)}"><div class="eyebrow">${esc(TYPES[c.a.type]?.singular || c.a.type)} · ${esc(TYPES[c.b.type]?.singular || c.b.type)}</div><h3>${esc(c.title)}</h3><p>${esc(c.intro.length > 160 ? c.intro.slice(0, 160).replace(/\s+\S*$/, '') + '…' : c.intro)}</p></a>`).join('')}</div>
-    <h2>Other sections</h2><div class="chips">${['tests', 'biomarkers', 'imaging', 'medications', 'drug-classes'].map(t => `<a class="chip" href="${typeLink(t)}">${iconSvg(TYPES[t].icon)}${esc(TYPES[t].name)}</a>`).join('')}<a class="chip" href="${link.interactions()}">${iconSvg('interactions')}Interaction checker</a></div>`;
+    <h2>Other sections</h2><div class="chips">${['tests', 'biomarkers', 'imaging', 'medications', 'drug-classes'].map(t => `<a class="chip" href="${typeLink(t)}">${iconSvg(TYPES[t].icon)}${esc(TYPES[t].name)}</a>`).join('')}<a class="chip" href="${link.checker()}">${iconSvg('interactions')}Drug Interaction Checker</a><a class="chip" href="${link.tools()}">${iconSvg('tools')}Clinical tools</a></div>`;
 }
 async function renderDetail() {
   if (PRERENDERED) return;
