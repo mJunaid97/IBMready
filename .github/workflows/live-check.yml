@@ -63,7 +63,7 @@ jobs:
         run: node smoke.mjs
       - name: Upload screenshots
         if: always()
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: live-screenshots
           path: tools/qa/shots
