@@ -36,6 +36,10 @@ def fetch(url, timeout):
             return None, str(e)[:80]
     return None, "no response"
 
+def norm(u):
+    """Ignore differences that are not worth a reference update: a www. prefix, a trailing slash, the scheme."""
+    return re.sub(r"^https?://(www\.)?", "", u).rstrip("/")
+
 def main():
     ap = argparse.ArgumentParser(); ap.add_argument("--strict", action="store_true"); ap.add_argument("--timeout", type=int, default=20); ap.add_argument("--workers", type=int, default=8)
     a = ap.parse_args()
@@ -48,7 +52,7 @@ def main():
             if status is None: other.append(f"  ERR  {url}  ({final})  [{where}]")
             elif status in (404, 410): dead.append(f"  {status}  {url}  [{where}]")
             elif status >= 400: other.append(f"  {status}  {url}  [{where}]")
-            elif final.rstrip("/") != url.rstrip("/") and not final.rstrip("/").startswith(url.rstrip("/")): moved.append(f"  {url}\n      -> {final}  [{where}]")
+            elif norm(final) != norm(url) and not norm(final).startswith(norm(url)): moved.append(f"  {url}\n      -> {final}  [{where}]")
     if dead: print(f"\nDEAD ({len(dead)}):"); print("\n".join(dead))
     if other: print(f"\nOTHER PROBLEMS ({len(other)}), check by hand:"); print("\n".join(other))
     if moved: print(f"\nREDIRECTED ({len(moved)}), update the reference to the final address:"); print("\n".join(moved))
