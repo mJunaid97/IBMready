@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-0ZYYoMVH8skVI3zJ7AfEL0FDpRE4dS3zbGhdQKihick=' 'wasm-unsafe-eval' https://www.googletagmanager.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob: https://*.google-analytics.com https://*.googletagmanager.com; font-src 'self'; connect-src 'self' https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com; frame-src 'self'; worker-src 'self' blob:; object-src 'none'; base-uri 'self'; form-action 'self'">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>3D Anatomy Explorer: 2,234 Structures in 16 Systems | Anatomy Nexus</title>
+  <meta name="description" content="Explore the human body in 3D: 2,234 individually selectable structures from the open BodyParts3D dataset, organised into 16 systems, with search, cross-sections, exploded views and study tools.">
+  <link rel="canonical" href="https://anatomynexus.com/explorer/">
+  <meta name="robots" content="index,follow">
+  <meta property="og:type" content="website"><meta property="og:site_name" content="Anatomy Nexus"><meta property="og:title" content="3D Anatomy Explorer | Anatomy Nexus"><meta property="og:description" content="Orbit, click and search 2,234 anatomical structures in 16 systems. Isolate organs, slice the body, explode it into parts."><meta property="og:image" content="https://anatomynexus.com/site/og-cover.png"><meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#0f1115">
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="../manifest.webmanifest">
+  <link rel="apple-touch-icon" href="../site/apple-touch-icon.png">
+  <link rel="stylesheet" href="styles.css?v=1.2.0">
+  <script type="importmap">
+    { "imports": { "three": "../vendor/three/three.module.min.js", "three/addons/": "../vendor/three/addons/" } }
+  </script>
+</head>
+<body>
+<div id="app" class="app" data-loading="true">
+  <canvas id="view" aria-label="3D view of the human body"></canvas>
+  <div id="labels" class="labels" aria-hidden="true"></div>
+
+  <header class="topbar">
+    <a class="brand" href="../" title="Anatomy Nexus home">
+      <span class="brand-mark" aria-hidden="true"></span>
+      <span class="brand-text">Anatomy Nexus</span>
+    </a>
+    <div class="stats" id="stats" aria-live="polite">Loading atlas…</div>
+
+    <div class="search" id="search" role="combobox" aria-expanded="false" aria-haspopup="listbox" aria-owns="search-results">
+      <svg class="search-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="2"/><path d="M20 20l-3.5-3.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      <input id="search-input" type="search" placeholder="Find a structure, system or concept…" autocomplete="off" spellcheck="false" aria-label="Search anatomy" aria-autocomplete="list" aria-controls="search-results">
+      <kbd class="search-kbd" aria-hidden="true">/</kbd>
+      <ul id="search-results" class="search-results" role="listbox" hidden></ul>
+    </div>
+
+    <div class="topbar-actions">
+      <button class="icon-btn" id="btn-study" title="Study mode: identify, locate &amp; flashcards (Q)" aria-label="Study mode">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v11H4z M8 20h8 M12 16v4" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+      </button>
+      <button class="icon-btn" id="btn-share" title="Copy a link to this view" aria-label="Share link">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M10 14a4 4 0 0 0 5.66 0l3-3a4 4 0 0 0-5.66-5.66l-1.5 1.5 M14 10a4 4 0 0 0-5.66 0l-3 3a4 4 0 0 0 5.66 5.66l1.5-1.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+      <button class="icon-btn" id="btn-shot" title="Save a screenshot (P)" aria-label="Screenshot">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 8h3l2-3h6l2 3h3v11H4z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><circle cx="12" cy="13" r="3.5" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+      </button>
+      <button class="icon-btn" id="btn-theme" title="Toggle light / dark (T)" aria-label="Toggle theme">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a9 9 0 1 0 9 9c0-.5 0-1-.1-1.4A6 6 0 0 1 12 3z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+      </button>
+      <button class="icon-btn" id="btn-help" title="Help &amp; shortcuts (?)" aria-label="Help">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"/><path d="M9.5 9.5a2.5 2.5 0 1 1 3.5 2.3c-.7.4-1 1-1 1.7v.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><circle cx="12" cy="17" r="1" fill="currentColor"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Systems panel -->
+  <aside class="panel panel-left" id="panel-systems" aria-label="Navigator">
+    <div class="panel-head">
+      <div class="segmented segmented-sm" id="nav-tabs" role="tablist" style="margin:0">
+        <button data-tab="systems" class="is-active" role="tab">Systems</button>
+        <button data-tab="organs" role="tab">Organs</button>
+        <button data-tab="regions" role="tab">Regions</button>
+      </div>
+      <button class="link-btn" id="btn-collapse-left" aria-label="Collapse navigator" title="Collapse">‹</button>
+    </div>
+    <div id="nav-organs" class="nav-body" hidden>
+      <p class="muted small nav-intro">Organs and skeletal groups assembled from the modelled pieces. Click one to select and fly to it.</p>
+      <ul class="systems" id="organs" role="list"></ul>
+    </div>
+    <div id="nav-regions" class="nav-body" hidden>
+      <p class="muted small nav-intro">Show only the structures inside a body region.</p>
+      <ul class="systems" id="regions" role="list"></ul>
+      <div class="panel-foot"><span class="muted" id="region-active">Whole body</span><button class="link-btn" id="btn-region-clear">Whole body</button></div>
+    </div>
+    <div id="nav-systems" class="nav-body">
+    <div class="presets" id="presets" role="group" aria-label="Presets">
+      <button data-preset="all" class="chip is-active">All</button>
+      <button data-preset="skeleton" class="chip">Skeleton</button>
+      <button data-preset="organs" class="chip">Organs</button>
+      <button data-preset="vessels" class="chip">Vessels</button>
+      <button data-preset="nerves" class="chip">Nerves</button>
+    </div>
+    <ul class="systems" id="systems" role="list"></ul>
+    <div class="panel-foot">
+      <span id="visible-count" class="muted"></span>
+      <div class="panel-foot-actions">
+        <button class="link-btn" id="btn-show-all">Show all</button>
+        <button class="link-btn" id="btn-hide-all">Hide all</button>
+      </div>
+    </div>
+    </div>
+  </aside>
+  <button class="panel-tab panel-tab-left" id="tab-systems" hidden aria-label="Open navigator">Systems · Organs · Regions</button>
+
+  <!-- Structure panel -->
+  <aside class="panel panel-right" id="panel-info" aria-label="Structure details" hidden>
+    <div class="panel-head">
+      <span class="eyebrow" id="info-system"></span>
+      <button class="link-btn" id="btn-close-info" aria-label="Close details">×</button>
+    </div>
+    <h2 class="info-name" id="info-name"></h2>
+    <div class="info-meta" id="info-meta"></div>
+    <p class="info-desc" id="info-desc"></p>
+    <div class="info-section" id="info-facts" hidden></div>
+    <div class="info-section" id="info-tags-wrap" hidden>
+      <h3>Organ &amp; region</h3>
+      <div class="chips" id="info-tags"></div>
+    </div>
+    <div class="info-section">
+      <h3>Part of</h3>
+      <div class="chips" id="info-parents"></div>
+    </div>
+    <div class="info-section" id="info-related-wrap" hidden>
+      <h3>Related structures</h3>
+      <div class="chips" id="info-related"></div>
+    </div>
+    <div class="info-section" id="info-clinical-wrap" hidden>
+      <h3>Clinical topics</h3>
+      <div id="info-clinical"></div>
+    </div>
+    <div class="info-actions">
+      <button class="btn btn-primary" id="btn-isolate">Isolate</button>
+      <button class="btn" id="btn-focus">Focus</button>
+      <button class="btn" id="btn-hide">Hide</button>
+      <button class="btn" id="btn-pair" hidden>Other side</button>
+      <button class="btn" id="btn-pin">Pin label</button>
+    </div>
+    <div class="info-foot">
+      <span id="info-fma" class="mono muted"></span>
+      <button class="link-btn" id="btn-clear">Clear selection</button>
+    </div>
+  </aside>
+
+  <!-- Study panel -->
+  <aside class="panel panel-right panel-study" id="panel-study" aria-label="Study mode" hidden>
+    <div class="panel-head">
+      <h2>Study</h2>
+      <button class="link-btn" id="btn-close-study" aria-label="Close study mode">×</button>
+    </div>
+    <div class="segmented" role="tablist">
+      <button class="is-active" data-mode="quiz" role="tab">Identify</button>
+      <button data-mode="locate" role="tab">Locate</button>
+      <button data-mode="cards" role="tab">Flashcards</button>
+    </div>
+    <p class="muted small" id="study-scope"></p>
+    <div id="study-body"></div>
+    <div class="study-score" id="study-score"></div>
+  </aside>
+
+  <!-- Bottom toolbar -->
+  <div class="toolbar" id="toolbar" role="toolbar" aria-label="View tools">
+    <div class="tool tool-explode">
+      <label for="explode">Explode</label>
+      <input id="explode" type="range" min="0" max="100" value="0" aria-label="Explode amount">
+      <button class="chip chip-sm" id="explode-mode" title="Switch between radial explode and an inventory grid">Radial</button>
+    </div>
+    <div class="tool tool-slice">
+      <label>Slice</label>
+      <div class="segmented segmented-sm" id="slice-axis" role="group" aria-label="Slice plane">
+        <button data-axis="off" class="is-active">Off</button>
+        <button data-axis="x" title="Sagittal">Sag</button>
+        <button data-axis="y" title="Axial">Axi</button>
+        <button data-axis="z" title="Coronal">Cor</button>
+      </div>
+      <input id="slice" type="range" min="0" max="100" value="50" aria-label="Slice position" disabled>
+      <button class="chip chip-sm" id="slice-flip" title="Flip which side is cut away" disabled>Flip</button>
+    </div>
+    <div class="tool">
+      <button class="chip" id="btn-xray" aria-pressed="false" title="See through unselected structures (X)">X-ray</button>
+      <button class="chip" id="btn-labels" aria-pressed="true" title="Show labels on hover">Labels</button>
+    </div>
+    <div class="tool tool-views">
+      <div class="segmented segmented-sm" id="views" role="group" aria-label="Camera views">
+        <button data-view="front" title="Front (1)">F</button>
+        <button data-view="back" title="Back (2)">B</button>
+        <button data-view="left" title="Left (3)">L</button>
+        <button data-view="right" title="Right (4)">R</button>
+        <button data-view="top" title="Top (5)">T</button>
+      </div>
+      <button class="chip" id="btn-reset" title="Reset view, selection and tools (R)">Reset</button>
+    </div>
+  </div>
+
+  <div class="hint" id="hint">Drag to orbit · Scroll or pinch to zoom · Click a structure to inspect</div>
+  <div class="hover-tip" id="hover-tip" hidden></div>
+  <div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+
+  <div class="loading" id="loading" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+    <div class="loading-card">
+      <div class="loading-title">Anatomy Nexus</div>
+      <div class="loading-sub" id="loading-sub">Preparing the body…</div>
+      <div class="loading-bar"><div class="loading-fill" id="loading-fill"></div></div>
+      <div class="loading-note muted small">Skeleton appears first; other systems stream in.</div>
+    </div>
+  </div>
+
+  <dialog id="dlg-help" class="dialog">
+    <form method="dialog">
+      <h2>How to use the atlas</h2>
+      <div class="help-grid">
+        <div><h3>Navigate</h3><ul><li><b>Drag</b> to orbit · <b>Right-drag</b> or two-finger drag to pan · <b>Scroll / pinch</b> to zoom</li><li><b>Double-click</b> a structure to fly to it</li></ul></div>
+        <div><h3>Inspect</h3><ul><li><b>Click</b> a structure to open its card; <b>Shift-click</b> to add to the selection</li><li><b>Isolate</b> shows only the selection; <b>Hide</b> removes it from view</li></ul></div>
+        <div><h3>Keyboard</h3><ul>
+          <li><kbd>/</kbd> search · <kbd>Esc</kbd> close / clear</li>
+          <li><kbd>1</kbd>–<kbd>5</kbd> views · <kbd>R</kbd> reset · <kbd>X</kbd> x-ray</li>
+          <li><kbd>H</kbd> hide selection · <kbd>I</kbd> isolate · <kbd>F</kbd> focus</li>
+          <li><kbd>E</kbd>/<kbd>Shift+E</kbd> explode more / less · <kbd>Q</kbd> study mode (identify, locate, flashcards) · <kbd>P</kbd> screenshot</li>
+        </ul></div>
+        <div><h3>Performance</h3><p><label for="quality">Model detail</label> <select id="quality"><option value="hd">High (3.3M triangles, 13 MB)</option><option value="lite">Light (1.1M triangles, 5.5 MB)</option></select><br><span class="muted small">Phones get the light model automatically. Changing this reloads the page.</span></p></div>
+        <div><h3>Data</h3><p>Geometry: <a href="https://dbarchive.biosciencedbc.jp/en/bodyparts3d/" target="_blank" rel="noopener">BodyParts3D</a> 4.0 by the Database Center for Life Science, CC BY 4.0. Structure names follow the Foundational Model of Anatomy. This is an educational atlas of one adult male reference body, not a diagnostic tool.</p></div>
+      </div>
+      <div class="dialog-actions"><button class="btn btn-primary" value="close">Got it</button></div>
+    </form>
+  </dialog>
+</div>
+<script type="module" src="app.js?v=1.2.0"></script>
+</body>
+</html>
