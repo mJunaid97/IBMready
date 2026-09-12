@@ -5,7 +5,8 @@
  */
 import { normalize, search as rankSearch } from '../explorer/search.js';
 import { CONFIG } from './config.js';
-export { CONFIG };
+import { VERSION, BUILD } from './version.js';
+export { CONFIG, VERSION, BUILD };
 
 export const ROOT = new URL('../', import.meta.url).href;   // absolute site root, works from any depth
 
@@ -83,7 +84,7 @@ export function renderHeader(active) {
 export function renderFooter() {
   document.body.insertAdjacentHTML('beforeend', `<footer class="site-footer"><div class="wrap">
     <p>3D anatomy: <a href="https://dbarchive.biosciencedbc.jp/en/bodyparts3d/" target="_blank" rel="noopener noreferrer">BodyParts3D</a>, © The Database Center for Life Science, licensed under CC BY 4.0. Structure names follow the Foundational Model of Anatomy. Clinical, first-aid and health content is written for education and follows public guidance from the NHS, WHO and Resuscitation Council UK; it is not medical advice, diagnosis or treatment. In an emergency call your local emergency number.</p>
-    <p><a href="${ROOT}roadmap/index.html">Roadmap</a> · <a href="${ROOT}search/index.html">Search</a> · <a href="${ROOT}data/ATTRIBUTION.md">Attribution &amp; licences</a> · <a href="${ROOT}ARCHITECTURE.md">Architecture</a></p>
+    <p><a href="${ROOT}roadmap/index.html">Roadmap</a> · <a href="${ROOT}search/index.html">Search</a> · <a href="${ROOT}data/ATTRIBUTION.md">Attribution &amp; licences</a> · <a href="${ROOT}ARCHITECTURE.md">Architecture</a> · <span class="site-version" title="${esc(BUILD ? 'build ' + BUILD : 'development copy')}">v${esc(VERSION)}${BUILD ? ' · ' + esc(BUILD.slice(0, 7)) : ''}</span></p>
   </div></footer>`);
 }
 

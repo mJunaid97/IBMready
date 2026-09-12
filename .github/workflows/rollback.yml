@@ -1,0 +1,33 @@
+name: Rollback
+
+# Points the `deploy` branch (what the server pulls) at an earlier release: pick the version from
+# the Releases page (for example 1.0.0). The site is back on that version within five minutes.
+# Nothing in the source branch changes; to move forward again, run this with the newest version
+# or cut a new release.
+on:
+  workflow_dispatch:
+    inputs:
+      version:
+        description: Version to restore (without the v), e.g. 1.0.0
+        required: true
+
+permissions:
+  contents: write
+
+concurrency:
+  group: hostinger-deploy
+  cancel-in-progress: false
+
+jobs:
+  rollback:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Point deploy at deploy-v${{ github.event.inputs.version }}
+        run: |
+          T="deploy-v${{ github.event.inputs.version }}"
+          git fetch origin "refs/tags/$T:refs/tags/$T" || { echo "no deploy tag $T (see the Releases page for available versions)"; exit 1; }
+          git push origin "refs/tags/$T^{commit}:refs/heads/deploy" --force
+          echo "deploy branch now at $(git rev-parse --short "$T^{commit}") = v${{ github.event.inputs.version }}; live within five minutes"

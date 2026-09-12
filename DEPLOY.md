@@ -69,10 +69,29 @@ curl -sI https://YOUR-DOMAIN/data/hd/glb/heart.glb | grep -iE "^(HTTP|content-ty
 Expect `200`, the security headers, `content-encoding: gzip` (or `br`) on JSON, and
 `model/gltf-binary` with a 30-day cache on geometry.
 
-## 4. Updating the site
+## 4. Versions, backups and rollback
 
-Edit `content/*.json`, run `python3 tools/build-content.py`, commit, then repeat steps 1-2
-(with option A just push: the workflow rebuilds and the server pulls). HTML is cached for ten minutes and data for a day; if a
+Every deployment is a numbered release, and every release is kept so the site can go back.
+
+```sh
+python3 tools/release.py --bump patch -m "What changed"     # 1.0.0 -> 1.0.1, or --bump minor / major
+```
+
+That validates the content, updates `VERSION`, `site/version.js` and `CHANGELOG.md`, commits,
+tags `vX.Y.Z` and pushes. The **Release** workflow then builds the package, publishes a GitHub
+Release with the zip attached (a complete backup of that version), updates the `deploy` branch
+and tags it `deploy-vX.Y.Z`. The server pulls it within five minutes, and the footer of every
+page shows the version and build id that are live.
+
+To roll back: Actions → **Rollback** → Run workflow → enter the version (for example `1.0.0`).
+The server is back on that version within five minutes; nothing in the source changes. Ordinary
+pushes to the branch only run the QA workflow; they never deploy.
+
+## 5. Updating the site
+
+Edit `content/*.json`, run `python3 tools/build-content.py`, commit and push (QA runs), then
+cut a release with `tools/release.py` as above. The old address `medical.mjunaid.net` has been
+retired. HTML is cached for ten minutes and data for a day; if a
 change does not appear, hPanel → Advanced → Cache manager → Purge, and hard-refresh the browser.
 
 ## Other hosts
