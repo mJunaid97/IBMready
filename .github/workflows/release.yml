@@ -8,6 +8,14 @@ name: Release
 on:
   push:
     tags: ["v*.*.*"]
+  workflow_dispatch:
+    inputs:
+      version:
+        description: Version to release, e.g. 1.0.1 (bumps VERSION, writes the changelog, tags)
+        required: true
+      message:
+        description: One-line summary for the changelog
+        required: false
 
 permissions:
   contents: write
@@ -28,23 +36,37 @@ jobs:
           python-version: "3.12"
       - name: Validate the content graph
         run: python3 tools/build-content.py && git diff --exit-code --stat -- data/content
+      - name: Cut the release on the branch (manual runs)
+        if: github.event_name == 'workflow_dispatch'
+        run: |
+          git config user.name "github-actions[bot]"; git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          python3 tools/release.py --version "${{ github.event.inputs.version }}" -m "${{ github.event.inputs.message }}" --no-push
+          git push origin "HEAD:${GITHUB_REF_NAME}"
+          git push origin "v${{ github.event.inputs.version }}"
+      - name: Resolve the release tag
+        id: tag
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then T="v${{ github.event.inputs.version }}"; else T="${GITHUB_REF_NAME}"; fi
+          echo "tag=$T" >> "$GITHUB_OUTPUT"; echo "release $T"
       - name: Version must match the tag
         run: |
-          V=$(cat VERSION); T="${GITHUB_REF_NAME#v}"
+          V=$(cat VERSION); T="${{ steps.tag.outputs.tag }}"; T="${T#v}"
           [ "$V" = "$T" ] || { echo "VERSION file ($V) does not match tag ($T)"; exit 1; }
       - name: Build the production package
         run: python3 tools/package-site.py --site-url "${{ vars.SITE_URL || 'https://anatomynexus.com' }}" --pretty --zip --out dist
       - name: Release notes from the changelog
         run: |
-          awk -v v="${GITHUB_REF_NAME}" 'BEGIN{p=0} /^## /{ if (p) exit; if (index($0, v) > 0) p=1; next } p' CHANGELOG.md > notes.md
-          [ -s notes.md ] || echo "Release ${GITHUB_REF_NAME}" > notes.md
-          cp dist/human-body-site.zip "human-body-site-${GITHUB_REF_NAME}.zip"
+          T="${{ steps.tag.outputs.tag }}"
+          awk -v v="$T" 'BEGIN{p=0} /^## /{ if (p) exit; if (index($0, v " ") > 0 || $0 == "## " v) p=1; next } p' CHANGELOG.md > notes.md
+          [ -s notes.md ] || echo "Release $T" > notes.md
+          cp dist/human-body-site.zip "human-body-site-$T.zip"
       - name: Publish the GitHub Release (backup of this version)
         uses: softprops/action-gh-release@v2
         with:
-          name: ${{ github.ref_name }}
+          tag_name: ${{ steps.tag.outputs.tag }}
+          name: ${{ steps.tag.outputs.tag }}
           body_path: notes.md
-          files: human-body-site-${{ github.ref_name }}.zip
+          files: human-body-site-${{ steps.tag.outputs.tag }}.zip
       - name: Remove the zip from the deploy tree
         run: rm -f dist/human-body-site.zip
       - name: Publish dist/ to the deploy branch
@@ -55,10 +77,11 @@ jobs:
           publish_dir: ./dist
           force_orphan: true
           enable_jekyll: true
-          commit_message: "Production build ${{ github.ref_name }} (${{ github.sha }})"
-      - name: Tag the deploy branch as deploy-${{ github.ref_name }}
+          commit_message: "Production build ${{ steps.tag.outputs.tag }}"
+      - name: Tag the deploy branch as deploy-${{ steps.tag.outputs.tag }}
         run: |
+          T="${{ steps.tag.outputs.tag }}"
           git fetch origin deploy
-          git tag -f "deploy-${GITHUB_REF_NAME}" origin/deploy
-          git push origin "refs/tags/deploy-${GITHUB_REF_NAME}" --force
+          git tag -f "deploy-$T" origin/deploy
+          git push origin "refs/tags/deploy-$T" --force
           echo "deploy branch now at $(git rev-parse --short origin/deploy); the server pulls it within five minutes"

@@ -77,11 +77,12 @@ Every deployment is a numbered release, and every release is kept so the site ca
 python3 tools/release.py --bump patch -m "What changed"     # 1.0.0 -> 1.0.1, or --bump minor / major
 ```
 
-That validates the content, updates `VERSION`, `site/version.js` and `CHANGELOG.md`, commits,
-tags `vX.Y.Z` and pushes. The **Release** workflow then builds the package, publishes a GitHub
-Release with the zip attached (a complete backup of that version), updates the `deploy` branch
-and tags it `deploy-vX.Y.Z`. The server pulls it within five minutes, and the footer of every
-page shows the version and build id that are live.
+or, without a local checkout, Actions → **Release** → Run workflow → enter the version (and a
+one-line summary). Either way the content is validated, `VERSION`, `site/version.js` and
+`CHANGELOG.md` are updated and committed, the commit is tagged `vX.Y.Z`, and the **Release**
+workflow builds the package, publishes a GitHub Release with the zip attached (a complete backup
+of that version), updates the `deploy` branch and tags it `deploy-vX.Y.Z`. The server pulls it
+within five minutes, and the footer of every page shows the version and build id that are live.
 
 To roll back: Actions → **Rollback** → Run workflow → enter the version (for example `1.0.0`).
 The server is back on that version within five minutes; nothing in the source changes. Ordinary

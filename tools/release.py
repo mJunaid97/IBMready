@@ -5,6 +5,9 @@
     python3 tools/release.py --version 1.2.0 -m "Adds the endocrine primer"
     python3 tools/release.py --bump minor --no-push  # prepare locally, push later
 
+The same thing can be done without a local checkout: Actions → Release → Run workflow → enter
+the version; the workflow runs this script itself and continues with the build and deployment.
+
 Steps: validate the content graph, bump VERSION and site/version.js, add a CHANGELOG entry,
 commit, create the annotated tag vX.Y.Z and push branch + tag. Pushing the tag starts the
 Release workflow, which builds the package, publishes a GitHub Release with the zip, updates
@@ -44,13 +47,15 @@ def main():
     vjs = os.path.join(ROOT, "site", "version.js"); s = open(vjs).read()
     open(vjs, "w").write(re.sub(r"export const VERSION = '[^']*';", f"export const VERSION = '{new}';", s))
     log = os.path.join(ROOT, "CHANGELOG.md"); text = open(log).read() if os.path.exists(log) else "# Changelog\n\n"
-    since = sh("git", "log", f"v{cur}..HEAD", "--pretty=format:- %s", capture=True) if sh("git", "tag", "-l", f"v{cur}", capture=True) else ""
-    entry = f"## v{new} — {datetime.date.today().isoformat()}\n\n" + (f"{a.message}\n\n" if a.message else "") + (since + "\n\n" if since else "")
-    text = text.replace("# Changelog\n\n", "# Changelog\n\n" + entry, 1)
-    open(log, "w").write(text)
+    if f"## v{new} " not in text and f"## v{new}\n" not in text:      # an entry written by hand beforehand is kept as is
+        since = sh("git", "log", f"v{cur}..HEAD", "--pretty=format:- %s", capture=True) if new != cur and sh("git", "tag", "-l", f"v{cur}", capture=True) else ""
+        entry = f"## v{new} — {datetime.date.today().isoformat()}\n\n" + (f"{a.message}\n\n" if a.message else "") + (since + "\n\n" if since else "")
+        text = text.replace("# Changelog\n\n", "# Changelog\n\n" + entry, 1)
+        open(log, "w").write(text)
 
     sh("git", "add", "VERSION", "site/version.js", "CHANGELOG.md")
-    sh("git", "commit", "-q", "-m", f"Release v{new}" + (f": {a.message}" if a.message else ""))
+    if sh("git", "status", "--porcelain", capture=True):
+        sh("git", "commit", "-q", "-m", f"Release v{new}" + (f": {a.message}" if a.message else ""))
     sh("git", "tag", "-a", f"v{new}", "-m", f"Release v{new}" + (f": {a.message}" if a.message else ""))
     print(f"created v{new}")
     if not a.no_push:
