@@ -32,7 +32,10 @@ const browser = await chromium.launch({ executablePath: process.env.PW_CHROME ||
 const ctx = await browser.newContext({ viewport: { width: 1366, height: 900 }, bypassCSP: true });
 const page = await ctx.newPage();
 const consoleErrors = [], failedRequests = [];
-page.on('console', (m) => { if (m.type() === 'error') consoleErrors.push(`${page.url().replace(base, '/')}: ${m.text().slice(0, 200)}`); });
+// a third-party resource that cannot load (the analytics tag in a sandbox without internet access) is not a site failure:
+// only console errors raised by our own origin count, as in tools/prerender.mjs
+const ownError = (m) => { const src = (m.location() && m.location().url) || ''; return !src || src.startsWith(base); };
+page.on('console', (m) => { if (m.type() === 'error' && ownError(m)) consoleErrors.push(`${page.url().replace(base, '/')}: ${m.text().slice(0, 200)}`); });
 page.on('pageerror', (e) => consoleErrors.push(`${page.url().replace(base, '/')}: ${e.message.slice(0, 200)}`));
 page.on('response', (r) => { if (r.status() >= 400) failedRequests.push(`${r.status()} ${r.url().replace(base, '/')}`); });
 
@@ -232,7 +235,7 @@ ok('phone layout: no horizontal overflow');
 // 9. CSP compliance: navigate only (no in-page evaluation), with the policy enforced
 const strict = await (await browser.newContext({ viewport: { width: 1200, height: 800 } })).newPage();
 const cspMsgs = [];
-strict.on('console', (msg) => { if (msg.type() === 'error' || /Content Security Policy|Refused to/.test(msg.text())) cspMsgs.push(`${strict.url().replace(base, '/')}: ${msg.text().slice(0, 200)}`); });
+strict.on('console', (msg) => { if ((msg.type() === 'error' && ownError(msg)) || /Content Security Policy|Refused to/.test(msg.text())) cspMsgs.push(`${strict.url().replace(base, '/')}: ${msg.text().slice(0, 200)}`); });
 strict.on('pageerror', (e) => cspMsgs.push(`${strict.url().replace(base, '/')}: ${e.message.slice(0, 200)}`));
 for (const p of ['', detailUrl('systems', 'system.html', 'heart'), detailUrl('anatomy', 'organ.html', 'liver'), detailUrl('conditions', 'condition.html', 'gout'), detailUrl('first-aid', 'topic.html', 'cpr'), dirUrl('study'), 'search/?q=liver', dirUrl('medical-terms'), dirUrl('about')].map(u => u.replace(base, ''))) {
   await strict.goto(base + p, { waitUntil: 'load' }); await strict.waitForTimeout(2000);
