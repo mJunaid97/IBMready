@@ -16,6 +16,7 @@ on:
     branches: [main, claude/human-anatomy-site-75w0gr]
     paths-ignore:
       - ".github/workflows/qa.yml"
+      - ".github/workflows/live-check.yml"
       - "tools/qa/**"
 
 permissions:

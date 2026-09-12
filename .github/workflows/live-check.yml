@@ -1,0 +1,52 @@
+name: Live site check
+
+# Runs the full smoke test against a deployed copy of the site (default: the Hostinger
+# subdomain), from GitHub's runners: HTTPS, clean URLs, headers, every page, the explorer.
+on:
+  workflow_dispatch:
+    inputs:
+      base_url:
+        description: Base URL of the deployed site
+        required: false
+        default: https://medical.mjunaid.net/
+      pretty_urls:
+        description: "Clean URLs enabled on that host (1 or 0)"
+        required: false
+        default: "1"
+
+permissions:
+  contents: read
+
+jobs:
+  live:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Install Playwright
+        working-directory: tools/qa
+        run: |
+          npm ci
+          npx playwright install --with-deps chromium
+      - name: Headers and status of key URLs
+        run: |
+          B="${{ github.event.inputs.base_url || 'https://medical.mjunaid.net/' }}"
+          for p in "" "explorer/" "conditions/gout" "sitemap.xml" "data/hd/glb/heart.glb" "no-such-page"; do
+            echo "== ${B}${p}"; curl -sS -o /dev/null -I -H "Accept-Encoding: gzip, br" -w "status %{http_code}  type %{content_type}\n" "${B}${p}" || true
+          done
+          echo "== security headers"; curl -sSI "${B}" | grep -iE "^(content-security-policy|strict-transport-security|x-content-type-options|referrer-policy|content-encoding|cache-control)" || true
+      - name: Full smoke test against the live site
+        working-directory: tools/qa
+        env:
+          BASE_URL: ${{ github.event.inputs.base_url || 'https://medical.mjunaid.net/' }}
+          PRETTY_URLS: ${{ github.event.inputs.pretty_urls || '1' }}
+        run: node smoke.mjs
+      - name: Upload screenshots
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: live-screenshots
+          path: tools/qa/shots
+          if-no-files-found: ignore
