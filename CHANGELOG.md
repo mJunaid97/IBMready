@@ -1,6 +1,6 @@
 # Changelog
 
-## Unreleased
+## v1.3.0 — 2026-09-12
 
 Drug Interaction Checker: the medication interaction checker becomes the flagship clinical tool of
 the platform, at `/tools/drug-interaction-checker/` (the old `/interactions/` URL redirects, query
