@@ -1,20 +1,31 @@
 # Human Body Platform
 
-An open, interconnected human-body knowledge platform. **Phase 1** (this repository) is the
-foundation: an interactive 3D anatomy atlas of the whole body plus the entity data model that
-later sections (physiology, symptoms, conditions, tests, imaging, procedures, medications,
-first aid, health, study tools) plug into.
+An open, interconnected human-body knowledge platform: an interactive 3D anatomy atlas of the
+whole body, and around it a connected body of clinical and learning content in which every
+page names the organs and structures it concerns. Phases 1–5 of the roadmap are live
+(anatomy, physiology and terminology, symptoms and conditions, tests and imaging, procedures
+and medications, first aid and health), with the knowledge graph and search of Phase 6.
 
-**Live pieces**
+**Live sections**
 
 | Section | Path | What it is |
 | --- | --- | --- |
-| 3D explorer | `explorer/` | 2,234 individually selectable pieces (1,671 named structures) in 16 systems, streamed as compressed glTF; search, organs, regions, isolate, x-ray, slicing on three planes, exploded and inventory views, pinned labels, deep links, study mode, embeddable. |
-| Body systems | `systems/` | 16 system pages: overview, functions, clinical notes, organs, every structure, live 3D. |
-| Organs | `organs/` | 39 organs and skeletal groups assembled from their pieces, each with a live 3D view. |
-| Terminology | `learn/terminology.html` | 118 anatomical and medical terms in 6 categories, linked into the atlas. |
-| Study | `study/` | Identify-the-structure quiz in 3D, flashcards, terminology quiz. |
-| Roadmap | `roadmap/` | Phases, planned sections and the entity model. |
+| 3D explorer | `explorer/` | 2,234 individually selectable pieces (1,671 named structures) in 16 systems, streamed as compressed glTF; search, organs, regions, isolate, x-ray, slicing on three planes, exploded and inventory views, pinned labels, deep links, clinical topics on every structure card, study modes (identify, locate, flashcards), embeddable. |
+| Body systems | `systems/` | 16 system pages: overview, functions, clinical notes, organs, every structure, live 3D, related clinical topics. |
+| Organs | `organs/` | 38 organs and skeletal groups assembled from their pieces, each with a live 3D view and the conditions, tests, procedures and topics that mention it. |
+| Physiology | `physiology/` | 30 topics on how the body works, with key facts, linked to systems, organs, conditions and tests. |
+| Symptoms | `symptoms/` | 18 symptom pages: what it is, anatomy involved, common and less common causes, associated symptoms, red flags, related conditions and tests. Educational, not diagnostic. |
+| Conditions | `conditions/` | 40 conditions: definition, affected anatomy, causes, risk factors, symptoms, signs, complications, diagnosis, treatment, prevention, when to seek care, sources. |
+| Medical tests | `tests/` | 26 tests: what they measure, why ordered, how done, reading the result, limitations. |
+| Imaging | `imaging/` | 7 modalities: how they work, what they show, best for / not for, dose, preparation, common uses. |
+| Procedures | `procedures/` | 14 procedures step by step: indications, before, steps, after, recovery, risks, alternatives. |
+| Medications | `medications/` | 24 medicines: class, uses, mechanism in the body, forms, side effects, cautions, monitoring. Education, not prescribing. |
+| First aid | `first-aid/` | 16 topics (CPR and AED, heart attack, stroke, choking, bleeding, burns, fractures, sprains, fainting, seizures, heat, cold, poisoning, anaphylaxis, electric shock, wounds) following Resuscitation Council UK / ERC guidance, each with the anatomy behind it. |
+| Health | `health/` | Exercise, sleep, nutrition, weight, smoking, alcohol, hydration explained through the systems they act on. |
+| Terminology | `learn/terminology.html` | 149 terms in 8 categories (directions, planes, movements, regions, structures, word parts, disease processes, clinical terms) with pronunciation, atlas links and the pages that use them. |
+| Study | `study/` | Identify and locate structures in 3D, flashcards, quizzes over terms, conditions, symptoms, tests, medications, procedures and first aid, and generated viva questions. |
+| Search | `search/` | One index over 2,063 structures, organs, systems, regions, terms and topics; also the header search box on every page. |
+| Roadmap | `roadmap/` | Phases, sections and the entity model. |
 
 The site is plain HTML, CSS and ES modules. There is no build step for the site itself: serve
 the repository root with any static server (GitHub Pages, Vercel, Netlify, `python3 -m
@@ -45,8 +56,29 @@ Editable content lives in `content/` and is compiled into `data/content/` by
 - `content/organs.json` — organ groupings (match rules + aliases)
 - `content/regions.json` — spatial regions
 - `content/structures.json` — descriptions keyed by side-stripped structure name
-- `content/terms.json` — terminology dictionary
+- `content/terms.json` — terminology dictionary (8 categories, pronunciation, atlas links)
+- `content/physiology.json`, `symptoms.json`, `conditions.json`, `tests.json`, `imaging.json`,
+  `procedures.json`, `medications.json`, `first-aid.json`, `health.json` — one entity per key,
+  written to the page structures in the roadmap, cross-linked by id
 - `content/roadmap.json` — phases, sections, entity model
+
+The compiler validates every cross-reference (entity ids, organ and system ids, structure
+names, term ids) and **fails the build on a dangling link**, resolves structure names to atlas
+ids, and precomputes reverse links so any page can show what points at it. Outputs:
+
+| File | Contents |
+| --- | --- |
+| `data/content/atlas-content.json` | systems, organs (resolved to structures), regions, structure descriptions |
+| `data/content/terms.json` | terminology |
+| `data/content/types/<type>.json` | one file per entity type: metadata, categories, items with `anatomy` (organ / system / structure ids), `links` (typed forward links) and `backlinks` |
+| `data/content/clinical.json` | compact name index plus organ / system / structure / term → entity backlinks (used by the explorer, organ, system and terminology pages) |
+| `data/content/search-index.json` | flat search index over everything |
+| `data/content/knowledge.json` | the whole graph in one file (182 topics, 3,247 typed links) |
+
+To add a condition, test, medication or any other entity: add a key to the matching
+`content/*.json`, reference other entities by id and structures by their atlas name, run
+`python3 tools/build-content.py`, and the page, its links, the reverse links on every page it
+mentions, the explorer's structure cards and the search index all update.
 
 ## Rebuilding the atlas from source
 
@@ -75,7 +107,8 @@ python3 build-content.py
 | `#r=<region id>` | `explorer/#r=thorax` | show only a region |
 | `#sys=a,b` | `explorer/#sys=skeleton,heart` | visible systems |
 | `#x=1` · `#e=0.6` · `#slice=x` | | x-ray, explode amount, slice axis |
-| `?study=quiz\|cards&sys=` | `explorer/?study=quiz&sys=muscles` | open study mode |
+| `#s=a,b,c` | `explorer/#s=FJ3365,FJ3310` | select several structures (used by condition and symptom pages) |
+| `?study=quiz\|locate\|cards&sys=` | `explorer/?study=locate&sys=skeleton` | open study mode: identify the highlighted structure, click the named structure, or flashcards |
 | `?quality=hd\|lite` | | force a geometry build |
 | `?embed=1` | | bare viewport for iframes |
 

@@ -231,3 +231,18 @@ select { border: 1px solid var(--border); border-radius: 8px; padding: 4px 8px; 
 .app.is-embed .panel-right { top: 10px; right: 10px; width: 280px; max-height: calc(100% - 20px); font-size: 13px; }
 .app.is-embed .panel-right .info-actions, .app.is-embed .panel-right .info-foot, .app.is-embed #info-related-wrap, .app.is-embed #info-facts { display: none; }
 .embed-open { position: absolute; left: 10px; top: 10px; z-index: 25; padding: 6px 10px; border-radius: 9px; background: var(--panel); border: 1px solid var(--border); box-shadow: var(--shadow); font-size: 12px; text-decoration: none; }
+
+/* clinical topic links on the structure card */
+a.chip { text-decoration: none; color: inherit; display: inline-block; }
+.clin-group { margin-bottom: 7px; }
+.clin-group .eyebrow { display: block; margin-bottom: 3px; }
+.clin-more { font-size: 12px; color: var(--muted); text-decoration: none; display: inline-block; margin-top: 2px; }
+.clin-more:hover { color: var(--accent); }
+.locate-target { font-size: 17px; font-weight: 700; margin: 4px 0 8px; }
+.study-feedback { margin: 8px 0; font-size: 13px; }
+/* narrow embeds (phones): the structure card would cover the whole viewport, so keep it to a slim strip */
+@media (max-width: 640px) {
+  .app.is-embed .panel-right { top: auto; bottom: 8px; left: 8px; right: 8px; width: auto; max-height: 38%; }
+  .app.is-embed .panel-right .info-desc, .app.is-embed #info-tags-wrap, .app.is-embed .panel-right .info-section:not(#info-clinical-wrap) { display: none; }
+  .app.is-embed #info-clinical .clin-group:nth-child(n+3) { display: none; }
+}

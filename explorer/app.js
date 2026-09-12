@@ -28,15 +28,16 @@ async function main() {
   const theme = initTheme();
   const quality = pickQuality();
   const dataBase = `../data/${quality}/`;
-  const [atlas, content] = await Promise.all([
+  const [atlas, content, clinical] = await Promise.all([
     fetch(dataBase + 'atlas.json').then(r => { if (!r.ok) throw new Error('atlas.json ' + r.status); return r.json(); }),
     fetch('../data/content/atlas-content.json').then(r => r.ok ? r.json() : null).catch(() => null),
+    fetch('../data/content/clinical.json').then(r => r.ok ? r.json() : null).catch(() => null),
   ]);
   document.title = `Human Atlas · ${atlas.totals.pieces.toLocaleString('en-US')} anatomical pieces in 3D`;
 
   if (params.get('embed') === '1') { $('app').classList.add('is-embed'); const a = document.createElement('a'); a.className = 'embed-open'; a.target = '_top'; a.textContent = 'Open full atlas ↗'; a.href = location.href.replace(/([?&])embed=1&?/, '$1').replace(/\?$/, ''); $('app').appendChild(a); }
   const viewer = new AtlasViewer($('view'), atlas, { dataBase, theme });
-  const ui = new AtlasUI(viewer, atlas, content);
+  const ui = new AtlasUI(viewer, atlas, content, clinical);
   window.atlas = { viewer, ui, data: atlas };
 
   const stats = $('stats');

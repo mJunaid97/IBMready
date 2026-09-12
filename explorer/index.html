@@ -32,7 +32,7 @@
     </div>
 
     <div class="topbar-actions">
-      <button class="icon-btn" id="btn-study" title="Study mode: quiz &amp; flashcards (Q)" aria-label="Study mode">
+      <button class="icon-btn" id="btn-study" title="Study mode: identify, locate &amp; flashcards (Q)" aria-label="Study mode">
         <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v11H4z M8 20h8 M12 16v4" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
       </button>
       <button class="icon-btn" id="btn-share" title="Copy a link to this view" aria-label="Share link">
@@ -111,6 +111,10 @@
       <h3>Related structures</h3>
       <div class="chips" id="info-related"></div>
     </div>
+    <div class="info-section" id="info-clinical-wrap" hidden>
+      <h3>Clinical topics</h3>
+      <div id="info-clinical"></div>
+    </div>
     <div class="info-actions">
       <button class="btn btn-primary" id="btn-isolate">Isolate</button>
       <button class="btn" id="btn-focus">Focus</button>
@@ -132,6 +136,7 @@
     </div>
     <div class="segmented" role="tablist">
       <button class="is-active" data-mode="quiz" role="tab">Identify</button>
+      <button data-mode="locate" role="tab">Locate</button>
       <button data-mode="cards" role="tab">Flashcards</button>
     </div>
     <p class="muted small" id="study-scope"></p>
@@ -196,7 +201,7 @@
           <li><kbd>/</kbd> search · <kbd>Esc</kbd> close / clear</li>
           <li><kbd>1</kbd>–<kbd>5</kbd> views · <kbd>R</kbd> reset · <kbd>X</kbd> x-ray</li>
           <li><kbd>H</kbd> hide selection · <kbd>I</kbd> isolate · <kbd>F</kbd> focus</li>
-          <li><kbd>E</kbd>/<kbd>Shift+E</kbd> explode more / less · <kbd>Q</kbd> study mode · <kbd>P</kbd> screenshot</li>
+          <li><kbd>E</kbd>/<kbd>Shift+E</kbd> explode more / less · <kbd>Q</kbd> study mode (identify, locate, flashcards) · <kbd>P</kbd> screenshot</li>
         </ul></div>
         <div><h3>Performance</h3><p><label for="quality">Model detail</label> <select id="quality"><option value="hd">High (3.3M triangles, 13 MB)</option><option value="lite">Light (1.1M triangles, 5.5 MB)</option></select><br><span class="muted small">Phones get the light model automatically. Changing this reloads the page.</span></p></div>
         <div><h3>Data</h3><p>Geometry: <a href="https://dbarchive.biosciencedbc.jp/en/bodyparts3d/" target="_blank" rel="noopener">BodyParts3D</a> 4.0 by the Database Center for Life Science, CC BY 4.0. Structure names follow the Foundational Model of Anatomy. This is an educational atlas of one adult male reference body, not a diagnostic tool.</p></div>

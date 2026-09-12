@@ -8,9 +8,10 @@
 <body>
 <main class="wrap" id="main"><p class="muted" style="padding:40px 0">Loading…</p></main>
 <script type="module">
-  import { renderHeader, renderFooter, loadData, link, termLink, esc, param } from '../site/site.js';
+  import { renderHeader, renderFooter, loadData, loadClinical, link, termLink, esc, param } from '../site/site.js';
+  import { relatedForAnatomy, relatedCountForAnatomy } from '../site/entity.js';
   renderHeader('organs'); renderFooter();
-  const data = await loadData(); const { atlas, content, terms } = data;
+  const [data, clinical] = await Promise.all([loadData(), loadClinical()]); const { atlas, content, terms } = data;
   const id = param('id'); const o = content.organs.find(x => x.id === id);
   const main = document.getElementById('main');
   if (!o) { main.innerHTML = '<h1>Organ not found</h1><p><a href="index.html">All organs</a></p>'; throw new Error('no organ'); }
@@ -42,8 +43,7 @@
       <aside class="aside">
         ${relTerms.length ? `<h3>Related terms</h3><div class="chips">${relTerms.map(t => `<a class="chip" href="../learn/terminology.html#${t.id}">${esc(t.term)}</a>`).join('')}</div>` : ''}
         ${others.length ? `<h3>Also in this system</h3><div class="chips">${others.map(x => `<a class="chip" href="organ.html?id=${x.id}">${esc(x.name)}</a>`).join('')}</div>` : ''}
-        <h3>Coming later</h3>
-        <p class="muted small">Physiology, symptoms, conditions, tests, imaging, procedures and medications for the ${esc(o.name.toLowerCase())} will connect here. <a href="../roadmap/index.html">Roadmap.</a></p>
+        ${relatedForAnatomy('organs', o.id, clinical, `Clinical topics · ${relatedCountForAnatomy('organs', o.id, clinical)}`) || `<h3>Clinical topics</h3><p class="muted small">No physiology, condition, test or procedure pages mention the ${esc(o.name.toLowerCase())} yet. <a href="../search/index.html?q=${encodeURIComponent(o.name)}">Search the platform.</a></p>`}
       </aside>
     </div>`;
 </script>

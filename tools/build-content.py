@@ -2,11 +2,21 @@
 """build-content.py — compile the editable content sources in content/ against the atlas.
 
 Reads   content/systems.json, organs.json, regions.json, structures.json, terms.json
+        content/physiology.json, symptoms.json, conditions.json, tests.json, imaging.json,
+                procedures.json, medications.json, first-aid.json, health.json
         data/hd/atlas.json (structure names, systems, bounding boxes)
 Writes  data/content/atlas-content.json  (systems, organs with resolved pieces, regions with
                                           resolved pieces, structure descriptions keyed by
                                           structure id)
         data/content/terms.json          (medical terminology dictionary)
+        data/content/knowledge.json      (every clinical/learning entity with validated links,
+                                          resolved anatomy and computed backlinks: the graph)
+        data/content/clinical.json       (compact organ/system/structure -> entity index for
+                                          the 3D explorer)
+        data/content/search-index.json   (one flat index over every entity for site search)
+
+Every cross-reference is validated: an unknown id or structure name fails the build, so the
+knowledge graph never has a dangling edge.
 
 Organ 'match' rules: {"names": [...exact structure names...], "regex": "...", "systems": [...]}
 Descriptions in structures.json are keyed by a side-stripped, lower-case base name so one
@@ -91,6 +101,147 @@ def generated(st):
         return {"summary": f"{n}: a {'branch' if st['system']=='arteries' else 'tributary'} of its parent vessel.", "function": ("Distributes blood to" if st['system']=='arteries' else "Collects blood from") + " the tissues along its course."}
     return None
 
+# ----------------------------------------------------------------------------- knowledge graph
+SAME = object()
+TYPES = [
+    # key, file, root key (None = whole file), section name, singular, dir, detail page
+    ("physiology",  "physiology.json",  None,          "Physiology",    "Physiology topic", "physiology",  "topic.html"),
+    ("symptoms",    "symptoms.json",    None,          "Symptoms",      "Symptom",          "symptoms",    "symptom.html"),
+    ("conditions",  "conditions.json",  None,          "Conditions",    "Condition",        "conditions",  "condition.html"),
+    ("tests",       "tests.json",       "tests",       "Medical tests", "Medical test",     "tests",       "test.html"),
+    ("imaging",     "imaging.json",     "imaging",     "Imaging",       "Imaging study",    "imaging",     "study.html"),
+    ("procedures",  "procedures.json",  "procedures",  "Procedures",    "Procedure",        "procedures",  "procedure.html"),
+    ("medications", "medications.json", "medications", "Medications",   "Medication",       "medications", "medication.html"),
+    ("first-aid",   "first-aid.json",   "topics",      "First aid",     "First aid topic",  "first-aid",   "topic.html"),
+    ("health",      "health.json",      "topics",      "Health",        "Health topic",     "health",      "topic.html"),
+]
+LINK_FIELDS = {"conditions": "conditions", "symptoms": "symptoms", "associated": "symptoms", "tests": "tests", "imaging": "imaging",
+               "procedures": "procedures", "medications": "medications", "physiology": "physiology", "terms": "terms",
+               "firstAid": "first-aid", "health": "health", "related": SAME}
+CONDITION_CATEGORIES = [("cardiovascular", "Heart & circulation"), ("respiratory", "Lungs & breathing"), ("neurological", "Brain & nerves"),
+                        ("digestive", "Digestive system"), ("musculoskeletal", "Bones, joints & muscles"), ("endocrine", "Hormones & metabolism"),
+                        ("urinary", "Kidneys & urinary tract"), ("other", "Blood, infection & other")]
+SYMPTOM_REGIONS = [("head", "Head"), ("chest", "Chest"), ("abdomen", "Abdomen"), ("back", "Back & spine"), ("arms", "Arms & hands"), ("legs", "Legs & feet"), ("general", "Whole body")]
+
+def compile_knowledge(atlas, out_organs, systems, terms):
+    structs = atlas["structures"]; by_name = {s["name"]: s["id"] for s in structs}
+    organ_ids = {o["id"] for o in out_organs}; system_ids = set(systems.keys()) | {s["id"] for s in atlas["systems"]}
+    term_ids = {t["id"] for t in terms["terms"]}
+    errors = []
+    types = {}
+    for key, fname, rootkey, name, singular, d, page in TYPES:
+        raw = load(fname, None)
+        if raw is None: errors.append(f"{fname} missing"); continue
+        items = raw if rootkey is None else raw.get(rootkey, {})
+        meta = {"name": name, "singular": singular, "dir": d, "page": page, "about": (raw.get("_about") if rootkey else None) or "", "categories": []}
+        if rootkey and raw.get("categories"): meta["categories"] = raw["categories"]
+        types[key] = {"meta": meta, "items": {k: dict(v) for k, v in items.items() if not k.startswith("_")}}
+    ids = {k: set(v["items"].keys()) for k, v in types.items()}
+    ids["terms"] = term_ids
+
+    # per-type categories that are derived rather than declared
+    for cid, cname in CONDITION_CATEGORIES: types["conditions"]["meta"]["categories"].append({"id": cid, "name": cname})
+    for rid, rname in SYMPTOM_REGIONS: types["symptoms"]["meta"]["categories"].append({"id": rid, "name": rname})
+    types["first-aid"]["meta"]["categories"] = [{"id": "emergency", "name": "Call emergency services"}, {"id": "care", "name": "Injuries & everyday care"}]
+    types["imaging"]["meta"]["categories"] = [{"id": "none", "name": "No radiation"}, {"id": "low", "name": "Low dose"}, {"id": "moderate", "name": "Moderate dose"}]
+    sys_order = [s["id"] for s in atlas["systems"]]
+    types["physiology"]["meta"]["categories"] = [{"id": sid, "name": systems.get(sid, {}).get("name") or next(s["name"] for s in atlas["systems"] if s["id"] == sid)} for sid in sys_order]
+    types["health"]["meta"]["categories"] = [{"id": "lifestyle", "name": "Lifestyle"}]
+
+    back = collections.defaultdict(lambda: collections.defaultdict(lambda: collections.defaultdict(set)))   # back[type][id][srcType]
+    def note(target_type, target_id, src_type, src_id):
+        back[target_type][target_id][src_type].add(src_id)
+
+    for key, T in types.items():
+        for eid, e in T["items"].items():
+            e["id"] = eid; e["type"] = key
+            # ---- anatomy normalisation
+            a = e.pop("anatomy", None) or e.pop("affects", None) or {}
+            if key == "physiology": a = {"organs": e.pop("organs", []), "systems": e.pop("systems", []), "structures": e.pop("structures", [])}
+            organs = list(dict.fromkeys(a.get("organs", []))); syss = list(dict.fromkeys(a.get("systems", []))); snames = a.get("structures", [])
+            sids = []
+            for n in snames:
+                if n in by_name: sids.append(by_name[n])
+                else: errors.append(f"{key}/{eid}: unknown structure name '{n}'")
+            for o in organs:
+                if o not in organ_ids: errors.append(f"{key}/{eid}: unknown organ '{o}'")
+            for sy in syss:
+                if sy not in system_ids: errors.append(f"{key}/{eid}: unknown system '{sy}'")
+            e["anatomy"] = {"organs": organs, "systems": syss, "structures": sids}
+            for o in organs: note("organs", o, key, eid)
+            for sy in syss: note("systems", sy, key, eid)
+            for sid in sids: note("structures", sid, key, eid)
+            # ---- categories
+            if key == "conditions": e["category"] = e.get("category", "other")
+            elif key == "symptoms": e["category"] = e.get("region", "general")
+            elif key == "first-aid": e["category"] = "emergency" if e.get("emergency") else "care"
+            elif key == "imaging": e["category"] = e.get("radiation", "none")
+            elif key == "physiology": e["category"] = (syss[0] if syss else "")
+            elif key == "health": e["category"] = "lifestyle"
+            if "category" in e and e["category"] and e["category"] not in {c["id"] for c in T["meta"]["categories"]}:
+                errors.append(f"{key}/{eid}: unknown category '{e['category']}'")
+            # ---- typed links
+            links = collections.defaultdict(list)
+            field_of = {v: k for k, v in LINK_FIELDS.items() if v is not SAME and k != "associated"}   # target type -> link field
+            for field, target in LINK_FIELDS.items():
+                vals = e.get(field)
+                if not vals: continue
+                for v in vals:
+                    tt = key if target is SAME else target
+                    if v not in ids.get(tt, set()) and target is SAME:
+                        # 'related' may point across types; route it into the matching typed field
+                        hits = [t for t, s in ids.items() if v in s]
+                        if len(hits) == 1: tt = hits[0]; field2 = field_of[tt]
+                        else: errors.append(f"{key}/{eid}.related: unknown id '{v}'"); continue
+                    else: field2 = field
+                    if v in ids.get(tt, set()):
+                        if v not in links[field2]: links[field2].append(v)
+                        if tt != key or field2 == "related": note(tt, v, key, eid)
+                    else: errors.append(f"{key}/{eid}.{field}: unknown {tt} id '{v}'")
+            e["links"] = dict(links)
+    # ---- attach backlinks (reverse edges) to every entity
+    for key, T in types.items():
+        for eid, e in T["items"].items():
+            bl = back[key].get(eid, {})
+            e["backlinks"] = {t: sorted(v) for t, v in sorted(bl.items())}
+    anatomy = {kind: {tid: {t: sorted(v) for t, v in sorted(m.items())} for tid, m in sorted(back[kind].items())} for kind in ("organs", "systems", "structures")}
+    termlinks = {tid: {t: sorted(v) for t, v in sorted(m.items())} for tid, m in sorted(back["terms"].items())}
+    # ---- term atlas links must resolve
+    for t in terms["terms"]:
+        a = t.get("atlas") or {}
+        if a.get("structure") and a["structure"] not in by_name: errors.append(f"terms/{t['id']}: unknown structure '{a['structure']}'")
+        if a.get("organ") and a["organ"] not in organ_ids: errors.append(f"terms/{t['id']}: unknown organ '{a['organ']}'")
+        for r in t.get("related", []) + ([t["opposite"]] if t.get("opposite") else []):
+            if r not in term_ids: errors.append(f"terms/{t['id']}: unknown related term '{r}'")
+    if errors:
+        print("KNOWLEDGE LINK ERRORS:", file=sys.stderr)
+        for e in errors: print("  " + e, file=sys.stderr)
+        sys.exit(1)
+    counts = {k: len(v["items"]) for k, v in types.items()}
+    edges = sum(len(v) for T in types.values() for e in T["items"].values() for v in e["links"].values())
+    print("knowledge:", ", ".join(f"{k} {n}" for k, n in counts.items()), f"· {edges} typed links · anatomy backlinks: {len(anatomy['organs'])} organs, {len(anatomy['systems'])} systems, {len(anatomy['structures'])} structures")
+    return {"types": types, "anatomy": anatomy, "terms": termlinks}
+
+def build_search_index(atlas, out_organs, out_regions, terms, know):
+    entries = []
+    sysname = {s["id"]: s["name"] for s in atlas["systems"]}
+    for s in atlas["systems"]: entries.append(["system", s["id"], s["name"], "", f"{s['count']} pieces"])
+    for o in out_organs: entries.append(["organ", o["id"], o["name"], "|".join(o.get("aliases", [])), f"{len(o['structures'])} structures · {sysname.get(o['system'], '')}"])
+    for r in out_regions: entries.append(["region", r["id"], r["name"], "", f"{len(r['structures'])} structures"])
+    for s in atlas["structures"]: entries.append(["structure", s["id"], s["name"], "", sysname.get(s["system"], s["system"])])
+    catname = {c["id"]: c["name"] for c in terms.get("categories", [])}
+    for t in terms["terms"]: entries.append(["term", t["id"], t["term"], "", catname.get(t["category"], "Term")])
+    for key, T in know["types"].items():
+        for eid, e in T["items"].items():
+            entries.append([key, eid, e["name"], "|".join(e.get("aliases", [])), (e.get("summary") or e.get("what") or e.get("definition") or "")[:110]])
+    return {"entries": entries}
+
+def build_clinical(atlas, know):
+    """Compact index for the explorer: names of every entity plus organ/system/structure -> entity ids."""
+    names = {key: {eid: e["name"] for eid, e in T["items"].items()} for key, T in know["types"].items()}
+    types = {key: {"name": T["meta"]["name"], "singular": T["meta"]["singular"], "dir": T["meta"]["dir"], "page": T["meta"]["page"]} for key, T in know["types"].items()}
+    return {"types": types, "names": names, "terms": know["terms"], **know["anatomy"]}
+
 def main():
     atlas = json.load(open(os.path.join(ROOT, "data", "hd", "atlas.json"), encoding="utf-8"))
     systems = load("systems.json", {})
@@ -170,10 +321,22 @@ def main():
     unused = [k for k in descs if k not in used_keys]
     if unused: print(f"  unused description keys ({len(unused)}): {unused[:20]}", file=sys.stderr)
 
+    know = compile_knowledge(atlas, out_organs, systems, terms)
+    search_index = build_search_index(atlas, out_organs, out_regions, terms, know)
+    clinical = build_clinical(atlas, know)
+
     os.makedirs(OUT, exist_ok=True)
     compiled = {"systems": systems, "organs": out_organs, "regions": out_regions, "structures": out_structs}
     json.dump(compiled, open(os.path.join(OUT, "atlas-content.json"), "w", encoding="utf-8"), separators=(",", ":"), ensure_ascii=False)
     json.dump(terms, open(os.path.join(OUT, "terms.json"), "w", encoding="utf-8"), separators=(",", ":"), ensure_ascii=False)
+    for fname, obj in (("knowledge.json", know), ("clinical.json", clinical), ("search-index.json", search_index)):
+        json.dump(obj, open(os.path.join(OUT, fname), "w", encoding="utf-8"), separators=(",", ":"), ensure_ascii=False)
+        print("wrote", os.path.join(OUT, fname), os.path.getsize(os.path.join(OUT, fname)), "bytes")
+    # one file per entity type so a page loads only the section it needs (plus the small clinical.json name index)
+    os.makedirs(os.path.join(OUT, "types"), exist_ok=True)
+    for key, T in know["types"].items():
+        json.dump(T, open(os.path.join(OUT, "types", key + ".json"), "w", encoding="utf-8"), separators=(",", ":"), ensure_ascii=False)
+    print("wrote", len(know["types"]), "type files to", os.path.join(OUT, "types"))
     for o in out_organs: print(f"  organ {o['id']:16s} {len(o['structures']):4d} structures")
     for r in out_regions: print(f"  region {r['id']:14s} {len(r['structures']):4d} structures")
     print("wrote", os.path.join(OUT, "atlas-content.json"), os.path.getsize(os.path.join(OUT, "atlas-content.json")), "bytes")

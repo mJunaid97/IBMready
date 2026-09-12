@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Human Body · interactive anatomy platform</title>
-  <meta name="description" content="An open, interconnected human body knowledge platform. Explore 2,234 anatomical structures in 3D, browse body systems and organs, learn medical terminology and test yourself.">
+  <title>Human Body · interactive anatomy and medical knowledge platform</title>
+  <meta name="description" content="An open, interconnected human body knowledge platform: 2,234 anatomical structures in 3D, body systems and organs, physiology, symptoms, conditions, tests, imaging, procedures, medications, first aid, health and study tools, all linked together.">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="site/site.css">
 </head>
@@ -12,47 +12,55 @@
 <main class="wrap">
   <section class="hero">
     <div>
-      <div class="eyebrow">Human Body Platform · Phase 1</div>
+      <div class="eyebrow">Human Body Platform</div>
       <h1>The human body, piece by piece.</h1>
-      <p class="lead">An interactive atlas of <b id="n-pieces">2,234</b> individually selectable anatomical structures in 16 systems, built on the open BodyParts3D dataset, with organ, region and terminology layers that every future section connects to.</p>
+      <p class="lead">An interactive atlas of <b id="n-pieces">2,234</b> selectable anatomical structures in 16 systems, and a connected body of knowledge around it: what each part does, what goes wrong, how it is found and how it is treated.</p>
       <div class="actions">
         <a class="btn btn-primary" href="explorer/index.html">Open the 3D explorer</a>
-        <a class="btn" href="systems/index.html">Browse body systems</a>
+        <a class="btn" href="conditions/index.html">Browse conditions</a>
         <a class="btn" href="study/index.html">Study mode</a>
       </div>
       <div class="stats" id="stats">
         <div class="stat"><b>2,234</b><span>modelled pieces</span></div>
         <div class="stat"><b>1,671</b><span>named structures</span></div>
-        <div class="stat"><b>16</b><span>body systems</span></div>
-        <div class="stat"><b>39</b><span>organs &amp; groups</span></div>
+        <div class="stat"><b>182</b><span>clinical &amp; learning topics</span></div>
+        <div class="stat"><b>3,247</b><span>typed links between them</span></div>
       </div>
     </div>
     <a class="hero-art" href="explorer/index.html" aria-label="Open the 3D explorer"><img src="site/hero.jpg" alt="The 3D atlas showing muscles, skeleton and vessels of the whole body" width="1400" height="900" loading="eager"></a>
   </section>
 
-  <h2>What you can do today</h2>
+  <h2>Start from the body</h2>
   <div class="grid grid-3">
     <a class="card" href="explorer/index.html"><div class="eyebrow">Explore</div><h3>3D anatomy explorer</h3><p>Orbit, click and search every structure. Toggle systems, isolate organs, slice the body on three planes, explode it into parts or lay every piece out as an inventory.</p><div class="meta">Streams in seconds · works on phones</div></a>
-    <a class="card" href="systems/index.html"><div class="eyebrow">Human body</div><h3>Body systems</h3><p>Sixteen system pages with overviews, functions, clinical notes and the full list of modelled structures, each linked into the 3D view.</p></a>
-    <a class="card" href="organs/index.html"><div class="eyebrow">Human body</div><h3>Organs</h3><p>Brain, heart, lungs, liver, kidneys and 34 more organs and skeletal groups assembled from their pieces, with a live 3D view on every page.</p></a>
-    <a class="card" href="learn/terminology.html"><div class="eyebrow">Learn</div><h3>Medical terminology</h3><p>Directional terms, planes, movements, regions and the word parts that unlock medical language, each with a jump into the atlas.</p></a>
-    <a class="card" href="study/index.html"><div class="eyebrow">Study</div><h3>Quizzes &amp; flashcards</h3><p>Identify highlighted structures in 3D, flip through flashcards by system or region, and test your terminology.</p></a>
-    <a class="card" href="roadmap/index.html"><div class="eyebrow">Platform</div><h3>Roadmap</h3><p>Symptoms, conditions, tests, imaging, procedures, medications, first aid and health will hang off this same anatomy backbone. See the plan and the data model.</p></a>
+    <a class="card" href="systems/index.html"><div class="eyebrow">Human body</div><h3>Body systems</h3><p>Sixteen system pages with overviews, functions, clinical notes, every modelled structure and the conditions, tests and procedures that concern them.</p></a>
+    <a class="card" href="organs/index.html"><div class="eyebrow">Human body</div><h3>Organs</h3><p>Brain, heart, lungs, liver, kidneys and 33 more organs and skeletal groups, each with a live 3D view and its own clinical topics.</p></a>
+    <a class="card" href="physiology/index.html"><div class="eyebrow">Learn</div><h3>Physiology</h3><p>Thirty topics on how the body works: the cardiac cycle, gas exchange, nerve signals, digestion, kidney filtration and hormone control.</p></a>
+    <a class="card" href="learn/terminology.html"><div class="eyebrow">Learn</div><h3>Medical terminology</h3><p>Directions, planes, movements, regions, structural words, word parts, disease processes and clinical terms, each linked into the atlas.</p></a>
+    <a class="card" href="study/index.html"><div class="eyebrow">Study</div><h3>Quizzes, flashcards &amp; viva</h3><p>Identify or locate highlighted structures in 3D, flip through flashcards, and test terminology, conditions, tests and medications.</p></a>
   </div>
 
-  <h2>One connected body of knowledge</h2>
-  <p class="lead">Every page is built from reusable entities with explicit links, so a reader can move naturally from a body part to its function, its conditions and the tests, procedures and treatments that follow.</p>
-  <div class="grid" id="sections"></div>
+  <h2>Then follow the links into medicine</h2>
+  <p class="lead">Every clinical page names the organs and structures it concerns, so a knee pain page leads to the femur, tibia and menisci in 3D, to osteoarthritis, to the X-ray and MRI that show it, to knee replacement and to the painkillers used.</p>
+  <div class="grid grid-3 type-grid" id="types"></div>
 
-  <div class="callout">This is an educational atlas of one adult male reference body. It is not a diagnostic tool and does not give medical advice.</div>
+  <h2>Everyday and emergency knowledge</h2>
+  <div class="grid grid-3" id="everyday"></div>
+
+  <div class="callout">This is an educational platform built on one adult male reference body and public clinical guidance. It is not a diagnostic tool and does not give medical advice. In an emergency, call your local emergency number.</div>
 </main>
 <script type="module">
-  import { renderHeader, renderFooter, SECTIONS, loadData, esc } from './site/site.js';
+  import { renderHeader, renderFooter, TYPES, typeLink, loadData, loadClinical, esc } from './site/site.js';
   renderHeader('home'); renderFooter();
-  document.getElementById('sections').innerHTML = SECTIONS.map(s => `<a class="card ${s.live ? '' : 'planned'}" href="${s.href}"><h3>${esc(s.name)} <span class="badge ${s.live ? 'live' : 'planned'}">${s.live ? 'live' : 'planned'}</span></h3><p>${s.items ? s.items.map(i => i.name).join(' · ') : 'Planned for a later phase; every entry will link back to the anatomy it concerns.'}</p></a>`).join('');
+  const clinical = await loadClinical().catch(() => null);
+  const count = (t) => clinical ? Object.keys(clinical.names[t] || {}).length : '';
+  const card = (t, extra = '') => `<a class="card" href="${typeLink(t)}"><div class="icon">${TYPES[t].icon}</div><h3>${esc(TYPES[t].name)} ${count(t) ? `<span class="badge">${count(t)}</span>` : ''}</h3><p>${esc(TYPES[t].blurb)}</p>${extra}</a>`;
+  document.getElementById('types').innerHTML = ['symptoms', 'conditions', 'tests', 'imaging', 'procedures', 'medications'].map(t => card(t)).join('');
+  document.getElementById('everyday').innerHTML = card('first-aid') + card('health') + `<a class="card" href="search/index.html"><div class="icon">🔍</div><h3>Search everything</h3><p>One search across structures, organs, systems, terms and every clinical topic, with results that link straight into the 3D atlas.</p></a>`;
   loadData().then(({ atlas, content }) => {
     const set = (i, v) => { document.querySelectorAll('.stat b')[i].textContent = v.toLocaleString('en-US'); };
-    set(0, atlas.totals.pieces); set(1, atlas.totals.structures); set(2, atlas.systems.length); set(3, content.organs.length);
+    set(0, atlas.totals.pieces); set(1, atlas.totals.structures);
+    if (clinical) set(2, Object.values(clinical.names).reduce((n, m) => n + Object.keys(m).length, 0));
   }).catch(() => {});
 </script>
 </body>

@@ -18,9 +18,11 @@ const cap = (s) => (s ? s[0].toUpperCase() + s.slice(1) : s);
 const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
 
 export class AtlasUI {
-  constructor(viewer, atlas, content) {
+  constructor(viewer, atlas, content, clinical) {
     this.v = viewer; this.atlas = atlas;
     this.content = content || { systems: {}, organs: [], regions: [], structures: {} };
+    this.clinical = clinical || null;           // data/content/clinical.json: entity names + organ/system/structure backlinks
+    this.embedded = window.self !== window.top;
     this.sysById = new Map(atlas.systems.map(s => [s.id, s]));
     this.structOfPiece = atlas.pieces.map(p => p.structure);
     this.pinned = new Set();
@@ -33,6 +35,8 @@ export class AtlasUI {
     this.index = buildIndex(atlas, this.conceptCounts);
     for (const [i, o] of (this.content.organs || []).entries()) this.index.push({ type: 'organ', id: o.id, idx: i, name: o.name, norm: o.name.toLowerCase(), aliases: (o.aliases || []).map(a => a.toLowerCase()), words: [o.name, ...(o.aliases || [])].join(' ').toLowerCase().split(/[^a-z]+/).filter(Boolean), sub: `${o.structures.length} structures · ${this.sysById.get(o.system)?.name || ''}`, system: o.system, rank: 2.6 });
     for (const [i, r] of (this.content.regions || []).entries()) this.index.push({ type: 'region', id: r.id, idx: i, name: r.name, norm: r.name.toLowerCase(), words: r.name.toLowerCase().split(/[^a-z]+/).filter(Boolean), sub: `${r.structures.length} structures`, rank: 2.4 });
+    if (this.clinical) for (const [kind, names] of Object.entries(this.clinical.names)) for (const [id, name] of Object.entries(names))
+      this.index.push({ type: 'topic', kind, id, name, norm: name.toLowerCase(), words: name.toLowerCase().split(/[^a-z0-9]+/).filter(Boolean), sub: `${this.clinical.types[kind].singular} · opens the page`, href: this.topicHref(kind, id), rank: 1.6 });
     this._buildNavigator();
     this._bindSearch();
     this._bindPointer();
@@ -62,6 +66,24 @@ export class AtlasUI {
   piecesOfStructure(si) { return this.atlas.structures[si].pieces; }
   primaryStructure() { const f = [...this.v.selected][0]; return f === undefined ? -1 : this.structOfPiece[f]; }
   contentOf(si) { return this.content.structures[this.structure(si).id] || null; }
+  topicHref(kind, id) { const t = this.clinical && this.clinical.types[kind]; return t ? `../${t.dir}/${t.page}?id=${encodeURIComponent(id)}` : '#'; }
+  /** Clinical topics that reference a structure directly or through its organ. Returns [{kind, name, ids}] in a fixed order. */
+  clinicalFor(si, organId) {
+    if (!this.clinical) return [];
+    const st = si >= 0 ? this.structure(si) : null;
+    const sources = [st ? this.clinical.structures[st.id] : null, organId ? this.clinical.organs[organId] : null].filter(Boolean);
+    if (!sources.length) return [];
+    const order = ['conditions', 'symptoms', 'physiology', 'tests', 'imaging', 'procedures', 'medications', 'first-aid', 'health'];
+    return order.map(kind => ({ kind, name: this.clinical.types[kind].name, ids: [...new Set(sources.flatMap(m => m[kind] || []))] })).filter(g => g.ids.length);
+  }
+  _renderClinical(groups, organId) {
+    const wrap = $('info-clinical-wrap'); const box = $('info-clinical');
+    if (!groups.length) { wrap.hidden = true; box.innerHTML = ''; return; }
+    const target = this.embedded ? ' target="_top"' : '';
+    box.innerHTML = groups.map(g => `<div class="clin-group"><span class="eyebrow">${esc(g.name)}</span><div class="chips">${g.ids.slice(0, 5).map(id => `<a class="chip" href="${this.topicHref(g.kind, id)}"${target}>${esc(this.clinical.names[g.kind][id] || id)}</a>`).join('')}${g.ids.length > 5 ? `<span class="chip chip-sm">+${g.ids.length - 5}</span>` : ''}</div></div>`).join('')
+      + (organId ? `<a class="clin-more" href="../organs/organ.html?id=${encodeURIComponent(organId)}"${target}>All topics for the ${esc((this.organ(organId) || {}).name || organId).toLowerCase()} ↗</a>` : '');
+    wrap.hidden = false;
+  }
   organ(id) { return (this.content.organs || []).find(o => o.id === id); }
   organIndex(id) { return (this.content.organs || []).findIndex(o => o.id === id); }
   region(id) { return (this.content.regions || []).find(r => r.id === id); }
@@ -172,6 +194,7 @@ export class AtlasUI {
     else if (r.type === 'organ') this.selectOrgan(r.idx, { focus: true });
     else if (r.type === 'region') this.isolateRegion(r.idx);
     else if (r.type === 'system') { this.soloSystem(r.id); this.v.select([]); this.v.setView('frontLeft'); this.toast(`Showing ${r.name} only`); }
+    else if (r.type === 'topic') { if (this.embedded) window.open(r.href, '_top'); else location.href = r.href; }
   }
 
   // ------------------------------------------------------- selection API
@@ -222,6 +245,7 @@ export class AtlasUI {
       if (i < 0) { if (!down.shift) this.v.select([]); down = null; return; }
       if (dbl) { this.v.focus(this.piecesOfStructure(this.structOfPiece[i])); down = null; return; }
       const si = this.structOfPiece[i];
+      if (this.studyOpen && this.study.mode === 'locate' && this.study.current && !this.study.current.done) { this.study.locateAnswer(si); down = null; return; }
       const already = this.piecesOfStructure(si).every(p => this.v.selected.has(p));
       if (down.shift) { if (already) { const keep = [...this.v.selected].filter(p => this.structOfPiece[p] !== si); this.selectionLabel = null; this.v.select(keep); } else this.selectStructure(si, { additive: true }); }
       else this.selectStructure(si);
@@ -239,7 +263,7 @@ export class AtlasUI {
       this.v.hover(i);
       this.v.canvas.classList.toggle('is-hovering', i >= 0);
       const tip = this._tip;
-      if (i >= 0 && this.labelsOn) {
+      if (i >= 0 && this.labelsOn && !this.studyHideNames) {
         const st = this.structure(this.structOfPiece[i]);
         tip.innerHTML = `${esc(st.name)}<small>${esc(this.sysById.get(st.system).name)}${st.pieces.length > 1 ? ` · ${st.pieces.length} pieces` : ''}</small>`;
         tip.style.left = p.x + 'px'; tip.style.top = p.y + 'px'; tip.hidden = false;
@@ -338,6 +362,7 @@ export class AtlasUI {
       $('info-related-wrap').hidden = false;
       $('info-related').innerHTML = structs.slice(0, 60).map(s => `<button class="chip" data-structure="${s}">${esc(this.structure(s).name)}</button>`).join('') + (structs.length > 60 ? `<span class="chip">+${structs.length - 60} more</span>` : '');
       $('btn-pair').hidden = true; $('info-fma').textContent = lab && lab.kind === 'concept' ? lab.id : lab ? `organ:${lab.id}` : '';
+      this._renderClinical(lab && lab.kind === 'organ' ? this.clinicalFor(-1, lab.id) : [], lab && lab.kind === 'organ' ? lab.id : null);
     } else {
       const c = this.contentOf(si) || {};
       $('info-system').textContent = sys.name;
@@ -362,6 +387,7 @@ export class AtlasUI {
       $('info-related').innerHTML = related.map(s => `<button class="chip" data-structure="${s}">${esc(this.structure(s).name)}</button>`).join('');
       $('btn-pair').hidden = st.pair === undefined;
       $('info-fma').textContent = `${st.concept} · ${st.pieces.map(p => this.atlas.pieces[p].id).join(', ')}`;
+      this._renderClinical(this.clinicalFor(si, c.organ), c.organ || null);
     }
     $('btn-isolate').setAttribute('aria-pressed', String(!!this.v.isolated)); $('btn-isolate').textContent = this.v.isolated ? 'Show all' : 'Isolate';
     $('btn-pin').setAttribute('aria-pressed', String(this.pinned.has(si))); $('btn-pin').textContent = this.pinned.has(si) ? 'Unpin label' : 'Pin label';
@@ -443,6 +469,27 @@ export class AtlasUI {
         const nav = body.querySelector('.study-nav'); nav.innerHTML = `${c && c.summary ? `<p class="small" style="margin:0 0 8px">${esc(c.summary)}</p>` : ''}<button class="btn btn-primary" id="quiz-next">${right ? 'Correct! Next' : 'Next'}</button>`;
         nav.querySelector('#quiz-next').addEventListener('click', () => this.next());
       },
+      locate() {
+        const pool = this.pool(); if (pool.length < 2) { body.innerHTML = '<p class="muted">Show at least two structures to start.</p>'; return; }
+        const target = pool[Math.floor(Math.random() * pool.length)];
+        this.current = { answer: target, done: false };
+        self.studyHideNames = true; self.selectionLabel = null; self.v.select([], { silent: true }); self._updateLabels();
+        const st = self.structure(target);
+        body.innerHTML = `<div class="quiz-q">Click this structure on the body</div><div class="locate-target">${esc(st.name)}</div><p class="muted small">${esc(self.sysById.get(st.system).name)}${st.side ? ` · ${st.side} side` : ''}. Rotate, zoom or use X-ray if it is hidden; names stay hidden until you answer.</p><div class="study-nav"><button class="btn" id="locate-reveal">Show me</button><button class="btn" id="locate-skip">Skip</button></div>`;
+        body.querySelector('#locate-reveal').addEventListener('click', () => this.locateAnswer(-1));
+        body.querySelector('#locate-skip').addEventListener('click', () => this.locate());
+      },
+      locateAnswer(si) {
+        if (!this.current || this.current.done) return; this.current.done = true;
+        const target = this.current.answer; const right = si === target; const revealed = si < 0;
+        if (!revealed) { this.asked++; if (right) this.score++; }
+        self.studyHideNames = false;
+        self.v.select(self.piecesOfStructure(target), { silent: true }); self._updateLabels(); self.v.focus(self.piecesOfStructure(target));
+        $('study-score').textContent = this.asked ? `Score ${this.score} / ${this.asked}` : '';
+        const c = self.contentOf(target); const clicked = si >= 0 && !right ? self.structure(si).name : null;
+        body.innerHTML = `<div class="quiz-q">${revealed ? 'Here it is' : right ? 'Correct!' : 'Not quite'}</div><div class="locate-target">${esc(self.structure(target).name)}</div>${clicked ? `<p class="study-feedback">You clicked the <b>${esc(clicked)}</b>. The target is highlighted now.</p>` : ''}${c && c.summary ? `<p class="small" style="margin:0 0 8px">${esc(c.summary)}</p>` : ''}<div class="study-nav"><button class="btn btn-primary" id="locate-next">Next</button></div>`;
+        body.querySelector('#locate-next').addEventListener('click', () => this.locate());
+      },
       cards() {
         if (!this.deck.length) { this.deck = this.pool().sort(() => Math.random() - 0.5); this.cardIdx = 0; }
         if (!this.deck.length) { body.innerHTML = '<p class="muted">Nothing visible to study.</p>'; return; }
@@ -477,7 +524,7 @@ export class AtlasUI {
     const scope = this.activeRegion ? `the ${this.region(this.activeRegion).name.toLowerCase()} region` : vis.length === this.atlas.systems.length - 1 ? 'all systems' : vis.join(', ');
     $('study-scope').textContent = `Questions come from what is visible: ${scope}. Toggle systems or pick a region to narrow the scope.`;
     $('study-score').textContent = this.study.asked ? `Score ${this.study.score} / ${this.study.asked}` : '';
-    if (this.study.mode === 'quiz') this.study.next(); else this.study.cards();
+    if (this.study.mode === 'quiz') this.study.next(); else if (this.study.mode === 'locate') this.study.locate(); else this.study.cards();
   }
 
   // ----------------------------------------------------------- shortcuts
@@ -543,6 +590,7 @@ export class AtlasUI {
     if (this.studyOpen) { /* never put the quiz answer in the URL */ }
     else if (structs.size > 1 && lab && lab.kind === 'organ') p.set('o', lab.id);
     else if (structs.size > 1 && lab && lab.kind === 'concept') p.set('c', lab.id);
+    else if (structs.size > 1 && structs.size <= 20 && !lab) p.set('s', [...structs].map(x => this.structure(x).id).join(','));
     else if (si >= 0) p.set('s', this.structure(si).id);
     if (this.activeRegion) p.set('r', this.activeRegion);
     const vis = this.atlas.systems.filter(s => this.v.sysIndex.get(s.id).visible).map(s => s.id);
@@ -568,10 +616,15 @@ export class AtlasUI {
     if (p.get('e')) this.v.setExplode(parseFloat(p.get('e')));
     if (p.get('slice')) this.setSliceAxis(p.get('slice'));
     if (p.get('r')) { const ri = (this.content.regions || []).findIndex(r => r.id === p.get('r')); if (ri >= 0) this.isolateRegion(ri); }
-    if (p.get('s')) { const si = this.atlas.structures.findIndex(s => s.id === p.get('s')); if (si >= 0) this.selectStructure(si, { focus: true }); }
+    if (p.get('s')) {
+      const ids = p.get('s').split(','); const byId = new Map(this.atlas.structures.map((s, i) => [s.id, i]));
+      const sis = ids.map(id => byId.get(id)).filter(si => si !== undefined);
+      sis.forEach((si, k) => this.selectStructure(si, { additive: k > 0 }));
+      if (sis.length) this.v.focus([...this.v.selected]);
+    }
     if (p.get('c')) { const ci = this.atlas.concepts.findIndex(c => c.id === p.get('c')); if (ci >= 0) this.selectConcept(ci, { focus: true }); }
     if (p.get('o')) { const oi = this.organIndex(p.get('o')); if (oi >= 0) this.selectOrgan(oi, { focus: true }); }
-    if (q.get('study')) { const sys = q.get('sys'); if (sys) { this.v.setSystemsVisible(sys.split(',')); this._setPresetActive(null); } this.toggleStudy(true); this.startStudy(q.get('study') === 'cards' ? 'cards' : 'quiz'); }
+    if (q.get('study')) { const sys = q.get('sys'); if (sys) { this.v.setSystemsVisible(sys.split(',')); this._setPresetActive(null); } this.toggleStudy(true); this.startStudy(['cards', 'locate'].includes(q.get('study')) ? q.get('study') : 'quiz'); }
   }
   share() {
     this._updateShareState();

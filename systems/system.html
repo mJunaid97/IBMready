@@ -8,9 +8,10 @@
 <body>
 <main class="wrap" id="main"><p class="muted" style="padding:40px 0">Loading…</p></main>
 <script type="module">
-  import { renderHeader, renderFooter, loadData, link, esc, fmt, param } from '../site/site.js';
+  import { renderHeader, renderFooter, loadData, loadClinical, link, esc, fmt, param } from '../site/site.js';
+  import { relatedForAnatomy, relatedCountForAnatomy } from '../site/entity.js';
   renderHeader('systems'); renderFooter();
-  const { atlas, content } = await loadData();
+  const [{ atlas, content }, clinical] = await Promise.all([loadData(), loadClinical()]);
   const id = param('id'); const sys = atlas.systems.find(s => s.id === id);
   const main = document.getElementById('main');
   if (!sys) { main.innerHTML = '<h1>System not found</h1><p><a href="index.html">All systems</a></p>'; throw new Error('no system');
@@ -28,6 +29,7 @@
     <div class="actions">
       <a class="btn btn-primary" href="${link.system(id)}">Open in 3D</a>
       <a class="btn" href="${link.quiz(id)}">Quiz me on this system</a>
+      <a class="btn" href="${link.locate(id)}">Locate structures</a>
       <a class="btn" href="${link.cards(id)}">Flashcards</a>
     </div>
     <div class="embed"><iframe src="${link.embed('sys=' + id)}" title="3D view of the ${esc(sys.name)}" loading="lazy" allow="fullscreen"></iframe></div>
@@ -47,8 +49,7 @@
         ${c.related ? `<h3>Related systems</h3><div class="chips">${c.related.map(r => { const rs = atlas.systems.find(s => s.id === r); return rs ? `<a class="chip" href="system.html?id=${r}">${esc(rs.name)}</a>` : ''; }).join('')}</div>` : ''}
         <h3>Facts</h3>
         <dl class="term" style="border:0;padding:0"><dl><dt>Pieces</dt><dd>${fmt(sys.count)}</dd><dt>Structures</dt><dd>${structs.length}</dd><dt>Triangles</dt><dd>${fmt(sys.triangles)}</dd><dt>Download</dt><dd>${(sys.bytes / 1048576).toFixed(2)} MB</dd></dl>
-        <h3>Coming later</h3>
-        <p class="muted small">Physiology, conditions, symptoms, tests and procedures for this system will link here as those sections are built. <a href="../roadmap/index.html">See the roadmap.</a></p>
+        ${relatedForAnatomy('systems', id, clinical, `Clinical topics · ${relatedCountForAnatomy('systems', id, clinical)}`) || `<h3>Clinical topics</h3><p class="muted small">No clinical pages reference this system yet. <a href="../search/index.html?q=${encodeURIComponent(sys.name)}">Search the platform.</a></p>`}
       </aside>
     </div>`;
 </script>
