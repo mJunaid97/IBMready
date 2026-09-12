@@ -104,27 +104,29 @@ async function renderExtras(browser) {
   await body.evaluate(() => { const v = window.atlas.viewer; v.requestRender(); v.render && v.render(); });
   await body.waitForTimeout(150);
   const bodyPng = (await body.screenshot({ type: 'png' })).toString('base64');
-  const cover = await (await browser.newContext({ viewport: { width: 1200, height: 630 }, deviceScaleFactor: 1 })).newPage();
-  await cover.setContent(`<!doctype html><html><head><meta charset="utf-8"><style>
+  // composed in a same-origin document (opened on the site's 404 page) so the self-hosted font loads without CORS
+  const cover = await (await browser.newContext({ viewport: { width: 1200, height: 630 }, deviceScaleFactor: 1, bypassCSP: true })).newPage();
+  await cover.goto(`${base}404.html`, { waitUntil: 'load' });
+  await cover.evaluate((html) => { document.open(); document.write(html); document.close(); }, `<!doctype html><html><head><meta charset="utf-8"><style>
     @font-face { font-family: Inter; font-weight: 400 700; src: url(${base}site/fonts/inter-latin.woff2) format("woff2"); }
-    html, body { margin: 0; } body { width: 1200px; height: 630px; overflow: hidden; background: #0B2D45; font-family: Inter, system-ui, sans-serif; color: #F7F9FB; position: relative; }
+    html, body { margin: 0; } body { width: 1200px; height: 630px; overflow: hidden; background: #0B2D45; font-family: Inter, system-ui, sans-serif; font-optical-sizing: auto; color: #F7F9FB; position: relative; }
     .figure { position: absolute; right: 30px; top: -30px; height: 720px; width: auto; }
     .glow { position: absolute; right: -120px; top: -160px; width: 760px; height: 760px; border-radius: 50%; background: radial-gradient(closest-side, rgba(78,156,171,.28), transparent 70%); }
-    .text { position: absolute; left: 72px; top: 96px; width: 660px; }
-    .logo { height: 60px; width: auto; display: block; }
-    h1 { font-size: 56px; line-height: 1.08; font-weight: 600; letter-spacing: -0.025em; margin: 44px 0 20px; }
-    p { font-size: 21px; line-height: 1.45; color: #A7B3BD; margin: 0; max-width: 600px; }
-    .rule { position: absolute; left: 72px; bottom: 56px; display: flex; align-items: center; gap: 14px; font-size: 16px; color: #A7B3BD; letter-spacing: .06em; text-transform: uppercase; font-weight: 600; }
+    .text { position: absolute; left: 72px; top: 50%; transform: translateY(-50%); width: 680px; }
+    .logo { height: 58px; width: auto; display: block; }
+    h1 { font-size: 54px; line-height: 1.08; font-weight: 600; letter-spacing: -0.025em; margin: 40px 0 18px; }
+    p { font-size: 20px; line-height: 1.45; color: #A7B3BD; margin: 0; max-width: 600px; }
+    .rule { display: flex; align-items: center; gap: 14px; margin-top: 30px; font-size: 15px; color: #A7B3BD; letter-spacing: .08em; text-transform: uppercase; font-weight: 600; }
     .rule::before { content: ""; width: 36px; height: 2px; background: #4E9CAB; }
   </style></head><body>
     <div class="glow"></div>
     <img class="figure" src="data:image/png;base64,${bodyPng}" alt="">
     <div class="text"><img class="logo" src="${base}site/logo/anatomy-nexus-white.svg" alt="Anatomy Nexus">
       <h1>Explore the Human Body.<br>Understand Medicine.</h1>
-      <p>Interactive 3D anatomy connected to physiology, symptoms, conditions, tests, imaging, procedures and medications.</p></div>
-    <div class="rule">anatomynexus.com</div>
-  </body></html>`, { waitUntil: 'load' });
-  await cover.evaluate(() => document.fonts.ready); await cover.waitForTimeout(200);
+      <p>Interactive 3D anatomy connected to physiology, symptoms, conditions, tests, imaging, procedures and medications.</p>
+      <div class="rule">anatomynexus.com</div></div>
+  </body></html>`);
+  await cover.evaluate(() => document.fonts.ready); await cover.waitForTimeout(300);
   await cover.screenshot({ path: `${root}site/og-cover.png`, type: 'png' });
   console.log('  site/og-cover.png');
 }

@@ -84,7 +84,7 @@ kbd { font: 11px/1 var(--mono); border: 1px solid var(--border-strong); border-b
 .logo-light { display: var(--logo-light); }
 .logo-dark { display: var(--logo-dark); }
 .mark-light, .mark-dark { display: none; }
-.stats { grid-column: 2; justify-self: start; color: var(--muted); font-size: 12px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.stats { grid-column: 2; min-width: 0; color: var(--muted); font-size: 12px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }   /* fills its track so it ellipsises instead of running under the search box */
 .search { grid-column: 3; position: relative; }
 .search-icon { position: absolute; left: 12px; top: 50%; width: 18px; height: 18px; transform: translateY(-50%); color: var(--muted); pointer-events: none; }
 #search-input { width: 100%; height: 40px; padding: 0 38px 0 38px; border-radius: 10px; border: 1px solid var(--border-strong); background: var(--panel); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); box-shadow: var(--shadow); outline: none; transition: border-color .15s, box-shadow .15s; }
