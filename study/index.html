@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self'; connect-src 'self'; frame-src 'self'; worker-src 'self' blob:; object-src 'none'; base-uri 'self'; form-action 'self'">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>Study · Human Body</title>
+  <meta name="description" content="Test yourself: identify highlighted structures in 3D, flip through flashcards by system or region, and quiz your medical terminology.">
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  <meta name="theme-color" content="#d9731a">
+  <link rel="manifest" href="../manifest.webmanifest">
+  <link rel="apple-touch-icon" href="../site/apple-touch-icon.png"><link rel="stylesheet" href="../site/site.css">
+</head>
+<body>
+<main class="wrap">
+  <div class="breadcrumb"><a href="../index.html">Home</a> › Study</div>
+  <h1>Study</h1>
+  <p class="lead">Learning anatomy and medicine is mostly retrieval practice. Pick a scope, let the atlas highlight or name a structure, and answer; then test the clinical knowledge that hangs off it. Scores stay on your device.</p>
+
+  <h2>Identify the structure in 3D</h2>
+  <p class="muted">Each question highlights one structure in the atlas and offers four names from the same system. Keys 1–4 answer.</p>
+  <div class="grid grid-3" id="identify"></div>
+
+  <h2>Locate the structure in 3D</h2>
+  <p class="muted">The reverse exercise, and the one exams use: the atlas names a structure and you click it on the body. Great for surface anatomy and for learning where things sit.</p>
+  <div class="chips" id="locate"></div>
+
+  <h2>By region</h2>
+  <div class="chips" id="regions"></div>
+
+  <h2 id="terms">Terminology and clinical quizzes</h2>
+  <p class="muted">Match a definition to its name. Ten questions per round; pick a bank.</p>
+  <div class="quiz-tabs" id="banks"></div>
+  <div class="quiz-box" id="termquiz"></div>
+
+  <h2 id="viva">Viva practice</h2>
+  <p class="muted">Short-answer questions of the kind asked in an oral exam, generated from the physiology key facts, conditions and first-aid steps. Think of the answer, then reveal it.</p>
+  <div class="chips" id="viva-scope" style="margin-bottom:12px"></div>
+  <div id="viva-list"></div>
+
+  <h2>Flashcards</h2>
+  <p class="muted">The atlas shows a structure; reveal its name and a one-line description, then move on.</p>
+  <div class="chips" id="cards"></div>
+</main>
+<script type="module" src="index.js"></script>
+</body>
+</html>

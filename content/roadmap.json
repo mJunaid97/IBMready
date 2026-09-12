@@ -1,0 +1,351 @@
+{
+ "vision": "A comprehensive, visual, interconnected Human Body Knowledge Platform. Anatomy is the foundation; every other section connects back to it so a reader can move from body part → structure → function → symptoms → conditions → tests → procedures → treatment → learning.",
+ "entities": [
+  {
+   "name": "AnatomicalStructure",
+   "status": "live",
+   "where": "data/hd/atlas.json → structures; descriptions in data/content/atlas-content.json → structures",
+   "note": "1,671 named structures over 2,234 mesh pieces; FMA concept id, system, side, pair, parents, region tags, organ membership."
+  },
+  {
+   "name": "BodySystem",
+   "status": "live",
+   "where": "content/systems.json",
+   "note": "16 systems with overview, functions, clinical notes, related systems, key structures."
+  },
+  {
+   "name": "Organ",
+   "status": "live",
+   "where": "content/organs.json",
+   "note": "39 organs and skeletal groups resolved to structures by rule; aliases for search."
+  },
+  {
+   "name": "Region",
+   "status": "live",
+   "where": "content/regions.json",
+   "note": "7 spatial regions computed from bounding boxes."
+  },
+  {
+   "name": "MedicalTerm",
+   "status": "live",
+   "where": "content/terms.json",
+   "note": "149 terms in 8 categories (directions, planes, movements, regions, structures, word parts, disease processes, clinical terms) with atlas links and pronunciation."
+  },
+  {
+   "name": "Quiz / Flashcard",
+   "status": "live",
+   "where": "generated at runtime from structures and terms",
+   "note": "Identify-the-structure, locate-the-structure and flashcards in 3D; terminology, condition, test and medication quizzes; viva questions from physiology key facts."
+  },
+  {
+   "name": "PhysiologyTopic",
+   "status": "live",
+   "where": "content/physiology.json → data/content/types/*.json",
+   "note": "30 entries. Links: explains → BodySystem / Organ / AnatomicalStructure."
+  },
+  {
+   "name": "Symptom",
+   "status": "live",
+   "where": "content/symptoms.json → data/content/types/*.json",
+   "note": "18 entries. Links: involves → AnatomicalStructure / Organ; suggests → Condition; evaluatedBy → MedicalTest."
+  },
+  {
+   "name": "Condition",
+   "status": "live",
+   "where": "content/conditions.json → data/content/types/*.json",
+   "note": "40 entries. Links: affects → Organ / BodySystem; causes → Symptom; diagnosedBy → MedicalTest / ImagingStudy; treatedBy → Procedure / Medication."
+  },
+  {
+   "name": "MedicalTest",
+   "status": "live",
+   "where": "content/tests.json → data/content/types/*.json",
+   "note": "26 entries. Links: measures → BodySystem; relatedTo → Condition."
+  },
+  {
+   "name": "ImagingStudy",
+   "status": "live",
+   "where": "content/imaging.json → data/content/types/*.json",
+   "note": "7 entries. Links: shows → Region / Organ; usedFor → Condition."
+  },
+  {
+   "name": "Procedure",
+   "status": "live",
+   "where": "content/procedures.json → data/content/types/*.json",
+   "note": "14 entries. Links: operatesOn → Organ / AnatomicalStructure; treats → Condition."
+  },
+  {
+   "name": "Medication",
+   "status": "live",
+   "where": "content/medications.json → data/content/types/*.json",
+   "note": "24 entries. Links: targets → Organ / BodySystem; treats → Condition."
+  },
+  {
+   "name": "FirstAidTopic / HealthTopic",
+   "status": "live",
+   "where": "content/first-aid.json, content/health.json → data/content/types/*.json",
+   "note": "16 + 7 entries. Links: concerns → Organ / BodySystem."
+  },
+  {
+   "name": "KnowledgeGraph",
+   "status": "live",
+   "where": "tools/build-content.py → data/content/knowledge.json, clinical.json, search-index.json",
+   "note": "3,247 validated typed links between 182 topics, 38 organs, 15 systems, 195 structures and 149 terms; every reverse link is precomputed so any page can show what points at it."
+  }
+ ],
+ "phases": [
+  {
+   "id": "phase-1",
+   "name": "Phase 1 · Foundation",
+   "status": "live",
+   "summary": "Human anatomy and the data structure everything else connects to.",
+   "items": [
+    {
+     "name": "3D anatomy explorer (2,234 pieces, 16 systems)",
+     "status": "live",
+     "href": "explorer/index.html"
+    },
+    {
+     "name": "Entity data model: structures, systems, organs, regions, terms",
+     "status": "live",
+     "href": "ARCHITECTURE.md"
+    },
+    {
+     "name": "Body system pages",
+     "status": "live",
+     "href": "systems/index.html"
+    },
+    {
+     "name": "Organ pages with live 3D",
+     "status": "live",
+     "href": "organs/index.html"
+    },
+    {
+     "name": "Deep links and embeds for every structure, organ, region and system",
+     "status": "live",
+     "href": "explorer/index.html#o=heart"
+    }
+   ]
+  },
+  {
+   "id": "phase-2",
+   "name": "Phase 2 · High-value educational layer",
+   "status": "live",
+   "summary": "Natural extensions of the anatomy content.",
+   "items": [
+    {
+     "name": "Medical terminology dictionary",
+     "status": "live",
+     "href": "learn/terminology.html"
+    },
+    {
+     "name": "Student quizzes (identify the structure, terminology)",
+     "status": "live",
+     "href": "study/index.html"
+    },
+    {
+     "name": "Flashcards",
+     "status": "live",
+     "href": "explorer/index.html?study=cards"
+    },
+    {
+     "name": "Physiology topics per system",
+     "status": "live",
+     "href": "physiology/index.html"
+    },
+    {
+     "name": "Histology, pathology and embryology primers",
+     "status": "planned",
+     "anchor": "learn"
+    }
+   ]
+  },
+  {
+   "id": "phase-3",
+   "name": "Phase 3 · Medical knowledge",
+   "status": "live",
+   "summary": "From anatomy into real-world medical knowledge.",
+   "items": [
+    {
+     "name": "Diseases & conditions database",
+     "status": "live",
+     "href": "conditions/index.html"
+    },
+    {
+     "name": "Symptoms explorer (educational, not diagnostic)",
+     "status": "live",
+     "href": "symptoms/index.html"
+    },
+    {
+     "name": "Medical tests library",
+     "status": "live",
+     "href": "tests/index.html"
+    },
+    {
+     "name": "Medical imaging library",
+     "status": "live",
+     "href": "imaging/index.html"
+    }
+   ]
+  },
+  {
+   "id": "phase-4",
+   "name": "Phase 4 · Clinical understanding",
+   "status": "live",
+   "summary": "Procedures, medications and clinical terminology. Advanced pathology primers remain planned.",
+   "items": [
+    {
+     "name": "Medical procedures",
+     "status": "live",
+     "href": "procedures/index.html"
+    },
+    {
+     "name": "Medication information (educational)",
+     "status": "live",
+     "href": "medications/index.html"
+    },
+    {
+     "name": "Clinical terminology",
+     "status": "live",
+     "href": "learn/terminology.html#acute"
+    }
+   ]
+  },
+  {
+   "id": "phase-5",
+   "name": "Phase 5 · Public health & practical knowledge",
+   "status": "live",
+   "summary": "First aid, emergencies, prevention and lifestyle.",
+   "items": [
+    {
+     "name": "First aid & emergency education",
+     "status": "live",
+     "href": "first-aid/index.html"
+    },
+    {
+     "name": "Health & prevention: exercise, sleep, nutrition, smoking, alcohol, hydration",
+     "status": "live",
+     "href": "health/index.html"
+    }
+   ]
+  },
+  {
+   "id": "phase-6",
+   "name": "Phase 6 · Advanced interactive platform",
+   "status": "started",
+   "summary": "Knowledge graph, personalised learning, image-based learning and clinical cases.",
+   "items": [
+    {
+     "name": "Knowledge graph across all entities",
+     "status": "live",
+     "href": "search/index.html"
+    },
+    {
+     "name": "Locate-the-structure exercises and viva practice",
+     "status": "live",
+     "href": "study/index.html#viva"
+    },
+    {
+     "name": "Progress tracking and personalised learning",
+     "status": "planned",
+     "anchor": "study"
+    },
+    {
+     "name": "Clinical case studies",
+     "status": "planned",
+     "anchor": "study"
+    }
+   ]
+  }
+ ],
+ "sections": [
+  {
+   "id": "physiology",
+   "name": "Physiology",
+   "summary": "Anatomy explains what is there; physiology explains what it does. Cardiovascular, respiratory, nervous, digestive, renal and endocrine physiology topics will attach to the system and organ pages.",
+   "status": "live",
+   "href": "physiology/index.html"
+  },
+  {
+   "id": "learn",
+   "name": "Learn",
+   "summary": "Histology, pathology, embryology and clinical terminology primers.",
+   "status": "planned"
+  },
+  {
+   "id": "symptoms",
+   "name": "Symptoms explorer",
+   "summary": "Start from what a person experiences (headache, chest pain, knee pain…). Each page: what it is, relevant anatomy, common and less common causes, associated symptoms, when to seek urgent care, related conditions, tests and anatomy. The site educates; it does not diagnose.",
+   "status": "live",
+   "href": "symptoms/index.html"
+  },
+  {
+   "id": "conditions",
+   "name": "Diseases & conditions",
+   "summary": "Structured condition pages: definition, affected body part and system, causes, risk factors, symptoms, complications, diagnosis, imaging, treatment, procedures, prevention and references, all linked to anatomy.",
+   "status": "live",
+   "href": "conditions/index.html"
+  },
+  {
+   "id": "tests",
+   "name": "Medical tests",
+   "summary": "Blood, urine, heart, lung and other tests: what they measure, how they are done, what results generally indicate, and which anatomy they relate to.",
+   "status": "live",
+   "href": "tests/index.html"
+  },
+  {
+   "id": "imaging",
+   "name": "Medical imaging",
+   "summary": "X-ray, CT, MRI, ultrasound, PET, mammography and fluoroscopy: how each works, what it shows, how normal anatomy appears and common abnormalities.",
+   "status": "live",
+   "href": "imaging/index.html"
+  },
+  {
+   "id": "procedures",
+   "name": "Medical procedures",
+   "summary": "Appendectomy, knee replacement, angioplasty, endoscopy and more, explained step by step with the anatomy involved.",
+   "status": "live",
+   "href": "procedures/index.html"
+  },
+  {
+   "id": "medications",
+   "name": "Medications",
+   "summary": "Educational medication pages: class, mechanism, target organ or system, side effects, warnings and related conditions.",
+   "status": "live",
+   "href": "medications/index.html"
+  },
+  {
+   "id": "first-aid",
+   "name": "First aid & emergency knowledge",
+   "summary": "CPR, choking, bleeding, burns, fractures, fainting, seizures and more, aligned with authoritative guidance.",
+   "status": "live",
+   "href": "first-aid/index.html"
+  },
+  {
+   "id": "health",
+   "name": "Health & prevention",
+   "summary": "How exercise, sleep, nutrition, smoking, alcohol and hydration act on the organs and systems described in the atlas.",
+   "status": "live",
+   "href": "health/index.html"
+  },
+  {
+   "id": "study",
+   "name": "Student learning platform",
+   "summary": "Flashcards, quizzes, anatomy identification, labeling exercises, viva practice and exam modes for medicine, nursing, physiotherapy, dentistry and allied health.",
+   "status": "live",
+   "href": "study/index.html"
+  },
+  {
+   "id": "graph",
+   "name": "Knowledge graph",
+   "summary": "Every entity carries typed links so a reader can keep exploring: Heart → cardiovascular system → cardiac physiology → coronary arteries → ECG → heart failure → angioplasty → medications → symptoms → tests.",
+   "status": "live",
+   "href": "search/index.html"
+  },
+  {
+   "id": "next",
+   "name": "What comes next",
+   "status": "planned",
+   "summary": "Histology, embryology and pathology primers; more conditions, tests and medications on the same schema; image-based learning (labelled radiographs and slides); clinical case studies; progress tracking and personalised revision; a female reference body when an open dataset allows."
+  }
+ ]
+}
