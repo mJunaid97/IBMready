@@ -37,7 +37,7 @@ jobs:
       - name: Validate the content graph
         run: python3 tools/build-content.py && git diff --exit-code --stat -- data/content
       - name: Build the production package
-        run: python3 tools/package-site.py --site-url "${{ github.event.inputs.site_url || vars.SITE_URL || 'https://anatomynexus.com' }}" --pretty --redirect-host medical.mjunaid.net --out dist
+        run: python3 tools/package-site.py --site-url "${{ github.event.inputs.site_url || vars.SITE_URL || 'https://anatomynexus.com' }}" --pretty --out dist
       - name: Publish dist/ to the deploy branch
         uses: peaceiris/actions-gh-pages@v4
         with:

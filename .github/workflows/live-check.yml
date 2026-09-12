@@ -16,7 +16,7 @@ on:
       redirect_from:
         description: Old host name that must redirect to the site (blank to skip)
         required: false
-        default: medical.mjunaid.net
+        default: ""
 
 permissions:
   contents: read
@@ -44,7 +44,7 @@ jobs:
       - name: Old host redirects to the canonical site
         if: ${{ github.event.inputs.redirect_from != '' }}
         run: |
-          H="${{ github.event.inputs.redirect_from || 'medical.mjunaid.net' }}"
+          H="${{ github.event.inputs.redirect_from }}"
           for p in "" "conditions/gout" "explorer/"; do
             echo "== https://${H}/${p}"; curl -sS -o /dev/null -I -w "status %{http_code}  location %{redirect_url}\n" "https://${H}/${p}"
           done

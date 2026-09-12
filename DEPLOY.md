@@ -47,9 +47,8 @@ delete the zip. Turn on "Show hidden files" and confirm `.htaccess` is present.
 **C. FTP.** Any FTP client, or the `SamKirkland/FTP-Deploy-Action` in a workflow with the FTP
 account from hPanel → Files → FTP accounts, uploading `dist/` to `public_html`.
 
-The old address `medical.mjunaid.net` keeps its own checkout of the same branch and answers every
-request with a permanent redirect to `anatomynexus.com` (the `--redirect-host` option of the
-package script writes that rule into `.htaccess`).
+If the site ever moves to another host name, `--redirect-host old.example.com` on the package
+script writes a permanent redirect for the old name into `.htaccess`.
 
 ## 3. Switch on HTTPS and check
 
