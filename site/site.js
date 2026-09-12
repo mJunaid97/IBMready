@@ -35,11 +35,13 @@ export const TYPES = {
   procedures:     { name: 'Procedures',    singular: 'Procedure',        dir: 'procedures',   page: 'procedure.html',  field: 'procedures',  icon: '🔧', descriptor: 'Steps, Recovery & Risks',        blurb: 'Operations and procedures step by step, with the anatomy involved, recovery and risks.' },
   medications:    { name: 'Medications',   singular: 'Medication',       dir: 'medications',  page: 'medication.html', field: 'medications', icon: '💊', descriptor: 'Uses, Mechanism & Side Effects', blurb: 'How common medicines work in the body, what they are for and what to watch for. Education, not prescribing.' },
   'drug-classes': { name: 'Drug classes',  singular: 'Drug class',       dir: 'drug-classes', page: 'class.html',      field: 'drugClass',   icon: '🧬', descriptor: 'Mechanism, Uses & Examples',     blurb: 'Families of medicines that share a mechanism: what they target in the body, which conditions they treat and their members.' },
+  biomarkers:     { name: 'Biomarkers',    singular: 'Biomarker',        dir: 'biomarkers',   page: 'biomarker.html',  field: 'biomarkers',  icon: '🧫', descriptor: 'What It Measures & Why It Changes', blurb: 'The substances tests measure: what each is, which organ makes or clears it, why a result may be higher or lower and what distorts it.' },
+  targets:        { name: 'Drug targets',  singular: 'Biological target', dir: 'targets',     page: 'target.html',     field: 'targets',     icon: '🎯', descriptor: 'Receptors, Enzymes & Pathways',  blurb: 'The receptors, enzymes, channels and pathways medicines act on: what each does in the body, where it is found and which medicines change it.' },
   'first-aid':    { name: 'First aid',     singular: 'First aid topic',  dir: 'first-aid',    page: 'topic.html',      field: 'firstAid',    icon: '🚑', descriptor: 'What to Do Step by Step',        blurb: 'CPR, choking, bleeding, burns, fractures, fainting, seizures and more, aligned with resuscitation guidelines.' },
   health:         { name: 'Health',        singular: 'Health topic',     dir: 'health',       page: 'topic.html',      field: 'health',      icon: '🌿', descriptor: 'Effects on the Body & Guidance', blurb: 'Exercise, sleep, nutrition, weight, smoking, alcohol and hydration, explained through the organs they act on.' },
 };
-export const TYPE_ORDER = ['conditions', 'symptoms', 'physiology', 'tests', 'imaging', 'procedures', 'medications', 'drug-classes', 'first-aid', 'health'];
-export const TYPE_LABEL = { structure: 'Structure', organ: 'Anatomy', system: 'Body system', region: 'Region', term: 'Term', physiology: 'Physiology', symptoms: 'Symptom', conditions: 'Condition', tests: 'Test', imaging: 'Imaging', procedures: 'Procedure', medications: 'Medication', 'drug-classes': 'Drug class', 'first-aid': 'First aid', health: 'Health' };
+export const TYPE_ORDER = ['conditions', 'symptoms', 'physiology', 'tests', 'biomarkers', 'imaging', 'procedures', 'medications', 'drug-classes', 'targets', 'first-aid', 'health'];
+export const TYPE_LABEL = { structure: 'Structure', organ: 'Anatomy', system: 'Body system', region: 'Region', term: 'Term', physiology: 'Physiology', symptoms: 'Symptom', conditions: 'Condition', tests: 'Test', biomarkers: 'Biomarker', imaging: 'Imaging', procedures: 'Procedure', medications: 'Medication', 'drug-classes': 'Drug class', targets: 'Drug target', 'first-aid': 'First aid', health: 'Health', product: 'Product' };
 
 const esc = (s) => String(s ?? '').replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
 export { esc };
@@ -72,6 +74,8 @@ export const link = {
   term: (id) => url(paths.dir('medical-terms')) + '#' + encodeURIComponent(id),
   search: (q) => url(paths.dir('search')) + (q ? '?q=' + encodeURIComponent(q) : ''),
   preview: (hash) => url(`site/previews/${previewName(hash)}.jpg`),
+  compare: (id) => url(id ? paths.entity('compare', 'compare.html', id) : paths.dir('compare')),
+  interactions: (ids) => url(paths.dir('interactions')) + (ids && ids.length ? '?drugs=' + ids.map(encodeURIComponent).join(',') : ''),
 };
 export function entityPath(type, id) { const t = TYPES[type]; return paths.entity(t.dir, t.page, id); }
 export function entityLink(type, id) { return TYPES[type] ? url(entityPath(type, id)) : '#'; }
@@ -100,6 +104,7 @@ export function anyLink(type, id) {
     case 'system': return link.systemPage(id);
     case 'region': return link.region(id);
     case 'term': return link.term(id);
+    case 'product': return link.interactions([id]);
     default: return entityLink(type, id);
   }
 }
@@ -131,7 +136,7 @@ export function toggleTheme() {
   document.documentElement.dataset.theme = next; try { localStorage.setItem('atlas-theme', next); } catch {}
 }
 export const NAV_PRIMARY = [['anatomy', 'Anatomy', () => link.page('anatomy')], ['systems', 'Systems', () => link.page('systems')], ['conditions', 'Conditions', () => typeLink('conditions')], ['symptoms', 'Symptoms', () => typeLink('symptoms')], ['tests', 'Tests', () => typeLink('tests')], ['medications', 'Medications', () => typeLink('medications')], ['explorer', '3D explorer', () => link.explorer()], ['study', 'Study', () => link.page('study')]];
-export const NAV_MORE = [['organs', 'Organs', () => link.page('organs')], ['physiology', 'Physiology', () => typeLink('physiology')], ['imaging', 'Imaging', () => typeLink('imaging')], ['procedures', 'Procedures', () => typeLink('procedures')], ['drug-classes', 'Drug classes', () => typeLink('drug-classes')], ['first-aid', 'First aid', () => typeLink('first-aid')], ['health', 'Health', () => typeLink('health')], ['medical-terms', 'Medical terms', () => link.page('medical-terms')], ['search', 'Search everything', () => link.page('search')], ['about', 'About', () => link.page('about')]];
+export const NAV_MORE = [['organs', 'Organs', () => link.page('organs')], ['physiology', 'Physiology', () => typeLink('physiology')], ['biomarkers', 'Biomarkers', () => typeLink('biomarkers')], ['imaging', 'Imaging', () => typeLink('imaging')], ['procedures', 'Procedures', () => typeLink('procedures')], ['drug-classes', 'Drug classes', () => typeLink('drug-classes')], ['targets', 'Drug targets', () => typeLink('targets')], ['interactions', 'Interaction checker', () => link.interactions()], ['compare', 'Comparisons', () => link.compare()], ['first-aid', 'First aid', () => typeLink('first-aid')], ['health', 'Health', () => typeLink('health')], ['medical-terms', 'Medical terms', () => link.page('medical-terms')], ['search', 'Search everything', () => link.page('search')], ['about', 'About', () => link.page('about')]];
 
 export function renderHeader(active) {
   initTheme();
@@ -233,6 +238,19 @@ export const loadClinical = () => getJSON('data/content/clinical.json');
 /** One entity type: { meta, items } (data/content/types/<key>.json). */
 export const loadType = (key) => getJSON(`data/content/types/${key}.json`);
 export const loadSearchIndex = () => getJSON('data/content/search-index.json');
+/** Interaction records, class membership, products and the checker's name index (data/content/interactions.json). */
+export const loadInteractions = () => getJSON('data/content/interactions.json');
+/** Structured comparisons (data/content/comparisons.json). */
+export const loadComparisons = () => getJSON('data/content/comparisons.json');
+/** Severity states of the interaction records (spec: Clinical Content Depth §43) with their public labels. */
+export const SEVERITY = {
+  CONTRAINDICATED: { label: 'Contraindicated in official information', cls: 'sev-1', order: 1 },
+  AVOID_COMBINATION: { label: 'Official guidance: avoid the combination', cls: 'sev-2', order: 2 },
+  SPECIALIST_OR_CLOSE_MONITORING: { label: 'Specialist supervision or close monitoring', cls: 'sev-3', order: 3 },
+  MONITOR_OR_ADJUST: { label: 'Monitoring or dose adjustment advised', cls: 'sev-4', order: 4 },
+  INTERACTION_DOCUMENTED: { label: 'Interaction documented', cls: 'sev-5', order: 5 },
+  NO_SEVERITY_ASSIGNED: { label: 'No severity assigned by the sources', cls: 'sev-6', order: 6 },
+};
 
 // ---------------------------------------------------------------- search
 let _entries = null;
@@ -240,7 +258,7 @@ let _entries = null;
 export async function searchEntries() {
   if (_entries) return _entries;
   const idx = await loadSearchIndex();
-  const rank = { system: 3, organ: 2.9, conditions: 2.7, symptoms: 2.7, 'first-aid': 2.6, region: 2.4, tests: 2.5, imaging: 2.5, procedures: 2.5, medications: 2.5, 'drug-classes': 2.4, physiology: 2.4, health: 2.4, term: 2.2, structure: 2 };
+  const rank = { system: 3, organ: 2.9, conditions: 2.7, symptoms: 2.7, 'first-aid': 2.6, region: 2.4, tests: 2.5, imaging: 2.5, procedures: 2.5, medications: 2.5, 'drug-classes': 2.4, biomarkers: 2.4, targets: 2.3, product: 2.3, physiology: 2.4, health: 2.4, term: 2.2, structure: 2 };
   _entries = idx.entries.map(([type, id, name, aliases, sub]) => {
     const al = aliases ? aliases.split('|').map(normalize) : [];
     return { type, id, name, norm: normalize(name), aliases: al, words: [name, ...al].join(' ').toLowerCase().split(/[^a-z0-9]+/).filter(Boolean), sub, rank: rank[type] ?? 2 };

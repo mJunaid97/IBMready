@@ -31,10 +31,14 @@ compiler routes cross-type ids into the matching typed field) and `references`.
 | **PhysiologyTopic** (30) | `content/physiology.json` | summary, body, key facts | `conditions`, `tests`, `imaging`, `procedures`, `medications`, `symptoms` |
 | **Symptom** (18) | `content/symptoms.json` | what, anatomy, common / less common causes, associated, urgent, investigations | `associated` (symptoms), `conditions`, `tests`, `imaging`, `procedures`, `medications` |
 | **Condition** (40) | `content/conditions.json` | definition, overview, anatomy, causes, risk factors, symptoms, signs, complications, diagnosis, treatment, prevention, seek care | `symptoms`, `tests`, `imaging`, `procedures`, `medications`, `physiology` |
-| **MedicalTest** (26) | `content/tests.json` | what it measures, why ordered, how done, interpretation, limitations | `conditions`, `symptoms`, `physiology` |
+| **MedicalTest** (31) | `content/tests.json` | quick summary, why ordered, components → biomarkers, how done, preparation, results (range policy, guideline thresholds), factors, cannot tell, limitations | `conditions`, `symptoms`, `physiology`, `biomarkers` (implied by components) |
+| **Biomarker** (30) | `content/biomarkers.json` | what it is, units, why higher / lower, factors, range note | `tests`, `conditions`, `physiology`, `medications` |
+| **BiologicalTarget** (22) | `content/targets.json` | kind, what it does, role, location | `medications`, `drugClasses`, `physiology`, `conditions`, `biomarkers` |
 | **ImagingStudy** (7) | `content/imaging.json` | how it works, shows, best for / not for, dose, preparation, common uses | `conditions`, `symptoms`, `physiology` |
 | **Procedure** (14) | `content/procedures.json` | what, why, before, steps, after, recovery, risks, alternatives | `conditions`, `symptoms`, `tests`, `imaging`, `medications`, `physiology` |
-| **Medication** (24) | `content/medications.json` | class, uses, mechanism, forms, onset, side effects, cautions, monitoring | `conditions`, `symptoms`, `tests`, `procedures`, `physiology` |
+| **Medication** (28) | `content/medications.json` | class, brands and prescription status by region, uses by status and jurisdiction, mechanism (plain and technical), pathway, targets, side effects, warnings, contraindications, interactions, monitoring, special populations, condition cautions, lab effects, pharmacokinetics | `conditions`, `symptoms`, `tests`, `biomarkers`, `targets`, `procedures`, `physiology`, `drugClass` |
+| **DrugClass** (24) | `content/drug-classes.json` | mechanism, targets, members, class effects, class warnings, class interactions, duplication rule | `medications`, `targets`, `conditions`, `physiology` |
+| **DrugInteraction** (69), **MedicationProduct** (14), **Comparison** (7) | `content/interactions.json`, `products.json`, `comparisons.json` | see `CLINICAL.md` | medication ↔ medication / class / named substance; product → ingredients; comparison → two entities |
 | **FirstAidTopic** (16) | `content/first-aid.json` | recognise, steps, children, don't, call for, why (anatomy) | `conditions`, `symptoms`, `physiology`, `medications`, `tests` |
 | **HealthTopic** (7) | `content/health.json` | body, effects per system, guidance | `conditions`, `symptoms`, `physiology`, `tests` |
 | **MedicalTerm** (149) | `content/terms.json` | definition, plain, example, pronunciation, opposite, related, atlas link | `atlas` → structure / organ / region / system / slice |
@@ -54,6 +58,12 @@ Symptom ──suggests──▶ Condition        Condition ──causes──▶
 Condition ──diagnosed_by──▶ MedicalTest | ImagingStudy
 Condition ──treated_by──▶ Procedure | Medication
 Procedure ──uses──▶ MedicalTest | ImagingStudy | Medication
+MedicalTest ──has_component──▶ Biomarker ──measured_by──▶ MedicalTest ; Biomarker ──associated_with──▶ Organ
+Medication ──belongs_to──▶ DrugClass ──acts_on──▶ BiologicalTarget ◀──acts_on── Medication
+BiologicalTarget ──located_in──▶ Organ | BodySystem ; ──participates_in──▶ PhysiologyTopic
+Medication ──indicated_for (status, jurisdiction)──▶ Condition ; ──has_caution_with──▶ Condition
+Medication ──monitored_by──▶ MedicalTest | Biomarker ; ──affects──▶ Biomarker | MedicalTest (lab effects)
+Medication ──interacts_with──▶ Medication | DrugClass | Substance ; MedicationProduct ──contains──▶ Medication
 PhysiologyTopic ──explains──▶ BodySystem | Organ ; ──goes_wrong_as──▶ Condition
 FirstAidTopic / HealthTopic ──concerns──▶ Condition | Symptom | PhysiologyTopic
 <any entity> ──uses_term──▶ MedicalTerm
@@ -86,6 +96,15 @@ each clinical page opens with live 3D of the anatomy it discusses.
 6. **Educate, never diagnose**: symptom pages explain reasoning and red flags, medication pages
    explain mechanism and cautions, first-aid pages follow published guidelines and say when to
    call for help; every such page carries the disclaimer for its type.
+
+### Clinical layer
+
+The structured clinical fields (components, thresholds, indications, warnings, contraindications,
+monitoring, populations, interactions, lab effects) are data with a source on every fact, validated
+by the compiler and rendered by `site/entity.js` in the order the specification prescribes; the
+interaction checker (`site/interactions.js`) and the comparisons (`site/compare.js`) read the
+compiled `data/content/interactions.json` and `comparisons.json`. `CLINICAL.md` documents the
+model, the source rules, the severity mapping and the review-status model.
 
 ## Rendering pipeline (explorer)
 
@@ -145,8 +164,16 @@ Summarised here; `SEO.md` has the full map against the specification.
   rules). `tools/qa/serve.py` emulates the rules for local testing.
 - **Anatomy articles**: `content/anatomy.json` enriches an organ with title, descriptor, intro, key
   facts, sections, structures and references; only organs with an article are indexable.
-- **Drug classes**: a tenth entity type; `drugClass` on a medication is a typed link that yields
-  breadcrumbs (Medications › Class › Medicine), backlinks and `Drug.drugClass` schema.
+- **Drug classes**: `drugClass` on a medication is a typed link that yields breadcrumbs
+  (Medications › Class › Medicine), backlinks and `Drug.drugClass` schema.
+- **Biomarkers and drug targets**: two further entity types (`/biomarkers/`, `/targets/`) that tie
+  tests to the substances they measure and medicines to what they act on; comparisons live at
+  `/compare/<slug>/`; the interaction checker at `/interactions/` is `noindex` and generates no
+  pair pages.
+- **Schema for medicines**: `Drug` nodes carry active ingredient, class, mechanism, routes,
+  prescription status, contraindications, interacting drugs, food / alcohol / pregnancy /
+  breastfeeding warnings and a link to the prescribing information; tests carry their range note
+  as `normalRange` and their biomarkers.
 - **References**: title, URL, publisher, evidence tier (host table in the compiler) and date
   checked; rendered as structured sources and as `citation` in the page schema;
   `tools/check-references.py` verifies availability in CI.

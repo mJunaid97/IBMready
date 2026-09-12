@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self'; connect-src 'self'; frame-src 'self'; worker-src 'self' blob:; object-src 'none'; base-uri 'self'; form-action 'self'">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>Medication Interaction Checker | Anatomy Nexus</title>
+  <meta name="description" content="Check two or more medicines, brands, drug classes or combination products against sourced interaction records: what official information says, the mechanism, general management and monitoring.">
+  <meta name="robots" content="noindex,follow">
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  <meta name="theme-color" content="#d9731a">
+  <link rel="manifest" href="../manifest.webmanifest">
+  <link rel="apple-touch-icon" href="../site/apple-touch-icon.png"><link rel="stylesheet" href="../site/site.css">
+</head>
+<body data-nav="interactions" data-canonical="interactions/" data-robots="noindex,follow">
+<main class="wrap" id="main">
+  <nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="../">Home</a></li><li aria-current="page">Interaction checker</li></ol></nav>
+  <div class="eyebrow">💊 Tool · educational</div>
+  <h1>Medication interaction checker</h1>
+  <p class="lead">Add two or more medicines by generic name, brand, drug class or combination product. Every entry is resolved to its active ingredients and each pair is checked against the interaction records on this site, each of which cites the official document it was taken from. The result describes what those sources say; it does not say whether a combination is safe for you.</p>
+  <div id="checker"><p class="muted" style="padding:20px 0">Loading the checker…</p></div>
+  <section class="prose">
+    <h2>How the checker works</h2>
+    <ul class="plain">
+      <li><b>Names become ingredients.</b> A brand name maps to its generic medicine; a combination product (for example co-codamol) is split into each ingredient; a drug class is matched through the class each medicine belongs to.</li>
+      <li><b>Every pair is checked.</b> Records cover medicine–medicine pairs, medicine–class pairs and therapeutic duplication, including the same ingredient entered twice through different products.</li>
+      <li><b>Status states come from the sources.</b> A record is marked contraindicated, avoid, specialist supervision, monitor or adjust, or documented only when the cited document's wording supports it; otherwise no status is assigned.</li>
+      <li><b>Coverage is limited.</b> The database covers the medicines on this site and the interactions named in their official information. A pair that is not found may still interact.</li>
+    </ul>
+    <p class="small muted">Records show their review status honestly: each has been checked against the cited sources but has not yet been reviewed by an independent clinician or pharmacist. See the <a href="../medical-review-policy/">medical review policy</a>.</p>
+  </section>
+</main>
+<script type="module" src="../site/interactions.js"></script>
+</body>
+</html>

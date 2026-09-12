@@ -76,7 +76,7 @@ export class AtlasUI {
     const st = si >= 0 ? this.structure(si) : null;
     const sources = [st ? this.clinical.structures[st.id] : null, organId ? this.clinical.organs[organId] : null].filter(Boolean);
     if (!sources.length) return [];
-    const order = ['conditions', 'symptoms', 'physiology', 'tests', 'imaging', 'procedures', 'medications', 'drug-classes', 'first-aid', 'health'];
+    const order = ['conditions', 'symptoms', 'physiology', 'tests', 'biomarkers', 'imaging', 'procedures', 'medications', 'drug-classes', 'targets', 'first-aid', 'health'].filter(k => this.clinical.types[k]);
     return order.map(kind => ({ kind, name: this.clinical.types[kind].name, ids: [...new Set(sources.flatMap(m => m[kind] || []))] })).filter(g => g.ids.length);
   }
   _renderClinical(groups, organId) {

@@ -63,9 +63,12 @@ Editable content lives in `content/` and is compiled into `data/content/` by
 - `content/regions.json` — spatial regions
 - `content/structures.json` — descriptions keyed by side-stripped structure name
 - `content/terms.json` — terminology dictionary (8 categories, pronunciation, atlas links)
-- `content/physiology.json`, `symptoms.json`, `conditions.json`, `tests.json`, `imaging.json`,
-  `procedures.json`, `medications.json`, `drug-classes.json`, `first-aid.json`, `health.json` —
-  one entity per key, cross-linked by id, each with `aliases`, `urlAliases` and `references`
+- `content/physiology.json`, `symptoms.json`, `conditions.json`, `tests.json`, `biomarkers.json`,
+  `imaging.json`, `procedures.json`, `medications.json`, `drug-classes.json`, `targets.json`,
+  `first-aid.json`, `health.json` — one entity per key, cross-linked by id, each with `aliases`,
+  `urlAliases`, `references` and a `review` status
+- `content/interactions.json`, `products.json`, `comparisons.json` — sourced interaction records,
+  brand and combination products mapped to ingredients, and structured comparisons (see `CLINICAL.md`)
 - `content/roadmap.json` — phases, sections, entity model
 
 Every file carries `_updated` (the date its visible content last changed) and `_priority` (the
@@ -83,7 +86,9 @@ gate. Outputs:
 | `data/content/clinical.json` | compact name index plus organ / system / structure / term → entity backlinks (explorer, anatomy and system pages) |
 | `data/content/aliases.json` | URL alias → canonical slug per section (the 301 table) |
 | `data/content/search-index.json` | flat search index over everything |
-| `data/content/knowledge.json` | the whole graph in one file (206 topics, 3,511 typed links, 298 references) |
+| `data/content/knowledge.json` | the whole graph in one file (267 topics, 4,700 typed links, 540 references) |
+| `data/content/interactions.json` | interaction records, class membership, products and the name index the interaction checker uses |
+| `data/content/comparisons.json` | the comparisons |
 | `site/site-meta.js` | the site identity as an ES module for the page shell |
 
 To add a condition, test, medication or any other entity: add a key to the matching
@@ -184,6 +189,7 @@ explorer/             3D atlas (app.js, viewer.js, ui.js, search.js, styles.css)
 anatomy/ systems/     anatomy and system pages (templates + page scripts)
 organs/ medical-terms/ study/ search/ roadmap/
 conditions/ … health/ knowledge sections: a hub page and a detail template each, rendered by site/section.js
+biomarkers/ targets/  the clinical layer's own sections; compare/ (site/compare.js) and interactions/ (the checker, site/interactions.js)
 about/ … contact/     policy pages
 site/                 shared shell: site.js (URLs, header, footer, facade), seo.js (metadata, JSON-LD), entity.js
                       (templates, hubs), site.css, previews/ (3D preview images), site-meta.js (generated)
@@ -192,7 +198,7 @@ content/              editable content sources
 tools/                pipeline: build-content.py, package-site.py, prerender.mjs, render-previews.mjs,
                       check-references.py, release.py, qa/ (smoke test, serve.py)
 vendor/three/         three.js r186 (minified core + the addons used)
-ARCHITECTURE.md       entity model and how sections connect · SEO.md the search architecture
+ARCHITECTURE.md       entity model and how sections connect · SEO.md the search architecture · CLINICAL.md the clinical layer
 ```
 
 ## Licence

@@ -31,6 +31,15 @@ clickjacking of the embedded explorer, and supply-chain issues in the build tool
   `Referrer-Policy` and a `Permissions-Policy` on hosts that support headers. GitHub Pages does
   not support custom headers; the meta CSP still applies there.
 
+## The interaction checker
+
+`/interactions/` runs entirely in the browser: the medicines a visitor enters are matched against
+the static `data/content/interactions.json` and never leave the device. The only state is the
+`?drugs=` query string (canonical ids, so a link can be shared), which is written with
+`history.replaceState` and read back through the same resolver as typed input; every rendered
+string passes through the HTML escaper and source links are restricted to `https://` URLs from the
+compiled data.
+
 ## Reporting
 
 Open a private security advisory on the GitHub repository, or an issue if the report is not

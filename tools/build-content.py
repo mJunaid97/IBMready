@@ -440,7 +440,8 @@ def compile_interactions(types, errors):
         index.append({"label": p["name"], "kind": "product", "id": p["id"]})
         for al in p["aliases"]: index.append({"label": f"{al} ({p['name']})", "kind": "product", "id": p["id"], "alias": al})
     dup_rules = {cid: {"text": c["duplicationRule"]["text"], "source": c["duplicationRule"]["source"]} for cid, c in classes.items() if c.get("duplicationRule")}
-    return {"updated": updated, "records": out, "byDrug": dict(by_drug), "byClass": dict(by_class), "classMembers": members, "classNames": {cid: c["name"] for cid, c in classes.items()},
+    member_names = {cid: sorted({n for n in (c.get("members") or [])} | {meds[m]["name"] for m in members.get(cid, [])}) for cid, c in classes.items()}
+    return {"updated": updated, "records": out, "byDrug": dict(by_drug), "byClass": dict(by_class), "classMembers": members, "classMemberNames": member_names, "classNames": {cid: c["name"] for cid, c in classes.items()},
             "duplicationClasses": dup_rules, "products": products, "index": index, "drugClassOf": {mid: (m.get("links") or {}).get("drugClass", [None])[0] for mid, m in meds.items()}}
 
 def compile_comparisons(types, errors):

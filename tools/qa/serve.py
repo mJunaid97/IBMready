@@ -10,8 +10,8 @@ for Apache / LiteSpeed.
 """
 import argparse, http.server, json, mimetypes, os, re, socketserver, urllib.parse
 
-SECTIONS = {"anatomy": "organ.html", "systems": "system.html", "physiology": "topic.html", "symptoms": "symptom.html", "conditions": "condition.html", "tests": "test.html", "imaging": "study.html",
-            "procedures": "procedure.html", "medications": "medication.html", "drug-classes": "class.html", "first-aid": "topic.html", "health": "topic.html"}
+SECTIONS = {"anatomy": "organ.html", "systems": "system.html", "physiology": "topic.html", "symptoms": "symptom.html", "conditions": "condition.html", "tests": "test.html", "biomarkers": "biomarker.html", "imaging": "study.html",
+            "procedures": "procedure.html", "medications": "medication.html", "drug-classes": "class.html", "targets": "target.html", "first-aid": "topic.html", "health": "topic.html", "compare": "compare.html"}
 SLUG = r"([A-Za-z0-9-]+)"
 mimetypes.add_type("model/gltf-binary", ".glb"); mimetypes.add_type("application/javascript", ".js"); mimetypes.add_type("application/javascript", ".mjs")
 mimetypes.add_type("application/manifest+json", ".webmanifest"); mimetypes.add_type("image/svg+xml", ".svg"); mimetypes.add_type("text/markdown", ".md"); mimetypes.add_type("application/xml", ".xml")

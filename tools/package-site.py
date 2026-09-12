@@ -25,14 +25,15 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 EXCLUDE_DIRS = ("tools/", ".github/", "content/")
 KEEP_IN_CONTENT = ("content/roadmap.json",)
 EXCLUDE_FILES = (".gitignore", "vercel.json", "_headers", "tools/qa/shots")
-SECTIONS = {"physiology": "topic.html", "symptoms": "symptom.html", "conditions": "condition.html", "tests": "test.html", "imaging": "study.html",
-            "procedures": "procedure.html", "medications": "medication.html", "drug-classes": "class.html", "first-aid": "topic.html", "health": "topic.html"}
+SECTIONS = {"physiology": "topic.html", "symptoms": "symptom.html", "conditions": "condition.html", "tests": "test.html", "biomarkers": "biomarker.html", "imaging": "study.html",
+            "procedures": "procedure.html", "medications": "medication.html", "drug-classes": "class.html", "targets": "target.html", "first-aid": "topic.html", "health": "topic.html"}
 ANATOMY = {"anatomy": "organ.html", "systems": "system.html"}
+EXTRA = {"compare": "compare.html"}                # non-entity sections with their own detail pages (data/content/comparisons.json)
 # static pages: path -> (changefreq, priority); the home page and hubs first
 PAGES = {"": ("weekly", "1.0"), "anatomy/": ("weekly", "0.9"), "explorer/": ("monthly", "0.9"), "systems/": ("monthly", "0.8"), "organs/": ("monthly", "0.6"), "medical-terms/": ("monthly", "0.7"),
          "study/": ("monthly", "0.6"), "about/": ("yearly", "0.4"), "editorial-policy/": ("yearly", "0.3"), "medical-review-policy/": ("yearly", "0.3"), "references-policy/": ("yearly", "0.3"),
          "corrections-policy/": ("yearly", "0.3"), "disclaimer/": ("yearly", "0.3"), "contact/": ("yearly", "0.4")}
-NOINDEX_PAGES = ["search/", "roadmap/"]          # prerendered, linked, but kept out of the sitemaps
+NOINDEX_PAGES = ["search/", "roadmap/", "interactions/"]          # prerendered, linked, but kept out of the sitemaps (the checker is a tool, not content)
 
 def served_files():
     out = subprocess.check_output(["git", "ls-files", "--cached", "--others", "--exclude-standard"], cwd=ROOT, text=True)
@@ -154,6 +155,11 @@ def main():
         urls.append({"path": f"{key}/" if a.pretty else f"{key}/index.html", "lastmod": hub_date, "freq": "weekly", "prio": "0.8", "index": True, "section": key})
         for i, e in items.items():
             urls.append({"path": detail(key, page, i), "lastmod": e.get("updated") or hub_date, "freq": "monthly", "prio": "0.8" if i in (T["meta"].get("priority") or []) else "0.7", "index": bool(e.get("seo", {}).get("index", True)), "section": key, "template": f"{key}/{page}?id={i}"})
+    comparisons = json.load(open(os.path.join(ROOT, "data", "content", "comparisons.json"), encoding="utf-8"))
+    cmp_date = max([c.get("updated") or "" for c in comparisons["comparisons"]] + [comparisons.get("updated") or ""]) or site_date
+    urls.append({"path": "compare/" if a.pretty else "compare/index.html", "lastmod": cmp_date, "freq": "monthly", "prio": "0.6", "index": True, "section": "compare"})
+    for c in comparisons["comparisons"]:
+        urls.append({"path": detail("compare", "compare.html", c["id"]), "lastmod": c.get("updated") or cmp_date, "freq": "monthly", "prio": "0.6", "index": True, "section": "compare", "template": f"compare/compare.html?id={c['id']}"})
     # hub lastmod for anatomy pages
     for u in urls:
         if u["path"] in ("anatomy/", "organs/"): u["lastmod"] = max([o.get("updated") or "" for o in content["organs"]] + [site_date])
@@ -162,7 +168,7 @@ def main():
     # ---- sitemaps: an index that points at one file per section; only canonical, indexable URLs
     os.makedirs(os.path.join(out, "sitemaps"), exist_ok=True)
     sections = []
-    for name in ["pages", "anatomy", "systems", *SECTIONS]:
+    for name in ["pages", "anatomy", "systems", *SECTIONS, *EXTRA]:
         rows = [u for u in urls if u["section"] == name and u["index"]]
         if not rows: continue
         xml = ['<?xml version="1.0" encoding="UTF-8"?>', '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
@@ -184,7 +190,7 @@ def main():
         for h in a.redirect_host: rules += [f"  RewriteCond %{{HTTP_HOST}} ^{re.escape(h)}$ [NC]", f"  RewriteRule ^ {site}%{{REQUEST_URI}} [L,R=301]"]
     if a.pretty:
         rules.append("  # query-style detail URLs -> clean URLs")
-        for d, page in {**ANATOMY, **SECTIONS, "organs": "organ.html"}.items():
+        for d, page in {**ANATOMY, **SECTIONS, **EXTRA, "organs": "organ.html"}.items():
             target = "anatomy" if d == "organs" else d
             rules += [f"  RewriteCond %{{QUERY_STRING}} ^id=([A-Za-z0-9-]+)$", f"  RewriteRule ^{re.escape(d)}/{re.escape(page)}$ {base}{target}/%1/? [R=301,L]"]
         rules += ["  # /section/index.html -> /section/ and /index.html -> /", "  RewriteCond %{THE_REQUEST} \\s/+(?:[^?\\s]*/)?index\\.html[\\s?]", f"  RewriteRule ^(.*/)?index\\.html$ {base}$1 [R=301,L]"]
@@ -198,7 +204,7 @@ def main():
                 pat = "|".join(re.escape(x) for x in als)
                 for d in dirs: rules.append(f"  RewriteRule ^{d}/({pat})/?$ {base}{section}/{target}/ [R=301,L]")
         rules += ["  # organ pages moved to /anatomy/", f"  RewriteRule ^organs/([A-Za-z0-9-]+)/?$ {base}anatomy/$1/ [R=301,L]"]
-        dirs = "|".join(list(ANATOMY) + list(SECTIONS))
+        dirs = "|".join(list(ANATOMY) + list(SECTIONS) + list(EXTRA))
         rules += ["  # trailing slash on every section page", "  RewriteCond %{REQUEST_FILENAME} !-f", f"  RewriteRule ^({dirs})/([A-Za-z0-9-]+)$ {base}$1/$2/ [R=301,L]"]
     s = s.replace("  # @@GENERATED-URL-RULES@@", "\n".join(rules), 1)
     open(p, "w", encoding="utf-8").write(s)

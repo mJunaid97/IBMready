@@ -30,7 +30,7 @@ const hashes = new Map();                      // name -> hash
 hashes.set('body', '');
 for (const o of content.organs) hashes.set(previewName('o=' + o.id), 'o=' + o.id);
 for (const s of atlas.systems) hashes.set(previewName('sys=' + s.id), 'sys=' + s.id);
-for (const key of ['physiology', 'symptoms', 'conditions', 'tests', 'imaging', 'procedures', 'medications', 'drug-classes', 'first-aid', 'health']) {
+for (const key of ['physiology', 'symptoms', 'conditions', 'tests', 'biomarkers', 'imaging', 'procedures', 'medications', 'drug-classes', 'targets', 'first-aid', 'health']) {
   const T = JSON.parse(readFileSync(`${root}data/content/types/${key}.json`, 'utf8'));
   for (const e of Object.values(T.items)) {
     const a = e.anatomy || {}; let h = null;

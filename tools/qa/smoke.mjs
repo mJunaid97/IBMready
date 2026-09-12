@@ -49,7 +49,7 @@ const inspect = () => page.evaluate(() => {
 
 // 1. every page type renders with complete metadata
 const pages = ['', 'anatomy/', 'organs/', 'systems/', 'medical-terms/', 'study/', 'about/', 'editorial-policy/', 'medical-review-policy/', 'references-policy/', 'corrections-policy/', 'disclaimer/', 'contact/', 'roadmap/', 'search/?q=knee',
-  ...['physiology', 'symptoms', 'conditions', 'tests', 'imaging', 'procedures', 'medications', 'drug-classes', 'first-aid', 'health'].map(t => `${t}/`)].map(p => PRETTY || !p.endsWith('/') ? p : p + 'index.html');
+  ...['physiology', 'symptoms', 'conditions', 'tests', 'biomarkers', 'imaging', 'procedures', 'medications', 'drug-classes', 'targets', 'first-aid', 'health', 'compare', 'interactions'].map(t => `${t}/`)].map(p => PRETTY || !p.endsWith('/') ? p : p + 'index.html');
 const hrefs = new Set(); const titles = new Map();
 for (const p of pages) {
   await page.goto(base + p, { waitUntil: 'load' });
@@ -63,7 +63,7 @@ for (const p of pages) {
   if (r.ldErr || !r.ld.includes('BreadcrumbList') && p !== '' && !p.startsWith('search')) probs.push(`json-ld ${r.ldErr || r.ld.join(',')}`);
   if (p !== '' && r.crumbs < 2) probs.push(`breadcrumbs ${r.crumbs}`);
   if (r.undef) probs.push(`undefined text ×${r.undef}`); if (r.overflow) probs.push('overflow');
-  if (p.startsWith('search') && !/noindex/.test(r.robots)) probs.push('search page is indexable');
+  if ((p.startsWith('search') || p.startsWith('interactions')) && !/noindex/.test(r.robots)) probs.push(`${p} is indexable`);
   if (titles.has(r.title)) probs.push(`duplicate title of ${titles.get(r.title)}`); titles.set(r.title, p || '/');
   if (probs.length) fail(`${p || '/'}: ${probs.join('; ')}`); else ok(`${p || '/'} · ${r.h1}`);
 }
@@ -118,6 +118,29 @@ const before = await page.evaluate(() => document.querySelectorAll('#cards .card
 await page.fill('#q', 'gout'); await page.waitForTimeout(600);
 const after = await page.evaluate(() => document.querySelectorAll('#cards .card').length);
 if (!(before > 10 && after >= 1 && after < before)) fail(`hub filter: ${before} cards → ${after} after filtering`); else ok(`hub filter: ${before} cards → ${after} for "gout"`);
+
+// 4d. clinical layer: full-depth medication page, full-depth test page, comparison page, interaction checker
+await page.goto(detailUrl('medications', 'medication.html', 'amlodipine'), { waitUntil: 'load' }); await rendered();
+const med = await page.evaluate(() => ({ quick: !!document.querySelector('dl.quick'), uses: !!document.getElementById('uses'), pathway: document.querySelectorAll('ol.pathway li').length, ix: document.querySelectorAll('#interactions ~ .ix-list .ix-card, .ix-list .ix-card').length, contra: !!document.getElementById('contraindications'), pops: !!document.getElementById('populations'), side: !!document.querySelector('.side-clinical'), srcs: document.querySelectorAll('a.src').length, sev: document.querySelectorAll('.sev').length, ld: (document.getElementById('jsonld')?.textContent || '').includes('"Drug"') }));
+if (!(med.quick && med.uses && med.pathway >= 3 && med.ix >= 1 && med.contra && med.pops && med.side && med.srcs > 10 && med.sev >= 1 && med.ld)) fail(`medication page (amlodipine): ${JSON.stringify(med)}`); else ok(`medication page: quick summary, uses, ${med.pathway}-step pathway, ${med.ix} interaction cards, ${med.srcs} source markers, sidebar, Drug schema`);
+await page.goto(detailUrl('tests', 'test.html', 'complete-blood-count'), { waitUntil: 'load' }); await rendered();
+const tst = await page.evaluate(() => ({ quick: !!document.querySelector('dl.quick'), comps: document.querySelectorAll('#measures tbody tr, h2#measures ~ .table-wrap tbody tr').length, order: [...document.querySelectorAll('h2')].map(h => h.id).filter(Boolean).slice(0, 8).join(','), bio: [...document.querySelectorAll('a[href]')].filter(a => /\/biomarkers\//.test(a.href)).length, side: !!document.querySelector('.side-clinical') }));
+if (!(tst.quick && tst.bio >= 5 && tst.side && /^why,measures,how,preparation,results,factors,limits/.test(tst.order))) fail(`test page (CBC): ${JSON.stringify(tst)}`); else ok(`test page: quick summary, question order (${tst.order}), ${tst.bio} biomarker links`);
+await page.goto(detailUrl('tests', 'test.html', 'troponin'), { waitUntil: 'load' }); await rendered();
+const thr = await page.evaluate(() => document.querySelectorAll('#results ~ h3, h2#results ~ .table-wrap tbody tr').length + (document.body.innerText.includes('99th percentile') ? 1 : 0));
+if (thr < 2) fail(`troponin page: thresholds missing (${thr})`); else ok('troponin page: guideline threshold with jurisdiction and source');
+await page.goto(detailUrl('compare', 'compare.html', 'crp-vs-esr'), { waitUntil: 'load' }); await rendered();
+const cmp = await page.evaluate(() => ({ rows: document.querySelectorAll('table.compare tbody tr').length, h1: document.querySelector('h1')?.textContent, refs: document.querySelectorAll('.ref-list li').length, ld: (document.getElementById('jsonld')?.textContent || '').includes('BreadcrumbList') }));
+if (!(cmp.rows >= 3 && /CRP vs ESR/.test(cmp.h1) && cmp.refs >= 1 && cmp.ld)) fail(`comparison page: ${JSON.stringify(cmp)}`); else ok(`comparison page: ${cmp.rows} rows, ${cmp.refs} sources`);
+const chk = async (drugs) => { await page.goto(base + 'interactions/' + (PRETTY ? '' : 'index.html') + '?drugs=' + drugs, { waitUntil: 'load' }); await page.waitForFunction(() => document.querySelectorAll('#chk-chips .chk-chip').length >= 2 && document.querySelector('#chk-results h2'), null, { timeout: 30000 }); return page.evaluate(() => ({ chips: document.querySelectorAll('#chk-chips .chk-chip').length, cards: document.querySelectorAll('#chk-results .ix-card').length, dup: document.querySelectorAll('#chk-results .callout.urgent').length, none: document.body.innerText.includes('No documented interaction found'), safe: /\bSAFE\b/.test(document.body.innerText), robots: document.querySelector('meta[name="robots"]')?.content })); };
+const c1 = await chk('lisinopril,ibuprofen'); if (!(c1.chips === 2 && c1.cards >= 1 && !c1.safe && /noindex/.test(c1.robots))) fail(`checker lisinopril+ibuprofen: ${JSON.stringify(c1)}`); else ok(`checker: lisinopril + ibuprofen → ${c1.cards} card(s), noindex`);
+const c2 = await chk('paracetamol,co-codamol'); if (!(c2.chips === 2 && c2.dup >= 1)) fail(`checker duplication: ${JSON.stringify(c2)}`); else ok('checker: paracetamol + co-codamol flags therapeutic duplication');
+const c3 = await chk('amoxicillin,cetirizine'); if (!(c3.chips === 2 && c3.cards === 0 && c3.none && !c3.safe)) fail(`checker no-interaction state: ${JSON.stringify(c3)}`); else ok('checker: no-interaction wording is the safe form');
+const c4 = await chk('norvasc,statins'); if (!(c4.chips === 2)) fail(`checker brand and class resolution: ${JSON.stringify(c4)}`); else ok('checker: brand (Norvasc) and class (statins) resolve');
+// typeahead resolves a brand to its generic page
+await page.goto(base, { waitUntil: 'load' }); await page.fill('#hsearch-q', 'cozaar'); await page.waitForTimeout(800);
+const brand = await page.evaluate(() => document.querySelector('#hsearch-results li a')?.getAttribute('href') || '');
+if (!/medications\/(losartan|medication\.html\?id=losartan)/.test(brand)) fail(`brand search: cozaar → ${brand}`); else ok('brand search: Cozaar resolves to losartan');
 
 // 4c. the 3D facade swaps in the explorer embed on click
 await page.goto(detailUrl('anatomy', 'organ.html', 'heart'), { waitUntil: 'load' }); await rendered();
@@ -190,7 +213,8 @@ if (PRETTY) {
   const nf2 = await status('conditions/no-such-condition/');
   if (nf2[0] !== 404) fail(`unknown entity slug returned ${nf2[0]} instead of 404`);
   const expect = [['tests/cbc/', '/tests/complete-blood-count/'], ['medications/norvasc', '/medications/amlodipine/'], ['conditions/heart-attack/', '/conditions/myocardial-infarction/'], ['conditions/gout', '/conditions/gout/'], ['conditions/condition.html?id=gout', '/conditions/gout/'],
-    ['organs/heart/', '/anatomy/heart/'], ['organs/organ.html?id=liver', '/anatomy/liver/'], ['anatomy/cardiac/', '/anatomy/heart/'], ['learn/terminology.html', '/medical-terms/'], ['conditions/index.html', '/conditions/'], ['index.html', '/']];
+    ['organs/heart/', '/anatomy/heart/'], ['organs/organ.html?id=liver', '/anatomy/liver/'], ['anatomy/cardiac/', '/anatomy/heart/'], ['learn/terminology.html', '/medical-terms/'], ['conditions/index.html', '/conditions/'], ['index.html', '/'],
+    ['tests/cardiac-biomarkers/', '/tests/troponin/'], ['tests/inflammatory-markers/', '/tests/crp/'], ['tests/egfr/', '/tests/creatinine-egfr/'], ['biomarkers/hb/', '/biomarkers/haemoglobin/'], ['compare/compare.html?id=crp-vs-esr', '/compare/crp-vs-esr/'], ['compare/crp-vs-esr', '/compare/crp-vs-esr/']];
   let bad = 0;
   for (const [from, to] of expect) { const [s, loc] = await status(from); if (s !== 301 || !loc.endsWith(to)) { bad++; fail(`redirect ${from}: ${s} ${loc} (expected 301 ${to})`); } }
   ok(`${expect.length} redirect rules checked, ${bad} wrong`);

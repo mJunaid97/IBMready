@@ -1,5 +1,40 @@
 # Changelog
 
+## v1.2.0 — 2026-09-12
+
+Clinical content layer: the tests, medications and interactions of the Clinical Content Depth
+specification become structured, source-backed, region-aware entities (see CLINICAL.md).
+
+- Two new sections: biomarkers (30 pages: what each analyte is, units, why higher or lower,
+  factors, the tests that measure it) and drug targets (22 pages: receptors, enzymes, channels,
+  transporters and pathways, with the medicines and classes that act on them)
+- Tests: 16 pages at full depth in the specification's question order, with a quick summary,
+  specimen, components linked to biomarkers, a reference-range policy, guideline thresholds with
+  jurisdiction and source, factors that affect the result and what the test cannot tell; troponin,
+  BNP, CRP, ESR, TSH, ferritin and creatinine/eGFR get canonical pages (301s from the old panel
+  ids and aliases)
+- Medications: 12 pages at full depth (amlodipine, losartan, lisinopril, metformin, atorvastatin,
+  rosuvastatin, aspirin, ibuprofen, paracetamol, omeprazole, amoxicillin, azithromycin) with
+  brands and prescription status by region, uses by licence status and country, plain and
+  technical mechanism, a linked pathway, targets, sourced side effects, serious safety information,
+  typed warnings, contraindications, interactions, monitoring, special populations, condition
+  cautions, effects on tests and pharmacokinetics; every structured fact carries a source marker
+  with its country; the macrolides class and 14 brand or combination products are added
+- Drug classes: targets, class warnings, class interactions and therapeutic-duplication rules
+- Interactions: 69 sourced records (drug–drug, drug–class, therapeutic duplication) with mechanism,
+  effect, official wording, management, monitoring, evidence and a severity state assigned only
+  where the cited wording supports it; shown on every medication and class page and in the new
+  interaction checker at /interactions/ (noindex), which resolves brands, products and classes to
+  ingredients, checks every pair, flags duplication and never says "safe"
+- Comparisons at /compare/: CRP vs ESR, creatinine vs eGFR, ECG vs echocardiogram, CT vs MRI,
+  TSH vs free T4, HbA1c vs blood glucose, atorvastatin vs rosuvastatin
+- Every page shows its review status honestly and a universal "at a glance" sidebar; Drug schema
+  carries active ingredient, class, mechanism, routes, prescription status, contraindications,
+  interacting drugs and food, alcohol, pregnancy and breastfeeding warnings
+- Compiler: jurisdiction-aware references, vocabularies, sources required on every clinical fact,
+  completeness rules for full-depth pages, review-status indexability, products and the checker
+  index; packaging, prerendering, sitemaps, redirects and the smoke test cover the new sections
+
 ## v1.1.2 — 2026-09-12
 
 Search Console verification meta tag and Google Analytics 4
