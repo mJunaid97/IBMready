@@ -7,22 +7,24 @@
   <title>Drug Interaction Checker | Anatomy Nexus</title>
   <meta name="description" content="Check medicines for known drug interactions and understand severity, mechanisms, monitoring considerations, and related clinical information.">
   <meta name="robots" content="index,follow">
+  <link rel="icon" href="../../favicon.ico" sizes="32x32">
   <link rel="icon" href="../../favicon.svg" type="image/svg+xml">
-  <meta name="theme-color" content="#d9731a">
+  <meta name="theme-color" content="#0B2D45">
   <link rel="manifest" href="../../manifest.webmanifest">
-  <link rel="apple-touch-icon" href="../../site/apple-touch-icon.png"><link rel="stylesheet" href="../../site/site.css">
+  <link rel="apple-touch-icon" href="../../site/apple-touch-icon.png">
+  <link rel="stylesheet" href="../../site/site.css">
   <link rel="canonical" href="./">
 </head>
 <body data-nav="checker" data-canonical="tools/drug-interaction-checker/">
 <main class="wrap" id="main">
   <nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="../../">Home</a></li><li><a href="../">Clinical tools</a></li><li aria-current="page">Drug Interaction Checker</li></ol></nav>
   <div class="tool-hero">
-    <div class="eyebrow">💊 Clinical tool · educational</div>
+    <div class="eyebrow"><svg class="ico ico-interactions" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="12" r="5.5"/><circle cx="15" cy="12" r="5.5"/></svg> Clinical tool · educational</div>
     <h1>Drug Interaction Checker</h1>
     <p class="lead">Check medicines for known interactions and understand what they may mean, how serious they may be, and what monitoring or professional advice may be relevant.</p>
     <p class="small muted">Interaction information is educational and does not replace advice from a doctor, pharmacist, or other qualified healthcare professional.</p>
   </div>
-  <div id="checker"><p class="muted" style="padding:20px 0">Loading the checker…</p></div>
+  <div id="checker"><p class="loading-state" aria-busy="true">Loading the checker…</p></div>
   <section class="prose" id="how">
     <h2>How the checker works</h2>
     <ol class="steps">

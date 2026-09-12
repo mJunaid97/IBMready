@@ -23,7 +23,7 @@ The output is plain files: upload dist/ (or extract the zip) into the web root o
 import argparse, datetime, json, os, re, shutil, subprocess, sys, zipfile
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-EXCLUDE_DIRS = ("tools/", ".github/", "content/")
+EXCLUDE_DIRS = ("tools/", ".github/", "content/", "brand/")     # brand/: the logo kit (print files, sources); the site serves site/logo/
 # served files inside the excluded directories: the roadmap data, and the web pages of the clinical tools (tools/ is the URL
 # namespace of the tools hub and the Drug Interaction Checker as well as the build pipeline's directory)
 KEEP_IN_CONTENT = ("content/roadmap.json", "tools/index.html", "tools/drug-interaction-checker/index.html")

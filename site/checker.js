@@ -48,7 +48,7 @@ const $ = (id) => document.getElementById(id);
 // ------------------------------------------------------------------ shell
 function shell() {
   root.innerHTML = `
-  <div class="callout urgent"><b>Before you use this tool.</b> ${esc(COPY.before)}</div>
+  <div class="callout important"><b>Before you use this tool.</b> ${esc(COPY.before)}</div>
   <section class="chk-card" aria-labelledby="chk-add-h">
     <h2 id="chk-add-h">Add your medications</h2>
     <p class="muted" id="chk-help">Search by generic name, brand name, or active ingredient. Add at least two medications to begin.</p>
@@ -182,7 +182,7 @@ function resultsHtml(res) {
   const tierRows = TIER_ORDER.filter(k => s.byTier[k] || t(k).order <= 3).map(k => `<li class="${s.byTier[k] ? '' : 'is-zero'}">${tierBadge(k, { title: false })}${pairs(s.byTier[k])}</li>`).join('')
     + (s.duplications ? `<li>${tierBadge('duplication')}${pairs(s.duplications)}</li>` : '')
     + `<li class="${s.none ? '' : 'is-zero'}">${tierBadge('none')}${pairs(s.none)}</li>`;
-  const warn = res.warnings.filter(w => w.code !== 'too-few').map(w => `<div class="callout ${w.code === 'unknown-entry' ? 'urgent' : 'info'}"><b>${esc(w.code === 'limited-coverage' ? 'Coverage limited.' : w.code === 'soft-limit' ? 'Long list.' : 'Not matched.')}</b> ${esc(w.message)}${w.code === 'unknown-entry' ? ' Search again above.' : ''}</div>`).join('');
+  const warn = res.warnings.filter(w => w.code !== 'too-few').map(w => `<div class="callout ${w.code === 'unknown-entry' ? 'warning' : 'info'}"><b>${esc(w.code === 'limited-coverage' ? 'Coverage limited.' : w.code === 'soft-limit' ? 'Long list.' : 'Not matched.')}</b> ${esc(w.message)}${w.code === 'unknown-entry' ? ' Search again above.' : ''}</div>`).join('');
   const severe = s.topTier === 'contraindicated' || s.topTier === 'major' ? `<div class="callout urgent" role="note"><b>${esc(s.topTier === 'contraindicated' ? 'A combination that official information says to avoid.' : 'A combination official information restricts to specialist supervision or close monitoring.')}</b> ${esc(COPY.severe)}</div>` : '';
   const groups = TIER_ORDER.filter(k => s.byTier[k]).map(k => `<section class="chk-group" aria-labelledby="g-${k}"><h2 id="g-${k}">${tierBadge(k)}<span class="badge">${s.byTier[k]} pair${s.byTier[k] === 1 ? '' : 's'}</span></h2><p class="small muted">${esc(t(k).meaning)}</p><div class="ix-list">${res.pairs.filter(p => p.tier === k).map(p => pairCard(p, res)).join('')}</div></section>`).join('');
   const dups = res.pairs.filter(p => p.duplications.length);

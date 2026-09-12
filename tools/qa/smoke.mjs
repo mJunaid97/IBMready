@@ -47,7 +47,9 @@ const inspect = () => page.evaluate(() => {
   return { title: document.title, h1s: document.querySelectorAll('h1').length, h1: document.querySelector('h1')?.textContent.trim(), canonical: document.querySelector('link[rel="canonical"]')?.href || '', robots: document.querySelector('meta[name="robots"]')?.content || '',
     desc: document.querySelector('meta[name="description"]')?.content || '', og: document.querySelector('meta[property="og:title"]')?.content || '', crumbs: document.querySelectorAll('.breadcrumb li').length, ld: types, ldErr,
     undef: (document.body.innerText.match(/\bundefined\b|\[object Object\]|\bNaN\b/g) || []).length, hrefs: [...document.querySelectorAll('a[href]')].map(a => a.href), overflow: document.documentElement.scrollWidth > innerWidth + 1,
-    rel: document.querySelectorAll('.aside .chip').length, refs: document.querySelectorAll('.ref-list li').length, editorial: !!document.querySelector('.editorial'), facade: !!document.querySelector('.facade') };
+    rel: document.querySelectorAll('.aside .chip').length, refs: document.querySelectorAll('.ref-list li').length, editorial: !!document.querySelector('.editorial'), facade: !!document.querySelector('.facade'),
+    brand: !!document.querySelector('.site-header .brand img.logo-light[src*="site/logo/anatomy-nexus.svg"]') && !!document.querySelector('.site-footer .footer-brand img.logo-light') && !!document.querySelector('link[rel="icon"][href$="favicon.ico"]') && !!document.querySelector('link[rel="icon"][href$="favicon.svg"]') && !!document.querySelector('link[rel="apple-touch-icon"]') && !document.querySelector('.brand-mark'),
+    emoji: /[\u{1F300}-\u{1FAFF}\u{2600}-\u{27BF}]/u.test(document.querySelector('main')?.innerText || '') };
 });
 
 // 1. every page type renders with complete metadata
@@ -66,6 +68,7 @@ for (const p of pages) {
   if (r.ldErr || !r.ld.includes('BreadcrumbList') && p !== '' && !p.startsWith('search')) probs.push(`json-ld ${r.ldErr || r.ld.join(',')}`);
   if (p !== '' && r.crumbs < 2) probs.push(`breadcrumbs ${r.crumbs}`);
   if (r.undef) probs.push(`undefined text ×${r.undef}`); if (r.overflow) probs.push('overflow');
+  if (!r.brand) probs.push('brand: logo, favicon set or apple-touch-icon missing'); if (r.emoji) probs.push('emoji used as an icon');
   if (p.startsWith('search') && !/noindex/.test(r.robots)) probs.push(`${p} is indexable`);
   if (p.startsWith('tools/drug-interaction-checker') && (!/index/.test(r.robots) || /noindex/.test(r.robots) || !/\/tools\/drug-interaction-checker\/$/.test(r.canonical) || !r.ld.includes('WebApplication'))) probs.push(`checker: robots "${r.robots}", canonical ${r.canonical}, schema ${r.ld.join(',')}`);
   if (titles.has(r.title)) probs.push(`duplicate title of ${titles.get(r.title)}`); titles.set(r.title, p || '/');
@@ -94,6 +97,7 @@ for (const [kind, id, u, needsRefs] of entityPages) {
   if (r.ldErr || !r.ld.includes('BreadcrumbList') || !r.ld.includes('MedicalWebPage')) probs.push(`json-ld ${r.ldErr || r.ld.join(',')}`);
   if (r.crumbs < 3) probs.push(`breadcrumbs ${r.crumbs}`);
   if (!r.rel) probs.push('no related links'); if (needsRefs && !r.refs) probs.push('no sources'); if (!r.editorial) probs.push('no editorial block');
+  if (!r.brand) probs.push('brand assets missing'); if (r.emoji) probs.push('emoji used as an icon');
   if (r.undef) probs.push(`undefined text ×${r.undef}`);
   if (titles.has(r.title)) probs.push(`duplicate title of ${titles.get(r.title)}`); titles.set(r.title, `${kind}/${id}`);
   if (descs.has(r.desc)) probs.push(`duplicate description of ${descs.get(r.desc)}`); descs.set(r.desc, `${kind}/${id}`);

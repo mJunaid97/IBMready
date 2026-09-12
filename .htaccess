@@ -35,6 +35,8 @@ ErrorDocument 404 /404.html
   AddType application/manifest+json .webmanifest
   AddType application/wasm .wasm
   AddType application/xml .xml
+  AddType font/woff2 .woff2
+  AddType image/x-icon .ico
   AddCharset utf-8 .html .css .js .mjs .json .svg .md .txt .webmanifest .xml
 </IfModule>
 
@@ -57,10 +59,12 @@ ErrorDocument 404 /404.html
   ExpiresByType image/jpeg "access plus 30 days"
   ExpiresByType image/png "access plus 30 days"
   ExpiresByType image/svg+xml "access plus 30 days"
+  ExpiresByType font/woff2 "access plus 365 days"
+  ExpiresByType image/x-icon "access plus 30 days"
   ExpiresByType application/xml "access plus 1 hour"
 </IfModule>
 <IfModule mod_headers.c>
-  <FilesMatch "\.(glb|jpg|png)$">
+  <FilesMatch "\.(glb|jpg|png|woff2|ico)$">
     Header set Cache-Control "public, max-age=2592000, immutable"
   </FilesMatch>
   <FilesMatch "\.(js|mjs|css|json)$">

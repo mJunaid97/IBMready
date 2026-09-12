@@ -127,7 +127,8 @@ for LOINC, RxNorm and ATC identifiers.
 ## 9. Performance
 
 Article pages no longer load the 13 MB model: the 3D view is a static preview image (`site/previews/`, rendered
-by `tools/render-previews.mjs`, also used as `og:image`) with a *Load the 3D model* button that swaps in the
+by `tools/render-previews.mjs` with the brand plate in the corner, also used as `og:image`; pages without a
+3D view share `site/og-cover.png`, the site-wide cover with the logo and positioning line) with a *Load the 3D model* button that swaps in the
 explorer iframe; without scripts the button is a link to the explorer. Pages ship as static HTML with no
 client-side rendering on the critical path, one small stylesheet and no web fonts; images carry width and
 height; the model, JSON and vendor code have long cache lifetimes (`.htaccess`).
