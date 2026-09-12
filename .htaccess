@@ -20,45 +20,7 @@ DirectoryIndex index.html
 
   # @@GENERATED-URL-RULES@@
 
-  # ---- clean-URL fallback: /conditions/gout/ -> conditions/condition.html?id=gout when no prerendered page exists
-  # Only for paths that are not real files or directories and only for slug-shaped segments, so index.html, the
-  # section scripts and every asset are served directly. A prerendered site never reaches these rules.
-  RewriteCond %{REQUEST_FILENAME} !-f
-  RewriteCond %{REQUEST_FILENAME} !-d
-  RewriteRule ^anatomy/([A-Za-z0-9-]+)/?$ anatomy/organ.html?id=$1 [L,QSA]
-  RewriteCond %{REQUEST_FILENAME} !-f
-  RewriteCond %{REQUEST_FILENAME} !-d
-  RewriteRule ^systems/([A-Za-z0-9-]+)/?$ systems/system.html?id=$1 [L,QSA]
-  RewriteCond %{REQUEST_FILENAME} !-f
-  RewriteCond %{REQUEST_FILENAME} !-d
-  RewriteRule ^physiology/([A-Za-z0-9-]+)/?$ physiology/topic.html?id=$1 [L,QSA]
-  RewriteCond %{REQUEST_FILENAME} !-f
-  RewriteCond %{REQUEST_FILENAME} !-d
-  RewriteRule ^symptoms/([A-Za-z0-9-]+)/?$ symptoms/symptom.html?id=$1 [L,QSA]
-  RewriteCond %{REQUEST_FILENAME} !-f
-  RewriteCond %{REQUEST_FILENAME} !-d
-  RewriteRule ^conditions/([A-Za-z0-9-]+)/?$ conditions/condition.html?id=$1 [L,QSA]
-  RewriteCond %{REQUEST_FILENAME} !-f
-  RewriteCond %{REQUEST_FILENAME} !-d
-  RewriteRule ^tests/([A-Za-z0-9-]+)/?$ tests/test.html?id=$1 [L,QSA]
-  RewriteCond %{REQUEST_FILENAME} !-f
-  RewriteCond %{REQUEST_FILENAME} !-d
-  RewriteRule ^imaging/([A-Za-z0-9-]+)/?$ imaging/study.html?id=$1 [L,QSA]
-  RewriteCond %{REQUEST_FILENAME} !-f
-  RewriteCond %{REQUEST_FILENAME} !-d
-  RewriteRule ^procedures/([A-Za-z0-9-]+)/?$ procedures/procedure.html?id=$1 [L,QSA]
-  RewriteCond %{REQUEST_FILENAME} !-f
-  RewriteCond %{REQUEST_FILENAME} !-d
-  RewriteRule ^medications/([A-Za-z0-9-]+)/?$ medications/medication.html?id=$1 [L,QSA]
-  RewriteCond %{REQUEST_FILENAME} !-f
-  RewriteCond %{REQUEST_FILENAME} !-d
-  RewriteRule ^drug-classes/([A-Za-z0-9-]+)/?$ drug-classes/class.html?id=$1 [L,QSA]
-  RewriteCond %{REQUEST_FILENAME} !-f
-  RewriteCond %{REQUEST_FILENAME} !-d
-  RewriteRule ^first-aid/([A-Za-z0-9-]+)/?$ first-aid/topic.html?id=$1 [L,QSA]
-  RewriteCond %{REQUEST_FILENAME} !-f
-  RewriteCond %{REQUEST_FILENAME} !-d
-  RewriteRule ^health/([A-Za-z0-9-]+)/?$ health/topic.html?id=$1 [L,QSA]
+  # ---- unknown clean URLs fall through to the real 404 page: every entity page is a prerendered directory
 </IfModule>
 
 # ---- custom error page (a real 404 status, never a 200 "not found" page)

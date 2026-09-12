@@ -35,3 +35,10 @@ clickjacking of the embedded explorer, and supply-chain issues in the build tool
 
 Open a private security advisory on the GitHub repository, or an issue if the report is not
 sensitive. Please include the page URL and steps to reproduce.
+
+## Third-party scripts
+
+None by default. If a Google Analytics 4 measurement id is set in `content/site.json`, the packaged site loads
+`https://www.googletagmanager.com/gtag/js` from its own loader (`site/site.js`, no inline script) and the
+Content-Security-Policy is widened only for Google's tag and collection hosts. Leaving the id empty keeps the strict
+policy with no external script.

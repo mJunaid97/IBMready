@@ -27,6 +27,10 @@ export const SITE = {
     "google": "",
     "bing": ""
   },
+  "analytics": {
+    "ga4": "",
+    "_note": "Google Analytics 4 measurement id (G-XXXXXXXXXX). Empty = no analytics, no third-party scripts."
+  },
   "updated": "2026-09-12",
   "counts": {
     "pieces": 2234,

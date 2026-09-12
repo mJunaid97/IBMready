@@ -157,6 +157,19 @@ export function renderHeader(active) {
   document.getElementById('theme-btn').addEventListener('click', toggleTheme);
   bindHeaderSearch();
   bindFacades();
+  loadAnalytics();
+}
+
+/** Google Analytics 4, only when content/site.json names a measurement id. Loaded from our own code (no inline
+ *  script), IP anonymised by GA4 default; tools/package-site.py widens the CSP for the tag's hosts in that case. */
+function loadAnalytics() {
+  const id = SITE.analytics && SITE.analytics.ga4; if (!id || !/^G-[A-Z0-9]+$/.test(id) || window.__ga4) return;
+  window.__ga4 = id; window.dataLayer = window.dataLayer || [];
+  window.gtag = function () { window.dataLayer.push(arguments); };
+  window.gtag('js', new Date()); window.gtag('config', id, { send_page_view: true });
+  if (!document.querySelector('script[src^="https://www.googletagmanager.com/gtag/js"]')) {
+    const s = document.createElement('script'); s.async = true; s.src = 'https://www.googletagmanager.com/gtag/js?id=' + encodeURIComponent(id); document.head.appendChild(s);
+  }
 }
 
 export function renderFooter() {

@@ -11,7 +11,8 @@ What it does
   * fills the generated URL rules into .htaccess: query URLs -> clean URLs, index.html -> directory,
     retired paths, the 301 alias table from data/content/aliases.json, trailing slashes
   * --prerender: renders every page to static HTML with tools/prerender.mjs (needs Playwright, see
-    tools/qa) so crawlers get titles, content, breadcrumbs, links and schema in the initial response
+    tools/qa) so crawlers get titles, content, breadcrumbs, links and schema in the initial response;
+    required with --pretty (a trailing-slash URL can only be served by a real page directory)
   * makes the explorer's canonical and social image absolute; rewrites root-relative paths when the
     site lives under a sub-path (--base-path /atlas/)
   * optionally zips dist/ so the archive can be uploaded and extracted in one step
@@ -79,6 +80,7 @@ def main():
     ap.add_argument("--redirect-host", action="append", default=[], help="old host name to redirect permanently to --site-url (repeatable)")
     a = ap.parse_args()
     if a.prerender and not a.pretty: sys.exit("--prerender needs --pretty (static pages live at clean URLs)")
+    if a.pretty and not a.prerender: sys.exit("--pretty needs --prerender: clean URLs end with a slash, so only prerendered pages (with root-relative asset paths) can serve them")
     site = a.site_url.rstrip("/")
     base = "/" + a.base_path.strip("/") + "/" if a.base_path.strip("/") else "/"
     origin = site + base if site else base
@@ -106,6 +108,28 @@ def main():
 
     # ---- cache-busting: stamp the release version into every internal script, stylesheet and module import
     stamped = stamp_assets(out, version)
+
+    # ---- analytics: with a GA4 id in content/site.json the Content-Security-Policy (page meta tags and the server
+    # header) admits Google's tag hosts; without one the policy stays strict and no third-party script exists
+    site_meta_pre = json.load(open(os.path.join(ROOT, "content", "site.json"), encoding="utf-8"))
+    ga4 = (site_meta_pre.get("analytics") or {}).get("ga4") or ""
+    if ga4:
+        add = {"script-src": " https://www.googletagmanager.com", "connect-src": " https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com",
+               "img-src": " https://*.google-analytics.com https://*.googletagmanager.com"}
+        def widen(policy):
+            for k, v in add.items(): policy = re.sub(r"(%s [^;\"]*)" % k, lambda m: m.group(1) + v, policy, count=1)
+            return policy
+        n = 0
+        for root_, _, files in os.walk(out):
+            for f in files:
+                if not f.endswith(".html") or "/vendor/" in root_: continue
+                pth = os.path.join(root_, f); s_ = open(pth, encoding="utf-8").read()
+                s2 = re.sub(r'(<meta http-equiv="Content-Security-Policy" content=")([^"]*)(")', lambda m: m.group(1) + widen(m.group(2)) + m.group(3), s_)
+                if s2 != s_: open(pth, "w", encoding="utf-8").write(s2); n += 1
+        pth = os.path.join(out, ".htaccess"); s_ = open(pth, encoding="utf-8").read()
+        s2 = re.sub(r'(Header always set Content-Security-Policy ")([^"]*)(")', lambda m: m.group(1) + widen(m.group(2)) + m.group(3), s_)
+        open(pth, "w", encoding="utf-8").write(s2)
+        print(f"analytics: GA4 {ga4} enabled; CSP widened in {n} pages and .htaccess")
 
     # ---- the URL inventory: every page with its canonical path, lastmod, indexability and sitemap section
     content = json.load(open(os.path.join(ROOT, "data", "content", "atlas-content.json"), encoding="utf-8"))

@@ -3,8 +3,7 @@
 
     python3 tools/qa/serve.py --dir dist --port 8124
 
-Emulates: clean URLs with a trailing slash (a prerendered dist serves <section>/<slug>/index.html; without
-prerendering, /conditions/gout/ falls back to conditions/condition.html), the 301 rules (query URLs,
+Emulates: clean URLs with a trailing slash (a prerendered dist serves <section>/<slug>/index.html), the 301 rules (query URLs,
 index.html, retired paths, the alias table in data/content/aliases.json, missing trailing slashes), the
 custom 404 page with a real 404 status, and correct media types. Not for production: it is a test double
 for Apache / LiteSpeed.
@@ -45,10 +44,6 @@ class Handler(http.server.SimpleHTTPRequestHandler):
         to = self.redirect_for(path, parts.query)
         if to:
             self.send_response(301); self.send_header("Location", to); self.send_header("Content-Length", "0"); self.end_headers(); return
-        m = re.match(r"^/(" + "|".join(map(re.escape, SECTIONS)) + r")/" + SLUG + r"/$", path)
-        if m and not os.path.exists(os.path.join(self.directory, path.strip("/"), "index.html")):
-            tpl = os.path.join(self.directory, m.group(1), SECTIONS[m.group(1)])
-            if os.path.exists(tpl): self.path = f"/{m.group(1)}/{SECTIONS[m.group(1)]}?id={m.group(2)}"   # clean-URL fallback for a non-prerendered dist
         return super().do_GET()
     def send_error(self, code, message=None, explain=None):
         page = os.path.join(self.directory, "404.html")

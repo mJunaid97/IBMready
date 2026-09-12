@@ -111,21 +111,32 @@ explorer iframe; without scripts the button is a link to the explorer. Pages shi
 client-side rendering on the critical path, one small stylesheet and no web fonts; images carry width and
 height; the model, JSON and vendor code have long cache lifetimes (`.htaccess`).
 
-## 10. Owner checklist (not automatable from the repository)
+## 10. Owner checklist (needs the site owner's Google account)
 
-1. **Google Search Console**: add the property `https://anatomynexus.com/`, verify (DNS record on Hostinger, or
-   put the HTML-tag token in `content/site.json` → `verification.google`, rebuild), submit
-   `https://anatomynexus.com/sitemap.xml`. Watch *Pages* (indexing), *Enhancements* (breadcrumbs, rich results)
-   and *Core Web Vitals*.
-2. **Bing Webmaster Tools**: import the Search Console property or verify with `verification.bing`; submit the
+Search Console and Analytics can only be set up from a browser signed in to the owner's Google account. The
+site is prepared so that each takes one value pasted into `content/site.json` and a release.
+
+1. **Google Search Console** (https://search.google.com/search-console): *Add property* → **Domain** →
+   `anatomynexus.com`. Google shows a DNS record `google-site-verification=…`. Either add it as a TXT record on
+   the domain (hPanel → Domains → anatomynexus.com → DNS / Name servers → Manage DNS records: type TXT, name `@`,
+   value the token; or hand the token to the deployment assistant, which adds it through the Hostinger API), then
+   press *Verify*. As a second method, the *HTML tag* token goes into `verification.google` in
+   `content/site.json`: every page then carries the `google-site-verification` meta tag after the next release.
+   Once verified: *Sitemaps* → submit `https://anatomynexus.com/sitemap.xml`. Watch *Pages* (indexing),
+   *Enhancements* (breadcrumbs, rich results) and *Core Web Vitals*.
+2. **Google Analytics 4** (https://analytics.google.com): *Admin* → *Create property* → web data stream for
+   `https://anatomynexus.com` → copy the **Measurement ID** (`G-XXXXXXXXXX`) into `analytics.ga4` in
+   `content/site.json` and release. The pages then load Google's tag from our own loader (`site/site.js`, no
+   inline script), and the packager widens the Content-Security-Policy for the tag's hosts. With the field empty
+   the site ships no third-party script at all. Search Console can also be verified through the Analytics tag
+   once it is live and the same Google account has *edit* rights on the GA property.
+3. **Bing Webmaster Tools**: import the Search Console property or verify with `verification.bing`; submit the
    sitemap; optionally enable IndexNow.
-3. **Contact mailbox**: set `contact.email` in `content/site.json` (it is published in the Organization schema
+4. **Contact mailbox**: set `contact.email` in `content/site.json` (it is published in the Organization schema
    and the contact page) once a mailbox such as `hello@anatomynexus.com` exists; until then the contact page
    points at the public issue tracker.
-4. **Medical reviewers**: when a qualified clinician reviews pages, record them (name, credential, date) so the
+5. **Medical reviewers**: when a qualified clinician reviews pages, record them (name, credential, date) so the
    editorial block, `lastReviewed` and a reviewer page can show real information. Never invent credentials.
-5. **Analytics**: none is installed (no third-party scripts; the CSP would block them). If wanted, a
-   privacy-respecting, first-party option should be added deliberately with the CSP updated.
 6. **404 monitoring** comes from Search Console's crawl reports; recurring 404s become aliases in the content.
 
 ## Release checklist for a content change

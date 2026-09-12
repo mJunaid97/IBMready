@@ -24,8 +24,8 @@ contains only what the site serves, plus:
   trailing slashes, retired paths), correct media types, gzip/brotli, caching, security headers,
   custom 404 page
 
-Without `--prerender` the package still works (the `.htaccess` fallback rewrites clean URLs to
-the templates and the pages render in the browser), but search engines then see empty shells.
+`--pretty` requires `--prerender`: a clean URL ends with a slash, so only a real page directory can
+serve it; the packager refuses the combination without it.
 
 If the site will live in a sub-folder of a domain (for example `https://example.com/atlas/`),
 add `--base-path /atlas/`.

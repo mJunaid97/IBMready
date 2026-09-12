@@ -47,7 +47,9 @@ const ctx = await browser.newContext({ viewport: { width: 1280, height: 900 }, b
 const page = await ctx.newPage();
 const errors = [];
 page.on('pageerror', (e) => errors.push(`${page.url().replace(origin, '/')}: ${e.message.slice(0, 200)}`));
-page.on('console', (m) => { if (m.type() === 'error') errors.push(`${page.url().replace(origin, '/')}: ${m.text().slice(0, 200)}`); });
+// console errors count as failures, except a third-party resource that could not load (an analytics tag in a
+// sandbox without internet access): only our own origin's problems fail the build
+page.on('console', (m) => { if (m.type() !== 'error') return; const src = (m.location() && m.location().url) || ''; if (src && !src.startsWith(origin)) return; errors.push(`${page.url().replace(origin, '/')}: ${m.text().slice(0, 200)}`); });
 
 const ready = () => page.waitForFunction(() => {
   const m = document.querySelector('main'); const footer = document.querySelector('.site-footer');
