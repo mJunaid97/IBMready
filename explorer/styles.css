@@ -276,3 +276,6 @@ a.chip { text-decoration: none; color: inherit; display: inline-block; }
 }
 
 .app.is-embed #toast { display: none !important; }
+
+/* Available to screen readers and crawlers, out of the way of the full-screen 3D view. */
+.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }

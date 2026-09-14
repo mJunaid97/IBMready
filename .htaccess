@@ -77,6 +77,13 @@ ErrorDocument 404 /404.html
     Header set Cache-Control "public, max-age=3600"
   </FilesMatch>
 
+  # ---- the embedded explorer view (?embed=1) is the same page inside an iframe, never a separate indexable
+  # URL. explorer/app.js sets noindex in the browser, but a crawler reads the prerendered HTML and never runs
+  # it, so the directive has to come from the server. robots.txt deliberately does not block this view: a
+  # blocked URL can never be read for its noindex, and the facade iframe must stay fetchable.
+  SetEnvIf Query_String "(^|&)embed=1(&|$)" EMBED_VIEW
+  Header always set X-Robots-Tag "noindex, follow" env=EMBED_VIEW
+
   # ---- security headers (the pages also carry a meta CSP; frame-ancestors can only be set here)
   Header always set Content-Security-Policy "default-src 'self'; script-src 'self' 'wasm-unsafe-eval' 'sha256-0ZYYoMVH8skVI3zJ7AfEL0FDpRE4dS3zbGhdQKihick='; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self'; connect-src 'self'; frame-src 'self'; frame-ancestors 'self'; worker-src 'self' blob:; object-src 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests"
   Header always set X-Content-Type-Options "nosniff"

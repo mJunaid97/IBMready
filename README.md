@@ -134,7 +134,7 @@ python3 tools/qa/serve.py --dir dist --port 8124        # emulates the productio
 ```
 
 `dist/` is the site as deployed: every page prerendered to static HTML at its clean URL
-(`conditions/gout/index.html`), a sitemap index with one file per section, `robots.txt`, the
+(`conditions/gout/index.html`), a sitemap index with five child sitemaps (core, anatomy, clinical, medications, learning), `robots.txt`, the
 `.htaccess` with HTTPS, one canonical host, the alias/query/trailing-slash 301 rules, media
 types, compression, caching and security headers, and a real 404 page. `SEO.md` documents the
 whole layer; `DEPLOY.md` the hosting.

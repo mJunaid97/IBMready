@@ -111,18 +111,34 @@ intestine). Each content file carries `_updated`, changed by hand when visible c
 
 ## 8. Sitemaps and robots
 
-`/sitemap.xml` is an index of `/sitemaps/pages.xml`, `anatomy.xml`, `systems.xml`, `physiology.xml`,
-`symptoms.xml`, `conditions.xml`, `tests.xml`, `imaging.xml`, `procedures.xml`, `medications.xml`,
-`drug-classes.xml`, `first-aid.xml`, `health.xml`, containing only canonical, indexable, 200-status URLs with
-meaningful `lastmod`. `robots.txt` allows everything except `/search/` and `?embed=` views and names
-the sitemap. Rendering assets are never blocked.
+`/sitemap.xml` is an index of exactly five child sitemaps, as the SEO Foundation specification (section 6)
+requires. `tools/package-site.py` assigns every URL to exactly one group through `SECTION_GROUP` and `PAGES`:
 
-Sections of the sitemap index in v1.2: pages, anatomy, systems, physiology, symptoms, conditions,
-tests, biomarkers, imaging, procedures, medications, drug-classes, targets, first-aid, health,
-compare. v1.4 adds the test-category hub and the indexable category pages to `tests.xml` and the
-medication class hub to `medications.xml`; catalogued concepts and class concepts never get URLs of their own
-(specification §86: no thin terminology pages), and `MedicalTest` / `Drug` schema nodes carry `MedicalCode` entries
-for LOINC, RxNorm and ATC identifiers.
+| Child sitemap | Contents | URLs in v1.6 |
+| --- | --- | --- |
+| `/sitemaps/core.xml` | home, `/explorer/`, the tools hub and Drug Interaction Checker, the methodology page, About and the trust/policy pages | 12 |
+| `/sitemaps/anatomy.xml` | the `/anatomy/`, `/systems/` and `/organs/` hubs, every organ article and body system | 31 |
+| `/sitemaps/clinical.xml` | physiology, symptoms, conditions, tests, the test-category hub and its indexable categories, biomarkers, imaging, procedures, first aid, health, comparisons | 245 |
+| `/sitemaps/medications.xml` | medications, the class hub, drug classes, drug targets | 92 |
+| `/sitemaps/learning.xml` | `/medical-terms/`, `/study/` | 2 |
+
+Every entry carries only `<loc>` and a meaningful `<lastmod>`; `<changefreq>` and `<priority>` are never
+emitted, because Google does not use them (specification section 8). One function decides membership —
+`sitemap_eligible()` in `tools/package-site.py` — so indexability is read in a single place: a URL qualifies
+only when it is published, canonical, indexable, not an alias or redirect, not parameterised state, and past
+the content-quality gate that `tools/build-content.py` records in each entity's `seo.index` flag. That flag now
+fails closed: a record without one is not indexed. A build without `--site-url`/`--pretty` writes no sitemap at
+all rather than one full of relative or `?id=` URLs. Catalogued test concepts and class concepts still never get
+URLs of their own (specification §86: no thin terminology pages), and `MedicalTest` / `Drug` schema nodes carry
+`MedicalCode` entries for LOINC, RxNorm and ATC identifiers.
+
+`robots.txt` allows everything except `/api/`, and names the sitemap absolutely. It deliberately does **not**
+block `/search/` or `?embed=` views: a page blocked in `robots.txt` can never be read for its `noindex`, so
+suppression belongs in the page, not the crawl policy (specification section 4). `/search/` and `/roadmap/`
+carry `noindex,follow` in their server-rendered HTML and stay out of every sitemap; the embedded explorer view
+is served `X-Robots-Tag: noindex, follow` from `.htaccess` and `vercel.json`, because a crawler reads the
+prerendered HTML and never runs the script that used to set it. Rendering assets are never blocked, and the
+clinical tools under `/tools/` are indexable pages.
 
 ## 9. Performance
 

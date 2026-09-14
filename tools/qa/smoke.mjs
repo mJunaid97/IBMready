@@ -11,6 +11,7 @@
  * page has related links and sources, every internal link resolves, the header typeahead, the explorer (geometry,
  * clinical card, multi-select, locate mode), the 3D facade loads the embed, the sitemap index and every URL in it,
  * the 301 rules (aliases, query URLs, index.html, trailing slash, retired paths), noindex on search, a real 404,
+ * the five child sitemaps and that no indexable page is orphaned,
  * the phone layout, and CSP compliance with the policy enforced.
  */
 import { chromium } from 'playwright';
@@ -23,6 +24,7 @@ const detailUrl = (dir, page, id) => PRETTY ? `${base}${dir}/${id}/` : `${base}$
 const dirUrl = (dir) => PRETTY ? `${base}${dir}/` : `${base}${dir}/index.html`;
 const out = new URL('./shots/', import.meta.url).pathname; mkdirSync(out, { recursive: true });
 const failures = [];
+let sitemapUrls = [];      // filled by the sitemap check, reused by the orphan check
 const fail = (msg) => { failures.push(msg); console.log('FAIL', msg); };
 const ok = (msg) => console.log('ok  ', msg);
 
@@ -229,17 +231,87 @@ if (sm.status() !== 200) fail(`sitemap.xml returned ${sm.status()}`);
 else {
   const xml = await sm.text(); const locs = [...xml.matchAll(/<loc>([^<]+)<\/loc>/g)].map(m => m[1]);
   if (/<sitemapindex/.test(xml)) {
-    let total = 0, bad = 0, sampled = 0;
+    // specification section 6: exactly five child sitemaps, in this order
+    const want = ['core', 'anatomy', 'clinical', 'medications', 'learning'];
+    const got = locs.map(l => l.replace(/^.*\/sitemaps\//, '').replace(/\.xml$/, ''));
+    if (got.join(',') !== want.join(',')) fail(`sitemap index children are [${got}], expected [${want}]`);
+    else ok('sitemap index names the five specified child sitemaps');
+    let total = 0, bad = 0, sampled = 0; const allUrls = [];
     for (const child of locs) {
       const r = await page.request.get(child.replace(/^https?:\/\/[^/]+\//, base)); if (r.status() !== 200) { bad++; fail(`sitemap ${child} returned ${r.status()}`); continue; }
-      const urls = [...(await r.text()).matchAll(/<loc>([^<]+)<\/loc>/g)].map(m => m[1]); total += urls.length;
-      for (const u of urls) { const rr = await page.request.get(u.replace(/^https?:\/\/[^/]+\//, base), { maxRedirects: 0 }); sampled++; if (rr.status() !== 200) { bad++; fail(`sitemap URL ${rr.status()} ${u}`); } }
+      const body = await r.text();
+      // specification section 8: <lastmod> only; <priority> and <changefreq> must never be emitted
+      if (/<priority>/.test(body)) { bad++; fail(`sitemap ${child} emits <priority>`); }
+      if (/<changefreq>/.test(body)) { bad++; fail(`sitemap ${child} emits <changefreq>`); }
+      const urls = [...body.matchAll(/<loc>([^<]+)<\/loc>/g)].map(m => m[1]); total += urls.length; allUrls.push(...urls);
+      if (!urls.length) { bad++; fail(`sitemap ${child} is empty`); }
+      for (const u of urls) {
+        if (!/^https:\/\//.test(u)) { bad++; fail(`sitemap URL is not absolute https: ${u}`); }
+        if (/^https:\/\/www\./.test(u)) { bad++; fail(`sitemap URL uses the www host: ${u}`); }
+        if (u.includes('?')) { bad++; fail(`sitemap URL carries a query string: ${u}`); }
+        const rr = await page.request.get(u.replace(/^https?:\/\/[^/]+\//, base), { maxRedirects: 0 }); sampled++;
+        if (rr.status() !== 200) { bad++; fail(`sitemap URL ${rr.status()} ${u}`); continue; }
+        if (STATIC) {
+          // specification section 38: no sitemap URL may carry noindex or canonicalise somewhere else
+          const html = await rr.text();
+          if (/noindex/i.test(/<meta[^>]+name="robots"[^>]+content="([^"]*)"/i.exec(html)?.[1] || '')) { bad++; fail(`sitemap URL is noindex: ${u}`); }
+          const canon = /<link[^>]+rel="canonical"[^>]+href="([^"]*)"/i.exec(html)?.[1];
+          if (!canon) { bad++; fail(`sitemap URL has no canonical: ${u}`); }
+          else if (canon.replace(/^https?:\/\/[^/]+\//, base).replace(/\/$/, '') !== u.replace(/^https?:\/\/[^/]+\//, base).replace(/\/$/, ''))
+            { bad++; fail(`sitemap URL canonicalises elsewhere: ${u} → ${canon}`); }
+        }
+      }
     }
+    const dupes = allUrls.filter((u, i) => allUrls.indexOf(u) !== i);
+    if (dupes.length) { bad++; fail(`duplicate sitemap URLs: ${[...new Set(dupes)].slice(0, 5).join(', ')}`); }
+    sitemapUrls = allUrls;
     ok(`sitemap index: ${locs.length} sitemaps, ${total} URLs, ${sampled} fetched, ${bad} bad`);
-  } else ok(`sitemap: ${locs.length} URLs (single file)`);
+  } else fail('sitemap.xml is not a sitemap index (specification section 9 requires one)');
 }
-const robots = await (await page.request.get(base + 'robots.txt')).text();
-if (!/Disallow: \/search\//.test(robots) || !/Sitemap:/.test(robots) || /Disallow: \/tools\//.test(robots)) fail(`robots.txt: ${robots.slice(0, 160)}`); else ok('robots.txt disallows search, allows the clinical tools and names the sitemap');
+const robotsRes = await page.request.get(base + 'robots.txt');
+const robots = await robotsRes.text();
+{
+  const probs = [];
+  if (robotsRes.status() !== 200) probs.push(`status ${robotsRes.status()}`);
+  if (!/^text\/plain/.test(robotsRes.headers()['content-type'] || '')) probs.push(`content-type ${robotsRes.headers()['content-type']}`);
+  if (!/^Sitemap:\s*https:\/\/\S+\/sitemap\.xml\s*$/m.test(robots)) probs.push('no absolute Sitemap: line');
+  if (/^Disallow:\s*\/\s*$/m.test(robots)) probs.push('blanket "Disallow: /"');
+  // specification section 5: rendering assets stay crawlable, and the clinical tools are indexable pages
+  for (const bad of [/^Disallow:.*\.(css|js)\s*$/m, /^Disallow:\s*\/site\//m, /^Disallow:\s*\/vendor\//m, /^Disallow:\s*\/data\//m, /^Disallow:\s*\/tools\//m])
+    if (bad.test(robots)) probs.push(`blocks a path needed for rendering or a public tool (${bad})`);
+  // specification section 4: robots.txt is not a noindex mechanism — a blocked page can never be read for it
+  if (/^Disallow:\s*\/search\//m.test(robots)) probs.push('blocks /search/ (it must stay crawlable to be read for its noindex)');
+  if (probs.length) fail(`robots.txt: ${probs.join('; ')}`); else ok('robots.txt: 200 text/plain, absolute sitemap, nothing needed for rendering or tools blocked');
+}
+// 6b. no orphans: every sitemap URL must be reachable by a crawlable <a href> from another indexable page
+// (specification section 12: "Every orphaned indexable page is a failure"). Only meaningful against prerendered
+// HTML, where the links are in the initial response rather than added by the page script after load.
+if (STATIC && sitemapUrls.length) {
+  const localOf = (u) => u.replace(/^https?:\/\/[^/]+\//, base);
+  const linkedTo = new Set();
+  let scanned = 0, unreadable = 0;
+  for (const u of sitemapUrls) {
+    const from = localOf(u);
+    const r = await page.request.get(from).catch(() => null);
+    if (!r || r.status() !== 200) { unreadable++; continue; }
+    scanned++;
+    for (const m of (await r.text()).matchAll(/<a\b[^>]*?\shref="([^"]+)"/gi)) {
+      let target;
+      try { target = new URL(m[1], from); } catch { continue; }
+      const abs = target.origin + target.pathname;           // ignore #fragments and ?queries
+      if (!abs.startsWith(base) || abs === from) continue;    // external, or a self-link
+      linkedTo.add(abs);
+    }
+  }
+  // Policy and contact pages are reached from the footer; the specification allows deliberately standalone
+  // pages to be exempt, so anything listed here must be justified rather than added to silence a failure.
+  const EXEMPT = new Set([]);
+  const orphans = sitemapUrls.map(localOf).filter(u => !linkedTo.has(u) && !EXEMPT.has(u));
+  if (unreadable) fail(`orphan check could not read ${unreadable} sitemap URLs`);
+  if (orphans.length) fail(`${orphans.length} orphaned sitemap URLs (no inbound internal link): ${orphans.slice(0, 8).map(u => u.replace(base, '/')).join(', ')}${orphans.length > 8 ? ' …' : ''}`);
+  else ok(`no orphans: all ${sitemapUrls.length} sitemap URLs are linked from another page (${scanned} pages crawled, ${linkedTo.size} distinct targets)`);
+}
+
 if (STATIC) {
   // analytics and search-console verification, when configured, must be in the initial HTML of the home page
   const meta = await (await page.request.get(base + 'site/site-meta.js')).text();

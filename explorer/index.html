@@ -9,7 +9,7 @@
   <meta name="description" content="Explore the human body in 3D: 2,234 individually selectable structures from the open BodyParts3D dataset, organised into 16 systems, with search, cross-sections, exploded views and study tools.">
   <link rel="canonical" href="./">
   <meta name="robots" content="index,follow">
-  <meta property="og:type" content="website"><meta property="og:site_name" content="Anatomy Nexus"><meta property="og:title" content="3D Anatomy Explorer | Anatomy Nexus"><meta property="og:description" content="Orbit, click and search 2,234 anatomical structures in 16 systems. Isolate organs, slice the body, explode it into parts."><meta property="og:image" content="../site/og-cover.png"><meta name="twitter:card" content="summary_large_image">
+  <meta property="og:type" content="website"><meta property="og:site_name" content="Anatomy Nexus"><meta property="og:title" content="3D Anatomy Explorer | Anatomy Nexus"><meta property="og:description" content="Orbit, click and search 2,234 anatomical structures in 16 systems. Isolate organs, slice the body, explode it into parts."><meta property="og:url" content="./"><meta property="og:image" content="../site/og-cover.png"><meta name="twitter:card" content="summary_large_image">
   <meta name="theme-color" content="#0B2D45">
   <link rel="icon" href="../favicon.ico" sizes="32x32">
   <link rel="icon" href="../favicon.svg" type="image/svg+xml">
@@ -24,6 +24,8 @@
 <div id="app" class="app" data-loading="true">
   <canvas id="view" aria-label="3D view of the human body"></canvas>
   <div id="labels" class="labels" aria-hidden="true"></div>
+
+  <h1 class="sr-only">3D anatomy explorer</h1>
 
   <header class="topbar">
     <a class="brand" href="../" title="Anatomy Nexus home" aria-label="Anatomy Nexus home">
