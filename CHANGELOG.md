@@ -1,5 +1,37 @@
 # Changelog
 
+## v1.6.0 — 2026-09-14
+
+SEO foundation: the sitemap architecture, crawl policy and regression tests of the SEO Foundation
+specification, with no change to the approved visual design.
+
+- Sitemaps: `sitemap.xml` is now an index of exactly five child sitemaps — core (12 URLs), anatomy (31),
+  clinical (245), medications (92) and learning (2), 382 canonical indexable URLs in total — replacing the
+  per-section files. The tools hub, the Drug Interaction Checker and the methodology page sit in core as
+  high-value tools and editorial pages; the test-category hub and its indexable categories go to clinical and
+  the medication class hub to medications; `/medical-terms/` and `/study/` move to learning, and the
+  `/anatomy/`, `/systems/` and `/organs/` hubs to anatomy
+- Sitemap entries carry only `<loc>` and a meaningful `<lastmod>`: `<changefreq>` and `<priority>` are no
+  longer emitted, because search engines do not use them
+- One function, `sitemap_eligible()`, now decides sitemap membership, so indexability is read in a single
+  place; it rejects noindex pages, aliases, redirects and parameterised state. The per-entity `seo.index`
+  flag fails closed: a record without one is no longer indexed by default
+- A build without `--site-url`/`--pretty` writes no sitemap at all rather than one full of relative or
+  `?id=` URLs, and a www or non-HTTPS `--site-url` is rejected outright
+- robots.txt allows everything except `/api/` and names the sitemap absolutely. The `/search/` and `?embed=`
+  blocks are gone: a page blocked in robots.txt can never be read for its `noindex`, so suppression belongs
+  in the page. `/search/` and `/roadmap/` keep their server-rendered `noindex,follow` and stay out of every
+  sitemap
+- The embedded explorer view is served `X-Robots-Tag: noindex, follow` from `.htaccess` and `vercel.json`;
+  it previously relied on a script a crawler never runs
+- The 3D explorer landing page gains the `<h1>` it was missing and an `og:url`
+- QA: the smoke suite asserts the five child sitemaps by name, that no sitemap emits `<priority>` or
+  `<changefreq>`, that every sitemap URL is absolute HTTPS non-www with no query string, is not `noindex`
+  and canonicalises to itself, and that no indexable page is orphaned (all 382 URLs are linked from another
+  page). robots.txt is checked for 200 text/plain, an absolute sitemap line, no blanket disallow and nothing
+  needed for rendering or the public tools blocked. The live check no longer requests a child sitemap that
+  cannot exist and now fails, rather than only printing, when the sitemap index or robots.txt is wrong
+
 ## v1.5.0 — 2026-09-12
 
 Comprehensive tests and medications: the Tests and Medications sections become a terminology-driven, extensible
