@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 """build-content.py — compile the editable content sources in content/ against the atlas.
 
-Reads   content/systems.json, organs.json, anatomy.json, regions.json, structures.json, terms.json, site.json
+Reads   content/systems.json, organs.json (an organ without a `match` rule has no atlas geometry and needs an article;
+                `nearby` names the modelled structures around it), anatomy.json, regions.json, structures.json, terms.json, site.json
         content/physiology.json, symptoms.json, conditions.json, tests.json, imaging.json,
                 procedures.json, medications.json, drug-classes.json, first-aid.json, health.json
         data/hd/atlas.json (structure names, systems, bounding boxes)
@@ -153,11 +154,13 @@ HOST_META = {"nhs.uk": ("UK", "regulatory"), "nice.org.uk": ("UK", "guidance"), 
              "who.int": ("GLOBAL", "regulatory"), "ema.europa.eu": ("EU", "regulatory"), "openstax.org": ("GLOBAL", "reference"), "resus.org.uk": ("UK", "guidance"),
              "heart.org": ("US", "guidance"), "escardio.org": ("EU", "guidance"), "ginasthma.org": ("GLOBAL", "guidance"), "diabetes.org": ("US", "guidance"),
              "medicines.org.uk": ("UK", "regulatory"), "cks.nice.org.uk": ("UK", "guidance"), "kdigo.org": ("GLOBAL", "guidance"), "acc.org": ("US", "guidance"), "b-s-h.org.uk": ("UK", "guidance"),
-             "btf-thyroid.org": ("UK", "other"), "kidney.org": ("US", "other"), "labtestsonline.org.uk": ("UK", "other"), "bhf.org.uk": ("UK", "other"), "who.int": ("GLOBAL", "regulatory")}
+             "btf-thyroid.org": ("UK", "other"), "kidney.org": ("US", "other"), "labtestsonline.org.uk": ("UK", "other"), "bhf.org.uk": ("UK", "other"), "who.int": ("GLOBAL", "regulatory"),
+             "wpath.org": ("GLOBAL", "guidance"), "endocrine.org": ("US", "guidance"), "ucsf.edu": ("US", "guidance"), "rcog.org.uk": ("UK", "guidance"), "womenshealth.gov": ("US", "regulatory"),
+             "cancerresearchuk.org": ("UK", "other"), "endometriosis-uk.org": ("UK", "other"), "breastcancernow.org": ("UK", "other")}
 CONDITION_CATEGORIES = [("cardiovascular", "Heart & circulation"), ("respiratory", "Lungs & breathing"), ("neurological", "Brain & nerves"),
                         ("digestive", "Digestive system"), ("musculoskeletal", "Bones, joints & muscles"), ("endocrine", "Hormones & metabolism"),
-                        ("urinary", "Kidneys & urinary tract"), ("other", "Blood, infection & other")]
-SYMPTOM_REGIONS = [("head", "Head"), ("chest", "Chest"), ("abdomen", "Abdomen"), ("back", "Back & spine"), ("arms", "Arms & hands"), ("legs", "Legs & feet"), ("general", "Whole body")]
+                        ("urinary", "Kidneys & urinary tract"), ("reproductive", "Reproductive & sexual health"), ("other", "Blood, infection & other")]
+SYMPTOM_REGIONS = [("head", "Head"), ("chest", "Chest"), ("abdomen", "Abdomen"), ("pelvis", "Pelvis & genitals"), ("back", "Back & spine"), ("arms", "Arms & hands"), ("legs", "Legs & feet"), ("general", "Whole body")]
 LEAD_FIELDS = ("summary", "what", "definition", "overview", "intro")
 
 # ---- reference sources: host (exact, then suffix) -> (publisher, evidence tier). Tier 1 official health bodies, guideline
@@ -179,6 +182,9 @@ SOURCES = {
     "btf-thyroid.org": ("British Thyroid Foundation", 3), "kidney.org": ("National Kidney Foundation", 3), "labtestsonline.org.uk": ("Lab Tests Online UK", 3),
     "bhf.org.uk": ("British Heart Foundation", 3), "sja.org.uk": ("St John Ambulance", 3), "asthmaandlung.org.uk": ("Asthma + Lung UK", 3),
     "britishlivertrust.org.uk": ("British Liver Trust", 3), "lung.org": ("American Lung Association", 3), "stroke.org.uk": ("Stroke Association", 3), "epilepsy.org.uk": ("Epilepsy Action", 3),
+    "cancer.gov": ("National Cancer Institute (NIH)", 1), "wpath.org": ("World Professional Association for Transgender Health", 1), "endocrine.org": ("Endocrine Society", 1), "ucsf.edu": ("UCSF Gender Affirming Health Program", 2),
+    "rcog.org.uk": ("Royal College of Obstetricians and Gynaecologists", 1), "nichd.nih.gov": ("NICHD (NIH)", 1), "womenshealth.gov": ("Office on Women's Health (US)", 1),
+    "cancerresearchuk.org": ("Cancer Research UK", 3), "endometriosis-uk.org": ("Endometriosis UK", 3), "breastcancernow.org": ("Breast Cancer Now", 3),
 }
 TIER_LABEL = {1: "Official health body, guideline or professional society", 2: "Textbook, journal or academic medical centre", 3: "Charity or other secondary resource"}
 _unknown_hosts = set()
@@ -635,7 +641,7 @@ def build_search_index(atlas, out_organs, out_regions, terms, know):
     sysname = {s["id"]: s["name"] for s in atlas["systems"]}
     unslug = lambda al: [a.replace("-", " ") for a in al or []]
     for s in atlas["systems"]: entries.append(["system", s["id"], s["name"], "", f"{s['count']} pieces"])
-    for o in out_organs: entries.append(["organ", o["id"], o["name"], "|".join(o.get("aliases", []) + unslug(o.get("urlAliases"))), f"{len(o['structures'])} structures · {sysname.get(o['system'], '')}"])
+    for o in out_organs: entries.append(["organ", o["id"], o["name"], "|".join(o.get("aliases", []) + unslug(o.get("urlAliases"))), (f"{len(o['structures'])} structures" if o["structures"] else "anatomy article") + f" · {sysname.get(o['system'], '')}"])
     for r in out_regions: entries.append(["region", r["id"], r["name"], "", f"{len(r['structures'])} structures"])
     for s in atlas["structures"]: entries.append(["structure", s["id"], s["name"], "", sysname.get(s["system"], s["system"])])
     catname = {c["id"]: c["name"] for c in terms.get("categories", [])}
@@ -686,22 +692,43 @@ def main():
     errors = []
 
     # ---- organs → structure indices, plus the anatomy article when one is written
-    out_organs = []
-    for o in organs:
-        m = o["match"]; hit = set()
-        for nm in m.get("names", []):
+    def match_structures(rule):
+        """Structure indices selected by a match rule: exact `names`, a `regex` over names (optionally limited to `systems`,
+        a systems-only rule takes the whole system), minus an `exclude` regex. Returns (indices, names that do not exist)."""
+        hit = set()
+        if not rule: return hit, []
+        missing = [nm for nm in rule.get("names", []) if nm not in by_name]
+        for nm in rule.get("names", []):
             if nm in by_name: hit.add(by_name[nm])
-            else: print(f"  organ {o['id']}: name not found: {nm}", file=sys.stderr)
-        rx = re.compile(m["regex"], re.I) if m.get("regex") else None
+        rx = re.compile(rule["regex"], re.I) if rule.get("regex") else None
         for i, s in enumerate(structs):
-            if m.get("systems") and s["system"] not in m["systems"]: continue
-            if rx is None and not m.get("names"): hit.add(i)            # systems-only rule: whole system
+            if rule.get("systems") and s["system"] not in rule["systems"]: continue
+            if rx is None and not rule.get("names"): hit.add(i)            # systems-only rule: whole system
             elif rx and rx.search(s["name"]): hit.add(i)
-        if m.get("exclude"):
-            ex = re.compile(m["exclude"], re.I); hit = {i for i in hit if not ex.search(structs[i]["name"])}
-        if not hit: print(f"  organ {o['id']}: NO MATCHES", file=sys.stderr)
+        if rule.get("exclude"):
+            ex = re.compile(rule["exclude"], re.I); hit = {i for i in hit if not ex.search(structs[i]["name"])}
+        return hit, missing
+    # An organ without a `match` rule has no geometry in the atlas (BodyParts3D is one adult male body, so the female
+    # reproductive organs and surgically constructed anatomy are not among its pieces). Such an organ must carry a full
+    # anatomy article, and may name the modelled structures around it (`nearby`), which its page and the pages that
+    # concern it show in 3D instead.
+    out_organs = []; unmodelled = []
+    for o in organs:
+        m = o.get("match") or {}
+        hit, missing = match_structures(m)
+        for nm in missing: print(f"  organ {o['id']}: name not found: {nm}", file=sys.stderr)
+        if m and not hit: print(f"  organ {o['id']}: NO MATCHES", file=sys.stderr)
         rec = {"id": o["id"], "name": o["name"], "system": o["system"], "region": o.get("region"), "summary": o["summary"], "aliases": o.get("aliases", []),
                "urlAliases": o.get("urlAliases", []), "updated": o.get("updated") or organs_updated, "structures": sorted(hit, key=lambda i: structs[i]["name"])}
+        if not m:
+            unmodelled.append(o["id"])
+            if o["id"] not in articles: errors.append(f"organs/{o['id']}: an organ without atlas geometry (no match rule) needs a full article in anatomy.json")
+        if o.get("nearby"):
+            near, missing_near = match_structures(o["nearby"])
+            for nm in missing_near: errors.append(f"organs/{o['id']}: nearby: unknown structure name '{nm}'")
+            near = sorted(near - hit, key=lambda i: structs[i]["name"])
+            if len(near) > 12: errors.append(f"organs/{o['id']}: nearby resolves to {len(near)} structures; keep it to 12 or fewer (the explorer link and preview name carry every id)")
+            rec["nearby"] = near
         art = articles.get(o["id"])
         if art:
             sids = []
@@ -720,6 +747,7 @@ def main():
         out_organs.append(rec)
     for oid in articles:
         if oid not in {o["id"] for o in out_organs}: errors.append(f"anatomy/{oid}: no such organ in organs.json")
+    if unmodelled: print(f"  organs without atlas geometry (anatomy article, surrounding structures in 3D): {', '.join(unmodelled)}", file=sys.stderr)
     if errors:
         print("ANATOMY ERRORS:", file=sys.stderr)
         for e in errors: print("  " + e, file=sys.stderr)

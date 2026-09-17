@@ -35,7 +35,7 @@ export class AtlasUI {
     this.organPieces = (this.content.organs || []).map(o => o.structures.flatMap(si => atlas.structures[si].pieces));
     this.regionPieces = (this.content.regions || []).map(r => r.structures.flatMap(si => atlas.structures[si].pieces));
     this.index = buildIndex(atlas, this.conceptCounts);
-    for (const [i, o] of (this.content.organs || []).entries()) this.index.push({ type: 'organ', id: o.id, idx: i, name: o.name, norm: o.name.toLowerCase(), aliases: (o.aliases || []).map(a => a.toLowerCase()), words: [o.name, ...(o.aliases || [])].join(' ').toLowerCase().split(/[^a-z]+/).filter(Boolean), sub: `${o.structures.length} structures · ${this.sysById.get(o.system)?.name || ''}`, system: o.system, rank: 2.6 });
+    for (const [i, o] of (this.content.organs || []).entries()) if (o.structures.length) this.index.push({ type: 'organ', id: o.id, idx: i, name: o.name, norm: o.name.toLowerCase(), aliases: (o.aliases || []).map(a => a.toLowerCase()), words: [o.name, ...(o.aliases || [])].join(' ').toLowerCase().split(/[^a-z]+/).filter(Boolean), sub: `${o.structures.length} structures · ${this.sysById.get(o.system)?.name || ''}`, system: o.system, rank: 2.6 });
     for (const [i, r] of (this.content.regions || []).entries()) this.index.push({ type: 'region', id: r.id, idx: i, name: r.name, norm: r.name.toLowerCase(), words: r.name.toLowerCase().split(/[^a-z]+/).filter(Boolean), sub: `${r.structures.length} structures`, rank: 2.4 });
     if (this.clinical) for (const [kind, names] of Object.entries(this.clinical.names)) for (const [id, name] of Object.entries(names))
       this.index.push({ type: 'topic', kind, id, name, norm: name.toLowerCase(), words: name.toLowerCase().split(/[^a-z0-9]+/).filter(Boolean), sub: `${this.clinical.types[kind].singular} · opens the page`, href: this.topicHref(kind, id), rank: 1.6 });
@@ -104,6 +104,7 @@ export class AtlasUI {
     }
     const ol = $('organs'); ol.innerHTML = '';
     (this.content.organs || []).forEach((o, i) => {
+      if (!o.structures.length) return;          // an organ the atlas does not model (its anatomy page shows the surrounding structures instead)
       const sys = this.sysById.get(o.system);
       const li = document.createElement('li'); li.dataset.id = o.id;
       li.innerHTML = `<span class="sys-dot" style="background:${sys ? sys.color : '#999'}"></span><span class="sys-name">${esc(o.name)}<small>${esc(sys ? sys.name : '')}</small></span><span class="sys-count">${o.structures.length}</span><span></span>`;

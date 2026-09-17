@@ -10,7 +10,7 @@ if (!PRERENDERED) {
   const hub = (href, eyebrow, title, text, meta) => `<a class="card" href="${href}"><div class="eyebrow">${eyebrow}</div><h3>${title}</h3><p>${text}</p>${meta ? `<div class="meta">${meta}</div>` : ''}</a>`;
   document.getElementById('hubs').innerHTML = [
     hub(link.explorer(), 'Explore', '3D anatomy explorer', `Orbit, click and search every one of ${fmt(c.pieces || 2234)} pieces. Toggle systems, isolate organs, slice the body on three planes, explode it into parts.`, 'Streams in seconds · works on phones'),
-    hub(link.page('anatomy'), 'Anatomy', 'Organs &amp; structures', `${c.organs || 39} anatomy pages: location, structure, blood supply, function and clinical relevance, each with a 3D model.`, `${c.anatomyArticles || 12} full articles`),
+    hub(link.page('anatomy'), 'Anatomy', 'Organs &amp; structures', `${c.organs || 39} anatomy pages: location, structure, blood supply, function and clinical relevance, with a 3D model wherever the atlas holds the organ.`, `${c.anatomyArticles || 12} full articles`),
     hub(link.page('systems'), 'Anatomy', 'Body systems', 'Sixteen system pages with overviews, functions, clinical notes, every modelled structure and the topics that concern them.'),
     hub(typeLink('physiology'), 'Learn', 'Physiology', `${count('physiology')} topics on how the body works: the cardiac cycle, gas exchange, nerve signals, digestion, kidney filtration and hormone control.`),
     hub(link.page('medical-terms'), 'Learn', 'Medical terminology', `${c.terms || 149} terms: directions, planes, movements, regions, word parts, disease processes and clinical terms, each linked into the atlas.`),

@@ -28,13 +28,17 @@ const atlas = JSON.parse(readFileSync(root + 'data/hd/atlas.json', 'utf8'));
 // ---- every hash a page can embed (mirrors embedHash in site/entity.js)
 const hashes = new Map();                      // name -> hash
 hashes.set('body', '');
-for (const o of content.organs) hashes.set(previewName('o=' + o.id), 'o=' + o.id);
+// an organ the atlas does not model (no pieces) embeds the modelled structures around it, as site/site.js organHash does
+const organHash = (o) => !o ? null : o.structures.length ? 'o=' + o.id : o.nearby?.length ? 's=' + o.nearby.map(i => atlas.structures[i].id).join(',') : null;
+const organById = new Map(content.organs.map(o => [o.id, o]));
+for (const o of content.organs) { const h = organHash(o); if (h) hashes.set(previewName(h), h); }
 for (const s of atlas.systems) hashes.set(previewName('sys=' + s.id), 'sys=' + s.id);
 for (const key of ['physiology', 'symptoms', 'conditions', 'tests', 'biomarkers', 'imaging', 'procedures', 'medications', 'drug-classes', 'targets', 'first-aid', 'health']) {
   const T = JSON.parse(readFileSync(`${root}data/content/types/${key}.json`, 'utf8'));
   for (const e of Object.values(T.items)) {
     const a = e.anatomy || {}; let h = null;
-    if (a.organs?.length) h = 'o=' + a.organs[0]; else if (a.structures?.length) h = 's=' + a.structures.slice(0, 12).join(','); else if (a.systems?.length) h = 'sys=' + a.systems[0];
+    for (const oid of a.organs || []) { h = organHash(organById.get(oid)); if (h) break; }
+    if (!h && a.structures?.length) h = 's=' + a.structures.slice(0, 12).join(','); else if (!h && a.systems?.length) h = 'sys=' + a.systems[0];
     if (h) hashes.set(previewName(h), h);
   }
 }

@@ -78,6 +78,16 @@ export const link = {
   interactions: (ids) => url(paths.dir('interactions')) + (ids && ids.length ? '?drugs=' + ids.map(encodeURIComponent).join(',') : ''),
 };
 export function entityPath(type, id) { const t = TYPES[type]; return paths.entity(t.dir, t.page, id); }
+/** The explorer hash that shows an organ: its own pieces, or the modelled structures around an organ the atlas does not
+ *  contain (a compiled organ carries `nearby` indices), or null when there is nothing to show. */
+export function organHash(o, atlas) {
+  if (!o) return null;
+  if (o.structures?.length) return 'o=' + o.id;
+  if (o.nearby?.length && atlas) return 's=' + o.nearby.map(i => atlas.structures[i].id).join(',');
+  return null;
+}
+/** Card meta text for an organ: how much of it the 3D atlas holds. */
+export function structuresLabel(o) { return o.structures?.length ? `${o.structures.length} structures` : 'not modelled in 3D'; }
 export function entityLink(type, id) { return TYPES[type] ? url(entityPath(type, id)) : '#'; }
 export function typeLink(type) { return TYPES[type] ? url(paths.dir(TYPES[type].dir)) : '#'; }
 /** The entity id for a detail page: `?id=` on plain hosts, the last path segment under clean URLs (/conditions/gout/). */
@@ -111,7 +121,7 @@ export function anyLink(type, id) {
 export function termLink(term, data) {
   const a = term.atlas; if (!a) return null;
   if (a.structure) { const si = data.byName.get(a.structure); return si === undefined ? null : link.structure(data.atlas.structures[si].id); }
-  if (a.organ) return link.organ(a.organ);
+  if (a.organ) { const o = data.content?.organs?.find(x => x.id === a.organ); return o && !o.structures.length ? link.organPage(a.organ) : link.organ(a.organ); }
   if (a.region) return link.region(a.region);
   if (a.system) return link.system(a.system);
   if (a.slice) return link.slice(a.slice);

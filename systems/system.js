@@ -1,5 +1,5 @@
 // systems/system.js — one body system: overview, functions, clinical notes, organs, every structure, 3D model, related topics.
-import { renderHeader, renderFooter, loadData, loadClinical, link, esc, fmt, pageId, paths, PRERENDERED, SITE, breadcrumbHtml, facadeHtml, canonical } from '../site/site.js';
+import { renderHeader, renderFooter, loadData, loadClinical, link, esc, fmt, pageId, paths, PRERENDERED, SITE, breadcrumbHtml, facadeHtml, canonical, structuresLabel } from '../site/site.js';
 import { relatedForAnatomy, relatedCountForAnatomy, editorialHtml } from '../site/entity.js';
 import { applyMeta, seoTitle, metaDescription, webPageNode } from '../site/seo.js';
 renderHeader('systems'); renderFooter();
@@ -38,7 +38,7 @@ if (!PRERENDERED) {
         <p>${esc(c.overview || '')}</p>
         ${c.functions ? `<h2>Functions</h2><ul class="plain">${c.functions.map(f => `<li>${esc(f)}</li>`).join('')}</ul>` : ''}
         ${c.clinical ? `<h2>Clinical notes</h2><ul class="plain">${c.clinical.map(f => `<li>${esc(f)}</li>`).join('')}</ul>` : ''}
-        ${organs.length ? `<h2>Organs &amp; groups in this system</h2><div class="grid">${organs.map(o => `<a class="card" href="${link.organPage(o.id)}"><h3>${esc(o.name)}</h3><p>${esc(o.summary)}</p><div class="meta">${o.structures.length} structures${o.article ? ' · full anatomy article' : ''}</div></a>`).join('')}</div>` : ''}
+        ${organs.length ? `<h2>Organs &amp; groups in this system</h2><div class="grid">${organs.map(o => `<a class="card" href="${link.organPage(o.id)}"><h3>${esc(o.name)}</h3><p>${esc(o.summary)}</p><div class="meta">${structuresLabel(o)}${o.article ? ' · full anatomy article' : ''}</div></a>`).join('')}</div>` : ''}
         <h2>All structures <span class="badge">${structs.length}</span></h2>
         <p class="muted small">${fmt(sys.count)} modelled pieces. Click a structure to open it in the atlas.</p>
         <ul class="list">${structs.map(s => `<li><a href="${link.structure(s.id)}">${esc(s.name)}</a>${s.pieces.length > 1 ? ` <span class="muted small">· ${s.pieces.length} pieces</span>` : ''}</li>`).join('')}</ul>

@@ -8,10 +8,10 @@
  * Under a prerendered page (body[data-prerendered]) neither function redraws the content: the hub
  * only binds its filters and the detail page only binds the 3D facade and the header.
  */
-import { renderHeader, renderFooter, loadData, loadClinical, loadType, loadInteractions, link, entityLink, typeLink, entityPath, TYPES, TYPE_ORDER, esc, param, pageId, paths, url, ROOT, PRERENDERED, SITE, SEVERITY, breadcrumbHtml, facadeHtml, dateText, canonical } from './site.js';
+import { renderHeader, renderFooter, loadData, loadClinical, loadType, loadInteractions, link, entityLink, typeLink, entityPath, organHash, TYPES, TYPE_ORDER, esc, param, pageId, paths, url, ROOT, PRERENDERED, SITE, SEVERITY, breadcrumbHtml, facadeHtml, dateText, canonical } from './site.js';
 import { applyMeta, seoTitle, metaDescription, webPageNode } from './seo.js';
 
-const SYMPTOM_REGION = { head: 'head', chest: 'thorax', abdomen: 'abdomen', back: 'thorax', arms: 'upper-limb', legs: 'lower-limb' };
+const SYMPTOM_REGION = { head: 'head', chest: 'thorax', abdomen: 'abdomen', pelvis: 'pelvis', back: 'thorax', arms: 'upper-limb', legs: 'lower-limb' };
 const DISCLAIMER = {
   symptoms: 'This page explains what a symptom can mean so that the anatomy and the medical reasoning make sense. It cannot tell you what is causing yours: only a clinician who can examine you and order tests can do that.',
   conditions: 'Educational overview of a condition, not personal medical advice. Diagnosis and treatment decisions belong to the person\'s own clinical team.',
@@ -91,9 +91,12 @@ export function anatomyHtml(e, data, clinical) {
     ${structs.length ? `<div class="rel-group"><div class="eyebrow">Structures in the atlas</div><div class="chips">${structs.map(s => `<a class="chip" href="${link.structure(s.id)}" title="Open in the 3D explorer">${esc(s.name)}</a>`).join('')}</div></div>` : ''}
     ${region ? `<div class="rel-group"><div class="eyebrow">Region</div><div class="chips"><a class="chip" href="${link.region(region.id)}">Show the ${esc(region.name.toLowerCase())} in 3D</a></div></div>` : ''}</section>`;
 }
-export function embedHash(e) {
+/** The explorer view a page embeds: the first organ it concerns that the atlas can show (its pieces, or the modelled
+ *  structures around an organ the atlas does not contain), else its structures, else its first system. Mirrored by
+ *  tools/render-previews.mjs, which renders the preview image of every hash a page can embed. */
+export function embedHash(e, data) {
   const a = e.anatomy || {};
-  if (a.organs?.length) return 'o=' + a.organs[0];
+  for (const oid of a.organs || []) { const h = organHash((data?.content?.organs || []).find(o => o.id === oid), data?.atlas); if (h) return h; }
   if (a.structures?.length) return 's=' + a.structures.slice(0, 12).join(',');
   if (a.systems?.length) return 'sys=' + a.systems[0];
   return null;
@@ -410,7 +413,7 @@ export async function renderDetail(type) {
   const id = pageId(); const e = id ? typeData.items[id] : null;
   if (!e) { main.innerHTML = `<h1>Not found</h1><p><a href="${typeLink(type)}">All ${esc(TT.name.toLowerCase())}</a></p>`; applyMeta({ title: `Not found | ${TT.name}`, description: '', path: paths.dir(TT.dir), robots: 'noindex' }); document.body.dataset.status = '404'; return; }
   const cat = (typeData.meta.categories || []).find(c => c.id === e.category);
-  const hash = embedHash(e); const ctx = { data, clinical, ix };
+  const hash = embedHash(e, data); const ctx = { data, clinical, ix };
   const groups = relatedGroups(e, clinical);
   const primaryOrgan = e.anatomy?.organs?.[0];
   const crumbs = breadcrumbsFor(type, e, typeData, clinical);

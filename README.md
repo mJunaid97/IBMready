@@ -13,19 +13,19 @@ authoritative medical reference needs (see `SEO.md`).
 | Section | URL | What it is |
 | --- | --- | --- |
 | 3D explorer | `/explorer/` | 2,234 individually selectable pieces (1,671 named structures) in 16 systems, streamed as compressed glTF; search, organs, regions, isolate, x-ray, slicing on three planes, exploded and inventory views, pinned labels, deep links, clinical topics on every structure card, study modes, embeddable. |
-| Anatomy | `/anatomy/<organ>/` | The canonical page of each of 39 organs and skeletal groups; 12 carry full articles (heart, brain, lungs, liver, kidneys, stomach, pancreas, aorta, coronary arteries, knee, spine, large intestine): key facts, location, structure, supply, function, clinical relevance, references, a click-to-load 3D model and every topic that concerns the organ. `/anatomy/` and `/organs/` are the browse hubs. |
-| Body systems | `/systems/<system>/` | 16 system pages: overview, functions, clinical notes, organs, every structure, 3D model, related topics. |
-| Physiology | `/physiology/<topic>/` | 30 topics on how the body works, sourced to OpenStax *Anatomy & Physiology* and NIH. |
-| Symptoms | `/symptoms/<symptom>/` | 18 symptom pages: anatomy involved, common and less common causes, red flags, related conditions and tests. Educational, never diagnostic. |
-| Conditions | `/conditions/<condition>/` | 40 conditions: definition, affected anatomy, causes, risk factors, symptoms, signs, complications, diagnosis, treatment, prevention, when to seek care. |
-| Medical tests | `/tests/<test>/` | 26 tests: what they measure, why ordered, how done, reading the result, limitations. |
+| Anatomy | `/anatomy/<organ>/` | The canonical page of each of 47 organs and skeletal groups; 20 carry full articles (heart, brain, lungs, liver, kidneys, stomach, pancreas, aorta, coronary arteries, knee, spine, large intestine, uterus and cervix, ovaries and fallopian tubes, vagina, vulva and clitoris, breasts, pelvic floor, neovagina, neophallus): key facts, location, structure, supply, function, clinical relevance, references, a click-to-load 3D model and every topic that concerns the organ. The atlas is one adult male body, so the female reproductive organs, the breasts and the anatomy of gender-affirming surgery show the modelled structures around them in 3D instead of a model of their own. `/anatomy/` and `/organs/` are the browse hubs. |
+| Body systems | `/systems/<system>/` | 16 system pages: overview, functions, clinical notes, organs, every structure, 3D model, related topics. The reproductive system covers female, male and gender-affirming anatomy. |
+| Physiology | `/physiology/<topic>/` | 35 topics on how the body works, sourced to OpenStax *Anatomy & Physiology* and NIH, from the cardiac cycle to the menstrual cycle, pregnancy, menopause, sex hormones and gender-affirming hormone therapy. |
+| Symptoms | `/symptoms/<symptom>/` | 22 symptom pages: anatomy involved, common and less common causes, red flags, related conditions and tests. Educational, never diagnostic. |
+| Conditions | `/conditions/<condition>/` | 50 conditions: definition, affected anatomy, causes, risk factors, symptoms, signs, complications, diagnosis, treatment, prevention, when to seek care; includes a reproductive and sexual health category (endometriosis, PCOS, fibroids, breast, cervical and ovarian cancer, ectopic pregnancy, prolapse, incontinence, gender dysphoria). |
+| Medical tests | `/tests/<test>/` | 32 tests: what they measure, why ordered, how done, reading the result, limitations. |
 | Imaging | `/imaging/<modality>/` | 7 modalities: how they work, what they show, best for / not for, dose, preparation, common uses. |
-| Procedures | `/procedures/<procedure>/` | 14 procedures step by step: indications, before, steps, after, recovery, risks, alternatives. |
-| Medications | `/medications/<generic-name>/` | 25 medicines by generic name (brand names redirect): class, uses, mechanism, forms, side effects, cautions, monitoring. |
-| Drug classes | `/drug-classes/<class>/` | 23 classes: mechanism, biological target, body system, conditions treated, members, class effects, cautions. |
+| Procedures | `/procedures/<procedure>/` | 19 procedures step by step: indications, before, steps, after, recovery, risks, alternatives, including hysterectomy, caesarean section, vaginoplasty, phalloplasty and chest masculinisation. |
+| Medications | `/medications/<generic-name>/` | 30 medicines by generic name (brand names redirect): class, uses, mechanism, forms, side effects, cautions, monitoring. |
+| Drug classes | `/drug-classes/<class>/` | 26 classes: mechanism, biological target, body system, conditions treated, members, class effects, cautions. |
 | First aid | `/first-aid/<topic>/` | 16 topics following Resuscitation Council UK / ERC guidance, each with the anatomy behind it. |
-| Health | `/health/<topic>/` | Exercise, sleep, nutrition, weight, smoking, alcohol, hydration through the systems they act on. |
-| Medical terms | `/medical-terms/` | 149 terms in 8 categories with pronunciation, plain meaning, examples, atlas links and the pages that use them. |
+| Health | `/health/<topic>/` | Exercise, sleep, nutrition, weight, smoking, alcohol, hydration, women's health and transgender and non-binary health through the systems they act on. |
+| Medical terms | `/medical-terms/` | 156 terms in 8 categories with pronunciation, plain meaning, examples, atlas links and the pages that use them. |
 | Study | `/study/` | Identify and locate structures in 3D, flashcards, quizzes over every section, generated viva questions. |
 | Search | `/search/` | One index over 2,100 structures, organs, systems, regions, terms and topics; also the header search box on every page. |
 | About | `/about/` … `/contact/` | About, editorial policy, medical review policy, references policy, corrections policy, disclaimer, contact. |
@@ -58,7 +58,7 @@ Editable content lives in `content/` and is compiled into `data/content/` by
 
 - `content/site.json` — site identity: name, URL, editorial fields, verification codes
 - `content/systems.json` — system overviews
-- `content/organs.json` — organ groupings (match rules, aliases, URL aliases)
+- `content/organs.json` — organ groupings (match rules, aliases, URL aliases; an organ without a match rule is one the male reference body does not model and names the modelled structures around it in `nearby`)
 - `content/anatomy.json` — the written anatomy articles (title, descriptor, intro, key facts, sections, structures, references)
 - `content/regions.json` — spatial regions
 - `content/structures.json` — descriptions keyed by side-stripped structure name
@@ -86,7 +86,7 @@ gate. Outputs:
 | `data/content/clinical.json` | compact name index plus organ / system / structure / term → entity backlinks (explorer, anatomy and system pages) |
 | `data/content/aliases.json` | URL alias → canonical slug per section (the 301 table) |
 | `data/content/search-index.json` | flat search index over everything |
-| `data/content/knowledge.json` | the whole graph in one file (267 topics, 4,700 typed links, 540 references) |
+| `data/content/knowledge.json` | the whole graph in one file (303 topics, 5,688 typed links, 725 references) |
 | `data/content/interactions.json` | interaction records, class membership, products and the name index the interaction checker uses |
 | `data/content/comparisons.json` | the comparisons |
 | `site/site-meta.js` | the site identity as an ES module for the page shell |

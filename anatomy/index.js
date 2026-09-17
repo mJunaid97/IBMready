@@ -1,6 +1,6 @@
 // anatomy/index.js — the anatomy hub (/anatomy/): what is covered, the fully written organ articles first, then every
 // organ and skeletal group grouped by body system, regions and the atlas entry points.
-import { renderHeader, renderFooter, loadData, loadClinical, link, esc, paths, PRERENDERED, SITE, breadcrumbHtml, canonical, fmt } from '../site/site.js';
+import { renderHeader, renderFooter, loadData, loadClinical, link, esc, paths, PRERENDERED, SITE, breadcrumbHtml, canonical, fmt, structuresLabel } from '../site/site.js';
 import { relatedCountForAnatomy } from '../site/entity.js';
 import { applyMeta, metaDescription, webPageNode } from '../site/seo.js';
 renderHeader('anatomy'); renderFooter();
@@ -12,13 +12,13 @@ if (!PRERENDERED) {
   const description = `Explore human anatomy organ by organ: location, structure, blood supply, function and clinical relevance, each with an interactive 3D model and links to the conditions, tests and procedures that concern it.`;
   applyMeta({ title, description, path, breadcrumbs: crumbs, jsonld: [webPageNode({ path, title, description: metaDescription(description), type: 'CollectionPage', updated: content.anatomyUpdated }),
     { '@type': 'ItemList', name: `Anatomy pages on ${SITE.name}`, numberOfItems: content.organs.length, itemListElement: content.organs.map((o, i) => ({ '@type': 'ListItem', position: i + 1, name: o.name, url: canonical(paths.entity('anatomy', 'organ.html', o.id)) })) }] });
-  const card = (o) => `<a class="card" href="${link.organPage(o.id)}"><h3>${esc(o.name)}</h3><p>${esc(o.article ? o.article.intro.slice(0, 150).replace(/\s+\S*$/, '') + '…' : o.summary)}</p><div class="meta">${o.structures.length} structures · ${relatedCountForAnatomy('organs', o.id, clinical)} topics${o.article ? ' · full article' : ''}</div></a>`;
+  const card = (o) => `<a class="card" href="${link.organPage(o.id)}"><h3>${esc(o.name)}</h3><p>${esc(o.article ? o.article.intro.slice(0, 150).replace(/\s+\S*$/, '') + '…' : o.summary)}</p><div class="meta">${structuresLabel(o)} · ${relatedCountForAnatomy('organs', o.id, clinical)} topics${o.article ? ' · full article' : ''}</div></a>`;
   const bySys = new Map(); for (const o of content.organs) { if (!bySys.has(o.system)) bySys.set(o.system, []); bySys.get(o.system).push(o); }
   const az = [...content.organs].sort((a, b) => a.name.localeCompare(b.name));
   document.getElementById('main').innerHTML = `
     ${breadcrumbHtml(crumbs)}
     <div class="section-hero"><div class="eyebrow">🫀 Section · ${content.organs.length} anatomy pages · ${fmt(atlas.totals.structures)} structures in 3D</div><h1>Human anatomy</h1>
-    <p class="lead">Every organ page answers the same questions: where it is, what it is made of, what supplies it, what it does, what goes wrong and how that is investigated and treated. Each is built on the ${fmt(atlas.totals.pieces)}-piece 3D atlas, so you can open the real shapes, and each links into physiology, symptoms, conditions, tests, imaging, procedures and medications.</p></div>
+    <p class="lead">Every organ page answers the same questions: where it is, what it is made of, what supplies it, what it does, what goes wrong and how that is investigated and treated. Most are built on the ${fmt(atlas.totals.pieces)}-piece 3D atlas, so you can open the real shapes; the female reproductive organs, the breasts and the anatomy of gender-affirming surgery, which the atlas's adult male reference body does not model, show the modelled structures around them instead. Each links into physiology, symptoms, conditions, tests, imaging, procedures and medications.</p></div>
     <h2>Start here: full anatomy articles</h2>
     <div class="grid grid-3">${written.map(card).join('')}</div>
     <h2>Explore by body system</h2>

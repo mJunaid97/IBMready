@@ -13,7 +13,7 @@ derived from those links by the compiler rather than authored.
 | **Piece** (mesh) | BodyParts3D file id, e.g. `FJ3365` | same | `atlas.json → pieces[]`; geometry in `glb/<system>.glb` (node name = id) | `structure`, `bbox` (mm, glTF y-up), `tris` |
 | **Concept** | FMA id | BodyParts3D `isa_element_parts.txt` | `atlas.json → concepts[]` | `name`; pieces reference concepts through `parents` |
 | **BodySystem** | slug, e.g. `skeleton` | `content/systems.json` | `atlas.json → systems[]` (counts, colour, file) and `atlas-content.json → systems` | `overview`, `functions[]`, `clinical[]`, `related[]`, `keyStructures[]` |
-| **Organ** | slug, e.g. `liver` | `content/organs.json` (match rules) | `atlas-content.json → organs[]` with resolved `structures[]` | `system`, `region`, `summary`, `aliases[]` |
+| **Organ** | slug, e.g. `liver` | `content/organs.json` (match rules; an organ without a `match` rule has no atlas geometry and names the modelled structures around it in `nearby`) | `atlas-content.json → organs[]` with resolved `structures[]` (and `nearby[]`) | `system`, `region`, `summary`, `aliases[]` |
 | **Region** | slug, e.g. `thorax` | `content/regions.json` (mm bands) | `atlas-content.json → regions[]` with resolved `structures[]` | `summary` |
 | **StructureContent** | structure id | `content/structures.json` (keyed by side-stripped name) + templates in `tools/build-content.py` | `atlas-content.json → structures{}` | `summary`, `function`, `clinical`, `organ`, `regions[]` |
 | **MedicalTerm** | slug | `content/terms.json` | `data/content/terms.json` | `category`, `definition`, `plain`, `example`, `opposite`, `related[]`, `atlas` link |
@@ -28,20 +28,20 @@ compiler routes cross-type ids into the matching typed field) and `references`.
 
 | Entity | File | Page structure | Typed links |
 | --- | --- | --- | --- |
-| **PhysiologyTopic** (30) | `content/physiology.json` | summary, body, key facts | `conditions`, `tests`, `imaging`, `procedures`, `medications`, `symptoms` |
-| **Symptom** (18) | `content/symptoms.json` | what, anatomy, common / less common causes, associated, urgent, investigations | `associated` (symptoms), `conditions`, `tests`, `imaging`, `procedures`, `medications` |
-| **Condition** (40) | `content/conditions.json` | definition, overview, anatomy, causes, risk factors, symptoms, signs, complications, diagnosis, treatment, prevention, seek care | `symptoms`, `tests`, `imaging`, `procedures`, `medications`, `physiology` |
-| **MedicalTest** (31) | `content/tests.json` | quick summary, why ordered, components → biomarkers, how done, preparation, results (range policy, guideline thresholds), factors, cannot tell, limitations | `conditions`, `symptoms`, `physiology`, `biomarkers` (implied by components) |
-| **Biomarker** (30) | `content/biomarkers.json` | what it is, units, why higher / lower, factors, range note | `tests`, `conditions`, `physiology`, `medications` |
-| **BiologicalTarget** (22) | `content/targets.json` | kind, what it does, role, location | `medications`, `drugClasses`, `physiology`, `conditions`, `biomarkers` |
+| **PhysiologyTopic** (35) | `content/physiology.json` | summary, body, key facts | `conditions`, `tests`, `imaging`, `procedures`, `medications`, `symptoms`, `biomarkers`, `targets`, `health` |
+| **Symptom** (22) | `content/symptoms.json` | what, anatomy, common / less common causes, associated, urgent, investigations | `associated` (symptoms), `conditions`, `tests`, `imaging`, `procedures`, `medications` |
+| **Condition** (50) | `content/conditions.json` | definition, overview, anatomy, causes, risk factors, symptoms, signs, complications, diagnosis, treatment, prevention, seek care | `symptoms`, `tests`, `imaging`, `procedures`, `medications`, `physiology` |
+| **MedicalTest** (32) | `content/tests.json` | quick summary, why ordered, components → biomarkers, how done, preparation, results (range policy, guideline thresholds), factors, cannot tell, limitations | `conditions`, `symptoms`, `physiology`, `biomarkers` (implied by components) |
+| **Biomarker** (33) | `content/biomarkers.json` | what it is, units, why higher / lower, factors, range note | `tests`, `conditions`, `physiology`, `medications` |
+| **BiologicalTarget** (24) | `content/targets.json` | kind, what it does, role, location | `medications`, `drugClasses`, `physiology`, `conditions`, `biomarkers` |
 | **ImagingStudy** (7) | `content/imaging.json` | how it works, shows, best for / not for, dose, preparation, common uses | `conditions`, `symptoms`, `physiology` |
-| **Procedure** (14) | `content/procedures.json` | what, why, before, steps, after, recovery, risks, alternatives | `conditions`, `symptoms`, `tests`, `imaging`, `medications`, `physiology` |
-| **Medication** (28) | `content/medications.json` | class, brands and prescription status by region, uses by status and jurisdiction, mechanism (plain and technical), pathway, targets, side effects, warnings, contraindications, interactions, monitoring, special populations, condition cautions, lab effects, pharmacokinetics | `conditions`, `symptoms`, `tests`, `biomarkers`, `targets`, `procedures`, `physiology`, `drugClass` |
-| **DrugClass** (24) | `content/drug-classes.json` | mechanism, targets, members, class effects, class warnings, class interactions, duplication rule | `medications`, `targets`, `conditions`, `physiology` |
+| **Procedure** (19) | `content/procedures.json` | what, why, before, steps, after, recovery, risks, alternatives | `conditions`, `symptoms`, `tests`, `imaging`, `medications`, `physiology` |
+| **Medication** (30) | `content/medications.json` | class, brands and prescription status by region, uses by status and jurisdiction, mechanism (plain and technical), pathway, targets, side effects, warnings, contraindications, interactions, monitoring, special populations, condition cautions, lab effects, pharmacokinetics | `conditions`, `symptoms`, `tests`, `biomarkers`, `targets`, `procedures`, `physiology`, `drugClass` |
+| **DrugClass** (26) | `content/drug-classes.json` | mechanism, targets, members, class effects, class warnings, class interactions, duplication rule | `medications`, `targets`, `conditions`, `physiology` |
 | **DrugInteraction** (69), **MedicationProduct** (14), **Comparison** (7) | `content/interactions.json`, `products.json`, `comparisons.json` | see `CLINICAL.md` | medication ↔ medication / class / named substance; product → ingredients; comparison → two entities |
 | **FirstAidTopic** (16) | `content/first-aid.json` | recognise, steps, children, don't, call for, why (anatomy) | `conditions`, `symptoms`, `physiology`, `medications`, `tests` |
-| **HealthTopic** (7) | `content/health.json` | body, effects per system, guidance | `conditions`, `symptoms`, `physiology`, `tests` |
-| **MedicalTerm** (149) | `content/terms.json` | definition, plain, example, pronunciation, opposite, related, atlas link | `atlas` → structure / organ / region / system / slice |
+| **HealthTopic** (9) | `content/health.json` | body, effects per system, guidance | `conditions`, `symptoms`, `physiology`, `tests` |
+| **MedicalTerm** (156) | `content/terms.json` | definition, plain, example, pronunciation, opposite, related, atlas link | `atlas` → structure / organ / region / system / slice |
 
 ### Relationships
 
@@ -96,6 +96,13 @@ each clinical page opens with live 3D of the anatomy it discusses.
 6. **Educate, never diagnose**: symptom pages explain reasoning and red flags, medication pages
    explain mechanism and cautions, first-aid pages follow published guidelines and say when to
    call for help; every such page carries the disclaimer for its type.
+7. **One reference body, every body's anatomy**: BodyParts3D is an adult male, so the female
+   reproductive organs, the breasts and the anatomy of gender-affirming surgery have no pieces. They are
+   still first-class organs (pages, links, backlinks, search, terms) but must carry a full article, and
+   their pages, and every clinical page that concerns them, embed the modelled structures around them
+   (`organHash` in `site/site.js`, mirrored by `tools/render-previews.mjs`); the explorer lists only
+   organs it can select. Sex-specific structures the atlas does have (urethra, prostate, pubic hair)
+   are described for every body, including after gender-affirming surgery.
 
 ### Clinical layer
 
@@ -184,4 +191,6 @@ Summarised here; `SEO.md` has the full map against the specification.
 - **Sitemaps**: `sitemap.xml` index → `sitemaps/<section>.xml`, canonical indexable URLs only.
 - **Previews**: `site/previews/<view>.jpg` rendered by `tools/render-previews.mjs` from the
   explorer for every organ, system and structure view (`site/preview-name.js` names them); used
-  by the facade and as `og:image`.
+  by the facade and as `og:image`. An organ the atlas does not model uses the view of the modelled
+  structures around it, so its page and every page that concerns it still carry a real preview and
+  a working embed.

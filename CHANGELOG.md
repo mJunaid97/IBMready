@@ -1,5 +1,40 @@
 # Changelog
 
+## v1.3.0 — 2026-09-17
+
+Women's and trans anatomy: the reproductive layer is no longer male-only. The 3D atlas is still one adult
+male body (BodyParts3D), so the compiler now accepts organs without atlas geometry when they carry a full
+article and name the modelled structures around them; their pages show that surrounding anatomy in 3D.
+
+- Anatomy: eight new organ pages with full articles. Women's: uterus and cervix, ovaries and fallopian tubes,
+  vagina, vulva and clitoris, breasts, pelvic floor (modelled: levator ani, coccygeus, anal sphincter).
+  Gender-affirming surgery: neovagina (vaginoplasty) and neophallus (phalloplasty, metoidioplasty). The
+  reproductive system overview covers female, male and gender-affirming anatomy; shared structure notes
+  (urethra, prostate, pubic hair) are written for every body
+- Physiology: menstrual cycle, pregnancy and birth, menopause, sex hormones and puberty, gender-affirming
+  hormone therapy
+- Conditions (new "Reproductive & sexual health" category): endometriosis, polycystic ovary syndrome,
+  fibroids, breast cancer, cervical cancer, ovarian cancer, ectopic pregnancy, pelvic organ prolapse,
+  urinary incontinence, gender dysphoria (gender incongruence)
+- Symptoms (new "Pelvis & genitals" region): pelvic pain, heavy periods, breast lump, unusual vaginal
+  bleeding
+- Tests, biomarkers, targets: cervical screening; oestradiol, testosterone and hCG; oestrogen and androgen
+  receptors
+- Procedures: hysterectomy, caesarean section, vaginoplasty, phalloplasty and metoidioplasty, chest
+  masculinisation (top surgery)
+- Medications and classes: estradiol (oestrogens), testosterone (androgens)
+- Health: transgender and non-binary health (screening and care by the anatomy a person has), women's
+  health through the life course
+- Medical terms: neo-, hyster-/metr-, oophor-/salping-, mast-/mamm-, colp-/vagin-, orchi-, gonad
+- Existing pages cross-linked: mammography, ultrasound, pregnancy and hormone tests, urinary tract infection,
+  osteoporosis, hormone physiology, abdominal and back pain, haemoglobin, catheterisation, lifestyle topics
+- Compiler: `match`-less organs with `nearby` structures (validated, at most 12), a rule that such organs need
+  an article, new condition category and symptom region, reference hosts for WPATH, the Endocrine Society,
+  UCSF, RCOG, NCI and women's-health charities
+- Site: anatomy pages, hubs, system pages, the explorer navigator and search, term links, embedded views and
+  preview rendering handle organs without geometry (the surrounding structures are shown instead of a
+  missing model); the home page no longer describes the site as built on a male body alone
+
 ## v1.2.0 — 2026-09-12
 
 Clinical content layer: the tests, medications and interactions of the Clinical Content Depth

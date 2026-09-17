@@ -119,7 +119,8 @@ compare.
 ## 9. Performance
 
 Article pages no longer load the 13 MB model: the 3D view is a static preview image (`site/previews/`, rendered
-by `tools/render-previews.mjs`, also used as `og:image`) with a *Load the 3D model* button that swaps in the
+by `tools/render-previews.mjs`, also used as `og:image`; an organ the male reference body does not model, such as the
+uterus or the breasts, shows the modelled structures around it) with a *Load the 3D model* button that swaps in the
 explorer iframe; without scripts the button is a link to the explorer. Pages ship as static HTML with no
 client-side rendering on the critical path, one small stylesheet and no web fonts; images carry width and
 height; the model, JSON and vendor code have long cache lifetimes (`.htaccess`).
