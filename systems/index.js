@@ -11,7 +11,7 @@ if (!PRERENDERED) {
   document.getElementById('main').innerHTML = `
     ${breadcrumbHtml(crumbs)}
     <div class="section-hero"><div class="eyebrow">Anatomy · ${atlas.systems.length} systems · ${fmt(atlas.totals.pieces)} pieces</div><h1>Body systems</h1>
-    <p class="lead">The atlas is organised into sixteen systems, the way anatomy is taught: the skeleton and its joints, the muscles, the heart and vessels, the nervous system and senses, and the organ systems of the trunk. Each page gives an overview, functions, clinical notes, the organs it contains and every modelled structure, with the system ready to open in 3D.</p></div>
+    <p class="lead">The atlas is organised into eighteen systems, the way anatomy is taught: the skeleton and its joints, the muscles, the heart and vessels, the nervous system and senses, the organ systems of the trunk, the male and the female reproductive organs, and the anatomy of gender-affirming surgery. Each page gives an overview, functions, clinical notes, the organs it contains and every modelled structure, with the system ready to open in 3D.</p></div>
     <div class="grid grid-3">${atlas.systems.map(s => { const c = content.systems[s.id] || {}; const organs = content.organs.filter(o => o.system === s.id).length;
       return `<a class="card" href="${link.systemPage(s.id)}"><h3><span class="dot" style="background:${s.color}"></span>${esc(s.name)}</h3><p>${esc(c.summary || s.summary)}</p><div class="meta">${fmt(s.count)} pieces · ${fmt(s.triangles)} triangles${organs ? ` · ${organs} organ${organs > 1 ? 's' : ''}` : ''}</div></a>`; }).join('')}</div>
     <h2>Keep exploring</h2>

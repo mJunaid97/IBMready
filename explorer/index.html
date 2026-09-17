@@ -5,11 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-0ZYYoMVH8skVI3zJ7AfEL0FDpRE4dS3zbGhdQKihick=' 'wasm-unsafe-eval'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self'; connect-src 'self'; frame-src 'self'; worker-src 'self' blob:; object-src 'none'; base-uri 'self'; form-action 'self'">
   <meta name="referrer" content="strict-origin-when-cross-origin">
-  <title>3D Anatomy Explorer: 2,234 Structures in 16 Systems | Anatomy Nexus</title>
-  <meta name="description" content="Explore the human body in 3D: 2,234 individually selectable structures from the open BodyParts3D dataset, organised into 16 systems, with search, cross-sections, exploded views and study tools.">
+  <title>3D Anatomy Explorer: 2,295 Structures in 18 Systems | Anatomy Nexus</title>
+  <meta name="description" content="Explore the human body in 3D: 2,295 individually selectable structures from the open BodyParts3D and NIH Human Reference Atlas datasets, male and female, organised into 18 systems, with search, cross-sections, exploded views and study tools.">
   <link rel="canonical" href="./">
   <meta name="robots" content="index,follow">
-  <meta property="og:type" content="website"><meta property="og:site_name" content="Anatomy Nexus"><meta property="og:title" content="3D Anatomy Explorer | Anatomy Nexus"><meta property="og:description" content="Orbit, click and search 2,234 anatomical structures in 16 systems. Isolate organs, slice the body, explode it into parts."><meta property="og:url" content="./"><meta property="og:image" content="../site/og-cover.png"><meta name="twitter:card" content="summary_large_image">
+  <meta property="og:type" content="website"><meta property="og:site_name" content="Anatomy Nexus"><meta property="og:title" content="3D Anatomy Explorer | Anatomy Nexus"><meta property="og:description" content="Orbit, click and search 2,295 anatomical structures in 18 systems, male and female. Isolate organs, slice the body, explode it into parts."><meta property="og:url" content="./"><meta property="og:image" content="../site/og-cover.png"><meta name="twitter:card" content="summary_large_image">
   <meta name="theme-color" content="#0B2D45">
   <link rel="icon" href="../favicon.ico" sizes="32x32">
   <link rel="icon" href="../favicon.svg" type="image/svg+xml">
@@ -88,6 +88,7 @@
       <button data-preset="organs" class="chip">Organs</button>
       <button data-preset="vessels" class="chip">Vessels</button>
       <button data-preset="nerves" class="chip">Nerves</button>
+      <button data-preset="female" class="chip" title="The female body: every system with the female reproductive organs and breasts instead of the male organs">Female body</button>
     </div>
     <ul class="systems" id="systems" role="list"></ul>
     <div class="panel-foot">

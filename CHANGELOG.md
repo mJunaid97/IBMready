@@ -1,5 +1,35 @@
 # Changelog
 
+## v1.8.0 — 2026-09-17
+
+The female body and the anatomy of gender-affirming surgery in 3D. The male BodyParts3D atlas is untouched;
+two layers are appended after it and are hidden by default.
+
+- Female reproductive layer (`reproductive-female`, 49 pieces): uterus (body, fundus, isthmus, cervix, internal
+  and external os), vagina, uterine tubes (isthmus, ampulla, infundibulum, fimbriae), ovaries, the broad, round,
+  cardinal, uterosacral, suspensory and ovarian ligaments, mesosalpinx, mesovarium and vesico-uterine pouch,
+  and both breasts (body, lobes of the mammary gland, lactiferous ducts and sinuses, suspensory ligaments,
+  areola, areolar tubercles, nipple). Meshes from the NIH Human Reference Atlas united female model v1.5
+  (Visible Human Female, CC BY 4.0), fitted into the reference pelvis on the pubic symphysis, sacral
+  promontory and hip bones and onto the reference chest wall; attribution in `data/ATTRIBUTION.md`, the
+  footer and the about page
+- Gender-affirming surgery layer (`gender-affirming`, 12 pieces, schematic): neovaginal canal, neoclitoris,
+  labia majora and minora; neophallus shaft and glans, neourethra, neoscrotum, testicular implants. Drawn
+  procedurally to typical dimensions, labelled as schematic on every structure card
+- New tool `tools/build-female-atlas.mjs` and mapping `tools/manifest/female-source.json`: decodes the
+  source, fits, orients, simplifies and packs the layers with the male settings and merges them into
+  `atlas.json` (`base` keeps the male counts so a rebuild replaces the layers); `build-atlas.mjs` honours a
+  `winding: keep` flag for open patches
+- Explorer: the two layers load after the male systems and start hidden; switching a layer on hides the male
+  reproductive organs (reversible from the list); a *Female body* preset shows the whole body with the female
+  organs; the systems list notes which layers are hidden by default and which are schematic; concept groups
+  can come from UBERON, the HRA or this project as well as the FMA
+- Content: uterus, ovaries and tubes, vagina, breasts, neovagina and neophallus are now modelled organs (their
+  pages open the model instead of the surrounding structures); new organ group *Ligaments of the uterus and
+  ovary*; new *Female reproductive* and *Gender-affirming surgery* system pages; 38 structure descriptions;
+  the vulva stays a written page and now names the vagina among its surrounding structures
+- Counts: 2,295 pieces, 1,732 structures, 18 systems
+
 ## v1.7.0 — 2026-09-17
 
 Women's and trans anatomy: the reproductive layer is no longer male-only. Built on v1.6.0 (the SEO

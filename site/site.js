@@ -276,7 +276,7 @@ export function renderFooter() {
     </div>
     <div class="footer-bottom">
       <p>© ${esc(year)} ${esc(BRAND)} · <span class="site-version" title="${esc(BUILD ? 'build ' + BUILD : 'development copy')}">v${esc(VERSION)}${BUILD ? ' · ' + esc(BUILD.slice(0, 7)) : ''}</span></p>
-      <p>3D anatomy: <a href="https://dbarchive.biosciencedbc.jp/en/bodyparts3d/" target="_blank" rel="noopener noreferrer">BodyParts3D</a>, © The Database Center for Life Science, CC BY 4.0. Structure names follow the Foundational Model of Anatomy. <a href="${url('data/ATTRIBUTION.md')}">Attribution &amp; licences</a></p>
+      <p>3D anatomy: <a href="https://dbarchive.biosciencedbc.jp/en/bodyparts3d/" target="_blank" rel="noopener noreferrer">BodyParts3D</a>, © The Database Center for Life Science, CC BY 4.0; female body from the <a href="https://humanatlas.io/" target="_blank" rel="noopener noreferrer">NIH Human Reference Atlas</a> (Visible Human Female), CC BY 4.0. Structure names follow the Foundational Model of Anatomy and Terminologia Anatomica. <a href="${url('data/ATTRIBUTION.md')}">Attribution &amp; licences</a></p>
     </div>
   </div></footer>`);
 }

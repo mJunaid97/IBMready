@@ -11,6 +11,8 @@ const PRESETS = {
   organs: ['heart', 'respiratory', 'digestive', 'urinary', 'reproductive', 'endocrine', 'lymphatic', 'sensory', 'nervous'],
   vessels: ['heart', 'arteries', 'veins'],
   nerves: ['nervous', 'sensory', 'skeleton'],
+  // the female body: every default system except the male reproductive organs, plus the female layer
+  female: ['skeleton', 'joints', 'teeth', 'muscles', 'heart', 'arteries', 'veins', 'nervous', 'sensory', 'respiratory', 'digestive', 'urinary', 'reproductive-female', 'endocrine', 'lymphatic'],
 };
 
 const $ = (id) => document.getElementById(id);
@@ -96,7 +98,7 @@ export class AtlasUI {
     const ul = $('systems'); ul.innerHTML = '';
     for (const s of this.atlas.systems) {
       const li = document.createElement('li'); li.dataset.id = s.id; li.className = 'is-loading';
-      li.innerHTML = `<span class="sys-dot" style="background:${s.color}"></span><span class="sys-name">${esc(s.name)}${s.id === 'skin' ? '<small>translucent overlay</small>' : ''}</span><span class="sys-count">${fmt(s.count)}</span><button class="switch" role="switch" aria-checked="true" aria-label="Toggle ${esc(s.name)}"></button>`;
+      li.innerHTML = `<span class="sys-dot" style="background:${s.color}"></span><span class="sys-name">${esc(s.name)}${s.id === 'skin' ? '<small>translucent overlay</small>' : s.note ? `<small>${esc(s.note)}</small>` : ''}</span><span class="sys-count">${fmt(s.count)}</span><button class="switch" role="switch" aria-checked="true" aria-label="Toggle ${esc(s.name)}"></button>`;
       li.querySelector('.switch').addEventListener('click', (e) => { e.stopPropagation(); this.toggleSystem(s.id); });
       li.addEventListener('click', () => this.soloSystem(s.id));
       li.title = `${s.summary}\nClick: show only this system · Switch: toggle`;
@@ -130,11 +132,18 @@ export class AtlasUI {
     $('btn-collapse-left').addEventListener('click', () => { $('panel-systems').hidden = true; $('tab-systems').hidden = false; });
     $('tab-systems').addEventListener('click', () => { $('panel-systems').hidden = false; $('tab-systems').hidden = true; });
   }
-  toggleSystem(id) { const s = this.v.sysIndex.get(id); this.v.setSystemVisible(id, !s.visible); this._setPresetActive(null); }
+  toggleSystem(id) { const s = this.v.sysIndex.get(id); if (s.visible) this.v.setSystemVisible(id, false); else this._switchOn(id); this._setPresetActive(null); }
+  /** Show a system. A layer that stands in for other systems (the female body for the male reproductive organs) hides
+   *  them as it comes on, so the two bodies are not drawn through each other; the user can switch them back on from the list. */
+  _switchOn(id) {
+    const s = this.v.sysIndex.get(id); this.v.setSystemVisible(id, true);
+    const conflicts = (s.def.conflicts || []).filter(c => this.v.sysIndex.has(c) && this.v.sysIndex.get(c).visible);
+    if (conflicts.length) { for (const c of conflicts) this.v.setSystemVisible(c, false); this.toast(`${conflicts.map(c => this.sysById.get(c).name).join(', ')} hidden while ${s.def.name} is shown · switch it back on in the list`); }
+  }
   soloSystem(id) { this.v.setSystemsVisible([id]); this._setPresetActive(null); }
   applyPreset(name) {
     const ids = PRESETS[name];
-    this.v.setSystemsVisible(ids || this.atlas.systems.map(s => s.id).filter(id => id !== 'skin'));
+    this.v.setSystemsVisible(ids || this.atlas.systems.filter(s => s.id !== 'skin' && !s.hidden).map(s => s.id));
     this._setPresetActive(name);
   }
   _setPresetActive(name) { for (const b of $('presets').querySelectorAll('button')) b.classList.toggle('is-active', b.dataset.preset === name); }
@@ -204,7 +213,7 @@ export class AtlasUI {
   // ------------------------------------------------------- selection API
   _ensureVisible(pieces) {
     const systems = new Set(pieces.map(i => this.atlas.pieces[i].system));
-    for (const s of systems) if (!this.v.sysIndex.get(s).visible) { this.v.setSystemVisible(s, true); this._setPresetActive(null); }
+    for (const s of systems) if (!this.v.sysIndex.get(s).visible) { this._switchOn(s); this._setPresetActive(null); }
     if (pieces.some(i => this.v.hidden[i])) this.v.hidePieces(pieces, false);
     if (this.v.isolated && pieces.some(i => !this.v.isolated.has(i))) { this.v.isolate(null); this.activeRegion = null; for (const li of $('regions').children) li.classList.remove('is-active'); $('region-active').textContent = 'Whole body'; }
   }
@@ -219,7 +228,7 @@ export class AtlasUI {
     const pieces = this.conceptPieces.get(ci) || []; if (!pieces.length) return;
     this._ensureVisible(pieces);
     const c = this.atlas.concepts[ci];
-    this.selectionLabel = { kind: 'concept', id: c.id, name: cap(c.name), summary: `All ${pieces.length} modelled pieces that the Foundational Model of Anatomy classes under “${c.name}”.` };
+    this.selectionLabel = { kind: 'concept', id: c.id, name: cap(c.name), summary: `All ${pieces.length} modelled pieces grouped under “${c.name}” in the atlas hierarchy.` };
     this.v.select(pieces);
     if (focus) this.v.focus(pieces);
   }
@@ -598,7 +607,7 @@ export class AtlasUI {
     else if (si >= 0) p.set('s', this.structure(si).id);
     if (this.activeRegion) p.set('r', this.activeRegion);
     const vis = this.atlas.systems.filter(s => this.v.sysIndex.get(s.id).visible).map(s => s.id);
-    const defaultVis = this.atlas.systems.filter(s => s.id !== 'skin').map(s => s.id);
+    const defaultVis = this.atlas.systems.filter(s => s.id !== 'skin' && !s.hidden).map(s => s.id);
     if (vis.join(',') !== defaultVis.join(',')) p.set('sys', vis.join(','));
     if (this.v.xray && !this.v.xrayAuto) p.set('x', '1');
     if (this.v.explodeT > 0) p.set('e', this.v.explodeT.toFixed(2));
@@ -615,6 +624,8 @@ export class AtlasUI {
     const p = new URLSearchParams(location.hash.slice(1));
     const q = new URLSearchParams(location.search);
     if (![...p.keys()].length && ![...q.keys()].length) return;
+    // A new deep link that names no selection (a system, a region, a slice) replaces the old selection instead of keeping it.
+    if (this._ready && this.v.selected.size && !p.get('s') && !p.get('c') && !p.get('o')) { this.selectionLabel = null; this.v.select([]); }
     if (p.get('sys')) { const ids = p.get('sys').split(',').filter(id => this.sysById.has(id)); if (ids.length) { this.v.setSystemsVisible(ids); this._setPresetActive(null); if (!p.get('s') && !p.get('c') && !p.get('o') && !p.get('r')) this.v.setView('frontLeft', false); } }
     if (p.get('x') === '1') this.setXray(true);
     if (p.get('e')) { const e = parseFloat(p.get('e')); if (Number.isFinite(e)) this.v.setExplode(Math.min(1, Math.max(0, e))); }

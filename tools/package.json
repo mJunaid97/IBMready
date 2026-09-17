@@ -8,6 +8,9 @@
     "build:atlas": "node build-atlas.mjs"
   },
   "dependencies": {
+    "@gltf-transform/core": "^4.5.0",
+    "@gltf-transform/extensions": "^4.5.0",
+    "draco3dgltf": "^1.5.7",
     "gltfpack": "^1.2.0",
     "three": "0.186.0"
   },

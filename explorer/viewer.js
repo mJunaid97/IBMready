@@ -16,11 +16,11 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 import { MeshoptDecoder } from 'three/addons/libs/meshopt_decoder.module.js';
 
-const LOAD_ORDER = ['skeleton', 'muscles', 'heart', 'arteries', 'veins', 'nervous', 'respiratory', 'digestive', 'teeth', 'sensory', 'joints', 'urinary', 'reproductive', 'endocrine', 'lymphatic', 'skin'];
+const LOAD_ORDER = ['skeleton', 'muscles', 'heart', 'arteries', 'veins', 'nervous', 'respiratory', 'digestive', 'teeth', 'sensory', 'joints', 'urinary', 'reproductive', 'endocrine', 'lymphatic', 'skin', 'reproductive-female', 'gender-affirming'];
 const GHOST_ALPHA = 0.16;
 const SELECTED_ALPHA = 2.0;            // alpha > 1.5 marks a selected piece for the see-through highlight pass
 const SYSTEM_ALPHA = { skin: 0.42 };    // translucent overlays
-const HIDDEN_BY_DEFAULT = ['skin'];
+const HIDDEN_BY_DEFAULT = ['skin'];    // plus every system whose atlas definition says `hidden` (the female body and gender-affirming layers)
 const VIEW_DIRS = {
   front: [0, 0, 1], back: [0, 0, -1], left: [1, 0, 0], right: [-1, 0, 0], top: [0, 1, 0.0001], bottom: [0, -1, 0.0001],
   frontLeft: [0.7, 0.25, 0.7],
@@ -65,7 +65,7 @@ export class AtlasViewer extends EventTarget {
     this.slice = { axis: null, t: 0.5, flip: false };
 
     // --- systems ---------------------------------------------------------
-    this.systems = atlas.systems.map((def, k) => ({ def, k, mesh: null, start: -1, count: 0, visible: !HIDDEN_BY_DEFAULT.includes(def.id), loaded: false, loading: false, bytes: def.bytes || 0, alpha: SYSTEM_ALPHA[def.id] ?? 1 }));
+    this.systems = atlas.systems.map((def, k) => ({ def, k, mesh: null, start: -1, count: 0, visible: !(HIDDEN_BY_DEFAULT.includes(def.id) || def.hidden), loaded: false, loading: false, bytes: def.bytes || 0, alpha: SYSTEM_ALPHA[def.id] ?? 1 }));
     this.sysIndex = new Map(this.systems.map(s => [s.def.id, s]));
     let cursor = 0;
     for (const s of this.systems) {

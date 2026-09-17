@@ -13,7 +13,7 @@ if (!PRERENDERED) {
   const organs = content.organs.filter(o => o.system === id);
   const key = (c.keyStructures || []).map(n => { const s = structs.find(x => x.name === n); return s ? `<a class="chip" href="${link.structure(s.id)}">${esc(n)}</a>` : ''; }).join('');
   const crumbs = [{ name: 'Home', href: link.home() }, { name: 'Anatomy', href: link.page('anatomy') }, { name: 'Body systems', href: link.page('systems') }, { name: sys.name }];
-  const title = seoTitle(`${sys.name} system`.replace(/ system system$/i, ' system'), 'Structures, Functions & Clinical Notes');
+  const title = seoTitle(sys.title || `${sys.name} system`.replace(/ system system$/i, ' system'), 'Structures, Functions & Clinical Notes');   // a layer may carry its own page title ("Anatomy after gender-affirming surgery")
   const description = `${c.summary || sys.summary} ${structs.length} structures in 3D, with functions, clinical notes and related conditions, tests and procedures.`;
   const topics = clinical.systems?.[id] || {};
   const node = { '@type': 'AnatomicalSystem', '@id': canonical(path) + '#entity', name: sys.name, url: canonical(path), description: metaDescription(c.overview || sys.summary, 300),

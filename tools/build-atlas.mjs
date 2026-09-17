@@ -287,7 +287,8 @@ async function buildSystem(system, pieces, opts, log) {
     if (!fs.existsSync(file)) { log(`  ! missing ${piece.file} (${piece.id})`); continue; }
     const raw = file.toLowerCase().endsWith('.stl') ? parseSTL(file) : parseOBJ(file);
     const welded = weld(raw);
-    const flipped = signedVolume(welded.positions, welded.indices) < 0;
+    // A piece marked winding:'keep' (an open patch whose orientation the manifest builder already settled) is left alone.
+    const flipped = piece.winding !== 'keep' && signedVolume(welded.positions, welded.indices) < 0;
     if (flipped) { flipWinding(welded.indices); flippedCount++; }
     const s = simplifyPiece(welded.positions, welded.indices, opts);
     const c = compact(s.positions, s.indices);

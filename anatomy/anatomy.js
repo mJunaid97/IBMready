@@ -1,8 +1,8 @@
 // anatomy/anatomy.js — the canonical anatomy page of an organ (/anatomy/<organ>/): the written article when there is
 // one (key facts, sections, references), the modelled structures, a click-to-load 3D model and every clinical topic
-// that concerns the organ. Organs without an article are published noindex until one is written. An organ the atlas
-// does not model (BodyParts3D is one adult male body: the female reproductive organs, the breasts and surgically
-// constructed anatomy have no pieces) shows the modelled structures around it in 3D instead.
+// that concerns the organ. Organs without an article are published noindex until one is written. An organ no layer of
+// the atlas models (the male BodyParts3D body, the female layer from the Human Reference Atlas or the schematic
+// gender-affirming layer; today only the vulva) shows the modelled structures around it in 3D instead.
 import { renderHeader, renderFooter, loadData, loadClinical, link, esc, pageId, paths, PRERENDERED, SITE, breadcrumbHtml, facadeHtml, canonical, entityLink, TYPE_ORDER, organHash } from '../site/site.js';
 import { relatedForAnatomy, relatedCountForAnatomy, referencesHtml, editorialHtml } from '../site/entity.js';
 import { applyMeta, seoTitle, metaDescription, webPageNode } from '../site/seo.js';
@@ -54,7 +54,7 @@ if (!PRERENDERED) {
         <p class="muted small">The modelled pieces that make up the ${esc(o.name.toLowerCase())} in the 3D atlas. Each opens in the explorer.</p>
         <ul class="list">${structs.map(s => `<li><a href="${link.structure(s.id)}">${esc(s.name)}</a>${s.pieces.length > 1 ? ` <span class="muted small">· ${s.pieces.length} pieces</span>` : ''}</li>`).join('')}</ul>`
         : `<h2>In the 3D atlas</h2>
-        <div class="callout info"><b>Not modelled yet.</b> The 3D atlas is built from BodyParts3D, a single adult male reference body, which does not include the ${esc(o.name.toLowerCase())}; this page is the written anatomy.${nearby.length ? ' The structures around it are modelled, and each opens in the explorer:' : ''}</div>
+        <div class="callout info"><b>Not modelled yet.</b> Neither the BodyParts3D male body nor the Human Reference Atlas female layer includes the ${esc(o.name.toLowerCase())}; this page is the written anatomy.${nearby.length ? ' The structures around it are modelled, and each opens in the explorer:' : ''}</div>
         ${nearby.length ? `<ul class="list">${nearby.map(s => `<li><a href="${link.structure(s.id)}">${esc(s.name)}</a>${s.pieces.length > 1 ? ` <span class="muted small">· ${s.pieces.length} pieces</span>` : ''}</li>`).join('')}</ul>` : ''}`}
         <h2>The ${esc(sys ? sys.name.toLowerCase() : '')} in brief</h2>
         <p>${esc(systemText.overview || sys?.summary || '')}</p>

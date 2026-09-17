@@ -104,13 +104,17 @@ each clinical page opens with live 3D of the anatomy it discusses.
 6. **Educate, never diagnose**: symptom pages explain reasoning and red flags, medication pages
    explain mechanism and cautions, first-aid pages follow published guidelines and say when to
    call for help; every such page carries the disclaimer for its type.
-7. **One reference body, every body's anatomy**: BodyParts3D is an adult male, so the female
-   reproductive organs, the breasts and the anatomy of gender-affirming surgery have no pieces. They are
-   still first-class organs (pages, links, backlinks, search, terms) but must carry a full article, and
-   their pages, and every clinical page that concerns them, embed the modelled structures around them
+7. **One reference frame, every body's anatomy**: BodyParts3D is an adult male and is never edited.
+   The female pelvic organs and breasts are a second layer (`reproductive-female`, from the NIH Human
+   Reference Atlas, fitted to the male pelvis and chest by `tools/build-female-atlas.mjs`) and the
+   anatomy of gender-affirming surgery a third (`gender-affirming`, schematic solids from the same tool);
+   both are appended after the male systems in `atlas.json` (`base` records the male counts so a rebuild
+   replaces the layers), hidden by default (`hidden`) and hide the male reproductive organs when switched
+   on (`conflicts`). An organ no layer models (the vulva) must carry a full article and names the
+   modelled structures around it, which its page and every clinical page that concerns it embed instead
    (`organHash` in `site/site.js`, mirrored by `tools/render-previews.mjs`); the explorer lists only
-   organs it can select. Sex-specific structures the atlas does have (urethra, prostate, pubic hair)
-   are described for every body, including after gender-affirming surgery.
+   organs it can select. Sex-specific structures (urethra, prostate, pubic hair) are described for every
+   body, including after gender-affirming surgery.
 
 ### Taxonomy and terminology layer (v1.4)
 

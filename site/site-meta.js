@@ -19,7 +19,7 @@ export const SITE = {
   },
   "editorial": {
     "author": "Anatomy Nexus editorial team",
-    "authorNote": "Written by the Anatomy Nexus editorial team from the public guidance cited on each page: NHS, WHO, NICE, Resuscitation Council UK and specialist medical societies. Anatomy follows the Foundational Model of Anatomy and the BodyParts3D dataset.",
+    "authorNote": "Written by the Anatomy Nexus editorial team from the public guidance cited on each page: NHS, WHO, NICE, Resuscitation Council UK and specialist medical societies. Anatomy follows the Foundational Model of Anatomy and the BodyParts3D dataset, with the female body from the NIH Human Reference Atlas.",
     "reviewStatus": "pending",
     "reviewNote": "Not yet independently reviewed by a clinician. Every substantive claim is sourced; corrections are welcome through the contact page."
   },
@@ -33,10 +33,10 @@ export const SITE = {
   },
   "updated": "2026-09-12",
   "counts": {
-    "pieces": 2234,
-    "structures": 1671,
-    "systems": 16,
-    "organs": 47,
+    "pieces": 2295,
+    "structures": 1732,
+    "systems": 18,
+    "organs": 48,
     "anatomyArticles": 20,
     "terms": 156,
     "topics": 329,
@@ -44,7 +44,7 @@ export const SITE = {
     "testCategories": 36,
     "testConcepts": 837,
     "classConcepts": 536,
-    "edges": 2457,
+    "edges": 2462,
     "physiology": 35,
     "symptoms": 22,
     "conditions": 50,
