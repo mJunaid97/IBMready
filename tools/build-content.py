@@ -5,6 +5,7 @@ Reads   content/systems.json, organs.json (an organ without a `match` rule has n
                 `nearby` names the modelled structures around it), anatomy.json, regions.json, structures.json, terms.json, site.json
         content/physiology.json, symptoms.json, conditions.json, tests.json, imaging.json,
                 procedures.json, medications.json, drug-classes.json, first-aid.json, health.json
+        content/vocabularies.json, test-taxonomy.json, medication-taxonomy.json, terminology-verification.json
         data/hd/atlas.json (structure names, systems, bounding boxes)
 Writes  data/content/atlas-content.json  (systems, organs with resolved pieces and anatomy articles,
                                           regions with resolved pieces, structure descriptions)
@@ -16,6 +17,9 @@ Writes  data/content/atlas-content.json  (systems, organs with resolved pieces a
         data/content/search-index.json   (one flat index over every entity for site search)
         data/content/aliases.json        (URL alias -> canonical slug, per section: the 301 table)
         data/content/types/<type>.json   (one file per entity type)
+        data/content/test-categories.json (the 36 test categories with their pages and catalogued concepts)
+        data/content/medication-taxonomy.json (therapeutic areas, classes, facets)
+        data/content/review-queues.json  (editorial review queues computed from the validation rules)
         site/site-meta.js                (site identity for the page shell, from content/site.json)
 
 Every cross-reference is validated: an unknown id, structure name or URL alias fails the build,
@@ -34,6 +38,8 @@ as vertebrae, ribs, phalanges, teeth and segmental vessels.
 """
 import json, os, re, sys, collections
 from urllib.parse import urlsplit
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import taxonomy as TX   # vocabularies, taxonomies, terminology, drug-name rules, edges, review queues (tools/taxonomy.py)
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 C = os.path.join(ROOT, "content")
@@ -243,7 +249,8 @@ def lead_of(e):
 
 def text_size(e):
     """Rough amount of visible prose (characters) in an entity, ignoring link and metadata fields."""
-    skip = set(LINK_FIELDS) | {"id", "type", "name", "aliases", "urlAliases", "anatomy", "links", "backlinks", "references", "category", "region", "seo", "updated", "members", "class"}
+    skip = set(LINK_FIELDS) | {"id", "type", "name", "aliases", "urlAliases", "anatomy", "links", "backlinks", "references", "category", "region", "seo", "updated", "members", "class",
+                               "categories", "kind", "specimens", "methods", "modality", "terminology", "provenance", "routeIds", "dosageFormIds", "productType", "abbreviations", "canonicalName", "covers", "panelOf", "monitors", "concepts", "monitoredMedications", "review", "depth", "interactionIds"}
     def walk(v):
         if isinstance(v, str): return len(v)
         if isinstance(v, list): return sum(walk(x) for x in v)
@@ -263,6 +270,25 @@ def quality_gate(e, require_clinical=False):
     if len(e.get("references") or []) < 1: reasons.append("no references")
     groups = sum(1 for v in (e.get("links") or {}).values() if v) + sum(1 for v in (e.get("backlinks") or {}).values() if v)
     if groups < 2: reasons.append("fewer than two relationship groups")
+    t = e.get("type")
+    if t == "tests":   # §89: identity, purpose, what it measures, interpretation, limitations
+        if not e.get("kind"): reasons.append("no test kind")
+        if not e.get("whyOrdered"): reasons.append("no purpose (whyOrdered)")
+        if not (e.get("measures") or e.get("components")): reasons.append("nothing under what it measures")
+        if not (e.get("interpretation") or e.get("thresholds")): reasons.append("no interpretation guidance")
+        if not (e.get("limitations") or e.get("cannotTell")): reasons.append("no limitations")
+    if t == "medications":   # §90: identity, brands, class, uses, mechanism, side effects, warnings, interactions, monitoring, regulatory metadata
+        se = e.get("sideEffects") or {}
+        if not e.get("productType"): reasons.append("no product type")
+        if "brands" not in e: reasons.append("no brand mapping")
+        if not (e.get("links") or {}).get("drugClass"): reasons.append("no drug class")
+        if not (e.get("usedFor") or e.get("indications")): reasons.append("no uses")
+        if not (e.get("howItWorks") or e.get("mechanismDetail")): reasons.append("no mechanism")
+        if not (se.get("common") or se.get("serious")): reasons.append("no side effects")
+        if not (e.get("cautions") or e.get("warnings")): reasons.append("no warnings")
+        if not (e.get("interactionIds") or e.get("cautions") or e.get("foodInteractions") or e.get("alcohol")): reasons.append("no interaction information")
+        if not (e.get("monitoring") or e.get("monitoringPlan")): reasons.append("no monitoring section")
+        if not e.get("regulatory"): reasons.append("no jurisdiction-aware regulatory status")
     return reasons
 
 def validate_clinical(key, eid, e, ids, errors):
@@ -271,6 +297,13 @@ def validate_clinical(key, eid, e, ids, errors):
     special-population note, caution or lab effect without a source fails the build)."""
     where = f"{key}/{eid}"; acc = e["updated"]
     if key == "tests":
+        TX.validate_test(e, where, errors)
+        for c in e.get("components") or []:
+            if c.get("test") and c["test"] not in ids.get("tests", set()): errors.append(f"{where}: component test '{c['test']}' unknown")
+        for p in e.get("panelOf") or []:
+            if p not in ids.get("tests", set()): errors.append(f"{where}: panelOf '{p}' is not a test id")
+        for c in e.get("monitors") or []:
+            if c not in ids.get("conditions", set()): errors.append(f"{where}: monitors '{c}' is not a condition id")
         check_enum(e.get("rangePolicy"), RANGE_POLICIES, where, errors, "rangePolicy")
         for c in e.get("components") or []:
             if not c.get("name"): errors.append(f"{where}: component without a name")
@@ -283,7 +316,11 @@ def validate_clinical(key, eid, e, ids, errors):
             t["source"] = one_source(t, f"{where} threshold '{t.get('name')}'", errors, acc)
     if key == "targets":
         check_enum(e.get("kind"), TARGET_KINDS, where, errors, "kind")
+    if key == "imaging": TX.validate_imaging(e, where, errors)
+    if key == "procedures": TX.validate_procedure(e, where, errors)
+    if key == "biomarkers": TX.validate_biomarker(e, where, errors)
     if key == "medications":
+        TX.validate_medication(e, where, errors, JURISDICTIONS, one_source, acc, ids)
         for i in e.get("indications") or []:
             check_enum(i.get("status"), INDICATION_STATUSES, where, errors, "indication.status")
             if i.get("status") == "unverified": errors.append(f"{where}: an 'unverified' indication may not be published; remove it or verify it")
@@ -368,13 +405,72 @@ def validate_clinical(key, eid, e, ids, errors):
             if not w.get("with") or not w.get("effect"): errors.append(f"{where}: class interaction needs 'with' and 'effect'")
             w["source"] = one_source(w, f"{where} class interaction '{w.get('with')}'", errors, acc)
 
-def compile_interactions(types, errors):
-    """content/interactions.json -> validated pair records, an index by medication and by class, for the medication
-    pages and the interaction checker. Every record needs at least one source; severity states must be sourced."""
+def slugify(s):
+    return re.sub(r"[^a-z0-9]+", "-", str(s).lower().replace("'", "")).strip("-")
+
+# ---- checker knowledge-graph links. A monitoring phrase (lower-case) resolves to the test, biomarker or physiology page a
+# reader can open; phrases not listed are matched against the exact name or alias of a test or biomarker, and anything else
+# stays as plain text. Never a clinical claim: the links only say where on this site the item is explained.
+MONITORING_LINKS = {
+    "potassium": [("biomarkers", "potassium")], "potassium and magnesium": [("biomarkers", "potassium"), ("tests", "electrolytes")],
+    "creatinine and egfr": [("tests", "creatinine-egfr")], "creatinine and egfr after the procedure": [("tests", "creatinine-egfr")],
+    "kidney function": [("tests", "kidney-function-tests")], "kidney and liver function": [("tests", "kidney-function-tests"), ("tests", "liver-function-tests")],
+    "liver function": [("tests", "liver-function-tests")], "blood pressure": [("physiology", "blood-pressure")], "heart rate": [("physiology", "heart-rate")],
+    "blood glucose": [("tests", "blood-glucose"), ("biomarkers", "glucose")], "hba1c after prolonged courses": [("tests", "hba1c")],
+    "full blood count": [("tests", "complete-blood-count")], "haemoglobin": [("biomarkers", "haemoglobin")], "tsh": [("tests", "tsh")],
+    "ecg (qt interval)": [("tests", "ecg")], "fluid balance and weight": [("physiology", "fluid-balance")],
+}
+# The sourced mechanism of a record -> the anatomy and physiology pages that explain it (navigation into the knowledge graph,
+# validated against the atlas and the entity files at build time). Mechanisms without a natural anatomical home link nothing.
+MECHANISM_LINKS = {
+    "CYP inhibition": [("organ", "liver"), ("physiology", "liver-functions")], "CYP induction": [("organ", "liver"), ("physiology", "liver-functions")],
+    "hepatotoxicity": [("organ", "liver"), ("physiology", "liver-functions"), ("tests", "liver-function-tests")],
+    "renal clearance": [("organ", "kidneys"), ("physiology", "filtration")], "nephrotoxicity": [("organ", "kidneys"), ("physiology", "filtration"), ("tests", "creatinine-egfr")],
+    "hyperkalaemia risk": [("organ", "kidneys"), ("biomarkers", "potassium"), ("physiology", "electrolytes")],
+    "QT prolongation": [("organ", "heart"), ("physiology", "cardiac-conduction"), ("tests", "ecg")],
+    "altered gastric pH": [("organ", "stomach"), ("physiology", "absorption")], "reduced absorption": [("organ", "small-intestine"), ("physiology", "absorption")],
+    "chelation": [("organ", "small-intestine"), ("physiology", "absorption")], "additive hypotension": [("physiology", "blood-pressure")],
+    "additive hypoglycaemia risk": [("tests", "blood-glucose"), ("biomarkers", "glucose")], "additive CNS depression": [("organ", "brain")],
+    "serotonergic effect": [("organ", "brain"), ("physiology", "nerve-signals")], "additive myopathy risk": [("system", "muscles")],
+}
+RELATED_ORDER = ["drug-classes", "organ", "system", "physiology", "tests", "biomarkers", "conditions"]
+# Search aliases that are true synonyms of the medication for the interaction checker (other aliases name a class or another
+# member of a grouped page and must not resolve to this medication in a check).
+CHECKER_SYNONYMS = {"aspirin": ["acetylsalicylic acid", "ASA", "low-dose aspirin", "75 mg aspirin"], "paracetamol": ["acetaminophen", "APAP"], "furosemide": ["frusemide"],
+                    "salbutamol": ["albuterol"], "glyceryl-trinitrate": ["GTN", "nitroglycerin", "GTN spray"], "levothyroxine": ["thyroxine", "T4"], "alendronate": ["alendronic acid"],
+                    "amlodipine": ["amlodipine besilate", "amlodipine besylate"], "metformin": ["metformin hydrochloride"], "losartan": ["losartan potassium"],
+                    "atorvastatin": ["atorvastatin calcium"], "rosuvastatin": ["rosuvastatin calcium"]}
+
+def compile_interactions(types, errors, organ_names=None, system_names=None):
+    """content/interactions.json -> validated pair records, an index by medication and by class, the named substances the
+    records apply to, and the knowledge-graph links of every record, for the medication pages and the interaction checker.
+    Every record needs at least one source; severity states must be sourced; every link is validated."""
+    organ_names = organ_names or {}; system_names = system_names or {}
     raw = load("interactions.json", {"interactions": []})
     recs = raw.get("interactions", [])
     updated = raw.get("_updated", "")
     meds = types["medications"]["items"]; classes = types["drug-classes"]["items"]
+    # names that mean this medication in the checker: the generic name, its brands and the synonyms below. A medication's
+    # search `aliases` are wider (class names, other members of a grouped page such as codeine on the opioids page) and are
+    # deliberately not treated as synonyms here: in an interaction check, codeine is not morphine and citalopram is not sertraline.
+    med_name_keys = {}   # lower-case name, brand or synonym -> medication id
+    for mid, m in meds.items():
+        for n in [m["name"]] + CHECKER_SYNONYMS.get(mid, []) + [b for v in (m.get("brands") or {}).values() for b in v]: med_name_keys.setdefault(n.lower(), mid)
+    med_words = {re.findall(r"[a-z]+", m["name"].lower())[0] for m in meds.values()}   # the first word of every medication name
+    members = {cid: sorted(set((c.get("links") or {}).get("medications", []) + [m for m, me in meds.items() if (me.get("links") or {}).get("drugClass") == [cid]])) for cid, c in classes.items()}
+    class_of_member = {}   # member name (lower) -> class id, from the class pages' member lists
+    for cid, c in classes.items():
+        for n in c.get("members") or []: class_of_member.setdefault(n.lower(), cid)
+    substances = {}        # id -> {name, aliases, drugClass, records: [ids]}
+    def add_substance(name, aliases=(), where=""):
+        key = name.lower()
+        if key in med_name_keys: errors.append(f"{where}: '{name}' is the medication '{med_name_keys[key]}': use 'b' instead of a named substance"); return None
+        sid = slugify(name)
+        if not sid: errors.append(f"{where}: cannot make an id from '{name}'"); return None
+        s = substances.setdefault(sid, {"id": sid, "name": name[0].upper() + name[1:], "aliases": [], "drugClass": class_of_member.get(key), "records": []})
+        for al in aliases:
+            if al.lower() != key and al not in s["aliases"]: s["aliases"].append(al)
+        return sid
     out = []; seen = set()
     for r in recs:
         rid = r.get("id") or ""
@@ -398,8 +494,19 @@ def compile_interactions(types, errors):
         if not ev: errors.append(f"{where}: needs at least one evidence source")
         for j in r.get("jurisdictions") or []: check_enum(j, JURISDICTIONS, where, errors, "jurisdictions")
         rv = r.get("review") or "source-verified"; check_enum(rv, REVIEW_STATUSES, where, errors, "review")
+        # named substances the record applies to (checker search entries): bAgents, or the bName itself when it names one agent
+        agent_ids = []
+        if bn and not b and not bc:
+            agents = r["bAgents"] if "bAgents" in r else [bn]
+            if not isinstance(agents, list): errors.append(f"{where}: bAgents must be a list of names or {{name, aliases}}"); agents = []
+            for ag in agents:
+                name, aliases = (ag, []) if isinstance(ag, str) else (ag.get("name", ""), ag.get("aliases") or [])
+                if not name: errors.append(f"{where}: bAgents entry without a name"); continue
+                sid = add_substance(name, aliases, where)
+                if sid: agent_ids.append(sid); substances[sid]["records"].append(rid)
+        elif "bAgents" in r: errors.append(f"{where}: bAgents only applies to a record with bName")
         out.append({"id": rid, "type": r.get("type"), "a": a, "b": b, "bClass": bc, "bName": bn or (meds.get(b, {}).get("name") if b else classes.get(bc, {}).get("name")),
-                    "perpetrator": r.get("perpetrator"), "victim": r.get("victim"), "mechanism": r.get("mechanism", "unknown"), "mechanismNote": r.get("mechanismNote", ""),
+                    "agentIds": agent_ids, "perpetrator": r.get("perpetrator"), "victim": r.get("victim"), "mechanism": r.get("mechanism", "unknown"), "mechanismNote": r.get("mechanismNote", ""),
                     "effect": r["effect"] if r.get("effect") else "", "sourceWording": r.get("sourceWording", ""), "severity": sev, "severitySource": r.get("severitySource", ""),
                     "action": r.get("action", ""), "monitoring": r.get("monitoring") or [], "onset": r.get("onset", ""), "jurisdictions": r.get("jurisdictions") or sorted({x["jurisdiction"] for x in ev}),
                     "population": r.get("population", ""), "evidence": ev, "review": rv, "updated": r.get("updated") or updated})
@@ -408,9 +515,12 @@ def compile_interactions(types, errors):
         by_drug[r["a"]].append(r["id"])
         if r["b"]: by_drug[r["b"]].append(r["id"])
         if r["bClass"]: by_class[r["bClass"]].append(r["id"])
-    members = {cid: sorted(set((c.get("links") or {}).get("medications", []) + [m for m, me in meds.items() if (me.get("links") or {}).get("drugClass") == [cid]])) for cid, c in classes.items()}
+    dup_rules = {cid: {"text": c["duplicationRule"]["text"], "source": c["duplicationRule"]["source"]} for cid, c in classes.items() if c.get("duplicationRule")}
     # ---- brand and combination products -> ingredients (content/products.json)
     praw = load("products.json", {"products": {}}); products = []
+    product_name_keys = set()
+    for pid, p in (praw.get("products") or {}).items():
+        product_name_keys.add((p.get("name") or pid).lower()); product_name_keys.update(x.lower() for x in p.get("aliases") or [])
     for pid, p in (praw.get("products") or {}).items():
         where = f"products/{pid}"
         if not SLUG.match(pid): errors.append(f"{where}: id is not a slug")
@@ -424,6 +534,11 @@ def compile_interactions(types, errors):
                 if ing.get("drugClass"):
                     if ing["drugClass"] not in classes: errors.append(f"{where}: ingredient class '{ing['drugClass']}' unknown")
                     else: rec_["drugClass"] = ing["drugClass"]
+                sid = add_substance(ing["name"], (), where)         # an ingredient without a page is a named substance, so the same ingredient in two entries is detected
+                if sid:
+                    rec_["agentId"] = sid
+                    if rec_.get("drugClass") and not substances[sid]["drugClass"]: substances[sid]["drugClass"] = rec_["drugClass"]
+                    if not rec_.get("drugClass") and substances[sid]["drugClass"]: rec_["drugClass"] = substances[sid]["drugClass"]
                 ings.append(rec_)
             else: errors.append(f"{where}: ingredient must be a medication id or {{name}}")
         if len(ings) < 1: errors.append(f"{where}: needs ingredients")
@@ -431,24 +546,102 @@ def compile_interactions(types, errors):
         for j in p.get("jurisdictions") or []: check_enum(j, JURISDICTIONS, where, errors, "jurisdictions")
         src = one_source(p, where, errors, praw.get("_updated", updated))
         products.append({"id": pid, "name": p.get("name") or pid, "aliases": p.get("aliases") or [], "ingredients": ings, "jurisdictions": p.get("jurisdictions") or [], "note": p.get("note", ""), "source": src})
-    # ---- autocomplete index for the checker: every generic, alias, brand, class and product name -> canonical entry
-    index = []
-    for mid, m in meds.items():
-        index.append({"label": m["name"], "kind": "medication", "id": mid})
-        seen_ = {m["name"].lower()}
-        for al in list(m.get("aliases") or []) + [b for v in (m.get("brands") or {}).values() for b in v]:
-            if al.lower() in seen_ or al.lower() in {x["name"].lower() for x in meds.values()}: continue
-            seen_.add(al.lower()); index.append({"label": f"{al} ({m['name']})", "kind": "medication", "id": mid, "alias": al})
+    # ---- members of a class without a page become named substances too, so a class-level record (sourced for the whole
+    # class) and a duplication rule can be applied to them; a member that is a medication, a product or contains a
+    # medication's name is skipped (the medication or product entry already covers it)
     for cid, c in classes.items():
-        index.append({"label": c["name"], "kind": "class", "id": cid})
-        for al in c.get("aliases") or []: index.append({"label": f"{al} ({c['name']})", "kind": "class", "id": cid, "alias": al})
+        for n in c.get("members") or []:
+            key = n.lower()
+            if key in med_name_keys or key in product_name_keys or any(w in re.findall(r"[a-z]+", key) for w in med_words): continue
+            sid = slugify(n)
+            if sid in substances:
+                if not substances[sid]["drugClass"]: substances[sid]["drugClass"] = cid
+                continue
+            substances[sid] = {"id": sid, "name": n[0].upper() + n[1:], "aliases": [], "drugClass": cid, "records": []}
+    # a substance is offered in the checker only when at least one record can apply to it: its own records, a record written
+    # for its class, or its class's duplication rule; otherwise every result would be "no known interaction" for lack of data
+    for s in substances.values():
+        cid = s["drugClass"]
+        s["classRecords"] = list(by_class.get(cid, [])) if cid else []
+        s["searchable"] = bool(s["records"] or s["classRecords"] or (cid and cid in dup_rules))
+    # ---- knowledge-graph links of every record: classes, shared anatomy, the mechanism's anatomy and physiology, monitoring pages
+    tb_names = {}   # lower-case test / biomarker name or alias -> (type, id)
+    for t in ("biomarkers", "tests"):
+        for eid, e in types[t]["items"].items():
+            for n in [e["name"]] + list(e.get("aliases") or []): tb_names.setdefault(n.lower(), (t, eid))
+    def link_name(kind, eid, where):
+        if kind == "organ":
+            if eid not in organ_names: errors.append(f"{where}: related organ '{eid}' unknown"); return None
+            return organ_names[eid]
+        if kind == "system":
+            if eid not in system_names: errors.append(f"{where}: related system '{eid}' unknown"); return None
+            return system_names[eid]
+        if kind not in types or eid not in types[kind]["items"]: errors.append(f"{where}: related {kind} '{eid}' unknown"); return None
+        return types[kind]["items"][eid]["name"]
+    unresolved_monitoring = collections.Counter()
+    for r in out:
+        where = f"interactions/{r['id']}"
+        links = []
+        def add(kind, eid):
+            if any(l["type"] == kind and l["id"] == eid for l in links): return
+            n = link_name(kind, eid, where)
+            if n: links.append({"type": kind, "id": eid, "name": n})
+        cls_a = (meds.get(r["a"], {}).get("links") or {}).get("drugClass", [None])[0]
+        cls_b = r["bClass"] or ((meds.get(r["b"], {}).get("links") or {}).get("drugClass", [None])[0] if r["b"] else None)
+        for cid in (cls_a, cls_b):
+            if cid: add("drug-classes", cid)
+        if r["b"]:
+            shared = [o for o in (meds[r["a"]].get("anatomy") or {}).get("organs", []) if o in (meds[r["b"]].get("anatomy") or {}).get("organs", [])]
+            for o in shared[:3]: add("organ", o)
+        for kind, eid in MECHANISM_LINKS.get(r["mechanism"], []): add(kind, eid)
+        mon_links = []
+        for item in r["monitoring"]:
+            key = item.lower().strip()
+            hits = MONITORING_LINKS.get(key) or ([tb_names[key]] if key in tb_names else [])
+            if not hits: unresolved_monitoring[item] += 1
+            for kind, eid in hits: add(kind, eid)
+            mon_links.append({"text": item, "links": [{"type": k, "id": i, "name": link_name(k, i, where)} for k, i in hits]})
+        links.sort(key=lambda l: RELATED_ORDER.index(l["type"]) if l["type"] in RELATED_ORDER else 99)
+        r["related"] = links[:10]; r["monitoringLinks"] = mon_links
+    if unresolved_monitoring: print(f"  interactions: monitoring items left as plain text (no page to link): {sorted(unresolved_monitoring)}", file=sys.stderr)
+    # ---- autocomplete index for the checker: every generic, brand, alias, product, named substance and class -> canonical entry
+    index = []
+    cname = lambda cid: classes[cid]["name"] if cid and cid in classes else None
+    for mid, m in meds.items():
+        cid = (m.get("links") or {}).get("drugClass", [None])[0]
+        index.append({"label": m["name"], "kind": "medication", "id": mid, "cls": cname(cid)})
+        seen_ = {m["name"].lower()}
+        brands = {b.lower() for v in (m.get("brands") or {}).values() for b in v}
+        first = re.findall(r"[a-z]+", m["name"].lower())[0]
+        synonyms = {x.lower() for x in CHECKER_SYNONYMS.get(mid, [])}
+        for al in list(m.get("aliases") or []) + [b for v in (m.get("brands") or {}).values() for b in v]:
+            key = al.lower()
+            if key in seen_ or key in {x["name"].lower() for x in meds.values()}: continue
+            if not (key in brands or key in synonyms or first in re.findall(r"[a-z0-9]+", key)): continue   # a class name or another medicine, not a synonym
+            seen_.add(key); index.append({"label": al, "kind": "medication", "id": mid, "alias": "brand" if key in brands else "alias", "of": m["name"], "cls": cname(cid)})
     for p in products:
-        index.append({"label": p["name"], "kind": "product", "id": p["id"]})
-        for al in p["aliases"]: index.append({"label": f"{al} ({p['name']})", "kind": "product", "id": p["id"], "alias": al})
-    dup_rules = {cid: {"text": c["duplicationRule"]["text"], "source": c["duplicationRule"]["source"]} for cid, c in classes.items() if c.get("duplicationRule")}
+        ings = " + ".join(i["name"] for i in p["ingredients"])
+        index.append({"label": p["name"], "kind": "product", "id": p["id"], "ings": ings})
+        for al in p["aliases"]: index.append({"label": al, "kind": "product", "id": p["id"], "alias": "alias", "of": p["name"], "ings": ings})
+    for sid, s in sorted(substances.items()):
+        if not s["searchable"]: continue
+        index.append({"label": s["name"], "kind": "substance", "id": sid, "cls": cname(s["drugClass"])})
+        for al in s["aliases"]: index.append({"label": al, "kind": "substance", "id": sid, "alias": "alias", "of": s["name"], "cls": cname(s["drugClass"])})
+    for cid, c in classes.items():
+        index.append({"label": c["name"], "kind": "class", "id": cid, "members": [n[0].upper() + n[1:] for n in (c.get("members") or [])][:6]})
+        for al in c.get("aliases") or []: index.append({"label": al, "kind": "class", "id": cid, "alias": "alias", "of": c["name"]})
     member_names = {cid: sorted({n for n in (c.get("members") or [])} | {meds[m]["name"] for m in members.get(cid, [])}) for cid, c in classes.items()}
+    publishers = collections.Counter(e["source"] for r in out for e in r["evidence"])
+    reviews = collections.Counter(r["review"] for r in out)
+    source_meta = {"provider": "Anatomy Nexus interaction records (paraphrased from the cited official documents)", "dataVersion": updated,
+                   "lastUpdated": max([r["updated"] for r in out] + [updated]) if out else updated, "recordCount": len(out), "productCount": len(products),
+                   "substanceCount": sum(1 for s in substances.values() if s["searchable"]), "medicationCount": len(meds), "classCount": len(classes),
+                   "publishers": dict(publishers.most_common()), "reviewStatuses": dict(reviews), "scope": ["drug-drug"]}
     return {"updated": updated, "records": out, "byDrug": dict(by_drug), "byClass": dict(by_class), "classMembers": members, "classMemberNames": member_names, "classNames": {cid: c["name"] for cid, c in classes.items()},
-            "duplicationClasses": dup_rules, "products": products, "index": index, "drugClassOf": {mid: (m.get("links") or {}).get("drugClass", [None])[0] for mid, m in meds.items()}}
+            "duplicationClasses": dup_rules, "products": products, "substances": {sid: {k: v for k, v in s.items() if k != "searchable"} for sid, s in substances.items() if s["searchable"]},
+            "index": index, "drugClassOf": {mid: (m.get("links") or {}).get("drugClass", [None])[0] for mid, m in meds.items()},
+            "organNames": organ_names, "sourceMetadata": source_meta}
+
 
 def compile_comparisons(types, errors):
     """content/comparisons.json -> structured comparisons of two entities (tests or imaging), rendered at /compare/<id>/."""
@@ -483,6 +676,11 @@ def compile_knowledge(atlas, out_organs, systems, terms):
             if pid not in types[key]["items"]: errors.append(f"{fname}: _priority names unknown id '{pid}'")
     ids = {k: set(v["items"].keys()) for k, v in types.items()}
     ids["terms"] = term_ids
+    queues = collections.defaultdict(list)   # review queues (§94), filled by the validation rules below and by taxonomy.build_queues
+    # the test categories are the 36 categories of the master test taxonomy; the medication categories are its therapeutic areas
+    types["tests"]["meta"]["categories"] = [{"id": c["id"], "name": c["name"], "group": c["group"]} for c in TX.TEST_TAX["categories"]]
+    types["tests"]["meta"]["groups"] = TX.TEST_TAX["groups"]
+    types["medications"]["meta"]["categories"] = [{"id": a["id"], "name": a["name"]} for a in TX.MED_TAX["areas"]]
 
     # per-type categories that are derived rather than declared
     for cid, cname in CONDITION_CATEGORIES: types["conditions"]["meta"]["categories"].append({"id": cid, "name": cname})
@@ -555,7 +753,9 @@ def compile_knowledge(atlas, out_organs, systems, terms):
                 if value not in lst: lst.append(value)
                 e[field] = lst
             if key == "tests":
-                for c in e.get("components") or []: imply("biomarkers", c.get("biomarker"))
+                for c in e.get("components") or []: imply("biomarkers", c.get("biomarker")); imply("related", c.get("test"))
+                for p in e.get("panelOf") or []: imply("related", p)
+                for c in e.get("monitors") or []: imply("conditions", c)
             if key == "medications":
                 for m_ in e.get("monitoringPlan") or []:
                     for t_ in m_.get("tests") or []: imply("tests", t_)
@@ -594,14 +794,17 @@ def compile_knowledge(atlas, out_organs, systems, terms):
             e["review"] = rv
             validate_clinical(key, eid, e, ids, errors)
     # ---- attach backlinks (reverse edges) and the indexability verdict to every entity
-    noindex = []
     for key, T in types.items():
         for eid, e in T["items"].items():
             bl = back[key].get(eid, {})
             e["backlinks"] = {t: sorted(v) for t, v in sorted(bl.items())}
-            reasons = quality_gate(e, REQUIRE_CLINICAL_REVIEW)
-            e["seo"] = {"index": not reasons, "reasons": reasons}
-            if reasons: noindex.append(f"{key}/{eid}: " + "; ".join(reasons))
+    # tests monitored medicines: the medicines whose sourced monitoring plan names the test or biomarker (TEST_MONITORS_MEDICATION)
+    for mid, m in types["medications"]["items"].items():
+        for mp in m.get("monitoringPlan") or []:
+            for t in mp.get("tests") or []:
+                if t in types["tests"]["items"]: types["tests"]["items"][t].setdefault("monitoredMedications", []).append(mid)
+            for b in mp.get("biomarkers") or []:
+                if b in types["biomarkers"]["items"]: types["biomarkers"]["items"][b].setdefault("monitoredMedications", []).append(mid)
     anatomy = {kind: {tid: {t: sorted(v) for t, v in sorted(m.items())} for tid, m in sorted(back[kind].items())} for kind in ("organs", "systems", "structures")}
     termlinks = {tid: {t: sorted(v) for t, v in sorted(m.items())} for tid, m in sorted(back["terms"].items())}
     # ---- term atlas links must resolve
@@ -616,11 +819,12 @@ def compile_knowledge(atlas, out_organs, systems, terms):
         for e in errors: print("  " + e, file=sys.stderr)
         sys.exit(1)
     if _unknown_hosts: print(f"  note: reference hosts not in the source table (filed as tier 3): {sorted(_unknown_hosts)}", file=sys.stderr)
-    if noindex:
-        print(f"  {len(noindex)} entity page(s) fail the quality gate and are published noindex:", file=sys.stderr)
-        for n in noindex: print("    " + n, file=sys.stderr)
-    interactions = compile_interactions(types, errors)
+    interactions = compile_interactions(types, errors, organ_names={o["id"]: o["name"] for o in out_organs}, system_names={s_["id"]: s_["name"] for s_ in atlas["systems"]})
     comparisons = compile_comparisons(types, errors)
+    # ---- drug-name rules and cross-entity checks (§79, §95), catalogue → page mapping (§86–§88)
+    products_raw = {k: v for k, v in (load("products.json", {"products": {}}).get("products") or {}).items() if not k.startswith("_")}
+    TX.validate_cross(types, products_raw, errors, queues)
+    concept_page = TX.map_catalogue(types, errors, queues)
     if errors:
         print("CLINICAL DATA ERRORS:", file=sys.stderr)
         for e in errors: print("  " + e, file=sys.stderr)
@@ -628,13 +832,36 @@ def compile_knowledge(atlas, out_organs, systems, terms):
     # attach interaction ids to medications and classes so a page can render its own interactions
     for mid, m in types["medications"]["items"].items(): m["interactionIds"] = interactions["byDrug"].get(mid, [])
     for cid, c in types["drug-classes"]["items"].items(): c["interactionIds"] = interactions["byClass"].get(cid, [])
+    # the catalogued concepts each page covers, and the alias set search uses for it
+    for cid, pg in concept_page.items(): types[pg["type"]]["items"][pg["id"]].setdefault("concepts", []).append({"id": cid, "name": TX.CONCEPTS[cid]["name"], "category": TX.CONCEPTS[cid]["categories"][0]})
+    # ---- indexability (quality gate, §89–§90) and provenance (§91)
+    noindex = []
+    for key, T in types.items():
+        for eid, e in T["items"].items():
+            reasons = quality_gate(e, REQUIRE_CLINICAL_REVIEW)
+            e["seo"] = {"index": not reasons, "reasons": reasons}
+            e["provenance"] = TX.provenance(e)
+            if reasons: noindex.append(f"{key}/{eid}: " + "; ".join(reasons))
+    if noindex:
+        print(f"  {len(noindex)} entity page(s) fail the quality gate and are published noindex:", file=sys.stderr)
+        for n in noindex: print("    " + n, file=sys.stderr)
+    updated_all = max(T["meta"].get("updated") or "" for T in types.values())
+    test_categories = TX.build_test_categories(types, concept_page, lead_of, max(updated_all, TX.TEST_TAX.get("_updated", "")))
+    med_taxonomy = TX.build_medication_taxonomy(types, max(updated_all, TX.MED_TAX.get("_updated", "")))
+    graph = TX.build_edges(types, interactions, interactions["products"])
+    review = TX.build_queues(types, interactions, concept_page, queues, text_size)
+    n_cat_index = sum(1 for c in test_categories["categories"] if c["seo"]["index"])
+    print(f"taxonomy: {len(test_categories['categories'])} test categories ({n_cat_index} indexable), {len(TX.CONCEPTS)} catalogued concepts ({len(concept_page)} covered by a page), {len(med_taxonomy['areas'])} therapeutic areas, {sum(len(g['classes']) for a in med_taxonomy['areas'] for g in a['groups'])} class concepts")
+    print(f"graph: {len(graph['edges'])} typed edges of {len(graph['edgeTypes'])} relationship types · review queues: " + ", ".join(f"{k} {v}" for k, v in review["counts"].items() if v))
     counts = {k: len(v["items"]) for k, v in types.items()}
     edges = sum(len(v) for T in types.values() for e in T["items"].values() for v in e["links"].values())
     refs = sum(len(e["references"]) for T in types.values() for e in T["items"].values())
     n_alias = sum(len(v) for v in aliases.values())
     print("knowledge:", ", ".join(f"{k} {n}" for k, n in counts.items()), f"· {edges} typed links · {refs} references · {n_alias} URL aliases · anatomy backlinks: {len(anatomy['organs'])} organs, {len(anatomy['systems'])} systems, {len(anatomy['structures'])} structures")
     print(f"clinical: {len(interactions['records'])} interaction records, {len(interactions['products'])} products, {len(comparisons['comparisons'])} comparisons, {sum(1 for T in types.values() for e in T['items'].values() if e.get('depth') == 'full')} full-depth pages")
-    return {"types": types, "anatomy": anatomy, "terms": termlinks, "aliases": aliases, "interactions": interactions, "comparisons": comparisons}
+    aliases["tests/categories"] = {a: c["id"] for c in TX.TEST_TAX["categories"] for a in c.get("urlAliases") or []}
+    return {"types": types, "anatomy": anatomy, "terms": termlinks, "aliases": aliases, "interactions": interactions, "comparisons": comparisons,
+            "testCategories": test_categories, "medicationTaxonomy": med_taxonomy, "edges": graph["edges"], "edgeTypes": graph["edgeTypes"], "review": review, "conceptPage": concept_page}
 
 def build_search_index(atlas, out_organs, out_regions, terms, know):
     entries = []
@@ -646,10 +873,13 @@ def build_search_index(atlas, out_organs, out_regions, terms, know):
     for s in atlas["structures"]: entries.append(["structure", s["id"], s["name"], "", sysname.get(s["system"], s["system"])])
     catname = {c["id"]: c["name"] for c in terms.get("categories", [])}
     for t in terms["terms"]: entries.append(["term", t["id"], t["term"], "", catname.get(t["category"], "Term")])
+    extra = TX.page_aliases_from_catalogue(know["conceptPage"])
     for key, T in know["types"].items():
         for eid, e in T["items"].items():
             brands = [b for v in (e.get("brands") or {}).values() for b in v]
-            entries.append([key, eid, e["name"], "|".join(list(dict.fromkeys(e.get("aliases", []) + brands + unslug(e.get("urlAliases"))))), (lead_of(e) or "")[:110]])
+            names = e.get("aliases", []) + list(e.get("abbreviations") or []) + ([e["canonicalName"]] if e.get("canonicalName") else []) + list(e.get("ingredientVariants") or []) + brands + unslug(e.get("urlAliases")) + extra.get((key, eid), [])
+            entries.append([key, eid, e["name"], "|".join(x for x in dict.fromkeys(names) if x.lower() != e["name"].lower()), (lead_of(e) or "")[:110]])
+    entries.extend(TX.search_entries(know["testCategories"], know["medicationTaxonomy"], know["conceptPage"]))
     for p in know["interactions"]["products"]:
         entries.append(["product", p["id"], p["name"], "|".join(p["aliases"]), "Product: " + " + ".join(i["name"] for i in p["ingredients"])])
     return {"entries": entries}
@@ -658,7 +888,12 @@ def build_clinical(atlas, know):
     """Compact index for the explorer: names of every entity plus organ/system/structure -> entity ids."""
     names = {key: {eid: e["name"] for eid, e in T["items"].items()} for key, T in know["types"].items()}
     types = {key: {"name": T["meta"]["name"], "singular": T["meta"]["singular"], "dir": T["meta"]["dir"], "page": T["meta"]["page"]} for key, T in know["types"].items()}
-    return {"types": types, "names": names, "terms": know["terms"], **know["anatomy"]}
+    # every name a medicine is known by (generic, aliases, ingredient variants, brands) -> id, so class and taxonomy pages can link member names
+    med_index = {}
+    for mid, m in know["types"]["medications"]["items"].items():
+        for n in [m["name"]] + list(m.get("aliases") or []) + list(m.get("ingredientVariants") or []) + [b for v in (m.get("brands") or {}).values() for b in v]:
+            med_index.setdefault(TX.norm(n), mid)
+    return {"types": types, "names": names, "medicationIndex": med_index, "terms": know["terms"], **know["anatomy"]}
 
 def write_site_meta(site, counts, atlas):
     """site/site-meta.js: the site identity the page shell needs synchronously (brand, URL, editorial fields)."""
@@ -811,7 +1046,10 @@ def main():
     compiled = {"systems": systems, "organs": out_organs, "regions": out_regions, "structures": out_structs, "anatomyUpdated": articles_updated}
     json.dump(compiled, open(os.path.join(OUT, "atlas-content.json"), "w", encoding="utf-8"), separators=(",", ":"), ensure_ascii=False)
     json.dump(terms, open(os.path.join(OUT, "terms.json"), "w", encoding="utf-8"), separators=(",", ":"), ensure_ascii=False)
-    for fname, obj in (("knowledge.json", know), ("clinical.json", clinical), ("search-index.json", search_index), ("aliases.json", know["aliases"]), ("interactions.json", know["interactions"]), ("comparisons.json", know["comparisons"])):
+    know_out = {k: v for k, v in know.items() if k not in ("testCategories", "medicationTaxonomy", "review", "conceptPage")}
+    for fname, obj in (("knowledge.json", know_out), ("clinical.json", clinical), ("search-index.json", search_index), ("aliases.json", know["aliases"]), ("interactions.json", know["interactions"]), ("comparisons.json", know["comparisons"]),
+                       ("test-categories.json", know["testCategories"]), ("medication-taxonomy.json", know["medicationTaxonomy"]), ("review-queues.json", know["review"]),
+                       ("vocabularies.json", {k: v for k, v in TX.VOCAB.items() if not k.startswith("_")})):
         json.dump(obj, open(os.path.join(OUT, fname), "w", encoding="utf-8"), separators=(",", ":"), ensure_ascii=False)
         print("wrote", os.path.join(OUT, fname), os.path.getsize(os.path.join(OUT, fname)), "bytes")
     # one file per entity type so a page loads only the section it needs (plus the small clinical.json name index)
@@ -822,6 +1060,7 @@ def main():
     counts = {"pieces": atlas["totals"]["pieces"], "structures": atlas["totals"]["structures"], "systems": len(atlas["systems"]), "organs": len(out_organs),
               "anatomyArticles": sum(1 for o in out_organs if o.get("article")), "terms": len(terms["terms"]),
               "topics": sum(len(T["items"]) for T in know["types"].values()), "links": sum(len(v) for T in know["types"].values() for e in T["items"].values() for v in e["links"].values()),
+              "testCategories": len(know["testCategories"]["categories"]), "testConcepts": len(TX.CONCEPTS), "classConcepts": sum(len(g["classes"]) for a in know["medicationTaxonomy"]["areas"] for g in a["groups"]), "edges": len(know["edges"]),
               **{k: len(T["items"]) for k, T in know["types"].items()}}
     write_site_meta(site, counts, atlas)
     for o in out_organs: print(f"  organ {o['id']:16s} {len(o['structures']):4d} structures{'  · article' if o.get('article') else ''}")

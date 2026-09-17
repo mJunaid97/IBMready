@@ -24,7 +24,7 @@ const dist = args.dist || 'dist';
 const base = args.base || '/';                                     // public base path of the site
 const list = JSON.parse(readFileSync(args.urls, 'utf8'));          // [{path, template?}] paths relative to the site root, '' = home
 const TEMPLATES = { anatomy: 'organ.html', systems: 'system.html', physiology: 'topic.html', symptoms: 'symptom.html', conditions: 'condition.html', tests: 'test.html', biomarkers: 'biomarker.html', imaging: 'study.html', procedures: 'procedure.html', medications: 'medication.html', 'drug-classes': 'class.html', targets: 'target.html', 'first-aid': 'topic.html', health: 'topic.html', compare: 'compare.html' };
-const MIME = { '.html': 'text/html; charset=utf-8', '.js': 'application/javascript; charset=utf-8', '.mjs': 'application/javascript; charset=utf-8', '.css': 'text/css; charset=utf-8', '.json': 'application/json; charset=utf-8', '.svg': 'image/svg+xml', '.png': 'image/png', '.jpg': 'image/jpeg', '.webmanifest': 'application/manifest+json', '.glb': 'model/gltf-binary', '.wasm': 'application/wasm', '.md': 'text/markdown; charset=utf-8', '.txt': 'text/plain; charset=utf-8', '.xml': 'application/xml' };
+const MIME = { '.html': 'text/html; charset=utf-8', '.js': 'application/javascript; charset=utf-8', '.mjs': 'application/javascript; charset=utf-8', '.css': 'text/css; charset=utf-8', '.json': 'application/json; charset=utf-8', '.svg': 'image/svg+xml', '.png': 'image/png', '.jpg': 'image/jpeg', '.webmanifest': 'application/manifest+json', '.glb': 'model/gltf-binary', '.wasm': 'application/wasm', '.md': 'text/markdown; charset=utf-8', '.txt': 'text/plain; charset=utf-8', '.xml': 'application/xml', '.woff2': 'font/woff2', '.ico': 'image/x-icon' };
 
 // ---- a tiny static server that emulates the clean-URL rewrite for pages that are not prerendered yet
 const server = createServer((req, res) => {
@@ -88,6 +88,7 @@ await browser.close(); server.close();
 // ---- one URL per page: drop the query-URL templates now that every entity page exists as a directory
 let removed = 0;
 for (const [dir, tpl] of Object.entries(TEMPLATES)) { const f = join(dist, dir, tpl); if (existsSync(f)) { unlinkSync(f); removed++; } }
+for (const extra of ['tests/category.html']) { const f = join(dist, extra); if (existsSync(f)) { unlinkSync(f); removed++; } }   // the test-category template (pages live at tests/categories/<id>/)
 const previews = join(dist, 'site', 'previews');
 console.log(`prerendered ${n} pages (${failed} failed), removed ${removed} template pages, ${existsSync(previews) ? readdirSync(previews).length : 0} preview images`);
 if (missingPreviews.size) console.error(`missing preview images (body.jpg used instead): ${[...missingPreviews].join(', ')}`);

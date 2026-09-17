@@ -21,6 +21,13 @@ jobs:
         run: python3 tools/build-content.py
       - name: Compiled data must match the committed data
         run: git diff --exit-code --stat -- data/content site/site-meta.js
+      - name: Terminology pipelines (LOINC, RxNorm) unit tests on the synthetic fixtures
+        run: python3 -m unittest tools.terminology.test_terminology
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Interaction checker engine tests (every pair, severity mapping, duplication, no-interaction wording)
+        run: node tools/qa/engine-test.mjs
 
   smoke:
     name: Production build and smoke test in headless Chromium

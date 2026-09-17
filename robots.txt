@@ -1,6 +1,12 @@
+# Anatomy Nexus robots.txt
+# Production SEO crawl policy
+# https://anatomynexus.com/
+
 User-agent: *
 Allow: /
-Disallow: /tools/
-Disallow: /search/
-Disallow: /*?embed=
-Sitemap: /sitemap.xml
+
+# Non-page application endpoints should not be crawled.
+# Keep CSS, JavaScript, images, fonts and static rendering assets crawlable.
+Disallow: /api/
+
+Sitemap: https://anatomynexus.com/sitemap.xml

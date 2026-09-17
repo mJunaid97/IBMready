@@ -11,6 +11,7 @@
  * page has related links and sources, every internal link resolves, the header typeahead, the explorer (geometry,
  * clinical card, multi-select, locate mode), the 3D facade loads the embed, the sitemap index and every URL in it,
  * the 301 rules (aliases, query URLs, index.html, trailing slash, retired paths), noindex on search, a real 404,
+ * the five child sitemaps and that no indexable page is orphaned,
  * the phone layout, and CSP compliance with the policy enforced.
  */
 import { chromium } from 'playwright';
@@ -23,6 +24,7 @@ const detailUrl = (dir, page, id) => PRETTY ? `${base}${dir}/${id}/` : `${base}$
 const dirUrl = (dir) => PRETTY ? `${base}${dir}/` : `${base}${dir}/index.html`;
 const out = new URL('./shots/', import.meta.url).pathname; mkdirSync(out, { recursive: true });
 const failures = [];
+let sitemapUrls = [];      // filled by the sitemap check, reused by the orphan check
 const fail = (msg) => { failures.push(msg); console.log('FAIL', msg); };
 const ok = (msg) => console.log('ok  ', msg);
 
@@ -47,12 +49,14 @@ const inspect = () => page.evaluate(() => {
   return { title: document.title, h1s: document.querySelectorAll('h1').length, h1: document.querySelector('h1')?.textContent.trim(), canonical: document.querySelector('link[rel="canonical"]')?.href || '', robots: document.querySelector('meta[name="robots"]')?.content || '',
     desc: document.querySelector('meta[name="description"]')?.content || '', og: document.querySelector('meta[property="og:title"]')?.content || '', crumbs: document.querySelectorAll('.breadcrumb li').length, ld: types, ldErr,
     undef: (document.body.innerText.match(/\bundefined\b|\[object Object\]|\bNaN\b/g) || []).length, hrefs: [...document.querySelectorAll('a[href]')].map(a => a.href), overflow: document.documentElement.scrollWidth > innerWidth + 1,
-    rel: document.querySelectorAll('.aside .chip').length, refs: document.querySelectorAll('.ref-list li').length, editorial: !!document.querySelector('.editorial'), facade: !!document.querySelector('.facade') };
+    rel: document.querySelectorAll('.aside .chip').length, refs: document.querySelectorAll('.ref-list li').length, editorial: !!document.querySelector('.editorial'), facade: !!document.querySelector('.facade'),
+    brand: !!document.querySelector('.site-header .brand img.logo-light[src*="site/logo/anatomy-nexus.svg"]') && !!document.querySelector('.site-footer .footer-brand img.logo-light') && !!document.querySelector('link[rel="icon"][href$="favicon.ico"]') && !!document.querySelector('link[rel="icon"][href$="favicon.svg"]') && !!document.querySelector('link[rel="apple-touch-icon"]') && !document.querySelector('.brand-mark'),
+    emoji: /[\u{1F300}-\u{1FAFF}\u{2600}-\u{27BF}]/u.test(document.querySelector('main')?.innerText || '') };
 });
 
 // 1. every page type renders with complete metadata
-const pages = ['', 'anatomy/', 'organs/', 'systems/', 'medical-terms/', 'study/', 'about/', 'editorial-policy/', 'medical-review-policy/', 'references-policy/', 'corrections-policy/', 'disclaimer/', 'contact/', 'roadmap/', 'search/?q=knee',
-  ...['physiology', 'symptoms', 'conditions', 'tests', 'biomarkers', 'imaging', 'procedures', 'medications', 'drug-classes', 'targets', 'first-aid', 'health', 'compare', 'interactions'].map(t => `${t}/`)].map(p => PRETTY || !p.endsWith('/') ? p : p + 'index.html');
+const pages = ['', 'anatomy/', 'organs/', 'systems/', 'medical-terms/', 'study/', 'tools/', 'tools/drug-interaction-checker/', 'editorial/drug-interaction-methodology/', 'about/', 'editorial-policy/', 'medical-review-policy/', 'references-policy/', 'corrections-policy/', 'disclaimer/', 'contact/', 'roadmap/', 'search/?q=knee',
+  ...['physiology', 'symptoms', 'conditions', 'tests', 'biomarkers', 'imaging', 'procedures', 'medications', 'drug-classes', 'targets', 'first-aid', 'health', 'compare', 'tests/categories', 'medications/classes'].map(t => `${t}/`)].map(p => PRETTY || !p.endsWith('/') ? p : p + 'index.html');
 const hrefs = new Set(); const titles = new Map();
 for (const p of pages) {
   await page.goto(base + p, { waitUntil: 'load' });
@@ -66,7 +70,9 @@ for (const p of pages) {
   if (r.ldErr || !r.ld.includes('BreadcrumbList') && p !== '' && !p.startsWith('search')) probs.push(`json-ld ${r.ldErr || r.ld.join(',')}`);
   if (p !== '' && r.crumbs < 2) probs.push(`breadcrumbs ${r.crumbs}`);
   if (r.undef) probs.push(`undefined text ×${r.undef}`); if (r.overflow) probs.push('overflow');
-  if ((p.startsWith('search') || p.startsWith('interactions')) && !/noindex/.test(r.robots)) probs.push(`${p} is indexable`);
+  if (!r.brand) probs.push('brand: logo, favicon set or apple-touch-icon missing'); if (r.emoji) probs.push('emoji used as an icon');
+  if (p.startsWith('search') && !/noindex/.test(r.robots)) probs.push(`${p} is indexable`);
+  if (p.startsWith('tools/drug-interaction-checker') && (!/index/.test(r.robots) || /noindex/.test(r.robots) || !/\/tools\/drug-interaction-checker\/$/.test(r.canonical) || !r.ld.includes('WebApplication'))) probs.push(`checker: robots "${r.robots}", canonical ${r.canonical}, schema ${r.ld.join(',')}`);
   if (titles.has(r.title)) probs.push(`duplicate title of ${titles.get(r.title)}`); titles.set(r.title, p || '/');
   if (probs.length) fail(`${p || '/'}: ${probs.join('; ')}`); else ok(`${p || '/'} · ${r.h1}`);
 }
@@ -93,6 +99,7 @@ for (const [kind, id, u, needsRefs] of entityPages) {
   if (r.ldErr || !r.ld.includes('BreadcrumbList') || !r.ld.includes('MedicalWebPage')) probs.push(`json-ld ${r.ldErr || r.ld.join(',')}`);
   if (r.crumbs < 3) probs.push(`breadcrumbs ${r.crumbs}`);
   if (!r.rel) probs.push('no related links'); if (needsRefs && !r.refs) probs.push('no sources'); if (!r.editorial) probs.push('no editorial block');
+  if (!r.brand) probs.push('brand assets missing'); if (r.emoji) probs.push('emoji used as an icon');
   if (r.undef) probs.push(`undefined text ×${r.undef}`);
   if (titles.has(r.title)) probs.push(`duplicate title of ${titles.get(r.title)}`); titles.set(r.title, `${kind}/${id}`);
   if (descs.has(r.desc)) probs.push(`duplicate description of ${descs.get(r.desc)}`); descs.set(r.desc, `${kind}/${id}`);
@@ -135,11 +142,60 @@ if (thr < 2) fail(`troponin page: thresholds missing (${thr})`); else ok('tropon
 await page.goto(detailUrl('compare', 'compare.html', 'crp-vs-esr'), { waitUntil: 'load' }); await rendered();
 const cmp = await page.evaluate(() => ({ rows: document.querySelectorAll('table.compare tbody tr').length, h1: document.querySelector('h1')?.textContent, refs: document.querySelectorAll('.ref-list li').length, ld: (document.getElementById('jsonld')?.textContent || '').includes('BreadcrumbList') }));
 if (!(cmp.rows >= 3 && /CRP vs ESR/.test(cmp.h1) && cmp.refs >= 1 && cmp.ld)) fail(`comparison page: ${JSON.stringify(cmp)}`); else ok(`comparison page: ${cmp.rows} rows, ${cmp.refs} sources`);
-const chk = async (drugs) => { await page.goto(base + 'interactions/' + (PRETTY ? '' : 'index.html') + '?drugs=' + drugs, { waitUntil: 'load' }); await page.waitForFunction(() => document.querySelectorAll('#chk-chips .chk-chip').length >= 2 && document.querySelector('#chk-results h2'), null, { timeout: 30000 }); return page.evaluate(() => ({ chips: document.querySelectorAll('#chk-chips .chk-chip').length, cards: document.querySelectorAll('#chk-results .ix-card').length, dup: document.querySelectorAll('#chk-results .callout.urgent').length, none: document.body.innerText.includes('No documented interaction found'), safe: /\bSAFE\b/.test(document.body.innerText), robots: document.querySelector('meta[name="robots"]')?.content })); };
-const c1 = await chk('lisinopril,ibuprofen'); if (!(c1.chips === 2 && c1.cards >= 1 && !c1.safe && /noindex/.test(c1.robots))) fail(`checker lisinopril+ibuprofen: ${JSON.stringify(c1)}`); else ok(`checker: lisinopril + ibuprofen → ${c1.cards} card(s), noindex`);
-const c2 = await chk('paracetamol,co-codamol'); if (!(c2.chips === 2 && c2.dup >= 1)) fail(`checker duplication: ${JSON.stringify(c2)}`); else ok('checker: paracetamol + co-codamol flags therapeutic duplication');
-const c3 = await chk('amoxicillin,cetirizine'); if (!(c3.chips === 2 && c3.cards === 0 && c3.none && !c3.safe)) fail(`checker no-interaction state: ${JSON.stringify(c3)}`); else ok('checker: no-interaction wording is the safe form');
-const c4 = await chk('norvasc,statins'); if (!(c4.chips === 2)) fail(`checker brand and class resolution: ${JSON.stringify(c4)}`); else ok('checker: brand (Norvasc) and class (statins) resolve');
+// the Drug Interaction Checker: shared state, every pair, severity-first order, duplication, the cautious no-interaction wording, related links, sources
+const checkerUrl = (q) => base + 'tools/drug-interaction-checker/' + (PRETTY ? '' : 'index.html') + (q ? '?' + q : '');
+const chk = async (drugs, min = 2) => { await page.goto(checkerUrl('drugs=' + drugs), { waitUntil: 'load' }); await page.waitForFunction((min) => document.querySelectorAll('#chk-chips .chk-chip').length >= min && document.body.dataset.rendered === '1', min, { timeout: 30000 }); return page.evaluate(() => ({
+  chips: document.querySelectorAll('#chk-chips .chk-chip').length, summary: !!document.querySelector('.chk-summary'), pairsText: (document.querySelector('.chk-stats')?.innerText || '').replace(/\s+/g, ' '), cards: document.querySelectorAll('#chk-results .pair-card:not(.dup-card)').length, dup: document.querySelectorAll('#chk-results .dup-card').length,
+  groups: [...document.querySelectorAll('.chk-group > h2')].map(h => h.id), noneList: document.querySelectorAll('.chk-none li').length, none: document.body.innerText.includes('No known interaction identified in the available data'), safe: /\bsafe to take\b|\bno interaction exists\b/i.test(document.body.innerText),
+  tiers: document.querySelectorAll('#chk-results .tier').length, sources: document.querySelectorAll('#chk-results a[data-source]').length, related: document.querySelectorAll('#chk-results a[data-related]').length, refs: document.querySelectorAll('#chk-results .ref-list li').length,
+  robots: document.querySelector('meta[name="robots"]')?.content, canonical: document.querySelector('link[rel="canonical"]')?.href || '', severe: !!document.querySelector('#chk-results .callout.urgent'), msg: document.getElementById('chk-msg')?.textContent || '' })); };
+const c1 = await chk('losartan,ibuprofen');
+if (!(c1.chips === 2 && c1.summary && c1.cards >= 1 && c1.groups[0] === 'g-moderate' && c1.tiers >= 3 && c1.sources >= 2 && c1.related >= 3 && c1.refs >= 2 && !c1.safe && /^index/.test(c1.robots) && /\/tools\/drug-interaction-checker\/$/.test(c1.canonical))) fail(`checker losartan+ibuprofen: ${JSON.stringify(c1)}`); else ok(`checker: losartan + ibuprofen → moderate pair card with ${c1.sources} source links, ${c1.related} related links, indexable with a fixed canonical`);
+const c2 = await chk('amlodipine,losartan,ibuprofen,warfarin');
+if (!(c2.chips === 4 && /6 medication pairs/.test(c2.pairsText) && c2.groups[0] === 'g-contraindicated' && c2.groups.includes('g-none') && c2.noneList >= 2 && c2.none && c2.severe)) fail(`checker four medicines: ${JSON.stringify(c2)}`); else ok(`checker: 4 medicines → 6 pairs, contraindicated first (${c2.groups.join(' › ')}), ${c2.noneList} pairs with no known interaction`);
+const c3 = await chk('paracetamol,co-codamol'); if (!(c3.chips === 2 && c3.dup >= 1 && c3.groups.includes('g-dup'))) fail(`checker duplication: ${JSON.stringify(c3)}`); else ok('checker: paracetamol + co-codamol flags the duplicate ingredient');
+const c4 = await chk('amoxicillin,cetirizine'); if (!(c4.chips === 2 && c4.cards === 0 && c4.dup === 0 && c4.noneList === 1 && c4.none && !c4.safe)) fail(`checker no-interaction state: ${JSON.stringify(c4)}`); else ok('checker: no-interaction wording is the cautious form');
+const c5 = await chk('norvasc,simvastatin'); if (!(c5.chips === 2 && c5.cards >= 1)) fail(`checker brand and named substance: ${JSON.stringify(c5)}`); else ok('checker: brand (Norvasc) and named substance (simvastatin) resolve to a record');
+const c6 = await chk('amlodipine,statins', 1); if (!(c6.chips === 1 && /could not match/.test(c6.msg) && /drug class/.test(c6.msg))) fail(`checker unknown entry: ${JSON.stringify(c6)}`); else ok('checker: an unmatched entry (a drug class) is reported, not silently dropped');
+// ?drug= from a medication page pre-selects the medicine; the combobox adds another by keyboard and the check runs
+await page.goto(checkerUrl('drug=amlodipine'), { waitUntil: 'load' }); await page.waitForFunction(() => document.body.dataset.rendered === '1', null, { timeout: 30000 });
+await page.fill('#chk-q', 'warfarn'); await page.waitForTimeout(150);
+const kb = await page.evaluate(() => ({ expanded: document.getElementById('chk-q').getAttribute('aria-expanded'), options: document.querySelectorAll('#chk-sugg [role="option"]').length, role: document.getElementById('chk-q').getAttribute('role') }));
+await page.keyboard.press('ArrowDown'); await page.keyboard.press('Enter'); await page.waitForTimeout(150); await page.click('#chk-check'); await page.waitForTimeout(300);
+const kb2 = await page.evaluate(() => ({ chips: document.querySelectorAll('#chk-chips .chk-chip').length, summary: !!document.querySelector('.chk-summary'), url: location.search, focused: document.activeElement?.id, status: document.getElementById('chk-status')?.textContent || '' }));
+if (!(kb.role === 'combobox' && kb.expanded === 'true' && kb.options >= 1 && kb2.chips === 2 && kb2.summary && /drugs=amlodipine(,|%2C)warfarin/.test(kb2.url) && kb2.focused === 'chk-results-h' && /Checked 2 medications/.test(kb2.status))) fail(`checker keyboard flow: ${JSON.stringify({ kb, kb2 })}`); else ok('checker: ?drug= preselects, a misspelt name is suggested, keyboard adds it, the check runs, focus and a live announcement land on the results');
+// the medication page carries the Check interactions section and links into the checker; the methodology page lists the mapping
+await page.goto(detailUrl('medications', 'medication.html', 'amlodipine'), { waitUntil: 'load' }); await rendered();
+const cta = await page.evaluate(() => ({ cta: !!document.querySelector('.check-cta a.btn'), href: document.querySelector('.check-cta a.btn')?.getAttribute('href') || '', tiers: document.querySelectorAll('.ix-card .tier').length }));
+if (!(cta.cta && /drug-interaction-checker\/?(index\.html)?\?drug=amlodipine$/.test(cta.href) && cta.tiers >= 1)) fail(`medication page checker CTA: ${JSON.stringify(cta)}`); else ok('medication page: Check interactions section links into the checker with the medicine pre-selected; cards carry severity tiers');
+await page.goto(dirUrl('editorial/drug-interaction-methodology'), { waitUntil: 'load' }); await rendered();
+const meth = await page.evaluate(() => ({ rows: document.querySelectorAll('#ix-tiers tbody tr').length, facts: document.querySelectorAll('#ix-facts dd').length }));
+if (!(meth.rows >= 6 && meth.facts >= 4)) fail(`methodology page: ${JSON.stringify(meth)}`); else ok(`methodology page: ${meth.rows} severity mappings, ${meth.facts} data facts`);
+// 4e. taxonomy layer: the test-category hub, a category page, the medication class hub, terminology and availability on entity pages
+await page.goto(base + 'tests/categories/' + (PRETTY ? '' : 'index.html'), { waitUntil: 'load' }); await rendered();
+const hub = await page.evaluate(() => ({ cards: document.querySelectorAll('.card').length, groups: document.querySelectorAll('h2').length, ld: (document.getElementById('jsonld')?.textContent || '').includes('ItemList') }));
+if (!(hub.cards >= 30 && hub.groups >= 4 && hub.ld)) fail(`test categories hub: ${JSON.stringify(hub)}`); else ok(`test categories hub: ${hub.cards} categories in ${hub.groups} groups`);
+await page.goto(PRETTY ? base + 'tests/categories/blood-haematology/' : base + 'tests/category.html?id=blood-haematology', { waitUntil: 'load' }); await rendered();
+const catp = await page.evaluate(() => ({ h1: document.querySelector('h1')?.textContent, pages: document.querySelectorAll('#pages ~ .grid .card, h2#pages + .grid .card').length, catalogue: document.querySelectorAll('.catalogue li').length, crumbs: document.querySelectorAll('.breadcrumb li').length, robots: document.querySelector('meta[name="robots"]')?.content, canonical: document.querySelector('link[rel="canonical"]')?.href || '' }));
+if (!(/haematology/i.test(catp.h1) && catp.pages >= 2 && catp.catalogue >= 10 && catp.crumbs >= 4 && /index/.test(catp.robots) && /tests\/categories\/blood-haematology/.test(catp.canonical))) fail(`test category page: ${JSON.stringify(catp)}`); else ok(`test category page: ${catp.pages} pages, ${catp.catalogue} catalogued concepts`);
+await page.goto(PRETTY ? base + 'tests/categories/sleep/' : base + 'tests/category.html?id=sleep', { waitUntil: 'load' }); await rendered();
+const sleep = await page.evaluate(() => document.querySelector('meta[name="robots"]')?.content || '');
+if (!/noindex/.test(sleep)) fail(`a category without pages must be noindex (sleep: ${sleep})`); else ok('empty test category is noindex');
+await page.goto(base + 'medications/classes/' + (PRETTY ? '' : 'index.html'), { waitUntil: 'load' }); await rendered();
+const cls = await page.evaluate(() => ({ areas: document.querySelectorAll('.tax-area').length, classes: document.querySelectorAll('.classes li').length, linked: document.querySelectorAll('.classes li a[href*="drug-classes"]').length, atc: document.querySelectorAll('#atc ~ .table-wrap tbody tr').length }));
+if (!(cls.areas >= 25 && cls.classes >= 300 && cls.linked >= 20 && cls.atc === 14)) fail(`medication class hub: ${JSON.stringify(cls)}`); else ok(`medication class hub: ${cls.areas} areas, ${cls.classes} classes, ${cls.linked} linked to pages`);
+await page.fill('#q', 'statin'); await page.waitForTimeout(300);
+const filtered = await page.evaluate(() => [...document.querySelectorAll('.classes li')].filter(li => !li.hidden).length);
+if (!(filtered >= 1 && filtered < cls.classes)) fail(`class hub filter: ${filtered} of ${cls.classes}`); else ok(`class hub filter: ${filtered} classes match "statin"`);
+await page.goto(detailUrl('tests', 'test.html', 'creatinine-egfr'), { waitUntil: 'load' }); await rendered();
+const term = await page.evaluate(() => ({ loinc: /LOINC/.test(document.querySelector('.facts')?.textContent || ''), cat: [...document.querySelectorAll('.breadcrumb a')].some(a => /tests\/categories\//.test(a.href)), kind: /Laboratory test/.test(document.querySelector('.facts')?.textContent || ''), monitors: !!document.getElementById('monitors'), ld: (document.getElementById('jsonld')?.textContent || '').includes('MedicalCode') }));
+if (!(term.loinc && term.cat && term.kind && term.monitors && term.ld)) fail(`test page terminology/taxonomy: ${JSON.stringify(term)}`); else ok('test page: LOINC codes, kind, category breadcrumb, monitored medicines, MedicalCode schema');
+await page.goto(detailUrl('medications', 'medication.html', 'omeprazole'), { waitUntil: 'load' }); await rendered();
+const avail = await page.evaluate(() => ({ avail: document.querySelectorAll('#availability ~ .table-wrap tbody tr').length, same: !!document.getElementById('same-class'), rx: /RxNorm/.test(document.querySelector('.facts')?.textContent || ''), routes: /Oral/.test(document.querySelector('.facts')?.textContent || ''), ld: (document.getElementById('jsonld')?.textContent || '').includes('"ATC"') }));
+if (!(avail.avail >= 2 && avail.same && avail.rx && avail.routes && avail.ld)) fail(`medication page taxonomy: ${JSON.stringify(avail)}`); else ok(`medication page: availability by country (${avail.avail} rows), same-class medicines, RxNorm/ATC codes`);
+await page.goto(dirUrl('tests'), { waitUntil: 'load' }); await rendered();
+const facetSel = await page.evaluate(() => document.querySelectorAll('#facets select').length);
+if (facetSel < 2) fail(`tests hub facets: ${facetSel} selects`); else { await page.selectOption('#facets select[data-facet="specimens"]', 'serum'); await page.waitForTimeout(400); const nf = await page.evaluate(() => document.querySelectorAll('#cards .card').length); if (!(nf >= 1 && nf < 25)) fail(`tests hub specimen facet: ${nf} cards`); else ok(`tests hub facets: ${facetSel} selects, ${nf} serum tests`); }
 // typeahead resolves a brand to its generic page
 await page.goto(base, { waitUntil: 'load' }); await page.fill('#hsearch-q', 'cozaar'); await page.waitForTimeout(800);
 const brand = await page.evaluate(() => document.querySelector('#hsearch-results li a')?.getAttribute('href') || '');
@@ -175,17 +231,87 @@ if (sm.status() !== 200) fail(`sitemap.xml returned ${sm.status()}`);
 else {
   const xml = await sm.text(); const locs = [...xml.matchAll(/<loc>([^<]+)<\/loc>/g)].map(m => m[1]);
   if (/<sitemapindex/.test(xml)) {
-    let total = 0, bad = 0, sampled = 0;
+    // specification section 6: exactly five child sitemaps, in this order
+    const want = ['core', 'anatomy', 'clinical', 'medications', 'learning'];
+    const got = locs.map(l => l.replace(/^.*\/sitemaps\//, '').replace(/\.xml$/, ''));
+    if (got.join(',') !== want.join(',')) fail(`sitemap index children are [${got}], expected [${want}]`);
+    else ok('sitemap index names the five specified child sitemaps');
+    let total = 0, bad = 0, sampled = 0; const allUrls = [];
     for (const child of locs) {
       const r = await page.request.get(child.replace(/^https?:\/\/[^/]+\//, base)); if (r.status() !== 200) { bad++; fail(`sitemap ${child} returned ${r.status()}`); continue; }
-      const urls = [...(await r.text()).matchAll(/<loc>([^<]+)<\/loc>/g)].map(m => m[1]); total += urls.length;
-      for (const u of urls) { const rr = await page.request.get(u.replace(/^https?:\/\/[^/]+\//, base), { maxRedirects: 0 }); sampled++; if (rr.status() !== 200) { bad++; fail(`sitemap URL ${rr.status()} ${u}`); } }
+      const body = await r.text();
+      // specification section 8: <lastmod> only; <priority> and <changefreq> must never be emitted
+      if (/<priority>/.test(body)) { bad++; fail(`sitemap ${child} emits <priority>`); }
+      if (/<changefreq>/.test(body)) { bad++; fail(`sitemap ${child} emits <changefreq>`); }
+      const urls = [...body.matchAll(/<loc>([^<]+)<\/loc>/g)].map(m => m[1]); total += urls.length; allUrls.push(...urls);
+      if (!urls.length) { bad++; fail(`sitemap ${child} is empty`); }
+      for (const u of urls) {
+        if (!/^https:\/\//.test(u)) { bad++; fail(`sitemap URL is not absolute https: ${u}`); }
+        if (/^https:\/\/www\./.test(u)) { bad++; fail(`sitemap URL uses the www host: ${u}`); }
+        if (u.includes('?')) { bad++; fail(`sitemap URL carries a query string: ${u}`); }
+        const rr = await page.request.get(u.replace(/^https?:\/\/[^/]+\//, base), { maxRedirects: 0 }); sampled++;
+        if (rr.status() !== 200) { bad++; fail(`sitemap URL ${rr.status()} ${u}`); continue; }
+        if (STATIC) {
+          // specification section 38: no sitemap URL may carry noindex or canonicalise somewhere else
+          const html = await rr.text();
+          if (/noindex/i.test(/<meta[^>]+name="robots"[^>]+content="([^"]*)"/i.exec(html)?.[1] || '')) { bad++; fail(`sitemap URL is noindex: ${u}`); }
+          const canon = /<link[^>]+rel="canonical"[^>]+href="([^"]*)"/i.exec(html)?.[1];
+          if (!canon) { bad++; fail(`sitemap URL has no canonical: ${u}`); }
+          else if (canon.replace(/^https?:\/\/[^/]+\//, base).replace(/\/$/, '') !== u.replace(/^https?:\/\/[^/]+\//, base).replace(/\/$/, ''))
+            { bad++; fail(`sitemap URL canonicalises elsewhere: ${u} → ${canon}`); }
+        }
+      }
     }
+    const dupes = allUrls.filter((u, i) => allUrls.indexOf(u) !== i);
+    if (dupes.length) { bad++; fail(`duplicate sitemap URLs: ${[...new Set(dupes)].slice(0, 5).join(', ')}`); }
+    sitemapUrls = allUrls;
     ok(`sitemap index: ${locs.length} sitemaps, ${total} URLs, ${sampled} fetched, ${bad} bad`);
-  } else ok(`sitemap: ${locs.length} URLs (single file)`);
+  } else fail('sitemap.xml is not a sitemap index (specification section 9 requires one)');
 }
-const robots = await (await page.request.get(base + 'robots.txt')).text();
-if (!/Disallow: \/search\//.test(robots) || !/Sitemap:/.test(robots)) fail(`robots.txt: ${robots.slice(0, 120)}`); else ok('robots.txt disallows search and names the sitemap');
+const robotsRes = await page.request.get(base + 'robots.txt');
+const robots = await robotsRes.text();
+{
+  const probs = [];
+  if (robotsRes.status() !== 200) probs.push(`status ${robotsRes.status()}`);
+  if (!/^text\/plain/.test(robotsRes.headers()['content-type'] || '')) probs.push(`content-type ${robotsRes.headers()['content-type']}`);
+  if (!/^Sitemap:\s*https:\/\/\S+\/sitemap\.xml\s*$/m.test(robots)) probs.push('no absolute Sitemap: line');
+  if (/^Disallow:\s*\/\s*$/m.test(robots)) probs.push('blanket "Disallow: /"');
+  // specification section 5: rendering assets stay crawlable, and the clinical tools are indexable pages
+  for (const bad of [/^Disallow:.*\.(css|js)\s*$/m, /^Disallow:\s*\/site\//m, /^Disallow:\s*\/vendor\//m, /^Disallow:\s*\/data\//m, /^Disallow:\s*\/tools\//m])
+    if (bad.test(robots)) probs.push(`blocks a path needed for rendering or a public tool (${bad})`);
+  // specification section 4: robots.txt is not a noindex mechanism — a blocked page can never be read for it
+  if (/^Disallow:\s*\/search\//m.test(robots)) probs.push('blocks /search/ (it must stay crawlable to be read for its noindex)');
+  if (probs.length) fail(`robots.txt: ${probs.join('; ')}`); else ok('robots.txt: 200 text/plain, absolute sitemap, nothing needed for rendering or tools blocked');
+}
+// 6b. no orphans: every sitemap URL must be reachable by a crawlable <a href> from another indexable page
+// (specification section 12: "Every orphaned indexable page is a failure"). Only meaningful against prerendered
+// HTML, where the links are in the initial response rather than added by the page script after load.
+if (STATIC && sitemapUrls.length) {
+  const localOf = (u) => u.replace(/^https?:\/\/[^/]+\//, base);
+  const linkedTo = new Set();
+  let scanned = 0, unreadable = 0;
+  for (const u of sitemapUrls) {
+    const from = localOf(u);
+    const r = await page.request.get(from).catch(() => null);
+    if (!r || r.status() !== 200) { unreadable++; continue; }
+    scanned++;
+    for (const m of (await r.text()).matchAll(/<a\b[^>]*?\shref="([^"]+)"/gi)) {
+      let target;
+      try { target = new URL(m[1], from); } catch { continue; }
+      const abs = target.origin + target.pathname;           // ignore #fragments and ?queries
+      if (!abs.startsWith(base) || abs === from) continue;    // external, or a self-link
+      linkedTo.add(abs);
+    }
+  }
+  // Policy and contact pages are reached from the footer; the specification allows deliberately standalone
+  // pages to be exempt, so anything listed here must be justified rather than added to silence a failure.
+  const EXEMPT = new Set([]);
+  const orphans = sitemapUrls.map(localOf).filter(u => !linkedTo.has(u) && !EXEMPT.has(u));
+  if (unreadable) fail(`orphan check could not read ${unreadable} sitemap URLs`);
+  if (orphans.length) fail(`${orphans.length} orphaned sitemap URLs (no inbound internal link): ${orphans.slice(0, 8).map(u => u.replace(base, '/')).join(', ')}${orphans.length > 8 ? ' …' : ''}`);
+  else ok(`no orphans: all ${sitemapUrls.length} sitemap URLs are linked from another page (${scanned} pages crawled, ${linkedTo.size} distinct targets)`);
+}
+
 if (STATIC) {
   // analytics and search-console verification, when configured, must be in the initial HTML of the home page
   const meta = await (await page.request.get(base + 'site/site-meta.js')).text();
@@ -197,7 +323,7 @@ if (STATIC) {
     if (gsc && !home.includes(`<meta name="google-site-verification" content="${gsc}">`)) fail('home HTML lacks the google-site-verification meta tag');
     ok(`analytics/verification present in the initial HTML (${[ga4 && 'GA4 ' + ga4, gsc && 'GSC meta'].filter(Boolean).join(', ')})`);
   }
-  for (const u of ['', detailUrl('conditions', 'condition.html', 'gout'), detailUrl('anatomy', 'organ.html', 'heart'), detailUrl('medications', 'medication.html', 'amlodipine'), dirUrl('tests')]) {
+  for (const u of ['', detailUrl('conditions', 'condition.html', 'gout'), detailUrl('anatomy', 'organ.html', 'heart'), detailUrl('medications', 'medication.html', 'amlodipine'), dirUrl('tests'), dirUrl('tools/drug-interaction-checker'), dirUrl('tools')]) {
     const html = await (await page.request.get(base + u.replace(base, ''))).text();
     const probs = [];
     if (/Loading…/.test(html)) probs.push('Loading placeholder'); if (!/<h1[^>]*>[^<]+<\/h1>/.test(html)) probs.push('no h1'); if (!/<link rel="canonical" href="https?:\/\//.test(html)) probs.push('no absolute canonical');
@@ -217,7 +343,9 @@ if (PRETTY) {
   if (nf2[0] !== 404) fail(`unknown entity slug returned ${nf2[0]} instead of 404`);
   const expect = [['tests/cbc/', '/tests/complete-blood-count/'], ['medications/norvasc', '/medications/amlodipine/'], ['conditions/heart-attack/', '/conditions/myocardial-infarction/'], ['conditions/gout', '/conditions/gout/'], ['conditions/condition.html?id=gout', '/conditions/gout/'],
     ['organs/heart/', '/anatomy/heart/'], ['organs/organ.html?id=liver', '/anatomy/liver/'], ['anatomy/cardiac/', '/anatomy/heart/'], ['learn/terminology.html', '/medical-terms/'], ['conditions/index.html', '/conditions/'], ['index.html', '/'],
-    ['tests/cardiac-biomarkers/', '/tests/troponin/'], ['tests/inflammatory-markers/', '/tests/crp/'], ['tests/egfr/', '/tests/creatinine-egfr/'], ['biomarkers/hb/', '/biomarkers/haemoglobin/'], ['compare/compare.html?id=crp-vs-esr', '/compare/crp-vs-esr/'], ['compare/crp-vs-esr', '/compare/crp-vs-esr/']];
+    ['tests/cardiac-biomarkers/', '/tests/troponin/'], ['tests/inflammatory-markers/', '/tests/crp/'], ['tests/egfr/', '/tests/creatinine-egfr/'], ['biomarkers/hb/', '/biomarkers/haemoglobin/'], ['compare/compare.html?id=crp-vs-esr', '/compare/crp-vs-esr/'], ['compare/crp-vs-esr', '/compare/crp-vs-esr/'],
+    ['interactions/', '/tools/drug-interaction-checker/'], ['interactions/?drugs=amlodipine,losartan', '/tools/drug-interaction-checker/?drugs=amlodipine,losartan'],
+    ['medications/classes/statins/', '/drug-classes/statins/'], ['medications/classes/acei/', '/drug-classes/ace-inhibitors/'], ['tests/category.html?id=blood-haematology', '/tests/categories/blood-haematology/'], ['tests/categories/blood-haematology', '/tests/categories/blood-haematology/'], ['tests/categories/blood-hematology/', '/tests/categories/blood-haematology/']];
   let bad = 0;
   for (const [from, to] of expect) { const [s, loc] = await status(from); if (s !== 301 || !loc.endsWith(to)) { bad++; fail(`redirect ${from}: ${s} ${loc} (expected 301 ${to})`); } }
   ok(`${expect.length} redirect rules checked, ${bad} wrong`);
@@ -225,7 +353,7 @@ if (PRETTY) {
 
 // 8. phone layout has no horizontal overflow
 const m = await (await browser.newContext({ viewport: { width: 390, height: 844 }, isMobile: true, hasTouch: true, bypassCSP: true })).newPage();
-for (const p of ['', detailUrl('conditions', 'condition.html', 'gout').replace(base, ''), detailUrl('first-aid', 'topic.html', 'cpr').replace(base, ''), detailUrl('anatomy', 'organ.html', 'heart').replace(base, ''), dirUrl('tests').replace(base, ''), 'search/?q=heart']) {
+for (const p of ['', detailUrl('conditions', 'condition.html', 'gout').replace(base, ''), detailUrl('first-aid', 'topic.html', 'cpr').replace(base, ''), detailUrl('anatomy', 'organ.html', 'heart').replace(base, ''), dirUrl('tests').replace(base, ''), 'search/?q=heart', checkerUrl('drugs=amlodipine,losartan,ibuprofen,warfarin').replace(base, ''), dirUrl('tools').replace(base, '')]) {
   await m.goto(base + p, { waitUntil: 'load' }); await m.waitForTimeout(1200);
   const w = await m.evaluate(() => ({ s: document.documentElement.scrollWidth, v: innerWidth }));
   if (w.s > w.v + 1) fail(`phone overflow on ${p || '/'}: ${w.s} > ${w.v}`);
@@ -237,7 +365,7 @@ const strict = await (await browser.newContext({ viewport: { width: 1200, height
 const cspMsgs = [];
 strict.on('console', (msg) => { if ((msg.type() === 'error' && ownError(msg)) || /Content Security Policy|Refused to/.test(msg.text())) cspMsgs.push(`${strict.url().replace(base, '/')}: ${msg.text().slice(0, 200)}`); });
 strict.on('pageerror', (e) => cspMsgs.push(`${strict.url().replace(base, '/')}: ${e.message.slice(0, 200)}`));
-for (const p of ['', detailUrl('systems', 'system.html', 'heart'), detailUrl('anatomy', 'organ.html', 'liver'), detailUrl('conditions', 'condition.html', 'gout'), detailUrl('first-aid', 'topic.html', 'cpr'), dirUrl('study'), 'search/?q=liver', dirUrl('medical-terms'), dirUrl('about')].map(u => u.replace(base, ''))) {
+for (const p of ['', detailUrl('systems', 'system.html', 'heart'), detailUrl('anatomy', 'organ.html', 'liver'), detailUrl('conditions', 'condition.html', 'gout'), detailUrl('first-aid', 'topic.html', 'cpr'), dirUrl('study'), 'search/?q=liver', dirUrl('medical-terms'), dirUrl('about'), checkerUrl('drugs=losartan,ibuprofen'), dirUrl('tools'), dirUrl('editorial/drug-interaction-methodology')].map(u => u.replace(base, ''))) {
   await strict.goto(base + p, { waitUntil: 'load' }); await strict.waitForTimeout(2000);
   const html = await strict.content();
   if (!/<h1/.test(html) || /Loading…/.test(html)) fail(`CSP pass: ${p || '/'} did not render`);

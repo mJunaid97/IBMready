@@ -18,7 +18,8 @@ contains only what the site serves, plus:
   server sends complete pages with metadata, structured data and links; the scripts only add
   interactivity
 - `site/config.js` with your public URL and clean URLs switched on
-- `sitemap.xml` (an index of one sitemap per section), `robots.txt`, canonical links, per-page
+- `sitemap.xml` (an index of the five child sitemaps core, anatomy, clinical, medications and
+  learning), `robots.txt`, canonical links, per-page
   social preview images
 - `.htaccess`: HTTPS and one host in a single hop, the 301 rules (aliases, query URLs, `index.html`,
   trailing slashes, retired paths), correct media types, gzip/brotli, caching, security headers,

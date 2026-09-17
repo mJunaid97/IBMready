@@ -29,15 +29,20 @@ One canonical, lowercase, hyphenated, trailing-slash URL per entity, flat under 
 | Medical terms | `/medical-terms/#distal` | one substantial glossary page; per-term pages are deliberately not published while entries are short |
 | Hubs | `/anatomy/`, `/organs/`, `/systems/`, `/conditions/` … `/medical-terms/`, `/study/`, `/explorer/` | |
 | Policies | `/about/`, `/editorial-policy/`, `/medical-review-policy/`, `/references-policy/`, `/corrections-policy/`, `/disclaimer/`, `/contact/` | linked from every footer |
-| Noindex | `/search/`, `/roadmap/`, `/explorer/?embed=1`, `?cat=` hub filters (canonical → hub), organ pages without an article, any entity failing the quality gate | |
+| Test taxonomy (v1.4) | `/tests/categories/`, `/tests/categories/blood-haematology/` | the 36 categories of the master test taxonomy; a category page is indexable only when it has at least two pages, otherwise `noindex,follow`; American spellings 301 to the British canonical slug |
+| Medication taxonomy (v1.4) | `/medications/classes/` | therapeutic areas → classes → medicines with ATC codes; `/medications/classes/<class>/` (the specification's recommended address) 301s to the canonical `/drug-classes/<class>/`, and `/tools/drug-interaction-checker/?drug=<ingredient>` 301s to `/interactions/` with the medicine preloaded |
+| Noindex | `/search/`, `/roadmap/`, `/explorer/?embed=1`, `?cat=` hub filters (canonical → hub), organ pages without an article, any entity failing the quality gate, test categories with fewer than two pages | |
 
 Ids were renamed to their canonical form (`cbc → complete-blood-count`, `xray → x-ray`, `ct → ct-scan`,
 `pet → pet-scan`); the old ids live on as aliases.
 
 The clinical layer (v1.2) adds `/biomarkers/<slug>/`, `/targets/<slug>/` and `/compare/<slug>/`
-as indexable sections with their own sitemaps, and `/interactions/` (the checker) as a `noindex`
-tool page that is linked but never in a sitemap; no interaction pair pages are generated
-(specification §88). Single-analyte tests that were folded into panel pages now have canonical
+as indexable sections with their own sitemaps. The Drug Interaction Checker lives at
+`/tools/drug-interaction-checker/` (the clinical tools hub is `/tools/`, its methodology page
+`/editorial/drug-interaction-methodology/`): the tool page itself is indexable and in the `pages`
+sitemap, every `?drugs=` / `?drug=` state carries the canonical of the bare page so arbitrary
+combinations are never indexed, and no interaction pair pages are generated (specification §88).
+The old `/interactions/` URL is a one-hop 301 that keeps its query string. Single-analyte tests that were folded into panel pages now have canonical
 pages of their own (`/tests/troponin/`, `/tests/bnp/`, `/tests/crp/`, `/tests/esr/`,
 `/tests/tsh/`, `/tests/ferritin/`, `/tests/creatinine-egfr/`); the old ids
 (`cardiac-biomarkers`, `inflammatory-markers`) and the analyte aliases that pointed at panels
@@ -106,21 +111,41 @@ intestine). Each content file carries `_updated`, changed by hand when visible c
 
 ## 8. Sitemaps and robots
 
-`/sitemap.xml` is an index of `/sitemaps/pages.xml`, `anatomy.xml`, `systems.xml`, `physiology.xml`,
-`symptoms.xml`, `conditions.xml`, `tests.xml`, `imaging.xml`, `procedures.xml`, `medications.xml`,
-`drug-classes.xml`, `first-aid.xml`, `health.xml`, containing only canonical, indexable, 200-status URLs with
-meaningful `lastmod`. `robots.txt` allows everything except `/tools/`, `/search/` and `?embed=` views and names
-the sitemap. Rendering assets are never blocked.
+`/sitemap.xml` is an index of exactly five child sitemaps, as the SEO Foundation specification (section 6)
+requires. `tools/package-site.py` assigns every URL to exactly one group through `SECTION_GROUP` and `PAGES`:
 
-Sections of the sitemap index in v1.2: pages, anatomy, systems, physiology, symptoms, conditions,
-tests, biomarkers, imaging, procedures, medications, drug-classes, targets, first-aid, health,
-compare.
+| Child sitemap | Contents | URLs in v1.6 |
+| --- | --- | --- |
+| `/sitemaps/core.xml` | home, `/explorer/`, the tools hub and Drug Interaction Checker, the methodology page, About and the trust/policy pages | 12 |
+| `/sitemaps/anatomy.xml` | the `/anatomy/`, `/systems/` and `/organs/` hubs, every organ article and body system | 31 |
+| `/sitemaps/clinical.xml` | physiology, symptoms, conditions, tests, the test-category hub and its indexable categories, biomarkers, imaging, procedures, first aid, health, comparisons | 245 |
+| `/sitemaps/medications.xml` | medications, the class hub, drug classes, drug targets | 92 |
+| `/sitemaps/learning.xml` | `/medical-terms/`, `/study/` | 2 |
+
+Every entry carries only `<loc>` and a meaningful `<lastmod>`; `<changefreq>` and `<priority>` are never
+emitted, because Google does not use them (specification section 8). One function decides membership —
+`sitemap_eligible()` in `tools/package-site.py` — so indexability is read in a single place: a URL qualifies
+only when it is published, canonical, indexable, not an alias or redirect, not parameterised state, and past
+the content-quality gate that `tools/build-content.py` records in each entity's `seo.index` flag. That flag now
+fails closed: a record without one is not indexed. A build without `--site-url`/`--pretty` writes no sitemap at
+all rather than one full of relative or `?id=` URLs. Catalogued test concepts and class concepts still never get
+URLs of their own (specification §86: no thin terminology pages), and `MedicalTest` / `Drug` schema nodes carry
+`MedicalCode` entries for LOINC, RxNorm and ATC identifiers.
+
+`robots.txt` allows everything except `/api/`, and names the sitemap absolutely. It deliberately does **not**
+block `/search/` or `?embed=` views: a page blocked in `robots.txt` can never be read for its `noindex`, so
+suppression belongs in the page, not the crawl policy (specification section 4). `/search/` and `/roadmap/`
+carry `noindex,follow` in their server-rendered HTML and stay out of every sitemap; the embedded explorer view
+is served `X-Robots-Tag: noindex, follow` from `.htaccess` and `vercel.json`, because a crawler reads the
+prerendered HTML and never runs the script that used to set it. Rendering assets are never blocked, and the
+clinical tools under `/tools/` are indexable pages.
 
 ## 9. Performance
 
 Article pages no longer load the 13 MB model: the 3D view is a static preview image (`site/previews/`, rendered
-by `tools/render-previews.mjs`, also used as `og:image`; an organ the male reference body does not model, such as the
-uterus or the breasts, shows the modelled structures around it) with a *Load the 3D model* button that swaps in the
+by `tools/render-previews.mjs` with the brand plate in the corner, also used as `og:image`; an organ the male reference body does not model, such as the
+uterus or the breasts, shows the modelled structures around it; pages without a
+3D view share `site/og-cover.png`, the site-wide cover with the logo and positioning line) with a *Load the 3D model* button that swaps in the
 explorer iframe; without scripts the button is a link to the explorer. Pages ship as static HTML with no
 client-side rendering on the critical path, one small stylesheet and no web fonts; images carry width and
 height; the model, JSON and vendor code have long cache lifetimes (`.htaccess`).

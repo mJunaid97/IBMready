@@ -4,10 +4,12 @@
     python3 tools/package-site.py --site-url https://anatomynexus.com --pretty --prerender --zip
 
 What it does
-  * copies only the files the site serves (no tools/, .github/, content sources or tests)
+  * copies only the files the site serves (no build tools, .github/, content sources or tests; the web pages under
+    tools/ — the clinical tools hub and the Drug Interaction Checker — are the exception and are served)
   * writes site/config.js with the public URL and clean-URL mode, and stamps site/version.js
-  * writes the sitemap index (sitemap.xml -> sitemaps/<section>.xml, canonical indexable URLs only,
-    lastmod from the content dates) and robots.txt with the absolute sitemap link
+  * writes the sitemap index (sitemap.xml -> the five child sitemaps core, anatomy, clinical, medications
+    and learning, canonical indexable URLs only, lastmod from the content dates, no changefreq/priority)
+    and robots.txt with the absolute sitemap link
   * fills the generated URL rules into .htaccess: query URLs -> clean URLs, index.html -> directory,
     retired paths, the 301 alias table from data/content/aliases.json, trailing slashes
   * --prerender: renders every page to static HTML with tools/prerender.mjs (needs Playwright, see
@@ -22,18 +24,50 @@ The output is plain files: upload dist/ (or extract the zip) into the web root o
 import argparse, datetime, json, os, re, shutil, subprocess, sys, zipfile
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-EXCLUDE_DIRS = ("tools/", ".github/", "content/")
-KEEP_IN_CONTENT = ("content/roadmap.json",)
+EXCLUDE_DIRS = ("tools/", ".github/", "content/", "brand/")     # brand/: the logo kit (print files, sources); the site serves site/logo/
+# served files inside the excluded directories: the roadmap data, and the web pages of the clinical tools (tools/ is the URL
+# namespace of the tools hub and the Drug Interaction Checker as well as the build pipeline's directory)
+KEEP_IN_CONTENT = ("content/roadmap.json", "tools/index.html", "tools/drug-interaction-checker/index.html")
 EXCLUDE_FILES = (".gitignore", "vercel.json", "_headers", "tools/qa/shots")
 SECTIONS = {"physiology": "topic.html", "symptoms": "symptom.html", "conditions": "condition.html", "tests": "test.html", "biomarkers": "biomarker.html", "imaging": "study.html",
             "procedures": "procedure.html", "medications": "medication.html", "drug-classes": "class.html", "targets": "target.html", "first-aid": "topic.html", "health": "topic.html"}
 ANATOMY = {"anatomy": "organ.html", "systems": "system.html"}
 EXTRA = {"compare": "compare.html"}                # non-entity sections with their own detail pages (data/content/comparisons.json)
-# static pages: path -> (changefreq, priority); the home page and hubs first
-PAGES = {"": ("weekly", "1.0"), "anatomy/": ("weekly", "0.9"), "explorer/": ("monthly", "0.9"), "systems/": ("monthly", "0.8"), "organs/": ("monthly", "0.6"), "medical-terms/": ("monthly", "0.7"),
-         "study/": ("monthly", "0.6"), "about/": ("yearly", "0.4"), "editorial-policy/": ("yearly", "0.3"), "medical-review-policy/": ("yearly", "0.3"), "references-policy/": ("yearly", "0.3"),
-         "corrections-policy/": ("yearly", "0.3"), "disclaimer/": ("yearly", "0.3"), "contact/": ("yearly", "0.4")}
-NOINDEX_PAGES = ["search/", "roadmap/", "interactions/"]          # prerendered, linked, but kept out of the sitemaps (the checker is a tool, not content)
+# The five child sitemaps of the specification (section 6). Every indexable URL belongs to exactly one.
+GROUPS = ("core", "anatomy", "clinical", "medications", "learning")
+# Which group each entity section lands in: anatomy and systems are the atlas; the clinical layer, the test
+# taxonomy and the comparisons sit together; medicines, their classes and their targets sit together.
+SECTION_GROUP = {"anatomy": "anatomy", "systems": "anatomy",
+                 "physiology": "clinical", "symptoms": "clinical", "conditions": "clinical", "tests": "clinical",
+                 "biomarkers": "clinical", "imaging": "clinical", "procedures": "clinical", "first-aid": "clinical",
+                 "health": "clinical", "compare": "clinical",
+                 "medications": "medications", "drug-classes": "medications", "targets": "medications"}
+# static pages: path -> sitemap group. No changefreq/priority: the specification (section 8) forbids both.
+# The tools hub and the Drug Interaction Checker are "high-value tools" in the core sitemap (section 6.1); the
+# methodology page is an editorial/trust page and belongs there too.
+PAGES = {"": "core", "explorer/": "core", "tools/": "core", "tools/drug-interaction-checker/": "core",
+         "editorial/drug-interaction-methodology/": "core", "about/": "core", "editorial-policy/": "core",
+         "medical-review-policy/": "core", "references-policy/": "core", "corrections-policy/": "core",
+         "disclaimer/": "core", "contact/": "core",
+         "anatomy/": "anatomy", "systems/": "anatomy", "organs/": "anatomy",
+         "medical-terms/": "learning", "study/": "learning"}
+NOINDEX_PAGES = ["search/", "roadmap/"]          # prerendered, linked, but kept out of the sitemaps
+
+def sitemap_eligible(u):
+    """The one rule that decides whether a URL belongs in a sitemap (specification section 7).
+
+    A URL qualifies only when it is a published, canonical, indexable, HTTP-200 page: not a noindex page, not a
+    redirect or alias, not parameterised state, and past the content-quality gate. The gate itself lives in
+    tools/build-content.py, which writes each entity's seo.index flag (publishable review status, a lead
+    paragraph, >=600 characters of body prose, >=1 reference, >=2 relationship groups); this function is the
+    single place that reads it, so indexability is decided once rather than in each section's loop."""
+    if not u.get("index"): return False                          # noindex,follow, or failed the quality gate
+    if u.get("alias") or u.get("redirect"): return False         # aliases 301 elsewhere; never their own canonical
+    if "?" in u["path"] or "#" in u["path"]: return False        # parameterised or fragment state is never canonical
+    if u.get("group") not in GROUPS: return False                # must belong to exactly one child sitemap
+    return True
+# retired paths -> their canonical page (one hop); the interaction checker moved from /interactions/ to the clinical tools
+RETIRED = [("learn/terminology\\.html", "medical-terms/"), ("learn", "medical-terms/"), ("interactions(?:/index\\.html)?", "tools/drug-interaction-checker/")]
 
 def served_files():
     out = subprocess.check_output(["git", "ls-files", "--cached", "--others", "--exclude-standard"], cwd=ROOT, text=True)
@@ -140,47 +174,77 @@ def main():
     site_date = site_meta.get("_updated") or datetime.date.today().isoformat()
     types = {k: json.load(open(os.path.join(ROOT, "data", "content", "types", k + ".json"), encoding="utf-8")) for k in SECTIONS}
     def detail(d, page, i): return f"{d}/{i}/" if a.pretty else f"{d}/{page}?id={i}"
-    urls = []   # dicts: path, lastmod, freq, prio, index, section, template (query-URL page that renders it, for the prerenderer)
-    for p, (freq, prio) in PAGES.items(): urls.append({"path": p, "lastmod": site_date, "freq": freq, "prio": prio, "index": True, "section": "pages"})
-    for p in NOINDEX_PAGES: urls.append({"path": p, "lastmod": site_date, "freq": "monthly", "prio": "0.1", "index": False, "section": "pages"})
+    urls = []   # dicts: path, lastmod, index, group, template (query-URL page that renders it, for the prerenderer)
+    for p, grp in PAGES.items(): urls.append({"path": p, "lastmod": site_date, "index": True, "group": grp})
+    for p in NOINDEX_PAGES: urls.append({"path": p, "lastmod": site_date, "index": False, "group": "core"})
     sys_dates = [s.get("updated") for s in content["systems"].values() if s.get("updated")]
     for s in atlas["systems"]:
         c = content["systems"].get(s["id"], {})
-        urls.append({"path": detail("systems", "system.html", s["id"]), "lastmod": c.get("updated") or site_date, "freq": "monthly", "prio": "0.7", "index": True, "section": "systems", "template": f"systems/system.html?id={s['id']}"})
+        urls.append({"path": detail("systems", "system.html", s["id"]), "lastmod": c.get("updated") or site_date, "index": True, "group": SECTION_GROUP["systems"], "template": f"systems/system.html?id={s['id']}"})
     for o in content["organs"]:
-        urls.append({"path": detail("anatomy", "organ.html", o["id"]), "lastmod": o.get("updated") or site_date, "freq": "monthly", "prio": "0.9" if o.get("article") else "0.5", "index": bool(o.get("index")), "section": "anatomy", "template": f"anatomy/organ.html?id={o['id']}"})
+        urls.append({"path": detail("anatomy", "organ.html", o["id"]), "lastmod": o.get("updated") or site_date, "index": bool(o.get("index")), "group": SECTION_GROUP["anatomy"], "template": f"anatomy/organ.html?id={o['id']}"})
     for key, page in SECTIONS.items():
         T = types[key]; items = T["items"]
         hub_date = max([e.get("updated") or "" for e in items.values()] + [T["meta"].get("updated") or ""]) or site_date
-        urls.append({"path": f"{key}/" if a.pretty else f"{key}/index.html", "lastmod": hub_date, "freq": "weekly", "prio": "0.8", "index": True, "section": key})
+        urls.append({"path": f"{key}/" if a.pretty else f"{key}/index.html", "lastmod": hub_date, "index": True, "group": SECTION_GROUP[key]})
         for i, e in items.items():
-            urls.append({"path": detail(key, page, i), "lastmod": e.get("updated") or hub_date, "freq": "monthly", "prio": "0.8" if i in (T["meta"].get("priority") or []) else "0.7", "index": bool(e.get("seo", {}).get("index", True)), "section": key, "template": f"{key}/{page}?id={i}"})
+            urls.append({"path": detail(key, page, i), "lastmod": e.get("updated") or hub_date, "index": bool(e.get("seo", {}).get("index", False)), "group": SECTION_GROUP[key], "template": f"{key}/{page}?id={i}"})
     comparisons = json.load(open(os.path.join(ROOT, "data", "content", "comparisons.json"), encoding="utf-8"))
     cmp_date = max([c.get("updated") or "" for c in comparisons["comparisons"]] + [comparisons.get("updated") or ""]) or site_date
-    urls.append({"path": "compare/" if a.pretty else "compare/index.html", "lastmod": cmp_date, "freq": "monthly", "prio": "0.6", "index": True, "section": "compare"})
+    urls.append({"path": "compare/" if a.pretty else "compare/index.html", "lastmod": cmp_date, "index": True, "group": SECTION_GROUP["compare"]})
+    # ---- taxonomy pages: the test-category hub and one page per category (indexable when it has at least two pages), the medication class hub
+    tcats = json.load(open(os.path.join(ROOT, "data", "content", "test-categories.json"), encoding="utf-8"))
+    urls.append({"path": "tests/categories/" if a.pretty else "tests/categories/index.html", "lastmod": tcats.get("updated") or site_date, "index": True, "group": SECTION_GROUP["tests"]})
+    for c in tcats["categories"]:
+        urls.append({"path": f"tests/categories/{c['id']}/" if a.pretty else f"tests/category.html?id={c['id']}", "lastmod": tcats.get("updated") or site_date, "index": bool(c.get("seo", {}).get("index")), "group": SECTION_GROUP["tests"], "template": f"tests/category.html?id={c['id']}"})
+    mtax = json.load(open(os.path.join(ROOT, "data", "content", "medication-taxonomy.json"), encoding="utf-8"))
+    urls.append({"path": "medications/classes/" if a.pretty else "medications/classes/index.html", "lastmod": mtax.get("updated") or site_date, "index": True, "group": SECTION_GROUP["medications"]})
     for c in comparisons["comparisons"]:
-        urls.append({"path": detail("compare", "compare.html", c["id"]), "lastmod": c.get("updated") or cmp_date, "freq": "monthly", "prio": "0.6", "index": True, "section": "compare", "template": f"compare/compare.html?id={c['id']}"})
+        urls.append({"path": detail("compare", "compare.html", c["id"]), "lastmod": c.get("updated") or cmp_date, "index": True, "group": SECTION_GROUP["compare"], "template": f"compare/compare.html?id={c['id']}"})
     # hub lastmod for anatomy pages
     for u in urls:
         if u["path"] in ("anatomy/", "organs/"): u["lastmod"] = max([o.get("updated") or "" for o in content["organs"]] + [site_date])
         if u["path"] == "systems/": u["lastmod"] = max(sys_dates + [site_date])
 
-    # ---- sitemaps: an index that points at one file per section; only canonical, indexable URLs
-    os.makedirs(os.path.join(out, "sitemaps"), exist_ok=True)
+    # ---- sitemaps: the index points at the five child sitemaps of the specification (section 6); only
+    # canonical, indexable URLs, absolute HTTPS non-www, <lastmod> only, never <changefreq>/<priority>.
+    # A sitemap is only valid with absolute HTTPS URLs and no query strings, so it is written only for a
+    # production-shaped build. A local build (no --site-url, or no --pretty) gets no sitemap and a robots.txt
+    # with no Sitemap line, rather than one full of relative or ?id= URLs that would be wrong if it shipped.
+    if site.startswith("https://www."): sys.exit(f"--site-url must use the canonical non-www host (got {site!r})")
+    if site and not site.startswith("https://"): sys.exit(f"--site-url must be an absolute https origin (got {site!r})")
+    sitemapped = bool(site) and bool(a.pretty)
+    if sitemapped: os.makedirs(os.path.join(out, "sitemaps"), exist_ok=True)
     sections = []
-    for name in ["pages", "anatomy", "systems", *SECTIONS, *EXTRA]:
-        rows = [u for u in urls if u["section"] == name and u["index"]]
+    for name in (GROUPS if sitemapped else ()):
+        rows = [u for u in urls if u["group"] == name and sitemap_eligible(u)]
         if not rows: continue
+        seen = set()
+        for u in rows:
+            if u["path"] in seen: sys.exit(f"duplicate URL in sitemap {name}: {u['path']}")
+            seen.add(u["path"])
         xml = ['<?xml version="1.0" encoding="UTF-8"?>', '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
-        for u in rows: xml.append(f"  <url><loc>{esc(origin + u['path'])}</loc><lastmod>{u['lastmod']}</lastmod><changefreq>{u['freq']}</changefreq><priority>{u['prio']}</priority></url>")
+        for u in rows: xml.append(f"  <url><loc>{esc(origin + u['path'])}</loc><lastmod>{u['lastmod']}</lastmod></url>")
         xml.append("</urlset>")
         open(os.path.join(out, "sitemaps", f"{name}.xml"), "w", encoding="utf-8").write("\n".join(xml) + "\n")
         sections.append((name, max(u["lastmod"] for u in rows), len(rows)))
-    idx = ['<?xml version="1.0" encoding="UTF-8"?>', '<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
-    for name, lastmod, _ in sections: idx.append(f"  <sitemap><loc>{esc(origin + 'sitemaps/' + name + '.xml')}</loc><lastmod>{lastmod}</lastmod></sitemap>")
-    idx.append("</sitemapindex>")
-    open(os.path.join(out, "sitemap.xml"), "w", encoding="utf-8").write("\n".join(idx) + "\n")
-    open(os.path.join(out, "robots.txt"), "w", encoding="utf-8").write(f"User-agent: *\nAllow: {base}\nDisallow: {base}tools/\nDisallow: {base}search/\nDisallow: {base}*?embed=\nSitemap: {origin}sitemap.xml\n")
+    if sitemapped:
+        idx = ['<?xml version="1.0" encoding="UTF-8"?>', '<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
+        for name, lastmod, _ in sections: idx.append(f"  <sitemap><loc>{esc(origin + 'sitemaps/' + name + '.xml')}</loc><lastmod>{lastmod}</lastmod></sitemap>")
+        idx.append("</sitemapindex>")
+        open(os.path.join(out, "sitemap.xml"), "w", encoding="utf-8").write("\n".join(idx) + "\n")
+    else:
+        print("note: no --site-url/--pretty, so no sitemap was written (a sitemap needs absolute clean URLs)")
+    # robots.txt (specification section 5): allow everything, keep the API surface out, name the sitemap
+    # absolutely. Pages that must not be indexed carry <meta name="robots" content="noindex,follow"> and stay
+    # crawlable, because a blocked page can never be read for its noindex.
+    open(os.path.join(out, "robots.txt"), "w", encoding="utf-8").write(
+        f"# Anatomy Nexus robots.txt\n# Production SEO crawl policy\n# {origin}\n\n"
+        f"User-agent: *\nAllow: {base}\n\n"
+        f"# Non-page application endpoints should not be crawled.\n"
+        f"# Keep CSS, JavaScript, images, fonts and static rendering assets crawlable.\n"
+        f"Disallow: {base}api/\n"
+        + (f"\nSitemap: {origin}sitemap.xml\n" if sitemapped else ""))
 
     # ---- .htaccess: generated URL rules at the marker
     p = os.path.join(out, ".htaccess"); s = open(p, encoding="utf-8").read()
@@ -193,16 +257,20 @@ def main():
         for d, page in {**ANATOMY, **SECTIONS, **EXTRA, "organs": "organ.html"}.items():
             target = "anatomy" if d == "organs" else d
             rules += [f"  RewriteCond %{{QUERY_STRING}} ^id=([A-Za-z0-9-]+)$", f"  RewriteRule ^{re.escape(d)}/{re.escape(page)}$ {base}{target}/%1/? [R=301,L]"]
+        rules += [f"  RewriteCond %{{QUERY_STRING}} ^id=([A-Za-z0-9-]+)$", f"  RewriteRule ^tests/category\\.html$ {base}tests/categories/%1/? [R=301,L]"]
+        rules += ["  # retired paths, before the index.html rule so each is one hop (the query string, e.g. ?drugs=, is carried over)"] + [f"  RewriteRule ^{pat}/?$ {base}{target} [R=301,L]" for pat, target in RETIRED]
         rules += ["  # /section/index.html -> /section/ and /index.html -> /", "  RewriteCond %{THE_REQUEST} \\s/+(?:[^?\\s]*/)?index\\.html[\\s?]", f"  RewriteRule ^(.*/)?index\\.html$ {base}$1 [R=301,L]"]
-        rules += ["  # retired paths", f"  RewriteRule ^learn/terminology\\.html$ {base}medical-terms/ [R=301,L]", f"  RewriteRule ^learn/?$ {base}medical-terms/ [R=301,L]"]
         rules.append("  # URL aliases (synonyms, abbreviations, brand names, old ids) -> the canonical page, in one hop")
         for section, table in aliases.items():
             by_target = {}
             for alias, target in sorted(table.items()): by_target.setdefault(target, []).append(alias)
-            dirs = ["anatomy", "organs"] if section == "anatomy" else [section]
+            dirs = ["anatomy", "organs"] if section == "anatomy" else ["drug-classes", "medications/classes"] if section == "drug-classes" else [section]
             for target, als in sorted(by_target.items()):
                 pat = "|".join(re.escape(x) for x in als)
                 for d in dirs: rules.append(f"  RewriteRule ^{d}/({pat})/?$ {base}{section}/{target}/ [R=301,L]")
+        rules += ["  # /medications/classes/<class>/ is the recommended address of a class page; /drug-classes/<class>/ is canonical",
+                  f"  RewriteRule ^medications/classes/([A-Za-z0-9-]+)/?$ {base}drug-classes/$1/ [R=301,L]",
+                  f"  RewriteRule ^tests/categories/([A-Za-z0-9-]+)$ {base}tests/categories/$1/ [R=301,L]"]
         rules += ["  # organ pages moved to /anatomy/", f"  RewriteRule ^organs/([A-Za-z0-9-]+)/?$ {base}anatomy/$1/ [R=301,L]"]
         dirs = "|".join(list(ANATOMY) + list(SECTIONS) + list(EXTRA))
         rules += ["  # trailing slash on every section page", "  RewriteCond %{REQUEST_FILENAME} !-f", f"  RewriteRule ^({dirs})/([A-Za-z0-9-]+)$ {base}$1/$2/ [R=301,L]"]
@@ -211,7 +279,7 @@ def main():
 
     # ---- explorer: absolute canonical and social image (the explorer is an app, not prerendered)
     p = os.path.join(out, "explorer", "index.html"); s = open(p, encoding="utf-8").read()
-    s = s.replace('<link rel="canonical" href="./">', f'<link rel="canonical" href="{origin}explorer/">').replace('content="../site/og-cover.png"', f'content="{origin}site/og-cover.png"')
+    s = s.replace('<link rel="canonical" href="./">', f'<link rel="canonical" href="{origin}explorer/">').replace('<meta property="og:url" content="./">', f'<meta property="og:url" content="{origin}explorer/">').replace('content="../site/og-cover.png"', f'content="{origin}site/og-cover.png"')
     open(p, "w", encoding="utf-8").write(s)
 
     # ---- sub-path installs: root-relative references in the files that use them
@@ -235,7 +303,7 @@ def main():
         if r.returncode: sys.exit("prerender failed")
 
     n = sum(len(fs) for _, _, fs in os.walk(out)); size = sum(os.path.getsize(os.path.join(r, f)) for r, _, fs in os.walk(out) for f in fs)
-    print(f"dist: {n} files, {size / 1048576:.1f} MB, {sum(1 for u in urls if u['index'])} indexable URLs in {len(sections)} sitemaps, {sum(len(t) for t in aliases.values())} alias redirects, {stamped} files version-stamped, version {version} build {build[:7]}, siteUrl={site or '(relative)'} base={base} prettyUrls={bool(a.pretty)} prerender={bool(a.prerender)}")
+    print(f"dist: {n} files, {size / 1048576:.1f} MB, {sum(1 for u in urls if sitemap_eligible(u))} indexable URLs in {len(sections)} sitemaps, {sum(len(t) for t in aliases.values())} alias redirects, {stamped} files version-stamped, version {version} build {build[:7]}, siteUrl={site or '(relative)'} base={base} prettyUrls={bool(a.pretty)} prerender={bool(a.prerender)}")
     if a.zip:
         zp = os.path.join(out, "anatomy-nexus-site.zip")
         with zipfile.ZipFile(zp, "w", zipfile.ZIP_DEFLATED, compresslevel=6) as z:

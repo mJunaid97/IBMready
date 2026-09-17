@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * build-atlas.mjs — Human Atlas geometry pipeline.
+ * build-atlas.mjs — Anatomy Nexus atlas geometry pipeline.
  *
  * Reads BodyParts3D meshes (Wavefront OBJ or binary STL), welds vertices,
  * simplifies every piece with meshoptimizer under an absolute error bound,

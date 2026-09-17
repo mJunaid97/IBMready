@@ -34,17 +34,30 @@ jobs:
         run: |
           B="${{ github.event.inputs.base_url || 'https://anatomynexus.com/' }}"
           H=$(echo "$B" | sed -E 's#https?://([^/]+)/?#\1#')
-          for p in "" "anatomy/heart/" "conditions/gout/" "medications/amlodipine/" "explorer/" "sitemap.xml" "sitemaps/conditions.xml" "data/hd/glb/heart.glb" "site/previews/o-heart.jpg" "no-such-page"; do
+          for p in "" "anatomy/heart/" "conditions/gout/" "medications/amlodipine/" "tools/" "tools/drug-interaction-checker/" "editorial/drug-interaction-methodology/" "explorer/" "robots.txt" "sitemap.xml" "sitemaps/clinical.xml" "data/hd/glb/heart.glb" "site/previews/o-heart.jpg" "no-such-page"; do
             echo "== ${B}${p}"; curl -sS -m 40 --connect-timeout 15 -o /dev/null -I -H "Accept-Encoding: gzip, br" -w "status %{http_code}  type %{content_type}\n" "${B}${p}" || true
           done
           echo "== redirects (expect 301 to the canonical URL, one hop)"
-          for p in "conditions/gout" "tests/cbc/" "medications/norvasc/" "organs/heart/" "learn/terminology.html" "conditions/condition.html?id=gout" "index.html"; do
+          for p in "conditions/gout" "tests/cbc/" "medications/norvasc/" "organs/heart/" "learn/terminology.html" "conditions/condition.html?id=gout" "index.html" "interactions/" "interactions/?drugs=amlodipine,losartan"; do
             printf "%-40s " "$p"; curl -sS -m 40 --connect-timeout 15 -o /dev/null -I -w "%{http_code} -> %{redirect_url}\n" "${B}${p}" || true
           done
           printf "%-40s " "http://www.$H/"; curl -sS -m 40 --connect-timeout 15 -o /dev/null -I -w "%{http_code} -> %{redirect_url}\n" "http://www.$H/" || true
           printf "%-40s " "https://www.$H/"; curl -sS -m 40 --connect-timeout 15 -o /dev/null -I -w "%{http_code} -> %{redirect_url}\n" "https://www.$H/" || true
           echo "== security headers"; curl -sS -m 40 --connect-timeout 15 -I "${B}" | grep -iE "^(content-security-policy|strict-transport-security|x-content-type-options|referrer-policy|content-encoding|cache-control)" || true
           echo "== initial HTML of an entity page"; curl -sS -m 40 --connect-timeout 15 "${B}conditions/gout/" | grep -oE "<title>[^<]+</title>|<link rel=\"canonical\"[^>]+>|<meta name=\"robots\"[^>]+>|<h1[^>]*>[^<]+</h1>|data-prerendered" | head -6
+      - name: Sitemap index names the five child sitemaps and each one serves
+        run: |
+          B="${{ github.event.inputs.base_url || 'https://anatomynexus.com/' }}"
+          idx=$(curl -sS -m 40 --connect-timeout 15 "${B}sitemap.xml")
+          for name in core anatomy clinical medications learning; do
+            echo "$idx" | grep -q "sitemaps/${name}.xml" || { echo "::error::sitemap.xml does not name sitemaps/${name}.xml"; exit 1; }
+            code=$(curl -sS -m 40 --connect-timeout 15 -o /dev/null -I -w "%{http_code}" "${B}sitemaps/${name}.xml")
+            [ "$code" = "200" ] || { echo "::error::sitemaps/${name}.xml returned $code"; exit 1; }
+          done
+          if echo "$idx" | grep -q "<priority>\|<changefreq>"; then echo "::error::sitemap emits <priority>/<changefreq>"; exit 1; fi
+          curl -sS -m 40 --connect-timeout 15 "${B}robots.txt" | grep -qE "^Sitemap: https://\S+/sitemap\.xml" || { echo "::error::robots.txt has no absolute Sitemap line"; exit 1; }
+          echo "sitemap index, five child sitemaps and robots.txt all good"
+
       - name: Old host redirects to the canonical site
         if: ${{ github.event.inputs.redirect_from != '' }}
         run: |

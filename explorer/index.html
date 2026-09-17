@@ -9,8 +9,9 @@
   <meta name="description" content="Explore the human body in 3D: 2,234 individually selectable structures from the open BodyParts3D dataset, organised into 16 systems, with search, cross-sections, exploded views and study tools.">
   <link rel="canonical" href="./">
   <meta name="robots" content="index,follow">
-  <meta property="og:type" content="website"><meta property="og:site_name" content="Anatomy Nexus"><meta property="og:title" content="3D Anatomy Explorer | Anatomy Nexus"><meta property="og:description" content="Orbit, click and search 2,234 anatomical structures in 16 systems. Isolate organs, slice the body, explode it into parts."><meta property="og:image" content="../site/og-cover.png"><meta name="twitter:card" content="summary_large_image">
-  <meta name="theme-color" content="#0f1115">
+  <meta property="og:type" content="website"><meta property="og:site_name" content="Anatomy Nexus"><meta property="og:title" content="3D Anatomy Explorer | Anatomy Nexus"><meta property="og:description" content="Orbit, click and search 2,234 anatomical structures in 16 systems. Isolate organs, slice the body, explode it into parts."><meta property="og:url" content="./"><meta property="og:image" content="../site/og-cover.png"><meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#0B2D45">
+  <link rel="icon" href="../favicon.ico" sizes="32x32">
   <link rel="icon" href="../favicon.svg" type="image/svg+xml">
   <link rel="manifest" href="../manifest.webmanifest">
   <link rel="apple-touch-icon" href="../site/apple-touch-icon.png">
@@ -24,10 +25,14 @@
   <canvas id="view" aria-label="3D view of the human body"></canvas>
   <div id="labels" class="labels" aria-hidden="true"></div>
 
+  <h1 class="sr-only">3D anatomy explorer</h1>
+
   <header class="topbar">
-    <a class="brand" href="../" title="Anatomy Nexus home">
-      <span class="brand-mark" aria-hidden="true"></span>
-      <span class="brand-text">Anatomy Nexus</span>
+    <a class="brand" href="../" title="Anatomy Nexus home" aria-label="Anatomy Nexus home">
+      <img class="logo logo-light" src="../site/logo/anatomy-nexus.svg" alt="Anatomy Nexus" width="128" height="27" decoding="async">
+      <img class="logo logo-dark" src="../site/logo/anatomy-nexus-white.svg" alt="" width="128" height="27" decoding="async" aria-hidden="true">
+      <img class="logo mark-light" src="../site/logo/mark.svg" alt="" width="30" height="27" decoding="async" aria-hidden="true">
+      <img class="logo mark-dark" src="../site/logo/mark-white.svg" alt="" width="30" height="27" decoding="async" aria-hidden="true">
     </a>
     <div class="stats" id="stats" aria-live="polite">Loading atlas…</div>
 
@@ -191,7 +196,7 @@
 
   <div class="loading" id="loading" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
     <div class="loading-card">
-      <div class="loading-title">Anatomy Nexus</div>
+      <div class="loading-logo"><img class="logo logo-light" src="../site/logo/anatomy-nexus.svg" alt="Anatomy Nexus" width="190" height="40"><img class="logo logo-dark" src="../site/logo/anatomy-nexus-white.svg" alt="" width="190" height="40" aria-hidden="true"></div>
       <div class="loading-sub" id="loading-sub">Preparing the body…</div>
       <div class="loading-bar"><div class="loading-fill" id="loading-fill"></div></div>
       <div class="loading-note muted small">Skeleton appears first; other systems stream in.</div>

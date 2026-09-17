@@ -28,17 +28,17 @@ compiler routes cross-type ids into the matching typed field) and `references`.
 
 | Entity | File | Page structure | Typed links |
 | --- | --- | --- | --- |
-| **PhysiologyTopic** (35) | `content/physiology.json` | summary, body, key facts | `conditions`, `tests`, `imaging`, `procedures`, `medications`, `symptoms`, `biomarkers`, `targets`, `health` |
+| **PhysiologyTopic** (35) | `content/physiology.json` | summary, body, key facts | `conditions`, `tests`, `imaging`, `procedures`, `medications`, `symptoms` |
 | **Symptom** (22) | `content/symptoms.json` | what, anatomy, common / less common causes, associated, urgent, investigations | `associated` (symptoms), `conditions`, `tests`, `imaging`, `procedures`, `medications` |
 | **Condition** (50) | `content/conditions.json` | definition, overview, anatomy, causes, risk factors, symptoms, signs, complications, diagnosis, treatment, prevention, seek care | `symptoms`, `tests`, `imaging`, `procedures`, `medications`, `physiology` |
-| **MedicalTest** (32) | `content/tests.json` | quick summary, why ordered, components → biomarkers, how done, preparation, results (range policy, guideline thresholds), factors, cannot tell, limitations | `conditions`, `symptoms`, `physiology`, `biomarkers` (implied by components) |
-| **Biomarker** (33) | `content/biomarkers.json` | what it is, units, why higher / lower, factors, range note | `tests`, `conditions`, `physiology`, `medications` |
+| **MedicalTest** (39) | `content/tests.json` | kind, categories (36-category taxonomy), specimens, methods, modality, canonical name and abbreviations, LOINC codes, quick summary, why ordered, components → biomarkers and component tests, panel membership, how done, preparation, results (range policy, guideline thresholds), factors, cannot tell, limitations, catalogued concepts covered | `conditions`, `monitors` (conditions), `symptoms`, `physiology`, `biomarkers` (implied by components), `related` (panels ↔ components) |
+| **Biomarker** (37) | `content/biomarkers.json` | what it is, units, why higher / lower, factors, range note | `tests`, `conditions`, `physiology`, `medications` |
 | **BiologicalTarget** (24) | `content/targets.json` | kind, what it does, role, location | `medications`, `drugClasses`, `physiology`, `conditions`, `biomarkers` |
-| **ImagingStudy** (7) | `content/imaging.json` | how it works, shows, best for / not for, dose, preparation, common uses | `conditions`, `symptoms`, `physiology` |
+| **ImagingStudy** (8) | `content/imaging.json` | modality, how it works, shows, best for / not for, dose, preparation, common uses, catalogued studies covered | `conditions`, `symptoms`, `physiology` |
 | **Procedure** (19) | `content/procedures.json` | what, why, before, steps, after, recovery, risks, alternatives | `conditions`, `symptoms`, `tests`, `imaging`, `medications`, `physiology` |
-| **Medication** (30) | `content/medications.json` | class, brands and prescription status by region, uses by status and jurisdiction, mechanism (plain and technical), pathway, targets, side effects, warnings, contraindications, interactions, monitoring, special populations, condition cautions, lab effects, pharmacokinetics | `conditions`, `symptoms`, `tests`, `biomarkers`, `targets`, `procedures`, `physiology`, `drugClass` |
-| **DrugClass** (26) | `content/drug-classes.json` | mechanism, targets, members, class effects, class warnings, class interactions, duplication rule | `medications`, `targets`, `conditions`, `physiology` |
-| **DrugInteraction** (69), **MedicationProduct** (14), **Comparison** (7) | `content/interactions.json`, `products.json`, `comparisons.json` | see `CLINICAL.md` | medication ↔ medication / class / named substance; product → ingredients; comparison → two entities |
+| **Medication** (41) | `content/medications.json` | product type (small molecule, biologic, vaccine, contrast agent, radiopharmaceutical…), therapeutic areas, routes and dosage forms from the controlled vocabularies, ingredient variants, jurisdiction-aware regulatory status, RxNorm / ATC / FDA EPC codes, vaccine, radiopharmaceutical, contrast and advanced-therapy profiles, class, brands and prescription status by region, uses by status and jurisdiction, mechanism (plain and technical), pathway, targets, side effects, warnings, contraindications, interactions, monitoring, special populations, condition cautions, lab effects, pharmacokinetics | `conditions`, `symptoms`, `tests`, `biomarkers`, `targets`, `procedures`, `physiology`, `drugClass` |
+| **DrugClass** (29) | `content/drug-classes.json` | mechanism, targets, members, class effects, class warnings, class interactions, duplication rule | `medications`, `targets`, `conditions`, `physiology` |
+| **DrugInteraction** (72), **MedicationProduct** (14), **Comparison** (7) | `content/interactions.json`, `products.json`, `comparisons.json` | see `CLINICAL.md` | medication ↔ medication / class / named substance (`bAgents`); product → ingredients; comparison → two entities; every interaction record carries compiled links to the classes, organs, physiology, tests and biomarkers it concerns |
 | **FirstAidTopic** (16) | `content/first-aid.json` | recognise, steps, children, don't, call for, why (anatomy) | `conditions`, `symptoms`, `physiology`, `medications`, `tests` |
 | **HealthTopic** (9) | `content/health.json` | body, effects per system, guidance | `conditions`, `symptoms`, `physiology`, `tests` |
 | **MedicalTerm** (156) | `content/terms.json` | definition, plain, example, pronunciation, opposite, related, atlas link | `atlas` → structure / organ / region / system / slice |
@@ -67,7 +67,15 @@ Medication ──interacts_with──▶ Medication | DrugClass | Substance ; Me
 PhysiologyTopic ──explains──▶ BodySystem | Organ ; ──goes_wrong_as──▶ Condition
 FirstAidTopic / HealthTopic ──concerns──▶ Condition | Symptom | PhysiologyTopic
 <any entity> ──uses_term──▶ MedicalTerm
+
+TestConcept (catalogue, 837) ──in_category──▶ TestCategory (36) ; ──covered_by──▶ MedicalTest | ImagingStudy | Procedure (or none: database-only)
+ClassConcept (taxonomy, 536) ──in_area──▶ TherapeuticArea (31) ; ──has_page──▶ DrugClass ; ──has_atc──▶ WHO ATC code
+MedicalTest ──uses_specimen / has_method──▶ Vocabulary term ; Medication ──has_route / has_dosage_form──▶ Vocabulary term
+MedicalTest ──has_code──▶ LOINC ; Medication ──has_code──▶ RxCUI | ATC | FDA EPC (asserted until a release verifies it)
 ```
+
+The named relationship types of the clinical specification (`TEST_MEASURES` … `MEDICATION_EXCRETED_BY`) are emitted as
+typed edges in `data/content/knowledge.json` (`edges`, `edgeTypes`); see `CLINICAL.md` §8.6.
 
 Reverse edges are never authored. `tools/build-content.py` walks every link field and emits
 `backlinks` on each entity plus `organs / systems / structures / terms → {type: [ids]}` maps,
@@ -104,14 +112,25 @@ each clinical page opens with live 3D of the anatomy it discusses.
    organs it can select. Sex-specific structures the atlas does have (urethra, prostate, pubic hair)
    are described for every body, including after gender-affirming surgery.
 
+### Taxonomy and terminology layer (v1.4)
+
+Two taxonomies sit between raw terminology and public pages: `content/test-taxonomy.json` (36 categories, 837 catalogued
+test concepts) and `content/medication-taxonomy.json` (31 therapeutic areas, 536 class concepts with ATC codes). Pages
+declare the concepts they cover; the compiler (`tools/taxonomy.py`) maps the rest by name, builds the category pages,
+the class hub and the hub facets, enforces the controlled vocabularies and the drug-name rules, computes the review
+queues and emits the typed edges. The LOINC and RxNorm pipelines in `tools/terminology/` turn a licensed release into
+candidates for the catalogue and verify the codes the content asserts. `CLINICAL.md` §8 documents the layer.
+
 ### Clinical layer
 
 The structured clinical fields (components, thresholds, indications, warnings, contraindications,
 monitoring, populations, interactions, lab effects) are data with a source on every fact, validated
 by the compiler and rendered by `site/entity.js` in the order the specification prescribes; the
-interaction checker (`site/interactions.js`) and the comparisons (`site/compare.js`) read the
-compiled `data/content/interactions.json` and `comparisons.json`. `CLINICAL.md` documents the
-model, the source rules, the severity mapping and the review-status model.
+Drug Interaction Checker (`tools/drug-interaction-checker/`, `site/checker.js` over the pure engine
+`site/interaction-engine.js`) and the comparisons (`site/compare.js`) read the compiled
+`data/content/interactions.json` and `comparisons.json`. `CLINICAL.md` documents the model, the
+source rules, the severity states and their display tiers, the checker's API contract and the
+review-status model.
 
 ## Rendering pipeline (explorer)
 
@@ -129,9 +148,10 @@ model, the source rules, the severity mapping and the review-status model.
 
 ## Site shell
 
-`site/site.js` renders the shared header (primary sections, a "More" menu and the header search
-box with typeahead over `data/content/search-index.json`) and footer (policy links, attribution,
-version), holds the entity type registry (`TYPES`, with the SEO descriptor of each type), the URL
+`site/site.js` renders the shared header (the logo, the primary sections, a "More" menu grouped into
+anatomy, clinical, medicines and learning, and the header search box with typeahead over
+`data/content/search-index.json`) and footer (the logo, the content areas, the policies, attribution and
+version), holds the inline SVG icon set (`iconSvg`; `TYPES[].icon` names an icon, never an emoji), holds the entity type registry (`TYPES`, with the SEO descriptor of each type), the URL
 helpers (`paths`, `link`, `entityLink`, `anyLink`, `canonical`; clean trailing-slash URLs when
 `site/config.js` says `prettyUrls`, query URLs otherwise), the click-to-load 3D facade, and the
 cached data loaders (`loadData`, `loadClinical`, `loadType`, `loadSearchIndex`). `site/seo.js`
@@ -175,8 +195,9 @@ Summarised here; `SEO.md` has the full map against the specification.
   (Medications › Class › Medicine), backlinks and `Drug.drugClass` schema.
 - **Biomarkers and drug targets**: two further entity types (`/biomarkers/`, `/targets/`) that tie
   tests to the substances they measure and medicines to what they act on; comparisons live at
-  `/compare/<slug>/`; the interaction checker at `/interactions/` is `noindex` and generates no
-  pair pages.
+  `/compare/<slug>/`; the Drug Interaction Checker at `/tools/drug-interaction-checker/` is one
+  indexable page (its `?drugs=` states canonicalise to it) and generates no pair pages; the
+  clinical tools hub is `/tools/` and the checker's methodology `/editorial/drug-interaction-methodology/`.
 - **Schema for medicines**: `Drug` nodes carry active ingredient, class, mechanism, routes,
   prescription status, contraindications, interacting drugs, food / alcohol / pregnancy /
   breastfeeding warnings and a link to the prescribing information; tests carry their range note
@@ -190,7 +211,22 @@ Summarised here; `SEO.md` has the full map against the specification.
   failing pages ship `noindex,follow` and stay out of the sitemaps.
 - **Sitemaps**: `sitemap.xml` index → `sitemaps/<section>.xml`, canonical indexable URLs only.
 - **Previews**: `site/previews/<view>.jpg` rendered by `tools/render-previews.mjs` from the
-  explorer for every organ, system and structure view (`site/preview-name.js` names them); used
-  by the facade and as `og:image`. An organ the atlas does not model uses the view of the modelled
-  structures around it, so its page and every page that concerns it still carry a real preview and
-  a working embed.
+  explorer for every organ, system and structure view (`site/preview-name.js` names them), each with
+  the brand plate (the reversed logo and the name of the view) in the corner; used by the facade and as
+  `og:image`. The same tool's `--extras` renders `site/hero.jpg` (the explorer with the heart selected)
+  and `site/og-cover.png` (the site-wide social cover: logo, positioning line, the body on navy). An organ the atlas does not model uses the view of the modelled structures around it, so its page
+  and every page that concerns it still carry a real preview and a working embed.
+
+## Brand system
+
+`site/site.css` starts with the design tokens: the brand palette from `brand/README.txt` (Deep Navy,
+Soft Teal, Cool Gray, Light) and the semantic tokens derived from it (`--surface`, `--text-secondary`,
+`--border`, `--interactive`, `--link`, `--accent-soft`, the status colours, shadows, radii, spacing,
+the type scale, control sizes, container widths), redefined once for the dark theme (explicit toggle) and
+once for the system preference. Every component below reads tokens only. `explorer/styles.css` mirrors
+the same tokens so the explorer reads as part of the product. The logo is served from `site/logo/` as SVG
+(`logoHtml` in `site/site.js` emits the primary and reversed lock-ups and the monogram; two CSS variables,
+`--logo-light` and `--logo-dark`, follow the theme so every placement switches together, and the
+monogram replaces the lock-up below 560px). Inter is self-hosted (`site/fonts/`, the optical-size axis
+gives headings the Display cut). The favicon set and `manifest.webmanifest` come from the kit's
+`Favicon/` folder; the SVG favicon carries a dark-scheme rule so it stays legible on dark tab bars.
