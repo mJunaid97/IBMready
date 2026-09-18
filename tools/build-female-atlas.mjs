@@ -39,6 +39,7 @@ import draco3d from 'draco3dgltf';
 import * as THREE from 'three';
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
 import { MeshoptDecoder } from 'three/examples/jsm/libs/meshopt_decoder.module.js';
+import { MeshoptSimplifier } from 'three/examples/jsm/libs/meshopt_simplifier.module.js';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(__dirname, '..');
@@ -128,18 +129,106 @@ function meshStats(positions, indices) {
   return { volume: vol / 6, openRatio: open / (edges.size || 1), outwardness: dotSum / (area || 1) };
 }
 function flipWinding(indices) { for (let t = 0; t < indices.length; t += 3) { const tmp = indices[t + 1]; indices[t + 1] = indices[t + 2]; indices[t + 2] = tmp; } }
+/** Deterministic unit directions spread over the sphere (Fibonacci lattice). */
+function sphereDirs(n) { const out = []; const g = Math.PI * (3 - Math.sqrt(5)); for (let i = 0; i < n; i++) { const y = 1 - (2 * i + 1) / n; const r = Math.sqrt(Math.max(0, 1 - y * y)); const a = g * i; out.push([r * Math.cos(a), y, r * Math.sin(a)]); } return out; }
 /**
- * Make the winding outward. Closed or nearly closed shells (open-edge ratio < 6 %) with a meaningful enclosed
- * volume use its sign, which is what build-atlas checks too; open patches (nipple, areola, peritoneal folds) use
- * an area-weighted centroid test and are marked `winding: keep` so build-atlas does not second-guess them.
+ * How the mesh faces a viewer: cast rays from outside the bounding sphere towards points spread through the mesh and
+ * count whether the FIRST triangle each ray meets faces the ray (front) or not (back). This is what the renderer sees
+ * with back-face culling, and unlike the signed volume it is meaningful for open shells and surface patches.
+ * Returns { front, back } hit counts.
  */
-function orient(mesh, minVolume) {
-  const s = meshStats(mesh.positions, mesh.indices);
-  let method, flipped = false;
-  if (Math.abs(s.volume) >= minVolume && s.openRatio < 0.06) { method = 'volume'; if (s.volume < 0) flipped = true; }
-  else { method = 'centroid'; if (s.outwardness < 0) flipped = true; }
-  if (flipped) flipWinding(mesh.indices);
-  return { ...s, method, flipped, keep: method === 'centroid' };
+function facing(positions, indices, rays = 160) {
+  const b = bbox(positions); const c = [(b[0] + b[3]) / 2, (b[1] + b[4]) / 2, (b[2] + b[5]) / 2];
+  const R = Math.hypot(b[3] - b[0], b[4] - b[1], b[5] - b[2]) * 0.75 + 1;
+  const dirs = sphereDirs(rays), targets = sphereDirs(rays * 7 + 3);
+  let front = 0, back = 0; const tri = indices.length / 3;
+  for (let k = 0; k < rays; k++) {
+    const d0 = dirs[k]; const o = [c[0] + d0[0] * R * 2, c[1] + d0[1] * R * 2, c[2] + d0[2] * R * 2];
+    const tg = targets[(k * 7 + 3) % targets.length];                     // a point inside the box, off-centre so the rays sample the surface
+    const t = [c[0] + tg[0] * (b[3] - b[0]) * 0.35, c[1] + tg[1] * (b[4] - b[1]) * 0.35, c[2] + tg[2] * (b[5] - b[2]) * 0.35];
+    const d = norm(sub(t, o));
+    let best = Infinity, bestFront = 0;
+    for (let f = 0; f < tri; f++) {
+      const a = indices[f * 3] * 3, bb = indices[f * 3 + 1] * 3, cc = indices[f * 3 + 2] * 3;
+      const ax = positions[a], ay = positions[a + 1], az = positions[a + 2];
+      const e1x = positions[bb] - ax, e1y = positions[bb + 1] - ay, e1z = positions[bb + 2] - az;
+      const e2x = positions[cc] - ax, e2y = positions[cc + 1] - ay, e2z = positions[cc + 2] - az;
+      // Moller-Trumbore
+      const px = d[1] * e2z - d[2] * e2y, py = d[2] * e2x - d[0] * e2z, pz = d[0] * e2y - d[1] * e2x;
+      const det = e1x * px + e1y * py + e1z * pz; if (Math.abs(det) < 1e-12) continue;
+      const inv = 1 / det; const tx = o[0] - ax, ty = o[1] - ay, tz = o[2] - az;
+      const u = (tx * px + ty * py + tz * pz) * inv; if (u < 0 || u > 1) continue;
+      const qx = ty * e1z - tz * e1y, qy = tz * e1x - tx * e1z, qz = tx * e1y - ty * e1x;
+      const v = (d[0] * qx + d[1] * qy + d[2] * qz) * inv; if (v < 0 || u + v > 1) continue;
+      const tt = (e2x * qx + e2y * qy + e2z * qz) * inv; if (tt <= 1e-6 || tt >= best) continue;
+      best = tt; bestFront = det > 0 ? 1 : 0;                              // det = e1 . (d x e2) = -(d . n): positive means the face normal points back at the ray, i.e. a front face
+    }
+    if (best < Infinity) { if (bestFront) front++; else back++; }
+  }
+  return { front, back };
+}
+/**
+ * Make every triangle face outward. HRA meshes are not always consistently wound within one mesh, so first the winding
+ * is unified across each connected component (a neighbour that shares an edge in the same direction is flipped), then
+ * each component is oriented by the ray-cast facing test above (the renderer's view, meaningful for open shells and
+ * surface patches where the signed volume is not). Every piece is marked `winding: keep` so build-atlas does not
+ * second-guess the result. Returns the facing after the fix for the build-time check.
+ */
+function orient(mesh) {
+  const { positions, indices } = mesh; const s = meshStats(positions, indices);
+  // weld by position so shared edges are found even where the source duplicates vertices
+  const map = new Map(); const remap = new Uint32Array(positions.length / 3);
+  for (let i = 0; i < remap.length; i++) { const k = positions[i * 3].toFixed(6) + ',' + positions[i * 3 + 1].toFixed(6) + ',' + positions[i * 3 + 2].toFixed(6); let j = map.get(k); if (j === undefined) { j = map.size; map.set(k, j); } remap[i] = j; }
+  const nf = indices.length / 3; const edgeFaces = new Map();
+  const ekey = (u, v) => (u < v ? u * 4294967296 + v : v * 4294967296 + u);
+  for (let f = 0; f < nf; f++) { const a = remap[indices[f * 3]], b = remap[indices[f * 3 + 1]], c = remap[indices[f * 3 + 2]]; for (const [u, v] of [[a, b], [b, c], [c, a]]) { const k = ekey(u, v); let l = edgeFaces.get(k); if (!l) { l = []; edgeFaces.set(k, l); } l.push(f); } }
+  const dirEdge = (f, u, v) => { const a = remap[indices[f * 3]], b = remap[indices[f * 3 + 1]], c = remap[indices[f * 3 + 2]]; return (a === u && b === v) || (b === u && c === v) || (c === u && a === v); };
+  const comp = new Int32Array(nf).fill(-1); let ncomp = 0, unified = 0;
+  for (let seed = 0; seed < nf; seed++) {
+    if (comp[seed] !== -1) continue; const stack = [seed]; comp[seed] = ncomp;
+    while (stack.length) {
+      const f = stack.pop(); const a = remap[indices[f * 3]], b = remap[indices[f * 3 + 1]], c = remap[indices[f * 3 + 2]];
+      for (const [u, v] of [[a, b], [b, c], [c, a]]) {
+        const l = edgeFaces.get(ekey(u, v)); if (l.length !== 2) continue;              // do not propagate across boundary or non-manifold edges
+        const g = l[0] === f ? l[1] : l[0]; if (comp[g] !== -1) continue;
+        if (dirEdge(g, u, v)) { const t = indices[g * 3 + 1]; indices[g * 3 + 1] = indices[g * 3 + 2]; indices[g * 3 + 2] = t; unified++; }   // same direction on the shared edge: the neighbour is wound the other way
+        comp[g] = ncomp; stack.push(g);
+      }
+    }
+    ncomp++;
+  }
+  // orient each component by what a viewer sees of it
+  const byComp = Array.from({ length: ncomp }, () => []);
+  for (let f = 0; f < nf; f++) byComp[comp[f]].push(f);
+  let flippedFaces = 0, compsFlipped = 0;
+  for (const faces of byComp) {
+    if (faces.length < 8) continue;
+    const sub = new Uint32Array(faces.length * 3); faces.forEach((f, i) => { sub[i * 3] = indices[f * 3]; sub[i * 3 + 1] = indices[f * 3 + 1]; sub[i * 3 + 2] = indices[f * 3 + 2]; });
+    const fc = facing(positions, sub, faces.length > 2000 ? 160 : 96);
+    if (fc.back > fc.front) { for (const f of faces) { const t = indices[f * 3 + 1]; indices[f * 3 + 1] = indices[f * 3 + 2]; indices[f * 3 + 2] = t; } flippedFaces += faces.length; compsFlipped++; }
+  }
+  const after = facing(positions, indices, 200);
+  const frontRatio = after.front / ((after.front + after.back) || 1);
+  return { ...s, method: 'raycast', flipped: flippedFaces > 0, unified, components: ncomp, compsFlipped, keep: true, frontRatio, hits: after.front + after.back };
+}
+
+/**
+ * Two-sided geometry for a sheet or an open shell that a viewer can see from behind (peritoneal folds, the uterine
+ * cavity through its openings): a reversed copy of every face on its own vertices, nudged 0.05 mm inward so the copy
+ * keeps its own smooth normals. From any direction exactly one copy is front-facing, so the copies never compete.
+ */
+function twoSided(mesh) {
+  const { positions, indices } = mesh; const n = positions.length / 3;
+  const nrm = new Float64Array(positions.length);
+  for (let t = 0; t < indices.length; t += 3) { const a = indices[t] * 3, b = indices[t + 1] * 3, c = indices[t + 2] * 3;
+    const ux = positions[b] - positions[a], uy = positions[b + 1] - positions[a + 1], uz = positions[b + 2] - positions[a + 2], vx = positions[c] - positions[a], vy = positions[c + 1] - positions[a + 1], vz = positions[c + 2] - positions[a + 2];
+    const nx = uy * vz - uz * vy, ny = uz * vx - ux * vz, nz = ux * vy - uy * vx;
+    for (const k of [a, b, c]) { nrm[k] += nx; nrm[k + 1] += ny; nrm[k + 2] += nz; } }
+  const out = new Float64Array(positions.length * 2); out.set(positions, 0);
+  for (let i = 0; i < n; i++) { const l = Math.hypot(nrm[i * 3], nrm[i * 3 + 1], nrm[i * 3 + 2]) || 1; for (let k = 0; k < 3; k++) out[(n + i) * 3 + k] = positions[i * 3 + k] - 0.05 * nrm[i * 3 + k] / l; }
+  const idx = new Uint32Array(indices.length * 2); idx.set(indices, 0);
+  for (let t = 0; t < indices.length; t += 3) { idx[indices.length + t] = indices[t] + n; idx[indices.length + t + 1] = indices[t + 2] + n; idx[indices.length + t + 2] = indices[t + 1] + n; }
+  return { positions: out, indices: idx };
 }
 
 /** Affine per-axis map v' = s*v + b applied in place (positions in metres in → millimetres out when s carries the 1000). */
@@ -174,7 +263,16 @@ const sub = (a, b) => a.map((v, i) => v - b[i]), add = (a, b) => a.map((v, i) =>
 function tube(def) {
   const along = 28, around = 40, capRings = 8;
   const pts = resample(def.path, along); const rad = Array.from({ length: along }, (_, i) => { const u = (i / (along - 1)) * (def.radius.length - 1); const a = Math.min(def.radius.length - 2, Math.floor(u)), t = u - a; return [0, 1].map(k => def.radius[a][k] + (def.radius[a + 1][k] - def.radius[a][k]) * t); });
-  const frames = pts.map((p, i) => { const T = norm(sub(pts[Math.min(along - 1, i + 1)], pts[Math.max(0, i - 1)])); const ref = Math.abs(T[2]) < 0.9 ? [0, 0, 1] : [0, 1, 0]; const S = norm(cross(T, ref)); const N = norm(cross(S, T)); return { T, S, N }; });
+  // Rotation-minimising frames: the first S comes from a fixed reference, every later one is the previous S carried along
+  // the path (projected off the new tangent), so the cross-section never flips between rings.
+  const frames = []; let prevS = null;
+  for (let i = 0; i < along; i++) {
+    const T = norm(sub(pts[Math.min(along - 1, i + 1)], pts[Math.max(0, i - 1)]));
+    let S;
+    if (!prevS) { const ref = Math.abs(T[2]) < 0.9 ? [0, 0, 1] : [0, 1, 0]; S = norm(cross(T, ref)); }
+    else { const dp = prevS[0] * T[0] + prevS[1] * T[1] + prevS[2] * T[2]; S = norm(sub(prevS, scale(T, dp))); }
+    prevS = S; frames.push({ T, S, N: norm(cross(S, T)) });
+  }
   const V = [], F = [];
   const ring = (centre, S, N, rx, rz) => { const base = V.length / 3; for (let k = 0; k < around; k++) { const a = (k / around) * Math.PI * 2; const q = add(add(centre, scale(S, rx * Math.cos(a))), scale(N, rz * Math.sin(a))); V.push(...q); } return base; };
   const rings = [];
@@ -212,7 +310,7 @@ function writeOBJ(file, mesh) {
 // ----------------------------------------------------------------- build ----
 function run(cmd, args) { return new Promise((res, rej) => { const c = spawn(cmd, args, { stdio: 'inherit' }); c.on('close', code => code === 0 ? res() : rej(new Error(`${path.basename(args[0])} exited with ${code}`))); }); }
 
-function merge(atlasPath, localPath, glbFrom, glbTo, layerInfo) {
+function merge(atlasPath, localPath, glbFrom, glbTo, layerInfo) {   // layerInfo: one record per layer
   const atlas = JSON.parse(fs.readFileSync(atlasPath, 'utf8'));
   const local = JSON.parse(fs.readFileSync(localPath, 'utf8'));
   if (!atlas.base) atlas.base = { systems: atlas.systems.length, concepts: atlas.concepts.length, structures: atlas.structures.length, pieces: atlas.pieces.length, totals: { ...atlas.totals } };
@@ -224,7 +322,9 @@ function merge(atlasPath, localPath, glbFrom, glbTo, layerInfo) {
   atlas.concepts.push(...local.concepts);
   for (const st of local.structures) atlas.structures.push({ ...st, pieces: st.pieces.map(i => i + pOff), parents: (st.parents || []).map(i => i + cOff), ...(st.pair !== undefined ? { pair: st.pair + sOff } : {}) });
   for (const p of local.pieces) atlas.pieces.push({ ...p, structure: p.structure + sOff, parents: (p.parents || []).map(i => i + cOff) });
-  atlas.layers = [{ ...layerInfo, systems: local.systems.map(s => s.id), generated: local.generated, settings: local.settings, pieces: local.pieces.length, structures: local.structures.length, triangles: local.totals.triangles, sourceTriangles: local.totals.sourceTriangles, bytes: local.totals.bytes }];
+  atlas.layers = layerInfo.map(l => { const sys = local.systems.filter(s => l.systems.includes(s.id)); const ids = new Set(sys.map(s => s.id));
+    return { ...l, generated: local.generated, settings: local.settings, pieces: local.pieces.filter(p => ids.has(p.system)).length, structures: local.structures.filter(s => ids.has(s.system)).length,
+      triangles: sys.reduce((a, s) => a + s.triangles, 0), bytes: sys.reduce((a, s) => a + s.bytes, 0) }; });
   atlas.totals = { pieces: atlas.pieces.length, triangles: base.totals.triangles + local.totals.triangles, sourceTriangles: base.totals.sourceTriangles + local.totals.sourceTriangles, bytes: base.totals.bytes + local.totals.bytes, structures: atlas.structures.length, concepts: atlas.concepts.length };
   // sanity: pieces grouped by system in system order (the viewer relies on it)
   let k = 0; for (const s of atlas.systems) { const n = atlas.pieces.filter(p => p.system === s.id).length; for (let i = 0; i < n; i++, k++) if (atlas.pieces[k].system !== s.id) throw new Error(`pieces not grouped by system at ${k} (${s.id})`); }
@@ -298,21 +398,35 @@ async function main() {
   const sideOf = (rec) => (rec.side === 'right' ? 1 : 0);
 
   // ---- pieces
-  const minVolume = 5e-8 * sP * sP * sP;                        // 0.05 cm3 in the scaled frame
+  await MeshoptSimplifier.ready;
   const structures = [], pieces = []; const sysCount = new Map(M.systems.map(s => [s.id, 0]));
   const cIndex = new Map(M.concepts.map((c, i) => [c.id, i])); const sIndex = new Map(M.structures.map((s, i) => [s.id, i]));
   let srcTris = 0;
   for (const rec of M.structures) {
     let mesh, concept = rec.concept;
-    if (rec.node) {
-      const src = hra.get(rec.node); if (!src) throw new Error(`HRA node not found: ${rec.node} (${rec.id})`);
-      let pos = rec.fit === 'thorax' ? warps[sideOf(rec)](TT(src.positions, sideOf(rec))) : TP(src.positions);
-      mesh = { positions: pos, indices: Uint32Array.from(src.indices) };
+    const nodeNames = rec.nodes || (rec.node ? [rec.node] : null);
+    if (nodeNames) {
+      const parts = nodeNames.map(n => { const src = hra.get(n); if (!src) throw new Error(`HRA node not found: ${n} (${rec.id})`); return src; });
+      const pos = concat(...parts.map(p => rec.fit === 'thorax' ? warps[sideOf(rec)](TT(p.positions, sideOf(rec))) : TP(p.positions)));
+      const idx = []; let off = 0; for (const p of parts) { for (let i = 0; i < p.indices.length; i++) idx.push(p.indices[i] + off); off += p.positions.length / 3; }
+      mesh = { positions: pos, indices: Uint32Array.from(idx) };
     } else if (rec.schematic) { mesh = schematic(rec.schematic); }
-    else throw new Error(`${rec.id}: needs node or schematic`);
-    const o = orient(mesh, minVolume); srcTris += mesh.indices.length / 3;
+    else throw new Error(`${rec.id}: needs node(s) or schematic`);
+    if (rec.presimplify && mesh.indices.length / 3 > rec.presimplify) {
+      // a source mesh far denser than its mirror (the right breast is 5x the left) is brought to the same order first,
+      // so build-atlas's ratio lands both sides on comparable triangle counts
+      const [idx, err] = MeshoptSimplifier.simplify(mesh.indices, Float32Array.from(mesh.positions), 3, rec.presimplify * 3, 0.3, ['ErrorAbsolute']);
+      log(`  ${rec.id}: pre-simplified ${mesh.indices.length / 3} -> ${idx.length / 3} triangles (error ${err.toFixed(3)} mm)`);
+      mesh.indices = Uint32Array.from(idx);
+    }
+    const o = orient(mesh);
+    // a sheet or an open shell whose inner wall a viewer can still see gets a reversed copy of its faces
+    if (o.frontRatio < 0.9) { mesh = twoSided(mesh); o.twoSided = true; }
+    srcTris += mesh.indices.length / 3;
     const b = bbox(mesh.positions);
-    log(`  ${rec.id} ${rec.name.padEnd(36)} ${String(mesh.indices.length / 3).padStart(7)} tris  ${o.method.padEnd(8)}${o.flipped ? ' flipped' : '        '}  open ${(o.openRatio * 100).toFixed(1).padStart(4)}%  bbox [${fmt(b, 0)}]`);
+    log(`  ${rec.id} ${rec.name.padEnd(36)} ${String(mesh.indices.length / 3).padStart(7)} tris  ${o.components} comp${o.compsFlipped ? ` (${o.compsFlipped} flipped)` : ''}${o.unified ? `, ${o.unified} faces re-wound` : ''}  front ${(o.frontRatio * 100).toFixed(0).padStart(3)}% of ${o.hits} rays  open ${(o.openRatio * 100).toFixed(1).padStart(4)}%  bbox [${fmt(b, 0)}]`);
+    if (o.twoSided) log(`    two-sided: ${(100 - o.frontRatio * 100).toFixed(0)}% of view rays met the inner face of this open mesh (${(o.openRatio * 100).toFixed(1)}% boundary edges), so it carries a reversed copy of its faces`);
+    if (rec.side && Math.sign((b[0] + b[3]) / 2) !== (rec.side === 'left' ? 1 : -1)) throw new Error(`${rec.id} ${rec.name}: bbox centre x ${fmt((b[0] + b[3]) / 2)} contradicts side ${rec.side}`);
     writeOBJ(path.join(workObj, `${rec.id}.obj`), mesh);
     const parents = rec.parents.map(id => { if (!cIndex.has(id)) throw new Error(`unknown concept ${id}`); return cIndex.get(id); });
     const st = { id: rec.id, name: rec.name, concept: concept.replace(/^FMA:/, 'FMA'), system: rec.system, pieces: [pieces.length], parents };
@@ -322,13 +436,17 @@ async function main() {
     structures.push(st); pieces.push(piece); sysCount.set(rec.system, sysCount.get(rec.system) + 1);
   }
   const systems = M.systems.map(s => ({ ...s, count: sysCount.get(s.id) }));
-  const manifest = { source: M.source, systems, concepts: M.concepts, structures, pieces };
+  // every concept id a piece carries resolves to a concepts entry (the male atlas keeps that invariant)
+  const concepts = M.concepts.slice(); const known = new Set(concepts.map(c => c.id)); const uses = new Map();
+  for (const st of structures) { if (!uses.has(st.concept)) uses.set(st.concept, []); uses.get(st.concept).push(st.name); }
+  for (const [id, names] of uses) { if (known.has(id)) continue; const nm = names.length > 1 ? names[0].replace(/^(Left|Right) /, '').replace(/ (left|right) /, ' ') : names[0]; concepts.push({ id, name: nm.toLowerCase() }); known.add(id); }
+  const manifest = { source: M.source, systems, concepts, structures, pieces };
   fs.writeFileSync(path.join(opts.work, 'manifest.json'), JSON.stringify(manifest));
   log(`wrote ${pieces.length} OBJs (${srcTris.toLocaleString()} source triangles) and ${path.join(opts.work, 'manifest.json')}`);
   if (opts.fitOnly) return;
 
   // ---- build with the male settings, then merge
-  const layerInfo = { id: 'female', name: 'Female body and gender-affirming surgery', source: M.source, tool: 'tools/build-female-atlas.mjs', manifest: 'tools/manifest/female-source.json' };
+  const layerInfo = (M.layers || [{ id: 'female', name: 'Female body', source: M.source, systems: M.systems.map(s => s.id) }]).map(l => ({ ...l, tool: 'tools/build-female-atlas.mjs', manifest: 'tools/manifest/female-source.json' }));
   for (const q of ['hd', 'lite']) {
     if (opts.only && opts.only !== q) continue;
     const atlasPath = path.join(ROOT, 'data', q, 'atlas.json'); const settings = JSON.parse(fs.readFileSync(atlasPath, 'utf8')).settings;

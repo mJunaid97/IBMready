@@ -9,9 +9,9 @@ derived from those links by the compiler rather than authored.
 
 | Entity | Id | Source of truth | Compiled to | Key fields |
 | --- | --- | --- | --- | --- |
-| **AnatomicalStructure** | piece file id of its first mesh, e.g. `FJ3365` | `tools/manifest/atlas-source.json` (from BodyParts3D tables via `tools/classify.py`) | `data/{hd,lite}/atlas.json → structures[]` | `name`, `concept` (FMA id), `system`, `side`, `pair` (index of the other side), `pieces[]`, `parents[]` (concept indices) |
+| **AnatomicalStructure** | piece file id of its first mesh, e.g. `FJ3365` | `tools/manifest/atlas-source.json` (from BodyParts3D tables via `tools/classify.py`) | `data/{hd,lite}/atlas.json → structures[]` | `name`, `concept` (FMA or UBERON id), `system`, `side`, `pair` (index of the other side), `pieces[]`, `parents[]` (concept indices) |
 | **Piece** (mesh) | BodyParts3D file id, e.g. `FJ3365` | same | `atlas.json → pieces[]`; geometry in `glb/<system>.glb` (node name = id) | `structure`, `bbox` (mm, glTF y-up), `tris` |
-| **Concept** | FMA id | BodyParts3D `isa_element_parts.txt` | `atlas.json → concepts[]` | `name`; pieces reference concepts through `parents` |
+| **Concept** | FMA, UBERON or project id | BodyParts3D `isa_element_parts.txt`; `tools/manifest/female-source.json` for the appended layers (`UBERON:*` / `FMA*` ontology terms, `HRA:*` and `GA:*` groupings of this project) | `atlas.json → concepts[]` | `name`; pieces reference concepts through `parents` |
 | **BodySystem** | slug, e.g. `skeleton` | `content/systems.json` | `atlas.json → systems[]` (counts, colour, file) and `atlas-content.json → systems` | `overview`, `functions[]`, `clinical[]`, `related[]`, `keyStructures[]` |
 | **Organ** | slug, e.g. `liver` | `content/organs.json` (match rules; an organ without a `match` rule has no atlas geometry and names the modelled structures around it in `nearby`) | `atlas-content.json → organs[]` with resolved `structures[]` (and `nearby[]`) | `system`, `region`, `summary`, `aliases[]` |
 | **Region** | slug, e.g. `thorax` | `content/regions.json` (mm bands) | `atlas-content.json → regions[]` with resolved `structures[]` | `summary` |
@@ -105,12 +105,12 @@ each clinical page opens with live 3D of the anatomy it discusses.
    explain mechanism and cautions, first-aid pages follow published guidelines and say when to
    call for help; every such page carries the disclaimer for its type.
 7. **One reference frame, every body's anatomy**: BodyParts3D is an adult male and is never edited.
-   The female pelvic organs and breasts are a second layer (`reproductive-female`, from the NIH Human
-   Reference Atlas, fitted to the male pelvis and chest by `tools/build-female-atlas.mjs`) and the
-   anatomy of gender-affirming surgery a third (`gender-affirming`, schematic solids from the same tool);
-   both are appended after the male systems in `atlas.json` (`base` records the male counts so a rebuild
-   replaces the layers), hidden by default (`hidden`) and hide the male reproductive organs when switched
-   on (`conflicts`). An organ no layer models (the vulva) must carry a full article and names the
+   The female pelvic organs, bladder and breasts are a second layer (`reproductive-female`, from the NIH
+   Human Reference Atlas, fitted to the male pelvis and chest by `tools/build-female-atlas.mjs`) and the
+   anatomy of gender-affirming surgery two more (`vaginoplasty`, `phalloplasty`: schematic solids from the
+   same tool); all are appended after the male systems in `atlas.json` (`base` records the male counts so a
+   rebuild replaces the layers), hidden by default (`hidden`) and, while shown, hide the reference-body
+   pieces they stand in for (`hides`, a list of structure names the viewer masks). An organ no layer models (the vulva) must carry a full article and names the
    modelled structures around it, which its page and every clinical page that concerns it embed instead
    (`organHash` in `site/site.js`, mirrored by `tools/render-previews.mjs`); the explorer lists only
    organs it can select. Sex-specific structures (urethra, prostate, pubic hair) are described for every

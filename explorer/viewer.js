@@ -16,7 +16,7 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 import { MeshoptDecoder } from 'three/addons/libs/meshopt_decoder.module.js';
 
-const LOAD_ORDER = ['skeleton', 'muscles', 'heart', 'arteries', 'veins', 'nervous', 'respiratory', 'digestive', 'teeth', 'sensory', 'joints', 'urinary', 'reproductive', 'endocrine', 'lymphatic', 'skin', 'reproductive-female', 'gender-affirming'];
+const LOAD_ORDER = ['skeleton', 'muscles', 'heart', 'arteries', 'veins', 'nervous', 'respiratory', 'digestive', 'teeth', 'sensory', 'joints', 'urinary', 'reproductive', 'endocrine', 'lymphatic', 'skin', 'reproductive-female', 'vaginoplasty', 'phalloplasty'];
 const GHOST_ALPHA = 0.16;
 const SELECTED_ALPHA = 2.0;            // alpha > 1.5 marks a selected piece for the see-through highlight pass
 const SYSTEM_ALPHA = { skin: 0.42 };    // translucent overlays
@@ -51,6 +51,7 @@ export class AtlasViewer extends EventTarget {
     this.sysOf = new Int16Array(this.n);
     this.instOf = new Int32Array(this.n).fill(-1);
     this.hidden = new Uint8Array(this.n);      // hidden by the user
+    this.layerHidden = new Uint8Array(this.n); // hidden by a visible layer that stands in for them (a system's `hides` list of structure names)
     this.isolated = null;                      // Set of piece idx or null
     this.selected = new Set();
     this.hovered = -1;
@@ -66,6 +67,8 @@ export class AtlasViewer extends EventTarget {
 
     // --- systems ---------------------------------------------------------
     this.systems = atlas.systems.map((def, k) => ({ def, k, mesh: null, start: -1, count: 0, visible: !(HIDDEN_BY_DEFAULT.includes(def.id) || def.hidden), loaded: false, loading: false, bytes: def.bytes || 0, alpha: SYSTEM_ALPHA[def.id] ?? 1 }));
+    const byName = new Map(atlas.structures.map(s => [s.name, s]));
+    for (const s of this.systems) if (s.def.hides) s.hidePieces = s.def.hides.flatMap(n => (byName.get(n) || {}).pieces || []);
     this.sysIndex = new Map(this.systems.map(s => [s.def.id, s]));
     let cursor = 0;
     for (const s of this.systems) {
@@ -364,7 +367,7 @@ export class AtlasViewer extends EventTarget {
   // ======================================================================
   isPieceVisible(i) {
     const s = this.systems[this.sysOf[i]];
-    if (!s.visible || this.hidden[i]) return false;
+    if (!s.visible || this.hidden[i] || this.layerHidden[i]) return false;
     if (this.isolated && !this.isolated.has(i)) return false;
     return true;
   }
@@ -401,10 +404,19 @@ export class AtlasViewer extends EventTarget {
 
   _refreshAll() { for (const s of this.systems) { this._applyVisibility(s); this._applyAlphaColors(s); } }
 
+  /** Pieces hidden by the visible layers (a layer's `hides` names the reference-body structures it stands in for). */
+  _applyLayerHides() {
+    const next = new Uint8Array(this.n);
+    for (const s of this.systems) if (s.visible && s.hidePieces) for (const i of s.hidePieces) next[i] = 1;
+    const touched = new Set();
+    for (let i = 0; i < this.n; i++) if (next[i] !== this.layerHidden[i]) touched.add(this.sysOf[i]);
+    this.layerHidden = next;
+    for (const k of touched) this._applyVisibility(this.systems[k]);
+  }
   setSystemVisible(id, on) {
     const s = this.sysIndex.get(id); if (!s) return;
     s.visible = on;
-    this._applyVisibility(s);
+    this._applyVisibility(s); this._applyLayerHides();
     if (this.explodeMode === 'grid') this._layoutGrid();
     this.dispatchEvent(new CustomEvent('visibility'));
   }
@@ -412,6 +424,7 @@ export class AtlasViewer extends EventTarget {
   setSystemsVisible(ids) {
     const set = new Set(ids);
     for (const s of this.systems) { s.visible = set.has(s.def.id); this._applyVisibility(s); }
+    this._applyLayerHides();
     if (this.explodeMode === 'grid') this._layoutGrid();
     this.dispatchEvent(new CustomEvent('visibility'));
   }
@@ -427,6 +440,7 @@ export class AtlasViewer extends EventTarget {
   unhideAll() {
     this.hidden.fill(0); this.isolated = null;
     for (const s of this.systems) { s.visible = true; this._applyVisibility(s); }
+    this._applyLayerHides();
     if (this.explodeMode === 'grid') this._layoutGrid();
     this.dispatchEvent(new CustomEvent('visibility'));
   }

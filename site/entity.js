@@ -135,7 +135,7 @@ export function editorialHtml({ updated, references = [], reviewed, kind = 'page
     <dt>Written by</dt><dd><a href="${link.page('about')}">${esc(ed.author || SITE.name)}</a></dd>
     <dt>Review status</dt><dd>${st ? esc(REVIEW_LABEL[st] || st) : reviewed ? `Reviewed ${esc(dateText(reviewed))}` : 'Not yet independently reviewed'} · <a href="${link.page('medical-review-policy')}">policy</a></dd>
     ${updated ? `<dt>Last updated</dt><dd><time datetime="${esc(updated)}">${esc(dateText(updated))}</time></dd>` : ''}
-    <dt>Sources</dt><dd>${references.length ? `${references.length} cited${t1 ? `, ${t1} from official health bodies` : ''}${jur.length ? ` · ${esc(jur.join(', '))}` : ''}` : 'Atlas data (BodyParts3D, FMA)'} · <a href="${link.page('references-policy')}">how we source</a></dd>
+    <dt>Sources</dt><dd>${references.length ? `${references.length} cited${t1 ? `, ${t1} from official health bodies` : ''}${jur.length ? ` · ${esc(jur.join(', '))}` : ''}` : 'Atlas data (BodyParts3D, the Human Reference Atlas and the schematic layers, see Attribution)'} · <a href="${link.page('references-policy')}">how we source</a></dd>
   </dl>${jur.length > 1 ? '<p class="small muted">Guidance and licensed information may differ by country; each fact on this page is marked with the country of its source.</p>' : ''}<p class="small muted">Educational content, not medical advice. <a href="${link.page('disclaimer')}">Disclaimer</a> · <a href="${link.page('corrections-policy')}">Report an error</a></p></section>`;
 }
 

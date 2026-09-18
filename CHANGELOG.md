@@ -1,5 +1,38 @@
 # Changelog
 
+## v1.8.1 — 2026-09-18
+
+Fixes from an independent QA pass over v1.8.0. The male BodyParts3D systems are still untouched.
+
+- Geometry: 18 of the female meshes shipped wound inside-out (the vagina, cervix, body of the uterus and nipples
+  rendered as hollow shells). The builder now unifies winding across each connected component, orients each
+  component by a ray-cast facing test (what the renderer sees, valid for open shells and surface patches where
+  the signed volume is not), gives open sheets a reversed copy of their faces so they read from both sides, and
+  fails the build if a piece stays inconsistently wound. Verified with a renderer-accurate culling check against
+  the male systems as control
+- Geometry: the schematic tube frames are now carried along the path (parallel transport), removing the folded
+  cross-sections in the labia and neourethra; the right breast is pre-simplified to the density of the left
+- Female layer: the HRA female bladder (with trigone and neck) and a schematic female urethra join the layer, and
+  while it is shown the viewer hides the male reproductive organs, bladder and urethra it stands in for, so the
+  cervix no longer sits inside the male bladder (`hides`, a list of structure names on the system, replaces the
+  system-level `conflicts`)
+- Gender-affirming surgery is now two layers, *Vaginoplasty* and *Phalloplasty*, each self-consistent: the
+  vaginoplasty layer keeps the prostate, seminal vesicles and bladder and hides the penis, testes, ducts and male
+  urethra; the phalloplasty layer hides all the male reproductive organs and the urethra. The neovaginal canal is
+  drawn collapsed as a slit in front of the rectum, about 8 cm deep because the reference pelvis has no dissected
+  space, and the copy says so
+- Content: the vulva moves to the female system and no longer names the whole-body skin among its surroundings;
+  female-only clinical pages leave the male reproductive system; corrections to the tube parts (fimbriae fringe
+  the infundibulum), the uterine isthmus, the classical caesarean site, the lactiferous sinuses and duct
+  openings, the neovaginal depth and lubrication statements; the Visible Human Female's age and the fit scale are
+  stated where organ sizes are quoted
+- Explorer: study deep links start once their system has loaded (they only ever worked for the skeleton); the
+  study scope, *Show all* and the share URL respect the hidden layers; the vulva is searchable and opens its page;
+  the Help dialog's Data paragraph credits every source
+- Attribution and docs: HRA wording follows the source files; counts and the README data table updated; the
+  explorer, about page and system pages name every source
+- Counts: 2,299 pieces, 1,736 structures, 19 systems
+
 ## v1.8.0 — 2026-09-17
 
 The female body and the anatomy of gender-affirming surgery in 3D. The male BodyParts3D atlas is untouched;

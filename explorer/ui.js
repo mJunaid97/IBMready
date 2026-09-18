@@ -37,7 +37,11 @@ export class AtlasUI {
     this.organPieces = (this.content.organs || []).map(o => o.structures.flatMap(si => atlas.structures[si].pieces));
     this.regionPieces = (this.content.regions || []).map(r => r.structures.flatMap(si => atlas.structures[si].pieces));
     this.index = buildIndex(atlas, this.conceptCounts);
-    for (const [i, o] of (this.content.organs || []).entries()) if (o.structures.length) this.index.push({ type: 'organ', id: o.id, idx: i, name: o.name, norm: o.name.toLowerCase(), aliases: (o.aliases || []).map(a => a.toLowerCase()), words: [o.name, ...(o.aliases || [])].join(' ').toLowerCase().split(/[^a-z]+/).filter(Boolean), sub: `${o.structures.length} structures · ${this.sysById.get(o.system)?.name || ''}`, system: o.system, rank: 2.6 });
+    for (const [i, o] of (this.content.organs || []).entries()) {
+      const aliases = (o.aliases || []).map(a => a.toLowerCase()), words = [o.name, ...(o.aliases || [])].join(' ').toLowerCase().split(/[^a-z]+/).filter(Boolean);
+      if (o.structures.length) this.index.push({ type: 'organ', id: o.id, idx: i, name: o.name, norm: o.name.toLowerCase(), aliases, words, sub: `${o.structures.length} structures · ${this.sysById.get(o.system)?.name || ''}`, system: o.system, rank: 2.6 });
+      else this.index.push({ type: 'topic', kind: 'anatomy', id: o.id, name: o.name, norm: o.name.toLowerCase(), aliases, words, sub: 'anatomy article · not modelled in 3D, opens the page', href: this.organHref(o.id), rank: 2.2 });   // the vulva: no layer models it
+    }
     for (const [i, r] of (this.content.regions || []).entries()) this.index.push({ type: 'region', id: r.id, idx: i, name: r.name, norm: r.name.toLowerCase(), words: r.name.toLowerCase().split(/[^a-z]+/).filter(Boolean), sub: `${r.structures.length} structures`, rank: 2.4 });
     if (this.clinical) for (const [kind, names] of Object.entries(this.clinical.names)) for (const [id, name] of Object.entries(names))
       this.index.push({ type: 'topic', kind, id, name, norm: name.toLowerCase(), words: name.toLowerCase().split(/[^a-z0-9]+/).filter(Boolean), sub: `${this.clinical.types[kind].singular} · opens the page`, href: this.topicHref(kind, id), rank: 1.6 });
@@ -127,18 +131,17 @@ export class AtlasUI {
     });
     $('btn-region-clear').addEventListener('click', () => this.clearRegion());
     $('presets').addEventListener('click', (e) => { const b = e.target.closest('button[data-preset]'); if (b) this.applyPreset(b.dataset.preset); });
-    $('btn-show-all').addEventListener('click', () => { this.v.unhideAll(); this.applyPreset('all'); this.toast('Everything visible'); });
+    $('btn-show-all').addEventListener('click', () => { const layersOn = this.atlas.systems.filter(s => s.hidden && this.v.sysIndex.get(s.id).visible).map(s => s.id); this.v.unhideAll(); this.v.setSystemsVisible([...this.atlas.systems.filter(s => s.id !== 'skin' && !s.hidden).map(s => s.id), ...layersOn]); this._setPresetActive(layersOn.length ? null : 'all'); this.toast(layersOn.length ? 'Default systems visible, with the layers you had on' : 'Default systems visible'); });
     $('btn-hide-all').addEventListener('click', () => { this.v.setSystemsVisible([]); this._setPresetActive(null); });
     $('btn-collapse-left').addEventListener('click', () => { $('panel-systems').hidden = true; $('tab-systems').hidden = false; });
     $('tab-systems').addEventListener('click', () => { $('panel-systems').hidden = false; $('tab-systems').hidden = true; });
   }
   toggleSystem(id) { const s = this.v.sysIndex.get(id); if (s.visible) this.v.setSystemVisible(id, false); else this._switchOn(id); this._setPresetActive(null); }
-  /** Show a system. A layer that stands in for other systems (the female body for the male reproductive organs) hides
-   *  them as it comes on, so the two bodies are not drawn through each other; the user can switch them back on from the list. */
+  /** Show a system. A layer that stands in for parts of the reference body (the female body for the male reproductive
+   *  organs, bladder and urethra) hides those pieces while it is on (the viewer's `hides` mask); say so once. */
   _switchOn(id) {
     const s = this.v.sysIndex.get(id); this.v.setSystemVisible(id, true);
-    const conflicts = (s.def.conflicts || []).filter(c => this.v.sysIndex.has(c) && this.v.sysIndex.get(c).visible);
-    if (conflicts.length) { for (const c of conflicts) this.v.setSystemVisible(c, false); this.toast(`${conflicts.map(c => this.sysById.get(c).name).join(', ')} hidden while ${s.def.name} is shown · switch it back on in the list`); }
+    if (s.hidePieces && s.hidePieces.length && !this._hidesToasted?.has(id)) { (this._hidesToasted ||= new Set()).add(id); this.toast(`${s.def.hidesLabel || 'Overlapping structures of the reference body'} hidden while ${s.def.name} is shown · switch the layer off to bring them back`); }
   }
   soloSystem(id) { this.v.setSystemsVisible([id]); this._setPresetActive(null); }
   applyPreset(name) {
@@ -156,7 +159,11 @@ export class AtlasUI {
     $('visible-count').textContent = `${fmt(this.v.visibleCount())} of ${fmt(this.v.n)} pieces visible`;
     this._updateShareState();
   }
-  _onSystemLoaded(def) { const li = $('systems').querySelector(`li[data-id="${def.id}"]`); if (li) li.classList.remove('is-loading'); }
+  _onSystemLoaded(def) {
+    const li = $('systems').querySelector(`li[data-id="${def.id}"]`); if (li) li.classList.remove('is-loading');
+    // a study deep link can arrive before its system's geometry: start once the pieces are in
+    if (this.studyOpen && !this.study.current && !(this.study.mode === 'cards' && this.study.deck.length)) this.startStudy();
+  }
 
   isolateRegion(ri) {
     const r = this.content.regions[ri]; if (!r) return;
@@ -534,7 +541,9 @@ export class AtlasUI {
   startStudy(mode) {
     if (mode) { this.study.mode = mode; for (const x of $('panel-study').querySelectorAll('.segmented button')) x.classList.toggle('is-active', x.dataset.mode === mode); }
     const vis = this.atlas.systems.filter(s => this.v.sysIndex.get(s.id).visible).map(s => s.name);
-    const scope = this.activeRegion ? `the ${this.region(this.activeRegion).name.toLowerCase()} region` : vis.length === this.atlas.systems.length - 1 ? 'all systems' : vis.join(', ');
+    const dflt = this.atlas.systems.filter(s => s.id !== 'skin' && !s.hidden);
+    const allDefault = vis.length === dflt.length && dflt.every(s => this.v.sysIndex.get(s.id).visible);
+    const scope = this.activeRegion ? `the ${this.region(this.activeRegion).name.toLowerCase()} region` : allDefault ? 'all systems' : vis.join(', ');
     $('study-scope').textContent = `Questions come from what is visible: ${scope}. Toggle systems or pick a region to narrow the scope.`;
     $('study-score').textContent = this.study.asked ? `Score ${this.study.score} / ${this.study.asked}` : '';
     if (this.study.mode === 'quiz') this.study.next(); else if (this.study.mode === 'locate') this.study.locate(); else this.study.cards();

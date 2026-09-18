@@ -31,7 +31,7 @@ if (!PRERENDERED) {
       <a class="btn" href="${link.locate(id)}">Locate structures</a>
       <a class="btn" href="${link.cards(id)}">Flashcards</a>
     </div>
-    ${facadeHtml('sys=' + id, sys.name)}
+    ${facadeHtml('sys=' + id, sys.layer ? (sys.title || `${sys.name} system`) : sys.name)}
     <div class="two">
       <div>
         <h2>Overview</h2>

@@ -63,7 +63,9 @@ for (const [name, hash] of todo) {
   try { await page.waitForFunction(() => window.atlas && window.atlas.viewer.systems.every(s => s.loaded) && document.getElementById('app').dataset.ready === 'true', null, { timeout: 240000 }); }
   catch { console.error(`  ${name}: atlas did not finish loading`); continue; }
   await page.waitForTimeout(hash ? 1400 : 600);          // let the camera fly and the highlight settle
-  await page.evaluate(() => { const v = window.atlas.viewer; v.requestRender(); v.render && v.render(); });
+  // Render through the viewer's own animation loop and wait for that frame to be presented: a render() called
+  // from outside the loop can be composited and then dropped before the screenshot, which left blank previews.
+  await page.evaluate(() => new Promise((resolve) => { const v = window.atlas.viewer; v.addEventListener('frame', () => requestAnimationFrame(() => requestAnimationFrame(resolve)), { once: true }); v.requestRender(); }));
   await addBrandPlate(page, labels.get(name) || 'Anatomy in 3D');
   await page.waitForTimeout(100);
   await page.screenshot({ path: `${out}/${name}.jpg`, type: 'jpeg', quality: 80 });   // the canvas fills the viewport

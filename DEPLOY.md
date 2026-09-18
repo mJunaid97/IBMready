@@ -64,7 +64,7 @@ script writes a permanent redirect for the old name into `.htaccess`.
 - hPanel → Security → SSL: make sure a certificate is installed for the domain (Hostinger issues a
   free one; subdomains get their own). Then hPanel → Security → Force HTTPS: on.
 - Open `https://YOUR-DOMAIN/` and `https://YOUR-DOMAIN/explorer/`. The explorer's top bar should
-  reach "2,295 pieces · 1,732 structures".
+  reach "2,299 pieces · 1,736 structures".
 - Open `https://YOUR-DOMAIN/conditions/gout/` (clean URL), `https://YOUR-DOMAIN/tests/cbc/`
   (an alias: it must redirect once to `/tests/complete-blood-count/`) and a non-existent address to
   see the 404 page. `https://YOUR-DOMAIN/sitemap.xml` must list the section sitemaps.

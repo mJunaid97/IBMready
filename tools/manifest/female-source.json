@@ -1,5 +1,5 @@
 {
- "_about": "Source mapping for the two layers that tools/build-female-atlas.mjs appends to data/hd/atlas.json and data/lite/atlas.json: the female body (NIH Human Reference Atlas, Visible Human Female) fitted into the BodyParts3D male reference frame, and a schematic gender-affirming-surgery layer generated procedurally in that frame. The male systems, pieces and GLBs are never touched. Concept ids are UBERON/FMA where the source gives them; HRA:* and GA:* ids are grouping concepts of this project, not ontology terms. Schematic coordinates are millimetres in the atlas frame (y up, +x subject's left, +z anterior).",
+ "_about": "Source mapping for the layers that tools/build-female-atlas.mjs appends to data/hd/atlas.json and data/lite/atlas.json: the female body (NIH Human Reference Atlas, Visible Human Female) fitted into the BodyParts3D male reference frame, and a schematic gender-affirming-surgery layer generated procedurally in that frame. The male systems, pieces and GLBs are never touched. Concept ids are UBERON/FMA where the source gives them; HRA:* and GA:* ids are grouping concepts of this project, not ontology terms. Schematic coordinates are millimetres in the atlas frame (y up, +x subject's left, +z anterior).",
  "source": {
   "name": "Human Reference Atlas (HRA) 3D Reference Organ Library, united female v1.5",
   "attribution": "3D Reference Organ Library, Human Reference Atlas (HRA), HuBMAP Consortium / NIH, licensed under CC BY 4.0; meshes derived from the Visible Human Female dataset of the U.S. National Library of Medicine",
@@ -60,24 +60,112 @@
    "color": "#e0679b",
    "layer": "female",
    "hidden": true,
-   "conflicts": [
-    "reproductive"
-   ],
    "note": "female body · hidden by default",
-   "summary": "Uterus, cervix, vagina, uterine tubes, ovaries and their ligaments, with the breasts: the female body from the NIH Human Reference Atlas, fitted to the reference pelvis and chest."
+   "hides": [
+    "Corpus cavernosum of penis",
+    "Corpus spongiosum of penis",
+    "Glans penis",
+    "Left testis",
+    "Right testis",
+    "Left epididymis",
+    "Right epididymis",
+    "Left deferent duct",
+    "Right deferent duct",
+    "Left seminal vesicle",
+    "Right seminal vesicle",
+    "Prostate",
+    "Urinary bladder",
+    "Urethra"
+   ],
+   "hidesLabel": "The male reproductive organs, bladder and urethra of the reference body",
+   "summary": "Uterus, cervix, vagina, uterine (fallopian) tubes, ovaries and their ligaments, the bladder and the breasts: the female body from the NIH Human Reference Atlas, fitted to the reference pelvis and chest."
   },
   {
-   "id": "gender-affirming",
-   "name": "Gender-affirming surgery",
-   "title": "Anatomy after gender-affirming surgery",
+   "id": "vaginoplasty",
+   "name": "Vaginoplasty",
+   "title": "Anatomy after vaginoplasty",
    "color": "#5bcefa",
    "layer": "gender-affirming",
    "hidden": true,
-   "conflicts": [
-    "reproductive"
+   "note": "schematic · after vaginoplasty",
+   "hides": [
+    "Corpus cavernosum of penis",
+    "Corpus spongiosum of penis",
+    "Glans penis",
+    "Left testis",
+    "Right testis",
+    "Left epididymis",
+    "Right epididymis",
+    "Left deferent duct",
+    "Right deferent duct",
+    "Urethra"
    ],
-   "note": "schematic · hidden by default",
-   "summary": "Schematic anatomy after vaginoplasty (neovagina, neoclitoris, labia) and phalloplasty (neophallus, neourethra, scrotum with testicular implants), drawn to typical dimensions in the reference pelvis."
+   "hidesLabel": "The penis, testes, epididymides, deferent ducts and urethra of the reference body",
+   "summary": "Schematic anatomy after penile-inversion vaginoplasty: the neovaginal canal, neoclitoris and labia, drawn to typical dimensions in the reference pelvis. The prostate, seminal vesicles and bladder are kept."
+  },
+  {
+   "id": "phalloplasty",
+   "name": "Phalloplasty",
+   "title": "Anatomy after phalloplasty",
+   "color": "#7c6df2",
+   "layer": "gender-affirming",
+   "hidden": true,
+   "note": "schematic · after phalloplasty",
+   "hides": [
+    "Corpus cavernosum of penis",
+    "Corpus spongiosum of penis",
+    "Glans penis",
+    "Left testis",
+    "Right testis",
+    "Left epididymis",
+    "Right epididymis",
+    "Left deferent duct",
+    "Right deferent duct",
+    "Left seminal vesicle",
+    "Right seminal vesicle",
+    "Prostate",
+    "Urethra"
+   ],
+   "hidesLabel": "The male reproductive organs and urethra of the reference body",
+   "summary": "Schematic anatomy after phalloplasty: the neophallus and its glans, the lengthened urethra, and the scrotum with testicular implants, drawn to typical dimensions on the reference pelvis."
+  }
+ ],
+ "layers": [
+  {
+   "id": "female",
+   "name": "Female body (NIH Human Reference Atlas)",
+   "systems": [
+    "reproductive-female"
+   ],
+   "source": {
+    "name": "Human Reference Atlas (HRA) 3D Reference Organ Library, united female v1.5",
+    "attribution": "3D Reference Organ Library, Human Reference Atlas (HRA), HuBMAP Consortium / NIH, licensed under CC BY 4.0; meshes derived from the Visible Human Female dataset of the U.S. National Library of Medicine",
+    "credit": "NIH Human Reference Atlas / Visible Human Female (NLM)",
+    "url": "https://humanatlas.io/",
+    "license": "CC-BY-4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "sourceFile": "https://cdn.humanatlas.io/digital-objects/ref-organ/united-female/v1.5/assets/3d-vh-f-united.glb",
+    "redistribution": {
+     "name": "Anatria-3D (Draco-compressed per-system GLBs of the HRA united-female model with manifest_female.json)",
+     "url": "https://github.com/Nurkan1/Anatria-3D",
+     "path": "public/anatomy/*_female.glb"
+    },
+    "frame": "metres, y up, +x subject's left, +z anterior (the same orientation as the atlas; origin near the pelvis)"
+   }
+  },
+  {
+   "id": "gender-affirming",
+   "name": "Gender-affirming surgery (schematic)",
+   "systems": [
+    "vaginoplasty",
+    "phalloplasty"
+   ],
+   "source": {
+    "name": "Schematic geometry drawn for this atlas",
+    "attribution": "Procedural solids generated by tools/build-female-atlas.mjs from the dimensions in tools/manifest/female-source.json; not derived from any scan. Anatomy Nexus, CC BY 4.0",
+    "license": "CC-BY-4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/"
+   }
   }
  ],
  "concepts": [
@@ -136,6 +224,10 @@
   {
    "id": "GA:phalloplasty",
    "name": "phalloplasty"
+  },
+  {
+   "id": "HRA:female-urinary",
+   "name": "female bladder and urethra"
   }
  ],
  "structures": [
@@ -143,99 +235,99 @@
    "id": "HF0001",
    "name": "Body of uterus",
    "system": "reproductive-female",
-   "node": "VH_F_body_of_uterus",
    "concept": "UBERON:0009853",
    "parents": [
     "UBERON:0000474",
     "UBERON:0000995"
    ],
-   "fit": "pelvis"
+   "fit": "pelvis",
+   "node": "VH_F_body_of_uterus"
   },
   {
    "id": "HF0002",
    "name": "Fundus of uterus",
    "system": "reproductive-female",
-   "node": "VH_F_fundus_of_uterus",
    "concept": "FMA17561",
    "parents": [
     "UBERON:0000474",
     "UBERON:0000995"
    ],
-   "fit": "pelvis"
+   "fit": "pelvis",
+   "node": "VH_F_fundus_of_uterus"
   },
   {
    "id": "HF0003",
    "name": "Isthmus of uterus",
    "system": "reproductive-female",
-   "node": "VH_F_lower_uterine_segment",
    "concept": "FMA17752",
    "parents": [
     "UBERON:0000474",
     "UBERON:0000995"
    ],
    "fit": "pelvis",
+   "node": "VH_F_lower_uterine_segment",
    "notes": "HRA node: lower uterine segment"
   },
   {
    "id": "HF0004",
    "name": "Cervix of uterus",
    "system": "reproductive-female",
-   "node": "VH_F_cervix",
    "concept": "UBERON:0000002",
    "parents": [
     "UBERON:0000474",
     "UBERON:0000995"
    ],
-   "fit": "pelvis"
+   "fit": "pelvis",
+   "node": "VH_F_cervix"
   },
   {
    "id": "HF0005",
    "name": "Internal os of uterus",
    "system": "reproductive-female",
-   "node": "VH_F_internal_cervical_os",
    "concept": "UBERON:0013759",
    "parents": [
     "UBERON:0000474",
     "UBERON:0000995",
     "UBERON:0000002"
    ],
-   "fit": "pelvis"
+   "fit": "pelvis",
+   "node": "VH_F_internal_cervical_os"
   },
   {
    "id": "HF0006",
    "name": "External os of uterus",
    "system": "reproductive-female",
-   "node": "VH_F_external_cervical_os",
    "concept": "UBERON:0013760",
    "parents": [
     "UBERON:0000474",
     "UBERON:0000995",
     "UBERON:0000002"
    ],
-   "fit": "pelvis"
+   "fit": "pelvis",
+   "node": "VH_F_external_cervical_os"
   },
   {
    "id": "HF0007",
    "name": "Vagina",
    "system": "reproductive-female",
-   "node": "VH_F_vagina",
    "concept": "UBERON:0000996",
    "parents": [
     "UBERON:0000474"
    ],
-   "fit": "pelvis"
+   "fit": "pelvis",
+   "node": "VH_F_vagina"
   },
   {
    "id": "HF0008",
    "name": "Ampulla of left uterine tube",
    "system": "reproductive-female",
-   "node": "VH_F_ampulla_of_uterine_tube_L",
    "concept": "FMA18492",
    "parents": [
     "UBERON:0000474",
     "UBERON:0003889"
    ],
    "fit": "pelvis",
+   "node": "VH_F_ampulla_of_uterine_tube_L",
    "side": "left",
    "pair": "HF0009"
   },
@@ -243,13 +335,13 @@
    "id": "HF0009",
    "name": "Ampulla of right uterine tube",
    "system": "reproductive-female",
-   "node": "VH_F_ampulla_of_uterine_tube_R",
    "concept": "FMA18491",
    "parents": [
     "UBERON:0000474",
     "UBERON:0003889"
    ],
    "fit": "pelvis",
+   "node": "VH_F_ampulla_of_uterine_tube_R",
    "side": "right",
    "pair": "HF0008"
   },
@@ -257,13 +349,13 @@
    "id": "HF0010",
    "name": "Isthmus of left uterine tube",
    "system": "reproductive-female",
-   "node": "VH_F_isthmus_of_fallopian_tube_L",
    "concept": "FMA18494",
    "parents": [
     "UBERON:0000474",
     "UBERON:0003889"
    ],
    "fit": "pelvis",
+   "node": "VH_F_isthmus_of_fallopian_tube_L",
    "side": "left",
    "pair": "HF0011"
   },
@@ -271,13 +363,13 @@
    "id": "HF0011",
    "name": "Isthmus of right uterine tube",
    "system": "reproductive-female",
-   "node": "VH_F_isthmus_of_fallopian_tube_R",
    "concept": "FMA18493",
    "parents": [
     "UBERON:0000474",
     "UBERON:0003889"
    ],
    "fit": "pelvis",
+   "node": "VH_F_isthmus_of_fallopian_tube_R",
    "side": "right",
    "pair": "HF0010"
   },
@@ -285,13 +377,13 @@
    "id": "HF0012",
    "name": "Infundibulum of left uterine tube",
    "system": "reproductive-female",
-   "node": "VH_F_uterine_tube_infundibulum_L",
    "concept": "FMA18490",
    "parents": [
     "UBERON:0000474",
     "UBERON:0003889"
    ],
    "fit": "pelvis",
+   "node": "VH_F_uterine_tube_infundibulum_L",
    "side": "left",
    "pair": "HF0013"
   },
@@ -299,13 +391,13 @@
    "id": "HF0013",
    "name": "Infundibulum of right uterine tube",
    "system": "reproductive-female",
-   "node": "VH_F_uterine_tube_infundibulum_R",
    "concept": "FMA18489",
    "parents": [
     "UBERON:0000474",
     "UBERON:0003889"
    ],
    "fit": "pelvis",
+   "node": "VH_F_uterine_tube_infundibulum_R",
    "side": "right",
    "pair": "HF0012"
   },
@@ -313,13 +405,13 @@
    "id": "HF0014",
    "name": "Fimbriae of left uterine tube",
    "system": "reproductive-female",
-   "node": "VH_F_fibria_of_uterine_tube_L",
    "concept": "FMA18498",
    "parents": [
     "UBERON:0000474",
     "UBERON:0003889"
    ],
    "fit": "pelvis",
+   "node": "VH_F_fibria_of_uterine_tube_L",
    "side": "left",
    "pair": "HF0015",
    "notes": "HRA node name spells fimbriae as fibria"
@@ -328,13 +420,13 @@
    "id": "HF0015",
    "name": "Fimbriae of right uterine tube",
    "system": "reproductive-female",
-   "node": "VH_F_fibria_of_uterine_tube_R",
    "concept": "FMA18497",
    "parents": [
     "UBERON:0000474",
     "UBERON:0003889"
    ],
    "fit": "pelvis",
+   "node": "VH_F_fibria_of_uterine_tube_R",
    "side": "right",
    "pair": "HF0014",
    "notes": "HRA node name spells fimbriae as fibria"
@@ -343,13 +435,13 @@
    "id": "HF0016",
    "name": "Left ovary",
    "system": "reproductive-female",
-   "node": "VH_F_left_ovary",
    "concept": "FMA7214",
    "parents": [
     "UBERON:0000474",
     "UBERON:0000992"
    ],
    "fit": "pelvis",
+   "node": "VH_F_left_ovary",
    "side": "left",
    "pair": "HF0017"
   },
@@ -357,13 +449,13 @@
    "id": "HF0017",
    "name": "Right ovary",
    "system": "reproductive-female",
-   "node": "VH_F_right_ovary",
    "concept": "FMA7213",
    "parents": [
     "UBERON:0000474",
     "UBERON:0000992"
    ],
    "fit": "pelvis",
+   "node": "VH_F_right_ovary",
    "side": "right",
    "pair": "HF0016"
   },
@@ -371,19 +463,18 @@
    "id": "HF0018",
    "name": "Broad ligament of uterus",
    "system": "reproductive-female",
-   "node": "VH_F_broad_ligament",
    "concept": "UBERON:0012332",
    "parents": [
     "UBERON:0000474",
     "HRA:uterine-ligaments"
    ],
-   "fit": "pelvis"
+   "fit": "pelvis",
+   "node": "VH_F_broad_ligament"
   },
   {
    "id": "HF0019",
    "name": "Left mesosalpinx",
    "system": "reproductive-female",
-   "node": "VH_F_mesosalpinx_L",
    "concept": "FMA19810",
    "parents": [
     "UBERON:0000474",
@@ -391,6 +482,7 @@
     "UBERON:0012332"
    ],
    "fit": "pelvis",
+   "node": "VH_F_mesosalpinx_L",
    "side": "left",
    "pair": "HF0020"
   },
@@ -398,7 +490,6 @@
    "id": "HF0020",
    "name": "Right mesosalpinx",
    "system": "reproductive-female",
-   "node": "VH_F_mesosalpinx_R",
    "concept": "FMA19809",
    "parents": [
     "UBERON:0000474",
@@ -406,6 +497,7 @@
     "UBERON:0012332"
    ],
    "fit": "pelvis",
+   "node": "VH_F_mesosalpinx_R",
    "side": "right",
    "pair": "HF0019"
   },
@@ -413,7 +505,6 @@
    "id": "HF0021",
    "name": "Left mesovarium",
    "system": "reproductive-female",
-   "node": "VH_F_mesovarium_L",
    "concept": "FMA19818",
    "parents": [
     "UBERON:0000474",
@@ -421,6 +512,7 @@
     "UBERON:0012332"
    ],
    "fit": "pelvis",
+   "node": "VH_F_mesovarium_L",
    "side": "left",
    "pair": "HF0022"
   },
@@ -428,7 +520,6 @@
    "id": "HF0022",
    "name": "Right mesovarium",
    "system": "reproductive-female",
-   "node": "VH_F_mesovarium_R",
    "concept": "FMA19817",
    "parents": [
     "UBERON:0000474",
@@ -436,6 +527,7 @@
     "UBERON:0012332"
    ],
    "fit": "pelvis",
+   "node": "VH_F_mesovarium_R",
    "side": "right",
    "pair": "HF0021"
   },
@@ -443,13 +535,13 @@
    "id": "HF0023",
    "name": "Left round ligament of uterus",
    "system": "reproductive-female",
-   "node": "VH_F_right_round_ligament_of_uterus",
    "concept": "FMA57790",
    "parents": [
     "UBERON:0000474",
     "HRA:uterine-ligaments"
    ],
    "fit": "pelvis",
+   "node": "VH_F_right_round_ligament_of_uterus",
    "side": "left",
    "pair": "HF0024",
    "notes": "The HRA v1.5 round-ligament nodes are named for the wrong side (the node called 'left' lies at negative x, the subject's right, and runs to the right inguinal canal); sides here follow the geometry"
@@ -458,13 +550,13 @@
    "id": "HF0024",
    "name": "Right round ligament of uterus",
    "system": "reproductive-female",
-   "node": "VH_F_left_round_ligament_of_uterus",
    "concept": "FMA57789",
    "parents": [
     "UBERON:0000474",
     "HRA:uterine-ligaments"
    ],
    "fit": "pelvis",
+   "node": "VH_F_left_round_ligament_of_uterus",
    "side": "right",
    "pair": "HF0023",
    "notes": "The HRA v1.5 round-ligament nodes are named for the wrong side (the node called 'left' lies at negative x, the subject's right, and runs to the right inguinal canal); sides here follow the geometry"
@@ -473,13 +565,13 @@
    "id": "HF0025",
    "name": "Left uterosacral ligament",
    "system": "reproductive-female",
-   "node": "VH_F_left_uterosacral_ligament",
    "concept": "FMA19120",
    "parents": [
     "UBERON:0000474",
     "HRA:uterine-ligaments"
    ],
    "fit": "pelvis",
+   "node": "VH_F_left_uterosacral_ligament",
    "side": "left",
    "pair": "HF0026"
   },
@@ -487,13 +579,13 @@
    "id": "HF0026",
    "name": "Right uterosacral ligament",
    "system": "reproductive-female",
-   "node": "VH_F_right_uterosacral_ligament",
    "concept": "FMA19119",
    "parents": [
     "UBERON:0000474",
     "HRA:uterine-ligaments"
    ],
    "fit": "pelvis",
+   "node": "VH_F_right_uterosacral_ligament",
    "side": "right",
    "pair": "HF0025"
   },
@@ -501,13 +593,13 @@
    "id": "HF0027",
    "name": "Left cardinal ligament",
    "system": "reproductive-female",
-   "node": "VH_F_left_cardinal_ligament_of_uterus",
    "concept": "FMA77064",
    "parents": [
     "UBERON:0000474",
     "HRA:uterine-ligaments"
    ],
    "fit": "pelvis",
+   "node": "VH_F_left_cardinal_ligament_of_uterus",
    "side": "left",
    "pair": "HF0028"
   },
@@ -515,13 +607,13 @@
    "id": "HF0028",
    "name": "Right cardinal ligament",
    "system": "reproductive-female",
-   "node": "VH_F_right_cardinal_ligament_of_uterus",
    "concept": "FMA77064",
    "parents": [
     "UBERON:0000474",
     "HRA:uterine-ligaments"
    ],
    "fit": "pelvis",
+   "node": "VH_F_right_cardinal_ligament_of_uterus",
    "side": "right",
    "pair": "HF0027"
   },
@@ -529,13 +621,13 @@
    "id": "HF0029",
    "name": "Left suspensory ligament of ovary",
    "system": "reproductive-female",
-   "node": "VH_F_suspensory_ligament_of_ovary_L",
    "concept": "FMA19824",
    "parents": [
     "UBERON:0000474",
     "HRA:uterine-ligaments"
    ],
    "fit": "pelvis",
+   "node": "VH_F_suspensory_ligament_of_ovary_L",
    "side": "left",
    "pair": "HF0030"
   },
@@ -543,13 +635,13 @@
    "id": "HF0030",
    "name": "Right suspensory ligament of ovary",
    "system": "reproductive-female",
-   "node": "VH_F_suspensory_ligament_of_ovary_R",
    "concept": "FMA19823",
    "parents": [
     "UBERON:0000474",
     "HRA:uterine-ligaments"
    ],
    "fit": "pelvis",
+   "node": "VH_F_suspensory_ligament_of_ovary_R",
    "side": "right",
    "pair": "HF0029"
   },
@@ -557,13 +649,13 @@
    "id": "HF0031",
    "name": "Left ovarian ligament",
    "system": "reproductive-female",
-   "node": "VH_F_ovarian_ligament_L",
    "concept": "FMA55424",
    "parents": [
     "UBERON:0000474",
     "HRA:uterine-ligaments"
    ],
    "fit": "pelvis",
+   "node": "VH_F_ovarian_ligament_L",
    "side": "left",
    "pair": "HF0032",
    "notes": "proper ovarian ligament"
@@ -572,13 +664,13 @@
    "id": "HF0032",
    "name": "Right ovarian ligament",
    "system": "reproductive-female",
-   "node": "VH_F_ovarian_ligament_R",
    "concept": "FMA55423",
    "parents": [
     "UBERON:0000474",
     "HRA:uterine-ligaments"
    ],
    "fit": "pelvis",
+   "node": "VH_F_ovarian_ligament_R",
    "side": "right",
    "pair": "HF0031",
    "notes": "proper ovarian ligament"
@@ -587,55 +679,56 @@
    "id": "HF0033",
    "name": "Vesico-uterine pouch",
    "system": "reproductive-female",
-   "node": "VH_F_uterovesical_pouch",
    "concept": "FMA14729",
    "parents": [
     "UBERON:0000474",
     "HRA:uterine-ligaments"
    ],
-   "fit": "pelvis"
+   "fit": "pelvis",
+   "node": "VH_F_uterovesical_pouch"
   },
   {
    "id": "HF0034",
    "name": "Body of left breast",
    "system": "reproductive-female",
-   "node": "VH_F_fat_L",
    "concept": "FMA73166",
    "parents": [
     "UBERON:0000310",
     "HRA:breast-left"
    ],
    "fit": "thorax",
+   "node": "VH_F_fat_L",
    "side": "left",
    "pair": "HF0035",
-   "notes": "HRA node: fat (the whole breast body)"
+   "notes": "HRA node: fat (the whole breast body); the right side is pre-simplified to the density of the left"
   },
   {
    "id": "HF0035",
    "name": "Body of right breast",
    "system": "reproductive-female",
-   "node": "VH_F_fat_R",
    "concept": "FMA73165",
    "parents": [
     "UBERON:0000310",
     "HRA:breast-right"
    ],
    "fit": "thorax",
+   "node": "VH_F_fat_R",
+   "presimplify": 75000,
    "side": "right",
    "pair": "HF0034",
-   "notes": "HRA node: fat (the whole breast body)"
+   "notes": "HRA node: fat (the whole breast body); the right side is pre-simplified to the density of the left"
   },
   {
    "id": "HF0036",
    "name": "Left nipple",
    "system": "reproductive-female",
-   "node": "VH_F_nipple_L",
    "concept": "UBERON:0013772",
    "parents": [
     "UBERON:0000310",
     "HRA:breast-left"
    ],
    "fit": "thorax",
+   "node": "VH_F_nipple_L",
    "side": "left",
    "pair": "HF0037"
   },
@@ -643,13 +736,13 @@
    "id": "HF0037",
    "name": "Right nipple",
    "system": "reproductive-female",
-   "node": "VH_F_nipple_R",
    "concept": "UBERON:0013773",
    "parents": [
     "UBERON:0000310",
     "HRA:breast-right"
    ],
    "fit": "thorax",
+   "node": "VH_F_nipple_R",
    "side": "right",
    "pair": "HF0036"
   },
@@ -657,13 +750,13 @@
    "id": "HF0038",
    "name": "Left areola",
    "system": "reproductive-female",
-   "node": "VH_F_areola_L",
    "concept": "FMA223679",
    "parents": [
     "UBERON:0000310",
     "HRA:breast-left"
    ],
    "fit": "thorax",
+   "node": "VH_F_areola_L",
    "side": "left",
    "pair": "HF0039"
   },
@@ -671,13 +764,13 @@
    "id": "HF0039",
    "name": "Right areola",
    "system": "reproductive-female",
-   "node": "VH_F_areola_R",
    "concept": "FMA223677",
    "parents": [
     "UBERON:0000310",
     "HRA:breast-right"
    ],
    "fit": "thorax",
+   "node": "VH_F_areola_R",
    "side": "right",
    "pair": "HF0038"
   },
@@ -685,13 +778,13 @@
    "id": "HF0040",
    "name": "Areolar tubercles of left breast",
    "system": "reproductive-female",
-   "node": "VH_F_areolar_tubercles_L",
    "concept": "UBERON:0011828",
    "parents": [
     "UBERON:0000310",
     "HRA:breast-left"
    ],
    "fit": "thorax",
+   "node": "VH_F_areolar_tubercles_L",
    "side": "left",
    "pair": "HF0041"
   },
@@ -699,13 +792,13 @@
    "id": "HF0041",
    "name": "Areolar tubercles of right breast",
    "system": "reproductive-female",
-   "node": "VH_F_areolar_tubercles_R",
    "concept": "UBERON:0011828",
    "parents": [
     "UBERON:0000310",
     "HRA:breast-right"
    ],
    "fit": "thorax",
+   "node": "VH_F_areolar_tubercles_R",
    "side": "right",
    "pair": "HF0040"
   },
@@ -713,7 +806,6 @@
    "id": "HF0042",
    "name": "Lobes of left mammary gland",
    "system": "reproductive-female",
-   "node": "VH_F_mammary_lobes_L",
    "concept": "UBERON:0018140",
    "parents": [
     "UBERON:0000310",
@@ -721,6 +813,7 @@
     "UBERON:0001911"
    ],
    "fit": "thorax",
+   "node": "VH_F_mammary_lobes_L",
    "side": "left",
    "pair": "HF0043"
   },
@@ -728,7 +821,6 @@
    "id": "HF0043",
    "name": "Lobes of right mammary gland",
    "system": "reproductive-female",
-   "node": "VH_F_mammary_lobes_R",
    "concept": "UBERON:0018140",
    "parents": [
     "UBERON:0000310",
@@ -736,6 +828,7 @@
     "UBERON:0001911"
    ],
    "fit": "thorax",
+   "node": "VH_F_mammary_lobes_R",
    "side": "right",
    "pair": "HF0042"
   },
@@ -743,7 +836,6 @@
    "id": "HF0044",
    "name": "Lactiferous ducts of left breast",
    "system": "reproductive-female",
-   "node": "VH_F_main_lactiferous_ducts_L",
    "concept": "UBERON:0015134",
    "parents": [
     "UBERON:0000310",
@@ -751,6 +843,7 @@
     "UBERON:0001911"
    ],
    "fit": "thorax",
+   "node": "VH_F_main_lactiferous_ducts_L",
    "side": "left",
    "pair": "HF0045"
   },
@@ -758,7 +851,6 @@
    "id": "HF0045",
    "name": "Lactiferous ducts of right breast",
    "system": "reproductive-female",
-   "node": "VH_F_main_lactiferous_ducts_R",
    "concept": "UBERON:0015134",
    "parents": [
     "UBERON:0000310",
@@ -766,6 +858,7 @@
     "UBERON:0001911"
    ],
    "fit": "thorax",
+   "node": "VH_F_main_lactiferous_ducts_R",
    "side": "right",
    "pair": "HF0044"
   },
@@ -773,7 +866,6 @@
    "id": "HF0046",
    "name": "Lactiferous sinuses of left breast",
    "system": "reproductive-female",
-   "node": "VH_F_main_lactiferous_sinuses_L",
    "concept": "FMA58088",
    "parents": [
     "UBERON:0000310",
@@ -781,6 +873,7 @@
     "UBERON:0001911"
    ],
    "fit": "thorax",
+   "node": "VH_F_main_lactiferous_sinuses_L",
    "side": "left",
    "pair": "HF0047"
   },
@@ -788,7 +881,6 @@
    "id": "HF0047",
    "name": "Lactiferous sinuses of right breast",
    "system": "reproductive-female",
-   "node": "VH_F_main_lactiferous_sinuses_R",
    "concept": "FMA58088",
    "parents": [
     "UBERON:0000310",
@@ -796,6 +888,7 @@
     "UBERON:0001911"
    ],
    "fit": "thorax",
+   "node": "VH_F_main_lactiferous_sinuses_R",
    "side": "right",
    "pair": "HF0046"
   },
@@ -803,13 +896,13 @@
    "id": "HF0048",
    "name": "Suspensory ligaments of left breast",
    "system": "reproductive-female",
-   "node": "VH_F_suspensory_ligaments_L",
    "concept": "FMA73119",
    "parents": [
     "UBERON:0000310",
     "HRA:breast-left"
    ],
    "fit": "thorax",
+   "node": "VH_F_suspensory_ligaments_L",
    "side": "left",
    "pair": "HF0049"
   },
@@ -817,20 +910,101 @@
    "id": "HF0049",
    "name": "Suspensory ligaments of right breast",
    "system": "reproductive-female",
-   "node": "VH_F_suspensory_ligaments_R",
    "concept": "FMA73118",
    "parents": [
     "UBERON:0000310",
     "HRA:breast-right"
    ],
    "fit": "thorax",
+   "node": "VH_F_suspensory_ligaments_R",
    "side": "right",
    "pair": "HF0048"
   },
   {
+   "id": "HF0050",
+   "name": "Urinary bladder (female)",
+   "system": "reproductive-female",
+   "concept": "UBERON:0001255",
+   "parents": [
+    "HRA:female-urinary"
+   ],
+   "fit": "pelvis",
+   "nodes": [
+    "VH_F_fundus_of_urinary_bladder_dome",
+    "VH_F_fundus_of_urinary_bladder_base"
+   ],
+   "notes": "HRA dome and base nodes merged into one piece; stands in for the male bladder, which the layer hides"
+  },
+  {
+   "id": "HF0051",
+   "name": "Trigone of urinary bladder (female)",
+   "system": "reproductive-female",
+   "concept": "UBERON:0001257",
+   "parents": [
+    "HRA:female-urinary"
+   ],
+   "fit": "pelvis",
+   "node": "VH_F_trigone_of_urinary_bladder"
+  },
+  {
+   "id": "HF0052",
+   "name": "Neck of urinary bladder (female)",
+   "system": "reproductive-female",
+   "concept": "UBERON:0004230",
+   "parents": [
+    "HRA:female-urinary"
+   ],
+   "fit": "pelvis",
+   "node": "VH_F_urinary_bladder_neck_smooth_muscle"
+  },
+  {
+   "id": "HF0053",
+   "name": "Urethra (female, schematic)",
+   "system": "reproductive-female",
+   "concept": "UBERON:0000057",
+   "parents": [
+    "HRA:female-urinary"
+   ],
+   "schematic": {
+    "kind": "tube",
+    "path": [
+     [
+      -3.5,
+      788,
+      101
+     ],
+     [
+      -1.5,
+      770,
+      104
+     ],
+     [
+      0,
+      753,
+      106
+     ]
+    ],
+    "radius": [
+     [
+      3.5,
+      3.5
+     ],
+     [
+      3.5,
+      3.5
+     ],
+     [
+      3,
+      3
+     ]
+    ]
+   },
+   "notes": "The HRA united-female model has no urethra mesh, so the 3 to 4 cm female urethra is drawn schematically from the bladder neck down the front of the vagina to the vestibule"
+  },
+  {
    "id": "GA0001",
    "name": "Neovaginal canal",
-   "system": "gender-affirming",
+   "system": "vaginoplasty",
    "concept": "GA-schematic",
    "parents": [
     "GA:constructed",
@@ -846,27 +1020,45 @@
      ],
      [
       0,
-      862,
-      56
+      775,
+      62
+     ],
+     [
+      0,
+      800,
+      59
+     ],
+     [
+      0,
+      826,
+      60
      ]
     ],
     "radius": [
      [
-      17,
-      12
+      15,
+      6
+     ],
+     [
+      15,
+      5
      ],
      [
       14,
-      10
+      5
+     ],
+     [
+      11,
+      4
      ]
     ]
    },
-   "notes": "About 12 cm deep, angled up and back between the urethra and prostate in front and the rectum behind, as in penile-inversion vaginoplasty"
+   "notes": "Drawn collapsed at rest as a slit about 3 cm wide and 1 cm thick, hugging the front of the rectum behind the prostate, seminal vesicles and bladder; about 8.5 cm deep here because the reference pelvis has no dissected space (12 to 15 cm is typical in life); small overlaps with the undissected male organs remain"
   },
   {
    "id": "GA0002",
    "name": "Neoclitoris",
-   "system": "gender-affirming",
+   "system": "vaginoplasty",
    "concept": "GA-schematic",
    "parents": [
     "GA:constructed",
@@ -890,7 +1082,7 @@
   {
    "id": "GA0003",
    "name": "Left labium majus",
-   "system": "gender-affirming",
+   "system": "vaginoplasty",
    "concept": "GA-schematic",
    "parents": [
     "GA:constructed",
@@ -937,7 +1129,7 @@
   {
    "id": "GA0004",
    "name": "Right labium majus",
-   "system": "gender-affirming",
+   "system": "vaginoplasty",
    "concept": "GA-schematic",
    "parents": [
     "GA:constructed",
@@ -984,7 +1176,7 @@
   {
    "id": "GA0005",
    "name": "Left labium minus",
-   "system": "gender-affirming",
+   "system": "vaginoplasty",
    "concept": "GA-schematic",
    "parents": [
     "GA:constructed",
@@ -1031,7 +1223,7 @@
   {
    "id": "GA0006",
    "name": "Right labium minus",
-   "system": "gender-affirming",
+   "system": "vaginoplasty",
    "concept": "GA-schematic",
    "parents": [
     "GA:constructed",
@@ -1078,7 +1270,7 @@
   {
    "id": "GA0007",
    "name": "Neophallus shaft",
-   "system": "gender-affirming",
+   "system": "phalloplasty",
    "concept": "GA-schematic",
    "parents": [
     "GA:constructed",
@@ -1114,7 +1306,7 @@
   {
    "id": "GA0008",
    "name": "Glans of neophallus",
-   "system": "gender-affirming",
+   "system": "phalloplasty",
    "concept": "GA-schematic",
    "parents": [
     "GA:constructed",
@@ -1138,7 +1330,7 @@
   {
    "id": "GA0009",
    "name": "Neourethra",
-   "system": "gender-affirming",
+   "system": "phalloplasty",
    "concept": "GA-schematic",
    "parents": [
     "GA:constructed",
@@ -1210,7 +1402,7 @@
   {
    "id": "GA0010",
    "name": "Left testicular implant",
-   "system": "gender-affirming",
+   "system": "phalloplasty",
    "concept": "GA-schematic",
    "parents": [
     "GA:constructed",
@@ -1236,7 +1428,7 @@
   {
    "id": "GA0011",
    "name": "Right testicular implant",
-   "system": "gender-affirming",
+   "system": "phalloplasty",
    "concept": "GA-schematic",
    "parents": [
     "GA:constructed",
@@ -1262,7 +1454,7 @@
   {
    "id": "GA0012",
    "name": "Neoscrotum",
-   "system": "gender-affirming",
+   "system": "phalloplasty",
    "concept": "GA-schematic",
    "parents": [
     "GA:constructed",
