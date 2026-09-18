@@ -191,6 +191,16 @@ function computeNormals(positions, indices) {
   return n;
 }
 
+/** A reversed copy of every face on duplicated vertices nudged `offset` mm inward along the vertex normal: from any
+ *  direction exactly one copy is front-facing under back-face culling, and each copy keeps its own smooth normals. */
+function twoSidedCopy({ positions, indices }, offset) {
+  const nrm = computeNormals(positions, indices); const n = positions.length / 3;
+  const out = new positions.constructor(positions.length * 2); out.set(positions, 0);
+  for (let i = 0; i < positions.length; i++) out[positions.length + i] = positions[i] - offset * nrm[i];
+  const idx = new Uint32Array(indices.length * 2); idx.set(indices, 0);
+  for (let t = 0; t < indices.length; t += 3) { idx[indices.length + t] = indices[t] + n; idx[indices.length + t + 1] = indices[t + 2] + n; idx[indices.length + t + 2] = indices[t + 1] + n; }
+  return { positions: out, indices: idx };
+}
 function bounds(positions) {
   const min = [Infinity, Infinity, Infinity], max = [-Infinity, -Infinity, -Infinity];
   for (let i = 0; i < positions.length; i += 3) {
@@ -291,7 +301,10 @@ async function buildSystem(system, pieces, opts, log) {
     const flipped = piece.winding !== 'keep' && signedVolume(welded.positions, welded.indices) < 0;
     if (flipped) { flipWinding(welded.indices); flippedCount++; }
     const s = simplifyPiece(welded.positions, welded.indices, opts);
-    const c = compact(s.positions, s.indices);
+    let c = compact(s.positions, s.indices);
+    // A piece marked twoSided (a sheet or open shell the viewer can see from behind) gets a reversed copy of its faces
+    // here, after simplification, so the copy is never simplified against its original.
+    if (piece.twoSided) c = twoSidedCopy(c, piece.twoSidedOffset ?? 0.02);
     const normals = computeNormals(c.positions, c.indices);
     const b = bounds(c.positions);
     srcTris += welded.indices.length / 3;

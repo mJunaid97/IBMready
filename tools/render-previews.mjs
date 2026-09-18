@@ -65,7 +65,12 @@ for (const [name, hash] of todo) {
   await page.waitForTimeout(hash ? 1400 : 600);          // let the camera fly and the highlight settle
   // Render through the viewer's own animation loop and wait for that frame to be presented: a render() called
   // from outside the loop can be composited and then dropped before the screenshot, which left blank previews.
-  await page.evaluate(() => new Promise((resolve) => { const v = window.atlas.viewer; v.addEventListener('frame', () => requestAnimationFrame(() => requestAnimationFrame(resolve)), { once: true }); v.requestRender(); }));
+  const present = () => page.evaluate(() => new Promise((resolve) => { const v = window.atlas.viewer; v.addEventListener('frame', () => requestAnimationFrame(() => requestAnimationFrame(() => resolve({ tris: v.renderer.info.render.triangles, visible: v.visibleCount() }))), { once: true }); v.requestRender(); }));
+  // A frame that drew nothing while pieces are visible is a race (geometry or camera not settled under load): wait and
+  // present again rather than ship a blank image.
+  let drawn = await present();
+  for (let attempt = 1; drawn.tris === 0 && drawn.visible > 0 && attempt <= 3; attempt++) { await page.waitForTimeout(1500 * attempt); drawn = await present(); console.error(`  ${name}: empty frame, retry ${attempt} -> ${drawn.tris} triangles`); }
+  if (drawn.tris === 0 && drawn.visible > 0) { console.error(`  ${name}: still an empty frame, skipped`); continue; }
   await addBrandPlate(page, labels.get(name) || 'Anatomy in 3D');
   await page.waitForTimeout(100);
   await page.screenshot({ path: `${out}/${name}.jpg`, type: 'jpeg', quality: 80 });   // the canvas fills the viewport

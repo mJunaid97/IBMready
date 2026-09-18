@@ -110,8 +110,11 @@ each clinical page opens with live 3D of the anatomy it discusses.
    anatomy of gender-affirming surgery two more (`vaginoplasty`, `phalloplasty`: schematic solids from the
    same tool); all are appended after the male systems in `atlas.json` (`base` records the male counts so a
    rebuild replaces the layers), hidden by default (`hidden`) and, while shown, hide the reference-body
-   pieces they stand in for (`hides`, a list of structure names the viewer masks). An organ no layer models (the vulva) must carry a full article and names the
-   modelled structures around it, which its page and every clinical page that concerns it embed instead
+   pieces they stand in for (`hides`, a list of structure names the viewer masks; the systems list says so on
+   the masked rows, and selecting a masked structure switches the layer off again). An organ's `also` names structures
+   that share its clinical topics and organ chip without joining its 3D selection (the female layer's bladder and
+   urethra, which stand in for the male ones the bladder organ is built from). An organ no layer models
+   (the vulva) must carry a full article and names the modelled structures around it, which its page and every clinical page that concerns it embed instead
    (`organHash` in `site/site.js`, mirrored by `tools/render-previews.mjs`); the explorer lists only
    organs it can select. Sex-specific structures (urethra, prostate, pubic hair) are described for every
    body, including after gender-affirming surgery.

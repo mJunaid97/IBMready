@@ -10,8 +10,21 @@ Fixes from an independent QA pass over v1.8.0. The male BodyParts3D systems are 
   the signed volume is not), gives open sheets a reversed copy of their faces so they read from both sides, and
   fails the build if a piece stays inconsistently wound. Verified with a renderer-accurate culling check against
   the male systems as control
+- Geometry: sheets and open shells (boundary edges, or an inner wall the view rays reach) are flagged two-sided
+  and get the reversed copy of their faces from build-atlas after simplification, so the lite tier's 0.6 mm error
+  budget no longer pushes the copy through the original (the nipples and areolar tubercles rendered moth-eaten on
+  phones); mirror partners share the decision, so the right fimbriae, right areola, tube isthmuses, vagina and
+  vesico-uterine pouch no longer disappear from the views their partners survive. See-through pixels on every
+  female piece are now below 2% in both tiers (the male systems' 0% is the reference)
+- Geometry: the neovaginal canal's apex stops below the point where the reference rectum sweeps forward and the
+  canal thins towards it (overlap with the undissected rectum down from 556 to 112 mm³, with the bladder from
+  2,632 to 752 mm³); the labia are drawn as far medially as their width allows between thighs that touch in the
+  standing reference body, and the layer's summary says what still overlaps
 - Geometry: the schematic tube frames are now carried along the path (parallel transport), removing the folded
-  cross-sections in the labia and neourethra; the right breast is pre-simplified to the density of the left
+  cross-sections in the labia and neourethra; the neourethra's route is re-drawn with evenly spaced control points
+  (the path spline overshot at its hairpin, so the tube crossed itself at the base of the shaft) and now ends at the
+  glans tip; every schematic solid is checked for self-intersecting triangles (none); the right breast is
+  pre-simplified to the density of the left
 - Female layer: the HRA female bladder (with trigone and neck) and a schematic female urethra join the layer, and
   while it is shown the viewer hides the male reproductive organs, bladder and urethra it stands in for, so the
   cervix no longer sits inside the male bladder (`hides`, a list of structure names on the system, replaces the
@@ -21,17 +34,33 @@ Fixes from an independent QA pass over v1.8.0. The male BodyParts3D systems are 
   urethra; the phalloplasty layer hides all the male reproductive organs and the urethra. The neovaginal canal is
   drawn collapsed as a slit in front of the rectum, about 8 cm deep because the reference pelvis has no dissected
   space, and the copy says so
+- Content: the breast article no longer teaches the lactiferous sinus as a reservoir with 15 to 20 openings; one
+  neovaginal depth (about 10 to 13 cm) everywhere; the vaginoplasty page no longer says metoidioplasty is drawn;
+  the female bladder, trigone, bladder neck and urethra share the bladder organ's clinical topics (`also` on an
+  organ); colposuspension and mid-urethral tapes told apart; the ureter runs beneath the broad ligament rather
+  than inside it; one bladder capacity and one urethral length
 - Content: the vulva moves to the female system and no longer names the whole-body skin among its surroundings;
   female-only clinical pages leave the male reproductive system; corrections to the tube parts (fimbriae fringe
   the infundibulum), the uterine isthmus, the classical caesarean site, the lactiferous sinuses and duct
   openings, the neovaginal depth and lubrication statements; the Visible Human Female's age and the fit scale are
   stated where organ sizes are quoted
+- Explorer: selecting a structure a visible layer masks (the prostate while the female body is shown, from search,
+  the organs list, a related-structures chip or a deep link) switches that layer off and says so, instead of
+  leaving an empty view with an x-ray toast; switching a layer on drops masked pieces from the selection; rows
+  of the systems list say how many of their pieces a layer is hiding; the tab title counts pieces, as the page
+  does; the vulva page frames the female urethra rather than the male one the female layer hides
+- Previews: the renderer checks that the presented frame drew triangles and presents again if it did not, so a
+  loaded machine cannot leave a blank system image
 - Explorer: study deep links start once their system has loaded (they only ever worked for the skeleton); the
   study scope, *Show all* and the share URL respect the hidden layers; the vulva is searchable and opens its page;
   the Help dialog's Data paragraph credits every source
+- Docs and counts: the home page's systems card counts from the site data instead of saying sixteen; its callout names
+  both surgical layers and its topic count is current; the tools hub and roadmap carry the compiled counts; the systems
+  hub's description lists the teeth; the attribution carries the HRA citation the source notice asks for, describes the
+  re-winding and two-sided copies made to the HRA meshes, and reads in the plural for the two schematic layers
 - Attribution and docs: HRA wording follows the source files; counts and the README data table updated; the
   explorer, about page and system pages name every source
-- Counts: 2,299 pieces, 1,736 structures, 19 systems
+- Counts: 2,299 pieces, 1,736 structures, 19 systems; HD 3.75 M triangles (14.6 MB), lite 1.31 M (6.1 MB)
 
 ## v1.8.0 — 2026-09-17
 

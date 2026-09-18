@@ -58,7 +58,7 @@ export class AtlasUI {
     this.v.addEventListener('frame', () => this._updateLabels());
     this.v.addEventListener('system', (e) => this._onSystemLoaded(e.detail));
     this.v.addEventListener('xray', (e) => { $('btn-xray').setAttribute('aria-pressed', String(e.detail)); this._updateShareState(); });
-    this.v.addEventListener('autoxray', () => this.toast('X-ray on: this structure sits inside the body · X toggles'));
+    this.v.addEventListener('autoxray', () => { const lt = this._layerToast; if (lt && Date.now() - lt.t < 3500) this.toast(`${lt.msg} · X-ray on so it can be seen`, 4200); else this.toast('X-ray on: this structure sits inside the body · X toggles'); });
     this._onVisibility();
     if (window.matchMedia('(max-width: 900px)').matches) { $('panel-systems').hidden = true; $('tab-systems').hidden = false; }
   }
@@ -102,7 +102,7 @@ export class AtlasUI {
     const ul = $('systems'); ul.innerHTML = '';
     for (const s of this.atlas.systems) {
       const li = document.createElement('li'); li.dataset.id = s.id; li.className = 'is-loading';
-      li.innerHTML = `<span class="sys-dot" style="background:${s.color}"></span><span class="sys-name">${esc(s.name)}${s.id === 'skin' ? '<small>translucent overlay</small>' : s.note ? `<small>${esc(s.note)}</small>` : ''}</span><span class="sys-count">${fmt(s.count)}</span><button class="switch" role="switch" aria-checked="true" aria-label="Toggle ${esc(s.name)}"></button>`;
+      li.innerHTML = `<span class="sys-dot" style="background:${s.color}"></span><span class="sys-name">${esc(s.name)}${s.id === 'skin' ? '<small>translucent overlay</small>' : s.note ? `<small>${esc(s.note)}</small>` : ''}<small class="sys-masked" hidden></small></span><span class="sys-count">${fmt(s.count)}</span><button class="switch" role="switch" aria-checked="true" aria-label="Toggle ${esc(s.name)}"></button>`;
       li.querySelector('.switch').addEventListener('click', (e) => { e.stopPropagation(); this.toggleSystem(s.id); });
       li.addEventListener('click', () => this.soloSystem(s.id));
       li.title = `${s.summary}\nClick: show only this system · Switch: toggle`;
@@ -141,8 +141,15 @@ export class AtlasUI {
    *  organs, bladder and urethra) hides those pieces while it is on (the viewer's `hides` mask); say so once. */
   _switchOn(id) {
     const s = this.v.sysIndex.get(id); this.v.setSystemVisible(id, true);
-    if (s.hidePieces && s.hidePieces.length && !this._hidesToasted?.has(id)) { (this._hidesToasted ||= new Set()).add(id); this.toast(`${s.def.hidesLabel || 'Overlapping structures of the reference body'} hidden while ${s.def.name} is shown · switch the layer off to bring them back`); }
+    if (s.hidePieces && s.hidePieces.length) {
+      // a selection the layer now masks is no use: drop those pieces (the label goes with them)
+      const kept = [...this.v.selected].filter(i => !this.v.layerHidden[i]);
+      if (kept.length !== this.v.selected.size) { this.selectionLabel = null; this.v.select(kept); }
+      if (!this._hidesToasted?.has(id)) { (this._hidesToasted ||= new Set()).add(id); this.toast(`${s.def.hidesLabel || 'Overlapping structures of the reference body'} hidden while ${s.def.name} is shown · switch the layer off, or select one of them, to bring them back`); }
+    }
   }
+  /** The visible layers whose `hides` mask covers piece i. */
+  _maskingLayers(i) { return this.v.systems.filter(s => s.visible && s.hidePieces && s.hidePieces.includes(i)); }
   soloSystem(id) { this.v.setSystemsVisible([id]); this._setPresetActive(null); }
   applyPreset(name) {
     const ids = PRESETS[name];
@@ -155,6 +162,13 @@ export class AtlasUI {
       const s = this.v.sysIndex.get(li.dataset.id);
       li.classList.toggle('is-off', !s.visible);
       li.querySelector('.switch').setAttribute('aria-checked', String(s.visible));
+      // switched on but standing behind a layer: say so on the row, since the toast is one-off
+      let masked = 0; const by = new Set();
+      if (s.visible) for (let i = s.start; i < s.start + s.count; i++) if (this.v.layerHidden[i]) { masked++; for (const l of this._maskingLayers(i)) by.add(l.def.name); }
+      const note = li.querySelector('.sys-masked');
+      note.hidden = !masked;
+      note.textContent = masked ? `${masked === s.count ? 'hidden' : `${masked} of ${s.count} hidden`} while ${[...by].join(' and ')} ${by.size > 1 ? 'are' : 'is'} shown` : '';
+      li.classList.toggle('is-masked', masked === s.count && s.count > 0);
     }
     $('visible-count').textContent = `${fmt(this.v.visibleCount())} of ${fmt(this.v.n)} pieces visible`;
     this._updateShareState();
@@ -221,6 +235,15 @@ export class AtlasUI {
   _ensureVisible(pieces) {
     const systems = new Set(pieces.map(i => this.atlas.pieces[i].system));
     for (const s of systems) if (!this.v.sysIndex.get(s).visible) { this._switchOn(s); this._setPresetActive(null); }
+    // pieces a visible layer stands in for: switch that layer off so the selection can be seen, and say so. A layer the
+    // selection itself draws from stays on (its pieces win over the reference-body ones it masks)
+    const off = new Map();
+    for (const i of pieces) if (this.v.layerHidden[i]) for (const l of this._maskingLayers(i)) if (!systems.has(l.def.id)) (off.get(l) || off.set(l, []).get(l)).push(this.atlas.structures[this.atlas.pieces[i].structure].name);
+    for (const [l, names] of off) {
+      this.v.setSystemVisible(l.def.id, false); this._setPresetActive(null);
+      const u = [...new Set(names)]; const what = u.length <= 2 ? u.join(' and ') : `${u[0]}, ${u[1]} and ${u.length - 2} more`;
+      const msg = `${l.def.name} switched off · it hides ${what} while shown`; this._layerToast = { msg, t: Date.now() }; this.toast(msg, 3200);
+    }
     if (pieces.some(i => this.v.hidden[i])) this.v.hidePieces(pieces, false);
     if (this.v.isolated && pieces.some(i => !this.v.isolated.has(i))) { this.v.isolate(null); this.activeRegion = null; for (const li of $('regions').children) li.classList.remove('is-active'); $('region-active').textContent = 'Whole body'; }
   }

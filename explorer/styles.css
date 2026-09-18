@@ -127,6 +127,8 @@ kbd { font: 11px/1 var(--mono); border: 1px solid var(--border-strong); border-b
 .systems .sys-name small { display: block; color: var(--muted); font-weight: 400; font-size: 11px; }
 .systems .sys-count { color: var(--muted); font-size: 12px; font-variant-numeric: tabular-nums; }
 .systems li.is-off .sys-name, .systems li.is-off .sys-count { opacity: .5; }
+.systems li.is-masked .sys-dot, .systems li.is-masked .sys-count { opacity: .35; }
+.systems .sys-masked { color: var(--accent, var(--muted)); }
 .systems li.is-loading .sys-count { animation: pulse 1s infinite; }
 @keyframes pulse { 50% { opacity: .3; } }
 .switch { position: relative; width: 34px; height: 20px; border-radius: 999px; background: color-mix(in srgb, var(--brand-gray) 55%, transparent); border: 0; cursor: pointer; padding: 0; transition: background .15s; }

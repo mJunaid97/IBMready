@@ -4,8 +4,9 @@
  *
  *  - reproductive-female: the female pelvic organs and breasts of the NIH Human Reference Atlas (HRA, united
  *    female v1.5, built from the Visible Human Female; CC BY 4.0), fitted into the male reference frame;
- *  - gender-affirming: a schematic layer (neovagina, neoclitoris, labia; neophallus, neourethra, scrotum with
- *    testicular implants) generated procedurally to typical dimensions in that frame.
+ *  - vaginoplasty and phalloplasty: schematic layers (neovaginal canal, neoclitoris, labia; neophallus, neourethra,
+ *    scrotum with testicular implants) generated procedurally to typical dimensions in that frame, each checked
+ *    for a path that bends tighter than its tube and for triangles that cross each other.
  *
  * The mapping (which HRA node becomes which structure, names, concepts, sides, the schematic shapes and the fit
  * parameters) lives in tools/manifest/female-source.json. This tool:
@@ -13,8 +14,10 @@
  *   2. fits the pelvis (one uniform scale, x centred on the hip bones, y/z pinned at the top of the pubic
  *      symphysis; the sacral promontory is the check) and the thorax (nipples on the midline at fit.nippleY, the
  *      breast base shrink-wrapped onto the male chest wall with a depth-weighted warp);
- *   3. fixes each mesh's winding (signed volume for closed shells, a centroid test for open patches) and writes
- *      OBJ files in the BodyParts3D input frame plus a build-atlas manifest;
+ *   3. fixes each mesh's winding (per connected component, oriented by a ray-cast facing test, meaningful for open
+ *      shells where the signed volume is not), flags sheets and open shells as two-sided (build-atlas appends the
+ *      reversed copy of their faces after simplification; mirror partners share the decision) and writes OBJ files
+ *      in the BodyParts3D input frame plus a build-atlas manifest;
  *   4. runs build-atlas.mjs with the HD and lite settings read from the existing atlas.json files;
  *   5. merges the result into data/hd/atlas.json and data/lite/atlas.json (systems, concepts, structures and
  *      pieces appended after the male ones; indices offset; `base` records the male counts so a rebuild
@@ -212,24 +215,6 @@ function orient(mesh) {
   return { ...s, method: 'raycast', flipped: flippedFaces > 0, unified, components: ncomp, compsFlipped, keep: true, frontRatio, hits: after.front + after.back };
 }
 
-/**
- * Two-sided geometry for a sheet or an open shell that a viewer can see from behind (peritoneal folds, the uterine
- * cavity through its openings): a reversed copy of every face on its own vertices, nudged 0.05 mm inward so the copy
- * keeps its own smooth normals. From any direction exactly one copy is front-facing, so the copies never compete.
- */
-function twoSided(mesh) {
-  const { positions, indices } = mesh; const n = positions.length / 3;
-  const nrm = new Float64Array(positions.length);
-  for (let t = 0; t < indices.length; t += 3) { const a = indices[t] * 3, b = indices[t + 1] * 3, c = indices[t + 2] * 3;
-    const ux = positions[b] - positions[a], uy = positions[b + 1] - positions[a + 1], uz = positions[b + 2] - positions[a + 2], vx = positions[c] - positions[a], vy = positions[c + 1] - positions[a + 1], vz = positions[c + 2] - positions[a + 2];
-    const nx = uy * vz - uz * vy, ny = uz * vx - ux * vz, nz = ux * vy - uy * vx;
-    for (const k of [a, b, c]) { nrm[k] += nx; nrm[k + 1] += ny; nrm[k + 2] += nz; } }
-  const out = new Float64Array(positions.length * 2); out.set(positions, 0);
-  for (let i = 0; i < n; i++) { const l = Math.hypot(nrm[i * 3], nrm[i * 3 + 1], nrm[i * 3 + 2]) || 1; for (let k = 0; k < 3; k++) out[(n + i) * 3 + k] = positions[i * 3 + k] - 0.05 * nrm[i * 3 + k] / l; }
-  const idx = new Uint32Array(indices.length * 2); idx.set(indices, 0);
-  for (let t = 0; t < indices.length; t += 3) { idx[indices.length + t] = indices[t] + n; idx[indices.length + t + 1] = indices[t + 2] + n; idx[indices.length + t + 2] = indices[t + 1] + n; }
-  return { positions: out, indices: idx };
-}
 
 /** Affine per-axis map v' = s*v + b applied in place (positions in metres in → millimetres out when s carries the 1000). */
 function transform(positions, s, b) { const out = new Float64Array(positions.length); for (let i = 0; i < positions.length; i += 3) { out[i] = s * positions[i] + b[0]; out[i + 1] = s * positions[i + 1] + b[1]; out[i + 2] = s * positions[i + 2] + b[2]; } return out; }
@@ -263,6 +248,15 @@ const sub = (a, b) => a.map((v, i) => v - b[i]), add = (a, b) => a.map((v, i) =>
 function tube(def) {
   const along = 28, around = 40, capRings = 8;
   const pts = resample(def.path, along); const rad = Array.from({ length: along }, (_, i) => { const u = (i / (along - 1)) * (def.radius.length - 1); const a = Math.min(def.radius.length - 2, Math.floor(u)), t = u - a; return [0, 1].map(k => def.radius[a][k] + (def.radius[a + 1][k] - def.radius[a][k]) * t); });
+  // the resampler is a uniform Catmull-Rom spline (it overshoots where control points are unevenly spaced): a path that
+  // bends tighter than the tube's own radius folds the tube through itself, so refuse it here rather than ship it
+  for (let i = 1; i + 1 < along; i++) {
+    const a = sub(pts[i], pts[i - 1]), b = sub(pts[i + 1], pts[i]); const la = Math.hypot(...a), lb = Math.hypot(...b);
+    const th = Math.acos(Math.max(-1, Math.min(1, (a[0] * b[0] + a[1] * b[1] + a[2] * b[2]) / ((la * lb) || 1))));
+    if (th < 1e-6) continue;
+    const turnRadius = Math.min(la, lb) / (2 * Math.sin(th / 2)), r = Math.max(...rad[i]);
+    if (turnRadius < r) throw new Error(`tube path bends with a turn radius of ${turnRadius.toFixed(1)} mm at [${pts[i].map(v => v.toFixed(1)).join(', ')}], tighter than its own radius ${r} mm: space the control points evenly`);
+  }
   // Rotation-minimising frames: the first S comes from a fixed reference, every later one is the previous S carried along
   // the path (projected off the new tangent), so the cross-section never flips between rings.
   const frames = []; let prevS = null;
@@ -295,6 +289,33 @@ function ellipsoid(def) {
   for (let j = 0; j <= ringsN; j++) { const phi = (j / ringsN) * Math.PI; for (let i = 0; i < seg; i++) { const th = (i / seg) * Math.PI * 2; V.push(cx + rx * Math.sin(phi) * Math.cos(th), cy + ry * Math.cos(phi), cz + rz * Math.sin(phi) * Math.sin(th)); } }
   for (let j = 0; j < ringsN; j++) for (let i = 0; i < seg; i++) { const a = j * seg + i, b = j * seg + (i + 1) % seg, c = (j + 1) * seg + i, d = (j + 1) * seg + (i + 1) % seg; F.push(a, c, d, a, d, b); }
   return { positions: Float64Array.from(V), indices: Uint32Array.from(F) };
+}
+/** Pairs of triangles that cross each other (an edge of one passing through the other, no shared vertex): a schematic
+ *  solid must have none. Bounding boxes and a sweep along y prune the pairs. */
+function selfIntersections(mesh) {
+  const { positions: P, indices: I } = mesh; const nt = I.length / 3;
+  const bb = new Float64Array(nt * 6);
+  for (let t = 0; t < nt; t++) { for (let k = 0; k < 3; k++) { bb[t * 6 + k] = Infinity; bb[t * 6 + 3 + k] = -Infinity; }
+    for (let j = 0; j < 3; j++) { const v = I[t * 3 + j] * 3; for (let k = 0; k < 3; k++) { const x = P[v + k]; if (x < bb[t * 6 + k]) bb[t * 6 + k] = x; if (x > bb[t * 6 + 3 + k]) bb[t * 6 + 3 + k] = x; } } }
+  const vtx = (i) => [P[i * 3], P[i * 3 + 1], P[i * 3 + 2]], key = (i) => `${P[i * 3].toFixed(5)},${P[i * 3 + 1].toFixed(5)},${P[i * 3 + 2].toFixed(5)}`;
+  const orient = (a, b, c, p) => { const n = cross(sub(b, a), sub(c, a)), d = sub(p, a); return n[0] * d[0] + n[1] * d[1] + n[2] * d[2]; };
+  const segTri = (p, q, A, B, C) => { const s1 = orient(A, B, C, p), s2 = orient(A, B, C, q); if (s1 * s2 >= 0) return false; const o1 = orient(p, q, A, B), o2 = orient(p, q, B, C), o3 = orient(p, q, C, A); return (o1 > 0 && o2 > 0 && o3 > 0) || (o1 < 0 && o2 < 0 && o3 < 0); };
+  const order = Array.from({ length: nt }, (_, t) => t).sort((a, b) => bb[a * 6 + 1] - bb[b * 6 + 1]);
+  let count = 0;
+  for (let ia = 0; ia < nt; ia++) {
+    const a = order[ia], aMaxY = bb[a * 6 + 4];
+    for (let ib = ia + 1; ib < nt; ib++) {
+      const b = order[ib]; if (bb[b * 6 + 1] > aMaxY) break;
+      if (bb[a * 6] > bb[b * 6 + 3] || bb[b * 6] > bb[a * 6 + 3] || bb[a * 6 + 2] > bb[b * 6 + 5] || bb[b * 6 + 2] > bb[a * 6 + 5]) continue;
+      const ai = [I[a * 3], I[a * 3 + 1], I[a * 3 + 2]], bi = [I[b * 3], I[b * 3 + 1], I[b * 3 + 2]];
+      const ka = ai.map(key), kb = bi.map(key); if (ka.some(k => kb.includes(k))) continue;
+      const A = ai.map(vtx), B = bi.map(vtx); let hit = false;
+      for (let e = 0; e < 3 && !hit; e++) if (segTri(A[e], A[(e + 1) % 3], B[0], B[1], B[2])) hit = true;
+      for (let e = 0; e < 3 && !hit; e++) if (segTri(B[e], B[(e + 1) % 3], A[0], A[1], A[2])) hit = true;
+      if (hit) count++;
+    }
+  }
+  return count;
 }
 function schematic(def) { if (def.kind === 'tube') return tube(def); if (def.kind === 'ellipsoid') return ellipsoid(def); throw new Error(`unknown schematic kind ${def.kind}`); }
 
@@ -410,7 +431,11 @@ async function main() {
       const pos = concat(...parts.map(p => rec.fit === 'thorax' ? warps[sideOf(rec)](TT(p.positions, sideOf(rec))) : TP(p.positions)));
       const idx = []; let off = 0; for (const p of parts) { for (let i = 0; i < p.indices.length; i++) idx.push(p.indices[i] + off); off += p.positions.length / 3; }
       mesh = { positions: pos, indices: Uint32Array.from(idx) };
-    } else if (rec.schematic) { mesh = schematic(rec.schematic); }
+    } else if (rec.schematic) {
+      try { mesh = schematic(rec.schematic); } catch (e) { throw new Error(`${rec.id} ${rec.name}: ${e.message}`); }
+      const crossings = selfIntersections(mesh);
+      if (crossings) throw new Error(`${rec.id} ${rec.name}: ${crossings} pairs of triangles cross each other, the schematic solid passes through itself`);
+    }
     else throw new Error(`${rec.id}: needs node(s) or schematic`);
     if (rec.presimplify && mesh.indices.length / 3 > rec.presimplify) {
       // a source mesh far denser than its mirror (the right breast is 5x the left) is brought to the same order first,
@@ -420,21 +445,26 @@ async function main() {
       mesh.indices = Uint32Array.from(idx);
     }
     const o = orient(mesh);
-    // a sheet or an open shell whose inner wall a viewer can still see gets a reversed copy of its faces
-    if (o.frontRatio < 0.9) { mesh = twoSided(mesh); o.twoSided = true; }
+    // a sheet or an open shell (boundary edges, or an inner wall the view rays reach) needs both faces drawn: flag it,
+    // and build-atlas appends the reversed copy of its faces after simplification (twoSidedCopy there), so the copy is
+    // never simplified against its original
+    o.twoSided = o.frontRatio < 0.9 || o.openRatio >= 0.005;
     srcTris += mesh.indices.length / 3;
     const b = bbox(mesh.positions);
     log(`  ${rec.id} ${rec.name.padEnd(36)} ${String(mesh.indices.length / 3).padStart(7)} tris  ${o.components} comp${o.compsFlipped ? ` (${o.compsFlipped} flipped)` : ''}${o.unified ? `, ${o.unified} faces re-wound` : ''}  front ${(o.frontRatio * 100).toFixed(0).padStart(3)}% of ${o.hits} rays  open ${(o.openRatio * 100).toFixed(1).padStart(4)}%  bbox [${fmt(b, 0)}]`);
-    if (o.twoSided) log(`    two-sided: ${(100 - o.frontRatio * 100).toFixed(0)}% of view rays met the inner face of this open mesh (${(o.openRatio * 100).toFixed(1)}% boundary edges), so it carries a reversed copy of its faces`);
+    if (o.twoSided) log(`    two-sided: ${(100 - o.frontRatio * 100).toFixed(0)}% of view rays met the inner face, ${(o.openRatio * 100).toFixed(1)}% boundary edges`);
     if (rec.side && Math.sign((b[0] + b[3]) / 2) !== (rec.side === 'left' ? 1 : -1)) throw new Error(`${rec.id} ${rec.name}: bbox centre x ${fmt((b[0] + b[3]) / 2)} contradicts side ${rec.side}`);
     writeOBJ(path.join(workObj, `${rec.id}.obj`), mesh);
     const parents = rec.parents.map(id => { if (!cIndex.has(id)) throw new Error(`unknown concept ${id}`); return cIndex.get(id); });
     const st = { id: rec.id, name: rec.name, concept: concept.replace(/^FMA:/, 'FMA'), system: rec.system, pieces: [pieces.length], parents };
     if (rec.side) st.side = rec.side; if (rec.pair) { if (!sIndex.has(rec.pair)) throw new Error(`unknown pair ${rec.pair}`); st.pair = sIndex.get(rec.pair); }
     const piece = { id: rec.id, file: `${rec.id}.obj`, name: rec.name, system: rec.system, concept: st.concept, parents, structure: structures.length };
-    if (rec.side) piece.side = rec.side; if (rec.pair) piece.pair = rec.pair; if (o.keep) piece.winding = 'keep';
+    if (rec.side) piece.side = rec.side; if (rec.pair) piece.pair = rec.pair; if (o.keep) piece.winding = 'keep'; if (o.twoSided) piece.twoSided = true;
     structures.push(st); pieces.push(piece); sysCount.set(rec.system, sysCount.get(rec.system) + 1);
   }
+  // mirror partners take one decision, so paired structures never render differently from mirror-equivalent views
+  const byId = new Map(pieces.map(p => [p.id, p]));
+  for (const p of pieces) if (p.twoSided && p.pair && byId.has(p.pair) && !byId.get(p.pair).twoSided) { byId.get(p.pair).twoSided = true; log(`  ${p.pair}: two-sided to match its pair ${p.id}`); }
   const systems = M.systems.map(s => ({ ...s, count: sysCount.get(s.id) }));
   // every concept id a piece carries resolves to a concepts entry (the male atlas keeps that invariant)
   const concepts = M.concepts.slice(); const known = new Set(concepts.map(c => c.id)); const uses = new Map();

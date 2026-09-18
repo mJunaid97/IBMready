@@ -71,8 +71,8 @@ whole body with the female organs). See `data/ATTRIBUTION.md`.
 
 | Build | Triangles | Download | Use |
 | --- | --- | --- | --- |
-| `data/hd/` | 3.67 M | 14.6 MB | desktops and laptops (default) |
-| `data/lite/` | 1.28 M | 6.1 MB | phones and low-memory devices (automatic, switchable in Help) |
+| `data/hd/` | 3.75 M | 14.6 MB | desktops and laptops (default) |
+| `data/lite/` | 1.31 M | 6.1 MB | phones and low-memory devices (automatic, switchable in Help) |
 
 Both builds carry the same `atlas.json` (pieces, structures, systems, concepts) and one
 `glb/<system>.glb` per system: KHR_mesh_quantization + EXT_meshopt_compression, one named

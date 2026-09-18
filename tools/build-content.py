@@ -31,7 +31,9 @@ References are enriched with their source name and evidence tier from a host tab
 entity gets an indexability verdict (`seo.index`) from a quality gate: a page without a lead
 paragraph, references or relationships is published noindex until it is complete.
 
-Organ 'match' rules: {"names": [...exact structure names...], "regex": "...", "systems": [...]}
+Organ 'match' rules: {"names": [...exact structure names...], "regex": "...", "systems": [...]}; an organ's
+optional 'also' names structures that share its clinical topics and organ chip without joining its 3D selection
+(the female layer's bladder and urethra stand in for the male ones the `bladder` organ is built from).
 Descriptions in structures.json are keyed by a side-stripped, lower-case base name so one
 entry serves both the left and the right structure; pattern generators fill in families such
 as vertebrae, ribs, phalanges, teeth and segmental vessels.
@@ -958,6 +960,10 @@ def main():
         if not m:
             unmodelled.append(o["id"])
             if o["id"] not in articles: errors.append(f"organs/{o['id']}: an organ without atlas geometry (no match rule) needs a full article in anatomy.json")
+        if o.get("also"):
+            also, missing_also = match_structures({"names": o["also"]})
+            for nm in missing_also: errors.append(f"organs/{o['id']}: also: unknown structure name '{nm}'")
+            rec["also"] = sorted(also - hit, key=lambda i: structs[i]["name"])
         if o.get("nearby"):
             near, missing_near = match_structures(o["nearby"])
             for nm in missing_near: errors.append(f"organs/{o['id']}: nearby: unknown structure name '{nm}'")
@@ -1009,7 +1015,7 @@ def main():
     # ---- structure descriptions
     organ_of = {}
     for o in out_organs:
-        for i in o["structures"]: organ_of.setdefault(i, o["id"])
+        for i in o["structures"] + o.get("also", []): organ_of.setdefault(i, o["id"])
     out_structs = {}
     n_hand = n_gen = 0
     for i, s in enumerate(structs):
