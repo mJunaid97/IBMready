@@ -26,8 +26,21 @@ export const STATE_TIER = { CONTRAINDICATED: 'contraindicated', AVOID_COMBINATIO
 export const STATE_ORDER = { CONTRAINDICATED: 1, AVOID_COMBINATION: 2, SPECIALIST_OR_CLOSE_MONITORING: 3, MONITOR_OR_ADJUST: 4, INTERACTION_DOCUMENTED: 5, NO_SEVERITY_ASSIGNED: 6 };
 export const LIMITS = { min: 2, soft: 10 };
 export const NONE_WORDING = {
-  title: 'No known interaction identified in the available data',
-  text: 'This does not prove that the combination is safe for every person. Some interactions may be uncommon, newly reported, dose-dependent, or not represented in the available dataset.',
+  title: 'No matching record in this dataset',
+  text: 'This does not establish that the combination is safe. The dataset holds a limited number of sourced records; an interaction may be uncommon, newly reported, dose-dependent, or simply not represented here.',
+  outside: 'Outside this dataset\u2019s coverage',
+  outsideText: 'At least one of these medicines has no page on this site, so only records that name it directly could be matched. A pair in this list has not been checked against a complete source and must not be read as having no interaction.',
+};
+/** Result states, distinct from one another so a database miss is never presented as a negative clinical finding. */
+export const STATES = {
+  insufficient: 'Fewer than two medicines to compare',
+  documented: 'Documented interaction in the dataset',
+  duplication: 'Duplicate active ingredient or same-class duplication',
+  'no-record': 'No matching record in this dataset (not a finding of safety)',
+  'outside-coverage': 'A medicine outside the supported coverage: pair not fully checked',
+  'unknown-entry': 'Unrecognised medicine or brand',
+  'dataset-unavailable': 'Interaction data could not be loaded',
+  error: 'The check could not be completed',
 };
 const SELECTABLE = new Set(['medication', 'product', 'substance']);
 
@@ -167,23 +180,30 @@ export function createEngine(ix) {
       pair.interactions.sort((x, y) => TIERS[x.tier].order - TIERS[y.tier].order || STATE_ORDER[x.severity] - STATE_ORDER[y.severity] || VIA_ORDER[x.via] - VIA_ORDER[y.via]);
       if (pair.interactions.length) { pair.tier = pair.interactions[0].tier; pair.order = TIERS[pair.tier].order; }
       else if (pair.duplications.length) { pair.tier = 'duplication'; pair.order = 50; }
+      // a pair with no record is 'no-record' only when every ingredient has a medication page (and so a full record set);
+      // if either entry is a named substance or product ingredient without a page, the pair is 'outside-coverage'
+      const covered = [...A.ingredients, ...B.ingredients].every(i => i.id);
+      pair.state = pair.interactions.length ? 'documented' : pair.duplications.length ? 'duplication' : covered ? 'no-record' : 'outside-coverage';
       pairs.push(pair);
     }
     const sorted = [...pairs].sort((x, y) => x.order - y.order || (x.interactions[0] ? STATE_ORDER[x.interactions[0].severity] : 9) - (y.interactions[0] ? STATE_ORDER[y.interactions[0].severity] : 9) || x.a - y.a || x.b - y.b);
     const interactions = sorted.flatMap(p => p.interactions.map(i => ({ ...i, pair: [p.aName, p.bName] })));
     const duplications = sorted.flatMap(p => p.duplications.map(d => ({ ...d, pairTier: p.tier })));
-    const noKnownInteractionPairs = sorted.filter(p => !p.interactions.length && !p.duplications.length).map(p => ({ a: p.aName, b: p.bName }));
+    const noKnownInteractionPairs = sorted.filter(p => !p.interactions.length && !p.duplications.length).map(p => ({ a: p.aName, b: p.bName, state: p.state }));
+    const states = { documented: sorted.filter(p => p.state === 'documented').length, duplication: sorted.filter(p => p.state === 'duplication').length, 'no-record': sorted.filter(p => p.state === 'no-record').length, 'outside-coverage': sorted.filter(p => p.state === 'outside-coverage').length, 'unknown-entry': warnings.filter(w => w.code === 'unknown-entry').length };
     const byTier = Object.fromEntries(TIER_ORDER.map(t => [t, sorted.filter(p => p.tier === t).length]));
     const topTier = TIER_ORDER.find(t => byTier[t]) || (duplications.length ? 'duplication' : 'none');
     const shown = [...interactions, ...duplications.flatMap(d => d.records)];
     const related = dedupe(shown.flatMap(i => i.related || []), r => `${r.type}:${r.id}`);
     const sources = dedupe(shown.flatMap(i => i.evidence || []), r => r.url);
+    const state = medications.length < LIMITS.min ? 'insufficient' : states.documented ? 'documented' : states.duplication ? 'duplication' : states['outside-coverage'] ? 'outside-coverage' : 'no-record';
     return {
       status: medications.length < LIMITS.min ? 'insufficient' : warnings.some(w => w.code === 'limited-coverage') ? 'partial' : 'complete',
+      state, states,
       medications, pairsChecked: pairs.length, pairs: sorted, interactions, duplications, noKnownInteractionPairs,
-      summary: { medications: medications.length, pairsChecked: pairs.length, byTier, duplications: sorted.filter(p => p.duplications.length).length, none: noKnownInteractionPairs.length, topTier },
+      summary: { medications: medications.length, pairsChecked: pairs.length, byTier, duplications: sorted.filter(p => p.duplications.length).length, none: states['no-record'], outside: states['outside-coverage'], topTier },
       related, sources, warnings,
-      sourceMetadata: { provider: ix.sourceMetadata?.provider || 'Anatomy Nexus interaction records', dataVersion: ix.sourceMetadata?.dataVersion || ix.updated || '', lastUpdated: ix.sourceMetadata?.lastUpdated || ix.updated || '', recordCount: records.length, publishers: ix.sourceMetadata?.publishers || {}, reviewStatuses: ix.sourceMetadata?.reviewStatuses || {}, scope: ix.sourceMetadata?.scope || ['drug-drug'] },
+      sourceMetadata: { provider: ix.sourceMetadata?.provider || 'Anatomy Nexus interaction records', dataVersion: ix.sourceMetadata?.dataVersion || ix.updated || '', lastUpdated: ix.sourceMetadata?.lastUpdated || ix.updated || '', recordCount: records.length, medicationCount: ix.sourceMetadata?.medicationCount || Object.keys(ix.drugClassOf || {}).length, productCount: ix.sourceMetadata?.productCount || (ix.products || []).length, substanceCount: ix.sourceMetadata?.substanceCount || Object.keys(ix.substances || {}).length, publishers: ix.sourceMetadata?.publishers || {}, reviewStatuses: ix.sourceMetadata?.reviewStatuses || {}, scope: ix.sourceMetadata?.scope || ['drug-drug'] },
     };
   }
   /** A matched record with its display tier and how it applied to the two ingredients. */

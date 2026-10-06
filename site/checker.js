@@ -15,12 +15,13 @@
 import { renderHeader, renderFooter, loadInteractions, link, entityLink, typeLink, esc, param, paths, PRERENDERED, SITE, dateText, canonical } from './site.js';
 import { applyMeta, webPageNode, metaDescription } from './seo.js';
 import { interactionBody, tierBadge, sevBadge, graphLink, referencesHtml, src, REVIEW_LABEL } from './entity.js';
-import { createEngine, TIERS, TIER_ORDER, NONE_WORDING, LIMITS } from './interaction-engine.js';
+import { createEngine, TIERS, TIER_ORDER, NONE_WORDING, STATES, LIMITS } from './interaction-engine.js';
 
 const COPY = {
   trust: 'Interaction information is educational and does not replace advice from a doctor, pharmacist, or other qualified healthcare professional.',
   before: 'This checker cannot account for your doses, medical history, kidney or liver function, pregnancy, allergies or every product on the market. It shows what the cited official sources say about a pair of medicines; it does not decide whether a combination is right for you.',
-  none: 'A result showing no known interaction does not guarantee that a combination is safe for every person.',
+  none: 'A pair with no matching record has not been shown to be safe: the dataset is limited to the sourced records listed below.',
+  error: 'Something went wrong while running the check, so no result was produced. Nothing about this combination has been checked.',
   disclaimer: 'This checker is for education and general information only. It may not include every possible interaction and cannot account for your full medical history, doses, laboratory results, allergies, pregnancy status, kidney or liver function, or other individual factors. Do not start, stop, or change a medicine based only on this tool. Ask a doctor or pharmacist for personal medication advice.',
   severe: 'Do not make medication changes on your own. Contact a qualified healthcare professional or pharmacist for advice about this combination.',
   unavailable: 'Interaction data is temporarily unavailable. Please try again later.',
@@ -165,31 +166,43 @@ function renderEmpty() {
 }
 function runCheck({ focus }) {
   track('interaction_check_started', { medications: state.selected.length });
-  const res = state.engine.check(state.selected);
+  let res;
+  try { res = state.engine.check(state.selected); if (!res || !res.summary) throw new Error('empty result'); }
+  catch (e) {
+    // a processing failure is reported as such: it is never shown as a result, and never as "no interaction"
+    state.checked = true; document.body.dataset.checked = 'error';
+    $('chk-results').innerHTML = `<div class="callout urgent" role="alert"><b>${esc(STATES.error)}.</b> ${esc(COPY.error)} <a href="${esc(location.pathname + location.search)}">Retry</a> · <a href="${typeLink('medications')}">browse medication pages</a></div>`;
+    status('The check could not be completed.'); track('checker_error', { code: 'processing' }); console.error(e); return;
+  }
   state.checked = true;
   $('chk-results').innerHTML = resultsHtml(res);
   document.body.dataset.checked = '1';
   const s = res.summary; const parts = TIER_ORDER.filter(t => s.byTier[t]).map(t => `${s.byTier[t]} ${TIERS[t].label.toLowerCase()}`);
   if (s.duplications) parts.push(`${s.duplications} duplication warning${s.duplications === 1 ? '' : 's'}`);
-  if (s.none) parts.push(`${s.none} with no known interaction identified`);
+  if (s.none) parts.push(`${s.none} with no matching record`);
+  if (s.outside) parts.push(`${s.outside} outside the dataset's coverage`);
   status(`Checked ${s.medications} medications and ${s.pairsChecked} pair${s.pairsChecked === 1 ? '' : 's'}: ${parts.join(', ') || 'no results'}.`);
   track('interaction_check_completed', { medications: s.medications, pairs: s.pairsChecked, top_tier: s.topTier, status: res.status });
   if (focus) { const h = $('chk-results-h'); if (h) { h.setAttribute('tabindex', '-1'); h.focus({ preventScroll: false }); } }
 }
 function resultsHtml(res) {
-  const s = res.summary; const t = (k) => TIERS[k];
+  const s = res.summary; const t = (k) => TIERS[k]; const meta0 = res.sourceMetadata;
   const pairs = (n) => `<span><b>${n}</b> pair${n === 1 ? '' : 's'}</span>`;
   const tierRows = TIER_ORDER.filter(k => s.byTier[k] || t(k).order <= 3).map(k => `<li class="${s.byTier[k] ? '' : 'is-zero'}">${tierBadge(k, { title: false })}${pairs(s.byTier[k])}</li>`).join('')
     + (s.duplications ? `<li>${tierBadge('duplication')}${pairs(s.duplications)}</li>` : '')
-    + `<li class="${s.none ? '' : 'is-zero'}">${tierBadge('none')}${pairs(s.none)}</li>`;
+    + `<li class="${s.none ? '' : 'is-zero'}">${tierBadge('none')}${pairs(s.none)}</li>` + (s.outside ? `<li>${tierBadge('outside')}${pairs(s.outside)}</li>` : '');
   const warn = res.warnings.filter(w => w.code !== 'too-few').map(w => `<div class="callout ${w.code === 'unknown-entry' ? 'warning' : 'info'}"><b>${esc(w.code === 'limited-coverage' ? 'Coverage limited.' : w.code === 'soft-limit' ? 'Long list.' : 'Not matched.')}</b> ${esc(w.message)}${w.code === 'unknown-entry' ? ' Search again above.' : ''}</div>`).join('');
   const severe = s.topTier === 'contraindicated' || s.topTier === 'major' ? `<div class="callout urgent" role="note"><b>${esc(s.topTier === 'contraindicated' ? 'A combination that official information says to avoid.' : 'A combination official information restricts to specialist supervision or close monitoring.')}</b> ${esc(COPY.severe)}</div>` : '';
   const groups = TIER_ORDER.filter(k => s.byTier[k]).map(k => `<section class="chk-group" aria-labelledby="g-${k}"><h2 id="g-${k}">${tierBadge(k)}<span class="badge">${s.byTier[k]} pair${s.byTier[k] === 1 ? '' : 's'}</span></h2><p class="small muted">${esc(t(k).meaning)}</p><div class="ix-list">${res.pairs.filter(p => p.tier === k).map(p => pairCard(p, res)).join('')}</div></section>`).join('');
   const dups = res.pairs.filter(p => p.duplications.length);
   const dupSection = dups.length ? `<section class="chk-group" aria-labelledby="g-dup"><h2 id="g-dup">${tierBadge('duplication')}<span class="badge">${dups.length} pair${dups.length === 1 ? '' : 's'}</span></h2><p class="small muted">The same active ingredient from two entries, or two members of a class whose official information advises against combining them.</p><div class="ix-list">${dups.map(p => dupCard(p, res)).join('')}</div></section>` : '';
-  const none = res.noKnownInteractionPairs.length ? `<section class="chk-group chk-none" aria-labelledby="g-none"><h2 id="g-none">${tierBadge('none')}<span class="badge">${res.noKnownInteractionPairs.length} pair${res.noKnownInteractionPairs.length === 1 ? '' : 's'}</span></h2>
-    <p><b>${esc(NONE_WORDING.title)}.</b> No interaction was identified for ${res.noKnownInteractionPairs.length === 1 ? 'this pair' : 'these pairs'} in the available data. ${esc(NONE_WORDING.text)}</p>
-    <ul>${res.noKnownInteractionPairs.map(p => `<li>${esc(p.a)} + ${esc(p.b)}</li>`).join('')}</ul></section>` : '';
+  const noRec = res.noKnownInteractionPairs.filter(p => p.state !== 'outside-coverage'), outside = res.noKnownInteractionPairs.filter(p => p.state === 'outside-coverage');
+  const none = noRec.length ? `<section class="chk-group chk-none" aria-labelledby="g-none" data-state="no-record"><h2 id="g-none">${tierBadge('none')}<span class="badge">${noRec.length} pair${noRec.length === 1 ? '' : 's'}</span></h2>
+    <p><b>${esc(NONE_WORDING.title)}.</b> ${esc(NONE_WORDING.text)} ${esc(`${meta0.recordCount} records were searched.`)}</p>
+    <ul>${noRec.map(p => `<li>${esc(p.a)} + ${esc(p.b)}</li>`).join('')}</ul></section>` : '';
+  const outsideSec = outside.length ? `<section class="chk-group chk-none" aria-labelledby="g-outside" data-state="outside-coverage"><h2 id="g-outside">${tierBadge('outside')}<span class="badge">${outside.length} pair${outside.length === 1 ? '' : 's'}</span></h2>
+    <p><b>${esc(NONE_WORDING.outside)}.</b> ${esc(NONE_WORDING.outsideText)}</p>
+    <ul>${outside.map(p => `<li>${esc(p.a)} + ${esc(p.b)}</li>`).join('')}</ul></section>` : '';
   const related = relatedHtml(res);
   const meta = res.sourceMetadata;
   const about = `<section class="chk-about" aria-labelledby="chk-about-h"><h2 id="chk-about-h">Data used for this check</h2>
@@ -203,8 +216,9 @@ function resultsHtml(res) {
     <p class="muted">We checked every medication pair in your list using the available interaction data.</p>
     <div class="chk-stats"><div class="stat"><b>${s.medications}</b><span>medication${s.medications === 1 ? '' : 's'} checked</span></div><div class="stat"><b>${s.pairsChecked}</b><span>medication pair${s.pairsChecked === 1 ? '' : 's'} reviewed</span></div>${res.status === 'partial' ? '<div class="stat"><b>Partial</b><span>coverage limited, see below</span></div>' : ''}</div>
     <ul class="chk-tiers" aria-label="Results by severity">${tierRows}</ul>
-    <p class="small muted">${esc(COPY.none)} Severity is the display tier of the state supported by the cited source; <a href="${link.methodology()}#severity">how the states are mapped</a>.</p>${warn}</section>
-    ${severe}${dupSection}${groups}${none}${related}${about}
+    <p class="small muted">${esc(COPY.none)} Severity is the display tier of the state supported by the cited source; <a href="${link.methodology()}#severity">how the states are mapped</a>.</p>
+    <p class="small muted chk-coverage">Dataset: ${meta0.recordCount} sourced records covering ${esc(String(meta0.medicationCount || ''))} medicines with pages${meta0.substanceCount ? `, ${meta0.substanceCount} named substances` : ''}; records are checked against their cited sources and not yet independently clinically reviewed. Medicines outside this set cannot be fully checked.</p>${warn}</section>
+    ${severe}${dupSection}${groups}${none}${outsideSec}${related}${about}
     ${res.sources.length ? referencesHtml(res.sources, 'References') : ''}
     <div class="callout"><b>Medical information notice:</b> ${esc(COPY.disclaimer)}</div>`;
 }

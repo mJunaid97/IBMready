@@ -440,6 +440,9 @@ def build_queues(types, interactions, concept_page, queues, text_size):
             if len(e.get("references") or []) < 2: queues["needs_source"].append({"entity": where, "detail": f"{len(e.get('references') or [])} reference(s)"})
             st = (e.get("review") or {}).get("status")
             if st not in ("clinical-review", "approved", "published"): queues["needs_medical_review"].append({"entity": where, "detail": st})
+            for c in e.get("conditionCautions") or []:
+                if c.get("status") == "quarantined": queues["quarantined_relationship"].append({"entity": where, "detail": f"{c.get('type')} for {c.get('condition') or c.get('text')}: {c.get('reviewNote') or 'quarantined'}", "proposed": c.get("proposed")})
+            if e.get("instructionsStatus", "current") != "current": queues["guidance_recheck"].append({"entity": where, "detail": f"{e['instructionsStatus']}: {(e.get('guidance') or {}).get('basedOn')}"})
             if e.get("seo", {}).get("index") and key in ("tests", "medications", "imaging", "biomarkers", "drug-classes") and (text_size(e) < 1200 or len(e.get("references") or []) < 2):
                 queues["sparse_public_page"].append({"entity": where, "detail": f"{text_size(e)} characters, {len(e.get('references') or [])} reference(s)"})
             for t in (e.get("terminology") or {}).get("loinc") or []:

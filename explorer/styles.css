@@ -281,3 +281,7 @@ a.chip { text-decoration: none; color: inherit; display: inline-block; }
 
 /* Available to screen readers and crawlers, out of the way of the full-screen 3D view. */
 .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
+
+/* failure state of the loading card: actions under the message */
+.loading-actions { display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; margin-top: 14px; }
+.app[data-failed] .loading-bar { display: none; }

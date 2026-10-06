@@ -120,6 +120,8 @@ img { max-width: 100%; }
 button, input, select, textarea { font: inherit; color: inherit; }
 ::selection { background: color-mix(in srgb, var(--brand-teal) 35%, transparent); }
 .wrap { max-width: var(--max); margin: 0 auto; padding-inline: var(--gutter); }
+/* long identifiers, codes and addresses wrap inside their cell instead of widening the page; tables keep their own scroller (.table-wrap) */
+dd, td, th, .ref-list li, .aliases { overflow-wrap: anywhere; }
 .muted { color: var(--text-secondary); }
 .small { font-size: var(--text-small); }
 .mono { font-family: var(--mono); font-size: 12.5px; }
@@ -185,7 +187,7 @@ kbd { font: 11px/1 var(--mono); border: 1px solid var(--border-strong); border-b
 .menu-toggle { display: none; margin-left: auto; }
 
 /* header search */
-.hsearch { position: relative; flex: 1 1 220px; min-width: 200px; max-width: 360px; }
+.hsearch { position: relative; flex: 1 1 220px; min-width: 0; max-width: 360px; }
 .hsearch-icon { position: absolute; left: 12px; top: 50%; width: 16px; height: 16px; transform: translateY(-50%); color: var(--text-secondary); pointer-events: none; }
 .hsearch input { width: 100%; height: 40px; padding: 0 12px 0 36px; border-radius: var(--control-radius); border: 1px solid var(--border-strong); background: var(--surface); color: inherit; font-size: 14px; transition: border-color .15s, box-shadow .15s; }
 .hsearch input::placeholder { color: var(--text-secondary); opacity: .9; }
@@ -249,8 +251,8 @@ kbd { font: 11px/1 var(--mono); border: 1px solid var(--border-strong); border-b
 .stats { display: flex; flex-wrap: wrap; gap: 8px 28px; margin: 18px 0 0; }
 .stat b { display: block; font-size: 26px; font-weight: 650; letter-spacing: -0.02em; line-height: 1.1; font-variant-numeric: tabular-nums; }
 .stat span { color: var(--text-secondary); font-size: 13px; }
-.grid { display: grid; gap: 14px; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); }
-.grid-3 { grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); }
+.grid { display: grid; gap: 14px; grid-template-columns: repeat(auto-fill, minmax(min(240px, 100%), 1fr)); }
+.grid-3 { grid-template-columns: repeat(auto-fill, minmax(min(300px, 100%), 1fr)); }
 .two { display: grid; grid-template-columns: minmax(0, 1.4fr) minmax(280px, 1fr); gap: 36px; align-items: start; }
 .aside { position: sticky; top: calc(var(--header-h) + 16px); }
 .aside section { margin-bottom: 20px; }
@@ -320,6 +322,14 @@ select { height: var(--control-h-sm); padding: 0 8px; border: 1px solid var(--bo
 .filters { display: flex; flex-wrap: wrap; gap: 6px; margin: 6px 0 18px; }
 .filters .chip { cursor: pointer; }
 
+/* urgent information placed before the 3D preview; a disclosure for the long tail of related links */
+.callout.priority { margin: 14px 0 18px; }
+.callout.priority h2 { font-size: var(--text-caption, 13px); letter-spacing: .06em; text-transform: uppercase; margin: 0 0 6px; }
+.callout.guidance-notice h2 { text-transform: none; letter-spacing: 0; font-size: 17px; }
+.more-chips { margin: 6px 0 0; }
+.more-chips summary { cursor: pointer; font-size: 13px; color: var(--text-secondary); padding: 4px 0; }
+.more-chips summary:hover { color: var(--text-primary); }
+.more-chips[open] summary { margin-bottom: 6px; }
 /* ================================================================== 9. tables */
 .table-wrap { overflow-x: auto; margin: 10px 0 18px; border: 1px solid var(--border); border-radius: var(--radius); background: var(--surface); }
 .kv { width: 100%; border-collapse: collapse; font-size: 14px; margin: 0; }
@@ -333,9 +343,12 @@ select { height: var(--control-h-sm); padding: 0 8px; border: 1px solid var(--bo
 table.compare th[scope="row"] { width: 22%; }
 table.compare thead th { font-size: 14px; text-transform: none; letter-spacing: 0; color: var(--text-primary); }
 table.compare thead th a { text-decoration: none; }
-dl.facts { display: grid; grid-template-columns: auto 1fr; gap: 6px 16px; margin: 10px 0 16px; font-size: 14.5px; }
+/* the value column may hold long identifiers, brand lists and codes: it must be allowed to shrink and wrap rather than
+   widen the grid past the viewport (grid items default to min-width:auto, which forbids that) */
+dl.facts { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 6px 16px; margin: 10px 0 16px; font-size: 14.5px; }
 dl.facts dt { color: var(--text-secondary); }
-dl.facts dd { margin: 0; }
+dl.facts dd { margin: 0; min-width: 0; overflow-wrap: anywhere; }
+@media (max-width: 420px) { dl.facts { grid-template-columns: minmax(0, 1fr); gap: 2px 0; } dl.facts dd { margin-bottom: 8px; } }
 dl.facts.pops dt { font-weight: 600; color: var(--text-primary); }
 .pair { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; }
 .pair h2 { margin-top: 28px; }
@@ -374,16 +387,16 @@ span.src { font-size: 10.5px; font-weight: 600; color: var(--text-secondary); le
 .ref-section { color: var(--text-secondary); font-size: 12.5px; }
 .editorial { font-size: 13.5px; padding: 14px 16px; border: 1px solid var(--border); border-radius: 12px; background: var(--surface); }
 .editorial h2 { margin: 0 0 10px; }
-.editorial dl { display: grid; grid-template-columns: auto 1fr; gap: 5px 12px; margin: 0 0 10px; }
+.editorial dl { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 5px 12px; margin: 0 0 10px; }
 .editorial dt { color: var(--text-secondary); }
 .editorial dd { margin: 0; }
 .editorial p { margin: 0; }
 .editorial p + p { margin-top: 6px; }
 .side-clinical { border: 1px solid var(--border); border-radius: 12px; padding: 14px 16px; background: var(--surface-alt); margin-bottom: 20px; }
 .side-clinical h2 { margin: 0 0 10px; }
-.side-clinical dl { display: grid; grid-template-columns: auto 1fr; gap: 6px 12px; margin: 0; font-size: 13.5px; }
+.side-clinical dl { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 6px 12px; margin: 0; font-size: 13.5px; }
 .side-clinical dt { color: var(--text-secondary); font-weight: 600; white-space: nowrap; }
-.side-clinical dd { margin: 0; }
+.side-clinical dd { margin: 0; min-width: 0; overflow-wrap: anywhere; }
 .start-here { margin: 6px 0 14px; }
 .start-here h2 { margin: 0 0 8px; font-size: var(--text-caption); letter-spacing: .07em; text-transform: uppercase; color: var(--text-secondary); }
 .az { display: flex; flex-wrap: wrap; gap: 4px; margin: 0 0 12px; }
@@ -410,7 +423,7 @@ span.src { font-size: 10.5px; font-weight: 600; color: var(--text-secondary); le
 .ix-card { border: 1px solid var(--border); border-radius: 12px; padding: 14px 16px; background: var(--surface); }
 .ix-card header { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin-bottom: 8px; }
 .ix-card header h3 { margin: 0; font-size: 16px; flex: 1 1 auto; }
-dl.ix { display: grid; grid-template-columns: 160px 1fr; gap: 5px 12px; margin: 0; font-size: 13.5px; }
+dl.ix { display: grid; grid-template-columns: 160px minmax(0, 1fr); gap: 5px 12px; margin: 0; font-size: 13.5px; }
 dl.ix dt { color: var(--text-secondary); font-weight: 600; }
 dl.ix dd { margin: 0; }
 
@@ -471,7 +484,7 @@ dl.ix dd { margin: 0; }
 .classes li .chips-inline { margin-top: 4px; }
 .tax-area { margin: 26px 0; }
 .tax-area h3 { margin: 18px 0 4px; }
-.code { white-space: nowrap; }
+.code { white-space: normal; overflow-wrap: anywhere; }
 .code abbr { text-decoration: none; color: var(--status-ok); }
 .grid-table th.mono, .kv th.mono { font-family: var(--mono); }
 
@@ -560,12 +573,12 @@ dl.ix dd { margin: 0; }
 }
 
 /* ================================================================== 16. responsive */
-@media (max-width: 1000px) {
+@media (max-width: 1080px) {
   .nav .menu { grid-template-columns: repeat(2, 1fr); }
   .footer-top { grid-template-columns: 1fr 1fr; }
   .footer-brand { grid-column: 1 / -1; }
 }
-@media (max-width: 1000px) {
+@media (max-width: 1080px) {
   .site-header .wrap { gap: 10px; }
   .hsearch { max-width: none; }
   .menu-toggle { display: inline-grid; }
@@ -582,7 +595,8 @@ dl.ix dd { margin: 0; }
   .hsearch .hsearch-results { position: absolute; left: 8px; right: 8px; width: auto; top: calc(var(--header-h) + 4px); max-height: 70vh; }
   .hsearch .hsearch-results .r-sub { white-space: normal; }
   .hero { grid-template-columns: 1fr; padding-top: 28px; gap: 28px; }
-  .two { grid-template-columns: 1fr; }
+  .two { grid-template-columns: minmax(0, 1fr); }
+  .two > * { min-width: 0; }
   .aside { position: static; }
   .list { columns: 1; }
 }

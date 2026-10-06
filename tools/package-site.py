@@ -48,7 +48,7 @@ SECTION_GROUP = {"anatomy": "anatomy", "systems": "anatomy",
 PAGES = {"": "core", "explorer/": "core", "tools/": "core", "tools/drug-interaction-checker/": "core",
          "editorial/drug-interaction-methodology/": "core", "about/": "core", "editorial-policy/": "core",
          "medical-review-policy/": "core", "references-policy/": "core", "corrections-policy/": "core",
-         "disclaimer/": "core", "contact/": "core",
+         "disclaimer/": "core", "contact/": "core", "privacy/": "core",
          "anatomy/": "anatomy", "systems/": "anatomy", "organs/": "anatomy",
          "medical-terms/": "learning", "study/": "learning"}
 NOINDEX_PAGES = ["search/", "roadmap/"]          # prerendered, linked, but kept out of the sitemaps

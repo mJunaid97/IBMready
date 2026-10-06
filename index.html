@@ -6,7 +6,7 @@
   <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self'; connect-src 'self'; frame-src 'self'; worker-src 'self' blob:; object-src 'none'; base-uri 'self'; form-action 'self'">
   <meta name="referrer" content="strict-origin-when-cross-origin">
   <title>Anatomy Nexus | Interactive Human Anatomy &amp; Medical Knowledge</title>
-  <meta name="description" content="Explore interactive human anatomy and learn how body structures connect with physiology, symptoms, conditions, medical tests, imaging, procedures and medications.">
+  <meta name="description" content="Interactive 3D human anatomy linked to physiology, symptoms, conditions, tests, imaging, procedures and medicines, with sourced educational pages.">
   <link rel="icon" href="favicon.ico" sizes="32x32">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <meta name="theme-color" content="#0B2D45">
@@ -21,15 +21,16 @@
     <div>
       <div class="eyebrow">Interactive anatomy · clinical knowledge · learning</div>
       <h1>Explore the Human Body. Understand Medicine.</h1>
-      <p class="lead">Anatomy Nexus connects interactive 3D anatomy with physiology, symptoms, conditions, medical tests, imaging, procedures, medications and learning. Every page names the organs and structures it concerns, so you can move from a symptom to the anatomy behind it, to the condition, the test and the treatment.</p>
+      <p class="lead">Interactive 3D anatomy connected to physiology, symptoms, conditions, tests, imaging, procedures and medicines. Start from a structure or a symptom and follow the links either way.</p>
       <form class="hero-search" action="search/" role="search">
         <label class="hero-field"><span class="hsearch-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="m20 20-4.3-4.3"/></svg></span><input name="q" type="search" placeholder="Search anatomy, symptoms, conditions, tests, medications…" aria-label="Search Anatomy Nexus"></label>
         <button class="btn" type="submit">Search</button>
       </form>
-      <p class="hero-note">Try <a href="anatomy/">the heart</a>, chest pain, ECG, MRI, statins or CPR.</p>
-      <div class="actions">
-        <a class="btn btn-primary btn-lg" href="explorer/">Explore the Human Body</a>
-        <a class="btn btn-lg" href="search/">Search Medical Knowledge</a>
+      <p class="hero-note">Try <a href="anatomy/heart/">the heart</a>, <a href="symptoms/chest-pain/">chest pain</a>, <a href="tests/ecg/">ECG</a>, <a href="imaging/mri/">MRI</a>, <a href="drug-classes/statins/">statins</a> or <a href="first-aid/cpr/">CPR</a>.</p>
+      <div class="actions start-paths" aria-label="Where to start">
+        <a class="btn btn-primary btn-lg" href="explorer/">Explore in 3D</a>
+        <a class="btn btn-lg" href="anatomy/">Learn a topic</a>
+        <a class="btn btn-lg" href="study/">Test yourself</a>
       </div>
       <div class="stats" id="stats">
         <div class="stat"><b>2,299</b><span>modelled pieces</span></div>
@@ -45,11 +46,10 @@
   <div class="grid grid-3" id="hubs"></div>
 
   <h2>Popular pages</h2>
-  <p class="lead">A few of the most-asked-about entities, each written to the same template: what it is, where it sits, why it matters, what it connects to, how to explore it further and which sources support it.</p>
   <div class="chips chips-lg" id="featured"></div>
 
   <h2>Then follow the links into medicine</h2>
-  <p class="lead">Every clinical page names the organs and structures it concerns, so a knee pain page leads to the femur, tibia and menisci in 3D, to osteoarthritis, to the X-ray and MRI that show it, to knee replacement and to the painkillers used.</p>
+  <p class="lead">A knee pain page leads to the femur, tibia and menisci in 3D, to osteoarthritis, to the X-ray and MRI that show it, to knee replacement and to the painkillers used.</p>
   <div class="grid grid-3 type-grid" id="types"></div>
 
   <h2>Everyday and emergency knowledge</h2>

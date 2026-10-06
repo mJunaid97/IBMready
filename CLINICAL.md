@@ -93,7 +93,7 @@ A record with `bName` may also carry `bAgents`: the individual medicines the nam
 is matched only through the duplicate-ingredient check. Members listed on a class page that have
 no medication page become named substances too, so a class-level record and a duplication rule can
 be applied to them, but only when at least one record can apply (otherwise every result would be
-"no known interaction" for lack of data). The compiler also attaches to every record the
+"no matching record" for lack of data: a dataset miss, never a finding of safety). The compiler also attaches to every record the
 knowledge-graph links the checker shows: the two drug classes, the organs both medicines share,
 the anatomy and physiology of the sourced mechanism (`MECHANISM_LINKS`) and the test, biomarker or
 physiology page of each monitoring item (`MONITORING_LINKS`, then exact name or alias); every id
@@ -110,7 +110,7 @@ entry to canonical ingredients (brand → medicine; product → ingredients; nam
 **every unique pair** of entries across every pair of their ingredients (a medicine–medicine record;
 a class record applied only to a member of that class, as the source states; a record that names
 the substance), reports the same ingredient from two entries and therapeutic duplication within a
-class whose `duplicationRule` is set, lists the pairs with no record under "No known interaction
+class whose `duplicationRule` is set, lists the pairs with no record under "No matching record in this dataset" (and pairs involving a medicine without a page under "Outside this dataset's coverage")
 identified in the available data" followed by "This does not prove that the combination is safe
 for every person…", and never says "safe". Entries that cannot be resolved (including a drug
 class, which cannot be checked as a whole) become warnings; an entry without a page marks the
@@ -128,7 +128,7 @@ severity tiers, mapped in `STATE_TIER` without adding information:
 | `INTERACTION_DOCUMENTED`, `NO_SEVERITY_ASSIGNED` | Severity not graded (never "minor") |
 
 Results are ordered contraindicated → major → moderate → minor → not graded, then duplication, then
-no known interaction; every card carries the tier, the source state, its `severitySource`, the
+no matching record (a dataset miss, never a finding of safety); every card carries the tier, the source state, its `severitySource`, the
 sources and the review status. The tool page is indexable with a fixed canonical; `?drugs=` (or
 `?drug=` from a medication page's *Check interactions* section) pre-selects medicines and is the only
 place a selection lives. Analytics events carry counts and tiers only, and the page URL is reported
@@ -146,6 +146,54 @@ Every entity, interaction record and comparison carries `review.status`, one of 
 against the cited sources; not yet clinically reviewed", and no page implies clinician review
 where none occurred. Reviewer metadata (name, credentials, role, jurisdiction, scope, date) is
 added under `review` when a review happens and is shown in the editorial block.
+
+The page's editorial block maps the statuses onto four reader-facing states: **Draft** (`draft`,
+`source-ingested`), **Source checked · pending clinical review** (`source-verified`, `editorial-review`),
+**In clinical review** (`clinical-review`) and **Clinically reviewed** (`approved`, `published`). A reviewer's
+name, credentials and the approval date appear only when `review.reviewedAt` and `review.reviewer.name` are
+both recorded; JSON-LD `lastReviewed` is emitted under the same condition and never otherwise. "Sources
+checked" (the entity's `updated` date, the editorial check against the cited sources) is a separate date from
+the clinical approval and is labelled as such.
+
+### 5.1 Quarantined relationships
+
+A structured drug–condition statement (`conditionCautions[]`) may carry `status: "quarantined"`. It stays in
+the data with a `reviewNote` and a `proposed` correction (relationship, factors, condition subtype,
+formulation, route, jurisdiction, source, `requiresClinicalApproval`), but it is excluded from the page, from
+the implied condition links and from the graph, and it is listed in the `quarantined_relationship` review
+queue. The build fails when an *active* contraindication is keyed to a condition the medicine is licensed for
+unless the record names its `qualifier` or `conditionSubtype`: a relationship at the level of a whole
+condition cannot contradict the indications table. Active cautions may also carry `jurisdiction`,
+`formulation` and `route`, shown on the page.
+
+### 5.2 Guideline editions for first-aid sequences
+
+A first-aid topic whose steps follow a dated guideline edition carries `guidance` (`basedOn`, `population`,
+`jurisdiction`, `accessed`, `status`, `note`, `currentResource`) and `instructionsStatus`
+(`current` | `pending-recheck` | `superseded`). Anything other than `current` renders an interim notice
+above the steps that points to the current official resource, labels the sequence as under review, lists the
+topic in the `guidance_recheck` queue and withholds the topic from the derived quiz and viva items. Source
+version, access date, article update date and clinical approval are four different facts and are shown as
+such.
+
+### 5.3 Derived learning content
+
+Quiz, flashcard and viva items are generated at runtime from entity fields. The compiler records
+`derived.fingerprint` (a hash of the fields the items are built from: name, summary, what, definition, why,
+howItWorks, keyFacts, causes, complications, diagnosis and the step titles) and `derived.status`:
+`withheld` (instructions under review or a draft), `approved` (the fingerprint equals `derivedApproved`
+recorded on the entity when the items were approved) or `unapproved`. Editing a source article changes the
+fingerprint, so previously approved items fall back to `unapproved` until re-approved.
+
+### 5.4 Names, synonyms and search terms
+
+`aliases` are exact synonyms and are shown as "Also known as" and as JSON-LD `alternateName`;
+`abbreviations` are shown with them; `searchTerms` are retrieval aids only (a related term, a part, a
+subtype, a complication, a class name) that make a page findable without presenting the term as a synonym;
+`urlAliases` are redirect slugs, and one that names a drug class is not fed to search as a word for the
+medicine. A medication's `routeIds` and `dosageFormIds` are the only route and dosage-form fields rendered;
+`routeNote` and `regimenNote` (formerly `routes` and `forms`) are free text from the cited reference, the
+latter shown as "Usual preparations" and never as a dose for an individual.
 
 ## 6. Adding content
 

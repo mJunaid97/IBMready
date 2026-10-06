@@ -41,7 +41,7 @@ export const TYPES = {
   health:         { name: 'Health',        singular: 'Health topic',     dir: 'health',       page: 'topic.html',      field: 'health',      icon: 'health',      descriptor: 'Effects on the Body & Guidance', blurb: 'Exercise, sleep, nutrition, weight, smoking, alcohol and hydration, explained through the organs they act on.' },
 };
 export const TYPE_ORDER = ['conditions', 'symptoms', 'physiology', 'tests', 'biomarkers', 'imaging', 'procedures', 'medications', 'drug-classes', 'targets', 'first-aid', 'health'];
-export const TYPE_LABEL = { structure: 'Structure', organ: 'Anatomy', system: 'Body system', region: 'Region', term: 'Term', physiology: 'Physiology', symptoms: 'Symptom', conditions: 'Condition', tests: 'Test', biomarkers: 'Biomarker', imaging: 'Imaging', procedures: 'Procedure', medications: 'Medication', 'drug-classes': 'Drug class', targets: 'Drug target', 'first-aid': 'First aid', health: 'Health', product: 'Product', substance: 'Named substance',
+export const TYPE_LABEL = { structure: '3D structure · opens the explorer', organ: 'Anatomy article', system: 'Body system', region: 'Region', term: 'Term', physiology: 'Physiology', symptoms: 'Symptom', conditions: 'Condition', tests: 'Test', biomarkers: 'Biomarker', imaging: 'Imaging', procedures: 'Procedure', medications: 'Medication', 'drug-classes': 'Drug class', targets: 'Drug target', 'first-aid': 'First aid', health: 'Health', product: 'Product', substance: 'Named substance',
   'test-category': 'Test category', 'test-concept': 'Test concept (catalogued)', 'class-concept': 'Drug class (catalogued)', 'medication-area': 'Therapeutic area' };
 /** Search-result families, used to tint the type tag: what it is in the body, what medicine does with it, how to learn it. */
 export const TYPE_KIND = { structure: 'anatomy', organ: 'anatomy', system: 'anatomy', region: 'anatomy', conditions: 'clinical', symptoms: 'clinical', tests: 'clinical', biomarkers: 'clinical', imaging: 'clinical', procedures: 'clinical', medications: 'clinical', 'drug-classes': 'clinical', targets: 'clinical', product: 'clinical', substance: 'clinical', term: 'learn', physiology: 'learn', 'first-aid': 'learn', health: 'learn', 'test-category': 'clinical', 'test-concept': 'clinical', 'class-concept': 'clinical', 'medication-area': 'clinical' };
@@ -237,7 +237,13 @@ export function renderHeader(active) {
     document.body.insertAdjacentHTML('afterbegin', html);
   }
   const main = document.querySelector('main'); if (main && !main.id) main.id = 'main';
-  document.getElementById('menu-toggle').addEventListener('click', (e) => { const open = document.getElementById('site-nav').classList.toggle('is-open'); e.currentTarget.setAttribute('aria-expanded', String(open)); });
+  const toggle = document.getElementById('menu-toggle'), nav = document.getElementById('site-nav');
+  const setMenu = (open) => { nav.classList.toggle('is-open', open); toggle.setAttribute('aria-expanded', String(open)); };
+  toggle.addEventListener('click', () => setMenu(!nav.classList.contains('is-open')));
+  // the menu is a disclosure, not a modal dialog: Escape and clicks outside close it and focus returns to the button
+  document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && nav.classList.contains('is-open')) { setMenu(false); toggle.focus(); } });
+  document.addEventListener('click', (e) => { if (nav.classList.contains('is-open') && !nav.contains(e.target) && !toggle.contains(e.target)) setMenu(false); });
+  nav.addEventListener('click', (e) => { if (e.target.closest('a')) setMenu(false); });
   document.getElementById('theme-btn').addEventListener('click', toggleTheme);
   bindHeaderSearch();
   bindFacades();
@@ -252,7 +258,17 @@ function loadAnalytics() {
   window.gtag = function () { window.dataLayer.push(arguments); };
   // The page URL is reported without its query string: a search term (/search/?q=) or a medicine list on the interaction
   // checker (?drugs=) can be health-related data and is never sent to a third party.
-  window.gtag('js', new Date()); window.gtag('config', id, { send_page_view: true, page_location: location.origin + location.pathname });
+  // Only origin + path ever reach the tag: not the query string (a search term on /search/?q=, a medicine list on the
+  // checker's ?drugs=) and not the fragment (a selected structure in the explorer). The referrer is reduced the same way,
+  // and the same sanitised values are re-set after every history change so the tag's own history-based page views
+  // cannot pick up a query string. Google signals and ad personalisation are off.
+  const clean = (u) => { try { const x = new URL(u); return x.origin + x.pathname; } catch { return ''; } };
+  const setPage = () => window.gtag('set', { page_location: clean(location.href), page_referrer: clean(document.referrer) });
+  setPage();
+  window.gtag('js', new Date());
+  window.gtag('config', id, { send_page_view: true, page_location: clean(location.href), page_referrer: clean(document.referrer), allow_google_signals: false, allow_ad_personalization_signals: false });
+  for (const m of ['pushState', 'replaceState']) { const orig = history[m]; history[m] = function (...a) { const r = orig.apply(this, a); try { setPage(); } catch {} return r; }; }
+  window.addEventListener('popstate', setPage);
   if (!document.querySelector('script[src^="https://www.googletagmanager.com/gtag/js"]')) {
     const s = document.createElement('script'); s.async = true; s.src = 'https://www.googletagmanager.com/gtag/js?id=' + encodeURIComponent(id); document.head.appendChild(s);
   }
@@ -272,7 +288,7 @@ export function renderFooter() {
       ${col('Anatomy', [['Anatomy A–Z', link.page('anatomy')], ['Body systems', link.page('systems')], ['Organs by system', link.page('organs')], ['3D explorer', link.explorer()], ['Physiology', typeLink('physiology')], ['Medical terms', link.page('medical-terms')]])}
       ${col('Clinical', [['Symptoms', typeLink('symptoms')], ['Conditions', typeLink('conditions')], ['Medical tests', typeLink('tests')], ['Biomarkers', typeLink('biomarkers')], ['Imaging', typeLink('imaging')], ['Procedures', typeLink('procedures')], ['First aid', typeLink('first-aid')], ['Health', typeLink('health')]])}
       ${col('Medicines', [['Medications', typeLink('medications')], ['Drug classes', typeLink('drug-classes')], ['Drug targets', typeLink('targets')], ['Drug Interaction Checker', link.checker()], ['Clinical tools', link.tools()], ['Comparisons', link.compare()], ['Study tools', link.page('study')]])}
-      ${col('About', [['About', link.page('about')], ['Editorial policy', link.page('editorial-policy')], ['Medical review policy', link.page('medical-review-policy')], ['References policy', link.page('references-policy')], ['Corrections policy', link.page('corrections-policy')], ['Disclaimer', link.page('disclaimer')], ['Contact', link.page('contact')], ['Roadmap', link.page('roadmap')]])}
+      ${col('About', [['About', link.page('about')], ['Privacy', link.page('privacy')], ['Editorial policy', link.page('editorial-policy')], ['Medical review policy', link.page('medical-review-policy')], ['References policy', link.page('references-policy')], ['Corrections policy', link.page('corrections-policy')], ['Disclaimer', link.page('disclaimer')], ['Contact', link.page('contact')], ['Roadmap', link.page('roadmap')]])}
     </div>
     <div class="footer-bottom">
       <p>© ${esc(year)} ${esc(BRAND)} · <span class="site-version" title="${esc(BUILD ? 'build ' + BUILD : 'development copy')}">v${esc(VERSION)}${BUILD ? ' · ' + esc(BUILD.slice(0, 7)) : ''}</span></p>
@@ -386,7 +402,10 @@ function bindHeaderSearch() {
   input.addEventListener('input', () => {
     clearTimeout(t);
     const q = input.value.trim(); if (!q) { close(); return; }
-    t = setTimeout(async () => { entries = entries || await searchEntries(); results = runSearch(entries, q, 8); active = -1; render(); }, 80);
+    t = setTimeout(async () => {
+      if (!entries) { list.innerHTML = '<li class="r-empty" aria-busy="true">Loading the search index…</li>'; list.hidden = false; entries = await searchEntries().catch(() => []); }
+      if (input.value.trim() !== q) return;   // a newer keystroke owns the list now
+      results = runSearch(entries, q, 8); active = -1; render(); }, 80);
   });
   input.addEventListener('blur', () => setTimeout(close, 150));
   input.addEventListener('focus', () => { if (input.value.trim() && results.length) render(); });

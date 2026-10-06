@@ -3,8 +3,8 @@
 ## Threat model
 
 The platform is a static site: HTML, CSS, ES modules and JSON, with no server-side code, no
-accounts, no cookies and no third-party scripts. Everything the browser loads comes from the
-same origin. The remaining risks are cross-site scripting through content, unsafe outbound links,
+accounts and no forms. The only third-party script is Google Analytics 4, loaded by our own code when a
+measurement id is configured (it is, see below); everything else the browser loads comes from the same origin. The remaining risks are cross-site scripting through content, unsafe outbound links,
 clickjacking of the embedded explorer, and supply-chain issues in the build tooling.
 
 ## Controls
@@ -47,7 +47,10 @@ sensitive. Please include the page URL and steps to reproduce.
 
 ## Third-party scripts
 
-None by default. If a Google Analytics 4 measurement id is set in `content/site.json`, the packaged site loads
+Google Analytics 4 is configured (`content/site.json` → `analytics.ga4`). The packaged site loads
 `https://www.googletagmanager.com/gtag/js` from its own loader (`site/site.js`, no inline script) and the
 Content-Security-Policy is widened only for Google's tag and collection hosts. Leaving the id empty keeps the strict
-policy with no external script.
+policy with no external script. Our loader reports every page as origin + path only (no query string or fragment,
+so no search terms, medicine lists or selected structures), reduces the referrer the same way, re-applies those values
+after history changes, and turns Google signals and ad personalisation off. The checker's events carry counts and
+severity tiers only. The privacy page (`privacy/`) describes this behaviour for readers.

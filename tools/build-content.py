@@ -38,7 +38,8 @@ Descriptions in structures.json are keyed by a side-stripped, lower-case base na
 entry serves both the left and the right structure; pattern generators fill in families such
 as vertebrae, ribs, phalanges, teeth and segmental vessels.
 """
-import json, os, re, sys, collections
+import json
+import hashlib, os, re, sys, collections
 from urllib.parse import urlsplit
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import taxonomy as TX   # vocabularies, taxonomies, terminology, drug-name rules, edges, review queues (tools/taxonomy.py)
@@ -149,6 +150,8 @@ SOURCE_TYPES = ["regulatory", "guidance", "reference", "literature", "other"]
 INDICATION_STATUSES = ["licensed", "guideline-supported", "off-label", "historical", "unverified"]
 WARNING_TYPES = ["boxed", "contraindication", "special", "precaution", "monitoring", "pregnancy", "lactation", "renal", "hepatic", "driving", "other"]
 CAUTION_TYPES = ["contraindication", "warning", "precaution", "dose-or-monitoring", "other"]
+CAUTION_STATUSES = ["active", "quarantined"]          # quarantined: kept in the data for review, excluded from the page, links and graph
+INSTRUCTION_STATUSES = ["current", "pending-recheck", "superseded"]   # first-aid step sequences against their cited guideline edition
 INTERACTION_TYPES = ["drug-drug", "drug-class", "therapeutic-duplication"]
 MECHANISMS = ["CYP inhibition", "CYP induction", "transporter inhibition", "transporter induction", "reduced absorption", "chelation", "altered gastric pH", "protein binding",
               "renal clearance", "QT prolongation", "additive hypotension", "additive bleeding risk", "additive CNS depression", "serotonergic effect", "hyperkalaemia risk",
@@ -227,7 +230,7 @@ def enrich_references(refs, accessed, where, errors):
         name, tier = source_of(r["url"]); jur, stype = host_meta(r["url"])
         rec = {"title": r["title"], "url": r["url"], "source": r.get("source") or name, "tier": r.get("tier") or tier, "jurisdiction": r.get("jurisdiction") or jur,
                "type": r.get("type") or stype, "accessed": r.get("accessed") or accessed}
-        for k in ("section", "published", "revised", "note"):
+        for k in ("section", "published", "revised", "edition", "note"):
             if r.get(k): rec[k] = r[k]
         if rec["jurisdiction"] not in JURISDICTIONS: errors.append(f"{where}: reference jurisdiction '{rec['jurisdiction']}' not in {JURISDICTIONS}")
         if rec["type"] not in SOURCE_TYPES: errors.append(f"{where}: reference type '{rec['type']}' not in {SOURCE_TYPES}")
@@ -360,10 +363,19 @@ def validate_clinical(key, eid, e, ids, errors):
         for su in e.get("supplementInteractions") or []:
             if not su.get("with") or not su.get("effect"): errors.append(f"{where}: supplement interaction needs 'with' and 'effect'")
             su["source"] = one_source(su, f"{where} supplement '{su.get('with')}'", errors, acc)
+        treated = {i.get("condition") for i in e.get("indications") or [] if i.get("condition") and i.get("status") in ("licensed", "guideline-supported")}
         for c in e.get("conditionCautions") or []:
             check_enum(c.get("type"), CAUTION_TYPES, where, errors, "conditionCaution.type")
+            check_enum(c.get("status", "active"), CAUTION_STATUSES, where, errors, "conditionCaution.status")
+            c["status"] = c.get("status", "active")
             if c.get("condition") and c["condition"] not in ids.get("conditions", set()): errors.append(f"{where}: caution condition '{c['condition']}' unknown")
             if not c.get("condition") and not c.get("text"): errors.append(f"{where}: caution needs a condition id or text")
+            check_enum(c.get("jurisdiction", "GLOBAL"), JURISDICTIONS, where, errors, "conditionCaution.jurisdiction")
+            # a contraindication keyed to a condition the medicine is licensed for contradicts the indications table unless it
+            # names the subtype or clinical state it applies to (e.g. unstable rather than stable angina); such a record is
+            # quarantined from the page and queued for clinical review instead of being guessed at
+            if c["status"] == "active" and c.get("type") == "contraindication" and c.get("condition") in treated and not (c.get("qualifier") or c.get("conditionSubtype")):
+                errors.append(f"{where}: contraindication for '{c['condition']}' contradicts a licensed indication for the same condition; add a qualifier/conditionSubtype or quarantine it (status: quarantined)")
             c["source"] = one_source(c, f"{where} caution '{c.get('condition') or c.get('text')}'", errors, acc)
         for l in e.get("labEffects") or []:
             if l.get("biomarker") and l["biomarker"] not in ids.get("biomarkers", set()): errors.append(f"{where}: lab effect biomarker '{l['biomarker']}' unknown")
@@ -384,7 +396,7 @@ def validate_clinical(key, eid, e, ids, errors):
         se["source"] = one_source(se, f"{where} sideEffects", errors, acc)
         pk = e.get("pharmacokinetics") or {}
         pk["source"] = one_source(pk, f"{where} pharmacokinetics", errors, acc)
-        missing = [f for f in ("brands", "otc", "routes", "targets", "pathway", "indications", "warnings", "contraindications", "monitoringPlan", "populations", "conditionCautions", "labEffects", "understand", "mechanismDetail", "alcohol") if not e.get(f)]
+        missing = [f for f in ("brands", "otc", "routeIds", "targets", "pathway", "indications", "warnings", "contraindications", "monitoringPlan", "populations", "conditionCautions", "labEffects", "understand", "mechanismDetail", "alcohol") if not e.get(f)]
         if missing: errors.append(f"{where}: full-depth medication is missing {missing}")
         pops = set((e.get("populations") or {}).keys())
         if pops != {"pregnancy", "lactation", "children", "older", "renal", "hepatic"}: errors.append(f"{where}: populations must cover pregnancy, lactation, children, older, renal, hepatic (has {sorted(pops)})")
@@ -764,7 +776,8 @@ def compile_knowledge(atlas, out_organs, systems, terms):
                     for b_ in m_.get("biomarkers") or []: imply("biomarkers", b_)
                 for l_ in e.get("labEffects") or []: imply("biomarkers", l_.get("biomarker")); imply("tests", l_.get("test"))
                 for i_ in e.get("indications") or []: imply("conditions", i_.get("condition"))
-                for c_ in e.get("conditionCautions") or []: imply("conditions", c_.get("condition"))
+                for c_ in e.get("conditionCautions") or []:
+                    if c_.get("status", "active") == "active": imply("conditions", c_.get("condition"))
             # ---- typed links
             links = collections.defaultdict(list)
             field_of = {v: k for k, v in LINK_FIELDS.items() if v is not SAME and k != "associated"}   # target type -> link field
@@ -794,6 +807,28 @@ def compile_knowledge(atlas, out_organs, systems, terms):
             check_enum(rv["status"], REVIEW_STATUSES, f"{key}/{eid}", errors, "review.status")
             for j in rv["jurisdictions"]: check_enum(j, JURISDICTIONS, f"{key}/{eid}", errors, "review.jurisdictions")
             e["review"] = rv
+            for st_ in e.get("searchTerms") or []:
+                if not isinstance(st_, str) or not st_.strip(): errors.append(f"{key}/{eid}: searchTerms must be non-empty strings")
+            # ---- first-aid step sequences state which guideline edition they follow and whether that is current
+            if key == "first-aid":
+                check_enum(e.get("instructionsStatus", "current"), INSTRUCTION_STATUSES, f"{key}/{eid}", errors, "instructionsStatus")
+                e["instructionsStatus"] = e.get("instructionsStatus", "current")
+                g = e.get("guidance")
+                if g:
+                    for f in ("basedOn", "jurisdiction", "accessed", "status"):
+                        if not g.get(f): errors.append(f"{key}/{eid}: guidance needs '{f}'")
+                    check_enum(g.get("status"), INSTRUCTION_STATUSES, f"{key}/{eid}", errors, "guidance.status")
+                    if g.get("status") != "current" and not (g.get("currentResource") or {}).get("url"): errors.append(f"{key}/{eid}: guidance that is not current must name the current official resource")
+                    if g.get("status") != e["instructionsStatus"]: errors.append(f"{key}/{eid}: guidance.status and instructionsStatus disagree")
+                elif e["instructionsStatus"] != "current": errors.append(f"{key}/{eid}: instructionsStatus '{e['instructionsStatus']}' needs a guidance record")
+            # ---- derived learning content (quiz, flashcard and viva items are built from these fields at runtime): a
+            # fingerprint lets a change in the source article be detected, and an item is only 'approved' when the
+            # fingerprint matches the one recorded at approval (derivedApproved)
+            fp_src = {k: e.get(k) for k in ("name", "summary", "what", "definition", "why", "howItWorks", "keyFacts", "causes", "complications", "diagnosis")}
+            fp_src["steps"] = [s_.get("title") for s_ in e.get("steps") or [] if isinstance(s_, dict)]
+            fp = hashlib.sha1(json.dumps(fp_src, sort_keys=True, ensure_ascii=False).encode("utf-8")).hexdigest()[:12]
+            withheld = e.get("instructionsStatus", "current") != "current" or rv["status"] in ("draft", "source-ingested", "needs-review", "archived")
+            e["derived"] = {"fingerprint": fp, "approvedFingerprint": e.get("derivedApproved"), "status": "withheld" if withheld else ("approved" if e.get("derivedApproved") == fp else "unapproved")}
             validate_clinical(key, eid, e, ids, errors)
     # ---- attach backlinks (reverse edges) and the indexability verdict to every entity
     for key, T in types.items():
@@ -869,18 +904,30 @@ def build_search_index(atlas, out_organs, out_regions, terms, know):
     entries = []
     sysname = {s["id"]: s["name"] for s in atlas["systems"]}
     unslug = lambda al: [a.replace("-", " ") for a in al or []]
-    for s in atlas["systems"]: entries.append(["system", s["id"], s["name"], "", f"{s['count']} pieces"])
-    for o in out_organs: entries.append(["organ", o["id"], o["name"], "|".join(o.get("aliases", []) + unslug(o.get("urlAliases"))), (f"{len(o['structures'])} structures" if o["structures"] else "anatomy article") + f" · {sysname.get(o['system'], '')}"])
+    for s in atlas["systems"]:   # a hidden-by-default layer (female body, surgical anatomy) is labelled as such, not as a body system of the reference body
+        kind = "surgical anatomy layer" if s.get("layer") == "gender-affirming" else "atlas layer" if s.get("hidden") else "body system"
+        entries.append(["system", s["id"], s["name"], "|".join(s.get("searchTerms") or []), f"{kind} · {s['count']} pieces"])
+    for o in out_organs: entries.append(["organ", o["id"], o["name"], "|".join(o.get("aliases", []) + unslug(o.get("urlAliases")) + list(o.get("searchTerms") or [])), (f"{len(o['structures'])} structures" if o["structures"] else "anatomy article") + f" · {sysname.get(o['system'], '')}"])
     for r in out_regions: entries.append(["region", r["id"], r["name"], "", f"{len(r['structures'])} structures"])
     for s in atlas["structures"]: entries.append(["structure", s["id"], s["name"], "", sysname.get(s["system"], s["system"])])
     catname = {c["id"]: c["name"] for c in terms.get("categories", [])}
     for t in terms["terms"]: entries.append(["term", t["id"], t["term"], "", catname.get(t["category"], "Term")])
     extra = TX.page_aliases_from_catalogue(know["conceptPage"])
+    class_terms = set()
+    for cid, c in know["types"].get("drug-classes", {}).get("items", {}).items():
+        for w in [c["name"], cid.replace("-", " ")] + list(c.get("aliases") or []) + list(c.get("searchTerms") or []): class_terms.add(w.lower())
     for key, T in know["types"].items():
         for eid, e in T["items"].items():
             brands = [b for v in (e.get("brands") or {}).values() for b in v]
-            names = e.get("aliases", []) + list(e.get("abbreviations") or []) + ([e["canonicalName"]] if e.get("canonicalName") else []) + list(e.get("ingredientVariants") or []) + brands + unslug(e.get("urlAliases")) + extra.get((key, eid), [])
-            entries.append([key, eid, e["name"], "|".join(x for x in dict.fromkeys(names) if x.lower() != e["name"].lower()), (lead_of(e) or "")[:110]])
+            # url aliases are redirect slugs; one that names a drug class (metoprolol's /beta-blocker/) must not make the search
+            # engine offer the medicine for the class's name. Search terms are retrieval aids, never shown as synonyms.
+            url_words = [w for w in unslug(e.get("urlAliases")) if not (key == "medications" and w.lower() in class_terms)]
+            names = e.get("aliases", []) + list(e.get("abbreviations") or []) + ([e["canonicalName"]] if e.get("canonicalName") else []) + list(e.get("ingredientVariants") or []) + brands + url_words + list(e.get("searchTerms") or []) + extra.get((key, eid), [])
+            seen = set(); uniq = []
+            for x in names:
+                if x.lower() == e["name"].lower() or x.lower() in seen: continue
+                seen.add(x.lower()); uniq.append(x)
+            entries.append([key, eid, e["name"], "|".join(uniq), (lead_of(e) or "")[:110]])
     entries.extend(TX.search_entries(know["testCategories"], know["medicationTaxonomy"], know["conceptPage"]))
     for p in know["interactions"]["products"]:
         entries.append(["product", p["id"], p["name"], "|".join(p["aliases"]), "Product: " + " + ".join(i["name"] for i in p["ingredients"])])

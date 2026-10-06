@@ -14,10 +14,24 @@ export function seoTitle(name, descriptor) {
   const full = descriptor ? `${name}: ${descriptor} | ${BRAND}` : `${name} | ${BRAND}`;
   return full.length <= MAX_TITLE || !descriptor ? full : `${name} | ${BRAND}`;
 }
-export function metaDescription(text, max = 155) {
-  let s = String(text || '').replace(/\s+/g, ' ').trim();
+/** A meta description is a complete statement, never a sentence cut off with an ellipsis: the whole sentences of the
+ *  lead that fit, else the lead's first clause, else the caller's fallback (a name-and-type summary). */
+export function metaDescription(text, max = 155, fallback = '') {
+  const s = String(text || '').replace(/\s+/g, ' ').trim();
   if (s.length <= max) return s;
-  s = s.slice(0, max - 1); s = s.replace(/\s+\S*$/, ''); return s.replace(/[,;:\s]+$/, '') + '…';
+  const sentences = s.match(/[^.!?]+[.!?]+(?=\s|$)|[^.!?]+$/g) || [s];
+  let out = '';
+  for (const sen of sentences) { const t = (out + ' ' + sen).trim(); if (t.length > max) break; out = t; }
+  if (out.length >= 60) return out;
+  const first = sentences[0].trim();
+  const cut = Math.max(first.lastIndexOf('; ', max - 1), first.lastIndexOf(': ', max - 1));
+  if (cut >= 60) return first.slice(0, cut).trim() + '.';
+  // a long single sentence: its main clause up to the last comma that leaves a substantive statement, closed as a sentence
+  const comma = first.lastIndexOf(', ', max - 1);
+  if (comma >= 90) { const clause = first.slice(0, comma).replace(/[\s,]+(and|or|but|with|which|that|to|of|the|a|an|in|on|for|by|as)$/i, '').trim(); if (clause.length >= 90) return clause + '.'; }
+  const fb = String(fallback || '').replace(/\s+/g, ' ').trim();
+  if (fb && fb.length <= max) return fb;
+  return out || fb;
 }
 const ORG_ID = () => canonical('') + '#organization';
 const SITE_ID = () => canonical('') + '#website';

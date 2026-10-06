@@ -21,10 +21,12 @@ const BANKS = [
 ];
 async function bank(type, promptOf) {
   const { items } = await loadType(type);
-  return Object.values(items).map(e => ({ id: e.id, name: e.name, prompt: promptOf(e), group: e.category, note: '', href: entityLink(type, e.id) })).filter(x => x.prompt);
+  // an article whose instructions are under guidance review, or that is still a draft, yields no questions (derived.status 'withheld')
+  return Object.values(items).filter(e => e.derived?.status !== 'withheld').map(e => ({ id: e.id, name: e.name, prompt: promptOf(e), group: e.category, note: '', href: entityLink(type, e.id) })).filter(x => x.prompt);
 }
 const box = document.getElementById('termquiz'); const banks = document.getElementById('banks');
 let pool = [], asked = 0, score = 0, current = null, bankId = location.hash === '#terms' ? 'terms' : (new URLSearchParams(location.search).get('bank') || 'terms');
+banks.insertAdjacentHTML('beforebegin', '<p class="small muted" id="study-status">Questions are generated from the site\'s articles, which are checked against their cited sources but not yet independently clinically reviewed. Articles whose instructions are being re-checked against current guidance are left out until approved.</p>');
 banks.innerHTML = BANKS.map(b => `<button class="chip ${b.id === bankId ? 'is-active' : ''}" data-bank="${b.id}">${esc(b.name)}</button>`).join('');
 banks.addEventListener('click', async (e) => { const b = e.target.closest('[data-bank]'); if (!b) return; bankId = b.dataset.bank; for (const x of banks.children) x.classList.toggle('is-active', x === b); await startBank(); });
 const pick = (arr) => arr[Math.floor(Math.random() * arr.length)];
@@ -59,7 +61,7 @@ for (const e of Object.values(conds.items)) {
   if (e.complications?.length) viva.push({ scope: 'conditions', q: `List the complications of ${e.name.toLowerCase()}.`, a: e.complications.join('; '), href: entityLink('conditions', e.id), src: e.name });
   if (e.diagnosis) viva.push({ scope: 'conditions', q: `How is ${e.name.toLowerCase()} diagnosed?`, a: e.diagnosis, href: entityLink('conditions', e.id), src: e.name });
 }
-for (const e of Object.values(fa.items)) { if (e.steps?.length) viva.push({ scope: 'first-aid', q: `${e.name}: what are the steps?`, a: e.steps.map((s, i) => `${i + 1}. ${s.title}`).join(' '), href: entityLink('first-aid', e.id), src: e.name }); if (e.why) viva.push({ scope: 'first-aid', q: `${e.name}: explain the anatomy or physiology behind the first aid.`, a: e.why, href: entityLink('first-aid', e.id), src: e.name }); }
+for (const e of Object.values(fa.items)) { if (e.derived?.status === 'withheld') continue; if (e.steps?.length) viva.push({ scope: 'first-aid', q: `${e.name}: what are the steps?`, a: e.steps.map((s, i) => `${i + 1}. ${s.title}`).join(' '), href: entityLink('first-aid', e.id), src: e.name }); if (e.why) viva.push({ scope: 'first-aid', q: `${e.name}: explain the anatomy or physiology behind the first aid.`, a: e.why, href: entityLink('first-aid', e.id), src: e.name }); }
 const scopes = [['all', 'All'], ['physiology', 'Physiology'], ['conditions', 'Conditions'], ['first-aid', 'First aid']];
 let vscope = 'all'; const vs = document.getElementById('viva-scope'), vl = document.getElementById('viva-list');
 vs.innerHTML = scopes.map(([id, n]) => `<button class="chip ${id === 'all' ? 'is-active' : ''}" data-s="${id}">${n} · ${id === 'all' ? viva.length : viva.filter(v => v.scope === id).length}</button>`).join('') + `<button class="chip" id="viva-shuffle">Shuffle ↻</button>`;

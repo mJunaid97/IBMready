@@ -45,7 +45,7 @@ function terminologyHtml(t) {
 }
 const vn = (vocab, key, id) => esc(vocabName(vocab, key, id));
 const vlist = (vocab, key, ids) => (ids || []).map(id => vn(vocab, key, id)).join(', ');
-export const REVIEW_LABEL = { draft: 'Draft', 'source-ingested': 'Structured from sources, not yet checked', 'source-verified': 'Facts checked against the cited sources; not yet clinically reviewed', 'editorial-review': 'In editorial review', 'clinical-review': 'In clinical review', approved: 'Clinically reviewed and approved', published: 'Published after clinical review', 'needs-review': 'Flagged for re-review', archived: 'Archived' };
+export const REVIEW_LABEL = { draft: 'Draft', 'source-ingested': 'Draft (structured from sources, not yet checked)', 'source-verified': 'Source checked · pending clinical review', 'editorial-review': 'In editorial review', 'clinical-review': 'In clinical review', approved: 'Clinically reviewed and approved', published: 'Published after clinical review', 'needs-review': 'Flagged for re-review', archived: 'Archived' };
 
 // ---------------------------------------------------------------- helpers
 const para = (s) => s ? `<p>${esc(s)}</p>` : '';
@@ -63,10 +63,11 @@ export const safeUrl = (u) => /^https?:\/\/[^\s"'<>]+$/i.test(String(u || '')) ?
 export const src = (r) => r && safeUrl(r.url) ? ` <a class="src" href="${esc(safeUrl(r.url))}" target="_blank" rel="noopener noreferrer" title="${esc(r.title)}${r.section ? ' · ' + esc(r.section) : ''}">${esc(r.jurisdiction || 'source')}</a>` : '';
 
 function nameOf(clinical, type, id) { return clinical.names[type]?.[id] || id; }
-function chips(clinical, type, ids, { max = 40 } = {}) {
+function chips(clinical, type, ids, { max = 12 } = {}) {
   if (!ids || !ids.length) return '';
-  const shown = ids.slice(0, max);
-  return `<div class="chips">${shown.map(id => `<a class="chip" href="${entityLink(type, id)}">${esc(nameOf(clinical, type, id))}</a>`).join('')}${ids.length > max ? `<span class="chip">+${ids.length - max} more</span>` : ''}</div>`;
+  const chip = (id) => `<a class="chip" href="${entityLink(type, id)}">${esc(nameOf(clinical, type, id))}</a>`;
+  const shown = ids.slice(0, max), rest = ids.slice(max);
+  return `<div class="chips">${shown.map(chip).join('')}</div>${rest.length ? `<details class="more-chips"><summary>Show ${rest.length} more ${esc(TYPES[type]?.name?.toLowerCase() || '')}</summary><div class="chips">${rest.map(chip).join('')}</div></details>` : ''}`;
 }
 function inlineChips(clinical, type, ids) { return ids && ids.length ? `<div class="chips chips-inline">${ids.map(id => `<a class="chip" href="${entityLink(type, id)}">${esc(nameOf(clinical, type, id))}</a>`).join('')}</div>` : ''; }
 const entityA = (clinical, type, id) => `<a href="${entityLink(type, id)}">${esc(nameOf(clinical, type, id))}</a>`;
@@ -124,7 +125,7 @@ export function termsHtml(ids, data) {
 }
 export function referencesHtml(refs, title = 'Sources') {
   refs = (refs || []).filter(r => r && safeUrl(r.url)); if (!refs.length) return '';
-  return `<section class="refs"><h2>${esc(title)}</h2><ol class="ref-list">${refs.map(r => `<li><a href="${esc(safeUrl(r.url))}" target="_blank" rel="noopener noreferrer">${esc(r.title)}</a>${r.section ? `<span class="ref-section"> · ${esc(r.section)}</span>` : ''}<span class="ref-meta">${esc(r.source || '')}${r.jurisdiction ? ` · ${esc(r.jurisdiction)}` : ''}${r.tier ? ` · <abbr title="${esc(TIER_LABEL[r.tier] || '')}">tier ${r.tier}</abbr>` : ''}${r.accessed ? ` · accessed ${esc(dateText(r.accessed))}` : ''}</span></li>`).join('')}</ol></section>`;
+  return `<section class="refs"><h2>${esc(title)}</h2><ol class="ref-list">${refs.map(r => `<li><a href="${esc(safeUrl(r.url))}" target="_blank" rel="noopener noreferrer">${esc(r.title)}</a>${r.section ? `<span class="ref-section"> · ${esc(r.section)}</span>` : ''}${r.edition || r.published ? `<span class="ref-section"> · ${esc(r.edition || `published ${r.published}`)}</span>` : ''}<span class="ref-meta">${esc(r.source || '')}${r.jurisdiction ? ` · ${esc(r.jurisdiction)}` : ''}${r.tier ? ` · <abbr title="${esc(TIER_LABEL[r.tier] || '')}">tier ${r.tier}</abbr>` : ''}${r.accessed ? ` · accessed ${esc(dateText(r.accessed))}` : ''}</span></li>`).join('')}</ol><p class="small muted">An access date records when the editorial team last checked a source; it does not mean the guidance is the current edition or that the page has been clinically approved.</p></section>`;
 }
 /** Credibility block: who wrote it, review status, dates and source count. Never invents a reviewer. */
 export function editorialHtml({ updated, references = [], reviewed, kind = 'page', review }) {
@@ -133,8 +134,9 @@ export function editorialHtml({ updated, references = [], reviewed, kind = 'page
   const st = review?.status;
   return `<section class="editorial" aria-label="About this ${esc(kind)}"><h2>About this ${esc(kind)}</h2><dl>
     <dt>Written by</dt><dd><a href="${link.page('about')}">${esc(ed.author || SITE.name)}</a></dd>
-    <dt>Review status</dt><dd>${st ? esc(REVIEW_LABEL[st] || st) : reviewed ? `Reviewed ${esc(dateText(reviewed))}` : 'Not yet independently reviewed'} · <a href="${link.page('medical-review-policy')}">policy</a></dd>
-    ${updated ? `<dt>Last updated</dt><dd><time datetime="${esc(updated)}">${esc(dateText(updated))}</time></dd>` : ''}
+    <dt>Editorial status</dt><dd>${st ? esc(REVIEW_LABEL[st] || st) : reviewed ? `Reviewed ${esc(dateText(reviewed))}` : 'Not yet independently reviewed'} · <a href="${link.page('medical-review-policy')}">policy</a></dd>
+    <dt>Clinical review</dt><dd>${review?.reviewedAt && review?.reviewer?.name ? `Reviewed ${esc(dateText(review.reviewedAt))} by ${esc(review.reviewer.name)}${review.reviewer.credentials ? `, ${esc(review.reviewer.credentials)}` : ''}` : 'Pending: not yet independently reviewed by a qualified clinician'}</dd>
+    ${updated ? `<dt>Sources checked</dt><dd><time datetime="${esc(updated)}">${esc(dateText(updated))}</time> <span class="muted">(editorial check of the cited sources, not a clinical approval)</span></dd>` : ''}
     <dt>Sources</dt><dd>${references.length ? `${references.length} cited${t1 ? `, ${t1} from official health bodies` : ''}${jur.length ? ` · ${esc(jur.join(', '))}` : ''}` : 'Atlas data (BodyParts3D, the Human Reference Atlas and the schematic layers, see Attribution)'} · <a href="${link.page('references-policy')}">how we source</a></dd>
   </dl>${jur.length > 1 ? '<p class="small muted">Guidance and licensed information may differ by country; each fact on this page is marked with the country of its source.</p>' : ''}<p class="small muted">Educational content, not medical advice. <a href="${link.page('disclaimer')}">Disclaimer</a> · <a href="${link.page('corrections-policy')}">Report an error</a></p></section>`;
 }
@@ -157,7 +159,7 @@ const TIER_ICON = {
   duplicate: '<svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="6" cy="8" r="4.2" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="10" cy="8" r="4.2" fill="none" stroke="currentColor" stroke-width="1.6"/></svg>',
   none: '<svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-dasharray="2.6 2.2"/></svg>',
 };
-export const TIER_EXTRA = { duplication: { label: 'Duplication', short: 'Duplication', cls: 'tier-dup', icon: 'duplicate' }, none: { label: 'No known interaction identified', short: 'None identified', cls: 'tier-none', icon: 'none' } };
+export const TIER_EXTRA = { duplication: { label: 'Duplication', short: 'Duplication', cls: 'tier-dup', icon: 'duplicate' }, none: { label: 'No matching record in this dataset', short: 'No record', cls: 'tier-none', icon: 'none' }, outside: { label: 'Outside dataset coverage', short: 'Not fully checked', cls: 'tier-none', icon: 'question' } };
 /** The checker's display severity for a record state or a tier key, as a badge with icon, word and colour. */
 export function tierBadge(tier, { short = false, title = true } = {}) {
   const t = TIERS[tier] || TIER_EXTRA[tier] || TIERS.unknown;
@@ -278,11 +280,10 @@ const T = {
     return `${paras(e.body)}${section('Key facts', kv((e.keyFacts || []).map(k => [esc(k.label), esc(k.value)]), ['Fact', 'Value']))}`;
   },
   symptoms(e, { clinical }) {
-    return `${section('What it is', para(e.what))}
+    return `${e.what && e.what !== lead(e) ? section('What it is', para(e.what)) : ''}
       ${section('Common causes', causes(e.commonCauses))}
       ${section('Less common causes', causes(e.lessCommon))}
       ${e.links?.associated?.length ? section('Often occurs with', inlineChips(clinical, 'symptoms', e.links.associated)) : ''}
-      ${e.urgent?.length ? `<div class="callout urgent"><h2>Seek urgent care if</h2>${list(e.urgent)}</div>` : ''}
       ${e.links?.conditions?.length ? section('Conditions to read about', inlineChips(clinical, 'conditions', e.links.conditions)) : ''}
       ${(e.links?.tests?.length || e.links?.imaging?.length) ? section('How it is investigated', inlineChips(clinical, 'tests', e.links.tests) + inlineChips(clinical, 'imaging', e.links.imaging)) : ''}`;
   },
@@ -294,7 +295,7 @@ const T = {
       ${section('Diagnosis', para(e.diagnosis) + inlineChips(clinical, 'tests', e.links?.tests) + inlineChips(clinical, 'imaging', e.links?.imaging))}
       ${section('Treatment', para(e.treatment) + inlineChips(clinical, 'procedures', e.links?.procedures) + inlineChips(clinical, 'medications', e.links?.medications))}
       ${section('Prevention', para(e.prevention))}
-      ${e.seekCare ? `<div class="callout urgent"><h2>When to seek care</h2><p style="margin:0">${esc(e.seekCare)}</p></div>` : ''}`;
+`;
   },
   tests(e, { clinical, vocab }) {
     const facts = `<dl class="facts">${[['Canonical name', esc(e.canonicalName || '')], ['Abbreviations', esc((e.abbreviations || []).join(', '))], ['Kind', esc(KIND_LABEL[e.kind] || e.kind || '')],
@@ -365,7 +366,7 @@ const T = {
     const brands = e.brands && Object.keys(e.brands).length ? Object.entries(e.brands).map(([j, b]) => `<b>${esc(j)}</b> ${esc(b.join(', '))}`).join(' · ') : (e.brands ? 'No brand names recorded; supplied as the generic medicine' : '');
     const otc = e.regulatory?.length ? '' : e.otc ? Object.entries(e.otc).map(([j, v]) => `<b>${esc(j)}</b> ${esc(v)}`).join(' · ') : '';
     const facts = [['Generic name', esc(e.name)], ['Active ingredient', esc(e.name) + (e.ingredientVariants?.length ? ` <span class="muted">(variants: ${esc(e.ingredientVariants.join(', '))})</span>` : '')], ['Product type', e.productType ? vn(vocab, 'productTypes', e.productType) : ''], ['Drug class', cls ? entityA(clinical, 'drug-classes', cls) : esc(e.class || '')], ['Brand names', brands], ['Prescription status', otc],
-      ['Routes', e.routeIds?.length ? vlist(vocab, 'routes', e.routeIds) + (e.routes?.length ? ` <span class="muted">(${esc(e.routes.join('; '))})</span>` : '') : esc((e.routes || []).join('; '))], ['Dosage forms', e.dosageFormIds?.length ? vlist(vocab, 'dosageForms', e.dosageFormIds) : ''], ['Also known as', esc((e.aliases || []).join(', '))], ['Forms', esc((e.forms || []).join('; '))], ['Onset and duration', esc(e.onset || '')],
+      ['Routes', e.routeIds?.length ? vlist(vocab, 'routes', e.routeIds) : esc((e.routeNote || []).join('; '))], ['Dosage forms', e.dosageFormIds?.length ? vlist(vocab, 'dosageForms', e.dosageFormIds) : ''], ['Also known as', esc((e.aliases || []).join(', '))], ['Usual preparations', e.regimenNote?.length ? esc(e.regimenNote.join('; ')) + ' <span class="muted">(summary of the cited reference, not a prescription)</span>' : ''], ['Onset and duration', esc(e.onset || '')],
       ['Terminology', terminologyHtml(e.terminology)], ...(e.depth === 'full' ? [] : [['Monitoring', esc(e.monitoring || '')]])].filter(([, v]) => v);
     const head = `<dl class="facts">${facts.map(([k, v]) => `<dt>${esc(k)}</dt><dd>${v}</dd>`).join('')}</dl>${availabilityHtml(e, vocab)}`;
     const tail = medicationExtras(e, clinical, ix, vocab, data);
@@ -387,13 +388,14 @@ const T = {
     const contra = (e.contraindications || []).map(c => [esc(c.factor), esc(c.text || ''), esc(c.strength || ''), `${esc(c.jurisdiction || '')}${src(c.source)}`]);
     const mon = (e.monitoringPlan || []).map(m => [esc(m.what), esc(m.why || ''), [...(m.tests || []).map(id => entityA(clinical, 'tests', id)), ...(m.biomarkers || []).map(id => entityA(clinical, 'biomarkers', id))].join(', '), src(m.source)]);
     const pops = Object.entries(e.populations || {}).map(([k, v]) => `<dt>${esc(POP_LABEL[k] || k)}</dt><dd>${esc(v.text)}${src(v.source)}</dd>`).join('');
-    const cautions = (e.conditionCautions || []).map(c => [c.condition ? entityA(clinical, 'conditions', c.condition) : esc(c.factor || ''), esc(CAUTION_TYPE[c.type] || c.type), esc(c.text), src(c.source)]);
+    const activeCautions = (e.conditionCautions || []).filter(c => c.status !== 'quarantined'); const quarantined = (e.conditionCautions || []).length - activeCautions.length;
+    const cautions = activeCautions.map(c => [c.condition ? entityA(clinical, 'conditions', c.condition) + (c.conditionSubtype || c.qualifier ? `<div class="small">${esc(c.conditionSubtype || c.qualifier)}</div>` : '') : esc(c.factor || ''), esc(CAUTION_TYPE[c.type] || c.type), esc(c.text) + (c.formulation || c.route ? ` <span class="muted">(${esc([c.formulation, c.route].filter(Boolean).join(', '))})</span>` : ''), `${esc(c.jurisdiction || '')}${src(c.source)}`]);
     const labs = (e.labEffects || []).map(l => `<li>${l.biomarker ? entityA(clinical, 'biomarkers', l.biomarker) + ': ' : l.test ? entityA(clinical, 'tests', l.test) + ': ' : ''}${esc(l.effect)}${src(l.source)}</li>`).join('');
     const pk = e.pharmacokinetics || {};
     return `${head}
-      ${quickBox([['Common use', esc(firstUse)], ['Drug class', cls ? entityA(clinical, 'drug-classes', cls) : esc(e.class || '')], ['Target system', (e.anatomy?.systems || []).slice(0, 3).map(id => `<a href="${link.systemPage(id)}">${esc(sysName(id))}</a>`).join(', ')], ['How it works', esc(e.understand || '')], ['Route', esc((e.routes || [])[0] || '')]])}
+      ${quickBox([['Common use', esc(firstUse)], ['Drug class', cls ? entityA(clinical, 'drug-classes', cls) : esc(e.class || '')], ['Target system', (e.anatomy?.systems || []).slice(0, 3).map(id => `<a href="${link.systemPage(id)}">${esc(sysName(id))}</a>`).join(', ')], ['How it works', esc(e.understand || '')], ['Route', e.routeIds?.length ? vlist(vocab, 'routes', e.routeIds) : '']])}
       ${section('Uses', (licensed.length ? `<h3>Licensed indications</h3>${table(['Use', 'Status', 'Country · source', 'Note'], licensed.map(indRow))}` : '') + (other.length ? `<h3>Other clinically supported uses</h3>${table(['Use', 'Status', 'Country · source', 'Note'], other.map(indRow))}` : '') + '<p class="small muted">Licensed indications come from the product licence in the named country; guideline-supported and off-label uses are cited to the guideline that supports them. Licensing differs between countries.</p>', 'uses')}
-      ${section('How it works', para(e.understand) + para(e.howItWorks), 'how')}
+      ${section('How it works', para(e.howItWorks || e.understand), 'how')}
       ${section('Mechanism of action', para(e.mechanismDetail) + (e.pathway?.length ? `<h3>Pathway</h3>${pathwayHtml(e.pathway)}` : ''), 'mechanism')}
       ${section('What it acts on', inlineChips(clinical, 'targets', e.links?.targets), 'targets')}
       ${section('Body systems affected', `<div class="chips chips-inline">${(e.anatomy?.systems || []).map(id => `<a class="chip" href="${link.systemPage(id)}">${esc(sysName(id))}</a>`).join('')}${(e.anatomy?.organs || []).map(id => `<a class="chip" href="${link.organPage(id)}">${esc(data.content.organs.find(o => o.id === id)?.name || id)}</a>`).join('')}</div>`, 'systems')}
@@ -404,10 +406,10 @@ const T = {
       ${interactionsSection(e, ix, clinical)}
       ${section('Monitoring', table(['What', 'Why', 'Tests and markers', 'Source'], mon), 'monitoring')}
       ${section('Special populations', pops ? `<dl class="facts pops">${pops}</dl>` : '', 'populations')}
-      ${section('Condition-specific cautions', table(['Condition or factor', 'Type', 'Note', 'Source'], cautions) + '<p class="small muted">Educational summary of drug–condition cautions in the cited sources; not a personal screening.</p>', 'cautions')}
+      ${section('Condition-specific cautions', (cautions.length ? table(['Condition or factor', 'Type', 'Note', 'Country · source'], cautions) : '') + '<p class="small muted">Educational summary of drug–condition cautions in the cited sources; not a personal screening.' + (quarantined ? ` ${quarantined} drug–condition statement${quarantined > 1 ? 's are' : ' is'} withheld pending clinical review because it conflicted with another sourced statement on this page.` : '') + '</p>', 'cautions')}
       ${section('Effects on tests and results', labs ? `<ul class="plain">${labs}</ul>` : '', 'labs')}
       ${section('Pharmacokinetics', `<dl class="facts">${[['Absorption', pk.absorption], ['Peak', pk.peak], ['Half-life', pk.halfLife], ['Metabolism', pk.metabolism], ['Elimination', pk.elimination]].filter(([, v]) => v).map(([k, v]) => `<dt>${esc(k)}</dt><dd>${esc(v)}</dd>`).join('')}</dl>${pk.source ? `<p class="small muted">Source: <a href="${esc(safeUrl(pk.source.url))}" target="_blank" rel="noopener noreferrer">${esc(pk.source.title)}</a>${pk.source.section ? ` (${esc(pk.source.section)})` : ''}.</p>` : ''}`, 'pharmacokinetics')}
-      <p class="small muted">Dosing is intentionally not described: doses depend on the indication, the country's licence, kidney and liver function, age, weight and other medicines, and are set by a prescriber.</p>${tail}`;
+      <p class="small muted">Individual doses are not given on this page. The "usual preparations" line summarises the licensed strengths and regimen in the cited reference; the dose a person takes depends on the indication, the country's licence, kidney and liver function, age, weight and other medicines, and is set by a prescriber.</p>${tail}`;
   },
   'drug-classes'(e, { clinical, ix }) {
     const withPage = (e.members || []).map(n => { const id = Object.entries(clinical.names.medications).find(([, nm]) => nm.toLowerCase() === n.toLowerCase())?.[0]; return id ? `<a class="chip" href="${entityLink('medications', id)}">${esc(n)}</a>` : `<span class="chip chip-plain">${esc(n)}</span>`; });
@@ -421,9 +423,11 @@ const T = {
       ${section('Class interactions', table(['With', 'Effect', 'Source'], (e.classInteractions || []).map(i => [esc(i.with), esc(i.effect), src(i.source)])) + (classRecs.length ? `<h3>Interaction records that name this class</h3><div class="ix-list">${classRecs.map(r => interactionCard(r, ix, clinical)).join('')}</div>` : '') + (e.duplicationRule ? `<div class="callout info"><b>Therapeutic duplication.</b> ${esc(e.duplicationRule.text)}${src(e.duplicationRule.source)}</div>` : '') + `<p><a class="btn btn-sm" href="${link.checker()}">Open the Drug Interaction Checker</a></p>`, 'interactions')}`;
   },
   'first-aid'(e) {
-    return `${e.emergency ? `<div class="callout urgent"><h2>Emergency</h2><p style="margin:0">Call emergency services (999 UK · 112 Europe · 911 North America) as soon as you recognise this, or have someone call while you act.</p></div>` : ''}
-      ${section('Recognise it', list(e.recognise))}
-      ${section('What to do', e.steps?.length ? `<ol class="steps">${e.steps.map(s => `<li><b>${esc(s.title)}</b>${esc(s.detail)}</li>`).join('')}</ol>` : '')}
+    const g = e.guidance; const pending = e.instructionsStatus && e.instructionsStatus !== 'current';
+    const notice = g && pending ? `<div class="callout urgent guidance-notice" role="note"><h2>These step-by-step instructions are being updated</h2><p>${esc(g.note)}</p>${g.currentResource?.url && safeUrl(g.currentResource.url) ? `<p style="margin:0"><a class="btn btn-primary" href="${esc(safeUrl(g.currentResource.url))}" target="_blank" rel="noopener noreferrer">${esc(g.currentResource.title || 'Current official guidance')} ↗</a></p>` : ''}<p class="small" style="margin:8px 0 0">Written against: ${esc(g.basedOn)}${g.population ? ` · ${esc(g.population)}` : ''}${g.jurisdiction ? ` · ${esc(g.jurisdiction)}` : ''} · source accessed ${esc(dateText(g.accessed))}. Clinical approval of the revised sequence: pending.</p></div>` : '';
+    return `${section('Recognise it', list(e.recognise))}
+      ${notice}
+      ${section(pending ? 'What to do (sequence under review)' : 'What to do', e.steps?.length ? `<ol class="steps">${e.steps.map(s => `<li><b>${esc(s.title)}</b>${esc(s.detail)}</li>`).join('')}</ol>` : '')}
       ${e.children ? `<div class="callout info"><h2>Children and infants</h2><p style="margin:0">${esc(e.children)}</p></div>` : ''}
       <div class="pair">${e.dont?.length ? `<div><h2>Do not</h2>${list(e.dont)}</div>` : ''}${e.callFor?.length ? `<div><h2>Get medical help when</h2>${list(e.callFor)}</div>` : ''}</div>
       ${section('Why it works: the anatomy', para(e.why))}`;
@@ -441,7 +445,7 @@ const names = (clinical, type, ids, max = 12) => (ids || []).slice(0, max).map(i
 /** The schema.org node for an entity, matched to what the page shows. */
 export function entityNode(type, e, ctx) {
   const { clinical, data, ix } = ctx; const id = canonical(entityPath(type, e.id)) + '#entity';
-  const base = { '@id': id, name: e.name, url: canonical(entityPath(type, e.id)), description: metaDescription(lead(e), 300), ...(e.aliases?.length ? { alternateName: e.aliases } : {}) };
+  const base = { '@id': id, name: e.name, url: canonical(entityPath(type, e.id)), description: metaDescription(lead(e), 300, `${e.name}: ${TYPES[type]?.descriptor || TYPES[type]?.singular || ''}`), ...(e.aliases?.length ? { alternateName: [...new Set(e.aliases)] } : {}) };
   const organs = (e.anatomy?.organs || []).map(oid => data.content.organs.find(o => o.id === oid)).filter(Boolean).map(o => ({ '@type': 'AnatomicalStructure', name: o.name, url: canonical(paths.entity('anatomy', 'organ.html', o.id)) }));
   switch (type) {
     case 'conditions': return { '@type': 'MedicalCondition', ...base, ...(e.links?.symptoms?.length ? { signOrSymptom: names(clinical, 'symptoms', e.links.symptoms).map(n => ({ '@type': 'MedicalSignOrSymptom', name: n })) } : {}),
@@ -465,7 +469,7 @@ export function entityNode(type, e, ctx) {
       const info = (e.references || []).find(r => /bnf\.nice\.org\.uk\/drugs/.test(r.url) || /medlineplus\.gov\/druginfo/.test(r.url));
       return { '@type': 'Drug', ...base, nonProprietaryName: e.name, activeIngredient: e.name, ...(cls ? { drugClass: { '@type': 'DrugClass', name: nameOf(clinical, 'drug-classes', cls), url: canonical(entityPath('drug-classes', cls)) } } : {}),
         ...(e.understand || e.howItWorks ? { mechanismOfAction: e.understand || e.howItWorks } : {}), ...(e.mechanismDetail ? { clinicalPharmacology: e.mechanismDetail } : {}), ...(e.routeIds?.length ? { administrationRoute: e.routeIds.map(id => vocabName(vocab, 'routes', id)) } : e.routes?.length ? { administrationRoute: e.routes } : {}), ...(e.dosageFormIds?.length ? { dosageForm: e.dosageFormIds.map(id => vocabName(vocab, 'dosageForms', id)) } : e.forms?.length ? { dosageForm: e.forms } : {}), ...(codes.length ? { code: codes } : {}),
-        ...(status ? { prescriptionStatus: status } : {}), ...(info ? { prescribingInfo: info.url } : {}), ...(e.brands ? { alternateName: [...(e.aliases || []), ...Object.values(e.brands).flat()] } : {}),
+        ...(status ? { prescriptionStatus: status } : {}), ...(info ? { prescribingInfo: info.url } : {}), ...(e.brands ? { alternateName: [...new Set([...(e.aliases || []), ...Object.values(e.brands).flat()])] } : {}),
         ...(e.contraindications?.length ? { contraindication: e.contraindications.map(c => ({ '@type': 'MedicalContraindication', name: c.factor })) } : {}), ...(interacting.length ? { interactingDrug: interacting.map(n => ({ '@type': 'Drug', name: n })) } : {}),
         ...(e.foodInteractions?.length ? { foodWarning: e.foodInteractions.map(f => `${f.with}: ${f.effect}`).join(' ') } : {}), ...(e.alcohol ? { alcoholWarning: e.alcohol.effect } : {}),
         ...(e.populations?.pregnancy ? { pregnancyWarning: e.populations.pregnancy.text } : {}), ...(e.populations?.lactation ? { breastfeedingWarning: e.populations.lactation.text } : {}),
@@ -505,14 +509,16 @@ export async function renderDetail(type) {
   const crumbs = breadcrumbsFor(type, e, typeData, clinical);
   const title = seoTitle(e.name, e.seoTitle || TT.descriptor);
   const path = entityPath(type, e.id);
-  applyMeta({ title, description: e.metaDescription || lead(e), path, robots: e.seo?.index === false ? 'noindex,follow' : 'index,follow', image: hash ? link.preview(hash) : undefined, breadcrumbs: crumbs,
-    jsonld: [webPageNode({ path, title, description: metaDescription(lead(e)), entityId: canonical(path) + '#entity', updated: e.updated, references: e.references }), entityNode(type, e, ctx)] });
+  const descFallback = `${e.name}: ${TT.descriptor || TT.singular}${e.aliases?.length ? ` (also ${e.aliases.slice(0, 2).join(', ')})` : ''}. Sourced educational summary on Anatomy Nexus.`;
+  applyMeta({ title, description: e.metaDescription || metaDescription(lead(e), 155, descFallback), path, robots: e.seo?.index === false ? 'noindex,follow' : 'index,follow', image: hash ? link.preview(hash) : undefined, breadcrumbs: crumbs,
+    jsonld: [webPageNode({ path, title, description: metaDescription(lead(e), 155, descFallback), entityId: canonical(path) + '#entity', updated: e.updated, reviewed: e.review?.reviewedAt && e.review?.reviewer?.name ? e.review.reviewedAt : undefined, references: e.references }), entityNode(type, e, ctx)] });
   main.innerHTML = `
     ${breadcrumbHtml(crumbs)}
     <div class="eyebrow">${esc(TT.singular)}${cat ? ` · ${esc(cat.name)}` : ''}${e.emergency ? ' · <span class="badge emergency">emergency</span>' : ''}${e.depth === 'full' ? ' · <span class="badge live">full clinical detail</span>' : ''}</div>
     <h1>${esc(e.name)}</h1>
     ${e.aliases?.length ? `<p class="aliases">Also known as: ${esc(e.aliases.join(', '))}</p>` : ''}
     <p class="lead">${esc(lead(e))}</p>
+    ${urgentHtml(type, e)}
     ${hash ? `<div class="actions"><a class="btn btn-primary" href="${link.explorer(hash)}">Open in the 3D explorer</a>${primaryOrgan ? `<a class="btn" href="${link.organPage(primaryOrgan)}">${esc(nameOfOrgan(data, primaryOrgan))} anatomy</a>` : ''}${type === 'medications' ? `<a class="btn" href="${link.checker([e.id])}">Check interactions</a>` : ''}</div>${facadeHtml(hash, primaryOrgan ? nameOfOrgan(data, primaryOrgan) : e.name)}` : ''}
     <div class="two">
       <div>
@@ -530,6 +536,17 @@ export async function renderDetail(type) {
     </div>`;
 }
 function nameOfOrgan(data, id) { return data.content.organs.find(o => o.id === id)?.name || id; }
+/** The urgent-action block of a page, placed before the optional 3D preview: a symptom's red flags, a condition's
+ *  when-to-seek-care text, a first-aid topic's emergency call. Static HTML, never behind a disclosure or script. */
+export function urgentHtml(type, e) {
+  if (type === 'symptoms' && e.urgent?.length) return `<div class="callout urgent priority" role="note"><h2>Seek urgent care if</h2>${list(e.urgent)}</div>`;
+  if (type === 'conditions' && e.seekCare) return `<div class="callout urgent priority" role="note"><h2>When to seek care</h2><p style="margin:0">${esc(e.seekCare)}</p></div>`;
+  if (type === 'first-aid') {
+    if (e.emergency) return `<div class="callout urgent priority" role="note"><h2>Emergency</h2><p style="margin:0">Call emergency services (999 UK · 112 Europe · 911 North America) as soon as you recognise this, or have someone call while you act.</p></div>`;
+    if (e.callFor?.length) return `<div class="callout urgent priority" role="note"><h2>Get medical help when</h2>${list(e.callFor)}</div>`;
+  }
+  return '';
+}
 
 function letterOf(name) { const c = name.replace(/^the /i, '').charAt(0).toUpperCase(); return /[A-Z]/.test(c) ? c : '#'; }
 export async function renderIndex(type) {

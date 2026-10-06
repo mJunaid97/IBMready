@@ -5,7 +5,7 @@ export const SITE = {
   "url": "https://anatomynexus.com",
   "description": "Interactive 3D human anatomy connected to physiology, symptoms, medical conditions, tests, imaging, procedures, medications and learning resources.",
   "homeTitle": "Anatomy Nexus | Interactive Human Anatomy & Medical Knowledge",
-  "homeDescription": "Explore interactive human anatomy and learn how body structures connect with physiology, symptoms, conditions, medical tests, imaging, procedures and medications.",
+  "homeDescription": "Interactive 3D human anatomy linked to physiology, symptoms, conditions, tests, imaging, procedures and medicines, with sourced educational pages.",
   "organization": {
     "name": "Anatomy Nexus",
     "logo": "site/icon-512.png",

@@ -62,9 +62,9 @@ test('two medications with a direct record: moderate, sources, related links, mo
 test('three medications: every unique pair, severe first, none listed with the cautious wording', () => {
   const r = check('amlodipine', 'losartan', 'ibuprofen');
   eq(r.pairsChecked, 3);
-  eq(r.noKnownInteractionPairs, [{ a: 'Amlodipine', b: 'Losartan' }, { a: 'Amlodipine', b: 'Ibuprofen' }]);
+  eq(r.noKnownInteractionPairs, [{ a: 'Amlodipine', b: 'Losartan', state: 'no-record' }, { a: 'Amlodipine', b: 'Ibuprofen', state: 'no-record' }]);
   assert(r.pairs[0].aName === 'Losartan' && r.pairs[0].bName === 'Ibuprofen', 'the pair with a record sorts first');
-  assert(!/safe/i.test(NONE_WORDING.title) && /No known interaction identified/.test(NONE_WORDING.title), 'no-interaction wording never says safe');
+  assert(!/\bsafe\b/i.test(NONE_WORDING.title) && /No matching record in this dataset/.test(NONE_WORDING.title), 'no-record wording names a dataset miss and never says safe');
   eq(r.summary.byTier.moderate, 1); eq(r.summary.none, 2); eq(r.summary.topTier, 'moderate');
 });
 test('contraindicated sorts before major before moderate before not graded', () => {
@@ -139,6 +139,78 @@ test('every record can be reached by the checker through at least one selectable
     if (!hit) unreachable.push(r.id);
   }
   eq(unreachable, [], 'unreachable records');
+});
+
+// ---- audit regression cases: states, order independence, duplicates, normalisation, class rules, failure modes
+import { STATES } from '../../site/interaction-engine.js';
+const recordOf = (id) => ix.records.find(r => r.id === id);
+test('warfarin + ibuprofen: the tier follows the record\'s own source-backed severity state (no test-side assumption)', () => {
+  const rec = recordOf('ibuprofen-warfarin'); assert(rec && rec.evidence?.length, 'the record is source-backed');
+  const r = check('warfarin', 'ibuprofen');
+  eq(r.state, 'documented'); eq(r.pairs[0].tier, STATE_TIER[rec.severity], 'tier derived from the fixture state');
+  assert(r.interactions.some(i => i.id === rec.id));
+});
+test('amlodipine + metformin: a dataset miss is a coverage state, not a safety finding', () => {
+  const r = check('amlodipine', 'metformin');
+  eq(r.status, 'complete'); eq(r.state, 'no-record'); eq(r.states['no-record'], 1); eq(r.states['outside-coverage'], 0);
+  eq(r.noKnownInteractionPairs[0].state, 'no-record');
+  assert(/does not establish that the combination is safe/i.test(NONE_WORDING.text), 'the wording denies a safety claim');
+  assert(!/no known interaction/i.test(NONE_WORDING.title) && /no matching record/i.test(NONE_WORDING.title), 'the headline names a dataset miss');
+  assert(/not a finding of safety/i.test(STATES['no-record']));
+});
+test('reversed input order gives the same pairs, tiers and record ids', () => {
+  const a = check('warfarin', 'ibuprofen', 'amlodipine'), b = check('amlodipine', 'ibuprofen', 'warfarin');
+  eq(a.summary.byTier, b.summary.byTier); eq(a.interactions.map(i => i.id).sort(), b.interactions.map(i => i.id).sort()); eq(a.state, b.state);
+});
+test('duplicate ingredient: the same medicine twice is a duplication state, never an interaction', () => {
+  const r = E.check([entry('paracetamol'), { ...entry('paracetamol'), label: 'Panadol' }]);
+  eq(r.state, 'duplication'); eq(r.interactions.length, 0); eq(r.duplications[0].kind, 'same-ingredient');
+});
+test('brand and generic normalise to one entry and interact identically', () => {
+  const brand = E.resolve('Norvasc'), generic = E.resolve('amlodipine'); eq(brand.id, generic.id); eq(brand.kind, 'medication');
+  const a = check('Norvasc', 'simvastatin'), b = check('amlodipine', 'simvastatin');
+  eq(a.interactions.map(i => i.id), b.interactions.map(i => i.id)); assert(a.interactions.length >= 1, 'a sourced record exists for this pair');
+});
+test('combination product: each ingredient is checked and the covered pair is reported by state', () => {
+  const r = check('co-codamol', 'ibuprofen');
+  assert(r.medications[0].ingredients.length === 2, 'co-codamol splits into two ingredients');
+  assert(['documented', 'no-record', 'outside-coverage'].includes(r.state));
+  assert(r.pairs.every(p => p.state), 'every pair carries a state');
+});
+test('class rule: applies to a member of the class and not to a non-member', () => {
+  const rec = ix.records.find(r => r.type === 'drug-class' && r.bClass); assert(rec, 'a class-level record exists');
+  const member = Object.keys(ix.drugClassOf).find(m => ix.drugClassOf[m] === rec.bClass && m !== rec.a);
+  const nonMember = Object.keys(ix.drugClassOf).find(m => ix.drugClassOf[m] !== rec.bClass && m !== rec.a && !ix.records.some(x => (x.a === rec.a && x.b === m) || (x.a === m && x.b === rec.a)));
+  assert(member && nonMember, 'fixtures found');
+  const hit = E.check([{ kind: 'medication', id: rec.a, label: rec.a }, { kind: 'medication', id: member, label: member }]);
+  assert(hit.interactions.some(i => i.id === rec.id && i.via === 'class'), 'member matches via the class');
+  const miss = E.check([{ kind: 'medication', id: rec.a, label: rec.a }, { kind: 'medication', id: nonMember, label: nonMember }]);
+  assert(!miss.interactions.some(i => i.id === rec.id), 'non-member does not match the class record');
+});
+test('multiple records for one pair are all listed, ordered by tier then state', () => {
+  const counts = new Map();
+  for (const r of ix.records) if (r.b) { const k = [r.a, r.b].sort().join('+'); counts.set(k, (counts.get(k) || 0) + 1); }
+  const multi = [...counts].find(([, n]) => n > 1);
+  if (!multi) { // the dataset has one record per pair today: the ordering rule is still exercised on a three-medicine list
+    const r = check('lisinopril', 'aliskiren', 'ibuprofen'); const orders = r.interactions.map(i => TIERS[i.tier].order); eq(orders, [...orders].sort((x, y) => x - y)); return; }
+  const [a, b] = multi[0].split('+'); const r = E.check([{ kind: 'medication', id: a, label: a }, { kind: 'medication', id: b, label: b }]);
+  eq(r.pairs[0].interactions.length, multi[1]); const orders = r.pairs[0].interactions.map(i => TIERS[i.tier].order); eq(orders, [...orders].sort((x, y) => x - y));
+});
+test('unknown input is an unrecognised-entry warning and takes no part in the result', () => {
+  eq(E.resolve('zzzz-not-a-drug'), null);
+  const r = E.check([entry('warfarin'), { kind: 'unknown', id: 'zzzz', label: 'zzzz-not-a-drug' }]);
+  eq(r.status, 'insufficient'); eq(r.state, 'insufficient'); eq(r.states['unknown-entry'], 1); eq(r.pairsChecked, 0);
+  assert(r.warnings.some(w => w.code === 'unknown-entry'));
+});
+test('insufficient input: one medicine yields no pairs and no "no record" claim', () => {
+  const r = check('warfarin'); eq(r.state, 'insufficient'); eq(r.noKnownInteractionPairs.length, 0); eq(r.states['no-record'], 0);
+});
+test('failed or missing data: the engine refuses to start rather than answer "no interaction"', () => {
+  for (const bad of [null, {}, { records: [] }, { records: 'x', index: [] }]) { let threw = false; try { createEngine(bad); } catch { threw = true; } assert(threw, `createEngine(${JSON.stringify(bad)}) must throw`); }
+});
+test('result states are mutually distinguishable and the dataset counts are computed, not hardcoded', () => {
+  for (const k of ['insufficient', 'documented', 'duplication', 'no-record', 'outside-coverage', 'unknown-entry', 'dataset-unavailable', 'error']) assert(STATES[k], `state ${k}`);
+  const r = check('warfarin', 'ibuprofen'); eq(r.sourceMetadata.recordCount, ix.records.length); assert(r.sourceMetadata.medicationCount > 0);
 });
 
 console.log(`\n${passed} passed, ${failed} failed`);

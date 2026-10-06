@@ -146,7 +146,7 @@ if (!(cmp.rows >= 3 && /CRP vs ESR/.test(cmp.h1) && cmp.refs >= 1 && cmp.ld)) fa
 const checkerUrl = (q) => base + 'tools/drug-interaction-checker/' + (PRETTY ? '' : 'index.html') + (q ? '?' + q : '');
 const chk = async (drugs, min = 2) => { await page.goto(checkerUrl('drugs=' + drugs), { waitUntil: 'load' }); await page.waitForFunction((min) => document.querySelectorAll('#chk-chips .chk-chip').length >= min && document.body.dataset.rendered === '1', min, { timeout: 30000 }); return page.evaluate(() => ({
   chips: document.querySelectorAll('#chk-chips .chk-chip').length, summary: !!document.querySelector('.chk-summary'), pairsText: (document.querySelector('.chk-stats')?.innerText || '').replace(/\s+/g, ' '), cards: document.querySelectorAll('#chk-results .pair-card:not(.dup-card)').length, dup: document.querySelectorAll('#chk-results .dup-card').length,
-  groups: [...document.querySelectorAll('.chk-group > h2')].map(h => h.id), noneList: document.querySelectorAll('.chk-none li').length, none: document.body.innerText.includes('No known interaction identified in the available data'), safe: /\bsafe to take\b|\bno interaction exists\b/i.test(document.body.innerText),
+  groups: [...document.querySelectorAll('.chk-group > h2')].map(h => h.id), noneList: document.querySelectorAll('.chk-none li').length, none: document.body.innerText.includes('No matching record in this dataset')), safe: /\bsafe to take\b|\bno interaction exists\b/i.test(document.body.innerText),
   tiers: document.querySelectorAll('#chk-results .tier').length, sources: document.querySelectorAll('#chk-results a[data-source]').length, related: document.querySelectorAll('#chk-results a[data-related]').length, refs: document.querySelectorAll('#chk-results .ref-list li').length,
   robots: document.querySelector('meta[name="robots"]')?.content, canonical: document.querySelector('link[rel="canonical"]')?.href || '', severe: !!document.querySelector('#chk-results .callout.urgent'), msg: document.getElementById('chk-msg')?.textContent || '' })); };
 const c1 = await chk('losartan,ibuprofen');
@@ -352,13 +352,22 @@ if (PRETTY) {
 }
 
 // 8. phone layout has no horizontal overflow
+// every article template (medication, test, symptom, first aid, condition, organ), the hubs, search and the checker, at the
+// audit's eight widths; a page may only be as wide as its viewport (tables scroll inside .table-wrap, nothing else overflows)
 const m = await (await browser.newContext({ viewport: { width: 390, height: 844 }, isMobile: true, hasTouch: true, bypassCSP: true })).newPage();
-for (const p of ['', detailUrl('conditions', 'condition.html', 'gout').replace(base, ''), detailUrl('first-aid', 'topic.html', 'cpr').replace(base, ''), detailUrl('anatomy', 'organ.html', 'heart').replace(base, ''), dirUrl('tests').replace(base, ''), 'search/?q=heart', checkerUrl('drugs=amlodipine,losartan,ibuprofen,warfarin').replace(base, ''), dirUrl('tools').replace(base, '')]) {
-  await m.goto(base + p, { waitUntil: 'load' }); await m.waitForTimeout(1200);
-  const w = await m.evaluate(() => ({ s: document.documentElement.scrollWidth, v: innerWidth }));
-  if (w.s > w.v + 1) fail(`phone overflow on ${p || '/'}: ${w.s} > ${w.v}`);
+const overflowPages = ['', detailUrl('medications', 'medication.html', 'amlodipine').replace(base, ''), detailUrl('tests', 'test.html', 'complete-blood-count').replace(base, ''), detailUrl('symptoms', 'symptom.html', 'chest-pain').replace(base, ''),
+  detailUrl('conditions', 'condition.html', 'gout').replace(base, ''), detailUrl('first-aid', 'topic.html', 'cpr').replace(base, ''), detailUrl('anatomy', 'organ.html', 'heart').replace(base, ''), dirUrl('tests').replace(base, ''), 'search/?q=heart', checkerUrl('drugs=amlodipine,losartan,ibuprofen,warfarin').replace(base, ''), dirUrl('tools').replace(base, ''), 'medical-terms/'];
+const overflowWidths = [320, 360, 375, 390, 414, 768, 1024, 1440];
+let overflowFails = 0;
+for (const p of overflowPages) {
+  await m.goto(base + p, { waitUntil: 'load' }); await m.waitForTimeout(900);
+  for (const width of overflowWidths) {
+    await m.setViewportSize({ width, height: 844 }); await m.waitForTimeout(150);
+    const w = await m.evaluate(() => ({ s: document.documentElement.scrollWidth, v: document.documentElement.clientWidth }));
+    if (w.s > w.v + 1) { overflowFails++; fail(`horizontal overflow on ${p || '/'} at ${width}px: ${w.s} > ${w.v}`); }
+  }
 }
-ok('phone layout: no horizontal overflow');
+if (!overflowFails) ok(`no horizontal overflow: ${overflowPages.length} pages × ${overflowWidths.length} widths (320–1440)`);
 
 // 9. CSP compliance: navigate only (no in-page evaluation), with the policy enforced
 const strict = await (await browser.newContext({ viewport: { width: 1200, height: 800 } })).newPage();

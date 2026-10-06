@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self'; connect-src 'self'; frame-src 'self'; worker-src 'self' blob:; object-src 'none'; base-uri 'self'; form-action 'self'">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>Privacy | Anatomy Nexus</title>
+  <meta name="description" content="What Anatomy Nexus records when you use it: anonymised page analytics without search terms or medicine lists, a theme preference, and no accounts or forms.">
+  <link rel="icon" href="../favicon.ico" sizes="32x32">
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  <meta name="theme-color" content="#0B2D45">
+  <link rel="manifest" href="../manifest.webmanifest">
+  <link rel="apple-touch-icon" href="../site/apple-touch-icon.png">
+  <link rel="stylesheet" href="../site/site.css">
+  <link rel="canonical" href="./">
+</head>
+<body data-nav="about" data-canonical="privacy/" data-schema="WebPage">
+<main class="wrap" id="main">
+  <nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="../">Home</a></li><li aria-current="page">Privacy</li></ol></nav>
+  <div class="section-hero"><div class="eyebrow">About Anatomy Nexus</div><h1>Privacy</h1><p class="lead">What this site records when you use it, what it does not, and what you can do about it. This page describes the behaviour of the code as deployed; it was checked against the implementation on 6 October 2026.</p></div>
+  <div class="prose">
+    <h2>No accounts, forms or personal data</h2>
+    <p>Anatomy Nexus has no user accounts, no comment or contact forms and no newsletter. Nothing you type into the site is sent to us: the search box and the drug interaction checker run entirely in your browser against data files downloaded from this site. The only way to write to us is the public issue tracker or a private repository advisory, described on the <a href="../contact/">contact page</a>.</p>
+    <h2>Page analytics (Google Analytics 4)</h2>
+    <p>The site loads Google Analytics 4 (measurement id <code>G-W35QT71BH2</code>) to count page views. Our code reports every page as <em>origin + path only</em>: the query string and the fragment are removed before anything is sent, so a search term (<code>/search/?q=…</code>), a list of medicines on the checker (<code>?drugs=…</code>) or a selected structure in the 3D explorer (<code>#s=…</code>) is not included in the page address or the referrer we pass to the tag, including after the address changes while you use a page. Google signals and advertising personalisation are switched off in our configuration.</p>
+    <p>The checker sends a few counting events to the same tag: that the checker was opened, how many medicines were added or removed, how many pairs were checked, the highest severity tier of the result and the result state (for example "no matching record"). These events never contain medicine names. The 3D explorer loads no analytics at all.</p>
+    <p>Google Analytics sets its own cookies (<code>_ga</code>, <code>_ga_…</code>) to recognise a returning browser and processes the data on Google's servers under Google's terms; we do not control that processing and have no access to raw data about individual visitors. Two behaviours of the tag are configured in the analytics account rather than in this site's code and cannot be verified from the code alone: "enhanced measurement" (which can record outbound link clicks, including the address of a cited source you open) and the retention period of the data. If you want no analytics at all, a content blocker or your browser's tracking protection stops the tag; the site works identically without it.</p>
+    <h2>What stays in your browser</h2>
+    <ul>
+      <li><b>Theme</b>: your light or dark choice is saved in this browser's local storage as <code>atlas-theme</code>.</li>
+      <li><b>3D model quality</b>: your choice of the standard or lighter model is saved as <code>atlas-quality</code>.</li>
+    </ul>
+    <p>Nothing else is stored, and neither value leaves your browser.</p>
+    <h2>Sharing a check or a search</h2>
+    <p>The checker and the search page put your current medicines or search term in the page address so that you can bookmark or share it (for example <code>/tools/drug-interaction-checker/?drugs=warfarin,ibuprofen</code>). That address is only shared if you copy it, but it is saved in your browser history and, like every address you request, appears in the access logs of the server that hosts the site. If a medicine list is sensitive to you, clear the list before leaving the page or open the checker in a private window.</p>
+    <h2>Server logs</h2>
+    <p>The hosting provider's web server records the addresses requested, the time, the browser identification string and the IP address of each request, as web servers do; we do not have a published retention period for those logs and will add one here when it has been confirmed. We do not add any logging of our own and the site has no server-side code.</p>
+    <h2>Third parties</h2>
+    <p>Apart from Google Analytics, every file the site uses (scripts, styles, fonts, 3D data) is served from this site's own address. The 3D atlas is embedded on article pages only after you choose to load it. External sources cited on each page are ordinary links to other organisations' websites, which have their own privacy practices.</p>
+    <h2>Children, health data and advice</h2>
+    <p>The site is educational and is not designed to collect data about anyone's health. If you ever share health information with us by mistake in a public issue, tell us and we will remove it from the thread.</p>
+    <h2>Changes and contact</h2>
+    <p>This page changes when the behaviour of the site changes; the version of the site is shown in the footer and the full history is in the project repository. Questions about privacy can be raised through the routes on the <a href="../contact/">contact page</a>.</p>
+  </div>
+  <nav class="chips" aria-label="Policies" style="margin-top:32px">
+    <a class="chip" href="../about/">About</a><a class="chip" href="../contact/">Contact</a><a class="chip" href="../editorial-policy/">Editorial policy</a><a class="chip" href="../medical-review-policy/">Medical review policy</a><a class="chip" href="../references-policy/">References policy</a><a class="chip" href="../corrections-policy/">Corrections policy</a><a class="chip" href="../disclaimer/">Disclaimer</a>
+  </nav>
+</main>
+<script type="module" src="../site/page.js"></script>
+</body>
+</html>
