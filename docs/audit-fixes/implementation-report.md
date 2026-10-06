@@ -114,9 +114,27 @@ that depended on reading an external document is marked as such.
 
 - WebGL capability check before the viewer starts; renderer construction wrapped; `webglcontextlost` handled; data and geometry download failures keep the loading card, explain the problem in plain words, offer "Try again", "Try the lighter model" (geometry case) and "Read the anatomy articles", and never set the atlas as ready or toast "Atlas ready". Raw error text goes to the console only. Click-to-load facades on article pages are unchanged.
 
-## Tests performed
+## Tests performed and results
 
-See the "Results" section below; it is filled from the actual runs.
+All runs were made in the build sandbox (headless Chromium via Playwright, desktop and mobile-viewport
+emulation only; no physical device was used, and no field performance data exists for this branch).
+
+| Check | Command / method | Result |
+|---|---|---|
+| Content compile and validation (schema, sources, links, caution contradiction rule, review queues) | `python3 tools/build-content.py` | **Pass**; queues now include `quarantined_relationship 1`, `guidance_recheck 2` |
+| Contradiction rule (regression) | compile with the amlodipine quarantine removed | **Fails as intended**: "contraindication for 'coronary-artery-disease' contradicts a licensed indication…" |
+| Interaction engine unit tests | `node tools/qa/engine-test.mjs` | **27 passed, 0 failed** (15 existing + 12 added) |
+| Production package | `python3 tools/package-site.py --site-url https://anatomynexus.com --pretty --prerender --out dist` | **Pass**: 474 pages prerendered, 0 failed; 431 indexable URLs in 5 sitemaps; `/privacy/` in the core sitemap |
+| Meta descriptions | grep over `dist/**/index.html` | **0** of 474 descriptions end in "…" (baseline 346); none under 50 or over 160 characters |
+| Smoke suite (status, canonicals, schema, 396 entity pages, internal links, redirects, checker flows, no-JS content, CSP, phone layout) | `node tools/qa/smoke.mjs` against the package | SMOKE_RESULT |
+| Horizontal overflow, 8 widths (320–1440) | `scratchpad/audit/overflow.mjs` on medication, test (both URLs), symptom, first-aid, organ, home, checker (empty and 4-medicine result), terms, tests hub | **Pass**: no overflow at any width (baseline: 48–238 px at 320–414 px on the two audited pages; ~42 px header overflow at 1024 px everywhere) |
+| Analytics payload | Playwright `dataLayer` capture on `/search/?q=warfarin+overdose` and the checker with `?drugs=warfarin,ibuprofen` | **Pass**: `page_location`/`page_referrer` are origin + path only, re-set after every history change; events carry counts and tiers only; no query value or medicine name in any payload. The tag script itself cannot load from the sandbox, so collect requests were not observed |
+| Mobile menu | Playwright at 390 px | **Pass**: `aria-expanded` false → true → false; Tab enters the menu; Escape closes and returns focus to the button; Enter on the button opens; outside click closes |
+| No-JavaScript rendering | Playwright with JavaScript disabled on chest pain, CPR, amlodipine | **Pass**: lead present; order H1 → urgent block → facade; CPR shows the guidance notice before the steps; facade button is a plain link to the explorer; privacy link in the footer |
+| Checker failure states | interactions.json blocked; then amlodipine + metformin | **Pass**: "Interaction data is temporarily unavailable" with no result; then state `no-record`, headline "No matching record in this dataset.", coverage line with computed counts, old wording absent |
+| Explorer failure states | Chromium `--disable-webgl`; `.glb` downloads blocked | **Pass**: WebGL case shows the explanation, retry and anatomy-text link, no raw THREE error, not marked ready; geometry case shows the download failure, no "Atlas ready" toast |
+| Lighthouse / Core Web Vitals | not run | **Unavailable**: no trustworthy lab or field measurement was possible in this sandbox (external hosts blocked, software rendering); no scores are claimed |
+| Live site re-fetch | not run | **Unavailable**: anatomynexus.com is not reachable from the sandbox; the baseline is the v1.8.1 package built from the deployed commit |
 
 ## Remaining dependencies
 

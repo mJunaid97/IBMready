@@ -477,8 +477,8 @@ dl.ix dd { margin: 0; }
 
 /* ================================================================== 14b. taxonomy layer: test categories, medication classes, terminology codes, hub facets */
 .facets { display: flex; flex-wrap: wrap; gap: 10px 18px; margin: 6px 0 14px; }
-.facets .facet { font-size: .9rem; color: var(--text-secondary); display: inline-flex; align-items: center; gap: 6px; }
-.facets select { font: inherit; padding: 4px 8px; border: 1px solid var(--border); border-radius: var(--control-radius); background: var(--surface); color: inherit; max-width: 260px; }
+.facets .facet { font-size: .9rem; color: var(--text-secondary); display: inline-flex; flex-wrap: wrap; align-items: center; gap: 6px; min-width: 0; max-width: 100%; }
+.facets select { font: inherit; padding: 4px 8px; border: 1px solid var(--border); border-radius: var(--control-radius); background: var(--surface); color: inherit; max-width: min(260px, 100%); min-width: 0; }
 .catalogue li, .classes li { padding: 6px 0; border-bottom: 1px solid var(--border); }
 .catalogue li:last-child, .classes li:last-child { border-bottom: 0; }
 .classes li .chips-inline { margin-top: 4px; }
@@ -522,12 +522,12 @@ dl.ix dd { margin: 0; }
 .chk-summary { margin-top: 26px; padding: 18px 20px; border: 1px solid var(--border); border-radius: 12px; background: var(--surface-alt); }
 .chk-summary h2 { margin-top: 0; }
 .chk-stats { display: flex; flex-wrap: wrap; gap: 26px; margin: 6px 0 14px; }
-.chk-tiers { list-style: none; padding: 0; margin: 0 0 10px; display: grid; gap: 6px; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); }
-.chk-tiers li { display: flex; align-items: center; gap: 10px; padding: 8px 10px; border: 1px solid var(--border); border-radius: var(--radius); background: var(--surface); font-size: 14px; }
+.chk-tiers { list-style: none; padding: 0; margin: 0 0 10px; display: grid; gap: 6px; grid-template-columns: repeat(auto-fit, minmax(min(230px, 100%), 1fr)); }
+.chk-tiers li { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 10px; min-width: 0; padding: 8px 10px; border: 1px solid var(--border); border-radius: var(--radius); background: var(--surface); font-size: 14px; }
 .chk-tiers li.is-zero { color: var(--text-secondary); }
 .chk-tiers li.is-zero .tier { opacity: .65; }
 /* display tiers: red only for contraindicated or avoid, amber for major and moderate, brand tints below; every badge carries an icon and its word */
-.tier { display: inline-flex; align-items: center; gap: 6px; padding: 3px 10px 3px 8px; border-radius: var(--radius-pill); font-size: 12px; font-weight: 700; letter-spacing: .02em; border: 1px solid transparent; white-space: nowrap; vertical-align: middle; }
+.tier { display: inline-flex; align-items: center; gap: 6px; padding: 3px 10px 3px 8px; border-radius: var(--radius-pill); font-size: 12px; font-weight: 700; letter-spacing: .02em; border: 1px solid transparent; white-space: normal; vertical-align: middle; }
 .tier svg { width: 14px; height: 14px; flex: none; }
 .tier-1 { background: var(--status-danger-soft); color: var(--status-danger); border-color: color-mix(in srgb, var(--status-danger) 40%, transparent); }
 .tier-2 { background: var(--status-warn-soft); color: var(--status-warn); border-color: color-mix(in srgb, var(--status-warn) 40%, transparent); }
