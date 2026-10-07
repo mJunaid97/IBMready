@@ -1,5 +1,39 @@
 # Changelog
 
+## v1.9.0 — 2026-10-07
+
+Fixes from the independent site audit (clinical content integrity, the interaction checker, mobile layout, editorial
+accountability, privacy, SEO, navigation and 3D fallbacks). Details in `docs/audit-fixes/implementation-report.md`.
+
+- Clinical: the CPR and choking pages state the Resuscitation Council UK edition their steps follow (2021), carry an
+  interim notice pointing at the current official guidance and are marked pending re-check and clinical approval; their
+  derived quiz and viva items are withheld. Amlodipine's condition-level coronary artery disease contraindication is
+  quarantined with a proposed, approval-pending correction, and the build rejects any active contraindication keyed to
+  a licensed indication. Two references labelled NHS now name St John Ambulance; editions and access-date semantics
+  are shown on every Sources list
+- Names: a new `searchTerms` field keeps related terms (angina, cardiac arrest, cerebrum, end-stage liver disease,
+  beta blocker, DOAC) findable without presenting them as synonyms; "Also known as" and JSON-LD alternate names carry
+  exact synonyms only; full blood count also answers to complete blood count
+- Medications: routes and dosage forms render from the vocabularies (no more "Oral (Oral (tablets…))"), the regimen
+  line is labelled a reference summary, and the dosing note no longer contradicts it
+- Checker: a dataset miss reads "No matching record in this dataset. This does not establish that the combination is
+  safe"; pairs involving a medicine without a page are listed as outside the dataset's coverage; processing errors and
+  data failures are reported as such; coverage and review status sit beside the result; twelve regression tests
+- Layout: medication and test pages no longer overflow on phones (shrinkable grid tracks, wrapping identifiers); the
+  compact header starts at 1080 px; urgent-care blocks sit above the 3D preview on symptom, condition and first-aid
+  pages; the smoke test checks twelve templates at eight widths
+- Editorial: the "About this page" block separates editorial status (source checked · pending clinical review), clinical
+  review (shown only from a recorded reviewer and date) and the sources-checked date; derived-content fingerprints
+- Privacy: a privacy page describing the verified analytics behaviour; the tag receives origin + path only for the
+  page address and referrer, re-applied after history changes, with Google signals off; the contact page is a
+  ContactPage, warns that issues are public and names the private route
+- SEO and navigation: meta descriptions are complete statements (346 truncated descriptions fixed); the homepage links
+  its examples and offers three start paths; search shows a loading state and labels anatomy articles, body systems,
+  atlas layers and 3D structures; the mobile menu closes on Escape and returns focus; related topics show twelve links
+  per group with a disclosure for the rest
+- Explorer: plain-language failure states with retry and a route to the anatomy text for missing WebGL, lost graphics
+  contexts and failed downloads; a failed model download no longer reports "Atlas ready"
+
 ## v1.8.1 — 2026-09-18
 
 Fixes from an independent QA pass over v1.8.0. The male BodyParts3D systems are still untouched.
