@@ -114,7 +114,7 @@ gate. Outputs:
 | `data/content/types/<type>.json` | one file per entity type: metadata, categories, priority list, items with `anatomy`, `links`, `backlinks`, `references`, `updated`, `seo` |
 | `data/content/clinical.json` | compact name index plus organ / system / structure / term → entity backlinks (explorer, anatomy and system pages) |
 | `data/content/aliases.json` | URL alias → canonical slug per section (the 301 table) |
-| `data/content/search-index.json` | flat search index over everything |
+| `data/content/search-index.json` | flat search index over everything (`[type, id, name, aliases, sub, systems]`; the systems feed the search page's body-system filter) |
 | `data/content/knowledge.json` | the whole graph in one file (319 topics, 6,020 typed links, 795 references) |
 | `data/content/interactions.json` | interaction records with their knowledge-graph links, class membership, products, named substances, the name index and the source metadata the Drug Interaction Checker uses |
 | `data/content/comparisons.json` | the comparisons |
@@ -157,7 +157,9 @@ whole layer; `DEPLOY.md` the hosting.
    the URL rules emulated; `tools/qa/smoke.mjs` drives headless Chromium through every page
    type and all entity pages (one H1, unique title and description, canonical, robots, Open
    Graph, breadcrumbs and valid JSON-LD, related links, sources, editorial block), every
-   internal link (no 404s, no redirects), the header search, hub filters after hydration, the
+   internal link (no 404s, no redirects), the header search, hub filters after hydration (live count,
+   URL state, body-system facet, clear and deep-link restore), the search page's type and system
+   filters, the anatomy hub filter, the
    3D facade, the explorer (geometry, structure card, multi-structure links, locate mode), the
    sitemap index and every URL in it, the 301 rules, the raw prerendered HTML, a real 404, a
    phone-width layout check, and every page type again with the Content-Security-Policy

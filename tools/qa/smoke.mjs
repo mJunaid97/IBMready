@@ -128,6 +128,24 @@ const before = await page.evaluate(() => document.querySelectorAll('#cards .card
 await page.fill('#q', 'gout'); await page.waitForTimeout(600);
 const after = await page.evaluate(() => document.querySelectorAll('#cards .card').length);
 if (!(before > 10 && after >= 1 && after < before)) fail(`hub filter: ${before} cards → ${after} after filtering`); else ok(`hub filter: ${before} cards → ${after} for "gout"`);
+// 4c. hub filters: live count, URL state, body-system facet, A–Z bar hidden while filtered, clear button, deep-link restore
+const hs = await page.evaluate(() => ({ count: document.getElementById('hub-count')?.textContent || '', url: location.search, az: getComputedStyle(document.querySelector('.az')).display, clear: document.getElementById('clear-filters')?.hidden, pressed: document.querySelectorAll('#filters [aria-pressed="true"]').length, sys: document.querySelector('#facets select[data-facet="system"]')?.options.length || 0 }));
+if (!(/Showing 1 of \d+ conditions/.test(hs.count) && hs.url === '?q=gout' && hs.az === 'none' && hs.clear === false && hs.pressed === 1 && hs.sys > 5)) fail(`hub filter state: ${JSON.stringify(hs)}`); else ok(`hub filter state: live count "${hs.count}", URL ${hs.url}, A–Z hidden, ${hs.sys - 1} body systems`);
+await page.click('#clear-filters'); await page.waitForTimeout(400);
+const hc = await page.evaluate(() => ({ cards: document.querySelectorAll('#cards .card').length, url: location.search, az: getComputedStyle(document.querySelector('.az')).display, q: document.getElementById('q').value }));
+if (!(hc.cards === before && hc.url === '' && hc.az !== 'none' && hc.q === '')) fail(`hub clear filters: ${JSON.stringify(hc)}`); else ok('hub filter: clear button restores the full A–Z list and URL');
+await page.goto(dirUrl('conditions') + '?cat=cardiovascular&system=heart', { waitUntil: 'load' }); await rendered(); await page.waitForTimeout(500);
+const hr = await page.evaluate(() => ({ cards: document.querySelectorAll('#cards .card').length, pressed: document.querySelector('#filters [aria-pressed="true"]')?.dataset.cat, sys: document.querySelector('#facets select[data-facet="system"]')?.value, count: document.getElementById('hub-count')?.textContent }));
+if (!(hr.cards >= 1 && hr.cards < before && hr.pressed === 'cardiovascular' && hr.sys === 'heart')) fail(`hub deep link: ${JSON.stringify(hr)}`); else ok(`hub deep link: ?cat=cardiovascular&system=heart restores ${hr.cards} cards`);
+// search page: type and body-system filters with a live count, state in the URL
+await page.goto(dirUrl('search') + '?q=pain&type=symptoms', { waitUntil: 'load' }); await page.waitForFunction(() => /result/.test(document.getElementById('result-count')?.textContent || ''), null, { timeout: 30000 });
+await page.selectOption('#system-facet', 'heart'); await page.waitForTimeout(400);
+const ss = await page.evaluate(() => ({ count: document.getElementById('result-count').textContent, n: document.querySelectorAll('#results li').length, groups: [...document.querySelectorAll('.result-group h2 .r-type')].map(x => x.textContent), url: location.search, pressed: document.querySelector('#filters [aria-pressed="true"]')?.dataset.t }));
+if (!(ss.n >= 1 && ss.groups.every(g => g === 'Symptom') && ss.url.includes('type=symptoms') && ss.url.includes('system=heart') && /Heart/.test(ss.count) && ss.pressed === 'symptoms')) fail(`search filters: ${JSON.stringify(ss)}`); else ok(`search filters: "${ss.count}", URL ${ss.url}`);
+// anatomy hub: system chips and text filter hide cards and blocks in place
+await page.goto(dirUrl('anatomy') + '?system=heart', { waitUntil: 'load' }); await rendered(); await page.waitForTimeout(400);
+const an = await page.evaluate(() => ({ blocks: [...document.querySelectorAll('.organ-block')].filter(b => getComputedStyle(b).display !== 'none').length, cards: [...document.querySelectorAll('.organ-block .card')].filter(c => getComputedStyle(c).display !== 'none' && getComputedStyle(c.closest('.organ-block')).display !== 'none').length, count: document.getElementById('hub-count')?.textContent, pressed: document.querySelector('#filters [aria-pressed="true"]')?.dataset.system }));
+if (!(an.blocks === 1 && an.cards >= 1 && an.pressed === 'heart' && /Showing \d+ of \d+ anatomy pages/.test(an.count))) fail(`anatomy hub filter: ${JSON.stringify(an)}`); else ok(`anatomy hub filter: ?system=heart → ${an.cards} card(s), "${an.count}"`);
 
 // 4d. clinical layer: full-depth medication page, full-depth test page, comparison page, interaction checker
 await page.goto(detailUrl('medications', 'medication.html', 'amlodipine'), { waitUntil: 'load' }); await rendered();

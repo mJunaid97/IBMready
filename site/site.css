@@ -572,6 +572,24 @@ dl.ix dd { margin: 0; }
   .check-cta .btn { width: 100%; justify-content: center; }
 }
 
+/* hub filter toolbar: text filter, category chips, facet selects and the live result count (site/entity.js renderIndex,
+   search/index.js, anatomy and medical-terms hubs). [hidden] wins over any display rule so hidden A–Z bars, groups and
+   buttons really disappear. */
+[hidden] { display: none !important; }
+.hub-filters { margin: 4px 0 8px; }
+.hub-filters .search-row { margin: 12px 0 10px; }
+.hub-count { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 6px 14px; margin: 0 0 12px; }
+.hub-count p { margin: 0; font-size: 14px; color: var(--text-secondary); }
+.hub-count .btn-text { padding-left: 8px; padding-right: 8px; }
+.filters .chip[aria-pressed="true"] { background: var(--accent-soft); border-color: var(--brand-teal); box-shadow: inset 0 0 0 1px var(--brand-teal); color: var(--accent-ink); font-weight: 600; }
+.facets label.facet select { flex: 1 1 140px; }
+@media (max-width: 700px) {
+  .facets { gap: 8px 12px; }
+  .facets .facet { flex: 1 1 calc(50% - 6px); }
+  .facets select { max-width: 100%; width: 100%; }
+}
+@media (max-width: 420px) { .facets .facet { flex-basis: 100%; } }
+
 /* ================================================================== 16. responsive */
 @media (max-width: 1080px) {
   .nav .menu { grid-template-columns: repeat(2, 1fr); }

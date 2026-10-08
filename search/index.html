@@ -21,7 +21,9 @@
   <h1>Search Anatomy Nexus</h1>
   <p class="lead">One index over the whole platform: <span id="count">…</span> structures, organs, systems, regions, terms and clinical topics.</p>
   <div class="search-row"><input id="q" type="search" placeholder="Try: femur, chest pain, ECG, statin, knee…" aria-label="Search" autofocus></div>
-  <div class="filters" id="filters"></div>
+  <div class="filters" id="filters" role="group" aria-label="Filter by type"></div>
+  <div class="facets" id="facets" role="group" aria-label="Filter by body system"></div>
+  <p class="muted small" id="result-count" role="status" aria-live="polite"></p>
   <div id="results"></div>
 </main>
 <script type="module" src="index.js"></script>

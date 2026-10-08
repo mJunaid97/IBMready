@@ -549,15 +549,44 @@ export function urgentHtml(type, e) {
 }
 
 function letterOf(name) { const c = name.replace(/^the /i, '').charAt(0).toUpperCase(); return /[A-Z]/.test(c) ? c : '#'; }
+/** Hub facets per section: [field, vocabulary key or null, label]. A vocabulary key names a list in data/content/vocabularies.json
+ *  (ids → names); without one the option labels come from FACET_LABEL or the raw value. The body-system facet is added to
+ *  every hub from each item's anatomy (its systems plus the systems of its organs). Facet state lives in the URL
+ *  (?cat=…&q=…&specimens=serum&system=heart) so a filtered view can be linked, bookmarked and restored. */
+const HUB_FACETS = {
+  tests: [['kind', 'testKinds', 'Kind'], ['specimens', 'specimens', 'Specimen'], ['methods', 'methods', 'Method'], ['depth', null, 'Detail']],
+  medications: [['routeIds', 'routes', 'Route'], ['dosageFormIds', 'dosageForms', 'Dosage form'], ['productType', 'productTypes', 'Product type'], ['depth', null, 'Detail']],
+  imaging: [['modality', 'imagingModalities', 'Modality'], ['radiation', null, 'Ionising radiation']],
+  symptoms: [['region', null, 'Body region']],
+  'first-aid': [['emergency', null, 'Urgency']],
+  targets: [['kind', null, 'Target kind']],
+};
+const FACET_LABEL = {
+  depth: { full: 'Full clinical detail', standard: 'Standard overview' },
+  emergency: { true: 'Emergency (call for help first)', false: 'Not usually an emergency' },
+  radiation: { none: 'None', low: 'Low dose', moderate: 'Moderate dose' },
+  region: { head: 'Head and neck', chest: 'Chest', abdomen: 'Abdomen', pelvis: 'Pelvis', back: 'Back', arms: 'Arms and hands', legs: 'Legs and feet', general: 'General or whole body' },
+  kind: { receptor: 'Receptor', enzyme: 'Enzyme', transporter: 'Transporter', 'ion channel': 'Ion channel', pathway: 'Pathway', protein: 'Protein', other: 'Other' },
+};
+const FACET_ORDER = { radiation: ['none', 'low', 'moderate'], depth: ['full', 'standard'], emergency: ['true', 'false'] };
+const RESERVED_PARAMS = new Set(['cat', 'q', 'system', 'id']);
 export async function renderIndex(type) {
   const TT = TYPES[type]; renderHeader(type); renderFooter();
   const main = document.getElementById('main');
-  let items = null, typeData = null, data = null, clinical = null, vocab = null;
-  const load = async () => { if (!typeData) { [typeData, data, clinical, vocab] = await Promise.all([loadType(type), loadData(), loadClinical(), NEEDS_VOCAB.has(type) ? loadVocabularies().catch(() => null) : null]); items = Object.values(typeData.items).sort((a, b) => a.name.localeCompare(b.name)); } };
+  let items = null, typeData = null, data = null, clinical = null, vocab = null, organSystem = null;
+  const load = async () => { if (!typeData) { [typeData, data, clinical, vocab] = await Promise.all([loadType(type), loadData(), loadClinical(), loadVocabularies().catch(() => null)]); items = Object.values(typeData.items).sort((a, b) => a.name.localeCompare(b.name)); organSystem = new Map(data.content.organs.map(o => [o.id, o.system])); } };
   const inCat = (e, id) => (e.categories || [e.category]).includes(id);
-  // facets of the specification's hubs (§96): specimen and method for tests; route, dosage form and product type for medicines
-  const FACETS = { tests: [['specimens', 'specimens', 'Specimen'], ['methods', 'methods', 'Method']], medications: [['routeIds', 'routes', 'Route'], ['dosageFormIds', 'dosageForms', 'Dosage form'], ['productType', 'productTypes', 'Product type']] }[type] || [];
-  const facetValue = (e, field) => Array.isArray(e[field]) ? e[field] : e[field] ? [e[field]] : [];
+  const FACETS = [...(HUB_FACETS[type] || []), ['system', '@systems', 'Body system']];
+  const systemsOf = (e) => [...new Set([...(e.anatomy?.systems || []), ...(e.anatomy?.organs || []).map(id => organSystem.get(id)).filter(Boolean)])];
+  const facetValue = (e, field) => field === 'system' ? systemsOf(e) : field === 'depth' ? [e.depth === 'full' ? 'full' : 'standard'] : Array.isArray(e[field]) ? e[field].map(String) : e[field] !== undefined && e[field] !== null && e[field] !== '' ? [String(e[field])] : [];
+  const facetOptions = (field, key) => {
+    const used = new Map(); for (const e of items) for (const v of facetValue(e, field)) used.set(v, (used.get(v) || 0) + 1);
+    let opts;
+    if (key === '@systems') opts = data.atlas.systems.filter(s => used.has(s.id)).map(s => ({ id: s.id, name: s.name }));
+    else if (key && vocab?.[key]) opts = vocab[key].filter(v => used.has(v.id)).map(v => ({ id: v.id, name: v.name }));
+    else { const order = FACET_ORDER[field]; opts = [...used.keys()].sort((a, b) => order ? order.indexOf(a) - order.indexOf(b) : String(FACET_LABEL[field]?.[a] || a).localeCompare(String(FACET_LABEL[field]?.[b] || b))).map(v => ({ id: v, name: FACET_LABEL[field]?.[v] || v })); }
+    return opts.map(o => ({ ...o, n: used.get(o.id) }));
+  };
   const sysName = (id) => data.atlas.systems.find(s => s.id === id)?.name; const organName = (id) => data.content.organs.find(o => o.id === id)?.name;
   const cardHtml = (e, cats) => {
     const catName = (id) => cats.find(c => c.id === id)?.name || '';
@@ -568,13 +597,15 @@ export async function renderIndex(type) {
     const by = new Map(); for (const e of list) { const L = letterOf(e.name); if (!by.has(L)) by.set(L, []); by.get(L).push(e); }
     return [...by].map(([L, es]) => `<h2 class="az-h" id="az-${L === '#' ? 'other' : L}">${L}</h2><div class="grid grid-3">${es.map(e => cardHtml(e, cats)).join('')}</div>`).join('');
   };
+  const plural = TT.name.toLowerCase();
+  const countText = (n, total, filtered) => !filtered ? `Showing all ${total} ${plural}` : n === 0 ? `No ${plural} match the current filters` : `Showing ${n} of ${total} ${plural}`;
   if (!PRERENDERED) {
     await load();
     const cats = (typeData.meta.categories || []).map(c => ({ ...c, n: items.filter(i => inCat(i, c.id)).length })).filter(c => c.n);
-    const facetHtml = FACETS.map(([field, key, label]) => { const used = [...new Set(items.flatMap(e => facetValue(e, field)))]; const opts = (vocab?.[key] || []).filter(v => used.includes(v.id)); return opts.length ? `<label class="facet">${esc(label)} <select data-facet="${esc(field)}"><option value="">Any</option>${opts.map(v => `<option value="${esc(v.id)}">${esc(v.name)} (${items.filter(e => facetValue(e, field).includes(v.id)).length})</option>`).join('')}</select></label>` : ''; }).join('');
+    const facetHtml = FACETS.map(([field, key, label]) => { const opts = facetOptions(field, key); return opts.length > 1 ? `<label class="facet">${esc(label)} <select data-facet="${esc(field)}"><option value="">Any</option>${opts.map(o => `<option value="${esc(o.id)}">${esc(o.name)} (${o.n})</option>`).join('')}</select></label>` : ''; }).join('');
     const letters = [...new Set(items.map(e => letterOf(e.name)))];
     const priority = (typeData.meta.priority || []).map(id => typeData.items[id]).filter(Boolean);
-    const systemsHere = data.atlas.systems.filter(s => items.some(e => e.anatomy?.systems?.includes(s.id) || (e.anatomy?.organs || []).some(oid => data.content.organs.find(o => o.id === oid)?.system === s.id)));
+    const systemsHere = data.atlas.systems.filter(s => items.some(e => systemsOf(e).includes(s.id)));
     const crumbs = [{ name: 'Home', href: link.home() }, { name: TT.name }];
     const path = paths.dir(TT.dir); const title = `${TT.name}: ${type === 'first-aid' ? 'Step-by-Step Guides' : type === 'health' ? 'Lifestyle & the Body' : 'A–Z Guide'} | ${SITE.name}`;
     applyMeta({ title, description: typeData.meta.about || TT.blurb, path, breadcrumbs: crumbs, jsonld: [webPageNode({ path, title, description: metaDescription(typeData.meta.about || TT.blurb), type: 'CollectionPage', updated: typeData.meta.updated }),
@@ -582,32 +613,55 @@ export async function renderIndex(type) {
     const tools = type === 'medications' || type === 'drug-classes' ? `<p class="actions"><a class="btn btn-primary" href="${link.checker()}">Drug Interaction Checker</a><a class="btn" href="${link.medicationClasses()}">Classes by therapeutic area</a><a class="btn" href="${link.compare()}">Comparisons</a><a class="btn" href="${link.tools()}">All clinical tools</a></p>` : type === 'tests' || type === 'biomarkers' ? `<p class="actions"><a class="btn btn-primary" href="${link.testCategories()}">Browse the ${SITE.counts?.testCategories || 36} test categories</a><a class="btn" href="${link.compare()}">Compare tests and markers</a></p>` : '';
     main.innerHTML = `
       ${breadcrumbHtml(crumbs)}
-      <div class="section-hero"><div class="eyebrow">${iconSvg(TT.icon)} Section · ${items.length} ${esc(TT.name.toLowerCase())}</div><h1>${esc(TT.name)}</h1><p class="lead">${esc(typeData.meta.about || TT.blurb)}</p>${tools}</div>
+      <div class="section-hero"><div class="eyebrow">${iconSvg(TT.icon)} Section · ${items.length} ${esc(plural)}</div><h1>${esc(TT.name)}</h1><p class="lead">${esc(typeData.meta.about || TT.blurb)}</p>${tools}</div>
       ${priority.length ? `<section class="start-here"><h2>Start here</h2><div class="chips">${priority.map(e => `<a class="chip chip-lg" href="${entityLink(type, e.id)}">${esc(e.name)}</a>`).join('')}</div></section>` : ''}
-      <div class="search-row"><label class="sr-only" for="q">Filter ${esc(TT.name.toLowerCase())}</label><input id="q" type="search" placeholder="Filter ${esc(TT.name.toLowerCase())}…"></div>
-      <div class="filters" id="filters" role="group" aria-label="Browse by category"><button class="chip is-active" data-cat="all" type="button">All ${items.length}</button>${cats.map(c => `<button class="chip" data-cat="${esc(c.id)}" type="button"${type === 'tests' ? ` title="Category page: ${esc(c.name)}"` : ''}>${esc(c.name)} ${c.n}</button>`).join('')}</div>
-      ${facetHtml ? `<div class="facets" id="facets" role="group" aria-label="Filter by facet">${facetHtml}</div>` : ''}
+      <section class="hub-filters" aria-label="Filter ${esc(plural)}">
+        <div class="search-row"><label class="sr-only" for="q">Filter ${esc(plural)} by name, alias or abbreviation</label><input id="q" type="search" placeholder="Filter ${esc(plural)} by name, alias or abbreviation…" autocomplete="off"></div>
+        <div class="filters" id="filters" role="group" aria-label="Browse by category"><button class="chip is-active" data-cat="all" type="button" aria-pressed="true">All ${items.length}</button>${cats.map(c => `<button class="chip" data-cat="${esc(c.id)}" type="button" aria-pressed="false"${type === 'tests' ? ` title="Category page: ${esc(c.name)}"` : ''}>${esc(c.name)} ${c.n}</button>`).join('')}</div>
+        ${facetHtml ? `<div class="facets" id="facets" role="group" aria-label="Filter by facet">${facetHtml}</div>` : ''}
+        <div class="hub-count"><p id="hub-count" role="status" aria-live="polite">${countText(items.length, items.length, false)}</p><button type="button" class="btn btn-sm btn-text" id="clear-filters" hidden>Clear filters</button></div>
+      </section>
       <nav class="az" aria-label="A to Z">${letters.map(L => `<a href="#az-${L === '#' ? 'other' : L}">${L}</a>`).join('')}</nav>
       <div id="cards">${grouped(items, cats)}</div>
       ${systemsHere.length ? `<h2>Browse by body system</h2><div class="chips">${systemsHere.map(s => `<a class="chip" href="${link.systemPage(s.id)}" style="border-color:${s.color}">${esc(s.name)}</a>`).join('')}</div>` : ''}
       <h2>Other sections</h2>
       <div class="chips">${TYPE_ORDER.filter(t => t !== type).map(t => `<a class="chip" href="${typeLink(t)}">${iconSvg(TYPES[t].icon)}${esc(TYPES[t].name)}</a>`).join('')}<a class="chip" href="${link.page('anatomy')}">${iconSvg('anatomy')}Anatomy</a><a class="chip" href="${link.search()}">${iconSvg('search')}Search everything</a></div>`;
   }
-  // ---- interactivity (both modes): category filter and text filter re-render only the card grid
+  // ---- interactivity (both modes): category chips, text filter and facet selects re-render only the card grid; the
+  // state is mirrored into the URL (replaceState) so the view survives reload and can be shared
   let cat = 'all'; const q = document.getElementById('q'); const filters = document.getElementById('filters'); const cards = document.getElementById('cards'); const az = document.querySelector('.az');
+  const count = document.getElementById('hub-count'); const clear = document.getElementById('clear-filters'); const selects = () => [...document.querySelectorAll('#facets select')];
+  const setCat = (id) => { cat = id; for (const x of filters.children) { const on = x.dataset.cat === id; x.classList.toggle('is-active', on); x.setAttribute('aria-pressed', String(on)); } };
+  const syncUrl = () => {
+    const u = new URL(location.href); const sp = u.searchParams;
+    for (const k of [...sp.keys()]) if (RESERVED_PARAMS.has(k) || FACETS.some(([f]) => f === k)) sp.delete(k);
+    if (cat !== 'all') sp.set('cat', cat); const s = q.value.trim(); if (s) sp.set('q', s);
+    for (const sel of selects()) if (sel.value) sp.set(sel.dataset.facet, sel.value);
+    if (u.href !== location.href) history.replaceState(null, '', u);
+  };
   async function render() {
     await load();
     const cats = (typeData.meta.categories || []);
     const s = q.value.trim().toLowerCase();
-    const facets = [...document.querySelectorAll('#facets select')].map(sel => [sel.dataset.facet, sel.value]).filter(([, v]) => v);
-    const list = items.filter(e => (cat === 'all' || inCat(e, cat)) && facets.every(([f, v]) => facetValue(e, f).includes(v)) && (!s || [e.name, ...(e.aliases || []), ...(e.abbreviations || []), ...(e.ingredientVariants || []), lead(e)].join(' ').toLowerCase().includes(s)));
+    const facets = selects().map(sel => [sel.dataset.facet, sel.value]).filter(([, v]) => v);
+    const list = items.filter(e => (cat === 'all' || inCat(e, cat)) && facets.every(([f, v]) => facetValue(e, f).includes(v)) && (!s || [e.name, ...(e.aliases || []), ...(e.abbreviations || []), ...(e.ingredientVariants || []), ...(e.searchTerms || []), lead(e)].join(' ').toLowerCase().includes(s)));
     const all = cat === 'all' && !s && !facets.length;
     if (az) az.hidden = !all;
-    cards.innerHTML = list.length ? (all ? grouped(list, cats) : `<div class="grid grid-3">${list.map(e => cardHtml(e, cats)).join('')}</div>`) : emptyHtml('Nothing matches', `No ${esc(TT.name.toLowerCase())} match that filter. Try a shorter word, an alias or another category.`, `<a class="btn btn-sm" href="${link.search(s)}">Search the whole site</a>`);
+    if (count) count.textContent = countText(list.length, items.length, !all);
+    if (clear) clear.hidden = all;
+    cards.innerHTML = list.length ? (all ? grouped(list, cats) : `<div class="grid grid-3">${list.map(e => cardHtml(e, cats)).join('')}</div>`) : emptyHtml('Nothing matches', `No ${esc(plural)} match that combination. Try a shorter word, an alias, another category, or clear a facet.`, `<button type="button" class="btn btn-sm" data-clear>Clear filters</button><a class="btn btn-sm btn-text" href="${link.search(q.value.trim())}">Search the whole site</a>`);
+    syncUrl();
   }
-  filters.addEventListener('click', (ev) => { const b = ev.target.closest('[data-cat]'); if (!b) return; cat = b.dataset.cat; for (const x of filters.children) x.classList.toggle('is-active', x === b); render(); });
+  const reset = () => { setCat('all'); q.value = ''; for (const sel of selects()) sel.value = ''; render(); q.focus(); };
+  filters.addEventListener('click', (ev) => { const b = ev.target.closest('[data-cat]'); if (!b) return; setCat(b.dataset.cat); render(); });
   q.addEventListener('input', render);
   document.getElementById('facets')?.addEventListener('change', render);
-  const want = param('cat');
-  if (want) { await load(); if ((typeData.meta.categories || []).some(c => c.id === want)) { cat = want; for (const x of filters.children) x.classList.toggle('is-active', x.dataset.cat === want); render(); } }
+  clear?.addEventListener('click', reset);
+  cards.addEventListener('click', (ev) => { if (ev.target.closest('[data-clear]')) reset(); });
+  // restore a linked state: ?cat=, ?q= and one parameter per facet (validated against the real options)
+  const sp = new URLSearchParams(location.search); let restored = false;
+  if (sp.get('cat')) { await load(); if ((typeData.meta.categories || []).some(c => c.id === sp.get('cat'))) { setCat(sp.get('cat')); restored = true; } }
+  if (sp.get('q')) { q.value = sp.get('q'); restored = true; }
+  for (const sel of selects()) { const v = sp.get(sel.dataset.facet); if (v && [...sel.options].some(o => o.value === v)) { sel.value = v; restored = true; } }
+  if (restored) render();
 }

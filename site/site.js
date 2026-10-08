@@ -381,9 +381,9 @@ export async function searchEntries() {
   if (_entries) return _entries;
   const idx = await loadSearchIndex();
   const rank = { system: 3, organ: 2.9, conditions: 2.7, symptoms: 2.7, 'first-aid': 2.6, region: 2.4, tests: 2.5, imaging: 2.5, procedures: 2.5, medications: 2.5, 'drug-classes': 2.4, biomarkers: 2.4, targets: 2.3, product: 2.3, physiology: 2.4, health: 2.4, term: 2.2, structure: 2, 'test-category': 2.3, 'medication-area': 2.2, 'test-concept': 1.9, 'class-concept': 1.9 };
-  _entries = idx.entries.map(([type, id, name, aliases, sub]) => {
+  _entries = idx.entries.map(([type, id, name, aliases, sub, systems]) => {
     const al = aliases ? aliases.split('|').map(normalize) : [];
-    return { type, id, name, norm: normalize(name), aliases: al, words: [name, ...al].join(' ').toLowerCase().split(/[^a-z0-9]+/).filter(Boolean), sub, rank: rank[type] ?? 2 };
+    return { type, id, name, norm: normalize(name), aliases: al, words: [name, ...al].join(' ').toLowerCase().split(/[^a-z0-9]+/).filter(Boolean), sub, systems: systems ? systems.split('|') : [], rank: rank[type] ?? 2 };
   });
   return _entries;
 }

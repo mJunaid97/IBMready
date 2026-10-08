@@ -1,5 +1,21 @@
 # Changelog
 
+## Unreleased
+
+- Filters: every section hub (conditions, symptoms, physiology, tests, biomarkers, imaging, procedures, medications,
+  drug classes, drug targets, first aid, health) gains a body-system facet derived from each page's anatomy, a live
+  result count announced to assistive technology, a clear-filters control, pressed-state category chips and an empty
+  state with a way out; tests add a kind and a detail facet, medications a detail facet, imaging modality and radiation
+  dose, symptoms body region, first aid urgency, drug targets target kind. The filter state lives in the URL
+  (`?cat=&q=&system=&specimens=…`), so a filtered view can be bookmarked, shared and restored, and the A–Z bar now
+  really hides while a filter is active (a global `[hidden]` rule that no display rule can override)
+- Search: the search page filters by type and by body system (the index now carries each page's systems), shows a
+  result count and keeps type and system in the URL alongside the query
+- Anatomy and medical terms: the anatomy hub gets a name filter, body-system chips and a "full articles" view that hide
+  cards and sections in place; the terminology dictionary gets a live count, a clear control and URL state
+- QA: five new smoke checks cover the hub filter state, the clear control, deep links, the search filters and the
+  anatomy hub filter (79 checks)
+
 ## v1.9.0 — 2026-10-07
 
 Fixes from the independent site audit (clinical content integrity, the interaction checker, mobile layout, editorial

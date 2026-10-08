@@ -14,7 +14,7 @@ Writes  data/content/atlas-content.json  (systems, organs with resolved pieces a
                                           resolved anatomy and computed backlinks: the graph)
         data/content/clinical.json       (compact organ/system/structure -> entity index for
                                           the 3D explorer)
-        data/content/search-index.json   (one flat index over every entity for site search)
+        data/content/search-index.json   (one flat index over every entity for site search: [type, id, name, aliases, sub, systems])
         data/content/aliases.json        (URL alias -> canonical slug, per section: the 301 table)
         data/content/types/<type>.json   (one file per entity type)
         data/content/test-categories.json (the 36 test categories with their pages and catalogued concepts)
@@ -906,10 +906,11 @@ def build_search_index(atlas, out_organs, out_regions, terms, know):
     unslug = lambda al: [a.replace("-", " ") for a in al or []]
     for s in atlas["systems"]:   # a hidden-by-default layer (female body, surgical anatomy) is labelled as such, not as a body system of the reference body
         kind = "surgical anatomy layer" if s.get("layer") == "gender-affirming" else "atlas layer" if s.get("hidden") else "body system"
-        entries.append(["system", s["id"], s["name"], "|".join(s.get("searchTerms") or []), f"{kind} · {s['count']} pieces"])
-    for o in out_organs: entries.append(["organ", o["id"], o["name"], "|".join(o.get("aliases", []) + unslug(o.get("urlAliases")) + list(o.get("searchTerms") or [])), (f"{len(o['structures'])} structures" if o["structures"] else "anatomy article") + f" · {sysname.get(o['system'], '')}"])
+        entries.append(["system", s["id"], s["name"], "|".join(s.get("searchTerms") or []), f"{kind} · {s['count']} pieces", s["id"]])
+    organ_system = {o["id"]: o["system"] for o in out_organs}
+    for o in out_organs: entries.append(["organ", o["id"], o["name"], "|".join(o.get("aliases", []) + unslug(o.get("urlAliases")) + list(o.get("searchTerms") or [])), (f"{len(o['structures'])} structures" if o["structures"] else "anatomy article") + f" · {sysname.get(o['system'], '')}", o["system"]])
     for r in out_regions: entries.append(["region", r["id"], r["name"], "", f"{len(r['structures'])} structures"])
-    for s in atlas["structures"]: entries.append(["structure", s["id"], s["name"], "", sysname.get(s["system"], s["system"])])
+    for s in atlas["structures"]: entries.append(["structure", s["id"], s["name"], "", sysname.get(s["system"], s["system"]), s["system"]])
     catname = {c["id"]: c["name"] for c in terms.get("categories", [])}
     for t in terms["terms"]: entries.append(["term", t["id"], t["term"], "", catname.get(t["category"], "Term")])
     extra = TX.page_aliases_from_catalogue(know["conceptPage"])
@@ -927,7 +928,10 @@ def build_search_index(atlas, out_organs, out_regions, terms, know):
             for x in names:
                 if x.lower() == e["name"].lower() or x.lower() in seen: continue
                 seen.add(x.lower()); uniq.append(x)
-            entries.append([key, eid, e["name"], "|".join(uniq), (lead_of(e) or "")[:110]])
+            # sixth field: the body systems the page belongs to (its own plus its organs'), for the search page's system filter
+            an = e.get("anatomy") or {}
+            systems = list(dict.fromkeys(list(an.get("systems") or []) + [organ_system[oid] for oid in (an.get("organs") or []) if oid in organ_system]))
+            entries.append([key, eid, e["name"], "|".join(uniq), (lead_of(e) or "")[:110], "|".join(systems)])
     entries.extend(TX.search_entries(know["testCategories"], know["medicationTaxonomy"], know["conceptPage"]))
     for p in know["interactions"]["products"]:
         entries.append(["product", p["id"], p["name"], "|".join(p["aliases"]), "Product: " + " + ".join(i["name"] for i in p["ingredients"])])
