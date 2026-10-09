@@ -195,6 +195,21 @@ medicine. A medication's `routeIds` and `dosageFormIds` are the only route and d
 `routeNote` and `regimenNote` (formerly `routes` and `forms`) are free text from the cited reference, the
 latter shown as "Usual preparations" and never as a dose for an individual.
 
+### 5.5 Source-grounded enrichment of existing pages
+
+When a thin or under-sourced page is deepened (the `sparse_public_page` and `needs_source` queues, the short physiology
+pages, organs without an anatomy article), the added text is written from the retrieved text of the cited publishers
+only: each writer retrieves the publisher's page through a web search restricted to that publisher's domain, writes
+from the returned excerpt, cites the exact URL the search returned, and records which claims each source supports.
+A second, adversarial pass re-retrieves every cited URL and classifies each new sentence as supported, general
+textbook knowledge, unsupported, wrong or unsafe; unsupported, wrong and unsafe sentences are removed before the
+content is compiled. Numeric reference ranges, cut-offs and doses are not introduced into prose by this process
+(a threshold is a separate sourced record, §3), medication text stays at the level of the BNF and NHS patient pages,
+and the CPR and choking sequences are not touched (§5.2). The enriched pages keep their existing review status
+(`source-verified`: facts checked against the cited sources, not clinically reviewed) because that is exactly what
+the two passes establish, and the file's `_updated` date records when the sources were checked. Every page so
+treated ends with at least two references from different publishers, at least one of them an official health body.
+
 ## 6. Adding content
 
 1. **A biomarker**: add a key to `content/biomarkers.json` (name, aliases, category, summary,
