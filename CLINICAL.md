@@ -209,6 +209,10 @@ and the CPR and choking sequences are not touched (§5.2). The enriched pages ke
 (`source-verified`: facts checked against the cited sources, not clinically reviewed) because that is exactly what
 the two passes establish, and the file's `_updated` date records when the sources were checked. Every page so
 treated ends with at least two references from different publishers, at least one of them an official health body.
+A draft that has had only the first pass is not added to the content files: it stays in `content/drafts/anatomy/` (not
+compiled, packaged or served) with its sentence ledger and a README that says what remains. The web search tool allows
+200 calls per turn, shared by every agent in the turn, and each pass costs roughly 25 searches per article, so plan three
+or four articles per turn.
 
 ## 6. Adding content
 

@@ -15,7 +15,9 @@ block. In the browser the same scripts then only *hydrate*: they bind the menu, 
 hub filters and the click-to-load 3D model, and never redraw content.
 
 `tools/qa/smoke.mjs` (run by the QA workflow on every push and by the live check against production)
-verifies the raw HTML of sample pages contains all of that and no `Loading…` placeholder.
+verifies the raw HTML of sample pages contains all of that and no `Loading…` placeholder. Its sitemap crawl also asserts,
+for every indexable page, a title of 15 to 65 characters, a meta description of 70 to 160, exactly one `h1` and no `..`
+address in the breadcrumb structured data.
 
 ## 2. URL architecture
 
@@ -64,10 +66,14 @@ slash → with slash, `/organs/<id>/` → `/anatomy/<id>/`, `/learn/terminology.
 
 * Title pattern `[Entity]: [Descriptor] | Anatomy Nexus`, descriptor per type (conditions: *Causes, Symptoms &
   Treatment*; tests: *Purpose, Procedure & Results*; medications: *Uses, Mechanism & Side Effects*; anatomy
-  articles carry their own, e.g. *Heart Anatomy: Chambers, Valves, Blood Supply & Function*). The descriptor is
-  dropped when the title would exceed 70 characters. Every title and description is unique (asserted).
-* Meta description from the entity's lead paragraph, cut at a word boundary under 155 characters. Per-entity
-  overrides: `seoTitle`, `metaDescription`.
+  articles carry their own, e.g. *Heart Anatomy: Chambers, Valves, Blood Supply & Function*). A title is at most
+  65 characters: a longer descriptor is cut back to its leading topics (*Purpose, Procedure & Results* becomes
+  *Purpose, Procedure*) and dropped only when even one topic does not fit. Every title and description is unique
+  (asserted).
+* Meta description from the entity's lead paragraph: whole sentences up to 160 characters, then the next sentence's
+  leading clause when the first sentence alone would be thin, and for a one-line lead a closing "Covers <the type's
+  descriptor>, with cited sources." so no description is shorter than about 70 characters. Per-entity overrides:
+  `seoTitle`, `metaDescription`.
 * Canonical, robots, `og:type/site_name/title/description/url/image` (a per-page 3D preview image) and
   Twitter card on every page; `google-site-verification` / `msvalidate.01` when set in `content/site.json`.
 * JSON-LD `@graph`: `Organization`, `WebSite` (with `SearchAction` → `/search/?q=`), `BreadcrumbList`,

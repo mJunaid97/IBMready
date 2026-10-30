@@ -15,6 +15,33 @@
   cards and sections in place; the terminology dictionary gets a live count, a clear control and URL state
 - QA: five new smoke checks cover the hub filter state, the clear control, deep links, the search filters and the
   anatomy hub filter (79 checks)
+- Reference links: the weekly link check failed on five dead addresses (the Thames Valley Cancer Alliance oesophageal
+  cancer page, two FDA drug safety communications, NHS biopsy and NHS breast lumps) and listed 90 redirects. All are
+  fixed: the NHS medicine sub-pages that now redirect to one page are merged into a single reference, renamed pages
+  (PCOS is now PMOS on nhs.uk, gender dysphoria and incongruence) carry their new titles, the two FDA communications
+  are replaced by the FDA prescribing information that carries the same warnings, the dead Oxford leaflet is removed,
+  the NHS pulse page, which now redirects to the atrial fibrillation page, is replaced by the British Heart Foundation
+  page, the PCOS page answers to PMOS and polyendocrine metabolic ovarian syndrome, and two mislabelled citations are
+  corrected (a "Pulse oximetry" reference that pointed at the generic NHS blood-tests page is removed; the lungs article's
+  "Lungs and airways" reference is titled for the COPD page it points to)
+- Vulva page (issue #10): the surrounding-structures view no longer highlights the male reference body's hip bones or
+  switches on its skin; it frames the vagina, schematic urethra, pudendal veins, anal sphincter and levator ani with the
+  female layer on, and the page now says that the atlas's base body is an adult male body
+- Review queues: the FDG ingredient variant and the paracetamol and insulin class text no longer raise data-conflict
+  entries (an ingredient variant may match a synonym of the name; the class text names the linked class)
+- SEO: titles are capped at 65 characters (a long descriptor is shortened, not dropped outright), short meta
+  descriptions are completed, the hub pages with cards gain a hidden section heading so the outline no longer jumps from
+  h1 to h3, the 3D explorer has a main landmark, and the Drug Interaction Checker keeps its prerendered markup (faster
+  largest paint) and gives the selected-medicines group an ARIA role
+- QA: the smoke test's sitemap crawl also asserts, for every indexable page, a title of 15 to 65 characters, a meta
+  description of 70 to 160, exactly one h1 and no `..` address in the breadcrumb structured data
+- CI: actions/checkout 5, setup-python 7, setup-node 5 and upload-artifact 7 (Node 24 runtimes; GitHub warned that the
+  Node 20 actions are being forced to Node 24), Playwright 1.64.1
+- Content depth: first-pass drafts of anatomy articles for ten of the eighteen organs that still have none (skull, small
+  intestine, bladder and urethra, ureters, testes, bony pelvis, hand, adrenals, pituitary, thymus), each with a sentence
+  ledger, are parked in `content/drafts/anatomy/` (not compiled, packaged or served) until the second, adversarial source
+  check has been run; `content/drafts/thresholds/` holds the work plan for the twelve tests whose numeric cut-offs still
+  have no sourced threshold record. Both were cut short by the web-search limit of 200 calls per turn
 
 ## v1.9.0 — 2026-10-07
 
