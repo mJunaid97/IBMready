@@ -48,6 +48,8 @@ const $ = (id) => document.getElementById(id);
 
 // ------------------------------------------------------------------ shell
 function shell() {
+  // the prerendered page already carries this markup: keep it, so the largest paint stays the one the visitor saw
+  if (root.querySelector('#chk-chips')) return;
   root.innerHTML = `
   <div class="callout important"><b>Before you use this tool.</b> ${esc(COPY.before)}</div>
   <section class="chk-card" aria-labelledby="chk-add-h">
@@ -60,7 +62,7 @@ function shell() {
     </div>
     <p class="chk-msg" id="chk-msg" role="status" aria-live="polite"></p>
     <div class="chk-quick" id="chk-quick"><span>Examples:</span>${QUICK.map(id => `<button type="button" class="chip" data-add="${esc(id)}">${esc(cap(id))}</button>`).join('')}</div>
-    <div class="chk-chips" id="chk-chips" aria-label="Selected medications"></div>
+    <div class="chk-chips" id="chk-chips" role="group" aria-label="Selected medications"></div>
     <div class="chk-actions">
       <button type="button" class="btn btn-primary" id="chk-check">Check interactions</button>
       <button type="button" class="btn" id="chk-clear">Clear all</button>

@@ -510,8 +510,11 @@ export async function renderDetail(type) {
   const title = seoTitle(e.name, e.seoTitle || TT.descriptor);
   const path = entityPath(type, e.id);
   const descFallback = `${e.name}: ${TT.descriptor || TT.singular}${e.aliases?.length ? ` (also ${e.aliases.slice(0, 2).join(', ')})` : ''}. Sourced educational summary on Anatomy Nexus.`;
-  applyMeta({ title, description: e.metaDescription || metaDescription(lead(e), 155, descFallback), path, robots: e.seo?.index === false ? 'noindex,follow' : 'index,follow', image: hash ? link.preview(hash) : undefined, breadcrumbs: crumbs,
-    jsonld: [webPageNode({ path, title, description: metaDescription(lead(e), 155, descFallback), entityId: canonical(path) + '#entity', updated: e.updated, reviewed: e.review?.reviewedAt && e.review?.reviewer?.name ? e.review.reviewedAt : undefined, references: e.references }), entityNode(type, e, ctx)] });
+  // a one-line lead is too short to be a search snippet: say what the page covers
+  const fullDesc = (d) => { const tail = TT.descriptor ? ` Covers ${TT.descriptor.toLowerCase()}, with cited sources.` : ''; return d && d.length < 90 && d.length + tail.length <= 160 ? d + tail : d; };
+  const description = fullDesc(e.metaDescription || metaDescription(lead(e), 160, descFallback));
+  applyMeta({ title, description, path, robots: e.seo?.index === false ? 'noindex,follow' : 'index,follow', image: hash ? link.preview(hash) : undefined, breadcrumbs: crumbs,
+    jsonld: [webPageNode({ path, title, description: metaDescription(description), entityId: canonical(path) + '#entity', updated: e.updated, reviewed: e.review?.reviewedAt && e.review?.reviewer?.name ? e.review.reviewedAt : undefined, references: e.references }), entityNode(type, e, ctx)] });
   main.innerHTML = `
     ${breadcrumbHtml(crumbs)}
     <div class="eyebrow">${esc(TT.singular)}${cat ? ` · ${esc(cat.name)}` : ''}${e.emergency ? ' · <span class="badge emergency">emergency</span>' : ''}${e.depth === 'full' ? ' · <span class="badge live">full clinical detail</span>' : ''}</div>

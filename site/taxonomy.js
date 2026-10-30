@@ -49,7 +49,7 @@ export async function renderTestCategory() {
   const group = tc.groups.find(g => g.id === c.group);
   const crumbs = [{ name: 'Home', href: link.home() }, { name: TYPES.tests.name, href: typeLink('tests') }, { name: 'Categories', href: link.testCategories() }, { name: c.name }];
   const path = catPath(c.id);
-  const title = seoTitle(`${c.name} tests`, 'Tests, Panels & Studies');
+  const title = seoTitle(`${c.name} tests`, 'Panels & Studies');
   const pages = [...c.pages.tests.map(i => ['tests', i]), ...c.pages.imaging.map(i => ['imaging', i]), ...c.pages.procedures.map(i => ['procedures', i])];
   const description = `${c.summary} ${c.counts.pages} test${c.counts.pages === 1 ? '' : 's'} with a full page and ${c.counts.withoutPage} further catalogued concepts.`;
   applyMeta({ title, description, path, robots: c.seo.index ? 'index,follow' : 'noindex,follow', breadcrumbs: crumbs, jsonld: [webPageNode({ path, title, description: metaDescription(description), type: 'CollectionPage', updated: tc.updated }),

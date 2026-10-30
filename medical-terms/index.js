@@ -14,7 +14,7 @@ const termHtml = (t) => {
 };
 if (!PRERENDERED) {
   const path = paths.dir('medical-terms'); const crumbs = [{ name: 'Home', href: link.home() }, { name: 'Medical terms' }];
-  const title = `Medical Terminology: ${terms.terms.length} Anatomical & Clinical Terms | ${SITE.name}`;
+  const title = `Medical Terminology: ${terms.terms.length} Anatomy & Clinical Terms | ${SITE.name}`;
   const description = document.querySelector('meta[name="description"]').content;
   applyMeta({ title, description, path, breadcrumbs: crumbs, jsonld: [webPageNode({ path, title, description: metaDescription(description), type: 'CollectionPage', updated: terms.updated }),
     { '@type': 'DefinedTermSet', '@id': canonical(path) + '#terms', name: `${SITE.name} medical terminology`, hasDefinedTerm: terms.terms.map(t => ({ '@type': 'DefinedTerm', name: t.term, description: t.definition, url: canonical(path) + '#' + t.id })) }] });

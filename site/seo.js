@@ -4,24 +4,45 @@
  * entity node). Called by the page scripts; the prerenderer bakes the result into the static HTML, so
  * crawlers see it in the initial response.
  *
- * Title pattern: "[Entity]: [Descriptor] | Anatomy Nexus" (45–65 characters preferred; the descriptor is
- * dropped when the title would run long). Descriptions are cut at a word boundary under 155 characters.
+ * Title pattern: "[Entity]: [Descriptor] | Anatomy Nexus" (at most 65 characters; a long descriptor is shortened to its
+ * leading topics, then dropped). Descriptions are complete statements of at most 160 characters.
  */
 import { SITE, BRAND, canonical, paths, url, esc } from './site.js';
 
-export const MAX_TITLE = 70;
+export const MAX_TITLE = 65;
 export function seoTitle(name, descriptor) {
   const full = descriptor ? `${name}: ${descriptor} | ${BRAND}` : `${name} | ${BRAND}`;
-  return full.length <= MAX_TITLE || !descriptor ? full : `${name} | ${BRAND}`;
+  if (full.length <= MAX_TITLE) return full;
+  // a name that already carries a subtitle ("Hormone regulation: the hypothalamic-pituitary axis") is cut at the colon
+  const head = String(name).split(': ')[0];
+  if (head !== name) return seoTitle(head, descriptor);
+  if (!descriptor) return full;
+  // keep the descriptor's leading topics that fit ("Purpose, Procedure & Results" -> "Purpose, Procedure"), else none
+  const topics = String(descriptor).split(/,\s*|\s+&\s+/).filter(Boolean);
+  for (let n = topics.length - 1; n >= 1; n--) {
+    const t = `${name}: ${topics.slice(0, n).join(', ')} | ${BRAND}`;
+    if (t.length <= MAX_TITLE) return t;
+  }
+  return `${name} | ${BRAND}`;
 }
 /** A meta description is a complete statement, never a sentence cut off with an ellipsis: the whole sentences of the
  *  lead that fit, else the lead's first clause, else the caller's fallback (a name-and-type summary). */
-export function metaDescription(text, max = 155, fallback = '') {
+export function metaDescription(text, max = 160, fallback = '') {
   const s = String(text || '').replace(/\s+/g, ' ').trim();
   if (s.length <= max) return s;
   const sentences = s.match(/[^.!?]+[.!?]+(?=\s|$)|[^.!?]+$/g) || [s];
-  let out = '';
-  for (const sen of sentences) { const t = (out + ' ' + sen).trim(); if (t.length > max) break; out = t; }
+  let out = '', used = 0;
+  for (const sen of sentences) { const t = (out + ' ' + sen).trim(); if (t.length > max) break; out = t; used++; }
+  // the next sentence does not fit whole: add its leading clause when that makes a fuller description
+  if (out && used < sentences.length && out.length < 90) {
+    const next = sentences[used].trim(); const room = max - out.length - 2;      // the joining space and the closing full stop
+    const at = Math.max(next.lastIndexOf(', ', room), next.lastIndexOf('; ', room));
+    if (at >= 20) {
+      const clause = next.slice(0, at).replace(/[\s,;]+(and|or|but|with|which|that|to|of|the|a|an|in|on|for|by|as)$/i, '').trim();
+      const t = `${out} ${clause}.`;
+      if (clause.length >= 20 && t.length >= 90 && t.length <= max) return t;
+    }
+  }
   if (out.length >= 60) return out;
   const first = sentences[0].trim();
   const cut = Math.max(first.lastIndexOf('; ', max - 1), first.lastIndexOf(': ', max - 1));
@@ -50,6 +71,9 @@ export function absolute(href) {
   const root = url(''); const s = String(href || '');
   if (s.startsWith(root)) return canonical(s.slice(root.length));
   if (/^https?:\/\//i.test(s)) return s;
+  // a parent-relative address ('../', '../../editorial-policy/') is resolved against this page, so the structured data
+  // never carries '..' in a URL
+  if (s.startsWith('../')) { try { const r = new URL(s, location.href).href; if (r.startsWith(root)) return canonical(r.slice(root.length)); } catch { /* fall through */ } }
   return canonical(s.replace(/^\.\//, ''));
 }
 /** The page-level node every content page carries: author, publisher, dates, review status and structured citations. */

@@ -277,6 +277,13 @@ else {
           if (!canon) { bad++; fail(`sitemap URL has no canonical: ${u}`); }
           else if (canon.replace(/^https?:\/\/[^/]+\//, base).replace(/\/$/, '') !== u.replace(/^https?:\/\/[^/]+\//, base).replace(/\/$/, ''))
             { bad++; fail(`sitemap URL canonicalises elsewhere: ${u} → ${canon}`); }
+          // search snippets: a title of at most 65 characters, a description of 70 to 160, one H1, no '..' in the breadcrumb schema
+          const text = (t) => t.replace(/&amp;/g, '&').replace(/&#39;|&apos;/g, "'").replace(/&quot;/g, '"').replace(/&lt;/g, '<').replace(/&gt;/g, '>');
+          const ttl = text(/<title>([^<]*)<\/title>/i.exec(html)?.[1] || ''); const dsc = text(/<meta[^>]+name="description"[^>]+content="([^"]*)"/i.exec(html)?.[1] || '');
+          if (ttl.length < 15 || ttl.length > 65) { bad++; fail(`sitemap URL title is ${ttl.length} characters (15-65): ${u} “${ttl}”`); }
+          if (dsc.length < 70 || dsc.length > 160) { bad++; fail(`sitemap URL meta description is ${dsc.length} characters (70-160): ${u}`); }
+          if ((html.match(/<h1[\s>]/gi) || []).length !== 1) { bad++; fail(`sitemap URL does not have exactly one h1: ${u}`); }
+          if (/"item":"[^"]*\/\.\.\//.test(html)) { bad++; fail(`sitemap URL carries a '..' address in its structured data: ${u}`); }
         }
       }
     }
