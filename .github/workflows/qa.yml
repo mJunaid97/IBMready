@@ -13,8 +13,8 @@ jobs:
     name: Content graph validates and is up to date
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v7
         with:
           python-version: "3.12"
       - name: Compile content (fails on any dangling link, alias clash or malformed reference)
@@ -23,7 +23,7 @@ jobs:
         run: git diff --exit-code --stat -- data/content site/site-meta.js
       - name: Terminology pipelines (LOINC, RxNorm) unit tests on the synthetic fixtures
         run: python3 -m unittest tools.terminology.test_terminology
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v5
         with:
           node-version: "22"
       - name: Interaction checker engine tests (every pair, severity mapping, duplication, no-interaction wording)
@@ -34,11 +34,11 @@ jobs:
     runs-on: ubuntu-latest
     needs: content
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v7
         with:
           python-version: "3.12"
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v5
         with:
           node-version: "22"
       - name: Install Playwright
@@ -61,7 +61,7 @@ jobs:
         run: node smoke.mjs
       - name: Upload screenshots
         if: always()
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: smoke-screenshots
           path: tools/qa/shots
