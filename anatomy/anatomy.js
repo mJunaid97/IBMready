@@ -45,6 +45,7 @@ if (!PRERENDERED) {
       : `${hash ? `<a class="btn btn-primary" href="${link.explorer(hash)}">Surrounding structures in 3D</a>` : ''}${region ? `<a class="btn" href="${link.region(region.id)}">Show the ${esc(region.name.toLowerCase())} in 3D</a>` : ''}`}
     </div>
     ${hash ? facadeHtml(hash, modelled ? o.name : `${o.name}: surrounding structures`) : ''}
+    ${hash && !modelled ? `<p class="muted small">The 3D atlas does not model the ${esc(o.name.toLowerCase())}, so this view shows the structures around it. The atlas's base body is an adult male body (BodyParts3D); structures of the female reproductive system come from the NIH Human Reference Atlas female layer, which the view switches on in place of the male reproductive organs.</p>` : ''}
     <div class="two">
       <div>
         ${art ? `${art.keyFacts?.length ? `<h2>Key facts</h2><div class="table-wrap"><table class="kv"><tbody>${art.keyFacts.map(k => `<tr><th scope="row">${esc(k.label)}</th><td>${esc(k.value)}</td></tr>`).join('')}</tbody></table></div>` : ''}

@@ -238,8 +238,11 @@ def validate_cross(types, products, errors, queues):
             for b in bs or []:
                 brand_owner[norm(b)].add(mid)
                 if norm(b) in med_names and med_names[norm(b)] != mid: errors.append(f"{where}: brand '{b}' is the name of another medicine ({med_names[norm(b)]})")
+        # a variant shares a stem with the ingredient name or with one of its synonyms (an INN spelling such as
+        # 'fludeoxyglucose (18F)' for 'Fluorodeoxyglucose F-18' is recorded as an alias, so it is the same ingredient)
+        stems = {norm(x).split(" ")[0][:5] for x in [m["name"], *(m.get("aliases") or [])] if len(norm(x).split(" ")[0]) >= 5}
         for v in m.get("ingredientVariants") or []:
-            if norm(m["name"]).split(" ")[0][:5] not in norm(v): queues["possible_active_ingredient_error"].append({"entity": where, "detail": f"ingredient variant '{v}' does not contain the ingredient name '{m['name']}'"})
+            if not any(st in norm(v) for st in stems): queues["possible_active_ingredient_error"].append({"entity": where, "detail": f"ingredient variant '{v}' does not contain the ingredient name '{m['name']}'"})
         cls = (m.get("links") or {}).get("drugClass", [None])[0]
         listed_in = member_of.get(norm(m["name"]), set())
         if cls and listed_in and cls not in listed_in: queues["class_mapping_conflict"].append({"entity": where, "detail": f"drugClass is {cls} but listed as a member of {sorted(listed_in)}"})
