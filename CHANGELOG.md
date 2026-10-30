@@ -23,7 +23,8 @@
   the NHS pulse page, which now redirects to the atrial fibrillation page, is replaced by the British Heart Foundation
   page, the PCOS page answers to PMOS and polyendocrine metabolic ovarian syndrome, and two mislabelled citations are
   corrected (a "Pulse oximetry" reference that pointed at the generic NHS blood-tests page is removed; the lungs article's
-  "Lungs and airways" reference is titled for the COPD page it points to)
+  "Lungs and airways" reference is titled for the COPD page it points to); the first check run on this branch also
+  found three prednisolone pages that NHS has since merged and a renamed FDA mammography FAQ, now updated
 - Vulva page (issue #10): the surrounding-structures view no longer highlights the male reference body's hip bones or
   switches on its skin; it frames the vagina, schematic urethra, pudendal veins, anal sphincter and levator ani with the
   female layer on, and the page now says that the atlas's base body is an adult male body
