@@ -214,6 +214,21 @@ compiled, packaged or served) with its sentence ledger and a README that says wh
 200 calls per turn, shared by every agent in the turn, and each pass costs roughly 25 searches per article, so plan three
 or four articles per turn.
 
+#### Editorial QA without web access, and red-flag signposting
+
+Besides the two source passes, the whole content set can be read by reviewers who have no web access and work from the page
+text and general knowledge (`tools/verification/qa_slice.py` prints any content file as plain text; the brief and the
+findings of the 1 November 2026 round are in `docs/verification/editorial-qa/`). They are calibrated to report only what they
+would bet on, with a confidence grade, and a finding that needs a source is fixed by softening or removing the statement, never
+by adding a number nobody retrieved. This catches what a source check does not: contradictions between fields and pages,
+instructions that read as advice to an individual, reassurance that a page's own text undermines, US practice presented as
+general. It is not clinical review and does not change the review status.
+
+Signposting rule from that round: every list of red flags names the route to care. Symptom pages end their "Seek urgent care
+if" list with a standard line (999 in an emergency, 112 elsewhere in Europe, NHS 111 or the GP the same day otherwise); the
+smoke test fails a symptom page whose list does not name 999. First-aid, condition and procedure text that says "urgent" says
+to whom (999, A&E, NHS 111, GP the same day).
+
 ## 6. Adding content
 
 1. **A biomarker**: add a key to `content/biomarkers.json` (name, aliases, category, summary,

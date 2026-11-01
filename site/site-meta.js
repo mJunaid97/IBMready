@@ -40,7 +40,7 @@ export const SITE = {
     "anatomyArticles": 36,
     "terms": 156,
     "topics": 329,
-    "links": 6020,
+    "links": 6014,
     "testCategories": 36,
     "testConcepts": 837,
     "classConcepts": 536,

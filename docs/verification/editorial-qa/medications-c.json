@@ -1,0 +1,203 @@
+{
+ "slice": "medications 28:41 (clopidogrel, bisoprolol, citalopram, clarithromycin, tramadol, oxycodone, chlorphenamine, beclometasone, influenza-vaccine, iodinated-contrast, fluorodeoxyglucose-f18, estradiol, testosterone)",
+ "entitiesReviewed": 13,
+ "findings": [
+  {
+   "entity": "medications/clarithromycin",
+   "path": "monitoring",
+   "quote": "No routine tests for short courses; INR closely if on warfarin; muscle symptoms if on a statin; an ECG if heart disease or other QT-prolonging medicines.",
+   "type": "safety",
+   "severity": "medium",
+   "confidence": "high",
+   "explanation": "Under the UK SmPC and BNF, clarithromycin is contraindicated with simvastatin (and lovastatin): strong CYP3A4 inhibition raises statin exposure and the risk of myopathy/rhabdomyolysis, and the statin is withheld for the course. Atorvastatin and other statins are dose-limited or paused. The cautions line names statins as an interaction but the monitoring line frames co-prescription as acceptable with symptom-watching ('muscle symptoms if on a statin'), which understates a classic avoid/withhold interaction. The site's own interaction record (atorvastatin-clarithromycin) already says the dose is limited or the statin paused.",
+   "suggestedFix": "Replace with wording such as 'Simvastatin is contraindicated with clarithromycin and other statins are usually paused or dose-limited for the course (BNF interactions)'; drop 'muscle symptoms if on a statin' as the management.",
+   "needsSource": false,
+   "status": "fixed"
+  },
+  {
+   "entity": "medications/citalopram",
+   "path": "conditions[0]",
+   "quote": "migraine",
+   "type": "factual",
+   "severity": "medium",
+   "confidence": "high",
+   "explanation": "Citalopram is an SSRI for depression and panic disorder; it is not a migraine treatment. This is the page's only conditions link, and for a medicine with no 'indications' array site/entity.js (clinicalSidebar) renders the first three links.conditions as 'Used for' in the At a glance box, so readers see 'Used for: Migraine', contradicting usedFor (Depression, Panic disorder). The repository has no depression or panic-disorder condition page, so the link looks like a placeholder (sertraline carries the same migraine link).",
+   "suggestedFix": "Remove the migraine link (leave conditions empty until depression/anxiety pages exist), or add licensed indications as free text; alternatively relabel the sidebar fallback 'Related conditions' site-wide.",
+   "needsSource": false,
+   "status": "mitigated"
+  },
+  {
+   "entity": "medications/chlorphenamine",
+   "path": "conditions[0]",
+   "quote": "asthma",
+   "type": "factual",
+   "severity": "medium",
+   "confidence": "high",
+   "explanation": "Antihistamines are not a treatment for asthma (sedating antihistamines are, if anything, used with caution because of their drying effect). With no 'indications' array, the At a glance box (site/entity.js clinicalSidebar) shows the first three links.conditions as 'Used for', so the page displays 'Used for: Asthma' while usedFor correctly lists hay fever, hives and itch. There is no allergic rhinitis/urticaria/anaphylaxis condition page to link instead.",
+   "suggestedFix": "Remove the asthma link or add free-text indications (hay fever, urticaria); or relabel the sidebar fallback 'Related conditions' site-wide.",
+   "needsSource": false,
+   "status": "mitigated"
+  },
+  {
+   "entity": "medications/testosterone",
+   "path": "conditions[2]",
+   "quote": "deep-vein-thrombosis",
+   "type": "factual",
+   "severity": "medium",
+   "confidence": "high",
+   "explanation": "Deep vein thrombosis is a risk of testosterone (through erythrocytosis), not something it is used for. Because the At a glance box shows the first three links.conditions as 'Used for' (site/entity.js clinicalSidebar), the page displays 'Used for: Gender dysphoria, Osteoporosis, Deep vein thrombosis'; the main licensed use (male hypogonadism) is absent and a risk is presented as a use. hypertension (fourth link) is also a caution, not a use. The estradiol page mixes uses and risks in the same field (deep-vein-thrombosis, pulmonary-embolism, breast-cancer, stroke).",
+   "suggestedFix": "Keep only conditions the medicine is used for in this field (gender-dysphoria; osteoporosis only if intended) and move risk conditions elsewhere, or relabel the sidebar fallback 'Related conditions'.",
+   "needsSource": false,
+   "status": "mitigated"
+  },
+  {
+   "entity": "medications/chlorphenamine",
+   "path": "summary",
+   "quote": "A first-generation antihistamine, sold over the counter, that relieves hay fever, hives and allergic reactions within an hour but causes drowsiness because it enters the brain; also given by injection for severe allergic reactions.",
+   "type": "safety",
+   "severity": "medium",
+   "confidence": "medium",
+   "explanation": "The summary groups 'allergic reactions' with a 30-60 minute oral antihistamine and says the injection is given 'for severe allergic reactions', with no statement that anaphylaxis needs intramuscular adrenaline and emergency help and that antihistamines are not a substitute. The sibling cetirizine page and the site's anaphylaxis first-aid page both carry that signposting ('antihistamines are adjuncts only', 'Do not rely on antihistamine tablets'); this page does not, on a red-flag topic and for an over-the-counter product.",
+   "suggestedFix": "Say the medicine relieves hay fever, hives and itch, and add that it does not treat anaphylaxis, which needs adrenaline and a 999 call; mirror the cetirizine caution 'Anaphylaxis needs adrenaline first: antihistamines are adjuncts only'.",
+   "needsSource": false,
+   "status": "fixed"
+  },
+  {
+   "entity": "medications/chlorphenamine",
+   "path": "usedFor[2]",
+   "quote": "Symptom relief in allergic reactions and, by injection, as an adjunct in anaphylaxis after adrenaline",
+   "type": "factual",
+   "severity": "low",
+   "confidence": "medium",
+   "explanation": "Chlorphenamine injection is licensed as an adjunct to adrenaline, but Resuscitation Council (UK) guidance (2021 revision) removed chlorphenamine and hydrocortisone from the initial anaphylaxis algorithm; antihistamines do not treat airway or circulatory compromise and a non-sedating oral antihistamine is preferred later for skin symptoms. For a UK-first page, presenting injected chlorphenamine as a routine post-adrenaline step is out of date. It also sits uneasily with the site's first-aid page ('the only treatment that works' is adrenaline).",
+   "suggestedFix": "Soften to 'licensed as an adjunct to adrenaline, but current UK resuscitation guidance does not include antihistamines in the initial treatment of anaphylaxis', or remove the anaphylaxis clause.",
+   "needsSource": true,
+   "status": "open"
+  },
+  {
+   "entity": "medications/fluorodeoxyglucose-f18",
+   "path": "usedFor[2]",
+   "quote": "Assessing brain metabolism in dementia and epilepsy (the one setting in which US labelling also covers children)",
+   "type": "factual",
+   "severity": "low",
+   "confidence": "medium",
+   "explanation": "The US FDG F18 label's neurology indication is only 'identification of regions of abnormal glucose metabolism associated with foci of epileptic seizures'; dementia is not an FDA-labelled indication, and the paediatric safety and effectiveness statement relates to epilepsy only. The bullet lumps dementia with epilepsy under a US-labelling parenthesis, so a reader could think the US label covers dementia. Dementia use is UK/EU practice (SmPC), not the US label the page is quoting.",
+   "suggestedFix": "Separate the two: 'epilepsy (the US labelled neurology indication, and the only one with paediatric data)' and 'dementia (UK/European practice)'; ideally cite the UK/EU SmPC (fludeoxyglucose (18F)) for a UK-first page.",
+   "needsSource": true,
+   "status": "open"
+  },
+  {
+   "entity": "medications/fluorodeoxyglucose-f18",
+   "path": "howItWorks",
+   "quote": "Normal glucose and insulin compete with the tracer, which is why people fast before the injection and why a high blood glucose or recent insulin dose dulls the picture.",
+   "type": "meaning",
+   "severity": "low",
+   "confidence": "medium",
+   "explanation": "Blood glucose competes with FDG for transport and hexokinase. Insulin does not compete; it drives FDG into skeletal muscle and fat, raising background uptake and lowering tumour-to-background contrast. The conclusion (high glucose or recent insulin dulls the picture) is right but the stated mechanism for insulin is wrong.",
+   "suggestedFix": "Reword: 'Blood glucose competes with the tracer, and insulin moves it into muscle and fat, which is why people fast ...'.",
+   "needsSource": false,
+   "status": "open"
+  },
+  {
+   "entity": "medications/estradiol",
+   "path": "cautions[3]",
+   "quote": "Bleeding after the menopause, or an unexpected change in bleeding on HRT, needs assessment to exclude endometrial cancer before treatment continues",
+   "type": "safety",
+   "severity": "low",
+   "confidence": "medium",
+   "explanation": "'Before treatment continues' reads as advice to hold HRT until assessed, which is a stop/pause instruction. SmPC and NICE NG23 advice is to investigate persistent or new unscheduled bleeding (breakthrough bleeding is expected in the first months, as the sideEffects section itself says); whether to pause HRT is a clinician decision, not part of the educational statement.",
+   "suggestedFix": "Drop the clause: 'needs assessment to exclude endometrial cancer'.",
+   "needsSource": false,
+   "status": "open"
+  },
+  {
+   "entity": "medications/estradiol",
+   "path": "regulatory[0].status",
+   "quote": "prescription",
+   "type": "factual",
+   "severity": "low",
+   "confidence": "medium",
+   "explanation": "The only UK status recorded is prescription. Since the MHRA reclassification in 2022, low-dose estradiol 10 microgram vaginal tablets (Gina) have been available from UK pharmacies without a prescription (a pharmacy medicine, for postmenopausal vaginal symptoms), the first HRT product so classified. For a page that discusses vaginal preparations and UK licensing, 'prescription' alone is incomplete. From memory, not checked against the MHRA record (no web access).",
+   "suggestedFix": "Add a UK pharmacy-medicine entry for the 10 microgram vaginal tablet, or soften to 'mostly prescription-only; one low-dose vaginal tablet is sold in pharmacies'.",
+   "needsSource": true,
+   "status": "open"
+  },
+  {
+   "entity": "medications/bisoprolol",
+   "path": "howItWorks",
+   "quote": "though it is still used with caution in asthma",
+   "type": "contradiction",
+   "severity": "low",
+   "confidence": "medium",
+   "explanation": "Cautions[0] says it is 'Avoided in asthma unless a specialist judges the benefit greater', which matches BNF advice that even cardioselective beta-blockers are avoided in asthma unless there is no alternative. 'Still used with caution in asthma' in howItWorks reads as routine cautious use, softer than the cautions list.",
+   "suggestedFix": "Align with the cautions: 'though it is generally avoided in asthma unless a specialist judges the benefit greater'.",
+   "needsSource": false,
+   "status": "open"
+  },
+  {
+   "entity": "medications/beclometasone",
+   "path": "onset",
+   "quote": "Not a reliever: it does nothing for an attack in progress.",
+   "type": "meaning",
+   "severity": "low",
+   "confidence": "medium",
+   "explanation": "True for beclometasone-only inhalers, but the page lists Fostair (beclometasone with formoterol) among the brands and its regimenNote mentions combination inhalers. Beclometasone/formoterol is licensed and recommended in the cited NICE NG245 / BTS / SIGN asthma guideline as maintenance-and-reliever therapy (MART), where the same inhaler is used as the reliever. The blanket statement and the summary line 'the preventer that reliever inhalers cannot replace' do not hold for that use.",
+   "suggestedFix": "Qualify: 'Beclometasone-only inhalers are not relievers; the combination with formoterol can also be prescribed as a reliever (maintenance-and-reliever therapy) under specialist or guideline direction'.",
+   "needsSource": false,
+   "status": "open"
+  },
+  {
+   "entity": "medications/tramadol",
+   "path": "howItWorks",
+   "quote": "Unlike other opioids it also blocks the reuptake of serotonin and noradrenaline",
+   "type": "factual",
+   "severity": "low",
+   "confidence": "medium",
+   "explanation": "Overgeneralised: tapentadol inhibits noradrenaline reuptake, and pethidine and methadone have serotonin-reuptake activity (pethidine and methadone carry serotonin-syndrome warnings). Tramadol is not unique among opioids, which matters because the sentence is offered as the reason for its serotonin-syndrome risk.",
+   "suggestedFix": "Use 'Unlike most opioids' or 'In addition to its opioid action it also blocks ...'.",
+   "needsSource": false,
+   "status": "open"
+  },
+  {
+   "entity": "medications/iodinated-contrast",
+   "path": "conditions[0]",
+   "quote": "chronic-kidney-disease",
+   "type": "factual",
+   "severity": "low",
+   "confidence": "medium",
+   "explanation": "Chronic kidney disease is the main risk group for contrast-associated kidney injury, not a condition contrast is used to diagnose or treat. The At a glance box shows the first three links.conditions as 'Used for' (site/entity.js clinicalSidebar), giving 'Used for: Chronic kidney disease, Coronary artery disease, Pulmonary embolism'. The same pattern affects influenza-vaccine ('Used for: Pneumonia, Asthma, COPD' lists at-risk groups, not uses) and estradiol (first three shown are osteoporosis, UTI, gender dysphoria; menopause, the main use, is absent).",
+   "suggestedFix": "Reorder so imaging uses come first (coronary artery disease, pulmonary embolism, stroke) and move chronic-kidney-disease out of the 'uses' position, or relabel the sidebar fallback 'Related conditions'.",
+   "needsSource": false,
+   "status": "open"
+  },
+  {
+   "entity": "medications/influenza-vaccine",
+   "path": "vaccine.schedule.note",
+   "quote": "Offered every autumn to people at higher risk of complications (older adults, pregnant women, long-term conditions, care-home residents), to children in the eligible age groups, and to health and social care workers",
+   "type": "citation",
+   "severity": "low",
+   "confidence": "medium",
+   "explanation": "This is UK (NHS) programme detail (autumn campaign, care-home residents, eligible child age groups, health and social care workers) but it is cited to the global WHO influenza fact sheet, which does not describe the NHS programme. The adverse-event bullet 'Guillain-Barre syndrome has been reported very rarely after influenza vaccination' is also sourced to the WHO 'Prevention' section, which to my knowledge does not discuss vaccine adverse events. The NHS flu vaccine page is in the references but is not attached to these claims.",
+   "suggestedFix": "Point schedule.source and sideEffects.source at the NHS flu vaccine page (and the UK Green Book influenza chapter for the contraindications), keeping WHO for the global statements.",
+   "needsSource": true,
+   "status": "open"
+  },
+  {
+   "entity": "medications/citalopram",
+   "path": "references[3]",
+   "quote": "NHS: SSRIs",
+   "type": "citation",
+   "severity": "low",
+   "confidence": "low",
+   "explanation": "The reference is titled 'NHS: SSRIs' but its URL (https://www.nhs.uk/medicines/antidepressants/) is the general antidepressants page; elsewhere in the repo the same URL is titled 'NHS: Antidepressants'. Title and address describe different things, and I could not check that the URL resolves (no web access).",
+   "suggestedFix": "Retitle to 'NHS: Antidepressants' or point to the NHS SSRI-specific page.",
+   "needsSource": true,
+   "status": "open"
+  }
+ ],
+ "cleanEntities": [
+  "medications/clopidogrel",
+  "medications/oxycodone"
+ ],
+ "notes": "No high-severity problems found; 16 findings, all reported (cap not reached). (1) Root cause of four findings: site/entity.js clinicalSidebar() shows the first three links.conditions as 'Used for' whenever a medicine has no 'indications' array, and none of entities 28-40 has one. So conditions links that are risks, at-risk groups or placeholders surface as uses. Same pattern outside this slice: sertraline (myocardial-infarction, migraine, alzheimers-disease) and cetirizine (asthma, sepsis). A site-wide fix (label 'Related conditions', or add indications) would be cheaper than editing each page. (2) Entities 28-37 are compact records without structured contraindications/warnings, so omissions (for example bisoprolol AV block/sick sinus, clopidogrel active bleeding) were noted but not flagged as errors. (3) Regimen notes read as reference summaries and the page adds '(summary of the cited reference, not a prescription)'. The chlorphenamine one ('Tablets 4 mg every 4-6 hours (maximum daily dose applies)') is closest to an individual dosing instruction for an OTC product and omits the numeric daily maximum; bisoprolol '1.25 to 10 mg' omits that up to 20 mg daily is licensed for hypertension/angina. Not flagged as findings. Imperative counselling lines (chlorphenamine 'Do not drive...', testosterone gel hygiene, clopidogrel 'Tell any doctor...') match NHS leaflet wording and were left. (4) UK-first concern: the fluorodeoxyglucose page leans on the US DailyMed label ('the US licence lists no contraindications'; US paediatric labelling) and cites no UK/EU SmPC; the EU/UK SmPC lists hypersensitivity as a contraindication, and the INN is 'fludeoxyglucose (18F)' rather than the US-style page name. The estradiol/testosterone gender-affirming sections cite only US/international guidance (Endocrine Society, WPATH, UCSF) with no UK NHS source; content looked accurate against the Endocrine Society tables. (5) Cross-file: the citalopram page says 'Not combined with other QT-prolonging medicines' (matches the SmPC), whereas interactions.json rates azithromycin-citalopram MONITOR_OR_ADJUST, citing US information; maintainers may want to reconcile. (6) Could not verify without web access: NHS URLs (chlorphenamine, angiography), the NG185 section label '1.2 Antiplatelet therapy', DailyMed set id, StatPearls NBK id, brand names Grepid/Allerief, and the Gina OTC status (stated from memory). RxCUI, ATC and FDA EPC values on entities 28-40 matched my recollection. (7) Breast-cancer wording on estradiol ('oestrogen alone carries little or no increase') follows NICE NG23 but is softer than the 2019 Lancet pooled analysis; not flagged because it matches the cited NICE text."
+}

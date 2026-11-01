@@ -70,10 +70,19 @@ slash → with slash, `/organs/<id>/` → `/anatomy/<id>/`, `/learn/terminology.
   65 characters: a longer descriptor is cut back to its leading topics (*Purpose, Procedure & Results* becomes
   *Purpose, Procedure*) and dropped only when even one topic does not fit. Every title and description is unique
   (asserted).
+* Organ pages (`anatomy/anatomy.js`): the descriptor is prefixed with *3D Model* when the atlas holds the organ, so the title
+  reads *Hand Bones Anatomy: 3D Model, Carpals | Anatomy Nexus* (the searched phrase first, then what sets the page apart
+  from flat diagrams), and the description is the article's opening whole sentence(s) plus *Explore it in 3D*; when no
+  whole sentence fits in 138 characters the page falls back to a template. The page's 3D preview is named in
+  `og:image:alt`, `twitter:image:alt` and `primaryImageOfPage` of the `MedicalWebPage` node. The keyword research behind
+  this (what people search, which page answers it, which articles are missing) is in `docs/seo/keyword-research.md`.
 * Meta description from the entity's lead paragraph: whole sentences up to 160 characters, then the next sentence's
   leading clause when the first sentence alone would be thin, and for a one-line lead a closing "Covers <the type's
   descriptor>, with cited sources." so no description is shorter than about 70 characters. Per-entity overrides:
   `seoTitle`, `metaDescription`.
+* `metaDescription` treats a full stop before a digit as a decimal point, not the end of a sentence (an earlier version cut
+  "about 1.5 kg" into "…1." and "5 kg…" and started descriptions mid-sentence); the smoke test rejects a description that
+  starts in lower case or with a digit.
 * Canonical, robots, `og:type/site_name/title/description/url/image` (a per-page 3D preview image) and
   Twitter card on every page; `google-site-verification` / `msvalidate.01` when set in `content/site.json`.
 * JSON-LD `@graph`: `Organization`, `WebSite` (with `SearchAction` → `/search/?q=`), `BreadcrumbList`,

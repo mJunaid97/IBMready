@@ -146,6 +146,12 @@ review-status model.
 - `tools/build-atlas.mjs` → parse OBJ, weld, fix winding, simplify per piece with meshoptimizer
   under an absolute error bound (0.2 mm HD / 0.6 mm lite), compute normals, write one GLB per
   system, compress with gltfpack (14-bit positions, 8-bit normals, EXT_meshopt_compression).
+- `tools/build-silhouettes.mjs` → decodes every GLB with the vendored meshopt decoder, projects each piece onto the front
+  plane and writes its convex outline (at most 12 corners) to `tools/derived/piece-hulls.json`, which is committed (it
+  changes only when the atlas does; `--check` compares every outline with the piece's bounding box, worst difference 0.2 mm).
+  `tools/build-content.py` merges the outlines of each organ's pieces into `data/content/locator.json` (clusters merge
+  within 35 mm, so paired organs give one shape per side; a shape under a twentieth of its organ's largest is dropped as a
+  data quirk) and `site/locator.js` draws them on a neutral body pictogram ("where in the body" on organ, system and entity pages).
 - `explorer/viewer.js` → one `THREE.BatchedMesh` per system (16 draw calls for the whole body),
   per-piece colour and alpha in the batching colour texture, two-pass opaque/ghost rendering for
   x-ray, a see-through highlight pass for selections, GPU id-buffer picking, global clipping

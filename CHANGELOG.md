@@ -2,6 +2,31 @@
 
 ## Unreleased
 
+- Body figure ("where in the body"): every organ page shows a schematic front view of the body with the organ drawn at its
+  real position and shape, beside the 3D preview, with a one-line description and X-ray, exploded and cross-section
+  shortcuts into the explorer; system pages draw every organ of the system as a link; condition, test, procedure and
+  symptom pages show the organs they concern. The shapes come from the 3D models themselves
+  (`tools/build-silhouettes.mjs` decodes the compressed GLB files, projects every piece onto the front plane and keeps
+  its outline; `tools/build-content.py` merges them into `data/content/locator.json`, 11 KB), so figure and model cannot
+  disagree. The body is a neutral pictogram; paired organs get a shape per side; organs under 7 cm get a ring marker
+- Anatomy: six organ articles pass the second, adversarial source check and are merged (skull, hand, adrenal glands,
+  small intestine, bony pelvis, bladder and urethra); 54 of 298 sentences were unsupported or wrong and were cut
+  or reworded to what the sources say. Their audit trail is in `docs/verification/anatomy/`. Six more organ pages become
+  indexable; the small-intestine card no longer states a length the cited sources disagree on
+- Editorial QA: sixteen reviewers without web access read every symptom, first-aid, condition, test, medicine, procedure,
+  biomarker, physiology and anatomy page and the drug-class, interaction and comparison records. 126 of the 305 findings were
+  fixed, including every high and all but one medium (`docs/verification/editorial-qa/`): every symptom red-flag list now ends with the emergency route (999, NHS 111,
+  GP the same day), first-aid pages for burns, seizures, heart attack and poisoning name who to call, the US 10-year
+  tetanus rule becomes UK wording, instructions to stop or start a medicine became descriptions, overstatements
+  (cirrhosis, CT screening, a normal echo, amoxicillin, cetirizine, SSRIs in overdose) were softened and a number of
+  anatomical, physiological and pharmacological errors corrected
+- SEO: organ titles read "[Organ] Anatomy: 3D Model, [parts] | Anatomy Nexus" where the 3D model holds the organ;
+  descriptions are the article's own opening sentence plus "Explore it in 3D"; `og:image:alt` and `primaryImageOfPage`
+  describe the 3D preview; the home and systems hub titles lead with what people search for. The meta-description builder
+  split sentences at decimal points ("about 1.5 kg" started descriptions with "5 kg of …"); fixed and asserted. The
+  keyword research behind the choices is in `docs/seo/keyword-research.md`
+- QA: smoke test asserts the body figure and image schema on every organ page, 999 on every symptom red-flag list and
+  that no description starts mid-sentence; link targets are read with `getAttribute` so SVG links are checked too
 - Filters: every section hub (conditions, symptoms, physiology, tests, biomarkers, imaging, procedures, medications,
   drug classes, drug targets, first aid, health) gains a body-system facet derived from each page's anatomy, a live
   result count announced to assistive technology, a clear-filters control, pressed-state category chips and an empty
