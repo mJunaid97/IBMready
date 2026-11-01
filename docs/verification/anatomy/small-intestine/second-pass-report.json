@@ -1,0 +1,392 @@
+{
+  "organ": "small-intestine",
+  "searchesUsed": 27,
+  "counts": {
+    "supported": 34,
+    "textbook": 1,
+    "unsupported": 15,
+    "wrong": 0,
+    "unsafe": 0,
+    "unchecked": 0
+  },
+  "claims": [
+    {
+      "id": "c01",
+      "classification": "supported",
+      "evidence": "StatPearls: extends from distal tip of gastric pylorus to the ileocecal valve, ending at the cecum (start of large intestine).",
+      "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK459366/",
+      "action": "kept"
+    },
+    {
+      "id": "c02",
+      "classification": "supported",
+      "evidence": "OpenStax chemical digestion chapter: small intestine is site of most chemical digestion and almost all absorption; key terms define duodenum, jejunum, ileum.",
+      "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/23-7-chemical-digestion-and-absorption-a-closer-look",
+      "action": "kept"
+    },
+    {
+      "id": "c03",
+      "classification": "unsupported",
+      "evidence": "OpenStax: brush border and pancreatic enzymes do most chemical breakdown; bile salts emulsify lipids, raising surface area. 'In the duodenum' not retrieved.",
+      "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/23-7-chemical-digestion-and-absorption-a-closer-look",
+      "action": "edited",
+      "newSentence": "Intestinal brush border enzymes and pancreatic enzymes do most of the chemical digestion, and bile salts emulsify lipids, which increases the surface area available to lipases."
+    },
+    {
+      "id": "c04",
+      "classification": "supported",
+      "evidence": "OpenStax key terms: duodenum is first part, starting at pyloric sphincter and ending at jejunum; jejunum is middle part. StatPearls gives same order.",
+      "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/23-5-the-small-and-large-intestines",
+      "action": "kept"
+    },
+    {
+      "id": "c05",
+      "classification": "supported",
+      "evidence": "StatPearls: small intestine extends from the gastric pylorus to the ileocecal valve (junction).",
+      "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK459366/",
+      "action": "kept"
+    },
+    {
+      "id": "c06",
+      "classification": "supported",
+      "evidence": "OpenStax 23.5 (second query only): about 3.05 m in a living person, roughly double in a cadaver. First query found no such figure; see notes.",
+      "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/23-5-the-small-and-large-intestines",
+      "action": "kept"
+    },
+    {
+      "id": "c07",
+      "classification": "supported",
+      "evidence": "StatPearls Physiology, Small Bowel: four layers, innermost to outermost: mucosa, submucosa, muscularis propria, serosa. Citation moved from Small Intestine page.",
+      "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK532263/",
+      "action": "kept"
+    },
+    {
+      "id": "c08",
+      "classification": "supported",
+      "evidence": "OpenStax: circular folds, villi and microvilli together raise absorptive area over 600-fold; brush border is the fuzzy microvillous surface.",
+      "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/23-5-the-small-and-large-intestines",
+      "action": "kept"
+    },
+    {
+      "id": "c09",
+      "classification": "supported",
+      "evidence": "StatPearls: arterial supply from celiac trunk and SMA; small intestinal veins coalesce into SMV, which joins splenic vein to form portal vein.",
+      "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK459366/",
+      "action": "kept"
+    },
+    {
+      "id": "c10",
+      "classification": "supported",
+      "evidence": "NHS: gastroscopy uses a camera tube to check food pipe, stomach, top of intestine; biopsy possible. NHS coeliac: blood test and biopsy. 'Tests' made singular.",
+      "url": "https://www.nhs.uk/tests-and-treatments/gastroscopy/",
+      "action": "edited",
+      "newSentence": "Gastroscopy with biopsy; blood test and biopsy for coeliac disease"
+    },
+    {
+      "id": "c11",
+      "classification": "supported",
+      "evidence": "OpenStax: no clear demarcation between jejunum and ileum; regions run duodenum, jejunum, ileum from the stomach.",
+      "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/23-5-the-small-and-large-intestines",
+      "action": "kept"
+    },
+    {
+      "id": "c12",
+      "classification": "supported",
+      "evidence": "StatPearls Pancreas: head of pancreas is surrounded by the C-shaped curve of the duodenum. StatPearls Duodenum: lies inferior to the stomach. 'Just' dropped.",
+      "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK532912/",
+      "action": "edited",
+      "newSentence": "The duodenum lies below the stomach, and its C-shaped curve surrounds the head of the pancreas."
+    },
+    {
+      "id": "c13",
+      "classification": "supported",
+      "evidence": "StatPearls Duodenum: first part of duodenum, jejunum and ileum intraperitoneal; second to fourth parts of duodenum retroperitoneal.",
+      "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK482390/",
+      "action": "kept"
+    },
+    {
+      "id": "c14",
+      "classification": "supported",
+      "evidence": "StatPearls: jejunum and ileum intraperitoneal; small intestinal blood vessels, lymphatics and nerves course through the mesentery.",
+      "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK459366/",
+      "action": "kept"
+    },
+    {
+      "id": "c15",
+      "classification": "supported",
+      "evidence": "StatPearls: jejunum lies mainly in left upper quadrant; ileum, the longest section, mainly in right lower quadrant.",
+      "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK459366/",
+      "action": "kept"
+    },
+    {
+      "id": "c16",
+      "classification": "supported",
+      "evidence": "StatPearls: small intestine ends at the ileocecal valve (junction), at the cecum. 'Separates it from' not stated; reworded.",
+      "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK459366/",
+      "action": "edited",
+      "newSentence": "The ileum ends at the ileocaecal valve, where the small intestine meets the large intestine."
+    },
+    {
+      "id": "c17",
+      "classification": "unsupported",
+      "evidence": "StatPearls: duodenum has four parts (bulb, descending, horizontal, ascending), about 25 cm vs jejunum 2.5 m, ileum 3 m. 'Widest' not retrieved; dropped.",
+      "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK482390/",
+      "action": "edited",
+      "newSentence": "The duodenum is the shortest part of the small intestine, and it has four parts: the bulb, the descending part, the horizontal part and the ascending part."
+    },
+    {
+      "id": "c18",
+      "classification": "supported",
+      "evidence": "StatPearls: hepatopancreatic ampulla lies where common bile duct meets pancreatic duct; opens at major duodenal papilla in the 2nd segment. Reworded to match.",
+      "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK482390/",
+      "action": "edited",
+      "newSentence": "Bile and pancreatic juice enter the second (descending) part of the duodenum through the hepatopancreatic ampulla, also called the ampulla of Vater, which forms where the common bile duct meets the pancreatic duct."
+    },
+    {
+      "id": "c19",
+      "classification": "supported",
+      "evidence": "OpenStax and StatPearls both say the ileum is the longest segment of the small intestine.",
+      "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/23-5-the-small-and-large-intestines",
+      "action": "kept"
+    },
+    {
+      "id": "c20",
+      "classification": "unsupported",
+      "evidence": "OpenStax 23.5: about 3.05 m in life, roughly double in a cadaver. 'Because muscle tone is lost' not retrieved; clause dropped.",
+      "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/23-5-the-small-and-large-intestines",
+      "action": "edited",
+      "newSentence": "In life the whole small intestine is about three metres long, and in a cadaver it is about twice as long."
+    },
+    {
+      "id": "c21",
+      "classification": "supported",
+      "evidence": "StatPearls: duodenum AND upper jejunum are main iron sites (corrected); intrinsic factor from gastric parietal cells needed for B12 uptake in terminal ileum (NBK546655).",
+      "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK482390/",
+      "action": "edited",
+      "newSentence": "The regions also differ in what they absorb: the duodenum and upper jejunum are the main sites of iron absorption, while the terminal ileum absorbs vitamin B12, which needs intrinsic factor made in the stomach."
+    },
+    {
+      "id": "c22",
+      "classification": "supported",
+      "evidence": "StatPearls Physiology, Small Bowel: small intestine comprises four layers, innermost to outermost: mucosa, submucosa, muscularis propria, serosa. Citation moved.",
+      "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK532263/",
+      "action": "kept"
+    },
+    {
+      "id": "c23",
+      "classification": "unsupported",
+      "evidence": "OpenStax: circular folds, villi, microvilli raise absorptive area; StatPearls: plicae circularis and villi increase surface area. 'Deep' not retrieved; dropped.",
+      "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/23-5-the-small-and-large-intestines",
+      "action": "edited",
+      "newSentence": "Circular folds (plicae circulares), villi and microvilli together greatly increase the surface area available for absorption."
+    },
+    {
+      "id": "c24",
+      "classification": "unsupported",
+      "evidence": "OpenStax: microvilli create fuzzy brush border; enzymes finishing carbohydrate and protein digestion are fixed to microvillous membranes. 'Synthesise' not retrieved; dropped.",
+      "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/23-5-the-small-and-large-intestines",
+      "action": "edited",
+      "newSentence": "The microvilli give the mucosa a fuzzy appearance called the brush border, and enzymes that finish the digestion of carbohydrates and proteins are fixed to the membranes of the microvilli."
+    },
+    {
+      "id": "c25",
+      "classification": "unsupported",
+      "evidence": "OpenStax cell table: absorptive, goblet (mucus), Paneth (lysozyme), enteroendocrine (hormones). Duodenum/jejunum restriction of hormone cells not reliably retrieved; dropped.",
+      "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/23-5-the-small-and-large-intestines",
+      "action": "edited",
+      "newSentence": "The cells of the epithelium and intestinal glands include absorptive cells, goblet cells (which secrete mucus), Paneth cells (which secrete lysozyme) and enteroendocrine cells (which release hormones)."
+    },
+    {
+      "id": "c26",
+      "classification": "supported",
+      "evidence": "OpenStax key terms: intestinal juice is a mixture of water and mucus secreted by intestinal glands.",
+      "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/23-5-the-small-and-large-intestines",
+      "action": "kept"
+    },
+    {
+      "id": "c27",
+      "classification": "supported",
+      "evidence": "StatPearls: small intestinal epithelial cells have a rapid renewal rate, lasting only a few days.",
+      "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK459366/",
+      "action": "kept"
+    },
+    {
+      "id": "c28",
+      "classification": "supported",
+      "evidence": "StatPearls: the small intestine's arterial supply arises from the celiac trunk and SMA.",
+      "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK459366/",
+      "action": "kept"
+    },
+    {
+      "id": "c29",
+      "classification": "supported",
+      "evidence": "StatPearls: proximal duodenum supplied via celiac axis and GDA, distal via SMA; superior PDA (from GDA) and inferior PDA (from SMA) anastomose. Reworded to that.",
+      "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK482390/",
+      "action": "edited",
+      "newSentence": "The proximal duodenum is supplied mainly from the coeliac trunk through the gastroduodenal artery, and the distal duodenum from the superior mesenteric artery; the superior and inferior pancreaticoduodenal arteries, which arise from these two sources, anastomose."
+    },
+    {
+      "id": "c30",
+      "classification": "supported",
+      "evidence": "StatPearls: jejunal and ileal arteries travel through the mesentery and originate from the SMA.",
+      "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK459366/",
+      "action": "kept"
+    },
+    {
+      "id": "c31",
+      "classification": "supported",
+      "evidence": "StatPearls: small intestinal veins mimic the arterial supply and coalesce into the SMV, which joins the splenic vein to form the portal vein.",
+      "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK459366/",
+      "action": "edited",
+      "newSentence": "Veins follow the arterial supply and drain into the superior mesenteric vein, which joins the splenic vein to form the portal vein."
+    },
+    {
+      "id": "c32",
+      "classification": "supported",
+      "evidence": "StatPearls: lymphatic drainage starts at the mucosa, goes to nodes near mesentery, arterial arcades and SMA; efferents reach celiac nodes.",
+      "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK459366/",
+      "action": "kept"
+    },
+    {
+      "id": "c33",
+      "classification": "unsupported",
+      "evidence": "StatPearls: lesser splanchnic presynaptic fibres synapse in superior mesenteric ganglia; sympathetic fibres decrease secretions and motility, cause vasoconstriction. Plexus route not retrieved.",
+      "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK459366/",
+      "action": "edited",
+      "newSentence": "The lesser splanchnic presynaptic sympathetic fibres synapse in the superior mesenteric ganglia, and sympathetic fibres decrease small intestinal secretions and motility and cause vasoconstriction."
+    },
+    {
+      "id": "c34",
+      "classification": "unsupported",
+      "evidence": "StatPearls: bile salts emulsify fats; pancreas supplies colipase, lipase, phospholipase A2. 'In the duodenum' and pancreatic enzymes emulsifying not supported.",
+      "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK532263/",
+      "action": "edited",
+      "newSentence": "Bile salts emulsify lipids, and the pancreas supplies lipid-digesting enzymes such as lipase."
+    },
+    {
+      "id": "c35",
+      "classification": "supported",
+      "evidence": "OpenStax chapter review: brush border enzymes finish digesting carbohydrates and proteins.",
+      "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/23-5-the-small-and-large-intestines",
+      "action": "kept"
+    },
+    {
+      "id": "c36",
+      "classification": "unsupported",
+      "evidence": "StatPearls: brush border disaccharidases (maltase, sucrase) alongside pancreatic amylase; pancreas secretes trypsin, chymotrypsin. Salivary amylase, monosaccharide and peptide details not retrieved.",
+      "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK532263/",
+      "action": "edited",
+      "newSentence": "Pancreatic amylase and brush-border disaccharidases such as maltase and sucrase digest carbohydrates, and the pancreas secretes protein-digesting enzymes such as trypsin and chymotrypsin."
+    },
+    {
+      "id": "c37",
+      "classification": "supported",
+      "evidence": "OpenStax Pharmacology 29.3: villus capillaries take up sugars and amino acids, lacteals take up fat. Wording changed from 'carbohydrates and proteins'.",
+      "url": "https://openstax.org/books/pharmacology/pages/29-3-introduction-to-the-small-and-large-intestines",
+      "action": "edited",
+      "newSentence": "Blood capillaries in the villi take up sugars and amino acids, while the lacteals take up fat."
+    },
+    {
+      "id": "c38",
+      "classification": "unsupported",
+      "evidence": "OpenStax 23.7: chylomicrons too big for blood capillary basement membranes, so enter large lacteal pores. Fat-soluble vitamin carriage not retrieved; dropped.",
+      "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/23-7-chemical-digestion-and-absorption-a-closer-look",
+      "action": "edited",
+      "newSentence": "Inside the intestinal cells, fats are reassembled into triglycerides and packaged with other lipids and proteins into chylomicrons, which are too big to pass through the basement membranes of blood capillaries and so enter the large pores of the lacteals."
+    },
+    {
+      "id": "c39",
+      "classification": "supported",
+      "evidence": "StatPearls: water absorption is thought to occur via osmotic gradients and aquaporins on intestinal membranes. Hedge added.",
+      "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK532263/",
+      "action": "edited",
+      "newSentence": "Water absorption is thought to occur through osmotic gradients and aquaporins in the intestinal membranes."
+    },
+    {
+      "id": "c40",
+      "classification": "unsupported",
+      "evidence": "OpenStax Figure 23.20 caption: segmentation separates chyme and pushes it back together, mixing it and allowing time for digestion. 'Rings of smooth muscle' not retrieved.",
+      "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/23-5-the-small-and-large-intestines",
+      "action": "edited",
+      "newSentence": "Segmentation separates chyme and then pushes it back together, mixing it and providing time for digestion and absorption."
+    },
+    {
+      "id": "c41",
+      "classification": "unsupported",
+      "evidence": "NHS Borders leaflet: gluten damages small bowel lining; villi flatten, reducing absorption and causing nutrient deficiencies. Iron specifically not confirmed there; dropped.",
+      "url": "https://www.rightdecisions.scot.nhs.uk/patient-information-leaflets/acute-services-bgh/general-medicinedme/endoscopy/coeliac-disease/",
+      "action": "edited",
+      "newSentence": "Coeliac disease is an autoimmune condition in which gluten causes damage to the lining of the small bowel: the finger-like villi flatten, which reduces the surface area available for absorption and can lead to nutrient deficiencies."
+    },
+    {
+      "id": "c42",
+      "classification": "supported",
+      "evidence": "NIDDK: chronic condition in which abnormal immune reactions cause digestive tract inflammation, most commonly small intestine and start of large intestine.",
+      "url": "https://www.niddk.nih.gov/health-information/digestive-diseases/crohns-disease/definition-facts",
+      "action": "kept"
+    },
+    {
+      "id": "c43",
+      "classification": "unsupported",
+      "evidence": "NHS: stomach ulcers usually caused by H. pylori or NSAIDs; H. pylori can cause ulcers in stomach or duodenum. 'Regular use' and 'painkillers' not stated.",
+      "url": "https://www.nhs.uk/conditions/stomach-ulcer/",
+      "action": "edited",
+      "newSentence": "Ulcers can form in the stomach or in the duodenum, and the NHS says stomach ulcers are usually caused by H. pylori infection or by taking anti-inflammatory medicines (NSAIDs)."
+    },
+    {
+      "id": "c44",
+      "classification": "supported",
+      "evidence": "NIDDK: develops when small intestine is shortened or damaged and cannot absorb enough nutrients; surgery removing part is most frequent cause (causes page).",
+      "url": "https://www.niddk.nih.gov/health-information/digestive-diseases/short-bowel-syndrome/definition-facts",
+      "action": "kept"
+    },
+    {
+      "id": "c45",
+      "classification": "supported",
+      "evidence": "NCI patient version: adenocarcinoma, sarcoma, carcinoid, GIST, lymphoma; unexplained weight loss and abdominal pain may be signs, also caused by other conditions. HP version: neuroendocrine.",
+      "url": "https://www.cancer.gov/types/small-intestine/patient/small-intestine-treatment-pdq",
+      "action": "edited",
+      "newSentence": "Small intestine cancers include adenocarcinoma, sarcoma, carcinoid (neuroendocrine) tumours, gastrointestinal stromal tumours and lymphoma; unexplained weight loss and abdominal pain can be signs, although other conditions can cause the same signs and symptoms."
+    },
+    {
+      "id": "c46",
+      "classification": "textbook",
+      "evidence": "Generic safety-net sentence, not retrieved; matches phrasing already used in published site articles. Editorial discretion whether to keep.",
+      "url": "",
+      "action": "kept"
+    },
+    {
+      "id": "c47",
+      "classification": "supported",
+      "evidence": "NHS gastroscopy: checks inside food pipe, stomach and top of intestine using a thin tube with a camera; biopsy may be taken.",
+      "url": "https://www.nhs.uk/tests-and-treatments/gastroscopy/",
+      "action": "kept"
+    },
+    {
+      "id": "c48",
+      "classification": "supported",
+      "evidence": "NHS says the camera reaches the 1st section of the small intestine (duodenum); OpenStax key terms: duodenum is first part of small intestine.",
+      "url": "https://www.nhs.uk/tests-and-treatments/gastroscopy/",
+      "action": "kept"
+    },
+    {
+      "id": "c49",
+      "classification": "unsupported",
+      "evidence": "NHS gastroscopy: can stop bleeding in stomach or oesophagus and remove growths. 'Help find out what is causing symptoms' not retrieved; dropped.",
+      "url": "https://www.nhs.uk/tests-and-treatments/gastroscopy/",
+      "action": "edited",
+      "newSentence": "The NHS says a gastroscopy can also be used for treatment, for example to stop bleeding inside the stomach or food pipe or to remove growths."
+    },
+    {
+      "id": "c50",
+      "classification": "unsupported",
+      "evidence": "NHS: two main methods, blood test (coeliac antibodies) and biopsy via endoscope through the mouth. 'Biopsy can help confirm diagnosis' not retrieved; dropped.",
+      "url": "https://www.nhs.uk/conditions/coeliac-disease/diagnosis/",
+      "action": "edited",
+      "newSentence": "For coeliac disease, the NHS describes two main methods of diagnosis: a blood test for coeliac antibodies and a biopsy of the small intestine taken with an endoscope passed through the mouth."
+    }
+  ],
+  "wordsBefore": 957,
+  "wordsAfter": 966,
+  "notes": "Classification describes the drafted sentence: 'unsupported' with action 'edited' means one element could not be confirmed and a trimmed or reworded core was kept; no sentence was dropped outright. LENGTH (c06, c20): the first OpenStax query said OpenStax sources do not support 3 m (citing Biology 2e at over 6 m); a second targeted query returned OpenStax 23.5 as about 3.05 m in life and roughly double in a cadaver. StatPearls gives roughly 5.7 to 7 m and one review about 5 m (range 3 to 7 m), so the organ summary's 'about six metres' fits only the cadaver figure. Please read OpenStax 23.5 by eye and harmonise the two pages. 'Because muscle tone is lost' was dropped as not retrieved. CITATIONS CHANGED: layers (c07, c22) now StatPearls Physiology, Small Bowel; B12 and intrinsic factor (c21) added StatPearls Physiology, Gastric Intrinsic Factor; short bowel cause (c44) added NIDDK Symptoms & Causes; 'neuroendocrine' (c45) added NCI health professional version; c02/c03 chemical digestion fact is on OpenStax 23.7; several definitions (duodenum, brush border, intestinal juice) are from OpenStax chapter 23 key terms, same book. c36 was replaced by StatPearls enzyme wording and the Function paragraph order is now c34, c36, c35. c29 follows the sources' proximal (coeliac, gastroduodenal) versus distal (superior mesenteric) wording. c46 is a generic safety-net sentence kept as textbook; remove if policy prefers. 'Shortest' in c17 is inferred from retrieved lengths. Retrieved but not added: vagal parasympathetic fibres increase secretion and motility; most carbohydrate and protein uptake is in the jejunum. Search summaries are model-generated and occasionally inconsistent (hormone-cell distribution, length), so 'supported' means retrieval-level support, not clinical review. 3 of 30 searches unused. Word counts use the validator method (intro plus sections)."
+}
