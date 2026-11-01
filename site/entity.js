@@ -231,8 +231,10 @@ function clinicalSidebar(type, e, clinical, data, ix) {
   let rows = '';
   if (type === 'medications') {
     const cls = e.links?.drugClass?.[0];
-    const uses = (e.indications || []).filter(i => i.status === 'licensed' && i.condition).map(i => i.condition).filter((v, i, a) => a.indexOf(v) === i).slice(0, 3).map(id => entityA(clinical, 'conditions', id)).join(', ') || (e.links?.conditions || []).slice(0, 3).map(id => entityA(clinical, 'conditions', id)).join(', ');
-    rows = row('Drug class', cls ? entityA(clinical, 'drug-classes', cls) : esc(e.class || '')) + row('Used for', uses) + row('Acts on', (e.links?.targets || []).map(id => entityA(clinical, 'targets', id)).join(', ')) + row('Body system', systems)
+    const licensed = (e.indications || []).filter(i => i.status === 'licensed' && i.condition).map(i => i.condition).filter((v, i, a) => a.indexOf(v) === i).slice(0, 3).map(id => entityA(clinical, 'conditions', id)).join(', ');
+    const related = (e.links?.conditions || []).slice(0, 3).map(id => entityA(clinical, 'conditions', id)).join(', ');
+    // the linked conditions are not all uses (a risk or a monitoring link is also a link), so they are only labelled "Used for" when a licensed indication says so
+    rows = row('Drug class', cls ? entityA(clinical, 'drug-classes', cls) : esc(e.class || '')) + row(licensed ? 'Used for' : 'Related conditions', licensed || related) + row('Acts on', (e.links?.targets || []).map(id => entityA(clinical, 'targets', id)).join(', ')) + row('Body system', systems)
       + row('Related tests', (e.links?.tests || []).slice(0, 4).map(id => entityA(clinical, 'tests', id)).join(', ')) + row('Prescription status', e.otc ? esc(e.otc.UK || Object.values(e.otc)[0]) : '')
       + row('Interactions', `<a href="#interactions">${ix ? (ix.byDrug?.[e.id] || []).length + ' records on this page' : 'See below'}</a> · <a href="${link.checker([e.id])}">Check interactions</a>`)
       + row('Availability', e.regulatory?.length ? `<a href="#availability">${e.regulatory.length} countr${e.regulatory.length === 1 ? 'y' : 'ies'}</a>` : '');
@@ -544,7 +546,7 @@ function nameOfOrgan(data, id) { return data.content.organs.find(o => o.id === i
 /** The urgent-action block of a page, placed before the optional 3D preview: a symptom's red flags, a condition's
  *  when-to-seek-care text, a first-aid topic's emergency call. Static HTML, never behind a disclosure or script. */
 export function urgentHtml(type, e) {
-  if (type === 'symptoms' && e.urgent?.length) return `<div class="callout urgent priority" role="note"><h2>Seek urgent care if</h2>${list(e.urgent)}</div>`;
+  if (type === 'symptoms' && e.urgent?.length) return `<div class="callout urgent priority" role="note"><h2>Seek urgent care if</h2>${list(e.urgent)}<p class="small"><b>In an emergency call 999</b> (112 elsewhere in Europe). For an urgent problem that is not an emergency, contact NHS 111 or your GP the same day.</p></div>`;
   if (type === 'conditions' && e.seekCare) return `<div class="callout urgent priority" role="note"><h2>When to seek care</h2><p style="margin:0">${esc(e.seekCare)}</p></div>`;
   if (type === 'first-aid') {
     if (e.emergency) return `<div class="callout urgent priority" role="note"><h2>Emergency</h2><p style="margin:0">Call emergency services (999 UK · 112 Europe · 911 North America) as soon as you recognise this, or have someone call while you act.</p></div>`;
