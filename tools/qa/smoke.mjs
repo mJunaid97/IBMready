@@ -50,6 +50,8 @@ const inspect = () => page.evaluate(() => {
     desc: document.querySelector('meta[name="description"]')?.content || '', og: document.querySelector('meta[property="og:title"]')?.content || '', crumbs: document.querySelectorAll('.breadcrumb li').length, ld: types, ldErr,
     undef: (document.body.innerText.match(/\bundefined\b|\[object Object\]|\bNaN\b/g) || []).length, hrefs: [...document.querySelectorAll('a[href]')].map(a => a.href), overflow: document.documentElement.scrollWidth > innerWidth + 1,
     rel: document.querySelectorAll('.aside .chip').length, refs: document.querySelectorAll('.ref-list li').length, editorial: !!document.querySelector('.editorial'), facade: !!document.querySelector('.facade'),
+    locator: !!document.querySelector('figure.locator svg path.loc-organ, figure.locator svg rect.loc-organ'), primaryImg: (document.getElementById('jsonld')?.textContent || '').includes('primaryImageOfPage'),
+    urgentNo999: [...document.querySelectorAll('.callout.urgent')].some(c => !/999/.test(c.innerText) && c.querySelector('h2')?.textContent.startsWith('Seek urgent care')),
     brand: !!document.querySelector('.site-header .brand img.logo-light[src*="site/logo/anatomy-nexus.svg"]') && !!document.querySelector('.site-footer .footer-brand img.logo-light') && !!document.querySelector('link[rel="icon"][href$="favicon.ico"]') && !!document.querySelector('link[rel="icon"][href$="favicon.svg"]') && !!document.querySelector('link[rel="apple-touch-icon"]') && !document.querySelector('.brand-mark'),
     emoji: /[\u{1F300}-\u{1FAFF}\u{2600}-\u{27BF}]/u.test(document.querySelector('main')?.innerText || '') };
 });
@@ -101,6 +103,10 @@ for (const [kind, id, u, needsRefs] of entityPages) {
   if (!r.rel) probs.push('no related links'); if (needsRefs && !r.refs) probs.push('no sources'); if (!r.editorial) probs.push('no editorial block');
   if (!r.brand) probs.push('brand assets missing'); if (r.emoji) probs.push('emoji used as an icon');
   if (r.undef) probs.push(`undefined text ×${r.undef}`);
+  if (kind === 'anatomy' && !r.locator) probs.push('no "where in the body" figure');
+  if (kind === 'anatomy' && r.facade && !r.primaryImg) probs.push('no primaryImageOfPage in the schema');
+  if (kind === 'symptoms' && r.urgentNo999) probs.push('red-flag list does not name 999');
+  if (/^[a-z0-9]/.test(r.desc)) probs.push(`description starts mid-sentence: ${r.desc.slice(0, 40)}`);
   if (titles.has(r.title)) probs.push(`duplicate title of ${titles.get(r.title)}`); titles.set(r.title, `${kind}/${id}`);
   if (descs.has(r.desc)) probs.push(`duplicate description of ${descs.get(r.desc)}`); descs.set(r.desc, `${kind}/${id}`);
   if (probs.length) fail(`${kind}/${id}: ${probs.join('; ')}`);

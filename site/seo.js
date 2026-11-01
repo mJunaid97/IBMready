@@ -30,7 +30,7 @@ export function seoTitle(name, descriptor) {
 export function metaDescription(text, max = 160, fallback = '') {
   const s = String(text || '').replace(/\s+/g, ' ').trim();
   if (s.length <= max) return s;
-  const sentences = s.match(/[^.!?]+[.!?]+(?=\s|$)|[^.!?]+$/g) || [s];
+  const sentences = s.match(/(?:[^.!?]|\.(?=\d))+[.!?]+(?=\s|$)|(?:[^.!?]|\.(?=\d))+$/g) || [s];      // a full stop before a digit is a decimal point (1.4 kg), not the end of a sentence
   let out = '', used = 0;
   for (const sen of sentences) { const t = (out + ' ' + sen).trim(); if (t.length > max) break; out = t; used++; }
   // the next sentence does not fit whole: add its leading clause when that makes a fuller description
@@ -97,7 +97,7 @@ function setMeta(sel, attrs) {
  * Apply everything for the current page. `path` is site-relative (canonical), `breadcrumbs` [{name, href}],
  * `jsonld` extra nodes (the entity node and page node), `image` a site-relative or absolute preview image.
  */
-export function applyMeta({ title, description, path, robots = 'index,follow', type = 'article', image, breadcrumbs, jsonld = [] }) {
+export function applyMeta({ title, description, path, robots = 'index,follow', type = 'article', image, imageAlt, breadcrumbs, jsonld = [] }) {
   document.title = title;
   const desc = metaDescription(description || SITE.description);
   setMeta('meta[name="description"]', { name: 'description', content: desc });
@@ -118,6 +118,10 @@ export function applyMeta({ title, description, path, robots = 'index,follow', t
   setMeta('meta[name="twitter:title"]', { name: 'twitter:title', content: title });
   setMeta('meta[name="twitter:description"]', { name: 'twitter:description', content: desc });
   setMeta('meta[name="twitter:image"]', { name: 'twitter:image', content: img });
+  if (imageAlt) { setMeta('meta[property="og:image:alt"]', { property: 'og:image:alt', content: imageAlt }); setMeta('meta[name="twitter:image:alt"]', { name: 'twitter:image:alt', content: imageAlt }); }
+  // a page that shows its own picture (the 3D preview of its organ) names it in the structured data, so image search and rich results can use it
+  const pageNode = image ? jsonld.find(n => n && n['@id'] === canonical(path)) : null;
+  if (pageNode) { pageNode.primaryImageOfPage = { '@type': 'ImageObject', url: img, width: 1200, height: 630, ...(imageAlt ? { caption: imageAlt } : {}) }; pageNode.image = img; }
   if (SITE.verification?.google) setMeta('meta[name="google-site-verification"]', { name: 'google-site-verification', content: SITE.verification.google });
   if (SITE.verification?.bing) setMeta('meta[name="msvalidate.01"]', { name: 'msvalidate.01', content: SITE.verification.bing });
   const graph = [organizationNode(), websiteNode(), ...(breadcrumbs?.length ? [breadcrumbNode(breadcrumbs)] : []), ...jsonld.filter(Boolean)];

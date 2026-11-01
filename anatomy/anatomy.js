@@ -22,15 +22,21 @@ if (!PRERENDERED) {
   const relTerms = terms.terms.filter(t => t.atlas && (t.atlas.organ === o.id || (t.atlas.structure && structs.some(s => s.name === t.atlas.structure))));
   const systemText = content.systems[o.system] || {};
   const h1 = art ? art.title : `${o.name} anatomy`;
-  const title = seoTitle(art ? art.title : `${o.name} Anatomy`, art ? art.descriptor : 'Structure, Location & Function');
-  const description = art ? `Explore the anatomy of the ${o.name.toLowerCase()}: ${art.descriptor.toLowerCase()}, clinical relevance and ${modelled ? 'an interactive 3D model' : 'the surrounding structures in 3D'}.` : `${o.name}: ${o.summary}`;
+  // "[Organ] Anatomy: 3D Model, [parts] | Anatomy Nexus": the searched phrase first, the feature that sets the page apart second
+  const title = seoTitle(art ? art.title : `${o.name} Anatomy`, art ? (modelled ? '3D Model, ' : '') + art.descriptor : 'Structure, Location & Function');
+  // the description is the article's own opening (what a searcher wants answered), then the invitation to explore it in 3D
+  const template = art ? `Explore the anatomy of the ${o.name.toLowerCase()}: ${art.descriptor.toLowerCase()}, clinical relevance and ${modelled ? 'an interactive 3D model' : 'the surrounding structures in 3D'}.` : '';
+  const sentences = (t) => !!t && art.intro.replace(/\s+/g, ' ').startsWith(t);        // whole sentences of the intro, not a clause cut out of a long one
+  const lead = art ? metaDescription(art.intro, 138) : '';
+  const whole = art ? metaDescription(art.intro, 160, template) : '';
+  const description = art ? (modelled && sentences(lead) && lead.length >= 60 && lead.length <= 140 ? `${lead} Explore it in 3D.` : sentences(whole) && whole.length >= 70 ? whole : template) : `${o.name}: ${o.summary}`;
   const crumbs = [{ name: 'Home', href: link.home() }, { name: 'Anatomy', href: link.page('anatomy') }, { name: sys ? sys.name : o.system, href: link.systemPage(o.system) }, { name: o.name }];
   const topics = clinical.organs?.[o.id] || {};
   const node = { '@type': 'AnatomicalStructure', '@id': canonical(path) + '#entity', name: o.name, url: canonical(path), description: metaDescription(art ? art.intro : o.summary, 300), ...(o.aliases?.length ? { alternateName: o.aliases } : {}),
     ...(sys ? { partOfSystem: { '@type': 'AnatomicalSystem', name: sys.name, url: canonical(paths.entity('systems', 'system.html', sys.id)) } } : {}),
     ...(structs.length ? { subStructure: structs.slice(0, 40).map(s => ({ '@type': 'AnatomicalStructure', name: s.name })) } : {}),
     ...(topics.conditions?.length ? { relatedCondition: topics.conditions.slice(0, 12).map(cid => ({ '@type': 'MedicalCondition', name: clinical.names.conditions[cid] || cid, url: canonical(paths.entity('conditions', 'condition.html', cid)) })) } : {}) };
-  applyMeta({ title, description, path, robots: o.index ? 'index,follow' : 'noindex,follow', image: link.preview(hash || ''), breadcrumbs: crumbs,
+  applyMeta({ title, description, path, robots: o.index ? 'index,follow' : 'noindex,follow', image: link.preview(hash || ''), imageAlt: hash ? `3D model of the ${o.name.toLowerCase()}${modelled ? '' : ' and the structures around it'} in the ${SITE.name} anatomy atlas` : undefined, breadcrumbs: crumbs,
     jsonld: [webPageNode({ path, title, description: metaDescription(description), entityId: canonical(path) + '#entity', updated: o.updated, references: art?.references }), node] });
   const single = structs.length === 1 ? content.structures[structs[0].id] : null;
   const locFig = locatorFigure(locator, [{ id: o.id, name: o.name, color: sys?.color }], { heading: `Where the ${o.name.toLowerCase()} lies` });
