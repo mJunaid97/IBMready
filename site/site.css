@@ -432,6 +432,31 @@ dl.ix dd { margin: 0; }
 .facade img { display: block; width: 100%; height: auto; aspect-ratio: 1200 / 630; object-fit: cover; }
 .facade figcaption { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 10px; padding: 10px 14px; font-size: 13.5px; color: var(--text-secondary); background: var(--surface); border-top: 1px solid var(--border); }
 .facade .btn { margin: 0; }
+
+/* "Where in the body" figure (site/locator.js): a schematic front view with the page's organs marked, beside the 3D preview */
+.visuals { display: grid; grid-template-columns: minmax(0, 1fr); gap: 16px; margin: 0 0 12px; }
+.visuals.has-both { grid-template-columns: 196px minmax(0, 1fr); align-items: stretch; }
+.visuals .facade { margin: 0; }
+.locator { --loc-body: color-mix(in srgb, var(--brand-gray) 20%, var(--surface)); --loc-edge: color-mix(in srgb, var(--brand-gray) 62%, var(--surface));
+  margin: 0; display: flex; flex-direction: column; gap: 8px; padding: 12px; border: 1px solid var(--border); border-radius: var(--radius-lg); background: var(--surface-alt); box-shadow: var(--shadow-sm); }
+.loc-svg { display: block; width: 100%; height: auto; max-height: 380px; margin: 0 auto; }
+.loc-fill { fill: var(--loc-body); stroke: var(--loc-body); stroke-linejoin: round; }
+.loc-edge { fill: var(--loc-edge); stroke: var(--loc-edge); stroke-linejoin: round; }
+.loc-organ { fill: var(--c, var(--accent)); fill-opacity: .72; stroke: color-mix(in srgb, var(--c, var(--accent)) 45%, var(--text-primary)); stroke-width: 1.6px; stroke-linejoin: round; vector-effect: non-scaling-stroke; }
+.loc-ring { fill: none; stroke: color-mix(in srgb, var(--c, var(--accent)) 45%, var(--text-primary)); stroke-width: 1.6px; vector-effect: non-scaling-stroke; }
+.loc-svg[role="group"] .loc-organ { fill-opacity: .42; }          /* a system's organs overlap: let the overlaps show */
+.locator a { cursor: pointer; }
+.locator a:hover .loc-organ, .locator a:focus-visible .loc-organ { fill-opacity: .95; }
+.locator a:focus-visible { outline: 2px solid var(--focus); outline-offset: 2px; }
+.loc-side { font: 600 54px var(--font); fill: var(--text-secondary); }
+.locator figcaption { display: flex; flex-direction: column; gap: 3px; font-size: var(--text-caption); line-height: 1.4; color: var(--text-secondary); }
+.locator figcaption b { color: var(--text-primary); font-size: 13.5px; }
+.locator figcaption small { font-size: 11.5px; opacity: .92; }
+.locator-small { flex-direction: row; align-items: center; gap: 12px; margin: 0 0 14px; padding: 10px; box-shadow: none; }
+.locator-small .loc-svg { width: 86px; max-height: 220px; flex: none; margin: 0; }
+.locator-small .loc-side { font-size: 86px; }
+.viewmodes { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; margin: 0 0 20px; font-size: var(--text-small); color: var(--text-secondary); }
+.viewmodes > span { margin-right: 4px; }
 .embed { width: 100%; aspect-ratio: 16 / 10; border: 1px solid var(--border); border-radius: var(--radius-lg); background: var(--surface-alt); overflow: hidden; box-shadow: var(--shadow); }
 .embed iframe { width: 100%; height: 100%; border: 0; display: block; }
 
@@ -625,6 +650,9 @@ dl.ix dd { margin: 0; }
   .pair { grid-template-columns: 1fr; }
   .facade figcaption { flex-direction: column; align-items: stretch; }
   .facade figcaption .btn { justify-content: center; }
+  .visuals.has-both { grid-template-columns: minmax(0, 1fr); }
+  .visuals .locator:not(.locator-small) { flex-direction: row; align-items: center; gap: 14px; }
+  .visuals .locator:not(.locator-small) .loc-svg { width: 104px; max-height: 270px; flex: none; margin: 0; }
   .editorial dl { grid-template-columns: 1fr; gap: 0; }
   .editorial dt { margin-top: 6px; }
   dl.ix { grid-template-columns: 1fr; }

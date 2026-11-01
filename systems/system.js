@@ -1,10 +1,11 @@
 // systems/system.js — one body system: overview, functions, clinical notes, organs, every structure, 3D model, related topics.
 import { renderHeader, renderFooter, loadData, loadClinical, link, esc, fmt, pageId, paths, PRERENDERED, SITE, breadcrumbHtml, facadeHtml, canonical, structuresLabel } from '../site/site.js';
 import { relatedForAnatomy, relatedCountForAnatomy, editorialHtml } from '../site/entity.js';
+import { locatorFigure } from '../site/locator.js';
 import { applyMeta, seoTitle, metaDescription, webPageNode } from '../site/seo.js';
 renderHeader('systems'); renderFooter();
 if (!PRERENDERED) {
-  const [{ atlas, content }, clinical] = await Promise.all([loadData(), loadClinical()]);
+  const [{ atlas, content, locator }, clinical] = await Promise.all([loadData(), loadClinical()]);
   const id = pageId(); const sys = atlas.systems.find(s => s.id === id);
   const main = document.getElementById('main');
   if (!sys) { main.innerHTML = `<h1>Not found</h1><p><a href="${link.page('systems')}">All body systems</a></p>`; applyMeta({ title: `Not found | ${SITE.name}`, description: '', path: paths.dir('systems'), robots: 'noindex' }); document.body.dataset.status = '404'; throw new Error('no system'); }
@@ -12,6 +13,7 @@ if (!PRERENDERED) {
   const structs = atlas.structures.map((s, i) => ({ ...s, idx: i })).filter(s => s.system === id).sort((a, b) => a.name.localeCompare(b.name));
   const organs = content.organs.filter(o => o.system === id);
   const key = (c.keyStructures || []).map(n => { const s = structs.find(x => x.name === n); return s ? `<a class="chip" href="${link.structure(s.id)}">${esc(n)}</a>` : ''; }).join('');
+  const locFig = locatorFigure(locator, organs.map(o => ({ id: o.id, name: o.name, color: sys.color, href: link.organPage(o.id) })), { heading: `Where the ${sys.name.toLowerCase()} lies`, intro: 'Each shape is an organ or group; select one to open its page.', title: `Front view of the body with the organs of the ${sys.name.toLowerCase()} system marked; each one links to its page` });
   const crumbs = [{ name: 'Home', href: link.home() }, { name: 'Anatomy', href: link.page('anatomy') }, { name: 'Body systems', href: link.page('systems') }, { name: sys.name }];
   const title = seoTitle(sys.title || `${sys.name} system`.replace(/ system system$/i, ' system'), 'Structures, Functions & Clinical Notes');   // a layer may carry its own page title ("Anatomy after gender-affirming surgery")
   const description = `${c.summary || sys.summary} ${structs.length} structures in 3D, with functions, clinical notes and related conditions, tests and procedures.`;
@@ -31,7 +33,7 @@ if (!PRERENDERED) {
       <a class="btn" href="${link.locate(id)}">Locate structures</a>
       <a class="btn" href="${link.cards(id)}">Flashcards</a>
     </div>
-    ${facadeHtml('sys=' + id, sys.layer ? (sys.title || `${sys.name} system`) : sys.name)}
+    <div class="visuals${locFig ? ' has-both' : ''}">${locFig}${facadeHtml('sys=' + id, sys.layer ? (sys.title || `${sys.name} system`) : sys.name)}</div>
     <div class="two">
       <div>
         <h2>Overview</h2>

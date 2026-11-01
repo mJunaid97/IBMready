@@ -338,13 +338,14 @@ export function getJSON(rel) {
 let _data = null;
 export async function loadData() {
   if (_data) return _data;
-  const [atlas, content, terms] = await Promise.all([
+  const [atlas, content, terms, locator] = await Promise.all([
     getJSON('data/hd/atlas.json'), getJSON('data/content/atlas-content.json'),
     getJSON('data/content/terms.json').catch(() => ({ terms: [], categories: [] })),
+    getJSON('data/content/locator.json').catch(() => null),      // front-view organ outlines for site/locator.js; a page works without it
   ]);
   const byName = new Map(atlas.structures.map((s, i) => [s.name, i]));
   const byId = new Map(atlas.structures.map((s, i) => [s.id, i]));
-  _data = { atlas, content, terms, byName, byId };
+  _data = { atlas, content, terms, locator, byName, byId };
   return _data;
 }
 /** Small name index + organ/system/structure → entity backlinks (data/content/clinical.json). */

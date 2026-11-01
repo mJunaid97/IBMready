@@ -1100,9 +1100,83 @@ def main():
     clinical = build_clinical(atlas, know)
 
     os.makedirs(OUT, exist_ok=True)
+    # 2D "where in the body" locator (data/content/locator.json, drawn by site/locator.js on a neutral schematic body): the
+    # outline of each organ in the front plane, in millimetres of the atlas body (x towards the patient's left, y up), taken from
+    # the outlines of the pieces the atlas holds for it (tools/derived/piece-hulls.json, made by tools/build-silhouettes.mjs from
+    # the 3D models). For an organ the atlas does not model, the structures around it. A bilateral organ (hands, feet, kidneys,
+    # eyes) gives one outline per side.
+    hulls_path = os.path.join(ROOT, "tools", "derived", "piece-hulls.json")
+    hulls = json.load(open(hulls_path, encoding="utf-8")) if os.path.exists(hulls_path) else {}
+    def convex_hull(points):
+        pts = sorted(set(map(tuple, points)))
+        if len(pts) < 3: return [list(p) for p in pts]
+        def cross(o, a, b): return (a[0] - o[0]) * (b[1] - o[1]) - (a[1] - o[1]) * (b[0] - o[0])
+        lower, upper = [], []
+        for p in pts:
+            while len(lower) >= 2 and cross(lower[-2], lower[-1], p) <= 0: lower.pop()
+            lower.append(p)
+        for p in reversed(pts):
+            while len(upper) >= 2 and cross(upper[-2], upper[-1], p) <= 0: upper.pop()
+            upper.append(p)
+        return [list(p) for p in lower[:-1] + upper[:-1]]
+    def simplify(poly, keep):
+        """Drop the corner that adds least area until `keep` corners remain, so the outline keeps its extremes."""
+        poly = [list(p) for p in poly]
+        def tri(a, b, c): return abs((b[0] - a[0]) * (c[1] - a[1]) - (c[0] - a[0]) * (b[1] - a[1])) / 2
+        while len(poly) > keep:
+            n = len(poly)
+            i = min(range(n), key=lambda i: tri(poly[i - 1], poly[i], poly[(i + 1) % n]))
+            del poly[i]
+        return poly
+    def clusters(piece_ids, gap=35, keep=26):
+        """Outlines of the pieces' union, merged while two pieces' front-plane boxes lie within `gap` mm of each other.
+        Returns [{"b": [x0, y0, x1, y1], "p": [[x, y], ...]}], left to right."""
+        items = [([b[0], b[1], b[3], b[4]], [i]) for i in piece_ids for b in [pieces[i].get("bbox")] if b]
+        merged = True
+        while merged and len(items) > 1:
+            merged = False
+            for i in range(len(items)):
+                for j in range(i + 1, len(items)):
+                    a_, b_ = items[i][0], items[j][0]
+                    if a_[0] - gap <= b_[2] and b_[0] - gap <= a_[2] and a_[1] - gap <= b_[3] and b_[1] - gap <= a_[3]:
+                        items[i] = ([min(a_[0], b_[0]), min(a_[1], b_[1]), max(a_[2], b_[2]), max(a_[3], b_[3])], items[i][1] + items[j][1]); del items[j]; merged = True; break
+                if merged: break
+        out = []
+        for box, ids in items:
+            pts = [pt for i in ids for pt in hulls.get(pieces[i]["id"], [])]
+            groups = [pts]
+            # one mesh can hold both sides (the external ears are a single piece): when nothing of it lies near the midline,
+            # outline each side on its own instead of one band across the head
+            if pts and box[0] < -30 and box[2] > 30 and min(abs(x) for x, _ in pts) > 20:
+                groups = [[p for p in pts if p[0] < 0], [p for p in pts if p[0] > 0]]
+            for grp in groups:
+                if not grp: continue
+                poly = simplify(convex_hull(grp), keep)
+                xs, ys = [x for x, _ in grp], [y for _, y in grp]
+                out.append({"b": [round(min(xs)), round(min(ys)), round(max(xs)), round(max(ys))] if len(groups) > 1 else [round(v) for v in box],
+                            "p": [[round(x), round(y)] for x, y in poly]})
+        return sorted(out, key=lambda c: (c["b"][0], c["b"][1]))
+    # Organs whose whole structure list would draw a misleading outline: the knee joint is the patella and popliteus, not the
+    # whole femur, tibia and fibula (that outline would cover the leg).
+    LOCATOR_FOCUS = {"knee": re.compile(r"patella|popliteus", re.I)}
+    def area(c): return max(c["b"][2] - c["b"][0], 1) * max(c["b"][3] - c["b"][1], 1)
+    loc_organs = {}
+    for o in out_organs:
+        idx = o["structures"] or o.get("nearby") or []
+        if o["id"] in LOCATOR_FOCUS: idx = [si for si in idx if LOCATOR_FOCUS[o["id"]].search(structs[si]["name"])] or idx
+        r = clusters([pi for si in idx for pi in structs[si]["pieces"]])
+        # one stray vessel in the atlas lies far from its organ (a "right anterior segmental artery" among the lungs' lies at
+        # liver level); an outline under a twentieth of the largest one is a data quirk, not part of where the organ is
+        if len(r) > 1:
+            big = max(area(x) for x in r); r = [x for x in r if area(x) * 20 >= big]
+        if r: loc_organs[o["id"]] = r
+    skin_pieces = [pi for st in structs if st["name"] == "Skin" for pi in st["pieces"]]
+    skin = clusters(skin_pieces, gap=0)[0]["b"] if skin_pieces else None
+    locator = {"units": "mm", "skin": skin, "organs": loc_organs}
     compiled = {"systems": systems, "organs": out_organs, "regions": out_regions, "structures": out_structs, "anatomyUpdated": articles_updated}
     json.dump(compiled, open(os.path.join(OUT, "atlas-content.json"), "w", encoding="utf-8"), separators=(",", ":"), ensure_ascii=False)
     json.dump(terms, open(os.path.join(OUT, "terms.json"), "w", encoding="utf-8"), separators=(",", ":"), ensure_ascii=False)
+    json.dump(locator, open(os.path.join(OUT, "locator.json"), "w", encoding="utf-8"), separators=(",", ":"), ensure_ascii=False)
     know_out = {k: v for k, v in know.items() if k not in ("testCategories", "medicationTaxonomy", "review", "conceptPage")}
     for fname, obj in (("knowledge.json", know_out), ("clinical.json", clinical), ("search-index.json", search_index), ("aliases.json", know["aliases"]), ("interactions.json", know["interactions"]), ("comparisons.json", know["comparisons"]),
                        ("test-categories.json", know["testCategories"]), ("medication-taxonomy.json", know["medicationTaxonomy"]), ("review-queues.json", know["review"]),

@@ -5,10 +5,11 @@
 // gender-affirming layer; today only the vulva) shows the modelled structures around it in 3D instead.
 import { renderHeader, renderFooter, loadData, loadClinical, link, esc, pageId, paths, PRERENDERED, SITE, breadcrumbHtml, facadeHtml, canonical, entityLink, TYPE_ORDER, organHash } from '../site/site.js';
 import { relatedForAnatomy, relatedCountForAnatomy, referencesHtml, editorialHtml } from '../site/entity.js';
+import { locatorFigure } from '../site/locator.js';
 import { applyMeta, seoTitle, metaDescription, webPageNode } from '../site/seo.js';
 renderHeader('anatomy'); renderFooter();
 if (!PRERENDERED) {
-  const [data, clinical] = await Promise.all([loadData(), loadClinical()]); const { atlas, content, terms } = data;
+  const [data, clinical] = await Promise.all([loadData(), loadClinical()]); const { atlas, content, terms, locator } = data;
   const id = pageId(); const o = content.organs.find(x => x.id === id);
   const main = document.getElementById('main');
   if (!o) { main.innerHTML = `<h1>Not found</h1><p><a href="${link.page('anatomy')}">All anatomy pages</a></p>`; applyMeta({ title: `Not found | ${SITE.name}`, description: '', path: paths.dir('anatomy'), robots: 'noindex' }); document.body.dataset.status = '404'; throw new Error('no organ'); }
@@ -32,6 +33,7 @@ if (!PRERENDERED) {
   applyMeta({ title, description, path, robots: o.index ? 'index,follow' : 'noindex,follow', image: link.preview(hash || ''), breadcrumbs: crumbs,
     jsonld: [webPageNode({ path, title, description: metaDescription(description), entityId: canonical(path) + '#entity', updated: o.updated, references: art?.references }), node] });
   const single = structs.length === 1 ? content.structures[structs[0].id] : null;
+  const locFig = locatorFigure(locator, [{ id: o.id, name: o.name, color: sys?.color }], { heading: `Where the ${o.name.toLowerCase()} lies` });
   main.innerHTML = `
     ${breadcrumbHtml(crumbs)}
     <div class="eyebrow">Anatomy · <a href="${link.systemPage(o.system)}">${esc(sys ? sys.name : o.system)}</a>${region ? ` · <a href="${link.region(region.id)}">${esc(region.name)}</a>` : ''}</div>
@@ -44,7 +46,8 @@ if (!PRERENDERED) {
       <a class="btn" href="${link.quiz(o.system)}">Quiz: ${esc((sys ? sys.name : o.system).toLowerCase())}</a>`
       : `${hash ? `<a class="btn btn-primary" href="${link.explorer(hash)}">Surrounding structures in 3D</a>` : ''}${region ? `<a class="btn" href="${link.region(region.id)}">Show the ${esc(region.name.toLowerCase())} in 3D</a>` : ''}`}
     </div>
-    ${hash ? facadeHtml(hash, modelled ? o.name : `${o.name}: surrounding structures`) : ''}
+    ${hash || locFig ? `<div class="visuals${hash && locFig ? ' has-both' : ''}">${locFig}${hash ? facadeHtml(hash, modelled ? o.name : `${o.name}: surrounding structures`) : ''}</div>` : ''}
+    ${hash ? `<p class="viewmodes"><span>See it as</span><a class="chip" href="${link.explorer(hash + '&x=1')}" title="Fade the surrounding tissue to see the ${esc(o.name.toLowerCase())} in place">X-ray view</a><a class="chip" href="${link.explorer(hash + '&e=0.6')}" title="Pull the structures apart">Exploded view</a><a class="chip" href="${link.explorer(hash + '&slice=y')}" title="Cut across the body at any height">Cross-section</a></p>` : ''}
     ${hash && !modelled ? `<p class="muted small">The 3D atlas does not model the ${esc(o.name.toLowerCase())}, so this view shows the structures around it. The atlas's base body is an adult male body (BodyParts3D); structures of the female reproductive system come from the NIH Human Reference Atlas female layer, which the view switches on in place of the male reproductive organs.</p>` : ''}
     <div class="two">
       <div>

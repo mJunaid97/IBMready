@@ -10,6 +10,7 @@
  */
 import { renderHeader, renderFooter, loadData, loadClinical, loadType, loadInteractions, loadVocabularies, vocabName, link, entityLink, typeLink, entityPath, organHash, TYPES, TYPE_ORDER, esc, param, pageId, paths, url, ROOT, PRERENDERED, SITE, SEVERITY, breadcrumbHtml, facadeHtml, dateText, canonical, iconSvg, emptyHtml } from './site.js';
 import { applyMeta, seoTitle, metaDescription, webPageNode } from './seo.js';
+import { locatorFigure } from './locator.js';
 import { TIERS, tierOf } from './interaction-engine.js';
 
 const SYMPTOM_REGION = { head: 'head', chest: 'thorax', abdomen: 'abdomen', pelvis: 'pelvis', back: 'thorax', arms: 'upper-limb', legs: 'lower-limb' };
@@ -102,7 +103,8 @@ export function anatomyHtml(e, data, clinical) {
   const structs = (a.structures || []).map(id => atlas.structures[byId.get(id)]).filter(Boolean);
   if (!organs.length && !systems.length && !structs.length) return '';
   const region = e.type === 'symptoms' && SYMPTOM_REGION[e.region] ? content.regions.find(r => r.id === SYMPTOM_REGION[e.region]) : null;
-  return `<section class="in-body"><h2>In the body</h2>
+  const fig = locatorFigure(data.locator, organs.slice(0, 8).map(o => ({ id: o.id, name: o.name, color: atlas.systems.find(s => s.id === o.system)?.color })), { scale: 'small', heading: 'Where in the body' });
+  return `<section class="in-body"><h2>In the body</h2>${fig}
     ${organs.length ? `<div class="rel-group"><div class="eyebrow">Anatomy</div><div class="chips">${organs.map(o => `<a class="chip" href="${link.organPage(o.id)}">${esc(o.name)}</a>`).join('')}</div></div>` : ''}
     ${systems.length ? `<div class="rel-group"><div class="eyebrow">Body systems</div><div class="chips">${systems.map(s => `<a class="chip" href="${link.systemPage(s.id)}" style="border-color:${s.color}">${esc(s.name)}</a>`).join('')}</div></div>` : ''}
     ${structs.length ? `<div class="rel-group"><div class="eyebrow">Structures in the atlas</div><div class="chips">${structs.map(s => `<a class="chip" href="${link.structure(s.id)}" title="Open in the 3D explorer">${esc(s.name)}</a>`).join('')}</div></div>` : ''}
