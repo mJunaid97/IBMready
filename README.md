@@ -200,7 +200,9 @@ node build-atlas.mjs --src /path/to/isa_BP3D_4.0_obj_99 --manifest manifest/atla
 # 3. add the female body and gender-affirming layers (needs the HRA united-female GLBs, e.g. public/anatomy/ of
 #    https://github.com/Nurkan1/Anatria-3D); reads the HD and lite settings from the atlas.json files just built
 node build-female-atlas.mjs --src /path/to/hra-female-glbs
-# 4. compile content, 5. render the 3D preview images (needs a local server on :8123)
+# 4. outline every piece for the 2D "where in the body" figure (tools/derived/piece-hulls.json, committed; needs only Node)
+node build-silhouettes.mjs --check
+# 5. compile content, 6. render the 3D preview images (needs a local server on :8123)
 python3 build-content.py
 node render-previews.mjs --force --extras      # every preview with the brand plate, plus site/hero.jpg and site/og-cover.png
 ```
@@ -236,12 +238,12 @@ tools/                the clinical tools hub (index.html) and the Drug Interacti
 editorial/            the drug interaction methodology page (site/methodology.js)
 about/ … contact/     policy pages
 site/                 shared shell: site.js (URLs, header, footer, icons, facade), seo.js (metadata, JSON-LD), entity.js
-                      (templates, hubs), site.css (design tokens and components), logo/ (the logo SVGs the pages use),
+                      (templates, hubs), locator.js (the "where in the body" figure), site.css (design tokens and components), logo/ (the logo SVGs the pages use),
                       fonts/ (Inter), previews/ (3D preview images with the brand plate), site-meta.js (generated)
 brand/                the Anatomy Nexus logo package: masters, print files, favicon sources, README.txt (colours, type, usage)
 data/                 built atlas (hd, lite), compiled content, ATTRIBUTION.md
 content/              editable content sources
-tools/                pipeline: build-content.py (+ taxonomy.py), package-site.py, prerender.mjs, render-previews.mjs,
+tools/                pipeline: build-content.py (+ taxonomy.py), build-silhouettes.mjs (+ derived/), verification/ (QA printers and validators), package-site.py, prerender.mjs, render-previews.mjs,
                       check-references.py, release.py, terminology/ (LOINC and RxNorm ingestion), qa/ (smoke test, engine-test.mjs, serve.py)
 vendor/three/         three.js r186 (minified core + the addons used)
 ARCHITECTURE.md       entity model and how sections connect · SEO.md the search architecture · CLINICAL.md the clinical layer
