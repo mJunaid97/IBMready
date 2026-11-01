@@ -28,7 +28,7 @@ the largest English-speaking market for these terms; UK volumes are lower but fo
 | pelvic bones | 7,300 | 3 | `/anatomy/pelvic-girdle/` | same page |
 | lung anatomy | 9,900 | 36 | `/anatomy/lungs/` | article |
 | liver anatomy | 8,300 | 40 | `/anatomy/liver/` | article |
-| testicle anatomy | 7,200 | 22 | `/anatomy/testes/` | draft, second pass under way |
+| testicle anatomy | 7,200 | 22 | `/anatomy/testes/` | source-verified article, title "Testicle Anatomy" |
 | hip bone anatomy | 5,300 | 8 | `/anatomy/pelvic-girdle/` | same page |
 | prostate anatomy | 5,000 | 12 | `/anatomy/prostate/` | **no article** |
 | gallbladder anatomy | 4,400 | 23 | `/anatomy/gallbladder/` | **no article** |

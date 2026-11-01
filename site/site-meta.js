@@ -37,7 +37,7 @@ export const SITE = {
     "structures": 1736,
     "systems": 19,
     "organs": 48,
-    "anatomyArticles": 36,
+    "anatomyArticles": 37,
     "terms": 156,
     "topics": 329,
     "links": 6014,

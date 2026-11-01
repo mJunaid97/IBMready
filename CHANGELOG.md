@@ -9,9 +9,9 @@
   (`tools/build-silhouettes.mjs` decodes the compressed GLB files, projects every piece onto the front plane and keeps
   its outline; `tools/build-content.py` merges them into `data/content/locator.json`, 11 KB), so figure and model cannot
   disagree. The body is a neutral pictogram; paired organs get a shape per side; organs under 7 cm get a ring marker
-- Anatomy: six organ articles pass the second, adversarial source check and are merged (skull, hand, adrenal glands,
-  small intestine, bony pelvis, bladder and urethra); 54 of 298 sentences were unsupported or wrong and were cut
-  or reworded to what the sources say. Their audit trail is in `docs/verification/anatomy/`. Six more organ pages become
+- Anatomy: seven organ articles pass the second, adversarial source check and are merged (skull, hand, adrenal glands,
+  small intestine, bony pelvis, bladder and urethra, testicle); 62 of 351 sentences were unsupported or wrong and were cut
+  or reworded to what the sources say. Their audit trail is in `docs/verification/anatomy/`. Seven more organ pages become
   indexable; the small-intestine card no longer states a length the cited sources disagree on
 - Editorial QA: sixteen reviewers without web access read every symptom, first-aid, condition, test, medicine, procedure,
   biomarker, physiology and anatomy page and the drug-class, interaction and comparison records. 126 of the 305 findings were
