@@ -434,8 +434,9 @@ dl.ix dd { margin: 0; }
 .facade .btn { margin: 0; }
 
 /* "Where in the body" figure (site/locator.js): a schematic front view with the page's organs marked, beside the 3D preview */
-.visuals { display: grid; grid-template-columns: minmax(0, 1fr); gap: 16px; margin: 0 0 12px; }
-.visuals.has-both { grid-template-columns: 196px minmax(0, 1fr); align-items: stretch; }
+.visuals { display: grid; grid-template-columns: minmax(0, 1fr); gap: 16px; margin: 0 0 20px; }
+.visuals.has-both { grid-template-columns: 196px minmax(0, 1fr); align-items: start; }
+.visuals-main { display: flex; flex-direction: column; gap: 10px; min-width: 0; }
 .visuals .facade { margin: 0; }
 .locator { --loc-body: color-mix(in srgb, var(--brand-gray) 20%, var(--surface)); --loc-edge: color-mix(in srgb, var(--brand-gray) 62%, var(--surface));
   margin: 0; display: flex; flex-direction: column; gap: 8px; padding: 12px; border: 1px solid var(--border); border-radius: var(--radius-lg); background: var(--surface-alt); box-shadow: var(--shadow-sm); }
@@ -455,7 +456,7 @@ dl.ix dd { margin: 0; }
 .locator-small { flex-direction: row; align-items: center; gap: 12px; margin: 0 0 14px; padding: 10px; box-shadow: none; }
 .locator-small .loc-svg { width: 86px; max-height: 220px; flex: none; margin: 0; }
 .locator-small .loc-side { font-size: 86px; }
-.viewmodes { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; margin: 0 0 20px; font-size: var(--text-small); color: var(--text-secondary); }
+.viewmodes { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; margin: 0; font-size: var(--text-small); color: var(--text-secondary); }
 .viewmodes > span { margin-right: 4px; }
 .embed { width: 100%; aspect-ratio: 16 / 10; border: 1px solid var(--border); border-radius: var(--radius-lg); background: var(--surface-alt); overflow: hidden; box-shadow: var(--shadow); }
 .embed iframe { width: 100%; height: 100%; border: 0; display: block; }

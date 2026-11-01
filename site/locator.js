@@ -50,7 +50,7 @@ export function placeWords(clusters) {
   const left = x1 / (x1 - x0);                         // share of its width that lies to the patient's left of the midline
   if (left >= 0.6) return "mostly on the patient's left, crossing the midline";
   if (left <= 0.4) return "mostly on the patient's right, crossing the midline";
-  return 'on both sides of the midline';
+  return x1 - x0 < 140 ? 'in the midline' : 'on both sides of the midline';
 }
 
 let _n = 0;

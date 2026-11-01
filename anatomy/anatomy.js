@@ -39,7 +39,7 @@ if (!PRERENDERED) {
   applyMeta({ title, description, path, robots: o.index ? 'index,follow' : 'noindex,follow', image: link.preview(hash || ''), imageAlt: hash ? `3D model of the ${o.name.toLowerCase()}${modelled ? '' : ' and the structures around it'} in the ${SITE.name} anatomy atlas` : undefined, breadcrumbs: crumbs,
     jsonld: [webPageNode({ path, title, description: metaDescription(description), entityId: canonical(path) + '#entity', updated: o.updated, references: art?.references }), node] });
   const single = structs.length === 1 ? content.structures[structs[0].id] : null;
-  const locFig = locatorFigure(locator, [{ id: o.id, name: o.name, color: sys?.color }], { heading: `Where the ${o.name.toLowerCase()} lies` });
+  const locFig = locatorFigure(locator, [{ id: o.id, name: o.name, color: sys?.color }]);
   main.innerHTML = `
     ${breadcrumbHtml(crumbs)}
     <div class="eyebrow">Anatomy · <a href="${link.systemPage(o.system)}">${esc(sys ? sys.name : o.system)}</a>${region ? ` · <a href="${link.region(region.id)}">${esc(region.name)}</a>` : ''}</div>
@@ -52,8 +52,8 @@ if (!PRERENDERED) {
       <a class="btn" href="${link.quiz(o.system)}">Quiz: ${esc((sys ? sys.name : o.system).toLowerCase())}</a>`
       : `${hash ? `<a class="btn btn-primary" href="${link.explorer(hash)}">Surrounding structures in 3D</a>` : ''}${region ? `<a class="btn" href="${link.region(region.id)}">Show the ${esc(region.name.toLowerCase())} in 3D</a>` : ''}`}
     </div>
-    ${hash || locFig ? `<div class="visuals${hash && locFig ? ' has-both' : ''}">${locFig}${hash ? facadeHtml(hash, modelled ? o.name : `${o.name}: surrounding structures`) : ''}</div>` : ''}
-    ${hash ? `<p class="viewmodes"><span>See it as</span><a class="chip" href="${link.explorer(hash + '&x=1')}" title="Fade the surrounding tissue to see the ${esc(o.name.toLowerCase())} in place">X-ray view</a><a class="chip" href="${link.explorer(hash + '&e=0.6')}" title="Pull the structures apart">Exploded view</a><a class="chip" href="${link.explorer(hash + '&slice=y')}" title="Cut across the body at any height">Cross-section</a></p>` : ''}
+    ${hash || locFig ? `<div class="visuals${hash && locFig ? ' has-both' : ''}">${locFig}${hash ? `<div class="visuals-main">${facadeHtml(hash, modelled ? o.name : `${o.name}: surrounding structures`)}
+      <p class="viewmodes"><span>See it as</span><a class="chip" href="${link.explorer(hash + '&x=1')}" title="Fade the surrounding tissue to see the ${esc(o.name.toLowerCase())} in place">X-ray view</a><a class="chip" href="${link.explorer(hash + '&e=0.6')}" title="Pull the structures apart">Exploded view</a><a class="chip" href="${link.explorer(hash + '&slice=y')}" title="Cut across the body at any height">Cross-section</a></p></div>` : ''}</div>` : ''}
     ${hash && !modelled ? `<p class="muted small">The 3D atlas does not model the ${esc(o.name.toLowerCase())}, so this view shows the structures around it. The atlas's base body is an adult male body (BodyParts3D); structures of the female reproductive system come from the NIH Human Reference Atlas female layer, which the view switches on in place of the male reproductive organs.</p>` : ''}
     <div class="two">
       <div>
