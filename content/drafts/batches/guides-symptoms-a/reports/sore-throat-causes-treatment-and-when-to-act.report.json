@@ -1,0 +1,196 @@
+{
+ "id": "sore-throat-causes-treatment-and-when-to-act",
+ "searchesUsed": 5,
+ "counts": {
+  "supported": 7,
+  "textbook": 0,
+  "unsupported": 6,
+  "wrong": 5,
+  "unchecked": 0,
+  "unsafe": 1
+ },
+ "claims": [
+  {
+   "id": "c01",
+   "where": "body[0]",
+   "sentence": "The NHS says most sore throats are caused by viruses such as colds or flu, and bacteria are a less common cause.",
+   "classification": "wrong",
+   "evidence": "Only a University Hospitals Sussex A&E leaflet text said sore throats are usually caused by viruses like colds or flu, less often bacteria; nhs.uk page text for this was not returned. NICE NG84 says acute sore throat is often caused by a viral infection.",
+   "url": "https://www.nice.org.uk/guidance/ng84/resources/sore-throat-acute-antimicrobial-prescribing-pdf-1837694694085",
+   "action": "edited",
+   "newSentence": "NICE says acute sore throat is often caused by a viral infection, and most people get better without an antibiotic."
+  },
+  {
+   "id": "c02",
+   "where": "body[0]",
+   "sentence": "Laryngitis, tonsillitis, strep throat and glandular fever can also cause a sore throat, and so can smoking.",
+   "classification": "unsupported",
+   "evidence": "Sussex leaflet lists tonsillitis, laryngitis, strep throat and glandular fever as other frequent causes. Search said it found nothing on smoking as a cause.",
+   "url": "https://www.uhsussex.nhs.uk/resources/sore-throat-advice-ae-leaflet/",
+   "action": "edited",
+   "newSentence": "A University Hospitals Sussex NHS leaflet lists tonsillitis, laryngitis, strep throat and glandular fever as other common causes of a sore throat."
+  },
+  {
+   "id": "c03",
+   "where": "body[0]",
+   "sentence": "NICE says that in older children and adults, pus on the tonsils, painful glands in the neck and a fever without a cough point more towards a bacterial infection.",
+   "classification": "wrong",
+   "evidence": "NICE returned text: FeverPAIN or Centor criteria identify people more likely to benefit from an antibiotic; fever, pus on tonsils and no cough score points (FeverPAIN), tender neck glands is a Centor item; FeverPAIN 2-3 linked to 34-40% chance of streptococcus. 'Point more towards bacterial' and 'older children and adults' not shown.",
+   "url": "https://www.nice.org.uk/guidance/ng84/resources/sore-throat-acute-antimicrobial-prescribing-pdf-1837694694085",
+   "action": "edited",
+   "newSentence": "NICE suggests scoring tools (FeverPAIN or Centor) to spot people with a sore throat who may be more likely to benefit from an antibiotic, and these include fever, pus on the tonsils, tender neck glands and no cough."
+  },
+  {
+   "id": "c04",
+   "where": "body[1]",
+   "sentence": "A sore throat usually clears up on its own and often lasts about a week.",
+   "classification": "supported",
+   "evidence": "NICE: acute sore throat often caused by a virus and lasts about a week; NHS sore throat page: normally gets better by itself within a week.",
+   "url": "https://www.nice.org.uk/guidance/ng84/resources/sore-throat-acute-antimicrobial-prescribing-pdf-1837694694085",
+   "action": "kept"
+  },
+  {
+   "id": "c05",
+   "where": "body[1]",
+   "sentence": "Paracetamol or ibuprofen can help with pain and fever, although not everyone can take ibuprofen safely, so a pharmacist can advise.",
+   "classification": "unsupported",
+   "evidence": "111 Wales text: ask a pharmacist about paracetamol or ibuprofen for the pain; Sussex leaflet: not everyone can take ibuprofen safely. 'Fever' not in retrieved text; Cheshire page text not confirmed for this.",
+   "url": "https://111.wales.nhs.uk/sorethroat/",
+   "action": "edited",
+   "newSentence": "NHS 111 Wales says a pharmacist can advise about paracetamol or ibuprofen for the pain, and a hospital trust leaflet notes that not everyone can take ibuprofen safely."
+  },
+  {
+   "id": "c06",
+   "where": "body[1]",
+   "sentence": "Drinking fluids and resting are also advised.",
+   "classification": "unsupported",
+   "evidence": "No retrieved text mentioned fluids or rest.",
+   "url": "https://www.cheshireandmerseyside.nhs.uk/your-health/helping-you-stay-well/self-care/sore-throat/",
+   "action": "removed"
+  },
+  {
+   "id": "c07",
+   "where": "body[2]",
+   "sentence": "NICE says most people with a sore throat will not need an antibiotic.",
+   "classification": "supported",
+   "evidence": "NICE: in most cases acute sore throat is self-limiting, often viral, and most people will not need an antibiotic.",
+   "url": "https://www.nice.org.uk/guidance/ng84/resources/sore-throat-acute-antimicrobial-prescribing-pdf-1837694694085",
+   "action": "kept"
+  },
+  {
+   "id": "c08",
+   "where": "body[2]",
+   "sentence": "The NHS says antibiotics are prescribed only if the GP thinks a bacterial infection is likely.",
+   "classification": "wrong",
+   "evidence": "No retrieved nhs.uk text said this. What was retrieved: NICE says FeverPAIN or Centor should be used to identify people who may be more likely to benefit from an antibiotic.",
+   "url": "https://www.nice.org.uk/guidance/ng84/resources/sore-throat-acute-antimicrobial-prescribing-pdf-1837694694085",
+   "action": "edited",
+   "newSentence": "NICE says a scoring tool (FeverPAIN or Centor) should be used to identify people with a sore throat who may be more likely to benefit from an antibiotic."
+  },
+  {
+   "id": "c09",
+   "where": "body[3]",
+   "sentence": "Tonsillitis commonly causes a sore throat, trouble swallowing, fever, earache and tender swollen glands in the neck.",
+   "classification": "unsupported",
+   "evidence": "Tonsillitis page text retrieved covered diagnosis, swab, blood test, quinsy and emergency signs, not the symptom list.",
+   "url": "https://www.nhs.uk/conditions/tonsillitis/",
+   "action": "removed"
+  },
+  {
+   "id": "c10",
+   "where": "body[3]",
+   "sentence": "A GP can usually diagnose tonsillitis from the symptoms and a look at the throat, and may arrange a swab or a glandular fever blood test if symptoms are severe or persistent.",
+   "classification": "wrong",
+   "evidence": "NHS tonsillitis: GP can often diagnose from symptoms and a look at the throat; a swab can show if bacteria are the cause; glandular fever blood test recommended if symptoms are severe or will not go away. The swab is not tied to severity.",
+   "url": "https://www.nhs.uk/conditions/tonsillitis/",
+   "action": "edited",
+   "newSentence": "A GP can often diagnose tonsillitis from the symptoms and a look at the throat, a swab can show whether bacteria are the cause, and a blood test for glandular fever is recommended if symptoms are severe or will not go away."
+  },
+  {
+   "id": "c11",
+   "where": "body[3]",
+   "sentence": "Glandular fever can cause a high temperature, swollen glands, a sore throat, rash, headache and tiredness, and the NHS says it is most common in people aged 15 to 24.",
+   "classification": "unsupported",
+   "evidence": "NHS glandular fever page: most common in people aged 15 to 24. The symptom list was not in retrieved text.",
+   "url": "https://www.nhs.uk/conditions/glandular-fever/",
+   "action": "edited",
+   "newSentence": "The NHS says glandular fever is most common in people aged 15 to 24."
+  },
+  {
+   "id": "c12",
+   "where": "body[3]",
+   "sentence": "Antibiotics do not work for glandular fever because it is caused by a virus.",
+   "classification": "supported",
+   "evidence": "NHS glandular fever: GP will not give antibiotics because it is viral and antibiotics do not work.",
+   "url": "https://www.nhs.uk/conditions/glandular-fever/",
+   "action": "kept"
+  },
+  {
+   "id": "c13",
+   "where": "body[3]",
+   "sentence": "Quinsy is a collection of pus between the tonsil and the wall of the throat, and is a rare complication of tonsillitis.",
+   "classification": "unsupported",
+   "evidence": "NHS tonsillitis: quinsy is a pocket of pus (abscess) between the tonsil and the wall of the throat, a complication of tonsillitis. 'Rare' not shown.",
+   "url": "https://www.nhs.uk/conditions/tonsillitis/",
+   "action": "edited",
+   "newSentence": "Quinsy is a collection of pus between the tonsil and the wall of the throat, and is a complication of tonsillitis."
+  },
+  {
+   "id": "c14",
+   "where": "body[4]",
+   "sentence": "Sources agree on seeking advice from a GP if the sore throat has not improved after a week, if there is a high temperature or the person feels hot and shivery, or if the immune system is weakened or a medicine could be causing the sore throat.",
+   "classification": "unsafe",
+   "evidence": "NHS sore throat page: get an urgent GP appointment or NHS 111 for a very high temperature, feeling hot, cold or shivery, or a weakened immune system; NHS Inform: contact GP if not improved after a week. The sentence puts fever/immune weakness into a routine GP bucket (downgrades urgency). 'Medicine could be causing it' not found. 'Sources agree' not shown.",
+   "url": "https://www.nhs.uk/symptoms/sore-throat/",
+   "action": "edited",
+   "newSentence": "The NHS says to contact a GP practice if a sore throat has not started to improve after a week, and to ask for an urgent GP appointment or call NHS 111 for a very high temperature, feeling hot, cold or shivery, or a weakened immune system."
+  },
+  {
+   "id": "c15",
+   "where": "body[4]",
+   "sentence": "A sore throat that does not get better within 10 to 14 days, or that gets worse rather than better, may suggest glandular fever.",
+   "classification": "supported",
+   "evidence": "Cheshire and Merseyside NHS text: a sore throat that does not get better within 10 to 14 days or gets worse may suggest glandular fever. Attribution is to this page, not nhs.uk.",
+   "url": "https://www.cheshireandmerseyside.nhs.uk/your-health/helping-you-stay-well/self-care/sore-throat/",
+   "action": "kept"
+  },
+  {
+   "id": "c16",
+   "where": "body[5]",
+   "sentence": "The NHS says to call 999 or go to A&E for struggling to breathe, being unable to swallow even with pain relief, or drooling or spitting out saliva because swallowing is too painful.",
+   "classification": "wrong",
+   "evidence": "NHS: call 999 or go to A&E for difficulty breathing or being unable to swallow, drooling, high-pitched sound when breathing, or severe symptoms getting worse quickly. 'Even with pain relief' and 'spitting out saliva' not shown.",
+   "url": "https://www.nhs.uk/symptoms/sore-throat/",
+   "action": "edited",
+   "newSentence": "The NHS says to call 999 or go to A&E for difficulty breathing, being unable to swallow, or drooling."
+  },
+  {
+   "id": "c17",
+   "where": "body[5]",
+   "sentence": "Other reasons are a high-pitched noise when breathing in, a sore throat that is severe and getting worse quickly, swelling inside the mouth or throat, or trouble speaking.",
+   "classification": "supported",
+   "evidence": "NHS sore throat: high-pitched breathing sound, severe symptoms getting worse quickly; NHS tonsillitis: swelling inside the mouth or throat, trouble speaking, swallowing or breathing. 999/A&E route matches.",
+   "url": "https://www.nhs.uk/conditions/tonsillitis/",
+   "action": "kept"
+  },
+  {
+   "id": "c18",
+   "where": "body[5]",
+   "sentence": "NHS 111 Wales advises that a person should not drive themselves to A&E but should ask someone to drive them or call 999.",
+   "classification": "supported",
+   "evidence": "111 Wales: if you need emergency help don't drive to A&E yourself; ask someone to drive you or call 999.",
+   "url": "https://111.wales.nhs.uk/encyclopaedia/s/article/sorethroat",
+   "action": "kept"
+  },
+  {
+   "id": "c19",
+   "where": "summary",
+   "sentence": "Most sore throats are caused by viruses and clear up on their own, but struggling to breathe or swallow needs 999 or A&E.",
+   "classification": "supported",
+   "evidence": "Consistent with NICE (often viral, most people get better without antibiotics) and NHS 999/A&E signs for breathing and swallowing difficulty.",
+   "url": "https://www.nhs.uk/symptoms/sore-throat/",
+   "action": "kept"
+  }
+ ],
+ "notes": "Searches were thin on nhs.uk text for several points (smoking, fluids/rest, tonsillitis symptom list, 'medicine causing sore throat'); these were not confirmed. c14 downgraded urgency for high temperature and weakened immune system (NHS: urgent GP appointment or 111). c16 and c17 should be merged-checked so the 999/A&E list is not duplicated. The 111 Wales URL for c17 and c05 text was not confirmed for every item. Several first-pass statements attributed to 'the NHS' came only from hospital or ICB leaflets. Mind consistency with the site's own sore throat symptom page if it gives different routes."
+}

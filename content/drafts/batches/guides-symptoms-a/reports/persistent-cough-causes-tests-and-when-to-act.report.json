@@ -1,0 +1,216 @@
+{
+ "id": "persistent-cough-causes-tests-and-when-to-act",
+ "searchesUsed": 8,
+ "counts": {
+  "supported": 7,
+  "textbook": 0,
+  "unsupported": 8,
+  "wrong": 5,
+  "unsafe": 1,
+  "unchecked": 0
+ },
+ "claims": [
+  {
+   "id": "c01",
+   "where": "body[0]",
+   "sentence": "The NHS says most coughs are caused by a cold or flu.",
+   "classification": "unsupported",
+   "evidence": "Retrieved NHS cough text lists smoking, acid reflux, allergies, bronchitis as causes; 'most coughs caused by cold or flu' not seen.",
+   "url": "https://www.nhs.uk/symptoms/cough/",
+   "action": "removed"
+  },
+  {
+   "id": "c02",
+   "where": "body[0]",
+   "sentence": "The NHS cough page lists smoking, heartburn (acid reflux), allergies and infections such as bronchitis as causes.",
+   "classification": "supported",
+   "evidence": "NHS cough page lists smoking, heartburn/acid reflux, allergies and infections such as bronchitis.",
+   "url": "https://www.nhs.uk/symptoms/cough/",
+   "action": "kept"
+  },
+  {
+   "id": "c03",
+   "where": "body[0]",
+   "sentence": "Persistent coughs can also come from asthma, bronchiectasis, and postnasal drip from hay fever or other nose problems.",
+   "classification": "unsupported",
+   "evidence": "Asthma, reflux and postnasal drip appear in NHS trust/guideline documents as causes of chronic cough; bronchiectasis/asthma as longer-lasting causes in NHS summary; not clearly the cited pages.",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/lungs-and-airways/cough",
+   "action": "edited",
+   "newSentence": "NHS guidance describes asthma, bronchiectasis, acid reflux and postnasal drip as causes of a long-lasting cough."
+  },
+  {
+   "id": "c04",
+   "where": "body[0]",
+   "sentence": "ACE inhibitors, a type of blood pressure medicine, can cause a long-lasting cough in some people.",
+   "classification": "unsupported",
+   "evidence": "ACE inhibitor cough appears only in NHS hospital trust leaflets/guidelines, not confirmed on NHS inform page.",
+   "url": "https://www.nth.nhs.uk/resources/chronic-cough/",
+   "action": "edited",
+   "newSentence": "Some NHS hospital trust leaflets list ACE inhibitors, a type of blood pressure medicine, as a cause of a long-lasting cough."
+  },
+  {
+   "id": "c05",
+   "where": "body[0]",
+   "sentence": "For many people the cause of a long-lasting cough is never identified.",
+   "classification": "wrong",
+   "evidence": "NHS inform summary: persistent cough is often of unknown cause; 'never identified' overstates (trust leaflets: sometimes no cause found).",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/lungs-and-airways/cough",
+   "action": "edited",
+   "newSentence": "NHS inform says a persistent cough is often of unknown cause."
+  },
+  {
+   "id": "c06",
+   "where": "body[0]",
+   "sentence": "The NHS says bronchitis usually clears up without treatment in around 3 weeks, and advises seeing a GP if symptoms last longer.",
+   "classification": "wrong",
+   "evidence": "NHS bronchitis page: often gets better without treatment in around 3 weeks ('often', not 'usually'). The 'see a GP if longer' part was not retrieved for bronchitis; the 3-week GP advice is on the cough page.",
+   "url": "https://www.nhs.uk/conditions/bronchitis/",
+   "action": "edited",
+   "newSentence": "The NHS says bronchitis often gets better without treatment in around 3 weeks."
+  },
+  {
+   "id": "c07",
+   "where": "body[0]",
+   "sentence": "A chest infection usually gets better on its own in about 7 to 10 days, although the cough and mucus can last up to 3 weeks.",
+   "classification": "supported",
+   "evidence": "NHS chest infection page: usually better in about 7 to 10 days, cough and mucus can last up to 3 weeks.",
+   "url": "https://www.nhs.uk/conditions/chest-infection/",
+   "action": "kept"
+  },
+  {
+   "id": "c08",
+   "where": "body[0]",
+   "sentence": "Antibiotics are generally not used for viral chest infections such as flu or viral bronchitis.",
+   "classification": "supported",
+   "evidence": "NHS chest infection page: antibiotics only for bacterial infections, do not help viral ones such as flu or viral bronchitis.",
+   "url": "https://www.nhs.uk/conditions/chest-infection/",
+   "action": "kept"
+  },
+  {
+   "id": "c09",
+   "where": "body[1]",
+   "sentence": "The NHS says most coughs can be managed at home with rest and fluids, and a pharmacist can advise on cough medicines.",
+   "classification": "supported",
+   "evidence": "NHS cough page: usually no need to see a GP; rest and fluids; pharmacist can advise on cough medicines.",
+   "url": "https://www.nhs.uk/symptoms/cough/",
+   "action": "kept"
+  },
+  {
+   "id": "c10",
+   "where": "body[1]",
+   "sentence": "The NHS says there is little evidence on whether over-the-counter cough medicines relieve symptoms.",
+   "classification": "wrong",
+   "evidence": "The 'little evidence over-the-counter medicines work' wording came from a Nottinghamshire primary-care leaflet, not the NHS cough page (which says evidence for honey/lemon and pelargonium is limited).",
+   "url": "https://www.nottsapc.nhs.uk/media/o20hkc0t/coughs_self-care_apc.pdf",
+   "action": "edited",
+   "newSentence": "A local NHS self-care leaflet says there is little evidence on whether over-the-counter cough medicines relieve symptoms."
+  },
+  {
+   "id": "c11",
+   "where": "body[1]",
+   "sentence": "An NHS self-care leaflet says stopping or cutting down smoking can help a cough.",
+   "classification": "unsupported",
+   "evidence": "Leaflet search result gave title only; smoking advice not retrieved this session.",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c12",
+   "where": "body[2]",
+   "sentence": "The NHS advises seeing a GP if a cough has lasted more than 3 weeks, if weight is being lost for no reason, or if the immune system is weakened.",
+   "classification": "supported",
+   "evidence": "NHS cough page: cough lasting more than 3 weeks, unexplained weight loss, weakened immune system are reasons to see a GP (routine appointment).",
+   "url": "https://www.nhs.uk/symptoms/cough/",
+   "action": "kept"
+  },
+  {
+   "id": "c13",
+   "where": "body[2]",
+   "sentence": "An NHS cancer alliance says a cough is rarely a sign of something serious such as lung cancer, but encourages people with a cough lasting three weeks or more to contact their GP practice so that any serious cause is found early.",
+   "classification": "unsupported",
+   "evidence": "Only the page title was seen; 'rarely a sign of something serious' not retrieved. Local sources say probably nothing serious but early detection helps.",
+   "url": "https://www.selca.nhs.uk/news/nhs-urges-people-persistent-cough-contact-their-gp",
+   "action": "edited",
+   "newSentence": "A South East London Cancer Alliance page urges people with a persistent cough to contact their GP."
+  },
+  {
+   "id": "c14",
+   "where": "body[2]",
+   "sentence": "It lists other lung cancer symptoms as coughing up blood, pain when breathing or coughing, persistent breathlessness and persistent tiredness.",
+   "classification": "unsupported",
+   "evidence": "Symptom list not retrieved from the cancer alliance page. NHS lung cancer symptoms page was reported to list chest or shoulder pain, weight loss without trying and tiredness.",
+   "url": "https://www.nhs.uk/conditions/lung-cancer/symptoms/",
+   "action": "edited",
+   "newSentence": "The NHS lung cancer symptoms page lists symptoms including chest or shoulder pain, weight loss without trying, and tiredness."
+  },
+  {
+   "id": "c15",
+   "where": "body[3]",
+   "sentence": "The NHS advises an urgent GP appointment or a call to NHS 111 for a cough with chest pain or a feeling of being very unwell.",
+   "classification": "supported",
+   "evidence": "NHS cough page: urgent GP appointment or NHS 111 if very unwell, chest pain, etc.",
+   "url": "https://www.nhs.uk/symptoms/cough/",
+   "action": "kept"
+  },
+  {
+   "id": "c16",
+   "where": "body[3]",
+   "sentence": "Coughing up blood and difficulty breathing also need prompt attention, and for trouble breathing the NHS says to call 999.",
+   "classification": "wrong",
+   "evidence": "NHS cough page sends coughing up blood and hard breathing to an urgent GP appointment or NHS 111; the 999 wording (struggling to breathe, choking, gasping, unable to speak) came from the bronchitis page. Sentence changes route to care.",
+   "url": "https://www.nhs.uk/conditions/bronchitis/",
+   "action": "edited",
+   "newSentence": "The NHS cough page advises an urgent GP appointment or NHS 111 for coughing up blood or finding it hard to breathe, and the NHS bronchitis page says to call 999 if someone is struggling to breathe, for example choking or gasping and unable to speak."
+  },
+  {
+   "id": "c17",
+   "where": "body[3]",
+   "sentence": "For people with bronchiectasis, the NHS says to call 999 if more than a few streaks of blood are coughed up.",
+   "classification": "supported",
+   "evidence": "NHS bronchiectasis page: call 999 or A&E if coughing up more than a few spots or streaks of blood (possible serious bleeding).",
+   "url": "https://www.nhs.uk/conditions/bronchiectasis/",
+   "action": "kept"
+  },
+  {
+   "id": "c18",
+   "where": "body[4]",
+   "sentence": "A GP will ask how long the cough has lasted and about other symptoms, and may examine the chest.",
+   "classification": "unsupported",
+   "evidence": "Only 'a GP might listen to your chest with a stethoscope' retrieved; asking about duration/other symptoms not seen.",
+   "url": "https://www.nhs.uk/symptoms/cough/",
+   "action": "edited",
+   "newSentence": "A GP may listen to the chest."
+  },
+  {
+   "id": "c19",
+   "where": "body[4]",
+   "sentence": "Tests can include a lung function test, a chest X-ray, and a sample of any mucus.",
+   "classification": "wrong",
+   "evidence": "Tests (chest X-ray, breathing/lung function, phlegm sample) came from NHS inform, not the NHS cough page, and as 'may order'.",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/lungs-and-airways/cough",
+   "action": "edited",
+   "newSentence": "NHS inform says a GP may arrange tests such as a chest X-ray, breathing or lung function tests, and a sample of phlegm."
+  },
+  {
+   "id": "c20",
+   "where": "body[4]",
+   "sentence": "Treatment depends on the cause, antibiotics are not normally prescribed for coughs, and a referral to a chest specialist is occasionally needed.",
+   "classification": "unsupported",
+   "evidence": "'Antibiotics not usually prescribed' seen on NHS cough page; 'treatment depends on cause' and 'occasionally' referral not retrieved. NHS inform: may refer to a specialist if cause unclear.",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/lungs-and-airways/cough",
+   "action": "edited",
+   "newSentence": "NHS pages say antibiotics are not usually prescribed for coughs, and a GP may refer people to a specialist if the cause is unclear."
+  },
+  {
+   "id": "c21",
+   "where": "summary",
+   "sentence": "A cough that has lasted more than 3 weeks should be checked by a GP, and coughing up blood or trouble breathing needs urgent help.",
+   "classification": "unsafe",
+   "evidence": "Compressed advice: omits route for urgent help (urgent GP or NHS 111; 999 only for severe breathing difficulty) and uses 'should' wording.",
+   "url": "https://www.nhs.uk/symptoms/cough/",
+   "action": "edited",
+   "newSentence": "The NHS advises seeing a GP about a cough that has lasted more than 3 weeks, and an urgent GP appointment or NHS 111 for coughing up blood or finding it hard to breathe; the NHS says to call 999 for severe difficulty breathing."
+  }
+ ],
+ "notes": "8 searches used; WebFetch blocked. Summaries blend pages and several attributions could not be pinned to a page; nhs.uk cough page text itself was only seen via summaries. The 'most coughs caused by cold or flu' and smoking-leaflet claims were not found. c16 and c21 matter most for routes to care: 999 appears on the bronchitis/bronchiectasis pages, not in the retrieved cough-page text. No site-page contradictions checked."
+}
