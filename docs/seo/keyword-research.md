@@ -10,15 +10,15 @@ the largest English-speaking market for these terms; UK volumes are lower but fo
 | Search | Volume | KD | Page | Status |
 | --- | ---: | ---: | --- | --- |
 | knee anatomy | 54,000 | 3 | `/anatomy/knee/` | article, title now "Knee Anatomy" |
-| foot anatomy | 50,000 | 0 | `/anatomy/foot/` | **no article** (page is noindex) |
-| foot bones | 40,000 | 4 | `/anatomy/foot/` | **no article** |
+| foot anatomy | 50,000 | 0 | `/anatomy/foot/` | source-verified article (v1.10.1), title "Foot Anatomy: 3D Model, Bones, Arches, Joints" |
+| foot bones | 40,000 | 4 | `/anatomy/foot/` | same page (section "Bones": 7 tarsals, 5 metatarsals, 14 phalanges) |
 | hand bones | 41,000 | 14 | `/anatomy/hand/` | source-verified article, title "Hand Bones Anatomy" |
 | bones of the hand | 13,000 | 10 | `/anatomy/hand/` | same page, H2 "Bones of the hand" |
 | heart anatomy | 41,000 | 10 | `/anatomy/heart/` | article |
-| shoulder anatomy | 39,000 | 12 | `/anatomy/shoulder-girdle/` | **no article** |
-| shoulder bones | 6,400 | 4 | `/anatomy/shoulder-girdle/` | **no article** |
+| shoulder anatomy | 39,000 | 12 | `/anatomy/shoulder-girdle/` | **partly**: the article covers the girdle (clavicle, scapula, two joints, muscles that move it) but not the shoulder joint, rotator cuff or deltoid, which this search is mostly about |
+| shoulder bones | 6,400 | 4 | `/anatomy/shoulder-girdle/` | source-verified article (v1.10.1), title "Shoulder Girdle Anatomy" |
 | spine anatomy | 28,000 | 15 | `/anatomy/spine/` | article |
-| penis anatomy | 21,000 | 39 | `/anatomy/penis/` | **no article** (needs careful sourcing) |
+| penis anatomy | 21,000 | 39 | `/anatomy/penis/` | source-verified article (v1.10.1) |
 | pelvic floor muscles | 20,000 | 47 | `/anatomy/pelvic-floor/` | article |
 | brain anatomy | 20,000 | 52 | `/anatomy/brain/` | article |
 | skull anatomy | 14,000 | 8 | `/anatomy/skull/` | source-verified article |
@@ -30,25 +30,27 @@ the largest English-speaking market for these terms; UK volumes are lower but fo
 | liver anatomy | 8,300 | 40 | `/anatomy/liver/` | article |
 | testicle anatomy | 7,200 | 22 | `/anatomy/testes/` | source-verified article, title "Testicle Anatomy" |
 | hip bone anatomy | 5,300 | 8 | `/anatomy/pelvic-girdle/` | same page |
-| prostate anatomy | 5,000 | 12 | `/anatomy/prostate/` | **no article** |
-| gallbladder anatomy | 4,400 | 23 | `/anatomy/gallbladder/` | **no article** |
-| rib cage anatomy | 3,500 | 18 | `/anatomy/rib-cage/` | **no article** |
+| prostate anatomy | 5,000 | 12 | `/anatomy/prostate/` | source-verified article (v1.10.1) |
+| gallbladder anatomy | 4,400 | 23 | `/anatomy/gallbladder/` | source-verified article (v1.10.1), retitled "Gallbladder Anatomy" (it was "Gallbladder & Bile Ducts Anatomy", which the title builder shortened to "…: Gallbladder") |
+| rib cage anatomy | 3,500 | 18 | `/anatomy/rib-cage/` | source-verified article (v1.10.1) |
 | small intestine anatomy | 3,300 | 14 | `/anatomy/small-intestine/` | source-verified article |
 | bladder anatomy | 3,000 | 5 | `/anatomy/bladder/` | source-verified article |
-| spleen anatomy | 2,600 | 11 | `/anatomy/spleen/` | **no article** |
+| spleen anatomy | 2,600 | 11 | `/anatomy/spleen/` | source-verified article (v1.10.1) |
 | adrenal gland anatomy | 1,000 | 5 | `/anatomy/adrenals/` | source-verified article |
-| uterine ligaments | 900 | 3 | `/anatomy/uterine-ligaments/` | **no article** |
-| pituitary gland anatomy | 800 | 0 | `/anatomy/pituitary/` | draft only |
-| ureter anatomy | 700 | 5 | `/anatomy/ureters/` | draft only |
-| thymus anatomy | 450 | 5 | `/anatomy/thymus/` | draft only |
+| uterine ligaments | 900 | 3 | `/anatomy/uterine-ligaments/` | source-verified article (v1.10.1), retitled "Uterine Ligaments Anatomy" (the old title ended "…Anatomy: Broad") |
+| pituitary gland anatomy | 800 | 0 | `/anatomy/pituitary/` | source-verified article (v1.10.1) |
+| ureter anatomy | 700 | 5 | `/anatomy/ureters/` | source-verified article (v1.10.1), titled "Ureter Anatomy" like the other paired organs |
+| thymus anatomy | 450 | 5 | `/anatomy/thymus/` | source-verified article (v1.10.1) |
 
 ## What follows from it
 
-1. **The largest unanswered demand is the skeleton of the limbs.** Foot (90,000 searches a month across two phrasings, KD 0 to
-   4) and shoulder (45,000, KD 4 to 12) have no article, so their pages are `noindex` and cannot rank. Write and verify these two
-   before anything else, then rib cage, prostate, gallbladder and spleen. Each article must pass the two-pass protocol in
-   CLINICAL.md 5.5 before it is merged: a first pass written only from retrieved text, then an independent second pass that
-   re-retrieves every sentence.
+1. **The largest unanswered demand is now the shoulder joint.** The foot, rib cage, prostate, gallbladder, spleen and the other organ
+   pages that had no article were written and source-checked in v1.10.1, so all 48 anatomy pages are indexable. "Shoulder anatomy"
+   (39,000 searches a month, KD 12) is mostly about the shoulder *joint*: the glenohumeral joint, rotator cuff, deltoid and the
+   muscles that move the arm. The shoulder-girdle article covers the clavicle, scapula and their two joints, not those, so it
+   answers "shoulder bones" (6,400) but only part of "shoulder anatomy". A second article ("Shoulder joint and rotator cuff")
+   is the highest-value page still missing. It must pass the two-pass protocol in CLINICAL.md 5.5 before it is merged: a first
+   pass written only from retrieved text, then an independent second pass that re-retrieves every sentence.
 2. **Pages that exist now carry the searched phrase.** Titles read "Hand Bones Anatomy: 3D Model, Carpals | Anatomy Nexus",
    "Pelvis Anatomy: 3D Model, Hip Bones, Sacrum | Anatomy Nexus" and so on: the phrase people type first, then the feature that
    sets the page apart from the flat diagrams and slide-deck results that fill the first page (an interactive 3D model, shown

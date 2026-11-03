@@ -19,6 +19,10 @@ and what it found. The audit and its numbers are in `docs/seo/audit-2026-11-03.m
 - Titles written for what people type: hubs read *Health Conditions A–Z: Symptoms & Treatment*, *Medicines A–Z: Uses, Side Effects & Interactions* and so on instead of "[Name]: A–Z Guide";
   the medicine title ends *Uses, Side Effects & How It Works* (the title builder drops trailing words first, and "[drug] side effects" is searched about a hundred times as often as
   "[drug] mechanism of action"); Lupus, ACL injury and Diverticulitis lead with the phrase searched, the old names stay as aliases. The medicines hub description no longer ends "doses.".
+- The anatomy articles that went live in v1.10.1 are titled the same way: *Foot Skeleton Anatomy* is *Foot Anatomy* (searched 50,000 times a month; "foot bones" 40,000 is the first topic),
+  *Gallbladder & Bile Ducts Anatomy* (the title builder cut it to "…Anatomy: Gallbladder") is *Gallbladder Anatomy*, *Ligaments of the Uterus & Ovary Anatomy* (cut to "…Anatomy: Broad") is
+  *Uterine Ligaments Anatomy*, *Ureters Anatomy* is *Ureter Anatomy* like the other paired organs, and the prostate and pituitary titles lead with zones and hormones instead of "Position" and "Lobes".
+  The shoulder-girdle article does not cover the shoulder joint or rotator cuff, so it keeps its honest title; the shoulder joint is the largest anatomy search still unanswered (`docs/seo/keyword-research.md`).
 - A structured-data headline is at most 110 characters (one WHO brief had 111; the compiler now rejects a longer one).
 - Server rules: a `.git` directory in the web root (the pull script creates one) is never served; Markdown and JSON files carry `X-Robots-Tag: noindex`; `.webp` has its media type and cache lifetime.
 - Smoke test: `lang="en-GB"`, large-preview robots value, `og:locale`, feed link and headline length on every sitemap URL; every blog post linked from three pages;
