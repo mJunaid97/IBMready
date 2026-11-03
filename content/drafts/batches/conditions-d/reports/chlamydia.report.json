@@ -1,0 +1,912 @@
+{
+ "id": "chlamydia",
+ "searchesUsed": 13,
+ "counts": {
+  "supported": 99,
+  "textbook": 0,
+  "unsupported": 21,
+  "wrong": 0,
+  "unsafe": 0,
+  "unchecked": 0
+ },
+ "claims": [
+  {
+   "id": "c01",
+   "classification": "supported",
+   "evidence": "[d] A sexually transmitted infection caused by the bacterium Chlamydia trachomatis. -> WHO: chlamydia is a curable STI caused by Chlamydia trachomatis.",
+   "url": "https://www.who.int/news-room/fact-sheets/detail/chlamydia",
+   "action": "kept"
+  },
+  {
+   "id": "c02",
+   "classification": "supported",
+   "evidence": "[o] Chlamydia is a bacterial infection that is usually spread through sex. -> NHS: spread through unprotected vaginal, oral or anal sex.",
+   "url": "https://www.nhs.uk/conditions/chlamydia/how-you-get-it/",
+   "action": "kept"
+  },
+  {
+   "id": "c03",
+   "classification": "supported",
+   "evidence": "[o] Many people have no symptoms and do not know they have it. -> NHS symptoms page: most people do not notice any symptoms.",
+   "url": "https://www.nhs.uk/conditions/chlamydia/symptoms/",
+   "action": "edited",
+   "newSentence": "The NHS says most people have no symptoms and may not know they have it."
+  },
+  {
+   "id": "c04",
+   "classification": "supported",
+   "evidence": "[o] When symptoms do occur they can include unusual discharge, pain when passing uri -> NHS: discharge, burning when peeing, lower tummy pain, testicular pain and swelling.",
+   "url": "https://www.nhs.uk/conditions/chlamydia/symptoms/",
+   "action": "kept"
+  },
+  {
+   "id": "c05",
+   "classification": "supported",
+   "evidence": "[o] It is curable with antibiotics, but untreated infection can cause problems such  -> WHO: curable; untreated infection can lead to PID and infertility. NHS: antibiotics treat it effectively.",
+   "url": "https://www.who.int/news-room/fact-sheets/detail/chlamydia",
+   "action": "edited",
+   "newSentence": "It can be treated with antibiotics, and WHO describes it as curable. Untreated infection can cause pelvic inflammatory disease and can affect fertility."
+  },
+  {
+   "id": "c06",
+   "classification": "supported",
+   "evidence": "[o] Testing uses a urine sample or a swab. -> NHS diagnosis: swab or urine sample.",
+   "url": "https://www.nhs.uk/conditions/chlamydia/diagnosis/",
+   "action": "kept"
+  },
+  {
+   "id": "c07",
+   "classification": "supported",
+   "evidence": "[causes] Infection with the bacterium Chlamydia trachomatis. -> WHO/NHS: caused by C. trachomatis.",
+   "url": "https://www.who.int/news-room/fact-sheets/detail/chlamydia",
+   "action": "kept"
+  },
+  {
+   "id": "c08",
+   "classification": "supported",
+   "evidence": "[causes] It is usually spread through vaginal, oral or anal sex, or contact with infected -> NHS how you get it: unprotected vaginal, oral, anal sex; semen or vaginal fluid.",
+   "url": "https://www.nhs.uk/conditions/chlamydia/how-you-get-it/",
+   "action": "edited",
+   "newSentence": "The NHS says it is usually spread through vaginal, oral or anal sex without a condom, or contact with infected genital fluids such as semen or vaginal fluid."
+  },
+  {
+   "id": "c09",
+   "classification": "supported",
+   "evidence": "[causes] Sharing sex toys that are not washed or covered with a new condom each time they -> NHS: sharing sex toys not washed or covered with a new condom.",
+   "url": "https://www.nhs.uk/conditions/chlamydia/how-you-get-it/",
+   "action": "kept"
+  },
+  {
+   "id": "c10",
+   "classification": "supported",
+   "evidence": "[causes] An untreated infection can pass from a pregnant person to the baby during birth. -> NHS: can pass to baby; complications page.",
+   "url": "https://www.nhs.uk/conditions/chlamydia/complications/",
+   "action": "kept"
+  },
+  {
+   "id": "c11",
+   "classification": "supported",
+   "evidence": "[causes] It is not spread by casual contact such as kissing, hugging or sharing towels or -> NHS how you get it: not spread by kissing, hugging, toilet seats, sharing baths or towels.",
+   "url": "https://www.nhs.uk/conditions/chlamydia/how-you-get-it/",
+   "action": "kept"
+  },
+  {
+   "id": "c12",
+   "classification": "supported",
+   "evidence": "[riskFactors] Sex without a condom. -> NHS: spread through sex without a condom.",
+   "url": "https://www.nhs.uk/conditions/chlamydia/how-you-get-it/",
+   "action": "kept"
+  },
+  {
+   "id": "c13",
+   "classification": "supported",
+   "evidence": "[riskFactors] A new sexual partner. -> NHS lists a new partner as a reason to be tested; sources frame it as a testing reason, not a stated risk factor.",
+   "url": "https://www.nhs.uk/conditions/chlamydia/diagnosis/",
+   "action": "edited",
+   "newSentence": "A new sexual partner, which the NHS lists among the reasons to be tested."
+  },
+  {
+   "id": "c14",
+   "classification": "unsupported",
+   "evidence": "[riskFactors] More than one sexual partner. -> No retrieved NHS/UKHSA text for 'more than one partner'; only an old CDC testing guideline snippet with unclear attribution.",
+   "url": "https://www.cdc.gov/chlamydia/about/index.html",
+   "action": "removed"
+  },
+  {
+   "id": "c15",
+   "classification": "supported",
+   "evidence": "[riskFactors] A sexual partner who has a sexually transmitted infection. -> NHS lists a partner's STI diagnosis as a reason to be tested.",
+   "url": "https://www.nhs.uk/conditions/chlamydia/diagnosis/",
+   "action": "edited",
+   "newSentence": "A sexual partner who has been diagnosed with a sexually transmitted infection."
+  },
+  {
+   "id": "c16",
+   "classification": "supported",
+   "evidence": "[riskFactors] Being a sexually active woman under 25, the group the English screening programm -> GOV.UK NCSP overview: sexually active women under 25 recommended to test annually and after a new partner; 'prioritises' was loose wording.",
+   "url": "https://www.gov.uk/government/publications/ncsp-programme-overview/ncsp-programme-overview",
+   "action": "edited",
+   "newSentence": "Being a sexually active woman under 25, the group the English screening programme recommends testing each year."
+  },
+  {
+   "id": "c17",
+   "classification": "supported",
+   "evidence": "[signs] Unusual vaginal discharge or discharge from the penis. -> NHS symptoms page lists vaginal discharge, penile discharge, bleeding after sex or between periods, testicular pain and swelling.",
+   "url": "https://www.nhs.uk/conditions/chlamydia/symptoms/",
+   "action": "kept"
+  },
+  {
+   "id": "c18",
+   "classification": "supported",
+   "evidence": "[signs] Bleeding after sex or between periods. -> NHS symptoms page lists vaginal discharge, penile discharge, bleeding after sex or between periods, testicular pain and swelling.",
+   "url": "https://www.nhs.uk/conditions/chlamydia/symptoms/",
+   "action": "kept"
+  },
+  {
+   "id": "c19",
+   "classification": "supported",
+   "evidence": "[signs] Pain or swelling in the testicles. -> NHS symptoms page lists vaginal discharge, penile discharge, bleeding after sex or between periods, testicular pain and swelling.",
+   "url": "https://www.nhs.uk/conditions/chlamydia/symptoms/",
+   "action": "kept"
+  },
+  {
+   "id": "c20",
+   "classification": "supported",
+   "evidence": "[signs] Rectal pain or discharge. -> NHS: rectal infection can cause discomfort and discharge; 'pain' not stated.",
+   "url": "https://www.nhs.uk/conditions/chlamydia/symptoms/",
+   "action": "edited",
+   "newSentence": "Discomfort or discharge from the rectum."
+  },
+  {
+   "id": "c21",
+   "classification": "supported",
+   "evidence": "[complications] Pelvic inflammatory disease in women, when the infection spreads to the womb, ov -> NHS complications page: PID, difficulty getting pregnant, long-lasting pelvic pain, ectopic pregnancy risk.",
+   "url": "https://www.nhs.uk/conditions/chlamydia/complications/",
+   "action": "kept"
+  },
+  {
+   "id": "c22",
+   "classification": "supported",
+   "evidence": "[complications] Difficulty getting pregnant or infertility, long-lasting pelvic pain and a highe -> NHS complications page: PID, difficulty getting pregnant, long-lasting pelvic pain, ectopic pregnancy risk.",
+   "url": "https://www.nhs.uk/conditions/chlamydia/complications/",
+   "action": "kept"
+  },
+  {
+   "id": "c23",
+   "classification": "supported",
+   "evidence": "[complications] Pain and swelling of the epididymis in men, which the NHS describes as very rare -> NHS: epididymitis very rare.",
+   "url": "https://www.nhs.uk/conditions/chlamydia/complications/",
+   "action": "kept"
+  },
+  {
+   "id": "c24",
+   "classification": "supported",
+   "evidence": "[complications] Premature labour and low birthweight when infection is untreated in pregnancy. -> NHS: may increase risk of premature birth or low birthweight; 'labour' was loose wording.",
+   "url": "https://www.nhs.uk/conditions/chlamydia/complications/",
+   "action": "edited",
+   "newSentence": "A possible increase in the risk of premature birth or low birthweight when infection is untreated in pregnancy."
+  },
+  {
+   "id": "c25",
+   "classification": "supported",
+   "evidence": "[complications] Eye infection or pneumonia in a newborn who caught the infection during birth. -> NHS: baby may develop eye infection and pneumonia.",
+   "url": "https://www.nhs.uk/conditions/chlamydia/complications/",
+   "action": "kept"
+  },
+  {
+   "id": "c26",
+   "classification": "supported",
+   "evidence": "[diagnosis] Chlamydia is diagnosed by testing a urine sample or a swab. -> NHS diagnosis: swab or urine sample.",
+   "url": "https://www.nhs.uk/conditions/chlamydia/diagnosis/",
+   "action": "kept"
+  },
+  {
+   "id": "c27",
+   "classification": "supported",
+   "evidence": "[diagnosis] The test most often used is a nucleic acid amplification test, known as a NAAT,  -> WHO: NAAT considered the gold standard for diagnosing C. trachomatis.",
+   "url": "https://www.who.int/news-room/fact-sheets/detail/chlamydia",
+   "action": "kept"
+  },
+  {
+   "id": "c28",
+   "classification": "supported",
+   "evidence": "[diagnosis] Some services offer online test kits. -> NHS: postal home kits available in some areas (particularly under 25s); 'online' not in the source.",
+   "url": "https://www.nhs.uk/conditions/chlamydia/diagnosis/",
+   "action": "edited",
+   "newSentence": "Some areas offer postal home testing kits."
+  },
+  {
+   "id": "c29",
+   "classification": "supported",
+   "evidence": "[diagnosis] A sexual health service notes that a very recent infection may not show up on a  -> Local NHS sexual health service pages: testing too soon after exposure can miss infection; attribution to NHS national page unclear.",
+   "url": "https://www.therotherhamft.nhs.uk/services/sexual-health-services/home-testing",
+   "action": "edited",
+   "newSentence": "Sexual health services advise that testing too soon after possible exposure can miss an infection."
+  },
+  {
+   "id": "c30",
+   "classification": "supported",
+   "evidence": "[diagnosis] In England the national screening programme recommends that sexually active wome -> GOV.UK NCSP overview: women under 25 test annually and after a new partner.",
+   "url": "https://www.gov.uk/government/publications/ncsp-programme-overview/ncsp-programme-overview",
+   "action": "kept"
+  },
+  {
+   "id": "c31",
+   "classification": "supported",
+   "evidence": "[treatment] Chlamydia is curable with antibiotics. -> NHS: can usually be treated effectively with antibiotics; WHO: curable.",
+   "url": "https://www.nhs.uk/conditions/chlamydia/treatment/",
+   "action": "edited",
+   "newSentence": "The NHS says chlamydia can usually be treated effectively with antibiotics, and WHO describes it as curable."
+  },
+  {
+   "id": "c32",
+   "classification": "supported",
+   "evidence": "[treatment] The standard antibiotic options are doxycycline and azithromycin tablets. -> WHO: doxycycline or azithromycin; NHS treatment page.",
+   "url": "https://www.nhs.uk/conditions/chlamydia/treatment/",
+   "action": "edited",
+   "newSentence": "The usual antibiotic options are doxycycline and azithromycin tablets."
+  },
+  {
+   "id": "c33",
+   "classification": "unsupported",
+   "evidence": "[treatment] The 2026 BASHH guideline makes doxycycline the first-line treatment, with azithr -> BASHH 2026: doxycycline first line (supported). No retrieved text says azithromycin is used only where M. genitalium is excluded; the 2018 BASHH update and Scottish guidance give tetracycline intolerance/pregnancy as azithromycin indications instead.",
+   "url": "https://www.bashh.org/_userfiles/pages/files/national_guideline_for_the_management_of_infection_chlamydia_trachomatis_2026.pdf",
+   "action": "edited",
+   "newSentence": "The 2026 BASHH guideline recommends doxycycline as the first-line treatment."
+  },
+  {
+   "id": "c34",
+   "classification": "supported",
+   "evidence": "[treatment] Partners are also tested and treated. -> NHS treatment: current and recent partners should be tested and treated.",
+   "url": "https://www.nhs.uk/conditions/chlamydia/treatment/",
+   "action": "edited",
+   "newSentence": "Current and recent partners are also tested and treated."
+  },
+  {
+   "id": "c35",
+   "classification": "supported",
+   "evidence": "[treatment] Sexual activity is paused until treatment and any tests are complete. -> NHS treatment: avoid sex until you and partners have completed treatment; wait 7 days after azithromycin.",
+   "url": "https://www.nhs.uk/conditions/chlamydia/treatment/",
+   "action": "edited",
+   "newSentence": "The NHS advises avoiding sex until treatment is completed by the person and their partners."
+  },
+  {
+   "id": "c36",
+   "classification": "supported",
+   "evidence": "[treatment] People diagnosed are offered a repeat test some months after treatment to check  -> NHS: under-25s offered another test 3 to 6 months after treatment.",
+   "url": "https://www.nhs.uk/conditions/chlamydia/treatment/",
+   "action": "edited",
+   "newSentence": "Under-25s who have chlamydia are offered another test 3 to 6 months after treatment, to look for reinfection."
+  },
+  {
+   "id": "c37",
+   "classification": "supported",
+   "evidence": "[prevention] Correct and consistent use of condoms during sex is the most effective way to pr -> WHO: condoms the most effective way to prevent chlamydia.",
+   "url": "https://www.who.int/news-room/fact-sheets/detail/chlamydia",
+   "action": "kept"
+  },
+  {
+   "id": "c38",
+   "classification": "unsupported",
+   "evidence": "[prevention] The NHS also describes condoms or dental dams for oral sex, and washing sex toys -> NHS dental dam wording not retrieved; CDC (US) says condoms and dental dams protect; NHS says sex toys washed or covered.",
+   "url": "https://www.cdc.gov/chlamydia/about/index.html",
+   "action": "edited",
+   "newSentence": "The CDC, a US source, says condoms and dental dams protect against chlamydia when used correctly every time, including for oral sex."
+  },
+  {
+   "id": "c39",
+   "classification": "supported",
+   "evidence": "[prevention] There is no vaccine against chlamydia. -> WHO: no vaccine.",
+   "url": "https://www.who.int/news-room/fact-sheets/detail/chlamydia",
+   "action": "kept"
+  },
+  {
+   "id": "c40",
+   "classification": "unsupported",
+   "evidence": "[prevention] The NHS advises testing once a year or when there is a new sexual partner. -> Retrieved NHS/GOV.UK text recommends annual testing for women under 25 and testing with a new partner as a reason; no general 'once a year' advice found.",
+   "url": "https://www.gov.uk/government/publications/ncsp-programme-overview/ncsp-programme-overview",
+   "action": "removed"
+  },
+  {
+   "id": "c41",
+   "classification": "supported",
+   "evidence": "[seekCare] A sexual health service can arrange testing for people with or without symptoms, -> NHS: can be tested with or without symptoms at GP, contraceptive service or sexual health clinic; reasons include new partner or partner diagnosed.",
+   "url": "https://www.nhs.uk/conditions/chlamydia/symptoms/",
+   "action": "edited",
+   "newSentence": "A GP, community contraceptive service or sexual health clinic can arrange testing for people with or without symptoms; the NHS lists a new partner or a partner's diagnosis among the reasons to be tested."
+  },
+  {
+   "id": "c42",
+   "classification": "unsupported",
+   "evidence": "[seekCare] Severe pelvic or testicular pain, or feeling very unwell, needs urgent help from -> NHS PID page gives the urgent routes: urgent GP or 111 if PID suspected; A&E/999 for severe or worsening pelvic pain, fainting, feeling very unwell. No retrieved text on testicular pain as an urgent symptom.",
+   "url": "https://www.nhs.uk/conditions/pelvic-inflammatory-disease-pid/",
+   "action": "edited",
+   "newSentence": "The NHS advises an urgent GP appointment or a call to NHS 111 if pelvic inflammatory disease is suspected, and A&E or a call to 999 for severe or worsening pelvic pain, sudden intense lower tummy pain, fainting or feeling very unwell."
+  },
+  {
+   "id": "c43",
+   "classification": "supported",
+   "evidence": "[sec] Most people with chlamydia do not notice any symptoms and do not know they have  -> NHS: most people do not notice symptoms.",
+   "url": "https://www.nhs.uk/conditions/chlamydia/symptoms/",
+   "action": "edited",
+   "newSentence": "Most people with chlamydia do not notice any symptoms, according to the NHS, so many do not know they have it."
+  },
+  {
+   "id": "c44",
+   "classification": "supported",
+   "evidence": "[sec] When symptoms do occur, they may take weeks to appear after sex with someone who -> NHS: usually 1 to 3 weeks, sometimes many months later.",
+   "url": "https://www.nhs.uk/conditions/chlamydia/symptoms/",
+   "action": "edited",
+   "newSentence": "The NHS says they usually appear between 1 and 3 weeks after sex with someone who has chlamydia, though for some people they do not develop until many months later."
+  },
+  {
+   "id": "c45",
+   "classification": "supported",
+   "evidence": "[sec] Because symptoms are often absent, the infection can go unnoticed until a test i -> NHS: the only way to know is to be tested.",
+   "url": "https://www.nhs.uk/conditions/chlamydia/diagnosis/",
+   "action": "removed"
+  },
+  {
+   "id": "c46",
+   "classification": "supported",
+   "evidence": "[sec] In women, symptoms can include unusual vaginal discharge, pain when passing urin -> NHS symptoms: women - discharge, bleeding after sex or between periods, burning on peeing, lower tummy pain.",
+   "url": "https://www.nhs.uk/conditions/chlamydia/symptoms/",
+   "action": "edited",
+   "newSentence": "In women, the NHS lists vaginal discharge that is not normal for the person, bleeding after sex or between periods, a burning feeling when passing urine, and pain in the lower tummy."
+  },
+  {
+   "id": "c47",
+   "classification": "unsupported",
+   "evidence": "[sec] Painful sex and rectal pain or discharge have also been listed by the CDC. -> CDC list of rectal symptoms and painful sex not confirmed in retrieved text; NHS describes rectal discomfort and discharge.",
+   "url": "https://www.nhs.uk/conditions/chlamydia/symptoms/",
+   "action": "edited",
+   "newSentence": "Infection of the rectum, which can follow anal sex, can cause discomfort and discharge from the back passage."
+  },
+  {
+   "id": "c48",
+   "classification": "supported",
+   "evidence": "[sec] The CDC adds that chlamydia can damage the reproductive system of a woman even w -> CDC: chlamydia often causes no symptoms but can still cause serious harm; the specific 'damage the reproductive system of a woman' wording was not confirmed.",
+   "url": "https://www.cdc.gov/chlamydia/about/index.html",
+   "action": "edited",
+   "newSentence": "The CDC notes that chlamydia often causes no symptoms yet can still cause serious harm."
+  },
+  {
+   "id": "c49",
+   "classification": "supported",
+   "evidence": "[sec] In men, symptoms can include discharge from the penis, burning when passing urin -> NHS symptoms: men - penile discharge, burning and itching, testicular pain and swelling, burning on peeing.",
+   "url": "https://www.nhs.uk/conditions/chlamydia/symptoms/",
+   "action": "edited",
+   "newSentence": "In men, it lists white, cloudy or watery discharge from the tip of the penis, burning and itching around the penis and testicles, pain and swelling in the testicles, and a burning feeling when passing urine."
+  },
+  {
+   "id": "c50",
+   "classification": "supported",
+   "evidence": "[sec] Infection of the rectum can also cause symptoms in both women and men. -> NHS: unprotected anal sex can infect the rectum, causing discomfort and discharge.",
+   "url": "https://www.nhs.uk/conditions/chlamydia/symptoms/",
+   "action": "edited"
+  },
+  {
+   "id": "c51",
+   "classification": "supported",
+   "evidence": "[sec] Chlamydia is caused by the bacterium Chlamydia trachomatis. -> WHO: caused by C. trachomatis.",
+   "url": "https://www.who.int/news-room/fact-sheets/detail/chlamydia",
+   "action": "kept"
+  },
+  {
+   "id": "c52",
+   "classification": "supported",
+   "evidence": "[sec] It is usually spread through vaginal, oral or anal sex, or through contact with  -> NHS how you get it.",
+   "url": "https://www.nhs.uk/conditions/chlamydia/how-you-get-it/",
+   "action": "kept"
+  },
+  {
+   "id": "c53",
+   "classification": "supported",
+   "evidence": "[sec] The NHS describes sex without a condom as a common route of infection. -> NHS: infection spreads via unprotected sex.",
+   "url": "https://www.nhs.uk/conditions/chlamydia/how-you-get-it/",
+   "action": "edited",
+   "newSentence": "The NHS says it is usually spread through vaginal, oral or anal sex without a condom, and through contact with semen or vaginal fluid, including on sex toys or hands."
+  },
+  {
+   "id": "c54",
+   "classification": "supported",
+   "evidence": "[sec] It can also be passed on by sharing sex toys that are not washed or covered with -> NHS: sharing sex toys not washed or covered.",
+   "url": "https://www.nhs.uk/conditions/chlamydia/how-you-get-it/",
+   "action": "kept"
+  },
+  {
+   "id": "c55",
+   "classification": "supported",
+   "evidence": "[sec] Casual contact such as kissing, hugging or sharing towels or toilet seats does n -> NHS how you get it: not spread by kissing, hugging, toilets seats, sharing baths/towels.",
+   "url": "https://www.nhs.uk/conditions/chlamydia/how-you-get-it/",
+   "action": "edited",
+   "newSentence": "The NHS says chlamydia is not spread by kissing or hugging, swimming pools, toilet seats, sharing baths or towels, or sharing cups, plates or cutlery."
+  },
+  {
+   "id": "c56",
+   "classification": "unsupported",
+   "evidence": "[sec] The CDC lists a new sexual partner, more than one partner and a partner with a s -> CDC page not confirmed for these risk situations; NHS lists new partner, unprotected sex and partner STI as reasons to test.",
+   "url": "https://www.nhs.uk/conditions/chlamydia/diagnosis/",
+   "action": "edited",
+   "newSentence": "The NHS lists a new sexual partner, sex without a condom and a partner's diagnosis of a sexually transmitted infection among the situations in which a test is advised."
+  },
+  {
+   "id": "c57",
+   "classification": "supported",
+   "evidence": "[sec] An untreated infection can also pass from a pregnant person to the baby during b -> NHS: can pass to baby.",
+   "url": "https://www.nhs.uk/conditions/chlamydia/complications/",
+   "action": "kept"
+  },
+  {
+   "id": "c58",
+   "classification": "supported",
+   "evidence": "[sec] Chlamydia is diagnosed by testing a urine sample or a swab. -> NHS diagnosis.",
+   "url": "https://www.nhs.uk/conditions/chlamydia/diagnosis/",
+   "action": "kept"
+  },
+  {
+   "id": "c59",
+   "classification": "supported",
+   "evidence": "[sec] The test most often used is a nucleic acid amplification test, known as a NAAT,  -> WHO NAAT gold standard.",
+   "url": "https://www.who.int/news-room/fact-sheets/detail/chlamydia",
+   "action": "edited",
+   "newSentence": "The test most often used is a nucleic acid amplification test, known as a NAAT, which WHO describes as the gold standard for diagnosing the infection."
+  },
+  {
+   "id": "c60",
+   "classification": "supported",
+   "evidence": "[sec] Some services offer online test kits. -> NHS: postal home kits in some areas.",
+   "url": "https://www.nhs.uk/conditions/chlamydia/diagnosis/",
+   "action": "edited",
+   "newSentence": "Some areas offer postal home testing kits, particularly for people under 25."
+  },
+  {
+   "id": "c61",
+   "classification": "supported",
+   "evidence": "[sec] A sexual health service notes that a very recent infection may not show up on a  -> Local NHS services: too-early test can miss infection.",
+   "url": "https://www.therotherhamft.nhs.uk/services/sexual-health-services/home-testing",
+   "action": "edited",
+   "newSentence": "Sexual health services advise that testing too soon after possible exposure can miss an infection."
+  },
+  {
+   "id": "c62",
+   "classification": "supported",
+   "evidence": "[sec] In England the National Chlamydia Screening Programme focuses on sexually active -> GOV.UK NCSP: focus on women under 25; test yearly and after new partner; aims to reduce harm of untreated infection.",
+   "url": "https://www.gov.uk/government/publications/ncsp-programme-overview/ncsp-programme-overview",
+   "action": "edited",
+   "newSentence": "The National Chlamydia Screening Programme in England aims to reduce the harm caused by untreated infection. It recommends that sexually active women under 25 are tested each year and after each new partner."
+  },
+  {
+   "id": "c63",
+   "classification": "unsupported",
+   "evidence": "[sec] Young men can still get tests at sexual health services, and are contacted and t -> GOV.UK collection page: men are offered a test when indicated (partner with chlamydia, symptoms); 'contacted through partner notification' not stated.",
+   "url": "https://www.gov.uk/government/collections/national-chlamydia-screening-programme-ncsp",
+   "action": "removed"
+  },
+  {
+   "id": "c64",
+   "classification": "unsupported",
+   "evidence": "[sec] More generally, the NHS advises testing once a year or when there is a new sexua -> No retrieved text gives general once-a-year advice.",
+   "url": "https://www.gov.uk/government/publications/ncsp-programme-overview/ncsp-programme-overview",
+   "action": "removed"
+  },
+  {
+   "id": "c65",
+   "classification": "supported",
+   "evidence": "[sec] Anyone diagnosed is offered a discussion about partner notification, so that rec -> GOV.UK NCSP: those diagnosed are supported to tell partners; NHS: clinics can help contact partners.",
+   "url": "https://www.gov.uk/government/publications/ncsp-programme-overview/ncsp-programme-overview",
+   "action": "edited",
+   "newSentence": "The NHS says current and recent sexual partners should be tested and treated, and that sexual health clinics can help people contact their partners."
+  },
+  {
+   "id": "c66",
+   "classification": "supported",
+   "evidence": "[sec] Chlamydia is curable with antibiotics. -> NHS and WHO.",
+   "url": "https://www.nhs.uk/conditions/chlamydia/treatment/",
+   "action": "edited",
+   "newSentence": "The NHS says chlamydia can usually be treated effectively with antibiotics, and WHO describes it as curable."
+  },
+  {
+   "id": "c67",
+   "classification": "supported",
+   "evidence": "[sec] The standard antibiotic options are doxycycline and azithromycin tablets. -> WHO/NHS: doxycycline or azithromycin.",
+   "url": "https://www.nhs.uk/conditions/chlamydia/treatment/",
+   "action": "edited",
+   "newSentence": "The usual antibiotic tablets are doxycycline and azithromycin."
+  },
+  {
+   "id": "c68",
+   "classification": "unsupported",
+   "evidence": "[sec] The 2026 BASHH guideline makes doxycycline the first-line treatment, with azithr -> BASHH 2026 doxycycline first line supported; M. genitalium condition not retrieved.",
+   "url": "https://www.bashh.org/_userfiles/pages/files/national_guideline_for_the_management_of_infection_chlamydia_trachomatis_2026.pdf",
+   "action": "edited",
+   "newSentence": "The 2026 guideline from the British Association for Sexual Health and HIV (BASHH) recommends doxycycline as the first-line treatment."
+  },
+  {
+   "id": "c69",
+   "classification": "supported",
+   "evidence": "[sec] Partners are also tested and treated. -> NHS: partners tested and treated.",
+   "url": "https://www.nhs.uk/conditions/chlamydia/treatment/",
+   "action": "edited"
+  },
+  {
+   "id": "c70",
+   "classification": "supported",
+   "evidence": "[sec] Sexual activity is paused until treatment and any tests are complete. -> NHS: avoid sex until treatment completed; azithromycin wait 7 days.",
+   "url": "https://www.nhs.uk/conditions/chlamydia/treatment/",
+   "action": "edited",
+   "newSentence": "It advises avoiding sex until the person and their partners have completed treatment, and, after azithromycin, waiting 7 days before sex."
+  },
+  {
+   "id": "c71",
+   "classification": "unsupported",
+   "evidence": "[sec] WHO advises waiting after finishing the medicine before having sex, or using con -> WHO advice on waiting after medicine / condoms not retrieved.",
+   "url": "https://www.who.int/news-room/fact-sheets/detail/chlamydia",
+   "action": "removed"
+  },
+  {
+   "id": "c72",
+   "classification": "unsupported",
+   "evidence": "[sec] Older BASHH guidance says current partners should be treated whatever their own  -> Older BASHH guidance on treating partners regardless of result not retrieved.",
+   "url": "https://www.bashh.org/_userfiles/pages/files/national_guideline_for_the_management_of_infection_chlamydia_trachomatis_2026.pdf",
+   "action": "removed"
+  },
+  {
+   "id": "c73",
+   "classification": "unsupported",
+   "evidence": "[sec] The same guidance advised that the person and treated partners avoid sex, includ -> Older BASHH guidance on avoiding sex including oral and with condoms not retrieved.",
+   "url": "https://www.bashh.org/_userfiles/pages/files/national_guideline_for_the_management_of_infection_chlamydia_trachomatis_2026.pdf",
+   "action": "removed"
+  },
+  {
+   "id": "c74",
+   "classification": "supported",
+   "evidence": "[sec] People diagnosed are offered another test some months after treatment, to look f -> NHS: under-25s offered another test 3 to 6 months after treatment.",
+   "url": "https://www.nhs.uk/conditions/chlamydia/treatment/",
+   "action": "edited",
+   "newSentence": "The NHS says under-25s who have chlamydia are offered another test 3 to 6 months after treatment, to look for reinfection."
+  },
+  {
+   "id": "c75",
+   "classification": "unsupported",
+   "evidence": "[sec] One Scottish guideline says a routine test of cure is not required. -> Scottish statement on routine test of cure not retrieved; BASHH 2018 says test of cure for rectal infection.",
+   "url": "https://www.bashh.org/_userfiles/pages/files/national_guideline_for_the_management_of_infection_chlamydia_trachomatis_2026.pdf",
+   "action": "removed"
+  },
+  {
+   "id": "c76",
+   "classification": "supported",
+   "evidence": "[sec] Untreated chlamydia can cause serious problems, but WHO says long-term problems  -> WHO: long-term problems unlikely if treated early; untreated infection can lead to PID, infertility, ectopic pregnancy.",
+   "url": "https://www.who.int/news-room/fact-sheets/detail/chlamydia",
+   "action": "kept"
+  },
+  {
+   "id": "c77",
+   "classification": "supported",
+   "evidence": "[sec] In women the infection can spread to the womb, ovaries or fallopian tubes and ca -> NHS complications: spread to womb, ovaries, tubes; PID can cause difficulty getting pregnant, pelvic pain, ectopic pregnancy.",
+   "url": "https://www.nhs.uk/conditions/chlamydia/complications/",
+   "action": "kept"
+  },
+  {
+   "id": "c78",
+   "classification": "supported",
+   "evidence": "[sec] This can lead to difficulty getting pregnant, long-lasting pelvic pain and a hig -> NHS complications: spread to womb, ovaries, tubes; PID can cause difficulty getting pregnant, pelvic pain, ectopic pregnancy.",
+   "url": "https://www.nhs.uk/conditions/chlamydia/complications/",
+   "action": "kept"
+  },
+  {
+   "id": "c79",
+   "classification": "supported",
+   "evidence": "[sec] Pelvic inflammatory disease is usually treated with a course of antibiotics. -> NHS PID: treated with antibiotics.",
+   "url": "https://www.nhs.uk/conditions/pelvic-inflammatory-disease-pid/",
+   "action": "kept"
+  },
+  {
+   "id": "c80",
+   "classification": "supported",
+   "evidence": "[sec] In men, the infection can spread to the testicles and epididymis, causing pain a -> NHS complications: testicles/epididymis, very rare.",
+   "url": "https://www.nhs.uk/conditions/chlamydia/complications/",
+   "action": "kept"
+  },
+  {
+   "id": "c81",
+   "classification": "unsupported",
+   "evidence": "[sec] The NHS says untreated infection might affect fertility in men, while the CDC sa -> NHS: untreated infection could affect fertility in men (supported). CDC 'men rarely have health problems' not confirmed in the retrieved text.",
+   "url": "https://www.nhs.uk/conditions/chlamydia/complications/",
+   "action": "edited",
+   "newSentence": "The NHS says untreated infection could affect fertility in men."
+  },
+  {
+   "id": "c82",
+   "classification": "supported",
+   "evidence": "[sec] In pregnancy, untreated chlamydia may increase the risk of premature labour and  -> NHS: may increase risk of premature birth or low birthweight; baby may develop eye infection/pneumonia.",
+   "url": "https://www.nhs.uk/conditions/chlamydia/complications/",
+   "action": "edited",
+   "newSentence": "In pregnancy, untreated chlamydia may increase the risk of premature birth or low birthweight, and the baby may develop an eye infection or pneumonia after birth."
+  },
+  {
+   "id": "c83",
+   "classification": "supported",
+   "evidence": "[sec] WHO says correct and consistent use of condoms during sex is the most effective  -> WHO: condoms the most effective way to prevent.",
+   "url": "https://www.who.int/news-room/fact-sheets/detail/chlamydia",
+   "action": "kept"
+  },
+  {
+   "id": "c84",
+   "classification": "unsupported",
+   "evidence": "[sec] The NHS also describes condoms or dental dams for oral sex, and washing sex toys -> NHS dental dam wording not retrieved.",
+   "url": "https://www.cdc.gov/chlamydia/about/index.html",
+   "action": "edited",
+   "newSentence": "The CDC, a US source, says condoms and dental dams protect against chlamydia when used correctly every time, including for oral sex. The NHS says sex toys can pass the infection on unless they are washed or covered with a new condom each time."
+  },
+  {
+   "id": "c85",
+   "classification": "supported",
+   "evidence": "[sec] There is no vaccine against chlamydia. -> WHO: no vaccine.",
+   "url": "https://www.who.int/news-room/fact-sheets/detail/chlamydia",
+   "action": "edited",
+   "newSentence": "There is no vaccine against chlamydia, according to WHO."
+  },
+  {
+   "id": "c86",
+   "classification": "unsupported",
+   "evidence": "[sec] Because many infections cause no symptoms, the NHS advises testing once a year o -> No retrieved general once-a-year advice.",
+   "url": "https://www.gov.uk/government/publications/ncsp-programme-overview/ncsp-programme-overview",
+   "action": "edited",
+   "newSentence": "Because many infections cause no symptoms, testing is how they are found."
+  },
+  {
+   "id": "c87",
+   "classification": "supported",
+   "evidence": "[sec] A sexual health service can arrange testing, whether or not there are symptoms. -> NHS: testing available with or without symptoms.",
+   "url": "https://www.nhs.uk/conditions/chlamydia/diagnosis/",
+   "action": "kept"
+  },
+  {
+   "id": "c88",
+   "classification": "supported",
+   "evidence": "[sec] The English programme also aims to reduce harm from untreated infection through  -> GOV.UK NCSP: aims to reduce harm from untreated infection; partner notification and retesting.",
+   "url": "https://www.gov.uk/government/publications/ncsp-programme-overview/ncsp-programme-overview",
+   "action": "kept"
+  },
+  {
+   "id": "c89",
+   "classification": "supported",
+   "evidence": "[sec] WHO has a global strategy that aims to reduce new chlamydia cases by 2030. -> WHO global health sector strategy 2022-2030 aims to reduce new chlamydia cases.",
+   "url": "https://www.who.int/news-room/fact-sheets/detail/chlamydia",
+   "action": "kept"
+  },
+  {
+   "id": "c90",
+   "classification": "unsupported",
+   "evidence": "[sec] Tests for other sexually transmitted infections are often recommended at the sam -> No retrieved source says tests for other STIs are recommended at the same time.",
+   "url": "https://www.nhs.uk/conditions/chlamydia/diagnosis/",
+   "action": "removed"
+  },
+  {
+   "id": "c91",
+   "classification": "supported",
+   "evidence": "[faq] Yes. -> Fragment answer 'Yes'; agrees with sources.",
+   "url": "https://www.nhs.uk/conditions/chlamydia/symptoms/",
+   "action": "edited"
+  },
+  {
+   "id": "c92",
+   "classification": "supported",
+   "evidence": "[faq] The NHS says chlamydia is curable with antibiotics. -> NHS and WHO.",
+   "url": "https://www.nhs.uk/conditions/chlamydia/treatment/",
+   "action": "edited",
+   "newSentence": "WHO describes chlamydia as curable, and the NHS says it can usually be treated effectively with antibiotics."
+  },
+  {
+   "id": "c93",
+   "classification": "supported",
+   "evidence": "[faq] Partners are also tested and treated. -> NHS: partners tested and treated.",
+   "url": "https://www.nhs.uk/conditions/chlamydia/treatment/",
+   "action": "edited",
+   "newSentence": "Current and recent partners are also tested and treated."
+  },
+  {
+   "id": "c94",
+   "classification": "supported",
+   "evidence": "[faq] The NHS says the risk of problems such as infertility is lower when the infectio -> NHS: risk of infertility lower when treated early.",
+   "url": "https://www.nhs.uk/conditions/chlamydia/complications/",
+   "action": "kept"
+  },
+  {
+   "id": "c95",
+   "classification": "supported",
+   "evidence": "[faq] People diagnosed are offered another test some months later to look for reinfect -> NHS: under-25s offered another test 3 to 6 months after treatment.",
+   "url": "https://www.nhs.uk/conditions/chlamydia/treatment/",
+   "action": "edited",
+   "newSentence": "Under-25s who have chlamydia are offered another test 3 to 6 months after treatment, to look for reinfection."
+  },
+  {
+   "id": "c96",
+   "classification": "supported",
+   "evidence": "[faq] Yes. -> Fragment answer 'Yes'; agrees with sources.",
+   "url": "https://www.nhs.uk/conditions/chlamydia/symptoms/",
+   "action": "edited"
+  },
+  {
+   "id": "c97",
+   "classification": "supported",
+   "evidence": "[faq] Most people with chlamydia do not notice any symptoms and may not know they have -> NHS: most people no symptoms.",
+   "url": "https://www.nhs.uk/conditions/chlamydia/symptoms/",
+   "action": "edited"
+  },
+  {
+   "id": "c98",
+   "classification": "supported",
+   "evidence": "[faq] The CDC says it can still cause serious health problems, and can damage the repr -> CDC: often no symptoms but can still cause serious harm; reproductive damage wording not confirmed.",
+   "url": "https://www.cdc.gov/chlamydia/about/index.html",
+   "action": "edited",
+   "newSentence": "The CDC says chlamydia often causes no symptoms but can still cause serious harm."
+  },
+  {
+   "id": "c99",
+   "classification": "unsupported",
+   "evidence": "[faq] This is why the NHS advises testing once a year or with a new sexual partner. -> No retrieved general once-a-year advice; NHS lists reasons to test.",
+   "url": "https://www.nhs.uk/conditions/chlamydia/diagnosis/",
+   "action": "edited",
+   "newSentence": "The NHS says a test can be done whether or not there are symptoms, and it lists reasons for testing such as a new sexual partner or a partner's diagnosis."
+  },
+  {
+   "id": "c100",
+   "classification": "supported",
+   "evidence": "[faq] Untreated chlamydia can affect fertility. -> NHS complications / WHO.",
+   "url": "https://www.nhs.uk/conditions/chlamydia/complications/",
+   "action": "kept"
+  },
+  {
+   "id": "c101",
+   "classification": "supported",
+   "evidence": "[faq] In women, pelvic inflammatory disease can lead to difficulty getting pregnant an -> NHS complications / WHO.",
+   "url": "https://www.nhs.uk/conditions/chlamydia/complications/",
+   "action": "kept"
+  },
+  {
+   "id": "c102",
+   "classification": "supported",
+   "evidence": "[faq] The NHS says there is a possibility that untreated infection could affect fertil -> NHS: could affect fertility in men.",
+   "url": "https://www.nhs.uk/conditions/chlamydia/complications/",
+   "action": "edited",
+   "newSentence": "The NHS says untreated infection could affect fertility in men."
+  },
+  {
+   "id": "c103",
+   "classification": "supported",
+   "evidence": "[faq] The risk is lower if the infection is treated early. -> NHS complications / WHO.",
+   "url": "https://www.nhs.uk/conditions/chlamydia/complications/",
+   "action": "kept"
+  },
+  {
+   "id": "c104",
+   "classification": "supported",
+   "evidence": "[faq] Testing uses a urine sample or a swab. -> NHS diagnosis.",
+   "url": "https://www.nhs.uk/conditions/chlamydia/diagnosis/",
+   "action": "kept"
+  },
+  {
+   "id": "c105",
+   "classification": "supported",
+   "evidence": "[faq] The test most often used is a NAAT, which WHO describes as the gold standard. -> WHO NAAT gold standard.",
+   "url": "https://www.who.int/news-room/fact-sheets/detail/chlamydia",
+   "action": "kept"
+  },
+  {
+   "id": "c106",
+   "classification": "supported",
+   "evidence": "[faq] Some services offer online test kits. -> NHS: postal kits in some areas.",
+   "url": "https://www.nhs.uk/conditions/chlamydia/diagnosis/",
+   "action": "edited",
+   "newSentence": "Some areas offer postal home testing kits."
+  },
+  {
+   "id": "c107",
+   "classification": "supported",
+   "evidence": "[faq] A sexual health service notes that a very recent infection may not show up strai -> Local NHS services: testing too soon can miss infection.",
+   "url": "https://www.therotherhamft.nhs.uk/services/sexual-health-services/home-testing",
+   "action": "edited",
+   "newSentence": "Sexual health services advise that testing too soon after possible exposure can miss an infection, so the timing of a test can matter."
+  },
+  {
+   "id": "c108",
+   "classification": "supported",
+   "evidence": "[faq] No. -> Fragment answer 'No'.",
+   "url": "https://www.nhs.uk/conditions/chlamydia/how-you-get-it/",
+   "action": "kept"
+  },
+  {
+   "id": "c109",
+   "classification": "supported",
+   "evidence": "[faq] The NHS says chlamydia is not spread by casual contact such as kissing, hugging  -> NHS how you get it.",
+   "url": "https://www.nhs.uk/conditions/chlamydia/how-you-get-it/",
+   "action": "edited",
+   "newSentence": "The NHS says chlamydia is not spread by kissing, hugging, sharing towels or toilet seats."
+  },
+  {
+   "id": "c110",
+   "classification": "supported",
+   "evidence": "[faq] It is usually spread through vaginal, oral or anal sex, through contact with inf -> NHS how you get it.",
+   "url": "https://www.nhs.uk/conditions/chlamydia/how-you-get-it/",
+   "action": "edited",
+   "newSentence": "It is usually spread through vaginal, oral or anal sex without a condom, through contact with infected genital fluids, or by sharing sex toys that are not washed or covered with a new condom each time."
+  },
+  {
+   "id": "c111",
+   "classification": "supported",
+   "evidence": "[faq] An untreated infection can pass to the baby during birth. -> NHS complications: pass to baby; eye infection, pneumonia.",
+   "url": "https://www.nhs.uk/conditions/chlamydia/complications/",
+   "action": "kept"
+  },
+  {
+   "id": "c112",
+   "classification": "supported",
+   "evidence": "[faq] The baby may develop an eye infection or pneumonia. -> NHS complications: pass to baby; eye infection, pneumonia.",
+   "url": "https://www.nhs.uk/conditions/chlamydia/complications/",
+   "action": "kept"
+  },
+  {
+   "id": "c113",
+   "classification": "supported",
+   "evidence": "[faq] Untreated chlamydia in pregnancy may also increase the risk of premature labour  -> NHS: may increase risk of premature birth or low birthweight.",
+   "url": "https://www.nhs.uk/conditions/chlamydia/complications/",
+   "action": "edited",
+   "newSentence": "The NHS says untreated chlamydia in pregnancy may also increase the risk of premature birth or low birthweight."
+  },
+  {
+   "id": "c114",
+   "classification": "unsupported",
+   "evidence": "[faq] The CDC advises a pregnant person to talk to their healthcare provider about exa -> CDC advice about talking to a healthcare provider not confirmed in retrieved text.",
+   "url": "https://www.cdc.gov/chlamydia/about/index.html",
+   "action": "edited",
+   "newSentence": "The NHS lists pregnancy among the situations in which a test is advised, and a GP or sexual health clinic can arrange one."
+  },
+  {
+   "id": "c115",
+   "classification": "supported",
+   "evidence": "[kf] Chlamydia trachomatis infection; a sexually transmitted infection (STI) -> Name and definition per WHO.",
+   "url": "https://www.who.int/news-room/fact-sheets/detail/chlamydia",
+   "action": "kept"
+  },
+  {
+   "id": "c116",
+   "classification": "supported",
+   "evidence": "[kf] The bacterium Chlamydia trachomatis -> WHO.",
+   "url": "https://www.who.int/news-room/fact-sheets/detail/chlamydia",
+   "action": "kept"
+  },
+  {
+   "id": "c117",
+   "classification": "supported",
+   "evidence": "[kf] Often none; when present, unusual discharge, pain passing urine, or pelvic or te -> NHS symptoms.",
+   "url": "https://www.nhs.uk/conditions/chlamydia/symptoms/",
+   "action": "kept"
+  },
+  {
+   "id": "c118",
+   "classification": "supported",
+   "evidence": "[kf] A urine sample or swab tested with a NAAT -> WHO NAAT; NHS swab/urine.",
+   "url": "https://www.who.int/news-room/fact-sheets/detail/chlamydia",
+   "action": "kept"
+  },
+  {
+   "id": "c119",
+   "classification": "supported",
+   "evidence": "[kf] Antibiotic tablets; chlamydia is curable -> NHS/WHO.",
+   "url": "https://www.nhs.uk/conditions/chlamydia/treatment/",
+   "action": "edited",
+   "newSentence": "Antibiotic tablets; WHO describes chlamydia as curable"
+  },
+  {
+   "id": "c120",
+   "classification": "unsupported",
+   "evidence": "[kf] Condoms, and regular testing as the NHS advises -> No retrieved general once-a-year advice.",
+   "url": "https://www.nhs.uk/conditions/chlamydia/diagnosis/",
+   "action": "edited",
+   "newSentence": "Condoms used correctly; testing in the situations the NHS lists, such as a new sexual partner"
+  }
+ ],
+ "notes": "13 of 14 searches used. Search summaries blend pages, so national NHS page attribution was sometimes inferred; the 'testing too soon can miss infection' point rests on local NHS sexual health service pages, and the CDC lines on serious harm without symptoms, condoms/dental dams and douching come from search summaries of CDC pages (US source, labelled as such). The BASHH 2026 PDF was seen only through search summaries (doxycycline first line confirmed); its M. genitalium, test of cure, partner and abstinence sections were not retrieved, so those sentences were removed. Testicular pain as an urgent symptom was not found in retrieved NHS text, so the seekCare urgency route now follows the NHS pelvic inflammatory disease page. Link edits: removed tests:[microbiology-tests] (not connected by sources); affects trimmed (bladder, urinary removed; urethral symptoms not tied to the bladder). Kept symptoms pelvic-pain, abdominal-pain, vaginal-bleeding and medication azithromycin. Whether the page should say 'curable' at all given the site rule on 'cured' is for the reviewer; it is attributed to WHO. Final article block is about 1,216 words."
+}
