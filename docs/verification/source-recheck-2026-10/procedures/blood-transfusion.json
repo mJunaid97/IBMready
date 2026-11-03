@@ -1,0 +1,20 @@
+{
+ "type": "procedures",
+ "id": "blood-transfusion",
+ "verdict": "accept-with-edits",
+ "edits": [
+  {
+   "field": "before",
+   "action": "remove-sentence",
+   "match": "The laboratory tests the sample against donor units so that the blood given is a good match; most serious reactions come from mismatched blood, and cross-matching is designed to catch this",
+   "replacement": "The laboratory tests the sample against donor units so that the blood given is compatible, which is what cross-matching is designed to check",
+   "reason": "WRONG: 'most serious reactions come from mismatched blood' is unsupported and contradicts the record's own statement (and haemovigilance data) that fluid overload is the commonest serious harm; haemolytic reactions are rare."
+  }
+ ],
+ "unverified_urls": [
+  "https://www.nhlbi.nih.gov/health-topics/blood-transfusion",
+  "https://medlineplus.gov/ency/article/001303.htm"
+ ],
+ "checked_urls": [],
+ "notes": "The domain-restricted search did not surface the nhs.uk blood transfusion page (only clinicaltrials.gov consent forms and PMC reviews were returned), so NHS URLs remain unverified-but-cited. Retrieved excerpts support: fever/chills/hives/itching commonest and up to 1 in 100, haemolytic reactions rare and more likely after previous transfusions, TRALI, circulatory overload with rapid large volumes, anaphylaxis very rare, iron build-up with repeated transfusion, donor infection screening. Remaining additions (component therapy, group O in emergency, bedside ID checks, delayed haemolytic reactions, alloimmunisation) are standard textbook content. Haemoglobin thresholds (70/80 g/L) predate the patch. No protected field changed."
+}

@@ -1,0 +1,24 @@
+{
+ "type": "tests",
+ "id": "holter-monitor",
+ "verdict": "accept-with-edits",
+ "edits": [
+  {
+   "field": "limitations",
+   "action": "remove-sentence",
+   "match": "The analysis is retrospective, so the device cannot warn the wearer or the clinic of a dangerous rhythm as it happens.",
+   "replacement": "With a conventional Holter recorder the analysis is retrospective, so the device itself does not warn the wearer or the clinic of a dangerous rhythm as it happens.",
+   "reason": "UNSUPPORTED: stated as true of all ambulatory monitors, but some event/telemetry monitors transmit in real time; scoped to conventional Holter recorders."
+  },
+  {
+   "field": "how",
+   "action": "remove-sentence",
+   "match": "At the end of the period the device is returned to the clinic, where clinical staff analyse the recording, tabulate the rhythm findings and correlates any irregular activity with the diary entries.",
+   "replacement": "At the end of the period the device is returned to the clinic, where clinical staff analyse the recording, tabulate the rhythm findings and correlate any irregular activity with the diary entries.",
+   "reason": "SCHEMA: grammar, 'staff ... correlates' -> 'correlate'."
+  }
+ ],
+ "unverified_urls": [],
+ "checked_urls": [],
+ "notes": "Verdict file generated from the upstream verifier report; every match string was asserted to occur in the current record. URL checks were done in the upstream report and are not repeated here."
+}

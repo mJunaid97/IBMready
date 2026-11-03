@@ -1,0 +1,24 @@
+{
+ "type": "imaging",
+ "id": "ct-scan",
+ "verdict": "accept-with-edits",
+ "edits": [
+  {
+   "field": "dose",
+   "action": "remove-sentence",
+   "match": "The FDA puts the adult effective dose from a head CT at roughly that of 100 chest X-rays, and UKHSA's patient-dose tables list an abdomen-pelvis CT at around 10 mSv: several years of natural background radiation.",
+   "replacement": "UKHSA's patient-dose tables list an abdomen-pelvis CT at around 10 mSv: several years of natural background radiation.",
+   "reason": "UNSUPPORTED: 'head CT ≈ 100 chest X-rays' comparison is not in the cited FDA page; comparison removed, UKHSA figure kept."
+  },
+  {
+   "field": "risks",
+   "action": "remove-sentence",
+   "match": "Tissue effects such as skin reddening or cataracts do not occur at the exposures used for CT.",
+   "replacement": "Tissue effects such as skin reddening or cataracts are not expected at the doses used for diagnostic CT.",
+   "reason": "UNSAFE: absolute 'do not occur' overstates the FDA wording, which says deterministic effects are not expected at diagnostic doses."
+  }
+ ],
+ "unverified_urls": [],
+ "checked_urls": [],
+ "notes": "Verdict file generated from the upstream verifier report; every match string was asserted to occur in the current record. URL checks were done in the upstream report and are not repeated here."
+}

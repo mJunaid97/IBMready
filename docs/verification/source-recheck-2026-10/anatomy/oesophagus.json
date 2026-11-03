@@ -1,0 +1,34 @@
+{
+ "type": "anatomy",
+ "id": "oesophagus",
+ "verdict": "accept-with-edits",
+ "edits": [
+  {
+   "field": "sections",
+   "action": "remove-sentence",
+   "match": "The muscular coat has inner circular and outer longitudinal layers; in the upper two-thirds the fibres are a mixture of skeletal and smooth muscle, the skeletal fibres fading out in the lower third.",
+   "replacement": "The muscular coat has inner circular and outer longitudinal layers; the upper third is mainly skeletal muscle, the middle third a mixture of skeletal and smooth muscle, and the lower third smooth muscle only.",
+   "reason": "WRONG: StatPearls (Anatomy, Thorax, Esophagus; Barium Swallow) describe the proximal third as primarily skeletal, the middle third mixed and the distal third smooth; 'upper two-thirds a mixture' misstates the upper third."
+  },
+  {
+   "field": "keyFacts",
+   "action": "remove-item",
+   "match": "Muscle",
+   "replacement": "",
+   "reason": "WRONG: 'skeletal mixed with smooth in the upper two-thirds' contradicts the source (upper third mainly skeletal, middle mixed, lower smooth)."
+  }
+ ],
+ "unverified_urls": [
+  "https://www.nhs.uk/conditions/oesophageal-cancer/causes/",
+  "https://www.royaldevon.nhs.uk/media/xdemepzp/barrett-s-oesophagus-rd-e-20-060-002.pdf",
+  "https://thamesvalleycanceralliance.nhs.uk/our-work/patient-engagement-patient-experience/campaigns/oesophageal-cancer/",
+  "https://openstax.org/books/anatomy-and-physiology-2e/pages/23-3-the-mouth-pharynx-and-esophagus",
+  "https://www.ncbi.nlm.nih.gov/sites/books/NBK519011/"
+ ],
+ "checked_urls": [
+  "https://www.ncbi.nlm.nih.gov/sites/books/NBK482513/",
+  "https://www.ncbi.nlm.nih.gov/sites/books/NBK493176/",
+  "https://www.ncbi.nlm.nih.gov/sites/books/NBK519011/"
+ ],
+ "notes": "SUPPORTED: origin at the cricoid where inferior constrictor meets cricopharyngeus (upper oesophageal sphincter). GENERAL KNOWLEDGE (correct): cervical/thoracic/abdominal parts, behind trachea and left main bronchus, behind left atrium separated by pericardium, through oesophageal hiatus to cardia, no serosa in the thorax, lower sphincter reinforced by right crus, segmental supply (inferior thyroid, aortic/bronchial branches, left gastric), portosystemic anastomosis and varices, vagal trunks through the hiatus, three-phase swallowing. Barrett's and cancer text matches NHS/trust pages (no figures). Structures ('Esophagus') valid; references https on approved hosts."
+}

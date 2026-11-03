@@ -1,0 +1,17 @@
+{
+ "type": "physiology",
+ "id": "pancreatic-functions",
+ "verdict": "accept-with-edits",
+ "edits": [
+  {
+   "field": "body",
+   "action": "remove-sentence",
+   "match": "Its two main roles, in the NIDDK's summary, are making insulin and making the digestive juices that break down carbohydrates, proteins and fats in the intestine.",
+   "replacement": "The two main roles of the pancreas as a whole, in the NIDDK's summary, are making insulin and making the digestive juices that break down carbohydrates, proteins and fats in the intestine.",
+   "reason": "WRONG: 'Its' refers to the exocrine tissue, wrongly attributing insulin production to it; antecedent corrected to the pancreas as a whole."
+  }
+ ],
+ "unverified_urls": [],
+ "checked_urls": [],
+ "notes": "Verdict file generated from the upstream verifier report; every match string was asserted to occur in the current record. URL checks were done in the upstream report and are not repeated here."
+}

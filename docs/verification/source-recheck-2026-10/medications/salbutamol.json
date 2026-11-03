@@ -1,0 +1,24 @@
+{
+ "type": "medications",
+ "id": "salbutamol",
+ "verdict": "accept-with-edits",
+ "edits": [
+  {
+   "field": "summary",
+   "action": "remove-sentence",
+   "match": "The NHS describes it as safe and very effective when used properly, with few side effects beyond a brief tremor and a faster heartbeat, but it relieves the narrowing without treating the inflammation beneath it, so needing it often is itself a warning that the asthma is not controlled.",
+   "replacement": "There is no evidence of lasting harm even after many years of use, and it has few side effects beyond a brief tremor and a faster heartbeat, but it relieves the narrowing without treating the inflammation beneath it, so needing it often is itself a warning that the asthma is not controlled.",
+   "reason": "UNSUPPORTED: the attributed quotation 'safe and very effective when used properly' was not found in the NHS excerpt; replaced with the NHS statement that was retrieved (no evidence of lasting damage even after many years)."
+  }
+ ],
+ "unverified_urls": [
+  "https://www.nhs.uk/conditions/bronchodilators/side-effects/",
+  "https://medlineplus.gov/druginfo/meds/a682145.html"
+ ],
+ "checked_urls": [
+  "https://www.nhs.uk/medicines/salbutamol-inhaler/common-questions-about-salbutamol-inhalers/",
+  "https://www.nhs.uk/medicines/salbutamol-inhaler/side-effects-of-salbutamol-inhalers/",
+  "https://www.nhs.uk/medicines/salbutamol-inhaler/how-and-when-to-use-salbutamol-inhalers/"
+ ],
+ "notes": "Line-by-line check. NHS excerpts support: shakiness, faster heartbeat that settles, headaches as common effects; needing it more than 4 times in 24 hours as a sign of worsening; chest pain after overuse is a 999 call; no lasting damage with years of use; dizziness and driving; alcohol/food/contraception not affected; nebulised doses can lower potassium. No dose or puff-count figure was added (the NHS '1 or 2 puffs' and '4 times in 24 hours' were not imported; 'several times a day' is consistent). Onset figures, 'more than twice a week', potassium/arrhythmia and paradoxical bronchospasm predate the patch. US albuterol product forms and dose-counter/device advice are MedlinePlus administration facts. No protected field changed."
+}

@@ -1,0 +1,17 @@
+{
+ "type": "physiology",
+ "id": "cardiac-cycle",
+ "verdict": "accept-with-edits",
+ "edits": [
+  {
+   "field": "keyFacts",
+   "action": "remove-item",
+   "match": "End-diastolic volume (resting)",
+   "replacement": "",
+   "reason": "UNSUPPORTED: '≈130 ml' end-diastolic volume figure not in the cited sources."
+  }
+ ],
+ "unverified_urls": [],
+ "checked_urls": [],
+ "notes": "Verdict file generated from the upstream verifier report; every match string was asserted to occur in the current record. URL checks were done in the upstream report and are not repeated here."
+}
