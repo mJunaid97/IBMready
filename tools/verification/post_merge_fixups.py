@@ -390,6 +390,31 @@ https://www.versusarthritis.org/about-arthritis/conditions/osteoarthritis/ https
 https://www.versusarthritis.org/about-arthritis/conditions/osteoporosis/ https://www.arthritis-uk.org/information-and-support/understanding-arthritis/conditions/osteoporosis/
 https://www.versusarthritis.org/about-arthritis/treatments/drugs/denosumab/ https://www.arthritis-uk.org/information-and-support/understanding-arthritis/arthritis-treatments/drugs/denosumab/
 https://www.nice.org.uk/guidance/ng28/ifp/chapter/what-your-diabetes-care-team-will-do https://www.nice.org.uk/guidance/ng28
+https://www.nice.org.uk/guidance/ph38/chapter/Glossary https://www.nice.org.uk/guidance/ph38
+https://www.gosh.nhs.uk/conditions-and-treatments/medicines-information/triptans-migraine-and-headache/ https://www.gosh.nhs.uk/conditions-and-treatments/medicines-information/medicines-directory/triptans-migraine-and-headache/
+https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10809909/ https://pmc.ncbi.nlm.nih.gov/articles/PMC10809909/
+https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11473209/ https://pmc.ncbi.nlm.nih.gov/articles/PMC11473209/
+https://www.nhs.uk/conditions/osteoporosis/causes/ https://www.nhs.uk/conditions/osteoporosis/
+https://www.nhs.uk/conditions/osteoporosis/prevention/ https://www.nhs.uk/conditions/osteoporosis/
+https://www.nhs.uk/medicines/doxazosin/how-and-when-to-take-doxazosin/ https://www.nhs.uk/medicines/doxazosin/
+https://www.nhs.uk/medicines/doxazosin/side-effects-of-doxazosin/ https://www.nhs.uk/medicines/doxazosin/
+https://www.nhs.uk/medicines/furosemide/who-can-and-cannot-take-furosemide/ https://www.nhs.uk/medicines/furosemide/
+https://www.nhs.uk/medicines/lactulose/side-effects-of-lactulose/ https://www.nhs.uk/medicines/lactulose/
+https://www.nhs.uk/medicines/lactulose/who-can-and-cannot-take-lactulose/ https://www.nhs.uk/medicines/lactulose/
+https://www.nhs.uk/medicines/metoclopramide/about-metoclopramide/ https://www.nhs.uk/medicines/metoclopramide/
+https://www.nhs.uk/medicines/metoclopramide/how-and-when-to-take-metoclopramide/ https://www.nhs.uk/medicines/metoclopramide/
+https://www.nhs.uk/medicines/metoclopramide/side-effects-of-metoclopramide/ https://www.nhs.uk/medicines/metoclopramide/
+https://www.nhs.uk/medicines/sumatriptan/side-effects-of-sumatriptan/ https://www.nhs.uk/medicines/sumatriptan/
+https://www.nhs.uk/medicines/sumatriptan/taking-sumatriptan-with-other-medicines-and-herbal-supplements/ https://www.nhs.uk/medicines/sumatriptan/
+https://www.nhs.uk/medicines/sumatriptan/who-can-and-cannot-take-or-use-sumatriptan/ https://www.nhs.uk/medicines/sumatriptan/
+https://www.nhs.uk/medicines/tamsulosin/common-questions-about-tamsulosin/ https://www.nhs.uk/medicines/tamsulosin/
+https://www.nhs.uk/medicines/tamsulosin/how-and-when-to-take-tamsulosin/ https://www.nhs.uk/medicines/tamsulosin/
+https://www.nhs.uk/medicines/tamsulosin/side-effects-of-tamsulosin/ https://www.nhs.uk/medicines/tamsulosin/
+https://www.nhs.uk/medicines/tamsulosin/taking-tamsulosin-with-other-medicines-and-herbal-supplements/ https://www.nhs.uk/medicines/tamsulosin/
+https://www.nhs.uk/medicines/tamsulosin/who-can-and-cannot-take-tamsulosin/ https://www.nhs.uk/medicines/tamsulosin/
+https://www.nhs.uk/medicines/zopiclone/common-questions-about-zopiclone/ https://www.nhs.uk/medicines/zopiclone/
+https://www.nhs.uk/medicines/zopiclone/side-effects-of-zopiclone/ https://www.nhs.uk/medicines/zopiclone/
+https://www.ukkidney.org/sites/default/files/education/Albuminuria%20quick%20reference.pdf https://www.ukkidney.org/wp-content/uploads/drupal-archive/education/Albuminuria%20quick%20reference.pdf
 """
 DROP_URLS = {"https://www.nhs.uk/common-health-questions/medicines/does-grapefruit-affect-my-medicine/",      # redirects to the medicines index: the page is gone
              "https://www.food.gov.uk/research/food-allergy-and-intolerance-research/patterns-and-prevalence-of-adult-food-allergy",     # 404; the prose cites the Anaphylaxis UK report of it
