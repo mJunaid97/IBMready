@@ -1,0 +1,270 @@
+{
+ "id": "cervical-screening-what-to-expect",
+ "searchesUsed": 3,
+ "counts": {
+  "supported": 10,
+  "textbook": 0,
+  "unsupported": 19,
+  "wrong": 0,
+  "unsafe": 1,
+  "unchecked": 0
+ },
+ "claims": [
+  {
+   "id": "c01",
+   "sentence": "The NHS invites people with a cervix aged 25 to 64 in England, and the first invitation arrives a few months before the 25th birthday.",
+   "classification": "unsupported",
+   "evidence": "GOV.UK/NHS: screening moves to five-yearly for ages 25 to 64 in England. \"First invitation a few months before 25th birthday\" not retrieved.",
+   "url": "https://www.gov.uk/guidance/cervical-screening-programme-overview",
+   "action": "edited",
+   "newSentence": "The NHS in England invites people with a cervix aged 25 to 64 for cervical screening."
+  },
+  {
+   "id": "c02",
+   "sentence": "People registered as female with a GP are invited automatically.",
+   "classification": "unsupported",
+   "evidence": "Not retrieved for cervical screening.",
+   "url": "https://www.gov.uk/guidance/cervical-screening-programme-overview",
+   "action": "removed"
+  },
+  {
+   "id": "c03",
+   "sentence": "Trans men and non-binary people who are registered differently may need to ask through their GP or a sexual health or transgender clinic.",
+   "classification": "unsupported",
+   "evidence": "Not retrieved; trans-specific cervical guidance not found in these searches.",
+   "url": "https://www.gov.uk/guidance/cervical-screening-programme-overview",
+   "action": "removed"
+  },
+  {
+   "id": "c04",
+   "sentence": "Routine screening is every five years.",
+   "classification": "supported",
+   "evidence": "GOV.UK: HPV-negative people are offered screening again in 5 years.",
+   "url": "https://www.gov.uk/guidance/cervical-screening-programme-overview",
+   "action": "kept"
+  },
+  {
+   "id": "c05",
+   "sentence": "Since 1 July 2025, people aged 25 to 49 with a negative HPV test have moved from a three-year to a five-year interval.",
+   "classification": "unsupported",
+   "evidence": "GOV.UK: UK NSC recommended five-year intervals for 25 to 64; HPV-negative people last invited before 1 July 2025 may still be on a three-year interval; first-ever HPV-negative test at 25 means next test in 5 years. The \"25 to 49 moved\" description was not seen verbatim. NHS page text itself not retrieved; verify on nhs.uk before publishing.",
+   "url": "https://www.gov.uk/guidance/cervical-screening-programme-overview",
+   "action": "edited",
+   "newSentence": "From 1 July 2025 in England, people who test negative for HPV are offered screening again after five years rather than three; guidance says some people last invited before that date may still be on a three-year interval."
+  },
+  {
+   "id": "c06",
+   "sentence": "Invitations usually stop at 65, and a person is invited again only if a recent test was abnormal.",
+   "classification": "unsupported",
+   "evidence": "No retrieved text on stopping at 65 or re-invitation after an abnormal test.",
+   "url": "https://www.gov.uk/guidance/cervical-screening-programme-overview",
+   "action": "removed"
+  },
+  {
+   "id": "c07",
+   "sentence": "Most screening takes place at a GP surgery, and a person can ask for a female nurse or doctor.",
+   "classification": "unsupported",
+   "evidence": "Cancer Research UK: usually done by a female nurse or doctor and a person can ask for a female practitioner when booking. \"Most at a GP surgery\" not retrieved.",
+   "url": "https://www.cancerresearchuk.org/about-cancer/cervical-cancer/getting-diagnosed/screening/your-cervical-screening-appointment",
+   "action": "edited",
+   "newSentence": "Cervical screening is usually done by a female nurse or doctor, and a person can ask for a female practitioner when booking."
+  },
+  {
+   "id": "c08",
+   "sentence": "The person undresses from the waist down behind a screen and lies back on a bed.",
+   "classification": "unsupported",
+   "evidence": "Positioning and screen not described in retrieved text.",
+   "url": "https://www.cancerresearchuk.org/about-cancer/cervical-cancer/getting-diagnosed/screening/your-cervical-screening-appointment",
+   "action": "removed"
+  },
+  {
+   "id": "c09",
+   "sentence": "The clinician gently puts a smooth, tube-shaped tool called a speculum into the vagina, and a soft brush collects a sample of cells from the cervix.",
+   "classification": "unsupported",
+   "evidence": "Speculum and soft brush supported; \"smooth, tube-shaped\" not retrieved.",
+   "url": "https://www.cancerresearchuk.org/about-cancer/cervical-cancer/getting-diagnosed/screening/your-cervical-screening-appointment",
+   "action": "edited",
+   "newSentence": "The clinician gently places a tool called a speculum in the vagina and uses a soft brush to collect cells from the cervix."
+  },
+  {
+   "id": "c10",
+   "sentence": "The test itself takes under five minutes, and the whole appointment is about ten minutes.",
+   "classification": "unsupported",
+   "evidence": "Cancer Research UK: test itself should take less than 5 minutes; appointment usually 10 to 15 minutes. \"About ten minutes\" differs.",
+   "url": "https://www.cancerresearchuk.org/about-cancer/cervical-cancer/getting-diagnosed/screening/your-cervical-screening-appointment",
+   "action": "edited",
+   "newSentence": "One source says the test itself should take less than five minutes, and the whole appointment usually lasts 10 to 15 minutes."
+  },
+  {
+   "id": "c11",
+   "sentence": "People can ask for a smaller speculum, ask to stop at any time, or ask to insert the speculum themselves.",
+   "classification": "unsupported",
+   "evidence": "Smaller speculum and inserting it yourself are supported; \"ask to stop at any time\" is not in retrieved text.",
+   "url": "https://www.cancerresearchuk.org/about-cancer/cervical-cancer/getting-diagnosed/screening/your-cervical-screening-appointment",
+   "action": "edited",
+   "newSentence": "People can ask for a smaller speculum or ask to insert the speculum themselves."
+  },
+  {
+   "id": "c12",
+   "sentence": "Light spotting for a few hours afterwards is normal.",
+   "classification": "supported",
+   "evidence": "Cancer Research UK: some spotting or light bleeding is very common and should go away after a few hours; bleeding that is not a period or after sex should be checked by a GP.",
+   "url": "https://www.nhs.uk/conditions/cervical-screening/what-happens-at-your-appointment/",
+   "action": "kept"
+  },
+  {
+   "id": "c13",
+   "sentence": "Current NHS practice tests the sample for high-risk HPV first.",
+   "classification": "supported",
+   "evidence": "NHS programme page: sample tested for HPV; HPV-positive samples get cytology triage.",
+   "url": "https://www.gov.uk/guidance/cervical-screening-programme-overview",
+   "action": "kept"
+  },
+  {
+   "id": "c14",
+   "sentence": "The NHS England guide says high-risk HPV can cause abnormal cell changes that may lead to cervical cancer.",
+   "classification": "supported",
+   "evidence": "NHS programme page: most HPV infections are transient; persistent HPV can lead to abnormal cells that may become cancer if untreated. Attribution to the \"NHS England guide\" specifically not confirmed.",
+   "url": "https://www.gov.uk/guidance/cervical-screening-programme-overview",
+   "action": "kept"
+  },
+  {
+   "id": "c15",
+   "sentence": "If HPV is found, the laboratory then looks more closely at the cells for changes.",
+   "classification": "supported",
+   "evidence": "GOV.UK: HPV-positive samples undergo cytology triage to see whether HPV has caused abnormal cell changes.",
+   "url": "https://www.gov.uk/guidance/cervical-screening-programme-overview",
+   "action": "kept"
+  },
+  {
+   "id": "c16",
+   "sentence": "If no HPV is found, the NHS says the risk of cervical cancer is very low, and routine screening is usually five years later.",
+   "classification": "unsupported",
+   "evidence": "Retrieved text says HPV negative means screening again in 5 years; \"risk very low\" and \"usually\" not retrieved.",
+   "url": "https://www.gov.uk/guidance/cervical-screening-programme-overview",
+   "action": "edited",
+   "newSentence": "If HPV is not found, the person is offered screening again in five years."
+  },
+  {
+   "id": "c17",
+   "sentence": "If HPV is found but the cells are normal, the person is usually retested in about 12 months.",
+   "classification": "supported",
+   "evidence": "GOV.UK: HPV-positive with negative cytology are offered yearly surveillance.",
+   "url": "https://www.gov.uk/guidance/cervical-screening-programme-overview",
+   "action": "kept"
+  },
+  {
+   "id": "c18",
+   "sentence": "If HPV continues after two years, an invitation for a colposcopy follows.",
+   "classification": "unsupported",
+   "evidence": "Not retrieved: nothing about two years of persistent HPV leading to colposcopy.",
+   "url": "https://www.gov.uk/guidance/cervical-screening-programme-overview",
+   "action": "removed"
+  },
+  {
+   "id": "c19",
+   "sentence": "If HPV is found with abnormal cells, the person is referred for a colposcopy.",
+   "classification": "supported",
+   "evidence": "GOV.UK: abnormal cells with HPV lead to referral to colposcopy.",
+   "url": "https://www.gov.uk/guidance/cervical-screening-programme-overview",
+   "action": "kept"
+  },
+  {
+   "id": "c20",
+   "sentence": "An unclear sample means a repeat test, which does not mean anything is wrong.",
+   "classification": "unsafe",
+   "evidence": "Search found no text on unclear results; a \"does not mean anything is wrong\" reassurance is unsafe unsourced. Cancer Research UK: the result letter tells you what to do if more tests are needed.",
+   "url": "https://www.cancerresearchuk.org/about-cancer/cervical-cancer/getting-diagnosed/screening/your-cervical-screening-appointment",
+   "action": "edited",
+   "newSentence": "If more tests are needed, the results letter says what to do next."
+  },
+  {
+   "id": "c21",
+   "sentence": "Results usually arrive by letter, and one source gives two weeks, sometimes longer.",
+   "classification": "unsupported",
+   "evidence": "Results by letter or telephone call (Cancer Research UK); no timeframe retrieved.",
+   "url": "https://www.cancerresearchuk.org/about-cancer/cervical-cancer/getting-diagnosed/screening/your-cervical-screening-appointment",
+   "action": "edited",
+   "newSentence": "Results are sent by letter or given by telephone, and the letter says what to do if more tests are needed."
+  },
+  {
+   "id": "c22",
+   "sentence": "A colposcopy is a closer look at the cervix, done in a hospital or clinic.",
+   "classification": "unsupported",
+   "evidence": "Colposcopy is the usual next step after an abnormal result (research text); \"hospital or clinic\" not retrieved.",
+   "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10403922/",
+   "action": "edited",
+   "newSentence": "A colposcopy is the usual next step after an abnormal screening result."
+  },
+  {
+   "id": "c23",
+   "sentence": "The NHS says most people who have one do not have cervical cancer.",
+   "classification": "unsupported",
+   "evidence": "No NHS text retrieved. A single Turkish study found CIN2 or worse in 13.5% of biopsies, not an NHS statement.",
+   "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10378482/",
+   "action": "edited",
+   "newSentence": "Cancer Research UK says cervical screening is not a test for cancer; it looks for HPV and cell changes."
+  },
+  {
+   "id": "c24",
+   "sentence": "Biopsy results grade the cell changes: low-grade changes usually need no immediate treatment, and high-grade changes are offered treatment to remove the cells.",
+   "classification": "unsupported",
+   "evidence": "Biopsy graded as CIN1, CIN2, CIN3 by a pathologist (research text). Treatment statements not retrieved.",
+   "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10378482/",
+   "action": "edited",
+   "newSentence": "A biopsy is examined by a pathologist, who grades any cell changes as CIN1, CIN2 or CIN3."
+  },
+  {
+   "id": "c25",
+   "sentence": "Unusual vaginal bleeding, such as between periods or after sex, needs a GP appointment, because screening is not meant for symptoms.",
+   "classification": "unsupported",
+   "evidence": "Cancer Research UK advises contacting the GP practice as soon as possible after bleeding between periods, after sex or after the menopause, or unusual discharge. The \"because\" causal clause not retrieved.",
+   "url": "https://www.cancerresearchuk.org/about-cancer/cervical-cancer/getting-diagnosed/screening/your-cervical-screening-appointment",
+   "action": "edited",
+   "newSentence": "Cancer Research UK advises that bleeding between periods, after sex or after the menopause, or unusual discharge, should be checked by a GP."
+  },
+  {
+   "id": "c26",
+   "sentence": "The NHS in England invites people with a cervix aged 25 to 64 for cervical screening.",
+   "classification": "supported",
+   "evidence": "GOV.UK: five-year intervals for 25 to 64 in England.",
+   "url": "https://www.gov.uk/guidance/cervical-screening-programme-overview",
+   "action": "kept"
+  },
+  {
+   "id": "c27",
+   "sentence": "The sample is tested first for high-risk human papillomavirus (HPV), the virus that can lead to cell changes.",
+   "classification": "supported",
+   "evidence": "NHS programme page: samples tested for HPV, persistent HPV can lead to cell changes.",
+   "url": "https://www.gov.uk/guidance/cervical-screening-programme-overview",
+   "action": "kept"
+  },
+  {
+   "id": "c28",
+   "sentence": "A negative HPV result means the risk of cervical cancer is very low, and the next routine test is usually in five years.",
+   "classification": "unsupported",
+   "evidence": "HPV negative means screening again in five years (supported); \"risk very low\" not retrieved.",
+   "url": "https://www.gov.uk/guidance/cervical-screening-programme-overview",
+   "action": "edited",
+   "newSentence": "A negative HPV result means the person is offered screening again in five years."
+  },
+  {
+   "id": "c29",
+   "sentence": "Most people who have a colposcopy do not have cervical cancer.",
+   "classification": "unsupported",
+   "evidence": "No NHS text retrieved (see c23).",
+   "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10378482/",
+   "action": "edited",
+   "newSentence": "Cancer Research UK says cervical screening is not a test for cancer; it looks for HPV and cell changes."
+  },
+  {
+   "id": "c30",
+   "sentence": "Cervical screening checks a sample from the cervix for high-risk HPV. This guide covers who is invited, the appointment and what each result means.",
+   "classification": "supported",
+   "evidence": "Summary: HPV-first testing supported by NHS programme page; scope statement.",
+   "url": "https://www.gov.uk/guidance/cervical-screening-programme-overview",
+   "action": "kept"
+  }
+ ],
+ "notes": "The search tool returns summaries, so nhs.uk text was not read verbatim; the 1 July 2025 transition details (who moved, who stays on three-year) should be verified on nhs.uk and gov.uk before publishing. Nothing retrieved on 12-month/24-month HPV follow-up wording beyond yearly surveillance, on unclear samples, result timing, or NHS statements about colposcopy and cancer. Extra facts: a person with a negative HPV result at their first test at 25 is next due in 5 years (https://www.gov.uk/guidance/cervical-screening-programme-overview); Cancer Research UK says cervical screening is not a test for cancer (https://www.cancerresearchuk.org/about-cancer/cervical-cancer/getting-diagnosed/screening)."
+}
