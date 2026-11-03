@@ -1,0 +1,231 @@
+{
+ "id": "joint-pain-causes-and-when-to-see-a-gp",
+ "searchesUsed": 8,
+ "counts": {
+  "supported": 13,
+  "textbook": 1,
+  "unsupported": 8,
+  "wrong": 1,
+  "unsafe": 0,
+  "unchecked": 0
+ },
+ "claims": [
+  {
+   "id": "c01",
+   "where": "body[0]",
+   "sentence": "The NHS joint pain page links pain after intense exercise to a sprain or strain.",
+   "classification": "unsupported",
+   "evidence": "Searches for the joint pain page returned no text linking pain after intense exercise to a sprain or strain (search summary said none of the sources addressed it).",
+   "url": "https://www.nhs.uk/symptoms/joint-pain/",
+   "action": "removed",
+   "newSentence": null
+  },
+  {
+   "id": "c02",
+   "where": "body[0]",
+   "sentence": "It links pain that is worse with walking, usually in people over 45, with osteoarthritis.",
+   "classification": "unsupported",
+   "evidence": "No retrieved text on 'worse with walking, usually over 45' for osteoarthritis.",
+   "url": "https://www.nhs.uk/symptoms/joint-pain/",
+   "action": "removed",
+   "newSentence": null
+  },
+  {
+   "id": "c03",
+   "where": "body[0]",
+   "sentence": "NHS 111 Wales describes osteoarthritis as the most common type of arthritis in the UK.",
+   "classification": "unsupported",
+   "evidence": "Searched specifically; retrieved 111 Wales osteoarthritis text did not say 'most common type of arthritis in the UK' (search summary: not found).",
+   "url": "https://111.wales.nhs.uk/osteoarthritis/",
+   "action": "removed",
+   "newSentence": null
+  },
+  {
+   "id": "c04",
+   "where": "body[0]",
+   "sentence": "Gout is a form of arthritis in which small crystals form inside and around the joints.",
+   "classification": "supported",
+   "evidence": "NHS inform: gout is a type of arthritis in which small crystals form inside and around the joints.",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/muscle-bone-and-joints/leg-and-foot-problems-and-conditions/gout/",
+   "action": "kept"
+  },
+  {
+   "id": "c05",
+   "where": "body[0]",
+   "sentence": "Rheumatoid arthritis is an autoimmune condition in which the immune system attacks the lining of the joints, usually in the hands, feet and wrists, with pain that is typically worse in the mornings or after inactivity.",
+   "classification": "unsupported",
+   "evidence": "111 Wales: RA is an autoimmune disease where the immune system targets the joints (synovium first affected); nhs.uk: stiffness often worse in the morning or after inactivity. 'Usually in hands, feet and wrists' not retrieved in this form.",
+   "url": "https://111.wales.nhs.uk/encyclopaedia/a/article/Rheumatoidarthritis/",
+   "action": "edited",
+   "newSentence": "Rheumatoid arthritis is an autoimmune condition in which the immune system targets the joints, with stiffness that is often worse in the morning or after a period of inactivity."
+  },
+  {
+   "id": "c06",
+   "where": "body[0]",
+   "sentence": "The NHS says rheumatoid arthritis is usually first felt in the small joints of the hands and feet.",
+   "classification": "supported",
+   "evidence": "NHS arthritis page: rheumatoid arthritis is usually first felt in the small joints of the hands and feet.",
+   "url": "https://www.nhs.uk/conditions/arthritis/",
+   "action": "kept"
+  },
+  {
+   "id": "c07",
+   "where": "body[0]",
+   "sentence": "The NHS arthritis overview says gout often affects the big toe joint, which can become painful, swollen and hot.",
+   "classification": "supported",
+   "evidence": "NHS: gout often affects the big toe joint, which can be painful, swollen and hot.",
+   "url": "https://www.nhs.uk/conditions/arthritis/",
+   "action": "kept"
+  },
+  {
+   "id": "c08",
+   "where": "body[0]",
+   "sentence": "Psoriatic arthritis is a long-term condition that causes joint pain, swelling and stiffness, and the NHS says it affects about 1 in 4 people who have the skin condition psoriasis.",
+   "classification": "wrong",
+   "evidence": "The 'about 1 in 4 people with psoriasis' figure came only from a Bradford hospital trust page; main NHS psoriatic arthritis page links it to psoriasis without a percentage. Sentence attributes it to the NHS.",
+   "url": "https://www.nhs.uk/conditions/psoriatic-arthritis/",
+   "action": "edited",
+   "newSentence": "Psoriatic arthritis causes joint pain, stiffness and swelling, and is linked with the skin condition psoriasis, which causes a red, scaly rash."
+  },
+  {
+   "id": "c09",
+   "where": "body[1]",
+   "sentence": "The NHS says to rest the joint but not stop moving it altogether, and that a pharmacist or GP can advise about painkillers.",
+   "classification": "supported",
+   "evidence": "Joint pain page: rest the affected joint where possible but do not stop moving it completely; ask a pharmacist or GP about painkillers.",
+   "url": "https://www.nhs.uk/symptoms/joint-pain/",
+   "action": "kept"
+  },
+  {
+   "id": "c10",
+   "where": "body[1]",
+   "sentence": "Losing weight and eating a balanced diet also help.",
+   "classification": "unsupported",
+   "evidence": "No retrieved joint pain page text on weight loss or diet. 111 Wales osteoarthritis page: being overweight often makes osteoarthritis worse by straining joints.",
+   "url": "https://111.wales.nhs.uk/osteoarthritis/",
+   "action": "edited",
+   "newSentence": "NHS 111 Wales says being overweight often makes osteoarthritis worse, because it puts extra strain on some joints."
+  },
+  {
+   "id": "c11",
+   "where": "body[1]",
+   "sentence": "For osteoarthritis the NHS says treatment focuses on exercise, weight management, pain relief and supportive measures such as hot or cold packs.",
+   "classification": "unsupported",
+   "evidence": "Retrieved text is 111 Wales (not the nhs.uk treatment page): exercise is one of the most important treatments; hot or cold packs can relieve symptoms in some people; weight matters. Pain relief and 'treatment focuses on' not retrieved; 'the NHS says' mis-attributes.",
+   "url": "https://111.wales.nhs.uk/osteoarthritis/",
+   "action": "edited",
+   "newSentence": "NHS 111 Wales describes exercise as one of the most important treatments for osteoarthritis, and says hot or cold packs can relieve symptoms in some people."
+  },
+  {
+   "id": "c12",
+   "where": "body[1]",
+   "sentence": "NHS 111 Wales says osteoarthritis has no cure but does not necessarily get worse over time.",
+   "classification": "supported",
+   "evidence": "111 Wales: osteoarthritis is long term and cannot be cured, but does not necessarily get any worse over time.",
+   "url": "https://111.wales.nhs.uk/osteoarthritis/",
+   "action": "kept"
+  },
+  {
+   "id": "c13",
+   "where": "body[2]",
+   "sentence": "The NHS suggests a GP appointment if joint pain stops normal activities or affects sleep, keeps getting worse or coming back, or has not improved after 2 weeks of treating it at home.",
+   "classification": "supported",
+   "evidence": "Search result summarising joint pain page: GP appointment if pain stops everyday life or disturbs sleep, not eased after two weeks of home treatment, and worsening or recurring pain listed.",
+   "url": "https://www.nhs.uk/symptoms/joint-pain/",
+   "action": "kept"
+  },
+  {
+   "id": "c14",
+   "where": "body[2]",
+   "sentence": "It also lists joints that stay stiff for more than 30 minutes after waking.",
+   "classification": "supported",
+   "evidence": "Joint pain page: joints that stay stiff for longer than half an hour after waking.",
+   "url": "https://www.nhs.uk/symptoms/joint-pain/",
+   "action": "kept"
+  },
+  {
+   "id": "c15",
+   "where": "body[2]",
+   "sentence": "For gout, the NHS advises seeing a GP for a first episode, or when the usual treatments are not helping.",
+   "classification": "supported",
+   "evidence": "NHS inform gout: contact GP for first symptoms of gout, or if usual treatments do not start working within a couple of days.",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/muscle-bone-and-joints/leg-and-foot-problems-and-conditions/gout/",
+   "action": "kept"
+  },
+  {
+   "id": "c16",
+   "where": "body[3]",
+   "sentence": "The NHS advises an urgent GP appointment or NHS 111 for severe pain and swelling in one joint that started suddenly.",
+   "classification": "supported",
+   "evidence": "NHS septic arthritis page: ask for an urgent GP appointment or get help from NHS 111 for severe joint pain, usually in 1 joint, that started suddenly; swelling also listed. Better URL is the septic arthritis page.",
+   "url": "https://www.nhs.uk/conditions/septic-arthritis/",
+   "action": "kept"
+  },
+  {
+   "id": "c17",
+   "where": "body[3]",
+   "sentence": "A warm, swollen joint that is hard to move, with a high temperature or feeling hot and shivery, may mean a joint infection called septic arthritis.",
+   "classification": "supported",
+   "evidence": "Septic arthritis page lists swelling, difficulty moving the joint, and joint pain with a high temperature or feeling hot, cold or shivery; joint pain page lists hot swollen skin or fever as urgent. Sentence itself names no route; the preceding sentence does.",
+   "url": "https://www.nhs.uk/conditions/septic-arthritis/",
+   "action": "kept"
+  },
+  {
+   "id": "c18",
+   "where": "body[4]",
+   "sentence": "A GP examines the joints for swelling, checks how easily they move and asks about symptoms.",
+   "classification": "supported",
+   "evidence": "RA diagnosis: GP does a physical examination, checking joints for swelling and how easily they move.",
+   "url": "https://www.nhs.uk/conditions/rheumatoid-arthritis/diagnosis/",
+   "action": "kept"
+  },
+  {
+   "id": "c19",
+   "where": "body[4]",
+   "sentence": "Blood tests such as ESR, CRP and a full blood count may be used, and X-rays or MRI scans may show inflammation and damage.",
+   "classification": "supported",
+   "evidence": "RA diagnosis: ESR, CRP and full blood count among blood tests; X-rays and MRI can show inflammation and damage. Source is about rheumatoid arthritis; OA usually needs no tests.",
+   "url": "https://www.nhs.uk/conditions/rheumatoid-arthritis/diagnosis/",
+   "action": "kept"
+  },
+  {
+   "id": "c20",
+   "where": "body[4]",
+   "sentence": "There is no single definitive test for rheumatoid arthritis, so diagnosis can be difficult.",
+   "classification": "unsupported",
+   "evidence": "111 Wales: no blood test can definitively prove or rule out RA, though several can show indications. 'So diagnosis can be difficult' not stated.",
+   "url": "https://111.wales.nhs.uk/encyclopaedia/a/article/Rheumatoidarthritis/",
+   "action": "edited",
+   "newSentence": "No blood test can definitively prove or rule out rheumatoid arthritis, although several tests can show signs of it."
+  },
+  {
+   "id": "c21",
+   "where": "body[4]",
+   "sentence": "If rheumatoid arthritis is suspected, the GP usually refers the person to a rheumatologist.",
+   "classification": "supported",
+   "evidence": "NHS RA diagnosis: if the GP thinks you have rheumatoid arthritis they will refer you to a specialist (rheumatologist).",
+   "url": "https://www.nhs.uk/conditions/rheumatoid-arthritis/diagnosis/",
+   "action": "kept"
+  },
+  {
+   "id": "c22",
+   "where": "body[4]",
+   "sentence": "A rheumatologist is a doctor who specialises in conditions of the joints and immune system.",
+   "classification": "textbook",
+   "evidence": "Plain definition of a rheumatologist.",
+   "url": "",
+   "action": "kept"
+  },
+  {
+   "id": "c23",
+   "where": "summary",
+   "sentence": "Joint pain is often osteoarthritis, injury or gout, and a sudden hot, swollen joint with fever needs an urgent GP appointment or NHS 111.",
+   "classification": "unsupported",
+   "evidence": "'Often osteoarthritis, injury or gout' not supported (no frequency data retrieved). Urgent route (GP or NHS 111 for hot swollen joint with fever) is supported by septic arthritis page.",
+   "url": "https://www.nhs.uk/conditions/septic-arthritis/",
+   "action": "edited",
+   "newSentence": "Joint pain has many causes, including osteoarthritis, injury and gout, and the NHS advises an urgent GP appointment or NHS 111 for a hot, swollen joint with a fever."
+  }
+ ],
+ "notes": "Budget of 8 searches used. Search tool is weak on the nhs.uk joint pain page itself; its content was only seen via search summaries. Body[0] sentences 1-3 could not be found and are removed (a retry with a hospital/Versus Arthritis source could restore OA 'over 45' if wanted). The psoriatic 1-in-4 figure is from a Bradford trust page, not the NHS. Urgent-care sentence (c16) is better cited to the septic arthritis page; the joint pain page also lists A&E/999 for injury, inability to bear weight or a displaced joint, which the body does not mention - consider adding to keep the red-flag route complete. nhsinform.scot (NHS Scotland) used for gout; 111 Wales pages appear several years old. Diagnosis sentences are sourced from rheumatoid arthritis pages; for osteoarthritis tests are usually not needed. Site's own symptom/condition pages were not checked."
+}
