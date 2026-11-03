@@ -1,0 +1,999 @@
+{
+ "id": "kidney-infection",
+ "searchesUsed": 13,
+ "counts": {
+  "supported": 85,
+  "textbook": 1,
+  "unsupported": 33,
+  "wrong": 2,
+  "unsafe": 2,
+  "unchecked": 0
+ },
+ "claims": [
+  {
+   "id": "c01",
+   "classification": "supported",
+   "evidence": "FIRST-PASS [definition: kidney infection also called pyelonephritis, a UTI affecting one or both kidneys]. Retrieved: NIDDK definition and NHS: a kidney infection is a type of UTI; pyelonephritis is the medical name",
+   "url": "https://www.niddk.nih.gov/health-information/urologic-diseases/kidney-infection-pyelonephritis",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c02",
+   "classification": "supported",
+   "evidence": "FIRST-PASS [overview: type of UTI involving one or both kidneys]. Retrieved: NHS: kidney infection is a type of UTI",
+   "url": "https://www.nhs.uk/conditions/kidney-infection/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c03",
+   "classification": "supported",
+   "evidence": "FIRST-PASS [overview: main signs back/side pain, nausea, fever; often brought on by cystitis]. Retrieved: NHS symptoms list side/lower back pain, fever, feeling sick; NHS: often caused by cystitis",
+   "url": "https://www.nhs.uk/conditions/kidney-infection/symptoms/",
+   "action": "edited",
+   "newSentence": "The NHS lists pain in the side or lower back, fever and feeling sick among its symptoms, and says it is often caused by cystitis, a bladder infection."
+  },
+  {
+   "id": "c04",
+   "classification": "unsupported",
+   "evidence": "FIRST-PASS [overview: more common in women, children, pregnancy and older people]. Retrieved: Retrieved: much more common in women (NHS), common in pregnancy (NIDDK); children and older people as groups not returned",
+   "url": "https://www.niddk.nih.gov/health-information/urologic-diseases/kidney-infection-pyelonephritis/definition-facts",
+   "action": "edited",
+   "newSentence": "It is much more common in women and is also common during pregnancy."
+  },
+  {
+   "id": "c05",
+   "classification": "supported",
+   "evidence": "FIRST-PASS [overview: untreated can lead to sepsis, most recover fully when treatment prompt]. Retrieved: NHS: untreated infection can spread to bloodstream; NIDDK: sepsis uncommon but life threatening; full recovery if treatment prompt (NHS)",
+   "url": "https://www.nhs.uk/conditions/kidney-infection/treatment/",
+   "action": "edited",
+   "newSentence": "If it is not treated it can lead to sepsis, but most people make a full recovery when treatment starts promptly."
+  },
+  {
+   "id": "c06",
+   "classification": "supported",
+   "evidence": "FIRST-PASS [causes: bacteria often E. coli get into urethra]. Retrieved: NHS: bacteria, often E. coli, get into the urethra",
+   "url": "https://www.nhs.uk/conditions/kidney-infection/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c07",
+   "classification": "supported",
+   "evidence": "FIRST-PASS [causes: most begin as bladder infection spreading upwards]. Retrieved: NHS/NIDDK: most cases begin as bladder infection",
+   "url": "https://www.nhs.uk/conditions/kidney-infection/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c08",
+   "classification": "unsupported",
+   "evidence": "FIRST-PASS [causes: bacteria reach kidneys through bloodstream (less commonly)]. Retrieved: Not returned by any retrieved text this pass",
+   "url": "https://www.nhs.uk/conditions/kidney-infection/",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c09",
+   "classification": "supported",
+   "evidence": "FIRST-PASS [causes: rarely follows surgery]. Retrieved: NIDDK: kidney infection after surgery is rare",
+   "url": "https://www.niddk.nih.gov/health-information/urologic-diseases/kidney-infection-pyelonephritis/symptoms-causes",
+   "action": "edited",
+   "newSentence": "Kidney infection after surgery is rare."
+  },
+  {
+   "id": "c10",
+   "classification": "supported",
+   "evidence": "FIRST-PASS [causes: some start in the kidney itself eg stone or abnormality]. Retrieved: NHS: some start without bladder infection, from a kidney problem such as stones; abnormality in NHS trust pages",
+   "url": "https://www.nhs.uk/conditions/kidney-infection/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c11",
+   "classification": "supported",
+   "evidence": "FIRST-PASS [riskFactors: being a woman, shorter urethra]. Retrieved: NHS: much more common in women, attributed to shorter urethra",
+   "url": "https://www.nhs.uk/conditions/kidney-infection/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c12",
+   "classification": "unsupported",
+   "evidence": "FIRST-PASS [riskFactors: pregnancy, childhood and older age]. Retrieved: NIDDK: pregnancy; childhood/older age as groups not returned",
+   "url": "https://www.niddk.nih.gov/health-information/urologic-diseases/kidney-infection-pyelonephritis/symptoms-causes",
+   "action": "edited",
+   "newSentence": "Pregnancy."
+  },
+  {
+   "id": "c13",
+   "classification": "unsupported",
+   "evidence": "FIRST-PASS [riskFactors: suppressed immune system from cancer or steroid/chemotherapy]. Retrieved: NHS says weakened immune system; the examples were not returned",
+   "url": "https://www.nhs.uk/conditions/kidney-infection/",
+   "action": "edited",
+   "newSentence": "A weakened immune system."
+  },
+  {
+   "id": "c14",
+   "classification": "unsupported",
+   "evidence": "FIRST-PASS [riskFactors: poorly controlled diabetes]. Retrieved: NHS and NIDDK say diabetes; the qualifier was not returned",
+   "url": "https://www.niddk.nih.gov/health-information/urologic-diseases/kidney-infection-pyelonephritis/symptoms-causes",
+   "action": "edited",
+   "newSentence": "Diabetes."
+  },
+  {
+   "id": "c15",
+   "classification": "supported",
+   "evidence": "FIRST-PASS [riskFactors: kidney stone or abnormality]. Retrieved: NHS kidney problem such as stones; abnormality in NHS trust pages",
+   "url": "https://www.nhs.uk/conditions/kidney-infection/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c16",
+   "classification": "supported",
+   "evidence": "FIRST-PASS [riskFactors: blockage such as enlarged prostate]. Retrieved: NIDDK: urinary blockage such as kidney stone or enlarged prostate raises risk",
+   "url": "https://www.niddk.nih.gov/health-information/urologic-diseases/kidney-infection-pyelonephritis/symptoms-causes",
+   "action": "edited",
+   "newSentence": "A urinary blockage such as a kidney stone or an enlarged prostate."
+  },
+  {
+   "id": "c17",
+   "classification": "supported",
+   "evidence": "FIRST-PASS [riskFactors: constipation]. Retrieved: NHS trust leaflets: constipation can increase chances of bladder or kidney infection (not on main NHS page in retrieval)",
+   "url": "https://www.worcsacute.nhs.uk/leaflets/kidney-infection-pyelonephritis/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c18",
+   "classification": "supported",
+   "evidence": "FIRST-PASS [signs: fever and chills]. Retrieved: NIDDK: fever, chills; NHS: shivering",
+   "url": "https://www.niddk.nih.gov/health-information/urologic-diseases/kidney-infection-pyelonephritis/symptoms-causes",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c19",
+   "classification": "supported",
+   "evidence": "FIRST-PASS [signs: pain in side or lower back]. Retrieved: NIDDK: back, side or groin pain; NHS: side, lower back or genitals",
+   "url": "https://www.niddk.nih.gov/health-information/urologic-diseases/kidney-infection-pyelonephritis/symptoms-causes",
+   "action": "edited",
+   "newSentence": "Pain in the side, lower back or groin."
+  },
+  {
+   "id": "c20",
+   "classification": "supported",
+   "evidence": "FIRST-PASS [signs: cloudy urine or blood in urine]. Retrieved: NHS: dark or cloudy pee; blood in pee in urgent list",
+   "url": "https://www.nhs.uk/conditions/kidney-infection/",
+   "action": "edited",
+   "newSentence": "Dark or cloudy urine, or blood in the urine."
+  },
+  {
+   "id": "c21",
+   "classification": "supported",
+   "evidence": "FIRST-PASS [signs: confusion in older people]. Retrieved: NHS: in older people confusion can be an early sign",
+   "url": "https://www.nhs.uk/conditions/kidney-infection/symptoms/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c22",
+   "classification": "supported",
+   "evidence": "FIRST-PASS [signs: very young children high temperature may be only sign]. Retrieved: NIDDK/NHS: children younger than 2 may only have high fever",
+   "url": "https://www.niddk.nih.gov/health-information/urologic-diseases/kidney-infection-pyelonephritis/symptoms-causes",
+   "action": "edited",
+   "newSentence": "In children younger than 2 years, a high temperature may be the only sign."
+  },
+  {
+   "id": "c23",
+   "classification": "supported",
+   "evidence": "FIRST-PASS [complications: sepsis life threatening]. Retrieved: NIDDK: uncommon but could lead to sepsis, life threatening",
+   "url": "https://www.niddk.nih.gov/health-information/urologic-diseases/kidney-infection-pyelonephritis/symptoms-causes",
+   "action": "edited",
+   "newSentence": "Sepsis, which is uncommon but can be life threatening."
+  },
+  {
+   "id": "c24",
+   "classification": "unsupported",
+   "evidence": "FIRST-PASS [complications: kidney abscess, which is rare]. Retrieved: Clinical reviews list renal abscess as a complication; \"rare\" not stated in retrieved text",
+   "url": "https://www.nice.org.uk/guidance/ng111/chapter/summary-of-the-evidence",
+   "action": "edited",
+   "newSentence": "Kidney abscess, which clinical reviews list as a complication."
+  },
+  {
+   "id": "c25",
+   "classification": "unsupported",
+   "evidence": "FIRST-PASS [complications: some permanent damage to kidney tissue]. Retrieved: NIDDK summary: rare kidney scarring that may progress to chronic kidney disease",
+   "url": "https://www.niddk.nih.gov/health-information/urologic-diseases/kidney-infection-pyelonephritis",
+   "action": "edited",
+   "newSentence": "Kidney scarring, which is rare and may progress to chronic kidney disease."
+  },
+  {
+   "id": "c26",
+   "classification": "supported",
+   "evidence": "FIRST-PASS [complications: impaired kidney function or kidney failure]. Retrieved: NICE: complications include impaired renal function or renal failure",
+   "url": "https://www.nice.org.uk/guidance/ng111/chapter/summary-of-the-evidence",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c27",
+   "classification": "supported",
+   "evidence": "FIRST-PASS [complications: preterm labour in pregnancy]. Retrieved: NICE: complications include preterm labour in pregnancy",
+   "url": "https://www.nice.org.uk/guidance/ng111/chapter/summary-of-the-evidence",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c28",
+   "classification": "supported",
+   "evidence": "FIRST-PASS [diagnosis: history, exam, lab and imaging tests]. Retrieved: NIDDK: medical history, physical exam, lab tests, may add imaging",
+   "url": "https://www.niddk.nih.gov/health-information/urologic-diseases/kidney-infection-pyelonephritis",
+   "action": "edited",
+   "newSentence": "Clinicians use the history of symptoms, a physical examination and laboratory tests, and may add imaging, according to the NIDDK."
+  },
+  {
+   "id": "c29",
+   "classification": "supported",
+   "evidence": "FIRST-PASS [diagnosis: dipstick on urine sample]. Retrieved: NHS: GP can run dipstick test on urine to show if infection likely",
+   "url": "https://www.nhs.uk/conditions/kidney-infection/",
+   "action": "edited",
+   "newSentence": "A GP can use a dipstick test on a urine sample to show whether a kidney infection is likely."
+  },
+  {
+   "id": "c30",
+   "classification": "supported",
+   "evidence": "FIRST-PASS [diagnosis: lab identifies bacterium and effective antibiotics]. Retrieved: NHS: lab testing identifies the bacterium and which antibiotics will work",
+   "url": "https://www.nhs.uk/conditions/kidney-infection/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c31",
+   "classification": "unsupported",
+   "evidence": "FIRST-PASS [diagnosis: blood tests check for serious infection]. Retrieved: Only retrieved: hospital patients have regular blood and urine tests to check health and antibiotic effect",
+   "url": "https://www.nhs.uk/conditions/kidney-infection/treatment/",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c32",
+   "classification": "supported",
+   "evidence": "FIRST-PASS [diagnosis: treatment starts before lab results return]. Retrieved: NHS: results may take some days so treatment started straight away",
+   "url": "https://www.nhs.uk/conditions/kidney-infection/",
+   "action": "edited",
+   "newSentence": "Because results can take some days, treatment usually starts straight away."
+  },
+  {
+   "id": "c33",
+   "classification": "supported",
+   "evidence": "FIRST-PASS [diagnosis: men routinely investigated further]. Retrieved: NHS: standard practice to investigate all men further as it is much rarer in men",
+   "url": "https://www.nhs.uk/conditions/kidney-infection/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c34",
+   "classification": "supported",
+   "evidence": "FIRST-PASS [treatment: antibiotics main treatment, by mouth, drip or both]. Retrieved: NHS: main treatment antibiotics; drip in hospital then switch to tablets",
+   "url": "https://www.nhs.uk/conditions/kidney-infection/treatment/",
+   "action": "edited",
+   "newSentence": "Antibiotics are the main treatment."
+  },
+  {
+   "id": "c35",
+   "classification": "supported",
+   "evidence": "FIRST-PASS [treatment: most people treated at home]. Retrieved: NHS: most can be treated at home with antibiotics, possibly painkillers",
+   "url": "https://www.nhs.uk/conditions/kidney-infection/treatment/",
+   "action": "edited",
+   "newSentence": "The NHS says most people can be treated at home with a course of antibiotics, and possibly painkillers."
+  },
+  {
+   "id": "c36",
+   "classification": "supported",
+   "evidence": "FIRST-PASS [treatment: long-term condition or pregnant may need drip in hospital]. Retrieved: NHS: long-term condition or pregnant may need hospital antibiotics through a drip",
+   "url": "https://www.nhs.uk/conditions/kidney-infection/treatment/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c37",
+   "classification": "unsupported",
+   "evidence": "FIRST-PASS [treatment: antibiotic may be changed per lab results]. Retrieved: Not returned in retrieved text",
+   "url": "https://www.nhs.uk/conditions/kidney-infection/treatment/",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c38",
+   "classification": "unsupported",
+   "evidence": "FIRST-PASS [treatment: blockage such as stone may need procedure]. Retrieved: Not returned in retrieved text",
+   "url": "https://www.nhs.uk/conditions/kidney-infection/treatment/",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c39",
+   "classification": "unsupported",
+   "evidence": "FIRST-PASS [treatment: paracetamol, rest and plenty of fluids usual self-care]. Retrieved: NHS: paracetamol; NICE: paracetamol and adequate fluid; rest not returned",
+   "url": "https://www.nice.org.uk/guidance/ng111/resources/visual-summary-pdf-6544161037",
+   "action": "edited",
+   "newSentence": "The NHS advises paracetamol for pain and a high temperature."
+  },
+  {
+   "id": "c40",
+   "classification": "supported",
+   "evidence": "FIRST-PASS [treatment: ibuprofen not usually recommended because of kidney function]. Retrieved: NHS: NSAIDs not normally recommended, may increase risk of further kidney problems",
+   "url": "https://www.nhs.uk/conditions/kidney-infection/treatment/",
+   "action": "edited",
+   "newSentence": "...anti-inflammatory painkillers such as ibuprofen are not normally recommended because they may increase the risk of further kidney problems."
+  },
+  {
+   "id": "c41",
+   "classification": "supported",
+   "evidence": "FIRST-PASS [prevention: plain water, going promptly, emptying bladder after sex, wiping front to back]. Retrieved: NHS UTI page: fluids mainly water, wipe front to back, empty bladder fully and do not hold urine; after-sex voiding in NHS trust leaflets",
+   "url": "https://www.nhs.uk/conditions/urinary-tract-infections-utis/",
+   "action": "edited",
+   "newSentence": "The NHS says drinking plenty of fluids, mainly water, not holding urine in and wiping from front to back are ways to help prevent urinary tract infections. NHS hospital leaflets add emptying the bladder after sex..."
+  },
+  {
+   "id": "c42",
+   "classification": "supported",
+   "evidence": "FIRST-PASS [prevention: treating constipation also helps]. Retrieved: NHS trust leaflets: treat constipation promptly",
+   "url": "https://www.worcsacute.nhs.uk/leaflets/kidney-infection-pyelonephritis/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c43",
+   "classification": "supported",
+   "evidence": "FIRST-PASS [prevention: GP may prescribe low-dose antibiotics for repeat infections]. Retrieved: NHS UTI page and NHS surgery page: clinician may prescribe low-dose antibiotic when UTIs keep returning",
+   "url": "https://www.nhs.uk/conditions/urinary-tract-infections-utis/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c44",
+   "classification": "supported",
+   "evidence": "FIRST-PASS [seekCare: 999/A&E for confusion or drowsiness]. Retrieved: NHS: confusion, drowsiness, difficulty speaking, call 999 or A&E",
+   "url": "https://www.nhs.uk/conditions/kidney-infection/",
+   "action": "edited",
+   "newSentence": "Call 999 or go to A&E now if there is confusion, drowsiness or difficulty speaking."
+  },
+  {
+   "id": "c45",
+   "classification": "supported",
+   "evidence": "FIRST-PASS [seekCare: urgent GP / NHS 111 for very high/low temp, lower tummy/back pain, blood in urine, pregnancy]. Retrieved: NHS: also sickness and not having peed all day; call 111 if cannot reach GP or worsening",
+   "url": "https://www.nhs.uk/conditions/kidney-infection/",
+   "action": "edited",
+   "newSentence": "Ask for an urgent GP appointment or get help from NHS 111 for ... sickness, not having peed all day, or pregnancy with these symptoms."
+  },
+  {
+   "id": "c46",
+   "classification": "unsupported",
+   "evidence": "FIRST-PASS [seekCare: see a GP if fever with persistent tummy/back/genital pain]. Retrieved: Retrieved GP advice is: UTI symptoms not improved after a few days, or persisting after antibiotics",
+   "url": "https://www.nhs.uk/conditions/kidney-infection/",
+   "action": "edited",
+   "newSentence": "The NHS says to see a GP when symptoms of a urinary tract infection have not improved after a few days or persist after antibiotics."
+  },
+  {
+   "id": "c47",
+   "classification": "unsupported",
+   "evidence": "FIRST-PASS [seekCare: contact GP straight away if child may have kidney infection]. Retrieved: Retrieved only as urgent GP appointment or NHS 111 for a child who may have kidney infection (ambiguous summary)",
+   "url": "https://www.nhs.uk/conditions/kidney-infection/",
+   "action": "edited",
+   "newSentence": "For a child who may have a kidney infection, the NHS advice is an urgent GP appointment or help from NHS 111."
+  },
+  {
+   "id": "c48",
+   "classification": "unsupported",
+   "evidence": "FIRST-PASS [s1: NHS says symptoms develop quite quickly over hours or days]. Retrieved: Retrieved (NIDDK summary): usually within several hours or over a day",
+   "url": "https://www.niddk.nih.gov/health-information/urologic-diseases/kidney-infection-pyelonephritis/symptoms-causes",
+   "action": "edited",
+   "newSentence": "The NIDDK says kidney infection symptoms usually develop within several hours or over a day."
+  },
+  {
+   "id": "c49",
+   "classification": "supported",
+   "evidence": "FIRST-PASS [s1: common signs side/back discomfort, fever, chills, tiredness, appetite, nausea, diarrhoea]. Retrieved: NHS symptoms page: pain in side/lower back/genitals, high temp, shivering, weak/tired, appetite loss, sick, diarrhoea",
+   "url": "https://www.nhs.uk/conditions/kidney-infection/symptoms/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c50",
+   "classification": "supported",
+   "evidence": "FIRST-PASS [s1: urinary symptoms painful peeing, urgency, cloudy urine often appear]. Retrieved: NHS: burning when peeing, urgency, dark or cloudy pee are UTI symptoms",
+   "url": "https://www.nhs.uk/conditions/kidney-infection/",
+   "action": "edited",
+   "newSentence": "Changes in urination, such as burning when peeing, needing to pee more urgently and dark or cloudy urine, can also occur."
+  },
+  {
+   "id": "c51",
+   "classification": "supported",
+   "evidence": "FIRST-PASS [s1: typical pattern fever, flank pain, nausea/vomiting, not everyone has all]. Retrieved: Clinical reviews and NIDDK: classic combination, not all need be present",
+   "url": "https://www.niddk.nih.gov/health-information/urologic-diseases/kidney-infection-pyelonephritis/symptoms-causes",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c52",
+   "classification": "textbook",
+   "evidence": "FIRST-PASS [s1: flank (the side of the back)]. Retrieved: Plain anatomical definition",
+   "url": "https://www.niddk.nih.gov/health-information/urologic-diseases/kidney-infection-pyelonephritis/symptoms-causes",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c53",
+   "classification": "supported",
+   "evidence": "FIRST-PASS [s1: older people confusion]. Retrieved: NHS: confusion can be an early sign in older people",
+   "url": "https://www.nhs.uk/conditions/kidney-infection/symptoms/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c54",
+   "classification": "supported",
+   "evidence": "FIRST-PASS [s1: child may have only a high temperature]. Retrieved: NIDDK/NHS: under 2 may only have high temperature",
+   "url": "https://www.niddk.nih.gov/health-information/urologic-diseases/kidney-infection-pyelonephritis/symptoms-causes",
+   "action": "edited",
+   "newSentence": "In children younger than 2 years a kidney infection may cause only a high temperature"
+  },
+  {
+   "id": "c55",
+   "classification": "supported",
+   "evidence": "FIRST-PASS [s1: child may also feed poorly]. Retrieved: NHS pages: babies may be irritable and not feed properly",
+   "url": "https://www.nhs.uk/conditions/kidney-infection/",
+   "action": "edited",
+   "newSentence": "...NHS pages say babies may also be irritable and not feed properly."
+  },
+  {
+   "id": "c56",
+   "classification": "unsupported",
+   "evidence": "FIRST-PASS [s1: child may gain weight poorly]. Retrieved: Not returned",
+   "url": "https://www.nhs.uk/conditions/kidney-infection/",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c57",
+   "classification": "supported",
+   "evidence": "FIRST-PASS [s2: bacteria often E. coli into urethra]. Retrieved: NHS cause text",
+   "url": "https://www.nhs.uk/conditions/kidney-infection/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c58",
+   "classification": "supported",
+   "evidence": "FIRST-PASS [s2: most start in bladder; often described as complication of cystitis]. Retrieved: NHS: often caused by cystitis; Worcestershire leaflet: complication of cystitis",
+   "url": "https://www.worcsacute.nhs.uk/leaflets/kidney-infection-pyelonephritis/",
+   "action": "edited",
+   "newSentence": "...and the NHS says it is often caused by cystitis, a bladder infection."
+  },
+  {
+   "id": "c59",
+   "classification": "unsupported",
+   "evidence": "FIRST-PASS [s2: less commonly via blood]. Retrieved: Not returned",
+   "url": "https://www.nhs.uk/conditions/kidney-infection/",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c60",
+   "classification": "supported",
+   "evidence": "FIRST-PASS [s2: rarely follows an operation]. Retrieved: NIDDK: after surgery is rare",
+   "url": "https://www.niddk.nih.gov/health-information/urologic-diseases/kidney-infection-pyelonephritis/symptoms-causes",
+   "action": "edited",
+   "newSentence": "The NIDDK says a kidney infection after surgery is rare."
+  },
+  {
+   "id": "c61",
+   "classification": "supported",
+   "evidence": "FIRST-PASS [s2: problem in the kidney itself eg stone or abnormality]. Retrieved: NHS: kidney problem such as stones",
+   "url": "https://www.nhs.uk/conditions/kidney-infection/",
+   "action": "edited",
+   "newSentence": "Sometimes a problem in the kidney itself is behind it, such as a kidney stone."
+  },
+  {
+   "id": "c62",
+   "classification": "supported",
+   "evidence": "FIRST-PASS [s2: blockage such as stone or enlarged prostate can be the cause]. Retrieved: NIDDK: urinary blockage raises risk (not \"the cause\")",
+   "url": "https://www.niddk.nih.gov/health-information/urologic-diseases/kidney-infection-pyelonephritis/symptoms-causes",
+   "action": "edited",
+   "newSentence": "A urinary blockage, such as a kidney stone or an enlarged prostate, can raise the risk."
+  },
+  {
+   "id": "c63",
+   "classification": "supported",
+   "evidence": "FIRST-PASS [s2: women more often, shorter urethra]. Retrieved: NHS",
+   "url": "https://www.nhs.uk/conditions/kidney-infection/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c64",
+   "classification": "unsupported",
+   "evidence": "FIRST-PASS [s2: also more common in children, pregnancy, older people]. Retrieved: Pregnancy returned (NIDDK); children/older people not",
+   "url": "https://www.niddk.nih.gov/health-information/urologic-diseases/kidney-infection-pyelonephritis/symptoms-causes",
+   "action": "edited",
+   "newSentence": "The NIDDK says kidney infections are also common during pregnancy."
+  },
+  {
+   "id": "c65",
+   "classification": "unsupported",
+   "evidence": "FIRST-PASS [s2: weakened immune system and poorly controlled diabetes named by NHS]. Retrieved: NHS: kidney stones, diabetes, weakened immune system; qualifier not returned",
+   "url": "https://www.nhs.uk/conditions/kidney-infection/",
+   "action": "edited",
+   "newSentence": "The NHS lists kidney stones, diabetes and a weakened immune system as making infection more likely."
+  },
+  {
+   "id": "c66",
+   "classification": "supported",
+   "evidence": "FIRST-PASS [s3: story, exam, lab and imaging tests according to NIDDK]. Retrieved: NIDDK: history, exam, lab tests, may add imaging",
+   "url": "https://www.niddk.nih.gov/health-information/urologic-diseases/kidney-infection-pyelonephritis",
+   "action": "edited",
+   "newSentence": "...laboratory tests, according to the NIDDK, which says imaging may be added."
+  },
+  {
+   "id": "c67",
+   "classification": "supported",
+   "evidence": "FIRST-PASS [s3: NHS GP dipstick test]. Retrieved: NHS",
+   "url": "https://www.nhs.uk/conditions/kidney-infection/",
+   "action": "edited",
+   "newSentence": "The NHS says a GP can use a dipstick test on a urine sample to show whether a kidney infection is likely."
+  },
+  {
+   "id": "c68",
+   "classification": "supported",
+   "evidence": "FIRST-PASS [s3: lab identifies bacterium and tests antibiotics]. Retrieved: NHS",
+   "url": "https://www.nhs.uk/conditions/kidney-infection/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c69",
+   "classification": "unsupported",
+   "evidence": "FIRST-PASS [s3: urine tests can show blood and white blood cells]. Retrieved: Not returned",
+   "url": "https://www.nhs.uk/conditions/kidney-infection/",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c70",
+   "classification": "unsupported",
+   "evidence": "FIRST-PASS [s3: blood tests check for serious infection]. Retrieved: Not returned for diagnosis",
+   "url": "https://www.nhs.uk/conditions/kidney-infection/",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c71",
+   "classification": "supported",
+   "evidence": "FIRST-PASS [s3: treatment starts before lab results come back]. Retrieved: NHS",
+   "url": "https://www.nhs.uk/conditions/kidney-infection/",
+   "action": "edited",
+   "newSentence": "Because the results can take some days, treatment is usually started straight away."
+  },
+  {
+   "id": "c72",
+   "classification": "supported",
+   "evidence": "FIRST-PASS [s3: men routinely investigated further]. Retrieved: NHS",
+   "url": "https://www.nhs.uk/conditions/kidney-infection/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c73",
+   "classification": "unsupported",
+   "evidence": "FIRST-PASS [s3: other causes such as stones considered when blood in urine]. Retrieved: Not returned",
+   "url": "https://www.nhs.uk/conditions/kidney-infection/",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c74",
+   "classification": "supported",
+   "evidence": "FIRST-PASS [s4: antibiotics main treatment; most treated at home with tablets or capsules]. Retrieved: NHS",
+   "url": "https://www.nhs.uk/conditions/kidney-infection/treatment/",
+   "action": "edited",
+   "newSentence": "...the NHS says most people can be treated at home with a course of antibiotics, and possibly painkillers."
+  },
+  {
+   "id": "c75",
+   "classification": "supported",
+   "evidence": "FIRST-PASS [s4: long-term condition or pregnant drip in hospital]. Retrieved: NHS",
+   "url": "https://www.nhs.uk/conditions/kidney-infection/treatment/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c76",
+   "classification": "unsupported",
+   "evidence": "FIRST-PASS [s4: NICE sends young babies to paediatric specialist for IV antibiotics]. Retrieved: NICE NG111 draft/NG224: children under 3 months go to a paediatric specialist; IV wording only in a draft",
+   "url": "https://www.nice.org.uk/guidance/ng111/chapter/recommendations",
+   "action": "removed",
+   "newSentence": "(replaced by NICE oral-first / IV-for-vomiting-or-severely-unwell sentence)"
+  },
+  {
+   "id": "c77",
+   "classification": "wrong",
+   "evidence": "FIRST-PASS [s4: adults who are pregnant or significantly dehydrated are among those referred to hospital]. Retrieved: NG111: refer adults with signs of more serious illness such as sepsis; only CONSIDER referral if significantly dehydrated/unable to take oral fluids, pregnant, or higher complication risk",
+   "url": "https://www.nice.org.uk/guidance/ng111/chapter/recommendations",
+   "action": "removed",
+   "newSentence": "NICE guidance on antibiotic prescribing gives antibiotics by mouth first when a person can take them and is not severely unwell. It gives antibiotics into a vein for people who are vomiting, cannot take oral antibiotics or are severely unwell."
+  },
+  {
+   "id": "c78",
+   "classification": "unsupported",
+   "evidence": "FIRST-PASS [s4: antibiotic may be changed per lab results]. Retrieved: Not returned",
+   "url": "https://www.nhs.uk/conditions/kidney-infection/treatment/",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c79",
+   "classification": "supported",
+   "evidence": "FIRST-PASS [s4: NIDDK stresses finishing full course even when symptoms fade; incomplete courses promote resistance]. Retrieved: NIDDK: finish antibiotics as prescribed; incomplete courses can contribute to resistance (\"even when symptoms fade\" not verbatim)",
+   "url": "https://www.niddk.nih.gov/health-information/urologic-diseases/kidney-infection-pyelonephritis/treatment",
+   "action": "edited",
+   "newSentence": "The NIDDK says incomplete courses of antibiotics can contribute to antibiotic resistance."
+  },
+  {
+   "id": "c80",
+   "classification": "unsupported",
+   "evidence": "FIRST-PASS [s4: blockage may need procedure or surgery]. Retrieved: Not returned",
+   "url": "https://www.nhs.uk/conditions/kidney-infection/treatment/",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c81",
+   "classification": "unsupported",
+   "evidence": "FIRST-PASS [s4: paracetamol, rest, plenty of fluids usual measures]. Retrieved: NHS paracetamol; NICE paracetamol and adequate fluid; rest not returned",
+   "url": "https://www.nice.org.uk/guidance/ng111/resources/visual-summary-pdf-6544161037",
+   "action": "edited",
+   "newSentence": "The NHS advises paracetamol to reduce a high temperature and relieve pain, and NICE self-care advice includes paracetamol for pain and an adequate intake of fluid."
+  },
+  {
+   "id": "c82",
+   "classification": "supported",
+   "evidence": "FIRST-PASS [s4: ibuprofen not usually recommended, kidney function]. Retrieved: NHS",
+   "url": "https://www.nhs.uk/conditions/kidney-infection/treatment/",
+   "action": "edited",
+   "newSentence": "The NHS says anti-inflammatory painkillers such as ibuprofen are not normally recommended in a kidney infection because they may increase the risk of further kidney problems."
+  },
+  {
+   "id": "c83",
+   "classification": "supported",
+   "evidence": "FIRST-PASS [s5: serious complications uncommon]. Retrieved: NIDDK: most do not cause lasting harm if caught early; sepsis uncommon",
+   "url": "https://www.niddk.nih.gov/health-information/urologic-diseases/kidney-infection-pyelonephritis/symptoms-causes",
+   "action": "edited",
+   "newSentence": "The NIDDK says most kidney infections caught early and treated properly do not cause lasting harm."
+  },
+  {
+   "id": "c84",
+   "classification": "supported",
+   "evidence": "FIRST-PASS [s5: sepsis life threatening]. Retrieved: NIDDK",
+   "url": "https://www.niddk.nih.gov/health-information/urologic-diseases/kidney-infection-pyelonephritis/symptoms-causes",
+   "action": "edited",
+   "newSentence": "Sepsis is uncommon but can be life threatening..."
+  },
+  {
+   "id": "c85",
+   "classification": "unsupported",
+   "evidence": "FIRST-PASS [s5: rarely kidney abscess or permanent damage]. Retrieved: NIDDK: rare kidney failure or scarring; abscess only in clinical reviews",
+   "url": "https://www.niddk.nih.gov/health-information/urologic-diseases/kidney-infection-pyelonephritis",
+   "action": "edited",
+   "newSentence": "...in rare cases a kidney infection leads to kidney failure or kidney scarring that may progress to chronic kidney disease."
+  },
+  {
+   "id": "c86",
+   "classification": "supported",
+   "evidence": "FIRST-PASS [s5: NICE lists impaired function, failure, sepsis, preterm labour]. Retrieved: NICE NG111 evidence summary",
+   "url": "https://www.nice.org.uk/guidance/ng111/chapter/summary-of-the-evidence",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c87",
+   "classification": "supported",
+   "evidence": "FIRST-PASS [s5: most make full recovery when prompt]. Retrieved: NHS",
+   "url": "https://www.nhs.uk/conditions/kidney-infection/treatment/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c88",
+   "classification": "supported",
+   "evidence": "FIRST-PASS [s5: up to 2 weeks before fit to return to work]. Retrieved: NHS treatment page: may take up to 2 weeks before fit enough to return to work",
+   "url": "https://www.nhs.uk/conditions/kidney-infection/treatment/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c89",
+   "classification": "supported",
+   "evidence": "FIRST-PASS [s5: older or underlying conditions may take longer]. Retrieved: NHS 111 Wales kidney infection page",
+   "url": "https://111.wales.nhs.uk/encyclopaedia/k/article/kidneyinfection/",
+   "action": "edited",
+   "newSentence": "...and NHS 111 Wales says older people or those with underlying conditions may take longer to recover."
+  },
+  {
+   "id": "c90",
+   "classification": "supported",
+   "evidence": "FIRST-PASS [s5: NIDDK symptoms that come back need prompt medical evaluation]. Retrieved: NIDDK: see health care professional right away if symptoms return",
+   "url": "https://www.niddk.nih.gov/health-information/urologic-diseases/kidney-infection-pyelonephritis/treatment",
+   "action": "edited",
+   "newSentence": "The NIDDK says symptoms that come back after treatment need prompt attention from a health care professional."
+  },
+  {
+   "id": "c91",
+   "classification": "supported",
+   "evidence": "FIRST-PASS [s5: NHS describes habits: water, toilet promptly, empty after sex, wipe front to back]. Retrieved: NHS UTI page (water, wipe, do not hold urine); after sex in NHS trust leaflets, so attribution widened",
+   "url": "https://www.nhs.uk/conditions/urinary-tract-infections-utis/",
+   "action": "edited",
+   "newSentence": "NHS pages describe drinking plenty of fluids, mainly water, not holding urine in and wiping from front to back...; NHS hospital leaflets add emptying the bladder after sex..."
+  },
+  {
+   "id": "c92",
+   "classification": "supported",
+   "evidence": "FIRST-PASS [s5: constipation mentioned, can increase chance of infection]. Retrieved: NHS trust leaflets",
+   "url": "https://www.worcsacute.nhs.uk/leaflets/kidney-infection-pyelonephritis/",
+   "action": "edited",
+   "newSentence": "...and treating constipation promptly."
+  },
+  {
+   "id": "c93",
+   "classification": "supported",
+   "evidence": "FIRST-PASS [s5: GP may prescribe low-dose antibiotics]. Retrieved: NHS UTI page",
+   "url": "https://www.nhs.uk/conditions/urinary-tract-infections-utis/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c94",
+   "classification": "unsupported",
+   "evidence": "FIRST-PASS [s6: see GP when fever with persistent tummy/back/genital pain]. Retrieved: Retrieved GP advice differs",
+   "url": "https://www.nhs.uk/conditions/kidney-infection/",
+   "action": "edited",
+   "newSentence": "The NHS says to see a GP when symptoms of a urinary tract infection have not improved after a few days, or when symptoms persist after antibiotics."
+  },
+  {
+   "id": "c95",
+   "classification": "unsupported",
+   "evidence": "FIRST-PASS [s6: GP straight away if child may have kidney infection]. Retrieved: Retrieved: urgent GP or NHS 111",
+   "url": "https://www.nhs.uk/conditions/kidney-infection/",
+   "action": "edited",
+   "newSentence": "For a child who may have a kidney infection, the NHS advice is an urgent GP appointment or help from NHS 111."
+  },
+  {
+   "id": "c96",
+   "classification": "supported",
+   "evidence": "FIRST-PASS [s6: urgent GP or NHS 111 list]. Retrieved: NHS",
+   "url": "https://www.nhs.uk/conditions/kidney-infection/",
+   "action": "edited",
+   "newSentence": "... sickness, not having peed all day..."
+  },
+  {
+   "id": "c97",
+   "classification": "supported",
+   "evidence": "FIRST-PASS [s6: 999 or A&E for confusion or drowsiness]. Retrieved: NHS",
+   "url": "https://www.nhs.uk/conditions/kidney-infection/",
+   "action": "edited",
+   "newSentence": "The NHS lists confusion, drowsiness and difficulty speaking as signs to call 999 or go to A&E now."
+  },
+  {
+   "id": "c98",
+   "classification": "unsafe",
+   "evidence": "FIRST-PASS [s6: anyone whose symptoms return or persist should be reassessed by a GP]. Retrieved: Instruction wording; sources: persists after antibiotics see GP (NHS); return, see professional (NIDDK)",
+   "url": "https://www.nhs.uk/conditions/kidney-infection/",
+   "action": "removed",
+   "newSentence": "(covered by reworded GP sentences)"
+  },
+  {
+   "id": "c99",
+   "classification": "supported",
+   "evidence": "FIRST-PASS [s6: NHS stresses prompt treatment; without it infection can lead to sepsis]. Retrieved: NHS: untreated can spread to bloodstream; NIDDK: sepsis uncommon but life threatening",
+   "url": "https://www.nhs.uk/conditions/kidney-infection/",
+   "action": "edited",
+   "newSentence": "The NHS says prompt treatment matters because an untreated kidney infection can spread to the bloodstream, and the NIDDK says sepsis, although uncommon, can be life threatening."
+  },
+  {
+   "id": "c100",
+   "classification": "supported",
+   "evidence": "FIRST-PASS [faq1: kidney infection is one type of UTI affecting kidneys]. Retrieved: NHS/NIDDK",
+   "url": "https://www.nhs.uk/conditions/kidney-infection/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c101",
+   "classification": "supported",
+   "evidence": "FIRST-PASS [faq1: often caused by cystitis spreading upwards]. Retrieved: NHS",
+   "url": "https://www.nhs.uk/conditions/kidney-infection/",
+   "action": "edited",
+   "newSentence": "The NHS says it is often caused by cystitis, a bladder infection, and most cases start in the bladder and spread upwards."
+  },
+  {
+   "id": "c102",
+   "classification": "unsupported",
+   "evidence": "FIRST-PASS [faq1: back/side pain and fever as well as, or instead of, bladder symptoms]. Retrieved: \"or instead of\" not returned",
+   "url": "https://www.nhs.uk/conditions/kidney-infection/symptoms/",
+   "action": "edited",
+   "newSentence": "Its symptoms include pain in the side or lower back and fever, as well as urinary symptoms such as burning when peeing."
+  },
+  {
+   "id": "c103",
+   "classification": "supported",
+   "evidence": "FIRST-PASS [faq2: NHS antibiotics main treatment; prompt treatment matters]. Retrieved: NHS",
+   "url": "https://www.nhs.uk/conditions/kidney-infection/treatment/",
+   "action": "edited",
+   "newSentence": "The NHS describes antibiotics as the main treatment and says prompt treatment matters..."
+  },
+  {
+   "id": "c104",
+   "classification": "supported",
+   "evidence": "FIRST-PASS [faq2: untreated can lead to sepsis]. Retrieved: NHS bloodstream; NIDDK sepsis",
+   "url": "https://www.niddk.nih.gov/health-information/urologic-diseases/kidney-infection-pyelonephritis/symptoms-causes",
+   "action": "edited",
+   "newSentence": "...an untreated infection can spread to the bloodstream. The NIDDK says sepsis, although uncommon, can be life threatening."
+  },
+  {
+   "id": "c105",
+   "classification": "unsafe",
+   "evidence": "FIRST-PASS [faq2: anyone with symptoms should contact GP or NHS 111 rather than wait]. Retrieved: Second-person style instruction; replaced by the NHS urgent-care wording",
+   "url": "https://www.nhs.uk/conditions/kidney-infection/",
+   "action": "edited",
+   "newSentence": "For symptoms such as a very high or very low temperature, lower tummy or back pain or blood in the urine, the NHS advises an urgent GP appointment or help from NHS 111."
+  },
+  {
+   "id": "c106",
+   "classification": "unsupported",
+   "evidence": "FIRST-PASS [faq3: NHS and NICE both say NSAIDs not usually recommended]. Retrieved: NHS yes; NICE not returned for NSAIDs",
+   "url": "https://www.nhs.uk/conditions/kidney-infection/treatment/",
+   "action": "edited",
+   "newSentence": "The NHS says anti-inflammatory painkillers such as ibuprofen are not normally recommended..."
+  },
+  {
+   "id": "c107",
+   "classification": "unsupported",
+   "evidence": "FIRST-PASS [faq3: NICE gives kidney safety concern as the reason]. Retrieved: Not returned from NICE; NHS reason: may increase risk of further kidney problems",
+   "url": "https://www.nhs.uk/conditions/kidney-infection/treatment/",
+   "action": "edited",
+   "newSentence": "...because they may increase the risk of further kidney problems."
+  },
+  {
+   "id": "c108",
+   "classification": "supported",
+   "evidence": "FIRST-PASS [faq3: paracetamol is pain/fever relief the sources mention]. Retrieved: NHS and NICE",
+   "url": "https://www.nice.org.uk/guidance/ng111/resources/visual-summary-pdf-6544161037",
+   "action": "edited",
+   "newSentence": "The NHS advises paracetamol to reduce a high temperature and relieve pain, and NICE self-care advice ... includes paracetamol for pain and an adequate intake of fluid."
+  },
+  {
+   "id": "c109",
+   "classification": "unsupported",
+   "evidence": "FIRST-PASS [faq3: NICE committee considered paracetamol reasonable for adults, children, young people]. Retrieved: Not returned",
+   "url": "https://www.nice.org.uk/guidance/ng111/resources/visual-summary-pdf-6544161037",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c110",
+   "classification": "supported",
+   "evidence": "FIRST-PASS [faq4: NHS lists pregnancy among reasons for urgent advice]. Retrieved: NHS",
+   "url": "https://www.nhs.uk/conditions/kidney-infection/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c111",
+   "classification": "supported",
+   "evidence": "FIRST-PASS [faq4: pregnant may need drip in hospital]. Retrieved: NHS",
+   "url": "https://www.nhs.uk/conditions/kidney-infection/treatment/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c112",
+   "classification": "supported",
+   "evidence": "FIRST-PASS [faq4: NICE lists preterm labour among complications]. Retrieved: NICE",
+   "url": "https://www.nice.org.uk/guidance/ng111/chapter/summary-of-the-evidence",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c113",
+   "classification": "wrong",
+   "evidence": "FIRST-PASS [faq4: pregnancy is a situation where NICE says adult should be referred to hospital]. Retrieved: NG111: consider referring or seeking specialist advice for people aged 16+ who are pregnant (visual summary)",
+   "url": "https://www.nice.org.uk/guidance/ng111/resources/visual-summary-pdf-6544161037",
+   "action": "edited",
+   "newSentence": "NICE ... says referral or specialist advice should be considered for people aged 16 or over who are pregnant."
+  },
+  {
+   "id": "c114",
+   "classification": "supported",
+   "evidence": "FIRST-PASS [faq5: most recover fully when prompt]. Retrieved: NHS",
+   "url": "https://www.nhs.uk/conditions/kidney-infection/treatment/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c115",
+   "classification": "supported",
+   "evidence": "FIRST-PASS [faq5: up to 2 weeks before return to work]. Retrieved: NHS",
+   "url": "https://www.nhs.uk/conditions/kidney-infection/treatment/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c116",
+   "classification": "supported",
+   "evidence": "FIRST-PASS [faq5: older/underlying may take longer]. Retrieved: NHS 111 Wales",
+   "url": "https://111.wales.nhs.uk/encyclopaedia/k/article/kidneyinfection/",
+   "action": "edited",
+   "newSentence": "NHS 111 Wales says older people or those with underlying conditions may take longer to recover."
+  },
+  {
+   "id": "c117",
+   "classification": "supported",
+   "evidence": "FIRST-PASS [faq5: NIDDK symptoms that return need prompt evaluation]. Retrieved: NIDDK",
+   "url": "https://www.niddk.nih.gov/health-information/urologic-diseases/kidney-infection-pyelonephritis/treatment",
+   "action": "edited",
+   "newSentence": "...need prompt attention from a health care professional."
+  },
+  {
+   "id": "c118",
+   "classification": "supported",
+   "evidence": "FIRST-PASS [keyFacts Also called: Pyelonephritis]. Retrieved: NIDDK/NHS",
+   "url": "https://www.niddk.nih.gov/health-information/urologic-diseases/kidney-infection-pyelonephritis",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c119",
+   "classification": "supported",
+   "evidence": "FIRST-PASS [keyFacts Type of illness: UTI affecting one or both kidneys, usually bacteria]. Retrieved: NHS/NIDDK",
+   "url": "https://www.nhs.uk/conditions/kidney-infection/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c120",
+   "classification": "supported",
+   "evidence": "FIRST-PASS [keyFacts Usual starting point: bladder infection spreads upwards]. Retrieved: NHS",
+   "url": "https://www.nhs.uk/conditions/kidney-infection/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c121",
+   "classification": "supported",
+   "evidence": "FIRST-PASS [keyFacts Main signs: back or side pain, fever and nausea]. Retrieved: NHS/NIDDK",
+   "url": "https://www.nhs.uk/conditions/kidney-infection/symptoms/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c122",
+   "classification": "supported",
+   "evidence": "FIRST-PASS [keyFacts Main treatment: antibiotics, hospital drip for some]. Retrieved: NHS",
+   "url": "https://www.nhs.uk/conditions/kidney-infection/treatment/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c123",
+   "classification": "unsupported",
+   "evidence": "FIRST-PASS [keyFacts Usually diagnosed by: symptoms/exam, urine tests, sometimes blood tests and imaging]. Retrieved: Imaging may be added (NIDDK); blood tests for diagnosis not returned",
+   "url": "https://www.niddk.nih.gov/health-information/urologic-diseases/kidney-infection-pyelonephritis",
+   "action": "edited",
+   "newSentence": "Symptoms and examination, urine tests, and sometimes imaging"
+  }
+ ],
+ "notes": "Search tool hit the usage limit on the 14th call (13 calls returned results). NICE NG111 hospital-referral: the first pass overstated it. NG111 (visual summary/recommendations as returned) says refer adults aged 16+ with symptoms or signs of a more serious illness such as sepsis, and only CONSIDER referral/specialist advice for pregnancy, significant dehydration or inability to take oral fluids/medicines, or higher complication risk; babies under 3 months go to a paediatric specialist (via NG224). The final text now says this correctly and no longer says pregnant/dehydrated adults 'are referred'. The returned NG111 pages were partly draft versions, so the under-3-months/IV wording was dropped. Return-to-work 'up to 2 weeks' is on the NHS treatment page (kept); 'older people may take longer' came from the NHS 111 Wales page, not nhs.uk, and is attributed that way (not added to references, to avoid a non-core host). Prevention habits: the NHS UTI page returned water, wiping front to back, not holding urine and low-dose antibiotics for recurrent UTIs; voiding after sex and treating constipation came only from NHS trust leaflets, so they are attributed to 'NHS hospital leaflets'; the main nhs.uk kidney-infection page could not be confirmed to carry a prevention section (NHS UTI page added to references). Risk factors: NIDDK returned women, pregnancy, recent bladder infection, urinary blockage (stone, enlarged prostate), vesicoureteral reflux (children), repeat infections, diabetes, kidney disease, sickle cell disease; 'childhood and older age', immune-suppression examples and 'poorly controlled' diabetes were not returned and were cut. Removed ibuprofen from the medications links (sources only say it is not normally recommended); paracetamol kept. Urgency wording now names 999/A&E, NHS 111 and urgent/routine GP routes in seekCare and section 6; the NHS statement for children is a blended-summary attribution (urgent GP or NHS 111 for a child who may have a kidney infection) and the exact NHS wording could not be re-checked after the search limit. Alias: 'pyelonephritis' is also an alias of urinary-tract-infection (aliases UTI, cystitis, pyelonephritis, bladder infection); check_batch.py did not flag it, but the maintainer may want to drop it from the UTI page so search is not ambiguous. Article block is ~1216 words (sections 129-181 words, faqs 55-64). Textbook: 1 of the first-pass sentences (flank definition)."
+}
