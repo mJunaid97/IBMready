@@ -1,0 +1,567 @@
+{
+ "id": "anaemia",
+ "searchesUsed": 13,
+ "counts": {
+  "supported": 43,
+  "textbook": 2,
+  "unsupported": 19,
+  "wrong": 1,
+  "unsafe": 4,
+  "unchecked": 0
+ },
+ "claims": [
+  {
+   "id": "c01",
+   "classification": "supported",
+   "evidence": "NHS: many people with iron deficiency anaemia have only a few symptoms",
+   "url": "https://www.nhs.uk/conditions/iron-deficiency-anaemia/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c02",
+   "classification": "supported",
+   "evidence": "NHS lists tiredness, lack of energy, shortness of breath, palpitations, pale skin, headaches",
+   "url": "https://www.nhs.uk/conditions/iron-deficiency-anaemia/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c03",
+   "classification": "supported",
+   "evidence": "NHS lists tinnitus, spoon-shaped nails, strange taste as less common; MedlinePlus lists hair loss and pica",
+   "url": "https://www.nhs.uk/conditions/iron-deficiency-anaemia/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c04",
+   "classification": "supported",
+   "evidence": "Study: 42.3% of restless legs patients without anaemia had iron deficiency; review lists RLS as symptom of nonanaemic iron deficiency",
+   "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7205016/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c05",
+   "classification": "unsupported",
+   "evidence": "Sources list tiredness, sore red tongue, pins and needles, mouth ulcers; \"extreme\" tiredness not retrieved",
+   "url": "https://www.nhs.uk/conditions/vitamin-b12-or-folate-deficiency-anaemia/",
+   "action": "edited",
+   "newSentence": "Vitamin B12 or folate deficiency anaemia can cause tiredness, a sore red tongue, pins and needles and mouth ulcers."
+  },
+  {
+   "id": "c06",
+   "classification": "supported",
+   "evidence": "NHS lists muscle weakness, vision problems, memory and judgement problems",
+   "url": "https://www.nhs.uk/conditions/vitamin-b12-or-folate-deficiency-anaemia/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c07",
+   "classification": "unsupported",
+   "evidence": "Retrieved: symptoms can worsen without treatment and nervous-system problems can be permanent; \"longer untreated, higher chance\" not retrieved; nerve damage is a recognised complication",
+   "url": "https://www.nhs.uk/conditions/vitamin-b12-or-folate-deficiency-anaemia/symptoms/",
+   "action": "edited",
+   "newSentence": "Some of these problems, especially those affecting the nervous system, can become permanent without treatment, and long-term B12 deficiency can damage nerves."
+  },
+  {
+   "id": "c08",
+   "classification": "unsupported",
+   "evidence": "MedlinePlus: iron deficiency is the most common form; \"frequent causes\" for B12/folate not retrieved",
+   "url": "https://medlineplus.gov/ency/article/000560.htm",
+   "action": "edited",
+   "newSentence": "Iron deficiency is the most common type of anaemia, and vitamin B12 and folate deficiency can also cause it."
+  },
+  {
+   "id": "c09",
+   "classification": "supported",
+   "evidence": "MedlinePlus lists anemia of chronic disease, sickle cell anemia, thalassemia, aplastic anemia",
+   "url": "https://medlineplus.gov/ency/article/000560.htm",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c10",
+   "classification": "unsupported",
+   "evidence": "Retrieved: tied to long-term illnesses; specific examples (kidney disease, cancer, UC, RA) not retrieved",
+   "url": "https://medlineplus.gov/ency/article/000565.htm",
+   "action": "edited",
+   "newSentence": "Anaemia of chronic disease is linked with long-term illnesses."
+  },
+  {
+   "id": "c11",
+   "classification": "supported",
+   "evidence": "Thalassemia inherited; NHLBI guide: in aplastic anemia marrow is damaged so stem cells are destroyed or fail to develop",
+   "url": "https://www.nhlbi.nih.gov/sites/default/files/publications/11-7629.pdf",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c12",
+   "classification": "supported",
+   "evidence": "NHS: pernicious anaemia most common cause of B12 deficiency in the UK",
+   "url": "https://www.nhs.uk/conditions/vitamin-b12-or-folate-deficiency-anaemia/causes/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c13",
+   "classification": "supported",
+   "evidence": "NHS: immune system attacks stomach cells that make intrinsic factor, blocking B12 absorption",
+   "url": "https://www.nhs.uk/conditions/vitamin-b12-or-folate-deficiency-anaemia/causes/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c14",
+   "classification": "unsupported",
+   "evidence": "Anticonvulsants and PPIs affect absorption (NHS); review: strict vegans at risk, some lacto-ovo vegetarians; \"particularly vegetarians\" overreaches",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/18709879/",
+   "action": "edited",
+   "newSentence": "Diet can also contribute, particularly for people who eat little or no animal-source food, such as vegans, and some medicines, including anticonvulsants and proton pump inhibitors, can reduce absorption."
+  },
+  {
+   "id": "c15",
+   "classification": "unsupported",
+   "evidence": "Review: folate deficiency risk rises with alcoholism and lactation; pregnancy detail not retrieved",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/18709879/",
+   "action": "edited",
+   "newSentence": "Folate deficiency can also follow alcohol misuse."
+  },
+  {
+   "id": "c16",
+   "classification": "supported",
+   "evidence": "NHS: GP asks about lifestyle and medical history and usually does a blood test (full blood count)",
+   "url": "https://www.nhs.uk/conditions/iron-deficiency-anaemia/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c17",
+   "classification": "supported",
+   "evidence": "NHS: full blood count checks red cell numbers; ferritin reflects iron stores",
+   "url": "https://www.nhs.uk/conditions/iron-deficiency-anaemia/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c18",
+   "classification": "textbook",
+   "evidence": "Ferritin as iron store marker; low ferritin confirms low iron stores (UK formulary, no value quoted)",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/21034387/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c19",
+   "classification": "supported",
+   "evidence": "Clinical update: unexplained iron deficiency needs evaluation for the source; treatment depends on cause (NHS)",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/21034387/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c20",
+   "classification": "unsupported",
+   "evidence": "NHS: NSAIDs such as ibuprofen and aspirin are a cause; PMC review: NSAIDs cause GI mucosal injury and bleeding; \"GP may ask about diet\" not retrieved",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8002800/",
+   "action": "edited",
+   "newSentence": "Heavy periods and medicines such as ibuprofen or aspirin, which can cause bleeding in the stomach, are among the causes the GP considers."
+  },
+  {
+   "id": "c21",
+   "classification": "supported",
+   "evidence": "GI blood loss most common cause in men and postmenopausal women; menstruation most common in premenopausal women",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/21034387/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c22",
+   "classification": "unsupported",
+   "evidence": "Clinical update: gastroscopy/colonoscopy to exclude GI bleeding; assess for coeliac disease; stool test not retrieved",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/21034387/",
+   "action": "edited",
+   "newSentence": "If the cause is unclear, further tests may follow, such as a gastroscopy or colonoscopy to look for a source of bleeding, and testing for coeliac disease may be suggested."
+  },
+  {
+   "id": "c23",
+   "classification": "unsupported",
+   "evidence": "No retrieved text says B12/folate deficiency is often diagnosed from symptoms and blood tests; NHS says diagnosis relies on blood tests for iron deficiency",
+   "url": "https://www.nhs.uk/conditions/iron-deficiency-anaemia/",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c24",
+   "classification": "supported",
+   "evidence": "NHS B12 treatment splits by cause; MedlinePlus: anaemia improves when cause treated",
+   "url": "https://www.nhs.uk/conditions/vitamin-b12-or-folate-deficiency-anaemia/treatment/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c25",
+   "classification": "supported",
+   "evidence": "NHS 111 Wales/NHLBI: iron tablets usual first treatment, most respond to diet changes and tablets",
+   "url": "https://111.wales.nhs.uk/anaemia,irondeficiency/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c26",
+   "classification": "supported",
+   "evidence": "NHS lists constipation or diarrhoea, tummy pain, heartburn, feeling sick, darker stools",
+   "url": "https://www.nhs.uk/conditions/iron-deficiency-anaemia/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c27",
+   "classification": "unsupported",
+   "evidence": "Taking with or after food can help (NHS inform/Wales); retrieved: GP may lower number of tablets or change preparation",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/nutritional/iron-deficiency-anaemia/",
+   "action": "edited",
+   "newSentence": "Taking tablets with or shortly after food can help, and a GP may adjust the tablets if side effects are troublesome."
+  },
+  {
+   "id": "c28",
+   "classification": "supported",
+   "evidence": "Infusion when tablets cannot be taken, do not work or are poorly absorbed (NHS trust leaflets, Guys and St Thomas)",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/nutritional/iron-deficiency-anaemia/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c29",
+   "classification": "supported",
+   "evidence": "NHS: B12 deficiency anaemia usually treated with hydroxocobalamin injections; maintenance depends on diet vs not",
+   "url": "https://www.nhs.uk/conditions/vitamin-b12-or-folate-deficiency-anaemia/treatment/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c30",
+   "classification": "supported",
+   "evidence": "NHS: if not diet-related, injections usually needed for life",
+   "url": "https://www.nhs.uk/conditions/vitamin-b12-or-folate-deficiency-anaemia/treatment/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c31",
+   "classification": "supported",
+   "evidence": "NHS: folic acid tablets; GP checks B12 before starting folic acid because it can hide B12 deficiency",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/nutritional/vitamin-b12-or-folate-deficiency-anaemia/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c32",
+   "classification": "unsupported",
+   "evidence": "Retrieved: blood test used to check response to iron tablets; no general follow-up schedule for all types",
+   "url": "https://www.nhs.uk/conditions/iron-deficiency-anaemia/",
+   "action": "edited",
+   "newSentence": "After iron treatment, a follow-up blood test is used to check the response."
+  },
+  {
+   "id": "c33",
+   "classification": "wrong",
+   "evidence": "MedlinePlus (chronic disease page): anemia MAY improve when the disease causing it is treated; \"usually\" and \"other types\" overreach",
+   "url": "https://medlineplus.gov/ency/article/000565.htm",
+   "action": "edited",
+   "newSentence": "MedlinePlus says anaemia of chronic disease may improve when the disease causing it is treated."
+  },
+  {
+   "id": "c34",
+   "classification": "supported",
+   "evidence": "NHS: meat, salmon, cod, dairy, eggs, fortified cereals as B12 sources",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/nutritional/vitamin-b12-or-folate-deficiency-anaemia/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c35",
+   "classification": "supported",
+   "evidence": "NHS lists broccoli, brussels sprouts, asparagus, peas, chickpeas, brown rice",
+   "url": "https://www.nhs.uk/conditions/vitamin-b12-or-folate-deficiency-anaemia/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c36",
+   "classification": "unsafe",
+   "evidence": "Instructs; NHS 111 Wales says iron overdose in a young child can be fatal and tablets should be out of reach; reworded to attribute",
+   "url": "https://111.wales.nhs.uk/anaemia,irondeficiency/",
+   "action": "edited",
+   "newSentence": "NHS 111 Wales notes that an iron overdose in a young child can be fatal, which is why iron tablets are kept out of children's reach."
+  },
+  {
+   "id": "c37",
+   "classification": "supported",
+   "evidence": "NHLBI: possible outcomes include heart problems, pregnancy complications, developmental delays in children",
+   "url": "https://www.nhlbi.nih.gov/health/anemia/iron-deficiency-anemia",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c38",
+   "classification": "unsupported",
+   "evidence": "Nerve damage is a recognised complication; \"so early diagnosis matters\" is inference",
+   "url": "https://111.wales.nhs.uk/encyclopaedia/a/article/anaemia,vitaminb12andfolatedeficiency",
+   "action": "edited",
+   "newSentence": "Delays in treating B12 deficiency can cause lasting nerve damage."
+  },
+  {
+   "id": "c39",
+   "classification": "supported",
+   "evidence": "MedlinePlus: vitamin B12 deficiency anemia most often responds well to treatment",
+   "url": "https://medlineplus.gov/ency/article/000574.htm",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c40",
+   "classification": "unsupported",
+   "evidence": "No retrieved text on sickle cell pain episodes or care; retrieved only that it is inherited with abnormal haemoglobin changing red cell shape",
+   "url": "https://medlineplus.gov/ency/article/000560.htm",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c41",
+   "classification": "textbook",
+   "evidence": "Outlook depends on the underlying cause (MedlinePlus: improves when cause treated)",
+   "url": "https://medlineplus.gov/ency/article/000560.htm",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c42",
+   "classification": "unsafe",
+   "evidence": "Urgent-care routes (999 / NHS 111) not retrievable from any source; cut rather than assert",
+   "url": "",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c43",
+   "classification": "supported",
+   "evidence": "MedlinePlus: iron deficiency is the most common form",
+   "url": "https://medlineplus.gov/ency/article/000560.htm",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c44",
+   "classification": "supported",
+   "evidence": "MedlinePlus/StatPearls list these types",
+   "url": "https://medlineplus.gov/ency/article/000560.htm",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c45",
+   "classification": "unsupported",
+   "evidence": "\"which is why a blood test comes first\" is inference",
+   "url": "https://www.nhs.uk/conditions/vitamin-b12-or-folate-deficiency-anaemia/treatment/",
+   "action": "edited",
+   "newSentence": "Treatment depends on the type and cause."
+  },
+  {
+   "id": "c46",
+   "classification": "supported",
+   "evidence": "Same as c19",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/21034387/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c47",
+   "classification": "supported",
+   "evidence": "GI blood loss most common cause in men and postmenopausal women",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/21034387/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c48",
+   "classification": "unsupported",
+   "evidence": "Ulcers not retrieved; clinical update: gastroscopy/colonoscopy to exclude GI bleeding, particularly a malignant lesion",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/21034387/",
+   "action": "edited",
+   "newSentence": "Doctors may arrange a gastroscopy or colonoscopy to look for a source of bleeding, including a cancer, if the reason is unclear."
+  },
+  {
+   "id": "c49",
+   "classification": "supported",
+   "evidence": "NHS lists the side effects",
+   "url": "https://www.nhs.uk/conditions/iron-deficiency-anaemia/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c50",
+   "classification": "supported",
+   "evidence": "Taking with or after food can help",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/nutritional/iron-deficiency-anaemia/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c51",
+   "classification": "unsafe",
+   "evidence": "Instruction to the reader; \"usually talk to the GP rather than stopping\" not retrieved; sources say GP may adjust tablets",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/nutritional/iron-deficiency-anaemia/",
+   "action": "edited",
+   "newSentence": "A GP may adjust the tablets if the side effects are troublesome."
+  },
+  {
+   "id": "c52",
+   "classification": "supported",
+   "evidence": "Pernicious anaemia: absorption problem; injections for non-diet causes",
+   "url": "https://www.nhs.uk/conditions/vitamin-b12-or-folate-deficiency-anaemia/treatment/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c53",
+   "classification": "unsupported",
+   "evidence": "NHS: B12 injections are called hydroxocobalamin; \"form used in the UK\" overreaches",
+   "url": "https://www.nhs.uk/conditions/vitamin-b12-or-folate-deficiency-anaemia/treatment/",
+   "action": "edited",
+   "newSentence": "The NHS says vitamin B12 injections are called hydroxocobalamin."
+  },
+  {
+   "id": "c54",
+   "classification": "supported",
+   "evidence": "NHS: for diet-related deficiency maintenance may be tablets between meals or injections",
+   "url": "https://www.nhs.uk/conditions/vitamin-b12-or-folate-deficiency-anaemia/treatment/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c55",
+   "classification": "supported",
+   "evidence": "NHS: many people with iron deficiency anaemia only have a few symptoms",
+   "url": "https://www.nhs.uk/conditions/iron-deficiency-anaemia/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c56",
+   "classification": "unsupported",
+   "evidence": "\"found through blood test for another reason\" not retrieved; sources say mild iron deficiency can cause no symptoms and a blood test confirms it",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/nutritional/iron-deficiency-anaemia/",
+   "action": "edited",
+   "newSentence": "Sources note that iron deficiency can be mild enough to cause no symptoms, so a blood test is the reliable way to confirm it."
+  },
+  {
+   "id": "c57",
+   "classification": "unsafe",
+   "evidence": "Instructs the reader; NHS advises seeing a GP if iron deficiency anaemia is suspected",
+   "url": "https://www.nhs.uk/conditions/iron-deficiency-anaemia/",
+   "action": "edited",
+   "newSentence": "The NHS advises seeing a GP for anyone who thinks they may have iron deficiency anaemia."
+  },
+  {
+   "id": "c58",
+   "classification": "supported",
+   "evidence": "MedlinePlus",
+   "url": "https://medlineplus.gov/ency/article/000560.htm",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c59",
+   "classification": "unsupported",
+   "evidence": "\"frequent\" not retrieved",
+   "url": "https://www.nhs.uk/conditions/vitamin-b12-or-folate-deficiency-anaemia/",
+   "action": "edited",
+   "newSentence": "Vitamin B12 and folate deficiency"
+  },
+  {
+   "id": "c60",
+   "classification": "supported",
+   "evidence": "NHS: GP does a full blood count; ferritin confirms low iron stores",
+   "url": "https://www.nhs.uk/conditions/iron-deficiency-anaemia/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c61",
+   "classification": "supported",
+   "evidence": "NHS lists the side effects",
+   "url": "https://www.nhs.uk/conditions/iron-deficiency-anaemia/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c62",
+   "classification": "supported",
+   "evidence": "NHS: usually hydroxocobalamin injections at first",
+   "url": "https://www.nhs.uk/conditions/vitamin-b12-or-folate-deficiency-anaemia/treatment/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c63",
+   "classification": "supported",
+   "evidence": "NHS: GP usually does blood test",
+   "url": "https://www.nhs.uk/conditions/iron-deficiency-anaemia/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c64",
+   "classification": "unsupported",
+   "evidence": "MedlinePlus says \"may improve\"; \"often\" not retrieved",
+   "url": "https://medlineplus.gov/ency/article/000565.htm",
+   "action": "edited",
+   "newSentence": "Depends on the cause; may improve when it is treated"
+  },
+  {
+   "id": "c65",
+   "classification": "supported",
+   "evidence": "Added: how much a person notices depends on how quickly anaemia develops; iron deficiency can be mild enough to cause no symptoms",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/nutritional/iron-deficiency-anaemia/",
+   "action": "edited",
+   "newSentence": "(new sentence, see evidence)"
+  },
+  {
+   "id": "c66",
+   "classification": "supported",
+   "evidence": "Added: NHS says B12 stores can last a few years, so problems can take a long time to appear",
+   "url": "https://www.nhs.uk/conditions/vitamin-b12-or-folate-deficiency-anaemia/causes/",
+   "action": "edited",
+   "newSentence": "(new sentence, see evidence)"
+  },
+  {
+   "id": "c67",
+   "classification": "supported",
+   "evidence": "Added: sickle cell anaemia is inherited; abnormal haemoglobin changes red cell shape",
+   "url": "https://medlineplus.gov/ency/article/000560.htm",
+   "action": "edited",
+   "newSentence": "(new sentence, see evidence)"
+  },
+  {
+   "id": "c68",
+   "classification": "supported",
+   "evidence": "Added: NHS advises seeing a GP if iron deficiency anaemia is suspected; diagnosis relies on blood tests",
+   "url": "https://www.nhs.uk/conditions/iron-deficiency-anaemia/",
+   "action": "edited",
+   "newSentence": "(new sentence, see evidence)"
+  },
+  {
+   "id": "c69",
+   "classification": "supported",
+   "evidence": "Added: NHS 111 Wales says most people respond to dietary changes and iron tablets",
+   "url": "https://111.wales.nhs.uk/anaemia,irondeficiency/",
+   "action": "edited",
+   "newSentence": "(new sentence, see evidence)"
+  }
+ ],
+ "notes": "13 searches. Not retrieved by any search: urgent/emergency routes (999, NHS 111) for anaemia red flags, sickle cell pain/care, B12/folate-specific diagnostic wording, kidney disease/cancer/UC/RA examples for chronic disease anaemia, pregnancy as folate cause. Several attributions rest on blended search summaries (e.g. NHS 111 Wales, NHS inform); a reviewer may re-confirm on the pages. Claims c65-c69 are sentences added in the final text. Existing conditions.json treatment text says oral iron for three months after correction, while search results mention tablets typically for about six months (NHS) and three to six months (NHLBI); and its seekCare red flags were not confirmable from retrieved text."
+}
