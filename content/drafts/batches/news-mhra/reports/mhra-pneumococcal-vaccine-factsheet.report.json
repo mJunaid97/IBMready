@@ -1,0 +1,94 @@
+{
+  "id": "mhra-pneumococcal-vaccine-factsheet",
+  "searchesUsed": 2,
+  "counts": {
+    "supported": 4,
+    "textbook": 1,
+    "unsupported": 4,
+    "wrong": 0,
+    "unsafe": 0,
+    "unchecked": 0
+  },
+  "claims": [
+    {
+      "id": "c01",
+      "classification": "unsupported",
+      "sentence": "The MHRA has published a factsheet for patients, parents and carers on pneumococcal vaccines, covering their safety, effectiveness and who is eligible in the UK.",
+      "evidence": "Factsheet exists (published 8 Oct 2026) and covers safety, how vaccines work and limits of protection; on eligibility it only points readers to NHS guidance. 'Effectiveness' and 'who is eligible' as stated were not confirmed.",
+      "url": "https://www.gov.uk/government/publications/pneumococcal-vaccine-factsheet-information-for-patients-parents-and-carers--2/pneumococcal-vaccine-factsheet-information-for-patients-parents-and-carers",
+      "action": "edited",
+      "newSentence": "The MHRA has published a factsheet for patients, parents and carers on pneumococcal vaccines, covering how they work and their safety."
+    },
+    {
+      "id": "c02",
+      "classification": "supported",
+      "sentence": "The MHRA's October 2026 Safety Roundup reports a new pneumococcal vaccine factsheet for patients, parents and carers.",
+      "evidence": "Roundup (published 27 Oct 2026) lists the pneumococcal factsheet as an item, meant for patients, parents and carers.",
+      "url": "https://www.gov.uk/drug-device-alerts/mhra-safety-roundup-october-2026",
+      "action": "kept"
+    },
+    {
+      "id": "c03",
+      "classification": "unsupported",
+      "sentence": "The factsheet outlines the safety and effectiveness of pneumococcal vaccines.",
+      "evidence": "Safety section confirmed; 'effectiveness' not stated in retrieved text (only that vaccines do not cover every type).",
+      "url": "https://www.gov.uk/government/publications/pneumococcal-vaccine-factsheet-information-for-patients-parents-and-carers--2/pneumococcal-vaccine-factsheet-information-for-patients-parents-and-carers",
+      "action": "edited",
+      "newSentence": "The factsheet explains how pneumococcal vaccines work and covers their safety and common side effects."
+    },
+    {
+      "id": "c04",
+      "classification": "unsupported",
+      "sentence": "It also covers who is eligible for vaccination in the UK.",
+      "evidence": "Factsheet points readers to NHS guidance for who qualifies; it does not itself list eligibility in retrieved text.",
+      "url": "https://www.gov.uk/government/publications/pneumococcal-vaccine-factsheet-information-for-patients-parents-and-carers--2/pneumococcal-vaccine-factsheet-information-for-patients-parents-and-carers",
+      "action": "edited",
+      "newSentence": "It points readers to NHS guidance on who is eligible for vaccination."
+    },
+    {
+      "id": "c05",
+      "classification": "supported",
+      "sentence": "Healthcare professionals can use it when discussing pneumococcal vaccination.",
+      "evidence": "Roundup/factsheet: also available for healthcare professionals to use in conversations with patients.",
+      "url": "https://www.gov.uk/drug-device-alerts/mhra-safety-roundup-october-2026",
+      "action": "kept"
+    },
+    {
+      "id": "c06",
+      "classification": "supported",
+      "sentence": "The MHRA says it has released a pneumococcal vaccine factsheet for patients, parents and carers.",
+      "evidence": "As c02.",
+      "url": "https://www.gov.uk/drug-device-alerts/mhra-safety-roundup-october-2026",
+      "action": "kept"
+    },
+    {
+      "id": "c07",
+      "classification": "unsupported",
+      "sentence": "According to the October 2026 Safety Roundup, the factsheet outlines the safety and effectiveness of pneumococcal vaccines, who is eligible for vaccination in the UK, and how vaccination helps protect against serious illness.",
+      "evidence": "Roundup wording itself not retrieved beyond audience; eligibility and 'effectiveness' unconfirmed. Factsheet confirmed: how vaccines work, inactivated, limits of coverage, side effects mild and short-lived.",
+      "url": "https://www.gov.uk/government/publications/pneumococcal-vaccine-factsheet-information-for-patients-parents-and-carers--2/pneumococcal-vaccine-factsheet-information-for-patients-parents-and-carers",
+      "action": "edited",
+      "newSentence": "The factsheet explains how pneumococcal vaccines work, their safety and common side effects, and notes that they do not protect against every type of pneumococcal bacteria."
+    },
+    {
+      "id": "c08",
+      "classification": "supported",
+      "sentence": "The MHRA also says the factsheet is available for healthcare professionals to use when they discuss pneumococcal vaccination with patients.",
+      "evidence": "As c05.",
+      "url": "https://www.gov.uk/drug-device-alerts/mhra-safety-roundup-october-2026",
+      "action": "kept"
+    },
+    {
+      "id": "c09",
+      "classification": "textbook",
+      "sentence": "The site's pages on pneumonia and meningitis explain two of the illnesses pneumococcal bacteria can cause.",
+      "evidence": "Site-navigation gloss; the underlying fact (pneumococcal bacteria cause pneumonia and meningitis) is textbook and the factsheet mentions both.",
+      "url": "https://www.gov.uk/government/publications/pneumococcal-vaccine-factsheet-information-for-patients-parents-and-carers--2/pneumococcal-vaccine-factsheet-information-for-patients-parents-and-carers",
+      "action": "edited",
+      "newSentence": "Pneumococcal bacteria can cause illnesses including pneumonia and meningitis."
+    }
+  ],
+  "dateConfirmed": "2026-10-27",
+  "dateEvidence": "Search result states MHRA Safety Roundup October 2026 published 27 October 2026; the factsheet itself was published 8 October 2026.",
+  "notes": "Roundup wording not retrieved verbatim; edits rely on the factsheet's own text. No doses/cut-offs or individual instructions in the brief; keep it that way (the retrieved Green Book dose/age details and the 'one of the safest ways' phrase must not be added). Consider setting source to the factsheet URL as a second reference. Searches used: 2."
+}
