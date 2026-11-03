@@ -1,5 +1,13 @@
 # Changelog
 
+## v1.10.2 — 2026-11-03
+
+- Hubs: a prerendered section hub now fetches its filter data as soon as the browser is idle, so the first keystroke or
+  facet change filters immediately instead of waiting for the type, atlas and vocabulary files to download
+- QA: the smoke test waits for a hub or search filter to react rather than pausing a fixed 400 ms, and a sitemap URL
+  that does not answer within 45 s is retried once and recorded as a failure instead of ending the run (both found by
+  the live check of v1.10.1, which failed on timing, not on content)
+
 ## v1.10.1 — 2026-11-03
 
 Second pass on the 146 pages deepened in October (CLINICAL.md 5.5), and the last eleven anatomy articles.
