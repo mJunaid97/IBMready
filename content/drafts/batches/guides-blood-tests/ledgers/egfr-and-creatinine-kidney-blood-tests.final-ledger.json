@@ -58,21 +58,12 @@
  },
  {
   "where": "body[0]",
-  "sentence": "UK laboratories report an eGFR alongside every creatinine result, in line with NICE guidance.",
-  "basis": "excerpt",
-  "urls": [
-   "https://labtestsonline.org.uk/tests/egfr-estimated-creatinine-clearance"
-  ],
-  "note": "added after second pass: Page cites NICE NG203 as requiring UK laboratories to report an eGFR with every creatinine result"
- },
- {
-  "where": "body[0]",
   "sentence": "People with more muscle naturally make more creatinine, which can give a lower eGFR than their kidney function really is.",
   "basis": "excerpt",
   "urls": [
    "https://labtestsonline.org.uk/tests/egfr-estimated-creatinine-clearance"
   ],
-  "note": "added after second pass: Muscle mass can skew results; people with more muscle produce more creatinine"
+  "note": "added after second pass: third-pass supported: NICE: more muscle produces more creatinine, giving lower eGFR than true function."
  },
  {
   "where": "body[0]",
@@ -81,7 +72,7 @@
   "urls": [
    "https://labtestsonline.org.uk/tests/cystatin-c"
   ],
-  "note": "added after second pass: Cystatin C is less influenced by non-GFR determinants and considered when creatinine-based results are unreliable"
+  "note": "added after second pass: third-pass supported: Cystatin C less affected by muscle mass than creatinine (NICE; cohort study)."
  },
  {
   "where": "body[1]",
@@ -188,12 +179,12 @@
  },
  {
   "where": "body[2]",
-  "sentence": "The NHS says a very low ACR usually means the kidneys are working normally, while a very high one points to more severe kidney disease.",
+  "sentence": "Lab Tests Online UK says a very high urine ACR shows that kidney disease is present in a more severe form.",
   "basis": "excerpt",
   "urls": [
-   "https://www.nhs.uk/tests-and-treatments/acr-test/"
+   "https://labtestsonline.org.uk/tests/urine-albumin-creatinine-ratio-or-acr"
   ],
-  "note": "added after second pass: Slightly raised ACR may mean early-stage disease; very high indicates more severe; very low usually normal"
+  "note": "added after second pass: third-pass edited: Lab Tests Online UK says very high ACR shows more severe kidney disease; 'very low means normal' per NHS not seen."
  },
  {
   "where": "body[3]",
@@ -235,15 +226,6 @@
   "note": "blended summary"
  },
  {
-  "where": "body[3]",
-  "sentence": "NHS 111 Wales lists kidney stones, lupus and a family history of advanced or inherited kidney disease among the risk factors.",
-  "basis": "excerpt",
-  "urls": [
-   "https://111.wales.nhs.uk/Kidneydisease,chronic/"
-  ],
-  "note": "added after second pass: Other risks include AKI, cardiovascular disease, kidney stones, lupus, family history"
- },
- {
   "where": "body[4]",
   "sentence": "Creatinine-based eGFR may be less reliable in older adults.",
   "basis": "excerpt",
@@ -277,7 +259,7 @@
   "urls": [
    "https://www.nice.org.uk/guidance/ng203/resources/chronic-kidney-disease-assessment-and-management-pdf-66143713055173"
   ],
-  "note": "added after second pass: measure ACR (ideally in an early morning sample) in adults with risk factors"
+  "note": "added after second pass: third-pass supported: NICE recommends ACR ideally on an early morning sample."
  },
  {
   "where": "body[5]",
@@ -333,7 +315,7 @@
   "urls": [
    "https://www.nhs.uk/conditions/kidney-disease/"
   ],
-  "note": "added after second pass: NHS: most people with CKD will be able to control their condition with medicine and regular check-ups"
+  "note": "added after second pass: third-pass supported: NHS: most people with CKD manage it with medicine and regular check-ups."
  },
  {
   "where": "body[5]",
@@ -342,7 +324,7 @@
   "urls": [
    "https://111.wales.nhs.uk/Kidneydisease,chronic/"
   ],
-  "note": "added after second pass: Kidney disease can be caused by inflammation of the filters, glomerulonephritis"
+  "note": "added after second pass: third-pass supported: NHS lists glomerulonephritis (kidney inflammation) among causes of CKD."
  },
  {
   "where": "body[6]",

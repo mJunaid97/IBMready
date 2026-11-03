@@ -69,21 +69,12 @@
  },
  {
   "where": "body[1]",
-  "sentence": "One NHS trust explains that an INR of 2.0 means the blood takes roughly twice as long to clot as it would without warfarin.",
+  "sentence": "One NHS trust leaflet explains that a typical target INR means the blood takes just over twice as long as normal to clot.",
   "basis": "excerpt",
   "urls": [
-   "https://www.therotherhamft.nhs.uk/patients-and-visitors/patient-information/life-with-warfarin"
+   "https://www.nbt.nhs.uk/our-services/a-z-services/pharmacy/pharmacy-patient-information-leaflets/warfarin-therapy"
   ],
-  "note": "added after second pass: INR of 2.0 means blood takes roughly twice as long to clot on warfarin."
- },
- {
-  "where": "body[1]",
-  "sentence": "The target INR depends on the reason for treatment, and the consultant sets the exact target.",
-  "basis": "excerpt",
-  "urls": [
-   "https://www.therotherhamft.nhs.uk/patients-and-visitors/patient-information/life-with-warfarin"
-  ],
-  "note": "added after second pass: Target ranges depend on the reason for treatment; consultant sets exact target."
+  "note": "added after second pass: third-pass wrong: NBT leaflet said a common target INR of 2.5 (range 2.0-3.0) means blood takes just over twice as long to clot; not stated for INR 2.0 exactly; Rotherham page not returned."
  },
  {
   "where": "body[2]",
@@ -124,12 +115,12 @@
  },
  {
   "where": "body[2]",
-  "sentence": "One NHS trust says that once the INR is stable, the gap between blood tests can lengthen to as much as 8 to 12 weeks.",
+  "sentence": "One NHS trust leaflet says that once the dose has stabilised, blood tests become less frequent, and your anticoagulant clinic decides how often you need one.",
   "basis": "excerpt",
   "urls": [
-   "https://www.therotherhamft.nhs.uk/patients-and-visitors/patient-information/life-with-warfarin"
+   "https://www.nbt.nhs.uk/our-services/a-z-services/pharmacy/pharmacy-patient-information-leaflets/warfarin-therapy"
   ],
-  "note": "added after second pass: Once stabilised the time between blood tests lengthens to a maximum of 8-12 weeks."
+  "note": "added after second pass: third-pass wrong: Sources gave a maximum of 12 weeks, not 8 to 12; interval is set by the clinic. NBT said tests become less frequent once the dose is stable."
  },
  {
   "where": "body[3]",
@@ -172,21 +163,21 @@
  },
  {
   "where": "body[3]",
-  "sentence": "The NHS advises telling the GP, anticoagulant clinic or pharmacist about any prescription, over-the-counter or herbal medicine, including aspirin and St John's wort.",
+  "sentence": "The NHS advises telling your doctor about any other medicines, herbal remedies, vitamins or supplements, checking before starting any new medicine, and avoiding St John's wort.",
   "basis": "excerpt",
   "urls": [
-   "https://www.nhs.uk/medicines/anticoagulants/considerations/"
+   "https://www.nhs.uk/medicines/warfarin/"
   ],
-  "note": "added after second pass: Tell your GP, anticoagulant clinic or pharmacist about any prescription, OTC or herbal medicine, including aspirin and St John's Wort."
+  "note": "added after second pass: third-pass wrong: NHS warfarin text: tell your doctor about other medicines, herbal remedies, vitamins or supplements and check before any new medicine; avoid St John's wort. Aspirin point came from a"
  },
  {
   "where": "body[3]",
-  "sentence": "NHS advice is that people taking warfarin should never binge drink.",
+  "sentence": "Guidance warns that binge drinking while taking warfarin is dangerous because it can raise the INR and the risk of bleeding.",
   "basis": "excerpt",
   "urls": [
-   "https://www.nhs.uk/medicines/anticoagulants/considerations/"
+   "https://www.nhs.uk/medicines/warfarin/"
   ],
-  "note": "added after second pass: Do not binge drink while taking warfarin."
+  "note": "added after second pass: third-pass unsupported: Returned guidance said binge drinking on warfarin is dangerous because it can raise the INR and bleeding risk; the exact NHS page cited was not returned, so URL changed to the "
  },
  {
   "where": "body[4]",
@@ -295,21 +286,21 @@
  },
  {
   "where": "body[5]",
-  "sentence": "The NHS says the anticoagulant alert card should be carried at all times and shown to a doctor or dentist before any procedure.",
+  "sentence": "The NHS says to carry the anticoagulant alert card at all times and show it to your doctor or dentist before any medical or dental procedure.",
   "basis": "excerpt",
   "urls": [
-   "https://www.nhs.uk/medicines/anticoagulants/considerations/"
+   "https://www.nhs.uk/medicines/warfarin/"
   ],
-  "note": "added after second pass: Always carry this with you. Show it to your doctor or dentist before procedures."
+  "note": "added after second pass: third-pass supported: NHS text: you will be given an anticoagulant alert card; always carry it; show it to your doctor or dentist before any medical or dental procedure. Original URL not returned; NHS"
  },
  {
   "where": "body[5]",
-  "sentence": "A sudden change in the amount of vitamin K in the diet can change how much warfarin a person needs.",
+  "sentence": "NHS dietary leaflets say that a big increase or decrease in foods containing vitamin K from week to week can affect the INR, so it is best to keep intake steady and talk to your anticoagulant clinic before major diet changes.",
   "basis": "excerpt",
   "urls": [
-   "https://www.uhsussex.nhs.uk/wp-content/uploads/2023/03/warfarin-and-diet-afa.pdf"
+   "https://www.cuh.nhs.uk/patient-information/dietary-advice-for-patients-taking-warfarin/"
   ],
-  "note": "added after second pass: A sudden change in vitamin K intake can shift warfarin needs."
+  "note": "added after second pass: third-pass textbook: An NHS-linked diet leaflet said significantly increasing or decreasing foods containing vitamin K week to week may affect INR; uhsussex PDF not returned."
  },
  {
   "where": "keyPoints[0]",

@@ -57,6 +57,15 @@
   "note": "blended summary | edited after second pass"
  },
  {
+  "where": "body[0]",
+  "sentence": "Hospital guidelines say HbA1c may be unsuitable for diagnosis when diabetes symptoms have been present for less than about two to three months, and local protocols differ.",
+  "basis": "excerpt",
+  "urls": [
+   "https://www.ruh.nhs.uk/pathology/documents/clinical_guidelines/PATH-006_DM_diagnosis_guideline.pdf"
+  ],
+  "note": "added after second pass: third-pass wrong: Returned text: symptoms of diabetes for less than two months (another source three months); not one month."
+ },
+ {
   "where": "body[1]",
   "sentence": "Doctors use it to diagnose diabetes.",
   "basis": "excerpt",
@@ -110,7 +119,7 @@
   "urls": [
    "https://labtestsonline.org.uk/tests/hba1c-test"
   ],
-  "note": "added after second pass: HbA1c test is not used for diagnosing diabetes during pregnancy or type 1 diabetes."
+  "note": "added after second pass: third-pass supported: HbA1c test is not used for diagnosing diabetes during pregnancy."
  },
  {
   "where": "body[2]",
@@ -222,30 +231,21 @@
  },
  {
   "where": "body[4]",
-  "sentence": "One hospital guideline says HbA1c should not be used for diagnosis when symptoms have appeared over less than a month.",
-  "basis": "excerpt",
-  "urls": [
-   "https://www.ruh.nhs.uk/pathology/documents/clinical_guidelines/PATH-006_DM_diagnosis_guideline.pdf"
-  ],
-  "note": "added after second pass: With a short history (<1 month) of thirst, urinary frequency or weight loss, HbA1c should NOT be used as a diagnostic test."
- },
- {
-  "where": "body[4]",
   "sentence": "Heavy bleeding or haemolytic anaemia can make HbA1c falsely low, while iron deficiency may raise it.",
   "basis": "excerpt",
   "urls": [
    "http://labtestsonline.org.uk/understanding/analytes/a1c/tab/test/"
   ],
-  "note": "added after second pass: Haemolytic anaemia or heavy bleeding may give falsely low results; iron deficiency may raise HbA1c."
+  "note": "added after second pass: third-pass supported: Lab Tests Online UK: haemolytic anaemia or heavy bleeding may give falsely low results; iron deficiency may raise HbA1c."
  },
  {
   "where": "body[4]",
-  "sentence": "Some haemoglobin variants can interfere with HbA1c measurement, so other methods may be needed.",
+  "sentence": "Lab Tests Online UK says the accuracy of an HbA1c result depends on the method used to measure it, and some haemoglobin variants can interfere with the measurement.",
   "basis": "excerpt",
   "urls": [
-   "https://sheffieldlaboratorymedicine.nhs.uk/search-test.php?search=3186"
+   "https://labtestsonline.org.uk/tests/hba1c-test"
   ],
-  "note": "added after second pass: Some haemoglobin variants can interfere with HbA1c measurement and alternative methods may be required."
+  "note": "added after second pass: third-pass unsupported: Returned: accuracy depends on method used; case reports of variants interfering. \"Other methods may be needed\" not stated; Sheffield page not returned."
  },
  {
   "where": "body[5]",
@@ -291,16 +291,7 @@
   "urls": [
    "https://www.england.nhs.uk/london/wp-content/uploads/sites/8/2019/07/dia-consensus-type2-27092018-FINAL.pdf"
   ],
-  "note": "added after second pass: If asymptomatic, repeat venous HbA1c; still in diabetes range confirms diagnosis."
- },
- {
-  "where": "body[5]",
-  "sentence": "Eligibility for the Diabetes Prevention Programme varies by area, so the local service sets the rules.",
-  "basis": "excerpt",
-  "urls": [
-   "https://northeastlondon.icb.nhs.uk/service/diabetes-diabetes-prevention-programme-ndpp/"
-  ],
-  "note": "added after second pass: One London ICB requires a result within 24 months, another within 12 months; check local service."
+  "note": "added after second pass: third-pass supported: NHS trust guidance: result 48 mmol/mol or above with no symptoms is repeated; second result >=48 confirms diagnosis. Search blended several trust pages, exact page not attributab"
  },
  {
   "where": "body[6]",

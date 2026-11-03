@@ -128,21 +128,30 @@
  },
  {
   "where": "body[2]",
-  "sentence": "An NHS leaflet says blood loss from the gut is the most common cause in adult men and postmenopausal women once other causes are excluded.",
+  "sentence": "An NHS leaflet says blood loss from the gut is the most common cause of iron deficiency anaemia in adult men and postmenopausal women.",
   "basis": "excerpt",
   "urls": [
    "https://www.ruh.nhs.uk/patients/patient_information/GAS157_Iron_deficiency_anaemia.pdf"
   ],
-  "note": "added after second pass: Blood loss from the gut is the most common cause in adult men and postmenopausal women"
+  "note": "added after second pass: third-pass supported: Leaflet: gut blood loss is the most common cause of IDA in adult men and postmenopausal women; 'once other causes excluded' not stated."
  },
  {
   "where": "body[2]",
-  "sentence": "Guidance says the cause of the iron deficiency matters more than the anaemia itself.",
+  "sentence": "A UK NHS guideline calls oral iron tablets the first-line treatment for iron deficiency anaemia in pregnancy.",
   "basis": "excerpt",
   "urls": [
-   "https://remedy.bnssg.icb.nhs.uk/adults/gastroenterology-and-colorectal-surgery/anaemia-iron-deficiency/"
+   "https://doclibrary-rcht.cornwall.nhs.uk/GET/d10163217"
   ],
-  "note": "added after second pass: UK sources: cause of iron deficiency matters more than the anaemia; coeliac screening and GI blood-loss assessment central"
+  "note": "added after second pass: third-pass unsupported: Bradford leaflet not returned; 'very common' not seen. Returned: oral iron tablets are first-line for IDA in pregnancy."
+ },
+ {
+  "where": "body[2]",
+  "sentence": "A UK NHS guideline lists intravenous iron for anaemia that has not improved despite oral iron, or when oral iron is not tolerated.",
+  "basis": "excerpt",
+  "urls": [
+   "https://doclibrary-rcht.cornwall.nhs.uk/GET/d10163217"
+  ],
+  "note": "added after second pass: third-pass supported: A clinical guideline lists IV iron for anaemia not improved despite oral iron, or oral iron intolerance (Bradford URL not returned)."
  },
  {
   "where": "body[3]",
@@ -218,21 +227,12 @@
  },
  {
   "where": "body[4]",
-  "sentence": "Hospital guidance notes that inflammation may raise ferritin into the normal range, which can hide iron deficiency.",
-  "basis": "excerpt",
-  "urls": [
-   "https://laboratories.newcastle-hospitals.nhs.uk/wp-content/uploads/2024/11/GP-Adult-haematology-guidelines-v10.pdf"
-  ],
-  "note": "added after second pass: If iron deficiency suspected and ferritin normal, check CRP since inflammation may elevate ferritin into normal range"
- },
- {
-  "where": "body[4]",
-  "sentence": "NHS laboratory guidance notes that ferritin thresholds vary according to the local laboratory.",
+  "sentence": "NHS laboratory guidance for GPs notes that when inflammation is also present, ferritin may be normal or raised even when iron stores are absent.",
   "basis": "excerpt",
   "urls": [
    "https://www.ruh.nhs.uk/pathology/documents/clinical_guidelines/HAEM_Ferritin_a_guide_for_GPs.pdf?t="
   ],
-  "note": "added after second pass: One NHS guide notes ferritin thresholds vary according to the local laboratory"
+  "note": "added after second pass: third-pass supported: UK GP guide: with co-existent inflammatory disorders ferritin may be normal or elevated even when iron stores are absent (Newcastle URL not returned)."
  },
  {
   "where": "body[5]",
@@ -366,24 +366,6 @@
  },
  {
   "where": "body[6]",
-  "sentence": "A normal haemoglobin does not rule out iron deficiency, because tiredness can come before haemoglobin falls.",
-  "basis": "excerpt",
-  "urls": [
-   "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11231206/"
-  ],
-  "note": "added after second pass: Study: iron deficiency may result in fatigue and weakness before haemoglobin levels decrease"
- },
- {
-  "where": "body[6]",
-  "sentence": "Iron given into a vein is considered when tablets have not worked or a rapid rise in iron is needed.",
-  "basis": "excerpt",
-  "urls": [
-   "https://digitalpatientinformationhub.bradfordhospitals.nhs.uk/leaflets/iron-deficiency-anaemia-in-pregnancy-and-after-birth/"
-  ],
-  "note": "added after second pass: IV iron considered when oral treatments have not been successful or a rapid increase in iron is needed"
- },
- {
-  "where": "body[6]",
   "sentence": "A Scottish guideline notes that pregnant women lose iron during and after delivery.",
   "basis": "excerpt",
   "urls": [
@@ -399,15 +381,6 @@
    "https://www.rightdecisions.scot.nhs.uk/ggc-clinical-guidelines/maternity/antenatal-general/prevention-and-management-of-iron-deficiency-anaemia-in-pregnancy-and-the-puerperium-1195/"
   ],
   "note": "same"
- },
- {
-  "where": "body[6]",
-  "sentence": "An NHS leaflet says anaemia in pregnancy and after birth is very common and is usually treated with tablets.",
-  "basis": "excerpt",
-  "urls": [
-   "https://digitalpatientinformationhub.bradfordhospitals.nhs.uk/leaflets/iron-deficiency-anaemia-in-pregnancy-and-after-birth/"
-  ],
-  "note": "added after second pass: Anaemia in pregnancy and after giving birth is very common and is usually treated with oral tablets"
  },
  {
   "where": "keyPoints[0]",
