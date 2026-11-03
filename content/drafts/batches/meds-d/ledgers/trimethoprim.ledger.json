@@ -417,6 +417,25 @@
   "note": "Reported in the search summary of the NHS England patient safety case study."
  },
  {
+  "where": "article.sections[1].body",
+  "sentence": "For someone trying to conceive who takes the medicine daily, the NHS says the doctor may switch antibiotic or prescribe high-dose folic acid.",
+  "basis": "excerpt",
+  "urls": [
+   "https://www.nhs.uk/medicines/trimethoprim/pregnancy-breastfeeding-and-fertility-while-taking-trimethoprim/"
+  ],
+  "note": "Returned NHS excerpt states this; paraphrased."
+ },
+ {
+  "where": "article.sections[1].body",
+  "sentence": "Antibiotics of this kind act on bacteria, which is why they have no effect on viruses.",
+  "basis": "excerpt",
+  "urls": [
+   "https://www.nhs.uk/medicines/trimethoprim/about-trimethoprim/",
+   "https://www.nhs.uk/medicines/antibiotics/"
+  ],
+  "note": "Paraphrase of NHS statement that antibiotics do not work on viral infections."
+ },
+ {
   "where": "article.sections[2].body",
   "sentence": "The NHS lists itching or a mild rash, feeling or being sick, diarrhoea, thrush and headaches as common effects.",
   "basis": "excerpt",
@@ -428,15 +447,6 @@
  {
   "where": "article.sections[2].body",
   "sentence": "Being sick or having severe diarrhoea can stop contraceptive pills from working.",
-  "basis": "excerpt",
-  "urls": [
-   "https://www.nhs.uk/medicines/trimethoprim/side-effects-of-trimethoprim/"
-  ],
-  "note": "Returned NHS excerpt states this; paraphrased."
- },
- {
-  "where": "article.sections[2].body",
-  "sentence": "Serious effects are rare.",
   "basis": "excerpt",
   "urls": [
    "https://www.nhs.uk/medicines/trimethoprim/side-effects-of-trimethoprim/"
@@ -544,15 +554,6 @@
   "note": "Returned NHS excerpt states this; paraphrased."
  },
  {
-  "where": "article.sections[3].body",
-  "sentence": "It names the pharmacist, doctor, midwife or health visitor as the people to check with.",
-  "basis": "excerpt",
-  "urls": [
-   "https://www.nhs.uk/medicines/trimethoprim/pregnancy-breastfeeding-and-fertility-while-taking-trimethoprim/"
-  ],
-  "note": "Returned NHS excerpt states this; paraphrased."
- },
- {
   "where": "article.sections[4].body",
   "sentence": "The NHS names several medicines that interact with trimethoprim and can raise the chance of side effects.",
   "basis": "excerpt",
@@ -605,6 +606,15 @@
   "basis": "excerpt",
   "urls": [
    "https://www.nhs.uk/medicines/trimethoprim/taking-trimethoprim-with-other-medicines-and-herbal-supplements/"
+  ],
+  "note": "Returned NHS excerpt states this; paraphrased."
+ },
+ {
+  "where": "article.sections[4].body",
+  "sentence": "For sickness, the NHS suggests taking the tablets with or after food.",
+  "basis": "excerpt",
+  "urls": [
+   "https://www.nhs.uk/medicines/trimethoprim/side-effects-of-trimethoprim/"
   ],
   "note": "Returned NHS excerpt states this; paraphrased."
  },
