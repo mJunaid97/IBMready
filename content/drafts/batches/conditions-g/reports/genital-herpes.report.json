@@ -1,0 +1,973 @@
+{
+ "id": "genital-herpes",
+ "searchesUsed": 12,
+ "counts": {
+  "supported": 71,
+  "textbook": 3,
+  "unsupported": 31,
+  "wrong": 4,
+  "unsafe": 2,
+  "unchecked": 0
+ },
+ "claims": [
+  {
+   "id": "c001",
+   "classification": "supported",
+   "evidence": "NHS: genital herpes is caused by herpes simplex virus (HSV-1 or 2); NHS advises avoiding vaginal, anal, oral sex while sores present, so spread through sex.",
+   "url": "https://www.nhs.uk/conditions/genital-herpes/",
+   "action": "kept",
+   "sentence": "Genital herpes is a sexually transmitted infection caused by the herpes simplex virus."
+  },
+  {
+   "id": "c002",
+   "classification": "supported",
+   "evidence": "NHS: genital herpes is caused by herpes simplex virus (HSV-1 or 2); NHS advises avoiding vaginal, anal, oral sex while sores present, so spread through sex.",
+   "url": "https://www.nhs.uk/conditions/genital-herpes/",
+   "action": "kept",
+   "sentence": "Genital herpes is a sexually transmitted infection caused by the herpes simplex virus (HSV)."
+  },
+  {
+   "id": "c003",
+   "classification": "supported",
+   "evidence": "GOV.UK/BASHH 2024: HSV-1 is the usual cause of cold sores and can cause genital infection.",
+   "url": "https://www.gov.uk/guidance/genital-herpes",
+   "action": "edited",
+   "sentence": "One type of the virus is the same one that causes cold sores.",
+   "newSentence": "One type of the virus is the one that causes cold sores. (96 reworded to: HSV-1 is the usual cause of cold sores and GOV.UK says it can also cause genital infection.)"
+  },
+  {
+   "id": "c004",
+   "classification": "supported",
+   "evidence": "NHS inform: most people with the herpes virus do not notice any symptoms and do not know they have it.",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/sexual-and-reproductive/genital-herpes/",
+   "action": "edited",
+   "sentence": "Most people who carry the virus do not notice any symptoms and do not know they have it.",
+   "newSentence": "NHS inform says most people with the virus do not notice any symptoms and do not know they have it."
+  },
+  {
+   "id": "c005",
+   "classification": "supported",
+   "evidence": "NHS: outbreaks often clear by themselves; blisters can come back.",
+   "url": "https://www.nhs.uk/conditions/genital-herpes/",
+   "action": "kept",
+   "sentence": "When symptoms do appear, they clear up on their own but can come back."
+  },
+  {
+   "id": "c006",
+   "classification": "supported",
+   "evidence": "NHS: there is no cure; antiviral medicine and self-care options are described.",
+   "url": "https://www.nhs.uk/conditions/genital-herpes/",
+   "action": "kept",
+   "sentence": "There is no cure, but antiviral treatment and self-care can help."
+  },
+  {
+   "id": "c007",
+   "classification": "supported",
+   "evidence": "NHS: genital herpes is caused by herpes simplex virus (HSV-1 or 2); NHS advises avoiding vaginal, anal, oral sex while sores present, so spread through sex.",
+   "url": "https://www.nhs.uk/conditions/genital-herpes/",
+   "action": "kept",
+   "sentence": "Infection with the herpes simplex virus, passed on through sex"
+  },
+  {
+   "id": "c008",
+   "classification": "supported",
+   "evidence": "NHS: the virus may be passed on even if there are no symptoms; spreads from first tingling until sores fully healed.",
+   "url": "https://www.nhs.uk/conditions/genital-herpes/",
+   "action": "edited",
+   "sentence": "The virus can be passed on by skin contact with the infected area, even when no sores or blisters are visible",
+   "newSentence": "The NHS says it may also be passed on when there are no symptoms."
+  },
+  {
+   "id": "c009",
+   "classification": "supported",
+   "evidence": "BASHH 2024 guideline: HSV-1 now the most common cause of genital herpes in UK; HSV-2 more likely to cause recurrent anogenital symptoms.",
+   "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11773994/",
+   "action": "edited",
+   "sentence": "In the UK, HSV-1 is now the most common cause of genital herpes, while HSV-2 is more often linked to recurrent symptoms",
+   "newSentence": "HSV-2 is more likely to cause recurrent symptoms (wording aligned)."
+  },
+  {
+   "id": "c010",
+   "classification": "supported",
+   "evidence": "NHS: virus can be passed on without symptoms.",
+   "url": "https://www.nhs.uk/conditions/genital-herpes/",
+   "action": "kept",
+   "sentence": "Sex with a person who has the virus, including when they have no symptoms"
+  },
+  {
+   "id": "c011",
+   "classification": "supported",
+   "evidence": "NHS: spread from first tingling of an outbreak until sores fully healed; NHS advises avoiding vaginal/anal/oral sex until sores gone. 'Very easy' wording and unattributed instruction not in retrieved text.",
+   "url": "https://www.nhs.uk/conditions/genital-herpes/",
+   "action": "edited",
+   "sentence": "Sex before the sores have fully healed, when passing on the virus is very easy",
+   "newSentence": "The NHS advises avoiding vaginal, anal and oral sex until the sores have gone away, because the virus can spread from the first tingling of an outbreak until the sores have fully healed."
+  },
+  {
+   "id": "c012",
+   "classification": "supported",
+   "evidence": "NHS: condoms lower risk but do not remove it; herpes can still be passed on if the condom does not cover the infected area.",
+   "url": "https://www.nhs.uk/conditions/genital-herpes/",
+   "action": "kept",
+   "sentence": "Using a condom that does not cover the infected area"
+  },
+  {
+   "id": "c013",
+   "classification": "supported",
+   "evidence": "Sexual health pages: skin becomes red, bumps develop and change into blisters; flu-like symptoms (fever, aches, swollen glands) may occur in first outbreak.",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/sexual-and-reproductive/genital-herpes/",
+   "action": "edited",
+   "sentence": "Spots or red bumps around the genital area",
+   "newSentence": "Red skin and bumps in the genital area that change into blisters"
+  },
+  {
+   "id": "c014",
+   "classification": "unsupported",
+   "evidence": "Sources say blisters break and leave painful red sores/cuts on genitals and surrounding areas (NHS); 'open sores' and anus/thighs/bottom locations not confirmed.",
+   "url": "https://www.nhs.uk/conditions/genital-herpes/",
+   "action": "edited",
+   "sentence": "Blisters that burst to leave red, open sores around the genitals, anus, thighs or bottom",
+   "newSentence": "Painful blisters that burst and leave red sores on the genitals and surrounding areas"
+  },
+  {
+   "id": "c015",
+   "classification": "unsupported",
+   "evidence": "No retrieved text says ulcers are recognised by looking.",
+   "url": "https://www.nhs.uk/conditions/genital-herpes/",
+   "action": "removed",
+   "sentence": "Ulcers that a doctor or nurse may recognise by looking"
+  },
+  {
+   "id": "c016",
+   "classification": "supported",
+   "evidence": "NHS neonatal herpes: serious illness in a baby, can be fatal but most recover with treatment.",
+   "url": "https://www.nhs.uk/conditions/neonatal-herpes/",
+   "action": "edited",
+   "sentence": "Neonatal herpes, a serious illness in a baby, if an outbreak occurs around birth or the first infection happens during pregnancy",
+   "newSentence": "Neonatal herpes, a serious illness in a newborn baby, which the NHS says is more likely if genital herpes is first caught in the last 6 weeks of pregnancy"
+  },
+  {
+   "id": "c017",
+   "classification": "unsupported",
+   "evidence": "BASHH search did not return a statement that the guideline aims to limit physical and psychological harm; it returned scope (testing, treatment, transmission, counselling).",
+   "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11773994/",
+   "action": "edited",
+   "sentence": "Physical and psychological harm, which UK guidance aims to limit",
+   "newSentence": "The 2024 BASHH guideline covers diagnostic tests, first episodes and recurrences, treatment, preventing transmission between partners and patient-centred counselling."
+  },
+  {
+   "id": "c018",
+   "classification": "unsupported",
+   "evidence": "No retrieved text says clinicians diagnose by looking; NHS describes a swab from a blister or sore, and that it cannot be done without visible blisters/sores.",
+   "url": "https://www.nhs.uk/conditions/genital-herpes/",
+   "action": "edited",
+   "sentence": "A doctor or nurse may be able to diagnose genital herpes by looking at symptoms such as blisters, sores and ulcers.",
+   "newSentence": "At a sexual health clinic, the NHS says a small swab is used to take fluid from a blister or sore for testing."
+  },
+  {
+   "id": "c019",
+   "classification": "supported",
+   "evidence": "NHS: clinic takes fluid from a blister or sore with a small swab (uncomfortable for a moment). 'Ask about symptoms' not retrieved.",
+   "url": "https://www.nhs.uk/conditions/genital-herpes/",
+   "action": "edited",
+   "sentence": "They will ask about the symptoms and may take a small swab from a blister or sore for testing.",
+   "newSentence": "The NHS says a sexual health clinic can test for genital herpes by taking fluid from a blister or sore with a small swab."
+  },
+  {
+   "id": "c020",
+   "classification": "unsupported",
+   "evidence": "Searches could not confirm 'no screening test' or 'partners only tested if symptomatic' (one search returned it unsourced, two said unverified/not covered). NHS does say the swab cannot be done without visible blisters or sores.",
+   "url": "https://www.nhs.uk/conditions/genital-herpes/",
+   "action": "edited",
+   "sentence": "There is no screening test for herpes in people without symptoms, so partners are only tested if they also have symptoms.",
+   "newSentence": "The test cannot be done if there are no visible blisters or sores. (kept as NHS-sourced statement; screening/partner claims removed)"
+  },
+  {
+   "id": "c021",
+   "classification": "supported",
+   "evidence": "NHS: there is no cure; antiviral medicine and self-care options are described.",
+   "url": "https://www.nhs.uk/conditions/genital-herpes/",
+   "action": "kept",
+   "sentence": "There is no cure for genital herpes, but treatment can help."
+  },
+  {
+   "id": "c022",
+   "classification": "supported",
+   "evidence": "NHS: antiviral for first episode works best if started within 5 days of symptoms appearing. 'To stop symptoms getting worse' not retrieved.",
+   "url": "https://www.nhs.uk/conditions/genital-herpes/",
+   "action": "edited",
+   "sentence": "For a first episode, an antiviral medicine may be prescribed to stop symptoms getting worse, and the NHS says it needs to be started within 5 days of symptoms appearing.",
+   "newSentence": "For a first episode, the NHS says antiviral medicine is prescribed and works best if started within 5 days of symptoms appearing"
+  },
+  {
+   "id": "c023",
+   "classification": "supported",
+   "evidence": "NHS: cream for the pain.",
+   "url": "https://www.nhs.uk/conditions/genital-herpes/",
+   "action": "kept",
+   "sentence": "Cream may be offered for the pain."
+  },
+  {
+   "id": "c024",
+   "classification": "supported",
+   "evidence": "NHS: outbreaks often clear by themselves; local sexual health pages say recurrences often need no antivirals.",
+   "url": "https://www.nhs.uk/conditions/genital-herpes/",
+   "action": "edited",
+   "sentence": "Recurrences often clear up without treatment, although antivirals can be used.",
+   "newSentence": "Outbreaks often clear up by themselves."
+  },
+  {
+   "id": "c025",
+   "classification": "supported",
+   "evidence": "NHS: people with frequent outbreaks may benefit from daily antivirals for 6 to 12 months (number omitted).",
+   "url": "https://www.nhs.uk/conditions/genital-herpes/",
+   "action": "edited",
+   "sentence": "Some people who have frequent outbreaks may take antivirals long term.",
+   "newSentence": "Some people who have frequent outbreaks may benefit from taking antiviral medicine for several months."
+  },
+  {
+   "id": "c026",
+   "classification": "supported",
+   "evidence": "NHS: keep area clean with plain or salt water; ice pack wrapped in a flannel; petroleum jelly or 5% lidocaine; pass urine while pouring water over genitals.",
+   "url": "https://www.nhs.uk/conditions/genital-herpes/",
+   "action": "edited",
+   "sentence": "Self-care includes keeping the area clean with plain or salt water and using a cold pack wrapped in a cloth.",
+   "newSentence": "using an ice pack wrapped in a flannel"
+  },
+  {
+   "id": "c027",
+   "classification": "supported",
+   "evidence": "NHS: spread from first tingling of an outbreak until sores fully healed; NHS advises avoiding vaginal/anal/oral sex until sores gone. 'Very easy' wording and unattributed instruction not in retrieved text.",
+   "url": "https://www.nhs.uk/conditions/genital-herpes/",
+   "action": "edited",
+   "sentence": "Sex is best avoided until the sores have gone, because the virus is very easy to pass on from the first tingling or itching of an outbreak until the sores have fully healed.",
+   "newSentence": "The NHS advises avoiding vaginal, anal and oral sex until the sores have gone away, because the virus can spread from the first tingling of an outbreak until the sores have fully healed."
+  },
+  {
+   "id": "c028",
+   "classification": "supported",
+   "evidence": "NHS: condoms lower risk but do not remove it; herpes can still be passed on if the condom does not cover the infected area.",
+   "url": "https://www.nhs.uk/conditions/genital-herpes/",
+   "action": "kept",
+   "sentence": "Condoms lower the risk of passing the virus on, but not if they do not cover the infected area."
+  },
+  {
+   "id": "c029",
+   "classification": "unsupported",
+   "evidence": "No retrieved text says sexual health services advise on longer-term treatment to reduce transmission; CDC (US) says suppressive therapy taken consistently can reduce but not eliminate transmission.",
+   "url": "https://www.cdc.gov/std/treatment-guidelines/herpes.htm",
+   "action": "edited",
+   "sentence": "Sexual health services can advise on longer-term treatment that may also reduce the chance of passing the virus on to a partner.",
+   "newSentence": "US CDC guidance says suppressive antiviral treatment, taken consistently and correctly, can reduce but not eliminate the risk of passing the virus on."
+  },
+  {
+   "id": "c030",
+   "classification": "unsupported",
+   "evidence": "NHS: visit a sexual health clinic if you have symptoms; many offer walk-in. 'As soon as possible' not confirmed in retrieved text (unattributed 'promptly' only).",
+   "url": "https://www.nhs.uk/conditions/genital-herpes/",
+   "action": "edited",
+   "sentence": "For symptoms of genital herpes, the NHS advises going to a sexual health clinic as soon as possible; many offer a walk-in service.",
+   "newSentence": "the NHS advises visiting a sexual health clinic, and many offer a walk-in service"
+  },
+  {
+   "id": "c031",
+   "classification": "supported",
+   "evidence": "NHS: GP can see you but will probably refer to a sexual health clinic.",
+   "url": "https://www.nhs.uk/conditions/genital-herpes/",
+   "action": "kept",
+   "sentence": "A GP can also help but will probably refer to a sexual health clinic."
+  },
+  {
+   "id": "c032",
+   "classification": "supported",
+   "evidence": "NHS: tell doctor or midwife if you think you have genital herpes symptoms in pregnancy / have a history.",
+   "url": "https://www.nhs.uk/conditions/neonatal-herpes/",
+   "action": "edited",
+   "sentence": "In pregnancy, a midwife or GP is the route if genital herpes is suspected.",
+   "newSentence": "In pregnancy, the NHS says to tell a midwife or doctor if genital herpes is suspected."
+  },
+  {
+   "id": "c033",
+   "classification": "supported",
+   "evidence": "MedlinePlus: contact provider for fever, headache, vomiting during or after an outbreak.",
+   "url": "https://medlineplus.gov/ency/article/000857.htm",
+   "action": "edited",
+   "sentence": "For fever, headache or vomiting during or after an outbreak, MedlinePlus (US) advises contacting a healthcare provider, which in the UK would usually mean NHS 111 or a GP the same day.",
+   "newSentence": "MedlinePlus (US) advises contacting a healthcare provider if fever, headache or vomiting develop during or after an outbreak; a GP or sexual health clinic is the usual first contact in the UK."
+  },
+  {
+   "id": "c034",
+   "classification": "textbook",
+   "evidence": "Standard UK emergency number.",
+   "url": "n/a",
+   "action": "kept",
+   "sentence": "For a medical emergency, call 999."
+  },
+  {
+   "id": "c035",
+   "classification": "supported",
+   "evidence": "NHS: genital herpes is caused by herpes simplex virus (HSV-1 or 2); NHS advises avoiding vaginal, anal, oral sex while sores present, so spread through sex.",
+   "url": "https://www.nhs.uk/conditions/genital-herpes/",
+   "action": "kept",
+   "sentence": "Genital herpes is an infection of the genital area caused by the herpes simplex virus."
+  },
+  {
+   "id": "c036",
+   "classification": "supported",
+   "evidence": "NHS inform: most people with the herpes virus do not notice any symptoms and do not know they have it.",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/sexual-and-reproductive/genital-herpes/",
+   "action": "edited",
+   "sentence": "The NHS says most people with the virus do not notice any symptoms, so many do not know they carry it.",
+   "newSentence": "NHS inform says most people with the virus do not notice any symptoms and do not know they have it."
+  },
+  {
+   "id": "c037",
+   "classification": "textbook",
+   "evidence": "Plain non-judgemental statement; no source needed.",
+   "url": "n/a",
+   "action": "kept",
+   "sentence": "Carrying the virus without symptoms is not a sign that anyone has done something wrong."
+  },
+  {
+   "id": "c038",
+   "classification": "wrong",
+   "evidence": "Two-to-twelve days comes from a single hospital-trust sexual health page (Chelsea and Westminster), not the NHS page; other sources say within two weeks, and some people get symptoms months or years later.",
+   "url": "https://www.chelwest.nhs.uk/services/hiv-sexual-health/genital-herpes-symptoms",
+   "action": "edited",
+   "sentence": "When symptoms do appear, they usually start between two and twelve days after contact with the virus, according to the NHS.",
+   "newSentence": "the same service says they usually start between two and twelve days after contact with the virus, although sources differ"
+  },
+  {
+   "id": "c039",
+   "classification": "supported",
+   "evidence": "Sexual health pages: skin becomes red, bumps develop and change into blisters; flu-like symptoms (fever, aches, swollen glands) may occur in first outbreak.",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/sexual-and-reproductive/genital-herpes/",
+   "action": "edited",
+   "sentence": "A first episode can bring spots or red bumps around the genital area and flu-like symptoms.",
+   "newSentence": "Red skin and bumps in the genital area that change into blisters"
+  },
+  {
+   "id": "c040",
+   "classification": "unsupported",
+   "evidence": "Sources say blisters break and leave painful red sores/cuts on genitals and surrounding areas (NHS); 'open sores' and anus/thighs/bottom locations not confirmed.",
+   "url": "https://www.nhs.uk/conditions/genital-herpes/",
+   "action": "edited",
+   "sentence": "Blisters can burst to leave red, open sores around the genitals, anus, thighs or bottom.",
+   "newSentence": "Painful blisters that burst and leave red sores on the genitals and surrounding areas"
+  },
+  {
+   "id": "c041",
+   "classification": "supported",
+   "evidence": "WHO: symptoms often begin with tingling, itching or burning near where sores will appear.",
+   "url": "https://www.who.int/news-room/fact-sheets/detail/herpes-simplex-virus",
+   "action": "edited",
+   "sentence": "A tingling, burning or itching feeling can signal that an episode is starting.",
+   "newSentence": "The World Health Organization says symptoms often begin with tingling, itching or burning near where the sores will appear."
+  },
+  {
+   "id": "c042",
+   "classification": "supported",
+   "evidence": "NHS: outbreaks often clear by themselves; blisters can come back.",
+   "url": "https://www.nhs.uk/conditions/genital-herpes/",
+   "action": "kept",
+   "sentence": "Symptoms clear up on their own but can come back."
+  },
+  {
+   "id": "c043",
+   "classification": "supported",
+   "evidence": "Sexual health leaflets: recurrences generally less severe and clear up more quickly than the first episode.",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/sexual-and-reproductive/genital-herpes/",
+   "action": "kept",
+   "sentence": "Repeat outbreaks are typically milder than the first."
+  },
+  {
+   "id": "c044",
+   "classification": "supported",
+   "evidence": "MedlinePlus/CDC: outbreaks become less frequent over time; leaflets: may never have a repeat episode. 'Less severe' covered by recurrence sources.",
+   "url": "https://medlineplus.gov/ency/article/000857.htm",
+   "action": "kept",
+   "sentence": "Over time, outbreaks tend to happen less often and be less severe, and some people never have another outbreak."
+  },
+  {
+   "id": "c045",
+   "classification": "supported",
+   "evidence": "NHS: genital herpes is caused by herpes simplex virus (HSV-1 or 2); NHS advises avoiding vaginal, anal, oral sex while sores present, so spread through sex.",
+   "url": "https://www.nhs.uk/conditions/genital-herpes/",
+   "action": "kept",
+   "sentence": "Genital herpes is passed on mainly through sex, including vaginal, anal and oral sex."
+  },
+  {
+   "id": "c046",
+   "classification": "supported",
+   "evidence": "NHS: the virus may be passed on even if there are no symptoms; spreads from first tingling until sores fully healed.",
+   "url": "https://www.nhs.uk/conditions/genital-herpes/",
+   "action": "edited",
+   "sentence": "The NHS says it can also pass on through skin contact with the infected area, even when no sores or blisters are visible.",
+   "newSentence": "The NHS says it may also be passed on when there are no symptoms."
+  },
+  {
+   "id": "c047",
+   "classification": "supported",
+   "evidence": "NHS: spread from first tingling of an outbreak until sores fully healed; NHS advises avoiding vaginal/anal/oral sex until sores gone. 'Very easy' wording and unattributed instruction not in retrieved text.",
+   "url": "https://www.nhs.uk/conditions/genital-herpes/",
+   "action": "edited",
+   "sentence": "It is very easy to pass on from the first tingling or itching of a new outbreak until the sores have fully healed.",
+   "newSentence": "The NHS advises avoiding vaginal, anal and oral sex until the sores have gone away, because the virus can spread from the first tingling of an outbreak until the sores have fully healed."
+  },
+  {
+   "id": "c048",
+   "classification": "supported",
+   "evidence": "GOV.UK/BASHH 2024: HSV-1 is the usual cause of cold sores and can cause genital infection.",
+   "url": "https://www.gov.uk/guidance/genital-herpes",
+   "action": "edited",
+   "sentence": "One type of the virus is the same one that causes cold sores.",
+   "newSentence": "One type of the virus is the one that causes cold sores. (96 reworded to: HSV-1 is the usual cause of cold sores and GOV.UK says it can also cause genital infection.)"
+  },
+  {
+   "id": "c049",
+   "classification": "supported",
+   "evidence": "BASHH 2024 guideline: HSV-1 now the most common cause of genital herpes in UK; HSV-2 more likely to cause recurrent anogenital symptoms.",
+   "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11773994/",
+   "action": "edited",
+   "sentence": "In the UK, BASHH describes HSV-1 as now the most common cause of genital herpes, while HSV-2 is more often linked to recurrent symptoms.",
+   "newSentence": "HSV-2 is more likely to cause recurrent symptoms (wording aligned)."
+  },
+  {
+   "id": "c050",
+   "classification": "unsupported",
+   "evidence": "Inference not in any source.",
+   "url": "https://www.nhs.uk/conditions/genital-herpes/",
+   "action": "removed",
+   "sentence": "This means genital herpes is not always linked to a particular kind of partner or a particular kind of sex."
+  },
+  {
+   "id": "c051",
+   "classification": "supported",
+   "evidence": "NHS: condoms lower risk but do not remove it; herpes can still be passed on if the condom does not cover the infected area.",
+   "url": "https://www.nhs.uk/conditions/genital-herpes/",
+   "action": "kept",
+   "sentence": "Condoms lower the risk of passing the virus on."
+  },
+  {
+   "id": "c052",
+   "classification": "supported",
+   "evidence": "NHS: condoms lower risk but do not remove it; herpes can still be passed on if the condom does not cover the infected area.",
+   "url": "https://www.nhs.uk/conditions/genital-herpes/",
+   "action": "kept",
+   "sentence": "Herpes can still be passed on if the condom does not cover the infected area."
+  },
+  {
+   "id": "c053",
+   "classification": "unsupported",
+   "evidence": "Searches could not confirm 'no screening test' or 'partners only tested if symptomatic' (one search returned it unsourced, two said unverified/not covered). NHS does say the swab cannot be done without visible blisters or sores.",
+   "url": "https://www.nhs.uk/conditions/genital-herpes/",
+   "action": "edited",
+   "sentence": "There is no screening test for people without symptoms, which is one reason the virus can spread without anyone knowing.",
+   "newSentence": "The test cannot be done if there are no visible blisters or sores. (kept as NHS-sourced statement; screening/partner claims removed)"
+  },
+  {
+   "id": "c054",
+   "classification": "unsupported",
+   "evidence": "No retrieved text says clinicians diagnose by looking; NHS describes a swab from a blister or sore, and that it cannot be done without visible blisters/sores.",
+   "url": "https://www.nhs.uk/conditions/genital-herpes/",
+   "action": "edited",
+   "sentence": "A doctor or nurse may be able to diagnose genital herpes by looking at symptoms such as blisters, sores and ulcers.",
+   "newSentence": "At a sexual health clinic, the NHS says a small swab is used to take fluid from a blister or sore for testing."
+  },
+  {
+   "id": "c055",
+   "classification": "supported",
+   "evidence": "NHS: clinic takes fluid from a blister or sore with a small swab (uncomfortable for a moment). 'Ask about symptoms' not retrieved.",
+   "url": "https://www.nhs.uk/conditions/genital-herpes/",
+   "action": "edited",
+   "sentence": "They will usually ask about the symptoms and may take a small swab from a blister or sore for testing.",
+   "newSentence": "The NHS says a sexual health clinic can test for genital herpes by taking fluid from a blister or sore with a small swab."
+  },
+  {
+   "id": "c056",
+   "classification": "unsupported",
+   "evidence": "'The NHS says testing is free' not retrieved from nhs.uk; NHS inform says book an appointment for free testing at the local sexual health service. Free applies to NHS inform (Scotland).",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/sexual-and-reproductive/genital-herpes/",
+   "action": "edited",
+   "sentence": "The NHS says testing is free through sexual health services.",
+   "newSentence": "NHS inform advises booking an appointment with the local sexual health service for free testing."
+  },
+  {
+   "id": "c057",
+   "classification": "unsupported",
+   "evidence": "NHS: visit a sexual health clinic if you have symptoms; many offer walk-in. 'As soon as possible' not confirmed in retrieved text (unattributed 'promptly' only).",
+   "url": "https://www.nhs.uk/conditions/genital-herpes/",
+   "action": "edited",
+   "sentence": "The NHS advises going to a sexual health clinic as soon as possible if symptoms appear.",
+   "newSentence": "the NHS advises visiting a sexual health clinic, and many offer a walk-in service"
+  },
+  {
+   "id": "c058",
+   "classification": "supported",
+   "evidence": "NHS: GP can see you but will probably refer to a sexual health clinic.",
+   "url": "https://www.nhs.uk/conditions/genital-herpes/",
+   "action": "kept",
+   "sentence": "A GP can also be seen, but will probably refer to a sexual health clinic."
+  },
+  {
+   "id": "c059",
+   "classification": "supported",
+   "evidence": "NHS: many sexual health clinics offer a walk-in service.",
+   "url": "https://www.nhs.uk/conditions/genital-herpes/",
+   "action": "kept",
+   "sentence": "Many sexual health clinics offer a walk-in service."
+  },
+  {
+   "id": "c060",
+   "classification": "unsupported",
+   "evidence": "Searches could not confirm 'no screening test' or 'partners only tested if symptomatic' (one search returned it unsourced, two said unverified/not covered). NHS does say the swab cannot be done without visible blisters or sores.",
+   "url": "https://www.nhs.uk/conditions/genital-herpes/",
+   "action": "edited",
+   "sentence": "There is no screening test for herpes in people who have no symptoms.",
+   "newSentence": "The test cannot be done if there are no visible blisters or sores. (kept as NHS-sourced statement; screening/partner claims removed)"
+  },
+  {
+   "id": "c061",
+   "classification": "unsupported",
+   "evidence": "Searches could not confirm 'no screening test' or 'partners only tested if symptomatic' (one search returned it unsourced, two said unverified/not covered). NHS does say the swab cannot be done without visible blisters or sores.",
+   "url": "https://www.nhs.uk/conditions/genital-herpes/",
+   "action": "edited",
+   "sentence": "Partners should only have a test if they also have symptoms.",
+   "newSentence": "The test cannot be done if there are no visible blisters or sores. (kept as NHS-sourced statement; screening/partner claims removed)"
+  },
+  {
+   "id": "c062",
+   "classification": "unsupported",
+   "evidence": "Not in retrieved text.",
+   "url": "https://www.nhs.uk/conditions/genital-herpes/",
+   "action": "removed",
+   "sentence": "The NHS says that a person who thinks they or a partner may have symptoms should get checked."
+  },
+  {
+   "id": "c063",
+   "classification": "supported",
+   "evidence": "NHS: there is no cure; antiviral medicine and self-care options are described.",
+   "url": "https://www.nhs.uk/conditions/genital-herpes/",
+   "action": "kept",
+   "sentence": "There is no cure for genital herpes, and treatment aims to ease symptoms and help outbreaks pass."
+  },
+  {
+   "id": "c064",
+   "classification": "supported",
+   "evidence": "NHS: antiviral for first episode works best if started within 5 days of symptoms appearing. 'To stop symptoms getting worse' not retrieved.",
+   "url": "https://www.nhs.uk/conditions/genital-herpes/",
+   "action": "edited",
+   "sentence": "For a first episode, antiviral medicine may be prescribed to stop symptoms getting worse, and the NHS says it needs to be started within 5 days of symptoms appearing.",
+   "newSentence": "For a first episode, the NHS says antiviral medicine is prescribed and works best if started within 5 days of symptoms appearing"
+  },
+  {
+   "id": "c065",
+   "classification": "supported",
+   "evidence": "NHS: cream for the pain.",
+   "url": "https://www.nhs.uk/conditions/genital-herpes/",
+   "action": "kept",
+   "sentence": "Cream may be offered for the pain."
+  },
+  {
+   "id": "c066",
+   "classification": "supported",
+   "evidence": "NHS: outbreaks often clear by themselves; local sexual health pages say recurrences often need no antivirals.",
+   "url": "https://www.nhs.uk/conditions/genital-herpes/",
+   "action": "edited",
+   "sentence": "Recurrences usually clear up without any treatment, although antivirals can be used.",
+   "newSentence": "Outbreaks often clear up by themselves."
+  },
+  {
+   "id": "c067",
+   "classification": "unsupported",
+   "evidence": "Timing of antivirals for recurrences not in retrieved text.",
+   "url": "https://www.nhs.uk/conditions/genital-herpes/",
+   "action": "removed",
+   "sentence": "For recurrences, antiviral medicine works best when started as soon as tingling, burning or itching begins, or as soon as blisters appear."
+  },
+  {
+   "id": "c068",
+   "classification": "supported",
+   "evidence": "NHS: people with frequent outbreaks may benefit from daily antivirals for 6 to 12 months (number omitted).",
+   "url": "https://www.nhs.uk/conditions/genital-herpes/",
+   "action": "edited",
+   "sentence": "Some people with frequent outbreaks may take antivirals for a longer period.",
+   "newSentence": "Some people who have frequent outbreaks may benefit from taking antiviral medicine for several months."
+  },
+  {
+   "id": "c069",
+   "classification": "supported",
+   "evidence": "CDC (US): suppressive therapy reduces frequency of recurrences in patients with frequent recurrences (70-80%, omitted).",
+   "url": "https://www.cdc.gov/std/treatment-guidelines/herpes.htm",
+   "action": "kept",
+   "sentence": "US CDC guidance says that daily suppressive antiviral treatment reduces how often recurrences happen in people who have frequent recurrences."
+  },
+  {
+   "id": "c070",
+   "classification": "unsupported",
+   "evidence": "CDC says suppressive therapy can reduce but not eliminate transmission when taken consistently; the 'combine with condoms and avoid sex' clause was not retrieved.",
+   "url": "https://www.cdc.gov/std/treatment-guidelines/herpes.htm",
+   "action": "edited",
+   "sentence": "The CDC adds that suppressive treatment is likely to reduce passing the virus on in people with a history of symptoms, and it should be combined with consistent condom use and avoiding sex during recurrences.",
+   "newSentence": "It adds that suppressive treatment, taken consistently and correctly, can reduce but not eliminate the risk of passing the virus on."
+  },
+  {
+   "id": "c071",
+   "classification": "supported",
+   "evidence": "NHS: keep area clean with plain or salt water; ice pack wrapped in a flannel; petroleum jelly or 5% lidocaine; pass urine while pouring water over genitals.",
+   "url": "https://www.nhs.uk/conditions/genital-herpes/",
+   "action": "edited",
+   "sentence": "Self-care described by the NHS includes keeping the area clean with plain or salt water.",
+   "newSentence": "using an ice pack wrapped in a flannel"
+  },
+  {
+   "id": "c072",
+   "classification": "supported",
+   "evidence": "NHS: keep area clean with plain or salt water; ice pack wrapped in a flannel; petroleum jelly or 5% lidocaine; pass urine while pouring water over genitals.",
+   "url": "https://www.nhs.uk/conditions/genital-herpes/",
+   "action": "edited",
+   "sentence": "A cold pack wrapped in a cloth can ease the pain, and passing urine while pouring water over the genitals can help.",
+   "newSentence": "using an ice pack wrapped in a flannel"
+  },
+  {
+   "id": "c073",
+   "classification": "unsupported",
+   "evidence": "Tight clothing/avoid touching sores not retrieved.",
+   "url": "https://www.nhs.uk/conditions/genital-herpes/",
+   "action": "removed",
+   "sentence": "The NHS also advises avoiding tight clothing and avoiding touching sores unless applying cream."
+  },
+  {
+   "id": "c074",
+   "classification": "supported",
+   "evidence": "NHS neonatal herpes: serious illness in newborns.",
+   "url": "https://www.nhs.uk/conditions/neonatal-herpes/",
+   "action": "kept",
+   "sentence": "The main concern in pregnancy is neonatal herpes, a serious illness in a newborn baby."
+  },
+  {
+   "id": "c075",
+   "classification": "wrong",
+   "evidence": "NHS: risk of neonatal herpes is higher if first caught in the last 6 weeks of pregnancy and much lower if previously had it or caught early; recurrent outbreak risk is low even with lesions at delivery. 'Outbreak at birth' framed as the risk was misleading.",
+   "url": "https://www.nhs.uk/conditions/neonatal-herpes/",
+   "action": "edited",
+   "sentence": "The NHS says there is a risk if a person has a herpes outbreak when giving birth, or gets genital herpes for the first time during pregnancy.",
+   "newSentence": "The risk ... is higher if genital herpes is caught for the first time in the last 6 weeks of pregnancy, and is much lower for people who have had genital herpes before"
+  },
+  {
+   "id": "c076",
+   "classification": "unsafe",
+   "evidence": "Reassurance of 'healthy pregnancy and vaginal delivery' not in retrieved text; NHS says risk much lower, not absent, and to tell the midwife.",
+   "url": "https://www.nhs.uk/conditions/neonatal-herpes/",
+   "action": "edited",
+   "sentence": "A person who has had genital herpes before pregnancy can usually expect a healthy pregnancy and a vaginal delivery.",
+   "newSentence": "much lower for people who have had genital herpes before ... The NHS advises telling a midwife or doctor about a history of genital herpes"
+  },
+  {
+   "id": "c077",
+   "classification": "wrong",
+   "evidence": "Retrieved NHS text: antivirals offered from around 32 weeks; BASHH leaflet: first episode late in pregnancy, tablets from 32 weeks until birth. 'Week 28 from diagnosis' attribution to NHS not supported.",
+   "url": "https://www.nhs.uk/conditions/neonatal-herpes/",
+   "action": "edited",
+   "sentence": "The NHS says antiviral treatment may be offered from diagnosis until the birth if herpes is first caught after week 28 of pregnancy.",
+   "newSentence": "The NHS says antiviral medicine is offered from around 32 weeks of pregnancy to reduce this risk."
+  },
+  {
+   "id": "c078",
+   "classification": "supported",
+   "evidence": "Local NHS trust leaflets give different schedules (e.g. 36 weeks).",
+   "url": "https://www.nhs.uk/conditions/neonatal-herpes/",
+   "action": "edited",
+   "sentence": "Other UK guidance describes different timings for antivirals, so the plan is made with the midwife or doctor.",
+   "newSentence": "Some local NHS trust leaflets give different schedules, so the plan is agreed with the midwife or doctor."
+  },
+  {
+   "id": "c079",
+   "classification": "supported",
+   "evidence": "Joint BASHH/RCOG guideline updated 2024.",
+   "url": "https://www.bashh.org/_userfiles/pages/files/clarkeetal2024jointbritishassociationforsexualhealthandhivandroyalcollegeofobstetriciansand.pdf",
+   "action": "kept",
+   "sentence": "UK guidance from BASHH and the Royal College of Obstetricians and Gynaecologists covers herpes in pregnancy and the newborn, with an update in 2024."
+  },
+  {
+   "id": "c080",
+   "classification": "supported",
+   "evidence": "BASHH algorithm: planned caesarean especially if within 6 weeks of delivery; NHS leaflet similar.",
+   "url": "https://www.bashh.org/_userfiles/pages/files/clarkeetal2024jointbritishassociationforsexualhealthandhivandroyalcollegeofobstetriciansand.pdf",
+   "action": "edited",
+   "sentence": "For a first episode late in pregnancy, UK guidance material suggests a planned caesarean may be advised, especially close to delivery.",
+   "newSentence": "BASHH algorithms recommend a planned caesarean especially if a first episode occurs within 6 weeks of delivery."
+  },
+  {
+   "id": "c081",
+   "classification": "supported",
+   "evidence": "NHS: tell doctor or midwife if you think you have genital herpes symptoms in pregnancy / have a history.",
+   "url": "https://www.nhs.uk/conditions/neonatal-herpes/",
+   "action": "edited",
+   "sentence": "The NHS says to see a midwife or GP if genital herpes is suspected during pregnancy.",
+   "newSentence": "In pregnancy, the NHS says to tell a midwife or doctor if genital herpes is suspected."
+  },
+  {
+   "id": "c082",
+   "classification": "unsupported",
+   "evidence": "NHS wording not retrieved; MedlinePlus and CDC say outbreaks become less frequent over time.",
+   "url": "https://medlineplus.gov/ency/article/000857.htm",
+   "action": "edited",
+   "sentence": "Symptoms often become milder and less frequent with time, according to the NHS.",
+   "newSentence": "MedlinePlus (US) says outbreaks become less frequent over time"
+  },
+  {
+   "id": "c083",
+   "classification": "supported",
+   "evidence": "NHS: spread from first tingling of an outbreak until sores fully healed; NHS advises avoiding vaginal/anal/oral sex until sores gone. 'Very easy' wording and unattributed instruction not in retrieved text.",
+   "url": "https://www.nhs.uk/conditions/genital-herpes/",
+   "action": "edited",
+   "sentence": "Sex is best avoided until sores have gone, because the virus is very easy to pass on while sores are present.",
+   "newSentence": "The NHS advises avoiding vaginal, anal and oral sex until the sores have gone away, because the virus can spread from the first tingling of an outbreak until the sores have fully healed."
+  },
+  {
+   "id": "c084",
+   "classification": "unsupported",
+   "evidence": "No retrieved text says sexual health services advise on longer-term treatment to reduce transmission; CDC (US) says suppressive therapy taken consistently can reduce but not eliminate transmission.",
+   "url": "https://www.cdc.gov/std/treatment-guidelines/herpes.htm",
+   "action": "edited",
+   "sentence": "Sexual health services can advise on longer-term treatment that may also reduce the chance of passing the virus on to a partner.",
+   "newSentence": "US CDC guidance says suppressive antiviral treatment, taken consistently and correctly, can reduce but not eliminate the risk of passing the virus on."
+  },
+  {
+   "id": "c085",
+   "classification": "unsupported",
+   "evidence": "BASHH search did not return a statement that the guideline aims to limit physical and psychological harm; it returned scope (testing, treatment, transmission, counselling).",
+   "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11773994/",
+   "action": "edited",
+   "sentence": "UK guidance from BASHH aims to limit both the physical and the psychological harm from genital herpes and to reduce passing the virus on.",
+   "newSentence": "The 2024 BASHH guideline covers diagnostic tests, first episodes and recurrences, treatment, preventing transmission between partners and patient-centred counselling."
+  },
+  {
+   "id": "c086",
+   "classification": "unsupported",
+   "evidence": "Inference; no source says clinics support emotional wellbeing.",
+   "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11773994/",
+   "action": "removed",
+   "sentence": "This means a sexual health clinic can support emotional wellbeing as well as treat symptoms."
+  },
+  {
+   "id": "c087",
+   "classification": "supported",
+   "evidence": "MedlinePlus: contact provider for fever, headache, vomiting during or after an outbreak.",
+   "url": "https://medlineplus.gov/ency/article/000857.htm",
+   "action": "edited",
+   "sentence": "Fever, headache or vomiting during or after an outbreak should prompt contact with a healthcare provider, according to MedlinePlus in the US.",
+   "newSentence": "MedlinePlus (US) advises contacting a healthcare provider if fever, headache or vomiting develop during or after an outbreak; a GP or sexual health clinic is the usual first contact in the UK."
+  },
+  {
+   "id": "c088",
+   "classification": "unsupported",
+   "evidence": "NHS 111 / same-day GP mapping not in any retrieved text.",
+   "url": "https://medlineplus.gov/ency/article/000857.htm",
+   "action": "removed",
+   "sentence": "In the UK that would usually be NHS 111 or a GP the same day, and a sexual health clinic for new genital symptoms."
+  },
+  {
+   "id": "c089",
+   "classification": "supported",
+   "evidence": "NHS: there is no cure; antiviral medicine and self-care options are described.",
+   "url": "https://www.nhs.uk/conditions/genital-herpes/",
+   "action": "kept",
+   "sentence": "There is no cure for genital herpes, according to the NHS."
+  },
+  {
+   "id": "c090",
+   "classification": "supported",
+   "evidence": "NHS: outbreaks often clear by themselves; blisters can come back.",
+   "url": "https://www.nhs.uk/conditions/genital-herpes/",
+   "action": "kept",
+   "sentence": "Symptoms clear up on their own but can come back, and antiviral treatment can help during outbreaks."
+  },
+  {
+   "id": "c091",
+   "classification": "supported",
+   "evidence": "NHS: people with frequent outbreaks may benefit from daily antivirals for 6 to 12 months (number omitted).",
+   "url": "https://www.nhs.uk/conditions/genital-herpes/",
+   "action": "edited",
+   "sentence": "Some people with frequent outbreaks take antivirals for a longer period.",
+   "newSentence": "Some people who have frequent outbreaks may benefit from taking antiviral medicine for several months."
+  },
+  {
+   "id": "c092",
+   "classification": "unsupported",
+   "evidence": "Not retrieved.",
+   "url": "https://www.nhs.uk/conditions/genital-herpes/",
+   "action": "removed",
+   "sentence": "A sexual health clinic can talk through which options suit each person."
+  },
+  {
+   "id": "c093",
+   "classification": "supported",
+   "evidence": "NHS: the virus may be passed on even if there are no symptoms; spreads from first tingling until sores fully healed.",
+   "url": "https://www.nhs.uk/conditions/genital-herpes/",
+   "action": "edited",
+   "sentence": "Yes, the NHS says genital herpes can spread even when no symptoms or visible sores are present.",
+   "newSentence": "The NHS says it may also be passed on when there are no symptoms."
+  },
+  {
+   "id": "c094",
+   "classification": "supported",
+   "evidence": "NHS: spread from first tingling of an outbreak until sores fully healed; NHS advises avoiding vaginal/anal/oral sex until sores gone. 'Very easy' wording and unattributed instruction not in retrieved text.",
+   "url": "https://www.nhs.uk/conditions/genital-herpes/",
+   "action": "edited",
+   "sentence": "It is very easy to pass on from the first tingling or itching of an outbreak until the sores have fully healed.",
+   "newSentence": "The NHS advises avoiding vaginal, anal and oral sex until the sores have gone away, because the virus can spread from the first tingling of an outbreak until the sores have fully healed."
+  },
+  {
+   "id": "c095",
+   "classification": "supported",
+   "evidence": "NHS: condoms lower risk but do not remove it; herpes can still be passed on if the condom does not cover the infected area.",
+   "url": "https://www.nhs.uk/conditions/genital-herpes/",
+   "action": "kept",
+   "sentence": "Condoms lower the risk but do not protect areas they do not cover."
+  },
+  {
+   "id": "c096",
+   "classification": "supported",
+   "evidence": "GOV.UK/BASHH 2024: HSV-1 is the usual cause of cold sores and can cause genital infection.",
+   "url": "https://www.gov.uk/guidance/genital-herpes",
+   "action": "edited",
+   "sentence": "One type of the herpes simplex virus is the same one that causes cold sores, called HSV-1.",
+   "newSentence": "One type of the virus is the one that causes cold sores. (96 reworded to: HSV-1 is the usual cause of cold sores and GOV.UK says it can also cause genital infection.)"
+  },
+  {
+   "id": "c097",
+   "classification": "supported",
+   "evidence": "BASHH 2024 guideline: HSV-1 now the most common cause of genital herpes in UK; HSV-2 more likely to cause recurrent anogenital symptoms.",
+   "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11773994/",
+   "action": "edited",
+   "sentence": "BASHH describes HSV-1 as now the most common cause of genital herpes in the UK.",
+   "newSentence": "HSV-2 is more likely to cause recurrent symptoms (wording aligned)."
+  },
+  {
+   "id": "c098",
+   "classification": "supported",
+   "evidence": "BASHH 2024 guideline: HSV-1 now the most common cause of genital herpes in UK; HSV-2 more likely to cause recurrent anogenital symptoms.",
+   "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11773994/",
+   "action": "edited",
+   "sentence": "HSV-2 is more often linked to recurrent symptoms.",
+   "newSentence": "HSV-2 is more likely to cause recurrent symptoms (wording aligned)."
+  },
+  {
+   "id": "c099",
+   "classification": "unsupported",
+   "evidence": "Searches could not confirm 'no screening test' or 'partners only tested if symptomatic' (one search returned it unsourced, two said unverified/not covered). NHS does say the swab cannot be done without visible blisters or sores.",
+   "url": "https://www.nhs.uk/conditions/genital-herpes/",
+   "action": "edited",
+   "sentence": "There is no screening test for herpes in people without symptoms.",
+   "newSentence": "The test cannot be done if there are no visible blisters or sores. (kept as NHS-sourced statement; screening/partner claims removed)"
+  },
+  {
+   "id": "c100",
+   "classification": "unsupported",
+   "evidence": "Searches could not confirm 'no screening test' or 'partners only tested if symptomatic' (one search returned it unsourced, two said unverified/not covered). NHS does say the swab cannot be done without visible blisters or sores.",
+   "url": "https://www.nhs.uk/conditions/genital-herpes/",
+   "action": "edited",
+   "sentence": "The NHS says partners should only have a test if they also have symptoms.",
+   "newSentence": "The test cannot be done if there are no visible blisters or sores. (kept as NHS-sourced statement; screening/partner claims removed)"
+  },
+  {
+   "id": "c101",
+   "classification": "unsupported",
+   "evidence": "'The NHS says testing is free' not retrieved from nhs.uk; NHS inform says book an appointment for free testing at the local sexual health service. Free applies to NHS inform (Scotland).",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/sexual-and-reproductive/genital-herpes/",
+   "action": "edited",
+   "sentence": "Anyone with symptoms can get checked at a sexual health service, where testing is free.",
+   "newSentence": "NHS inform advises booking an appointment with the local sexual health service for free testing."
+  },
+  {
+   "id": "c102",
+   "classification": "supported",
+   "evidence": "NHS neonatal herpes: serious illness in a baby, can be fatal but most recover with treatment.",
+   "url": "https://www.nhs.uk/conditions/neonatal-herpes/",
+   "action": "edited",
+   "sentence": "The main concern is neonatal herpes, a serious illness in a newborn baby.",
+   "newSentence": "Neonatal herpes, a serious illness in a newborn baby, which the NHS says is more likely if genital herpes is first caught in the last 6 weeks of pregnancy"
+  },
+  {
+   "id": "c103",
+   "classification": "wrong",
+   "evidence": "NHS: risk of neonatal herpes is higher if first caught in the last 6 weeks of pregnancy and much lower if previously had it or caught early; recurrent outbreak risk is low even with lesions at delivery. 'Outbreak at birth' framed as the risk was misleading.",
+   "url": "https://www.nhs.uk/conditions/neonatal-herpes/",
+   "action": "edited",
+   "sentence": "The risk applies if there is an outbreak at birth or the first infection happens during pregnancy.",
+   "newSentence": "The risk ... is higher if genital herpes is caught for the first time in the last 6 weeks of pregnancy, and is much lower for people who have had genital herpes before"
+  },
+  {
+   "id": "c104",
+   "classification": "unsafe",
+   "evidence": "Reassurance of 'healthy pregnancy and vaginal delivery' not in retrieved text; NHS says risk much lower, not absent, and to tell the midwife.",
+   "url": "https://www.nhs.uk/conditions/neonatal-herpes/",
+   "action": "edited",
+   "sentence": "Someone who has had genital herpes before pregnancy can usually expect a healthy pregnancy and vaginal delivery.",
+   "newSentence": "much lower for people who have had genital herpes before ... The NHS advises telling a midwife or doctor about a history of genital herpes"
+  },
+  {
+   "id": "c105",
+   "classification": "supported",
+   "evidence": "NHS: tell doctor or midwife if you think you have genital herpes symptoms in pregnancy / have a history.",
+   "url": "https://www.nhs.uk/conditions/neonatal-herpes/",
+   "action": "edited",
+   "sentence": "A midwife or GP can explain the plan, including whether antivirals are offered.",
+   "newSentence": "In pregnancy, the NHS says to tell a midwife or doctor if genital herpes is suspected."
+  },
+  {
+   "id": "c106",
+   "classification": "textbook",
+   "evidence": "Alias label (genital HSV).",
+   "url": "n/a",
+   "action": "kept",
+   "sentence": "Herpes simplex virus infection of the genitals, genital HSV"
+  },
+  {
+   "id": "c107",
+   "classification": "supported",
+   "evidence": "NHS: caused by HSV type 1 or 2.",
+   "url": "https://www.nhs.uk/conditions/genital-herpes/",
+   "action": "kept",
+   "sentence": "Herpes simplex virus (HSV-1 or HSV-2)"
+  },
+  {
+   "id": "c108",
+   "classification": "unsupported",
+   "evidence": "'Looking at symptoms' not retrieved; swab from blister/sore is.",
+   "url": "https://www.nhs.uk/conditions/genital-herpes/",
+   "action": "edited",
+   "sentence": "Looking at symptoms, plus a swab from a blister or sore",
+   "newSentence": "Fluid from a blister or sore; not possible without visible blisters or sores"
+  },
+  {
+   "id": "c109",
+   "classification": "supported",
+   "evidence": "NHS: there is no cure; antiviral medicine and self-care options are described.",
+   "url": "https://www.nhs.uk/conditions/genital-herpes/",
+   "action": "kept",
+   "sentence": "No cure; antivirals and self-care help"
+  },
+  {
+   "id": "c110",
+   "classification": "unsupported",
+   "evidence": "NHS: visit a sexual health clinic if you have symptoms; many offer walk-in. 'As soon as possible' not confirmed in retrieved text (unattributed 'promptly' only).",
+   "url": "https://www.nhs.uk/conditions/genital-herpes/",
+   "action": "edited",
+   "sentence": "A sexual health clinic, as soon as possible",
+   "newSentence": "the NHS advises visiting a sexual health clinic, and many offer a walk-in service"
+  },
+  {
+   "id": "c111",
+   "classification": "unsupported",
+   "evidence": "Searches could not confirm 'no screening test' or 'partners only tested if symptomatic' (one search returned it unsourced, two said unverified/not covered). NHS does say the swab cannot be done without visible blisters or sores.",
+   "url": "https://www.nhs.uk/conditions/genital-herpes/",
+   "action": "edited",
+   "sentence": "No screening test for people without symptoms",
+   "newSentence": "The test cannot be done if there are no visible blisters or sores. (kept as NHS-sourced statement; screening/partner claims removed)"
+  }
+ ],
+ "notes": "12 of 14 searches used. Author-flagged items: 'open sores' reworded (sources: painful red sores); 'repeat outbreaks milder' supported by sexual health leaflets; 'testing is free' only supported by NHS inform (Scotland), reattributed; pregnancy antiviral timing corrected to NHS ~32 weeks (BASHH leaflet 32 weeks for late first episode; trusts vary); CDC points kept, labelled US, ratio numbers omitted; NHS 111/same-day GP mapping removed. Weak points for human review: 2-12 days source is a hospital-trust page, 'two to four weeks' first-episode duration and 'recurrences milder' come from unnamed NHS sexual health leaflets; the NHS ~32 weeks statement came via a search summary and is not verified word for word; 'dry sore' sentence is from an unnamed sexual health service; screening/partner-testing claims could not be confirmed and were removed. Search summaries blend pages so attribution to nhs.uk is approximate. Sentences 3, 48, 96 and similar are counted individually."
+}

@@ -1,0 +1,773 @@
+{
+ "id": "gestational-diabetes",
+ "searchesUsed": 12,
+ "counts": {
+  "supported": 76,
+  "textbook": 2,
+  "unsupported": 22,
+  "wrong": 0,
+  "unsafe": 2,
+  "unchecked": 0
+ },
+ "claims": [
+  {
+   "id": "c01",
+   "classification": "supported",
+   "evidence": "Retrieved NHS / NICE / Diabetes UK / NHS inform text states this in substance.",
+   "url": "https://www.diabetes.org.uk/about-diabetes/gestational-diabetes/symptoms",
+   "action": "kept"
+  },
+  {
+   "id": "c02",
+   "classification": "supported",
+   "evidence": "Diabetes UK: affects women without existing diabetes; NHS inform: develops in pregnancy.",
+   "url": "https://www.diabetes.org.uk/about-diabetes/gestational-diabetes/symptoms",
+   "action": "edited",
+   "newSentence": "Gestational diabetes is a form of diabetes that starts during pregnancy in women who did not have diabetes before."
+  },
+  {
+   "id": "c03",
+   "classification": "supported",
+   "evidence": "NIDDK/NHS inform: pregnancy hormones make cells respond poorly to insulin; \"placenta\" specifically only in review articles, so wording changed to pregnancy hormones.",
+   "url": "https://www.niddk.nih.gov/health-information/diabetes/overview/what-is-diabetes/gestational/symptoms-causes",
+   "action": "edited",
+   "newSentence": "Hormones made during pregnancy can make insulin less effective."
+  },
+  {
+   "id": "c04",
+   "classification": "supported",
+   "evidence": "Retrieved NHS / NICE / Diabetes UK / NHS inform text states this in substance.",
+   "url": "https://www.nhs.uk/conditions/gestational-diabetes/",
+   "action": "kept"
+  },
+  {
+   "id": "c05",
+   "classification": "supported",
+   "evidence": "Retrieved NHS / NICE / Diabetes UK / NHS inform text states this in substance.",
+   "url": "https://www.nhs.uk/conditions/gestational-diabetes/treatment/",
+   "action": "kept"
+  },
+  {
+   "id": "c06",
+   "classification": "supported",
+   "evidence": "Retrieved NHS / NICE / Diabetes UK / NHS inform text states this in substance.",
+   "url": "https://www.nhs.uk/conditions/gestational-diabetes/",
+   "action": "kept"
+  },
+  {
+   "id": "c07",
+   "classification": "supported",
+   "evidence": "As c03: NIDDK pregnancy hormones cause insulin resistance.",
+   "url": "https://www.niddk.nih.gov/health-information/diabetes/overview/what-is-diabetes/gestational/symptoms-causes",
+   "action": "edited",
+   "newSentence": "Hormones made during pregnancy can make the body's cells respond poorly to insulin, which is called insulin resistance."
+  },
+  {
+   "id": "c08",
+   "classification": "unsupported",
+   "evidence": "Retrieved text does not say \"blood sugar can rise\" this way; NIDDK says most women compensate but some cannot make enough insulin.",
+   "url": "https://www.niddk.nih.gov/health-information/diabetes/overview/what-is-diabetes/gestational/symptoms-causes",
+   "action": "edited",
+   "newSentence": "Most women make enough extra insulin to compensate, but some cannot, and they develop gestational diabetes."
+  },
+  {
+   "id": "c09",
+   "classification": "supported",
+   "evidence": "Retrieved NHS / NICE / Diabetes UK / NHS inform text states this in substance.",
+   "url": "https://www.nhs.uk/conditions/gestational-diabetes/",
+   "action": "kept"
+  },
+  {
+   "id": "c10",
+   "classification": "supported",
+   "evidence": "Retrieved NHS / NICE / Diabetes UK / NHS inform text states this in substance.",
+   "url": "https://www.nhs.uk/conditions/gestational-diabetes/",
+   "action": "kept"
+  },
+  {
+   "id": "c11",
+   "classification": "supported",
+   "evidence": "Retrieved NHS / NICE / Diabetes UK / NHS inform text states this in substance.",
+   "url": "https://www.nhs.uk/conditions/gestational-diabetes/",
+   "action": "kept"
+  },
+  {
+   "id": "c12",
+   "classification": "supported",
+   "evidence": "Retrieved NHS / NICE / Diabetes UK / NHS inform text states this in substance.",
+   "url": "https://www.nhs.uk/conditions/gestational-diabetes/",
+   "action": "kept"
+  },
+  {
+   "id": "c13",
+   "classification": "supported",
+   "evidence": "NHS risk list: South Asian, Black, African-Caribbean, Middle Eastern origin. \"Even if born in UK\" not in this pass retrieved text.",
+   "url": "https://www.nhs.uk/conditions/gestational-diabetes/",
+   "action": "edited",
+   "newSentence": "A South Asian, Black, African-Caribbean or Middle Eastern family background."
+  },
+  {
+   "id": "c14",
+   "classification": "supported",
+   "evidence": "NHS (via search summary) and NHS inform list being over 40.",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/diabetes/gestational-diabetes/",
+   "action": "kept"
+  },
+  {
+   "id": "c15",
+   "classification": "supported",
+   "evidence": "NHS: most cases found at screening; Diabetes UK/NIDDK: usually no symptoms.",
+   "url": "https://www.nhs.uk/conditions/gestational-diabetes/",
+   "action": "edited",
+   "newSentence": "Raised blood sugar found on a screening blood test, often in someone who feels well."
+  },
+  {
+   "id": "c16",
+   "classification": "supported",
+   "evidence": "NHS inform: baby may grow larger than usual.",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/diabetes/gestational-diabetes/",
+   "action": "edited",
+   "newSentence": "A baby who is growing larger than usual."
+  },
+  {
+   "id": "c17",
+   "classification": "supported",
+   "evidence": "NHS inform links gestational diabetes to too much amniotic fluid.",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/diabetes/gestational-diabetes/",
+   "action": "kept"
+  },
+  {
+   "id": "c18",
+   "classification": "supported",
+   "evidence": "Diabetes UK complications: jaundice, difficult birth; NHS inform/trust guides: larger baby, injury at birth, low blood sugar; NHS overview lists loss of baby as a possible but rare complication (search summary; moderate confidence).",
+   "url": "https://www.diabetes.org.uk/about-diabetes/gestational-diabetes/complications",
+   "action": "kept"
+  },
+  {
+   "id": "c19",
+   "classification": "supported",
+   "evidence": "Guy's and St Thomas': pre-eclampsia; NHS inform: excess fluid can cause premature labour.",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/diabetes/gestational-diabetes/",
+   "action": "edited",
+   "newSentence": "For the mother: pre-eclampsia, premature labour and too much amniotic fluid."
+  },
+  {
+   "id": "c20",
+   "classification": "supported",
+   "evidence": "Retrieved NHS / NICE / Diabetes UK / NHS inform text states this in substance.",
+   "url": "https://www.nhs.uk/conditions/gestational-diabetes/",
+   "action": "kept"
+  },
+  {
+   "id": "c21",
+   "classification": "supported",
+   "evidence": "NHS trust leaflets (Bedfordshire etc.): more likely to get it again in future pregnancies.",
+   "url": "https://www.bedfordshirehospitals.nhs.uk/patient-information-leaflets/gestational-diabetes/",
+   "action": "kept"
+  },
+  {
+   "id": "c22",
+   "classification": "supported",
+   "evidence": "NICE NG3: 75-g two-hour OGTT; NHS inform: screening test about 2 hours.",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/diabetes/gestational-diabetes/",
+   "action": "edited",
+   "newSentence": "Screening usually uses a blood test called an oral glucose tolerance test, which takes about two hours."
+  },
+  {
+   "id": "c23",
+   "classification": "supported",
+   "evidence": "Retrieved NHS / NICE / Diabetes UK / NHS inform text states this in substance.",
+   "url": "https://www.nhs.uk/conditions/gestational-diabetes/",
+   "action": "kept"
+  },
+  {
+   "id": "c24",
+   "classification": "supported",
+   "evidence": "NHS and Diabetes UK: test at 24 to 28 weeks.",
+   "url": "https://www.nhs.uk/conditions/gestational-diabetes/",
+   "action": "kept"
+  },
+  {
+   "id": "c25",
+   "classification": "unsupported",
+   "evidence": "NICE update text: women with previous GDM tested as soon as possible; \"another later if the first is normal\" not found.",
+   "url": "https://www.nice.org.uk/guidance/ng3/chapter/recommendations",
+   "action": "edited",
+   "newSentence": "Women who have had gestational diabetes before are offered testing early in pregnancy."
+  },
+  {
+   "id": "c26",
+   "classification": "supported",
+   "evidence": "Retrieved NHS / NICE / Diabetes UK / NHS inform text states this in substance.",
+   "url": "https://www.nhs.uk/conditions/gestational-diabetes/treatment/",
+   "action": "kept"
+  },
+  {
+   "id": "c27",
+   "classification": "supported",
+   "evidence": "Retrieved NHS / NICE / Diabetes UK / NHS inform text states this in substance.",
+   "url": "https://www.nhs.uk/conditions/gestational-diabetes/treatment/",
+   "action": "kept"
+  },
+  {
+   "id": "c28",
+   "classification": "supported",
+   "evidence": "Retrieved NHS / NICE / Diabetes UK / NHS inform text states this in substance.",
+   "url": "https://www.nhs.uk/conditions/gestational-diabetes/treatment/",
+   "action": "kept"
+  },
+  {
+   "id": "c29",
+   "classification": "unsupported",
+   "evidence": "NHS: insulin usually offered if metformin does not work well enough, causes side effects or sugar very high; \"cannot be taken\" not found.",
+   "url": "https://www.nhs.uk/conditions/gestational-diabetes/treatment/",
+   "action": "edited",
+   "newSentence": "Insulin is usually offered if metformin does not work well enough or causes side effects."
+  },
+  {
+   "id": "c30",
+   "classification": "supported",
+   "evidence": "Retrieved NHS / NICE / Diabetes UK / NHS inform text states this in substance.",
+   "url": "https://www.nhs.uk/conditions/gestational-diabetes/treatment/",
+   "action": "kept"
+  },
+  {
+   "id": "c31",
+   "classification": "supported",
+   "evidence": "NHS: blood sugar monitored and controlled in labour, glucose-and-insulin drip may be needed; NICE drip when glucose out of range.",
+   "url": "https://www.nhs.uk/conditions/gestational-diabetes/treatment/",
+   "action": "edited",
+   "newSentence": "During labour, blood sugar is monitored and kept under control, and a glucose and insulin drip may be needed."
+  },
+  {
+   "id": "c32",
+   "classification": "supported",
+   "evidence": "NHS trust leaflet suggests healthy weight lowers risk; NHS page attribution not confirmed.",
+   "url": "https://www.bedfordshirehospitals.nhs.uk/patient-information-leaflets/gestational-diabetes/",
+   "action": "edited",
+   "newSentence": "NHS hospital leaflets suggest that being physically active, keeping to a healthy weight and eating a healthy balanced diet after the birth can lower the chance of type 2 diabetes."
+  },
+  {
+   "id": "c33",
+   "classification": "supported",
+   "evidence": "Trust leaflet lists activity, healthy weight, balanced diet.",
+   "url": "https://www.bedfordshirehospitals.nhs.uk/patient-information-leaflets/gestational-diabetes/",
+   "action": "kept"
+  },
+  {
+   "id": "c34",
+   "classification": "unsupported",
+   "evidence": "Search results: evidence for a longer-term protective effect of breastfeeding is limited; no UK publisher text retrieved saying it reduces and delays risk.",
+   "url": "https://www.nhs.uk/conditions/gestational-diabetes/",
+   "action": "removed"
+  },
+  {
+   "id": "c35",
+   "classification": "unsafe",
+   "evidence": "\"Does not necessarily mean\" could reassure; GP arranging a test not confirmed. NHS inform only notes some symptoms are normal in pregnancy.",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/diabetes/gestational-diabetes/",
+   "action": "edited",
+   "newSentence": "NHS inform notes that some symptoms of high blood sugar are also normal in pregnancy, and most cases are found through screening blood tests rather than symptoms."
+  },
+  {
+   "id": "c36",
+   "classification": "supported",
+   "evidence": "NICE: test 6-13 weeks after birth then annual HbA1c; Diabetes UK: test 6-13 weeks then yearly.",
+   "url": "https://www.diabetes.org.uk/about-diabetes/gestational-diabetes/symptoms",
+   "action": "kept"
+  },
+  {
+   "id": "c37",
+   "classification": "textbook",
+   "evidence": "No retrieved text on 999 or NHS 111. Retrieved: UK maternity services say contact midwife or maternity unit immediately for reduced movements; seek help from GP, midwife or hospital doctors if concerned about sugar.",
+   "url": "https://www.gatesheadhealth.nhs.uk/resources/a-guide-to-birth-and-the-postnatal-period-for-people-with-gestational-diabetes/",
+   "action": "edited",
+   "newSentence": "Anyone concerned about their blood sugar or their pregnancy can contact their GP, midwife or maternity unit. Maternity services advise contacting the midwife or maternity unit straight away if a baby's movements slow, weaken or stop. Call 999 in an emergency."
+  },
+  {
+   "id": "c38",
+   "classification": "supported",
+   "evidence": "Retrieved NHS / NICE / Diabetes UK / NHS inform text states this in substance.",
+   "url": "https://www.diabetes.org.uk/about-diabetes/gestational-diabetes/symptoms",
+   "action": "kept"
+  },
+  {
+   "id": "c39",
+   "classification": "supported",
+   "evidence": "Retrieved NHS / NICE / Diabetes UK / NHS inform text states this in substance.",
+   "url": "https://www.diabetes.org.uk/about-diabetes/gestational-diabetes/symptoms",
+   "action": "kept"
+  },
+  {
+   "id": "c40",
+   "classification": "supported",
+   "evidence": "Retrieved NHS / NICE / Diabetes UK / NHS inform text states this in substance.",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/diabetes/gestational-diabetes/",
+   "action": "kept"
+  },
+  {
+   "id": "c41",
+   "classification": "textbook",
+   "evidence": "Plain definition, not retrieved.",
+   "url": "",
+   "action": "kept"
+  },
+  {
+   "id": "c42",
+   "classification": "unsupported",
+   "evidence": "As c08.",
+   "url": "https://www.niddk.nih.gov/health-information/diabetes/overview/what-is-diabetes/gestational/symptoms-causes",
+   "action": "edited",
+   "newSentence": "Pregnancy brings hormones and other changes that make the body's cells respond poorly to insulin."
+  },
+  {
+   "id": "c43",
+   "classification": "supported",
+   "evidence": "Retrieved NHS / NICE / Diabetes UK / NHS inform text states this in substance.",
+   "url": "https://www.nhs.uk/conditions/gestational-diabetes/",
+   "action": "kept"
+  },
+  {
+   "id": "c44",
+   "classification": "supported",
+   "evidence": "Retrieved NHS / NICE / Diabetes UK / NHS inform text states this in substance.",
+   "url": "https://www.nhs.uk/conditions/gestational-diabetes/",
+   "action": "kept"
+  },
+  {
+   "id": "c45",
+   "classification": "unsupported",
+   "evidence": "\"Even if born in UK\" not present in retrieved text.",
+   "url": "https://www.nhs.uk/conditions/gestational-diabetes/",
+   "action": "removed"
+  },
+  {
+   "id": "c46",
+   "classification": "unsupported",
+   "evidence": "Interpretive framing not stated in sources.",
+   "url": "https://www.nhs.uk/conditions/gestational-diabetes/",
+   "action": "removed"
+  },
+  {
+   "id": "c47",
+   "classification": "unsupported",
+   "evidence": "Diabetes UK: most women go on to have a healthy baby and normal pregnancy; \"born close to term\" not found.",
+   "url": "https://www.diabetes.org.uk/about-diabetes/gestational-diabetes/complications",
+   "action": "edited",
+   "newSentence": "Diabetes UK says most women with gestational diabetes go on to have a healthy baby and a normal pregnancy."
+  },
+  {
+   "id": "c48",
+   "classification": "unsupported",
+   "evidence": "NICE statement not found; NHS (summary) says risks can be reduced if found early and well managed.",
+   "url": "https://www.nhs.uk/conditions/gestational-diabetes/",
+   "action": "edited",
+   "newSentence": "The NHS says the risks can be reduced if the condition is found early and well managed."
+  },
+  {
+   "id": "c49",
+   "classification": "supported",
+   "evidence": "Retrieved NHS / NICE / Diabetes UK / NHS inform text states this in substance.",
+   "url": "https://www.nhs.uk/conditions/gestational-diabetes/",
+   "action": "kept"
+  },
+  {
+   "id": "c50",
+   "classification": "supported",
+   "evidence": "Retrieved NHS / NICE / Diabetes UK / NHS inform text states this in substance.",
+   "url": "https://www.nhs.uk/conditions/gestational-diabetes/",
+   "action": "kept"
+  },
+  {
+   "id": "c51",
+   "classification": "supported",
+   "evidence": "Diabetes UK: wee a lot esp. at night, thirst, tired, genital itching/thrush, blurred eyesight; NHS inform adds dry mouth.",
+   "url": "https://www.diabetes.org.uk/about-diabetes/gestational-diabetes/symptoms",
+   "action": "kept"
+  },
+  {
+   "id": "c52",
+   "classification": "supported",
+   "evidence": "Retrieved NHS / NICE / Diabetes UK / NHS inform text states this in substance.",
+   "url": "https://www.diabetes.org.uk/about-diabetes/gestational-diabetes/symptoms",
+   "action": "kept"
+  },
+  {
+   "id": "c53",
+   "classification": "unsafe",
+   "evidence": "Reassurance-style wording (\"does not necessarily mean\") not stated by sources; NHS inform only says some symptoms are normal in pregnancy.",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/diabetes/gestational-diabetes/",
+   "action": "edited",
+   "newSentence": "NHS inform also lists a dry mouth, and notes that some of these symptoms are normal in pregnancy."
+  },
+  {
+   "id": "c54",
+   "classification": "supported",
+   "evidence": "Retrieved NHS / NICE / Diabetes UK / NHS inform text states this in substance.",
+   "url": "https://www.diabetes.org.uk/about-diabetes/gestational-diabetes/symptoms",
+   "action": "kept"
+  },
+  {
+   "id": "c55",
+   "classification": "supported",
+   "evidence": "Retrieved NHS / NICE / Diabetes UK / NHS inform text states this in substance.",
+   "url": "https://www.diabetes.org.uk/about-diabetes/gestational-diabetes/symptoms",
+   "action": "kept"
+  },
+  {
+   "id": "c56",
+   "classification": "supported",
+   "evidence": "Retrieved NHS / NICE / Diabetes UK / NHS inform text states this in substance.",
+   "url": "https://www.nhs.uk/conditions/gestational-diabetes/",
+   "action": "kept"
+  },
+  {
+   "id": "c57",
+   "classification": "unsupported",
+   "evidence": "Not stated; sources say diagnosis is by blood test.",
+   "url": "https://www.diabetes.org.uk/about-diabetes/gestational-diabetes/symptoms",
+   "action": "edited",
+   "newSentence": "Because symptoms are often absent or hard to tell apart from pregnancy itself, the usual route to diagnosis is a blood test."
+  },
+  {
+   "id": "c58",
+   "classification": "supported",
+   "evidence": "NHS: risk assessed at booking (around 8 to 12 weeks); midwife/doctor asks questions.",
+   "url": "https://www.nhs.uk/conditions/gestational-diabetes/",
+   "action": "edited",
+   "newSentence": "Risk is assessed at the booking appointment, which the NHS places at around 8 to 12 weeks of pregnancy."
+  },
+  {
+   "id": "c59",
+   "classification": "supported",
+   "evidence": "NICE: women with risk factors offered 75-g two-hour OGTT at 24-28 weeks; NHS inform (Scotland): HbA1c then screening test at 24 weeks.",
+   "url": "https://www.nice.org.uk/guidance/ng3/chapter/recommendations",
+   "action": "edited",
+   "newSentence": "NICE says other women with risk factors are offered a two-hour glucose tolerance test at 24 to 28 weeks."
+  },
+  {
+   "id": "c60",
+   "classification": "supported",
+   "evidence": "Retrieved NHS / NICE / Diabetes UK / NHS inform text states this in substance.",
+   "url": "https://www.nhs.uk/conditions/gestational-diabetes/",
+   "action": "kept"
+  },
+  {
+   "id": "c61",
+   "classification": "unsupported",
+   "evidence": "As c25: \"second one later if first normal\" not found.",
+   "url": "https://www.nice.org.uk/guidance/ng3/chapter/recommendations",
+   "action": "edited",
+   "newSentence": "NICE says women who have had gestational diabetes before should be tested as soon as possible, including those who book in the second trimester."
+  },
+  {
+   "id": "c62",
+   "classification": "unsupported",
+   "evidence": "NICE risk-factor list not returned in this pass.",
+   "url": "https://www.nice.org.uk/guidance/ng3/chapter/recommendations",
+   "action": "removed"
+  },
+  {
+   "id": "c63",
+   "classification": "supported",
+   "evidence": "Search summaries: timing and thresholds differ by nation and trust; Scotland has own thresholds.",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/diabetes/gestational-diabetes/",
+   "action": "edited",
+   "newSentence": "Timing and thresholds vary between UK nations and local services, so the maternity team explains the arrangements that apply."
+  },
+  {
+   "id": "c64",
+   "classification": "supported",
+   "evidence": "Retrieved NHS / NICE / Diabetes UK / NHS inform text states this in substance.",
+   "url": "https://www.nhs.uk/conditions/gestational-diabetes/treatment/",
+   "action": "kept"
+  },
+  {
+   "id": "c65",
+   "classification": "unsupported",
+   "evidence": "Not found in retrieved text this pass.",
+   "url": "https://www.nhs.uk/conditions/gestational-diabetes/treatment/",
+   "action": "removed"
+  },
+  {
+   "id": "c66",
+   "classification": "supported",
+   "evidence": "NHS treatment page describes physical activity as a way to lower blood sugar.",
+   "url": "https://www.nhs.uk/conditions/gestational-diabetes/treatment/",
+   "action": "edited",
+   "newSentence": "The NHS treatment page describes physical activity as a way to lower blood sugar."
+  },
+  {
+   "id": "c67",
+   "classification": "supported",
+   "evidence": "Retrieved NHS / NICE / Diabetes UK / NHS inform text states this in substance.",
+   "url": "https://www.nhs.uk/conditions/gestational-diabetes/treatment/",
+   "action": "kept"
+  },
+  {
+   "id": "c68",
+   "classification": "supported",
+   "evidence": "Retrieved NHS / NICE / Diabetes UK / NHS inform text states this in substance.",
+   "url": "https://www.nhs.uk/conditions/gestational-diabetes/treatment/",
+   "action": "kept"
+  },
+  {
+   "id": "c69",
+   "classification": "unsupported",
+   "evidence": "Not found in retrieved text this pass.",
+   "url": "https://www.nhs.uk/conditions/gestational-diabetes/treatment/",
+   "action": "removed"
+  },
+  {
+   "id": "c70",
+   "classification": "unsupported",
+   "evidence": "As c29: \"cannot be taken\" not found.",
+   "url": "https://www.nhs.uk/conditions/gestational-diabetes/treatment/",
+   "action": "edited",
+   "newSentence": "The NHS says insulin is usually offered if metformin does not work well enough, causes side effects, or blood sugar is very high."
+  },
+  {
+   "id": "c71",
+   "classification": "supported",
+   "evidence": "Several NHS trusts advise giving birth in hospital.",
+   "url": "https://www.gatesheadhealth.nhs.uk/resources/a-guide-to-birth-and-the-postnatal-period-for-people-with-gestational-diabetes/",
+   "action": "edited",
+   "newSentence": "NHS maternity services advise giving birth in hospital."
+  },
+  {
+   "id": "c72",
+   "classification": "supported",
+   "evidence": "As c31 labour.",
+   "url": "https://www.nhs.uk/conditions/gestational-diabetes/treatment/",
+   "action": "edited",
+   "newSentence": "The NHS says blood sugar is monitored and kept under control during labour and birth, and a glucose and insulin drip may be needed."
+  },
+  {
+   "id": "c73",
+   "classification": "supported",
+   "evidence": "NICE: stop glucose-lowering therapy immediately after birth.",
+   "url": "https://www.nice.org.uk/guidance/ng3/chapter/recommendations",
+   "action": "edited",
+   "newSentence": "NICE says blood glucose-lowering medicine for gestational diabetes should be stopped straight after the birth."
+  },
+  {
+   "id": "c74",
+   "classification": "supported",
+   "evidence": "Gateshead (NHS trust): blood sugar checked for a day or two after delivery.",
+   "url": "https://www.gatesheadhealth.nhs.uk/resources/a-guide-to-birth-and-the-postnatal-period-for-people-with-gestational-diabetes/",
+   "action": "edited",
+   "newSentence": "NHS hospital guides say blood sugar is usually checked for a day or two after delivery."
+  },
+  {
+   "id": "c75",
+   "classification": "supported",
+   "evidence": "NHS summary and Diabetes UK: test 6-13 weeks after birth.",
+   "url": "https://www.nhs.uk/conditions/gestational-diabetes/",
+   "action": "kept"
+  },
+  {
+   "id": "c76",
+   "classification": "supported",
+   "evidence": "Search summary of Diabetes UK: small number continue to have raised blood sugar.",
+   "url": "https://www.diabetes.org.uk/about-diabetes/gestational-diabetes/symptoms",
+   "action": "kept"
+  },
+  {
+   "id": "c77",
+   "classification": "unsupported",
+   "evidence": "NICE: fasting plasma glucose 6-13 weeks; \"type 2 or prediabetes\" wording not found.",
+   "url": "https://www.nice.org.uk/guidance/ng3/chapter/recommendations",
+   "action": "edited",
+   "newSentence": "NICE describes this as a fasting plasma glucose test."
+  },
+  {
+   "id": "c78",
+   "classification": "unsupported",
+   "evidence": "Yearly test supported (Diabetes UK, NICE); \"lifelong form of diabetes\" not found.",
+   "url": "https://www.diabetes.org.uk/about-diabetes/gestational-diabetes/symptoms",
+   "action": "edited",
+   "newSentence": "If the result is normal, Diabetes UK and NICE advise a test once a year, because having had gestational diabetes raises the chance of type 2 diabetes later in life."
+  },
+  {
+   "id": "c79",
+   "classification": "unsupported",
+   "evidence": "NICE annual HbA1c supported; NICE \"lifestyle advice\" and \"future pregnancies\" wording not confirmed.",
+   "url": "https://www.nice.org.uk/guidance/ng3/chapter/recommendations",
+   "action": "edited",
+   "newSentence": "NICE advises a yearly HbA1c test for women whose postnatal test showed no diabetes."
+  },
+  {
+   "id": "c80",
+   "classification": "unsupported",
+   "evidence": "Search for feeding within 30 minutes returned nothing; Gateshead says low-sugar babies may need tube or drip.",
+   "url": "https://www.gatesheadhealth.nhs.uk/resources/a-guide-to-birth-and-the-postnatal-period-for-people-with-gestational-diabetes/",
+   "action": "removed"
+  },
+  {
+   "id": "c81",
+   "classification": "supported",
+   "evidence": "Diabetes UK/NHS: usually clears; NICE: stop medicine straight after birth.",
+   "url": "https://www.diabetes.org.uk/about-diabetes/gestational-diabetes/symptoms",
+   "action": "edited",
+   "newSentence": "Diabetes UK and NHS sources say it typically clears up after the birth, and NICE says glucose-lowering medicine is stopped straight afterwards."
+  },
+  {
+   "id": "c82",
+   "classification": "supported",
+   "evidence": "Retrieved NHS / NICE / Diabetes UK / NHS inform text states this in substance.",
+   "url": "https://www.nhs.uk/conditions/gestational-diabetes/",
+   "action": "kept"
+  },
+  {
+   "id": "c83",
+   "classification": "supported",
+   "evidence": "Retrieved NHS / NICE / Diabetes UK / NHS inform text states this in substance.",
+   "url": "https://www.diabetes.org.uk/about-diabetes/gestational-diabetes/care",
+   "action": "kept"
+  },
+  {
+   "id": "c84",
+   "classification": "supported",
+   "evidence": "Diabetes UK/NHS inform/trust guides list these.",
+   "url": "https://www.diabetes.org.uk/about-diabetes/gestational-diabetes/complications",
+   "action": "edited",
+   "newSentence": "Possible effects for the baby include excess growth, a more difficult birth, low blood sugar and jaundice after birth, and, rarely, stillbirth."
+  },
+  {
+   "id": "c85",
+   "classification": "unsupported",
+   "evidence": "As c47.",
+   "url": "https://www.diabetes.org.uk/about-diabetes/gestational-diabetes/complications",
+   "action": "edited",
+   "newSentence": "Diabetes UK says most women with gestational diabetes go on to have a healthy baby."
+  },
+  {
+   "id": "c86",
+   "classification": "supported",
+   "evidence": "NHS: risks can be reduced if found early and well managed.",
+   "url": "https://www.nhs.uk/conditions/gestational-diabetes/",
+   "action": "edited",
+   "newSentence": "The NHS says the risks can be reduced if the condition is found early and well managed."
+  },
+  {
+   "id": "c87",
+   "classification": "unsupported",
+   "evidence": "Sources say risk is raised; \"does not mean it will happen\" not stated.",
+   "url": "https://www.nhs.uk/conditions/gestational-diabetes/",
+   "action": "edited",
+   "newSentence": "Having had gestational diabetes raises the chance of developing type 2 diabetes, but the sources do not say it will happen."
+  },
+  {
+   "id": "c88",
+   "classification": "supported",
+   "evidence": "Diabetes UK/NICE: yearly test.",
+   "url": "https://www.diabetes.org.uk/about-diabetes/gestational-diabetes/symptoms",
+   "action": "edited",
+   "newSentence": "Diabetes UK and NICE advise a blood test once a year after a normal result."
+  },
+  {
+   "id": "c89",
+   "classification": "supported",
+   "evidence": "Trust leaflet advice.",
+   "url": "https://www.bedfordshirehospitals.nhs.uk/patient-information-leaflets/gestational-diabetes/",
+   "action": "edited",
+   "newSentence": "NHS hospital leaflets suggest being active, keeping to a healthy weight and eating a balanced diet to lower the risk."
+  },
+  {
+   "id": "c90",
+   "classification": "supported",
+   "evidence": "Retrieved NHS / NICE / Diabetes UK / NHS inform text states this in substance.",
+   "url": "https://www.nhs.uk/conditions/gestational-diabetes/treatment/",
+   "action": "kept"
+  },
+  {
+   "id": "c91",
+   "classification": "supported",
+   "evidence": "Retrieved NHS / NICE / Diabetes UK / NHS inform text states this in substance.",
+   "url": "https://www.nhs.uk/conditions/gestational-diabetes/treatment/",
+   "action": "kept"
+  },
+  {
+   "id": "c92",
+   "classification": "unsupported",
+   "evidence": "As c29.",
+   "url": "https://www.nhs.uk/conditions/gestational-diabetes/treatment/",
+   "action": "edited",
+   "newSentence": "The NHS says insulin is usually offered if metformin does not work well enough, causes side effects, or blood sugar is very high."
+  },
+  {
+   "id": "c93",
+   "classification": "supported",
+   "evidence": "NHS trust leaflets: likely to come back in future pregnancy (NHS page itself not confirmed).",
+   "url": "https://www.bedfordshirehospitals.nhs.uk/patient-information-leaflets/gestational-diabetes/",
+   "action": "edited",
+   "newSentence": "NHS hospital leaflets say gestational diabetes is likely to come back in a future pregnancy."
+  },
+  {
+   "id": "c94",
+   "classification": "supported",
+   "evidence": "NICE update: previous GDM tested as soon as possible; trusts arrange early test.",
+   "url": "https://www.nice.org.uk/guidance/ng3/chapter/recommendations",
+   "action": "edited",
+   "newSentence": "NICE says women who have had it before should be tested as soon as possible in a new pregnancy."
+  },
+  {
+   "id": "c95",
+   "classification": "supported",
+   "evidence": "NICE annual HbA1c; merged into FAQ about yearly tests.",
+   "url": "https://www.nice.org.uk/guidance/ng3/chapter/recommendations",
+   "action": "edited",
+   "newSentence": "Merged into the type 2 FAQ."
+  },
+  {
+   "id": "c96",
+   "classification": "supported",
+   "evidence": "NHS trust pages titled \"Gestational Diabetes Mellitus (GDM)\".",
+   "url": "https://www.gloshospitals.nhs.uk/your-visit/patient-information-leaflets/gestational-diabetes-mellitus-gdm/",
+   "action": "kept"
+  },
+  {
+   "id": "c97",
+   "classification": "supported",
+   "evidence": "Retrieved NHS / NICE / Diabetes UK / NHS inform text states this in substance.",
+   "url": "https://www.diabetes.org.uk/about-diabetes/gestational-diabetes/symptoms",
+   "action": "kept"
+  },
+  {
+   "id": "c98",
+   "classification": "supported",
+   "evidence": "Retrieved NHS / NICE / Diabetes UK / NHS inform text states this in substance.",
+   "url": "https://www.nhs.uk/conditions/gestational-diabetes/",
+   "action": "kept"
+  },
+  {
+   "id": "c99",
+   "classification": "supported",
+   "evidence": "Retrieved NHS / NICE / Diabetes UK / NHS inform text states this in substance.",
+   "url": "https://www.nhs.uk/conditions/gestational-diabetes/treatment/",
+   "action": "kept"
+  },
+  {
+   "id": "c100",
+   "classification": "supported",
+   "evidence": "Retrieved NHS / NICE / Diabetes UK / NHS inform text states this in substance.",
+   "url": "https://www.nhs.uk/conditions/gestational-diabetes/treatment/",
+   "action": "kept"
+  },
+  {
+   "id": "c101",
+   "classification": "supported",
+   "evidence": "Retrieved NHS / NICE / Diabetes UK / NHS inform text states this in substance.",
+   "url": "https://www.diabetes.org.uk/about-diabetes/gestational-diabetes/symptoms",
+   "action": "kept"
+  },
+  {
+   "id": "c102",
+   "classification": "supported",
+   "evidence": "Retrieved NHS / NICE / Diabetes UK / NHS inform text states this in substance.",
+   "url": "https://www.nhs.uk/conditions/gestational-diabetes/",
+   "action": "kept"
+  }
+ ],
+ "notes": "Searches 12 of 14 used. Not confirmed this pass: NHS-page attribution of 'even if born in the UK', NICE risk-factor list, 'second test later if first normal', breastfeeding reducing/delaying risk, feeding within 30 minutes, NICE-attributed 'few weeks/prediabetes' wording; all removed or reworded. Stillbirth (rare) rests on a search-summary statement about the NHS overview plus a trust note; a reviewer should check the NHS page. 999/NHS 111 line: no retrieved text; kept only a plain 999 emergency sentence (textbook) and replaced NHS 111 with GP, midwife or maternity unit, sourced to trust guidance. NHS postnatal 6-13 weeks timing is from search summaries of the NHS page and Diabetes UK; NICE NG3 gives fasting plasma glucose at 6-13 weeks. Several statements are attributed to 'NHS hospital leaflets/guides' because only trust pages carried them. Dropped unconfirmed reference Diabetes UK treatments; added NHS inform, Diabetes UK complications, NIDDK. The shared scratchpad build script was overwritten by another agent mid-task; the entity file was patched directly and re-validated."
+}
