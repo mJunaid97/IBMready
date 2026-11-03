@@ -1,0 +1,387 @@
+{
+ "id": "bisoprolol",
+ "searchesUsed": 7,
+ "counts": {
+  "supported": 32,
+  "textbook": 0,
+  "unsupported": 17,
+  "wrong": 1,
+  "unsafe": 0,
+  "unchecked": 0
+ },
+ "claims": [
+  {
+   "id": "c01",
+   "classification": "supported",
+   "evidence": "NHS title: beta blocker for blood pressure and heart conditions; BP/heart failure use",
+   "url": "https://www.nhs.uk/medicines/bisoprolol/",
+   "action": "kept"
+  },
+  {
+   "id": "c02",
+   "classification": "supported",
+   "evidence": "Angina/AF/irregular heartbeat: NHS page title says heart conditions; not re-retrieved verbatim, first-pass NHS about-page quote relied on",
+   "url": "https://www.nhs.uk/medicines/bisoprolol/about-bisoprolol/",
+   "action": "kept"
+  },
+  {
+   "id": "c03",
+   "classification": "supported",
+   "evidence": "NHS: only available on prescription (not re-retrieved verbatim; consistent with first pass)",
+   "url": "https://www.nhs.uk/medicines/bisoprolol/",
+   "action": "kept"
+  },
+  {
+   "id": "c04",
+   "classification": "supported",
+   "evidence": "NHS: works as well as other beta blockers, fewer side effects, acts mainly on heart (not re-retrieved verbatim; BHF consistent on selectivity)",
+   "url": "https://www.nhs.uk/medicines/bisoprolol/about-bisoprolol/",
+   "action": "kept"
+  },
+  {
+   "id": "c05",
+   "classification": "supported",
+   "evidence": "Leaflets: not recommended for children or adolescents (second-pass search summary of UK leaflets)",
+   "url": "https://www.medicines.org.uk/emc/files/pil.13703.pdf",
+   "action": "kept"
+  },
+  {
+   "id": "c06",
+   "classification": "supported",
+   "evidence": "BHF: selective beta blockers mostly block adrenaline/noradrenaline in the heart",
+   "url": "https://www.bhf.org.uk/informationsupport/heart-matters-magazine/medical/drug-cabinet/beta-blockers",
+   "action": "edited",
+   "newSentence": "The BHF calls this kind of beta blocker selective, meaning it mostly blocks the effects of adrenaline and noradrenaline in the heart."
+  },
+  {
+   "id": "c07",
+   "classification": "supported",
+   "evidence": "BHF: beta blockers slow heart rate and reduce how hard heart works by blocking adrenaline/noradrenaline ('less force' paraphrased as reduced workload)",
+   "url": "https://www.bhf.org.uk/informationsupport/heart-matters-magazine/medical/drug-cabinet/beta-blockers",
+   "action": "edited",
+   "newSentence": "The BHF explains that beta blockers slow the heart rate and reduce how hard the heart has to work."
+  },
+  {
+   "id": "c08",
+   "classification": "unsupported",
+   "evidence": "NHS: swallow with a drink of water, with or without food; 'whole' not in retrieved text",
+   "url": "https://www.nhs.uk/medicines/bisoprolol/how-and-when-to-take-bisoprolol/",
+   "action": "edited",
+   "newSentence": "The NHS says bisoprolol tablets are swallowed with a drink of water and can be taken with or without food."
+  },
+  {
+   "id": "c09",
+   "classification": "unsupported",
+   "evidence": "NHS says with or without food; 'taking it after eating might help' not found; prescriber-sets-dose not retrieved",
+   "url": "https://www.nhs.uk/medicines/bisoprolol/how-and-when-to-take-bisoprolol/",
+   "action": "removed"
+  },
+  {
+   "id": "c10",
+   "classification": "supported",
+   "evidence": "NHS: if dizzy or weak, stop what you are doing and sit or lie down (side-effects page; first-pass quote, consistent with retrieved dizziness advice)",
+   "url": "https://www.nhs.uk/medicines/bisoprolol/side-effects-of-bisoprolol/",
+   "action": "kept"
+  },
+  {
+   "id": "c11",
+   "classification": "supported",
+   "evidence": "NHS common: headaches, tiredness, cold/tingly hands and feet, dizziness, nausea/vomiting, diarrhoea/constipation",
+   "url": "https://www.nhs.uk/medicines/bisoprolol/side-effects-of-bisoprolol/",
+   "action": "edited",
+   "newSentence": "The NHS lists headaches, tiredness, cold or tingly hands and feet, dizziness from low blood pressure, feeling or being sick, and diarrhoea or constipation as common side effects."
+  },
+  {
+   "id": "c12",
+   "classification": "unsupported",
+   "evidence": "NHS: usually happen at start or dose increase and often get better over time; 'usually mild' not retrieved",
+   "url": "https://www.nhs.uk/medicines/bisoprolol/side-effects-of-bisoprolol/",
+   "action": "edited",
+   "newSentence": "They usually happen when treatment starts or when the amount is increased, and they often get better over time."
+  },
+  {
+   "id": "c13",
+   "classification": "wrong",
+   "evidence": "EMC leaflet lists sleep disturbance as less common or rare, not common; slow heartbeat frequency and 'signs of slow heart rate' NHS wording not re-retrieved",
+   "url": "https://www.medicines.org.uk/emc/files/pil.13703.pdf",
+   "action": "removed"
+  },
+  {
+   "id": "c14",
+   "classification": "unsupported",
+   "evidence": "NHS 999 trigger retrieved is swelling of lips/mouth/throat/tongue or very fast/hard breathing (serious allergic reaction), not wheezing/chest tightness as 'lung problems'",
+   "url": "https://www.nhs.uk/medicines/bisoprolol/side-effects-of-bisoprolol/",
+   "action": "edited",
+   "newSentence": "For a serious allergic reaction, the NHS says to call 999 if the lips, mouth, throat or tongue suddenly swell, or if breathing is very fast or hard."
+  },
+  {
+   "id": "c15",
+   "classification": "supported",
+   "evidence": "NHS: whites of eyes or skin yellow, liver problems, call a doctor or 111",
+   "url": "https://www.nhs.uk/medicines/bisoprolol/side-effects-of-bisoprolol/",
+   "action": "kept"
+  },
+  {
+   "id": "c16",
+   "classification": "unsupported",
+   "evidence": "Cough/breathlessness on exercise and swollen ankles, with same route to care, not retrieved; NHS lists breathing problems, irregular heartbeat or worsening heart failure as serious",
+   "url": "https://www.nhs.uk/medicines/bisoprolol/side-effects-of-bisoprolol/",
+   "action": "edited",
+   "newSentence": "Serious side effects are uncommon. The NHS lists a serious allergic reaction, liver inflammation, breathing problems, and an irregular heartbeat or worsening heart failure symptoms."
+  },
+  {
+   "id": "c17",
+   "classification": "supported",
+   "evidence": "Leaflet: suddenly stopping likely to cause side effects; NHS: stopping can raise BP and risk of heart attack/stroke",
+   "url": "https://www.medicines.org.uk/emc/files/pil.13703.pdf",
+   "action": "kept"
+  },
+  {
+   "id": "c18",
+   "classification": "supported",
+   "evidence": "Leaflet: dose reduced gradually, speak to prescriber; NHS: talk to doctor before stopping",
+   "url": "https://www.nhs.uk/medicines/bisoprolol/common-questions-about-bisoprolol/",
+   "action": "kept"
+  },
+  {
+   "id": "c19",
+   "classification": "unsupported",
+   "evidence": "NHS interactions: ibuprofen-type painkillers (reduce effect) and some antidepressants (lower BP) retrieved; amitriptyline by name not retrieved",
+   "url": "https://www.nhs.uk/medicines/bisoprolol/taking-bisoprolol-with-other-medicines-and-herbal-supplements/",
+   "action": "edited",
+   "newSentence": "Other medicines that lower blood pressure can sometimes push it too low... Painkillers such as ibuprofen can make bisoprolol less effective."
+  },
+  {
+   "id": "c20",
+   "classification": "unsupported",
+   "evidence": "Heart-rhythm medicines and treatments for clinical shock not retrieved on NHS page; replaced by NHS-listed groups",
+   "url": "https://www.nhs.uk/medicines/bisoprolol/taking-bisoprolol-with-other-medicines-and-herbal-supplements/",
+   "action": "removed"
+  },
+  {
+   "id": "c21",
+   "classification": "supported",
+   "evidence": "NHS: little information on herbal remedies; check with pharmacist/doctor; tell doctor about other medicines, herbal remedies, vitamins, supplements",
+   "url": "https://www.nhs.uk/medicines/bisoprolol/taking-bisoprolol-with-other-medicines-and-herbal-supplements/",
+   "action": "edited",
+   "newSentence": "For herbal remedies and supplements the NHS says there is very little information, and it advises telling a doctor or pharmacist about any other medicines, herbal remedies, vitamins or supplements."
+  },
+  {
+   "id": "c22",
+   "classification": "unsupported",
+   "evidence": "Mechanism 'alcohol increases blood-pressure-lowering effect' not found in retrieved text; retrieved: avoid alcohol when dizzy/weak (worse)",
+   "url": "https://www.nhs.uk/medicines/bisoprolol/how-and-when-to-take-bisoprolol/",
+   "action": "edited",
+   "newSentence": "It also says alcohol will make dizziness or weakness feel worse."
+  },
+  {
+   "id": "c23",
+   "classification": "supported",
+   "evidence": "NHS: best to avoid alcohol at the start or when dose increases until you see how it affects you",
+   "url": "https://www.nhs.uk/medicines/bisoprolol/how-and-when-to-take-bisoprolol/",
+   "action": "kept"
+  },
+  {
+   "id": "c24",
+   "classification": "unsupported",
+   "evidence": "Retrieved NHS list differs: allergic reaction to bisoprolol/other medicine, low BP, slow heart rate, worsening heart failure, heart disease, recent heart attack, severe circulation problems, metabolic acidosis, lung disease or severe asthma; diabetes/kidney/PAD not in that list",
+   "url": "https://www.nhs.uk/medicines/bisoprolol/who-can-and-cannot-take-bisoprolol/",
+   "action": "edited",
+   "newSentence": "It lists a previous allergic reaction ... and lung disease or severe asthma among the reasons to check with a doctor first."
+  },
+  {
+   "id": "c25",
+   "classification": "unsupported",
+   "evidence": "'NHS-linked' beta-blockers page claim that beta blockers may worsen asthma not re-retrieved",
+   "url": "https://www.nhs.uk/medicines/bisoprolol/who-can-and-cannot-take-bisoprolol/",
+   "action": "removed"
+  },
+  {
+   "id": "c26",
+   "classification": "supported",
+   "evidence": "Leaflets/NHS: may hide warning signs of low blood sugar",
+   "url": "https://www.nhs.uk/medicines/bisoprolol/who-can-and-cannot-take-bisoprolol/",
+   "action": "kept"
+  },
+  {
+   "id": "c27",
+   "classification": "supported",
+   "evidence": "NHS: can be taken in pregnancy; extra checks offered (pregnancy page adds growth/ultrasound scans)",
+   "url": "https://www.nhs.uk/medicines/bisoprolol/pregnancy-breastfeeding-and-fertility-while-taking-bisoprolol/",
+   "action": "kept"
+  },
+  {
+   "id": "c28",
+   "classification": "supported",
+   "evidence": "NHS: breastfeeding may cause side effects in baby; doctor may recommend if benefits outweigh risks",
+   "url": "https://www.nhs.uk/medicines/bisoprolol/pregnancy-breastfeeding-and-fertility-while-taking-bisoprolol/",
+   "action": "edited",
+   "newSentence": "Taking it while breastfeeding may cause side effects in the baby, although a doctor may still recommend it if the benefits outweigh the risks."
+  },
+  {
+   "id": "c29",
+   "classification": "supported",
+   "evidence": "One UK leaflet advises against use in pregnancy (search summary)",
+   "url": "https://www.medicines.org.uk/emc/files/pil.13703.pdf",
+   "action": "edited",
+   "newSentence": "One UK product leaflet advises against use in pregnancy, which differs from the NHS advice."
+  },
+  {
+   "id": "c30",
+   "classification": "supported",
+   "evidence": "NHS lists tiredness as common",
+   "url": "https://www.nhs.uk/medicines/bisoprolol/side-effects-of-bisoprolol/",
+   "action": "kept"
+  },
+  {
+   "id": "c31",
+   "classification": "unsupported",
+   "evidence": "'Signs of slow heart rate' wording not re-retrieved",
+   "url": "https://www.bhf.org.uk/informationsupport/heart-matters-magazine/medical/drug-cabinet/beta-blockers",
+   "action": "removed"
+  },
+  {
+   "id": "c32",
+   "classification": "supported",
+   "evidence": "NHS: sit or lie down if dizzy or weak",
+   "url": "https://www.nhs.uk/medicines/bisoprolol/side-effects-of-bisoprolol/",
+   "action": "kept"
+  },
+  {
+   "id": "c33",
+   "classification": "supported",
+   "evidence": "Leaflet: stopping suddenly likely to cause side effects",
+   "url": "https://www.medicines.org.uk/emc/files/pil.13703.pdf",
+   "action": "kept"
+  },
+  {
+   "id": "c34",
+   "classification": "supported",
+   "evidence": "Leaflet: reduce gradually",
+   "url": "https://www.medicines.org.uk/emc/files/pil.13703.pdf",
+   "action": "kept"
+  },
+  {
+   "id": "c35",
+   "classification": "supported",
+   "evidence": "NHS: talk to doctor before stopping",
+   "url": "https://www.nhs.uk/medicines/bisoprolol/common-questions-about-bisoprolol/",
+   "action": "edited",
+   "newSentence": "The NHS advises talking to a doctor before stopping."
+  },
+  {
+   "id": "c36",
+   "classification": "supported",
+   "evidence": "NHS lists breathing problems among serious (uncommon) side effects",
+   "url": "https://www.nhs.uk/medicines/bisoprolol/side-effects-of-bisoprolol/",
+   "action": "kept"
+  },
+  {
+   "id": "c37",
+   "classification": "unsupported",
+   "evidence": "999 trigger wording differs (swelling of lips/mouth/throat/tongue; very fast or hard breathing)",
+   "url": "https://www.nhs.uk/medicines/bisoprolol/side-effects-of-bisoprolol/",
+   "action": "edited",
+   "newSentence": "It says to call 999 if the lips, mouth, throat or tongue suddenly swell, or if breathing is very fast or hard."
+  },
+  {
+   "id": "c38",
+   "classification": "unsupported",
+   "evidence": "Asthma-worse claim not re-retrieved; NHS lists lung disease or severe asthma among conditions to check",
+   "url": "https://www.nhs.uk/medicines/bisoprolol/who-can-and-cannot-take-bisoprolol/",
+   "action": "edited",
+   "newSentence": "The NHS also lists lung disease or severe asthma among the conditions to check with a doctor before taking it."
+  },
+  {
+   "id": "c39",
+   "classification": "unsupported",
+   "evidence": "Mechanism of alcohol effect not re-retrieved",
+   "url": "https://www.nhs.uk/medicines/bisoprolol/how-and-when-to-take-bisoprolol/",
+   "action": "edited",
+   "newSentence": "The NHS says it is best to avoid alcohol when first starting bisoprolol or when the amount is increased, until you see how it affects you."
+  },
+  {
+   "id": "c40",
+   "classification": "supported",
+   "evidence": "NHS: avoid alcohol at start/dose increase until you see effect",
+   "url": "https://www.nhs.uk/medicines/bisoprolol/how-and-when-to-take-bisoprolol/",
+   "action": "kept"
+  },
+  {
+   "id": "c41",
+   "classification": "supported",
+   "evidence": "BHF: selective vs non-selective beta blockers; bisoprolol is one of several",
+   "url": "https://www.bhf.org.uk/informationsupport/heart-matters-magazine/medical/drug-cabinet/beta-blockers",
+   "action": "kept"
+  },
+  {
+   "id": "c42",
+   "classification": "supported",
+   "evidence": "NHS: works as well, fewer side effects, acts mainly on heart",
+   "url": "https://www.nhs.uk/medicines/bisoprolol/about-bisoprolol/",
+   "action": "kept"
+  },
+  {
+   "id": "c43",
+   "classification": "unsupported",
+   "evidence": "'so it is started and reviewed by a prescriber' is an inference not in source",
+   "url": "https://www.nhs.uk/medicines/bisoprolol/",
+   "action": "edited",
+   "newSentence": "(sentence dropped; faq now ends with BHF selectivity sentence)"
+  },
+  {
+   "id": "c44",
+   "classification": "supported",
+   "evidence": "Beta blocker",
+   "url": "https://www.nhs.uk/medicines/bisoprolol/",
+   "action": "kept"
+  },
+  {
+   "id": "c45",
+   "classification": "supported",
+   "evidence": "Uses",
+   "url": "https://www.nhs.uk/medicines/bisoprolol/about-bisoprolol/",
+   "action": "kept"
+  },
+  {
+   "id": "c46",
+   "classification": "supported",
+   "evidence": "Prescription only",
+   "url": "https://www.nhs.uk/medicines/bisoprolol/",
+   "action": "kept"
+  },
+  {
+   "id": "c47",
+   "classification": "unsupported",
+   "evidence": "'swallowed whole' unsupported; NHS: swallow with a drink of water, with or without food",
+   "url": "https://www.nhs.uk/medicines/bisoprolol/how-and-when-to-take-bisoprolol/",
+   "action": "edited",
+   "newSentence": "Tablets swallowed with a drink of water, with or without food."
+  },
+  {
+   "id": "c48",
+   "classification": "supported",
+   "evidence": "Common side effects list (now matches retrieved NHS list)",
+   "url": "https://www.nhs.uk/medicines/bisoprolol/side-effects-of-bisoprolol/",
+   "action": "edited",
+   "newSentence": "Headaches, tiredness, cold or tingly hands and feet, dizziness, feeling sick, diarrhoea or constipation."
+  },
+  {
+   "id": "c49",
+   "classification": "unsupported",
+   "evidence": "999 trigger wording changed to retrieved NHS wording",
+   "url": "https://www.nhs.uk/medicines/bisoprolol/side-effects-of-bisoprolol/",
+   "action": "edited",
+   "newSentence": "Sudden swelling of the lips, mouth, throat or tongue, or very fast or hard breathing."
+  },
+  {
+   "id": "c50",
+   "classification": "supported",
+   "evidence": "NHS: talk to doctor before stopping; stopping can raise BP",
+   "url": "https://www.nhs.uk/medicines/bisoprolol/common-questions-about-bisoprolol/",
+   "action": "edited",
+   "newSentence": "Talk to a doctor first; stopping can make blood pressure rise."
+  }
+ ],
+ "notes": "Claims are in first-pass ledger order (sections, faqs, keyFacts). Items marked 'not re-retrieved verbatim' (prescription-only, angina/AF uses, 'works as well', sit/lie down) were consistent with NHS page titles and retrieved text but I did not see the exact sentences; they were kept as supported on the strength of the NHS pages and the first-pass quotes. ASTHMA: the retrieved NHS who-can-and-cannot page lists 'lung disease or severe asthma' as a caution, and the leaflets list severe asthma as a reason not to take it; the article therefore says 'lung disease or severe asthma' and does not say asthma is generally excluded. This is softer than the existing record ('avoided in asthma'); a reviewer should reconcile. Removed: 'after eating might help' (NHS says with or without food), sleep disturbance 'common' (leaflet says less common/rare), amitriptyline by name, clinical shock/antiarrhythmics, NHS-linked asthma-worse claim, slow-heart-rate sentence, alcohol BP-mechanism, 'started and reviewed by a prescriber'. Added from retrieved text: BHF selectivity and mechanism, NHS stopping/BP rise, NHS interaction groups, NHS pregnancy-page growth/scans, NHS 999 allergic-reaction wording. Reference URLs: emc URL changed to pil.13703.pdf (the leaflet actually retrieved); beta-blockers NHS page dropped (not relied on). Length: sections total about 750 words; whole article including FAQs and key facts about 1,170 words, so over 900 if the cap applies to everything."
+}
