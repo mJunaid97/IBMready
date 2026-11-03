@@ -1,0 +1,915 @@
+{
+ "id": "sleep-apnoea",
+ "searchesUsed": 13,
+ "counts": {
+  "supported": 77,
+  "textbook": 4,
+  "unsupported": 12,
+  "wrong": 0,
+  "unsafe": 0,
+  "unchecked": 0
+ },
+ "claims": [
+  {
+   "id": "c01",
+   "where": "definition",
+   "sentence": "Obstructive sleep apnoea is a condition in which the throat narrows or closes during sleep, so breathing stops and starts again.",
+   "classification": "supported",
+   "evidence": "Lung UK: throat narrows or closes as upper airway muscles relax; breathing stops and restarts",
+   "url": "https://www.asthmaandlung.org.uk/conditions/obstructive-sleep-apnoea-osa/what-obstructive-sleep-apnoea-osa",
+   "action": "kept"
+  },
+  {
+   "id": "c02",
+   "where": "overview",
+   "sentence": "In obstructive sleep apnoea, the muscles of the upper airway relax during sleep and the throat narrows or closes.",
+   "classification": "supported",
+   "evidence": "Lung UK: throat narrows or closes as upper airway muscles relax; breathing stops and restarts",
+   "url": "https://www.asthmaandlung.org.uk/conditions/obstructive-sleep-apnoea-osa/what-obstructive-sleep-apnoea-osa",
+   "action": "kept"
+  },
+  {
+   "id": "c03",
+   "where": "overview",
+   "sentence": "Breathing then stops and restarts.",
+   "classification": "supported",
+   "evidence": "Lung UK: throat narrows or closes as upper airway muscles relax; breathing stops and restarts",
+   "url": "https://www.asthmaandlung.org.uk/conditions/obstructive-sleep-apnoea-osa/what-obstructive-sleep-apnoea-osa",
+   "action": "kept"
+  },
+  {
+   "id": "c04",
+   "where": "overview",
+   "sentence": "Asthma + Lung UK says about 1 in 20 people have it.",
+   "classification": "supported",
+   "evidence": "Lung UK/search: affects about 1 in 20 people",
+   "url": "https://www.asthmaandlung.org.uk/conditions/obstructive-sleep-apnoea-osa/what-obstructive-sleep-apnoea-osa",
+   "action": "kept"
+  },
+  {
+   "id": "c05",
+   "where": "overview",
+   "sentence": "Common signs are loud snoring, gasping or choking at night and feeling very tired by day.",
+   "classification": "supported",
+   "evidence": "NHS lists symptoms and linked factors: obesity, large neck, older age, family history, alcohol, smoking, large tonsils/adenoids, back sleeping, COPD",
+   "url": "https://www.nhs.uk/conditions/sleep-apnoea/",
+   "action": "kept"
+  },
+  {
+   "id": "c06",
+   "where": "overview",
+   "sentence": "It is linked with obesity, older age and a family history of the condition.",
+   "classification": "supported",
+   "evidence": "NHS lists symptoms and linked factors: obesity, large neck, older age, family history, alcohol, smoking, large tonsils/adenoids, back sleeping, COPD",
+   "url": "https://www.nhs.uk/conditions/sleep-apnoea/",
+   "action": "kept"
+  },
+  {
+   "id": "c07",
+   "where": "causes[0]",
+   "sentence": "The muscles of the upper airway relax during sleep, so the throat narrows or closes.",
+   "classification": "supported",
+   "evidence": "Lung UK: throat narrows or closes as upper airway muscles relax; breathing stops and restarts",
+   "url": "https://www.asthmaandlung.org.uk/conditions/obstructive-sleep-apnoea-osa/what-obstructive-sleep-apnoea-osa",
+   "action": "kept"
+  },
+  {
+   "id": "c08",
+   "where": "causes[1]",
+   "sentence": "Large tonsils or adenoids are linked with the airway narrowing.",
+   "classification": "supported",
+   "evidence": "NHS lists symptoms and linked factors: obesity, large neck, older age, family history, alcohol, smoking, large tonsils/adenoids, back sleeping, COPD",
+   "url": "https://www.nhs.uk/conditions/sleep-apnoea/",
+   "action": "kept"
+  },
+  {
+   "id": "c09",
+   "where": "riskFactors[0]",
+   "sentence": "Obesity",
+   "classification": "supported",
+   "evidence": "NHS lists symptoms and linked factors: obesity, large neck, older age, family history, alcohol, smoking, large tonsils/adenoids, back sleeping, COPD",
+   "url": "https://www.nhs.uk/conditions/sleep-apnoea/",
+   "action": "kept"
+  },
+  {
+   "id": "c10",
+   "where": "riskFactors[1]",
+   "sentence": "A large neck",
+   "classification": "supported",
+   "evidence": "NHS lists symptoms and linked factors: obesity, large neck, older age, family history, alcohol, smoking, large tonsils/adenoids, back sleeping, COPD",
+   "url": "https://www.nhs.uk/conditions/sleep-apnoea/",
+   "action": "kept"
+  },
+  {
+   "id": "c11",
+   "where": "riskFactors[2]",
+   "sentence": "Older age",
+   "classification": "supported",
+   "evidence": "NHS lists symptoms and linked factors: obesity, large neck, older age, family history, alcohol, smoking, large tonsils/adenoids, back sleeping, COPD",
+   "url": "https://www.nhs.uk/conditions/sleep-apnoea/",
+   "action": "kept"
+  },
+  {
+   "id": "c12",
+   "where": "riskFactors[3]",
+   "sentence": "A family history of sleep apnoea",
+   "classification": "supported",
+   "evidence": "NHS lists symptoms and linked factors: obesity, large neck, older age, family history, alcohol, smoking, large tonsils/adenoids, back sleeping, COPD",
+   "url": "https://www.nhs.uk/conditions/sleep-apnoea/",
+   "action": "kept"
+  },
+  {
+   "id": "c13",
+   "where": "riskFactors[4]",
+   "sentence": "Drinking alcohol",
+   "classification": "supported",
+   "evidence": "NHS lists symptoms and linked factors: obesity, large neck, older age, family history, alcohol, smoking, large tonsils/adenoids, back sleeping, COPD",
+   "url": "https://www.nhs.uk/conditions/sleep-apnoea/",
+   "action": "kept"
+  },
+  {
+   "id": "c14",
+   "where": "riskFactors[5]",
+   "sentence": "Smoking",
+   "classification": "supported",
+   "evidence": "NHS lists symptoms and linked factors: obesity, large neck, older age, family history, alcohol, smoking, large tonsils/adenoids, back sleeping, COPD",
+   "url": "https://www.nhs.uk/conditions/sleep-apnoea/",
+   "action": "kept"
+  },
+  {
+   "id": "c15",
+   "where": "riskFactors[6]",
+   "sentence": "Sleeping on the back",
+   "classification": "supported",
+   "evidence": "NHS lists symptoms and linked factors: obesity, large neck, older age, family history, alcohol, smoking, large tonsils/adenoids, back sleeping, COPD",
+   "url": "https://www.nhs.uk/conditions/sleep-apnoea/",
+   "action": "kept"
+  },
+  {
+   "id": "c16",
+   "where": "riskFactors[7]",
+   "sentence": "Chronic obstructive pulmonary disease (COPD)",
+   "classification": "supported",
+   "evidence": "NHS lists symptoms and linked factors: obesity, large neck, older age, family history, alcohol, smoking, large tonsils/adenoids, back sleeping, COPD",
+   "url": "https://www.nhs.uk/conditions/sleep-apnoea/",
+   "action": "kept"
+  },
+  {
+   "id": "c17",
+   "where": "riskFactors[8]",
+   "sentence": "Asthma, especially if overweight, with reflux, or hard to control",
+   "classification": "supported",
+   "evidence": "Lung UK: more likely with asthma, especially overweight, GORD or difficult asthma",
+   "url": "https://www.asthmaandlung.org.uk/conditions/obstructive-sleep-apnoea-osa/what-obstructive-sleep-apnoea-osa",
+   "action": "kept"
+  },
+  {
+   "id": "c18",
+   "where": "signs[0]",
+   "sentence": "A bed partner may notice pauses in breathing, gasping or choking noises, and loud snoring during sleep.",
+   "classification": "supported",
+   "evidence": "NHS: breathing pauses, gasping/snorting/choking, snoring, tiredness, concentration, mood, headache; ask bed partner to watch; see GP",
+   "url": "https://www.nhs.uk/conditions/sleep-apnoea/",
+   "action": "kept"
+  },
+  {
+   "id": "c19",
+   "where": "complications[0]",
+   "sentence": "Without treatment, it can contribute to high blood pressure, stroke, type 2 diabetes and heart disease.",
+   "classification": "supported",
+   "evidence": "NHS: untreated risks high blood pressure, stroke, type 2 diabetes, heart disease, low mood, accidents",
+   "url": "https://www.nhs.uk/conditions/sleep-apnoea/",
+   "action": "kept"
+  },
+  {
+   "id": "c20",
+   "where": "complications[1]",
+   "sentence": "Without treatment, it can contribute to low mood.",
+   "classification": "supported",
+   "evidence": "NHS: untreated risks high blood pressure, stroke, type 2 diabetes, heart disease, low mood, accidents",
+   "url": "https://www.nhs.uk/conditions/sleep-apnoea/",
+   "action": "kept"
+  },
+  {
+   "id": "c21",
+   "where": "complications[2]",
+   "sentence": "Daytime tiredness can lead to accidents.",
+   "classification": "supported",
+   "evidence": "NHS: untreated risks high blood pressure, stroke, type 2 diabetes, heart disease, low mood, accidents",
+   "url": "https://www.nhs.uk/conditions/sleep-apnoea/",
+   "action": "kept"
+  },
+  {
+   "id": "c22",
+   "where": "complications[3]",
+   "sentence": "It can make asthma symptoms worse and raise the risk of an asthma attack.",
+   "classification": "supported",
+   "evidence": "Lung UK: OSA can make asthma symptoms worse and raise risk of attack",
+   "url": "https://www.asthmaandlung.org.uk/conditions/obstructive-sleep-apnoea-osa/what-obstructive-sleep-apnoea-osa",
+   "action": "kept"
+  },
+  {
+   "id": "c23",
+   "where": "diagnosis",
+   "sentence": "A GP may refer someone to a specialist sleep clinic.",
+   "classification": "supported",
+   "evidence": "NHS: GP may refer to sleep clinic; tests usually at home, sometimes overnight in clinic",
+   "url": "https://www.nhs.uk/conditions/sleep-apnoea/",
+   "action": "kept"
+  },
+  {
+   "id": "c24",
+   "where": "diagnosis",
+   "sentence": "The tests can usually be done at home, but sometimes an overnight stay in the clinic is needed.",
+   "classification": "supported",
+   "evidence": "NHS: GP may refer to sleep clinic; tests usually at home, sometimes overnight in clinic",
+   "url": "https://www.nhs.uk/conditions/sleep-apnoea/",
+   "action": "kept"
+  },
+  {
+   "id": "c25",
+   "where": "diagnosis",
+   "sentence": "Asthma + Lung UK names respiratory polygraphy and oximetry as the main sleep tests.",
+   "classification": "supported",
+   "evidence": "Lung UK: tests include respiratory polygraphy and oximetry",
+   "url": "https://www.asthmaandlung.org.uk/conditions/obstructive-sleep-apnoea-osa/how-osa-diagnosed",
+   "action": "kept"
+  },
+  {
+   "id": "c26",
+   "where": "diagnosis",
+   "sentence": "Doctors judge how severe the condition is by counting the breathing pauses in an hour of the sleep study.",
+   "classification": "supported",
+   "evidence": "Lung UK: severity worked out by counting breathing pauses per hour in sleep study",
+   "url": "https://www.asthmaandlung.org.uk/conditions/obstructive-sleep-apnoea-osa/how-osa-diagnosed",
+   "action": "kept"
+  },
+  {
+   "id": "c27",
+   "where": "treatment",
+   "sentence": "Lifestyle changes such as losing weight, giving up smoking and drinking less alcohol can help.",
+   "classification": "supported",
+   "evidence": "NHS: losing weight, stopping smoking, less alcohol can help",
+   "url": "https://www.nhs.uk/conditions/sleep-apnoea/",
+   "action": "kept"
+  },
+  {
+   "id": "c28",
+   "where": "treatment",
+   "sentence": "Many people still need a CPAP machine, which gently pumps air into a mask worn over the nose, or nose and mouth, during sleep.",
+   "classification": "supported",
+   "evidence": "NHS: CPAP gently pushes air through mask over nose or mouth during sleep",
+   "url": "https://www.nhs.uk/conditions/sleep-apnoea/",
+   "action": "kept"
+  },
+  {
+   "id": "c29",
+   "where": "treatment",
+   "sentence": "A mandibular advancement device, worn over the teeth to hold the lower jaw forward, is another option.",
+   "classification": "supported",
+   "evidence": "NHS: mandibular advancement device holds jaw forward",
+   "url": "https://www.nhs.uk/conditions/sleep-apnoea/",
+   "action": "edited",
+   "newSentence": "A mandibular advancement device, worn in the mouth to hold the lower jaw forward, is another option."
+  },
+  {
+   "id": "c30",
+   "where": "treatment",
+   "sentence": "Surgery, such as removing large tonsils, may also be an option.",
+   "classification": "supported",
+   "evidence": "NHS: surgery such as removing large tonsils",
+   "url": "https://www.nhs.uk/conditions/sleep-apnoea/",
+   "action": "kept"
+  },
+  {
+   "id": "c31",
+   "where": "prevention",
+   "sentence": "The NHS says lifestyle changes such as losing weight, giving up smoking and drinking less alcohol can sometimes help with sleep apnoea.",
+   "classification": "supported",
+   "evidence": "NHS: losing weight, stopping smoking, less alcohol can help",
+   "url": "https://www.nhs.uk/conditions/sleep-apnoea/",
+   "action": "kept"
+  },
+  {
+   "id": "c32",
+   "where": "seekCare",
+   "sentence": "The NHS advises a GP appointment for pauses in breathing during sleep, gasping or choking noises at night, or constant tiredness in the day.",
+   "classification": "supported",
+   "evidence": "NHS: breathing pauses, gasping/snorting/choking, snoring, tiredness, concentration, mood, headache; ask bed partner to watch; see GP",
+   "url": "https://www.nhs.uk/conditions/sleep-apnoea/",
+   "action": "kept"
+  },
+  {
+   "id": "c33",
+   "where": "seekCare",
+   "sentence": "If sleep apnoea with excessive sleepiness has been confirmed, the NHS says driving must stop until symptoms such as feeling very tired are under control.",
+   "classification": "supported",
+   "evidence": "GOV.UK: must not drive if sleep apnoea causes excessive sleepiness until under control",
+   "url": "https://www.gov.uk/excessive-sleepiness-and-driving",
+   "action": "edited",
+   "newSentence": "GOV.UK says a person must not drive if sleep apnoea causes excessive sleepiness, until the sleepiness is under control and any needed treatment is being followed."
+  },
+  {
+   "id": "c34",
+   "where": "sec0",
+   "sentence": "Sleep apnoea is when breathing stops and starts during sleep.",
+   "classification": "supported",
+   "evidence": "NHS: breathing pauses, gasping/snorting/choking, snoring, tiredness, concentration, mood, headache; ask bed partner to watch; see GP",
+   "url": "https://www.nhs.uk/conditions/sleep-apnoea/",
+   "action": "kept"
+  },
+  {
+   "id": "c35",
+   "where": "sec0",
+   "sentence": "The NHS lists the main signs as pauses in breathing while asleep, gasping, snorting or choking noises, waking often and loud snoring.",
+   "classification": "supported",
+   "evidence": "NHS: breathing pauses, gasping/snorting/choking, snoring, tiredness, concentration, mood, headache; ask bed partner to watch; see GP",
+   "url": "https://www.nhs.uk/conditions/sleep-apnoea/",
+   "action": "kept"
+  },
+  {
+   "id": "c36",
+   "where": "sec0",
+   "sentence": "Asthma + Lung UK gives doctors a simple prompt known as the Triple S: snoring, stopping breathing and excessive sleepiness.",
+   "classification": "unsupported",
+   "evidence": "Triple S not found in any retrieved text",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c37",
+   "where": "sec0",
+   "sentence": "The effects carry into the day.",
+   "classification": "textbook",
+   "evidence": "Plain fact/acronym/route-to-care or filler",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c38",
+   "where": "sec0",
+   "sentence": "People may feel very tired, find it hard to concentrate, have mood swings or wake with a headache.",
+   "classification": "supported",
+   "evidence": "NHS: breathing pauses, gasping/snorting/choking, snoring, tiredness, concentration, mood, headache; ask bed partner to watch; see GP",
+   "url": "https://www.nhs.uk/conditions/sleep-apnoea/",
+   "action": "kept"
+  },
+  {
+   "id": "c39",
+   "where": "sec0",
+   "sentence": "Because it can be hard to tell whether someone has sleep apnoea, the NHS says it can help to ask a bed partner to watch for symptoms.",
+   "classification": "supported",
+   "evidence": "NHS: breathing pauses, gasping/snorting/choking, snoring, tiredness, concentration, mood, headache; ask bed partner to watch; see GP",
+   "url": "https://www.nhs.uk/conditions/sleep-apnoea/",
+   "action": "kept"
+  },
+  {
+   "id": "c40",
+   "where": "sec0",
+   "sentence": "Bringing that person to the appointment is also useful.",
+   "classification": "supported",
+   "evidence": "NHS: breathing pauses, gasping/snorting/choking, snoring, tiredness, concentration, mood, headache; ask bed partner to watch; see GP",
+   "url": "https://www.nhs.uk/conditions/sleep-apnoea/",
+   "action": "kept"
+  },
+  {
+   "id": "c41",
+   "where": "sec0",
+   "sentence": "Asthma + Lung UK says about 1 in 20 people have obstructive sleep apnoea.",
+   "classification": "supported",
+   "evidence": "Lung UK/search: affects about 1 in 20 people",
+   "url": "https://www.asthmaandlung.org.uk/conditions/obstructive-sleep-apnoea-osa/what-obstructive-sleep-apnoea-osa",
+   "action": "kept"
+  },
+  {
+   "id": "c42",
+   "where": "sec1",
+   "sentence": "In obstructive sleep apnoea the muscles of the upper airway relax during sleep, so the throat narrows or closes.",
+   "classification": "supported",
+   "evidence": "Lung UK: throat narrows or closes as upper airway muscles relax; breathing stops and restarts",
+   "url": "https://www.asthmaandlung.org.uk/conditions/obstructive-sleep-apnoea-osa/what-obstructive-sleep-apnoea-osa",
+   "action": "kept"
+  },
+  {
+   "id": "c43",
+   "where": "sec1",
+   "sentence": "Breathing then stops and restarts.",
+   "classification": "supported",
+   "evidence": "Lung UK: throat narrows or closes as upper airway muscles relax; breathing stops and restarts",
+   "url": "https://www.asthmaandlung.org.uk/conditions/obstructive-sleep-apnoea-osa/what-obstructive-sleep-apnoea-osa",
+   "action": "kept"
+  },
+  {
+   "id": "c44",
+   "where": "sec1",
+   "sentence": "The NHS links this narrowing with several factors, including obesity, a large neck, older age and a family history of the condition.",
+   "classification": "supported",
+   "evidence": "NHS lists symptoms and linked factors: obesity, large neck, older age, family history, alcohol, smoking, large tonsils/adenoids, back sleeping, COPD",
+   "url": "https://www.nhs.uk/conditions/sleep-apnoea/",
+   "action": "kept"
+  },
+  {
+   "id": "c45",
+   "where": "sec1",
+   "sentence": "Alcohol, smoking, large tonsils or adenoids, sleeping on the back and chronic obstructive pulmonary disease are also on the NHS list.",
+   "classification": "supported",
+   "evidence": "NHS lists symptoms and linked factors: obesity, large neck, older age, family history, alcohol, smoking, large tonsils/adenoids, back sleeping, COPD",
+   "url": "https://www.nhs.uk/conditions/sleep-apnoea/",
+   "action": "kept"
+  },
+  {
+   "id": "c46",
+   "where": "sec1",
+   "sentence": "Asthma + Lung UK says the risk is higher in people with asthma, especially if they are overweight, have gastro-oesophageal reflux disease or have asthma that is difficult to control.",
+   "classification": "supported",
+   "evidence": "Lung UK: more likely with asthma, especially overweight, GORD or difficult asthma",
+   "url": "https://www.asthmaandlung.org.uk/conditions/obstructive-sleep-apnoea-osa/what-obstructive-sleep-apnoea-osa",
+   "action": "kept"
+  },
+  {
+   "id": "c47",
+   "where": "sec1",
+   "sentence": "It adds that untreated sleep apnoea can make asthma symptoms worse and raise the chance of an asthma attack.",
+   "classification": "supported",
+   "evidence": "Lung UK: OSA can make asthma symptoms worse and raise risk of attack",
+   "url": "https://www.asthmaandlung.org.uk/conditions/obstructive-sleep-apnoea-osa/what-obstructive-sleep-apnoea-osa",
+   "action": "kept"
+  },
+  {
+   "id": "c48",
+   "where": "sec2",
+   "sentence": "A GP may refer someone to a specialist sleep clinic.",
+   "classification": "supported",
+   "evidence": "NHS: GP may refer to sleep clinic; tests usually at home, sometimes overnight in clinic",
+   "url": "https://www.nhs.uk/conditions/sleep-apnoea/",
+   "action": "kept"
+  },
+  {
+   "id": "c49",
+   "where": "sec2",
+   "sentence": "The NHS says the tests can usually be done at home, though sometimes an overnight stay in the clinic is needed.",
+   "classification": "supported",
+   "evidence": "NHS: GP may refer to sleep clinic; tests usually at home, sometimes overnight in clinic",
+   "url": "https://www.nhs.uk/conditions/sleep-apnoea/",
+   "action": "kept"
+  },
+  {
+   "id": "c50",
+   "where": "sec2",
+   "sentence": "Asthma + Lung UK names respiratory polygraphy and oximetry as the main sleep tests, and says they can usually be done at home.",
+   "classification": "unsupported",
+   "evidence": "Lung UK names tests, but says polygraphy is done at home or in hospital; 'usually at home' not retrieved from Lung UK",
+   "url": "https://www.asthmaandlung.org.uk/conditions/obstructive-sleep-apnoea-osa/how-osa-diagnosed",
+   "action": "edited",
+   "newSentence": "It names pulse oximetry and respiratory polygraphy as the main sleep tests."
+  },
+  {
+   "id": "c51",
+   "where": "sec2",
+   "sentence": "A fuller study done in hospital monitors sleep in more detail.",
+   "classification": "unsupported",
+   "evidence": "Lung UK: polysomnography may be needed if polygraphy unclear; 'monitors sleep in more detail' not retrieved",
+   "url": "https://www.asthmaandlung.org.uk/conditions/obstructive-sleep-apnoea-osa/how-osa-diagnosed",
+   "action": "edited",
+   "newSentence": "If the result is not clear, a fuller study called polysomnography may be needed."
+  },
+  {
+   "id": "c52",
+   "where": "sec2",
+   "sentence": "NICE says people are currently diagnosed with home respiratory polygraphy as the first test for the condition.",
+   "classification": "supported",
+   "evidence": "NICE: home respiratory polygraphy recommended as initial test",
+   "url": "https://www.nice.org.uk/news/articles/home-testing-devices-could-increase-the-number-of-people-diagnosed-with-sleep-apnoea",
+   "action": "kept"
+  },
+  {
+   "id": "c53",
+   "where": "sec2",
+   "sentence": "Doctors judge how severe the condition is by counting the breathing pauses in an hour of the sleep study.",
+   "classification": "supported",
+   "evidence": "Lung UK: severity worked out by counting breathing pauses per hour in sleep study",
+   "url": "https://www.asthmaandlung.org.uk/conditions/obstructive-sleep-apnoea-osa/how-osa-diagnosed",
+   "action": "kept"
+  },
+  {
+   "id": "c54",
+   "where": "sec2",
+   "sentence": "NICE also says oximetry is not considered as sensitive a test for diagnosis and may overestimate blood oxygen levels in people with black or brown skin.",
+   "classification": "supported",
+   "evidence": "NICE: oximetry not as sensitive; may overestimate oxygen in black or brown skin",
+   "url": "https://www.nice.org.uk/news/articles/home-testing-devices-could-increase-the-number-of-people-diagnosed-with-sleep-apnoea",
+   "action": "kept"
+  },
+  {
+   "id": "c55",
+   "where": "sec3",
+   "sentence": "The next step depends on the sleep test results.",
+   "classification": "unsupported",
+   "evidence": "Generic filler, no source",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c56",
+   "where": "sec3",
+   "sentence": "Asthma + Lung UK says mild sleep apnoea may need only lifestyle changes, while treatments such as CPAP are started for moderate to severe disease.",
+   "classification": "unsupported",
+   "evidence": "Lung UK says CPAP is most effective for moderate to severe, and for mild only if symptoms affect quality of life or other options failed; 'only lifestyle changes' not found",
+   "url": "https://www.asthmaandlung.org.uk/conditions/obstructive-sleep-apnoea-osa",
+   "action": "edited",
+   "newSentence": "Asthma + Lung UK describes CPAP as the most effective treatment for moderate to severe disease. For mild disease it is recommended only if symptoms affect quality of life or other options have not worked."
+  },
+  {
+   "id": "c57",
+   "where": "sec3",
+   "sentence": "The NHS says losing weight, giving up smoking and drinking less alcohol can help.",
+   "classification": "supported",
+   "evidence": "NHS: losing weight, stopping smoking, less alcohol can help",
+   "url": "https://www.nhs.uk/conditions/sleep-apnoea/",
+   "action": "kept"
+  },
+  {
+   "id": "c58",
+   "where": "sec3",
+   "sentence": "Many people still need a CPAP machine, short for continuous positive airway pressure.",
+   "classification": "textbook",
+   "evidence": "Plain fact/acronym/route-to-care or filler",
+   "url": "",
+   "action": "kept"
+  },
+  {
+   "id": "c59",
+   "where": "sec3",
+   "sentence": "It gently pumps air into a mask worn over the nose, or nose and mouth, during sleep.",
+   "classification": "supported",
+   "evidence": "NHS: CPAP gently pushes air through mask over nose or mouth during sleep",
+   "url": "https://www.nhs.uk/conditions/sleep-apnoea/",
+   "action": "kept"
+  },
+  {
+   "id": "c60",
+   "where": "sec3",
+   "sentence": "The NHS says it is provided free on the NHS for people who need it and works best when used every night.",
+   "classification": "unsupported",
+   "evidence": "Free on NHS found; 'works best when used every night' attributed to NHS not found (NHS England says every night)",
+   "url": "https://www.nhs.uk/conditions/sleep-apnoea/",
+   "action": "edited",
+   "newSentence": "The NHS says it is provided free on the NHS for people who need it."
+  },
+  {
+   "id": "c61",
+   "where": "sec3",
+   "sentence": "The NHS also says it is worth telling the doctor if the mask is uncomfortable.",
+   "classification": "supported",
+   "evidence": "NHS 111 Wales/NHS advice: tell your doctor if uncomfortable",
+   "url": "https://www.nhs.uk/conditions/sleep-apnoea/",
+   "action": "kept"
+  },
+  {
+   "id": "c62",
+   "where": "sec3",
+   "sentence": "A mandibular advancement device is another option.",
+   "classification": "supported",
+   "evidence": "NHS: mandibular advancement device holds jaw forward; CPAP, surgery",
+   "url": "https://www.nhs.uk/conditions/sleep-apnoea/",
+   "action": "kept"
+  },
+  {
+   "id": "c63",
+   "where": "sec3",
+   "sentence": "It is worn over the upper and lower teeth and holds the lower jaw forward, which makes more room at the back of the mouth.",
+   "classification": "unsupported",
+   "evidence": "Sources say device is worn in the mouth and brings lower jaw forward; 'more room at back of mouth' and 'upper and lower teeth' not found",
+   "url": "",
+   "action": "edited",
+   "newSentence": "It is worn in the mouth during sleep and brings the lower jaw forward."
+  },
+  {
+   "id": "c64",
+   "where": "sec3",
+   "sentence": "For mild disease with daytime symptoms, NICE says one can be considered for people who cannot tolerate CPAP or decline it.",
+   "classification": "supported",
+   "evidence": "NICE NG202: MAS alternative to CPAP in mild OSAHS if CPAP not tolerated or declined",
+   "url": "https://www.nice.org.uk/guidance/ng202/chapter/1-Obstructive-sleep-apnoeahypopnoea-syndrome",
+   "action": "kept"
+  },
+  {
+   "id": "c65",
+   "where": "sec3",
+   "sentence": "The NHS also lists surgery, such as removing large tonsils.",
+   "classification": "supported",
+   "evidence": "NHS: surgery such as removing large tonsils",
+   "url": "https://www.nhs.uk/conditions/sleep-apnoea/",
+   "action": "kept"
+  },
+  {
+   "id": "c66",
+   "where": "sec4",
+   "sentence": "The NHS says that without treatment, sleep apnoea can contribute to high blood pressure, stroke, type 2 diabetes, heart disease and low mood.",
+   "classification": "supported",
+   "evidence": "NHS: untreated risks high blood pressure, stroke, type 2 diabetes, heart disease, low mood, accidents",
+   "url": "https://www.nhs.uk/conditions/sleep-apnoea/",
+   "action": "kept"
+  },
+  {
+   "id": "c67",
+   "where": "sec4",
+   "sentence": "Tiredness during the day can also lead to accidents.",
+   "classification": "supported",
+   "evidence": "NHS: untreated risks high blood pressure, stroke, type 2 diabetes, heart disease, low mood, accidents",
+   "url": "https://www.nhs.uk/conditions/sleep-apnoea/",
+   "action": "kept"
+  },
+  {
+   "id": "c68",
+   "where": "sec4",
+   "sentence": "On driving, the NHS says that if sleep apnoea with excessive sleepiness has been confirmed, a person must not drive until symptoms such as feeling very tired are under control.",
+   "classification": "supported",
+   "evidence": "GOV.UK: must not drive if sleep apnoea causes excessive sleepiness until under control",
+   "url": "https://www.gov.uk/excessive-sleepiness-and-driving",
+   "action": "edited",
+   "newSentence": "GOV.UK says a person must not drive if sleep apnoea causes excessive sleepiness, until the sleepiness is under control and any needed treatment is being followed."
+  },
+  {
+   "id": "c69",
+   "where": "sec4",
+   "sentence": "One NHS hospital leaflet says someone with moderate or severe sleep apnoea and daytime sleepiness should not be driving and has a responsibility to tell the DVLA.",
+   "classification": "unsupported",
+   "evidence": "Hospital leaflet wording not retrieved; GOV.UK says moderate/severe with excessive sleepiness must tell DVLA",
+   "url": "https://www.gov.uk/excessive-sleepiness-and-driving",
+   "action": "edited",
+   "newSentence": "It adds that people with moderate or severe sleep apnoea with excessive sleepiness must tell the DVLA."
+  },
+  {
+   "id": "c70",
+   "where": "sec4",
+   "sentence": "Asthma + Lung UK says treating sleep apnoea can improve both the sleep apnoea and asthma.",
+   "classification": "supported",
+   "evidence": "Lung UK: treating OSA e.g. with CPAP can improve both OSA and asthma",
+   "url": "https://www.asthmaandlung.org.uk/conditions/obstructive-sleep-apnoea-osa/what-obstructive-sleep-apnoea-osa",
+   "action": "kept"
+  },
+  {
+   "id": "c71",
+   "where": "sec4",
+   "sentence": "It adds that a person who uses CPAP needs a letter from the GP or specialist team to travel with the machine.",
+   "classification": "unsupported",
+   "evidence": "No retrieved text on a travel letter for CPAP",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c72",
+   "where": "faq0",
+   "sentence": "One clinical guideline says CPAP is not a cure, but if it is used every night it is very effective at reversing the symptoms.",
+   "classification": "supported",
+   "evidence": "NHS England guide: CPAP is not a cure but, used every night, very effective at reversing symptoms",
+   "url": "https://www.england.nhs.uk/long-read/healthcare-professionals-guide-to-obstructive-sleep-apnoea-osa-amongst-people-with-a-learning-disability-and-autistic-people/",
+   "action": "edited",
+   "newSentence": "NHS England says CPAP is not a cure, but if it is used every night it is very effective at reversing the symptoms of obstructive sleep apnoea."
+  },
+  {
+   "id": "c73",
+   "where": "faq0",
+   "sentence": "The NHS says the machine works best when used every night and is provided free on the NHS for people who need it.",
+   "classification": "unsupported",
+   "evidence": "As c60",
+   "url": "https://www.nhs.uk/conditions/sleep-apnoea/",
+   "action": "edited",
+   "newSentence": "The NHS says the machine is provided free on the NHS for people who need it."
+  },
+  {
+   "id": "c74",
+   "where": "faq0",
+   "sentence": "Lifestyle changes such as losing weight can also help.",
+   "classification": "supported",
+   "evidence": "NHS: losing weight, stopping smoking, less alcohol can help",
+   "url": "https://www.nhs.uk/conditions/sleep-apnoea/",
+   "action": "kept"
+  },
+  {
+   "id": "c75",
+   "where": "faq1",
+   "sentence": "Not usually.",
+   "classification": "supported",
+   "evidence": "NHS: GP may refer to sleep clinic; tests usually at home, sometimes overnight in clinic",
+   "url": "https://www.nhs.uk/conditions/sleep-apnoea/",
+   "action": "kept"
+  },
+  {
+   "id": "c76",
+   "where": "faq1",
+   "sentence": "The NHS says the tests can usually be done at home, though sometimes an overnight stay in the clinic is needed.",
+   "classification": "supported",
+   "evidence": "NHS: GP may refer to sleep clinic; tests usually at home, sometimes overnight in clinic",
+   "url": "https://www.nhs.uk/conditions/sleep-apnoea/",
+   "action": "kept"
+  },
+  {
+   "id": "c77",
+   "where": "faq1",
+   "sentence": "Asthma + Lung UK says respiratory polygraphy and oximetry can usually be done at home, while a full hospital study monitors sleep in more detail.",
+   "classification": "unsupported",
+   "evidence": "Hospital-study detail not retrieved",
+   "url": "https://www.asthmaandlung.org.uk/conditions/obstructive-sleep-apnoea-osa/how-osa-diagnosed",
+   "action": "edited",
+   "newSentence": "Asthma + Lung UK names pulse oximetry and respiratory polygraphy as the main sleep tests. It says a fuller study called polysomnography may be needed if the result is not clear."
+  },
+  {
+   "id": "c78",
+   "where": "faq2",
+   "sentence": "Asthma + Lung UK says the risk of sleep apnoea is higher in people with asthma, especially if they are overweight, have reflux or have asthma that is hard to control.",
+   "classification": "supported",
+   "evidence": "Lung UK: more likely with asthma, especially overweight, GORD or difficult asthma",
+   "url": "https://www.asthmaandlung.org.uk/conditions/obstructive-sleep-apnoea-osa/what-obstructive-sleep-apnoea-osa",
+   "action": "kept"
+  },
+  {
+   "id": "c79",
+   "where": "faq2",
+   "sentence": "Untreated sleep apnoea can make asthma symptoms worse and raise the chance of an asthma attack.",
+   "classification": "supported",
+   "evidence": "Lung UK: OSA can make asthma symptoms worse and raise risk of attack",
+   "url": "https://www.asthmaandlung.org.uk/conditions/obstructive-sleep-apnoea-osa/what-obstructive-sleep-apnoea-osa",
+   "action": "kept"
+  },
+  {
+   "id": "c80",
+   "where": "faq2",
+   "sentence": "Lung UK says treating it can improve both conditions.",
+   "classification": "supported",
+   "evidence": "Lung UK: treating OSA e.g. with CPAP can improve both OSA and asthma",
+   "url": "https://www.asthmaandlung.org.uk/conditions/obstructive-sleep-apnoea-osa/what-obstructive-sleep-apnoea-osa",
+   "action": "kept"
+  },
+  {
+   "id": "c81",
+   "where": "faq3",
+   "sentence": "The NHS says that if sleep apnoea with excessive sleepiness has been confirmed, a person must not drive until symptoms such as feeling very tired are under control.",
+   "classification": "supported",
+   "evidence": "GOV.UK: must not drive if sleep apnoea causes excessive sleepiness until under control",
+   "url": "https://www.gov.uk/excessive-sleepiness-and-driving",
+   "action": "edited",
+   "newSentence": "GOV.UK says a person must not drive if sleep apnoea causes excessive sleepiness, until the sleepiness is under control and any needed treatment is being followed."
+  },
+  {
+   "id": "c82",
+   "where": "faq3",
+   "sentence": "One NHS hospital leaflet says someone with moderate or severe sleep apnoea and daytime sleepiness should not be driving and has a responsibility to tell the DVLA.",
+   "classification": "unsupported",
+   "evidence": "As c69",
+   "url": "https://www.gov.uk/excessive-sleepiness-and-driving",
+   "action": "edited",
+   "newSentence": "People with moderate or severe sleep apnoea with excessive sleepiness must tell the DVLA."
+  },
+  {
+   "id": "c83",
+   "where": "faq3",
+   "sentence": "A GP appointment is the usual route to talk about symptoms.",
+   "classification": "textbook",
+   "evidence": "Plain fact/acronym/route-to-care or filler",
+   "url": "",
+   "action": "kept"
+  },
+  {
+   "id": "c84",
+   "where": "faq4",
+   "sentence": "The NHS advises a GP appointment for pauses in breathing during sleep, gasping or choking noises at night, or constant tiredness in the day.",
+   "classification": "supported",
+   "evidence": "NHS: breathing pauses, gasping/snorting/choking, snoring, tiredness, concentration, mood, headache; ask bed partner to watch; see GP",
+   "url": "https://www.nhs.uk/conditions/sleep-apnoea/",
+   "action": "kept"
+  },
+  {
+   "id": "c85",
+   "where": "faq4",
+   "sentence": "Because it can be hard to tell whether someone has sleep apnoea, asking a bed partner to watch for symptoms can help.",
+   "classification": "supported",
+   "evidence": "NHS: breathing pauses, gasping/snorting/choking, snoring, tiredness, concentration, mood, headache; ask bed partner to watch; see GP",
+   "url": "https://www.nhs.uk/conditions/sleep-apnoea/",
+   "action": "kept"
+  },
+  {
+   "id": "c86",
+   "where": "faq4",
+   "sentence": "Bringing that person to the appointment is also useful.",
+   "classification": "supported",
+   "evidence": "NHS: breathing pauses, gasping/snorting/choking, snoring, tiredness, concentration, mood, headache; ask bed partner to watch; see GP",
+   "url": "https://www.nhs.uk/conditions/sleep-apnoea/",
+   "action": "kept"
+  },
+  {
+   "id": "c87",
+   "where": "kf0",
+   "sentence": "OSA",
+   "classification": "textbook",
+   "evidence": "Plain fact/acronym/route-to-care or filler",
+   "url": "",
+   "action": "kept"
+  },
+  {
+   "id": "c88",
+   "where": "kf1",
+   "sentence": "Loud snoring, pauses in breathing, gasping or choking at night, and daytime tiredness",
+   "classification": "supported",
+   "evidence": "NHS: breathing pauses, gasping/snorting/choking, snoring, tiredness, concentration, mood, headache; ask bed partner to watch; see GP",
+   "url": "https://www.nhs.uk/conditions/sleep-apnoea/",
+   "action": "kept"
+  },
+  {
+   "id": "c89",
+   "where": "kf2",
+   "sentence": "The throat narrows or closes during sleep, so breathing stops and restarts",
+   "classification": "supported",
+   "evidence": "Lung UK summary",
+   "url": "https://www.asthmaandlung.org.uk/conditions/obstructive-sleep-apnoea-osa/what-obstructive-sleep-apnoea-osa",
+   "action": "kept"
+  },
+  {
+   "id": "c90",
+   "where": "kf3",
+   "sentence": "A sleep test, often done at home, after a GP refers the person to a sleep clinic",
+   "classification": "supported",
+   "evidence": "NHS: GP may refer to sleep clinic; tests usually at home, sometimes overnight in clinic",
+   "url": "https://www.nhs.uk/conditions/sleep-apnoea/",
+   "action": "kept"
+  },
+  {
+   "id": "c91",
+   "where": "kf4",
+   "sentence": "Lifestyle changes, a CPAP machine, a mandibular advancement device, or surgery for some people",
+   "classification": "supported",
+   "evidence": "NHS: mandibular advancement device holds jaw forward; CPAP, surgery",
+   "url": "https://www.nhs.uk/conditions/sleep-apnoea/",
+   "action": "kept"
+  },
+  {
+   "id": "c92",
+   "where": "kf5",
+   "sentence": "A GP appointment for breathing pauses, gasping or constant tiredness",
+   "classification": "supported",
+   "evidence": "NHS: breathing pauses, gasping/snorting/choking, snoring, tiredness, concentration, mood, headache; ask bed partner to watch; see GP",
+   "url": "https://www.nhs.uk/conditions/sleep-apnoea/",
+   "action": "kept"
+  },
+  {
+   "id": "c93",
+   "where": "kf6",
+   "sentence": "Asthma + Lung UK says about 1 in 20 people have it",
+   "classification": "supported",
+   "evidence": "Lung UK/search: affects about 1 in 20 people",
+   "url": "https://www.asthmaandlung.org.uk/conditions/obstructive-sleep-apnoea-osa/what-obstructive-sleep-apnoea-osa",
+   "action": "kept"
+  },
+  {
+   "id": "c94",
+   "classification": "supported",
+   "evidence": "Added: central sleep apnoea differs (brain signals) - GOSH/NHS search",
+   "url": "",
+   "action": "added"
+  },
+  {
+   "id": "c95",
+   "classification": "supported",
+   "evidence": "Added: some people also have COPD, can worsen breathing during sleep - Lung UK",
+   "url": "",
+   "action": "added"
+  },
+  {
+   "id": "c96",
+   "classification": "supported",
+   "evidence": "Added: sleep clinic history/exam and oximetry/polygraphy descriptions - Lung UK how-diagnosed",
+   "url": "",
+   "action": "added"
+  },
+  {
+   "id": "c97",
+   "classification": "supported",
+   "evidence": "Added: sleep clinic prescribes CPAP and shows how to use it - Lung UK",
+   "url": "",
+   "action": "added"
+  },
+  {
+   "id": "c98",
+   "classification": "supported",
+   "evidence": "Added: NHS mouth and facial exercises",
+   "url": "",
+   "action": "added"
+  },
+  {
+   "id": "c99",
+   "classification": "supported",
+   "evidence": "Added: NICE surgery for severe disease after CPAP and MAS not tolerated",
+   "url": "",
+   "action": "added"
+  },
+  {
+   "id": "c100",
+   "classification": "supported",
+   "evidence": "Added: GOV.UK driving without excessive sleepiness may continue",
+   "url": "",
+   "action": "added"
+  }
+ ],
+ "notes": "Search summaries (not full pages) were the retrieved text, so attribution is page-level. Triple S, travel letter and hospital-leaflet driving claims removed. Added refs: GOV.UK driving, NHS England guide. Mild-OSA CPAP wording from older BLF-era text via Lung UK search; reviewer may confirm. Alias clashes: none reported."
+}

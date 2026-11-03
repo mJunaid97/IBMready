@@ -1,0 +1,928 @@
+{
+ "id": "peripheral-arterial-disease",
+ "searchesUsed": 10,
+ "counts": {
+  "supported": 75,
+  "textbook": 3,
+  "unsupported": 15,
+  "wrong": 0,
+  "unsafe": 0,
+  "unchecked": 0
+ },
+ "claims": [
+  {
+   "id": "c01",
+   "where": "definition",
+   "sentence": "A long-term condition ... pain in the legs.",
+   "classification": "supported",
+   "evidence": "NHS: long-term condition affecting blood supply to legs, causing leg pain; usually narrowed or blocked arteries.",
+   "url": "https://www.nhs.uk/conditions/peripheral-arterial-disease-pad/",
+   "action": "kept"
+  },
+  {
+   "id": "c02",
+   "where": "overview[1]",
+   "sentence": "PAD ... long-term condition ... blood supply",
+   "classification": "supported",
+   "evidence": "NHS opening description.",
+   "url": "https://www.nhs.uk/conditions/peripheral-arterial-disease-pad/",
+   "action": "kept"
+  },
+  {
+   "id": "c03",
+   "where": "overview[2]",
+   "sentence": "usually caused by narrowed or blocked arteries ... atherosclerosis",
+   "classification": "supported",
+   "evidence": "NHS: fatty deposits (atherosclerosis) narrow or block arteries.",
+   "url": "https://www.nhs.uk/conditions/peripheral-arterial-disease-pad/",
+   "action": "kept"
+  },
+  {
+   "id": "c04",
+   "where": "overview[3]",
+   "sentence": "most typical sign is calf pain on walking ...",
+   "classification": "supported",
+   "evidence": "NHS: leg pain on walking eases after a few minutes rest; BHF: calf cramping; NHS: some have no symptoms.",
+   "url": "https://www.nhs.uk/conditions/peripheral-arterial-disease-pad/",
+   "action": "kept"
+  },
+  {
+   "id": "c05",
+   "where": "overview[4]",
+   "sentence": "There is no cure, but lifestyle changes and medicine ...",
+   "classification": "supported",
+   "evidence": "NHS: no cure; treatment eases symptoms.",
+   "url": "https://www.nhs.uk/conditions/peripheral-arterial-disease-pad/treatment/",
+   "action": "kept"
+  },
+  {
+   "id": "c06",
+   "where": "overview[5]",
+   "sentence": "BHF notes PAD puts people at risk of CHD and stroke",
+   "classification": "supported",
+   "evidence": "BHF: having PAD puts you at risk of coronary heart disease and stroke.",
+   "url": "https://www.bhf.org.uk/informationsupport/%20heart-matters-magazine/medical/peripheral-arterial-disease",
+   "action": "kept"
+  },
+  {
+   "id": "c07",
+   "where": "causes[0]",
+   "sentence": "Narrowing or blocking of the arteries",
+   "classification": "supported",
+   "evidence": "NHS.",
+   "url": "https://www.nhs.uk/conditions/peripheral-arterial-disease-pad/",
+   "action": "kept"
+  },
+  {
+   "id": "c08",
+   "where": "causes[1]",
+   "sentence": "Atherosclerosis",
+   "classification": "supported",
+   "evidence": "NHS.",
+   "url": "https://www.nhs.uk/conditions/peripheral-arterial-disease-pad/",
+   "action": "kept"
+  },
+  {
+   "id": "c09",
+   "where": "causes[2]",
+   "sentence": "Vasculitis",
+   "classification": "supported",
+   "evidence": "NHS: less common causes include inflammatory vessel conditions such as vasculitis.",
+   "url": "https://www.nhs.uk/conditions/peripheral-arterial-disease-pad/",
+   "action": "kept"
+  },
+  {
+   "id": "c10",
+   "where": "causes[3]",
+   "sentence": "An injured or diseased artery",
+   "classification": "unsupported",
+   "evidence": "Not found in retrieved text (NHS result named vasculitis and a blood clot in a vein instead).",
+   "url": "https://www.nhs.uk/conditions/peripheral-arterial-disease-pad/",
+   "action": "removed"
+  },
+  {
+   "id": "c11",
+   "where": "riskFactors[0]",
+   "sentence": "Smoking, most significant",
+   "classification": "supported",
+   "evidence": "NHS 111 Wales/MedlinePlus: smoking main risk factor.",
+   "url": "https://111.wales.nhs.uk/peripheralarterialdisease(pad)/?locale=en",
+   "action": "kept"
+  },
+  {
+   "id": "c12",
+   "where": "riskFactors[1]",
+   "sentence": "Diabetes",
+   "classification": "supported",
+   "evidence": "NHS 111 Wales lists diabetes.",
+   "url": "https://111.wales.nhs.uk/peripheralarterialdisease(pad)/?locale=en",
+   "action": "kept"
+  },
+  {
+   "id": "c13",
+   "where": "riskFactors[2]",
+   "sentence": "High blood pressure",
+   "classification": "supported",
+   "evidence": "Listed.",
+   "url": "https://111.wales.nhs.uk/peripheralarterialdisease(pad)/?locale=en",
+   "action": "kept"
+  },
+  {
+   "id": "c14",
+   "where": "riskFactors[3]",
+   "sentence": "High cholesterol",
+   "classification": "supported",
+   "evidence": "Listed.",
+   "url": "https://111.wales.nhs.uk/peripheralarterialdisease(pad)/?locale=en",
+   "action": "kept"
+  },
+  {
+   "id": "c15",
+   "where": "riskFactors[4]",
+   "sentence": "Older age",
+   "classification": "supported",
+   "evidence": "Listed (age).",
+   "url": "https://111.wales.nhs.uk/peripheralarterialdisease(pad)/?locale=en",
+   "action": "kept"
+  },
+  {
+   "id": "c16",
+   "where": "signs[0]",
+   "sentence": "Very weak or undetectable pulse",
+   "classification": "supported",
+   "evidence": "MedlinePlus: weak or absent leg or foot pulses.",
+   "url": "https://medlineplus.gov/peripheralarterialdisease.html",
+   "action": "edited",
+   "newSentence": "A weak or absent pulse in the leg or foot"
+  },
+  {
+   "id": "c17",
+   "where": "signs[1]",
+   "sentence": "Hair loss on the legs and feet",
+   "classification": "supported",
+   "evidence": "NHS: hair loss on your legs.",
+   "url": "https://www.nhs.uk/conditions/peripheral-arterial-disease-pad/",
+   "action": "edited",
+   "newSentence": "Hair loss on the legs"
+  },
+  {
+   "id": "c18",
+   "where": "signs[2]",
+   "sentence": "Shiny skin",
+   "classification": "supported",
+   "evidence": "NHS: shiny or discoloured skin.",
+   "url": "https://www.nhs.uk/conditions/peripheral-arterial-disease-pad/",
+   "action": "kept"
+  },
+  {
+   "id": "c19",
+   "where": "signs[3]",
+   "sentence": "Leg ulcers or sores that do not heal",
+   "classification": "supported",
+   "evidence": "NHS: slow-healing sores on legs and feet.",
+   "url": "https://www.nhs.uk/conditions/peripheral-arterial-disease-pad/",
+   "action": "edited",
+   "newSentence": "Sores on the legs or feet that heal slowly"
+  },
+  {
+   "id": "c20",
+   "where": "complications[0]",
+   "sentence": "Critical limb ischaemia, pain at rest or at night",
+   "classification": "supported",
+   "evidence": "UHB leaflet: chronic limb-threatening (formerly critical limb) ischaemia, pain especially at rest, worse at night.",
+   "url": "https://www.uhb.nhs.uk/media/4xoidjtd/pi-vascular-chronic-limb-threatening-ischemia.pdf",
+   "action": "kept"
+  },
+  {
+   "id": "c21",
+   "where": "complications[1]",
+   "sentence": "CHD, heart attack and stroke",
+   "classification": "supported",
+   "evidence": "BHF: risk of coronary heart disease and stroke; managing risk lowers chance of heart attack and stroke.",
+   "url": "https://www.bhf.org.uk/informationsupport/%20heart-matters-magazine/medical/peripheral-arterial-disease",
+   "action": "kept"
+  },
+  {
+   "id": "c22",
+   "where": "complications[2]",
+   "sentence": "Rapid worsening ... chance of saving the leg",
+   "classification": "supported",
+   "evidence": "BHF: symptoms that develop quickly or suddenly worsen may need emergency treatment (the 'saving the leg' wording not retrieved).",
+   "url": "https://www.bhf.org.uk/informationsupport/%20heart-matters-magazine/medical/peripheral-arterial-disease",
+   "action": "edited",
+   "newSentence": "Sudden or rapid worsening of the blood supply, which may need emergency treatment"
+  },
+  {
+   "id": "c23",
+   "where": "diagnosis[0]",
+   "sentence": "GP examines legs and may use ABPI",
+   "classification": "supported",
+   "evidence": "NHS: GP looks at legs, asks symptoms/family history, may arrange test measuring blood pressure in arms and ankles.",
+   "url": "https://www.nhs.uk/conditions/peripheral-arterial-disease-pad/",
+   "action": "kept"
+  },
+  {
+   "id": "c24",
+   "where": "diagnosis[1]",
+   "sentence": "Test done at GP surgery or by podiatry",
+   "classification": "unsupported",
+   "evidence": "Not found in this round's retrieved text.",
+   "url": "https://www.nhs.uk/conditions/peripheral-arterial-disease-pad/",
+   "action": "removed"
+  },
+  {
+   "id": "c25",
+   "where": "diagnosis[2]",
+   "sentence": "NICE recommends duplex ultrasound first",
+   "classification": "supported",
+   "evidence": "NICE CG147: offer duplex ultrasound as first-line imaging when revascularisation considered.",
+   "url": "https://www.nice.org.uk/guidance/cg147/chapter/recommendations",
+   "action": "kept"
+  },
+  {
+   "id": "c26",
+   "where": "treatment[0]",
+   "sentence": "No cure ... lifestyle changes and medicine",
+   "classification": "supported",
+   "evidence": "NHS.",
+   "url": "https://www.nhs.uk/conditions/peripheral-arterial-disease-pad/treatment/",
+   "action": "kept"
+  },
+  {
+   "id": "c27",
+   "where": "treatment[1]",
+   "sentence": "Supervised exercise recommended by NICE",
+   "classification": "supported",
+   "evidence": "NICE: offer supervised exercise to people with intermittent claudication.",
+   "url": "https://www.nice.org.uk/guidance/cg147/chapter/recommendations",
+   "action": "kept"
+  },
+  {
+   "id": "c28",
+   "where": "treatment[2]",
+   "sentence": "Aspirin or clopidogrel ... statins lower risk of complications",
+   "classification": "supported",
+   "evidence": "NHS: antiplatelets such as low-dose aspirin or clopidogrel; statins lower LDL cholesterol (complication wording not retrieved).",
+   "url": "https://www.nhs.uk/conditions/peripheral-arterial-disease-pad/treatment/",
+   "action": "edited",
+   "newSentence": "Medicines such as low-dose aspirin or clopidogrel may be prescribed to reduce the risk of blood clots, and statins to lower cholesterol."
+  },
+  {
+   "id": "c29",
+   "where": "treatment[3]",
+   "sentence": "Surgery considered when lifestyle/medicines not enough",
+   "classification": "supported",
+   "evidence": "NHS: revascularisation considered when symptoms severe or not responded to other treatment.",
+   "url": "https://www.nhs.uk/conditions/peripheral-arterial-disease-pad/treatment/",
+   "action": "edited",
+   "newSentence": "Procedures to restore blood flow, such as angioplasty or bypass, are considered when symptoms are severe or have not responded to other treatment."
+  },
+  {
+   "id": "c30",
+   "where": "prevention[0]",
+   "sentence": "Stopping smoking and managing diabetes part of living with PAD",
+   "classification": "supported",
+   "evidence": "NHLBI: lowering risk means quitting smoking and managing diabetes.",
+   "url": "https://www.nhlbi.nih.gov/health/peripheral-artery-disease/living-with",
+   "action": "kept"
+  },
+  {
+   "id": "c31",
+   "where": "prevention[1]",
+   "sentence": "BHF: stopping smoking, BP and diabetes testing, aspirin and statin",
+   "classification": "supported",
+   "evidence": "BHF: managing risk factors lowers chance of heart attack and stroke; medicines include statins, antiplatelets, blood pressure drugs. Specific list partly not retrieved.",
+   "url": "https://www.bhf.org.uk/informationsupport/%20heart-matters-magazine/medical/peripheral-arterial-disease",
+   "action": "edited",
+   "newSentence": "The British Heart Foundation describes managing risk factors such as smoking, diabetes and high blood pressure to lower the chance of heart attack and stroke, with medicines such as statins, antiplatelets and blood pressure drugs."
+  },
+  {
+   "id": "c32",
+   "where": "seekCare[0]",
+   "sentence": "If symptoms develop quickly ... route is 999 or A&E",
+   "classification": "textbook",
+   "evidence": "BHF: if symptoms develop quickly or get suddenly worse call NHS 111 or 999; emergency signposting.",
+   "url": "https://www.bhf.org.uk/informationsupport/%20heart-matters-magazine/medical/peripheral-arterial-disease",
+   "action": "edited",
+   "newSentence": "If symptoms develop quickly or suddenly get worse, this could be a sign of a serious problem needing immediate treatment, so the route is NHS 111 or 999."
+  },
+  {
+   "id": "c33",
+   "where": "seekCare[1]",
+   "sentence": "NHS advises seeing a GP",
+   "classification": "supported",
+   "evidence": "NHS: seek non-urgent advice if leg pain on walking eases with rest, is constant or worse at night, or sores do not heal.",
+   "url": "https://www.nhs.uk/conditions/peripheral-arterial-disease-pad/",
+   "action": "edited",
+   "newSentence": "The NHS advises seeking non-urgent advice from a GP if leg pain comes on when walking and eases with rest, if pain is constant or worse at night, or if sores do not heal, so a GP appointment is the usual route."
+  },
+  {
+   "id": "c34",
+   "where": "s0[1]",
+   "sentence": "NHS describes PAD ... long-term condition",
+   "classification": "supported",
+   "evidence": "NHS.",
+   "url": "https://www.nhs.uk/conditions/peripheral-arterial-disease-pad/",
+   "action": "kept"
+  },
+  {
+   "id": "c35",
+   "where": "s0[2]",
+   "sentence": "Most typical sign calf pain ... intermittent claudication",
+   "classification": "supported",
+   "evidence": "NHS/BHF: leg pain on walking eases with rest; medical term intermittent claudication.",
+   "url": "https://www.bhf.org.uk/informationsupport/heart-matters-magazine/medical/intermittent-claudication",
+   "action": "edited",
+   "newSentence": "The main symptom is leg pain that comes on when walking and eases after a few minutes of rest."
+  },
+  {
+   "id": "c36",
+   "where": "s0[3]",
+   "sentence": "Pain can range from mild to severe ...",
+   "classification": "unsupported",
+   "evidence": "'mild to severe' not retrieved; 'eases after a few minutes of rest' is (merged into s0[2]).",
+   "url": "https://www.nhs.uk/conditions/peripheral-arterial-disease-pad/",
+   "action": "edited",
+   "newSentence": "This is called intermittent claudication."
+  },
+  {
+   "id": "c37",
+   "where": "s0[4]",
+   "sentence": "BHF cramp-like pain in calves",
+   "classification": "supported",
+   "evidence": "BHF: gripping, cramping sensation in calves when walking.",
+   "url": "https://www.bhf.org.uk/informationsupport/heart-matters-magazine/medical/intermittent-claudication",
+   "action": "edited",
+   "newSentence": "The British Heart Foundation describes a gripping, cramping feeling in the calves."
+  },
+  {
+   "id": "c38",
+   "where": "s0[5]",
+   "sentence": "Other signs hair loss, shiny skin, numbness, toenails, sores",
+   "classification": "supported",
+   "evidence": "NHS: hair loss, shiny or discoloured skin, weakness or numbness, slow toenails, slow-healing sores.",
+   "url": "https://www.nhs.uk/conditions/peripheral-arterial-disease-pad/",
+   "action": "edited",
+   "newSentence": "Other possible signs include hair loss on the legs, shiny or discoloured skin, weakness or numbness, toenails that grow slowly or break easily, and sores on the legs and feet that heal slowly."
+  },
+  {
+   "id": "c39",
+   "where": "s0[6]",
+   "sentence": "Very weak or undetectable pulse can be found",
+   "classification": "supported",
+   "evidence": "MedlinePlus: weak or absent leg/foot pulses, pale or bluish skin.",
+   "url": "https://medlineplus.gov/peripheralarterialdisease.html",
+   "action": "edited",
+   "newSentence": "MedlinePlus says weak or absent pulses in the legs or feet can be found, and the skin may look pale or bluish."
+  },
+  {
+   "id": "c40",
+   "where": "s0[7]",
+   "sentence": "Symptoms often start gradually; some have none",
+   "classification": "supported",
+   "evidence": "NHS/MedlinePlus: some/many have no symptoms; 'gradual start' not retrieved.",
+   "url": "https://www.nhs.uk/conditions/peripheral-arterial-disease-pad/",
+   "action": "edited",
+   "newSentence": "The NHS notes that some people with PAD have no symptoms."
+  },
+  {
+   "id": "c41",
+   "where": "s0[8]",
+   "sentence": "Severe narrowing: pain at rest, critical limb ischaemia",
+   "classification": "supported",
+   "evidence": "UHB leaflet: CLTI (formerly critical limb ischaemia), pain especially at rest, worse at night.",
+   "url": "https://www.uhb.nhs.uk/media/4xoidjtd/pi-vascular-chronic-limb-threatening-ischemia.pdf",
+   "action": "edited",
+   "newSentence": "If the narrowing becomes severe, pain can be constant or worse at night, which doctors call critical limb ischaemia."
+  },
+  {
+   "id": "c42",
+   "where": "s1[1]",
+   "sentence": "PAD usually caused by narrowed or blocked arteries",
+   "classification": "supported",
+   "evidence": "NHS.",
+   "url": "https://www.nhs.uk/conditions/peripheral-arterial-disease-pad/",
+   "action": "kept"
+  },
+  {
+   "id": "c43",
+   "where": "s1[2]",
+   "sentence": "Main cause atherosclerosis",
+   "classification": "supported",
+   "evidence": "NHS.",
+   "url": "https://www.nhs.uk/conditions/peripheral-arterial-disease-pad/",
+   "action": "edited",
+   "newSentence": "The main cause is atherosclerosis, where fatty deposits build up in the artery walls and restrict blood flow to the legs."
+  },
+  {
+   "id": "c44",
+   "where": "s1[3]",
+   "sentence": "BHF fatty material limits blood flow to the legs",
+   "classification": "supported",
+   "evidence": "BHF: narrowing of leg arteries from fatty deposits; same process in the heart is coronary heart disease.",
+   "url": "https://www.bhf.org.uk/informationsupport/%20heart-matters-magazine/medical/peripheral-arterial-disease",
+   "action": "edited",
+   "newSentence": "The British Heart Foundation describes the same process in the arteries of the heart as coronary heart disease, and says having PAD puts a person at risk of coronary heart disease and stroke."
+  },
+  {
+   "id": "c45",
+   "where": "s1[4]",
+   "sentence": "Less common causes: vasculitis, injured or diseased artery",
+   "classification": "unsupported",
+   "evidence": "Vasculitis supported by NHS; 'injured or diseased artery' not retrieved.",
+   "url": "https://www.nhs.uk/conditions/peripheral-arterial-disease-pad/",
+   "action": "edited",
+   "newSentence": "Less common causes include inflammatory blood vessel conditions such as vasculitis."
+  },
+  {
+   "id": "c46",
+   "where": "s1[5]",
+   "sentence": "Smoking most significant risk factor",
+   "classification": "supported",
+   "evidence": "NHS 111 Wales/MedlinePlus.",
+   "url": "https://111.wales.nhs.uk/peripheralarterialdisease(pad)/?locale=en",
+   "action": "kept"
+  },
+  {
+   "id": "c47",
+   "where": "s1[6]",
+   "sentence": "Diabetes, high BP, cholesterol, age raise risk",
+   "classification": "supported",
+   "evidence": "Listed by NHS 111 Wales/MedlinePlus; BHF adds obesity.",
+   "url": "https://111.wales.nhs.uk/peripheralarterialdisease(pad)/?locale=en",
+   "action": "edited",
+   "newSentence": "Diabetes, high blood pressure, high cholesterol and older age also raise the risk, and the British Heart Foundation also lists obesity."
+  },
+  {
+   "id": "c48",
+   "where": "s1[7]",
+   "sentence": "Same build-up affects arteries elsewhere; linked to CHD, heart attack, stroke",
+   "classification": "supported",
+   "evidence": "BHF: same process in heart arteries is CHD; PAD risk of CHD and stroke.",
+   "url": "https://www.bhf.org.uk/informationsupport/%20heart-matters-magazine/medical/peripheral-arterial-disease",
+   "action": "edited",
+   "newSentence": "A study partly funded by the British Heart Foundation found smoking and diabetes to be the two leading risk factors for PAD, while cholesterol remained the top risk factor for coronary heart disease."
+  },
+  {
+   "id": "c49",
+   "where": "s2[1]",
+   "sentence": "GP starts by examining legs",
+   "classification": "supported",
+   "evidence": "NHS.",
+   "url": "https://www.nhs.uk/conditions/peripheral-arterial-disease-pad/",
+   "action": "edited",
+   "newSentence": "The NHS says a GP who thinks a person might have PAD will look at the legs and ask about symptoms and family history."
+  },
+  {
+   "id": "c50",
+   "where": "s2[2]",
+   "sentence": "GP may use ABPI ankle vs arm",
+   "classification": "supported",
+   "evidence": "NHS: test measuring pressure and flow in arms and ankles; NICE: highest ankle divided by highest arm pressure.",
+   "url": "https://www.nice.org.uk/guidance/cg147/chapter/recommendations",
+   "action": "edited",
+   "newSentence": "They may also arrange tests, such as blood tests and a test that measures blood pressure and blood flow in the arms and ankles. This is the ankle brachial pressure index, or ABPI. NICE describes it as the highest ankle pressure divided by the highest arm pressure in each leg."
+  },
+  {
+   "id": "c51",
+   "where": "s2[3]",
+   "sentence": "Local NHS: surgery or podiatry",
+   "classification": "unsupported",
+   "evidence": "Not found.",
+   "url": "https://www.nhs.uk/conditions/peripheral-arterial-disease-pad/",
+   "action": "removed"
+  },
+  {
+   "id": "c52",
+   "where": "s2[4]",
+   "sentence": "Cornwall NHS: normal result does not rule out PAD, esp. diabetes",
+   "classification": "supported",
+   "evidence": "NICE: do not exclude PAD in people with diabetes on a normal or raised ABPI alone (Cornwall page not re-retrieved).",
+   "url": "https://www.nice.org.uk/guidance/cg147/chapter/recommendations",
+   "action": "edited",
+   "newSentence": "NICE advises that a normal or raised ABPI alone should not rule out PAD in people with diabetes, because hardening of the arteries can affect the result."
+  },
+  {
+   "id": "c53",
+   "where": "s2[5]",
+   "sentence": "NICE guideline covers assessment, imaging, claudication, CLI",
+   "classification": "supported",
+   "evidence": "CG147 titled diagnosis and management; covers imaging, supervised exercise, angioplasty for CLI.",
+   "url": "https://www.nice.org.uk/guidance/cg147/chapter/recommendations",
+   "action": "edited",
+   "newSentence": "A hand-held Doppler test can show whether a pulse is present and whether blood is flowing to a limb, according to the British Heart Foundation."
+  },
+  {
+   "id": "c54",
+   "where": "s2[6]",
+   "sentence": "NICE duplex ultrasound first imaging test",
+   "classification": "supported",
+   "evidence": "NICE.",
+   "url": "https://www.nice.org.uk/guidance/cg147/chapter/recommendations",
+   "action": "kept"
+  },
+  {
+   "id": "c55",
+   "where": "s2[7]",
+   "sentence": "Contrast-enhanced MRA when more detail needed",
+   "classification": "supported",
+   "evidence": "NICE: contrast-enhanced MRA next; CT angiography alternative if MRA unsuitable.",
+   "url": "https://www.nice.org.uk/guidance/cg147/chapter/recommendations",
+   "action": "edited",
+   "newSentence": "Contrast-enhanced magnetic resonance angiography is the next step when more detail is needed, and CT angiography is an alternative when that is not suitable."
+  },
+  {
+   "id": "c56",
+   "where": "s3[1]",
+   "sentence": "No cure ... lifestyle changes and medicine",
+   "classification": "supported",
+   "evidence": "NHS: no cure; treatment aims to ease symptoms and lower risk of further cardiovascular disease.",
+   "url": "https://www.nhs.uk/conditions/peripheral-arterial-disease-pad/treatment/",
+   "action": "edited",
+   "newSentence": "The NHS says there is no cure for PAD, so treatment aims to ease symptoms and lower the risk of further cardiovascular disease. What is used depends on how severe the symptoms are, and it combines exercise, medicines and sometimes surgery."
+  },
+  {
+   "id": "c57",
+   "where": "s3[2]",
+   "sentence": "BHF first step: reduce heart attack/stroke risk; aspirin and statin",
+   "classification": "supported",
+   "evidence": "BHF: managing risk factors; medicines statins, antiplatelets, BP drugs. 'First step' not retrieved.",
+   "url": "https://www.bhf.org.uk/informationsupport/%20heart-matters-magazine/medical/peripheral-arterial-disease",
+   "action": "edited",
+   "newSentence": "Most people with PAD are prescribed an antiplatelet medicine such as low-dose aspirin or clopidogrel to reduce the risk of blood clots. Statins are used to lower cholesterol, and blood pressure medicines are used if needed."
+  },
+  {
+   "id": "c58",
+   "where": "s3[3]",
+   "sentence": "NHS walking stop-start approach",
+   "classification": "unsupported",
+   "evidence": "Stop-start walking text not retrieved; NHS says supervised exercise is a first step.",
+   "url": "https://www.nhs.uk/conditions/peripheral-arterial-disease-pad/treatment/",
+   "action": "edited",
+   "newSentence": "Stopping smoking is central."
+  },
+  {
+   "id": "c59",
+   "where": "s3[4]",
+   "sentence": "NICE supervised exercise for claudication",
+   "classification": "supported",
+   "evidence": "NICE.",
+   "url": "https://www.nice.org.uk/guidance/cg147/chapter/recommendations",
+   "action": "edited",
+   "newSentence": "NICE recommends that a supervised exercise programme is offered to people with intermittent claudication, and the NHS describes supervised exercise as a first step."
+  },
+  {
+   "id": "c60",
+   "where": "s3[5]",
+   "sentence": "BHF: supervised walking not widely available",
+   "classification": "unsupported",
+   "evidence": "Not found in retrieved text.",
+   "url": "https://www.bhf.org.uk/informationsupport/heart-matters-magazine/medical/intermittent-claudication",
+   "action": "removed"
+  },
+  {
+   "id": "c61",
+   "where": "s3[6]",
+   "sentence": "Surgery generally considered when not enough",
+   "classification": "supported",
+   "evidence": "NHS.",
+   "url": "https://www.nhs.uk/conditions/peripheral-arterial-disease-pad/treatment/",
+   "action": "edited",
+   "newSentence": "Revascularisation, meaning treatment to restore blood flow, is considered when symptoms are severe or have not responded to other treatment."
+  },
+  {
+   "id": "c62",
+   "where": "s3[7]",
+   "sentence": "Angioplasty less invasive, generally preferred",
+   "classification": "supported",
+   "evidence": "NHS: angioplasty less invasive; bypass kept for unsuitable/failed angioplasty; bypass results generally longer-lasting.",
+   "url": "https://www.nhs.uk/conditions/peripheral-arterial-disease-pad/treatment/",
+   "action": "edited",
+   "newSentence": "The two main options are angioplasty, which widens a narrowed artery with a balloon, and bypass grafting, which routes blood around a blockage. The NHS says angioplasty is less invasive, while bypass results are generally longer-lasting."
+  },
+  {
+   "id": "c63",
+   "where": "s3[8]",
+   "sentence": "Bypass grafts: artificial tube or vein from leg or arm",
+   "classification": "supported",
+   "evidence": "Frimley/NICE: vein used where possible, plastic tube otherwise ('leg or arm' not retrieved).",
+   "url": "https://www.fhft.nhs.uk/patients-and-visitors/patient-information-library/arterial-bypass-surgery-peripheral-vascular-disease",
+   "action": "removed"
+  },
+  {
+   "id": "c64",
+   "where": "s3[9]",
+   "sentence": "NICE QS52 angioplasty only when imaging confirms ...",
+   "classification": "supported",
+   "evidence": "NICE: angioplasty offered when imaging confirms suitability, risk-factor advice given, supervised exercise not satisfactory.",
+   "url": "https://www.nice.org.uk/guidance/qs52/resources/peripheral-arterial-disease-pdf-2098723816645",
+   "action": "edited",
+   "newSentence": "NICE says angioplasty for claudication is offered only when imaging confirms it is suitable, advice on changing risk factors has been given, and supervised exercise has not improved symptoms."
+  },
+  {
+   "id": "c65",
+   "where": "s4[1]",
+   "sentence": "NHS: symptoms quickly/suddenly worse serious",
+   "classification": "supported",
+   "evidence": "BHF/NHS: could need emergency treatment.",
+   "url": "https://www.bhf.org.uk/informationsupport/%20heart-matters-magazine/medical/peripheral-arterial-disease",
+   "action": "edited",
+   "newSentence": "PAD is linked to coronary heart disease and stroke, so treatment also aims to lower the risk of these. The NHS says that if symptoms develop quickly or get suddenly worse, this could be a sign of a serious problem needing immediate treatment."
+  },
+  {
+   "id": "c66",
+   "where": "s4[2]",
+   "sentence": "BHF: rapid treatment essential to save leg",
+   "classification": "unsupported",
+   "evidence": "Exact wording not retrieved; BHF advises 111 or 999; Scottish pathway lists acute limb ischaemia signs.",
+   "url": "https://www.bhf.org.uk/informationsupport/%20heart-matters-magazine/medical/peripheral-arterial-disease",
+   "action": "edited",
+   "newSentence": "The British Heart Foundation advises calling NHS 111 or 999 in that situation. NHS Scotland guidance lists sudden limb pain, a pale or cold limb, loss of pulse, numbness and weakness or paralysis as reasons to go to A&E or call 999 straight away."
+  },
+  {
+   "id": "c67",
+   "where": "s4[3]",
+   "sentence": "Route: 999 or A&E; slow onset GP",
+   "classification": "textbook",
+   "evidence": "Standard signposting; NHS non-urgent GP advice.",
+   "url": "https://www.nhs.uk/conditions/peripheral-arterial-disease-pad/",
+   "action": "edited",
+   "newSentence": "Symptoms that come on slowly are usually raised at a GP appointment, and the NHS advises seeking non-urgent advice if leg pain comes on when walking and eases with rest, if pain is constant or worse at night, or if sores do not heal."
+  },
+  {
+   "id": "c68",
+   "where": "s4[4]",
+   "sentence": "Angioplasty and bypass carry small risk of serious complications",
+   "classification": "supported",
+   "evidence": "NHS summary: risk of serious complications similar for both; Frimley lists heart attack, stroke for bypass. 'small' and 'death' not safely sourced.",
+   "url": "https://www.nhs.uk/conditions/peripheral-arterial-disease-pad/treatment/",
+   "action": "edited",
+   "newSentence": "Both angioplasty and bypass surgery carry a risk of serious complications, and the NHS says this risk is similar for the two."
+  },
+  {
+   "id": "c69",
+   "where": "s4[5]",
+   "sentence": "BHF: no cure, many stable",
+   "classification": "unsupported",
+   "evidence": "Not retrieved (booklet in results without text).",
+   "url": "https://www.bhf.org.uk/informationsupport/%20heart-matters-magazine/medical/peripheral-arterial-disease",
+   "action": "removed"
+  },
+  {
+   "id": "c70",
+   "where": "s4[6]",
+   "sentence": "Progression varies",
+   "classification": "unsupported",
+   "evidence": "Not retrieved.",
+   "url": "https://www.bhf.org.uk/informationsupport/%20heart-matters-magazine/medical/peripheral-arterial-disease",
+   "action": "edited",
+   "newSentence": "NHLBI, a US institute, describes PAD as a lifelong condition and says a person sees a healthcare provider who specialises in vascular diseases regularly."
+  },
+  {
+   "id": "c71",
+   "where": "s4[7]",
+   "sentence": "Linked to CHD/stroke so treatment lowers risk",
+   "classification": "supported",
+   "evidence": "NHS: treatment aims to lower risk of further cardiovascular disease.",
+   "url": "https://www.nhs.uk/conditions/peripheral-arterial-disease-pad/treatment/",
+   "action": "edited",
+   "newSentence": "Quitting smoking can reduce symptoms and the risk of complications, according to NHLBI."
+  },
+  {
+   "id": "c72",
+   "where": "faq0[1]",
+   "sentence": "NHS no cure",
+   "classification": "supported",
+   "evidence": "NHS.",
+   "url": "https://www.nhs.uk/conditions/peripheral-arterial-disease-pad/treatment/",
+   "action": "edited",
+   "newSentence": "The NHS says there is no cure for PAD, so treatment aims to ease symptoms and lower the risk of further cardiovascular disease."
+  },
+  {
+   "id": "c73",
+   "where": "faq0[2]",
+   "sentence": "Lifestyle changes and medicine reduce symptoms",
+   "classification": "supported",
+   "evidence": "NHS.",
+   "url": "https://www.nhs.uk/conditions/peripheral-arterial-disease-pad/treatment/",
+   "action": "kept"
+  },
+  {
+   "id": "c74",
+   "where": "faq0[3]",
+   "sentence": "BHF: many stable",
+   "classification": "unsupported",
+   "evidence": "Not retrieved.",
+   "url": "https://www.bhf.org.uk/informationsupport/%20heart-matters-magazine/medical/peripheral-arterial-disease",
+   "action": "removed"
+  },
+  {
+   "id": "c75",
+   "where": "faq0[4]",
+   "sentence": "Surgery considered when others not enough",
+   "classification": "supported",
+   "evidence": "NHS.",
+   "url": "https://www.nhs.uk/conditions/peripheral-arterial-disease-pad/treatment/",
+   "action": "edited",
+   "newSentence": "Procedures such as angioplasty or bypass may be considered when symptoms are severe or have not responded to other treatment."
+  },
+  {
+   "id": "c76",
+   "where": "faq1[1]",
+   "sentence": "NHS: calf pain walking settles with rest",
+   "classification": "supported",
+   "evidence": "NHS.",
+   "url": "https://www.nhs.uk/conditions/peripheral-arterial-disease-pad/",
+   "action": "edited",
+   "newSentence": "The NHS describes leg pain that comes on when walking and eases after a few minutes of rest."
+  },
+  {
+   "id": "c77",
+   "where": "faq1[2]",
+   "sentence": "BHF cramp-like in calves",
+   "classification": "supported",
+   "evidence": "BHF gripping, cramping.",
+   "url": "https://www.bhf.org.uk/informationsupport/heart-matters-magazine/medical/intermittent-claudication",
+   "action": "edited",
+   "newSentence": "The British Heart Foundation describes a gripping, cramping feeling in the calves."
+  },
+  {
+   "id": "c78",
+   "where": "faq1[3]",
+   "sentence": "Mild to severe, goes away after few minutes",
+   "classification": "unsupported",
+   "evidence": "'mild to severe' not retrieved.",
+   "url": "https://www.nhs.uk/conditions/peripheral-arterial-disease-pad/",
+   "action": "edited",
+   "newSentence": "MedlinePlus also mentions numbness or heaviness in the leg muscles during walking or climbing stairs. The medical term is intermittent claudication."
+  },
+  {
+   "id": "c79",
+   "where": "faq2[1]",
+   "sentence": "Yes, some have no symptoms",
+   "classification": "supported",
+   "evidence": "NHS; MedlinePlus: many have none.",
+   "url": "https://medlineplus.gov/peripheralarterialdisease.html",
+   "action": "edited",
+   "newSentence": "Yes. The NHS and MedlinePlus both say some people with PAD have no symptoms."
+  },
+  {
+   "id": "c80",
+   "where": "faq2[2]",
+   "sentence": "Often start gradually",
+   "classification": "unsupported",
+   "evidence": "Not retrieved.",
+   "url": "https://www.bhf.org.uk/informationsupport/%20heart-matters-magazine/medical/peripheral-arterial-disease",
+   "action": "removed"
+  },
+  {
+   "id": "c81",
+   "where": "faq2[3]",
+   "sentence": "Same build-up linked to CHD and stroke",
+   "classification": "supported",
+   "evidence": "BHF.",
+   "url": "https://www.bhf.org.uk/informationsupport/%20heart-matters-magazine/medical/peripheral-arterial-disease",
+   "action": "edited",
+   "newSentence": "The same artery build-up can affect other arteries, and the British Heart Foundation says having PAD puts a person at risk of coronary heart disease and stroke. For that reason, treatment also aims to lower those risks."
+  },
+  {
+   "id": "c82",
+   "where": "faq3[1]",
+   "sentence": "GP examines legs and may use ABPI",
+   "classification": "supported",
+   "evidence": "NHS.",
+   "url": "https://www.nhs.uk/conditions/peripheral-arterial-disease-pad/",
+   "action": "edited",
+   "newSentence": "The NHS says a GP will look at the legs, ask about symptoms and family history, and may arrange tests such as blood tests and a test comparing blood pressure in the arms and ankles, called the ankle brachial pressure index."
+  },
+  {
+   "id": "c83",
+   "where": "faq3[2]",
+   "sentence": "Surgery or podiatry",
+   "classification": "unsupported",
+   "evidence": "Not found.",
+   "url": "https://www.nhs.uk/conditions/peripheral-arterial-disease-pad/",
+   "action": "removed"
+  },
+  {
+   "id": "c84",
+   "where": "faq3[3]",
+   "sentence": "Duplex ultrasound first imaging",
+   "classification": "supported",
+   "evidence": "NICE.",
+   "url": "https://www.nice.org.uk/guidance/cg147/chapter/recommendations",
+   "action": "kept"
+  },
+  {
+   "id": "c85",
+   "where": "faq4[1]",
+   "sentence": "NHS: quickly/suddenly worse -> serious",
+   "classification": "supported",
+   "evidence": "BHF/NHS.",
+   "url": "https://www.bhf.org.uk/informationsupport/%20heart-matters-magazine/medical/peripheral-arterial-disease",
+   "action": "kept"
+  },
+  {
+   "id": "c86",
+   "where": "faq4[2]",
+   "sentence": "BHF: rapid treatment essential in CLI",
+   "classification": "unsupported",
+   "evidence": "Wording not retrieved.",
+   "url": "https://www.bhf.org.uk/informationsupport/%20heart-matters-magazine/medical/peripheral-arterial-disease",
+   "action": "edited",
+   "newSentence": "The British Heart Foundation advises calling NHS 111 or 999 in that case. NHS Scotland guidance lists sudden limb pain, a pale or cold limb and loss of pulse as reasons to call 999 or go to A&E."
+  },
+  {
+   "id": "c87",
+   "where": "faq4[3]",
+   "sentence": "Sudden: 999 or A&E; slow: GP",
+   "classification": "textbook",
+   "evidence": "Standard signposting; BHF/NHS Scotland.",
+   "url": "https://www.rightdecisions.scot.nhs.uk/dgrefhelp-nhs-dumfries-galloway/vascular/peripheral-arterial-disease/",
+   "action": "edited",
+   "newSentence": "(merged into previous answer)"
+  },
+  {
+   "id": "c88",
+   "where": "keyFacts[0]",
+   "sentence": "Peripheral artery disease or PAD",
+   "classification": "supported",
+   "evidence": "NHS/NHLBI/NHS 111 Wales.",
+   "url": "https://www.nhs.uk/conditions/peripheral-arterial-disease-pad/",
+   "action": "kept"
+  },
+  {
+   "id": "c89",
+   "where": "keyFacts[1]",
+   "sentence": "Atherosclerosis...",
+   "classification": "supported",
+   "evidence": "NHS/NHLBI/NHS 111 Wales.",
+   "url": "https://www.nhs.uk/conditions/peripheral-arterial-disease-pad/",
+   "action": "kept"
+  },
+  {
+   "id": "c90",
+   "where": "keyFacts[2]",
+   "sentence": "Calf pain on walking that settles with rest",
+   "classification": "supported",
+   "evidence": "NHS/NHLBI/NHS 111 Wales.",
+   "url": "https://www.nhs.uk/conditions/peripheral-arterial-disease-pad/",
+   "action": "kept"
+  },
+  {
+   "id": "c91",
+   "where": "keyFacts[3]",
+   "sentence": "Smoking",
+   "classification": "supported",
+   "evidence": "NHS/NHLBI/NHS 111 Wales.",
+   "url": "https://www.nhs.uk/conditions/peripheral-arterial-disease-pad/",
+   "action": "kept"
+  },
+  {
+   "id": "c92",
+   "where": "keyFacts[4]",
+   "sentence": "GP examining legs, ABPI",
+   "classification": "supported",
+   "evidence": "NHS/NHLBI/NHS 111 Wales.",
+   "url": "https://www.nhs.uk/conditions/peripheral-arterial-disease-pad/",
+   "action": "kept"
+  },
+  {
+   "id": "c93",
+   "where": "keyFacts[5]",
+   "sentence": "No cure, lifestyle changes and medicine",
+   "classification": "supported",
+   "evidence": "NHS/NHLBI/NHS 111 Wales.",
+   "url": "https://www.nhs.uk/conditions/peripheral-arterial-disease-pad/",
+   "action": "kept"
+  },
+  {
+   "id": "c94",
+   "where": "Added: MedlinePlus no screening test recommended without symptoms",
+   "sentence": "MedlinePlus encyclopaedia: no screening test recommended for people without symptoms.",
+   "classification": "supported",
+   "evidence": "MedlinePlus encyclopaedia: no screening test recommended for people without symptoms.",
+   "url": "https://medlineplus.gov/peripheralarterialdisease.html",
+   "action": "added"
+  },
+  {
+   "id": "c95",
+   "where": "Added: BHF Doppler",
+   "sentence": "BHF: hand-held Doppler can show whether a pulse is present and blood flow.",
+   "classification": "supported",
+   "evidence": "BHF: hand-held Doppler can show whether a pulse is present and blood flow.",
+   "url": "https://www.bhf.org.uk/informationsupport/heart-matters-magazine/medical/intermittent-claudication",
+   "action": "added"
+  },
+  {
+   "id": "c96",
+   "where": "Added: NHS Scotland 999",
+   "sentence": "NHS Scotland: sudden limb pain, pallor, pulselessness, numbness, paralysis, cold limb -> 999/ED.",
+   "classification": "supported",
+   "evidence": "NHS Scotland: sudden limb pain, pallor, pulselessness, numbness, paralysis, cold limb -> 999/ED.",
+   "url": "https://www.rightdecisions.scot.nhs.uk/dgrefhelp-nhs-dumfries-galloway/vascular/peripheral-arterial-disease/",
+   "action": "added"
+  }
+ ],
+ "notes": "Cornwall referral page and several first-pass BHF/NHS-treatment details (stop-start walking, supervised walking availability, 'many find PAD stable', podiatry) could not be re-retrieved and were removed. Several claims are attributed from blended search summaries (NHS treatment, UHB leaflet, NHS Scotland Dumfries and Galloway pathway); a reviewer should confirm the NHS 'serious complication risk similar' sentence and BHF 111-or-999 advice on the live pages. Original BHF heart-matters URL was not returned; replaced by the intermittent-claudication page. Related ids kept (coronary-artery-disease, stroke from BHF; type-2-diabetes, hypertension as risk factors). Imaging mri retained for NICE contrast-enhanced MRA. Affects organ 'foot' is loose."
+}

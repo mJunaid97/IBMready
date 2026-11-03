@@ -1,0 +1,743 @@
+{
+ "id": "high-cholesterol",
+ "searchesUsed": 13,
+ "counts": {
+  "supported": 54,
+  "textbook": 5,
+  "unsupported": 26,
+  "wrong": 0,
+  "unsafe": 0,
+  "unchecked": 0
+ },
+ "claims": [
+  {
+   "id": "c01",
+   "classification": "textbook",
+   "evidence": "Plain definition; NHS page titled High cholesterol.",
+   "url": "https://www.nhs.uk/conditions/high-cholesterol/",
+   "action": "kept"
+  },
+  {
+   "id": "c02",
+   "classification": "supported",
+   "evidence": "NHS: usually no symptoms; only a blood test shows it.",
+   "url": "https://www.nhs.uk/conditions/high-cholesterol/",
+   "action": "kept"
+  },
+  {
+   "id": "c03",
+   "classification": "unsupported",
+   "evidence": "BHF: non-HDL is the bad type; the Heart UK evidence-based-targets claim was not retrieved.",
+   "url": "https://www.bhf.org.uk/informationsupport/risk-factors/high-cholesterol",
+   "action": "edited",
+   "newSentence": "Cholesterol travels in the blood in different forms. HDL cholesterol is often called the good type because it carries excess cholesterol back to the liver, while non-HDL cholesterol is the bad type and can build up in the arteries, the British Heart Foundation says."
+  },
+  {
+   "id": "c04",
+   "classification": "supported",
+   "evidence": "BHF: HDL (good) carries excess cholesterol back to the liver.",
+   "url": "https://www.bhf.org.uk/informationsupport/risk-factors/high-cholesterol",
+   "action": "edited",
+   "newSentence": "Cholesterol travels in the blood in different forms. HDL cholesterol is often called the good type because it carries excess cholesterol back to the liver, while non-HDL cholesterol is the bad type and can build up in the arteries, the British Heart Foundation says."
+  },
+  {
+   "id": "c05",
+   "classification": "supported",
+   "evidence": "BHF: too much cholesterol can narrow arteries, fatty build-up, raises heart attack or stroke risk; CHD not named.",
+   "url": "https://www.bhf.org.uk/informationsupport/risk-factors/high-cholesterol",
+   "action": "edited",
+   "newSentence": "Having too much cholesterol in the blood can narrow the arteries as fatty material builds up, which raises the risk of heart attack and stroke."
+  },
+  {
+   "id": "c06",
+   "classification": "supported",
+   "evidence": "NHS: can block blood vessels, heart problems or stroke (cardiovascular disease).",
+   "url": "https://www.nhs.uk/conditions/high-cholesterol/",
+   "action": "edited",
+   "newSentence": "The NHS describes heart and blood vessel problems caused by high cholesterol as cardiovascular disease."
+  },
+  {
+   "id": "c07",
+   "classification": "unsupported",
+   "evidence": "Not retrieved in that wording; GEP: FH is the most common genetic cause of premature atherosclerotic CVD.",
+   "url": "https://www.genomicseducation.hee.nhs.uk/genotes/knowledge-hub/familial-hypercholesterolaemia/",
+   "action": "edited",
+   "newSentence": "Familial hypercholesterolaemia is the most common genetic cause of early cardiovascular disease, the Genomics Education Programme says."
+  },
+  {
+   "id": "c08",
+   "classification": "supported",
+   "evidence": "Heart UK: mix of lifestyle, genetics and overall health that add up.",
+   "url": "https://www.heartuk.org.uk/cholesterol/causes",
+   "action": "kept"
+  },
+  {
+   "id": "c09",
+   "classification": "supported",
+   "evidence": "Heart UK: saturated fat, alcohol above recommended levels, smoking, excess weight especially around middle, lack of exercise.",
+   "url": "https://www.heartuk.org.uk/cholesterol/causes",
+   "action": "edited",
+   "newSentence": "Lifestyle factors include drinking more alcohol than recommended, excess weight (especially around the middle), smoking, a diet high in saturated fat and low physical activity."
+  },
+  {
+   "id": "c10",
+   "classification": "supported",
+   "evidence": "BHF: dietary cholesterol in eggs/shellfish has minimal effect; saturated fat matters more.",
+   "url": "https://www.bhf.org.uk/informationsupport/risk-factors/high-cholesterol",
+   "action": "kept"
+  },
+  {
+   "id": "c11",
+   "classification": "supported",
+   "evidence": "NHS: it can run in families.",
+   "url": "https://www.nhs.uk/conditions/high-cholesterol/",
+   "action": "kept"
+  },
+  {
+   "id": "c12",
+   "classification": "unsupported",
+   "evidence": "'From birth, lasts a lifetime, very high' not retrieved; Heart UK: common inherited condition, one gene change, liver less able to remove LDL.",
+   "url": "https://www.heartuk.org.uk/cholesterol/causes",
+   "action": "edited",
+   "newSentence": "Heart UK says familial hypercholesterolaemia is a common inherited condition caused by a change in one gene, which makes the liver less able to remove excess LDL cholesterol."
+  },
+  {
+   "id": "c13",
+   "classification": "supported",
+   "evidence": "GEP: secondary causes (diabetes, hypothyroidism, hepatic or renal disease) excluded before diagnosing FH.",
+   "url": "https://www.genomicseducation.hee.nhs.uk/genotes/knowledge-hub/familial-hypercholesterolaemia/",
+   "action": "edited",
+   "newSentence": "Other causes of high cholesterol, such as diabetes or an underactive thyroid, are excluded first when familial hypercholesterolaemia is suspected."
+  },
+  {
+   "id": "c14",
+   "classification": "supported",
+   "evidence": "NHS: over 50, men, post-menopause, South Asian or sub-Saharan African origin.",
+   "url": "https://www.nhs.uk/conditions/high-cholesterol/",
+   "action": "kept"
+  },
+  {
+   "id": "c15",
+   "classification": "unsupported",
+   "evidence": "Retrieved NHS text: GP may suggest a test based on age, weight or conditions such as high blood pressure or diabetes; 'over 40/family history' not seen.",
+   "url": "https://www.nhs.uk/conditions/high-cholesterol/",
+   "action": "edited",
+   "newSentence": "A GP may suggest a cholesterol test depending on factors such as age, weight and other conditions like high blood pressure or diabetes."
+  },
+  {
+   "id": "c16",
+   "classification": "supported",
+   "evidence": "NHS: Health Check includes cholesterol test, for adults without certain pre-existing conditions.",
+   "url": "https://www.nhs.uk/conditions/high-cholesterol/getting-tested/",
+   "action": "edited",
+   "newSentence": "The NHS Health Check, offered to some adults without certain existing conditions, includes a cholesterol test."
+  },
+  {
+   "id": "c17",
+   "classification": "supported",
+   "evidence": "NHS: can get a test at a pharmacy, may pay.",
+   "url": "https://www.nhs.uk/conditions/high-cholesterol/getting-tested/",
+   "action": "kept"
+  },
+  {
+   "id": "c18",
+   "classification": "supported",
+   "evidence": "BHF: lipid profile measures HDL, non-HDL, ratio, triglycerides, total cholesterol.",
+   "url": "https://www.bhf.org.uk/informationsupport/risk-factors/high-cholesterol/understanding-your-cholesterol-levels",
+   "action": "kept"
+  },
+  {
+   "id": "c19",
+   "classification": "unsupported",
+   "evidence": "Page not retrieved; replaced by BHF: GP can say which targets apply as they depend on individual risk.",
+   "url": "https://www.bhf.org.uk/informationsupport/risk-factors/high-cholesterol",
+   "action": "removed"
+  },
+  {
+   "id": "c20",
+   "classification": "supported",
+   "evidence": "BHF: tendon lumps around knuckles, knees, Achilles; pale ring round iris; yellow patches around eyes. 'Can be absent' not stated; removed.",
+   "url": "https://www.bhf.org.uk/informationsupport/conditions/familial-hypercholesterolaemia",
+   "action": "edited",
+   "newSentence": "Familial hypercholesterolaemia can cause lumps around the knuckles, knees or the back of the ankle, a pale ring around the coloured part of the eye, or small yellow patches on the skin around the eyes."
+  },
+  {
+   "id": "c21",
+   "classification": "supported",
+   "evidence": "Search: Simon Broome criteria used if results high or signs; genetic testing confirms diagnosis in some cases.",
+   "url": "https://www.bhf.org.uk/informationsupport/conditions/familial-hypercholesterolaemia",
+   "action": "edited",
+   "newSentence": "A scoring guide such as the Simon Broome criteria may be used, and genetic testing can confirm the diagnosis in some cases."
+  },
+  {
+   "id": "c22",
+   "classification": "supported",
+   "evidence": "NICE CG71 text: 2 measurements of LDL-C because of biological and analytical variability.",
+   "url": "https://www.nice.org.uk/guidance/cg71/chapter/recommendations",
+   "action": "edited",
+   "newSentence": "NICE advises two measurements of LDL cholesterol because results can vary for biological and analytical reasons."
+  },
+  {
+   "id": "c23",
+   "classification": "supported",
+   "evidence": "NICE CG71: referral to specialist lipid clinics to confirm diagnosis, counsel and initiate cascade testing.",
+   "url": "https://www.nice.org.uk/guidance/cg71/chapter/recommendations",
+   "action": "edited",
+   "newSentence": "NICE recommends referral to a specialist lipid clinic to confirm the diagnosis, counsel the person and start cascade testing, which means testing relatives."
+  },
+  {
+   "id": "c24",
+   "classification": "supported",
+   "evidence": "NHS: lifestyle changes first; for some people not enough, medicine needed.",
+   "url": "https://www.nhs.uk/conditions/high-cholesterol/",
+   "action": "kept"
+  },
+  {
+   "id": "c25",
+   "classification": "supported",
+   "evidence": "NHS: statins most common; daily tablet; usually for life.",
+   "url": "https://www.nhs.uk/conditions/high-cholesterol/medicines-for-high-cholesterol/",
+   "action": "kept"
+  },
+  {
+   "id": "c26",
+   "classification": "unsupported",
+   "evidence": "NHS statins page text not retrieved for this.",
+   "url": "https://www.nhs.uk/medicines/statins/",
+   "action": "removed"
+  },
+  {
+   "id": "c27",
+   "classification": "supported",
+   "evidence": "NHS: most can take statins; not with severe liver disease, pregnancy.",
+   "url": "https://www.nhs.uk/medicines/statins/",
+   "action": "kept"
+  },
+  {
+   "id": "c28",
+   "classification": "supported",
+   "evidence": "NHS: lower cholesterol, prevent heart disease incl. heart attacks and strokes.",
+   "url": "https://www.nhs.uk/medicines/atorvastatin/about-atorvastatin/",
+   "action": "kept"
+  },
+  {
+   "id": "c29",
+   "classification": "unsupported",
+   "evidence": "NHS rosuvastatin page text not retrieved.",
+   "url": "https://www.nhs.uk/medicines/statins/",
+   "action": "removed"
+  },
+  {
+   "id": "c30",
+   "classification": "supported",
+   "evidence": "NG238: offer atorvastatin (primary and secondary prevention). Rosuvastatin 'alternative' not retrieved; removed.",
+   "url": "https://www.nice.org.uk/guidance/ng238/chapter/Recommendations",
+   "action": "edited",
+   "newSentence": "NICE guidance on lipid modification recommends atorvastatin as the statin to offer for preventing cardiovascular disease."
+  },
+  {
+   "id": "c31",
+   "classification": "supported",
+   "evidence": "NHS: ezetimibe, bempedoic acid, injections (alirocumab, evolocumab, inclisiran) if statins cannot be taken/do not work.",
+   "url": "https://www.nhs.uk/conditions/high-cholesterol/medicines-for-high-cholesterol/",
+   "action": "kept"
+  },
+  {
+   "id": "c32",
+   "classification": "unsupported",
+   "evidence": "'Overseen by lipid clinics' not retrieved; NHS England guide: lipid-modifying therapy, life-long, is first line.",
+   "url": "https://www.england.nhs.uk/london/wp-content/uploads/sites/8/2019/11/Familial-Hypercholesterolaemia-Implementation-Guide.pdf",
+   "action": "edited",
+   "newSentence": "For familial hypercholesterolaemia, NHS England guidance describes lipid-lowering medicine, which will be life-long, as the first line of treatment."
+  },
+  {
+   "id": "c33",
+   "classification": "unsupported",
+   "evidence": "Heart UK statement not retrieved.",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c34",
+   "classification": "supported",
+   "evidence": "Heart UK: aerobic exercise raises HDL, improves LDL, lowers triglycerides.",
+   "url": "https://www.heartuk.org.uk/healthy-living/exercise",
+   "action": "kept"
+  },
+  {
+   "id": "c35",
+   "classification": "supported",
+   "evidence": "Heart UK: losing weight/inches around waist can help raise HDL; stopping smoking can raise HDL.",
+   "url": "https://www.heartuk.org.uk/genetic-conditions/low-hdl-cholesterol-",
+   "action": "edited",
+   "newSentence": "Heart UK also says that losing weight can help raise HDL cholesterol, and that stopping smoking can too."
+  },
+  {
+   "id": "c36",
+   "classification": "unsupported",
+   "evidence": "Essex ICB text not retrieved; replaced by NHS lifestyle advice.",
+   "url": "https://www.nhs.uk/conditions/high-cholesterol/",
+   "action": "removed"
+  },
+  {
+   "id": "c37",
+   "classification": "unsupported",
+   "evidence": "BHF text retrieved: GP can say which targets apply; 'ask the GP for a check' wording not seen. Route-to-care sentence kept as textbook.",
+   "url": "https://www.bhf.org.uk/informationsupport/risk-factors/high-cholesterol",
+   "action": "edited",
+   "newSentence": "A GP appointment is the usual route for a cholesterol check, and the GP reads the result alongside other risk factors."
+  },
+  {
+   "id": "c38",
+   "classification": "textbook",
+   "evidence": "Standard emergency signposting.",
+   "url": "",
+   "action": "kept"
+  },
+  {
+   "id": "c39",
+   "classification": "supported",
+   "evidence": "NHS: usually no symptoms; only a blood test shows it.",
+   "url": "https://www.nhs.uk/conditions/high-cholesterol/",
+   "action": "kept"
+  },
+  {
+   "id": "c40",
+   "classification": "unsupported",
+   "evidence": "Retrieved NHS text: GP may suggest a test based on age, weight or conditions such as high blood pressure or diabetes; 'over 40/family history' not seen.",
+   "url": "https://www.nhs.uk/conditions/high-cholesterol/",
+   "action": "edited",
+   "newSentence": "A GP may suggest a cholesterol test depending on factors such as age, weight and other conditions like high blood pressure or diabetes."
+  },
+  {
+   "id": "c41",
+   "classification": "supported",
+   "evidence": "NHS: can get a test at a pharmacy, may pay.",
+   "url": "https://www.nhs.uk/conditions/high-cholesterol/getting-tested/",
+   "action": "kept"
+  },
+  {
+   "id": "c42",
+   "classification": "unsupported",
+   "evidence": "'From birth, lasts a lifetime, very high' not retrieved; Heart UK: common inherited condition, one gene change, liver less able to remove LDL.",
+   "url": "https://www.heartuk.org.uk/cholesterol/causes",
+   "action": "edited",
+   "newSentence": "Heart UK says familial hypercholesterolaemia is a common inherited condition caused by a change in one gene, which makes the liver less able to remove excess LDL cholesterol."
+  },
+  {
+   "id": "c43",
+   "classification": "unsupported",
+   "evidence": "Not retrieved; BHF: usually no symptoms of high cholesterol.",
+   "url": "https://www.bhf.org.uk/informationsupport/risk-factors/high-cholesterol",
+   "action": "edited",
+   "newSentence": "There are usually no symptoms of high cholesterol."
+  },
+  {
+   "id": "c44",
+   "classification": "unsupported",
+   "evidence": "Not retrieved in that wording; GEP: FH is the most common genetic cause of premature atherosclerotic CVD.",
+   "url": "https://www.genomicseducation.hee.nhs.uk/genotes/knowledge-hub/familial-hypercholesterolaemia/",
+   "action": "edited",
+   "newSentence": "Familial hypercholesterolaemia is the most common genetic cause of early cardiovascular disease, the Genomics Education Programme says."
+  },
+  {
+   "id": "c45",
+   "classification": "unsupported",
+   "evidence": "'Overseen by lipid clinics' not retrieved; NHS England guide: lipid-modifying therapy, life-long, is first line.",
+   "url": "https://www.england.nhs.uk/london/wp-content/uploads/sites/8/2019/11/Familial-Hypercholesterolaemia-Implementation-Guide.pdf",
+   "action": "edited",
+   "newSentence": "For familial hypercholesterolaemia, NHS England guidance describes lipid-lowering medicine, which will be life-long, as the first line of treatment."
+  },
+  {
+   "id": "c46",
+   "classification": "supported",
+   "evidence": "NHS: statins most common; daily tablet; usually for life.",
+   "url": "https://www.nhs.uk/conditions/high-cholesterol/medicines-for-high-cholesterol/",
+   "action": "kept"
+  },
+  {
+   "id": "c47",
+   "classification": "supported",
+   "evidence": "NHS: lower cholesterol, prevent heart disease incl. heart attacks and strokes.",
+   "url": "https://www.nhs.uk/medicines/atorvastatin/about-atorvastatin/",
+   "action": "kept"
+  },
+  {
+   "id": "c48",
+   "classification": "unsupported",
+   "evidence": "NHS rosuvastatin page text not retrieved.",
+   "url": "https://www.nhs.uk/medicines/statins/",
+   "action": "removed"
+  },
+  {
+   "id": "c49",
+   "classification": "supported",
+   "evidence": "NHS: ezetimibe, bempedoic acid, injections (alirocumab, evolocumab, inclisiran) if statins cannot be taken/do not work.",
+   "url": "https://www.nhs.uk/conditions/high-cholesterol/medicines-for-high-cholesterol/",
+   "action": "kept"
+  },
+  {
+   "id": "c50",
+   "classification": "supported",
+   "evidence": "BHF: dietary cholesterol in eggs/shellfish has minimal effect; saturated fat matters more.",
+   "url": "https://www.bhf.org.uk/informationsupport/risk-factors/high-cholesterol",
+   "action": "kept"
+  },
+  {
+   "id": "c51",
+   "classification": "supported",
+   "evidence": "Heart UK: saturated fat, alcohol above recommended levels, smoking, excess weight especially around middle, lack of exercise.",
+   "url": "https://www.heartuk.org.uk/cholesterol/causes",
+   "action": "edited",
+   "newSentence": "Lifestyle factors include drinking more alcohol than recommended, excess weight (especially around the middle), smoking, a diet high in saturated fat and low physical activity."
+  },
+  {
+   "id": "c52",
+   "classification": "unsupported",
+   "evidence": "Retrieved NHS text: GP may suggest a test based on age, weight or conditions such as high blood pressure or diabetes; 'over 40/family history' not seen.",
+   "url": "https://www.nhs.uk/conditions/high-cholesterol/",
+   "action": "edited",
+   "newSentence": "A GP may suggest a cholesterol test depending on factors such as age, weight and other conditions like high blood pressure or diabetes."
+  },
+  {
+   "id": "c53",
+   "classification": "unsupported",
+   "evidence": "BHF text retrieved: GP can say which targets apply; 'ask the GP for a check' wording not seen. Route-to-care sentence kept as textbook.",
+   "url": "https://www.bhf.org.uk/informationsupport/risk-factors/high-cholesterol",
+   "action": "edited",
+   "newSentence": "A GP appointment is the usual route for a cholesterol check, and the GP reads the result alongside other risk factors."
+  },
+  {
+   "id": "c54",
+   "classification": "textbook",
+   "evidence": "Plain definition; NHS page titled High cholesterol.",
+   "url": "https://www.nhs.uk/conditions/high-cholesterol/",
+   "action": "kept"
+  },
+  {
+   "id": "c55",
+   "classification": "supported",
+   "evidence": "NHS: usually no symptoms; only a blood test shows it.",
+   "url": "https://www.nhs.uk/conditions/high-cholesterol/",
+   "action": "kept"
+  },
+  {
+   "id": "c56",
+   "classification": "supported",
+   "evidence": "BHF: lipid profile measures HDL, non-HDL, ratio, triglycerides, total cholesterol.",
+   "url": "https://www.bhf.org.uk/informationsupport/risk-factors/high-cholesterol/understanding-your-cholesterol-levels",
+   "action": "kept"
+  },
+  {
+   "id": "c57",
+   "classification": "supported",
+   "evidence": "NHS: lifestyle changes first; for some people not enough, medicine needed.",
+   "url": "https://www.nhs.uk/conditions/high-cholesterol/",
+   "action": "kept"
+  },
+  {
+   "id": "c58",
+   "classification": "supported",
+   "evidence": "NHS: statins most common; daily tablet; usually for life.",
+   "url": "https://www.nhs.uk/conditions/high-cholesterol/medicines-for-high-cholesterol/",
+   "action": "kept"
+  },
+  {
+   "id": "c59",
+   "classification": "unsupported",
+   "evidence": "'From birth, lasts a lifetime, very high' not retrieved; Heart UK: common inherited condition, one gene change, liver less able to remove LDL.",
+   "url": "https://www.heartuk.org.uk/cholesterol/causes",
+   "action": "edited",
+   "newSentence": "Heart UK says familial hypercholesterolaemia is a common inherited condition caused by a change in one gene, which makes the liver less able to remove excess LDL cholesterol."
+  },
+  {
+   "id": "c60",
+   "classification": "textbook",
+   "evidence": "Plain definition; NHS page titled High cholesterol.",
+   "url": "https://www.nhs.uk/conditions/high-cholesterol/",
+   "action": "kept"
+  },
+  {
+   "id": "c61",
+   "classification": "supported",
+   "evidence": "NHS: usually no symptoms; only a blood test shows it.",
+   "url": "https://www.nhs.uk/conditions/high-cholesterol/",
+   "action": "kept"
+  },
+  {
+   "id": "c62",
+   "classification": "supported",
+   "evidence": "BHF: too much cholesterol can narrow arteries, fatty build-up, raises heart attack or stroke risk; CHD not named.",
+   "url": "https://www.bhf.org.uk/informationsupport/risk-factors/high-cholesterol",
+   "action": "edited",
+   "newSentence": "Having too much cholesterol in the blood can narrow the arteries as fatty material builds up, which raises the risk of heart attack and stroke."
+  },
+  {
+   "id": "c63",
+   "classification": "supported",
+   "evidence": "Heart UK: mix of lifestyle, genetics and overall health that add up.",
+   "url": "https://www.heartuk.org.uk/cholesterol/causes",
+   "action": "kept"
+  },
+  {
+   "id": "c64",
+   "classification": "supported",
+   "evidence": "NHS: lifestyle changes first; for some people not enough, medicine needed.",
+   "url": "https://www.nhs.uk/conditions/high-cholesterol/",
+   "action": "kept"
+  },
+  {
+   "id": "c65",
+   "classification": "supported",
+   "evidence": "Heart UK: mix of lifestyle, genetics and overall health that add up.",
+   "url": "https://www.heartuk.org.uk/cholesterol/causes",
+   "action": "kept"
+  },
+  {
+   "id": "c66",
+   "classification": "supported",
+   "evidence": "Heart UK: saturated fat, alcohol above recommended levels, smoking, excess weight especially around middle, lack of exercise.",
+   "url": "https://www.heartuk.org.uk/cholesterol/causes",
+   "action": "edited",
+   "newSentence": "Lifestyle factors include drinking more alcohol than recommended, excess weight (especially around the middle), smoking, a diet high in saturated fat and low physical activity."
+  },
+  {
+   "id": "c67",
+   "classification": "unsupported",
+   "evidence": "'From birth, lasts a lifetime, very high' not retrieved; Heart UK: common inherited condition, one gene change, liver less able to remove LDL.",
+   "url": "https://www.heartuk.org.uk/cholesterol/causes",
+   "action": "edited",
+   "newSentence": "Heart UK says familial hypercholesterolaemia is a common inherited condition caused by a change in one gene, which makes the liver less able to remove excess LDL cholesterol."
+  },
+  {
+   "id": "c68",
+   "classification": "supported",
+   "evidence": "GEP: secondary causes (diabetes, hypothyroidism, hepatic or renal disease) excluded before diagnosing FH.",
+   "url": "https://www.genomicseducation.hee.nhs.uk/genotes/knowledge-hub/familial-hypercholesterolaemia/",
+   "action": "edited",
+   "newSentence": "Other causes of high cholesterol, such as diabetes or an underactive thyroid, are excluded first when familial hypercholesterolaemia is suspected."
+  },
+  {
+   "id": "c69",
+   "classification": "supported",
+   "evidence": "NHS: over 50, men, post-menopause, South Asian or sub-Saharan African origin.",
+   "url": "https://www.nhs.uk/conditions/high-cholesterol/",
+   "action": "kept"
+  },
+  {
+   "id": "c70",
+   "classification": "supported",
+   "evidence": "NHS: it can run in families.",
+   "url": "https://www.nhs.uk/conditions/high-cholesterol/",
+   "action": "kept"
+  },
+  {
+   "id": "c71",
+   "classification": "supported",
+   "evidence": "BHF: tendon lumps around knuckles, knees, Achilles; pale ring round iris; yellow patches around eyes. 'Can be absent' not stated; removed.",
+   "url": "https://www.bhf.org.uk/informationsupport/conditions/familial-hypercholesterolaemia",
+   "action": "edited",
+   "newSentence": "Familial hypercholesterolaemia can cause lumps around the knuckles, knees or the back of the ankle, a pale ring around the coloured part of the eye, or small yellow patches on the skin around the eyes."
+  },
+  {
+   "id": "c72",
+   "classification": "unsupported",
+   "evidence": "Not retrieved; BHF: usually no symptoms of high cholesterol.",
+   "url": "https://www.bhf.org.uk/informationsupport/risk-factors/high-cholesterol",
+   "action": "edited",
+   "newSentence": "There are usually no symptoms of high cholesterol."
+  },
+  {
+   "id": "c73",
+   "classification": "supported",
+   "evidence": "BHF: too much cholesterol can narrow arteries, fatty build-up, raises heart attack or stroke risk; CHD not named.",
+   "url": "https://www.bhf.org.uk/informationsupport/risk-factors/high-cholesterol",
+   "action": "edited",
+   "newSentence": "Having too much cholesterol in the blood can narrow the arteries as fatty material builds up, which raises the risk of heart attack and stroke."
+  },
+  {
+   "id": "c74",
+   "classification": "unsupported",
+   "evidence": "Not retrieved in that wording; GEP: FH is the most common genetic cause of premature atherosclerotic CVD.",
+   "url": "https://www.genomicseducation.hee.nhs.uk/genotes/knowledge-hub/familial-hypercholesterolaemia/",
+   "action": "edited",
+   "newSentence": "Familial hypercholesterolaemia is the most common genetic cause of early cardiovascular disease, the Genomics Education Programme says."
+  },
+  {
+   "id": "c75",
+   "classification": "supported",
+   "evidence": "NHS: usually no symptoms; only a blood test shows it.",
+   "url": "https://www.nhs.uk/conditions/high-cholesterol/",
+   "action": "kept"
+  },
+  {
+   "id": "c76",
+   "classification": "supported",
+   "evidence": "BHF: lipid profile measures HDL, non-HDL, ratio, triglycerides, total cholesterol.",
+   "url": "https://www.bhf.org.uk/informationsupport/risk-factors/high-cholesterol/understanding-your-cholesterol-levels",
+   "action": "kept"
+  },
+  {
+   "id": "c77",
+   "classification": "unsupported",
+   "evidence": "Page not retrieved; replaced by BHF: GP can say which targets apply as they depend on individual risk.",
+   "url": "https://www.bhf.org.uk/informationsupport/risk-factors/high-cholesterol",
+   "action": "removed"
+  },
+  {
+   "id": "c78",
+   "classification": "supported",
+   "evidence": "Search: Simon Broome criteria used if results high or signs; genetic testing confirms diagnosis in some cases.",
+   "url": "https://www.bhf.org.uk/informationsupport/conditions/familial-hypercholesterolaemia",
+   "action": "edited",
+   "newSentence": "A scoring guide such as the Simon Broome criteria may be used, and genetic testing can confirm the diagnosis in some cases."
+  },
+  {
+   "id": "c79",
+   "classification": "supported",
+   "evidence": "NHS: lifestyle changes first; for some people not enough, medicine needed.",
+   "url": "https://www.nhs.uk/conditions/high-cholesterol/",
+   "action": "kept"
+  },
+  {
+   "id": "c80",
+   "classification": "supported",
+   "evidence": "NHS: statins most common; daily tablet; usually for life.",
+   "url": "https://www.nhs.uk/conditions/high-cholesterol/medicines-for-high-cholesterol/",
+   "action": "kept"
+  },
+  {
+   "id": "c81",
+   "classification": "supported",
+   "evidence": "NHS: ezetimibe, bempedoic acid, injections (alirocumab, evolocumab, inclisiran) if statins cannot be taken/do not work.",
+   "url": "https://www.nhs.uk/conditions/high-cholesterol/medicines-for-high-cholesterol/",
+   "action": "kept"
+  },
+  {
+   "id": "c82",
+   "classification": "supported",
+   "evidence": "NHS: eat less saturated fat, exercise more, stop smoking, cut back alcohol.",
+   "url": "https://www.nhs.uk/conditions/high-cholesterol/how-to-lower-your-cholesterol/",
+   "action": "kept"
+  },
+  {
+   "id": "c83",
+   "classification": "unsupported",
+   "evidence": "Heart UK statement not retrieved.",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c84",
+   "classification": "unsupported",
+   "evidence": "BHF text retrieved: GP can say which targets apply; 'ask the GP for a check' wording not seen. Route-to-care sentence kept as textbook.",
+   "url": "https://www.bhf.org.uk/informationsupport/risk-factors/high-cholesterol",
+   "action": "edited",
+   "newSentence": "A GP appointment is the usual route for a cholesterol check, and the GP reads the result alongside other risk factors."
+  },
+  {
+   "id": "c85",
+   "classification": "textbook",
+   "evidence": "Standard emergency signposting.",
+   "url": "",
+   "action": "kept"
+  },
+  {
+   "id": "c86",
+   "classification": "supported",
+   "evidence": "Heart UK: anyone can have higher cholesterol even if slim, eat well, active.",
+   "url": "https://www.heartuk.org.uk/cholesterol/causes",
+   "action": "added",
+   "newSentence": "Heart UK says anyone can have a higher cholesterol level, even people who are slim, eat well and are physically active."
+  },
+  {
+   "id": "c87",
+   "classification": "supported",
+   "evidence": "BHF: triglycerides another fat that can add to fatty build-up.",
+   "url": "https://www.bhf.org.uk/informationsupport/risk-factors/high-cholesterol",
+   "action": "added",
+   "newSentence": "Triglycerides are another type of fat in the blood, and they can also add to fatty build-up in the arteries."
+  },
+  {
+   "id": "c88",
+   "classification": "supported",
+   "evidence": "BHF: sources of saturated fat listed.",
+   "url": "https://www.bhf.org.uk/informationsupport/risk-factors/high-cholesterol",
+   "action": "added",
+   "newSentence": "The British Heart Foundation lists the main sources of saturated fat as fatty meats, full fat dairy products such as butter and cream, palm and coconut oil, and processed foods such as biscuits, cakes and pastries."
+  },
+  {
+   "id": "c89",
+   "classification": "supported",
+   "evidence": "Heart UK: higher risk with close relative with high cholesterol or CVD.",
+   "url": "https://www.heartuk.org.uk/cholesterol/causes",
+   "action": "added",
+   "newSentence": "Heart UK says the risk is higher for people with a close relative, such as a parent or sibling, who has had high cholesterol or cardiovascular disease."
+  },
+  {
+   "id": "c90",
+   "classification": "supported",
+   "evidence": "NHS: ezetimibe if cannot take statins/not working; reduces absorption from food.",
+   "url": "https://www.nhs.uk/conditions/high-cholesterol/medicines-for-high-cholesterol/",
+   "action": "added",
+   "newSentence": "The NHS says ezetimibe is prescribed if someone cannot take statins or a statin is not working for them, and it reduces the cholesterol absorbed from food."
+  },
+  {
+   "id": "c91",
+   "classification": "supported",
+   "evidence": "NHS atorvastatin: stops the liver making cholesterol.",
+   "url": "https://www.nhs.uk/medicines/atorvastatin/about-atorvastatin/",
+   "action": "added",
+   "newSentence": "The NHS says atorvastatin works by stopping the liver from making cholesterol."
+  },
+  {
+   "id": "c92",
+   "classification": "supported",
+   "evidence": "NHS: for some people lifestyle changes alone are not enough.",
+   "url": "https://www.nhs.uk/conditions/high-cholesterol/",
+   "action": "added",
+   "newSentence": "The NHS says that for some people lifestyle changes alone are not enough."
+  },
+  {
+   "id": "c93",
+   "classification": "supported",
+   "evidence": "NHS: less saturated fat, unsaturated fats (oily fish, olive oil, nuts, seeds), more exercise.",
+   "url": "https://www.nhs.uk/conditions/high-cholesterol/how-to-lower-your-cholesterol/",
+   "action": "added",
+   "newSentence": "The NHS advises eating less saturated fat, choosing unsaturated fats such as those in oily fish, olive oil, nuts and seeds, and being more active."
+  },
+  {
+   "id": "c94",
+   "classification": "supported",
+   "evidence": "NHS: stop smoking, limit alcohol.",
+   "url": "https://www.nhs.uk/conditions/high-cholesterol/",
+   "action": "added",
+   "newSentence": "The NHS also advises stopping smoking and cutting back on alcohol."
+  },
+  {
+   "id": "c95",
+   "classification": "supported",
+   "evidence": "Heart UK: weight loss plus exercise can often lower triglycerides.",
+   "url": "https://www.heartuk.org.uk/genetic-conditions/low-hdl-cholesterol-",
+   "action": "added",
+   "newSentence": "Heart UK says losing excess weight and getting regular exercise can often lower triglyceride levels."
+  },
+  {
+   "id": "c96",
+   "classification": "supported",
+   "evidence": "BHF: GP can say which targets apply, depend on individual risk.",
+   "url": "https://www.bhf.org.uk/informationsupport/risk-factors/high-cholesterol",
+   "action": "added",
+   "newSentence": "The British Heart Foundation says a GP can use the results to say which targets apply, because these depend on individual risk."
+  },
+  {
+   "id": "c97",
+   "classification": "supported",
+   "evidence": "GEP: secondary causes excluded before FH.",
+   "url": "https://www.genomicseducation.hee.nhs.uk/genotes/knowledge-hub/familial-hypercholesterolaemia/",
+   "action": "added",
+   "newSentence": "Other causes of high cholesterol, such as diabetes or an underactive thyroid, are excluded first when familial hypercholesterolaemia is suspected."
+  }
+ ],
+ "notes": "Counts are per occurrence (sentences repeat across fields). Many first-pass sentences were duplicated in several fields. Heart UK exercise/weight URLs: the exercise claim came from the Heart UK exercise page, weight/smoking from the low-HDL page (both returned). Rosuvastatin link kept on the strength of the NHS statins page listing it among statins (summary, not verified in text). NICE CG71 'two measurements' came from a fragmentary snippet. Hypertension link rests on Heart UK listing high blood pressure with causes and NHS test triggers. Atorvastatin ref URL now includes about page via search; kept original page URL."
+}

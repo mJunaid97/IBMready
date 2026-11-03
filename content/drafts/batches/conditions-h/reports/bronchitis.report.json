@@ -1,0 +1,1006 @@
+{
+ "id": "bronchitis",
+ "searchesUsed": 11,
+ "counts": {
+  "supported": 70,
+  "textbook": 0,
+  "unsupported": 25,
+  "wrong": 2,
+  "unsafe": 0,
+  "unchecked": 0
+ },
+ "claims": [
+  {
+   "id": "c01",
+   "where": "definition",
+   "sentence": "Bronchitis is inflammation of the airways in the lungs, usually caused by an infection.",
+   "classification": "supported",
+   "evidence": "NHS: inflammation of the airways in the lungs, usually caused by an infection",
+   "url": "https://www.nhs.uk/conditions/bronchitis/",
+   "action": "kept"
+  },
+  {
+   "id": "c02",
+   "where": "overview",
+   "sentence": "Acute bronchitis is a short-term infection of the larger airways, which are called the bronchi.",
+   "classification": "supported",
+   "evidence": "Asthma + Lung UK: bronchitis is an infection affecting the larger airways (bronchi); MedlinePlus: inflamed tissue in the bronchi",
+   "url": "https://www.asthmaandlung.org.uk/conditions/copd-chronic-obstructive-pulmonary-disease/chronic-bronchitis",
+   "action": "kept"
+  },
+  {
+   "id": "c03",
+   "where": "overview",
+   "sentence": "It usually clears up on its own, often within about 3 weeks.",
+   "classification": "supported",
+   "evidence": "NHS: usually gets better on its own, often in around 3 weeks",
+   "url": "https://www.nhs.uk/conditions/bronchitis/",
+   "action": "kept"
+  },
+  {
+   "id": "c04",
+   "where": "overview",
+   "sentence": "A cough that often brings up mucus is a main symptom, and viruses are the usual cause.",
+   "classification": "supported",
+   "evidence": "NHLBI: both forms share cough with mucus; CDC/MedlinePlus: usually a virus",
+   "url": "https://www.nhlbi.nih.gov/health/bronchitis",
+   "action": "kept"
+  },
+  {
+   "id": "c05",
+   "where": "overview",
+   "sentence": "Chronic bronchitis is a different, long-term problem that forms part of chronic obstructive pulmonary disease (COPD).",
+   "classification": "supported",
+   "evidence": "Asthma + Lung UK: chronic bronchitis is a form of COPD",
+   "url": "https://www.asthmaandlung.org.uk/conditions/copd-chronic-obstructive-pulmonary-disease/chronic-bronchitis",
+   "action": "kept"
+  },
+  {
+   "id": "c06",
+   "where": "causes[0]",
+   "sentence": "Acute bronchitis is usually caused by airway inflammation from viral infections, such as the cold, flu, respiratory syncytial virus (RSV) or COVID-19.",
+   "classification": "unsupported",
+   "evidence": "CDC/MedlinePlus: usually a virus, same viruses that cause colds and flu; RSV and COVID-19 not found in this retrieval",
+   "url": "https://medlineplus.gov/acutebronchitis.html",
+   "action": "edited",
+   "newSentence": "Acute bronchitis is usually caused by a virus, often the same viruses that cause colds and flu."
+  },
+  {
+   "id": "c07",
+   "where": "causes[1]",
+   "sentence": "Bacteria are a less common cause.",
+   "classification": "supported",
+   "evidence": "MedlinePlus: less often, bacteria cause acute bronchitis",
+   "url": "https://medlineplus.gov/ency/article/001087.htm",
+   "action": "kept"
+  },
+  {
+   "id": "c08",
+   "where": "causes[2]",
+   "sentence": "Chronic bronchitis is caused by pollutants and cigarette smoke.",
+   "classification": "supported",
+   "evidence": "Asthma + Lung UK: long-term exposure to irritants; MedlinePlus lists chronic bronchitis causes as irritants/smoke",
+   "url": "https://www.asthmaandlung.org.uk/conditions/copd-chronic-obstructive-pulmonary-disease/chronic-bronchitis",
+   "action": "edited",
+   "newSentence": "Chronic bronchitis is caused by long-term exposure to irritants such as cigarette smoke and pollutants."
+  },
+  {
+   "id": "c09",
+   "where": "riskFactors[0]",
+   "sentence": "The risk of acute bronchitis is higher in very young and older people, in people with a weakened immune system, and in those with heart or lung disease.",
+   "classification": "supported",
+   "evidence": "Review (PMC7151913): higher in very young and elderly, immunocompromised, cardiovascular or pulmonary disease",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7151913/",
+   "action": "kept"
+  },
+  {
+   "id": "c10",
+   "where": "riskFactors[1]",
+   "sentence": "One review notes that it is unclear whether smoking raises the risk of acute bronchitis.",
+   "classification": "wrong",
+   "evidence": "StatPearls and PMC review list a history of smoking as a risk factor, so the statement is contradicted",
+   "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK448067/",
+   "action": "edited",
+   "newSentence": "A history of smoking, living in a polluted area, crowded living conditions and a history of asthma are also listed as risk factors."
+  },
+  {
+   "id": "c11",
+   "where": "riskFactors[2]",
+   "sentence": "Other factors include living in a polluted area, crowded housing and a history of asthma.",
+   "classification": "supported",
+   "evidence": "StatPearls: smoking history, polluted areas, crowded living, prior asthma",
+   "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK448067/",
+   "action": "edited",
+   "newSentence": "(merged into the risk factor sentence above)"
+  },
+  {
+   "id": "c12",
+   "where": "signs[0]",
+   "sentence": "A cough that often brings up mucus is a main symptom, and viruses are the usual cause.",
+   "classification": "supported",
+   "evidence": "NHLBI: both forms share cough with mucus; CDC/MedlinePlus: usually a virus",
+   "url": "https://www.nhlbi.nih.gov/health/bronchitis",
+   "action": "kept"
+  },
+  {
+   "id": "c13",
+   "where": "signs[1]",
+   "sentence": "Wheezing and a low fever can also happen.",
+   "classification": "unsupported",
+   "evidence": "MedlinePlus: usually low-grade fever, fatigue; wheezing listed mainly for people with asthma, so wheezing not supported",
+   "url": "https://medlineplus.gov/ency/article/001087.htm",
+   "action": "edited",
+   "newSentence": "A low-grade fever and tiredness can also happen."
+  },
+  {
+   "id": "c14",
+   "where": "complications[0]",
+   "sentence": "Pneumonia can be a complication, and the risk is higher in people with chronic bronchitis, asthma, COPD or a weakened immune system.",
+   "classification": "supported",
+   "evidence": "StatPearls: patients with asthma, COPD, immunocompromise at higher risk of complications; watch for secondary pneumonia. Chronic bronchitis not named",
+   "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK448067/",
+   "action": "edited",
+   "newSentence": "Pneumonia can be a complication, and the risk is higher in people with asthma, COPD or a weakened immune system."
+  },
+  {
+   "id": "c15",
+   "where": "complications[1]",
+   "sentence": "Rarer complications include acute respiratory distress syndrome and respiratory failure.",
+   "classification": "supported",
+   "evidence": "StatPearls: ARDS and respiratory failure linked to acute bronchitis reported in the literature",
+   "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK448067/",
+   "action": "edited",
+   "newSentence": "Acute respiratory distress syndrome and respiratory failure linked to acute bronchitis have been reported in the medical literature."
+  },
+  {
+   "id": "c16",
+   "where": "complications[2]",
+   "sentence": "People with asthma are more likely to get a chest infection, and a chest infection can trigger asthma symptoms and lead to an asthma attack.",
+   "classification": "supported",
+   "evidence": "Asthma + Lung UK: chest infections can trigger asthma symptoms and an attack",
+   "url": "https://www.asthmaandlung.org.uk/conditions/chest-infections/what",
+   "action": "kept"
+  },
+  {
+   "id": "c17",
+   "where": "diagnosis",
+   "sentence": "StatPearls describes acute bronchitis as a clinical diagnosis that does not need scans or laboratory tests at first unless there are warning signs of complications.",
+   "classification": "unsupported",
+   "evidence": "Not found in this retrieval; StatPearls retrieved text only covers the chest X-ray",
+   "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK448067/",
+   "action": "removed"
+  },
+  {
+   "id": "c18",
+   "where": "diagnosis",
+   "sentence": "A chest X-ray may be used to rule out other causes of cough, such as pneumonia, and it is usually normal in acute bronchitis.",
+   "classification": "supported",
+   "evidence": "StatPearls: chest X-ray usually non-specific, often normal, most useful for telling pneumonia apart",
+   "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK448067/",
+   "action": "edited",
+   "newSentence": "StatPearls says a chest X-ray in acute bronchitis is usually non-specific and often looks normal, and that it is most useful for telling pneumonia apart."
+  },
+  {
+   "id": "c19",
+   "where": "diagnosis",
+   "sentence": "Clinicians consider other possible causes of a cough, such as pneumonia, and look for signs of more serious illness such as sepsis.",
+   "classification": "unsupported",
+   "evidence": "Pneumonia/sepsis wording not found in NICE retrieval; NICE refers to being systemically very unwell or at higher risk of complications",
+   "url": "https://www.nice.org.uk/guidance/ng120/chapter/recommendations",
+   "action": "edited",
+   "newSentence": "NICE guidance on acute cough sets out when antibiotics are considered, depending on how unwell a person is and whether they are at higher risk of complications."
+  },
+  {
+   "id": "c20",
+   "where": "treatment",
+   "sentence": "Most cases of acute bronchitis get better on their own.",
+   "classification": "supported",
+   "evidence": "NHS/MedlinePlus/CDC: usually gets better on its own",
+   "url": "https://www.nhs.uk/conditions/bronchitis/",
+   "action": "kept"
+  },
+  {
+   "id": "c21",
+   "where": "treatment",
+   "sentence": "The NHS advises resting at home, drinking plenty of fluids, taking paracetamol or ibuprofen and not smoking.",
+   "classification": "unsupported",
+   "evidence": "NHS: resting, plenty of fluids, paracetamol or ibuprofen for pain and fever. 'Not smoking' not found in retrieval; wording 'advises' is instructive",
+   "url": "https://www.nhs.uk/conditions/bronchitis/",
+   "action": "edited",
+   "newSentence": "The NHS suggests resting, drinking plenty of fluids and taking paracetamol or ibuprofen for pain and fever."
+  },
+  {
+   "id": "c22",
+   "where": "treatment",
+   "sentence": "Antibiotics may be offered if the infection is bacterial.",
+   "classification": "unsupported",
+   "evidence": "NHS: antibiotics may be offered if caused by a more serious infection; 'bacterial' not what was retrieved",
+   "url": "https://www.nhs.uk/conditions/bronchitis/",
+   "action": "edited",
+   "newSentence": "Antibiotics are not routine, but may be offered if the bronchitis is caused by a more serious infection."
+  },
+  {
+   "id": "c23",
+   "where": "treatment",
+   "sentence": "NICE does not routinely recommend antibiotics for acute bronchitis in people who are not very unwell or at higher risk of complications.",
+   "classification": "supported",
+   "evidence": "NICE NG120: antibiotics not routinely offered if not systemically very unwell or at higher risk",
+   "url": "https://www.nice.org.uk/guidance/ng120/chapter/recommendations",
+   "action": "kept"
+  },
+  {
+   "id": "c24",
+   "where": "treatment",
+   "sentence": "Treatments can help with symptoms, slow the progress of the disease and improve the ability to stay active.",
+   "classification": "unsupported",
+   "evidence": "Not found; NHLBI retrieved: treatment aims to improve breathing and control symptoms. Misplaced in acute treatment text",
+   "url": "https://www.nhlbi.nih.gov/health/bronchitis",
+   "action": "edited",
+   "newSentence": "NHLBI says treatment of chronic bronchitis aims to improve breathing and control symptoms."
+  },
+  {
+   "id": "c25",
+   "where": "prevention",
+   "sentence": "Stopping smoking is described as the most important step in the care of chronic bronchitis.",
+   "classification": "supported",
+   "evidence": "MedlinePlus: quitting smoking is the most important step for chronic bronchitis",
+   "url": "https://medlineplus.gov/chronicbronchitis.html",
+   "action": "kept"
+  },
+  {
+   "id": "c26",
+   "where": "prevention",
+   "sentence": "Reducing exposure to allergens and pollutants is also recommended to prevent recurrence and lower the risk of complications.",
+   "classification": "unsupported",
+   "evidence": "NHLBI: avoiding fumes, air pollution and secondhand smoke, and vaccines lower chance of bronchitis; 'allergens' and 'complications' not found",
+   "url": "https://www.nhlbi.nih.gov/health/bronchitis",
+   "action": "edited",
+   "newSentence": "NHLBI lists avoiding fumes, air pollution and secondhand smoke, and having recommended vaccines such as the yearly flu vaccine, as ways to lower the chance of getting bronchitis or of getting it again."
+  },
+  {
+   "id": "c27",
+   "where": "seekCare",
+   "sentence": "Call 999 if there is struggling to breathe, pale, blue or grey lips or skin, sudden confusion, or a baby who cannot be woken or feels floppy.",
+   "classification": "supported",
+   "evidence": "NHS: call 999 if struggling to breathe, pale/blue/grey lips or skin, sudden confusion, baby unresponsive or floppy",
+   "url": "https://www.nhs.uk/conditions/bronchitis/",
+   "action": "edited",
+   "newSentence": "Call 999 if someone is struggling to breathe, their lips or skin turn pale, blue or grey, they suddenly become confused, or a baby is unresponsive or floppy."
+  },
+  {
+   "id": "c28",
+   "where": "seekCare",
+   "sentence": "The NHS advises an urgent GP appointment or a call to NHS 111 for people who are over 65, are pregnant, have a long-term condition such as diabetes or heart, lung or kidney disease, or feel too unwell to do their usual daily activities.",
+   "classification": "supported",
+   "evidence": "NHS: urgent GP or NHS 111 for over 65, pregnant, long-term condition, weakened immune system, too unwell",
+   "url": "https://www.nhs.uk/conditions/bronchitis/",
+   "action": "kept"
+  },
+  {
+   "id": "c29",
+   "where": "seekCare",
+   "sentence": "The NHS says to see a GP if symptoms last longer than 3 weeks.",
+   "classification": "supported",
+   "evidence": "NHS: see a GP if symptoms last longer than 3 weeks",
+   "url": "https://www.nhs.uk/conditions/bronchitis/",
+   "action": "kept"
+  },
+  {
+   "id": "c30",
+   "where": "article.sections[0]",
+   "sentence": "The NHS lists a cough, chest pain when coughing, shortness of breath, a sore throat, a runny nose and a high temperature.",
+   "classification": "supported",
+   "evidence": "NHS symptom list",
+   "url": "https://www.nhs.uk/conditions/bronchitis/",
+   "action": "kept"
+  },
+  {
+   "id": "c31",
+   "where": "article.sections[0]",
+   "sentence": "NI Direct, the Northern Ireland public information service, adds that tiredness, headache and aches and pains can also occur.",
+   "classification": "supported",
+   "evidence": "NIDirect symptom list: sore throat, headache, runny nose, aches and pains, tiredness",
+   "url": "https://www.nidirect.gov.uk/conditions/bronchitis-acute",
+   "action": "kept"
+  },
+  {
+   "id": "c32",
+   "where": "article.sections[0]",
+   "sentence": "A cough that often brings up mucus is a main symptom, and viruses are the usual cause.",
+   "classification": "supported",
+   "evidence": "NHLBI: both forms share cough with mucus; CDC/MedlinePlus: usually a virus",
+   "url": "https://www.nhlbi.nih.gov/health/bronchitis",
+   "action": "kept"
+  },
+  {
+   "id": "c33",
+   "where": "article.sections[0]",
+   "sentence": "Wheezing and a low fever can also happen.",
+   "classification": "unsupported",
+   "evidence": "MedlinePlus: usually low-grade fever, fatigue; wheezing listed mainly for people with asthma, so wheezing not supported",
+   "url": "https://medlineplus.gov/ency/article/001087.htm",
+   "action": "edited",
+   "newSentence": "A low-grade fever and tiredness can also happen."
+  },
+  {
+   "id": "c34",
+   "where": "article.sections[0]",
+   "sentence": "In chronic bronchitis, a whistling or squeaky sound when breathing and chest tightness are also reported.",
+   "classification": "supported",
+   "evidence": "MedlinePlus: whistling or squeaky sound when breathing and chest tightness",
+   "url": "https://medlineplus.gov/chronicbronchitis.html",
+   "action": "kept"
+  },
+  {
+   "id": "c35",
+   "where": "article.sections[0]",
+   "sentence": "Bronchitis often gets better without treatment in around 3 weeks, according to the NHS.",
+   "classification": "supported",
+   "evidence": "NHS: around 3 weeks",
+   "url": "https://www.nhs.uk/conditions/bronchitis/",
+   "action": "kept"
+  },
+  {
+   "id": "c36",
+   "where": "article.sections[0]",
+   "sentence": "Clinicians consider other possible causes of a cough, such as pneumonia, and look for signs of more serious illness such as sepsis.",
+   "classification": "unsupported",
+   "evidence": "Pneumonia/sepsis wording not found in NICE retrieval; NICE refers to being systemically very unwell or at higher risk of complications",
+   "url": "https://www.nice.org.uk/guidance/ng120/chapter/recommendations",
+   "action": "edited",
+   "newSentence": "NICE guidance on acute cough sets out when antibiotics are considered, depending on how unwell a person is and whether they are at higher risk of complications."
+  },
+  {
+   "id": "c37",
+   "where": "article.sections[1]",
+   "sentence": "Bronchitis is inflammation of the airways in the lungs, usually caused by an infection.",
+   "classification": "supported",
+   "evidence": "NHS: inflammation of the airways in the lungs, usually caused by an infection",
+   "url": "https://www.nhs.uk/conditions/bronchitis/",
+   "action": "kept"
+  },
+  {
+   "id": "c38",
+   "where": "article.sections[1]",
+   "sentence": "Acute bronchitis is usually caused by airway inflammation from viral infections, such as the cold, flu, respiratory syncytial virus (RSV) or COVID-19.",
+   "classification": "unsupported",
+   "evidence": "CDC/MedlinePlus: usually a virus, same viruses that cause colds and flu; RSV and COVID-19 not found in this retrieval",
+   "url": "https://medlineplus.gov/acutebronchitis.html",
+   "action": "edited",
+   "newSentence": "Acute bronchitis is usually caused by a virus, often the same viruses that cause colds and flu."
+  },
+  {
+   "id": "c39",
+   "where": "article.sections[1]",
+   "sentence": "Bacteria are a less common cause.",
+   "classification": "supported",
+   "evidence": "MedlinePlus: less often, bacteria cause acute bronchitis",
+   "url": "https://medlineplus.gov/ency/article/001087.htm",
+   "action": "kept"
+  },
+  {
+   "id": "c40",
+   "where": "article.sections[1]",
+   "sentence": "NICE says acute cough is usually self-limiting and most often caused by a virus.",
+   "classification": "unsupported",
+   "evidence": "Not found in NICE retrieval (NICE said a cough can last up to 3 or 4 weeks without antibiotics)",
+   "url": "https://www.nice.org.uk/guidance/ng120/chapter/recommendations",
+   "action": "removed"
+  },
+  {
+   "id": "c41",
+   "where": "article.sections[1]",
+   "sentence": "NICE describes acute bronchitis as a lower respiratory tract infection that is thought to be viral in most cases, although this is hard to estimate.",
+   "classification": "unsupported",
+   "evidence": "Not found in this retrieval",
+   "url": "https://www.nice.org.uk/guidance/ng120/chapter/recommendations",
+   "action": "removed"
+  },
+  {
+   "id": "c42",
+   "where": "article.sections[1]",
+   "sentence": "Acute bronchitis is a short-term infection of the larger airways, which are called the bronchi.",
+   "classification": "supported",
+   "evidence": "Asthma + Lung UK: bronchitis is an infection affecting the larger airways (bronchi); MedlinePlus: inflamed tissue in the bronchi",
+   "url": "https://www.asthmaandlung.org.uk/conditions/copd-chronic-obstructive-pulmonary-disease/chronic-bronchitis",
+   "action": "kept"
+  },
+  {
+   "id": "c43",
+   "where": "article.sections[1]",
+   "sentence": "Chronic bronchitis is caused by pollutants and cigarette smoke.",
+   "classification": "supported",
+   "evidence": "Asthma + Lung UK: long-term exposure to irritants; MedlinePlus lists chronic bronchitis causes as irritants/smoke",
+   "url": "https://www.asthmaandlung.org.uk/conditions/copd-chronic-obstructive-pulmonary-disease/chronic-bronchitis",
+   "action": "edited",
+   "newSentence": "Chronic bronchitis is caused by long-term exposure to irritants such as cigarette smoke and pollutants."
+  },
+  {
+   "id": "c44",
+   "where": "article.sections[1]",
+   "sentence": "Chronic bronchitis is a different, long-term problem that forms part of chronic obstructive pulmonary disease (COPD).",
+   "classification": "supported",
+   "evidence": "Asthma + Lung UK: chronic bronchitis is a form of COPD",
+   "url": "https://www.asthmaandlung.org.uk/conditions/copd-chronic-obstructive-pulmonary-disease/chronic-bronchitis",
+   "action": "kept"
+  },
+  {
+   "id": "c45",
+   "where": "article.sections[2]",
+   "sentence": "The risk of acute bronchitis is higher in very young and older people, in people with a weakened immune system, and in those with heart or lung disease.",
+   "classification": "supported",
+   "evidence": "Review (PMC7151913): higher in very young and elderly, immunocompromised, cardiovascular or pulmonary disease",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7151913/",
+   "action": "kept"
+  },
+  {
+   "id": "c46",
+   "where": "article.sections[2]",
+   "sentence": "Other factors include living in a polluted area, crowded housing and a history of asthma.",
+   "classification": "supported",
+   "evidence": "StatPearls: smoking history, polluted areas, crowded living, prior asthma",
+   "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK448067/",
+   "action": "edited",
+   "newSentence": "(merged into the risk factor sentence above)"
+  },
+  {
+   "id": "c47",
+   "where": "article.sections[2]",
+   "sentence": "One review notes that it is unclear whether smoking raises the risk of acute bronchitis.",
+   "classification": "wrong",
+   "evidence": "StatPearls and PMC review list a history of smoking as a risk factor, so the statement is contradicted",
+   "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK448067/",
+   "action": "edited",
+   "newSentence": "A history of smoking, living in a polluted area, crowded living conditions and a history of asthma are also listed as risk factors."
+  },
+  {
+   "id": "c48",
+   "where": "article.sections[2]",
+   "sentence": "Pneumonia can be a complication, and the risk is higher in people with chronic bronchitis, asthma, COPD or a weakened immune system.",
+   "classification": "supported",
+   "evidence": "StatPearls: patients with asthma, COPD, immunocompromise at higher risk of complications; watch for secondary pneumonia. Chronic bronchitis not named",
+   "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK448067/",
+   "action": "edited",
+   "newSentence": "Pneumonia can be a complication, and the risk is higher in people with asthma, COPD or a weakened immune system."
+  },
+  {
+   "id": "c49",
+   "where": "article.sections[2]",
+   "sentence": "Rarer complications include acute respiratory distress syndrome and respiratory failure.",
+   "classification": "supported",
+   "evidence": "StatPearls: ARDS and respiratory failure linked to acute bronchitis reported in the literature",
+   "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK448067/",
+   "action": "edited",
+   "newSentence": "Acute respiratory distress syndrome and respiratory failure linked to acute bronchitis have been reported in the medical literature."
+  },
+  {
+   "id": "c50",
+   "where": "article.sections[2]",
+   "sentence": "Asthma + Lung UK says the main types of chest infection are pneumonia and bronchitis.",
+   "classification": "supported",
+   "evidence": "Asthma + Lung UK: main types are pneumonia and bronchitis",
+   "url": "https://www.asthmaandlung.org.uk/conditions/chest-infections/what",
+   "action": "kept"
+  },
+  {
+   "id": "c51",
+   "where": "article.sections[2]",
+   "sentence": "People with asthma are more likely to get a chest infection, and a chest infection can trigger asthma symptoms and lead to an asthma attack.",
+   "classification": "supported",
+   "evidence": "Asthma + Lung UK: chest infections can trigger asthma symptoms and an attack",
+   "url": "https://www.asthmaandlung.org.uk/conditions/chest-infections/what",
+   "action": "kept"
+  },
+  {
+   "id": "c52",
+   "where": "article.sections[3]",
+   "sentence": "StatPearls describes acute bronchitis as a clinical diagnosis that does not need scans or laboratory tests at first unless there are warning signs of complications.",
+   "classification": "unsupported",
+   "evidence": "Not found in this retrieval; StatPearls retrieved text only covers the chest X-ray",
+   "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK448067/",
+   "action": "removed"
+  },
+  {
+   "id": "c53",
+   "where": "article.sections[3]",
+   "sentence": "A chest X-ray may be used to rule out other causes of cough, such as pneumonia, and it is usually normal in acute bronchitis.",
+   "classification": "supported",
+   "evidence": "StatPearls: chest X-ray usually non-specific, often normal, most useful for telling pneumonia apart",
+   "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK448067/",
+   "action": "edited",
+   "newSentence": "StatPearls says a chest X-ray in acute bronchitis is usually non-specific and often looks normal, and that it is most useful for telling pneumonia apart."
+  },
+  {
+   "id": "c54",
+   "where": "article.sections[3]",
+   "sentence": "The NHS advises resting at home, drinking plenty of fluids, taking paracetamol or ibuprofen and not smoking.",
+   "classification": "unsupported",
+   "evidence": "NHS: resting, plenty of fluids, paracetamol or ibuprofen for pain and fever. 'Not smoking' not found in retrieval; wording 'advises' is instructive",
+   "url": "https://www.nhs.uk/conditions/bronchitis/",
+   "action": "edited",
+   "newSentence": "The NHS suggests resting, drinking plenty of fluids and taking paracetamol or ibuprofen for pain and fever."
+  },
+  {
+   "id": "c55",
+   "where": "article.sections[3]",
+   "sentence": "The NHS also says to avoid contact with others if there is a high temperature.",
+   "classification": "unsupported",
+   "evidence": "Not found in this retrieval of the NHS page",
+   "url": "https://www.nhs.uk/conditions/bronchitis/",
+   "action": "removed"
+  },
+  {
+   "id": "c56",
+   "where": "article.sections[3]",
+   "sentence": "Honey in a warm drink can soothe the throat, but it should not be given to babies under 1.",
+   "classification": "supported",
+   "evidence": "NHS: honey in a warm drink may soothe the throat, not for babies under 1",
+   "url": "https://www.nhs.uk/conditions/bronchitis/",
+   "action": "edited",
+   "newSentence": "Honey in a warm drink may soothe the throat, but it is not for babies under 1."
+  },
+  {
+   "id": "c57",
+   "where": "article.sections[3]",
+   "sentence": "NI Direct notes that ibuprofen is not recommended for people with asthma.",
+   "classification": "supported",
+   "evidence": "NIDirect: advises against ibuprofen if you have asthma",
+   "url": "https://www.nidirect.gov.uk/conditions/bronchitis-acute",
+   "action": "edited",
+   "newSentence": "NI Direct advises against ibuprofen for people with asthma."
+  },
+  {
+   "id": "c58",
+   "where": "article.sections[3]",
+   "sentence": "Antibiotics may be offered if the infection is bacterial.",
+   "classification": "unsupported",
+   "evidence": "NHS: antibiotics may be offered if caused by a more serious infection; 'bacterial' not what was retrieved",
+   "url": "https://www.nhs.uk/conditions/bronchitis/",
+   "action": "edited",
+   "newSentence": "Antibiotics are not routine, but may be offered if the bronchitis is caused by a more serious infection."
+  },
+  {
+   "id": "c59",
+   "where": "article.sections[3]",
+   "sentence": "NICE does not routinely recommend antibiotics for acute bronchitis in people who are not very unwell or at higher risk of complications.",
+   "classification": "supported",
+   "evidence": "NICE NG120: antibiotics not routinely offered if not systemically very unwell or at higher risk",
+   "url": "https://www.nice.org.uk/guidance/ng120/chapter/recommendations",
+   "action": "kept"
+  },
+  {
+   "id": "c60",
+   "where": "article.sections[3]",
+   "sentence": "NICE says the evidence shows antibiotics made little difference to how long symptoms lasted, and that they can cause side effects, particularly diarrhoea and nausea.",
+   "classification": "supported",
+   "evidence": "NICE: shorten cough by about half a day; adverse effects mostly GI, advise about diarrhoea and nausea",
+   "url": "https://www.nice.org.uk/guidance/ng120/chapter/recommendations",
+   "action": "edited",
+   "newSentence": "NICE says antibiotics shorten a cough by only about half a day on average and can cause side effects, particularly diarrhoea and nausea."
+  },
+  {
+   "id": "c61",
+   "where": "article.sections[3]",
+   "sentence": "NICE says an antibiotic could be considered for people at higher risk of complications who are examined face to face by a clinician.",
+   "classification": "supported",
+   "evidence": "NICE: immediate or back-up prescription can be considered for higher-risk people; 'face to face' not found",
+   "url": "https://www.nice.org.uk/guidance/ng120/chapter/recommendations",
+   "action": "edited",
+   "newSentence": "For people at higher risk of complications, NICE says an immediate or back-up antibiotic prescription can be considered."
+  },
+  {
+   "id": "c62",
+   "where": "article.sections[3]",
+   "sentence": "The CDC says acute bronchitis usually gets better on its own, without antibiotics.",
+   "classification": "supported",
+   "evidence": "CDC: usually caused by a virus and gets better on its own without antibiotics",
+   "url": "https://www.cdc.gov/acute-bronchitis/about/index.html",
+   "action": "kept"
+  },
+  {
+   "id": "c63",
+   "where": "article.sections[4]",
+   "sentence": "Chronic bronchitis is long-term inflammation of the airways, defined as lasting at least three months and returning for at least two years in a row.",
+   "classification": "supported",
+   "evidence": "NHLBI: lasting at least three months and returning at least two years in a row",
+   "url": "https://www.nhlbi.nih.gov/health/bronchitis",
+   "action": "edited",
+   "newSentence": "NHLBI describes chronic bronchitis as lasting at least three months and returning for at least two years in a row."
+  },
+  {
+   "id": "c64",
+   "where": "article.sections[4]",
+   "sentence": "Asthma + Lung UK treats chronic bronchitis as part of COPD, a group of lung conditions that also includes emphysema.",
+   "classification": "supported",
+   "evidence": "Asthma + Lung UK: COPD includes chronic bronchitis and emphysema",
+   "url": "https://www.asthmaandlung.org.uk/conditions/copd-chronic-obstructive-pulmonary-disease/chronic-bronchitis",
+   "action": "kept"
+  },
+  {
+   "id": "c65",
+   "where": "article.sections[4]",
+   "sentence": "In chronic bronchitis, a whistling or squeaky sound when breathing and chest tightness are also reported.",
+   "classification": "supported",
+   "evidence": "MedlinePlus: whistling or squeaky sound when breathing and chest tightness",
+   "url": "https://medlineplus.gov/chronicbronchitis.html",
+   "action": "kept"
+  },
+  {
+   "id": "c66",
+   "where": "article.sections[4]",
+   "sentence": "Asthma + Lung UK says chronic bronchitis can be managed but cannot be cured.",
+   "classification": "supported",
+   "evidence": "Asthma + Lung UK: can be managed, cannot be cured",
+   "url": "https://www.asthmaandlung.org.uk/conditions/copd-chronic-obstructive-pulmonary-disease/chronic-bronchitis",
+   "action": "kept"
+  },
+  {
+   "id": "c67",
+   "where": "article.sections[4]",
+   "sentence": "Treatments can help with symptoms, slow the progress of the disease and improve the ability to stay active.",
+   "classification": "unsupported",
+   "evidence": "Not found; NHLBI retrieved: treatment aims to improve breathing and control symptoms. Misplaced in acute treatment text",
+   "url": "https://www.nhlbi.nih.gov/health/bronchitis",
+   "action": "edited",
+   "newSentence": "NHLBI says treatment of chronic bronchitis aims to improve breathing and control symptoms."
+  },
+  {
+   "id": "c68",
+   "where": "article.sections[4]",
+   "sentence": "Options include inhaled bronchodilators, oxygen therapy and pulmonary rehabilitation.",
+   "classification": "supported",
+   "evidence": "NHLBI/NHS COPD/MedlinePlus: bronchodilators, oxygen, pulmonary rehabilitation",
+   "url": "https://www.nhlbi.nih.gov/health/bronchitis",
+   "action": "edited",
+   "newSentence": "NHLBI names quitting smoking, medicines that clear the airways or prevent symptoms getting worse, and oxygen therapy as options."
+  },
+  {
+   "id": "c69",
+   "where": "article.sections[4]",
+   "sentence": "Stopping smoking is described as the most important step in the care of chronic bronchitis.",
+   "classification": "supported",
+   "evidence": "MedlinePlus: quitting smoking is the most important step for chronic bronchitis",
+   "url": "https://medlineplus.gov/chronicbronchitis.html",
+   "action": "kept"
+  },
+  {
+   "id": "c70",
+   "where": "article.sections[4]",
+   "sentence": "Reducing exposure to allergens and pollutants is also recommended to prevent recurrence and lower the risk of complications.",
+   "classification": "unsupported",
+   "evidence": "NHLBI: avoiding fumes, air pollution and secondhand smoke, and vaccines lower chance of bronchitis; 'allergens' and 'complications' not found",
+   "url": "https://www.nhlbi.nih.gov/health/bronchitis",
+   "action": "edited",
+   "newSentence": "NHLBI lists avoiding fumes, air pollution and secondhand smoke, and having recommended vaccines such as the yearly flu vaccine, as ways to lower the chance of getting bronchitis or of getting it again."
+  },
+  {
+   "id": "c71",
+   "where": "article.sections[5]",
+   "sentence": "The NHS says to see a GP if symptoms last longer than 3 weeks.",
+   "classification": "supported",
+   "evidence": "NHS: see a GP if symptoms last longer than 3 weeks",
+   "url": "https://www.nhs.uk/conditions/bronchitis/",
+   "action": "kept"
+  },
+  {
+   "id": "c72",
+   "where": "article.sections[5]",
+   "sentence": "NICE says people should be told to seek help if symptoms worsen rapidly or significantly, do not improve after 3 or 4 weeks, or they become very unwell.",
+   "classification": "supported",
+   "evidence": "NICE: seek help if symptoms worsen rapidly, no improvement after 3 or 4 weeks, or very unwell",
+   "url": "https://www.nice.org.uk/guidance/ng120/chapter/recommendations",
+   "action": "kept"
+  },
+  {
+   "id": "c73",
+   "where": "article.sections[5]",
+   "sentence": "The NHS advises an urgent GP appointment or a call to NHS 111 for people who are over 65, are pregnant, have a long-term condition such as diabetes or heart, lung or kidney disease, or feel too unwell to do their usual daily activities.",
+   "classification": "supported",
+   "evidence": "NHS: urgent GP or NHS 111 for over 65, pregnant, long-term condition, weakened immune system, too unwell",
+   "url": "https://www.nhs.uk/conditions/bronchitis/",
+   "action": "kept"
+  },
+  {
+   "id": "c74",
+   "where": "article.sections[5]",
+   "sentence": "NI Direct also lists coughing up blood-streaked mucus and a fever that lasts more than three days as reasons to seek help from a GP or NHS 111.",
+   "classification": "supported",
+   "evidence": "NIDirect: blood-streaked mucus, fever of 38C or above lasting over three days as reasons to see a GP; NHS 111 route is NHS's",
+   "url": "https://www.nidirect.gov.uk/conditions/bronchitis-acute",
+   "action": "edited",
+   "newSentence": "NI Direct lists blood-streaked mucus and a fever that lasts more than three days as reasons to see a GP."
+  },
+  {
+   "id": "c75",
+   "where": "article.sections[5]",
+   "sentence": "The NHS says to call 999 if someone is struggling to breathe, their lips or skin turn pale, blue or grey, they suddenly become confused, or a baby cannot be woken or feels floppy.",
+   "classification": "supported",
+   "evidence": "NHS 999 list",
+   "url": "https://www.nhs.uk/conditions/bronchitis/",
+   "action": "edited",
+   "newSentence": "The NHS says to call 999 if someone is struggling to breathe, their lips or skin turn pale, blue or grey, they suddenly become confused, or a baby is unresponsive or floppy."
+  },
+  {
+   "id": "c76",
+   "where": "article.faqs[0].a",
+   "sentence": "Bronchitis often gets better without treatment in around 3 weeks, according to the NHS.",
+   "classification": "supported",
+   "evidence": "NHS: around 3 weeks",
+   "url": "https://www.nhs.uk/conditions/bronchitis/",
+   "action": "kept"
+  },
+  {
+   "id": "c77",
+   "where": "article.faqs[0].a",
+   "sentence": "The NHS says to see a GP if symptoms last longer than 3 weeks.",
+   "classification": "supported",
+   "evidence": "NHS: see a GP if symptoms last longer than 3 weeks",
+   "url": "https://www.nhs.uk/conditions/bronchitis/",
+   "action": "kept"
+  },
+  {
+   "id": "c78",
+   "where": "article.faqs[0].a",
+   "sentence": "NICE says people should be told to seek help if symptoms worsen rapidly or significantly, do not improve after 3 or 4 weeks, or they become very unwell.",
+   "classification": "supported",
+   "evidence": "NICE: seek help if symptoms worsen rapidly, no improvement after 3 or 4 weeks, or very unwell",
+   "url": "https://www.nice.org.uk/guidance/ng120/chapter/recommendations",
+   "action": "kept"
+  },
+  {
+   "id": "c79",
+   "where": "article.faqs[1].a",
+   "sentence": "Acute bronchitis is usually caused by airway inflammation from viral infections, such as the cold, flu, respiratory syncytial virus (RSV) or COVID-19.",
+   "classification": "unsupported",
+   "evidence": "CDC/MedlinePlus: usually a virus, same viruses that cause colds and flu; RSV and COVID-19 not found in this retrieval",
+   "url": "https://medlineplus.gov/acutebronchitis.html",
+   "action": "edited",
+   "newSentence": "Acute bronchitis is usually caused by a virus, often the same viruses that cause colds and flu."
+  },
+  {
+   "id": "c80",
+   "where": "article.faqs[1].a",
+   "sentence": "Antibiotics may be offered if the infection is bacterial.",
+   "classification": "unsupported",
+   "evidence": "NHS: antibiotics may be offered if caused by a more serious infection; 'bacterial' not what was retrieved",
+   "url": "https://www.nhs.uk/conditions/bronchitis/",
+   "action": "edited",
+   "newSentence": "Antibiotics are not routine, but may be offered if the bronchitis is caused by a more serious infection."
+  },
+  {
+   "id": "c81",
+   "where": "article.faqs[1].a",
+   "sentence": "NICE does not routinely recommend antibiotics for acute bronchitis in people who are not very unwell or at higher risk of complications.",
+   "classification": "supported",
+   "evidence": "NICE NG120: antibiotics not routinely offered if not systemically very unwell or at higher risk",
+   "url": "https://www.nice.org.uk/guidance/ng120/chapter/recommendations",
+   "action": "kept"
+  },
+  {
+   "id": "c82",
+   "where": "article.faqs[1].a",
+   "sentence": "The CDC says acute bronchitis usually gets better on its own, without antibiotics.",
+   "classification": "supported",
+   "evidence": "CDC: usually caused by a virus and gets better on its own without antibiotics",
+   "url": "https://www.cdc.gov/acute-bronchitis/about/index.html",
+   "action": "kept"
+  },
+  {
+   "id": "c83",
+   "where": "article.faqs[2].a",
+   "sentence": "Acute bronchitis is a short-term infection of the larger airways, which are called the bronchi.",
+   "classification": "supported",
+   "evidence": "Asthma + Lung UK: bronchitis is an infection affecting the larger airways (bronchi); MedlinePlus: inflamed tissue in the bronchi",
+   "url": "https://www.asthmaandlung.org.uk/conditions/copd-chronic-obstructive-pulmonary-disease/chronic-bronchitis",
+   "action": "kept"
+  },
+  {
+   "id": "c84",
+   "where": "article.faqs[2].a",
+   "sentence": "Chronic bronchitis is a different, long-term problem that forms part of chronic obstructive pulmonary disease (COPD).",
+   "classification": "supported",
+   "evidence": "Asthma + Lung UK: chronic bronchitis is a form of COPD",
+   "url": "https://www.asthmaandlung.org.uk/conditions/copd-chronic-obstructive-pulmonary-disease/chronic-bronchitis",
+   "action": "kept"
+  },
+  {
+   "id": "c85",
+   "where": "article.faqs[2].a",
+   "sentence": "Chronic bronchitis is long-term inflammation of the airways, defined as lasting at least three months and returning for at least two years in a row.",
+   "classification": "supported",
+   "evidence": "NHLBI: lasting at least three months and returning at least two years in a row",
+   "url": "https://www.nhlbi.nih.gov/health/bronchitis",
+   "action": "edited",
+   "newSentence": "NHLBI describes chronic bronchitis as lasting at least three months and returning for at least two years in a row."
+  },
+  {
+   "id": "c86",
+   "where": "article.faqs[3].a",
+   "sentence": "Bronchitis is inflammation of the airways in the lungs, usually caused by an infection.",
+   "classification": "supported",
+   "evidence": "NHS: inflammation of the airways in the lungs, usually caused by an infection",
+   "url": "https://www.nhs.uk/conditions/bronchitis/",
+   "action": "kept"
+  },
+  {
+   "id": "c87",
+   "where": "article.faqs[3].a",
+   "sentence": "The NHS advises resting at home, drinking plenty of fluids, taking paracetamol or ibuprofen and not smoking.",
+   "classification": "unsupported",
+   "evidence": "NHS: resting, plenty of fluids, paracetamol or ibuprofen for pain and fever. 'Not smoking' not found in retrieval; wording 'advises' is instructive",
+   "url": "https://www.nhs.uk/conditions/bronchitis/",
+   "action": "edited",
+   "newSentence": "The NHS suggests resting, drinking plenty of fluids and taking paracetamol or ibuprofen for pain and fever."
+  },
+  {
+   "id": "c88",
+   "where": "article.faqs[3].a",
+   "sentence": "The NHS also says to avoid contact with others if there is a high temperature.",
+   "classification": "unsupported",
+   "evidence": "Not found in this retrieval of the NHS page",
+   "url": "https://www.nhs.uk/conditions/bronchitis/",
+   "action": "removed"
+  },
+  {
+   "id": "c89",
+   "where": "article.faqs[4].a",
+   "sentence": "Asthma + Lung UK says chronic bronchitis can be managed but cannot be cured.",
+   "classification": "supported",
+   "evidence": "Asthma + Lung UK: can be managed, cannot be cured",
+   "url": "https://www.asthmaandlung.org.uk/conditions/copd-chronic-obstructive-pulmonary-disease/chronic-bronchitis",
+   "action": "kept"
+  },
+  {
+   "id": "c90",
+   "where": "article.faqs[4].a",
+   "sentence": "Treatments can help with symptoms, slow the progress of the disease and improve the ability to stay active.",
+   "classification": "unsupported",
+   "evidence": "Not found; NHLBI retrieved: treatment aims to improve breathing and control symptoms. Misplaced in acute treatment text",
+   "url": "https://www.nhlbi.nih.gov/health/bronchitis",
+   "action": "edited",
+   "newSentence": "NHLBI says treatment of chronic bronchitis aims to improve breathing and control symptoms."
+  },
+  {
+   "id": "c91",
+   "where": "article.faqs[4].a",
+   "sentence": "Stopping smoking is described as the most important step in the care of chronic bronchitis.",
+   "classification": "supported",
+   "evidence": "MedlinePlus: quitting smoking is the most important step for chronic bronchitis",
+   "url": "https://medlineplus.gov/chronicbronchitis.html",
+   "action": "kept"
+  },
+  {
+   "id": "c92",
+   "where": "article.keyFacts[0].value",
+   "sentence": "Acute bronchitis is also known as a chest cold.",
+   "classification": "supported",
+   "evidence": "CDC page title: Chest Cold (Acute Bronchitis)",
+   "url": "https://www.cdc.gov/acute-bronchitis/about/index.html",
+   "action": "kept"
+  },
+  {
+   "id": "c93",
+   "where": "article.keyFacts[1].value",
+   "sentence": "Usually an infection, most often a virus.",
+   "classification": "supported",
+   "evidence": "NHS: usually infection; CDC: usually virus",
+   "url": "https://www.cdc.gov/acute-bronchitis/about/index.html",
+   "action": "kept"
+  },
+  {
+   "id": "c94",
+   "where": "article.keyFacts[2].value",
+   "sentence": "Often better in around 3 weeks without treatment.",
+   "classification": "supported",
+   "evidence": "NHS",
+   "url": "https://www.nhs.uk/conditions/bronchitis/",
+   "action": "kept"
+  },
+  {
+   "id": "c95",
+   "where": "article.keyFacts[3].value",
+   "sentence": "A cough that often brings up mucus.",
+   "classification": "supported",
+   "evidence": "NHLBI: both forms share cough with mucus; CDC/MedlinePlus: usually a virus",
+   "url": "https://www.nhlbi.nih.gov/health/bronchitis",
+   "action": "kept"
+  },
+  {
+   "id": "c96",
+   "where": "article.keyFacts[4].value",
+   "sentence": "A clinical assessment, with a chest X-ray sometimes used to rule out other causes such as pneumonia.",
+   "classification": "unsupported",
+   "evidence": "'Clinical assessment' not found; X-ray part supported by StatPearls",
+   "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK448067/",
+   "action": "edited",
+   "newSentence": "A chest X-ray is sometimes used to tell bronchitis from pneumonia."
+  },
+  {
+   "id": "c97",
+   "where": "article.keyFacts[5].value",
+   "sentence": "Long-term bronchitis is part of COPD and can be managed but not cured.",
+   "classification": "supported",
+   "evidence": "Asthma + Lung UK",
+   "url": "https://www.asthmaandlung.org.uk/conditions/copd-chronic-obstructive-pulmonary-disease/chronic-bronchitis",
+   "action": "kept"
+  },
+  {
+   "id": "c98",
+   "classification": "supported",
+   "evidence": "MedlinePlus: mucus clear or yellow-green, usually low-grade fever, chest discomfort, shortness of breath worse with activity",
+   "url": "see evidence",
+   "action": "added"
+  },
+  {
+   "id": "c99",
+   "classification": "supported",
+   "evidence": "NIDirect: cough can outlast other symptoms by several weeks; MedlinePlus: lingers 1 to 4 weeks",
+   "url": "see evidence",
+   "action": "added"
+  },
+  {
+   "id": "c100",
+   "classification": "supported",
+   "evidence": "MedlinePlus: swelling in bronchi can narrow airways",
+   "url": "see evidence",
+   "action": "added"
+  },
+  {
+   "id": "c101",
+   "classification": "supported",
+   "evidence": "MedlinePlus: viruses spread by coughing or unwashed hands",
+   "url": "see evidence",
+   "action": "added"
+  },
+  {
+   "id": "c102",
+   "classification": "supported",
+   "evidence": "MedlinePlus: tobacco smoke, air pollution, dust, fumes trigger acute bronchitis",
+   "url": "see evidence",
+   "action": "added"
+  },
+  {
+   "id": "c103",
+   "classification": "supported",
+   "evidence": "Asthma + Lung UK: antibiotics only help bacterial infections",
+   "url": "see evidence",
+   "action": "added"
+  },
+  {
+   "id": "c104",
+   "classification": "supported",
+   "evidence": "Asthma + Lung UK: chronic bronchitis makes airways produce a lot of phlegm",
+   "url": "see evidence",
+   "action": "added"
+  },
+  {
+   "id": "c105",
+   "classification": "supported",
+   "evidence": "NHS COPD treatment: short-acting bronchodilator inhalers first treatment for most",
+   "url": "see evidence",
+   "action": "added"
+  },
+  {
+   "id": "c106",
+   "classification": "supported",
+   "evidence": "MedlinePlus: pulmonary rehabilitation helps well-being in chronic breathing problems",
+   "url": "see evidence",
+   "action": "added"
+  },
+  {
+   "id": "c107",
+   "classification": "supported",
+   "evidence": "NICE: cough can last up to 3 or 4 weeks without antibiotic",
+   "url": "see evidence",
+   "action": "added"
+  },
+  {
+   "id": "c108",
+   "classification": "supported",
+   "evidence": "NHS: coughing up blood, short of breath listed for urgent advice",
+   "url": "see evidence",
+   "action": "added"
+  }
+ ],
+ "notes": "Search summaries blend pages; attribution to a URL is by the page named in the summary. Removed 'not smoking' from NHS self-care and the NHS 'avoid contact with others' (true on the NHS page but not returned). Wheezing dropped (MedlinePlus lists it mainly for asthma). The chronic bronchitis 3-month/2-year definition is kept as an attributed NHLBI definition; remove if numbers are unwanted. 'Baby is unresponsive or floppy' follows the retrieved NHS wording. Added rows have approximate URLs (the page named in the evidence)."
+}
