@@ -58,7 +58,8 @@
   "sentence": "Common causes listed by the NHS are BPPV, labyrinthitis, vestibular neuritis and Ménière's disease.",
   "basis": "excerpt",
   "urls": [
-   "https://www.nhs.uk/conditions/vertigo/"
+   "https://www.nhs.uk/conditions/vertigo/",
+   "https://www.nhs.uk/conditions/labyrinthitis/"
   ],
   "note": "NHS list."
  },
@@ -67,18 +68,18 @@
   "sentence": "In BPPV, loose otoconia tumble into one of the semicircular canals and affect how the cupula works.",
   "basis": "excerpt",
   "urls": [
-   "https://www.nidcd.nih.gov/sites/default/files/Documents/health/balance/BalanceDisorders-508.pdf"
+   "https://www.nidcd.nih.gov/health/balance-disorders"
   ],
   "note": "NIDCD handout wording."
  },
  {
   "where": "causes[3]",
-  "sentence": "The cause of Ménière's disease is still unknown according to the NIDCD.",
+  "sentence": "The cause of Ménière's disease is unknown according to MedlinePlus, and the NIDCD says theories about the cause vary.",
   "basis": "excerpt",
   "urls": [
-   "https://www.nidcd.nih.gov/health/balance-disorders"
+   "https://medlineplus.gov/ency/article/000702.htm"
   ],
-  "note": "NIDCD: cause or causes still unknown."
+  "note": "Second pass: NIDCD fact sheet says theories vary about causes; MedlinePlus says cause unknown. 'Still unknown according to NIDCD' not found."
  },
  {
   "where": "signs[0]",
@@ -91,22 +92,21 @@
  },
  {
   "where": "complications[0]",
-  "sentence": "BPPV often recurs even though the outlook with appropriate treatment is good",
+  "sentence": "BPPV can recur, and in some people it becomes a persistent or recurrent problem",
   "basis": "excerpt",
   "urls": [
    "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3196003/"
   ],
-  "note": "Review: prognosis good when treated appropriately but often recurs."
+  "note": "Second pass: PMC3196003 intro: course ranges from self-treatable to persistent or recurrent disabling; 'often recurs' not found."
  },
  {
   "where": "complications[1]",
-  "sentence": "Fluctuating hearing loss in Ménière's disease",
+  "sentence": "Hearing loss in Ménière's disease",
   "basis": "excerpt",
   "urls": [
-   "https://www.nidcd.nih.gov/health/balance-disorders",
-   "https://pmc.ncbi.nlm.nih.gov/articles/PMC5697545/"
+   "https://www.nidcd.nih.gov/health/balance-disorders"
   ],
-  "note": "NIDCD/review list fluctuating hearing loss as a symptom of Ménière's."
+  "note": "Second pass: NIDCD lists hearing loss episodes; 'fluctuating' not confirmed in retrieved NIDCD text."
  },
  {
   "where": "diagnosis",
@@ -120,12 +120,12 @@
  },
  {
   "where": "diagnosis",
-  "sentence": "For Ménière's disease, a medical review says there are no specific diagnostic tests, so diagnosis is clinical and generally needs more than one attack.",
+  "sentence": "For Ménière's disease, no single test confirms the diagnosis, which rests on the pattern of recurring attacks and hearing tests.",
   "basis": "excerpt",
   "urls": [
-   "https://pmc.ncbi.nlm.nih.gov/articles/PMC5697545/"
+   "https://pmc.ncbi.nlm.nih.gov/articles/PMC8686442/"
   ],
-  "note": "Review: diagnosis primarily clinical; multiple attacks."
+  "note": "Second pass: Cited review not retrieved. Other sources: no single test, diagnosis from pattern of attacks and audiometry."
  },
  {
   "where": "diagnosis",
@@ -166,21 +166,21 @@
  },
  {
   "where": "treatment",
-  "sentence": "Surgery is considered for Ménière's disease only when medical treatment has not worked.",
+  "sentence": "NHS 111 Wales says surgery on the inner ear is rarely offered, when symptoms are hard to control.",
   "basis": "excerpt",
   "urls": [
-   "https://pmc.ncbi.nlm.nih.gov/articles/PMC5697545/"
+   "https://111.wales.nhs.uk/encyclopaedia/m/article/menieresdisease"
   ],
-  "note": "Review: those who fail medical treatment may consider surgical therapy."
+  "note": "Second pass: Review not retrieved. NHS 111 Wales: surgery rarely offered if symptoms hard to control."
  },
  {
   "where": "prevention",
-  "sentence": "The NHS suggests lifestyle changes such as drinking plenty of fluids, avoiding caffeine, not smoking and not drinking alcohol can help manage Ménière's disease, but the sources reviewed do not describe a way to prevent BPPV.",
+  "sentence": "The NHS suggests lifestyle changes such as drinking plenty of fluids, avoiding caffeine, not smoking and not drinking alcohol can help manage Ménière's disease.",
   "basis": "excerpt",
   "urls": [
    "https://www.nhs.uk/conditions/menieres-disease/"
   ],
-  "note": "NHS Ménière's self-care; absence of prevention info noted."
+  "note": "Second pass: NHS lifestyle advice retrieved; the 'sources reviewed do not describe prevention of BPPV' clause is a non-claim about absence."
  },
  {
   "where": "seekCare",
@@ -250,18 +250,19 @@
   "sentence": "The NHS lists benign paroxysmal positional vertigo (BPPV), labyrinthitis, vestibular neuritis and Ménière's disease as common causes.",
   "basis": "excerpt",
   "urls": [
-   "https://www.nhs.uk/conditions/vertigo/"
+   "https://www.nhs.uk/conditions/vertigo/",
+   "https://www.nhs.uk/conditions/labyrinthitis/"
   ],
   "note": "NHS list."
  },
  {
   "where": "article.sections[0]",
-  "sentence": "BPPV is the most common of these, according to the NHS.",
+  "sentence": "The NHS describes BPPV as one of the most common causes of vertigo.",
   "basis": "excerpt",
   "urls": [
    "https://www.nhs.uk/conditions/vertigo/"
   ],
-  "note": "Search summary of NHS page: BPPV the most common specific type; also review says most common cause of vertigo."
+  "note": "Second pass: NHS summary: BPPV is one of the most common causes; 'the most common of these' not found."
  },
  {
   "where": "article.sections[0]",
@@ -275,11 +276,8 @@
  {
   "where": "article.sections[0]",
   "sentence": "This page looks mainly at BPPV and Ménière's disease, two inner ear conditions that the NHS and the US National Institute on Deafness and Other Communication Disorders (NIDCD) describe.",
-  "basis": "excerpt",
-  "urls": [
-   "https://www.nhs.uk/conditions/vertigo/",
-   "https://www.nidcd.nih.gov/health/balance-disorders"
-  ],
+  "basis": "textbook",
+  "urls": [],
   "note": "Both pages cover these conditions."
  },
  {
@@ -302,28 +300,10 @@
  },
  {
   "where": "article.sections[1]",
-  "sentence": "A medical review says symptoms are most obvious with changes in position and are usually worse in the morning.",
-  "basis": "excerpt",
-  "urls": [
-   "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3196003/"
-  ],
-  "note": "Review text."
- },
- {
-  "where": "article.sections[1]",
-  "sentence": "It adds that recurrent episodes lasting under a minute are usually BPPV.",
-  "basis": "excerpt",
-  "urls": [
-   "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3196003/"
-  ],
-  "note": "Review text."
- },
- {
-  "where": "article.sections[1]",
   "sentence": "An NIDCD handout explains that the condition arises when loose otoconia tumble into one of the semicircular canals and affect how the cupula works.",
   "basis": "excerpt",
   "urls": [
-   "https://www.nidcd.nih.gov/sites/default/files/Documents/health/balance/BalanceDisorders-508.pdf"
+   "https://www.nidcd.nih.gov/health/balance-disorders"
   ],
   "note": "NIDCD handout."
  },
@@ -336,30 +316,21 @@
  },
  {
   "where": "article.sections[1]",
-  "sentence": "The review says BPPV is usually resolved spontaneously or with canalith repositioning manoeuvres carried out in a clinic.",
+  "sentence": "A medical review says BPPV is frequently resolved on its own or through canalith repositioning manoeuvres carried out in a clinic.",
   "basis": "excerpt",
   "urls": [
    "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3196003/"
   ],
-  "note": "Review."
+  "note": "Second pass: PMC3196003 says 'frequently resolved' (not 'usually')."
  },
  {
   "where": "article.sections[1]",
-  "sentence": "The outlook is good with appropriate treatment, but the problem often recurs.",
+  "sentence": "StatPearls, an online medical reference, describes the overall outlook as favourable.",
   "basis": "excerpt",
   "urls": [
-   "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3196003/"
+   "https://www.ncbi.nlm.nih.gov/sites/books/NBK470308/"
   ],
-  "note": "Review."
- },
- {
-  "where": "article.sections[1]",
-  "sentence": "Recurrence, or other inner ear symptoms such as hearing loss or tinnitus, can suggest that something else in the ear is involved.",
-  "basis": "excerpt",
-  "urls": [
-   "https://pmc.ncbi.nlm.nih.gov/articles/PMC2696792/"
-  ],
-  "note": "Search summary: recurrence or other inner-ear symptoms suggest a secondary cause (blended source; attributed with caution)."
+  "note": "Second pass: StatPearls: prognosis favourable; 'often recurs' not confirmed (Epley series: 30% recurrence in one small series)."
  },
  {
   "where": "article.sections[2]",
@@ -381,48 +352,39 @@
  },
  {
   "where": "article.sections[2]",
-  "sentence": "A medical review links recurrent episodes lasting minutes to hours with Ménière's disease, particularly when roaring tinnitus and hearing loss are present.",
-  "basis": "excerpt",
-  "urls": [
-   "https://pmc.ncbi.nlm.nih.gov/articles/PMC2696792/"
-  ],
-  "note": "Review text (blended summary)."
- },
- {
-  "where": "article.sections[2]",
-  "sentence": "An NHS Lanarkshire page says attacks usually last a few hours and can go away for long periods.",
+  "sentence": "An NHS Lanarkshire page says attacks usually last a few hours.",
   "basis": "excerpt",
   "urls": [
    "https://www.nhslanarkshire.scot.nhs.uk/services/physiotherapy/vestibular-physiotherapy/menieres-disease/"
   ],
-  "note": "NHS Lanarkshire summary."
+  "note": "Second pass: Lanarkshire: attacks usually last a few hours; 'go away for long periods' not found."
  },
  {
   "where": "article.sections[2]",
-  "sentence": "It adds that the symptoms can be very troublesome.",
+  "sentence": "It adds that the symptoms can be very troublesome and worrying.",
   "basis": "excerpt",
   "urls": [
    "https://www.nhslanarkshire.scot.nhs.uk/services/physiotherapy/vestibular-physiotherapy/menieres-disease/"
   ],
-  "note": "NHS Lanarkshire summary."
+  "note": "Second pass: Lanarkshire: symptoms can be very troublesome and worrying."
  },
  {
   "where": "article.sections[2]",
-  "sentence": "The NIDCD says the cause or causes are still unknown.",
+  "sentence": "It says theories vary about what causes the condition, and MedlinePlus says the cause is unknown.",
   "basis": "excerpt",
   "urls": [
    "https://www.nidcd.nih.gov/health/balance-disorders"
   ],
-  "note": "NIDCD."
+  "note": "Second pass: NIDCD: theories vary; MedlinePlus: cause unknown."
  },
  {
   "where": "article.sections[2]",
-  "sentence": "A review describes the mechanism as a disturbance of fluid volume in the inner ear, although the trigger is unclear.",
+  "sentence": "The NIDCD links Ménière's disease with a fluid imbalance in the labyrinth, a part of the inner ear, caused by a build-up of a fluid called endolymph.",
   "basis": "excerpt",
   "urls": [
-   "https://pmc.ncbi.nlm.nih.gov/articles/PMC5697545/"
+   "https://www.nidcd.nih.gov/health/balance-disorders"
   ],
-  "note": "Review summary."
+  "note": "Second pass: Review not retrieved. NIDCD: fluid imbalance in labyrinth, build-up of endolymph."
  },
  {
   "where": "article.sections[2]",
@@ -444,12 +406,12 @@
  },
  {
   "where": "article.sections[3]",
-  "sentence": "NICE Clinical Knowledge Summaries (CKS) describes the manoeuvre as a head-position test used when positional vertigo is affected by moving the head.",
-  "basis": "excerpt",
+  "sentence": "For BPPV, diagnosis rests mainly on the history of symptoms and on typical findings during the Dix-Hallpike manoeuvre, a head-position test.",
+  "basis": "textbook",
   "urls": [
    "https://cks.nice.org.uk/topics/vertigo/diagnosis/assessment/"
   ],
-  "note": "CKS."
+  "note": "Second pass: Dix-Hallpike is a head-position test; CKS retrieved text covers the diagnostic rule."
  },
  {
   "where": "article.sections[3]",
@@ -462,30 +424,21 @@
  },
  {
   "where": "article.sections[3]",
-  "sentence": "NICE guideline NG127 recommends offering the Hallpike manoeuvre to adults with transient rotational vertigo on head movement, and offering canalith repositioning if BPPV is diagnosed.",
+  "sentence": "NICE guideline NG127 recommends offering the Hallpike manoeuvre to adults with brief rotational vertigo triggered by head movement, if a trained health professional is available, and offering canalith repositioning if BPPV is diagnosed.",
   "basis": "excerpt",
   "urls": [
-   "https://www.nice.org.uk/guidance/ng127/evidence/full-guideline-pdf-6775582573"
+   "https://www.nice.org.uk/guidance/ng127/chapter/recommendations-for-adults-aged-over-16"
   ],
-  "note": "NICE NG127 excerpt via search."
+  "note": "Second pass: NG127: offer Hallpike if trained professional available; if BPPV diagnosed offer canalith repositioning (Epley) if trained professional available."
  },
  {
   "where": "article.sections[3]",
-  "sentence": "For Ménière's disease, a review says there are no specific diagnostic tests, so the diagnosis is a clinical one that generally needs more than one attack.",
+  "sentence": "For Ménière's disease, no single test confirms the diagnosis. It rests on the pattern of recurring attacks and on hearing tests, and diagnostic criteria require more than one episode of vertigo.",
   "basis": "excerpt",
   "urls": [
-   "https://pmc.ncbi.nlm.nih.gov/articles/PMC5697545/"
+   "https://pmc.ncbi.nlm.nih.gov/articles/PMC8686442/"
   ],
-  "note": "Review."
- },
- {
-  "where": "article.sections[3]",
-  "sentence": "It says the diagnosis should come from a specialist with a focus on vestibular disorders.",
-  "basis": "excerpt",
-  "urls": [
-   "https://pmc.ncbi.nlm.nih.gov/articles/PMC5697545/"
-  ],
-  "note": "Review."
+  "note": "Second pass: Cited review not retrieved; retrieved reviews: no pathognomonic test, criteria need two or more episodes."
  },
  {
   "where": "article.sections[3]",
@@ -498,21 +451,12 @@
  },
  {
   "where": "article.sections[3]",
-  "sentence": "NG127 also asks clinicians to be alert to vestibular migraine, which is migraine-associated vertigo, in adults with episodes lasting from 5 minutes to 72 hours.",
+  "sentence": "NG127 also asks clinicians to be alert to vestibular migraine, which is migraine-associated vertigo, in adults with episodes of dizziness lasting from 5 minutes to 72 hours and a history of recurrent headache.",
   "basis": "excerpt",
   "urls": [
-   "https://www.nice.org.uk/guidance/ng127/evidence/full-guideline-pdf-6775582573"
+   "https://www.nice.org.uk/guidance/ng127/chapter/recommendations-for-adults-aged-over-16"
   ],
-  "note": "NICE NG127 excerpt via search."
- },
- {
-  "where": "article.sections[3]",
-  "sentence": "It lists sudden-onset dizziness with a focal neurological deficit as a pattern needing particular attention.",
-  "basis": "excerpt",
-  "urls": [
-   "https://www.nice.org.uk/guidance/ng127/evidence/full-guideline-pdf-6775582573"
-  ],
-  "note": "NICE NG127 excerpt via search (focal neurological deficit)."
+  "note": "Second pass: NG127: alert to vestibular migraine in adults with dizziness episodes lasting 5 minutes to 72 hours and history of recurrent headache."
  },
  {
   "where": "article.sections[4]",
@@ -534,30 +478,30 @@
  },
  {
   "where": "article.sections[4]",
-  "sentence": "For BPPV, NHS audiology leaflets describe the Epley manoeuvre, a set of four head movements, as something a doctor may try.",
+  "sentence": "For BPPV, NHS patient leaflets describe the Epley manoeuvre, a series of four head movements, as a treatment.",
   "basis": "excerpt",
   "urls": [
-   "https://www.uhs.nhs.uk/Media/UHS-website-2019/Patientinformation/Audiology/Home-Epley-manoeuvre-to-treat-BPPV-left-ear-2782-PIL.pdf"
+   "https://www.ulh.nhs.uk/wp-content/uploads/2025/05/Epley-Manouvre-Right-Ear.pdf"
   ],
-  "note": "UHS leaflet via search summary."
+  "note": "Second pass: NHS Epley leaflet: series of four head movements."
  },
  {
   "where": "article.sections[4]",
-  "sentence": "NICE guideline NG127 recommends offering canalith repositioning when BPPV is diagnosed.",
+  "sentence": "NICE guideline NG127 recommends offering canalith repositioning when BPPV is diagnosed, if a trained health professional is available.",
   "basis": "excerpt",
   "urls": [
-   "https://www.nice.org.uk/guidance/ng127/evidence/full-guideline-pdf-6775582573"
+   "https://www.nice.org.uk/guidance/ng127/chapter/recommendations-for-adults-aged-over-16"
   ],
-  "note": "NICE NG127 excerpt via search."
+  "note": "Second pass: NG127 offer canalith repositioning if trained professional available."
  },
  {
   "where": "article.sections[4]",
-  "sentence": "For Ménière's disease, the NHS says care aims to ease symptoms and that tinnitus may also need treatment.",
+  "sentence": "For Ménière's disease, the NHS says treatment mainly eases symptoms, with medicines for dizziness and nausea, and that tinnitus may also need treatment.",
   "basis": "excerpt",
   "urls": [
    "https://www.nhs.uk/conditions/menieres-disease/"
   ],
-  "note": "NHS."
+  "note": "Second pass: NHS: medicines that ease dizziness and nausea; tinnitus may need own treatment."
  },
  {
   "where": "article.sections[4]",
@@ -570,21 +514,21 @@
  },
  {
   "where": "article.sections[4]",
-  "sentence": "It adds that anti-vertigo or anti-nausea medicines may help symptoms, though they can cause drowsiness.",
+  "sentence": "It adds that anti-vertigo or anti-nausea medicines may relieve symptoms, though they can cause drowsiness.",
   "basis": "excerpt",
   "urls": [
    "https://www.nidcd.nih.gov/health/balance-disorders"
   ],
-  "note": "NIDCD."
+  "note": "Second pass: NIDCD: anti-vertigo or anti-nausea medicines may relieve symptoms but can make you drowsy."
  },
  {
   "where": "article.sections[4]",
-  "sentence": "A review says medical treatment comes before more invasive surgery, which is considered for those who do not respond to medication.",
+  "sentence": "NHS 111 Wales says surgery on the inner ear is rarely offered, when symptoms are hard to control.",
   "basis": "excerpt",
   "urls": [
-   "https://pmc.ncbi.nlm.nih.gov/articles/PMC5697545/"
+   "https://111.wales.nhs.uk/encyclopaedia/m/article/menieresdisease"
   ],
-  "note": "Review."
+  "note": "Second pass: Review not retrieved; NHS 111 Wales: surgery rarely offered."
  },
  {
   "where": "article.sections[5]",
@@ -678,30 +622,30 @@
  },
  {
   "where": "article.faqs[1]",
-  "sentence": "A medical review says BPPV is usually resolved spontaneously or with canalith repositioning manoeuvres done in a clinic.",
+  "sentence": "A medical review says BPPV is frequently resolved on its own or through canalith repositioning manoeuvres done in a clinic.",
   "basis": "excerpt",
   "urls": [
    "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3196003/"
   ],
-  "note": "Review."
+  "note": "Second pass: PMC3196003 says 'frequently resolved'."
  },
  {
   "where": "article.faqs[1]",
-  "sentence": "The same review says the outlook is good with appropriate treatment, but that BPPV often recurs.",
+  "sentence": "StatPearls describes the overall outlook as favourable, and the review notes that the problem can persist or recur in some people.",
   "basis": "excerpt",
   "urls": [
-   "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3196003/"
+   "https://www.ncbi.nlm.nih.gov/sites/books/NBK470308/"
   ],
-  "note": "Review."
+  "note": "Second pass: StatPearls: favourable prognosis; review: course may be persistent or recurrent."
  },
  {
   "where": "article.faqs[1]",
-  "sentence": "A GP can advise on whether the pattern fits BPPV, and a routine appointment is the usual route if vertigo keeps returning.",
-  "basis": "excerpt",
+  "sentence": "The NHS advises a routine GP appointment if vertigo will not go away or keeps coming back.",
+  "basis": "textbook",
   "urls": [
    "https://www.nhs.uk/conditions/vertigo/"
   ],
-  "note": "NHS: see GP if vertigo keeps coming back."
+  "note": "Second pass: GP signposting; NHS: see a GP if vertigo keeps coming back."
  },
  {
   "where": "article.faqs[2]",
@@ -714,12 +658,12 @@
  },
  {
   "where": "article.faqs[2]",
-  "sentence": "The NIDCD says the cause is still unknown.",
+  "sentence": "MedlinePlus says the cause is unknown, and the NIDCD says theories about the cause vary.",
   "basis": "excerpt",
   "urls": [
-   "https://www.nidcd.nih.gov/health/balance-disorders"
+   "https://medlineplus.gov/ency/article/000702.htm"
   ],
-  "note": "NIDCD."
+  "note": "Second pass: NIDCD: theories vary; MedlinePlus: unknown."
  },
  {
   "where": "article.faqs[2]",
@@ -732,12 +676,12 @@
  },
  {
   "where": "article.faqs[2]",
-  "sentence": "A review says surgery is considered only when medical treatment has not worked.",
+  "sentence": "NHS 111 Wales says surgery is rarely offered.",
   "basis": "excerpt",
   "urls": [
-   "https://pmc.ncbi.nlm.nih.gov/articles/PMC5697545/"
+   "https://111.wales.nhs.uk/encyclopaedia/m/article/menieresdisease"
   ],
-  "note": "Review."
+  "note": "Second pass: Review not retrieved; NHS 111 Wales: surgery rarely offered."
  },
  {
   "where": "article.faqs[3]",
@@ -759,13 +703,12 @@
  },
  {
   "where": "article.faqs[3]",
-  "sentence": "A review says recurrent episodes under a minute are usually BPPV, while episodes lasting minutes to hours with roaring tinnitus and hearing loss point towards Ménière's disease.",
+  "sentence": "The NHS also lists loss of balance and hearing loss among the symptoms of Ménière's disease.",
   "basis": "excerpt",
   "urls": [
-   "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3196003/",
-   "https://pmc.ncbi.nlm.nih.gov/articles/PMC2696792/"
+   "https://www.nidcd.nih.gov/health/balance-disorders"
   ],
-  "note": "Review summaries (blended)."
+  "note": "Second pass: Review claim not found."
  },
  {
   "where": "article.faqs[4]",
@@ -788,11 +731,8 @@
  {
   "where": "article.keyFacts[0]",
   "sentence": "Also called: Vertigo, BPPV, Ménière's disease, spinning sensation",
-  "basis": "excerpt",
-  "urls": [
-   "https://www.nhs.uk/conditions/vertigo/",
-   "https://www.nidcd.nih.gov/health/balance-disorders"
-  ],
+  "basis": "textbook",
+  "urls": [],
   "note": "As cited in sections above."
  },
  {
@@ -836,8 +776,54 @@
   "sentence": "Usually diagnosed by: History and examination, including head-position tests for BPPV",
   "basis": "excerpt",
   "urls": [
-   "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3196003/"
+   "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3196003/",
+   "https://cks.nice.org.uk/topics/vertigo/diagnosis/assessment/"
   ],
   "note": "As cited in sections above."
+ },
+ {
+  "where": "article.sections[1]",
+  "sentence": "The NIDCD gives examples such as bending down, tilting the head to look up or over a shoulder, or rolling over in bed.",
+  "basis": "excerpt",
+  "urls": [
+   "https://www.nidcd.nih.gov/health/balance-disorders"
+  ],
+  "note": "NIDCD examples."
+ },
+ {
+  "where": "article.sections[1]",
+  "sentence": "It says BPPV can follow a head injury or develop simply with age.",
+  "basis": "excerpt",
+  "urls": [
+   "https://www.nidcd.nih.gov/health/balance-disorders"
+  ],
+  "note": "NIDCD: can result from head injury or getting older."
+ },
+ {
+  "where": "article.sections[1]",
+  "sentence": "The review adds that the course can range from a problem that is treated simply to one that persists or recurs and causes disability.",
+  "basis": "excerpt",
+  "urls": [
+   "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3196003/"
+  ],
+  "note": "PMC3196003 introduction."
+ },
+ {
+  "where": "article.sections[1]",
+  "sentence": "NICE guideline NG127 notes that BPPV is common after a head injury or labyrinthitis.",
+  "basis": "excerpt",
+  "urls": [
+   "https://www.nice.org.uk/guidance/ng127/chapter/recommendations-for-adults-aged-over-16"
+  ],
+  "note": "NG127: be aware BPPV is common after head injury or labyrinthitis."
+ },
+ {
+  "where": "article.sections[3]",
+  "sentence": "For sudden-onset acute vestibular syndrome, NG127 advises immediate referral unless BPPV or postural hypotension explains the problem.",
+  "basis": "excerpt",
+  "urls": [
+   "https://www.nice.org.uk/guidance/ng127/chapter/recommendations-for-adults-aged-over-16"
+  ],
+  "note": "NG127 acute vestibular syndrome: refer immediately unless BPPV or postural hypotension accounts for presentation."
  }
 ]
