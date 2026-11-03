@@ -1,0 +1,911 @@
+{
+ "id": "cellulitis",
+ "searchesUsed": 12,
+ "counts": {
+  "supported": 80,
+  "textbook": 0,
+  "unsupported": 32,
+  "wrong": 0,
+  "unsafe": 0,
+  "unchecked": 0
+ },
+ "claims": [
+  {
+   "id": "c01",
+   "classification": "supported",
+   "evidence": "Returned NHS/NHS Inform/111 Wales/NICE/StatPearls summary text carries this (NHS: infection caused by bacteria getting into the deeper layers of th)",
+   "url": "https://www.nhs.uk/conditions/cellulitis/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c02",
+   "classification": "supported",
+   "evidence": "Returned NHS/NHS Inform/111 Wales/NICE/StatPearls summary text carries this (NHS summary: painful, hot, swollen; red but less obvious on brown or b)",
+   "url": "https://www.nhs.uk/conditions/cellulitis/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c03",
+   "classification": "supported",
+   "evidence": "Returned NHS/NHS Inform/111 Wales/NICE/StatPearls summary text carries this (NHS summary.)",
+   "url": "https://www.nhs.uk/conditions/cellulitis/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c04",
+   "classification": "supported",
+   "evidence": "Returned: bacteria reach deeper skin through a break such as insect bite, cut or cracked dry skin ('scratch' not seen)",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/skin/rashes-irritation-and-swelling/cellulitis",
+   "action": "edited",
+   "newSentence": "Bacteria get into the deeper layers of the skin through a break in the skin, such as an insect bite or cut."
+  },
+  {
+   "id": "c05",
+   "classification": "supported",
+   "evidence": "Returned NHS/NHS Inform/111 Wales/NICE/StatPearls summary text carries this (NHS quoted text returned in the sepsis query.)",
+   "url": "https://www.nhs.uk/conditions/cellulitis/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c06",
+   "classification": "unsupported",
+   "evidence": "Sources say it is treated with antibiotics and can be serious if not treated quickly; 'early treatment can stop it becoming more serious' not stated",
+   "url": "https://111.wales.nhs.uk/cellulitis/",
+   "action": "edited",
+   "newSentence": "Cellulitis is treated with antibiotics."
+  },
+  {
+   "id": "c07",
+   "classification": "unsupported",
+   "evidence": "'Normally live on the skin surface' not in retrieved text; sources say bacteria reach deeper skin through a break",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/skin/rashes-irritation-and-swelling/cellulitis",
+   "action": "edited",
+   "newSentence": "Cellulitis is usually caused by bacteria that reach the deeper layers of the skin through a break, such as an insect bite, a cut or cracked, dry skin."
+  },
+  {
+   "id": "c08",
+   "classification": "unsupported",
+   "evidence": "NICE: main organisms Streptococcus pyogenes and Staph aureus; 'in adults' not stated",
+   "url": "https://www.nice.org.uk/guidance/ng141/chapter/Summary-of-the-evidence",
+   "action": "edited",
+   "newSentence": "Streptococci and Staphylococcus aureus are the bacteria most often involved."
+  },
+  {
+   "id": "c09",
+   "classification": "unsupported",
+   "evidence": "'Small cracks' wording unnamed; BAD says fixing skin breaks such as athlete's foot or eczema; NHS leaflet: eczema raises risk of bacteria entering",
+   "url": "https://www.bad.org.uk/pils/cellulitis-and-erysipelas",
+   "action": "edited",
+   "newSentence": "Skin conditions such as eczema or athlete's foot can break the skin and make it easier for bacteria to enter."
+  },
+  {
+   "id": "c10",
+   "classification": "supported",
+   "evidence": "Returned NHS/NHS Inform/111 Wales/NICE/StatPearls summary text carries this (NHS risk factor list.)",
+   "url": "https://www.nhs.uk/conditions/cellulitis/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c11",
+   "classification": "supported",
+   "evidence": "Returned NHS/NHS Inform/111 Wales/NICE/StatPearls summary text carries this (NHS risk factor list.)",
+   "url": "https://www.nhs.uk/conditions/cellulitis/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c12",
+   "classification": "supported",
+   "evidence": "NHS lymphoedema page: long-term condition causing swelling in the body's tissues; cellulitis a common concern",
+   "url": "https://www.nhs.uk/conditions/lymphoedema/",
+   "action": "edited",
+   "newSentence": "Lymphoedema, a long-term condition that causes swelling of the body's tissues."
+  },
+  {
+   "id": "c13",
+   "classification": "supported",
+   "evidence": "Returned NHS/NHS Inform/111 Wales/NICE/StatPearls summary text carries this (NHS risk factor list.)",
+   "url": "https://www.nhs.uk/conditions/cellulitis/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c14",
+   "classification": "supported",
+   "evidence": "Returned NHS/NHS Inform/111 Wales/NICE/StatPearls summary text carries this (NHS risk factor list.)",
+   "url": "https://www.nhs.uk/conditions/cellulitis/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c15",
+   "classification": "supported",
+   "evidence": "Returned NHS/NHS Inform/111 Wales/NICE/StatPearls summary text carries this (NHS risk factor list.)",
+   "url": "https://www.nhs.uk/conditions/cellulitis/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c16",
+   "classification": "supported",
+   "evidence": "Returned NHS/NHS Inform/111 Wales/NICE/StatPearls summary text carries this (NHS summary.)",
+   "url": "https://www.nhs.uk/conditions/cellulitis/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c17",
+   "classification": "supported",
+   "evidence": "Returned NHS/NHS Inform/111 Wales/NICE/StatPearls summary text carries this (NHS summary.)",
+   "url": "https://www.nhs.uk/conditions/cellulitis/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c18",
+   "classification": "supported",
+   "evidence": "Returned NHS/NHS Inform/111 Wales/NICE/StatPearls summary text carries this (NHS summary.)",
+   "url": "https://www.nhs.uk/conditions/cellulitis/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c19",
+   "classification": "supported",
+   "evidence": "Returned NHS/NHS Inform/111 Wales/NICE/StatPearls summary text carries this (NHS text.)",
+   "url": "https://www.nhs.uk/conditions/cellulitis/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c20",
+   "classification": "supported",
+   "evidence": "111 Wales/NHS Inform text: blood poisoning (septicaemia or sepsis) if bacteria spread to the bloodstream",
+   "url": "https://111.wales.nhs.uk/cellulitis/",
+   "action": "edited",
+   "newSentence": "Sepsis (blood poisoning), when bacteria spread from the cellulitis to the bloodstream."
+  },
+  {
+   "id": "c21",
+   "classification": "supported",
+   "evidence": "Returned text: in severe cellulitis collections of pus which may require operations to drain",
+   "url": "https://111.wales.nhs.uk/cellulitis/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c22",
+   "classification": "supported",
+   "evidence": "Returned: cellulitis can damage the lymphatic system causing permanent swelling in arm or leg",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/skin/rashes-irritation-and-swelling/cellulitis",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c23",
+   "classification": "unsupported",
+   "evidence": "Text: severe and rapidly spreading infection of muscle and connective tissue; 'rare' not stated",
+   "url": "https://111.wales.nhs.uk/cellulitis/",
+   "action": "edited",
+   "newSentence": "Necrotising fasciitis, a severe and rapidly spreading infection of the muscle and connective tissue."
+  },
+  {
+   "id": "c24",
+   "classification": "unsupported",
+   "evidence": "'Asks about possible causes' not retrieved; BAD/StatPearls: diagnosis mainly clinical",
+   "url": "https://www.bad.org.uk/pils/cellulitis-and-erysipelas",
+   "action": "edited",
+   "newSentence": "Cellulitis is mainly diagnosed clinically, by a clinician examining the affected area and looking for spreading red inflammation of the deeper skin."
+  },
+  {
+   "id": "c25",
+   "classification": "unsupported",
+   "evidence": "NICE restricts swabs to broken skin with specific exposures and says most swabs negative; BAD: swab or blood tests may be taken, bacteria rarely identified",
+   "url": "https://www.bad.org.uk/pils/cellulitis-and-erysipelas",
+   "action": "edited",
+   "newSentence": "A skin swab or blood tests may be taken, although identifying the bacteria is rarely possible."
+  },
+  {
+   "id": "c26",
+   "classification": "supported",
+   "evidence": "UK hospital leaflet (Milton Keynes): similar to DVT so doctor may ask further tests",
+   "url": "https://www.mkuh.nhs.uk/patient-information-leaflet/management-and-treatment-of-lower-leg-cellulitis",
+   "action": "edited",
+   "newSentence": "Because the symptoms are similar to those of a blood clot, a doctor may ask for further tests to rule out a deep vein thrombosis."
+  },
+  {
+   "id": "c27",
+   "classification": "supported",
+   "evidence": "StatPearls: diagnosed clinically on spreading erythema of deep dermis/subcutis",
+   "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK549770/",
+   "action": "edited",
+   "newSentence": "(merged into first diagnosis sentence)"
+  },
+  {
+   "id": "c28",
+   "classification": "supported",
+   "evidence": "Returned NHS/NHS Inform/111 Wales/NICE/StatPearls summary text carries this (NHS summary.)",
+   "url": "https://www.nhs.uk/conditions/cellulitis/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c29",
+   "classification": "supported",
+   "evidence": "Returned NHS/NHS Inform/111 Wales/NICE/StatPearls summary text carries this (NG141 recommendation text returned.)",
+   "url": "https://www.nice.org.uk/guidance/ng141/chapter/Recommendations",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c30",
+   "classification": "supported",
+   "evidence": "Returned: severe or unwell treated with drip (IV) antibiotics in hospital",
+   "url": "https://111.wales.nhs.uk/cellulitis/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c31",
+   "classification": "unsupported",
+   "evidence": "NHS Inform: paracetamol or ibuprofen for pain, raise the area; 'drinking plenty of fluids' not retrieved",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/skin/rashes-irritation-and-swelling/cellulitis",
+   "action": "edited",
+   "newSentence": "NHS Inform describes paracetamol or ibuprofen for pain, and raising the affected area when sitting or lying down."
+  },
+  {
+   "id": "c32",
+   "classification": "unsupported",
+   "evidence": "BAD: fix skin breaks such as athlete's foot or eczema; NHS Inform: healthy weight; psoriasis not retrieved",
+   "url": "https://www.bad.org.uk/pils/cellulitis-and-erysipelas",
+   "action": "edited",
+   "newSentence": "People at higher risk can help prevent cellulitis by treating skin problems such as eczema and athlete's foot, and by keeping weight at a healthy level."
+  },
+  {
+   "id": "c33",
+   "classification": "supported",
+   "evidence": "NHS Inform: healthy weight lowers chance of cellulitis or slow recovery",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/skin/rashes-irritation-and-swelling/cellulitis",
+   "action": "edited",
+   "newSentence": "(merged into previous sentence)"
+  },
+  {
+   "id": "c34",
+   "classification": "supported",
+   "evidence": "NICE: prophylaxis not routinely offered; NHS Inform: people who keep getting it may be prescribed long-term antibiotics",
+   "url": "https://www.nice.org.uk/guidance/ng141/chapter/Recommendations",
+   "action": "edited",
+   "newSentence": "NICE advises against routine antibiotics to prevent cellulitis coming back, although people who keep getting it may be prescribed long-term antibiotics."
+  },
+  {
+   "id": "c35",
+   "classification": "supported",
+   "evidence": "Returned NHS/NHS Inform/111 Wales/NICE/StatPearls summary text carries this (NHS summary of 999 signs.)",
+   "url": "https://www.nhs.uk/conditions/cellulitis/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c36",
+   "classification": "unsupported",
+   "evidence": "Retrieved summaries conflict on the eye route; 'around the eye is urgent' not confirmed",
+   "url": "https://111.wales.nhs.uk/cellulitis/",
+   "action": "edited",
+   "newSentence": "Cellulitis in the eye is very serious, so urgent assessment through NHS 111 or a same-day GP appointment is the usual route, with 999 or A&E for the emergency signs above. (route is textbook signposting)"
+  },
+  {
+   "id": "c37",
+   "classification": "supported",
+   "evidence": "Returned NHS/NHS Inform/111 Wales/NICE/StatPearls summary text carries this (NHS summary.)",
+   "url": "https://www.nhs.uk/conditions/cellulitis/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c38",
+   "classification": "supported",
+   "evidence": "NICE: seek help if no improvement within 2 to 3 days (NHS summary said 48 hours); attributed to NICE",
+   "url": "https://www.nice.org.uk/guidance/ng141/chapter/Recommendations",
+   "action": "edited",
+   "newSentence": "NICE advises seeking medical help if symptoms worsen rapidly or significantly at any time, or do not start to improve within 2 to 3 days."
+  },
+  {
+   "id": "c39",
+   "classification": "supported",
+   "evidence": "Returned NHS/NHS Inform/111 Wales/NICE/StatPearls summary text carries this (NHS summary.)",
+   "url": "https://www.nhs.uk/conditions/cellulitis/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c40",
+   "classification": "supported",
+   "evidence": "Returned NHS/NHS Inform/111 Wales/NICE/StatPearls summary text carries this (NHS summary.)",
+   "url": "https://www.nhs.uk/conditions/cellulitis/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c41",
+   "classification": "supported",
+   "evidence": "Returned NHS/NHS Inform/111 Wales/NICE/StatPearls summary text carries this (NHS summary.)",
+   "url": "https://www.nhs.uk/conditions/cellulitis/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c42",
+   "classification": "supported",
+   "evidence": "Returned: unwell with flu-like symptoms, swollen painful glands, may blister",
+   "url": "https://111.wales.nhs.uk/cellulitis/",
+   "action": "edited",
+   "newSentence": "Some people also feel unwell with flu-like symptoms, and may have swollen, painful glands. The skin may blister."
+  },
+  {
+   "id": "c43",
+   "classification": "unsupported",
+   "evidence": "Not found in any retrieved text",
+   "url": null,
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c44",
+   "classification": "supported",
+   "evidence": "Returned: symptoms may get worse in the first 48 hours of treatment, then improve",
+   "url": "https://111.wales.nhs.uk/cellulitis/",
+   "action": "edited",
+   "newSentence": "Symptoms may get worse in the first 48 hours of treatment before they start to improve."
+  },
+  {
+   "id": "c45",
+   "classification": "unsupported",
+   "evidence": "Not found in retrieved text",
+   "url": null,
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c46",
+   "classification": "unsupported",
+   "evidence": "NHS Inform: colour changes can persist, more common if same area affected more than once; 'usually returns to normal' not stated",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/skin/rashes-irritation-and-swelling/cellulitis",
+   "action": "edited",
+   "newSentence": "Changes in skin colour can persist after cellulitis, and are more common if it has affected the same area more than once."
+  },
+  {
+   "id": "c47",
+   "classification": "unsupported",
+   "evidence": "Eye route not confirmed; only 'in the eye is very serious' retrieved",
+   "url": "https://www.nhs.uk/conditions/cellulitis/",
+   "action": "edited",
+   "newSentence": "Cellulitis in the eye is very serious. The route to care for cellulitis near the eye is described in the last section of this article."
+  },
+  {
+   "id": "c48",
+   "classification": "supported",
+   "evidence": "Returned NHS/NHS Inform/111 Wales/NICE/StatPearls summary text carries this (NHS summary.)",
+   "url": "https://www.nhs.uk/conditions/cellulitis/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c49",
+   "classification": "unsupported",
+   "evidence": "Not in retrieved text",
+   "url": null,
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c50",
+   "classification": "supported",
+   "evidence": "Returned: break such as insect bite, cut, cracked dry skin",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/skin/rashes-irritation-and-swelling/cellulitis",
+   "action": "edited",
+   "newSentence": "A break in the skin, such as an insect bite, a cut or cracked, dry skin, lets the bacteria into the deeper tissues."
+  },
+  {
+   "id": "c51",
+   "classification": "unsupported",
+   "evidence": "NICE names the organisms; 'in adults' not stated",
+   "url": "https://www.nice.org.uk/guidance/ng141/chapter/Summary-of-the-evidence",
+   "action": "edited",
+   "newSentence": "The bacteria most often involved are streptococci and Staphylococcus aureus."
+  },
+  {
+   "id": "c52",
+   "classification": "supported",
+   "evidence": "Returned NHS risk factor list; chemotherapy/diabetes examples; NHS Inform adds overweight",
+   "url": "https://www.nhs.uk/conditions/cellulitis/",
+   "action": "edited",
+   "newSentence": "(split; chemotherapy and diabetes sentence, plus NHS Inform overweight sentence)"
+  },
+  {
+   "id": "c53",
+   "classification": "unsupported",
+   "evidence": "'Small cracks' not retrieved; BAD/NHS leaflets support skin breaks and athlete's foot treatment",
+   "url": "https://www.bad.org.uk/pils/cellulitis-and-erysipelas",
+   "action": "edited",
+   "newSentence": "Skin conditions such as eczema, or a fungal infection of the feet called athlete's foot, can break the skin and make it easier for bacteria to enter."
+  },
+  {
+   "id": "c54",
+   "classification": "unsupported",
+   "evidence": "PMC10797905 not returned in my searches",
+   "url": null,
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c55",
+   "classification": "unsupported",
+   "evidence": "PMC paper not returned; BAD lists lymphoedema as both risk factor and complication (used instead)",
+   "url": "https://www.bad.org.uk/pils/cellulitis-and-erysipelas",
+   "action": "edited",
+   "newSentence": "The British Association of Dermatologists lists lymphoedema both as a risk factor and as a complication. Once someone has had cellulitis, it is more likely to return in the same part of the body."
+  },
+  {
+   "id": "c56",
+   "classification": "unsupported",
+   "evidence": "'Asks about possible causes' not retrieved",
+   "url": "https://www.bad.org.uk/pils/cellulitis-and-erysipelas",
+   "action": "edited",
+   "newSentence": "Cellulitis is mainly diagnosed clinically, by a clinician looking at the affected area."
+  },
+  {
+   "id": "c57",
+   "classification": "unsupported",
+   "evidence": "NICE restricts swabs; BAD: swab or blood tests, bacteria rarely identified",
+   "url": "https://www.bad.org.uk/pils/cellulitis-and-erysipelas",
+   "action": "edited",
+   "newSentence": "A skin swab or blood tests may be taken, although identifying the bacteria is rarely possible."
+  },
+  {
+   "id": "c58",
+   "classification": "supported",
+   "evidence": "Returned NHS/NHS Inform/111 Wales/NICE/StatPearls summary text carries this (NG141 evidence summary: swabs often negative when the skin is intact.)",
+   "url": "https://www.nice.org.uk/guidance/ng141/chapter/Summary-of-the-evidence",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c59",
+   "classification": "supported",
+   "evidence": "Returned NHS/NHS Inform/111 Wales/NICE/StatPearls summary text carries this (StatPearls: diagnosed clinically.)",
+   "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK549770/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c60",
+   "classification": "supported",
+   "evidence": "UK hospital leaflet (Milton Keynes)",
+   "url": "https://www.mkuh.nhs.uk/patient-information-leaflet/management-and-treatment-of-lower-leg-cellulitis",
+   "action": "edited",
+   "newSentence": "A UK hospital leaflet says that because the symptoms are similar to those of a blood clot, a doctor may ask for further tests to rule out a deep vein thrombosis."
+  },
+  {
+   "id": "c61",
+   "classification": "supported",
+   "evidence": "Review (PubMed 34902109) lists venous stasis dermatitis, contact dermatitis as mimics",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/34902109/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c62",
+   "classification": "supported",
+   "evidence": "BAD: erysipelas superficial/upper layers, cellulitis deeper; StatPearls agrees",
+   "url": "https://www.bad.org.uk/pils/cellulitis-and-erysipelas",
+   "action": "edited",
+   "newSentence": "Erysipelas is a related infection that affects the upper layers of the skin, while cellulitis reaches deeper tissue."
+  },
+  {
+   "id": "c63",
+   "classification": "supported",
+   "evidence": "BAD: the two can overlap, definite diagnosis not always possible; StatPearls: cellulitis ill-defined borders and slower, erysipelas better-defined and faster",
+   "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK549770/",
+   "action": "edited",
+   "newSentence": "The two can overlap, so a definite diagnosis is not always possible. Cellulitis tends to have ill-defined borders and develop more slowly, while erysipelas has better-defined borders and develops faster."
+  },
+  {
+   "id": "c64",
+   "classification": "supported",
+   "evidence": "Returned: mild cases tablets typically about a week",
+   "url": "https://111.wales.nhs.uk/cellulitis/",
+   "action": "edited",
+   "newSentence": "Mild cellulitis affecting a small area of skin is usually treated with antibiotic tablets, usually for about a week."
+  },
+  {
+   "id": "c65",
+   "classification": "supported",
+   "evidence": "Returned NHS/NHS Inform/111 Wales/NICE/StatPearls summary text carries this (NG141 recommendation.)",
+   "url": "https://www.nice.org.uk/guidance/ng141/chapter/Recommendations",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c66",
+   "classification": "supported",
+   "evidence": "Returned NHS/NHS Inform/111 Wales/NICE/StatPearls summary text carries this (NG141 recommendation.)",
+   "url": "https://www.nice.org.uk/guidance/ng141/chapter/Recommendations",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c67",
+   "classification": "supported",
+   "evidence": "Returned NHS/NHS Inform/111 Wales/NICE/StatPearls summary text carries this (NG141 recommendation text returned.)",
+   "url": "https://www.nice.org.uk/guidance/ng141/chapter/Recommendations",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c68",
+   "classification": "supported",
+   "evidence": "Returned: severe treated with IV drip antibiotics",
+   "url": "https://111.wales.nhs.uk/cellulitis/",
+   "action": "edited",
+   "newSentence": "If cellulitis is severe, the person might need hospital treatment with antibiotics given into a vein."
+  },
+  {
+   "id": "c69",
+   "classification": "unsupported",
+   "evidence": "NHS Inform: paracetamol/ibuprofen, raise area; fluids not retrieved",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/skin/rashes-irritation-and-swelling/cellulitis",
+   "action": "edited",
+   "newSentence": "NHS Inform describes paracetamol or ibuprofen for pain, and raising the affected area on a chair or pillow when sitting or lying down."
+  },
+  {
+   "id": "c70",
+   "classification": "supported",
+   "evidence": "NHS Inform text: stopping treatment early can cause cellulitis to come back",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/skin/rashes-irritation-and-swelling/cellulitis",
+   "action": "edited",
+   "newSentence": "NHS Inform also says that stopping antibiotics early can cause cellulitis to come back."
+  },
+  {
+   "id": "c71",
+   "classification": "supported",
+   "evidence": "NICE: 2 to 3 days (retrieved NHS summary said 48 hours); attributed to NICE",
+   "url": "https://www.nice.org.uk/guidance/ng141/chapter/Recommendations",
+   "action": "edited",
+   "newSentence": "NICE advises seeking medical help if symptoms worsen rapidly or significantly at any time, or do not start to improve within 2 to 3 days."
+  },
+  {
+   "id": "c72",
+   "classification": "unsupported",
+   "evidence": "Not found; replaced by NHS Inform 'most people make a full recovery with no long lasting effects'",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/skin/rashes-irritation-and-swelling/cellulitis",
+   "action": "edited",
+   "newSentence": "Most people make a full recovery with no long-lasting effects."
+  },
+  {
+   "id": "c73",
+   "classification": "supported",
+   "evidence": "Returned NHS/NHS Inform/111 Wales/NICE/StatPearls summary text carries this (NHS text.)",
+   "url": "https://www.nhs.uk/conditions/cellulitis/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c74",
+   "classification": "unsupported",
+   "evidence": "Sepsis named; 'needs urgent hospital treatment' not stated in retrieved text",
+   "url": "https://111.wales.nhs.uk/cellulitis/",
+   "action": "edited",
+   "newSentence": "Infection that spreads to the blood can cause blood poisoning, also called septicaemia or sepsis."
+  },
+  {
+   "id": "c75",
+   "classification": "supported",
+   "evidence": "Returned: collections of pus which may require operations to drain",
+   "url": "https://111.wales.nhs.uk/cellulitis/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c76",
+   "classification": "supported",
+   "evidence": "Returned: lymphatic system damage, permanent swelling of arm or leg",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/skin/rashes-irritation-and-swelling/cellulitis",
+   "action": "edited",
+   "newSentence": "Cellulitis can also damage the lymphatic system, which can cause permanent swelling of the affected arm or leg."
+  },
+  {
+   "id": "c77",
+   "classification": "unsupported",
+   "evidence": "'Rare' not stated",
+   "url": "https://111.wales.nhs.uk/cellulitis/",
+   "action": "edited",
+   "newSentence": "Necrotising fasciitis is a severe and rapidly spreading infection of the muscle and connective tissue."
+  },
+  {
+   "id": "c78",
+   "classification": "supported",
+   "evidence": "BAD: more likely to recur in the same part of the body; fixing skin breaks",
+   "url": "https://www.bad.org.uk/pils/cellulitis-and-erysipelas",
+   "action": "edited",
+   "newSentence": "Cellulitis can come back. The British Association of Dermatologists notes that it is more likely to return in the same part of the body, and that fixing skin breaks such as athlete's foot or eczema can help."
+  },
+  {
+   "id": "c79",
+   "classification": "supported",
+   "evidence": "Returned NHS/NHS Inform/111 Wales/NICE/StatPearls summary text carries this (NG141 recommendation.)",
+   "url": "https://www.nice.org.uk/guidance/ng141/chapter/Recommendations",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c80",
+   "classification": "supported",
+   "evidence": "NHS Inform: may be prescribed long-term antibiotics; may be referred to a dermatologist",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/skin/rashes-irritation-and-swelling/cellulitis",
+   "action": "edited",
+   "newSentence": "NHS Inform says people who keep getting cellulitis may be prescribed long-term antibiotics, and may be referred to a dermatologist, a skin specialist."
+  },
+  {
+   "id": "c81",
+   "classification": "supported",
+   "evidence": "Returned NHS/NHS Inform/111 Wales/NICE/StatPearls summary text carries this (NHS summary.)",
+   "url": "https://www.nhs.uk/conditions/cellulitis/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c82",
+   "classification": "supported",
+   "evidence": "NHS text: 999 or A&E for signs of serious complications",
+   "url": "https://www.nhs.uk/conditions/cellulitis/",
+   "action": "edited",
+   "newSentence": "The NHS advises calling 999 or going to A&E for signs of serious complications."
+  },
+  {
+   "id": "c83",
+   "classification": "supported",
+   "evidence": "Returned: very high temperature, hot cold or shivery, fast heartbeat/breathing, purple patches, dizzy/faint, confusion, cold clammy pale, loss of consciousness",
+   "url": "https://www.nhs.uk/conditions/cellulitis/",
+   "action": "edited",
+   "newSentence": "It lists a very high temperature, feeling hot, cold or shivery, ... and loss of consciousness."
+  },
+  {
+   "id": "c84",
+   "classification": "supported",
+   "evidence": "Returned: do not drive to A&E; ask someone to drive or call 999",
+   "url": "https://www.nhs.uk/conditions/cellulitis/",
+   "action": "edited",
+   "newSentence": "It advises against driving to A&E in this situation; someone else can drive, or 999 can be called for an ambulance."
+  },
+  {
+   "id": "c85",
+   "classification": "unsupported",
+   "evidence": "Only 'in the eye is very serious' retrieved; eye-area route not confirmed (summaries conflict)",
+   "url": "https://www.nhs.uk/conditions/cellulitis/",
+   "action": "edited",
+   "newSentence": "Cellulitis in the eye is very serious. Cellulitis near the eyes or nose can need specialist advice, and urgent assessment through NHS 111 or a same-day GP appointment is the usual route (textbook signposting)."
+  },
+  {
+   "id": "c86",
+   "classification": "unsupported",
+   "evidence": "Northern Care Alliance leaflet not returned; replaced by 111 Wales rapidly spreading redness",
+   "url": "https://111.wales.nhs.uk/cellulitis/",
+   "action": "edited",
+   "newSentence": "NHS 111 Wales lists rapidly spreading redness among the signs for which urgent help through NHS 111 is advised."
+  },
+  {
+   "id": "c87",
+   "classification": "supported",
+   "evidence": "NICE safety-netting text",
+   "url": "https://www.nice.org.uk/guidance/ng141/chapter/Recommendations",
+   "action": "edited",
+   "newSentence": "NICE advises seeking medical help if symptoms worsen rapidly or significantly at any time, or do not start to improve within 2 to 3 days of starting antibiotics."
+  },
+  {
+   "id": "c88",
+   "classification": "supported",
+   "evidence": "NHS Inform: full recovery after 7 to 10 days",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/skin/rashes-irritation-and-swelling/cellulitis",
+   "action": "edited",
+   "newSentence": "NHS Inform says most people make a full recovery after 7 to 10 days."
+  },
+  {
+   "id": "c89",
+   "classification": "supported",
+   "evidence": "Returned NHS/NHS Inform/111 Wales/NICE/StatPearls summary text carries this (NHS summary.)",
+   "url": "https://www.nhs.uk/conditions/cellulitis/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c90",
+   "classification": "unsupported",
+   "evidence": "48 hours worse then improve supported; 'couple of weeks' not retrieved",
+   "url": "https://111.wales.nhs.uk/cellulitis/",
+   "action": "edited",
+   "newSentence": "Symptoms may get worse in the first 48 hours of treatment before they start to improve."
+  },
+  {
+   "id": "c91",
+   "classification": "supported",
+   "evidence": "NICE 2 to 3 days",
+   "url": "https://www.nice.org.uk/guidance/ng141/chapter/Recommendations",
+   "action": "edited",
+   "newSentence": "NICE advises seeking medical help if symptoms do not start to improve within 2 to 3 days, or worsen rapidly or significantly at any time."
+  },
+  {
+   "id": "c92",
+   "classification": "supported",
+   "evidence": "BAD/StatPearls",
+   "url": "https://www.bad.org.uk/pils/cellulitis-and-erysipelas",
+   "action": "edited",
+   "newSentence": "Erysipelas affects the upper layers of the skin, while cellulitis affects the deeper layers."
+  },
+  {
+   "id": "c93",
+   "classification": "supported",
+   "evidence": "Returned NHS/NHS Inform/111 Wales/NICE/StatPearls summary text carries this (Returned text; likely StatPearls.)",
+   "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK549770/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c94",
+   "classification": "supported",
+   "evidence": "BAD: can overlap; NICE NG141 title covers both",
+   "url": "https://www.nice.org.uk/guidance/ng141/chapter/Recommendations",
+   "action": "edited",
+   "newSentence": "The two can overlap, so a definite diagnosis is not always possible, and NICE guideline NG141 covers both."
+  },
+  {
+   "id": "c95",
+   "classification": "supported",
+   "evidence": "UK hospital leaflet (Milton Keynes)",
+   "url": "https://www.mkuh.nhs.uk/patient-information-leaflet/management-and-treatment-of-lower-leg-cellulitis",
+   "action": "edited",
+   "newSentence": "A UK hospital leaflet says the symptoms of cellulitis are similar to those of a blood clot."
+  },
+  {
+   "id": "c96",
+   "classification": "supported",
+   "evidence": "UK hospital leaflet",
+   "url": "https://www.mkuh.nhs.uk/patient-information-leaflet/management-and-treatment-of-lower-leg-cellulitis",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c97",
+   "classification": "supported",
+   "evidence": "Returned NHS/NHS Inform/111 Wales/NICE/StatPearls summary text carries this (StatPearls mimics.)",
+   "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK549770/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c98",
+   "classification": "unsupported",
+   "evidence": "BAD: more likely to return in same part of the body; 'with risk factors' not stated",
+   "url": "https://www.bad.org.uk/pils/cellulitis-and-erysipelas",
+   "action": "edited",
+   "newSentence": "Cellulitis can come back. The British Association of Dermatologists notes it is more likely to return in the same part of the body."
+  },
+  {
+   "id": "c99",
+   "classification": "unsupported",
+   "evidence": "BAD (not NHS): fixing skin breaks such as athlete's foot or eczema",
+   "url": "https://www.bad.org.uk/pils/cellulitis-and-erysipelas",
+   "action": "edited",
+   "newSentence": "...and that fixing skin breaks such as athlete's foot or eczema can help."
+  },
+  {
+   "id": "c100",
+   "classification": "supported",
+   "evidence": "NHS Inform",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/skin/rashes-irritation-and-swelling/cellulitis",
+   "action": "edited",
+   "newSentence": "NHS Inform says people who keep getting cellulitis may be prescribed long-term antibiotics."
+  },
+  {
+   "id": "c101",
+   "classification": "supported",
+   "evidence": "Returned NHS/NHS Inform/111 Wales/NICE/StatPearls summary text carries this (NG141 recommendation.)",
+   "url": "https://www.nice.org.uk/guidance/ng141/chapter/Recommendations",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c102",
+   "classification": "supported",
+   "evidence": "Returned NHS/NHS Inform/111 Wales/NICE/StatPearls summary text carries this (NHS summary.)",
+   "url": "https://www.nhs.uk/conditions/cellulitis/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c103",
+   "classification": "supported",
+   "evidence": "Returned NHS/NHS Inform/111 Wales/NICE/StatPearls summary text carries this (NHS list.)",
+   "url": "https://www.nhs.uk/conditions/cellulitis/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c104",
+   "classification": "unsupported",
+   "evidence": "Eye-area route not confirmed",
+   "url": "https://www.nhs.uk/conditions/cellulitis/",
+   "action": "edited",
+   "newSentence": "Cellulitis in the eye is very serious."
+  },
+  {
+   "id": "c105",
+   "classification": "supported",
+   "evidence": "Returned NHS/NHS Inform/111 Wales/NICE/StatPearls summary text carries this (NHS summary.)",
+   "url": "https://www.nhs.uk/conditions/cellulitis/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c106",
+   "classification": "supported",
+   "evidence": "Returned NHS/NHS Inform/111 Wales/NICE/StatPearls summary text carries this (NHS.)",
+   "url": "https://www.nhs.uk/conditions/cellulitis/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c107",
+   "classification": "supported",
+   "evidence": "Returned NHS/NHS Inform/111 Wales/NICE/StatPearls summary text carries this (NHS.)",
+   "url": "https://www.nhs.uk/conditions/cellulitis/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c108",
+   "classification": "unsupported",
+   "evidence": "'in adults' not stated",
+   "url": "https://www.nice.org.uk/guidance/ng141/chapter/Summary-of-the-evidence",
+   "action": "edited",
+   "newSentence": "Streptococci and Staphylococcus aureus"
+  },
+  {
+   "id": "c109",
+   "classification": "supported",
+   "evidence": "Returned NHS/NHS Inform/111 Wales/NICE/StatPearls summary text carries this (NHS.)",
+   "url": "https://www.nhs.uk/conditions/cellulitis/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c110",
+   "classification": "supported",
+   "evidence": "NHS Inform 7 to 10 days",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/skin/rashes-irritation-and-swelling/cellulitis",
+   "action": "edited",
+   "newSentence": "NHS Inform says most people recover after 7 to 10 days"
+  },
+  {
+   "id": "c111",
+   "classification": "supported",
+   "evidence": "Returned NHS/NHS Inform/111 Wales/NICE/StatPearls summary text carries this (NHS.)",
+   "url": "https://www.nhs.uk/conditions/cellulitis/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c112",
+   "classification": "supported",
+   "evidence": "Returned NHS/NHS Inform/111 Wales/NICE/StatPearls summary text carries this (NHS.)",
+   "url": "https://www.nhs.uk/conditions/cellulitis/",
+   "action": "kept",
+   "newSentence": ""
+  }
+ ],
+ "notes": "Main nhs.uk cellulitis page appeared in result lists but summaries blend NHS Inform, 111 Wales and trust leaflets, so attribution is to NHS Inform / 111 Wales where summary text matched. Eye wording unresolved: summaries conflict on the route for cellulitis around the eye; only 'cellulitis in the eye is very serious' kept plus textbook NHS 111/same-day GP signposting. Lymphoedema gloss now sourced to NHS lymphoedema page. DVT overlap rests on one UK hospital leaflet (Milton Keynes). sepsis, deep-vein-thrombosis, paracetamol, ibuprofen links kept since sources name them for cellulitis. Removed trust-leaflet-only statements (24h prodrome, couple of weeks, uncommon complications, PMC lymphoedema paper, Northern Care Alliance signs, fluids, psoriasis, 'rare' necrotising fasciitis). Aliases cut to 'skin infection'."
+}
