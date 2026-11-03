@@ -16,7 +16,7 @@
   "urls": [
    "https://www.nhs.uk/medicines/co-amoxiclav/"
   ],
-  "note": "NHS who-cannot-take list (allergic reaction to co-amoxiclav or another antibiotic; liver problems or jaundice from an antibiotic)."
+  "note": "NHS who-cannot-take list."
  },
  {
   "where": "summary",
@@ -61,7 +61,7 @@
   "urls": [
    "https://www.medicines.org.uk/emc/product/4078/pil"
   ],
-  "note": "emc PIL: antibiotic, works by killing bacteria."
+  "note": "emc PIL."
  },
  {
   "where": "howItWorks",
@@ -125,7 +125,7 @@
    "https://www.nhs.uk/medicines/co-amoxiclav/",
    "https://www.nhs.uk/medicines/amoxicillin/side-effects-of-amoxicillin/"
   ],
-  "note": "NHS co-amoxiclav page lists anaphylaxis (throat or tongue swelling, itchy rash, trouble breathing); the 999 wording was retrieved from the NHS amoxicillin side-effects page, not the co-amoxiclav page excerpt."
+  "note": "NHS co-amoxiclav page lists anaphylaxis (throat or tongue swelling, trouble breathing); the 999 wording was retrieved from the NHS amoxicillin side-effects page, not the co-amoxiclav page excerpt."
  },
  {
   "where": "sideEffects.serious[1]",
@@ -144,7 +144,7 @@
    "https://www.nhs.uk/medicines/co-amoxiclav/",
    "https://www.medicines.org.uk/emc/product/4078/pil"
   ],
-  "note": "NHS lists these signs; emc leaflets list jaundice under liver problems. Same-day route is the author's routing, NHS 111 per NHS page."
+  "note": "NHS lists these signs; emc leaflets list jaundice under liver problems. Same-day routing is the author's wording, NHS 111 per NHS page."
  },
  {
   "where": "sideEffects.serious[3]",
@@ -200,7 +200,7 @@
   "urls": [
    "https://www.medicines.org.uk/emc/product/4078/pil"
   ],
-  "note": "emc leaflet wording; search summary also attributed this to NHS, so blended."
+  "note": "emc leaflet wording; the search summary also attributed this to NHS, so blended."
  },
  {
   "where": "cautions[4]",
@@ -237,7 +237,7 @@
    "https://www.medicines.org.uk/emc/product/4078/pil",
    "https://www.nhs.uk/medicines/co-amoxiclav/"
   ],
-  "note": "Search summary of NHS/emc text: kidney problems may change dose; liver problems more blood tests. Blended."
+  "note": "Search summary of NHS/emc text: kidney problems may change the dose; liver problems more blood tests. Blended."
  },
  {
   "where": "regimenNote",
@@ -306,15 +306,6 @@
  },
  {
   "where": "article.sections[0].body",
-  "sentence": "Which medicine is chosen for an infection, and how long it is taken, is decided by the prescriber for each person and each infection.",
-  "basis": "excerpt",
-  "urls": [
-   "https://nhssomerset.nhs.uk/wp-content/uploads/sites/2/Managing-common-infections-Guidance-for-Primary-Care-March-2026-v2.0.pdf"
-  ],
-  "note": "Textbook-style framing; the Somerset guide covers choosing narrow versus broad antibiotics. Weak support."
- },
- {
-  "where": "article.sections[0].body",
   "sentence": "Local prescribing guidance for England advises avoiding broad-spectrum antibiotics such as co-amoxiclav when narrower ones remain effective.",
   "basis": "excerpt",
   "urls": [
@@ -324,16 +315,7 @@
  },
  {
   "where": "article.sections[0].body",
-  "sentence": "Antibiotics of this kind act on bacteria, so they are used for infections that bacteria cause.",
-  "basis": "excerpt",
-  "urls": [
-   "https://www.medicines.org.uk/emc/product/4078/pil"
-  ],
-  "note": "emc PIL: kills bacteria causing infections."
- },
- {
-  "where": "article.sections[0].body",
-  "sentence": "The reason given for the caution is that broader antibiotics increase the risk of Clostridium difficile infection, MRSA and urinary infections that resist treatment.",
+  "sentence": "The reason given is that broader antibiotics increase the risk of Clostridium difficile infection, MRSA and urinary infections that resist treatment.",
   "basis": "excerpt",
   "urls": [
    "https://nhssomerset.nhs.uk/wp-content/uploads/sites/2/Managing-common-infections-Guidance-for-Primary-Care-March-2026-v2.0.pdf"
@@ -378,22 +360,12 @@
  },
  {
   "where": "article.sections[1].body",
-  "sentence": "Beta-lactamases are enzymes made by some bacteria, and dental prescribing guidance describes the combination as active against beta-lactamase-producing bacteria that are resistant to amoxicillin.",
+  "sentence": "Dental prescribing guidance describes the combination as active against beta-lactamase-producing bacteria that are resistant to amoxicillin.",
   "basis": "excerpt",
   "urls": [
    "https://www.nhstaysideadtc.scot.nhs.uk/Antibiotic%20site/pdf%20docs/Drug_Prescribing_for_Dentistry_2_Web_2[1].pdf"
   ],
-  "note": "NHS Tayside dental guidance; the first clause (enzymes made by bacteria) is a definition inferred from the term, flagged as light textbook content."
- },
- {
-  "where": "article.sections[1].body",
-  "sentence": "This is the main difference between co-amoxiclav and plain amoxicillin, which is a different NHS medicine page.",
-  "basis": "excerpt",
-  "urls": [
-   "https://www.nhstaysideadtc.scot.nhs.uk/Antibiotic%20site/pdf%20docs/Drug_Prescribing_for_Dentistry_2_Web_2[1].pdf",
-   "https://www.nhs.uk/medicines/co-amoxiclav/"
-  ],
-  "note": "Inference from dental guidance wording; both are penicillins per MedlinePlus/NHS."
+  "note": "NHS Tayside dental guidance."
  },
  {
   "where": "article.sections[1].body",
@@ -403,6 +375,34 @@
    "https://nhssomerset.nhs.uk/wp-content/uploads/sites/2/Managing-common-infections-Guidance-for-Primary-Care-March-2026-v2.0.pdf"
   ],
   "note": "Somerset guide lists co-amoxiclav as broad spectrum."
+ },
+ {
+  "where": "article.sections[1].body",
+  "sentence": "The NHS describes co-amoxiclav as a penicillin antibiotic, and MedlinePlus describes the combination as a penicillin-like antibiotic with a beta-lactamase inhibitor.",
+  "basis": "excerpt",
+  "urls": [
+   "https://www.nhs.uk/medicines/co-amoxiclav/",
+   "https://medlineplus.gov/druginfo/meds/a685024.html"
+  ],
+  "note": "NHS; MedlinePlus."
+ },
+ {
+  "where": "article.sections[1].body",
+  "sentence": "MedlinePlus lists tablets, chewable tablets and an oral suspension, which is a liquid form, among the available forms.",
+  "basis": "excerpt",
+  "urls": [
+   "https://medlineplus.gov/druginfo/meds/a685024.html"
+  ],
+  "note": "MedlinePlus."
+ },
+ {
+  "where": "article.sections[1].body",
+  "sentence": "Product leaflets from the UK electronic medicines compendium name the same two ingredients across tablets and other forms of co-amoxiclav.",
+  "basis": "excerpt",
+  "urls": [
+   "https://www.medicines.org.uk/emc/product/4078/pil"
+  ],
+  "note": "emc leaflets for several strengths all name amoxicillin and clavulanic acid."
  },
  {
   "where": "article.sections[2].body",
@@ -447,16 +447,7 @@
   "urls": [
    "https://medlineplus.gov/druginfo/meds/a685024.html"
   ],
-  "note": "MedlinePlus: severe vomiting 1 to 4 hours after the medicine (timing omitted)."
- },
- {
-  "where": "article.sections[2].body",
-  "sentence": "A GP or pharmacist is the usual contact for side effects that are troublesome but not alarming.",
-  "basis": "excerpt",
-  "urls": [
-   "https://www.nhs.uk/medicines/co-amoxiclav/"
-  ],
-  "note": "Routine routing; NHS pages direct to pharmacist/doctor. Light support."
+  "note": "MedlinePlus: severe vomiting (timing omitted)."
  },
  {
   "where": "article.sections[2].body",
@@ -466,6 +457,15 @@
    "https://www.medicines.org.uk/emc/product/4078/pil"
   ],
   "note": "emc search summary caveat."
+ },
+ {
+  "where": "article.sections[2].body",
+  "sentence": "The emc leaflets also place inflammation of the membranes around the brain and spinal cord in an unknown-frequency group, and say a severe rash, blistering or a serious allergic reaction needs a doctor straight away.",
+  "basis": "excerpt",
+  "urls": [
+   "https://www.medicines.org.uk/emc/product/4078/pil"
+  ],
+  "note": "emc leaflet summary."
  },
  {
   "where": "article.sections[3].body",
@@ -719,7 +719,7 @@
  },
  {
   "where": "article.faqs[4].a",
-  "sentence": "The pharmacist, midwife or prescriber can look at an individual situation.",
+  "sentence": "Individual questions about this are for a pharmacist, midwife or prescriber.",
   "basis": "excerpt",
   "urls": [
    "https://www.nhs.uk/medicines/co-amoxiclav/"
