@@ -1,0 +1,1086 @@
+{
+ "id": "acne",
+ "searchesUsed": 13,
+ "counts": {
+  "supported": 77,
+  "textbook": 3,
+  "unsupported": 34,
+  "wrong": 0,
+  "unsafe": 0,
+  "unchecked": 0
+ },
+ "claims": [
+  {
+   "id": "c01",
+   "where": "definition",
+   "sentence": "Acne is a common skin condition in which spots, from a few small ones to deep painful lumps, appear mostly on the face, chest and back.",
+   "classification": "supported",
+   "evidence": "NHS: common; ranges from a few spots to deep painful lumps; usually face, chest and back; MedlinePlus: common skin disease",
+   "url": "https://www.nhs.uk/conditions/acne/",
+   "action": "kept"
+  },
+  {
+   "id": "c02",
+   "where": "overview",
+   "sentence": "Acne happens when hair follicles in the skin become clogged with oil and dead skin cells, and bacteria then multiply in them.",
+   "classification": "supported",
+   "evidence": "NHS causes: blocked follicles, skin bacteria infect plugged follicles; \"multiply\" not seen",
+   "url": "https://www.nhs.uk/conditions/acne/causes/",
+   "action": "edited",
+   "newSentence": "Acne happens when hair follicles in the skin become clogged with oil and dead skin cells, and bacteria that live on the skin can then affect the blocked follicles."
+  },
+  {
+   "id": "c03",
+   "where": "overview",
+   "sentence": "Changes in hormones are a major factor, and acne tends to run in families.",
+   "classification": "supported",
+   "evidence": "NHS: hormone changes most common link; runs in families",
+   "url": "https://www.nhs.uk/conditions/acne/causes/",
+   "action": "kept"
+  },
+  {
+   "id": "c04",
+   "where": "overview",
+   "sentence": "It can range from mild, with a few spots, to severe, with deep and painful lumps under the skin.",
+   "classification": "supported",
+   "evidence": "NHS: few spots to deep painful lumps",
+   "url": "https://www.nhs.uk/conditions/acne/",
+   "action": "kept"
+  },
+  {
+   "id": "c05",
+   "where": "overview",
+   "sentence": "It can also affect mental health.",
+   "classification": "supported",
+   "evidence": "NHS: acne can affect mental health (anxiety, depression, low self-esteem)",
+   "url": "https://www.nhs.uk/conditions/acne/",
+   "action": "kept"
+  },
+  {
+   "id": "c06",
+   "where": "overview",
+   "sentence": "Treatment is available from pharmacists and GPs, and some people are referred to a skin specialist.",
+   "classification": "supported",
+   "evidence": "NHS: pharmacist for mild, GP for moderate/severe, GP can refer to dermatologist",
+   "url": "https://www.nhs.uk/conditions/acne/treatment/",
+   "action": "kept"
+  },
+  {
+   "id": "c07",
+   "where": "causes[0]",
+   "sentence": "Hair follicles become clogged with oil and dead skin cells, and bacteria can then multiply in them.",
+   "classification": "supported",
+   "evidence": "as #2",
+   "url": "https://www.nhs.uk/conditions/acne/causes/",
+   "action": "edited",
+   "newSentence": "Hair follicles become clogged with oil and dead skin cells, and bacteria that live on the skin can then affect the blocked follicles."
+  },
+  {
+   "id": "c08",
+   "where": "causes[1]",
+   "sentence": "Hormone changes are a major factor.",
+   "classification": "supported",
+   "evidence": "NHS causes: hormone changes",
+   "url": "https://www.nhs.uk/conditions/acne/causes/",
+   "action": "kept"
+  },
+  {
+   "id": "c09",
+   "where": "causes[2]",
+   "sentence": "Oil glands can be sensitive to hormones even when hormone levels are normal, which leads to extra oil.",
+   "classification": "supported",
+   "evidence": "BAD: oil glands react strongly to hormones even when levels are normal; \"leads to extra oil\" not stated",
+   "url": "https://www.bad.org.uk/pils/acne",
+   "action": "edited",
+   "newSentence": "Oil glands can be sensitive to hormones even when hormone levels are normal."
+  },
+  {
+   "id": "c10",
+   "where": "causes[3]",
+   "sentence": "Acne also tends to run in families.",
+   "classification": "supported",
+   "evidence": "NHS causes: runs in families",
+   "url": "https://www.nhs.uk/conditions/acne/causes/",
+   "action": "kept"
+  },
+  {
+   "id": "c11",
+   "where": "causes[4]",
+   "sentence": "Cleaning the skin does not remove the blockage, and there is no evidence that poor hygiene or sexual activity cause acne.",
+   "classification": "supported",
+   "evidence": "NHS causes: washing does not remove the blockage; no evidence poor hygiene or sexual activity causes acne",
+   "url": "https://www.nhs.uk/conditions/acne/causes/",
+   "action": "kept"
+  },
+  {
+   "id": "c12",
+   "where": "riskFactors[0]",
+   "sentence": "A family history of acne.",
+   "classification": "supported",
+   "evidence": "NHS causes: runs in families, higher chance if parent had acne",
+   "url": "https://www.nhs.uk/conditions/acne/causes/",
+   "action": "kept"
+  },
+  {
+   "id": "c13",
+   "where": "riskFactors[1]",
+   "sentence": "Hormonal conditions such as polycystic ovary syndrome.",
+   "classification": "supported",
+   "evidence": "BAD 2024 and NHS causes: PCOS can be involved",
+   "url": "https://www.bad.org.uk/pils/acne",
+   "action": "kept"
+  },
+  {
+   "id": "c14",
+   "where": "riskFactors[2]",
+   "sentence": "Some medicines, including some contraceptives, high-dose steroids and anabolic steroids.",
+   "classification": "unsupported",
+   "evidence": "BAD 2024 names anabolic steroids; NHS causes lists steroids; contraceptives and \"high-dose steroids\" not returned",
+   "url": "https://www.bad.org.uk/pils/acne",
+   "action": "edited",
+   "newSentence": "Some medicines, including anabolic steroids."
+  },
+  {
+   "id": "c15",
+   "where": "riskFactors[3]",
+   "sentence": "Greasy skin or hair products, and picking at the skin.",
+   "classification": "unsupported",
+   "evidence": "NHS causes: products that make skin greasy; picking as a cause of acne not returned (NICE: picking raises scarring risk only)",
+   "url": "https://www.nhs.uk/conditions/acne/causes/",
+   "action": "edited",
+   "newSentence": "Skin or hair products that make the skin greasy."
+  },
+  {
+   "id": "c16",
+   "where": "signs[0]",
+   "sentence": "Open (black) and closed (white) comedones, which are blackheads and whiteheads.",
+   "classification": "unsupported",
+   "evidence": "NICE lesion-type wording (\"open/closed comedones\") not returned; NHS gives blackheads and whiteheads",
+   "url": "https://www.nhs.uk/conditions/acne/",
+   "action": "edited",
+   "newSentence": "Blackheads and whiteheads."
+  },
+  {
+   "id": "c17",
+   "where": "signs[1]",
+   "sentence": "Inflammatory papules and pustules.",
+   "classification": "supported",
+   "evidence": "NHS: bacteria infect plugged follicles leading to papules, pustules (inflammation)",
+   "url": "https://www.nhs.uk/conditions/acne/",
+   "action": "kept"
+  },
+  {
+   "id": "c18",
+   "where": "signs[2]",
+   "sentence": "Nodules and cysts in more severe acne.",
+   "classification": "supported",
+   "evidence": "NHS: severe acne has nodules or cysts",
+   "url": "https://www.nhs.uk/conditions/acne/",
+   "action": "kept"
+  },
+  {
+   "id": "c19",
+   "where": "signs[3]",
+   "sentence": "Lesions mainly on the face, neck, upper back and chest.",
+   "classification": "unsupported",
+   "evidence": "NICE distribution (neck, upper back) not returned; NHS: face, chest, back",
+   "url": "https://www.nhs.uk/conditions/acne/",
+   "action": "edited",
+   "newSentence": "Spots mainly on the face, chest and back."
+  },
+  {
+   "id": "c20",
+   "where": "signs[4]",
+   "sentence": "Scarring, which clinicians note, including its type.",
+   "classification": "unsupported",
+   "evidence": "\"clinicians note scarring type\" not returned; NHS: scarring can follow",
+   "url": "https://www.nhs.uk/conditions/acne/",
+   "action": "edited",
+   "newSentence": "Scarring, which can follow acne."
+  },
+  {
+   "id": "c21",
+   "where": "complications[0]",
+   "sentence": "Permanent scarring, especially if spots are squeezed or picked.",
+   "classification": "supported",
+   "evidence": "NHS: squeezing can cause permanent scarring; NICE: persistent picking increases scarring risk",
+   "url": "https://www.nhs.uk/conditions/acne/",
+   "action": "kept"
+  },
+  {
+   "id": "c22",
+   "where": "complications[1]",
+   "sentence": "Persistent changes in skin colour after spots heal.",
+   "classification": "unsupported",
+   "evidence": "persistent colour change as NICE referral reason / complication not returned",
+   "url": "https://www.nice.org.uk/guidance/ng198/chapter/recommendations",
+   "action": "removed"
+  },
+  {
+   "id": "c23",
+   "where": "complications[2]",
+   "sentence": "Psychological distress and mental health problems, which can occur with acne of any severity.",
+   "classification": "supported",
+   "evidence": "NICE: referral when acne of any severity contributes to persistent distress or mental health disorder; NHS: anxiety, depression",
+   "url": "https://www.nice.org.uk/guidance/ng198/chapter/recommendations",
+   "action": "edited",
+   "newSentence": "Persistent psychological distress or a mental health disorder, which NICE says can accompany acne of any severity."
+  },
+  {
+   "id": "c24",
+   "where": "complications[3]",
+   "sentence": "Signs of skin infection in affected spots.",
+   "classification": "supported",
+   "evidence": "NHS: see GP for signs of skin infection (hot, swollen, red skin)",
+   "url": "https://www.nhs.uk/conditions/acne/",
+   "action": "kept"
+  },
+  {
+   "id": "c25",
+   "where": "diagnosis",
+   "sentence": "Acne is assessed from the skin itself, including the number, type and distribution of the lesions.",
+   "classification": "unsupported",
+   "evidence": "assessment by number/type/distribution not returned; NHS grades severity by spot types",
+   "url": "https://www.nhs.uk/conditions/acne/diagnosis/",
+   "action": "edited",
+   "newSentence": "The NHS grades acne by the types of spot present."
+  },
+  {
+   "id": "c26",
+   "where": "diagnosis",
+   "sentence": "Clinicians also note whether scarring is present and what type it is.",
+   "classification": "unsupported",
+   "evidence": "clinicians noting scarring type not returned",
+   "url": "https://www.nice.org.uk/guidance/ng198/chapter/recommendations",
+   "action": "removed"
+  },
+  {
+   "id": "c27",
+   "where": "diagnosis",
+   "sentence": "The person's own views of how acne affects them are taken into account.",
+   "classification": "unsupported",
+   "evidence": "person's own views in assessment not returned",
+   "url": "https://www.nice.org.uk/guidance/ng198/chapter/recommendations",
+   "action": "removed"
+  },
+  {
+   "id": "c28",
+   "where": "treatment",
+   "sentence": "For a few blackheads, whiteheads and spots, a pharmacist can advise on gels or creams that can be bought without a prescription.",
+   "classification": "supported",
+   "evidence": "NHS: pharmacist can suggest OTC products for a few spots",
+   "url": "https://www.nhs.uk/conditions/acne/treatment/",
+   "action": "kept"
+  },
+  {
+   "id": "c29",
+   "where": "treatment",
+   "sentence": "These often contain benzoyl peroxide.",
+   "classification": "supported",
+   "evidence": "NHS/BAD: OTC benzoyl peroxide products; \"often\" softened",
+   "url": "https://www.nhs.uk/conditions/acne/treatment/",
+   "action": "edited",
+   "newSentence": "These include products containing benzoyl peroxide."
+  },
+  {
+   "id": "c30",
+   "where": "treatment",
+   "sentence": "Prescription treatments include topical retinoids, topical antibiotics, azelaic acid and antibiotic tablets.",
+   "classification": "supported",
+   "evidence": "NHS treatment: topical retinoids, topical antibiotics, azelaic acid, antibiotic tablets",
+   "url": "https://www.nhs.uk/conditions/acne/treatment/",
+   "action": "kept"
+  },
+  {
+   "id": "c31",
+   "where": "treatment",
+   "sentence": "The combined contraceptive pill is another option for women.",
+   "classification": "supported",
+   "evidence": "NHS treatment: combined contraceptive pill in women",
+   "url": "https://www.nhs.uk/conditions/acne/treatment/",
+   "action": "kept"
+  },
+  {
+   "id": "c32",
+   "where": "treatment",
+   "sentence": "Antibiotic tablets are generally used alongside topical treatments for severe acne.",
+   "classification": "unsupported",
+   "evidence": "NHS Wales says tablets plus topicals for severe acne; NICE says azelaic acid with oral antibiotic for moderate to severe; unattributed \"generally ... severe\" overstated",
+   "url": "https://www.nice.org.uk/guidance/ng198/chapter/recommendations",
+   "action": "edited",
+   "newSentence": "NICE lists a topical treatment used together with an antibiotic tablet as an option for moderate to severe acne."
+  },
+  {
+   "id": "c33",
+   "where": "treatment",
+   "sentence": "Isotretinoin is a capsule treatment for severe acne that has not responded to other treatments, and the NHS says it can only be prescribed by a specialist doctor.",
+   "classification": "supported",
+   "evidence": "NHS: capsules for severe acne, specialist doctor only; NICE: considered when severe acne resistant to standard therapy",
+   "url": "https://www.nhs.uk/medicines/isotretinoin-roaccutane/",
+   "action": "kept"
+  },
+  {
+   "id": "c34",
+   "where": "prevention",
+   "sentence": "The NHS describes some everyday skin care steps for people with acne.",
+   "classification": "unsupported",
+   "evidence": "filler sentence, no claim",
+   "url": "https://www.nhs.uk/conditions/acne/",
+   "action": "removed"
+  },
+  {
+   "id": "c35",
+   "where": "prevention",
+   "sentence": "The NHS describes washing with a gentle cleanser, using non-comedogenic products and removing make-up at night.",
+   "classification": "unsupported",
+   "evidence": "NHS: gentle washing with mild cleanser, lukewarm water; NICE: syndet cleanser twice daily, oil-free, remove make-up; \"non-comedogenic\" not returned",
+   "url": "https://www.nice.org.uk/guidance/ng198/chapter/recommendations",
+   "action": "edited",
+   "newSentence": "The NHS describes gentle washing with a mild cleanser and lukewarm water as helpful for acne."
+  },
+  {
+   "id": "c36",
+   "where": "prevention",
+   "sentence": "It advises against squeezing spots, because this can cause permanent scarring.",
+   "classification": "supported",
+   "evidence": "NHS: do not squeeze spots, permanent scarring",
+   "url": "https://www.nhs.uk/conditions/acne/",
+   "action": "kept"
+  },
+  {
+   "id": "c37",
+   "where": "seekCare",
+   "sentence": "A pharmacist is the usual first contact for a few blackheads, whiteheads and spots.",
+   "classification": "supported",
+   "evidence": "NHS: pharmacist first port of call for mild acne",
+   "url": "https://www.nhs.uk/conditions/acne/treatment/",
+   "action": "kept"
+  },
+  {
+   "id": "c38",
+   "where": "seekCare",
+   "sentence": "A GP appointment is advised if self-treatment is not helping, if there are many spots, deep or painful spots, or spots that scar.",
+   "classification": "supported",
+   "evidence": "NHS: see GP if OTC not helped, lots of spots, deep/painful/scarring",
+   "url": "https://www.nhs.uk/conditions/acne/",
+   "action": "kept"
+  },
+  {
+   "id": "c39",
+   "where": "seekCare",
+   "sentence": "A GP appointment is also advised if there are signs of skin infection, or if acne is affecting mental health.",
+   "classification": "supported",
+   "evidence": "NHS: GP for signs of skin infection or if mental health affected",
+   "url": "https://www.nhs.uk/conditions/acne/",
+   "action": "kept"
+  },
+  {
+   "id": "c40",
+   "where": "seekCare",
+   "sentence": "A GP can refer a person to a skin specialist (dermatologist).",
+   "classification": "supported",
+   "evidence": "NHS: GP can refer to dermatologist",
+   "url": "https://www.nhs.uk/conditions/acne/treatment/",
+   "action": "kept"
+  },
+  {
+   "id": "c41",
+   "where": "seekCare",
+   "sentence": "If low mood becomes serious, NHS 111 can help, and Samaritans are free on 116 123 at any time.",
+   "classification": "textbook",
+   "evidence": "NHS 111 / Samaritans signposting, no source states it",
+   "url": "https://medlineplus.gov/ency/article/000873.htm",
+   "action": "kept"
+  },
+  {
+   "id": "c42",
+   "where": "seekCare",
+   "sentence": "Anyone in immediate danger should call 999.",
+   "classification": "textbook",
+   "evidence": "999 signposting",
+   "url": "https://medlineplus.gov/ency/article/000873.htm",
+   "action": "kept"
+  },
+  {
+   "id": "c43",
+   "where": "article.sections[0]",
+   "sentence": "Acne can range from mild, with a few spots, to severe, with deep and painful lumps under the skin.",
+   "classification": "supported",
+   "evidence": "NHS: mild to severe range",
+   "url": "https://www.nhs.uk/conditions/acne/",
+   "action": "kept"
+  },
+  {
+   "id": "c44",
+   "where": "article.sections[0]",
+   "sentence": "It most often appears on the face, then the back, then the chest.",
+   "classification": "supported",
+   "evidence": "NHS overview: usually face, chest and back (order face/back/chest only from a local page)",
+   "url": "https://www.nhs.uk/conditions/acne/",
+   "action": "edited",
+   "newSentence": "It usually affects the face, chest and back."
+  },
+  {
+   "id": "c45",
+   "where": "article.sections[0]",
+   "sentence": "The NHS lists six main types of spot: blackheads, whiteheads, papules, pustules, nodules and cysts.",
+   "classification": "supported",
+   "evidence": "NHS: six main types",
+   "url": "https://www.nhs.uk/conditions/acne/",
+   "action": "kept"
+  },
+  {
+   "id": "c46",
+   "where": "article.sections[0]",
+   "sentence": "Blackheads are black or yellowish and are dark because of pigment in the lining of the follicle, not because of dirt.",
+   "classification": "unsupported",
+   "evidence": "Welsh NHS leaflet: black or yellow; pigment explanation not returned",
+   "url": "https://111.wales.nhs.uk/acne/",
+   "action": "edited",
+   "newSentence": "Blackheads are small and black or yellow in colour."
+  },
+  {
+   "id": "c47",
+   "where": "article.sections[0]",
+   "sentence": "Whiteheads are similar but firmer, and they do not empty when squeezed.",
+   "classification": "supported",
+   "evidence": "Welsh NHS leaflet: similar to blackheads, do not empty when squeezed; \"firmer\" not stated",
+   "url": "https://111.wales.nhs.uk/acne/",
+   "action": "edited",
+   "newSentence": "Whiteheads are similar to blackheads but do not empty when squeezed."
+  },
+  {
+   "id": "c48",
+   "where": "article.sections[0]",
+   "sentence": "Papules are small, tender red bumps, and pustules are papules with a white tip filled with pus.",
+   "classification": "supported",
+   "evidence": "Welsh NHS leaflet: papules small red bumps that may feel sore; pustules small red bumps filled with pus; \"white tip\" not stated",
+   "url": "https://111.wales.nhs.uk/acne/",
+   "action": "edited",
+   "newSentence": "Papules are small red bumps that may feel sore, and pustules are small red bumps filled with pus."
+  },
+  {
+   "id": "c49",
+   "where": "article.sections[0]",
+   "sentence": "Nodules are large, hard and often painful lumps under the skin.",
+   "classification": "supported",
+   "evidence": "Welsh NHS leaflet: hard lumps beneath the skin, sometimes painful",
+   "url": "https://111.wales.nhs.uk/acne/",
+   "action": "edited",
+   "newSentence": "Nodules are hard lumps beneath the skin that are sometimes painful."
+  },
+  {
+   "id": "c50",
+   "where": "article.sections[0]",
+   "sentence": "Cysts are the most severe type, being large lumps filled with pus, and they carry the greatest risk of permanent scarring.",
+   "classification": "supported",
+   "evidence": "NHS: cysts most severe, large pus-filled, greatest scarring risk",
+   "url": "https://www.nhs.uk/conditions/acne/",
+   "action": "kept"
+  },
+  {
+   "id": "c51",
+   "where": "article.sections[0]",
+   "sentence": "Clinicians describe severity along a continuum, using the distribution, number and type of lesions and the person's own views.",
+   "classification": "unsupported",
+   "evidence": "NICE: severity a continuum, mild-moderate / moderate-severe; \"distribution, number, type, person's views\" not returned",
+   "url": "https://www.nice.org.uk/guidance/ng198/chapter/recommendations",
+   "action": "edited",
+   "newSentence": "NICE describes acne severity as a continuum, graded as mild to moderate or moderate to severe."
+  },
+  {
+   "id": "c52",
+   "where": "article.sections[1]",
+   "sentence": "Acne starts when hair follicles become clogged with oil and dead skin cells, and bacteria then multiply in the blocked follicles.",
+   "classification": "supported",
+   "evidence": "as #2",
+   "url": "https://www.nhs.uk/conditions/acne/causes/",
+   "action": "edited",
+   "newSentence": "Acne starts when hair follicles become clogged with oil and dead skin cells, and bacteria that live on the skin can then affect the blocked follicles."
+  },
+  {
+   "id": "c53",
+   "where": "article.sections[1]",
+   "sentence": "Hormone changes are a major factor, and acne also tends to run in families.",
+   "classification": "supported",
+   "evidence": "NHS: hormones, runs in families",
+   "url": "https://www.nhs.uk/conditions/acne/causes/",
+   "action": "kept"
+  },
+  {
+   "id": "c54",
+   "where": "article.sections[1]",
+   "sentence": "The BAD leaflet says the oil glands can be sensitive to hormones even when hormone levels are normal.",
+   "classification": "supported",
+   "evidence": "BAD: oil glands sensitive to hormones even with normal levels",
+   "url": "https://www.bad.org.uk/pils/acne",
+   "action": "kept"
+  },
+  {
+   "id": "c55",
+   "where": "article.sections[1]",
+   "sentence": "It also lists hormonal causes such as polycystic ovary syndrome, some contraceptives, high-dose steroids and anabolic steroids.",
+   "classification": "unsupported",
+   "evidence": "BAD 2024 names PCOS and anabolic steroids; contraceptives and high-dose steroids not returned",
+   "url": "https://www.bad.org.uk/pils/acne",
+   "action": "edited",
+   "newSentence": "It also names polycystic ovary syndrome and anabolic steroids as possible triggers."
+  },
+  {
+   "id": "c56",
+   "where": "article.sections[1]",
+   "sentence": "Oily skincare products, greasy hair products and picking at the skin can make acne worse.",
+   "classification": "unsupported",
+   "evidence": "NHS causes: greasy products, some medicines such as steroids; \"picking makes acne worse\" and BAD attribution not returned",
+   "url": "https://www.nhs.uk/conditions/acne/causes/",
+   "action": "edited",
+   "newSentence": "The NHS lists some medicines, such as steroids, and skin or hair products that make the skin greasy among the things that can contribute."
+  },
+  {
+   "id": "c57",
+   "where": "article.sections[1]",
+   "sentence": "The NHS says that cleaning the skin does not remove the blockage in the follicles.",
+   "classification": "supported",
+   "evidence": "NHS causes: washing does not remove the blockage",
+   "url": "https://www.nhs.uk/conditions/acne/causes/",
+   "action": "kept"
+  },
+  {
+   "id": "c58",
+   "where": "article.sections[1]",
+   "sentence": "It also says there is no evidence that poor hygiene or sexual activity cause acne.",
+   "classification": "supported",
+   "evidence": "NHS causes: no evidence hygiene or sexual activity cause acne",
+   "url": "https://www.nhs.uk/conditions/acne/causes/",
+   "action": "kept"
+  },
+  {
+   "id": "c59",
+   "where": "article.sections[1]",
+   "sentence": "On diet, the BAD leaflet says there is not enough evidence to support particular diets for treating acne, though a healthy, balanced diet is advisable.",
+   "classification": "unsupported",
+   "evidence": "BAD 2024 only says healthy balanced diet advisable (older 2020 leaflet differed); NICE: little evidence to recommend dietary changes; \"not enough evidence\" misattributed to BAD",
+   "url": "https://www.bad.org.uk/pils/acne",
+   "action": "edited",
+   "newSentence": "On diet, the BAD leaflet says a healthy, well-balanced diet is advisable, and NICE says there is little evidence to support recommending dietary changes."
+  },
+  {
+   "id": "c60",
+   "where": "article.sections[2]",
+   "sentence": "The NHS self-care advice is to wash with a gentle cleanser twice a day, use non-comedogenic products and remove make-up at night.",
+   "classification": "unsupported",
+   "evidence": "NHS: gentle washing, mild cleanser, lukewarm water; NICE: syndet twice daily; \"twice a day\" and \"non-comedogenic\" attributed to NHS not returned",
+   "url": "https://www.nice.org.uk/guidance/ng198/chapter/recommendations",
+   "action": "edited",
+   "newSentence": "The NHS describes gentle washing with a mild cleanser and lukewarm water as helpful for acne. NICE advises a syndet ... cleansing product twice daily on acne-prone skin, oil-free products, and removing make-up at the end of the day."
+  },
+  {
+   "id": "c61",
+   "where": "article.sections[2]",
+   "sentence": "The NHS advises against squeezing spots or trying to clear blackheads, because this can cause permanent scarring.",
+   "classification": "supported",
+   "evidence": "NHS: do not squeeze/pop spots, permanent scarring; \"clear blackheads\" clause not returned",
+   "url": "https://www.nhs.uk/conditions/acne/",
+   "action": "edited",
+   "newSentence": "The NHS advises against squeezing spots, because this can cause permanent scarring."
+  },
+  {
+   "id": "c62",
+   "where": "article.sections[2]",
+   "sentence": "NICE gives similar advice, noting that persistent picking or scratching of lesions can increase the risk of scarring.",
+   "classification": "supported",
+   "evidence": "NICE: persistent picking or scratching increases scarring risk",
+   "url": "https://www.nice.org.uk/guidance/ng198/chapter/recommendations",
+   "action": "kept"
+  },
+  {
+   "id": "c63",
+   "where": "article.sections[2]",
+   "sentence": "For a few blackheads, whiteheads and spots, a pharmacist should be able to advise on gels or creams that can be bought over the counter.",
+   "classification": "supported",
+   "evidence": "NHS: pharmacist can suggest OTC products",
+   "url": "https://www.nhs.uk/conditions/acne/treatment/",
+   "action": "kept"
+  },
+  {
+   "id": "c64",
+   "where": "article.sections[2]",
+   "sentence": "Products with benzoyl peroxide or salicylic acid are options.",
+   "classification": "unsupported",
+   "evidence": "salicylic acid not in returned text (BAD lists benzoyl peroxide, azelaic acid, nicotinamide)",
+   "url": "https://www.bad.org.uk/pils/acne",
+   "action": "removed"
+  },
+  {
+   "id": "c65",
+   "where": "article.sections[2]",
+   "sentence": "The BAD leaflet describes benzoyl peroxide, azelaic acid and nicotinamide as first-step options that can take a few months to work.",
+   "classification": "supported",
+   "evidence": "BAD 2024: benzoyl peroxide, azelaic acid, nicotinamide OTC; most treatments 2 to 4 months for full effect; NHS 2 to 3 months before they start to work; \"first-step\" not stated",
+   "url": "https://www.bad.org.uk/pils/acne",
+   "action": "edited",
+   "newSentence": "The BAD leaflet lists benzoyl peroxide, azelaic acid and nicotinamide as active topical treatments that are available without a prescription. It says most treatments take 2 to 4 months to have their full effect, while the NHS says many take 2 to 3 months before they start to work."
+  },
+  {
+   "id": "c66",
+   "where": "article.sections[3]",
+   "sentence": "The NHS says a GP can offer prescription treatments if pharmacy products have not worked or acne is more severe.",
+   "classification": "supported",
+   "evidence": "NHS treatment: prescription medicine if pharmacy products not worked or moderate/severe",
+   "url": "https://www.nhs.uk/conditions/acne/treatment/",
+   "action": "kept"
+  },
+  {
+   "id": "c67",
+   "where": "article.sections[3]",
+   "sentence": "These include topical retinoids, topical antibiotics, azelaic acid and antibiotic tablets, and for women the combined contraceptive pill.",
+   "classification": "supported",
+   "evidence": "NHS treatment list",
+   "url": "https://www.nhs.uk/conditions/acne/treatment/",
+   "action": "kept"
+  },
+  {
+   "id": "c68",
+   "where": "article.sections[3]",
+   "sentence": "Antibiotic tablets are generally used alongside topical treatments for severe acne.",
+   "classification": "unsupported",
+   "evidence": "KNOWN DOUBT: NHS Wales says tablets plus topicals first option for severe acne; NICE lists azelaic acid + oral antibiotic for moderate to severe; unattributed claim reworded to NICE",
+   "url": "https://www.nice.org.uk/guidance/ng198/chapter/recommendations",
+   "action": "edited",
+   "newSentence": "NICE lists a topical treatment used together with an antibiotic tablet as an option for moderate to severe acne."
+  },
+  {
+   "id": "c69",
+   "where": "article.sections[3]",
+   "sentence": "NICE describes treatment as typically offered as a course that is reviewed after about three months, taking account of severity and the person's preferences.",
+   "classification": "unsupported",
+   "evidence": "KNOWN DOUBT: NICE recommends structured follow-up 12 weeks after starting treatment (monitor response, discuss ongoing management); \"course reviewed after about three months\" and \"severity and preferences\" not stated",
+   "url": "https://www.nice.org.uk/guidance/ng198/chapter/recommendations",
+   "action": "edited",
+   "newSentence": "NICE recommends a structured follow-up 12 weeks after treatment starts, to monitor the response and discuss options for ongoing management."
+  },
+  {
+   "id": "c70",
+   "where": "article.sections[3]",
+   "sentence": "Many of these treatments can take a couple of months or more before they start to work.",
+   "classification": "supported",
+   "evidence": "NHS: many treatments take 2 to 3 months to start to work",
+   "url": "https://www.nhs.uk/conditions/acne/treatment/",
+   "action": "edited",
+   "newSentence": "The NHS says many of these treatments can take 2 to 3 months before they start to work."
+  },
+  {
+   "id": "c71",
+   "where": "article.sections[3]",
+   "sentence": "Isotretinoin is a treatment for severe acne that comes as capsules.",
+   "classification": "supported",
+   "evidence": "NHS: isotretinoin is a capsule treatment for severe acne",
+   "url": "https://www.nhs.uk/medicines/isotretinoin-roaccutane/",
+   "action": "kept"
+  },
+  {
+   "id": "c72",
+   "where": "article.sections[3]",
+   "sentence": "The NHS says it is only considered for severe acne that has not responded to other treatments.",
+   "classification": "unsupported",
+   "evidence": "\"NHS says only considered\" not returned; NICE says considered for severe acne resistant to adequate courses of standard therapy",
+   "url": "https://www.nice.org.uk/guidance/ng198/chapter/recommendations",
+   "action": "edited",
+   "newSentence": "NICE says it is considered for severe acne that has resisted adequate courses of standard treatment."
+  },
+  {
+   "id": "c73",
+   "where": "article.sections[3]",
+   "sentence": "Because of the risk of side effects, the NHS says isotretinoin can only be prescribed by a specialist doctor.",
+   "classification": "supported",
+   "evidence": "NHS: because of risk of side effects, can only be prescribed by a specialist doctor (NICE notes accredited GPwERs on agreed pathways since Oct 2023; GP-initiation sentence deliberately left out)",
+   "url": "https://www.nhs.uk/medicines/isotretinoin-roaccutane/",
+   "action": "kept"
+  },
+  {
+   "id": "c74",
+   "where": "article.sections[3]",
+   "sentence": "Dry skin and lips are common side effects, and mood is monitored during treatment.",
+   "classification": "unsupported",
+   "evidence": "KNOWN DOUBT: NHS lists dry or itchy skin, rare serious mental health problems; \"lips\" and \"mood is monitored\" not returned",
+   "url": "https://www.nhs.uk/medicines/isotretinoin-roaccutane/",
+   "action": "edited",
+   "newSentence": "The NHS lists dry or itchy skin among its possible side effects, and mental health problems as rare but serious ones."
+  },
+  {
+   "id": "c75",
+   "where": "article.sections[3]",
+   "sentence": "The BAD leaflet notes that isotretinoin also has pregnancy restrictions.",
+   "classification": "unsupported",
+   "evidence": "BAD pregnancy restrictions not returned; NHS: very important not to become pregnant during and for at least 1 month after",
+   "url": "https://www.nhs.uk/medicines/isotretinoin-roaccutane/",
+   "action": "edited",
+   "newSentence": "The NHS also says it is very important not to become pregnant while taking isotretinoin capsules and for at least one month after stopping."
+  },
+  {
+   "id": "c76",
+   "where": "article.sections[4]",
+   "sentence": "The NHS advises seeing a GP if self-treatment is not helping, if there are many spots, or if spots are deep, painful or leave scars.",
+   "classification": "supported",
+   "evidence": "NHS: see GP if OTC not worked, lots of spots, deep/painful/scarring",
+   "url": "https://www.nhs.uk/conditions/acne/",
+   "action": "kept"
+  },
+  {
+   "id": "c77",
+   "where": "article.sections[4]",
+   "sentence": "A GP appointment is also advised if there are signs of skin infection or if acne is affecting mental health.",
+   "classification": "supported",
+   "evidence": "NHS: signs of skin infection (hot, swollen, red skin) or mental health",
+   "url": "https://www.nhs.uk/conditions/acne/",
+   "action": "edited",
+   "newSentence": "A GP appointment is also advised if there are signs of skin infection, such as hot, swollen and red skin, or if acne is affecting mental health."
+  },
+  {
+   "id": "c78",
+   "where": "article.sections[4]",
+   "sentence": "A GP can refer a person to a dermatologist, a doctor who specialises in skin.",
+   "classification": "supported",
+   "evidence": "NHS: GP can refer to dermatologist",
+   "url": "https://www.nhs.uk/conditions/acne/treatment/",
+   "action": "kept"
+  },
+  {
+   "id": "c79",
+   "where": "article.sections[4]",
+   "sentence": "NICE lists reasons for referral including acne that has not responded to two completed courses of treatment, acne leading to scarring, and persistent changes in skin colour.",
+   "classification": "unsupported",
+   "evidence": "NICE: two completed courses (mild to moderate); scarring referral; severe scarring persisting a year after; distress. Persistent colour change not returned",
+   "url": "https://www.nice.org.uk/guidance/ng198/chapter/recommendations",
+   "action": "edited",
+   "newSentence": "NICE lists reasons to consider referral to a dermatologist-led team, including mild to moderate acne that has not responded to two completed courses of treatment, severe acne-related scarring that persists a year after the acne has cleared, and acne of any severity that is causing or contributing to persistent psychological distress or a mental health disorder."
+  },
+  {
+   "id": "c80",
+   "where": "article.sections[4]",
+   "sentence": "NICE also says acne of any severity can cause psychological distress and mental health problems.",
+   "classification": "supported",
+   "evidence": "NICE: referral when acne of any severity contributes to persistent distress or mental health disorder",
+   "url": "https://www.nice.org.uk/guidance/ng198/chapter/recommendations",
+   "action": "edited",
+   "newSentence": "(merged into the NICE referral sentence above)"
+  },
+  {
+   "id": "c81",
+   "where": "article.sections[4]",
+   "sentence": "Treatment therefore aims to protect against both physical scarring and psychological harm.",
+   "classification": "unsupported",
+   "evidence": "\"treatment aims to protect against scarring and psychological harm\" not returned",
+   "url": "https://www.nice.org.uk/guidance/ng198/chapter/recommendations",
+   "action": "removed"
+  },
+  {
+   "id": "c82",
+   "where": "article.sections[4]",
+   "sentence": "In an emergency, such as someone in immediate danger, call 999.",
+   "classification": "textbook",
+   "evidence": "999 signposting",
+   "url": "https://medlineplus.gov/ency/article/000873.htm",
+   "action": "edited",
+   "newSentence": "In an emergency, such as someone in immediate danger, call 999."
+  },
+  {
+   "id": "c83",
+   "where": "article.sections[5]",
+   "sentence": "The BAD leaflet says acne usually fades by the early to mid-twenties, though it can last longer or start later in adult life.",
+   "classification": "supported",
+   "evidence": "BAD: usually clears by early to mid-twenties; can last longer or start in late twenties and beyond",
+   "url": "https://www.bad.org.uk/pils/acne",
+   "action": "kept"
+  },
+  {
+   "id": "c84",
+   "where": "article.sections[5]",
+   "sentence": "It says there is currently no cure, but effective treatment can prevent new spots and reduce scarring.",
+   "classification": "supported",
+   "evidence": "BAD 2024: no cure; treatments effective, prevent new spots, reduce scarring",
+   "url": "https://www.bad.org.uk/pils/acne",
+   "action": "kept"
+  },
+  {
+   "id": "c85",
+   "where": "article.sections[5]",
+   "sentence": "The NHS notes that acne can take several months to improve with treatment.",
+   "classification": "supported",
+   "evidence": "NHS: several months of treatment before improvement",
+   "url": "https://www.nhs.uk/conditions/acne/treatment/",
+   "action": "kept"
+  },
+  {
+   "id": "c86",
+   "where": "article.sections[5]",
+   "sentence": "The NHS says a GP can refer people to a dermatologist if acne is severe or prescription medicines are not working.",
+   "classification": "supported",
+   "evidence": "NHS: GP can refer if severe or medicines not working",
+   "url": "https://www.nhs.uk/conditions/acne/treatment/",
+   "action": "kept"
+  },
+  {
+   "id": "c87",
+   "where": "article.sections[5]",
+   "sentence": "Reasons for referral include painful nodules, scarring or a risk of scarring, or acne that is making a person feel very low or anxious.",
+   "classification": "unsupported",
+   "evidence": "NHS: scarring or risk of scarring; \"painful nodules\" and \"very low or anxious\" not returned",
+   "url": "https://www.nhs.uk/conditions/acne/treatment/",
+   "action": "edited",
+   "newSentence": "The NHS says a GP can refer people to a dermatologist if acne is severe or prescription medicines are not working, or if there is scarring or a risk of scarring."
+  },
+  {
+   "id": "c88",
+   "where": "article.sections[5]",
+   "sentence": "NICE says scar management is usually considered after the skin has finished remodelling, which can take up to about a year after the acne has cleared.",
+   "classification": "unsupported",
+   "evidence": "\"scar management after skin remodelling\" not returned; NICE: scarring referral to consultant dermatologist-led team with scarring expertise",
+   "url": "https://www.nice.org.uk/guidance/ng198/chapter/recommendations",
+   "action": "edited",
+   "newSentence": "NICE says referral for acne-related scarring is to a consultant dermatologist-led team with expertise in managing scarring."
+  },
+  {
+   "id": "c89",
+   "where": "article.faqs[0]",
+   "sentence": "The NHS says there is no evidence that poor hygiene or sexual activity cause acne.",
+   "classification": "supported",
+   "evidence": "NHS causes",
+   "url": "https://www.nhs.uk/conditions/acne/causes/",
+   "action": "kept"
+  },
+  {
+   "id": "c90",
+   "where": "article.faqs[0]",
+   "sentence": "It also says cleaning the skin does not remove the blockage that forms in the hair follicles.",
+   "classification": "supported",
+   "evidence": "NHS causes",
+   "url": "https://www.nhs.uk/conditions/acne/causes/",
+   "action": "kept"
+  },
+  {
+   "id": "c91",
+   "where": "article.faqs[0]",
+   "sentence": "Blackheads are dark because of pigment in the follicle lining, not because of dirt.",
+   "classification": "unsupported",
+   "evidence": "pigment explanation not returned",
+   "url": "https://111.wales.nhs.uk/acne/",
+   "action": "removed"
+  },
+  {
+   "id": "c92",
+   "where": "article.faqs[1]",
+   "sentence": "The NHS advises against squeezing spots or trying to clear blackheads, because this can cause permanent scarring.",
+   "classification": "supported",
+   "evidence": "NHS: do not squeeze; \"clear blackheads\" not returned",
+   "url": "https://www.nhs.uk/conditions/acne/",
+   "action": "edited",
+   "newSentence": "The NHS advises against squeezing spots, because this can cause permanent scarring."
+  },
+  {
+   "id": "c93",
+   "where": "article.faqs[1]",
+   "sentence": "NICE also says persistent picking or scratching of lesions can increase the risk of scarring.",
+   "classification": "supported",
+   "evidence": "NICE: persistent picking increases scarring risk",
+   "url": "https://www.nice.org.uk/guidance/ng198/chapter/recommendations",
+   "action": "kept"
+  },
+  {
+   "id": "c94",
+   "where": "article.faqs[1]",
+   "sentence": "For a few spots, the NHS says a pharmacist can advise on gels or creams that can be bought over the counter.",
+   "classification": "supported",
+   "evidence": "NHS: pharmacist can suggest OTC products",
+   "url": "https://www.nhs.uk/conditions/acne/treatment/",
+   "action": "kept"
+  },
+  {
+   "id": "c95",
+   "where": "article.faqs[2]",
+   "sentence": "The BAD leaflet says there is currently no cure for acne.",
+   "classification": "supported",
+   "evidence": "BAD 2024: there is no cure",
+   "url": "https://www.bad.org.uk/pils/acne",
+   "action": "kept"
+  },
+  {
+   "id": "c96",
+   "where": "article.faqs[2]",
+   "sentence": "It adds that effective treatment can prevent new spots and reduce scarring, and that acne usually fades by the early to mid-twenties.",
+   "classification": "supported",
+   "evidence": "BAD 2024: prevent new spots, reduce scarring; clears by early to mid-twenties",
+   "url": "https://www.bad.org.uk/pils/acne",
+   "action": "kept"
+  },
+  {
+   "id": "c97",
+   "where": "article.faqs[2]",
+   "sentence": "It can last longer or start later in adult life.",
+   "classification": "supported",
+   "evidence": "BAD: can last longer or start late twenties and beyond",
+   "url": "https://www.bad.org.uk/pils/acne",
+   "action": "kept"
+  },
+  {
+   "id": "c98",
+   "where": "article.faqs[3]",
+   "sentence": "The BAD leaflet says there is not enough evidence to back specific diets for treating acne.",
+   "classification": "unsupported",
+   "evidence": "BAD 2024 only says healthy balanced diet advisable; NICE: little evidence for dietary changes",
+   "url": "https://www.nice.org.uk/guidance/ng198/chapter/recommendations",
+   "action": "edited",
+   "newSentence": "NICE says there is little evidence to support recommending dietary changes."
+  },
+  {
+   "id": "c99",
+   "where": "article.faqs[3]",
+   "sentence": "It says a healthy, balanced diet is advisable.",
+   "classification": "supported",
+   "evidence": "BAD 2024: healthy, well-balanced diet advisable",
+   "url": "https://www.bad.org.uk/pils/acne",
+   "action": "kept"
+  },
+  {
+   "id": "c100",
+   "where": "article.faqs[3]",
+   "sentence": "Hormone changes, extra oil in the skin and blocked follicles are the main causes the NHS and BAD describe.",
+   "classification": "unsupported",
+   "evidence": "\"extra oil\" and BAD attribution not returned; NHS: blocked follicles, hormones",
+   "url": "https://www.nhs.uk/conditions/acne/causes/",
+   "action": "edited",
+   "newSentence": "The NHS describes blocked hair follicles and hormone changes as the main drivers of acne."
+  },
+  {
+   "id": "c101",
+   "where": "article.faqs[4]",
+   "sentence": "The NHS describes isotretinoin as a capsule treatment for severe acne that has not responded to other treatments.",
+   "classification": "unsupported",
+   "evidence": "\"not responded\" attributed to NHS not returned; NHS: capsule treatment for severe acne",
+   "url": "https://www.nhs.uk/medicines/isotretinoin-roaccutane/",
+   "action": "edited",
+   "newSentence": "The NHS describes isotretinoin as a capsule treatment for severe acne."
+  },
+  {
+   "id": "c102",
+   "where": "article.faqs[4]",
+   "sentence": "Because of the risk of side effects, the NHS says it can only be prescribed by a specialist doctor.",
+   "classification": "supported",
+   "evidence": "NHS: specialist doctor only",
+   "url": "https://www.nhs.uk/medicines/isotretinoin-roaccutane/",
+   "action": "kept"
+  },
+  {
+   "id": "c103",
+   "where": "article.faqs[4]",
+   "sentence": "Dry skin and lips are common side effects, and mood is monitored during treatment.",
+   "classification": "unsupported",
+   "evidence": "KNOWN DOUBT: as #74",
+   "url": "https://www.nhs.uk/medicines/isotretinoin-roaccutane/",
+   "action": "edited",
+   "newSentence": "The NHS lists dry or itchy skin among its possible side effects, and mental health problems as rare but serious ones."
+  },
+  {
+   "id": "c104",
+   "where": "article.faqs[5]",
+   "sentence": "Yes, the NHS says acne can affect mental health.",
+   "classification": "supported",
+   "evidence": "NHS: acne can affect mental health",
+   "url": "https://www.nhs.uk/conditions/acne/",
+   "action": "kept"
+  },
+  {
+   "id": "c105",
+   "where": "article.faqs[5]",
+   "sentence": "NICE says acne of any severity can cause psychological distress.",
+   "classification": "supported",
+   "evidence": "NICE: referral when acne of any severity contributes to persistent distress or mental health disorder",
+   "url": "https://www.nice.org.uk/guidance/ng198/chapter/recommendations",
+   "action": "edited",
+   "newSentence": "NICE says acne of any severity can contribute to persistent psychological distress or a mental health disorder."
+  },
+  {
+   "id": "c106",
+   "where": "article.faqs[5]",
+   "sentence": "The NHS advises seeing a GP if acne is affecting mental health.",
+   "classification": "supported",
+   "evidence": "NHS: GP if mental health affected",
+   "url": "https://www.nhs.uk/conditions/acne/",
+   "action": "kept"
+  },
+  {
+   "id": "c107",
+   "where": "article.faqs[5]",
+   "sentence": "NICE says treatment aims to protect against both physical scarring and psychological harm.",
+   "classification": "unsupported",
+   "evidence": "not returned",
+   "url": "https://www.nice.org.uk/guidance/ng198/chapter/recommendations",
+   "action": "removed"
+  },
+  {
+   "id": "c108",
+   "where": "article.faqs[5]",
+   "sentence": "A GP can refer a person to a dermatologist.",
+   "classification": "supported",
+   "evidence": "NHS: GP can refer to dermatologist",
+   "url": "https://www.nhs.uk/conditions/acne/treatment/",
+   "action": "kept"
+  },
+  {
+   "id": "c109",
+   "where": "article.keyFacts[0]",
+   "sentence": "Acne vulgaris",
+   "classification": "supported",
+   "evidence": "NICE guideline title \"Acne vulgaris\"",
+   "url": "https://www.nice.org.uk/guidance/ng198/chapter/recommendations",
+   "action": "kept"
+  },
+  {
+   "id": "c110",
+   "where": "article.keyFacts[1]",
+   "sentence": "Most often the face, then the back, then the chest",
+   "classification": "supported",
+   "evidence": "NHS overview: usually face, chest and back",
+   "url": "https://www.nhs.uk/conditions/acne/",
+   "action": "edited",
+   "newSentence": "Usually the face, chest and back"
+  },
+  {
+   "id": "c111",
+   "where": "article.keyFacts[2]",
+   "sentence": "Blackheads, whiteheads, papules, pustules, nodules and cysts",
+   "classification": "supported",
+   "evidence": "NHS: six main types",
+   "url": "https://www.nhs.uk/conditions/acne/",
+   "action": "kept"
+  },
+  {
+   "id": "c112",
+   "where": "article.keyFacts[3]",
+   "sentence": "A pharmacist for a few spots, or a GP for many, deep or scarring spots",
+   "classification": "supported",
+   "evidence": "NHS: pharmacist for mild, GP for moderate/severe, many/deep/scarring",
+   "url": "https://www.nhs.uk/conditions/acne/",
+   "action": "kept"
+  },
+  {
+   "id": "c113",
+   "where": "article.keyFacts[4]",
+   "sentence": "Prescribed only by a specialist doctor, as the NHS states",
+   "classification": "supported",
+   "evidence": "NHS: specialist doctor only",
+   "url": "https://www.nhs.uk/medicines/isotretinoin-roaccutane/",
+   "action": "kept"
+  },
+  {
+   "id": "c114",
+   "where": "article.keyFacts[5]",
+   "sentence": "Often fades by the early to mid-twenties but can last longer",
+   "classification": "supported",
+   "evidence": "BAD: early to mid-twenties, can last longer",
+   "url": "https://www.bad.org.uk/pils/acne",
+   "action": "kept"
+  }
+ ],
+ "notes": "13 searches. Removed: `rash` symptom link (no source ties acne to rash; NHS mentions rash only as an isotretinoin side effect), which left one relationship group, so the page was NOT publishable; added the `physiology: [hormones]` link (supported: NHS/BAD name hormone change as a major cause) to reach two groups and the checker ends ok. If the maintainer prefers no extra link, the page would be noindex. Kept aliases 'spots' (NHS 'Acne (spots)' hosted titles) and 'pimples' (MedlinePlus: 'acne ... causes pimples') and the related link to polycystic-ovary-syndrome (BAD 2024 and NHS causes name PCOS). The isotretinoin 'specialist doctor only' line is attributed to the NHS; NICE notes accredited GPs on agreed pathways can start it since Oct 2023, and that sentence is deliberately kept out. Remaining doubts: lesion-type descriptions come from an NHS Wales leaflet (111.wales.nhs.uk); 'acne cannot be passed on' and the 2 to 4 months / 12-week timings came from summaries that blend pages; the NICE 'continuum' and referral wording was read through search summaries of NG198, not the full page. Textbook sentences: 999 and NHS 111/Samaritans signposting only. Note: first-pass sentences 79/80/105 overlap and were merged into one NICE referral sentence."
+}
