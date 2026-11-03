@@ -1,0 +1,77 @@
+{
+ "id": "class-nitroimidazoles",
+ "searchesUsed": 0,
+ "counts": {
+  "supported": 4,
+  "textbook": 0,
+  "unsupported": 3,
+  "wrong": 0,
+  "unsafe": 0,
+  "unchecked": 0
+ },
+ "claims": [
+  {
+   "id": "c01",
+   "where": "summary",
+   "classification": "supported",
+   "evidence": "NHS/LiverTox: acts on bacteria or parasites; tinidazole a nitroimidazole like metronidazole",
+   "url": "https://www.ncbi.nlm.nih.gov/books/NBK548538/",
+   "action": "edited",
+   "newSentence": "removed unretrieved 'live without oxygen'"
+  },
+  {
+   "id": "c02",
+   "where": "mechanism[0]",
+   "classification": "unsupported",
+   "evidence": "'absent in aerobic human cells' not in retrieved text",
+   "url": "https://www.ncbi.nlm.nih.gov/books/NBK548538/",
+   "action": "removed"
+  },
+  {
+   "id": "c03",
+   "where": "mechanism[1]",
+   "classification": "supported",
+   "evidence": "LiverTox: activated intracellularly by bacterial/parasitic enzymes to radical anion damaging proteins and DNA",
+   "url": "https://www.ncbi.nlm.nih.gov/books/NBK548538/",
+   "action": "edited",
+   "newSentence": "merged into new mechanism"
+  },
+  {
+   "id": "c04",
+   "where": "mechanism[2]",
+   "classification": "unsupported",
+   "evidence": "Pyruvate:ferredoxin oxidoreductase not in retrieved text; replaced by retrieved Giardia protein-binding finding",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3862438/",
+   "action": "edited",
+   "newSentence": "study in Giardia found metronidazole and tinidazole bind the same subset of proteins"
+  },
+  {
+   "id": "c05",
+   "where": "cautions[0]",
+   "classification": "supported",
+   "evidence": "NHS: avoid alcohol during and for 2 days after; sick, stomach pain, flushes, palpitations, headache",
+   "url": "https://www.nhs.uk/medicines/metronidazole/common-questions-about-metronidazole/",
+   "action": "edited",
+   "newSentence": "added listed reactions"
+  },
+  {
+   "id": "c06",
+   "where": "cautions[1]",
+   "classification": "supported",
+   "evidence": "LiverTox: similar to metronidazole, likely similar spectrum and side effects",
+   "url": "https://www.ncbi.nlm.nih.gov/books/NBK548538/",
+   "action": "edited",
+   "newSentence": "removed inference 'similar cautions may apply'"
+  },
+  {
+   "id": "c07",
+   "where": "classEffects[0]",
+   "classification": "unsupported",
+   "evidence": "metallic taste and diarrhoea not in retrieved text",
+   "url": "https://www.nhs.uk/medicines/metronidazole/side-effects-of-metronidazole/",
+   "action": "removed",
+   "newSentence": "replaced with LiverTox liver-enzyme statement"
+  }
+ ],
+ "notes": "Mechanism details beyond LiverTox statements not retrieved. MedlinePlus/other sources differ on post-treatment alcohol window (3 days) so no extra number added beyond NHS 2 days. Added a tinidazole CYP3A4 caution from LiverTox (row not in first pass)."
+}

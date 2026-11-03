@@ -1,0 +1,81 @@
+{
+ "id": "class-5-alpha-reductase-inhibitors",
+ "searchesUsed": 0,
+ "counts": {
+  "supported": 6,
+  "textbook": 0,
+  "unsupported": 1,
+  "wrong": 0,
+  "unsafe": 1,
+  "unchecked": 0
+ },
+ "claims": [
+  {
+   "id": "c01",
+   "where": "summary[0]",
+   "classification": "supported",
+   "evidence": "NHS: enlarged prostate and (private) hair loss; stops testosterone becoming DHT",
+   "url": "https://www.nhs.uk/medicines/finasteride/about-finasteride/",
+   "action": "kept"
+  },
+  {
+   "id": "c02",
+   "where": "summary[1]",
+   "classification": "supported",
+   "evidence": "MHRA DSU title: psychiatric side effects and sexual dysfunction",
+   "url": "https://www.gov.uk/government/news/mhra-strengthens-safety-warnings-for-finasteride-and-dutasteride",
+   "action": "kept"
+  },
+  {
+   "id": "c03",
+   "where": "mechanism",
+   "classification": "supported",
+   "evidence": "NHS: stops testosterone turning into DHT",
+   "url": "https://www.nhs.uk/medicines/finasteride/about-finasteride/",
+   "action": "kept"
+  },
+  {
+   "id": "c04",
+   "where": "classEffects[0]",
+   "classification": "supported",
+   "evidence": "NHS: loss of interest in sex, erection difficulty; some report continuing after stopping",
+   "url": "https://www.nhs.uk/medicines/finasteride/about-finasteride/",
+   "action": "edited",
+   "newSentence": "added persistence"
+  },
+  {
+   "id": "c05",
+   "where": "classEffects[1]",
+   "classification": "supported",
+   "evidence": "MHRA: depression, suicidal thoughts, sexual dysfunction; precautionary mood warning for dutasteride",
+   "url": "https://www.gov.uk/government/news/mhra-strengthens-safety-warnings-for-finasteride-and-dutasteride",
+   "action": "kept"
+  },
+  {
+   "id": "c06",
+   "where": "cautions[0]",
+   "classification": "supported",
+   "evidence": "NHS: can affect PSA results, tell doctor",
+   "url": "https://www.nhs.uk/medicines/finasteride/about-finasteride/",
+   "action": "edited"
+  },
+  {
+   "id": "c07",
+   "where": "cautions[1]",
+   "classification": "unsupported",
+   "evidence": "MedlinePlus broken tablets: search returned nothing",
+   "url": "https://www.nhs.uk/medicines/finasteride/",
+   "action": "removed"
+  },
+  {
+   "id": "c08",
+   "where": "cautions[2]",
+   "classification": "unsafe",
+   "evidence": "999/A&E attribution to NHS not retrieved; MHRA says contact a healthcare professional urgently",
+   "url": "https://www.gov.uk/government/news/mhra-strengthens-safety-warnings-for-finasteride-and-dutasteride",
+   "action": "edited",
+   "newSentence": "contact a healthcare professional urgently; 999 or A&E if immediate danger (site signposting rule, treat as textbook)"
+  }
+ ],
+ "notes": "The 999 clause is a site signposting addition not retrieved verbatim. MHRA advice to stop finasteride 1 mg was deliberately not stated (would instruct). searchesUsed across all five classes: 10 shared."
+}

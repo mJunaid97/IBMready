@@ -1,0 +1,83 @@
+{
+ "id": "class-tetracyclines",
+ "searchesUsed": 0,
+ "counts": {
+  "supported": 8,
+  "textbook": 0,
+  "unsupported": 0,
+  "wrong": 0,
+  "unsafe": 0,
+  "unchecked": 0
+ },
+ "claims": [
+  {
+   "id": "c01",
+   "where": "summary[0]",
+   "classification": "supported",
+   "evidence": "NHS: tetracycline antibiotic interferes with bacteria making proteins",
+   "url": "https://www.nhs.uk/medicines/doxycycline/common-questions-about-doxycycline/",
+   "action": "kept"
+  },
+  {
+   "id": "c02",
+   "where": "summary[1]",
+   "classification": "supported",
+   "evidence": "NHS: chest and dental infections, skin infections, rosacea, STIs",
+   "url": "https://www.nhs.uk/medicines/doxycycline/about-doxycycline/",
+   "action": "kept"
+  },
+  {
+   "id": "c03",
+   "where": "mechanism",
+   "classification": "supported",
+   "evidence": "NHS common questions: works by interfering with proteins bacteria need",
+   "url": "https://www.nhs.uk/medicines/doxycycline/common-questions-about-doxycycline/",
+   "action": "edited",
+   "newSentence": "added rosacea inflammation sentence"
+  },
+  {
+   "id": "c04",
+   "where": "cautions[0]",
+   "classification": "supported",
+   "evidence": "NHS: not recommended in pregnancy; can affect tooth and bone development; stains teeth, not usual for young children",
+   "url": "https://www.nhs.uk/medicines/doxycycline/pregnancy-breastfeeding-and-fertility-while-taking-doxycycline/",
+   "action": "edited",
+   "newSentence": "broadened to teeth and bones, younger children"
+  },
+  {
+   "id": "c05",
+   "where": "cautions[1]",
+   "classification": "supported",
+   "evidence": "Scottish NHS leaflet: no indigestion remedies or iron/calcium/magnesium/aluminium/zinc supplements at the same time",
+   "url": "https://www.nhs.uk/medicines/doxycycline/",
+   "action": "edited",
+   "newSentence": "attributed to hospital leaflet; wording adjusted"
+  },
+  {
+   "id": "c06",
+   "where": "cautions[2]",
+   "classification": "supported",
+   "evidence": "NHS: alcohol best avoided, can stop it working properly",
+   "url": "https://www.nhs.uk/medicines/doxycycline/common-questions-about-doxycycline/",
+   "action": "kept"
+  },
+  {
+   "id": "c07",
+   "where": "classEffects[0]",
+   "classification": "supported",
+   "evidence": "NHS: headaches, nausea, vomiting",
+   "url": "https://www.nhs.uk/medicines/doxycycline/side-effects-of-doxycycline/",
+   "action": "edited",
+   "newSentence": "specified doxycycline"
+  },
+  {
+   "id": "c08",
+   "where": "classEffects[1]",
+   "classification": "supported",
+   "evidence": "NHS: skin more sensitive to sun, rash, itching, redness",
+   "url": "https://www.nhs.uk/medicines/doxycycline/side-effects-of-doxycycline/",
+   "action": "edited"
+  }
+ ],
+ "notes": "Added penicillin-allergy and thrush sentences from NHS common questions. Hospital-leaflet advice on spacing differs by source so no timings given. Alcohol claim was not in the first broad search but confirmed on exact-title search."
+}

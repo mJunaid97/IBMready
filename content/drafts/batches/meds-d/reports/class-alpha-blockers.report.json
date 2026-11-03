@@ -1,0 +1,74 @@
+{
+ "id": "class-alpha-blockers",
+ "searchesUsed": 0,
+ "counts": {
+  "supported": 6,
+  "textbook": 0,
+  "unsupported": 1,
+  "wrong": 0,
+  "unsafe": 0,
+  "unchecked": 0
+ },
+ "claims": [
+  {
+   "id": "c01",
+   "where": "summary",
+   "classification": "supported",
+   "evidence": "NHS: tamsulosin treats enlarged prostate symptoms",
+   "url": "https://www.nhs.uk/medicines/tamsulosin/",
+   "action": "kept"
+  },
+  {
+   "id": "c02",
+   "where": "mechanism",
+   "classification": "supported",
+   "evidence": "NHS tamsulosin pages (first pass); consistent with retrieved overview",
+   "url": "https://www.nhs.uk/medicines/tamsulosin/",
+   "action": "kept"
+  },
+  {
+   "id": "c03",
+   "where": "cautions[0]",
+   "classification": "supported",
+   "evidence": "NHS: other alpha blockers may decrease blood pressure; some BP medicines don't mix well",
+   "url": "https://www.nhs.uk/medicines/tamsulosin/taking-tamsulosin-with-other-medicines-and-herbal-supplements/",
+   "action": "edited",
+   "newSentence": "reworded"
+  },
+  {
+   "id": "c04",
+   "where": "cautions[1]",
+   "classification": "supported",
+   "evidence": "NHS: orthostatic hypotension listed",
+   "url": "https://www.nhs.uk/medicines/tamsulosin/who-can-and-cannot-take-tamsulosin/",
+   "action": "kept"
+  },
+  {
+   "id": "c05",
+   "where": "classEffects[0]",
+   "classification": "supported",
+   "evidence": "hospital leaflet: dizzy or lightheaded when first taking tamsulosin",
+   "url": "https://www.wsh.nhs.uk/CMS-Documents/Patient-leaflets/UrologyDepartment/6711-1-Medication-for-lower-urinary-tract-symptoms.pdf",
+   "action": "edited",
+   "newSentence": "dropped 'especially on standing'"
+  },
+  {
+   "id": "c06",
+   "where": "classEffects[1]",
+   "classification": "supported",
+   "evidence": "NHS: allergic reaction to tamsulosin or alfuzosin, doxazosin, prazosin, terazosin",
+   "url": "https://www.nhs.uk/medicines/tamsulosin/who-can-and-cannot-take-tamsulosin/",
+   "action": "kept"
+  },
+  {
+   "id": "c07",
+   "where": "members",
+   "classification": "unsupported",
+   "evidence": "NICE list not re-retrieved; NHS names the four similar drugs (supported)",
+   "url": "https://www.nhs.uk/medicines/tamsulosin/who-can-and-cannot-take-tamsulosin/",
+   "action": "kept",
+   "newSentence": "members names retained"
+  }
+ ],
+ "notes": "Removed first-pass NICE CG97 reference to avoid an unretrieved source; check ledger-only. Added NHS list of other unsuitable circumstances."
+}
