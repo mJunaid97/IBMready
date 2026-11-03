@@ -1,0 +1,24 @@
+{
+ "type": "medications",
+ "id": "apixaban",
+ "verdict": "accept-with-edits",
+ "edits": [
+  {
+   "field": "summary",
+   "action": "remove-sentence",
+   "match": "It starts to work within hours, is taken twice a day with or without food, and its one important harm is bleeding, so people carry an anticoagulant alert card and tell every dentist and surgeon they see.",
+   "replacement": "It starts to work within hours, is taken twice a day with or without food, and its main harm is bleeding, so people carry an anticoagulant alert card and tell every dentist and surgeon they see.",
+   "reason": "UNSAFE: 'its one important harm' is an overstated absolute (anaemia, nausea, rash and rare liver injury are also recognised); softened to the NHS framing that bleeding is the most common/main harm."
+  }
+ ],
+ "unverified_urls": [
+  "https://www.nhs.uk/medicines/apixaban/about-apixaban/",
+  "https://www.nhs.uk/medicines/apixaban/common-questions-about-apixaban/",
+  "https://medlineplus.gov/druginfo/meds/a613032.html"
+ ],
+ "checked_urls": [
+  "https://primarycare.northeastlondon.icb.nhs.uk/wp-content/uploads/2023/10/Apixaban-counselling-checklist.pdf",
+  "https://www.wsh.nhs.uk/CMS-Documents/Patient-leaflets/Deep-vein-thrombosis/7050-1-Apixaban.pdf"
+ ],
+ "notes": "Line-by-line check. The domain-restricted search surfaced NHS trust/ICB material rather than the nhs.uk medicines pages; excerpts support bleeding more easily (nosebleeds, heavier periods, bleeding gums, bruising) as the most common effect, NSAIDs/aspirin to be flagged, herbal products interacting, rare liver test changes. 'Twice a day with or without food' is standard labelling (general knowledge, no dose figure). 'Stop 24-72 hours before surgery', 'do not double up', 'intracranial about half the rate of warfarin' and the reversal-agent note all predate the patch. Boxed warning on stopping in AF and spinal haematoma are MedlinePlus Important Warning content (general knowledge). No protected field changed."
+}

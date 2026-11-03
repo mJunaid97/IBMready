@@ -1,0 +1,24 @@
+{
+ "type": "procedures",
+ "id": "urinary-catheterization",
+ "verdict": "accept-with-edits",
+ "edits": [
+  {
+   "field": "what",
+   "action": "remove-sentence",
+   "match": "Catheter-associated urinary infection is the commonest healthcare-associated infection, and the single most effective way to prevent it is to avoid catheters that are not needed and to remove them as soon as they are.",
+   "replacement": "Catheter-associated urinary infection is one of the commonest healthcare-associated infections, and the risk rises the longer a catheter is in place, so catheters that are not needed are avoided and removed as soon as possible.",
+   "reason": "UNSAFE: two overstated absolutes ('the commonest', 'the single most effective way') not supported by the NHS excerpt, which states that infection risk rises with duration of use."
+  }
+ ],
+ "unverified_urls": [
+  "https://www.nhs.uk/tests-and-treatments/urinary-catheters/living-with/",
+  "https://www.ncbi.nlm.nih.gov/sites/books/NBK564404/",
+  "https://pmc.ncbi.nlm.nih.gov/articles/PMC6143107/"
+ ],
+ "checked_urls": [
+  "https://www.nhs.uk/tests-and-treatments/urinary-catheters/",
+  "https://www.nhs.uk/tests-and-treatments/urinary-catheters/risks/"
+ ],
+ "notes": "NHS excerpts support: intermittent vs indwelling vs suprapubic (used when urethra damaged/blocked or intermittent not possible), ability to work/exercise/swim/have sex, UTI risk rising with duration, bladder spasms, leakage (bypassing) possibly signalling blockage, blockages, urethral injury, strictures from repeated use, bladder stones after years. 10 mL balloon volume predates the patch. Difficult-catheterisation content (no force, false passage, early specialist help) is standard StatPearls material. No protected field changed."
+}

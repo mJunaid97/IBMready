@@ -1,0 +1,37 @@
+{
+ "type": "procedures",
+ "id": "cardiac-catheterization",
+ "verdict": "accept-with-edits",
+ "edits": [
+  {
+   "field": "what",
+   "action": "remove-sentence",
+   "match": "A diagnostic study usually takes between half an hour and an hour; longer when treatment is added.",
+   "replacement": "",
+   "reason": "UNSUPPORTED: duration figure not in the retrieved NHS excerpt or the pre-patch record."
+  },
+  {
+   "field": "why",
+   "action": "remove-sentence",
+   "match": "; angiography remains the definitive test for deciding between medicines, stents and surgery",
+   "replacement": "",
+   "reason": "UNSAFE: overstated absolute ('the definitive test'); not in the NHS source, and non-invasive CT coronary angiography is the first-line test for many patients in the UK."
+  },
+  {
+   "field": "after",
+   "action": "remove-sentence",
+   "match": "a lump under the skin (haematoma) should settle in a few days",
+   "replacement": "a small lump under the skin (haematoma) usually settles",
+   "reason": "UNSUPPORTED: 'in a few days' is a timescale not in the NHS excerpt, which says bruising can last a few weeks."
+  }
+ ],
+ "unverified_urls": [
+  "https://www.nhlbi.nih.gov/health/cardiac-catheterization/during",
+  "https://medlineplus.gov/ency/article/003419.htm"
+ ],
+ "checked_urls": [
+  "https://www.nhs.uk/tests-and-treatments/coronary-angiography/",
+  "https://www.nhs.uk/tests-and-treatments/coronary-angiography/risks/"
+ ],
+ "notes": "NHS excerpts support: wrist or groin access under X-ray, local anaesthetic and awake, same-day discharge after rest, bruising lasting a few weeks, brief hot flush from dye for a minute or two, contrast allergy uncommon, kidney strain usually mild and reversible, femoral artery damage rare, low blood pressure/slow heart rate, heart attack/stroke/death under 1 in 1000, small radiation dose and pregnancy declaration. Remaining additions are standard textbook content. No protected field changed."
+}

@@ -1,0 +1,26 @@
+{
+ "type": "drug-classes",
+ "id": "anticoagulants",
+ "verdict": "accept-with-edits",
+ "edits": [
+  {
+   "field": "mechanism",
+   "action": "remove-sentence",
+   "match": "Reversal is likewise drug-specific: vitamin K for warfarin, protamine for heparin, idarucizumab for dabigatran, and andexanet alfa, which NICE recommends for life-threatening or uncontrolled bleeding on apixaban or rivaroxaban.",
+   "replacement": "Reversal is likewise drug-specific: vitamin K for warfarin, protamine for heparin, idarucizumab for dabigatran, and andexanet alfa for apixaban or rivaroxaban, which NICE recommends only for life-threatening or uncontrolled gastrointestinal bleeding.",
+   "reason": "WRONG: NICE TA697 recommends andexanet alfa only for life-threatening or uncontrolled gastrointestinal bleeding and explicitly not for intracranial or other major bleeds; the sentence overstated the recommendation."
+  }
+ ],
+ "unverified_urls": [
+  "https://www.nhs.uk/medicines/anticoagulants/",
+  "https://www.nhs.uk/medicines/anticoagulants/side-effects/",
+  "https://www.ncbi.nlm.nih.gov/sites/books/NBK560651/",
+  "https://www.nice.org.uk/news/articles/nice-publishes-updated-clinical-guideline-on-the-diagnosis-and-management-of-atrial-fibrillation",
+  "https://www.nice.org.uk/advice/esnm73/chapter/key-points-from-the-evidence"
+ ],
+ "checked_urls": [
+  "https://www.nice.org.uk/guidance/ta697",
+  "https://www.nice.org.uk/guidance/ta697/chapter/1-Recommendations"
+ ],
+ "notes": "Search spent on the NICE andexanet claim (the only NEW claim likely to be overstated). NHS side-effect list (dizziness, headaches, hair loss, jaundice; warning signs of bleeding) and the DOAC-first/warfarin-for-mechanical-valves statements are consistent with NHS/NICE NG196 but the cited NHS and StatPearls pages were not retrieved. Protected fields unchanged; all references https on approved hosts."
+}

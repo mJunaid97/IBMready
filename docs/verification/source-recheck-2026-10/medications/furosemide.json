@@ -1,0 +1,24 @@
+{
+ "type": "medications",
+ "id": "furosemide",
+ "verdict": "accept-with-edits",
+ "edits": [
+  {
+   "field": "sideEffects.common",
+   "action": "remove-sentence",
+   "match": "Feeling sick, eased by taking the dose with or just after food",
+   "replacement": "Feeling sick",
+   "reason": "UNSUPPORTED: the self-care advice to take the dose with food is not in the retrieved NHS excerpt or the pre-patch record."
+  }
+ ],
+ "unverified_urls": [
+  "https://www.nhs.uk/medicines/furosemide/about-furosemide/",
+  "https://medlineplus.gov/druginfo/meds/a682858.html"
+ ],
+ "checked_urls": [
+  "https://www.nhs.uk/medicines/furosemide/",
+  "https://www.nhs.uk/medicines/furosemide/side-effects-of-furosemide/",
+  "https://www.nhs.uk/medicines/furosemide/common-questions-about-furosemide/"
+ ],
+ "notes": "Line-by-line check. NHS excerpts support: dehydration, headaches, dizziness, feeling sick and extra urination as common effects, timing the dose no later than mid-afternoon, anaphylaxis, potassium loss with blood monitoring, long-term use needing regular blood and urine tests, driving caution, alcohol best avoided, contraception caveat with vomiting. No dose figure was added. Six-hour duration and morning dosing follow from the pre-patch onset text. Sick-day pause, not stopping without advice and the blood-pressure consequence are NHS common-questions content (general knowledge). No protected field changed."
+}

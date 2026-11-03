@@ -1,0 +1,26 @@
+{
+ "type": "anatomy",
+ "id": "nose",
+ "verdict": "accept-with-edits",
+ "edits": [
+  {
+   "field": "sections",
+   "action": "remove-sentence",
+   "match": "The nasal valve regulates the rate of airflow and the slight resistance it provides helps to keep the lungs expanded.",
+   "replacement": "The nasal valve regulates the rate of airflow and is the site of greatest resistance in the nasal airway.",
+   "reason": "UNSUPPORTED: 'helps to keep the lungs expanded' is not in the cited StatPearls Nose chapter; the retrieved excerpt supports only that the valve is the flow-limiting, highest-resistance segment."
+  }
+ ],
+ "unverified_urls": [
+  "https://www.uhsussex.nhs.uk/resources/broken-nose-nasal-fracture/",
+  "https://nbt.nhs.uk/our-services/a-z-services/emergency-zone/ed-miu-patient-information-leaflets/nosebleeds",
+  "https://dchft.nhs.uk/leaflets/nasal-polypectomy/",
+  "https://openstax.org/books/anatomy-and-physiology-2e/pages/22-1-organs-and-structures-of-the-respiratory-system"
+ ],
+ "checked_urls": [
+  "https://www.ncbi.nlm.nih.gov/sites/books/NBK532870/",
+  "https://www.ncbi.nlm.nih.gov/sites/books/NBK546636/",
+  "https://www.ncbi.nlm.nih.gov/sites/books/NBK544232/"
+ ],
+ "notes": "SUPPORTED: nasal valve borders (upper lateral cartilage, septum, head of inferior turbinate) and flow-limiting role; turbinate mucosa swelling regulating resistance; olfactory epithelium at roof/upper septum; anterior septum (Kiesselbach/Little's area) as commonest bleeding site. GENERAL KNOWLEDGE (correct): nasal bones articulating with frontal bone and maxillae, upper lateral and major alar cartilages, vomer in septum, meatuses receiving sinus and nasolacrimal drainage, trigeminal sensation, internal/external carotid supply, conducting-zone function. Clinical text consistent with NHS trust leaflets (not retrieved). Structures valid; references https on approved hosts."
+}

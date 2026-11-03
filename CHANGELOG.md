@@ -1,6 +1,6 @@
 # Changelog
 
-## v1.10.1 — 2026-11-03
+## v1.10.3 — 2026-11-03
 
 SEO and speed: a page-by-page audit of the production build (836 pages, Lighthouse on seven templates, structured data, sitemaps, headers, internal links, Ahrefs)
 and what it found. The audit and its numbers are in `docs/seo/audit-2026-11-03.md`.
@@ -23,6 +23,32 @@ and what it found. The audit and its numbers are in `docs/seo/audit-2026-11-03.m
 - Server rules: a `.git` directory in the web root (the pull script creates one) is never served; Markdown and JSON files carry `X-Robots-Tag: noindex`; `.webp` has its media type and cache lifetime.
 - Smoke test: `lang="en-GB"`, large-preview robots value, `og:locale`, feed link and headline length on every sitemap URL; every blog post linked from three pages;
   no template page served.
+
+## v1.10.2 — 2026-11-03
+
+- Hubs: a prerendered section hub now fetches its filter data as soon as the browser is idle, so the first keystroke or
+  facet change filters immediately instead of waiting for the type, atlas and vocabulary files to download
+- QA: the smoke test waits for a hub or search filter to react rather than pausing a fixed 400 ms, and a sitemap URL
+  that does not answer within 45 s is retried once and recorded as a failure instead of ending the run (both found by
+  the live check of v1.10.1, which failed on timing, not on content)
+
+## v1.10.1 — 2026-11-03
+
+Second pass on the 146 pages deepened in October (CLINICAL.md 5.5), and the last eleven anatomy articles.
+
+- Verification: every sentence added to the 28 conditions, 16 tests, 7 imaging studies, 6 biomarkers, 13 procedures, 16
+  medicines, 16 drug classes, 4 first-aid topics, 30 physiology pages and 10 anatomy articles was re-checked against a
+  retrieved page from its cited publisher. 107 edits: 78 pages accepted as written, 68 with removals or rewordings, none
+  rejected. Removed or corrected, among others: a lamotrigine skin-reaction risk list that had been pasted into the
+  xanthine-oxidase inhibitors page; an andexanet alfa statement wider than NICE TA697; a GTN spray instruction that
+  conflicted with the NHS page; an allopurinol taper and a titration frequency that no source gave; a warfarin missed-dose
+  instruction; sertraline onset claims that contradicted the page's own figures; CT and PET dose comparisons, timing and
+  prevalence figures and superlatives not in any source; cerebellar, laryngeal, oesophageal, bronchial and lingual
+  anatomy statements corrected against the cited StatPearls chapters; "nausea" dropped from the adult stroke signs
+- Anatomy: full articles for the gallbladder, spleen, ureters, prostate, penis, uterine ligaments, pituitary, thymus,
+  rib cage, shoulder girdle and foot (five to six sections, key facts, atlas structures and sources each). Every one of
+  the 48 organ pages is now an indexable article
+- Review status is unchanged (source-verified: facts checked against the cited sources, not clinically reviewed)
 
 ## v1.10.0 — 2026-11-03
 

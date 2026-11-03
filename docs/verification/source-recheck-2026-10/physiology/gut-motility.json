@@ -1,0 +1,17 @@
+{
+ "type": "physiology",
+ "id": "gut-motility",
+ "verdict": "accept-with-edits",
+ "edits": [
+  {
+   "field": "body",
+   "action": "remove-sentence",
+   "match": "Guidance advises seeking care for vomiting lasting more than an hour or signs of dehydration or malnutrition.",
+   "replacement": "Guidance advises seeking care for prolonged vomiting or signs of dehydration or malnutrition.",
+   "reason": "UNSAFE: 'vomiting lasting more than an hour' is a new numeric cut-off not in the pre-patch record; cut-off removed, remainder kept."
+  }
+ ],
+ "unverified_urls": [],
+ "checked_urls": [],
+ "notes": "Verdict file generated from the upstream verifier report; every match string was asserted to occur in the current record. URL checks were done in the upstream report and are not repeated here."
+}

@@ -1,0 +1,24 @@
+{
+ "type": "first-aid",
+ "id": "stroke",
+ "verdict": "accept-with-edits",
+ "edits": [
+  {
+   "field": "recognise",
+   "action": "remove-sentence",
+   "match": "Also: sudden weakness or numbness on one side of the body including the leg, hand or foot; difficulty finding words or speaking in clear sentences; sudden blurred vision or loss of sight in one or both eyes; sudden memory loss or confusion; dizziness or a sudden fall; a sudden, severe headache; nausea",
+   "replacement": "Also: sudden weakness or numbness on one side of the body including the leg, hand or foot; difficulty finding words or speaking in clear sentences; sudden blurred vision or loss of sight in one or both eyes; sudden memory loss or confusion; dizziness or a sudden fall; a sudden, severe headache",
+   "reason": "UNSUPPORTED: the Stroke Association lists nausea/vomiting only among additional signs of childhood stroke, not in its adult 'other signs' list."
+  }
+ ],
+ "unverified_urls": [
+  "https://www.nhs.uk/conditions/stroke/symptoms/",
+  "https://www.sja.org.uk/get-advice/first-aid-advice/stroke/",
+  "https://www.stroke.org.uk/what-is-stroke/what-are-the-symptoms-of-stroke/share-the-fast-message"
+ ],
+ "checked_urls": [
+  "https://www.stroke.org.uk/stroke/symptoms",
+  "https://www.stroke.org.uk/sites/default/files/fast_leaflet_july_2015_web.pdf"
+ ],
+ "notes": "Stroke Association excerpt supports FAST wording, 'any one sign - call 999', the other sudden signs, and TIA as the same emergency even if symptoms pass. Steps count (4) and order unchanged; SJA stroke page not retrieved but step wording (head and shoulders raised, nothing to eat or drink, monitor, CPR if not breathing) is standard SJA sequence."
+}

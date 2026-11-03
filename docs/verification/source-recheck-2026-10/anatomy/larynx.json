@@ -1,0 +1,33 @@
+{
+ "type": "anatomy",
+ "id": "larynx",
+ "verdict": "accept-with-edits",
+ "edits": [
+  {
+   "field": "sections",
+   "action": "remove-sentence",
+   "match": "The larynx lies in the anterior part of the neck, in the midline, at the level of the third to seventh cervical vertebrae, and is held in position by muscles and ligaments.",
+   "replacement": "The larynx lies in the anterior part of the neck, in the midline, at the level of the third to sixth cervical vertebrae, and is held in position by muscles and ligaments.",
+   "reason": "WRONG: StatPearls (Anatomy, Head and Neck: Larynx) places the adult larynx at C3 to C6, with the cricoid at C6; C7 is below the larynx."
+  },
+  {
+   "field": "keyFacts",
+   "action": "remove-item",
+   "match": "Location",
+   "replacement": "",
+   "reason": "WRONG: gives 'third to seventh cervical vertebrae'; source says C3 to C6."
+  }
+ ],
+ "unverified_urls": [
+  "https://www.nhs.uk/conditions/laryngeal-cancer/diagnosis/",
+  "https://www.nhs.uk/conditions/laryngeal-cancer/symptoms/",
+  "https://www.nhs.uk/conditions/laryngitis/",
+  "https://openstax.org/books/anatomy-and-physiology-2e/pages/22-1-organs-and-structures-of-the-respiratory-system",
+  "https://www.ncbi.nlm.nih.gov/sites/books/NBK545265/"
+ ],
+ "checked_urls": [
+  "https://www.ncbi.nlm.nih.gov/sites/books/NBK538202/",
+  "https://www.ncbi.nlm.nih.gov/sites/books/NBK553185/"
+ ],
+ "notes": "SUPPORTED: 'three unpaired midline cartilages and four pairs of smaller cartilages' is the cited StatPearls Larynx Cartilage wording (it counts the triticeal cartilages), although it sits awkwardly beside the keyFact listing three paired cartilages; left as sourced. GENERAL KNOWLEDGE (correct): cricoid the only complete ring, epiglottis elastic cartilage attached inside thyroid cartilage, arytenoids on cricoid lamina, vocal ligament as free edge of conus elasticus with vocalis, posterior cricoarytenoid sole abductor, vagus/recurrent laryngeal supply (cricothyroid via external laryngeal branch is covered by 'mainly'), left RLN loop under the arch explaining hoarseness in chest disease, three regions, 'glottis = vestibular folds, vocal folds and the space between' (OpenStax wording). Clinical text matches NHS laryngeal cancer / laryngitis pages. Structures valid; references https on approved hosts."
+}

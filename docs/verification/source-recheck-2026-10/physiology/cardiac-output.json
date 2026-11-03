@@ -1,0 +1,17 @@
+{
+ "type": "physiology",
+ "id": "cardiac-output",
+ "verdict": "accept-with-edits",
+ "edits": [
+  {
+   "field": "body",
+   "action": "remove-sentence",
+   "match": "Stroke volume itself is set by three things clinicians name separately: preload, the volume of blood returning to fill the ventricle at the end of diastole; afterload, the pressure the left ventricle must push against to open the aortic valve; and contractility, the intrinsic strength of the muscle's squeeze, which also depends on heart size, fitness and sex.",
+   "replacement": "Stroke volume itself, which also varies with heart size, fitness and sex, is set by three things clinicians name separately: preload, the volume of blood returning to fill the ventricle at the end of diastole; afterload, the pressure the left ventricle must push against to open the aortic valve; and contractility, the intrinsic strength of the muscle's squeeze.",
+   "reason": "WRONG: the source attributes variation with heart size, fitness and sex to stroke volume, not to contractility; clause moved to the correct antecedent."
+  }
+ ],
+ "unverified_urls": [],
+ "checked_urls": [],
+ "notes": "Verdict file generated from the upstream verifier report; every match string was asserted to occur in the current record. URL checks were done in the upstream report and are not repeated here."
+}

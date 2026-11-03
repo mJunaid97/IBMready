@@ -1,0 +1,17 @@
+{
+ "type": "conditions",
+ "id": "chronic-kidney-disease",
+ "verdict": "accept-with-edits",
+ "edits": [
+  {
+   "field": "riskFactors",
+   "action": "remove-item",
+   "match": "Heart disease",
+   "replacement": "",
+   "reason": "SCHEMA: duplicates the existing riskFactors item 'Cardiovascular disease'."
+  }
+ ],
+ "unverified_urls": [],
+ "checked_urls": [],
+ "notes": "Verdict file generated from the upstream verifier report; every match string was asserted to occur in the current record. URL checks were done in the upstream report and are not repeated here."
+}

@@ -1,0 +1,17 @@
+{
+ "type": "tests",
+ "id": "hormone-tests",
+ "verdict": "accept-with-edits",
+ "edits": [
+  {
+   "field": "interpretation",
+   "action": "remove-sentence",
+   "match": "Cushing syndrome from a pituitary or adrenal tumour, or from steroid-like hormone production elsewhere; severe stress, illness and depression can mimic it, so results are confirmed with repeat and further tests",
+   "replacement": "Cushing syndrome from a pituitary or adrenal tumour, or from ACTH produced by a tumour elsewhere in the body; severe stress, illness and depression can mimic it, so results are confirmed with repeat and further tests",
+   "reason": "WRONG: ectopic Cushing's is due to ACTH production by a tumour elsewhere, not 'steroid-like hormone production'."
+  }
+ ],
+ "unverified_urls": [],
+ "checked_urls": [],
+ "notes": "Verdict file generated from the upstream verifier report; every match string was asserted to occur in the current record. URL checks were done in the upstream report and are not repeated here."
+}

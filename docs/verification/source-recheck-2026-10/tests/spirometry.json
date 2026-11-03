@@ -1,0 +1,17 @@
+{
+ "type": "tests",
+ "id": "spirometry",
+ "verdict": "accept-with-edits",
+ "edits": [
+  {
+   "field": "what",
+   "action": "remove-sentence",
+   "match": "A result is called abnormal when it falls below the lower limit of the normal range for that person rather than below a single fixed number.",
+   "replacement": "",
+   "reason": "WRONG: states lower-limit-of-normal as a universal rule, which conflicts with the record's own fixed FEV1/FVC 0.7 cut-off for obstruction; sentence removed."
+  }
+ ],
+ "unverified_urls": [],
+ "checked_urls": [],
+ "notes": "Verdict file generated from the upstream verifier report; every match string was asserted to occur in the current record. URL checks were done in the upstream report and are not repeated here."
+}

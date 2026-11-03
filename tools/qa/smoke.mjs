@@ -137,7 +137,7 @@ if (ta < 2) fail(`typeahead returned ${ta} results for "knee"`); else ok(`typeah
 // 4b. hub filters work after hydration
 await page.goto(dirUrl('conditions'), { waitUntil: 'load' }); await rendered();
 const before = await page.evaluate(() => document.querySelectorAll('#cards .card').length);
-await page.fill('#q', 'gout'); await page.waitForTimeout(600);
+await page.fill('#q', 'gout'); await page.waitForFunction((n) => document.querySelectorAll('#cards .card').length < n, before, { timeout: 30000 }).catch(() => {});
 const after = await page.evaluate(() => document.querySelectorAll('#cards .card').length);
 if (!(before > 10 && after >= 1 && after < before)) fail(`hub filter: ${before} cards → ${after} after filtering`); else ok(`hub filter: ${before} cards → ${after} for "gout"`);
 // 4c. hub filters: live count, URL state, body-system facet, A–Z bar hidden while filtered, clear button, deep-link restore
@@ -151,7 +151,7 @@ const hr = await page.evaluate(() => ({ cards: document.querySelectorAll('#cards
 if (!(hr.cards >= 1 && hr.cards < before && hr.pressed === 'cardiovascular' && hr.sys === 'heart')) fail(`hub deep link: ${JSON.stringify(hr)}`); else ok(`hub deep link: ?cat=cardiovascular&system=heart restores ${hr.cards} cards`);
 // search page: type and body-system filters with a live count, state in the URL
 await page.goto(dirUrl('search') + '?q=pain&type=symptoms', { waitUntil: 'load' }); await page.waitForFunction(() => /result/.test(document.getElementById('result-count')?.textContent || ''), null, { timeout: 30000 });
-await page.selectOption('#system-facet', 'heart'); await page.waitForTimeout(400);
+await page.selectOption('#system-facet', 'heart'); await page.waitForFunction(() => /Heart/.test(document.getElementById('result-count')?.textContent || ''), null, { timeout: 30000 }).catch(() => {});
 const ss = await page.evaluate(() => ({ count: document.getElementById('result-count').textContent, n: document.querySelectorAll('#results li').length, groups: [...document.querySelectorAll('.result-group h2 .r-type')].map(x => x.textContent), url: location.search, pressed: document.querySelector('#filters [aria-pressed="true"]')?.dataset.t }));
 if (!(ss.n >= 1 && ss.groups.every(g => g === 'Symptom') && ss.url.includes('type=symptoms') && ss.url.includes('system=heart') && /Heart/.test(ss.count) && ss.pressed === 'symptoms')) fail(`search filters: ${JSON.stringify(ss)}`); else ok(`search filters: "${ss.count}", URL ${ss.url}`);
 // anatomy hub: system chips and text filter hide cards and blocks in place
@@ -225,7 +225,7 @@ const avail = await page.evaluate(() => ({ avail: document.querySelectorAll('#av
 if (!(avail.avail >= 2 && avail.same && avail.rx && avail.routes && avail.ld)) fail(`medication page taxonomy: ${JSON.stringify(avail)}`); else ok(`medication page: availability by country (${avail.avail} rows), same-class medicines, RxNorm/ATC codes`);
 await page.goto(dirUrl('tests'), { waitUntil: 'load' }); await rendered();
 const facetSel = await page.evaluate(() => document.querySelectorAll('#facets select').length);
-if (facetSel < 2) fail(`tests hub facets: ${facetSel} selects`); else { await page.selectOption('#facets select[data-facet="specimens"]', 'serum'); await page.waitForTimeout(400); const nf = await page.evaluate(() => document.querySelectorAll('#cards .card').length); if (!(nf >= 1 && nf < 25)) fail(`tests hub specimen facet: ${nf} cards`); else ok(`tests hub facets: ${facetSel} selects, ${nf} serum tests`); }
+if (facetSel < 2) fail(`tests hub facets: ${facetSel} selects`); else { await page.selectOption('#facets select[data-facet="specimens"]', 'serum'); await page.waitForFunction(() => document.querySelectorAll('#cards .card').length < 39 && document.querySelectorAll('#cards .card').length > 0, null, { timeout: 30000 }).catch(() => {}); const nf = await page.evaluate(() => document.querySelectorAll('#cards .card').length); if (!(nf >= 1 && nf < 25)) fail(`tests hub specimen facet: ${nf} cards`); else ok(`tests hub facets: ${facetSel} selects, ${nf} serum tests`); }
 // typeahead resolves a brand to its generic page
 await page.goto(base, { waitUntil: 'load' }); await page.fill('#hsearch-q', 'cozaar'); await page.waitForTimeout(800);
 const brand = await page.evaluate(() => document.querySelector('#hsearch-results li a')?.getAttribute('href') || '');
@@ -279,7 +279,9 @@ else {
         if (!/^https:\/\//.test(u)) { bad++; fail(`sitemap URL is not absolute https: ${u}`); }
         if (/^https:\/\/www\./.test(u)) { bad++; fail(`sitemap URL uses the www host: ${u}`); }
         if (u.includes('?')) { bad++; fail(`sitemap URL carries a query string: ${u}`); }
-        const rr = await page.request.get(u.replace(/^https?:\/\/[^/]+\//, base), { maxRedirects: 0 }); sampled++;
+        let rr = null;
+        for (let attempt = 0; attempt < 2 && !rr; attempt++) { try { rr = await page.request.get(u.replace(/^https?:\/\/[^/]+\//, base), { maxRedirects: 0, timeout: 45000 }); } catch (e) { if (attempt) { bad++; fail(`sitemap URL did not respond (${String(e.message).split('\n')[0]}) ${u}`); } } }
+        sampled++; if (!rr) continue;
         if (rr.status() !== 200) { bad++; fail(`sitemap URL ${rr.status()} ${u}`); continue; }
         if (STATIC) {
           // specification section 38: no sitemap URL may carry noindex or canonicalise somewhere else

@@ -1,0 +1,23 @@
+{
+ "type": "drug-classes",
+ "id": "proton-pump-inhibitors",
+ "verdict": "accept-with-edits",
+ "edits": [
+  {
+   "field": "cautions",
+   "action": "remove-item",
+   "match": "Some research has suggested a slightly higher risk of stomach cancer with very long use, but larger studies are needed to confirm a causal link",
+   "replacement": "",
+   "reason": "UNSUPPORTED: not found on the retrieved NHS omeprazole pages (which say omeprazole can mask symptoms of stomach cancer, a different point); an unsupported cancer-risk claim."
+  }
+ ],
+ "unverified_urls": [
+  "https://www.ncbi.nlm.nih.gov/sites/books/n/statpearls/article-27894/",
+  "https://www.ncbi.nlm.nih.gov/sites/books/NBK539786/"
+ ],
+ "checked_urls": [
+  "https://www.nhs.uk/medicines/omeprazole/",
+  "https://www.nhs.uk/medicines/omeprazole/who-can-and-cannot-take-omeprazole/"
+ ],
+ "notes": "NHS excerpt supports telling the doctor before endoscopy because acid suppression hides problems, and not stopping without advice. Prodrug/CYP2C19, C. difficile, B12/iron, hypomagnesaemia and interstitial nephritis match StatPearls (not retrieved; odd 'sites/books/n/statpearls/article-27894' URL flagged). Protected fields unchanged."
+}

@@ -1,0 +1,32 @@
+{
+ "type": "drug-classes",
+ "id": "radiopharmaceuticals-diagnostic",
+ "verdict": "accept-with-edits",
+ "edits": [
+  {
+   "field": "mechanism",
+   "action": "remove-sentence",
+   "match": "After the injection the person rests quietly for an hour or more without reading or conversation, because muscle activity, including talking, diverts tracer into working muscles.",
+   "replacement": "After the injection the person sits or lies quietly in a waiting area for an hour or more before the scan.",
+   "reason": "UNSUPPORTED: the 'no reading' detail is not in the cited Christie leaflet excerpt; retrieved protocol wording is only 'sit or lie in a quiet area during the uptake phase'."
+  },
+  {
+   "field": "cautions",
+   "action": "remove-sentence",
+   "match": "After the FDG injection the person sits quietly, without reading or talking, until the scan, because activity changes where the tracer goes",
+   "replacement": "After the FDG injection the person sits or lies quietly until the scan, because activity changes where the tracer goes",
+   "reason": "UNSUPPORTED: 'without reading' not in any retrieved excerpt."
+  }
+ ],
+ "unverified_urls": [
+  "https://www.nhs.uk/tests-and-treatments/pet-scan/",
+  "https://www.ncbi.nlm.nih.gov/sites/books/NBK554440/",
+  "https://www.ncbi.nlm.nih.gov/sites/books/NBK559013/",
+  "https://www.ncbi.nlm.nih.gov/books/NBK567749/",
+  "https://www.ouh.nhs.uk/media/wy4hwvx3/97565ct.pdf"
+ ],
+ "checked_urls": [
+  "https://www.christie.nhs.uk/media/ffzhyw2z/759-information-about-your-pet_ct-scan-may-2024.pdf"
+ ],
+ "notes": "Christie excerpt supports blood-glucose check and that high glucose/insulin reduce tracer uptake, with separate instructions for diabetic patients. Tc-99m physics, free pertechnetate in thyroid/salivary glands/stomach, FDG trapping after phosphorylation are standard nuclear medicine. Note the cited Christie URL differs from the retrieved current PDF. Protected fields unchanged."
+}

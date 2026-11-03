@@ -1,0 +1,25 @@
+{
+ "type": "drug-classes",
+ "id": "thyroid-hormones",
+ "verdict": "accept-with-edits",
+ "edits": [
+  {
+   "field": "mechanism",
+   "action": "remove-sentence",
+   "match": "Roughly half of a levothyroxine dose is converted this way.",
+   "replacement": "",
+   "reason": "UNSUPPORTED: numeric claim not present pre-patch and not in any retrieved excerpt."
+  }
+ ],
+ "unverified_urls": [
+  "https://www.nhs.uk/medicines/levothyroxine/",
+  "https://www.ncbi.nlm.nih.gov/sites/books/NBK539808/",
+  "https://www.ncbi.nlm.nih.gov/sites/books/NBK519566/",
+  "https://www.ncbi.nlm.nih.gov/sites/books/NBK499850/"
+ ],
+ "checked_urls": [
+  "https://www.nhs.uk/conditions/underactive-thyroid-hypothyroidism/treatment/",
+  "https://www.england.nhs.uk/long-read/liothyronine-advice-for-prescribers/"
+ ],
+ "notes": "NHS/NHS England excerpts support levothyroxine as standard, dose set by blood tests, liothyronine initiated only by an NHS consultant endocrinologist (shared-care/AMBER frameworks exist). Over-replacement signs, coffee/food/calcium/iron absorption and pregnancy monitoring match NHS levothyroxine pages (not retrieved). Protected fields unchanged."
+}
