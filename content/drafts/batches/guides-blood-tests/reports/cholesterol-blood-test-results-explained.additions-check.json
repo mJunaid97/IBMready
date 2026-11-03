@@ -1,0 +1,65 @@
+{
+  "id": "cholesterol-blood-test-results-explained",
+  "searchesUsed": 8,
+  "checks": [
+    {
+      "index": 0,
+      "classification": "unsupported",
+      "evidence": "Returned BHF text: lumps around knuckles, knees, back of ankle (Achilles tendon) and a pale white ring around the iris. Eyelid lumps and \"many people have none\" not stated in returned text.",
+      "url": "https://www.bhf.org.uk/informationsupport/conditions/familial-hypercholesterolaemia",
+      "action": "edited",
+      "newSentence": "The BHF lists lumps around the knuckles, knees or back of the ankle (Achilles tendon) and a pale white ring around the coloured part of the eye as possible signs of familial hypercholesterolaemia."
+    },
+    {
+      "index": 1,
+      "classification": "supported",
+      "evidence": "BHF: if 1 of your parents has FH there is a 50 per cent (1 in 2) chance you could inherit the same gene variant.",
+      "url": "https://www.bhf.org.uk/informationsupport/conditions/familial-hypercholesterolaemia",
+      "action": "kept"
+    },
+    {
+      "index": 2,
+      "classification": "textbook",
+      "evidence": "Not stated verbatim in returned text; standard definition (total cholesterol includes HDL and LDL; non-HDL = TC minus HDL).",
+      "url": "https://labtestsonline.org.uk/tests/lipid-profile",
+      "action": "kept"
+    },
+    {
+      "index": 3,
+      "classification": "supported",
+      "evidence": "A lab page notes NICE CG181 (now NG238) recommended patients no longer have to fast for routine lipid profile; NICE: a fasting sample is not needed.",
+      "url": "https://pathology.uhsussex.nhs.uk/pug/biochemistry-immunology/biochemistry-tests/390-lipid-profile",
+      "action": "kept"
+    },
+    {
+      "index": 4,
+      "classification": "unsupported",
+      "evidence": "NHS 111 Wales page not returned; returned sources gave no statement that targets are lower for diabetes/CVD (an older BHF article said no specific target).",
+      "url": "https://111.wales.nhs.uk/encyclopaedia/c/article/cholesterol,high",
+      "action": "removed"
+    },
+    {
+      "index": 5,
+      "classification": "unsupported",
+      "evidence": "NHS statins text: should not be taken with liver disease or blood tests suggesting liver not working properly, or if pregnant or breastfeeding. \"Severe\" and \"trying to conceive\" not stated.",
+      "url": "https://www.nhs.uk/medicines/statins/",
+      "action": "edited",
+      "newSentence": "The NHS says statins should not be taken by people with liver disease or blood tests suggesting the liver may not be working properly, or by anyone who is pregnant or breastfeeding."
+    },
+    {
+      "index": 6,
+      "classification": "unsupported",
+      "evidence": "NHS: statins may be offered if QRISK shows increased 10-year risk, or with a condition such as diabetes, CKD or inherited high cholesterol. Age 85 not addressed in results.",
+      "url": "https://www.nhs.uk/medicines/statins/",
+      "action": "edited",
+      "newSentence": "The NHS says statins may be offered if a QRISK health assessment shows an increased risk of cardiovascular disease in the next 10 years, or if you have a condition such as diabetes, chronic kidney disease or inherited high cholesterol."
+    },
+    {
+      "index": 7,
+      "classification": "supported",
+      "evidence": "BHF statins page: most people taking statins will have no side effects.",
+      "url": "https://www.bhf.org.uk/informationsupport/treatments/medicine/statins",
+      "action": "kept"
+    }
+  ]
+}

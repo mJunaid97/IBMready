@@ -1,0 +1,50 @@
+{
+  "id": "hba1c-test-what-it-shows",
+  "searchesUsed": 8,
+  "checks": [
+    {
+      "index": 0,
+      "classification": "supported",
+      "evidence": "NHS trust guidance: result 48 mmol/mol or above with no symptoms is repeated; second result >=48 confirms diagnosis. Search blended several trust pages, exact page not attributable.",
+      "url": "https://www.ruh.nhs.uk/pathology/documents/clinical_guidelines/PATH-006_DM_diagnosis_guideline.pdf",
+      "action": "kept"
+    },
+    {
+      "index": 1,
+      "classification": "supported",
+      "evidence": "HbA1c test is not used for diagnosing diabetes during pregnancy.",
+      "url": "https://labtestsonline.org.uk/tests/hba1c-test",
+      "action": "kept"
+    },
+    {
+      "index": 2,
+      "classification": "wrong",
+      "evidence": "Returned text: symptoms of diabetes for less than two months (another source three months); not one month.",
+      "url": "https://www.ruh.nhs.uk/pathology/documents/clinical_guidelines/PATH-006_DM_diagnosis_guideline.pdf",
+      "action": "edited",
+      "newSentence": "Hospital guidelines say HbA1c may be unsuitable for diagnosis when diabetes symptoms have been present for less than about two to three months, and local protocols differ."
+    },
+    {
+      "index": 3,
+      "classification": "supported",
+      "evidence": "Lab Tests Online UK: haemolytic anaemia or heavy bleeding may give falsely low results; iron deficiency may raise HbA1c.",
+      "url": "https://labtestsonline.org.uk/tests/hba1c-test",
+      "action": "kept"
+    },
+    {
+      "index": 4,
+      "classification": "unsupported",
+      "evidence": "Returned: accuracy depends on method used; case reports of variants interfering. \"Other methods may be needed\" not stated; Sheffield page not returned.",
+      "url": "https://labtestsonline.org.uk/tests/hba1c-test",
+      "action": "edited",
+      "newSentence": "Lab Tests Online UK says the accuracy of an HbA1c result depends on the method used to measure it, and some haemoglobin variants can interfere with the measurement."
+    },
+    {
+      "index": 5,
+      "classification": "unsupported",
+      "evidence": "DPP eligibility not covered by any returned text.",
+      "url": "https://northeastlondon.icb.nhs.uk/service/diabetes-diabetes-prevention-programme-ndpp/",
+      "action": "removed"
+    }
+  ]
+}

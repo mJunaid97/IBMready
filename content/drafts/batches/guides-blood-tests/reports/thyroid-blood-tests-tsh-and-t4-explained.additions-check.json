@@ -1,0 +1,50 @@
+{
+  "id": "thyroid-blood-tests-tsh-and-t4-explained",
+  "searchesUsed": 2,
+  "checks": [
+    {
+      "index": 0,
+      "classification": "supported",
+      "evidence": "NHS: if pregnant or planning pregnancy with underactive thyroid, levothyroxine dose will likely need to change.",
+      "url": "https://www.nhs.uk/conditions/underactive-thyroid-hypothyroidism/",
+      "action": "kept"
+    },
+    {
+      "index": 1,
+      "classification": "unsupported",
+      "evidence": "Family history point not returned.",
+      "url": "https://www.nhs.uk/conditions/underactive-thyroid-hypothyroidism/",
+      "action": "removed"
+    },
+    {
+      "index": 2,
+      "classification": "unsupported",
+      "evidence": "Search returned nothing on raised TSH with normal free T4 repeated at three months.",
+      "url": "https://www.nhs.uk/conditions/underactive-thyroid-hypothyroidism/",
+      "action": "removed"
+    },
+    {
+      "index": 3,
+      "classification": "supported",
+      "evidence": "UCLH text refers to thyroid eye disease in patients with Graves' disease.",
+      "url": "https://www.uclh.nhs.uk/patients-and-visitors/patient-information-pages/radioiodine-therapy",
+      "action": "kept"
+    },
+    {
+      "index": 4,
+      "classification": "edited",
+      "evidence": "UCLH: radioiodine may worsen thyroid eye disease, so treatment may be postponed or given with steroid or thyroid medication cover; 'doctors discuss' not seen.",
+      "url": "https://www.uclh.nhs.uk/patients-and-visitors/patient-information-pages/radioiodine-therapy",
+      "action": "edited",
+      "newSentence": "UCLH says radioactive iodine may worsen thyroid eye disease, so treatment may be postponed until the eye problems are stable or given with steroid or thyroid medication cover."
+    },
+    {
+      "index": 5,
+      "classification": "edited",
+      "evidence": "NHS Inform: beta-blockers relieve symptoms such as tremor and rapid heartbeat; NHS leaflet: they do not affect thyroid hormone production. 'First weeks' not seen.",
+      "url": "https://www.wwl.nhs.uk/media/.leaflets/66e41a1085ca46.26358006.pdf",
+      "action": "edited",
+      "newSentence": "Beta-blockers can relieve symptoms of an overactive thyroid such as tremor and a fast heartbeat, but they do not affect how much thyroid hormone is made."
+    }
+  ]
+}
