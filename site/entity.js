@@ -715,6 +715,9 @@ export async function renderIndex(type) {
   document.getElementById('facets')?.addEventListener('change', render);
   clear?.addEventListener('click', reset);
   cards.addEventListener('click', (ev) => { if (ev.target.closest('[data-clear]')) reset(); });
+  // a prerendered hub loads its data lazily; start that fetch when the browser is idle so the first keystroke or facet
+  // change filters at once instead of waiting for the type, atlas and vocabulary files
+  if (PRERENDERED) (window.requestIdleCallback || ((fn) => setTimeout(fn, 400)))(() => { load().catch(() => {}); });
   // restore a linked state: ?cat=, ?q= and one parameter per facet (validated against the real options)
   const sp = new URLSearchParams(location.search); let restored = false;
   if (sp.get('cat')) { await load(); if ((typeData.meta.categories || []).some(c => c.id === sp.get('cat'))) { setCat(sp.get('cat')); restored = true; } }
