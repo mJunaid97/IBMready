@@ -3,7 +3,7 @@ B = {}
 
 B['fda-thyroid-tablets-lot-recall-vitruvias'] = dict(
  name="US recall of one lot of thyroid tablets", published="2026-08-21",
- summary="Vitruvias Therapeutics recalled one lot of Thyroid Tablets, USP 30 mg in the US on 21 August 2026 because testing showed they could be superpotent.",
+ summary="Vitruvias Therapeutics announced a US recall of one lot of Thyroid Tablets, USP 30 mg on 21 August 2026 because of possible superpotency.",
  keyPoints=[
   "Vitruvias Therapeutics announced the recall on 21 August 2026 and the US FDA posted it on 24 August 2026.",
   "It covers one lot, number 504950, of Thyroid Tablets, USP 30 mg, because of possible superpotency.",
@@ -18,10 +18,10 @@ B['fda-thyroid-tablets-lot-recall-vitruvias'] = dict(
   ("The reason given is that testing confirmed the product could be superpotent.","Search text."),
   ("The notice says the company has received no reports of adverse events linked to the recall.","Search text."),
   ]),("What it means",[
-  ("The notice says superpotent thyroid tablets can cause symptoms of an overactive thyroid, such as weight loss, a rapid heart rate and heart rhythm problems.","Search text: symptoms listed."),
+  ("The notice says superpotent thyroid tablets can cause symptoms of an overactive thyroid, such as weight loss and changes in heart rate.","Search text: symptoms listed."),
   ("It describes older adults, pregnant women and infants as more vulnerable, especially with long-term use.","Search text."),
   ("The notice says people currently using this lot should not stop without first talking to their healthcare provider, who can advise on next steps or a replacement prescription.","Search text: Patients currently taking this lot should not discontinue use without contacting their healthcare provider."),
-  ("The FDA has also said that animal-derived thyroid medicines of this kind have not been reviewed by the FDA for safety, purity and potency.","Search text: FDA has also said these animal-derived thyroid medications have not been reviewed by FDA (page: FDA's Actions to Address Unapproved Thyroid Medications)."),
+  ("The FDA has said that animal-derived (desiccated) thyroid medicines are unapproved, meaning the agency has not reviewed them for safety, effectiveness or quality.","Search text: FDA has also said these animal-derived thyroid medications have not been reviewed by FDA (page: FDA's Actions to Address Unapproved Thyroid Medications)."),
   ("This is a US recall notice; any UK action on medicines is decided separately by the MHRA.","EDITORIAL")])])
 
 B['cdc-2026-2027-respiratory-season-outlook'] = dict(
@@ -40,30 +40,10 @@ B['cdc-2026-2027-respiratory-season-outlook'] = dict(
   ("The CDC describes it as high-level information on how the season could unfold, and says it is not a forecast.","Search text."),
   ("It expects the peak combined hospitalisation rate for COVID-19, influenza and RSV to be within 20% of the 2025-2026 peak, with low to moderate confidence.","Search text."),
   ]),("What it means",[
-  ("For influenza, the CDC says there is no evidence that a high-severity season is more likely than has been observed historically.","Search text."),
+  ("For influenza, the CDC says there is no evidence that a high-severity season is more likely this year.","Search text."),
   ("For RSV, it notes that the 2025-2026 peak came later than in earlier seasons and that the cause of the late peak is unclear.","Search text."),
-  ("The CDC says planning should allow for a higher peak, driven by immune-evading variants, greater severity, or lower vaccine uptake or effectiveness.","Search text: upside risks."),
+  ("The CDC lists a higher peak as a risk, driven by viruses that evade existing immunity or by lower vaccine uptake or effectiveness.","Search text: upside risks."),
   ("This outlook describes the US season; UK figures and vaccination advice come from UKHSA and the NHS.","EDITORIAL")])])
-
-B['nih-losartan-brown-fat-study'] = dict(
- name="NIH-funded study: losartan and brown fat", published="2026-10-14",
- summary="An NIH-funded study reports that losartan, a blood pressure medicine, raised brown fat activity in mice and cells; the work is early-stage laboratory research.",
- keyPoints=[
-  "An NIH news release describes an NIH-funded study of losartan and brown fat.",
-  "The researchers first linked brown fat to angiotensin receptor blockers by analysing patient data.",
-  "Losartan increased brown fat activity in mice and the metabolic activity of brown fat cells.",
-  "This is US research news, not UK guidance."],
- source=("NIH","A blood-pressure drug may activate health-promoting brown fat","https://www.nih.gov/news-events/news-releases/blood-pressure-drug-may-activate-health-promoting-brown-fat"),
- refs=[],
- links=dict(conditions=["hypertension"], medications=["losartan"], drugClasses=["angiotensin-receptor-blockers"]),
- sections=[("What was announced",[
-  ("A US National Institutes of Health (NIH) news release describes an NIH-funded study in which scientists found that losartan, a common blood pressure medicine, increased brown fat activity and boosted metabolism in mice.","Search text."),
-  ("The researchers first linked brown fat to the drug class called angiotensin receptor blockers by analysing data from more than 100,000 patients.","Search text."),
-  ("When they tested losartan directly on brown fat cells, it increased the cells' metabolic activity.","Search text."),
-  ]),("What it means",[
-  ("The findings come from patient data analysis and from experiments in mice and cells.","Search text: caveat from search tool."),
-  ("The authors suggest that repurposing a widely used medicine could be a practical way to stimulate brown fat.","Search text."),
-  ("This is research news from a US agency; it does not change UK guidance on blood pressure treatment.","EDITORIAL")])])
 
 B['fda-gedatolisib-hr-positive-breast-cancer'] = dict(
  name="FDA approves gedatolisib for breast cancer", published="2026-07-14",
@@ -83,3 +63,23 @@ B['fda-gedatolisib-hr-positive-breast-cancer'] = dict(
   ("The FDA says efficacy was evaluated in VIKTORIA-1, an open-label study in which patients were randomly assigned to gedatolisib with fulvestrant and palbociclib, gedatolisib with fulvestrant, or fulvestrant alone.","Search text."),
   ("The approval letter requires a further randomised trial to characterise known serious risks, including severe stomatitis and mucosal inflammation.","Search text: postmarketing requirement."),
   (US,"EDITORIAL")])])
+
+B['nih-losartan-brown-fat-study'] = dict(
+ name="NIH-funded study: losartan and brown fat", published="2026-10-14",
+ summary="An NIH-funded study reports that losartan, a blood pressure medicine, raised brown fat activity in mice and cells; the work is early-stage laboratory research.",
+ keyPoints=[
+  "An NIH news release dated 14 October 2026 describes an NIH-funded study of losartan and brown fat.",
+  "The researchers first linked brown fat to angiotensin receptor blockers by analysing patient data.",
+  "Losartan increased brown fat activity in mice and the metabolic activity of brown fat cells.",
+  "This is US research news, not UK guidance."],
+ source=("NIH","A blood-pressure drug may activate health-promoting brown fat","https://www.nih.gov/news-events/news-releases/blood-pressure-drug-may-activate-health-promoting-brown-fat"),
+ refs=[],
+ links=dict(conditions=["hypertension"], medications=["losartan"], drugClasses=["angiotensin-receptor-blockers"]),
+ sections=[("What was announced",[
+  ("A US National Institutes of Health (NIH) news release dated 14 October 2026 describes an NIH-funded study in which scientists found that losartan, a common blood pressure medicine, increased brown fat activity and boosted metabolism in mice.","NIH news listing date Oct 14, 2026 (second retrieval)."),
+  ("The researchers first linked brown fat to the drug class called angiotensin receptor blockers by analysing data from more than 100,000 patients.","Verified job5."),
+  ("When they tested losartan directly on brown fat cells, it increased the cells' metabolic activity.","Verified job5."),
+  ]),("What it means",[
+  ("The findings come from patient data analysis and from experiments in mice and cells.","Verified job5: release itself says mice and cells."),
+  ("The lead author suggests the approach could stimulate brown fat even in people with normal blood pressure, although the experiments so far were in mice and cells.","Verifier-suggested rewrite; search text: lead author said approach could work in people with normal blood pressure."),
+  ("This is research news from a US agency; it does not change UK guidance on blood pressure treatment.","EDITORIAL")])])
