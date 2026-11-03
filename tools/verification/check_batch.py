@@ -123,7 +123,7 @@ def main():
         if r.returncode != 0 or bad:
             print(f'the compiler reported {len(bad)} problem line(s); {len(mine)} name an entity of this batch')
             for l in (mine or bad)[:60]: print('  ', l[:300])
-            if r.returncode != 0 and not bad: print('\n'.join(out[-15:]))
+            if r.returncode != 0 and (not bad or any('Traceback' in l for l in bad)): print('the compiler crashed; its last lines:'); print('\n'.join(out[-14:]))
             return 1
         for l in warn[:15]: print('  note:', l[:200])
         # a compiled page that fails the publishing gate (no lead, too little text, no source, too few links) is published noindex

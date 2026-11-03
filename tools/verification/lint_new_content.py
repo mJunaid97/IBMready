@@ -28,9 +28,9 @@ COMMAND = re.compile(r"\b(?:you should|you must|you need to|you have to|you can 
 ABSOLUTE = re.compile(r"\b(?:completely safe|totally safe|is safe|are safe|perfectly safe|safe to|cured|cures|curable|nothing to worry about|100\s?%|(?<!not )guaranteed|no risk)\b", re.I)
 US_STEMS = {"anemi": "anaemi", "esophag": "oesophag", "pediatric": "paediatric", "tumor": "tumour", "diarrhea": "diarrhoea", "edema": "oedema", "estrogen": "oestrogen", "hemoglobin": "haemoglobin",
             "hemorrhag": "haemorrhag", "hemorrhoid": "haemorrhoid", "leukemi": "leukaemi", "orthopedic": "orthopaedic", "gynecolog": "gynaecolog", "gonorrhea": "gonorrhoea", "hematolog": "haematolog",
-            "ischemi": "ischaemi", "anesthe": "anaesthe", "cesarean": "caesarean", "sulfonylurea": "sulphonylurea", "acetaminophen": "paracetamol", "epinephrine": "adrenaline", "albuterol": "salbutamol",
+            "ischemi": "ischaemi", "anesthe": "anaesthe", "cesarean": "caesarean", "acetaminophen": "paracetamol", "epinephrine": "adrenaline", "albuterol": "salbutamol",
             "dyspnea": "breathlessness", "hyperlipidemia": "hyperlipidaemia", "hypoglycemi": "hypoglycaemi", "hyperglycemi": "hyperglycaemi", "glycemi": "glycaemi", "septicemia": "septicaemia", "bacteremia": "bacteraemia"}
-US_WORDS = {"color": "colour", "behavior": "behaviour", "center": "centre", "fiber": "fibre", "liter": "litre", "aluminum": "aluminium", "labor": "labour (childbirth)", "favor": "favour", "ostomy": "stoma", "pajamas": "pyjamas"}
+US_WORDS = {"color": "colour", "behavior": "behaviour", "center": "centre (not in a proper name such as Centers for Disease Control)", "fiber": "fibre", "liter": "litre", "aluminum": "aluminium", "labor": "labour (childbirth)", "favor": "favour", "ostomy": "stoma", "pajamas": "pyjamas"}
 MARKDOWN = re.compile(r"\*\*|__|^#{1,6}\s|\n[-*]\s|\[[^\]]+\]\([^)]+\)|`|<[a-z/][^>]*>", re.I)
 URGENT = re.compile(r"\b(?:emergency|emergencies|urgent|urgently|immediately|straight away|as soon as possible)\b", re.I)
 ROUTE = re.compile(r"\b(?:999|112|111|a&e|accident and emergency|emergency department|gp\b|doctor|pharmacist|midwife|nhs 111|samaritans|ambulance|healthcare professional|clinician|prescriber|emergency services|poison|get medical help|medical advice|seek (?:medical )?help|contact)\b", re.I)
@@ -75,7 +75,8 @@ def lint_entity(coll, eid, ent):
             m = ABSOLUTE.search(s)
             if m: out.append(("absolute", path, f"[{m.group(0)}] {s[:150]}"))
             low = s.lower()
-            hit = next(((us, uk) for us, uk in US_STEMS.items() if re.search(r"\b" + re.escape(us), low)), None) or next(((us, uk) for us, uk in US_WORDS.items() if re.search(r"\b" + re.escape(us) + r"s?\b", low)), None)
+            low_np = re.sub(r"centers? for disease control|national centers? for|centers? for medicare", "", low)       # proper names keep their spelling
+            hit = next(((us, uk) for us, uk in US_STEMS.items() if re.search(r"\b" + re.escape(us), low_np)), None) or next(((us, uk) for us, uk in US_WORDS.items() if re.search(r"\b" + re.escape(us) + r"s?\b", low_np)), None)
             if hit: out.append(("us-spell", path, f"{hit[0]} -> {hit[1]}: {s[:100]}"))
     joined = "\n".join(whole)
     if (re.search(r"suicid|self-harm", joined, re.I) or eid in MENTAL_IDS or (coll in ("blog", "medications") and len(MENTAL.findall(joined)) >= 6)) and not CRISIS.search(joined):

@@ -514,7 +514,7 @@ export function entityNode(type, e, ctx) {
         ...(e.warnings?.length ? { warning: e.warnings.filter(w => w.type === 'boxed' || w.type === 'special').map(w => w.text).join(' ') || e.warnings[0].text } : e.cautions?.length ? { warning: e.cautions.join(' ') } : {}) };
     }
     case 'drug-classes': return { '@type': 'DrugClass', ...base, ...(e.mechanism ? { mechanismOfAction: e.mechanism } : {}), ...(e.members?.length ? { drug: e.members.map(n => ({ '@type': 'Drug', name: n })) } : {}) };
-    case 'blog': return { '@type': e.kind === 'news' ? 'NewsArticle' : 'Article', ...base, headline: e.headline || e.name, datePublished: e.published, dateModified: e.updated, mainEntityOfPage: canonical(entityPath(type, e.id)),
+    case 'blog': return { '@type': e.kind === 'news' ? 'NewsArticle' : 'Article', ...base, headline: e.headline || e.name, image: [canonical('site/og-cover.png')], datePublished: e.published, dateModified: e.updated, mainEntityOfPage: canonical(entityPath(type, e.id)),
       author: { '@type': 'Organization', name: SITE.editorial?.author || SITE.name }, publisher: { '@id': canonical('') + '#organization' },
       ...(e.source ? { isBasedOn: { '@type': 'CreativeWork', name: e.source.title, url: e.source.url, datePublished: e.source.published, publisher: { '@type': 'Organization', name: e.source.publisher } } } : {}),
       ...(e.links?.conditions?.length ? { about: names(clinical, 'conditions', e.links.conditions).map(n => ({ '@type': 'MedicalCondition', name: n })) } : {}) };

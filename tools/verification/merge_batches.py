@@ -9,6 +9,8 @@ usage: python3 tools/verification/merge_batches.py [--batches id1,id2,...] [--ap
   --apply      merge each passing fragment into content/ (check_batch.py --apply), in order; the next batch is validated on top of it
   --evidence   with --apply: also copy BATCH-REPORT.md, ledgers/ and reports/ of a merged batch into content/drafts/batches/<id>/ (the audit trail)
   --extra      also try the other fragment*.json files of a batch (for example a held-back item); they are reported separately
+  --allow-partial  also merge a batch whose BATCH-REPORT.md is missing (the session has not finished: its fragment may hold first-pass text)
+  --update-batches id1,id2  with --apply: replace entities of these batches whose fragment text changed after they were merged (a session's later, second-pass version)
 
 Entities that already exist in content/ are dropped from a fragment first ("already merged"), so the tool can be re-run as sessions push more.
 After --apply run: python3 tools/build-content.py
@@ -62,7 +64,10 @@ def count(frag):
 
 def main():
     argv = sys.argv[1:]
-    apply = '--apply' in argv; evidence = '--evidence' in argv; extra = '--extra' in argv
+    apply = '--apply' in argv; evidence = '--evidence' in argv; extra = '--extra' in argv; partial = '--allow-partial' in argv
+    update_batches = set()
+    for i, a in enumerate(argv):
+        if a == '--update-batches' and i + 1 < len(argv): update_batches = {x for x in argv[i + 1].split(',') if x}
     wanted = None
     for i, a in enumerate(argv):
         if a == '--batches' and i + 1 < len(argv): wanted = [x for x in argv[i + 1].split(',') if x]
@@ -88,16 +93,28 @@ def main():
             raw = sh('git', 'show', f'{ref}:{fpath}').stdout
             try: frag = json.loads(raw)
             except Exception as ex: rows.append((b, 'INVALID JSON', str(ex)[:80], '', '')); continue
-            frag, dropped, changed = drop_existing(frag, existing())
-            label = b if fpath == main_frag else f'{b}:{os.path.basename(fpath)}'
+            have_now = existing()
+            frag, dropped, changed = drop_existing(frag, have_now)
+            if apply and b in update_batches and changed and (has_report or partial):
+                raw_frag = json.loads(raw)
+                for cid in changed:
+                    coll, eid = cid.split('/', 1); ent = raw_frag[coll][eid]
+                    if coll == 'blog': json.dump(ent, open(os.path.join(ROOT, 'content', 'blog', eid + '.json'), 'w', encoding='utf-8'), ensure_ascii=False)
+                    else:
+                        f_, rk_ = cb.FILES[coll]; path_ = os.path.join(ROOT, 'content', f_); dd, st_ = cb.load_styled(path_); (dd if rk_ is None else dd[rk_])[eid] = ent; cb.save_styled(path_, dd, st_)
+                changed_done = list(changed); changed = []
+            else: changed_done = []
+            label = (b if fpath == main_frag else f'{b}:{os.path.basename(fpath)}') + ('' if has_report else ' [NO REPORT YET]')
             if not any(frag.values()):
-                rows.append((label, 'already merged' if dropped else 'empty', f'{len(dropped)} present', '', ('CHANGED since merged: ' + ', '.join(changed[:6])) if changed else '')); continue
+                rows.append((label, 'already merged' if dropped else 'empty', f'{len(dropped)} present', '', ('CHANGED since merged: ' + ', '.join(changed[:6])) if changed else (f'UPDATED {len(changed_done)} changed entities from the final fragment' if changed_done else ''))); continue
             tmpf = os.path.join(tmp, label.replace(':', '_') + '.json'); json.dump(frag, open(tmpf, 'w', encoding='utf-8'), ensure_ascii=False)
             r = sh(sys.executable, os.path.join(ROOT, 'tools', 'verification', 'check_batch.py'), tmpf)
             ok = r.returncode == 0
             lint = sh(sys.executable, os.path.join(ROOT, 'tools', 'verification', 'lint_new_content.py'), tmpf, '--quiet').stdout.strip().splitlines()[-1:]
             note = '' if ok else ' | '.join(l.strip()[:150] for l in r.stdout.splitlines() if l.strip().startswith(('ERROR', 'NOT', 'the compiler', 'merged')) or re.match(r'\s+\S.*', l) and 'NOT PUBLISHABLE' in l)[:420] or r.stdout.strip()[-300:]
-            if ok and apply:
+            if ok and apply and not has_report and not partial:
+                ok = False; note = 'not merged: the session has not written BATCH-REPORT.md yet (use --allow-partial to merge its early fragment)'
+            elif ok and apply:
                 a = sh(sys.executable, os.path.join(ROOT, 'tools', 'verification', 'check_batch.py'), tmpf, '--apply')
                 ok = a.returncode == 0
                 if ok:

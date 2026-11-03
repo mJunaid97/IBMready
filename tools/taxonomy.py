@@ -370,7 +370,8 @@ def build_medication_taxonomy(types, updated):
         for d in m.get("dosageFormIds") or []: facets["dosageForms"][d].append(mid)
         if m.get("productType"): facets["productTypes"][m["productType"]].append(mid)
         for c in m.get("categories") or []: facets["areas"][c].append(mid)
-    unmapped_classes = [c["id"] for c in classes if not any(cc.get("page") == c for a in MED_TAX["areas"] for g in a["groups"] for cc in g["classes"])]
+    mapped_pages = {cc.get("page") for a in MED_TAX["areas"] for g in a["groups"] for cc in g["classes"] if cc.get("page")}
+    unmapped_classes = sorted(cid for cid in classes if cid not in mapped_pages)      # drug-class pages no therapeutic-area class points at yet
     return {"updated": updated, "atcGroups": vocab("atcGroups"), "areas": areas, "facets": {k: dict(v) for k, v in facets.items()},
             "vocabularies": {k: vocab(k) for k in ("routes", "dosageForms", "productTypes", "regulatoryStatuses")}, "classesOutsideTaxonomy": unmapped_classes}
 
