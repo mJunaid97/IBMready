@@ -1,0 +1,29 @@
+{
+ "id": "esr",
+ "searchesUsed": 2,
+ "counts": {
+  "supported": 1,
+  "textbook": 1,
+  "unsupported": 0,
+  "wrong": 0,
+  "unsafe": 0,
+  "unchecked": 0
+ },
+ "claims": [
+  {
+   "id": "c01",
+   "classification": "supported",
+   "evidence": "StatPearls ESR: extremely high ESR (over 100 mm/h) typically associated with malignancy, infection or temporal arteritis; infection most frequent, then collagen vascular disease and metastatic malignancy. Single-centre series of 2,442 patients with ESR>=100 (PMC10390174): malignancy 43.4%, infection 31.9%, rheumatic 13.8%. Myeloma: Zimbabwe ward study (PubMed 2760968) found it the commonest malignancy with ESR>=100. MedlinePlus lists giant cell arteritis, infections and certain cancers as causes of high ESR. NICE NG12 and BSR returned nothing on this. 'Among the causes considered' is a safe hedge.",
+   "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK557485/",
+   "action": "edited"
+  },
+  {
+   "id": "c02",
+   "classification": "textbook",
+   "evidence": "Finding label 'Markedly raised ESR (far above the laboratory's upper limit)': descriptive wording replacing the figure 'over 100 mm/h'. No NICE, NHS or BSR page retrieved gives a numeric 'markedly raised' ESR. StatPearls uses >100 mm/h for 'extremely high'; removing the number is consistent with the site rule against cut-offs in prose.",
+   "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK557485/",
+   "action": "edited"
+  }
+ ],
+ "notes": "Original 'over 100 mm/h' appears in StatPearls as 'extremely high' (not in NICE/NHS/BSR). NICE NG12 myeloma query returned nothing relevant, so the myeloma link rests on MedlinePlus (cancers) and a Zimbabwe study; StatPearls excerpt did not name myeloma. Consider keeping myeloma since it is also in whyOrdered; support is adequate but secondary."
+}
