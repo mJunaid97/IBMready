@@ -3,10 +3,11 @@
 Status: INCOMPLETE. Second-pass checking was interrupted by an API usage limit.
 
 In fragment.json (second pass done, check_batch.py ends "ok"):
+- how-long-antidepressants-take-to-work (28 supported, 2 textbook, 14 unsupported, 1 wrong; body 616 words, below target; crisis route present; 7 searches)
 - statins-common-questions-answered (first-pass 45 sentences: 33 supported, 2 textbook, 10 unsupported; body 632 words, below the 700 target; searches: author 7, checker 9)
 
 Drafted but NOT verified (first pass only, in posts/ and ledgers/, not in the fragment; do not publish):
-- ibuprofen-and-paracetamol-together, ace-inhibitors-arbs-and-amlodipine-compared, warfarin-apixaban-medicines-and-food,
+- (antidepressants now verified, see above) ibuprofen-and-paracetamol-together, ace-inhibitors-arbs-and-amlodipine-compared, warfarin-apixaban-medicines-and-food,
   alcohol-and-antibiotics, how-long-antidepressants-take-to-work (checkers started; BP-medicines and alcohol/antibiotics checkers failed on the usage limit)
 
 Not started or incomplete: metformin, inhalers, opioids, antibiotics and viruses (authors interrupted).
