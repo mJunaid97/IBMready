@@ -1,0 +1,537 @@
+{
+ "id": "rheumatoid-arthritis",
+ "searchesUsed": 11,
+ "counts": {
+  "supported": 34,
+  "textbook": 4,
+  "unsupported": 30,
+  "wrong": 0,
+  "unsafe": 0,
+  "unchecked": 0
+ },
+ "claims": [
+  {
+   "id": "c01",
+   "classification": "supported",
+   "evidence": "NHS symptoms page summary: joint pain, swelling, stiffness; small joints of hands and feet often first; general symptoms tiredness, fever, sweating, poor appetite, weight loss. Hands, wrists, feet commonly involved (NIAMS/MedlinePlus results).",
+   "url": "https://www.nhs.uk/conditions/rheumatoid-arthritis/symptoms/",
+   "action": "kept"
+  },
+  {
+   "id": "c02",
+   "classification": "supported",
+   "evidence": "NHS: core symptoms are joint pain, swelling and stiffness.",
+   "url": "https://www.nhs.uk/conditions/rheumatoid-arthritis/symptoms/",
+   "action": "edited",
+   "newSentence": "Joint pain, swelling and stiffness are the core symptoms."
+  },
+  {
+   "id": "c03",
+   "classification": "unsupported",
+   "evidence": "Retrieved: symptoms most often begin slowly over weeks to a few months; \"a few days\" not returned.",
+   "url": "https://www.nhs.uk/conditions/rheumatoid-arthritis/symptoms/",
+   "action": "edited",
+   "newSentence": "Symptoms most often begin slowly over weeks to a few months."
+  },
+  {
+   "id": "c04",
+   "classification": "unsupported",
+   "evidence": "No retrieved text on flu-like symptoms or muscle aches; NHS lists fever, sweating, tiredness, poor appetite, weight loss.",
+   "url": "https://www.nhs.uk/conditions/rheumatoid-arthritis/symptoms/",
+   "action": "edited",
+   "newSentence": "Some people also have general symptoms, including tiredness, fever, sweating, poor appetite and weight loss."
+  },
+  {
+   "id": "c05",
+   "classification": "supported",
+   "evidence": "NHS: inflammation can affect eyes (dryness), heart and lungs (chest pain); general symptoms tiredness, weight loss.",
+   "url": "https://www.nhs.uk/conditions/rheumatoid-arthritis/symptoms/",
+   "action": "edited",
+   "newSentence": "Inflammation can also affect the eyes, causing dryness, or the heart and lungs, causing chest pain."
+  },
+  {
+   "id": "c06",
+   "classification": "unsupported",
+   "evidence": "Highland NHS \"very common\" fatigue page not returned in second pass.",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c07",
+   "classification": "unsupported",
+   "evidence": "Highland NHS pacing advice not returned.",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c08",
+   "classification": "unsupported",
+   "evidence": "Retrieved: symptoms can come back or get worse, known as a flare-up; low-mood list not returned.",
+   "url": "https://www.nhs.uk/conditions/rheumatoid-arthritis/symptoms/",
+   "action": "edited",
+   "newSentence": "Symptoms can come back or get worse, which is known as a flare-up."
+  },
+  {
+   "id": "c09",
+   "classification": "unsupported",
+   "evidence": "Variation in flare strength/duration/frequency not returned.",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c10",
+   "classification": "unsupported",
+   "evidence": "\"Usually reversible if treated promptly\" not returned (search 8 found nothing on reversibility).",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c11",
+   "classification": "supported",
+   "evidence": "Search 8: one NHS trust lists stopping/winding down treatment, overdoing activity, stress, infection, poor sleep (Kingston result listed first; summary does not name the page).",
+   "url": "https://www.kingstonandrichmond.nhs.uk/patients-and-families/patient-leaflets/rheumatoid-arthritis-ra-flare-self-management",
+   "action": "edited",
+   "newSentence": "One NHS trust lists stopping or winding down treatment, doing too much, stress, infection and poor sleep as causes of flares."
+  },
+  {
+   "id": "c12",
+   "classification": "unsupported",
+   "evidence": "Range-of-movement vs strength training not returned; sources recommend gentle movement rather than rest alone.",
+   "url": "https://nras.org.uk/resource/managing-flares/",
+   "action": "edited",
+   "newSentence": "Sources recommend gentle movement rather than rest alone."
+  },
+  {
+   "id": "c13",
+   "classification": "unsupported",
+   "evidence": "Retrieved: heat eases stiffness, cold eases swelling, towel between skin and source; wheat bag/ice pack/inflammation wording not returned.",
+   "url": "https://nras.org.uk/resource/managing-flares/",
+   "action": "edited",
+   "newSentence": "Guidance broadly describes heat as easing stiffness and cold as easing swelling, and sources stress placing a towel between the skin and the heat or cold source."
+  },
+  {
+   "id": "c14",
+   "classification": "unsupported",
+   "evidence": "NHS living-with exercise sentence not returned; NRAS says exercise helps reduce the risk of further joint damage.",
+   "url": "https://nras.org.uk/resource/managing-flares/",
+   "action": "edited",
+   "newSentence": "NRAS, a rheumatoid arthritis charity, says exercise is important because it helps reduce the risk of further joint damage."
+  },
+  {
+   "id": "c15",
+   "classification": "unsupported",
+   "evidence": "Not returned.",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c16",
+   "classification": "unsupported",
+   "evidence": "Search 8: no source tied flares to irreversible damage. NRAS: speak to rheumatology team about regular flares or a flare not going down.",
+   "url": "https://nras.org.uk/resource/managing-flares/",
+   "action": "edited",
+   "newSentence": "NRAS advises speaking to the rheumatology team about regular flares, or a flare that is not going down with self-management."
+  },
+  {
+   "id": "c17",
+   "classification": "supported",
+   "evidence": "NHS/NRAS: no definitive test for RA.",
+   "url": "https://www.nhs.uk/conditions/rheumatoid-arthritis/diagnosis/",
+   "action": "edited",
+   "newSentence": "Rheumatoid arthritis can be difficult to diagnose because many conditions cause joint stiffness and inflammation, and there is no definitive test for it."
+  },
+  {
+   "id": "c18",
+   "classification": "supported",
+   "evidence": "NHS diagnosis: GP physical examination of joints, blood tests; X-rays/MRI; ultrasound in some clinics (NRAS).",
+   "url": "https://www.nhs.uk/conditions/rheumatoid-arthritis/diagnosis/",
+   "action": "edited",
+   "newSentence": "The GP carries out a physical examination, checking the joints for swelling and how easily they move."
+  },
+  {
+   "id": "c19",
+   "classification": "supported",
+   "evidence": "NHS/NRAS: ESR, CRP, full blood count, rheumatoid factor, anti-CCP.",
+   "url": "https://www.nhs.uk/conditions/rheumatoid-arthritis/diagnosis/",
+   "action": "edited",
+   "newSentence": "Blood tests include ESR and CRP for inflammation, a full blood count, rheumatoid factor and anti-CCP."
+  },
+  {
+   "id": "c20",
+   "classification": "unsupported",
+   "evidence": "Retrieved only a Manchester GP guide: negative result does not exclude RA, positive does not equate to diagnosis (about tests generally, not RF specifically).",
+   "url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/information-for-gps/laboratory-medicines-newsletter-for-gps/out-on-a-limb-prioritising-clinical-suspicion-and-early-referral-in-rheumatoid-arthritis-diagnosis/",
+   "action": "edited",
+   "newSentence": "A Manchester guide for GPs notes that a negative result does not exclude the condition and a positive result does not equate to a diagnosis."
+  },
+  {
+   "id": "c21",
+   "classification": "supported",
+   "evidence": "NHS diagnosis: people who test positive for anti-CCP are very likely to develop RA, but not everybody with RA has this antibody.",
+   "url": "https://www.nhs.uk/conditions/rheumatoid-arthritis/diagnosis/",
+   "action": "kept"
+  },
+  {
+   "id": "c22",
+   "classification": "textbook",
+   "evidence": "Search 10 labelled this general background, not confirmed by retrieved pages.",
+   "url": "",
+   "action": "kept"
+  },
+  {
+   "id": "c23",
+   "classification": "unsupported",
+   "evidence": "Retrieved: GP refers to a specialist (rheumatologist), who reviews history, examines joints, may arrange more tests. The \"doctor who specialises in joint and autoimmune conditions\" gloss was not returned.",
+   "url": "https://www.nhs.uk/conditions/rheumatoid-arthritis/diagnosis/",
+   "action": "edited",
+   "newSentence": "If the GP thinks the person has rheumatoid arthritis, they refer them to a specialist called a rheumatologist."
+  },
+  {
+   "id": "c24",
+   "classification": "unsupported",
+   "evidence": "Retrieved: early treatment can reduce joint damage; \"slow or prevent\" and the causal framing not carried.",
+   "url": "https://www.nhs.uk/conditions/rheumatoid-arthritis/symptoms/",
+   "action": "removed"
+  },
+  {
+   "id": "c25",
+   "classification": "unsupported",
+   "evidence": "Retrieved: care usually involves the GP and several specialists; goals of treatment include reducing inflammation, relieving pain, preventing or slowing damage; \"stop getting worse\" not carried.",
+   "url": "https://www.nhs.uk/conditions/rheumatoid-arthritis/treatment/",
+   "action": "edited",
+   "newSentence": "Care usually involves the GP and several specialists."
+  },
+  {
+   "id": "c26",
+   "classification": "supported",
+   "evidence": "NHS treatment: two main groups, DMARDs and biological treatments.",
+   "url": "https://www.nhs.uk/conditions/rheumatoid-arthritis/treatment/",
+   "action": "kept"
+  },
+  {
+   "id": "c27",
+   "classification": "unsupported",
+   "evidence": "Retrieved: initial treatment usually a combination of DMARD tablets; methotrexate usually first. \"Often with short steroid course\" not carried.",
+   "url": "https://www.nhs.uk/conditions/rheumatoid-arthritis/treatment/",
+   "action": "edited",
+   "newSentence": "Initial treatment is usually a combination of DMARD tablets, and methotrexate is usually the first medicine given."
+  },
+  {
+   "id": "c28",
+   "classification": "unsupported",
+   "evidence": "\"Two or three DMARDs\" not returned.",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c29",
+   "classification": "supported",
+   "evidence": "NHS: steroids as tablets or injections, usually short periods. \"Joint or muscle\" and \"while DMARDs take effect\" not carried.",
+   "url": "https://www.nhs.uk/conditions/rheumatoid-arthritis/treatment/",
+   "action": "edited",
+   "newSentence": "Steroids can be given as tablets or injections and are usually used for short periods."
+  },
+  {
+   "id": "c30",
+   "classification": "supported",
+   "evidence": "NHS: long-term steroid use can have serious side effects. The \"which is why courses are kept short\" link was not carried.",
+   "url": "https://www.nhs.uk/conditions/rheumatoid-arthritis/treatment/",
+   "action": "edited",
+   "newSentence": "The NHS says long-term steroid use can have serious side effects."
+  },
+  {
+   "id": "c31",
+   "classification": "supported",
+   "evidence": "MedlinePlus: DMARD-type medicines may have serious side effects, frequent blood tests and monitoring; NHS: methotrexate affects blood cells and liver, regular blood tests.",
+   "url": "https://medlineplus.gov/ency/article/000431.htm",
+   "action": "edited",
+   "newSentence": "MedlinePlus says DMARDs may have serious side effects, so frequent blood tests and other monitoring are needed."
+  },
+  {
+   "id": "c32",
+   "classification": "unsupported",
+   "evidence": "Retrieved NHS: biologics generally used alongside methotrexate or another DMARD. Regional pathway not returned this pass.",
+   "url": "https://www.nhs.uk/conditions/rheumatoid-arthritis/treatment/",
+   "action": "edited",
+   "newSentence": "Biological treatments are generally used alongside methotrexate or another DMARD, typically when DMARDs alone have not worked."
+  },
+  {
+   "id": "c33",
+   "classification": "unsupported",
+   "evidence": "\"At least two DMARDs\" threshold not returned; NHS says typically when DMARDs alone have not worked.",
+   "url": "https://www.nhs.uk/conditions/rheumatoid-arthritis/treatment/",
+   "action": "removed"
+  },
+  {
+   "id": "c34",
+   "classification": "supported",
+   "evidence": "NHS: JAK inhibitors offered to adults with moderate to severe disease who cannot take DMARDs/biologics or found them ineffective (\"tablets\" not carried).",
+   "url": "https://www.nhs.uk/conditions/rheumatoid-arthritis/treatment/",
+   "action": "edited",
+   "newSentence": "JAK inhibitors are offered to adults with moderate to severe disease who cannot take DMARDs or biological treatments, or who found them ineffective."
+  },
+  {
+   "id": "c35",
+   "classification": "supported",
+   "evidence": "NHS inform: physiotherapy helps improve muscle strength, flexibility and fitness.",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/muscle-bone-and-joints/conditions-that-can-affect-multiple-parts-of-the-body/rheumatoid-arthritis/",
+   "action": "kept"
+  },
+  {
+   "id": "c36",
+   "classification": "supported",
+   "evidence": "NHS inform: occupational therapy training and advice to protect joints at home and work.",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/muscle-bone-and-joints/conditions-that-can-affect-multiple-parts-of-the-body/rheumatoid-arthritis/",
+   "action": "edited",
+   "newSentence": "If the condition causes problems with everyday tasks, occupational therapy may help, and an occupational therapist can provide training and advice to protect the joints at home and at work."
+  },
+  {
+   "id": "c37",
+   "classification": "unsupported",
+   "evidence": "\"Orthoses\" not returned; NHS inform mentions a support such as a splint.",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/muscle-bone-and-joints/conditions-that-can-affect-multiple-parts-of-the-body/rheumatoid-arthritis/",
+   "action": "edited",
+   "newSentence": "A support for the joints, such as a splint, may also be recommended."
+  },
+  {
+   "id": "c38",
+   "classification": "supported",
+   "evidence": "NHS: some people need hip, knee or shoulder joint replaced.",
+   "url": "https://www.nhs.uk/conditions/rheumatoid-arthritis/treatment/",
+   "action": "edited",
+   "newSentence": "The NHS says surgery may be needed to improve joint movement, reduce pain or correct joint damage, and some people need a hip, knee or shoulder joint replaced."
+  },
+  {
+   "id": "c39",
+   "classification": "supported",
+   "evidence": "NHS inform: surgery options include hand and wrist surgery, arthroscopy, joint replacement.",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/muscle-bone-and-joints/conditions-that-can-affect-multiple-parts-of-the-body/rheumatoid-arthritis/",
+   "action": "edited",
+   "newSentence": "NHS inform lists hand and wrist surgery and arthroscopy among the options."
+  },
+  {
+   "id": "c40",
+   "classification": "supported",
+   "evidence": "Other NHS sites agree early treatment reduces risk of joint damage.",
+   "url": "https://www.nhs.uk/conditions/rheumatoid-arthritis/treatment/",
+   "action": "edited",
+   "newSentence": "Other NHS sites agree that early treatment reduces the risk of joint damage."
+  },
+  {
+   "id": "c41",
+   "classification": "supported",
+   "evidence": "NHS inform: no cure, but with treatment pain, swelling and stiffness improve.",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/muscle-bone-and-joints/conditions-that-can-affect-multiple-parts-of-the-body/rheumatoid-arthritis/",
+   "action": "edited",
+   "newSentence": "NHS inform says there is no cure for rheumatoid arthritis, but with treatment symptoms such as joint pain, swelling and stiffness improve."
+  },
+  {
+   "id": "c42",
+   "classification": "unsupported",
+   "evidence": "Review title mentions systemic manifestations but the \"systemic disease affects whole body\" statement was not returned.",
+   "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7356332/",
+   "action": "removed"
+  },
+  {
+   "id": "c43",
+   "classification": "supported",
+   "evidence": "PMC7356332 summary: rheumatoid pulmonary nodules usually symptom-free, often resolve spontaneously.",
+   "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7356332/",
+   "action": "edited",
+   "newSentence": "One review says rheumatoid nodules in the lung are usually symptom-free and often resolve on their own."
+  },
+  {
+   "id": "c44",
+   "classification": "unsupported",
+   "evidence": "Heart muscle/lining and amyloidosis rarity not returned.",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c45",
+   "classification": "unsupported",
+   "evidence": "Not returned.",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c46",
+   "classification": "unsupported",
+   "evidence": "Search 10: early remission linked to drug-free remission, but attribution of \"better long-term course/less damage\" not carried.",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c47",
+   "classification": "supported",
+   "evidence": "Search 10: clinical remission achieved and sustained in a minority; drug-free remission remains rare (summary blends pages; PMC5613855 listed).",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5613855/",
+   "action": "edited",
+   "newSentence": "One source says clinical remission is reached and sustained in a minority of people, and that drug-free remission remains rare."
+  },
+  {
+   "id": "c48",
+   "classification": "supported",
+   "evidence": "NHS inform: no cure.",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/muscle-bone-and-joints/conditions-that-can-affect-multiple-parts-of-the-body/rheumatoid-arthritis/",
+   "action": "edited",
+   "newSentence": "NHS inform says there is no cure for rheumatoid arthritis, but with treatment symptoms such as joint pain, swelling and stiffness improve."
+  },
+  {
+   "id": "c49",
+   "classification": "unsupported",
+   "evidence": "\"Sources stress starting early gives the best chance\" not carried; NHS: treatments help prevent or slow joint damage.",
+   "url": "https://www.nhs.uk/conditions/rheumatoid-arthritis/treatment/",
+   "action": "edited",
+   "newSentence": "The NHS says treatments can help reduce inflammation, relieve pain, prevent or slow down joint damage and reduce disability."
+  },
+  {
+   "id": "c50",
+   "classification": "supported",
+   "evidence": "Minority/rare remission, as above.",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5613855/",
+   "action": "edited",
+   "newSentence": "One source says clinical remission is reached and sustained in a minority of people, and drug-free remission remains rare."
+  },
+  {
+   "id": "c51",
+   "classification": "textbook",
+   "evidence": "Not confirmed by retrieved pages (search 10).",
+   "url": "",
+   "action": "kept"
+  },
+  {
+   "id": "c52",
+   "classification": "textbook",
+   "evidence": "Same, definitional.",
+   "url": "",
+   "action": "kept"
+  },
+  {
+   "id": "c53",
+   "classification": "unsupported",
+   "evidence": "Retrieved only the Manchester GP guide statement on negative/positive results; RF-specific claim not carried.",
+   "url": "https://mft.nhs.uk/the-trust/other-departments/laboratory-medicine/information-for-gps/laboratory-medicines-newsletter-for-gps/out-on-a-limb-prioritising-clinical-suspicion-and-early-referral-in-rheumatoid-arthritis-diagnosis/",
+   "action": "edited",
+   "newSentence": "A Manchester guide for GPs notes that a negative result does not exclude the condition and a positive result does not equate to a diagnosis."
+  },
+  {
+   "id": "c54",
+   "classification": "supported",
+   "evidence": "MedlinePlus: serious side effects, frequent blood tests and monitoring.",
+   "url": "https://medlineplus.gov/ency/article/000431.htm",
+   "action": "edited",
+   "newSentence": "MedlinePlus says DMARDs may have serious side effects, so frequent blood tests and other monitoring are needed."
+  },
+  {
+   "id": "c55",
+   "classification": "supported",
+   "evidence": "NHS: ESR, CRP, full blood count, RF, anti-CCP used in diagnosis.",
+   "url": "https://www.nhs.uk/conditions/rheumatoid-arthritis/diagnosis/",
+   "action": "removed"
+  },
+  {
+   "id": "c56",
+   "classification": "supported",
+   "evidence": "NHS: tiredness, weight loss, other body areas.",
+   "url": "https://www.nhs.uk/conditions/rheumatoid-arthritis/symptoms/",
+   "action": "edited",
+   "newSentence": "Joints are the main target, but the NHS lists general symptoms that can occur, including tiredness, fever, sweating, poor appetite and weight loss."
+  },
+  {
+   "id": "c57",
+   "classification": "unsupported",
+   "evidence": "\"Systemic disease\" wording not returned.",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c58",
+   "classification": "supported",
+   "evidence": "NHS: some people need hip, knee or shoulder replaced.",
+   "url": "https://www.nhs.uk/conditions/rheumatoid-arthritis/treatment/",
+   "action": "edited",
+   "newSentence": "The NHS says surgery may be needed to improve joint movement, reduce pain or correct joint damage, and some people need a hip, knee or shoulder joint replaced."
+  },
+  {
+   "id": "c59",
+   "classification": "unsupported",
+   "evidence": "NHS inform describes surgery as \"sometimes needed\"; the other wording is the author's inference.",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/muscle-bone-and-joints/conditions-that-can-affect-multiple-parts-of-the-body/rheumatoid-arthritis/",
+   "action": "edited",
+   "newSentence": "NHS inform describes surgery as sometimes needed, alongside medicines, physiotherapy and occupational therapy, so it is not described as needed by everyone."
+  },
+  {
+   "id": "c60",
+   "classification": "supported",
+   "evidence": "Search 8 trust list of triggers.",
+   "url": "https://www.kingstonandrichmond.nhs.uk/patients-and-families/patient-leaflets/rheumatoid-arthritis-ra-flare-self-management",
+   "action": "edited",
+   "newSentence": "One NHS trust lists stopping or winding down treatment, doing too much, stress, infection and poor sleep."
+  },
+  {
+   "id": "c61",
+   "classification": "unsupported",
+   "evidence": "Reversibility not returned; NRAS advice on contacting team returned.",
+   "url": "https://nras.org.uk/resource/managing-flares/",
+   "action": "edited",
+   "newSentence": "NRAS advises speaking to the rheumatology team about regular flares, or a flare that is not going down with self-management."
+  },
+  {
+   "id": "c62",
+   "classification": "textbook",
+   "evidence": "Standard abbreviation, also in retrieved page text (\"Rheumatoid arthritis (RA)\").",
+   "url": "https://www.nhs.uk/conditions/rheumatoid-arthritis/symptoms/",
+   "action": "kept"
+  },
+  {
+   "id": "c63",
+   "classification": "supported",
+   "evidence": "NHS inform: no cure.",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/muscle-bone-and-joints/conditions-that-can-affect-multiple-parts-of-the-body/rheumatoid-arthritis/",
+   "action": "edited",
+   "newSentence": "A long-term condition with no cure, according to NHS inform"
+  },
+  {
+   "id": "c64",
+   "classification": "supported",
+   "evidence": "NHS/NIAMS: hands, wrists, feet commonly involved.",
+   "url": "https://www.nhs.uk/conditions/rheumatoid-arthritis/symptoms/",
+   "action": "edited",
+   "newSentence": "Hands, wrists and feet"
+  },
+  {
+   "id": "c65",
+   "classification": "supported",
+   "evidence": "No definitive test; GP exam, blood tests, X-ray/MRI/ultrasound.",
+   "url": "https://www.nhs.uk/conditions/rheumatoid-arthritis/diagnosis/",
+   "action": "edited",
+   "newSentence": "No definitive test; GP examination, blood tests and scans are combined"
+  },
+  {
+   "id": "c66",
+   "classification": "supported",
+   "evidence": "NHS: DMARDs and biologics; steroids usually short periods.",
+   "url": "https://www.nhs.uk/conditions/rheumatoid-arthritis/treatment/",
+   "action": "edited",
+   "newSentence": "DMARDs and biological treatments, with steroids used for short periods"
+  },
+  {
+   "id": "c67",
+   "classification": "supported",
+   "evidence": "NHS: methotrexate usually first medicine; combination of DMARD tablets.",
+   "url": "https://www.nhs.uk/conditions/rheumatoid-arthritis/treatment/",
+   "action": "edited",
+   "newSentence": "Methotrexate, usually within a combination of DMARD tablets"
+  },
+  {
+   "id": "c68",
+   "classification": "supported",
+   "evidence": "NHS diagnosis: GP refers to a specialist (rheumatologist).",
+   "url": "https://www.nhs.uk/conditions/rheumatoid-arthritis/diagnosis/",
+   "action": "edited",
+   "newSentence": "The GP refers to a specialist called a rheumatologist"
+  }
+ ],
+ "notes": "12-call budget: 11 WebSearch calls used. Search summaries blend pages, so page attribution is approximate (flare triggers, remission, lung nodules, steroid statements). Sentences about the Highland, Oxford and Wye Valley pages, NHS living-with exercise advice, the GMMMG pathway, amyloidosis and cervical spine involvement were not returned and were removed. The glosses for rheumatologist and orthoses were unsupported and were replaced by the retrieved wording (specialist the GP refers to; splint). Seropositive/seronegative definitions are kept as textbook. No doses or cut-offs; no urgency sentences; only routine GP route stated. Existing entry (early referral to rheumatology, methotrexate first, steroids short term) not contradicted; removed first-pass 'better long-term course' claim."
+}

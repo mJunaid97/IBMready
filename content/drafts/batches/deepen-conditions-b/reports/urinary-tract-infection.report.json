@@ -1,0 +1,501 @@
+{
+ "id": "urinary-tract-infection",
+ "searchesUsed": 12,
+ "counts": {
+  "supported": 33,
+  "textbook": 2,
+  "unsupported": 31,
+  "wrong": 0,
+  "unsafe": 0,
+  "unchecked": 0
+ },
+ "claims": [
+  {
+   "id": "c01",
+   "classification": "supported",
+   "evidence": "NHS guidance (as returned): pain or burning when peeing, needing to pee more often, cloudy pee, blood in pee, lower tummy pain, back pain just under the ribs",
+   "url": "https://111.wales.nhs.uk/urinarytractinfection/",
+   "action": "edited",
+   "newSentence": "Reworded in final.json to what the retrieved text says (see sections/FAQs)."
+  },
+  {
+   "id": "c02",
+   "classification": "supported",
+   "evidence": "NHS guidance returned tiredness/weakness and smelly or cloudy pee; fever not listed for lower UTI in retrieved text",
+   "url": "https://www.nhs.uk/conditions/cystitis/",
+   "action": "edited",
+   "newSentence": "Reworded in final.json to what the retrieved text says (see sections/FAQs)."
+  },
+  {
+   "id": "c03",
+   "classification": "supported",
+   "evidence": "NIDDK: burning, frequent urges, lower abdominal pain or discomfort, cloudy, bloody or strong-smelling urine",
+   "url": "https://www.niddk.nih.gov/health-information/urologic-diseases/bladder-infection-uti-in-adults",
+   "action": "edited",
+   "newSentence": "Reworded in final.json to what the retrieved text says (see sections/FAQs)."
+  },
+  {
+   "id": "c04",
+   "classification": "supported",
+   "evidence": "NIDDK: bladder infections can spread to one or both kidneys; fever and chills, nausea or vomiting, back, side or groin pain",
+   "url": "https://www.niddk.nih.gov/health-information/urologic-diseases/bladder-infection-uti-in-adults",
+   "action": "edited",
+   "newSentence": "Reworded in final.json to what the retrieved text says (see sections/FAQs)."
+  },
+  {
+   "id": "c05",
+   "classification": "textbook",
+   "evidence": "Linking sentence, no factual claim",
+   "url": "",
+   "action": "kept"
+  },
+  {
+   "id": "c06",
+   "classification": "unsupported",
+   "evidence": "Retrieved MedlinePlus text: older adults may show only confusion; 'of a kidney infection' and 'other mental changes' not retrieved",
+   "url": "https://medlineplus.gov/ency/article/000521.htm",
+   "action": "edited",
+   "newSentence": "Reworded in final.json to what the retrieved text says (see sections/FAQs)."
+  },
+  {
+   "id": "c07",
+   "classification": "unsupported",
+   "evidence": "Retrieved: fever may be the only symptom in infants/not toilet-trained children, with poor feeding, vomiting; 'no symptoms at all' not retrieved",
+   "url": "https://medlineplus.gov/ency/article/000505.htm",
+   "action": "edited",
+   "newSentence": "Reworded in final.json to what the retrieved text says (see sections/FAQs)."
+  },
+  {
+   "id": "c08",
+   "classification": "unsupported",
+   "evidence": "Toileting changes/accidents retrieved; cloudy or strong-smelling urine in children not retrieved",
+   "url": "https://medlineplus.gov/ency/article/000505.htm",
+   "action": "edited",
+   "newSentence": "Reworded in final.json to what the retrieved text says (see sections/FAQs)."
+  },
+  {
+   "id": "c09",
+   "classification": "supported",
+   "evidence": "MedlinePlus: bladder infection symptoms usually improve within a day or two of starting treatment",
+   "url": "https://medlineplus.gov/ency/article/000521.htm",
+   "action": "kept"
+  },
+  {
+   "id": "c10",
+   "classification": "unsupported",
+   "evidence": "Retrieved text says culture identifies bacteria; 'usually tell from a urine test' not retrieved",
+   "url": "https://medlineplus.gov/ency/article/003751.htm",
+   "action": "edited",
+   "newSentence": "Reworded in final.json to what the retrieved text says (see sections/FAQs)."
+  },
+  {
+   "id": "c11",
+   "classification": "supported",
+   "evidence": "MedlinePlus: culture identifies the bacteria so a clinician can pick an antibiotic",
+   "url": "https://medlineplus.gov/ency/article/003751.htm",
+   "action": "kept"
+  },
+  {
+   "id": "c12",
+   "classification": "unsupported",
+   "evidence": "NIDDK statement about unconfirmed diagnosis not returned",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c13",
+   "classification": "unsupported",
+   "evidence": "Danish audit not returned in any search",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c14",
+   "classification": "unsupported",
+   "evidence": "Child follow-up tests weighing age/earlier UTIs not returned",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c15",
+   "classification": "unsupported",
+   "evidence": "Dementia/imaging/kidney stones: search explicitly found nothing",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c16",
+   "classification": "supported",
+   "evidence": "NIDDK: antibiotics likely; length depends on severity and whether symptoms go away",
+   "url": "https://www.niddk.nih.gov/health-information/urologic-diseases/bladder-infection-uti-in-adults/treatment",
+   "action": "kept"
+  },
+  {
+   "id": "c17",
+   "classification": "supported",
+   "evidence": "NHS 111 Wales: UTIs may be treated with antibiotics but not always needed",
+   "url": "https://111.wales.nhs.uk/encyclopaedia/u/article/urinarytractinfection/",
+   "action": "kept"
+  },
+  {
+   "id": "c18",
+   "classification": "supported",
+   "evidence": "NHS 111 Wales: self-care and painkiller, short course, or wait 48 hours",
+   "url": "https://111.wales.nhs.uk/encyclopaedia/u/article/urinarytractinfection/",
+   "action": "edited",
+   "newSentence": "Reworded in final.json to what the retrieved text says (see sections/FAQs)."
+  },
+  {
+   "id": "c19",
+   "classification": "supported",
+   "evidence": "NIDDK: drinking more liquids can speed recovery and ease symptoms",
+   "url": "https://www.niddk.nih.gov/health-information/urologic-diseases/bladder-infection-uti-in-adults/treatment",
+   "action": "kept"
+  },
+  {
+   "id": "c20",
+   "classification": "supported",
+   "evidence": "NIDDK: finish entire treatment; resistance could make infection harder to treat",
+   "url": "https://www.niddk.nih.gov/health-information/urologic-diseases/bladder-infection-uti-in-adults/treatment",
+   "action": "kept"
+  },
+  {
+   "id": "c21",
+   "classification": "supported",
+   "evidence": "NHS: most people treated at home with antibiotic tablets; paracetamol for pain",
+   "url": "https://www.nhs.uk/conditions/kidney-infection/treatment/",
+   "action": "edited",
+   "newSentence": "Reworded in final.json to what the retrieved text says (see sections/FAQs)."
+  },
+  {
+   "id": "c22",
+   "classification": "supported",
+   "evidence": "NHS: admission if pregnant or long-term condition, severely dehydrated or cannot keep down fluids; drip antibiotics",
+   "url": "https://www.nhs.uk/conditions/kidney-infection/treatment/",
+   "action": "edited",
+   "newSentence": "Reworded in final.json to what the retrieved text says (see sections/FAQs)."
+  },
+  {
+   "id": "c23",
+   "classification": "supported",
+   "evidence": "NHS: paracetamol for pain and high temperature; NSAIDs not normally recommended, may increase risk of further kidney problems",
+   "url": "https://www.nhs.uk/conditions/kidney-infection/treatment/",
+   "action": "edited",
+   "newSentence": "Reworded in final.json to what the retrieved text says (see sections/FAQs)."
+  },
+  {
+   "id": "c24",
+   "classification": "supported",
+   "evidence": "NHS inform: UTI in children usually treated at home with antibiotics if over 3 months and not at risk of serious illness (supported but dropped to meet word limit)",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/kidneys-bladder-and-prostate/urinary-tract-infection-uti-in-children/",
+   "action": "removed"
+  },
+  {
+   "id": "c25",
+   "classification": "unsupported",
+   "evidence": "Surgery for structural problems not returned",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c26",
+   "classification": "supported",
+   "evidence": "Reviews: two infections in 6 months or three in 12 months",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3749018/",
+   "action": "kept"
+  },
+  {
+   "id": "c27",
+   "classification": "unsupported",
+   "evidence": "'Quarter to a third within a year' not returned (returned: up to 44%, unspecified timeframe)",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c28",
+   "classification": "unsupported",
+   "evidence": "Stones/devices preventing emptying not returned",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c29",
+   "classification": "unsupported",
+   "evidence": "Post-sex antibiotic supported; 'short course kept at home' not returned",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3749018/",
+   "action": "edited",
+   "newSentence": "Reworded in final.json to what the retrieved text says (see sections/FAQs)."
+  },
+  {
+   "id": "c30",
+   "classification": "supported",
+   "evidence": "NIDDK: vaginal estrogen increases good bacteria and helps prevent infection",
+   "url": "https://www.niddk.nih.gov/health-information/urologic-diseases/bladder-infection-uti-in-adults",
+   "action": "kept"
+  },
+  {
+   "id": "c31",
+   "classification": "unsupported",
+   "evidence": "Systematic review of no clear benefit not returned; Cochrane result returned differs (no clear difference between continuous and post-coital)",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c32",
+   "classification": "supported",
+   "evidence": "NHS England: campaign with UKHSA; older adults almost three fifths of admissions over five years; hydration, washing/showering",
+   "url": "https://www.england.nhs.uk/2023/10/new-awareness-campaign-to-help-reduce-hospital-admissions-for-urinary-tract-infections/",
+   "action": "edited",
+   "newSentence": "Reworded in final.json to what the retrieved text says (see sections/FAQs)."
+  },
+  {
+   "id": "c33",
+   "classification": "unsupported",
+   "evidence": "MedlinePlus returned kidney infection and sepsis; premature delivery explicitly not found",
+   "url": "https://medlineplus.gov/ency/article/000521.htm",
+   "action": "edited",
+   "newSentence": "Reworded in final.json to what the retrieved text says (see sections/FAQs)."
+  },
+  {
+   "id": "c34",
+   "classification": "textbook",
+   "evidence": "Plain definition of sepsis (MedlinePlus also: dangerous overreaction to infection)",
+   "url": "https://medlineplus.gov/ency/article/000521.htm",
+   "action": "kept"
+  },
+  {
+   "id": "c35",
+   "classification": "unsupported",
+   "evidence": "Retrieved: blood poisoning a medical emergency; 'kidney infection can cause sepsis if untreated' not returned verbatim",
+   "url": "https://www.nhs.uk/conditions/kidney-infection/treatment/",
+   "action": "edited",
+   "newSentence": "Reworded in final.json to what the retrieved text says (see sections/FAQs)."
+  },
+  {
+   "id": "c36",
+   "classification": "unsupported",
+   "evidence": "Chronic infection/urosepsis/kidney damage review not returned",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c37",
+   "classification": "supported",
+   "evidence": "NHS 111 Wales: call 999 or A&E if confused, drowsy, difficulty speaking",
+   "url": "https://111.wales.nhs.uk/urinarytractinfection/",
+   "action": "kept"
+  },
+  {
+   "id": "c38",
+   "classification": "unsupported",
+   "evidence": "65+, diabetes, catheter returned as urgent triggers; 'pregnant women' not in that list (NI Direct lists pregnancy and diabetes for GP)",
+   "url": "https://111.wales.nhs.uk/urinarytractinfection/",
+   "action": "edited",
+   "newSentence": "Reworded in final.json to what the retrieved text says (see sections/FAQs)."
+  },
+  {
+   "id": "c39",
+   "classification": "unsupported",
+   "evidence": "Only 'very high temperature' returned for urgent GP/111 in kidney infection; rest of list truncated",
+   "url": "https://www.nhs.uk/conditions/kidney-infection/",
+   "action": "edited",
+   "newSentence": "Reworded in final.json to what the retrieved text says (see sections/FAQs)."
+  },
+  {
+   "id": "c40",
+   "classification": "supported",
+   "evidence": "NI Direct: see GP if very uncomfortable or last more than five days",
+   "url": "https://www.nidirect.gov.uk/conditions/urinary-tract-infections-adults",
+   "action": "kept"
+  },
+  {
+   "id": "c41",
+   "classification": "unsupported",
+   "evidence": "Not returned",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c42",
+   "classification": "supported",
+   "evidence": "NHS 111 Wales: not always needed; self-care/painkiller or delayed prescription",
+   "url": "https://111.wales.nhs.uk/encyclopaedia/u/article/urinarytractinfection/",
+   "action": "kept"
+  },
+  {
+   "id": "c43",
+   "classification": "unsupported",
+   "evidence": "Gloucestershire leaflet: no 48h/drink-water text confirmed",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c44",
+   "classification": "unsupported",
+   "evidence": "Leaflet unconfirmed; NHS sources returned 48h review advice",
+   "url": "https://111.wales.nhs.uk/urinarytractinfection/",
+   "action": "edited",
+   "newSentence": "Reworded in final.json to what the retrieved text says (see sections/FAQs)."
+  },
+  {
+   "id": "c45",
+   "classification": "supported",
+   "evidence": "NIDDK: bladder infections can spread to one or both kidneys",
+   "url": "https://www.niddk.nih.gov/health-information/urologic-diseases/kidney-infection-pyelonephritis",
+   "action": "kept"
+  },
+  {
+   "id": "c46",
+   "classification": "supported",
+   "evidence": "NIDDK warning signs",
+   "url": "https://www.niddk.nih.gov/health-information/urologic-diseases/bladder-infection-uti-in-adults",
+   "action": "kept"
+  },
+  {
+   "id": "c47",
+   "classification": "supported",
+   "evidence": "MedlinePlus: kidney infections can take a week or more",
+   "url": "https://medlineplus.gov/ency/article/000521.htm",
+   "action": "kept"
+  },
+  {
+   "id": "c48",
+   "classification": "unsupported",
+   "evidence": "Not returned as worded (urgency advice needs a route; NHS returned very high temperature only)",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c49",
+   "classification": "unsupported",
+   "evidence": "'No symptoms at all' not returned",
+   "url": "",
+   "action": "edited",
+   "newSentence": "Reworded in final.json to what the retrieved text says (see sections/FAQs)."
+  },
+  {
+   "id": "c50",
+   "classification": "unsupported",
+   "evidence": "Blood in urine/cloudy in children not returned",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c51",
+   "classification": "supported",
+   "evidence": "MedlinePlus children: antibiotics should start quickly to protect the kidneys",
+   "url": "https://medlineplus.gov/ency/article/000505.htm",
+   "action": "kept"
+  },
+  {
+   "id": "c52",
+   "classification": "supported",
+   "evidence": "MedlinePlus children: under 6 months or other complications should see a specialist right away",
+   "url": "https://medlineplus.gov/ency/article/000505.htm",
+   "action": "kept"
+  },
+  {
+   "id": "c53",
+   "classification": "supported",
+   "evidence": "NI Direct",
+   "url": "https://www.nidirect.gov.uk/conditions/urinary-tract-infections-adults",
+   "action": "kept"
+  },
+  {
+   "id": "c54",
+   "classification": "unsupported",
+   "evidence": "As claim 38 (pregnant women not returned)",
+   "url": "https://111.wales.nhs.uk/urinarytractinfection/",
+   "action": "edited",
+   "newSentence": "Reworded in final.json to what the retrieved text says (see sections/FAQs)."
+  },
+  {
+   "id": "c55",
+   "classification": "supported",
+   "evidence": "NHS 111 Wales",
+   "url": "https://111.wales.nhs.uk/urinarytractinfection/",
+   "action": "kept"
+  },
+  {
+   "id": "c56",
+   "classification": "unsupported",
+   "evidence": "Not returned",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c57",
+   "classification": "unsupported",
+   "evidence": "Not returned",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c58",
+   "classification": "unsupported",
+   "evidence": "Not returned",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c59",
+   "classification": "unsupported",
+   "evidence": "Low-dose antibiotics up to 6 months returned (NHS 111 Wales); specialist referral criteria explicitly not found",
+   "url": "https://111.wales.nhs.uk/encyclopaedia/u/article/urinarytractinfection/",
+   "action": "edited",
+   "newSentence": "Reworded in final.json to what the retrieved text says (see sections/FAQs)."
+  },
+  {
+   "id": "c60",
+   "classification": "supported",
+   "evidence": "MedlinePlus",
+   "url": "https://medlineplus.gov/ency/article/000521.htm",
+   "action": "kept"
+  },
+  {
+   "id": "c61",
+   "classification": "supported",
+   "evidence": "MedlinePlus",
+   "url": "https://medlineplus.gov/ency/article/000521.htm",
+   "action": "kept"
+  },
+  {
+   "id": "c62",
+   "classification": "supported",
+   "evidence": "NHS 111 Wales / NHS",
+   "url": "https://111.wales.nhs.uk/encyclopaedia/u/article/urinarytractinfection/",
+   "action": "kept"
+  },
+  {
+   "id": "c63",
+   "classification": "supported",
+   "evidence": "NIDDK",
+   "url": "https://www.niddk.nih.gov/health-information/urologic-diseases/bladder-infection-uti-in-adults/treatment",
+   "action": "kept"
+  },
+  {
+   "id": "c64",
+   "classification": "unsupported",
+   "evidence": "Kidney-infection attribution not returned (see 6)",
+   "url": "",
+   "action": "edited",
+   "newSentence": "Reworded in final.json to what the retrieved text says (see sections/FAQs)."
+  },
+  {
+   "id": "c65",
+   "classification": "unsupported",
+   "evidence": "'No symptoms at all' not returned",
+   "url": "",
+   "action": "edited",
+   "newSentence": "Reworded in final.json to what the retrieved text says (see sections/FAQs)."
+  },
+  {
+   "id": "c66",
+   "classification": "supported",
+   "evidence": "Reviews",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3749018/",
+   "action": "kept"
+  }
+ ],
+ "notes": "All 12 searches used. Search summaries blend pages, so symptom/urgency sentences are attributed to the NHS pages returned (111.wales.nhs.uk, nhs.uk kidney infection and cystitis) with that caveat. Cut: Danish audit, dementia imaging, stones/devices, quarter-to-a-third recurrence, systematic-review 'no benefit', Gloucestershire leaflet claims, premature delivery, surgery, 'symptoms return after antibiotics', 'no symptoms at all' in children, blood in urine in older children, pregnancy in NHS urgent list. Kept in final but flag for reviewer: '48 hours' and 'up to six months' are durations quoted from NHS 111 Wales, not doses; 'very high or very low temperature' states no numeric cut-off. NHS inform advises against NSAIDs for UTI while other NHS leaflets allow ibuprofen for lower UTI; final text only mentions ibuprofen avoidance for kidney infection per NHS. Dipstick/NICE QS260 and UK hospital study sentences rest on PMC search summaries (PMC8336295, PMC6498584) quoting NICE; article-level attribution blended. Existing conditions.json entry mentions nitrofurantoin/trimethoprim and a single post-sex antibiotic dose; final avoids naming drugs. No contradiction with existing entry found."
+}
