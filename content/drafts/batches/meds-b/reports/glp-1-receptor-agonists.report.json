@@ -1,0 +1,103 @@
+{
+ "id": "glp-1-receptor-agonists",
+ "searchesUsed": 13,
+ "counts": {
+  "supported": 7,
+  "textbook": 0,
+  "unsupported": 4,
+  "wrong": 0,
+  "unsafe": 0,
+  "unchecked": 0
+ },
+ "claims": [
+  {
+   "id": "c01",
+   "classification": "supported",
+   "evidence": "GOV.UK: semaglutide imitates GLP-1 released after eating; class name 'agonist'.",
+   "url": "https://www.gov.uk/government/news/first-glp-1-tablet-for-weight-loss-approved-in-the-uk",
+   "action": "edited",
+   "newSentence": "GLP-1 receptor agonists are medicines that imitate GLP-1, a hormone the body releases after eating."
+  },
+  {
+   "id": "c02",
+   "classification": "supported",
+   "evidence": "NHS tirzepatide page (via search): dual GLP-1/GIP agonist; MHRA DSU title distinguishes GLP-1 and dual GIP/GLP-1 agonists. Local-formulary sourcing replaced.",
+   "url": "https://www.nhs.uk/medicines/tirzepatide/",
+   "action": "edited",
+   "newSentence": "Semaglutide (Ozempic, Wegovy, Rybelsus) is one; tirzepatide (Mounjaro) is described on the NHS website as acting on both GIP and GLP-1 receptors."
+  },
+  {
+   "id": "c03",
+   "classification": "supported",
+   "evidence": "NHS pages for semaglutide and tirzepatide: type 2 diabetes and obesity.",
+   "url": "https://www.nhs.uk/medicines/semaglutide/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c04",
+   "classification": "unsupported",
+   "evidence": "'Slows digestion, keeps sugar steady after meals' not retrieved for semaglutide; GOV.UK: fuller for longer, reduces hunger.",
+   "url": "https://www.gov.uk/government/news/first-glp-1-tablet-for-weight-loss-approved-in-the-uk",
+   "action": "edited",
+   "newSentence": "Semaglutide imitates GLP-1, helps people feel fuller for longer and reduces hunger, according to GOV.UK."
+  },
+  {
+   "id": "c05",
+   "classification": "supported",
+   "evidence": "NHS tirzepatide: reduces appetite, fuller for longer; delays stomach emptying.",
+   "url": "https://www.nhs.uk/medicines/tirzepatide/",
+   "action": "edited",
+   "newSentence": "Tirzepatide is described by the NHS as reducing appetite so that people feel fuller for longer, and it delays stomach emptying."
+  },
+  {
+   "id": "c06",
+   "classification": "unsupported",
+   "evidence": "'Reflux' not in retrieved lists; Cheshire and Merseyside NHS: sick, indigestion, constipation, diarrhoea.",
+   "url": "https://www.cheshireandmerseyside.nhs.uk/your-health/prescribing/statements/mounjaro-tirzepatide/",
+   "action": "edited",
+   "newSentence": "Feeling sick, being sick, diarrhoea and constipation are common with semaglutide, and tirzepatide is described as commonly causing feeling sick, indigestion, constipation and diarrhoea"
+  },
+  {
+   "id": "c07",
+   "classification": "unsupported",
+   "evidence": "NICE local formulary document not retrieved; 'other GLP-1 agonists' unsupported. UK tirzepatide SmPC: pancreatitis reported incl. necrotising and fatal cases; NHS: semaglutide pancreatitis rare but serious.",
+   "url": "https://www.medicines.org.uk/emc/product/15484/smpc",
+   "action": "edited",
+   "newSentence": "Pancreatitis is listed by the NHS as a rare but serious effect of semaglutide, and UK prescribing information says acute pancreatitis has been reported with tirzepatide, including necrotising and fatal cases"
+  },
+  {
+   "id": "c08",
+   "classification": "supported",
+   "evidence": "NHS SPS: MHRA advises against in pregnancy, contraception throughout, lack of data.",
+   "url": "https://sps.nhs.uk/articles/considerations-and-interactions-with-glp-1-receptor-agonists/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c09",
+   "classification": "unsupported",
+   "evidence": "MHRA DSU: 'potential risk' not 'higher risk'; cited directly.",
+   "url": "https://www.gov.uk/drug-safety-update/glp-1-and-dual-gip-slash-glp-1-receptor-agonists-potential-risk-of-pulmonary-aspiration-during-general-anaesthesia-or-deep-sedation",
+   "action": "edited",
+   "newSentence": "The MHRA has highlighted a potential risk of stomach contents entering the lungs during general anaesthesia or deep sedation, because these medicines delay stomach emptying and food can remain despite fasting"
+  },
+  {
+   "id": "c10",
+   "classification": "supported",
+   "evidence": "UK SmPC / NHS.",
+   "url": "https://www.medicines.org.uk/emc/product/9750/smpc",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c11",
+   "classification": "supported",
+   "evidence": "NHS SPS excerpt.",
+   "url": "https://sps.nhs.uk/articles/considerations-and-interactions-with-glp-1-receptor-agonists/",
+   "action": "kept",
+   "newSentence": null
+  }
+ ],
+ "notes": "Searches shared with the semaglutide report (13 total across both items). Added one new route sentence (pancreatitis, textbook per site signposting rule) because the page now mentions pancreatitis; this is not a first-pass sentence so is not in the counts. Removed the Kent and Medway formulary and NICE TA1026 local formulary references (not retrieved, and the tirzepatide dual-agonist statement now rests on the NHS tirzepatide page). Class page makes no claim about other members (liraglutide etc.) because nothing was retrieved. Tirzepatide entity file belongs to another item and was not touched."
+}

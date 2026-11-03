@@ -1,0 +1,631 @@
+{
+ "id": "tirzepatide",
+ "searchesUsed": 13,
+ "counts": {
+  "supported": 46,
+  "textbook": 2,
+  "unsupported": 22,
+  "wrong": 2,
+  "unsafe": 5,
+  "unchecked": 0
+ },
+ "claims": [
+  {
+   "id": "c01",
+   "classification": "supported",
+   "evidence": "Retrieved text states this (NHS/NICE/MHRA page named in url), qualifiers included.",
+   "url": "https://www.nhs.uk/medicines/tirzepatide/",
+   "action": "kept",
+   "newSentence": "Tirzepatide is a prescription medicine used to manage type 2 diabetes and to treat obesity."
+  },
+  {
+   "id": "c02",
+   "classification": "supported",
+   "evidence": "Retrieved text states this (NHS/NICE/MHRA page named in url), qualifiers included.",
+   "url": "https://www.nhs.uk/medicines/tirzepatide/",
+   "action": "kept",
+   "newSentence": "It activates two gut hormone receptors, GLP-1 and GIP."
+  },
+  {
+   "id": "c03",
+   "classification": "unsupported",
+   "evidence": "Compound; the MHRA June 2025 roundup was never returned in any search (only the 'what you need to know' guidance and a news item).",
+   "url": "https://www.nhs.uk/medicines/tirzepatide/",
+   "action": "edited",
+   "newSentence": "Feeling or being sick is among the common side effects, inflammation of the pancreas is a serious one, it may reduce how well the contraceptive pill works in people who are overweight, and the NHS says it is not used in pregnancy."
+  },
+  {
+   "id": "c04",
+   "classification": "supported",
+   "evidence": "Retrieved text states this (NHS/NICE/MHRA page named in url), qualifiers included.",
+   "url": "https://www.nice.org.uk/guidance/ta924",
+   "action": "edited",
+   "newSentence": "Managing type 2 diabetes in adults who meet NICE criteria, alongside diet and exercise"
+  },
+  {
+   "id": "c05",
+   "classification": "supported",
+   "evidence": "Retrieved text states this (NHS/NICE/MHRA page named in url), qualifiers included.",
+   "url": "https://www.nhs.uk/medicines/tirzepatide/",
+   "action": "edited",
+   "newSentence": "Treating overweight and obesity in adults, alongside a reduced-calorie diet and more physical activity as part of a weight management programme"
+  },
+  {
+   "id": "c06",
+   "classification": "supported",
+   "evidence": "Retrieved text states this (NHS/NICE/MHRA page named in url), qualifiers included.",
+   "url": "https://www.nhs.uk/medicines/tirzepatide/",
+   "action": "edited",
+   "newSentence": "Tirzepatide activates the receptors for two gut hormones, GLP-1 and GIP, so it is called a dual agonist."
+  },
+  {
+   "id": "c07",
+   "classification": "supported",
+   "evidence": "Retrieved text states this (NHS/NICE/MHRA page named in url), qualifiers included.",
+   "url": "https://www.nhs.uk/medicines/tirzepatide/",
+   "action": "kept",
+   "newSentence": "For weight loss, the NHS says it reduces appetite and helps people feel fuller for longer."
+  },
+  {
+   "id": "c08",
+   "classification": "supported",
+   "evidence": "Retrieved text states this (NHS/NICE/MHRA page named in url), qualifiers included.",
+   "url": "https://www.nhs.uk/medicines/tirzepatide/",
+   "action": "kept",
+   "newSentence": "For type 2 diabetes, it lowers blood sugar and helps the body make more insulin if it is needed."
+  },
+  {
+   "id": "c09",
+   "classification": "unsupported",
+   "evidence": "NHS lists nausea and vomiting among common effects; no retrieved text says they are the 'most common'.",
+   "url": "https://www.nhs.uk/medicines/tirzepatide/",
+   "action": "edited",
+   "newSentence": "The NHS lists feeling sick and being sick among the common side effects"
+  },
+  {
+   "id": "c10",
+   "classification": "supported",
+   "evidence": "Retrieved text states this (NHS/NICE/MHRA page named in url), qualifiers included.",
+   "url": "https://www.nhs.uk/medicines/tirzepatide/",
+   "action": "edited",
+   "newSentence": "Constipation, diarrhoea, stomach pain, tiredness, hair loss and redness at the injection site are also listed by the NHS"
+  },
+  {
+   "id": "c11",
+   "classification": "unsupported",
+   "evidence": "No retrieved NHS text carries driving, cycling or machinery advice (search stated it found no driving guidance); dizziness/vision listed only as low-blood-sugar symptoms.",
+   "url": "https://www.nhs.uk/medicines/tirzepatide/",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c12",
+   "classification": "unsafe",
+   "evidence": "NHS lists pancreatitis with severe pain in stomach or back that does not go away. 'Same day' and '999 if very severe' appear in no retrieved text (a leaflet says call 111 out of hours).",
+   "url": "https://www.nhs.uk/medicines/tirzepatide/",
+   "action": "edited",
+   "newSentence": "Severe pain that does not go away needs urgent advice from NHS 111 or the GP; signs of a serious allergic reaction are an emergency that needs a 999 call (textbook route)"
+  },
+  {
+   "id": "c13",
+   "classification": "textbook",
+   "evidence": "Symptoms supported (NHS: swollen throat or tongue, raised itchy rash, difficulty breathing). The 999 route is site signposting, not NHS-retrieved text.",
+   "url": "https://www.nhs.uk/medicines/tirzepatide/",
+   "action": "edited",
+   "newSentence": "A serious allergic reaction (anaphylaxis) can cause a swollen throat or tongue, a raised itchy rash or difficulty breathing."
+  },
+  {
+   "id": "c14",
+   "classification": "supported",
+   "evidence": "Retrieved text states this (NHS/NICE/MHRA page named in url), qualifiers included.",
+   "url": "https://www.nhs.uk/medicines/tirzepatide/",
+   "action": "kept",
+   "newSentence": "Low blood sugar, more likely alongside other diabetes medicines, with dizziness, confusion and a fast heartbeat"
+  },
+  {
+   "id": "c15",
+   "classification": "unsupported",
+   "evidence": "NHS medicines page lists gallstones/gallbladder swelling (two searches), not the regional page; dehydration: no NICE text retrieved, only an SW London ICB prescriber sheet and trial protocols.",
+   "url": "https://www.nhs.uk/medicines/tirzepatide/",
+   "action": "edited",
+   "newSentence": "Gallstones or swelling of the gallbladder, which can cause severe tummy pain, are listed by the NHS; dehydration reworded to the SW London ICB sheet in the article"
+  },
+  {
+   "id": "c16",
+   "classification": "supported",
+   "evidence": "Retrieved text states this (NHS/NICE/MHRA page named in url), qualifiers included.",
+   "url": "https://www.nhs.uk/medicines/tirzepatide/",
+   "action": "edited",
+   "newSentence": "May not suit people who have had an allergic reaction to tirzepatide or a similar GLP-1 medicine, or who have had acute pancreatitis"
+  },
+  {
+   "id": "c17",
+   "classification": "unsafe",
+   "evidence": "No retrieved MHRA text gives 'four weeks'; MHRA statement says overweight patients on Mounjaro should add a non-oral method to the pill. One summary said the 4-week figure comes from a GP practice, another from the SmPC.",
+   "url": "https://www.gov.uk/government/news/women-on-skinny-jabs-must-use-effective-contraception-mhra-urges-in-latest-guidance",
+   "action": "edited",
+   "newSentence": "The MHRA says GLP-1 medicines may reduce how well oral contraceptives work in people who are overweight or obese, and advises a non-oral method in addition to the pill for people who are overweight and taking Mounjaro"
+  },
+  {
+   "id": "c18",
+   "classification": "unsupported",
+   "evidence": "NHS: not used in pregnancy (not enough information). No retrieved NHS text says 'not used while breastfeeding'; NHS says not known if it passes into breast milk. MHRA says GLP-1 medicines should not be taken during breastfeeding.",
+   "url": "https://www.nhs.uk/medicines/tirzepatide/",
+   "action": "edited",
+   "newSentence": "The NHS says it is not used in pregnancy because there is not enough information about its effects on a baby; the MHRA says GLP-1 medicines should not be taken during pregnancy, while trying to get pregnant or during breastfeeding"
+  },
+  {
+   "id": "c19",
+   "classification": "supported",
+   "evidence": "Retrieved text states this (NHS/NICE/MHRA page named in url), qualifiers included.",
+   "url": "https://www.nhs.uk/medicines/tirzepatide/",
+   "action": "kept",
+   "newSentence": "Low blood sugar is more likely with other diabetes medicines"
+  },
+  {
+   "id": "c20",
+   "classification": "supported",
+   "evidence": "Retrieved text states this (NHS/NICE/MHRA page named in url), qualifiers included.",
+   "url": "https://www.nhs.uk/medicines/tirzepatide/",
+   "action": "kept",
+   "newSentence": "The NHS suggests avoiding alcohol, which can make feeling or being sick worse"
+  },
+  {
+   "id": "c21",
+   "classification": "unsupported",
+   "evidence": "NICE clinician guidance: review decision applies if less than 5% initial weight lost after 6 months at highest tolerated dose; original dropped the condition.",
+   "url": "https://www.nice.org.uk/guidance/ta1026/resources/a-practical-guide-to-using-medicines-to-manage-overweight-and-obesity-15299628589/chapter/prescribing-reviewing-and-stopping-tirzepatide",
+   "action": "edited",
+   "newSentence": "NICE says that if too little of the starting weight has been lost after six months at the highest tolerated dose, the prescriber decides whether to continue, weighing the benefits and risks for that person."
+  },
+  {
+   "id": "c22",
+   "classification": "supported",
+   "evidence": "Retrieved text states this (NHS/NICE/MHRA page named in url), qualifiers included.",
+   "url": "https://www.nhs.uk/medicines/tirzepatide/",
+   "action": "kept",
+   "newSentence": "Tirzepatide is a prescription medicine used to manage type 2 diabetes and to treat obesity."
+  },
+  {
+   "id": "c23",
+   "classification": "supported",
+   "evidence": "Retrieved text states this (NHS/NICE/MHRA page named in url), qualifiers included.",
+   "url": "https://www.cheshireandmerseyside.nhs.uk/your-health/prescribing/statements/mounjaro-tirzepatide/",
+   "action": "kept",
+   "newSentence": "In the UK it is sold under the brand name Mounjaro."
+  },
+  {
+   "id": "c24",
+   "classification": "supported",
+   "evidence": "Retrieved text states this (NHS/NICE/MHRA page named in url), qualifiers included.",
+   "url": "https://www.nhs.uk/medicines/tirzepatide/",
+   "action": "kept",
+   "newSentence": "It is an injection that people give themselves."
+  },
+  {
+   "id": "c25",
+   "classification": "supported",
+   "evidence": "Retrieved text states this (NHS/NICE/MHRA page named in url), qualifiers included.",
+   "url": "https://www.nice.org.uk/guidance/ta924",
+   "action": "kept",
+   "newSentence": "NICE has recommended tirzepatide for some adults with type 2 diabetes, alongside diet and exercise."
+  },
+  {
+   "id": "c26",
+   "classification": "supported",
+   "evidence": "Retrieved text states this (NHS/NICE/MHRA page named in url), qualifiers included.",
+   "url": "https://www.nice.org.uk/guidance/ta1026",
+   "action": "kept",
+   "newSentence": "NICE has also recommended it as an option for adults with overweight or obesity, alongside a reduced-calorie diet and more physical activity."
+  },
+  {
+   "id": "c27",
+   "classification": "supported",
+   "evidence": "Retrieved text states this (NHS/NICE/MHRA page named in url), qualifiers included.",
+   "url": "https://www.nice.org.uk/guidance/ta1026",
+   "action": "kept",
+   "newSentence": "NICE links this to a person's starting body mass index and to having at least one weight-related health condition."
+  },
+  {
+   "id": "c28",
+   "classification": "supported",
+   "evidence": "Retrieved text states this (NHS/NICE/MHRA page named in url), qualifiers included.",
+   "url": "https://www.nice.org.uk/guidance/ta1026",
+   "action": "kept",
+   "newSentence": "NICE applies a lower body mass index threshold for people from some ethnic backgrounds."
+  },
+  {
+   "id": "c29",
+   "classification": "unsupported",
+   "evidence": "NHS: prescribed alongside programmes that support weight loss via diet and physical activity changes; 'complete programme' and 'lifestyle support' not retrieved; 'reduced-calorie diet' is NICE wording.",
+   "url": "https://www.nhs.uk/medicines/tirzepatide/",
+   "action": "edited",
+   "newSentence": "For weight management, the NHS says tirzepatide is only prescribed alongside programmes that support changes to diet and physical activity."
+  },
+  {
+   "id": "c30",
+   "classification": "supported",
+   "evidence": "Retrieved text states this (NHS/NICE/MHRA page named in url), qualifiers included.",
+   "url": "https://www.nhs.uk/medicines/tirzepatide/",
+   "action": "edited",
+   "newSentence": "Tirzepatide activates the receptors for two gut hormones, GLP-1 and GIP, so it is called a dual agonist."
+  },
+  {
+   "id": "c31",
+   "classification": "supported",
+   "evidence": "Retrieved text states this (NHS/NICE/MHRA page named in url), qualifiers included.",
+   "url": "https://www.nhs.uk/medicines/tirzepatide/",
+   "action": "kept",
+   "newSentence": "For weight loss, the NHS says it reduces appetite and helps people feel fuller for longer."
+  },
+  {
+   "id": "c32",
+   "classification": "supported",
+   "evidence": "Retrieved text states this (NHS/NICE/MHRA page named in url), qualifiers included.",
+   "url": "https://www.nhs.uk/medicines/tirzepatide/",
+   "action": "kept",
+   "newSentence": "For type 2 diabetes, it lowers blood sugar and helps the body make more insulin if it is needed."
+  },
+  {
+   "id": "c33",
+   "classification": "supported",
+   "evidence": "Retrieved text states this (NHS/NICE/MHRA page named in url), qualifiers included.",
+   "url": "https://www.nice.org.uk/guidance/ta1026",
+   "action": "kept",
+   "newSentence": "NICE says it can be used in primary care or in specialist weight management services."
+  },
+  {
+   "id": "c34",
+   "classification": "supported",
+   "evidence": "Retrieved text states this (NHS/NICE/MHRA page named in url), qualifiers included.",
+   "url": "https://www.nice.org.uk/guidance/ta1026",
+   "action": "kept",
+   "newSentence": "Access on the NHS in England is being phased in, so not everyone who fits the NICE recommendation can have it at once."
+  },
+  {
+   "id": "c35",
+   "classification": "unsupported",
+   "evidence": "Retrieved: NHS England's interim commissioning guidance sets eligible cohorts and phasing, not that NICE says NHS England decides next groups.",
+   "url": "https://www.england.nhs.uk/long-read/interim-commissioning-guidance-nice-ta1026-tirzepatide/",
+   "action": "edited",
+   "newSentence": "NHS England's interim commissioning guidance sets out which groups are offered it first."
+  },
+  {
+   "id": "c36",
+   "classification": "unsupported",
+   "evidence": "Not in any retrieved text; generic.",
+   "url": "https://www.nhs.uk/medicines/tirzepatide/",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c37",
+   "classification": "unsupported",
+   "evidence": "'Most common' not retrieved; NHS lists nausea and vomiting among common effects.",
+   "url": "https://www.nhs.uk/medicines/tirzepatide/",
+   "action": "edited",
+   "newSentence": "The NHS lists feeling sick and being sick among the common side effects."
+  },
+  {
+   "id": "c38",
+   "classification": "supported",
+   "evidence": "Retrieved text states this (NHS/NICE/MHRA page named in url), qualifiers included.",
+   "url": "https://www.nhs.uk/medicines/tirzepatide/",
+   "action": "edited",
+   "newSentence": "It also lists constipation, diarrhoea, stomach pain, tiredness, hair loss and redness at the injection site."
+  },
+  {
+   "id": "c39",
+   "classification": "unsupported",
+   "evidence": "Retrieved: 'sometimes cause serious side effects, but most of them are rare'; 'Serious side effects are rare' overstates.",
+   "url": "https://www.nhs.uk/medicines/tirzepatide/",
+   "action": "edited",
+   "newSentence": "The NHS says most serious side effects are rare."
+  },
+  {
+   "id": "c40",
+   "classification": "supported",
+   "evidence": "Retrieved text states this (NHS/NICE/MHRA page named in url), qualifiers included.",
+   "url": "https://www.nhs.uk/medicines/tirzepatide/",
+   "action": "kept",
+   "newSentence": "The NHS lists inflammation of the pancreas (acute pancreatitis), which can cause severe pain in the stomach or back that does not go away, as a serious side effect."
+  },
+  {
+   "id": "c41",
+   "classification": "unsafe",
+   "evidence": "Same as c12/c11; 'same day' and 'collapse' appear in no retrieved text; route is site signposting.",
+   "url": "",
+   "action": "edited",
+   "newSentence": "Severe pain that does not go away needs urgent advice from NHS 111 or the GP, and signs of a serious allergic reaction are an emergency that needs a 999 call."
+  },
+  {
+   "id": "c42",
+   "classification": "supported",
+   "evidence": "Retrieved text states this (NHS/NICE/MHRA page named in url), qualifiers included.",
+   "url": "https://www.nhs.uk/medicines/tirzepatide/",
+   "action": "kept",
+   "newSentence": "A serious allergic reaction (anaphylaxis) can cause a swollen throat or tongue, a raised itchy rash or difficulty breathing."
+  },
+  {
+   "id": "c43",
+   "classification": "textbook",
+   "evidence": "Site signposting 999 route; no retrieved text states it for this page.",
+   "url": "",
+   "action": "edited",
+   "newSentence": "(merged into the route sentence above)"
+  },
+  {
+   "id": "c44",
+   "classification": "supported",
+   "evidence": "Retrieved text states this (NHS/NICE/MHRA page named in url), qualifiers included.",
+   "url": "https://www.nhs.uk/medicines/tirzepatide/",
+   "action": "kept",
+   "newSentence": "Low blood sugar is more likely when tirzepatide is used with other diabetes medicines, and can cause dizziness, confusion and a fast heartbeat."
+  },
+  {
+   "id": "c45",
+   "classification": "unsupported",
+   "evidence": "Regional guide (Northeast and North Cumbria) was returned in one search list but no excerpt confirming this list; NHS medicines page carries low sugar, gallstones, pancreatitis.",
+   "url": "https://www.nhs.uk/medicines/tirzepatide/",
+   "action": "removed",
+   "newSentence": "The NHS also lists gallstones or swelling of the gallbladder, which can cause severe tummy pain."
+  },
+  {
+   "id": "c46",
+   "classification": "unsupported",
+   "evidence": "No NICE text on dehydration/hospital admission retrieved; the practical-guide page was not returned for that query.",
+   "url": "https://swlimo.southwestlondon.icb.nhs.uk/wp-content/uploads/Tirzepatide-information-sheet-v1.0.pdf",
+   "action": "removed",
+   "newSentence": "A South West London NHS information sheet for prescribers warns that sickness and diarrhoea can lead to dehydration, which could worsen kidney function."
+  },
+  {
+   "id": "c47",
+   "classification": "unsupported",
+   "evidence": "Driving advice not retrieved.",
+   "url": "https://www.nhs.uk/medicines/tirzepatide/",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c48",
+   "classification": "unsupported",
+   "evidence": "GOV.UK guidance: may reduce effectiveness of oral contraceptives in those overweight or obese; 'absorbed' mechanism not in MHRA retrieved text.",
+   "url": "https://www.gov.uk/government/publications/glp-1-medicines-for-weight-loss-and-diabetes-what-you-need-to-know/glp-1-medicines-for-weight-loss-and-diabetes-what-you-need-to-know",
+   "action": "edited",
+   "newSentence": "The MHRA says GLP-1 medicines may reduce how well oral contraceptives work in people who are overweight or obese."
+  },
+  {
+   "id": "c49",
+   "classification": "unsafe",
+   "evidence": "Four-week windows not found in retrieved MHRA text.",
+   "url": "https://www.gov.uk/government/news/women-on-skinny-jabs-must-use-effective-contraception-mhra-urges-in-latest-guidance",
+   "action": "edited",
+   "newSentence": "For people who are overweight and taking Mounjaro, the MHRA advises using a non-oral method of contraception in addition to the pill."
+  },
+  {
+   "id": "c50",
+   "classification": "supported",
+   "evidence": "Retrieved text states this (NHS/NICE/MHRA page named in url), qualifiers included.",
+   "url": "https://www.nhs.uk/medicines/tirzepatide/",
+   "action": "kept",
+   "newSentence": "The NHS suggests avoiding alcohol, because it can make feeling or being sick worse."
+  },
+  {
+   "id": "c51",
+   "classification": "supported",
+   "evidence": "Retrieved text states this (NHS/NICE/MHRA page named in url), qualifiers included.",
+   "url": "https://www.nhs.uk/medicines/tirzepatide/",
+   "action": "kept",
+   "newSentence": "Low blood sugar is more likely when tirzepatide is combined with other diabetes medicines."
+  },
+  {
+   "id": "c52",
+   "classification": "supported",
+   "evidence": "Retrieved text states this (NHS/NICE/MHRA page named in url), qualifiers included.",
+   "url": "https://www.nhs.uk/medicines/tirzepatide/",
+   "action": "kept",
+   "newSentence": "The NHS says most adults can use tirzepatide."
+  },
+  {
+   "id": "c53",
+   "classification": "supported",
+   "evidence": "Retrieved text states this (NHS/NICE/MHRA page named in url), qualifiers included.",
+   "url": "https://www.nhs.uk/medicines/tirzepatide/",
+   "action": "kept",
+   "newSentence": "It may not suit people who have had an allergic reaction to tirzepatide or a similar GLP-1 medicine, or who have or have had acute pancreatitis."
+  },
+  {
+   "id": "c54",
+   "classification": "supported",
+   "evidence": "Retrieved text states this (NHS/NICE/MHRA page named in url), qualifiers included.",
+   "url": "https://www.nhs.uk/medicines/tirzepatide/",
+   "action": "kept",
+   "newSentence": "The NHS says tirzepatide is not used in pregnancy because there is not enough information about its effects on a baby."
+  },
+  {
+   "id": "c55",
+   "classification": "wrong",
+   "evidence": "MHRA: not during pregnancy, while trying to get pregnant, or during breastfeeding; lack of human safety data. 'Just before trying' misstates and omits breastfeeding.",
+   "url": "https://www.gov.uk/government/publications/glp-1-medicines-for-weight-loss-and-diabetes-what-you-need-to-know/glp-1-medicines-for-weight-loss-and-diabetes-what-you-need-to-know",
+   "action": "edited",
+   "newSentence": "The MHRA says GLP-1 medicines should not be taken during pregnancy, while trying to get pregnant or during breastfeeding, because of a lack of human data."
+  },
+  {
+   "id": "c56",
+   "classification": "unsupported",
+   "evidence": "Not retrieved; NHS text found says stop at least 4 weeks before trying, nothing on 'stopped if pregnancy occurs'.",
+   "url": "https://www.nhs.uk/medicines/tirzepatide/",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c57",
+   "classification": "unsupported",
+   "evidence": "Only 'not known whether it passes into breast milk' retrieved for the NHS.",
+   "url": "https://www.nhs.uk/medicines/tirzepatide/",
+   "action": "edited",
+   "newSentence": "The NHS says it is not known whether tirzepatide passes into breast milk."
+  },
+  {
+   "id": "c58",
+   "classification": "supported",
+   "evidence": "Retrieved text states this (NHS/NICE/MHRA page named in url), qualifiers included.",
+   "url": "https://www.nice.org.uk/guidance/ta1026/resources/a-practical-guide-to-using-medicines-to-manage-overweight-and-obesity-15299628589/chapter/prescribing-reviewing-and-stopping-tirzepatide",
+   "action": "kept",
+   "newSentence": "NICE says that if too little of the starting weight has been lost after six months at the highest tolerated dose, the prescriber decides whether to continue, weighing the benefits and risks for that person."
+  },
+  {
+   "id": "c59",
+   "classification": "supported",
+   "evidence": "Retrieved text states this (NHS/NICE/MHRA page named in url), qualifiers included.",
+   "url": "https://www.cheshireandmerseyside.nhs.uk/your-health/prescribing/statements/mounjaro-tirzepatide/",
+   "action": "kept",
+   "newSentence": "In the UK it is sold under the brand name Mounjaro."
+  },
+  {
+   "id": "c60",
+   "classification": "supported",
+   "evidence": "Retrieved text states this (NHS/NICE/MHRA page named in url), qualifiers included.",
+   "url": "https://www.nhs.uk/medicines/tirzepatide/",
+   "action": "kept",
+   "newSentence": "Tirzepatide is a prescription medicine used to manage type 2 diabetes and to treat obesity."
+  },
+  {
+   "id": "c61",
+   "classification": "supported",
+   "evidence": "Retrieved text states this (NHS/NICE/MHRA page named in url), qualifiers included.",
+   "url": "https://www.nhs.uk/medicines/tirzepatide/",
+   "action": "kept",
+   "newSentence": "It is an injection that people give themselves."
+  },
+  {
+   "id": "c62",
+   "classification": "supported",
+   "evidence": "Retrieved text states this (NHS/NICE/MHRA page named in url), qualifiers included.",
+   "url": "https://www.nhs.uk/medicines/tirzepatide/",
+   "action": "kept",
+   "newSentence": "The NHS says it is available only with a prescription, either on the NHS or privately."
+  },
+  {
+   "id": "c63",
+   "classification": "unsupported",
+   "evidence": "As c47.",
+   "url": "https://www.gov.uk/government/publications/glp-1-medicines-for-weight-loss-and-diabetes-what-you-need-to-know/glp-1-medicines-for-weight-loss-and-diabetes-what-you-need-to-know",
+   "action": "edited",
+   "newSentence": "The MHRA says GLP-1 medicines may reduce how well oral contraceptives work in people who are overweight or obese."
+  },
+  {
+   "id": "c64",
+   "classification": "unsafe",
+   "evidence": "As c48.",
+   "url": "https://www.gov.uk/government/news/women-on-skinny-jabs-must-use-effective-contraception-mhra-urges-in-latest-guidance",
+   "action": "edited",
+   "newSentence": "For people who are overweight and taking Mounjaro, the MHRA advises using a non-oral method of contraception in addition to the pill."
+  },
+  {
+   "id": "c65",
+   "classification": "supported",
+   "evidence": "Retrieved text states this (NHS/NICE/MHRA page named in url), qualifiers included.",
+   "url": "https://www.nhs.uk/medicines/tirzepatide/",
+   "action": "kept",
+   "newSentence": "The NHS says tirzepatide is not used in pregnancy because there is not enough information about its effects on a baby."
+  },
+  {
+   "id": "c66",
+   "classification": "wrong",
+   "evidence": "As c54.",
+   "url": "https://www.gov.uk/government/publications/glp-1-medicines-for-weight-loss-and-diabetes-what-you-need-to-know/glp-1-medicines-for-weight-loss-and-diabetes-what-you-need-to-know",
+   "action": "edited",
+   "newSentence": "The MHRA says GLP-1 medicines should not be taken during pregnancy, while trying to get pregnant or during breastfeeding, because of a lack of human data."
+  },
+  {
+   "id": "c67",
+   "classification": "unsupported",
+   "evidence": "As c56/c17.",
+   "url": "https://www.nhs.uk/medicines/tirzepatide/",
+   "action": "edited",
+   "newSentence": "The NHS says it is not known whether tirzepatide passes into breast milk."
+  },
+  {
+   "id": "c68",
+   "classification": "unsupported",
+   "evidence": "As c36.",
+   "url": "https://www.nhs.uk/medicines/tirzepatide/",
+   "action": "edited",
+   "newSentence": "The NHS lists feeling sick and being sick among the common side effects."
+  },
+  {
+   "id": "c69",
+   "classification": "supported",
+   "evidence": "Retrieved text states this (NHS/NICE/MHRA page named in url), qualifiers included.",
+   "url": "https://www.nhs.uk/medicines/tirzepatide/",
+   "action": "edited",
+   "newSentence": "It also lists constipation, diarrhoea, stomach pain, tiredness, hair loss and redness at the injection site."
+  },
+  {
+   "id": "c70",
+   "classification": "unsupported",
+   "evidence": "As c38.",
+   "url": "https://www.nhs.uk/medicines/tirzepatide/",
+   "action": "edited",
+   "newSentence": "The NHS says most serious side effects are rare."
+  },
+  {
+   "id": "c71",
+   "classification": "supported",
+   "evidence": "Retrieved text states this (NHS/NICE/MHRA page named in url), qualifiers included.",
+   "url": "https://www.cheshireandmerseyside.nhs.uk/your-health/prescribing/statements/mounjaro-tirzepatide/",
+   "action": "kept",
+   "newSentence": "Brand name in the UK: Mounjaro"
+  },
+  {
+   "id": "c72",
+   "classification": "supported",
+   "evidence": "Retrieved text states this (NHS/NICE/MHRA page named in url), qualifiers included.",
+   "url": "https://www.nhs.uk/medicines/tirzepatide/",
+   "action": "kept",
+   "newSentence": "Type of medicine: Dual GIP and GLP-1 receptor agonist"
+  },
+  {
+   "id": "c73",
+   "classification": "supported",
+   "evidence": "Retrieved text states this (NHS/NICE/MHRA page named in url), qualifiers included.",
+   "url": "https://www.nhs.uk/medicines/tirzepatide/",
+   "action": "kept",
+   "newSentence": "How it is given: Injection that people give themselves"
+  },
+  {
+   "id": "c74",
+   "classification": "supported",
+   "evidence": "Retrieved text states this (NHS/NICE/MHRA page named in url), qualifiers included.",
+   "url": "https://www.nhs.uk/medicines/tirzepatide/",
+   "action": "kept",
+   "newSentence": "Availability: Prescription only, on the NHS or privately"
+  },
+  {
+   "id": "c75",
+   "classification": "supported",
+   "evidence": "Retrieved text states this (NHS/NICE/MHRA page named in url), qualifiers included.",
+   "url": "https://www.nhs.uk/medicines/tirzepatide/",
+   "action": "kept",
+   "newSentence": "Used for: Type 2 diabetes and weight management"
+  },
+  {
+   "id": "c76",
+   "classification": "supported",
+   "evidence": "Retrieved text states this (NHS/NICE/MHRA page named in url), qualifiers included.",
+   "url": "https://www.nice.org.uk/guidance/ta924",
+   "action": "kept",
+   "newSentence": "NICE guidance: Technology appraisals TA924 (type 2 diabetes) and TA1026 (overweight and obesity)"
+  },
+  {
+   "id": "c77",
+   "classification": "unsupported",
+   "evidence": "As c36.",
+   "url": "https://www.nhs.uk/medicines/tirzepatide/",
+   "action": "edited",
+   "newSentence": "Common side effects: Feeling sick and being sick are among those the NHS lists"
+  }
+ ],
+ "notes": "13 of 13 searches used. (1) Several first-pass attributions rested on blended summaries; kept only what a returned excerpt stated. (2) MHRA: the June 2025 Safety Roundup was never returned; its reference was dropped. The returned MHRA statement (via GOV.UK/NI news and guidance summaries) says overweight patients taking Mounjaro should use a non-oral method in addition to the pill; the 'four weeks after starting and each dose increase' window is not in any retrieved MHRA text (a summary attributed it variously to MHRA, the SmPC and a GP notice) so it was removed; the Mounjaro SmPC (medicines.org.uk/emc/product/15481/smpc) was returned but only via summary, so a human should confirm the timing and decide whether to restore it with the SmPC cited. (3) NICE TA924: retrieved text is the original recommendation (triple therapy failed etc.) plus a NICE review consultation proposing an update aligned with NG28; the Aug 2026 updated wording was NOT retrieved, so the page uses only the generic 'some adults who meet set criteria, alongside diet and exercise'; recheck against the live TA924 page. (4) Dehydration: no NICE text found; replaced with a South West London ICB prescriber-sheet statement (retrieved via summary of the sheet). Gallstones: attributed to the NHS medicines page (two searches state it lists gallstones/gallbladder swelling) not the regional page; still blended-summary level evidence. (5) NHS pregnancy/alcohol/low sugar/anaphylaxis/weight programme claims were re-retrieved with differently worded queries and agree, but are still search summaries of nhs.uk/medicines/tirzepatide, not page text. 'Stopped if pregnancy occurs', driving/machinery advice, 'not used while breastfeeding', 'most common' and 'same day' urgency timing were removed as not retrieved. (6) Emergency routes: the retrieved NHS text gives no explicit 111/999 wording for this page; the one combined route sentence (published twice: serious-effects list and article) is textbook signposting by site rule, 2 textbook rows of 77 first-pass (2.6%); the six-month review wording keeps no percentage. (7) productType: kept 'small-molecule'. Vocabulary options: small-molecule = chemically synthesised medicine, majority of tablets, capsules and injections; recombinant-protein = human protein made by engineered cells (insulins, GH). Tirzepatide is a synthetic peptide, not a human protein from engineered cells (general knowledge, not retrieved, not published), and no 'peptide' id exists; 'other' (used by sibling semaglutide) is the alternative if the maintainer prefers. Kent and Medway newsletter calls it a 'new class' with a fatty-diacid moiety, consistent with a chemically modified peptide. (8) urlAlias 'mounjaro': not changed; brand name is retrieved (NHS, Cheshire and Merseyside, MHRA); check_batch reports any clash. Not checked against interactions.json: no tirzepatide entry there (count 0)."
+}

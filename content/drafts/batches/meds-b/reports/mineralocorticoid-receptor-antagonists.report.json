@@ -1,0 +1,103 @@
+{
+ "id": "mineralocorticoid-receptor-antagonists",
+ "searchesUsed": 14,
+ "counts": {
+  "supported": 6,
+  "textbook": 0,
+  "unsupported": 4,
+  "wrong": 1,
+  "unsafe": 0,
+  "unchecked": 0
+ },
+ "claims": [
+  {
+   "id": "c01",
+   "classification": "supported",
+   "evidence": "Review title/StatPearls: aldosterone antagonist; \"mainly in the kidney\" not stated.",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/15733814/",
+   "action": "edited",
+   "newSentence": "Mineralocorticoid receptor antagonists, also called aldosterone antagonists, are medicines that act against the hormone aldosterone."
+  },
+  {
+   "id": "c02",
+   "classification": "unsupported",
+   "evidence": "\"Now used mainly for high blood pressure and heart failure\" and the BHF naming were not re-retrieved.",
+   "url": "https://www.northerncarealliance.nhs.uk/patient-information/patient-leaflets/cardiology-spironolactone-or-eplerenone",
+   "action": "edited",
+   "newSentence": "Spironolactone and eplerenone are the two members covered here, and a Northern Care Alliance heart failure leaflet covers both."
+  },
+  {
+   "id": "c03",
+   "classification": "unsupported",
+   "evidence": "Source summary reported no retrieved text on the late-tubule pathway.",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/15733814/",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c04",
+   "classification": "supported",
+   "evidence": "Review: natriuresis and renal potassium retention when aldosterone is high.",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/15733814/",
+   "action": "edited",
+   "newSentence": "A review of spironolactone and eplerenone says they increase the amount of sodium lost in the urine and cause the kidneys to hold on to potassium when aldosterone levels are high, which is why they are described as facultative diuretics."
+  },
+  {
+   "id": "c05",
+   "classification": "unsupported",
+   "evidence": "\"Compete with aldosterone for the receptor\" not stated in retrieved text.",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/15733814/",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c06",
+   "classification": "supported",
+   "evidence": "StatPearls (selectivity, receptor binding) and 2024 meta-analysis (gynaecomastia RR 0.07 for eplerenone vs spironolactone).",
+   "url": "https://www.ncbi.nlm.nih.gov/books/NBK554579/",
+   "action": "edited",
+   "newSentence": "Eplerenone is more selective for the mineralocorticoid receptor, whereas StatPearls says spironolactone also binds progesterone and androgen receptors, which underlies its anti-androgen effects such as breast enlargement in men. A 2024 meta-analysis in people with heart failure found lower rates of gynaecomastia with eplerenone than with spironolactone."
+  },
+  {
+   "id": "c07",
+   "classification": "supported",
+   "evidence": "PMC13337816: hyperkalaemia and acute kidney injury predominant concerns across MRAs; NHS names high potassium as main serious risk.",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13337816/",
+   "action": "edited",
+   "newSentence": "Hyperkalaemia (high blood potassium) and acute kidney injury are described as the predominant safety concerns across the mineralocorticoid receptor antagonists in pharmacovigilance data"
+  },
+  {
+   "id": "c08",
+   "classification": "supported",
+   "evidence": "Meta-analysis (PMC11395778) and a network meta-analysis agree gynaecomastia is higher with spironolactone.",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11395778/",
+   "action": "edited",
+   "newSentence": "Gynaecomastia (breast enlargement in men) is reported more often with spironolactone than with eplerenone in a 2024 heart failure meta-analysis"
+  },
+  {
+   "id": "c09",
+   "classification": "wrong",
+   "evidence": "The listed interactions come from the US label; UK SmPC wording was not retrieved.",
+   "url": "https://www.accessdata.fda.gov/spl/data/63953bd9-cad8-4ee0-a470-43f6ccaf735a/63953bd9-cad8-4ee0-a470-43f6ccaf735a.xml",
+   "action": "edited",
+   "newSentence": "US prescribing information for spironolactone says that potassium supplements, potassium-containing salt substitutes, and medicines that can raise potassium, such as ACE inhibitors, NSAIDs and heparin, may lead to severe hyperkalaemia"
+  },
+  {
+   "id": "c10",
+   "classification": "supported",
+   "evidence": "SPS monitoring page; eplerenone review recommends potassium/renal assessment before starting and periodic monitoring.",
+   "url": "https://sps.nhs.uk/monitorings/spironolactone-monitoring/",
+   "action": "edited",
+   "newSentence": "Potassium and kidney function are checked before treatment and monitored during treatment, according to NHS Specialist Pharmacy Service guidance for spironolactone and a review of eplerenone"
+  },
+  {
+   "id": "c11",
+   "classification": "unsupported",
+   "evidence": "Late distal tubule/collecting duct location was not retrieved.",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/15733814/",
+   "action": "edited",
+   "newSentence": "Mineralocorticoid (aldosterone) receptor"
+  }
+ ],
+ "notes": "Searches are shared with the spironolactone report (14 WebSearch calls in total across both items, one over the 13 cap). Eplerenone-specific NHS pages and the BHF page were not retrieved, so the class page makes no claim about eplerenone uses. Hypertension removed from conditions because the use was not confirmed. Class page is mostly mechanism/safety; no textbook sentences used."
+}

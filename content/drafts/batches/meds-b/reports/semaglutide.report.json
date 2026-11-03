@@ -1,0 +1,727 @@
+{
+ "id": "semaglutide",
+ "searchesUsed": 13,
+ "counts": {
+  "supported": 58,
+  "textbook": 3,
+  "unsupported": 24,
+  "wrong": 3,
+  "unsafe": 1,
+  "unchecked": 0
+ },
+ "claims": [
+  {
+   "id": "c01",
+   "classification": "supported",
+   "evidence": "NHS page: manage type 2 diabetes or treat obesity (Wegovy).",
+   "url": "https://www.nhs.uk/medicines/semaglutide/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c02",
+   "classification": "supported",
+   "evidence": "GOV.UK text (via search): semaglutide imitates GLP-1, a hormone released after eating; feel fuller for longer. 'slows digestion' moved to MHRA delayed-gastric-emptying statement.",
+   "url": "https://www.gov.uk/government/news/first-glp-1-tablet-for-weight-loss-approved-in-the-uk",
+   "action": "edited",
+   "newSentence": "It imitates GLP-1, a hormone the body releases after eating, and helps people feel fuller for longer."
+  },
+  {
+   "id": "c03",
+   "classification": "supported",
+   "evidence": "NHS: sickness, diarrhoea etc common; pancreatitis rare, serious.",
+   "url": "https://www.nhs.uk/medicines/semaglutide/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c04",
+   "classification": "supported",
+   "evidence": "NHS: Ozempic and Rybelsus manage type 2 diabetes.",
+   "url": "https://www.nhs.uk/medicines/semaglutide/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c05",
+   "classification": "supported",
+   "evidence": "NICE TA875: adults, specialist multidisciplinary weight management service, max 2 years; NHS: Wegovy for obesity.",
+   "url": "https://www.nice.org.uk/guidance/ta875/documents/1-2",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c06",
+   "classification": "supported",
+   "evidence": "Diabetes UK Wegovy page: might be prescribed to adults with CV disease and obesity/overweight to reduce major CV events (UK licence consistent per NHS England 2026 page). Word 'adults' added.",
+   "url": "https://www.diabetes.org.uk/about-diabetes/looking-after-diabetes/treatments/tablets-and-medication/glp-1/semaglutide/wegovy",
+   "action": "edited",
+   "newSentence": "Lowering the risk of heart attack and stroke in some adults with cardiovascular disease and obesity or overweight (Wegovy), according to Diabetes UK"
+  },
+  {
+   "id": "c07",
+   "classification": "supported",
+   "evidence": "GOV.UK: mimics GLP-1 released after eating (body, not 'gut').",
+   "url": "https://www.gov.uk/government/news/first-glp-1-tablet-for-weight-loss-approved-in-the-uk",
+   "action": "edited",
+   "newSentence": "Semaglutide imitates GLP-1, a hormone the body releases after eating."
+  },
+  {
+   "id": "c08",
+   "classification": "supported",
+   "evidence": "GOV.UK text: feel fuller for longer, reduces hunger. Attribution changed from NHS to unspecific.",
+   "url": "https://www.gov.uk/government/news/first-glp-1-tablet-for-weight-loss-approved-in-the-uk",
+   "action": "edited",
+   "newSentence": "It helps people feel fuller for longer and reduces hunger."
+  },
+  {
+   "id": "c09",
+   "classification": "unsupported",
+   "evidence": "No retrieved page says semaglutide 'keeps blood sugar steady after meals' (that wording belongs to the NHS tirzepatide page). Retrieved: increases insulin released in response to food (Gateshead leaflet); MHRA: delays gastric emptying.",
+   "url": "https://www.gatesheadhealth.nhs.uk/resources/oral-glp-1-analogues-semaglutide/",
+   "action": "edited",
+   "newSentence": "It also increases the insulin the pancreas releases in response to food, according to an NHS hospital leaflet on the tablet form. Like other GLP-1 medicines, it delays emptying of the stomach, according to the MHRA."
+  },
+  {
+   "id": "c10",
+   "classification": "supported",
+   "evidence": "NHS: sick, diarrhoea, constipation among common.",
+   "url": "https://www.nhs.uk/medicines/semaglutide/",
+   "action": "edited",
+   "newSentence": "Feeling sick, being sick, diarrhoea and constipation are among the common effects listed by the NHS"
+  },
+  {
+   "id": "c11",
+   "classification": "supported",
+   "evidence": "NHS: tiredness, injection-site reactions, hair loss.",
+   "url": "https://www.nhs.uk/medicines/semaglutide/",
+   "action": "edited",
+   "newSentence": "Feeling tired, reactions where the injection goes in, and hair loss are also listed as common by the NHS"
+  },
+  {
+   "id": "c12",
+   "classification": "supported",
+   "evidence": "US Ozempic label (via search): nausea, vomiting, diarrhoea most common at start. Reattributed to Ozempic label (retrieved) rather than Rybelsus.",
+   "url": "https://www.accessdata.fda.gov/spl/data/350beea5-c20f-4f25-9d4c-82dcfe3b0278/350beea5-c20f-4f25-9d4c-82dcfe3b0278.xml",
+   "action": "edited",
+   "newSentence": "The US Ozempic label notes that nausea, vomiting and diarrhoea are most common when treatment is first started"
+  },
+  {
+   "id": "c13",
+   "classification": "supported",
+   "evidence": "NHS: acute pancreatitis rare but serious; severe stomach or back pain that does not go away.",
+   "url": "https://www.nhs.uk/medicines/semaglutide/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c14",
+   "classification": "textbook",
+   "evidence": "Route wording not in retrieved text; kept per site signposting rule.",
+   "url": "https://www.nhs.uk/medicines/semaglutide/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c15",
+   "classification": "unsupported",
+   "evidence": "NHS listing of vision loss and 'eye casualty' route not retrieved. Retrieved: Diabetes UK says sudden change in eyesight needs urgent medical advice; MHRA NAION: sudden painless vision loss in one eye.",
+   "url": "https://www.diabetes.org.uk/about-diabetes/looking-after-diabetes/treatments/tablets-and-medication/semaglutide",
+   "action": "edited",
+   "newSentence": "A sudden change in eyesight, such as sudden loss of vision, needs urgent medical advice according to Diabetes UK, and semaglutide has been linked to a very rare eye condition called NAION"
+  },
+  {
+   "id": "c16",
+   "classification": "unsafe",
+   "evidence": "Symptoms and 'more likely with other diabetes medicines' supported (MedlinePlus, SmPC), but the serious item named no route to care. Route sentence added as generic signposting.",
+   "url": "https://medlineplus.gov/druginfo/meds/a618008.html",
+   "action": "edited",
+   "newSentence": "Low blood sugar (hypoglycaemia) causes sweating, shaking, a fast heartbeat and dizziness, and is more likely with other diabetes medicines"
+  },
+  {
+   "id": "c17",
+   "classification": "supported",
+   "evidence": "US labels (via search) and UK SmPC: gallstones/cholelithiasis more frequent than comparators. Switched to the UK source.",
+   "url": "https://www.medicines.org.uk/emc/product/9750/smpc",
+   "action": "edited",
+   "newSentence": "Gallstones were reported more often with semaglutide than with comparison treatments in clinical studies, according to the UK summary of product characteristics"
+  },
+  {
+   "id": "c18",
+   "classification": "unsupported",
+   "evidence": "'Acute kidney injury mostly in people with digestive effects' and 'reporting persistent sickness' not found. UK SmPC: vomiting/diarrhoea may cause dehydration, rarely deterioration of renal function; precautions against fluid depletion.",
+   "url": "https://www.medicines.org.uk/emc/product/9750/smpc",
+   "action": "edited",
+   "newSentence": "Vomiting and diarrhoea can cause dehydration, which in rare cases can lead to worse kidney function, so care to avoid losing fluid is advised in the UK summary of product characteristics"
+  },
+  {
+   "id": "c19",
+   "classification": "supported",
+   "evidence": "UK Ozempic SmPC: when added to sulfonylurea or insulin, reducing their dose should be considered; hypoglycaemia more likely. 'review may be needed' reworded to source.",
+   "url": "https://www.medicines.org.uk/emc/product/9750/smpc",
+   "action": "edited",
+   "newSentence": "Low blood sugar is more likely with insulin or a sulfonylurea, and the UK summary of product characteristics says a lower dose of those medicines should be considered when semaglutide is added"
+  },
+  {
+   "id": "c20",
+   "classification": "unsupported",
+   "evidence": "Diabetes UK retinopathy/insulin statement not retrieved (search returned nothing on it). UK SmPC: complications more frequent with semaglutide than placebo, mainly insulin-treated patients with known retinopathy.",
+   "url": "https://www.medicines.org.uk/emc/product/9750/smpc",
+   "action": "edited",
+   "newSentence": "In a large heart-outcomes study, diabetic retinopathy complications were more common with semaglutide than placebo, mainly in people using insulin who already had retinopathy"
+  },
+  {
+   "id": "c21",
+   "classification": "unsupported",
+   "evidence": "US label retinopathy statement not retrieved; UK SmPC (retrieved) carries rapid-glucose-improvement/monitoring statement.",
+   "url": "https://www.medicines.org.uk/emc/product/9750/smpc",
+   "action": "edited",
+   "newSentence": "Rapid improvement in blood glucose control has been linked to a temporary worsening of diabetic retinopathy, and people with the condition are monitored closely, according to the UK summary of product characteristics"
+  },
+  {
+   "id": "c22",
+   "classification": "unsupported",
+   "evidence": "NHS: should not be used in pregnancy. The reason 'not enough evidence about safety for the baby' was not retrieved from the NHS (MHRA gives lack of human safety data).",
+   "url": "https://www.nhs.uk/medicines/semaglutide/",
+   "action": "edited",
+   "newSentence": "The NHS says semaglutide should not be used in pregnancy"
+  },
+  {
+   "id": "c23",
+   "classification": "supported",
+   "evidence": "NHS: stop at least 2 months before trying; MHRA: contraception throughout. Timing figure dropped from prose (schedule rule).",
+   "url": "https://www.nhs.uk/medicines/semaglutide/",
+   "action": "edited",
+   "newSentence": "The NHS advises stopping semaglutide before trying to become pregnant"
+  },
+  {
+   "id": "c24",
+   "classification": "supported",
+   "evidence": "NHS SPS excerpt: MHRA advises against in pregnancy and contraception throughout treatment, lack of human safety data.",
+   "url": "https://sps.nhs.uk/articles/considerations-and-interactions-with-glp-1-receptor-agonists/",
+   "action": "edited",
+   "newSentence": "The MHRA advises against GLP-1 receptor agonists in pregnancy because of a lack of human safety data, and advises effective contraception throughout treatment"
+  },
+  {
+   "id": "c25",
+   "classification": "wrong",
+   "evidence": "NHS 'passes into breast milk' not retrieved; patient leaflet says it is unknown whether it passes into milk (rats: excreted). Diabetes UK says should not be used while breastfeeding.",
+   "url": "https://www.diabetes.org.uk/about-diabetes/looking-after-diabetes/treatments/tablets-and-medication/semaglutide",
+   "action": "edited",
+   "newSentence": "Diabetes UK says semaglutide should not be used while breastfeeding"
+  },
+  {
+   "id": "c26",
+   "classification": "supported",
+   "evidence": "NHS: best not to drink alcohol as it can increase side effects like nausea/vomiting.",
+   "url": "https://www.nhs.uk/medicines/semaglutide/",
+   "action": "edited",
+   "newSentence": "The NHS says drinking alcohol can increase side effects such as feeling or being sick"
+  },
+  {
+   "id": "c27",
+   "classification": "unsupported",
+   "evidence": "MHRA Drug Safety Update (gov.uk) says 'potential risk' of aspiration, residual gastric contents despite fasting; 'higher risk' overstated; cited via NHS resources rather than the MHRA page.",
+   "url": "https://www.gov.uk/drug-safety-update/glp-1-and-dual-gip-slash-glp-1-receptor-agonists-potential-risk-of-pulmonary-aspiration-during-general-anaesthesia-or-deep-sedation",
+   "action": "edited",
+   "newSentence": "The MHRA has highlighted a potential risk of stomach contents entering the lungs (pulmonary aspiration) during general anaesthesia or deep sedation, because these medicines delay stomach emptying and food can remain despite fasting"
+  },
+  {
+   "id": "c28",
+   "classification": "supported",
+   "evidence": "NICE TA875 stopping rule if too little weight lost at 6 months (figure not given in prose).",
+   "url": "https://www.nice.org.uk/guidance/ta875/documents/1-2",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c29",
+   "classification": "supported",
+   "evidence": "emc Wegovy PIL lists prescription only medicine; NHS: prescription (NHS or private); NHS: Ozempic/Rybelsus type 2 diabetes, Wegovy weight.",
+   "url": "https://www.medicines.org.uk/emc/product/13803/pil",
+   "action": "edited",
+   "newSentence": "Semaglutide is a prescription medicine. The NHS says it is used to manage type 2 diabetes (Ozempic and Rybelsus) or to treat obesity (Wegovy)."
+  },
+  {
+   "id": "c30",
+   "classification": "supported",
+   "evidence": "emc SmPC titles: solution for injection in pre-filled pen (Ozempic, Wegovy); Rybelsus tablet.",
+   "url": "https://www.medicines.org.uk/emc/product/9750/smpc",
+   "action": "edited",
+   "newSentence": "Ozempic and Wegovy are injections in pre-filled pens, and Rybelsus is a tablet."
+  },
+  {
+   "id": "c31",
+   "classification": "supported",
+   "evidence": "Diabetes UK: Ozempic should only be prescribed to people with type 2 diabetes.",
+   "url": "https://www.diabetes.org.uk/about-diabetes/looking-after-diabetes/treatments/tablets-and-medication/semaglutide",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c32",
+   "classification": "unsupported",
+   "evidence": "Retrieved: weight loss when combined with exercise and diet changes; not that diet is 'needed while using' it.",
+   "url": "https://www.nhs.uk/medicines/semaglutide/",
+   "action": "edited",
+   "newSentence": "The NHS says that for weight loss it is used together with exercise and changes to diet."
+  },
+  {
+   "id": "c33",
+   "classification": "supported",
+   "evidence": "NICE TA875: max 2 years within specialist multidisciplinary weight management service.",
+   "url": "https://www.nice.org.uk/guidance/ta875/documents/1-2",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c34",
+   "classification": "unsupported",
+   "evidence": "'Lower thresholds for some family backgrounds' not retrieved. Diabetes UK: BMI 35+ with a condition, or BMI 30-34.9 meeting referral criteria (figures kept out of prose).",
+   "url": "https://www.diabetes.org.uk/about-diabetes/looking-after-diabetes/treatments/tablets-and-medication/glp-1/semaglutide/wegovy",
+   "action": "edited",
+   "newSentence": "Diabetes UK says NICE recommends it for adults with a high body mass index (BMI) and at least one weight-related condition, and for some adults with a lower BMI who meet criteria for referral to specialist services."
+  },
+  {
+   "id": "c35",
+   "classification": "unsupported",
+   "evidence": "ICB-by-ICB variation not found in any retrieved text. Diabetes UK says access to specialist weight management services is varied.",
+   "url": "https://www.diabetes.org.uk/about-diabetes/looking-after-diabetes/treatments/tablets-and-medication/glp-1/semaglutide/wegovy",
+   "action": "edited",
+   "newSentence": "Diabetes UK also notes that access to specialist weight management services varies."
+  },
+  {
+   "id": "c36",
+   "classification": "supported",
+   "evidence": "NHS: semaglutide is a GLP-1 agonist.",
+   "url": "https://www.nhs.uk/medicines/semaglutide/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c37",
+   "classification": "supported",
+   "evidence": "GOV.UK: mimics GLP-1 released by the body after eating.",
+   "url": "https://www.gov.uk/government/news/first-glp-1-tablet-for-weight-loss-approved-in-the-uk",
+   "action": "edited",
+   "newSentence": "It imitates GLP-1, a hormone the body releases after eating."
+  },
+  {
+   "id": "c38",
+   "classification": "unsupported",
+   "evidence": "Blended NHS claim; 'steady blood sugar after meals' retrieved only for tirzepatide. Replaced by GOV.UK/Gateshead/MHRA statements.",
+   "url": "https://www.gov.uk/government/news/first-glp-1-tablet-for-weight-loss-approved-in-the-uk",
+   "action": "edited",
+   "newSentence": "It helps people feel fuller for longer and reduces hunger. It also increases the insulin the pancreas releases in response to food, according to an NHS hospital leaflet on the tablet form. Like other GLP-1 medicines, it delays emptying of the stomach, according to the MHRA."
+  },
+  {
+   "id": "c39",
+   "classification": "supported",
+   "evidence": "Content supported (NHS tirzepatide page: dual GLP-1/GIP agonist; MHRA DSU title 'GLP-1 and dual GIP/GLP-1'); local formulary factsheet was not retrieved so source replaced by the NHS page.",
+   "url": "https://www.nhs.uk/medicines/tirzepatide/",
+   "action": "edited",
+   "newSentence": "Tirzepatide (Mounjaro) is described on the NHS website as acting on both GIP and GLP-1 receptors, so it is related but not identical."
+  },
+  {
+   "id": "c40",
+   "classification": "supported",
+   "evidence": "NHS: common side effects.",
+   "url": "https://www.nhs.uk/medicines/semaglutide/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c41",
+   "classification": "supported",
+   "evidence": "NHS: tiredness, injection-site reactions, hair loss.",
+   "url": "https://www.nhs.uk/medicines/semaglutide/",
+   "action": "edited",
+   "newSentence": "Feeling tired, reactions where the injection goes in, and hair loss are also listed."
+  },
+  {
+   "id": "c42",
+   "classification": "supported",
+   "evidence": "US Ozempic label (via search).",
+   "url": "https://www.accessdata.fda.gov/spl/data/350beea5-c20f-4f25-9d4c-82dcfe3b0278/350beea5-c20f-4f25-9d4c-82dcfe3b0278.xml",
+   "action": "edited",
+   "newSentence": "The US Ozempic label notes that nausea, vomiting and diarrhoea are most common when treatment is first started."
+  },
+  {
+   "id": "c43",
+   "classification": "supported",
+   "evidence": "NHS: rare but serious.",
+   "url": "https://www.nhs.uk/medicines/semaglutide/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c44",
+   "classification": "supported",
+   "evidence": "NHS: severe stomach or back pain that does not go away.",
+   "url": "https://www.nhs.uk/medicines/semaglutide/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c45",
+   "classification": "textbook",
+   "evidence": "Route wording per site signposting rule; not in retrieved text.",
+   "url": "https://www.nhs.uk/medicines/semaglutide/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c46",
+   "classification": "unsupported",
+   "evidence": "'Eye casualty' route not retrieved; Diabetes UK: sudden change in eyesight needs urgent medical advice.",
+   "url": "https://www.diabetes.org.uk/about-diabetes/looking-after-diabetes/treatments/tablets-and-medication/semaglutide",
+   "action": "edited",
+   "newSentence": "Diabetes UK says a sudden change in eyesight, such as sudden loss of vision, needs urgent medical advice."
+  },
+  {
+   "id": "c47",
+   "classification": "supported",
+   "evidence": "GOV.UK news page (via search summary): 5 Feb 2026 update on NAION, very rare (up to 1 in 10,000), typically sudden painless vision loss in one eye. 'rare' changed to 'very rare'; read via secondary summary only.",
+   "url": "https://www.gov.uk/government/news/mhra-updates-guidance-for-semaglutide-prescribers-and-patients",
+   "action": "edited",
+   "newSentence": "In February 2026 the MHRA updated its guidance on semaglutide and NAION, a very rare eye condition that typically causes sudden, painless vision loss in one eye."
+  },
+  {
+   "id": "c48",
+   "classification": "supported",
+   "evidence": "UK SmPC and US labels: gallstones.",
+   "url": "https://www.medicines.org.uk/emc/product/9750/smpc",
+   "action": "edited",
+   "newSentence": "Gallstones were reported more often with semaglutide than with comparison treatments in clinical studies, according to the UK summary of product characteristics."
+  },
+  {
+   "id": "c49",
+   "classification": "unsupported",
+   "evidence": "See row 17: AKI wording is US-label and not retrieved as worded.",
+   "url": "https://www.medicines.org.uk/emc/product/9750/smpc",
+   "action": "edited",
+   "newSentence": "That document also says vomiting and diarrhoea can cause dehydration, which in rare cases can lead to worse kidney function, so care to avoid losing fluid is advised."
+  },
+  {
+   "id": "c50",
+   "classification": "unsupported",
+   "evidence": "Advice to report persistent sickness/vomiting not retrieved.",
+   "url": "https://www.medicines.org.uk/emc/product/9750/smpc",
+   "action": "removed",
+   "newSentence": null
+  },
+  {
+   "id": "c51",
+   "classification": "supported",
+   "evidence": "NHS/SmPC: low blood sugar more likely with insulin or sulfonylurea.",
+   "url": "https://www.nhs.uk/medicines/semaglutide/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c52",
+   "classification": "supported",
+   "evidence": "MedlinePlus: dizziness, sweating, shakiness, fast heart rate ('pounding' changed to 'fast').",
+   "url": "https://medlineplus.gov/druginfo/meds/a618008.html",
+   "action": "edited",
+   "newSentence": "Symptoms include sweating, shaking, a fast heartbeat and dizziness."
+  },
+  {
+   "id": "c53",
+   "classification": "unsupported",
+   "evidence": "Gateshead page returned without excerpt on this; UK SmPC says dose reduction of sulfonylurea/insulin should be considered.",
+   "url": "https://www.medicines.org.uk/emc/product/9750/smpc",
+   "action": "edited",
+   "newSentence": "The UK summary of product characteristics says a lower dose of insulin or a sulfonylurea should be considered when semaglutide is added."
+  },
+  {
+   "id": "c54",
+   "classification": "supported",
+   "evidence": "NHS: alcohol can increase nausea/vomiting.",
+   "url": "https://www.nhs.uk/medicines/semaglutide/",
+   "action": "edited",
+   "newSentence": "The NHS says drinking alcohol can increase side effects such as feeling or being sick."
+  },
+  {
+   "id": "c55",
+   "classification": "unsupported",
+   "evidence": "Reason 'not enough evidence' not retrieved from NHS; see row 21.",
+   "url": "https://www.nhs.uk/medicines/semaglutide/",
+   "action": "edited",
+   "newSentence": "The NHS says semaglutide should not be used in pregnancy, and advises stopping it before trying to become pregnant."
+  },
+  {
+   "id": "c56",
+   "classification": "supported",
+   "evidence": "NHS 2 months before trying; MHRA contraception. Figure removed.",
+   "url": "https://www.nhs.uk/medicines/semaglutide/",
+   "action": "edited",
+   "newSentence": "The MHRA advises against GLP-1 receptor agonists in pregnancy and advises effective contraception throughout treatment, because human safety data are lacking."
+  },
+  {
+   "id": "c57",
+   "classification": "unsupported",
+   "evidence": "'Doctor will recommend other medicines in pregnancy' not retrieved.",
+   "url": "https://www.nhs.uk/medicines/semaglutide/",
+   "action": "removed",
+   "newSentence": null
+  },
+  {
+   "id": "c58",
+   "classification": "supported",
+   "evidence": "NHS SPS: MHRA advises contraception throughout GLP-1 RA treatment, lack of human safety data.",
+   "url": "https://sps.nhs.uk/articles/considerations-and-interactions-with-glp-1-receptor-agonists/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c59",
+   "classification": "wrong",
+   "evidence": "See row 24: 'passes into breast milk' contradicted by leaflet ('unknown whether'); Diabetes UK says should not be used.",
+   "url": "https://www.diabetes.org.uk/about-diabetes/looking-after-diabetes/treatments/tablets-and-medication/semaglutide",
+   "action": "edited",
+   "newSentence": "Diabetes UK says semaglutide should not be used while breastfeeding."
+  },
+  {
+   "id": "c60",
+   "classification": "unsupported",
+   "evidence": "Diabetes UK retinopathy statement not retrieved; SmPC used. Dropped 'this might need treatment'.",
+   "url": "https://www.medicines.org.uk/emc/product/9750/smpc",
+   "action": "edited",
+   "newSentence": "In a large heart-outcomes study, diabetic retinopathy, a diabetes-related eye condition, was reported more often with semaglutide than placebo, mainly in people using insulin who already had it."
+  },
+  {
+   "id": "c61",
+   "classification": "unsupported",
+   "evidence": "US label claim not retrieved; UK SmPC carries it.",
+   "url": "https://www.medicines.org.uk/emc/product/9750/smpc",
+   "action": "edited",
+   "newSentence": "Rapid improvement in blood glucose control has been linked to a temporary worsening of retinopathy, and people with the condition are monitored closely, according to the UK summary of product characteristics."
+  },
+  {
+   "id": "c62",
+   "classification": "unsupported",
+   "evidence": "'Contact their doctor if vision changes' not retrieved; monitoring part kept in row 60 rewrite; Diabetes UK sudden-eyesight advice used in sideEffects.",
+   "url": "https://www.medicines.org.uk/emc/product/9750/smpc",
+   "action": "removed",
+   "newSentence": null
+  },
+  {
+   "id": "c63",
+   "classification": "unsupported",
+   "evidence": "Same as row 26: 'higher risk' overstated; MHRA says potential risk.",
+   "url": "https://www.gov.uk/drug-safety-update/glp-1-and-dual-gip-slash-glp-1-receptor-agonists-potential-risk-of-pulmonary-aspiration-during-general-anaesthesia-or-deep-sedation",
+   "action": "edited",
+   "newSentence": "The MHRA has highlighted a potential risk of stomach contents entering the lungs during general anaesthesia or deep sedation."
+  },
+  {
+   "id": "c64",
+   "classification": "supported",
+   "evidence": "MHRA DSU: GLP-1 RAs delay gastric emptying, may leave residual contents despite fasting.",
+   "url": "https://www.gov.uk/drug-safety-update/glp-1-and-dual-gip-slash-glp-1-receptor-agonists-potential-risk-of-pulmonary-aspiration-during-general-anaesthesia-or-deep-sedation",
+   "action": "edited",
+   "newSentence": "This is because GLP-1 medicines delay the emptying of the stomach, so food can remain there despite fasting."
+  },
+  {
+   "id": "c65",
+   "classification": "supported",
+   "evidence": "NICE TA875 stopping rule.",
+   "url": "https://www.nice.org.uk/guidance/ta875/documents/1-2",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c66",
+   "classification": "supported",
+   "evidence": "NICE appraisal flagged regain; NICE news: many people regain weight after stopping without support.",
+   "url": "https://www.nice.org.uk/news/articles/people-need-support-to-keep-weight-off-after-treatment-ends",
+   "action": "edited",
+   "newSentence": "NICE says many people regain weight after stopping obesity treatment if they do not get the right support."
+  },
+  {
+   "id": "c67",
+   "classification": "supported",
+   "evidence": "NHS lists both as semaglutide.",
+   "url": "https://www.nhs.uk/medicines/semaglutide/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c68",
+   "classification": "supported",
+   "evidence": "NHS page.",
+   "url": "https://www.nhs.uk/medicines/semaglutide/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c69",
+   "classification": "supported",
+   "evidence": "Diabetes UK.",
+   "url": "https://www.diabetes.org.uk/about-diabetes/looking-after-diabetes/treatments/tablets-and-medication/semaglutide",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c70",
+   "classification": "supported",
+   "evidence": "NICE TA875.",
+   "url": "https://www.nice.org.uk/guidance/ta875/documents/1-2",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c71",
+   "classification": "supported",
+   "evidence": "NHS.",
+   "url": "https://www.nhs.uk/medicines/semaglutide/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c72",
+   "classification": "supported",
+   "evidence": "NHS.",
+   "url": "https://www.nhs.uk/medicines/semaglutide/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c73",
+   "classification": "textbook",
+   "evidence": "Route wording per site signposting rule.",
+   "url": "https://www.nhs.uk/medicines/semaglutide/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c74",
+   "classification": "unsupported",
+   "evidence": "Reason not retrieved; see row 21.",
+   "url": "https://www.nhs.uk/medicines/semaglutide/",
+   "action": "edited",
+   "newSentence": "The NHS says semaglutide should not be used in pregnancy."
+  },
+  {
+   "id": "c75",
+   "classification": "supported",
+   "evidence": "NHS/MHRA; 2-month figure removed.",
+   "url": "https://sps.nhs.uk/articles/considerations-and-interactions-with-glp-1-receptor-agonists/",
+   "action": "edited",
+   "newSentence": "The MHRA advises effective contraception throughout treatment with GLP-1 receptor agonists, and the NHS advises stopping semaglutide before trying to become pregnant."
+  },
+  {
+   "id": "c76",
+   "classification": "unsupported",
+   "evidence": "Not retrieved.",
+   "url": "https://www.nhs.uk/medicines/semaglutide/",
+   "action": "removed",
+   "newSentence": null
+  },
+  {
+   "id": "c77",
+   "classification": "supported",
+   "evidence": "NHS lists low blood sugar among serious effects.",
+   "url": "https://www.nhs.uk/medicines/semaglutide/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c78",
+   "classification": "supported",
+   "evidence": "NHS/SmPC.",
+   "url": "https://www.nhs.uk/medicines/semaglutide/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c79",
+   "classification": "unsupported",
+   "evidence": "Gateshead attribution not retrieved; SmPC used.",
+   "url": "https://www.medicines.org.uk/emc/product/9750/smpc",
+   "action": "edited",
+   "newSentence": "The UK summary of product characteristics says a lower dose of those medicines should be considered when semaglutide is added."
+  },
+  {
+   "id": "c80",
+   "classification": "supported",
+   "evidence": "NICE news/appraisal on regain.",
+   "url": "https://www.nice.org.uk/news/articles/people-need-support-to-keep-weight-off-after-treatment-ends",
+   "action": "edited",
+   "newSentence": "NICE says many people regain weight after stopping obesity treatment if they do not get the right support."
+  },
+  {
+   "id": "c81",
+   "classification": "supported",
+   "evidence": "NICE TA875.",
+   "url": "https://www.nice.org.uk/guidance/ta875/documents/1-2",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c82",
+   "classification": "supported",
+   "evidence": "NICE TA875.",
+   "url": "https://www.nice.org.uk/guidance/ta875/documents/1-2",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c83",
+   "classification": "supported",
+   "evidence": "Brands per NHS.",
+   "url": "https://www.nhs.uk/medicines/semaglutide/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c84",
+   "classification": "supported",
+   "evidence": "NHS: GLP-1 agonist.",
+   "url": "https://www.nhs.uk/medicines/semaglutide/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c85",
+   "classification": "supported",
+   "evidence": "emc titles: pre-filled pen injection; Rybelsus tablet. Wording 'pre-filled pen'.",
+   "url": "https://www.medicines.org.uk/emc/product/9750/smpc",
+   "action": "edited",
+   "newSentence": "Injection in a pre-filled pen (Ozempic, Wegovy); tablet (Rybelsus)"
+  },
+  {
+   "id": "c86",
+   "classification": "supported",
+   "evidence": "NHS.",
+   "url": "https://www.nhs.uk/medicines/semaglutide/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c87",
+   "classification": "supported",
+   "evidence": "NICE TA875.",
+   "url": "https://www.nice.org.uk/guidance/ta875/documents/1-2",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c88",
+   "classification": "wrong",
+   "evidence": "Breastfeeding half wrong: NHS 'passes into milk' not retrieved; Diabetes UK says not to use.",
+   "url": "https://www.diabetes.org.uk/about-diabetes/looking-after-diabetes/treatments/tablets-and-medication/semaglutide",
+   "action": "edited",
+   "newSentence": "Not used in pregnancy (NHS); Diabetes UK advises against use while breastfeeding"
+  },
+  {
+   "id": "c89",
+   "classification": "supported",
+   "evidence": "emc titles.",
+   "url": "https://www.medicines.org.uk/emc/product/9750/smpc",
+   "action": "edited",
+   "newSentence": "Injection in a pre-filled pen (Ozempic, Wegovy) and a tablet (Rybelsus)"
+  }
+ ],
+ "notes": "Second pass used 13 shared searches (semaglutide and glp-1 class together); several pages were seen only as blended search summaries, so URLs are the pages named in the results, not verified quotes. UK SmPC statements (gallstones, dehydration/kidney, retinopathy, hypoglycaemia dose) came from emc titles/summaries via search. MHRA NAION (Feb 2026) read via secondary summaries; the gov.uk page was returned but not quoted in full. NHS page statements on pregnancy, 2-month gap, alcohol and prescription were given in search summaries. Removed: ICB variation, 'doctor will recommend other medicines' in pregnancy, 'passes into breast milk', diet 'needed', family-background thresholds, kidney-injury/reporting wording, Diabetes UK retinopathy attribution. productType set to small-molecule (best valid id; no retrieved text states manufacturing route; tirzepatide uses the same). dosageFormIds keeps pen-injector (retrieved text: solution for injection in pre-filled pen). Textbook sentences: 3 first pass (route wording); the published text also carries one generic route sentence (textbook), 4 in 94 published rows."
+}

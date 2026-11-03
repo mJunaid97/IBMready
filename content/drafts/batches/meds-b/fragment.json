@@ -1,5 +1,255 @@
 {
  "drug-classes": {
+  "cholesterol-absorption-inhibitors": {
+   "name": "Cholesterol absorption inhibitors",
+   "aliases": [
+    "Cholesterol absorption blockers"
+   ],
+   "summary": "Cholesterol absorption inhibitors are medicines that lower cholesterol by partly blocking its absorption in the small intestine. They are used on their own when a statin cannot be taken or has not worked, or alongside a statin.",
+   "mechanism": "Heart UK says ezetimibe partly blocks the absorption of cholesterol in the small intestine. Research reviews describe it as acting on a protein called NPC1L1 in the lining of the small intestine, which helps move cholesterol from the gut into the body. Heart UK says ezetimibe works in a different way from statins, and that the two are often combined because their effects add up.",
+   "target": "Cholesterol absorption in the small intestine.",
+   "anatomy": {
+    "organs": [
+     "small-intestine"
+    ],
+    "systems": [
+     "digestive"
+    ]
+   },
+   "conditions": [
+    "coronary-artery-disease",
+    "myocardial-infarction",
+    "stroke"
+   ],
+   "medications": [
+    "ezetimibe"
+   ],
+   "members": [
+    "ezetimibe"
+   ],
+   "classEffects": [
+    "Stomach pain, diarrhoea, extra wind and tiredness.",
+    "With a statin: muscle pain, headaches and moderately raised liver enzymes."
+   ],
+   "cautions": [
+    "Unexplained muscle pain, tenderness or weakness, or yellowing of the skin or eyes, needs a doctor or NHS 111 straight away, according to the NHS.",
+    "The NHS asks people to tell their doctor about pregnancy, planning a pregnancy, breastfeeding and liver problems.",
+    "The NHS lists other cholesterol-lowering medicines such as bezafibrate and colestyramine as medicines to mention to a doctor, and UK product information advises caution with ciclosporin."
+   ],
+   "references": [
+    {
+     "title": "NHS: About ezetimibe",
+     "url": "https://www.nhs.uk/medicines/ezetimibe/about-ezetimibe/"
+    },
+    {
+     "title": "NHS: Side effects of ezetimibe",
+     "url": "https://www.nhs.uk/medicines/ezetimibe/side-effects-of-ezetimibe/"
+    },
+    {
+     "title": "NICE TA385: Ezetimibe for treating primary heterozygous-familial and non-familial hypercholesterolaemia",
+     "url": "https://www.nice.org.uk/guidance/ta385/chapter/1-recommendations"
+    },
+    {
+     "title": "Heart UK: Ezetimibe",
+     "url": "https://www.heartuk.org.uk/getting-treatment/ezetimibe"
+    },
+    {
+     "title": "MedlinePlus: Ezetimibe",
+     "url": "https://medlineplus.gov/druginfo/meds/a603015.html"
+    },
+    {
+     "title": "NHS: Who can and cannot take ezetimibe",
+     "url": "https://www.nhs.uk/medicines/ezetimibe/who-can-and-cannot-take-ezetimibe/"
+    },
+    {
+     "title": "emc: Ezetimibe 10mg tablets, Summary of Product Characteristics",
+     "url": "https://www.medicines.org.uk/emc/product/14259/smpc"
+    }
+   ],
+   "urlAliases": [
+    "cholesterol-absorption-blockers"
+   ]
+  },
+  "glp-1-receptor-agonists": {
+   "name": "GLP-1 receptor agonists",
+   "aliases": [
+    "GLP-1 agonists"
+   ],
+   "summary": "GLP-1 receptor agonists are medicines that imitate GLP-1, a hormone the body releases after eating. Semaglutide (Ozempic, Wegovy, Rybelsus) is one; tirzepatide (Mounjaro) is described on the NHS website as acting on both GIP and GLP-1 receptors. In the UK they are used to manage type 2 diabetes and to treat obesity.",
+   "mechanism": "Semaglutide imitates GLP-1, helps people feel fuller for longer and reduces hunger, according to GOV.UK. Tirzepatide is described by the NHS as reducing appetite so that people feel fuller for longer, and it delays stomach emptying.",
+   "target": "GLP-1 receptor",
+   "anatomy": {
+    "organs": [
+     "pancreas",
+     "stomach"
+    ],
+    "systems": [
+     "endocrine",
+     "digestive"
+    ]
+   },
+   "conditions": [
+    "type-2-diabetes"
+   ],
+   "medications": [
+    "semaglutide",
+    "tirzepatide"
+   ],
+   "members": [
+    "semaglutide",
+    "tirzepatide"
+   ],
+   "classEffects": [
+    "Feeling sick, being sick, diarrhoea and constipation are common with semaglutide, and tirzepatide is described as commonly causing feeling sick, indigestion, constipation and diarrhoea",
+    "Pancreatitis is listed by the NHS as a rare but serious effect of semaglutide, and UK prescribing information says acute pancreatitis has been reported with tirzepatide, including necrotising and fatal cases",
+    "Severe stomach pain that does not go away needs urgent advice from NHS 111 or the GP the same day, and a 999 call if it is severe or the person is collapsing"
+   ],
+   "cautions": [
+    "The MHRA advises against GLP-1 receptor agonists in pregnancy because of a lack of human safety data, and advises effective contraception during treatment",
+    "The MHRA has highlighted a potential risk of stomach contents entering the lungs during general anaesthesia or deep sedation, because these medicines delay stomach emptying and food can remain despite fasting",
+    "With semaglutide, low blood sugar is more likely when it is taken with other diabetes medicines such as insulin or a sulfonylurea"
+   ],
+   "classWarnings": [
+    {
+     "text": "The MHRA advises effective contraception during GLP-1 receptor agonist treatment because human safety data in pregnancy are limited.",
+     "source": {
+      "title": "GOV.UK: MHRA Safety Roundup, June 2025",
+      "url": "https://www.gov.uk/drug-device-alerts/mhra-safety-roundup-june-2025",
+      "jurisdiction": "UK",
+      "type": "regulatory"
+     }
+    }
+   ],
+   "physiology": [],
+   "references": [
+    {
+     "title": "NHS: Semaglutide",
+     "url": "https://www.nhs.uk/medicines/semaglutide/",
+     "jurisdiction": "UK",
+     "type": "regulatory"
+    },
+    {
+     "title": "Diabetes UK: GLP-1 agonists",
+     "url": "https://www.diabetes.org.uk/about-diabetes/looking-after-diabetes/treatments/tablets-and-medication/glp-1",
+     "jurisdiction": "UK",
+     "type": "guidance"
+    },
+    {
+     "title": "NHS SPS: Considerations and interactions with GLP-1 receptor agonists",
+     "url": "https://sps.nhs.uk/articles/considerations-and-interactions-with-glp-1-receptor-agonists/",
+     "jurisdiction": "UK",
+     "type": "guidance"
+    },
+    {
+     "title": "GOV.UK: MHRA Safety Roundup, June 2025",
+     "url": "https://www.gov.uk/drug-device-alerts/mhra-safety-roundup-june-2025",
+     "jurisdiction": "UK",
+     "type": "regulatory"
+    },
+    {
+     "title": "GOV.UK: GLP-1 and dual GIP/GLP-1 receptor agonists, potential risk of pulmonary aspiration (MHRA Drug Safety Update)",
+     "url": "https://www.gov.uk/drug-safety-update/glp-1-and-dual-gip-slash-glp-1-receptor-agonists-potential-risk-of-pulmonary-aspiration-during-general-anaesthesia-or-deep-sedation",
+     "jurisdiction": "UK",
+     "type": "regulatory"
+    },
+    {
+     "title": "NHS: Tirzepatide",
+     "url": "https://www.nhs.uk/medicines/tirzepatide/",
+     "jurisdiction": "UK",
+     "type": "regulatory"
+    },
+    {
+     "title": "emc: Mounjaro KwikPen summary of product characteristics",
+     "url": "https://www.medicines.org.uk/emc/product/15484/smpc",
+     "jurisdiction": "UK",
+     "type": "regulatory"
+    },
+    {
+     "title": "NHS Cheshire and Merseyside: Mounjaro (tirzepatide)",
+     "url": "https://www.cheshireandmerseyside.nhs.uk/your-health/prescribing/statements/mounjaro-tirzepatide/",
+     "jurisdiction": "UK",
+     "type": "guidance"
+    }
+   ],
+   "urlAliases": [
+    "glp-1-agonists"
+   ]
+  },
+  "mineralocorticoid-receptor-antagonists": {
+   "name": "Mineralocorticoid receptor antagonists",
+   "aliases": [
+    "aldosterone antagonists",
+    "aldosterone receptor antagonists",
+    "MRAs"
+   ],
+   "summary": "Mineralocorticoid receptor antagonists, also called aldosterone antagonists, are medicines that act against the hormone aldosterone. Spironolactone and eplerenone are the two members covered here, and a Northern Care Alliance heart failure leaflet covers both.",
+   "mechanism": "A review of spironolactone and eplerenone says they increase the amount of sodium lost in the urine and cause the kidneys to hold on to potassium when aldosterone levels are high, which is why they are described as facultative diuretics. Eplerenone is more selective for the mineralocorticoid receptor, whereas StatPearls says spironolactone also binds progesterone and androgen receptors, which underlies its anti-androgen effects such as breast enlargement in men. A 2024 meta-analysis in people with heart failure found lower rates of gynaecomastia with eplerenone than with spironolactone.",
+   "target": "Mineralocorticoid (aldosterone) receptor",
+   "anatomy": {
+    "organs": [
+     "kidneys",
+     "heart"
+    ],
+    "systems": [
+     "urinary",
+     "heart"
+    ]
+   },
+   "conditions": [
+    "heart-failure"
+   ],
+   "medications": [
+    "spironolactone"
+   ],
+   "members": [
+    "spironolactone",
+    "eplerenone"
+   ],
+   "classEffects": [
+    "Hyperkalaemia (high blood potassium) and acute kidney injury are described as the predominant safety concerns across the mineralocorticoid receptor antagonists in pharmacovigilance data",
+    "Gynaecomastia (breast enlargement in men) is reported more often with spironolactone than with eplerenone in a 2024 heart failure meta-analysis"
+   ],
+   "cautions": [
+    "US prescribing information for spironolactone says that potassium supplements, potassium-containing salt substitutes, and medicines that can raise potassium, such as ACE inhibitors, NSAIDs and heparin, may lead to severe hyperkalaemia",
+    "Potassium and kidney function are checked before treatment and monitored during treatment, according to NHS Specialist Pharmacy Service guidance for spironolactone and a review of eplerenone"
+   ],
+   "physiology": [],
+   "terms": [],
+   "references": [
+    {
+     "title": "NHS: Spironolactone",
+     "url": "https://www.nhs.uk/medicines/spironolactone/"
+    },
+    {
+     "title": "Northern Care Alliance NHS: Cardiology - Spironolactone or Eplerenone",
+     "url": "https://www.northerncarealliance.nhs.uk/patient-information/patient-leaflets/cardiology-spironolactone-or-eplerenone"
+    },
+    {
+     "title": "NHS Specialist Pharmacy Service: Spironolactone monitoring",
+     "url": "https://sps.nhs.uk/monitorings/spironolactone-monitoring/"
+    },
+    {
+     "title": "NCBI Bookshelf StatPearls: Antihypertensive Medications",
+     "url": "https://www.ncbi.nlm.nih.gov/books/NBK554579/"
+    },
+    {
+     "title": "PMC: Comparative effectiveness and safety of eplerenone and spironolactone in patients with heart failure",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11395778/"
+    },
+    {
+     "title": "PubMed: The aldosterone antagonist and facultative diuretic eplerenone: a critical review",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/15733814/"
+    },
+    {
+     "title": "US prescribing information: spironolactone tablets",
+     "url": "https://www.accessdata.fda.gov/spl/data/63953bd9-cad8-4ee0-a470-43f6ccaf735a/63953bd9-cad8-4ee0-a470-43f6ccaf735a.xml"
+    }
+   ],
+   "urlAliases": [
+    "mras",
+    "aldosterone-antagonists"
+   ]
+  },
   "sglt2-inhibitors": {
    "name": "SGLT2 inhibitors",
    "aliases": [
@@ -138,76 +388,6 @@
    ],
    "urlAliases": [
     "sulphonylureas"
-   ]
-  },
-  "cholesterol-absorption-inhibitors": {
-   "name": "Cholesterol absorption inhibitors",
-   "aliases": [
-    "Cholesterol absorption blockers"
-   ],
-   "summary": "Cholesterol absorption inhibitors are medicines that lower cholesterol by partly blocking its absorption in the small intestine. They are used on their own when a statin cannot be taken or has not worked, or alongside a statin.",
-   "mechanism": "Heart UK says ezetimibe partly blocks the absorption of cholesterol in the small intestine. Research reviews describe it as acting on a protein called NPC1L1 in the lining of the small intestine, which helps move cholesterol from the gut into the body. Heart UK says ezetimibe works in a different way from statins, and that the two are often combined because their effects add up.",
-   "target": "Cholesterol absorption in the small intestine.",
-   "anatomy": {
-    "organs": [
-     "small-intestine"
-    ],
-    "systems": [
-     "digestive"
-    ]
-   },
-   "conditions": [
-    "coronary-artery-disease",
-    "myocardial-infarction",
-    "stroke"
-   ],
-   "medications": [
-    "ezetimibe"
-   ],
-   "members": [
-    "ezetimibe"
-   ],
-   "classEffects": [
-    "Stomach pain, diarrhoea, extra wind and tiredness.",
-    "With a statin: muscle pain, headaches and moderately raised liver enzymes."
-   ],
-   "cautions": [
-    "Unexplained muscle pain, tenderness or weakness, or yellowing of the skin or eyes, needs a doctor or NHS 111 straight away, according to the NHS.",
-    "The NHS asks people to tell their doctor about pregnancy, planning a pregnancy, breastfeeding and liver problems.",
-    "The NHS lists other cholesterol-lowering medicines such as bezafibrate and colestyramine as medicines to mention to a doctor, and UK product information advises caution with ciclosporin."
-   ],
-   "references": [
-    {
-     "title": "NHS: About ezetimibe",
-     "url": "https://www.nhs.uk/medicines/ezetimibe/about-ezetimibe/"
-    },
-    {
-     "title": "NHS: Side effects of ezetimibe",
-     "url": "https://www.nhs.uk/medicines/ezetimibe/side-effects-of-ezetimibe/"
-    },
-    {
-     "title": "NICE TA385: Ezetimibe for treating primary heterozygous-familial and non-familial hypercholesterolaemia",
-     "url": "https://www.nice.org.uk/guidance/ta385/chapter/1-recommendations"
-    },
-    {
-     "title": "Heart UK: Ezetimibe",
-     "url": "https://www.heartuk.org.uk/getting-treatment/ezetimibe"
-    },
-    {
-     "title": "MedlinePlus: Ezetimibe",
-     "url": "https://medlineplus.gov/druginfo/meds/a603015.html"
-    },
-    {
-     "title": "NHS: Who can and cannot take ezetimibe",
-     "url": "https://www.nhs.uk/medicines/ezetimibe/who-can-and-cannot-take-ezetimibe/"
-    },
-    {
-     "title": "emc: Ezetimibe 10mg tablets, Summary of Product Characteristics",
-     "url": "https://www.medicines.org.uk/emc/product/14259/smpc"
-    }
-   ],
-   "urlAliases": [
-    "cholesterol-absorption-blockers"
    ]
   }
  },
@@ -680,201 +860,6 @@
     ]
    }
   },
-  "gliclazide": {
-   "name": "Gliclazide",
-   "summary": "Gliclazide is a sulfonylurea tablet prescribed for type 2 diabetes that prompts the pancreas to make more insulin. Low blood sugar (a hypo) is a common side effect, and NHS diabetes guidance says to call 999 if a person with a hypo is unconscious, does not begin to regain consciousness or has a seizure. The NHS says it is not usually used in pregnancy.",
-   "aliases": [],
-   "category": "diabetes",
-   "categories": [
-    "diabetes"
-   ],
-   "class": "Sulfonylurea",
-   "usedFor": [
-    "Type 2 diabetes"
-   ],
-   "howItWorks": "Gliclazide prompts the pancreas to make more insulin. A UK formulary guide says it directly stimulates insulin release, so it has the potential to cause hypoglycaemia.",
-   "anatomy": {
-    "organs": [
-     "pancreas"
-    ],
-    "systems": [
-     "endocrine"
-    ]
-   },
-   "sideEffects": {
-    "common": [
-     "Tummy ache, sickness and diarrhoea, according to Diabetes UK; the NHS says taking the tablets with a meal can make side effects less likely",
-     "Low blood sugar (a hypo): the NHS lists dizziness, feeling sick, being very hungry or very tired as symptoms, and describes eating or drinking something sugary as the usual response",
-     "Some people gain weight while taking a sulphonylurea, according to Diabetes UK"
-    ],
-    "serious": [
-     "Low blood sugar with unconsciousness, no return to consciousness or signs of a seizure: NHS diabetes guidance says to call 999 straight away, and nothing is given by mouth to an unconscious person; if sugary food or drink does not help or symptoms return, the NHS says to call a doctor or NHS 111",
-     "Signs of a serious allergic reaction (anaphylaxis), such as a swollen throat or tongue, a raised itchy rash or difficulty breathing: the NHS says to call 999",
-     "Possible blood cell problems (paleness, unusual bleeding or bruising, sore throat, fever) or liver problems (yellowing of the skin or whites of the eyes): the NHS says to call NHS 111 for other serious side effects",
-     "Taking more than the prescribed amount: the NHS says to call NHS 111"
-    ]
-   },
-   "cautions": [
-    "Not usually used in pregnancy, and advised against during breastfeeding, according to the NHS; a doctor may offer a different medicine",
-    "The NHS lists type 1 diabetes, a past allergic reaction, diabetic ketoacidosis, severe kidney or liver disease, porphyria and G6PD deficiency among the reasons it may not be suitable",
-    "Alcohol: the NHS says it can be drunk but more alcohol can raise the risk of low blood sugar, while UK manufacturer leaflets say drinking alcohol is not recommended",
-    "Driving: the NHS says not to drive while sleepy or dizzy from gliclazide; Diabetes UK says sulphonylureas can increase the risk of hypos while driving; the DVLA says severe hypoglycaemia while driving means stopping driving and notifying the DVLA",
-    "Other medicines: the NHS says some antibiotics and antifungals, NSAID painkillers such as ibuprofen and aspirin, and other diabetes medicines can affect blood sugar, St John's wort should not be taken, and a pharmacist or doctor should be asked about any other medicine; UK prescribing information lists miconazole as a contraindicated combination",
-    "The doctor is told before an operation, because gliclazide increases the risk of low blood sugar during surgery, according to the NHS"
-   ],
-   "monitoring": "A UK formulary guide says HbA1c shows overall diabetes control but cannot show day-to-day swings in blood glucose or hypoglycaemia. NICE advises considering short-term self-monitoring of blood glucose in type 2 diabetes when starting corticosteroids or to confirm suspected hypoglycaemia.",
-   "conditions": [
-    "type-2-diabetes"
-   ],
-   "symptoms": [],
-   "tests": [
-    "blood-glucose",
-    "hba1c",
-    "kidney-function-tests"
-   ],
-   "procedures": [],
-   "physiology": [
-    "pancreatic-functions"
-   ],
-   "related": [
-    "metformin"
-   ],
-   "references": [
-    {
-     "title": "NHS: Gliclazide",
-     "url": "https://www.nhs.uk/medicines/gliclazide/"
-    },
-    {
-     "title": "NHS: About gliclazide",
-     "url": "https://www.nhs.uk/medicines/gliclazide/about-gliclazide/"
-    },
-    {
-     "title": "NHS: Side effects of gliclazide",
-     "url": "https://www.nhs.uk/medicines/gliclazide/side-effects-of-gliclazide/"
-    },
-    {
-     "title": "NHS: Common questions about gliclazide",
-     "url": "https://www.nhs.uk/medicines/gliclazide/common-questions-about-gliclazide/"
-    },
-    {
-     "title": "NHS: Taking gliclazide with other medicines and herbal supplements",
-     "url": "https://www.nhs.uk/medicines/gliclazide/taking-gliclazide-with-other-medicines-and-herbal-supplements/"
-    },
-    {
-     "title": "Diabetes UK: Gliclazide",
-     "url": "https://www.diabetes.org.uk/about-diabetes/looking-after-diabetes/treatments/tablets-and-medication/sulphonylureas/gliclazide"
-    },
-    {
-     "title": "GOV.UK: Diabetes mellitus: assessing fitness to drive",
-     "url": "https://www.gov.uk/guidance/diabetes-mellitus-assessing-fitness-to-drive"
-    },
-    {
-     "title": "NICE NG28: Type 2 diabetes in adults: management",
-     "url": "https://www.nice.org.uk/guidance/ng28/chapter/recommendations"
-    },
-    {
-     "title": "emc: Gliclazide 40 mg Tablets SmPC",
-     "url": "https://www.medicines.org.uk/emc/product/13135/smpc"
-    },
-    {
-     "title": "NHS Scotland, My Diabetes My Way: Hypoglycaemia",
-     "url": "https://mydiabetesmyway.scot.nhs.uk/resources/app-resources/hypoglycaemia/"
-    }
-   ],
-   "urlAliases": [],
-   "drugClass": "sulfonylureas",
-   "brands": {
-    "UK": [
-     "Diamicron",
-     "Diamicron MR"
-    ]
-   },
-   "productType": "small-molecule",
-   "routeIds": [
-    "oral"
-   ],
-   "dosageFormIds": [
-    "tablet",
-    "extended-release-tablet"
-   ],
-   "regulatory": [
-    {
-     "jurisdiction": "UK",
-     "status": "prescription",
-     "source": {
-      "title": "NHS: About gliclazide",
-      "url": "https://www.nhs.uk/medicines/gliclazide/about-gliclazide/",
-      "section": "About gliclazide",
-      "jurisdiction": "UK",
-      "type": "regulatory"
-     }
-    }
-   ],
-   "article": {
-    "sections": [
-     {
-      "heading": "What is gliclazide used for?",
-      "body": "Gliclazide is a medicine for type 2 diabetes that belongs to a group called sulfonylureas. In type 2 diabetes the body does not make or use insulin well enough, so sugar builds up in the blood. Diabetes UK says gliclazide comes as standard-release or slow-release tablets. Diabetes UK describes gliclazide as one of four sulphonylureas that people with type 2 diabetes in the UK can be prescribed. The NHS says most adults and children aged 12 years and over can take it, but it is not suitable for everyone. The NHS lists type 1 diabetes, a past allergic reaction, diabetic ketoacidosis, severe kidney or liver disease, porphyria and G6PD deficiency among the reasons it may not be suitable."
-     },
-     {
-      "heading": "How does gliclazide work?",
-      "body": "Gliclazide works by prompting the pancreas to make more insulin. Insulin is a hormone made in the pancreas that helps move sugar from the blood into the body's cells. A UK formulary guide says gliclazide directly stimulates insulin release, so it has the potential to cause hypoglycaemia."
-     },
-     {
-      "heading": "What are the side effects of gliclazide?",
-      "body": "Diabetes UK lists tummy ache, sickness and diarrhoea among the common effects of sulphonylureas. The NHS says side effects can be less likely if the tablets are taken with a meal. Diabetes UK says some people gain weight while taking a sulphonylurea. Diabetes UK says rarer effects of sulphonylureas include liver damage and low blood cell counts. The NHS lists three rarer, serious problems: an allergic reaction (anaphylaxis), a problem with the blood cells and problems with the liver. Warning signs of a blood cell problem include paleness, unusual bleeding or bruising, a sore throat and fever, and a liver problem can turn the skin or the whites of the eyes yellow. The NHS says to call 999 for a suspected anaphylaxis, with signs such as a swollen throat or tongue, a raised itchy rash or difficulty breathing. For other suspected serious side effects the NHS says to call NHS 111."
-     },
-     {
-      "heading": "Low blood sugar, driving and alcohol",
-      "body": "Low blood sugar, called hypoglycaemia or a hypo, is a common side effect of gliclazide. The NHS says it can cause dizziness, feeling sick, being very hungry or being very tired. Diabetes UK says hypos are more likely when a meal is missed, after strenuous exercise or after drinking alcohol. The usual response the NHS describes is to eat or drink something sugary to raise blood sugar quickly. The NHS says to call a doctor or NHS 111 if the sugary food or drink does not help or the symptoms return. If a person with a hypo becomes unconscious, does not begin to regain consciousness, or shows signs of a seizure, NHS diabetes guidance says to call 999 straight away. NHS hospital guidance says nothing is given by mouth to someone who is unconscious or fitting, because of the risk of choking. The NHS says a person who has taken more than the prescribed amount of gliclazide should call NHS 111. The NHS says that if gliclazide makes a person feel sleepy or dizzy, they should not drive until the symptoms pass. Diabetes UK says sulphonylureas can increase the risk of hypos while driving. DVLA guidance says a driver who has an episode of severe hypoglycaemia while driving must stop driving and tell the DVLA, and it defines severe as needing another person's help. The NHS says alcohol can be drunk with gliclazide but more alcohol can raise the risk of low blood sugar, while UK manufacturer leaflets say drinking alcohol is not recommended because it can alter diabetes control."
-     },
-     {
-      "heading": "Who needs extra care, and what is checked?",
-      "body": "The NHS says gliclazide is not usually used in pregnancy, and a doctor may offer a different medicine. The NHS also advises against it during breastfeeding. The NHS says some antibiotics and antifungals, steroid tablets, NSAID painkillers and other diabetes medicines can cause low blood sugar when taken with gliclazide. The NHS says ibuprofen and aspirin should be checked with a pharmacist or doctor first, because they can lower blood sugar too much. The NHS says St John's wort should not be taken, because it may change how the body processes gliclazide. The NHS advises checking with a pharmacist or doctor before combining gliclazide with any medicine, herbal remedy, vitamin or supplement. UK prescribing information lists miconazole, an antifungal, as a contraindicated combination because it increases the blood-sugar-lowering effect. The NHS says to tell the doctor before an operation, because gliclazide increases the risk of low blood sugar during surgery. A UK formulary guide says HbA1c shows overall diabetes control but cannot show day-to-day swings in blood glucose or hypoglycaemia. NICE advises considering short-term self-monitoring of blood glucose in adults with type 2 diabetes when starting corticosteroids or to confirm suspected hypoglycaemia. NICE sets a different HbA1c aim for adults taking a drug associated with hypoglycaemia."
-     }
-    ],
-    "faqs": [
-     {
-      "q": "Can alcohol be drunk with gliclazide?",
-      "a": "The NHS says alcohol can be drunk with gliclazide, but more alcohol can raise the risk of low blood sugar. UK manufacturer leaflets say drinking alcohol is not recommended because it can alter diabetes control."
-     },
-     {
-      "q": "What happens if blood sugar drops too low?",
-      "a": "Low blood sugar is called a hypo, and the NHS says the usual response is to eat or drink something sugary. The NHS says to call a doctor or NHS 111 if sugary food or drink does not help or the symptoms return. If the person becomes unconscious, does not begin to regain consciousness, or has signs of a seizure, NHS diabetes guidance says to call 999 straight away."
-     },
-     {
-      "q": "Can gliclazide be used in pregnancy?",
-      "a": "The NHS says gliclazide is not usually used in pregnancy, and a doctor may offer a different medicine. The NHS also advises against it during breastfeeding."
-     },
-     {
-      "q": "Does gliclazide affect driving?",
-      "a": "The NHS says that if gliclazide makes a person feel sleepy or dizzy, they should not drive until the symptoms pass. The DVLA says a driver who has an episode of severe hypoglycaemia while driving must stop driving and tell the DVLA."
-     }
-    ],
-    "keyFacts": [
-     {
-      "label": "Group",
-      "value": "Sulfonylureas"
-     },
-     {
-      "label": "Used for",
-      "value": "Type 2 diabetes"
-     },
-     {
-      "label": "Forms",
-      "value": "Standard tablets and slow-release tablets"
-     },
-     {
-      "label": "Main risk",
-      "value": "Low blood sugar (a hypo)"
-     },
-     {
-      "label": "Emergency route",
-      "value": "999 if a person with a hypo is unconscious, does not regain consciousness or has a seizure; a doctor or NHS 111 if sugary food or drink does not help; NHS 111 after taking more than prescribed"
-     }
-    ]
-   }
-  },
   "ezetimibe": {
    "name": "Ezetimibe",
    "summary": "Ezetimibe is a prescribed cholesterol-lowering medicine that works by reducing how much cholesterol the gut absorbs. It is used on its own when a statin cannot be taken or has not worked, and it can also be added to a statin. Unexplained muscle pain, tenderness or weakness, or yellowing of the skin or eyes, needs a doctor or NHS 111 straight away.",
@@ -1114,6 +1099,906 @@
     {
      "title": "FDA: Zetia (ezetimibe) prescribing information",
      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2024/021445s043lbl.pdf"
+    }
+   ]
+  },
+  "gliclazide": {
+   "name": "Gliclazide",
+   "summary": "Gliclazide is a sulfonylurea tablet prescribed for type 2 diabetes that prompts the pancreas to make more insulin. Low blood sugar (a hypo) is a common side effect, and NHS diabetes guidance says to call 999 if a person with a hypo is unconscious, does not begin to regain consciousness or has a seizure. The NHS says it is not usually used in pregnancy.",
+   "aliases": [],
+   "category": "diabetes",
+   "categories": [
+    "diabetes"
+   ],
+   "class": "Sulfonylurea",
+   "usedFor": [
+    "Type 2 diabetes"
+   ],
+   "howItWorks": "Gliclazide prompts the pancreas to make more insulin. A UK formulary guide says it directly stimulates insulin release, so it has the potential to cause hypoglycaemia.",
+   "anatomy": {
+    "organs": [
+     "pancreas"
+    ],
+    "systems": [
+     "endocrine"
+    ]
+   },
+   "sideEffects": {
+    "common": [
+     "Tummy ache, sickness and diarrhoea, according to Diabetes UK; the NHS says taking the tablets with a meal can make side effects less likely",
+     "Low blood sugar (a hypo): the NHS lists dizziness, feeling sick, being very hungry or very tired as symptoms, and describes eating or drinking something sugary as the usual response",
+     "Some people gain weight while taking a sulphonylurea, according to Diabetes UK"
+    ],
+    "serious": [
+     "Low blood sugar with unconsciousness, no return to consciousness or signs of a seizure: NHS diabetes guidance says to call 999 straight away, and nothing is given by mouth to an unconscious person; if sugary food or drink does not help or symptoms return, the NHS says to call a doctor or NHS 111",
+     "Signs of a serious allergic reaction (anaphylaxis), such as a swollen throat or tongue, a raised itchy rash or difficulty breathing: the NHS says to call 999",
+     "Possible blood cell problems (paleness, unusual bleeding or bruising, sore throat, fever) or liver problems (yellowing of the skin or whites of the eyes): the NHS says to call NHS 111 for other serious side effects",
+     "Taking more than the prescribed amount: the NHS says to call NHS 111"
+    ]
+   },
+   "cautions": [
+    "Not usually used in pregnancy, and advised against during breastfeeding, according to the NHS; a doctor may offer a different medicine",
+    "The NHS lists type 1 diabetes, a past allergic reaction, diabetic ketoacidosis, severe kidney or liver disease, porphyria and G6PD deficiency among the reasons it may not be suitable",
+    "Alcohol: the NHS says it can be drunk but more alcohol can raise the risk of low blood sugar, while UK manufacturer leaflets say drinking alcohol is not recommended",
+    "Driving: the NHS says not to drive while sleepy or dizzy from gliclazide; Diabetes UK says sulphonylureas can increase the risk of hypos while driving; the DVLA says severe hypoglycaemia while driving means stopping driving and notifying the DVLA",
+    "Other medicines: the NHS says some antibiotics and antifungals, NSAID painkillers such as ibuprofen and aspirin, and other diabetes medicines can affect blood sugar, St John's wort should not be taken, and a pharmacist or doctor should be asked about any other medicine; UK prescribing information lists miconazole as a contraindicated combination",
+    "The doctor is told before an operation, because gliclazide increases the risk of low blood sugar during surgery, according to the NHS"
+   ],
+   "monitoring": "A UK formulary guide says HbA1c shows overall diabetes control but cannot show day-to-day swings in blood glucose or hypoglycaemia. NICE advises considering short-term self-monitoring of blood glucose in type 2 diabetes when starting corticosteroids or to confirm suspected hypoglycaemia.",
+   "conditions": [
+    "type-2-diabetes"
+   ],
+   "symptoms": [],
+   "tests": [
+    "blood-glucose",
+    "hba1c",
+    "kidney-function-tests"
+   ],
+   "procedures": [],
+   "physiology": [
+    "pancreatic-functions"
+   ],
+   "related": [
+    "metformin"
+   ],
+   "references": [
+    {
+     "title": "NHS: Gliclazide",
+     "url": "https://www.nhs.uk/medicines/gliclazide/"
+    },
+    {
+     "title": "NHS: About gliclazide",
+     "url": "https://www.nhs.uk/medicines/gliclazide/about-gliclazide/"
+    },
+    {
+     "title": "NHS: Side effects of gliclazide",
+     "url": "https://www.nhs.uk/medicines/gliclazide/side-effects-of-gliclazide/"
+    },
+    {
+     "title": "NHS: Common questions about gliclazide",
+     "url": "https://www.nhs.uk/medicines/gliclazide/common-questions-about-gliclazide/"
+    },
+    {
+     "title": "NHS: Taking gliclazide with other medicines and herbal supplements",
+     "url": "https://www.nhs.uk/medicines/gliclazide/taking-gliclazide-with-other-medicines-and-herbal-supplements/"
+    },
+    {
+     "title": "Diabetes UK: Gliclazide",
+     "url": "https://www.diabetes.org.uk/about-diabetes/looking-after-diabetes/treatments/tablets-and-medication/sulphonylureas/gliclazide"
+    },
+    {
+     "title": "GOV.UK: Diabetes mellitus: assessing fitness to drive",
+     "url": "https://www.gov.uk/guidance/diabetes-mellitus-assessing-fitness-to-drive"
+    },
+    {
+     "title": "NICE NG28: Type 2 diabetes in adults: management",
+     "url": "https://www.nice.org.uk/guidance/ng28/chapter/recommendations"
+    },
+    {
+     "title": "emc: Gliclazide 40 mg Tablets SmPC",
+     "url": "https://www.medicines.org.uk/emc/product/13135/smpc"
+    },
+    {
+     "title": "NHS Scotland, My Diabetes My Way: Hypoglycaemia",
+     "url": "https://mydiabetesmyway.scot.nhs.uk/resources/app-resources/hypoglycaemia/"
+    }
+   ],
+   "urlAliases": [],
+   "drugClass": "sulfonylureas",
+   "brands": {
+    "UK": [
+     "Diamicron",
+     "Diamicron MR"
+    ]
+   },
+   "productType": "small-molecule",
+   "routeIds": [
+    "oral"
+   ],
+   "dosageFormIds": [
+    "tablet",
+    "extended-release-tablet"
+   ],
+   "regulatory": [
+    {
+     "jurisdiction": "UK",
+     "status": "prescription",
+     "source": {
+      "title": "NHS: About gliclazide",
+      "url": "https://www.nhs.uk/medicines/gliclazide/about-gliclazide/",
+      "section": "About gliclazide",
+      "jurisdiction": "UK",
+      "type": "regulatory"
+     }
+    }
+   ],
+   "article": {
+    "sections": [
+     {
+      "heading": "What is gliclazide used for?",
+      "body": "Gliclazide is a medicine for type 2 diabetes that belongs to a group called sulfonylureas. In type 2 diabetes the body does not make or use insulin well enough, so sugar builds up in the blood. Diabetes UK says gliclazide comes as standard-release or slow-release tablets. Diabetes UK describes gliclazide as one of four sulphonylureas that people with type 2 diabetes in the UK can be prescribed. The NHS says most adults and children aged 12 years and over can take it, but it is not suitable for everyone. The NHS lists type 1 diabetes, a past allergic reaction, diabetic ketoacidosis, severe kidney or liver disease, porphyria and G6PD deficiency among the reasons it may not be suitable."
+     },
+     {
+      "heading": "How does gliclazide work?",
+      "body": "Gliclazide works by prompting the pancreas to make more insulin. Insulin is a hormone made in the pancreas that helps move sugar from the blood into the body's cells. A UK formulary guide says gliclazide directly stimulates insulin release, so it has the potential to cause hypoglycaemia."
+     },
+     {
+      "heading": "What are the side effects of gliclazide?",
+      "body": "Diabetes UK lists tummy ache, sickness and diarrhoea among the common effects of sulphonylureas. The NHS says side effects can be less likely if the tablets are taken with a meal. Diabetes UK says some people gain weight while taking a sulphonylurea. Diabetes UK says rarer effects of sulphonylureas include liver damage and low blood cell counts. The NHS lists three rarer, serious problems: an allergic reaction (anaphylaxis), a problem with the blood cells and problems with the liver. Warning signs of a blood cell problem include paleness, unusual bleeding or bruising, a sore throat and fever, and a liver problem can turn the skin or the whites of the eyes yellow. The NHS says to call 999 for a suspected anaphylaxis, with signs such as a swollen throat or tongue, a raised itchy rash or difficulty breathing. For other suspected serious side effects the NHS says to call NHS 111."
+     },
+     {
+      "heading": "Low blood sugar, driving and alcohol",
+      "body": "Low blood sugar, called hypoglycaemia or a hypo, is a common side effect of gliclazide. The NHS says it can cause dizziness, feeling sick, being very hungry or being very tired. Diabetes UK says hypos are more likely when a meal is missed, after strenuous exercise or after drinking alcohol. The usual response the NHS describes is to eat or drink something sugary to raise blood sugar quickly. The NHS says to call a doctor or NHS 111 if the sugary food or drink does not help or the symptoms return. If a person with a hypo becomes unconscious, does not begin to regain consciousness, or shows signs of a seizure, NHS diabetes guidance says to call 999 straight away. NHS hospital guidance says nothing is given by mouth to someone who is unconscious or fitting, because of the risk of choking. The NHS says a person who has taken more than the prescribed amount of gliclazide should call NHS 111. The NHS says that if gliclazide makes a person feel sleepy or dizzy, they should not drive until the symptoms pass. Diabetes UK says sulphonylureas can increase the risk of hypos while driving. DVLA guidance says a driver who has an episode of severe hypoglycaemia while driving must stop driving and tell the DVLA, and it defines severe as needing another person's help. The NHS says alcohol can be drunk with gliclazide but more alcohol can raise the risk of low blood sugar, while UK manufacturer leaflets say drinking alcohol is not recommended because it can alter diabetes control."
+     },
+     {
+      "heading": "Who needs extra care, and what is checked?",
+      "body": "The NHS says gliclazide is not usually used in pregnancy, and a doctor may offer a different medicine. The NHS also advises against it during breastfeeding. The NHS says some antibiotics and antifungals, steroid tablets, NSAID painkillers and other diabetes medicines can cause low blood sugar when taken with gliclazide. The NHS says ibuprofen and aspirin should be checked with a pharmacist or doctor first, because they can lower blood sugar too much. The NHS says St John's wort should not be taken, because it may change how the body processes gliclazide. The NHS advises checking with a pharmacist or doctor before combining gliclazide with any medicine, herbal remedy, vitamin or supplement. UK prescribing information lists miconazole, an antifungal, as a contraindicated combination because it increases the blood-sugar-lowering effect. The NHS says to tell the doctor before an operation, because gliclazide increases the risk of low blood sugar during surgery. A UK formulary guide says HbA1c shows overall diabetes control but cannot show day-to-day swings in blood glucose or hypoglycaemia. NICE advises considering short-term self-monitoring of blood glucose in adults with type 2 diabetes when starting corticosteroids or to confirm suspected hypoglycaemia. NICE sets a different HbA1c aim for adults taking a drug associated with hypoglycaemia."
+     }
+    ],
+    "faqs": [
+     {
+      "q": "Can alcohol be drunk with gliclazide?",
+      "a": "The NHS says alcohol can be drunk with gliclazide, but more alcohol can raise the risk of low blood sugar. UK manufacturer leaflets say drinking alcohol is not recommended because it can alter diabetes control."
+     },
+     {
+      "q": "What happens if blood sugar drops too low?",
+      "a": "Low blood sugar is called a hypo, and the NHS says the usual response is to eat or drink something sugary. The NHS says to call a doctor or NHS 111 if sugary food or drink does not help or the symptoms return. If the person becomes unconscious, does not begin to regain consciousness, or has signs of a seizure, NHS diabetes guidance says to call 999 straight away."
+     },
+     {
+      "q": "Can gliclazide be used in pregnancy?",
+      "a": "The NHS says gliclazide is not usually used in pregnancy, and a doctor may offer a different medicine. The NHS also advises against it during breastfeeding."
+     },
+     {
+      "q": "Does gliclazide affect driving?",
+      "a": "The NHS says that if gliclazide makes a person feel sleepy or dizzy, they should not drive until the symptoms pass. The DVLA says a driver who has an episode of severe hypoglycaemia while driving must stop driving and tell the DVLA."
+     }
+    ],
+    "keyFacts": [
+     {
+      "label": "Group",
+      "value": "Sulfonylureas"
+     },
+     {
+      "label": "Used for",
+      "value": "Type 2 diabetes"
+     },
+     {
+      "label": "Forms",
+      "value": "Standard tablets and slow-release tablets"
+     },
+     {
+      "label": "Main risk",
+      "value": "Low blood sugar (a hypo)"
+     },
+     {
+      "label": "Emergency route",
+      "value": "999 if a person with a hypo is unconscious, does not regain consciousness or has a seizure; a doctor or NHS 111 if sugary food or drink does not help; NHS 111 after taking more than prescribed"
+     }
+    ]
+   }
+  },
+  "semaglutide": {
+   "name": "Semaglutide (Ozempic, Wegovy)",
+   "summary": "Semaglutide is a medicine used to manage type 2 diabetes (as Ozempic and Rybelsus) or to treat obesity (as Wegovy). It imitates GLP-1, a hormone the body releases after eating, and helps people feel fuller for longer. Digestive side effects are common, and rare inflammation of the pancreas needs urgent medical advice.",
+   "aliases": [
+    "Ozempic",
+    "Wegovy",
+    "Rybelsus"
+   ],
+   "category": "diabetes",
+   "categories": [
+    "diabetes"
+   ],
+   "class": "GLP-1 receptor agonist",
+   "drugClass": "glp-1-receptor-agonists",
+   "usedFor": [
+    "Managing type 2 diabetes (Ozempic injection and Rybelsus tablets)",
+    "Weight management in adults with obesity or overweight (Wegovy), which NICE recommends within a specialist weight management service",
+    "Lowering the risk of heart attack and stroke in some adults with cardiovascular disease and obesity or overweight (Wegovy), according to Diabetes UK"
+   ],
+   "howItWorks": "Semaglutide imitates GLP-1, a hormone the body releases after eating. It helps people feel fuller for longer and reduces hunger. It also increases the insulin the pancreas releases in response to food, according to an NHS hospital leaflet on the tablet form. Like other GLP-1 medicines, it delays emptying of the stomach, according to the MHRA.",
+   "anatomy": {
+    "organs": [
+     "pancreas",
+     "stomach"
+    ],
+    "systems": [
+     "endocrine",
+     "digestive"
+    ]
+   },
+   "sideEffects": {
+    "common": [
+     "Feeling sick, being sick, diarrhoea and constipation are among the common effects listed by the NHS",
+     "Feeling tired, reactions where the injection goes in, and hair loss are also listed as common by the NHS",
+     "The US Ozempic label notes that nausea, vomiting and diarrhoea are most common when treatment is first started"
+    ],
+    "serious": [
+     "Inflammation of the pancreas (pancreatitis) is a rare but serious effect, with severe pain in the stomach or back that does not go away",
+     "That pain needs urgent advice from NHS 111 or the GP the same day, and a 999 call if it is severe or the person is collapsing",
+     "A sudden change in eyesight, such as sudden loss of vision, needs urgent medical advice according to Diabetes UK, and semaglutide has been linked to a very rare eye condition called NAION",
+     "Low blood sugar (hypoglycaemia) causes sweating, shaking, a fast heartbeat and dizziness, and is more likely with other diabetes medicines",
+     "A severe allergic reaction is also listed by the NHS as a serious effect",
+     "Gallstones were reported more often with semaglutide than with comparison treatments in clinical studies, according to the UK summary of product characteristics",
+     "Vomiting and diarrhoea can cause dehydration, which in rare cases can lead to worse kidney function, so care to avoid losing fluid is advised in the UK summary of product characteristics",
+     "For any serious side effect, urgent advice means NHS 111 or the GP the same day, and 999 or A&E for emergencies such as collapse, severe symptoms or a severe allergic reaction"
+    ]
+   },
+   "cautions": [
+    "Low blood sugar is more likely with insulin or a sulfonylurea, and the UK summary of product characteristics says a lower dose of those medicines should be considered when semaglutide is added",
+    "In a large heart-outcomes study, diabetic retinopathy complications were more common with semaglutide than placebo, mainly in people using insulin who already had retinopathy",
+    "Rapid improvement in blood glucose control has been linked to a temporary worsening of diabetic retinopathy, and people with the condition are monitored closely, according to the UK summary of product characteristics",
+    "The NHS says semaglutide should not be used in pregnancy",
+    "The MHRA advises against GLP-1 receptor agonists in pregnancy because of a lack of human safety data, and advises effective contraception throughout treatment",
+    "The NHS advises stopping semaglutide before trying to become pregnant",
+    "Diabetes UK says semaglutide should not be used while breastfeeding",
+    "The NHS says drinking alcohol can increase side effects such as feeling or being sick",
+    "The NHS lists having or having had an inflamed pancreas (acute pancreatitis) among the reasons semaglutide may not be suitable",
+    "The MHRA has highlighted a potential risk of stomach contents entering the lungs (pulmonary aspiration) during general anaesthesia or deep sedation, because these medicines delay stomach emptying and food can remain despite fasting"
+   ],
+   "monitoring": "For weight management, NICE includes a rule for stopping treatment if early weight loss is too small, so response is reviewed.",
+   "conditions": [
+    "type-2-diabetes",
+    "heart-failure",
+    "chronic-kidney-disease",
+    "coronary-artery-disease"
+   ],
+   "symptoms": [],
+   "tests": [
+    "hba1c",
+    "blood-glucose"
+   ],
+   "procedures": [],
+   "physiology": [],
+   "related": [
+    "metformin",
+    "tirzepatide",
+    "dapagliflozin"
+   ],
+   "references": [
+    {
+     "title": "NHS: Semaglutide",
+     "url": "https://www.nhs.uk/medicines/semaglutide/",
+     "jurisdiction": "UK",
+     "type": "regulatory"
+    },
+    {
+     "title": "Diabetes UK: Semaglutide",
+     "url": "https://www.diabetes.org.uk/about-diabetes/looking-after-diabetes/treatments/tablets-and-medication/semaglutide",
+     "jurisdiction": "UK",
+     "type": "guidance"
+    },
+    {
+     "title": "NICE TA875: Semaglutide for managing overweight and obesity (information for the public)",
+     "url": "https://www.nice.org.uk/guidance/ta875/informationforpublic",
+     "jurisdiction": "UK",
+     "type": "guidance"
+    },
+    {
+     "title": "MedlinePlus: Semaglutide injection",
+     "url": "https://medlineplus.gov/druginfo/meds/a618008.html",
+     "jurisdiction": "US",
+     "type": "regulatory"
+    },
+    {
+     "title": "NHS SPS: Considerations and interactions with GLP-1 receptor agonists",
+     "url": "https://sps.nhs.uk/articles/considerations-and-interactions-with-glp-1-receptor-agonists/",
+     "jurisdiction": "UK",
+     "type": "guidance"
+    },
+    {
+     "title": "GOV.UK: MHRA Safety Roundup, June 2025",
+     "url": "https://www.gov.uk/drug-device-alerts/mhra-safety-roundup-june-2025",
+     "jurisdiction": "UK",
+     "type": "regulatory"
+    },
+    {
+     "title": "FDA: Ozempic (semaglutide) injection prescribing information",
+     "url": "https://www.accessdata.fda.gov/spl/data/350beea5-c20f-4f25-9d4c-82dcfe3b0278/350beea5-c20f-4f25-9d4c-82dcfe3b0278.xml",
+     "jurisdiction": "US",
+     "type": "regulatory"
+    },
+    {
+     "title": "Diabetes UK: Wegovy",
+     "url": "https://www.diabetes.org.uk/about-diabetes/looking-after-diabetes/treatments/tablets-and-medication/glp-1/semaglutide/wegovy",
+     "jurisdiction": "UK",
+     "type": "guidance"
+    },
+    {
+     "title": "emc: Ozempic summary of product characteristics",
+     "url": "https://www.medicines.org.uk/emc/product/9750/smpc",
+     "jurisdiction": "UK",
+     "type": "regulatory"
+    },
+    {
+     "title": "GOV.UK: GLP-1 and dual GIP/GLP-1 receptor agonists, potential risk of pulmonary aspiration (MHRA Drug Safety Update)",
+     "url": "https://www.gov.uk/drug-safety-update/glp-1-and-dual-gip-slash-glp-1-receptor-agonists-potential-risk-of-pulmonary-aspiration-during-general-anaesthesia-or-deep-sedation",
+     "jurisdiction": "UK",
+     "type": "regulatory"
+    },
+    {
+     "title": "GOV.UK: MHRA updates guidance for semaglutide prescribers and patients",
+     "url": "https://www.gov.uk/government/news/mhra-updates-guidance-for-semaglutide-prescribers-and-patients",
+     "jurisdiction": "UK",
+     "type": "regulatory"
+    },
+    {
+     "title": "NHS: Tirzepatide",
+     "url": "https://www.nhs.uk/medicines/tirzepatide/",
+     "jurisdiction": "UK",
+     "type": "regulatory"
+    },
+    {
+     "title": "NICE TA875: Semaglutide for managing overweight and obesity",
+     "url": "https://www.nice.org.uk/guidance/ta875/documents/1-2",
+     "jurisdiction": "UK",
+     "type": "guidance"
+    }
+   ],
+   "urlAliases": [
+    "ozempic",
+    "wegovy",
+    "rybelsus"
+   ],
+   "brands": {
+    "UK": [
+     "Ozempic",
+     "Wegovy",
+     "Rybelsus"
+    ],
+    "US": [
+     "Ozempic",
+     "Wegovy",
+     "Rybelsus"
+    ]
+   },
+   "productType": "small-molecule",
+   "routeIds": [
+    "subcutaneous",
+    "oral"
+   ],
+   "dosageFormIds": [
+    "pen-injector",
+    "tablet"
+   ],
+   "regulatory": [
+    {
+     "jurisdiction": "UK",
+     "status": "prescription",
+     "source": {
+      "title": "NHS: Semaglutide",
+      "url": "https://www.nhs.uk/medicines/semaglutide/",
+      "section": "About semaglutide",
+      "jurisdiction": "UK",
+      "type": "regulatory"
+     }
+    }
+   ],
+   "regimenNote": [
+    "Injection in a pre-filled pen (Ozempic, Wegovy) and a tablet (Rybelsus)"
+   ],
+   "article": {
+    "sections": [
+     {
+      "heading": "What is semaglutide used for?",
+      "body": "Semaglutide is a prescription medicine. The NHS says it is used to manage type 2 diabetes (Ozempic and Rybelsus) or to treat obesity (Wegovy). Ozempic and Wegovy are injections in pre-filled pens, and Rybelsus is a tablet. Diabetes UK says Ozempic should only be prescribed to people with type 2 diabetes. The NHS says that for weight loss it is used together with exercise and changes to diet.\n\nFor weight management, NICE recommends Wegovy for adults only within a specialist multidisciplinary weight management service, for a maximum of two years. Diabetes UK says NICE recommends it for adults with a high body mass index (BMI) and at least one weight-related condition, and for some adults with a lower BMI who meet criteria for referral to specialist services. Diabetes UK also notes that access to specialist weight management services varies. Diabetes UK says Wegovy might be prescribed to adults with cardiovascular disease and obesity or overweight to lower the risk of major events such as heart attack or stroke."
+     },
+     {
+      "heading": "How does semaglutide work?",
+      "body": "Semaglutide belongs to the GLP-1 receptor agonist group of medicines. It imitates GLP-1, a hormone the body releases after eating. It helps people feel fuller for longer and reduces hunger. It also increases the insulin the pancreas releases in response to food, according to an NHS hospital leaflet on the tablet form. Like other GLP-1 medicines, it delays emptying of the stomach, according to the MHRA. Tirzepatide (Mounjaro) is described on the NHS website as acting on both GIP and GLP-1 receptors, so it is related but not identical."
+     },
+     {
+      "heading": "What are the side effects of semaglutide?",
+      "body": "The NHS lists feeling sick, being sick, diarrhoea and constipation as common side effects. Feeling tired, reactions where the injection goes in, and hair loss are also listed. The US Ozempic label notes that nausea, vomiting and diarrhoea are most common when treatment is first started.\n\nInflammation of the pancreas (pancreatitis) is rare but serious. Its sign is severe pain in the stomach or back that does not go away. That pain needs urgent advice from NHS 111 or the GP the same day, and a 999 call if it is severe or the person is collapsing. Diabetes UK says a sudden change in eyesight, such as sudden loss of vision, needs urgent medical advice. In February 2026 the MHRA updated its guidance on semaglutide and NAION, a very rare eye condition that typically causes sudden, painless vision loss in one eye. A severe allergic reaction is also listed by the NHS as a serious effect.\n\nGallstones were reported more often with semaglutide than with comparison treatments in clinical studies, according to the UK summary of product characteristics. That document also says vomiting and diarrhoea can cause dehydration, which in rare cases can lead to worse kidney function, so care to avoid losing fluid is advised."
+     },
+     {
+      "heading": "Taking semaglutide with other medicines, alcohol and in pregnancy",
+      "body": "The NHS says low blood sugar is more likely when semaglutide is taken with other diabetes medicines such as insulin or a sulfonylurea. Symptoms include sweating, shaking, a fast heartbeat and dizziness. The UK summary of product characteristics says a lower dose of insulin or a sulfonylurea should be considered when semaglutide is added. The NHS says drinking alcohol can increase side effects such as feeling or being sick.\n\nThe NHS says semaglutide should not be used in pregnancy, and advises stopping it before trying to become pregnant. The MHRA advises against GLP-1 receptor agonists in pregnancy and advises effective contraception throughout treatment, because human safety data are lacking. Diabetes UK says semaglutide should not be used while breastfeeding."
+     },
+     {
+      "heading": "Who needs extra care, and what happens when treatment stops?",
+      "body": "In a large heart-outcomes study, diabetic retinopathy, a diabetes-related eye condition, was reported more often with semaglutide than placebo, mainly in people using insulin who already had it. Rapid improvement in blood glucose control has been linked to a temporary worsening of retinopathy, and people with the condition are monitored closely, according to the UK summary of product characteristics. The NHS lists having or having had an inflamed pancreas among the reasons semaglutide may not be suitable.\n\nThe MHRA has highlighted a potential risk of stomach contents entering the lungs during general anaesthesia or deep sedation. This is because GLP-1 medicines delay the emptying of the stomach, so food can remain there despite fasting.\n\nNICE includes a rule for stopping Wegovy if early weight loss is too small. NICE says many people regain weight after stopping obesity treatment if they do not get the right support."
+     }
+    ],
+    "faqs": [
+     {
+      "q": "Is Ozempic the same as Wegovy?",
+      "a": "Both contain semaglutide. The NHS lists Ozempic and Rybelsus for managing type 2 diabetes and Wegovy for treating obesity. Diabetes UK says Ozempic should only be prescribed to people with type 2 diabetes. NICE recommends Wegovy for weight management within a specialist weight management service."
+     },
+     {
+      "q": "Can semaglutide cause pancreatitis?",
+      "a": "Pancreatitis, inflammation of the pancreas, is a rare but serious side effect listed by the NHS. The sign is severe pain in the stomach or back that does not go away. That needs urgent advice from NHS 111 or the GP the same day, and a 999 call if the pain is severe or the person is collapsing."
+     },
+     {
+      "q": "Can semaglutide be used in pregnancy?",
+      "a": "The NHS says semaglutide should not be used in pregnancy. The MHRA advises effective contraception throughout treatment with GLP-1 receptor agonists, and the NHS advises stopping semaglutide before trying to become pregnant."
+     },
+     {
+      "q": "Does semaglutide cause low blood sugar?",
+      "a": "The NHS lists low blood sugar as a possible effect. It is more likely when semaglutide is taken with other diabetes medicines such as insulin or a sulfonylurea. The UK summary of product characteristics says a lower dose of those medicines should be considered when semaglutide is added."
+     },
+     {
+      "q": "Why does weight return after stopping?",
+      "a": "NICE says many people regain weight after stopping obesity treatment if they do not get the right support. NICE also includes a rule for stopping Wegovy if early weight loss is too small. NICE recommends Wegovy within a specialist weight management service for a maximum of two years."
+     }
+    ],
+    "keyFacts": [
+     {
+      "label": "Brands",
+      "value": "Ozempic, Wegovy, Rybelsus"
+     },
+     {
+      "label": "Medicine group",
+      "value": "GLP-1 receptor agonist"
+     },
+     {
+      "label": "Forms",
+      "value": "Injection in a pre-filled pen (Ozempic, Wegovy); tablet (Rybelsus)"
+     },
+     {
+      "label": "Used for",
+      "value": "Type 2 diabetes; weight management"
+     },
+     {
+      "label": "Weight management on the NHS",
+      "value": "Within a specialist weight management service, up to two years (NICE)"
+     },
+     {
+      "label": "Pregnancy and breastfeeding",
+      "value": "Not used in pregnancy (NHS); Diabetes UK advises against use while breastfeeding"
+     }
+    ]
+   }
+  },
+  "spironolactone": {
+   "name": "Spironolactone",
+   "summary": "Spironolactone is a diuretic, a medicine that helps reduce fluid build-up in the body. Blood tests for potassium and kidney function are part of monitoring. High potassium in the blood is the main serious risk.",
+   "aliases": [
+    "Aldactone",
+    "water tablet"
+   ],
+   "category": "cardiovascular",
+   "categories": [
+    "cardiovascular"
+   ],
+   "class": "Diuretic and mineralocorticoid receptor antagonist (potassium-sparing)",
+   "drugClass": "mineralocorticoid-receptor-antagonists",
+   "usedFor": [
+    "Heart failure",
+    "Oedema (fluid build-up) linked to heart failure, to cirrhosis of the liver with ascites, to malignant ascites and to nephrotic syndrome, as listed in UK product information",
+    "Primary hyperaldosteronism, for diagnosis and treatment, as listed in an older-format Aldactone product summary on emc",
+    "Acne in women, which UK dermatology and hospital leaflets describe as an off-licence use"
+   ],
+   "howItWorks": "Spironolactone is an aldosterone antagonist, which means it acts against the hormone aldosterone. A review of spironolactone and eplerenone says they increase the amount of sodium lost in the urine and cause the kidneys to hold on to potassium when aldosterone levels are high. Because it keeps potassium in the body, spironolactone belongs to the group known as potassium-sparing diuretics.",
+   "anatomy": {
+    "organs": [
+     "kidneys",
+     "heart"
+    ],
+    "systems": [
+     "urinary",
+     "heart"
+    ]
+   },
+   "sideEffects": {
+    "common": [
+     "Dizziness, feeling sick (nausea), muscle or leg cramps and tiredness are among the common side effects the NHS lists.",
+     "The NHS also lists breast pain or breast enlargement, including in men, as a common side effect.",
+     "The Aldactone patient leaflet lists menstrual problems in women as uncommon, and breast pain as common in men and uncommon in women.",
+     "One UK patient leaflet says drowsiness and dizziness have been associated with treatment and may affect the ability to drive or operate machinery."
+    ],
+    "serious": [
+     "Spironolactone can raise potassium levels in the blood (hyperkalaemia), which can cause muscle weakness, tiredness, numbness and an irregular heartbeat.",
+     "A hospital leaflet for acne use lists high blood potassium as very rare and more likely in people over 45 or with heart or kidney problems.",
+     "Spironolactone can sometimes affect kidney function as well as raising potassium.",
+     "The NHS lists a serious allergic reaction (anaphylaxis) as a possible side effect, with symptoms including a swollen throat or tongue, a raised itchy rash and difficulty breathing.",
+     "Symptoms that could point to high potassium need prompt advice from NHS 111 or the GP the same day, and a possible serious allergic reaction is an emergency needing a 999 call.",
+     "Yellow skin or eyes (jaundice) are listed in UK patient leaflets, which say spironolactone can impair liver function and that a doctor should be told straight away."
+    ]
+   },
+   "cautions": [
+    "Most adults and children can take spironolactone, but it is not suitable for everyone.",
+    "The NHS says it may not suit people with severe kidney problems or a history of high blood potassium, and hospital leaflets also list Addison's disease.",
+    "The NHS says spironolactone is not usually recommended in pregnancy, and a hospital leaflet advises against it in anyone pregnant or trying to conceive.",
+    "The NHS says breastfeeding may be possible but should be checked with a doctor or healthcare professional first.",
+    "One UK patient leaflet advises against use while breastfeeding, and the UK product summary says metabolites have been detected in breast milk, so advice can differ between sources.",
+    "The US prescribing information says that potassium supplements, potassium-containing salt substitutes, a potassium-rich diet, or medicines that can raise potassium, including ACE inhibitors, angiotensin II antagonists, NSAIDs, heparin and low molecular weight heparin, may lead to severe hyperkalaemia.",
+    "The UK product summary lists use with eplerenone or other potassium-sparing diuretics as a contraindication.",
+    "The NHS page says eating high-potassium foods such as bananas and avocados, or using salt substitutes such as Lo-Salt, can raise potassium levels further.",
+    "An NHS Specialist Pharmacy Service monitoring guide gives patient advice to avoid anti-inflammatory painkillers unless prescribed and to avoid potassium-containing salt substitutes.",
+    "The MHRA says high potassium is more likely when kidney function is impaired."
+   ],
+   "monitoring": "The NHS Specialist Pharmacy Service lists creatinine or eGFR, electrolytes and potassium as checks before treatment, with kidney function and electrolytes checked again after starting or changing treatment. In children, sodium and potassium levels in the blood are checked during treatment.",
+   "conditions": [
+    "heart-failure",
+    "chronic-kidney-disease",
+    "cirrhosis"
+   ],
+   "symptoms": [],
+   "tests": [
+    "electrolytes",
+    "kidney-function-tests",
+    "creatinine-egfr",
+    "blood-pressure-measurement"
+   ],
+   "procedures": [],
+   "physiology": [],
+   "related": [
+    "lisinopril",
+    "ramipril",
+    "furosemide",
+    "losartan"
+   ],
+   "references": [
+    {
+     "title": "NHS: Spironolactone",
+     "url": "https://www.nhs.uk/medicines/spironolactone/",
+     "section": "About spironolactone · Who can and cannot take it · Side effects"
+    },
+    {
+     "title": "emc: Spironolactone 12.5 mg Film-coated Tablets patient information leaflet",
+     "url": "https://www.medicines.org.uk/emc/product/12015/pil"
+    },
+    {
+     "title": "emc: Spironolactone 12.5 mg Film-coated Tablets summary of product characteristics",
+     "url": "https://www.medicines.org.uk/emc/product/12015/smpc"
+    },
+    {
+     "title": "Northern Care Alliance NHS: Cardiology - Spironolactone or Eplerenone",
+     "url": "https://www.northerncarealliance.nhs.uk/patient-information/patient-leaflets/cardiology-spironolactone-or-eplerenone"
+    },
+    {
+     "title": "Specialist Pharmacy Service (NHS): Spironolactone monitoring",
+     "url": "https://sps.nhs.uk/monitorings/spironolactone-monitoring/"
+    },
+    {
+     "title": "Gloucestershire Hospitals NHS: Spironolactone for Acne (Women)",
+     "url": "https://www.gloshospitals.nhs.uk/your-visit/patient-information-leaflets/spironolactone-for-acne-women/"
+    },
+    {
+     "title": "Aldactone 25 mg patient information leaflet (emc)",
+     "url": "https://www.medicines.org.uk/emc/product/1619/pil",
+     "section": "Side effects"
+    },
+    {
+     "title": "British Association of Dermatologists: Spironolactone patient information",
+     "url": "https://www.bad.org.uk/pils/spironolactone",
+     "section": "Off-licence use in acne"
+    },
+    {
+     "title": "US prescribing information: spironolactone tablets",
+     "url": "https://www.accessdata.fda.gov/spl/data/63953bd9-cad8-4ee0-a470-43f6ccaf735a/63953bd9-cad8-4ee0-a470-43f6ccaf735a.xml",
+     "section": "Drug interactions (US label)"
+    },
+    {
+     "title": "Oxford University Hospitals NHS: Spironolactone information for parents and carers",
+     "url": "https://www.ouh.nhs.uk/patient-guide/leaflets/files/95363spironolactone.pdf",
+     "section": "Monitoring in children"
+    },
+    {
+     "title": "MHRA Drug Safety Update: spironolactone and renin-angiotensin system drugs in heart failure",
+     "url": "https://www.gov.uk/drug-safety-update/spironolactone-and-renin-angiotensin-system-drugs-in-heart-failure-risk-of-potentially-fatal-hyperkalaemia",
+     "section": "Hyperkalaemia"
+    }
+   ],
+   "urlAliases": [
+    "aldactone"
+   ],
+   "brands": {
+    "UK": [
+     "Aldactone",
+     "Qaialdo",
+     "Urospir"
+    ]
+   },
+   "productType": "small-molecule",
+   "routeIds": [
+    "oral"
+   ],
+   "dosageFormIds": [
+    "tablet",
+    "solution",
+    "suspension"
+   ],
+   "regulatory": [
+    {
+     "jurisdiction": "UK",
+     "status": "prescription",
+     "source": {
+      "title": "NHS: Spironolactone",
+      "url": "https://www.nhs.uk/medicines/spironolactone/",
+      "jurisdiction": "UK",
+      "type": "regulatory"
+     }
+    }
+   ],
+   "article": {
+    "sections": [
+     {
+      "heading": "What is spironolactone used for?",
+      "body": "Spironolactone is a diuretic, a medicine that helps reduce fluid build-up in the body. UK product information lists oedema (fluid swelling) linked to heart failure, to cirrhosis of the liver with ascites, to malignant ascites and to nephrotic syndrome. An older-format Aldactone product summary on emc also lists primary hyperaldosteronism, both for diagnosis and for treatment.\n\nThe British Association of Dermatologists says spironolactone is used off licence for women with acne, which means it is not specifically indicated for that use in the UK prescribing licence, although it is still usually available on the NHS. A Gloucestershire hospital leaflet says it does not cure acne but can help manage and even clear it over time. In the UK it is sold under brand names including Aldactone tablets, Qaialdo oral suspension and Urospir oral solution. The Urospir product information says switching between the solution and other spironolactone products should be avoided if possible."
+     },
+     {
+      "heading": "How does spironolactone work?",
+      "body": "Spironolactone is an aldosterone antagonist, which means it acts against the hormone aldosterone. A review of spironolactone and eplerenone says they increase the amount of sodium lost in the urine and cause the kidneys to hold on to potassium when aldosterone levels are high. Because it keeps potassium in the body, spironolactone belongs to the group known as potassium-sparing diuretics. Eplerenone is a related medicine that is more selective for the aldosterone receptor, while StatPearls says spironolactone also binds progesterone and androgen receptors, which underlies its anti-androgen effects such as breast enlargement in men. A 2024 systematic review and meta-analysis in people with heart failure found lower rates of gynaecomastia with eplerenone than with spironolactone."
+     },
+     {
+      "heading": "What are the side effects of spironolactone?",
+      "body": "Dizziness, feeling sick (nausea), muscle or leg cramps and tiredness are among the common side effects the NHS lists. The NHS also lists breast pain or breast enlargement, including in men, as a common side effect. The Aldactone patient leaflet lists menstrual problems in women as uncommon, and breast pain as common in men and uncommon in women. A Northern Care Alliance heart failure leaflet describes breast swelling or tenderness, especially in men, as a rare effect, so the stated frequency differs between sources.\n\nSpironolactone can raise potassium levels in the blood (hyperkalaemia), which can cause muscle weakness, tiredness, numbness and an irregular heartbeat. A hospital leaflet for acne use lists high blood potassium as very rare and more likely in people over 45 or with heart or kidney problems. Spironolactone can sometimes affect kidney function as well as raising potassium.\n\nThe NHS lists a serious allergic reaction (anaphylaxis) as a possible side effect, with symptoms including a swollen throat or tongue, a raised itchy rash and difficulty breathing. Symptoms that could point to high potassium need prompt advice from NHS 111 or the GP the same day, and a possible serious allergic reaction is an emergency needing a 999 call. Yellow skin or eyes (jaundice) are listed in UK patient leaflets, which say spironolactone can impair liver function and that a doctor should be told straight away."
+     },
+     {
+      "heading": "Taking spironolactone with other medicines, food and salt substitutes",
+      "body": "The US prescribing information says that potassium supplements, potassium-containing salt substitutes, a potassium-rich diet, or medicines that can raise potassium, including ACE inhibitors, angiotensin II antagonists, NSAIDs, heparin and low molecular weight heparin, may lead to severe hyperkalaemia. The UK product summary lists use with eplerenone or other potassium-sparing diuretics as a contraindication. The same US label says NSAIDs may reduce the diuretic, natriuretic and antihypertensive effect of spironolactone. An NHS Specialist Pharmacy Service monitoring guide gives patient advice to avoid anti-inflammatory painkillers unless prescribed and to avoid potassium-containing salt substitutes. The NHS page says eating high-potassium foods such as bananas and avocados, or using salt substitutes such as Lo-Salt, can raise potassium levels further. The MHRA has published a Drug Safety Update on the risk of potentially fatal hyperkalaemia when spironolactone is used with renin-angiotensin system drugs in heart failure."
+     },
+     {
+      "heading": "Who needs extra care, and what monitoring is involved?",
+      "body": "The NHS says it may not suit people with severe kidney problems or a history of high blood potassium, and hospital leaflets also list Addison's disease. The NHS says spironolactone is not usually recommended in pregnancy, and a hospital leaflet advises against it in anyone pregnant or trying to conceive. The NHS says breastfeeding may be possible but should be checked with a doctor or healthcare professional first. One UK patient leaflet advises against use while breastfeeding, and the UK product summary says metabolites have been detected in breast milk, so advice can differ between sources. LactMed reports limited data indicating that spironolactone is poorly excreted into breast milk.\n\nThe NHS Specialist Pharmacy Service lists creatinine or eGFR, electrolytes and potassium as checks before treatment, with kidney function and electrolytes checked again after starting or changing treatment. In children, sodium and potassium levels in the blood are checked during treatment. The MHRA says high potassium is more likely when kidney function is impaired."
+     }
+    ],
+    "faqs": [
+     {
+      "q": "Why are blood tests needed with spironolactone?",
+      "a": "The NHS Specialist Pharmacy Service lists creatinine or eGFR, electrolytes and potassium as checks before treatment, with kidney function and electrolytes checked again after starting or changing treatment. The MHRA says high potassium is more likely when kidney function is impaired. Spironolactone can sometimes affect kidney function as well as raising potassium."
+     },
+     {
+      "q": "Do salt substitutes and potassium-rich foods matter?",
+      "a": "The NHS page says eating high-potassium foods such as bananas and avocados, or using salt substitutes such as Lo-Salt, can raise potassium levels further. An NHS Specialist Pharmacy Service monitoring guide gives patient advice to avoid anti-inflammatory painkillers unless prescribed and to avoid potassium-containing salt substitutes."
+     },
+     {
+      "q": "Can spironolactone be used in pregnancy or while breastfeeding?",
+      "a": "The NHS says spironolactone is not usually recommended in pregnancy, and a hospital leaflet advises against it in anyone pregnant or trying to conceive. The NHS says breastfeeding may be possible but should be checked with a doctor or healthcare professional first. One UK patient leaflet advises against use while breastfeeding, and the UK product summary says metabolites have been detected in breast milk, so advice can differ between sources."
+     },
+     {
+      "q": "Does spironolactone cause breast or period changes?",
+      "a": "The NHS also lists breast pain or breast enlargement, including in men, as a common side effect. The Aldactone patient leaflet lists menstrual problems in women as uncommon, and breast pain as common in men and uncommon in women. A Northern Care Alliance heart failure leaflet describes breast swelling or tenderness, especially in men, as a rare effect, so the stated frequency differs between sources."
+     },
+     {
+      "q": "Is spironolactone used for acne?",
+      "a": "The British Association of Dermatologists says spironolactone is used off licence for women with acne, which means it is not specifically indicated for that use in the UK prescribing licence, although it is still usually available on the NHS. A Gloucestershire hospital leaflet says it does not cure acne but can help manage and even clear it over time."
+     }
+    ],
+    "keyFacts": [
+     {
+      "label": "Also called",
+      "value": "Aldactone is a UK brand"
+     },
+     {
+      "label": "Type of medicine",
+      "value": "Diuretic that acts against aldosterone (a mineralocorticoid receptor antagonist) and spares potassium"
+     },
+     {
+      "label": "Main uses",
+      "value": "Fluid build-up linked to heart failure, cirrhosis or nephrotic syndrome, and heart failure"
+     },
+     {
+      "label": "Main checks",
+      "value": "Blood tests for potassium and kidney function"
+     },
+     {
+      "label": "Main cautions",
+      "value": "High potassium, kidney problems and pregnancy"
+     }
+    ]
+   }
+  },
+  "tirzepatide": {
+   "name": "Tirzepatide (Mounjaro)",
+   "summary": "Tirzepatide is a prescription medicine used to manage type 2 diabetes and to treat obesity. It activates two gut hormone receptors, GLP-1 and GIP. Feeling or being sick is among the common side effects, inflammation of the pancreas is a serious one, it may reduce how well the contraceptive pill works in people who are overweight, and the NHS says it is not used in pregnancy.",
+   "aliases": [
+    "Mounjaro"
+   ],
+   "category": "diabetes",
+   "class": "Dual GIP and GLP-1 receptor agonist",
+   "usedFor": [
+    "Managing type 2 diabetes in adults who meet NICE criteria, alongside diet and exercise",
+    "Treating overweight and obesity in adults, alongside a reduced-calorie diet and more physical activity as part of a weight management programme"
+   ],
+   "howItWorks": "Tirzepatide activates the receptors for two gut hormones, GLP-1 and GIP, so it is called a dual agonist. For weight loss, the NHS says it reduces appetite and helps people feel fuller for longer. For type 2 diabetes, it lowers blood sugar and helps the body make more insulin when needed.",
+   "anatomy": {
+    "organs": [
+     "pancreas",
+     "stomach"
+    ],
+    "systems": [
+     "endocrine",
+     "digestive"
+    ]
+   },
+   "sideEffects": {
+    "common": [
+     "The NHS lists feeling sick and being sick among the common side effects",
+     "Constipation, diarrhoea, stomach pain, tiredness, hair loss and redness at the injection site are also listed by the NHS"
+    ],
+    "serious": [
+     "Inflamed pancreas (acute pancreatitis), which can cause severe pain in the stomach or back that does not go away, is listed by the NHS",
+     "Gallstones or swelling of the gallbladder, which can cause severe tummy pain, are listed by the NHS",
+     "Low blood sugar, more likely with other diabetes medicines, can cause headaches, vision problems, feeling dizzy, weak or confused, a fast heartbeat or sweating",
+     "Serious allergic reaction (anaphylaxis): swollen throat or tongue, a raised itchy rash or difficulty breathing",
+     "Severe pain that does not go away needs urgent advice from NHS 111 or the GP; signs of a serious allergic reaction are an emergency that needs a 999 call"
+    ]
+   },
+   "cautions": [
+    "May not suit people who have had an allergic reaction to tirzepatide or a similar GLP-1 medicine, or who have had acute pancreatitis",
+    "The MHRA says GLP-1 medicines may reduce how well oral contraceptives work in people who are overweight or obese, and advises a non-oral method in addition to the pill for people who are overweight and taking Mounjaro",
+    "The NHS says it is not used in pregnancy because there is not enough information about its effects on a baby; the MHRA says GLP-1 medicines should not be taken during pregnancy, while trying to get pregnant or during breastfeeding",
+    "Low blood sugar is more likely with other diabetes medicines",
+    "The NHS says it is best to avoid alcohol, which can increase side effects such as feeling or being sick"
+   ],
+   "monitoring": "NICE says that if too little of the starting weight has been lost after six months at the highest tolerated dose, the prescriber decides whether to continue, weighing the benefits and risks for that person.",
+   "conditions": [
+    "type-2-diabetes"
+   ],
+   "symptoms": [
+    "nausea",
+    "vomiting",
+    "abdominal-pain",
+    "dizziness",
+    "fatigue"
+   ],
+   "tests": [
+    "blood-glucose",
+    "hba1c"
+   ],
+   "related": [
+    "semaglutide",
+    "metformin"
+   ],
+   "article": {
+    "sections": [
+     {
+      "heading": "What is tirzepatide used for?",
+      "body": "Tirzepatide is a prescription medicine used to manage type 2 diabetes and to treat obesity. In the UK it is sold under the brand name Mounjaro. It is an injection that people give themselves.\n\nNICE has recommended tirzepatide for some adults with type 2 diabetes who meet set criteria, alongside diet and exercise. NICE has also recommended it as an option for adults with overweight or obesity, alongside a reduced-calorie diet and more physical activity. NICE links this to a person's starting body mass index and to having at least one weight-related health condition. NICE applies a lower body mass index threshold for people from some ethnic backgrounds.\n\nFor weight management, the NHS says tirzepatide is only prescribed alongside programmes that support changes to diet and physical activity."
+     },
+     {
+      "heading": "How does tirzepatide work?",
+      "body": "Tirzepatide activates the receptors for two gut hormones, GLP-1 and GIP, so it is called a dual agonist. For weight loss, the NHS says it reduces appetite and helps people feel fuller for longer. For type 2 diabetes, it lowers blood sugar and helps the body make more insulin when needed. An NHS medicines optimisation newsletter adds that it increases insulin secretion, suppresses glucagon release and slows the emptying of the stomach.\n\nNICE says it can be used in primary care or in specialist weight management services. Access on the NHS in England is being phased in, so not everyone who fits the NICE recommendation can have it at once. NHS England's interim commissioning guidance sets out which groups are offered it first."
+     },
+     {
+      "heading": "What side effects can tirzepatide cause?",
+      "body": "The NHS lists feeling sick and being sick among the common side effects. It also lists constipation, diarrhoea, stomach pain, tiredness, hair loss and redness at the injection site. The NHS says most serious side effects are rare.\n\nThe NHS lists inflammation of the pancreas (acute pancreatitis), which can cause severe pain in the stomach or back that does not go away, as a serious side effect. The NHS also lists gallstones or swelling of the gallbladder, which can cause severe tummy pain. A serious allergic reaction (anaphylaxis) can cause a swollen throat or tongue, a raised itchy rash or difficulty breathing. Severe pain that does not go away needs urgent advice from NHS 111 or the GP, and signs of a serious allergic reaction are an emergency that needs a 999 call.\n\nThe NHS lists low blood sugar, which is more likely when tirzepatide is used with other diabetes medicines and can cause headaches, vision problems, feeling dizzy, weak or confused, a fast heartbeat or sweating. A South West London NHS information sheet for prescribers warns that sickness and diarrhoea can lead to dehydration, which could worsen kidney function."
+     },
+     {
+      "heading": "Tirzepatide with contraception, alcohol and other medicines",
+      "body": "The MHRA says GLP-1 medicines may reduce how well oral contraceptives work in people who are overweight or obese. For people who are overweight and taking Mounjaro, the MHRA advises using a non-oral method of contraception in addition to the pill. The MHRA lists the pill and non-oral methods such as the implant, coil or condoms as effective contraception.\n\nThe NHS says it is best to avoid alcohol, because alcohol can increase side effects such as feeling or being sick. Low blood sugar is more likely when tirzepatide is combined with other diabetes medicines."
+     },
+     {
+      "heading": "Who needs extra care with tirzepatide?",
+      "body": "The NHS says most adults can use tirzepatide. It may not suit people who have had an allergic reaction to tirzepatide or a similar GLP-1 medicine, or who have had acute pancreatitis.\n\nThe NHS says tirzepatide is not used in pregnancy because there is not enough information about its effects on a baby. The MHRA says GLP-1 medicines should not be taken during pregnancy, while trying to get pregnant or during breastfeeding, because of a lack of human data. The MHRA also advises that people who could become pregnant take steps to avoid pregnancy while using GLP-1 medicines. The NHS says it is not known whether tirzepatide passes into breast milk.\n\nNICE says that if too little of the starting weight has been lost after six months at the highest tolerated dose, the prescriber decides whether to continue, weighing the benefits and risks for that person."
+     }
+    ],
+    "faqs": [
+     {
+      "q": "Is tirzepatide the same as Mounjaro?",
+      "a": "In the UK it is sold under the brand name Mounjaro. Tirzepatide is a prescription medicine used to manage type 2 diabetes and to treat obesity. It is an injection that people give themselves. The NHS says it is available only with a prescription, either on the NHS or privately."
+     },
+     {
+      "q": "Can tirzepatide affect the contraceptive pill?",
+      "a": "The MHRA says GLP-1 medicines may reduce how well oral contraceptives work in people who are overweight or obese. For people who are overweight and taking Mounjaro, the MHRA advises using a non-oral method of contraception in addition to the pill."
+     },
+     {
+      "q": "Can tirzepatide be used in pregnancy or while breastfeeding?",
+      "a": "The NHS says tirzepatide is not used in pregnancy because there is not enough information about its effects on a baby. The MHRA says GLP-1 medicines should not be taken during pregnancy, while trying to get pregnant or during breastfeeding, because of a lack of human data. The NHS says it is not known whether tirzepatide passes into breast milk."
+     },
+     {
+      "q": "What are the common side effects of tirzepatide?",
+      "a": "The NHS lists feeling sick and being sick among the common side effects. It also lists constipation, diarrhoea, stomach pain, tiredness, hair loss and redness at the injection site. The NHS says most serious side effects are rare."
+     }
+    ],
+    "keyFacts": [
+     {
+      "label": "Brand name in the UK",
+      "value": "Mounjaro"
+     },
+     {
+      "label": "Type of medicine",
+      "value": "Dual GIP and GLP-1 receptor agonist"
+     },
+     {
+      "label": "How it is given",
+      "value": "Injection that people give themselves"
+     },
+     {
+      "label": "Availability",
+      "value": "Prescription only, on the NHS or privately"
+     },
+     {
+      "label": "Used for",
+      "value": "Type 2 diabetes and weight management"
+     },
+     {
+      "label": "NICE guidance",
+      "value": "Technology appraisals TA924 (type 2 diabetes) and TA1026 (overweight and obesity)"
+     },
+     {
+      "label": "Common side effects",
+      "value": "Feeling sick and being sick are among those the NHS lists"
+     }
+    ]
+   },
+   "references": [
+    {
+     "title": "NHS: Tirzepatide: a medicine to manage type 2 diabetes and treat obesity",
+     "url": "https://www.nhs.uk/medicines/tirzepatide/"
+    },
+    {
+     "title": "NICE: Tirzepatide for treating type 2 diabetes (TA924)",
+     "url": "https://www.nice.org.uk/guidance/ta924"
+    },
+    {
+     "title": "NICE: Tirzepatide for managing overweight and obesity (TA1026)",
+     "url": "https://www.nice.org.uk/guidance/ta1026"
+    },
+    {
+     "title": "GOV.UK (MHRA): GLP-1 medicines for weight loss and diabetes: what you need to know",
+     "url": "https://www.gov.uk/government/publications/glp-1-medicines-for-weight-loss-and-diabetes-what-you-need-to-know/glp-1-medicines-for-weight-loss-and-diabetes-what-you-need-to-know"
+    },
+    {
+     "title": "GOV.UK (MHRA): Women on skinny jabs must use effective contraception",
+     "url": "https://www.gov.uk/government/news/women-on-skinny-jabs-must-use-effective-contraception-mhra-urges-in-latest-guidance"
+    },
+    {
+     "title": "NHS England: Interim commissioning guidance for NICE TA1026 (tirzepatide)",
+     "url": "https://www.england.nhs.uk/long-read/interim-commissioning-guidance-nice-ta1026-tirzepatide/"
+    },
+    {
+     "title": "NHS Kent and Medway: Medicines optimisation newsletter, February 2024",
+     "url": "https://www.kentandmedwayformulary.nhs.uk/media/ih1fsqye/medicines-optimisation-newsletter-february-2024.pdf"
+    },
+    {
+     "title": "NHS South West London: Tirzepatide (Mounjaro) information sheet",
+     "url": "https://swlimo.southwestlondon.icb.nhs.uk/wp-content/uploads/Tirzepatide-information-sheet-v1.0.pdf"
+    }
+   ],
+   "urlAliases": [
+    "mounjaro"
+   ],
+   "drugClass": "glp-1-receptor-agonists",
+   "brands": {
+    "UK": [
+     "Mounjaro"
+    ]
+   },
+   "categories": [
+    "diabetes"
+   ],
+   "productType": "small-molecule",
+   "routeIds": [
+    "subcutaneous"
+   ],
+   "dosageFormIds": [
+    "pen-injector"
+   ],
+   "regulatory": [
+    {
+     "jurisdiction": "UK",
+     "status": "prescription",
+     "source": {
+      "title": "NHS: Tirzepatide",
+      "url": "https://www.nhs.uk/medicines/tirzepatide/",
+      "section": "About tirzepatide",
+      "jurisdiction": "UK",
+      "type": "regulatory"
+     }
     }
    ]
   }
