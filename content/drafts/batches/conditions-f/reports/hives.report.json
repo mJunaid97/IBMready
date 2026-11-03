@@ -1,0 +1,759 @@
+{
+ "id": "hives",
+ "searchesUsed": 13,
+ "counts": {
+  "supported": 61,
+  "textbook": 2,
+  "unsupported": 26,
+  "wrong": 4,
+  "unsafe": 0,
+  "unchecked": 0
+ },
+ "claims": [
+  {
+   "id": "c01",
+   "classification": "supported",
+   "evidence": "NHS: itchy raised rash anywhere on body; names urticaria/nettle rash appear in NHS titles",
+   "url": "https://www.nhs.uk/conditions/hives/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c02",
+   "classification": "supported",
+   "evidence": "NHS: usually triggered by food, pollen, insect bites, chemicals",
+   "url": "https://www.nhs.uk/conditions/hives/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c03",
+   "classification": "unsupported",
+   "evidence": "Shapes and sizes not in retrieved text; sting or burn and anywhere on body were",
+   "url": "https://www.nhs.uk/conditions/hives/",
+   "action": "edited",
+   "newSentence": "It can appear anywhere on the body, and it may itch, sting or burn."
+  },
+  {
+   "id": "c04",
+   "classification": "supported",
+   "evidence": "NHS angioedema: swelling below skin often comes with hives",
+   "url": "https://www.nhs.uk/conditions/angioedema/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c05",
+   "classification": "supported",
+   "evidence": "NHS: usually better in a few days; keeps returning is a reason to seek advice",
+   "url": "https://www.nhs.uk/conditions/hives/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c06",
+   "classification": "supported",
+   "evidence": "NHS trigger list",
+   "url": "https://www.nhs.uk/conditions/hives/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c07",
+   "classification": "unsupported",
+   "evidence": "Sweating not in retrieved NHS list (heat from exercise, emotional stress, spicy food; scratching or pressure from tight clothing were)",
+   "url": "https://www.nhs.uk/conditions/hives/",
+   "action": "edited",
+   "newSentence": "Other triggers can include infections, medicines, cold, heat, scratching and pressure from tight clothing"
+  },
+  {
+   "id": "c08",
+   "classification": "supported",
+   "evidence": "BAD: specific trigger often never identified",
+   "url": "https://www.bad.org.uk/pils/urticaria-and-angioedema",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c09",
+   "classification": "supported",
+   "evidence": "NHS trigger list includes foods, medicines, insect stings",
+   "url": "https://www.nhs.uk/conditions/hives/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c10",
+   "classification": "unsupported",
+   "evidence": "Shapes and sizes not retrieved",
+   "url": "https://www.nhs.uk/conditions/hives/",
+   "action": "edited",
+   "newSentence": "Itchy raised bumps or patches on the skin, which can appear anywhere on the body"
+  },
+  {
+   "id": "c11",
+   "classification": "supported",
+   "evidence": "BAD: angio-oedema usually affects eyelids, lips or mouth",
+   "url": "https://www.bad.org.uk/pils/urticaria-and-angioedema",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c12",
+   "classification": "supported",
+   "evidence": "NHS: call 999 if lips, mouth, throat or tongue suddenly swell",
+   "url": "https://www.nhs.uk/conditions/hives/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c13",
+   "classification": "unsupported",
+   "evidence": "NHS allergies page not retrieved; NHS anaphylaxis page lists lip/throat/tongue swelling and breathing trouble as 999 signs",
+   "url": "https://www.nhs.uk/conditions/anaphylaxis/",
+   "action": "edited",
+   "newSentence": "Difficulty breathing, which is among the emergency signs of a serious allergic reaction (anaphylaxis) that needs a 999 call"
+  },
+  {
+   "id": "c14",
+   "classification": "supported",
+   "evidence": "BAD/NHS Lanarkshire: chronic = six weeks or more",
+   "url": "https://www.bad.org.uk/pils/urticaria-and-angioedema",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c15",
+   "classification": "unsupported",
+   "evidence": "BAD wording on allergy tests not retrieved; Dorset pathway: diagnosis primarily clinical, do not routinely refer for allergy testing",
+   "url": "https://nhsdorset.nhs.uk/wp-content/uploads/2026/04/Primary-Care-Urticaria-Treatment-Pathway.pdf",
+   "action": "edited",
+   "newSentence": "Hives is usually recognised from the appearance of the rash and the history, and routine allergy testing is not usually needed."
+  },
+  {
+   "id": "c16",
+   "classification": "unsupported",
+   "evidence": "Full blood count specifically not confirmed; Allergy UK: tests generally aimed at ruling out other conditions",
+   "url": "https://www.allergyuk.org/wp-content/uploads/2024/07/HCP-CSU-eBook-2024.pdf",
+   "action": "edited",
+   "newSentence": "Some blood tests may be used, mainly to rule out other conditions."
+  },
+  {
+   "id": "c17",
+   "classification": "supported",
+   "evidence": "Allergy UK: confirmed via provocation test (ice cube test or TempTest)",
+   "url": "https://www.allergyuk.org/wp-content/uploads/2024/07/HCP-CSU-eBook-2024.pdf",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c18",
+   "classification": "supported",
+   "evidence": "NHS: treat at home; pharmacist can advise on antihistamines",
+   "url": "https://www.nhs.uk/conditions/hives/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c19",
+   "classification": "supported",
+   "evidence": "NHS: GP may prescribe menthol cream, antihistamines, steroid tablets; refer to dermatologist",
+   "url": "https://www.nhs.uk/conditions/hives/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c20",
+   "classification": "supported",
+   "evidence": "BAD aim to suppress symptoms until better; Allergy UK first step daily non-sedating antihistamine",
+   "url": "https://www.allergyuk.org/wp-content/uploads/2024/07/HCP-CSU-eBook-2024.pdf",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c21",
+   "classification": "supported",
+   "evidence": "BAD: omalizumab limited to severe CSU, specialist clinics",
+   "url": "https://www.bad.org.uk/pils/urticaria-and-angioedema",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c22",
+   "classification": "textbook",
+   "evidence": "Plain statement, no retrieved source",
+   "url": null,
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c23",
+   "classification": "supported",
+   "evidence": "BAD: aspirin, ibuprofen and codeine may aggravate urticaria, avoid unless essential",
+   "url": "https://www.bad.org.uk/pils/urticaria-and-angioedema",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c24",
+   "classification": "wrong",
+   "evidence": "NHS Hives page does not list \"faints or cannot be woken\"; it lists very fast/struggling breathing and sudden confusion or drowsiness",
+   "url": "https://www.nhs.uk/conditions/hives/",
+   "action": "edited",
+   "newSentence": "Call 999 if the lips, mouth, throat or tongue suddenly swell, if breathing is very fast or difficult, or if there is sudden confusion or drowsiness."
+  },
+  {
+   "id": "c25",
+   "classification": "unsupported",
+   "evidence": "\"Same day\" not in retrieved text; NHS says contact a GP or NHS 111 for these",
+   "url": "https://www.nhs.uk/conditions/hives/",
+   "action": "edited",
+   "newSentence": "A GP or NHS 111 is the route if the rash has not improved after 2 days, is spreading or keeps returning, or if there is a high temperature and the person feels unwell."
+  },
+  {
+   "id": "c26",
+   "classification": "supported",
+   "evidence": "NHS: GP may prescribe/refer if rash does not clear; Healthier Together: contact GP if beyond six weeks",
+   "url": "https://www.nhs.uk/conditions/hives/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c27",
+   "classification": "supported",
+   "evidence": "NHS summary",
+   "url": "https://www.nhs.uk/conditions/hives/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c28",
+   "classification": "unsupported",
+   "evidence": "Shapes and sizes not retrieved",
+   "url": "https://www.nhs.uk/conditions/hives/",
+   "action": "edited",
+   "newSentence": "The rash can show up anywhere on the body."
+  },
+  {
+   "id": "c29",
+   "classification": "supported",
+   "evidence": "NHS: may sting or burn",
+   "url": "https://www.nhs.uk/conditions/hives/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c30",
+   "classification": "supported",
+   "evidence": "BAD/NHS angioedema: swelling below the skin",
+   "url": "https://www.bad.org.uk/pils/urticaria-and-angioedema",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c31",
+   "classification": "wrong",
+   "evidence": "BAD (retrieved): angio-oedema typically painful rather than itchy; \"often\" overstated",
+   "url": "https://www.bad.org.uk/pils/urticaria-and-angioedema",
+   "action": "edited",
+   "newSentence": "the BAD says it is typically painful rather than itchy (in sentence with lips, eyelids or mouth)"
+  },
+  {
+   "id": "c32",
+   "classification": "supported",
+   "evidence": "BAD older leaflet: vast majority of urticaria not hereditary",
+   "url": "https://www.bad.org.uk/pils/urticaria-and-angioedema",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c33",
+   "classification": "supported",
+   "evidence": "BAD: hereditary angioedema can run in families; NHS: separate, cannot be cured",
+   "url": "https://www.bad.org.uk/pils/urticaria-and-angioedema",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c34",
+   "classification": "supported",
+   "evidence": "NHS",
+   "url": "https://www.nhs.uk/conditions/hives/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c35",
+   "classification": "unsupported",
+   "evidence": "Sweating not in NHS list; latex and emotional stress/spicy food are",
+   "url": "https://www.nhs.uk/conditions/hives/",
+   "action": "edited",
+   "newSentence": "The NHS lists many possible triggers, including certain foods, contact with plants, animals, chemicals or latex, cold, and heat from exercise, emotional stress or spicy food."
+  },
+  {
+   "id": "c36",
+   "classification": "unsupported",
+   "evidence": "Tight clothing is \"pressure from tight or itchy clothing\"",
+   "url": "https://www.nhs.uk/conditions/hives/",
+   "action": "edited",
+   "newSentence": "Medicines, insect stings and infections can also set it off, as can scratching or pressure from tight clothing."
+  },
+  {
+   "id": "c37",
+   "classification": "unsupported",
+   "evidence": "Allergy UK/CKS list of allergic causes not retrieved; BAD says allergy not usually the mechanism and trigger often never identified",
+   "url": "https://www.bad.org.uk/pils/urticaria-and-angioedema",
+   "action": "edited",
+   "newSentence": "The BAD says the skin's mast cells release histamine, and a specific trigger is often never identified. It also says allergy is not usually the underlying mechanism, and Allergy UK says chronic spontaneous urticaria is not caused by allergy."
+  },
+  {
+   "id": "c38",
+   "classification": "supported",
+   "evidence": "BAD",
+   "url": "https://www.bad.org.uk/pils/urticaria-and-angioedema",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c39",
+   "classification": "unsupported",
+   "evidence": "NHS allergies page not retrieved saying hives are a sign of allergy",
+   "url": null,
+   "action": "removed",
+   "newSentence": null
+  },
+  {
+   "id": "c40",
+   "classification": "unsupported",
+   "evidence": "BAD inducible list (cold, heat, friction) not retrieved; a review defines spontaneous vs inducible",
+   "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11629492/",
+   "action": "edited",
+   "newSentence": "Chronic urticaria can be spontaneous, without a specific trigger, or inducible, in reaction to an identifiable trigger."
+  },
+  {
+   "id": "c41",
+   "classification": "unsupported",
+   "evidence": "Cholinergic urticaria in the BAD leaflet not retrieved",
+   "url": null,
+   "action": "removed",
+   "newSentence": null
+  },
+  {
+   "id": "c42",
+   "classification": "supported",
+   "evidence": "Leeds page lists heat, cold, pressure and emotion as chronic urticaria triggers",
+   "url": "https://www.leedsth.nhs.uk/patients/resources/chronic-urticaria/",
+   "action": "edited",
+   "newSentence": "A Leeds Teaching Hospitals leaflet lists heat, cold, pressure and emotion as possible triggers of chronic urticaria."
+  },
+  {
+   "id": "c43",
+   "classification": "supported",
+   "evidence": "BAD: acute up to six weeks",
+   "url": "https://www.bad.org.uk/pils/urticaria-and-angioedema",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c44",
+   "classification": "supported",
+   "evidence": "BAD: chronic six weeks or longer",
+   "url": "https://www.bad.org.uk/pils/urticaria-and-angioedema",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c45",
+   "classification": "supported",
+   "evidence": "NHS",
+   "url": "https://www.nhs.uk/conditions/hives/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c46",
+   "classification": "unsupported",
+   "evidence": "\"Often\" not retrieved; BAD/review: spontaneous means no eliciting trigger",
+   "url": "https://www.bad.org.uk/pils/urticaria-and-angioedema",
+   "action": "edited",
+   "newSentence": "Chronic spontaneous urticaria means that no specific trigger is found."
+  },
+  {
+   "id": "c47",
+   "classification": "supported",
+   "evidence": "BAD: about half of people with CSU, rash lasts 6-12 months then gradually disappears",
+   "url": "https://www.bad.org.uk/pils/urticaria-and-angioedema",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c48",
+   "classification": "unsupported",
+   "evidence": "\"Considerably longer\" not retrieved; unpredictable course is in BAD",
+   "url": "https://www.bad.org.uk/pils/urticaria-and-angioedema",
+   "action": "edited",
+   "newSentence": "The course in any one person is unpredictable."
+  },
+  {
+   "id": "c49",
+   "classification": "supported",
+   "evidence": "BAD: very small percentage of people with urticarial rash develop weals lasting over 24 hours (urticarial vasculitis); \"rare cause\" reworded",
+   "url": "https://www.bad.org.uk/pils/urticaria-and-angioedema",
+   "action": "edited",
+   "newSentence": "A very small percentage of people with an urticarial rash have urticarial vasculitis, in which the weals last longer than 24 hours."
+  },
+  {
+   "id": "c50",
+   "classification": "unsupported",
+   "evidence": "BAD wording not retrieved; Allergy UK: detailed history; Dorset: primarily clinical",
+   "url": "https://www.allergyuk.org/wp-content/uploads/2024/07/HCP-CSU-eBook-2024.pdf",
+   "action": "edited",
+   "newSentence": "Diagnosis is mainly clinical, based on a detailed history and the look of the rash, according to Allergy UK and a UK primary care pathway."
+  },
+  {
+   "id": "c51",
+   "classification": "unsupported",
+   "evidence": "BAD wording not retrieved; Dorset: do not routinely refer for allergy testing",
+   "url": "https://nhsdorset.nhs.uk/wp-content/uploads/2026/04/Primary-Care-Urticaria-Treatment-Pathway.pdf",
+   "action": "edited",
+   "newSentence": "A UK primary care pathway advises against routinely referring for allergy testing, because the diagnosis is primarily clinical."
+  },
+  {
+   "id": "c52",
+   "classification": "unsupported",
+   "evidence": "FBC as differential not confirmed; Allergy UK: testing aimed at ruling out other conditions (skin, blood, urine)",
+   "url": "https://www.allergyuk.org/wp-content/uploads/2024/07/HCP-CSU-eBook-2024.pdf",
+   "action": "edited",
+   "newSentence": "Further tests may include evaluations of the skin, blood and urine, and testing is generally aimed at ruling out other medical conditions."
+  },
+  {
+   "id": "c53",
+   "classification": "supported",
+   "evidence": "Allergy UK: provocation test ice cube test; BSACI describes the test",
+   "url": "https://www.allergyuk.org/wp-content/uploads/2024/07/HCP-CSU-eBook-2024.pdf",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c54",
+   "classification": "unsupported",
+   "evidence": "UV light testing referral not retrieved",
+   "url": null,
+   "action": "removed",
+   "newSentence": null
+  },
+  {
+   "id": "c55",
+   "classification": "unsupported",
+   "evidence": "Underlying cause managed not retrieved",
+   "url": null,
+   "action": "removed",
+   "newSentence": null
+  },
+  {
+   "id": "c56",
+   "classification": "supported",
+   "evidence": "NHS",
+   "url": "https://www.nhs.uk/conditions/hives/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c57",
+   "classification": "supported",
+   "evidence": "NHS",
+   "url": "https://www.nhs.uk/conditions/hives/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c58",
+   "classification": "supported",
+   "evidence": "BAD: aim to suppress symptoms until it gets better",
+   "url": "https://www.bad.org.uk/pils/urticaria-and-angioedema",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c59",
+   "classification": "supported",
+   "evidence": "Allergy UK: first step daily nonsedating antihistamine",
+   "url": "https://www.allergyuk.org/wp-content/uploads/2024/07/HCP-CSU-eBook-2024.pdf",
+   "action": "edited",
+   "newSentence": "Allergy UK says the first step is a daily non-sedating antihistamine."
+  },
+  {
+   "id": "c60",
+   "classification": "unsupported",
+   "evidence": "Trying different antihistamines not retrieved",
+   "url": null,
+   "action": "removed",
+   "newSentence": null
+  },
+  {
+   "id": "c61",
+   "classification": "supported",
+   "evidence": "Allergy UK: one-off short course of corticosteroid tablets for severe flare-ups",
+   "url": "https://www.allergyuk.org/wp-content/uploads/2024/07/HCP-CSU-eBook-2024.pdf",
+   "action": "edited",
+   "newSentence": "If that is not enough, it says a leukotriene receptor antagonist can be tried, and a one-off short course of steroid tablets may be offered for severe flare-ups."
+  },
+  {
+   "id": "c62",
+   "classification": "supported",
+   "evidence": "BAD: omalizumab limited to severe CSU, specialist clinics",
+   "url": "https://www.bad.org.uk/pils/urticaria-and-angioedema",
+   "action": "edited",
+   "newSentence": "The BAD says omalizumab is limited to severe chronic spontaneous urticaria and is available only in specialist clinics."
+  },
+  {
+   "id": "c63",
+   "classification": "unsupported",
+   "evidence": "\"At risk of severe reactions\" not retrieved; Allergy UK: GPs refer if initial treatment ineffective",
+   "url": "https://www.allergyuk.org/wp-content/uploads/2024/07/HCP-CSU-eBook-2024.pdf",
+   "action": "edited",
+   "newSentence": "Allergy UK says that if initial treatment is ineffective, GPs should refer people to a specialist dermatologist or immunologist."
+  },
+  {
+   "id": "c64",
+   "classification": "supported",
+   "evidence": "BAD: aspirin, ibuprofen, codeine may aggravate urticaria",
+   "url": "https://www.bad.org.uk/pils/urticaria-and-angioedema",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c65",
+   "classification": "textbook",
+   "evidence": "Duplicate of prevention line; no retrieved source",
+   "url": null,
+   "action": "removed",
+   "newSentence": null
+  },
+  {
+   "id": "c66",
+   "classification": "wrong",
+   "evidence": "See claim 23: \"faints or cannot be woken\" is not on the NHS Hives page",
+   "url": "https://www.nhs.uk/conditions/hives/",
+   "action": "edited",
+   "newSentence": "The NHS says to call 999 if the lips, mouth, throat or tongue suddenly swell, if breathing is very fast or difficult, or if there is sudden confusion or drowsiness."
+  },
+  {
+   "id": "c67",
+   "classification": "supported",
+   "evidence": "NHS: contact GP or NHS 111 for these; wording \"urgent advice\" softened",
+   "url": "https://www.nhs.uk/conditions/hives/",
+   "action": "edited",
+   "newSentence": "It advises contacting a GP or NHS 111 if the rash has not improved after 2 days, ..."
+  },
+  {
+   "id": "c68",
+   "classification": "supported",
+   "evidence": "Healthier Together: contact GP if hard to control with regular antihistamines or beyond six weeks; also swelling without hives",
+   "url": "https://www.healthiertogether.nhs.uk/child-under-5-years/hives-urticaria",
+   "action": "edited",
+   "newSentence": "For children, NHS Healthier Together advises contacting a GP if symptoms last longer than six weeks, are hard to control even with regular antihistamines, or if there is swelling without hives."
+  },
+  {
+   "id": "c69",
+   "classification": "supported",
+   "evidence": "BAD: breathing problems need urgent help; route named",
+   "url": "https://www.bad.org.uk/pils/urticaria-and-angioedema",
+   "action": "edited",
+   "newSentence": "Breathing problems with hives need urgent medical help, and the route is a 999 call."
+  },
+  {
+   "id": "c70",
+   "classification": "supported",
+   "evidence": "Question",
+   "url": "https://www.nhs.uk/conditions/hives/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c71",
+   "classification": "supported",
+   "evidence": "NHS",
+   "url": "https://www.nhs.uk/conditions/hives/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c72",
+   "classification": "unsupported",
+   "evidence": "Sweating not in NHS list",
+   "url": "https://www.nhs.uk/conditions/hives/",
+   "action": "edited",
+   "newSentence": "Other triggers include infections, medicines, cold, heat, scratching and pressure from tight clothing."
+  },
+  {
+   "id": "c73",
+   "classification": "supported",
+   "evidence": "BAD: trigger often never identified",
+   "url": "https://www.bad.org.uk/pils/urticaria-and-angioedema",
+   "action": "edited",
+   "newSentence": "Some cases have no identifiable cause, according to the BAD, which says a specific trigger is often never identified."
+  },
+  {
+   "id": "c74",
+   "classification": "supported",
+   "evidence": "Question",
+   "url": "https://www.nhs.uk/conditions/hives/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c75",
+   "classification": "supported",
+   "evidence": "NHS",
+   "url": "https://www.nhs.uk/conditions/hives/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c76",
+   "classification": "supported",
+   "evidence": "BAD",
+   "url": "https://www.bad.org.uk/pils/urticaria-and-angioedema",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c77",
+   "classification": "supported",
+   "evidence": "BAD half 6-12 months and unpredictable course; \"can last longer\" cut",
+   "url": "https://www.bad.org.uk/pils/urticaria-and-angioedema",
+   "action": "edited",
+   "newSentence": "In about half of people with chronic spontaneous urticaria the rash clears within 6 to 12 months, but the course in any one person is unpredictable."
+  },
+  {
+   "id": "c78",
+   "classification": "supported",
+   "evidence": "Question",
+   "url": "https://www.nhs.uk/conditions/hives/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c79",
+   "classification": "wrong",
+   "evidence": "See claim 23",
+   "url": "https://www.nhs.uk/conditions/hives/",
+   "action": "edited",
+   "newSentence": "The NHS says to call 999 if the lips, mouth, throat or tongue suddenly swell, if breathing is very fast or difficult, or if there is sudden confusion or drowsiness."
+  },
+  {
+   "id": "c80",
+   "classification": "supported",
+   "evidence": "BAD: breathing problems need urgent help",
+   "url": "https://www.bad.org.uk/pils/urticaria-and-angioedema",
+   "action": "edited",
+   "newSentence": "The BAD also says breathing problems need urgent medical help, so the route is a 999 call."
+  },
+  {
+   "id": "c81",
+   "classification": "supported",
+   "evidence": "Question",
+   "url": "https://www.nhs.uk/conditions/hives/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c82",
+   "classification": "unsupported",
+   "evidence": "\"They can be, but not always\" not stated; BAD says allergy not usually the mechanism",
+   "url": "https://www.bad.org.uk/pils/urticaria-and-angioedema",
+   "action": "edited",
+   "newSentence": "Allergy is not usually the underlying mechanism, according to the BAD, ..."
+  },
+  {
+   "id": "c83",
+   "classification": "supported",
+   "evidence": "NHS: reaction to food, pollen, insect bites",
+   "url": "https://www.nhs.uk/conditions/hives/",
+   "action": "edited",
+   "newSentence": "... although hives can follow a reaction to things such as food, pollen or insect bites, as the NHS describes."
+  },
+  {
+   "id": "c84",
+   "classification": "unsupported",
+   "evidence": "BAD allergy-test wording not retrieved; Allergy UK says CSU not caused by allergy, so elimination diets not standard",
+   "url": "https://www.allergyuk.org/wp-content/uploads/2024/07/HCP-CSU-eBook-2024.pdf",
+   "action": "edited",
+   "newSentence": "Allergy UK says chronic spontaneous urticaria is not caused by allergy, so elimination diets are not a standard approach."
+  },
+  {
+   "id": "c85",
+   "classification": "supported",
+   "evidence": "Question",
+   "url": "https://www.nhs.uk/conditions/hives/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c86",
+   "classification": "supported",
+   "evidence": "NHS/BAD: angioedema is swelling below the skin surface",
+   "url": "https://www.bad.org.uk/pils/urticaria-and-angioedema",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c87",
+   "classification": "supported",
+   "evidence": "NHS angioedema: often comes with hives; BAD: lips, eyelids, mouth",
+   "url": "https://www.nhs.uk/conditions/angioedema/",
+   "action": "edited",
+   "newSentence": "The NHS says angioedema often comes with hives, and the BAD says angio-oedema typically affects the eyelids, lips or mouth."
+  },
+  {
+   "id": "c88",
+   "classification": "supported",
+   "evidence": "Names in NHS/BAD titles",
+   "url": "https://www.nhs.uk/conditions/hives/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c89",
+   "classification": "supported",
+   "evidence": "NHS",
+   "url": "https://www.nhs.uk/conditions/hives/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c90",
+   "classification": "supported",
+   "evidence": "NHS",
+   "url": "https://www.nhs.uk/conditions/hives/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c91",
+   "classification": "supported",
+   "evidence": "BAD",
+   "url": "https://www.bad.org.uk/pils/urticaria-and-angioedema",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c92",
+   "classification": "supported",
+   "evidence": "Allergy UK/BAD",
+   "url": "https://www.allergyuk.org/wp-content/uploads/2024/07/HCP-CSU-eBook-2024.pdf",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c93",
+   "classification": "supported",
+   "evidence": "NHS hives page 999 list",
+   "url": "https://www.nhs.uk/conditions/hives/",
+   "action": "edited",
+   "newSentence": "Call 999 for sudden swelling of the lips, mouth, throat or tongue, or difficulty breathing"
+  }
+ ],
+ "notes": "Cut: hives-as-sign-of-allergy (NHS allergies page not retrieved), cholinergic urticaria, UV testing, 'underlying cause managed', 'try different antihistamines', 'faints or cannot be woken' (NHS lists very fast/difficult breathing and sudden confusion or drowsiness), 'sweating' trigger, 'same day' GP wording, CKS-based allergic-cause list and 'full blood count' (not confirmed). BAD angio-oedema 'typically painful rather than itchy' was returned by the BAD search summary (kept, reworded from 'often'); NHS angioedema page says swelling often accompanies itchy hives, so a reviewer may wish to confirm on the leaflet. Allergy UK PDF text for ice cube test/steroid course came via search summaries. NICE CKS pages were never returned. Medication links cetirizine and chlorphenamine added because Healthier Together lists them; aspirin/ibuprofen links removed; complete-blood-count link removed; alias 'weals' dropped; NICE esuom31 reference dropped (not cited); references added: NHS anaphylaxis, Leeds, Healthier Together, NHS Dorset pathway, BSACI, NICE TA339.  the Dorset PDF URL is given without its tracking suffix."
+}

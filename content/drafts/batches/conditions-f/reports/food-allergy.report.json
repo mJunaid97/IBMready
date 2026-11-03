@@ -1,0 +1,780 @@
+{
+ "id": "food-allergy",
+ "searchesUsed": 11,
+ "counts": {
+  "supported": 65,
+  "textbook": 0,
+  "unsupported": 32,
+  "wrong": 2,
+  "unsafe": 0,
+  "unchecked": 0
+ },
+ "claims": [
+  {
+   "id": "c01",
+   "classification": "supported",
+   "evidence": "NHS 111 Wales: immune system overreacts to certain foods; NHS: anaphylaxis life-threatening. 'Reacts unusually' wording not retrieved [first pass: A food allergy is when the immune system reacts unusually to specific ]",
+   "url": "https://111.wales.nhs.uk/FoodAllergy/",
+   "action": "edited",
+   "newSentence": "A food allergy is when the immune system overreacts to certain foods, with reactions that range from mild to life-threatening anaphylaxis."
+  },
+  {
+   "id": "c02",
+   "classification": "unsupported",
+   "evidence": "'Food protein' not in any retrieved text [first pass: Food allergy is an immune reaction to a food protein.]",
+   "url": "https://111.wales.nhs.uk/FoodAllergy/",
+   "action": "edited",
+   "newSentence": "A food allergy happens when the immune system overreacts to certain foods."
+  },
+  {
+   "id": "c03",
+   "classification": "supported",
+   "evidence": "NHS lists itchy skin/hives, lip/face/eye swelling, breathing trouble, feeling sick, tummy pain, diarrhoea [first pass: Symptoms include hives, swelling of the lips, face and eyes, breathing]",
+   "url": "https://www.nhs.uk/conditions/food-allergy/",
+   "action": "edited",
+   "newSentence": "The NHS lists itchy skin or hives, swelling of the lips, face and eyes, breathing difficulties, feeling sick and tummy pain among the symptoms."
+  },
+  {
+   "id": "c04",
+   "classification": "supported",
+   "evidence": "NHS: intolerance does not involve immune system [first pass: A food allergy is different from a food intolerance.]",
+   "url": "https://www.nhs.uk/conditions/food-intolerance/",
+   "action": "edited",
+   "newSentence": "A food allergy is different from a food intolerance, which does not involve the immune system."
+  },
+  {
+   "id": "c05",
+   "classification": "unsupported",
+   "evidence": "Milk, eggs, peanuts, tree nuts supported (Anaphylaxis UK); 'hazelnut and cashew' not retrieved [first pass: The foods children are most often allergic to are cows' milk, hens' eg]",
+   "url": "https://www.anaphylaxis.org.uk/wp-content/uploads/2025/10/Outgrowing-Allergy-Factsheet-V5-Final-2025.pdf",
+   "action": "edited",
+   "newSentence": "Children are most often allergic to milk, eggs, peanuts and tree nuts."
+  },
+  {
+   "id": "c06",
+   "classification": "supported",
+   "evidence": "NHS: life-threatening, very quickly, treated in hospital immediately [first pass: Anaphylaxis is a life-threatening allergic reaction that happens very ]",
+   "url": "https://www.nhs.uk/conditions/anaphylaxis/",
+   "action": "kept"
+  },
+  {
+   "id": "c07",
+   "classification": "unsupported",
+   "evidence": "Duplicate of unsupported 'food protein' claim [first pass: Food allergy is an immune reaction to a food protein.]",
+   "url": "https://111.wales.nhs.uk/FoodAllergy/",
+   "action": "edited",
+   "newSentence": "The immune system overreacts to certain foods."
+  },
+  {
+   "id": "c08",
+   "classification": "supported",
+   "evidence": "Allergy UK leaflet: the immune system's reason for reacting to a food is not fully understood [first pass: The exact reasons people develop a food allergy are still unclear.]",
+   "url": "https://www.allergyuk.org/types-of-allergies/food-allergy/",
+   "action": "edited",
+   "newSentence": "Why the immune system reacts to a food is not fully understood."
+  },
+  {
+   "id": "c09",
+   "classification": "supported",
+   "evidence": "NHS anaphylaxis causes: nuts, milk, eggs, shellfish, fish, sesame seeds, kiwi; first-pass list (peanuts/tree nuts, cow's milk) loosely matched [first pass: Common triggers include cow's milk, eggs, peanuts, tree nuts, fish and]",
+   "url": "https://www.nhs.uk/conditions/anaphylaxis/",
+   "action": "edited",
+   "newSentence": "The NHS lists nuts, milk, eggs, shellfish, fish, sesame seeds and kiwi fruit among common food triggers of anaphylaxis."
+  },
+  {
+   "id": "c10",
+   "classification": "unsupported",
+   "evidence": "NHS 111 Wales: family history of allergies, asthma or eczema raises risk slightly; 'people with food allergy often have asthma, hay fever' not stated [first pass: People with a food allergy often have other allergic conditions, such ]",
+   "url": "https://111.wales.nhs.uk/FoodAllergy/",
+   "action": "edited",
+   "newSentence": "A family history of allergies, asthma or eczema raises the risk slightly."
+  },
+  {
+   "id": "c11",
+   "classification": "wrong",
+   "evidence": "No retrieved source says most children with food allergy had infant eczema; sources say eczema is a risk factor [first pass: Most children who have a food allergy have had eczema in infancy.]",
+   "url": "https://www.allergyuk.org/types-of-allergies/food-allergy/",
+   "action": "removed"
+  },
+  {
+   "id": "c12",
+   "classification": "supported",
+   "evidence": "NHS: itchy skin or hives, lip/face/eye swelling; 'nettle rash' not retrieved [first pass: Hives (nettle rash), itching and swelling of the lips, face and eyes.]",
+   "url": "https://www.nhs.uk/conditions/food-allergy/",
+   "action": "edited",
+   "newSentence": "Itchy skin or hives, and swelling of the lips, face and eyes."
+  },
+  {
+   "id": "c13",
+   "classification": "unsupported",
+   "evidence": "NHS lists feeling sick, tummy pain, diarrhoea; vomiting not stated in retrieved text [first pass: Vomiting and abdominal pain.]",
+   "url": "https://www.nhs.uk/conditions/food-allergy/",
+   "action": "edited",
+   "newSentence": "Feeling sick, tummy pain and diarrhoea."
+  },
+  {
+   "id": "c14",
+   "classification": "supported",
+   "evidence": "NHS anaphylaxis: throat/tongue swelling, wheezing, breathing trouble [first pass: Breathing difficulties, and in a severe reaction wheezing and swelling]",
+   "url": "https://www.nhs.uk/conditions/anaphylaxis/",
+   "action": "kept"
+  },
+  {
+   "id": "c15",
+   "classification": "supported",
+   "evidence": "NHS: anaphylaxis life-threatening [first pass: Anaphylaxis, a life-threatening allergic reaction.]",
+   "url": "https://www.nhs.uk/conditions/anaphylaxis/",
+   "action": "kept"
+  },
+  {
+   "id": "c16",
+   "classification": "unsupported",
+   "evidence": "Worcestershire leaflet not in references; 'without contact with trigger' detail unsupported. NHS Scotland Right Decisions: symptoms can return hours after the initial reaction, known as biphasic reaction [first pass: Symptoms that return without contact with the trigger again, known as ]",
+   "url": "https://www.rightdecisions.scot.nhs.uk/school-allergy-care/all-about-allergies/understanding-allergy/severe-allergic-reactions/",
+   "action": "edited",
+   "newSentence": "Symptoms of anaphylaxis can return hours after the first reaction, known as a biphasic reaction."
+  },
+  {
+   "id": "c17",
+   "classification": "unsupported",
+   "evidence": "'Allergy-focused clinical history and examination' not in retrieved NICE text [first pass: The NICE guideline says diagnosis starts with an allergy-focused clini]",
+   "url": "https://www.nice.org.uk/guidance/cg116",
+   "action": "removed"
+  },
+  {
+   "id": "c18",
+   "classification": "supported",
+   "evidence": "NICE CG116: offer skin prick test and/or blood tests for specific IgE when IgE-mediated allergy suspected [first pass: Where the history suggests an IgE-mediated food allergy, skin prick te]",
+   "url": "https://www.nice.org.uk/guidance/cg116",
+   "action": "edited",
+   "newSentence": "NICE guidance for under 19s says to offer a skin prick test or blood tests for specific IgE antibodies when IgE-mediated allergy is suspected."
+  },
+  {
+   "id": "c19",
+   "classification": "supported",
+   "evidence": "NICE CG116: trial elimination for suspected non-IgE-mediated allergy [first pass: For suspected non-IgE-mediated allergy, a trial elimination of the sus]",
+   "url": "https://www.nice.org.uk/guidance/cg116",
+   "action": "edited",
+   "newSentence": "For suspected non-IgE-mediated allergy it recommends a trial elimination of the suspected food."
+  },
+  {
+   "id": "c20",
+   "classification": "supported",
+   "evidence": "NHS: skin-prick tests, blood tests, elimination diet [first pass: The NHS lists skin-prick tests, blood tests and sometimes an eliminati]",
+   "url": "https://www.nhs.uk/conditions/food-allergy/",
+   "action": "kept"
+  },
+  {
+   "id": "c21",
+   "classification": "unsupported",
+   "evidence": "Antihistamines for mild and adrenaline auto-injectors for severe supported; 'nasal spray' not found in retrieved text [first pass: The NHS says antihistamines are used for mild reactions, while adrenal]",
+   "url": "https://www.nhs.uk/conditions/food-allergy/",
+   "action": "edited",
+   "newSentence": "Antihistamines are used for mild reactions, while adrenaline auto-injectors are for severe ones, and antihistamines do not replace adrenaline in anaphylaxis."
+  },
+  {
+   "id": "c22",
+   "classification": "supported",
+   "evidence": "NHS summary: specialist gives an allergy action plan; written plan corroborated by trust leaflets; single-publisher support [first pass: A specialist provides an allergy action plan.]",
+   "url": "https://www.nhs.uk/conditions/food-allergy/",
+   "action": "edited",
+   "newSentence": "A specialist gives an allergy action plan, a written set of instructions for managing a reaction."
+  },
+  {
+   "id": "c23",
+   "classification": "supported",
+   "evidence": "NHS anaphylaxis: adrenaline, oxygen, fluids by drip in the vein [first pass: Anaphylaxis is treated in hospital straight away, with adrenaline, oxy]",
+   "url": "https://www.nhs.uk/conditions/anaphylaxis/",
+   "action": "kept"
+  },
+  {
+   "id": "c24",
+   "classification": "supported",
+   "evidence": "NHS: check food labels, tell restaurant and cafe staff; 'avoid the food' is covered in the treatment text [first pass: The NHS advises avoiding the food that causes the allergy, checking fo]",
+   "url": "https://www.nhs.uk/conditions/food-allergy/",
+   "action": "edited",
+   "newSentence": "The NHS advises checking food labels carefully and telling staff at restaurants and cafes about the allergy."
+  },
+  {
+   "id": "c25",
+   "classification": "unsupported",
+   "evidence": "Old URL not returned; NHS baby page: waiting past 6 to 12 months may raise risk of peanut and egg allergy. 'promote rather than prevent' not stated [first pass: NHS guidance for babies says avoiding peanuts and other foods in early]",
+   "url": "https://www.nhs.uk/best-start-in-life/baby/weaning/safe-weaning/food-allergies/",
+   "action": "edited",
+   "newSentence": "NHS guidance for babies says waiting beyond 6 to 12 months to introduce peanut and egg may raise the risk of allergy."
+  },
+  {
+   "id": "c26",
+   "classification": "supported",
+   "evidence": "NHS anaphylaxis: call 999, say anaphylaxis; throat/tongue swelling, breathing trouble, faint, confused. 'Fast' breathing not retrieved, reworded [first pass: Call 999 for suspected anaphylaxis, such as swelling of the throat or ]",
+   "url": "https://www.nhs.uk/conditions/anaphylaxis/",
+   "action": "edited",
+   "newSentence": "Call 999 for suspected anaphylaxis, such as swelling of the throat or tongue, difficulty breathing, or feeling faint or confused, and say it is anaphylaxis."
+  },
+  {
+   "id": "c27",
+   "classification": "supported",
+   "evidence": "NHS: use adrenaline auto-injector if you have one, then call 999; no second-dose or timing content included [first pass: The NHS says to use an adrenaline auto-injector straight away if one i]",
+   "url": "https://www.nhs.uk/conditions/anaphylaxis/",
+   "action": "edited",
+   "newSentence": "The NHS says to use an adrenaline auto-injector if one is available."
+  },
+  {
+   "id": "c28",
+   "classification": "unsupported",
+   "evidence": "'Speak to a GP before cutting foods out' not found in retrieved text; NHS intolerance page: see GP if symptoms keep coming back [first pass: For other symptoms after eating, the NHS advises speaking to a GP befo]",
+   "url": "https://www.nhs.uk/conditions/food-intolerance/",
+   "action": "edited",
+   "newSentence": "For symptoms that keep coming back after eating a food, the NHS advises seeing a GP."
+  },
+  {
+   "id": "c29",
+   "classification": "supported",
+   "evidence": "NHS 111 Wales wording used; 'Allergy UK describes' attribution not retrieved [first pass: Allergy UK describes food allergy as the immune system reacting unusua]",
+   "url": "https://111.wales.nhs.uk/FoodAllergy/",
+   "action": "edited",
+   "newSentence": "A food allergy happens when the immune system overreacts to certain foods."
+  },
+  {
+   "id": "c30",
+   "classification": "supported",
+   "evidence": "NHS: anaphylaxis life-threatening [first pass: Reactions range from mild to life-threatening anaphylaxis.]",
+   "url": "https://www.nhs.uk/conditions/anaphylaxis/",
+   "action": "kept"
+  },
+  {
+   "id": "c31",
+   "classification": "unsupported",
+   "evidence": "'Food protein' not retrieved [first pass: Food allergy is an immune reaction to a food protein.]",
+   "url": "https://111.wales.nhs.uk/FoodAllergy/",
+   "action": "removed"
+  },
+  {
+   "id": "c32",
+   "classification": "supported",
+   "evidence": "Allergy UK leaflet: reason not fully understood [first pass: The exact reasons people develop it are still unclear.]",
+   "url": "https://www.allergyuk.org/types-of-allergies/food-allergy/",
+   "action": "edited",
+   "newSentence": "Why the immune system reacts to a food is not fully understood."
+  },
+  {
+   "id": "c33",
+   "classification": "supported",
+   "evidence": "NHS: allergy different from intolerance [first pass: A food allergy is different from a food intolerance.]",
+   "url": "https://www.nhs.uk/conditions/food-allergy/",
+   "action": "kept"
+  },
+  {
+   "id": "c34",
+   "classification": "supported",
+   "evidence": "NHS intolerance page: symptoms a few hours after eating, bloating, tummy pain; no immune system [first pass: An intolerance usually causes bloating and stomach pain a few hours af]",
+   "url": "https://www.nhs.uk/conditions/food-intolerance/",
+   "action": "edited",
+   "newSentence": "Intolerance symptoms, such as bloating, wind, diarrhoea and tummy pain, usually appear a few hours after eating the food."
+  },
+  {
+   "id": "c35",
+   "classification": "unsupported",
+   "evidence": "Lactose intolerance as an intolerance is covered, but 'food poisoning, histamine foods' as look-alikes not retrieved [first pass: Allergy UK notes that some symptoms resemble food allergy but have oth]",
+   "url": "https://www.allergyuk.org/types-of-allergies/food-allergy/",
+   "action": "removed"
+  },
+  {
+   "id": "c36",
+   "classification": "unsupported",
+   "evidence": "See claim 9: asthma, hay fever not stated as common comorbidity [first pass: People with a food allergy often have other allergic conditions, such ]",
+   "url": "https://111.wales.nhs.uk/FoodAllergy/",
+   "action": "edited",
+   "newSentence": "A family history of allergies, asthma or eczema raises the risk slightly."
+  },
+  {
+   "id": "c37",
+   "classification": "wrong",
+   "evidence": "Not stated by any retrieved source [first pass: Most children who have a food allergy have had eczema in infancy.]",
+   "url": "https://www.allergyuk.org/types-of-allergies/food-allergy/",
+   "action": "edited",
+   "newSentence": "Allergy UK says the risk can be higher when another allergic condition, such as eczema, is present."
+  },
+  {
+   "id": "c38",
+   "classification": "supported",
+   "evidence": "NHS symptom list [first pass: The NHS lists hives, swelling of the lips, face and eyes, breathing di]",
+   "url": "https://www.nhs.uk/conditions/food-allergy/",
+   "action": "edited",
+   "newSentence": "The NHS lists itchy skin or hives, swelling of the lips, face and eyes, breathing difficulties, feeling sick and tummy pain among the symptoms."
+  },
+  {
+   "id": "c39",
+   "classification": "supported",
+   "evidence": "NHS: symptoms can start straight after eating or days later [first pass: Symptoms may start straight after eating the food, or days later.]",
+   "url": "https://www.nhs.uk/conditions/food-allergy/",
+   "action": "kept"
+  },
+  {
+   "id": "c40",
+   "classification": "supported",
+   "evidence": "Allergy UK: IgE-mediated symptoms occur seconds or minutes after eating [first pass: Allergy UK says immediate IgE-mediated reactions occur a few seconds o]",
+   "url": "https://www.allergyuk.org/types-of-allergies/food-allergy/",
+   "action": "edited",
+   "newSentence": "Allergy UK says symptoms of an immediate, IgE-mediated food allergy occur a few seconds or minutes after eating."
+  },
+  {
+   "id": "c41",
+   "classification": "unsupported",
+   "evidence": "Allergy UK: hives or swelling as immediate symptoms; vomiting/abdominal pain as immediate signs not stated [first pass: Common signs include hives and swelling, and the gut can also be affec]",
+   "url": "https://www.allergyuk.org/types-of-allergies/food-allergy/",
+   "action": "edited",
+   "newSentence": "Allergy UK also describes a type with both immediate symptoms, such as hives or swelling, and delayed symptoms, such as gut or skin problems."
+  },
+  {
+   "id": "c42",
+   "classification": "supported",
+   "evidence": "Allergy UK: some people have both immediate and delayed reactions [first pass: Some people have a mix of IgE-mediated and non-IgE-mediated reactions ]",
+   "url": "https://www.allergyuk.org/types-of-allergies/food-allergy/",
+   "action": "edited",
+   "newSentence": "Some people have a mix of immediate and delayed reactions to the same food."
+  },
+  {
+   "id": "c43",
+   "classification": "unsupported",
+   "evidence": "Hot/cold, anxious, flushed, strange taste not found in retrieved NHS text [first pass: Milder reactions can include feeling hot or cold, anxious or flushed, ]",
+   "url": "https://www.nhs.uk/conditions/anaphylaxis/",
+   "action": "removed"
+  },
+  {
+   "id": "c44",
+   "classification": "supported",
+   "evidence": "NHS anaphylaxis: starts quickly, breathing problems; NHS Scotland: may start mild and progress rapidly [first pass: A severe reaction is called anaphylaxis, which starts quickly and can ]",
+   "url": "https://www.nhs.uk/conditions/anaphylaxis/",
+   "action": "edited",
+   "newSentence": "A severe reaction is called anaphylaxis, which starts quickly and can cause breathing problems."
+  },
+  {
+   "id": "c45",
+   "classification": "unsupported",
+   "evidence": "Milk, eggs, peanuts, tree nuts supported; 'hazelnut and cashew' not retrieved [first pass: In children, the most common food allergies are to cows' milk, hens' e]",
+   "url": "https://www.anaphylaxis.org.uk/wp-content/uploads/2025/10/Outgrowing-Allergy-Factsheet-V5-Final-2025.pdf",
+   "action": "edited",
+   "newSentence": "In children, the most common food allergies are to milk, eggs, peanuts and tree nuts."
+  },
+  {
+   "id": "c46",
+   "classification": "supported",
+   "evidence": "Allergy UK: UK adults more commonly peanuts, tree nuts, crustaceans, plant foods [first pass: Among UK adults, the main triggers include peanuts, tree nuts, crustac]",
+   "url": "https://www.allergyuk.org/types-of-allergies/food-allergy/",
+   "action": "edited",
+   "newSentence": "Allergy UK says food allergy in UK adults more commonly involves peanuts, tree nuts, crustaceans and plant foods."
+  },
+  {
+   "id": "c47",
+   "classification": "supported",
+   "evidence": "NHS: nuts, milk, eggs, shellfish, fish, sesame, kiwi [first pass: The NHS lists cow's milk, eggs, peanuts, tree nuts, fish and shellfish]",
+   "url": "https://www.nhs.uk/conditions/anaphylaxis/",
+   "action": "edited",
+   "newSentence": "The NHS lists nuts, milk, eggs, shellfish, fish, sesame seeds and kiwi fruit among common food triggers of anaphylaxis."
+  },
+  {
+   "id": "c48",
+   "classification": "supported",
+   "evidence": "Anaphylaxis UK factsheet: milk, egg, wheat, soy allergies starting early often resolve [first pass: Anaphylaxis UK says milk, egg, soy and wheat allergies are often outgr]",
+   "url": "https://www.anaphylaxis.org.uk/wp-content/uploads/2025/10/Outgrowing-Allergy-Factsheet-V5-Final-2025.pdf",
+   "action": "edited",
+   "newSentence": "Anaphylaxis UK says milk, egg, soy and wheat allergies that start early in life are often outgrown."
+  },
+  {
+   "id": "c49",
+   "classification": "supported",
+   "evidence": "Anaphylaxis UK factsheet: peanut and tree nut much less likely to resolve; fish and shellfish tend to persist [first pass: Allergies to peanut, tree nuts, fish and shellfish are often lifelong.]",
+   "url": "https://www.anaphylaxis.org.uk/wp-content/uploads/2025/10/Outgrowing-Allergy-Factsheet-V5-Final-2025.pdf",
+   "action": "edited",
+   "newSentence": "Peanut and tree nut allergies are much less likely to be outgrown, and fish and shellfish allergies also tend to last."
+  },
+  {
+   "id": "c50",
+   "classification": "supported",
+   "evidence": "Anaphylaxis UK news and FSA PAFA page: about 6% of UK adults, 2.4 million, clinically confirmed [first pass: A Food Standards Agency study reported by Anaphylaxis UK estimated tha]",
+   "url": "https://anaphylaxis.org.uk/around-2-4-million-uk-adults-estimated-to-have-food-allergies-new-study-finds/",
+   "action": "edited",
+   "newSentence": "A Food Standards Agency study, reported by Anaphylaxis UK, estimated that around 6% of UK adults, about 2.4 million people, have a clinically confirmed food allergy."
+  },
+  {
+   "id": "c51",
+   "classification": "unsupported",
+   "evidence": "Allergy UK 'self-reporting overstates' not retrieved; the FSA study figures (over 30% reported reactions, about 6% confirmed) used instead [first pass: Allergy UK notes that self-reporting tends to overstate how many peopl]",
+   "url": "https://anaphylaxis.org.uk/around-2-4-million-uk-adults-estimated-to-have-food-allergies-new-study-finds/",
+   "action": "edited",
+   "newSentence": "In the first stage of that study, over 30% of adults reported some type of adverse reaction when eating food, but the clinical follow-up narrowed this to about 6%."
+  },
+  {
+   "id": "c52",
+   "classification": "unsupported",
+   "evidence": "'Allergy-focused clinical history and examination' not retrieved [first pass: The NICE guideline on food allergy in under 19s says diagnosis starts ]",
+   "url": "https://www.nice.org.uk/guidance/cg116",
+   "action": "removed"
+  },
+  {
+   "id": "c53",
+   "classification": "supported",
+   "evidence": "NICE CG116: skin prick or specific IgE blood tests; facilities to manage anaphylaxis for skin prick tests [first pass: When the history suggests an IgE-mediated food allergy, skin prick or ]",
+   "url": "https://www.nice.org.uk/guidance/cg116",
+   "action": "edited",
+   "newSentence": "The NICE guideline on food allergy in under 19s says that when IgE-mediated allergy is suspected, a skin prick test or blood tests for specific IgE antibodies should be offered."
+  },
+  {
+   "id": "c54",
+   "classification": "supported",
+   "evidence": "NICE CG116: trial elimination then reintroduction [first pass: For suspected non-IgE-mediated allergy, the guideline recommends a tri]",
+   "url": "https://www.nice.org.uk/guidance/cg116",
+   "action": "edited",
+   "newSentence": "For suspected non-IgE-mediated allergy, the guideline recommends a trial elimination of the suspected food, followed by reintroduction."
+  },
+  {
+   "id": "c55",
+   "classification": "supported",
+   "evidence": "NICE CG116: no serum-specific IgG, vega test, applied kinesiology, hair analysis [first pass: The NICE guideline says that diagnosis should not be made using vega t]",
+   "url": "https://www.nice.org.uk/guidance/cg116",
+   "action": "edited",
+   "newSentence": "The NICE guideline says that serum-specific IgG testing, the vega test, applied kinesiology and hair analysis should not be used to diagnose food allergy."
+  },
+  {
+   "id": "c56",
+   "classification": "supported",
+   "evidence": "NHS: skin-prick tests, blood tests, elimination diet [first pass: The NHS describes testing with skin-prick tests, blood tests and somet]",
+   "url": "https://www.nhs.uk/conditions/food-allergy/",
+   "action": "edited",
+   "newSentence": "The NHS lists skin-prick tests, blood tests and sometimes an elimination diet among the ways a food allergy is investigated."
+  },
+  {
+   "id": "c57",
+   "classification": "unsupported",
+   "evidence": "NICE: consider referral for acute systemic reaction, severe delayed reaction, suspected multiple food allergies; 'when diagnosis uncertain' not the guideline wording [first pass: NICE advises referral to specialist care for children with an acute sy]",
+   "url": "https://www.nice.org.uk/guidance/cg116",
+   "action": "edited",
+   "newSentence": "NICE advises considering referral to specialist care for children who have had an acute systemic reaction or a severe delayed reaction, or who may have multiple food allergies."
+  },
+  {
+   "id": "c58",
+   "classification": "unsupported",
+   "evidence": "Not found in retrieved NHS text [first pass: The NHS advises speaking to a GP before cutting foods out of the diet.]",
+   "url": "https://www.nhs.uk/conditions/food-allergy/",
+   "action": "edited",
+   "newSentence": "A GP may refer to a specialist."
+  },
+  {
+   "id": "c59",
+   "classification": "unsupported",
+   "evidence": "Nasal spray not found; antihistamines for mild and adrenaline for severe supported [first pass: The NHS says antihistamines are used for mild reactions, while adrenal]",
+   "url": "https://www.nhs.uk/conditions/food-allergy/",
+   "action": "edited",
+   "newSentence": "Antihistamines are used for mild reactions, while adrenaline auto-injectors are for severe ones."
+  },
+  {
+   "id": "c60",
+   "classification": "supported",
+   "evidence": "NHS summary: specialist gives allergy action plan [first pass: A specialist provides an allergy action plan.]",
+   "url": "https://www.nhs.uk/conditions/food-allergy/",
+   "action": "edited",
+   "newSentence": "A specialist gives an allergy action plan, a written set of instructions for managing a reaction."
+  },
+  {
+   "id": "c61",
+   "classification": "supported",
+   "evidence": "NHS: check labels, tell staff; 'menus' not retrieved [first pass: Day-to-day management involves reading food labels and menus carefully]",
+   "url": "https://www.nhs.uk/conditions/food-allergy/",
+   "action": "edited",
+   "newSentence": "Day-to-day management involves checking food labels carefully and telling staff at restaurants and cafes about the allergy, according to the NHS."
+  },
+  {
+   "id": "c62",
+   "classification": "unsupported",
+   "evidence": "'Carry 2 at all times' attributed to NHS but only seen in trust leaflets; removed (replaced with NHS: antihistamines do not replace adrenaline) [first pass: The NHS says people prescribed them should carry 2 adrenaline auto-inj]",
+   "url": "https://www.nhs.uk/conditions/anaphylaxis/",
+   "action": "edited",
+   "newSentence": "Antihistamines do not replace adrenaline in a severe reaction."
+  },
+  {
+   "id": "c63",
+   "classification": "unsupported",
+   "evidence": "Roundup page not retrieved; claim not seen [first pass: Anaphylaxis UK helped develop an Adult Allergy Action Plan, and the pa]",
+   "url": "https://www.allergyuk.org/types-of-allergies/food-allergy/",
+   "action": "removed"
+  },
+  {
+   "id": "c64",
+   "classification": "unsupported",
+   "evidence": "Labelling call not retrieved [first pass: Allergy UK has called for full ingredient labelling on all food produc]",
+   "url": "https://www.allergyuk.org/types-of-allergies/food-allergy/",
+   "action": "removed"
+  },
+  {
+   "id": "c65",
+   "classification": "supported",
+   "evidence": "NHS baby page: allergenic foods from about 6 months, one at a time, very small amounts [first pass: NHS guidance for babies says allergenic foods are introduced one at a ]",
+   "url": "https://www.nhs.uk/best-start-in-life/baby/weaning/safe-weaning/food-allergies/",
+   "action": "edited",
+   "newSentence": "For babies, NHS guidance says common allergenic foods can be introduced from about 6 months, one at a time and in very small amounts so that any reaction can be spotted."
+  },
+  {
+   "id": "c66",
+   "classification": "supported",
+   "evidence": "NHS [first pass: Anaphylaxis is a life-threatening allergic reaction that happens very ]",
+   "url": "https://www.nhs.uk/conditions/anaphylaxis/",
+   "action": "kept"
+  },
+  {
+   "id": "c67",
+   "classification": "supported",
+   "evidence": "NHS: signs can appear within minutes [first pass: Symptoms usually start within minutes of contact with the trigger.]",
+   "url": "https://www.nhs.uk/conditions/anaphylaxis/",
+   "action": "edited",
+   "newSentence": "Signs can appear within minutes of contact with the trigger."
+  },
+  {
+   "id": "c68",
+   "classification": "supported",
+   "evidence": "NHS: throat/tongue swelling, breathing trouble, wheezing, faint, confused, blue/grey/pale skin; 'fast' breathing dropped [first pass: They include swelling of the throat and tongue, fast or difficult brea]",
+   "url": "https://www.nhs.uk/conditions/anaphylaxis/",
+   "action": "edited",
+   "newSentence": "They include swelling of the throat and tongue, difficulty breathing, wheezing, feeling faint or confused, and blue, grey or pale skin."
+  },
+  {
+   "id": "c69",
+   "classification": "supported",
+   "evidence": "NHS: call 999 and say anaphylaxis [first pass: The NHS says to call 999 if anaphylaxis is suspected and to tell the o]",
+   "url": "https://www.nhs.uk/conditions/anaphylaxis/",
+   "action": "edited",
+   "newSentence": "The NHS says to call 999 and say it is anaphylaxis."
+  },
+  {
+   "id": "c70",
+   "classification": "supported",
+   "evidence": "NHS: use auto-injector if you have one; lying down is covered in next sentence [first pass: It also says to lie down and use an adrenaline auto-injector if one is]",
+   "url": "https://www.nhs.uk/conditions/anaphylaxis/",
+   "action": "edited",
+   "newSentence": "It also says to use an adrenaline auto-injector if one is available."
+  },
+  {
+   "id": "c71",
+   "classification": "supported",
+   "evidence": "NHS: lie down, legs raised if faint, sit up if breathing badly [first pass: The NHS describes lying the person flat with the legs raised, or sitti]",
+   "url": "https://www.nhs.uk/conditions/anaphylaxis/",
+   "action": "edited",
+   "newSentence": "The NHS describes lying down with the legs raised if feeling faint, or sitting up if breathing is difficult."
+  },
+  {
+   "id": "c72",
+   "classification": "supported",
+   "evidence": "NHS: hospital treatment adrenaline, oxygen, fluids [first pass: Anaphylaxis is treated in hospital straight away, with adrenaline, oxy]",
+   "url": "https://www.nhs.uk/conditions/anaphylaxis/",
+   "action": "kept"
+  },
+  {
+   "id": "c73",
+   "classification": "supported",
+   "evidence": "NHS: 2 auto-injectors or prescription before discharge [first pass: Before leaving hospital, people should be given 2 adrenaline auto-inje]",
+   "url": "https://www.nhs.uk/conditions/anaphylaxis/",
+   "action": "kept"
+  },
+  {
+   "id": "c74",
+   "classification": "unsupported",
+   "evidence": "Allergy specialist tests not found in retrieved NHS text (NICE specialist referral is a draft) [first pass: An allergy specialist may then carry out tests and give advice.]",
+   "url": "https://www.nhs.uk/conditions/anaphylaxis/",
+   "action": "removed"
+  },
+  {
+   "id": "c75",
+   "classification": "unsupported",
+   "evidence": "Leaflet not cited; 'without contact with trigger' unsupported. Replaced with NHS Scotland wording and NHS 2 to 12 hour stay [first pass: Symptoms can return without contact with the trigger again, which is c]",
+   "url": "https://www.rightdecisions.scot.nhs.uk/school-allergy-care/all-about-allergies/understanding-allergy/severe-allergic-reactions/",
+   "action": "edited",
+   "newSentence": "Symptoms of anaphylaxis can return hours after the first reaction."
+  },
+  {
+   "id": "c76",
+   "classification": "supported",
+   "evidence": "NHS symptoms [first pass: A food allergy involves the immune system and can cause hives, swellin]",
+   "url": "https://www.nhs.uk/conditions/food-allergy/",
+   "action": "edited",
+   "newSentence": "A food allergy involves the immune system and can cause itchy skin or hives, swelling, breathing difficulties and tummy problems."
+  },
+  {
+   "id": "c77",
+   "classification": "supported",
+   "evidence": "NHS intolerance: a few hours after eating, bloating, tummy pain [first pass: A food intolerance usually causes bloating and stomach pain a few hour]",
+   "url": "https://www.nhs.uk/conditions/food-intolerance/",
+   "action": "edited",
+   "newSentence": "The NHS says intolerance symptoms usually appear a few hours after eating and often include bloating, wind, diarrhoea and tummy pain."
+  },
+  {
+   "id": "c78",
+   "classification": "unsupported",
+   "evidence": "Testing used to tell them apart: inference, not found [first pass: The NHS describes the two as different conditions, and testing is used]",
+   "url": "https://www.nhs.uk/conditions/food-allergy/",
+   "action": "edited",
+   "newSentence": "A food intolerance does not involve the immune system, so it cannot cause a serious allergic reaction."
+  },
+  {
+   "id": "c79",
+   "classification": "supported",
+   "evidence": "Anaphylaxis UK factsheet [first pass: Anaphylaxis UK says milk, egg, soy and wheat allergies are often outgr]",
+   "url": "https://www.anaphylaxis.org.uk/wp-content/uploads/2025/10/Outgrowing-Allergy-Factsheet-V5-Final-2025.pdf",
+   "action": "edited",
+   "newSentence": "Anaphylaxis UK says milk, egg, soy and wheat allergies that start early in life are often outgrown."
+  },
+  {
+   "id": "c80",
+   "classification": "supported",
+   "evidence": "Anaphylaxis UK factsheet [first pass: Allergies to peanut, tree nuts, fish and shellfish are often lifelong.]",
+   "url": "https://www.anaphylaxis.org.uk/wp-content/uploads/2025/10/Outgrowing-Allergy-Factsheet-V5-Final-2025.pdf",
+   "action": "edited",
+   "newSentence": "Peanut and tree nut allergies are much less likely to be outgrown, and fish and shellfish allergies also tend to last."
+  },
+  {
+   "id": "c81",
+   "classification": "unsupported",
+   "evidence": "Inference from NICE referral; not stated [first pass: A specialist is the route to advice on whether an individual child has]",
+   "url": "https://www.nice.org.uk/guidance/cg116",
+   "action": "removed"
+  },
+  {
+   "id": "c82",
+   "classification": "supported",
+   "evidence": "Factsheet title 'Outgrowing childhood food allergy' [first pass: Anaphylaxis UK publishes a factsheet on outgrowing childhood food alle]",
+   "url": "https://www.anaphylaxis.org.uk/wp-content/uploads/2025/10/Outgrowing-Allergy-Factsheet-V5-Final-2025.pdf",
+   "action": "edited",
+   "newSentence": "Anaphylaxis UK publishes a factsheet called Outgrowing childhood food allergy."
+  },
+  {
+   "id": "c83",
+   "classification": "supported",
+   "evidence": "NHS: caused by food, medicine or insect stings [first pass: Yes, food is one of the causes of anaphylaxis, alongside medicines and]",
+   "url": "https://www.nhs.uk/conditions/anaphylaxis/",
+   "action": "edited",
+   "newSentence": "Yes, the NHS says anaphylaxis can be caused by food, medicines or insect stings."
+  },
+  {
+   "id": "c84",
+   "classification": "supported",
+   "evidence": "NHS [first pass: Anaphylaxis is life-threatening and happens very quickly.]",
+   "url": "https://www.nhs.uk/conditions/anaphylaxis/",
+   "action": "edited",
+   "newSentence": "It is life-threatening and happens very quickly."
+  },
+  {
+   "id": "c85",
+   "classification": "supported",
+   "evidence": "NHS: use auto-injector if available, call 999 [first pass: The NHS says to call 999 and to use an adrenaline auto-injector if one]",
+   "url": "https://www.nhs.uk/conditions/anaphylaxis/",
+   "action": "edited",
+   "newSentence": "The NHS says to call 999 and to use an adrenaline auto-injector if one is available."
+  },
+  {
+   "id": "c86",
+   "classification": "supported",
+   "evidence": "NHS [first pass: Hospital treatment can include adrenaline, oxygen and fluids given int]",
+   "url": "https://www.nhs.uk/conditions/anaphylaxis/",
+   "action": "kept"
+  },
+  {
+   "id": "c87",
+   "classification": "supported",
+   "evidence": "Anaphylaxis UK news; FSA [first pass: A Food Standards Agency study reported by Anaphylaxis UK estimated tha]",
+   "url": "https://anaphylaxis.org.uk/around-2-4-million-uk-adults-estimated-to-have-food-allergies-new-study-finds/",
+   "action": "kept"
+  },
+  {
+   "id": "c88",
+   "classification": "supported",
+   "evidence": "Anaphylaxis UK news: 2.4 million [first pass: That is about 2.4 million people.]",
+   "url": "https://anaphylaxis.org.uk/around-2-4-million-uk-adults-estimated-to-have-food-allergies-new-study-finds/",
+   "action": "edited",
+   "newSentence": "A Food Standards Agency study reported by Anaphylaxis UK estimated that around 6% of UK adults, about 2.4 million people, have a clinically confirmed food allergy."
+  },
+  {
+   "id": "c89",
+   "classification": "supported",
+   "evidence": "Anaphylaxis UK news: over 30% reported adverse reactions, 6% confirmed [first pass: More adults report reactions to food than have a confirmed allergy.]",
+   "url": "https://anaphylaxis.org.uk/around-2-4-million-uk-adults-estimated-to-have-food-allergies-new-study-finds/",
+   "action": "edited",
+   "newSentence": "In the first stage of the study, over 30% of adults reported some type of adverse reaction when eating food, so more adults report reactions than have a confirmed allergy."
+  },
+  {
+   "id": "c90",
+   "classification": "unsupported",
+   "evidence": "Allergy UK attribution not retrieved; replaced by FSA study figures [first pass: Allergy UK notes that self-reporting tends to overstate how many peopl]",
+   "url": "https://anaphylaxis.org.uk/around-2-4-million-uk-adults-estimated-to-have-food-allergies-new-study-finds/",
+   "action": "edited",
+   "newSentence": "In the first stage of the study, over 30% of adults reported some type of adverse reaction when eating food, so more adults report reactions than have a confirmed allergy."
+  },
+  {
+   "id": "c91",
+   "classification": "unsupported",
+   "evidence": "Not found; question changed to elimination diet, using NICE and NHS [first pass: The NHS advises speaking to a GP before cutting foods out of the diet.]",
+   "url": "https://www.nice.org.uk/guidance/cg116",
+   "action": "edited",
+   "newSentence": "For suspected non-IgE-mediated allergy, the NICE guideline recommends a trial elimination of the suspected food, followed by reintroduction."
+  },
+  {
+   "id": "c92",
+   "classification": "unsupported",
+   "evidence": "NHS baby page: 'promote rather than prevent' not stated [first pass: For babies, NHS guidance says avoiding peanuts and other foods in earl]",
+   "url": "https://www.nhs.uk/best-start-in-life/baby/weaning/safe-weaning/food-allergies/",
+   "action": "removed"
+  },
+  {
+   "id": "c93",
+   "classification": "supported",
+   "evidence": "NICE CG116 trial elimination [first pass: The NICE guideline describes a trial elimination of a suspected food a]",
+   "url": "https://www.nice.org.uk/guidance/cg116",
+   "action": "kept"
+  },
+  {
+   "id": "c94",
+   "classification": "unsupported",
+   "evidence": "'Food hypersensitivity' not retrieved from UK sources as an alias; replaced with named types [first pass: Food hypersensitivity; nut, milk and egg allergy are common types]",
+   "url": "https://www.allergyuk.org/types-of-allergies/food-allergy/",
+   "action": "edited",
+   "newSentence": "Nut allergy, peanut allergy, milk allergy and egg allergy are common types"
+  },
+  {
+   "id": "c95",
+   "classification": "supported",
+   "evidence": "NICE and NHS tests [first pass: Allergy-focused history, skin prick or blood tests, sometimes an elimi]",
+   "url": "https://www.nice.org.uk/guidance/cg116",
+   "action": "edited",
+   "newSentence": "Skin prick or blood tests, sometimes an elimination diet"
+  },
+  {
+   "id": "c96",
+   "classification": "supported",
+   "evidence": "Anaphylaxis UK / Allergy UK [first pass: Cows' milk, hens' eggs, peanuts and tree nuts]",
+   "url": "https://www.anaphylaxis.org.uk/wp-content/uploads/2025/10/Outgrowing-Allergy-Factsheet-V5-Final-2025.pdf",
+   "action": "edited",
+   "newSentence": "Milk, eggs, peanuts and tree nuts"
+  },
+  {
+   "id": "c97",
+   "classification": "supported",
+   "evidence": "Anaphylaxis UK factsheet [first pass: Milk, egg, soy and wheat allergies]",
+   "url": "https://www.anaphylaxis.org.uk/wp-content/uploads/2025/10/Outgrowing-Allergy-Factsheet-V5-Final-2025.pdf",
+   "action": "edited",
+   "newSentence": "Milk, egg, soy and wheat allergies that start early in life"
+  },
+  {
+   "id": "c98",
+   "classification": "supported",
+   "evidence": "NHS [first pass: Call 999 for suspected anaphylaxis]",
+   "url": "https://www.nhs.uk/conditions/anaphylaxis/",
+   "action": "kept"
+  },
+  {
+   "id": "c99",
+   "classification": "supported",
+   "evidence": "Allergy UK and NHS [first pass: Immediate reactions occur seconds or minutes after eating; others can ]",
+   "url": "https://www.allergyuk.org/types-of-allergies/food-allergy/",
+   "action": "kept"
+  }
+ ],
+ "notes": "Rewritten from this session's retrieved summaries. Doubts: biphasic sentence rests on NHS Scotland Right Decisions (via search summary), 'allergy action plan' and 'antihistamines for mild' rest on NHS summaries that are blended; hospital stay '2 to 12 hours' and 'children most common foods' from search summaries; 'related: asthma' kept only because NHS 111 Wales lists family history of asthma as a risk factor. Second auto-injector dose/timing content deliberately omitted (sources conflicted). NICE CG116 is from 2011 and was not checked for updates. Original old NHS baby URL was not returned; replaced by best-start-in-life page."
+}
