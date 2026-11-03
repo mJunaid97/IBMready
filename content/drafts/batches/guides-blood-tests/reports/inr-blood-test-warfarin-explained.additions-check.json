@@ -1,0 +1,61 @@
+{
+ "id": "inr-blood-test-warfarin-explained",
+ "searchesUsed": 2,
+ "checks": [
+  {
+   "index": 0,
+   "classification": "wrong",
+   "evidence": "NBT leaflet said a common target INR of 2.5 (range 2.0-3.0) means blood takes just over twice as long to clot; not stated for INR 2.0 exactly; Rotherham page not returned.",
+   "url": "https://www.nbt.nhs.uk/our-services/a-z-services/pharmacy/pharmacy-patient-information-leaflets/warfarin-therapy",
+   "action": "edited",
+   "newSentence": "One NHS trust leaflet explains that a typical target INR means the blood takes just over twice as long as normal to clot."
+  },
+  {
+   "index": 1,
+   "classification": "unsupported",
+   "evidence": "No returned text said the consultant sets the target or that it depends on the reason for treatment.",
+   "url": "https://www.therotherhamft.nhs.uk/patients-and-visitors/patient-information/life-with-warfarin",
+   "action": "removed"
+  },
+  {
+   "index": 2,
+   "classification": "wrong",
+   "evidence": "Sources gave a maximum of 12 weeks, not 8 to 12; interval is set by the clinic. NBT said tests become less frequent once the dose is stable.",
+   "url": "https://www.nbt.nhs.uk/our-services/a-z-services/pharmacy/pharmacy-patient-information-leaflets/warfarin-therapy",
+   "action": "edited",
+   "newSentence": "One NHS trust leaflet says that once the dose has stabilised, blood tests become less frequent, and your anticoagulant clinic decides how often you need one."
+  },
+  {
+   "index": 3,
+   "classification": "wrong",
+   "evidence": "NHS warfarin text: tell your doctor about other medicines, herbal remedies, vitamins or supplements and check before any new medicine; avoid St John's wort. Aspirin point came from a trust leaflet; pharmacist/clinic wording and original URL not returned.",
+   "url": "https://www.nhs.uk/medicines/warfarin/",
+   "action": "edited",
+   "newSentence": "The NHS advises telling your doctor about any other medicines, herbal remedies, vitamins or supplements, checking before starting any new medicine, and avoiding St John's wort."
+  },
+  {
+   "index": 4,
+   "classification": "unsupported",
+   "evidence": "Returned guidance said binge drinking on warfarin is dangerous because it can raise the INR and bleeding risk; the exact NHS page cited was not returned, so URL changed to the NHS warfarin page.",
+   "url": "https://www.nhs.uk/medicines/warfarin/",
+   "action": "edited",
+   "newSentence": "Guidance warns that binge drinking while taking warfarin is dangerous because it can raise the INR and the risk of bleeding."
+  },
+  {
+   "index": 5,
+   "classification": "supported",
+   "evidence": "NHS text: you will be given an anticoagulant alert card; always carry it; show it to your doctor or dentist before any medical or dental procedure. Original URL not returned; NHS warfarin page used.",
+   "url": "https://www.nhs.uk/medicines/warfarin/",
+   "action": "edited",
+   "newSentence": "The NHS says to carry the anticoagulant alert card at all times and show it to your doctor or dentist before any medical or dental procedure."
+  },
+  {
+   "index": 6,
+   "classification": "textbook",
+   "evidence": "An NHS-linked diet leaflet said significantly increasing or decreasing foods containing vitamin K week to week may affect INR; uhsussex PDF not returned.",
+   "url": "https://www.cuh.nhs.uk/patient-information/dietary-advice-for-patients-taking-warfarin/",
+   "action": "edited",
+   "newSentence": "NHS dietary leaflets say that a big increase or decrease in foods containing vitamin K from week to week can affect the INR, so it is best to keep intake steady and talk to your anticoagulant clinic before major diet changes."
+  }
+ ]
+}

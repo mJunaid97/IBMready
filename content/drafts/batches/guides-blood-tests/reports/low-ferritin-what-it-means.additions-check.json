@@ -1,0 +1,59 @@
+{
+ "id": "low-ferritin-what-it-means",
+ "searchesUsed": 2,
+ "checks": [
+  {
+   "index": 0,
+   "classification": "wrong",
+   "evidence": "Returned text: evidence lacking/mixed for tiredness in iron deficiency without anaemia; only said ferritin is the most reliable initial marker.",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8002799/",
+   "action": "removed"
+  },
+  {
+   "index": 1,
+   "classification": "supported",
+   "evidence": "UK GP guide: with co-existent inflammatory disorders ferritin may be normal or elevated even when iron stores are absent (Newcastle URL not returned).",
+   "url": "https://www.ruh.nhs.uk/pathology/documents/clinical_guidelines/HAEM_Ferritin_a_guide_for_GPs.pdf?t=",
+   "action": "edited",
+   "newSentence": "NHS laboratory guidance for GPs notes that when inflammation is also present, ferritin may be normal or raised even when iron stores are absent."
+  },
+  {
+   "index": 2,
+   "classification": "unsupported",
+   "evidence": "No source found on thresholds varying by local laboratory; only differing published cut-offs (e.g. WHO <12, <30 microgram/L).",
+   "url": "https://www.ruh.nhs.uk/pathology/documents/clinical_guidelines/HAEM_Ferritin_a_guide_for_GPs.pdf?t=",
+   "action": "removed"
+  },
+  {
+   "index": 3,
+   "classification": "supported",
+   "evidence": "Leaflet: gut blood loss is the most common cause of IDA in adult men and postmenopausal women; 'once other causes excluded' not stated.",
+   "url": "https://www.ruh.nhs.uk/patients/patient_information/GAS157_Iron_deficiency_anaemia.pdf",
+   "action": "edited",
+   "newSentence": "An NHS leaflet says blood loss from the gut is the most common cause of iron deficiency anaemia in adult men and postmenopausal women."
+  },
+  {
+   "index": 4,
+   "classification": "unsupported",
+   "evidence": "'Cause matters more than the anaemia' not stated; BNSSG page not returned.",
+   "url": "https://remedy.bnssg.icb.nhs.uk/adults/gastroenterology-and-colorectal-surgery/anaemia-iron-deficiency/",
+   "action": "removed"
+  },
+  {
+   "index": 5,
+   "classification": "unsupported",
+   "evidence": "Bradford leaflet not returned; 'very common' not seen. Returned: oral iron tablets are first-line for IDA in pregnancy.",
+   "url": "https://doclibrary-rcht.cornwall.nhs.uk/GET/d10163217",
+   "action": "edited",
+   "newSentence": "A UK NHS guideline calls oral iron tablets the first-line treatment for iron deficiency anaemia in pregnancy."
+  },
+  {
+   "index": 6,
+   "classification": "supported",
+   "evidence": "A clinical guideline lists IV iron for anaemia not improved despite oral iron, or oral iron intolerance (Bradford URL not returned).",
+   "url": "https://doclibrary-rcht.cornwall.nhs.uk/GET/d10163217",
+   "action": "edited",
+   "newSentence": "A UK NHS guideline lists intravenous iron for anaemia that has not improved despite oral iron, or when oral iron is not tolerated."
+  }
+ ]
+}
