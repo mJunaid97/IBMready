@@ -1,0 +1,106 @@
+{
+ "id": "urine-protein",
+ "searchesUsed": 5,
+ "counts": {
+  "supported": 13,
+  "textbook": 0,
+  "unsupported": 0,
+  "wrong": 0,
+  "unsafe": 0,
+  "unchecked": 0
+ },
+ "claims": [
+  {
+   "id": "c01",
+   "classification": "supported",
+   "evidence": "KDIGO table (UK mg/mmol units): A1 <3 normal to mildly increased, A2 3-30 moderately increased, A3 >30 severely increased; NICE NG203 uses these categories for staging.",
+   "url": "https://www.nice.org.uk/guidance/ng203/chapter/recommendations",
+   "action": "kept"
+  },
+  {
+   "id": "c02",
+   "classification": "supported",
+   "evidence": "North Bristol NHS Trust document retrieved: PCR >300 mg/mmol nephrotic-range proteinuria (and ACR >250 mg/mmol). UK source also gives PCR >300 equals about 3.5 g/24 h; some sources use 350 (StatPearls, review), hence 'some NHS laboratory guidance' is appropriately hedged. It is truly a PCR.",
+   "url": "https://www.nbt.nhs.uk/sites/default/files/document/Investigation%20of%20Proteinuria%20in%20non-pregnant%20adults.pdf",
+   "action": "kept"
+  },
+  {
+   "id": "c03",
+   "classification": "supported",
+   "evidence": "NICE: CKD classified by eGFR and ACR; UKKA SGLT2i guideline and draft NG203 use ACR thresholds for medicines, so general wording is supported and not overstated.",
+   "url": "https://www.nice.org.uk/guidance/ng203/chapter/recommendations",
+   "action": "kept"
+  },
+  {
+   "id": "c04",
+   "classification": "supported",
+   "evidence": "NICE NG203 (re-retrieved): ACR 3 to 70 mg/mmol - confirm in a subsequent early-morning sample; no repeat if ACR >=70. UKKA quick reference listed in results but not excerpted; NICE is the clearer carrier.",
+   "url": "https://www.nice.org.uk/guidance/ng203/chapter/recommendations",
+   "action": "kept"
+  },
+  {
+   "id": "c05",
+   "classification": "supported",
+   "evidence": "KDIGO: abnormalities for a minimum of 3 months; NICE: >3 months / GFR measurements >=90 days apart; UK eCKD guide uses 3 months. 'more than three months' matches NICE wording; KDIGO says at least 3 months, so a purist would write 'three months or more' (cosmetic).",
+   "url": "https://www.ukkidney.org/health-professionals/information-resources/uk-eckd-guide",
+   "action": "kept"
+  },
+  {
+   "id": "c06",
+   "classification": "supported",
+   "evidence": "NICE NG203: a confirmed ACR of 3 mg/mmol or more is clinically important proteinuria; KDIGO 30 mg/g (~3 mg/mmol) threshold for albuminuria.",
+   "url": "https://www.nice.org.uk/guidance/ng203/chapter/recommendations",
+   "action": "kept"
+  },
+  {
+   "id": "r01",
+   "classification": "supported",
+   "evidence": "KDIGO table A1 <3 mg/mmol; NICE adopts. UK label correct (mg/mmol).",
+   "url": "https://www.nice.org.uk/guidance/ng203/chapter/recommendations",
+   "action": "kept"
+  },
+  {
+   "id": "r02",
+   "classification": "supported",
+   "evidence": "A2 3-30 mg/mmol KDIGO/NICE.",
+   "url": "https://www.nice.org.uk/guidance/ng203/chapter/recommendations",
+   "action": "kept"
+  },
+  {
+   "id": "r03",
+   "classification": "supported",
+   "evidence": "A3 >30 mg/mmol KDIGO/NICE.",
+   "url": "https://www.nice.org.uk/guidance/ng203/chapter/recommendations",
+   "action": "kept"
+  },
+  {
+   "id": "r04",
+   "classification": "supported",
+   "evidence": "NICE NG203: confirmed ACR >=3 mg/mmol is clinically important proteinuria.",
+   "url": "https://www.nice.org.uk/guidance/ng203/chapter/recommendations",
+   "action": "kept"
+  },
+  {
+   "id": "r05",
+   "classification": "supported",
+   "evidence": "NICE NG203 (retrieved): ACR 3 to 70 repeat in early-morning sample; not needed at 70 or more. The cited UKKA PDF appeared in results but its text was not excerpted; consider adding NICE as source. Note some local pathways say 'above 70'.",
+   "url": "https://www.nice.org.uk/guidance/ng203/chapter/recommendations",
+   "action": "kept"
+  },
+  {
+   "id": "r06",
+   "classification": "supported",
+   "evidence": "NBT: PCR >300 nephrotic range, ACR >250; others 350 (StatPearls/review) - context hedges correctly. Is a PCR, not ACR. UK label ok for NHS trust document.",
+   "url": "https://www.nbt.nhs.uk/sites/default/files/document/Investigation%20of%20Proteinuria%20in%20non-pregnant%20adults.pdf",
+   "action": "kept"
+  },
+  {
+   "id": "r07",
+   "classification": "supported",
+   "evidence": "KDIGO 2024: abnormalities of kidney structure or function present for a minimum of 3 months; UK eCKD guide same; NICE >3 months/90 days. GLOBAL label right. Value 'More than 3 months' is NICE-style; KDIGO phrase is 'minimum of 3 months'.",
+   "url": "https://www.kidney.org/what-s-new-about-new-ckd-guideline",
+   "action": "kept"
+  }
+ ],
+ "notes": "No mandatory change. Optional: r05 add NICE NG203 as source (retrieved text is NICE's); r07/c05 may say '3 months or more' to match KDIGO. Nephrotic range: PCR >300 mg/mmol confirmed as PCR (NBT) with ACR >250 equivalent; 350 variant also retrievable. ACR persistent >=3 and 3-70 rule verified. Kidney-protecting medicines wording: NICE draft/UKKA tie ACR to ACE-i/ARB (>=70) and SGLT2i thresholds, so a specific threshold stays out; general phrase fine. Search tool returns blended summaries, so URL attribution is by plausibility."
+}

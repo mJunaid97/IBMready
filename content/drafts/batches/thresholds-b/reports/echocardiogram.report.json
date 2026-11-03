@@ -1,0 +1,67 @@
+{
+ "id": "echocardiogram",
+ "searchesUsed": 8,
+ "counts": {
+  "supported": 3,
+  "textbook": 1,
+  "unsupported": 1,
+  "wrong": 2,
+  "unsafe": 0,
+  "unchecked": 0
+ },
+ "claims": [
+  {
+   "id": "e01a",
+   "classification": "wrong",
+   "evidence": "BSE 2020 categories (letter quoting the guideline, PMC7487180): normal LVEF >=55%, borderline low 50-54%, impaired 36-49%, severely impaired <=35%. So 'above 55%' is wrong; it is 55% or more. (A local trust sheet, JPUH, prints '>55%', which leaves 55 exactly uncovered.)",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7487180/",
+   "action": "edited",
+   "newSentence": "The fraction of blood the left ventricle ejects each beat. Sources differ on the lower limit of normal: British Society of Echocardiography reporting categories treat 55% or more as normal (50 to 54% is borderline low), while the BHF and NHS England describe 50% or more as normal. In heart failure classification, a reduced ejection fraction is usually taken as 40% or less."
+  },
+  {
+   "id": "e01b",
+   "classification": "supported",
+   "evidence": "NHS England 'Managing heart failure @home' glossary: ejection fraction 50% or higher is considered normal; BHF 'Understanding heart failure' booklet: normal EF is 50% and above. (BHF echo-report guide says 'over 50 to 55 per cent' and below 49 not pumping well, so the BHF is not perfectly uniform.)",
+   "url": "https://www.england.nhs.uk/long-read/managing-heart-failure-home-information-for-patients/",
+   "action": "kept"
+  },
+  {
+   "id": "e01c",
+   "classification": "supported",
+   "evidence": "NICE TA773 committee text: HFrEF trial population defined as LVEF 40% or less; ESC and NHS formulary use <=40 reduced, 41-49 mildly reduced, >=50 preserved. Note BHF booklet says 'less than 40%' and HFmrEF 40-49, a one-point discrepancy; 'usually taken as' wording covers it.",
+   "url": "https://www.nice.org.uk/guidance/ta773/chapter/3-Committee-discussion",
+   "action": "kept"
+  },
+  {
+   "id": "e02",
+   "classification": "textbook",
+   "evidence": "Removes the unsupported 'EF 30%' example and 'start' instruction; 'Ejection fraction well below normal: significantly reduced pumping; heart-failure treatment is considered' is plain undisputed textbook, safe wording.",
+   "url": "",
+   "action": "edited"
+  },
+  {
+   "id": "er1",
+   "classification": "wrong",
+   "evidence": "Value 'above 55' disagrees with BSE (normal >=55). Source is a local trust sheet titled 'Guidance on Echocardiography Results' (not 'NHS echocardiography results guidance (based on BSE categories)'); the sheet's text reads Normal >55%, Borderline low 50-54, Impaired 36-49, Severely impaired <35 (garbled). Section label 'Ejection fraction categories' not verified.",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7487180/",
+   "action": "edited",
+   "newSentence": "name 'Normal left ventricular ejection fraction (British Society of Echocardiography categories)'; value '55 or more'; context 'BSE 2020 reporting categories: 50 to 54 borderline low, 36 to 49 impaired, 35 or below severely impaired'; source title 'Latest British Society of Echocardiography recommendations for left ventricular ejection fraction categorisation (Heart/BMJ letter, PMC)', url https://pmc.ncbi.nlm.nih.gov/articles/PMC7487180/, section 'Categories'. Keep the JPUH PDF only as a secondary reference with its true title."
+  },
+  {
+   "id": "er2",
+   "classification": "supported",
+   "evidence": "NHS England page excerpt: ejection fraction measured as a percentage; 50% or higher considered normal; you can have a normal ejection fraction and still have heart failure (HFpEF). Title and URL match; section 'Ejection fraction' = glossary entry, reasonable.",
+   "url": "https://www.england.nhs.uk/long-read/managing-heart-failure-home-information-for-patients/",
+   "action": "kept"
+  },
+  {
+   "id": "er3",
+   "classification": "unsupported",
+   "evidence": "Retrieved text of the NHS England HFpEF pathway support tool gives EF >=50% for HFpEF and says HFmrEF should be treated as HFrEF for scope; no '40 or less' and no 'Coding table' section was retrieved from that page (a regional NHS England North West PDF does use a separate HFmrEF code for 41-49). The value 40 or less itself is supported by NICE TA773 and ESC.",
+   "url": "https://www.nice.org.uk/guidance/ta773/chapter/3-Committee-discussion",
+   "action": "edited",
+   "newSentence": "source title 'NICE TA773: Empagliflozin for treating chronic heart failure with reduced ejection fraction', url https://www.nice.org.uk/guidance/ta773/chapter/3-Committee-discussion, section 'Committee discussion'; keep value '40 or less' and context 'Classification of heart failure; 41 to 49 is usually called mildly reduced'. Remove the pathway-tool URL from this record (it may stay as a reference only for the 50 or more preserved/HFmrEF-as-HFrEF scope point)."
+  }
+ ],
+ "notes": "(e) BSE normal is >=55 (not above 55); BHF/NHS England 50 or more normal confirmed; HFrEF <=40 confirmed from NICE/ESC but NOT from the NHS England pathway tool excerpt; BHF booklet says <40. Local JPUH sheet is a single trust document: weak as a UK reference."
+}

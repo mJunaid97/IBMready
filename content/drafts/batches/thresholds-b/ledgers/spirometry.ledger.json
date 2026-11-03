@@ -1,0 +1,54 @@
+{
+ "id": "spirometry",
+ "items": [
+  {
+   "where": "what",
+   "sentence": "... which supports an asthma diagnosis but does not settle it ...",
+   "basis": "excerpt",
+   "urls": [
+    "https://publications.ersnet.org/content/erj/54/3/1900561"
+   ],
+   "note": "Search summary: ERJ population study found FEV1 rise >=12% and 200 mL in 17.3% of asthma and 18.4% of COPD participants, so not specific."
+  },
+  {
+   "where": "measures[2].meaning",
+   "sentence": "In NICE COPD guidance (NG115) a post-bronchodilator FEV1/FVC below 0.7, with typical symptoms, confirms airflow obstruction; GOLD uses the same fixed ratio. ERS/ATS 2022 interpretive standards instead use the lower limit of normal (a z-score below -1.645), and many laboratories report it. ...",
+   "basis": "excerpt",
+   "urls": [
+    "https://www.nice.org.uk/guidance/ng115",
+    "https://publications.ersnet.org/content/erj/61/4/2300239",
+    "https://publications.ersnet.org/content/erj/60/1/2101499.full.pdf"
+   ],
+   "note": "NICE: post-bronchodilator spirometry confirms COPD; NICE COPD register indicator and UK summaries use <0.7 (the NG115 PDF text itself was not returned verbatim). GOLD 2023: fixed ratio <0.7, acknowledges LLN debate. ERS/ATS 2022 summary: LLN 5th percentile, z -1.645."
+  },
+  {
+   "where": "measures[3].meaning",
+   "sentence": "In UK asthma guidance (BTS/NICE/SIGN NG245) an FEV1 rise of 12% or more and 200 mL or more after a bronchodilator supports asthma; ERS/ATS 2022 uses a rise of more than 10% of the predicted value. A similar response is also seen in some people with COPD, so it is read with the history and other tests. ...",
+   "basis": "excerpt",
+   "urls": [
+    "https://www.nice.org.uk/guidance/ng245",
+    "https://publications.ersnet.org/content/erj/60/1/2101499.full.pdf",
+    "https://publications.ersnet.org/content/erj/54/3/1900561"
+   ],
+   "note": "NG245 algorithm/guideline summary: 12% and 200 mL; algorithm also accepts 10% of predicted. ERS/ATS 2022: >10% of predicted FEV1 or FVC."
+  },
+  {
+   "where": "whyOrdered[1]",
+   "sentence": "People over 35 who smoke or used to, with symptoms such as breathlessness or persistent cough (case-finding for COPD in people with symptoms)",
+   "basis": "excerpt",
+   "urls": [
+    "https://www.nice.org.uk/guidance/ng115/chapter/recommendations"
+   ],
+   "note": "NG115: suspect COPD in people over 35 with a risk factor (generally smoking or a history of it) and one or more symptoms; summaries list exertional breathlessness, chronic cough, regular sputum, winter bronchitis, wheeze. The symptom list itself was not in the retrieved NICE text."
+  },
+  {
+   "where": "interpretation[0]",
+   "sentence": "Post-bronchodilator FEV1/FVC below 0.7 -> Airflow obstruction; with typical symptoms this confirms COPD in UK guidance. Severity graded by FEV1 as % predicted",
+   "basis": "excerpt",
+   "urls": [
+    "https://www.nice.org.uk/guidance/ng115"
+   ],
+   "note": "'Poor reversibility' dropped: retrieved NICE text says routine reversibility testing is not necessary for diagnosis. 'Severity graded by FEV1' is unchanged original wording, not re-retrieved."
+  }
+ ]
+}

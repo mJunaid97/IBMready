@@ -1,0 +1,78 @@
+{
+ "id": "hormone-tests",
+ "searchesUsed": 4,
+ "counts": {
+  "supported": 8,
+  "textbook": 0,
+  "unsupported": 0,
+  "wrong": 0,
+  "unsafe": 0,
+  "unchecked": 0
+ },
+ "claims": [
+  {
+   "id": "c01",
+   "classification": "supported",
+   "evidence": "NG219 rationale text: 'Most people with gout have hyperuricaemia (serum urate level of 360 micromol/litre [6 mg/dl] or more) but many people with hyperuricaemia do not have gout.'",
+   "url": "https://www.nice.org.uk/guidance/ng219/chapter/Recommendations",
+   "action": "kept"
+  },
+  {
+   "id": "c02",
+   "classification": "supported",
+   "evidence": "NG219: 'Aim for a target serum urate level below 360 micromol/litre'; 'Consider a lower target below 300 micromol/litre (5 mg/dl) for people with gout who have tophi or chronic gouty arthritis, or ongoing frequent flares despite serum urate below 360'. 'Default' is the author's word (360 is the general target; 300 is 'consider', for specified groups). Original omitted 'frequent'.",
+   "url": "https://www.nice.org.uk/guidance/ng219/chapter/Recommendations",
+   "action": "edited",
+   "newSentence": "Its general treatment target in gout is below 360 micromol/L, with below 300 micromol/L suggested for people with tophi, chronic gouty arthritis or ongoing frequent flares despite a level below 360;"
+  },
+  {
+   "id": "c03",
+   "classification": "supported",
+   "evidence": "BSR 2017 (via academic.oup.com/rheumatology/article/56/7/e1/3855179 and PMC10809909 summary): 'recommended an initial target serum urate level of <300 micromol/l for all people receiving ULT'; the guideline then allows adjusting to <=360 once symptom free for years with tophi resolved. 'Recommends below 300 for everyone' omits 'initial', slight overstatement.",
+   "url": "https://academic.oup.com/rheumatology/article/56/7/e1/3855179",
+   "action": "edited",
+   "newSentence": "the British Society for Rheumatology recommends an initial target below 300 micromol/L for everyone starting urate-lowering treatment."
+  },
+  {
+   "id": "c04",
+   "classification": "supported",
+   "evidence": "NG219 (retrieved summary): repeat serum urate 'at least 2 weeks after the acute flare has settled' when urate is below 360 but gout still suspected; reviews: urate normal in ~40% during attack (PMC9989260 area). 'Some weeks' is consistent but vaguer than 'at least 2 weeks'.",
+   "url": "https://www.nice.org.uk/guidance/ng219/chapter/Recommendations",
+   "action": "edited",
+   "newSentence": "Supports gout, but the level can be normal during an attack, so it is often repeated at least two weeks after the attack settles"
+  },
+  {
+   "id": "r01",
+   "classification": "supported",
+   "evidence": "NG219 hyperuricaemia >=360 micromol/L; many with hyperuricaemia never get gout; urate can be normal in attack. Better URL is the Recommendations/Rationale chapter, not the evidence review.",
+   "url": "https://www.nice.org.uk/guidance/ng219/chapter/Recommendations",
+   "action": "edited",
+   "newSentence": "url -> https://www.nice.org.uk/guidance/ng219/chapter/Recommendations"
+  },
+  {
+   "id": "r02",
+   "classification": "supported",
+   "evidence": "NG219 'Aim for a target serum urate level below 360 micromol/litre'. Value/unit correct. Prefer Recommendations URL; section label 'Treating to target'.",
+   "url": "https://www.nice.org.uk/guidance/ng219/chapter/Recommendations",
+   "action": "edited",
+   "newSentence": "url -> Recommendations chapter"
+  },
+  {
+   "id": "r03",
+   "classification": "supported",
+   "evidence": "NG219 'consider' below 300 for tophi, chronic gouty arthritis, ongoing frequent flares despite <360. Context should say 'frequent'.",
+   "url": "https://www.nice.org.uk/guidance/ng219/chapter/Recommendations",
+   "action": "edited",
+   "newSentence": "context: NICE suggests considering a lower target for people with tophi, chronic gouty arthritis or ongoing frequent flares despite urate below 360"
+  },
+  {
+   "id": "r04",
+   "classification": "supported",
+   "evidence": "BSR initial target <300 micromol/L for all receiving ULT (retrieved from PMC10809909 and BSR OUP page). Value/unit/context correct. Primary source is the BSR guideline itself.",
+   "url": "https://academic.oup.com/rheumatology/article/56/7/e1/3855179",
+   "action": "edited",
+   "newSentence": "Optionally add BSR guideline (Rheumatology 2017;56:e1) as the source, keeping PMC10809909 as the comparison article"
+  }
+ ],
+ "notes": "4 searches (hormone-tests gout part only; the other parts of the page were not checked). Retrieved text was search summaries of NICE NG219 recommendations/rationale/evidence review, BSR 2017 (OUP) and PMC10809909. Meanings of the 360 vs 300 split confirmed: 360 general, 300 for tophi/chronic gouty arthritis/ongoing frequent flares; BSR 300 for all as an INITIAL target. Citation fix: use the NG219 Recommendations chapter instead of evidence-review-11, and the Bucks/Tayside local documents are not needed. Not independently retrieved: exact NICE wording 'serum urate ... supports gout' (page says 'Supports gout'; acceptable because NICE says most people with gout are hyperuricaemic)."
+}

@@ -1,0 +1,128 @@
+{
+ "id": "spirometry",
+ "searchesUsed": 9,
+ "counts": {
+  "supported": 15,
+  "textbook": 0,
+  "unsupported": 1,
+  "wrong": 0,
+  "unsafe": 0,
+  "unchecked": 0
+ },
+ "claims": [
+  {
+   "id": "c01",
+   "classification": "supported",
+   "evidence": "'what': reversibility testing 'supports an asthma diagnosis but does not settle it'. NG245 (via summary): no single test has high enough sensitivity and specificity to be diagnostic in all cases; reversibility sensitivity modest. Population studies show similar reversibility in asthma and COPD, so the old 'helps separate asthma from COPD' was weak and the edit is right.",
+   "url": "https://www.nice.org.uk/guidance/ng245",
+   "action": "edited"
+  },
+  {
+   "id": "c02",
+   "classification": "supported",
+   "evidence": "NG115 (via search): diagnosis suspected on symptoms and signs and supported by spirometry; post-bronchodilator FEV1/FVC below 0.7 is the NICE threshold; older people with ratio <0.7 but no typical symptoms: consider alternatives; younger people with symptoms: consider COPD even if ratio >0.7. 'With typical symptoms, confirms airflow obstruction' is a fair paraphrase.",
+   "url": "https://www.nice.org.uk/guidance/ng115/chapter/recommendations",
+   "action": "kept"
+  },
+  {
+   "id": "c03",
+   "classification": "supported",
+   "evidence": "GOLD 2023 executive summary and later reports: spirometric criterion remains post-bronchodilator FEV1/FVC below 0.7.",
+   "url": "https://publications.ersnet.org/content/erj/61/4/2300239",
+   "action": "kept"
+  },
+  {
+   "id": "c04",
+   "classification": "supported",
+   "evidence": "ERS/ATS 2022 standard: 5th and 95th percentiles of healthy population, z-scores -1.645/+1.645, used for LLN. 'Many laboratories report it' is supported by a UK ICB guideline noting ARTP uses LLN (not an authoritative host, but modest claim).",
+   "url": "https://publications.ersnet.org/content/erj/60/1/2101499",
+   "action": "kept"
+  },
+  {
+   "id": "c05",
+   "classification": "supported",
+   "evidence": "NG245: diagnose asthma when FEV1 rises by 12% or more and 200 mL or more from pre-bronchodilator (final wording 'or more'); NG245 also lists an alternative of 10% or more of predicted normal FEV1, and in adults the pathway places eosinophils/FeNO before reversibility. Draft says 'supports asthma', which is a softer, safe wording.",
+   "url": "https://www.nice.org.uk/guidance/ng245/chapter/recommendations",
+   "action": "kept"
+  },
+  {
+   "id": "c06",
+   "classification": "supported",
+   "evidence": "ERS/ATS 2022: significant bronchodilator response = change in FEV1 or FVC of more than 10% of the predicted value.",
+   "url": "https://publications.ersnet.org/content/erj/60/1/2101499",
+   "action": "kept"
+  },
+  {
+   "id": "c07",
+   "classification": "supported",
+   "evidence": "'A similar response is also seen in some people with COPD': population study (PubMed 31221806) found reversibility (>=12% and 200 mL) in 17.3% of asthma and 18.4% of COPD participants; GINA acknowledges reversibility is common in COPD.",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/31221806/",
+   "action": "kept"
+  },
+  {
+   "id": "c08",
+   "classification": "supported",
+   "evidence": "whyOrdered: NICE QS10 / NG115: spirometry in people over 35 with a risk factor (generally smoking or a history of smoking) and one or more COPD symptoms (exertional breathlessness, chronic cough, regular sputum, wheeze).",
+   "url": "https://www.nice.org.uk/guidance/qs10/chapter/quality-statement-1-diagnosis-with-spirometry",
+   "action": "edited"
+  },
+  {
+   "id": "c09",
+   "classification": "supported",
+   "evidence": "Interpretation row 'Post-bronchodilator FEV1/FVC below 0.7': NICE severity table uses post-bronchodilator FEV1 as % predicted; diagnosis needs typical symptoms plus spirometry.",
+   "url": "https://www.nice.org.uk/guidance/ng115/chapter/recommendations",
+   "action": "edited"
+  },
+  {
+   "id": "c10",
+   "classification": "supported",
+   "evidence": "Record 1 value/unit/jurisdiction (FEV1/FVC below 0.7, post-bronchodilator, UK, NG115). Source URL is the guidance overview; better to point at https://www.nice.org.uk/guidance/ng115/chapter/recommendations, section label 'Diagnosing COPD' is reasonable.",
+   "url": "https://www.nice.org.uk/guidance/ng115/chapter/recommendations",
+   "action": "edited"
+  },
+  {
+   "id": "c11",
+   "classification": "unsupported",
+   "evidence": "Record 1 context ends 'a ratio near the limit is repeated'. No retrieved NICE text says this (the retrieved caveat is about older people without typical symptoms and younger people above 0.7).",
+   "url": "https://www.nice.org.uk/guidance/ng115/chapter/recommendations",
+   "action": "edited",
+   "newSentence": "With typical symptoms, confirms airflow obstruction in COPD; older people with a ratio below 0.7 but no typical symptoms are considered for other diagnoses"
+  },
+  {
+   "id": "c12",
+   "classification": "supported",
+   "evidence": "Record 2 (GOLD): fixed post-bronchodilator 0.7. GOLD 2023 executive summary (title returned from publications.ersnet.org/content/erj/61/4/2300239): fixed ratio may under-diagnose young adults and over-diagnose the elderly, especially mild disease, compared with LLN. Source URL, title and section 'Diagnosis' fine.",
+   "url": "https://publications.ersnet.org/content/erj/61/4/2300239",
+   "action": "kept"
+  },
+  {
+   "id": "c13",
+   "classification": "supported",
+   "evidence": "Record 3 (ERS/ATS): 5th/95th percentiles at z = -1.645/+1.645. 'same age, sex and height' is textbook-level standard wording about reference equations (GLI) not seen verbatim; harmless. Section 'Obstruction' unverified but reasonable.",
+   "url": "https://publications.ersnet.org/content/erj/60/1/2101499",
+   "action": "kept"
+  },
+  {
+   "id": "c14",
+   "classification": "supported",
+   "evidence": "Record 4 (NG245 12% and 200 mL, adults): final guideline wording 'FEV1 increase of 12% or more and 200 mL or more'. 'Not specific, also seen in some people with COPD' supported by NG245 limitations and PubMed 31221806. Suggest URL https://www.nice.org.uk/guidance/ng245/chapter/recommendations; section label could be the NG245 recommendations heading on objective tests for diagnosing asthma in adults (not verified verbatim).",
+   "url": "https://www.nice.org.uk/guidance/ng245/chapter/recommendations",
+   "action": "edited"
+  },
+  {
+   "id": "c15",
+   "classification": "supported",
+   "evidence": "Record 5 (ERS/ATS BDR): 'more than 10% of predicted' FEV1 or FVC. Context 'Replaces the 2005 12% and 200 mL criterion in the ERS/ATS standard' is fair for ERS/ATS, but retrieved text says GINA and GOLD still use the 2005 criterion, so 'in the ERS/ATS standard' must stay.",
+   "url": "https://publications.ersnet.org/content/erj/60/1/2101499",
+   "action": "kept"
+  },
+  {
+   "id": "c16",
+   "classification": "supported",
+   "evidence": "Record 6 (over 35): NICE NG115 and QS10: over 35 with a risk factor (smoking/ex-smoking) and symptoms such as exertional breathlessness, chronic cough, regular sputum, wheeze (also frequent winter bronchitis). Context matches.",
+   "url": "https://www.nice.org.uk/guidance/ng115/chapter/recommendations",
+   "action": "kept"
+  }
+ ],
+ "notes": "Only one claim is unsupported: record 1 context 'a ratio near the limit is repeated'. NG245 gives an alternative adult criterion of 10% or more of predicted FEV1 which the draft does not mention; optional addition. NG115 recommendation on older people without typical symptoms was seen only through search summaries."
+}

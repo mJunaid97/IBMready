@@ -1,0 +1,78 @@
+{
+ "id": "kidney-function-tests",
+ "searchesUsed": 4,
+ "counts": {
+  "supported": 9,
+  "textbook": 0,
+  "unsupported": 0,
+  "wrong": 0,
+  "unsafe": 0,
+  "unchecked": 0
+ },
+ "claims": [
+  {
+   "id": "c01",
+   "classification": "supported",
+   "evidence": "kidney.org: G1 = eGFR 90 or higher plus signs of kidney damage (e.g. ACR 30+/ 3 mg/mmol) for 3 months; UK eCKD guide: eGFR >60 without other markers is not CKD.",
+   "url": "https://www.kidney.org/kidney-topics/stages-chronic-kidney-disease-ckd",
+   "action": "kept"
+  },
+  {
+   "id": "c02",
+   "classification": "supported",
+   "evidence": "NICE NG203 (re-retrieved): CKD = abnormal function/structure >3 months incl. GFR <60 on at least 2 occasions >=90 days apart, with or without markers. kidney.org 3 months. Not overstated.",
+   "url": "https://www.nice.org.uk/guidance/ng203/chapter/recommendations",
+   "action": "kept"
+  },
+  {
+   "id": "c03",
+   "classification": "supported",
+   "evidence": "UK eCKD guide/KDIGO 2024: kidney failure = GFR <15 (G5). NKF adds 'for at least 3 months or dialysis', so the unqualified sentence is slightly compressed but not wrong.",
+   "url": "https://www.ukkidney.org/health-professionals/information-resources/uk-eckd-guide",
+   "action": "kept"
+  },
+  {
+   "id": "c04",
+   "classification": "supported",
+   "evidence": "KDIGO categories retrieved: G3a 45-59, G3b 30-44, G4 15-29, G5 <15; NICE uses the same G1-G5 categories. 'on repeated tests' consistent with persistence rule.",
+   "url": "https://www.nice.org.uk/guidance/ng203/chapter/recommendations",
+   "action": "kept"
+  },
+  {
+   "id": "c05",
+   "classification": "supported",
+   "evidence": "NHS HEE document: eGFR falls to about 40 mL/min before creatinine exceeds the upper normal limit (creatinine 'blind spot'); qualitative wording is not overstated (it understates). Suggest citing https://nshcs.hee.nhs.uk/wp-content/uploads/2019/08/Chronic-kidney-diseases-and-tests-for-glomerular-functions.pdf as it was the retrieved page.",
+   "url": "https://nshcs.hee.nhs.uk/wp-content/uploads/2019/08/Chronic-kidney-diseases-and-tests-for-glomerular-functions.pdf",
+   "action": "kept"
+  },
+  {
+   "id": "r01",
+   "classification": "supported",
+   "evidence": "NICE NG203: GFR <60 on at least 2 occasions at least 90 days apart (with or without markers); markers of kidney damage give CKD at any eGFR. UK correct. Source URL (guideline root) plausible; recommendations page is the more specific.",
+   "url": "https://www.nice.org.uk/guidance/ng203/chapter/recommendations",
+   "action": "kept"
+  },
+  {
+   "id": "r02",
+   "classification": "supported",
+   "evidence": "kidney.org: G1 eGFR>=90 plus damage markers for 3 months; UK eCKD guide agrees. Jurisdiction US is accurate for the cited NKF page (content is KDIGO-based, so GLOBAL would also be defensible).",
+   "url": "https://www.kidney.org/kidney-topics/stages-chronic-kidney-disease-ckd",
+   "action": "kept"
+  },
+  {
+   "id": "r03",
+   "classification": "supported",
+   "evidence": "kidney.org: G3a 45-59, mild to moderate loss, at least 3 months. KDIGO 2024 same. US label accurate for source.",
+   "url": "https://www.kidney.org/kidney-topics/stages-chronic-kidney-disease-ckd",
+   "action": "kept"
+  },
+  {
+   "id": "r04",
+   "classification": "supported",
+   "evidence": "UK eCKD guide/KDIGO: GFR <15 = kidney failure (G5); NKF stage 5 page mentions dialysis/transplant; NICE uses the same label. UK correct.",
+   "url": "https://www.ukkidney.org/health-professionals/information-resources/uk-eckd-guide",
+   "action": "kept"
+  }
+ ],
+ "notes": "Nothing must change. Extra support for notes (do not add as records): G3b eGFR 30-44 (moderately to severely decreased) and G4 eGFR 15-29 (severely decreased) retrieved from KDIGO 2012 (https://kdigo.org/wp-content/uploads/2017/02/KDIGO_2012_CKD_GL.pdf), KDIGO 2024 (https://kdigo.org/wp-content/uploads/2024/03/KDIGO-2024-CKD-Guideline.pdf) and confirmed as the same categories used by NICE NG203 (https://www.nice.org.uk/guidance/ng203/chapter/recommendations). Optional improvement: because NG203 has the persistence rule as >=2 results >=90 days apart, r01 value 'persisting for more than 90 days' is fine. Search tool gives blended summaries; page-level attribution is by plausibility."
+}

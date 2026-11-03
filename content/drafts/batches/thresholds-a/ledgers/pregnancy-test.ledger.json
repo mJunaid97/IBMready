@@ -1,0 +1,66 @@
+{
+ "id": "pregnancy-test",
+ "pass1": [
+  {
+   "id": "c01",
+   "where": "what",
+   "sentence": "hCG is a hormone that begins to be made in the days after fertilisation, as the embryo implants in the womb.",
+   "basis": "excerpt",
+   "urls": [
+    "https://www.nhs.uk/pregnancy/trying-for-a-baby/doing-a-pregnancy-test/",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC5330618/"
+   ],
+   "note": "Search summaries: NHS says hCG starts around 6 days after fertilisation; a review says detectable 6-14 days after fertilisation. Made non-numeric and consistent with 'within days of implantation'."
+  },
+  {
+   "id": "c02",
+   "where": "what",
+   "sentence": "a blood test gives a number that normally rises steeply in a healthy early pregnancy.",
+   "basis": "excerpt",
+   "urls": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC4846421/"
+   ],
+   "note": "Review: doubling every 24-48 hours; 'every two days' removed as sources vary (1.94 d average; 29-53 h)."
+  },
+  {
+   "id": "c03",
+   "where": "measures[0].meaning",
+   "sentence": "Most tests can be used from the first day of a missed period; some very sensitive tests can be used earlier.",
+   "basis": "excerpt",
+   "urls": [
+    "https://www.nhs.uk/pregnancy/trying-for-a-baby/doing-a-pregnancy-test/"
+   ],
+   "note": "NHS: most tests can be done from the first day of a missed period; some very sensitive tests before."
+  },
+  {
+   "id": "c04",
+   "where": "measures[0].meaning",
+   "sentence": "[removed in pass 2] Modern tests detect low levels of hCG.",
+   "basis": "excerpt",
+   "urls": [
+    "https://www.nhs.uk/pregnancy/trying-for-a-baby/doing-a-pregnancy-test/"
+   ],
+   "note": "'20-25 IU/L' removed: a retrieved source says urine tests typically do not detect below 20 mIU/mL, but it was not a named guideline."
+  },
+  {
+   "id": "c05",
+   "where": "preparation",
+   "sentence": "NHS advice is to test at least 21 days (three weeks) after the last unprotected sex.",
+   "basis": "excerpt",
+   "urls": [
+    "https://www.nhs.uk/pregnancy/trying-for-a-baby/doing-a-pregnancy-test/"
+   ],
+   "note": "NHS: if you don't know when your next period is due, test at least 21 days after unprotected sex."
+  },
+  {
+   "id": "c06",
+   "where": "interpretation[0].meaning",
+   "sentence": "an ultrasound scan at about 6 to 7 weeks can confirm where the pregnancy is",
+   "basis": "excerpt",
+   "urls": [
+    "https://www.uhb.nhs.uk/services/fertility/early-pregnancy/"
+   ],
+   "note": "UHB: early scan usually at about 6-7 weeks by transvaginal ultrasound to confirm fetal heart and intrauterine pregnancy; Tommy's says about 6 weeks."
+  }
+ ]
+}

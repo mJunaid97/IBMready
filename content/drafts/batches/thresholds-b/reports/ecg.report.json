@@ -1,0 +1,80 @@
+{
+ "id": "ecg",
+ "searchesUsed": 10,
+ "counts": {
+  "supported": 7,
+  "textbook": 0,
+  "unsupported": 2,
+  "wrong": 0,
+  "unsafe": 0,
+  "unchecked": 0
+ },
+ "claims": [
+  {
+   "id": "c01",
+   "classification": "supported",
+   "evidence": "BHF page 'Heart and pulse rate: what's normal and how to check it': normal adult resting heart rate usually 60 to 100 bpm; some people (e.g. very fit) fall outside. 'In sinus rhythm' qualifier is textbook.",
+   "url": "https://www.bhf.org.uk/informationsupport/how-a-healthy-heart-works/your-heart-rate",
+   "action": "kept"
+  },
+  {
+   "id": "c02",
+   "classification": "unsupported",
+   "evidence": "Fact (ECG within 10 min of first medical contact) is carried by NHS England North NSTEMI guideline (quotes ESC), SECAmb PPCI flowchart ('within 10 minutes of arrival') and the 2014 NICE QS68 briefing paper (a consultation document, which calls it a target often missed). The current QS68 statements (overview, updated 18 Nov 2020, aligned to NG185) are: 1 diagnosis by universal definition ... 6 primary PCI; none is an ECG-timing statement, and no 10-minute wording was found in NG185. README also bars test cut-offs from prose.",
+   "url": "https://www.england.nhs.uk/north/wp-content/uploads/sites/5/2019/01/guidelines-management-of-patients-with-NSTEMI-acute-coronary-syndrome.pdf",
+   "action": "edited",
+   "newSentence": "Chest pain (a 12-lead ECG is recorded promptly when a heart attack is suspected)"
+  },
+  {
+   "id": "c03",
+   "classification": "supported",
+   "evidence": "Fourth Universal Definition (2018): STEMI needs new ST elevation at the J-point in two contiguous leads (1 mm in most leads; V2-V3 cut-points depend on sex and age). 'Adjacent' to 'contiguous' is correct. Note a Fifth Universal Definition (2026, EHJ 47(40):5911) now exists and keeps the same framework.",
+   "url": "https://academic.oup.com/eurheartj/article/40/3/237/5079081",
+   "action": "kept"
+  },
+  {
+   "id": "c04",
+   "classification": "supported",
+   "evidence": "NICE CG95 recommendations: 'Do not exclude an ACS when people have a normal resting 12-lead ECG'; serial resting ECGs listed. NHS heart-attack diagnosis page pairs ECG with troponin blood tests. Explicit equivalent wording in NG185 was NOT found (NG185 only says look for dynamic/unstable ischaemic patterns). The removed 'a third' figure was unsupported, so removal is right.",
+   "url": "https://www.nice.org.uk/guidance/cg95/chapter/recommendations",
+   "action": "kept"
+  },
+  {
+   "id": "c05",
+   "classification": "supported",
+   "evidence": "Same CG95 text (do not exclude ACS on a normal ECG; serial ECGs) plus NICE patient guidance: second troponin sample 3 hours after the first unless first is normal and risk low.",
+   "url": "https://www.nice.org.uk/guidance/cg95/ifp/chapter/investigations-for-unstable-angina-or-a-heart-attack",
+   "action": "kept"
+  },
+  {
+   "id": "r01",
+   "classification": "supported",
+   "evidence": "Record 'Normal resting heart rate (adult)': BHF page title and excerpt match (usually 60-100 bpm, athletes outside it). Source URL is the page that says it; section label 'Normal resting heart rate' is reasonable. Jurisdiction UK fine.",
+   "url": "https://www.bhf.org.uk/informationsupport/how-a-healthy-heart-works/your-heart-rate",
+   "action": "kept"
+  },
+  {
+   "id": "r02",
+   "classification": "unsupported",
+   "evidence": "Value 'within 10 minutes of first medical contact' is true in guidelines, but the cited source/section does not carry it: QS68 current statements contain no 'Statement on 12-lead ECG within 10 minutes'; only the 2014 briefing paper and the CG95-era/ESC wording do. NG185 has no 10-minute wording found. Attribution is therefore wrong.",
+   "url": "https://www.england.nhs.uk/north/wp-content/uploads/sites/5/2019/01/guidelines-management-of-patients-with-NSTEMI-acute-coronary-syndrome.pdf",
+   "action": "edited",
+   "newSentence": "Replace source with title 'NHS England (North): Guidelines for management of patients with NSTEMI acute coronary syndrome (cites ESC: 12-lead ECG within 10 minutes of first medical contact)', url as given, section 'ECG', jurisdiction UK (regional NHS document, 2016). Or delete the record and keep the AHA/ACC US record."
+  },
+  {
+   "id": "r03",
+   "classification": "supported",
+   "evidence": "2021 AHA/ACC chest pain guideline: ECG should be acquired and interpreted within 10 minutes of arrival; slide set says the same for all acute chest pain regardless of setting and frames it as reviewed for STEMI. Better primary URL: the guideline itself. Section label 'Initial evaluation' not verified but reasonable.",
+   "url": "https://www.ahajournals.org/doi/10.1161/CIR.0000000000001029",
+   "action": "kept"
+  },
+  {
+   "id": "r04",
+   "classification": "supported",
+   "evidence": "Fourth Universal Definition: new ST elevation at J-point in two contiguous leads; 1 mm in most leads, V2-V3 depends on sex/age (2 mm men >=40, 2.5 mm men <40, 1.5 mm women). Context sentence matches. 'Two or more' is consistent with 'two contiguous leads'. Section 'ECG detection of MI' reasonable (criteria in Table 2). Currency: superseded by Fifth edition (2026).",
+   "url": "https://academic.oup.com/eurheartj/article/40/3/237/5079081",
+   "action": "kept"
+  }
+ ],
+ "notes": "Searched with different wording from author. (b) QS68 is live (published 2014, updated 18 Nov 2020, based on CG95 and NG185) but its six statements contain no ECG-timing statement; 10 min appears only in the briefing paper and guideline text. Removed refs NHS ECG page and NG185 are fine, but NG185 never retrieved with explicit 'normal ECG does not exclude' wording (CG95 does). Fifth Universal Definition (2026) now exists. whyOrdered[0] still has a 10-minute cut-off in prose, contrary to README; suggested wording removes it."
+}

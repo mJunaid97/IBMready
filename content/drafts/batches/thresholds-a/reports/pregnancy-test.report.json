@@ -1,0 +1,73 @@
+{
+ "id": "pregnancy-test",
+ "searchesUsed": 6,
+ "counts": {
+  "supported": 7,
+  "textbook": 1,
+  "unsupported": 0,
+  "wrong": 0,
+  "unsafe": 0,
+  "unchecked": 0
+ },
+ "claims": [
+  {
+   "id": "c01",
+   "classification": "supported",
+   "evidence": "Retrieved: Tommy's - earliest traces in urine ~6 days after the fertilised egg implants; NHS lab page - positive 7-10 days after conception; review - detectable ~8th day after ovulation/6-8 days post-fertilisation; hCG secreted by syncytiotrophoblast (Endotext NBK278962). Sentence 'begins to be made in the days after fertilisation, as the embryo implants' fits all of these. Internally consistent with 'appears in blood and urine within days of the embryo implanting' elsewhere in the same text (both: days, around implantation). The old text ('made by the placenta from about a week after implantation') was the inconsistent one and is now gone. Retrieved sources conflict on fertilisation vs implantation counting, so no numbers is the right call.",
+   "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK278962/",
+   "action": "kept"
+  },
+  {
+   "id": "c02",
+   "classification": "supported",
+   "evidence": "Endotext/PMC reviews: hCG roughly doubles about every 48 h (1.4-2.1 d, 2.0 +/-1 d at 3-4 weeks) in normal early pregnancy; 'steeply rises' is a fair paraphrase.",
+   "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK278962/",
+   "action": "kept"
+  },
+  {
+   "id": "c03",
+   "classification": "supported",
+   "evidence": "NHS summary: 'Most tests can be done from the first day of a missed period'; some very sensitive tests earlier. 'Positive from' is slightly stronger than 'can be done from' (a negative that early is less dependable).",
+   "url": "https://www.nhs.uk/pregnancy/trying-for-a-baby/doing-a-pregnancy-test/",
+   "action": "edited",
+   "newSentence": "Most tests can be used from the first day of a missed period; some very sensitive tests can be used earlier."
+  },
+  {
+   "id": "c04",
+   "classification": "textbook",
+   "evidence": "NHS pages (Tommy's; lab pages) say tests detect hCG early/typical sensitivity ~25 IU/L, but no UK source retrieved states 'modern tests detect low levels' in those words. Vague and undisputed; acceptable as textbook, or delete as it adds nothing.",
+   "url": "https://www.nhs.uk/pregnancy/trying-for-a-baby/doing-a-pregnancy-test/",
+   "action": "kept"
+  },
+  {
+   "id": "c05",
+   "classification": "supported",
+   "evidence": "NHS (retrieved summary): 'If you don't know when your period is due, testing at least 21 days after unprotected sex is the advice'; Leicester sexual health says three weeks from last unprotected sex. Page phrase 'at least 21 days (three weeks)' correct.",
+   "url": "https://www.nhs.uk/pregnancy/trying-for-a-baby/doing-a-pregnancy-test/",
+   "action": "kept"
+  },
+  {
+   "id": "c06",
+   "classification": "supported",
+   "evidence": "UHB early-pregnancy page: 'scan usually performed as early as six to seven weeks', transvaginal, to confirm fetal heart and intrauterine pregnancy. Bucks NHS: scan at around 6-7 weeks to confirm pregnancy is in the womb; RCOG leaflet says 6-8 weeks. 'About 6 to 7 weeks' acceptable; note it is typical timing, not a hard rule.",
+   "url": "https://www.uhb.nhs.uk/services/fertility/early-pregnancy.htm",
+   "action": "kept"
+  },
+  {
+   "id": "r01",
+   "classification": "supported",
+   "evidence": "NHS: at least 21 days after unprotected sex if period date unknown; testing earlier gives false negative (Leicester/Chelsea & Westminster/Tommy's). Value, unit, context OK.",
+   "url": "https://www.nhs.uk/pregnancy/trying-for-a-baby/doing-a-pregnancy-test/",
+   "action": "kept"
+  },
+  {
+   "id": "r02",
+   "classification": "supported",
+   "evidence": "UHB page (as returned: https://www.uhb.nhs.uk/services/fertility/early-pregnancy.htm): scan as early as 6-7 weeks, transvaginal, confirm fetal heart and intrauterine pregnancy. 'Earliest ultrasound confirmation' in name overstates (scan is usually at 6-7 weeks; heartbeat can be seen from about 6 weeks); retrieved trust text says scans before 6 weeks often inconclusive. Source url in fragment lacks '.htm' - the search returned the .htm form.",
+   "url": "https://www.uhb.nhs.uk/services/fertility/early-pregnancy.htm",
+   "action": "edited",
+   "newSentence": "name: 'Usual timing of an early pregnancy scan'; fix source url to https://www.uhb.nhs.uk/services/fertility/early-pregnancy.htm (also in references)"
+  }
+ ],
+ "notes": "Searches used 6. NHS page itself came back only as a summary ('Most tests can be done from the first day of a missed period... at least 21 days after unprotected sex'); other NHS/Tommy's pages agree. Internal consistency check: the new `what` sentence ('begins to be made in the days after fertilisation, as the embryo implants') matches 'appears in blood and urine within days of the embryo implanting' in the live tests.json text. Note live tests.json still has the old text: 'made by the placenta from about a week after implantation', 'double every two days', '20-25 IU/L', 'wait at least three weeks', 'ultrasound from 6 weeks'; the fragment replaces all of these. Not checked (not in ledger): 'Pregnant, almost always' and the rest of the page."
+}

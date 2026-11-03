@@ -1,0 +1,54 @@
+{
+ "id": "crp",
+ "pass1": [
+  {
+   "id": "c01",
+   "where": "what",
+   "sentence": "its concentration can climb steeply during a severe infection",
+   "basis": "excerpt",
+   "urls": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC11211361/"
+   ],
+   "note": "'many hundred-fold' removed: not retrieved."
+  },
+  {
+   "id": "c02",
+   "where": "measures[0].meaning",
+   "sentence": "Starts to rise within hours of a trigger, peaks within a day or two and falls quickly once the trigger resolves.",
+   "basis": "excerpt",
+   "urls": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC11211361/",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC3826426/"
+   ],
+   "note": "Reviews: begins to rise 6-12 h, peaks about 48 h, half-life about 19 h. Numbers softened to words."
+  },
+  {
+   "id": "c03",
+   "where": "measures[0].meaning",
+   "sentence": "Very high levels suggest bacterial infection or major inflammation; mild elevations are common and non-specific.",
+   "basis": "excerpt",
+   "urls": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC7152028/"
+   ],
+   "note": "Review: levels as high as 400 mg/L usually only in severe bacterial infection or sepsis; '100 mg/L' and 'in the hundreds' not defined as a standard band in any retrieved page."
+  },
+  {
+   "id": "c04",
+   "where": "measures[0].meaning",
+   "sentence": "For adults with a suspected lower respiratory tract infection, when it is unclear whether antibiotics are needed NICE suggests considering a point-of-care CRP test: above 100 mg/L points to offering antibiotics straight away, 20 to 100 mg/L to considering a back-up (delayed) prescription, and below 20 mg/L to not routinely offering them.",
+   "basis": "excerpt",
+   "urls": [
+    "https://www.nice.org.uk/guidance/ng237/chapter/Recommendations"
+   ],
+   "note": "NG237: offer immediately if >100; consider back-up/delayed prescription 20-100; do not routinely offer <20."
+  },
+  {
+   "id": "c05",
+   "where": "interpretation[1].finding",
+   "sentence": "Mildly raised CRP (a small rise above the laboratory's reference limit)",
+   "basis": "excerpt",
+   "urls": [],
+   "note": "'roughly 5-20 mg/L': no retrieved page defines a mild band; one hospital lists 0-5, another 'normal under 10', so the number was removed."
+  }
+ ]
+}

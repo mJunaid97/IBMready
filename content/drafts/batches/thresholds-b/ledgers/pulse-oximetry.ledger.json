@@ -1,0 +1,34 @@
+{
+ "id": "pulse-oximetry",
+ "items": [
+  {
+   "where": "measures[0].meaning",
+   "sentence": "95-100% is the usual normal range in healthy adults; 88-92% is the oxygen target for people at risk of carbon dioxide retention, such as those with COPD (British Thoracic Society).",
+   "basis": "excerpt",
+   "urls": [
+    "https://medlineplus.gov/lab-tests/pulse-oximetry/",
+    "https://www.england.nhs.uk/coronavirus/documents/c1541-self-monitoring-covid-19-diary-v2-print-version-january-2022/",
+    "https://www.brit-thoracic.org.uk/document-library/guidelines/emergency-oxygen/bts-guideline-for-oxygen-use-in-adults-in-healthcare-and-emergency-settings/"
+   ],
+   "note": "MedlinePlus: normal 95-100%. NHS England diary: 95 to 100 (ambiguous snippet). BTS: 94-98% for most acutely ill adults, 88-92% for COPD or other risk of hypercapnic failure pending blood gases; TSANZ (Australia) the same 88-92%."
+  },
+  {
+   "where": "measures[1].meaning",
+   "sentence": "The pressure of dissolved oxygen; below 8 kPa on air is the usual definition of hypoxaemic (type 1) respiratory failure.",
+   "basis": "excerpt",
+   "urls": [
+    "https://www.uhd.nhs.uk/uploads/news/docs/bulletin/medical-gases-learning-package.pdf"
+   ],
+   "note": "Search summary: UK NHS learning package uses PaO2 below 8 kPa; other sources the same (60 mmHg). The page said 'defines respiratory failure'; narrowed to type 1."
+  },
+  {
+   "where": "interpretation[0]",
+   "sentence": "Low SpO2 on air -> Low oxygen saturation: needs urgent assessment (call 999 in an emergency, otherwise NHS 111 or the GP the same day); clinicians give oxygen to a target range, which is lower (88 to 92%) for people at risk of carbon dioxide retention",
+   "basis": "excerpt",
+   "urls": [
+    "https://www.brit-thoracic.org.uk/document-library/guidelines/emergency-oxygen/bts-guideline-for-oxygen-use-in-adults-in-healthcare-and-emergency-settings/"
+   ],
+   "note": "'Below 92%' removed: retrieved sources gave 92% only as COVID home-monitoring leaflets (local, dated) and MedlinePlus (US: contact provider at 92% or lower, urgent at 88% or lower), so no UK general cut-off was found. Signposting is the site rule, not a retrieved claim."
+  }
+ ]
+}

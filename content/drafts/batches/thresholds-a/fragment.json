@@ -1,0 +1,666 @@
+{
+ "patch": {
+  "tests": {
+   "blood-glucose": {
+    "measures": [
+     {
+      "item": "Fasting glucose",
+      "meaning": "After at least 8 hours without food. A fasting level of 7.0 mmol/L or above indicates diabetes and, without symptoms, is confirmed by a second test on another day. Normal fasting values differ slightly between countries and laboratories, so the report gives the range used."
+     },
+     {
+      "item": "Random glucose",
+      "meaning": "Any time of day; 11.1 mmol/L or above with symptoms suggests diabetes."
+     },
+     {
+      "item": "Oral glucose tolerance",
+      "meaning": "Glucose two hours after a 75 g drink; used in pregnancy and borderline cases."
+     }
+    ],
+    "preparation": "Fasting tests need at least 8 hours without food, water allowed.",
+    "interpretation": [
+     {
+      "finding": "Fasting 6.1-6.9 mmol/L",
+      "meaning": "Impaired fasting glucose on the World Health Organization definition, a form of prediabetes. NICE flags a fasting level of 5.5 to 6.9 mmol/L as high risk of type 2 diabetes, and US sources start at 5.6, so the lower limit depends on the guideline used"
+     },
+     {
+      "finding": "Fasting 7.0 or above",
+      "meaning": "Diabetes if confirmed on a second test, or if symptoms are present"
+     },
+     {
+      "finding": "Below 4.0 mmol/L",
+      "meaning": "Hypoglycaemia in people with diabetes, usually from insulin or a sulfonylurea; mild episodes are treated with fast-acting carbohydrate as set out in the care plan, and confusion, drowsiness or a seizure is an emergency (call 999)"
+     }
+    ],
+    "thresholds": [
+     {
+      "name": "Diabetes: fasting plasma glucose",
+      "value": "7.0 or above",
+      "unit": "mmol/L",
+      "context": "Adults; without symptoms a second abnormal test on another day is needed to confirm; with typical symptoms one result can be enough",
+      "jurisdiction": "UK",
+      "source": {
+       "title": "Diabetes UK: Diagnostic criteria for diabetes",
+       "url": "https://www.diabetes.org.uk/for-professionals/improving-care/clinical-recommendations-for-professionals/diagnosis-ongoing-management-monitoring/new_diagnostic_criteria_for_diabetes",
+       "section": "Diagnostic criteria"
+      }
+     },
+     {
+      "name": "Diabetes: random plasma glucose",
+      "value": "11.1 or above",
+      "unit": "mmol/L",
+      "context": "Venous plasma, any time of day, with symptoms such as thirst, passing a lot of urine or weight loss",
+      "jurisdiction": "UK",
+      "source": {
+       "title": "Diabetes UK: Diagnostic criteria for diabetes",
+       "url": "https://www.diabetes.org.uk/for-professionals/improving-care/clinical-recommendations-for-professionals/diagnosis-ongoing-management-monitoring/new_diagnostic_criteria_for_diabetes",
+       "section": "Diagnostic criteria"
+      }
+     },
+     {
+      "name": "Diabetes: 2-hour glucose tolerance test",
+      "value": "11.1 or above",
+      "unit": "mmol/L",
+      "context": "Venous plasma two hours after 75 g of anhydrous glucose",
+      "jurisdiction": "UK",
+      "source": {
+       "title": "Diabetes UK: Diagnostic criteria for diabetes",
+       "url": "https://www.diabetes.org.uk/for-professionals/improving-care/clinical-recommendations-for-professionals/diagnosis-ongoing-management-monitoring/new_diagnostic_criteria_for_diabetes",
+       "section": "Diagnostic criteria"
+      }
+     },
+     {
+      "name": "Impaired fasting glucose (WHO definition)",
+      "value": "6.1 to 6.9",
+      "unit": "mmol/L",
+      "context": "Fasting plasma glucose; a form of intermediate hyperglycaemia (prediabetes)",
+      "jurisdiction": "GLOBAL",
+      "source": {
+       "title": "NICE PH38 glossary: high risk, impaired fasting glucose",
+       "url": "https://www.nice.org.uk/guidance/ph38/chapter/Glossary",
+       "section": "Glossary"
+      }
+     },
+     {
+      "name": "High risk of type 2 diabetes (NICE)",
+      "value": "5.5 to 6.9",
+      "unit": "mmol/L",
+      "context": "Fasting plasma glucose used by NICE to identify people at high risk; HbA1c 42 to 47 mmol/mol is the alternative marker",
+      "jurisdiction": "UK",
+      "source": {
+       "title": "NICE PH38 glossary: high risk, impaired fasting glucose",
+       "url": "https://www.nice.org.uk/guidance/ph38/chapter/Glossary",
+       "section": "Glossary"
+      }
+     },
+     {
+      "name": "Impaired fasting glucose (US usage)",
+      "value": "5.6 to 6.9",
+      "unit": "mmol/L",
+      "context": "Lower limit MedlinePlus gives for impaired fasting glucose, in line with US (ADA-style) usage; it is lower than the WHO limit, so the two differ",
+      "jurisdiction": "US",
+      "source": {
+       "title": "MedlinePlus: Blood sugar test",
+       "url": "https://medlineplus.gov/ency/article/003482.htm",
+       "section": "Normal results"
+      }
+     },
+     {
+      "name": "Hypoglycaemia (in diabetes)",
+      "value": "Below 4",
+      "unit": "mmol/L",
+      "context": "Diabetes UK and NHS guidance describe a hypo as a glucose level below 4 mmol/L",
+      "jurisdiction": "UK",
+      "source": {
+       "title": "NHS 111 Wales: Hypoglycaemia",
+       "url": "https://111.wales.nhs.uk/encyclopaedia/h/article/hypoglycaemia/",
+       "section": "Hypoglycaemia"
+      }
+     },
+     {
+      "name": "Fasting before a glucose test",
+      "value": "At least 8 hours",
+      "unit": "hours",
+      "context": "Water only; some guidance gives 8 to 10 hours",
+      "jurisdiction": "UK",
+      "source": {
+       "title": "Lab Tests Online UK: Glucose tests",
+       "url": "https://labtestsonline.org.uk/tests/glucose-tests",
+       "section": "Preparation"
+      }
+     }
+    ],
+    "references": [
+     {
+      "title": "Diabetes UK: Diagnostic criteria for diabetes",
+      "url": "https://www.diabetes.org.uk/for-professionals/improving-care/clinical-recommendations-for-professionals/diagnosis-ongoing-management-monitoring/new_diagnostic_criteria_for_diabetes",
+      "jurisdiction": "UK",
+      "type": "guidance"
+     },
+     {
+      "title": "NICE PH38 glossary",
+      "url": "https://www.nice.org.uk/guidance/ph38/chapter/Glossary"
+     },
+     {
+      "title": "MedlinePlus: Blood sugar test",
+      "url": "https://medlineplus.gov/ency/article/003482.htm"
+     },
+     {
+      "title": "NHS 111 Wales: Hypoglycaemia",
+      "url": "https://111.wales.nhs.uk/encyclopaedia/h/article/hypoglycaemia/",
+      "jurisdiction": "UK",
+      "type": "regulatory"
+     },
+     {
+      "title": "Lab Tests Online UK: Glucose tests",
+      "url": "https://labtestsonline.org.uk/tests/glucose-tests"
+     }
+    ]
+   },
+   "kidney-function-tests": {
+    "measures": [
+     {
+      "item": "Creatinine",
+      "meaning": "Muscle waste cleared by filtration; rises as kidney function falls. Depends on muscle mass."
+     },
+     {
+      "item": "eGFR",
+      "meaning": "Estimated glomerular filtration rate in mL/min/1.73 m². A value of 90 or above is normal only if there is no other sign of kidney damage; a value below 60 for three months or more defines chronic kidney disease, and below 15 is kidney failure."
+     },
+     {
+      "item": "Urea",
+      "meaning": "Protein waste; rises with poor kidney function but also dehydration, bleeding into the gut and high protein intake."
+     },
+     {
+      "item": "Sodium and potassium",
+      "meaning": "Usually reported together; potassium climbs dangerously when kidneys fail."
+     }
+    ],
+    "interpretation": [
+     {
+      "finding": "Rising creatinine over hours to days",
+      "meaning": "Acute kidney injury: dehydration, sepsis, obstruction, drugs; usually reversible if caught"
+     },
+     {
+      "finding": "eGFR below 60 on repeated tests",
+      "meaning": "Chronic kidney disease, graded from G3a to G5 by the value"
+     },
+     {
+      "finding": "High urea, normal creatinine",
+      "meaning": "Dehydration or gut bleeding rather than kidney damage"
+     }
+    ],
+    "limitations": "eGFR is an estimate; it is inaccurate at extremes of muscle mass, in pregnancy and in rapidly changing illness. A substantial share of kidney function can be lost before creatinine leaves the normal range.",
+    "thresholds": [
+     {
+      "name": "Chronic kidney disease (eGFR below 60)",
+      "value": "eGFR below 60, persisting for more than 90 days",
+      "unit": "mL/min/1.73 m²",
+      "context": "Adults; also diagnosed at any eGFR when markers of kidney damage such as albuminuria are present",
+      "jurisdiction": "UK",
+      "source": {
+       "title": "NICE NG203: Chronic kidney disease: assessment and management",
+       "url": "https://www.nice.org.uk/guidance/ng203",
+       "section": "1.1 Investigations for chronic kidney disease"
+      }
+     },
+     {
+      "name": "Normal eGFR (stage G1)",
+      "value": "eGFR 90 or above",
+      "unit": "mL/min/1.73 m²",
+      "context": "Counts as chronic kidney disease only if kidney damage such as albuminuria is also present for 3 months or more",
+      "jurisdiction": "US",
+      "source": {
+       "title": "National Kidney Foundation: Stages of chronic kidney disease",
+       "url": "https://www.kidney.org/kidney-topics/stages-chronic-kidney-disease-ckd",
+       "section": "Stages of CKD"
+      }
+     },
+     {
+      "name": "CKD stage G3a",
+      "value": "eGFR 45 to 59",
+      "unit": "mL/min/1.73 m²",
+      "context": "Mildly to moderately decreased; persisting for 3 months or more",
+      "jurisdiction": "US",
+      "source": {
+       "title": "National Kidney Foundation: Stages of chronic kidney disease",
+       "url": "https://www.kidney.org/kidney-topics/stages-chronic-kidney-disease-ckd",
+       "section": "Stages of CKD"
+      }
+     },
+     {
+      "name": "Kidney failure (stage G5)",
+      "value": "eGFR below 15",
+      "unit": "mL/min/1.73 m²",
+      "context": "NICE refers to an eGFR below 15 as kidney failure; dialysis or transplantation may be needed",
+      "jurisdiction": "UK",
+      "source": {
+       "title": "NICE NG203: Chronic kidney disease: assessment and management",
+       "url": "https://www.nice.org.uk/guidance/ng203",
+       "section": "1.1 Investigations for chronic kidney disease"
+      }
+     }
+    ],
+    "references": [
+     {
+      "title": "National Kidney Foundation: Stages of chronic kidney disease",
+      "url": "https://www.kidney.org/kidney-topics/stages-chronic-kidney-disease-ckd"
+     },
+     {
+      "title": "KDIGO 2024 clinical practice guideline for the evaluation and management of chronic kidney disease",
+      "url": "https://kdigo.org/guidelines/ckd-evaluation-and-management/"
+     }
+    ]
+   },
+   "urine-protein": {
+    "whyOrdered": [
+     "Yearly in diabetes",
+     "High blood pressure, kidney disease, lupus",
+     "Frothy urine or unexplained swelling",
+     "Pregnancy with high blood pressure (pre-eclampsia)",
+     "Staging chronic kidney disease and informing decisions on kidney-protecting medicines",
+     "Heart disease, a family history of kidney disease, smoking or obesity, where early kidney damage is more likely",
+     "Monitoring known kidney disease and checking whether treatment is reducing the leak",
+     "Confirming or excluding kidney damage when the eGFR is reduced, or detecting it when the eGFR is still normal"
+    ],
+    "measures": [
+     {
+      "item": "Albumin:creatinine ratio (ACR)",
+      "meaning": "The amount of albumin in a single urine sample divided by the creatinine in the same sample. Creatinine leaves the body at a fairly steady rate, so dividing by it corrects for how concentrated or dilute the urine is, which depends on how much the person has drunk. Below 3 mg/mmol is normal to mildly raised (category A1); 3 to 30 is moderately raised (A2); above 30 is severely raised (A3). Combined with eGFR to stage kidney disease, and used to follow how well treatment is protecting the kidneys."
+     },
+     {
+      "item": "Protein:creatinine ratio",
+      "meaning": "All proteins, not just albumin, used when large amounts leak (above 300 mg/mmol is called the nephrotic range in some NHS laboratory guidance) and when non-albumin proteins are suspected; the ACR is the more sensitive test for the small leaks of early disease."
+     },
+     {
+      "item": "24-hour collection",
+      "meaning": "The old gold standard; a random or early-morning ACR performs as well and is far more convenient, so timed collections are now rarely needed."
+     },
+     {
+      "item": "Dipstick protein",
+      "meaning": "A quick bedside screen that detects only larger amounts of protein; it is not sensitive enough to pick up the moderately raised albumin of early kidney damage, so a negative dipstick does not replace a laboratory ACR in people at risk."
+     }
+    ],
+    "limitations": "Exercise, fever, infection and standing for long periods raise protein transiently; in the UK an ACR of 3 to 70 mg/mmol is usually confirmed with a repeat early-morning sample, and chronic kidney disease is diagnosed only when the abnormality lasts for more than three months. The ratio shows that the kidney is leaking albumin but not why, so the cause is sought from the history, blood pressure, glucose, blood tests, imaging and sometimes a biopsy. It measures albumin only, so a protein:creatinine ratio is needed when other proteins may be leaking. A dipstick is not a substitute for the laboratory ratio because it misses small leaks. Laboratories in different countries report the ratio in different units, so a result is read against the units and reference information of the laboratory that produced it.",
+    "thresholds": [
+     {
+      "name": "ACR category A1 (normal to mildly raised)",
+      "value": "Below 3",
+      "unit": "mg/mmol",
+      "context": "Albumin:creatinine ratio, adults",
+      "jurisdiction": "UK",
+      "source": {
+       "title": "NICE NG203: Chronic kidney disease: assessment and management",
+       "url": "https://www.nice.org.uk/guidance/ng203",
+       "section": "1.1 Investigations for chronic kidney disease"
+      }
+     },
+     {
+      "name": "ACR category A2 (moderately raised)",
+      "value": "3 to 30",
+      "unit": "mg/mmol",
+      "context": "Albumin:creatinine ratio, adults; combined with the eGFR category to classify chronic kidney disease",
+      "jurisdiction": "UK",
+      "source": {
+       "title": "NICE NG203: Chronic kidney disease: assessment and management",
+       "url": "https://www.nice.org.uk/guidance/ng203",
+       "section": "1.1 Investigations for chronic kidney disease"
+      }
+     },
+     {
+      "name": "ACR category A3 (severely raised)",
+      "value": "Above 30",
+      "unit": "mg/mmol",
+      "context": "Albumin:creatinine ratio, adults",
+      "jurisdiction": "UK",
+      "source": {
+       "title": "NICE NG203: Chronic kidney disease: assessment and management",
+       "url": "https://www.nice.org.uk/guidance/ng203",
+       "section": "1.1 Investigations for chronic kidney disease"
+      }
+     },
+     {
+      "name": "Clinically important proteinuria",
+      "value": "Confirmed ACR of 3 or more",
+      "unit": "mg/mmol",
+      "context": "NICE advises regarding a confirmed ACR of 3 mg/mmol or more as clinically important proteinuria",
+      "jurisdiction": "UK",
+      "source": {
+       "title": "NICE NG203: Chronic kidney disease: assessment and management",
+       "url": "https://www.nice.org.uk/guidance/ng203/chapter/recommendations",
+       "section": "1.1 Investigations for chronic kidney disease"
+      }
+     },
+     {
+      "name": "Repeat an initial ACR",
+      "value": "3 to 70",
+      "unit": "mg/mmol",
+      "context": "UK Kidney Association: repeat on a first-morning urine sample to confirm; a repeat is not needed from 70 mg/mmol",
+      "jurisdiction": "UK",
+      "source": {
+       "title": "UK Kidney Association: Albuminuria quick reference",
+       "url": "https://www.ukkidney.org/sites/default/files/education/Albuminuria%20quick%20reference.pdf",
+       "section": "Albuminuria quick reference"
+      }
+     },
+     {
+      "name": "Nephrotic-range proteinuria (protein:creatinine ratio)",
+      "value": "Above 300",
+      "unit": "mg/mmol",
+      "context": "This is a protein:creatinine ratio, not an ACR. One NHS trust gives an ACR equivalent of 250 mg/mmol or more; another trust says values above 350 can be termed nephrotic range, so laboratories differ",
+      "jurisdiction": "UK",
+      "source": {
+       "title": "North Bristol NHS Trust: Investigation of proteinuria in non-pregnant adults",
+       "url": "https://www.nbt.nhs.uk/sites/default/files/document/Investigation%20of%20Proteinuria%20in%20non-pregnant%20adults.pdf",
+       "section": "Interpretation of protein:creatinine ratio"
+      }
+     },
+     {
+      "name": "Chronic kidney disease: persistence",
+      "value": "More than 3 months",
+      "unit": "months",
+      "context": "Kidney damage or reduced function must last longer than 3 months for chronic kidney disease (KDIGO definition as summarised by the US National Kidney Foundation)",
+      "jurisdiction": "GLOBAL",
+      "source": {
+       "title": "National Kidney Foundation: What's new about the new CKD guideline",
+       "url": "https://www.kidney.org/what-s-new-about-new-ckd-guideline",
+       "section": "CKD definition"
+      }
+     }
+    ],
+    "references": [
+     {
+      "title": "UK Kidney Association: Albuminuria quick reference",
+      "url": "https://www.ukkidney.org/sites/default/files/education/Albuminuria%20quick%20reference.pdf",
+      "jurisdiction": "UK",
+      "type": "guidance"
+     },
+     {
+      "title": "North Bristol NHS Trust: Investigation of proteinuria in non-pregnant adults",
+      "url": "https://www.nbt.nhs.uk/sites/default/files/document/Investigation%20of%20Proteinuria%20in%20non-pregnant%20adults.pdf",
+      "jurisdiction": "UK",
+      "type": "guidance"
+     },
+     {
+      "title": "NICE NG203: Recommendations",
+      "url": "https://www.nice.org.uk/guidance/ng203/chapter/recommendations"
+     },
+     {
+      "title": "National Kidney Foundation: What's new about the new CKD guideline",
+      "url": "https://www.kidney.org/what-s-new-about-new-ckd-guideline"
+     }
+    ]
+   },
+   "hormone-tests": {
+    "measures": [
+     {
+      "item": "Cortisol",
+      "meaning": "The stress hormone from the adrenal cortex; highest at 9 am. Low in Addison disease, high in Cushing syndrome. Measured in blood, in a 24-hour urine collection (which averages the day's output and may need repeating because production varies) or in late-night saliva, and often paired with ACTH to work out whether an abnormality arises in the adrenal gland or the pituitary. Severe stress, acute illness and severe depression also raise it."
+     },
+     {
+      "item": "Testosterone and oestradiol",
+      "meaning": "Sex hormones; measured with LH and FSH from the pituitary to tell gland failure from pituitary failure. In men, testosterone with sex hormone-binding globulin (SHBG) helps investigate infertility, low libido and erectile dysfunction; prolactin, oestradiol and LH are often measured alongside to see the whole hormonal balance."
+     },
+     {
+      "item": "Prolactin",
+      "meaning": "Raised by pituitary tumours, stress, many drugs and pregnancy; causes milk production and lost periods. Checked for unexplained milk production, irregular periods, fertility problems and persistent headaches or visual change; in men a raised prolactin often causes a low testosterone, so it is tested when testosterone is found to be low. An underactive thyroid is a common and easily treated cause of a raised prolactin."
+     },
+     {
+      "item": "Parathyroid hormone and vitamin D",
+      "meaning": "Control calcium and bone; a high PTH with high calcium is primary hyperparathyroidism."
+     },
+     {
+      "item": "Uric acid (urate)",
+      "meaning": "The waste product that crystallises in gout; NICE defines hyperuricaemia as a serum urate of 360 micromol/L or more. Its general treatment target in gout is below 360 micromol/L, with below 300 micromol/L suggested for people with tophi, chronic gouty arthritis or ongoing frequent flares despite a level below 360; the British Society for Rheumatology recommends an initial target below 300 micromol/L for everyone starting urate-lowering treatment."
+     }
+    ],
+    "interpretation": [
+     {
+      "finding": "Low 9 am cortisol",
+      "meaning": "Adrenal insufficiency; confirmed with a synacthen stimulation test. Low sodium and high potassium on the electrolyte panel support the diagnosis of Addison disease"
+     },
+     {
+      "finding": "Poor cortisol response to Synacthen with high ACTH",
+      "meaning": "Primary adrenal failure (Addison disease), usually with low aldosterone; a poor response can also follow long-standing lack of ACTH from the pituitary, so further tests and endocrine referral separate the two"
+     },
+     {
+      "finding": "Normal cortisol response to Synacthen",
+      "meaning": "Makes primary adrenal failure unlikely but does not exclude recent-onset ACTH deficiency from the pituitary, which needs specialist assessment if suspected"
+     },
+     {
+      "finding": "High cortisol that does not suppress with dexamethasone",
+      "meaning": "Cushing syndrome from a pituitary or adrenal tumour, or from ACTH produced by a tumour elsewhere in the body; severe stress, illness and depression can mimic it, so results are confirmed with repeat and further tests"
+     },
+     {
+      "finding": "High PTH and high calcium",
+      "meaning": "Primary hyperparathyroidism, usually a single adenoma"
+     },
+     {
+      "finding": "Low testosterone with high LH",
+      "meaning": "Testicular failure; low LH points to the pituitary instead"
+     },
+     {
+      "finding": "Persistently raised prolactin",
+      "meaning": "Macroprolactin (a harmless large form) is excluded, thyroid function and medicines are reviewed, and an MRI of the pituitary is considered"
+     },
+     {
+      "finding": "Serum urate 360 micromol/L or above",
+      "meaning": "Supports gout, but the level can be normal during an attack, so it is often repeated at least two weeks after the attack settles"
+     }
+    ],
+    "thresholds": [
+     {
+      "name": "Hyperuricaemia",
+      "value": "360 or more",
+      "unit": "micromol/L",
+      "context": "Serum urate; many people with hyperuricaemia never develop gout, and the level can be normal during an acute attack",
+      "jurisdiction": "UK",
+      "source": {
+       "title": "NICE NG219: Gout: diagnosis and management",
+       "url": "https://www.nice.org.uk/guidance/ng219/chapter/Recommendations",
+       "section": "Serum urate: diagnosis and treat-to-target"
+      }
+     },
+     {
+      "name": "Gout urate-lowering target (general)",
+      "value": "Below 360",
+      "unit": "micromol/L",
+      "context": "NICE general treat-to-target level for serum urate in people on urate-lowering treatment",
+      "jurisdiction": "UK",
+      "source": {
+       "title": "NICE NG219: Gout: diagnosis and management",
+       "url": "https://www.nice.org.uk/guidance/ng219/chapter/Recommendations",
+       "section": "Serum urate: diagnosis and treat-to-target"
+      }
+     },
+     {
+      "name": "Gout urate-lowering target (severe disease)",
+      "value": "Below 300",
+      "unit": "micromol/L",
+      "context": "NICE suggests a lower target for people with tophi, chronic gouty arthritis or ongoing frequent flares despite urate below 360",
+      "jurisdiction": "UK",
+      "source": {
+       "title": "NICE NG219: Gout: diagnosis and management",
+       "url": "https://www.nice.org.uk/guidance/ng219/chapter/Recommendations",
+       "section": "Serum urate: diagnosis and treat-to-target"
+      }
+     },
+     {
+      "name": "Gout urate-lowering target (British Society for Rheumatology)",
+      "value": "Below 300",
+      "unit": "micromol/L",
+      "context": "BSR guideline recommends an initial target below 300 for everyone starting urate-lowering treatment; NICE differs",
+      "jurisdiction": "UK",
+      "source": {
+       "title": "Diagnosis and management of gout: are the BSR and NICE guidelines both needed? (PMC)",
+       "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10809909/",
+       "section": "Urate targets"
+      }
+     }
+    ],
+    "references": [
+     {
+      "title": "NICE NG219: Gout: diagnosis and management",
+      "url": "https://www.nice.org.uk/guidance/ng219/chapter/Recommendations"
+     },
+     {
+      "title": "Diagnosis and management of gout: are the BSR and NICE guidelines both needed?",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10809909/"
+     }
+    ]
+   },
+   "pregnancy-test": {
+    "what": "Detects human chorionic gonadotropin, a hormone that begins to be made in the days after fertilisation, as the embryo implants in the womb. Urine tests give a yes/no answer; a blood test gives a number that normally rises steeply in a healthy early pregnancy. hCG appears in blood and urine within days of the embryo implanting and rises steeply through early pregnancy, which is why home tests become reliable from around the first day of a missed period and some sensitive tests can turn positive a little earlier. The urine test is a widely used point-of-care test: a strip or stick is dipped into urine or held in the stream and shows a line, symbol or word when hCG is present. In hospital, a urine test is done routinely in women of reproductive age with abdominal pain, bleeding or collapse, and before X-rays, operations and certain medicines, because an unrecognised pregnancy, and above all an ectopic pregnancy, changes what happens next.",
+    "measures": [
+     {
+      "item": "Urine hCG",
+      "meaning": "Most tests can be used from the first day of a missed period; some very sensitive tests can be used earlier. A qualitative result: it says whether hCG is present above the test's detection limit, not how much. First-morning urine is the most concentrated and gives the clearest result when testing early, although most tests work at any time of day once the period is late."
+     },
+     {
+      "item": "Serum hCG",
+      "meaning": "Quantitative; used to track ectopic pregnancy, miscarriage and molar pregnancy, and some tumours. A laboratory blood test can be qualitative (present or absent) or quantitative (the concentration), and serial quantitative results show whether a pregnancy is progressing normally, failing or abnormally sited; results take from a few hours to more than a day."
+     }
+    ],
+    "preparation": "None; testing before the missed period risks a false negative. If the date of the expected period is unknown, NHS advice is to test at least 21 days (three weeks) after the last unprotected sex. Drinking large volumes beforehand dilutes the urine and can push an early positive below the detection limit.",
+    "interpretation": [
+     {
+      "finding": "Positive urine test",
+      "meaning": "Pregnant, almost always, provided the instructions were followed; an ultrasound scan at about 6 to 7 weeks can confirm where the pregnancy is"
+     },
+     {
+      "finding": "Negative urine test with a period still overdue",
+      "meaning": "Possibly tested too early or with dilute urine; repeat after a few days, and seek advice if a second test is negative and the period has still not started"
+     },
+     {
+      "finding": "Positive test with pain or bleeding",
+      "meaning": "Ectopic pregnancy must be excluded urgently"
+     },
+     {
+      "finding": "Serum hCG rising slowly",
+      "meaning": "Failing or ectopic pregnancy"
+     },
+     {
+      "finding": "Serum hCG unusually high for dates",
+      "meaning": "Twins or a higher multiple, a molar pregnancy or wrong dates; ultrasound clarifies"
+     },
+     {
+      "finding": "Serum hCG falling after treatment",
+      "meaning": "Resolution of a miscarriage, ectopic or molar pregnancy; followed until it is undetectable"
+     }
+    ],
+    "thresholds": [
+     {
+      "name": "When to test if the date of the next period is unknown",
+      "value": "At least 21 days",
+      "unit": "days",
+      "context": "After the last unprotected sex (three weeks); testing earlier risks a false negative",
+      "jurisdiction": "UK",
+      "source": {
+       "title": "NHS: Doing a pregnancy test",
+       "url": "https://www.nhs.uk/pregnancy/trying-for-a-baby/doing-a-pregnancy-test/",
+       "section": "When to do a pregnancy test"
+      }
+     },
+     {
+      "name": "Usual timing of an early pregnancy scan",
+      "value": "About 6 to 7",
+      "unit": "weeks of pregnancy",
+      "context": "Transvaginal early scan to confirm a pregnancy in the womb and a fetal heartbeat; a scan before 6 weeks may be too early to be clear",
+      "jurisdiction": "UK",
+      "source": {
+       "title": "University Hospitals Birmingham: Early pregnancy",
+       "url": "https://www.uhb.nhs.uk/services/fertility/early-pregnancy/",
+       "section": "Early pregnancy scan"
+      }
+     }
+    ],
+    "references": [
+     {
+      "title": "University Hospitals Birmingham: Early pregnancy",
+      "url": "https://www.uhb.nhs.uk/services/fertility/early-pregnancy/",
+      "jurisdiction": "UK",
+      "type": "guidance"
+     }
+    ]
+   },
+   "crp": {
+    "what": "A blood test for C-reactive protein, a protein the liver releases within hours of significant inflammation, infection or tissue injury. It measures the size and course of an inflammatory response and how it changes with treatment, but not its cause. CRP is a general marker: it is often the first laboratory evidence that something inflammatory is happening, with the level rising before pain, fever or other signs are obvious, and its concentration can climb steeply during a severe infection. Because it falls quickly once the trigger settles, repeated measurements are more informative than a single value, and clinicians read it alongside the symptoms, the examination and other tests.",
+    "measures": [
+     {
+      "item": "C-reactive protein (CRP)",
+      "meaning": "Starts to rise within hours of a trigger, peaks within a day or two and falls quickly once the trigger resolves. Very high levels suggest bacterial infection or major inflammation, although some viral infections can also raise CRP considerably; mild elevations are common and non-specific. For adults with a suspected lower respiratory tract infection, when it is unclear whether antibiotics are needed NICE suggests considering a point-of-care CRP test: above 100 mg/L points to offering antibiotics straight away, 20 to 100 mg/L to considering a back-up (delayed) prescription, and below 20 mg/L to not routinely offering them. The protein is made by the liver as part of the acute-phase response, so it reflects the whole-body inflammatory signal rather than any one organ. It is also raised after a heart attack, after surgery and in sepsis, and a high-sensitivity version of the assay (hs-CRP) picks up the very low-grade inflammation linked to cardiovascular risk. Laboratories report in different units, so the reference limit printed on the report is the one to use."
+     }
+    ],
+    "interpretation": [
+     {
+      "finding": "Markedly raised CRP",
+      "meaning": "Significant bacterial infection or major inflammation until proven otherwise; the source is sought with examination, imaging and cultures"
+     },
+     {
+      "finding": "Mildly raised CRP (a small rise above the laboratory's reference limit)",
+      "meaning": "Minor inflammation, viral illness, obesity, smoking or recent exertion; interpreted with the clinical picture and often repeated rather than acted on"
+     },
+     {
+      "finding": "Normal CRP with a high ESR",
+      "meaning": "Consider conditions that raise ESR without much CRP: myeloma, lupus, anaemia, pregnancy"
+     },
+     {
+      "finding": "Falling CRP on treatment",
+      "meaning": "The inflammation is settling or the antibiotic is working; a persistently rising value after surgery prompts a search for infection or a leak"
+     },
+     {
+      "finding": "Raised CRP in a long-term inflammatory disease",
+      "meaning": "A flare of rheumatoid arthritis, vasculitis, lupus or inflammatory bowel disease, or an intercurrent infection; a fall after a change of treatment shows the anti-inflammatory therapy is taking effect"
+     },
+     {
+      "finding": "Normal CRP very early in an illness",
+      "meaning": "Does not exclude infection, because the level takes hours to rise; a repeat sample the next day is often more informative"
+     }
+    ],
+    "thresholds": [
+     {
+      "name": "Suspected lower respiratory tract infection: antibiotics not routinely needed",
+      "value": "Below 20",
+      "unit": "mg/L",
+      "context": "Point-of-care CRP in adults with suspected lower respiratory tract infection when the clinician is unsure whether antibiotics are needed; guideline decision point, not a reference interval",
+      "jurisdiction": "UK",
+      "source": {
+       "title": "NICE NG237: Suspected acute respiratory infection in over 16s: assessment at first presentation and initial management",
+       "url": "https://www.nice.org.uk/guidance/ng237/chapter/Recommendations",
+       "section": "Point-of-care CRP in suspected lower respiratory tract infection"
+      }
+     },
+     {
+      "name": "Suspected lower respiratory tract infection: back-up prescription considered",
+      "value": "20 to 100",
+      "unit": "mg/L",
+      "context": "Point-of-care CRP in adults with suspected lower respiratory tract infection when the clinician is unsure whether antibiotics are needed; a prescription to use later if symptoms worsen",
+      "jurisdiction": "UK",
+      "source": {
+       "title": "NICE NG237: Suspected acute respiratory infection in over 16s: assessment at first presentation and initial management",
+       "url": "https://www.nice.org.uk/guidance/ng237/chapter/Recommendations",
+       "section": "Point-of-care CRP in suspected lower respiratory tract infection"
+      }
+     },
+     {
+      "name": "Suspected lower respiratory tract infection: immediate antibiotics",
+      "value": "More than 100",
+      "unit": "mg/L",
+      "context": "Point-of-care CRP in adults with suspected lower respiratory tract infection when the clinician is unsure whether antibiotics are needed",
+      "jurisdiction": "UK",
+      "source": {
+       "title": "NICE NG237: Suspected acute respiratory infection in over 16s: assessment at first presentation and initial management",
+       "url": "https://www.nice.org.uk/guidance/ng237/chapter/Recommendations",
+       "section": "Point-of-care CRP in suspected lower respiratory tract infection"
+      }
+     }
+    ],
+    "references": [
+     {
+      "title": "NICE NG237: Suspected acute respiratory infection in over 16s",
+      "url": "https://www.nice.org.uk/guidance/ng237/chapter/Recommendations"
+     }
+    ]
+   }
+  }
+ }
+}

@@ -1,0 +1,71 @@
+{
+ "id": "pulse-oximetry",
+ "searchesUsed": 6,
+ "counts": {
+  "supported": 8,
+  "textbook": 0,
+  "unsupported": 0,
+  "wrong": 0,
+  "unsafe": 0,
+  "unchecked": 0
+ },
+ "claims": [
+  {
+   "id": "c01",
+   "classification": "supported",
+   "evidence": "MedlinePlus summary: a normal oxygen saturation level ranges between 95% and 100%; lower may be acceptable with lung disease such as COPD. NHS England diary: 'An ideal blood oxygen level is between 95% and 100%'.",
+   "url": "https://medlineplus.gov/lab-tests/pulse-oximetry/",
+   "action": "kept"
+  },
+  {
+   "id": "c02",
+   "classification": "supported",
+   "evidence": "BTS: for COPD or other risk factors for hypercapnic respiratory failure aim at 88-92% pending blood gas results (adjust to 94-98% if PCO2 satisfactory); the BTS COPD admission bundle repeats 94-98% vs 88-92% 'at risk of CO2 retention'.",
+   "url": "https://www.brit-thoracic.org.uk/document-library/guidelines/emergency-oxygen/bts-guideline-for-oxygen-use-in-adults-in-healthcare-and-emergency-settings/",
+   "action": "kept"
+  },
+  {
+   "id": "c03",
+   "classification": "supported",
+   "evidence": "Medical Gases Learning Package (UHD, April 2020): type 1 respiratory failure = hypoxic failure without hypercapnia, PaO2 below 8 kPa; type 2 = with hypercapnia. 'On air/room air' wording came from other retrieved sources (PaO2 <60 mmHg (8 kPa) on room air, normal or low PaCO2), not verifiably from the UHD excerpt. Old text 'below 8 kPa defines respiratory failure' (type-less) was imprecise; the edit is correct.",
+   "url": "https://www.uhd.nhs.uk/uploads/news/docs/bulletin/medical-gases-learning-package.pdf",
+   "action": "edited"
+  },
+  {
+   "id": "c04",
+   "classification": "supported",
+   "evidence": "Interpretation 'Low SpO2 on air' row: BTS 94-98% default / 88-92% if at risk of retention. NHS England documents: recheck, and if still 92% or below go to A&E or call 999; 93-94% prompts contacting a clinician. 'NHS 111 or the GP the same day' for the non-emergency route is consistent. Number removed from finding label, which is acceptable.",
+   "url": "https://www.brit-thoracic.org.uk/document-library/guidelines/emergency-oxygen/bts-guideline-for-oxygen-use-in-adults-in-healthcare-and-emergency-settings/",
+   "action": "edited"
+  },
+  {
+   "id": "c05",
+   "classification": "supported",
+   "evidence": "Record 1 (95 to 100 %, UK, NHS England diary): diary excerpt says ideal blood oxygen is 95-100%. Context clause 'people with long-term lung disease may run lower even when well': carried by MedlinePlus (lower levels may be acceptable in COPD/pneumonia) and one NHS document (usual level below 95% -> drop from own baseline); the diary page itself was not shown to say it. Section label 'Pulse oximeter readings' could not be verified as the diary's heading.",
+   "url": "https://www.england.nhs.uk/coronavirus/documents/c1541-self-monitoring-covid-19-diary-v2-print-version-january-2022/",
+   "action": "kept"
+  },
+  {
+   "id": "c06",
+   "classification": "supported",
+   "evidence": "Record 2 (95 to 100 %, US, MedlinePlus): normal 95-100%; 'results may be 2% to 4% higher or lower than your actual blood oxygen level'. US jurisdiction appropriate. Section 'Results' reasonable.",
+   "url": "https://medlineplus.gov/lab-tests/pulse-oximetry/",
+   "action": "kept"
+  },
+  {
+   "id": "c07",
+   "classification": "supported",
+   "evidence": "Record 3 (88 to 92 %, UK, BTS): 88-92% pending blood gases in COPD/other hypercapnic-risk patients; 94-98% initial target for most acutely ill adults. URL is the guideline page; section 'Target saturation' reasonable.",
+   "url": "https://www.brit-thoracic.org.uk/document-library/guidelines/emergency-oxygen/bts-guideline-for-oxygen-use-in-adults-in-healthcare-and-emergency-settings/",
+   "action": "kept"
+  },
+  {
+   "id": "c08",
+   "classification": "supported",
+   "evidence": "Record 4 (below 8 kPa, UK, UHD): package defines type 1 failure as PaO2 below 8 kPa without hypercapnia; type 2 by hypercapnia. The unit text 'PaO2 on air' and context 'on room air' match definitions in other retrieved sources but the UHD excerpt itself was garbled; section label 'Respiratory failure' unverified but reasonable. Note the package is a 2020 hospital training document, not a national guideline; BTS (c07 URL) is the stronger citation for oxygen targets, and Thorax/BTS text also uses 8 kPa.",
+   "url": "https://www.uhd.nhs.uk/uploads/news/docs/bulletin/medical-gases-learning-package.pdf",
+   "action": "kept"
+  }
+ ],
+ "notes": "17 searches shared across the three ids (about 6 for this id). All changed text supported. Record 4's UHD page is a 2020 hospital learning package; search excerpt was jumbled, so wording 'on air' rests on corroborating sources. NHS England diary section label not verified. BTS notes a possible update under consideration; check current version."
+}
