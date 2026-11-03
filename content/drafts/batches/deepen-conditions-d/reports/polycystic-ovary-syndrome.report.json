@@ -1,0 +1,509 @@
+{
+ "id": "polycystic-ovary-syndrome",
+ "searchesUsed": 10,
+ "counts": {
+  "supported": 18,
+  "textbook": 0,
+  "unsupported": 36,
+  "wrong": 0,
+  "unsafe": 1,
+  "unchecked": 0
+ },
+ "claims": [
+  {
+   "id": "c01",
+   "where": "article.sections[0]",
+   "classification": "supported",
+   "evidence": "NHS diagnosis page summary lists irregular or absent periods, facial hair and difficulty conceiving as signs.",
+   "url": "https://www.nhs.uk/conditions/polycystic-ovary-syndrome-pcos/diagnosis/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c02",
+   "where": "article.sections[0]",
+   "classification": "supported",
+   "evidence": "NHS diagnosis page summary lists weight gain, hair thinning, oily skin or acne; Gloucester NHS leaflet says extra weight around the waist.",
+   "url": "https://www.nhs.uk/conditions/polycystic-ovary-syndrome-pcos/diagnosis/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c03",
+   "where": "article.sections[0]",
+   "classification": "unsupported",
+   "evidence": "Retrieved leaflet text: women with PCOS ovulate infrequently or not at all, so find it harder to get pregnant. 'Mainly due to' and 'The NHS says' not found.",
+   "url": "https://www.royalberkshire.nhs.uk/media/vqvfrlbj/pcos.pdf",
+   "action": "edited",
+   "newSentence": "NHS leaflets say women with PCOS may ovulate infrequently or not at all, which can make it harder to get pregnant."
+  },
+  {
+   "id": "c04",
+   "where": "article.sections[0]",
+   "classification": "unsupported",
+   "evidence": "The 111 Wales list (tiredness, hair loss, miscarriage, pelvic pain) was not retrieved. Only depression and mood swings found, in a Royal Berkshire NHS leaflet.",
+   "url": "https://www.royalberkshire.nhs.uk/media/vqvfrlbj/pcos.pdf",
+   "action": "edited",
+   "newSentence": "An NHS hospital leaflet says depression and mood swings can also occur."
+  },
+  {
+   "id": "c05",
+   "where": "article.sections[0]",
+   "classification": "supported",
+   "evidence": "Retrieved: not all women have all symptoms and each can vary from mild to severe.",
+   "url": "https://www.royalberkshire.nhs.uk/media/vqvfrlbj/pcos.pdf",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c06",
+   "where": "article.sections[0]",
+   "classification": "supported",
+   "evidence": "Royal Berkshire NHS leaflet: some women have mild symptoms, others are affected more severely.",
+   "url": "https://www.royalberkshire.nhs.uk/media/vqvfrlbj/pcos.pdf",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c07",
+   "where": "article.sections[0]",
+   "classification": "unsupported",
+   "evidence": "NHS inform page is titled 'Polyendocrine metabolic ovarian syndrome (PMOS)' and describes it as previously known as PCOS. The 'reflects hormonal and metabolic features' clause came from a journal/news summary, not NHS inform. nhs.uk still uses the PCOS URL; its own current name was not retrieved.",
+   "url": "https://www.nhsinform.scot/healthy-living/womens-health/girls-and-young-women-puberty-to-around-25/periods-and-menstrual-health/polyendocrine-metabolic-ovarian-syndrome-pmos/",
+   "action": "edited",
+   "newSentence": "NHS inform now titles its page on the condition polyendocrine metabolic ovarian syndrome (PMOS) and describes it as previously known as polycystic ovary syndrome (PCOS)."
+  },
+  {
+   "id": "c08",
+   "where": "article.sections[1]",
+   "classification": "unsupported",
+   "evidence": "Two-of-three (Rotterdam) rule with other causes excluded retrieved only from a review article (PMC) and a leaflet snippet; NHS diagnosis page text itself not retrieved, so 'The NHS says' unverified.",
+   "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10177792/",
+   "action": "edited",
+   "newSentence": "Diagnosis commonly uses the Rotterdam criteria: at least two of three features (irregular or absent periods, signs of raised male hormones, and polycystic-looking ovaries on a scan), after other causes have been ruled out."
+  },
+  {
+   "id": "c09",
+   "where": "article.sections[1]",
+   "classification": "unsupported",
+   "evidence": "Blood tests not confirmed in retrieved text. Review of guidelines says an ultrasound is not necessary when irregular cycles and raised male hormone signs are both present.",
+   "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10177792/",
+   "action": "edited",
+   "newSentence": "A scan is not always needed: when irregular periods and signs of raised male hormones are both present, an ultrasound is not necessary for diagnosis."
+  },
+  {
+   "id": "c10",
+   "where": "article.sections[1]",
+   "classification": "unsupported",
+   "evidence": "Leeds NHS leaflet: polycystic ovaries by themselves do not require treatment; Gloucester leaflet: the scan appearance has no symptoms or hormone findings. 'Not enough for diagnosis' not stated in those words.",
+   "url": "https://flipbooks.leedsth.nhs.uk/LN002313.pdf",
+   "action": "edited",
+   "newSentence": "A leaflet from an NHS trust says polycystic ovaries on their own do not need treatment."
+  },
+  {
+   "id": "c11",
+   "where": "article.sections[1]",
+   "classification": "unsupported",
+   "evidence": "'Six or seven in 100' not found. Retrieved NHS leaflets give up to 1 in 4 young women (or about 20 in 100) with polycystic-looking ovaries on a scan.",
+   "url": "https://flipbooks.leedsth.nhs.uk/LN002313.pdf",
+   "action": "edited",
+   "newSentence": "One NHS leaflet says up to 1 in 4 young women have polycystic-looking ovaries on a scan, and another NHS trust leaflet says polycystic ovaries by themselves do not need treatment."
+  },
+  {
+   "id": "c12",
+   "where": "article.sections[1]",
+   "classification": "unsupported",
+   "evidence": "No retrieved text says signs come and go.",
+   "url": "",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c13",
+   "where": "article.sections[1]",
+   "classification": "unsupported",
+   "evidence": "Verity page: APPG inquiry (8 Sept 2025) found significant gaps in diagnosis, treatment and long-term support. 'Many remain undiagnosed' not in retrieved text.",
+   "url": "https://www.verity-pcos.org.uk/uploads/6/7/0/2/6702442/verity_appg_pcos_report_sept25.pdf",
+   "action": "edited",
+   "newSentence": "A 2025 all-party parliamentary group inquiry into PCOS reported significant gaps in diagnosis, treatment and long-term support."
+  },
+  {
+   "id": "c14",
+   "where": "article.sections[1]",
+   "classification": "unsupported",
+   "evidence": "No retrieved text says a GP appointment is the usual first step.",
+   "url": "",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c15",
+   "where": "article.sections[2]",
+   "classification": "supported",
+   "evidence": "NHS diagnosis page summary: there is no cure, but the symptoms can be treated.",
+   "url": "https://www.nhs.uk/conditions/polycystic-ovary-syndrome-pcos/diagnosis/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c16",
+   "where": "article.sections[2]",
+   "classification": "supported",
+   "evidence": "Retrieved NHS leaflets: losing weight can help people who are overweight (more regular periods, less acne and excess hair over time). Attribution to 111 Wales and 'healthy balanced diet' not confirmed.",
+   "url": "https://www.royalberkshire.nhs.uk/media/vqvfrlbj/pcos.pdf",
+   "action": "edited",
+   "newSentence": "NHS leaflets say losing weight can help people who are overweight, with more regular periods and less acne and excess hair over time."
+  },
+  {
+   "id": "c17",
+   "where": "article.sections[2]",
+   "classification": "unsupported",
+   "evidence": "Manchester document not retrieved. Retrieved: combined pill useful for regulating the cycle; metformin used off-label in the UK and can lower androgen levels (NHS leaflets). 'First-choice' not found.",
+   "url": "https://www.royalberkshire.nhs.uk/media/vqvfrlbj/pcos.pdf",
+   "action": "edited",
+   "newSentence": "NHS leaflets say the combined contraceptive pill can be used to regulate periods and ease symptoms driven by male hormones, and that metformin is sometimes used off-label."
+  },
+  {
+   "id": "c18",
+   "where": "article.sections[2]",
+   "classification": "unsupported",
+   "evidence": "Retrieved: cosmetic hair treatments are used; fertility medicines exist. Medicines for excess hair not found.",
+   "url": "https://www.nhs.uk/conditions/polycystic-ovary-syndrome-pcos/diagnosis/",
+   "action": "edited",
+   "newSentence": "Fertility medicines are available, and cosmetic hair treatments are also used for excess hair growth."
+  },
+  {
+   "id": "c19",
+   "where": "article.sections[2]",
+   "classification": "unsupported",
+   "evidence": "Not found in retrieved text.",
+   "url": "",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c20",
+   "where": "article.sections[2]",
+   "classification": "unsafe",
+   "evidence": "No source gave a 5 to 10 per cent target; it reads as a numeric target for an individual.",
+   "url": "",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c21",
+   "where": "article.sections[3]",
+   "classification": "supported",
+   "evidence": "Retrieved: women with PCOS do not ovulate or ovulate infrequently, making it difficult to get pregnant.",
+   "url": "https://www.royalberkshire.nhs.uk/media/vqvfrlbj/pcos.pdf",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c22",
+   "where": "article.sections[3]",
+   "classification": "unsupported",
+   "evidence": "Only weight reduction restarting ovulation (Royal Berkshire) was found; 'fertility treatment gives a regular cycle' not found.",
+   "url": "",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c23",
+   "where": "article.sections[3]",
+   "classification": "unsupported",
+   "evidence": "One retrieved summary said clomifene is usually the first medication but could not be tied to 111 Wales, and international guidance (ESHRE 2018) lists letrozole as first line. Only 'clomifene is one medication used to trigger ovulation' is safe.",
+   "url": "https://111.wales.nhs.uk/encyclopaedia/p/article/polycysticovarysyndrome/",
+   "action": "edited",
+   "newSentence": "NHS information says medicines such as clomifene can be used to trigger ovulation in women who are trying to conceive."
+  },
+  {
+   "id": "c24",
+   "where": "article.sections[3]",
+   "classification": "supported",
+   "evidence": "NHS pages summary: if fertility medicines fail, laparoscopic ovarian drilling may be recommended; IVF offered if medicines do not help.",
+   "url": "https://www.nhs.uk/conditions/polycystic-ovary-syndrome-pcos/diagnosis/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c25",
+   "where": "article.sections[3]",
+   "classification": "supported",
+   "evidence": "NHS 111 Wales: with treatment, most women with PCOS are able to get pregnant.",
+   "url": "https://111.wales.nhs.uk/encyclopaedia/p/article/polycysticovarysyndrome/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c26",
+   "where": "article.sections[3]",
+   "classification": "unsupported",
+   "evidence": "NHS pathway documents not retrieved. NHS trust page says PCOS is a recognised cause of gestational diabetes, which can lead to pre-eclampsia.",
+   "url": "https://www.nbt.nhs.uk/maternity-services/pregnancy/pregnancy-complications/gestational-diabetes",
+   "action": "edited",
+   "newSentence": "An NHS trust page says PCOS is one of the recognised causes of gestational diabetes, which can lead to pre-eclampsia."
+  },
+  {
+   "id": "c27",
+   "where": "article.sections[3]",
+   "classification": "unsupported",
+   "evidence": "No retrieved text gives this advice.",
+   "url": "",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c28",
+   "where": "article.sections[4]",
+   "classification": "unsupported",
+   "evidence": "North East London pathway not retrieved. Other sources: type 2 diabetes (Royal Berkshire leaflet), endometrial cancer and sleep apnoea (Verity), diabetes and cardiovascular disease (APPG report).",
+   "url": "https://www.verity-pcos.org.uk/long-term-health.html",
+   "action": "edited",
+   "newSentence": "UK sources list type 2 diabetes, cardiovascular disease, sleep apnoea and a raised risk of cancer of the womb lining among the possible long-term health risks."
+  },
+  {
+   "id": "c29",
+   "where": "article.sections[4]",
+   "classification": "supported",
+   "evidence": "NHS Scotland guidance: periods at least every 3 months protect against endometrial hyperplasia; Verity: infrequent ovulation exposes the womb lining to oestrogen.",
+   "url": "https://www.verity-pcos.org.uk/long-term-health.html",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c30",
+   "where": "article.sections[4]",
+   "classification": "unsupported",
+   "evidence": "No NHS leaflet found. A meta-analysis (not UK official) found no significant rise for breast and ovarian cancer; cervical not addressed.",
+   "url": "",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c31",
+   "where": "article.sections[4]",
+   "classification": "unsupported",
+   "evidence": "Not found in retrieved text.",
+   "url": "",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c32",
+   "where": "article.sections[4]",
+   "classification": "unsupported",
+   "evidence": "Vague connective sentence, no source.",
+   "url": "",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c33",
+   "where": "article.sections[4]",
+   "classification": "unsupported",
+   "evidence": "Not found in retrieved text.",
+   "url": "",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c34",
+   "where": "article.sections[4]",
+   "classification": "unsupported",
+   "evidence": "Verity: APPG links mental health to PCOS, notes psychological support is rarely offered, and recommends better recognition and support. 'Low mood and anxiety' not found.",
+   "url": "https://www.verity-pcos.org.uk/uploads/6/7/0/2/6702442/verity_appg_pcos_report_sept25.pdf",
+   "action": "edited",
+   "newSentence": "The 2025 all-party parliamentary group report says psychological support is rarely offered despite well-established mental health risks, and recommends better recognition of and support for mental wellbeing."
+  },
+  {
+   "id": "c35",
+   "where": "article.sections[4]",
+   "classification": "unsupported",
+   "evidence": "Not found in retrieved text.",
+   "url": "",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c36",
+   "where": "article.sections[4]",
+   "classification": "unsupported",
+   "evidence": "Not found in retrieved text.",
+   "url": "",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c37",
+   "where": "article.faqs[0].a",
+   "classification": "supported",
+   "evidence": "Supported only as 'with treatment, most women can get pregnant' (111 Wales); 'Often, yes' alone is vague.",
+   "url": "https://111.wales.nhs.uk/encyclopaedia/p/article/polycysticovarysyndrome/",
+   "action": "edited",
+   "newSentence": "Most women with PCOS are able to get pregnant with treatment."
+  },
+  {
+   "id": "c38",
+   "where": "article.faqs[0].a",
+   "classification": "supported",
+   "evidence": "NHS 111 Wales: with treatment, most women with PCOS are able to get pregnant.",
+   "url": "https://111.wales.nhs.uk/encyclopaedia/p/article/polycysticovarysyndrome/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c39",
+   "where": "article.faqs[0].a",
+   "classification": "supported",
+   "evidence": "Retrieved: PCOS can disrupt ovulation, making it difficult to conceive; 'take longer' not stated.",
+   "url": "https://www.royalberkshire.nhs.uk/media/vqvfrlbj/pcos.pdf",
+   "action": "edited",
+   "newSentence": "PCOS can disrupt ovulation, which can make it harder to conceive."
+  },
+  {
+   "id": "c40",
+   "where": "article.faqs[0].a",
+   "classification": "unsupported",
+   "evidence": "'Clomifene usually first treatment' not tied to an NHS source and conflicts with current international guidance; IVF if medicines fail is supported.",
+   "url": "https://111.wales.nhs.uk/encyclopaedia/p/article/polycysticovarysyndrome/",
+   "action": "edited",
+   "newSentence": "Medicines such as clomifene can be used to trigger ovulation, and IVF may be offered if medicines do not work."
+  },
+  {
+   "id": "c41",
+   "where": "article.faqs[1].a",
+   "classification": "unsupported",
+   "evidence": "'No.' follows only indirectly; Leeds NHS leaflet says polycystic ovaries by themselves do not need treatment.",
+   "url": "https://flipbooks.leedsth.nhs.uk/LN002313.pdf",
+   "action": "edited",
+   "newSentence": "Not necessarily. Polycystic-looking ovaries are common on a scan, and an NHS trust leaflet says they do not need treatment by themselves."
+  },
+  {
+   "id": "c42",
+   "where": "article.faqs[1].a",
+   "classification": "unsupported",
+   "evidence": "'Six or seven in 100' not found; leaflets give up to 1 in 4 young women (or about 20 in 100).",
+   "url": "https://flipbooks.leedsth.nhs.uk/LN002313.pdf",
+   "action": "edited",
+   "newSentence": "One NHS leaflet says up to 1 in 4 young women have polycystic-looking ovaries on a scan, and polycystic ovaries by themselves do not need treatment."
+  },
+  {
+   "id": "c43",
+   "where": "article.faqs[1].a",
+   "classification": "unsupported",
+   "evidence": "Two-of-three rule from review article and leaflet snippet only; see c08.",
+   "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10177792/",
+   "action": "edited",
+   "newSentence": "Diagnosis commonly needs at least two of three features, after other causes have been ruled out."
+  },
+  {
+   "id": "c44",
+   "where": "article.faqs[2].a",
+   "classification": "supported",
+   "evidence": "NHS diagnosis page summary: no cure, but the symptoms can be treated.",
+   "url": "https://www.nhs.uk/conditions/polycystic-ovary-syndrome-pcos/diagnosis/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c45",
+   "where": "article.faqs[2].a",
+   "classification": "unsupported",
+   "evidence": "Weight loss helping and combined pill/fertility medicines retrieved; 'medicines for excess hair' not found.",
+   "url": "https://www.royalberkshire.nhs.uk/media/vqvfrlbj/pcos.pdf",
+   "action": "edited",
+   "newSentence": "Losing weight can help people who are overweight, the combined contraceptive pill can be used to regulate periods, and fertility treatment is available."
+  },
+  {
+   "id": "c46",
+   "where": "article.faqs[3].a",
+   "classification": "unsupported",
+   "evidence": "See c28.",
+   "url": "https://www.verity-pcos.org.uk/long-term-health.html",
+   "action": "edited",
+   "newSentence": "UK sources list type 2 diabetes, cardiovascular disease, sleep apnoea and a raised risk of cancer of the womb lining among the possible long-term health risks."
+  },
+  {
+   "id": "c47",
+   "where": "article.faqs[3].a",
+   "classification": "unsupported",
+   "evidence": "Not found in retrieved text.",
+   "url": "",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c48",
+   "where": "article.faqs[4].a",
+   "classification": "unsupported",
+   "evidence": "Not found in retrieved text.",
+   "url": "",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c49",
+   "where": "article.faqs[4].a",
+   "classification": "unsupported",
+   "evidence": "See c34; NHS pathway screening claim not found.",
+   "url": "https://www.verity-pcos.org.uk/uploads/6/7/0/2/6702442/verity_appg_pcos_report_sept25.pdf",
+   "action": "edited",
+   "newSentence": "The 2025 all-party parliamentary group report says psychological support is rarely offered despite well-established mental health risks, and recommends better recognition of and support for mental wellbeing."
+  },
+  {
+   "id": "c50",
+   "where": "article.keyFacts[0]",
+   "classification": "supported",
+   "evidence": "NHS inform page titled PMOS, previously known as PCOS. Add URL.",
+   "url": "https://www.nhsinform.scot/healthy-living/womens-health/girls-and-young-women-puberty-to-around-25/periods-and-menstrual-health/polyendocrine-metabolic-ovarian-syndrome-pmos/",
+   "action": "edited",
+   "newSentence": "Also called: Polyendocrine metabolic ovarian syndrome (PMOS), the name NHS inform now uses"
+  },
+  {
+   "id": "c51",
+   "where": "article.keyFacts[1]",
+   "classification": "unsupported",
+   "evidence": "See c08.",
+   "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10177792/",
+   "action": "edited",
+   "newSentence": "Diagnosis: Commonly at least two of three features, after other causes are ruled out"
+  },
+  {
+   "id": "c52",
+   "where": "article.keyFacts[2]",
+   "classification": "supported",
+   "evidence": "NHS diagnosis page summary: no cure, but symptoms can be treated.",
+   "url": "https://www.nhs.uk/conditions/polycystic-ovary-syndrome-pcos/diagnosis/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c53",
+   "where": "article.keyFacts[3]",
+   "classification": "supported",
+   "evidence": "Retrieved: lifestyle change and weight reduction for those who are overweight (review and NHS leaflets); 'first steps' wording is stronger.",
+   "url": "https://www.royalberkshire.nhs.uk/media/vqvfrlbj/pcos.pdf",
+   "action": "edited",
+   "newSentence": "Lifestyle: Losing weight can help people who are overweight"
+  },
+  {
+   "id": "c54",
+   "where": "article.keyFacts[4]",
+   "classification": "unsupported",
+   "evidence": "See c23.",
+   "url": "https://111.wales.nhs.uk/encyclopaedia/p/article/polycysticovarysyndrome/",
+   "action": "edited",
+   "newSentence": "Fertility: Medicines such as clomifene can trigger ovulation; IVF may follow"
+  },
+  {
+   "id": "c55",
+   "where": "article.keyFacts[5]",
+   "classification": "supported",
+   "evidence": "Type 2 diabetes (Royal Berkshire), endometrial cancer and sleep apnoea (Verity), cardiovascular disease (APPG).",
+   "url": "https://www.verity-pcos.org.uk/long-term-health.html",
+   "action": "edited",
+   "newSentence": "Long-term risks: Type 2 diabetes, cardiovascular disease, sleep apnoea, raised risk of womb lining cancer"
+  }
+ ]
+}
