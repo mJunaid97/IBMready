@@ -1,0 +1,17 @@
+{
+ "type": "conditions",
+ "id": "appendicitis",
+ "verdict": "accept-with-edits",
+ "edits": [
+  {
+   "field": "overview",
+   "action": "remove-sentence",
+   "match": "NIDDK notes that the cause is usually thought to be multifactorial and that in many cases no specific obstruction is identified.",
+   "replacement": "In many cases no specific cause is identified.",
+   "reason": "UNSUPPORTED: attribution of a 'multifactorial' statement to NIDDK not found in the NIDDK page; neutral supported remainder kept."
+  }
+ ],
+ "unverified_urls": [],
+ "checked_urls": [],
+ "notes": "Verdict file generated from the upstream verifier report; every match string was asserted to occur in the current record. URL checks were done in the upstream report and are not repeated here."
+}

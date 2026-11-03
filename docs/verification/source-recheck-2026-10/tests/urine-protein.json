@@ -1,0 +1,17 @@
+{
+ "type": "tests",
+ "id": "urine-protein",
+ "verdict": "accept-with-edits",
+ "edits": [
+  {
+   "field": "preparation",
+   "action": "remove-sentence",
+   "match": "Heavy exertion, fever and infection can raise albumin temporarily, and a raised result is never acted on from one sample: it is repeated, ideally on an early-morning specimen, to show it persists and is not explained by something else.",
+   "replacement": "Heavy exertion, fever and infection can raise albumin temporarily, so a raised result is usually repeated, ideally on an early-morning specimen, to show it persists and is not explained by something else.",
+   "reason": "UNSAFE: absolute 'never acted on from one sample' overstated; softened to 'usually repeated'."
+  }
+ ],
+ "unverified_urls": [],
+ "checked_urls": [],
+ "notes": "Verdict file generated from the upstream verifier report; every match string was asserted to occur in the current record. URL checks were done in the upstream report and are not repeated here."
+}

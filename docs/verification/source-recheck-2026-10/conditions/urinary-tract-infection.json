@@ -1,0 +1,24 @@
+{
+ "type": "conditions",
+ "id": "urinary-tract-infection",
+ "verdict": "accept-with-edits",
+ "edits": [
+  {
+   "field": "prevention",
+   "action": "remove-sentence",
+   "match": "NHS advice also includes avoiding perfumed bubble bath, soap or talcum powder around the genitals, preferring showers to baths, passing urine as soon as the urge is felt and wiping from front to back; for some women with recurrent cystitis a single antibiotic dose taken within an hour of sex is prescribed.",
+   "replacement": "NHS advice also includes avoiding perfumed bubble bath, soap or talcum powder around the genitals, preferring showers to baths, passing urine as soon as the urge is felt and wiping from front to back; for some women with recurrent cystitis a single antibiotic dose taken after sex is prescribed.",
+   "reason": "UNSAFE: 'within an hour of sex' is a new dosing-timing instruction not in the cited source; timing removed."
+  },
+  {
+   "field": "diagnosis",
+   "action": "remove-sentence",
+   "match": "Diagnosis combines clinical assessment with a urinalysis and, where indicated, a urine culture, which usually takes several days to complete; audits of general practice have found that prescribing antibiotics without any urine testing is common and is a recognised area for improvement.",
+   "replacement": "Diagnosis combines clinical assessment with a urinalysis and, where indicated, a urine culture, which usually takes several days to complete.",
+   "reason": "UNSUPPORTED: general-practice audit claim comes from a non-UK review and is not supported by the UK/official sources cited."
+  }
+ ],
+ "unverified_urls": [],
+ "checked_urls": [],
+ "notes": "Verdict file generated from the upstream verifier report; every match string was asserted to occur in the current record. URL checks were done in the upstream report and are not repeated here."
+}

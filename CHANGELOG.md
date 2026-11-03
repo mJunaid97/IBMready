@@ -1,5 +1,23 @@
 # Changelog
 
+## v1.10.1 — 2026-11-03
+
+Second pass on the 146 pages deepened in October (CLINICAL.md 5.5), and the last eleven anatomy articles.
+
+- Verification: every sentence added to the 28 conditions, 16 tests, 7 imaging studies, 6 biomarkers, 13 procedures, 16
+  medicines, 16 drug classes, 4 first-aid topics, 30 physiology pages and 10 anatomy articles was re-checked against a
+  retrieved page from its cited publisher. 107 edits: 78 pages accepted as written, 68 with removals or rewordings, none
+  rejected. Removed or corrected, among others: a lamotrigine skin-reaction risk list that had been pasted into the
+  xanthine-oxidase inhibitors page; an andexanet alfa statement wider than NICE TA697; a GTN spray instruction that
+  conflicted with the NHS page; an allopurinol taper and a titration frequency that no source gave; a warfarin missed-dose
+  instruction; sertraline onset claims that contradicted the page's own figures; CT and PET dose comparisons, timing and
+  prevalence figures and superlatives not in any source; cerebellar, laryngeal, oesophageal, bronchial and lingual
+  anatomy statements corrected against the cited StatPearls chapters; "nausea" dropped from the adult stroke signs
+- Anatomy: full articles for the gallbladder, spleen, ureters, prostate, penis, uterine ligaments, pituitary, thymus,
+  rib cage, shoulder girdle and foot (five to six sections, key facts, atlas structures and sources each). Every one of
+  the 48 organ pages is now an indexable article
+- Review status is unchanged (source-verified: facts checked against the cited sources, not clinically reviewed)
+
 ## v1.10.0 — 2026-11-03
 
 Health blog and news (221 posts), 64 new condition pages for the most-searched diseases, 46 new medicines, 28 new drug classes, and in-depth articles on 52 existing pages. Every claim was checked in two passes against its sources; nothing is clinically reviewed.

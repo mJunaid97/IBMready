@@ -1,0 +1,27 @@
+{
+ "type": "drug-classes",
+ "id": "contrast-agents",
+ "verdict": "accept-with-edits",
+ "edits": [
+  {
+   "field": "cautions",
+   "action": "remove-item",
+   "match": "Gadolinium agents are never given into the spinal fluid",
+   "replacement": "",
+   "reason": "UNSUPPORTED: absolute statement not in the retrieved FDA communication or any cited excerpt; intrathecal use is unlicensed rather than 'never' done."
+  }
+ ],
+ "unverified_urls": [
+  "https://www.nhs.uk/tests-and-treatments/ct-scan/",
+  "https://www.nhs.uk/tests-and-treatments/mri-scan/",
+  "https://www.nhs.uk/tests-and-treatments/angiography/",
+  "https://www.ncbi.nlm.nih.gov/books/NBK537159/",
+  "https://www.ncbi.nlm.nih.gov/books/NBK567800/",
+  "https://www.uclh.nhs.uk/patients-and-visitors/patient-information-pages/contrast-agents-x-ray-fluoroscopy-ct-and-angiography-examinations"
+ ],
+ "checked_urls": [
+  "https://www.fda.gov/drugs/drugsafety/ucm589213.htm",
+  "https://www.fda.gov/drugs/drugsafety/PostmarketdrugsafetyInformationforPatientsandProviders/ucm142882.htm"
+ ],
+ "notes": "FDA excerpt supports: retention for months to years incl. brain, class warning, Medication Guides, no proven harm with normal kidneys, lowest retention with macrocyclics (gadoterate, gadobutrol, gadoteridol), higher-risk groups (many doses, pregnancy, children, inflammatory conditions). 'Most in bone' and NSF are standard. Iodinated-agent statements (no 'iodine allergy', CI-AKI rarer than believed, false urination sensation, metformin, breastfeeding continues) come from cited StatPearls/UCLH pages not retrieved. FDA URL is a legacy ucm link that redirects. Protected fields unchanged."
+}

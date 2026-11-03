@@ -1,0 +1,34 @@
+{
+ "type": "medications",
+ "id": "warfarin",
+ "verdict": "accept-with-edits",
+ "edits": [
+  {
+   "field": "summary",
+   "action": "remove-sentence",
+   "match": "Its one serious harm is bleeding, which US labelling carries as a boxed warning, and because the dose each person needs varies with diet, illness, alcohol and a very long list of interacting medicines, treatment is organised around the INR test, an anticoagulant alert card and a steady routine rather than around a fixed dose.",
+   "replacement": "Its main serious harm is bleeding, which US labelling carries as a boxed warning, and because the dose each person needs varies with diet, illness, alcohol and a very long list of interacting medicines, treatment is organised around the INR test, an anticoagulant alert card and a steady routine rather than around a fixed dose.",
+   "reason": "UNSAFE: 'its one serious harm' is an overstated absolute contradicted by the record's own serious list (skin necrosis, calciphylaxis, fetal harm)."
+  },
+  {
+   "field": "cautions",
+   "action": "remove-sentence",
+   "match": "A missed dose is taken when remembered on the same day but never doubled the next day; taking more than prescribed is reported to the anticoagulant clinic, GP or NHS 111",
+   "replacement": "Missed or extra doses are reported to the anticoagulant clinic, GP or NHS 111 rather than corrected by the person",
+   "reason": "UNSAFE: a missed-dose dosing instruction not in the pre-patch record and not in the retrieved excerpts; for a narrow-therapeutic-index drug this is left to the clinic."
+  }
+ ],
+ "unverified_urls": [
+  "https://www.nhs.uk/medicines/anticoagulants/side-effects/",
+  "https://www.nhs.uk/medicines/anticoagulants/dosage/",
+  "https://medlineplus.gov/druginfo/meds/a682277.html",
+  "https://www.ncbi.nlm.nih.gov/sites/books/NBK470313/",
+  "https://www.ncbi.nlm.nih.gov/sites/books/NBK560651/"
+ ],
+ "checked_urls": [
+  "https://www.cuh.nhs.uk/patient-information/dietary-advice-for-patients-taking-warfarin/",
+  "https://www.nbt.nhs.uk/our-services/a-z-services/pharmacy/pharmacy-patient-information-leaflets/warfarin-therapy",
+  "https://www.uhs.nhs.uk/Media/UHS-website-2019/Patientinformation/Medicinestherapiesandanaesthetics/Warfarin-2306-PIL.pdf"
+ ],
+ "notes": "Line-by-line read of every new sentence. The nhs.uk search surfaced NHS trust warfarin leaflets rather than the national anticoagulants pages; excerpts support: bleeding and bruising as the main effect, hair loss/rash less often, vitamin K-rich foods lower the INR so consistency not avoidance, grapefruit and other juices raise the INR, alcohol kept within weekly limits and binge drinking avoided, antibiotics/illness/vomiting/diarrhoea/OTC products change the INR and are reported to the clinic. No INR target, dose, or titration figure was added (targets 2-3 / 2.5-3.5, 3-5 day onset and 4-12 week monitoring predate the patch). Boxed warning, narrow therapeutic index, calciphylaxis, inherited resistance, breastfeeding compatibility, rodenticide history and DOAC intracranial-bleed comparison (consistent with the pre-patch apixaban record) are StatPearls/MedlinePlus general knowledge stated descriptively. Interruption before surgery and warfarin-DOAC switching are framed as clinic-managed, not as instructions. No protected field changed."
+}

@@ -1,0 +1,31 @@
+{
+ "type": "conditions",
+ "id": "deep-vein-thrombosis",
+ "verdict": "accept-with-edits",
+ "edits": [
+  {
+   "field": "causes",
+   "action": "remove-item",
+   "match": "Conditions such as high blood pressure and diabetes",
+   "replacement": "",
+   "reason": "UNSUPPORTED: high blood pressure and diabetes are not listed as DVT causes in the cited NHS/MedlinePlus sources."
+  },
+  {
+   "field": "overview",
+   "action": "remove-sentence",
+   "match": "Most clots start in the deep veins of the calf, where flow is slow; damage to the vein from surgery or injury, and conditions such as high blood pressure and diabetes, add to the risk, and pregnancy, ageing and prolonged immobility after an operation or on a long flight are among the commonest triggers.",
+   "replacement": "Most clots start in the deep veins of the calf, where flow is slow; damage to the vein from surgery or injury adds to the risk, and pregnancy, ageing and prolonged immobility after an operation or on a long flight are among the commonest triggers.",
+   "reason": "UNSUPPORTED: 'high blood pressure and diabetes' as DVT risk factors not in cited sources; clause removed."
+  },
+  {
+   "field": "causes",
+   "action": "remove-item",
+   "match": "Damage to the vein wall from surgery or injury",
+   "replacement": "",
+   "reason": "SCHEMA: duplicates the existing causes item 'Injury to the vein'."
+  }
+ ],
+ "unverified_urls": [],
+ "checked_urls": [],
+ "notes": "Verdict file generated from the upstream verifier report; every match string was asserted to occur in the current record. URL checks were done in the upstream report and are not repeated here."
+}

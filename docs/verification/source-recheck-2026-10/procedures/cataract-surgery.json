@@ -1,0 +1,30 @@
+{
+ "type": "procedures",
+ "id": "cataract-surgery",
+ "verdict": "accept-with-edits",
+ "edits": [
+  {
+   "field": "what",
+   "action": "remove-sentence",
+   "match": "It is regarded as one of the safest and most effective operations in medicine, and the great majority of people see better afterwards, although many still need glasses for reading or fine distance focus.",
+   "replacement": "Most people see better afterwards, although many still need glasses for reading or fine distance focus.",
+   "reason": "UNSAFE: overstated absolute ('one of the safest and most effective operations in medicine') not in the NHS source; NHS states only that serious complications are uncommon and vision usually improves."
+  },
+  {
+   "field": "after",
+   "action": "remove-sentence",
+   "match": "Grittiness, a mild ache and redness are normal at first and fade over a day or two, though the eye can take a month or more to settle fully",
+   "replacement": "Grittiness, a mild ache and redness are normal at first and fade over a few days, though the eye can take a month or more to settle fully",
+   "reason": "WRONG: NHS says the eye may hurt for a few days (and healing takes 2-6 weeks), not 'a day or two'."
+  }
+ ],
+ "unverified_urls": [
+  "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8621996/"
+ ],
+ "checked_urls": [
+  "https://www.nhs.uk/tests-and-treatments/cataract-surgery/",
+  "https://www.bedfordshirehospitals.nhs.uk/patient-information-leaflets/cataract-surgery/",
+  "https://www.hey.nhs.uk/patient-leaflet/risks-benefits-cataract-surgery/"
+ ],
+ "notes": "NHS excerpts support: about 30 minutes under local anaesthetic, ultrasound break-up and plastic implant, same-day discharge and no driving self home, vision improves over days with healing 2-6 weeks, avoid rubbing/swimming, endophthalmitis rare but serious, posterior capsule opacification treated by quick outpatient laser, warning signs of redness/pain/blurred vision. Endophthalmitis 1 in 1000 and 15-30 min duration predate the patch. No protected field changed."
+}

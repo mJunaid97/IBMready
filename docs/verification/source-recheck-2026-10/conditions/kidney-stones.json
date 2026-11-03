@@ -1,0 +1,24 @@
+{
+ "type": "conditions",
+ "id": "kidney-stones",
+ "verdict": "accept-with-edits",
+ "edits": [
+  {
+   "field": "diagnosis",
+   "action": "remove-sentence",
+   "match": "Ultrasound is often the first imaging used to estimate stone size and check for obstruction, with plain X-ray or non-contrast CT as alternatives; CT is the usual choice for severe pain in adults.",
+   "replacement": "Non-contrast CT is the preferred imaging test to confirm a stone and check for obstruction; ultrasound is used first in children and in pregnancy to avoid radiation.",
+   "reason": "WRONG: presents ultrasound as first-line with CT as an alternative; NIDDK describes non-contrast CT as the preferred test, with ultrasound reserved for children and pregnancy."
+  },
+  {
+   "field": "treatment",
+   "action": "remove-sentence",
+   "match": "Stone size is the main determinant of initial treatment, and around eight in ten stones pass spontaneously.",
+   "replacement": "Stone size is the main determinant of initial treatment, and most small stones pass spontaneously.",
+   "reason": "UNSUPPORTED: 'eight in ten' figure not in cited sources; softened to 'most small stones pass'."
+  }
+ ],
+ "unverified_urls": [],
+ "checked_urls": [],
+ "notes": "Verdict file generated from the upstream verifier report; every match string was asserted to occur in the current record. URL checks were done in the upstream report and are not repeated here."
+}

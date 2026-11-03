@@ -1,0 +1,39 @@
+{
+ "type": "procedures",
+ "id": "coronary-bypass",
+ "verdict": "accept-with-edits",
+ "edits": [
+  {
+   "field": "why",
+   "action": "remove-sentence",
+   "match": "Left main stem or three-vessel coronary disease, particularly with diabetes or a weak ventricle, where surgery improves survival compared with stents",
+   "replacement": "Left main stem or three-vessel coronary disease, particularly with diabetes or a weak ventricle, where surgery is usually recommended rather than stents",
+   "reason": "UNSAFE: overstated certainty; the NHS pages say bypass is usually advised over stents for multi-vessel/left main disease but do not state a survival benefit."
+  },
+  {
+   "field": "recovery",
+   "action": "remove-sentence",
+   "match": "Most people return to ordinary activities, including driving, work and sex, at about six weeks, later for heavy manual work.",
+   "replacement": "Most ordinary activities can usually be resumed at about six weeks, later for heavy manual work.",
+   "reason": "WRONG: 'work at about six weeks' contradicts the record's own (pre-patch) 'six to twelve weeks off work'; NHS says most normal activities resume after about 6 weeks without naming work and sex at that point."
+  },
+  {
+   "field": "risks",
+   "action": "remove-sentence",
+   "match": "memory and concentration changes for some months, which usually improve but can occasionally be permanent",
+   "replacement": "memory and concentration changes for some months, which usually improve",
+   "reason": "UNSUPPORTED: NHS mentions memory and concentration problems but not that they can be permanent."
+  }
+ ],
+ "unverified_urls": [
+  "https://www.nhs.uk/conditions/coronary-artery-bypass-graft-cabg/risks/",
+  "https://www.nhs.uk/tests-and-treatments/coronary-artery-bypass-graft/how-its-done/",
+  "https://www.nhlbi.nih.gov/health/coronary-artery-bypass-grafting/recovery",
+  "https://www.nhlbi.nih.gov/health/coronary-artery-bypass-grafting/during"
+ ],
+ "checked_urls": [
+  "https://www.nhs.uk/tests-and-treatments/coronary-artery-bypass-graft/recovery/",
+  "https://www.nhs.uk/tests-and-treatments/coronary-artery-bypass-graft-cabg/risks/"
+ ],
+ "notes": "NHS excerpts support: atrial fibrillation, wound/chest infection, memory and concentration problems, stroke, perioperative heart attack, about a week in hospital with 1-2 days in intensive care, fatigue and chest/back pain for weeks, full recovery 2-3 months, most activities at 6 weeks, no heavy lifting for 3 months. The cited NHS risks URL uses the /conditions/ path whereas the live page is under /tests-and-treatments/ (likely a redirect; listed as unverified). 3-6 hour duration matches NHS 'How it's done' wording (general knowledge). No protected field changed."
+}

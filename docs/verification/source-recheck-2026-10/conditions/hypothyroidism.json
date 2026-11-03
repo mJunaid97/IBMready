@@ -1,0 +1,24 @@
+{
+ "type": "conditions",
+ "id": "hypothyroidism",
+ "verdict": "accept-with-edits",
+ "edits": [
+  {
+   "field": "diagnosis",
+   "action": "remove-sentence",
+   "match": "Routine screening of adults without symptoms is debated: the US Preventive Services Task Force found insufficient evidence for it, whereas the American Thyroid Association recommends periodic screening of people at higher risk.",
+   "replacement": "",
+   "reason": "UNSUPPORTED: USPSTF/ATA screening-policy statement not in the cited sources and out of scope for a UK audience."
+  },
+  {
+   "field": "complications",
+   "action": "remove-item",
+   "match": "Rarely, muscle breakdown (rhabdomyolysis) or fluid around the heart in severe untreated disease",
+   "replacement": "",
+   "reason": "UNSUPPORTED: based on case reports, not on the cited official sources."
+  }
+ ],
+ "unverified_urls": [],
+ "checked_urls": [],
+ "notes": "Verdict file generated from the upstream verifier report; every match string was asserted to occur in the current record. URL checks were done in the upstream report and are not repeated here."
+}

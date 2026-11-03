@@ -1,0 +1,31 @@
+{
+ "type": "tests",
+ "id": "pulse-oximetry",
+ "verdict": "accept-with-edits",
+ "edits": [
+  {
+   "field": "what",
+   "action": "remove-sentence",
+   "match": "Pulse oximetry is painless, takes seconds and can be done anywhere: in a GP surgery, clinic, ambulance, hospital ward or at home, which made it a cornerstone of remote monitoring during the COVID-19 pandemic.",
+   "replacement": "Pulse oximetry is painless, takes seconds and can be done anywhere: in a GP surgery, clinic, ambulance, hospital ward or at home, which made it useful for remote monitoring during the COVID-19 pandemic.",
+   "reason": "UNSUPPORTED: 'cornerstone of remote monitoring' is an unsupported superlative; softened to 'useful for'."
+  },
+  {
+   "field": "what",
+   "action": "remove-sentence",
+   "match": "It is part of the routine observations recorded on every hospital patient, and it is used to decide whether a person needs oxygen, to check that oxygen therapy or a lung medicine is working, to monitor breathing before, during and after surgery and sedation, and overnight to screen for sleep apnoea.",
+   "replacement": "It is part of routine observations in hospital, and it is used to decide whether a person needs oxygen, to check that oxygen therapy or a lung medicine is working, to monitor breathing before, during and after surgery and sedation, and overnight to screen for sleep apnoea.",
+   "reason": "UNSUPPORTED: absolute 'every hospital patient' not supported; softened to routine hospital observations."
+  },
+  {
+   "field": "limitations",
+   "action": "remove-sentence",
+   "match": "Electrical interference and a weak pulse signal corrupt the reading, and the device estimates saturation rather than measuring oxygen directly, so when the result will change management or a carbon dioxide level is needed, an arterial blood gas is taken.",
+   "replacement": "A weak pulse signal corrupts the reading, and the device estimates saturation rather than measuring oxygen directly, so when the result will change management or a carbon dioxide level is needed, an arterial blood gas is taken.",
+   "reason": "UNSUPPORTED: 'electrical interference' claim is patent-derived and not in the cited clinical sources; removed."
+  }
+ ],
+ "unverified_urls": [],
+ "checked_urls": [],
+ "notes": "Verdict file generated from the upstream verifier report; every match string was asserted to occur in the current record. URL checks were done in the upstream report and are not repeated here."
+}
