@@ -1,0 +1,531 @@
+{
+ "id": "codeine",
+ "searchesUsed": 9,
+ "counts": {
+  "supported": 53,
+  "textbook": 0,
+  "unsupported": 7,
+  "wrong": 0,
+  "unsafe": 0,
+  "unchecked": 0
+ },
+ "claims": [
+  {
+   "id": "c01",
+   "classification": "supported",
+   "evidence": "NHS: codeine for pain e.g. after operation or injury; co-codamol combines paracetamol and codeine",
+   "url": "https://www.nhs.uk/medicines/codeine/",
+   "action": "kept",
+   "sentence": "summary1"
+  },
+  {
+   "id": "c02",
+   "classification": "supported",
+   "evidence": "NHS side-effect pages: constipation, nausea, drowsiness; addiction possible",
+   "url": "https://www.nhs.uk/medicines/codeine/common-questions-about-codeine/",
+   "action": "kept",
+   "sentence": "summary2"
+  },
+  {
+   "id": "c03",
+   "classification": "supported",
+   "evidence": "NHS: do not combine with other paracetamol medicines (overdose risk); leaflets: delayed serious liver damage",
+   "url": "https://www.medicines.org.uk/emc/product/4457/pil",
+   "action": "kept",
+   "sentence": "summary3"
+  },
+  {
+   "id": "c04",
+   "classification": "supported",
+   "evidence": "NHS codeine page",
+   "url": "https://www.nhs.uk/medicines/codeine/",
+   "action": "kept",
+   "sentence": "usedFor0"
+  },
+  {
+   "id": "c05",
+   "classification": "supported",
+   "evidence": "NHS about co-codamol: period pain, muscle pain, toothache",
+   "url": "https://www.nhs.uk/medicines/co-codamol-for-adults/about-co-codamol-for-adults/",
+   "action": "kept",
+   "sentence": "usedFor1"
+  },
+  {
+   "id": "c06",
+   "classification": "supported",
+   "evidence": "NHS: used when ibuprofen/aspirin/paracetamol alone have not worked",
+   "url": "https://www.nhs.uk/medicines/co-codamol-for-adults/about-co-codamol-for-adults/",
+   "action": "kept",
+   "sentence": "usedFor2"
+  },
+  {
+   "id": "c07",
+   "classification": "supported",
+   "evidence": "NHS: affects pain receptors in CNS and brain to block pain signals",
+   "url": "https://www.nhs.uk/medicines/codeine/common-questions-about-codeine/",
+   "action": "kept",
+   "sentence": "how0"
+  },
+  {
+   "id": "c08",
+   "classification": "supported",
+   "evidence": "NHS: codeine slows digestion so can cause constipation",
+   "url": "https://www.nhs.uk/medicines/codeine/common-questions-about-codeine/",
+   "action": "kept",
+   "sentence": "how1"
+  },
+  {
+   "id": "c09",
+   "classification": "supported",
+   "evidence": "NHS: combination of paracetamol and codeine",
+   "url": "https://www.nhs.uk/medicines/co-codamol-for-adults/about-co-codamol-for-adults/",
+   "action": "kept",
+   "sentence": "how2"
+  },
+  {
+   "id": "c10",
+   "classification": "supported",
+   "evidence": "NHS about co-codamol: takes up to an hour to work",
+   "url": "https://www.nhs.uk/medicines/co-codamol-for-adults/about-co-codamol-for-adults/",
+   "action": "kept",
+   "sentence": "onset"
+  },
+  {
+   "id": "c11",
+   "classification": "supported",
+   "evidence": "NHS side-effect pages list constipation, nausea, sleepiness",
+   "url": "https://www.nhs.uk/medicines/codeine/side-effects-of-codeine/",
+   "action": "kept",
+   "sentence": "common0"
+  },
+  {
+   "id": "c12",
+   "classification": "unsupported",
+   "evidence": "NHS detailed codeine side-effects page does not list sweating as common (it appears under withdrawal); sources conflict",
+   "url": "https://www.nhs.uk/medicines/codeine/side-effects-of-codeine/",
+   "action": "removed",
+   "sentence": "common1 Sweating."
+  },
+  {
+   "id": "c13",
+   "classification": "unsupported",
+   "evidence": "Retrieved sources did not state that sleepiness eases within days",
+   "url": "https://www.nhs.uk/medicines/codeine/common-questions-about-codeine/",
+   "action": "removed",
+   "sentence": "common2"
+  },
+  {
+   "id": "c14",
+   "classification": "supported",
+   "evidence": "NHS: serious effects are rare (not uncommon); 999 for breathing difficulty, fit, allergic symptoms",
+   "url": "https://www.nhs.uk/medicines/codeine/side-effects-of-codeine/",
+   "action": "edited",
+   "sentence": "serious0",
+   "newSentence": "The NHS describes a serious allergic reaction, slow or shallow breathing, an irregular heartbeat and low blood pressure as rare serious side effects of codeine, and says to get emergency help (999) for breathing difficulty, a fit or allergic symptoms such as throat swelling."
+  },
+  {
+   "id": "c15",
+   "classification": "unsupported",
+   "evidence": "Dependence/abuse/life-threatening overdose and dose-duration risk came from an emc leaflet not re-retrieved; NHS only confirms addiction is possible",
+   "url": "https://www.nhs.uk/medicines/codeine/",
+   "action": "edited",
+   "sentence": "serious1",
+   "newSentence": "The NHS says it is possible to become addicted to codeine, and a prescriber or pharmacist can be asked about any concern."
+  },
+  {
+   "id": "c16",
+   "classification": "unsupported",
+   "evidence": "Withdrawal symptom list not found on retrieved NHS text; ICB list differs (restlessness, yawning, chills, etc.); list removed, NHS gradual reduction kept",
+   "url": "https://www.nhs.uk/medicines/codeine/common-questions-about-codeine/",
+   "action": "edited",
+   "sentence": "serious2",
+   "newSentence": "The NHS advises against stopping codeine suddenly after regular use, and says the doctor reduces the dose gradually over weeks or months."
+  },
+  {
+   "id": "c17",
+   "classification": "unsupported",
+   "evidence": "Tolerance claim not retrieved from NHS; only a hospital leaflet",
+   "url": "https://www.nhs.uk/medicines/codeine/common-questions-about-codeine/",
+   "action": "removed",
+   "sentence": "serious3"
+  },
+  {
+   "id": "c18",
+   "classification": "supported",
+   "evidence": "NHS who-can list includes lung problem, head injury, adrenal, fits, alcohol addiction, thyroid, kidney/liver; \"allergy to other medicines\" not confirmed",
+   "url": "https://www.nhs.uk/medicines/codeine/who-can-and-cannot-take-codeine/",
+   "action": "edited",
+   "sentence": "cautions0",
+   "newSentence": "Codeine is not suitable for everyone: the NHS lists a lung problem, a head injury, adrenal gland problems, a condition that causes fits, an addiction to alcohol, an underactive thyroid, and kidney or liver problems among the reasons, as well as a previous reaction to codeine."
+  },
+  {
+   "id": "c19",
+   "classification": "supported",
+   "evidence": "NHS: not under 12; 12-18 only if everyday painkillers have not worked",
+   "url": "https://www.nhs.uk/medicines/codeine/who-can-and-cannot-take-codeine/",
+   "action": "edited",
+   "sentence": "cautions1a",
+   "newSentence": "The NHS says not to give codeine to children under 12, and that people aged 12 to 18 are given it only if everyday painkillers have not worked."
+  },
+  {
+   "id": "c20",
+   "classification": "supported",
+   "evidence": "NHS: under-18 tonsil/adenoid removal for OSA",
+   "url": "https://www.nhs.uk/medicines/codeine/who-can-and-cannot-take-codeine/",
+   "action": "edited",
+   "sentence": "cautions1b",
+   "newSentence": "The NHS says codeine should not be given to anyone under 18 who has had their tonsils or adenoids removed because of obstructive sleep apnoea."
+  },
+  {
+   "id": "c21",
+   "classification": "supported",
+   "evidence": "NHS pregnancy page",
+   "url": "https://www.nhs.uk/medicines/codeine/pregnancy-breastfeeding-and-fertility-while-taking-codeine/",
+   "action": "edited",
+   "sentence": "cautions2",
+   "newSentence": "The NHS says codeine can be used during pregnancy, but long-term use is not advised, and use at the end of pregnancy can leave the baby with withdrawal symptoms and needing extra time in hospital for observation."
+  },
+  {
+   "id": "c22",
+   "classification": "supported",
+   "evidence": "NHS and SPS/MHRA: do not take while breastfeeding",
+   "url": "https://www.nhs.uk/medicines/codeine/pregnancy-breastfeeding-and-fertility-while-taking-codeine/",
+   "action": "edited",
+   "sentence": "cautions3",
+   "newSentence": "The NHS says not to take codeine while breastfeeding, because small amounts pass into breast milk and can cause breathing problems and drowsiness in the baby."
+  },
+  {
+   "id": "c23",
+   "classification": "supported",
+   "evidence": "NHS: alcohol may make sleepier, raises risk of serious effects",
+   "url": "https://www.nhs.uk/medicines/codeine/common-questions-about-codeine/",
+   "action": "edited",
+   "sentence": "cautions4",
+   "newSentence": "The NHS says drinking alcohol with codeine may make a person sleepier and can raise the risk of serious side effects."
+  },
+  {
+   "id": "c24",
+   "classification": "supported",
+   "evidence": "NHS: recreational drugs raise risk of serious effects incl breathing difficulties",
+   "url": "https://www.nhs.uk/medicines/codeine/side-effects-of-codeine/",
+   "action": "edited",
+   "sentence": "cautions5",
+   "newSentence": "The NHS says recreational drugs such as cannabis, cocaine or heroin raise the risk of serious side effects of codeine, including breathing difficulties."
+  },
+  {
+   "id": "c25",
+   "classification": "supported",
+   "evidence": "emc leaflets: do not drive or operate machinery if dizzy or drowsy",
+   "url": "https://www.medicines.org.uk/emc/product/4457/pil",
+   "action": "edited",
+   "sentence": "cautions6",
+   "newSentence": "Co-codamol leaflets say not to drive or use machinery if it causes dizziness or drowsiness."
+  },
+  {
+   "id": "c26",
+   "classification": "supported",
+   "evidence": "NHS and leaflets: avoid other paracetamol medicines incl cold/flu remedies",
+   "url": "https://www.medicines.org.uk/emc/product/4457/pil",
+   "action": "edited",
+   "sentence": "cautions7",
+   "newSentence": "The NHS advises against taking co-codamol with other paracetamol-containing medicines unless a doctor says so, and the leaflets include cold and flu remedies among them."
+  },
+  {
+   "id": "c27",
+   "classification": "supported",
+   "evidence": "NHS about co-codamol: follow doctor guidance on duration; NHS codeine: gradual reduction",
+   "url": "https://www.nhs.uk/medicines/co-codamol-for-adults/about-co-codamol-for-adults/",
+   "action": "edited",
+   "sentence": "monitoring",
+   "newSentence": "The NHS says it is possible to become addicted to codeine, advises following the prescriber's guidance on how long to take it, and says the doctor reduces the dose gradually before stopping."
+  },
+  {
+   "id": "c28",
+   "classification": "supported",
+   "evidence": "emc lists co-codamol tablets, capsules and effervescent tablets",
+   "url": "https://www.medicines.org.uk/emc/product/4457/pil",
+   "action": "kept",
+   "sentence": "regimenNote"
+  },
+  {
+   "id": "c29",
+   "classification": "supported",
+   "evidence": "emc: Zapain 30mg/500mg tablets and capsules (paracetamol and codeine); MedlinePlus lists Tylenol with Codeine",
+   "url": "https://www.medicines.org.uk/emc/product/431/smpc",
+   "action": "kept",
+   "sentence": "brands Zapain, Tylenol with Codeine"
+  },
+  {
+   "id": "c30",
+   "classification": "unsupported",
+   "evidence": "Solpadeine brand only seen as \"Solpadeine plus\" in a formulary listing, not on allowed official pages; dropped",
+   "url": "https://www.medicines.org.uk/emc/product/431/smpc",
+   "action": "removed",
+   "sentence": "brand Solpadeine"
+  },
+  {
+   "id": "c31",
+   "classification": "supported",
+   "evidence": "NHS: lowest strength from pharmacy, higher strengths on prescription",
+   "url": "https://www.nhs.uk/medicines/co-codamol-for-adults/about-co-codamol-for-adults/",
+   "action": "kept",
+   "sentence": "regulatory pharmacy/prescription"
+  },
+  {
+   "id": "c32",
+   "classification": "unsupported",
+   "evidence": "Schedule 5 controlled status not retrieved from an official page; removed",
+   "url": "https://www.nhs.uk/medicines/co-codamol-for-adults/about-co-codamol-for-adults/",
+   "action": "removed",
+   "sentence": "regulatory controlled"
+  },
+  {
+   "id": "c33",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/emc text supports this (reworded where noted in notes)",
+   "url": "https://www.nhs.uk/medicines/codeine/",
+   "action": "edited",
+   "sentence": "What are codeine and co-codamol used for?",
+   "newSentence": "Codeine is an opioid painkiller that the NHS describes as a medicine for pain, for example after an operation or injury."
+  },
+  {
+   "id": "c34",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/emc text supports this (reworded where noted in notes)",
+   "url": "https://www.nhs.uk/medicines/co-codamol-for-adults/about-co-codamol-for-adults/",
+   "action": "edited",
+   "sentence": "What are codeine and co-codamol used for?",
+   "newSentence": "Co-codamol is a combination of two painkillers, paracetamol and codeine. It is used for aches and pains, including period pain, muscle pain and toothache. The NHS says it is used when everyday painkillers such as ibuprofen, aspirin or paracetamol on their own have not worked."
+  },
+  {
+   "id": "c35",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/emc text supports this (reworded where noted in notes)",
+   "url": "https://www.nhs.uk/medicines/codeine/who-can-and-cannot-take-codeine/",
+   "action": "edited",
+   "sentence": "What are codeine and co-codamol used for?",
+   "newSentence": "The NHS says codeine is not suitable for everyone. It should not be given to children under 12, and young people aged 12 to 18 are given it only if everyday painkillers have not worked."
+  },
+  {
+   "id": "c36",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/emc text supports this (reworded where noted in notes)",
+   "url": "https://www.nhs.uk/medicines/co-codamol-for-adults/about-co-codamol-for-adults/",
+   "action": "edited",
+   "sentence": "What are codeine and co-codamol used for?",
+   "newSentence": "Product leaflets show that co-codamol comes in different strengths. The NHS says the lowest strength can be bought from a pharmacy, while higher strengths need a prescription."
+  },
+  {
+   "id": "c37",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/emc text supports this (reworded where noted in notes)",
+   "url": "https://www.nhs.uk/medicines/codeine/common-questions-about-codeine/",
+   "action": "edited",
+   "sentence": "How do codeine and co-codamol work?",
+   "newSentence": "Codeine is an opioid. The NHS says it acts on pain receptors in the central nervous system and the brain to block pain signals to the rest of the body. It also slows digestion, which is why it can cause constipation."
+  },
+  {
+   "id": "c38",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/emc text supports this (reworded where noted in notes)",
+   "url": "https://www.nhs.uk/medicines/co-codamol-for-adults/about-co-codamol-for-adults/",
+   "action": "edited",
+   "sentence": "How do codeine and co-codamol work?",
+   "newSentence": "In co-codamol the codeine is combined with paracetamol. The NHS says co-codamol can take up to an hour to start working."
+  },
+  {
+   "id": "c39",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/emc text supports this (reworded where noted in notes)",
+   "url": "https://www.nhs.uk/medicines/codeine/side-effects-of-codeine/",
+   "action": "edited",
+   "sentence": "Side effects, constipation and dependence",
+   "newSentence": "The NHS lists constipation, feeling or being sick, and feeling sleepy as common side effects of codeine and co-codamol."
+  },
+  {
+   "id": "c40",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/emc text supports this (reworded where noted in notes)",
+   "url": "https://www.nhs.uk/medicines/codeine/common-questions-about-codeine/",
+   "action": "edited",
+   "sentence": "Side effects, constipation and dependence",
+   "newSentence": "Because codeine slows digestion, the NHS suggests eating more fibre and drinking plenty of fluids for constipation. If that does not help, a laxative can be used after checking with a pharmacist or doctor, and the NHS says lactulose is usually the best choice."
+  },
+  {
+   "id": "c41",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/emc text supports this (reworded where noted in notes)",
+   "url": "https://www.nhs.uk/medicines/codeine/common-questions-about-codeine/",
+   "action": "edited",
+   "sentence": "Side effects, constipation and dependence",
+   "newSentence": "The NHS says it is possible to become addicted to codeine, and advises talking to a doctor if there is a worry. It advises against stopping suddenly after regular use, and says the doctor reduces the dose gradually over weeks or months."
+  },
+  {
+   "id": "c42",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/emc text supports this (reworded where noted in notes)",
+   "url": "https://www.nhs.uk/medicines/codeine/side-effects-of-codeine/",
+   "action": "edited",
+   "sentence": "Side effects, constipation and dependence",
+   "newSentence": "The NHS describes a serious allergic reaction, slow or shallow breathing, an irregular heartbeat and low blood pressure as rare serious side effects. It says to call 999 or go to A&E for breathing difficulty, a fit or allergic symptoms such as swelling of the lips, mouth, throat or tongue."
+  },
+  {
+   "id": "c43",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/emc text supports this (reworded where noted in notes)",
+   "url": "https://www.medicines.org.uk/emc/product/4457/pil",
+   "action": "edited",
+   "sentence": "Paracetamol in co-codamol and other medicines",
+   "newSentence": "Co-codamol contains paracetamol. The NHS advises against combining it with other paracetamol-containing medicines unless a doctor has said to, because of the risk of too much paracetamol. The product leaflets say cold and flu remedies are among the products to check."
+  },
+  {
+   "id": "c44",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/emc text supports this (reworded where noted in notes)",
+   "url": "https://www.nhs.uk/medicines/co-codamol-for-adults/about-co-codamol-for-adults/",
+   "action": "edited",
+   "sentence": "Paracetamol in co-codamol and other medicines",
+   "newSentence": "The NHS says taking too much co-codamol can be harmful, and the leaflets say too much paracetamol can cause delayed, serious liver damage."
+  },
+  {
+   "id": "c45",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/emc text supports this (reworded where noted in notes)",
+   "url": "https://www.nth.nhs.uk/resources/paracetamol-safety-for-adults/",
+   "action": "edited",
+   "sentence": "Paracetamol in co-codamol and other medicines",
+   "newSentence": "The leaflets say to get medical advice if too much has been taken, even when feeling well. A North Tees and Hartlepool NHS leaflet gives NHS 111 as the number to call, and says to call 999 or go to A&E in an emergency."
+  },
+  {
+   "id": "c46",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/emc text supports this (reworded where noted in notes)",
+   "url": "https://www.nhs.uk/medicines/codeine/who-can-and-cannot-take-codeine/",
+   "action": "edited",
+   "sentence": "Who needs extra care, and what about pregnancy, driving and alcohol?",
+   "newSentence": "The NHS lists a lung problem, a head injury, adrenal gland problems, a condition that causes fits, an addiction to alcohol, an underactive thyroid, and kidney or liver problems among the reasons codeine may not be suitable. It also says codeine should not be given to anyone under 18 who has had their tonsils or adenoids removed because of obstructive sleep apnoea. A pharmacist or doctor can say whether it suits a particular person."
+  },
+  {
+   "id": "c47",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/emc text supports this (reworded where noted in notes)",
+   "url": "https://www.nhs.uk/medicines/codeine/pregnancy-breastfeeding-and-fertility-while-taking-codeine/",
+   "action": "edited",
+   "sentence": "Who needs extra care, and what about pregnancy, driving and alcohol?",
+   "newSentence": "The NHS says codeine can be used during pregnancy, but long-term use is not advised. Codeine used near the end of pregnancy can cause withdrawal symptoms in the baby, who may need extra time in hospital for observation."
+  },
+  {
+   "id": "c48",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/emc text supports this (reworded where noted in notes)",
+   "url": "https://www.nhs.uk/medicines/codeine/pregnancy-breastfeeding-and-fertility-while-taking-codeine/",
+   "action": "edited",
+   "sentence": "Who needs extra care, and what about pregnancy, driving and alcohol?",
+   "newSentence": "The NHS says not to take codeine while breastfeeding, because small amounts reach breast milk and can cause breathing problems and drowsiness in the baby. The Specialist Pharmacy Service says the MHRA gives the same advice. A doctor or pharmacist can recommend a more suitable painkiller."
+  },
+  {
+   "id": "c49",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/emc text supports this (reworded where noted in notes)",
+   "url": "https://www.nhs.uk/medicines/codeine/common-questions-about-codeine/",
+   "action": "edited",
+   "sentence": "Who needs extra care, and what about pregnancy, driving and alcohol?",
+   "newSentence": "Co-codamol leaflets say it can cause dizziness or drowsiness, and not to drive or use machinery if affected. The NHS says alcohol may make a person sleepier and can raise the risk of serious side effects, and that recreational drugs such as cannabis, cocaine or heroin also raise the risk of serious side effects, including breathing difficulties."
+  },
+  {
+   "id": "c50",
+   "classification": "supported",
+   "evidence": "as for matching section claims",
+   "url": "https://www.nhs.uk/medicines/codeine/common-questions-about-codeine/",
+   "action": "edited",
+   "sentence": "faq: Can you become addicted to codeine?",
+   "newSentence": "The NHS says it is possible to become addicted to codeine and to talk to a doctor about any worry. The NHS advises against stopping suddenly after regular use, and says the doctor reduces the dose gradually."
+  },
+  {
+   "id": "c51",
+   "classification": "supported",
+   "evidence": "as for matching section claims",
+   "url": "https://www.nhs.uk/medicines/codeine/common-questions-about-codeine/",
+   "action": "edited",
+   "sentence": "faq: Why does codeine cause constipation?",
+   "newSentence": "The NHS says codeine slows down digestion, which is why it can cause constipation. The NHS suggests more fibre and fluids, and a laxative after checking with a pharmacist or doctor."
+  },
+  {
+   "id": "c52",
+   "classification": "supported",
+   "evidence": "as for matching section claims",
+   "url": "https://www.medicines.org.uk/emc/product/4457/pil",
+   "action": "edited",
+   "sentence": "faq: Can co-codamol be taken with other paracetamol medicines?",
+   "newSentence": "Co-codamol already contains paracetamol, and the NHS and product leaflets advise against taking other paracetamol-containing medicines with it. Cold and flu remedies are among those to check, because too much paracetamol can cause liver damage."
+  },
+  {
+   "id": "c53",
+   "classification": "supported",
+   "evidence": "as for matching section claims",
+   "url": "https://www.nhs.uk/medicines/codeine/pregnancy-breastfeeding-and-fertility-while-taking-codeine/",
+   "action": "edited",
+   "sentence": "faq: Is codeine used while breastfeeding?",
+   "newSentence": "The NHS advises against it, because small amounts of codeine pass into breast milk and can cause breathing problems and drowsiness in the baby. A doctor or pharmacist can recommend a more suitable painkiller."
+  },
+  {
+   "id": "c54",
+   "classification": "supported",
+   "evidence": "as for matching section claims",
+   "url": "https://www.nhs.uk/medicines/codeine/common-questions-about-codeine/",
+   "action": "edited",
+   "sentence": "faq: Can you drink alcohol with co-codamol?",
+   "newSentence": "The NHS says drinking alcohol with codeine may make a person sleepier and can raise the risk of serious side effects. Co-codamol leaflets say not to drive or use machinery if drowsy or dizzy."
+  },
+  {
+   "id": "c55",
+   "classification": "supported",
+   "evidence": "NHS pages",
+   "url": "https://www.nhs.uk/medicines/co-codamol-for-adults/about-co-codamol-for-adults/",
+   "action": "kept",
+   "sentence": "keyFact0"
+  },
+  {
+   "id": "c56",
+   "classification": "supported",
+   "evidence": "NHS pages",
+   "url": "https://www.nhs.uk/medicines/codeine/",
+   "action": "kept",
+   "sentence": "keyFact1"
+  },
+  {
+   "id": "c57",
+   "classification": "supported",
+   "evidence": "NHS pages",
+   "url": "https://www.nhs.uk/medicines/codeine/side-effects-of-codeine/",
+   "action": "kept",
+   "sentence": "keyFact2"
+  },
+  {
+   "id": "c58",
+   "classification": "supported",
+   "evidence": "NHS pages",
+   "url": "https://www.nhs.uk/medicines/co-codamol-for-adults/how-and-when-to-take-co-codamol-for-adults/",
+   "action": "kept",
+   "sentence": "keyFact3"
+  },
+  {
+   "id": "c59",
+   "classification": "supported",
+   "evidence": "NHS pages",
+   "url": "https://www.nhs.uk/medicines/codeine/pregnancy-breastfeeding-and-fertility-while-taking-codeine/",
+   "action": "kept",
+   "sentence": "keyFact4"
+  },
+  {
+   "id": "c60",
+   "classification": "supported",
+   "evidence": "NHS pages",
+   "url": "https://www.nhs.uk/medicines/co-codamol-for-adults/about-co-codamol-for-adults/",
+   "action": "edited",
+   "sentence": "keyFact5",
+   "newSentence": "The NHS says the lowest co-codamol strength is sold in pharmacies and higher strengths need a prescription"
+  }
+ ],
+ "notes": "Cut: Schedule 5 controlled status (no official retrieval), Solpadeine brand, sweating, tolerance, withdrawal symptom list, 'plain paracetamol usual alternative', 'eases within days', 'higher strengths more side effects'. Serious effects are 'rare' not 'uncommon'. Pharmacy/prescription status now cites NHS about-co-codamol page; emc 8/500 shows both (P) and POM so product-specific. 111/999 line rests on a North Tees NHS leaflet plus product leaflets, no national NHS page retrieved by this auditor. Allergy to 'other medicines' dropped (not retrieved). 'Sources conflict' on pregnancy: one leaflet permissive, hospital advice stricter; NHS page used. Article word count: see check."
+}

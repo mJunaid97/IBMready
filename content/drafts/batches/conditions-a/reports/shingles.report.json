@@ -1,0 +1,816 @@
+{
+ "id": "shingles",
+ "searchesUsed": 9,
+ "counts": {
+  "supported": 52,
+  "textbook": 6,
+  "unsupported": 31,
+  "wrong": 0,
+  "unsafe": 0,
+  "unchecked": 0
+ },
+ "claims": [
+  {
+   "id": "c01",
+   "classification": "supported",
+   "evidence": "CDC: painful rash from reactivation of varicella-zoster virus; NHS summary: dormant, reactivates",
+   "url": "https://www.cdc.gov/shingles/about/index.html",
+   "action": "kept",
+   "newSentence": "",
+   "where": "definition"
+  },
+  {
+   "id": "c02",
+   "classification": "supported",
+   "evidence": "NHS/CDC: same virus as chickenpox, reactivates",
+   "url": "https://www.nhs.uk/conditions/shingles/",
+   "action": "edited",
+   "newSentence": "Shingles is caused by the chickenpox virus becoming active again after lying dormant in the body.",
+   "where": "overview"
+  },
+  {
+   "id": "c03",
+   "classification": "supported",
+   "evidence": "NHS: tingling or painful feeling, rash follows a few days later on one side",
+   "url": "https://www.nhs.uk/conditions/shingles/",
+   "action": "edited",
+   "newSentence": "The NHS describes a tingling or painful feeling in an area of skin as an early sign, usually followed a few days later by a rash on one side of the body.",
+   "where": "overview"
+  },
+  {
+   "id": "c04",
+   "classification": "unsupported",
+   "evidence": "CDC about page lists fever, headaches, chills, upset stomach; fatigue not retrieved",
+   "url": "https://www.cdc.gov/shingles/about/index.html",
+   "action": "edited",
+   "newSentence": "Moved to article: The CDC lists fever, headaches, chills and upset stomach as other symptoms that can occur.",
+   "where": "overview"
+  },
+  {
+   "id": "c05",
+   "classification": "supported",
+   "evidence": "NHS: up to 4 weeks; skin can stay painful for weeks after",
+   "url": "https://www.nhs.uk/conditions/shingles/",
+   "action": "edited",
+   "newSentence": "The NHS says the rash can take up to 4 weeks to heal, and the skin can stay painful for some weeks afterwards.",
+   "where": "overview"
+  },
+  {
+   "id": "c06",
+   "classification": "supported",
+   "evidence": "NHS/CDC",
+   "url": "https://www.nhs.uk/conditions/shingles/",
+   "action": "kept",
+   "newSentence": "",
+   "where": "causes[0]"
+  },
+  {
+   "id": "c07",
+   "classification": "unsupported",
+   "evidence": "CDC says risk increases with age; 'sharply after 50' not retrieved. NHS inform: more common with age, especially over 50",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/infections-and-poisoning/shingles/",
+   "action": "edited",
+   "newSentence": "Older age: NHS inform says shingles is more common as people get older, especially over 50",
+   "where": "riskFactors[0]"
+  },
+  {
+   "id": "c08",
+   "classification": "supported",
+   "evidence": "NHS inform and CDC: weakened immunity raises risk",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/infections-and-poisoning/shingles/",
+   "action": "edited",
+   "newSentence": "A weakened immune system or medicines that affect immunity, which NHS inform and the CDC link to a higher risk",
+   "where": "riskFactors[1]"
+  },
+  {
+   "id": "c09",
+   "classification": "supported",
+   "evidence": "NHS: one-sided rash, itchy blisters ooze then scab",
+   "url": "https://www.nhs.uk/conditions/shingles/",
+   "action": "kept",
+   "newSentence": "",
+   "where": "signs[0]"
+  },
+  {
+   "id": "c10",
+   "classification": "supported",
+   "evidence": "NHS 111 Wales: rash can sit in and around the eye; can affect sight or hearing",
+   "url": "https://111.wales.nhs.uk/encyclopaedia/s/article/shingles/",
+   "action": "kept",
+   "newSentence": "",
+   "where": "signs[1]"
+  },
+  {
+   "id": "c11",
+   "classification": "supported",
+   "evidence": "MedlinePlus/CDC: PHN most common complication",
+   "url": "https://medlineplus.gov/ency/article/000858.htm",
+   "action": "kept",
+   "newSentence": "",
+   "where": "complications[0]"
+  },
+  {
+   "id": "c12",
+   "classification": "supported",
+   "evidence": "NHS inform lists infection of rash, eye problems, scarring",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/infections-and-poisoning/shingles/",
+   "action": "kept",
+   "newSentence": "",
+   "where": "complications[1]"
+  },
+  {
+   "id": "c13",
+   "classification": "unsupported",
+   "evidence": "Not in any retrieved text",
+   "url": "https://www.nhs.uk/conditions/shingles/",
+   "action": "removed",
+   "newSentence": "",
+   "where": "complications[2]"
+  },
+  {
+   "id": "c14",
+   "classification": "supported",
+   "evidence": "NHS inform: eye problems that can lead to sight loss",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/infections-and-poisoning/shingles/",
+   "action": "edited",
+   "newSentence": "Eye problems that can lead to sight loss",
+   "where": "complications[3]"
+  },
+  {
+   "id": "c15",
+   "classification": "supported",
+   "evidence": "CDC: pneumonia, hearing problems, brain inflammation very rare",
+   "url": "https://www.cdc.gov/shingles/about/index.html",
+   "action": "edited",
+   "newSentence": "Hearing problems and brain inflammation (encephalitis), which the CDC describes as very rare",
+   "where": "complications[4]"
+  },
+  {
+   "id": "c16",
+   "classification": "unsupported",
+   "evidence": "Retrieved text: occurs when shingles affects facial nerve; 'rare' not retrieved",
+   "url": "https://medlineplus.gov/ency/article/000858.htm",
+   "action": "edited",
+   "newSentence": "Ramsay Hunt syndrome, which occurs when shingles affects the facial nerve",
+   "where": "complications[5]"
+  },
+  {
+   "id": "c17",
+   "classification": "textbook",
+   "evidence": "Not returned this pass; plain textbook fact (diagnosis is clinical)",
+   "url": "",
+   "action": "kept",
+   "newSentence": "",
+   "where": "diagnosis"
+  },
+  {
+   "id": "c18",
+   "classification": "supported",
+   "evidence": "CDC clinical overview: hard to diagnose in children and younger adults if mild",
+   "url": "https://www.cdc.gov/shingles/hcp/clinical-overview/index.html",
+   "action": "kept",
+   "newSentence": "",
+   "where": "diagnosis"
+  },
+  {
+   "id": "c19",
+   "classification": "unsupported",
+   "evidence": "CDC 'no cure' not confirmed; NHS summary: no cure, symptoms can be eased; painkillers common",
+   "url": "https://www.nhs.uk/conditions/shingles/",
+   "action": "edited",
+   "newSentence": "The NHS says there is no cure for shingles, but symptoms can be eased.",
+   "where": "treatment"
+  },
+  {
+   "id": "c20",
+   "classification": "unsupported",
+   "evidence": "'Mild cases need no treatment' not retrieved; antiviral criteria supported (NHS/NHS inform)",
+   "url": "https://www.nhs.uk/conditions/shingles/",
+   "action": "edited",
+   "newSentence": "Antiviral tablets may be offered for a weakened immune system, moderate or severe pain or rash, or a rash spreading beyond the chest, tummy and back.",
+   "where": "treatment"
+  },
+  {
+   "id": "c21",
+   "classification": "supported",
+   "evidence": "NHS: antivirals work best within 3 days",
+   "url": "https://www.nhs.uk/conditions/shingles/",
+   "action": "edited",
+   "newSentence": "The NHS says they work best when started within 3 days of the rash appearing.",
+   "where": "treatment"
+  },
+  {
+   "id": "c22",
+   "classification": "unsupported",
+   "evidence": "'milder if it occurs' not retrieved; CDC recommends vaccination to prevent shingles and complications",
+   "url": "https://www.cdc.gov/shingles/about/index.html",
+   "action": "edited",
+   "newSentence": "The CDC recommends Shingrix vaccination to prevent shingles and its complications.",
+   "where": "prevention"
+  },
+  {
+   "id": "c23",
+   "classification": "supported",
+   "evidence": "UKHSA: Shingrix only, two doses",
+   "url": "https://www.gov.uk/government/publications/shingles-vaccination-guidance-for-healthcare-professionals/shingles-immunisation-programme-information-for-healthcare-practitioners",
+   "action": "kept",
+   "newSentence": "",
+   "where": "prevention"
+  },
+  {
+   "id": "c24",
+   "classification": "unsupported",
+   "evidence": "Triggers retrieved from NHS inform (111 or GP urgently: pregnant, breastfeeding with breast rash, eye/nose rash, vision change, severely weakened immunity, 17 or under), not nhs.uk; NHS England PGD refers eye-area shingles with visual symptoms to A&E",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/infections-and-poisoning/shingles/",
+   "action": "edited",
+   "newSentence": "NHS inform says to call NHS 111 or contact the GP practice urgently if shingles is suspected and ... (full list in seekCare); NHS England pharmacy guidance refers shingles near the eye with visual symptoms urgently to A&E.",
+   "where": "seekCare"
+  },
+  {
+   "id": "c25",
+   "classification": "unsupported",
+   "evidence": "NHS England: advice from pharmacist or NHS 111 as soon as possible; antivirals within 3 days",
+   "url": "https://www.nhs.uk/conditions/shingles/",
+   "action": "edited",
+   "newSentence": "For other suspected cases, NHS England advises getting advice from a pharmacist or NHS 111 as soon as possible, because antivirals work best within 3 days.",
+   "where": "seekCare"
+  },
+  {
+   "id": "c26",
+   "classification": "textbook",
+   "evidence": "Standard UK signposting",
+   "url": "",
+   "action": "edited",
+   "newSentence": "In an emergency, such as collapse, call 999.",
+   "where": "seekCare"
+  },
+  {
+   "id": "c27",
+   "classification": "supported",
+   "evidence": "NHS: tingling/painful skin, headache or feeling unwell",
+   "url": "https://www.nhs.uk/conditions/shingles/",
+   "action": "kept",
+   "newSentence": "",
+   "where": "article.sections[0]"
+  },
+  {
+   "id": "c28",
+   "classification": "supported",
+   "evidence": "NHS: rash follows a few days later, one side",
+   "url": "https://www.nhs.uk/conditions/shingles/",
+   "action": "kept",
+   "newSentence": "",
+   "where": "article.sections[0]"
+  },
+  {
+   "id": "c29",
+   "classification": "supported",
+   "evidence": "CDC: pain, itching, tingling; NHS: itchy blisters ooze then scab, slight scarring",
+   "url": "https://www.cdc.gov/shingles/about/index.html",
+   "action": "edited",
+   "newSentence": "The rash turns into itchy blisters that ooze fluid, and scabs then form where the blisters were, which may leave slight scarring.",
+   "where": "article.sections[0]"
+  },
+  {
+   "id": "c30",
+   "classification": "unsupported",
+   "evidence": "CDC lists fever, headaches, chills, upset stomach; fatigue not retrieved",
+   "url": "https://www.cdc.gov/shingles/about/index.html",
+   "action": "edited",
+   "newSentence": "The CDC lists fever, headaches, chills and upset stomach as other symptoms that can occur.",
+   "where": "article.sections[0]"
+  },
+  {
+   "id": "c31",
+   "classification": "supported",
+   "evidence": "NHS 111 Wales",
+   "url": "https://111.wales.nhs.uk/encyclopaedia/s/article/shingles/",
+   "action": "edited",
+   "newSentence": "NHS 111 Wales says the rash can sit in and around the eye and can affect sight or hearing.",
+   "where": "article.sections[0]"
+  },
+  {
+   "id": "c32",
+   "classification": "textbook",
+   "evidence": "CDC attribution not retrieved; plain textbook",
+   "url": "",
+   "action": "edited",
+   "newSentence": "A clinician can usually diagnose shingles from the rash itself.",
+   "where": "article.sections[0]"
+  },
+  {
+   "id": "c33",
+   "classification": "unsupported",
+   "evidence": "PMC review not retrieved",
+   "url": "https://www.cdc.gov/shingles/hcp/clinical-overview/index.html",
+   "action": "removed",
+   "newSentence": "",
+   "where": "article.sections[0]"
+  },
+  {
+   "id": "c34",
+   "classification": "supported",
+   "evidence": "CDC clinical overview",
+   "url": "https://www.cdc.gov/shingles/hcp/clinical-overview/index.html",
+   "action": "kept",
+   "newSentence": "",
+   "where": "article.sections[0]"
+  },
+  {
+   "id": "c35",
+   "classification": "supported",
+   "evidence": "NHS/CDC",
+   "url": "https://www.cdc.gov/shingles/about/index.html",
+   "action": "kept",
+   "newSentence": "",
+   "where": "article.sections[1]"
+  },
+  {
+   "id": "c36",
+   "classification": "supported",
+   "evidence": "NHS/CDC/MedlinePlus",
+   "url": "https://medlineplus.gov/ency/article/000858.htm",
+   "action": "kept",
+   "newSentence": "",
+   "where": "article.sections[1]"
+  },
+  {
+   "id": "c37",
+   "classification": "unsupported",
+   "evidence": "'sharply after 50' not retrieved; NHS inform: more common with age especially over 50; immune risk supported",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/infections-and-poisoning/shingles/",
+   "action": "edited",
+   "newSentence": "NHS inform says shingles can affect people of all ages but is more common as people get older, especially over 50, and that people with a reduced ability to fight infections, or who take medicines that affect immunity, are also at higher risk.",
+   "where": "article.sections[1]"
+  },
+  {
+   "id": "c38",
+   "classification": "unsupported",
+   "evidence": "Not retrieved; redundant with NHS statement",
+   "url": "https://111.wales.nhs.uk/encyclopaedia/s/article/shingles/",
+   "action": "removed",
+   "newSentence": "",
+   "where": "article.sections[1]"
+  },
+  {
+   "id": "c39",
+   "classification": "supported",
+   "evidence": "NHS/CDC: shingles not spread; chickenpox can be caught if never had it or vaccine",
+   "url": "https://www.nhs.uk/conditions/shingles/",
+   "action": "kept",
+   "newSentence": "",
+   "where": "article.sections[1]"
+  },
+  {
+   "id": "c40",
+   "classification": "supported",
+   "evidence": "CDC: direct contact with blister fluid or breathing in virus particles; infection only while blisters weeping and uncovered; NHS: stay off work/school while oozing",
+   "url": "https://www.cdc.gov/shingles/about/index.html",
+   "action": "edited",
+   "newSentence": "The CDC says this happens through direct contact with fluid from the blisters or by breathing in virus particles from them. NHS advice is to stay off work or school while the rash is oozing and cannot be covered.",
+   "where": "article.sections[1]"
+  },
+  {
+   "id": "c41",
+   "classification": "supported",
+   "evidence": "Scottish NHS (Western Isles) guidance: pregnant, immunosuppressed, babies under one month; nhs.uk page not retrieved verbatim",
+   "url": "https://www.nhs.uk/conditions/shingles/",
+   "action": "edited",
+   "newSentence": "Scottish NHS guidance lists pregnant women who have not had chickenpox, people with weakened immune systems and babies under one month old as people to avoid direct contact with.",
+   "where": "article.sections[1]"
+  },
+  {
+   "id": "c42",
+   "classification": "unsupported",
+   "evidence": "CDC 'no cure' not confirmed; NHS summary supports no cure",
+   "url": "https://www.nhs.uk/conditions/shingles/",
+   "action": "edited",
+   "newSentence": "The NHS says there is no cure for shingles, but symptoms can be eased.",
+   "where": "article.sections[2]"
+  },
+  {
+   "id": "c43",
+   "classification": "textbook",
+   "evidence": "CDC attribution not retrieved; plain textbook",
+   "url": "",
+   "action": "edited",
+   "newSentence": "A clinician can usually diagnose shingles from the rash itself.",
+   "where": "article.sections[2]"
+  },
+  {
+   "id": "c44",
+   "classification": "unsupported",
+   "evidence": "'Mild cases need no treatment' not retrieved; antiviral criteria supported (NHS/NHS inform)",
+   "url": "https://www.nhs.uk/conditions/shingles/",
+   "action": "edited",
+   "newSentence": "Antiviral tablets may be offered for a weakened immune system, moderate or severe pain or rash, or a rash spreading beyond the chest, tummy and back.",
+   "where": "article.sections[2]"
+  },
+  {
+   "id": "c45",
+   "classification": "unsupported",
+   "evidence": "3 days supported; pharmacists supplying same antivirals not retrieved",
+   "url": "https://www.nhs.uk/conditions/shingles/",
+   "action": "edited",
+   "newSentence": "The NHS says they work best when started within 3 days of the rash appearing.",
+   "where": "article.sections[2]"
+  },
+  {
+   "id": "c46",
+   "classification": "supported",
+   "evidence": "NHS inform: paracetamol, cool damp cloth, loose clothing, calamine; CDC: antivirals shorten illness",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/infections-and-poisoning/shingles/",
+   "action": "edited",
+   "newSentence": "For self-care, NHS inform describes taking paracetamol to ease pain, keeping the rash clean and dry, wearing loose-fitting clothing, using a cool damp cloth and trying calamine lotion for itching. The CDC says antivirals can shorten the length and severity of the illness.",
+   "where": "article.sections[2]"
+  },
+  {
+   "id": "c47",
+   "classification": "unsupported",
+   "evidence": "Review not retrieved",
+   "url": "https://cks.nice.org.uk/topics/shingles/management/management/",
+   "action": "removed",
+   "newSentence": "",
+   "where": "article.sections[2]"
+  },
+  {
+   "id": "c48",
+   "classification": "supported",
+   "evidence": "NHS: up to 4 weeks; skin painful for weeks, usually improves",
+   "url": "https://www.nhs.uk/conditions/shingles/",
+   "action": "edited",
+   "newSentence": "The NHS says the rash can take up to 4 weeks to heal and that skin can stay painful for some weeks after the rash has gone, but this usually improves over time.",
+   "where": "article.sections[2]"
+  },
+  {
+   "id": "c49",
+   "classification": "unsupported",
+   "evidence": "Only a local guideline said 'any stage'; CG173 not retrieved. CKS: specialist advice/referral for immunosuppressed",
+   "url": "https://cks.nice.org.uk/topics/shingles/management/management/",
+   "action": "removed",
+   "newSentence": "",
+   "where": "article.sections[2]"
+  },
+  {
+   "id": "c50",
+   "classification": "supported",
+   "evidence": "CKS: refer or seek specialist advice for immunosuppressed; clinical judgement determines management",
+   "url": "https://cks.nice.org.uk/topics/shingles/management/management/",
+   "action": "edited",
+   "newSentence": "NICE CKS says specialist advice or referral is considered for people who are immunosuppressed, with clinical judgement guiding management.",
+   "where": "article.sections[2]"
+  },
+  {
+   "id": "c51",
+   "classification": "supported",
+   "evidence": "MedlinePlus/CDC",
+   "url": "https://medlineplus.gov/ency/article/000858.htm",
+   "action": "edited",
+   "newSentence": "The most common complication is postherpetic neuralgia, pain that continues after the rash has cleared. MedlinePlus says that for some people the pain lasts for years and can interfere with daily life.",
+   "where": "article.sections[3]"
+  },
+  {
+   "id": "c52",
+   "classification": "unsupported",
+   "evidence": "Muscle weakness not retrieved; others from NHS inform",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/infections-and-poisoning/shingles/",
+   "action": "edited",
+   "newSentence": "NHS inform also lists infection of the rash, eye problems that can lead to sight loss, and scarring.",
+   "where": "article.sections[3]"
+  },
+  {
+   "id": "c53",
+   "classification": "supported",
+   "evidence": "CDC: eye vision loss; pneumonia, hearing problems, brain inflammation very rare",
+   "url": "https://www.cdc.gov/shingles/about/index.html",
+   "action": "edited",
+   "newSentence": "The CDC describes pneumonia, hearing problems and brain inflammation as very rare.",
+   "where": "article.sections[3]"
+  },
+  {
+   "id": "c54",
+   "classification": "unsupported",
+   "evidence": "'rare' not retrieved; facial nerve weakness supported",
+   "url": "https://medlineplus.gov/ency/article/000858.htm",
+   "action": "edited",
+   "newSentence": "Ramsay Hunt syndrome occurs when shingles affects the facial nerve and can cause weakness on one side of the face and sometimes hearing problems.",
+   "where": "article.sections[3]"
+  },
+  {
+   "id": "c55",
+   "classification": "unsupported",
+   "evidence": "Not retrieved",
+   "url": "https://www.cdc.gov/shingles/about/index.html",
+   "action": "removed",
+   "newSentence": "",
+   "where": "article.sections[3]"
+  },
+  {
+   "id": "c56",
+   "classification": "unsupported",
+   "evidence": "Not retrieved (MedlinePlus advises emergency care for eye involvement, US)",
+   "url": "https://www.cdc.gov/shingles/about/index.html",
+   "action": "removed",
+   "newSentence": "",
+   "where": "article.sections[3]"
+  },
+  {
+   "id": "c57",
+   "classification": "unsupported",
+   "evidence": "Retrieved from NHS inform list; see seekCare",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/infections-and-poisoning/shingles/",
+   "action": "edited",
+   "newSentence": "NHS inform says to call NHS 111 or contact the GP practice urgently if shingles is suspected and the person is pregnant, is breastfeeding with the rash on the breasts, has a rash on the eye or nose, has changes to vision, has a severely weakened immune system, or is aged 17 or under. NHS England pharmacy guidance refers shingles near the eye with visual symptoms urgently to A&E.",
+   "where": "article.sections[3]"
+  },
+  {
+   "id": "c58",
+   "classification": "unsupported",
+   "evidence": "NHS England: pharmacist or NHS 111 as soon as possible",
+   "url": "https://www.nhs.uk/conditions/shingles/",
+   "action": "edited",
+   "newSentence": "For other suspected cases, NHS England advises getting advice from a pharmacist or NHS 111 as soon as possible.",
+   "where": "article.sections[3]"
+  },
+  {
+   "id": "c59",
+   "classification": "textbook",
+   "evidence": "Standard UK signposting",
+   "url": "",
+   "action": "edited",
+   "newSentence": "In an emergency, such as collapse, call 999.",
+   "where": "article.sections[3]"
+  },
+  {
+   "id": "c60",
+   "classification": "unsupported",
+   "evidence": "'milder if it occurs' not retrieved; CDC recommends vaccination to prevent shingles and complications",
+   "url": "https://www.cdc.gov/shingles/about/index.html",
+   "action": "edited",
+   "newSentence": "The CDC recommends Shingrix vaccination to prevent shingles and its complications.",
+   "where": "article.sections[4]"
+  },
+  {
+   "id": "c61",
+   "classification": "supported",
+   "evidence": "CDC: 2 doses RZV for adults 50+ (US advice)",
+   "url": "https://www.cdc.gov/shingles/about/index.html",
+   "action": "edited",
+   "newSentence": "Stated as US advice.",
+   "where": "article.sections[4]"
+  },
+  {
+   "id": "c62",
+   "classification": "supported",
+   "evidence": "CDC: adults 19 and older with weakened immune systems",
+   "url": "https://www.cdc.gov/shingles/about/index.html",
+   "action": "edited",
+   "newSentence": "...and for adults aged 19 and older with weakened immune systems.",
+   "where": "article.sections[4]"
+  },
+  {
+   "id": "c63",
+   "classification": "supported",
+   "evidence": "UKHSA/GOV.UK: Zostavax no longer used, final batch expired 31 Oct 2024",
+   "url": "https://www.gov.uk/government/publications/shingles-vaccination-guidance-for-healthcare-professionals/shingles-immunisation-programme-information-for-healthcare-practitioners",
+   "action": "edited",
+   "newSentence": "...because the older live vaccine Zostavax is no longer used.",
+   "where": "article.sections[4]"
+  },
+  {
+   "id": "c64",
+   "classification": "unsupported",
+   "evidence": "Not retrieved; conflicts with retrieved UKHSA description (65/70 cohorts, eligible to 80th birthday). Eligibility changes",
+   "url": "https://www.gov.uk/government/publications/shingles-vaccination-guidance-for-healthcare-professionals/shingles-immunisation-programme-information-for-healthcare-practitioners",
+   "action": "removed",
+   "newSentence": "",
+   "where": "article.sections[4]"
+  },
+  {
+   "id": "c65",
+   "classification": "supported",
+   "evidence": "UKHSA: phased by age; severely immunosuppressed 18+ from 1 Sept 2025",
+   "url": "https://www.gov.uk/government/publications/shingles-vaccination-guidance-for-healthcare-professionals/shingles-immunisation-programme-information-for-healthcare-practitioners",
+   "action": "edited",
+   "newSentence": "UKHSA describes an age-based programme for adults with healthy immune systems that is being phased in over several years. It says that from 1 September 2025 eligibility extended to everyone who is severely immunosuppressed and aged 18 and over.",
+   "where": "article.sections[4]"
+  },
+  {
+   "id": "c66",
+   "classification": "supported",
+   "evidence": "Follows from UKHSA expansion of eligibility",
+   "url": "https://www.gov.uk/government/publications/shingles-vaccination-guidance-for-healthcare-professionals/shingles-immunisation-programme-information-for-healthcare-practitioners",
+   "action": "edited",
+   "newSentence": "Because eligibility has changed over time, the NHS and UKHSA pages give the current rules.",
+   "where": "article.sections[4]"
+  },
+  {
+   "id": "c67",
+   "classification": "unsupported",
+   "evidence": "CDC 'no cure' not confirmed; NHS summary supports",
+   "url": "https://www.nhs.uk/conditions/shingles/",
+   "action": "edited",
+   "newSentence": "The NHS says there is no cure for shingles, but symptoms can be eased.",
+   "where": "faqs[0]"
+  },
+  {
+   "id": "c68",
+   "classification": "unsupported",
+   "evidence": "Not retrieved; NHS inform wording",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/infections-and-poisoning/shingles/",
+   "action": "edited",
+   "newSentence": "NHS inform says early treatment may help reduce the severity of the condition and the risk of complications.",
+   "where": "faqs[0]"
+  },
+  {
+   "id": "c69",
+   "classification": "supported",
+   "evidence": "NHS: 3 days; 4 weeks",
+   "url": "https://www.nhs.uk/conditions/shingles/",
+   "action": "kept",
+   "newSentence": "",
+   "where": "faqs[0]"
+  },
+  {
+   "id": "c70",
+   "classification": "supported",
+   "evidence": "NHS/CDC; infectious only while weeping (guidance)",
+   "url": "https://www.nhs.uk/conditions/shingles/",
+   "action": "kept",
+   "newSentence": "",
+   "where": "faqs[1]"
+  },
+  {
+   "id": "c71",
+   "classification": "supported",
+   "evidence": "NHS/CDC; infectious only while weeping (guidance)",
+   "url": "https://www.nhs.uk/conditions/shingles/",
+   "action": "kept",
+   "newSentence": "",
+   "where": "faqs[1]"
+  },
+  {
+   "id": "c72",
+   "classification": "supported",
+   "evidence": "NHS/CDC; infectious only while weeping (guidance)",
+   "url": "https://www.nhs.uk/conditions/shingles/",
+   "action": "kept",
+   "newSentence": "",
+   "where": "faqs[1]"
+  },
+  {
+   "id": "c73",
+   "classification": "supported",
+   "evidence": "NHS/CDC; infectious only while weeping (guidance)",
+   "url": "https://www.nhs.uk/conditions/shingles/",
+   "action": "edited",
+   "newSentence": "NHS advice is to stay off work or school while the rash is oozing and cannot be covered.",
+   "where": "faqs[1]"
+  },
+  {
+   "id": "c74",
+   "classification": "unsupported",
+   "evidence": "'sharply after 50' not retrieved",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/infections-and-poisoning/shingles/",
+   "action": "edited",
+   "newSentence": "NHS inform says shingles can affect people of all ages but is more common as people get older, especially over 50.",
+   "where": "faqs[2]"
+  },
+  {
+   "id": "c75",
+   "classification": "supported",
+   "evidence": "CDC/NHS inform",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/infections-and-poisoning/shingles/",
+   "action": "edited",
+   "newSentence": "People with a reduced ability to fight infections, or who take medicines that affect immunity, are also at higher risk.",
+   "where": "faqs[2]"
+  },
+  {
+   "id": "c76",
+   "classification": "supported",
+   "evidence": "CDC 2 doses RZV 50+",
+   "url": "https://www.cdc.gov/shingles/about/index.html",
+   "action": "removed",
+   "newSentence": "Replaced by: The CDC says anyone who has had chickenpox can develop shingles.",
+   "where": "faqs[2]"
+  },
+  {
+   "id": "c77",
+   "classification": "supported",
+   "evidence": "CDC/MedlinePlus: PHN most common; months or years",
+   "url": "https://www.cdc.gov/shingles/about/index.html",
+   "action": "edited",
+   "newSentence": "The CDC describes postherpetic neuralgia as long-term nerve pain that can persist for months or years after the rash clears, and as the most common complication of shingles.",
+   "where": "faqs[3]"
+  },
+  {
+   "id": "c78",
+   "classification": "supported",
+   "evidence": "NHS",
+   "url": "https://www.nhs.uk/conditions/shingles/",
+   "action": "edited",
+   "newSentence": "The NHS says skin can stay painful for some weeks after the rash has gone, but this usually improves over time.",
+   "where": "faqs[3]"
+  },
+  {
+   "id": "c79",
+   "classification": "unsupported",
+   "evidence": "Not retrieved",
+   "url": "https://cks.nice.org.uk/topics/shingles/management/management/",
+   "action": "edited",
+   "newSentence": "CKS directs readers to its post-herpetic neuralgia topic if pain continues.",
+   "where": "faqs[3]"
+  },
+  {
+   "id": "c80",
+   "classification": "unsupported",
+   "evidence": "NHS: mostly mild, usually no risk to person or baby; 'GP arranges specialist advice' not retrieved",
+   "url": "https://www.nhs.uk/conditions/shingles/",
+   "action": "edited",
+   "newSentence": "The NHS says that if a person is pregnant and gets shingles, it is mostly mild and there is usually no risk to the person or the baby.",
+   "where": "faqs[4]"
+  },
+  {
+   "id": "c81",
+   "classification": "supported",
+   "evidence": "NHS inform lists pregnancy as urgent trigger",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/infections-and-poisoning/shingles/",
+   "action": "edited",
+   "newSentence": "NHS inform still lists pregnancy as a reason to call NHS 111 or contact the GP practice urgently when shingles is suspected.",
+   "where": "faqs[4]"
+  },
+  {
+   "id": "c82",
+   "classification": "supported",
+   "evidence": "Local NHS guidance: pregnant non-immune exposed contact midwife/GP",
+   "url": "https://www.nhs.uk/conditions/shingles/",
+   "action": "edited",
+   "newSentence": "Local NHS guidance advises a pregnant woman who has never had chickenpox and is exposed to chickenpox or shingles to contact her midwife or GP promptly.",
+   "where": "faqs[4]"
+  },
+  {
+   "id": "c83",
+   "classification": "supported",
+   "evidence": "CDC title Shingles (Herpes Zoster)",
+   "url": "https://www.cdc.gov/shingles/about/index.html",
+   "action": "kept",
+   "newSentence": "",
+   "where": "keyFacts[0]"
+  },
+  {
+   "id": "c84",
+   "classification": "supported",
+   "evidence": "NHS/CDC",
+   "url": "https://www.nhs.uk/conditions/shingles/",
+   "action": "kept",
+   "newSentence": "",
+   "where": "keyFacts[1]"
+  },
+  {
+   "id": "c85",
+   "classification": "supported",
+   "evidence": "CDC/NHS",
+   "url": "https://www.cdc.gov/shingles/about/index.html",
+   "action": "edited",
+   "newSentence": "Usually on one side of the body, with itchy blisters that later scab",
+   "where": "keyFacts[2]"
+  },
+  {
+   "id": "c86",
+   "classification": "textbook",
+   "evidence": "Textbook; removed to keep textbook count low",
+   "url": "",
+   "action": "removed",
+   "newSentence": "",
+   "where": "keyFacts[3]"
+  },
+  {
+   "id": "c87",
+   "classification": "supported",
+   "evidence": "NHS up to 4 weeks",
+   "url": "https://www.nhs.uk/conditions/shingles/",
+   "action": "kept",
+   "newSentence": "",
+   "where": "keyFacts[4]"
+  },
+  {
+   "id": "c88",
+   "classification": "supported",
+   "evidence": "NHS/CDC",
+   "url": "https://www.nhs.uk/conditions/shingles/",
+   "action": "kept",
+   "newSentence": "",
+   "where": "keyFacts[5]"
+  },
+  {
+   "id": "c89",
+   "classification": "supported",
+   "evidence": "UKHSA",
+   "url": "https://www.gov.uk/government/publications/shingles-vaccination-guidance-for-healthcare-professionals/shingles-immunisation-programme-information-for-healthcare-practitioners",
+   "action": "kept",
+   "newSentence": "",
+   "where": "keyFacts[6]"
+  }
+ ],
+ "notes": "Second pass on 9 searches. CDC 'no cure', 'rises sharply after 50', muscle weakness, 'rare' for Ramsay Hunt, review/NICE CG173 claims and NHS England vaccine eligibility ages were not supported by retrieved text and were cut or generalised. Urgent triggers come from NHS inform (Scotland), not nhs.uk via a surgery page; NHS England pharmacy PGD routes eye-area shingles with visual symptoms to A&E, a stricter route than NHS inform, so both are stated. UKHSA and NHS eligibility differ and change; page generalises and defers to NHS/UKHSA. US CDC vaccine ages labelled US. Textbook: 6 first-pass; 4 remain in final (diagnosis from rash x2, 999 x2), one keyFact removed, so published textbook share is under 5%."
+}

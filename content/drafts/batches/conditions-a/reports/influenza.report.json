@@ -1,0 +1,806 @@
+{
+ "id": "influenza",
+ "searchesUsed": 11,
+ "counts": {
+  "supported": 62,
+  "textbook": 3,
+  "unsupported": 37,
+  "wrong": 3,
+  "unsafe": 0,
+  "unchecked": 0
+ },
+ "claims": [
+  {
+   "id": "c01",
+   "classification": "textbook",
+   "evidence": "Plain undisputed fact; not directly in retrieved text.",
+   "url": "https://www.nhs.uk/conditions/flu/",
+   "action": "kept"
+  },
+  {
+   "id": "c02",
+   "classification": "textbook",
+   "evidence": "Reworded to drop \"of the airways\"; plain fact.",
+   "url": "https://www.nhs.uk/conditions/flu/",
+   "action": "edited",
+   "newSentence": "Flu is an infection caused by influenza viruses."
+  },
+  {
+   "id": "c03",
+   "classification": "supported",
+   "evidence": "NHS England page lists sudden high temp, aching body, tiredness, dry cough, sore throat, headache; NHS ICB: symptoms come on very quickly.",
+   "url": "https://www.nhs.uk/conditions/flu/",
+   "action": "kept"
+  },
+  {
+   "id": "c04",
+   "classification": "supported",
+   "evidence": "CDC: most people have mild illness; complications and higher-risk groups listed by CDC/NHS.",
+   "url": "https://www.cdc.gov/flu/about/index.html",
+   "action": "edited",
+   "newSentence": "Most people have a mild illness, but flu can lead to complications such as bronchitis and pneumonia, and older adults, pregnant women, young children and people with long-term conditions are at higher risk."
+  },
+  {
+   "id": "c05",
+   "classification": "unsupported",
+   "evidence": "Retrieved NHS text says vaccination before flu season is the best way to avoid catching and spreading flu; \"yearly/main recommended\" not retrieved.",
+   "url": "https://www.nhs.uk/vaccinations/flu-vaccine/",
+   "action": "edited",
+   "newSentence": "The NHS says having the vaccine before the flu season starts is the best way to avoid catching and spreading flu."
+  },
+  {
+   "id": "c06",
+   "classification": "supported",
+   "evidence": "CDC: four types, A and B circulate and cause seasonal epidemics.",
+   "url": "https://www.cdc.gov/flu/about/index.html",
+   "action": "kept"
+  },
+  {
+   "id": "c07",
+   "classification": "supported",
+   "evidence": "CDC: most experts believe spread is mainly by droplets from coughing, sneezing, talking.",
+   "url": "https://www.cdc.gov/flu/about/index.html",
+   "action": "kept"
+  },
+  {
+   "id": "c08",
+   "classification": "unsupported",
+   "evidence": "\"Less common route\" not in retrieved text; WHO says hands contaminated with virus can also spread it.",
+   "url": "https://www.who.int/news-room/fact-sheets/detail/influenza-(seasonal)",
+   "action": "edited",
+   "newSentence": "The WHO says the virus can also be spread by hands contaminated with influenza viruses."
+  },
+  {
+   "id": "c09",
+   "classification": "supported",
+   "evidence": "NHS inform: germs from coughs and sneezes survive on hands and surfaces for 24 hours; attribution corrected from \"NHS\" to NHS inform.",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/infections-and-poisoning/flu/",
+   "action": "edited",
+   "newSentence": "NHS inform says germs from coughs and sneezes can survive on hands and surfaces for 24 hours."
+  },
+  {
+   "id": "c10",
+   "classification": "supported",
+   "evidence": "65+ listed as higher risk (CDC; NHS urgent list).",
+   "url": "https://www.cdc.gov/flu/about/index.html",
+   "action": "kept"
+  },
+  {
+   "id": "c11",
+   "classification": "supported",
+   "evidence": "Pregnant women higher risk (CDC; NHS list).",
+   "url": "https://www.cdc.gov/flu/about/index.html",
+   "action": "kept"
+  },
+  {
+   "id": "c12",
+   "classification": "supported",
+   "evidence": "Young children higher risk (CDC).",
+   "url": "https://www.cdc.gov/flu/about/index.html",
+   "action": "kept"
+  },
+  {
+   "id": "c13",
+   "classification": "supported",
+   "evidence": "Asthma, chronic lung disease, diabetes, heart disease (CDC).",
+   "url": "https://www.cdc.gov/flu/about/index.html",
+   "action": "kept"
+  },
+  {
+   "id": "c14",
+   "classification": "supported",
+   "evidence": "NHS urgent-advice list includes weakened immune system.",
+   "url": "https://www.nhs.uk/conditions/flu/",
+   "action": "kept"
+  },
+  {
+   "id": "c15",
+   "classification": "unsupported",
+   "evidence": "Clause \"which other viruses can also cause\" not retrieved; symptoms list is.",
+   "url": "https://www.nhs.uk/conditions/flu/",
+   "action": "edited",
+   "newSentence": "A sudden high temperature, aching body and dry cough"
+  },
+  {
+   "id": "c16",
+   "classification": "supported",
+   "evidence": "CDC: pneumonia, bronchitis.",
+   "url": "https://www.cdc.gov/flu/about/index.html",
+   "action": "kept"
+  },
+  {
+   "id": "c17",
+   "classification": "supported",
+   "evidence": "CDC: pneumonia serious.",
+   "url": "https://www.cdc.gov/flu/about/index.html",
+   "action": "kept"
+  },
+  {
+   "id": "c18",
+   "classification": "supported",
+   "evidence": "CDC: sinus and ear infections.",
+   "url": "https://www.cdc.gov/flu/about/index.html",
+   "action": "kept"
+  },
+  {
+   "id": "c19",
+   "classification": "supported",
+   "evidence": "CDC: myocarditis, encephalitis.",
+   "url": "https://www.cdc.gov/flu/about/index.html",
+   "action": "kept"
+  },
+  {
+   "id": "c20",
+   "classification": "supported",
+   "evidence": "CDC: flu can worsen chronic conditions such as asthma and heart disease.",
+   "url": "https://www.cdc.gov/flu/about/index.html",
+   "action": "edited",
+   "newSentence": "Worsening of long-term conditions such as asthma and heart disease"
+  },
+  {
+   "id": "c21",
+   "classification": "unsupported",
+   "evidence": "Death not stated in retrieved text; an NHS trust page says some cases need hospital treatment.",
+   "url": "https://www.yorkhospitals.nhs.uk/seecmsfile/?id=5595",
+   "action": "edited",
+   "newSentence": "In some cases, treatment in hospital"
+  },
+  {
+   "id": "c22",
+   "classification": "unsupported",
+   "evidence": "\"Often diagnosed from typical symptoms\" not retrieved; swab testing is (MedlinePlus, CDC).",
+   "url": "https://medlineplus.gov/lab-tests/flu-influenza-test/",
+   "action": "edited",
+   "newSentence": "Flu can be confirmed with a test on a swab from the nose or throat."
+  },
+  {
+   "id": "c23",
+   "classification": "unsupported",
+   "evidence": "\"Other viruses cause similar illness\" not retrieved in second pass.",
+   "url": "https://www.nhs.uk/conditions/flu/",
+   "action": "removed"
+  },
+  {
+   "id": "c24",
+   "classification": "supported",
+   "evidence": "MedlinePlus: rapid antigen tests most common, not as accurate as other tests; molecular lab tests most accurate.",
+   "url": "https://medlineplus.gov/lab-tests/flu-influenza-test/",
+   "action": "edited",
+   "newSentence": "MedlinePlus describes rapid antigen tests as the most common flu tests but says they are not as accurate as other types."
+  },
+  {
+   "id": "c25",
+   "classification": "supported",
+   "evidence": "NHS sources: rest, fluids, paracetamol or ibuprofen to lower temperature and ease aches.",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/infections-and-poisoning/flu/",
+   "action": "edited",
+   "newSentence": "Most people recover at home with rest, plenty of fluids and paracetamol or ibuprofen to lower a temperature and ease aches."
+  },
+  {
+   "id": "c26",
+   "classification": "supported",
+   "evidence": "NHS England: GPs do not recommend antibiotics; flu caused by viruses not bacteria.",
+   "url": "https://www.nhs.uk/conditions/flu/",
+   "action": "edited",
+   "newSentence": "GPs do not recommend antibiotics for flu, because it is caused by viruses."
+  },
+  {
+   "id": "c27",
+   "classification": "supported",
+   "evidence": "CDC: prompt treatment for higher risk; works best within about two days; later start may help high-risk/very sick; prescription-only (NHS Borders).",
+   "url": "https://www.cdc.gov/flu/treatment/antiviral-drugs.html",
+   "action": "edited",
+   "newSentence": "Antiviral medicines are prescription-only; the CDC recommends prompt treatment for people at higher risk of complications and says they work best when started within about two days."
+  },
+  {
+   "id": "c28",
+   "classification": "supported",
+   "evidence": "NHS England and NHS inform: no aspirin for under-16s.",
+   "url": "https://www.nhs.uk/conditions/flu/",
+   "action": "kept"
+  },
+  {
+   "id": "c29",
+   "classification": "unsupported",
+   "evidence": "\"Annual ... main recommended\" not retrieved; NHS: vaccination best way; hand washing, binning tissues (NHS England), covering mouth and nose (NHS 111 Wales).",
+   "url": "https://www.nhs.uk/conditions/flu/",
+   "action": "edited",
+   "newSentence": "The NHS says having the vaccine before the flu season starts is the best way to avoid catching and spreading flu."
+  },
+  {
+   "id": "c30",
+   "classification": "unsupported",
+   "evidence": "Vaccine updated yearly because virus changes: only unnamed/patent sources returned; UKHSA blog text on this not retrieved.",
+   "url": "https://ukhsa.blog.gov.uk/2026/08/27/your-guide-to-whos-eligible-for-the-autumn-2026-flu-vaccine/",
+   "action": "removed"
+  },
+  {
+   "id": "c31",
+   "classification": "wrong",
+   "evidence": "Retrieved NHS England wording: difficulty breathing, coughing up a lot of blood (draft said \"severe difficulty breathing\", \"blood\").",
+   "url": "https://www.nhs.uk/conditions/flu/",
+   "action": "edited",
+   "newSentence": "Call 999 or go to A&E for sudden chest pain, difficulty breathing or coughing up a lot of blood."
+  },
+  {
+   "id": "c32",
+   "classification": "unsupported",
+   "evidence": "NHS list: 65+, pregnant, long-term condition, weakened immune system, no improvement after 7 days; \"very unwell or short of breath\" not in that list.",
+   "url": "https://www.nhs.uk/conditions/flu/",
+   "action": "edited",
+   "newSentence": "An urgent GP appointment or NHS 111 is advised when someone with flu symptoms is 65 or over, pregnant, has a long-term condition or a weakened immune system, or has not improved after 7 days."
+  },
+  {
+   "id": "c33",
+   "classification": "supported",
+   "evidence": "CDC: most people with flu have mild illness and do not need medical care.",
+   "url": "https://www.cdc.gov/flu/about/index.html",
+   "action": "edited",
+   "newSentence": "The CDC says most people with flu have a mild illness and do not need medical care."
+  },
+  {
+   "id": "c34",
+   "classification": "supported",
+   "evidence": "Flu comes on very quickly (NHS ICB/NHS England).",
+   "url": "https://www.nhs.uk/conditions/flu/",
+   "action": "kept"
+  },
+  {
+   "id": "c35",
+   "classification": "supported",
+   "evidence": "NHS England symptom list.",
+   "url": "https://www.nhs.uk/conditions/flu/",
+   "action": "kept"
+  },
+  {
+   "id": "c36",
+   "classification": "unsupported",
+   "evidence": "\"Exhausted and too unwell to carry on as normal\" not retrieved.",
+   "url": "https://www.nhs.uk/conditions/flu/",
+   "action": "removed"
+  },
+  {
+   "id": "c37",
+   "classification": "unsupported",
+   "evidence": "Cold with runny nose/sneezing/watery eyes and trust attribution not retrieved; only gradual onset (CDC).",
+   "url": "https://www.cdc.gov/flu/signs-symptoms/index.html",
+   "action": "removed"
+  },
+  {
+   "id": "c38",
+   "classification": "unsupported",
+   "evidence": "\"More severe, lasts longer\" only in a patent document; CDC says only abrupt vs gradual onset.",
+   "url": "https://www.cdc.gov/flu/signs-symptoms/index.html",
+   "action": "removed"
+  },
+  {
+   "id": "c39",
+   "classification": "unsupported",
+   "evidence": "Fever/body aches comparison not retrieved (CDC table result gave fatigue only).",
+   "url": "https://www.cdc.gov/flu/signs-symptoms/index.html",
+   "action": "removed"
+  },
+  {
+   "id": "c40",
+   "classification": "supported",
+   "evidence": "CDC: lingering cough and tiredness for a few more weeks.",
+   "url": "https://www.cdc.gov/flu/signs-symptoms/index.html",
+   "action": "edited",
+   "newSentence": "Most people feel better within about a week, according to the CDC, although a cough and tiredness can last for a few more weeks."
+  },
+  {
+   "id": "c41",
+   "classification": "unsupported",
+   "evidence": "Not retrieved in second pass.",
+   "url": "https://www.nhs.uk/conditions/flu/",
+   "action": "removed"
+  },
+  {
+   "id": "c42",
+   "classification": "textbook",
+   "evidence": "Plain fact.",
+   "url": "https://www.cdc.gov/flu/about/index.html",
+   "action": "kept"
+  },
+  {
+   "id": "c43",
+   "classification": "supported",
+   "evidence": "CDC: four types; A and B circulate and cause epidemics; type C uncommon; only A caused pandemics.",
+   "url": "https://www.cdc.gov/flu/about/index.html",
+   "action": "edited",
+   "newSentence": "The CDC says there are four types, but influenza A and B viruses are the ones that circulate and cause seasonal epidemics."
+  },
+  {
+   "id": "c44",
+   "classification": "supported",
+   "evidence": "CDC: A(H1N1), A(H3N2) subtypes; B not split into subtypes, B/Yamagata and B/Victoria lineages.",
+   "url": "https://www.cdc.gov/flu/about/index.html",
+   "action": "edited",
+   "newSentence": "Type A viruses are grouped into subtypes, and A(H1N1) and A(H3N2) are currently circulating in humans."
+  },
+  {
+   "id": "c45",
+   "classification": "supported",
+   "evidence": "CDC.",
+   "url": "https://www.cdc.gov/flu/about/index.html",
+   "action": "kept"
+  },
+  {
+   "id": "c46",
+   "classification": "supported",
+   "evidence": "NHS inform (24 hours); attribution corrected.",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/infections-and-poisoning/flu/",
+   "action": "edited",
+   "newSentence": "NHS inform says germs from coughs and sneezes can survive on hands and surfaces for 24 hours."
+  },
+  {
+   "id": "c47",
+   "classification": "unsupported",
+   "evidence": "\"Less common route\" not retrieved; WHO hands statement used.",
+   "url": "https://www.who.int/news-room/fact-sheets/detail/influenza-(seasonal)",
+   "action": "edited",
+   "newSentence": "The WHO adds that the virus can also be spread by hands contaminated with influenza viruses."
+  },
+  {
+   "id": "c48",
+   "classification": "unsupported",
+   "evidence": "\"One day before symptoms and 5-7 days after\" not retrieved; CDC gave incubation about 2 days (1-4).",
+   "url": "https://www.cdc.gov/flu/about/index.html",
+   "action": "removed"
+  },
+  {
+   "id": "c49",
+   "classification": "supported",
+   "evidence": "CDC: most contagious first three days; young children and weakened immunity may be contagious longer.",
+   "url": "https://www.cdc.gov/flu/about/index.html",
+   "action": "edited",
+   "newSentence": "People are most contagious during the first three days of illness, and young children and people with weakened immune systems may be contagious for longer."
+  },
+  {
+   "id": "c50",
+   "classification": "unsupported",
+   "evidence": "Same as claim 22/21.",
+   "url": "https://medlineplus.gov/lab-tests/flu-influenza-test/",
+   "action": "edited",
+   "newSentence": "Flu can be confirmed with a rapid or laboratory test on a swab."
+  },
+  {
+   "id": "c51",
+   "classification": "unsupported",
+   "evidence": "Not retrieved.",
+   "url": "https://www.nhs.uk/conditions/flu/",
+   "action": "removed"
+  },
+  {
+   "id": "c52",
+   "classification": "supported",
+   "evidence": "MedlinePlus/CDC: rapid tests less accurate than molecular.",
+   "url": "https://medlineplus.gov/lab-tests/flu-influenza-test/",
+   "action": "edited",
+   "newSentence": "MedlinePlus says rapid antigen tests are the most common flu tests but are not as accurate as other types."
+  },
+  {
+   "id": "c53",
+   "classification": "supported",
+   "evidence": "CDC: most people have mild illness and do not need medical care.",
+   "url": "https://www.cdc.gov/flu/about/index.html",
+   "action": "edited",
+   "newSentence": "The CDC also says that most people with flu have a mild illness and do not need medical care or antiviral drugs."
+  },
+  {
+   "id": "c54",
+   "classification": "unsupported",
+   "evidence": "\"2 to 7 days\" from an unidentified leaflet not retrieved.",
+   "url": "https://www.nhs.uk/conditions/flu/",
+   "action": "removed"
+  },
+  {
+   "id": "c55",
+   "classification": "supported",
+   "evidence": "CDC: most people feel better within about a week; \"NHS leaflets\" attribution not shown so reattributed to CDC.",
+   "url": "https://www.cdc.gov/flu/signs-symptoms/index.html",
+   "action": "edited",
+   "newSentence": "Most people feel better within about a week, according to the CDC."
+  },
+  {
+   "id": "c56",
+   "classification": "supported",
+   "evidence": "CDC: tiredness lingers a few more weeks.",
+   "url": "https://www.cdc.gov/flu/signs-symptoms/index.html",
+   "action": "edited",
+   "newSentence": "A cough and tiredness can last for a few more weeks."
+  },
+  {
+   "id": "c57",
+   "classification": "supported",
+   "evidence": "NHS England: urgent GP/111 if no improvement after 7 days.",
+   "url": "https://www.nhs.uk/conditions/flu/",
+   "action": "edited",
+   "newSentence": "NHS England advises an urgent GP appointment or NHS 111 for symptoms that do not improve after 7 days."
+  },
+  {
+   "id": "c58",
+   "classification": "supported",
+   "evidence": "NHS sources: rest, fluids, paracetamol or ibuprofen.",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/infections-and-poisoning/flu/",
+   "action": "edited",
+   "newSentence": "Most people recover at home."
+  },
+  {
+   "id": "c59",
+   "classification": "supported",
+   "evidence": "NHS inform: rest, sleep, warmth, extra water to avoid dehydration; \"leaflets\" attribution replaced.",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/infections-and-poisoning/flu/",
+   "action": "edited",
+   "newSentence": "NHS sources describe rest, sleep, warmth and plenty of water to avoid dehydration."
+  },
+  {
+   "id": "c60",
+   "classification": "supported",
+   "evidence": "NHS England: GPs do not recommend antibiotics; viral cause.",
+   "url": "https://www.nhs.uk/conditions/flu/",
+   "action": "edited",
+   "newSentence": "GPs do not recommend antibiotics for flu."
+  },
+  {
+   "id": "c61",
+   "classification": "supported",
+   "evidence": "NHS England/NHS inform; Reye's page.",
+   "url": "https://www.nhs.uk/conditions/flu/",
+   "action": "kept"
+  },
+  {
+   "id": "c62",
+   "classification": "supported",
+   "evidence": "CDC prompt treatment for higher risk; very sick later start may help.",
+   "url": "https://www.cdc.gov/flu/treatment/antiviral-drugs.html",
+   "action": "edited",
+   "newSentence": "Antiviral medicines such as oseltamivir and zanamivir are available on prescription only."
+  },
+  {
+   "id": "c63",
+   "classification": "supported",
+   "evidence": "CDC: best within about two days.",
+   "url": "https://www.cdc.gov/flu/treatment/antiviral-drugs.html",
+   "action": "kept"
+  },
+  {
+   "id": "c64",
+   "classification": "unsupported",
+   "evidence": "\"Difference between milder and very serious ending in hospital\" not retrieved; CDC recommends prompt treatment for higher risk.",
+   "url": "https://www.cdc.gov/flu/treatment/antiviral-drugs.html",
+   "action": "edited",
+   "newSentence": "The CDC recommends prompt treatment for people at higher risk of serious complications."
+  },
+  {
+   "id": "c65",
+   "classification": "supported",
+   "evidence": "NHS Borders leaflet: most people will not need antivirals; mild illness.",
+   "url": "https://www.nhsborders.scot.nhs.uk/media/209209/Antiviral-medication-June-2014.pdf",
+   "action": "edited",
+   "newSentence": "An NHS Borders leaflet says most people will not need them because their illness is mild and they recover quickly."
+  },
+  {
+   "id": "c66",
+   "classification": "unsupported",
+   "evidence": "\"Without lasting problems\" not retrieved; CDC says most have mild illness.",
+   "url": "https://www.cdc.gov/flu/about/index.html",
+   "action": "edited",
+   "newSentence": "Most people with flu have a mild illness."
+  },
+  {
+   "id": "c67",
+   "classification": "supported",
+   "evidence": "CDC lists these; attribution corrected from NHS to CDC.",
+   "url": "https://www.cdc.gov/flu/about/index.html",
+   "action": "edited",
+   "newSentence": "The CDC lists pneumonia, bronchitis, sinus infections and ear infections among the complications of flu."
+  },
+  {
+   "id": "c68",
+   "classification": "unsupported",
+   "evidence": "Worsening conditions supported by CDC; hospital admission or death via UKHSA not retrieved; reattributed.",
+   "url": "https://www.cdc.gov/flu/about/index.html",
+   "action": "edited",
+   "newSentence": "It also lists inflammation of the heart and brain, and says flu can make chronic conditions such as asthma and heart disease worse."
+  },
+  {
+   "id": "c69",
+   "classification": "supported",
+   "evidence": "CDC list of higher-risk groups.",
+   "url": "https://www.cdc.gov/flu/about/index.html",
+   "action": "edited",
+   "newSentence": "The CDC names young children, adults aged 65 and over, pregnant women and people with conditions such as asthma, chronic lung disease, diabetes or heart disease as being at higher risk of serious flu complications."
+  },
+  {
+   "id": "c70",
+   "classification": "unsupported",
+   "evidence": "\"Even healthy people can become very ill\" not retrieved in second pass.",
+   "url": "https://www.cdc.gov/flu/about/index.html",
+   "action": "removed"
+  },
+  {
+   "id": "c71",
+   "classification": "supported",
+   "evidence": "NHS England urgent list.",
+   "url": "https://www.nhs.uk/conditions/flu/",
+   "action": "edited",
+   "newSentence": "It advises an urgent GP appointment or NHS 111 when someone with flu symptoms is 65 or over, pregnant, has a long-term condition or a weakened immune system, or has symptoms that do not improve after 7 days."
+  },
+  {
+   "id": "c72",
+   "classification": "unsupported",
+   "evidence": "\"Very unwell or short of breath\" not in NHS England list; some NHS pages cite worsening breathlessness, confusion, unable to keep fluids down.",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/infections-and-poisoning/flu/",
+   "action": "removed"
+  },
+  {
+   "id": "c73",
+   "classification": "wrong",
+   "evidence": "NHS England: difficulty breathing, coughing up a lot of blood.",
+   "url": "https://www.nhs.uk/conditions/flu/",
+   "action": "edited",
+   "newSentence": "NHS England advises calling 999 or going to A&E for sudden chest pain, difficulty breathing or coughing up a lot of blood."
+  },
+  {
+   "id": "c74",
+   "classification": "unsupported",
+   "evidence": "\"Annual... main recommended\" not retrieved; NHS: best way; handwashing/tissues supported.",
+   "url": "https://www.nhs.uk/vaccinations/flu-vaccine/",
+   "action": "edited",
+   "newSentence": "The NHS says having the vaccine before the flu season starts is the best way to avoid catching and spreading flu."
+  },
+  {
+   "id": "c75",
+   "classification": "unsupported",
+   "evidence": "Not retrieved from UKHSA; only unnamed/patent sources.",
+   "url": "https://ukhsa.blog.gov.uk/2026/08/27/your-guide-to-whos-eligible-for-the-autumn-2026-flu-vaccine/",
+   "action": "removed"
+  },
+  {
+   "id": "c76",
+   "classification": "supported",
+   "evidence": "UKHSA blog (retrieved): pregnant women, children, 65+, clinical risk groups.",
+   "url": "https://ukhsa.blog.gov.uk/2026/08/27/your-guide-to-whos-eligible-for-the-autumn-2026-flu-vaccine/",
+   "action": "edited",
+   "newSentence": "UKHSA's guide to the autumn 2026 programme also lists children, residents of long-stay care homes, close contacts of people with a weakened immune system, carers on Carer's Allowance and some frontline social care workers."
+  },
+  {
+   "id": "c77",
+   "classification": "supported",
+   "evidence": "UKHSA blog: care home residents, immunosuppressed contacts, frontline social care workers without occupational health, carers.",
+   "url": "https://ukhsa.blog.gov.uk/2026/08/27/your-guide-to-whos-eligible-for-the-autumn-2026-flu-vaccine/",
+   "action": "kept"
+  },
+  {
+   "id": "c78",
+   "classification": "unsupported",
+   "evidence": "\"Such as asthma and COPD\" and ordering not retrieved; list of groups retrieved without them.",
+   "url": "https://ukhsa.blog.gov.uk/2026/08/27/your-guide-to-whos-eligible-for-the-autumn-2026-flu-vaccine/",
+   "action": "edited",
+   "newSentence": "The clinical risk groups include chronic respiratory disease, chronic heart disease, chronic liver disease, diabetes and a weakened immune system."
+  },
+  {
+   "id": "c79",
+   "classification": "unsupported",
+   "evidence": "Devolved-nations statement not in retrieved text.",
+   "url": "https://ukhsa.blog.gov.uk/2026/08/27/your-guide-to-whos-eligible-for-the-autumn-2026-flu-vaccine/",
+   "action": "removed"
+  },
+  {
+   "id": "c80",
+   "classification": "supported",
+   "evidence": "CDC compares flu and cold as distinct illnesses.",
+   "url": "https://www.cdc.gov/flu/signs-symptoms/index.html",
+   "action": "kept"
+  },
+  {
+   "id": "c81",
+   "classification": "unsupported",
+   "evidence": "\"More severe, lasts longer\" not retrieved; abrupt vs gradual onset is (CDC).",
+   "url": "https://www.cdc.gov/flu/signs-symptoms/index.html",
+   "action": "edited",
+   "newSentence": "The CDC says flu typically starts abruptly, while cold symptoms build gradually."
+  },
+  {
+   "id": "c82",
+   "classification": "unsupported",
+   "evidence": "Not retrieved.",
+   "url": "https://www.nhs.uk/conditions/flu/",
+   "action": "removed"
+  },
+  {
+   "id": "c83",
+   "classification": "supported",
+   "evidence": "CDC: tiredness and weakness usual with flu, sometimes with cold; runny nose detail dropped.",
+   "url": "https://www.cdc.gov/flu/signs-symptoms/index.html",
+   "action": "edited",
+   "newSentence": "It also says tiredness and weakness are usual with flu but only sometimes happen with a cold."
+  },
+  {
+   "id": "c84",
+   "classification": "unsupported",
+   "evidence": "Fever/body aches comparison not retrieved.",
+   "url": "https://www.cdc.gov/flu/signs-symptoms/index.html",
+   "action": "removed"
+  },
+  {
+   "id": "c85",
+   "classification": "supported",
+   "evidence": "NHS England: antibiotics not recommended as flu is viral.",
+   "url": "https://www.nhs.uk/conditions/flu/",
+   "action": "edited",
+   "newSentence": "No. GPs do not recommend antibiotics for flu, because flu is caused by viruses and antibiotics will not relieve symptoms or speed recovery."
+  },
+  {
+   "id": "c86",
+   "classification": "supported",
+   "evidence": "CDC prompt treatment for higher risk; prescription-only.",
+   "url": "https://www.cdc.gov/flu/treatment/antiviral-drugs.html",
+   "action": "edited",
+   "newSentence": "Antiviral medicines are prescription-only; the CDC recommends prompt treatment for people at higher risk."
+  },
+  {
+   "id": "c87",
+   "classification": "supported",
+   "evidence": "CDC: within about two days.",
+   "url": "https://www.cdc.gov/flu/treatment/antiviral-drugs.html",
+   "action": "kept"
+  },
+  {
+   "id": "c88",
+   "classification": "supported",
+   "evidence": "NHS sources: rest, fluids, painkillers.",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/infections-and-poisoning/flu/",
+   "action": "kept"
+  },
+  {
+   "id": "c89",
+   "classification": "unsupported",
+   "evidence": "\"One day before symptoms\" not retrieved.",
+   "url": "https://www.cdc.gov/flu/about/index.html",
+   "action": "removed"
+  },
+  {
+   "id": "c90",
+   "classification": "unsupported",
+   "evidence": "\"Five to seven days after\" not retrieved.",
+   "url": "https://www.cdc.gov/flu/about/index.html",
+   "action": "removed"
+  },
+  {
+   "id": "c91",
+   "classification": "supported",
+   "evidence": "CDC: most contagious first three days.",
+   "url": "https://www.cdc.gov/flu/about/index.html",
+   "action": "edited",
+   "newSentence": "The CDC says people with flu are most contagious during the first three days of illness."
+  },
+  {
+   "id": "c92",
+   "classification": "supported",
+   "evidence": "CDC droplets; dropped from FAQ for length.",
+   "url": "https://www.cdc.gov/flu/about/index.html",
+   "action": "removed"
+  },
+  {
+   "id": "c93",
+   "classification": "supported",
+   "evidence": "CDC higher-risk groups.",
+   "url": "https://www.cdc.gov/flu/about/index.html",
+   "action": "edited",
+   "newSentence": "The CDC names young children, people aged 65 and over, pregnant women and people with conditions such as asthma, chronic lung disease, diabetes or heart disease as being at higher risk of serious flu complications."
+  },
+  {
+   "id": "c94",
+   "classification": "supported",
+   "evidence": "UKHSA/NHS lists include weakened immune system.",
+   "url": "https://ukhsa.blog.gov.uk/2026/08/27/your-guide-to-whos-eligible-for-the-autumn-2026-flu-vaccine/",
+   "action": "kept"
+  },
+  {
+   "id": "c95",
+   "classification": "unsupported",
+   "evidence": "Not retrieved.",
+   "url": "https://www.cdc.gov/flu/about/index.html",
+   "action": "removed"
+  },
+  {
+   "id": "c96",
+   "classification": "wrong",
+   "evidence": "NHS England: difficulty breathing, a lot of blood.",
+   "url": "https://www.nhs.uk/conditions/flu/",
+   "action": "edited",
+   "newSentence": "NHS England advises calling 999 or going to A&E for sudden chest pain, difficulty breathing or coughing up a lot of blood."
+  },
+  {
+   "id": "c97",
+   "classification": "supported",
+   "evidence": "NHS England urgent list.",
+   "url": "https://www.nhs.uk/conditions/flu/",
+   "action": "edited",
+   "newSentence": "An urgent GP appointment or NHS 111 is advised for people aged 65 or over, who are pregnant, or who have a long-term condition or weakened immune system."
+  },
+  {
+   "id": "c98",
+   "classification": "unsupported",
+   "evidence": "\"Very unwell or short of breath\" not in list.",
+   "url": "https://www.nhs.uk/conditions/flu/",
+   "action": "edited",
+   "newSentence": "and for anyone whose symptoms have not improved after 7 days."
+  },
+  {
+   "id": "c99",
+   "classification": "supported",
+   "evidence": "Page titles: NHS \"Flu\", WHO \"Influenza (seasonal)\".",
+   "url": "https://www.who.int/news-room/fact-sheets/detail/influenza-(seasonal)",
+   "action": "kept"
+  },
+  {
+   "id": "c100",
+   "classification": "supported",
+   "evidence": "CDC.",
+   "url": "https://www.cdc.gov/flu/about/index.html",
+   "action": "kept"
+  },
+  {
+   "id": "c101",
+   "classification": "supported",
+   "evidence": "CDC.",
+   "url": "https://www.cdc.gov/flu/about/index.html",
+   "action": "kept"
+  },
+  {
+   "id": "c102",
+   "classification": "supported",
+   "evidence": "NHS: comes on very quickly.",
+   "url": "https://www.nhs.uk/conditions/flu/",
+   "action": "kept"
+  },
+  {
+   "id": "c103",
+   "classification": "unsupported",
+   "evidence": "\"Usually diagnosed by typical symptoms\" not retrieved; swab test is.",
+   "url": "https://medlineplus.gov/lab-tests/flu-influenza-test/",
+   "action": "edited",
+   "newSentence": "A test on a nose or throat swab"
+  },
+  {
+   "id": "c104",
+   "classification": "supported",
+   "evidence": "NHS England/inform self-care; antibiotics not recommended.",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/infections-and-poisoning/flu/",
+   "action": "edited",
+   "newSentence": "Rest, fluids and paracetamol or ibuprofen at home; antibiotics are not recommended"
+  },
+  {
+   "id": "c105",
+   "classification": "unsupported",
+   "evidence": "\"Annual\" not retrieved; NHS: vaccination before season, hand washing.",
+   "url": "https://www.nhs.uk/vaccinations/flu-vaccine/",
+   "action": "edited",
+   "newSentence": "Vaccination before the flu season, plus regular handwashing"
+  }
+ ],
+ "notes": "11 of 14 searches used. Unidentified NHS trust leaflet claims (cold vs flu comparison, 2-7 day recovery, antivirals for healthy adults) removed or replaced by CDC/NHS England/NHS Borders text. Death as complication, 'main recommended protection', vaccine updated yearly, devolved-nations sentence, CDC 'one day before symptoms' removed as not retrieved. Several summaries blend pages, so attribution of NHS England items (symptoms list, 999 and urgent lists, aspirin, antibiotics, 'first five days') rests on search summaries of nhs.uk/conditions/flu rather than quoted page text. 'Symptoms very quickly' comes from an NHS ICB summary. NHS Borders leaflet is dated 2014. NICE CKS not retrieved. Sentences re-used in rebuilt sections (e.g. NHS symptom list in FAQ 1) are claims already counted. References changed to pages the searches returned; CDC spread and testing pages dropped."
+}

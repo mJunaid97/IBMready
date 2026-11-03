@@ -1,0 +1,861 @@
+{
+ "id": "multiple-sclerosis",
+ "searchesUsed": 14,
+ "counts": {
+  "supported": 66,
+  "textbook": 1,
+  "unsupported": 26,
+  "wrong": 8,
+  "unsafe": 0,
+  "unchecked": 0
+ },
+ "claims": [
+  {
+   "id": "c01",
+   "classification": "supported",
+   "evidence": "NINDS: autoimmune, immune system misdirected, attacks healthy tissue; NICE: permanent condition.",
+   "url": "https://www.ninds.nih.gov/health-information/disorders/multiple-sclerosis-ms",
+   "action": "kept",
+   "original": "A lifelong condition in which the immune system mistakenly attacks nerves in the"
+  },
+  {
+   "id": "c02",
+   "classification": "supported",
+   "evidence": "NICE: permanent; NHS pages: affects brain and spinal cord.",
+   "url": "https://www.nice.org.uk/guidance/ng220/informationforpublic",
+   "action": "kept",
+   "original": "Multiple sclerosis (MS) is a lifelong condition that affects the brain and spina"
+  },
+  {
+   "id": "c03",
+   "classification": "unsupported",
+   "evidence": "\"NHS says not known why\" not retrieved; NINDS says cause still unknown.",
+   "url": "https://www.ninds.nih.gov/health-information/disorders/multiple-sclerosis-ms",
+   "action": "edited",
+   "newSentence": "NINDS describes it as an autoimmune disease ... and says the cause is still unknown.",
+   "original": "Its symptoms come from the immune system attacking nerves by mistake, and the NH"
+  },
+  {
+   "id": "c04",
+   "classification": "unsupported",
+   "evidence": "MS Society: symptoms can come and go and change over time; \"vary widely\" not retrieved.",
+   "url": "https://www.mssociety.org.uk/about-ms/signs-and-symptoms",
+   "action": "edited",
+   "newSentence": "The MS Society says symptoms can come and go and can change over time.",
+   "original": "Symptoms vary widely, can come and go and can change over time."
+  },
+  {
+   "id": "c05",
+   "classification": "unsupported",
+   "evidence": "NICE public info: symptoms usually begin in 20s or 30s; \"20 to 40\" and NHS/NINDS attribution not retrieved.",
+   "url": "https://www.nice.org.uk/guidance/ng220/informationforpublic",
+   "action": "edited",
+   "newSentence": "NICE says symptoms usually begin in a person's 20s or 30s.",
+   "original": "It is most often diagnosed between the ages of 20 and 40, although it can be see"
+  },
+  {
+   "id": "c06",
+   "classification": "supported",
+   "evidence": "NHS: no cure, treatments slow progression and ease symptoms.",
+   "url": "https://www.nhs.uk/conditions/multiple-sclerosis/",
+   "action": "edited",
+   "newSentence": "...but the NHS says treatments can slow progression and help ease symptoms.",
+   "original": "There is currently no cure, but treatments can slow the progression of MS and he"
+  },
+  {
+   "id": "c07",
+   "classification": "unsupported",
+   "evidence": "NHS attribution not retrieved; NINDS supports autoimmune/unknown cause.",
+   "url": "https://www.ninds.nih.gov/health-information/disorders/multiple-sclerosis-ms",
+   "action": "edited",
+   "newSentence": "NINDS describes MS as an autoimmune disease ... exact cause is still unknown.",
+   "original": "The immune system attacks nerves in the brain or spinal cord by mistake, and the"
+  },
+  {
+   "id": "c08",
+   "classification": "unsupported",
+   "evidence": "NINDS: autoimmune, cause unknown; \"nerve signalling breaks down\" not retrieved.",
+   "url": "https://www.ninds.nih.gov/health-information/disorders/multiple-sclerosis-ms",
+   "action": "edited",
+   "newSentence": "NINDS describes MS as an autoimmune disease in which the immune system becomes misdirected and attacks healthy tissue, and says the exact cause is still unknown.",
+   "original": "NINDS describes MS as believed to be an autoimmune condition in which the immune"
+  },
+  {
+   "id": "c09",
+   "classification": "supported",
+   "evidence": "NINDS: genetic alterations, environmental exposures and immunologic factors; higher vitamin D or sun exposure linked with lower likelihood (direction restated).",
+   "url": "https://www.ninds.nih.gov/health-information/disorders/multiple-sclerosis-ms",
+   "action": "edited",
+   "newSentence": "NINDS says genetic alterations, environmental exposures and immunologic factors make the development of MS more likely.",
+   "original": "Low vitamin D levels and genetic factors are also implicated, according to NINDS"
+  },
+  {
+   "id": "c10",
+   "classification": "supported",
+   "evidence": "NINDS: EBV the infection most consistently linked to MS.",
+   "url": "https://www.ninds.nih.gov/health-information/disorders/multiple-sclerosis-ms",
+   "action": "edited",
+   "newSentence": "Epstein-Barr virus ... is the infection NINDS describes as most consistently linked to the development of MS.",
+   "original": "Epstein-Barr virus, which causes infectious mononucleosis, is the virus most con"
+  },
+  {
+   "id": "c11",
+   "classification": "supported",
+   "evidence": "NINDS: smokers more likely to develop MS, more aggressive course.",
+   "url": "https://www.ninds.nih.gov/health-information/disorders/multiple-sclerosis-ms",
+   "action": "edited",
+   "newSentence": "People who smoke are more likely to develop MS and tend to have a more aggressive disease course, according to NINDS.",
+   "original": "People who smoke are more likely to develop MS and to have a more aggressive dis"
+  },
+  {
+   "id": "c12",
+   "classification": "supported",
+   "evidence": "NINDS: higher vitamin D or sun exposure appear less likely to develop MS.",
+   "url": "https://www.ninds.nih.gov/health-information/disorders/multiple-sclerosis-ms",
+   "action": "edited",
+   "newSentence": "Lower vitamin D levels or less sun exposure, which NINDS links with a higher likelihood of MS.",
+   "original": "Low vitamin D levels."
+  },
+  {
+   "id": "c13",
+   "classification": "supported",
+   "evidence": "NINDS: genetic alterations make MS more likely.",
+   "url": "https://www.ninds.nih.gov/health-information/disorders/multiple-sclerosis-ms",
+   "action": "edited",
+   "newSentence": "Genetic alterations, according to NINDS.",
+   "original": "Genetic factors."
+  },
+  {
+   "id": "c14",
+   "classification": "supported",
+   "evidence": "NINDS: scar-like plaques/lesions from immune attack on myelin, visible on MRI.",
+   "url": "https://www.ninds.nih.gov/health-information/disorders/multiple-sclerosis-ms",
+   "action": "edited",
+   "newSentence": "... which result from the immune system attacking myelin and are visible on an MRI scan.",
+   "original": "Areas of scar-like tissue, called lesions or plaques, in the brain and spinal co"
+  },
+  {
+   "id": "c15",
+   "classification": "unsupported",
+   "evidence": "NICE attribution and heat/illness/fatigue triggers not retrieved; NHS trust: return of old symptoms due to triggers = decompensation/pseudo-relapse.",
+   "url": "https://www.uhd.nhs.uk/services/multiple-sclerosis/relapse",
+   "action": "edited",
+   "newSentence": "The return of old symptoms because of triggers, which an NHS trust describes as decompensation or pseudo-relapse.",
+   "original": "Temporary worsening of existing symptoms with heat, illness or fatigue, which NI"
+  },
+  {
+   "id": "c16",
+   "classification": "supported",
+   "evidence": "NINDS: some have worsening symptoms leading to increased disability over time.",
+   "url": "https://www.ninds.nih.gov/health-information/disorders/multiple-sclerosis-ms",
+   "action": "kept",
+   "original": "Worsening symptoms that lead to increased disability over time in some people."
+  },
+  {
+   "id": "c17",
+   "classification": "supported",
+   "evidence": "NICE NG220: relapse = new or worsening symptoms >24h without infection or other cause.",
+   "url": "https://www.nice.org.uk/guidance/qs108/resources/multiple-sclerosis-pdf-75545244362437",
+   "action": "kept",
+   "original": "Relapses, when new symptoms develop or existing symptoms worsen."
+  },
+  {
+   "id": "c18",
+   "classification": "unsupported",
+   "evidence": "Bladder problems retrieved (NHS); bowel and sexual problems not retrieved.",
+   "url": "https://www.nhs.uk/conditions/multiple-sclerosis/",
+   "action": "edited",
+   "newSentence": "Bladder problems.",
+   "original": "Bladder, bowel and sexual problems."
+  },
+  {
+   "id": "c19",
+   "classification": "supported",
+   "evidence": "NHS: no single test.",
+   "url": "https://www.nhs.uk/conditions/multiple-sclerosis/",
+   "action": "kept",
+   "original": "There is no single test for MS."
+  },
+  {
+   "id": "c20",
+   "classification": "supported",
+   "evidence": "MedlinePlus: MRI, blood tests to rule out other conditions, lumbar puncture; history/exam list not retrieved.",
+   "url": "https://medlineplus.gov/ency/article/000737.htm",
+   "action": "edited",
+   "newSentence": "MedlinePlus lists an MRI scan, blood tests ..., and a lumbar puncture among the tools used.",
+   "original": "Assessment can include a review of health history and symptoms, a physical and n"
+  },
+  {
+   "id": "c21",
+   "classification": "wrong",
+   "evidence": "NHS: GP refers to neurologist. \"Only a consultant neurologist\" comes from the superseded CG186; not confirmed for NG220.",
+   "url": "https://www.nhs.uk/conditions/multiple-sclerosis/",
+   "action": "edited",
+   "newSentence": "A GP who suspects MS refers the person to a neurologist, who asks about symptoms.",
+   "original": "People are referred to a neurologist, and NICE says only a consultant neurologis"
+  },
+  {
+   "id": "c22",
+   "classification": "supported",
+   "evidence": "NHS: no cure, treatments slow progression and ease symptoms.",
+   "url": "https://www.nhs.uk/conditions/multiple-sclerosis/",
+   "action": "kept",
+   "original": "There is currently no cure, but treatments can slow progression and ease symptom"
+  },
+  {
+   "id": "c23",
+   "classification": "wrong",
+   "evidence": "NHS: DMTs reduce relapse frequency/severity; prescribed to RRMS, or SPMS/PPMS meeting criteria (not \"RRMS or SPMS\").",
+   "url": "https://www.nhs.uk/conditions/multiple-sclerosis/",
+   "action": "edited",
+   "newSentence": "...only prescribed to people whose MS meets specific criteria.",
+   "original": "Disease-modifying therapies can reduce the number and severity of relapses in so"
+  },
+  {
+   "id": "c24",
+   "classification": "supported",
+   "evidence": "NHS lists steroids for relapses; NICE QS108: treatment as soon as possible, within 14 days.",
+   "url": "https://www.nice.org.uk/guidance/qs108/resources/multiple-sclerosis-pdf-75545244362437",
+   "action": "edited",
+   "newSentence": "Steroids are used for relapses, and NICE says treatment ... should be offered within 14 days.",
+   "original": "Relapses may be treated with steroids, ideally as early as possible."
+  },
+  {
+   "id": "c25",
+   "classification": "supported",
+   "evidence": "NINDS: muscle relaxants for spasms; NHS Scotland: physiotherapy; NHS: CBT for anxiety, depression, fatigue.",
+   "url": "https://www.nhs.uk/conditions/multiple-sclerosis/",
+   "action": "kept",
+   "original": "Symptom management can include muscle relaxants, physiotherapy and cognitive beh"
+  },
+  {
+   "id": "c26",
+   "classification": "textbook",
+   "evidence": "Absence of a proven prevention method; NINDS says cause unknown.",
+   "url": "https://www.ninds.nih.gov/health-information/disorders/multiple-sclerosis-ms",
+   "action": "edited",
+   "newSentence": "NINDS says the cause of MS is still unknown, and the sources reviewed do not describe a proven way to prevent it.",
+   "original": "The cause of MS is not known, and the sources reviewed do not describe a proven "
+  },
+  {
+   "id": "c27",
+   "classification": "supported",
+   "evidence": "NINDS: smokers more likely to develop MS.",
+   "url": "https://www.ninds.nih.gov/health-information/disorders/multiple-sclerosis-ms",
+   "action": "kept",
+   "original": "NINDS reports that people who smoke are more likely to develop MS and to have a "
+  },
+  {
+   "id": "c28",
+   "classification": "supported",
+   "evidence": "NHS: call 999/A&E for sudden weakness or numbness in one arm, loss or blurring of vision, balance problems; \"can signal a stroke\" not retrieved so dropped.",
+   "url": "https://www.nhs.uk/conditions/multiple-sclerosis/",
+   "action": "edited",
+   "newSentence": "Stroke clause removed; 999/A&E route kept.",
+   "original": "The NHS says to call 999 or go to A&E for sudden weakness or numbness in one arm"
+  },
+  {
+   "id": "c29",
+   "classification": "supported",
+   "evidence": "NHS: see a GP; GP refers to neurologist.",
+   "url": "https://www.nhs.uk/conditions/multiple-sclerosis/",
+   "action": "kept",
+   "original": "For suspected MS symptoms, the NHS advises seeing a GP, who arranges referral to"
+  },
+  {
+   "id": "c30",
+   "classification": "unsupported",
+   "evidence": "\"Worse even with treatment\" not retrieved; MedlinePlus discharge page lists worsening pain, falls, choking/coughing when eating.",
+   "url": "https://medlineplus.gov/ency/article/000737.htm",
+   "action": "edited",
+   "newSentence": "For people already diagnosed, MedlinePlus lists reasons to contact a healthcare provider, including worsening pain, recent falls, and choking or coughing when eating.",
+   "original": "MedlinePlus advises contacting a healthcare provider if MS symptoms get worse ev"
+  },
+  {
+   "id": "c31",
+   "classification": "supported",
+   "evidence": "NHS lists fatigue, blurred vision/eye pain, numbness/tingling, balance problems, bladder, memory/concentration.",
+   "url": "https://www.nhs.uk/conditions/multiple-sclerosis/",
+   "action": "edited",
+   "newSentence": "The NHS lists fatigue, blurred vision or eye pain, numbness or tingling, balance problems, bladder problems and difficulty with memory or concentration ...",
+   "original": "The NHS lists many possible symptoms of MS, including fatigue, blurred vision or"
+  },
+  {
+   "id": "c32",
+   "classification": "unsupported",
+   "evidence": "Muscle spasms/stiffness and sexual problems not retrieved from NHS text.",
+   "url": "https://www.nhs.uk/conditions/multiple-sclerosis/",
+   "action": "edited",
+   "newSentence": "Merged into sentence above (supported items only).",
+   "original": "Muscle spasms and stiffness, bladder problems, difficulty with memory or concent"
+  },
+  {
+   "id": "c33",
+   "classification": "supported",
+   "evidence": "MS Society: symptoms can come and go and change over time.",
+   "url": "https://www.mssociety.org.uk/about-ms/signs-and-symptoms",
+   "action": "kept",
+   "original": "The MS Society says symptoms can come and go and can change over time."
+  },
+  {
+   "id": "c34",
+   "classification": "supported",
+   "evidence": "MS Society: MS fatigue is not just ordinary tiredness after a hard day.",
+   "url": "https://www.mssociety.org.uk/about-ms/signs-and-symptoms",
+   "action": "kept",
+   "original": "The MS Society describes fatigue as an overwhelming tiredness rather than ordina"
+  },
+  {
+   "id": "c35",
+   "classification": "unsupported",
+   "evidence": "Heavy limbs/grasping/writing not retrieved.",
+   "url": "https://www.mssociety.org.uk/about-ms/signs-and-symptoms",
+   "action": "removed",
+   "original": "It adds that when people are fatigued, their limbs can feel heavy and it can be "
+  },
+  {
+   "id": "c36",
+   "classification": "unsupported",
+   "evidence": "Tingling can last minutes or hours and can also be a sign of anxiety (MS Society); \"crawling insects\" description not retrieved.",
+   "url": "https://www.mssociety.org.uk/about-ms/signs-and-symptoms",
+   "action": "edited",
+   "newSentence": "It lists numbness and tingling among the common symptoms, and notes that tingling can last a few minutes or hours and can also be a sign of anxiety.",
+   "original": "Numbness and tingling are described as an unusual feeling of prickling, itching "
+  },
+  {
+   "id": "c37",
+   "classification": "unsupported",
+   "evidence": "Advanced MS page not retrieved.",
+   "url": "https://www.mssociety.org.uk/about-ms/signs-and-symptoms",
+   "action": "removed",
+   "original": "Weakness in the upper body and legs, and limited mobility, are listed among the "
+  },
+  {
+   "id": "c38",
+   "classification": "unsupported",
+   "evidence": "\"Does not mean someone has MS\" not retrieved.",
+   "url": "https://www.nhs.uk/conditions/multiple-sclerosis/",
+   "action": "removed",
+   "original": "Having these symptoms does not mean someone has MS, but the NHS says they should"
+  },
+  {
+   "id": "c39",
+   "classification": "supported",
+   "evidence": "MedlinePlus: fever, hot baths, sun exposure, stress can trigger/worsen attacks.",
+   "url": "https://medlineplus.gov/ency/article/000737.htm",
+   "action": "edited",
+   "newSentence": "MedlinePlus says fever, hot baths, sun exposure and stress can trigger or worsen attacks.",
+   "original": "MedlinePlus notes that many people with MS find symptoms are worse with a fever,"
+  },
+  {
+   "id": "c40",
+   "classification": "supported",
+   "evidence": "NHS: three main types.",
+   "url": "https://www.nhs.uk/conditions/multiple-sclerosis/",
+   "action": "kept",
+   "original": "The NHS names three main types: relapsing remitting, secondary progressive and p"
+  },
+  {
+   "id": "c41",
+   "classification": "unsupported",
+   "evidence": "85% appeared only in an NHS clinical guidance document, not the NHS page; dropped per instructions.",
+   "url": "https://www.nhs.uk/conditions/multiple-sclerosis/",
+   "action": "removed",
+   "original": "According to the NHS, about 85% of people with MS have relapsing remitting MS wh"
+  },
+  {
+   "id": "c42",
+   "classification": "supported",
+   "evidence": "RRMS: flare-ups followed by improvement; most common.",
+   "url": "https://www.nhs.uk/conditions/multiple-sclerosis/",
+   "action": "kept",
+   "original": "In relapsing remitting MS, people have relapses followed by periods of recovery,"
+  },
+  {
+   "id": "c43",
+   "classification": "supported",
+   "evidence": "RRMS often turns into SPMS.",
+   "url": "https://www.nhs.uk/conditions/multiple-sclerosis/",
+   "action": "kept",
+   "original": "Over time, relapsing remitting MS often develops into secondary progressive MS."
+  },
+  {
+   "id": "c44",
+   "classification": "supported",
+   "evidence": "PPMS steadily worsens from start without remission; less common.",
+   "url": "https://www.nhs.uk/conditions/multiple-sclerosis/",
+   "action": "kept",
+   "original": "Primary progressive MS involves symptoms that steadily worsen without remission,"
+  },
+  {
+   "id": "c45",
+   "classification": "supported",
+   "evidence": "NICE NG220 relapse definition.",
+   "url": "https://www.nice.org.uk/guidance/qs108/resources/multiple-sclerosis-pdf-75545244362437",
+   "action": "kept",
+   "original": "NICE says a relapse is diagnosed when new symptoms develop, or existing ones wor"
+  },
+  {
+   "id": "c46",
+   "classification": "wrong",
+   "evidence": "NICE attribution wrong; \"does not need treating\" and urinary infection not retrieved; NHS trust says steroids not helpful for pseudo-relapse.",
+   "url": "https://www.uhd.nhs.uk/services/multiple-sclerosis/relapse",
+   "action": "edited",
+   "newSentence": "An NHS trust describes the return of old symptoms because of triggers as decompensation or pseudo-relapse ... steroids are not helpful for it.",
+   "original": "Heat, illness or fatigue can cause a temporary worsening called a pseudo-relapse"
+  },
+  {
+   "id": "c47",
+   "classification": "unsupported",
+   "evidence": "Not retrieved.",
+   "url": "https://www.nice.org.uk/guidance/qs108/resources/multiple-sclerosis-pdf-75545244362437",
+   "action": "removed",
+   "original": "NICE adds that relapses should be assessed by a healthcare professional with MS "
+  },
+  {
+   "id": "c48",
+   "classification": "supported",
+   "evidence": "NHS: no single test; referral to neurologist.",
+   "url": "https://www.nhs.uk/conditions/multiple-sclerosis/",
+   "action": "kept",
+   "original": "The NHS says there is no single test for MS and that people are referred to a ne"
+  },
+  {
+   "id": "c49",
+   "classification": "wrong",
+   "evidence": "Consultant-neurologist-only wording is from CG186 (2014), superseded; not confirmed for NG220.",
+   "url": "https://www.nice.org.uk/guidance/qs108/resources/multiple-sclerosis-pdf-75545244362437",
+   "action": "removed",
+   "original": "NICE says only a consultant neurologist should make the diagnosis."
+  },
+  {
+   "id": "c50",
+   "classification": "supported",
+   "evidence": "MedlinePlus/NHS list blood tests, MRI, lumbar puncture; history/exam not retrieved.",
+   "url": "https://medlineplus.gov/ency/article/000737.htm",
+   "action": "edited",
+   "newSentence": "NHS guidance lists blood tests ..., an MRI scan and a lumbar puncture among the tests that may be used.",
+   "original": "Assessment can include a review of health history and symptoms, a physical and n"
+  },
+  {
+   "id": "c51",
+   "classification": "unsupported",
+   "evidence": "PMC review not retrieved.",
+   "url": "https://www.ninds.nih.gov/health-information/disorders/multiple-sclerosis-ms",
+   "action": "removed",
+   "original": "A published review notes that early diagnosis is difficult because there is no s"
+  },
+  {
+   "id": "c52",
+   "classification": "supported",
+   "evidence": "NINDS: plaques/lesions visible on MRI.",
+   "url": "https://www.ninds.nih.gov/health-information/disorders/multiple-sclerosis-ms",
+   "action": "kept",
+   "original": "An MRI scan can show the scar-like areas, called plaques or lesions, that result"
+  },
+  {
+   "id": "c53",
+   "classification": "supported",
+   "evidence": "NINDS: could allow full diagnosis after single attack.",
+   "url": "https://www.ninds.nih.gov/health-information/disorders/multiple-sclerosis-ms",
+   "action": "kept",
+   "original": "NINDS says that identifying this damage can allow a full diagnosis of MS even af"
+  },
+  {
+   "id": "c54",
+   "classification": "supported",
+   "evidence": "NICE committee: McDonald criteria; exclude fever and infection as they can mimic MS.",
+   "url": "https://www.nice.org.uk/guidance/ng220/evidence/committee-discussion-for-diagnostic-criteria-for-multiple-sclerosis-possible-multiple-sclerosis-neuromyelitis-optica-and-clinically-isolated-syndrome-pdf-11079169598",
+   "action": "kept",
+   "original": "NICE's committee chose to base diagnosis on the McDonald criteria and stressed e"
+  },
+  {
+   "id": "c55",
+   "classification": "supported",
+   "evidence": "Supported (rec 1.1.3) but cut to meet the word limit.",
+   "url": "https://www.nice.org.uk/guidance/ng220/chapter/Recommendations",
+   "action": "removed",
+   "original": "It noted that fatigue, depression and dizziness would not usually suggest MS unl"
+  },
+  {
+   "id": "c56",
+   "classification": "supported",
+   "evidence": "NHS.",
+   "url": "https://www.nhs.uk/conditions/multiple-sclerosis/",
+   "action": "kept",
+   "original": "The NHS says there is currently no cure for MS, but treatments can slow its prog"
+  },
+  {
+   "id": "c57",
+   "classification": "supported",
+   "evidence": "NHS: DMTs reduce frequency and severity of relapses.",
+   "url": "https://www.nhs.uk/conditions/multiple-sclerosis/",
+   "action": "kept",
+   "original": "Disease-modifying therapies can help reduce the number and severity of relapses "
+  },
+  {
+   "id": "c58",
+   "classification": "wrong",
+   "evidence": "Criteria apply to SPMS (e.g. number of relapses) and PPMS; \"RRMS or SPMS\" misstates.",
+   "url": "https://www.nhs.uk/conditions/multiple-sclerosis/",
+   "action": "edited",
+   "newSentence": "These therapies are only prescribed to people whose MS meets specific criteria, which for secondary progressive MS include the number of relapses.",
+   "original": "They are only prescribed to people with relapsing remitting or secondary progres"
+  },
+  {
+   "id": "c59",
+   "classification": "supported",
+   "evidence": "NICE QS108: treatment as soon as possible and within 14 days when benefit.",
+   "url": "https://www.nice.org.uk/guidance/qs108/resources/multiple-sclerosis-pdf-75545244362437",
+   "action": "edited",
+   "newSentence": "NICE says adults with a relapse that would benefit from treatment should be offered it as soon as possible and within 14 days.",
+   "original": "NICE recommends that treatment for a relapse starts as early as possible, and wi"
+  },
+  {
+   "id": "c60",
+   "classification": "unsupported",
+   "evidence": "NINDS: steroids calm inflammation, speed recovery, do not change long-term course; muscle relaxants for spasms; \"medicines for fatigue\" not retrieved.",
+   "url": "https://www.ninds.nih.gov/health-information/disorders/multiple-sclerosis-ms",
+   "action": "edited",
+   "newSentence": "NINDS says steroids calm inflammation and speed recovery from attacks, but do not change the long-term course.",
+   "original": "NINDS lists steroids for attacks, muscle relaxants for stiffness and medicines f"
+  },
+  {
+   "id": "c61",
+   "classification": "supported",
+   "evidence": "NHS Scotland: physiotherapy; NHS: CBT for anxiety, depression, fatigue.",
+   "url": "https://www.nhs.uk/conditions/multiple-sclerosis/",
+   "action": "kept",
+   "original": "Symptom management can also include physiotherapy and cognitive behavioural ther"
+  },
+  {
+   "id": "c62",
+   "classification": "supported",
+   "evidence": "NICE: many symptoms can be treated; medicines give fewer and less severe relapses.",
+   "url": "https://www.nice.org.uk/guidance/ng220/informationforpublic",
+   "action": "kept",
+   "original": "NICE's public information says many symptoms can be treated, and that medicines "
+  },
+  {
+   "id": "c63",
+   "classification": "supported",
+   "evidence": "NICE: permanent; NHS trust: lifelong.",
+   "url": "https://www.nice.org.uk/guidance/ng220/informationforpublic",
+   "action": "kept",
+   "original": "The NHS and NICE both describe MS as a lifelong condition."
+  },
+  {
+   "id": "c64",
+   "classification": "supported",
+   "evidence": "NICE: approximately 130,000 people in the UK.",
+   "url": "https://www.nice.org.uk/guidance/ng220/informationforpublic",
+   "action": "kept",
+   "original": "NICE says it affects approximately 130,000 people in the UK."
+  },
+  {
+   "id": "c65",
+   "classification": "supported",
+   "evidence": "NINDS.",
+   "url": "https://www.ninds.nih.gov/health-information/disorders/multiple-sclerosis-ms",
+   "action": "kept",
+   "original": "NINDS says a small number of people with MS have mild symptoms and little disabi"
+  },
+  {
+   "id": "c66",
+   "classification": "supported",
+   "evidence": "NINDS.",
+   "url": "https://www.ninds.nih.gov/health-information/disorders/multiple-sclerosis-ms",
+   "action": "kept",
+   "original": "Others have worsening symptoms that lead to increased disability over time."
+  },
+  {
+   "id": "c67",
+   "classification": "supported",
+   "evidence": "MS Society.",
+   "url": "https://www.mssociety.org.uk/about-ms/signs-and-symptoms",
+   "action": "kept",
+   "original": "The MS Society notes that symptoms can come and go and can change over time, so "
+  },
+  {
+   "id": "c68",
+   "classification": "supported",
+   "evidence": "NINDS: most have normal life expectancy; MedlinePlus: normal or almost normal.",
+   "url": "https://www.ninds.nih.gov/health-information/disorders/multiple-sclerosis-ms",
+   "action": "kept",
+   "original": "NINDS also states that most people with MS have a normal life expectancy."
+  },
+  {
+   "id": "c69",
+   "classification": "supported",
+   "evidence": "Supported; merged into symptoms section as a sentence about Uhthoff's phenomenon.",
+   "url": "https://www.mssociety.org.uk/about-ms/signs-and-symptoms/effects-temperature-ms",
+   "action": "removed",
+   "original": "The MS Society has information on how temperature affects MS, and calls heat sen"
+  },
+  {
+   "id": "c70",
+   "classification": "unsupported",
+   "evidence": "Weakness as a heat effect not retrieved.",
+   "url": "https://www.mssociety.org.uk/about-ms/signs-and-symptoms",
+   "action": "removed",
+   "original": "Weakness is mentioned as one common effect of heat sensitivity."
+  },
+  {
+   "id": "c71",
+   "classification": "unsupported",
+   "evidence": "Advanced MS page not retrieved.",
+   "url": "https://www.mssociety.org.uk/about-ms/signs-and-symptoms",
+   "action": "removed",
+   "original": "Its page on advanced MS lists limited mobility and weakness in the upper body an"
+  },
+  {
+   "id": "c72",
+   "classification": "supported",
+   "evidence": "NHS advises seeing a GP.",
+   "url": "https://www.nhs.uk/conditions/multiple-sclerosis/",
+   "action": "kept",
+   "original": "The NHS advises seeing a GP for anyone who thinks they have symptoms of MS, and "
+  },
+  {
+   "id": "c73",
+   "classification": "supported",
+   "evidence": "NHS.",
+   "url": "https://www.nhs.uk/conditions/multiple-sclerosis/",
+   "action": "kept",
+   "original": "If MS is suspected, the NHS says the person is referred to a neurologist, as the"
+  },
+  {
+   "id": "c74",
+   "classification": "unsupported",
+   "evidence": "\"Can signal a stroke\" not retrieved; clause removed, symptom list kept.",
+   "url": "https://www.nhs.uk/conditions/multiple-sclerosis/",
+   "action": "edited",
+   "newSentence": "The NHS says to call 999 or go to A&E for sudden weakness ... (stroke clause removed).",
+   "original": "Sudden weakness or numbness in one arm, loss or blurring of vision, or problems "
+  },
+  {
+   "id": "c75",
+   "classification": "supported",
+   "evidence": "NHS: call 999 or go to A&E.",
+   "url": "https://www.nhs.uk/conditions/multiple-sclerosis/",
+   "action": "kept",
+   "original": "For these, the NHS says to call 999 or go to A&E."
+  },
+  {
+   "id": "c76",
+   "classification": "unsupported",
+   "evidence": "\"Worse even with treatment\" not retrieved; replaced with retrieved MedlinePlus reasons.",
+   "url": "https://medlineplus.gov/ency/article/000737.htm",
+   "action": "edited",
+   "newSentence": "For people already diagnosed, MedlinePlus lists reasons to contact a healthcare provider ...",
+   "original": "MedlinePlus advises contacting a healthcare provider if symptoms of MS develop, "
+  },
+  {
+   "id": "c77",
+   "classification": "supported",
+   "evidence": "NICE: rule out infection, particularly urinary tract and respiratory.",
+   "url": "https://www.nice.org.uk/guidance/qs108/resources/multiple-sclerosis-pdf-75545244362437",
+   "action": "kept",
+   "original": "When a relapse is suspected, NICE says infection, particularly urinary and respi"
+  },
+  {
+   "id": "c78",
+   "classification": "unsupported",
+   "evidence": "Not retrieved.",
+   "url": "https://www.nice.org.uk/guidance/qs108/resources/multiple-sclerosis-pdf-75545244362437",
+   "action": "removed",
+   "original": "NICE also says relapses should be assessed by a healthcare professional with MS "
+  },
+  {
+   "id": "c79",
+   "classification": "supported",
+   "evidence": "NHS and NICE: no cure; NINDS no-cure not retrieved.",
+   "url": "https://www.nhs.uk/conditions/multiple-sclerosis/",
+   "action": "edited",
+   "newSentence": "The NHS says there is currently no cure for MS ...",
+   "original": "The NHS and NINDS both say there is currently no cure for MS."
+  },
+  {
+   "id": "c80",
+   "classification": "supported",
+   "evidence": "NHS.",
+   "url": "https://www.nhs.uk/conditions/multiple-sclerosis/",
+   "action": "kept",
+   "original": "Treatments can slow progression and help ease symptoms, according to the NHS."
+  },
+  {
+   "id": "c81",
+   "classification": "unsupported",
+   "evidence": "NINDS attribution not retrieved; NICE: medicines give fewer, less severe relapses.",
+   "url": "https://www.nhs.uk/conditions/multiple-sclerosis/",
+   "action": "edited",
+   "newSentence": "... medicines that can help people have fewer and less severe relapses.",
+   "original": "NINDS says disease-modifying therapies can reduce how often attacks happen."
+  },
+  {
+   "id": "c82",
+   "classification": "supported",
+   "evidence": "NICE.",
+   "url": "https://www.nice.org.uk/guidance/ng220/informationforpublic",
+   "action": "kept",
+   "original": "NICE's public information says many symptoms can be treated."
+  },
+  {
+   "id": "c83",
+   "classification": "wrong",
+   "evidence": "Superseded CG186 wording.",
+   "url": "https://www.nice.org.uk/guidance/qs108/resources/multiple-sclerosis-pdf-75545244362437",
+   "action": "removed",
+   "original": "NICE says only a consultant neurologist should make a diagnosis of MS."
+  },
+  {
+   "id": "c84",
+   "classification": "supported",
+   "evidence": "NHS.",
+   "url": "https://www.nhs.uk/conditions/multiple-sclerosis/",
+   "action": "kept",
+   "original": "The NHS says there is no single test, so people with suspected MS are referred t"
+  },
+  {
+   "id": "c85",
+   "classification": "supported",
+   "evidence": "NHS/MedlinePlus: MRI, lumbar puncture, blood tests.",
+   "url": "https://www.nhs.uk/conditions/multiple-sclerosis/",
+   "action": "edited",
+   "newSentence": "The tests that may be used include an MRI scan, a lumbar puncture, and blood tests ...",
+   "original": "Assessment can include an examination, an MRI scan and blood tests to rule out o"
+  },
+  {
+   "id": "c86",
+   "classification": "supported",
+   "evidence": "NICE.",
+   "url": "https://www.nice.org.uk/guidance/qs108/resources/multiple-sclerosis-pdf-75545244362437",
+   "action": "kept",
+   "original": "NICE says a relapse is new or worsening symptoms lasting more than 24 hours, wit"
+  },
+  {
+   "id": "c87",
+   "classification": "unsupported",
+   "evidence": "NICE attribution and \"does not need treating\" not retrieved.",
+   "url": "https://www.uhd.nhs.uk/services/multiple-sclerosis/relapse",
+   "action": "edited",
+   "newSentence": "An NHS trust says the return of old symptoms because of triggers is called a pseudo-relapse, and that steroids are not helpful for it.",
+   "original": "Temporary worsening from heat, illness or fatigue is called a pseudo-relapse and"
+  },
+  {
+   "id": "c88",
+   "classification": "unsupported",
+   "evidence": "Not retrieved.",
+   "url": "https://www.nice.org.uk/guidance/qs108/resources/multiple-sclerosis-pdf-75545244362437",
+   "action": "removed",
+   "original": "Any urinary infection is checked for and treated."
+  },
+  {
+   "id": "c89",
+   "classification": "supported",
+   "evidence": "NINDS.",
+   "url": "https://www.ninds.nih.gov/health-information/disorders/multiple-sclerosis-ms",
+   "action": "kept",
+   "original": "NINDS states that most people with MS have a normal life expectancy."
+  },
+  {
+   "id": "c90",
+   "classification": "supported",
+   "evidence": "NINDS.",
+   "url": "https://www.ninds.nih.gov/health-information/disorders/multiple-sclerosis-ms",
+   "action": "kept",
+   "original": "It adds that a small number of people have mild symptoms with little disability,"
+  },
+  {
+   "id": "c91",
+   "classification": "unsupported",
+   "evidence": "\"Differs widely\" not retrieved; replaced with MS Society come-and-go sentence.",
+   "url": "https://www.mssociety.org.uk/about-ms/signs-and-symptoms",
+   "action": "removed",
+   "original": "Experience differs widely between people."
+  },
+  {
+   "id": "c92",
+   "classification": "supported",
+   "evidence": "Supported; FAQ removed to meet word limit.",
+   "url": "https://www.mssociety.org.uk/about-ms/signs-and-symptoms",
+   "action": "removed",
+   "original": "The MS Society describes heat sensitivity in MS as Uhthoff's phenomenon."
+  },
+  {
+   "id": "c93",
+   "classification": "supported",
+   "evidence": "Supported; FAQ removed to meet word limit.",
+   "url": "https://medlineplus.gov/ency/article/000737.htm",
+   "action": "removed",
+   "original": "MedlinePlus notes that many people with MS find symptoms are worse with a fever,"
+  },
+  {
+   "id": "c94",
+   "classification": "wrong",
+   "evidence": "NICE attribution wrong.",
+   "url": "https://www.uhd.nhs.uk/services/multiple-sclerosis/relapse",
+   "action": "removed",
+   "original": "NICE describes temporary worsening from heat, illness or fatigue as a pseudo-rel"
+  },
+  {
+   "id": "c95",
+   "classification": "supported",
+   "evidence": "NHS trust/NICE.",
+   "url": "https://www.nhs.uk/conditions/multiple-sclerosis/",
+   "action": "kept",
+   "original": "A lifelong condition of the brain and spinal cord"
+  },
+  {
+   "id": "c96",
+   "classification": "supported",
+   "evidence": "NHS.",
+   "url": "https://www.nhs.uk/conditions/multiple-sclerosis/",
+   "action": "kept",
+   "original": "Relapsing remitting, secondary progressive and primary progressive"
+  },
+  {
+   "id": "c97",
+   "classification": "wrong",
+   "evidence": "\"Consultant neurologist\" unconfirmed for current NICE.",
+   "url": "https://www.nhs.uk/conditions/multiple-sclerosis/",
+   "action": "edited",
+   "newSentence": "No single test; the GP refers to a neurologist",
+   "original": "A consultant neurologist; there is no single test"
+  },
+  {
+   "id": "c98",
+   "classification": "supported",
+   "evidence": "NHS.",
+   "url": "https://www.nhs.uk/conditions/multiple-sclerosis/",
+   "action": "kept",
+   "original": "None at present; treatments slow progression and ease symptoms"
+  },
+  {
+   "id": "c99",
+   "classification": "supported",
+   "evidence": "NICE.",
+   "url": "https://www.nice.org.uk/guidance/ng220/informationforpublic",
+   "action": "kept",
+   "original": "About 130,000 people, according to NICE"
+  },
+  {
+   "id": "c100",
+   "classification": "supported",
+   "evidence": "NHS.",
+   "url": "https://www.nhs.uk/conditions/multiple-sclerosis/",
+   "action": "kept",
+   "original": "Fatigue, numbness or tingling, vision and balance problems"
+  },
+  {
+   "id": "c101",
+   "classification": "supported",
+   "evidence": "NHS 999/A&E advice.",
+   "url": "https://www.nhs.uk/conditions/multiple-sclerosis/",
+   "action": "edited",
+   "newSentence": "Sudden one-arm weakness or numbness, vision loss or balance problems: call 999 or go to A&E",
+   "original": "Sudden one-arm weakness or numbness, vision loss or balance problems: call 999"
+  }
+ ],
+ "notes": "Pass-2 found NICE statement that only a consultant neurologist should diagnose comes from superseded CG186, not confirmed for NG220; the 85% figure appeared only in an NHS clinical guidance document; age \"20 to 40\" replaced by NICE \"20s or 30s\". Pseudo-relapse now attributed to an NHS trust page (UHD). MS Society pages (advanced MS) were not returned this pass so those sentences were cut. NHS pages were reached mostly through blended summaries; NHS attribution of individual lines is by summary. One textbook sentence (prevention). Article rebuilt to ~1140 words."
+}

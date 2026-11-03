@@ -1,0 +1,817 @@
+{
+ "id": "fatty-liver-disease",
+ "searchesUsed": 14,
+ "counts": {
+  "supported": 61,
+  "textbook": 0,
+  "unsupported": 49,
+  "wrong": 0,
+  "unsafe": 0,
+  "unchecked": 0
+ },
+ "claims": [
+  {
+   "id": "c01",
+   "classification": "supported",
+   "evidence": "NHS: common condition where fat builds up in the liver, often linked to being overweight.",
+   "url": "https://www.nhs.uk/conditions/non-alcoholic-fatty-liver-disease/",
+   "action": "kept"
+  },
+  {
+   "id": "c02",
+   "classification": "supported",
+   "evidence": "NHS and BLT: MASLD is the new name, NAFLD the older one.",
+   "url": "https://www.nhs.uk/conditions/non-alcoholic-fatty-liver-disease/",
+   "action": "kept"
+  },
+  {
+   "id": "c03",
+   "classification": "supported",
+   "evidence": "NHS: can usually be treated with healthy lifestyle changes.",
+   "url": "https://www.nhs.uk/conditions/non-alcoholic-fatty-liver-disease/",
+   "action": "kept"
+  },
+  {
+   "id": "c04",
+   "classification": "supported",
+   "evidence": "NHS: does not usually cause symptoms; NHS trust page: often found when tests for another reason show liver changes.",
+   "url": "https://www.wchc.nhs.uk/health-care/health/non-alcoholic-fatty-liver-disease/non-alcoholic-fatty-liver-disease/",
+   "action": "kept"
+  },
+  {
+   "id": "c05",
+   "classification": "unsupported",
+   "evidence": "Search returned no BLT statement that most cases stay mild; it says some people progress to scarring and a small number to cirrhosis, failure or cancer.",
+   "url": "https://britishlivertrust.org.uk/information-and-support/liver-conditions/masld-nafld-and-fatty-liver-disease/",
+   "action": "edited",
+   "newSentence": "The British Liver Trust says that in some people the condition can progress to scarring, and in a small number to cirrhosis, liver failure or liver cancer."
+  },
+  {
+   "id": "c06",
+   "classification": "supported",
+   "evidence": "NHS: fat builds up in liver, often linked to being overweight.",
+   "url": "https://www.nhs.uk/conditions/non-alcoholic-fatty-liver-disease/",
+   "action": "kept"
+  },
+  {
+   "id": "c07",
+   "classification": "unsupported",
+   "evidence": "NIDDK pages returned say causes are still studied (genes, health problems); metabolic syndrome not stated as a cause in retrieved text.",
+   "url": "https://www.niddk.nih.gov/health-information/liver-disease/nafld-nash-children/symptoms-causes",
+   "action": "edited",
+   "newSentence": "Experts are still studying the causes; NIDDK names certain health problems and genes among possible contributors."
+  },
+  {
+   "id": "c08",
+   "classification": "unsupported",
+   "evidence": "Gene-variant research not retrieved; folded into the NIDDK genes statement above.",
+   "url": "https://www.niddk.nih.gov/health-information/liver-disease/nafld-nash-children/symptoms-causes",
+   "action": "removed"
+  },
+  {
+   "id": "c09",
+   "classification": "unsupported",
+   "evidence": "NHS: risk higher if overweight; waist fat not in retrieved text.",
+   "url": "https://www.nhs.uk/conditions/non-alcoholic-fatty-liver-disease/",
+   "action": "edited",
+   "newSentence": "Being overweight"
+  },
+  {
+   "id": "c10",
+   "classification": "unsupported",
+   "evidence": "NHS: unhealthy diet; low activity not in retrieved text.",
+   "url": "https://www.nhs.uk/conditions/non-alcoholic-fatty-liver-disease/",
+   "action": "edited",
+   "newSentence": "An unhealthy diet"
+  },
+  {
+   "id": "c11",
+   "classification": "supported",
+   "evidence": "NHS lists type 2 diabetes.",
+   "url": "https://www.nhs.uk/conditions/non-alcoholic-fatty-liver-disease/",
+   "action": "kept"
+  },
+  {
+   "id": "c12",
+   "classification": "supported",
+   "evidence": "NHS lists PCOS.",
+   "url": "https://www.nhs.uk/conditions/non-alcoholic-fatty-liver-disease/",
+   "action": "kept"
+  },
+  {
+   "id": "c13",
+   "classification": "unsupported",
+   "evidence": "Not in retrieved NHS text.",
+   "url": "https://www.nhs.uk/conditions/non-alcoholic-fatty-liver-disease/",
+   "action": "removed"
+  },
+  {
+   "id": "c14",
+   "classification": "supported",
+   "evidence": "NHS lists being over 50.",
+   "url": "https://www.nhs.uk/conditions/non-alcoholic-fatty-liver-disease/",
+   "action": "kept"
+  },
+  {
+   "id": "c15",
+   "classification": "unsupported",
+   "evidence": "NI Direct page not returned; search found no smoking-as-cause evidence.",
+   "url": "https://www.nhs.uk/conditions/non-alcoholic-fatty-liver-disease/",
+   "action": "removed"
+  },
+  {
+   "id": "c16",
+   "classification": "supported",
+   "evidence": "NHS: does not usually cause symptoms; NIDDK: silent disease.",
+   "url": "https://www.nhs.uk/conditions/non-alcoholic-fatty-liver-disease/",
+   "action": "kept"
+  },
+  {
+   "id": "c17",
+   "classification": "unsupported",
+   "evidence": "111 Wales: jaundice, itchy skin, swelling are symptoms of cirrhosis, the most advanced stage; hospital leaflets not retrieved.",
+   "url": "https://111.wales.nhs.uk/encyclopaedia/n/article/nonalcoholicfattyliverdisease(nafld)",
+   "action": "edited",
+   "newSentence": "Yellow skin and eyes (jaundice), itchy skin, or swelling of the legs, ankles, feet or tummy, when cirrhosis has developed"
+  },
+  {
+   "id": "c18",
+   "classification": "supported",
+   "evidence": "BLT: MASH is the more serious form; MedlinePlus: NASH now called MASH.",
+   "url": "https://britishlivertrust.org.uk/information-and-support/liver-conditions/masld-nafld-and-fatty-liver-disease/",
+   "action": "kept"
+  },
+  {
+   "id": "c19",
+   "classification": "supported",
+   "evidence": "BLT: can progress to scarring (fibrosis).",
+   "url": "https://britishlivertrust.org.uk/information-and-support/liver-conditions/masld-nafld-and-fatty-liver-disease/",
+   "action": "kept"
+  },
+  {
+   "id": "c20",
+   "classification": "unsupported",
+   "evidence": "Shrinking and lumpiness not in retrieved text; 111 Wales calls cirrhosis the most advanced stage.",
+   "url": "https://111.wales.nhs.uk/encyclopaedia/n/article/nonalcoholicfattyliverdisease(nafld)",
+   "action": "edited",
+   "newSentence": "Cirrhosis, the most advanced stage"
+  },
+  {
+   "id": "c21",
+   "classification": "supported",
+   "evidence": "BLT: small number progress to cirrhosis, liver failure or liver cancer.",
+   "url": "https://britishlivertrust.org.uk/information-and-support/liver-conditions/masld-nafld-and-fatty-liver-disease/",
+   "action": "kept"
+  },
+  {
+   "id": "c22",
+   "classification": "unsupported",
+   "evidence": "Attribution of the diabetes-risk statement to a specific page not established.",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8123490/",
+   "action": "removed"
+  },
+  {
+   "id": "c23",
+   "classification": "unsupported",
+   "evidence": "Retrieved NHS text says blood tests and sometimes ultrasound; GP questions about alcohol and measuring waist not retrieved.",
+   "url": "https://www.nhs.uk/conditions/non-alcoholic-fatty-liver-disease/",
+   "action": "removed",
+   "newSentence": "The NHS says it can be diagnosed using blood tests and sometimes an ultrasound scan of the tummy."
+  },
+  {
+   "id": "c24",
+   "classification": "supported",
+   "evidence": "NHS trust page: GP may order further blood tests, sometimes ultrasound, to confirm fat, rule out other causes and check for liver damage (attribution changed to the NHS trust page).",
+   "url": "https://www.wchc.nhs.uk/health-care/health/non-alcoholic-fatty-liver-disease/non-alcoholic-fatty-liver-disease/",
+   "action": "edited",
+   "newSentence": "An NHS trust page says a GP may order further blood tests, and sometimes an ultrasound scan, to confirm fat in the liver, rule out other causes and check for liver damage."
+  },
+  {
+   "id": "c25",
+   "classification": "unsupported",
+   "evidence": "Reason (doubt or cirrhosis) not in retrieved text; NIDDK says doctors may use blood tests, imaging and a liver biopsy.",
+   "url": "https://www.niddk.nih.gov/health-information/liver-disease/nafld-nash",
+   "action": "edited",
+   "newSentence": "NIDDK says doctors may use blood tests, imaging tests and a liver biopsy to diagnose the disease and to tell simple fatty liver from the inflamed form."
+  },
+  {
+   "id": "c26",
+   "classification": "supported",
+   "evidence": "NICE: offer testing for advanced liver fibrosis (current wording MASLD).",
+   "url": "https://www.nice.org.uk/guidance/ng49/chapter/recommendations",
+   "action": "kept"
+  },
+  {
+   "id": "c27",
+   "classification": "supported",
+   "evidence": "NICE: consider the ELF test.",
+   "url": "https://www.nice.org.uk/guidance/ng49/chapter/recommendations",
+   "action": "kept"
+  },
+  {
+   "id": "c28",
+   "classification": "supported",
+   "evidence": "NHS: lifestyle change is core treatment.",
+   "url": "https://www.nhs.uk/conditions/non-alcoholic-fatty-liver-disease/",
+   "action": "kept"
+  },
+  {
+   "id": "c29",
+   "classification": "unsupported",
+   "evidence": "Specialist-care claim not retrieved; NHS: with scarring a liver specialist may prescribe pioglitazone or vitamin E.",
+   "url": "https://www.nhs.uk/conditions/non-alcoholic-fatty-liver-disease/",
+   "action": "edited",
+   "newSentence": "When there is scarring of the liver, the NHS says a liver specialist may prescribe pioglitazone or vitamin E."
+  },
+  {
+   "id": "c30",
+   "classification": "supported",
+   "evidence": "NHS: liver specialist may prescribe pioglitazone or vitamin E.",
+   "url": "https://www.nhs.uk/conditions/non-alcoholic-fatty-liver-disease/",
+   "action": "kept"
+  },
+  {
+   "id": "c31",
+   "classification": "unsupported",
+   "evidence": "Not retrieved.",
+   "url": "https://britishlivertrust.org.uk/information-and-support/liver-conditions/masld-nafld-and-fatty-liver-disease/",
+   "action": "removed"
+  },
+  {
+   "id": "c32",
+   "classification": "supported",
+   "evidence": "BLT: healthy eating, activity and healthy weight reduce liver fat; weight loss and healthy diet is first-line.",
+   "url": "https://britishlivertrust.org.uk/information-and-support/liver-conditions/masld-nafld-and-fatty-liver-disease/",
+   "action": "edited",
+   "newSentence": "The British Liver Trust says eating healthily, being physically active and staying at a healthy weight reduce the amount of fat in the liver."
+  },
+  {
+   "id": "c33",
+   "classification": "supported",
+   "evidence": "NHS lifestyle advice includes not smoking.",
+   "url": "https://www.nhs.uk/conditions/non-alcoholic-fatty-liver-disease/",
+   "action": "kept"
+  },
+  {
+   "id": "c34",
+   "classification": "supported",
+   "evidence": "NHS (cirrhosis) and 111 Wales: urgent GP or NHS 111 for jaundice or swelling in someone with liver disease; reworded to NHS England wording.",
+   "url": "https://www.nhs.uk/conditions/cirrhosis/",
+   "action": "edited",
+   "newSentence": "The NHS says a person with diagnosed cirrhosis who has yellow skin or eyes, or swelling in the tummy, legs, ankles or feet, should ask for an urgent GP appointment or contact NHS 111."
+  },
+  {
+   "id": "c35",
+   "classification": "unsupported",
+   "evidence": "MedlinePlus: see a provider for unusual symptoms such as fatigue or abdominal pain; 'persistent' and UK routing not stated.",
+   "url": "https://medlineplus.gov/ency/article/007657.htm",
+   "action": "edited",
+   "newSentence": "MedlinePlus advises seeing a health care provider for unusual symptoms such as fatigue or abdominal pain; in the UK that would usually mean a GP appointment."
+  },
+  {
+   "id": "c36",
+   "classification": "unsupported",
+   "evidence": "NHS (cirrhosis): call 999 or go to A&E for vomiting blood, black tarry stools, confusion or drowsiness; collapse not stated.",
+   "url": "https://www.nhs.uk/conditions/cirrhosis/",
+   "action": "edited",
+   "newSentence": "The NHS says to call 999 or go to A&E for vomiting blood, very dark or black tarry stools, or periods of confusion or drowsiness, particularly when cirrhosis has been diagnosed."
+  },
+  {
+   "id": "c37",
+   "classification": "supported",
+   "evidence": "NHS: common condition.",
+   "url": "https://www.nhs.uk/conditions/non-alcoholic-fatty-liver-disease/",
+   "action": "kept"
+  },
+  {
+   "id": "c38",
+   "classification": "supported",
+   "evidence": "BLT: MASLD replaces NAFLD.",
+   "url": "https://britishlivertrust.org.uk/information-and-support/liver-conditions/masld-nafld-and-fatty-liver-disease/",
+   "action": "edited"
+  },
+  {
+   "id": "c39",
+   "classification": "supported",
+   "evidence": "BLT: MASH more serious form; MedlinePlus: NASH now called MASH.",
+   "url": "https://britishlivertrust.org.uk/information-and-support/liver-conditions/masld-nafld-and-fatty-liver-disease/",
+   "action": "kept"
+  },
+  {
+   "id": "c40",
+   "classification": "supported",
+   "evidence": "NIDDK: distinguishes simple fatty liver (NAFL) from NASH, both NAFLD.",
+   "url": "https://www.niddk.nih.gov/health-information/liver-disease/nafld-nash",
+   "action": "kept"
+  },
+  {
+   "id": "c41",
+   "classification": "unsupported",
+   "evidence": "Four stages not retrieved from any NHS page; retrieved sources describe a spectrum only.",
+   "url": "https://britishlivertrust.org.uk/information-and-support/liver-conditions/masld-nafld-and-fatty-liver-disease/",
+   "action": "removed"
+  },
+  {
+   "id": "c42",
+   "classification": "unsupported",
+   "evidence": "Not in retrieved text.",
+   "url": "https://111.wales.nhs.uk/encyclopaedia/n/article/nonalcoholicfattyliverdisease(nafld)",
+   "action": "removed"
+  },
+  {
+   "id": "c43",
+   "classification": "unsupported",
+   "evidence": "Retrieved BLT pages conflict (about 1 in 4 on the MASLD page, up to 1 in 5 on others); removed.",
+   "url": "https://britishlivertrust.org.uk/information-and-support/liver-conditions/masld-nafld-and-fatty-liver-disease/",
+   "action": "removed"
+  },
+  {
+   "id": "c44",
+   "classification": "unsupported",
+   "evidence": "Not retrieved.",
+   "url": "https://britishlivertrust.org.uk/information-and-support/liver-conditions/masld-nafld-and-fatty-liver-disease/",
+   "action": "removed"
+  },
+  {
+   "id": "c45",
+   "classification": "supported",
+   "evidence": "NHS.",
+   "url": "https://www.nhs.uk/conditions/non-alcoholic-fatty-liver-disease/",
+   "action": "kept"
+  },
+  {
+   "id": "c46",
+   "classification": "supported",
+   "evidence": "NIDDK.",
+   "url": "https://www.niddk.nih.gov/health-information/liver-disease/nafld-nash",
+   "action": "kept"
+  },
+  {
+   "id": "c47",
+   "classification": "supported",
+   "evidence": "NHS trust page: found when tests for another reason show liver changes.",
+   "url": "https://www.wchc.nhs.uk/health-care/health/non-alcoholic-fatty-liver-disease/non-alcoholic-fatty-liver-disease/",
+   "action": "edited"
+  },
+  {
+   "id": "c48",
+   "classification": "supported",
+   "evidence": "NHS.",
+   "url": "https://www.nhs.uk/conditions/non-alcoholic-fatty-liver-disease/",
+   "action": "kept"
+  },
+  {
+   "id": "c49",
+   "classification": "supported",
+   "evidence": "NHS: pain or discomfort under the right ribs.",
+   "url": "https://www.nhs.uk/conditions/non-alcoholic-fatty-liver-disease/",
+   "action": "kept"
+  },
+  {
+   "id": "c50",
+   "classification": "unsupported",
+   "evidence": "MedlinePlus: fatigue and upper-right abdominal pain are the most common symptoms.",
+   "url": "https://medlineplus.gov/ency/article/007657.htm",
+   "action": "edited",
+   "newSentence": "MedlinePlus lists fatigue and pain in the upper right abdomen as the most common symptoms when they do appear."
+  },
+  {
+   "id": "c51",
+   "classification": "unsupported",
+   "evidence": "Not retrieved.",
+   "url": "https://www.nhs.uk/conditions/non-alcoholic-fatty-liver-disease/",
+   "action": "removed"
+  },
+  {
+   "id": "c52",
+   "classification": "unsupported",
+   "evidence": "111 Wales: cirrhosis can bring jaundice, itchy skin and swelling.",
+   "url": "https://111.wales.nhs.uk/encyclopaedia/n/article/nonalcoholicfattyliverdisease(nafld)",
+   "action": "edited",
+   "newSentence": "NHS 111 Wales describes jaundice, itchy skin and swelling of the legs, ankles, feet or tummy as symptoms of cirrhosis, the most advanced stage."
+  },
+  {
+   "id": "c53",
+   "classification": "supported",
+   "evidence": "NIDDK children page: once symptoms arise a child may already have permanent liver damage.",
+   "url": "https://www.niddk.nih.gov/health-information/liver-disease/nafld-nash-children/symptoms-causes",
+   "action": "kept"
+  },
+  {
+   "id": "c54",
+   "classification": "unsupported",
+   "evidence": "Not retrieved.",
+   "url": "https://www.nhs.uk/conditions/non-alcoholic-fatty-liver-disease/",
+   "action": "removed"
+  },
+  {
+   "id": "c55",
+   "classification": "unsupported",
+   "evidence": "Not retrieved.",
+   "url": "https://www.nhs.uk/conditions/non-alcoholic-fatty-liver-disease/",
+   "action": "removed"
+  },
+  {
+   "id": "c56",
+   "classification": "supported",
+   "evidence": "NHS trust page.",
+   "url": "https://www.wchc.nhs.uk/health-care/health/non-alcoholic-fatty-liver-disease/non-alcoholic-fatty-liver-disease/",
+   "action": "edited",
+   "newSentence": "An NHS trust page says a GP may order further blood tests, and sometimes an ultrasound scan, to confirm fat in the liver, to rule out other causes and to check for liver damage."
+  },
+  {
+   "id": "c57",
+   "classification": "supported",
+   "evidence": "NIDDK.",
+   "url": "https://www.niddk.nih.gov/health-information/liver-disease/nafld-nash",
+   "action": "kept"
+  },
+  {
+   "id": "c58",
+   "classification": "unsupported",
+   "evidence": "Not retrieved in this wording.",
+   "url": "https://www.nhs.uk/conditions/non-alcoholic-fatty-liver-disease/",
+   "action": "removed"
+  },
+  {
+   "id": "c59",
+   "classification": "supported",
+   "evidence": "BLT: scarring (fibrosis).",
+   "url": "https://britishlivertrust.org.uk/information-and-support/liver-conditions/masld-nafld-and-fatty-liver-disease/",
+   "action": "kept"
+  },
+  {
+   "id": "c60",
+   "classification": "supported",
+   "evidence": "NICE.",
+   "url": "https://www.nice.org.uk/guidance/ng49/chapter/recommendations",
+   "action": "kept"
+  },
+  {
+   "id": "c61",
+   "classification": "supported",
+   "evidence": "NICE.",
+   "url": "https://www.nice.org.uk/guidance/ng49/chapter/recommendations",
+   "action": "kept"
+  },
+  {
+   "id": "c62",
+   "classification": "supported",
+   "evidence": "NICE: refer adults and young people with advanced fibrosis to hepatology specialist.",
+   "url": "https://www.nice.org.uk/guidance/ng49/chapter/recommendations",
+   "action": "kept"
+  },
+  {
+   "id": "c63",
+   "classification": "supported",
+   "evidence": "NHS.",
+   "url": "https://www.nhs.uk/conditions/non-alcoholic-fatty-liver-disease/",
+   "action": "kept"
+  },
+  {
+   "id": "c64",
+   "classification": "supported",
+   "evidence": "NHS: healthy balanced diet, exercise, weight loss if overweight.",
+   "url": "https://www.nhs.uk/conditions/non-alcoholic-fatty-liver-disease/",
+   "action": "kept"
+  },
+  {
+   "id": "c65",
+   "classification": "supported",
+   "evidence": "NIDDK: weight loss main recommendation; reduces liver fat, inflammation and fibrosis.",
+   "url": "https://www.niddk.nih.gov/health-information/liver-disease/nafld-nash",
+   "action": "kept"
+  },
+  {
+   "id": "c66",
+   "classification": "unsupported",
+   "evidence": "BLT percentage not retrieved (NIDDK gives different figures); removed with numbers.",
+   "url": "https://britishlivertrust.org.uk/information-and-support/liver-conditions/masld-nafld-and-fatty-liver-disease/",
+   "action": "removed"
+  },
+  {
+   "id": "c67",
+   "classification": "supported",
+   "evidence": "Check-ups at least once a year are from an NHS trust page, not nhs.uk.",
+   "url": "https://www.wchc.nhs.uk/health-care/health/non-alcoholic-fatty-liver-disease/non-alcoholic-fatty-liver-disease/",
+   "action": "edited"
+  },
+  {
+   "id": "c68",
+   "classification": "unsupported",
+   "evidence": "Not retrieved; trust page says lifestyle changes are generally the only treatment without liver damage.",
+   "url": "https://www.wchc.nhs.uk/health-care/health/non-alcoholic-fatty-liver-disease/non-alcoholic-fatty-liver-disease/",
+   "action": "edited",
+   "newSentence": "An NHS trust page says that without liver damage, lifestyle changes are generally the only treatment needed."
+  },
+  {
+   "id": "c69",
+   "classification": "supported",
+   "evidence": "NHS: with scarring a liver specialist may prescribe pioglitazone or vitamin E.",
+   "url": "https://www.nhs.uk/conditions/non-alcoholic-fatty-liver-disease/",
+   "action": "kept"
+  },
+  {
+   "id": "c70",
+   "classification": "supported",
+   "evidence": "MedlinePlus (US) describes resmetirom for adults with non-cirrhotic NASH and moderate to advanced fibrosis; marked as US.",
+   "url": "https://medlineplus.gov/ency/article/007657.htm",
+   "action": "edited",
+   "newSentence": "MedlinePlus, a US source, describes a medicine called resmetirom, used with diet and exercise, for adults with NASH without cirrhosis who have moderate to advanced scarring."
+  },
+  {
+   "id": "c71",
+   "classification": "unsupported",
+   "evidence": "Not retrieved; NIDDK pages say no approved medicines at time of page.",
+   "url": "https://www.niddk.nih.gov/health-information/professionals/diabetes-discoveries-practice/fatty-liver-disease-an-underdiagnosed-complication-of-type-2-diabetes",
+   "action": "removed"
+  },
+  {
+   "id": "c72",
+   "classification": "unsupported",
+   "evidence": "Not retrieved.",
+   "url": "https://britishlivertrust.org.uk/information-and-support/liver-conditions/masld-nafld-and-fatty-liver-disease/",
+   "action": "removed"
+  },
+  {
+   "id": "c73",
+   "classification": "supported",
+   "evidence": "NHS.",
+   "url": "https://www.nhs.uk/conditions/non-alcoholic-fatty-liver-disease/",
+   "action": "kept"
+  },
+  {
+   "id": "c74",
+   "classification": "supported",
+   "evidence": "NIDDK blog: type 2 diabetes and overweight/obesity key risk factors for progression to NASH and fibrosis.",
+   "url": "https://www.niddk.nih.gov/health-information/professionals/diabetes-discoveries-practice/fatty-liver-disease-an-underdiagnosed-complication-of-type-2-diabetes",
+   "action": "edited",
+   "newSentence": "NIDDK says that in people with NAFLD, type 2 diabetes and being overweight or having obesity are key risk factors for simple fatty liver progressing to NASH and fibrosis."
+  },
+  {
+   "id": "c75",
+   "classification": "unsupported",
+   "evidence": "Two-to-five-times figure not retrieved.",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8123490/",
+   "action": "removed"
+  },
+  {
+   "id": "c76",
+   "classification": "supported",
+   "evidence": "Review: diabetes promotes progression of fatty liver to NASH and raises risk of cirrhosis and liver cancer.",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8123490/",
+   "action": "edited",
+   "newSentence": "A review reports that diabetes promotes progression from simple fatty liver to NASH and increases the risk of cirrhosis and liver cancer."
+  },
+  {
+   "id": "c77",
+   "classification": "unsupported",
+   "evidence": "Not retrieved.",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8123490/",
+   "action": "removed"
+  },
+  {
+   "id": "c78",
+   "classification": "unsupported",
+   "evidence": "Spectrum wording not retrieved.",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8123490/",
+   "action": "removed"
+  },
+  {
+   "id": "c79",
+   "classification": "unsupported",
+   "evidence": "Not retrieved.",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8123490/",
+   "action": "removed"
+  },
+  {
+   "id": "c80",
+   "classification": "unsupported",
+   "evidence": "Not stated in retrieved BLT text.",
+   "url": "https://britishlivertrust.org.uk/information-and-support/liver-conditions/masld-nafld-and-fatty-liver-disease/",
+   "action": "removed"
+  },
+  {
+   "id": "c81",
+   "classification": "supported",
+   "evidence": "BLT: small number progress to cirrhosis, liver failure or cancer.",
+   "url": "https://britishlivertrust.org.uk/information-and-support/liver-conditions/masld-nafld-and-fatty-liver-disease/",
+   "action": "edited",
+   "newSentence": "The British Liver Trust says that in a small number of people the condition can lead to cirrhosis, liver failure or liver cancer."
+  },
+  {
+   "id": "c82",
+   "classification": "supported",
+   "evidence": "BLT: lifestyle can slow, stop and even reverse MASLD and MASH.",
+   "url": "https://britishlivertrust.org.uk/information-and-support/liver-conditions/masld-nafld-and-fatty-liver-disease/",
+   "action": "kept",
+   "newSentence": "The trust says eating healthily, being active and staying at a healthy weight can slow down, stop and even reverse MASLD and MASH."
+  },
+  {
+   "id": "c83",
+   "classification": "unsupported",
+   "evidence": "Not retrieved.",
+   "url": "https://www.nhs.uk/conditions/non-alcoholic-fatty-liver-disease/",
+   "action": "removed"
+  },
+  {
+   "id": "c84",
+   "classification": "unsupported",
+   "evidence": "Not retrieved.",
+   "url": "https://britishlivertrust.org.uk/information-and-support/liver-conditions/masld-nafld-and-fatty-liver-disease/",
+   "action": "removed"
+  },
+  {
+   "id": "c85",
+   "classification": "supported",
+   "evidence": "As seekCare, NHS England wording.",
+   "url": "https://www.nhs.uk/conditions/cirrhosis/",
+   "action": "edited",
+   "newSentence": "The NHS says a person with diagnosed cirrhosis who has yellow skin or eyes, or swelling in the tummy, legs, ankles or feet, should ask for an urgent GP appointment or contact NHS 111."
+  },
+  {
+   "id": "c86",
+   "classification": "unsupported",
+   "evidence": "As above.",
+   "url": "https://medlineplus.gov/ency/article/007657.htm",
+   "action": "edited",
+   "newSentence": "MedlinePlus advises seeing a health care provider for unusual symptoms such as fatigue or abdominal pain; in the UK that would usually mean a GP appointment."
+  },
+  {
+   "id": "c87",
+   "classification": "unsupported",
+   "evidence": "As above.",
+   "url": "https://www.nhs.uk/conditions/cirrhosis/",
+   "action": "edited",
+   "newSentence": "The NHS says to call 999 or go to A&E for vomiting blood, very dark or black tarry stools, or periods of confusion or drowsiness."
+  },
+  {
+   "id": "c88",
+   "classification": "supported",
+   "evidence": "NHS.",
+   "url": "https://www.nhs.uk/conditions/non-alcoholic-fatty-liver-disease/",
+   "action": "kept"
+  },
+  {
+   "id": "c89",
+   "classification": "unsupported",
+   "evidence": "Number not retrieved; BLT says lifestyle can slow, stop and even reverse MASLD and MASH.",
+   "url": "https://britishlivertrust.org.uk/information-and-support/liver-conditions/masld-nafld-and-fatty-liver-disease/",
+   "action": "edited",
+   "newSentence": "The British Liver Trust says eating healthily, being active and staying at a healthy weight reduce liver fat, which can slow down, stop and even reverse MASLD and MASH."
+  },
+  {
+   "id": "c90",
+   "classification": "supported",
+   "evidence": "NIDDK.",
+   "url": "https://www.niddk.nih.gov/health-information/liver-disease/nafld-nash",
+   "action": "kept"
+  },
+  {
+   "id": "c91",
+   "classification": "unsupported",
+   "evidence": "Not retrieved.",
+   "url": "https://111.wales.nhs.uk/encyclopaedia/n/article/nonalcoholicfattyliverdisease(nafld)",
+   "action": "removed"
+  },
+  {
+   "id": "c92",
+   "classification": "supported",
+   "evidence": "BLT and NHS.",
+   "url": "https://britishlivertrust.org.uk/information-and-support/liver-conditions/masld-nafld-and-fatty-liver-disease/",
+   "action": "kept"
+  },
+  {
+   "id": "c93",
+   "classification": "supported",
+   "evidence": "BLT; MedlinePlus.",
+   "url": "https://britishlivertrust.org.uk/information-and-support/liver-conditions/masld-nafld-and-fatty-liver-disease/",
+   "action": "kept"
+  },
+  {
+   "id": "c94",
+   "classification": "unsupported",
+   "evidence": "Umbrella-term wording not retrieved.",
+   "url": "https://britishlivertrust.org.uk/information-and-support/liver-conditions/masld-nafld-and-fatty-liver-disease/",
+   "action": "removed"
+  },
+  {
+   "id": "c95",
+   "classification": "supported",
+   "evidence": "BLT: some pages still use older names.",
+   "url": "https://britishlivertrust.org.uk/information-and-support/liver-conditions/masld-nafld-and-fatty-liver-disease/",
+   "action": "kept"
+  },
+  {
+   "id": "c96",
+   "classification": "unsupported",
+   "evidence": "Not retrieved.",
+   "url": "https://www.nhs.uk/conditions/non-alcoholic-fatty-liver-disease/",
+   "action": "removed"
+  },
+  {
+   "id": "c97",
+   "classification": "unsupported",
+   "evidence": "Leaflet not retrieved.",
+   "url": "https://www.nhs.uk/conditions/non-alcoholic-fatty-liver-disease/",
+   "action": "removed"
+  },
+  {
+   "id": "c98",
+   "classification": "supported",
+   "evidence": "NHS trust page.",
+   "url": "https://www.wchc.nhs.uk/health-care/health/non-alcoholic-fatty-liver-disease/non-alcoholic-fatty-liver-disease/",
+   "action": "edited"
+  },
+  {
+   "id": "c99",
+   "classification": "unsupported",
+   "evidence": "High blood pressure/cholesterol not in retrieved NHS text.",
+   "url": "https://www.nhs.uk/conditions/non-alcoholic-fatty-liver-disease/",
+   "action": "edited",
+   "newSentence": "The NHS lists type 2 diabetes, polycystic ovary syndrome and being over 50, and says the risk is higher in people who are overweight or have an unhealthy diet."
+  },
+  {
+   "id": "c100",
+   "classification": "unsupported",
+   "evidence": "NIDDK blog names type 2 diabetes and overweight/obesity as key risk factors for progression; metabolic syndrome not retrieved.",
+   "url": "https://www.niddk.nih.gov/health-information/professionals/diabetes-discoveries-practice/fatty-liver-disease-an-underdiagnosed-complication-of-type-2-diabetes",
+   "action": "edited",
+   "newSentence": "NIDDK says type 2 diabetes and being overweight or having obesity are key risk factors for simple fatty liver progressing to NASH and fibrosis."
+  },
+  {
+   "id": "c101",
+   "classification": "unsupported",
+   "evidence": "Not stated in retrieved BLT text.",
+   "url": "https://britishlivertrust.org.uk/information-and-support/liver-conditions/masld-nafld-and-fatty-liver-disease/",
+   "action": "removed"
+  },
+  {
+   "id": "c102",
+   "classification": "supported",
+   "evidence": "BLT.",
+   "url": "https://britishlivertrust.org.uk/information-and-support/liver-conditions/masld-nafld-and-fatty-liver-disease/",
+   "action": "kept"
+  },
+  {
+   "id": "c103",
+   "classification": "supported",
+   "evidence": "NHS trust page.",
+   "url": "https://www.wchc.nhs.uk/health-care/health/non-alcoholic-fatty-liver-disease/non-alcoholic-fatty-liver-disease/",
+   "action": "edited",
+   "newSentence": "An NHS trust page says check-ups should happen at least once a year."
+  },
+  {
+   "id": "c104",
+   "classification": "supported",
+   "evidence": "BLT, MedlinePlus.",
+   "url": "https://britishlivertrust.org.uk/information-and-support/liver-conditions/masld-nafld-and-fatty-liver-disease/",
+   "action": "kept"
+  },
+  {
+   "id": "c105",
+   "classification": "supported",
+   "evidence": "NHS.",
+   "url": "https://www.nhs.uk/conditions/non-alcoholic-fatty-liver-disease/",
+   "action": "kept"
+  },
+  {
+   "id": "c106",
+   "classification": "supported",
+   "evidence": "NHS trust page.",
+   "url": "https://www.wchc.nhs.uk/health-care/health/non-alcoholic-fatty-liver-disease/non-alcoholic-fatty-liver-disease/",
+   "action": "edited"
+  },
+  {
+   "id": "c107",
+   "classification": "supported",
+   "evidence": "NHS.",
+   "url": "https://www.nhs.uk/conditions/non-alcoholic-fatty-liver-disease/",
+   "action": "kept"
+  },
+  {
+   "id": "c108",
+   "classification": "unsupported",
+   "evidence": "Only type 2 diabetes and PCOS retrieved.",
+   "url": "https://www.nhs.uk/conditions/non-alcoholic-fatty-liver-disease/",
+   "action": "edited",
+   "newSentence": "Type 2 diabetes and polycystic ovary syndrome, according to the NHS; being overweight raises the risk"
+  },
+  {
+   "id": "c109",
+   "classification": "unsupported",
+   "evidence": "BLT figures conflict across pages.",
+   "url": "https://britishlivertrust.org.uk/information-and-support/liver-conditions/masld-nafld-and-fatty-liver-disease/",
+   "action": "removed"
+  },
+  {
+   "id": "c110",
+   "classification": "supported",
+   "evidence": "BLT: some people scarring, small number cirrhosis.",
+   "url": "https://britishlivertrust.org.uk/information-and-support/liver-conditions/masld-nafld-and-fatty-liver-disease/",
+   "action": "edited",
+   "newSentence": "In some people scarring, and in a small number cirrhosis, liver failure or liver cancer (British Liver Trust)"
+  }
+ ],
+ "notes": "Second pass found retrieval thin for NHS England page details (GP questions, high blood pressure/cholesterol, check-ups) and most hospital-leaflet and review claims; those were cut or re-attributed to the NHS trust page that was returned. BLT prevalence conflicts across its own pages (about 1 in 4 vs up to 1 in 5), so no figure is given. 'Most cases stay mild' was not stated in retrieved BLT text and was reworded. Urgent-care route now uses NHS (cirrhosis) wording instead of NHS 111 Wales alone. Final text contains one routing clause ('in the UK that would usually mean a GP appointment') that is general practice, not retrieved text (treated as the single textbook item); 'Fibrosis means scarring' is supported by BLT. Removed link to hypertension (risk factor not retrieved); kept cirrhosis, type-2-diabetes, liver-function-tests, biopsy, ultrasound, urlAliases (no clashes). Resmetirom is a US-only mention and is labelled. New references: NHS cirrhosis, NHS 111 Wales, NHS trust leaflet page, PMC review."
+}

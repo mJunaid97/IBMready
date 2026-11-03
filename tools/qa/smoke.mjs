@@ -58,7 +58,7 @@ const inspect = () => page.evaluate(() => {
 
 // 1. every page type renders with complete metadata
 const pages = ['', 'anatomy/', 'organs/', 'systems/', 'medical-terms/', 'study/', 'tools/', 'tools/drug-interaction-checker/', 'editorial/drug-interaction-methodology/', 'about/', 'editorial-policy/', 'medical-review-policy/', 'references-policy/', 'corrections-policy/', 'disclaimer/', 'contact/', 'roadmap/', 'search/?q=knee',
-  ...['physiology', 'symptoms', 'conditions', 'tests', 'biomarkers', 'imaging', 'procedures', 'medications', 'drug-classes', 'targets', 'first-aid', 'health', 'compare', 'tests/categories', 'medications/classes'].map(t => `${t}/`)].map(p => PRETTY || !p.endsWith('/') ? p : p + 'index.html');
+  ...['physiology', 'symptoms', 'conditions', 'tests', 'biomarkers', 'imaging', 'procedures', 'medications', 'drug-classes', 'targets', 'first-aid', 'health', 'blog', 'compare', 'tests/categories', 'medications/classes'].map(t => `${t}/`)].map(p => PRETTY || !p.endsWith('/') ? p : p + 'index.html');
 const hrefs = new Set(); const titles = new Map();
 for (const p of pages) {
   await page.goto(base + p, { waitUntil: 'load' });
@@ -98,7 +98,7 @@ for (const [kind, id, u, needsRefs] of entityPages) {
   if (r.h1s !== 1 || !r.h1 || r.h1 === 'Not found') probs.push(`h1 "${r.h1}" ×${r.h1s}`);
   if (!r.canonical.endsWith(PRETTY ? `/${id}/` : `?id=${id}`)) probs.push(`canonical ${r.canonical}`);
   if (!r.robots || !r.desc || !r.og) probs.push('metadata incomplete');
-  if (r.ldErr || !r.ld.includes('BreadcrumbList') || !r.ld.includes('MedicalWebPage')) probs.push(`json-ld ${r.ldErr || r.ld.join(',')}`);
+  if (r.ldErr || !r.ld.includes('BreadcrumbList') || !r.ld.includes(kind === 'blog' ? 'WebPage' : 'MedicalWebPage')) probs.push(`json-ld ${r.ldErr || r.ld.join(',')}`);
   if (r.crumbs < 3) probs.push(`breadcrumbs ${r.crumbs}`);
   if (!r.rel) probs.push('no related links'); if (needsRefs && !r.refs) probs.push('no sources'); if (!r.editorial) probs.push('no editorial block');
   if (!r.brand) probs.push('brand assets missing'); if (r.emoji) probs.push('emoji used as an icon');
@@ -106,6 +106,12 @@ for (const [kind, id, u, needsRefs] of entityPages) {
   if (kind === 'anatomy' && !r.locator) probs.push('no "where in the body" figure');
   if (kind === 'anatomy' && r.facade && !r.primaryImg) probs.push('no primaryImageOfPage in the schema');
   if (kind === 'symptoms' && r.urgentNo999) probs.push('red-flag list does not name 999');
+  if (kind === 'blog') {   // an article or news brief: Article/NewsArticle schema, key points, a dated byline and (news) a source box
+    const b = await page.evaluate(() => ({ kp: !!document.querySelector('.key-points'), byline: !!document.querySelector('.byline time'), src: !!document.querySelector('.source-box'), news: /Health news/.test(document.querySelector('.byline')?.textContent || '') }));
+    if (!r.ld.some(t => t === 'Article' || t === 'NewsArticle')) probs.push(`no Article/NewsArticle in the schema (${r.ld.join(',')})`);
+    if (!b.kp) probs.push('no key points'); if (!b.byline) probs.push('no dated byline'); if (b.news && !b.src) probs.push('news brief without its source box');
+    if (b.news && !r.ld.includes('NewsArticle')) probs.push('news brief is not a NewsArticle');
+  }
   if (/^[a-z0-9]/.test(r.desc)) probs.push(`description starts mid-sentence: ${r.desc.slice(0, 40)}`);
   if (titles.has(r.title)) probs.push(`duplicate title of ${titles.get(r.title)}`); titles.set(r.title, `${kind}/${id}`);
   if (descs.has(r.desc)) probs.push(`duplicate description of ${descs.get(r.desc)}`); descs.set(r.desc, `${kind}/${id}`);
@@ -314,6 +320,27 @@ const robots = await robotsRes.text();
   if (/^Disallow:\s*\/search\//m.test(robots)) probs.push('blocks /search/ (it must stay crawlable to be read for its noindex)');
   if (probs.length) fail(`robots.txt: ${probs.join('; ')}`); else ok('robots.txt: 200 text/plain, absolute sitemap, nothing needed for rendering or tools blocked');
 }
+// 6a. the RSS feed of the blog: valid RSS 2.0, absolute https links, each one a sitemap URL, newest first
+if (PRETTY) {
+  const fr = await page.request.get(base + 'feed.xml');
+  if (fr.status() !== 200) fail(`feed.xml returned ${fr.status()}`);
+  else {
+    const xml = await fr.text(); const probs = [];
+    if (!/^<\?xml/.test(xml) || !/<rss[^>]+version="2\.0"/.test(xml)) probs.push('not RSS 2.0');
+    const items = [...xml.matchAll(/<item>([\s\S]*?)<\/item>/g)].map(m => m[1]);
+    let lastDate = Infinity;
+    for (const it of items) {
+      const link = /<link>([^<]+)<\/link>/.exec(it)?.[1] || '', guid = /<guid[^>]*>([^<]+)<\/guid>/.exec(it)?.[1] || '', date = Date.parse(/<pubDate>([^<]+)<\/pubDate>/.exec(it)?.[1] || ''), title = /<title>([^<]+)<\/title>/.exec(it)?.[1] || '';
+      if (!/^https:\/\/[^/]+\/blog\/[a-z0-9-]+\/$/.test(link)) probs.push(`item link ${link}`);
+      if (link !== guid) probs.push(`guid differs from link: ${guid}`);
+      if (!title || isNaN(date)) probs.push(`item without a title or a valid pubDate: ${link}`);
+      if (sitemapUrls.length && !sitemapUrls.includes(link)) probs.push(`feed item not in the sitemap: ${link}`);
+      if (date > lastDate) probs.push('feed is not newest first'); lastDate = date;
+    }
+    if (probs.length) fail(`feed.xml: ${[...new Set(probs)].slice(0, 5).join('; ')}`); else ok(`feed.xml: valid RSS 2.0 with ${items.length} item(s), newest first, every link a sitemap URL`);
+  }
+}
+
 // 6b. no orphans: every sitemap URL must be reachable by a crawlable <a href> from another indexable page
 // (specification section 12: "Every orphaned indexable page is a failure"). Only meaningful against prerendered
 // HTML, where the links are in the initial response rather than added by the page script after load.

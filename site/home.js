@@ -1,5 +1,5 @@
 // site/home.js — page script for index.html: hub cards, featured entities, live counts, home metadata and schema.
-import { renderHeader, renderFooter, TYPES, typeLink, entityLink, link, loadClinical, esc, fmt, SITE, PRERENDERED, iconSvg } from './site.js';
+import { renderHeader, renderFooter, TYPES, typeLink, entityLink, link, loadClinical, loadType, esc, fmt, SITE, PRERENDERED, iconSvg } from './site.js';
 import { applyMeta, webPageNode } from './seo.js';
 renderHeader('home'); renderFooter();
 if (!PRERENDERED) {
@@ -16,6 +16,15 @@ if (!PRERENDERED) {
     hub(link.page('medical-terms'), 'Learn', 'Medical terminology', `${c.terms || 156} terms: directions, planes, movements, regions, word parts, disease processes and clinical terms, each linked into the atlas.`, '', 'terms'),
     hub(link.page('study'), 'Study', 'Quizzes, flashcards &amp; viva', 'Identify or locate highlighted structures in 3D, flip through flashcards, and test terminology, conditions, tests and medications.', '', 'study'),
   ].join('');
+  // the newest articles and news briefs (hidden until the blog has indexable posts)
+  const blog = await loadType('blog').catch(() => null);
+  const posts = blog ? Object.values(blog.items).filter(p => p.seo?.index !== false).sort((a, b) => String(b.published).localeCompare(String(a.published)) || a.name.localeCompare(b.name)).slice(0, 3) : [];
+  if (posts.length) {
+    const day = (d) => { const t = new Date(String(d) + 'T12:00:00Z'); return isNaN(t) ? '' : t.toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC' }); };
+    document.getElementById('latest').innerHTML = posts.map(p => `<a class="card" href="${entityLink('blog', p.id)}"><div class="meta"><span class="badge${p.kind === 'news' ? ' live' : ''}">${p.kind === 'news' ? 'Health news' : 'Guide'}</span> <time datetime="${esc(p.published)}">${esc(day(p.published))}</time></div><h3>${esc(p.name)}</h3><p>${esc(p.summary || '')}</p></a>`).join('');
+    document.getElementById('latest-wrap').hidden = false;
+    const more = document.querySelector('#latest-wrap .actions a'); if (more) more.href = typeLink('blog');
+  }
   const featured = [['organ', 'heart', 'Heart'], ['organ', 'brain', 'Brain'], ['organ', 'liver', 'Liver'], ['organ', 'lungs', 'Lungs'], ['organ', 'kidneys', 'Kidneys'], ['organ', 'knee', 'Knee joint'], ['tests', 'complete-blood-count', 'Complete blood count'], ['tests', 'ecg', 'ECG'], ['imaging', 'mri', 'MRI'], ['symptoms', 'chest-pain', 'Chest pain'], ['conditions', 'hypertension', 'Hypertension'], ['medications', 'amlodipine', 'Amlodipine'], ['drug-classes', 'statins', 'Statins'], ['physiology', 'cardiac-cycle', 'Cardiac cycle'], ['first-aid', 'cpr', 'CPR']];
   document.getElementById('featured').innerHTML = featured.map(([t, id, n]) => `<a class="chip chip-lg" href="${t === 'organ' ? link.organPage(id) : entityLink(t, id)}">${esc(n)}</a>`).join('');
   const card = (t) => `<a class="card" href="${typeLink(t)}"><div class="icon">${iconSvg(TYPES[t].icon)}</div><h3>${esc(TYPES[t].name)} ${count(t) ? `<span class="badge">${count(t)}</span>` : ''}</h3><p>${esc(TYPES[t].blurb)}</p></a>`;

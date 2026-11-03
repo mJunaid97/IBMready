@@ -3,7 +3,7 @@
 
     python3 tools/check-references.py [--strict] [--timeout 20] [--workers 8]
 
-Fetches every distinct https:// reference URL in content/*.json (HEAD, then GET on 405/403), following
+Fetches every distinct https:// reference URL in content/*.json and content/blog/*.json (HEAD, then GET on 405/403), following
 redirects, and reports the ones that fail: 404/410 (dead), other 4xx/5xx, or network errors. Redirects to a
 different page are listed so the reference can be updated to the final address. Needs internet access:
 run it locally or in the "Reference links" workflow (.github/workflows/references.yml). With --strict a dead
@@ -16,7 +16,7 @@ UA = "Mozilla/5.0 (compatible; AnatomyNexusLinkCheck/1.0; +https://anatomynexus.
 
 def collect():
     refs = {}
-    for f in sorted(glob.glob(os.path.join(ROOT, "content", "*.json"))):
+    for f in sorted(glob.glob(os.path.join(ROOT, "content", "*.json")) + glob.glob(os.path.join(ROOT, "content", "blog", "*.json"))):      # the blog posts cite sources too
         s = open(f, encoding="utf-8").read()
         for m in re.finditer(r'"url":\s*"(https://[^"]+)"', s):
             refs.setdefault(m.group(1), set()).add(os.path.basename(f))

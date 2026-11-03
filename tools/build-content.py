@@ -266,7 +266,7 @@ def lead_of(e):
 
 def text_size(e):
     """Rough amount of visible prose (characters) in an entity, ignoring link and metadata fields."""
-    skip = set(LINK_FIELDS) | {"id", "type", "name", "aliases", "urlAliases", "anatomy", "links", "backlinks", "references", "category", "region", "seo", "updated", "members", "class",
+    skip = set(LINK_FIELDS) | {"id", "type", "name", "aliases", "urlAliases", "anatomy", "links", "backlinks", "references", "category", "region", "seo", "updated", "published", "source", "metaDescription", "members", "class",
                                "categories", "kind", "specimens", "methods", "modality", "terminology", "provenance", "routeIds", "dosageFormIds", "productType", "abbreviations", "canonicalName", "covers", "panelOf", "monitors", "concepts", "monitoredMedications", "review", "depth", "interactionIds"}
     def walk(v):
         if isinstance(v, str): return len(v)
@@ -1031,6 +1031,19 @@ def build_search_index(atlas, out_organs, out_regions, terms, know):
         entries.append(["product", p["id"], p["name"], "|".join(p["aliases"]), "Product: " + " + ".join(i["name"] for i in p["ingredients"])])
     return {"entries": entries}
 
+def blurb_of(e, limit=150):
+    """One plain sentence from the entity's own lead, for the "connected pages in detail" list on every detail page: the first
+    sentence when it fits, else its leading clause, else the words that fit. Derived text only; nothing is added."""
+    s = re.sub(r"\s+", " ", lead_of(e) or "").strip()
+    if not s: return ""
+    m = re.match(r"(?:[^.!?]|\.(?=\d))+[.!?]", s)
+    first = m.group(0) if m else s
+    if len(first) <= limit: return first
+    cut = max(first.rfind("; ", 0, limit), first.rfind(", ", 0, limit))
+    if cut >= 60: return first[:cut].rstrip(" ,;") + "."
+    cut = first.rfind(" ", 0, limit - 1)
+    return first[:cut].rstrip(" ,;.") + "…"
+
 def build_clinical(atlas, know):
     """Compact index for the explorer: names of every entity plus organ/system/structure -> entity ids."""
     names = {key: {eid: e["name"] for eid, e in T["items"].items()} for key, T in know["types"].items()}
@@ -1040,7 +1053,8 @@ def build_clinical(atlas, know):
     for mid, m in know["types"]["medications"]["items"].items():
         for n in [m["name"]] + list(m.get("aliases") or []) + list(m.get("ingredientVariants") or []) + [b for v in (m.get("brands") or {}).values() for b in v]:
             med_index.setdefault(TX.norm(n), mid)
-    return {"types": types, "names": names, "medicationIndex": med_index, "terms": know["terms"], **know["anatomy"]}
+    blurbs = {key: {eid: b for eid, e in T["items"].items() if (b := blurb_of(e))} for key, T in know["types"].items()}
+    return {"types": types, "names": names, "blurbs": blurbs, "medicationIndex": med_index, "terms": know["terms"], **know["anatomy"]}
 
 def write_site_meta(site, counts, atlas):
     """site/site-meta.js: the site identity the page shell needs synchronously (brand, URL, editorial fields)."""

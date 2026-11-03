@@ -8,7 +8,7 @@
  * Under a prerendered page (body[data-prerendered]) neither function redraws the content: the hub
  * only binds its filters and the detail page only binds the 3D facade and the header.
  */
-import { renderHeader, renderFooter, loadData, loadClinical, loadType, loadInteractions, loadVocabularies, vocabName, link, entityLink, typeLink, entityPath, organHash, TYPES, TYPE_ORDER, esc, param, pageId, paths, url, ROOT, PRERENDERED, SITE, SEVERITY, breadcrumbHtml, facadeHtml, dateText, canonical, iconSvg, emptyHtml } from './site.js';
+import { renderHeader, renderFooter, loadData, loadClinical, loadType, loadInteractions, loadVocabularies, vocabName, link, entityLink, typeLink, entityPath, organHash, TYPES, TYPE_ORDER, esc, param, pageId, paths, url, ROOT, PRERENDERED, SITE, SEVERITY, breadcrumbHtml, facadeHtml, dateText, canonical, iconSvg, emptyHtml, CONFIG } from './site.js';
 import { applyMeta, seoTitle, metaDescription, webPageNode } from './seo.js';
 import { locatorFigure } from './locator.js';
 import { TIERS, tierOf } from './interaction-engine.js';
@@ -23,6 +23,7 @@ const DISCLAIMER = {
   tests: 'Reference ranges differ between laboratories, methods, ages and sexes, and results are always read against the person, the question asked and other findings. This page cannot interpret an individual result.',
   biomarkers: 'A biomarker page explains what a substance is and why its level can change. It cannot determine the cause of your result: interpret a result using the range supplied by the laboratory that performed the test, with the clinician who ordered it.',
   targets: 'Describes what a receptor, enzyme, channel or pathway does and which medicines act on it. Educational, not prescribing advice.',
+  blog: 'This article summarises public guidance and announcements in plain English for education. It is not medical advice and it cannot say what is right for you: speak to a clinician about your own health, call NHS 111 if you are unsure what to do and 999 in an emergency.',
   procedures: 'A general description of how a procedure is usually done. Details vary between hospitals, surgeons and patients; the treating team explains the specifics and the consent.',
 };
 const TIER_LABEL = { 1: 'official health body or guideline', 2: 'textbook, journal or academic centre', 3: 'charity or secondary resource' };
@@ -83,6 +84,20 @@ export function relatedGroups(e, clinical) {
     if (ids.length) groups.push({ type: t, ids });
   }
   return groups;
+}
+/** "Connected pages in detail": for each group of linked pages, one line per page from that page's own lead (clinical.blurbs),
+ *  placed in the main column so a reader sees what each linked test, medicine or condition is without opening it. Derived
+ *  text only. The aside keeps the compact chips for every link. */
+const CONNECTED_TYPES = ['conditions', 'symptoms', 'tests', 'biomarkers', 'imaging', 'procedures', 'medications', 'drug-classes', 'blog'];
+export function connectedHtml(groups, clinical, name, { max = 10 } = {}) {
+  const parts = [];
+  for (const g of groups.filter(x => CONNECTED_TYPES.includes(x.type))) {
+    const rows = g.ids.filter(id => clinical.blurbs?.[g.type]?.[id]).slice(0, max);
+    if (!rows.length) continue;
+    const label = g.type === 'blog' ? 'Guides and news' : TYPES[g.type].name;
+    parts.push(`<h3>${esc(label)}</h3><ul class="rel-list">${rows.map(id => `<li><a href="${entityLink(g.type, id)}">${esc(nameOf(clinical, g.type, id))}</a> <span class="muted">${esc(clinical.blurbs[g.type][id])}</span></li>`).join('')}</ul>`);
+  }
+  return parts.length ? `<section class="connected"><h2>Connected pages in detail</h2><p class="muted">What each linked page on Anatomy Nexus covers, in a line, for ${esc(name)}.</p>${parts.join('')}</section>` : '';
 }
 export function relatedHtml(groups, clinical, title = 'Related topics') {
   if (!groups.length) return '';
@@ -436,6 +451,12 @@ const T = {
       <div class="pair">${e.dont?.length ? `<div><h2>Do not</h2>${list(e.dont)}</div>` : ''}${e.callFor?.length ? `<div><h2>Get medical help when</h2>${list(e.callFor)}</div>` : ''}</div>
       ${section('Why it works: the anatomy', para(e.why))}`;
   },
+  blog(e) {
+    const src = e.source; const prose = (t) => String(t || '').split(/\n\n+/).map(para).join('');
+    return `${e.keyPoints?.length ? `<section class="key-points"><h2>Key points</h2>${list(e.keyPoints)}</section>` : ''}
+      ${(e.body || []).map(b => `<h2>${esc(b.heading)}</h2>${prose(b.body)}`).join('')}
+      ${src ? `<aside class="source-box" aria-label="Source of this news brief"><b>Source</b> <a href="${esc(safeUrl(src.url))}" target="_blank" rel="noopener noreferrer">${esc(src.title)}</a> <span class="muted">· ${esc(src.publisher)} · ${esc(dateText(src.published))}</span><p class="small muted">This brief summarises the announcement in our own words. Read the original for the full detail.</p></aside>` : ''}`;
+  },
   health(e, { data }) {
     const sysName = (id) => data.atlas.systems.find(s => s.id === id)?.name || id;
     return `${paras(e.body)}
@@ -443,6 +464,19 @@ const T = {
       ${section('Guidance', list(e.guidance))}`;
   },
 };
+
+/** The in-depth article block any page may carry on top of its structured fields: key facts, sections, then the questions people ask. */
+function articleHtml(e) {
+  const a = e.article; if (!a) return '';
+  const prose = (t) => String(t || '').split(/\n\n+/).map(para).join('');
+  return `${a.keyFacts?.length ? section('Key facts', kv(a.keyFacts.map(k => [esc(k.label), esc(k.value)]), ['Fact', 'Detail'])) : ''}
+    ${(a.sections || []).map(x => `<h2>${esc(x.heading)}</h2>${prose(x.body)}`).join('')}
+    ${a.faqs?.length ? `<h2>Frequently asked questions</h2><div class="faq">${a.faqs.map(f => `<h3>${esc(f.q)}</h3>${prose(f.a)}`).join('')}</div>` : ''}`;
+}
+function bylineHtml(e) {
+  const kind = e.kind === 'news' ? 'Health news' : 'Guide';
+  return `<p class="byline"><span class="badge${e.kind === 'news' ? ' live' : ''}">${kind}</span> Published <time datetime="${esc(e.published)}">${esc(dateText(e.published))}</time>${e.updated && e.updated !== e.published ? ` · sources checked <time datetime="${esc(e.updated)}">${esc(dateText(e.updated))}</time>` : ''}</p>`;
+}
 
 // ------------------------------------------------------------- schema
 const names = (clinical, type, ids, max = 12) => (ids || []).slice(0, max).map(id => nameOf(clinical, type, id));
@@ -480,6 +514,10 @@ export function entityNode(type, e, ctx) {
         ...(e.warnings?.length ? { warning: e.warnings.filter(w => w.type === 'boxed' || w.type === 'special').map(w => w.text).join(' ') || e.warnings[0].text } : e.cautions?.length ? { warning: e.cautions.join(' ') } : {}) };
     }
     case 'drug-classes': return { '@type': 'DrugClass', ...base, ...(e.mechanism ? { mechanismOfAction: e.mechanism } : {}), ...(e.members?.length ? { drug: e.members.map(n => ({ '@type': 'Drug', name: n })) } : {}) };
+    case 'blog': return { '@type': e.kind === 'news' ? 'NewsArticle' : 'Article', ...base, headline: e.headline || e.name, datePublished: e.published, dateModified: e.updated, mainEntityOfPage: canonical(entityPath(type, e.id)),
+      author: { '@type': 'Organization', name: SITE.editorial?.author || SITE.name }, publisher: { '@id': canonical('') + '#organization' },
+      ...(e.source ? { isBasedOn: { '@type': 'CreativeWork', name: e.source.title, url: e.source.url, datePublished: e.source.published, publisher: { '@type': 'Organization', name: e.source.publisher } } } : {}),
+      ...(e.links?.conditions?.length ? { about: names(clinical, 'conditions', e.links.conditions).map(n => ({ '@type': 'MedicalCondition', name: n })) } : {}) };
     case 'first-aid': return { '@type': 'HowTo', ...base, ...(e.steps?.length ? { step: e.steps.map((s, i) => ({ '@type': 'HowToStep', position: i + 1, name: s.title, text: s.detail })) } : {}) };
     case 'physiology': return { '@type': 'MedicalEntity', ...base, ...(organs.length ? { relevantSpecialty: undefined, associatedAnatomy: organs[0] } : {}) };
     default: return { '@type': 'MedicalEntity', ...base };
@@ -518,11 +556,12 @@ export async function renderDetail(type) {
   const fullDesc = (d) => { const tail = TT.descriptor ? ` Covers ${TT.descriptor.toLowerCase()}, with cited sources.` : ''; return d && d.length < 90 && d.length + tail.length <= 160 ? d + tail : d; };
   const description = fullDesc(e.metaDescription || metaDescription(lead(e), 160, descFallback));
   applyMeta({ title, description, path, robots: e.seo?.index === false ? 'noindex,follow' : 'index,follow', image: hash ? link.preview(hash) : undefined, breadcrumbs: crumbs,
-    jsonld: [webPageNode({ path, title, description: metaDescription(description), entityId: canonical(path) + '#entity', updated: e.updated, reviewed: e.review?.reviewedAt && e.review?.reviewer?.name ? e.review.reviewedAt : undefined, references: e.references }), entityNode(type, e, ctx)] });
+    jsonld: [webPageNode({ path, title, description: metaDescription(description), ...(type === 'blog' ? { type: 'WebPage' } : {}), entityId: canonical(path) + '#entity', updated: e.updated, reviewed: e.review?.reviewedAt && e.review?.reviewer?.name ? e.review.reviewedAt : undefined, references: e.references }), entityNode(type, e, ctx)] });
   main.innerHTML = `
     ${breadcrumbHtml(crumbs)}
     <div class="eyebrow">${esc(TT.singular)}${cat ? ` · ${esc(cat.name)}` : ''}${e.emergency ? ' · <span class="badge emergency">emergency</span>' : ''}${e.depth === 'full' ? ' · <span class="badge live">full clinical detail</span>' : ''}</div>
-    <h1>${esc(e.name)}</h1>
+    <h1>${esc(type === 'blog' ? e.headline || e.name : e.name)}</h1>
+    ${type === 'blog' ? bylineHtml(e) : ''}
     ${e.aliases?.length ? `<p class="aliases">Also known as: ${esc(e.aliases.join(', '))}</p>` : ''}
     <p class="lead">${esc(lead(e))}</p>
     ${urgentHtml(type, e)}
@@ -530,6 +569,8 @@ export async function renderDetail(type) {
     <div class="two">
       <div>
         ${T[type](e, ctx)}
+        ${articleHtml(e)}
+        ${type === 'blog' ? '' : connectedHtml(groups, clinical, e.name)}
         ${DISCLAIMER[type] ? `<div class="callout"><b>Educational content.</b> ${esc(DISCLAIMER[type])}</div>` : ''}
       </div>
       <aside class="aside">
@@ -581,7 +622,7 @@ export async function renderIndex(type) {
   const TT = TYPES[type]; renderHeader(type); renderFooter();
   const main = document.getElementById('main');
   let items = null, typeData = null, data = null, clinical = null, vocab = null, organSystem = null;
-  const load = async () => { if (!typeData) { [typeData, data, clinical, vocab] = await Promise.all([loadType(type), loadData(), loadClinical(), loadVocabularies().catch(() => null)]); items = Object.values(typeData.items).sort((a, b) => a.name.localeCompare(b.name)); organSystem = new Map(data.content.organs.map(o => [o.id, o.system])); } };
+  const load = async () => { if (!typeData) { [typeData, data, clinical, vocab] = await Promise.all([loadType(type), loadData(), loadClinical(), loadVocabularies().catch(() => null)]); items = Object.values(typeData.items).sort(type === 'blog' ? (a, b) => String(b.published).localeCompare(String(a.published)) || a.name.localeCompare(b.name) : (a, b) => a.name.localeCompare(b.name)); organSystem = new Map(data.content.organs.map(o => [o.id, o.system])); } };
   const inCat = (e, id) => (e.categories || [e.category]).includes(id);
   const FACETS = [...(HUB_FACETS[type] || []), ['system', '@systems', 'Body system']];
   const systemsOf = (e) => [...new Set([...(e.anatomy?.systems || []), ...(e.anatomy?.organs || []).map(id => organSystem.get(id)).filter(Boolean)])];
@@ -598,13 +639,18 @@ export async function renderIndex(type) {
   const cardHtml = (e, cats) => {
     const catName = (id) => cats.find(c => c.id === id)?.name || '';
     const tags = [catName(e.category), ...(e.kind && KIND_LABEL[e.kind] ? [KIND_LABEL[e.kind]] : []), ...(e.anatomy?.organs || []).slice(0, 2).map(organName), ...(!e.anatomy?.organs?.length ? (e.anatomy?.systems || []).slice(0, 2).map(sysName) : [])].filter(Boolean);
+    if (type === 'blog') return `<a class="card" href="${entityLink(type, e.id)}"><div class="meta"><span class="badge${e.kind === 'news' ? ' live' : ''}">${e.kind === 'news' ? 'Health news' : 'Guide'}</span> <time datetime="${esc(e.published)}">${esc(dateText(e.published))}</time></div><h3>${esc(e.headline || e.name)}</h3><p>${esc(trim(lead(e), 200))}</p></a>`;
     return `<a class="card" href="${entityLink(type, e.id)}"><h3>${esc(e.name)}${e.emergency ? ' <span class="badge emergency">emergency</span>' : ''}${e.depth === 'full' ? ' <span class="badge live" title="Full clinical detail">full</span>' : ''}</h3><p>${esc(trim(lead(e), 160))}</p>${tags.length ? `<div class="tags">${tags.map(t => `<span>${esc(t)}</span>`).join('')}</div>` : ''}</a>`;
   };
+  const monthOf = (e) => { const d = new Date(String(e.published) + 'T12:00:00Z'); return isNaN(d) ? 'Earlier' : d.toLocaleDateString('en-GB', { month: 'long', year: 'numeric', timeZone: 'UTC' }); };
   const grouped = (list, cats) => {
+    if (type === 'blog') { const mb = new Map(); for (const e of list) { const M = monthOf(e); if (!mb.has(M)) mb.set(M, []); mb.get(M).push(e); } return [...mb].map(([M, es]) => `<h2 class="az-h">${esc(M)}</h2><div class="grid grid-3">${es.map(e => cardHtml(e, cats)).join('')}</div>`).join(''); }
     const by = new Map(); for (const e of list) { const L = letterOf(e.name); if (!by.has(L)) by.set(L, []); by.get(L).push(e); }
     return [...by].map(([L, es]) => `<h2 class="az-h" id="az-${L === '#' ? 'other' : L}">${L}</h2><div class="grid grid-3">${es.map(e => cardHtml(e, cats)).join('')}</div>`).join('');
   };
-  const plural = TT.name.toLowerCase();
+  const plural = type === 'blog' ? 'articles' : TT.name.toLowerCase();
+  const filterBy = type === 'blog' ? 'title or topic' : 'name, alias or abbreviation';
+  const hubDescription = () => type === 'blog' ? 'Plain-English guides and health news, summarised from the NHS, NICE, UKHSA and WHO, with the sources linked on every article.' : typeData.meta.about || TT.blurb;     // after load(): the data decides
   const countText = (n, total, filtered) => !filtered ? `Showing all ${total} ${plural}` : n === 0 ? `No ${plural} match the current filters` : `Showing ${n} of ${total} ${plural}`;
   if (!PRERENDERED) {
     await load();
@@ -614,21 +660,21 @@ export async function renderIndex(type) {
     const priority = (typeData.meta.priority || []).map(id => typeData.items[id]).filter(Boolean);
     const systemsHere = data.atlas.systems.filter(s => items.some(e => systemsOf(e).includes(s.id)));
     const crumbs = [{ name: 'Home', href: link.home() }, { name: TT.name }];
-    const path = paths.dir(TT.dir); const title = `${TT.name}: ${type === 'first-aid' ? 'Step-by-Step Guides' : type === 'health' ? 'Lifestyle & the Body' : 'A–Z Guide'} | ${SITE.name}`;
-    applyMeta({ title, description: typeData.meta.about || TT.blurb, path, breadcrumbs: crumbs, jsonld: [webPageNode({ path, title, description: metaDescription(typeData.meta.about || TT.blurb), type: 'CollectionPage', updated: typeData.meta.updated }),
+    const path = paths.dir(TT.dir); const title = type === 'blog' ? `Health Blog: Guides & News | ${SITE.name}` : `${TT.name}: ${type === 'first-aid' ? 'Step-by-Step Guides' : type === 'health' ? 'Lifestyle & the Body' : 'A–Z Guide'} | ${SITE.name}`;
+    applyMeta({ title, description: hubDescription(), path, breadcrumbs: crumbs, jsonld: [webPageNode({ path, title, description: metaDescription(hubDescription()), type: 'CollectionPage', updated: typeData.meta.updated }),
       { '@type': 'ItemList', name: `${TT.name} on ${SITE.name}`, numberOfItems: items.length, itemListElement: items.map((e, i) => ({ '@type': 'ListItem', position: i + 1, name: e.name, url: canonical(entityPath(type, e.id)) })) }] });
     const tools = type === 'medications' || type === 'drug-classes' ? `<p class="actions"><a class="btn btn-primary" href="${link.checker()}">Drug Interaction Checker</a><a class="btn" href="${link.medicationClasses()}">Classes by therapeutic area</a><a class="btn" href="${link.compare()}">Comparisons</a><a class="btn" href="${link.tools()}">All clinical tools</a></p>` : type === 'tests' || type === 'biomarkers' ? `<p class="actions"><a class="btn btn-primary" href="${link.testCategories()}">Browse the ${SITE.counts?.testCategories || 36} test categories</a><a class="btn" href="${link.compare()}">Compare tests and markers</a></p>` : '';
     main.innerHTML = `
       ${breadcrumbHtml(crumbs)}
-      <div class="section-hero"><div class="eyebrow">${iconSvg(TT.icon)} Section · ${items.length} ${esc(plural)}</div><h1>${esc(TT.name)}</h1><p class="lead">${esc(typeData.meta.about || TT.blurb)}</p>${tools}</div>
+      <div class="section-hero"><div class="eyebrow">${iconSvg(TT.icon)} Section · ${items.length} ${esc(plural)}</div><h1>${esc(type === 'blog' ? 'Health blog and news' : TT.name)}</h1><p class="lead">${esc(typeData.meta.about || TT.blurb)}</p>${tools}${type === 'blog' && CONFIG.siteUrl ? `<p class="actions"><a class="btn" href="${url('feed.xml')}">${iconSvg('blog')}RSS feed</a></p>` : ''}</div>
       ${priority.length ? `<section class="start-here"><h2>Start here</h2><div class="chips">${priority.map(e => `<a class="chip chip-lg" href="${entityLink(type, e.id)}">${esc(e.name)}</a>`).join('')}</div></section>` : ''}
       <section class="hub-filters" aria-label="Filter ${esc(plural)}">
-        <div class="search-row"><label class="sr-only" for="q">Filter ${esc(plural)} by name, alias or abbreviation</label><input id="q" type="search" placeholder="Filter ${esc(plural)} by name, alias or abbreviation…" autocomplete="off"></div>
+        <div class="search-row"><label class="sr-only" for="q">Filter ${esc(plural)} by ${filterBy}</label><input id="q" type="search" placeholder="Filter ${esc(plural)} by ${filterBy}…" autocomplete="off"></div>
         <div class="filters" id="filters" role="group" aria-label="Browse by category"><button class="chip is-active" data-cat="all" type="button" aria-pressed="true">All ${items.length}</button>${cats.map(c => `<button class="chip" data-cat="${esc(c.id)}" type="button" aria-pressed="false"${type === 'tests' ? ` title="Category page: ${esc(c.name)}"` : ''}>${esc(c.name)} ${c.n}</button>`).join('')}</div>
         ${facetHtml ? `<div class="facets" id="facets" role="group" aria-label="Filter by facet">${facetHtml}</div>` : ''}
         <div class="hub-count"><p id="hub-count" role="status" aria-live="polite">${countText(items.length, items.length, false)}</p><button type="button" class="btn btn-sm btn-text" id="clear-filters" hidden>Clear filters</button></div>
       </section>
-      <nav class="az" aria-label="A to Z">${letters.map(L => `<a href="#az-${L === '#' ? 'other' : L}">${L}</a>`).join('')}</nav>
+      ${type === 'blog' ? '' : `<nav class="az" aria-label="A to Z">${letters.map(L => `<a href="#az-${L === '#' ? 'other' : L}">${L}</a>`).join('')}</nav>`}
       <div id="cards">${grouped(items, cats)}</div>
       ${systemsHere.length ? `<h2>Browse by body system</h2><div class="chips">${systemsHere.map(s => `<a class="chip" href="${link.systemPage(s.id)}" style="border-color:${s.color}">${esc(s.name)}</a>`).join('')}</div>` : ''}
       <h2>Other sections</h2>

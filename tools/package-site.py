@@ -9,7 +9,7 @@ What it does
   * writes site/config.js with the public URL and clean-URL mode, and stamps site/version.js
   * writes the sitemap index (sitemap.xml -> the five child sitemaps core, anatomy, clinical, medications
     and learning, canonical indexable URLs only, lastmod from the content dates, no changefreq/priority)
-    and robots.txt with the absolute sitemap link
+    and robots.txt with the absolute sitemap link; feed.xml (RSS 2.0) lists the newest blog posts
   * fills the generated URL rules into .htaccess: query URLs -> clean URLs, index.html -> directory,
     retired paths, the 301 alias table from data/content/aliases.json, trailing slashes
   * --prerender: renders every page to static HTML with tools/prerender.mjs (needs Playwright, see
@@ -21,7 +21,8 @@ What it does
 
 The output is plain files: upload dist/ (or extract the zip) into the web root of any static host.
 """
-import argparse, datetime, json, os, re, shutil, subprocess, sys, zipfile
+import argparse, datetime, email.utils, json, os, re, shutil, subprocess, sys, zipfile
+from xml.sax.saxutils import escape as xesc
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 EXCLUDE_DIRS = ("tools/", ".github/", "content/", "brand/")     # brand/: the logo kit (print files, sources); the site serves site/logo/
@@ -30,7 +31,7 @@ EXCLUDE_DIRS = ("tools/", ".github/", "content/", "brand/")     # brand/: the lo
 KEEP_IN_CONTENT = ("content/roadmap.json", "tools/index.html", "tools/drug-interaction-checker/index.html")
 EXCLUDE_FILES = (".gitignore", "vercel.json", "_headers", "tools/qa/shots")
 SECTIONS = {"physiology": "topic.html", "symptoms": "symptom.html", "conditions": "condition.html", "tests": "test.html", "biomarkers": "biomarker.html", "imaging": "study.html",
-            "procedures": "procedure.html", "medications": "medication.html", "drug-classes": "class.html", "targets": "target.html", "first-aid": "topic.html", "health": "topic.html"}
+            "procedures": "procedure.html", "medications": "medication.html", "drug-classes": "class.html", "targets": "target.html", "first-aid": "topic.html", "health": "topic.html", "blog": "post.html"}
 ANATOMY = {"anatomy": "organ.html", "systems": "system.html"}
 EXTRA = {"compare": "compare.html"}                # non-entity sections with their own detail pages (data/content/comparisons.json)
 # The five child sitemaps of the specification (section 6). Every indexable URL belongs to exactly one.
@@ -40,7 +41,7 @@ GROUPS = ("core", "anatomy", "clinical", "medications", "learning")
 SECTION_GROUP = {"anatomy": "anatomy", "systems": "anatomy",
                  "physiology": "clinical", "symptoms": "clinical", "conditions": "clinical", "tests": "clinical",
                  "biomarkers": "clinical", "imaging": "clinical", "procedures": "clinical", "first-aid": "clinical",
-                 "health": "clinical", "compare": "clinical",
+                 "health": "clinical", "compare": "clinical", "blog": "learning",
                  "medications": "medications", "drug-classes": "medications", "targets": "medications"}
 # static pages: path -> sitemap group. No changefreq/priority: the specification (section 8) forbids both.
 # The tools hub and the Drug Interaction Checker are "high-value tools" in the core sitemap (section 6.1); the
@@ -186,7 +187,7 @@ def main():
     for key, page in SECTIONS.items():
         T = types[key]; items = T["items"]
         hub_date = max([e.get("updated") or "" for e in items.values()] + [T["meta"].get("updated") or ""]) or site_date
-        urls.append({"path": f"{key}/" if a.pretty else f"{key}/index.html", "lastmod": hub_date, "index": True, "group": SECTION_GROUP[key]})
+        urls.append({"path": f"{key}/" if a.pretty else f"{key}/index.html", "lastmod": hub_date, "index": bool(items) or key != "blog", "group": SECTION_GROUP[key]})   # an empty blog hub is a thin page
         for i, e in items.items():
             urls.append({"path": detail(key, page, i), "lastmod": e.get("updated") or hub_date, "index": bool(e.get("seo", {}).get("index", False)), "group": SECTION_GROUP[key], "template": f"{key}/{page}?id={i}"})
     comparisons = json.load(open(os.path.join(ROOT, "data", "content", "comparisons.json"), encoding="utf-8"))
@@ -235,6 +236,24 @@ def main():
         open(os.path.join(out, "sitemap.xml"), "w", encoding="utf-8").write("\n".join(idx) + "\n")
     else:
         print("note: no --site-url/--pretty, so no sitemap was written (a sitemap needs absolute clean URLs)")
+    # ---- feed.xml: RSS 2.0 of the newest indexable blog posts (guides and news briefs), production builds only (it needs absolute URLs)
+    if sitemapped:
+        posts = [(e, u) for (i, e), u in ((pe, next((x for x in urls if x["path"] == detail("blog", "post.html", pe[0])), None)) for pe in types["blog"]["items"].items()) if u and sitemap_eligible(u)]
+        posts.sort(key=lambda t: (t[0].get("published") or t[0].get("updated") or "", t[0].get("name") or ""), reverse=True)
+        def rfc822(d): y, m, dd = (int(x) for x in d.split("-")); return email.utils.format_datetime(datetime.datetime(y, m, dd, 9, 0, tzinfo=datetime.timezone.utc))
+        feed_date = max([e.get("published") or e.get("updated") or site_date for e, _ in posts] + [site_date]) if posts else site_date
+        rss = ['<?xml version="1.0" encoding="UTF-8"?>', '<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">', "<channel>",
+               "  <title>Anatomy Nexus health blog</title>", f"  <link>{xesc(origin + 'blog/')}</link>",
+               "  <description>Guides to common conditions, medicines and tests, and plain-English summaries of the latest health announcements, each with its sources.</description>",
+               "  <language>en-GB</language>", f"  <lastBuildDate>{rfc822(feed_date)}</lastBuildDate>",
+               f'  <atom:link href="{xesc(origin + "feed.xml")}" rel="self" type="application/rss+xml"/>']
+        for e, u in posts[:50]:
+            link = origin + u["path"]; pub = e.get("published") or e.get("updated") or site_date
+            rss += ["  <item>", f"    <title>{xesc(e.get('headline') or e.get('name') or '')}</title>", f"    <link>{xesc(link)}</link>", f'    <guid isPermaLink="true">{xesc(link)}</guid>',
+                    f"    <pubDate>{rfc822(pub)}</pubDate>", f"    <category>{'Health news' if e.get('kind') == 'news' else 'Guide'}</category>",
+                    f"    <description>{xesc(e.get('summary') or '')}</description>", "  </item>"]
+        rss += ["</channel>", "</rss>"]
+        open(os.path.join(out, "feed.xml"), "w", encoding="utf-8").write("\n".join(rss) + "\n")
     # robots.txt (specification section 5): allow everything, keep the API surface out, name the sitemap
     # absolutely. Pages that must not be indexed carry <meta name="robots" content="noindex,follow"> and stay
     # crawlable, because a blocked page can never be read for its noindex.

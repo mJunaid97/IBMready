@@ -1,0 +1,551 @@
+{
+ "id": "fexofenadine",
+ "searchesUsed": 8,
+ "counts": {
+  "supported": 58,
+  "textbook": 2,
+  "unsupported": 4,
+  "wrong": 0,
+  "unsafe": 0,
+  "unchecked": 0
+ },
+ "claims": [
+  {
+   "id": "c01",
+   "sentence": "Fexofenadine is a non-drowsy antihistamine that relieves allergy symptoms such as those of hay fever and hives by blocking the effects of histamine.",
+   "classification": "supported",
+   "evidence": "NHS common questions.",
+   "url": "https://www.nhs.uk/medicines/fexofenadine/common-questions-about-fexofenadine/",
+   "action": "kept"
+  },
+  {
+   "id": "c02",
+   "sentence": "Some people still feel sleepy or dizzy, and the NHS advises against driving, cycling or using tools or machinery if that happens.",
+   "classification": "supported",
+   "evidence": "NHS side effects/common questions; leaflets on driving.",
+   "url": "https://www.nhs.uk/medicines/fexofenadine/side-effects-of-fexofenadine/",
+   "action": "kept"
+  },
+  {
+   "id": "c03",
+   "sentence": "Swelling of the face or throat, difficulty breathing or fainting can be signs of a serious allergic reaction and need urgent medical help, through 999 or A&E.",
+   "classification": "supported",
+   "evidence": "Leaflets: swelling of face/lips/tongue/throat and difficulty breathing are signs of a serious allergic reaction; tell a doctor immediately. Fainting and 999/A&E not seen in my retrieval.",
+   "url": "https://www.nhs.uk/medicines/fexofenadine/side-effects-of-fexofenadine/",
+   "action": "edited",
+   "newSentence": "Swelling of the face, lips, tongue or throat with difficulty breathing can be a sign of a serious allergic reaction, and the leaflets say to tell a doctor immediately."
+  },
+  {
+   "id": "c04",
+   "sentence": "Allergy symptoms such as a runny nose, sneezing, and red, itchy or watery eyes, including hay fever",
+   "classification": "supported",
+   "evidence": "NHS About / MedlinePlus: uses, mechanism, onset 1-2 hours.",
+   "url": "https://www.nhs.uk/medicines/fexofenadine/about-fexofenadine/",
+   "action": "kept"
+  },
+  {
+   "id": "c05",
+   "sentence": "Hives, with their itching and redness",
+   "classification": "supported",
+   "evidence": "NHS About / MedlinePlus: uses, mechanism, onset 1-2 hours.",
+   "url": "https://www.nhs.uk/medicines/fexofenadine/about-fexofenadine/",
+   "action": "kept"
+  },
+  {
+   "id": "c06",
+   "sentence": "Long-term hives with no identified cause (chronic idiopathic urticaria), as stated in the leaflet for the branded product Telfast",
+   "classification": "unsupported",
+   "evidence": "Chronic idiopathic urticaria / Telfast indication not returned in my searches; NHS says 180mg tablets for hives available from pharmacies.",
+   "url": "https://www.nhs.uk/medicines/fexofenadine/about-fexofenadine/",
+   "action": "removed"
+  },
+  {
+   "id": "c07",
+   "sentence": "Conjunctivitis, eczema, insect bite and sting reactions and some food allergies, which the NHS lists among its uses",
+   "classification": "supported",
+   "evidence": "NHS About / MedlinePlus: uses, mechanism, onset 1-2 hours.",
+   "url": "https://www.nhs.uk/medicines/fexofenadine/about-fexofenadine/",
+   "action": "kept"
+  },
+  {
+   "id": "c08",
+   "sentence": "Fexofenadine blocks the effects of histamine, a substance in the body that drives allergy symptoms.",
+   "classification": "supported",
+   "evidence": "NHS side effects/common questions; leaflets on driving.",
+   "url": "https://www.nhs.uk/medicines/fexofenadine/side-effects-of-fexofenadine/",
+   "action": "kept"
+  },
+  {
+   "id": "c09",
+   "sentence": "A 2024 review describes it as a non-sedating, second-generation H1 antihistamine.",
+   "classification": "supported",
+   "evidence": "25-year fexofenadine clinical review (PMC11382105, 2024) calls it a non-sedating second-generation H1 antihistamine.",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11382105/",
+   "action": "edited",
+   "newSentence": "A 2024 clinical review describes it as a non-sedating, second-generation H1 antihistamine."
+  },
+  {
+   "id": "c10",
+   "sentence": "The NHS says it seems less likely to cause sleepiness than other non-drowsy antihistamines.",
+   "classification": "supported",
+   "evidence": "NHS common questions.",
+   "url": "https://www.nhs.uk/medicines/fexofenadine/common-questions-about-fexofenadine/",
+   "action": "kept"
+  },
+  {
+   "id": "c11",
+   "sentence": "The NHS says relief usually starts within 1 to 2 hours.",
+   "classification": "supported",
+   "evidence": "NHS About / MedlinePlus: uses, mechanism, onset 1-2 hours.",
+   "url": "https://www.nhs.uk/medicines/fexofenadine/about-fexofenadine/",
+   "action": "kept"
+  },
+  {
+   "id": "c12",
+   "sentence": "Headache, feeling sleepy, feeling sick and feeling dizzy are the common side effects the NHS lists.",
+   "classification": "supported",
+   "evidence": "NHS side effects/common questions; leaflets on driving.",
+   "url": "https://www.nhs.uk/medicines/fexofenadine/side-effects-of-fexofenadine/",
+   "action": "kept"
+  },
+  {
+   "id": "c13",
+   "sentence": "Although fexofenadine is classed as non-drowsy, some people feel quite sleepy, and the NHS advises not driving, cycling or using tools or machinery while sleepy or dizzy.",
+   "classification": "supported",
+   "evidence": "NHS side effects/common questions; leaflets on driving.",
+   "url": "https://www.nhs.uk/medicines/fexofenadine/side-effects-of-fexofenadine/",
+   "action": "kept"
+  },
+  {
+   "id": "c14",
+   "sentence": "Swelling of the face or throat, difficulty breathing or fainting can signal a serious allergic reaction and need urgent medical help through 999 or A&E.",
+   "classification": "textbook",
+   "evidence": "Leaflets: swelling and breathing difficulty = serious allergic reaction, tell doctor immediately; 999 route is standard signposting, not seen verbatim; fainting not seen.",
+   "url": "https://www.nhs.uk/medicines/fexofenadine/side-effects-of-fexofenadine/",
+   "action": "edited",
+   "newSentence": "Swelling of the face, lips, tongue or throat with difficulty breathing can signal a serious allergic reaction; leaflets say to stop the medicine and tell a doctor immediately, and in an emergency the route is 999."
+  },
+  {
+   "id": "c15",
+   "sentence": "Grapefruit, orange and apple juice can reduce how well fexofenadine works, and MedlinePlus advises taking it with water rather than fruit juice.",
+   "classification": "supported",
+   "evidence": "MedlinePlus/NHS: juice and water advice.",
+   "url": "https://medlineplus.gov/druginfo/meds/a697035.html",
+   "action": "kept"
+  },
+  {
+   "id": "c16",
+   "sentence": "Antacids containing aluminium or magnesium reduce how much fexofenadine is absorbed, and leaflets advise leaving a gap between the two.",
+   "classification": "supported",
+   "evidence": "Leaflets: aluminium/magnesium indigestion remedies lower absorption; leave a gap (length omitted).",
+   "url": "https://www.medicines.org.uk/emc/product/14744/pil",
+   "action": "edited",
+   "newSentence": "Leaflets say that indigestion remedies containing aluminium and magnesium can lower how much fexofenadine is absorbed, and advise leaving a gap between the two."
+  },
+  {
+   "id": "c17",
+   "sentence": "A leaflet states that apalutamide, a prostate cancer medicine, may decrease the effect of fexofenadine.",
+   "classification": "supported",
+   "evidence": "Cipla emc leaflet: apalutamide may decrease effect of fexofenadine (leaflet number not pinned).",
+   "url": "https://www.medicines.org.uk/emc/product/14744/pil",
+   "action": "kept"
+  },
+  {
+   "id": "c18",
+   "sentence": "The NHS recommends avoiding alcohol.",
+   "classification": "supported",
+   "evidence": "NHS: best not to drink alcohol, can make you feel sleepy.",
+   "url": "https://www.nhs.uk/medicines/fexofenadine/common-questions-about-fexofenadine/",
+   "action": "edited",
+   "newSentence": "The NHS says it is best not to drink alcohol while taking fexofenadine, as it can make you feel sleepy."
+  },
+  {
+   "id": "c19",
+   "sentence": "Leaflets advise asking a doctor or pharmacist first about people with liver or kidney problems, heart disease, or older age, and one leaflet notes that antihistamines such as fexofenadine may make the heart beat faster.",
+   "classification": "supported",
+   "evidence": "NHS who-can lists liver/kidney/heart problems; leaflets say talk to doctor or pharmacist (liver, kidney, elderly, heart disease); one leaflet: fast or irregular heartbeat.",
+   "url": "https://www.nhs.uk/medicines/fexofenadine/who-can-and-cannot-take-fexofenadine/",
+   "action": "edited",
+   "newSentence": "The NHS lists liver or kidney problems and heart problems among the reasons fexofenadine may not be suitable, and leaflets advise talking to a doctor or pharmacist first about liver or kidney problems, heart disease or older age. One leaflet says antihistamines such as fexofenadine may cause a fast or irregular heartbeat."
+  },
+  {
+   "id": "c20",
+   "sentence": "One leaflet advises against taking fexofenadine in pregnancy unless necessary and says it is not recommended while breastfeeding, while other leaflets tell pregnant or breastfeeding women to ask a doctor or pharmacist first.",
+   "classification": "supported",
+   "evidence": "NHS who-can lists pregnancy, trying for a baby, breastfeeding; UK leaflets: against in pregnancy unless necessary, not recommended while breastfeeding.",
+   "url": "https://www.nhs.uk/medicines/fexofenadine/pregnancy-breastfeeding-and-fertility-while-taking-fexofenadine/",
+   "action": "edited",
+   "newSentence": "The NHS lists pregnancy, trying to get pregnant and breastfeeding among the situations where fexofenadine may not be suitable, and UK leaflets advise against use in pregnancy unless necessary and say it is not recommended while breastfeeding."
+  },
+  {
+   "id": "c21",
+   "sentence": "A known allergy to fexofenadine or any of the other ingredients is a reason not to take it.",
+   "classification": "supported",
+   "evidence": "NHS who-can: ever had allergic reaction to fexofenadine or another medicine.",
+   "url": "https://www.nhs.uk/medicines/fexofenadine/who-can-and-cannot-take-fexofenadine/",
+   "action": "edited",
+   "newSentence": "The NHS lists having ever had an allergic reaction to fexofenadine or any other medicine among the reasons it may not be suitable."
+  },
+  {
+   "id": "c22",
+   "sentence": "The NHS says fexofenadine does not affect any type of contraception, including the combined pill and emergency contraception.",
+   "classification": "supported",
+   "evidence": "NHS: no effect on any contraception.",
+   "url": "https://www.nhs.uk/medicines/fexofenadine/common-questions-about-fexofenadine/",
+   "action": "kept"
+  },
+  {
+   "id": "c23",
+   "sentence": "No routine tests or monitoring are described in the patient sources reviewed, and the NHS says it is best taken only for as long as it is needed.",
+   "classification": "unsupported",
+   "evidence": "Absence-of-monitoring is not a source statement; replaced by NHS long-term-use statement.",
+   "url": "https://www.nhs.uk/medicines/fexofenadine/common-questions-about-fexofenadine/",
+   "action": "edited",
+   "newSentence": "The NHS says fexofenadine is unlikely to cause harm when taken for a long time, though it is best taken only for as long as it is needed."
+  },
+  {
+   "id": "c24",
+   "sentence": "Film-coated tablets; tablets for younger children are available on prescription",
+   "classification": "supported",
+   "evidence": "NHS: under-12 tablets prescription-only; film-coated per emc titles.",
+   "url": "https://www.nhs.uk/medicines/fexofenadine/about-fexofenadine/",
+   "action": "edited",
+   "newSentence": "Film-coated tablets; tablets for children under 12 are available on prescription"
+  },
+  {
+   "id": "c25",
+   "sentence": "Fexofenadine is an antihistamine medicine that relieves the symptoms of allergies.",
+   "classification": "supported",
+   "evidence": "NHS About / MedlinePlus: uses, mechanism, onset 1-2 hours.",
+   "url": "https://www.nhs.uk/medicines/fexofenadine/about-fexofenadine/",
+   "action": "kept"
+  },
+  {
+   "id": "c26",
+   "sentence": "The NHS lists hay fever, conjunctivitis, eczema, hives, insect bite and sting reactions and some food allergies among the problems it is used for.",
+   "classification": "supported",
+   "evidence": "NHS About / MedlinePlus: uses, mechanism, onset 1-2 hours.",
+   "url": "https://www.nhs.uk/medicines/fexofenadine/about-fexofenadine/",
+   "action": "kept"
+  },
+  {
+   "id": "c27",
+   "sentence": "MedlinePlus describes it as treating allergy symptoms such as a runny nose, sneezing, and red, itchy or watery eyes, as well as itching and redness caused by hives.",
+   "classification": "supported",
+   "evidence": "MedlinePlus/NHS: juice and water advice.",
+   "url": "https://medlineplus.gov/druginfo/meds/a697035.html",
+   "action": "kept"
+  },
+  {
+   "id": "c28",
+   "sentence": "A leaflet for the branded product Telfast says it is used in adults and adolescents aged 12 and over to relieve itching, swelling and rashes from long-term allergic skin reactions known as chronic idiopathic urticaria.",
+   "classification": "unsupported",
+   "evidence": "Telfast CIU indication not returned in my searches.",
+   "url": "https://www.medicines.org.uk/emc/product/14744/pil",
+   "action": "removed"
+  },
+  {
+   "id": "c29",
+   "sentence": "MedlinePlus has a separate page for products that combine fexofenadine with pseudoephedrine, which are different products from fexofenadine on its own.",
+   "classification": "supported",
+   "evidence": "MedlinePlus/NHS: juice and water advice.",
+   "url": "https://medlineplus.gov/druginfo/meds/a697035.html",
+   "action": "kept"
+  },
+  {
+   "id": "c30",
+   "sentence": "Fexofenadine blocks histamine, a substance in the body that drives allergy symptoms.",
+   "classification": "supported",
+   "evidence": "NHS side effects/common questions; leaflets on driving.",
+   "url": "https://www.nhs.uk/medicines/fexofenadine/side-effects-of-fexofenadine/",
+   "action": "kept"
+  },
+  {
+   "id": "c31",
+   "sentence": "The NHS says that by blocking the effects of histamine it reduces the symptoms, and that people should start to feel better within 1 to 2 hours.",
+   "classification": "supported",
+   "evidence": "NHS About / MedlinePlus: uses, mechanism, onset 1-2 hours.",
+   "url": "https://www.nhs.uk/medicines/fexofenadine/about-fexofenadine/",
+   "action": "kept"
+  },
+  {
+   "id": "c32",
+   "sentence": "The NHS classes fexofenadine as non-drowsy and says it seems less likely to cause sleepiness than other non-drowsy antihistamines.",
+   "classification": "supported",
+   "evidence": "NHS common questions.",
+   "url": "https://www.nhs.uk/medicines/fexofenadine/common-questions-about-fexofenadine/",
+   "action": "kept"
+  },
+  {
+   "id": "c33",
+   "sentence": "It also says fexofenadine is unlikely to cause harm when used for a long time, though it is best taken only for as long as it is needed.",
+   "classification": "supported",
+   "evidence": "NHS common questions.",
+   "url": "https://www.nhs.uk/medicines/fexofenadine/common-questions-about-fexofenadine/",
+   "action": "kept"
+  },
+  {
+   "id": "c34",
+   "sentence": "The NHS lists headaches, feeling sleepy, feeling sick and feeling dizzy as the common side effects.",
+   "classification": "supported",
+   "evidence": "NHS side effects/common questions; leaflets on driving.",
+   "url": "https://www.nhs.uk/medicines/fexofenadine/side-effects-of-fexofenadine/",
+   "action": "kept"
+  },
+  {
+   "id": "c35",
+   "sentence": "Fexofenadine is classed as a non-drowsy antihistamine, but some people still feel quite sleepy.",
+   "classification": "supported",
+   "evidence": "NHS side effects/common questions; leaflets on driving.",
+   "url": "https://www.nhs.uk/medicines/fexofenadine/side-effects-of-fexofenadine/",
+   "action": "kept"
+  },
+  {
+   "id": "c36",
+   "sentence": "The NHS advises not driving, cycling or using tools or machinery while feeling sleepy or dizzy.",
+   "classification": "supported",
+   "evidence": "NHS side effects/common questions; leaflets on driving.",
+   "url": "https://www.nhs.uk/medicines/fexofenadine/side-effects-of-fexofenadine/",
+   "action": "kept"
+  },
+  {
+   "id": "c37",
+   "sentence": "Leaflets say fexofenadine is unlikely to affect the ability to drive or use machinery, but advise checking first that the tablets do not cause sleepiness or dizziness.",
+   "classification": "supported",
+   "evidence": "NHS side effects/common questions; leaflets on driving.",
+   "url": "https://www.nhs.uk/medicines/fexofenadine/side-effects-of-fexofenadine/",
+   "action": "kept"
+  },
+  {
+   "id": "c38",
+   "sentence": "Swelling of the face or throat, difficulty breathing or fainting can be signs of a serious allergic reaction and need urgent medical help.",
+   "classification": "supported",
+   "evidence": "Leaflets as item 2; fainting not retrieved.",
+   "url": "https://www.nhs.uk/medicines/fexofenadine/side-effects-of-fexofenadine/",
+   "action": "edited",
+   "newSentence": "Swelling of the face, lips, tongue or throat with difficulty breathing can be a sign of a serious allergic reaction."
+  },
+  {
+   "id": "c39",
+   "sentence": "In an emergency the route is 999 or A&E.",
+   "classification": "textbook",
+   "evidence": "Standard emergency signposting, not seen verbatim in retrieved text.",
+   "url": "https://www.nhs.uk/medicines/fexofenadine/side-effects-of-fexofenadine/",
+   "action": "edited",
+   "newSentence": "In an emergency, call 999."
+  },
+  {
+   "id": "c40",
+   "sentence": "The NHS says grapefruit, orange and apple juice can reduce how well fexofenadine works.",
+   "classification": "supported",
+   "evidence": "MedlinePlus/NHS: juice and water advice.",
+   "url": "https://medlineplus.gov/druginfo/meds/a697035.html",
+   "action": "kept"
+  },
+  {
+   "id": "c41",
+   "sentence": "MedlinePlus likewise advises taking it with water rather than with fruit juices such as orange, grapefruit or apple juice.",
+   "classification": "supported",
+   "evidence": "MedlinePlus/NHS: juice and water advice.",
+   "url": "https://medlineplus.gov/druginfo/meds/a697035.html",
+   "action": "kept"
+  },
+  {
+   "id": "c42",
+   "sentence": "The NHS also recommends avoiding alcohol.",
+   "classification": "supported",
+   "evidence": "NHS: best not to drink alcohol while taking fexofenadine.",
+   "url": "https://www.nhs.uk/medicines/fexofenadine/common-questions-about-fexofenadine/",
+   "action": "edited",
+   "newSentence": "The NHS also says it is best not to drink alcohol while taking fexofenadine, as it can make you feel sleepy."
+  },
+  {
+   "id": "c43",
+   "sentence": "Antacids containing aluminium or magnesium reduce how much fexofenadine is absorbed, so leaflets advise leaving a gap between the two.",
+   "classification": "supported",
+   "evidence": "Leaflets: aluminium/magnesium indigestion remedies lower absorption; leave a gap.",
+   "url": "https://www.medicines.org.uk/emc/product/14744/pil",
+   "action": "edited",
+   "newSentence": "Leaflets say that indigestion remedies containing aluminium and magnesium can lower how much fexofenadine is absorbed, and advise leaving a gap between the two."
+  },
+  {
+   "id": "c44",
+   "sentence": "Tablets for adults and children aged 12 and over are sold over the counter from pharmacies and supermarkets, while tablets for children under 12 are only available on prescription from a doctor.",
+   "classification": "supported",
+   "evidence": "NHS: 120mg tablets 12+ from pharmacies/supermarkets; under-12 on prescription only.",
+   "url": "https://www.nhs.uk/medicines/fexofenadine/about-fexofenadine/",
+   "action": "edited",
+   "newSentence": "The NHS says 120mg tablets for adults and children aged 12 and over can be bought from pharmacies and supermarkets, while tablets for children under 12 are only available on prescription from a doctor."
+  },
+  {
+   "id": "c45",
+   "sentence": "Leaflets advise talking to a doctor or pharmacist first about liver or kidney problems, heart disease or older age.",
+   "classification": "supported",
+   "evidence": "Leaflets: talk to doctor or pharmacist about liver/kidney problems, heart disease, older age; NHS who-can lists liver, kidney, heart.",
+   "url": "https://www.nhs.uk/medicines/fexofenadine/who-can-and-cannot-take-fexofenadine/",
+   "action": "edited",
+   "newSentence": "The NHS lists liver or kidney problems and heart problems among the reasons fexofenadine may not be suitable, and leaflets advise talking to a doctor or pharmacist first about liver or kidney problems, heart disease or older age."
+  },
+  {
+   "id": "c46",
+   "sentence": "One leaflet notes that fexofenadine, like other antihistamines, may make the heart beat faster.",
+   "classification": "supported",
+   "evidence": "Leaflet: antihistamines may cause fast or irregular heartbeat.",
+   "url": "https://www.medicines.org.uk/emc/product/14743/pil",
+   "action": "edited",
+   "newSentence": "One leaflet says antihistamines such as fexofenadine may cause a fast or irregular heartbeat."
+  },
+  {
+   "id": "c47",
+   "sentence": "An NHS Scotland pharmacy protocol lists pregnancy and breastfeeding among the reasons not to supply it through that service.",
+   "classification": "unsupported",
+   "evidence": "NHS Borders PGD pregnancy/breastfeeding exclusion not retrieved (only under-12 exclusion seen).",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c48",
+   "sentence": "A known allergy to fexofenadine or any of its other ingredients is a reason not to take it.",
+   "classification": "supported",
+   "evidence": "NHS who-can: allergic reaction to fexofenadine or other medicine.",
+   "url": "https://www.nhs.uk/medicines/fexofenadine/who-can-and-cannot-take-fexofenadine/",
+   "action": "edited",
+   "newSentence": "The NHS lists having ever had an allergic reaction to fexofenadine or any other medicine among the reasons it may not be suitable."
+  },
+  {
+   "id": "c49",
+   "sentence": "Leaflets differ in wording between products, so the leaflet that comes with a particular product applies to it.",
+   "classification": "supported",
+   "evidence": "emc leaflets.",
+   "url": "https://www.medicines.org.uk/emc/product/14744/pil",
+   "action": "kept"
+  },
+  {
+   "id": "c50",
+   "sentence": "Even so, some people feel quite sleepy or dizzy, and the NHS advises not driving, cycling or using tools or machinery if that happens.",
+   "classification": "supported",
+   "evidence": "NHS side effects/common questions; leaflets on driving.",
+   "url": "https://www.nhs.uk/medicines/fexofenadine/side-effects-of-fexofenadine/",
+   "action": "kept"
+  },
+  {
+   "id": "c51",
+   "sentence": "MedlinePlus advises taking it with water rather than fruit juice.",
+   "classification": "supported",
+   "evidence": "MedlinePlus/NHS: juice and water advice.",
+   "url": "https://medlineplus.gov/druginfo/meds/a697035.html",
+   "action": "kept"
+  },
+  {
+   "id": "c52",
+   "sentence": "The NHS says people should start to feel better within 1 to 2 hours.",
+   "classification": "supported",
+   "evidence": "NHS About / MedlinePlus: uses, mechanism, onset 1-2 hours.",
+   "url": "https://www.nhs.uk/medicines/fexofenadine/about-fexofenadine/",
+   "action": "kept"
+  },
+  {
+   "id": "c53",
+   "sentence": "It says fexofenadine is unlikely to cause harm when used for a long time, but it is best taken only for as long as it is needed.",
+   "classification": "supported",
+   "evidence": "NHS common questions.",
+   "url": "https://www.nhs.uk/medicines/fexofenadine/common-questions-about-fexofenadine/",
+   "action": "kept"
+  },
+  {
+   "id": "c54",
+   "sentence": "Tablets for adults and children aged 12 and over are sold over the counter from pharmacies and supermarkets.",
+   "classification": "supported",
+   "evidence": "NHS: 120mg tablets 12+ from pharmacies and supermarkets.",
+   "url": "https://www.nhs.uk/medicines/fexofenadine/about-fexofenadine/",
+   "action": "edited",
+   "newSentence": "The NHS says 120mg tablets for adults and children aged 12 and over can be bought from pharmacies and supermarkets."
+  },
+  {
+   "id": "c55",
+   "sentence": "Tablets for children under 12 are only available with a prescription from a doctor.",
+   "classification": "supported",
+   "evidence": "NHS About / MedlinePlus: uses, mechanism, onset 1-2 hours.",
+   "url": "https://www.nhs.uk/medicines/fexofenadine/about-fexofenadine/",
+   "action": "kept"
+  },
+  {
+   "id": "c56",
+   "sentence": "Leaflet wording differs between products: one advises against taking it in pregnancy unless necessary and says it is not recommended while breastfeeding, while others tell pregnant or breastfeeding women to ask a doctor or pharmacist first.",
+   "classification": "supported",
+   "evidence": "NHS lists pregnancy/breastfeeding; UK leaflets against in pregnancy unless necessary, not recommended breastfeeding.",
+   "url": "https://www.nhs.uk/medicines/fexofenadine/pregnancy-breastfeeding-and-fertility-while-taking-fexofenadine/",
+   "action": "edited",
+   "newSentence": "The NHS lists pregnancy, trying to get pregnant and breastfeeding among the situations where fexofenadine may not be suitable. UK leaflets advise against use in pregnancy unless necessary and say it is not recommended while breastfeeding."
+  },
+  {
+   "id": "c57",
+   "sentence": "A GP or pharmacist can advise on an individual situation.",
+   "classification": "supported",
+   "evidence": "NHS About / MedlinePlus: uses, mechanism, onset 1-2 hours.",
+   "url": "https://www.nhs.uk/medicines/fexofenadine/about-fexofenadine/",
+   "action": "kept"
+  },
+  {
+   "id": "c58",
+   "sentence": "Telfast, Allevia",
+   "classification": "supported",
+   "evidence": "NHS medicines page lists Allevia, Almerg, Histallay, Telfast, Treathay as brands (via search summary).",
+   "url": "https://www.nhs.uk/medicines/fexofenadine/about-fexofenadine/",
+   "action": "edited",
+   "newSentence": "Telfast, Allevia, Almerg, Histallay, Treathay"
+  },
+  {
+   "id": "c59",
+   "sentence": "Non-drowsy (second-generation) antihistamine",
+   "classification": "supported",
+   "evidence": "NHS About / MedlinePlus: uses, mechanism, onset 1-2 hours.",
+   "url": "https://www.nhs.uk/medicines/fexofenadine/about-fexofenadine/",
+   "action": "kept"
+  },
+  {
+   "id": "c60",
+   "sentence": "Over the counter for adults and children aged 12 and over; tablets for younger children on prescription",
+   "classification": "supported",
+   "evidence": "NHS: 120mg 12+ from pharmacies/supermarkets; under-12 prescription.",
+   "url": "https://www.nhs.uk/medicines/fexofenadine/about-fexofenadine/",
+   "action": "edited",
+   "newSentence": "120mg tablets over the counter for adults and children aged 12 and over; tablets for younger children on prescription"
+  },
+  {
+   "id": "c61",
+   "sentence": "Within 1 to 2 hours, according to the NHS",
+   "classification": "supported",
+   "evidence": "NHS About / MedlinePlus: uses, mechanism, onset 1-2 hours.",
+   "url": "https://www.nhs.uk/medicines/fexofenadine/about-fexofenadine/",
+   "action": "kept"
+  },
+  {
+   "id": "c62",
+   "sentence": "Headache, sleepiness, feeling sick, dizziness",
+   "classification": "supported",
+   "evidence": "NHS About / MedlinePlus: uses, mechanism, onset 1-2 hours.",
+   "url": "https://www.nhs.uk/medicines/fexofenadine/about-fexofenadine/",
+   "action": "kept"
+  },
+  {
+   "id": "c63",
+   "sentence": "Grapefruit, orange and apple juice; antacids containing aluminium or magnesium",
+   "classification": "supported",
+   "evidence": "Juices (NHS), alcohol (NHS), aluminium/magnesium remedies (leaflets).",
+   "url": "https://www.nhs.uk/medicines/fexofenadine/common-questions-about-fexofenadine/",
+   "action": "edited",
+   "newSentence": "Grapefruit, orange and apple juice; alcohol; indigestion remedies containing aluminium and magnesium"
+  },
+  {
+   "id": "c64",
+   "sentence": "Face or throat swelling, difficulty breathing or fainting: 999 or A&E",
+   "classification": "supported",
+   "evidence": "Leaflets: tell a doctor immediately for facial/throat swelling and breathing difficulty.",
+   "url": "https://www.nhs.uk/medicines/fexofenadine/side-effects-of-fexofenadine/",
+   "action": "edited",
+   "newSentence": "Face, lip, tongue or throat swelling with difficulty breathing: tell a doctor immediately, per the leaflets"
+  }
+ ],
+ "notes": "US brands left empty (none retrieved). Chronic idiopathic urticaria (Telfast) sentences removed: not returned by my searches. 999/A&E and 'fainting' not retrieved; kept 'In an emergency, call 999' as textbook, plus leaflet-based 'tell a doctor immediately'. 2024 review pinned to PMC11382105; PMC11677975 dropped. Apalutamide wording is from a Cipla emc leaflet whose product number was not pinned, so cited via the 14744/14743 leaflets (verify). NHS Borders pregnancy sentence dropped. Monitoring absence claim replaced by NHS long-term-use statement. Added brands Almerg, Histallay, Treathay from NHS search summary. Article 574+ words (short, not padded). Antacid gap length omitted. Some NHS who-can/pregnancy attributions rest on search summaries, not verbatim excerpts."
+}
