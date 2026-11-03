@@ -1,0 +1,106 @@
+{
+ "id": "mhra-approves-zynyz-merkel-cell-cancer",
+ "searchesUsed": 1,
+ "counts": {
+  "supported": 9,
+  "textbook": 0,
+  "unsupported": 2,
+  "wrong": 0,
+  "unsafe": 0,
+  "unchecked": 0
+ },
+ "claims": [
+  {
+   "id": "c01",
+   "classification": "supported",
+   "sentence": "The MHRA approved retifanlimab (Zynyz) on 6 July 2026 as the first treatment for adults with advanced Merkel cell skin cancer.",
+   "evidence": "Page: today (6 July 2026) approved ... first treatment for adults with advanced Merkel cell skin cancer.",
+   "url": "https://www.gov.uk/government/news/mhra-approvesretifanlimabzynyz-for-the-treatment-of-advanced-merkel-cell-skin-cancer",
+   "action": "kept"
+  },
+  {
+   "id": "c02",
+   "classification": "supported",
+   "sentence": "The MHRA approved retifanlimab (Zynyz) on 6 July 2026.",
+   "evidence": "Page: 6 July 2026.",
+   "url": "https://www.gov.uk/government/news/mhra-approvesretifanlimabzynyz-for-the-treatment-of-advanced-merkel-cell-skin-cancer",
+   "action": "kept"
+  },
+  {
+   "id": "c03",
+   "classification": "supported",
+   "sentence": "It is the first treatment for adults with advanced Merkel cell skin cancer that has spread or returned and cannot be cured by surgery or radiotherapy.",
+   "evidence": "Page: disease has spread or returned and cannot be cured with surgery or radiotherapy.",
+   "url": "https://www.gov.uk/government/news/mhra-approvesretifanlimabzynyz-for-the-treatment-of-advanced-merkel-cell-skin-cancer",
+   "action": "kept"
+  },
+  {
+   "id": "c04",
+   "classification": "supported",
+   "sentence": "The MHRA describes it as an immunotherapy given by infusion.",
+   "evidence": "Page: immunotherapy given as diluted intravenous infusion.",
+   "url": "https://www.gov.uk/government/news/mhra-approvesretifanlimabzynyz-for-the-treatment-of-advanced-merkel-cell-skin-cancer",
+   "action": "kept"
+  },
+  {
+   "id": "c05",
+   "classification": "supported",
+   "sentence": "In a study of 101 adults, 53.5% responded to retifanlimab.",
+   "evidence": "Page: study of 101 adults, 53.5% responded.",
+   "url": "https://www.gov.uk/government/news/mhra-approvesretifanlimabzynyz-for-the-treatment-of-advanced-merkel-cell-skin-cancer",
+   "action": "kept"
+  },
+  {
+   "id": "c06",
+   "classification": "supported",
+   "sentence": "The MHRA says it approved retifanlimab (Zynyz) on 6 July 2026 as the first treatment for adults with advanced Merkel cell skin cancer.",
+   "evidence": "As c01.",
+   "url": "https://www.gov.uk/government/news/mhra-approvesretifanlimabzynyz-for-the-treatment-of-advanced-merkel-cell-skin-cancer",
+   "action": "kept"
+  },
+  {
+   "id": "c07",
+   "classification": "unsupported",
+   "sentence": "The approval is for cancer that has spread or returned and cannot be cured with surgery or radiotherapy, and it came through the International Recognition Procedure.",
+   "evidence": "Cancer-description part supported; 'came through the International Recognition Procedure' is not in the retrieved text.",
+   "url": "https://www.gov.uk/government/news/mhra-approvesretifanlimabzynyz-for-the-treatment-of-advanced-merkel-cell-skin-cancer",
+   "action": "edited",
+   "newSentence": "The approval is for cancer that has spread or returned and cannot be cured with surgery or radiotherapy."
+  },
+  {
+   "id": "c08",
+   "classification": "supported",
+   "sentence": "The MHRA explains that retifanlimab is an immunotherapy that helps the body's immune system recognise and attack cancer cells.",
+   "evidence": "Page: helps the immune system recognise and attack cancer cells.",
+   "url": "https://www.gov.uk/government/news/mhra-approvesretifanlimabzynyz-for-the-treatment-of-advanced-merkel-cell-skin-cancer",
+   "action": "kept"
+  },
+  {
+   "id": "c09",
+   "classification": "supported",
+   "sentence": "It is given as a diluted intravenous infusion over 30 minutes.",
+   "evidence": "Page: diluted intravenous infusion over 30 minutes (administration time, not a dose; flag only).",
+   "url": "https://www.gov.uk/government/news/mhra-approvesretifanlimabzynyz-for-the-treatment-of-advanced-merkel-cell-skin-cancer",
+   "action": "kept"
+  },
+  {
+   "id": "c10",
+   "classification": "supported",
+   "sentence": "The MHRA reports that in a study of 101 adults who had not previously been treated for advanced disease, 53.5% responded to retifanlimab.",
+   "evidence": "Page: 101 adults not previously treated for advanced disease, 53.5% responded.",
+   "url": "https://www.gov.uk/government/news/mhra-approvesretifanlimabzynyz-for-the-treatment-of-advanced-merkel-cell-skin-cancer",
+   "action": "kept"
+  },
+  {
+   "id": "c11",
+   "classification": "unsupported",
+   "sentence": "The site's skin cancer page explains the condition.",
+   "evidence": "Not a statement from the source page; an internal-link sentence the retrieved text does not contain.",
+   "url": "https://www.gov.uk/government/news/mhra-approvesretifanlimabzynyz-for-the-treatment-of-advanced-merkel-cell-skin-cancer",
+   "action": "removed"
+  }
+ ],
+ "dateConfirmed": "2026-07-06",
+ "dateEvidence": "Retrieved GOV.UK text: 'The MHRA has today (6 July 2026) approved Retifanlimab (ZYNYZ) as the first treatment given to adults with advanced Merkel cell skin cancer.' Approval granted 6 July 2026 to Incyte Biosciences UK Ltd.",
+ "notes": "6 July, 53.5% and 101 adults all confirmed in page text. The 30-minute infusion duration is an administration detail (not a dose) and is supported; flagged only for the dose/cut-off rule. International Recognition Procedure clause not retrieved, so removed."
+}
