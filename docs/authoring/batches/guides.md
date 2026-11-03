@@ -76,3 +76,31 @@ Seed questions: how to recognise anxiety and what treatment involves; depression
 loneliness and health; grief; menopause symptoms and the help available; pregnancy: the antenatal care the NHS offers; common newborn and baby health questions the NHS answers (fever, rashes); children's fevers and when to seek help; falls in older people and how
 to reduce risk; hearing loss and hearing tests; dementia: early signs and how it is assessed. For every page touching mental health include: if you or someone else is in immediate danger call 999; NHS 111 (mental health option) for urgent help; Samaritans 116 123 (free, any time). Do not give survival statistics, methods or
 anything that could be read as a how-to; follow the NHS wording; no stigmatising terms.
+
+## Third wave: more guides (batch ids `guides-tests-2`, `guides-everyday-2`, `guides-family-health`, `guides-urgent-care-travel`)
+
+Already published (do not repeat; the files are in `content/blog/`, check titles and slugs before you write): blood-test guides (CRP, ferritin, cholesterol, HbA1c, liver, eGFR, white cells, thyroid,
+vitamin D, B12, troponin, ESR, INR, urine dipstick, electrolytes, glucose, full blood count), symptom guides (chest pain, headache, breathlessness, tummy pain, back pain, knee pain, joint pain, nausea, cough, tiredness,
+dizziness, fever, rashes, swollen ankles, numbness, weakness, heavy periods, pelvic pain, breast lump, vaginal bleeding), medicine questions, condition comparisons, everyday health (alcohol, weight, activity, sleep, smoking, vitamin D,
+eating, bone health, blood pressure at home), mental health and life stages. Pick questions that are NOT already covered.
+
+### `guides-tests-2`: appointments, preparation and results
+Seed questions: how to prepare for a blood test (fasting and what the NHS says); what a GP examines when you report X (abdominal, breast, prostate examination: what to expect); what is a PSA test and what the NHS says about it;
+what is a bone marrow biopsy; what happens at a hospital outpatient appointment; what is a CT coronary calcium score; what a lumbar puncture involves; what a cystoscopy involves; what a bone scan or PET scan involves (`pet-scan`); having a general anaesthetic;
+how screening works (bowel, breast, cervical, AAA, diabetic eye) and who is invited, as the NHS states; understanding a "normal" test result; what happens after an abnormal result; what a heart-rhythm monitor involves (`holter-monitor`); coronary angiography (`cardiac-catheterization`); blood transfusion (`blood-transfusion`);
+pregnancy scans and tests in the NHS (booking bloods, dating scan, anomaly scan).
+
+### `guides-everyday-2`: prevention and self-care
+Seed questions: how to lower blood pressure with lifestyle changes (`hypertension`); how to lower cholesterol with food and activity (`lipid-profile`); how to stop smoking: what the NHS offers; how to improve sleep (the NHS "sleep problems" self-help advice); how to cut down on alcohol;
+how to get active when you have a long-term condition; how to manage stress (NHS); how to eat well when you have type 2 diabetes (`type-2-diabetes`); how to look after your feet if you have diabetes; heart-healthy eating; healthy ageing and keeping muscles and bones strong; sun safety and skin checks;
+how to protect against food poisoning (NHS food safety); how to look after your teeth and gums; hearing protection; eye health and eye tests (who is entitled to a free NHS sight test).
+
+### `guides-family-health`: women, men, children, older people
+Seed questions: what is a normal period and when to see a GP; the contraception methods the NHS lists and how they differ; early pregnancy symptoms and when to contact a midwife; the UK childhood vaccination schedule as the NHS states it (names of vaccines, not doses); a baby with a high temperature; teething; colic;
+children and asthma: signs and what the NHS advises; common childhood rashes (chickenpox, measles, hand foot and mouth); head lice; puberty; erectile problems and when to see a GP; prostate symptoms and when to see a GP; checking testicles; menopause and HRT (what the NHS says, no doses); bladder control; falls prevention in older people;
+looking after someone with dementia.
+
+### `guides-urgent-care-travel`: knowing where to go, and travel health
+Seed questions: 999, NHS 111, GP, pharmacy, urgent treatment centre or A&E: which to use and when (the NHS "Choose the right service" advice); how to do CPR on an adult as Resuscitation Council UK and the NHS describe it (`first-aid` page `cpr`); what to do if someone is choking; how to treat a burn;
+how to recognise a heart attack, including in women; nosebleeds; how to deal with a sprain or strain; what to do after a head injury; poisoning and where to get advice; anaphylaxis: what the NHS says about adrenaline auto-injectors; travel vaccinations as the NHS (Fit for Travel / TravelHealthPro) describes them; malaria prevention (names and approaches, no doses);
+altitude sickness; avoiding travellers' diarrhoea; jet lag; deep vein thrombosis on long flights; travelling with medicines; heat illness (heat exhaustion and heatstroke).
