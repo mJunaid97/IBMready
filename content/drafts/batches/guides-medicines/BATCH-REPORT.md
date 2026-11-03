@@ -10,6 +10,7 @@ In fragment.json (second pass done, check_batch.py ends "ok"):
 - alcohol-and-antibiotics (29 supported, 2 textbook, 18 unsupported; body 575 words, below target; review: its report was classified partly by keyword rules so per-claim url/newSentence fields are incomplete; NHS 111 Wales page seen via summaries only; one reference is an ouh.nhs.uk leaflet; 8 searches)
 - ace-inhibitors-arbs-and-amlodipine-compared (28 supported, 1 textbook, 22 unsupported; body 783 words; review: NICE NG136 points kept from nice.org.uk search results only; missed-dose advice verified for amlodipine only; no explicit pharmacist/GP route for non-urgent questions, only 999, NHS 111 and 'a doctor'; 8 searches)
 - opioid-painkillers-explained (18 supported, 25 unsupported, 1 wrong; body 717 words; weak/strong section, FRANK number and fpm.ac.uk reference removed; tolerance attributed to the NHS tramadol page; 8 searches)
+- reliever-and-preventer-inhalers (22 supported, 2 textbook, 22 unsupported, 1 wrong; body 692 words; 'never a reliever alone' reattributed to NHS inform; 8 searches)
 - statins-common-questions-answered (first-pass 45 sentences: 33 supported, 2 textbook, 10 unsupported; body 632 words, below the 700 target; searches: author 7, checker 9)
 
 Drafted but NOT verified (first pass only, in posts/ and ledgers/, not in the fragment; do not publish):
