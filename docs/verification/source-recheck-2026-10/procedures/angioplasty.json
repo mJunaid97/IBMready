@@ -1,0 +1,31 @@
+{
+ "type": "procedures",
+ "id": "angioplasty",
+ "verdict": "accept-with-edits",
+ "edits": [
+  {
+   "field": "what",
+   "action": "remove-sentence",
+   "match": "Several balloon inflations, and sometimes more than one stent, may be needed to achieve a good result, and a straightforward case takes about half an hour to an hour.",
+   "replacement": "Several balloon inflations, and sometimes more than one stent, may be needed to achieve a good result.",
+   "reason": "UNSUPPORTED: duration figure (30-60 min) not in the retrieved NHS excerpt and not in the pre-patch record; NHS gives a wider range, so the figure is removed rather than asserted."
+  },
+  {
+   "field": "after",
+   "action": "remove-sentence",
+   "match": "The second agent is clopidogrel, prasugrel or ticagrelor; stopping these medicines early without the cardiologist's advice is the main avoidable cause of stent thrombosis",
+   "replacement": "The second agent is clopidogrel, prasugrel or ticagrelor; it is important not to stop these medicines early without the cardiologist's advice",
+   "reason": "UNSAFE: overstated certainty ('the main avoidable cause') not supported by the NHS excerpt, which says only that it is vitally important to keep taking the antiplatelets."
+  }
+ ],
+ "unverified_urls": [
+  "https://www.nhlbi.nih.gov/health-topics/percutaneous-coronary-intervention",
+  "https://medlineplus.gov/ency/patientinstructions/000091.htm",
+  "https://www.bhf.org.uk/informationsupport/treatments/coronary-angioplasty-and-stents"
+ ],
+ "checked_urls": [
+  "https://www.nhs.uk/tests-and-treatments/coronary-angioplasty/recovery/",
+  "https://www.nhs.uk/conditions/coronary-angioplasty/what-happens/"
+ ],
+ "notes": "NHS excerpts support: same/next-day discharge, bruise and chest tenderness for days, heavy lifting avoided about a week, return to work after a week (elective) and weeks-months after emergency PCI, DAPT up to a year, restenosis, higher risk in emergencies/complex lesions, contrast kidney injury, vessel damage, stroke, death. Remaining new content is standard textbook material. No protected field (medications) changed. summary field legitimate."
+}

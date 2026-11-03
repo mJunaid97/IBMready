@@ -1,0 +1,32 @@
+{
+ "type": "medications",
+ "id": "sertraline",
+ "verdict": "accept-with-edits",
+ "edits": [
+  {
+   "field": "howItWorks",
+   "action": "remove-sentence",
+   "match": "The gap between the chemical effect (hours) and the clinical effect (weeks) explains the characteristic early course: side effects such as nausea, headache and disturbed sleep appear first, some people, especially those treated for panic, find their anxiety worse for the first few weeks, and most people start to feel better within the first couple of weeks although the full benefit takes longer.",
+   "replacement": "The gap between the chemical effect (hours) and the clinical effect (weeks) explains the characteristic early course: side effects such as nausea, headache and disturbed sleep appear first, some people, especially those treated for panic, find their anxiety worse for the first few weeks, and the full benefit takes several weeks.",
+   "reason": "WRONG: 'most people start to feel better within the first couple of weeks' conflicts with the record's own (pre-patch) onset of 2-4 weeks for mood benefit and is not in the retrieved NHS excerpt, which says side effects ease after a couple of weeks."
+  },
+  {
+   "field": "onset",
+   "action": "remove-sentence",
+   "match": "The NHS notes that most people start to feel some benefit within the first couple of weeks and that anxiety can be worse before it is better.",
+   "replacement": "The NHS notes that anxiety can be worse before it is better.",
+   "reason": "WRONG: same unsupported early-benefit claim, inconsistent with the pre-patch 2-4 week onset."
+  }
+ ],
+ "unverified_urls": [
+  "https://www.nhs.uk/medicines/sertraline/about-sertraline/",
+  "https://www.nhs.uk/medicines/sertraline/side-effects-of-sertraline/",
+  "https://www.nhs.uk/medicines/sertraline/pregnancy-breastfeeding-and-fertility-while-taking-sertraline/",
+  "https://www.nhs.uk/mental-health/talking-therapies-medicine-treatments/medicines-and-psychiatry/ssri-antidepressants/considerations/",
+  "https://medlineplus.gov/druginfo/meds/a697048.html"
+ ],
+ "checked_urls": [
+  "https://www.nhs.uk/medicines/sertraline/"
+ ],
+ "notes": "Line-by-line check. The search surfaced only the NHS overview page with fragmentary text (nausea, headaches, diarrhoea common; most side effects ease after a couple of weeks; see a doctor if they persist) plus trial documents on tapering and discontinuation symptoms. No dose figure added ('once a day' matches standard labelling; liquid dilution is MedlinePlus administration advice). Dose-timing suggestions for nausea/sleep are NHS self-care advice, not dose changes. Pregnancy paragraph matches NHS pregnancy page content (general knowledge; URL unverified). Grapefruit, mania, serotonin syndrome description and gradual reduction are standard NHS content. No protected field changed."
+}

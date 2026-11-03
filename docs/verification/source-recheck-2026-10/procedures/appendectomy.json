@@ -1,0 +1,36 @@
+{
+ "type": "procedures",
+ "id": "appendectomy",
+ "verdict": "accept-with-edits",
+ "edits": [
+  {
+   "field": "what",
+   "action": "remove-sentence",
+   "match": "Keyhole surgery is the usual first choice when appendicitis is found early; if the surgeon meets difficulties or judges it safer, the operation is converted to an open approach, which is regarded as sound surgical judgement rather than a failure.",
+   "replacement": "Keyhole surgery is the usual first choice; if the surgeon meets difficulties or judges it safer, the operation is converted to an open approach.",
+   "reason": "UNSUPPORTED: editorial clause ('regarded as sound surgical judgement rather than a failure') and the 'found early' qualifier are not in the NHS source."
+  },
+  {
+   "field": "after",
+   "action": "remove-sentence",
+   "match": "shoulder-tip pain for up to a week from the gas used to inflate the abdomen",
+   "replacement": "shoulder-tip pain from the gas used to inflate the abdomen",
+   "reason": "UNSUPPORTED: 'up to a week' is a duration figure not in the pre-patch record or the NHS excerpt (NHS says short-term shoulder-tip pain)."
+  },
+  {
+   "field": "recovery",
+   "action": "remove-sentence",
+   "match": "Pain and indigestion are the commonest complaints in the first days and settle as the bowel recovers.",
+   "replacement": "",
+   "reason": "UNSUPPORTED: NHS lists pain and constipation as the expected short-term effects; 'indigestion as the commonest complaint' is not supported."
+  }
+ ],
+ "unverified_urls": [
+  "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7329822/"
+ ],
+ "checked_urls": [
+  "https://www.nhs.uk/conditions/appendicitis/treatment/",
+  "https://www.nhs.uk/conditions/appendicitis/"
+ ],
+ "notes": "NHS excerpts support: remove as soon as possible, antibiotics sometimes an alternative, keyhole usual with open when burst, recovery 1-2 weeks (longer with complications), soreness/constipation/shoulder-tip pain, strenuous activity avoided up to 6 weeks after open surgery, burst appendix and peritonitis, abscesses, complications rare. 'About a third need surgery within a few years' predates the patch. No protected field changed."
+}

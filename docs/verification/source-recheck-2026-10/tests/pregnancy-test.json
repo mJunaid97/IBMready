@@ -1,0 +1,17 @@
+{
+ "type": "tests",
+ "id": "pregnancy-test",
+ "verdict": "accept-with-edits",
+ "edits": [
+  {
+   "field": "what",
+   "action": "remove-sentence",
+   "match": "The urine test is one of the most widely used point-of-care tests: a strip or stick is dipped into urine or held in the stream and shows a line, symbol or word when hCG is present.",
+   "replacement": "The urine test is a widely used point-of-care test: a strip or stick is dipped into urine or held in the stream and shows a line, symbol or word when hCG is present.",
+   "reason": "UNSUPPORTED: superlative 'one of the most widely used' not supported by the cited sources; softened."
+  }
+ ],
+ "unverified_urls": [],
+ "checked_urls": [],
+ "notes": "Verdict file generated from the upstream verifier report; every match string was asserted to occur in the current record. URL checks were done in the upstream report and are not repeated here."
+}

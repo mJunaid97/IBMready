@@ -1,0 +1,24 @@
+{
+ "type": "drug-classes",
+ "id": "beta-blockers",
+ "verdict": "accept-with-edits",
+ "edits": [
+  {
+   "field": "classEffects",
+   "action": "remove-item",
+   "match": "Tiredness is the commonest reason for switching to a different beta blocker or a lower dose",
+   "replacement": "",
+   "reason": "UNSUPPORTED: NHS 111 Wales lists tiredness as a common side effect but nowhere states it is the commonest reason for switching drug or dose."
+  }
+ ],
+ "unverified_urls": [
+  "https://www.nhs.uk/medicines/beta-blockers/",
+  "https://www.ncbi.nlm.nih.gov/sites/books/NBK532906/",
+  "https://www.ncbi.nlm.nih.gov/sites/books/NBK499982/",
+  "https://www.nhs.uk/conditions/high-blood-pressure-hypertension/treatment/"
+ ],
+ "checked_urls": [
+  "https://111.wales.nhs.uk/betablockers/"
+ ],
+ "notes": "Retrieved NHS 111 Wales excerpt supports: tiredness/dizziness common, do not stop suddenly (underlying condition worsens; a Welsh hospital leaflet gives the heart-rate/contractility/angina mechanism). HBP 'reserved when others have not worked' matches NHS hypertension treatment page (not retrieved). Mechanism additions (membrane stabilisation, renin, esmolol, labetalol, hypo masking) are standard pharmacology. Protected fields unchanged."
+}

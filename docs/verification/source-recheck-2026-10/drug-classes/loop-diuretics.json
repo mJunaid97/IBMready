@@ -1,0 +1,45 @@
+{
+ "type": "drug-classes",
+ "id": "loop-diuretics",
+ "verdict": "accept-with-edits",
+ "edits": [
+  {
+   "field": "references",
+   "action": "replace-field",
+   "match": "",
+   "replacement": [
+    {
+     "title": "NHS: Furosemide",
+     "url": "https://www.nhs.uk/medicines/furosemide/"
+    },
+    {
+     "title": "NHS: Who can and cannot take furosemide",
+     "url": "https://www.nhs.uk/medicines/furosemide/who-can-and-cannot-take-furosemide/"
+    },
+    {
+     "title": "StatPearls (NCBI Bookshelf): Loop Diuretics",
+     "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK546656/"
+    },
+    {
+     "title": "StatPearls (NCBI Bookshelf): Therapeutic Uses of Diuretic Agents",
+     "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK557838/"
+    },
+    {
+     "title": "PMC: Ototoxic effects and mechanisms of loop diuretics",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6002634/"
+    }
+   ],
+   "reason": "SCHEMA: reference URL carried a stray tracking query string ('?utm.com='); same list with the clean PMC URL."
+  }
+ ],
+ "unverified_urls": [
+  "https://www.ncbi.nlm.nih.gov/sites/books/NBK546656/",
+  "https://www.ncbi.nlm.nih.gov/sites/books/NBK557838/",
+  "https://pmc.ncbi.nlm.nih.gov/articles/PMC6002634/?utm.com="
+ ],
+ "checked_urls": [
+  "https://www.nhs.uk/medicines/furosemide/who-can-and-cannot-take-furosemide/",
+  "https://www.nhs.uk/medicines/furosemide/"
+ ],
+ "notes": "NHS excerpts support the caution list (low BP, dehydration, liver problems, diabetes, difficulty passing urine, Addison's, gout), alcohol, and pausing 1-2 days during dehydrating illness. Ototoxicity mechanism and reversibility match the cited PMC review/StatPearls (not retrieved). 'Lower doses are usual in older people' is informational, not an instruction. Protected fields unchanged."
+}

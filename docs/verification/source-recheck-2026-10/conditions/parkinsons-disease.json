@@ -1,0 +1,31 @@
+{
+ "type": "conditions",
+ "id": "parkinsons-disease",
+ "verdict": "accept-with-edits",
+ "edits": [
+  {
+   "field": "riskFactors",
+   "action": "remove-item",
+   "match": "Lack of smoking history (smoking appears protective in observational data)",
+   "replacement": "",
+   "reason": "UNSAFE: implies smoking is protective; not in cited NHS/NINDS sources and unsafe framing."
+  },
+  {
+   "field": "prevention",
+   "action": "remove-sentence",
+   "match": "Smoking, caffeine and physical activity appear protective in observational studies, although reverse causation is possible because early disease itself reduces how much people exercise.",
+   "replacement": "Caffeine and physical activity appear protective in observational studies, although reverse causation is possible because early disease itself reduces how much people exercise.",
+   "reason": "UNSAFE: drops 'smoking ... appears protective'; caffeine/activity remainder kept."
+  },
+  {
+   "field": "causes",
+   "action": "remove-item",
+   "match": "Known genetic variants are rare and each carries only a small risk",
+   "replacement": "",
+   "reason": "UNSUPPORTED: claim about rarity and small effect of genetic variants not in cited sources."
+  }
+ ],
+ "unverified_urls": [],
+ "checked_urls": [],
+ "notes": "Verdict file generated from the upstream verifier report; every match string was asserted to occur in the current record. URL checks were done in the upstream report and are not repeated here."
+}

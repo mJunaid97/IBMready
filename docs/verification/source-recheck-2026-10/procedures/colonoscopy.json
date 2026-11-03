@@ -1,0 +1,23 @@
+{
+ "type": "procedures",
+ "id": "colonoscopy",
+ "verdict": "accept-with-edits",
+ "edits": [
+  {
+   "field": "what",
+   "action": "remove-sentence",
+   "match": "Inadequate preparation is common, and is more likely in men, in people with diabetes and after previous abdominal surgery, so the preparation instructions are followed closely.",
+   "replacement": "The preparation instructions are therefore followed closely.",
+   "reason": "UNSUPPORTED: epidemiological claim about who has inadequate preparation is drawn from a literature article not surfaced by the search and is not in the NHS source."
+  }
+ ],
+ "unverified_urls": [
+  "https://medlineplus.gov/colonoscopy.html",
+  "https://www.cuh.nhs.uk/patient-information/colonoscopy/",
+  "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8947288/"
+ ],
+ "checked_urls": [
+  "https://www.nhs.uk/tests-and-treatments/colonoscopy/what-happens-on-the-day/"
+ ],
+ "notes": "NHS excerpts support: sedation effects for 24 hours and escort home, bloating/cramps, small bleeding after polypectomy or biopsy with delayed bleeding up to two weeks, perforation, missed lesions, warning signs (large bleeding, worsening pain). Statements on continuing aspirin and pausing anticoagulants for polypectomy, iron tablets coating the bowel, red/purple drinks, dehydration risk in frail/kidney/heart disease, and monitoring during sedation are standard UK endoscopy guidance (general knowledge). Bleeding 1 in 100 and 'delayed by a week' predate the patch. No protected field changed."
+}

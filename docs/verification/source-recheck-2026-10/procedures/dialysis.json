@@ -1,0 +1,29 @@
+{
+ "type": "procedures",
+ "id": "dialysis",
+ "verdict": "accept-with-edits",
+ "edits": [
+  {
+   "field": "before",
+   "action": "remove-sentence",
+   "match": "The fistula operation is done under local anaesthetic and takes about an hour; a fistula is preferred because catheters carry a much higher rate of bloodstream infection",
+   "replacement": "A fistula is preferred because catheters carry a higher rate of bloodstream infection",
+   "reason": "UNSUPPORTED: operation duration figure not in the NHS excerpt or the pre-patch record; 'much higher' softened to the supported direction of effect."
+  },
+  {
+   "field": "references",
+   "action": "remove-item",
+   "match": "https://www.kidney.org/kidney-topics/home-dialysis",
+   "reason": "SCHEMA: kidney.org is not among the approved reference hosts (nhs.uk / NIH / MedlinePlus / FDA / StatPearls / OpenStax) and does not appear anywhere in the pre-patch corpus."
+  }
+ ],
+ "unverified_urls": [
+  "https://www.nhs.uk/tests-and-treatments/dialysis/side-effects/",
+  "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5100934/"
+ ],
+ "checked_urls": [
+  "https://www.nhs.uk/tests-and-treatments/dialysis/how-its-done/",
+  "https://www.nhs.uk/tests-and-treatments/dialysis/what-happens/"
+ ],
+ "notes": "NHS excerpts support: 3 sessions/week of about 4 hours, hospital or home, tiredness/nausea/cramps/dizziness/low blood pressure, sepsis risk, fluid restriction, CAPD vs APD, peritonitis signs and antibiotic treatment with switch to haemodialysis if severe or recurrent, fewer diet/fluid restrictions on PD. Fistula maturation 6-12 weeks, 2-week PD catheter lead time, 2 L exchanges 4x/day and peritonitis frequency all predate the patch. 30-40 minute exchange time matches NHS wording (general knowledge). 'Survival similar on both types' is mainstream (general knowledge). No protected field changed."
+}
