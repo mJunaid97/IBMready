@@ -1,0 +1,22 @@
+{
+ "type": "medications",
+ "id": "levothyroxine",
+ "verdict": "accept-with-edits",
+ "edits": [
+  {
+   "field": "cautions",
+   "action": "remove-sentence",
+   "match": "Blood tests are timed in relation to the morning dose, and a missed dose or one taken with food can raise the TSH at the next test; a single accidental extra dose is unlikely to cause harm but more than that, or a racing heart or chest pain, is reported to a doctor",
+   "replacement": "Blood tests are timed in relation to the morning dose, and a missed dose or one taken with food can raise the TSH at the next test; extra doses taken by accident, a racing heart or chest pain are reported to a doctor",
+   "reason": "UNSAFE: overdose reassurance ('a single accidental extra dose is unlikely to cause harm') is not in the retrieved excerpt or the pre-patch record; removed, keeping the report-to-doctor advice."
+  }
+ ],
+ "unverified_urls": [
+  "https://medlineplus.gov/druginfo/meds/a682461.html"
+ ],
+ "checked_urls": [
+  "https://www.nhs.uk/medicines/levothyroxine/",
+  "https://www.nhs.uk/conditions/underactive-thyroid-hypothyroidism/treatment/"
+ ],
+ "notes": "Line-by-line check. NHS excerpts support: empty stomach 30-60 min before food, caffeine or other medicines; water rather than coffee/milk; 4-hour gap from calcium, iron, antacids; common effects insomnia, headaches, anxiety, sweating, hair loss; too much causes sweating, chest pain, headaches, diarrhoea, vomiting; anaphylaxis rare; tests repeated after ~8 weeks; lifelong; breastfeeding usually fine with pharmacist check. 25 microgram starting dose in the elderly, 4-hour separation, same-brand advice and weight-loss warning predate the patch. TSH suppression after thyroid cancer and soya/walnut/high-fibre interactions are standard (Leeds leaflet / MedlinePlus). No protected field changed."
+}

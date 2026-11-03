@@ -1,0 +1,412 @@
+{
+  "organ": "testes",
+  "searchesUsed": 27,
+  "counts": {
+    "supported": 45,
+    "textbook": 0,
+    "unsupported": 7,
+    "wrong": 1,
+    "unsafe": 0,
+    "unchecked": 0
+  },
+  "claims": [
+    {
+      "id": "c01",
+      "classification": "supported",
+      "evidence": "NCI: testicles are 'two egg-shaped glands located inside the scrotum'; scrotum described as a pouch of loose skin below the penis.",
+      "url": "https://www.cancer.gov/types/testicular/what-is-testicular-cancer",
+      "action": "kept"
+    },
+    {
+      "id": "c02",
+      "classification": "supported",
+      "evidence": "NCI: 'The testicles are the male sex glands and produce testosterone and sperm.'",
+      "url": "https://www.cancer.gov/types/testicular/what-is-testicular-cancer",
+      "action": "kept"
+    },
+    {
+      "id": "c03",
+      "classification": "supported",
+      "evidence": "SEER: epididymis is a tightly coiled tube, sperm mature in it; 'The deferent duct is the excretory duct of the testis that joins the excretory duct of the seminal vesicle to form the ejaculatory duct'; StatPearls Male GU: ampulla and SV duct combine at the base of the prostate.",
+      "url": "https://training.seer.cancer.gov/testicular/anatomy/",
+      "action": "kept"
+    },
+    {
+      "id": "c04",
+      "classification": "supported",
+      "evidence": "StatPearls Seminal Vesicle: SVs lie superior to the rectum, inferior to the fundus of the bladder and posterior to the prostate; SV ducts add seminal fluid to the ejaculate. 'Behind the bladder' is not that wording, so position given as behind the prostate.",
+      "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK499854/",
+      "action": "edited",
+      "newSentence": "The seminal vesicles lie behind the prostate and add fluid to the semen."
+    },
+    {
+      "id": "c05",
+      "classification": "unsupported",
+      "evidence": "NCI: two egg-shaped glands inside the scrotum. No retrieved text gives a size, so 'each a few centimetres long' was cut.",
+      "url": "https://www.cancer.gov/types/testicular/what-is-testicular-cancer",
+      "action": "edited",
+      "newSentence": "A pair of egg-shaped glands inside the scrotum"
+    },
+    {
+      "id": "c06",
+      "classification": "supported",
+      "evidence": "OpenStax 27.1: beneath the tunica vaginalis is the tunica albuginea, 'a tough, white, dense connective tissue layer'; it invaginates to form septa dividing the testis into lobules.",
+      "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/27-1-anatomy-and-physiology-of-the-testicular-reproductive-system",
+      "action": "kept"
+    },
+    {
+      "id": "c07",
+      "classification": "supported",
+      "evidence": "OpenStax Key Terms: Leydig cells are 'cells between the seminiferous tubules of the testes that produce testosterone'; OpenStax 27.1 and SEER: sperm are made in the seminiferous tubules.",
+      "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/27-key-terms",
+      "action": "kept"
+    },
+    {
+      "id": "c08",
+      "classification": "supported",
+      "evidence": "SEER: epididymis has head, body and tail; the tail is continuous with the deferent duct, which joins the seminal vesicle's duct to form the ejaculatory duct.",
+      "url": "https://training.seer.cancer.gov/testicular/anatomy/",
+      "action": "kept"
+    },
+    {
+      "id": "c09",
+      "classification": "supported",
+      "evidence": "OpenStax 27.1: sperm production is more efficient when the testes are a few degrees (2 to 4 C) below core temperature; dartos and cremaster contract together to elevate the testes in cold. Numbers left out of the prose.",
+      "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/27-1-anatomy-and-physiology-of-the-testicular-reproductive-system",
+      "action": "kept"
+    },
+    {
+      "id": "c10",
+      "classification": "supported",
+      "evidence": "StatPearls Testes: arteries arise from the anterolateral abdominal aorta just below the renal arteries; venous blood leaves via the pampiniform plexus.",
+      "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK470201/",
+      "action": "kept"
+    },
+    {
+      "id": "c11",
+      "classification": "supported",
+      "evidence": "NHS tests and next steps (summary, per-line attribution not shown): after GP referral you may have blood tests and an ultrasound scan of your testicles. Value reworded to say this is for suspected cancer.",
+      "url": "https://www.nhs.uk/conditions/testicular-cancer/tests-and-next-steps/",
+      "action": "edited",
+      "newSentence": "Ultrasound scan of the testicles and blood tests when testicular cancer is suspected"
+    },
+    {
+      "id": "c12",
+      "classification": "supported",
+      "evidence": "OpenStax 27.1: scrotal septum is 'a wall that divides the scrotum into two compartments, each housing one testis'.",
+      "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/27-1-anatomy-and-physiology-of-the-testicular-reproductive-system",
+      "action": "kept"
+    },
+    {
+      "id": "c13",
+      "classification": "supported",
+      "evidence": "OpenStax 27.1: the dartos 'makes up the subcutaneous muscle layer of the scrotum. It continues internally to make up the scrotal septum'.",
+      "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/27-1-anatomy-and-physiology-of-the-testicular-reproductive-system",
+      "action": "kept"
+    },
+    {
+      "id": "c14",
+      "classification": "supported",
+      "evidence": "OpenStax 27.1: 'Beneath the tunica vaginalis is the tunica albuginea, a tough, white, dense connective tissue layer covering the testis itself.'",
+      "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/27-1-anatomy-and-physiology-of-the-testicular-reproductive-system",
+      "action": "kept"
+    },
+    {
+      "id": "c15",
+      "classification": "supported",
+      "evidence": "MedlinePlus: the spermatic cord 'holds the testes in the scrotum'; OpenStax 27.1: the ductus deferens is bundled with connective tissue, blood vessels and nerves into the spermatic cord. 'On its way out of the scrotum' not stated, dropped.",
+      "url": "https://medlineplus.gov/ency/article/000517.htm",
+      "action": "edited",
+      "newSentence": "The deferent duct is bundled with blood vessels and nerves in the spermatic cord, which supports the testis in the scrotum."
+    },
+    {
+      "id": "c16",
+      "classification": "unsupported",
+      "evidence": "OpenStax text retrieved did not give the cremaster origin; StatPearls Scrotum says a medial part starts at the pubic tubercle and a lateral part comes from the internal oblique, and another StatPearls page says the inguinal ligament, so sources disagree.",
+      "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK549893/",
+      "action": "removed"
+    },
+    {
+      "id": "c17",
+      "classification": "unsupported",
+      "evidence": "OpenStax 27.1: tunica albuginea forms septa dividing the testis into 300 to 400 lobules; SEER: its posterior surface folds inward to form the mediastinum testis (an incomplete septum). 'Gives the organ structural support' not found, cut.",
+      "url": "https://training.seer.cancer.gov/testicular/anatomy/",
+      "action": "edited",
+      "newSentence": "The tunica albuginea folds inwards to form septa that divide the testis into hundreds of lobules, and at the back of the testis it folds in to form the mediastinum testis, an incomplete septum."
+    },
+    {
+      "id": "c18",
+      "classification": "supported",
+      "evidence": "OpenStax 27.1: 'The tightly coiled seminiferous tubules form the bulk of each testis'; sperm production happens in the seminiferous tubules (SEER agrees). 'Tightly coiled' added from the OpenStax wording.",
+      "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/27-1-anatomy-and-physiology-of-the-testicular-reproductive-system",
+      "action": "edited",
+      "newSentence": "The tightly coiled seminiferous tubules form the bulk of each testis, and sperm are made within them."
+    },
+    {
+      "id": "c19",
+      "classification": "supported",
+      "evidence": "StatPearls Testes: tubuli recti link the seminiferous tubules to the rete testis, 'anastomosing network located in the mediastinum testes'; 'The efferent ductules connect the rete testis to the epididymis'. SEER: coiled tubules merge into a straight tubule leading to the rete testis. OpenStax: sperm leave the rete testis through efferent ductules. 'Pass into the mediastinum' reworded to 'network in the mediastinum'.",
+      "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK470201/",
+      "action": "edited",
+      "newSentence": "The seminiferous tubules join straight tubules, the tubuli recti, which lead to the rete testis, a network in the mediastinum testis, and efferent ductules then connect the rete testis to the epididymis."
+    },
+    {
+      "id": "c20",
+      "classification": "supported",
+      "evidence": "OpenStax Key Terms: Leydig cells are 'cells between the seminiferous tubules of the testes that produce testosterone'.",
+      "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/27-key-terms",
+      "action": "kept"
+    },
+    {
+      "id": "c21",
+      "classification": "supported",
+      "evidence": "OpenStax 27.1: Sertoli cells secrete signals that promote sperm production and can control whether germ cells live or die; Key Terms: blood-testis barrier is the tight junctions between Sertoli cells.",
+      "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/27-1-anatomy-and-physiology-of-the-testicular-reproductive-system",
+      "action": "kept"
+    },
+    {
+      "id": "c22",
+      "classification": "supported",
+      "evidence": "OpenStax 27.1: the barrier keeps bloodborne substances away from germ cells and prevents surface antigens on developing germ cells escaping into the bloodstream and prompting an autoimmune response.",
+      "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/27-1-anatomy-and-physiology-of-the-testicular-reproductive-system",
+      "action": "kept"
+    },
+    {
+      "id": "c23",
+      "classification": "supported",
+      "evidence": "SEER: 'The epididymis consists of three parts: head, body, and tail'; a narrow, tightly coiled tube.",
+      "url": "https://training.seer.cancer.gov/testicular/anatomy/",
+      "action": "kept"
+    },
+    {
+      "id": "c24",
+      "classification": "supported",
+      "evidence": "OpenStax 27.1: sperm 'further mature' along the epididymis and 'the more mature sperm are then stored in the tail of the epididymis'; a SEER duct-system page also says mature sperm are stored in the tail.",
+      "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/27-1-anatomy-and-physiology-of-the-testicular-reproductive-system",
+      "action": "kept"
+    },
+    {
+      "id": "c25",
+      "classification": "supported",
+      "evidence": "SEER: 'Deferent duct (ductus deferens or vas deferens)'; OpenStax also writes 'ductus (vas) deferens'. Source-supported, so not a textbook sentence.",
+      "url": "https://training.seer.cancer.gov/testicular/anatomy/",
+      "action": "kept"
+    },
+    {
+      "id": "c26",
+      "classification": "supported",
+      "evidence": "OpenStax 27.1: 'During ejaculation, sperm exit the tail of the epididymis and are pushed by smooth muscle contraction to the ductus deferens'; SEER: the tail is continuous with the deferent duct.",
+      "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/27-1-anatomy-and-physiology-of-the-testicular-reproductive-system",
+      "action": "kept"
+    },
+    {
+      "id": "c27",
+      "classification": "unsupported",
+      "evidence": "StatPearls Male GU tract: vas deferens ascends through the inguinal canal into the pelvic cavity, 'looping posterolaterally to the prostate'. 'Passes behind the prostate' and 'ampulla near the back of the bladder' not found; reworded to the confirmed course.",
+      "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK562291/",
+      "action": "edited",
+      "newSentence": "The deferent duct ascends through the inguinal canal into the pelvic cavity, looping behind and to the side of the prostate."
+    },
+    {
+      "id": "c28",
+      "classification": "supported",
+      "evidence": "StatPearls Seminal Vesicle: SVs superior to the rectum, inferior to the fundus of the bladder, posterior to the prostate, lateral to the ampulla of the vas; StatPearls Male GU: ampulla and SV duct combine at the base of the prostate; ejaculatory ducts enter the prostate and empty into the prostatic urethra. Bladder relation reworded to StatPearls wording.",
+      "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK499854/",
+      "action": "edited",
+      "newSentence": "Its ampulla joins the duct of the seminal vesicle at the base of the prostate to form the ejaculatory duct, which enters the prostate and empties into the prostatic urethra. Each seminal vesicle lies in the pelvis behind the prostate, below the fundus of the bladder and above the rectum, beside the ampulla of the deferent duct."
+    },
+    {
+      "id": "c29",
+      "classification": "supported",
+      "evidence": "StatPearls Testes: testicular arteries 'arise from the anterolateral segment of the abdominal aorta just below the origin of the renal arteries'; additional supply from the artery of the vas deferens and the cremasteric artery.",
+      "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK470201/",
+      "action": "kept"
+    },
+    {
+      "id": "c30",
+      "classification": "supported",
+      "evidence": "StatPearls Testes: venous blood leaves the testis through the pampiniform plexus, which sits anterior to the vas deferens.",
+      "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK470201/",
+      "action": "kept"
+    },
+    {
+      "id": "c31",
+      "classification": "supported",
+      "evidence": "StatPearls Testes: the testes receive both sympathetic and parasympathetic fibres.",
+      "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK470201/",
+      "action": "kept"
+    },
+    {
+      "id": "c32",
+      "classification": "wrong",
+      "evidence": "A StatPearls Testes summary said 'preaortic', but StatPearls Lymphatic Drainage says the para-aortic (lumbar aortic) nodes drain the testes and the preaortic group (coeliac, mesenteric) drains the gut; a PMC review says testicular lymphatics end in retroperitoneal para-aortic nodes.",
+      "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK557720/",
+      "action": "edited",
+      "newSentence": "Lymph from the testes travels with the testicular vessels and drains to the para-aortic lymph nodes, which lie beside the aorta."
+    },
+    {
+      "id": "c33",
+      "classification": "supported",
+      "evidence": "StatPearls Seminal Vesicle: the middle and inferior vesical arteries and the middle rectal artery are the three sources of arterial supply.",
+      "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK499854/",
+      "action": "edited",
+      "newSentence": "The arteries to the seminal vesicles come from the middle and inferior vesical arteries and the middle rectal artery."
+    },
+    {
+      "id": "c34",
+      "classification": "supported",
+      "evidence": "NCI: testicles produce testosterone and sperm; OpenStax 27.1: testosterone is an androgen made by Leydig cells, and LH 'binds to receptors on Leydig cells' and upregulates testosterone production.",
+      "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/27-1-anatomy-and-physiology-of-the-testicular-reproductive-system",
+      "action": "edited",
+      "newSentence": "The testes make sperm and the androgen testosterone, and luteinising hormone binds to receptors on the Leydig cells and increases their production of testosterone."
+    },
+    {
+      "id": "c35",
+      "classification": "supported",
+      "evidence": "OpenStax 27.1: 'Sperm production proceeds more efficiently when the testes are kept 2 to 4 C below core body temperature' (number left out of the prose).",
+      "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/27-1-anatomy-and-physiology-of-the-testicular-reproductive-system",
+      "action": "kept"
+    },
+    {
+      "id": "c36",
+      "classification": "supported",
+      "evidence": "OpenStax 27.1: dartos and cremaster contracting 'can elevate the testes in cold weather ... decreasing the surface area of the scrotum to retain heat'; when temperature rises the scrotum relaxes, 'increasing scrotal surface area, which promotes heat loss'.",
+      "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/27-1-anatomy-and-physiology-of-the-testicular-reproductive-system",
+      "action": "kept"
+    },
+    {
+      "id": "c37",
+      "classification": "unsupported",
+      "evidence": "OpenStax 27.1: at ejaculation sperm pass to the ductus deferens and mix with fluid from the associated seminal vesicle. 'Seminal vesicles contribute the bulk of semen volume' not found (OpenStax Biology 2e says accessory-gland fluids supply most of the volume); clause cut.",
+      "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/27-1-anatomy-and-physiology-of-the-testicular-reproductive-system",
+      "action": "edited",
+      "newSentence": "During ejaculation sperm travel through the deferent duct and mix with fluid from the associated seminal vesicle."
+    },
+    {
+      "id": "c38",
+      "classification": "supported",
+      "evidence": "MedlinePlus: twisting of the spermatic cord interrupts blood flow to the testicle and can permanently damage it.",
+      "url": "https://medlineplus.gov/ency/article/000517.htm",
+      "action": "kept"
+    },
+    {
+      "id": "c39",
+      "classification": "supported",
+      "evidence": "MedlinePlus: sudden, severe pain in one testicle is the most common sign; NHS Testicle pain page urgent advice: go to A&E immediately or call 999 (the Essex ICB page gave the same advice). Re-attributed to the NHS page.",
+      "url": "https://www.nhs.uk/symptoms/testicle-pain/",
+      "action": "edited",
+      "newSentence": "Sudden, severe pain in one testicle is the most common sign, and NHS advice is to go straight to A&E or call 999."
+    },
+    {
+      "id": "c40",
+      "classification": "unsupported",
+      "evidence": "No retrieved text defined epididymo-orchitis; the cited NHS inform page returned only lumps, hydrocele, cysts, varicocele. Replaced by the nhs.uk Epididymitis statement that the epididymis, the tube behind the testicle, becomes swollen and painful.",
+      "url": "https://www.nhs.uk/conditions/epididymitis/",
+      "action": "edited",
+      "newSentence": "Epididymitis is swelling and pain of the epididymis, the tube behind the testicle, and the NHS says it is usually caused by a sexually transmitted infection or a urine infection, with other causes including mumps, tuberculosis and a groin injury."
+    },
+    {
+      "id": "c41",
+      "classification": "supported",
+      "evidence": "nhs.uk Epididymitis: usually a sexually transmitted infection (men under 35) or a urine infection (men over 35); other causes include mumps, tuberculosis, a groin injury, an enlarged prostate, a urinary catheter, Behcet's disease. Age split left out; 'less common' changed to 'other'.",
+      "url": "https://www.nhs.uk/conditions/epididymitis/",
+      "action": "edited",
+      "newSentence": "Epididymitis is swelling and pain of the epididymis, the tube behind the testicle, and the NHS says it is usually caused by a sexually transmitted infection or a urine infection, with other causes including mumps, tuberculosis and a groin injury."
+    },
+    {
+      "id": "c42",
+      "classification": "unsupported",
+      "evidence": "nhs.uk Epididymitis: depending on the cause, difficulty peeing or a white, yellow or green discharge from the tip of the penis. 'Tender, warm' scrotum not found (a Sheffield leaflet says enlarged, painful, red); cut.",
+      "url": "https://www.nhs.uk/conditions/epididymitis/",
+      "action": "edited",
+      "newSentence": "Depending on the cause, there may also be difficulty passing urine or a discharge from the penis."
+    },
+    {
+      "id": "c43",
+      "classification": "supported",
+      "evidence": "NHS inform: 'the vast majority of testicular lumps and swellings are caused by non-cancerous (benign) conditions'; NHS symptoms page: see a GP about a lump or swelling in a testicle. Advice appended so the sentence is not read as reassurance.",
+      "url": "https://www.nhsinform.scot/illnesses-and-conditions/sexual-and-reproductive/testicular-lumps-and-swellings/",
+      "action": "edited",
+      "newSentence": "Most testicular lumps and swellings are not cancer, although the NHS advises seeing a GP about a lump or swelling in a testicle."
+    },
+    {
+      "id": "c44",
+      "classification": "supported",
+      "evidence": "Leeds: 'Cystic swellings are usually caused by a hydrocele, an epididymal cyst, or a varicocele. These are all benign and only require treatment if they cause significant symptoms.' 'Commonest causes' narrowed to cystic swellings.",
+      "url": "https://www.leedsth.nhs.uk/services/urology/common-urological-conditions/testicular-lump/",
+      "action": "edited",
+      "newSentence": "Cystic swellings are usually caused by a hydrocele, a cyst in the epididymis or a varicocele, and these are all benign and need treatment only if they cause significant symptoms."
+    },
+    {
+      "id": "c45",
+      "classification": "supported",
+      "evidence": "StatPearls Testes: fluid can collect between the tunica vaginalis layers (hydrocele); StatPearls Varicocele: abnormal dilation and enlargement of the scrotal venous pampiniform plexus; NHS inform: varicoceles usually on the left side of the scrotum.",
+      "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK448113/",
+      "action": "edited",
+      "newSentence": "A hydrocele is fluid that collects between the layers of the tunica vaginalis, and a varicocele is an abnormal widening of the veins of the pampiniform plexus that usually occurs on the left."
+    },
+    {
+      "id": "c46",
+      "classification": "supported",
+      "evidence": "NHS Undescended testicles: common in young boys; testicle has not moved down into the scrotum. 'Young children' changed to the NHS wording 'young boys'.",
+      "url": "https://www.nhs.uk/conditions/undescended-testicles/",
+      "action": "edited",
+      "newSentence": "An undescended testicle has not moved into the scrotum as it usually does, and the condition is common in young boys."
+    },
+    {
+      "id": "c47",
+      "classification": "supported",
+      "evidence": "NHS Undescended testicles: many move into place without help; usually found at the newborn examination; NHS treatment page: orchidopexy if they have not descended. 'Doctors' dropped (not stated).",
+      "url": "https://www.nhs.uk/conditions/undescended-testicles/",
+      "action": "edited",
+      "newSentence": "Often the testicle moves into place on its own, but sometimes surgery is needed, and the problem is usually found at the newborn examination."
+    },
+    {
+      "id": "c48",
+      "classification": "supported",
+      "evidence": "The nhs.uk overview excerpt did not list these risks. South Tees NHS FT: fertility problems and increased cancer risk may follow, and the testicle can twist (torsion) and be painful; StatPearls Testes: cryptorchidism leads to infertility and carries a risk of testicular cancer. Re-attributed and softened.",
+      "url": "https://www.southtees.nhs.uk/services/children-and-young-people/specialty/general-surgery/undescended-testes/",
+      "action": "edited",
+      "newSentence": "Left untreated, an undescended testicle can lead to fertility problems later in life and an increased risk of testicular cancer, and it can also twist (testicular torsion), which can be painful."
+    },
+    {
+      "id": "c49",
+      "classification": "supported",
+      "evidence": "NCI: testicular cancer begins when abnormal cells in one or both testicles become malignant (summary paraphrase).",
+      "url": "https://www.cancer.gov/types/testicular/what-is-testicular-cancer",
+      "action": "kept"
+    },
+    {
+      "id": "c50",
+      "classification": "supported",
+      "evidence": "NHS symptoms page: lump or swelling in a testicle, testicle getting bigger, ache or pain in the testicle or scrotum, scrotum feeling heavy, firm or hard.",
+      "url": "https://www.nhs.uk/conditions/testicular-cancer/symptoms/",
+      "action": "kept"
+    },
+    {
+      "id": "c51",
+      "classification": "supported",
+      "evidence": "NHS symptoms page: advice is to see a GP about any of these, and having them does not definitely mean testicular cancer. Wording follows that statement.",
+      "url": "https://www.nhs.uk/conditions/testicular-cancer/symptoms/",
+      "action": "edited",
+      "newSentence": "Having these symptoms does not definitely mean testicular cancer, but the NHS advises seeing a GP about any of them."
+    },
+    {
+      "id": "c52",
+      "classification": "supported",
+      "evidence": "Leeds: 'a simple ultrasound scan will usually differentiate between benign and cancerous swellings'; NHS inform: ultrasound can show whether a lump is a harmless cyst or likely cancer.",
+      "url": "https://www.leedsth.nhs.uk/services/urology/common-urological-conditions/testicular-lump/",
+      "action": "kept"
+    },
+    {
+      "id": "c53",
+      "classification": "supported",
+      "evidence": "NHS tests and next steps (summary, per-line attribution not shown): blood tests and an ultrasound scan of the testicles; a specialist, not the GP, goes through the results and next steps.",
+      "url": "https://www.nhs.uk/conditions/testicular-cancer/tests-and-next-steps/",
+      "action": "kept"
+    }
+  ],
+  "wordsBefore": 1021,
+  "wordsAfter": 1029,
+  "notes": "Convention as in hand.report.json: 'unsupported'+'edited' means a clause could not be confirmed and was cut, keeping only the confirmed remainder. 27 completed standard-mode searches, each limited to one publisher domain (one used medlineplus.gov and nhs.uk together); a 28th attempt (re-check of the NHS tests-and-next-steps page) was refused because the turn's search budget was used up. All evidence is from search-result summaries, which blend several pages and often do not say which page a line came from; items marked (check) deserve a human look. 1) WRONG, c32: the draft said testicular lymph drains to the preaortic nodes (a StatPearls Testes summary did say so), but retrieved StatPearls Lymphatic Drainage says the para-aortic (lumbar aortic) nodes drain the testes and that the preaortic group (coeliac and mesenteric) drains the gut, and a PMC review says testicular lymphatics end in retroperitoneal para-aortic nodes. Sentence now says para-aortic; the Lymphatic Drainage reference (NBK557720) was added, but the quoted para-aortic line could instead have come from NBK532972 (check). The right/left pattern and the caveat that scrotal surgery can open a route to the groin nodes were left out. 2) Torsion advice, c39: the Essex ICB page is dropped as a reference; 'A&E immediately or call 999' now rests on the NHS Testicle pain page (urgent-advice section) and 'sudden, severe pain ... most common sign' on MedlinePlus (attribution of that line is by inference from the summary). The Essex page gave the same advice. 3) Undescended-testis risks, c48: the nhs.uk overview excerpt did not list fertility, cancer or torsion; they came from South Tees Hospitals NHS FT (fertility, cancer, torsion), a GP-practice page reproducing NHS website text (fertility, cancer), StatPearls Testes (infertility, cancer) and GOSH/NNUH leaflets (torsion). Re-attributed to South Tees (added as a reference), softened to 'can lead to' and 'increased risk'; the 6-month and 12-month timings were not carried over. 4) c40: no retrieved text defined epididymo-orchitis, so the term was dropped; the epididymitis sentence follows the nhs.uk page (swollen, painful epididymis; usual causes; other causes). 'Tender, warm' (c42) was not retrieved; the NHS age split (under or over 35) is deliberately left out. 5) c16 removed: StatPearls Scrotum puts the medial cremaster at the pubic tubercle and the lateral part on the internal oblique, another StatPearls page says the inguinal ligament, OpenStax text not found. 6) c27: StatPearls says the duct loops posterolaterally to the prostate; 'ampulla near the back of the bladder' and 'widens into' were not found, so the ampulla is described only as joining the seminal vesicle duct at the base of the prostate. 7) c37: 'seminal vesicles contribute the bulk of semen volume' not found; reduced to OpenStax's 'mix with fluid from the associated seminal vesicle'. 8) c04/c28: 'behind the bladder' replaced by StatPearls' 'inferior to the fundus of the bladder, posterior to the prostate' (a PMC review says dorsal to the bladder). 9) c05 size and c17 'structural support' not found, cut. 10) c25 was the only draft 'textbook' sentence; SEER lists 'Deferent duct (ductus deferens or vas deferens)', so it is source-supported and no textbook sentences remain. 11) c19 tubuli recti, rete testis and efferent ductules: confirmed by StatPearls Testes, SEER (straight tubule leads to the rete) and OpenStax (efferent ductules); a 2024 PubMed paper notes Terminologia Anatomica assigns the efferent ductules to the testis while many textbooks assign them to the epididymis, so the sentence stays neutral. 12) c24: OpenStax and a SEER duct-system page say mature sperm are stored in the tail, whereas the SEER Anatomy of the Testis summary says the head stores sperm for maturation and the body is where they mature; OpenStax wording kept (check). 13) c11/c53 (check): the NHS tests-and-next-steps page title was returned, and the lines match NHS wording, but the summary did not attribute them to it; the re-check was refused. 14) c43: the retrieved NHS 'see a GP' advice was appended so 'most lumps are not cancer' cannot be read as reassurance; c44 narrowed to 'cystic swellings' as Leeds words it (Leeds also says a lump inside the testicle itself needs urgent review; not added). 15) Numbers kept out of the prose: OpenStax 2 to 4 C and 300 to 400 lobules became 'a few degrees' and 'hundreds'. 16) References: Endotext (never retrieved) and Essex ICB dropped; NHS Testicle pain, South Tees, StatPearls Lymphatic Drainage and StatPearls Varicocele added (all retrieved). 18 references, 9 hosts, official bodies present. Validator: no ERROR, no WARN."
+}

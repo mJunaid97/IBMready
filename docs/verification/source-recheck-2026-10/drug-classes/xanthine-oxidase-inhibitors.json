@@ -1,0 +1,25 @@
+{
+ "type": "drug-classes",
+ "id": "xanthine-oxidase-inhibitors",
+ "verdict": "accept-with-edits",
+ "edits": [
+  {
+   "field": "cautions",
+   "action": "remove-item",
+   "match": "Severe skin reactions are more common in children, in people who reacted to an epilepsy medicine, in those allergic to trimethoprim and in those taking sodium valproate",
+   "replacement": "",
+   "reason": "WRONG: this risk list is the NHS lamotrigine wording, not allopurinol; the NHS allopurinol pages give HLA-B*58:01 / Han Chinese, Thai, Korean, African or Indian origin, previous reaction and kidney/liver/thyroid problems as the risk factors."
+  }
+ ],
+ "unverified_urls": [
+  "https://www.nhs.uk/medicines/allopurinol/",
+  "https://www.nhs.uk/medicines/allopurinol/common-questions-about-allopurinol/",
+  "https://www.fda.gov/Drugs/DrugSafety/ucm631182.htm",
+  "https://www.ncbi.nlm.nih.gov/books/NBK127547/bin/20160316_allopurinol.pdf"
+ ],
+ "checked_urls": [
+  "https://www.nhs.uk/medicines/allopurinol/side-effects-of-allopurinol/",
+  "https://www.nhs.uk/medicines/allopurinol/"
+ ],
+ "notes": "NHS excerpt supports SJS description (flu-like then spreading red/purple blistering rash), stopping and seeking urgent help, avoiding new medicines in the first 3 months, and HLA-B*58:01 ethnic risk. Febuxostat boxed warning matches FDA 2019 (legacy ucm URL). Oxypurinol pharmacology is standard. Protected fields unchanged."
+}

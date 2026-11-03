@@ -1,0 +1,17 @@
+{
+ "type": "conditions",
+ "id": "osteoporosis",
+ "verdict": "accept-with-edits",
+ "edits": [
+  {
+   "field": "diagnosis",
+   "action": "remove-sentence",
+   "match": "Bone mineral density is measured non-invasively by DXA at the hip and spine, which NIAMS describes as the most reliable way to diagnose osteoporosis and predict fracture risk; a heel ultrasound can screen for bone loss but a DXA scan is still needed for the diagnosis.",
+   "replacement": "Bone mineral density is measured non-invasively by DXA at the hip and spine, which NIAMS describes as the most common test for measuring bone density, used to diagnose osteoporosis, predict fracture risk and monitor treatment; a heel ultrasound can screen for bone loss but a DXA scan is still needed for the diagnosis.",
+   "reason": "WRONG: NIAMS calls DXA the most common test for measuring bone density (and lists its uses), not 'the most reliable way'."
+  }
+ ],
+ "unverified_urls": [],
+ "checked_urls": [],
+ "notes": "Verdict file generated from the upstream verifier report; every match string was asserted to occur in the current record. URL checks were done in the upstream report and are not repeated here."
+}

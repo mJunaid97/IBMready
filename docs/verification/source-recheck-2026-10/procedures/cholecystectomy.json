@@ -1,0 +1,38 @@
+{
+ "type": "procedures",
+ "id": "cholecystectomy",
+ "verdict": "accept-with-edits",
+ "edits": [
+  {
+   "field": "what",
+   "action": "remove-sentence",
+   "match": "The operation is done under general anaesthetic and usually takes one to two hours.",
+   "replacement": "The operation is done under general anaesthetic.",
+   "reason": "UNSUPPORTED: duration figure not in the retrieved NHS excerpt or the pre-patch record."
+  },
+  {
+   "field": "recovery",
+   "action": "remove-sentence",
+   "match": "After an uncomplicated keyhole operation many people are back to normal physical activity in about a week, while recovery from open surgery takes longer.",
+   "replacement": "Recovery from open surgery takes longer.",
+   "reason": "WRONG: NHS says recovery takes several weeks (about 2 weeks for keyhole, as the pre-patch record states); 'about a week' contradicts both."
+  },
+  {
+   "field": "after",
+   "action": "remove-sentence",
+   "match": "Wounds are kept clean and dry; showering is usually allowed after a couple of days, with baths and swimming delayed until the wounds have healed",
+   "replacement": "Wounds are kept clean and dry; baths and swimming are delayed until the wounds have healed",
+   "reason": "UNSUPPORTED: the 'after a couple of days' showering timescale is not in the NHS excerpt or the pre-patch record."
+  }
+ ],
+ "unverified_urls": [
+  "https://www.niddk.nih.gov/health-information/digestive-diseases/gallstones/treatment",
+  "https://www.worcsacute.nhs.uk/leaflets/laparoscopic-cholecystectomy/",
+  "https://www.hey.nhs.uk/patient-leaflet/laparoscopic-cholecystectomy-removal-gall-bladder-using-keyhole-surgery/"
+ ],
+ "checked_urls": [
+  "https://www.nhs.uk/conditions/gallbladder-removal/risks/",
+  "https://www.nhs.uk/tests-and-treatments/gallbladder-removal/complications/"
+ ],
+ "notes": "NHS excerpts support: day in hospital and several weeks to recover, wound soreness and shoulder/abdominal gas pain passing in a couple of days, infection signs, bile leak, bile duct injury (repairable at the time), bleeding, spilled stones, post-cholecystectomy syndrome, jaundice/fever as reasons to seek care. Bile duct injury 1 in 300 and bile leak 1-2% predate the patch. Remaining additions are standard textbook content. No protected field changed."
+}

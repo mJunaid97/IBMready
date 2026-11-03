@@ -1,0 +1,17 @@
+{
+ "type": "conditions",
+ "id": "peptic-ulcer",
+ "verdict": "accept-with-edits",
+ "edits": [
+  {
+   "field": "diagnosis",
+   "action": "remove-sentence",
+   "match": "Testing for H. pylori is advised for anyone with a current or past ulcer, or with stomach discomfort lasting more than a month.",
+   "replacement": "Testing for H. pylori is advised for anyone with a current or past ulcer.",
+   "reason": "UNSAFE: 'discomfort lasting more than a month' is a new cut-off not in the cited sources."
+  }
+ ],
+ "unverified_urls": [],
+ "checked_urls": [],
+ "notes": "Verdict file generated from the upstream verifier report; every match string was asserted to occur in the current record. URL checks were done in the upstream report and are not repeated here."
+}
