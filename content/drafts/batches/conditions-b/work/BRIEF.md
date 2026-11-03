@@ -1,0 +1,8 @@
+# Worker brief (conditions-b)
+Repo /home/user/IBMready. Read docs/authoring/README.md and docs/authoring/conditions.md fully, and look at docs/authoring/templates/condition.example.json and content/conditions.json entries `lung-cancer` and `gerd`. Work only inside content/drafts/batches/conditions-b/ (work/ for your files). Do not git commit/push.
+Tool: WebSearch (deferred; load with ToolSearch "select:WebSearch"). Budget is shared by the whole session: be frugal, count every call.
+Always pass allowed_domains with several hosts, e.g. ["nhs.uk","nice.org.uk","cancerresearchuk.org","cancer.gov","medlineplus.gov","macmillan.org.uk","ncbi.nlm.nih.gov", + the item's charity hosts]. mode "extended" for broad queries, "standard" for narrow.
+Do not use WebFetch.
+Rules recap: UK English; describe don't instruct; no doses/cut-offs/test thresholds; numbers only if retrieved text states them, attributed; name the route to care (999, NHS 111/same-day GP, routine GP); no survival statistics unless source gives them with a year (prefer words); no "safe/cured/nothing to worry about"; paraphrase.
+Check the screening wording carefully if relevant. Only use ids from the lists in docs/authoring/conditions.md and existing ids in content/conditions.json (related must exist: e.g. hypothyroidism, hyperthyroidism, urinary-tract-infection, lung-cancer, colorectal-cancer, breast-cancer, pancreatitis, cirrhosis...).
+Article: 4-7 sections each 110-220 words, 4-6 faqs (40-90 words each), 5-7 keyFacts; 800-1200 words in article; overview 250-700 chars; references >=3 from >=2 publishers incl. an official one; plain paragraphs separated by \n\n.
