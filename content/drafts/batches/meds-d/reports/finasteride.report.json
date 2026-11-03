@@ -1,0 +1,693 @@
+{
+ "id": "finasteride",
+ "searchesUsed": 9,
+ "counts": {
+  "supported": 77,
+  "textbook": 3,
+  "unsupported": 3,
+  "wrong": 0,
+  "unsafe": 0,
+  "unchecked": 0
+ },
+ "claims": [
+  {
+   "id": "c01",
+   "where": "summary",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/MHRA/MedlinePlus text agrees: NHS About finasteride: 5-alpha reductase inhibitor stopping testosterone turning into dihydrotestosterone; used for enlarged prostate and male pattern baldness.",
+   "url": "https://www.nhs.uk/medicines/finasteride/about-finasteride/",
+   "action": "kept"
+  },
+  {
+   "id": "c02",
+   "where": "summary",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/MHRA/MedlinePlus text agrees: NHS side-effects page: low mood rare, sexual effects may continue after stopping; MHRA drug safety updates: depression, suicidal thoughts, sexual dysfunction may persist.",
+   "url": "https://www.nhs.uk/medicines/finasteride/side-effects-of-finasteride/",
+   "action": "kept"
+  },
+  {
+   "id": "c03",
+   "where": "summary",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/MHRA/MedlinePlus text agrees: NHS About finasteride.",
+   "url": "https://www.nhs.uk/medicines/finasteride/about-finasteride/",
+   "action": "kept"
+  },
+  {
+   "id": "c04",
+   "where": "usedFor[0]",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/MHRA/MedlinePlus text agrees: NHS: used to treat an enlarged prostate, NHS prescription; MedlinePlus: controls but does not cure BPH. Blended search summary.",
+   "url": "https://www.nhs.uk/medicines/finasteride/about-finasteride/",
+   "action": "kept"
+  },
+  {
+   "id": "c05",
+   "where": "usedFor[1]",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/MHRA/MedlinePlus text agrees: NHS About finasteride.",
+   "url": "https://www.nhs.uk/medicines/finasteride/about-finasteride/",
+   "action": "kept"
+  },
+  {
+   "id": "c06",
+   "where": "howItWorks",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/MHRA/MedlinePlus text agrees: NHS About finasteride.",
+   "url": "https://www.nhs.uk/medicines/finasteride/about-finasteride/",
+   "action": "kept"
+  },
+  {
+   "id": "c07",
+   "where": "howItWorks",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/MHRA/MedlinePlus text agrees: NHS About finasteride.",
+   "url": "https://www.nhs.uk/medicines/finasteride/about-finasteride/",
+   "action": "kept"
+  },
+  {
+   "id": "c08",
+   "where": "howItWorks",
+   "classification": "unsupported",
+   "evidence": "Retrieved NHS text gives the mechanism once; no statement it is the same for both uses.",
+   "url": "https://www.nhs.uk/medicines/finasteride/about-finasteride/",
+   "action": "removed"
+  },
+  {
+   "id": "c09",
+   "where": "onset",
+   "classification": "supported",
+   "evidence": "NHS: up to six months for prostate; hair loss improvement after 3 to 6 months (numbers worded as several/few months).",
+   "url": "https://www.nhs.uk/medicines/finasteride/about-finasteride/",
+   "action": "kept"
+  },
+  {
+   "id": "c10",
+   "where": "sideEffects.common[0]",
+   "classification": "unsupported",
+   "evidence": "NHS page frequency not shown in retrieved NHS text; only a West Suffolk NHS leaflet gave 'more than 1 in 100'. NHS stated serious effects are in under 1 in 1,000. Figure removed.",
+   "url": "https://www.nhs.uk/medicines/finasteride/side-effects-of-finasteride/",
+   "action": "edited"
+  },
+  {
+   "id": "c11",
+   "where": "sideEffects.common[1]",
+   "classification": "supported",
+   "evidence": "NHS lists ejaculation problems among common side effects.",
+   "url": "https://www.nhs.uk/medicines/finasteride/side-effects-of-finasteride/",
+   "action": "kept"
+  },
+  {
+   "id": "c12",
+   "where": "sideEffects.common[2]",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/MHRA/MedlinePlus text agrees: NHS side-effects and common-questions pages.",
+   "url": "https://www.nhs.uk/medicines/finasteride/side-effects-of-finasteride/",
+   "action": "kept"
+  },
+  {
+   "id": "c13",
+   "where": "sideEffects.serious[0]",
+   "classification": "supported",
+   "evidence": "NHS: serious effects rare (<1 in 1,000), include depression; stop straight away if for hair loss; call doctor or 111 now for low mood.",
+   "url": "https://www.nhs.uk/medicines/finasteride/side-effects-of-finasteride/",
+   "action": "edited",
+   "newSentence": "(merged into serious[0] with 111 route)"
+  },
+  {
+   "id": "c14",
+   "where": "sideEffects.serious[0]",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/MHRA/MedlinePlus text agrees: NHS side-effects page, as reported by search summary.",
+   "url": "https://www.nhs.uk/medicines/finasteride/side-effects-of-finasteride/",
+   "action": "kept"
+  },
+  {
+   "id": "c15",
+   "where": "sideEffects.serious[0]",
+   "classification": "textbook",
+   "evidence": "Standard crisis routing accepted by the site rule; NHS page itself says 999/A&E for thoughts of self-harm.",
+   "url": "https://www.nhs.uk/medicines/finasteride/side-effects-of-finasteride/",
+   "action": "kept"
+  },
+  {
+   "id": "c16",
+   "where": "sideEffects.serious[1]",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/MHRA/MedlinePlus text agrees: MHRA drug safety updates.",
+   "url": "https://www.gov.uk/drug-safety-update/finasteride-and-dutasteride-updated-safety-warnings-for-psychiatric-side-effects-and-sexual-dysfunction",
+   "action": "kept"
+  },
+  {
+   "id": "c17",
+   "where": "sideEffects.serious[2]",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/MHRA/MedlinePlus text agrees: NHS side-effects page, as reported by search summary.",
+   "url": "https://www.nhs.uk/medicines/finasteride/side-effects-of-finasteride/",
+   "action": "kept"
+  },
+  {
+   "id": "c18",
+   "where": "sideEffects.serious[3]",
+   "classification": "supported",
+   "evidence": "NHS lists anaphylaxis as rare serious allergic reaction needing immediate hospital treatment; 999 for facial/throat swelling with breathing difficulty is route-to-care wording (not verbatim in retrieved text).",
+   "url": "https://www.nhs.uk/medicines/finasteride/side-effects-of-finasteride/",
+   "action": "edited",
+   "newSentence": "The NHS lists anaphylaxis, a serious allergic reaction, as a rare side effect that may need immediate treatment in hospital; swelling of the face, tongue or throat with difficulty breathing is an emergency, so call 999."
+  },
+  {
+   "id": "c19",
+   "where": "cautions[0]",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/MHRA/MedlinePlus text agrees: NHS Who can and cannot take.",
+   "url": "https://www.nhs.uk/medicines/finasteride/who-can-and-cannot-take-finasteride/",
+   "action": "kept"
+  },
+  {
+   "id": "c20",
+   "where": "cautions[1]",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/MHRA/MedlinePlus text agrees: NHS Who can and cannot take.",
+   "url": "https://www.nhs.uk/medicines/finasteride/who-can-and-cannot-take-finasteride/",
+   "action": "kept"
+  },
+  {
+   "id": "c21",
+   "where": "cautions[2]",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/MHRA/MedlinePlus text agrees: NHS About finasteride.",
+   "url": "https://www.nhs.uk/medicines/finasteride/about-finasteride/",
+   "action": "kept"
+  },
+  {
+   "id": "c22",
+   "where": "cautions[3]",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/MHRA/MedlinePlus text agrees: Gloucestershire Hospitals NHS leaflet.",
+   "url": "https://www.gloshospitals.nhs.uk/your-visit/patient-information-leaflets/finasteride-for-women/",
+   "action": "kept"
+  },
+  {
+   "id": "c23",
+   "where": "cautions[4]",
+   "classification": "supported",
+   "evidence": "MedlinePlus: pregnant/possibly pregnant women should avoid touching broken or crushed tablets; wash with soap and water, call a doctor. Single (US) source; noted.",
+   "url": "https://medlineplus.gov/druginfo/meds/a698016.html",
+   "action": "edited",
+   "newSentence": "Labelled as MedlinePlus, a US source; 'call a doctor' wording."
+  },
+  {
+   "id": "c24",
+   "where": "cautions[5]",
+   "classification": "supported",
+   "evidence": "NHS: some men reported poor sperm quality or infertility; not a common side effect; sperm usually returns to normal after stopping.",
+   "url": "https://www.nhs.uk/medicines/finasteride/common-questions-about-finasteride/",
+   "action": "edited",
+   "newSentence": "The NHS notes that some men taking finasteride have reported test results showing poor sperm quality or infertility, but says this is not a common side effect and that sperm quality usually returns to normal after stopping."
+  },
+  {
+   "id": "c25",
+   "where": "cautions[6]",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/MHRA/MedlinePlus text agrees: NHS common questions.",
+   "url": "https://www.nhs.uk/medicines/finasteride/common-questions-about-finasteride/",
+   "action": "kept"
+  },
+  {
+   "id": "c26",
+   "where": "cautions[7]",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/MHRA/MedlinePlus text agrees: MHRA 2026 drug safety update.",
+   "url": "https://www.gov.uk/drug-safety-update/finasteride-and-dutasteride-updated-safety-warnings-for-psychiatric-side-effects-and-sexual-dysfunction",
+   "action": "kept"
+  },
+  {
+   "id": "c27",
+   "where": "monitoring",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/MHRA/MedlinePlus text agrees: MHRA 2026 update.",
+   "url": "https://www.gov.uk/drug-safety-update/finasteride-and-dutasteride-updated-safety-warnings-for-psychiatric-side-effects-and-sexual-dysfunction",
+   "action": "kept"
+  },
+  {
+   "id": "c28",
+   "where": "monitoring",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/MHRA/MedlinePlus text agrees: MHRA pages.",
+   "url": "https://www.gov.uk/drug-safety-update/finasteride-and-dutasteride-updated-safety-warnings-for-psychiatric-side-effects-and-sexual-dysfunction",
+   "action": "kept"
+  },
+  {
+   "id": "c29",
+   "where": "regimenNote",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/MHRA/MedlinePlus text agrees: MedlinePlus: taken by mouth as a tablet.",
+   "url": "https://medlineplus.gov/druginfo/meds/a698016.html",
+   "action": "kept"
+  },
+  {
+   "id": "c30",
+   "where": "article.sections[0].body",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/MHRA/MedlinePlus text agrees: MedlinePlus: taken by mouth as a tablet.",
+   "url": "https://medlineplus.gov/druginfo/meds/a698016.html",
+   "action": "kept"
+  },
+  {
+   "id": "c31",
+   "where": "article.sections[0].body",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/MHRA/MedlinePlus text agrees: NHS About finasteride.",
+   "url": "https://www.nhs.uk/medicines/finasteride/about-finasteride/",
+   "action": "kept"
+  },
+  {
+   "id": "c32",
+   "where": "article.sections[0].body",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/MHRA/MedlinePlus text agrees: NHS About finasteride.",
+   "url": "https://www.nhs.uk/medicines/finasteride/about-finasteride/",
+   "action": "kept"
+  },
+  {
+   "id": "c33",
+   "where": "article.sections[0].body",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/MHRA/MedlinePlus text agrees: MedlinePlus finasteride.",
+   "url": "https://medlineplus.gov/druginfo/meds/a698016.html",
+   "action": "kept"
+  },
+  {
+   "id": "c34",
+   "where": "article.sections[0].body",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/MHRA/MedlinePlus text agrees: NHS About finasteride.",
+   "url": "https://www.nhs.uk/medicines/finasteride/about-finasteride/",
+   "action": "kept"
+  },
+  {
+   "id": "c35",
+   "where": "article.sections[0].body",
+   "classification": "supported",
+   "evidence": "NHS: up to six months for prostate; hair loss improvement after 3 to 6 months (numbers worded as several/few months).",
+   "url": "https://www.nhs.uk/medicines/finasteride/about-finasteride/",
+   "action": "kept"
+  },
+  {
+   "id": "c36",
+   "where": "article.sections[0].body",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/MHRA/MedlinePlus text agrees: NHS Who can and cannot take.",
+   "url": "https://www.nhs.uk/medicines/finasteride/who-can-and-cannot-take-finasteride/",
+   "action": "kept"
+  },
+  {
+   "id": "c37",
+   "where": "article.sections[0].body",
+   "classification": "supported",
+   "evidence": "emc lists Propecia 1 mg; Proscar named in a blended summary; NHS page header not seen, so attribution to NHS dropped.",
+   "url": "https://www.medicines.org.uk/emc/product/2194/smpc",
+   "action": "edited",
+   "newSentence": "Brand names include Proscar and Propecia."
+  },
+  {
+   "id": "c38",
+   "where": "article.sections[0].body",
+   "classification": "textbook",
+   "evidence": "Not stated in retrieved text; definition cut.",
+   "url": "https://www.gov.uk/drug-safety-update/finasteride-and-dutasteride-updated-safety-warnings-for-psychiatric-side-effects-and-sexual-dysfunction",
+   "action": "removed"
+  },
+  {
+   "id": "c39",
+   "where": "article.sections[0].body",
+   "classification": "supported",
+   "evidence": "MHRA: precautionary warning added to dutasteride that mood alterations reported with finasteride class.",
+   "url": "https://www.gov.uk/drug-safety-update/finasteride-and-dutasteride-updated-safety-warnings-for-psychiatric-side-effects-and-sexual-dysfunction",
+   "action": "edited",
+   "newSentence": "The MHRA has also added a precautionary warning to the product information for dutasteride, a similar medicine, that mood changes have been reported with finasteride, which is in the same class."
+  },
+  {
+   "id": "c40",
+   "where": "article.sections[1].body",
+   "classification": "supported",
+   "evidence": "NHS: common effects are reduced interest in sex and difficulty getting an erection.",
+   "url": "https://www.nhs.uk/medicines/finasteride/side-effects-of-finasteride/",
+   "action": "edited",
+   "newSentence": "The NHS names losing interest in sex and difficulty getting an erection as the most common side effects."
+  },
+  {
+   "id": "c41",
+   "where": "article.sections[1].body",
+   "classification": "supported",
+   "evidence": "NHS lists ejaculation problems among common side effects.",
+   "url": "https://www.nhs.uk/medicines/finasteride/side-effects-of-finasteride/",
+   "action": "kept"
+  },
+  {
+   "id": "c42",
+   "where": "article.sections[1].body",
+   "classification": "unsupported",
+   "evidence": "NHS page frequency not shown in retrieved NHS text; only a West Suffolk NHS leaflet gave 'more than 1 in 100'. NHS stated serious effects are in under 1 in 1,000. Figure removed.",
+   "url": "https://www.nhs.uk/medicines/finasteride/side-effects-of-finasteride/",
+   "action": "edited"
+  },
+  {
+   "id": "c43",
+   "where": "article.sections[1].body",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/MHRA/MedlinePlus text agrees: NHS pages.",
+   "url": "https://www.nhs.uk/medicines/finasteride/side-effects-of-finasteride/",
+   "action": "kept"
+  },
+  {
+   "id": "c44",
+   "where": "article.sections[1].body",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/MHRA/MedlinePlus text agrees: NHS common questions.",
+   "url": "https://www.nhs.uk/medicines/finasteride/common-questions-about-finasteride/",
+   "action": "kept"
+  },
+  {
+   "id": "c45",
+   "where": "article.sections[1].body",
+   "classification": "supported",
+   "evidence": "MHRA 2024 DSU: sexual dysfunction persisted after stopping; sexual dysfunction covers decreased sex drive, erectile dysfunction, ejaculation disorders.",
+   "url": "https://www.gov.uk/drug-safety-update/finasteride-reminder-of-the-risk-psychiatric-side-effects-and-of-sexual-side-effects-which-may-persist-after-discontinuation-of-treatment",
+   "action": "edited",
+   "newSentence": "The MHRA drug safety updates make the same point, noting reports of sexual dysfunction that continued after treatment ended."
+  },
+  {
+   "id": "c46",
+   "where": "article.sections[1].body",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/MHRA/MedlinePlus text agrees: MHRA 2026 drug safety update.",
+   "url": "https://www.gov.uk/drug-safety-update/finasteride-and-dutasteride-updated-safety-warnings-for-psychiatric-side-effects-and-sexual-dysfunction",
+   "action": "kept"
+  },
+  {
+   "id": "c47",
+   "where": "article.sections[1].body",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/MHRA/MedlinePlus text agrees: MHRA news pages as summarised.",
+   "url": "https://www.gov.uk/government/news/mhra-strengthens-safety-warnings-for-finasteride-and-dutasteride",
+   "action": "kept"
+  },
+  {
+   "id": "c48",
+   "where": "article.sections[1].body",
+   "classification": "supported",
+   "evidence": "NHS: some men reported poor sperm quality or infertility; not a common side effect; sperm usually returns to normal after stopping.",
+   "url": "https://www.nhs.uk/medicines/finasteride/common-questions-about-finasteride/",
+   "action": "edited",
+   "newSentence": "The NHS notes that some men taking finasteride have reported test results showing poor sperm quality or infertility, but says this is not a common side effect and that sperm quality usually returns to normal after stopping."
+  },
+  {
+   "id": "c49",
+   "where": "article.sections[2].body",
+   "classification": "supported",
+   "evidence": "NHS as above.",
+   "url": "https://www.nhs.uk/medicines/finasteride/side-effects-of-finasteride/",
+   "action": "kept"
+  },
+  {
+   "id": "c50",
+   "where": "article.sections[2].body",
+   "classification": "supported",
+   "evidence": "NHS: stop straight away if for hair loss; call doctor or 111 now for low mood.",
+   "url": "https://www.nhs.uk/medicines/finasteride/side-effects-of-finasteride/",
+   "action": "edited",
+   "newSentence": "The NHS advises contacting a doctor or NHS 111 straight away for low mood, and for men taking it for hair loss, stopping the medicine straight away."
+  },
+  {
+   "id": "c51",
+   "where": "article.sections[2].body",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/MHRA/MedlinePlus text agrees: MHRA updates.",
+   "url": "https://www.gov.uk/drug-safety-update/finasteride-and-dutasteride-updated-safety-warnings-for-psychiatric-side-effects-and-sexual-dysfunction",
+   "action": "kept"
+  },
+  {
+   "id": "c52",
+   "where": "article.sections[2].body",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/MHRA/MedlinePlus text agrees: MHRA 2026 update.",
+   "url": "https://www.gov.uk/drug-safety-update/finasteride-and-dutasteride-updated-safety-warnings-for-psychiatric-side-effects-and-sexual-dysfunction",
+   "action": "kept"
+  },
+  {
+   "id": "c53",
+   "where": "article.sections[2].body",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/MHRA/MedlinePlus text agrees: MHRA 2026 update.",
+   "url": "https://www.gov.uk/drug-safety-update/finasteride-and-dutasteride-updated-safety-warnings-for-psychiatric-side-effects-and-sexual-dysfunction",
+   "action": "kept"
+  },
+  {
+   "id": "c54",
+   "where": "article.sections[2].body",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/MHRA/MedlinePlus text agrees: MHRA news page.",
+   "url": "https://www.gov.uk/government/news/men-on-finasteride-asked-to-stay-vigilant-for-possible-psychiatric-and-sexual-side-effects",
+   "action": "kept"
+  },
+  {
+   "id": "c55",
+   "where": "article.sections[2].body",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/MHRA/MedlinePlus text agrees: NHS Who can and cannot take.",
+   "url": "https://www.nhs.uk/medicines/finasteride/who-can-and-cannot-take-finasteride/",
+   "action": "kept"
+  },
+  {
+   "id": "c56",
+   "where": "article.sections[2].body",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/MHRA/MedlinePlus text agrees: NHS side-effects page as summarised.",
+   "url": "https://www.nhs.uk/medicines/finasteride/side-effects-of-finasteride/",
+   "action": "kept"
+  },
+  {
+   "id": "c57",
+   "where": "article.sections[2].body",
+   "classification": "textbook",
+   "evidence": "Standard crisis routing accepted by the site rule; NHS page itself says 999/A&E for thoughts of self-harm.",
+   "url": "https://www.nhs.uk/medicines/finasteride/side-effects-of-finasteride/",
+   "action": "kept"
+  },
+  {
+   "id": "c58",
+   "where": "article.sections[2].body",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/MHRA/MedlinePlus text agrees: MHRA pages.",
+   "url": "https://www.gov.uk/drug-safety-update/finasteride-and-dutasteride-updated-safety-warnings-for-psychiatric-side-effects-and-sexual-dysfunction",
+   "action": "kept"
+  },
+  {
+   "id": "c59",
+   "where": "article.sections[3].body",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/MHRA/MedlinePlus text agrees: NHS About finasteride.",
+   "url": "https://www.nhs.uk/medicines/finasteride/about-finasteride/",
+   "action": "kept"
+  },
+  {
+   "id": "c60",
+   "where": "article.sections[3].body",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/MHRA/MedlinePlus text agrees: NHS About finasteride.",
+   "url": "https://www.nhs.uk/medicines/finasteride/about-finasteride/",
+   "action": "kept"
+  },
+  {
+   "id": "c61",
+   "where": "article.sections[3].body",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/MHRA/MedlinePlus text agrees: NHS side-effects page as summarised.",
+   "url": "https://www.nhs.uk/medicines/finasteride/side-effects-of-finasteride/",
+   "action": "kept"
+  },
+  {
+   "id": "c62",
+   "where": "article.sections[3].body",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/MHRA/MedlinePlus text agrees: NHS side-effects page as summarised.",
+   "url": "https://www.nhs.uk/medicines/finasteride/side-effects-of-finasteride/",
+   "action": "kept"
+  },
+  {
+   "id": "c63",
+   "where": "article.sections[3].body",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/MHRA/MedlinePlus text agrees: Gloucestershire Hospitals leaflet.",
+   "url": "https://www.gloshospitals.nhs.uk/your-visit/patient-information-leaflets/finasteride-for-women/",
+   "action": "kept"
+  },
+  {
+   "id": "c64",
+   "where": "article.sections[3].body",
+   "classification": "supported",
+   "evidence": "MedlinePlus: pregnant/possibly pregnant women should avoid touching broken or crushed tablets; wash with soap and water, call a doctor. Single (US) source; noted.",
+   "url": "https://medlineplus.gov/druginfo/meds/a698016.html",
+   "action": "edited",
+   "newSentence": "Labelled as MedlinePlus, a US source; 'call a doctor' wording."
+  },
+  {
+   "id": "c65",
+   "where": "article.sections[3].body",
+   "classification": "supported",
+   "evidence": "MedlinePlus as above.",
+   "url": "https://medlineplus.gov/druginfo/meds/a698016.html",
+   "action": "edited",
+   "newSentence": "'call a doctor' (not 'her doctor')."
+  },
+  {
+   "id": "c66",
+   "where": "article.sections[3].body",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/MHRA/MedlinePlus text agrees: NHS common questions.",
+   "url": "https://www.nhs.uk/medicines/finasteride/common-questions-about-finasteride/",
+   "action": "kept"
+  },
+  {
+   "id": "c67",
+   "where": "article.faqs[0].a",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/MHRA/MedlinePlus text agrees: NHS and MHRA.",
+   "url": "https://www.nhs.uk/medicines/finasteride/side-effects-of-finasteride/",
+   "action": "kept"
+  },
+  {
+   "id": "c68",
+   "where": "article.faqs[0].a",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/MHRA/MedlinePlus text agrees: NHS side-effects page as summarised.",
+   "url": "https://www.nhs.uk/medicines/finasteride/side-effects-of-finasteride/",
+   "action": "kept"
+  },
+  {
+   "id": "c69",
+   "where": "article.faqs[1].a",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/MHRA/MedlinePlus text agrees: NHS pages.",
+   "url": "https://www.nhs.uk/medicines/finasteride/side-effects-of-finasteride/",
+   "action": "kept"
+  },
+  {
+   "id": "c70",
+   "where": "article.faqs[1].a",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/MHRA/MedlinePlus text agrees: MHRA pages.",
+   "url": "https://www.gov.uk/drug-safety-update/finasteride-reminder-of-the-risk-psychiatric-side-effects-and-of-sexual-side-effects-which-may-persist-after-discontinuation-of-treatment",
+   "action": "kept"
+  },
+  {
+   "id": "c71",
+   "where": "article.faqs[2].a",
+   "classification": "supported",
+   "evidence": "MedlinePlus: pregnant/possibly pregnant women should avoid touching broken or crushed tablets; wash with soap and water, call a doctor. Single (US) source; noted.",
+   "url": "https://medlineplus.gov/druginfo/meds/a698016.html",
+   "action": "edited",
+   "newSentence": "Labelled as MedlinePlus, a US source; 'call a doctor' wording."
+  },
+  {
+   "id": "c72",
+   "where": "article.faqs[2].a",
+   "classification": "supported",
+   "evidence": "MedlinePlus as above.",
+   "url": "https://medlineplus.gov/druginfo/meds/a698016.html",
+   "action": "edited",
+   "newSentence": "'call a doctor' (not 'her doctor')."
+  },
+  {
+   "id": "c73",
+   "where": "article.faqs[3].a",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/MHRA/MedlinePlus text agrees: NHS About finasteride.",
+   "url": "https://www.nhs.uk/medicines/finasteride/about-finasteride/",
+   "action": "kept"
+  },
+  {
+   "id": "c74",
+   "where": "article.faqs[3].a",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/MHRA/MedlinePlus text agrees: NHS About finasteride.",
+   "url": "https://www.nhs.uk/medicines/finasteride/about-finasteride/",
+   "action": "kept"
+  },
+  {
+   "id": "c75",
+   "where": "article.faqs[4].a",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/MHRA/MedlinePlus text agrees: NHS About finasteride.",
+   "url": "https://www.nhs.uk/medicines/finasteride/about-finasteride/",
+   "action": "kept"
+  },
+  {
+   "id": "c76",
+   "where": "article.faqs[4].a",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/MHRA/MedlinePlus text agrees: NHS About finasteride.",
+   "url": "https://www.nhs.uk/medicines/finasteride/about-finasteride/",
+   "action": "kept"
+  },
+  {
+   "id": "c77",
+   "where": "article.keyFacts[0].value",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/MHRA/MedlinePlus text agrees: NHS page header.",
+   "url": "https://www.nhs.uk/medicines/finasteride/who-can-and-cannot-take-finasteride/",
+   "action": "kept"
+  },
+  {
+   "id": "c78",
+   "where": "article.keyFacts[1].value",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/MHRA/MedlinePlus text agrees: NHS About finasteride.",
+   "url": "https://www.nhs.uk/medicines/finasteride/about-finasteride/",
+   "action": "kept"
+  },
+  {
+   "id": "c79",
+   "where": "article.keyFacts[2].value",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/MHRA/MedlinePlus text agrees: NHS About finasteride.",
+   "url": "https://www.nhs.uk/medicines/finasteride/about-finasteride/",
+   "action": "kept"
+  },
+  {
+   "id": "c80",
+   "where": "article.keyFacts[3].value",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/MHRA/MedlinePlus text agrees: NHS About finasteride.",
+   "url": "https://www.nhs.uk/medicines/finasteride/about-finasteride/",
+   "action": "kept"
+  },
+  {
+   "id": "c81",
+   "where": "article.keyFacts[4].value",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/MHRA/MedlinePlus text agrees: NHS pages.",
+   "url": "https://www.nhs.uk/medicines/finasteride/side-effects-of-finasteride/",
+   "action": "kept"
+  },
+  {
+   "id": "c82",
+   "where": "article.keyFacts[5].value",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/MHRA/MedlinePlus text agrees: NHS and MHRA.",
+   "url": "https://www.nhs.uk/medicines/finasteride/side-effects-of-finasteride/",
+   "action": "kept"
+  },
+  {
+   "id": "c83",
+   "where": "article.keyFacts[6].value",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/MHRA/MedlinePlus text agrees: NHS About finasteride.",
+   "url": "https://www.nhs.uk/medicines/finasteride/about-finasteride/",
+   "action": "kept"
+  }
+ ],
+ "notes": "'1 in 100' figure not found on retrieved NHS text (only a West Suffolk NHS leaflet); removed everywhere, NHS said serious effects are under 1 in 1,000. MHRA-regulator definition and MedlinePlus 'will not cure' sentence cut. Crushed-tablet advice rests on MedlinePlus only (US source, now labelled); Glos leaflet on women not re-read for it. Proscar brand rests on blended summary; Propecia confirmed on emc. NHS 999 wording for anaphylaxis is route-to-care, not verbatim. Hair-loss 3-6 months and 'up to six months' prostate figures worded as 'a few/several months'. Some NHS pages may predate the 2026 MHRA update."
+}
