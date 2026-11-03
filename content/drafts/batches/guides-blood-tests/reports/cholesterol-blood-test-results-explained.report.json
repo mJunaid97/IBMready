@@ -1,0 +1,364 @@
+{
+ "id": "cholesterol-blood-test-results-explained",
+ "searchesUsed": 8,
+ "counts": {
+  "supported": 25,
+  "textbook": 1,
+  "unsupported": 14,
+  "wrong": 1,
+  "unsafe": 0,
+  "unchecked": 0
+ },
+ "claims": [
+  {
+   "id": "c01",
+   "classification": "supported",
+   "evidence": "Lipid profile covers total, HDL, non-HDL cholesterol and triglycerides; BHF/practice pages say QRISK combines cholesterol with other risk factors",
+   "url": "https://labtestsonline.org.uk/tests/lipid-profile",
+   "action": "kept"
+  },
+  {
+   "id": "c02",
+   "classification": "supported",
+   "evidence": "Lipid profile measures cholesterol, triglycerides and related measures",
+   "url": "https://labtestsonline.org.uk/tests/lipid-profile",
+   "action": "kept"
+  },
+  {
+   "id": "c03",
+   "classification": "supported",
+   "evidence": "Most samples come from a vein in the arm; fasting matters for some tests",
+   "url": "https://labtestsonline.org.uk/tests/lipid-profile",
+   "action": "kept"
+  },
+  {
+   "id": "c04",
+   "classification": "supported",
+   "evidence": "Profile covers good (HDL), bad (non-HDL), total cholesterol and triglycerides",
+   "url": "https://labtestsonline.org.uk/tests/lipid-profile",
+   "action": "kept"
+  },
+  {
+   "id": "c05",
+   "classification": "unsupported",
+   "evidence": "Not retrieved. Retrieved text says LDL is usually calculated from total cholesterol, HDL and triglycerides",
+   "url": "https://pathology.uhsussex.nhs.uk/pug/biochemistry-immunology/biochemistry-tests/390-lipid-profile",
+   "action": "edited",
+   "newSentence": "NHS laboratories usually calculate LDL cholesterol from total cholesterol, HDL and triglycerides rather than measuring it directly."
+  },
+  {
+   "id": "c06",
+   "classification": "supported",
+   "evidence": "Lab guide: elevated HDL protective against heart disease, reduced levels increase cardiovascular risk",
+   "url": "https://www.leedsth.nhs.uk/services/pathology/tests/hdl-cholesterol/",
+   "action": "kept"
+  },
+  {
+   "id": "c07",
+   "classification": "supported",
+   "evidence": "Non-HDL calculated as total cholesterol minus HDL",
+   "url": "https://labtestsonline.org.uk/tests/non-hdl-cholesterol-test",
+   "action": "kept"
+  },
+  {
+   "id": "c08",
+   "classification": "unsupported",
+   "evidence": "'More informative than LDL alone' not retrieved. Retrieved: non-HDL captures combined atherogenic lipoproteins and is preferred to LDL as treatment goal when non-fasting",
+   "url": "https://labtestsonline.org.uk/tests/non-hdl-cholesterol-test",
+   "action": "edited",
+   "newSentence": "It captures the combined harmful types of cholesterol, and some NHS laboratories prefer it to LDL when samples are not fasting."
+  },
+  {
+   "id": "c09",
+   "classification": "supported",
+   "evidence": "Non-HDL can be used without fasting",
+   "url": "https://labtestsonline.org.uk/tests/non-hdl-cholesterol-test",
+   "action": "kept"
+  },
+  {
+   "id": "c10",
+   "classification": "supported",
+   "evidence": "Triglycerides are a type of fat in the blood",
+   "url": "https://labtestsonline.org.uk/tests/lipid-profile",
+   "action": "kept"
+  },
+  {
+   "id": "c11",
+   "classification": "unsupported",
+   "evidence": "Retrieved: fasting no longer routinely required (NICE); a fasting repeat is advised by one trust if non-fasting triglyceride very high. 'More accurate' not seen",
+   "url": "https://pathology.uhsussex.nhs.uk/pug/biochemistry-immunology/biochemistry-tests/390-lipid-profile",
+   "action": "edited",
+   "newSentence": "Fasting is no longer routinely required, though some laboratories ask for a fasting repeat when a non-fasting triglyceride result is very high."
+  },
+  {
+   "id": "c12",
+   "classification": "unsupported",
+   "evidence": "BHF (not NHS page) gives healthy targets and a lower goal after heart attack or stroke",
+   "url": "https://www.bhf.org.uk/informationsupport/risk-factors/high-cholesterol/understanding-your-cholesterol-levels",
+   "action": "edited",
+   "newSentence": "The BHF gives healthy cholesterol targets and says the goal is lower after a heart attack or stroke."
+  },
+  {
+   "id": "c13",
+   "classification": "supported",
+   "evidence": "Sources differ slightly on targets; thresholds vary by lab and guideline",
+   "url": "https://labtestsonline.org.uk/tests/lipid-profile",
+   "action": "kept"
+  },
+  {
+   "id": "c14",
+   "classification": "textbook",
+   "evidence": "Plain fact that lab reports carry their reference range; retrieved text says to check own report's ranges",
+   "url": "https://labtestsonline.org.uk/tests/lipid-profile",
+   "action": "kept"
+  },
+  {
+   "id": "c15",
+   "classification": "supported",
+   "evidence": "Risk calculation takes cholesterol types, age, sex, blood pressure, smoking; targets differ with conditions such as diabetes or cardiovascular disease",
+   "url": "https://stewartmc.nhs.uk/cholesterol-letter-qrisk-10-20",
+   "action": "kept"
+  },
+  {
+   "id": "c16",
+   "classification": "supported",
+   "evidence": "Statins generally offered where QRISK is 10% or more and lifestyle has not helped; QRISK used to assess risk",
+   "url": "https://www.nhs.uk/medicines/statins/",
+   "action": "kept"
+  },
+  {
+   "id": "c17",
+   "classification": "unsupported",
+   "evidence": "'Because their risk is already high' not stated. Retrieved: after CVD is established, pathways move to secondary prevention, which does not use QRISK",
+   "url": "https://www.nottsapc.nhs.uk/media/0aod5fib/final-hyperlipidaemia-guidelines.pdf",
+   "action": "edited",
+   "newSentence": "For people who already have cardiovascular disease, pathways move to secondary prevention, which does not use QRISK."
+  },
+  {
+   "id": "c18",
+   "classification": "unsupported",
+   "evidence": "Practice nurse and 'GP takes the sample' not stated. Retrieved: ask your GP, pharmacy, or NHS Health Check in England; finger prick or arm",
+   "url": "https://www.bhf.org.uk/informationsupport/risk-factors/high-cholesterol/understanding-your-cholesterol-levels",
+   "action": "edited",
+   "newSentence": "People can ask their GP, or may be offered a test at a pharmacy or through an NHS Health Check in England."
+  },
+  {
+   "id": "c19",
+   "classification": "unsupported",
+   "evidence": "Diet components not retrieved. Retrieved: lifestyle support such as diet, exercise, stopping smoking, managing weight",
+   "url": "https://www.woodfieldmedicalcentre.nhs.uk/2025/06/13/cardiovascular-risk-score-qrisk2-and-the-use-of-statins/",
+   "action": "edited",
+   "newSentence": "People at higher risk are offered support with lifestyle changes such as diet, exercise, stopping smoking and managing weight."
+  },
+  {
+   "id": "c20",
+   "classification": "unsupported",
+   "evidence": "Aerobic activity advice not retrieved",
+   "url": "https://www.england.nhs.uk/aac/wp-content/uploads/sites/50/2020/04/lipid-management-pathway-v6.pdf",
+   "action": "removed"
+  },
+  {
+   "id": "c21",
+   "classification": "supported",
+   "evidence": "Pathway: trial of lifestyle modification for 3-6 months before drug therapy",
+   "url": "https://www.nottsapc.nhs.uk/media/0aod5fib/final-hyperlipidaemia-guidelines.pdf",
+   "action": "kept"
+  },
+  {
+   "id": "c22",
+   "classification": "wrong",
+   "evidence": "Pathways list atorvastatin 20mg as first-line in primary prevention; higher-intensity doses are for people with established CVD",
+   "url": "https://www.nottsapc.nhs.uk/media/0aod5fib/final-hyperlipidaemia-guidelines.pdf",
+   "action": "edited",
+   "newSentence": "Pathways list atorvastatin as the usual first statin for primary prevention, with a higher starting dose for people who already have cardiovascular disease."
+  },
+  {
+   "id": "c23",
+   "classification": "supported",
+   "evidence": "Add ezetimibe to statin if reduction is not enough",
+   "url": "https://www.nottsapc.nhs.uk/media/0aod5fib/final-hyperlipidaemia-guidelines.pdf",
+   "action": "kept"
+  },
+  {
+   "id": "c24",
+   "classification": "supported",
+   "evidence": "BHF lists trying a different statin or changing the dose when side effects arise",
+   "url": "https://www.bhf.org.uk/informationsupport/treatments/medicine/statins",
+   "action": "kept"
+  },
+  {
+   "id": "c25",
+   "classification": "supported",
+   "evidence": "Pathways remeasure lipid profile about 3 months after starting",
+   "url": "https://www.nottsapc.nhs.uk/media/0aod5fib/final-hyperlipidaemia-guidelines.pdf",
+   "action": "kept"
+  },
+  {
+   "id": "c26",
+   "classification": "unsupported",
+   "evidence": "'Atheroma' and 'artery walls' not stated. Retrieved: excess cholesterol can narrow arteries through build-up of fatty material",
+   "url": "https://www.bhf.org.uk/informationsupport/risk-factors/high-cholesterol",
+   "action": "edited",
+   "newSentence": "The BHF explains that extra cholesterol can build up as fatty material in the arteries and narrow them."
+  },
+  {
+   "id": "c27",
+   "classification": "supported",
+   "evidence": "Narrowed arteries can raise risk of heart attack or stroke",
+   "url": "https://www.bhf.org.uk/informationsupport/risk-factors/high-cholesterol",
+   "action": "kept"
+  },
+  {
+   "id": "c28",
+   "classification": "unsupported",
+   "evidence": "Diabetes link not retrieved. Retrieved: cholesterol is one risk factor; the more risk factors, the greater the risk; QRISK includes blood pressure and smoking",
+   "url": "https://mendipvale.nhs.uk/services/medical-guidance/lipids-cholesterol",
+   "action": "edited",
+   "newSentence": "Having more risk factors, such as smoking or high blood pressure, raises the overall risk further."
+  },
+  {
+   "id": "c29",
+   "classification": "supported",
+   "evidence": "Most people with high cholesterol have no symptoms",
+   "url": "https://www.bhf.org.uk/informationsupport/risk-factors/high-cholesterol",
+   "action": "kept"
+  },
+  {
+   "id": "c30",
+   "classification": "supported",
+   "evidence": "FH is an inherited form of high cholesterol",
+   "url": "https://www.bhf.org.uk/informationsupport/conditions/familial-hypercholesterolaemia",
+   "action": "kept"
+  },
+  {
+   "id": "c31",
+   "classification": "unsupported",
+   "evidence": "SWL guidance not retrieved. BHF: FH levels usually present from birth",
+   "url": "https://www.bhf.org.uk/informationsupport/conditions/familial-hypercholesterolaemia",
+   "action": "edited",
+   "newSentence": "In familial hypercholesterolaemia the high cholesterol is usually present from birth."
+  },
+  {
+   "id": "c32",
+   "classification": "unsupported",
+   "evidence": "'High result on routine test' not retrieved. BHF: heart attack or stroke at a younger age, or relatives with early heart disease, can point to FH",
+   "url": "https://www.bhf.org.uk/informationsupport/conditions/familial-hypercholesterolaemia",
+   "action": "edited",
+   "newSentence": "The BHF says a heart attack or stroke at a younger age, or relatives with early heart disease, can point to it."
+  },
+  {
+   "id": "c33",
+   "classification": "supported",
+   "evidence": "Statins may be offered to higher-risk people when lifestyle changes have not helped or are unlikely to help",
+   "url": "https://www.nhs.uk/medicines/statins/",
+   "action": "kept"
+  },
+  {
+   "id": "c34",
+   "classification": "supported",
+   "evidence": "Statins offered after existing condition raising risk; FH in higher-risk list",
+   "url": "https://www.nhs.uk/medicines/statins/",
+   "action": "kept"
+  },
+  {
+   "id": "c35",
+   "classification": "supported",
+   "evidence": "NICE: ezetimibe for people who cannot take statins",
+   "url": "https://www.bhf.org.uk/informationsupport/heart-matters-magazine/medical/statin-alternatives",
+   "action": "kept"
+  },
+  {
+   "id": "c36",
+   "classification": "unsupported",
+   "evidence": "BHF statement about combining lifestyle and medicine not retrieved",
+   "url": "https://www.bhf.org.uk/informationsupport/risk-factors/high-cholesterol",
+   "action": "removed"
+  },
+  {
+   "id": "c37",
+   "classification": "unsupported",
+   "evidence": "Essex ICB page not retrieved",
+   "url": "https://www.essex.icb.nhs.uk/health/prevention/live-well/cardiovascular-health/cholesterol/",
+   "action": "removed"
+  },
+  {
+   "id": "c38",
+   "classification": "supported",
+   "evidence": "Same as c04",
+   "url": "https://labtestsonline.org.uk/tests/lipid-profile",
+   "action": "kept"
+  },
+  {
+   "id": "c39",
+   "classification": "supported",
+   "evidence": "Non-HDL is total minus HDL and captures combined atherogenic lipoproteins",
+   "url": "https://labtestsonline.org.uk/tests/non-hdl-cholesterol-test",
+   "action": "kept"
+  },
+  {
+   "id": "c40",
+   "classification": "supported",
+   "evidence": "Risk calculated from cholesterol, age, blood pressure, conditions",
+   "url": "https://stewartmc.nhs.uk/cholesterol-letter-qrisk-10-20",
+   "action": "kept"
+  },
+  {
+   "id": "c41",
+   "classification": "supported",
+   "evidence": "Pathways: lifestyle first, statin, repeat test about 3 months",
+   "url": "https://www.nottsapc.nhs.uk/media/0aod5fib/final-hyperlipidaemia-guidelines.pdf",
+   "action": "kept"
+  }
+ ],
+ "additions": [
+  {
+   "section": "new: Inherited high cholesterol",
+   "sentence": "The BHF lists lumps on the tendons, yellow lumps around the eyelids and a pale ring around the iris as possible signs, though many people have none.",
+   "url": "https://www.bhf.org.uk/informationsupport/conditions/familial-hypercholesterolaemia",
+   "evidence": "BHF FH: tendon lumps, eyelid lumps, pale ring around iris; signs appear only after long time and some never get any"
+  },
+  {
+   "section": "new: Inherited high cholesterol",
+   "sentence": "The BHF says that if one parent has familial hypercholesterolaemia, a child has a 1 in 2 chance of also having it.",
+   "url": "https://www.bhf.org.uk/informationsupport/conditions/familial-hypercholesterolaemia",
+   "evidence": "If one parent has FH, there is a 50% chance their son or daughter may also have it"
+  },
+  {
+   "section": "What the test measures",
+   "sentence": "Total cholesterol is the combined figure, covering both good and bad cholesterol together.",
+   "url": "https://labtestsonline.org.uk/tests/lipid-profile",
+   "evidence": "Total cholesterol is the combined figure, including both good and bad cholesterol"
+  },
+  {
+   "section": "What the test measures",
+   "sentence": "NICE guidance dropped routine fasting for a lipid profile, according to one NHS laboratory.",
+   "url": "https://pathology.uhsussex.nhs.uk/pug/biochemistry-immunology/biochemistry-tests/390-lipid-profile",
+   "evidence": "NICE CG181 (now replaced by NG238) recommended patients no longer have to fast for routine lipid profile"
+  },
+  {
+   "section": "Who is offered treatment",
+   "sentence": "Targets may be lower for people with conditions such as diabetes or cardiovascular disease, according to NHS 111 Wales.",
+   "url": "https://111.wales.nhs.uk/encyclopaedia/c/article/cholesterol,high",
+   "evidence": "Levels to aim for might be different depending on age and conditions such as diabetes or cardiovascular disease"
+  },
+  {
+   "section": "Who is offered treatment",
+   "sentence": "The NHS says some people should not take statins, including those with severe liver disease and those who are pregnant or trying to conceive.",
+   "url": "https://www.nhs.uk/medicines/statins/",
+   "evidence": "NHS lists severe liver disease, pregnancy or trying to conceive as reasons not to take statins"
+  },
+  {
+   "section": "Who is offered treatment",
+   "sentence": "The NHS says higher risk can be shown by a QRISK assessment, by conditions such as diabetes, chronic kidney disease or familial hypercholesterolaemia, or by being aged 85 or over.",
+   "url": "https://www.nhs.uk/medicines/statins/",
+   "evidence": "Higher risk can be shown by a QRISK assessment, conditions such as diabetes, CKD or FH, or being aged 85 or over"
+  },
+  {
+   "section": "Treatment",
+   "sentence": "The BHF says most people have no side effects from statins.",
+   "url": "https://www.bhf.org.uk/informationsupport/treatments/medicine/statins",
+   "evidence": "Another BHF page says most people have no side effects from statins"
+  }
+ ],
+ "notes": "Searches returned blended summaries; some URL attributions (c06 Leeds HDL page, c28 practice page, c11/c18 NHS trust page) are the best match among returned links, not a verified single page. NICE NG238/QRISK page text and NHS cholesterol-levels page were not returned. Several local-pathway claims rely on regional pathway PDFs."
+}

@@ -1,0 +1,379 @@
+{
+ "id": "low-ferritin-what-it-means",
+ "searchesUsed": 8,
+ "counts": {
+  "supported": 31,
+  "textbook": 0,
+  "unsupported": 12,
+  "wrong": 0,
+  "unsafe": 1,
+  "unchecked": 0
+ },
+ "claims": [
+  {
+   "id": "c01",
+   "classification": "supported",
+   "evidence": "Ferritin tracks iron stores; low in long-term iron deficiency; NHS guidance lists blood loss, pregnancy as common causes; further cause is investigated",
+   "url": "https://www.nhs.uk/conditions/iron-deficiency-anaemia/",
+   "action": "kept"
+  },
+  {
+   "id": "c02",
+   "classification": "supported",
+   "evidence": "Ferritin tracks your body's iron stores (LTO)",
+   "url": "https://labtestsonline.org.uk/tests/ferritin-test",
+   "action": "kept"
+  },
+  {
+   "id": "c03",
+   "classification": "supported",
+   "evidence": "Ferritin tracks the body's iron stores (LTO)",
+   "url": "https://labtestsonline.org.uk/tests/ferritin-test",
+   "action": "kept"
+  },
+  {
+   "id": "c04",
+   "classification": "unsupported",
+   "evidence": "Retrieved text says levels are low in long-term iron deficiency and high in long-term iron overload; it does not state when doctors order the test",
+   "url": "https://labtestsonline.org.uk/tests/ferritin-test",
+   "action": "edited",
+   "newSentence": "Ferritin levels are low in long-term iron deficiency and high in long-term iron overload."
+  },
+  {
+   "id": "c05",
+   "classification": "unsupported",
+   "evidence": "LTO text: 'most useful indicator of iron deficiency' because stores can be low before blood iron falls; 'most sensitive early marker' not seen",
+   "url": "https://labtestsonline.org.uk/tests/ferritin-test",
+   "action": "edited",
+   "newSentence": "Lab Tests Online UK describes it as the most useful indicator of iron deficiency."
+  },
+  {
+   "id": "c06",
+   "classification": "supported",
+   "evidence": "Ferritin levels are low in long-term iron deficiency (LTO)",
+   "url": "https://labtestsonline.org.uk/tests/ferritin-test",
+   "action": "kept"
+  },
+  {
+   "id": "c07",
+   "classification": "unsupported",
+   "evidence": "NHS wording about 'not much iron stored' not seen in retrieved text",
+   "url": "https://labtestsonline.org.uk/tests/ferritin-test",
+   "action": "edited",
+   "newSentence": "Ferritin tracks the body's iron stores, so a low result reflects low stores."
+  },
+  {
+   "id": "c08",
+   "classification": "supported",
+   "evidence": "Ferritin stores can be significantly low before any decrease in blood iron (LTO)",
+   "url": "https://labtestsonline.org.uk/tests/ferritin-test",
+   "action": "kept"
+  },
+  {
+   "id": "c09",
+   "classification": "supported",
+   "evidence": "Non-anaemic iron deficiency can present with fatigue; fatigue and weakness can occur before haemoglobin falls (2024 study on iron-deficient non-anaemic adults)",
+   "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11231206/",
+   "action": "kept"
+  },
+  {
+   "id": "c10",
+   "classification": "supported",
+   "evidence": "Ferritin may be decreased if protein levels are very low, as in some cases of malnutrition (LTO)",
+   "url": "https://labtestsonline.org.uk/tests/ferritin-test",
+   "action": "kept"
+  },
+  {
+   "id": "c11",
+   "classification": "supported",
+   "evidence": "NHS guidance: common causes include pregnancy, heavy periods and conditions that cause blood loss",
+   "url": "https://www.nhs.uk/conditions/iron-deficiency-anaemia/",
+   "action": "kept"
+  },
+  {
+   "id": "c12",
+   "classification": "supported",
+   "evidence": "Guidance lists heavy periods (menorrhagia), coeliac disease, diet with too little iron, gut causes",
+   "url": "https://northeast.devonformularyguidance.nhs.uk/referral-guidance/eastern-locality/haematology/iron-deficiency-anaemia",
+   "action": "kept"
+  },
+  {
+   "id": "c13",
+   "classification": "supported",
+   "evidence": "Formulary lists colorectal and gastric cancer, gastric ulceration, aspirin, NSAIDs and long-term PPI use; cause matters more than anaemia",
+   "url": "https://northeast.devonformularyguidance.nhs.uk/referral-guidance/eastern-locality/haematology/iron-deficiency-anaemia",
+   "action": "kept"
+  },
+  {
+   "id": "c14",
+   "classification": "unsupported",
+   "evidence": "Retrieved text says guidance recommends coeliac screening in people with iron deficiency anaemia; the NHS Scotland attribution was not verified",
+   "url": "https://remedy.bnssg.icb.nhs.uk/adults/gastroenterology-and-colorectal-surgery/anaemia-iron-deficiency/",
+   "action": "edited",
+   "newSentence": "UK guidance recommends checking for coeliac disease in people with iron deficiency anaemia."
+  },
+  {
+   "id": "c15",
+   "classification": "supported",
+   "evidence": "Common symptoms: tiredness, breathlessness, palpitations and pale skin",
+   "url": "https://www.nhs.uk/conditions/iron-deficiency-anaemia/",
+   "action": "kept"
+  },
+  {
+   "id": "c16",
+   "classification": "unsupported",
+   "evidence": "Tinnitus, hair loss, sore tongue, pica listed; itchy skin not seen",
+   "url": "https://www.nhs.uk/conditions/iron-deficiency-anaemia/",
+   "action": "edited",
+   "newSentence": "Less common symptoms include hair loss, ringing in the ears, a sore tongue and a craving for non-food items."
+  },
+  {
+   "id": "c17",
+   "classification": "supported",
+   "evidence": "Pica is craving for non-food items such as ice, paper or clay",
+   "url": "https://www.nhs.uk/conditions/iron-deficiency-anaemia/",
+   "action": "kept"
+  },
+  {
+   "id": "c18",
+   "classification": "supported",
+   "evidence": "NHS guidance: see your GP if you have symptoms; diagnosis usually relies on a simple blood test",
+   "url": "https://www.nhs.uk/conditions/iron-deficiency-anaemia/",
+   "action": "kept"
+  },
+  {
+   "id": "c19",
+   "classification": "supported",
+   "evidence": "Ferritin can be high for several reasons other than iron (LTO)",
+   "url": "https://labtestsonline.org.uk/tests/ferritin-test",
+   "action": "kept"
+  },
+  {
+   "id": "c20",
+   "classification": "supported",
+   "evidence": "High for inflammatory conditions, infection and liver disease (LTO)",
+   "url": "https://labtestsonline.org.uk/tests/ferritin-test",
+   "action": "kept"
+  },
+  {
+   "id": "c21",
+   "classification": "supported",
+   "evidence": "Newcastle guidance: inflammation may elevate ferritin into normal range, so check inflammatory markers such as CRP",
+   "url": "https://laboratories.newcastle-hospitals.nhs.uk/wp-content/uploads/2024/11/GP-Adult-haematology-guidelines-v10.pdf",
+   "action": "kept"
+  },
+  {
+   "id": "c22",
+   "classification": "supported",
+   "evidence": "High in long-term iron overload, especially haemochromatosis; levels above range must be assessed further",
+   "url": "https://labtestsonline.org.uk/tests/ferritin-test",
+   "action": "kept"
+  },
+  {
+   "id": "c23",
+   "classification": "supported",
+   "evidence": "Diagnosis usually relies on a simple blood test; ferritin is the first-line test",
+   "url": "https://www.nhs.uk/conditions/iron-deficiency-anaemia/",
+   "action": "kept"
+  },
+  {
+   "id": "c24",
+   "classification": "supported",
+   "evidence": "Specialist referral if the GP cannot identify a cause; guidance recommends further investigation",
+   "url": "https://www.nhs.uk/conditions/iron-deficiency-anaemia/",
+   "action": "kept"
+  },
+  {
+   "id": "c25",
+   "classification": "unsupported",
+   "evidence": "Not stated in retrieved text; text did say the GP may refer to a specialist if no cause is found",
+   "url": "https://www.nhs.uk/conditions/iron-deficiency-anaemia/",
+   "action": "edited",
+   "newSentence": "A GP may refer to a specialist if no cause can be found."
+  },
+  {
+   "id": "c26",
+   "classification": "supported",
+   "evidence": "NHS: iron tablets recommended, taken for about 6 months",
+   "url": "https://www.nhs.uk/conditions/iron-deficiency-anaemia/",
+   "action": "kept"
+  },
+  {
+   "id": "c27",
+   "classification": "supported",
+   "evidence": "Constipation, nausea, diarrhoea, abdominal pain and dark stools reported; common cause of poor adherence",
+   "url": "https://www.rightdecisions.scot.nhs.uk/m/2295/ida.pdf",
+   "action": "kept"
+  },
+  {
+   "id": "c28",
+   "classification": "supported",
+   "evidence": "Intravenous iron is a second option when supplements cannot be given or have not worked",
+   "url": "https://northeast.devonformularyguidance.nhs.uk/formulary/chapters/9-blood-and-nutrition/9-1-anaemias/9-1-1-iron-deficiency-anaemias",
+   "action": "kept"
+  },
+  {
+   "id": "c29",
+   "classification": "unsupported",
+   "evidence": "Only seen: patients monitored in first weeks for haemoglobin response; 'over following months, iron level returning to normal' not stated",
+   "url": "https://www.nhs.uk/conditions/iron-deficiency-anaemia/",
+   "action": "edited",
+   "newSentence": "Guidance says patients are monitored in the first weeks for a haemoglobin response to iron tablets."
+  },
+  {
+   "id": "c30",
+   "classification": "supported",
+   "evidence": "NHS states iron-rich foods can help with iron deficiency anaemia; tablets are the main treatment",
+   "url": "https://www.nhs.uk/conditions/iron-deficiency-anaemia/",
+   "action": "kept"
+  },
+  {
+   "id": "c31",
+   "classification": "supported",
+   "evidence": "NHS states dark-green leafy vegetables and dried fruit are iron-rich foods that can help",
+   "url": "https://www.nhs.uk/conditions/iron-deficiency-anaemia/",
+   "action": "kept"
+  },
+  {
+   "id": "c32",
+   "classification": "unsupported",
+   "evidence": "Fortified bread, meat, apricots, prunes, raisins not seen in retrieved text",
+   "url": "https://www.nhs.uk/conditions/iron-deficiency-anaemia/",
+   "action": "removed"
+  },
+  {
+   "id": "c33",
+   "classification": "supported",
+   "evidence": "NHS 111 Wales page says orange juice after a tablet may help absorption",
+   "url": "https://111.wales.nhs.uk/encyclopaedia/a/article/anaemia,irondeficiency",
+   "action": "kept"
+  },
+  {
+   "id": "c34",
+   "classification": "supported",
+   "evidence": "NHS page lists tea, coffee, milk and dairy; high-phytate wholegrain foods can limit absorption",
+   "url": "https://www.nhs.uk/conditions/iron-deficiency-anaemia/",
+   "action": "kept"
+  },
+  {
+   "id": "c35",
+   "classification": "unsafe",
+   "evidence": "One NHS page suggests tablets with or soon after food reduce side effects; 'continue even if side effects occur' not stated and instructs the reader. Scottish guideline only says effects usually settle",
+   "url": "https://111.wales.nhs.uk/encyclopaedia/a/article/anaemia,irondeficiency",
+   "action": "edited",
+   "newSentence": "One NHS page suggests taking iron tablets with or soon after food to reduce the chance of side effects."
+  },
+  {
+   "id": "c36",
+   "classification": "unsupported",
+   "evidence": "Formulary says treatment continued for a period after haemoglobin normalises; Somerset attribution and 'replenish stores' wording only loosely seen",
+   "url": "https://formulary.nhssomerset.nhs.uk/?page_id=1154",
+   "action": "edited",
+   "newSentence": "Formulary guidance says treatment continues for a period after the haemoglobin level returns to normal."
+  },
+  {
+   "id": "c37",
+   "classification": "unsupported",
+   "evidence": "Constipation, nausea, diarrhoea, abdominal pain, dark stools seen; heartburn not seen",
+   "url": "https://www.rightdecisions.scot.nhs.uk/m/2295/ida.pdf",
+   "action": "edited",
+   "newSentence": "Iron tablets can cause constipation, diarrhoea, tummy pain, nausea and darker stools."
+  },
+  {
+   "id": "c38",
+   "classification": "unsupported",
+   "evidence": "Higher requirement not found; text said pregnant women are subject to iron loss during and after delivery",
+   "url": "https://www.rightdecisions.scot.nhs.uk/ggc-clinical-guidelines/maternity/antenatal-general/prevention-and-management-of-iron-deficiency-anaemia-in-pregnancy-and-the-puerperium-1195/",
+   "action": "edited",
+   "newSentence": "A Scottish guideline notes that pregnant women lose iron during and after delivery."
+  },
+  {
+   "id": "c39",
+   "classification": "supported",
+   "evidence": "GGC guideline: women who start oral iron continue through pregnancy and for three months postpartum",
+   "url": "https://www.rightdecisions.scot.nhs.uk/ggc-clinical-guidelines/maternity/antenatal-general/prevention-and-management-of-iron-deficiency-anaemia-in-pregnancy-and-the-puerperium-1195/",
+   "action": "kept"
+  },
+  {
+   "id": "c40",
+   "classification": "supported",
+   "evidence": "Ferritin tracks iron stores; low in iron deficiency (LTO)",
+   "url": "https://labtestsonline.org.uk/tests/ferritin-test",
+   "action": "kept"
+  },
+  {
+   "id": "c41",
+   "classification": "unsupported",
+   "evidence": "Stores significantly low before blood iron falls; 'most sensitive early marker' not seen",
+   "url": "https://labtestsonline.org.uk/tests/ferritin-test",
+   "action": "edited",
+   "newSentence": "Ferritin can fall before blood iron levels fall, which makes it the most useful indicator of iron deficiency."
+  },
+  {
+   "id": "c42",
+   "classification": "supported",
+   "evidence": "Common causes include pregnancy, heavy periods, blood loss; cause matters",
+   "url": "https://www.nhs.uk/conditions/iron-deficiency-anaemia/",
+   "action": "kept"
+  },
+  {
+   "id": "c43",
+   "classification": "supported",
+   "evidence": "LTO: high in inflammation, infection, liver disease; Newcastle: check CRP",
+   "url": "https://laboratories.newcastle-hospitals.nhs.uk/wp-content/uploads/2024/11/GP-Adult-haematology-guidelines-v10.pdf",
+   "action": "kept"
+  },
+  {
+   "id": "c44",
+   "classification": "supported",
+   "evidence": "Ferritin thresholds vary according to the local laboratory (NHS pathology guide)",
+   "url": "https://www.ruh.nhs.uk/pathology/documents/clinical_guidelines/HAEM_Ferritin_a_guide_for_GPs.pdf?t=",
+   "action": "kept"
+  }
+ ],
+ "additions": [
+  {
+   "section": "new: Iron deficiency without anaemia",
+   "sentence": "A normal haemoglobin does not rule out iron deficiency, because tiredness can come before haemoglobin falls.",
+   "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11231206/",
+   "evidence": "Study: iron deficiency may result in fatigue and weakness before haemoglobin levels decrease"
+  },
+  {
+   "section": "new: Reading the result",
+   "sentence": "Hospital guidance notes that inflammation may raise ferritin into the normal range, which can hide iron deficiency.",
+   "url": "https://laboratories.newcastle-hospitals.nhs.uk/wp-content/uploads/2024/11/GP-Adult-haematology-guidelines-v10.pdf",
+   "evidence": "If iron deficiency suspected and ferritin normal, check CRP since inflammation may elevate ferritin into normal range"
+  },
+  {
+   "section": "new: Reading the result",
+   "sentence": "NHS laboratory guidance notes that ferritin thresholds vary according to the local laboratory.",
+   "url": "https://www.ruh.nhs.uk/pathology/documents/clinical_guidelines/HAEM_Ferritin_a_guide_for_GPs.pdf?t=",
+   "evidence": "One NHS guide notes ferritin thresholds vary according to the local laboratory"
+  },
+  {
+   "section": "new: Finding the cause",
+   "sentence": "An NHS leaflet says blood loss from the gut is the most common cause in adult men and postmenopausal women once other causes are excluded.",
+   "url": "https://www.ruh.nhs.uk/patients/patient_information/GAS157_Iron_deficiency_anaemia.pdf",
+   "evidence": "Blood loss from the gut is the most common cause in adult men and postmenopausal women"
+  },
+  {
+   "section": "new: Finding the cause",
+   "sentence": "Guidance says the cause of the iron deficiency matters more than the anaemia itself.",
+   "url": "https://remedy.bnssg.icb.nhs.uk/adults/gastroenterology-and-colorectal-surgery/anaemia-iron-deficiency/",
+   "evidence": "UK sources: cause of iron deficiency matters more than the anaemia; coeliac screening and GI blood-loss assessment central"
+  },
+  {
+   "section": "new: Pregnancy",
+   "sentence": "An NHS leaflet says anaemia in pregnancy and after birth is very common and is usually treated with tablets.",
+   "url": "https://digitalpatientinformationhub.bradfordhospitals.nhs.uk/leaflets/iron-deficiency-anaemia-in-pregnancy-and-after-birth/",
+   "evidence": "Anaemia in pregnancy and after giving birth is very common and is usually treated with oral tablets"
+  },
+  {
+   "section": "new: Treatment",
+   "sentence": "Iron given into a vein is considered when tablets have not worked or a rapid rise in iron is needed.",
+   "url": "https://digitalpatientinformationhub.bradfordhospitals.nhs.uk/leaflets/iron-deficiency-anaemia-in-pregnancy-and-after-birth/",
+   "evidence": "IV iron considered when oral treatments have not been successful or a rapid increase in iron is needed"
+  }
+ ],
+ "notes": "Search summaries blended pages and rarely quoted NHS pages directly, so some NHS/formulary attributions were downgraded. c33 (orange juice): NHS 111 Wales says it may help but a Buckinghamshire formulary citing BSG says vitamin C is not needed; sources differ. c09 and additions cite a PMC study, not UK guidance. c32 removed rather than edited."
+}

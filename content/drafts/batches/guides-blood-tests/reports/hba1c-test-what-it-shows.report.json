@@ -1,0 +1,327 @@
+{
+ "id": "hba1c-test-what-it-shows",
+ "searchesUsed": 8,
+ "counts": {
+  "supported": 20,
+  "textbook": 2,
+  "unsupported": 15,
+  "wrong": 0,
+  "unsafe": 0,
+  "unchecked": 0
+ },
+ "claims": [
+  {
+   "id": "c01",
+   "classification": "supported",
+   "evidence": "Search summaries: HbA1c reflects average glucose over roughly 2-3 months; used to diagnose type 2 diabetes and monitor people with diabetes.",
+   "url": "https://www.diabetes.org.uk/about-diabetes/looking-after-diabetes/hba1c",
+   "action": "kept"
+  },
+  {
+   "id": "c02",
+   "classification": "supported",
+   "evidence": "Reflects average blood glucose over the previous 2 to 3 months (8-12 weeks).",
+   "url": "https://www.diabetes.org.uk/about-diabetes/looking-after-diabetes/hba1c",
+   "action": "kept"
+  },
+  {
+   "id": "c03",
+   "classification": "supported",
+   "evidence": "Lab Tests Online UK: HbA1c covers a longer window; a fingerstick reading is a single snapshot.",
+   "url": "https://labtestsonline.org.uk/tests/hba1c-test",
+   "action": "kept"
+  },
+  {
+   "id": "c04",
+   "classification": "textbook",
+   "evidence": "Plain, undisputed physiology (glucose binds haemoglobin in red cells); not stated in the returned text.",
+   "url": "https://www.diabetes.org.uk/about-diabetes/looking-after-diabetes/hba1c",
+   "action": "kept"
+  },
+  {
+   "id": "c05",
+   "classification": "supported",
+   "evidence": "Red blood cells live about 8-12 weeks before being replaced, so the test covers the previous 8-12 weeks.",
+   "url": "https://www.diabetes.org.uk/about-diabetes/looking-after-diabetes/hba1c",
+   "action": "kept"
+  },
+  {
+   "id": "c06",
+   "classification": "unsupported",
+   "evidence": "No retrieved text says occasional extremes are smoothed; sources say only that it does not capture short-term spikes or dips.",
+   "url": "https://labtestsonline.org.uk/tests/hba1c-test",
+   "action": "edited",
+   "newSentence": "Because it covers a longer window, the test does not show short-term rises or dips in glucose."
+  },
+  {
+   "id": "c07",
+   "classification": "supported",
+   "evidence": "Main blood test used to diagnose type 2 diabetes.",
+   "url": "https://www.diabetes.org.uk/about-diabetes/looking-after-diabetes/hba1c",
+   "action": "kept"
+  },
+  {
+   "id": "c08",
+   "classification": "supported",
+   "evidence": "Used to screen people at high risk; a result in the intermediate band indicates high risk and is usually followed by lifestyle advice and monitoring.",
+   "url": "https://www.england.nhs.uk/london/wp-content/uploads/sites/8/2019/07/dia-consensus-type2-27092018-FINAL.pdf",
+   "action": "kept"
+  },
+  {
+   "id": "c09",
+   "classification": "supported",
+   "evidence": "Shows how well glucose has been controlled over the previous 8-12 weeks in people with diabetes.",
+   "url": "https://www.diabetes.org.uk/about-diabetes/looking-after-diabetes/hba1c",
+   "action": "kept"
+  },
+  {
+   "id": "c10",
+   "classification": "supported",
+   "evidence": "HbA1c test is not used for diagnosing type 1 diabetes or diabetes during pregnancy.",
+   "url": "https://labtestsonline.org.uk/tests/hba1c-test",
+   "action": "kept"
+  },
+  {
+   "id": "c11",
+   "classification": "unsupported",
+   "evidence": "Nothing retrieved on home glucose monitors. Sources say HbA1c is the usual first-line blood test for diagnosing type 2 diabetes.",
+   "url": "https://www.england.nhs.uk/london/wp-content/uploads/sites/8/2019/07/dia-consensus-type2-27092018-FINAL.pdf",
+   "action": "edited",
+   "newSentence": "Type 2 diabetes is diagnosed with blood tests, and HbA1c is the usual first test."
+  },
+  {
+   "id": "c12",
+   "classification": "supported",
+   "evidence": "Results appear in mmol/mol or as a percentage; HbA1c used to be given as a percentage; UK reports in mmol/mol.",
+   "url": "https://www.diabetes.org.uk/about-diabetes/looking-after-diabetes/hba1c",
+   "action": "kept"
+  },
+  {
+   "id": "c13",
+   "classification": "unsupported",
+   "evidence": "Retrieved text supports an individualised target agreed with the person but attributes it to NICE-based guidance, not Diabetes UK.",
+   "url": "https://northeast.devonformularyguidance.nhs.uk/formulary/chapters/6-endocrine/type-2-diabetes-mellitus-treatment-guidance",
+   "action": "edited",
+   "newSentence": "NICE-based guidance says an individual HbA1c target should be agreed with each person."
+  },
+  {
+   "id": "c14",
+   "classification": "supported",
+   "evidence": "Targets relaxed where tight control risks hypoglycaemia.",
+   "url": "https://northeast.devonformularyguidance.nhs.uk/formulary/chapters/6-endocrine/type-2-diabetes-mellitus-treatment-guidance",
+   "action": "kept"
+  },
+  {
+   "id": "c15",
+   "classification": "supported",
+   "evidence": "Targets may be relaxed for older or frail people or where tight control risks hypoglycaemia.",
+   "url": "https://northeast.devonformularyguidance.nhs.uk/formulary/chapters/6-endocrine/type-2-diabetes-mellitus-treatment-guidance",
+   "action": "kept"
+  },
+  {
+   "id": "c16",
+   "classification": "unsupported",
+   "evidence": "Three-to-six-month interval was attributed by the text to NICE, not Diabetes UK (which says entitled to at least a yearly test).",
+   "url": "https://www.nice.org.uk/guidance/ng17/ifp/chapter/having-your-blood-glucose-checked-hba1c",
+   "action": "edited",
+   "newSentence": "NICE patient information advises that HbA1c is usually tested every three to six months."
+  },
+  {
+   "id": "c17",
+   "classification": "unsupported",
+   "evidence": "Only 'more often if glucose is changing quickly' was seen; pregnancy planning and treatment change not returned.",
+   "url": "https://www.nice.org.uk/guidance/ng17/ifp/chapter/having-your-blood-glucose-checked-hba1c",
+   "action": "edited",
+   "newSentence": "It may be done more often if blood glucose levels are changing quickly."
+  },
+  {
+   "id": "c18",
+   "classification": "unsupported",
+   "evidence": "No source said some people need testing less often in pregnancy; NICE text says every 6 months once stable.",
+   "url": "https://www.nice.org.uk/guidance/ng17/ifp/chapter/having-your-blood-glucose-checked-hba1c",
+   "action": "edited",
+   "newSentence": "Once blood glucose is stable, NICE patient information says the test is usually every six months."
+  },
+  {
+   "id": "c19",
+   "classification": "supported",
+   "evidence": "Accuracy affected by conditions affecting red blood cells such as haemolytic anaemia, sickle cell anaemia, thalassaemia; variants interfere.",
+   "url": "http://labtestsonline.org.uk/understanding/analytes/a1c/tab/test/",
+   "action": "kept"
+  },
+  {
+   "id": "c20",
+   "classification": "unsupported",
+   "evidence": "Advice to talk to doctor not seen. Guidance says glucose-based tests are used when HbA1c is unreliable.",
+   "url": "https://www.england.nhs.uk/london/wp-content/uploads/sites/8/2019/07/dia-consensus-type2-27092018-FINAL.pdf",
+   "action": "edited",
+   "newSentence": "Where HbA1c is unreliable, glucose-based blood tests are used for diagnosis instead."
+  },
+  {
+   "id": "c21",
+   "classification": "unsupported",
+   "evidence": "Pregnancy, transfusion, heavy bleeding listed; illness not seen.",
+   "url": "http://labtestsonline.org.uk/understanding/analytes/a1c/tab/test/",
+   "action": "edited",
+   "newSentence": "Pregnancy, heavy bleeding and recent blood transfusion can also make HbA1c unreliable."
+  },
+  {
+   "id": "c22",
+   "classification": "supported",
+   "evidence": "HbA1c may change if diet, physical activity, weight or medication have changed.",
+   "url": "https://mydiabetesmyway.scot.nhs.uk/resources/internal/hba1c-explained/",
+   "action": "kept"
+  },
+  {
+   "id": "c23",
+   "classification": "unsupported",
+   "evidence": "Laboratories 'often' converting not stated; eAG converts HbA1c to meter units but is an average, not an exact match.",
+   "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2850190/",
+   "action": "edited",
+   "newSentence": "An estimated average glucose converts HbA1c into meter units, but it is an average and not an exact match for readings."
+  },
+  {
+   "id": "c24",
+   "classification": "unsupported",
+   "evidence": "Scottish guidance on GP explaining risk factors not seen. England consensus: intermediate result usually leads to lifestyle advice.",
+   "url": "https://www.england.nhs.uk/london/wp-content/uploads/sites/8/2019/07/dia-consensus-type2-27092018-FINAL.pdf",
+   "action": "edited",
+   "newSentence": "The usual response to an intermediate result is lifestyle advice on eating, activity and weight."
+  },
+  {
+   "id": "c25",
+   "classification": "unsupported",
+   "evidence": "Returned text: GP can refer, many areas allow self-referral, eligibility varies; 'should refer' not stated.",
+   "url": "https://northeastlondon.icb.nhs.uk/service/diabetes-diabetes-prevention-programme-ndpp/",
+   "action": "edited",
+   "newSentence": "A GP can refer eligible people to the free NHS Diabetes Prevention Programme, and some areas allow self-referral."
+  },
+  {
+   "id": "c26",
+   "classification": "unsupported",
+   "evidence": "No national rule of yearly test for all; England consensus says intermediate result is monitored at least yearly.",
+   "url": "https://www.england.nhs.uk/london/wp-content/uploads/sites/8/2019/07/dia-consensus-type2-27092018-FINAL.pdf",
+   "action": "edited",
+   "newSentence": "People with an intermediate result are usually monitored at least once a year."
+  },
+  {
+   "id": "c27",
+   "classification": "textbook",
+   "evidence": "Signposting; plain and undisputed.",
+   "url": "https://www.diabetes.org.uk/about-diabetes/looking-after-diabetes/hba1c",
+   "action": "kept"
+  },
+  {
+   "id": "c28",
+   "classification": "supported",
+   "evidence": "HbA1c in the intermediate band indicates prediabetes / high risk rather than diabetes.",
+   "url": "https://www.nice.org.uk/guidance/ng17/ifp/chapter/having-your-blood-glucose-checked-hba1c",
+   "action": "kept"
+  },
+  {
+   "id": "c29",
+   "classification": "supported",
+   "evidence": "Intermediate result signals high risk of developing diabetes.",
+   "url": "https://www.england.nhs.uk/london/wp-content/uploads/sites/8/2019/07/dia-consensus-type2-27092018-FINAL.pdf",
+   "action": "kept"
+  },
+  {
+   "id": "c30",
+   "classification": "unsupported",
+   "evidence": "Prediabetes usually causes no symptoms and is found with blood tests; NHS Health Check not confirmed.",
+   "url": "https://www.nhs.uk/conditions/diabetes/",
+   "action": "edited",
+   "newSentence": "Prediabetes usually causes no symptoms, so it is found through blood tests."
+  },
+  {
+   "id": "c31",
+   "classification": "supported",
+   "evidence": "NHS diabetes page lists thirst, urinating more, tiredness and unintended weight loss as common signs.",
+   "url": "https://www.nhs.uk/conditions/diabetes/",
+   "action": "kept"
+  },
+  {
+   "id": "c32",
+   "classification": "unsupported",
+   "evidence": "Advice to see a GP not seen; NHS notes not everyone has symptoms and checking matters.",
+   "url": "https://www.nhs.uk/conditions/diabetes/",
+   "action": "edited",
+   "newSentence": "The NHS notes that not everyone with diabetes has symptoms, which is why getting checked matters."
+  },
+  {
+   "id": "c33",
+   "classification": "unsupported",
+   "evidence": "Programme is free, nine months, support with eating, activity and weight; referral route varies.",
+   "url": "https://northeastlondon.icb.nhs.uk/service/diabetes-diabetes-prevention-programme-ndpp/",
+   "action": "edited",
+   "newSentence": "The programme is free, lasts nine months and gives support with healthy eating, physical activity and weight."
+  },
+  {
+   "id": "c34",
+   "classification": "supported",
+   "evidence": "Average glucose over previous 2-3 months.",
+   "url": "https://www.diabetes.org.uk/about-diabetes/looking-after-diabetes/hba1c",
+   "action": "kept"
+  },
+  {
+   "id": "c35",
+   "classification": "supported",
+   "evidence": "Used to diagnose, monitor, and screen people at high risk.",
+   "url": "https://www.diabetes.org.uk/about-diabetes/looking-after-diabetes/hba1c",
+   "action": "kept"
+  },
+  {
+   "id": "c36",
+   "classification": "supported",
+   "evidence": "Targets individualised; relaxed for older/frail or hypo-prone people.",
+   "url": "https://northeast.devonformularyguidance.nhs.uk/formulary/chapters/6-endocrine/type-2-diabetes-mellitus-treatment-guidance",
+   "action": "kept"
+  },
+  {
+   "id": "c37",
+   "classification": "supported",
+   "evidence": "Conditions affecting red cells make HbA1c unreliable; alternative tests used.",
+   "url": "http://labtestsonline.org.uk/understanding/analytes/a1c/tab/test/",
+   "action": "kept"
+  }
+ ],
+ "additions": [
+  {
+   "section": "new: Diagnosis",
+   "sentence": "A raised result in someone without symptoms is usually repeated, and a second result in the diabetes range confirms the diagnosis.",
+   "url": "https://www.england.nhs.uk/london/wp-content/uploads/sites/8/2019/07/dia-consensus-type2-27092018-FINAL.pdf",
+   "evidence": "If asymptomatic, repeat venous HbA1c; still in diabetes range confirms diagnosis."
+  },
+  {
+   "section": "new: Diagnosis",
+   "sentence": "HbA1c is not used to diagnose diabetes during pregnancy.",
+   "url": "https://labtestsonline.org.uk/tests/hba1c-test",
+   "evidence": "HbA1c test is not used for diagnosing diabetes during pregnancy or type 1 diabetes."
+  },
+  {
+   "section": "new: Diagnosis",
+   "sentence": "One hospital guideline says HbA1c should not be used for diagnosis when symptoms have appeared over less than a month.",
+   "url": "https://www.ruh.nhs.uk/pathology/documents/clinical_guidelines/PATH-006_DM_diagnosis_guideline.pdf",
+   "evidence": "With a short history (<1 month) of thirst, urinary frequency or weight loss, HbA1c should NOT be used as a diagnostic test."
+  },
+  {
+   "section": "body[4] (accuracy)",
+   "sentence": "Heavy bleeding or haemolytic anaemia can make HbA1c falsely low, while iron deficiency may raise it.",
+   "url": "http://labtestsonline.org.uk/understanding/analytes/a1c/tab/test/",
+   "evidence": "Haemolytic anaemia or heavy bleeding may give falsely low results; iron deficiency may raise HbA1c."
+  },
+  {
+   "section": "body[4] (accuracy)",
+   "sentence": "Some haemoglobin variants can interfere with HbA1c measurement, so other methods may be needed.",
+   "url": "https://sheffieldlaboratorymedicine.nhs.uk/search-test.php?search=3186",
+   "evidence": "Some haemoglobin variants can interfere with HbA1c measurement and alternative methods may be required."
+  },
+  {
+   "section": "body[5] (prediabetes)",
+   "sentence": "Eligibility for the Diabetes Prevention Programme varies by area, so the local service sets the rules.",
+   "url": "https://northeastlondon.icb.nhs.uk/service/diabetes-diabetes-prevention-programme-ndpp/",
+   "evidence": "One London ICB requires a result within 24 months, another within 12 months; check local service."
+  }
+ ],
+ "notes": "Search summaries blended pages; 'supported' means the returned summary text stated it. Diabetes UK page text not shown directly, claims attributed to it were rechecked via NICE/Devon/Lab Tests Online wording. Interval and target figures in edits are NICE-attributed; consider removing numbers if house style prefers."
+}

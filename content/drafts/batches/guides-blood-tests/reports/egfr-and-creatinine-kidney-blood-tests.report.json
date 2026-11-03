@@ -1,0 +1,340 @@
+{
+ "id": "egfr-and-creatinine-kidney-blood-tests",
+ "searchesUsed": 16,
+ "counts": {
+  "supported": 29,
+  "textbook": 0,
+  "unsupported": 9,
+  "wrong": 0,
+  "unsafe": 0,
+  "unchecked": 0
+ },
+ "claims": [
+  {
+   "id": "c01",
+   "classification": "supported",
+   "evidence": "eGFR is an estimate of kidney filtering calculated from creatinine; CKD diagnosis needs sustained reduction over time, not an isolated result",
+   "url": "https://swlimo.southwestlondon.icb.nhs.uk/wp-content/uploads/Investigation-and-Management-of-Chronic-Kidney-Disease-CKD-in-Adults-in-Primary-Care-v2.pdf",
+   "action": "kept"
+  },
+  {
+   "id": "c02",
+   "classification": "supported",
+   "evidence": "Main test is a blood test measuring creatinine, a waste product",
+   "url": "https://www.nhs.uk/conditions/kidney-disease/diagnosis/",
+   "action": "kept"
+  },
+  {
+   "id": "c03",
+   "classification": "supported",
+   "evidence": "eGFR is calculated from the blood creatinine level",
+   "url": "https://labtestsonline.org.uk/tests/egfr-estimated-creatinine-clearance",
+   "action": "kept"
+  },
+  {
+   "id": "c04",
+   "classification": "supported",
+   "evidence": "Formula uses creatinine, age and sex",
+   "url": "https://labtestsonline.org.uk/tests/egfr-estimated-creatinine-clearance",
+   "action": "kept"
+  },
+  {
+   "id": "c05",
+   "classification": "unsupported",
+   "evidence": "Retrieved text says eGFR may decrease over time as kidney function declines; a rise in creatinine was not stated in what was returned",
+   "url": "https://labtestsonline.org.uk/tests/egfr-estimated-creatinine-clearance",
+   "action": "edited",
+   "newSentence": "Lab Tests Online UK explains that the eGFR may fall over time as kidney function declines."
+  },
+  {
+   "id": "c06",
+   "classification": "supported",
+   "evidence": "eGFR is used to screen for and detect early kidney damage; NHS says early CKD often has no symptoms and is found through tests",
+   "url": "https://labtestsonline.org.uk/tests/egfr-estimated-creatinine-clearance",
+   "action": "kept"
+  },
+  {
+   "id": "c07",
+   "classification": "unsupported",
+   "evidence": "Returned text: a low eGFR may indicate kidney disease; NIDDK PDF itself not retrieved",
+   "url": "https://labtestsonline.org.uk/tests/egfr-estimated-creatinine-clearance",
+   "action": "edited",
+   "newSentence": "A low eGFR may be a sign of kidney disease, though a single result is not enough to say."
+  },
+  {
+   "id": "c08",
+   "classification": "unsupported",
+   "evidence": "NIDDK wording not retrieved; NICE pathway says to estimate GFR and measure ACR together",
+   "url": "https://www.nice.org.uk/guidance/ng203/resources/chronic-kidney-disease-assessment-and-management-pdf-66143713055173",
+   "action": "edited",
+   "newSentence": "NICE says testing for chronic kidney disease uses both an eGFR and a urine ACR."
+  },
+  {
+   "id": "c09",
+   "classification": "unsupported",
+   "evidence": "NHS ACR page: a slightly raised ACR may indicate early-stage kidney disease; NIDDK wording on albumin not retrieved",
+   "url": "https://www.nhs.uk/tests-and-treatments/acr-test/",
+   "action": "edited",
+   "newSentence": "A slightly raised urine ACR, which checks for the protein albumin, may indicate early-stage kidney disease."
+  },
+  {
+   "id": "c10",
+   "classification": "supported",
+   "evidence": "eGFR naturally falls with age; a mild reduction may be normal for age",
+   "url": "https://labtestsonline.org.uk/tests/egfr-estimated-creatinine-clearance",
+   "action": "kept"
+  },
+  {
+   "id": "c11",
+   "classification": "supported",
+   "evidence": "eGFR is unreliable during acute kidney injury when function changes rapidly",
+   "url": "https://labtestsonline.org.uk/tests/egfr-estimated-creatinine-clearance",
+   "action": "kept"
+  },
+  {
+   "id": "c12",
+   "classification": "supported",
+   "evidence": "One cannot make a diagnosis on isolated abnormal eGFR or ACR results",
+   "url": "https://swlimo.southwestlondon.icb.nhs.uk/wp-content/uploads/Investigation-and-Management-of-Chronic-Kidney-Disease-CKD-in-Adults-in-Primary-Care-v2.pdf",
+   "action": "kept"
+  },
+  {
+   "id": "c13",
+   "classification": "supported",
+   "evidence": "NICE NG203: repeat tests after 3 months; CKD means abnormality persisting 3 months or more",
+   "url": "https://www.nice.org.uk/guidance/ng203/chapter/Rationale-and-impact",
+   "action": "kept"
+  },
+  {
+   "id": "c14",
+   "classification": "unsupported",
+   "evidence": "PMC study not retrieved; NICE: repeat a low eGFR within 2 weeks to exclude acute kidney injury",
+   "url": "https://www.nice.org.uk/guidance/ng203/chapter/Rationale-and-impact",
+   "action": "edited",
+   "newSentence": "NICE says a low first eGFR should be repeated soon, to check whether sudden kidney injury is the cause."
+  },
+  {
+   "id": "c15",
+   "classification": "supported",
+   "evidence": "NHS: urine test checks albumin and creatinine, called the ACR",
+   "url": "https://www.nhs.uk/tests-and-treatments/acr-test/",
+   "action": "kept"
+  },
+  {
+   "id": "c16",
+   "classification": "supported",
+   "evidence": "NHS: alongside your eGFR, urine tests give a more accurate picture of how well kidneys work",
+   "url": "https://www.nhs.uk/conditions/kidney-disease/diagnosis/",
+   "action": "kept"
+  },
+  {
+   "id": "c17",
+   "classification": "supported",
+   "evidence": "Staging uses G (eGFR) and A (ACR) categories together",
+   "url": "https://www.nice.org.uk/guidance/ng203/chapter/Rationale-and-impact",
+   "action": "kept"
+  },
+  {
+   "id": "c18",
+   "classification": "supported",
+   "evidence": "NICE: estimate GFR and measure ACR in adults with risk factors including diabetes, hypertension, AKI, cardiovascular disease",
+   "url": "https://www.nice.org.uk/guidance/ng203/resources/chronic-kidney-disease-assessment-and-management-pdf-66143713055173",
+   "action": "kept"
+  },
+  {
+   "id": "c19",
+   "classification": "supported",
+   "evidence": "NHS: early CKD often has no symptoms and is found by tests done for another reason",
+   "url": "https://www.nhs.uk/conditions/kidney-disease/symptoms/",
+   "action": "kept"
+  },
+  {
+   "id": "c20",
+   "classification": "supported",
+   "evidence": "NHS lists swollen ankles, feet or hands, tiredness, shortness of breath, blood in pee, needing to pee more at night",
+   "url": "https://www.nhs.uk/conditions/kidney-disease/symptoms/",
+   "action": "kept"
+  },
+  {
+   "id": "c21",
+   "classification": "supported",
+   "evidence": "NHS: see a GP if you have persistent or worrying symptoms that could be caused by kidney disease",
+   "url": "https://www.nhs.uk/conditions/kidney-disease/symptoms/",
+   "action": "kept"
+  },
+  {
+   "id": "c22",
+   "classification": "supported",
+   "evidence": "NIDDK lists frail older adults among people for whom creatinine-based estimates may be unreliable",
+   "url": "https://www.niddk.nih.gov/research-funding/research-programs/kidney-clinical-research-epidemiology/laboratory/factors-affecting-egfr-accuracy/clinical-measurements",
+   "action": "kept"
+  },
+  {
+   "id": "c23",
+   "classification": "supported",
+   "evidence": "Cystatin C is less influenced by non-GFR factors and is considered when creatinine-based results are unreliable",
+   "url": "https://labtestsonline.org.uk/tests/egfr-estimated-creatinine-clearance",
+   "action": "kept"
+  },
+  {
+   "id": "c24",
+   "classification": "unsupported",
+   "evidence": "Retrieved: muscle mass affects creatinine; nothing said about the report showing the reference range",
+   "url": "https://labtestsonline.org.uk/tests/egfr-estimated-creatinine-clearance",
+   "action": "edited",
+   "newSentence": "Creatinine can also be influenced by factors other than the kidneys, such as how much muscle a person has."
+  },
+  {
+   "id": "c25",
+   "classification": "supported",
+   "evidence": "Diabetes and high blood pressure are the most common causes of CKD",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/kidneys-bladder-and-prostate/chronic-kidney-disease/",
+   "action": "kept"
+  },
+  {
+   "id": "c26",
+   "classification": "supported",
+   "evidence": "NHS inform: treatment can slow or halt progression; CKD generally incurable",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/kidneys-bladder-and-prostate/chronic-kidney-disease/",
+   "action": "kept"
+  },
+  {
+   "id": "c27",
+   "classification": "supported",
+   "evidence": "Kidney Care UK/NICE: regular monitoring with blood and urine tests",
+   "url": "https://www.nice.org.uk/guidance/ng203/chapter/Rationale-and-impact",
+   "action": "kept"
+  },
+  {
+   "id": "c28",
+   "classification": "supported",
+   "evidence": "Management: blood pressure control, diabetes control, medicines, healthy diet, stopping smoking",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/kidneys-bladder-and-prostate/chronic-kidney-disease/",
+   "action": "kept"
+  },
+  {
+   "id": "c29",
+   "classification": "unsupported",
+   "evidence": "No retrieved text on referral to a kidney specialist; NHS treatment page says medicines help keep kidneys working longer",
+   "url": "https://www.nhs.uk/conditions/kidney-disease/treatment/",
+   "action": "edited",
+   "newSentence": "The NHS says medicines can help control related problems and keep the kidneys working for longer."
+  },
+  {
+   "id": "c30",
+   "classification": "supported",
+   "evidence": "NICE committee: recommended frequency is a minimum, more frequent monitoring appropriate for some patients",
+   "url": "https://www.nice.org.uk/guidance/ng203/chapter/Rationale-and-impact",
+   "action": "kept"
+  },
+  {
+   "id": "c31",
+   "classification": "unsupported",
+   "evidence": "Retrieved text does not say frequency is agreed with the professional; it says NICE Table 2 sets minimum checks by GFR and ACR category",
+   "url": "https://www.nice.org.uk/guidance/ng203/chapter/Rationale-and-impact",
+   "action": "edited",
+   "newSentence": "NICE sets a minimum number of checks each year, which depends on the eGFR and ACR categories."
+  },
+  {
+   "id": "c32",
+   "classification": "supported",
+   "evidence": "Frequency guided by rate of change in eGFR or ACR and comorbidities including diabetes",
+   "url": "https://www.nice.org.uk/guidance/ng203/chapter/Rationale-and-impact",
+   "action": "kept"
+  },
+  {
+   "id": "c33",
+   "classification": "supported",
+   "evidence": "ACR monitoring should be individualised; more frequent in A2 or A3",
+   "url": "https://www.nice.org.uk/guidance/ng203/chapter/Rationale-and-impact",
+   "action": "kept"
+  },
+  {
+   "id": "c34",
+   "classification": "supported",
+   "evidence": "NICE risk-factor list for eGFR and ACR testing includes diabetes",
+   "url": "https://www.nice.org.uk/guidance/ng203/resources/chronic-kidney-disease-assessment-and-management-pdf-66143713055173",
+   "action": "kept"
+  },
+  {
+   "id": "c35",
+   "classification": "supported",
+   "evidence": "Creatinine is a waste product measured in blood; eGFR calculated from it",
+   "url": "https://labtestsonline.org.uk/tests/egfr-estimated-creatinine-clearance",
+   "action": "kept"
+  },
+  {
+   "id": "c36",
+   "classification": "unsupported",
+   "evidence": "As c05: only a fall in eGFR over time as function declines was stated",
+   "url": "https://labtestsonline.org.uk/tests/egfr-estimated-creatinine-clearance",
+   "action": "edited",
+   "newSentence": "As kidney function declines, the eGFR may fall over time."
+  },
+  {
+   "id": "c37",
+   "classification": "supported",
+   "evidence": "Isolated result not enough; repeat after 3 months; CKD persisting 3 months or more",
+   "url": "https://www.nice.org.uk/guidance/ng203/chapter/Rationale-and-impact",
+   "action": "kept"
+  },
+  {
+   "id": "c38",
+   "classification": "supported",
+   "evidence": "NHS: alongside eGFR, urine tests give a more accurate picture; slightly raised ACR may indicate early disease",
+   "url": "https://www.nhs.uk/conditions/kidney-disease/diagnosis/",
+   "action": "kept"
+  }
+ ],
+ "additions": [
+  {
+   "section": "new: How the result is reported",
+   "sentence": "UK laboratories report an eGFR alongside every creatinine result, in line with NICE guidance.",
+   "url": "https://labtestsonline.org.uk/tests/egfr-estimated-creatinine-clearance",
+   "evidence": "Page cites NICE NG203 as requiring UK laboratories to report an eGFR with every creatinine result"
+  },
+  {
+   "section": "new: What can affect the result",
+   "sentence": "People with more muscle naturally make more creatinine, which can give a lower eGFR than their kidney function really is.",
+   "url": "https://labtestsonline.org.uk/tests/egfr-estimated-creatinine-clearance",
+   "evidence": "Muscle mass can skew results; people with more muscle produce more creatinine"
+  },
+  {
+   "section": "new: What can affect the result",
+   "sentence": "Cystatin C is another marker filtered by the kidneys and is less affected by muscle mass than creatinine.",
+   "url": "https://labtestsonline.org.uk/tests/cystatin-c",
+   "evidence": "Cystatin C is less influenced by non-GFR determinants and considered when creatinine-based results are unreliable"
+  },
+  {
+   "section": "new: The urine test",
+   "sentence": "The NHS says a very low ACR usually means the kidneys are working normally, while a very high one points to more severe kidney disease.",
+   "url": "https://www.nhs.uk/tests-and-treatments/acr-test/",
+   "evidence": "Slightly raised ACR may mean early-stage disease; very high indicates more severe; very low usually normal"
+  },
+  {
+   "section": "new: The urine test",
+   "sentence": "NICE advises that the urine ACR is ideally measured on an early morning sample.",
+   "url": "https://www.nice.org.uk/guidance/ng203/resources/chronic-kidney-disease-assessment-and-management-pdf-66143713055173",
+   "evidence": "measure ACR (ideally in an early morning sample) in adults with risk factors"
+  },
+  {
+   "section": "body[3]",
+   "sentence": "NHS 111 Wales lists kidney stones, lupus and a family history of advanced or inherited kidney disease among the risk factors.",
+   "url": "https://111.wales.nhs.uk/Kidneydisease,chronic/",
+   "evidence": "Other risks include AKI, cardiovascular disease, kidney stones, lupus, family history"
+  },
+  {
+   "section": "body[5]",
+   "sentence": "The NHS says most people with chronic kidney disease can control the condition with medicine and regular check-ups.",
+   "url": "https://www.nhs.uk/conditions/kidney-disease/",
+   "evidence": "NHS: most people with CKD will be able to control their condition with medicine and regular check-ups"
+  },
+  {
+   "section": "body[5]",
+   "sentence": "Glomerulonephritis, inflammation of the filters inside the kidneys, is another cause of kidney disease.",
+   "url": "https://111.wales.nhs.uk/Kidneydisease,chronic/",
+   "evidence": "Kidney disease can be caused by inflammation of the filters, glomerulonephritis"
+  }
+ ],
+ "notes": "16 searches shared across both guides (7 on eGFR/kidney). Many NIDDK/PMC/Lab Tests Online claims could only be checked via search summaries; edits stay within what was returned. No ranges or cut-offs added."
+}
