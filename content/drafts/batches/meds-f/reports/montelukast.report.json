@@ -1,0 +1,333 @@
+{
+ "id": "montelukast",
+ "searchesUsed": 13,
+ "counts": {
+  "supported": 34,
+  "textbook": 2,
+  "unsupported": 4,
+  "wrong": 0,
+  "unsafe": 0,
+  "unchecked": 0
+ },
+ "claims": [
+  {
+   "id": "c01",
+   "classification": "supported",
+   "evidence": "NHS: usually prescribed when asthma is mild and can stop it getting worse; AL UK: helps prevent asthma symptoms like inflammation in airways. 'keeps airways from narrowing' not retrieved so dropped.",
+   "url": "https://www.nhs.uk/medicines/montelukast/about-montelukast/",
+   "action": "edited",
+   "newSentence": "Montelukast is a prescription medicine that helps prevent asthma symptoms."
+  },
+  {
+   "id": "c02",
+   "classification": "textbook",
+   "evidence": "Prescription-only status not shown in retrieved excerpts; plain regulatory fact (MHRA/emc list it as prescription).",
+   "url": "https://www.nhs.uk/medicines/montelukast/about-montelukast/",
+   "action": "edited",
+   "newSentence": "Montelukast is available on prescription only."
+  },
+  {
+   "id": "c03",
+   "classification": "supported",
+   "evidence": "AL UK: add-on alongside regular preventer; NHS: usually prescribed when asthma mild.",
+   "url": "https://www.asthmaandlung.org.uk/symptoms-tests-treatments/treatments/montelukast",
+   "action": "edited",
+   "newSentence": "Asthma and Lung UK describes montelukast as an add-on taken alongside the regular preventer inhaler, and the NHS says it is usually prescribed when asthma is mild."
+  },
+  {
+   "id": "c04",
+   "classification": "supported",
+   "evidence": "NHS: not a rescue treatment, always use reliever inhaler.",
+   "url": "https://www.nhs.uk/medicines/montelukast/about-montelukast/",
+   "action": "kept",
+   "newSentence": "The NHS says montelukast is not a rescue treatment and a reliever inhaler is used for an asthma attack."
+  },
+  {
+   "id": "c05",
+   "classification": "supported",
+   "evidence": "NHS: don't stop without speaking to doctor as symptoms may return. Original 'keep taking even when no symptoms' not retrieved verbatim; reworded.",
+   "url": "https://www.nhs.uk/medicines/montelukast/how-and-when-to-take-montelukast/",
+   "action": "edited",
+   "newSentence": "The NHS advises speaking to a doctor before stopping montelukast, because symptoms may return."
+  },
+  {
+   "id": "c06",
+   "classification": "supported",
+   "evidence": "NHS: also used for breathing difficulties on exercise (exercise-induced asthma) and seasonal allergies; AL UK: asthma triggered by exercise or seasonal allergies.",
+   "url": "https://www.nhs.uk/medicines/montelukast/about-montelukast/",
+   "action": "edited",
+   "newSentence": "The NHS and Asthma and Lung UK say it is also used when exercise or seasonal allergies trigger breathing difficulties."
+  },
+  {
+   "id": "c07",
+   "classification": "supported",
+   "evidence": "AL UK: improves symptoms of seasonal allergies, like hay fever.",
+   "url": "https://www.asthmaandlung.org.uk/symptoms-tests-treatments/treatments/montelukast",
+   "action": "kept",
+   "newSentence": "Asthma and Lung UK says it can improve symptoms of seasonal allergies such as hay fever."
+  },
+  {
+   "id": "c08",
+   "classification": "supported",
+   "evidence": "NHS: most adults and children aged 6 months and over can take montelukast.",
+   "url": "https://www.nhs.uk/medicines/montelukast/who-can-and-cannot-take-montelukast/",
+   "action": "kept",
+   "newSentence": "The NHS says most adults and children aged 6 months and over can take montelukast."
+  },
+  {
+   "id": "c09",
+   "classification": "supported",
+   "evidence": "NHS about page covers three forms: tablets, chewable tablets, granules. Original omitted chewable tablets.",
+   "url": "https://www.nhs.uk/medicines/montelukast/about-montelukast/",
+   "action": "edited",
+   "newSentence": "The NHS describes tablets, chewable tablets and granules taken by mouth."
+  },
+  {
+   "id": "c10",
+   "classification": "unsupported",
+   "evidence": "'allergic rhinitis alongside asthma' framing not retrieved; NHS says seasonal allergies.",
+   "url": "https://www.nhs.uk/medicines/montelukast/about-montelukast/",
+   "action": "edited",
+   "newSentence": "Easing seasonal allergy symptoms such as hay fever"
+  },
+  {
+   "id": "c11",
+   "classification": "supported",
+   "evidence": "AL UK / NHS Wheeze: add-on, works in a different way from the preventer. 'not a steroid' headline came only from a blended summary; reworded to the safer form.",
+   "url": "https://www.asthmaandlung.org.uk/symptoms-tests-treatments/treatments/montelukast",
+   "action": "edited",
+   "newSentence": "Asthma and Lung UK describes montelukast as working in a different way from steroid preventer inhalers."
+  },
+  {
+   "id": "c12",
+   "classification": "supported",
+   "evidence": "StatPearls: antagonists of CysLT1 receptors (not CysLT2) for leukotrienes D4/E4.",
+   "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK554445/",
+   "action": "kept",
+   "newSentence": "Montelukast blocks cysteinyl leukotriene type 1 receptors, which respond to leukotrienes."
+  },
+  {
+   "id": "c13",
+   "classification": "unsupported",
+   "evidence": "'leaky blood vessels', 'long-term inflammation', 'made during allergic inflammation' not retrieved.",
+   "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK554445/",
+   "action": "removed"
+  },
+  {
+   "id": "c14",
+   "classification": "supported",
+   "evidence": "StatPearls montelukast: blocks leukotriene effects such as airway oedema and smooth muscle contraction without agonist activity.",
+   "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK459301/",
+   "action": "edited",
+   "newSentence": "StatPearls describes it as blocking leukotriene effects such as airway swelling and smooth muscle contraction, without any stimulating action of its own."
+  },
+  {
+   "id": "c15",
+   "classification": "supported",
+   "evidence": "StatPearls: eosinophils main source of CysLTs; CysLTs important in eosinophil recruitment.",
+   "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK554445/",
+   "action": "edited",
+   "newSentence": "StatPearls says eosinophils are the main source of cysteinyl leukotrienes, which are important in recruiting more eosinophils."
+  },
+  {
+   "id": "c16",
+   "classification": "supported",
+   "evidence": "NHS side-effects page lists diarrhoea, raised temperature, headaches, stomach pain, feeling sick, mild rash.",
+   "url": "https://www.nhs.uk/medicines/montelukast/side-effects-of-montelukast/",
+   "action": "kept",
+   "newSentence": "Common side effects listed by the NHS include diarrhoea, a raised temperature, headaches, stomach pain, feeling or being sick and a mild rash."
+  },
+  {
+   "id": "c17",
+   "classification": "supported",
+   "evidence": "NHS gives fluids/rest/pharmacist advice for these.",
+   "url": "https://www.nhs.uk/medicines/montelukast/side-effects-of-montelukast/",
+   "action": "edited",
+   "newSentence": "The NHS gives self-care advice for these, such as fluids and rest, and says a pharmacist can advise."
+  },
+  {
+   "id": "c18",
+   "classification": "supported",
+   "evidence": "AL UK: montelukast linked to depression and anxiety; mental health effects rare but serious. 'not common' reworded.",
+   "url": "https://www.asthmaandlung.org.uk/symptoms-tests-treatments/treatments/montelukast",
+   "action": "edited",
+   "newSentence": "Asthma and Lung UK says montelukast has been linked to depression and anxiety and describes mental health side effects as rare but serious."
+  },
+  {
+   "id": "c19",
+   "classification": "supported",
+   "evidence": "NHS lists mood changes, hallucinations, sleep problems, speech changes (stuttering), shaking/trembling as serious.",
+   "url": "https://www.nhs.uk/medicines/montelukast/side-effects-of-montelukast/",
+   "action": "kept",
+   "newSentence": "The NHS lists mood changes, hallucinations, sleep problems, speech changes such as stuttering and shaking or trembling among serious side effects."
+  },
+  {
+   "id": "c20",
+   "classification": "supported",
+   "evidence": "NHS lists unusual/fast heartbeat and yellow skin/eyes (liver).",
+   "url": "https://www.nhs.uk/medicines/montelukast/side-effects-of-montelukast/",
+   "action": "kept",
+   "newSentence": "An unusual or fast heartbeat, and yellowing of the skin or whites of the eyes, which can be a sign of liver problems, are also listed."
+  },
+  {
+   "id": "c21",
+   "classification": "supported",
+   "evidence": "NHS: for mood changes, anxious, depressed or aggressive, call doctor or 111 immediately.",
+   "url": "https://www.nhs.uk/medicines/montelukast/side-effects-of-montelukast/",
+   "action": "edited",
+   "newSentence": "For mood changes such as becoming anxious, depressed or aggressive, the NHS advises contacting a doctor or NHS 111 immediately."
+  },
+  {
+   "id": "c22",
+   "classification": "supported",
+   "evidence": "NHS: 999 for serious allergic reaction, swelling of lips, mouth, throat, tongue, or difficulty breathing. Original said 'face or throat'.",
+   "url": "https://www.nhs.uk/medicines/montelukast/side-effects-of-montelukast/",
+   "action": "edited",
+   "newSentence": "The NHS says to call 999 for swelling of the lips, mouth, throat or tongue, or difficulty breathing, which can signal a serious allergic reaction."
+  },
+  {
+   "id": "c23",
+   "classification": "supported",
+   "evidence": "MHRA: speak to prescriber or seek urgent medical attention for neuropsychiatric symptoms.",
+   "url": "https://www.gov.uk/drug-safety-update/montelukast-reminder-of-the-risk-of-neuropsychiatric-reactions",
+   "action": "kept",
+   "newSentence": "The MHRA advises patients to speak to their prescriber immediately, or seek urgent medical attention, if these reactions occur."
+  },
+  {
+   "id": "c24",
+   "classification": "supported",
+   "evidence": "MHRA DSU: reported reactions include sleep disorders, hallucinations; leaflet: behaviour and mood-related changes. Original 'thinking' and the exact definition not retrieved; anxiety/depression list cut off in retrieval so removed.",
+   "url": "https://www.gov.uk/drug-safety-update/montelukast-reminder-of-the-risk-of-neuropsychiatric-reactions",
+   "action": "edited",
+   "newSentence": "The MHRA warns that montelukast can cause neuropsychiatric reactions, including sleep disorders, hallucinations and changes in behaviour and mood."
+  },
+  {
+   "id": "c25",
+   "classification": "supported",
+   "evidence": "MHRA: prescribers advised to discontinue montelukast if new or worsening neuropsychiatric symptoms.",
+   "url": "https://www.gov.uk/drug-safety-update/montelukast-reminder-of-the-risk-of-neuropsychiatric-reactions",
+   "action": "kept",
+   "newSentence": "Prescribers are advised to stop montelukast if new or worsening neuropsychiatric symptoms appear."
+  },
+  {
+   "id": "c26",
+   "classification": "supported",
+   "evidence": "MHRA review: risk unchanged; Yellow Card reports suggest risk potentially not well known by HCPs, patients, caregivers.",
+   "url": "https://www.gov.uk/government/news/outcome-of-mhra-review-of-neuropsychiatric-reactions-with-montelukast",
+   "action": "edited",
+   "newSentence": "After a review, the MHRA said the risk is unchanged but is probably not well known to healthcare professionals, patients and carers, judging by Yellow Card reports."
+  },
+  {
+   "id": "c27",
+   "classification": "supported",
+   "evidence": "MHRA: more prominent warnings in leaflet with every pack; DSU April 2024: PIL and SmPC warnings strengthened and highlighted with a black box. Original 'boxed warnings would be added' reworded to a black box in leaflet and product information.",
+   "url": "https://www.gov.uk/drug-safety-update/montelukast-reminder-of-the-risk-of-neuropsychiatric-reactions",
+   "action": "edited",
+   "newSentence": "It said more prominent warnings would be added to the leaflet supplied with every pack, and its April 2024 Drug Safety Update says the warnings in the patient leaflet and product information have been strengthened and highlighted with a black box."
+  },
+  {
+   "id": "c28",
+   "classification": "supported",
+   "evidence": "MHRA encourages patients, HCPs and carers to report to Yellow Card.",
+   "url": "https://www.gov.uk/drug-safety-update/montelukast-reminder-of-the-risk-of-neuropsychiatric-reactions",
+   "action": "kept",
+   "newSentence": "The MHRA encourages patients, carers and healthcare professionals to report suspected side effects to the Yellow Card scheme."
+  },
+  {
+   "id": "c29",
+   "classification": "unsupported",
+   "evidence": "No retrieved source says to tell friends, family, carers and teachers; a search specifically for it found nothing. Patient alert card also not found (author doubt).",
+   "url": "https://www.asthmaandlung.org.uk/symptoms-tests-treatments/treatments/montelukast",
+   "action": "removed"
+  },
+  {
+   "id": "c30",
+   "classification": "supported",
+   "evidence": "AL UK sleep page: talk to GP or asthma nurse as soon as possible if montelukast affects sleep or mood.",
+   "url": "https://www.asthmaandlung.org.uk/symptoms-tests-treatments/treatments/montelukast",
+   "action": "edited",
+   "newSentence": "Asthma and Lung UK advises talking to a GP or asthma nurse as soon as possible if montelukast affects sleep or mood."
+  },
+  {
+   "id": "c31",
+   "classification": "supported",
+   "evidence": "AL UK: suicidal thoughts or thoughts of self-harm listed as a very rare side effect. Original 'rarer still' dropped.",
+   "url": "https://www.asthmaandlung.org.uk/symptoms-tests-treatments/treatments/montelukast",
+   "action": "edited",
+   "newSentence": "Asthma and Lung UK lists thoughts of suicide or self-harm as a very rare side effect."
+  },
+  {
+   "id": "c32",
+   "classification": "textbook",
+   "evidence": "No retrieved source gives the crisis route; kept only as the site mental-health signposting rule (README) because the page describes suicidal thoughts as a side effect.",
+   "url": null,
+   "action": "edited",
+   "newSentence": "For thoughts of suicide or self-harm, the usual routes are 999 if in immediate danger, NHS 111 (mental health option) or Samaritans on 116 123, free at any time."
+  },
+  {
+   "id": "c33",
+   "classification": "supported",
+   "evidence": "NHS: can take in pregnancy; important asthma well controlled; speak to doctor if pregnant, who may review.",
+   "url": "https://www.nhs.uk/medicines/montelukast/pregnancy-breastfeeding-and-fertility-while-taking-montelukast/",
+   "action": "edited",
+   "newSentence": "The NHS says montelukast can be taken in pregnancy, that it is important asthma is well controlled, and that a doctor should be told if pregnancy happens, as they may review the medicine."
+  },
+  {
+   "id": "c34",
+   "classification": "supported",
+   "evidence": "NHS: breastfeeding ok if doctor/health visitor/midwife says baby healthy; passes into milk in tiny amounts, no known side effects in breastfed babies.",
+   "url": "https://www.nhs.uk/medicines/montelukast/pregnancy-breastfeeding-and-fertility-while-taking-montelukast/",
+   "action": "edited",
+   "newSentence": "The NHS says breastfeeding is possible if a doctor, health visitor or midwife says the baby is healthy; montelukast passes into breast milk in tiny amounts and has not been known to cause side effects in breastfed babies."
+  },
+  {
+   "id": "c35",
+   "classification": "supported",
+   "evidence": "NHS: tell doctor if allergic reaction to montelukast or another medicine.",
+   "url": "https://www.nhs.uk/medicines/montelukast/who-can-and-cannot-take-montelukast/",
+   "action": "kept",
+   "newSentence": "The NHS asks anyone who has had an allergic reaction to montelukast or another medicine to tell the doctor."
+  },
+  {
+   "id": "c36",
+   "classification": "supported",
+   "evidence": "NHS: mention phenobarbital/phenytoin, rifampicin, gemfibrozil.",
+   "url": "https://www.nhs.uk/medicines/montelukast/taking-montelukast-with-other-medicines-and-herbal-supplements/",
+   "action": "edited",
+   "newSentence": "The NHS lists epilepsy medicines such as phenobarbital or phenytoin, rifampicin and gemfibrozil as medicines to mention to a doctor or pharmacist before taking montelukast."
+  },
+  {
+   "id": "c37",
+   "classification": "supported",
+   "evidence": "emc SmPC: inducers lower levels; gemfibrozil raises exposure. Original 'may affect how it works' reworded.",
+   "url": "https://www.medicines.org.uk/emc/medicine/28170",
+   "action": "edited",
+   "newSentence": "UK product information says some of these can change montelukast levels."
+  },
+  {
+   "id": "c38",
+   "classification": "unsupported",
+   "evidence": "'Treatment is reviewed' not stated by any retrieved source.",
+   "url": "https://www.nhs.uk/medicines/montelukast/about-montelukast/",
+   "action": "edited",
+   "newSentence": "The MHRA advises that new or worsening mood, behaviour or sleep symptoms should be raised with the prescriber, who is advised to stop montelukast if they appear."
+  },
+  {
+   "id": "c39",
+   "classification": "supported",
+   "evidence": "Singulair named as UK brand (MHRA outcome note, emc Singulair SmPC).",
+   "url": "https://www.gov.uk/government/news/outcome-of-mhra-review-of-neuropsychiatric-reactions-with-montelukast",
+   "action": "kept",
+   "newSentence": "Singulair is a UK brand name of montelukast."
+  },
+  {
+   "id": "c40",
+   "classification": "supported",
+   "evidence": "Singulair named as US brand (FDA statement via NHS medicines resources page).",
+   "url": "https://www.medicinesresources.nhs.uk/fda-requires-stronger-warning-about-risk-of-neuropsychiatric-events-associated-with-asthma-and-allergy-medication-singulair-and-generic-montelukast.html",
+   "action": "kept",
+   "newSentence": "Singulair is also a US brand name of montelukast."
+  }
+ ],
+ "notes": "Currency: MHRA outcome news and April 2024 DSU are the latest found; nothing newer. Patient alert card not found in any retrieved text so not mentioned. Boxed warning wording: UK is a black box in leaflet/SmPC (not an FDA-style boxed warning text). Hay fever vs allergic rhinitis: used 'seasonal allergies such as hay fever' per Asthma and Lung UK; formal allergic rhinitis licence not retrieved. Exercise-triggered use per NHS/AL UK. Added dosage form id chewable-tablet (in vocabulary). Crisis sentence kept as the single textbook claim; remove if reviewer prefers. Pregnancy: NHS wording differs from an NHS-affiliated SmPC note ('only if essential'); NHS page followed. 'Not a steroid' rested on a blended summary; softened. Added MedlinePlus reference (retrieved, not cited in text)."
+}
