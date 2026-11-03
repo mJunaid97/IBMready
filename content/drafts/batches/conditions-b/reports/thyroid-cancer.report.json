@@ -1,0 +1,749 @@
+{
+ "id": "thyroid-cancer",
+ "searchesUsed": 14,
+ "counts": {
+  "supported": 54,
+  "textbook": 3,
+  "unsupported": 37,
+  "wrong": 0,
+  "unsafe": 0,
+  "unchecked": 0
+ },
+ "claims": [
+  {
+   "id": "c01",
+   "classification": "textbook",
+   "evidence": "Gland role is textbook; MedlinePlus/NCI cover the topic. (first pass: \"Thyroid cancer is a cancer that starts in the thyroid gland, a gland in the neck that make\")",
+   "url": "https://medlineplus.gov/ency/article/001213.htm",
+   "action": "kept"
+  },
+  {
+   "id": "c02",
+   "classification": "supported",
+   "evidence": "NHS: often no symptoms early; NHS 111 Wales: typical lump hard, painless, slowly bigger. Softened to \"a common sign\". (first pass: \"Early thyroid cancer often causes no symptoms, and the most common sign is a painless lump\")",
+   "url": "https://111.wales.nhs.uk/encyclopaedia/c/article/cancerofthethyroid",
+   "action": "edited",
+   "newSentence": "A common sign is a painless lump in the neck that slowly gets bigger."
+  },
+  {
+   "id": "c03",
+   "classification": "supported",
+   "evidence": "NCI and Macmillan list four main types. (first pass: \"The main types are papillary, follicular, medullary and anaplastic cancer.\")",
+   "url": "https://www.cancer.gov/types/thyroid",
+   "action": "kept"
+  },
+  {
+   "id": "c04",
+   "classification": "supported",
+   "evidence": "NHS: surgery most common; radioactive iodine usually offered after surgery. (first pass: \"Surgery is usually the main treatment, and radioactive iodine is often given afterwards.\")",
+   "url": "https://www.nhs.uk/conditions/thyroid-cancer/treatment/",
+   "action": "edited",
+   "newSentence": "Surgery is the most common treatment, and radioactive iodine is usually offered afterwards."
+  },
+  {
+   "id": "c05",
+   "classification": "unsupported",
+   "evidence": "No official source retrieved says most people do well; only an NHS trust page said usually cured, a word the style rules avoid. Replaced with supported \"depends on type and stage\". (first pass: \"Most people with the common types do well, according to NHS hospital trust information.\")",
+   "url": "https://www.cancer.gov/types/thyroid",
+   "action": "removed",
+   "newSentence": "The outlook depends on the type and stage of the cancer, and a specialist team explains it for each person."
+  },
+  {
+   "id": "c06",
+   "classification": "supported",
+   "evidence": "Macmillan: doctors do not know exact causes. (first pass: \"The cause of thyroid cancer is often not known\")",
+   "url": "https://www.macmillan.org.uk/cancer-information-and-support/thyroid-cancer/causes",
+   "action": "edited",
+   "newSentence": "The exact cause of thyroid cancer is not known for most people"
+  },
+  {
+   "id": "c07",
+   "classification": "unsupported",
+   "evidence": "\"Most relevant risk factor for differentiated thyroid cancer\" came from a PMC editorial. Retrieved CRUK text: head/neck radiotherapy usually in childhood can raise risk years later. (first pass: \"Radiation exposure of the thyroid, particularly in childhood, is a recognised risk factor \")",
+   "url": "https://www.cancerresearchuk.org/about-cancer/thyroid-cancer/causes-risks",
+   "action": "edited",
+   "newSentence": "Radiotherapy to the head or neck, usually given in childhood, can increase the risk of thyroid cancer many years later"
+  },
+  {
+   "id": "c08",
+   "classification": "supported",
+   "evidence": "Close relative raises risk (CRUK/Macmillan); medullary testing moved to article and reworded per Genomics Education Programme. (first pass: \"Family history can play a part, and other family members may be tested in medullary thyroi\")",
+   "url": "https://www.cancerresearchuk.org/about-cancer/thyroid-cancer/causes-risks",
+   "action": "edited",
+   "newSentence": "Having a close relative with thyroid cancer raises the risk, although the overall risk stays small"
+  },
+  {
+   "id": "c09",
+   "classification": "supported",
+   "evidence": "CRUK head/neck radiotherapy, usually in childhood. (first pass: \"Radiation exposure of the thyroid, especially in childhood\")",
+   "url": "https://www.cancerresearchuk.org/about-cancer/thyroid-cancer/causes-risks",
+   "action": "edited",
+   "newSentence": "Radiotherapy to the head or neck, usually in childhood"
+  },
+  {
+   "id": "c10",
+   "classification": "unsupported",
+   "evidence": "\"or thyroid disease\" not supported; only close relative with thyroid cancer. (first pass: \"A family history of thyroid cancer or thyroid disease\")",
+   "url": "https://www.cancerresearchuk.org/about-cancer/thyroid-cancer/causes-risks",
+   "action": "edited",
+   "newSentence": "A close relative who has had thyroid cancer"
+  },
+  {
+   "id": "c11",
+   "classification": "supported",
+   "evidence": "Chronic goitre listed as risk factor. (first pass: \"A long-standing goitre (enlarged thyroid)\")",
+   "url": "https://www.macmillan.org.uk/cancer-information-and-support/thyroid-cancer/causes",
+   "action": "kept"
+  },
+  {
+   "id": "c12",
+   "classification": "unsupported",
+   "evidence": "Age effect not supported as stated; sex difference supported (women diagnosed more often). (first pass: \"Age and sex, which affect the risk\")",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3077966/",
+   "action": "edited",
+   "newSentence": "Being female, as thyroid cancer is diagnosed more often in women"
+  },
+  {
+   "id": "c13",
+   "classification": "supported",
+   "evidence": "NHS 111 Wales: lump front lower neck, hard, slowly bigger, painless. (first pass: \"A hard, painless lump in the front lower part of the neck that slowly gets bigger\")",
+   "url": "https://111.wales.nhs.uk/encyclopaedia/c/article/cancerofthethyroid",
+   "action": "kept"
+  },
+  {
+   "id": "c14",
+   "classification": "unsupported",
+   "evidence": "\"more than a few weeks\" not NHS text (\"not getting better\"). (first pass: \"A hoarse voice that lasts more than a few weeks without a clear reason\")",
+   "url": "https://www.nhs.uk/conditions/thyroid-cancer/symptoms/",
+   "action": "edited",
+   "newSentence": "A hoarse voice that is not getting better"
+  },
+  {
+   "id": "c15",
+   "classification": "supported",
+   "evidence": "NHS lists breathing/swallowing trouble. (first pass: \"Difficulty swallowing or breathing\")",
+   "url": "https://www.nhs.uk/conditions/thyroid-cancer/symptoms/",
+   "action": "kept"
+  },
+  {
+   "id": "c16",
+   "classification": "supported",
+   "evidence": "NHS: neck lymph nodes may be removed if spread. (first pass: \"Spread to nearby lymph nodes, which may be removed during surgery\")",
+   "url": "https://www.nhs.uk/conditions/thyroid-cancer/treatment/",
+   "action": "edited",
+   "newSentence": "Spread to nearby lymph nodes in the neck, which may be removed during surgery"
+  },
+  {
+   "id": "c17",
+   "classification": "supported",
+   "evidence": "Follow-up looks for remaining or returning cancer (CRUK/Macmillan). (first pass: \"Return of the cancer after treatment, which is one reason follow-up is arranged\")",
+   "url": "https://www.cancerresearchuk.org/about-cancer/thyroid-cancer/treatment/follow-up",
+   "action": "kept"
+  },
+  {
+   "id": "c18",
+   "classification": "unsupported",
+   "evidence": "Underactive-thyroid wording and \"lifelong\" not firmly retrieved here; NHS says tablets replace hormones the thyroid made. (first pass: \"An underactive thyroid after the thyroid is removed, needing lifelong hormone replacement\")",
+   "url": "https://www.nhs.uk/conditions/thyroid-cancer/treatment/",
+   "action": "edited",
+   "newSentence": "Low thyroid hormone levels after the thyroid is removed, which is why replacement tablets are usually needed"
+  },
+  {
+   "id": "c19",
+   "classification": "supported",
+   "evidence": "GP may examine neck, arrange blood test, refer urgently if concerned; \"thyroid blood tests\" softened. (first pass: \"A GP typically examines the neck, arranges thyroid blood tests and refers the person to a \")",
+   "url": "https://www.nhs.uk/conditions/thyroid-cancer/symptoms/",
+   "action": "edited",
+   "newSentence": "A GP may examine the neck and arrange a blood test, and may refer the person urgently to a hospital specialist if cancer is a concern, which does not mean that cancer is certain."
+  },
+  {
+   "id": "c20",
+   "classification": "supported",
+   "evidence": "FNA is the standard tissue test (PMC review/Macmillan). (first pass: \"A fine needle aspiration biopsy, in which a thin needle removes some cells from the lump, \")",
+   "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7033392/",
+   "action": "edited",
+   "newSentence": "A fine needle aspiration biopsy, in which a thin needle removes some cells from the lump, is the usual tissue test."
+  },
+  {
+   "id": "c21",
+   "classification": "unsupported",
+   "evidence": "\"usually cannot show on its own\" not retrieved; retrieved: ultrasound helps estimate malignancy risk and whether biopsy is needed. (first pass: \"An ultrasound scan of the neck helps interpret the biopsy, but it usually cannot show on i\")",
+   "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7033392/",
+   "action": "edited",
+   "newSentence": "An ultrasound scan of the neck helps estimate how likely a thyroid nodule is to be cancer and whether a biopsy is needed."
+  },
+  {
+   "id": "c22",
+   "classification": "unsupported",
+   "evidence": "\"whole thyroid or part depending on type and stage\" not retrieved; NHS: surgery most common, lymph nodes if spread. (first pass: \"Surgery is usually the main treatment, and depending on the type and stage the whole thyro\")",
+   "url": "https://www.nhs.uk/conditions/thyroid-cancer/treatment/",
+   "action": "edited",
+   "newSentence": "Surgery to remove the thyroid is the most common treatment, and the surgeon may also remove nearby lymph nodes in the neck if the cancer has spread or might have spread."
+  },
+  {
+   "id": "c23",
+   "classification": "supported",
+   "evidence": "Radioactive iodine usually offered after surgery to destroy leftover thyroid tissue; iodine-uptake explanation now marked textbook in the article. (first pass: \"Radioactive iodine is often given after surgery, because thyroid tissue and most thyroid c\")",
+   "url": "https://www.nhs.uk/conditions/thyroid-cancer/treatment/",
+   "action": "edited",
+   "newSentence": "Radioactive iodine is usually offered after surgery to destroy any thyroid tissue left behind."
+  },
+  {
+   "id": "c24",
+   "classification": "unsupported",
+   "evidence": "Specific claim that the MDT decides whether radioactive iodine is needed not retrieved. (first pass: \"The multidisciplinary team decides whether it is needed.\")",
+   "url": "https://www.uhb.nhs.uk/services/cancer/patients-and-visitors/cancer-types/thyroid-cancer/",
+   "action": "removed"
+  },
+  {
+   "id": "c25",
+   "classification": "unsupported",
+   "evidence": "Too broad; NCI: targeted therapy and external radiotherapy for advanced disease; chemotherapy with radiotherapy in anaplastic. (first pass: \"Radiotherapy, targeted medicines and chemotherapy are used in more advanced cases.\")",
+   "url": "https://www.cancer.gov/types/thyroid/patient/thyroid-treatment-pdq",
+   "action": "edited",
+   "newSentence": "For more advanced disease, options include targeted medicines and radiotherapy."
+  },
+  {
+   "id": "c26",
+   "classification": "supported",
+   "evidence": "NHS: usually need hormone tablets; lifelong and levothyroxine from BTF leaflet result (exact page attribution uncertain). (first pass: \"If the whole thyroid is removed, lifelong thyroid hormone replacement with levothyroxine i\")",
+   "url": "https://www.nhs.uk/conditions/thyroid-cancer/treatment/",
+   "action": "edited",
+   "newSentence": "After the whole thyroid is removed, hormone tablets are usually needed to replace the hormones it made."
+  },
+  {
+   "id": "c27",
+   "classification": "unsupported",
+   "evidence": "Absence-of-evidence sentence; no source said it. Macmillan: causes mostly unknown, a risk factor is not a guarantee. (first pass: \"The sources reviewed did not describe a proven way to prevent thyroid cancer, and the caus\")",
+   "url": "https://www.macmillan.org.uk/cancer-information-and-support/thyroid-cancer/causes",
+   "action": "edited",
+   "newSentence": "The causes of thyroid cancer are not known for most people, and having a risk factor does not mean that a person will develop it."
+  },
+  {
+   "id": "c28",
+   "classification": "unsupported",
+   "evidence": "Macmillan \"as soon as possible\" not found; NHS wording used; \"few weeks\" is not NHS wording. (first pass: \"A new lump in the neck, a hoarse voice lasting more than a few weeks without a clear reaso\")",
+   "url": "https://www.nhs.uk/conditions/thyroid-cancer/symptoms/",
+   "action": "edited",
+   "newSentence": "The NHS advises seeing a GP about a lump in the neck, a hoarse voice that is not getting better, or difficulty swallowing that is not getting better."
+  },
+  {
+   "id": "c29",
+   "classification": "supported",
+   "evidence": "NHS goitre page: call 999 or A&E for hard to breathe or wheezing; was textbook, now sourced and attributed to goitre advice. (first pass: \"If breathing becomes severely difficult, call 999 or go to A&E.\")",
+   "url": "https://www.nhs.uk/conditions/goitre/",
+   "action": "edited",
+   "newSentence": "For a person who finds it hard to breathe or has a wheezing noise when breathing, NHS advice on goitre is to call 999 or go to A&E."
+  },
+  {
+   "id": "c30",
+   "classification": "supported",
+   "evidence": "Thyroid in the neck (MedlinePlus/NCI); location marked textbook in ledger. (first pass: \"Thyroid cancer starts in the thyroid gland, which sits in the neck.\")",
+   "url": "https://medlineplus.gov/ency/article/001213.htm",
+   "action": "edited",
+   "newSentence": "Thyroid cancer starts in the thyroid gland, which sits in the front of the neck."
+  },
+  {
+   "id": "c31",
+   "classification": "unsupported",
+   "evidence": "Grouping by microscope appearance not retrieved. (first pass: \"Doctors group it by how the cancer cells look under a microscope.\")",
+   "url": "https://www.cancer.gov/types/thyroid",
+   "action": "removed"
+  },
+  {
+   "id": "c32",
+   "classification": "supported",
+   "evidence": "Four main types. (first pass: \"The main types are papillary, follicular, medullary and anaplastic cancer.\")",
+   "url": "https://www.cancer.gov/types/thyroid",
+   "action": "kept"
+  },
+  {
+   "id": "c33",
+   "classification": "supported",
+   "evidence": "Papillary most common, follicular less common, together differentiated (NCI). (first pass: \"Papillary and follicular cancers are the most common, and together they are called differe\")",
+   "url": "https://www.cancer.gov/types/thyroid/hp",
+   "action": "edited",
+   "newSentence": "Papillary is the most common type, and follicular is less common. Papillary and follicular cancers are together called differentiated thyroid cancer."
+  },
+  {
+   "id": "c34",
+   "classification": "supported",
+   "evidence": "Medullary rare, from calcitonin-producing C cells. (first pass: \"Medullary thyroid cancer is rare.\")",
+   "url": "https://www.macmillan.org.uk/cancer-information-and-support/thyroid-cancer/medullary",
+   "action": "edited",
+   "newSentence": "Medullary thyroid cancer is rare and starts in the C cells of the thyroid, which make a hormone called calcitonin."
+  },
+  {
+   "id": "c35",
+   "classification": "supported",
+   "evidence": "Macmillan: anaplastic very rare, fast-growing; NCI: most aggressive. (first pass: \"Anaplastic thyroid cancer is very rare and fast growing.\")",
+   "url": "https://www.macmillan.org.uk/cancer-information-and-support/thyroid-cancer",
+   "action": "edited",
+   "newSentence": "Anaplastic thyroid cancer is very rare and fast growing, and the National Cancer Institute calls it the most aggressive type."
+  },
+  {
+   "id": "c36",
+   "classification": "unsupported",
+   "evidence": "Generic claim not retrieved; replaced with NCI statement that radioactive iodine is not used for medullary cancer. (first pass: \"The type matters because it shapes the tests and the follow-up that a specialist team reco\")",
+   "url": "https://www.cancer.gov/types/thyroid/patient/thyroid-treatment-pdq",
+   "action": "edited",
+   "newSentence": "The type affects treatment, because radioactive iodine is used mainly for differentiated cancers and is not used for medullary thyroid cancer."
+  },
+  {
+   "id": "c37",
+   "classification": "unsupported",
+   "evidence": "BTF and NCI describing types separately not shown; Macmillan has separate type pages. (first pass: \"Patient information from Macmillan, the British Thyroid Foundation and the National Cancer\")",
+   "url": "https://www.macmillan.org.uk/cancer-information-and-support/thyroid-cancer",
+   "action": "edited",
+   "newSentence": "Macmillan Cancer Support has separate information pages on papillary and follicular, medullary and anaplastic thyroid cancer."
+  },
+  {
+   "id": "c38",
+   "classification": "unsupported",
+   "evidence": "Redundant and not directly retrieved; removed. (first pass: \"Early thyroid cancer is often noticed because of a lump in the neck rather than because of\")",
+   "url": "https://www.nhs.uk/conditions/thyroid-cancer/symptoms/",
+   "action": "removed"
+  },
+  {
+   "id": "c39",
+   "classification": "supported",
+   "evidence": "UHB and Macmillan describe MDT planning care. (first pass: \"Care is usually planned by a multidisciplinary team of specialists.\")",
+   "url": "https://www.uhb.nhs.uk/services/cancer/patients-and-visitors/cancer-types/thyroid-cancer/",
+   "action": "edited",
+   "newSentence": "Care is usually planned by a multidisciplinary team, which can include specialist surgeons, oncologists, cancer nurse specialists, radiologists and histopathologists who meet to discuss the best treatment."
+  },
+  {
+   "id": "c40",
+   "classification": "supported",
+   "evidence": "Early thyroid cancer often causes no symptoms (NHS/Leeds). (first pass: \"Early thyroid cancer often causes no symptoms at all.\")",
+   "url": "https://www.nhs.uk/conditions/thyroid-cancer/symptoms/",
+   "action": "edited",
+   "newSentence": "Early thyroid cancer often causes no symptoms, and it is sometimes found by chance on scans done for other reasons."
+  },
+  {
+   "id": "c41",
+   "classification": "supported",
+   "evidence": "NHS 111 Wales lump description. (first pass: \"The most common sign is a lump in the front, lower part of the neck, which usually feels h\")",
+   "url": "https://111.wales.nhs.uk/encyclopaedia/c/article/cancerofthethyroid",
+   "action": "edited",
+   "newSentence": "The typical lump is in the front, lower part of the neck, and it usually feels hard, slowly gets bigger and is not painful."
+  },
+  {
+   "id": "c42",
+   "classification": "unsupported",
+   "evidence": "\"longer than a few weeks\" not NHS wording. (first pass: \"Other possible signs include a hoarse voice that lasts longer than a few weeks without a c\")",
+   "url": "https://www.nhs.uk/conditions/thyroid-cancer/symptoms/",
+   "action": "edited",
+   "newSentence": "Other symptoms can include a hoarse voice, difficulty swallowing or breathing, and pain or pressure at the front of the neck."
+  },
+  {
+   "id": "c43",
+   "classification": "supported",
+   "evidence": "Leeds: neck lumps usually less serious; NHS: most benign. Figures dropped. (first pass: \"Most neck lumps are not cancer, but a lump is still worth having checked.\")",
+   "url": "https://www.leedsth.nhs.uk/services/thyroid-cancer/",
+   "action": "edited",
+   "newSentence": "Neck lumps are common and are usually caused by a less serious condition, such as an enlarged thyroid called a goitre."
+  },
+  {
+   "id": "c44",
+   "classification": "supported",
+   "evidence": "NHS: book GP appointment for these. (first pass: \"A GP is the first contact for a new lump, a lasting hoarse voice or difficulty swallowing.\")",
+   "url": "https://www.nhs.uk/conditions/thyroid-cancer/symptoms/",
+   "action": "edited",
+   "newSentence": "The NHS advises booking a GP appointment for a lump in the neck, a hoarse voice that is not getting better, or difficulty swallowing that is not getting better."
+  },
+  {
+   "id": "c45",
+   "classification": "unsupported",
+   "evidence": "Macmillan attribution was a guess; retrieved NHS wording used instead. (first pass: \"Macmillan advises seeing a doctor as soon as possible for a lump in the neck, whether or n\")",
+   "url": "https://www.nhs.uk/conditions/thyroid-cancer/symptoms/",
+   "action": "removed"
+  },
+  {
+   "id": "c46",
+   "classification": "supported",
+   "evidence": "NHS goitre page supports 999/A&E for breathing difficulty. (first pass: \"If breathing becomes severely difficult, call 999 or go to A&E.\")",
+   "url": "https://www.nhs.uk/conditions/goitre/",
+   "action": "edited",
+   "newSentence": "NHS advice on goitre is to call 999 or go to A&E if a person finds it hard to breathe or has a wheezing noise when breathing."
+  },
+  {
+   "id": "c47",
+   "classification": "supported",
+   "evidence": "Doctors do not know exact causes (Macmillan). (first pass: \"The cause of thyroid cancer is often not known.\")",
+   "url": "https://www.macmillan.org.uk/cancer-information-and-support/thyroid-cancer/causes",
+   "action": "edited",
+   "newSentence": "Doctors do not know the exact cause of thyroid cancer in most people, but some risk factors can raise the chance of developing it."
+  },
+  {
+   "id": "c48",
+   "classification": "unsupported",
+   "evidence": "\"Most relevant risk factor\" came from a PMC editorial; reworded to CRUK and PMC review sensitivity statements. (first pass: \"Exposure of the thyroid to radiation, particularly in childhood, is described as the most \")",
+   "url": "https://www.cancerresearchuk.org/about-cancer/thyroid-cancer/causes-risks",
+   "action": "edited",
+   "newSentence": "Radiotherapy to the head or neck, usually given in childhood, can increase the risk of thyroid cancer many years later, according to Cancer Research UK."
+  },
+  {
+   "id": "c49",
+   "classification": "unsupported",
+   "evidence": "\"or thyroid disease\" unsupported; close relative with thyroid cancer supported. (first pass: \"A family history of thyroid cancer or thyroid disease is listed in patient guidance as a r\")",
+   "url": "https://www.cancerresearchuk.org/about-cancer/thyroid-cancer/causes-risks",
+   "action": "edited",
+   "newSentence": "Having a close relative with thyroid cancer raises the risk, and the risk is higher with more than one affected relative or a diagnosis at a young age."
+  },
+  {
+   "id": "c50",
+   "classification": "supported",
+   "evidence": "Chronic goitre; Macmillan: goitres and nodules slightly increase risk. (first pass: \"A long-standing goitre, which is an enlarged thyroid, is also named as a risk factor.\")",
+   "url": "https://www.macmillan.org.uk/cancer-information-and-support/thyroid-cancer/causes",
+   "action": "edited",
+   "newSentence": "A long-standing goitre is listed as a risk factor, and Macmillan says some non-cancerous thyroid conditions, such as goitres and nodules, can slightly increase the risk."
+  },
+  {
+   "id": "c51",
+   "classification": "unsupported",
+   "evidence": "Age not supported; sex supported. (first pass: \"Age and sex also affect the risk.\")",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3077966/",
+   "action": "edited",
+   "newSentence": "Thyroid cancer is diagnosed more often in women than in men."
+  },
+  {
+   "id": "c52",
+   "classification": "supported",
+   "evidence": "Genomics Education Programme: RET testing for people with medullary cancer; relatives tested if variant found. (first pass: \"For medullary thyroid cancer, other family members may be offered tests to check their own\")",
+   "url": "https://genomicseducation.hee.nhs.uk/resources/genetic-conditions-factsheets/item/78-familial-medullary-thyroid-cancer",
+   "action": "edited",
+   "newSentence": "For medullary thyroid cancer, NHS genomics education material says that genetic testing for the RET gene is offered to people diagnosed, and that relatives can be offered testing if a gene change is found."
+  },
+  {
+   "id": "c53",
+   "classification": "unsupported",
+   "evidence": "First half supported (Macmillan); \"many people who develop it have none\" not retrieved. (first pass: \"Having a risk factor does not mean that a person will develop thyroid cancer, and many peo\")",
+   "url": "https://www.macmillan.org.uk/cancer-information-and-support/thyroid-cancer/causes",
+   "action": "edited",
+   "newSentence": "Having one or more risk factors does not mean that a person will get thyroid cancer."
+  },
+  {
+   "id": "c54",
+   "classification": "supported",
+   "evidence": "GP may examine neck and arrange blood test; \"thyroid blood tests\" softened. (first pass: \"A GP typically examines the neck, arranges thyroid blood tests and refers the person to a \")",
+   "url": "https://www.nhs.uk/conditions/thyroid-cancer/symptoms/",
+   "action": "edited",
+   "newSentence": "A GP may examine the neck and arrange a blood test."
+  },
+  {
+   "id": "c55",
+   "classification": "supported",
+   "evidence": "FNA standard tissue test. (first pass: \"A fine needle aspiration biopsy is a key test.\")",
+   "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7033392/",
+   "action": "edited",
+   "newSentence": "Fine needle aspiration is the usual tissue test and is often guided by ultrasound."
+  },
+  {
+   "id": "c56",
+   "classification": "textbook",
+   "evidence": "Plain description of the test. (first pass: \"In it, a very thin needle is passed into the thyroid to remove some cells from the lump fo\")",
+   "url": "https://www.macmillan.org.uk/cancer-information-and-support/thyroid-cancer/diagnosis",
+   "action": "edited",
+   "newSentence": "In this test a thin needle removes some cells from the lump so that they can be examined under a microscope."
+  },
+  {
+   "id": "c57",
+   "classification": "unsupported",
+   "evidence": "\"cannot show on its own\" not retrieved; replaced by ultrasound estimating risk and need for biopsy. (first pass: \"An ultrasound scan of the neck usually cannot show on its own whether a lump is cancer, bu\")",
+   "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7033392/",
+   "action": "edited",
+   "newSentence": "Features seen on ultrasound, such as the size and edges of the nodule, help estimate how likely it is to be cancer and whether a biopsy is needed."
+  },
+  {
+   "id": "c58",
+   "classification": "unsupported",
+   "evidence": "NCI statement about thyroid-hormone blood tests not retrieved. Retrieved: blood work mainly checks thyroid function and Macmillan says cancer cannot be identified from blood tests alone, which justifies keeping the thyroid-function-tests link. (first pass: \"The National Cancer Institute says blood tests to check thyroid hormone levels may also be\")",
+   "url": "https://www.macmillan.org.uk/cancer-information-and-support/thyroid-cancer/diagnosis",
+   "action": "edited",
+   "newSentence": "Blood tests mainly check how the thyroid is working, and Macmillan notes that cancer cannot be identified from a blood test alone."
+  },
+  {
+   "id": "c59",
+   "classification": "unsupported",
+   "evidence": "Not retrieved in this form; replaced with core/surgical biopsy and pathologist statements. (first pass: \"Different types of thyroid cancer may be diagnosed with different tests, so the specialist\")",
+   "url": "https://www.cancer.gov/types/thyroid/patient/thyroid-treatment-pdq",
+   "action": "edited",
+   "newSentence": "If the result is unclear, a core needle biopsy or a surgical biopsy may follow."
+  },
+  {
+   "id": "c60",
+   "classification": "supported",
+   "evidence": "NHS: surgery most common. (first pass: \"Surgery is usually the main treatment.\")",
+   "url": "https://www.nhs.uk/conditions/thyroid-cancer/treatment/",
+   "action": "edited",
+   "newSentence": "Surgery is the most common treatment for thyroid cancer, according to the NHS."
+  },
+  {
+   "id": "c61",
+   "classification": "unsupported",
+   "evidence": "\"whole or part depending on type and stage\" not retrieved; lymph node removal if spread supported. (first pass: \"Depending on the type and stage, the whole thyroid or part of it is removed, and nearby ly\")",
+   "url": "https://www.nhs.uk/conditions/thyroid-cancer/treatment/",
+   "action": "edited",
+   "newSentence": "The operation removes the thyroid, which is called a thyroidectomy, and the surgeon may also remove some lymph nodes in the neck if the cancer has spread or might have spread to them."
+  },
+  {
+   "id": "c62",
+   "classification": "unsupported",
+   "evidence": "Generic, not retrieved; removed. (first pass: \"Treatment is planned around the type and stage of the cancer.\")",
+   "url": "https://www.nhs.uk/conditions/thyroid-cancer/treatment/",
+   "action": "removed"
+  },
+  {
+   "id": "c63",
+   "classification": "unsupported",
+   "evidence": "Duplicate and unsupported; removed. (first pass: \"The type and stage also influence whether nearby lymph nodes are taken out.\")",
+   "url": "https://www.nhs.uk/conditions/thyroid-cancer/treatment/",
+   "action": "removed"
+  },
+  {
+   "id": "c64",
+   "classification": "supported",
+   "evidence": "Usually offered after surgery to destroy leftover tissue. (first pass: \"Radioactive iodine is often given after surgery.\")",
+   "url": "https://www.nhs.uk/conditions/thyroid-cancer/treatment/",
+   "action": "edited",
+   "newSentence": "Radioactive iodine is usually offered after surgery, and its purpose is to destroy any thyroid tissue left over."
+  },
+  {
+   "id": "c65",
+   "classification": "textbook",
+   "evidence": "Iodine uptake explanation; textbook; NCI says radioactive iodine used for differentiated cancers. (first pass: \"The thyroid gland and most thyroid cancer cells take up iodine, so the radiation acts dire\")",
+   "url": "https://www.cancer.gov/types/thyroid/patient/thyroid-treatment-pdq",
+   "action": "edited",
+   "newSentence": "The thyroid and most differentiated thyroid cancer cells take up iodine, so the radiation acts on them directly."
+  },
+  {
+   "id": "c66",
+   "classification": "unsupported",
+   "evidence": "MDT deciding on radioactive iodine not retrieved; general MDT statement used. (first pass: \"Whether a person needs radioactive iodine is decided by the multidisciplinary team.\")",
+   "url": "https://www.macmillan.org.uk/cancer-information-and-support/thyroid-cancer",
+   "action": "edited",
+   "newSentence": "The multidisciplinary team discusses the best treatment, including the extent of surgery, and then talks it through with the patient."
+  },
+  {
+   "id": "c67",
+   "classification": "unsupported",
+   "evidence": "Too broad; NCI lists targeted therapy and external radiotherapy for advanced disease, chemotherapy with radiotherapy in anaplastic. (first pass: \"Radiotherapy, targeted medicines and chemotherapy are used in more advanced cases.\")",
+   "url": "https://www.cancer.gov/types/thyroid/patient/thyroid-treatment-pdq",
+   "action": "edited",
+   "newSentence": "For more advanced disease, the National Cancer Institute lists targeted therapy and external radiotherapy as options, and chemotherapy is often combined with radiotherapy in anaplastic thyroid cancer."
+  },
+  {
+   "id": "c68",
+   "classification": "supported",
+   "evidence": "Hormone tablets usually needed (NHS); levothyroxine and lifelong from BTF leaflet result, exact page attribution uncertain; dose-free. (first pass: \"If the whole thyroid is removed, lifelong thyroid hormone replacement is needed, and levot\")",
+   "url": "https://www.nhs.uk/conditions/thyroid-cancer/treatment/",
+   "action": "edited",
+   "newSentence": "After the whole thyroid is removed, hormone tablets are usually needed to replace the hormones it made, and some hospitals note that the tablets can also help stop the cancer coming back."
+  },
+  {
+   "id": "c69",
+   "classification": "supported",
+   "evidence": "Follow-up looks for remaining or returning cancer. (first pass: \"After treatment, follow-up is arranged with the specialist team.\")",
+   "url": "https://www.cancerresearchuk.org/about-cancer/thyroid-cancer/treatment/follow-up",
+   "action": "edited",
+   "newSentence": "After treatment, follow-up checks look for any remaining or returning cancer."
+  },
+  {
+   "id": "c70",
+   "classification": "supported",
+   "evidence": "Neck ultrasound and thyroglobulin are core of follow-up. (first pass: \"Follow-up usually combines neck ultrasound with blood tests.\")",
+   "url": "https://www.macmillan.org.uk/cancer-information-and-support/thyroid-cancer/follow-up",
+   "action": "edited",
+   "newSentence": "Neck ultrasound and blood tests, including thyroglobulin, are the main follow-up tools in differentiated thyroid cancer."
+  },
+  {
+   "id": "c71",
+   "classification": "supported",
+   "evidence": "CRUK lists calcitonin as the medullary marker; \"rather than thyroglobulin\" not retrieved. (first pass: \"For medullary cancer it is similar, but calcitonin is measured rather than thyroglobulin.\")",
+   "url": "https://www.cancerresearchuk.org/about-cancer/thyroid-cancer/treatment/follow-up",
+   "action": "edited",
+   "newSentence": "For medullary thyroid cancer, Cancer Research UK lists calcitonin as the tumour marker, and levels can rise for reasons other than cancer."
+  },
+  {
+   "id": "c72",
+   "classification": "supported",
+   "evidence": "Search summary: low-risk cancers removed surgically may not need follow-up care; attribution to BTF leaflet inferred. (first pass: \"A patient guide says people with low-risk cancers removed by surgery may not need follow-u\")",
+   "url": "https://www.btf-thyroid.org/thyroid-cancerleaflet?tmpl=component",
+   "action": "edited",
+   "newSentence": "How often follow-up is needed varies with the risk of the cancer coming back, and one patient guide says that people with low-risk cancers removed by surgery may not need follow-up care."
+  },
+  {
+   "id": "c73",
+   "classification": "unsupported",
+   "evidence": "\"prevents an underactive thyroid\" not retrieved; removed. (first pass: \"Levothyroxine replaces the hormone the thyroid would otherwise make and prevents an undera\")",
+   "url": "https://www.btf-thyroid.org/thyroid-cancerleaflet?tmpl=component",
+   "action": "removed"
+  },
+  {
+   "id": "c74",
+   "classification": "unsupported",
+   "evidence": "Slightly higher dose claim not retrieved and dose-related; removed. (first pass: \"After cancer treatment, the dose is often set slightly higher than after removal of the th\")",
+   "url": "https://www.btf-thyroid.org/thyroid-cancerleaflet?tmpl=component",
+   "action": "removed"
+  },
+  {
+   "id": "c75",
+   "classification": "unsupported",
+   "evidence": "No official source for \"most people do well\"; removed. Outlook depends on type/stage kept. (first pass: \"NHS hospital trust information says most people do well, and that the outlook depends on t\")",
+   "url": "https://www.cancer.gov/types/thyroid",
+   "action": "edited",
+   "newSentence": "The outlook depends on the type and stage of the thyroid cancer, and the specialist team can explain what this means for each person."
+  },
+  {
+   "id": "c76",
+   "classification": "supported",
+   "evidence": "Leeds/NHS: neck lumps usually less serious. (first pass: \"No. Most neck lumps are not cancer.\")",
+   "url": "https://www.leedsth.nhs.uk/services/thyroid-cancer/",
+   "action": "edited",
+   "newSentence": "No. Neck lumps are common and are usually caused by a less serious condition, such as an enlarged thyroid, and thyroid cancer is uncommon."
+  },
+  {
+   "id": "c77",
+   "classification": "unsupported",
+   "evidence": "Macmillan attribution unsupported; NHS wording used. (first pass: \"Even so, a new lump is worth having checked, and Macmillan advises seeing a doctor as soon\")",
+   "url": "https://www.nhs.uk/conditions/thyroid-cancer/symptoms/",
+   "action": "edited",
+   "newSentence": "A new lump should still be checked, and the NHS advises booking a GP appointment."
+  },
+  {
+   "id": "c78",
+   "classification": "supported",
+   "evidence": "GP examines, blood test, referral. (first pass: \"A GP examines the neck and may arrange blood tests and a referral to a specialist.\")",
+   "url": "https://www.nhs.uk/conditions/thyroid-cancer/symptoms/",
+   "action": "edited",
+   "newSentence": "The GP may examine the neck, arrange a blood test and refer the person to a specialist if cancer is a concern."
+  },
+  {
+   "id": "c79",
+   "classification": "supported",
+   "evidence": "NHS: often no symptoms. (first pass: \"No. Early thyroid cancer often causes no symptoms at all.\")",
+   "url": "https://www.nhs.uk/conditions/thyroid-cancer/symptoms/",
+   "action": "edited",
+   "newSentence": "No. Early thyroid cancer often causes no symptoms and is sometimes found by chance on scans done for other reasons."
+  },
+  {
+   "id": "c80",
+   "classification": "supported",
+   "evidence": "Typical lump (NHS 111 Wales). (first pass: \"When symptoms do appear, the most common is a painless lump in the neck that slowly gets b\")",
+   "url": "https://111.wales.nhs.uk/encyclopaedia/c/article/cancerofthethyroid",
+   "action": "edited",
+   "newSentence": "When symptoms do appear, a painless lump in the neck that slowly gets bigger is typical."
+  },
+  {
+   "id": "c81",
+   "classification": "supported",
+   "evidence": "Hoarse voice, swallowing, breathing (NHS). (first pass: \"Others include a hoarse voice that does not clear up, and difficulty swallowing or breathi\")",
+   "url": "https://www.nhs.uk/conditions/thyroid-cancer/symptoms/",
+   "action": "edited",
+   "newSentence": "Others include a hoarse voice and difficulty swallowing or breathing."
+  },
+  {
+   "id": "c82",
+   "classification": "supported",
+   "evidence": "Hormone tablets after removal (NHS). (first pass: \"If the whole thyroid is removed, lifelong thyroid hormone replacement is needed.\")",
+   "url": "https://www.nhs.uk/conditions/thyroid-cancer/treatment/",
+   "action": "edited",
+   "newSentence": "After the whole thyroid is removed, hormone tablets are usually needed to replace the hormones it made."
+  },
+  {
+   "id": "c83",
+   "classification": "supported",
+   "evidence": "Levothyroxine named by BTF; lifelong; page attribution uncertain. (first pass: \"Levothyroxine is the usual medicine, and it replaces the hormone the thyroid would otherwi\")",
+   "url": "https://www.btf-thyroid.org/thyroid-cancerleaflet?tmpl=component",
+   "action": "edited",
+   "newSentence": "The British Thyroid Foundation names levothyroxine as the replacement hormone, and it is typically taken for life."
+  },
+  {
+   "id": "c84",
+   "classification": "unsupported",
+   "evidence": "Higher-dose claim not retrieved (and dose-related); replaced with Gloucestershire hospitals statement. (first pass: \"After cancer treatment the dose is often set slightly higher than for non-cancerous thyroi\")",
+   "url": "https://www.gloshospitals.nhs.uk/our-services/services-we-offer/cancer/types-of-cancer/thyroid-cancer/",
+   "action": "edited",
+   "newSentence": "Some hospitals note that the tablets can also help stop the cancer coming back."
+  },
+  {
+   "id": "c85",
+   "classification": "unsupported",
+   "evidence": "\"Most people do well, many cured\": no official source in retrieved text uses these words; removed. (first pass: \"NHS hospital trust information says most people do well, and many are cured.\")",
+   "url": "https://www.cancer.gov/types/thyroid",
+   "action": "removed"
+  },
+  {
+   "id": "c86",
+   "classification": "supported",
+   "evidence": "Outlook depends on type and stage; \"how early found\" softened. (first pass: \"The outlook depends on the type of thyroid cancer and how early it is found.\")",
+   "url": "https://www.cancer.gov/types/thyroid",
+   "action": "edited",
+   "newSentence": "The outlook depends on the type of thyroid cancer and its stage."
+  },
+  {
+   "id": "c87",
+   "classification": "supported",
+   "evidence": "Macmillan/NCI on anaplastic; differentiated generally slow growing. (first pass: \"Anaplastic thyroid cancer is very rare and fast growing, so a specialist team explains the\")",
+   "url": "https://www.cancer.gov/types/thyroid/hp",
+   "action": "edited",
+   "newSentence": "Papillary and follicular cancers are generally slow growing, whereas anaplastic thyroid cancer is very rare, fast growing and the most aggressive type."
+  },
+  {
+   "id": "c88",
+   "classification": "supported",
+   "evidence": "NHS 111 Wales title \"Cancer of the thyroid\". (first pass: \"Cancer of the thyroid\")",
+   "url": "https://111.wales.nhs.uk/encyclopaedia/c/article/cancerofthethyroid",
+   "action": "kept"
+  },
+  {
+   "id": "c89",
+   "classification": "supported",
+   "evidence": "Four main types. (first pass: \"Papillary, follicular, medullary and anaplastic\")",
+   "url": "https://www.cancer.gov/types/thyroid",
+   "action": "kept"
+  },
+  {
+   "id": "c90",
+   "classification": "supported",
+   "evidence": "Typical lump. (first pass: \"A painless lump in the neck that slowly gets bigger\")",
+   "url": "https://111.wales.nhs.uk/encyclopaedia/c/article/cancerofthethyroid",
+   "action": "edited",
+   "newSentence": "A painless lump in the neck that slowly gets bigger"
+  },
+  {
+   "id": "c91",
+   "classification": "supported",
+   "evidence": "Examination, blood test, ultrasound, FNA. (first pass: \"Examination, thyroid blood tests, ultrasound and a fine needle aspiration biopsy\")",
+   "url": "https://www.nhs.uk/conditions/thyroid-cancer/symptoms/",
+   "action": "edited",
+   "newSentence": "Examination, blood tests, ultrasound and a fine needle aspiration biopsy"
+  },
+  {
+   "id": "c92",
+   "classification": "supported",
+   "evidence": "NHS treatment page. (first pass: \"Surgery, often followed by radioactive iodine\")",
+   "url": "https://www.nhs.uk/conditions/thyroid-cancer/treatment/",
+   "action": "edited",
+   "newSentence": "Surgery, usually followed by radioactive iodine"
+  },
+  {
+   "id": "c93",
+   "classification": "supported",
+   "evidence": "Hormone replacement; lifelong from BTF leaflet result (page attribution uncertain). (first pass: \"Lifelong thyroid hormone replacement\")",
+   "url": "https://www.nhs.uk/conditions/thyroid-cancer/treatment/",
+   "action": "edited",
+   "newSentence": "Hormone replacement tablets, typically lifelong"
+  },
+  {
+   "id": "c94",
+   "classification": "unsupported",
+   "evidence": "\"few weeks\"-style wording not NHS; NHS says not getting better. (first pass: \"A lump in the neck, a lasting hoarse voice, or trouble swallowing or breathing\")",
+   "url": "https://www.nhs.uk/conditions/thyroid-cancer/symptoms/",
+   "action": "edited",
+   "newSentence": "A lump in the neck, or a hoarse voice or swallowing difficulty that is not getting better"
+  }
+ ],
+ "notes": "Search summaries blend pages, so each URL names the page whose title or excerpt matched; some detail came from blended summaries. Doubtful items: 999 line kept only as NHS goitre-page advice (hard to breathe or wheezing), reworded and attributed; Macmillan 'as soon as possible' not found, NHS 'book a GP appointment ... not getting better' used; 'most people do well' and 'cured' dropped, no figures used; radiation reworded to CRUK head/neck radiotherapy usually in childhood; age risk dropped, sex kept (PMC gender article); family history limited to close relatives with thyroid cancer; medullary RET testing from NHS Genomics Education Programme; thyroid-function-tests link kept because blood work mainly checks thyroid function; prevention absence sentence replaced with Macmillan wording; levothyroxine/lifelong and 'low-risk may not need follow-up' came from a BTF leaflet search result but exact page attribution inside blended summaries is uncertain; dose and higher-dose claims removed; hyperthyroidism removed from related because Macmillan says an overactive or underactive thyroid does not raise risk; hypothyroidism kept as a topical link (replacement after thyroid removal). The last search returned no Macmillan or BTF pages. Final ledger: 104 sentences, 4 textbook. Report covers the 94 first-pass sentences."
+}
