@@ -6,17 +6,18 @@
   "urls": [
    "https://medlineplus.gov/pancreaticcancer.html"
   ],
-  "note": "Textbook: pancreas role in digestion; MedlinePlus page covers pancreatic cancer."
+  "note": "Textbook: role of pancreas; MedlinePlus covers pancreatic cancer."
  },
  {
   "where": "overview",
   "sentence": "Pancreatic cancer often causes no symptoms at first, and when symptoms appear they can be vague.",
   "basis": "excerpt",
   "urls": [
-   "https://medlineplus.gov/pancreaticcancer.html",
-   "https://www.nhs.uk/conditions/pancreatic-cancer/symptoms/"
+   "https://www.nhs.uk/conditions/pancreatic-cancer/symptoms/",
+   "https://www.cancerresearchuk.org/about-cancer/pancreatic-cancer/symptoms",
+   "https://www.pancreaticcancer.org.uk/information/signs-and-symptoms-of-pancreatic-cancer/"
   ],
-  "note": "MedlinePlus: early cancer often no symptoms, when they appear often vague. NHS: may have no symptoms or hard to spot."
+  "note": "NHS: often no symptoms at first; CRUK: usually none in early stages; PCUK: symptoms may not be specific."
  },
  {
   "where": "overview",
@@ -25,115 +26,252 @@
   "urls": [
    "https://www.nhs.uk/conditions/pancreatic-cancer/treatment/"
   ],
-  "note": "NHS treatment summary: pancreatic cancer can be difficult to treat."
+  "note": "NHS treatment page: hard to treat."
  },
  {
   "where": "overview",
-  "sentence": "Known risk factors include smoking, long-term diabetes, chronic pancreatitis and certain hereditary disorders, although many people with risk factors never develop it.",
+  "sentence": "Smoking, long-term diabetes, chronic pancreatitis and some inherited conditions are linked to a higher risk, although having risk factors does not mean a person will get it.",
+  "basis": "excerpt",
+  "urls": [
+   "https://www.cancer.gov/types/pancreatic/causes-risk-factors",
+   "https://www.cancerresearchuk.org/about-cancer/pancreatic-cancer/risks-causes",
+   "https://www.pancreaticcancer.org.uk/information/risk-factors-for-pancreatic-cancer/",
+   "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6780233/"
+  ],
+  "note": "Search summary of CRUK/PCUK/NCI/review pages (blended); NCI: having risk factors does not mean you will get it."
+ },
+ {
+  "where": "overview",
+  "sentence": "Treatment can include surgery, chemotherapy and radiotherapy, and when a cure is not possible the focus is on controlling symptoms.",
+  "basis": "excerpt",
+  "urls": [
+   "https://www.nhs.uk/conditions/pancreatic-cancer/treatment/",
+   "https://www.cancerresearchuk.org/about-cancer/pancreatic-cancer/treatment",
+   "https://www.macmillan.org.uk/cancer-information-and-support/pancreatic-cancer"
+  ],
+  "note": "NHS: surgery, chemotherapy, radiotherapy, supportive care; CRUK/Macmillan: aim then is to control symptoms."
+ },
+ {
+  "where": "diagnosis",
+  "sentence": "The diagnosis, and the type of pancreatic cancer, is made by a biopsy, which is a sample of tissue from the pancreas.",
   "basis": "excerpt",
   "urls": [
    "https://medlineplus.gov/pancreaticcancer.html"
   ],
-  "note": "MedlinePlus: risk factors listed; many with risk factors never develop it."
+  "note": "MedlinePlus: diagnosis and type made by pancreatic biopsy. Gloss of biopsy is textbook-level."
  },
  {
-  "where": "overview",
-  "sentence": "Treatment options include surgery, chemotherapy and radiotherapy, and when a cure is not possible the focus is on controlling symptoms.",
+  "where": "diagnosis",
+  "sentence": "Imaging such as a CT scan is commonly used to assess the cancer.",
   "basis": "excerpt",
   "urls": [
-   "https://medlineplus.gov/pancreaticcancer.html",
-   "https://www.nhs.uk/conditions/pancreatic-cancer/treatment/",
-   "https://www.macmillan.org.uk/cancer-information-and-support/pancreatic-cancer"
+   "https://www.cancerresearchuk.org/about-cancer/pancreatic-cancer/getting-diagnosed/tests-pancreatic-cancer"
   ],
-  "note": "MedlinePlus/NCI: surgery, radiation, chemotherapy, targeted therapy; palliative treatment to control symptoms when cure not possible."
+  "note": "CRUK tests page (search summary)."
+ },
+ {
+  "where": "diagnosis",
+  "sentence": "NICE recommends a pancreatic protocol CT scan for people with jaundice, before the bile duct is drained.",
+  "basis": "excerpt",
+  "urls": [
+   "https://www.nice.org.uk/guidance/ng85/chapter/recommendations"
+  ],
+  "note": "NICE NG85 via search."
+ },
+ {
+  "where": "diagnosis",
+  "sentence": "If the diagnosis is still unclear, NICE says a PET-CT scan, an endoscopic ultrasound or both, with tissue sampling, may be offered.",
+  "basis": "excerpt",
+  "urls": [
+   "https://www.nice.org.uk/guidance/ng85/chapter/recommendations"
+  ],
+  "note": "NICE NG85: FDG-PET/CT and/or EUS with EUS-guided tissue sampling."
+ },
+ {
+  "where": "treatment",
+  "sentence": "The NHS says treatment depends on the size and type of the cancer, where it is, whether it has spread and the person's general health.",
+  "basis": "excerpt",
+  "urls": [
+   "https://www.nhs.uk/conditions/pancreatic-cancer/treatment/"
+  ],
+  "note": "NHS."
+ },
+ {
+  "where": "treatment",
+  "sentence": "Surgery is possible only when the cancer can be removed, and it can also relieve symptoms such as jaundice or blockages when it cannot.",
+  "basis": "excerpt",
+  "urls": [
+   "https://www.nhs.uk/conditions/pancreatic-cancer/treatment/"
+  ],
+  "note": "NHS."
+ },
+ {
+  "where": "treatment",
+  "sentence": "Chemotherapy can be given before or after surgery or to control the cancer, and the NHS says radiotherapy is not often used.",
+  "basis": "excerpt",
+  "urls": [
+   "https://www.nhs.uk/conditions/pancreatic-cancer/treatment/"
+  ],
+  "note": "NHS."
+ },
+ {
+  "where": "treatment",
+  "sentence": "Targeted therapy is another option listed by MedlinePlus.",
+  "basis": "excerpt",
+  "urls": [
+   "https://magazine.medlineplus.gov/article/pancreatic-cancer-what-you-need-to-know"
+  ],
+  "note": "MedlinePlus magazine."
+ },
+ {
+  "where": "treatment",
+  "sentence": "Supportive care helps with symptoms such as pain, tiredness, nausea and digestion problems.",
+  "basis": "excerpt",
+  "urls": [
+   "https://www.nhs.uk/conditions/pancreatic-cancer/treatment/",
+   "https://www.macmillan.org.uk/cancer-information-and-support/pancreatic-cancer/controlling-symptoms-of-pancreatic-cancer"
+  ],
+  "note": "NHS."
+ },
+ {
+  "where": "prevention",
+  "sentence": "Smoking is a risk factor that can be changed.",
+  "basis": "excerpt",
+  "urls": [
+   "https://www.cancer.gov/types/pancreatic/causes-risk-factors"
+  ],
+  "note": "NCI: some risk factors such as smoking can be changed."
+ },
+ {
+  "where": "prevention",
+  "sentence": "Cancer Research UK says there is no national screening programme for pancreatic cancer in the UK, but people at high risk may be able to have tests, sometimes as part of a study.",
+  "basis": "excerpt",
+  "urls": [
+   "https://www.cancerresearchuk.org/about-cancer/pancreatic-cancer/getting-diagnosed/screening"
+  ],
+  "note": "CRUK screening page."
+ },
+ {
+  "where": "seekCare",
+  "sentence": "The NHS advises an urgent GP appointment or a call to NHS 111 for yellowing of the skin or eyes, or for vomiting that lasts more than 2 days.",
+  "basis": "excerpt",
+  "urls": [
+   "https://www.nhs.uk/conditions/pancreatic-cancer/symptoms/"
+  ],
+  "note": "NHS."
+ },
+ {
+  "where": "seekCare",
+  "sentence": "Pancreatic Cancer UK says jaundice needs a GP or A&E straight away.",
+  "basis": "excerpt",
+  "urls": [
+   "https://www.pancreaticcancer.org.uk/information/signs-and-symptoms-of-pancreatic-cancer/"
+  ],
+  "note": "PCUK quoted."
+ },
+ {
+  "where": "seekCare",
+  "sentence": "A GP appointment is advised for noticeable weight loss without trying, or for other symptoms that continue or get worse after 2 weeks.",
+  "basis": "excerpt",
+  "urls": [
+   "https://www.nhs.uk/conditions/pancreatic-cancer/symptoms/"
+  ],
+  "note": "NHS."
+ },
+ {
+  "where": "seekCare",
+  "sentence": "Having these symptoms does not definitely mean a person has pancreatic cancer.",
+  "basis": "excerpt",
+  "urls": [
+   "https://www.nhs.uk/conditions/pancreatic-cancer/symptoms/"
+  ],
+  "note": "NHS."
  },
  {
   "where": "causes[0]",
-  "sentence": "Doctors do not know exactly what causes pancreatic cancer",
+  "sentence": "The exact cause of pancreatic cancer is not known",
   "basis": "excerpt",
   "urls": [
-   "https://medlineplus.gov/pancreaticcancer.html"
+   "https://medlineplus.gov/ency/article/000236.htm"
   ],
-  "note": "MedlinePlus: doctors do not know what causes pancreatic cancer."
+  "note": "MedlinePlus encyclopedia: exact cause unknown."
  },
  {
   "where": "causes[1]",
-  "sentence": "Risk factors such as smoking and long-term diabetes are linked to it, but many people with them never develop the cancer",
+  "sentence": "Risk factors such as smoking and long-term diabetes are linked to it, but having risk factors does not mean a person will get the cancer",
   "basis": "excerpt",
   "urls": [
-   "https://medlineplus.gov/pancreaticcancer.html"
+   "https://www.cancer.gov/types/pancreatic/causes-risk-factors",
+   "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6780233/"
   ],
-  "note": "MedlinePlus: many people with risk factors never develop it."
+  "note": "NCI: risk factors do not mean you will get it; review: smoking, chronic diabetes, obesity established risk factors."
  },
  {
   "where": "riskFactors[0]",
   "sentence": "Smoking",
   "basis": "excerpt",
   "urls": [
-   "https://medlineplus.gov/pancreaticcancer.html",
-   "https://www.centralandwestwarringtonpcn.nhs.uk/health-and-wellbeing/cancer/cancer-types/pancreatic-cancer"
+   "https://www.cancer.gov/types/pancreatic/causes-risk-factors",
+   "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6780233/"
   ],
-  "note": "MedlinePlus lists smoking; can be changed."
+  "note": "Review and NCI: smoking is a risk factor that can be changed."
  },
  {
   "where": "riskFactors[1]",
   "sentence": "Long-term diabetes",
   "basis": "excerpt",
   "urls": [
-   "https://medlineplus.gov/pancreaticcancer.html",
-   "https://www.centralandwestwarringtonpcn.nhs.uk/health-and-wellbeing/cancer/cancer-types/pancreatic-cancer"
+   "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6780233/",
+   "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4224068/"
   ],
-  "note": "MedlinePlus lists long-term diabetes."
+  "note": "Review: chronic diabetes a risk factor (link runs both ways)."
  },
  {
   "where": "riskFactors[2]",
   "sentence": "Chronic pancreatitis",
   "basis": "excerpt",
   "urls": [
-   "https://medlineplus.gov/pancreaticcancer.html",
-   "https://www.centralandwestwarringtonpcn.nhs.uk/health-and-wellbeing/cancer/cancer-types/pancreatic-cancer"
+   "https://www.cancerresearchuk.org/about-cancer/pancreatic-cancer/risks-causes",
+   "https://www.pancreaticcancer.org.uk/information/risk-factors-for-pancreatic-cancer/"
   ],
-  "note": "MedlinePlus lists chronic pancreatitis."
+  "note": "Search summary: strong association with chronic pancreatitis."
  },
  {
   "where": "riskFactors[3]",
-  "sentence": "Certain hereditary disorders and a family history of the disease",
+  "sentence": "Inherited conditions and a family history of the disease",
   "basis": "excerpt",
   "urls": [
-   "https://medlineplus.gov/pancreaticcancer.html",
-   "https://www.centralandwestwarringtonpcn.nhs.uk/health-and-wellbeing/cancer/cancer-types/pancreatic-cancer"
+   "https://medlineplus.gov/ency/article/000236.htm",
+   "https://www.pancreaticcancer.org.uk/health-professionals/inherited-risk-resources-hub/"
   ],
-  "note": "MedlinePlus: certain hereditary disorders, genetics and family history."
+  "note": "MedlinePlus: family history slightly increases chance; summary: BRCA2/Lynch raise risk."
  },
  {
   "where": "riskFactors[4]",
   "sentence": "Being overweight or obese",
   "basis": "excerpt",
   "urls": [
-   "https://www.centralandwestwarringtonpcn.nhs.uk/health-and-wellbeing/cancer/cancer-types/pancreatic-cancer",
-   "https://www.royalmarsden.nhs.uk/private-care/news-and-blogs/pancreatic-cancer-awareness-signs-and-symptoms"
+   "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6780233/"
   ],
-  "note": "Warrington PCN and Royal Marsden pages list overweight/obesity (search summary)."
+  "note": "Review lists obesity among established risk factors."
  },
  {
   "where": "riskFactors[5]",
-  "sentence": "Older age, with one NHS source listing age over 65",
+  "sentence": "Older age",
   "basis": "excerpt",
   "urls": [
-   "https://www.centralandwestwarringtonpcn.nhs.uk/health-and-wellbeing/cancer/cancer-types/pancreatic-cancer",
-   "https://www.royalmarsden.nhs.uk/private-care/news-and-blogs/pancreatic-cancer-awareness-signs-and-symptoms"
+   "https://medlineplus.gov/ency/article/000236.htm"
   ],
-  "note": "Both NHS-affiliated pages list age over 65."
+  "note": "MedlinePlus: risk increases with age."
  },
  {
   "where": "signs[0]",
   "sentence": "Yellowing of the skin and eyes (jaundice)",
   "basis": "excerpt",
   "urls": [
-   "https://www.nhs.uk/conditions/pancreatic-cancer/symptoms/",
-   "https://medlineplus.gov/pancreaticcancer.html"
+   "https://www.nhs.uk/conditions/pancreatic-cancer/symptoms/"
   ],
-  "note": "NHS: yellowing of skin or eyes common sign."
+  "note": "NHS."
  },
  {
   "where": "signs[1]",
@@ -143,44 +281,45 @@
    "https://www.nhs.uk/conditions/pancreatic-cancer/symptoms/",
    "https://www.cancerresearchuk.org/about-cancer/pancreatic-cancer/symptoms"
   ],
-  "note": "NHS and CRUK list weight loss."
+  "note": "NHS and CRUK."
  },
  {
   "where": "signs[2]",
-  "sentence": "Changes to stools or bowel habits",
+  "sentence": "Changes to bowel habits, such as diarrhoea or constipation",
   "basis": "excerpt",
   "urls": [
-   "https://www.cancerresearchuk.org/about-cancer/pancreatic-cancer/symptoms",
    "https://www.nhs.uk/conditions/pancreatic-cancer/symptoms/"
   ],
-  "note": "CRUK: changes to stools; NHS: changes in bowel habits."
+  "note": "NHS lists diarrhoea or constipation."
  },
  {
   "where": "complications[0]",
   "sentence": "A blocked bile duct, causing jaundice",
   "basis": "excerpt",
   "urls": [
-   "https://www.macmillan.org.uk/cancer-information-and-support/pancreatic-cancer/controlling-symptoms-of-pancreatic-cancer"
+   "https://www.macmillan.org.uk/cancer-information-and-support/pancreatic-cancer/controlling-symptoms-of-pancreatic-cancer",
+   "https://www.macmillan.org.uk/cancer-information-and-support/impacts-of-cancer/jaundice"
   ],
-  "note": "Macmillan: blocked bile ducts cause jaundice."
+  "note": "Macmillan."
  },
  {
   "where": "complications[1]",
-  "sentence": "Reduced production of digestive enzymes, which can lead to malnutrition",
+  "sentence": "Problems with digestion and nutrition",
   "basis": "excerpt",
   "urls": [
+   "https://www.nhs.uk/conditions/pancreatic-cancer/treatment/",
    "https://www.cancer.gov/types/pancreatic/patient/pancreatic-treatment-pdq"
   ],
-  "note": "NCI: removing part of pancreas can reduce enzymes; replacement prevents malnutrition. Applies after surgery; cancer itself also (trial text) - kept to NCI wording scope."
+  "note": "NHS supportive care covers digestion problems; NCI: special nutritional needs."
  },
  {
   "where": "complications[2]",
   "sentence": "Spread of the cancer to other parts of the body",
   "basis": "excerpt",
   "urls": [
-   "https://www.cancer.gov/types/pancreatic/patient/pancreatic-treatment-pdq"
+   "https://www.cancerresearchuk.org/about-cancer/pancreatic-cancer/treatment"
   ],
-  "note": "NCI: treatment options depend on whether cancer has spread; chemotherapy main treatment once spread."
+  "note": "CRUK: stage 4 means spread to other parts of the body."
  },
  {
   "where": "complications[3]",
@@ -189,359 +328,260 @@
   "urls": [
    "https://www.nhs.uk/conditions/pancreatic-cancer/treatment/"
   ],
-  "note": "NHS: supportive care covers digestion problems, pain, tiredness and nausea."
+  "note": "NHS supportive care."
  },
  {
-  "where": "diagnosis",
-  "sentence": "Diagnosis typically combines a physical examination, blood tests, imaging and a biopsy, which is a sample of tissue.",
+  "where": "article.sections[0]",
+  "sentence": "The NHS says pancreatic cancer often causes no symptoms at first.",
   "basis": "excerpt",
   "urls": [
-   "https://medlineplus.gov/pancreaticcancer.html"
+   "https://www.nhs.uk/conditions/pancreatic-cancer/symptoms/"
   ],
-  "note": "MedlinePlus: physical exam, blood tests, imaging, biopsy. Definition of biopsy is textbook-level gloss."
+  "note": "NHS."
  },
  {
-  "where": "diagnosis",
-  "sentence": "Doctors use information from several tests, along with symptoms and medical history.",
+  "where": "article.sections[0]",
+  "sentence": "Cancer Research UK says it does not usually cause symptoms in the early stages, and Pancreatic Cancer UK says symptoms may not be specific to the disease and can come and go at first.",
   "basis": "excerpt",
   "urls": [
-   "https://medlineplus.gov/pancreaticcancer.html"
+   "https://www.cancerresearchuk.org/about-cancer/pancreatic-cancer/symptoms",
+   "https://www.pancreaticcancer.org.uk/information/signs-and-symptoms-of-pancreatic-cancer/"
+  ],
+  "note": "CRUK; PCUK."
+ },
+ {
+  "where": "article.sections[0]",
+  "sentence": "Yellowing of the skin or eyes, called jaundice, is one of the common signs, and the NHS says it can come with itchy skin, darker urine and paler stools.",
+  "basis": "excerpt",
+  "urls": [
+   "https://www.nhs.uk/conditions/pancreatic-cancer/symptoms/"
+  ],
+  "note": "NHS."
+ },
+ {
+  "where": "article.sections[0]",
+  "sentence": "The NHS also lists loss of appetite, losing weight without trying, tiredness and fever or chills.",
+  "basis": "excerpt",
+  "urls": [
+   "https://www.nhs.uk/conditions/pancreatic-cancer/symptoms/"
+  ],
+  "note": "NHS."
+ },
+ {
+  "where": "article.sections[0]",
+  "sentence": "Digestive symptoms include feeling or being sick, diarrhoea or constipation, bloating and indigestion.",
+  "basis": "excerpt",
+  "urls": [
+   "https://www.nhs.uk/conditions/pancreatic-cancer/symptoms/"
+  ],
+  "note": "NHS."
+ },
+ {
+  "where": "article.sections[0]",
+  "sentence": "The NHS describes pain in the upper abdomen and back that can ease when leaning forward.",
+  "basis": "excerpt",
+  "urls": [
+   "https://www.nhs.uk/conditions/pancreatic-cancer/symptoms/"
+  ],
+  "note": "NHS (confirmed in re-retrieval)."
+ },
+ {
+  "where": "article.sections[0]",
+  "sentence": "Cancer Research UK and Pancreatic Cancer UK list tummy or back pain among the signs, and Pancreatic Cancer UK also lists indigestion.",
+  "basis": "excerpt",
+  "urls": [
+   "https://www.cancerresearchuk.org/about-cancer/pancreatic-cancer/symptoms",
+   "https://www.pancreaticcancer.org.uk/information/signs-and-symptoms-of-pancreatic-cancer/"
+  ],
+  "note": "CRUK; PCUK."
+ },
+ {
+  "where": "article.sections[0]",
+  "sentence": "The NHS says these symptoms are common and often have other causes.",
+  "basis": "excerpt",
+  "urls": [
+   "https://www.nhs.uk/conditions/pancreatic-cancer/symptoms/"
+  ],
+  "note": "NHS."
+ },
+ {
+  "where": "article.sections[0]",
+  "sentence": "Having them does not definitely mean a person has pancreatic cancer.",
+  "basis": "excerpt",
+  "urls": [
+   "https://www.nhs.uk/conditions/pancreatic-cancer/symptoms/"
+  ],
+  "note": "NHS."
+ },
+ {
+  "where": "article.sections[1]",
+  "sentence": "MedlinePlus says the exact cause of pancreatic cancer is not known.",
+  "basis": "excerpt",
+  "urls": [
+   "https://medlineplus.gov/ency/article/000236.htm"
   ],
   "note": "MedlinePlus."
  },
  {
-  "where": "diagnosis",
-  "sentence": "NICE guidance recommends a CT scan using a pancreatic protocol as the first scan for suspected pancreatic cancer.",
+  "where": "article.sections[1]",
+  "sentence": "The National Cancer Institute says some risk factors, such as smoking, can be changed, while others, such as genetics and family history, cannot.",
   "basis": "excerpt",
   "urls": [
-   "https://www.nice.org.uk/guidance/ng85"
+   "https://www.cancer.gov/types/pancreatic/causes-risk-factors"
   ],
-  "note": "NICE NG85 (via search): offer pancreatic protocol CT to people with jaundice (before bile duct drainage) and to those with abnormalities but no jaundice."
+  "note": "NCI."
  },
  {
-  "where": "diagnosis",
-  "sentence": "If the diagnosis is still unclear, a PET-CT scan, an endoscopic ultrasound or both may be offered.",
+  "where": "article.sections[1]",
+  "sentence": "Having risk factors does not mean a person will get pancreatic cancer.",
   "basis": "excerpt",
   "urls": [
-   "https://www.nice.org.uk/guidance/ng85"
+   "https://www.cancer.gov/types/pancreatic/causes-risk-factors"
   ],
-  "note": "NICE NG85: if unclear offer FDG-PET/CT and/or EUS."
+  "note": "NCI."
  },
  {
-  "where": "treatment",
-  "sentence": "Treatment depends on the size and position of the cancer, whether it has spread and the person's general health.",
+  "where": "article.sections[1]",
+  "sentence": "Reviews describe cigarette smoking, long-term diabetes and obesity as established risk factors.",
   "basis": "excerpt",
   "urls": [
-   "https://www.nhs.uk/conditions/pancreatic-cancer/treatment/"
+   "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6780233/"
   ],
-  "note": "NHS treatment summary."
+  "note": "Review PMC6780233 (search summary)."
  },
  {
-  "where": "treatment",
-  "sentence": "Surgery is used to remove the cancer when it can be removed, and to relieve symptoms such as jaundice or blockages when it cannot.",
+  "where": "article.sections[1]",
+  "sentence": "Diabetes can be both a risk factor for pancreatic cancer and a result of it, and newly diagnosed diabetes can be an early sign.",
   "basis": "excerpt",
   "urls": [
-   "https://www.nhs.uk/conditions/pancreatic-cancer/treatment/"
+   "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4224068/"
   ],
-  "note": "NHS treatment summary."
+  "note": "Review PMC4224068 (search summary)."
  },
  {
-  "where": "treatment",
-  "sentence": "Chemotherapy and radiotherapy are also used, and targeted therapy is another option.",
+  "where": "article.sections[1]",
+  "sentence": "Chronic pancreatitis, long-term inflammation of the pancreas, is one of the strongest associations, although only a small proportion of people with it develop pancreatic cancer.",
   "basis": "excerpt",
   "urls": [
-   "https://www.nhs.uk/conditions/pancreatic-cancer/treatment/",
+   "https://www.cancerresearchuk.org/about-cancer/pancreatic-cancer/risks-causes",
+   "https://www.pancreaticcancer.org.uk/information/risk-factors-for-pancreatic-cancer/"
+  ],
+  "note": "Search summary (meta-analysis cited); not attributable to a single page."
+ },
+ {
+  "where": "article.sections[1]",
+  "sentence": "Some inherited conditions, including BRCA2 and Lynch syndrome gene changes, raise the risk, but most cases are not linked to a family history.",
+  "basis": "excerpt",
+  "urls": [
+   "https://www.pancreaticcancer.org.uk/health-professionals/inherited-risk-resources-hub/",
+   "https://www.pancreaticcancer.org.uk/information/risk-factors-for-pancreatic-cancer/"
+  ],
+  "note": "Search summary of PCUK/CRUK."
+ },
+ {
+  "where": "article.sections[1]",
+  "sentence": "MedlinePlus says the risk increases with age and that a family history slightly increases the chance.",
+  "basis": "excerpt",
+  "urls": [
+   "https://medlineplus.gov/ency/article/000236.htm"
+  ],
+  "note": "MedlinePlus encyclopedia."
+ },
+ {
+  "where": "article.sections[1]",
+  "sentence": "Cancer Research UK says there is no national screening programme for pancreatic cancer in the UK.",
+  "basis": "excerpt",
+  "urls": [
+   "https://www.cancerresearchuk.org/about-cancer/pancreatic-cancer/getting-diagnosed/screening"
+  ],
+  "note": "CRUK."
+ },
+ {
+  "where": "article.sections[1]",
+  "sentence": "People at high inherited risk may be able to have tests, sometimes through a study such as EUROPAC.",
+  "basis": "excerpt",
+  "urls": [
+   "https://www.cancerresearchuk.org/about-cancer/pancreatic-cancer/getting-diagnosed/screening",
+   "https://www.pancreaticcancer.org.uk/health-professionals/inherited-risk-resources-hub/"
+  ],
+  "note": "CRUK; PCUK inherited-risk hub."
+ },
+ {
+  "where": "article.sections[2]",
+  "sentence": "MedlinePlus says the diagnosis, and the type of pancreatic cancer, is made by a pancreatic biopsy, and that more tests then show how far the cancer has spread.",
+  "basis": "excerpt",
+  "urls": [
    "https://medlineplus.gov/pancreaticcancer.html",
-   "https://www.cancer.gov/types/pancreatic/patient/pancreatic-treatment-pdq"
-  ],
-  "note": "NHS: chemo and radiotherapy; MedlinePlus: surgery, radiation, chemo, targeted therapy."
- },
- {
-  "where": "treatment",
-  "sentence": "Supportive and palliative care can help with symptoms such as pain, tiredness, nausea and digestion problems.",
-  "basis": "excerpt",
-  "urls": [
-   "https://www.nhs.uk/conditions/pancreatic-cancer/treatment/",
-   "https://www.macmillan.org.uk/cancer-information-and-support/pancreatic-cancer/treatment-for-pancreatic-cancer"
-  ],
-  "note": "NHS supportive care; Macmillan palliative care."
- },
- {
-  "where": "prevention",
-  "sentence": "Smoking is a risk factor that can be changed.",
-  "basis": "excerpt",
-  "urls": [
-   "https://medlineplus.gov/pancreaticcancer.html"
-  ],
-  "note": "MedlinePlus: some risk factors like smoking can be changed."
- },
- {
-  "where": "prevention",
-  "sentence": "Pancreatic Cancer UK says the UK has no screening programme, although people with a family history may be monitored.",
-  "basis": "excerpt",
-  "urls": [
-   "https://www.pancreaticcancer.org.uk/information/how-is-pancreatic-cancer-diagnosed/"
-  ],
-  "note": "Search summary of Pancreatic Cancer UK: no screening programme; people with family history may be monitored."
- },
- {
-  "where": "seekCare",
-  "sentence": "The NHS advises an urgent GP appointment or a call to NHS 111 for yellowing of the skin or eyes.",
-  "basis": "excerpt",
-  "urls": [
-   "https://www.nhs.uk/conditions/pancreatic-cancer/symptoms/"
-  ],
-  "note": "NHS symptoms page summary."
- },
- {
-  "where": "seekCare",
-  "sentence": "Pancreatic Cancer UK says jaundice needs a GP or A&E straight away.",
-  "basis": "excerpt",
-  "urls": [
-   "https://www.pancreaticcancer.org.uk/information/how-is-pancreatic-cancer-diagnosed/"
-  ],
-  "note": "Search summary of Pancreatic Cancer UK."
- },
- {
-  "where": "seekCare",
-  "sentence": "A GP appointment is advised for noticeable weight loss without trying or other symptoms that last longer than two weeks.",
-  "basis": "excerpt",
-  "urls": [
-   "https://www.nhs.uk/conditions/pancreatic-cancer/symptoms/"
-  ],
-  "note": "NHS summary: GP visit for noticeable weight loss or symptoms persisting beyond two weeks."
- },
- {
-  "where": "seekCare",
-  "sentence": "Having these symptoms does not definitely mean a person has pancreatic cancer.",
-  "basis": "excerpt",
-  "urls": [
-   "https://www.nhs.uk/conditions/pancreatic-cancer/symptoms/"
-  ],
-  "note": "NHS notes symptoms do not definitely mean pancreatic cancer."
- },
- {
-  "where": "article.sections[0]",
-  "sentence": "The NHS says pancreatic cancer may not cause any symptoms, or the symptoms may be hard to spot.",
-  "basis": "excerpt",
-  "urls": [
-   "https://www.nhs.uk/conditions/pancreatic-cancer/symptoms/"
-  ],
-  "note": "NHS."
- },
- {
-  "where": "article.sections[0]",
-  "sentence": "MedlinePlus says early pancreatic cancer often does not cause symptoms right away, and that when symptoms appear they are often vague.",
-  "basis": "excerpt",
-  "urls": [
-   "https://medlineplus.gov/pancreaticcancer.html"
-  ],
-  "note": "MedlinePlus."
- },
- {
-  "where": "article.sections[0]",
-  "sentence": "Yellowing of the skin or eyes, called jaundice, is one of the common signs.",
-  "basis": "excerpt",
-  "urls": [
-   "https://www.nhs.uk/conditions/pancreatic-cancer/symptoms/"
-  ],
-  "note": "NHS."
- },
- {
-  "where": "article.sections[0]",
-  "sentence": "The NHS also lists loss of appetite, losing weight without trying and tiredness.",
-  "basis": "excerpt",
-  "urls": [
-   "https://www.nhs.uk/conditions/pancreatic-cancer/symptoms/"
-  ],
-  "note": "NHS."
- },
- {
-  "where": "article.sections[0]",
-  "sentence": "Digestive symptoms include nausea and changes in bowel habits, and the NHS describes upper abdominal pain that may ease when leaning forward.",
-  "basis": "excerpt",
-  "urls": [
-   "https://www.nhs.uk/conditions/pancreatic-cancer/symptoms/"
-  ],
-  "note": "NHS search summary."
- },
- {
-  "where": "article.sections[0]",
-  "sentence": "Cancer Research UK lists tummy or back pain and changes to stools among the common symptoms.",
-  "basis": "excerpt",
-  "urls": [
-   "https://www.cancerresearchuk.org/about-cancer/pancreatic-cancer/symptoms"
-  ],
-  "note": "CRUK per search summary."
- },
- {
-  "where": "article.sections[0]",
-  "sentence": "Pancreatic Cancer UK adds indigestion and recently diagnosed diabetes, while Macmillan also lists feeling very tired and feeling bloated after meals.",
-  "basis": "excerpt",
-  "urls": [
-   "https://www.pancreaticcancer.org.uk/information/how-is-pancreatic-cancer-diagnosed/",
-   "https://www.macmillan.org.uk/cancer-information-and-support/pancreatic-cancer/signs-and-symptoms-of-pancreatic-cancer"
-  ],
-  "note": "Summary attributes indigestion/new diabetes to Pancreatic Cancer UK; tired/bloated to Macmillan."
- },
- {
-  "where": "article.sections[0]",
-  "sentence": "Many of these symptoms have other causes.",
-  "basis": "excerpt",
-  "urls": [
-   "https://www.nhs.uk/conditions/pancreatic-cancer/symptoms/",
-   "https://www.pancreaticcancer.org.uk/information/how-is-pancreatic-cancer-diagnosed/"
-  ],
-  "note": "NHS and Pancreatic Cancer UK stress symptoms are common and often have other causes."
- },
- {
-  "where": "article.sections[0]",
-  "sentence": "The NHS notes that having them does not definitely mean a person has pancreatic cancer.",
-  "basis": "excerpt",
-  "urls": [
-   "https://www.nhs.uk/conditions/pancreatic-cancer/symptoms/"
-  ],
-  "note": "NHS."
- },
- {
-  "where": "article.sections[1]",
-  "sentence": "MedlinePlus says doctors do not know what causes pancreatic cancer.",
-  "basis": "excerpt",
-  "urls": [
-   "https://medlineplus.gov/pancreaticcancer.html"
-  ],
-  "note": "MedlinePlus."
- },
- {
-  "where": "article.sections[1]",
-  "sentence": "Known risk factors include smoking, long-term diabetes, chronic pancreatitis and certain hereditary disorders.",
-  "basis": "excerpt",
-  "urls": [
-   "https://medlineplus.gov/pancreaticcancer.html"
-  ],
-  "note": "MedlinePlus."
- },
- {
-  "where": "article.sections[1]",
-  "sentence": "Some risk factors, such as smoking, can be changed, while others, such as genetics and family history, cannot.",
-  "basis": "excerpt",
-  "urls": [
-   "https://medlineplus.gov/pancreaticcancer.html"
-  ],
-  "note": "MedlinePlus."
- },
- {
-  "where": "article.sections[1]",
-  "sentence": "Many people with risk factors never develop pancreatic cancer, while some people with no known risk factors do.",
-  "basis": "excerpt",
-  "urls": [
-   "https://medlineplus.gov/pancreaticcancer.html"
-  ],
-  "note": "MedlinePlus."
- },
- {
-  "where": "article.sections[1]",
-  "sentence": "Other NHS-affiliated pages list being overweight or obese and being over 65 as factors that can raise the risk.",
-  "basis": "excerpt",
-  "urls": [
-   "https://www.centralandwestwarringtonpcn.nhs.uk/health-and-wellbeing/cancer/cancer-types/pancreatic-cancer",
-   "https://www.royalmarsden.nhs.uk/private-care/news-and-blogs/pancreatic-cancer-awareness-signs-and-symptoms"
-  ],
-  "note": "Warrington PCN and Royal Marsden search summaries."
- },
- {
-  "where": "article.sections[1]",
-  "sentence": "The Royal Marsden page also lists heavy drinking and a high intake of red or processed meat.",
-  "basis": "excerpt",
-  "urls": [
-   "https://www.royalmarsden.nhs.uk/private-care/news-and-blogs/pancreatic-cancer-awareness-signs-and-symptoms"
-  ],
-  "note": "Royal Marsden search summary."
- },
- {
-  "where": "article.sections[1]",
-  "sentence": "Pancreatic Cancer UK says there is no screening programme for pancreatic cancer in the UK, although people with a family history may be monitored.",
-  "basis": "excerpt",
-  "urls": [
-   "https://www.pancreaticcancer.org.uk/information/how-is-pancreatic-cancer-diagnosed/"
-  ],
-  "note": "Search summary of Pancreatic Cancer UK."
- },
- {
-  "where": "article.sections[2]",
-  "sentence": "MedlinePlus says diagnosis typically combines a physical examination, blood tests, imaging and a biopsy.",
-  "basis": "excerpt",
-  "urls": [
-   "https://medlineplus.gov/pancreaticcancer.html"
+   "https://magazine.medlineplus.gov/article/pancreatic-cancer-what-you-need-to-know"
   ],
   "note": "MedlinePlus."
  },
  {
   "where": "article.sections[2]",
-  "sentence": "Doctors use information from several tests, together with the symptoms and medical history.",
+  "sentence": "Cancer Research UK says a CT scan is commonly used to assess pancreatic cancer, and a PET-CT scan may be used to find out more, for example whether it has spread outside the pancreas.",
   "basis": "excerpt",
   "urls": [
-   "https://medlineplus.gov/pancreaticcancer.html"
+   "https://www.cancerresearchuk.org/about-cancer/pancreatic-cancer/getting-diagnosed/tests-pancreatic-cancer"
   ],
-  "note": "MedlinePlus."
+  "note": "CRUK tests (search summary)."
  },
  {
   "where": "article.sections[2]",
-  "sentence": "NICE guidance recommends a CT scan using a pancreatic protocol for people with suspected pancreatic cancer, including before the bile duct is drained in people with jaundice caused by a blockage.",
+  "sentence": "A hospital NHS page describes an abdominal ultrasound and blood tests as usually the first step in finding the cause of jaundice.",
   "basis": "excerpt",
   "urls": [
-   "https://www.nice.org.uk/guidance/ng85"
+   "https://www.ruh.nhs.uk/patients/services/upper_gi/cancer/pancreatic.asp"
   ],
-  "note": "NICE NG85 via search summary."
+  "note": "Royal United Hospital Bath page (search summary)."
  },
  {
   "where": "article.sections[2]",
-  "sentence": "If the diagnosis is still unclear, NICE says a PET-CT scan, an endoscopic ultrasound or both may be offered.",
+  "sentence": "NICE guidance recommends a pancreatic protocol CT scan for people with jaundice before the bile duct is drained.",
   "basis": "excerpt",
   "urls": [
-   "https://www.nice.org.uk/guidance/ng85"
+   "https://www.nice.org.uk/guidance/ng85/chapter/recommendations"
   ],
   "note": "NICE NG85."
  },
  {
   "where": "article.sections[2]",
-  "sentence": "A published review describes endoscopic ultrasound with a fine-needle biopsy as the standard way of establishing the diagnosis.",
+  "sentence": "If the diagnosis is still unclear, NICE says a PET-CT scan, an endoscopic ultrasound or both, with tissue sampling, may be offered.",
   "basis": "excerpt",
   "urls": [
-   "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6787710/"
+   "https://www.nice.org.uk/guidance/ng85/chapter/recommendations"
   ],
-  "note": "PMC review snippet: EUS with fine-needle biopsy standard of care for establishing diagnosis."
+  "note": "NICE NG85."
  },
  {
   "where": "article.sections[2]",
-  "sentence": "A CT-guided biopsy can be an alternative when endoscopic ultrasound is unsuitable or unavailable, mainly for tumours that cannot be removed.",
-  "basis": "excerpt",
-  "urls": [
-   "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6832146/"
-  ],
-  "note": "PMC6832146 snippet."
- },
- {
-  "where": "article.sections[2]",
-  "sentence": "Cancer Research UK says a procedure called ERCP can help confirm the diagnosis by taking samples from abnormal areas.",
+  "sentence": "A biopsy can be taken during an endoscopic procedure such as ERCP or endoscopic ultrasound, or with a long, fine needle passed through the wall of the abdomen and guided by ultrasound or CT.",
   "basis": "excerpt",
   "urls": [
    "https://www.cancerresearchuk.org/about-cancer/pancreatic-cancer/getting-diagnosed/tests-pancreatic-cancer"
   ],
-  "note": "CRUK tests page snippet."
+  "note": "CRUK tests page (search summary; blended)."
  },
  {
   "where": "article.sections[2]",
-  "sentence": "The same procedure can be used to place a small tube, called a stent, in a blocked bile duct.",
+  "sentence": "ERCP is an endoscopic examination that lets doctors see the duct system and collect samples.",
   "basis": "excerpt",
   "urls": [
    "https://www.cancerresearchuk.org/about-cancer/pancreatic-cancer/getting-diagnosed/tests-pancreatic-cancer"
   ],
-  "note": "CRUK tests page snippet."
+  "note": "CRUK tests (search summary)."
+ },
+ {
+  "where": "article.sections[2]",
+  "sentence": "Macmillan says a small tube called a stent is usually placed during an ERCP to hold a blocked bile duct open.",
+  "basis": "excerpt",
+  "urls": [
+   "https://www.macmillan.org.uk/cancer-information-and-support/impacts-of-cancer/jaundice"
+  ],
+  "note": "Macmillan jaundice page."
  },
  {
   "where": "article.sections[3]",
-  "sentence": "The NHS says pancreatic cancer can be difficult to treat.",
+  "sentence": "The NHS says pancreatic cancer is difficult to treat.",
   "basis": "excerpt",
   "urls": [
    "https://www.nhs.uk/conditions/pancreatic-cancer/treatment/"
@@ -550,7 +590,7 @@
  },
  {
   "where": "article.sections[3]",
-  "sentence": "The options depend on the size and position of the cancer, whether it has spread and the person's general health.",
+  "sentence": "The NHS says the choice depends on the size and type of the cancer, where it is, whether it has spread and the person's general health.",
   "basis": "excerpt",
   "urls": [
    "https://www.nhs.uk/conditions/pancreatic-cancer/treatment/"
@@ -559,7 +599,7 @@
  },
  {
   "where": "article.sections[3]",
-  "sentence": "Surgery is used to remove the cancer when it can be removed, and also to relieve symptoms such as jaundice or blockages when it cannot.",
+  "sentence": "Whether an operation is possible depends on whether the cancer can be removed, and removal may involve part, or rarely all, of the pancreas along with nearby organs.",
   "basis": "excerpt",
   "urls": [
    "https://www.nhs.uk/conditions/pancreatic-cancer/treatment/"
@@ -568,70 +608,97 @@
  },
  {
   "where": "article.sections[3]",
-  "sentence": "The National Cancer Institute says surgery is only potentially curative when the tumour can be removed.",
-  "basis": "excerpt",
-  "urls": [
-   "https://www.cancer.gov/types/pancreatic/patient/pancreatic-treatment-pdq"
-  ],
-  "note": "NCI search summary."
- },
- {
-  "where": "article.sections[3]",
-  "sentence": "The National Cancer Institute describes chemotherapy as the main treatment once the cancer has spread, and says it can sometimes shrink the tumour or help people live longer.",
-  "basis": "excerpt",
-  "urls": [
-   "https://www.cancer.gov/types/pancreatic/patient/pancreatic-treatment-pdq"
-  ],
-  "note": "NCI search summary."
- },
- {
-  "where": "article.sections[3]",
-  "sentence": "The NHS lists chemotherapy and radiotherapy among the treatments used.",
+  "sentence": "If the cancer cannot be removed, surgery may still be used to help control some symptoms, such as jaundice or blockages.",
   "basis": "excerpt",
   "urls": [
    "https://www.nhs.uk/conditions/pancreatic-cancer/treatment/"
   ],
   "note": "NHS."
+ },
+ {
+  "where": "article.sections[3]",
+  "sentence": "MedlinePlus says some people whose cancer can be surgically removed are cured, but in most people the tumour has already spread and cannot be completely removed at diagnosis.",
+  "basis": "excerpt",
+  "urls": [
+   "https://medlineplus.gov/ency/article/000236.htm"
+  ],
+  "note": "MedlinePlus encyclopedia."
+ },
+ {
+  "where": "article.sections[3]",
+  "sentence": "The NHS says chemotherapy can be given before surgery to shrink a tumour, after surgery to lower the risk of the cancer coming back, or to control the cancer when surgery is not an option.",
+  "basis": "excerpt",
+  "urls": [
+   "https://www.nhs.uk/conditions/pancreatic-cancer/treatment/"
+  ],
+  "note": "NHS."
+ },
+ {
+  "where": "article.sections[3]",
+  "sentence": "It says radiotherapy is not often used and, when it is, usually goes with chemotherapy or eases symptoms of advanced cancer.",
+  "basis": "excerpt",
+  "urls": [
+   "https://www.nhs.uk/conditions/pancreatic-cancer/treatment/"
+  ],
+  "note": "NHS."
+ },
+ {
+  "where": "article.sections[3]",
+  "sentence": "Cancer Research UK describes chemotherapy as the main treatment for stage 4 pancreatic cancer, where it might help people live longer and relieve symptoms.",
+  "basis": "excerpt",
+  "urls": [
+   "https://www.cancerresearchuk.org/about-cancer/pancreatic-cancer/treatment"
+  ],
+  "note": "CRUK (search summary)."
  },
  {
   "where": "article.sections[3]",
   "sentence": "MedlinePlus also lists targeted therapy as an option.",
   "basis": "excerpt",
   "urls": [
-   "https://medlineplus.gov/pancreaticcancer.html"
+   "https://magazine.medlineplus.gov/article/pancreatic-cancer-what-you-need-to-know"
   ],
-  "note": "MedlinePlus."
+  "note": "MedlinePlus magazine."
  },
  {
   "where": "article.sections[4]",
-  "sentence": "For many people it will not be possible to cure pancreatic cancer.",
+  "sentence": "Cancer Research UK says advanced pancreatic cancer cannot normally be cured, but treatments can control symptoms and improve quality of life.",
   "basis": "excerpt",
   "urls": [
-   "https://www.macmillan.org.uk/cancer-information-and-support/pancreatic-cancer/treatment-for-pancreatic-cancer"
+   "https://www.cancerresearchuk.org/about-cancer/pancreatic-cancer/treatment"
   ],
-  "note": "Search summary text; source page not identified with certainty (Macmillan/NCI)."
+  "note": "CRUK."
  },
  {
   "where": "article.sections[4]",
-  "sentence": "In those cases the main aim is often to control symptoms, and palliative treatment can improve quality of life by easing the symptoms and complications of the disease.",
+  "sentence": "Macmillan says it will not be possible to cure pancreatic cancer for many people.",
   "basis": "excerpt",
   "urls": [
-   "https://www.macmillan.org.uk/cancer-information-and-support/pancreatic-cancer/treatment-for-pancreatic-cancer"
+   "https://www.macmillan.org.uk/cancer-information-and-support/pancreatic-cancer"
   ],
-  "note": "Same."
+  "note": "Macmillan."
  },
  {
   "where": "article.sections[4]",
-  "sentence": "Macmillan says palliative care doctors and nurses specialise in symptom control and supportive care, and that a GP or specialist can refer a person to a palliative team.",
+  "sentence": "The National Cancer Institute says palliative therapy can improve quality of life by controlling the symptoms and complications of pancreatic cancer.",
+  "basis": "excerpt",
+  "urls": [
+   "https://www.cancer.gov/types/pancreatic/patient/pancreatic-treatment-pdq"
+  ],
+  "note": "NCI quoted."
+ },
+ {
+  "where": "article.sections[4]",
+  "sentence": "Macmillan says a GP or cancer specialist can refer a person to a palliative care team, made up of doctors and nurses who work to keep symptoms under control.",
   "basis": "excerpt",
   "urls": [
    "https://www.macmillan.org.uk/cancer-information-and-support/pancreatic-cancer/controlling-symptoms-of-pancreatic-cancer"
   ],
-  "note": "Macmillan search summary."
+  "note": "Macmillan managing symptoms page (search summary)."
  },
  {
   "where": "article.sections[4]",
-  "sentence": "The NHS says supportive care covers issues such as digestion problems, pain, tiredness and nausea.",
+  "sentence": "The NHS says supportive care covers issues such as enzyme replacement tablets for digestion problems, pain relief and medicine for sickness.",
   "basis": "excerpt",
   "urls": [
    "https://www.nhs.uk/conditions/pancreatic-cancer/treatment/"
@@ -640,16 +707,17 @@
  },
  {
   "where": "article.sections[4]",
-  "sentence": "The National Cancer Institute explains that removing part of the pancreas can reduce its ability to make digestive enzymes, so replacement enzymes may be prescribed to prevent malnutrition.",
+  "sentence": "Macmillan says pain can be treated with radiotherapy, painkillers or nerve blocks, alone or together.",
   "basis": "excerpt",
   "urls": [
-   "https://www.cancer.gov/types/pancreatic/patient/pancreatic-treatment-pdq"
+   "https://www.macmillan.org.uk/cancer-information-and-support/pancreatic-cancer/treatment-for-pancreatic-cancer",
+   "https://www.macmillan.org.uk/cancer-information-and-support/pancreatic-cancer/controlling-symptoms-of-pancreatic-cancer"
   ],
-  "note": "NCI."
+  "note": "Macmillan (search summary)."
  },
  {
   "where": "article.sections[4]",
-  "sentence": "A blocked bile duct causes jaundice, and a stent can keep the duct open so that bile drains.",
+  "sentence": "A tumour that blocks the bile duct stops bile draining, which causes jaundice, and the build-up of bile can cause itching.",
   "basis": "excerpt",
   "urls": [
    "https://www.macmillan.org.uk/cancer-information-and-support/pancreatic-cancer/controlling-symptoms-of-pancreatic-cancer"
@@ -658,43 +726,64 @@
  },
  {
   "where": "article.sections[4]",
-  "sentence": "If a stent is not suitable, bypass surgery is an alternative, and medication can ease the itching that jaundice may cause.",
+  "sentence": "A stent, usually placed during an ERCP, holds the duct open so that bile can drain.",
   "basis": "excerpt",
   "urls": [
-   "https://www.macmillan.org.uk/cancer-information-and-support/pancreatic-cancer/controlling-symptoms-of-pancreatic-cancer"
+   "https://www.macmillan.org.uk/cancer-information-and-support/impacts-of-cancer/jaundice"
+  ],
+  "note": "Macmillan."
+ },
+ {
+  "where": "article.sections[4]",
+  "sentence": "If a stent is unsuccessful or not possible, surgery such as a bypass may be able to relieve the blockage.",
+  "basis": "excerpt",
+  "urls": [
+   "https://www.nhs.uk/conditions/pancreatic-cancer/treatment/",
+   "https://www.macmillan.org.uk/cancer-information-and-support/impacts-of-cancer/jaundice",
+   "https://www.cancerresearchuk.org/about-cancer/pancreatic-cancer/treatment/controlling-symptoms"
+  ],
+  "note": "NHS/Macmillan/CRUK (search summaries); bypass wording from Macmillan/PCUK summary."
+ },
+ {
+  "where": "article.sections[4]",
+  "sentence": "Specialist nurses or doctors may also suggest creams or medicines to ease the itch.",
+  "basis": "excerpt",
+  "urls": [
+   "https://www.macmillan.org.uk/cancer-information-and-support/pancreatic-cancer/controlling-symptoms-of-pancreatic-cancer",
+   "https://www.cancerresearchuk.org/about-cancer/pancreatic-cancer/treatment/controlling-symptoms"
+  ],
+  "note": "Search summary of Macmillan/CRUK."
+ },
+ {
+  "where": "article.faqs[0].a",
+  "sentence": "Cancer Research UK says advanced pancreatic cancer cannot normally be cured, but treatment can control symptoms and improve quality of life.",
+  "basis": "excerpt",
+  "urls": [
+   "https://www.cancerresearchuk.org/about-cancer/pancreatic-cancer/treatment"
+  ],
+  "note": "CRUK."
+ },
+ {
+  "where": "article.faqs[0].a",
+  "sentence": "Macmillan says it will not be possible to cure pancreatic cancer for many people.",
+  "basis": "excerpt",
+  "urls": [
+   "https://www.macmillan.org.uk/cancer-information-and-support/pancreatic-cancer"
   ],
   "note": "Macmillan."
  },
  {
   "where": "article.faqs[0].a",
-  "sentence": "For many people it will not be possible to cure pancreatic cancer, and the main aim of treatment is then often to control symptoms.",
+  "sentence": "MedlinePlus says some people whose cancer can be surgically removed are cured, but in most people the cancer has spread and cannot be completely removed at diagnosis.",
   "basis": "excerpt",
   "urls": [
-   "https://www.macmillan.org.uk/cancer-information-and-support/pancreatic-cancer/treatment-for-pancreatic-cancer"
+   "https://medlineplus.gov/ency/article/000236.htm"
   ],
-  "note": "As in section 4."
- },
- {
-  "where": "article.faqs[0].a",
-  "sentence": "The National Cancer Institute says surgery is only potentially curative when the tumour can be removed.",
-  "basis": "excerpt",
-  "urls": [
-   "https://www.cancer.gov/types/pancreatic/patient/pancreatic-treatment-pdq"
-  ],
-  "note": "NCI."
- },
- {
-  "where": "article.faqs[0].a",
-  "sentence": "The NHS says the options depend on the size and position of the cancer, whether it has spread and the person's general health.",
-  "basis": "excerpt",
-  "urls": [
-   "https://www.nhs.uk/conditions/pancreatic-cancer/treatment/"
-  ],
-  "note": "NHS."
+  "note": "MedlinePlus."
  },
  {
   "where": "article.faqs[1].a",
-  "sentence": "No. The NHS says pancreatic cancer may not have any symptoms, or they may be hard to spot.",
+  "sentence": "No. The NHS says pancreatic cancer often causes no symptoms at first.",
   "basis": "excerpt",
   "urls": [
    "https://www.nhs.uk/conditions/pancreatic-cancer/symptoms/"
@@ -703,53 +792,53 @@
  },
  {
   "where": "article.faqs[1].a",
-  "sentence": "MedlinePlus says early pancreatic cancer often does not cause symptoms right away, and that symptoms are often vague when they appear.",
+  "sentence": "Cancer Research UK says it does not usually cause symptoms in the early stages, and Pancreatic Cancer UK says symptoms can come and go at first.",
   "basis": "excerpt",
   "urls": [
-   "https://medlineplus.gov/pancreaticcancer.html"
+   "https://www.cancerresearchuk.org/about-cancer/pancreatic-cancer/symptoms",
+   "https://www.pancreaticcancer.org.uk/information/signs-and-symptoms-of-pancreatic-cancer/"
   ],
-  "note": "MedlinePlus."
+  "note": "CRUK; PCUK."
  },
  {
   "where": "article.faqs[1].a",
-  "sentence": "Many of the symptoms also have other causes.",
+  "sentence": "The NHS adds that the symptoms are common and often have other causes.",
   "basis": "excerpt",
   "urls": [
-   "https://www.nhs.uk/conditions/pancreatic-cancer/symptoms/",
-   "https://www.pancreaticcancer.org.uk/information/how-is-pancreatic-cancer-diagnosed/"
+   "https://www.nhs.uk/conditions/pancreatic-cancer/symptoms/"
   ],
-  "note": "NHS and Pancreatic Cancer UK."
+  "note": "NHS."
  },
  {
   "where": "article.faqs[2].a",
-  "sentence": "Pancreatic Cancer UK says the UK has no screening programme for pancreatic cancer.",
+  "sentence": "Cancer Research UK says there is no national screening programme for pancreatic cancer in the UK, but people at high risk may be able to have tests, sometimes as part of a study.",
   "basis": "excerpt",
   "urls": [
-   "https://www.pancreaticcancer.org.uk/information/how-is-pancreatic-cancer-diagnosed/"
+   "https://www.cancerresearchuk.org/about-cancer/pancreatic-cancer/getting-diagnosed/screening"
   ],
-  "note": "Search summary."
+  "note": "CRUK."
  },
  {
   "where": "article.faqs[2].a",
-  "sentence": "It adds that people with a family history may be monitored.",
+  "sentence": "Pancreatic Cancer UK offers an online family history checker for people concerned about inherited risk.",
   "basis": "excerpt",
   "urls": [
-   "https://www.pancreaticcancer.org.uk/information/how-is-pancreatic-cancer-diagnosed/"
+   "https://www.pancreaticcancer.org.uk/health-professionals/inherited-risk-resources-hub/"
   ],
-  "note": "Search summary."
+  "note": "PCUK search results (news page and hub)."
  },
  {
   "where": "article.faqs[2].a",
-  "sentence": "MedlinePlus lists hereditary disorders and family history among the risk factors that cannot be changed.",
+  "sentence": "MedlinePlus says a family history slightly increases the chance of developing the cancer.",
   "basis": "excerpt",
   "urls": [
-   "https://medlineplus.gov/pancreaticcancer.html"
+   "https://medlineplus.gov/ency/article/000236.htm"
   ],
   "note": "MedlinePlus."
  },
  {
   "where": "article.faqs[3].a",
-  "sentence": "The NHS advises an urgent GP appointment or a call to NHS 111 for yellowing of the skin or eyes.",
+  "sentence": "The NHS advises an urgent GP appointment or a call to NHS 111 for yellowing of the skin or eyes, vomiting for more than 2 days, or diarrhoea for more than 7 days.",
   "basis": "excerpt",
   "urls": [
    "https://www.nhs.uk/conditions/pancreatic-cancer/symptoms/"
@@ -758,21 +847,21 @@
  },
  {
   "where": "article.faqs[3].a",
-  "sentence": "It advises a GP appointment for noticeable weight loss without trying or for symptoms that last longer than two weeks.",
+  "sentence": "It advises a GP appointment for noticeable weight loss without trying or for symptoms that continue or get worse after 2 weeks.",
   "basis": "excerpt",
   "urls": [
    "https://www.nhs.uk/conditions/pancreatic-cancer/symptoms/"
   ],
-  "note": "NHS summary."
+  "note": "NHS."
  },
  {
   "where": "article.faqs[3].a",
   "sentence": "Pancreatic Cancer UK says jaundice needs a GP or A&E straight away.",
   "basis": "excerpt",
   "urls": [
-   "https://www.pancreaticcancer.org.uk/information/how-is-pancreatic-cancer-diagnosed/"
+   "https://www.pancreaticcancer.org.uk/information/signs-and-symptoms-of-pancreatic-cancer/"
   ],
-  "note": "Search summary."
+  "note": "PCUK."
  },
  {
   "where": "article.keyFacts[0]",
@@ -781,45 +870,48 @@
   "urls": [
    "https://111.wales.nhs.uk/encyclopaedia/c/article/cancerofthepancreas"
   ],
-  "note": "NHS 111 Wales page title."
+  "note": "NHS 111 Wales title."
  },
  {
   "where": "article.keyFacts[1]",
-  "sentence": "Often no symptoms at first, or vague ones",
+  "sentence": "Often no symptoms at first",
   "basis": "excerpt",
   "urls": [
    "https://www.nhs.uk/conditions/pancreatic-cancer/symptoms/",
-   "https://medlineplus.gov/pancreaticcancer.html"
+   "https://www.cancerresearchuk.org/about-cancer/pancreatic-cancer/symptoms"
   ],
-  "note": "NHS and MedlinePlus."
+  "note": "NHS; CRUK."
  },
  {
   "where": "article.keyFacts[2]",
-  "sentence": "Smoking, long-term diabetes, chronic pancreatitis and certain hereditary disorders",
+  "sentence": "Smoking, long-term diabetes, chronic pancreatitis, obesity and some inherited conditions",
   "basis": "excerpt",
   "urls": [
-   "https://medlineplus.gov/pancreaticcancer.html"
+   "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6780233/",
+   "https://www.cancerresearchuk.org/about-cancer/pancreatic-cancer/risks-causes",
+   "https://www.pancreaticcancer.org.uk/information/risk-factors-for-pancreatic-cancer/"
   ],
-  "note": "MedlinePlus."
+  "note": "Blended search summaries."
  },
  {
   "where": "article.keyFacts[3]",
-  "sentence": "Physical examination, blood tests, imaging and a biopsy",
-  "basis": "excerpt",
-  "urls": [
-   "https://medlineplus.gov/pancreaticcancer.html"
-  ],
-  "note": "MedlinePlus."
- },
- {
-  "where": "article.keyFacts[4]",
-  "sentence": "Surgery, chemotherapy, radiotherapy, targeted therapy and supportive care",
+  "sentence": "A biopsy, with imaging such as CT scans",
   "basis": "excerpt",
   "urls": [
    "https://medlineplus.gov/pancreaticcancer.html",
-   "https://www.nhs.uk/conditions/pancreatic-cancer/treatment/"
+   "https://www.cancerresearchuk.org/about-cancer/pancreatic-cancer/getting-diagnosed/tests-pancreatic-cancer"
   ],
-  "note": "MedlinePlus, NHS."
+  "note": "MedlinePlus; CRUK."
+ },
+ {
+  "where": "article.keyFacts[4]",
+  "sentence": "Surgery, chemotherapy, targeted therapy, sometimes radiotherapy, and supportive care",
+  "basis": "excerpt",
+  "urls": [
+   "https://www.nhs.uk/conditions/pancreatic-cancer/treatment/",
+   "https://magazine.medlineplus.gov/article/pancreatic-cancer-what-you-need-to-know"
+  ],
+  "note": "NHS; MedlinePlus."
  },
  {
   "where": "article.keyFacts[5]",
@@ -832,11 +924,11 @@
  },
  {
   "where": "article.keyFacts[6]",
-  "sentence": "There is no screening programme (Pancreatic Cancer UK)",
+  "sentence": "No national screening programme (Cancer Research UK)",
   "basis": "excerpt",
   "urls": [
-   "https://www.pancreaticcancer.org.uk/information/how-is-pancreatic-cancer-diagnosed/"
+   "https://www.cancerresearchuk.org/about-cancer/pancreatic-cancer/getting-diagnosed/screening"
   ],
-  "note": "Search summary."
+  "note": "CRUK."
  }
 ]
