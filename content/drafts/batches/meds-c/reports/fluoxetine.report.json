@@ -1,8 +1,8 @@
 {
  "id": "fluoxetine",
- "searchesUsed": 11,
+ "searchesUsed": 12,
  "counts": {
-  "supported": 55,
+  "supported": 59,
   "textbook": 3,
   "unsupported": 16,
   "wrong": 1,
@@ -609,7 +609,39 @@
    "url": "",
    "action": "removed",
    "newSentence": ""
+  },
+  {
+   "id": "c76",
+   "classification": "supported",
+   "evidence": "Restored in the closing pass: standard search on NHS fluoxetine side effects returned the main NHS page text listing these effects (the summary blends the main and side-effects pages).",
+   "url": "https://www.nhs.uk/medicines/fluoxetine/",
+   "action": "kept",
+   "newSentence": "The NHS lists headaches, feeling or being sick, diarrhoea or constipation, and changes in weight as common side effects of fluoxetine."
+  },
+  {
+   "id": "c77",
+   "classification": "supported",
+   "evidence": "Restored in the closing pass: standard search on NHS fluoxetine side effects returned the main NHS page text listing these effects (the summary blends the main and side-effects pages).",
+   "url": "https://www.nhs.uk/medicines/fluoxetine/",
+   "action": "kept",
+   "newSentence": "Sexual problems such as a lower sex drive, sleep problems, dizziness or drowsiness, and blurred vision are also listed by the NHS as common."
+  },
+  {
+   "id": "c78",
+   "classification": "supported",
+   "evidence": "Restored in the closing pass: standard search on NHS fluoxetine side effects returned the main NHS page text listing these effects (the summary blends the main and side-effects pages).",
+   "url": "https://www.nhs.uk/medicines/fluoxetine/",
+   "action": "kept",
+   "newSentence": "The NHS says some side effects ease after a couple of weeks as the body gets used to the medicine, while some can last longer."
+  },
+  {
+   "id": "c79",
+   "classification": "supported",
+   "evidence": "Restored in the closing pass: standard search on NHS fluoxetine side effects returned the main NHS page text listing these effects (the summary blends the main and side-effects pages).",
+   "url": "https://www.nhs.uk/medicines/fluoxetine/",
+   "action": "kept",
+   "newSentence": "The NHS advises against driving, cycling or using machinery while dizzy, drowsy or having blurred vision."
   }
  ],
- "notes": "Second-pass checker. Crisis routes verified: Samaritans 116 123 free any time and NHS 111 mental health option via search of NHS 'Help for suicidal thoughts' page plus trust pages; 999 for immediate danger. NHS fluoxetine pages disagree on whether thoughts of self-harm are 999/A&E (side-effects page) or 111 (main page); text uses the SSRI page route (GP or hospital straight away, 999 if in immediate danger). Children's age: NHS pages disagree (8 vs 5); both stated. Alcohol: NHS pages differ; both stated. Common side effects were removed because no search returned them: the common list is empty; a human or later pass should retrieve the NHS common side effects and restore it. Search summaries blend pages; URL attribution for several claims is to the page the summary named. Diabetes caution rests on a Sheffield Children's leaflet (cataplexy), weaker than an NHS medicines page. Summary clause 'available only on prescription' is textbook/status, not retrieved text."
+ "notes": "Second-pass checker. Crisis routes verified: Samaritans 116 123 free any time and NHS 111 mental health option via search of NHS 'Help for suicidal thoughts' page plus trust pages; 999 for immediate danger. NHS fluoxetine pages disagree on whether thoughts of self-harm are 999/A&E (side-effects page) or 111 (main page); text uses the SSRI page route (GP or hospital straight away, 999 if in immediate danger). Children's age: NHS pages disagree (8 vs 5); both stated. Alcohol: NHS pages differ; both stated. Common side effects were removed because no search returned them: the common list is empty; a human or later pass should retrieve the NHS common side effects and restore it. Search summaries blend pages; URL attribution for several claims is to the page the summary named. Diabetes caution rests on a Sheffield Children's leaflet (cataplexy), weaker than an NHS medicines page. Summary clause 'available only on prescription' is textbook/status, not retrieved text. Closing pass restored sideEffects.common from NHS text (1 search)."
 }
