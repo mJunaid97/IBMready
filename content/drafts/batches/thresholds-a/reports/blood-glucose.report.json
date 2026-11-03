@@ -1,0 +1,128 @@
+{
+ "id": "blood-glucose",
+ "searchesUsed": 9,
+ "counts": {
+  "supported": 15,
+  "textbook": 0,
+  "unsupported": 1,
+  "wrong": 0,
+  "unsafe": 0,
+  "unchecked": 0
+ },
+ "claims": [
+  {
+   "id": "c01",
+   "classification": "supported",
+   "evidence": "Lab Tests Online UK (re-retrieved): nothing but water for at least 8 hours, generally 8-10 hours; MedlinePlus: at least 8 hours.",
+   "url": "https://labtestsonline.org.uk/tests/glucose-tests",
+   "action": "kept"
+  },
+  {
+   "id": "c02",
+   "classification": "supported",
+   "evidence": "Diabetes UK page: fasting plasma glucose >=7.0 mmol/l (WHO 2006); without symptoms a single result is not enough, at least one additional diabetic-range result on another day is essential.",
+   "url": "https://www.diabetes.org.uk/for-professionals/improving-care/clinical-recommendations-for-professionals/diagnosis-ongoing-management-monitoring/new_diagnostic_criteria_for_diabetes",
+   "action": "kept"
+  },
+  {
+   "id": "c03",
+   "classification": "supported",
+   "evidence": "Diabetes UK: random venous plasma glucose >=11.1 mmol/l. Symptomatic single-result rule corroborated by NHS Highland/South West London guidance. Sentence says 'suggests' so not overstated.",
+   "url": "https://www.diabetes.org.uk/for-professionals/improving-care/clinical-recommendations-for-professionals/diagnosis-ongoing-management-monitoring/new_diagnostic_criteria_for_diabetes",
+   "action": "kept"
+  },
+  {
+   "id": "c04",
+   "classification": "supported",
+   "evidence": "Lab Tests Online UK: at least 8 hours water only. MedlinePlus gives 8-12 h and an NHS OGTT leaflet 8-14 h, so 'at least 8 hours' is the safe common floor.",
+   "url": "https://labtestsonline.org.uk/tests/glucose-tests",
+   "action": "kept"
+  },
+  {
+   "id": "c05",
+   "classification": "supported",
+   "evidence": "NICE PH38 glossary: IFG (WHO) is fasting plasma glucose 6.1 to 6.9 mmol/l; Scottish Right Decisions also uses 6.1-6.9 for prediabetes.",
+   "url": "https://www.nice.org.uk/guidance/ph38/chapter/Glossary",
+   "action": "kept"
+  },
+  {
+   "id": "c06",
+   "classification": "supported",
+   "evidence": "NICE PH38: high risk = fasting plasma glucose 5.5 to 6.9 mmol/l (PH38 pairs it with a risk score) or HbA1c 42-47 mmol/mol. MedlinePlus: IFG 100-125 mg/dL = 5.6 to 6.9 mmol/L. Not overstated. Cosmetic: sentence lacks a final full stop.",
+   "url": "https://www.nice.org.uk/guidance/ph38/chapter/Glossary",
+   "action": "kept"
+  },
+  {
+   "id": "c07",
+   "classification": "supported",
+   "evidence": "Diabetes UK: confirmation on another day needed when asymptomatic. Symptomatic single result: retrieved from NHS Highland, South West London ICB guideline and ADA/WHO-based criteria; Diabetes UK's own symptom wording was truncated in the retrieved text, so UK support is by agreement of NHS guidance, not that one page.",
+   "url": "https://www.diabetes.org.uk/for-professionals/improving-care/clinical-recommendations-for-professionals/diagnosis-ongoing-management-monitoring/new_diagnostic_criteria_for_diabetes",
+   "action": "kept"
+  },
+  {
+   "id": "c08",
+   "classification": "supported",
+   "evidence": "Diabetes UK, NHS Scotland, Royal Cornwall (NHS) all: hypo = below 4 mmol/L. NHS 111 Wales page not returned directly. Un-ledgered rest of the pre-existing sentence: 'insulin or tablets' retrieved (sulfonylurea by name not retrieved: textbook); treatment with fast-acting carbohydrate retrieved; 'call 999' not retrieved in this search but is a safe signposting route.",
+   "url": "https://www.diabetes.org.uk/about-diabetes/looking-after-diabetes/complications/hypos",
+   "action": "kept"
+  },
+  {
+   "id": "r01",
+   "classification": "supported",
+   "evidence": "Diabetes UK page: FPG >=7.0; asymptomatic needs another-day confirmation; symptomatic single result adequate per NHS guidance. Jurisdiction UK correct. Value/unit correct.",
+   "url": "https://www.diabetes.org.uk/for-professionals/improving-care/clinical-recommendations-for-professionals/diagnosis-ongoing-management-monitoring/new_diagnostic_criteria_for_diabetes",
+   "action": "kept"
+  },
+  {
+   "id": "r02",
+   "classification": "supported",
+   "evidence": "Diabetes UK: random venous plasma glucose >=11.1 mmol/l; symptoms thirst, polyuria, weight loss match NHS Highland text. UK correct.",
+   "url": "https://www.diabetes.org.uk/for-professionals/improving-care/clinical-recommendations-for-professionals/diagnosis-ongoing-management-monitoring/new_diagnostic_criteria_for_diabetes",
+   "action": "kept"
+  },
+  {
+   "id": "r03",
+   "classification": "supported",
+   "evidence": "Diabetes UK: 2-hour OGTT value >=11.1 mmol/l; 75 g load corroborated by secondary sources. UK correct.",
+   "url": "https://www.diabetes.org.uk/for-professionals/improving-care/clinical-recommendations-for-professionals/diagnosis-ongoing-management-monitoring/new_diagnostic_criteria_for_diabetes",
+   "action": "kept"
+  },
+  {
+   "id": "r04",
+   "classification": "supported",
+   "evidence": "NICE PH38 glossary quoting WHO: IFG 6.1 to 6.9 mmol/l. GLOBAL label is right for a WHO definition (hosted on NICE). 'intermediate hyperglycaemia (prediabetes)' is textbook/standard wording.",
+   "url": "https://www.nice.org.uk/guidance/ph38/chapter/Glossary",
+   "action": "kept"
+  },
+  {
+   "id": "r05",
+   "classification": "supported",
+   "evidence": "NICE PH38 recommendations/glossary: high risk = FPG 5.5 to 6.9 or HbA1c 42-47. UK correct. Note PH38 applies it with a high-risk score; context could add 'together with a high-risk score' (optional).",
+   "url": "https://www.nice.org.uk/guidance/ph38/chapter/Glossary",
+   "action": "kept"
+  },
+  {
+   "id": "r06",
+   "classification": "supported",
+   "evidence": "MedlinePlus: IFG 100-125 mg/dL (5.6 to 6.9 mmol/L); ADA same. US correct.",
+   "url": "https://medlineplus.gov/ency/article/003482.htm",
+   "action": "kept"
+  },
+  {
+   "id": "r07",
+   "classification": "unsupported",
+   "evidence": "Below 4 mmol/L retrieved from Diabetes UK, NHS Scotland, Royal Cornwall (NHS) and others. The clause 'one NHS hospital trust uses below 3.6' could NOT be re-retrieved (the search found no 3.6 anywhere; one leaflet gives <2.2 as the strict clinical definition). The NHS 111 Wales URL did not appear in results; Diabetes UK hypos page did.",
+   "url": "https://www.diabetes.org.uk/about-diabetes/looking-after-diabetes/complications/hypos",
+   "action": "edited",
+   "newSentence": "context: 'Diabetes UK and NHS guidance describe a hypo as a glucose level below 4 mmol/L' (delete the 'one NHS hospital trust uses below 3.6' clause)"
+  },
+  {
+   "id": "r08",
+   "classification": "supported",
+   "evidence": "Lab Tests Online UK: at least 8 hours, water only, generally 8-10 hours. UK correct.",
+   "url": "https://labtestsonline.org.uk/tests/glucose-tests",
+   "action": "kept"
+  }
+ ],
+ "notes": "r07 context must become: 'Diabetes UK and NHS guidance describe a hypo as a glucose level below 4 mmol/L'. Remove the 3.6 clause (not re-retrieved). Suggested r07 source: Diabetes UK hypos page https://www.diabetes.org.uk/about-diabetes/looking-after-diabetes/complications/hypos (retrieved) or keep NHS 111 Wales (ledger says retrieved by pass 1; not seen by me). The ledger c08 note mentions UCLH 3.6; also drop that from the note. Source carrying the symptomatic-single-result rule: add an NHS guidance reference if the record text 'with typical symptoms one result can be enough' stays; current Diabetes UK citation covers the asymptomatic confirmation rule explicitly. Thresholds 6.1 vs 5.5 vs 5.6 all verified with correct jurisdiction labels (WHO/GLOBAL 6.1, NICE/UK 5.5, MedlinePlus/US 5.6). Un-ledgered pre-existing text not checked in depth: 'usually from insulin or a sulfonylurea' (sulfonylurea not retrieved by name; textbook) and 'call 999' emergency routing (not retrieved; recommend keeping, it is the safe route). Search tool returned blended summaries, so attribution to individual pages is by plausibility."
+}

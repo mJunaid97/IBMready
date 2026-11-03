@@ -410,7 +410,7 @@
      },
      {
       "item": "Uric acid (urate)",
-      "meaning": "The waste product that crystallises in gout; NICE defines hyperuricaemia as a serum urate of 360 micromol/L or more. Its default treatment target in gout is below 360 micromol/L, with below 300 micromol/L suggested for people with tophi, chronic gouty arthritis or ongoing flares; the British Society for Rheumatology recommends below 300 micromol/L for everyone on urate-lowering treatment."
+      "meaning": "The waste product that crystallises in gout; NICE defines hyperuricaemia as a serum urate of 360 micromol/L or more. Its general treatment target in gout is below 360 micromol/L, with below 300 micromol/L suggested for people with tophi, chronic gouty arthritis or ongoing frequent flares despite a level below 360; the British Society for Rheumatology recommends an initial target below 300 micromol/L for everyone starting urate-lowering treatment."
      }
     ],
     "interpretation": [
@@ -444,7 +444,7 @@
      },
      {
       "finding": "Serum urate 360 micromol/L or above",
-      "meaning": "Supports gout, but the level can be normal during an attack, so it is often repeated some weeks after the attack settles"
+      "meaning": "Supports gout, but the level can be normal during an attack, so it is often repeated at least two weeks after the attack settles"
      }
     ],
     "thresholds": [
@@ -456,39 +456,39 @@
       "jurisdiction": "UK",
       "source": {
        "title": "NICE NG219: Gout: diagnosis and management",
-       "url": "https://www.nice.org.uk/guidance/ng219/documents/evidence-review-11",
-       "section": "Serum urate target in treat-to-target"
+       "url": "https://www.nice.org.uk/guidance/ng219/chapter/Recommendations",
+       "section": "Serum urate: diagnosis and treat-to-target"
       }
      },
      {
-      "name": "Gout urate-lowering target (default)",
+      "name": "Gout urate-lowering target (general)",
       "value": "Below 360",
       "unit": "micromol/L",
-      "context": "NICE treat-to-target default for serum urate in people on urate-lowering treatment",
+      "context": "NICE general treat-to-target level for serum urate in people on urate-lowering treatment",
       "jurisdiction": "UK",
       "source": {
        "title": "NICE NG219: Gout: diagnosis and management",
-       "url": "https://www.nice.org.uk/guidance/ng219/documents/evidence-review-11",
-       "section": "Serum urate target in treat-to-target"
+       "url": "https://www.nice.org.uk/guidance/ng219/chapter/Recommendations",
+       "section": "Serum urate: diagnosis and treat-to-target"
       }
      },
      {
       "name": "Gout urate-lowering target (severe disease)",
       "value": "Below 300",
       "unit": "micromol/L",
-      "context": "NICE suggests a lower target for people with tophi, chronic gouty arthritis or ongoing flares despite urate below 360",
+      "context": "NICE suggests a lower target for people with tophi, chronic gouty arthritis or ongoing frequent flares despite urate below 360",
       "jurisdiction": "UK",
       "source": {
        "title": "NICE NG219: Gout: diagnosis and management",
-       "url": "https://www.nice.org.uk/guidance/ng219/documents/evidence-review-11",
-       "section": "Serum urate target in treat-to-target"
+       "url": "https://www.nice.org.uk/guidance/ng219/chapter/Recommendations",
+       "section": "Serum urate: diagnosis and treat-to-target"
       }
      },
      {
       "name": "Gout urate-lowering target (British Society for Rheumatology)",
       "value": "Below 300",
       "unit": "micromol/L",
-      "context": "BSR guideline recommends an initial target below 300 for all people on urate-lowering treatment; NICE differs",
+      "context": "BSR guideline recommends an initial target below 300 for everyone starting urate-lowering treatment; NICE differs",
       "jurisdiction": "UK",
       "source": {
        "title": "Diagnosis and management of gout: are the BSR and NICE guidelines both needed? (PMC)",
@@ -500,7 +500,7 @@
     "references": [
      {
       "title": "NICE NG219: Gout: diagnosis and management",
-      "url": "https://www.nice.org.uk/guidance/ng219/documents/evidence-review-11"
+      "url": "https://www.nice.org.uk/guidance/ng219/chapter/Recommendations"
      },
      {
       "title": "Diagnosis and management of gout: are the BSR and NICE guidelines both needed?",
@@ -513,7 +513,7 @@
     "measures": [
      {
       "item": "Urine hCG",
-      "meaning": "Positive from the first day of a missed period; some very sensitive tests can be used earlier. Modern tests detect low levels of hCG. A qualitative result: it says whether hCG is present above the test's detection limit, not how much. First-morning urine is the most concentrated and gives the clearest result when testing early, although most tests work at any time of day once the period is late."
+      "meaning": "Most tests can be used from the first day of a missed period; some very sensitive tests can be used earlier. A qualitative result: it says whether hCG is present above the test's detection limit, not how much. First-morning urine is the most concentrated and gives the clearest result when testing early, although most tests work at any time of day once the period is late."
      },
      {
       "item": "Serum hCG",
@@ -561,7 +561,7 @@
       }
      },
      {
-      "name": "Earliest ultrasound confirmation of an early pregnancy",
+      "name": "Usual timing of an early pregnancy scan",
       "value": "About 6 to 7",
       "unit": "weeks of pregnancy",
       "context": "Transvaginal early scan to confirm a pregnancy in the womb and a fetal heartbeat; a scan before 6 weeks may be too early to be clear",
@@ -587,7 +587,7 @@
     "measures": [
      {
       "item": "C-reactive protein (CRP)",
-      "meaning": "Starts to rise within hours of a trigger, peaks within a day or two and falls quickly once the trigger resolves. Very high levels suggest bacterial infection or major inflammation; mild elevations are common and non-specific. For adults with a suspected lower respiratory tract infection, NICE uses a point-of-care CRP below 20 mg/L, 20 to 100 mg/L and above 100 mg/L to help decide whether to offer antibiotics. The protein is made by the liver as part of the acute-phase response, so it reflects the whole-body inflammatory signal rather than any one organ. It is also raised after a heart attack, after surgery and in sepsis, and a high-sensitivity version of the assay (hs-CRP) picks up the very low-grade inflammation linked to cardiovascular risk. Laboratories report in different units, so the reference limit printed on the report is the one to use."
+      "meaning": "Starts to rise within hours of a trigger, peaks within a day or two and falls quickly once the trigger resolves. Very high levels suggest bacterial infection or major inflammation, although some viral infections can also raise CRP considerably; mild elevations are common and non-specific. For adults with a suspected lower respiratory tract infection, when it is unclear whether antibiotics are needed NICE suggests considering a point-of-care CRP test: above 100 mg/L points to offering antibiotics straight away, 20 to 100 mg/L to considering a back-up (delayed) prescription, and below 20 mg/L to not routinely offering them. The protein is made by the liver as part of the acute-phase response, so it reflects the whole-body inflammatory signal rather than any one organ. It is also raised after a heart attack, after surgery and in sepsis, and a high-sensitivity version of the assay (hs-CRP) picks up the very low-grade inflammation linked to cardiovascular risk. Laboratories report in different units, so the reference limit printed on the report is the one to use."
      }
     ],
     "interpretation": [
@@ -618,10 +618,10 @@
     ],
     "thresholds": [
      {
-      "name": "Suspected lower respiratory tract infection: antibiotics not routinely offered",
+      "name": "Suspected lower respiratory tract infection: antibiotics not routinely needed",
       "value": "Below 20",
       "unit": "mg/L",
-      "context": "Point-of-care CRP in adults when it is unclear whether antibiotics are needed; guideline decision point, not a reference interval",
+      "context": "Point-of-care CRP in adults with suspected lower respiratory tract infection when the clinician is unsure whether antibiotics are needed; guideline decision point, not a reference interval",
       "jurisdiction": "UK",
       "source": {
        "title": "NICE NG237: Suspected acute respiratory infection in over 16s: assessment at first presentation and initial management",
@@ -630,10 +630,10 @@
       }
      },
      {
-      "name": "Suspected lower respiratory tract infection: consider a delayed antibiotic prescription",
+      "name": "Suspected lower respiratory tract infection: back-up prescription considered",
       "value": "20 to 100",
       "unit": "mg/L",
-      "context": "Point-of-care CRP in adults; a prescription to use later if symptoms worsen",
+      "context": "Point-of-care CRP in adults with suspected lower respiratory tract infection when the clinician is unsure whether antibiotics are needed; a prescription to use later if symptoms worsen",
       "jurisdiction": "UK",
       "source": {
        "title": "NICE NG237: Suspected acute respiratory infection in over 16s: assessment at first presentation and initial management",
@@ -642,10 +642,10 @@
       }
      },
      {
-      "name": "Suspected lower respiratory tract infection: offer antibiotics immediately",
+      "name": "Suspected lower respiratory tract infection: immediate antibiotics",
       "value": "More than 100",
       "unit": "mg/L",
-      "context": "Point-of-care CRP in adults",
+      "context": "Point-of-care CRP in adults with suspected lower respiratory tract infection when the clinician is unsure whether antibiotics are needed",
       "jurisdiction": "UK",
       "source": {
        "title": "NICE NG237: Suspected acute respiratory infection in over 16s: assessment at first presentation and initial management",

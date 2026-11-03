@@ -1,0 +1,74 @@
+{
+ "id": "crp",
+ "searchesUsed": 4,
+ "counts": {
+  "supported": 8,
+  "textbook": 0,
+  "unsupported": 0,
+  "wrong": 0,
+  "unsafe": 0,
+  "unchecked": 0
+ },
+ "claims": [
+  {
+   "id": "c01",
+   "classification": "supported",
+   "evidence": "Reviews (PMC3826426, PMC11211361 via search) describe CRP rising markedly in severe infection/sepsis; sepsis meta-analysis mentions high levels. 'Climb steeply' is a safe paraphrase; no multiplier given.",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11211361/",
+   "action": "kept"
+  },
+  {
+   "id": "c02",
+   "classification": "supported",
+   "evidence": "Review (PMC3826426-type): CRP 'starts to rise about 4-6 h after an inflammatory stimulus, doubles every 8 h, maximum at 36-50 h'; others 24-48 h; half-life about 19 h; 'when the stimulus ceases CRP falls rapidly'. 'Within hours', 'peaks within a day or two', 'falls quickly' fit.",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3826426/",
+   "action": "kept"
+  },
+  {
+   "id": "c03",
+   "classification": "supported",
+   "evidence": "PMC7152028: review gives 10-40 mg/L for mild inflammation/viral infection, 40-200 for active inflammation/bacterial, >200 typically severe bacterial infection/burns. StatPearls: >100 mg/L 'marked'; mild elevations may lack clinical relevance. But a review also notes >100 mg/L can occur with adenovirus, influenza etc, so 'suggest' is the right (not 'indicate') verb. Sentence is not overstated. Could add 'but viral infections can occasionally do this too' to be safer.",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7152028/",
+   "action": "edited",
+   "newSentence": "Very high levels suggest bacterial infection or major inflammation, although some viral infections can also raise CRP considerably; mild elevations are common and non-specific."
+  },
+  {
+   "id": "c04",
+   "classification": "supported",
+   "evidence": "NG237 rec 1.3.4 (retrieved): where the clinician is unsure whether antibiotics are needed after assessing LRTI in adults, consider point-of-care CRP: >100 mg/litre offer immediate antibiotics; 20-100 consider back-up (delayed) prescription; <20 do not routinely offer. Applies to adults (over 16s) with suspected LRTI ONLY when unsure; sentence omits the 'when unsure' condition and the 'consider' wording. Not retrieved: NG138/NG250 pneumonia CRP text (NICE resource impact statement says CRP recommendation was previously in the pneumonia guideline).",
+   "url": "https://www.nice.org.uk/guidance/ng237/chapter/Recommendations",
+   "action": "edited",
+   "newSentence": "For adults with a suspected lower respiratory tract infection when it is unclear whether antibiotics are needed, NICE suggests considering a point-of-care CRP test: above 100 mg/L points to offering antibiotics straight away, 20 to 100 mg/L to considering a back-up (delayed) prescription, and below 20 mg/L to not routinely offering them."
+  },
+  {
+   "id": "c05",
+   "classification": "supported",
+   "evidence": "As a deliberately number-free qualitative wording it is safe. No UK source retrieved defines a 'mild' band; international review PMC7152028 gives roughly 10-40 mg/L for mild inflammation/viral infection, StatPearls 1-10 mg/dL (10-100 mg/L) 'moderate'. 'Small rise above reference limit' is consistent. Unretrieved (outside ledger, pre-existing): 'obesity, smoking or recent exertion' as causes; no retrieved source addressed them (standard textbook).",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7152028/",
+   "action": "kept"
+  },
+  {
+   "id": "r01",
+   "classification": "supported",
+   "evidence": "NG237 1.3.4: do not routinely offer antibiotics if CRP <20 mg/litre (adults, LRTI, clinician unsure). Value/unit OK. Name should keep 'not routinely'.",
+   "url": "https://www.nice.org.uk/guidance/ng237/chapter/Recommendations",
+   "action": "kept"
+  },
+  {
+   "id": "r02",
+   "classification": "supported",
+   "evidence": "NG237 1.3.4: consider a back-up antibiotic prescription if CRP is 20-100 mg/litre. Value/unit OK.",
+   "url": "https://www.nice.org.uk/guidance/ng237/chapter/Recommendations",
+   "action": "kept"
+  },
+  {
+   "id": "r03",
+   "classification": "supported",
+   "evidence": "NG237 1.3.4: offer immediate antibiotics if CRP >100 mg/litre. Context should add 'adults with suspected lower respiratory tract infection when unsure whether antibiotics are needed'. 'More than 100' correct (boundary 100 belongs to middle band).",
+   "url": "https://www.nice.org.uk/guidance/ng237/chapter/Recommendations",
+   "action": "edited",
+   "newSentence": "context: Point-of-care CRP in adults with suspected lower respiratory tract infection when the clinician is unsure whether antibiotics are needed"
+  }
+ ],
+ "notes": "4 searches (NG237; CRP interpretation; CRP kinetics; high/mild CRP). No retrieved UK source (NHS, NICE, labtestsonline) gives a 'mildly raised' CRP band; international reviews give conflicting bands, so keeping the band out is correct. NG237 thresholds apply to adults over 16 with suspected LRTI and are decision aids 'to support clinical decision making', only when unsure. Pneumonia guidelines (NG138/NG250) not searched; no claim on the page depends on them. The fragment's threshold names read as instructions ('offer antibiotics immediately'); suggest softer labels e.g. 'NICE: antibiotics usually offered' since the recommendation is 'consider CRP... offer'. Total searches across all three tests: 14 (hormone 4, pregnancy 6, crp 4)."
+}
