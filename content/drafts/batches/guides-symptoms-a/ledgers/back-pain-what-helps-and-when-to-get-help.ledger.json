@@ -8,7 +8,7 @@
    "urls": [
     "https://www.nhs.uk/conditions/back-pain/"
    ],
-   "note": "Returned search text for this page said this (summary blends pages)."
+   "note": "Returned search text for this page said this (summary blends pages). | second pass: supported"
   },
   {
    "where": "body[0]",
@@ -17,7 +17,7 @@
    "urls": [
     "https://www.nhs.uk/conditions/sciatica/"
    ],
-   "note": "Returned search text for this page said this (summary blends pages)."
+   "note": "Returned search text for this page said this (summary blends pages). | second pass: supported"
   },
   {
    "where": "body[0]",
@@ -26,7 +26,7 @@
    "urls": [
     "https://www.nhs.uk/conditions/sciatica/"
    ],
-   "note": "Returned search text for this page said this (summary blends pages)."
+   "note": "Returned search text for this page said this (summary blends pages). | second pass: supported"
   },
   {
    "where": "body[0]",
@@ -35,7 +35,7 @@
    "urls": [
     "https://www.nhs.uk/conditions/sciatica/"
    ],
-   "note": "Plain definition; textbook."
+   "note": "Plain definition; textbook. | second pass: textbook"
   },
   {
    "where": "body[1]",
@@ -44,16 +44,16 @@
    "urls": [
     "https://www.nhsinform.scot/illnesses-and-conditions/muscle-bone-and-joints/neck-and-back-problems-and-conditions/back-problems/"
    ],
-   "note": "Returned search text for this page said this (summary blends pages)."
+   "note": "Returned search text for this page said this (summary blends pages). | second pass: supported"
   },
   {
    "where": "body[1]",
-   "sentence": "NHS inform describes keeping active as the single best thing a person can do for their back.",
+   "sentence": "NHS inform describes keeping active as an essential part of treatment and recovery.",
    "basis": "excerpt",
    "urls": [
     "https://www.nhsinform.scot/illnesses-and-conditions/muscle-bone-and-joints/neck-and-back-problems-and-conditions/back-problems/"
    ],
-   "note": "Returned search text for this page said this (summary blends pages)."
+   "note": "Edited after second pass: Retrieved NHS inform text says keeping active is 'an essential part of your treatment and recovery'; 'single best thing' not found."
   },
   {
    "where": "body[1]",
@@ -63,91 +63,52 @@
     "https://www.dgft.nhs.uk/pil/acute-low-back-pain/",
     "https://www.rjah.nhs.uk/our-services/therapy/supported-self-care/back-pain/"
    ],
-   "note": "Summary of several NHS trust back-pain leaflets."
+   "note": "Summary of several NHS trust back-pain leaflets. | second pass: supported"
   },
   {
    "where": "body[1]",
-   "sentence": "NHS trust leaflets suggest gentle movements, walking, swimming or cycling, and say that any type of exercise can be worthwhile if it is something the person enjoys.",
-   "basis": "excerpt",
-   "urls": [
-    "https://www.dgft.nhs.uk/pil/acute-low-back-pain/",
-    "https://www.rjah.nhs.uk/our-services/therapy/supported-self-care/back-pain/"
-   ],
-   "note": "Summary of several NHS trust leaflets; exact leaflet not identifiable."
-  },
-  {
-   "where": "body[1]",
-   "sentence": "They generally suggest a cold pack in the first few days and heat afterwards, with a cloth between the pack and the skin.",
-   "basis": "excerpt",
-   "urls": [
-    "https://www.dgft.nhs.uk/pil/acute-low-back-pain/",
-    "https://www.rjah.nhs.uk/our-services/therapy/supported-self-care/back-pain/"
-   ],
-   "note": "As above."
-  },
-  {
-   "where": "body[1]",
-   "sentence": "Prolonged bed rest can leave the back stiff and the muscles weak, and a physiotherapist can design a personal exercise plan.",
-   "basis": "excerpt",
-   "urls": [
-    "https://www.dgft.nhs.uk/pil/acute-low-back-pain/",
-    "https://www.rjah.nhs.uk/our-services/therapy/supported-self-care/back-pain/"
-   ],
-   "note": "As above."
-  },
-  {
-   "where": "body[1]",
-   "sentence": "Bed rest during the day is no longer recommended, because people who stay active tend to get better more quickly.",
+   "sentence": "NHS inform says resting in bed does not help back pain and often makes it harder to get going again.",
    "basis": "excerpt",
    "urls": [
     "https://www.nhsinform.scot/illnesses-and-conditions/muscle-bone-and-joints/neck-and-back-problems-and-conditions/back-problems/"
    ],
-   "note": "Summary attributed to NHS trust back pain leaflets as well as NHS inform."
+   "note": "Edited after second pass: NHS inform: resting in bed doesn't help back pain and often makes it harder to get going again. 'No longer recommended because... better more quickly' not found."
   },
   {
    "where": "body[1]",
-   "sentence": "The NHS sciatica page suggests staying active, doing regular exercises and asking a pharmacist about painkillers, and notes that paracetamol is unlikely to help sciatica.",
+   "sentence": "The NHS sciatica page suggests asking a pharmacist about painkillers and says paracetamol is unlikely to help sciatica.",
    "basis": "excerpt",
    "urls": [
     "https://www.nhs.uk/conditions/sciatica/"
    ],
-   "note": "Returned search text for this page said this (summary blends pages)."
+   "note": "Edited after second pass: NHS sciatica text retrieved: ask a pharmacist about painkillers; paracetamol unlikely to help. 'Regular exercises' not clearly retrieved."
   },
   {
    "where": "body[1]",
-   "sentence": "The NHS back pain page says paracetamol on its own is not recommended for back pain and that anti-inflammatory painkillers such as ibuprofen may not suit everyone.",
+   "sentence": "The NHS back pain page says paracetamol on its own is not recommended for back pain.",
    "basis": "excerpt",
    "urls": [
     "https://www.nhs.uk/conditions/back-pain/"
    ],
-   "note": "Returned search text for this page said this (summary blends pages)."
+   "note": "Edited after second pass: Retrieved: main NHS page says paracetamol alone is not recommended for back pain. 'Ibuprofen may not suit everyone' was only found in trust leaflets, not nhs.uk."
   },
   {
    "where": "body[2]",
-   "sentence": "NICE guideline NG59 on low back pain and sciatica in people over 16 recommends advice and information that help people manage their own pain, and staying active.",
+   "sentence": "NICE guideline NG59 on low back pain and sciatica in people over 16 recommends considering a group exercise programme for a specific episode or flare-up.",
    "basis": "excerpt",
    "urls": [
     "https://www.nice.org.uk/guidance/ng59/chapter/recommendations"
    ],
-   "note": "Returned search text for this page said this (summary blends pages)."
+   "note": "Edited after second pass: Retrieved NICE NG59 text: consider a group exercise programme for an episode or flare-up. Self-management advice not retrieved this session."
   },
   {
    "where": "body[2]",
-   "sentence": "It recommends manual therapy only as part of a package of care that includes exercise.",
+   "sentence": "NICE guideline NG59 says not to offer belts or corsets, foot supports, traction or TENS for low back pain.",
    "basis": "excerpt",
    "urls": [
     "https://www.nice.org.uk/guidance/ng59/chapter/recommendations"
    ],
-   "note": "Returned search text for this page said this (summary blends pages)."
-  },
-  {
-   "where": "body[2]",
-   "sentence": "It does not recommend belts or corsets, foot orthotics, traction, or TENS and interferential therapy.",
-   "basis": "excerpt",
-   "urls": [
-    "https://www.nice.org.uk/guidance/ng59/chapter/recommendations"
-   ],
-   "note": "Returned search text for this page said this (summary blends pages)."
+   "note": "Edited after second pass: Retrieved: do not offer belts or corsets, TENS; patient version also says no foot supports or traction. Interferential therapy not specifically retrieved."
   },
   {
    "where": "body[3]",
@@ -156,25 +117,25 @@
    "urls": [
     "https://www.nhsinform.scot/illnesses-and-conditions/muscle-bone-and-joints/neck-and-back-problems-and-conditions/back-problems/"
    ],
-   "note": "Returned search text for this page said this (summary blends pages)."
+   "note": "Returned search text for this page said this (summary blends pages). | second pass: supported"
   },
   {
    "where": "body[3]",
-   "sentence": "NHS 111 Wales says physiotherapy is free on the NHS, though waiting times can be long, and that in some areas people can refer themselves without seeing a GP.",
+   "sentence": "NHS 111 Wales says physiotherapy is free on the NHS and that, depending on where a person lives, they may be able to refer themselves or may need to see a GP first.",
    "basis": "excerpt",
    "urls": [
-    "https://111.wales.nhs.uk/encyclopaedia/s/article/slippeddisc/"
+    "https://111.wales.nhs.uk/physiotherapy/"
    ],
-   "note": "Returned search text for this page said this (summary blends pages)."
+   "note": "Edited after second pass: NHS 111 Wales physiotherapy page: free on the NHS; depending on area may self-refer or need GP first. 'Waiting times long' not found; URL should be the physiotherapy page."
   },
   {
    "where": "body[3]",
-   "sentence": "Sciatica usually improves within weeks to months, though it can last longer and may come back.",
+   "sentence": "Sciatica often improves within weeks, though it can last longer.",
    "basis": "excerpt",
    "urls": [
     "https://www.nhs.uk/conditions/sciatica/"
    ],
-   "note": "Returned search text for this page said this (summary blends pages)."
+   "note": "Edited after second pass: Retrieved: sciatica usually gets better in about 4 to 6 weeks (other source 6 to 12 weeks) but can last longer. 'May come back' not found."
   },
   {
    "where": "body[4]",
@@ -183,27 +144,25 @@
    "urls": [
     "https://www.cuh.nhs.uk/patient-information/back-pain/"
    ],
-   "note": "Returned search text for this page said this (summary blends pages)."
+   "note": "Returned search text for this page said this (summary blends pages). | second pass: supported"
   },
   {
    "where": "body[4]",
-   "sentence": "NHS sources list its warning signs as loss of bladder or bowel control or feeling, being unable to pass urine, numbness around the genitals or back passage, and worsening weakness or pain in both legs.",
+   "sentence": "NHS sources list its warning signs as changes in bladder or bowel control, numbness or pins and needles around the genitals or back passage, and pain or weakness in both legs.",
    "basis": "excerpt",
    "urls": [
-    "https://www.merseycare.nhs.uk/sciatica",
-    "https://www.tims.nhs.uk/back/"
+    "https://www.torbayandsouthdevon.nhs.uk/services/specialist-spinal-orthopaedic-physiotherapy-service/common-spinal-conditions/cauda-equina-syndrome/"
    ],
-   "note": "Returned search text for this page said this (summary blends pages)."
+   "note": "Edited after second pass: Retrieved: changes in bladder or bowel control, numbness around genitals/back passage, pain or weakness in both legs. 'Unable to pass urine' and 'loss of feeling' of bladder not found."
   },
   {
    "where": "body[4]",
-   "sentence": "They say that a person who develops these signs after back pain should go to the nearest A&E department.",
+   "sentence": "One NHS trust leaflet says to attend the Emergency Department immediately if two or more of these symptoms appear suddenly, and another says to attend A&E or call NHS 111.",
    "basis": "excerpt",
    "urls": [
-    "https://www.merseycare.nhs.uk/sciatica",
-    "https://www.tims.nhs.uk/back/"
+    "https://www.sussexcommunity.nhs.uk/patients-and-visitors/resources/patient-resources/sciatica/cauda-equina-syndrome-ces"
    ],
-   "note": "Returned search text for this page said this (summary blends pages)."
+   "note": "Edited after second pass: Torbay: attend the Emergency Department immediately if two or more symptoms appear suddenly. Sussex Community: attend A&E or call NHS 111. 'Nearest A&E' alone changes the route to care."
   },
   {
    "where": "keyPoints[0]",
@@ -212,16 +171,16 @@
    "urls": [
     "https://www.nhsinform.scot/illnesses-and-conditions/muscle-bone-and-joints/neck-and-back-problems-and-conditions/back-problems/"
    ],
-   "note": "Restates a body sentence: Returned search text for this page said this (summary blends pages)."
+   "note": "Restates a body sentence: Returned search text for this page said this (summary blends pages). | second pass: supported"
   },
   {
    "where": "keyPoints[1]",
-   "sentence": "NICE guideline NG59 on low back pain and sciatica in people over 16 recommends advice and information that help people manage their own pain, and staying active.",
+   "sentence": "NICE guideline NG59 on low back pain and sciatica in people over 16 recommends considering a group exercise programme for a specific episode or flare-up.",
    "basis": "excerpt",
    "urls": [
     "https://www.nice.org.uk/guidance/ng59/chapter/recommendations"
    ],
-   "note": "Restates a body sentence: Returned search text for this page said this (summary blends pages)."
+   "note": "Restates a body sentence: Edited after second pass: Retrieved NICE NG59 text: consider a group exercise programme for an episode or flare-up. Self-management advice not retrieved this session."
   },
   {
    "where": "keyPoints[2]",
@@ -230,7 +189,7 @@
    "urls": [
     "https://www.nhsinform.scot/illnesses-and-conditions/muscle-bone-and-joints/neck-and-back-problems-and-conditions/back-problems/"
    ],
-   "note": "Restates a body sentence: Returned search text for this page said this (summary blends pages)."
+   "note": "Restates a body sentence: Returned search text for this page said this (summary blends pages). | second pass: supported"
   },
   {
    "where": "keyPoints[3]",
@@ -239,11 +198,11 @@
    "urls": [
     "https://www.cuh.nhs.uk/patient-information/back-pain/"
    ],
-   "note": "Restates a body sentence: Returned search text for this page said this (summary blends pages)."
+   "note": "Restates a body sentence: Returned search text for this page said this (summary blends pages). | second pass: supported"
   },
   {
    "where": "summary",
-   "sentence": "Most back pain settles with time and staying active helps, but numbness around the genitals or loss of bladder or bowel control needs A&E.",
+   "sentence": "Most back pain settles with time and staying active helps, but new numbness around the genitals or changes in bladder or bowel control need urgent help, and NHS leaflets point to A&E or NHS 111.",
    "basis": "excerpt",
    "urls": [],
    "note": "Compresses body sentences already in the ledger."

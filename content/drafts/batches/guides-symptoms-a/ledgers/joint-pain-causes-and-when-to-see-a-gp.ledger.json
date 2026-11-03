@@ -3,48 +3,21 @@
  "sentences": [
   {
    "where": "body[0]",
-   "sentence": "The NHS joint pain page links pain after intense exercise to a sprain or strain.",
-   "basis": "excerpt",
-   "urls": [
-    "https://www.nhs.uk/symptoms/joint-pain/"
-   ],
-   "note": "Returned search text for this page said this (summary blends pages)."
-  },
-  {
-   "where": "body[0]",
-   "sentence": "It links pain that is worse with walking, usually in people over 45, with osteoarthritis.",
-   "basis": "excerpt",
-   "urls": [
-    "https://www.nhs.uk/symptoms/joint-pain/"
-   ],
-   "note": "Returned search text for this page said this (summary blends pages)."
-  },
-  {
-   "where": "body[0]",
-   "sentence": "NHS 111 Wales describes osteoarthritis as the most common type of arthritis in the UK.",
-   "basis": "excerpt",
-   "urls": [
-    "https://111.wales.nhs.uk/encyclopaedia/o/article/osteoarthritis/"
-   ],
-   "note": "Returned search text for this page said this (summary blends pages)."
-  },
-  {
-   "where": "body[0]",
    "sentence": "Gout is a form of arthritis in which small crystals form inside and around the joints.",
    "basis": "excerpt",
    "urls": [
     "https://www.nhsinform.scot/illnesses-and-conditions/muscle-bone-and-joints/leg-and-foot-problems-and-conditions/gout/"
    ],
-   "note": "Returned search text for this page said this (summary blends pages)."
+   "note": "Returned search text for this page said this (summary blends pages). | second pass: supported"
   },
   {
    "where": "body[0]",
-   "sentence": "Rheumatoid arthritis is an autoimmune condition in which the immune system attacks the lining of the joints, usually in the hands, feet and wrists, with pain that is typically worse in the mornings or after inactivity.",
+   "sentence": "Rheumatoid arthritis is an autoimmune condition in which the immune system targets the joints, with stiffness that is often worse in the morning or after a period of inactivity.",
    "basis": "excerpt",
    "urls": [
-    "https://111.wales.nhs.uk/encyclopaedia/r/article/rheumatoidarthritis/"
+    "https://111.wales.nhs.uk/encyclopaedia/a/article/Rheumatoidarthritis/"
    ],
-   "note": "Returned search text for this page said this (summary blends pages)."
+   "note": "Edited after second pass: 111 Wales: RA is an autoimmune disease where the immune system targets the joints (synovium first affected); nhs.uk: stiffness often worse in the morning or after inactivity. 'Usually in hands, feet and wrists' not retrieved in this form."
   },
   {
    "where": "body[0]",
@@ -53,7 +26,7 @@
    "urls": [
     "https://www.nhs.uk/conditions/arthritis/"
    ],
-   "note": "Returned search text for this page said this (summary blends pages)."
+   "note": "Returned search text for this page said this (summary blends pages). | second pass: supported"
   },
   {
    "where": "body[0]",
@@ -62,16 +35,16 @@
    "urls": [
     "https://www.nhs.uk/conditions/arthritis/"
    ],
-   "note": "Returned search text for this page said this (summary blends pages)."
+   "note": "Returned search text for this page said this (summary blends pages). | second pass: supported"
   },
   {
    "where": "body[0]",
-   "sentence": "Psoriatic arthritis is a long-term condition that causes joint pain, swelling and stiffness, and the NHS says it affects about 1 in 4 people who have the skin condition psoriasis.",
+   "sentence": "Psoriatic arthritis causes joint pain, stiffness and swelling, and is linked with the skin condition psoriasis, which causes a red, scaly rash.",
    "basis": "excerpt",
    "urls": [
     "https://www.nhs.uk/conditions/psoriatic-arthritis/"
    ],
-   "note": "Returned search text for this page said this (summary blends pages)."
+   "note": "Edited after second pass: The 'about 1 in 4 people with psoriasis' figure came only from a Bradford hospital trust page; main NHS psoriatic arthritis page links it to psoriasis without a percentage. Sentence attributes it to the NHS."
   },
   {
    "where": "body[1]",
@@ -80,25 +53,25 @@
    "urls": [
     "https://www.nhs.uk/symptoms/joint-pain/"
    ],
-   "note": "Returned search text for this page said this (summary blends pages)."
+   "note": "Returned search text for this page said this (summary blends pages). | second pass: supported"
   },
   {
    "where": "body[1]",
-   "sentence": "Losing weight and eating a balanced diet also help.",
+   "sentence": "NHS 111 Wales says being overweight often makes osteoarthritis worse, because it puts extra strain on some joints.",
    "basis": "excerpt",
    "urls": [
-    "https://www.nhs.uk/symptoms/joint-pain/"
+    "https://111.wales.nhs.uk/osteoarthritis/"
    ],
-   "note": "Returned search text for this page said this (summary blends pages)."
+   "note": "Edited after second pass: No retrieved joint pain page text on weight loss or diet. 111 Wales osteoarthritis page: being overweight often makes osteoarthritis worse by straining joints."
   },
   {
    "where": "body[1]",
-   "sentence": "For osteoarthritis the NHS says treatment focuses on exercise, weight management, pain relief and supportive measures such as hot or cold packs.",
+   "sentence": "NHS 111 Wales describes exercise as one of the most important treatments for osteoarthritis, and says hot or cold packs can relieve symptoms in some people.",
    "basis": "excerpt",
    "urls": [
-    "https://www.nhs.uk/conditions/osteoarthritis/treatment/"
+    "https://111.wales.nhs.uk/osteoarthritis/"
    ],
-   "note": "Returned search text for this page said this (summary blends pages)."
+   "note": "Edited after second pass: Retrieved text is 111 Wales (not the nhs.uk treatment page): exercise is one of the most important treatments; hot or cold packs can relieve symptoms in some people; weight matters. Pain relief and 'treatment focuses on' not retrieved; 'the NHS says' mis-attributes."
   },
   {
    "where": "body[1]",
@@ -107,7 +80,7 @@
    "urls": [
     "https://111.wales.nhs.uk/encyclopaedia/o/article/osteoarthritis/"
    ],
-   "note": "Returned search text for this page said this (summary blends pages)."
+   "note": "Returned search text for this page said this (summary blends pages). | second pass: supported"
   },
   {
    "where": "body[2]",
@@ -116,7 +89,7 @@
    "urls": [
     "https://www.nhs.uk/symptoms/joint-pain/"
    ],
-   "note": "Returned search text for this page said this (summary blends pages)."
+   "note": "Returned search text for this page said this (summary blends pages). | second pass: supported"
   },
   {
    "where": "body[2]",
@@ -125,7 +98,7 @@
    "urls": [
     "https://www.nhs.uk/symptoms/joint-pain/"
    ],
-   "note": "Returned search text for this page said this (summary blends pages)."
+   "note": "Returned search text for this page said this (summary blends pages). | second pass: supported"
   },
   {
    "where": "body[2]",
@@ -134,7 +107,7 @@
    "urls": [
     "https://www.nhsinform.scot/illnesses-and-conditions/muscle-bone-and-joints/leg-and-foot-problems-and-conditions/gout/"
    ],
-   "note": "Returned search text for this page said this (summary blends pages)."
+   "note": "Returned search text for this page said this (summary blends pages). | second pass: supported"
   },
   {
    "where": "body[3]",
@@ -143,7 +116,7 @@
    "urls": [
     "https://www.nhs.uk/symptoms/joint-pain/"
    ],
-   "note": "Returned search text for this page said this (summary blends pages)."
+   "note": "Returned search text for this page said this (summary blends pages). | second pass: supported"
   },
   {
    "where": "body[3]",
@@ -152,7 +125,7 @@
    "urls": [
     "https://www.nhs.uk/symptoms/joint-pain/"
    ],
-   "note": "Returned search text for this page said this (summary blends pages)."
+   "note": "Returned search text for this page said this (summary blends pages). | second pass: supported"
   },
   {
    "where": "body[4]",
@@ -161,7 +134,7 @@
    "urls": [
     "https://www.nhs.uk/conditions/arthritis/"
    ],
-   "note": "Summary of GP-practice and NHS pages; attribution to nhs.uk arthritis page uncertain."
+   "note": "Summary of GP-practice and NHS pages; attribution to nhs.uk arthritis page uncertain. | second pass: supported"
   },
   {
    "where": "body[4]",
@@ -170,16 +143,16 @@
    "urls": [
     "https://www.nhs.uk/conditions/arthritis/"
    ],
-   "note": "As above."
+   "note": "As above. | second pass: supported"
   },
   {
    "where": "body[4]",
-   "sentence": "There is no single definitive test for rheumatoid arthritis, so diagnosis can be difficult.",
+   "sentence": "No blood test can definitively prove or rule out rheumatoid arthritis, although several tests can show signs of it.",
    "basis": "excerpt",
    "urls": [
-    "https://111.wales.nhs.uk/encyclopaedia/r/article/rheumatoidarthritis/"
+    "https://111.wales.nhs.uk/encyclopaedia/a/article/Rheumatoidarthritis/"
    ],
-   "note": "Returned search text for this page said this (summary blends pages)."
+   "note": "Edited after second pass: 111 Wales: no blood test can definitively prove or rule out RA, though several can show indications. 'So diagnosis can be difficult' not stated."
   },
   {
    "where": "body[4]",
@@ -188,54 +161,45 @@
    "urls": [
     "https://111.wales.nhs.uk/encyclopaedia/r/article/rheumatoidarthritis/"
    ],
-   "note": "Returned search text for this page said this (summary blends pages)."
+   "note": "Returned search text for this page said this (summary blends pages). | second pass: supported"
   },
   {
    "where": "body[4]",
    "sentence": "A rheumatologist is a doctor who specialises in conditions of the joints and immune system.",
    "basis": "textbook",
    "urls": [],
-   "note": "Plain textbook definition."
+   "note": "Plain textbook definition. | second pass: textbook"
   },
   {
    "where": "keyPoints[0]",
-   "sentence": "The NHS joint pain page links pain after intense exercise to a sprain or strain.",
-   "basis": "excerpt",
-   "urls": [
-    "https://www.nhs.uk/symptoms/joint-pain/"
-   ],
-   "note": "Restates a body sentence: Returned search text for this page said this (summary blends pages)."
-  },
-  {
-   "where": "keyPoints[1]",
    "sentence": "The NHS says to rest the joint but not stop moving it altogether, and that a pharmacist or GP can advise about painkillers.",
    "basis": "excerpt",
    "urls": [
     "https://www.nhs.uk/symptoms/joint-pain/"
    ],
-   "note": "Restates a body sentence: Returned search text for this page said this (summary blends pages)."
+   "note": "Restates a body sentence: Returned search text for this page said this (summary blends pages). | second pass: supported"
   },
   {
-   "where": "keyPoints[2]",
+   "where": "keyPoints[1]",
    "sentence": "The NHS suggests a GP appointment if joint pain stops normal activities or affects sleep, keeps getting worse or coming back, or has not improved after 2 weeks of treating it at home.",
    "basis": "excerpt",
    "urls": [
     "https://www.nhs.uk/symptoms/joint-pain/"
    ],
-   "note": "Restates a body sentence: Returned search text for this page said this (summary blends pages)."
+   "note": "Restates a body sentence: Returned search text for this page said this (summary blends pages). | second pass: supported"
   },
   {
-   "where": "keyPoints[3]",
+   "where": "keyPoints[2]",
    "sentence": "The NHS advises an urgent GP appointment or NHS 111 for severe pain and swelling in one joint that started suddenly.",
    "basis": "excerpt",
    "urls": [
     "https://www.nhs.uk/symptoms/joint-pain/"
    ],
-   "note": "Restates a body sentence: Returned search text for this page said this (summary blends pages)."
+   "note": "Restates a body sentence: Returned search text for this page said this (summary blends pages). | second pass: supported"
   },
   {
    "where": "summary",
-   "sentence": "Joint pain is often osteoarthritis, injury or gout, and a sudden hot, swollen joint with fever needs an urgent GP appointment or NHS 111.",
+   "sentence": "Joint pain has many causes, including osteoarthritis, injury and gout, and the NHS advises an urgent GP appointment or NHS 111 for a hot, swollen joint with a fever.",
    "basis": "excerpt",
    "urls": [],
    "note": "Compresses body sentences already in the ledger."

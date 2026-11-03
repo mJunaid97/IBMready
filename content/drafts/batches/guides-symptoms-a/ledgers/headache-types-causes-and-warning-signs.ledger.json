@@ -3,32 +3,39 @@
  "sentences": [
   {
    "where": "body[0]",
-   "sentence": "NHS inform describes tension-type headache as the most common kind.",
+   "sentence": "The NHS says the main symptom of a tension headache is pain on both sides of the head, face or neck, which lasts at least 30 minutes and can last much longer.",
    "basis": "excerpt",
    "urls": [
-    "https://www.nhsinform.scot/illnesses-and-conditions/brain-nerves-and-spinal-cord/headaches/"
+    "https://www.nhs.uk/conditions/tension-headaches/"
    ],
-   "note": "Returned search text for this page said this (summary blends pages)."
+   "note": "Re-retrieved after second pass: NHS tension headaches page text returned by a differently worded search."
   },
   {
    "where": "body[0]",
-   "sentence": "The NHS says tension headaches are not a sign of an underlying condition, and common triggers include stress, sleep problems and caffeine.",
+   "sentence": "NHS Cheshire and Merseyside describes tension-type headache as the most common headache, usually mild to moderately severe, with a pressing or tightening feel.",
    "basis": "excerpt",
    "urls": [
-    "https://www.nhs.uk/conditions/tension-headaches/",
-    "https://www.nhsinform.scot/illnesses-and-conditions/brain-nerves-and-spinal-cord/headaches/"
+    "https://www.cheshireandmerseyside.nhs.uk/your-health/helping-you-stay-well/self-care/headache/"
    ],
-   "note": "Summary: NHS says not a sign of an underlying condition; triggers stress, sleep problems, caffeine."
+   "note": "Re-retrieved after second pass."
   },
   {
    "where": "body[0]",
-   "sentence": "Migraine usually causes a moderate or severe throbbing pain, often on one side of the head.",
+   "sentence": "The NHS says stress is a common cause of tension headaches.",
    "basis": "excerpt",
    "urls": [
-    "https://www.nhs.uk/conditions/migraine/",
-    "https://www.nhsinform.scot/illnesses-and-conditions/brain-nerves-and-spinal-cord/migraine/"
+    "https://www.nhs.uk/conditions/tension-headaches/"
    ],
-   "note": "Returned search text for this page said this (summary blends pages)."
+   "note": "Re-retrieved after second pass."
+  },
+  {
+   "where": "body[0]",
+   "sentence": "The NHS describes migraine as a throbbing headache that can be severe, is often on one side of the head and can be worse when moving around.",
+   "basis": "excerpt",
+   "urls": [
+    "https://www.nhs.uk/conditions/migraine/"
+   ],
+   "note": "Re-retrieved after second pass (two searches agreed)."
   },
   {
    "where": "body[0]",
@@ -37,7 +44,7 @@
    "urls": [
     "https://www.nhs.uk/conditions/migraine/"
    ],
-   "note": "Returned search text for this page said this (summary blends pages)."
+   "note": "Re-retrieved after second pass (two searches agreed)."
   },
   {
    "where": "body[0]",
@@ -46,7 +53,7 @@
    "urls": [
     "https://www.nhs.uk/conditions/migraine/"
    ],
-   "note": "Returned search text for this page said this (summary blends pages)."
+   "note": "Returned search text for this page said this (summary blends pages). | second pass: supported"
   },
   {
    "where": "body[0]",
@@ -55,52 +62,43 @@
    "urls": [
     "https://www.nhsinform.scot/illnesses-and-conditions/brain-nerves-and-spinal-cord/migraine/"
    ],
-   "note": "Returned search text for this page said this (summary blends pages)."
+   "note": "Returned search text for this page said this (summary blends pages). | second pass: supported"
   },
   {
    "where": "body[0]",
-   "sentence": "Cluster headaches are rare, and each attack is intensely painful, affects one side of the head and can happen several times a day.",
+   "sentence": "NHS inform describes cluster headaches as rare, coming in bouts of short daily headaches that last a month or two, with pain usually around the eye.",
    "basis": "excerpt",
    "urls": [
     "https://www.nhsinform.scot/illnesses-and-conditions/brain-nerves-and-spinal-cord/headaches/"
    ],
-   "note": "Summary of NHS inform cluster headache text."
+   "note": "Edited after second pass: NHS inform describes cluster headaches as rare, in bouts of short daily headaches lasting a month or two, pain usually around the eye. 'Intensely painful', 'one side' and 'several times a day' not retrieved."
   },
   {
    "where": "body[1]",
-   "sentence": "Taking painkillers regularly can itself cause daily headaches, a problem called medication overuse headache.",
+   "sentence": "Great Ormond Street Hospital describes medication overuse headache as a headache that develops and gets worse with frequent use of medicines taken for pain.",
    "basis": "excerpt",
    "urls": [
-    "https://www.nhsinform.scot/illnesses-and-conditions/brain-nerves-and-spinal-cord/headaches/"
+    "https://www.gosh.nhs.uk/conditions-and-treatments/conditions-we-treat/medication-overuse-headache/"
    ],
-   "note": "Returned search text for this page said this (summary blends pages)."
+   "note": "Edited after second pass: Retrieved text for medication overuse headache came from Great Ormond Street Hospital (develops and gets worse with frequent use of pain medicines, more than 15 days a month), not shown from NHS inform; 'daily' overstates."
   },
   {
    "where": "body[1]",
-   "sentence": "NHS inform says it usually affects people who already have tension-type headaches or migraines.",
+   "sentence": "Great Ormond Street Hospital says medication overuse headache occurs in people who already have tension-type headache or migraine.",
    "basis": "excerpt",
    "urls": [
-    "https://www.nhsinform.scot/illnesses-and-conditions/brain-nerves-and-spinal-cord/headaches/"
+    "https://www.gosh.nhs.uk/conditions-and-treatments/conditions-we-treat/medication-overuse-headache/"
    ],
-   "note": "Returned search text for this page said this (summary blends pages)."
+   "note": "Edited after second pass: Only GOSH retrieved: occurs in people who have tension-type headache or migraine; not confirmed as NHS inform wording, and 'usually' not shown."
   },
   {
    "where": "body[1]",
-   "sentence": "Stopping the overused medicine usually helps, although the pain can get worse for a few days first.",
+   "sentence": "A Nottinghamshire NHS pathway says headache from overusing painkillers improves or resolves within 3 months of stopping them.",
    "basis": "excerpt",
    "urls": [
-    "https://www.nhsinform.scot/illnesses-and-conditions/brain-nerves-and-spinal-cord/headaches/"
+    "https://www.nottsapc.nhs.uk/media/wxchuyhn/gp-headache-pathway.pdf"
    ],
-   "note": "Returned search text for this page said this (summary blends pages)."
-  },
-  {
-   "where": "body[1]",
-   "sentence": "People who get headaches often and take painkillers regularly are advised to speak to a GP.",
-   "basis": "excerpt",
-   "urls": [
-    "https://www.nhsinform.scot/illnesses-and-conditions/brain-nerves-and-spinal-cord/headaches/"
-   ],
-   "note": "Returned search text for this page said this (summary blends pages)."
+   "note": "Edited after second pass: Retrieved: a Nottinghamshire NHS pathway says analgesic overuse headache improves or resolves within 3 months of stopping; other leaflets say worse for 2-10 days but URL not identified. NHS inform not shown."
   },
   {
    "where": "body[2]",
@@ -110,44 +108,43 @@
     "https://www.nhsinform.scot/illnesses-and-conditions/brain-nerves-and-spinal-cord/headaches/",
     "https://www.nhs.uk/conditions/migraine/"
    ],
-   "note": "Returned search text for this page said this (summary blends pages)."
+   "note": "Returned search text for this page said this (summary blends pages). | second pass: supported"
   },
   {
    "where": "body[2]",
-   "sentence": "Other reasons to call 999 include weakness on one side, slurred speech, trouble speaking or remembering, loss of vision, drowsiness, confusion, or a high temperature with a stiff neck or a rash that could mean meningitis.",
-   "basis": "excerpt",
-   "urls": [
-    "https://www.nhsinform.scot/illnesses-and-conditions/brain-nerves-and-spinal-cord/headaches/",
-    "https://www.nhs.uk/conditions/migraine/"
-   ],
-   "note": "Summary listed stroke-type signs, meningitis or sepsis signs, drowsiness, confusion, loss of vision."
-  },
-  {
-   "where": "body[3]",
-   "sentence": "NHS inform lists headaches that wake someone at night, that are there on waking, that keep getting worse, or that are set off by coughing, sneezing or bending as reasons for an urgent GP appointment or a call to NHS 111.",
+   "sentence": "NHS inform lists other reasons to call 999 or go to A&E, including signs of stroke such as weakness on one side or slurred speech, signs of meningitis or sepsis, and being drowsy or confused.",
    "basis": "excerpt",
    "urls": [
     "https://www.nhsinform.scot/illnesses-and-conditions/brain-nerves-and-spinal-cord/headaches/"
    ],
-   "note": "Summary [2-7]; page attribution to nhsinform headaches page uncertain."
+   "note": "Edited after second pass: Retrieved: stroke signs (weakness one side of face/body, slurred speech), meningitis or sepsis signs, reduced alertness/drowsiness/confusion. Stiff neck, rash, high temperature, trouble remembering not retrieved."
   },
   {
    "where": "body[3]",
-   "sentence": "A new headache in a person over 50, with a sore scalp or jaw pain when chewing, can signal inflamed arteries and also needs urgent attention.",
+   "sentence": "NHS inform lists a headache set off by coughing, sneezing, a change in posture or effort as a reason to contact the GP practice urgently, or phone NHS 111 if it is closed. A headache that wakes someone from sleep, or keeps getting worse despite treatment, is listed under contacting the GP practice.",
    "basis": "excerpt",
    "urls": [
     "https://www.nhsinform.scot/illnesses-and-conditions/brain-nerves-and-spinal-cord/headaches/"
    ],
-   "note": "Returned search text for this page said this (summary blends pages)."
+   "note": "Edited after second pass: NHS inform puts headache that wakes you from sleep or keeps getting worse despite treatment under contacting the GP practice (not urgent); only coughing/sneezing/posture/effort trigger is in the urgent tier (111 if practice closed). 'There on waking' and 'bending' not retrieved. Original merges tier"
   },
   {
    "where": "body[3]",
-   "sentence": "Headaches with vision changes, or with vomiting plus dizziness or weakness, also call for urgent review.",
+   "sentence": "NHS inform lists a sore scalp or jaw pain when chewing in someone over 50 as a reason to contact the GP practice urgently, or phone NHS 111 if it is closed.",
    "basis": "excerpt",
    "urls": [
     "https://www.nhsinform.scot/illnesses-and-conditions/brain-nerves-and-spinal-cord/headaches/"
    ],
-   "note": "Returned search text for this page said this (summary blends pages)."
+   "note": "Edited after second pass: NHS inform: sore scalp or jaw pain while chewing in someone over 50 is in the urgent GP tier (111 if closed). NHS cluster headache page links jaw pain on eating, sore scalp, blurred vision with temporal arteritis (urgent GP or 111). 'Inflamed arteries' not stated; 'new headache' only from a Nottingh"
+  },
+  {
+   "where": "body[3]",
+   "sentence": "NHS inform lists changes in vision, or a new or worsening headache with dizziness, vomiting or weakness, as reasons to contact the GP practice urgently, or phone NHS 111 if it is closed.",
+   "basis": "excerpt",
+   "urls": [
+    "https://www.nhsinform.scot/illnesses-and-conditions/brain-nerves-and-spinal-cord/headaches/"
+   ],
+   "note": "Edited after second pass: NHS inform: changes in vision, or new/worsening headache with dizziness, vomiting or weakness, are urgent-GP tier (111 if closed). Original omitted the route, so edited to name it."
   },
   {
    "where": "body[3]",
@@ -156,34 +153,25 @@
    "urls": [
     "https://www.bucksformulary.nhs.uk/docs/Guideline_194FM.pdf"
    ],
-   "note": "Returned search text for this page said this (summary blends pages)."
-  },
-  {
-   "where": "body[3]",
-   "sentence": "An NHS trust page lists tiredness, loss of appetite, weight loss, fever and headache, with tenderness over the temples, jaw or tongue pain when eating, and blurred vision, as its symptoms.",
-   "basis": "excerpt",
-   "urls": [
-    "https://www.royaldevon.nhs.uk/services/rheumatology-musculoskeletal-system-joints/conditions-we-treat/giant-cell-arteritis/"
-   ],
-   "note": "Returned search text for this page said this (summary blends pages)."
+   "note": "Returned search text for this page said this (summary blends pages). | second pass: supported"
   },
   {
    "where": "body[4]",
-   "sentence": "NHS pages describe triptans as a painkiller designed for migraine, which works by reversing the widening of blood vessels that is believed to be part of the migraine process.",
+   "sentence": "The NHS describes triptans as a painkiller made specifically for migraine, available as tablets, injections and nasal sprays.",
    "basis": "excerpt",
    "urls": [
     "https://www.nhs.uk/conditions/migraine/treatment/"
    ],
-   "note": "Returned search text for this page said this (summary blends pages)."
+   "note": "Edited after second pass: NHS migraine treatment: triptan is a painkiller made specifically for migraine, tablets, injections and nasal sprays. 'Reversing widening of blood vessels' not retrieved."
   },
   {
    "where": "body[4]",
-   "sentence": "If ordinary painkillers do not relieve migraine symptoms, the NHS advises making a GP appointment.",
+   "sentence": "NHS inform says a GP may recommend a triptan if over-the-counter medicines are not helping.",
    "basis": "excerpt",
    "urls": [
-    "https://www.nhs.uk/conditions/migraine/treatment/"
+    "https://www.nhsinform.scot/illnesses-and-conditions/brain-nerves-and-spinal-cord/migraine-treatment-and-prevention/"
    ],
-   "note": "Returned search text for this page said this (summary blends pages)."
+   "note": "Edited after second pass: The GP-appointment advice came from NHS inform (a GP may recommend a triptan if over-the-counter medicines are not helping), not the NHS England page, which said the painkiller dose may not be high enough. Original misattributes."
   },
   {
    "where": "body[4]",
@@ -192,54 +180,34 @@
    "urls": [
     "https://www.nhs.uk/conditions/migraine/treatment/"
    ],
-   "note": "Returned search text for this page said this (summary blends pages)."
+   "note": "Returned search text for this page said this (summary blends pages). | second pass: supported"
   },
   {
    "where": "body[4]",
-   "sentence": "An NHS-hosted leaflet advises against strong opioid painkillers such as codeine, tramadol and morphine for migraine because of the high risk of rebound headache.",
+   "sentence": "The NHS lists stress, tiredness, skipping meals and too much caffeine among common migraine triggers.",
    "basis": "excerpt",
    "urls": [
-    "http://yourhealth.leicestershospitals.nhs.uk/library/emergency-specialist-medicine/neurology/1535-managing-migraines/file"
-   ],
-   "note": "Returned search text for this page said this (summary blends pages)."
-  },
-  {
-   "where": "body[4]",
-   "sentence": "The NHS lists common migraine triggers as stress, tiredness, lack of sleep, dehydration, missing meals, regular alcohol or caffeine, and foods such as cheese or chocolate, and suggests keeping a record to spot personal triggers.",
-   "basis": "excerpt",
-   "urls": [
-    "https://www.nhs.uk/conditions/migraine/prevention/",
     "https://www.nhs.uk/conditions/migraine/"
    ],
-   "note": "Returned search text for this page said this (summary blends pages)."
+   "note": "Edited after second pass: NHS.uk lists stress, tiredness, skipping meals and too much caffeine; cheese is not in the NHS.uk list (NHS inform lists chocolate/cheese-type foods); dehydration, alcohol, lack of sleep and 'keep a record' for triggers not retrieved."
   },
   {
    "where": "body[5]",
-   "sentence": "The NHS advises seeing a GP for tension headaches that happen several times a week, are severe, or do not respond to painkillers and relaxation.",
+   "sentence": "The NHS says tension headaches can be treated with painkillers, but advises seeing a GP for several headaches a week or severe ones.",
    "basis": "excerpt",
    "urls": [
     "https://www.nhs.uk/conditions/tension-headaches/"
    ],
-   "note": "Returned search text for this page said this (summary blends pages)."
+   "note": "Edited after second pass: NHS tension headaches page: see a GP if you have several headaches a week or they're severe. 'Do not respond to painkillers and relaxation' not retrieved."
   },
   {
    "where": "body[5]",
-   "sentence": "These can be signs of a different type of headache, such as migraine or cluster headache.",
+   "sentence": "A GP may suggest keeping a migraine diary.",
    "basis": "excerpt",
    "urls": [
-    "https://www.nhs.uk/conditions/tension-headaches/"
+    "https://www.nhs.uk/conditions/migraine/diagnosis/"
    ],
-   "note": "Returned search text for this page said this (summary blends pages)."
-  },
-  {
-   "where": "body[5]",
-   "sentence": "A GP may suggest keeping a headache diary that records how often the headaches happen and how long they last.",
-   "basis": "excerpt",
-   "urls": [
-    "https://www.nhsinform.scot/illnesses-and-conditions/brain-nerves-and-spinal-cord/headaches/",
-    "https://www.nhs.uk/conditions/migraine/"
-   ],
-   "note": "Summary: NHS says a GP may suggest a headache diary."
+   "note": "Edited after second pass: NHS: a GP may suggest keeping a migraine diary. 'How often and how long' not retrieved."
   },
   {
    "where": "body[5]",
@@ -248,66 +216,57 @@
    "urls": [
     "https://www.nhs.uk/conditions/migraine/"
    ],
-   "note": "Returned search text for this page said this (summary blends pages)."
+   "note": "Returned search text for this page said this (summary blends pages). | second pass: supported"
   },
   {
    "where": "body[5]",
-   "sentence": "Simple painkillers, rest and fluids are the first step for most headaches.",
-   "basis": "excerpt",
-   "urls": [
-    "https://www.nhsinform.scot/illnesses-and-conditions/brain-nerves-and-spinal-cord/headaches/"
-   ],
-   "note": "Returned search text for this page said this (summary blends pages)."
-  },
-  {
-   "where": "body[5]",
-   "sentence": "If painkillers and exercise do not help, a person may be referred to a specialist, and a medicine called amitriptyline may be offered to help prevent tension headaches.",
+   "sentence": "The NHS says an antidepressant medicine called amitriptyline is sometimes recommended to help prevent tension headaches.",
    "basis": "excerpt",
    "urls": [
     "https://www.nhs.uk/conditions/tension-headaches/"
    ],
-   "note": "Returned search text for this page said this (summary blends pages)."
+   "note": "Edited after second pass: NHS tension page: amitriptyline sometimes recommended to help prevent tension headaches; usually taken for several months before it works. Referral to a specialist not retrieved."
   },
   {
    "where": "keyPoints[0]",
-   "sentence": "NHS inform describes tension-type headache as the most common kind.",
+   "sentence": "The NHS says the main symptom of a tension headache is pain on both sides of the head, face or neck, which lasts at least 30 minutes and can last much longer.",
    "basis": "excerpt",
    "urls": [
-    "https://www.nhsinform.scot/illnesses-and-conditions/brain-nerves-and-spinal-cord/headaches/"
+    "https://www.nhs.uk/conditions/tension-headaches/"
    ],
-   "note": "Restates a body sentence: Returned search text for this page said this (summary blends pages)."
+   "note": "Restates a body sentence: Re-retrieved after second pass: NHS tension headaches page text returned by a differently worded search."
   },
   {
    "where": "keyPoints[1]",
+   "sentence": "The NHS describes migraine as a throbbing headache that can be severe, is often on one side of the head and can be worse when moving around.",
+   "basis": "excerpt",
+   "urls": [
+    "https://www.nhs.uk/conditions/migraine/"
+   ],
+   "note": "Restates a body sentence: Re-retrieved after second pass (two searches agreed)."
+  },
+  {
+   "where": "keyPoints[2]",
    "sentence": "The NHS says to call 999 or go to A&E for a headache that comes on suddenly and is extremely painful, or one that follows a serious head injury.",
    "basis": "excerpt",
    "urls": [
     "https://www.nhsinform.scot/illnesses-and-conditions/brain-nerves-and-spinal-cord/headaches/",
     "https://www.nhs.uk/conditions/migraine/"
    ],
-   "note": "Restates a body sentence: Returned search text for this page said this (summary blends pages)."
-  },
-  {
-   "where": "keyPoints[2]",
-   "sentence": "NHS inform lists headaches that wake someone at night, that are there on waking, that keep getting worse, or that are set off by coughing, sneezing or bending as reasons for an urgent GP appointment or a call to NHS 111.",
-   "basis": "excerpt",
-   "urls": [
-    "https://www.nhsinform.scot/illnesses-and-conditions/brain-nerves-and-spinal-cord/headaches/"
-   ],
-   "note": "Restates a body sentence: Summary [2-7]; page attribution to nhsinform headaches page uncertain."
+   "note": "Restates a body sentence: Returned search text for this page said this (summary blends pages). | second pass: supported"
   },
   {
    "where": "keyPoints[3]",
-   "sentence": "Taking painkillers regularly can itself cause daily headaches, a problem called medication overuse headache.",
+   "sentence": "Great Ormond Street Hospital describes medication overuse headache as a headache that develops and gets worse with frequent use of medicines taken for pain.",
    "basis": "excerpt",
    "urls": [
-    "https://www.nhsinform.scot/illnesses-and-conditions/brain-nerves-and-spinal-cord/headaches/"
+    "https://www.gosh.nhs.uk/conditions-and-treatments/conditions-we-treat/medication-overuse-headache/"
    ],
-   "note": "Restates a body sentence: Returned search text for this page said this (summary blends pages)."
+   "note": "Restates a body sentence: Edited after second pass: Retrieved text for medication overuse headache came from Great Ormond Street Hospital (develops and gets worse with frequent use of pain medicines, more than 15 days a month), not shown from NHS inform; 'daily' overstates."
   },
   {
    "where": "summary",
-   "sentence": "Most headaches are tension-type headaches or migraines, but a sudden, extremely painful headache needs a 999 call.",
+   "sentence": "Tension-type headache is the most common type, and a headache that starts suddenly and is very severe needs a 999 call.",
    "basis": "excerpt",
    "urls": [],
    "note": "Compresses body sentences already in the ledger."

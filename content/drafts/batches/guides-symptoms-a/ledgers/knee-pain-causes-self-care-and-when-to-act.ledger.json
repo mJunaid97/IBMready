@@ -3,39 +3,30 @@
  "sentences": [
   {
    "where": "body[0]",
-   "sentence": "The NHS knee pain page lists sprains and strains, tendonitis, torn ligaments, damage to the meniscus or cartilage, a dislocated kneecap, osteoarthritis, bursitis, gout and Osgood-Schlatter disease.",
+   "sentence": "The NHS knee pain page lists causes including sprains and strains, tendonitis, torn ligaments, tendons or meniscus, a dislocated kneecap, bursitis, gout and Osgood-Schlatter's disease.",
    "basis": "excerpt",
    "urls": [
     "https://www.nhs.uk/symptoms/knee-pain/"
    ],
-   "note": "Returned search text for this page said this (summary blends pages)."
+   "note": "Edited after second pass: Search text for the NHS page lists sprains/strains, tendonitis, torn ligaments, tendons or meniscus, dislocated kneecap, bursitis, gout (with septic arthritis in same row), Osgood-Schlatter's. Osteoarthritis and 'cartilage' not seen in retrieved text."
   },
   {
    "where": "body[0]",
-   "sentence": "Overuse or injury often causes sudden knee pain.",
+   "sentence": "The NHS knee pain page links sprains and strains to overstretching, overusing or twisting the knee, often during exercise.",
    "basis": "excerpt",
    "urls": [
     "https://www.nhs.uk/symptoms/knee-pain/"
    ],
-   "note": "Returned search text for this page said this (summary blends pages)."
+   "note": "Edited after second pass: Retrieved text links sprains/strains to overstretching, overusing or twisting, often during exercise; no 'often causes sudden knee pain' statement seen."
   },
   {
    "where": "body[0]",
-   "sentence": "An NHS trust leaflet describes osteoarthritis as cartilage gradually worn away with age or after injury, mainly at the points of greatest pressure.",
+   "sentence": "An NHS trust leaflet lists pain, stiffness after rest and swelling as symptoms of osteoarthritis.",
    "basis": "excerpt",
    "urls": [
     "https://www.newcastle-hospitals.nhs.uk/services/newcastle-occupational-health-service/information-for-staff/physiotherapy/self-help-leaflets/osteoarthritis-oa-hip-and-knee/"
    ],
-   "note": "Returned search text for this page said this (summary blends pages)."
-  },
-  {
-   "where": "body[0]",
-   "sentence": "It can cause pain, stiffness, loss of movement, swelling and deformity.",
-   "basis": "excerpt",
-   "urls": [
-    "https://www.newcastle-hospitals.nhs.uk/services/newcastle-occupational-health-service/information-for-staff/physiotherapy/self-help-leaflets/osteoarthritis-oa-hip-and-knee/"
-   ],
-   "note": "Returned search text for this page said this (summary blends pages)."
+   "note": "Edited after second pass: Newcastle leaflet text retrieved lists pain, stiffness after rest and swelling; loss of movement and deformity not seen."
   },
   {
    "where": "body[0]",
@@ -44,61 +35,43 @@
    "urls": [
     "https://www.nhsinform.scot/illnesses-and-conditions/muscle-bone-and-joints/leg-and-foot-problems-and-conditions/osteoarthritis-of-the-knee/"
    ],
-   "note": "Summary of knee osteoarthritis results (NHS inform page first)."
+   "note": "Summary of knee osteoarthritis results (NHS inform page first). | second pass: supported"
   },
   {
    "where": "body[0]",
-   "sentence": "Imaging and symptoms do not always match, because many people with signs of osteoarthritis on an X-ray have very mild symptoms or none.",
+   "sentence": "An NHS trust page says changes seen on an X-ray do not necessarily match how bad the symptoms are.",
+   "basis": "excerpt",
+   "urls": [
+    "https://www.rjah.nhs.uk/our-services/therapy/supported-self-care/knee-osteoarthritis/"
+   ],
+   "note": "Edited after second pass: NHS inform not shown saying this. An RJAH NHS trust page says over half of people over 65 show changes on X-ray but this does not necessarily correlate with symptoms; 'very mild or none' overstated; attribution wrong."
+  },
+  {
+   "where": "body[0]",
+   "sentence": "NHS inform says strengthening the muscles around the knee helps manage osteoarthritis symptoms.",
    "basis": "excerpt",
    "urls": [
     "https://www.nhsinform.scot/illnesses-and-conditions/muscle-bone-and-joints/leg-and-foot-problems-and-conditions/osteoarthritis-of-the-knee/"
    ],
-   "note": "As above."
-  },
-  {
-   "where": "body[0]",
-   "sentence": "NHS sources say that strengthening the thigh muscles is commonly recommended for knee osteoarthritis, and that exercise does not speed up the arthritis.",
-   "basis": "excerpt",
-   "urls": [
-    "https://www.nhsinform.scot/illnesses-and-conditions/muscle-bone-and-joints/leg-and-foot-problems-and-conditions/osteoarthritis-of-the-knee/"
-   ],
-   "note": "As above."
+   "note": "Edited after second pass: NHS inform: strengthening muscles around the knee helps manage symptoms. Thigh strengthening comes from Leeds and Royal Berkshire trust leaflets. 'Exercise does not speed up the arthritis' not found."
   },
   {
    "where": "body[1]",
-   "sentence": "The NHS describes reducing weight on the knee, using a cold pack wrapped in a tea towel for up to 20 minutes every 2 to 3 hours, and taking paracetamol or ibuprofen for the pain.",
+   "sentence": "The NHS says knee pain can often be treated at home by reducing weight on the knee, using an ice pack and taking painkillers such as paracetamol or ibuprofen.",
    "basis": "excerpt",
    "urls": [
     "https://www.nhs.uk/symptoms/knee-pain/"
    ],
-   "note": "Returned search text for this page said this (summary blends pages)."
-  },
-  {
-   "where": "body[1]",
-   "sentence": "Staying gently active is also advised.",
-   "basis": "excerpt",
-   "urls": [
-    "https://www.nhs.uk/symptoms/knee-pain/"
-   ],
-   "note": "Returned search text for this page said this (summary blends pages)."
-  },
-  {
-   "where": "body[1]",
-   "sentence": "An NHS trust says keeping active and gradually returning to usual activities helps recovery.",
-   "basis": "excerpt",
-   "urls": [
-    "https://www.uhcw.nhs.uk/self-care/knee/"
-   ],
-   "note": "Returned search text for this page said this (summary blends pages)."
+   "note": "Edited after second pass: Main NHS advice: reduce weight on knee, ice pack, painkillers. The tea-towel, 20 minutes every 2 to 3 hours detail came from the NHS 111 Wales page, not nhs.uk, and other trusts give different timings; paracetamol/ibuprofen listed as standard options."
   },
   {
    "where": "body[2]",
-   "sentence": "The NHS advises a GP visit if knee pain does not improve within a few weeks.",
+   "sentence": "Hampshire and Isle of Wight NHS guidance suggests seeing a GP if knee pain has not eased within a few weeks.",
    "basis": "excerpt",
    "urls": [
-    "https://www.nhs.uk/symptoms/knee-pain/"
+    "https://hiowhealthcare.nhs.uk/msk/self-help/knee"
    ],
-   "note": "Returned search text for this page said this (summary blends pages)."
+   "note": "Edited after second pass: Not confirmed as nhs.uk text; retrieved wording came from Hampshire and Isle of Wight NHS guidance (GP visit suggested if not eased within a few weeks). Attribution changed."
   },
   {
    "where": "body[2]",
@@ -107,7 +80,7 @@
    "urls": [
     "https://www.nhs.uk/symptoms/knee-pain/"
    ],
-   "note": "Returned search text for this page said this (summary blends pages)."
+   "note": "Returned search text for this page said this (summary blends pages). | second pass: supported"
   },
   {
    "where": "body[2]",
@@ -116,25 +89,16 @@
    "urls": [
     "https://www.sfh-tr.nhs.uk/media/jznjci51/pil202510-05-akpct-anterior-knee-pain-causes-and-treatments.pdf"
    ],
-   "note": "Returned search text for this page said this (summary blends pages)."
+   "note": "Returned search text for this page said this (summary blends pages). | second pass: supported"
   },
   {
    "where": "body[2]",
-   "sentence": "Management of knee osteoarthritis includes exercise programmes, pain relief and footwear advice, according to an NHS trust.",
+   "sentence": "An NHS trust leaflet on hip and knee osteoarthritis describes regular exercise, over-the-counter pain relief and losing a small amount of body fat.",
    "basis": "excerpt",
    "urls": [
     "https://www.newcastle-hospitals.nhs.uk/services/newcastle-occupational-health-service/information-for-staff/physiotherapy/self-help-leaflets/osteoarthritis-oa-hip-and-knee/"
    ],
-   "note": "Returned search text for this page said this (summary blends pages)."
-  },
-  {
-   "where": "body[2]",
-   "sentence": "A guide from another trust mentions an MRI scan if a ligament or meniscus tear could be the cause.",
-   "basis": "excerpt",
-   "urls": [
-    "https://leedscommunityhealthcare.nhs.uk/our-services-a-z/musculoskeletal-msk/knee-problems/new-and-undiagnosed-knee-problems/"
-   ],
-   "note": "Returned search text for this page said this (summary blends pages)."
+   "note": "Edited after second pass: Newcastle leaflet text retrieved covers regular exercise, paracetamol/NSAIDs and losing a small amount of body fat; footwear not seen there."
   },
   {
    "where": "body[3]",
@@ -143,43 +107,34 @@
    "urls": [
     "https://www.nhs.uk/symptoms/knee-pain/"
    ],
-   "note": "Returned search text for this page said this (summary blends pages)."
-  },
-  {
-   "where": "body[3]",
-   "sentence": "An NHS trust A&E leaflet advises attending A&E after a high-impact injury with immediate swelling, a pop, severe pain or inability to put weight on the leg, or for a knee or leg that looks deformed.",
-   "basis": "excerpt",
-   "urls": [
-    "https://www.uhsussex.nhs.uk/resources/knee-pain-emergency-department-leaflet/"
-   ],
-   "note": "Summary: one NHS trust advises A&E for high-impact injury ... another lists deformed knee; blended; page attribution uncertain."
+   "note": "Returned search text for this page said this (summary blends pages). | second pass: supported"
   },
   {
    "where": "keyPoints[0]",
-   "sentence": "The NHS knee pain page lists sprains and strains, tendonitis, torn ligaments, damage to the meniscus or cartilage, a dislocated kneecap, osteoarthritis, bursitis, gout and Osgood-Schlatter disease.",
+   "sentence": "The NHS knee pain page lists causes including sprains and strains, tendonitis, torn ligaments, tendons or meniscus, a dislocated kneecap, bursitis, gout and Osgood-Schlatter's disease.",
    "basis": "excerpt",
    "urls": [
     "https://www.nhs.uk/symptoms/knee-pain/"
    ],
-   "note": "Restates a body sentence: Returned search text for this page said this (summary blends pages)."
+   "note": "Restates a body sentence: Edited after second pass: Search text for the NHS page lists sprains/strains, tendonitis, torn ligaments, tendons or meniscus, dislocated kneecap, bursitis, gout (with septic arthritis in same row), Osgood-Schlatter's. Osteoarthritis and 'cartilage' not seen in retrieved text."
   },
   {
    "where": "keyPoints[1]",
-   "sentence": "The NHS describes reducing weight on the knee, using a cold pack wrapped in a tea towel for up to 20 minutes every 2 to 3 hours, and taking paracetamol or ibuprofen for the pain.",
+   "sentence": "The NHS says knee pain can often be treated at home by reducing weight on the knee, using an ice pack and taking painkillers such as paracetamol or ibuprofen.",
    "basis": "excerpt",
    "urls": [
     "https://www.nhs.uk/symptoms/knee-pain/"
    ],
-   "note": "Restates a body sentence: Returned search text for this page said this (summary blends pages)."
+   "note": "Restates a body sentence: Edited after second pass: Main NHS advice: reduce weight on knee, ice pack, painkillers. The tea-towel, 20 minutes every 2 to 3 hours detail came from the NHS 111 Wales page, not nhs.uk, and other trusts give different timings; paracetamol/ibuprofen listed as standard options."
   },
   {
    "where": "keyPoints[2]",
-   "sentence": "The NHS advises a GP visit if knee pain does not improve within a few weeks.",
+   "sentence": "Hampshire and Isle of Wight NHS guidance suggests seeing a GP if knee pain has not eased within a few weeks.",
    "basis": "excerpt",
    "urls": [
-    "https://www.nhs.uk/symptoms/knee-pain/"
+    "https://hiowhealthcare.nhs.uk/msk/self-help/knee"
    ],
-   "note": "Restates a body sentence: Returned search text for this page said this (summary blends pages)."
+   "note": "Restates a body sentence: Edited after second pass: Not confirmed as nhs.uk text; retrieved wording came from Hampshire and Isle of Wight NHS guidance (GP visit suggested if not eased within a few weeks). Attribution changed."
   },
   {
    "where": "keyPoints[3]",
@@ -188,11 +143,11 @@
    "urls": [
     "https://www.nhs.uk/symptoms/knee-pain/"
    ],
-   "note": "Restates a body sentence: Returned search text for this page said this (summary blends pages)."
+   "note": "Restates a body sentence: Returned search text for this page said this (summary blends pages). | second pass: supported"
   },
   {
    "where": "summary",
-   "sentence": "Most knee pain settles with gentle activity, and a GP visit is advised if it does not improve, while a badly swollen or hot, red knee needs NHS 111.",
+   "sentence": "Knee pain can often be treated at home, and NHS 111 is the route for a badly swollen knee or a hot, red knee with a high temperature.",
    "basis": "excerpt",
    "urls": [],
    "note": "Compresses body sentences already in the ledger."

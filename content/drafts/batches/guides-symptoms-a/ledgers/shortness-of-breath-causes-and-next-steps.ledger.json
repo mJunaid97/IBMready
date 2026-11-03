@@ -8,35 +8,34 @@
    "urls": [
     "https://www.nhsinform.scot/illnesses-and-conditions/lungs-and-airways/shortness-of-breath/"
    ],
-   "note": "Returned search text for this page said this (summary blends pages)."
+   "note": "Returned search text for this page said this (summary blends pages). | second pass: supported"
   },
   {
    "where": "body[0]",
-   "sentence": "Less common sudden causes include a severe allergic reaction, a collapsed lung and a blood clot in the lung.",
+   "sentence": "NHS inform also lists a severe allergic reaction, a collapsed lung and a blood clot in the lung as possible causes of sudden breathlessness.",
    "basis": "excerpt",
    "urls": [
     "https://www.nhsinform.scot/illnesses-and-conditions/lungs-and-airways/shortness-of-breath/"
    ],
-   "note": "Returned search text for this page said this (summary blends pages)."
+   "note": "Edited after second pass: NHS inform lists allergic reaction, pneumothorax and pulmonary embolism, but retrieved text does not call them 'less common'."
   },
   {
    "where": "body[0]",
-   "sentence": "A collapsed lung, or pneumothorax, is a partial collapse caused by a small tear in the lung surface, and a pulmonary embolism is a blockage in one of the blood vessels in the lung.",
+   "sentence": "A collapsed lung, or pneumothorax, is a partial collapse of the lung caused by a small tear in the lung surface.",
+   "basis": "excerpt",
+   "urls": [
+    "https://www.nhsinform.scot/illnesses-and-conditions/lungs-and-airways/shortness-of-breath/"
+   ],
+   "note": "Edited after second pass: NHS inform text: pneumothorax is partial collapse of the lung caused by a small tear in the lung surface. No retrieved text defined pulmonary embolism as a blockage in a lung blood vessel (only 'blood clot in the lung'). Attribution to nhs.uk not shown."
+  },
+  {
+   "where": "body[0]",
+   "sentence": "The NHS lists several possible causes of breathlessness, including COPD, scarring of the lungs, heart failure, asthma, chest infections and being overweight.",
    "basis": "excerpt",
    "urls": [
     "https://www.nhs.uk/symptoms/shortness-of-breath/"
    ],
-   "note": "Returned search text for this page said this (summary blends pages)."
-  },
-  {
-   "where": "body[0]",
-   "sentence": "Breathlessness that lasts a long time is commonly linked to obesity, being unfit, poorly controlled asthma, chronic obstructive pulmonary disease (COPD), anaemia, heart failure and heart rhythm problems.",
-   "basis": "excerpt",
-   "urls": [
-    "https://www.nhs.uk/symptoms/shortness-of-breath/",
-    "https://www.nhsinform.scot/illnesses-and-conditions/lungs-and-airways/shortness-of-breath/"
-   ],
-   "note": "Returned search text for this page said this (summary blends pages)."
+   "note": "Edited after second pass: Retrieved NHS text lists COPD, idiopathic pulmonary fibrosis, heart failure, lung cancer, asthma, chest infection, being overweight and smoking. Being unfit, anaemia and heart rhythm problems were not retrieved; 'commonly' not supported."
   },
   {
    "where": "body[0]",
@@ -45,35 +44,16 @@
    "urls": [
     "https://www.nhs.uk/symptoms/shortness-of-breath/"
    ],
-   "note": "Returned search text for this page said this (summary blends pages)."
-  },
-  {
-   "where": "body[0]",
-   "sentence": "A panic attack or anxiety can make a person breathe fast or deeply, which is called hyperventilating.",
-   "basis": "excerpt",
-   "urls": [
-    "https://www.nhs.uk/symptoms/shortness-of-breath/"
-   ],
-   "note": "Returned search text for this page said this (summary blends pages)."
+   "note": "Returned search text for this page said this (summary blends pages). | second pass: supported"
   },
   {
    "where": "body[1]",
-   "sentence": "Sudden breathlessness could be an asthma attack, in which the airways narrow and make extra sticky mucus, causing wheeze and cough.",
+   "sentence": "Sudden breathlessness could be an asthma attack, which makes it difficult to move air in and out of the airways.",
    "basis": "excerpt",
    "urls": [
-    "https://www.nhsinform.scot/illnesses-and-conditions/lungs-and-airways/shortness-of-breath/",
-    "https://www.nhs.uk/symptoms/shortness-of-breath/"
+    "https://www.nhsinform.scot/illnesses-and-conditions/lungs-and-airways/shortness-of-breath/"
    ],
-   "note": "Returned search text for this page said this (summary blends pages)."
-  },
-  {
-   "where": "body[1]",
-   "sentence": "Typical COPD symptoms include increasing breathlessness when active, a persistent cough with phlegm and frequent chest infections.",
-   "basis": "excerpt",
-   "urls": [
-    "https://www.nhs.uk/symptoms/shortness-of-breath/"
-   ],
-   "note": "COPD symptom list from the retrieved summary; the individual COPD page was not returned."
+   "note": "Edited after second pass: NHS inform: sudden breathlessness could be an asthma attack, difficult to move air in and out of airways. Narrowing, sticky mucus, wheeze and cough not found in retrieved text."
   },
   {
    "where": "body[1]",
@@ -82,7 +62,7 @@
    "urls": [
     "https://www.nhs.uk/conditions/heart-failure/symptoms/"
    ],
-   "note": "Returned search text for this page said this (summary blends pages)."
+   "note": "Returned search text for this page said this (summary blends pages). | second pass: supported"
   },
   {
    "where": "body[1]",
@@ -91,16 +71,16 @@
    "urls": [
     "https://www.nhs.uk/conditions/heart-failure/symptoms/"
    ],
-   "note": "Returned search text for this page said this (summary blends pages)."
+   "note": "Returned search text for this page said this (summary blends pages). | second pass: supported"
   },
   {
    "where": "body[1]",
-   "sentence": "An NHS trust leaflet says the most common symptom of a pulmonary embolism is breathlessness, with other symptoms including chest pain that is worse on breathing or coughing, cough, fever and coughing up blood.",
+   "sentence": "An NHS trust leaflet says the most common symptom of a pulmonary embolism is breathlessness, with chest pain that is worse on breathing or coughing, and it also lists cough and fever.",
    "basis": "excerpt",
    "urls": [
     "https://www.nth.nhs.uk/resources/pulmonary-embolism/"
    ],
-   "note": "Returned search text for this page said this (summary blends pages)."
+   "note": "Edited after second pass: North Tees leaflet: breathlessness most common; chest pain worse on breathing or coughing; fever alongside cough. Coughing up blood came from a different trust leaflet (Royal Berkshire), not confirmed for this one."
   },
   {
    "where": "body[2]",
@@ -109,25 +89,25 @@
    "urls": [
     "https://www.nhsinform.scot/illnesses-and-conditions/lungs-and-airways/shortness-of-breath/"
    ],
-   "note": "Returned search text for this page said this (summary blends pages)."
+   "note": "Returned search text for this page said this (summary blends pages). | second pass: supported"
   },
   {
    "where": "body[2]",
-   "sentence": "Chest tightness, or pain that spreads to the arms, back, neck or jaw, is also a reason to call 999.",
+   "sentence": "The NHS says chest tightness or heaviness, or pain that spreads to the arms, back, neck or jaw, is also a reason to call 999 or go to A&E.",
    "basis": "excerpt",
    "urls": [
-    "https://www.nhsinform.scot/illnesses-and-conditions/lungs-and-airways/shortness-of-breath/"
+    "https://www.nhs.uk/symptoms/shortness-of-breath/"
    ],
-   "note": "Returned search text for this page said this (summary blends pages)."
+   "note": "Edited after second pass: Chest tightness / pain to arms, back, neck, jaw as 999 reasons were found on the NHS (England) page and NHS 111 Wales, not confirmed on NHS inform. Wrong publisher."
   },
   {
    "where": "body[2]",
-   "sentence": "A GP practice page adds sudden confusion, or lips or skin turning pale, blue or grey, to the signs that need an emergency response.",
+   "sentence": "The NHS adds sudden confusion, or lips or skin turning pale, blue or grey, to the signs for calling 999 or going to A&E.",
    "basis": "excerpt",
    "urls": [
-    "https://conwaymedicalcentre.nhs.uk/conditions/shortness-of-breath/"
+    "https://www.nhs.uk/symptoms/shortness-of-breath/"
    ],
-   "note": "Summary attributed to Conwy Medical Centre page."
+   "note": "Edited after second pass: Sudden confusion and pale, blue or grey lips or skin as 999/A&E signs are on the NHS shortness of breath page and NHS 111 Wales; Conwy practice page not returned, so attribution to a GP practice page is unverified."
   },
   {
    "where": "body[2]",
@@ -136,68 +116,68 @@
    "urls": [
     "https://111.wales.nhs.uk/encyclopaedia/s/article/shortnessofbreath"
    ],
-   "note": "Returned search text for this page said this (summary blends pages)."
+   "note": "Returned search text for this page said this (summary blends pages). | second pass: supported"
   },
   {
    "where": "body[3]",
-   "sentence": "The NHS advises contacting NHS 111 or the GP urgently for worsening breathlessness, feeling sick, coughing up blood, or pain or swelling in one leg.",
+   "sentence": "The NHS says to contact NHS 111 for difficulty breathing, feeling or being sick, coughing up blood, or pain or swelling in one leg.",
    "basis": "excerpt",
    "urls": [
     "https://www.nhs.uk/symptoms/shortness-of-breath/"
    ],
-   "note": "Returned search text for this page said this (summary blends pages)."
+   "note": "Edited after second pass: Retrieved NHS text sends these symptoms (difficulty breathing, feeling or being sick, coughing up blood, pain or swelling in one leg) to NHS 111; 'or the GP' and 'worsening breathlessness' were not in that list. Changes route to care."
   },
   {
    "where": "body[3]",
-   "sentence": "NHS inform says breathlessness that starts suddenly should be seen urgently by a GP because it may point to a problem with the airways or heart.",
+   "sentence": "NHS inform advises contacting the GP practice if breathlessness is new or unexplained.",
    "basis": "excerpt",
    "urls": [
     "https://www.nhsinform.scot/illnesses-and-conditions/lungs-and-airways/shortness-of-breath/"
    ],
-   "note": "Returned search text for this page said this (summary blends pages)."
+   "note": "Edited after second pass: NHS inform: contact GP practice if breathlessness is new or unexplained. 'Urgently' and the 'airways or heart' reasoning not found for sudden breathlessness."
   },
   {
    "where": "body[3]",
-   "sentence": "For breathlessness that comes on slowly, NHS inform advises seeing a GP if it has lasted more than a month, gets worse with activity or lying down, or comes with swollen ankles.",
-   "basis": "excerpt",
-   "urls": [
-    "https://www.nhsinform.scot/illnesses-and-conditions/lungs-and-airways/shortness-of-breath/"
-   ],
-   "note": "Returned search text for this page said this (summary blends pages)."
-  },
-  {
-   "where": "body[4]",
-   "sentence": "A GP will usually ask when the breathlessness started, what brings it on and whether lying down makes it worse.",
+   "sentence": "The NHS advises seeing a GP if breathlessness has lasted longer than a month, gets worse with normal activity or when lying down, or comes with swollen ankles.",
    "basis": "excerpt",
    "urls": [
     "https://www.nhs.uk/symptoms/shortness-of-breath/"
    ],
-   "note": "Returned search text for this page said this (summary blends pages)."
+   "note": "Edited after second pass: Summary of NHS page: see a GP if breathlessness lasts longer than a month, worsens with activity or lying down, or comes with swollen ankles. Attributed to NHS inform in the draft, but found on the NHS page."
   },
   {
    "where": "body[4]",
-   "sentence": "An NHS England pathway for persistent breathlessness lists blood tests, an ECG, a chest X-ray and spirometry among the first tests.",
+   "sentence": "NHS inform's guidance asks whether breathlessness came on suddenly or slowly and whether anything triggered it, such as exercise.",
+   "basis": "excerpt",
+   "urls": [
+    "https://www.nhsinform.scot/illnesses-and-conditions/lungs-and-airways/shortness-of-breath/"
+   ],
+   "note": "Edited after second pass: Not found as a GP-questions list. NHS inform asks whether it came on suddenly or slowly and whether anything triggered it such as exercise."
+  },
+  {
+   "where": "body[4]",
+   "sentence": "An NHS England pathway for persistent breathlessness lists an ECG, a chest X-ray and spirometry among the first-line tests.",
    "basis": "excerpt",
    "urls": [
     "https://www.england.nhs.uk/long-read/adult-breathlessness-pathway-pre-diagnosis-diagnostic-pathway-support-tool/"
    ],
-   "note": "Returned search text for this page said this (summary blends pages)."
+   "note": "Edited after second pass: NHS England tool (chronic breathlessness, over 8 weeks) lists ECG, chest X-ray and spirometry as first-line; blood tests not confirmed for this tool (NT-proBNP was in a different regional pathway)."
   },
   {
    "where": "body[4]",
    "sentence": "Spirometry is a breathing test that measures how much air a person can blow out and how fast.",
    "basis": "textbook",
    "urls": [],
-   "note": "Plain textbook definition."
+   "note": "Plain textbook definition. | second pass: textbook"
   },
   {
    "where": "body[4]",
-   "sentence": "If the cause is still unclear, the same pathway lists further tests such as a CT scan of the chest, an echocardiogram and ambulatory ECG monitoring.",
+   "sentence": "The same pathway says an ECG showing atrial fibrillation with breathlessness should prompt a heart specialist assessment, including an echocardiogram.",
    "basis": "excerpt",
    "urls": [
     "https://www.england.nhs.uk/long-read/adult-breathlessness-pathway-pre-diagnosis-diagnostic-pathway-support-tool/"
    ],
-   "note": "Returned search text for this page said this (summary blends pages)."
+   "note": "Edited after second pass: Retrieved text: ECG showing atrial fibrillation prompts cardiology assessment including echocardiography; further investigation planned at a multidisciplinary meeting. CT scan and ambulatory ECG monitoring not confirmed."
   },
   {
    "where": "body[5]",
@@ -206,7 +186,7 @@
    "urls": [
     "https://www.nhs.uk/symptoms/shortness-of-breath/"
    ],
-   "note": "Returned search text for this page said this (summary blends pages)."
+   "note": "Returned search text for this page said this (summary blends pages). | second pass: supported"
   },
   {
    "where": "body[5]",
@@ -215,7 +195,7 @@
    "urls": [
     "https://www.nhs.uk/symptoms/shortness-of-breath/"
    ],
-   "note": "Returned search text for this page said this (summary blends pages)."
+   "note": "Returned search text for this page said this (summary blends pages). | second pass: supported"
   },
   {
    "where": "body[5]",
@@ -224,7 +204,7 @@
    "urls": [
     "https://www.nhs.uk/symptoms/shortness-of-breath/"
    ],
-   "note": "Returned search text for this page said this (summary blends pages)."
+   "note": "Returned search text for this page said this (summary blends pages). | second pass: supported"
   },
   {
    "where": "body[5]",
@@ -233,16 +213,16 @@
    "urls": [
     "https://www.nhs.uk/symptoms/shortness-of-breath/"
    ],
-   "note": "Returned search text for this page said this (summary blends pages)."
+   "note": "Returned search text for this page said this (summary blends pages). | second pass: supported"
   },
   {
    "where": "body[5]",
-   "sentence": "One NHS leaflet describes relaxed breathing and pursed-lip breathing as techniques that can help a person regain control of their breathing.",
+   "sentence": "NHS leaflets describe pursed-lip breathing as a technique that can help keep the airways open for longer and reduce the work of breathing, for example in COPD.",
    "basis": "excerpt",
    "urls": [
     "https://www.ouh.nhs.uk/media/bw1kxbkp/109662breathlessness.pdf"
    ],
-   "note": "Returned search text for this page said this (summary blends pages)."
+   "note": "Edited after second pass: OUH leaflet text: pursed-lip breathing helps keep airways open longer and reduces work of breathing (useful in COPD). Relaxed breathing not confirmed."
   },
   {
    "where": "keyPoints[0]",
@@ -251,17 +231,16 @@
    "urls": [
     "https://www.nhsinform.scot/illnesses-and-conditions/lungs-and-airways/shortness-of-breath/"
    ],
-   "note": "Restates a body sentence: Returned search text for this page said this (summary blends pages)."
+   "note": "Restates a body sentence: Returned search text for this page said this (summary blends pages). | second pass: supported"
   },
   {
    "where": "keyPoints[1]",
-   "sentence": "Sudden breathlessness could be an asthma attack, in which the airways narrow and make extra sticky mucus, causing wheeze and cough.",
+   "sentence": "Sudden breathlessness could be an asthma attack, which makes it difficult to move air in and out of the airways.",
    "basis": "excerpt",
    "urls": [
-    "https://www.nhsinform.scot/illnesses-and-conditions/lungs-and-airways/shortness-of-breath/",
-    "https://www.nhs.uk/symptoms/shortness-of-breath/"
+    "https://www.nhsinform.scot/illnesses-and-conditions/lungs-and-airways/shortness-of-breath/"
    ],
-   "note": "Restates a body sentence: Returned search text for this page said this (summary blends pages)."
+   "note": "Restates a body sentence: Edited after second pass: NHS inform: sudden breathlessness could be an asthma attack, difficult to move air in and out of airways. Narrowing, sticky mucus, wheeze and cough not found in retrieved text."
   },
   {
    "where": "keyPoints[2]",
@@ -270,20 +249,20 @@
    "urls": [
     "https://www.nhsinform.scot/illnesses-and-conditions/lungs-and-airways/shortness-of-breath/"
    ],
-   "note": "Restates a body sentence: Returned search text for this page said this (summary blends pages)."
+   "note": "Restates a body sentence: Returned search text for this page said this (summary blends pages). | second pass: supported"
   },
   {
    "where": "keyPoints[3]",
-   "sentence": "The NHS advises contacting NHS 111 or the GP urgently for worsening breathlessness, feeling sick, coughing up blood, or pain or swelling in one leg.",
+   "sentence": "The NHS says to contact NHS 111 for difficulty breathing, feeling or being sick, coughing up blood, or pain or swelling in one leg.",
    "basis": "excerpt",
    "urls": [
     "https://www.nhs.uk/symptoms/shortness-of-breath/"
    ],
-   "note": "Restates a body sentence: Returned search text for this page said this (summary blends pages)."
+   "note": "Restates a body sentence: Edited after second pass: Retrieved NHS text sends these symptoms (difficulty breathing, feeling or being sick, coughing up blood, pain or swelling in one leg) to NHS 111; 'or the GP' and 'worsening breathlessness' were not in that list. Changes route to care."
   },
   {
    "where": "summary",
-   "sentence": "Breathlessness has many causes, from asthma and anxiety to heart and lung disease, and severe difficulty breathing needs a 999 call.",
+   "sentence": "Breathlessness has many causes, from asthma and infections to heart and lung disease, and severe difficulty breathing needs a 999 call.",
    "basis": "excerpt",
    "urls": [],
    "note": "Compresses body sentences already in the ledger."

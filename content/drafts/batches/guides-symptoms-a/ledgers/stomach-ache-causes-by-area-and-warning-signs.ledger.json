@@ -8,16 +8,16 @@
    "urls": [
     "https://www.nhs.uk/symptoms/stomach-ache/"
    ],
-   "note": "Returned search text for this page said this (summary blends pages)."
+   "note": "Returned search text for this page said this (summary blends pages). | second pass: supported"
   },
   {
    "where": "body[0]",
-   "sentence": "Period pain and endometriosis are listed as causes of pain in the lower tummy in women.",
+   "sentence": "The NHS links intense pain around the time of a period, sometimes with pain during or after sex and when pooing, with endometriosis.",
    "basis": "excerpt",
    "urls": [
     "https://www.nhs.uk/symptoms/stomach-ache/"
    ],
-   "note": "Summary 'lower abdomen (women)' from nhs.uk stomach ache; page attribution not exact."
+   "note": "Edited after second pass: Retrieved text links intense pain around the time of a period (with possible pain during/after sex and when pooing) to endometriosis. Plain 'period pain' as a listed cause, and 'lower tummy in women', were not seen."
   },
   {
    "where": "body[1]",
@@ -26,16 +26,16 @@
    "urls": [
     "https://www.nhs.uk/symptoms/stomach-ache/"
    ],
-   "note": "Returned search text for this page said this (summary blends pages)."
+   "note": "Returned search text for this page said this (summary blends pages). | second pass: supported"
   },
   {
    "where": "body[1]",
-   "sentence": "It links severe pain that lasts up to 8 hours in the centre of the tummy, or just under the ribs on the right, with gallstones.",
+   "sentence": "NHS 111 Wales links severe pain that lasts for hours in the upper centre of the tummy, or just under the ribs on the right, with gallstones.",
    "basis": "excerpt",
    "urls": [
-    "https://www.nhs.uk/symptoms/stomach-ache/"
+    "https://111.wales.nhs.uk/Stomachacheandabdominalpain/"
    ],
-   "note": "Returned search text for this page said this (summary blends pages)."
+   "note": "Edited after second pass: NHS 111 Wales lists gallstones for severe pain lasting hours in the upper centre of the tummy or under the right ribs. nhs.uk gallstones says pain usually lasts 1 to 5 hours; 8 hours is a GP-contact threshold, not a duration of the pain. Attribution to the NHS stomach ache page not confirmed."
   },
   {
    "where": "body[1]",
@@ -44,16 +44,16 @@
    "urls": [
     "https://www.nhs.uk/symptoms/stomach-ache/"
    ],
-   "note": "Returned search text for this page said this (summary blends pages)."
+   "note": "Returned search text for this page said this (summary blends pages). | second pass: supported"
   },
   {
    "where": "body[1]",
-   "sentence": "NHS inform describes appendicitis as painful swelling of the appendix, and says the pain of IBS is often relieved by going to the toilet.",
+   "sentence": "NHS inform describes appendicitis as painful swelling of the appendix, and says the pain and cramping of IBS may be relieved by going to the toilet.",
    "basis": "excerpt",
    "urls": [
     "https://www.nhsinform.scot/illnesses-and-conditions/stomach-liver-and-gastrointestinal-tract/stomach-ache-and-abdominal-pain/"
    ],
-   "note": "Returned search text for this page said this (summary blends pages)."
+   "note": "Edited after second pass: NHS inform: appendicitis is painful swelling of the appendix (supported). For IBS it says pain and cramping 'may be relieved by moving your bowels'; 'often' overstates."
   },
   {
    "where": "body[1]",
@@ -62,7 +62,7 @@
    "urls": [
     "https://www.nhs.uk/conditions/stomach-ulcer/"
    ],
-   "note": "Returned search text for this page said this (summary blends pages)."
+   "note": "Returned search text for this page said this (summary blends pages). | second pass: supported"
   },
   {
    "where": "body[1]",
@@ -71,23 +71,23 @@
    "urls": [
     "https://www.nhs.uk/conditions/gastritis/"
    ],
-   "note": "Returned search text for this page said this (summary blends pages)."
+   "note": "Returned search text for this page said this (summary blends pages). | second pass: supported"
   },
   {
    "where": "body[1]",
    "sentence": "Gastritis is inflammation of the lining of the stomach.",
    "basis": "textbook",
    "urls": [],
-   "note": "Plain textbook definition."
+   "note": "Plain textbook definition. | second pass: supported"
   },
   {
    "where": "body[1]",
-   "sentence": "Acute pancreatitis causes severe pain that develops suddenly in the centre of the tummy, and the NHS says its most common causes are gallstones and drinking a lot of alcohol.",
+   "sentence": "Acute pancreatitis causes severe pain around the top of the tummy that develops suddenly, and gallstones and alcohol are its most common causes.",
    "basis": "excerpt",
    "urls": [
-    "https://www.nhs.uk/conditions/acute-pancreatitis/symptoms/"
+    "https://www.nhs.uk/conditions/acute-pancreatitis/"
    ],
-   "note": "Summary: severe pain developing suddenly in the centre; common causes gallstones or alcohol (acute pancreatitis pages)."
+   "note": "Edited after second pass: NHS: severe dull pain around the top of the stomach that develops suddenly (upper abdomen), not the centre generally; gallstones about half and alcohol about a quarter of cases."
   },
   {
    "where": "body[2]",
@@ -96,7 +96,7 @@
    "urls": [
     "https://111.wales.nhs.uk/Appendicitis/"
    ],
-   "note": "Returned search text for this page said this (summary blends pages)."
+   "note": "Returned search text for this page said this (summary blends pages). | second pass: supported"
   },
   {
    "where": "body[2]",
@@ -105,43 +105,34 @@
    "urls": [
     "https://111.wales.nhs.uk/Appendicitis/"
    ],
-   "note": "Returned search text for this page said this (summary blends pages)."
+   "note": "Returned search text for this page said this (summary blends pages). | second pass: supported"
   },
   {
    "where": "body[2]",
-   "sentence": "A hospital trust page says gallstones do not always cause symptoms, but can lead to pain after eating, inflammation of the gallbladder, pancreatitis or jaundice.",
+   "sentence": "Many people with gallstones have no symptoms, but a stone can cause pain, jaundice or pancreatitis.",
    "basis": "excerpt",
    "urls": [
-    "https://www.cht.nhs.uk/services/clinical-services/surgical-same-day-emergency-care-ssdec/common-surgical-diagnoses"
+    "https://www.nhs.uk/conditions/gallstones/"
    ],
-   "note": "Returned search text for this page said this (summary blends pages)."
+   "note": "Edited after second pass: The Chesterfield (cht.nhs.uk) page did not come back. NHS gallstones results say most people with gallstones never get symptoms, and a stone can cause pain, jaundice (blocked bile duct) or pancreatitis (blocked pancreatic duct)."
   },
   {
    "where": "body[2]",
-   "sentence": "The NHS says diverticular disease causes pain in the lower left side of the tummy that often gets worse after eating and eases after passing wind or stool, with constipation, diarrhoea, bloating or blood in the stool.",
+   "sentence": "NHS inform says diverticulitis, the inflamed form of diverticular disease, tends to cause more severe tummy pain, especially on the left side, and a fever.",
    "basis": "excerpt",
    "urls": [
-    "https://www.nhs.uk/conditions/diverticular-disease-and-diverticulitis/"
+    "https://www.nhsinform.scot/illnesses-and-conditions/stomach-liver-and-gastrointestinal-tract/diverticular-disease-and-diverticulitis/"
    ],
-   "note": "Returned search text for this page said this (summary blends pages)."
+   "note": "Edited after second pass: Retrieved: lower left-sided pain; NHS inform says diverticulitis is more serious, with more severe pain especially on the left, fever of 38C or above, diarrhoea. Worse after eating / eases after wind or stool and the symptom list were not seen; nhs.uk page itself did not return."
   },
   {
    "where": "body[2]",
-   "sentence": "It adds that the symptoms are similar to those of other conditions such as IBS.",
+   "sentence": "NHS 111 Wales advises urgent help from a GP or NHS 111 for blood or mucus in the stool, pain that gets worse or does not go away, or a high temperature or shivers.",
    "basis": "excerpt",
    "urls": [
-    "https://www.nhs.uk/conditions/diverticular-disease-and-diverticulitis/"
+    "https://111.wales.nhs.uk/diverticulardiseaseanddiverticulitis/"
    ],
-   "note": "Returned search text for this page said this (summary blends pages)."
-  },
-  {
-   "where": "body[2]",
-   "sentence": "For diverticular disease the NHS advises an urgent GP appointment or NHS 111 for blood in the stool, worsening or persistent tummy pain, or a fever, and says to call 999 or go to A&E for severe tummy pain with vomiting, a swollen tummy, being unable to pass stool or wind, or signs of sepsis.",
-   "basis": "excerpt",
-   "urls": [
-    "https://www.nhs.uk/conditions/diverticular-disease-and-diverticulitis/"
-   ],
-   "note": "Returned search text for this page said this (summary blends pages)."
+   "note": "Edited after second pass: Only NHS 111 Wales text retrieved: urgent GP or 111 for blood or mucus in stool, pain that worsens or will not go away, high temperature or shivers, persistent vomiting. The 999/A&E list in the sentence was not confirmed; snippets cut off before it. Route to care and publisher not matched."
   },
   {
    "where": "body[3]",
@@ -150,34 +141,34 @@
    "urls": [
     "https://www.nhs.uk/symptoms/stomach-ache/"
    ],
-   "note": "Returned search text for this page said this (summary blends pages)."
+   "note": "Returned search text for this page said this (summary blends pages). | second pass: supported"
   },
   {
    "where": "body[3]",
-   "sentence": "Other reasons are vomiting blood or vomit that looks green or like ground coffee, a lot of blood from the bottom or black, sticky poo, being unable to pee at all, being unable to poo or fart at all, a rash that does not fade when pressed, or struggling to breathe.",
+   "sentence": "Other reasons on the NHS page include struggling to breathe, confusion, and blue, grey, pale or blotchy skin, lips or tongue.",
    "basis": "excerpt",
    "urls": [
     "https://www.nhs.uk/symptoms/stomach-ache/"
    ],
-   "note": "Returned search text for this page said this (summary blends pages)."
+   "note": "Edited after second pass: Stomach ache page retrieval confirmed: confusion, difficulty breathing, blue/grey/pale/blotchy skin, lips or tongue. Bright red or coffee-ground vomit and blood/black sticky poo appear on the stomach ulcer page, not confirmed for the stomach ache page. Green vomit, unable to pee, unable to poo or fa"
   },
   {
    "where": "body[3]",
-   "sentence": "NHS inform adds chest pain, and pain that hurts when the stomach is touched, to the reasons to call 999.",
+   "sentence": "NHS inform adds chest pain and difficulty breathing to the reasons to call 999.",
    "basis": "excerpt",
    "urls": [
     "https://www.nhsinform.scot/illnesses-and-conditions/stomach-liver-and-gastrointestinal-tract/stomach-ache-and-abdominal-pain/"
    ],
-   "note": "Returned search text for this page said this (summary blends pages)."
+   "note": "Edited after second pass: NHS inform: call 999 for stomach ache that came on very suddenly or is severe, plus chest pain and difficulty breathing. Pain on touching the stomach not seen."
   },
   {
    "where": "body[3]",
-   "sentence": "For acute pancreatitis, the NHS says to call 999 or go to A&E if the pain spreads to the back, or if there is a fast heartbeat or difficulty breathing.",
+   "sentence": "For acute pancreatitis, the NHS says to call 999 or go to A&E for sudden, severe tummy pain together with any of: pain spreading to the back, bloating that does not go away, a fast heartbeat or difficulty breathing.",
    "basis": "excerpt",
    "urls": [
-    "https://www.nhs.uk/conditions/acute-pancreatitis/symptoms/"
+    "https://www.nhs.uk/conditions/acute-pancreatitis/"
    ],
-   "note": "Summary attributed this to acute pancreatitis pages."
+   "note": "Edited after second pass: NHS: call 999 or go to A&E if you have sudden, severe tummy pain AND any of: pain spreading to the back, bloating that will not go away, fast heartbeat or difficulty breathing, bluish/bruised skin around the belly button, waist or upper outer thigh. The sentence drops the sudden-severe condition and"
   },
   {
    "where": "body[4]",
@@ -186,16 +177,7 @@
    "urls": [
     "https://www.nhs.uk/symptoms/stomach-ache/"
    ],
-   "note": "Returned search text for this page said this (summary blends pages)."
-  },
-  {
-   "where": "body[4]",
-   "sentence": "It advises a GP appointment for pain, bloating or indigestion that does not go away or keeps coming back, for a lump in the tummy, or for losing weight without trying.",
-   "basis": "excerpt",
-   "urls": [
-    "https://www.nhs.uk/symptoms/stomach-ache/"
-   ],
-   "note": "Returned search text for this page said this (summary blends pages)."
+   "note": "Returned search text for this page said this (summary blends pages). | second pass: supported"
   },
   {
    "where": "body[5]",
@@ -206,7 +188,7 @@
     "https://www.nhs.uk/conditions/stomach-ulcer/",
     "https://www.nhs.uk/conditions/gastritis/"
    ],
-   "note": "Summary: treatment depends on the cause (general across pages)."
+   "note": "Summary: treatment depends on the cause (general across pages). | second pass: supported"
   },
   {
    "where": "body[5]",
@@ -215,7 +197,7 @@
    "urls": [
     "https://www.nhs.uk/conditions/gastritis/"
    ],
-   "note": "Returned search text for this page said this (summary blends pages)."
+   "note": "Returned search text for this page said this (summary blends pages). | second pass: supported"
   },
   {
    "where": "body[5]",
@@ -224,16 +206,7 @@
    "urls": [
     "https://www.nhs.uk/conditions/stomach-ulcer/"
    ],
-   "note": "Returned search text for this page said this (summary blends pages)."
-  },
-  {
-   "where": "body[5]",
-   "sentence": "Gastroenteritis often has no specific treatment, and the illness has to run its course.",
-   "basis": "excerpt",
-   "urls": [
-    "https://www.nhsinform.scot/illnesses-and-conditions/stomach-liver-and-gastrointestinal-tract/gastroenteritis-in-adults/"
-   ],
-   "note": "Returned search text for this page said this (summary blends pages)."
+   "note": "Returned search text for this page said this (summary blends pages). | second pass: supported"
   },
   {
    "where": "keyPoints[0]",
@@ -242,7 +215,7 @@
    "urls": [
     "https://www.nhs.uk/symptoms/stomach-ache/"
    ],
-   "note": "Restates a body sentence: Returned search text for this page said this (summary blends pages)."
+   "note": "Restates a body sentence: Returned search text for this page said this (summary blends pages). | second pass: supported"
   },
   {
    "where": "keyPoints[1]",
@@ -251,7 +224,7 @@
    "urls": [
     "https://www.nhs.uk/symptoms/stomach-ache/"
    ],
-   "note": "Restates a body sentence: Returned search text for this page said this (summary blends pages)."
+   "note": "Restates a body sentence: Returned search text for this page said this (summary blends pages). | second pass: supported"
   },
   {
    "where": "keyPoints[2]",
@@ -260,7 +233,7 @@
    "urls": [
     "https://www.nhs.uk/symptoms/stomach-ache/"
    ],
-   "note": "Restates a body sentence: Returned search text for this page said this (summary blends pages)."
+   "note": "Restates a body sentence: Returned search text for this page said this (summary blends pages). | second pass: supported"
   },
   {
    "where": "keyPoints[3]",
@@ -269,7 +242,7 @@
    "urls": [
     "https://www.nhs.uk/symptoms/stomach-ache/"
    ],
-   "note": "Restates a body sentence: Returned search text for this page said this (summary blends pages)."
+   "note": "Restates a body sentence: Returned search text for this page said this (summary blends pages). | second pass: supported"
   },
   {
    "where": "summary",
