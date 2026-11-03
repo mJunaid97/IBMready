@@ -1,0 +1,978 @@
+{
+ "id": "conjunctivitis",
+ "searchesUsed": 11,
+ "counts": {
+  "supported": 62,
+  "textbook": 1,
+  "unsupported": 44,
+  "wrong": 0,
+  "unsafe": 0,
+  "unchecked": 0
+ },
+ "claims": [
+  {
+   "id": "c01",
+   "classification": "supported",
+   "where": "definition",
+   "sentence": "Inflammation of the conjunctiva, the thin clear membrane that covers the white of the eye and the inside of the eyelids.",
+   "evidence": "MedlinePlus: clear tissue over white of eye and inside eyelids; \"thin\" and \"membrane\" not retrieved, reworded",
+   "url": "https://medlineplus.gov/ency/article/001010.htm",
+   "action": "edited"
+  },
+  {
+   "id": "c02",
+   "classification": "supported",
+   "where": "overview",
+   "sentence": "Conjunctivitis, often called pink eye, is inflammation of the conjunctiva, the thin clear tissue that covers the white of the eye and lines the eyelids.",
+   "evidence": "MedlinePlus pink eye / conjunctiva description; wording aligned to it",
+   "url": "https://medlineplus.gov/ency/article/001010.htm",
+   "action": "edited"
+  },
+  {
+   "id": "c03",
+   "classification": "unsupported",
+   "where": "overview",
+   "sentence": "It is a common condition that leaves the surface of the eye red and sore, and often sticky or watery.",
+   "evidence": "\"common\" and \"sore\" not in retrieved text; kept red, gritty, sticky, watery (NHS, Moorfields)",
+   "url": "https://www.nhs.uk/conditions/conjunctivitis/",
+   "action": "edited"
+  },
+  {
+   "id": "c04",
+   "classification": "unsupported",
+   "where": "overview",
+   "sentence": "The NHS describes three kinds: bacterial, viral and allergic.",
+   "evidence": "NHS summary says infection or allergy; NHS inform lists infection, allergy, irritant; \"NHS describes bacterial, viral, allergic\" not stated. Reworded to NHS inform",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/eyes/conjunctivitis/",
+   "action": "edited"
+  },
+  {
+   "id": "c05",
+   "classification": "unsupported",
+   "where": "overview",
+   "sentence": "Most cases get better on their own, and most people do not need antibiotics even when bacteria are the cause.",
+   "evidence": "NHS: usually better within a couple of weeks without treatment; NICE MIB46: antibiotics not needed for most patients. \"Even when bacteria are the cause\" not stated",
+   "url": "https://www.nice.org.uk/advice/mib46/resources/adenoplus-pointofcare-test-for-diagnosing-adenoviral-conjunctivitis-pdf-63499169420485",
+   "action": "edited"
+  },
+  {
+   "id": "c06",
+   "classification": "unsupported",
+   "where": "diagnosis",
+   "sentence": "The sources describe the types mainly by how the eye looks and by the pattern of symptoms.",
+   "evidence": "No source says types are described mainly by appearance (inferred)",
+   "url": null,
+   "action": "removed"
+  },
+  {
+   "id": "c07",
+   "classification": "supported",
+   "where": "diagnosis",
+   "sentence": "Viral conjunctivitis tends to cause a watery red eye, while bacterial conjunctivitis is more likely to cause a sticky yellow discharge.",
+   "evidence": "Moorfields: viral watery red eye; bacterial sticky yellow discharge",
+   "url": "https://www.moorfields.nhs.uk/eye-conditions/conjunctivitis",
+   "action": "kept"
+  },
+  {
+   "id": "c08",
+   "classification": "supported",
+   "where": "diagnosis",
+   "sentence": "NICE has published a briefing on a point-of-care test for diagnosing adenoviral conjunctivitis.",
+   "evidence": "NICE MIB46 title and content on AdenoPlus test",
+   "url": "https://www.nice.org.uk/advice/mib46/resources/adenoplus-pointofcare-test-for-diagnosing-adenoviral-conjunctivitis-pdf-63499169420485",
+   "action": "kept"
+  },
+  {
+   "id": "c09",
+   "classification": "supported",
+   "where": "treatment",
+   "sentence": "Most cases get better on their own.",
+   "evidence": "NHS and Moorfields: most clear up on their own",
+   "url": "https://www.nhs.uk/conditions/conjunctivitis/",
+   "action": "kept"
+  },
+  {
+   "id": "c10",
+   "classification": "unsupported",
+   "where": "treatment",
+   "sentence": "Home care includes cleaning crusts from the eyelids with cooled boiled water, using a cold compress and avoiding contact lenses until the eyes are better.",
+   "evidence": "\"Cooled boiled water\" not retrieved; NHS: clean water; Moorfields: warm flannel; NHS 111 Wales/Moorfields: cool compress; Moorfields: no contact lenses",
+   "url": "https://www.moorfields.nhs.uk/eye-conditions/conjunctivitis/diagnosis-and-treatment",
+   "action": "edited"
+  },
+  {
+   "id": "c11",
+   "classification": "supported",
+   "where": "treatment",
+   "sentence": "Antibiotics are not effective against viral or allergic conjunctivitis, and antihistamines can ease allergic symptoms.",
+   "evidence": "NHS inform: antibiotics will not work for virus or allergy; antihistamines for allergic",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/eyes/conjunctivitis/",
+   "action": "kept"
+  },
+  {
+   "id": "c12",
+   "classification": "supported",
+   "where": "treatment",
+   "sentence": "A pharmacist can advise on eye drops or antihistamines.",
+   "evidence": "NHS and NHS inform: pharmacist can suggest eye drops or antihistamines",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/eyes/conjunctivitis/",
+   "action": "kept"
+  },
+  {
+   "id": "c13",
+   "classification": "unsupported",
+   "where": "prevention",
+   "sentence": "Frequent handwashing and proper disposal of tissues are advised for viral conjunctivitis.",
+   "evidence": "Handwashing/tissue disposal from Moorfields not retrieved; NHS and UKHSA: avoid rubbing eyes, wash hands often, no sharing towels/pillows",
+   "url": "https://www.gov.uk/government/publications/health-protection-in-schools-and-other-childcare-facilities/managing-specific-infectious-diseases-a-to-z",
+   "action": "edited"
+  },
+  {
+   "id": "c14",
+   "classification": "unsupported",
+   "where": "prevention",
+   "sentence": "Towels, pillows, eye drops and make-up are not shared until the discharge has cleared.",
+   "evidence": "Sharing eye drops/make-up until discharge clears not retrieved",
+   "url": null,
+   "action": "removed"
+  },
+  {
+   "id": "c15",
+   "classification": "supported",
+   "where": "seekCare",
+   "sentence": "NHS 111 or a GP the same day is the route for eye pain, sensitivity to light, changes in vision or a very red eye, which the NHS says can be signs of a more serious eye problem.",
+   "evidence": "NHS: eye pain, light sensitivity, vision changes (wavy lines, flashing), very red eye: urgent GP appointment or NHS 111; may be more serious eye problem",
+   "url": "https://www.nhs.uk/conditions/conjunctivitis/",
+   "action": "edited"
+  },
+  {
+   "id": "c16",
+   "classification": "supported",
+   "where": "seekCare",
+   "sentence": "Moorfields advises contacting Moorfields Direct or going to a local A&E if vision becomes more blurred, eye pain becomes noticeable or blisters or spots appear on the eyelids.",
+   "evidence": "Moorfields infective leaflet: Moorfields Direct or A&E for blurred vision, eye pain, blisters/spots on lids",
+   "url": "https://www.moorfields.nhs.uk/eye-conditions/conjunctivitis",
+   "action": "kept"
+  },
+  {
+   "id": "c17",
+   "classification": "supported",
+   "where": "seekCare",
+   "sentence": "A newborn baby with a red or sticky eye needs to be seen urgently, through NHS 111 or the GP the same day.",
+   "evidence": "NHS: baby under 30 days with red sticky eyes needs urgent appointment (route named as urgent GP; NHS 111 out of hours)",
+   "url": "https://www.nhs.uk/conditions/conjunctivitis/",
+   "action": "edited"
+  },
+  {
+   "id": "c18",
+   "classification": "supported",
+   "where": "seekCare",
+   "sentence": "A routine GP appointment is the usual route if symptoms have not cleared within about a week.",
+   "evidence": "NHS: see GP if not cleared within 7 days",
+   "url": "https://www.nhs.uk/conditions/conjunctivitis/",
+   "action": "edited"
+  },
+  {
+   "id": "c19",
+   "classification": "supported",
+   "where": "causes[0]",
+   "sentence": "Viruses, usually those behind colds and flu (viral conjunctivitis)",
+   "evidence": "NICE: viral infection most common cause of infective conjunctivitis; \"colds and flu\" not retrieved",
+   "url": "https://www.nice.org.uk/advice/mib46/resources/adenoplus-pointofcare-test-for-diagnosing-adenoviral-conjunctivitis-pdf-63499169420485",
+   "action": "edited"
+  },
+  {
+   "id": "c20",
+   "classification": "supported",
+   "where": "causes[1]",
+   "sentence": "Bacteria (bacterial conjunctivitis)",
+   "evidence": "NHS and MedlinePlus: bacteria a usual cause",
+   "url": "https://medlineplus.gov/ency/article/001010.htm",
+   "action": "kept"
+  },
+  {
+   "id": "c21",
+   "classification": "unsupported",
+   "where": "causes[2]",
+   "sentence": "An allergic reaction to things such as dust, grass or pollen (allergic conjunctivitis), often linked to hay fever",
+   "evidence": "\"Dust, grass, pollen\" and hay fever link not retrieved; MedlinePlus allergic: pollen, dust mites, pet dander, mould",
+   "url": "https://medlineplus.gov/ency/article/001031.htm",
+   "action": "edited"
+  },
+  {
+   "id": "c22",
+   "classification": "unsupported",
+   "where": "causes[3]",
+   "sentence": "Chlamydia infection, which the NHS says may lead to referral to a sexual health clinic",
+   "evidence": "Referral to sexual health clinic not retrieved; NHS: some STIs can cause conjunctivitis, takes longer to get better",
+   "url": "https://www.nhs.uk/conditions/conjunctivitis/",
+   "action": "edited"
+  },
+  {
+   "id": "c23",
+   "classification": "unsupported",
+   "where": "riskFactors[0]",
+   "sentence": "Hay fever, for allergic conjunctivitis",
+   "evidence": "Hay fever as risk factor not retrieved",
+   "url": null,
+   "action": "removed"
+  },
+  {
+   "id": "c24",
+   "classification": "supported",
+   "where": "riskFactors[1]",
+   "sentence": "Close contact with someone who has infective conjunctivitis, because it spreads on hands, towels and washcloths",
+   "evidence": "MedlinePlus: infectious pink eye spreads easily; UKHSA: towels carry it; hands/washcloths wording not retrieved",
+   "url": "https://medlineplus.gov/ency/article/001010.htm",
+   "action": "edited"
+  },
+  {
+   "id": "c25",
+   "classification": "supported",
+   "where": "signs[0]",
+   "sentence": "A watery red eye in viral conjunctivitis",
+   "evidence": "Moorfields",
+   "url": "https://www.moorfields.nhs.uk/eye-conditions/conjunctivitis",
+   "action": "kept"
+  },
+  {
+   "id": "c26",
+   "classification": "supported",
+   "where": "signs[1]",
+   "sentence": "A red eye with a sticky yellow discharge in bacterial conjunctivitis",
+   "evidence": "Moorfields",
+   "url": "https://www.moorfields.nhs.uk/eye-conditions/conjunctivitis",
+   "action": "kept"
+  },
+  {
+   "id": "c27",
+   "classification": "unsupported",
+   "where": "signs[2]",
+   "sentence": "Swollen eyelids and stringy discharge in allergic conjunctivitis",
+   "evidence": "Swollen eyelids supported (Moorfields allergic); stringy discharge not retrieved",
+   "url": "https://www.moorfields.nhs.uk/ae/patient-guides/allergic-conjunctivitis",
+   "action": "edited"
+  },
+  {
+   "id": "c28",
+   "classification": "unsupported",
+   "where": "signs[3]",
+   "sentence": "Widened blood vessels in the white of the eye in allergic conjunctivitis",
+   "evidence": "Widened blood vessels not in retrieved MedlinePlus text",
+   "url": null,
+   "action": "removed"
+  },
+  {
+   "id": "c29",
+   "classification": "unsupported",
+   "where": "complications[0]",
+   "sentence": "Viral conjunctivitis can last two to three weeks even with the correct treatment",
+   "evidence": "Moorfields 2-3 weeks not retrieved; replaced by NICE: infectious up to 14-21 days (adenoviral)",
+   "url": "https://www.nice.org.uk/advice/mib46/resources/adenoplus-pointofcare-test-for-diagnosing-adenoviral-conjunctivitis-pdf-63499169420485",
+   "action": "edited"
+  },
+  {
+   "id": "c30",
+   "classification": "unsupported",
+   "where": "complications[1]",
+   "sentence": "Some sight-threatening eye conditions can look like conjunctivitis",
+   "evidence": "Cited only to a PMC audit; replaced by Moorfields: viral conjunctivitis occasionally causes corneal inflammation/scarring affecting sight",
+   "url": "https://www.moorfields.nhs.uk/eye-conditions/conjunctivitis/diagnosis-and-treatment",
+   "action": "edited"
+  },
+  {
+   "id": "c31",
+   "classification": "supported",
+   "where": "complications[2]",
+   "sentence": "Trachoma, which first appears as inflammation of the eyelid lining (conjunctivitis)",
+   "evidence": "MedlinePlus trachoma: chlamydial infection, first sign conjunctivitis, repeated infection scars and can cause vision loss",
+   "url": "https://medlineplus.gov/ency/article/001486.htm",
+   "action": "edited"
+  },
+  {
+   "id": "c32",
+   "classification": "supported",
+   "where": "sec0",
+   "sentence": "Conjunctivitis is inflammation of the conjunctiva, the thin clear membrane that covers the white of the eye and the inside of the eyelids.",
+   "evidence": "MedlinePlus wording",
+   "url": "https://medlineplus.gov/ency/article/001010.htm",
+   "action": "edited"
+  },
+  {
+   "id": "c33",
+   "classification": "supported",
+   "where": "sec0",
+   "sentence": "Many people know it as pink eye.",
+   "evidence": "MedlinePlus: pink eye",
+   "url": "https://medlineplus.gov/ency/article/001010.htm",
+   "action": "kept"
+  },
+  {
+   "id": "c34",
+   "classification": "unsupported",
+   "where": "sec0",
+   "sentence": "It is a common condition that leaves the surface of the eye red and sore, and the eye is often sticky or watery.",
+   "evidence": "\"common\", \"sore\" not retrieved; reworded",
+   "url": "https://www.nhs.uk/conditions/conjunctivitis/",
+   "action": "edited"
+  },
+  {
+   "id": "c35",
+   "classification": "unsupported",
+   "where": "sec0",
+   "sentence": "The NHS describes three kinds of conjunctivitis: bacterial, viral and allergic.",
+   "evidence": "Reworded to NHS inform three causes",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/eyes/conjunctivitis/",
+   "action": "edited"
+  },
+  {
+   "id": "c36",
+   "classification": "supported",
+   "where": "sec0",
+   "sentence": "Bacterial and viral forms are together known as infective conjunctivitis.",
+   "evidence": "NHS inform: infection (infective conjunctivitis)",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/eyes/conjunctivitis/",
+   "action": "edited"
+  },
+  {
+   "id": "c37",
+   "classification": "supported",
+   "where": "sec0",
+   "sentence": "Infective conjunctivitis is usually caused by bacteria or by the viruses behind colds and flu.",
+   "evidence": "MedlinePlus: viruses and bacteria usual germs; colds/flu not retrieved",
+   "url": "https://medlineplus.gov/ency/article/001010.htm",
+   "action": "edited"
+  },
+  {
+   "id": "c38",
+   "classification": "supported",
+   "where": "sec0",
+   "sentence": "Allergic conjunctivitis is a reaction to things such as dust, grass or pollen.",
+   "evidence": "MedlinePlus: pollen, dust mites, pet dander, mould",
+   "url": "https://medlineplus.gov/ency/article/001031.htm",
+   "action": "edited"
+  },
+  {
+   "id": "c39",
+   "classification": "unsupported",
+   "where": "sec0",
+   "sentence": "The NHS links the allergic kind with hay fever and says it makes the eyes red and watery but is not contagious.",
+   "evidence": "Hay fever link not retrieved; NHS 111 Wales: allergic not contagious",
+   "url": "https://111.wales.nhs.uk/conjunctivitis/",
+   "action": "edited"
+  },
+  {
+   "id": "c40",
+   "classification": "supported",
+   "where": "sec1",
+   "sentence": "The NHS describes red, sore, itchy and watery eyes, often with a sticky discharge.",
+   "evidence": "NHS: red, burn/gritty, pus sticking to lashes, itch, water",
+   "url": "https://www.nhs.uk/conditions/conjunctivitis/",
+   "action": "edited"
+  },
+  {
+   "id": "c41",
+   "classification": "supported",
+   "where": "sec1",
+   "sentence": "The eyes may feel gritty, and the eyelids may be stuck together in the morning.",
+   "evidence": "Moorfields: gritty, lids stick in the morning",
+   "url": "https://www.moorfields.nhs.uk/eye-conditions/conjunctivitis",
+   "action": "kept"
+  },
+  {
+   "id": "c42",
+   "classification": "unsupported",
+   "where": "sec1",
+   "sentence": "The type of conjunctivitis tends to change how the eye looks.",
+   "evidence": "Inferred statement",
+   "url": null,
+   "action": "removed"
+  },
+  {
+   "id": "c43",
+   "classification": "supported",
+   "where": "sec1",
+   "sentence": "Viral conjunctivitis tends to cause a watery red eye.",
+   "evidence": "Moorfields",
+   "url": "https://www.moorfields.nhs.uk/eye-conditions/conjunctivitis",
+   "action": "kept"
+  },
+  {
+   "id": "c44",
+   "classification": "supported",
+   "where": "sec1",
+   "sentence": "Bacterial conjunctivitis is more likely to cause a red eye with a sticky yellow discharge.",
+   "evidence": "Moorfields",
+   "url": "https://www.moorfields.nhs.uk/eye-conditions/conjunctivitis",
+   "action": "kept"
+  },
+  {
+   "id": "c45",
+   "classification": "supported",
+   "where": "sec1",
+   "sentence": "Allergic conjunctivitis can bring red, itchy, watery eyes, sore eyes and swollen eyelids.",
+   "evidence": "Moorfields allergic guide: red, itchy, watery, sore, swollen eyelids",
+   "url": "https://www.moorfields.nhs.uk/ae/patient-guides/allergic-conjunctivitis",
+   "action": "kept"
+  },
+  {
+   "id": "c46",
+   "classification": "supported",
+   "where": "sec1",
+   "sentence": "Blurry vision can happen in the allergic kind because of the excess tears.",
+   "evidence": "Moorfields allergic guide: blurry vision from excess tears",
+   "url": "https://www.moorfields.nhs.uk/ae/patient-guides/allergic-conjunctivitis",
+   "action": "kept"
+  },
+  {
+   "id": "c47",
+   "classification": "unsupported",
+   "where": "sec1",
+   "sentence": "MedlinePlus also lists stringy discharge and widened blood vessels in the white of the eye for allergic conjunctivitis.",
+   "evidence": "Stringy discharge/widened vessels not in retrieved MedlinePlus text",
+   "url": null,
+   "action": "removed"
+  },
+  {
+   "id": "c48",
+   "classification": "unsupported",
+   "where": "sec1",
+   "sentence": "Sources differ on whether the discharge looks like pus or is watery, and this tends to depend on the cause.",
+   "evidence": "Not stated by any retrieved source",
+   "url": null,
+   "action": "removed"
+  },
+  {
+   "id": "c49",
+   "classification": "unsupported",
+   "where": "sec2",
+   "sentence": "The sources describe the types mainly by how the eye looks and by the pattern of symptoms.",
+   "evidence": "Inferred; same as sentence 6",
+   "url": null,
+   "action": "removed"
+  },
+  {
+   "id": "c50",
+   "classification": "supported",
+   "where": "sec2",
+   "sentence": "Viral cases tend to give a watery red eye, while bacterial cases are more likely to give a sticky yellow discharge.",
+   "evidence": "Moorfields",
+   "url": "https://www.moorfields.nhs.uk/eye-conditions/conjunctivitis",
+   "action": "kept"
+  },
+  {
+   "id": "c51",
+   "classification": "supported",
+   "where": "sec2",
+   "sentence": "NICE has published a briefing on a point-of-care test for diagnosing adenoviral conjunctivitis.",
+   "evidence": "NICE MIB46",
+   "url": "https://www.nice.org.uk/advice/mib46/resources/adenoplus-pointofcare-test-for-diagnosing-adenoviral-conjunctivitis-pdf-63499169420485",
+   "action": "kept"
+  },
+  {
+   "id": "c52",
+   "classification": "unsupported",
+   "where": "sec2",
+   "sentence": "Some sight-threatening eye conditions can look like conjunctivitis, which is why clinicians look for warning features.",
+   "evidence": "Replaced by NICE: reduced vision or no response to treatment should go to ophthalmology",
+   "url": "https://www.nice.org.uk/advice/mib46/resources/adenoplus-pointofcare-test-for-diagnosing-adenoviral-conjunctivitis-pdf-63499169420485",
+   "action": "edited"
+  },
+  {
+   "id": "c53",
+   "classification": "supported",
+   "where": "sec2",
+   "sentence": "The NHS lists eye pain, sensitivity to light and changes in vision such as wavy lines or flashing as signs of a more serious eye problem.",
+   "evidence": "NHS: eye pain, light sensitivity, vision changes such as wavy lines or flashing",
+   "url": "https://www.nhs.uk/conditions/conjunctivitis/",
+   "action": "kept"
+  },
+  {
+   "id": "c54",
+   "classification": "unsupported",
+   "where": "sec2",
+   "sentence": "A chlamydial form of conjunctivitis may lead to referral to a sexual health clinic.",
+   "evidence": "Referral to sexual health clinic not retrieved; NHS: STI-related conjunctivitis takes longer",
+   "url": "https://www.nhs.uk/conditions/conjunctivitis/",
+   "action": "edited"
+  },
+  {
+   "id": "c55",
+   "classification": "supported",
+   "where": "sec2",
+   "sentence": "Trachoma, a different eye infection, first appears as inflammation of the lining of the eyelids.",
+   "evidence": "MedlinePlus trachoma: chlamydial infection; first sign conjunctivitis",
+   "url": "https://medlineplus.gov/ency/article/001486.htm",
+   "action": "edited"
+  },
+  {
+   "id": "c56",
+   "classification": "supported",
+   "where": "sec3",
+   "sentence": "Most cases get better on their own.",
+   "evidence": "NHS, Moorfields",
+   "url": "https://www.nhs.uk/conditions/conjunctivitis/",
+   "action": "kept"
+  },
+  {
+   "id": "c57",
+   "classification": "supported",
+   "where": "sec3",
+   "sentence": "Moorfields says most infections clear up within a few days to a few weeks.",
+   "evidence": "Moorfields: most infections clear within days to weeks",
+   "url": "https://www.moorfields.nhs.uk/eye-conditions/conjunctivitis/diagnosis-and-treatment",
+   "action": "kept"
+  },
+  {
+   "id": "c58",
+   "classification": "unsupported",
+   "where": "sec3",
+   "sentence": "The NHS says most people with conjunctivitis do not need antibiotics, even when bacteria are the cause.",
+   "evidence": "NHS wording not retrieved; NICE MIB46: antibiotics not needed for most patients with infective conjunctivitis",
+   "url": "https://www.nice.org.uk/advice/mib46/resources/adenoplus-pointofcare-test-for-diagnosing-adenoviral-conjunctivitis-pdf-63499169420485",
+   "action": "edited"
+  },
+  {
+   "id": "c59",
+   "classification": "supported",
+   "where": "sec3",
+   "sentence": "Antibiotics do not work if the cause is a virus or an allergy.",
+   "evidence": "NHS inform",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/eyes/conjunctivitis/",
+   "action": "kept"
+  },
+  {
+   "id": "c60",
+   "classification": "unsupported",
+   "where": "sec3",
+   "sentence": "Home care described by the NHS includes cleaning crusts from the eyelids with cooled boiled water and using a cold compress.",
+   "evidence": "Cooled boiled water not retrieved; clean water (NHS), warm flannel (Moorfields), cool compress (NHS 111 Wales)",
+   "url": "https://www.nhs.uk/conditions/conjunctivitis/",
+   "action": "edited"
+  },
+  {
+   "id": "c61",
+   "classification": "supported",
+   "where": "sec3",
+   "sentence": "Lubricating drops, sometimes called artificial tears, can ease grittiness but do not shorten the illness, according to Moorfields.",
+   "evidence": "Moorfields: lubricant drops ease grittiness, do not shorten illness",
+   "url": "https://www.moorfields.nhs.uk/eye-conditions/conjunctivitis",
+   "action": "kept"
+  },
+  {
+   "id": "c62",
+   "classification": "supported",
+   "where": "sec3",
+   "sentence": "The Moorfields leaflet says paracetamol or ibuprofen can help with discomfort.",
+   "evidence": "Moorfields: paracetamol or ibuprofen can help with discomfort",
+   "url": "https://www.moorfields.nhs.uk/mediaLocal/3h0hgphf/infective-conjunctivitis.pdf",
+   "action": "kept"
+  },
+  {
+   "id": "c63",
+   "classification": "supported",
+   "where": "sec3",
+   "sentence": "Antihistamines can ease the symptoms of allergic conjunctivitis.",
+   "evidence": "NHS inform; Moorfields allergic",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/eyes/conjunctivitis/",
+   "action": "kept"
+  },
+  {
+   "id": "c64",
+   "classification": "supported",
+   "where": "sec3",
+   "sentence": "A pharmacist can advise on eye drops or antihistamines.",
+   "evidence": "NHS inform",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/eyes/conjunctivitis/",
+   "action": "kept"
+  },
+  {
+   "id": "c65",
+   "classification": "supported",
+   "where": "sec3",
+   "sentence": "Moorfields notes that steroid eye drops are occasionally used in severe cases.",
+   "evidence": "Moorfields: steroid drops occasionally in severe cases",
+   "url": "https://www.moorfields.nhs.uk/eye-conditions/conjunctivitis/diagnosis-and-treatment",
+   "action": "kept"
+  },
+  {
+   "id": "c66",
+   "classification": "unsupported",
+   "where": "sec4",
+   "sentence": "Viral conjunctivitis is contagious, and Moorfields advises frequent handwashing and proper disposal of tissues.",
+   "evidence": "Moorfields handwashing/tissues not retrieved; UKHSA/NHS hygiene advice and MedlinePlus viral contagion used",
+   "url": "https://www.gov.uk/government/publications/health-protection-in-schools-and-other-childcare-facilities/managing-specific-infectious-diseases-a-to-z",
+   "action": "edited"
+  },
+  {
+   "id": "c67",
+   "classification": "unsupported",
+   "where": "sec4",
+   "sentence": "One NHS leaflet says conjunctivitis is usually spread by direct contact, on hands, towels and washcloths, and by droplets coughed or sneezed into the air.",
+   "evidence": "Droplets not retrieved; UKHSA: contact with eye discharge, towels",
+   "url": "https://www.gov.uk/government/publications/health-protection-in-schools-and-other-childcare-facilities/managing-specific-infectious-diseases-a-to-z",
+   "action": "edited"
+  },
+  {
+   "id": "c68",
+   "classification": "unsupported",
+   "where": "sec4",
+   "sentence": "NHS leaflets advise against sharing towels and pillows, and suggest washing bedding and face cloths in hot water.",
+   "evidence": "Hot-water washing not retrieved; UKHSA: avoid sharing towels, flannels, pillows",
+   "url": "https://www.gov.uk/government/publications/health-protection-in-schools-and-other-childcare-facilities/managing-specific-infectious-diseases-a-to-z",
+   "action": "edited"
+  },
+  {
+   "id": "c69",
+   "classification": "unsupported",
+   "where": "sec4",
+   "sentence": "Another NHS source adds that eye drops and make-up should not be shared until the discharge has cleared.",
+   "evidence": "Not retrieved",
+   "url": null,
+   "action": "removed"
+  },
+  {
+   "id": "c70",
+   "classification": "supported",
+   "where": "sec4",
+   "sentence": "Allergic conjunctivitis is not contagious.",
+   "evidence": "NHS 111 Wales: allergic not contagious",
+   "url": "https://111.wales.nhs.uk/conjunctivitis/",
+   "action": "kept"
+  },
+  {
+   "id": "c71",
+   "classification": "supported",
+   "where": "sec4",
+   "sentence": "Moorfields says contact lenses should not be worn until symptoms have cleared completely.",
+   "evidence": "Moorfields: no lenses during any type of conjunctivitis",
+   "url": "https://www.moorfields.nhs.uk/eye-conditions/conjunctivitis/diagnosis-and-treatment",
+   "action": "kept"
+  },
+  {
+   "id": "c72",
+   "classification": "unsupported",
+   "where": "sec4",
+   "sentence": "Most NHS guidance says children do not need to stay off school or nursery, although families may be asked to keep a child at home when there is a cluster of cases.",
+   "evidence": "Cluster/\"families asked to keep home\" not retrieved; UKHSA: no exclusion, contact health protection team if outbreak/cluster; NHS: not too ill for school unless very unwell",
+   "url": "https://www.gov.uk/government/publications/health-protection-in-schools-and-other-childcare-facilities/managing-specific-infectious-diseases-a-to-z",
+   "action": "edited"
+  },
+  {
+   "id": "c73",
+   "classification": "unsupported",
+   "where": "sec4",
+   "sentence": "Moorfields has a children's page that lists separate towels and staying off school until better as family advice.",
+   "evidence": "Moorfields children page not retrieved; apparent conflict with UKHSA not asserted",
+   "url": null,
+   "action": "removed"
+  },
+  {
+   "id": "c74",
+   "classification": "supported",
+   "where": "sec5",
+   "sentence": "Most conjunctivitis does not need urgent care, and Moorfields lists allergic conjunctivitis as not an emergency.",
+   "evidence": "Moorfields: allergic conjunctivitis in \"within one week\" (non-emergency) category",
+   "url": "https://www.moorfields.nhs.uk/ae/emergency-conditions",
+   "action": "edited"
+  },
+  {
+   "id": "c75",
+   "classification": "supported",
+   "where": "sec5",
+   "sentence": "The NHS says eye pain, sensitivity to light, changes in vision or a very red eye need urgent advice from NHS 111 or a GP the same day.",
+   "evidence": "NHS: urgent GP appointment or NHS 111",
+   "url": "https://www.nhs.uk/conditions/conjunctivitis/",
+   "action": "edited"
+  },
+  {
+   "id": "c76",
+   "classification": "supported",
+   "where": "sec5",
+   "sentence": "These can be signs of a more serious eye problem, the NHS says.",
+   "evidence": "NHS",
+   "url": "https://www.nhs.uk/conditions/conjunctivitis/",
+   "action": "kept"
+  },
+  {
+   "id": "c77",
+   "classification": "supported",
+   "where": "sec5",
+   "sentence": "The Moorfields leaflet says to contact Moorfields Direct or go to a local A&E if vision becomes more blurred, eye pain becomes noticeable or blisters or spots appear on the eyelids.",
+   "evidence": "Moorfields leaflet",
+   "url": "https://www.moorfields.nhs.uk/mediaLocal/3h0hgphf/infective-conjunctivitis.pdf",
+   "action": "kept"
+  },
+  {
+   "id": "c78",
+   "classification": "supported",
+   "where": "sec5",
+   "sentence": "A newborn baby with a red or sticky eye needs to be seen urgently, through NHS 111 or the GP the same day.",
+   "evidence": "NHS: baby under 30 days, red sticky eyes: urgent appointment",
+   "url": "https://www.nhs.uk/conditions/conjunctivitis/",
+   "action": "edited"
+  },
+  {
+   "id": "c79",
+   "classification": "supported",
+   "where": "sec5",
+   "sentence": "A GP appointment is the usual route if symptoms have not cleared within about a week.",
+   "evidence": "NHS: see GP if not cleared within 7 days",
+   "url": "https://www.nhs.uk/conditions/conjunctivitis/",
+   "action": "edited"
+  },
+  {
+   "id": "c80",
+   "classification": "unsupported",
+   "where": "sec5",
+   "sentence": "For children, the NHS advises seeing a GP if there is no improvement after two weeks.",
+   "evidence": "Two-week child advice not retrieved",
+   "url": null,
+   "action": "removed"
+  },
+  {
+   "id": "c81",
+   "classification": "supported",
+   "where": "sec5",
+   "sentence": "A contact lens wearer who has spots on the eyelids is advised to see a GP.",
+   "evidence": "NHS: contact lens wearer with spots on eyelids should see GP",
+   "url": "https://www.nhs.uk/conditions/conjunctivitis/",
+   "action": "kept"
+  },
+  {
+   "id": "c82",
+   "classification": "supported",
+   "where": "faq0",
+   "sentence": "Infective conjunctivitis can spread from person to person, mainly on hands, towels and washcloths.",
+   "evidence": "MedlinePlus, UKHSA",
+   "url": "https://medlineplus.gov/ency/article/001010.htm",
+   "action": "edited"
+  },
+  {
+   "id": "c83",
+   "classification": "unsupported",
+   "where": "faq0",
+   "sentence": "Moorfields describes viral conjunctivitis as contagious and advises frequent handwashing.",
+   "evidence": "Moorfields handwashing not retrieved; UKHSA used",
+   "url": "https://www.gov.uk/government/publications/health-protection-in-schools-and-other-childcare-facilities/managing-specific-infectious-diseases-a-to-z",
+   "action": "edited"
+  },
+  {
+   "id": "c84",
+   "classification": "supported",
+   "where": "faq0",
+   "sentence": "Allergic conjunctivitis, such as the kind linked to hay fever, is not contagious.",
+   "evidence": "NHS 111 Wales; hay fever clause cut",
+   "url": "https://111.wales.nhs.uk/conjunctivitis/",
+   "action": "edited"
+  },
+  {
+   "id": "c85",
+   "classification": "unsupported",
+   "where": "faq0",
+   "sentence": "Handwashing and careful disposal of tissues are the main advice for the infective kinds.",
+   "evidence": "Tissue disposal not retrieved; reworded to NHS/UKHSA hygiene advice",
+   "url": "https://www.gov.uk/government/publications/health-protection-in-schools-and-other-childcare-facilities/managing-specific-infectious-diseases-a-to-z",
+   "action": "edited"
+  },
+  {
+   "id": "c86",
+   "classification": "unsupported",
+   "where": "faq1",
+   "sentence": "The NHS says most people with conjunctivitis do not need antibiotics, even when bacteria are the cause.",
+   "evidence": "Reworded to NICE MIB46 statement",
+   "url": "https://www.nice.org.uk/advice/mib46/resources/adenoplus-pointofcare-test-for-diagnosing-adenoviral-conjunctivitis-pdf-63499169420485",
+   "action": "edited"
+  },
+  {
+   "id": "c87",
+   "classification": "supported",
+   "where": "faq1",
+   "sentence": "Antibiotics do not work against a virus or an allergy.",
+   "evidence": "NHS inform",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/eyes/conjunctivitis/",
+   "action": "kept"
+  },
+  {
+   "id": "c88",
+   "classification": "supported",
+   "where": "faq1",
+   "sentence": "Moorfields says antibiotic drops are generally not effective against viral cases.",
+   "evidence": "Moorfields: antibiotic drops only helpful for bacterial cases",
+   "url": "https://www.moorfields.nhs.uk/eye-conditions/conjunctivitis/diagnosis-and-treatment",
+   "action": "edited"
+  },
+  {
+   "id": "c89",
+   "classification": "textbook",
+   "where": "faq1",
+   "sentence": "Whether eye drops are prescribed for a particular person is a decision for the clinician or pharmacist who sees the eye.",
+   "evidence": "Plain statement; NHS says antibiotics \"may be prescribed\"",
+   "url": "https://www.nhs.uk/conditions/conjunctivitis/",
+   "action": "kept"
+  },
+  {
+   "id": "c90",
+   "classification": "supported",
+   "where": "faq2",
+   "sentence": "Moorfields says most infections clear up on their own within a few days to a few weeks.",
+   "evidence": "Moorfields",
+   "url": "https://www.moorfields.nhs.uk/eye-conditions/conjunctivitis/diagnosis-and-treatment",
+   "action": "kept"
+  },
+  {
+   "id": "c91",
+   "classification": "unsupported",
+   "where": "faq2",
+   "sentence": "Viral conjunctivitis can last two to three weeks even with the correct treatment.",
+   "evidence": "Replaced with NICE adenoviral infectious period",
+   "url": "https://www.nice.org.uk/advice/mib46/resources/adenoplus-pointofcare-test-for-diagnosing-adenoviral-conjunctivitis-pdf-63499169420485",
+   "action": "edited"
+  },
+  {
+   "id": "c92",
+   "classification": "unsupported",
+   "where": "faq2",
+   "sentence": "An NHS source says many cases clear within one to two weeks, and often within two to five days.",
+   "evidence": "1-2 weeks/2-5 days from regional page not retrieved; NHS \"couple of weeks\", NICE 65% in 2-5 days used",
+   "url": "https://www.nice.org.uk/advice/mib46/resources/adenoplus-pointofcare-test-for-diagnosing-adenoviral-conjunctivitis-pdf-63499169420485",
+   "action": "edited"
+  },
+  {
+   "id": "c93",
+   "classification": "unsupported",
+   "where": "faq2",
+   "sentence": "In children, the NHS advises seeing a GP if there is no improvement after two weeks.",
+   "evidence": "Replaced with MedlinePlus ~10 days for viral cases",
+   "url": "https://medlineplus.gov/ency/article/001010.htm",
+   "action": "edited"
+  },
+  {
+   "id": "c94",
+   "classification": "supported",
+   "where": "faq3",
+   "sentence": "The NHS advises against wearing contact lenses until the eyes are better.",
+   "evidence": "NHS: avoid contact lenses until eyes better",
+   "url": "https://www.nhs.uk/conditions/conjunctivitis/",
+   "action": "kept"
+  },
+  {
+   "id": "c95",
+   "classification": "supported",
+   "where": "faq3",
+   "sentence": "Moorfields says they should not be worn until symptoms have cleared completely.",
+   "evidence": "Moorfields",
+   "url": "https://www.moorfields.nhs.uk/eye-conditions/conjunctivitis/diagnosis-and-treatment",
+   "action": "kept"
+  },
+  {
+   "id": "c96",
+   "classification": "unsupported",
+   "where": "faq3",
+   "sentence": "One NHS source adds that lenses should stay out for 24 hours after symptoms have gone.",
+   "evidence": "24 hours after symptoms not retrieved",
+   "url": null,
+   "action": "removed"
+  },
+  {
+   "id": "c97",
+   "classification": "supported",
+   "where": "faq3",
+   "sentence": "A contact lens wearer who has spots on the eyelids is advised to see a GP.",
+   "evidence": "NHS",
+   "url": "https://www.nhs.uk/conditions/conjunctivitis/",
+   "action": "kept"
+  },
+  {
+   "id": "c98",
+   "classification": "supported",
+   "where": "faq4",
+   "sentence": "Most NHS guidance says children do not need to stay away from school or nursery.",
+   "evidence": "UKHSA: no exclusion; NHS: not too ill for school unless very unwell",
+   "url": "https://www.gov.uk/government/publications/health-protection-in-schools-and-other-childcare-facilities/managing-specific-infectious-diseases-a-to-z",
+   "action": "edited"
+  },
+  {
+   "id": "c99",
+   "classification": "unsupported",
+   "where": "faq4",
+   "sentence": "The exception is a cluster of cases, when families may be asked to keep a child at home until the infection has cleared.",
+   "evidence": "Cluster wording: UKHSA says contact health protection team; \"keep home\" not retrieved",
+   "url": "https://www.gov.uk/government/publications/health-protection-in-schools-and-other-childcare-facilities/managing-specific-infectious-diseases-a-to-z",
+   "action": "edited"
+  },
+  {
+   "id": "c100",
+   "classification": "unsupported",
+   "where": "faq4",
+   "sentence": "Moorfields has a children's page that lists staying off school until better among its family advice, so advice varies.",
+   "evidence": "Not retrieved",
+   "url": null,
+   "action": "removed"
+  },
+  {
+   "id": "c101",
+   "classification": "supported",
+   "where": "faq4",
+   "sentence": "Separate towels and handwashing are the main advice.",
+   "evidence": "UKHSA hygiene advice",
+   "url": "https://www.gov.uk/government/publications/health-protection-in-schools-and-other-childcare-facilities/managing-specific-infectious-diseases-a-to-z",
+   "action": "edited"
+  },
+  {
+   "id": "c102",
+   "classification": "supported",
+   "where": "kf0",
+   "sentence": "Pink eye",
+   "evidence": "MedlinePlus",
+   "url": "https://medlineplus.gov/ency/article/001010.htm",
+   "action": "kept"
+  },
+  {
+   "id": "c103",
+   "classification": "unsupported",
+   "where": "kf1",
+   "sentence": "Bacterial, viral and allergic",
+   "evidence": "Reworded to infection, allergy, irritants (NHS inform)",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/eyes/conjunctivitis/",
+   "action": "edited"
+  },
+  {
+   "id": "c104",
+   "classification": "supported",
+   "where": "kf2",
+   "sentence": "Infective types can spread, but allergic conjunctivitis is not contagious",
+   "evidence": "MedlinePlus; NHS 111 Wales",
+   "url": "https://111.wales.nhs.uk/conjunctivitis/",
+   "action": "edited"
+  },
+  {
+   "id": "c105",
+   "classification": "unsupported",
+   "where": "kf3",
+   "sentence": "Most infections clear up on their own within a few days to a few weeks",
+   "evidence": "Moorfields \"few days to few weeks\" kept elsewhere; this row now NHS \"couple of weeks\"",
+   "url": "https://www.nhs.uk/conditions/conjunctivitis/",
+   "action": "edited"
+  },
+  {
+   "id": "c106",
+   "classification": "unsupported",
+   "where": "kf4",
+   "sentence": "Most people do not need them, even when bacteria are the cause",
+   "evidence": "Reworded to NICE statement",
+   "url": "https://www.nice.org.uk/advice/mib46/resources/adenoplus-pointofcare-test-for-diagnosing-adenoviral-conjunctivitis-pdf-63499169420485",
+   "action": "edited"
+  },
+  {
+   "id": "c107",
+   "classification": "supported",
+   "where": "kf5",
+   "sentence": "Eye pain, sensitivity to light or changes in vision: NHS 111 or a GP the same day",
+   "evidence": "NHS urgent GP/NHS 111",
+   "url": "https://www.nhs.uk/conditions/conjunctivitis/",
+   "action": "edited"
+  }
+ ],
+ "notes": "NICE CKS pages were not returned (only NICE MIB46, whose text was retrieved and is now cited for antibiotics, swab and ophthalmology referral). Newborn advice: NHS says urgent appointment for under 30 days (NHS inform says 28 days and optometrist); route stated as urgent GP appointment, NHS 111 out of hours is not separately sourced for babies. 999 deliberately not named: no returned source for adult conjunctivitis says it. Moorfields school advice vs NHS/UKHSA (no exclusion) not reconciled; only UKHSA/NHS stated. Removed: hay fever links, sexual-health referral, stringy discharge, widened vessels, 24 hours, 1-2 weeks, droplets, hot-wash, eye-drop sharing, PMC-sourced sight-threatening claim. Terms suffix-itis and root-ophthalm and alias 'red eye infection' removed. Symptom link 'swelling' kept (MedlinePlus lists swelling; Moorfields eyelid swelling). 'hospital eye service' gloss and the clinician/pharmacist drop-decision sentence are textbook. Some wording (cool compress, mould) rests on blended search summaries of the cited pages."
+}

@@ -1,0 +1,847 @@
+{
+ "id": "psoriasis",
+ "searchesUsed": 13,
+ "counts": {
+  "supported": 63,
+  "textbook": 4,
+  "unsupported": 36,
+  "wrong": 1,
+  "unsafe": 0,
+  "unchecked": 0
+ },
+ "claims": [
+  {
+   "id": "c01",
+   "classification": "unsupported",
+   "evidence": "Re-check did not retrieve NHS wording on itchy painful dry flaky patches; reviews say long-lasting inflammatory, raised red patches with silver scales",
+   "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10628572/",
+   "action": "edited",
+   "newSentence": "see final entity"
+  },
+  {
+   "id": "c02",
+   "classification": "supported",
+   "evidence": "Reviews: long-lasting, recurring inflammatory skin condition; \"common\" not re-retrieved so dropped",
+   "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10628572/",
+   "action": "edited",
+   "newSentence": "see final entity"
+  },
+  {
+   "id": "c03",
+   "classification": "supported",
+   "evidence": "NHS: cause unknown, immune system problem plus genes and environmental triggers; reviews: keratinocytes hyperproliferate",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/skin/skin-conditions/psoriasis/",
+   "action": "edited",
+   "newSentence": "see final entity"
+  },
+  {
+   "id": "c04",
+   "classification": "unsupported",
+   "evidence": "Sites/dry scaly main sign not re-retrieved from NHS; BAD lists scalp, knees, elbows for plaques; lower back dropped",
+   "url": "https://www.bad.org.uk/pils/psoriasis-an-overview",
+   "action": "edited",
+   "newSentence": "see final entity"
+  },
+  {
+   "id": "c05",
+   "classification": "textbook",
+   "evidence": "Plain undisputed fact, NHS page not re-retrieved verbatim",
+   "url": "https://www.nhs.uk/conditions/psoriasis/",
+   "action": "kept",
+   "newSentence": "see final entity"
+  },
+  {
+   "id": "c06",
+   "classification": "supported",
+   "evidence": "Reviews: keratinocytes hyperproliferate",
+   "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10628572/",
+   "action": "edited",
+   "newSentence": "see final entity"
+  },
+  {
+   "id": "c07",
+   "classification": "supported",
+   "evidence": "NHS/NHS inform: immune system problem, cause not fully known",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/skin/skin-conditions/psoriasis/",
+   "action": "edited",
+   "newSentence": "see final entity"
+  },
+  {
+   "id": "c08",
+   "classification": "supported",
+   "evidence": "NHS: certain genes and environmental triggers may play a role; family history not retrieved",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/skin/skin-conditions/psoriasis/",
+   "action": "edited",
+   "newSentence": "see final entity"
+  },
+  {
+   "id": "c09",
+   "classification": "unsupported",
+   "evidence": "Family history not found in re-check",
+   "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10454222/",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c10",
+   "classification": "supported",
+   "evidence": "NHS 111 Wales lists stress as trigger",
+   "url": "https://111.wales.nhs.uk/encyclopaedia/p/article/psoriasis/",
+   "action": "edited",
+   "newSentence": "see final entity"
+  },
+  {
+   "id": "c11",
+   "classification": "unsupported",
+   "evidence": "Injury to skin not found in re-check",
+   "url": "https://www.nhs.uk/conditions/psoriasis/causes/",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c12",
+   "classification": "supported",
+   "evidence": "NHS 111 Wales: certain medicines",
+   "url": "https://111.wales.nhs.uk/encyclopaedia/p/article/psoriasis/",
+   "action": "edited",
+   "newSentence": "see final entity"
+  },
+  {
+   "id": "c13",
+   "classification": "supported",
+   "evidence": "NHS 111 Wales: infections such as strep A; NHS inform: guttate after streptococcal throat infection",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/skin/skin-conditions/psoriasis/",
+   "action": "edited",
+   "newSentence": "see final entity"
+  },
+  {
+   "id": "c14",
+   "classification": "supported",
+   "evidence": "NHS 111 Wales: drinking alcohol or smoking, obesity; BAD: linked to alcohol, overweight, smoking, stress",
+   "url": "https://111.wales.nhs.uk/encyclopaedia/p/article/psoriasis/",
+   "action": "edited",
+   "newSentence": "see final entity"
+  },
+  {
+   "id": "c15",
+   "classification": "unsupported",
+   "evidence": "Skin-colour description not retrieved",
+   "url": "https://www.nhs.uk/conditions/psoriasis/symptoms/",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c16",
+   "classification": "unsupported",
+   "evidence": "Skin-colour description not retrieved",
+   "url": "https://www.nhs.uk/conditions/psoriasis/symptoms/",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c17",
+   "classification": "supported",
+   "evidence": "Leaflet crediting Psoriasis Association and BAD: nail pitting, ridging, abnormal growth, discoloration",
+   "url": "https://www.bad.org.uk/pils/psoriasis-an-overview",
+   "action": "edited",
+   "newSentence": "see final entity"
+  },
+  {
+   "id": "c18",
+   "classification": "supported",
+   "evidence": "NICE public info: some people develop psoriatic arthritis",
+   "url": "https://www.nice.org.uk/guidance/cg153",
+   "action": "edited",
+   "newSentence": "see final entity"
+  },
+  {
+   "id": "c19",
+   "classification": "supported",
+   "evidence": "CKS lists metabolic syndrome, IBD (Crohn's)",
+   "url": "https://cks.nice.org.uk/topics/psoriasis/",
+   "action": "edited",
+   "newSentence": "see final entity"
+  },
+  {
+   "id": "c20",
+   "classification": "supported",
+   "evidence": "CKS lists anxiety and depression",
+   "url": "https://cks.nice.org.uk/topics/psoriasis/",
+   "action": "kept",
+   "newSentence": "see final entity"
+  },
+  {
+   "id": "c21",
+   "classification": "supported",
+   "evidence": "Search: diagnosis usually clinical, GP examines skin",
+   "url": "https://www.nice.org.uk/guidance/cg153",
+   "action": "edited",
+   "newSentence": "see final entity"
+  },
+  {
+   "id": "c22",
+   "classification": "unsupported",
+   "evidence": "Came from children's hospital page; no adult source",
+   "url": "https://www.gosh.nhs.uk/conditions-and-treatments/conditions-we-treat/psoriasis/",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c23",
+   "classification": "unsupported",
+   "evidence": "GOSH is children's page; replaced with NICE CG153 referral when diagnosis uncertain / not controlled by topicals",
+   "url": "https://www.nice.org.uk/guidance/cg153",
+   "action": "edited",
+   "newSentence": "see final entity"
+  },
+  {
+   "id": "c24",
+   "classification": "unsupported",
+   "evidence": "GOSH children's page says very rarely; adult NHS source says sometimes needed to find exact cause",
+   "url": "https://www.nhs.uk/conditions/psoriasis/",
+   "action": "edited",
+   "newSentence": "see final entity"
+  },
+  {
+   "id": "c25",
+   "classification": "supported",
+   "evidence": "NHS: mild psoriasis creams and ointments; emollient probably first",
+   "url": "https://www.nhs.uk/conditions/psoriasis/treatment/",
+   "action": "edited",
+   "newSentence": "see final entity"
+  },
+  {
+   "id": "c26",
+   "classification": "unsupported",
+   "evidence": "CKS topical list (coal tar, dithranol) not retrieved",
+   "url": "https://cks.nice.org.uk/topics/psoriasis/",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c27",
+   "classification": "supported",
+   "evidence": "NHS: if creams do not work, light treatment or stronger medicines",
+   "url": "https://www.nhs.uk/conditions/psoriasis/treatment/",
+   "action": "kept",
+   "newSentence": "see final entity"
+  },
+  {
+   "id": "c28",
+   "classification": "supported",
+   "evidence": "NICE CG153 and NHS Scotland: ciclosporin, methotrexate, acitretin, biologics injected",
+   "url": "https://www.nice.org.uk/guidance/cg153",
+   "action": "edited",
+   "newSentence": "see final entity"
+  },
+  {
+   "id": "c29",
+   "classification": "unsupported",
+   "evidence": "Inference about prevention, not stated by source",
+   "url": "https://www.nhs.uk/conditions/psoriasis/causes/",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c30",
+   "classification": "supported",
+   "evidence": "NHS 111 Wales triggers; injury removed; BAD mechanism not understood",
+   "url": "https://111.wales.nhs.uk/encyclopaedia/p/article/psoriasis/",
+   "action": "edited",
+   "newSentence": "see final entity"
+  },
+  {
+   "id": "c31",
+   "classification": "supported",
+   "evidence": "NHS: yellow-brown pus-filled patches on feet, 999 or A&E",
+   "url": "https://www.nhs.uk/conditions/psoriasis/symptoms/",
+   "action": "kept",
+   "newSentence": "see final entity"
+  },
+  {
+   "id": "c32",
+   "classification": "supported",
+   "evidence": "NICE CG153: GPP/erythroderma referred immediately for same-day specialist assessment",
+   "url": "https://www.nice.org.uk/guidance/cg153",
+   "action": "kept",
+   "newSentence": "see final entity"
+  },
+  {
+   "id": "c33",
+   "classification": "textbook",
+   "evidence": "999/NHS 111 signposting",
+   "url": "https://www.nhs.uk/conditions/psoriasis/",
+   "action": "kept",
+   "newSentence": "see final entity"
+  },
+  {
+   "id": "c34",
+   "classification": "supported",
+   "evidence": "NHS: see GP for symptoms, treatment not working, recurring joint pain",
+   "url": "https://www.nhs.uk/conditions/psoriasis/",
+   "action": "kept",
+   "newSentence": "see final entity"
+  },
+  {
+   "id": "c35",
+   "classification": "unsupported",
+   "evidence": "NHS wording not re-retrieved; replaced by review description",
+   "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10628572/",
+   "action": "edited",
+   "newSentence": "see final entity"
+  },
+  {
+   "id": "c36",
+   "classification": "unsupported",
+   "evidence": "Not re-retrieved",
+   "url": "https://www.nhs.uk/conditions/psoriasis/symptoms/",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c37",
+   "classification": "unsupported",
+   "evidence": "Skin colour description not retrieved",
+   "url": "https://www.nhs.uk/conditions/psoriasis/symptoms/",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c38",
+   "classification": "unsupported",
+   "evidence": "Skin colour description not retrieved",
+   "url": "https://www.nhs.uk/conditions/psoriasis/symptoms/",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c39",
+   "classification": "unsupported",
+   "evidence": "Only BAD scalp/knees/elbows retrieved",
+   "url": "https://www.bad.org.uk/pils/psoriasis-an-overview",
+   "action": "edited",
+   "newSentence": "see final entity"
+  },
+  {
+   "id": "c40",
+   "classification": "unsupported",
+   "evidence": "List of sites not retrieved",
+   "url": "https://www.nhs.uk/conditions/psoriasis/",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c41",
+   "classification": "supported",
+   "evidence": "Leaflet: nail pitting, abnormal growth, discoloration",
+   "url": "https://www.bad.org.uk/pils/psoriasis-an-overview",
+   "action": "edited",
+   "newSentence": "see final entity"
+  },
+  {
+   "id": "c42",
+   "classification": "unsupported",
+   "evidence": "Not found; nail growth speed not confirmed",
+   "url": "https://www.psoriasis-association.org.uk/types-of-psoriasis",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c43",
+   "classification": "supported",
+   "evidence": "Psoriasis Association types page lists them",
+   "url": "https://www.psoriasis-association.org.uk/types-of-psoriasis",
+   "action": "kept",
+   "newSentence": "see final entity"
+  },
+  {
+   "id": "c44",
+   "classification": "supported",
+   "evidence": "Types menu includes erythrodermic and sensitive areas; \"any part of body\" not confirmed so dropped",
+   "url": "https://www.psoriasis-association.org.uk/types-of-psoriasis",
+   "action": "edited",
+   "newSentence": "see final entity"
+  },
+  {
+   "id": "c45",
+   "classification": "unsupported",
+   "evidence": "Not retrieved",
+   "url": "https://www.psoriasis-association.org.uk/media/InformationSheets/9410_PSO_WhatIsPsoriasis_v8web.pdf",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c46",
+   "classification": "supported",
+   "evidence": "CKS: plaque 80-90 percent",
+   "url": "https://cks.nice.org.uk/topics/psoriasis/",
+   "action": "kept",
+   "newSentence": "see final entity"
+  },
+  {
+   "id": "c47",
+   "classification": "unsupported",
+   "evidence": "Not retrieved",
+   "url": "https://www.psoriasis-association.org.uk/media/InformationSheets/9410_PSO_WhatIsPsoriasis_v8web.pdf",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c48",
+   "classification": "unsupported",
+   "evidence": "Itchy and tight / often first not confirmed",
+   "url": "https://www.psoriasis-association.org.uk/types-of-psoriasis",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c49",
+   "classification": "supported",
+   "evidence": "NICE CG153 immediate same-day referral",
+   "url": "https://www.nice.org.uk/guidance/cg153",
+   "action": "kept",
+   "newSentence": "see final entity"
+  },
+  {
+   "id": "c50",
+   "classification": "supported",
+   "evidence": "Reviews: keratinocytes hyperproliferate",
+   "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10628572/",
+   "action": "edited",
+   "newSentence": "see final entity"
+  },
+  {
+   "id": "c51",
+   "classification": "supported",
+   "evidence": "NHS: unknown cause, immune system, genes, environmental triggers",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/skin/skin-conditions/psoriasis/",
+   "action": "edited",
+   "newSentence": "see final entity"
+  },
+  {
+   "id": "c52",
+   "classification": "unsupported",
+   "evidence": "PA news article not retrieved; reviews describe T cell-mediated disease",
+   "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10628572/",
+   "action": "edited",
+   "newSentence": "see final entity"
+  },
+  {
+   "id": "c53",
+   "classification": "unsupported",
+   "evidence": "Not retrieved",
+   "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10454222/",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c54",
+   "classification": "supported",
+   "evidence": "NHS 111 Wales triggers; injury removed",
+   "url": "https://111.wales.nhs.uk/encyclopaedia/p/article/psoriasis/",
+   "action": "edited",
+   "newSentence": "see final entity"
+  },
+  {
+   "id": "c55",
+   "classification": "supported",
+   "evidence": "NHS 111 Wales: alcohol, smoking, obesity",
+   "url": "https://111.wales.nhs.uk/encyclopaedia/p/article/psoriasis/",
+   "action": "edited",
+   "newSentence": "see final entity"
+  },
+  {
+   "id": "c56",
+   "classification": "supported",
+   "evidence": "BAD: not everyone who smokes or drinks develops psoriasis",
+   "url": "https://www.bad.org.uk/pils/psoriasis-an-overview",
+   "action": "kept",
+   "newSentence": "see final entity"
+  },
+  {
+   "id": "c57",
+   "classification": "unsupported",
+   "evidence": "PA triggers list not retrieved",
+   "url": "https://www.psoriasis-association.org.uk/news/updates-in-psoriasis-hospital-professional-news-ie",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c58",
+   "classification": "supported",
+   "evidence": "Diagnosis usually clinical",
+   "url": "https://www.nice.org.uk/guidance/cg153",
+   "action": "edited",
+   "newSentence": "see final entity"
+  },
+  {
+   "id": "c59",
+   "classification": "unsupported",
+   "evidence": "Children's page only",
+   "url": "https://www.gosh.nhs.uk/conditions-and-treatments/conditions-we-treat/psoriasis/",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c60",
+   "classification": "unsupported",
+   "evidence": "Children's page; replaced with NICE CG153 referral criteria",
+   "url": "https://www.nice.org.uk/guidance/cg153",
+   "action": "edited",
+   "newSentence": "see final entity"
+  },
+  {
+   "id": "c61",
+   "classification": "unsupported",
+   "evidence": "Children's page; replaced with adult NHS source",
+   "url": "https://www.nhs.uk/conditions/psoriasis/",
+   "action": "edited",
+   "newSentence": "see final entity"
+  },
+  {
+   "id": "c62",
+   "classification": "supported",
+   "evidence": "CG153: refer if diagnosis uncertain, topical not controlling, major impact; \"not tolerated\" not retrieved",
+   "url": "https://www.nice.org.uk/guidance/cg153",
+   "action": "edited",
+   "newSentence": "see final entity"
+  },
+  {
+   "id": "c63",
+   "classification": "wrong",
+   "evidence": "Right Decisions says moderate psoriasis (not mild localised): routine referral after 4 weeks topical failure",
+   "url": "https://www.rightdecisions.scot.nhs.uk/dermatology-pathways/psoriasis/",
+   "action": "edited",
+   "newSentence": "see final entity"
+  },
+  {
+   "id": "c64",
+   "classification": "textbook",
+   "evidence": "Duplicate of overview/FAQ sentence, dropped here",
+   "url": "https://www.nhs.uk/conditions/psoriasis/",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c65",
+   "classification": "supported",
+   "evidence": "NHS: creams and ointments first for mild",
+   "url": "https://www.nhs.uk/conditions/psoriasis/treatment/",
+   "action": "edited",
+   "newSentence": "see final entity"
+  },
+  {
+   "id": "c66",
+   "classification": "unsupported",
+   "evidence": "NHS: emollients moisturise and ease itching/scaling; water-loss film not retrieved",
+   "url": "https://www.nhs.uk/conditions/psoriasis/treatment/",
+   "action": "edited",
+   "newSentence": "see final entity"
+  },
+  {
+   "id": "c67",
+   "classification": "supported",
+   "evidence": "NHS: emollient probably first",
+   "url": "https://www.nhs.uk/conditions/psoriasis/treatment/",
+   "action": "kept",
+   "newSentence": "see final entity"
+  },
+  {
+   "id": "c68",
+   "classification": "unsupported",
+   "evidence": "Replaced by vitamin D analogues/steroid creams from NHS-linked formularies; coal tar/dithranol dropped",
+   "url": "https://www.nhs.uk/conditions/psoriasis/treatment/",
+   "action": "edited",
+   "newSentence": "see final entity"
+  },
+  {
+   "id": "c69",
+   "classification": "supported",
+   "evidence": "NHS: light treatment or stronger medicines",
+   "url": "https://www.nhs.uk/conditions/psoriasis/treatment/",
+   "action": "kept",
+   "newSentence": "see final entity"
+  },
+  {
+   "id": "c70",
+   "classification": "supported",
+   "evidence": "CG153: phototherapy second-line",
+   "url": "https://www.nice.org.uk/guidance/cg153",
+   "action": "edited",
+   "newSentence": "see final entity"
+  },
+  {
+   "id": "c71",
+   "classification": "supported",
+   "evidence": "CG153/RD: methotrexate, ciclosporin, acitretin; moderate-severe wording dropped",
+   "url": "https://www.nice.org.uk/guidance/cg153",
+   "action": "edited",
+   "newSentence": "see final entity"
+  },
+  {
+   "id": "c72",
+   "classification": "supported",
+   "evidence": "Right Decisions: apremilast/biologics after phototherapy and first-line systemic failure",
+   "url": "https://www.rightdecisions.scot.nhs.uk/dermatology-pathways/psoriasis/",
+   "action": "edited",
+   "newSentence": "see final entity"
+  },
+  {
+   "id": "c73",
+   "classification": "unsupported",
+   "evidence": "BAD statement not retrieved",
+   "url": "https://www.bad.org.uk/pils/psoriasis-an-overview",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c74",
+   "classification": "supported",
+   "evidence": "NHS living with: peer support",
+   "url": "https://www.nhs.uk/conditions/psoriasis/living-with/",
+   "action": "kept",
+   "newSentence": "see final entity"
+  },
+  {
+   "id": "c75",
+   "classification": "supported",
+   "evidence": "NHS: charities such as Psoriasis UK offer information",
+   "url": "https://www.nhs.uk/conditions/psoriasis/living-with/",
+   "action": "edited",
+   "newSentence": "see final entity"
+  },
+  {
+   "id": "c76",
+   "classification": "supported",
+   "evidence": "NHS: GP can refer to mental health specialist",
+   "url": "https://www.nhs.uk/conditions/psoriasis/living-with/",
+   "action": "kept",
+   "newSentence": "see final entity"
+  },
+  {
+   "id": "c77",
+   "classification": "supported",
+   "evidence": "PA GP tips: detergents drying, lukewarm water, emollient; perfumed/scrubbing dropped",
+   "url": "https://www.bad.org.uk/pils/psoriasis-an-overview",
+   "action": "edited",
+   "newSentence": "see final entity"
+  },
+  {
+   "id": "c78",
+   "classification": "supported",
+   "evidence": "Newcastle leaflet: no fingers in tub",
+   "url": "https://www.bad.org.uk/pils/psoriasis-an-overview",
+   "action": "kept",
+   "newSentence": "see final entity"
+  },
+  {
+   "id": "c79",
+   "classification": "supported",
+   "evidence": "CKS associations",
+   "url": "https://cks.nice.org.uk/topics/psoriasis/",
+   "action": "kept",
+   "newSentence": "see final entity"
+  },
+  {
+   "id": "c80",
+   "classification": "unsupported",
+   "evidence": "Replaced by NICE public info / NHS joint pain description",
+   "url": "https://www.nice.org.uk/guidance/cg153",
+   "action": "edited",
+   "newSentence": "see final entity"
+  },
+  {
+   "id": "c81",
+   "classification": "supported",
+   "evidence": "NHS: some treatments can harm developing baby",
+   "url": "https://www.nhs.uk/conditions/psoriasis/living-with/",
+   "action": "kept",
+   "newSentence": "see final entity"
+  },
+  {
+   "id": "c82",
+   "classification": "textbook",
+   "evidence": "Cannot be cured: plain fact",
+   "url": "https://www.nhs.uk/conditions/psoriasis/",
+   "action": "kept",
+   "newSentence": "see final entity"
+  },
+  {
+   "id": "c83",
+   "classification": "unsupported",
+   "evidence": "BAD skinhealthinfo page not retrieved",
+   "url": "https://www.skinhealthinfo.org.uk/condition/topical-treatments-for-psoriasis/",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c84",
+   "classification": "unsupported",
+   "evidence": "Not retrieved",
+   "url": "https://www.skinhealthinfo.org.uk/condition/topical-treatments-for-psoriasis/",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c85",
+   "classification": "unsupported",
+   "evidence": "Reworded to stepped treatment",
+   "url": "https://www.nhs.uk/conditions/psoriasis/treatment/",
+   "action": "edited",
+   "newSentence": "see final entity"
+  },
+  {
+   "id": "c86",
+   "classification": "supported",
+   "evidence": "NICE public info: some develop PsA",
+   "url": "https://www.nice.org.uk/guidance/cg153",
+   "action": "edited",
+   "newSentence": "see final entity"
+  },
+  {
+   "id": "c87",
+   "classification": "supported",
+   "evidence": "CKS",
+   "url": "https://cks.nice.org.uk/topics/psoriasis/",
+   "action": "edited",
+   "newSentence": "see final entity"
+  },
+  {
+   "id": "c88",
+   "classification": "supported",
+   "evidence": "NHS: GP for recurring joint pain",
+   "url": "https://www.nhs.uk/conditions/psoriasis/",
+   "action": "kept",
+   "newSentence": "see final entity"
+  },
+  {
+   "id": "c89",
+   "classification": "supported",
+   "evidence": "NHS 111 Wales triggers",
+   "url": "https://111.wales.nhs.uk/encyclopaedia/p/article/psoriasis/",
+   "action": "edited",
+   "newSentence": "see final entity"
+  },
+  {
+   "id": "c90",
+   "classification": "supported",
+   "evidence": "NHS 111 Wales: alcohol, smoking, obesity",
+   "url": "https://111.wales.nhs.uk/encyclopaedia/p/article/psoriasis/",
+   "action": "edited",
+   "newSentence": "see final entity"
+  },
+  {
+   "id": "c91",
+   "classification": "unsupported",
+   "evidence": "Not retrieved",
+   "url": "https://www.psoriasis-association.org.uk/news/updates-in-psoriasis-hospital-professional-news-ie",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c92",
+   "classification": "supported",
+   "evidence": "BAD",
+   "url": "https://www.bad.org.uk/pils/psoriasis-an-overview",
+   "action": "kept",
+   "newSentence": "see final entity"
+  },
+  {
+   "id": "c93",
+   "classification": "supported",
+   "evidence": "NHS",
+   "url": "https://www.nhs.uk/conditions/psoriasis/",
+   "action": "kept",
+   "newSentence": "see final entity"
+  },
+  {
+   "id": "c94",
+   "classification": "supported",
+   "evidence": "NHS",
+   "url": "https://www.nhs.uk/conditions/psoriasis/symptoms/",
+   "action": "kept",
+   "newSentence": "see final entity"
+  },
+  {
+   "id": "c95",
+   "classification": "supported",
+   "evidence": "NICE CG153",
+   "url": "https://www.nice.org.uk/guidance/cg153",
+   "action": "kept",
+   "newSentence": "see final entity"
+  },
+  {
+   "id": "c96",
+   "classification": "supported",
+   "evidence": "CKS",
+   "url": "https://cks.nice.org.uk/topics/psoriasis/",
+   "action": "kept",
+   "newSentence": "see final entity"
+  },
+  {
+   "id": "c97",
+   "classification": "supported",
+   "evidence": "NHS living with",
+   "url": "https://www.nhs.uk/conditions/psoriasis/living-with/",
+   "action": "kept",
+   "newSentence": "see final entity"
+  },
+  {
+   "id": "c98",
+   "classification": "supported",
+   "evidence": "NHS living with",
+   "url": "https://www.nhs.uk/conditions/psoriasis/living-with/",
+   "action": "kept",
+   "newSentence": "see final entity"
+  },
+  {
+   "id": "c99",
+   "classification": "supported",
+   "evidence": "Reviews: long-lasting inflammatory",
+   "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10628572/",
+   "action": "edited",
+   "newSentence": "see final entity"
+  },
+  {
+   "id": "c100",
+   "classification": "unsupported",
+   "evidence": "Replaced by raised red silvery scaly patches",
+   "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10628572/",
+   "action": "edited",
+   "newSentence": "see final entity"
+  },
+  {
+   "id": "c101",
+   "classification": "supported",
+   "evidence": "CKS",
+   "url": "https://cks.nice.org.uk/topics/psoriasis/",
+   "action": "kept",
+   "newSentence": "see final entity"
+  },
+  {
+   "id": "c102",
+   "classification": "supported",
+   "evidence": "NHS",
+   "url": "https://www.nhs.uk/conditions/psoriasis/treatment/",
+   "action": "edited",
+   "newSentence": "see final entity"
+  },
+  {
+   "id": "c103",
+   "classification": "supported",
+   "evidence": "NICE/NHS",
+   "url": "https://www.nice.org.uk/guidance/cg153",
+   "action": "kept",
+   "newSentence": "see final entity"
+  },
+  {
+   "id": "c104",
+   "classification": "supported",
+   "evidence": "NHS",
+   "url": "https://www.nhs.uk/conditions/psoriasis/",
+   "action": "kept",
+   "newSentence": "see final entity"
+  }
+ ],
+ "notes": "Search cap of 13 reached. Alias list emptied, family history/injury triggers cut, skin-colour descriptions cut. Textbook items: cure line (overview and FAQ), NHS 111 line. T-cell line now rests on PMC reviews, not Psoriasis Association. Not fully re-verified verbatim: NHS cure statement, NHS biopsy 'sometimes needed' (unattributed NHS source in summary), NHS description of psoriatic arthritis joint symptoms and foot pustule description (NHS summaries blended). Plaque 80-90 percent rests on CKS summary text (CG153 says about 90 percent). Psoriatic arthritis coverage kept to NICE/NHS statements plus rheumatology referral; dedicated PsA page may be better."
+}
