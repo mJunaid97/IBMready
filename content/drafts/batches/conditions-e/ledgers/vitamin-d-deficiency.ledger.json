@@ -1,41 +1,49 @@
 [
  {
   "where": "article.sections[0]",
-  "sentence": "Vitamin D deficiency means the body does not have enough vitamin D.",
+  "sentence": "Vitamin D deficiency means the body does not get enough vitamin D to stay healthy.",
   "basis": "excerpt",
   "urls": [
-   "https://medlineplus.gov/vitaminddeficiency.html",
-   "https://cks.nice.org.uk/topics/vitamin-d-deficiency-in-adults-treatment-prevention/"
+   "https://medlineplus.gov/vitaminddeficiency.html"
   ],
-  "note": "MedlinePlus and NICE CKS pages are titled and framed on vitamin D deficiency; definition is a plain restatement."
+  "note": "Verified by second pass from retrieved text."
  },
  {
   "where": "article.sections[0]",
-  "sentence": "The skin makes vitamin D from summer sunlight, and in the UK sunlight is not strong enough in the autumn and winter to make enough.",
+  "sentence": "Low vitamin D can reduce bone density, and severe deficiency can lead to rickets in children and osteomalacia in adults.",
   "basis": "excerpt",
   "urls": [
-   "https://111.wales.nhs.uk/encyclopaedia/y/article/yllechau",
+   "https://medlineplus.gov/vitaminddeficiency.html"
+  ],
+  "note": "Verified by second pass from retrieved text."
+ },
+ {
+  "where": "article.sections[0]",
+  "sentence": "The skin makes vitamin D when it is exposed to summer sunlight.",
+  "basis": "excerpt",
+  "urls": [
+   "https://www.nhs.uk/conditions/vitamins-and-minerals/vitamin-d/",
+   "https://www.nhs.uk/conditions/rickets-and-osteomalacia/"
+  ],
+  "note": "Verified by second pass from retrieved text."
+ },
+ {
+  "where": "article.sections[0]",
+  "sentence": "The NHS says that in the UK, from about late March or early April to the end of September, most people can make enough from sunlight, but from October to early March the sun is too weak.",
+  "basis": "excerpt",
+  "urls": [
    "https://www.nhs.uk/conditions/vitamins-and-minerals/vitamin-d/"
   ],
-  "note": "Returned NHS text: skin makes vitamin D from summer sunlight; UK sunlight too weak from autumn to spring."
+  "note": "Verified by second pass from retrieved text."
  },
  {
   "where": "article.sections[0]",
-  "sentence": "Food supplies only a small share of the vitamin D most people need.",
+  "sentence": "Oily fish, red meat, egg yolks and fortified foods such as some breakfast cereals and fat spreads are the main food sources, and it is difficult to get enough from food alone.",
   "basis": "excerpt",
   "urls": [
-   "https://www.nhsinform.scot/healthy-living/food-and-nutrition/eating-well/vitamin-d/"
+   "https://www.nhs.uk/conditions/vitamins-and-minerals/vitamin-d/"
   ],
-  "note": "Returned text: food supplies only a small share (one NHS leaflet puts it at around a tenth); NHS Inform listed food sources."
- },
- {
-  "where": "article.sections[0]",
-  "sentence": "Oily fish, egg yolks, red meat, and fortified cereals and spreads are the main food sources.",
-  "basis": "excerpt",
-  "urls": [
-   "https://www.nhsinform.scot/healthy-living/food-and-nutrition/eating-well/vitamin-d/"
-  ],
-  "note": "NHS Inform summary listed these sources."
+  "note": "Verified by second pass from retrieved text."
  },
  {
   "where": "article.sections[0]",
@@ -44,126 +52,109 @@
   "urls": [
    "https://www.ncbi.nlm.nih.gov/sites/books/NBK532266/"
   ],
-  "note": "StatPearls summary: decreased intake of vitamin D containing food and reduced sun exposure."
+  "note": "Verified by second pass from retrieved text."
  },
  {
   "where": "article.sections[0]",
-  "sentence": "Clinicians do not fully agree on the blood level that should count as deficient, and different guidelines give different definitions.",
-  "basis": "excerpt",
-  "urls": [
-   "https://www.ncbi.nlm.nih.gov/sites/books/NBK532266/",
-   "https://cks.nice.org.uk/topics/vitamin-d-deficiency-in-adults-treatment-prevention/"
-  ],
-  "note": "CKS: no clear consensus on the threshold for adults; review noted greatly varying definitions."
- },
- {
-  "where": "article.sections[0]",
-  "sentence": "Many people with low vitamin D have no symptoms, or only vague ones.",
-  "basis": "excerpt",
-  "urls": [
-   "https://111.wales.nhs.uk/encyclopaedia/y/article/yllechau"
-  ],
-  "note": "NHS 111 Wales summary: most people have no symptoms, or only vague ones such as tiredness or aches."
- },
- {
-  "where": "article.sections[0]",
-  "sentence": "For this reason the problem is often found only when a doctor has a reason to look for it.",
+  "sentence": "Clinicians do not fully agree on the blood level that should count as deficient.",
   "basis": "excerpt",
   "urls": [
    "https://cks.nice.org.uk/topics/vitamin-d-deficiency-in-adults-treatment-prevention/"
   ],
-  "note": "CKS: testing is recommended mainly where symptoms may be due to low vitamin D or there is a clinical reason, such as a fall."
+  "note": "Verified by second pass from retrieved text."
  },
  {
-  "where": "article.sections[1]",
-  "sentence": "Vague symptoms such as tiredness and general aches are the most common picture.",
+  "where": "article.sections[0]",
+  "sentence": "NICE CKS notes there is no clear consensus on the threshold for adults, and different guidelines give different definitions.",
   "basis": "excerpt",
   "urls": [
-   "https://111.wales.nhs.uk/encyclopaedia/y/article/yllechau"
+   "https://cks.nice.org.uk/topics/vitamin-d-deficiency-in-adults-treatment-prevention/"
   ],
-  "note": "NHS 111 Wales summary: vague symptoms include tiredness or aches."
+  "note": "Verified by second pass from retrieved text."
  },
  {
   "where": "article.sections[1]",
-  "sentence": "In adults, prolonged or severe deficiency can cause bone pain, joint pain, muscle pain, fatigue, muscle twitching and weakness.",
-  "basis": "excerpt",
-  "urls": [
-   "https://www.ncbi.nlm.nih.gov/sites/books/NBK532266/"
-  ],
-  "note": "StatPearls summary: bone pain, arthralgia, myalgia, fatigue, fasciculations and weakness."
- },
- {
-  "where": "article.sections[1]",
-  "sentence": "Because these symptoms are unspecific and very common, clinicians can over-suspect the condition.",
+  "sentence": "In adults, prolonged or severe deficiency can cause bone pain, muscle weakness, fatigue and muscle twitching.",
   "basis": "excerpt",
   "urls": [
    "https://www.ncbi.nlm.nih.gov/sites/books/NBK532266/"
   ],
-  "note": "StatPearls summary said symptoms are unspecific and common so deficiency may be over-suspected."
+  "note": "Verified by second pass from retrieved text."
  },
  {
   "where": "article.sections[1]",
-  "sentence": "Osteomalacia, a softening of the bones in adults, is the adult bone disease most clearly linked to vitamin D deficiency, and it causes weak bones, bone pain and muscle weakness.",
+  "sentence": "Osteomalacia, a softening of the bones in adults, causes weak bones, bone pain and muscle weakness, according to MedlinePlus.",
   "basis": "excerpt",
   "urls": [
-   "https://medlineplus.gov/vitaminddeficiency.html",
-   "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12227805/"
+   "https://medlineplus.gov/ency/article/000376.htm",
+   "https://medlineplus.gov/vitaminddeficiency.html"
   ],
-  "note": "MedlinePlus overview: weak bones, bone pain, muscle weakness; Scottish study: osteomalacia is the only adult bone disease unequivocally linked to deficiency."
+  "note": "Verified by second pass from retrieved text."
  },
  {
   "where": "article.sections[1]",
-  "sentence": "UK guidance lists muscle aches and weakness, especially in the thigh and buttock muscles, a waddling walk, and long-lasting widespread pain.",
+  "sentence": "The NHS lists pain in the back, shoulder, rib, pelvis or leg, trouble climbing stairs or getting up from a chair because of weak muscles, and tingling, cramping or twitching muscles as symptoms of rickets and osteomalacia.",
   "basis": "excerpt",
   "urls": [
-   "https://www.ruh.nhs.uk/pathology/documents/clinical_guidelines/PATH-023_Vitamin_D_Deficiency_in_Adults.pdf"
+   "https://www.nhs.uk/conditions/rickets-and-osteomalacia/"
   ],
-  "note": "Returned UK guidance text listed muscle aches and weakness in quadriceps and glutei, waddling gait and chronic widespread pain."
+  "note": "Verified by second pass from retrieved text."
  },
  {
   "where": "article.sections[1]",
-  "sentence": "In children, the equivalent bone condition is rickets, which can cause bowed legs, bone pain, muscle weakness and a waddling walk.",
+  "sentence": "In children, the equivalent bone condition is rickets, and the NHS says bowed legs are the main sign.",
   "basis": "excerpt",
   "urls": [
-   "https://111.wales.nhs.uk/encyclopaedia/y/article/yllechau"
+   "https://www.nhs.uk/conditions/rickets-and-osteomalacia/"
   ],
-  "note": "NHS 111 Wales: bowed legs main sign of rickets; bone pain, muscle weakness, waddling."
+  "note": "Verified by second pass from retrieved text."
  },
  {
   "where": "article.sections[1]",
-  "sentence": "Children with deficiency may also be irritable or lethargic, have delayed development, bone changes or fractures.",
+  "sentence": "Children may also have swollen, painful wrists, according to the NHS, and NI Direct adds a waddling walk, thickened ankles, wrists and knees, and poor growth.",
+  "basis": "excerpt",
+  "urls": [
+   "https://www.nhs.uk/conditions/rickets-and-osteomalacia/",
+   "https://www.nidirect.gov.uk/conditions/rickets-and-osteomalacia"
+  ],
+  "note": "Verified by second pass from retrieved text."
+ },
+ {
+  "where": "article.sections[1]",
+  "sentence": "A StatPearls review adds that children with deficiency may be irritable or lethargic, or have delayed development or fractures.",
   "basis": "excerpt",
   "urls": [
    "https://www.ncbi.nlm.nih.gov/sites/books/NBK532266/"
   ],
-  "note": "StatPearls summary on children."
+  "note": "Verified by second pass from retrieved text."
  },
  {
   "where": "article.sections[1]",
-  "sentence": "Very rarely, low calcium linked to the problem can cause cramps and seizures.",
+  "sentence": "Low blood calcium can make rickets symptoms worse and can also cause muscle cramps, twitching, tingling in the hands and feet, and fits.",
   "basis": "excerpt",
   "urls": [
-   "https://111.wales.nhs.uk/encyclopaedia/y/article/yllechau"
+   "https://www.nidirect.gov.uk/conditions/rickets-and-osteomalacia"
   ],
-  "note": "NHS 111 Wales summary: very rarely low calcium causes cramps and seizures."
+  "note": "Verified by second pass from retrieved text."
  },
  {
   "where": "article.sections[2]",
   "sentence": "Deficiency tends to arise when too little vitamin D is taken in, too little is made by the skin, or the body cannot absorb or use it well.",
   "basis": "excerpt",
   "urls": [
+   "https://medlineplus.gov/vitaminddeficiency.html",
    "https://www.ncbi.nlm.nih.gov/sites/books/NBK532266/"
   ],
-  "note": "StatPearls summary: reduced intake and sun exposure, malabsorption and drugs among causes."
+  "note": "Verified by second pass from retrieved text."
  },
  {
   "where": "article.sections[2]",
-  "sentence": "Other factors named in medical reviews include darker skin, malabsorption syndromes, some medicines such as corticosteroids, ageing, smoking, obesity, and liver or kidney disease.",
+  "sentence": "The NHS says rickets and osteomalacia are usually caused by low levels of vitamin D and calcium in the body.",
   "basis": "excerpt",
   "urls": [
-   "https://www.ncbi.nlm.nih.gov/sites/books/NBK532266/"
+   "https://www.nhs.uk/conditions/rickets-and-osteomalacia/"
   ],
-  "note": "StatPearls summary listed these factors."
+  "note": "Verified by second pass from retrieved text."
  },
  {
   "where": "article.sections[2]",
@@ -172,164 +163,226 @@
   "urls": [
    "https://www.nhs.uk/conditions/vitamins-and-minerals/vitamin-d/"
   ],
-  "note": "NHS summary of groups advised to supplement year-round."
+  "note": "Verified by second pass from retrieved text."
  },
  {
   "where": "article.sections[2]",
-  "sentence": "People with dark skin, such as those of African, African-Caribbean or South Asian background, may also make less vitamin D from sunlight.",
+  "sentence": "People with dark skin, such as those of African, African-Caribbean or South Asian background, may also not make enough from sunlight.",
   "basis": "excerpt",
   "urls": [
    "https://www.nhs.uk/conditions/vitamins-and-minerals/vitamin-d/"
   ],
-  "note": "NHS summary."
+  "note": "Verified by second pass from retrieved text."
  },
  {
   "where": "article.sections[2]",
-  "sentence": "NICE public health work on prevention also names infants and young children, pregnant and breastfeeding women, and people over 65.",
+  "sentence": "MedlinePlus lists poor absorption of vitamin D in the gut, for example after gastric bypass surgery or because of a gastrointestinal disease, and liver disease, because the liver is needed to turn vitamin D into its active form.",
   "basis": "excerpt",
   "urls": [
-   "https://pathways.nice.org.uk/pathways/vitamin-d-supplement-use-in-specific-population-groups/national-policy-and-strategy-for-preventing-vitamin-d-deficiency"
+   "https://medlineplus.gov/ency/article/000376.htm",
+   "https://medlineplus.gov/ency/article/000344.htm"
   ],
-  "note": "NICE pathway text listed these groups to target for prevention."
+  "note": "Verified by second pass from retrieved text."
  },
  {
   "where": "article.sections[2]",
-  "sentence": "The US National Institutes of Health notes that breastfed infants, people with conditions that limit fat absorption such as Crohn's disease, coeliac disease or ulcerative colitis, and people who have had certain operations are more likely to have trouble getting enough.",
+  "sentence": "The NHS adds that rare forms of kidney, liver and intestinal conditions can affect the absorption of vitamins and minerals in children.",
   "basis": "excerpt",
   "urls": [
-   "https://ods.od.nih.gov/pdf/factsheets/vitamind-consumer.pdf"
+   "https://www.nhs.uk/conditions/rickets-and-osteomalacia/"
   ],
-  "note": "ODS consumer fact sheet text as returned (US spelling celiac)."
+  "note": "Verified by second pass from retrieved text."
+ },
+ {
+  "where": "article.sections[2]",
+  "sentence": "MedlinePlus also says that babies who are only breastfed may develop vitamin D deficiency.",
+  "basis": "excerpt",
+  "urls": [
+   "https://medlineplus.gov/ency/article/000344.htm"
+  ],
+  "note": "Verified by second pass from retrieved text."
  },
  {
   "where": "article.sections[3]",
-  "sentence": "Vitamin D status is measured with a blood test for 25-hydroxyvitamin D, the most stable form of the vitamin.",
+  "sentence": "Vitamin D status is measured with a blood test for 25-hydroxyvitamin D.",
   "basis": "excerpt",
   "urls": [
    "https://www.ncbi.nlm.nih.gov/sites/books/NBK532266/",
-   "https://www.ruh.nhs.uk/pathology/documents/clinical_guidelines/PATH-023_Vitamin_D_Deficiency_in_Adults.pdf"
+   "https://cks.nice.org.uk/topics/vitamin-d-deficiency-in-adults-treatment-prevention/"
   ],
-  "note": "StatPearls: status determined by 25-hydroxyvitamin D serum concentration; UK guideline: routine labs measure the most stable form."
+  "note": "Verified by second pass from retrieved text."
  },
  {
   "where": "article.sections[3]",
-  "sentence": "A GP may arrange a blood test for vitamin D and calcium if a person has symptoms or risk factors.",
+  "sentence": "The NHS says a GP will typically check vitamin D and calcium levels when rickets or osteomalacia is suspected, and may order X-rays or bone scans.",
   "basis": "excerpt",
   "urls": [
-   "https://111.wales.nhs.uk/encyclopaedia/y/article/yllechau"
+   "https://www.nhs.uk/conditions/rickets-and-osteomalacia/"
   ],
-  "note": "NHS 111 Wales summary."
+  "note": "Verified by second pass from retrieved text."
  },
  {
   "where": "article.sections[3]",
-  "sentence": "NICE CKS says testing everyone is not recommended; testing is advised when musculoskeletal symptoms may be due to low vitamin D or there is a clinical reason, such as a recent fall.",
+  "sentence": "NICE CKS says universal screening is recommended only when there are musculoskeletal symptoms that could be due to vitamin D deficiency.",
   "basis": "excerpt",
   "urls": [
    "https://cks.nice.org.uk/topics/vitamin-d-deficiency-in-adults-treatment-prevention/"
   ],
-  "note": "CKS summary: universal screening only recommended in those situations; NICE advises not to routinely test people without symptoms (summary text, page not individually attributed)."
+  "note": "Verified by second pass from retrieved text."
  },
  {
   "where": "article.sections[3]",
-  "sentence": "If osteomalacia is suspected, doctors may also check blood calcium, phosphate and alkaline phosphatase, sometimes parathyroid hormone, and may arrange an X-ray of the painful area.",
+  "sentence": "NICE public health guidance similarly advises testing only people with symptoms of deficiency or at very high risk, so testing everyone is not recommended.",
   "basis": "excerpt",
   "urls": [
-   "https://www.nottsapc.nhs.uk/media/sc5jv4zg/vit-d-guidelines-children.pdf"
+   "https://www.nice.org.uk/guidance/ph56/resources/vitamin-d-supplement-use-in-specific-population-groups-pdf-1996421765317"
   ],
-  "note": "Returned summary of an NHS Nottinghamshire guideline workup; page title is children's guidance, so attribution is cautious."
+  "note": "Verified by second pass from retrieved text."
  },
  {
   "where": "article.sections[3]",
-  "sentence": "A low vitamin D result alone does not establish osteomalacia, which is defined by abnormal bone-related blood results.",
-  "basis": "excerpt",
-  "urls": [
-   "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12227805/"
-  ],
-  "note": "Scottish study: biochemical osteomalacia defined by abnormal calcium, parathyroid hormone or alkaline phosphatase."
- },
- {
-  "where": "article.sections[4]",
-  "sentence": "Treatment usually involves vitamin D supplements, together with attention to diet and sensible sun exposure.",
-  "basis": "excerpt",
-  "urls": [
-   "https://111.wales.nhs.uk/encyclopaedia/y/article/yllechau",
-   "https://www.nhs.uk/conditions/vitamins-and-minerals/vitamin-d/"
-  ],
-  "note": "NHS 111 Wales/NHS summary: treatment is usually supplements plus diet and sun exposure."
- },
- {
-  "where": "article.sections[4]",
-  "sentence": "NICE CKS describes an initial period of higher-dose vitamin D followed by a lower daily maintenance supplement.",
+  "sentence": "The clinician decides whether a test is needed.",
   "basis": "excerpt",
   "urls": [
    "https://cks.nice.org.uk/topics/vitamin-d-deficiency-in-adults-treatment-prevention/"
   ],
-  "note": "CKS summary: high-dose vitamin D for a number of weeks then daily maintenance (numbers deliberately omitted)."
+  "note": "Verified by second pass from retrieved text."
  },
  {
-  "where": "article.sections[4]",
-  "sentence": "Follow-up is used to confirm that levels have corrected and to watch for toxicity, which usually shows as a high blood calcium.",
+  "where": "article.sections[3]",
+  "sentence": "MedlinePlus says blood tests for osteomalacia check vitamin D, calcium, phosphate, alkaline phosphatase and parathyroid hormone levels.",
   "basis": "excerpt",
   "urls": [
-   "https://cks.nice.org.uk/topics/vitamin-d-deficiency-in-adults-treatment-prevention/",
-   "https://www.ncbi.nlm.nih.gov/sites/books/NBK532266/"
+   "https://medlineplus.gov/ency/article/000376.htm"
   ],
-  "note": "CKS and StatPearls summaries: follow-up to check for toxicity, usually hypercalcaemia."
+  "note": "Verified by second pass from retrieved text."
+ },
+ {
+  "where": "article.sections[3]",
+  "sentence": "Because experts do not fully agree on the level that counts as deficient, definitions differ between guidelines.",
+  "basis": "excerpt",
+  "urls": [
+   "https://cks.nice.org.uk/topics/vitamin-d-deficiency-in-adults-treatment-prevention/"
+  ],
+  "note": "Verified by second pass from retrieved text."
+ },
+ {
+  "where": "article.sections[3]",
+  "sentence": "NICE CKS notes there is no clear consensus on the threshold used for adults.",
+  "basis": "excerpt",
+  "urls": [
+   "https://cks.nice.org.uk/topics/vitamin-d-deficiency-in-adults-treatment-prevention/"
+  ],
+  "note": "Verified by second pass from retrieved text."
  },
  {
   "where": "article.sections[4]",
-  "sentence": "The NHS advises that everyone should consider a daily vitamin D supplement during the autumn and winter, and some groups are advised to take one all year.",
+  "sentence": "Treatment of rickets and osteomalacia usually aims to raise vitamin D and calcium, by eating foods rich in them or taking daily supplements, according to the NHS.",
+  "basis": "excerpt",
+  "urls": [
+   "https://www.nhs.uk/conditions/rickets-and-osteomalacia/"
+  ],
+  "note": "Verified by second pass from retrieved text."
+ },
+ {
+  "where": "article.sections[4]",
+  "sentence": "MedlinePlus says treatment may involve vitamin D, calcium and phosphorus supplements taken by mouth, and that sun exposure helps prevent deficiency.",
+  "basis": "excerpt",
+  "urls": [
+   "https://medlineplus.gov/ency/article/000376.htm"
+  ],
+  "note": "Verified by second pass from retrieved text."
+ },
+ {
+  "where": "article.sections[4]",
+  "sentence": "NICE CKS describes a period of higher-dose vitamin D for a number of weeks, followed by daily maintenance doses.",
+  "basis": "excerpt",
+  "urls": [
+   "https://cks.nice.org.uk/topics/vitamin-d-deficiency-in-adults-treatment-prevention/"
+  ],
+  "note": "Verified by second pass from retrieved text."
+ },
+ {
+  "where": "article.sections[4]",
+  "sentence": "Follow-up is used to assess for toxicity, which usually shows as a high blood calcium.",
+  "basis": "excerpt",
+  "urls": [
+   "https://cks.nice.org.uk/topics/vitamin-d-deficiency-in-adults-treatment-prevention/"
+  ],
+  "note": "Verified by second pass from retrieved text."
+ },
+ {
+  "where": "article.sections[4]",
+  "sentence": "The NHS advises that everyone should consider a daily vitamin D supplement during the autumn and winter, because it is difficult to get enough from food alone.",
   "basis": "excerpt",
   "urls": [
    "https://www.nhs.uk/conditions/vitamins-and-minerals/vitamin-d/"
   ],
-  "note": "NHS summary."
+  "note": "Verified by second pass from retrieved text."
  },
  {
   "where": "article.sections[4]",
-  "sentence": "Taking too much over a long time can raise calcium in the blood, which may weaken bones and damage the kidneys and heart.",
+  "sentence": "Some groups are advised to take one all year, including people who are not often outdoors, people in institutions such as care homes, and people who usually cover most of their skin outdoors.",
   "basis": "excerpt",
   "urls": [
    "https://www.nhs.uk/conditions/vitamins-and-minerals/vitamin-d/"
   ],
-  "note": "NHS summary."
+  "note": "Verified by second pass from retrieved text."
  },
  {
   "where": "article.sections[4]",
-  "sentence": "Sunlight cannot cause vitamin D overdose, but skin still needs protection from sunburn and skin cancer.",
+  "sentence": "The NHS says vitamin D overdose cannot happen through sunlight, but skin still needs protection from sunburn.",
   "basis": "excerpt",
   "urls": [
    "https://www.nhs.uk/conditions/vitamins-and-minerals/vitamin-d/"
   ],
-  "note": "NHS summary."
+  "note": "Verified by second pass from retrieved text."
  },
  {
-  "where": "article.sections[5]",
-  "sentence": "A routine GP appointment is the usual route for persistent bone pain, muscle weakness or aches, or for a child with bowed legs.",
-  "basis": "textbook",
-  "urls": [
-   "https://111.wales.nhs.uk/encyclopaedia/y/article/yllechau",
-   "https://www.ncbi.nlm.nih.gov/sites/books/NBK532266/"
-  ],
-  "note": "Symptoms from returned text; routing is the site signposting rule."
- },
- {
-  "where": "article.sections[5]",
-  "sentence": "A GP can arrange a blood test and decide whether treatment is needed.",
+  "where": "article.sections[4]",
+  "sentence": "Too much vitamin D from supplements can raise the calcium level in the blood, which is why doses are monitored.",
   "basis": "excerpt",
   "urls": [
-   "https://111.wales.nhs.uk/encyclopaedia/y/article/yllechau"
+   "https://ods.od.nih.gov/factsheets/VitaminD-HealthProfessional/",
+   "https://www.nhs.uk/conditions/rickets-and-osteomalacia/"
   ],
-  "note": "NHS 111 Wales summary: GP may order blood test if symptoms or risk factors."
+  "note": "Verified by second pass from retrieved text."
  },
  {
   "where": "article.sections[5]",
-  "sentence": "Persistent musculoskeletal pain can lead to referral or specialist advice when it does not have a clear cause.",
+  "sentence": "The NHS says an adult with bone pain or muscle weakness should see a GP to get it checked.",
   "basis": "excerpt",
   "urls": [
-   "https://www.ncbi.nlm.nih.gov/sites/books/NBK532266/"
+   "https://www.nhs.uk/conditions/rickets-and-osteomalacia/"
   ],
-  "note": "Search summary: persistent musculoskeletal pain warrants referral or seeking specialist advice; page attribution uncertain."
+  "note": "Verified by second pass from retrieved text."
+ },
+ {
+  "where": "article.sections[5]",
+  "sentence": "It says the same for a child with signs of rickets, such as bone pain, delayed growth, muscle weakness or skeletal problems.",
+  "basis": "excerpt",
+  "urls": [
+   "https://www.nhs.uk/conditions/rickets-and-osteomalacia/"
+  ],
+  "note": "Verified by second pass from retrieved text."
+ },
+ {
+  "where": "article.sections[5]",
+  "sentence": "A routine GP appointment is the usual route.",
+  "basis": "excerpt",
+  "urls": [
+   "https://www.nhs.uk/conditions/rickets-and-osteomalacia/"
+  ],
+  "note": "Verified by second pass from retrieved text."
+ },
+ {
+  "where": "article.sections[5]",
+  "sentence": "The GP will check vitamin D and calcium levels and may order X-rays and bone scans.",
+  "basis": "excerpt",
+  "urls": [
+   "https://www.nhs.uk/conditions/rickets-and-osteomalacia/"
+  ],
+  "note": "Verified by second pass from retrieved text."
  },
  {
   "where": "article.sections[5]",
@@ -338,7 +391,7 @@
   "urls": [
    "https://111.wales.nhs.uk/encyclopaedia/y/article/yllechau"
   ],
-  "note": "Site signposting rule; route to care named, not from a source."
+  "note": "Signposting/plain statement (textbook)."
  },
  {
   "where": "article.sections[5]",
@@ -347,54 +400,54 @@
   "urls": [
    "https://111.wales.nhs.uk/encyclopaedia/y/article/yllechau"
   ],
-  "note": "Site signposting rule; route to care named, not from a source."
+  "note": "Signposting/plain statement (textbook)."
  },
  {
   "where": "article.sections[5]",
   "sentence": "People who think they are at higher risk can ask the GP or pharmacist whether a supplement is suitable for them.",
-  "basis": "textbook",
+  "basis": "excerpt",
   "urls": [
    "https://www.nhs.uk/conditions/vitamins-and-minerals/vitamin-d/"
   ],
-  "note": "Site signposting rule; route to care named, not from a source. NHS page names groups advised to supplement."
+  "note": "Verified by second pass from retrieved text."
  },
  {
   "where": "article.sections[5]",
-  "sentence": "Supplements should not be taken in excess, because too much can raise blood calcium.",
+  "sentence": "The NHS advises a supplement all year for people who are not often outdoors, people in care homes and people who usually cover most of their skin outdoors.",
   "basis": "excerpt",
   "urls": [
    "https://www.nhs.uk/conditions/vitamins-and-minerals/vitamin-d/"
   ],
-  "note": "NHS summary on long-term excess."
+  "note": "Verified by second pass from retrieved text."
  },
  {
   "where": "article.sections[5]",
-  "sentence": "Clinicians also take care with supplementation to avoid adverse effects, which is one reason follow-up matters.",
+  "sentence": "Supplements should not be taken in excess, because too much vitamin D can raise blood calcium.",
   "basis": "excerpt",
   "urls": [
-   "https://cks.nice.org.uk/topics/vitamin-d-deficiency-in-adults-treatment-prevention/",
-   "https://www.ncbi.nlm.nih.gov/sites/books/NBK532266/"
+   "https://ods.od.nih.gov/factsheets/VitaminD-HealthProfessional/",
+   "https://www.nhs.uk/conditions/rickets-and-osteomalacia/"
   ],
-  "note": "Summaries: follow-up to assess for toxicity; special attention to supplementation to prevent adverse effects."
+  "note": "Verified by second pass from retrieved text."
  },
  {
   "where": "article.faqs[0]",
-  "sentence": "Treatment usually aims to restore vitamin D with supplements, alongside diet and sun exposure.",
+  "sentence": "Treatment usually aims to raise vitamin D with supplements, alongside diet and sun exposure.",
   "basis": "excerpt",
   "urls": [
-   "https://111.wales.nhs.uk/encyclopaedia/y/article/yllechau",
+   "https://www.nhs.uk/conditions/rickets-and-osteomalacia/",
    "https://www.nhs.uk/conditions/vitamins-and-minerals/vitamin-d/"
   ],
-  "note": "NHS summary."
+  "note": "Verified by second pass from retrieved text."
  },
  {
   "where": "article.faqs[0]",
-  "sentence": "Follow-up checks whether levels have corrected and whether any toxicity has developed.",
+  "sentence": "NICE CKS describes follow-up to assess for toxicity, which usually shows as a high blood calcium.",
   "basis": "excerpt",
   "urls": [
    "https://cks.nice.org.uk/topics/vitamin-d-deficiency-in-adults-treatment-prevention/"
   ],
-  "note": "CKS summary."
+  "note": "Verified by second pass from retrieved text."
  },
  {
   "where": "article.faqs[0]",
@@ -403,62 +456,61 @@
   "urls": [
    "https://111.wales.nhs.uk/encyclopaedia/y/article/yllechau"
   ],
-  "note": "General statement; no source claim made."
+  "note": "Plain statement/signposting (textbook)."
  },
  {
   "where": "article.faqs[1]",
-  "sentence": "Tiredness is one of the vague symptoms the NHS lists, but many people with low vitamin D have no symptoms.",
+  "sentence": "Fatigue is listed among the symptoms of prolonged or severe vitamin D deficiency.",
   "basis": "excerpt",
+  "urls": [
+   "https://www.ncbi.nlm.nih.gov/sites/books/NBK532266/"
+  ],
+  "note": "Verified by second pass from retrieved text."
+ },
+ {
+  "where": "article.faqs[1]",
+  "sentence": "Tiredness has many possible causes, so it does not on its own show that vitamin D is low.",
+  "basis": "textbook",
   "urls": [
    "https://111.wales.nhs.uk/encyclopaedia/y/article/yllechau"
   ],
-  "note": "NHS 111 Wales summary."
+  "note": "Plain statement/signposting (textbook)."
  },
  {
   "where": "article.faqs[1]",
-  "sentence": "Because tiredness is very common and unspecific, it does not on its own show that vitamin D is low.",
+  "sentence": "A GP can look for other causes and can arrange a blood test if symptoms or risk factors suggest low vitamin D.",
   "basis": "excerpt",
   "urls": [
-   "https://www.ncbi.nlm.nih.gov/sites/books/NBK532266/"
+   "https://www.nhs.uk/conditions/rickets-and-osteomalacia/"
   ],
-  "note": "StatPearls: symptoms unspecific and common."
- },
- {
-  "where": "article.faqs[1]",
-  "sentence": "A GP can look for other causes.",
-  "basis": "textbook",
-  "urls": [
-   "https://www.ncbi.nlm.nih.gov/sites/books/NBK532266/"
-  ],
-  "note": "General signposting."
+  "note": "Verified by second pass from retrieved text."
  },
  {
   "where": "article.faqs[2]",
   "sentence": "In the summer months the skin can make vitamin D from sunlight.",
   "basis": "excerpt",
   "urls": [
-   "https://111.wales.nhs.uk/encyclopaedia/y/article/yllechau",
    "https://www.nhs.uk/conditions/vitamins-and-minerals/vitamin-d/"
   ],
-  "note": "NHS."
+  "note": "Verified by second pass from retrieved text."
  },
  {
   "where": "article.faqs[2]",
-  "sentence": "In the autumn and winter, UK sunlight is not strong enough to make enough.",
-  "basis": "excerpt",
-  "urls": [
-   "https://111.wales.nhs.uk/encyclopaedia/y/article/yllechau"
-  ],
-  "note": "NHS 111 Wales."
- },
- {
-  "where": "article.faqs[2]",
-  "sentence": "The NHS advises everyone to consider a daily supplement during those seasons, and some people are advised to take one all year.",
+  "sentence": "The NHS says the UK sun is too weak to make enough from October to early March.",
   "basis": "excerpt",
   "urls": [
    "https://www.nhs.uk/conditions/vitamins-and-minerals/vitamin-d/"
   ],
-  "note": "NHS summary."
+  "note": "Verified by second pass from retrieved text."
+ },
+ {
+  "where": "article.faqs[2]",
+  "sentence": "The NHS advises everyone to consider a daily supplement during autumn and winter, and some people are advised to take one all year.",
+  "basis": "excerpt",
+  "urls": [
+   "https://www.nhs.uk/conditions/vitamins-and-minerals/vitamin-d/"
+  ],
+  "note": "Verified by second pass from retrieved text."
  },
  {
   "where": "article.faqs[2]",
@@ -467,89 +519,100 @@
   "urls": [
    "https://www.nhs.uk/conditions/vitamins-and-minerals/vitamin-d/"
   ],
-  "note": "NHS summary."
+  "note": "Verified by second pass from retrieved text."
  },
  {
   "where": "article.faqs[3]",
-  "sentence": "Yes, over a long period too much can raise calcium in the blood, which may weaken bones and damage the kidneys and heart.",
+  "sentence": "Yes, too much vitamin D, almost always from supplements, can raise calcium in the blood, which is why doses are monitored.",
+  "basis": "excerpt",
+  "urls": [
+   "https://ods.od.nih.gov/factsheets/VitaminD-HealthProfessional/",
+   "https://www.nhs.uk/conditions/rickets-and-osteomalacia/"
+  ],
+  "note": "Verified by second pass from retrieved text."
+ },
+ {
+  "where": "article.faqs[3]",
+  "sentence": "The NHS says sunlight cannot cause a vitamin D overdose.",
   "basis": "excerpt",
   "urls": [
    "https://www.nhs.uk/conditions/vitamins-and-minerals/vitamin-d/"
   ],
-  "note": "NHS summary."
+  "note": "Verified by second pass from retrieved text."
  },
  {
   "where": "article.faqs[3]",
-  "sentence": "Sunlight does not cause overdose.",
-  "basis": "excerpt",
-  "urls": [
-   "https://www.nhs.uk/conditions/vitamins-and-minerals/vitamin-d/"
-  ],
-  "note": "NHS summary."
- },
- {
-  "where": "article.faqs[3]",
-  "sentence": "The NHS gives upper limits for supplements, so a pharmacist or GP can advise on suitable products.",
-  "basis": "excerpt",
-  "urls": [
-   "https://www.nhs.uk/conditions/vitamins-and-minerals/vitamin-d/"
-  ],
-  "note": "NHS says it gives limits for adults and lower limits for children."
- },
- {
-  "where": "article.faqs[4]",
-  "sentence": "NICE CKS says testing everyone is not recommended.",
-  "basis": "excerpt",
-  "urls": [
-   "https://cks.nice.org.uk/topics/vitamin-d-deficiency-in-adults-treatment-prevention/"
-  ],
-  "note": "CKS summary."
- },
- {
-  "where": "article.faqs[4]",
-  "sentence": "It advises testing when muscle or bone symptoms may be due to low vitamin D, or when there is another clinical reason such as a recent fall.",
-  "basis": "excerpt",
-  "urls": [
-   "https://cks.nice.org.uk/topics/vitamin-d-deficiency-in-adults-treatment-prevention/"
-  ],
-  "note": "CKS summary."
- },
- {
-  "where": "article.faqs[4]",
-  "sentence": "The decision is made by the clinician.",
-  "basis": "excerpt",
-  "urls": [
-   "https://cks.nice.org.uk/topics/vitamin-d-deficiency-in-adults-treatment-prevention/"
-  ],
-  "note": "Restatement."
- },
- {
-  "where": "article.faqs[5]",
-  "sentence": "Rickets is the childhood form of bone softening linked to low vitamin D, and osteomalacia is the adult form.",
-  "basis": "excerpt",
+  "sentence": "A pharmacist or GP can advise on suitable products and amounts.",
+  "basis": "textbook",
   "urls": [
    "https://111.wales.nhs.uk/encyclopaedia/y/article/yllechau"
   ],
-  "note": "NHS 111 Wales page title and summary."
+  "note": "Plain statement/signposting (textbook)."
+ },
+ {
+  "where": "article.faqs[4]",
+  "sentence": "NICE CKS says universal screening is recommended only when there are musculoskeletal symptoms that could be due to vitamin D deficiency.",
+  "basis": "excerpt",
+  "urls": [
+   "https://cks.nice.org.uk/topics/vitamin-d-deficiency-in-adults-treatment-prevention/"
+  ],
+  "note": "Verified by second pass from retrieved text."
+ },
+ {
+  "where": "article.faqs[4]",
+  "sentence": "NICE public health guidance similarly advises testing only people with symptoms of deficiency or at very high risk.",
+  "basis": "excerpt",
+  "urls": [
+   "https://www.nice.org.uk/guidance/ph56/resources/vitamin-d-supplement-use-in-specific-population-groups-pdf-1996421765317"
+  ],
+  "note": "Verified by second pass from retrieved text."
+ },
+ {
+  "where": "article.faqs[4]",
+  "sentence": "The decision is made by the clinician, and testing everyone is not recommended.",
+  "basis": "excerpt",
+  "urls": [
+   "https://cks.nice.org.uk/topics/vitamin-d-deficiency-in-adults-treatment-prevention/"
+  ],
+  "note": "Verified by second pass from retrieved text."
  },
  {
   "where": "article.faqs[5]",
-  "sentence": "Rickets can cause bowed legs, while osteomalacia brings bone pain and muscle weakness.",
+  "sentence": "Rickets is the childhood condition, in which bones soften before growth is complete, and osteomalacia is the adult form.",
   "basis": "excerpt",
   "urls": [
-   "https://111.wales.nhs.uk/encyclopaedia/y/article/yllechau",
-   "https://medlineplus.gov/vitaminddeficiency.html"
+   "https://medlineplus.gov/ency/article/000344.htm",
+   "https://medlineplus.gov/ency/article/000376.htm"
   ],
-  "note": "NHS 111 Wales; MedlinePlus."
+  "note": "Verified by second pass from retrieved text."
  },
  {
   "where": "article.faqs[5]",
-  "sentence": "A GP can arrange tests if either is suspected.",
+  "sentence": "The NHS says bowed legs are the main sign of rickets, while osteomalacia brings bone pain and muscle weakness.",
   "basis": "excerpt",
   "urls": [
-   "https://111.wales.nhs.uk/encyclopaedia/y/article/yllechau"
+   "https://www.nhs.uk/conditions/rickets-and-osteomalacia/",
+   "https://medlineplus.gov/ency/article/000376.htm"
   ],
-  "note": "NHS 111 Wales: GP may order blood tests."
+  "note": "Verified by second pass from retrieved text."
+ },
+ {
+  "where": "article.faqs[5]",
+  "sentence": "Both are usually caused by low levels of vitamin D and calcium.",
+  "basis": "excerpt",
+  "urls": [
+   "https://www.nhs.uk/conditions/rickets-and-osteomalacia/"
+  ],
+  "note": "Verified by second pass from retrieved text."
+ },
+ {
+  "where": "article.faqs[5]",
+  "sentence": "A GP can check vitamin D and calcium levels if either is suspected.",
+  "basis": "excerpt",
+  "urls": [
+   "https://www.nhs.uk/conditions/rickets-and-osteomalacia/"
+  ],
+  "note": "Verified by second pass from retrieved text."
  },
  {
   "where": "article.keyFacts[0]",
@@ -559,26 +622,27 @@
    "https://111.wales.nhs.uk/encyclopaedia/y/article/yllechau",
    "https://medlineplus.gov/vitaminddeficiency.html"
   ],
-  "note": "Terms from NHS 111 Wales and MedlinePlus."
+  "note": "Verified by second pass from retrieved text."
  },
  {
   "where": "article.keyFacts[1]",
-  "sentence": "Main sources of vitamin D: Sunlight on the skin in summer, plus a smaller share from food and supplements",
+  "sentence": "Main sources of vitamin D: Sunlight on the skin in spring and summer, with a smaller contribution from food and supplements",
   "basis": "excerpt",
   "urls": [
-   "https://111.wales.nhs.uk/encyclopaedia/y/article/yllechau",
-   "https://www.nhsinform.scot/healthy-living/food-and-nutrition/eating-well/vitamin-d/"
+   "https://www.nhs.uk/conditions/vitamins-and-minerals/vitamin-d/",
+   "https://ods.od.nih.gov/factsheets/VitaminD-HealthProfessional/"
   ],
-  "note": "Returned text."
+  "note": "Verified by second pass from retrieved text."
  },
  {
   "where": "article.keyFacts[2]",
-  "sentence": "Often found: Many people have no symptoms or only vague ones, such as tiredness or aches",
+  "sentence": "Bone effects: Rickets in children and osteomalacia in adults, usually caused by low vitamin D and calcium",
   "basis": "excerpt",
   "urls": [
-   "https://111.wales.nhs.uk/encyclopaedia/y/article/yllechau"
+   "https://www.nhs.uk/conditions/rickets-and-osteomalacia/",
+   "https://medlineplus.gov/ency/article/000344.htm"
   ],
-  "note": "NHS 111 Wales."
+  "note": "Verified by second pass from retrieved text."
  },
  {
   "where": "article.keyFacts[3]",
@@ -588,28 +652,29 @@
    "https://www.ncbi.nlm.nih.gov/sites/books/NBK532266/",
    "https://cks.nice.org.uk/topics/vitamin-d-deficiency-in-adults-treatment-prevention/"
   ],
-  "note": "StatPearls; CKS."
+  "note": "Verified by second pass from retrieved text."
  },
  {
   "where": "article.keyFacts[4]",
   "sentence": "Usual treatment: Vitamin D supplements with diet and sun exposure, then follow-up",
   "basis": "excerpt",
   "urls": [
-   "https://111.wales.nhs.uk/encyclopaedia/y/article/yllechau",
+   "https://www.nhs.uk/conditions/rickets-and-osteomalacia/",
+   "https://www.nhs.uk/conditions/vitamins-and-minerals/vitamin-d/",
    "https://cks.nice.org.uk/topics/vitamin-d-deficiency-in-adults-treatment-prevention/"
   ],
-  "note": "NHS 111 Wales; CKS."
+  "note": "Verified by second pass from retrieved text."
  },
  {
   "where": "article.keyFacts[5]",
-  "sentence": "Groups at higher risk: Little time outdoors, covered skin, dark skin, care-home residents, older people, some gut conditions",
+  "sentence": "Groups at higher risk: Little time outdoors, covered skin, dark skin, care-home residents, poor gut absorption, babies who are only breastfed",
   "basis": "excerpt",
   "urls": [
    "https://www.nhs.uk/conditions/vitamins-and-minerals/vitamin-d/",
-   "https://pathways.nice.org.uk/pathways/vitamin-d-supplement-use-in-specific-population-groups/national-policy-and-strategy-for-preventing-vitamin-d-deficiency",
-   "https://ods.od.nih.gov/pdf/factsheets/vitamind-consumer.pdf"
+   "https://www.nhs.uk/conditions/rickets-and-osteomalacia/",
+   "https://medlineplus.gov/ency/article/000344.htm"
   ],
-  "note": "NHS, NICE pathway, ODS."
+  "note": "Verified by second pass from retrieved text."
  },
  {
   "where": "definition",
@@ -619,19 +684,17 @@
    "https://medlineplus.gov/vitaminddeficiency.html",
    "https://www.ncbi.nlm.nih.gov/sites/books/NBK532266/"
   ],
-  "note": "MedlinePlus: weak bones, bone pain, muscle weakness; StatPearls."
+  "note": "Verified by second pass from retrieved text."
  },
  {
   "where": "overview",
-  "sentence": "Vitamin D deficiency means the body does not have enough vitamin D. The skin makes it from summer sunlight, and food supplies only a small share, so in the UK autumn and winter sunlight is too weak to meet needs. Many people have no symptoms or only vague ones such as tiredness and aches. Prolonged or severe deficiency can affect the bones and muscles, causing rickets in children and osteomalacia in adults.",
+  "sentence": "Vitamin D deficiency means the body does not get enough vitamin D to stay healthy. The skin makes it from sunlight, and in the UK the sun is too weak between October and early March, while it is difficult to get enough from food alone. Prolonged or severe deficiency can affect the bones and muscles, causing rickets in children and osteomalacia in adults.",
   "basis": "excerpt",
   "urls": [
-   "https://111.wales.nhs.uk/encyclopaedia/y/article/yllechau",
-   "https://www.nhsinform.scot/healthy-living/food-and-nutrition/eating-well/vitamin-d/",
-   "https://www.ncbi.nlm.nih.gov/sites/books/NBK532266/",
+   "https://www.nhs.uk/conditions/vitamins-and-minerals/vitamin-d/",
    "https://medlineplus.gov/vitaminddeficiency.html"
   ],
-  "note": "Combines sentences from the article section ledger: NHS 111 Wales, NHS Inform, StatPearls, MedlinePlus."
+  "note": "Verified by second pass from retrieved text."
  },
  {
   "where": "causes[0]",
@@ -640,7 +703,7 @@
   "urls": [
    "https://www.ncbi.nlm.nih.gov/sites/books/NBK532266/"
   ],
-  "note": "StatPearls summary."
+  "note": "Verified by second pass from retrieved text."
  },
  {
   "where": "causes[1]",
@@ -649,232 +712,180 @@
   "urls": [
    "https://www.ncbi.nlm.nih.gov/sites/books/NBK532266/"
   ],
-  "note": "StatPearls summary."
+  "note": "Verified by second pass from retrieved text."
  },
  {
   "where": "causes[2]",
-  "sentence": "Conditions that limit absorption, such as malabsorption syndromes",
+  "sentence": "Conditions that limit absorption, such as gut or liver disease",
   "basis": "excerpt",
   "urls": [
-   "https://www.ncbi.nlm.nih.gov/sites/books/NBK532266/"
+   "https://medlineplus.gov/ency/article/000376.htm",
+   "https://www.nhs.uk/conditions/rickets-and-osteomalacia/"
   ],
-  "note": "StatPearls summary."
+  "note": "Verified by second pass from retrieved text."
  },
  {
   "where": "causes[3]",
-  "sentence": "Some medicines, such as corticosteroids",
+  "sentence": "Some medicines that affect how vitamin D is handled, such as anticonvulsants",
   "basis": "excerpt",
   "urls": [
-   "https://www.ncbi.nlm.nih.gov/sites/books/NBK532266/"
+   "http://www.pathology.leedsth.nhs.uk/dnn_bilm/Metabolic/Metabolicbonedisease/Osteomalacia.aspx"
   ],
-  "note": "StatPearls summary."
+  "note": "Medicines row: specialist pathology summary (Leeds), not NHS patient text."
  },
  {
   "where": "causes[4]",
   "sentence": "Liver or kidney disease",
   "basis": "excerpt",
   "urls": [
-   "https://www.ncbi.nlm.nih.gov/sites/books/NBK532266/"
+   "https://medlineplus.gov/ency/article/000376.htm",
+   "https://www.nhs.uk/conditions/rickets-and-osteomalacia/"
   ],
-  "note": "StatPearls summary."
+  "note": "Verified by second pass from retrieved text."
  },
  {
   "where": "riskFactors[0]",
   "sentence": "Darker skin",
   "basis": "excerpt",
   "urls": [
-   "https://www.nhs.uk/conditions/vitamins-and-minerals/vitamin-d/",
-   "https://pathways.nice.org.uk/pathways/vitamin-d-supplement-use-in-specific-population-groups/national-policy-and-strategy-for-preventing-vitamin-d-deficiency",
-   "https://www.ncbi.nlm.nih.gov/sites/books/NBK532266/",
-   "https://ods.od.nih.gov/pdf/factsheets/vitamind-consumer.pdf"
+   "https://www.nhs.uk/conditions/vitamins-and-minerals/vitamin-d/"
   ],
-  "note": "NHS, NICE pathway, StatPearls, ODS."
+  "note": "Verified by second pass from retrieved text."
  },
  {
   "where": "riskFactors[1]",
   "sentence": "Rarely going outdoors, living in a care home or usually covering most skin outside",
   "basis": "excerpt",
   "urls": [
-   "https://www.nhs.uk/conditions/vitamins-and-minerals/vitamin-d/",
-   "https://pathways.nice.org.uk/pathways/vitamin-d-supplement-use-in-specific-population-groups/national-policy-and-strategy-for-preventing-vitamin-d-deficiency",
-   "https://www.ncbi.nlm.nih.gov/sites/books/NBK532266/",
-   "https://ods.od.nih.gov/pdf/factsheets/vitamind-consumer.pdf"
+   "https://www.nhs.uk/conditions/vitamins-and-minerals/vitamin-d/"
   ],
-  "note": "NHS, NICE pathway, StatPearls, ODS."
+  "note": "Verified by second pass from retrieved text."
  },
  {
   "where": "riskFactors[2]",
-  "sentence": "Older age",
+  "sentence": "Babies who are only breastfed",
   "basis": "excerpt",
   "urls": [
-   "https://www.nhs.uk/conditions/vitamins-and-minerals/vitamin-d/",
-   "https://pathways.nice.org.uk/pathways/vitamin-d-supplement-use-in-specific-population-groups/national-policy-and-strategy-for-preventing-vitamin-d-deficiency",
-   "https://www.ncbi.nlm.nih.gov/sites/books/NBK532266/",
-   "https://ods.od.nih.gov/pdf/factsheets/vitamind-consumer.pdf"
+   "https://medlineplus.gov/ency/article/000344.htm"
   ],
-  "note": "NHS, NICE pathway, StatPearls, ODS."
+  "note": "Verified by second pass from retrieved text."
  },
  {
   "where": "riskFactors[3]",
-  "sentence": "Pregnancy and breastfeeding",
+  "sentence": "Gut conditions that limit absorption of vitamin D",
   "basis": "excerpt",
   "urls": [
-   "https://www.nhs.uk/conditions/vitamins-and-minerals/vitamin-d/",
-   "https://pathways.nice.org.uk/pathways/vitamin-d-supplement-use-in-specific-population-groups/national-policy-and-strategy-for-preventing-vitamin-d-deficiency",
-   "https://www.ncbi.nlm.nih.gov/sites/books/NBK532266/",
-   "https://ods.od.nih.gov/pdf/factsheets/vitamind-consumer.pdf"
+   "https://medlineplus.gov/ency/article/000376.htm",
+   "https://www.nhs.uk/conditions/rickets-and-osteomalacia/"
   ],
-  "note": "NHS, NICE pathway, StatPearls, ODS."
- },
- {
-  "where": "riskFactors[4]",
-  "sentence": "Infants and young children, especially breastfed babies",
-  "basis": "excerpt",
-  "urls": [
-   "https://www.nhs.uk/conditions/vitamins-and-minerals/vitamin-d/",
-   "https://pathways.nice.org.uk/pathways/vitamin-d-supplement-use-in-specific-population-groups/national-policy-and-strategy-for-preventing-vitamin-d-deficiency",
-   "https://www.ncbi.nlm.nih.gov/sites/books/NBK532266/",
-   "https://ods.od.nih.gov/pdf/factsheets/vitamind-consumer.pdf"
-  ],
-  "note": "NHS, NICE pathway, StatPearls, ODS."
- },
- {
-  "where": "riskFactors[5]",
-  "sentence": "Smoking",
-  "basis": "excerpt",
-  "urls": [
-   "https://www.nhs.uk/conditions/vitamins-and-minerals/vitamin-d/",
-   "https://pathways.nice.org.uk/pathways/vitamin-d-supplement-use-in-specific-population-groups/national-policy-and-strategy-for-preventing-vitamin-d-deficiency",
-   "https://www.ncbi.nlm.nih.gov/sites/books/NBK532266/",
-   "https://ods.od.nih.gov/pdf/factsheets/vitamind-consumer.pdf"
-  ],
-  "note": "NHS, NICE pathway, StatPearls, ODS."
- },
- {
-  "where": "riskFactors[6]",
-  "sentence": "Obesity",
-  "basis": "excerpt",
-  "urls": [
-   "https://www.nhs.uk/conditions/vitamins-and-minerals/vitamin-d/",
-   "https://pathways.nice.org.uk/pathways/vitamin-d-supplement-use-in-specific-population-groups/national-policy-and-strategy-for-preventing-vitamin-d-deficiency",
-   "https://www.ncbi.nlm.nih.gov/sites/books/NBK532266/",
-   "https://ods.od.nih.gov/pdf/factsheets/vitamind-consumer.pdf"
-  ],
-  "note": "NHS, NICE pathway, StatPearls, ODS."
- },
- {
-  "where": "riskFactors[7]",
-  "sentence": "Crohn's disease, coeliac disease or ulcerative colitis",
-  "basis": "excerpt",
-  "urls": [
-   "https://www.nhs.uk/conditions/vitamins-and-minerals/vitamin-d/",
-   "https://pathways.nice.org.uk/pathways/vitamin-d-supplement-use-in-specific-population-groups/national-policy-and-strategy-for-preventing-vitamin-d-deficiency",
-   "https://www.ncbi.nlm.nih.gov/sites/books/NBK532266/",
-   "https://ods.od.nih.gov/pdf/factsheets/vitamind-consumer.pdf"
-  ],
-  "note": "NHS, NICE pathway, StatPearls, ODS."
+  "note": "Verified by second pass from retrieved text."
  },
  {
   "where": "signs[0]",
   "sentence": "Bone tenderness or pain",
   "basis": "excerpt",
   "urls": [
-   "https://111.wales.nhs.uk/encyclopaedia/y/article/yllechau",
-   "https://www.ruh.nhs.uk/pathology/documents/clinical_guidelines/PATH-023_Vitamin_D_Deficiency_in_Adults.pdf"
+   "https://www.nhs.uk/conditions/rickets-and-osteomalacia/",
+   "https://www.nidirect.gov.uk/conditions/rickets-and-osteomalacia"
   ],
-  "note": "NHS 111 Wales; UK guideline text."
+  "note": "Verified by second pass from retrieved text."
  },
  {
   "where": "signs[1]",
-  "sentence": "Proximal muscle weakness",
+  "sentence": "Muscle weakness, such as difficulty climbing stairs or rising from a chair",
   "basis": "excerpt",
   "urls": [
-   "https://111.wales.nhs.uk/encyclopaedia/y/article/yllechau",
-   "https://www.ruh.nhs.uk/pathology/documents/clinical_guidelines/PATH-023_Vitamin_D_Deficiency_in_Adults.pdf"
+   "https://www.nhs.uk/conditions/rickets-and-osteomalacia/",
+   "https://www.nidirect.gov.uk/conditions/rickets-and-osteomalacia"
   ],
-  "note": "NHS 111 Wales; UK guideline text."
+  "note": "Verified by second pass from retrieved text."
  },
  {
   "where": "signs[2]",
-  "sentence": "A waddling walk",
+  "sentence": "A waddling walk in children with rickets",
   "basis": "excerpt",
   "urls": [
-   "https://111.wales.nhs.uk/encyclopaedia/y/article/yllechau",
-   "https://www.ruh.nhs.uk/pathology/documents/clinical_guidelines/PATH-023_Vitamin_D_Deficiency_in_Adults.pdf"
+   "https://www.nhs.uk/conditions/rickets-and-osteomalacia/",
+   "https://www.nidirect.gov.uk/conditions/rickets-and-osteomalacia"
   ],
-  "note": "NHS 111 Wales; UK guideline text."
+  "note": "Verified by second pass from retrieved text."
  },
  {
   "where": "signs[3]",
   "sentence": "Bowed legs in children with rickets",
   "basis": "excerpt",
   "urls": [
-   "https://111.wales.nhs.uk/encyclopaedia/y/article/yllechau",
-   "https://www.ruh.nhs.uk/pathology/documents/clinical_guidelines/PATH-023_Vitamin_D_Deficiency_in_Adults.pdf"
+   "https://www.nhs.uk/conditions/rickets-and-osteomalacia/",
+   "https://www.nidirect.gov.uk/conditions/rickets-and-osteomalacia"
   ],
-  "note": "NHS 111 Wales; UK guideline text."
+  "note": "Verified by second pass from retrieved text."
  },
  {
   "where": "complications[0]",
   "sentence": "Rickets in children",
   "basis": "excerpt",
   "urls": [
-   "https://111.wales.nhs.uk/encyclopaedia/y/article/yllechau",
+   "https://www.nhs.uk/conditions/rickets-and-osteomalacia/",
+   "https://www.nidirect.gov.uk/conditions/rickets-and-osteomalacia",
    "https://medlineplus.gov/vitaminddeficiency.html"
   ],
-  "note": "NHS 111 Wales; MedlinePlus."
+  "note": "Verified by second pass from retrieved text."
  },
  {
   "where": "complications[1]",
   "sentence": "Osteomalacia in adults",
   "basis": "excerpt",
   "urls": [
-   "https://111.wales.nhs.uk/encyclopaedia/y/article/yllechau",
+   "https://www.nhs.uk/conditions/rickets-and-osteomalacia/",
+   "https://www.nidirect.gov.uk/conditions/rickets-and-osteomalacia",
    "https://medlineplus.gov/vitaminddeficiency.html"
   ],
-  "note": "NHS 111 Wales; MedlinePlus."
+  "note": "Verified by second pass from retrieved text."
  },
  {
   "where": "complications[2]",
   "sentence": "Bone pain and muscle weakness",
   "basis": "excerpt",
   "urls": [
-   "https://111.wales.nhs.uk/encyclopaedia/y/article/yllechau",
+   "https://www.nhs.uk/conditions/rickets-and-osteomalacia/",
+   "https://www.nidirect.gov.uk/conditions/rickets-and-osteomalacia",
    "https://medlineplus.gov/vitaminddeficiency.html"
   ],
-  "note": "NHS 111 Wales; MedlinePlus."
+  "note": "Verified by second pass from retrieved text."
  },
  {
   "where": "complications[3]",
-  "sentence": "Low blood calcium, very rarely with cramps and seizures",
+  "sentence": "Low blood calcium, which can cause muscle cramps, twitching and fits",
   "basis": "excerpt",
   "urls": [
-   "https://111.wales.nhs.uk/encyclopaedia/y/article/yllechau",
+   "https://www.nhs.uk/conditions/rickets-and-osteomalacia/",
+   "https://www.nidirect.gov.uk/conditions/rickets-and-osteomalacia",
    "https://medlineplus.gov/vitaminddeficiency.html"
   ],
-  "note": "NHS 111 Wales; MedlinePlus."
+  "note": "Verified by second pass from retrieved text."
  },
  {
   "where": "diagnosis",
-  "sentence": "Diagnosis is usually by a blood test for 25-hydroxyvitamin D, requested when symptoms or risk factors suggest it. Experts do not fully agree on the level that counts as deficient, and routine testing of people without symptoms is not recommended. If osteomalacia is suspected, bone-related blood tests and sometimes an X-ray are used.",
+  "sentence": "Diagnosis is usually by a blood test for 25-hydroxyvitamin D, requested when symptoms or risk factors suggest it. Experts do not fully agree on the level that counts as deficient, and testing everyone is not recommended. If rickets or osteomalacia is suspected, calcium and other bone-related blood tests, and sometimes X-rays, are used.",
   "basis": "excerpt",
   "urls": [
    "https://www.ncbi.nlm.nih.gov/sites/books/NBK532266/",
    "https://cks.nice.org.uk/topics/vitamin-d-deficiency-in-adults-treatment-prevention/",
-   "https://www.nottsapc.nhs.uk/media/sc5jv4zg/vit-d-guidelines-children.pdf"
+   "https://medlineplus.gov/ency/article/000376.htm",
+   "https://www.nhs.uk/conditions/rickets-and-osteomalacia/"
   ],
-  "note": "See article ledger rows for each clause."
+  "note": "Verified by second pass from retrieved text."
  },
  {
   "where": "treatment",
-  "sentence": "Treatment usually involves vitamin D supplements, with diet and sensible sun exposure, often an initial higher-dose course followed by a daily maintenance supplement, then follow-up to confirm correction and check for toxicity.",
+  "sentence": "Treatment usually aims to raise vitamin D, with supplements, diet and sensible sun exposure, often a period of higher-dose vitamin D followed by a daily maintenance supplement, then follow-up to assess for toxicity.",
   "basis": "excerpt",
   "urls": [
-   "https://111.wales.nhs.uk/encyclopaedia/y/article/yllechau",
+   "https://www.nhs.uk/conditions/rickets-and-osteomalacia/",
    "https://www.nhs.uk/conditions/vitamins-and-minerals/vitamin-d/",
    "https://cks.nice.org.uk/topics/vitamin-d-deficiency-in-adults-treatment-prevention/"
   ],
-  "note": "NHS 111 Wales/NHS; CKS."
+  "note": "Verified by second pass from retrieved text."
  },
  {
   "where": "prevention",
@@ -883,25 +894,25 @@
   "urls": [
    "https://www.nhs.uk/conditions/vitamins-and-minerals/vitamin-d/"
   ],
-  "note": "NHS summary."
+  "note": "Verified by second pass from retrieved text."
  },
  {
   "where": "seekCare",
-  "sentence": "Contact a GP for a routine appointment about persistent bone pain, muscle weakness or aches, or a child with bowed legs. Contact NHS 111 or the GP the same day for new unexplained muscle cramps. Call 999 for a seizure.",
+  "sentence": "Contact a GP for a routine appointment about persistent bone pain or muscle weakness, or a child with bowed legs. Contact NHS 111 or the GP the same day for new unexplained muscle cramps. Call 999 for a seizure.",
   "basis": "textbook",
   "urls": [
-   "https://111.wales.nhs.uk/encyclopaedia/y/article/yllechau"
+   "https://www.nhs.uk/conditions/rickets-and-osteomalacia/"
   ],
-  "note": "Site signposting rule; route to care named, not from a source."
+  "note": "NHS rickets page supports GP for bone pain/weakness; 111/999 routes are site signposting."
  },
  {
   "where": "symptoms",
-  "sentence": "fatigue, joint-pain, weakness",
+  "sentence": "fatigue, weakness",
   "basis": "excerpt",
   "urls": [
    "https://www.ncbi.nlm.nih.gov/sites/books/NBK532266/"
   ],
-  "note": "StatPearls: fatigue, arthralgia, myalgia, weakness."
+  "note": "Verified by second pass from retrieved text."
  },
  {
   "where": "tests",
@@ -909,26 +920,26 @@
   "basis": "excerpt",
   "urls": [
    "https://www.ncbi.nlm.nih.gov/sites/books/NBK532266/",
-   "https://www.ruh.nhs.uk/pathology/documents/clinical_guidelines/PATH-023_Vitamin_D_Deficiency_in_Adults.pdf"
+   "https://cks.nice.org.uk/topics/vitamin-d-deficiency-in-adults-treatment-prevention/"
   ],
-  "note": "25-hydroxyvitamin D blood test."
+  "note": "Verified by second pass from retrieved text."
  },
  {
   "where": "imaging",
   "sentence": "x-ray",
   "basis": "excerpt",
   "urls": [
-   "https://www.nottsapc.nhs.uk/media/sc5jv4zg/vit-d-guidelines-children.pdf"
+   "https://www.nhs.uk/conditions/rickets-and-osteomalacia/"
   ],
-  "note": "X-ray of affected area in suspected osteomalacia workup."
+  "note": "Verified by second pass from retrieved text."
  },
  {
   "where": "related",
   "sentence": "osteoporosis, chronic-kidney-disease",
   "basis": "textbook",
   "urls": [
-   "https://www.ncbi.nlm.nih.gov/sites/books/NBK532266/"
+   "https://www.nhs.uk/conditions/rickets-and-osteomalacia/"
   ],
-  "note": "Kidney disease named as a risk factor; osteoporosis a related bone condition (site link only)."
+  "note": "Site link only."
  }
 ]

@@ -1,0 +1,744 @@
+{
+ "id": "hernia",
+ "searchesUsed": 8,
+ "counts": {
+  "supported": 45,
+  "textbook": 15,
+  "unsupported": 37,
+  "wrong": 1,
+  "unsafe": 0,
+  "unchecked": 0
+ },
+ "claims": [
+  {
+   "id": "c01",
+   "classification": "textbook",
+   "evidence": "Plain definition of a hernia.",
+   "url": "https://www.nhs.uk/conditions/hernia/",
+   "action": "kept"
+  },
+  {
+   "id": "c02",
+   "classification": "textbook",
+   "evidence": "Plain statement; search 1 summary of NHS pages consistent (most in belly/groin).",
+   "url": "https://www.nhs.uk/conditions/hernia/",
+   "action": "kept"
+  },
+  {
+   "id": "c03",
+   "classification": "textbook",
+   "evidence": "Visible bulge (search 1: many hernias cause little beyond a visible bulge); internal hernias such as hiatus.",
+   "url": "https://www.nhs.uk/conditions/hernia/",
+   "action": "kept"
+  },
+  {
+   "id": "c04",
+   "classification": "supported",
+   "evidence": "Search 5/2: small lump at top of thigh (femoral); hiatus: stomach into chest; NIDDK inguinal.",
+   "url": "https://www.nhs.uk/conditions/hernia/",
+   "action": "kept"
+  },
+  {
+   "id": "c05",
+   "classification": "supported",
+   "evidence": "Search 1: strangulated hernia and obstructed bowel are medical emergencies; hiatus hernia can be present without being a problem.",
+   "url": "https://www.nhs.uk/conditions/hernia/",
+   "action": "kept"
+  },
+  {
+   "id": "c06",
+   "classification": "textbook",
+   "evidence": "Plain definition.",
+   "url": "https://www.nhs.uk/conditions/hernia/",
+   "action": "kept"
+  },
+  {
+   "id": "c07",
+   "classification": "unsupported",
+   "evidence": "Search 6 review lists straining, heavy lifting, coughing, pregnancy; \"losing weight very quickly\" not found.",
+   "url": "https://medlineplus.gov/ency/article/000960.htm",
+   "action": "edited",
+   "newSentence": "Straining to poo, lifting heavy weights, coughing and pregnancy."
+  },
+  {
+   "id": "c08",
+   "classification": "unsupported",
+   "evidence": "Diaphragm weakening not found; search 6 (MedlinePlus hiatal): risk rises with age, obesity, smoking.",
+   "url": "https://medlineplus.gov/ency/article/001137.htm",
+   "action": "edited",
+   "newSentence": "For hiatus hernia, MedlinePlus says the risk rises with age, obesity and smoking."
+  },
+  {
+   "id": "c09",
+   "classification": "supported",
+   "evidence": "Search 6: obesity/overweight listed as increased pressure factor.",
+   "url": "https://medlineplus.gov/ency/article/000960.htm",
+   "action": "kept"
+  },
+  {
+   "id": "c10",
+   "classification": "supported",
+   "evidence": "Search 1: long-term constipation and heavy straining raise pressure on the belly wall.",
+   "url": "https://medlineplus.gov/ency/article/000960.htm",
+   "action": "kept"
+  },
+  {
+   "id": "c11",
+   "classification": "supported",
+   "evidence": "Search 1/6: coughing and smoking linked to hernias.",
+   "url": "https://medlineplus.gov/ency/article/000960.htm",
+   "action": "kept"
+  },
+  {
+   "id": "c12",
+   "classification": "unsupported",
+   "evidence": "\"Heavy exertion\" not found; heavy lifting appears in search 6.",
+   "url": "https://medlineplus.gov/ency/article/000960.htm",
+   "action": "edited",
+   "newSentence": "Heavy lifting."
+  },
+  {
+   "id": "c13",
+   "classification": "unsupported",
+   "evidence": "\"Over 50\" not retrieved; MedlinePlus (search 5): femoral hernias occur more often in women. Inguinal more common in men is textbook.",
+   "url": "https://medlineplus.gov/ency/article/000960.htm",
+   "action": "edited",
+   "newSentence": "Femoral hernias occur more often in women, and inguinal hernias are more common in men."
+  },
+  {
+   "id": "c14",
+   "classification": "supported",
+   "evidence": "Search 1: lump bigger on cough, sneeze or cry, smaller lying down.",
+   "url": "https://www.nhs.uk/conditions/hernia/",
+   "action": "kept"
+  },
+  {
+   "id": "c15",
+   "classification": "supported",
+   "evidence": "Search 5: small lump at top of thigh/groin with femoral hernia.",
+   "url": "https://www.nhs.uk/conditions/femoral-hernia/",
+   "action": "kept"
+  },
+  {
+   "id": "c16",
+   "classification": "unsupported",
+   "evidence": "NIDDK redness not retrieved; search 1: hernia turning red, purple or dark, severe pain, vomiting, unable to pass wind with strangulation/obstruction.",
+   "url": "https://www.nhs.uk/conditions/hernia/",
+   "action": "edited",
+   "newSentence": "Redness, severe pain, vomiting and being unable to pass wind or stools when a hernia is trapped or strangulated."
+  },
+  {
+   "id": "c17",
+   "classification": "textbook",
+   "evidence": "Umbilical hernia is a bulge at the belly button; not separately retrieved.",
+   "url": "https://www.nhs.uk/conditions/umbilical-hernia/",
+   "action": "kept"
+  },
+  {
+   "id": "c18",
+   "classification": "supported",
+   "evidence": "Search 1/3: blood supply cut off is strangulation, a medical emergency.",
+   "url": "https://www.nhs.uk/conditions/hernia/",
+   "action": "kept"
+  },
+  {
+   "id": "c19",
+   "classification": "supported",
+   "evidence": "Search 3: strangulation causes severe abdominal pain, nausea, vomiting; search 1: bloated belly.",
+   "url": "https://www.nhs.uk/conditions/hernia/",
+   "action": "kept"
+  },
+  {
+   "id": "c20",
+   "classification": "unsupported",
+   "evidence": "Search 3: results did not address sepsis or gangrene.",
+   "url": "https://www.nhs.uk/conditions/umbilical-hernia/",
+   "action": "removed"
+  },
+  {
+   "id": "c21",
+   "classification": "supported",
+   "evidence": "Search 8 (PMC): chronic pain is a documented complication after inguinal hernia repair.",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4897331/",
+   "action": "edited",
+   "newSentence": "Chronic pain in some people after inguinal hernia repair surgery."
+  },
+  {
+   "id": "c22",
+   "classification": "supported",
+   "evidence": "Search 7: diagnosis usually clinical.",
+   "url": "https://www.nhs.uk/conditions/hernia/",
+   "action": "kept"
+  },
+  {
+   "id": "c23",
+   "classification": "supported",
+   "evidence": "Search 7: bulge looked for while standing or coughing.",
+   "url": "https://www.nhs.uk/conditions/hernia/",
+   "action": "kept"
+  },
+  {
+   "id": "c24",
+   "classification": "unsupported",
+   "evidence": "Search 7/4: ultrasound if uncertain; NIDDK imaging if exam unclear; CT/MRI not found.",
+   "url": "https://www.niddk.nih.gov/health-information/digestive-diseases/inguinal-hernia",
+   "action": "edited",
+   "newSentence": "Imaging such as ultrasound may be used if the diagnosis is not clear after the examination."
+  },
+  {
+   "id": "c25",
+   "classification": "unsupported",
+   "evidence": "Search 7: depends on type and symptoms; \"what caused it\" not found.",
+   "url": "https://www.nhs.uk/conditions/hernia/",
+   "action": "edited",
+   "newSentence": "Treatment depends on the type of hernia and its symptoms."
+  },
+  {
+   "id": "c26",
+   "classification": "supported",
+   "evidence": "Search 2/3: pharmacy and stronger medicines, weight loss, surgery.",
+   "url": "https://www.nhs.uk/conditions/hiatus-hernia/",
+   "action": "kept"
+  },
+  {
+   "id": "c27",
+   "classification": "unsupported",
+   "evidence": "Search 7/4: watchful waiting for minimal symptoms, evidence mainly men with inguinal hernia; type matters.",
+   "url": "https://www.niddk.nih.gov/health-information/digestive-diseases/inguinal-hernia",
+   "action": "edited",
+   "newSentence": "A hernia that causes few or no symptoms may sometimes be watched rather than operated on, depending on the type."
+  },
+  {
+   "id": "c28",
+   "classification": "supported",
+   "evidence": "Search 1/6 list straining, lifting, overweight, coughing.",
+   "url": "https://www.nhs.uk/conditions/hernia/",
+   "action": "kept"
+  },
+  {
+   "id": "c29",
+   "classification": "unsupported",
+   "evidence": "Stopping smoking not retrieved for hiatus; search 2: smaller meals, raise bed head, lose weight.",
+   "url": "https://www.nhs.uk/conditions/hiatus-hernia/",
+   "action": "edited",
+   "newSentence": "For hiatus hernia symptoms, NHS advice includes eating smaller meals, raising the head end of the bed and losing weight if overweight."
+  },
+  {
+   "id": "c30",
+   "classification": "unsupported",
+   "evidence": "Search 5: 999 for very bad tummy pain, unable to pass wind; confusion/high temperature appear under NHS 111 in search 1.",
+   "url": "https://www.nhs.uk/conditions/femoral-hernia/",
+   "action": "edited",
+   "newSentence": "Call 999 or go to A&E for very bad tummy pain, being sick, or being unable to pass wind or stools."
+  },
+  {
+   "id": "c31",
+   "classification": "unsupported",
+   "evidence": "Search 1: pain in or around hernia and fever -> NHS 111; cannot be pushed back -> urgent.",
+   "url": "https://www.nhs.uk/conditions/hernia/",
+   "action": "edited",
+   "newSentence": "Pain in or around a hernia, a bulge that is suddenly larger or cannot be pushed back in, redness, or a high temperature also needs urgent assessment through NHS 111, or 999 if severe."
+  },
+  {
+   "id": "c32",
+   "classification": "textbook",
+   "evidence": "Signposting to GP; search 1: see a GP if you think you have a hernia.",
+   "url": "https://www.nhs.uk/conditions/hernia/",
+   "action": "kept"
+  },
+  {
+   "id": "c33",
+   "classification": "textbook",
+   "evidence": "Plain definition.",
+   "url": "https://www.nhs.uk/conditions/hernia/",
+   "action": "kept"
+  },
+  {
+   "id": "c34",
+   "classification": "textbook",
+   "evidence": "As overview.",
+   "url": "https://www.nhs.uk/conditions/hernia/",
+   "action": "kept"
+  },
+  {
+   "id": "c35",
+   "classification": "textbook",
+   "evidence": "As overview.",
+   "url": "https://www.nhs.uk/conditions/hernia/",
+   "action": "kept"
+  },
+  {
+   "id": "c36",
+   "classification": "supported",
+   "evidence": "Search 4: NIDDK diagnosis from history and exam.",
+   "url": "https://www.niddk.nih.gov/health-information/digestive-diseases/inguinal-hernia",
+   "action": "kept"
+  },
+  {
+   "id": "c37",
+   "classification": "unsupported",
+   "evidence": "\"Over 50\"/\"anyone\" not retrieved; MedlinePlus: more often in women.",
+   "url": "https://www.nhs.uk/conditions/femoral-hernia/",
+   "action": "edited",
+   "newSentence": "A femoral hernia causes a small lump at the top of the thigh and occurs more often in women than in men."
+  },
+  {
+   "id": "c38",
+   "classification": "textbook",
+   "evidence": "Plain fact.",
+   "url": "https://www.nhs.uk/conditions/umbilical-hernia/",
+   "action": "kept"
+  },
+  {
+   "id": "c39",
+   "classification": "supported",
+   "evidence": "Search 2/1 and hiatus page title.",
+   "url": "https://www.nhs.uk/conditions/hiatus-hernia/",
+   "action": "kept"
+  },
+  {
+   "id": "c40",
+   "classification": "supported",
+   "evidence": "Search 2: can have hiatus hernia without knowing; search 1.",
+   "url": "https://www.nhs.uk/conditions/hernia/",
+   "action": "kept"
+  },
+  {
+   "id": "c41",
+   "classification": "supported",
+   "evidence": "Search 1.",
+   "url": "https://www.nhs.uk/conditions/hernia/",
+   "action": "kept"
+  },
+  {
+   "id": "c42",
+   "classification": "supported",
+   "evidence": "Search 1: many cause little beyond a bulge.",
+   "url": "https://www.nhs.uk/conditions/hernia/",
+   "action": "kept"
+  },
+  {
+   "id": "c43",
+   "classification": "textbook",
+   "evidence": "As overview.",
+   "url": "https://www.nhs.uk/conditions/hernia/",
+   "action": "kept"
+  },
+  {
+   "id": "c44",
+   "classification": "unsupported",
+   "evidence": "Aching/discomfort walking not found; search 1 (MedlinePlus): discomfort worse standing, straining, lifting.",
+   "url": "https://medlineplus.gov/ency/article/000960.htm",
+   "action": "edited",
+   "newSentence": "Some people have discomfort or pain that is worse when standing, straining or lifting heavy objects."
+  },
+  {
+   "id": "c45",
+   "classification": "unsupported",
+   "evidence": "Umbilical hernia painless/adult discomfort not found.",
+   "url": "https://www.nhs.uk/conditions/umbilical-hernia/",
+   "action": "removed"
+  },
+  {
+   "id": "c46",
+   "classification": "supported",
+   "evidence": "Search 2 adds bad breath.",
+   "url": "https://www.nhs.uk/conditions/hiatus-hernia/",
+   "action": "edited",
+   "newSentence": "Hiatus hernias typically cause heartburn, acid reflux, bad breath, bloating, feeling sick, and difficulty or pain when swallowing."
+  },
+  {
+   "id": "c47",
+   "classification": "textbook",
+   "evidence": "Hiatus hernia symptoms overlap with reflux disease.",
+   "url": "https://www.nhs.uk/conditions/hiatus-hernia/",
+   "action": "kept"
+  },
+  {
+   "id": "c48",
+   "classification": "unsupported",
+   "evidence": "Search 2 says only that one can have a hiatus hernia without it being a problem.",
+   "url": "https://www.nhs.uk/conditions/hiatus-hernia/",
+   "action": "edited",
+   "newSentence": "Some people have a hiatus hernia without knowing and without it causing a problem."
+  },
+  {
+   "id": "c49",
+   "classification": "textbook",
+   "evidence": "Plain statement.",
+   "url": "https://www.nhs.uk/conditions/hernia/",
+   "action": "kept"
+  },
+  {
+   "id": "c50",
+   "classification": "unsupported",
+   "evidence": "Weight loss \"very quickly\" not found; search 6 review lists coughing, lifting, pregnancy, overweight, smoking.",
+   "url": "https://medlineplus.gov/ency/article/000960.htm",
+   "action": "edited",
+   "newSentence": "Coughing, heavy lifting, pregnancy, being overweight and smoking are also linked with hernias."
+  },
+  {
+   "id": "c51",
+   "classification": "unsupported",
+   "evidence": "MedlinePlus attribution of list not confirmed; search 1: constipation and heavy straining raise pressure.",
+   "url": "https://medlineplus.gov/ency/article/000960.htm",
+   "action": "edited",
+   "newSentence": "Activities or medical problems that raise pressure on the tissue in the belly wall may contribute, such as long-term constipation and heavy straining."
+  },
+  {
+   "id": "c52",
+   "classification": "textbook",
+   "evidence": "Inguinal more common in men; femoral more in women (search 5).",
+   "url": "https://medlineplus.gov/ency/article/000960.htm",
+   "action": "edited",
+   "newSentence": "Inguinal hernias are more common in men, while femoral hernias occur more often in women."
+  },
+  {
+   "id": "c53",
+   "classification": "unsupported",
+   "evidence": "Over 50 not retrieved; replaced by search 1 statement on factors weakening abdominal wall.",
+   "url": "https://www.nhs.uk/conditions/hernia/",
+   "action": "edited",
+   "newSentence": "Factors that weaken the tissues of the abdominal wall include inherited tendencies, increasing age and smoking."
+  },
+  {
+   "id": "c54",
+   "classification": "unsupported",
+   "evidence": "Attribution to both lists not confirmed; search 6: MedlinePlus says usually no clear cause.",
+   "url": "https://medlineplus.gov/ency/article/000960.htm",
+   "action": "edited",
+   "newSentence": "MedlinePlus notes that there is usually no clear cause of a hernia."
+  },
+  {
+   "id": "c55",
+   "classification": "wrong",
+   "evidence": "Search 6/2 give risk factors for hiatal hernia; \"not exactly clear\" not found.",
+   "url": "https://www.nhs.uk/conditions/hiatus-hernia/",
+   "action": "removed"
+  },
+  {
+   "id": "c56",
+   "classification": "unsupported",
+   "evidence": "Diaphragm weakening not found; replaced by MedlinePlus hiatal risk factors.",
+   "url": "https://medlineplus.gov/ency/article/001137.htm",
+   "action": "edited",
+   "newSentence": "For hiatus hernias, MedlinePlus says the risk rises with age, obesity and smoking."
+  },
+  {
+   "id": "c57",
+   "classification": "supported",
+   "evidence": "Search 3: most umbilical hernias in children close on their own.",
+   "url": "https://www.ncbi.nlm.nih.gov/books/NBK459294/",
+   "action": "edited",
+   "newSentence": "Most umbilical hernias in babies and young children close on their own."
+  },
+  {
+   "id": "c58",
+   "classification": "supported",
+   "evidence": "Search 7.",
+   "url": "https://www.nhs.uk/conditions/hernia/",
+   "action": "kept"
+  },
+  {
+   "id": "c59",
+   "classification": "supported",
+   "evidence": "Search 7.",
+   "url": "https://www.nhs.uk/conditions/hernia/",
+   "action": "kept"
+  },
+  {
+   "id": "c60",
+   "classification": "unsupported",
+   "evidence": "CT/MRI not found; ultrasound if uncertain.",
+   "url": "https://www.niddk.nih.gov/health-information/digestive-diseases/inguinal-hernia",
+   "action": "removed"
+  },
+  {
+   "id": "c61",
+   "classification": "supported",
+   "evidence": "Search 4: NIDDK history and exam; imaging if unclear.",
+   "url": "https://www.niddk.nih.gov/health-information/digestive-diseases/inguinal-hernia",
+   "action": "edited",
+   "newSentence": "NIDDK says an inguinal hernia is diagnosed from the history and an examination of a lump in the groin, and that imaging tests may be ordered if the diagnosis is not clear after a physical examination."
+  },
+  {
+   "id": "c62",
+   "classification": "supported",
+   "evidence": "Search 2: GP can send for tests if stronger medicines fail.",
+   "url": "https://www.nhs.uk/conditions/hiatus-hernia/",
+   "action": "kept"
+  },
+  {
+   "id": "c63",
+   "classification": "supported",
+   "evidence": "Search 2: see GP if symptoms do not go away, very bad or worsening, or pharmacy medicines do not help.",
+   "url": "https://www.nhs.uk/conditions/hiatus-hernia/",
+   "action": "edited",
+   "newSentence": "The NHS says to see a GP if hiatus hernia symptoms do not go away, are very bad or getting worse, or if medicines from a pharmacy do not help."
+  },
+  {
+   "id": "c64",
+   "classification": "unsupported",
+   "evidence": "Umbilical GP criteria not retrieved.",
+   "url": "https://www.nhs.uk/conditions/umbilical-hernia/",
+   "action": "removed"
+  },
+  {
+   "id": "c65",
+   "classification": "unsupported",
+   "evidence": "Search 7: type and symptoms; cause not found.",
+   "url": "https://www.nhs.uk/conditions/hernia/",
+   "action": "edited",
+   "newSentence": "Treatment depends on the type of hernia and its symptoms."
+  },
+  {
+   "id": "c66",
+   "classification": "unsupported",
+   "evidence": "Reworded in treatment field with type caveat; removed from article.",
+   "url": "https://www.nhs.uk/conditions/hernia/",
+   "action": "removed"
+  },
+  {
+   "id": "c67",
+   "classification": "supported",
+   "evidence": "Search 4: NIDDK delay surgery; ~70% need surgery within 5 years; \"see doctor regularly\" not found.",
+   "url": "https://www.niddk.nih.gov/health-information/digestive-diseases/inguinal-hernia",
+   "action": "edited",
+   "newSentence": "NIDDK says men whose inguinal hernias cause few or no symptoms may be able to delay surgery, although about 70 percent of men who delay surgery develop new or worsening symptoms and need surgery within 5 years."
+  },
+  {
+   "id": "c68",
+   "classification": "supported",
+   "evidence": "Search 4.",
+   "url": "https://www.niddk.nih.gov/health-information/digestive-diseases/inguinal-hernia",
+   "action": "kept"
+  },
+  {
+   "id": "c69",
+   "classification": "supported",
+   "evidence": "Search 6: MedlinePlus says surgery is the only treatment that can permanently fix a hernia.",
+   "url": "https://medlineplus.gov/ency/article/000960.htm",
+   "action": "kept"
+  },
+  {
+   "id": "c70",
+   "classification": "unsupported",
+   "evidence": "Search 3: unlikely to get better by itself, surgery generally recommended; \"risk of complications is higher\" not found.",
+   "url": "https://www.nhs.uk/tests-and-treatments/umbilical-hernia-repair/",
+   "action": "edited",
+   "newSentence": "For adults with an umbilical hernia, the NHS says the hernia is unlikely to get better by itself, and surgery is generally recommended."
+  },
+  {
+   "id": "c71",
+   "classification": "unsupported",
+   "evidence": "Search 3: most close alone; surgery considered if large or not gone by 4-5; \"hospitals differ\" not found.",
+   "url": "https://www.ncbi.nlm.nih.gov/books/NBK459294/",
+   "action": "edited",
+   "newSentence": "Children usually do not need treatment for an umbilical hernia because most close by themselves, and surgery is generally considered if the hernia is large or has not gone by the age of 4 or 5."
+  },
+  {
+   "id": "c72",
+   "classification": "supported",
+   "evidence": "Hiatus page.",
+   "url": "https://www.nhs.uk/conditions/hiatus-hernia/",
+   "action": "kept"
+  },
+  {
+   "id": "c73",
+   "classification": "supported",
+   "evidence": "Search 2.",
+   "url": "https://www.nhs.uk/conditions/hiatus-hernia/",
+   "action": "kept"
+  },
+  {
+   "id": "c74",
+   "classification": "unsupported",
+   "evidence": "Search 2: self-care and pharmacy first, stronger medicines if not; \"most ... only\" not found.",
+   "url": "https://www.nhs.uk/conditions/hiatus-hernia/",
+   "action": "edited",
+   "newSentence": "Many people manage symptoms with lifestyle changes and medicines from a pharmacy."
+  },
+  {
+   "id": "c75",
+   "classification": "unsupported",
+   "evidence": "Search 2: smaller frequent meals, raise bed head, lose weight, not eating 3-4 hours before bed, avoid trigger foods; stopping smoking/alcohol not found.",
+   "url": "https://www.nhs.uk/conditions/hiatus-hernia/",
+   "action": "edited",
+   "newSentence": "NHS advice includes eating smaller, more frequent meals, raising the head end of the bed, losing weight if overweight, not eating within 3 or 4 hours of going to bed, and avoiding trigger foods."
+  },
+  {
+   "id": "c76",
+   "classification": "unsupported",
+   "evidence": "Tight clothes not found.",
+   "url": "https://www.nhs.uk/conditions/hiatus-hernia/",
+   "action": "removed"
+  },
+  {
+   "id": "c77",
+   "classification": "supported",
+   "evidence": "Search 2: antacids/alginates ease symptoms short term, will not cure.",
+   "url": "https://www.nhs.uk/conditions/hiatus-hernia/",
+   "action": "edited",
+   "newSentence": "Pharmacists may recommend medicines called antacids or alginates, which can help ease symptoms in the short term but do not cure the problem."
+  },
+  {
+   "id": "c78",
+   "classification": "supported",
+   "evidence": "Search 2: do not stop prescribed medicine without speaking to a doctor.",
+   "url": "https://www.nhs.uk/conditions/hiatus-hernia/",
+   "action": "edited",
+   "newSentence": "The NHS advises that prescribed medicine is not stopped without speaking to a doctor first."
+  },
+  {
+   "id": "c79",
+   "classification": "supported",
+   "evidence": "Search 2: stronger medicines from GP; surgery only if others fail.",
+   "url": "https://www.nhs.uk/conditions/hiatus-hernia/",
+   "action": "edited",
+   "newSentence": "If these steps do not help, a GP can prescribe stronger medicines. Surgery is usually considered only if other treatments have not worked and very bad symptoms continue."
+  },
+  {
+   "id": "c80",
+   "classification": "supported",
+   "evidence": "Search 1/3.",
+   "url": "https://www.nhs.uk/conditions/hernia/",
+   "action": "kept"
+  },
+  {
+   "id": "c81",
+   "classification": "supported",
+   "evidence": "Search 3/4: emergency surgery.",
+   "url": "https://www.nhs.uk/conditions/hernia/",
+   "action": "kept"
+  },
+  {
+   "id": "c82",
+   "classification": "supported",
+   "evidence": "Search 1: red/purple/dark, severe pain, nausea, vomiting, fever; Wales: cannot be pushed back.",
+   "url": "https://www.nhs.uk/conditions/hernia/",
+   "action": "edited",
+   "newSentence": "Signs include a bulge that cannot be pushed back in, fever, redness, sudden or severe pain, and nausea and vomiting."
+  },
+  {
+   "id": "c83",
+   "classification": "unsupported",
+   "evidence": "Search 5: very bad tummy pain, unable to pass wind or poo; high temperature not retrieved for 999.",
+   "url": "https://www.nhs.uk/conditions/femoral-hernia/",
+   "action": "edited",
+   "newSentence": "The NHS femoral hernia page says to call 999 or go to A&E for very bad tummy pain, being sick, or being unable to pass wind or stools."
+  },
+  {
+   "id": "c84",
+   "classification": "unsupported",
+   "evidence": "Search 3: sepsis/gangrene not addressed.",
+   "url": "https://www.nhs.uk/conditions/umbilical-hernia/",
+   "action": "removed"
+  },
+  {
+   "id": "c85",
+   "classification": "supported",
+   "evidence": "Search 2: urgent GP appointment or NHS 111.",
+   "url": "https://www.nhs.uk/conditions/hiatus-hernia/",
+   "action": "edited",
+   "newSentence": "For hiatus hernia, indigestion or acid reflux with weight loss without trying, difficulty swallowing, frequent vomiting, blood in vomit or upper tummy pain needs an urgent GP appointment or contact with NHS 111."
+  },
+  {
+   "id": "c86",
+   "classification": "supported",
+   "evidence": "Search 1: see a GP if you think you have a hernia.",
+   "url": "https://www.nhs.uk/conditions/hernia/",
+   "action": "kept"
+  },
+  {
+   "id": "c87",
+   "classification": "unsupported",
+   "evidence": "Adult surgery \"most\" -> generally recommended; hiatus \"does not normally need treatment\" not found.",
+   "url": "https://www.nhs.uk/tests-and-treatments/umbilical-hernia-repair/",
+   "action": "edited",
+   "newSentence": "Sometimes. Most umbilical hernias in babies and young children close on their own. In adults, the NHS says an umbilical hernia is unlikely to get better by itself, and surgery is generally recommended. Some people have a hiatus hernia without it causing a problem."
+  },
+  {
+   "id": "c88",
+   "classification": "unsupported",
+   "evidence": "Umbilical usually painless not found; red flags supported by search 1; 111 for pain in/around hernia.",
+   "url": "https://www.nhs.uk/conditions/hernia/",
+   "action": "edited",
+   "newSentence": "No. Many hernias cause little or no pain. However, pain in or around a hernia, redness or fever can be a sign of strangulation, which is a medical emergency. Very bad tummy pain, being sick, or being unable to pass wind or stools needs 999 or A&E, and other worrying pain needs NHS 111 or a GP the same day."
+  },
+  {
+   "id": "c89",
+   "classification": "unsupported",
+   "evidence": "NHS watch-without-operation claim not retrieved generally; NIDDK/MedlinePlus supported.",
+   "url": "https://www.niddk.nih.gov/health-information/digestive-diseases/inguinal-hernia",
+   "action": "edited",
+   "newSentence": "Not necessarily. NIDDK says men whose inguinal hernias cause few or no symptoms may be able to delay surgery, but most people with inguinal hernias will need surgery. MedlinePlus says surgery is the only treatment that permanently fixes a hernia. A GP can advise on the right approach for each type."
+  },
+  {
+   "id": "c90",
+   "classification": "supported",
+   "evidence": "Search 1/3/5; \"suddenly larger\" replaced by cannot be pushed back.",
+   "url": "https://www.nhs.uk/conditions/hernia/",
+   "action": "edited",
+   "newSentence": "It is a hernia where the blood supply to the trapped tissue is cut off. It is a medical emergency. Warning signs include a bulge that cannot be pushed back in, severe pain, sickness and being unable to pass wind or stools. Call 999 or go to A&E."
+  },
+  {
+   "id": "c91",
+   "classification": "supported",
+   "evidence": "Search 2.",
+   "url": "https://www.nhs.uk/conditions/hiatus-hernia/",
+   "action": "kept"
+  },
+  {
+   "id": "c92",
+   "classification": "supported",
+   "evidence": "As overview.",
+   "url": "https://www.nhs.uk/conditions/hernia/",
+   "action": "kept"
+  },
+  {
+   "id": "c93",
+   "classification": "textbook",
+   "evidence": "As overview.",
+   "url": "https://www.nhs.uk/conditions/hernia/",
+   "action": "kept"
+  },
+  {
+   "id": "c94",
+   "classification": "unsupported",
+   "evidence": "CT/MRI not found.",
+   "url": "https://www.nhs.uk/conditions/hernia/",
+   "action": "edited",
+   "newSentence": "Usually found by: A GP examining the area, with imaging if the diagnosis is unclear"
+  },
+  {
+   "id": "c95",
+   "classification": "supported",
+   "evidence": "Search 1.",
+   "url": "https://www.nhs.uk/conditions/hernia/",
+   "action": "kept"
+  },
+  {
+   "id": "c96",
+   "classification": "supported",
+   "evidence": "Search 5.",
+   "url": "https://www.nhs.uk/conditions/femoral-hernia/",
+   "action": "kept"
+  },
+  {
+   "id": "c97",
+   "classification": "supported",
+   "evidence": "Search 6.",
+   "url": "https://medlineplus.gov/ency/article/000960.htm",
+   "action": "kept"
+  },
+  {
+   "id": "c98",
+   "classification": "unsupported",
+   "evidence": "Search 2 only: can have one without it being a problem.",
+   "url": "https://www.nhs.uk/conditions/hiatus-hernia/",
+   "action": "edited",
+   "newSentence": "Hiatus hernia: Some people have one without knowing and without a problem"
+  }
+ ],
+ "notes": "Retrieved summaries were loose and did not always say which page carried a claim; attribution to NHS pages is by topic. NHS 'over 50' for femoral hernia, sepsis/gangrene for umbilical hernia, CT/MRI, NHS umbilical GP criteria and several hiatus lifestyle tips (stopping smoking, alcohol, tight clothes) could not be retrieved and were removed. The NHS 999 vs 111 split for hernia red flags differed between retrieved pages; both routes are named. Human check suggested on the seekCare wording and the NIDDK 70 percent figure."
+}
