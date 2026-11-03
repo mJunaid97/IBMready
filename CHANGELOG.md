@@ -11,7 +11,7 @@ and what it found. The audit and its numbers are in `docs/seo/audit-2026-11-03.m
 - `blog/post.html`, the query-URL template of the blog, was shipped as a page with no canonical, no h1 and no content; the other templates were removed at build time and
   this one was missing from the list. It is removed and the smoke test fails if any template page is served.
 - Speed: the 3D preview image, the largest thing above the fold on every article page, loads eagerly at high priority instead of lazily; the home hero is WebP, 80 KB instead of 176 KB, with the
-  JPEG as fallback. A font preload was tried and left out: it made no difference with a compressing server and delayed the largest contentful paint by 1.3 s on a throttled phone without one.
+  JPEG as fallback. A font preload was tried and left out: it made no difference with a compressing server and delayed the largest contentful paint by up to 1.4 s on a throttled phone without one.
 - Internal links: every blog post ends with *More guides and news* (the next and previous post on the same subject, then the posts that share the most linked pages), so no post is linked
   from the hub alone (50 news briefs had two links in; the smoke test now requires three); the home page links the twelve conditions and twelve medicines in the hubs' "Start here" lists,
   which were re-chosen from UK search volume (Ahrefs) weighted by how realistic a first-page result is for a new site (lupus, sinusitis, fibroids, slipped disc, hernia, thrush, IBS and peptic

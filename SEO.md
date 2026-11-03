@@ -198,7 +198,7 @@ vulva, shows the modelled structures around it; pages without a
 3D view share `site/og-cover.png`, the site-wide cover with the logo and positioning line) with a *Load the 3D model* button that swaps in the
 explorer iframe; without scripts the button is a link to the explorer. Pages ship as static HTML with no
 client-side rendering on the critical path and one stylesheet; the one typeface (Inter, self-hosted, `font-display: swap`) is not preloaded (measured:
-no gain when the server compresses, and 1.3 s later on a throttled phone when it does not, because the font competes with the render-blocking stylesheet);
+no gain when the server compresses, and up to 1.4 s later on a throttled phone when it does not, because the font competes with the render-blocking stylesheet);
 the 3D preview image is the largest thing above the fold on an article page, so it loads eagerly at high priority, not lazily; images carry width and
 height; the home hero is WebP (80 KB, from 176 KB) with the JPEG as fallback; the model, JSON and vendor code have long cache lifetimes (`.htaccess`).
 Measure against a compressing server (the production server compresses text with Brotli or gzip): an uncompressed local server makes the 60 KB
