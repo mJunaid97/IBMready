@@ -1,6 +1,8 @@
 # Changelog
 
-## Unreleased
+## v1.10.0 — 2026-11-03
+
+Health blog and news (221 posts), 64 new condition pages for the most-searched diseases, 46 new medicines, 28 new drug classes, and in-depth articles on 52 existing pages. Every claim was checked in two passes against its sources; nothing is clinically reviewed.
 
 <!-- blog-and-batches -->
 - Blog and health news: a new `blog` content type (one file per post under `content/blog/`, kind `guide` or `news`). The hub `/blog/`
