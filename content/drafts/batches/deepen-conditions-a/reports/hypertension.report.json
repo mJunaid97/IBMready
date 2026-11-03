@@ -1,0 +1,699 @@
+{
+ "id": "hypertension",
+ "searchesUsed": 16,
+ "counts": {
+  "supported": 34,
+  "textbook": 2,
+  "unsupported": 33,
+  "wrong": 0,
+  "unsafe": 0,
+  "unchecked": 0
+ },
+ "claims": [
+  {
+   "id": "c01",
+   "classification": "supported",
+   "evidence": "NHS: high blood pressure does not usually cause any symptoms; only reliable way to know is to have it measured",
+   "url": "https://www.nhs.uk/conditions/high-blood-pressure/",
+   "action": "kept"
+  },
+  {
+   "id": "c02",
+   "classification": "unsupported",
+   "evidence": "No retrieved text says why people do not know; inferred",
+   "url": "https://www.nhs.uk/conditions/high-blood-pressure/",
+   "action": "removed"
+  },
+  {
+   "id": "c03",
+   "classification": "supported",
+   "evidence": "NHS: symptoms such as headaches, blurred vision, chest pain are rare",
+   "url": "https://www.nhs.uk/conditions/high-blood-pressure/",
+   "action": "kept"
+  },
+  {
+   "id": "c04",
+   "classification": "supported",
+   "evidence": "NHS inform: symptoms of very high BP are headaches, blurred or double vision, regular nosebleeds, shortness of breath; contact GP practice (a second search summary said nosebleeds not listed; a re-query confirmed they are)",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/cardiovascular-disease/risk-factors-for-cardiovascular-disease/high-blood-pressure-hypertension/",
+   "action": "edited",
+   "newSentence": "NHS inform lists headaches, blurred or double vision, regular nosebleeds and shortness of breath as symptoms of very high blood pressure and says to contact a GP practice if they occur."
+  },
+  {
+   "id": "c05",
+   "classification": "supported",
+   "evidence": "NHS England guidance: NHS 111 if often headaches or blurred vision or chest pain that comes and goes",
+   "url": "https://www.nhs.uk/conditions/high-blood-pressure/",
+   "action": "kept"
+  },
+  {
+   "id": "c06",
+   "classification": "supported",
+   "evidence": "NHS: call 999 for sudden chest pain that does not go away, or with sweaty, sick, light headed, short of breath; could be a heart attack",
+   "url": "https://www.nhs.uk/conditions/high-blood-pressure/",
+   "action": "edited",
+   "newSentence": "It says to call 999 for chest pain that does not go away, or chest pain with sweating, sickness, light-headedness or breathlessness, as this could be a heart attack."
+  },
+  {
+   "id": "c07",
+   "classification": "supported",
+   "evidence": "MedlinePlus topic page: primary hypertension most common, develops gradually with age",
+   "url": "https://medlineplus.gov/highbloodpressure.html",
+   "action": "edited",
+   "newSentence": "MedlinePlus describes primary, or essential, high blood pressure as the most common type, and says it usually develops gradually with age."
+  },
+  {
+   "id": "c08",
+   "classification": "supported",
+   "evidence": "MedlinePlus topic page: secondary caused by another medical condition or certain medicines; usually improves once condition treated or medicine stopped",
+   "url": "https://medlineplus.gov/highbloodpressure.html",
+   "action": "kept"
+  },
+  {
+   "id": "c09",
+   "classification": "unsupported",
+   "evidence": "Search said NHS pages focus on risk factors not causes; the list was MedlinePlus (kidney disease, adrenal disorders, pregnancy/pre-eclampsia, medicines, sleep apnoea). Diabetes and hormonal conditions not retrieved; sleep apnoea gloss not retrieved",
+   "url": "https://medlineplus.gov/highbloodpressure.html",
+   "action": "edited",
+   "newSentence": "MedlinePlus lists chronic kidney disease, disorders of the adrenal gland and pregnancy among the causes of secondary high blood pressure."
+  },
+  {
+   "id": "c10",
+   "classification": "supported",
+   "evidence": "NHLBI news item names NSAIDs such as ibuprofen, antidepressants, decongestants, hormonal birth control pills as medicines linked to high BP (causes page returned only its opening line)",
+   "url": "https://www.nhlbi.nih.gov/news/2023/beyond-salt-research-highlights-underappreciated-sources-high-blood-pressure",
+   "action": "edited",
+   "newSentence": "An NHLBI news item from the US names antidepressants, decongestants, hormonal birth control pills and nonsteroidal anti-inflammatory drugs (NSAIDs) such as ibuprofen as medicines linked to high blood pressure."
+  },
+  {
+   "id": "c11",
+   "classification": "supported",
+   "evidence": "NCBI review: white coat hypertension is raised office readings with normal readings outside the clinic",
+   "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12640426/",
+   "action": "kept"
+  },
+  {
+   "id": "c12",
+   "classification": "supported",
+   "evidence": "NCBI review/ABPM sources: ambulatory or home monitoring shows readings outside clinic",
+   "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12640426/",
+   "action": "kept"
+  },
+  {
+   "id": "c13",
+   "classification": "unsupported",
+   "evidence": "NHS: test usually takes a couple of minutes (draft said a few)",
+   "url": "https://www.nhs.uk/tests-and-treatments/blood-pressure-test/",
+   "action": "edited",
+   "newSentence": "A blood pressure test usually takes a couple of minutes, according to the NHS."
+  },
+  {
+   "id": "c14",
+   "classification": "unsupported",
+   "evidence": "Only cuff on upper arm that inflates then releases was retrieved; sleeve and table not",
+   "url": "https://www.nhs.uk/tests-and-treatments/blood-pressure-test/",
+   "action": "edited",
+   "newSentence": "A cuff on the upper arm inflates and then releases."
+  },
+  {
+   "id": "c15",
+   "classification": "supported",
+   "evidence": "NHS: test may be done a couple of times to make sure measurement is accurate",
+   "url": "https://www.nhs.uk/tests-and-treatments/blood-pressure-test/",
+   "action": "kept"
+  },
+  {
+   "id": "c16",
+   "classification": "supported",
+   "evidence": "NHS: readings are given as two numbers",
+   "url": "https://www.nhs.uk/conditions/high-blood-pressure/",
+   "action": "kept"
+  },
+  {
+   "id": "c17",
+   "classification": "textbook",
+   "evidence": "Plain textbook definition of systolic; not in retrieved text",
+   "url": "https://www.nhs.uk/tests-and-treatments/blood-pressure-test/",
+   "action": "kept"
+  },
+  {
+   "id": "c18",
+   "classification": "textbook",
+   "evidence": "Plain textbook definition of diastolic; not in retrieved text",
+   "url": "https://www.nhs.uk/tests-and-treatments/blood-pressure-test/",
+   "action": "kept"
+  },
+  {
+   "id": "c19",
+   "classification": "unsupported",
+   "evidence": "NICE: high clinic reading confirmed with ABPM (HBPM if declined); \"usually needs repeated readings\" not stated",
+   "url": "https://www.nice.org.uk/guidance/ng136/chapter/Recommendations",
+   "action": "edited",
+   "newSentence": "When a clinic reading is high, NICE recommends 24-hour monitoring to confirm the diagnosis, or home monitoring if 24-hour monitoring is declined or not tolerated."
+  },
+  {
+   "id": "c20",
+   "classification": "unsupported",
+   "evidence": "NHS: doctor or nurse may give a home monitor; 24-hour monitor fitted at a GP surgery, health centre or hospital (draft wording \"home machine, or a monitor to wear\" not exact)",
+   "url": "https://www.nhs.uk/tests-and-treatments/blood-pressure-test/",
+   "action": "edited",
+   "newSentence": "The NHS says a doctor or nurse may give a home monitor for use at home."
+  },
+  {
+   "id": "c21",
+   "classification": "unsupported",
+   "evidence": "NICE: target organ damage investigations should start while awaiting confirmation; \"such as heart and kidneys\" not in NICE text retrieved (only local summaries)",
+   "url": "https://www.nice.org.uk/guidance/ng136/chapter/Recommendations",
+   "action": "edited",
+   "newSentence": "NICE says investigations for target organ damage should be started while the diagnosis is being confirmed, and that drug treatment may be considered straight away if damage is found."
+  },
+  {
+   "id": "c22",
+   "classification": "supported",
+   "evidence": "NHS test page: most pharmacies, GP surgery, some workplaces",
+   "url": "https://www.nhs.uk/tests-and-treatments/blood-pressure-test/",
+   "action": "kept"
+  },
+  {
+   "id": "c23",
+   "classification": "unsupported",
+   "evidence": "Free pharmacy check has conditions: aged 40 or over, England, no existing diagnosis, not checked in last five years",
+   "url": "https://www.nhs.uk/nhs-services/pharmacies/find-a-pharmacy-that-offers-free-blood-pressure-checks/",
+   "action": "removed"
+  },
+  {
+   "id": "c24",
+   "classification": "supported",
+   "evidence": "NHS and NHS inform: lifestyle changes first, medicines added when needed",
+   "url": "https://www.nhs.uk/conditions/high-blood-pressure-hypertension/treatment/",
+   "action": "kept"
+  },
+  {
+   "id": "c25",
+   "classification": "supported",
+   "evidence": "NHS: offered medicine if readings stay high with high risk of other problems, in addition to lifestyle changes",
+   "url": "https://www.nhs.uk/conditions/high-blood-pressure-hypertension/treatment/",
+   "action": "kept"
+  },
+  {
+   "id": "c26",
+   "classification": "unsupported",
+   "evidence": "Retrieved NHS list: ACE inhibitors, ARBs, calcium channel blockers, beta-blockers; BHF adds diuretics. Thiazide diuretics and alpha-blockers not retrieved",
+   "url": "https://www.bhf.org.uk/informationsupport/treatments/medicine",
+   "action": "edited",
+   "newSentence": "Medicine groups named by the NHS and the British Heart Foundation include ACE inhibitors, angiotensin-2 receptor blockers, calcium channel blockers, diuretics and beta-blockers."
+  },
+  {
+   "id": "c27",
+   "classification": "supported",
+   "evidence": "NHS: choice depends on age, ethnicity and type 2 diabetes",
+   "url": "https://www.nhs.uk/conditions/high-blood-pressure-hypertension/treatment/",
+   "action": "kept"
+  },
+  {
+   "id": "c28",
+   "classification": "supported",
+   "evidence": "NHS: beta blockers now tend to be used only when other treatments have not worked",
+   "url": "https://www.nhs.uk/conditions/high-blood-pressure-hypertension/treatment/",
+   "action": "kept"
+  },
+  {
+   "id": "c29",
+   "classification": "unsupported",
+   "evidence": "BHF \"up to three types\" not found; only NHS saying more than one medicine may be needed",
+   "url": "https://www.nhs.uk/conditions/high-blood-pressure-hypertension/treatment/",
+   "action": "edited",
+   "newSentence": "The NHS says more than one medicine may be needed to keep blood pressure under control."
+  },
+  {
+   "id": "c30",
+   "classification": "unsupported",
+   "evidence": "Blood Pressure UK: dizziness and tiredness most commonly reported; sleepiness not stated",
+   "url": "https://www.bloodpressureuk.org/your-blood-pressure/how-to-lower-your-blood-pressure/medications-for-high-blood-pressure/",
+   "action": "edited",
+   "newSentence": "Blood Pressure UK says dizziness and tiredness are the most commonly reported side effects of blood pressure tablets, and that they often improve or go away as the body adjusts."
+  },
+  {
+   "id": "c31",
+   "classification": "unsupported",
+   "evidence": "Blood Pressure UK: if a side effect does not settle, raise with doctor who can consider a different medicine (\"usually possible\" not stated)",
+   "url": "https://www.bloodpressureuk.org/your-blood-pressure/how-to-lower-your-blood-pressure/medications-for-high-blood-pressure/",
+   "action": "removed"
+  },
+  {
+   "id": "c32",
+   "classification": "supported",
+   "evidence": "NHS inform: may have to take medication for the rest of your life",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/cardiovascular-disease/risk-factors-for-cardiovascular-disease/high-blood-pressure-hypertension/",
+   "action": "kept"
+  },
+  {
+   "id": "c33",
+   "classification": "unsupported",
+   "evidence": "NHS: do not stop if side effects; Blood Pressure UK: stopping alone, pressure goes back up; \"important not to stop without speaking to GP\" not retrieved verbatim",
+   "url": "https://www.nhs.uk/conditions/high-blood-pressure-hypertension/treatment/",
+   "action": "edited",
+   "newSentence": "The NHS says not to stop taking the medicine if side effects occur, and Blood Pressure UK says that stopping it on its own lets blood pressure go back up."
+  },
+  {
+   "id": "c34",
+   "classification": "supported",
+   "evidence": "NHS lifestyle list: balanced diet, exercise, lose weight if needed, cut salt and alcohol, cut back on caffeine, not smoking",
+   "url": "https://www.nhs.uk/conditions/high-blood-pressure-hypertension/treatment/",
+   "action": "kept"
+  },
+  {
+   "id": "c35",
+   "classification": "unsupported",
+   "evidence": "Search found sources support weight loss helping but not that it alone is often enough",
+   "url": "https://www.nhs.uk/conditions/high-blood-pressure-hypertension/treatment/",
+   "action": "removed"
+  },
+  {
+   "id": "c36",
+   "classification": "unsupported",
+   "evidence": "Retrieved: NHS trust leaflets say cutting salt, ready meals, takeaways helps; \"most salt from processed foods / check labels\" not retrieved",
+   "url": "https://www.ruh.nhs.uk/patients/patient_information/external_leaflets/DTT_Hypertension_and_diet.pdf",
+   "action": "edited",
+   "newSentence": "NHS trust leaflets say that cutting down on salt, ready meals and takeaways helps."
+  },
+  {
+   "id": "c37",
+   "classification": "unsupported",
+   "evidence": "Leaflet: potassium chloride salt substitutes not suitable for everyone e.g. kidney problems, heart failure, certain BP medicines",
+   "url": "https://www.ruh.nhs.uk/patients/patient_information/external_leaflets/DTT_Hypertension_and_diet.pdf",
+   "action": "edited",
+   "newSentence": "One NHS trust leaflet says salt substitutes made from potassium chloride are not suitable for everyone, for example people with kidney problems or heart failure, or those who take certain blood pressure medicines."
+  },
+  {
+   "id": "c38",
+   "classification": "unsupported",
+   "evidence": "No BHF page returned carried this",
+   "url": "https://www.bhf.org.uk/informationsupport/treatments/medicine",
+   "action": "removed"
+  },
+  {
+   "id": "c39",
+   "classification": "supported",
+   "evidence": "NHLBI: keep up treatment plan, regular follow-up, learn to monitor at home",
+   "url": "https://www.nhlbi.nih.gov/health/high-blood-pressure/living-with",
+   "action": "kept"
+  },
+  {
+   "id": "c40",
+   "classification": "supported",
+   "evidence": "NHLBI: provider may need to change or add medicines over time",
+   "url": "https://www.nhlbi.nih.gov/health/high-blood-pressure/living-with",
+   "action": "kept"
+  },
+  {
+   "id": "c41",
+   "classification": "supported",
+   "evidence": "MedlinePlus: untreated high BP linked to stroke, heart attack, heart failure, kidney disease",
+   "url": "https://medlineplus.gov/highbloodpressure.html",
+   "action": "kept"
+  },
+  {
+   "id": "c42",
+   "classification": "unsupported",
+   "evidence": "BHF impact review: devastating complications like kidney failure, heart failure and vascular dementia (\"untreated\" not stated)",
+   "url": "https://www.bhf.org.uk/-/media/files/what-we-do/impact-reviews-2023/impact-of-bhf-support-for-high-bp-research_references.pdf",
+   "action": "edited",
+   "newSentence": "The British Heart Foundation says high blood pressure can lead to complications such as kidney failure, heart failure and vascular dementia."
+  },
+  {
+   "id": "c43",
+   "classification": "unsupported",
+   "evidence": "NHS inform names stroke, heart attack, arterial thrombosis, AAA, kidney disease, vascular dementia; AAA gloss not retrieved",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/cardiovascular-disease/risk-factors-for-cardiovascular-disease/high-blood-pressure-hypertension/",
+   "action": "edited",
+   "newSentence": "NHS inform names stroke, heart attack, kidney disease and vascular dementia among the problems that untreated high blood pressure can cause."
+  },
+  {
+   "id": "c44",
+   "classification": "unsupported",
+   "evidence": "Arterial thrombosis gloss not retrieved",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/cardiovascular-disease/risk-factors-for-cardiovascular-disease/high-blood-pressure-hypertension/",
+   "action": "removed"
+  },
+  {
+   "id": "c45",
+   "classification": "supported",
+   "evidence": "MedlinePlus: heart works harder, muscle thickens; without control muscle can weaken, heart failure may develop",
+   "url": "https://medlineplus.gov/ency/article/000163.htm",
+   "action": "edited",
+   "newSentence": "MedlinePlus says hypertensive heart disease develops because the heart must work harder against the pressure, which over time thickens the heart muscle."
+  },
+  {
+   "id": "c46",
+   "classification": "unsupported",
+   "evidence": "MedlinePlus Genetics lists eye problems and kidney failure as risks; early diagnosis helps prevent chronic kidney disease (\"untreated\" not stated)",
+   "url": "https://medlineplus.gov/genetics/condition/hypertension/",
+   "action": "removed"
+  },
+  {
+   "id": "c47",
+   "classification": "unsupported",
+   "evidence": "No retrieved NHS text says this; MedlinePlus says aim is to lower BP to reduce risk",
+   "url": "https://medlineplus.gov/ency/article/000468.htm",
+   "action": "edited",
+   "newSentence": "MedlinePlus says the aim of treatment is to lower blood pressure to reduce the risk of related health problems, and that medicines and lifestyle changes can often control it."
+  },
+  {
+   "id": "c48",
+   "classification": "supported",
+   "evidence": "NHS inform: may have to take medication for the rest of your life",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/cardiovascular-disease/risk-factors-for-cardiovascular-disease/high-blood-pressure-hypertension/",
+   "action": "edited",
+   "newSentence": "NHS inform says some people have to take medicine to treat high blood pressure for the rest of their life."
+  },
+  {
+   "id": "c49",
+   "classification": "unsupported",
+   "evidence": "Not found",
+   "url": "https://www.nhs.uk/conditions/high-blood-pressure-hypertension/treatment/",
+   "action": "removed"
+  },
+  {
+   "id": "c50",
+   "classification": "unsupported",
+   "evidence": "Signposting added by author, no retrieved text",
+   "url": "https://www.nhs.uk/conditions/high-blood-pressure-hypertension/treatment/",
+   "action": "removed"
+  },
+  {
+   "id": "c51",
+   "classification": "unsupported",
+   "evidence": "First half supported (NHS); \"feeling well is not a sign of lower pressure\" is inferred",
+   "url": "https://www.nhs.uk/conditions/high-blood-pressure/",
+   "action": "edited",
+   "newSentence": "The NHS says high blood pressure usually causes no symptoms, so the only way to find out is to have it measured."
+  },
+  {
+   "id": "c52",
+   "classification": "unsupported",
+   "evidence": "CDC: do not stop without talking to health care team or pharmacist; NHS: do not stop if side effects. \"NHS pages say ... speak to GP first\" not retrieved verbatim",
+   "url": "https://www.cdc.gov/high-blood-pressure/living-with/index.html",
+   "action": "edited",
+   "newSentence": "Blood Pressure UK says that stopping medicine on its own lets blood pressure go back up, and the US CDC says to talk to the health care team or a pharmacist before stopping blood pressure medicine."
+  },
+  {
+   "id": "c53",
+   "classification": "supported",
+   "evidence": "NHLBI: provider may need to change or add medicines over time",
+   "url": "https://www.nhlbi.nih.gov/health/high-blood-pressure/living-with",
+   "action": "removed"
+  },
+  {
+   "id": "c54",
+   "classification": "unsupported",
+   "evidence": "Systolic definition not retrieved; textbook cap reached (kept once in section 3)",
+   "url": "https://www.nhs.uk/tests-and-treatments/blood-pressure-test/",
+   "action": "removed"
+  },
+  {
+   "id": "c55",
+   "classification": "unsupported",
+   "evidence": "Diastolic definition not retrieved; textbook cap reached",
+   "url": "https://www.nhs.uk/tests-and-treatments/blood-pressure-test/",
+   "action": "removed"
+  },
+  {
+   "id": "c56",
+   "classification": "supported",
+   "evidence": "NHS: high is 140/90 or higher at clinic, 135/85 or higher at home (different levels)",
+   "url": "https://www.nhs.uk/tests-and-treatments/blood-pressure-test/",
+   "action": "removed"
+  },
+  {
+   "id": "c57",
+   "classification": "unsupported",
+   "evidence": "Not retrieved",
+   "url": "https://www.nhs.uk/tests-and-treatments/blood-pressure-test/",
+   "action": "removed"
+  },
+  {
+   "id": "c58",
+   "classification": "supported",
+   "evidence": "NHS pregnancy page: some blood pressure medicines may not be safe in pregnancy",
+   "url": "https://www.nhs.uk/pregnancy/existing-health-conditions/high-blood-pressure/",
+   "action": "removed"
+  },
+  {
+   "id": "c59",
+   "classification": "supported",
+   "evidence": "NHS: can reduce blood flow through the placenta to the baby, or affect the baby in other ways",
+   "url": "https://www.nhs.uk/pregnancy/existing-health-conditions/high-blood-pressure/",
+   "action": "kept"
+  },
+  {
+   "id": "c60",
+   "classification": "unsupported",
+   "evidence": "NHLBI pregnancy page title returned but no excerpt carried this",
+   "url": "https://www.nhlbi.nih.gov/health/high-blood-pressure/causes",
+   "action": "removed"
+  },
+  {
+   "id": "c61",
+   "classification": "supported",
+   "evidence": "NHS: NHS 111 if often headaches/blurred vision or chest pain that comes and goes",
+   "url": "https://www.nhs.uk/conditions/high-blood-pressure/",
+   "action": "kept"
+  },
+  {
+   "id": "c62",
+   "classification": "supported",
+   "evidence": "NHS: 999 for chest pain that does not go away, or with sweaty, sick, light headed, short of breath",
+   "url": "https://www.nhs.uk/conditions/high-blood-pressure/",
+   "action": "kept"
+  },
+  {
+   "id": "c63",
+   "classification": "supported",
+   "evidence": "NHS inform: symptoms of very high BP include regular nosebleeds, shortness of breath; contact GP practice",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/cardiovascular-disease/risk-factors-for-cardiovascular-disease/high-blood-pressure-hypertension/",
+   "action": "removed"
+  },
+  {
+   "id": "c64",
+   "classification": "supported",
+   "evidence": "NHS: usually no symptoms; only reliable way to know is to have it measured",
+   "url": "https://www.nhs.uk/conditions/high-blood-pressure/",
+   "action": "kept"
+  },
+  {
+   "id": "c65",
+   "classification": "unsupported",
+   "evidence": "NHS test page: pharmacies, GP surgery, some workplaces; home monitor from doctor/nurse. NHS Health Check source not attributed",
+   "url": "https://www.nhs.uk/tests-and-treatments/blood-pressure-test/",
+   "action": "edited",
+   "newSentence": "GP surgeries, pharmacies and some workplaces, or with a home monitor that a doctor or nurse may provide."
+  },
+  {
+   "id": "c66",
+   "classification": "unsupported",
+   "evidence": "Duplicate definition, not retrieved",
+   "url": "https://www.nhs.uk/tests-and-treatments/blood-pressure-test/",
+   "action": "removed"
+  },
+  {
+   "id": "c67",
+   "classification": "supported",
+   "evidence": "NHS: lifestyle changes first, medicines added if needed",
+   "url": "https://www.nhs.uk/conditions/high-blood-pressure-hypertension/treatment/",
+   "action": "kept"
+  },
+  {
+   "id": "c68",
+   "classification": "unsupported",
+   "evidence": "Thiazide diuretics and alpha-blockers not retrieved",
+   "url": "https://www.bhf.org.uk/informationsupport/treatments/medicine",
+   "action": "edited",
+   "newSentence": "ACE inhibitors, angiotensin-2 receptor blockers, calcium channel blockers, diuretics and beta-blockers."
+  },
+  {
+   "id": "c69",
+   "classification": "supported",
+   "evidence": "NHS: 999 for chest pain that does not go away; NHS 111 for frequent headaches, blurred vision, chest pain that comes and goes",
+   "url": "https://www.nhs.uk/conditions/high-blood-pressure/",
+   "action": "kept"
+  },
+  {
+   "id": "c09r",
+   "classification": "supported",
+   "evidence": "Search said NHS pages focus on risk factors not causes; the list was MedlinePlus (kidney disease, adrenal disorders, pregnancy/pre-eclampsia, medicines, sleep apnoea). Diabetes and hormonal conditions not retrieved; sleep apnoea gloss not retrieved",
+   "url": "https://medlineplus.gov/highbloodpressure.html",
+   "action": "added",
+   "newSentence": "MedlinePlus lists chronic kidney disease, disorders of the adrenal gland and pregnancy among the causes of secondary high blood pressure."
+  },
+  {
+   "id": "c13r",
+   "classification": "supported",
+   "evidence": "NHS: test usually takes a couple of minutes (draft said a few)",
+   "url": "https://www.nhs.uk/tests-and-treatments/blood-pressure-test/",
+   "action": "added",
+   "newSentence": "A blood pressure test usually takes a couple of minutes, according to the NHS."
+  },
+  {
+   "id": "c14r",
+   "classification": "supported",
+   "evidence": "Only cuff on upper arm that inflates then releases was retrieved; sleeve and table not",
+   "url": "https://www.nhs.uk/tests-and-treatments/blood-pressure-test/",
+   "action": "added",
+   "newSentence": "A cuff on the upper arm inflates and then releases."
+  },
+  {
+   "id": "c19r",
+   "classification": "supported",
+   "evidence": "NICE: high clinic reading confirmed with ABPM (HBPM if declined); \"usually needs repeated readings\" not stated",
+   "url": "https://www.nice.org.uk/guidance/ng136/chapter/Recommendations",
+   "action": "added",
+   "newSentence": "When a clinic reading is high, NICE recommends 24-hour monitoring to confirm the diagnosis, or home monitoring if 24-hour monitoring is declined or not tolerated."
+  },
+  {
+   "id": "c20r",
+   "classification": "supported",
+   "evidence": "NHS: doctor or nurse may give a home monitor; 24-hour monitor fitted at a GP surgery, health centre or hospital (draft wording \"home machine, or a monitor to wear\" not exact)",
+   "url": "https://www.nhs.uk/tests-and-treatments/blood-pressure-test/",
+   "action": "added",
+   "newSentence": "The NHS says a doctor or nurse may give a home monitor for use at home."
+  },
+  {
+   "id": "c21r",
+   "classification": "supported",
+   "evidence": "NICE: target organ damage investigations should start while awaiting confirmation; \"such as heart and kidneys\" not in NICE text retrieved (only local summaries)",
+   "url": "https://www.nice.org.uk/guidance/ng136/chapter/Recommendations",
+   "action": "added",
+   "newSentence": "NICE says investigations for target organ damage should be started while the diagnosis is being confirmed, and that drug treatment may be considered straight away if damage is found."
+  },
+  {
+   "id": "c26r",
+   "classification": "supported",
+   "evidence": "Retrieved NHS list: ACE inhibitors, ARBs, calcium channel blockers, beta-blockers; BHF adds diuretics. Thiazide diuretics and alpha-blockers not retrieved",
+   "url": "https://www.bhf.org.uk/informationsupport/treatments/medicine",
+   "action": "added",
+   "newSentence": "Medicine groups named by the NHS and the British Heart Foundation include ACE inhibitors, angiotensin-2 receptor blockers, calcium channel blockers, diuretics and beta-blockers."
+  },
+  {
+   "id": "c29r",
+   "classification": "supported",
+   "evidence": "BHF \"up to three types\" not found; only NHS saying more than one medicine may be needed",
+   "url": "https://www.nhs.uk/conditions/high-blood-pressure-hypertension/treatment/",
+   "action": "added",
+   "newSentence": "The NHS says more than one medicine may be needed to keep blood pressure under control."
+  },
+  {
+   "id": "c30r",
+   "classification": "supported",
+   "evidence": "Blood Pressure UK: dizziness and tiredness most commonly reported; sleepiness not stated",
+   "url": "https://www.bloodpressureuk.org/your-blood-pressure/how-to-lower-your-blood-pressure/medications-for-high-blood-pressure/",
+   "action": "added",
+   "newSentence": "Blood Pressure UK says dizziness and tiredness are the most commonly reported side effects of blood pressure tablets, and that they often improve or go away as the body adjusts."
+  },
+  {
+   "id": "c33r",
+   "classification": "supported",
+   "evidence": "NHS: do not stop if side effects; Blood Pressure UK: stopping alone, pressure goes back up; \"important not to stop without speaking to GP\" not retrieved verbatim",
+   "url": "https://www.nhs.uk/conditions/high-blood-pressure-hypertension/treatment/",
+   "action": "added",
+   "newSentence": "The NHS says not to stop taking the medicine if side effects occur, and Blood Pressure UK says that stopping it on its own lets blood pressure go back up."
+  },
+  {
+   "id": "c36r",
+   "classification": "supported",
+   "evidence": "Retrieved: NHS trust leaflets say cutting salt, ready meals, takeaways helps; \"most salt from processed foods / check labels\" not retrieved",
+   "url": "https://www.ruh.nhs.uk/patients/patient_information/external_leaflets/DTT_Hypertension_and_diet.pdf",
+   "action": "added",
+   "newSentence": "NHS trust leaflets say that cutting down on salt, ready meals and takeaways helps."
+  },
+  {
+   "id": "c37r",
+   "classification": "supported",
+   "evidence": "Leaflet: potassium chloride salt substitutes not suitable for everyone e.g. kidney problems, heart failure, certain BP medicines",
+   "url": "https://www.ruh.nhs.uk/patients/patient_information/external_leaflets/DTT_Hypertension_and_diet.pdf",
+   "action": "added",
+   "newSentence": "One NHS trust leaflet says salt substitutes made from potassium chloride are not suitable for everyone, for example people with kidney problems or heart failure, or those who take certain blood pressure medicines."
+  },
+  {
+   "id": "c42r",
+   "classification": "supported",
+   "evidence": "BHF impact review: devastating complications like kidney failure, heart failure and vascular dementia (\"untreated\" not stated)",
+   "url": "https://www.bhf.org.uk/-/media/files/what-we-do/impact-reviews-2023/impact-of-bhf-support-for-high-bp-research_references.pdf",
+   "action": "added",
+   "newSentence": "The British Heart Foundation says high blood pressure can lead to complications such as kidney failure, heart failure and vascular dementia."
+  },
+  {
+   "id": "c43r",
+   "classification": "supported",
+   "evidence": "NHS inform names stroke, heart attack, arterial thrombosis, AAA, kidney disease, vascular dementia; AAA gloss not retrieved",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/cardiovascular-disease/risk-factors-for-cardiovascular-disease/high-blood-pressure-hypertension/",
+   "action": "added",
+   "newSentence": "NHS inform names stroke, heart attack, kidney disease and vascular dementia among the problems that untreated high blood pressure can cause."
+  },
+  {
+   "id": "c47r",
+   "classification": "supported",
+   "evidence": "No retrieved NHS text says this; MedlinePlus says aim is to lower BP to reduce risk",
+   "url": "https://medlineplus.gov/ency/article/000468.htm",
+   "action": "added",
+   "newSentence": "MedlinePlus says the aim of treatment is to lower blood pressure to reduce the risk of related health problems, and that medicines and lifestyle changes can often control it."
+  },
+  {
+   "id": "c52r",
+   "classification": "supported",
+   "evidence": "CDC: do not stop without talking to health care team or pharmacist; NHS: do not stop if side effects. \"NHS pages say ... speak to GP first\" not retrieved verbatim",
+   "url": "https://www.cdc.gov/high-blood-pressure/living-with/index.html",
+   "action": "added",
+   "newSentence": "Blood Pressure UK says that stopping medicine on its own lets blood pressure go back up, and the US CDC says to talk to the health care team or a pharmacist before stopping blood pressure medicine."
+  },
+  {
+   "id": "c65r",
+   "classification": "supported",
+   "evidence": "NHS test page: pharmacies, GP surgery, some workplaces; home monitor from doctor/nurse. NHS Health Check source not attributed",
+   "url": "https://www.nhs.uk/tests-and-treatments/blood-pressure-test/",
+   "action": "added",
+   "newSentence": "GP surgeries, pharmacies and some workplaces, or with a home monitor that a doctor or nurse may provide."
+  },
+  {
+   "id": "c68r",
+   "classification": "supported",
+   "evidence": "Thiazide diuretics and alpha-blockers not retrieved",
+   "url": "https://www.bhf.org.uk/informationsupport/treatments/medicine",
+   "action": "added",
+   "newSentence": "ACE inhibitors, angiotensin-2 receptor blockers, calcium channel blockers, diuretics and beta-blockers."
+  },
+  {
+   "id": "n04",
+   "classification": "supported",
+   "evidence": "Sussex ICB (NHS) ABPM service specification: most accurate method for confirming diagnosis, can reduce unnecessary treatment (https://int.sussex.ics.nhs.uk/wp-content/uploads/2023/03/SSX-LCS029-Ambulatory-Blood-Pressure-Monitoring-ABPM-LCS-v3-Jun24.pdf)",
+   "url": "https://int.sussex.ics.nhs.uk/wp-content/uploads/2023/03/SSX-LCS029-Ambulatory-Blood-Pressure-Monitoring-ABPM-LCS-v3-Jun24.pdf",
+   "action": "added",
+   "newSentence": "An NHS service specification describes 24-hour monitoring as the most accurate method for confirming a diagnosis of high blood pressure, and says it can reduce unnecessary treatment."
+  },
+  {
+   "id": "n07",
+   "classification": "supported",
+   "evidence": "Several NHS leaflets: losing weight will help",
+   "url": "https://www.ruh.nhs.uk/patients/patient_information/external_leaflets/DTT_Hypertension_and_diet.pdf",
+   "action": "added",
+   "newSentence": "Several NHS leaflets say that losing weight helps to lower blood pressure."
+  },
+  {
+   "id": "n08",
+   "classification": "supported",
+   "evidence": "MedlinePlus hypertensive heart disease: muscle may not get enough oxygen causing angina; without control can weaken and heart failure may develop",
+   "url": "https://medlineplus.gov/ency/article/000163.htm",
+   "action": "added",
+   "newSentence": "A thickened muscle may not get enough oxygen, which can cause chest pain, and without good blood pressure control the heart muscle can weaken and heart failure may develop."
+  },
+  {
+   "id": "n10",
+   "classification": "supported",
+   "evidence": "NHLBI causes page summary: women with high BP during pregnancy more likely to have it later in life",
+   "url": "https://www.nhlbi.nih.gov/health/high-blood-pressure/causes",
+   "action": "added",
+   "newSentence": "The US NHLBI says women who have high blood pressure during pregnancy are more likely to have high blood pressure later in life."
+  }
+ ],
+ "notes": "Searches used: 16. First-pass counts refer to the 69 draft sentences (c01-c69); replacement and added sentences are listed after c69 with ids ending r or n. Textbook (2): systolic and diastolic definitions, kept once in section 3; the duplicates in the FAQ and key facts were removed to stay under the cap. Not found in retrieved text and removed: BHF 'up to three types' of medicine; 'losing weight is all that is needed'; BHF fruit/veg/saturated fat advice; 'important not to stop without speaking to the GP' (reworded to NHS 'do not stop if side effects' plus Blood Pressure UK and CDC); sleepiness as a side effect; NHS Health Checks; thiazide diuretics and alpha-blockers named by the NHS; the NHS pregnancy-planning advice attributed to NHLBI. Search summaries disagreed once on whether NHS inform lists regular nosebleeds (one summary said no, two later queries said yes); the page keeps the claim, worth a human glance at the NHS inform page. NHLBI causes page returned only its opening line on medicines; the named medicine list comes from an NHLBI news item and is worded as 'linked to'. CONTRADICTIONS/UNSUPPORTED in the EXISTING entry (not edited): (1) definition/seekCare use thresholds (140/90, 135/85, 180/120): NHS gives 140/90 clinic and 135/85 home, consistent, but MedlinePlus (US) defines high BP as 130/80 or higher, so the page is NHS-specific; the 180/120 same-day route for readings alone was not retrieved from any UK source (NHLBI, US, says above 180/120 needs immediate attention). (2) overview: 'one adult in three', 'half do not know', 'single biggest contributor to stroke and heart disease worldwide', 'treatment is cheap and effective' not retrieved. (3) causes: 'over 90%' primary, adrenal tumours, narrowed renal arteries not retrieved; MedlinePlus lists kidney disease, adrenal disorders, pregnancy, medicines, sleep apnoea. (4) symptoms list includes dizziness: NHS lists headaches, blurred vision, chest pain (NHS inform adds double vision, nosebleeds, shortness of breath); dizziness not retrieved. (5) treatment: 'most people need two or more' - NHS only says more than one may be needed; 'thiazide-like diuretics' not retrieved from NHS text (NICE not returned in full). (6) riskFactors: 'Black African or Caribbean ancestry' not retrieved as a risk factor (NHS only says ethnicity affects which medicine is offered first). (7) signs: 'retinal changes, enlarged heart, kidney damage' only partly retrieved (MedlinePlus: thickened heart muscle). (8) complications: aortic dissection and retinopathy not retrieved by name (NHS inform: aortic aneurysm; MedlinePlus Genetics: eye problems). (9) prevention 'moderate alcohol' - NHS says cutting back on alcohol."
+}

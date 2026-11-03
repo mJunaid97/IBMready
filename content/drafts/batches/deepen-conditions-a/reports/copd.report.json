@@ -1,0 +1,609 @@
+{
+ "id": "copd",
+ "searchesUsed": 13,
+ "counts": {
+  "supported": 41,
+  "textbook": 1,
+  "unsupported": 29,
+  "wrong": 0,
+  "unsafe": 0,
+  "unchecked": 0
+ },
+ "claims": [
+  {
+   "id": "c01",
+   "classification": "supported",
+   "evidence": "Retrieved summary of NHS pages: slowly developing lung disease; most do not notice symptoms until late 40s/50s",
+   "url": "https://www.nhs.uk/conditions/chronic-obstructive-pulmonary-disease-copd/symptoms/",
+   "action": "edited",
+   "newSentence": "The NHS describes COPD as a lung disease that develops slowly, so symptoms are often not noticed early on."
+  },
+  {
+   "id": "c02",
+   "classification": "supported",
+   "evidence": "Breathlessness (often first with exercise), persistent chesty cough with phlegm, frequent chest infections, persistent wheezing",
+   "url": "https://www.nhs.uk/conditions/chronic-obstructive-pulmonary-disease-copd/symptoms/",
+   "action": "kept"
+  },
+  {
+   "id": "c03",
+   "classification": "textbook",
+   "evidence": "Plain gloss of phlegm",
+   "url": "",
+   "action": "kept"
+  },
+  {
+   "id": "c04",
+   "classification": "unsupported",
+   "evidence": "NHS: cannot be cured or reversed; 'differs from person to person' not in retrieved text",
+   "url": "https://www.nhs.uk/conditions/chronic-obstructive-pulmonary-disease-copd/",
+   "action": "edited",
+   "newSentence": "The NHS says COPD cannot be cured or reversed."
+  },
+  {
+   "id": "c05",
+   "classification": "supported",
+   "evidence": "NHS: may continue to get worse despite treatment, leading to life-threatening problems",
+   "url": "https://www.nhs.uk/conditions/chronic-obstructive-pulmonary-disease-copd/",
+   "action": "kept"
+  },
+  {
+   "id": "c06",
+   "classification": "supported",
+   "evidence": "MedlinePlus: flare-up = increased symptoms, more intense than usual, lasting 2 days or more",
+   "url": "https://medlineplus.gov/ency/patientinstructions/000698.htm",
+   "action": "edited",
+   "newSentence": "A flare-up, also called an exacerbation, is a time when symptoms are worse than usual."
+  },
+  {
+   "id": "c07",
+   "classification": "supported",
+   "evidence": "Infections are a common cause of flare-ups; MedlinePlus: treatment may include quick-relief inhalers, steroids or antibiotics by mouth, oxygen if prescribed",
+   "url": "https://medlineplus.gov/ency/patientinstructions/000698.htm",
+   "action": "edited",
+   "newSentence": "Infections are a common cause. Treatment may include quick-relief inhalers, steroids or antibiotics taken by mouth, or oxygen if it is prescribed."
+  },
+  {
+   "id": "c08",
+   "classification": "supported",
+   "evidence": "Asthma + Lung UK: an agreed written plan is central to flare-ups",
+   "url": "https://www.asthmaandlung.org.uk/conditions/copd-chronic-obstructive-pulmonary-disease/managing-copd-flare-ups",
+   "action": "edited",
+   "newSentence": "Asthma + Lung UK describes an agreed written action plan as central to managing flare-ups."
+  },
+  {
+   "id": "c09",
+   "classification": "supported",
+   "evidence": "COPD described as group of lung conditions causing breathing difficulties; term includes emphysema and chronic bronchitis",
+   "url": "https://www.cdc.gov/mmwr/volumes/68/wr/mm6813a2.htm",
+   "action": "edited",
+   "newSentence": "COPD is the name for a group of lung conditions that cause breathing difficulties."
+  },
+  {
+   "id": "c10",
+   "classification": "unsupported",
+   "evidence": "Retrieved: chronic bronchitis and emphysema are two of the conditions grouped under COPD; 'make up most of it' not stated",
+   "url": "https://www.nhs.uk/conditions/chronic-obstructive-pulmonary-disease-copd/",
+   "action": "edited",
+   "newSentence": "Emphysema and chronic bronchitis are two of the conditions grouped under it."
+  },
+  {
+   "id": "c11",
+   "classification": "unsupported",
+   "evidence": "Retrieved: inflammation of the airways leading to long-term cough with mucus; 'narrowed' not stated",
+   "url": "https://www.nhs.uk/conditions/chronic-obstructive-pulmonary-disease-copd/",
+   "action": "edited",
+   "newSentence": "Chronic bronchitis is inflammation of the airways, which leads to a long-term cough with mucus."
+  },
+  {
+   "id": "c12",
+   "classification": "unsupported",
+   "evidence": "Retrieved: damage to tiny air sacs, reduces lung elasticity; 'over time' not stated",
+   "url": "https://www.who.int/news-room/fact-sheets/detail/chronic-obstructive-pulmonary-disease-(copd)",
+   "action": "edited",
+   "newSentence": "Emphysema is damage to the tiny air sacs in the lungs, which reduces the elasticity of the lungs."
+  },
+  {
+   "id": "c13",
+   "classification": "unsupported",
+   "evidence": "Retrieved: 'many people have features of both' (not 'most')",
+   "url": "https://www.nhs.uk/conditions/chronic-obstructive-pulmonary-disease-copd/",
+   "action": "edited",
+   "newSentence": "Many people have features of both."
+  },
+  {
+   "id": "c14",
+   "classification": "unsupported",
+   "evidence": "Retrieved: smoking is biggest risk factor, ~9 in 10 cases; 'older adults' not stated",
+   "url": "https://www.nhs.uk/conditions/chronic-obstructive-pulmonary-disease-copd/causes/",
+   "action": "edited",
+   "newSentence": "Smoking is the biggest risk factor. The NHS estimates that it is behind around 9 in 10 cases, and the risk rises with how much and for how long a person smokes."
+  },
+  {
+   "id": "c15",
+   "classification": "unsupported",
+   "evidence": "Retrieved: condition usually emerges after age 35; 'most diagnosed over 50' not stated",
+   "url": "https://www.nhs.uk/conditions/chronic-obstructive-pulmonary-disease-copd/symptoms/",
+   "action": "edited",
+   "newSentence": "The condition usually emerges after the age of 35."
+  },
+  {
+   "id": "c16",
+   "classification": "supported",
+   "evidence": "CDC: smoking leading cause in the US; MMWR: some US adults with COPD never smoked",
+   "url": "https://www.cdc.gov/mmwr/volumes/68/wr/mm6813a2.htm",
+   "action": "edited",
+   "newSentence": "In the United States, CDC data show that some adults with COPD have never smoked."
+  },
+  {
+   "id": "c17",
+   "classification": "supported",
+   "evidence": "Retrieved WHO summary: dust/fumes at work, air pollution, alpha-1 antitrypsin deficiency (can bring COPD on younger); attribution corrected from NHS to WHO",
+   "url": "https://www.who.int/news-room/fact-sheets/detail/chronic-obstructive-pulmonary-disease-(copd)",
+   "action": "edited",
+   "newSentence": "The WHO lists long-term exposure to dust or fumes at work, air pollution, and a rare inherited condition called alpha-1 antitrypsin deficiency as other factors."
+  },
+  {
+   "id": "c18",
+   "classification": "supported",
+   "evidence": "NHS diagnosis: GP asks about symptoms and whether you smoke or used to",
+   "url": "https://www.nhs.uk/conditions/chronic-obstructive-pulmonary-disease-copd/diagnosis/",
+   "action": "kept"
+  },
+  {
+   "id": "c19",
+   "classification": "supported",
+   "evidence": "NHS diagnosis: examines chest, listens with stethoscope, calculates BMI, asks family history of lung problems",
+   "url": "https://www.nhs.uk/conditions/chronic-obstructive-pulmonary-disease-copd/diagnosis/",
+   "action": "edited",
+   "newSentence": "The GP examines the chest, listens to the breathing with a stethoscope, may calculate body mass index and asks about any family history of lung problems."
+  },
+  {
+   "id": "c20",
+   "classification": "unsupported",
+   "evidence": "NHS: GP may do or arrange spirometry; 'usually arranged' not stated",
+   "url": "https://www.nhs.uk/conditions/chronic-obstructive-pulmonary-disease-copd/diagnosis/",
+   "action": "edited",
+   "newSentence": "The GP may then do, or arrange, a breathing test called spirometry."
+  },
+  {
+   "id": "c21",
+   "classification": "unsupported",
+   "evidence": "'Blowing into a machine' and bronchodilator gloss not in retrieved text",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c22",
+   "classification": "unsupported",
+   "evidence": "Comparison with normal results for age not in retrieved text",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c23",
+   "classification": "unsupported",
+   "evidence": "NICE: suspected on symptoms and signs, supported by spirometry; 'over 35' not retrieved",
+   "url": "https://www.nice.org.uk/guidance/ng115/chapter/recommendations",
+   "action": "edited",
+   "newSentence": "NICE guidance says COPD is suspected from symptoms and signs, and that spirometry supports the diagnosis."
+  },
+  {
+   "id": "c24",
+   "classification": "supported",
+   "evidence": "NHS: chest X-ray looks for problems with similar symptoms, e.g. chest infections and lung cancer, which do not always show",
+   "url": "https://www.nhs.uk/conditions/chronic-obstructive-pulmonary-disease-copd/diagnosis/",
+   "action": "kept"
+  },
+  {
+   "id": "c25",
+   "classification": "supported",
+   "evidence": "NHS: blood tests can detect anaemia; sometimes alpha-1-antitrypsin deficiency",
+   "url": "https://www.nhs.uk/conditions/chronic-obstructive-pulmonary-disease-copd/diagnosis/",
+   "action": "kept"
+  },
+  {
+   "id": "c26",
+   "classification": "supported",
+   "evidence": "NHS: CT scan, phlegm sample to check for infection, sometimes needed to confirm diagnosis or judge severity",
+   "url": "https://www.nhs.uk/conditions/chronic-obstructive-pulmonary-disease-copd/diagnosis/",
+   "action": "edited",
+   "newSentence": "A CT scan, which is a detailed scan of the lungs, or a phlegm sample to check for infection is sometimes needed to confirm the diagnosis or judge severity."
+  },
+  {
+   "id": "c27",
+   "classification": "unsupported",
+   "evidence": "No cure supported; 'treatment can help slow the condition' not retrieved (a trust guideline says no medicine shown to modify long-term decline); retrieved: treatment can help keep it under control",
+   "url": "https://www.nhs.uk/conditions/chronic-obstructive-pulmonary-disease-copd/",
+   "action": "edited",
+   "newSentence": "For many people, treatment helps keep it under control so that it does not severely limit daily activities."
+  },
+  {
+   "id": "c28",
+   "classification": "supported",
+   "evidence": "NHS: stopping smoking, inhalers, rehab; surgery/transplant only for a very small number",
+   "url": "https://www.nhs.uk/conditions/chronic-obstructive-pulmonary-disease-copd/treatment/",
+   "action": "edited",
+   "newSentence": "Lung volume reduction surgery ... and lung transplant are options for only a small number of people."
+  },
+  {
+   "id": "c29",
+   "classification": "supported",
+   "evidence": "NICE rationale: minimising number and types of inhalers makes correct use easier",
+   "url": "https://www.nice.org.uk/guidance/ng115/chapter/recommendations",
+   "action": "kept"
+  },
+  {
+   "id": "c30",
+   "classification": "supported",
+   "evidence": "NHS treatment: GP may add steroid inhaler if breathlessness/flare-ups persist; normally in combination inhaler",
+   "url": "https://www.nhs.uk/conditions/chronic-obstructive-pulmonary-disease-copd/treatment/",
+   "action": "kept"
+  },
+  {
+   "id": "c31",
+   "classification": "unsupported",
+   "evidence": "Mucus-thinning tablets came only from a local guideline (carbocisteine), not an NHS patient page",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c32",
+   "classification": "unsupported",
+   "evidence": "Antibiotics for a chest infection not retrieved in this form; flare-up antibiotics covered by c07",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c33",
+   "classification": "supported",
+   "evidence": "Pulmonary rehab: supervised programme of exercise, education, breathing techniques; group sessions",
+   "url": "https://www.nhs.uk/conditions/chronic-obstructive-pulmonary-disease-copd/treatment/",
+   "action": "edited",
+   "newSentence": "Pulmonary rehabilitation is a supervised programme of exercise, education and breathing techniques, usually in groups."
+  },
+  {
+   "id": "c34",
+   "classification": "supported",
+   "evidence": "Oxygen only useful for low blood oxygen; not a treatment for breathlessness",
+   "url": "https://www.nhs.uk/conditions/chronic-obstructive-pulmonary-disease-copd/treatment/",
+   "action": "edited",
+   "newSentence": "Oxygen is useful only for people whose blood oxygen is low, and it is not a treatment for breathlessness."
+  },
+  {
+   "id": "c35",
+   "classification": "unsupported",
+   "evidence": "Lung volume reduction surgery and transplant retrieved; bullectomy not found",
+   "url": "https://www.nhs.uk/conditions/chronic-obstructive-pulmonary-disease-copd/treatment/",
+   "action": "edited",
+   "newSentence": "Lung volume reduction surgery, which removes badly damaged lung tissue, and lung transplant are options for only a small number of people."
+  },
+  {
+   "id": "c36",
+   "classification": "supported",
+   "evidence": "NHS: stopping smoking is the most effective way to prevent COPD getting worse; damage cannot be reversed. Page named wrongly as NHS Devon",
+   "url": "https://www.nhs.uk/conditions/chronic-obstructive-pulmonary-disease-copd/treatment/",
+   "action": "edited",
+   "newSentence": "The NHS says stopping smoking is the most effective way to prevent COPD getting worse."
+  },
+  {
+   "id": "c37",
+   "classification": "supported",
+   "evidence": "MedlinePlus: pursed-lip breathing to save energy, slow breathing, help relax",
+   "url": "https://medlineplus.gov/ency/patientinstructions/000698.htm",
+   "action": "kept"
+  },
+  {
+   "id": "c38",
+   "classification": "unsupported",
+   "evidence": "Retrieved: taking medicines as prescribed, avoiding smoke/dust/fumes; 'long-term medicines every day' and breathing exercises list not stated",
+   "url": "https://medlineplus.gov/ency/patientinstructions/000698.htm",
+   "action": "edited",
+   "newSentence": "Common advice also includes taking medicines as prescribed and avoiding smoke, dust and fumes."
+  },
+  {
+   "id": "c39",
+   "classification": "supported",
+   "evidence": "NHS: everyone with COPD encouraged to have annual flu jab and one-off pneumococcal vaccination",
+   "url": "https://www.nhs.uk/conditions/chronic-obstructive-pulmonary-disease-copd/living-with/",
+   "action": "kept"
+  },
+  {
+   "id": "c40",
+   "classification": "unsupported",
+   "evidence": "Retrieved: mental health difficulties more common in people with COPD than general population; broader 'long-term conditions' claim not stated",
+   "url": "https://www.rightdecisions.scot.nhs.uk/managing-my-copd/mental-health-and-wellbeing-in-copd/?topic=respiratory",
+   "action": "edited",
+   "newSentence": "NHS Scotland says mental health difficulties are more common in people with COPD than in the general population."
+  },
+  {
+   "id": "c41",
+   "classification": "unsupported",
+   "evidence": "NHS: sooner treatment begins, less chance of severe lung damage; 'complications and flare-ups' not stated",
+   "url": "https://www.nhs.uk/conditions/chronic-obstructive-pulmonary-disease-copd/",
+   "action": "edited",
+   "newSentence": "The NHS says that the sooner treatment starts, the less chance there is of severe lung damage."
+  },
+  {
+   "id": "c42",
+   "classification": "supported",
+   "evidence": "NHS: contact GP for persistent symptoms, especially over 35 and smoke/used to smoke",
+   "url": "https://www.nhs.uk/conditions/chronic-obstructive-pulmonary-disease-copd/symptoms/",
+   "action": "edited",
+   "newSentence": "The NHS advises contacting a GP about persistent symptoms such as breathlessness, a chesty cough with phlegm or frequent chest infections, especially for someone over 35 who smokes or used to smoke."
+  },
+  {
+   "id": "c43",
+   "classification": "unsupported",
+   "evidence": "Author-added signposting, not in source",
+   "url": "",
+   "action": "edited",
+   "newSentence": "That is a GP appointment rather than an emergency."
+  },
+  {
+   "id": "c44",
+   "classification": "supported",
+   "evidence": "MedlinePlus: breathing harder, faster, shallow; fever, confusion/sleepiness, dark mucus, chest pain, bluish lips or fingertips",
+   "url": "https://medlineplus.gov/ency/patientinstructions/000698.htm",
+   "action": "edited",
+   "newSentence": "For someone already diagnosed, MedlinePlus lists breathing that is getting harder, faster or shallower, fever, dark mucus, sleepiness, confusion, chest pain or bluish lips or fingertips as reasons to contact a provider."
+  },
+  {
+   "id": "c45",
+   "classification": "unsupported",
+   "evidence": "Author-added signposting; replaced with plain statement of NHS 111 role",
+   "url": "",
+   "action": "edited",
+   "newSentence": "In the UK, urgent but non-emergency advice comes from NHS 111 or the GP the same day."
+  },
+  {
+   "id": "c46",
+   "classification": "supported",
+   "evidence": "South Tees NHS trust page: call 999 if very unwell with severe breathlessness, chest pain or coughing up blood (attribution corrected from NHS to the trust)",
+   "url": "https://www.southtees.nhs.uk/resources/chronic-obstructive-pulmonary-disease-copd/",
+   "action": "edited",
+   "newSentence": "South Tees Hospitals NHS Foundation Trust says to call 999 if someone with COPD is very unwell with severe breathlessness, chest pain or coughing up blood."
+  },
+  {
+   "id": "c47",
+   "classification": "unsupported",
+   "evidence": "Cor pulmonale definition not retrieved",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c48",
+   "classification": "supported",
+   "evidence": "NHS: cannot be cured or reversed; damage to lungs/airways cannot be reversed",
+   "url": "https://www.nhs.uk/conditions/chronic-obstructive-pulmonary-disease-copd/treatment/",
+   "action": "edited",
+   "newSentence": "The NHS says COPD cannot be cured or reversed, and damage already done to the lungs and airways cannot be undone."
+  },
+  {
+   "id": "c49",
+   "classification": "unsupported",
+   "evidence": "'Slow the condition' not retrieved; replaced by 'keep under control'",
+   "url": "https://www.nhs.uk/conditions/chronic-obstructive-pulmonary-disease-copd/",
+   "action": "edited",
+   "newSentence": "For many people, treatment helps keep it under control so that it does not severely limit daily activities."
+  },
+  {
+   "id": "c50",
+   "classification": "supported",
+   "evidence": "NHS treatment: stopping smoking, inhalers, pulmonary rehab",
+   "url": "https://www.nhs.uk/conditions/chronic-obstructive-pulmonary-disease-copd/treatment/",
+   "action": "kept"
+  },
+  {
+   "id": "c51",
+   "classification": "supported",
+   "evidence": "NHS: for many people treatment keeps it under control",
+   "url": "https://www.nhs.uk/conditions/chronic-obstructive-pulmonary-disease-copd/",
+   "action": "kept"
+  },
+  {
+   "id": "c52",
+   "classification": "unsupported",
+   "evidence": "'One of two main components' not stated; emphysema is one of the conditions grouped under COPD",
+   "url": "https://www.cdc.gov/mmwr/volumes/68/wr/mm6813a2.htm",
+   "action": "edited",
+   "newSentence": "COPD is the name for a group of lung conditions, and emphysema is one of them."
+  },
+  {
+   "id": "c53",
+   "classification": "unsupported",
+   "evidence": "'narrowed and full of mucus' not stated; retrieved: inflammation of airways, long-term cough with mucus",
+   "url": "https://www.nhs.uk/conditions/chronic-obstructive-pulmonary-disease-copd/",
+   "action": "edited",
+   "newSentence": "Chronic bronchitis, which is inflammation of the airways leading to a long-term cough with mucus, is another."
+  },
+  {
+   "id": "c54",
+   "classification": "unsupported",
+   "evidence": "'Most' not stated; 'many people have features of both'",
+   "url": "https://www.nhs.uk/conditions/chronic-obstructive-pulmonary-disease-copd/",
+   "action": "edited",
+   "newSentence": "Many people have features of both."
+  },
+  {
+   "id": "c55",
+   "classification": "supported",
+   "evidence": "Answer 'No' follows from CDC: some people with COPD never smoked",
+   "url": "https://www.cdc.gov/mmwr/volumes/68/wr/mm6813a2.htm",
+   "action": "kept"
+  },
+  {
+   "id": "c56",
+   "classification": "supported",
+   "evidence": "CDC data: some US adults with COPD never smoked; smoking leading cause",
+   "url": "https://www.cdc.gov/mmwr/volumes/68/wr/mm6813a2.htm",
+   "action": "edited",
+   "newSentence": "CDC data from the United States show that some adults with COPD have never smoked."
+  },
+  {
+   "id": "c57",
+   "classification": "unsupported",
+   "evidence": "WHO 'most common causes' not stated; WHO lists dust/fumes, air pollution, alpha-1 as other factors",
+   "url": "https://www.who.int/news-room/fact-sheets/detail/chronic-obstructive-pulmonary-disease-(copd)",
+   "action": "removed"
+  },
+  {
+   "id": "c58",
+   "classification": "supported",
+   "evidence": "Dust/fumes, air pollution, alpha-1 antitrypsin deficiency (WHO summary)",
+   "url": "https://www.who.int/news-room/fact-sheets/detail/chronic-obstructive-pulmonary-disease-(copd)",
+   "action": "edited",
+   "newSentence": "Other factors include long-term exposure to dust or fumes at work, air pollution, and a rare inherited condition called alpha-1 antitrypsin deficiency."
+  },
+  {
+   "id": "c59",
+   "classification": "supported",
+   "evidence": "MedlinePlus: flare-up symptoms worse than usual, 2 days or more",
+   "url": "https://medlineplus.gov/ency/patientinstructions/000698.htm",
+   "action": "edited",
+   "newSentence": "A flare-up, or exacerbation, is a time when COPD symptoms are worse than usual."
+  },
+  {
+   "id": "c60",
+   "classification": "supported",
+   "evidence": "Infections are a common cause of flare-ups",
+   "url": "https://medlineplus.gov/ency/patientinstructions/000698.htm",
+   "action": "edited",
+   "newSentence": "Infections are a common cause."
+  },
+  {
+   "id": "c61",
+   "classification": "supported",
+   "evidence": "Asthma + Lung UK: agreed written plan central",
+   "url": "https://www.asthmaandlung.org.uk/conditions/copd-chronic-obstructive-pulmonary-disease/managing-copd-flare-ups",
+   "action": "edited",
+   "newSentence": "Asthma + Lung UK describes an agreed written action plan as central to managing flare-ups."
+  },
+  {
+   "id": "c62",
+   "classification": "supported",
+   "evidence": "Supervised programme of exercise, education, breathing techniques",
+   "url": "https://www.nhs.uk/conditions/chronic-obstructive-pulmonary-disease-copd/treatment/",
+   "action": "edited",
+   "newSentence": "Pulmonary rehabilitation is a supervised programme of exercise, education and breathing techniques."
+  },
+  {
+   "id": "c63",
+   "classification": "supported",
+   "evidence": "Retrieved: usually 2+ group sessions a week for at least 6 weeks; schedule not allowed in prose, reworded to words",
+   "url": "https://www.nhs.uk/conditions/chronic-obstructive-pulmonary-disease-copd/treatment/",
+   "action": "edited",
+   "newSentence": "It is usually run as group sessions over several weeks, and some people use remote or app-based versions."
+  },
+  {
+   "id": "c64",
+   "classification": "unsupported",
+   "evidence": "MedlinePlus wording on rehab not retrieved",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c65",
+   "classification": "supported",
+   "evidence": "Group of conditions causing breathing difficulties; includes emphysema and chronic bronchitis",
+   "url": "https://www.cdc.gov/mmwr/volumes/68/wr/mm6813a2.htm",
+   "action": "edited",
+   "newSentence": "A group of long-term lung conditions that cause breathing difficulties, including emphysema and chronic bronchitis."
+  },
+  {
+   "id": "c66",
+   "classification": "supported",
+   "evidence": "NHS symptoms list",
+   "url": "https://www.nhs.uk/conditions/chronic-obstructive-pulmonary-disease-copd/symptoms/",
+   "action": "edited",
+   "newSentence": "Breathlessness on activity, a persistent chesty cough with phlegm, frequent chest infections and wheezing."
+  },
+  {
+   "id": "c67",
+   "classification": "unsupported",
+   "evidence": "'Older adults who smoke' not stated; replaced with biggest risk factor row",
+   "url": "https://www.nhs.uk/conditions/chronic-obstructive-pulmonary-disease-copd/causes/",
+   "action": "edited",
+   "newSentence": "Smoking; the NHS estimates it is behind around 9 in 10 cases."
+  },
+  {
+   "id": "c68",
+   "classification": "supported",
+   "evidence": "NHS diagnosis: questions, chest examination, spirometry",
+   "url": "https://www.nhs.uk/conditions/chronic-obstructive-pulmonary-disease-copd/diagnosis/",
+   "action": "kept"
+  },
+  {
+   "id": "c69",
+   "classification": "unsupported",
+   "evidence": "'slow it' not retrieved",
+   "url": "https://www.nhs.uk/conditions/chronic-obstructive-pulmonary-disease-copd/",
+   "action": "edited",
+   "newSentence": "No cure and the damage cannot be reversed, but treatment can help keep it under control."
+  },
+  {
+   "id": "c70",
+   "classification": "supported",
+   "evidence": "NHS: stopping smoking, inhalers, rehab; oxygen only for low blood oxygen",
+   "url": "https://www.nhs.uk/conditions/chronic-obstructive-pulmonary-disease-copd/treatment/",
+   "action": "kept"
+  },
+  {
+   "id": "c71",
+   "classification": "supported",
+   "evidence": "NHS: annual flu jab and one-off pneumococcal vaccination",
+   "url": "https://www.nhs.uk/conditions/chronic-obstructive-pulmonary-disease-copd/living-with/",
+   "action": "edited",
+   "newSentence": "A yearly flu jab and a one-off pneumococcal vaccine are encouraged."
+  },
+  {
+   "id": "c72",
+   "classification": "supported",
+   "evidence": "Retrieved: several conditions (asthma, heart failure, anaemia) can produce similar symptoms",
+   "url": "https://www.nhs.uk/conditions/chronic-obstructive-pulmonary-disease-copd/symptoms/",
+   "action": "added",
+   "newSentence": "Several other conditions, such as asthma, heart failure and anaemia, can cause similar symptoms."
+  },
+  {
+   "id": "c73",
+   "classification": "supported",
+   "evidence": "Retrieved: short-acting bronchodilators usually first; long-acting if regular symptoms or flare-ups despite short-acting",
+   "url": "https://www.nhs.uk/conditions/chronic-obstructive-pulmonary-disease-copd/treatment/",
+   "action": "added",
+   "newSentence": "Short-acting bronchodilator inhalers, which widen the airways, are usually the first treatment. Long-acting bronchodilator inhalers may be recommended if there are regular symptoms or flare-ups."
+  },
+  {
+   "id": "c74",
+   "classification": "supported",
+   "evidence": "NICE: only prescribe inhalers after people have been trained to use them",
+   "url": "https://www.nice.org.uk/guidance/ng115/chapter/recommendations",
+   "action": "added",
+   "newSentence": "It also says inhalers should only be prescribed after people have been trained to use them."
+  },
+  {
+   "id": "c75",
+   "classification": "textbook",
+   "evidence": "NHS 111 is the NHS route for urgent non-emergency advice (plain fact; wording on 'GP the same day' is signposting)",
+   "url": "",
+   "action": "added",
+   "newSentence": "In the UK, urgent but non-emergency advice comes from NHS 111 or the GP the same day."
+  },
+  {
+   "id": "c76",
+   "classification": "supported",
+   "evidence": "Retrieved: risk rises with how much and how long a person smokes",
+   "url": "https://www.nhs.uk/conditions/chronic-obstructive-pulmonary-disease-copd/causes/",
+   "action": "added",
+   "newSentence": "the risk rises with how much and for how long a person smokes"
+  },
+  {
+   "id": "c77",
+   "classification": "supported",
+   "evidence": "MedlinePlus: bronchodilator gloss 'widen the airways' ok; quick-relief inhalers named",
+   "url": "https://medlineplus.gov/ency/patientinstructions/000698.htm",
+   "action": "added",
+   "newSentence": "MedlinePlus says treatment may include quick-relief inhalers"
+  }
+ ],
+ "notes": "Existing page entry: (1) causes 'Tobacco smoking (85 to 90% of cases)' - NHS says around 9 in 10, WHO figure not retrieved; roughly consistent. (2) diagnosis cites 'FEV1/FVC ratio below 0.7': sources retrieved confirm 0.7 (NICE NG115 via local guideline) but a London ICB note says ARTP uses lower limit of normal; also this is a cut-off in prose. (3) treatment 'Stopping smoking is the only measure that slows decline' - NHS says it is the most effective way to prevent worsening; 'only' not supported, and a trust guideline says no medicine shown to modify long-term decline. (4) 'Long-acting bronchodilator inhalers (with inhaled steroids for frequent exacerbators)' - broadly supported. (5) 'Exacerbations are treated with steroids and often antibiotics' - MedlinePlus lists steroids or antibiotics by mouth among options; 'often' not supported. (6) overview 'COPD is the third leading cause of death worldwide' and 'dissolve the alveolar walls' - not retrieved this pass (WHO page not re-read for the figure). (7) 'Barrel chest' / 'cyanosis' signs, 'Osteoporosis, muscle wasting, depression', 'Lung cancer' complications and 'Asthma' as a risk factor - not retrieved. (8) seekCare: 'blue lips' is supported by MedlinePlus as a contact-provider sign; 'new confusion or drowsiness (carbon dioxide retention)' - confusion/sleepiness supported, CO2 gloss not retrieved. (9) 'Pack-years of smoking', 'Childhood respiratory infections' not retrieved. Draft attribution errors fixed: NHS Devon page (c36) was actually the NHS treatment page; alpha-1/air pollution (c17) is from WHO; 999 advice (c46) is from South Tees trust page. Final text drops numbers such as 'six weeks' and 'age 35 (NICE)'; 'over 35' and 'two days or more' and '9 in 10' kept because retrieved and attributed. Search tool returned blended summaries; NHS living-with page attribution for mental health taken from the NHS Scotland page. Textbook sentences in final: 'Phlegm is the thick mucus...' and the NHS 111 sentence."
+}
