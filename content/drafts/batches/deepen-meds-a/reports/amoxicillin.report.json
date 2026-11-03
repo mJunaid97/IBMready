@@ -1,0 +1,620 @@
+{
+ "id": "amoxicillin",
+ "searchesUsed": 8,
+ "counts": {
+  "supported": 48,
+  "textbook": 0,
+  "unsupported": 24,
+  "wrong": 1,
+  "unsafe": 1,
+  "unchecked": 0
+ },
+ "claims": [
+  {
+   "id": "c01",
+   "sentence": "Amoxicillin is a penicillin antibiotic, a medicine that treats infections caused by bacteria.",
+   "classification": "supported",
+   "evidence": "NHS: a type of penicillin antibiotic for bacterial infections",
+   "url": "https://www.nhs.uk/medicines/amoxicillin/about-amoxicillin/",
+   "action": "kept"
+  },
+  {
+   "id": "c02",
+   "sentence": "The NHS says it is used for chest infections, including pneumonia, and for dental abscesses.",
+   "classification": "supported",
+   "evidence": "NHS: used for chest infections incl. pneumonia and dental abscesses",
+   "url": "https://www.nhs.uk/medicines/amoxicillin/about-amoxicillin/",
+   "action": "kept"
+  },
+  {
+   "id": "c03",
+   "sentence": "It is often prescribed for children with ear infections.",
+   "classification": "supported",
+   "evidence": "NHS: often prescribed for children for ear infections",
+   "url": "https://www.nhs.uk/medicines/amoxicillin/about-amoxicillin/",
+   "action": "kept"
+  },
+  {
+   "id": "c04",
+   "sentence": "In the UK it is only available on prescription.",
+   "classification": "supported",
+   "evidence": "NHS: needs a prescription",
+   "url": "https://www.nhs.uk/medicines/amoxicillin/about-amoxicillin/",
+   "action": "kept"
+  },
+  {
+   "id": "c05",
+   "sentence": "Antibiotics only work on infections caused by bacteria.",
+   "classification": "supported",
+   "evidence": "NHS: antibiotics do not work for viral infections; only bacterial ones follow",
+   "url": "https://www.nhs.uk/medicines/antibiotics/",
+   "action": "kept"
+  },
+  {
+   "id": "c06",
+   "sentence": "They have no effect on viral illnesses such as colds and flu.",
+   "classification": "supported",
+   "evidence": "NHS: antibiotics do not work for viral infections such as colds and flu",
+   "url": "https://www.nhs.uk/medicines/antibiotics/",
+   "action": "kept"
+  },
+  {
+   "id": "c07",
+   "sentence": "The NHS says most adults and children can take amoxicillin.",
+   "classification": "supported",
+   "evidence": "NHS: suitable for most adults and children",
+   "url": "https://www.nhs.uk/medicines/amoxicillin/who-can-and-cannot-take-amoxicillin/",
+   "action": "kept"
+  },
+  {
+   "id": "c08",
+   "sentence": "For most infections, the NHS says people should feel better within a few days.",
+   "classification": "supported",
+   "evidence": "NHS: most infections improve within a few days",
+   "url": "https://www.nhs.uk/medicines/amoxicillin/about-amoxicillin/",
+   "action": "kept"
+  },
+  {
+   "id": "c09",
+   "sentence": "A doctor or pharmacist decides whether an antibiotic suits a particular infection.",
+   "classification": "unsupported",
+   "evidence": "No retrieved text says a doctor or pharmacist decides; pharmacists do not decide prescribing generally. Not retrieved.",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c10",
+   "sentence": "Different antibiotics are chosen for different types of infection.",
+   "classification": "unsupported",
+   "evidence": "Not retrieved; first-pass marked textbook with no text.",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c11",
+   "sentence": "Amoxicillin works by killing the bacteria that cause the infection.",
+   "classification": "supported",
+   "evidence": "PubMed abstract on penicillin mechanism: kills susceptible bacteria; bactericidal",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/7372662/",
+   "action": "edited",
+   "newSentence": "Penicillin antibiotics kill susceptible bacteria by blocking an enzyme that completes the building of the bacterial cell wall."
+  },
+  {
+   "id": "c12",
+   "sentence": "It belongs to the penicillin group of antibiotics.",
+   "classification": "supported",
+   "evidence": "NHS: a type of penicillin antibiotic",
+   "url": "https://www.nhs.uk/medicines/amoxicillin/about-amoxicillin/",
+   "action": "kept"
+  },
+  {
+   "id": "c13",
+   "sentence": "A review of antibiotic resistance says penicillins kill bacteria by damaging or blocking the building of the bacterial cell wall.",
+   "classification": "supported",
+   "evidence": "Retrieved text (PubMed 7372662) says penicillin inhibits the transpeptidase that cross-links peptidoglycan; PMC2702430 not returned, so url was wrong",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/7372662/",
+   "action": "edited",
+   "newSentence": "(merged into the cell wall sentence above)"
+  },
+  {
+   "id": "c14",
+   "sentence": "More generally, antibiotics either kill bacteria or stop them growing and multiplying.",
+   "classification": "unsupported",
+   "evidence": "Not retrieved from any acceptable source; South Tees is a weak source and returned nothing for it.",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c15",
+   "sentence": "The NHS advises carrying on until the course is finished, even if the person feels better.",
+   "classification": "unsupported",
+   "evidence": "NHS Common questions text on finishing the course was not returned; only NHS Shropshire, Telford and Wrekin advice to take the full course was returned.",
+   "url": "https://www.shropshiretelfordandwrekin.nhs.uk/news/keep-antibiotics-working/",
+   "action": "edited",
+   "newSentence": "NHS Shropshire, Telford and Wrekin advises taking antibiotics exactly as prescribed, including the full course."
+  },
+  {
+   "id": "c16",
+   "sentence": "This is because the infection could come back if treatment stops early.",
+   "classification": "unsupported",
+   "evidence": "Not returned in retrieved text.",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c17",
+   "sentence": "The NHS says to tell a doctor if there is no improvement after a few days, or if symptoms get worse at any point.",
+   "classification": "supported",
+   "evidence": "NHS Common questions: tell your doctor if not feeling better after a few days or if worse at any point",
+   "url": "https://www.nhs.uk/medicines/amoxicillin/common-questions-about-amoxicillin/",
+   "action": "kept"
+  },
+  {
+   "id": "c18",
+   "sentence": "The NHS says there are no restrictions on food and drink while taking it.",
+   "classification": "unsupported",
+   "evidence": "Food and drink restrictions not returned (only alcohol and driving).",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c19",
+   "sentence": "The NHS lists feeling sick and diarrhoea as the most common side effects.",
+   "classification": "supported",
+   "evidence": "NHS side effects page: feeling sick and diarrhoea most common",
+   "url": "https://www.nhs.uk/medicines/amoxicillin/about-amoxicillin/",
+   "action": "kept"
+  },
+  {
+   "id": "c20",
+   "sentence": "Thrush can also develop in some people who take antibiotics, including amoxicillin.",
+   "classification": "supported",
+   "evidence": "NHS: thrush can occur after antibiotics",
+   "url": "https://www.nhs.uk/medicines/amoxicillin/about-amoxicillin/",
+   "action": "kept"
+  },
+  {
+   "id": "c21",
+   "sentence": "For thrush, the NHS suggests speaking to a pharmacist or a doctor.",
+   "classification": "unsupported",
+   "evidence": "Advice to speak to pharmacist/doctor about thrush not returned.",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c22",
+   "sentence": "Rashes can also occur.",
+   "classification": "unsupported",
+   "evidence": "General \"rashes can occur\" not returned; only glandular fever rash and delayed allergic rash.",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c23",
+   "sentence": "The NHS says to contact a doctor or NHS 111 straight away for severe diarrhoea, or diarrhoea that contains blood or mucus.",
+   "classification": "supported",
+   "evidence": "NHS: call a doctor or 111 now for diarrhoea with blood or mucus or severe diarrhoea",
+   "url": "https://www.nhs.uk/medicines/amoxicillin/side-effects-of-amoxicillin/",
+   "action": "kept"
+  },
+  {
+   "id": "c24",
+   "sentence": "The same advice covers signs of liver problems, unusual bruising, or a rash with circular red patches and a high temperature.",
+   "classification": "unsupported",
+   "evidence": "Only liver signs returned (yellow skin or eyes, pale poo, dark urine); bruising and circular-patch rash not returned, and not tied to the 111 list.",
+   "url": "https://www.nhs.uk/medicines/amoxicillin/side-effects-of-amoxicillin/",
+   "action": "edited",
+   "newSentence": "The NHS lists signs of liver problems among the serious effects, such as yellowing of the skin or eyes, and pale poo with dark urine."
+  },
+  {
+   "id": "c25",
+   "sentence": "Some of these serious effects can appear after the course has finished.",
+   "classification": "supported",
+   "evidence": "NHS: some serious effects can appear up to two months after finishing the course",
+   "url": "https://www.nhs.uk/medicines/amoxicillin/side-effects-of-amoxicillin/",
+   "action": "kept"
+  },
+  {
+   "id": "c26",
+   "sentence": "Delayed allergic reactions can happen several days after starting amoxicillin capsules.",
+   "classification": "supported",
+   "evidence": "NHS: delayed allergic reactions can happen days after taking capsules (7 to 12 days returned)",
+   "url": "https://www.nhs.uk/medicines/amoxicillin/side-effects-of-amoxicillin/",
+   "action": "kept"
+  },
+  {
+   "id": "c27",
+   "sentence": "The NHS says these are usually a mild rash, though fever, joint pain and swollen glands can also occur.",
+   "classification": "supported",
+   "evidence": "NHS: usually a mild rash; may also have high temperature, joint pain, swollen glands",
+   "url": "https://www.nhs.uk/medicines/amoxicillin/side-effects-of-amoxicillin/",
+   "action": "kept"
+  },
+  {
+   "id": "c28",
+   "sentence": "In rare cases, amoxicillin can cause a serious allergic reaction called anaphylaxis, which is an emergency.",
+   "classification": "supported",
+   "evidence": "NHS: in rare cases amoxicillin can cause anaphylaxis; needs emergency treatment",
+   "url": "https://www.nhs.uk/medicines/amoxicillin/side-effects-of-amoxicillin/",
+   "action": "kept"
+  },
+  {
+   "id": "c29",
+   "sentence": "The NHS says to call 999 if the lips, mouth, throat or tongue swell suddenly, breathing becomes very fast or difficult, or the throat feels tight or swallowing is hard.",
+   "classification": "unsupported",
+   "evidence": "Returned signs: swelling of face, lips, tongue or throat and breathing difficulty; tight throat/very fast breathing detail and explicit \"call 999\" were not returned.",
+   "url": "https://www.nhs.uk/medicines/amoxicillin/side-effects-of-amoxicillin/",
+   "action": "edited",
+   "newSentence": "The NHS says signs include swelling of the face, lips, tongue or throat and difficulty breathing, and that anaphylaxis needs emergency treatment. In the UK, 999 is the number to call in an emergency."
+  },
+  {
+   "id": "c30",
+   "sentence": "Other signs include skin, lips or tongue turning blue, grey or pale, and sudden confusion, drowsiness or fainting.",
+   "classification": "unsupported",
+   "evidence": "Not returned.",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c31",
+   "sentence": "The NHS says not to drive to A&E in this situation.",
+   "classification": "unsupported",
+   "evidence": "Not returned.",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c32",
+   "sentence": "Patient leaflets say amoxicillin is not for people allergic to amoxicillin or penicillin, or who have had an allergic reaction to any antibiotic.",
+   "classification": "unsupported",
+   "evidence": "\"Any antibiotic\" leaflet wording not returned. Returned: NHS lists past reaction to amoxicillin, penicillin or another medicine; SmPC says ask carefully about reactions to penicillins, cephalosporins or other beta-lactams.",
+   "url": "https://www.medicines.org.uk/emc/product/526/smpc",
+   "action": "edited",
+   "newSentence": "The UK product information says a doctor should ask carefully about earlier allergic reactions to penicillins, cephalosporins or other related antibiotics before treatment starts."
+  },
+  {
+   "id": "c33",
+   "sentence": "The NHS says to tell a doctor first about any past allergic reaction to amoxicillin, penicillin or another medicine.",
+   "classification": "supported",
+   "evidence": "NHS Who can and cannot take: past allergic reaction to amoxicillin, penicillin or another medicine is on the list",
+   "url": "https://www.nhs.uk/medicines/amoxicillin/who-can-and-cannot-take-amoxicillin/",
+   "action": "kept"
+  },
+  {
+   "id": "c34",
+   "sentence": "Some people carry a penicillin allergy label that may not be accurate, because a rash or stomach upset after antibiotics is sometimes recorded as allergy.",
+   "classification": "unsupported",
+   "evidence": "Search for inaccurate allergy labels returned nothing (Frimley/North Tees not returned).",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c35",
+   "sentence": "Northern Care Alliance says feeling or being sick is a side effect, not an allergy.",
+   "classification": "unsupported",
+   "evidence": "Northern Care Alliance claim not returned.",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c36",
+   "sentence": "NHS trusts describe allergy testing that starts with a review of past symptoms and is offered only when the team judges it safe.",
+   "classification": "unsupported",
+   "evidence": "Allergy testing description not returned.",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c37",
+   "sentence": "The NHS says alcohol can be drunk while taking amoxicillin.",
+   "classification": "supported",
+   "evidence": "NHS: alcohol can be drunk while taking amoxicillin",
+   "url": "https://www.nhs.uk/medicines/amoxicillin/common-questions-about-amoxicillin/",
+   "action": "kept"
+  },
+  {
+   "id": "c38",
+   "sentence": "Patient leaflets list some medicines that can interact with amoxicillin.",
+   "classification": "supported",
+   "evidence": "emc SmPC for product 526 covers interactions",
+   "url": "https://www.medicines.org.uk/emc/product/526/smpc",
+   "action": "kept"
+  },
+  {
+   "id": "c39",
+   "sentence": "Allopurinol, a gout medicine, may make an allergic skin reaction more likely.",
+   "classification": "supported",
+   "evidence": "emc: allopurinol can increase likelihood of allergic skin reactions",
+   "url": "https://www.medicines.org.uk/emc/product/526/smpc",
+   "action": "kept",
+   "newSentence": "Allopurinol may make allergic skin reactions more likely."
+  },
+  {
+   "id": "c40",
+   "sentence": "Probenecid, another gout medicine, may mean the amoxicillin amount is adjusted.",
+   "classification": "wrong",
+   "evidence": "emc: probenecid reduces kidney excretion of amoxicillin, raising and prolonging blood levels; concomitant use not recommended. Not an adjustment of the amount.",
+   "url": "https://www.medicines.org.uk/emc/product/526/smpc",
+   "action": "edited",
+   "newSentence": "Probenecid reduces the kidneys' removal of amoxicillin, which can raise and prolong its levels in the blood, and the product information says using the two together is not recommended."
+  },
+  {
+   "id": "c41",
+   "sentence": "Blood thinners such as warfarin may call for extra blood tests.",
+   "classification": "supported",
+   "evidence": "emc: cases of raised INR with warfarin/acenocoumarol; close INR monitoring advised",
+   "url": "https://www.medicines.org.uk/emc/product/526/smpc",
+   "action": "kept"
+  },
+  {
+   "id": "c42",
+   "sentence": "Methotrexate may increase side effects, and other antibiotics such as tetracycline may make amoxicillin work less well.",
+   "classification": "supported",
+   "evidence": "emc: penicillins may reduce methotrexate excretion, potentially raising toxicity; tetracyclines and other bacteriostatic drugs may interfere with amoxicillin killing bacteria",
+   "url": "https://www.medicines.org.uk/emc/product/526/smpc",
+   "action": "kept"
+  },
+  {
+   "id": "c43",
+   "sentence": "The NHS says amoxicillin does not stop any type of contraception working, including the combined pill, the progestogen-only pill and emergency contraception.",
+   "classification": "supported",
+   "evidence": "NHS: does not stop any type of contraception working incl. combined pill, progestogen-only pill, emergency contraception",
+   "url": "https://www.nhs.uk/medicines/amoxicillin/common-questions-about-amoxicillin/",
+   "action": "kept"
+  },
+  {
+   "id": "c44",
+   "sentence": "However, being sick or having severe or long-lasting diarrhoea may stop contraceptive pills protecting against pregnancy.",
+   "classification": "supported",
+   "evidence": "NHS: sickness or severe or long-lasting diarrhoea may stop pills protecting",
+   "url": "https://www.nhs.uk/medicines/amoxicillin/common-questions-about-amoxicillin/",
+   "action": "kept"
+  },
+  {
+   "id": "c45",
+   "sentence": "The pill packet explains what to do in that case.",
+   "classification": "unsupported",
+   "evidence": "Not returned.",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c46",
+   "sentence": "The NHS says amoxicillin should not affect the ability to drive or cycle.",
+   "classification": "supported",
+   "evidence": "NHS: should not affect ability to drive or cycle",
+   "url": "https://www.nhs.uk/medicines/amoxicillin/common-questions-about-amoxicillin/",
+   "action": "kept"
+  },
+  {
+   "id": "c47",
+   "sentence": "The NHS advises telling a doctor first about liver or kidney problems, upcoming blood or urine tests, and recent or upcoming vaccinations.",
+   "classification": "supported",
+   "evidence": "NHS Who can and cannot take: liver or kidney problems, blood or urine tests, vaccinations",
+   "url": "https://www.nhs.uk/medicines/amoxicillin/who-can-and-cannot-take-amoxicillin/",
+   "action": "kept"
+  },
+  {
+   "id": "c48",
+   "sentence": "Glandular fever is also on that list, because amoxicillin can cause a rash in people who have it.",
+   "classification": "supported",
+   "evidence": "NHS: amoxicillin can cause a rash in people with glandular fever (consistent with existing entry, which says it should be avoided)",
+   "url": "https://www.nhs.uk/medicines/amoxicillin/who-can-and-cannot-take-amoxicillin/",
+   "action": "kept"
+  },
+  {
+   "id": "c49",
+   "sentence": "The NHS says amoxicillin can be taken during pregnancy, and suggests checking with a pharmacist or doctor first.",
+   "classification": "supported",
+   "evidence": "NHS pregnancy page: returned text says it is safe in pregnancy and still advises checking with a pharmacist or doctor; kept wording avoids \"safe\"",
+   "url": "https://www.nhs.uk/medicines/amoxicillin/pregnancy-breastfeeding-and-fertility-while-taking-amoxicillin/",
+   "action": "kept"
+  },
+  {
+   "id": "c50",
+   "sentence": "It also says amoxicillin can be taken while breastfeeding, because only tiny amounts get into breast milk.",
+   "classification": "supported",
+   "evidence": "NHS: acceptable in breastfeeding as only tiny amounts get into breast milk",
+   "url": "https://www.nhs.uk/medicines/amoxicillin/pregnancy-breastfeeding-and-fertility-while-taking-amoxicillin/",
+   "action": "kept"
+  },
+  {
+   "id": "c51",
+   "sentence": "Patient leaflets say that anyone unsure whether amoxicillin suits them can check with a doctor or pharmacist first.",
+   "classification": "supported",
+   "evidence": "NHS: suitable for most adults and children but always check with a doctor or pharmacist before taking it",
+   "url": "https://www.nhs.uk/medicines/amoxicillin/",
+   "action": "edited",
+   "newSentence": "The NHS says to check with a doctor or pharmacist before taking it."
+  },
+  {
+   "id": "c52",
+   "sentence": "Children often take it as a liquid or capsules for ear infections, and the NHS says the amount can be lower for children.",
+   "classification": "unsafe",
+   "evidence": "Implies dosing (\"amount can be lower for children\"); not retrieved. Only capsules or liquid forms returned.",
+   "url": "https://www.nhs.uk/medicines/amoxicillin/about-amoxicillin/",
+   "action": "removed"
+  },
+  {
+   "id": "c53",
+   "sentence": "The NHS says yes, alcohol can be drunk while taking amoxicillin.",
+   "classification": "supported",
+   "evidence": "NHS: alcohol can be drunk",
+   "url": "https://www.nhs.uk/medicines/amoxicillin/common-questions-about-amoxicillin/",
+   "action": "kept"
+  },
+  {
+   "id": "c54",
+   "sentence": "It also says food and drink are not restricted.",
+   "classification": "unsupported",
+   "evidence": "Food and drink restrictions not returned.",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c55",
+   "sentence": "The NHS adds that amoxicillin should not affect the ability to drive or cycle.",
+   "classification": "supported",
+   "evidence": "NHS: should not affect ability to drive or cycle",
+   "url": "https://www.nhs.uk/medicines/amoxicillin/common-questions-about-amoxicillin/",
+   "action": "kept"
+  },
+  {
+   "id": "c56",
+   "sentence": "This is the NHS answer for amoxicillin specifically.",
+   "classification": "supported",
+   "evidence": "Filler restating page scope; no claim",
+   "url": "https://www.nhs.uk/medicines/amoxicillin/common-questions-about-amoxicillin/",
+   "action": "removed"
+  },
+  {
+   "id": "c57",
+   "sentence": "No, antibiotics only work on infections caused by bacteria.",
+   "classification": "supported",
+   "evidence": "NHS antibiotics: do not work for viral infections",
+   "url": "https://www.nhs.uk/medicines/antibiotics/",
+   "action": "kept"
+  },
+  {
+   "id": "c58",
+   "sentence": "Colds and flu are viral illnesses, and antibiotics have no effect on them.",
+   "classification": "supported",
+   "evidence": "NHS antibiotics: viral infections such as colds and flu",
+   "url": "https://www.nhs.uk/medicines/antibiotics/",
+   "action": "kept"
+  },
+  {
+   "id": "c59",
+   "sentence": "Using antibiotics when they are not needed speeds up antibiotic resistance, which a trust leaflet describes as bacteria changing over time so that the medicines no longer kill them.",
+   "classification": "supported",
+   "evidence": "Returned: unnecessary use can make some bacteria resistant (AMR); \"trust leaflet\" definition not returned. Page attribution uncertain (blended summary).",
+   "url": "https://www.northernmoor.nhs.uk/2024/12/04/antibiotic-resistance/",
+   "action": "edited",
+   "newSentence": "Unnecessary use of antibiotics can cause some bacteria to become resistant to them, which is called antimicrobial resistance."
+  },
+  {
+   "id": "c60",
+   "sentence": "The NHS says the infection could come back if treatment is stopped early.",
+   "classification": "unsupported",
+   "evidence": "Not returned in retrieved text.",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c61",
+   "sentence": "It advises carrying on until the course is finished, even when the person feels better.",
+   "classification": "unsupported",
+   "evidence": "Wording about finishing the course not returned from nhs.uk; only NHS Shropshire, Telford and Wrekin advice returned.",
+   "url": "https://www.shropshiretelfordandwrekin.nhs.uk/news/keep-antibiotics-working/",
+   "action": "edited",
+   "newSentence": "NHS Shropshire, Telford and Wrekin advises taking antibiotics exactly as prescribed, including the full course."
+  },
+  {
+   "id": "c62",
+   "sentence": "One hospital leaflet adds that bacteria left only partly treated may become resistant to the antibiotic.",
+   "classification": "unsupported",
+   "evidence": "South Tees/hospital leaflet claim not returned.",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c63",
+   "sentence": "The NHS says amoxicillin does not stop any type of contraception working.",
+   "classification": "supported",
+   "evidence": "NHS: does not stop any type of contraception working",
+   "url": "https://www.nhs.uk/medicines/amoxicillin/common-questions-about-amoxicillin/",
+   "action": "kept"
+  },
+  {
+   "id": "c64",
+   "sentence": "The exception is when it makes someone sick or causes severe or long-lasting diarrhoea, because the pill may then not protect against pregnancy.",
+   "classification": "supported",
+   "evidence": "NHS: exception for sickness or severe/long-lasting diarrhoea",
+   "url": "https://www.nhs.uk/medicines/amoxicillin/common-questions-about-amoxicillin/",
+   "action": "kept"
+  },
+  {
+   "id": "c65",
+   "sentence": "The pill packet explains what to do.",
+   "classification": "unsupported",
+   "evidence": "Not returned.",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c66",
+   "sentence": "Not always, because amoxicillin can cause a rash in people with glandular fever.",
+   "classification": "supported",
+   "evidence": "NHS: amoxicillin can cause rash in glandular fever",
+   "url": "https://www.nhs.uk/medicines/amoxicillin/who-can-and-cannot-take-amoxicillin/",
+   "action": "kept"
+  },
+  {
+   "id": "c67",
+   "sentence": "Delayed allergic reactions are usually a mild rash, though fever, joint pain and swollen glands can also occur.",
+   "classification": "supported",
+   "evidence": "NHS: delayed reactions usually mild rash; fever, joint pain, swollen glands",
+   "url": "https://www.nhs.uk/medicines/amoxicillin/side-effects-of-amoxicillin/",
+   "action": "kept"
+  },
+  {
+   "id": "c68",
+   "sentence": "Sudden swelling of the lips, mouth, throat or tongue, or difficult breathing, is an emergency, and the NHS says to call 999.",
+   "classification": "unsupported",
+   "evidence": "Returned: swelling of face, lips, tongue or throat, breathing difficulty, emergency treatment; \"mouth\" and explicit \"NHS says call 999\" not returned.",
+   "url": "https://www.nhs.uk/medicines/amoxicillin/side-effects-of-amoxicillin/",
+   "action": "edited",
+   "newSentence": "Swelling of the face, lips, tongue or throat, or difficulty breathing, may be anaphylaxis, which needs emergency treatment: call 999."
+  },
+  {
+   "id": "c69",
+   "sentence": "A penicillin antibiotic",
+   "classification": "supported",
+   "evidence": "NHS: penicillin antibiotic",
+   "url": "https://www.nhs.uk/medicines/amoxicillin/about-amoxicillin/",
+   "action": "kept"
+  },
+  {
+   "id": "c70",
+   "sentence": "Bacteria, not viruses such as colds and flu",
+   "classification": "supported",
+   "evidence": "NHS: antibiotics do not work for viruses",
+   "url": "https://www.nhs.uk/medicines/antibiotics/",
+   "action": "kept"
+  },
+  {
+   "id": "c71",
+   "sentence": "Prescription only",
+   "classification": "supported",
+   "evidence": "NHS: needs a prescription",
+   "url": "https://www.nhs.uk/medicines/amoxicillin/about-amoxicillin/",
+   "action": "kept"
+  },
+  {
+   "id": "c72",
+   "sentence": "Feeling sick and diarrhoea",
+   "classification": "supported",
+   "evidence": "NHS: nausea and diarrhoea most common",
+   "url": "https://www.nhs.uk/medicines/amoxicillin/about-amoxicillin/",
+   "action": "kept"
+  },
+  {
+   "id": "c73",
+   "sentence": "Sudden swelling of the lips, mouth, throat or tongue, or difficult breathing: call 999",
+   "classification": "unsupported",
+   "evidence": "Swelling of mouth and explicit 999 not returned.",
+   "url": "https://www.nhs.uk/medicines/amoxicillin/side-effects-of-amoxicillin/",
+   "action": "edited",
+   "newSentence": "Swelling of the face, lips, tongue or throat, or difficulty breathing: call 999"
+  },
+  {
+   "id": "c74",
+   "sentence": "The NHS says it can be drunk while taking amoxicillin",
+   "classification": "supported",
+   "evidence": "NHS: alcohol can be drunk",
+   "url": "https://www.nhs.uk/medicines/amoxicillin/common-questions-about-amoxicillin/",
+   "action": "kept"
+  }
+ ],
+ "notes": "Second-pass counts describe the 74 first-pass sentences. The two 'textbook' sentences in section 0 had no retrieved text and were removed (classed unsupported). The cell wall sentence was supported by a PubMed abstract (7372662), not PMC2702430. Allergy-label, Northern Care Alliance, allergy-testing and 'partly treated bacteria' sentences were not retrievable and were cut. The probenecid sentence was wrong (emc says use together is not recommended, not that the amount is adjusted); interaction list otherwise matches emc SmPC product 526 (cited as /smpc; the search returned that product's SmPC under a pil-style link, check the URL resolves). 'Finish the course' is kept only as NHS Shropshire, Telford and Wrekin advice (an ICB page; weak) because nhs.uk wording was not returned. Antimicrobial resistance sentences cite Northern Moor Medical Practice (weak GP-practice page; the search blended pages so the attribution is a best guess; consider the NHS Antibiotics page). The final text contains ONE textbook sentence, 'In the UK, 999 is the number to call in an emergency', used so the urgency names its route since the retrieved NHS text did not state 999. The NHS pregnancy page says it is 'safe' in pregnancy; the final wording avoids 'safe'. Glandular fever wording follows NHS (rash; tell a doctor first); the existing medications.json entry says amoxicillin 'should be avoided' in glandular fever and calls the rash non-allergic, which this pass did not verify. A MedlinePlus (US) result said amoxicillin may reduce hormonal contraceptive effect; the NHS (UK) statement is used and the conflict is flagged. Thrush, anaphylaxis wording and 'up to two months' came from search summaries of the NHS side-effects page. Final text is about 1,000 words in the article block."
+}
