@@ -1,0 +1,786 @@
+{
+ "id": "miscarriage",
+ "searchesUsed": 14,
+ "counts": {
+  "supported": 67,
+  "textbook": 1,
+  "unsupported": 30,
+  "wrong": 3,
+  "unsafe": 0,
+  "unchecked": 0
+ },
+ "claims": [
+  {
+   "id": "c01",
+   "classification": "textbook",
+   "evidence": "No retrieved text defines it; plain undisputed definition.",
+   "url": "https://www.nhs.uk/conditions/miscarriage/",
+   "action": "kept"
+  },
+  {
+   "id": "c02",
+   "classification": "supported",
+   "evidence": "NHS: may take time to recover physically and emotionally; 'difficult' not in retrieved text.",
+   "url": "https://www.nhs.uk/conditions/miscarriage/",
+   "action": "edited",
+   "newSentence": "The NHS says it may take some time to recover physically and emotionally."
+  },
+  {
+   "id": "c03",
+   "classification": "supported",
+   "evidence": "NHS: most common sign vaginal bleeding, light spotting to heavy bleeding with clots.",
+   "url": "https://www.nhs.uk/conditions/miscarriage/",
+   "action": "kept"
+  },
+  {
+   "id": "c04",
+   "classification": "supported",
+   "evidence": "NHS: some people have no symptoms, learn at a scan (missed miscarriage).",
+   "url": "https://www.nhs.uk/conditions/miscarriage/",
+   "action": "kept"
+  },
+  {
+   "id": "c05",
+   "classification": "unsupported",
+   "evidence": "Cause often unclear is supported; no retrieved NHS text says most women go on to a successful pregnancy (a later search explicitly found none).",
+   "url": "https://www.nhs.uk/conditions/miscarriage/",
+   "action": "edited",
+   "newSentence": "The NHS says the cause is often not identified."
+  },
+  {
+   "id": "c06",
+   "classification": "supported",
+   "evidence": "Tommy's: miscarriages very rarely happen because of something you did or did not do.",
+   "url": "https://www.tommys.org/baby-loss-support/miscarriage-information-and-support/about-miscarriage/causes-miscarriage",
+   "action": "kept"
+  },
+  {
+   "id": "c07",
+   "classification": "supported",
+   "evidence": "NHS causes: first trimester miscarriages usually linked to problems with the foetus.",
+   "url": "https://www.nhs.uk/conditions/miscarriage/causes/",
+   "action": "kept"
+  },
+  {
+   "id": "c08",
+   "classification": "supported",
+   "evidence": "Tommy's: most common cause of early miscarriage is chromosome problems, by chance.",
+   "url": "https://www.tommys.org/baby-loss-support/miscarriage-information-and-support/about-miscarriage/causes-miscarriage",
+   "action": "kept"
+  },
+  {
+   "id": "c09",
+   "classification": "wrong",
+   "evidence": "NHS causes lists placental development problems under the first trimester; second trimester causes are long-term conditions, infections, medicines, weakened cervix.",
+   "url": "https://www.nhs.uk/conditions/miscarriage/causes/",
+   "action": "edited",
+   "newSentence": "For later miscarriages the NHS lists long-term conditions, infections and a weakened cervix."
+  },
+  {
+   "id": "c10",
+   "classification": "supported",
+   "evidence": "NHS: causes of some miscarriages often not identified.",
+   "url": "https://www.nhs.uk/conditions/miscarriage/causes/",
+   "action": "edited",
+   "newSentence": "The NHS says the cause of some miscarriages is often not identified."
+  },
+  {
+   "id": "c11",
+   "classification": "unsupported",
+   "evidence": "Smoking and heavy caffeine/alcohol are listed by NHS inform as raising risk without directly causing; Tommy's snippet lists heavy drinking, not smoking or caffeine; 'modifiable' not in text.",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/pregnancy-and-childbirth/losing-a-baby/causes-of-miscarriage/",
+   "action": "edited",
+   "newSentence": "NHS inform Scotland lists smoking and heavy caffeine or alcohol use as raising the risk of miscarriage without directly causing it."
+  },
+  {
+   "id": "c12",
+   "classification": "supported",
+   "evidence": "Tommy's lists BMI outside a range, heavy drinking, diabetes if not well managed as possible contributors; 'modifiable' wording dropped.",
+   "url": "https://www.tommys.org/baby-loss-support/miscarriage-information-and-support/about-miscarriage/causes-miscarriage",
+   "action": "edited",
+   "newSentence": "Tommy's lists a body mass index outside the healthy range, heavy drinking and poorly managed diabetes as possible contributors."
+  },
+  {
+   "id": "c13",
+   "classification": "unsupported",
+   "evidence": "Diabetes and thyroid disorders appear on the NHS causes page, not attributed to NHS inform in retrieved text.",
+   "url": "https://www.nhs.uk/conditions/miscarriage/causes/",
+   "action": "edited",
+   "newSentence": "The NHS lists poorly controlled diabetes and thyroid disorders as long-term conditions that can raise the risk of a later miscarriage."
+  },
+  {
+   "id": "c14",
+   "classification": "unsupported",
+   "evidence": "Tommy's snippet mentions pregnancy history only as a factor in its risk tool; no statement that one miscarriage raises risk of another.",
+   "url": "https://www.tommys.org/baby-loss-support/miscarriage-information-and-support/about-miscarriage/causes-miscarriage",
+   "action": "removed"
+  },
+  {
+   "id": "c15",
+   "classification": "supported",
+   "evidence": "Tommy's: risk increases as the biological parents get older.",
+   "url": "https://www.tommys.org/baby-loss-support/miscarriage-information-and-support/about-miscarriage/causes-miscarriage",
+   "action": "edited",
+   "newSentence": "Tommy's says the risk of miscarriage increases as the biological parents get older."
+  },
+  {
+   "id": "c16",
+   "classification": "supported",
+   "evidence": "NHS: spotting to heavy bleeding.",
+   "url": "https://www.nhs.uk/conditions/miscarriage/",
+   "action": "edited",
+   "newSentence": "Vaginal bleeding, from light spotting to heavy bleeding."
+  },
+  {
+   "id": "c17",
+   "classification": "supported",
+   "evidence": "NHS: lower tummy cramping and pain typical.",
+   "url": "https://www.nhs.uk/conditions/miscarriage/",
+   "action": "edited",
+   "newSentence": "Lower tummy cramping and pain."
+  },
+  {
+   "id": "c18",
+   "classification": "unsupported",
+   "evidence": "Retrieved text says heavy bleeding with clots; pink, grey or white lumps not in text.",
+   "url": "https://www.nhs.uk/conditions/miscarriage/",
+   "action": "edited",
+   "newSentence": "Heavy bleeding with clots."
+  },
+  {
+   "id": "c19",
+   "classification": "unsupported",
+   "evidence": "Fluid leaking from the vagina not in retrieved text.",
+   "url": "https://www.nhs.uk/conditions/miscarriage/",
+   "action": "removed"
+  },
+  {
+   "id": "c20",
+   "classification": "supported",
+   "evidence": "NHS: missed miscarriage has no symptoms, found at scan.",
+   "url": "https://www.nhs.uk/conditions/miscarriage/",
+   "action": "kept"
+  },
+  {
+   "id": "c21",
+   "classification": "supported",
+   "evidence": "NHS symptoms: call 999 for heavy red bleeding soaking a pad.",
+   "url": "https://www.nhs.uk/conditions/miscarriage/symptoms/",
+   "action": "edited",
+   "newSentence": "Heavy bleeding that soaks a pad, which the NHS lists as a reason to call 999."
+  },
+  {
+   "id": "c22",
+   "classification": "supported",
+   "evidence": "NHS inform: seek medical advice immediately for high temperature.",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/pregnancy-and-childbirth/losing-a-baby/early-miscarriage/",
+   "action": "edited",
+   "newSentence": "A high temperature (fever), which NHS inform Scotland lists as a reason to seek medical advice immediately."
+  },
+  {
+   "id": "c23",
+   "classification": "unsupported",
+   "evidence": "Avoid-sex-for-infection advice appeared only in trust leaflets, not NHS afterwards page text.",
+   "url": "https://www.nhs.uk/conditions/miscarriage/",
+   "action": "removed"
+  },
+  {
+   "id": "c24",
+   "classification": "supported",
+   "evidence": "NHS: may take time to recover physically and emotionally.",
+   "url": "https://www.nhs.uk/conditions/miscarriage/",
+   "action": "edited",
+   "newSentence": "Emotional effects, with the NHS noting that recovery can take some time physically and emotionally."
+  },
+  {
+   "id": "c25",
+   "classification": "unsupported",
+   "evidence": "No retrieved Tommy's text links miscarriage with depression or PTSD.",
+   "url": "https://www.tommys.org/baby-loss-support/miscarriage-information-and-support/about-miscarriage/causes-miscarriage",
+   "action": "removed"
+  },
+  {
+   "id": "c26",
+   "classification": "supported",
+   "evidence": "NICE: referred people offered transvaginal ultrasound to identify location and viability of the pregnancy.",
+   "url": "https://www.nice.org.uk/guidance/ng126/chapter/Management-of-miscarriage",
+   "action": "edited",
+   "newSentence": "NICE says people referred with suspected miscarriage are offered an ultrasound scan to identify where the pregnancy is and whether it is viable."
+  },
+  {
+   "id": "c27",
+   "classification": "supported",
+   "evidence": "NICE: if ultrasound and LMP dating disagree, use ultrasound to guide management.",
+   "url": "https://www.nice.org.uk/guidance/ng126/chapter/Management-of-miscarriage",
+   "action": "kept"
+  },
+  {
+   "id": "c28",
+   "classification": "supported",
+   "evidence": "NHS: missed miscarriage may have no symptoms.",
+   "url": "https://www.nhs.uk/conditions/miscarriage/",
+   "action": "kept"
+  },
+  {
+   "id": "c29",
+   "classification": "unsupported",
+   "evidence": "'Cannot be stopped' and 'options to manage symptoms' not found in NHS text (search explicitly found none).",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/pregnancy-and-childbirth/losing-a-baby/early-miscarriage/",
+   "action": "edited",
+   "newSentence": "NHS inform Scotland describes three ways to manage a miscarriage."
+  },
+  {
+   "id": "c30",
+   "classification": "supported",
+   "evidence": "NHS inform: expectant (wait), medical (tablets), surgical (remove pregnancy).",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/pregnancy-and-childbirth/losing-a-baby/early-miscarriage/",
+   "action": "edited",
+   "newSentence": "Waiting for it to finish on its own, tablets (medical management), or an operation to remove the pregnancy from the womb."
+  },
+  {
+   "id": "c31",
+   "classification": "supported",
+   "evidence": "NICE: discuss all options so the woman can make an informed choice.",
+   "url": "https://www.nice.org.uk/guidance/ng126/chapter/Management-of-miscarriage",
+   "action": "kept"
+  },
+  {
+   "id": "c32",
+   "classification": "unsupported",
+   "evidence": "'Cannot be stopped once started' not found in retrieved NHS text.",
+   "url": "https://www.nhs.uk/conditions/miscarriage/",
+   "action": "removed"
+  },
+  {
+   "id": "c33",
+   "classification": "supported",
+   "evidence": "NHS causes: risk not linked to emotional stress, shock, exercise, lifting, working, sex, air travel, spicy food.",
+   "url": "https://www.nhs.uk/conditions/miscarriage/causes/",
+   "action": "edited",
+   "newSentence": "The NHS says an increased risk of miscarriage is not linked to emotional stress, shock, exercise, lifting, working, sex, air travel or spicy food."
+  },
+  {
+   "id": "c34",
+   "classification": "supported",
+   "evidence": "Tommy's reducing-risk page exists; factors from Tommy's causes page (BMI, heavy drinking, air pollution, diabetes).",
+   "url": "https://www.tommys.org/baby-loss-support/miscarriage-information-and-support/about-miscarriage/causes-miscarriage",
+   "action": "edited",
+   "newSentence": "Tommy's has a page on reducing the risk of miscarriage and lists body mass index outside a healthy range, heavy drinking, air pollution and poorly managed diabetes as possible contributors."
+  },
+  {
+   "id": "c35",
+   "classification": "supported",
+   "evidence": "NHS symptoms: 999/A&E for heavy red bleeding soaking a pad, severe tummy pain, shoulder pain, feeling faint or losing consciousness.",
+   "url": "https://www.nhs.uk/conditions/miscarriage/symptoms/",
+   "action": "edited",
+   "newSentence": "The NHS says to call 999 or go to A&E for heavy red bleeding that soaks a pad, severe tummy pain, shoulder pain, or feeling faint or losing consciousness."
+  },
+  {
+   "id": "c36",
+   "classification": "supported",
+   "evidence": "NHS inform: before 12 weeks contact GP practice or early pregnancy unit; phone 111 if GP practice closed.",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/pregnancy-and-childbirth/losing-a-baby/early-miscarriage/",
+   "action": "edited",
+   "newSentence": "NHS inform Scotland says that before 12 weeks the advice is to contact the GP practice or local early pregnancy unit, or phone 111 if the GP practice is closed."
+  },
+  {
+   "id": "c37",
+   "classification": "supported",
+   "evidence": "NHS inform: from 12 weeks contact local maternity service.",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/pregnancy-and-childbirth/losing-a-baby/early-miscarriage/",
+   "action": "edited",
+   "newSentence": "From 12 weeks it advises contacting the local maternity service."
+  },
+  {
+   "id": "c38",
+   "classification": "supported",
+   "evidence": "NHS inform: seek advice immediately for fever or severe pain not managed with pain relief.",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/pregnancy-and-childbirth/losing-a-baby/early-miscarriage/",
+   "action": "edited",
+   "newSentence": "It also advises seeking medical advice straight away for a high temperature or for pain that pain relief does not control."
+  },
+  {
+   "id": "c39",
+   "classification": "unsupported",
+   "evidence": "No retrieved NHS text says talk to a GP after three or more and usually referred; NHS inform recurrent page snippet (blended) describes three or more losses and tests for a cause.",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/pregnancy-and-childbirth/losing-a-baby/recurrent-miscarriage/",
+   "action": "edited",
+   "newSentence": "NHS inform Scotland describes recurrent miscarriage as generally meaning three or more early losses, and says further tests may be used to look for an underlying cause."
+  },
+  {
+   "id": "c40",
+   "classification": "supported",
+   "evidence": "NHS: vaginal bleeding main sign.",
+   "url": "https://www.nhs.uk/conditions/miscarriage/",
+   "action": "kept"
+  },
+  {
+   "id": "c41",
+   "classification": "supported",
+   "evidence": "NHS: spotting or brownish discharge to heavy bleeding.",
+   "url": "https://www.nhs.uk/conditions/miscarriage/",
+   "action": "edited",
+   "newSentence": "The NHS describes it as ranging from light spotting or brownish discharge to heavy bleeding with bright red blood or clots."
+  },
+  {
+   "id": "c42",
+   "classification": "supported",
+   "evidence": "NHS: lower tummy cramping and pain typical.",
+   "url": "https://www.nhs.uk/conditions/miscarriage/",
+   "action": "edited",
+   "newSentence": "Lower tummy cramping and pain are also typical."
+  },
+  {
+   "id": "c43",
+   "classification": "unsupported",
+   "evidence": "Pink, grey or white lumps and leaking fluid not in retrieved text.",
+   "url": "https://www.nhs.uk/conditions/miscarriage/",
+   "action": "removed"
+  },
+  {
+   "id": "c44",
+   "classification": "supported",
+   "evidence": "NHS: no symptoms, found at a scan, missed miscarriage.",
+   "url": "https://www.nhs.uk/conditions/miscarriage/",
+   "action": "kept"
+  },
+  {
+   "id": "c45",
+   "classification": "wrong",
+   "evidence": "Retrieved text says bleeding usually eases over about 2 weeks and can last up to 3 weeks (trust leaflets); NHS afterwards page not returned.",
+   "url": "https://www.nhs.uk/conditions/miscarriage/",
+   "action": "removed"
+  },
+  {
+   "id": "c46",
+   "classification": "supported",
+   "evidence": "NHS symptoms: 999 for heavy bleeding soaking a pad.",
+   "url": "https://www.nhs.uk/conditions/miscarriage/symptoms/",
+   "action": "edited",
+   "newSentence": "The NHS says to call 999 or go to A&E for heavy red bleeding that soaks a pad, severe tummy pain, shoulder pain, or feeling faint or losing consciousness."
+  },
+  {
+   "id": "c47",
+   "classification": "unsupported",
+   "evidence": "Light bleeding/mild pain route is maternity unit, GP or NHS 111; unusual discharge not in text.",
+   "url": "https://www.nhs.uk/conditions/miscarriage/symptoms/",
+   "action": "edited",
+   "newSentence": "For lighter bleeding or milder tummy pain, the NHS says to contact the maternity unit or, if there is not one, a GP or NHS 111."
+  },
+  {
+   "id": "c48",
+   "classification": "supported",
+   "evidence": "NHS: cause often not identified.",
+   "url": "https://www.nhs.uk/conditions/miscarriage/causes/",
+   "action": "edited",
+   "newSentence": "The NHS says there are many reasons why a miscarriage may happen, and that the cause of some miscarriages is often not identified."
+  },
+  {
+   "id": "c49",
+   "classification": "supported",
+   "evidence": "NHS causes: first trimester linked to problems with the foetus.",
+   "url": "https://www.nhs.uk/conditions/miscarriage/causes/",
+   "action": "kept"
+  },
+  {
+   "id": "c50",
+   "classification": "supported",
+   "evidence": "Tommy's: chromosomes, by chance.",
+   "url": "https://www.tommys.org/baby-loss-support/miscarriage-information-and-support/about-miscarriage/causes-miscarriage",
+   "action": "kept"
+  },
+  {
+   "id": "c51",
+   "classification": "wrong",
+   "evidence": "Placental problems listed under first trimester; later causes are conditions, infections, weakened cervix.",
+   "url": "https://www.nhs.uk/conditions/miscarriage/causes/",
+   "action": "edited",
+   "newSentence": "For later miscarriages, the NHS lists long-term conditions such as poorly controlled diabetes, severe high blood pressure, lupus, kidney disease and thyroid disorders, as well as infections and a weakened cervix."
+  },
+  {
+   "id": "c52",
+   "classification": "supported",
+   "evidence": "Tommy's very rarely caused by something you did or did not do; 'should not blame themselves' not in text.",
+   "url": "https://www.tommys.org/baby-loss-support/miscarriage-information-and-support/about-miscarriage/causes-miscarriage",
+   "action": "edited",
+   "newSentence": "Tommy's says miscarriages very rarely happen because of something the person did or did not do."
+  },
+  {
+   "id": "c53",
+   "classification": "supported",
+   "evidence": "NHS causes: not linked to stress, shock, exercise, lifting, working, sex, air travel, spicy food.",
+   "url": "https://www.nhs.uk/conditions/miscarriage/causes/",
+   "action": "edited",
+   "newSentence": "The NHS says an increased risk of miscarriage is not linked to emotional stress, shock, exercise, lifting, working, sex, air travel or spicy food."
+  },
+  {
+   "id": "c54",
+   "classification": "unsupported",
+   "evidence": "BMI supported by Tommy's, smoking/caffeine not in Tommy's text; 'modifiable' not in text.",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/pregnancy-and-childbirth/losing-a-baby/causes-of-miscarriage/",
+   "action": "edited",
+   "newSentence": "NHS inform Scotland lists age, blood clotting problems, smoking and heavy caffeine or alcohol use as things that raise the risk without directly causing a miscarriage."
+  },
+  {
+   "id": "c55",
+   "classification": "unsupported",
+   "evidence": "Diabetes and thyroid are on the NHS causes page, not attributed to NHS inform.",
+   "url": "https://www.nhs.uk/conditions/miscarriage/causes/",
+   "action": "edited",
+   "newSentence": "For later miscarriages, the NHS lists long-term conditions such as poorly controlled diabetes, severe high blood pressure, lupus, kidney disease and thyroid disorders, as well as infections and a weakened cervix."
+  },
+  {
+   "id": "c56",
+   "classification": "unsupported",
+   "evidence": "No retrieved statement that one miscarriage raises the risk of another.",
+   "url": "https://www.tommys.org/baby-loss-support/miscarriage-information-and-support/about-miscarriage/causes-miscarriage",
+   "action": "removed"
+  },
+  {
+   "id": "c57",
+   "classification": "supported",
+   "evidence": "NHS inform: before 12 weeks GP practice or EPU, 111 if closed.",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/pregnancy-and-childbirth/losing-a-baby/early-miscarriage/",
+   "action": "kept"
+  },
+  {
+   "id": "c58",
+   "classification": "supported",
+   "evidence": "NHS inform: from 12 weeks maternity service.",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/pregnancy-and-childbirth/losing-a-baby/early-miscarriage/",
+   "action": "kept"
+  },
+  {
+   "id": "c59",
+   "classification": "supported",
+   "evidence": "NICE page title: Ectopic pregnancy and miscarriage: diagnosis and initial management.",
+   "url": "https://www.nice.org.uk/guidance/ng126/chapter/Management-of-miscarriage",
+   "action": "edited",
+   "newSentence": "NICE guideline NG126, Ectopic pregnancy and miscarriage: diagnosis and initial management, says that people referred with suspected miscarriage are offered an ultrasound scan to identify where the pregnancy is and whether it is viable."
+  },
+  {
+   "id": "c60",
+   "classification": "supported",
+   "evidence": "NICE: transvaginal scan to identify location and viability; ultrasound alone not reliable enough.",
+   "url": "https://www.nice.org.uk/guidance/ng126/chapter/Management-of-miscarriage",
+   "action": "edited",
+   "newSentence": "NICE says ultrasound features alone are not reliable enough, so the scan is considered together with the clinical picture and blood hCG levels."
+  },
+  {
+   "id": "c61",
+   "classification": "supported",
+   "evidence": "NICE: use ultrasound findings if dating disagrees.",
+   "url": "https://www.nice.org.uk/guidance/ng126/chapter/Management-of-miscarriage",
+   "action": "edited",
+   "newSentence": "Where the scan and the date of the last period disagree, NICE says to use the scan findings to guide management."
+  },
+  {
+   "id": "c62",
+   "classification": "supported",
+   "evidence": "NHS ectopic page: fertilised egg implants outside the womb, usually in a fallopian tube (author cited miscarriage page; real source is the ectopic page).",
+   "url": "https://www.nhs.uk/conditions/ectopic-pregnancy/",
+   "action": "edited",
+   "newSentence": "The NHS describes an ectopic pregnancy as a fertilised egg implanting outside the womb, usually in one of the fallopian tubes."
+  },
+  {
+   "id": "c63",
+   "classification": "unsupported",
+   "evidence": "No retrieved NHS text says anyone with three or more should talk to a GP.",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/pregnancy-and-childbirth/losing-a-baby/recurrent-miscarriage/",
+   "action": "edited",
+   "newSentence": "NHS inform Scotland describes recurrent miscarriage as generally meaning three or more early losses, and says further tests may be used to look for an underlying cause."
+  },
+  {
+   "id": "c64",
+   "classification": "unsupported",
+   "evidence": "'GP will usually refer for tests' not in retrieved NHS text; one trust says GP is the usual route.",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/pregnancy-and-childbirth/losing-a-baby/recurrent-miscarriage/",
+   "action": "removed"
+  },
+  {
+   "id": "c65",
+   "classification": "unsupported",
+   "evidence": "'Cannot be stopped' not found in NHS text.",
+   "url": "https://www.nhs.uk/conditions/miscarriage/",
+   "action": "removed"
+  },
+  {
+   "id": "c66",
+   "classification": "supported",
+   "evidence": "NHS inform: expectant, medical (tablets), surgical.",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/pregnancy-and-childbirth/losing-a-baby/early-miscarriage/",
+   "action": "edited",
+   "newSentence": "Expectant management means waiting for the miscarriage to finish on its own. Medical management uses tablets. Surgical management means an operation to remove the pregnancy from the womb."
+  },
+  {
+   "id": "c67",
+   "classification": "supported",
+   "evidence": "NICE: discuss all options for informed choice.",
+   "url": "https://www.nice.org.uk/guidance/ng126/chapter/Management-of-miscarriage",
+   "action": "kept"
+  },
+  {
+   "id": "c68",
+   "classification": "supported",
+   "evidence": "NICE (NG126): expectant management first line for confirmed miscarriage (author doubt resolved; days omitted).",
+   "url": "https://www.nice.org.uk/guidance/ng126/chapter/Management-of-miscarriage",
+   "action": "kept"
+  },
+  {
+   "id": "c69",
+   "classification": "unsupported",
+   "evidence": "Text says general or local anaesthetic only in trust leaflets; 'in a theatre', 'where clinically appropriate' not in NICE text.",
+   "url": "https://www.nice.org.uk/guidance/ng126/chapter/Management-of-miscarriage",
+   "action": "removed"
+  },
+  {
+   "id": "c70",
+   "classification": "supported",
+   "evidence": "NICE updated NG126 recommends mifepristone with misoprostol for medical management of missed miscarriage (author doubt resolved; year dropped).",
+   "url": "https://www.nice.org.uk/guidance/ng126/chapter/Management-of-miscarriage",
+   "action": "edited",
+   "newSentence": "NICE's updated guideline recommends mifepristone in combination with misoprostol for the medical management of missed miscarriage."
+  },
+  {
+   "id": "c71",
+   "classification": "unsupported",
+   "evidence": "Resting not in text; pain relief commonly advised (NHS summary) and painkillers offered (NHS inform).",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/pregnancy-and-childbirth/losing-a-baby/early-miscarriage/",
+   "action": "edited",
+   "newSentence": "NHS inform Scotland says people are offered prescription painkillers or given advice on over-the-counter ones."
+  },
+  {
+   "id": "c72",
+   "classification": "unsupported",
+   "evidence": "Sex advice only in trust leaflets, not NHS page text.",
+   "url": "https://www.nhs.uk/conditions/miscarriage/",
+   "action": "removed"
+  },
+  {
+   "id": "c73",
+   "classification": "supported",
+   "evidence": "NHS: may take time to recover physically and emotionally.",
+   "url": "https://www.nhs.uk/conditions/miscarriage/",
+   "action": "edited",
+   "newSentence": "The NHS says that it may take some time to recover from a miscarriage, physically and emotionally, and that anyone struggling to cope can talk to a GP."
+  },
+  {
+   "id": "c74",
+   "classification": "supported",
+   "evidence": "NHS: GP can point to support services; counselling and charities available; support for partners not found.",
+   "url": "https://www.nhs.uk/conditions/miscarriage/",
+   "action": "edited",
+   "newSentence": "It says a GP can point to support services, and that counselling and charities such as Miscarriage UK and Tommy's are available."
+  },
+  {
+   "id": "c75",
+   "classification": "unsupported",
+   "evidence": "Search explicitly found nothing on NHS Talking Therapies or bereavement midwives from the Miscarriage Association.",
+   "url": "https://www.miscarriageassociation.org.uk/how-we-help/our-support-services/",
+   "action": "removed"
+  },
+  {
+   "id": "c76",
+   "classification": "supported",
+   "evidence": "MA: helpline, live chat, email, support groups; site titled Miscarriage UK.",
+   "url": "https://www.miscarriageassociation.org.uk/how-we-help/our-support-services/",
+   "action": "edited",
+   "newSentence": "The Miscarriage Association, which now presents itself as Miscarriage UK, offers a helpline, live chat, email support and support groups led by trained volunteers."
+  },
+  {
+   "id": "c77",
+   "classification": "unsupported",
+   "evidence": "MA does not provide counselling (supported); 'some find counselling helpful' not in text; it has a counselling page and directory.",
+   "url": "https://www.miscarriageassociation.org.uk/how-we-help/our-support-services/",
+   "action": "edited",
+   "newSentence": "The charity does not provide counselling itself, but its website has a page on counselling after a miscarriage and a counsellors directory."
+  },
+  {
+   "id": "c78",
+   "classification": "supported",
+   "evidence": "Tommy's free midwives' helpline for pregnancy loss; Cruse free bereavement helpline (separate pages).",
+   "url": "https://www.miscarriageassociation.org.uk/how-we-help/our-support-services/",
+   "action": "edited",
+   "newSentence": "Tommy's runs a free midwives' helpline covering any type of pregnancy loss, staffed by midwives trained in bereavement support. Cruse Bereavement Support runs a free helpline for anyone who is grieving."
+  },
+  {
+   "id": "c79",
+   "classification": "unsupported",
+   "evidence": "No retrieved NHS text says most women have a successful pregnancy or can try again when ready.",
+   "url": "https://www.nhs.uk/conditions/miscarriage/",
+   "action": "removed"
+  },
+  {
+   "id": "c80",
+   "classification": "supported",
+   "evidence": "Tommy's very rarely.",
+   "url": "https://www.tommys.org/baby-loss-support/miscarriage-information-and-support/about-miscarriage/causes-miscarriage",
+   "action": "edited",
+   "newSentence": "Tommy's says miscarriages very rarely happen because of something the person did or did not do."
+  },
+  {
+   "id": "c81",
+   "classification": "supported",
+   "evidence": "NHS causes: not linked to stress, exercise, sex etc.",
+   "url": "https://www.nhs.uk/conditions/miscarriage/causes/",
+   "action": "edited",
+   "newSentence": "The NHS says an increased risk of miscarriage is not linked to emotional stress, shock, exercise, lifting, working, sex, air travel or spicy food."
+  },
+  {
+   "id": "c82",
+   "classification": "supported",
+   "evidence": "Tommy's chromosomes, chance.",
+   "url": "https://www.tommys.org/baby-loss-support/miscarriage-information-and-support/about-miscarriage/causes-miscarriage",
+   "action": "kept"
+  },
+  {
+   "id": "c83",
+   "classification": "unsupported",
+   "evidence": "'Cannot be stopped' not found.",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/pregnancy-and-childbirth/losing-a-baby/early-miscarriage/",
+   "action": "edited",
+   "newSentence": "NHS inform Scotland describes three options: waiting for the miscarriage to finish on its own, medical management with tablets, or an operation to remove the pregnancy from the womb."
+  },
+  {
+   "id": "c84",
+   "classification": "supported",
+   "evidence": "Options per NHS inform.",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/pregnancy-and-childbirth/losing-a-baby/early-miscarriage/",
+   "action": "kept"
+  },
+  {
+   "id": "c85",
+   "classification": "supported",
+   "evidence": "NICE informed choice.",
+   "url": "https://www.nice.org.uk/guidance/ng126/chapter/Management-of-miscarriage",
+   "action": "edited",
+   "newSentence": "NICE says clinicians should discuss all the options with the person so that they can make an informed choice, and describes waiting as the first-line approach for a confirmed miscarriage."
+  },
+  {
+   "id": "c86",
+   "classification": "supported",
+   "evidence": "NHS 999 list.",
+   "url": "https://www.nhs.uk/conditions/miscarriage/symptoms/",
+   "action": "edited",
+   "newSentence": "The NHS says to call 999 or go to A&E for heavy red bleeding that soaks a pad, severe tummy pain, shoulder pain, or feeling faint or losing consciousness."
+  },
+  {
+   "id": "c87",
+   "classification": "supported",
+   "evidence": "NHS inform before 12 weeks route.",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/pregnancy-and-childbirth/losing-a-baby/early-miscarriage/",
+   "action": "edited",
+   "newSentence": "For lighter bleeding, NHS inform Scotland says that before 12 weeks the advice is to contact the GP practice or early pregnancy unit, or phone 111 if the GP practice is closed."
+  },
+  {
+   "id": "c88",
+   "classification": "supported",
+   "evidence": "NHS inform from 12 weeks maternity.",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/pregnancy-and-childbirth/losing-a-baby/early-miscarriage/",
+   "action": "edited",
+   "newSentence": "From 12 weeks it advises contacting the maternity service."
+  },
+  {
+   "id": "c89",
+   "classification": "unsupported",
+   "evidence": "No retrieved NHS text for most women having a successful pregnancy.",
+   "url": "https://www.nhs.uk/conditions/miscarriage/",
+   "action": "removed"
+  },
+  {
+   "id": "c90",
+   "classification": "unsupported",
+   "evidence": "Higher risk after one miscarriage not found.",
+   "url": "https://www.tommys.org/baby-loss-support/miscarriage-information-and-support/about-miscarriage/causes-miscarriage",
+   "action": "removed"
+  },
+  {
+   "id": "c91",
+   "classification": "unsupported",
+   "evidence": "NHS three-or-more referral not found; NHS inform describes recurrent miscarriage and tests.",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/pregnancy-and-childbirth/losing-a-baby/recurrent-miscarriage/",
+   "action": "edited",
+   "newSentence": "NHS inform Scotland describes recurrent miscarriage as generally meaning three or more early losses, and says further tests may be used to check for an underlying cause."
+  },
+  {
+   "id": "c92",
+   "classification": "supported",
+   "evidence": "NHS: recovery time; GP can point to support; partner support not found.",
+   "url": "https://www.nhs.uk/conditions/miscarriage/",
+   "action": "edited",
+   "newSentence": "The NHS says it may take some time to recover physically and emotionally, and that a GP can point to support services."
+  },
+  {
+   "id": "c93",
+   "classification": "supported",
+   "evidence": "MA services.",
+   "url": "https://www.miscarriageassociation.org.uk/how-we-help/our-support-services/",
+   "action": "edited",
+   "newSentence": "The Miscarriage Association, now presenting itself as Miscarriage UK, offers a helpline, live chat and support groups, including for partners and family members."
+  },
+  {
+   "id": "c94",
+   "classification": "supported",
+   "evidence": "Tommy's helpline free.",
+   "url": "https://www.miscarriageassociation.org.uk/how-we-help/our-support-services/",
+   "action": "edited",
+   "newSentence": "Tommy's offers a free midwives' helpline, and Cruse Bereavement Support runs a free helpline for anyone who is grieving."
+  },
+  {
+   "id": "c95",
+   "classification": "supported",
+   "evidence": "Matches NHS/Tommy's/NHS inform text above.",
+   "url": "https://www.nhs.uk/conditions/miscarriage/",
+   "action": "edited",
+   "newSentence": "Vaginal bleeding, from light spotting to heavy bleeding"
+  },
+  {
+   "id": "c96",
+   "classification": "supported",
+   "evidence": "Matches NHS/Tommy's/NHS inform text above.",
+   "url": "https://www.nhs.uk/conditions/miscarriage/",
+   "action": "kept"
+  },
+  {
+   "id": "c97",
+   "classification": "supported",
+   "evidence": "NHS causes and Tommy's.",
+   "url": "https://www.nhs.uk/conditions/miscarriage/causes/",
+   "action": "edited",
+   "newSentence": "Problems with the baby, often chromosome problems that happen by chance"
+  },
+  {
+   "id": "c98",
+   "classification": "supported",
+   "evidence": "NHS inform options.",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/pregnancy-and-childbirth/losing-a-baby/early-miscarriage/",
+   "action": "edited",
+   "newSentence": "Waiting, medical management with tablets, or an operation"
+  },
+  {
+   "id": "c99",
+   "classification": "supported",
+   "evidence": "NHS symptoms 999 list; dizziness reworded to faint.",
+   "url": "https://www.nhs.uk/conditions/miscarriage/symptoms/",
+   "action": "edited",
+   "newSentence": "Call 999 or go to A&E for heavy red bleeding that soaks a pad, severe tummy pain, shoulder pain or feeling faint"
+  },
+  {
+   "id": "c100",
+   "classification": "supported",
+   "evidence": "NHS inform before 12 weeks.",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/pregnancy-and-childbirth/losing-a-baby/early-miscarriage/",
+   "action": "edited",
+   "newSentence": "The GP practice or an early pregnancy unit, or 111 if the GP practice is closed"
+  },
+  {
+   "id": "c101",
+   "classification": "unsupported",
+   "evidence": "NHS three-or-more referral not found; replaced with NHS inform 12-week route.",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/pregnancy-and-childbirth/losing-a-baby/early-miscarriage/",
+   "action": "edited",
+   "newSentence": "The local maternity service, according to NHS inform Scotland"
+  }
+ ],
+ "notes": "Author doubts: not linked to stress/exercise/sex is supported by the NHS causes page (list is wider); first-line expectant management and mifepristone with misoprostol are supported by NICE NG126 text (dates/days omitted); ectopic description is supported by the NHS ectopic page (reference added), not the miscarriage page. Unsupported and removed: successful future pregnancy, cannot be stopped, one miscarriage raising risk, depression/PTSD, pink/grey/white lumps, fluid leaking, sex-and-infection advice, up to 2 weeks bleeding, theatre/general anaesthetic, rest advice, Miscarriage Association NHS routes, GP referral after three or more. Recurrent-miscarriage sentence rests on a blended search summary attributed to NHS inform; a human should confirm on that page. Late-miscarriage causes sourced to NHS causes page; blood clotting/age/smoking/caffeine to NHS inform causes summary (blended). NHS 999 list taken from NHS symptoms page summary. Support-line phone numbers deliberately omitted. 14 of 14 searches used; NHS afterwards page text was not returned."
+}

@@ -1,0 +1,207 @@
+{
+ "id": "healthy-weight-bmi-explained",
+ "searchesUsed": 10,
+ "counts": {
+  "supported": 15,
+  "textbook": 0,
+  "unsupported": 10,
+  "wrong": 1,
+  "unsafe": 0,
+  "unchecked": 0
+ },
+ "claims": [
+  {
+   "id": "c01",
+   "classification": "supported",
+   "evidence": "NHS BMI page: cannot tell muscle from fat. Waist size and GP discussion are consistent with the NHS waist and overweight pages.",
+   "url": "https://www.nhs.uk/live-well/healthy-weight/bmi-calculator/",
+   "action": "kept"
+  },
+  {
+   "id": "c02",
+   "classification": "supported",
+   "evidence": "NHS BMI page: calculator checks whether adult is a healthy weight for height.",
+   "url": "https://www.nhs.uk/live-well/healthy-weight/bmi-calculator/",
+   "action": "kept"
+  },
+  {
+   "id": "c03",
+   "classification": "supported",
+   "evidence": "BMI page: very muscular adults/athletes may be classed overweight; older adults who lose muscle may look healthy while carrying excess fat.",
+   "url": "https://www.nhs.uk/live-well/healthy-weight/bmi-calculator/",
+   "action": "kept"
+  },
+  {
+   "id": "c04",
+   "classification": "supported",
+   "evidence": "BMI page: higher chance of health problems at a lower BMI in Black, Asian and some other minority ethnic groups.",
+   "url": "https://www.nhs.uk/live-well/healthy-weight/bmi-calculator/",
+   "action": "kept"
+  },
+  {
+   "id": "c05",
+   "classification": "supported",
+   "evidence": "Obesity - NHS: lifestyle changes, local programmes, medicines (orlistat, specialist-prescribed) and surgery.",
+   "url": "https://www.nhs.uk/conditions/obesity/",
+   "action": "kept"
+  },
+  {
+   "id": "c06",
+   "classification": "supported",
+   "evidence": "BMI page: BMI calculator checks healthy weight for height in adults.",
+   "url": "https://www.nhs.uk/live-well/healthy-weight/bmi-calculator/",
+   "action": "kept"
+  },
+  {
+   "id": "c07",
+   "classification": "supported",
+   "evidence": "BMI page: healthy range 18.5 to 23 for Black, Asian and some other minority ethnic groups, 18.5 to 24.9 otherwise.",
+   "url": "https://www.nhs.uk/live-well/healthy-weight/bmi-calculator/",
+   "action": "kept"
+  },
+  {
+   "id": "c08",
+   "classification": "supported",
+   "evidence": "BMI page: risk of conditions such as type 2 diabetes at a lower BMI.",
+   "url": "https://www.nhs.uk/live-well/healthy-weight/bmi-calculator/",
+   "action": "kept"
+  },
+  {
+   "id": "c09",
+   "classification": "unsupported",
+   "evidence": "BMI page: cannot tell the difference between muscle and fat. The 'too much weight rather than too much fat' gloss was not in the returned text.",
+   "url": "https://www.nhs.uk/live-well/healthy-weight/bmi-calculator/",
+   "action": "edited",
+   "newSentence": "BMI cannot tell the difference between muscle and fat."
+  },
+  {
+   "id": "c10",
+   "classification": "supported",
+   "evidence": "BMI page: very muscular adults and athletes may be classed overweight or obese even though body fat is low.",
+   "url": "https://www.nhs.uk/live-well/healthy-weight/bmi-calculator/",
+   "action": "kept"
+  },
+  {
+   "id": "c11",
+   "classification": "supported",
+   "evidence": "BMI page: adults who lose muscle with age may appear healthy while carrying excess fat.",
+   "url": "https://www.nhs.uk/live-well/healthy-weight/bmi-calculator/",
+   "action": "kept"
+  },
+  {
+   "id": "c12",
+   "classification": "supported",
+   "evidence": "NHS 'why is my waist size important' page: midpoint between lowest rib and hip bone, tape snug, breathe out naturally. Instruction-style how-to; kept as a description of the NHS method.",
+   "url": "https://www.nhs.uk/common-health-questions/lifestyle/why-is-my-waist-size-important/",
+   "action": "kept"
+  },
+  {
+   "id": "c13",
+   "classification": "unsupported",
+   "evidence": "Waist-to-height ratio of 0.5 to 0.59 = increased health risks, 0.6+ further increase (NHS/NICE/BHF). The specific list 'heart disease, type 2 diabetes and stroke' for this ratio is not stated by NHS text found (BHF covers heart/circulatory; diabetes via BHF).",
+   "url": "https://www.nhs.uk/common-health-questions/lifestyle/why-is-my-waist-size-important/",
+   "action": "edited",
+   "newSentence": "The NHS and NICE describe a waist measurement of more than half a person's height as linked with increased health risks."
+  },
+  {
+   "id": "c14",
+   "classification": "unsupported",
+   "evidence": "'BMI as a starting point for a GP discussion' was not found in returned text. NHS overweight page does advise seeing a GP for help losing weight or if waist is more than half of height.",
+   "url": "https://www.nhs.uk/conditions/overweight-and-obesity/",
+   "action": "edited",
+   "newSentence": "The NHS advises seeing a GP for help with losing weight, or if the waist measurement is more than half of height."
+  },
+  {
+   "id": "c15",
+   "classification": "unsupported",
+   "evidence": "No returned text confirmed a GP checking blood pressure, glucose, cholesterol and waist at a BMI discussion; NHS diagnosis text says the GP looks for underlying causes.",
+   "url": "https://www.nhs.uk/conditions/overweight-and-obesity/",
+   "action": "removed"
+  },
+  {
+   "id": "c16",
+   "classification": "unsupported",
+   "evidence": "Returned NHS text says a GP can advise on safe weight loss and refer to programmes, medicines or surgery; 'it can be hard to lose weight' was not found.",
+   "url": "https://www.nhs.uk/conditions/overweight-and-obesity/",
+   "action": "edited",
+   "newSentence": "The NHS says a GP can advise on weight loss and on options such as weight management programmes, medicines or surgery."
+  },
+  {
+   "id": "c17",
+   "classification": "supported",
+   "evidence": "Obesity - NHS: lifestyle changes, weight management programmes, medicines, surgery.",
+   "url": "https://www.nhs.uk/conditions/obesity/",
+   "action": "kept"
+  },
+  {
+   "id": "c18",
+   "classification": "unsupported",
+   "evidence": "Not from NHS England or nhsinform: local NHS trust pages (e.g. Addenbrooke's) describe tier 3 teams with consultant, specialist nurses, dietitians, clinical psychologist; composition varies by area.",
+   "url": "https://www.cuh.nhs.uk/patient-information/what-to-expect-at-the-tier-3-obesity-clinic/",
+   "action": "edited",
+   "newSentence": "Local NHS specialist weight management services, often called tier 3, usually have a team that can include a doctor, dietitians, specialist nurses and psychologists."
+  },
+  {
+   "id": "c19",
+   "classification": "wrong",
+   "evidence": "Outdated/overbroad: tirzepatide (Mounjaro) has been prescribable by GP practices since 23 June 2025 in phased cohorts (ICB pages); Wegovy/Saxenda were NICE-restricted to specialist services in several ICB statements. NHS 111 Wales still says liraglutide/semaglutide via specialist service. england.nhs.uk page appeared in results but its text was not returned.",
+   "url": "https://www.england.nhs.uk/ourwork/prevention/obesity/medicines-for-obesity/weight-management-injections/",
+   "action": "edited",
+   "newSentence": "NHS access to weight-loss injections such as semaglutide and tirzepatide depends on eligibility criteria and varies by area; some are offered through specialist weight management services, and tirzepatide is being introduced through GP practices in phases for people with the highest clinical need."
+  },
+  {
+   "id": "c20",
+   "classification": "unsupported",
+   "evidence": "Returned NHS text lists type 2 diabetes, heart disease, stroke, high blood pressure, several cancers, osteoarthritis, fatty liver disease. Musculoskeletal, infertility and psychiatric were not confirmed (and nhsinform was not returned).",
+   "url": "https://www.nhs.uk/conditions/overweight-and-obesity/",
+   "action": "edited",
+   "newSentence": "The NHS lists type 2 diabetes, heart disease, stroke, high blood pressure, several cancers, osteoarthritis and fatty liver disease among conditions linked to excess weight."
+  },
+  {
+   "id": "c21",
+   "classification": "supported",
+   "evidence": "NHS overweight and obesity page: having more body fat than the body needs.",
+   "url": "https://www.nhs.uk/conditions/overweight-and-obesity/",
+   "action": "kept"
+  },
+  {
+   "id": "c22",
+   "classification": "supported",
+   "evidence": "NHS page: can happen when you eat or drink more than the body needs or do not do enough physical activity.",
+   "url": "https://www.nhs.uk/conditions/overweight-and-obesity/",
+   "action": "kept"
+  },
+  {
+   "id": "c23",
+   "classification": "unsupported",
+   "evidence": "Returned NHS text: genes, certain medicines, some health conditions such as underactive thyroid. Specific drug classes (steroids, antidepressants, beta blockers) were not seen in returned text.",
+   "url": "https://www.nhs.uk/conditions/overweight-and-obesity/",
+   "action": "edited",
+   "newSentence": "Other factors listed include genes, some medicines, and some health conditions such as an underactive thyroid."
+  },
+  {
+   "id": "c24",
+   "classification": "unsupported",
+   "evidence": "NHS diagnosis text: GP looks for underlying causes, for example medication being taken. Specific tests list (diabetes blood test, cholesterol, BP) not confirmed.",
+   "url": "https://www.nhs.uk/conditions/obesity/diagnosis/",
+   "action": "edited",
+   "newSentence": "The NHS says a GP looks for possible underlying causes of obesity, for example a medicine the person is taking."
+  },
+  {
+   "id": "c25",
+   "classification": "unsupported",
+   "evidence": "The NHS weight loss plan is a free 12-week app (NHS-linked pages). 'Downloadable guide' not confirmed.",
+   "url": "https://assets.nhs.uk/tools/download-panels/data/weight-loss/pdf/wlp1.pdf",
+   "action": "edited",
+   "newSentence": "The NHS offers a free 12-week weight loss plan as an app."
+  },
+  {
+   "id": "c26",
+   "classification": "supported",
+   "evidence": "Obesity - NHS (search summary): losing about 3% of body weight and keeping it off can lower risk of obesity-related complications such as diabetes and heart disease. A later search did not re-surface the figure, so moderate confidence.",
+   "url": "https://www.nhs.uk/conditions/obesity/",
+   "action": "kept"
+  }
+ ],
+ "notes": "Search budget ran out. c19 (weight-loss medicines) is the key risk: policy is changing fast; wording is deliberately general. Waist-method sentence (c12) is a how-to; wording describes the NHS method. 3% figure (c26) appeared once only. Ledger URLs for c12/c13, c18, c20 pointed to pages that did not carry the claim (myhealthlondon, nhsinform)."
+}

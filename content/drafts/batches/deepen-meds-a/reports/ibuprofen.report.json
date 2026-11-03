@@ -1,0 +1,408 @@
+{
+ "id": "ibuprofen",
+ "searchesUsed": 8,
+ "counts": {
+  "supported": 37,
+  "textbook": 1,
+  "unsupported": 13,
+  "wrong": 0,
+  "unsafe": 2,
+  "unchecked": 0
+ },
+ "claims": [
+  {
+   "id": "c01",
+   "classification": "supported",
+   "evidence": "NHS page title: painkiller that also treats inflammation",
+   "url": "https://www.nhs.uk/medicines/ibuprofen-for-adults/",
+   "action": "kept"
+  },
+  {
+   "id": "c02",
+   "classification": "textbook",
+   "evidence": "Plain definition of inflammation; retrieved NHS text lists sprains, strains, arthritis as inflammation",
+   "url": "https://www.nhs.uk/medicines/ibuprofen-for-adults/",
+   "action": "kept"
+  },
+  {
+   "id": "c03",
+   "classification": "supported",
+   "evidence": "NHS: ibuprofen is a type of NSAID",
+   "url": "https://www.nhs.uk/medicines/ibuprofen-for-adults/",
+   "action": "kept"
+  },
+  {
+   "id": "c04",
+   "classification": "supported",
+   "evidence": "NHS: tablets, capsules, granules, liquid; gel, mousse or spray on the skin",
+   "url": "https://www.nhs.uk/medicines/ibuprofen-for-adults/common-questions-about-ibuprofen-for-adults/",
+   "action": "edited",
+   "newSentence": "... and as gel, mousse or spray that is applied to the skin."
+  },
+  {
+   "id": "c05",
+   "classification": "supported",
+   "evidence": "NHS: does not usually work well for nerve pain; doctor may prescribe a different medicine",
+   "url": "https://www.nhs.uk/medicines/ibuprofen-for-adults/common-questions-about-ibuprofen-for-adults/",
+   "action": "kept"
+  },
+  {
+   "id": "c06",
+   "classification": "unsupported",
+   "evidence": "Retrieved text compares ibuprofen with paracetamol, aspirin and co-codamol but does not say they are alternatives if ibuprofen does not help",
+   "url": "https://www.nhs.uk/medicines/ibuprofen-for-adults/",
+   "action": "edited",
+   "newSentence": "The NHS compares ibuprofen with other painkillers, including paracetamol, aspirin and co-codamol ..."
+  },
+  {
+   "id": "c07",
+   "classification": "unsupported",
+   "evidence": "No retrieved text says most adults and older teenagers can take it",
+   "url": "https://www.nhs.uk/medicines/ibuprofen-for-adults/who-can-and-cannot-take-ibuprofen/",
+   "action": "removed"
+  },
+  {
+   "id": "c08",
+   "classification": "supported",
+   "evidence": "NHS: reduces hormones that cause pain and swelling",
+   "url": "https://www.nhs.uk/medicines/ibuprofen-for-adults/",
+   "action": "kept"
+  },
+  {
+   "id": "c09",
+   "classification": "supported",
+   "evidence": "Follows directly from c08",
+   "url": "https://www.nhs.uk/medicines/ibuprofen-for-adults/",
+   "action": "kept"
+  },
+  {
+   "id": "c10",
+   "classification": "supported",
+   "evidence": "South Tees leaflet: tissue injury prompts prostaglandins, NSAIDs reduce them; StatPearls: ibuprofen inhibits COX, reducing prostanoid formation",
+   "url": "https://www.ncbi.nlm.nih.gov/books/NBK542299/",
+   "action": "edited",
+   "newSentence": "Split into a hospital-leaflet sentence and a medical-reference sentence on cyclo-oxygenase."
+  },
+  {
+   "id": "c11",
+   "classification": "supported",
+   "evidence": "NHS: tablets/liquid work after 20 to 30 minutes, skin 1 to 2 days; \"fairly soon\" was vague",
+   "url": "https://www.nhs.uk/medicines/ibuprofen-for-adults/common-questions-about-ibuprofen-for-adults/",
+   "action": "edited",
+   "newSentence": "... start to work soon after they are taken, while skin products take a day or two ..."
+  },
+  {
+   "id": "c12",
+   "classification": "unsafe",
+   "evidence": "NHS gives a specific cut-off (10 days; 3 days under 18), not \"several days\"; a duration cut-off is not allowed in prose and the vague form misstates the source",
+   "url": "https://www.nhs.uk/medicines/ibuprofen-for-adults/common-questions-about-ibuprofen-for-adults/",
+   "action": "removed"
+  },
+  {
+   "id": "c13",
+   "classification": "supported",
+   "evidence": "NHS: safe [sic] to take regularly for many years if a doctor prescribes it; reworded without \"safe\"",
+   "url": "https://www.nhs.uk/medicines/ibuprofen-for-adults/common-questions-about-ibuprofen-for-adults/",
+   "action": "kept"
+  },
+  {
+   "id": "c14",
+   "classification": "supported",
+   "evidence": "NHS: ulcer risk higher with long-term or big doses; doctor may prescribe stomach-protecting medicine",
+   "url": "https://www.nhs.uk/medicines/ibuprofen-for-adults/common-questions-about-ibuprofen-for-adults/",
+   "action": "kept"
+  },
+  {
+   "id": "c15",
+   "classification": "supported",
+   "evidence": "NHS side effects page lists these common effects",
+   "url": "https://www.nhs.uk/medicines/ibuprofen-for-adults/side-effects-of-ibuprofen/",
+   "action": "kept"
+  },
+  {
+   "id": "c16",
+   "classification": "supported",
+   "evidence": "NHS: wait for dizziness to pass, do not drive or ride a bike while dizzy",
+   "url": "https://www.nhs.uk/medicines/ibuprofen-for-adults/side-effects-of-ibuprofen/",
+   "action": "edited",
+   "newSentence": "If dizziness happens, the NHS advises against driving or riding a bike until it passes."
+  },
+  {
+   "id": "c17",
+   "classification": "unsupported",
+   "evidence": "Retrieved text only says gels and creams \"may\" have fewer side effects, with the specific NHS page unclear; \"because less medicine gets in\" rests on indirect pharmacokinetic reasoning (no head-to-head evidence returned)",
+   "url": "https://www.nhs.uk/medicines/ibuprofen-for-adults/",
+   "action": "removed"
+  },
+  {
+   "id": "c18",
+   "classification": "unsupported",
+   "evidence": "Retrieved text supports stomach bleeding and anaphylaxis; kidney problems and \"ulcers\" as a rarer-effect list were not shown",
+   "url": "https://www.nhs.uk/medicines/ibuprofen-for-adults/side-effects-of-ibuprofen/",
+   "action": "edited",
+   "newSentence": "Rarer serious effects include bleeding in the stomach and a serious allergic reaction called anaphylaxis."
+  },
+  {
+   "id": "c19",
+   "classification": "unsupported",
+   "evidence": "NHS summary names swollen ankles or blood in urine -> doctor or 111; \"changes in urination\" and the route for black poo were not shown",
+   "url": "https://www.nhs.uk/medicines/ibuprofen-for-adults/side-effects-of-ibuprofen/",
+   "action": "edited",
+   "newSentence": "Swollen ankles or blood in the urine are reasons to contact a doctor or NHS 111; black poo listed as serious effect, sign of stomach bleeding."
+  },
+  {
+   "id": "c20",
+   "classification": "supported",
+   "evidence": "NHS: call 999 for swelling of lips, mouth, throat or tongue, fast or difficult breathing",
+   "url": "https://www.nhs.uk/medicines/ibuprofen-for-adults/side-effects-of-ibuprofen/",
+   "action": "edited",
+   "newSentence": "... is a reason to call 999."
+  },
+  {
+   "id": "c21",
+   "classification": "supported",
+   "evidence": "MedlinePlus boxed warning: NSAIDs raise chance of heart attack or stroke, greater with long-term use or higher doses",
+   "url": "https://medlineplus.gov/druginfo/meds/a682159.html",
+   "action": "kept"
+  },
+  {
+   "id": "c22",
+   "classification": "supported",
+   "evidence": "NHS: take with food or milk to reduce chance of upset stomach",
+   "url": "https://www.nhs.uk/medicines/ibuprofen-for-adults/how-and-when-to-take-ibuprofen/",
+   "action": "edited",
+   "newSentence": "Limited to tablets, capsules, granules and liquid; \"best taken\" removed."
+  },
+  {
+   "id": "c23",
+   "classification": "supported",
+   "evidence": "NHS: usually fine to drink alcohol; too much may irritate stomach for oral forms",
+   "url": "https://www.nhs.uk/medicines/ibuprofen-for-adults/common-questions-about-ibuprofen-for-adults/",
+   "action": "edited"
+  },
+  {
+   "id": "c24",
+   "classification": "supported",
+   "evidence": "MedlinePlus: heavy alcohol intake raises ulcer/bleeding risk",
+   "url": "https://medlineplus.gov/druginfo/meds/a682159.html",
+   "action": "edited",
+   "newSentence": "Wording \"ulcers and bleeding\"."
+  },
+  {
+   "id": "c25",
+   "classification": "supported",
+   "evidence": "emc leaflet 13027: \"Avoid alcohol since it may enhance the side effects of ibuprofen, especially those affecting the stomach, intestines or central nervous system\"",
+   "url": "https://www.medicines.org.uk/emc/files/pil.13027.pdf",
+   "action": "edited",
+   "newSentence": "URL fixed (first pass cited pil.7021, which was not retrieved)."
+  },
+  {
+   "id": "c26",
+   "classification": "supported",
+   "evidence": "NHS ibuprofen summary: do not combine with other NSAIDs such as naproxen or aspirin; raises risk of serious effects like stomach ulcers. Summary blended NHS pages so the exact sub-page is uncertain",
+   "url": "https://www.nhs.uk/medicines/ibuprofen-for-adults/",
+   "action": "edited",
+   "newSentence": "The NHS says ibuprofen should not be combined with other NSAIDs such as naproxen or aspirin, because that raises the risk of serious effects such as stomach ulcers."
+  },
+  {
+   "id": "c27",
+   "classification": "unsupported",
+   "evidence": "Interaction text found in StatPearls/PMC review: ACE inhibitor and diuretic effect reduced, warfarin GI bleeding, lithium levels raised. \"Diuretics and ACE inhibitors add kidney harm\" came only from an unnamed leaflet; no URL tied to it",
+   "url": "https://www.ncbi.nlm.nih.gov/books/NBK542299/",
+   "action": "edited",
+   "newSentence": "Split into reduced ACE inhibitor/diuretic effect, warfarin bleeding risk and raised lithium level; kidney-harm claim cut."
+  },
+  {
+   "id": "c28",
+   "classification": "unsupported",
+   "evidence": "NHS lists allergy to NSAIDs, pregnancy, severe heart/kidney/liver failure; ulcer history appeared; \"stomach bleeding\" history not shown",
+   "url": "https://www.nhs.uk/medicines/ibuprofen-for-adults/who-can-and-cannot-take-ibuprofen/",
+   "action": "edited",
+   "newSentence": "\"stomach ulcers\" only"
+  },
+  {
+   "id": "c29",
+   "classification": "unsupported",
+   "evidence": "Not shown as an NHS statement; MedlinePlus says risk of ulcers/bleeding is higher with older age, long-term use, poor health, smoking, heavy alcohol",
+   "url": "https://medlineplus.gov/druginfo/meds/a682159.html",
+   "action": "edited",
+   "newSentence": "MedlinePlus says the risk of ulcers and bleeding is higher with long-term use, older age, poor health, smoking or heavy alcohol use."
+  },
+  {
+   "id": "c30",
+   "classification": "supported",
+   "evidence": "NHS: asthma, hay fever or allergies -> check with doctor or pharmacist first",
+   "url": "https://www.nhs.uk/medicines/ibuprofen-for-adults/who-can-and-cannot-take-ibuprofen/",
+   "action": "kept"
+  },
+  {
+   "id": "c31",
+   "classification": "unsupported",
+   "evidence": "Search returned no source tying these items (mild to moderate heart failure, uncontrolled high blood pressure) to the NHS as stated; leaflet quote could not be tied to one PDF",
+   "url": "https://www.nhs.uk/medicines/ibuprofen-for-adults/who-can-and-cannot-take-ibuprofen/",
+   "action": "removed"
+  },
+  {
+   "id": "c32",
+   "classification": "supported",
+   "evidence": "MedlinePlus: should not be taken after recent heart attack unless doctor directs",
+   "url": "https://medlineplus.gov/druginfo/meds/a682159.html",
+   "action": "kept"
+  },
+  {
+   "id": "c33",
+   "classification": "unsupported",
+   "evidence": "Some 600 mg leaflets list an increased tendency to bleed; dehydration only from an ibuprofen lysine leaflet, a different product",
+   "url": "https://www.medicines.org.uk/emc/files/pil.14365.pdf",
+   "action": "edited",
+   "newSentence": "Some UK leaflets list an increased tendency to bleed ...; dehydration cut."
+  },
+  {
+   "id": "c34",
+   "classification": "supported",
+   "evidence": "Leaflets: do not take in last 3 months of pregnancy; could harm unborn child or cause problems at delivery; labour later or longer than expected",
+   "url": "https://www.medicines.org.uk/emc/files/pil.13027.pdf",
+   "action": "edited",
+   "newSentence": "Reworded to the leaflet; heart and kidney clause dropped. Several leaflets returned in one summary; exact PDF not confirmed."
+  },
+  {
+   "id": "c35",
+   "classification": "supported",
+   "evidence": "NHS: with food or milk reduces chance of upset stomach",
+   "url": "https://www.nhs.uk/medicines/ibuprofen-for-adults/how-and-when-to-take-ibuprofen/",
+   "action": "edited"
+  },
+  {
+   "id": "c36",
+   "classification": "supported",
+   "evidence": "As c14",
+   "url": "https://www.nhs.uk/medicines/ibuprofen-for-adults/common-questions-about-ibuprofen-for-adults/",
+   "action": "kept"
+  },
+  {
+   "id": "c37",
+   "classification": "unsupported",
+   "evidence": "Route for black poo not shown in retrieved text",
+   "url": "https://www.nhs.uk/medicines/ibuprofen-for-adults/side-effects-of-ibuprofen/",
+   "action": "edited",
+   "newSentence": "Black poo listed as serious; swollen ankles or blood in urine -> doctor or NHS 111."
+  },
+  {
+   "id": "c38",
+   "classification": "supported",
+   "evidence": "As c11",
+   "url": "https://www.nhs.uk/medicines/ibuprofen-for-adults/common-questions-about-ibuprofen-for-adults/",
+   "action": "edited"
+  },
+  {
+   "id": "c39",
+   "classification": "supported",
+   "evidence": "As c05",
+   "url": "https://www.nhs.uk/medicines/ibuprofen-for-adults/common-questions-about-ibuprofen-for-adults/",
+   "action": "kept"
+  },
+  {
+   "id": "c40",
+   "classification": "unsafe",
+   "evidence": "Implies a cut-off; source says 10 days",
+   "url": "https://www.nhs.uk/medicines/ibuprofen-for-adults/common-questions-about-ibuprofen-for-adults/",
+   "action": "removed"
+  },
+  {
+   "id": "c41",
+   "classification": "supported",
+   "evidence": "As c23",
+   "url": "https://www.nhs.uk/medicines/ibuprofen-for-adults/common-questions-about-ibuprofen-for-adults/",
+   "action": "edited"
+  },
+  {
+   "id": "c42",
+   "classification": "supported",
+   "evidence": "NHS: too much alcohol may irritate stomach; MedlinePlus: heavy alcohol raises bleeding risk",
+   "url": "https://www.nhs.uk/medicines/ibuprofen-for-adults/common-questions-about-ibuprofen-for-adults/",
+   "action": "edited"
+  },
+  {
+   "id": "c43",
+   "classification": "supported",
+   "evidence": "As c25",
+   "url": "https://www.medicines.org.uk/emc/files/pil.13027.pdf",
+   "action": "edited",
+   "newSentence": "\"advise avoiding alcohol\" with reason"
+  },
+  {
+   "id": "c44",
+   "classification": "supported",
+   "evidence": "NHS: pregnant people should not take it",
+   "url": "https://www.nhs.uk/medicines/ibuprofen-for-adults/who-can-and-cannot-take-ibuprofen/",
+   "action": "kept"
+  },
+  {
+   "id": "c45",
+   "classification": "supported",
+   "evidence": "As c34",
+   "url": "https://www.medicines.org.uk/emc/files/pil.13027.pdf",
+   "action": "edited"
+  },
+  {
+   "id": "c46",
+   "classification": "supported",
+   "evidence": "Leaflets: generally not used in first six months unless doctor judges it necessary",
+   "url": "https://www.medicines.org.uk/emc/files/pil.13027.pdf",
+   "action": "edited",
+   "newSentence": "Exact PDF not confirmed."
+  },
+  {
+   "id": "c47",
+   "classification": "supported",
+   "evidence": "NHS page title",
+   "url": "https://www.nhs.uk/medicines/ibuprofen-for-adults/",
+   "action": "kept"
+  },
+  {
+   "id": "c48",
+   "classification": "supported",
+   "evidence": "NHS: oral forms and gel, mousse or spray",
+   "url": "https://www.nhs.uk/medicines/ibuprofen-for-adults/common-questions-about-ibuprofen-for-adults/",
+   "action": "edited"
+  },
+  {
+   "id": "c49",
+   "classification": "supported",
+   "evidence": "As c11",
+   "url": "https://www.nhs.uk/medicines/ibuprofen-for-adults/common-questions-about-ibuprofen-for-adults/",
+   "action": "edited"
+  },
+  {
+   "id": "c50",
+   "classification": "supported",
+   "evidence": "As c22",
+   "url": "https://www.nhs.uk/medicines/ibuprofen-for-adults/how-and-when-to-take-ibuprofen/",
+   "action": "edited"
+  },
+  {
+   "id": "c51",
+   "classification": "unsupported",
+   "evidence": "Past stomach bleeding not shown",
+   "url": "https://www.nhs.uk/medicines/ibuprofen-for-adults/who-can-and-cannot-take-ibuprofen/",
+   "action": "edited",
+   "newSentence": "Now \"past stomach ulcers\"."
+  },
+  {
+   "id": "c52",
+   "classification": "supported",
+   "evidence": "As c23",
+   "url": "https://www.nhs.uk/medicines/ibuprofen-for-adults/common-questions-about-ibuprofen-for-adults/",
+   "action": "edited"
+  },
+  {
+   "id": "c53",
+   "classification": "unsupported",
+   "evidence": "999 supported; black poo route not shown",
+   "url": "https://www.nhs.uk/medicines/ibuprofen-for-adults/side-effects-of-ibuprofen/",
+   "action": "edited",
+   "newSentence": "Now swelling/breathing: 999; swollen ankles or blood in urine: doctor or NHS 111."
+  }
+ ],
+ "notes": "Search budget of 8 used. Added new supported sentences not in first pass (NHS uses list; co-codamol; paracetamol comparison; gel no extra benefit; MedlinePlus ulcer text; StatPearls COX/stomach-kidney link; South Tees prostaglandin sentence; gel sore eyes/mouth). Doubts: (1) summaries blended pages, so NHS sub-page for c26 and the 'compares with paracetamol/aspirin/co-codamol' lines is the main page by best guess; (2) emc leaflet claims (alcohol, pregnancy, bleeding tendency) are tied to PDFs 13027, 7020 and 14365 by title/ordering, exact PDF per quote not confirmed; (3) interaction sentence relies on StatPearls and PMC4508078 summaries (no NHS/BNF page returned); (4) c01-c53 per-sentence ids count keyFacts values as sentences; (5) NHS says drinking some alcohol is 'usually safe' - reworded to avoid 'safe'; (6) 'several days' wording was both vague and a cut-off, removed. Textbook count 1 of 53."
+}

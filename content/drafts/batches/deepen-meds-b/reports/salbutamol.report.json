@@ -1,0 +1,351 @@
+{
+ "id": "salbutamol",
+ "searchesUsed": 7,
+ "counts": {
+  "supported": 28,
+  "textbook": 5,
+  "unsupported": 15,
+  "wrong": 0,
+  "unsafe": 0,
+  "unchecked": 0
+ },
+ "claims": [
+  {
+   "id": "c01",
+   "classification": "supported",
+   "evidence": "NHS: reliever/blue inhaler for asthma and COPD",
+   "url": "https://www.nhs.uk/medicines/salbutamol-inhaler/about-salbutamol-inhalers/",
+   "action": "kept"
+  },
+  {
+   "id": "c02",
+   "classification": "supported",
+   "evidence": "NHS: relieves asthma/COPD symptoms, easier breathing",
+   "url": "https://www.nhs.uk/medicines/salbutamol-inhaler/about-salbutamol-inhalers/",
+   "action": "kept"
+  },
+  {
+   "id": "c03",
+   "classification": "supported",
+   "evidence": "NHS: asthma and COPD",
+   "url": "https://www.nhs.uk/medicines/salbutamol-inhaler/about-salbutamol-inhalers/",
+   "action": "kept"
+  },
+  {
+   "id": "c04",
+   "classification": "unsupported",
+   "evidence": "'used when symptoms start or before a trigger' not in retrieved text",
+   "url": "https://www.nhs.uk/medicines/salbutamol-inhaler/",
+   "action": "removed"
+  },
+  {
+   "id": "c05",
+   "classification": "textbook",
+   "evidence": "Reliever vs inflammation is standard; NHS only says a preventer is also given daily to stop symptoms",
+   "url": "https://www.nhs.uk/medicines/salbutamol-inhaler/about-salbutamol-inhalers/",
+   "action": "edited"
+  },
+  {
+   "id": "c06",
+   "classification": "supported",
+   "evidence": "NHS: bronchodilator relaxes airway muscles",
+   "url": "https://www.nhs.uk/medicines/salbutamol-inhaler/about-salbutamol-inhalers/",
+   "action": "kept"
+  },
+  {
+   "id": "c07",
+   "classification": "supported",
+   "evidence": "NHS: works almost straight away, 4-6 hours",
+   "url": "https://www.nhs.uk/medicines/salbutamol-inhaler/common-questions-about-salbutamol-inhalers/",
+   "action": "kept"
+  },
+  {
+   "id": "c08",
+   "classification": "unsupported",
+   "evidence": "NHS says hydrofluorocarbon propellants and 'more environmentally friendly'; 'strong greenhouse gases' not retrieved",
+   "url": "https://www.nhs.uk/medicines/salbutamol-inhaler/common-questions-about-salbutamol-inhalers/",
+   "action": "edited"
+  },
+  {
+   "id": "c09",
+   "classification": "supported",
+   "evidence": "NHS: very effective, few side effects if used properly",
+   "url": "https://www.nhs.uk/medicines/salbutamol-inhaler/side-effects-of-salbutamol-inhalers/",
+   "action": "kept"
+  },
+  {
+   "id": "c10",
+   "classification": "unsupported",
+   "evidence": "NHS lists shaky, faster heartbeat, headaches (more than 1 in 100); 'especially hands' and 'palpitations' not retrieved",
+   "url": "https://www.nhs.uk/medicines/salbutamol-inhaler/side-effects-of-salbutamol-inhalers/",
+   "action": "edited"
+  },
+  {
+   "id": "c11",
+   "classification": "supported",
+   "evidence": "NHS: dizzy/shaky, do not drive, cycle, use tools until better",
+   "url": "https://www.nhs.uk/medicines/salbutamol-inhaler/side-effects-of-salbutamol-inhalers/",
+   "action": "kept"
+  },
+  {
+   "id": "c12",
+   "classification": "supported",
+   "evidence": "NHS: overuse gives faster heartbeat and shakiness",
+   "url": "https://www.nhs.uk/medicines/salbutamol-inhaler/side-effects-of-salbutamol-inhalers/",
+   "action": "kept"
+  },
+  {
+   "id": "c13",
+   "classification": "unsupported",
+   "evidence": "Warning signs supported, but the 'NHS 111 or GP same day' route for them was not retrieved; retrieved routes are 999/A&E for breathlessness or chest pain",
+   "url": "https://www.nhs.uk/medicines/salbutamol-inhaler/side-effects-of-salbutamol-inhalers/",
+   "action": "edited"
+  },
+  {
+   "id": "c14",
+   "classification": "supported",
+   "evidence": "NHS: anaphylaxis possible; swelling of lips, mouth, throat, tongue needs emergency call; 'struggling to breathe' not retrieved and dropped",
+   "url": "https://www.nhs.uk/medicines/salbutamol-inhaler/side-effects-of-salbutamol-inhalers/",
+   "action": "edited"
+  },
+  {
+   "id": "c15",
+   "classification": "supported",
+   "evidence": "NHS: alcohol allowed, eat and drink normally",
+   "url": "https://www.nhs.uk/medicines/salbutamol-inhaler/common-questions-about-salbutamol-inhalers/",
+   "action": "kept"
+  },
+  {
+   "id": "c16",
+   "classification": "supported",
+   "evidence": "NHS: no effect on contraception incl combined pill and emergency",
+   "url": "https://www.nhs.uk/medicines/salbutamol-inhaler/common-questions-about-salbutamol-inhalers/",
+   "action": "kept"
+  },
+  {
+   "id": "c17",
+   "classification": "unsupported",
+   "evidence": "NHS lists diuretics, steroid tablets, theophylline/aminophylline (low potassium), antidepressants, beta blockers; 'medicines that stimulate the heart' is SmPC (sympathomimetics) wording not the NHS and not retrieved from emc",
+   "url": "https://www.nhs.uk/medicines/salbutamol-inhaler/using-salbutamol-inhalers-with-other-medicines-and-herbal-supplements/",
+   "action": "edited"
+  },
+  {
+   "id": "c18",
+   "classification": "supported",
+   "evidence": "NHS: most adults and children can use it",
+   "url": "https://www.nhs.uk/medicines/salbutamol-inhaler/who-can-and-cannot-use-salbutamol-inhalers/",
+   "action": "kept"
+  },
+  {
+   "id": "c19",
+   "classification": "supported",
+   "evidence": "NHS: caution with allergy, heart problems, overactive thyroid, low potassium, diabetes",
+   "url": "https://www.nhs.uk/medicines/salbutamol-inhaler/who-can-and-cannot-use-salbutamol-inhalers/",
+   "action": "kept"
+  },
+  {
+   "id": "c20",
+   "classification": "supported",
+   "evidence": "NHS: can be used in pregnancy and breastfeeding",
+   "url": "https://www.nhs.uk/medicines/salbutamol-inhaler/pregnancy-breastfeeding-and-fertility-while-using-salbutamol-inhalers/",
+   "action": "kept"
+  },
+  {
+   "id": "c21",
+   "classification": "unsupported",
+   "evidence": "SmPC pregnancy wording not retrieved in second pass",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c22",
+   "classification": "supported",
+   "evidence": "NHS: needing more than usual can mean worsening (contact doctor/pharmacist/nurse)",
+   "url": "https://www.nhs.uk/medicines/salbutamol-inhaler/common-questions-about-salbutamol-inhalers/",
+   "action": "edited"
+  },
+  {
+   "id": "c23",
+   "classification": "unsupported",
+   "evidence": "NHS says doctor, pharmacist or nurse; 'GP or asthma nurse appointment' route not retrieved",
+   "url": "https://www.nhs.uk/medicines/salbutamol-inhaler/",
+   "action": "edited"
+  },
+  {
+   "id": "c24",
+   "classification": "supported",
+   "evidence": "NHS: 999 if no improvement; Asthma and Lung UK: 999 if reliever not helping or worse at any point",
+   "url": "https://www.asthmaandlung.org.uk/conditions/asthma/manage/when-call-999-or-111",
+   "action": "edited"
+  },
+  {
+   "id": "c25",
+   "classification": "unsupported",
+   "evidence": "Vague claim about NHS waiting guidance not retrieved",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c26",
+   "classification": "supported",
+   "evidence": "NHS: no evidence of lasting damage over many years",
+   "url": "https://www.nhs.uk/medicines/salbutamol-inhaler/common-questions-about-salbutamol-inhalers/",
+   "action": "kept"
+  },
+  {
+   "id": "c27",
+   "classification": "textbook",
+   "evidence": "Reliever alone not controlling asthma is standard; not worded so by NHS",
+   "url": "",
+   "action": "edited"
+  },
+  {
+   "id": "c28",
+   "classification": "unsupported",
+   "evidence": "'Ask a GP or asthma nurse for a review' route not retrieved (NHS: doctor, pharmacist or nurse)",
+   "url": "https://www.nhs.uk/medicines/salbutamol-inhaler/",
+   "action": "edited"
+  },
+  {
+   "id": "c29",
+   "classification": "supported",
+   "evidence": "NHS: dizziness/shakiness",
+   "url": "https://www.nhs.uk/medicines/salbutamol-inhaler/side-effects-of-salbutamol-inhalers/",
+   "action": "kept"
+  },
+  {
+   "id": "c30",
+   "classification": "supported",
+   "evidence": "NHS: do not drive, cycle, use tools until better; if in doubt do not drive",
+   "url": "https://www.nhs.uk/medicines/salbutamol-inhaler/common-questions-about-salbutamol-inhalers/",
+   "action": "edited"
+  },
+  {
+   "id": "c31",
+   "classification": "unsupported",
+   "evidence": "'Doctor or pharmacist can advise' not retrieved",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c32",
+   "classification": "unsupported",
+   "evidence": "'Usually wears off after a short time' not retrieved",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c33",
+   "classification": "supported",
+   "evidence": "NHS: overuse gives fast heartbeat and shakiness",
+   "url": "https://www.nhs.uk/medicines/salbutamol-inhaler/side-effects-of-salbutamol-inhalers/",
+   "action": "kept"
+  },
+  {
+   "id": "c34",
+   "classification": "supported",
+   "evidence": "NHS: contact 111 for fast/pounding heartbeat after overuse (chest pain: 999)",
+   "url": "https://www.nhs.uk/medicines/salbutamol-inhaler/side-effects-of-salbutamol-inhalers/",
+   "action": "edited"
+  },
+  {
+   "id": "c35",
+   "classification": "unsupported",
+   "evidence": "'NHS 111 or GP same day' for irregular heartbeat/dizziness not retrieved",
+   "url": "https://www.nhs.uk/medicines/salbutamol-inhaler/side-effects-of-salbutamol-inhalers/",
+   "action": "edited"
+  },
+  {
+   "id": "c36",
+   "classification": "supported",
+   "evidence": "NHS: no effect on any contraception",
+   "url": "https://www.nhs.uk/medicines/salbutamol-inhaler/common-questions-about-salbutamol-inhalers/",
+   "action": "kept"
+  },
+  {
+   "id": "c37",
+   "classification": "supported",
+   "evidence": "NHS: alcohol and normal eating fine",
+   "url": "https://www.nhs.uk/medicines/salbutamol-inhaler/common-questions-about-salbutamol-inhalers/",
+   "action": "kept"
+  },
+  {
+   "id": "c38",
+   "classification": "unsupported",
+   "evidence": "'Ask pharmacist or GP' not retrieved in that context (NHS advises checking before new medicines)",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c39",
+   "classification": "textbook",
+   "evidence": "'First medicine used in an attack': A&L/NHS describe reliever puffs in an attack; wording 'first medicine' is textbook",
+   "url": "https://www.asthmaandlung.org.uk/conditions/asthma/manage/when-call-999-or-111",
+   "action": "edited"
+  },
+  {
+   "id": "c40",
+   "classification": "supported",
+   "evidence": "NHS: 999 if no improvement",
+   "url": "https://www.nhs.uk/medicines/salbutamol-inhaler/common-questions-about-salbutamol-inhalers/",
+   "action": "kept"
+  },
+  {
+   "id": "c41",
+   "classification": "unsupported",
+   "evidence": "'Book a GP appointment' route not retrieved; NHS: doctor, pharmacist or nurse",
+   "url": "https://www.nhs.uk/medicines/salbutamol-inhaler/common-questions-about-salbutamol-inhalers/",
+   "action": "edited"
+  },
+  {
+   "id": "c42",
+   "classification": "textbook",
+   "evidence": "Short-acting bronchodilator class (medications.json class)",
+   "url": "",
+   "action": "kept"
+  },
+  {
+   "id": "c43",
+   "classification": "textbook",
+   "evidence": "Albuterol is the US name (also in medications.json aliases)",
+   "url": "",
+   "action": "kept"
+  },
+  {
+   "id": "c44",
+   "classification": "supported",
+   "evidence": "NHS: almost straight away, 4-6 hours",
+   "url": "https://www.nhs.uk/medicines/salbutamol-inhaler/common-questions-about-salbutamol-inhalers/",
+   "action": "kept"
+  },
+  {
+   "id": "c45",
+   "classification": "supported",
+   "evidence": "NHS: alcohol and eating fine",
+   "url": "https://www.nhs.uk/medicines/salbutamol-inhaler/common-questions-about-salbutamol-inhalers/",
+   "action": "kept"
+  },
+  {
+   "id": "c46",
+   "classification": "supported",
+   "evidence": "NHS: no effect on contraception",
+   "url": "https://www.nhs.uk/medicines/salbutamol-inhaler/common-questions-about-salbutamol-inhalers/",
+   "action": "kept"
+  },
+  {
+   "id": "c47",
+   "classification": "unsupported",
+   "evidence": "'UK product information' half not retrieved; NHS half supported",
+   "url": "https://www.nhs.uk/medicines/salbutamol-inhaler/pregnancy-breastfeeding-and-fertility-while-using-salbutamol-inhalers/",
+   "action": "edited"
+  },
+  {
+   "id": "c48",
+   "classification": "supported",
+   "evidence": "NHS: 999 if no improvement after inhaler",
+   "url": "https://www.nhs.uk/medicines/salbutamol-inhaler/common-questions-about-salbutamol-inhalers/",
+   "action": "edited"
+  }
+ ],
+ "notes": "Claim ids c01-c48 follow document order: sections (c01-c25), faqs (c26-c41), keyFacts (c42-c48). Edits made in drafts/salbutamol.article.json: removed SmPC pregnancy caution and emc reference; interactions reworded to the NHS list (diuretics, steroid tablets, theophylline/aminophylline, beta blockers; herbal remedies); side-effect routing now only what was retrieved (111 for pounding heartbeat after overuse, 999 for chest pain/breathlessness/anaphylaxis); 'twice a week' and 'puffs' counts dropped; faq about 'addictive' retitled. Doubt: warning signs such as muscle weakness/cramps/irregular heartbeat/very bad dizziness now have no explicit route to care because the NHS contact route was not retrieved. Doubt: 5 textbook sentences (about 1 in 10, above the 1 in 20 guide). Asthma and Lung UK snippet was used for 'worse at any point' and same-day GP/nurse appointment. Search summaries blend pages so URL attribution within the NHS salbutamol set is page-level approximate. medications.json entry not contradicted (it uses the word 'safe' itself; the article does not)."
+}

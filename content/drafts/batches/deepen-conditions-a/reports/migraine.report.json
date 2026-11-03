@@ -1,0 +1,610 @@
+{
+ "id": "migraine",
+ "searchesUsed": 15,
+ "counts": {
+  "supported": 48,
+  "textbook": 0,
+  "unsupported": 23,
+  "wrong": 0,
+  "unsafe": 0,
+  "unchecked": 0
+ },
+ "claims": [
+  {
+   "id": "c01",
+   "classification": "unsupported",
+   "evidence": "NHS text retrieved describes attacks (throbbing headache, nausea, light/sound sensitivity); 'set of symptoms, not just a headache' framing not in retrieved text",
+   "url": "https://www.nhs.uk/conditions/migraine/",
+   "action": "edited",
+   "newSentence": "The NHS says a migraine attack typically brings a throbbing headache, often on one side of the head, with nausea and sensitivity to light and sound."
+  },
+  {
+   "id": "c02",
+   "classification": "supported",
+   "evidence": "NHS: throbbing headache often on one side, nausea, light and sound sensitivity, tiredness",
+   "url": "https://www.nhs.uk/conditions/migraine/",
+   "action": "edited",
+   "newSentence": "(merged into first sentence)"
+  },
+  {
+   "id": "c03",
+   "classification": "supported",
+   "evidence": "NHS lists early symptoms: tired, yawning, food cravings/thirst, mood changes, stiff neck, urinating more often",
+   "url": "https://www.nhs.uk/conditions/migraine/symptoms/",
+   "action": "edited",
+   "newSentence": "The NHS lists early warning symptoms such as unusual tiredness, yawning, food cravings, mood changes, a stiff neck and needing to pass urine more often."
+  },
+  {
+   "id": "c04",
+   "classification": "supported",
+   "evidence": "NHS: about 1 in 3 people with migraine have aura, warning symptoms beforehand",
+   "url": "https://www.nhs.uk/conditions/migraine/",
+   "action": "edited",
+   "newSentence": "The NHS says about 1 in 3 people with migraine have an aura."
+  },
+  {
+   "id": "c05",
+   "classification": "supported",
+   "evidence": "NHS: visual disturbances such as zig-zag patterns and flashing lights, pins and needles/numbness, difficulty speaking",
+   "url": "https://www.nhs.uk/conditions/migraine/symptoms/",
+   "action": "edited",
+   "newSentence": "It can involve zigzag patterns, flashing lights, pins and needles or difficulty speaking."
+  },
+  {
+   "id": "c06",
+   "classification": "unsupported",
+   "evidence": "NHS: aura should not last longer than 1 hour; Migraine Trust 5 to 60 minutes. 'Appears gradually over a number of minutes' not in retrieved text",
+   "url": "https://www.nhs.uk/conditions/migraine/",
+   "action": "edited",
+   "newSentence": "Aura should not last longer than an hour."
+  },
+  {
+   "id": "c07",
+   "classification": "supported",
+   "evidence": "Trust and NHS describe stages of an attack (prodrome, aura, headache, postdrome)",
+   "url": "https://www.migrainetrust.org/about-migraine/migraine-what-is-it/symptoms-and-stages/",
+   "action": "edited",
+   "newSentence": "An attack can pass through several stages, and not every stage occurs every time."
+  },
+  {
+   "id": "c08",
+   "classification": "supported",
+   "evidence": "NHS: early symptoms can begin hours, or up to two days, before the headache",
+   "url": "https://www.nhs.uk/conditions/migraine/symptoms/",
+   "action": "edited",
+   "newSentence": "These can start hours, or up to two days, before the headache."
+  },
+  {
+   "id": "c09",
+   "classification": "unsupported",
+   "evidence": "Trust: recovery hours or days; MedlinePlus up to a day; NHS tired up to a week. 'Up to two days' not stated",
+   "url": "https://www.migrainetrust.org/about-migraine/migraine-what-is-it/symptoms-and-stages/",
+   "action": "edited",
+   "newSentence": "The Migraine Trust says recovery after the headache can take hours or days."
+  },
+  {
+   "id": "c10",
+   "classification": "supported",
+   "evidence": "Sources say not everyone goes through every stage",
+   "url": "https://www.migrainetrust.org/about-migraine/migraine-what-is-it/symptoms-and-stages/",
+   "action": "kept"
+  },
+  {
+   "id": "c11",
+   "classification": "unsupported",
+   "evidence": "No retrieved text gives 'three quarters'; it was only an inference from aura estimates",
+   "url": "https://migrainetrust.org/understand-migraine/types-of-migraine/",
+   "action": "edited",
+   "newSentence": "The Migraine Trust says migraine without aura is the most common type."
+  },
+  {
+   "id": "c12",
+   "classification": "supported",
+   "evidence": "Trust: migraine with aura covers brainstem aura, retinal, hemiplegic, silent migraine",
+   "url": "https://migrainetrust.org/understand-migraine/types-of-migraine/",
+   "action": "edited",
+   "newSentence": "Migraine with aura covers several forms, including brainstem aura, retinal migraine, hemiplegic migraine and silent migraine."
+  },
+  {
+   "id": "c13",
+   "classification": "supported",
+   "evidence": "NHS lists visual disturbance, pins and needles, difficulty speaking; trial-protocol ICHD-3 criteria visual, sensory, speech/language",
+   "url": "https://www.nhs.uk/conditions/migraine/symptoms/",
+   "action": "kept"
+  },
+  {
+   "id": "c14",
+   "classification": "supported",
+   "evidence": "NINDS: brainstem aura requires at least two of vertigo, double vision, trouble with balance, slurred speech and others",
+   "url": "https://www.ninds.nih.gov/health-information/disorders/migraine",
+   "action": "edited",
+   "newSentence": "NINDS says migraine with brainstem aura needs at least two symptoms during an episode, such as vertigo (a spinning feeling), seeing double, trouble with balance or slurred speech."
+  },
+  {
+   "id": "c15",
+   "classification": "supported",
+   "evidence": "Trust: some people have aura symptoms but no headache, sometimes called silent migraine",
+   "url": "https://migrainetrust.org/understand-migraine/types-of-migraine/",
+   "action": "kept"
+  },
+  {
+   "id": "c16",
+   "classification": "supported",
+   "evidence": "Trust: hemiplegic migraine is a rare, severe type with temporary weakness or paralysis on one side of the body",
+   "url": "https://migrainetrust.org/understand-migraine/types-of-migraine/",
+   "action": "edited",
+   "newSentence": "Hemiplegic migraine is a rare, severe type involving temporary weakness or paralysis on one side of the body."
+  },
+  {
+   "id": "c17",
+   "classification": "unsupported",
+   "evidence": "Retrieved text did not say hemiplegic migraine runs in families or occurs without family history",
+   "url": "https://migrainetrust.org/understand-migraine/types-of-migraine/",
+   "action": "removed"
+  },
+  {
+   "id": "c18",
+   "classification": "unsupported",
+   "evidence": "Trust: vertigo, dizziness or unsteadiness are often the main symptoms; 'migrainous vertigo' term not found",
+   "url": "https://migrainetrust.org/understand-migraine/types-of-migraine/",
+   "action": "edited",
+   "newSentence": "In vestibular migraine, vertigo, dizziness or unsteadiness are often the main symptoms."
+  },
+  {
+   "id": "c19",
+   "classification": "unsupported",
+   "evidence": "Trust: chronic migraine is headache on at least 15 days per month; 'more than three months, with or without aura' not retrieved",
+   "url": "https://migrainetrust.org/understand-migraine/types-of-migraine/",
+   "action": "edited",
+   "newSentence": "The Trust defines chronic migraine as headache on at least 15 days each month."
+  },
+  {
+   "id": "c20",
+   "classification": "supported",
+   "evidence": "NICE public guidance: diary of frequency, duration, severity, all medicines, for a minimum of 8 weeks (an earlier search could not find the 8 weeks; a later one returned it)",
+   "url": "https://www.nice.org.uk/guidance/cg150/ifp/chapter/diagnosis",
+   "action": "edited",
+   "newSentence": "NICE says a clinician may ask a person to keep a headache diary to help identify the type of headache. The diary records how often headaches happen, how long and how severe they are, and all medicines taken. NICE advises keeping it for a minimum of eight weeks."
+  },
+  {
+   "id": "c21",
+   "classification": "supported",
+   "evidence": "NICE: for migraine usually around a period, diary for at least the next 2 periods",
+   "url": "https://www.nice.org.uk/guidance/cg150/chapter/recommendations",
+   "action": "kept"
+  },
+  {
+   "id": "c22",
+   "classification": "supported",
+   "evidence": "NICE public page: clinician checks whether another health problem is behind the headaches",
+   "url": "https://www.nice.org.uk/guidance/cg150/ifp/chapter/diagnosis",
+   "action": "edited",
+   "newSentence": "A secondary headache is one where another health problem is behind the headaches."
+  },
+  {
+   "id": "c23",
+   "classification": "supported",
+   "evidence": "NICE: if secondary headache thought possible, may be referred for tests or to a specialist",
+   "url": "https://www.nice.org.uk/guidance/cg150/ifp/chapter/diagnosis",
+   "action": "edited",
+   "newSentence": "NICE says a person may be referred for tests or to a specialist if this is suspected."
+  },
+  {
+   "id": "c24",
+   "classification": "supported",
+   "evidence": "NICE: injury to head in past 3 months, headaches that start very suddenly, speech or balance problems regularly getting worse",
+   "url": "https://www.nice.org.uk/guidance/cg150/ifp/chapter/diagnosis",
+   "action": "edited",
+   "newSentence": "NICE lists warning signs such as a head injury in the past three months, headaches that start very suddenly, and speech or balance problems that keep getting worse."
+  },
+  {
+   "id": "c25",
+   "classification": "supported",
+   "evidence": "NICE QS42 statement 3 (no imaging for tension-type or migraine without signs of secondary headache); CG150 1.3.3 no neuroimaging solely for reassurance",
+   "url": "https://www.nice.org.uk/guidance/qs42",
+   "action": "edited",
+   "newSentence": "NICE advises against referring people with migraine for brain scans solely for reassurance."
+  },
+  {
+   "id": "c26",
+   "classification": "supported",
+   "evidence": "NHS: migraine cannot be cured, treatment can help with managing attacks and preventing them",
+   "url": "https://www.nhs.uk/conditions/migraine/",
+   "action": "kept"
+  },
+  {
+   "id": "c27",
+   "classification": "supported",
+   "evidence": "NHS lists painkillers, triptans, gepants, anti-sickness medicine (ibuprofen/paracetamol names only from MedlinePlus; dropped)",
+   "url": "https://www.nhs.uk/conditions/migraine/",
+   "action": "edited",
+   "newSentence": "For attacks, the NHS lists painkillers, triptans, gepants and anti-sickness medicine, and advises taking painkillers as soon as the headache starts."
+  },
+  {
+   "id": "c28",
+   "classification": "unsupported",
+   "evidence": "Scottish pathway on rimegepant for acute use after triptan failure not retrieved (only prevention criteria); 'newer class' not retrieved. Trust: gepants an option if triptans cannot be taken or do not work",
+   "url": "https://migrainetrust.org/live-with-migraine/healthcare/treatments/gepants/",
+   "action": "edited",
+   "newSentence": "The Migraine Trust says gepants can be an option for people who cannot take triptans or for whom triptans do not work, and that they appear not to cause medication overuse headache."
+  },
+  {
+   "id": "c29",
+   "classification": "supported",
+   "evidence": "Trust: gepants appear not to cause medication overuse headache; triptans and painkillers can",
+   "url": "https://migrainetrust.org/understand-migraine/types-of-migraine/medication-overuse-headache/",
+   "action": "edited",
+   "newSentence": "It says over-the-counter painkillers, triptans and opioids can cause it, while gepants appear not to."
+  },
+  {
+   "id": "c30",
+   "classification": "supported",
+   "evidence": "NHS: prevention medicines include beta blockers, antidepressants, epilepsy medicines",
+   "url": "https://www.nhs.uk/conditions/migraine/",
+   "action": "kept"
+  },
+  {
+   "id": "c31",
+   "classification": "supported",
+   "evidence": "NHS: acupuncture, relaxation techniques, CBT, vitamin B2",
+   "url": "https://www.nhs.uk/conditions/migraine/",
+   "action": "kept"
+  },
+  {
+   "id": "c32",
+   "classification": "supported",
+   "evidence": "NHS Scotland Right Decisions: candesartan listed as preventive; botulinum toxin A for chronic migraine; CGRP antibodies; flunarizine specialist (summary blended Right Decisions pages)",
+   "url": "https://www.rightdecisions.scot.nhs.uk/pharmacological-management-of-migraine-sign/preventive-therapy/",
+   "action": "edited",
+   "newSentence": "NHS Scotland guidance also lists candesartan and botulinum toxin for chronic migraine."
+  },
+  {
+   "id": "c33",
+   "classification": "supported",
+   "evidence": "Trust: CGRP mAbs, gepants and flunarizine not usually available through a doctor, prescribed by a headache specialist",
+   "url": "https://migrainetrust.org/understand-migraine/types-of-migraine/medication-overuse-headache/",
+   "action": "edited",
+   "newSentence": "It says gepants, CGRP antibodies and flunarizine are usually prescribed by headache specialists rather than GPs."
+  },
+  {
+   "id": "c34",
+   "classification": "supported",
+   "evidence": "Trust: medication overuse headache is headache caused by taking acute migraine medicines too often",
+   "url": "https://migrainetrust.org/understand-migraine/types-of-migraine/medication-overuse-headache/",
+   "action": "edited",
+   "newSentence": "The Migraine Trust describes medication overuse headache as a headache caused by taking acute migraine medicines too often."
+  },
+  {
+   "id": "c35",
+   "classification": "supported",
+   "evidence": "Trust: over-the-counter painkillers, triptans, opioids can cause it ('ibuprofen' not separately stated)",
+   "url": "https://migrainetrust.org/understand-migraine/types-of-migraine/medication-overuse-headache/",
+   "action": "edited",
+   "newSentence": "It says over-the-counter painkillers, triptans and opioids can cause it."
+  },
+  {
+   "id": "c36",
+   "classification": "supported",
+   "evidence": "Trust: triggers usually combine several factors, a single factor rarely causes an attack",
+   "url": "https://migrainetrust.org/live-with-migraine/self-management/common-triggers/",
+   "action": "kept"
+  },
+  {
+   "id": "c37",
+   "classification": "supported",
+   "evidence": "Trust: stress, sleep disruption, skipped meals most common",
+   "url": "https://migrainetrust.org/live-with-migraine/self-management/common-triggers/",
+   "action": "kept"
+  },
+  {
+   "id": "c38",
+   "classification": "unsupported",
+   "evidence": "NHS wording on avoiding triggers, eating/sleeping well, exercise not retrieved; MedlinePlus says regular sleep and exercise, stress management may help",
+   "url": "https://medlineplus.gov/ency/patientinstructions/000420.htm",
+   "action": "edited",
+   "newSentence": "MedlinePlus, a US health site, says regular sleep, exercise and stress management may help."
+  },
+  {
+   "id": "c39",
+   "classification": "unsupported",
+   "evidence": "List of diary entries (sleep, meals, caffeine, weather...) not retrieved; MedlinePlus says a headache diary can help identify triggers",
+   "url": "https://medlineplus.gov/ency/patientinstructions/000420.htm",
+   "action": "edited",
+   "newSentence": "MedlinePlus describes a headache diary as a way to find triggers."
+  },
+  {
+   "id": "c40",
+   "classification": "unsupported",
+   "evidence": "Trust retrieved text: foods like the '5 Cs' often blamed but evidence thin; the 'cutting out foods may not lead to fewer attacks' claim not retrieved",
+   "url": "https://migrainetrust.org/live-with-migraine/self-management/common-triggers/",
+   "action": "edited",
+   "newSentence": "Foods such as chocolate and cheese are often blamed, but the Trust says the evidence is thin."
+  },
+  {
+   "id": "c41",
+   "classification": "supported",
+   "evidence": "Trust: too little and too much sleep can trigger; regular bedtimes and wake times may help",
+   "url": "https://migrainetrust.org/live-with-migraine/self-management/common-triggers/",
+   "action": "edited",
+   "newSentence": "The Trust says too little and too much sleep can each trigger attacks, and that regular bedtimes and wake times may help."
+  },
+  {
+   "id": "c42",
+   "classification": "unsupported",
+   "evidence": "Trust lists exercise among commonly reported triggers yet recommends regular exercise for stress; 'intense' and 'manageable level' not retrieved",
+   "url": "https://migrainetrust.org/live-with-migraine/self-management/common-triggers/",
+   "action": "removed"
+  },
+  {
+   "id": "c43",
+   "classification": "supported",
+   "evidence": "Trust: stress a top trigger; some people get attacks when stress drops, e.g. weekends or holidays",
+   "url": "https://migrainetrust.org/live-with-migraine/self-management/common-triggers/",
+   "action": "edited",
+   "newSentence": "Some people have attacks when stress eases, such as at weekends."
+  },
+  {
+   "id": "c44",
+   "classification": "supported",
+   "evidence": "NHS 999 list: sudden extremely painful headache, speech or memory problems, vision loss/double vision, drowsiness or confusion, seizure, weakness on one side, recent head injury",
+   "url": "https://www.nhs.uk/conditions/migraine/",
+   "action": "edited",
+   "newSentence": "The NHS says to call 999 for a sudden, extremely painful headache, speech or memory problems, loss of vision or double vision, drowsiness or confusion, a seizure, weakness on one side of the body, or a recent head injury."
+  },
+  {
+   "id": "c45",
+   "classification": "supported",
+   "evidence": "NHS: urgent GP appointment or NHS 111 if attack over 72 hours, aura over an hour, pregnant or recently given birth",
+   "url": "https://www.nhs.uk/conditions/migraine/",
+   "action": "edited",
+   "newSentence": "The NHS advises an urgent GP appointment or NHS 111 if an attack lasts longer than 72 hours, if aura lasts longer than an hour, or if the person is pregnant or has recently given birth."
+  },
+  {
+   "id": "c46",
+   "classification": "unsupported",
+   "evidence": "NHS non-urgent GP list is severe, worsening, longer than usual, more than once a week, hard to control, around period; 'keep happening' not stated",
+   "url": "https://www.nhs.uk/conditions/migraine/",
+   "action": "edited",
+   "newSentence": "A non-urgent GP appointment is advised if attacks are severe, getting worse, lasting longer than usual, happening more than once a week, hard to control, or regularly happening around a period."
+  },
+  {
+   "id": "c47",
+   "classification": "unsupported",
+   "evidence": "Neurologist referral wording and gloss not in retrieved NHS text; NICE says tests or specialist referral if secondary cause suspected (used in c23)",
+   "url": "https://www.nice.org.uk/guidance/cg150/ifp/chapter/diagnosis",
+   "action": "removed"
+  },
+  {
+   "id": "c48",
+   "classification": "unsupported",
+   "evidence": "NICE retrieved: be alert to medication overuse headache in people whose headache developed alongside regular medication use; 'more frequent or worse' not retrieved",
+   "url": "https://www.nice.org.uk/guidance/cg150/chapter/recommendations",
+   "action": "edited",
+   "newSentence": "NICE asks clinicians to be alert to it in people whose headaches developed alongside regular use of pain medicines."
+  },
+  {
+   "id": "c49",
+   "classification": "supported",
+   "evidence": "NHS: cannot be cured, treatment can help manage and prevent attacks",
+   "url": "https://www.nhs.uk/conditions/migraine/",
+   "action": "kept"
+  },
+  {
+   "id": "c50",
+   "classification": "unsupported",
+   "evidence": "MedlinePlus: no cure, treatment focuses on relieving symptoms and preventing additional attacks; 'drug-based and non-drug ways' not in retrieved text",
+   "url": "https://medlineplus.gov/ency/patientinstructions/000420.htm",
+   "action": "edited",
+   "newSentence": "MedlinePlus likewise says there is no cure, and treatment focuses on relieving symptoms and preventing further attacks."
+  },
+  {
+   "id": "c51",
+   "classification": "supported",
+   "evidence": "NHS lists painkillers, triptans, gepants, anti-sickness medicine",
+   "url": "https://www.nhs.uk/conditions/migraine/",
+   "action": "removed"
+  },
+  {
+   "id": "c52",
+   "classification": "unsupported",
+   "evidence": "'Clinician decides' not retrieved; NHS says treatments available depend on severity and frequency",
+   "url": "https://www.nhs.uk/conditions/migraine/",
+   "action": "edited",
+   "newSentence": "The NHS says the treatments available depend on how severe the migraine is and how often attacks happen."
+  },
+  {
+   "id": "c53",
+   "classification": "unsupported",
+   "evidence": "'Set of symptoms' gloss not in retrieved text",
+   "url": "https://www.nhs.uk/conditions/migraine/",
+   "action": "edited",
+   "newSentence": "The NHS says a migraine attack typically brings a throbbing headache, often on one side of the head, with nausea and sensitivity to light and sound."
+  },
+  {
+   "id": "c54",
+   "classification": "supported",
+   "evidence": "NHS aura examples",
+   "url": "https://www.nhs.uk/conditions/migraine/symptoms/",
+   "action": "edited",
+   "newSentence": "Some people also have an aura, such as zigzag patterns, flashing lights or pins and needles."
+  },
+  {
+   "id": "c55",
+   "classification": "supported",
+   "evidence": "NHS early symptoms: tiredness, cravings, mood changes, stiff neck",
+   "url": "https://www.nhs.uk/conditions/migraine/symptoms/",
+   "action": "edited",
+   "newSentence": "Early symptoms can include tiredness, food cravings and mood changes."
+  },
+  {
+   "id": "c56",
+   "classification": "supported",
+   "evidence": "Answer supported by c57",
+   "url": "https://migrainetrust.org/understand-migraine/types-of-migraine/",
+   "action": "kept"
+  },
+  {
+   "id": "c57",
+   "classification": "supported",
+   "evidence": "Trust: some people have aura symptoms but no headache",
+   "url": "https://migrainetrust.org/understand-migraine/types-of-migraine/",
+   "action": "kept"
+  },
+  {
+   "id": "c58",
+   "classification": "supported",
+   "evidence": "Trust: silent migraine / migraine aura without headache; more common in older people",
+   "url": "https://migrainetrust.org/understand-migraine/types-of-migraine/",
+   "action": "edited",
+   "newSentence": "...which is sometimes called silent migraine or migraine aura without headache, and that it is more common in older people."
+  },
+  {
+   "id": "c59",
+   "classification": "supported",
+   "evidence": "NHS: urgent GP or 111 if aura over an hour",
+   "url": "https://www.nhs.uk/conditions/migraine/",
+   "action": "kept"
+  },
+  {
+   "id": "c60",
+   "classification": "supported",
+   "evidence": "NICE QS42 and CG150 1.3.3 on imaging",
+   "url": "https://www.nice.org.uk/guidance/qs42",
+   "action": "edited",
+   "newSentence": "NICE advises against referring people diagnosed with migraine for brain scans solely for reassurance. Its quality standard says people with tension-type headache or migraine should not be imaged if they have no signs or symptoms of a secondary headache."
+  },
+  {
+   "id": "c61",
+   "classification": "unsupported",
+   "evidence": "'Diagnosis relies on the pattern of attacks' not retrieved from NICE",
+   "url": "https://www.nice.org.uk/guidance/cg150/chapter/recommendations",
+   "action": "removed"
+  },
+  {
+   "id": "c62",
+   "classification": "supported",
+   "evidence": "NICE: referral for tests or specialist if secondary headache suspected",
+   "url": "https://www.nice.org.uk/guidance/cg150/ifp/chapter/diagnosis",
+   "action": "kept"
+  },
+  {
+   "id": "c63",
+   "classification": "supported",
+   "evidence": "Trust: medication overuse headache from acute medicines taken too often",
+   "url": "https://migrainetrust.org/understand-migraine/types-of-migraine/medication-overuse-headache/",
+   "action": "edited",
+   "newSentence": "The Migraine Trust describes medication overuse headache as a headache caused by taking acute migraine medicines too often."
+  },
+  {
+   "id": "c64",
+   "classification": "supported",
+   "evidence": "Trust: painkillers, triptans, opioids can cause it",
+   "url": "https://migrainetrust.org/understand-migraine/types-of-migraine/medication-overuse-headache/",
+   "action": "edited",
+   "newSentence": "It says over-the-counter painkillers, triptans and opioids can cause it, while gepants appear not to."
+  },
+  {
+   "id": "c65",
+   "classification": "unsupported",
+   "evidence": "NICE retrieved text was 'be alert' in people whose headache developed alongside regular medication use; not 'more frequent or worse'",
+   "url": "https://www.nice.org.uk/guidance/cg150/chapter/recommendations",
+   "action": "removed"
+  },
+  {
+   "id": "c66",
+   "classification": "unsupported",
+   "evidence": "'Set of symptoms' gloss not retrieved",
+   "url": "https://www.nhs.uk/conditions/migraine/",
+   "action": "edited",
+   "newSentence": "A throbbing headache, often on one side, with nausea and sensitivity to light and sound, the NHS says."
+  },
+  {
+   "id": "c67",
+   "classification": "unsupported",
+   "evidence": "Three quarters only an inference",
+   "url": "https://migrainetrust.org/understand-migraine/types-of-migraine/",
+   "action": "edited",
+   "newSentence": "Migraine without aura, according to the Migraine Trust."
+  },
+  {
+   "id": "c68",
+   "classification": "unsupported",
+   "evidence": "NHS: aura should not last longer than an hour; 'appears gradually over minutes' not retrieved",
+   "url": "https://www.nhs.uk/conditions/migraine/",
+   "action": "edited",
+   "newSentence": "About 1 in 3 people with migraine have it, the NHS says, and it should not last longer than an hour."
+  },
+  {
+   "id": "c69",
+   "classification": "supported",
+   "evidence": "NHS: cannot be cured; treatment helps with managing and preventing attacks",
+   "url": "https://www.nhs.uk/conditions/migraine/",
+   "action": "edited",
+   "newSentence": "(reworded in place)"
+  },
+  {
+   "id": "c70",
+   "classification": "supported",
+   "evidence": "NHS: common triggers include periods, stress, tiredness, certain foods or drinks",
+   "url": "https://www.nhs.uk/conditions/migraine/",
+   "action": "kept"
+  },
+  {
+   "id": "c71",
+   "classification": "supported",
+   "evidence": "NHS 999 list",
+   "url": "https://www.nhs.uk/conditions/migraine/",
+   "action": "edited",
+   "newSentence": "A sudden, extremely painful headache, speech or memory problems, vision loss, confusion, a seizure, weakness on one side or a recent head injury."
+  },
+  {
+   "id": "a01",
+   "classification": "supported",
+   "evidence": "NHS: exact cause unknown, changes to nerves and blood vessels in the brain",
+   "url": "https://www.nhs.uk/conditions/migraine/",
+   "action": "added",
+   "newSentence": "The cause is unknown, but a migraine happens when there are changes to nerves and blood vessels in the brain, the NHS says."
+  },
+  {
+   "id": "a02",
+   "classification": "supported",
+   "evidence": "NHS inform: call 999 or go to A&E for one-sided weakness or slurred speech",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/brain-nerves-and-spinal-cord/migraine/",
+   "action": "added",
+   "newSentence": "NHS inform likewise advises calling 999 or going to A&E for one-sided weakness or slurred speech."
+  },
+  {
+   "id": "a03",
+   "classification": "supported",
+   "evidence": "Trust summary: routine shifts, e.g. sleep or mealtimes, often seem to set off attacks",
+   "url": "https://migrainetrust.org/live-with-migraine/self-management/common-triggers/",
+   "action": "added",
+   "newSentence": "The Migraine Trust says shifts in routine often seem to set off attacks (living section)."
+  },
+  {
+   "id": "a04",
+   "classification": "supported",
+   "evidence": "NHS page: treatments depend on severity and frequency",
+   "url": "https://www.nhs.uk/conditions/migraine/",
+   "action": "added",
+   "newSentence": "The NHS says treatments available depend on how severe the migraine is and how often attacks happen (also FAQ)."
+  },
+  {
+   "id": "a05",
+   "classification": "supported",
+   "evidence": "Trust: migraine with aura covers brainstem aura, retinal, hemiplegic, silent",
+   "url": "https://migrainetrust.org/understand-migraine/types-of-migraine/",
+   "action": "added",
+   "newSentence": "Retinal migraine named among migraine-with-aura forms (section 2)."
+  },
+  {
+   "id": "a06",
+   "classification": "supported",
+   "evidence": "Trust: if taking acute medicines frequently, speak to your GP",
+   "url": "https://migrainetrust.org/understand-migraine/types-of-migraine/medication-overuse-headache/",
+   "action": "added",
+   "newSentence": "The Trust notes the 'The Migraine Trust recommends speaking to a GP for anyone taking acute medicines frequently' (FAQ 5)."
+  }
+ ],
+ "notes": "First-pass counts refer to the 71 draft sentences. 15 of 16 WebSearch calls used. Search summaries blend pages; claims were attributed to a URL only where that page's title or excerpt carried them (NHS migraine page and symptoms subpage, NHS inform, NICE CG150 recommendations/public page and QS42, Migraine Trust pages, MedlinePlus Managing migraines at home, NHS Scotland Right Decisions). Doubts: (1) 8-week diary minimum was missing from two NICE searches but returned by a third (NICE public page); kept. (2) candesartan/botulinum toxin attribution rests on blended NHS Scotland Right Decisions summaries. (3) brainstem-aura wording rests on the NINDS migraine page summary. (4) The ICHD-3 'typical aura' sentence rests on the NHS symptom list. Draft FAQ 'NICE ... diary' and 'Diagnosis relies on pattern' were removed or reworded. Added sentences a01-a06 are new or merged wording drawn from retrieved text, all supported.\nCONTRADICTIONS or UNSUPPORTED in the EXISTING page entry (not edited): (a) treatment: 'Gepants are a newer class used alongside triptans' conflicts with the Migraine Trust, which describes gepants as an option when triptans cannot be taken or do not work. (b) prevention: 'limiting painkillers to fewer than 10 days a month' conflicts with sources: the Trust gives 15 or more days a month for over-the-counter painkillers (10 or more for triptans, opioids, combination painkillers); NICE 15 days or more for simple analgesics. (c) seekCare: 'headache that ... peaks within a minute' vs NICE QS42 wording 'within 5 minutes'; 'first-ever aura after 50', 'worst ever' and fever/stiff neck wording are not in the retrieved NHS 999 list (sudden extremely painful headache, speech or memory problems, vision loss, confusion, seizure, weakness on one side, recent head injury), and the page omits the NHS urgent (111/same-day GP) route. (d) overview: 'affects about one person in seven', 'leading cause of disability in young women', 'disorder of brain excitability rather than of blood vessels alone' (NHS says changes to nerves and blood vessels), cortical spreading depression, 'aura typically begins within the hour before the headache', and 'triggers precede an attack by less than two days' were not found in retrieved text. (e) riskFactors 'Age 20 to 50', complications 'slightly raised stroke risk ... smoking and the combined pill', signs 'normal examination', prevention 'losing weight if overweight' and 'Scans ... only for red-flag features' were not found. (f) treatment 'a triptan taken early' is not retrieved: NHS says take painkillers as soon as the headache starts. (g) 'aura ... a third of sufferers' and '4 to 72 hours' are supported (NHS 1 in 3; Trust/NHS 4 to 72 hours). (h) 'Chronic migraine (15 or more headache days a month)' is supported by the Trust."
+}

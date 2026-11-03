@@ -1,0 +1,361 @@
+{
+ "id": "ibuprofen-and-paracetamol-together",
+ "searchesUsed": 8,
+ "counts": {
+  "supported": 25,
+  "textbook": 2,
+  "unsupported": 22,
+  "wrong": 0,
+  "unsafe": 0,
+  "unchecked": 0
+ },
+ "claims": [
+  {
+   "id": "c01",
+   "classification": "unsupported",
+   "evidence": "'trying each alone first' not found in any retrieved text",
+   "url": "https://www.nhs.uk/medicines/paracetamol-for-adults/",
+   "action": "edited",
+   "newSentence": "summary now: children should not be given them at the same time"
+  },
+  {
+   "id": "c02",
+   "classification": "unsupported",
+   "evidence": "same: 'try each on own first' not retrieved",
+   "url": "https://www.nhs.uk/medicines/paracetamol-for-adults/",
+   "action": "edited"
+  },
+  {
+   "id": "c03",
+   "classification": "unsupported",
+   "evidence": "children one-at-a-time retrieved; 'unless a doctor advises' not",
+   "url": "https://www.nhs.uk/medicines/ibuprofen-for-children/taking-ibuprofen-for-children-with-other-medicines-and-herbal-supplements/",
+   "action": "edited"
+  },
+  {
+   "id": "c04",
+   "classification": "supported",
+   "evidence": "Groups listed; 'severe kidney failure' and ulcers more than once",
+   "url": "https://www.nhs.uk/medicines/ibuprofen-for-adults/who-can-and-cannot-take-ibuprofen/",
+   "action": "edited"
+  },
+  {
+   "id": "c05",
+   "classification": "supported",
+   "evidence": "NHS inform: cold/cough medicines contain paracetamol and ibuprofen",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/muscle-bone-and-joints/when-should-i-take-painkillers/",
+   "action": "edited"
+  },
+  {
+   "id": "c06",
+   "classification": "supported",
+   "evidence": "111/999 split in side-effects page",
+   "url": "https://www.nhs.uk/medicines/ibuprofen-for-adults/side-effects-of-ibuprofen/",
+   "action": "edited"
+  },
+  {
+   "id": "c07",
+   "classification": "supported",
+   "evidence": "Ibuprofen is an NSAID",
+   "url": "https://www.nhs.uk/medicines/nsaids/",
+   "action": "kept"
+  },
+  {
+   "id": "c08",
+   "classification": "unsupported",
+   "evidence": "uses list (headaches, migraines, period pain etc.) not in retrieved text; final fetch failed",
+   "url": "https://www.nhs.uk/medicines/ibuprofen-for-adults/",
+   "action": "removed"
+  },
+  {
+   "id": "c09",
+   "classification": "unsupported",
+   "evidence": "'fever' not retrieved, only 'also treats inflammation' in title",
+   "url": "https://www.nhs.uk/medicines/ibuprofen-for-adults/",
+   "action": "edited"
+  },
+  {
+   "id": "c10",
+   "classification": "supported",
+   "evidence": "Title: paracetamol painkiller for pain and high temperature",
+   "url": "https://www.nhs.uk/medicines/paracetamol-for-adults/",
+   "action": "kept"
+  },
+  {
+   "id": "c11",
+   "classification": "unsupported",
+   "evidence": "'ibuprofen more side effects, try paracetamol first' not retrieved",
+   "url": "https://www.nhs.uk/medicines/ibuprofen-for-adults/",
+   "action": "removed"
+  },
+  {
+   "id": "c12",
+   "classification": "supported",
+   "evidence": "Adults can take paracetamol at same time as ibuprofen if needed",
+   "url": "https://www.nhs.uk/medicines/paracetamol-for-adults/",
+   "action": "kept"
+  },
+  {
+   "id": "c13",
+   "classification": "unsupported",
+   "evidence": "'try each on its own first' not retrieved (author doubt confirmed)",
+   "url": "https://www.nhs.uk/medicines/paracetamol-for-adults/",
+   "action": "removed"
+  },
+  {
+   "id": "c14",
+   "classification": "supported",
+   "evidence": "NHS inform: can take both together if required",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/muscle-bone-and-joints/when-should-i-take-painkillers/",
+   "action": "kept"
+  },
+  {
+   "id": "c15",
+   "classification": "supported",
+   "evidence": "Dental abscess page (not painkillers page): if one doesn't work, both may help. Reattributed to dental abscess page",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/mouth/dental-abscess/",
+   "action": "edited",
+   "newSentence": "For a dental abscess, it says that if one painkiller does not work, taking both paracetamol and ibuprofen may help."
+  },
+  {
+   "id": "c16",
+   "classification": "supported",
+   "evidence": "Children's advice differs",
+   "url": "https://www.nhs.uk/medicines/ibuprofen-for-children/taking-ibuprofen-for-children-with-other-medicines-and-herbal-supplements/",
+   "action": "kept"
+  },
+  {
+   "id": "c17",
+   "classification": "unsupported",
+   "evidence": "'unless a doctor advises otherwise' not retrieved",
+   "url": "https://www.nhs.uk/medicines/ibuprofen-for-children/taking-ibuprofen-for-children-with-other-medicines-and-herbal-supplements/",
+   "action": "edited"
+  },
+  {
+   "id": "c18",
+   "classification": "textbook",
+   "evidence": "scope sentence 'This guide is about adults' and guide covers children too",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c19",
+   "classification": "supported",
+   "evidence": "Exclusions listed",
+   "url": "https://www.nhs.uk/medicines/ibuprofen-for-adults/who-can-and-cannot-take-ibuprofen/",
+   "action": "kept"
+  },
+  {
+   "id": "c20",
+   "classification": "supported",
+   "evidence": "Allergy to aspirin/NSAIDs, wheezing, runny nose, skin reactions",
+   "url": "https://www.nhs.uk/medicines/ibuprofen-for-adults/who-can-and-cannot-take-ibuprofen/",
+   "action": "kept"
+  },
+  {
+   "id": "c21",
+   "classification": "unsupported",
+   "evidence": "'caused by an NSAID' not in text; text says hole/bleeding/ulcer more than once",
+   "url": "https://www.nhs.uk/medicines/ibuprofen-for-adults/who-can-and-cannot-take-ibuprofen/",
+   "action": "edited"
+  },
+  {
+   "id": "c22",
+   "classification": "unsupported",
+   "evidence": "Crohn's and ulcerative colitis not retrieved; asthma, hay fever, allergies were",
+   "url": "https://www.nhs.uk/medicines/ibuprofen-for-adults/who-can-and-cannot-take-ibuprofen/",
+   "action": "edited"
+  },
+  {
+   "id": "c23",
+   "classification": "supported",
+   "evidence": "Pregnancy and breastfeeding",
+   "url": "https://www.nhs.uk/medicines/ibuprofen-for-adults/who-can-and-cannot-take-ibuprofen/",
+   "action": "kept"
+  },
+  {
+   "id": "c24",
+   "classification": "supported",
+   "evidence": "Over 65 ulcers",
+   "url": "https://www.nhs.uk/medicines/ibuprofen-for-adults/who-can-and-cannot-take-ibuprofen/",
+   "action": "kept"
+  },
+  {
+   "id": "c25",
+   "classification": "textbook",
+   "evidence": "connective 'Some other medicines also matter'",
+   "url": "",
+   "action": "edited",
+   "newSentence": "Other medicines can interact with ibuprofen."
+  },
+  {
+   "id": "c26",
+   "classification": "unsupported",
+   "evidence": "diabetes medicines not retrieved; 'tell a doctor before starting' not retrieved",
+   "url": "https://www.nhs.uk/medicines/ibuprofen-for-adults/taking-ibuprofen-with-other-medicines-and-herbal-supplements/",
+   "action": "edited"
+  },
+  {
+   "id": "c27",
+   "classification": "unsupported",
+   "evidence": "paracetamol interaction list (epilepsy, TB, metoclopramide, domperidone, flucloxacillin) not retrieved",
+   "url": "https://www.nhs.uk/medicines/paracetamol-for-adults/",
+   "action": "removed"
+  },
+  {
+   "id": "c28",
+   "classification": "supported",
+   "evidence": "Anyone taking other medication should check with pharmacist first",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/muscle-bone-and-joints/when-should-i-take-painkillers/",
+   "action": "kept"
+  },
+  {
+   "id": "c29",
+   "classification": "supported",
+   "evidence": "Cold/cough medicines contain paracetamol/ibuprofen",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/muscle-bone-and-joints/when-should-i-take-painkillers/",
+   "action": "edited"
+  },
+  {
+   "id": "c30",
+   "classification": "supported",
+   "evidence": "Easy to exceed dose",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/muscle-bone-and-joints/when-should-i-take-painkillers/",
+   "action": "kept"
+  },
+  {
+   "id": "c31",
+   "classification": "supported",
+   "evidence": "Avoid paracetamol with other paracetamol medicines; dangerous",
+   "url": "https://www.nhs.uk/medicines/paracetamol-for-adults/",
+   "action": "kept"
+  },
+  {
+   "id": "c32",
+   "classification": "supported",
+   "evidence": "Liver damage / overdose risk",
+   "url": "https://www.nhs.uk/medicines/paracetamol-for-adults/",
+   "action": "edited"
+  },
+  {
+   "id": "c33",
+   "classification": "supported",
+   "evidence": "Check label for aspirin, ibuprofen, NSAIDs",
+   "url": "https://www.nhs.uk/medicines/ibuprofen-for-adults/taking-ibuprofen-with-other-medicines-and-herbal-supplements/",
+   "action": "kept"
+  },
+  {
+   "id": "c34",
+   "classification": "supported",
+   "evidence": "NSAIDs combined raise stomach-ache risk; speak to pharmacist or doctor",
+   "url": "https://www.nhs.uk/medicines/ibuprofen-for-adults/taking-ibuprofen-with-other-medicines-and-herbal-supplements/",
+   "action": "kept"
+  },
+  {
+   "id": "c35",
+   "classification": "supported",
+   "evidence": "Common side effects list",
+   "url": "https://www.nhs.uk/medicines/ibuprofen-for-adults/side-effects-of-ibuprofen/",
+   "action": "edited"
+  },
+  {
+   "id": "c36",
+   "classification": "supported",
+   "evidence": "Ulcers/bleeding, allergic reaction",
+   "url": "https://www.nhs.uk/medicines/ibuprofen-for-adults/side-effects-of-ibuprofen/",
+   "action": "kept"
+  },
+  {
+   "id": "c37",
+   "classification": "unsupported",
+   "evidence": "'higher with high doses or long-term use' not retrieved",
+   "url": "https://www.nhs.uk/medicines/ibuprofen-for-adults/side-effects-of-ibuprofen/",
+   "action": "removed"
+  },
+  {
+   "id": "c38",
+   "classification": "unsupported",
+   "evidence": "'with or after food makes upset less likely' not retrieved (NHS inform only said take with food)",
+   "url": "https://www.nhs.uk/medicines/ibuprofen-for-adults/side-effects-of-ibuprofen/",
+   "action": "removed"
+  },
+  {
+   "id": "c39",
+   "classification": "unsupported",
+   "evidence": "'NHS inform adds asthma worse' not retrieved; asthma worsening is on NHS side effects page under 999",
+   "url": "https://www.nhs.uk/medicines/ibuprofen-for-adults/side-effects-of-ibuprofen/",
+   "action": "removed"
+  },
+  {
+   "id": "c40",
+   "classification": "supported",
+   "evidence": "No obvious symptoms at first after too much paracetamol",
+   "url": "https://www.nhs.uk/medicines/paracetamol-for-adults/",
+   "action": "kept"
+  },
+  {
+   "id": "c41",
+   "classification": "unsupported",
+   "evidence": "'list not complete / leaflet' not retrieved",
+   "url": "https://www.nhs.uk/medicines/ibuprofen-for-adults/side-effects-of-ibuprofen/",
+   "action": "removed"
+  },
+  {
+   "id": "c42",
+   "classification": "unsupported",
+   "evidence": "Yellow Card not retrieved",
+   "url": "https://www.nhs.uk/medicines/ibuprofen-for-adults/side-effects-of-ibuprofen/",
+   "action": "removed"
+  },
+  {
+   "id": "c43",
+   "classification": "supported",
+   "evidence": "Serious allergic reaction signs: 999",
+   "url": "https://www.nhs.uk/medicines/ibuprofen-for-adults/side-effects-of-ibuprofen/",
+   "action": "kept"
+  },
+  {
+   "id": "c44",
+   "classification": "unsupported",
+   "evidence": "Black poo/blood in vomit: retrieved as 111 or doctor urgent, 'straight away' not",
+   "url": "https://www.nhs.uk/medicines/ibuprofen-for-adults/side-effects-of-ibuprofen/",
+   "action": "edited"
+  },
+  {
+   "id": "c45",
+   "classification": "unsupported",
+   "evidence": "'or A&E' not retrieved; 999 is",
+   "url": "https://www.nhs.uk/medicines/ibuprofen-for-adults/side-effects-of-ibuprofen/",
+   "action": "edited"
+  },
+  {
+   "id": "c46",
+   "classification": "unsupported",
+   "evidence": "'passing no urine' not retrieved; swollen ankles/blood in pee were",
+   "url": "https://www.nhs.uk/medicines/ibuprofen-for-adults/side-effects-of-ibuprofen/",
+   "action": "edited"
+  },
+  {
+   "id": "c47",
+   "classification": "supported",
+   "evidence": "Contact 111 now if too much paracetamol even if well",
+   "url": "https://www.nhs.uk/medicines/paracetamol-for-adults/",
+   "action": "kept"
+  },
+  {
+   "id": "c48",
+   "classification": "unsupported",
+   "evidence": "paracetamol 999/A&E symptom list not retrieved",
+   "url": "https://www.nhs.uk/medicines/paracetamol-for-adults/",
+   "action": "removed"
+  },
+  {
+   "id": "c49",
+   "classification": "unsupported",
+   "evidence": "'NHS inform points to pharmacist, GP can also advise' weak; only 'speak to a pharmacist if unsure' retrieved",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/muscle-bone-and-joints/when-should-i-take-painkillers/",
+   "action": "edited"
+  }
+ ],
+ "notes": "8 searches attempted; 7 returned, the 8th (ibuprofen adult main page) failed on usage limit. Adult ibuprofen page body never retrieved, so its uses list was removed. Added supported material from NHS pages: ginkgo, paracetamol with other non-paracetamol painkillers, dental abscess (NHS inform). NHS pages disagree on ibuprofen overdose (111 vs 999); not included. Counts group some sentences per claim; sum approximates 51 first-pass sentences."
+}

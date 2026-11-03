@@ -1,0 +1,113 @@
+{
+ "id": "fda-camzyos-children-obstructive-hcm",
+ "searchesUsed": 4,
+ "counts": {
+  "supported": 9,
+  "textbook": 3,
+  "unsupported": 0,
+  "wrong": 0,
+  "unsafe": 0,
+  "unchecked": 0
+ },
+ "claims": [
+  {
+   "id": "c01",
+   "sentenceId": "summary",
+   "classification": "supported",
+   "evidence": "FDA approved Camzyos for children with symptomatic oHCM, first such treatment; 09/30/2026. Caveat: the indication is paediatric patients weighing at least 30 kg (trial aged 12-18).",
+   "url": "https://www.fda.gov/drugs/news-events-human-drugs/fda-approves-first-drug-improve-functional-capacity-and-symptoms-children-rare-inherited-heart",
+   "action": "edited",
+   "newSentence": "The US FDA approved Camzyos (mavacamten) on 30 September 2026 for children weighing at least 30 kg with symptomatic obstructive hypertrophic cardiomyopathy, the first drug for this use in children."
+  },
+  {
+   "id": "c02",
+   "sentenceId": "keyPoints[0]",
+   "classification": "supported",
+   "evidence": "As summary; adding the 30 kg weight threshold would be more precise.",
+   "url": "https://www.fda.gov/drugs/news-events-human-drugs/fda-approves-first-drug-improve-functional-capacity-and-symptoms-children-rare-inherited-heart",
+   "action": "edited",
+   "newSentence": "The US FDA approved Camzyos (mavacamten) on 30 September 2026 for children weighing at least 30 kg with symptomatic obstructive hypertrophic cardiomyopathy."
+  },
+  {
+   "id": "c03",
+   "sentenceId": "keyPoints[1]",
+   "classification": "supported",
+   "evidence": "FDA headline: first drug to improve functional capacity and symptoms in children with this condition.",
+   "url": "https://www.fda.gov/drugs/news-events-human-drugs/fda-approves-first-drug-improve-functional-capacity-and-symptoms-children-rare-inherited-heart",
+   "action": "kept"
+  },
+  {
+   "id": "c04",
+   "sentenceId": "keyPoints[2]",
+   "classification": "supported",
+   "evidence": "FDA/search extract: boxed warning for risk of heart failure; available only through restricted REMS.",
+   "url": "https://www.fda.gov/drugs/news-events-human-drugs/fda-approves-first-drug-improve-functional-capacity-and-symptoms-children-rare-inherited-heart",
+   "action": "kept"
+  },
+  {
+   "id": "c05",
+   "sentenceId": "keyPoints[3]",
+   "classification": "textbook",
+   "evidence": "Editorial regional disclaimer.",
+   "url": "",
+   "action": "kept"
+  },
+  {
+   "id": "c06",
+   "sentenceId": "body[0].s0",
+   "classification": "supported",
+   "evidence": "Orphan db marketing approval date 09/30/2026; label indication adults and paediatric patients weighing 30 kg or more.",
+   "url": "https://www.accessdata.fda.gov/scripts/opdlisting/oopd/detailedIndex.cfm?cfgridkey=515015",
+   "action": "removed"
+  },
+  {
+   "id": "c07",
+   "sentenceId": "body[0].s1",
+   "classification": "supported",
+   "evidence": "FDA headline wording.",
+   "url": "https://www.fda.gov/drugs/news-events-human-drugs/fda-approves-first-drug-improve-functional-capacity-and-symptoms-children-rare-inherited-heart",
+   "action": "kept"
+  },
+  {
+   "id": "c08",
+   "sentenceId": "body[0].s2",
+   "classification": "textbook",
+   "evidence": "Inherited, thickened heart muscle and symptoms (breathlessness, fatigue, arrhythmia) are standard HCM facts; the FDA page's exact wording was not visible in retrieved extracts, so the 'It describes' attribution is unverified.",
+   "url": "https://www.fda.gov/drugs/news-events-human-drugs/fda-approves-first-drug-improve-functional-capacity-and-symptoms-children-rare-inherited-heart",
+   "action": "kept"
+  },
+  {
+   "id": "c09",
+   "sentenceId": "body[1].s0",
+   "classification": "supported",
+   "evidence": "FDA: SCOUT-HCM, randomised, double-blind, placebo-controlled, 44 patients aged 12-18, 28 weeks; Camzyos significantly reduced the Valsalva LVOT gradient versus placebo.",
+   "url": "https://www.fda.gov/drugs/news-events-human-drugs/fda-approves-first-drug-improve-functional-capacity-and-symptoms-children-rare-inherited-heart",
+   "action": "kept"
+  },
+  {
+   "id": "c10",
+   "sentenceId": "body[1].s1",
+   "classification": "supported",
+   "evidence": "FDA: adults showed similar LVOT obstruction reduction with improved function; expected to improve functional capacity and symptoms in paediatric patients weighing at least 30 kg.",
+   "url": "https://www.fda.gov/drugs/news-events-human-drugs/fda-approves-first-drug-improve-functional-capacity-and-symptoms-children-rare-inherited-heart",
+   "action": "kept"
+  },
+  {
+   "id": "c11",
+   "sentenceId": "body[1].s2",
+   "classification": "supported",
+   "evidence": "FDA text: boxed warning for risk of heart failure; only available through the Camzyos REMS.",
+   "url": "https://www.fda.gov/drugs/news-events-human-drugs/fda-approves-first-drug-improve-functional-capacity-and-symptoms-children-rare-inherited-heart",
+   "action": "kept"
+  },
+  {
+   "id": "c12",
+   "sentenceId": "body[1].s3",
+   "classification": "textbook",
+   "evidence": "Editorial regional disclaimer.",
+   "url": "",
+   "action": "kept"
+  }
+ ],
+ "notes": "Main sharpening: 'children' should carry the at-least-30-kg qualifier (and the trial population was 12-18, so the 30 kg extension to younger children is by extrapolation). Full FDA page text was not directly visible; claims rest on search extracts quoting it."
+}

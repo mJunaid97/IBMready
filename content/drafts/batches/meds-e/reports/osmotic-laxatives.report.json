@@ -1,0 +1,78 @@
+{
+ "id": "osmotic-laxatives",
+ "searchesUsed": 0,
+ "counts": {
+  "textbook": 1,
+  "unsupported": 3,
+  "supported": 3,
+  "wrong": 0,
+  "unsafe": 0,
+  "unchecked": 0
+ },
+ "claims": [
+  {
+   "id": "c01",
+   "where": "summary[0]",
+   "classification": "textbook",
+   "evidence": "NHS Laxatives page: osmotic laxatives (lactulose, macrogol) draw water into bowel to soften poo. Both covered on one page. 'Covered on this site' is a site statement.",
+   "url": "https://www.nhs.uk/medicines/laxatives/",
+   "action": "edited",
+   "newSentence": "Osmotic laxatives draw water into the bowel to soften poo; lactulose is the one covered on this site."
+  },
+  {
+   "id": "c02",
+   "where": "summary[1]",
+   "classification": "unsupported",
+   "evidence": "St George's PDF text not retrieved.",
+   "url": "https://www.nhs.uk/medicines/laxatives/",
+   "action": "edited",
+   "newSentence": "The NHS says osmotic laxatives such as lactulose and macrogol draw water into the bowel to soften poo and make it easier to pass."
+  },
+  {
+   "id": "c03",
+   "where": "mechanism",
+   "classification": "supported",
+   "evidence": "Draws water into bowel.",
+   "url": "https://www.nhs.uk/medicines/lactulose/about-lactulose/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c04",
+   "where": "cautions[0]",
+   "classification": "unsupported",
+   "evidence": "Lactose intolerance and galactose/fructose allergies not seen.",
+   "url": "https://www.nhs.uk/medicines/lactulose/who-can-and-cannot-take-lactulose/",
+   "action": "edited",
+   "newSentence": "The NHS lists a past allergic reaction to lactulose and galactosaemia as reasons it may not be suitable."
+  },
+  {
+   "id": "c05",
+   "where": "cautions[1]",
+   "classification": "supported",
+   "evidence": "Who-can page conditions.",
+   "url": "https://www.nhs.uk/medicines/lactulose/who-can-and-cannot-take-lactulose/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c06",
+   "where": "cautions[2]",
+   "classification": "unsupported",
+   "evidence": "'Many months' not seen for diabetes.",
+   "url": "https://www.nhs.uk/medicines/lactulose/who-can-and-cannot-take-lactulose/",
+   "action": "edited",
+   "newSentence": "The NHS says long-term high amounts of lactulose may affect blood sugar in people with diabetes."
+  },
+  {
+   "id": "c07",
+   "where": "cautions[3]",
+   "classification": "supported",
+   "evidence": "Common side effects.",
+   "url": "https://www.nhs.uk/medicines/lactulose/side-effects-of-lactulose/",
+   "action": "kept",
+   "newSentence": null
+  }
+ ],
+ "notes": "Class page: checked in the same second-pass run as lactulose (searches counted there)."
+}

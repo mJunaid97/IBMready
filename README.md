@@ -17,14 +17,15 @@ authoritative medical reference needs (see `SEO.md`).
 | Body systems | `/systems/<system>/` | 19 system pages: overview, functions, clinical notes, organs, every structure, 3D model, related topics. The male reproductive system, the female reproductive layer (uterus, tubes, ovaries, vagina, ligaments, bladder, breasts) and the two schematic gender-affirming surgery layers (vaginoplasty, phalloplasty) each have a page. |
 | Physiology | `/physiology/<topic>/` | 35 topics on how the body works, sourced to OpenStax *Anatomy & Physiology* and NIH, from the cardiac cycle to the menstrual cycle, pregnancy, menopause, sex hormones and gender-affirming hormone therapy. |
 | Symptoms | `/symptoms/<symptom>/` | 22 symptom pages: anatomy involved, common and less common causes, red flags, related conditions and tests. Educational, never diagnostic. |
-| Conditions | `/conditions/<condition>/` | 50 conditions: definition, affected anatomy, causes, risk factors, symptoms, signs, complications, diagnosis, treatment, prevention, when to seek care; includes a reproductive and sexual health category (endometriosis, PCOS, fibroids, breast, cervical and ovarian cancer, ectopic pregnancy, prolapse, incontinence, gender dysphoria). |
+| Conditions | `/conditions/<condition>/` | 114 conditions: definition, affected anatomy, causes, risk factors, symptoms, signs, complications, diagnosis, treatment, prevention, when to seek care; includes a reproductive and sexual health category (endometriosis, PCOS, fibroids, breast, cervical and ovarian cancer, ectopic pregnancy, prolapse, incontinence, gender dysphoria). |
 | Medical tests | `/tests/<test>/` | 39 tests (23 at full clinical depth): kind, category, specimen, method, LOINC codes, what they measure, why ordered, how done, reading the result, limitations. `/tests/categories/` is the master taxonomy: 36 categories over 837 catalogued test concepts. |
 | Imaging | `/imaging/<modality>/` | 8 modalities: how they work, what they show, best for / not for, dose, preparation, common uses. |
 | Procedures | `/procedures/<procedure>/` | 19 procedures step by step: indications, before, steps, after, recovery, risks, alternatives, including hysterectomy, caesarean section, vaginoplasty, phalloplasty and chest masculinisation. |
-| Medications | `/medications/<generic-name>/` | 41 medicines by generic name (brand names redirect), including a vaccine, a contrast agent and a radiopharmaceutical: product type, class, uses, mechanism, routes and dosage forms, availability by country, RxNorm / ATC / FDA class codes, side effects, cautions, interactions, monitoring, and a *Check interactions* entry into the checker. `/medications/classes/` is the taxonomy: 31 therapeutic areas, 536 classes with ATC codes. |
-| Drug classes | `/drug-classes/<class>/` | 29 classes: mechanism, biological target, body system, conditions treated, members, class effects, cautions. |
+| Medications | `/medications/<generic-name>/` | 87 medicines by generic name (brand names redirect), including a vaccine, a contrast agent and a radiopharmaceutical: product type, class, uses, mechanism, routes and dosage forms, availability by country, RxNorm / ATC / FDA class codes, side effects, cautions, interactions, monitoring, and a *Check interactions* entry into the checker. `/medications/classes/` is the taxonomy: 31 therapeutic areas, 537 classes with ATC codes. |
+| Drug classes | `/drug-classes/<class>/` | 57 classes: mechanism, biological target, body system, conditions treated, members, class effects, cautions. |
 | First aid | `/first-aid/<topic>/` | 16 topics following Resuscitation Council UK / ERC guidance, each with the anatomy behind it. |
 | Health | `/health/<topic>/` | Exercise, sleep, nutrition, weight, smoking, alcohol, hydration, women's health and transgender and non-binary health through the systems they act on. |
+| Blog and health news | `/blog/<post>/`, `/feed.xml` | 221 posts (146 guides and 75 news briefs). A guide answers one question people search (a test result, a symptom, a medicine, a screening, everyday health) from the sources of at least two publishers; a news brief summarises one dated announcement by an official body (NICE, UKHSA, MHRA, WHO, FDA, CDC, NIH), says what the announcement says and links to it. Each post carries key points, a dated byline, its sources and links to the condition, medicine and test pages it concerns; the hub filters by kind and topic and has an RSS feed. |
 | Medical terms | `/medical-terms/` | 156 terms in 8 categories with pronunciation, plain meaning, examples, atlas links and the pages that use them. |
 | Study | `/study/` | Identify and locate structures in 3D, flashcards, quizzes over every section, generated viva questions. |
 | Clinical tools | `/tools/` | The tools hub. Its flagship is the **Drug Interaction Checker** (`/tools/drug-interaction-checker/`): add two or more medicines by generic name, brand, active ingredient or combination product and every pair is checked against the sourced interaction records, results ordered by severity with the state the cited source supports, duplicate ingredients, the cautious no-interaction wording, related anatomy and tests, sources and disclaimers. Its methodology is at `/editorial/drug-interaction-methodology/`. |
@@ -92,6 +93,7 @@ Editable content lives in `content/` and is compiled into `data/content/` by
   `imaging.json`, `procedures.json`, `medications.json`, `drug-classes.json`, `targets.json`,
   `first-aid.json`, `health.json` — one entity per key, cross-linked by id, each with `aliases`,
   `urlAliases`, `references` and a `review` status
+- `content/blog/<slug>.json` — one file per blog post (a guide or a news brief; see `docs/authoring/blog.md`); `article` blocks on any entity add in-depth sections, questions and key facts
 - `content/vocabularies.json`, `test-taxonomy.json`, `medication-taxonomy.json` — the controlled vocabularies (specimens, methods,
   modalities, routes, dosage forms, regulatory statuses, product types…), the master test taxonomy with its catalogue of 837
   concepts, and the medication taxonomy (therapeutic areas → classes with ATC codes); `terminology-verification.json` is
@@ -129,6 +131,15 @@ To add a condition, test, medication or any other entity: add a key to the match
 couple of references and URL aliases, bump `_updated`, run `python3 tools/build-content.py`, and
 the page, its links, the reverse links on every page it mentions, the explorer's structure cards,
 the search index, the redirects and the sitemaps all update.
+
+**Writing new content at scale.** `docs/authoring/` is the brief for author sessions that each have their own web search budget: the
+evidence protocol (a first pass written only from retrieved text with a sentence ledger, then an independent second pass that re-retrieves
+and classifies every sentence), the writing rules, the schema of a condition, a medicine, a guide and a news brief, and one assignment
+per batch. A session delivers `content/drafts/batches/<batch>/fragment.json` with its ledgers and reports and pushes it to a
+`content/<batch>` branch. The maintainer then runs, in `tools/verification/`: `check_batch.py` (the real compiler on a scratch copy of the
+content: ids, links, vocabularies, the publishing gate), `merge_batches.py` (fetch, validate and merge the finished batches one at a time),
+`lint_new_content.py` (doses, instructions, absolute claims, US spellings, urgency without a route), `post_merge_fixups.py` (reference
+redirects and prose repairs) and `map_taxonomy.py` (new drug classes into the therapeutic-area taxonomy), then `build-content.py` and the QA below.
 
 ## Production build
 

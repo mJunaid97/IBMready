@@ -181,8 +181,9 @@ HOST_META = {"nhs.uk": ("UK", "regulatory"), "nice.org.uk": ("UK", "guidance"), 
              "wpath.org": ("GLOBAL", "guidance"), "endocrine.org": ("US", "guidance"), "ucsf.edu": ("US", "guidance"), "rcog.org.uk": ("UK", "guidance"), "womenshealth.gov": ("US", "regulatory"),
              "cancerresearchuk.org": ("UK", "other"), "endometriosis-uk.org": ("UK", "other"), "breastcancernow.org": ("UK", "other")}
 CONDITION_CATEGORIES = [("cardiovascular", "Heart & circulation"), ("respiratory", "Lungs & breathing"), ("neurological", "Brain & nerves"),
-                        ("digestive", "Digestive system"), ("musculoskeletal", "Bones, joints & muscles"), ("endocrine", "Hormones & metabolism"),
-                        ("urinary", "Kidneys & urinary tract"), ("reproductive", "Reproductive & sexual health"), ("other", "Blood, infection & other")]
+                        ("mental-health", "Mental health & neurodevelopment"), ("digestive", "Digestive system"), ("musculoskeletal", "Bones, joints & muscles"),
+                        ("endocrine", "Hormones & metabolism"), ("urinary", "Kidneys & urinary tract"), ("reproductive", "Reproductive & sexual health"),
+                        ("skin", "Skin, allergy & eyes"), ("infection", "Infections"), ("other", "Blood, immune system & other")]
 SYMPTOM_REGIONS = [("head", "Head"), ("chest", "Chest"), ("abdomen", "Abdomen"), ("pelvis", "Pelvis & genitals"), ("back", "Back & spine"), ("arms", "Arms & hands"), ("legs", "Legs & feet"), ("general", "Whole body")]
 LEAD_FIELDS = ("summary", "what", "definition", "overview", "intro")
 
@@ -315,6 +316,24 @@ def derive_meta_description(summary):
         i = first.rfind(sep, 0, 159)
         if i >= 90: return first[:i].rstrip(" ,;") + "."
     return None
+
+# The descriptor each section appends to a page title ("[Name]: [Descriptor] | Anatomy Nexus"); mirrors TYPES[*].descriptor in site/site.js.
+# site/seo.js shortens the descriptor to fit 65 characters but cannot shorten a name, and the smoke test fails a longer title.
+TITLE_DESCRIPTORS = {"physiology": "How It Works", "symptoms": "Causes & When to Seek Help", "conditions": "Causes, Symptoms & Treatment", "tests": "Purpose, Procedure & Results",
+                     "imaging": "How It Works, Uses & Risks", "procedures": "Steps, Recovery & Risks", "medications": "Uses, Mechanism & Side Effects", "drug-classes": "Mechanism, Uses & Examples",
+                     "biomarkers": "What It Measures & Why It Changes", "targets": "Receptors, Enzymes & Pathways", "first-aid": "What to Do Step by Step", "health": "Effects on the Body & Guidance"}
+def page_title_len(name, descriptor, brand="Anatomy Nexus", limit=65):
+    """Length of the page title site/seo.js seoTitle() would build (the same shortening rules)."""
+    full = f"{name}: {descriptor} | {brand}" if descriptor else f"{name} | {brand}"
+    if len(full) <= limit: return len(full)
+    head = name.split(": ")[0]
+    if head != name: return page_title_len(head, descriptor, brand, limit)
+    if not descriptor: return len(full)
+    topics = [t for t in re.split(r",\s*|\s+&\s+", descriptor) if t]
+    for n in range(len(topics) - 1, 0, -1):
+        t = f"{name}: {', '.join(topics[:n])} | {brand}"
+        if len(t) <= limit: return len(t)
+    return len(f"{name} | {brand}")
 
 def validate_blog(eid, e, errors):
     where = f"blog/{eid}"
@@ -850,6 +869,10 @@ def compile_knowledge(atlas, out_organs, systems, terms):
                 errors.append(f"{key}/{eid}: unknown category '{e['category']}'")
             # ---- blog posts: a guide or a news brief with a dated, cited announcement behind it
             if key == "blog": validate_blog(eid, e, errors)
+            elif key in TITLE_DESCRIPTORS and page_title_len(e.get("name", ""), e.get("seoTitle") or TITLE_DESCRIPTORS[key]) > 65:
+                errors.append(f"{key}/{eid}: the page title for the name '{e.get('name')}' is longer than 65 characters; shorten the name (keep the long form as an alias)")
+            if key == "medications" and e.get("regimenNote") is not None and not (isinstance(e["regimenNote"], list) and all(isinstance(x, str) for x in e["regimenNote"])):
+                errors.append(f"{key}/{eid}: regimenNote must be a list of one-line strings (it is {type(e['regimenNote']).__name__})")
             # ---- any page may carry an in-depth article block (sections, FAQs, key facts) on top of its structured fields
             if e.get("article") is not None: validate_article_block(f"{key}/{eid}", e["article"], errors)
             # ---- links implied by structured clinical fields (a test's components, a medicine's monitoring plan and lab

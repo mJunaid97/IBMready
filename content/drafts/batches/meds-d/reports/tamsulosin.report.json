@@ -1,0 +1,769 @@
+{
+ "id": "tamsulosin",
+ "searchesUsed": 12,
+ "counts": {
+  "supported": 55,
+  "textbook": 0,
+  "unsupported": 24,
+  "wrong": 5,
+  "unsafe": 5,
+  "unchecked": 0
+ },
+ "claims": [
+  {
+   "id": "c01",
+   "where": "summary",
+   "classification": "supported",
+   "evidence": "Matches retrieved NHS/MedlinePlus text",
+   "url": "https://www.nhs.uk/medicines/tamsulosin/about-tamsulosin/",
+   "action": "kept"
+  },
+  {
+   "id": "c02",
+   "where": "summary",
+   "classification": "supported",
+   "evidence": "Matches retrieved NHS/MedlinePlus text",
+   "url": "https://www.nhs.uk/medicines/tamsulosin/about-tamsulosin/",
+   "action": "kept"
+  },
+  {
+   "id": "c03",
+   "where": "summary",
+   "classification": "supported",
+   "evidence": "NHS side effects and surgery advice",
+   "url": "https://www.nhs.uk/medicines/tamsulosin/side-effects-of-tamsulosin/",
+   "action": "edited",
+   "newSentence": "...asks people to tell the doctor before cataract or glaucoma surgery."
+  },
+  {
+   "id": "c04",
+   "where": "usedFor[0]",
+   "classification": "supported",
+   "evidence": "Matches retrieved NHS/MedlinePlus text",
+   "url": "https://www.nhs.uk/medicines/tamsulosin/about-tamsulosin/",
+   "action": "kept"
+  },
+  {
+   "id": "c05",
+   "where": "usedFor[1]",
+   "classification": "unsupported",
+   "evidence": "emc excerpts did not state poor stream/dribbling/frequency; MedlinePlus lists trouble urinating, painful urination, frequent or urgent urination",
+   "url": "https://medlineplus.gov/druginfo/meds/a698012.html",
+   "action": "edited",
+   "newSentence": "Benign prostatic hyperplasia, which can cause trouble urinating, painful urination, or more frequent or urgent urination (MedlinePlus)"
+  },
+  {
+   "id": "c06",
+   "where": "usedFor[2]",
+   "classification": "supported",
+   "evidence": "Matches retrieved NHS/MedlinePlus text",
+   "url": "https://www.nhs.uk/medicines/tamsulosin/about-tamsulosin/",
+   "action": "kept"
+  },
+  {
+   "id": "c07",
+   "where": "howItWorks",
+   "classification": "supported",
+   "evidence": "NHS/MedlinePlus: alpha blocker; alternative name not retrieved",
+   "url": "https://www.nhs.uk/medicines/tamsulosin/about-tamsulosin/",
+   "action": "edited",
+   "newSentence": "Tamsulosin belongs to the group of medicines called alpha blockers."
+  },
+  {
+   "id": "c08",
+   "where": "howItWorks",
+   "classification": "supported",
+   "evidence": "Matches retrieved NHS/MedlinePlus text",
+   "url": "https://www.nhs.uk/medicines/tamsulosin/about-tamsulosin/",
+   "action": "kept"
+  },
+  {
+   "id": "c09",
+   "where": "howItWorks",
+   "classification": "supported",
+   "evidence": "NHS common questions",
+   "url": "https://www.nhs.uk/medicines/tamsulosin/common-questions-about-tamsulosin/",
+   "action": "kept"
+  },
+  {
+   "id": "c10",
+   "where": "onset",
+   "classification": "unsupported",
+   "evidence": "'rather than short-term fix' not retrieved",
+   "url": "https://www.nhs.uk/medicines/tamsulosin/common-questions-about-tamsulosin/",
+   "action": "edited",
+   "newSentence": "The NHS says tamsulosin works best when it is taken long term."
+  },
+  {
+   "id": "c11",
+   "where": "sideEffects.common[0]",
+   "classification": "supported",
+   "evidence": "NHS: many people have no or minor side effects, often improve",
+   "url": "https://www.nhs.uk/medicines/tamsulosin/side-effects-of-tamsulosin/",
+   "action": "edited",
+   "newSentence": "The NHS says many people have no side effects or only minor ones, and that side effects often improve as the body gets used to the medicine."
+  },
+  {
+   "id": "c12",
+   "where": "sideEffects.common[1]",
+   "classification": "supported",
+   "evidence": "NHS common effects",
+   "url": "https://www.nhs.uk/medicines/tamsulosin/side-effects-of-tamsulosin/",
+   "action": "edited",
+   "newSentence": "(minor wording: 'when sitting or standing'; 'less semen than usual or none')"
+  },
+  {
+   "id": "c13",
+   "where": "sideEffects.common[2]",
+   "classification": "unsupported",
+   "evidence": "retrieved: do not drive/cycle/use machinery until dizziness gone; alcohol intensifies; sitting/lying down not retrieved",
+   "url": "https://www.nhs.uk/medicines/tamsulosin/side-effects-of-tamsulosin/",
+   "action": "edited",
+   "newSentence": "The NHS advises against driving, riding a bike or using machinery or tools until dizziness has gone, and says alcohol can intensify the dizziness."
+  },
+  {
+   "id": "c14",
+   "where": "sideEffects.serious[0]",
+   "classification": "unsafe",
+   "evidence": "'rare' not stated in retrieved text; route for fainting named only as 111 generally",
+   "url": "https://www.nhs.uk/medicines/tamsulosin/side-effects-of-tamsulosin/",
+   "action": "edited",
+   "newSentence": "The NHS lists fainting as a serious side effect; for serious side effects other than anaphylaxis and Stevens-Johnson syndrome the NHS says to call NHS 111."
+  },
+  {
+   "id": "c15",
+   "where": "sideEffects.serious[1]",
+   "classification": "unsafe",
+   "evidence": "NHS priapism page: call 999 or go to A&E if erection lasts more than 3-4 hours; emc: very rare, needs immediate medical help; 'usually unrelated to sexual activity' and NHS 'rare' not retrieved",
+   "url": "https://www.nhs.uk/symptoms/priapism-painful-erections/",
+   "action": "edited",
+   "newSentence": "A long-lasting, painful erection (priapism) is listed by the NHS as a serious side effect; the NHS priapism page says to call 999 or go to A&E if an erection lasts more than 3 to 4 hours, and the emc leaflet calls it very rare and says it needs immediate medical help."
+  },
+  {
+   "id": "c16",
+   "where": "sideEffects.serious[2]",
+   "classification": "unsupported",
+   "evidence": "'rare' not retrieved; 999 for anaphylaxis or Stevens-Johnson syndrome retrieved",
+   "url": "https://www.nhs.uk/medicines/tamsulosin/side-effects-of-tamsulosin/",
+   "action": "edited",
+   "newSentence": "A serious allergic reaction (anaphylaxis) can cause a swollen throat or tongue, an itchy raised rash or difficulty breathing; the NHS says to call 999 if anaphylaxis or Stevens-Johnson syndrome is suspected."
+  },
+  {
+   "id": "c17",
+   "where": "cautions[0]",
+   "classification": "supported",
+   "evidence": "NHS: most adults 18+ can take it, not suitable for everyone",
+   "url": "https://www.nhs.uk/medicines/tamsulosin/who-can-and-cannot-take-tamsulosin/",
+   "action": "kept"
+  },
+  {
+   "id": "c18",
+   "where": "cautions[1]",
+   "classification": "wrong",
+   "evidence": "NHS lists groups who 'may not be able to take' it",
+   "url": "https://www.nhs.uk/medicines/tamsulosin/who-can-and-cannot-take-tamsulosin/",
+   "action": "edited",
+   "newSentence": "People who have had an allergic reaction to tamsulosin or similar medicines such as alfuzosin, doxazosin, prazosin or terazosin may not be able to take it."
+  },
+  {
+   "id": "c19",
+   "where": "cautions[2]",
+   "classification": "wrong",
+   "evidence": "NHS: may not be able to take; eye surgery also listed; 'should not take it' too firm",
+   "url": "https://www.nhs.uk/medicines/tamsulosin/who-can-and-cannot-take-tamsulosin/",
+   "action": "edited",
+   "newSentence": "The NHS also lists orthostatic hypotension (low blood pressure that causes dizziness on standing), severe liver or kidney problems, and fainting while peeing or straight afterwards as reasons it may not be suitable."
+  },
+  {
+   "id": "c20",
+   "where": "cautions[3]",
+   "classification": "supported",
+   "evidence": "NHS: tell doctor in advance, may be asked to stop 1-2 weeks before (number omitted)",
+   "url": "https://www.nhs.uk/medicines/tamsulosin/common-questions-about-tamsulosin/",
+   "action": "kept",
+   "newSentence": "People having cataract or glaucoma surgery are asked to tell the doctor in advance that they take tamsulosin, because it can cause complications during the operation; the doctor may ask for it to be stopped beforehand."
+  },
+  {
+   "id": "c21",
+   "where": "cautions[4]",
+   "classification": "supported",
+   "evidence": "emc leaflets: IFIS in patients taking tamsulosin; pupil dilates poorly, iris floppy",
+   "url": "https://www.medicines.org.uk/emc/product/9245/pil",
+   "action": "edited",
+   "newSentence": "Intraoperative floppy iris syndrome, in which the pupil dilates poorly and the iris becomes floppy during eye surgery, is described in emc patient leaflets."
+  },
+  {
+   "id": "c22",
+   "where": "cautions[5]",
+   "classification": "supported",
+   "evidence": "NHS: other alpha blockers and BP medicines can lower BP too much",
+   "url": "https://www.nhs.uk/medicines/tamsulosin/taking-tamsulosin-with-other-medicines-and-herbal-supplements/",
+   "action": "edited",
+   "newSentence": "Other alpha blockers and other blood pressure medicines can lower blood pressure too much when taken with tamsulosin."
+  },
+  {
+   "id": "c23",
+   "where": "cautions[6]",
+   "classification": "supported",
+   "evidence": "NHS: avoid diclofenac; paracetamol, codeine, other NSAIDs such as ibuprofen OK",
+   "url": "https://www.nhs.uk/medicines/tamsulosin/taking-tamsulosin-with-other-medicines-and-herbal-supplements/",
+   "action": "edited",
+   "newSentence": "...and other NSAIDs such as ibuprofen are OK."
+  },
+  {
+   "id": "c24",
+   "where": "cautions[7]",
+   "classification": "supported",
+   "evidence": "NHS: avoid alcohol in first few days; alcohol can increase risk of side effects (blended summary)",
+   "url": "https://www.nhs.uk/medicines/tamsulosin/common-questions-about-tamsulosin/",
+   "action": "edited",
+   "newSentence": "The NHS suggests avoiding alcohol in the first few days ..."
+  },
+  {
+   "id": "c25",
+   "where": "cautions[8]",
+   "classification": "wrong",
+   "evidence": "Pregnancy page: not usually recommended in pregnancy (not enough information); breastfeeding: talk to doctor or pharmacist first (overview page is stricter)",
+   "url": "https://www.nhs.uk/medicines/tamsulosin/pregnancy-breastfeeding-and-fertility-while-taking-tamsulosin/",
+   "action": "edited",
+   "newSentence": "The NHS says tamsulosin is not usually recommended in pregnancy because there is not enough information to know how it affects the baby; for breastfeeding the NHS advises talking to a doctor or pharmacist first."
+  },
+  {
+   "id": "c26",
+   "where": "monitoring",
+   "classification": "unsupported",
+   "evidence": "NICE: review men on alpha blockers at intervals; 'symptoms, quality of life, side effects' not retrieved",
+   "url": "https://www.nice.org.uk/guidance/cg97/chapter/recommendations",
+   "action": "edited",
+   "newSentence": "NICE guidance ... recommends reviewing men who take an alpha blocker after starting it and then at regular intervals."
+  },
+  {
+   "id": "c27",
+   "where": "regimenNote",
+   "classification": "unsupported",
+   "evidence": "'swallowed whole' not retrieved; prolonged-release capsules/tablets seen in emc listings",
+   "url": "https://www.medicines.org.uk/emc/product/9245/pil",
+   "action": "edited",
+   "newSentence": "Prolonged-release capsules and tablets."
+  },
+  {
+   "id": "c28",
+   "where": "article.sections[0].body",
+   "classification": "supported",
+   "evidence": "Matches retrieved NHS/MedlinePlus text",
+   "url": "https://www.nhs.uk/medicines/tamsulosin/about-tamsulosin/",
+   "action": "kept"
+  },
+  {
+   "id": "c29",
+   "where": "article.sections[0].body",
+   "classification": "supported",
+   "evidence": "Matches retrieved NHS/MedlinePlus text",
+   "url": "https://www.nhs.uk/medicines/tamsulosin/about-tamsulosin/",
+   "action": "kept"
+  },
+  {
+   "id": "c30",
+   "where": "article.sections[0].body",
+   "classification": "unsupported",
+   "evidence": "same: emc detail not retrieved; MedlinePlus wording used",
+   "url": "https://medlineplus.gov/druginfo/meds/a698012.html",
+   "action": "edited",
+   "newSentence": "MedlinePlus says it is prescribed for benign prostatic hyperplasia, which can cause trouble urinating, painful urination, or more frequent or urgent urination."
+  },
+  {
+   "id": "c31",
+   "where": "article.sections[0].body",
+   "classification": "supported",
+   "evidence": "NHS common questions; MedlinePlus",
+   "url": "https://www.nhs.uk/medicines/tamsulosin/common-questions-about-tamsulosin/",
+   "action": "kept"
+  },
+  {
+   "id": "c32",
+   "where": "article.sections[0].body",
+   "classification": "supported",
+   "evidence": "NICE CG97: offer an alpha blocker (alfuzosin, doxazosin, tamsulosin or terazosin) to men with moderate to severe LUTS",
+   "url": "https://www.nice.org.uk/guidance/cg97/chapter/recommendations",
+   "action": "kept"
+  },
+  {
+   "id": "c33",
+   "where": "article.sections[0].body",
+   "classification": "unsupported",
+   "evidence": "retrieved NICE text did not state the 'other options unsuccessful' condition",
+   "url": "https://www.nice.org.uk/guidance/cg97/chapter/recommendations",
+   "action": "removed"
+  },
+  {
+   "id": "c34",
+   "where": "article.sections[0].body",
+   "classification": "unsupported",
+   "evidence": "NHS brand list not retrieved; emc/browse listings show prolonged-release capsules/tablets and brands Flomaxtra XL, Faramsil, Tabphyn MR",
+   "url": "https://www.medicines.org.uk/emc/product/9245/pil",
+   "action": "edited",
+   "newSentence": "UK products include prolonged-release capsules and tablets sold under several brand names."
+  },
+  {
+   "id": "c35",
+   "where": "article.sections[0].body",
+   "classification": "unsupported",
+   "evidence": "combination brand names not in retrieved NHS text",
+   "url": "https://www.nhs.uk/medicines/tamsulosin/about-tamsulosin/",
+   "action": "removed"
+  },
+  {
+   "id": "c36",
+   "where": "article.sections[1].body",
+   "classification": "supported",
+   "evidence": "as above",
+   "url": "https://www.nhs.uk/medicines/tamsulosin/about-tamsulosin/",
+   "action": "edited",
+   "newSentence": "Tamsulosin is classed as an alpha blocker."
+  },
+  {
+   "id": "c37",
+   "where": "article.sections[1].body",
+   "classification": "supported",
+   "evidence": "Matches retrieved NHS/MedlinePlus text",
+   "url": "https://www.nhs.uk/medicines/tamsulosin/about-tamsulosin/",
+   "action": "kept"
+  },
+  {
+   "id": "c38",
+   "where": "article.sections[1].body",
+   "classification": "supported",
+   "evidence": "Matches retrieved NHS/MedlinePlus text",
+   "url": "https://www.nhs.uk/medicines/tamsulosin/about-tamsulosin/",
+   "action": "kept"
+  },
+  {
+   "id": "c39",
+   "where": "article.sections[1].body",
+   "classification": "supported",
+   "evidence": "NHS common questions",
+   "url": "https://www.nhs.uk/medicines/tamsulosin/common-questions-about-tamsulosin/",
+   "action": "kept"
+  },
+  {
+   "id": "c40",
+   "where": "article.sections[1].body",
+   "classification": "unsupported",
+   "evidence": "inference not stated by retrieved text; NHS says alcohol intensifies blood-pressure-lowering effect",
+   "url": "https://www.nhs.uk/medicines/tamsulosin/common-questions-about-tamsulosin/",
+   "action": "removed"
+  },
+  {
+   "id": "c41",
+   "where": "article.sections[1].body",
+   "classification": "unsupported",
+   "evidence": "retrieved: works best long term; 'if it is helping' not retrieved",
+   "url": "https://www.nhs.uk/medicines/tamsulosin/common-questions-about-tamsulosin/",
+   "action": "edited",
+   "newSentence": "The NHS says tamsulosin works best when taken long term."
+  },
+  {
+   "id": "c42",
+   "where": "article.sections[1].body",
+   "classification": "supported",
+   "evidence": "Matches retrieved NHS/MedlinePlus text",
+   "url": "https://www.nhs.uk/medicines/tamsulosin/about-tamsulosin/",
+   "action": "kept"
+  },
+  {
+   "id": "c43",
+   "where": "article.sections[1].body",
+   "classification": "unsupported",
+   "evidence": "how-and-when page text not retrieved",
+   "url": "https://www.nhs.uk/medicines/tamsulosin/about-tamsulosin/",
+   "action": "removed"
+  },
+  {
+   "id": "c44",
+   "where": "article.sections[2].body",
+   "classification": "supported",
+   "evidence": "NHS: many people have no or minor side effects, often improve",
+   "url": "https://www.nhs.uk/medicines/tamsulosin/side-effects-of-tamsulosin/",
+   "action": "edited",
+   "newSentence": "The NHS says many people have no side effects or only minor ones, and that side effects often improve as the body gets used to the medicine."
+  },
+  {
+   "id": "c45",
+   "where": "article.sections[2].body",
+   "classification": "supported",
+   "evidence": "NHS common effects",
+   "url": "https://www.nhs.uk/medicines/tamsulosin/side-effects-of-tamsulosin/",
+   "action": "kept"
+  },
+  {
+   "id": "c46",
+   "where": "article.sections[2].body",
+   "classification": "unsupported",
+   "evidence": "sitting or lying down advice not retrieved",
+   "url": "https://www.nhs.uk/medicines/tamsulosin/side-effects-of-tamsulosin/",
+   "action": "removed"
+  },
+  {
+   "id": "c47",
+   "where": "article.sections[2].body",
+   "classification": "unsupported",
+   "evidence": "retrieved text covers driving/cycling/machinery and alcohol intensifying dizziness only",
+   "url": "https://www.nhs.uk/medicines/tamsulosin/side-effects-of-tamsulosin/",
+   "action": "edited",
+   "newSentence": "The NHS advises against driving, riding a bike or using machinery until dizziness has gone, and says that producing less semen than usual, or none, is a harmless effect."
+  },
+  {
+   "id": "c48",
+   "where": "article.sections[2].body",
+   "classification": "unsupported",
+   "evidence": "'rare' not retrieved; serious effects listed",
+   "url": "https://www.nhs.uk/medicines/tamsulosin/side-effects-of-tamsulosin/",
+   "action": "edited",
+   "newSentence": "The NHS lists fainting, a long-lasting painful erection called priapism, and a serious allergic reaction (anaphylaxis) as serious side effects."
+  },
+  {
+   "id": "c49",
+   "where": "article.sections[2].body",
+   "classification": "unsupported",
+   "evidence": "emc: very rare, needs immediate medical assistance; 'unrelated to sexual activity' not retrieved",
+   "url": "https://www.medicines.org.uk/emc/product/9245/pil",
+   "action": "edited",
+   "newSentence": "The emc leaflet lists priapism as very rare and says it needs immediate medical help."
+  },
+  {
+   "id": "c50",
+   "where": "article.sections[2].body",
+   "classification": "unsafe",
+   "evidence": "111 is for other serious effects; 999 for anaphylaxis/SJS; priapism needs 999/A&E route",
+   "url": "https://www.nhs.uk/medicines/tamsulosin/side-effects-of-tamsulosin/",
+   "action": "edited",
+   "newSentence": "The NHS says to call 999 if anaphylaxis or Stevens-Johnson syndrome is suspected, and to call NHS 111 for other serious side effects."
+  },
+  {
+   "id": "c51",
+   "where": "article.sections[2].body",
+   "classification": "unsupported",
+   "evidence": "'rare' not retrieved",
+   "url": "https://www.nhs.uk/medicines/tamsulosin/side-effects-of-tamsulosin/",
+   "action": "edited",
+   "newSentence": "Anaphylaxis can cause a swollen throat or tongue, an itchy raised rash or difficulty breathing."
+  },
+  {
+   "id": "c52",
+   "where": "article.sections[2].body",
+   "classification": "supported",
+   "evidence": "NHS: doctor may prescribe different medicine",
+   "url": "https://www.nhs.uk/medicines/tamsulosin/side-effects-of-tamsulosin/",
+   "action": "kept"
+  },
+  {
+   "id": "c53",
+   "where": "article.sections[3].body",
+   "classification": "supported",
+   "evidence": "NHS: most adults 18+ can take it, not suitable for everyone",
+   "url": "https://www.nhs.uk/medicines/tamsulosin/who-can-and-cannot-take-tamsulosin/",
+   "action": "kept"
+  },
+  {
+   "id": "c54",
+   "where": "article.sections[3].body",
+   "classification": "wrong",
+   "evidence": "'listed as unsuitable' too firm; NHS: may not be able to take",
+   "url": "https://www.nhs.uk/medicines/tamsulosin/who-can-and-cannot-take-tamsulosin/",
+   "action": "edited",
+   "newSentence": "...may not be able to take it."
+  },
+  {
+   "id": "c55",
+   "where": "article.sections[3].body",
+   "classification": "supported",
+   "evidence": "NHS list",
+   "url": "https://www.nhs.uk/medicines/tamsulosin/who-can-and-cannot-take-tamsulosin/",
+   "action": "kept"
+  },
+  {
+   "id": "c56",
+   "where": "article.sections[3].body",
+   "classification": "supported",
+   "evidence": "NHS list",
+   "url": "https://www.nhs.uk/medicines/tamsulosin/who-can-and-cannot-take-tamsulosin/",
+   "action": "kept"
+  },
+  {
+   "id": "c57",
+   "where": "article.sections[3].body",
+   "classification": "supported",
+   "evidence": "NHS: cataract/glaucoma surgery complications",
+   "url": "https://www.nhs.uk/medicines/tamsulosin/common-questions-about-tamsulosin/",
+   "action": "edited",
+   "newSentence": "People having cataract or glaucoma surgery are also on the NHS list, because tamsulosin can cause complications during these operations."
+  },
+  {
+   "id": "c58",
+   "where": "article.sections[3].body",
+   "classification": "supported",
+   "evidence": "emc leaflets as above; advice to tell eye surgeon",
+   "url": "https://www.medicines.org.uk/emc/product/9245/pil",
+   "action": "edited",
+   "newSentence": "The emc leaflets describe intraoperative floppy iris syndrome ... and advise telling the eye surgeon about tamsulosin so that precautions can be taken."
+  },
+  {
+   "id": "c59",
+   "where": "article.sections[3].body",
+   "classification": "supported",
+   "evidence": "NHS: tell doctor in advance, may be asked to stop",
+   "url": "https://www.nhs.uk/medicines/tamsulosin/common-questions-about-tamsulosin/",
+   "action": "kept"
+  },
+  {
+   "id": "c60",
+   "where": "article.sections[3].body",
+   "classification": "wrong",
+   "evidence": "as above",
+   "url": "https://www.nhs.uk/medicines/tamsulosin/pregnancy-breastfeeding-and-fertility-while-taking-tamsulosin/",
+   "action": "edited",
+   "newSentence": "The NHS says tamsulosin is not usually recommended in pregnancy ... For breastfeeding, the NHS advises talking to a doctor or pharmacist first."
+  },
+  {
+   "id": "c61",
+   "where": "article.sections[4].body",
+   "classification": "supported",
+   "evidence": "NHS",
+   "url": "https://www.nhs.uk/medicines/tamsulosin/taking-tamsulosin-with-other-medicines-and-herbal-supplements/",
+   "action": "kept"
+  },
+  {
+   "id": "c62",
+   "where": "article.sections[4].body",
+   "classification": "supported",
+   "evidence": "NHS",
+   "url": "https://www.nhs.uk/medicines/tamsulosin/taking-tamsulosin-with-other-medicines-and-herbal-supplements/",
+   "action": "kept"
+  },
+  {
+   "id": "c63",
+   "where": "article.sections[4].body",
+   "classification": "supported",
+   "evidence": "Matches retrieved NHS/MedlinePlus text",
+   "url": "https://www.nhs.uk/medicines/tamsulosin/about-tamsulosin/",
+   "action": "kept"
+  },
+  {
+   "id": "c64",
+   "where": "article.sections[4].body",
+   "classification": "supported",
+   "evidence": "same",
+   "url": "https://www.nhs.uk/medicines/tamsulosin/taking-tamsulosin-with-other-medicines-and-herbal-supplements/",
+   "action": "edited",
+   "newSentence": "It says paracetamol, codeine and other NSAIDs such as ibuprofen are OK to take with it."
+  },
+  {
+   "id": "c65",
+   "where": "article.sections[4].body",
+   "classification": "supported",
+   "evidence": "Matches retrieved NHS/MedlinePlus text",
+   "url": "https://www.nhs.uk/medicines/tamsulosin/about-tamsulosin/",
+   "action": "kept"
+  },
+  {
+   "id": "c66",
+   "where": "article.sections[4].body",
+   "classification": "supported",
+   "evidence": "NHS overview: alcohol can increase risk of side effects",
+   "url": "https://www.nhs.uk/medicines/tamsulosin/common-questions-about-tamsulosin/",
+   "action": "kept"
+  },
+  {
+   "id": "c67",
+   "where": "article.sections[4].body",
+   "classification": "unsupported",
+   "evidence": "signpost from page title only; NHS text: not enough information to say herbal remedies are safe with tamsulosin",
+   "url": "https://www.nhs.uk/medicines/tamsulosin/taking-tamsulosin-with-other-medicines-and-herbal-supplements/",
+   "action": "edited",
+   "newSentence": "The NHS says there is not enough information to say that complementary medicines and herbal remedies are safe to take with tamsulosin, and that they are generally not tested for their effect on other medicines."
+  },
+  {
+   "id": "c68",
+   "where": "article.faqs[0].a",
+   "classification": "supported",
+   "evidence": "NHS",
+   "url": "https://www.nhs.uk/medicines/tamsulosin/about-tamsulosin/",
+   "action": "kept"
+  },
+  {
+   "id": "c69",
+   "where": "article.faqs[0].a",
+   "classification": "unsupported",
+   "evidence": "prostatitis not in retrieved text",
+   "url": "https://www.nhs.uk/medicines/tamsulosin/about-tamsulosin/",
+   "action": "edited",
+   "newSentence": "It is also sometimes used to help kidney stones pass through the urinary tract."
+  },
+  {
+   "id": "c70",
+   "where": "article.faqs[1].a",
+   "classification": "unsupported",
+   "evidence": "'if it is helping' not retrieved",
+   "url": "https://www.nhs.uk/medicines/tamsulosin/common-questions-about-tamsulosin/",
+   "action": "edited",
+   "newSentence": "A doctor is the person to talk to about how long treatment should continue."
+  },
+  {
+   "id": "c71",
+   "where": "article.faqs[1].a",
+   "classification": "supported",
+   "evidence": "NHS: works best long term",
+   "url": "https://www.nhs.uk/medicines/tamsulosin/common-questions-about-tamsulosin/",
+   "action": "kept"
+  },
+  {
+   "id": "c72",
+   "where": "article.faqs[2].a",
+   "classification": "supported",
+   "evidence": "NHS: stopping suddenly can make condition worse, symptoms may return",
+   "url": "https://www.nhs.uk/medicines/tamsulosin/common-questions-about-tamsulosin/",
+   "action": "edited",
+   "newSentence": "The NHS says stopping suddenly can make the condition worse because symptoms may return."
+  },
+  {
+   "id": "c73",
+   "where": "article.faqs[2].a",
+   "classification": "supported",
+   "evidence": "Matches retrieved NHS/MedlinePlus text",
+   "url": "https://www.nhs.uk/medicines/tamsulosin/about-tamsulosin/",
+   "action": "kept"
+  },
+  {
+   "id": "c74",
+   "where": "article.faqs[3].a",
+   "classification": "supported",
+   "evidence": "NHS",
+   "url": "https://www.nhs.uk/medicines/tamsulosin/common-questions-about-tamsulosin/",
+   "action": "kept"
+  },
+  {
+   "id": "c75",
+   "where": "article.faqs[3].a",
+   "classification": "supported",
+   "evidence": "same",
+   "url": "https://www.nhs.uk/medicines/tamsulosin/common-questions-about-tamsulosin/",
+   "action": "kept"
+  },
+  {
+   "id": "c76",
+   "where": "article.faqs[4].a",
+   "classification": "unsafe",
+   "evidence": "priapism route missing; fainting 111; need 999/A&E for erection over 3-4 hours",
+   "url": "https://www.nhs.uk/symptoms/priapism-painful-erections/",
+   "action": "edited",
+   "newSentence": "The NHS says to call 999 if anaphylaxis is suspected ... call NHS 111 for other serious side effects such as fainting. For a painful erection, the NHS says to call 999 or go to A&E if it lasts more than 3 to 4 hours."
+  },
+  {
+   "id": "c77",
+   "where": "article.faqs[4].a",
+   "classification": "supported",
+   "evidence": "NHS: 999 for anaphylaxis (swollen throat/tongue, difficulty breathing)",
+   "url": "https://www.nhs.uk/medicines/tamsulosin/side-effects-of-tamsulosin/",
+   "action": "kept"
+  },
+  {
+   "id": "c78",
+   "where": "article.keyFacts[0].value",
+   "classification": "supported",
+   "evidence": "NHS: alpha blockers; 'alpha-adrenoreceptor antagonist' not retrieved so shortened",
+   "url": "https://www.nhs.uk/medicines/tamsulosin/about-tamsulosin/",
+   "action": "edited",
+   "newSentence": "Alpha blocker"
+  },
+  {
+   "id": "c79",
+   "where": "article.keyFacts[1].value",
+   "classification": "supported",
+   "evidence": "Matches retrieved NHS/MedlinePlus text",
+   "url": "https://www.nhs.uk/medicines/tamsulosin/about-tamsulosin/",
+   "action": "kept"
+  },
+  {
+   "id": "c80",
+   "where": "article.keyFacts[2].value",
+   "classification": "supported",
+   "evidence": "Matches retrieved NHS/MedlinePlus text",
+   "url": "https://www.nhs.uk/medicines/tamsulosin/about-tamsulosin/",
+   "action": "kept"
+  },
+  {
+   "id": "c81",
+   "where": "article.keyFacts[3].value",
+   "classification": "supported",
+   "evidence": "Matches retrieved NHS/MedlinePlus text",
+   "url": "https://www.nhs.uk/medicines/tamsulosin/about-tamsulosin/",
+   "action": "kept"
+  },
+  {
+   "id": "c82",
+   "where": "article.keyFacts[4].value",
+   "classification": "unsafe",
+   "evidence": "priapism route omitted",
+   "url": "https://www.nhs.uk/symptoms/priapism-painful-erections/",
+   "action": "edited",
+   "newSentence": "999 for anaphylaxis; NHS 111 for other serious side effects; 999 or A&E for an erection lasting more than 3 to 4 hours"
+  },
+  {
+   "id": "c83",
+   "where": "article.keyFacts[5].value",
+   "classification": "supported",
+   "evidence": "Matches retrieved NHS/MedlinePlus text",
+   "url": "https://www.nhs.uk/medicines/tamsulosin/about-tamsulosin/",
+   "action": "kept"
+  },
+  {
+   "id": "c84",
+   "where": "brands.UK Contiflo XL / Pamsvax XL",
+   "classification": "unsupported",
+   "evidence": "not found in emc/NHS listings returned",
+   "url": "https://www.medicines.org.uk/emc/product/9245/pil",
+   "action": "removed"
+  },
+  {
+   "id": "c85",
+   "where": "brands.UK Flomaxtra XL, Faramsil, Tabphyn MR",
+   "classification": "supported",
+   "evidence": "emc listings: Flomaxtra XL, Faramsil, Tabphyn MR 400 microgram products ('Faramsil MR' shortened to Faramsil)",
+   "url": "https://www.medicines.org.uk/emc/product/9245/pil",
+   "action": "edited"
+  },
+  {
+   "id": "c86",
+   "where": "brands.UK Flomax Relief; aliases Flomax Relief",
+   "classification": "unsupported",
+   "evidence": "not retrieved",
+   "url": "https://www.medicines.org.uk/emc/product/9245/pil",
+   "action": "removed"
+  },
+  {
+   "id": "c87",
+   "where": "urlAliases flomax, contiflo-xl",
+   "classification": "unsupported",
+   "evidence": "not retrieved",
+   "url": "https://www.medicines.org.uk/emc/product/9245/pil",
+   "action": "removed"
+  },
+  {
+   "id": "c88",
+   "where": "urlAliases flomaxtra-xl",
+   "classification": "supported",
+   "evidence": "Flomaxtra XL listed on emc",
+   "url": "https://www.medicines.org.uk/emc/product/9245/pil",
+   "action": "kept"
+  },
+  {
+   "id": "c89",
+   "where": "regulatory UK prescription",
+   "classification": "supported",
+   "evidence": "NHS About tamsulosin: prescription or pharmacy medicine",
+   "url": "https://www.nhs.uk/medicines/tamsulosin/about-tamsulosin/",
+   "action": "kept"
+  }
+ ],
+ "notes": "Pregnancy/breastfeeding rewritten from NHS pregnancy page (breastfeeding wording differs between NHS pages, so only 'talk to doctor or pharmacist first' kept). Priapism route (999/A&E over 3-4 hours) from NHS priapism page via search summary; 'rare' frequency for NHS-listed serious effects removed. Dizziness mechanism inference, Vesomni/Combodart, swallowed-whole, sitting/lying-down advice removed. Final article ~770 words; sections 113-194 words. conditions list left empty (no existing id verified)."
+}

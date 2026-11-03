@@ -1,0 +1,683 @@
+{
+ "id": "nitrofurantoin",
+ "searchesUsed": 13,
+ "counts": {
+  "supported": 62,
+  "textbook": 0,
+  "unsupported": 14,
+  "wrong": 0,
+  "unsafe": 0,
+  "unchecked": 0
+ },
+ "claims": [
+  {
+   "id": "c01",
+   "where": "summary",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/MedlinePlus text states this (see ledger source).",
+   "url": "https://www.nhs.uk/medicines/nitrofurantoin/about-nitrofurantoin/",
+   "action": "kept"
+  },
+  {
+   "id": "c02",
+   "where": "summary",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/MedlinePlus text states this (see ledger source).",
+   "url": "https://www.nhs.uk/medicines/nitrofurantoin/who-can-and-cannot-take-nitrofurantoin/",
+   "action": "kept"
+  },
+  {
+   "id": "c03",
+   "where": "usedFor[0]",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/MedlinePlus text states this (see ledger source).",
+   "url": "https://www.nhs.uk/medicines/nitrofurantoin/about-nitrofurantoin/",
+   "action": "kept"
+  },
+  {
+   "id": "c04",
+   "where": "usedFor[1]",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/MedlinePlus text states this (see ledger source).",
+   "url": "https://www.nhs.uk/medicines/nitrofurantoin/about-nitrofurantoin/",
+   "action": "kept"
+  },
+  {
+   "id": "c05",
+   "where": "howItWorks",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/MedlinePlus text states this (see ledger source).",
+   "url": "https://medlineplus.gov/druginfo/meds/a682291.html",
+   "action": "kept"
+  },
+  {
+   "id": "c06",
+   "where": "howItWorks",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/MedlinePlus text states this (see ledger source).",
+   "url": "https://medlineplus.gov/druginfo/meds/a682291.html",
+   "action": "kept"
+  },
+  {
+   "id": "c07",
+   "where": "howItWorks",
+   "classification": "supported",
+   "evidence": "West Yorkshire: do not use for upper UTI; reaches antibiotic concentration only in urine.",
+   "url": "https://www.airedale-trustformulary.nhs.uk/docs/WY%20Prescribing%20and%20Monitoring%20Guidance%20for%20Nitrofurantoin%20v1%20Aug%202023.pdf",
+   "action": "kept"
+  },
+  {
+   "id": "c08",
+   "where": "sideEffects.common[0]",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/MedlinePlus text states this (see ledger source).",
+   "url": "https://www.nhs.uk/medicines/nitrofurantoin/side-effects-of-nitrofurantoin/",
+   "action": "kept"
+  },
+  {
+   "id": "c09",
+   "where": "sideEffects.common[1]",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/MedlinePlus text states this (see ledger source).",
+   "url": "https://www.nhs.uk/medicines/nitrofurantoin/side-effects-of-nitrofurantoin/",
+   "action": "kept"
+  },
+  {
+   "id": "c10",
+   "where": "sideEffects.common[2]",
+   "classification": "unsupported",
+   "evidence": "Not stated in any text retrieved in this pass.",
+   "url": "https://www.nhs.uk/medicines/nitrofurantoin/side-effects-of-nitrofurantoin/",
+   "action": "removed"
+  },
+  {
+   "id": "c11",
+   "where": "sideEffects.serious[0]",
+   "classification": "unsupported",
+   "evidence": "NHS: serious effects uncommon (under 1 in 1,000), lung problems incl. persistent cough, breathing difficulties; call NHS 111 for serious side effects. Kent and Medway leaflet lists warning symptoms. \"GP the same day\" not in retrieved text.",
+   "url": "https://www.nhs.uk/medicines/nitrofurantoin/side-effects-of-nitrofurantoin/",
+   "action": "edited",
+   "newSentence": "Lung problems are among the uncommon serious side effects; a persistent cough or breathing difficulties need urgent medical advice, and the NHS says to call NHS 111 for a serious side effect other than anaphylaxis"
+  },
+  {
+   "id": "c12",
+   "where": "sideEffects.serious[1]",
+   "classification": "supported",
+   "evidence": "NHS: liver problems such as jaundice; call NHS 111. Retrieved text says uncommon not rare.",
+   "url": "https://www.nhs.uk/medicines/nitrofurantoin/side-effects-of-nitrofurantoin/",
+   "action": "edited",
+   "newSentence": "Liver problems such as jaundice (yellowing of the skin or eyes) are uncommon serious effects; the NHS advises calling NHS 111"
+  },
+  {
+   "id": "c13",
+   "where": "sideEffects.serious[2]",
+   "classification": "supported",
+   "evidence": "NHS: anaphylaxis, call 999.",
+   "url": "https://www.nhs.uk/medicines/nitrofurantoin/side-effects-of-nitrofurantoin/",
+   "action": "edited",
+   "newSentence": "A serious allergic reaction (anaphylaxis) is an emergency that needs a 999 call for an ambulance"
+  },
+  {
+   "id": "c14",
+   "where": "cautions[0]",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/MedlinePlus text states this (see ledger source).",
+   "url": "https://www.nhs.uk/medicines/nitrofurantoin/who-can-and-cannot-take-nitrofurantoin/",
+   "action": "kept"
+  },
+  {
+   "id": "c15",
+   "where": "cautions[1]",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/MedlinePlus text states this (see ledger source).",
+   "url": "https://www.nhs.uk/medicines/nitrofurantoin/who-can-and-cannot-take-nitrofurantoin/",
+   "action": "kept"
+  },
+  {
+   "id": "c16",
+   "where": "cautions[2]",
+   "classification": "unsupported",
+   "evidence": "SPS/West Yorkshire: kidney function a key check; below a threshold therapeutic urine concentrations unlikely; older-people point concerned reviewing long-term prophylaxis, not checking before prescribing.",
+   "url": "https://www.airedale-trustformulary.nhs.uk/docs/WY%20Prescribing%20and%20Monitoring%20Guidance%20for%20Nitrofurantoin%20v1%20Aug%202023.pdf",
+   "action": "edited",
+   "newSentence": "Kidney function is a key check: NHS clinical guidance describes kidney function as a key check and links poor kidney function with the medicine being less likely to reach useful levels in the urine, and the prescriber decides"
+  },
+  {
+   "id": "c17",
+   "where": "cautions[3]",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/MedlinePlus text states this (see ledger source).",
+   "url": "https://www.nhs.uk/medicines/nitrofurantoin/pregnancy-breastfeeding-and-fertility-while-taking-nitrofurantoin/",
+   "action": "kept"
+  },
+  {
+   "id": "c18",
+   "where": "cautions[4]",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/MedlinePlus text states this (see ledger source).",
+   "url": "https://www.nhs.uk/medicines/nitrofurantoin/pregnancy-breastfeeding-and-fertility-while-taking-nitrofurantoin/",
+   "action": "kept"
+  },
+  {
+   "id": "c19",
+   "where": "cautions[5]",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/MedlinePlus text states this (see ledger source).",
+   "url": "https://medlineplus.gov/druginfo/meds/a682291.html",
+   "action": "kept"
+  },
+  {
+   "id": "c20",
+   "where": "cautions[6]",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/MedlinePlus text states this (see ledger source).",
+   "url": "https://www.nice.org.uk/guidance/ng109/chapter/recommendations",
+   "action": "kept"
+  },
+  {
+   "id": "c21",
+   "where": "cautions[7]",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/MedlinePlus text states this (see ledger source).",
+   "url": "https://medlineplus.gov/druginfo/meds/a682291.html",
+   "action": "kept"
+  },
+  {
+   "id": "c22",
+   "where": "monitoring",
+   "classification": "unsupported",
+   "evidence": "West Yorkshire guidance: renal and liver function and lung symptoms checked at baseline and at regular review for long-term prophylaxis; not stated for every course or \"especially older people\".",
+   "url": "https://www.airedale-trustformulary.nhs.uk/docs/WY%20Prescribing%20and%20Monitoring%20Guidance%20for%20Nitrofurantoin%20v1%20Aug%202023.pdf",
+   "action": "edited",
+   "newSentence": "NHS clinical guidance for long-term use says kidney function, liver function and lung symptoms are checked at the start and at regular reviews."
+  },
+  {
+   "id": "c23",
+   "where": "regimenNote",
+   "classification": "unsupported",
+   "evidence": "NHS: tablets or capsules swallowed whole; liquid forms not shown in retrieved text.",
+   "url": "https://www.nhs.uk/medicines/nitrofurantoin/how-and-when-to-take-nitrofurantoin/",
+   "action": "edited",
+   "newSentence": "The NHS says nitrofurantoin tablets or capsules are swallowed whole"
+  },
+  {
+   "id": "c24",
+   "where": "article.sections[0].body",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/MedlinePlus text states this (see ledger source).",
+   "url": "https://www.nhs.uk/medicines/nitrofurantoin/about-nitrofurantoin/",
+   "action": "kept"
+  },
+  {
+   "id": "c25",
+   "where": "article.sections[0].body",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/MedlinePlus text states this (see ledger source).",
+   "url": "https://www.nhs.uk/medicines/nitrofurantoin/about-nitrofurantoin/",
+   "action": "kept"
+  },
+  {
+   "id": "c26",
+   "where": "article.sections[0].body",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/MedlinePlus text states this (see ledger source).",
+   "url": "https://www.nhs.uk/medicines/nitrofurantoin/about-nitrofurantoin/",
+   "action": "kept"
+  },
+  {
+   "id": "c27",
+   "where": "article.sections[0].body",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/MedlinePlus text states this (see ledger source).",
+   "url": "https://medlineplus.gov/druginfo/meds/a682291.html",
+   "action": "kept"
+  },
+  {
+   "id": "c28",
+   "where": "article.sections[0].body",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/MedlinePlus text states this (see ledger source).",
+   "url": "https://medlineplus.gov/druginfo/meds/a682291.html",
+   "action": "kept"
+  },
+  {
+   "id": "c29",
+   "where": "article.sections[0].body",
+   "classification": "unsupported",
+   "evidence": "NICE NG109: not recommended for men with suspected prostate involvement; first clause about \"where it can be used\" is vague.",
+   "url": "https://www.nice.org.uk/guidance/ng109/chapter/recommendations",
+   "action": "edited",
+   "newSentence": "NICE guidance on lower urinary tract infections says nitrofurantoin is not recommended for men with suspected prostate involvement."
+  },
+  {
+   "id": "c30",
+   "where": "article.sections[0].body",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/MedlinePlus text states this (see ledger source).",
+   "url": "https://www.airedale-trustformulary.nhs.uk/docs/WY%20Prescribing%20and%20Monitoring%20Guidance%20for%20Nitrofurantoin%20v1%20Aug%202023.pdf",
+   "action": "kept"
+  },
+  {
+   "id": "c31",
+   "where": "article.sections[1].body",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/MedlinePlus text states this (see ledger source).",
+   "url": "https://www.nhs.uk/medicines/nitrofurantoin/about-nitrofurantoin/",
+   "action": "kept"
+  },
+  {
+   "id": "c32",
+   "where": "article.sections[1].body",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/MedlinePlus text states this (see ledger source).",
+   "url": "https://www.nhs.uk/medicines/nitrofurantoin/how-and-when-to-take-nitrofurantoin/",
+   "action": "kept"
+  },
+  {
+   "id": "c33",
+   "where": "article.sections[1].body",
+   "classification": "unsupported",
+   "evidence": "Teaspoon point not in retrieved text.",
+   "url": "https://www.nhs.uk/medicines/nitrofurantoin/how-and-when-to-take-nitrofurantoin/",
+   "action": "removed"
+  },
+  {
+   "id": "c34",
+   "where": "article.sections[1].body",
+   "classification": "supported",
+   "evidence": "NHS: if nearly time for next dose skip it; do not double up.",
+   "url": "https://www.nhs.uk/medicines/nitrofurantoin/how-and-when-to-take-nitrofurantoin/",
+   "action": "edited",
+   "newSentence": "The NHS says a missed dose is skipped if it is nearly time for the next one, and a double dose is not taken to make up for it."
+  },
+  {
+   "id": "c35",
+   "where": "article.sections[1].body",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/MedlinePlus text states this (see ledger source).",
+   "url": "https://www.nhs.uk/medicines/nitrofurantoin/how-and-when-to-take-nitrofurantoin/",
+   "action": "kept"
+  },
+  {
+   "id": "c36",
+   "where": "article.sections[1].body",
+   "classification": "unsupported",
+   "evidence": "MedlinePlus: unnecessary antibiotic use raises resistance risk; stopping early/skipping doses not stated in retrieved text.",
+   "url": "https://medlineplus.gov/druginfo/meds/a682291.html",
+   "action": "removed"
+  },
+  {
+   "id": "c37",
+   "where": "article.sections[2].body",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/MedlinePlus text states this (see ledger source).",
+   "url": "https://www.nhs.uk/medicines/nitrofurantoin/side-effects-of-nitrofurantoin/",
+   "action": "kept"
+  },
+  {
+   "id": "c38",
+   "where": "article.sections[2].body",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/MedlinePlus text states this (see ledger source).",
+   "url": "https://www.nhs.uk/medicines/nitrofurantoin/side-effects-of-nitrofurantoin/",
+   "action": "kept"
+  },
+  {
+   "id": "c39",
+   "where": "article.sections[2].body",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/MedlinePlus text states this (see ledger source).",
+   "url": "https://www.nhs.uk/medicines/nitrofurantoin/how-and-when-to-take-nitrofurantoin/",
+   "action": "kept"
+  },
+  {
+   "id": "c40",
+   "where": "article.sections[2].body",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/MedlinePlus text states this (see ledger source).",
+   "url": "https://www.nhs.uk/medicines/nitrofurantoin/side-effects-of-nitrofurantoin/",
+   "action": "kept"
+  },
+  {
+   "id": "c41",
+   "where": "article.sections[2].body",
+   "classification": "supported",
+   "evidence": "NHS: serious effects uncommon, under 1 in 1,000.",
+   "url": "https://www.nhs.uk/medicines/nitrofurantoin/side-effects-of-nitrofurantoin/",
+   "action": "edited",
+   "newSentence": "The NHS says serious side effects are uncommon."
+  },
+  {
+   "id": "c42",
+   "where": "article.sections[2].body",
+   "classification": "supported",
+   "evidence": "NHS: lung, liver, anaphylaxis (also blood problems, severe headaches).",
+   "url": "https://www.nhs.uk/medicines/nitrofurantoin/side-effects-of-nitrofurantoin/",
+   "action": "edited",
+   "newSentence": "They include lung problems, liver problems such as jaundice, and allergic reactions."
+  },
+  {
+   "id": "c43",
+   "where": "article.sections[2].body",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/MedlinePlus text states this (see ledger source).",
+   "url": "https://www.nhs.uk/medicines/nitrofurantoin/side-effects-of-nitrofurantoin/",
+   "action": "kept"
+  },
+  {
+   "id": "c44",
+   "where": "article.sections[2].body",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/MedlinePlus text states this (see ledger source).",
+   "url": "https://kentandmedwayformulary.nhs.uk/media/ehtbh1cx/nitrofurantoin-patient-information.pdf",
+   "action": "kept"
+  },
+  {
+   "id": "c45",
+   "where": "article.sections[2].body",
+   "classification": "unsupported",
+   "evidence": "Not stated in any text retrieved in this pass.",
+   "url": "https://www.nhs.uk/medicines/nitrofurantoin/side-effects-of-nitrofurantoin/",
+   "action": "removed"
+  },
+  {
+   "id": "c46",
+   "where": "article.sections[3].body",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/MedlinePlus text states this (see ledger source).",
+   "url": "https://www.nhs.uk/medicines/nitrofurantoin/who-can-and-cannot-take-nitrofurantoin/",
+   "action": "kept"
+  },
+  {
+   "id": "c47",
+   "where": "article.sections[3].body",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/MedlinePlus text states this (see ledger source).",
+   "url": "https://www.nhs.uk/medicines/nitrofurantoin/who-can-and-cannot-take-nitrofurantoin/",
+   "action": "kept"
+  },
+  {
+   "id": "c48",
+   "where": "article.sections[3].body",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/MedlinePlus text states this (see ledger source).",
+   "url": "https://www.nhs.uk/medicines/nitrofurantoin/who-can-and-cannot-take-nitrofurantoin/",
+   "action": "kept"
+  },
+  {
+   "id": "c49",
+   "where": "article.sections[3].body",
+   "classification": "unsupported",
+   "evidence": "SPS: \"Kidney function is a key check\"; \"most\" is not sourced.",
+   "url": "https://sps.nhs.uk/monitorings/nitrofurantoin-monitoring/",
+   "action": "edited",
+   "newSentence": "Kidney function is a key check in NHS clinical guidance."
+  },
+  {
+   "id": "c50",
+   "where": "article.sections[3].body",
+   "classification": "unsupported",
+   "evidence": "Guidance links reduced function to unlikely therapeutic urine concentrations; \"before prescribing, especially older people\" not stated.",
+   "url": "https://www.airedale-trustformulary.nhs.uk/docs/WY%20Prescribing%20and%20Monitoring%20Guidance%20for%20Nitrofurantoin%20v1%20Aug%202023.pdf",
+   "action": "edited",
+   "newSentence": "The guidance links poor kidney function with the medicine being less likely to reach useful levels in the urine."
+  },
+  {
+   "id": "c51",
+   "where": "article.sections[3].body",
+   "classification": "supported",
+   "evidence": "Search 1: sources do not agree on kidney thresholds (SPS/NHS England 45; BSW 10; West Yorkshire 30).",
+   "url": "https://www.airedale-trustformulary.nhs.uk/docs/WY%20Prescribing%20and%20Monitoring%20Guidance%20for%20Nitrofurantoin%20v1%20Aug%202023.pdf",
+   "action": "edited",
+   "newSentence": "Sources differ on the exact kidney-function limit, so the prescriber decides."
+  },
+  {
+   "id": "c52",
+   "where": "article.sections[4].body",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/MedlinePlus text states this (see ledger source).",
+   "url": "https://www.nhs.uk/medicines/nitrofurantoin/pregnancy-breastfeeding-and-fertility-while-taking-nitrofurantoin/",
+   "action": "kept"
+  },
+  {
+   "id": "c53",
+   "where": "article.sections[4].body",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/MedlinePlus text states this (see ledger source).",
+   "url": "https://www.nhs.uk/medicines/nitrofurantoin/pregnancy-breastfeeding-and-fertility-while-taking-nitrofurantoin/",
+   "action": "kept"
+  },
+  {
+   "id": "c54",
+   "where": "article.sections[4].body",
+   "classification": "unsupported",
+   "evidence": "Not found in retrieved NHS pregnancy text.",
+   "url": "https://www.nhs.uk/medicines/nitrofurantoin/pregnancy-breastfeeding-and-fertility-while-taking-nitrofurantoin/",
+   "action": "removed"
+  },
+  {
+   "id": "c55",
+   "where": "article.sections[4].body",
+   "classification": "supported",
+   "evidence": "NHS: healthy baby usually can; small amounts in milk, unlikely side effects; check with doctor/pharmacist.",
+   "url": "https://www.nhs.uk/medicines/nitrofurantoin/pregnancy-breastfeeding-and-fertility-while-taking-nitrofurantoin/",
+   "action": "kept"
+  },
+  {
+   "id": "c56",
+   "where": "article.sections[4].body",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/MedlinePlus text states this (see ledger source).",
+   "url": "https://sps.nhs.uk/articles/using-nitrofurantoin-during-breastfeeding/",
+   "action": "kept"
+  },
+  {
+   "id": "c57",
+   "where": "article.sections[4].body",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/MedlinePlus text states this (see ledger source).",
+   "url": "https://medlineplus.gov/druginfo/meds/a682291.html",
+   "action": "kept"
+  },
+  {
+   "id": "c58",
+   "where": "article.sections[4].body",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/MedlinePlus text states this (see ledger source).",
+   "url": "https://www.england.nhs.uk/wp-content/uploads/2023/11/PRN01010-1a.-urinary-tract-infection-nitrofurantoin-patient-group-direction-pharmacy-first.pdf",
+   "action": "kept"
+  },
+  {
+   "id": "c59",
+   "where": "article.sections[4].body",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/MedlinePlus text states this (see ledger source).",
+   "url": "https://www.england.nhs.uk/wp-content/uploads/2023/11/PRN01010-1a.-urinary-tract-infection-nitrofurantoin-patient-group-direction-pharmacy-first.pdf",
+   "action": "kept"
+  },
+  {
+   "id": "c60",
+   "where": "article.sections[4].body",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/MedlinePlus text states this (see ledger source).",
+   "url": "https://medlineplus.gov/druginfo/meds/a682291.html",
+   "action": "kept"
+  },
+  {
+   "id": "c61",
+   "where": "article.faqs[0].a",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/MedlinePlus text states this (see ledger source).",
+   "url": "https://www.nhs.uk/medicines/nitrofurantoin/side-effects-of-nitrofurantoin/",
+   "action": "kept"
+  },
+  {
+   "id": "c62",
+   "where": "article.faqs[0].a",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/MedlinePlus text states this (see ledger source).",
+   "url": "https://www.nhs.uk/medicines/nitrofurantoin/how-and-when-to-take-nitrofurantoin/",
+   "action": "kept"
+  },
+  {
+   "id": "c63",
+   "where": "article.faqs[1].a",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/MedlinePlus text states this (see ledger source).",
+   "url": "https://www.airedale-trustformulary.nhs.uk/docs/WY%20Prescribing%20and%20Monitoring%20Guidance%20for%20Nitrofurantoin%20v1%20Aug%202023.pdf",
+   "action": "kept"
+  },
+  {
+   "id": "c64",
+   "where": "article.faqs[1].a",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/MedlinePlus text states this (see ledger source).",
+   "url": "https://www.nhs.uk/medicines/nitrofurantoin/about-nitrofurantoin/",
+   "action": "kept"
+  },
+  {
+   "id": "c65",
+   "where": "article.faqs[2].a",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/MedlinePlus text states this (see ledger source).",
+   "url": "https://medlineplus.gov/druginfo/meds/a682291.html",
+   "action": "kept"
+  },
+  {
+   "id": "c66",
+   "where": "article.faqs[2].a",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/MedlinePlus text states this (see ledger source).",
+   "url": "https://medlineplus.gov/druginfo/meds/a682291.html",
+   "action": "kept"
+  },
+  {
+   "id": "c67",
+   "where": "article.faqs[3].a",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/MedlinePlus text states this (see ledger source).",
+   "url": "https://www.nhs.uk/medicines/nitrofurantoin/pregnancy-breastfeeding-and-fertility-while-taking-nitrofurantoin/",
+   "action": "kept"
+  },
+  {
+   "id": "c68",
+   "where": "article.faqs[3].a",
+   "classification": "unsupported",
+   "evidence": "NHS: doctor will weigh up benefits and risks; \"UTI treatment is important\" not retrieved.",
+   "url": "https://www.nhs.uk/medicines/nitrofurantoin/who-can-and-cannot-take-nitrofurantoin/",
+   "action": "edited",
+   "newSentence": "The NHS says the doctor weighs up the benefits and risks with the person."
+  },
+  {
+   "id": "c69",
+   "where": "article.faqs[4].a",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/MedlinePlus text states this (see ledger source).",
+   "url": "https://www.nhs.uk/medicines/nitrofurantoin/who-can-and-cannot-take-nitrofurantoin/",
+   "action": "kept"
+  },
+  {
+   "id": "c70",
+   "where": "article.faqs[4].a",
+   "classification": "unsupported",
+   "evidence": "Guidance links poor kidney function to less likely useful urine levels; pre-prescribing/older people not stated.",
+   "url": "https://www.airedale-trustformulary.nhs.uk/docs/WY%20Prescribing%20and%20Monitoring%20Guidance%20for%20Nitrofurantoin%20v1%20Aug%202023.pdf",
+   "action": "edited",
+   "newSentence": "NHS clinical guidance describes kidney function as a key check and links poor kidney function with the medicine being less likely to reach useful levels in the urine."
+  },
+  {
+   "id": "c71",
+   "where": "keyFacts.value[0]",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/MedlinePlus text states this (see ledger source).",
+   "url": "https://medlineplus.gov/druginfo/meds/a682291.html",
+   "action": "kept"
+  },
+  {
+   "id": "c72",
+   "where": "keyFacts.value[1]",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/MedlinePlus text states this (see ledger source).",
+   "url": "https://www.nhs.uk/medicines/nitrofurantoin/about-nitrofurantoin/",
+   "action": "kept"
+  },
+  {
+   "id": "c73",
+   "where": "keyFacts.value[2]",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/MedlinePlus text states this (see ledger source).",
+   "url": "https://www.nhs.uk/medicines/nitrofurantoin/about-nitrofurantoin/",
+   "action": "kept"
+  },
+  {
+   "id": "c74",
+   "where": "keyFacts.value[3]",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/MedlinePlus text states this (see ledger source).",
+   "url": "https://www.nhs.uk/medicines/nitrofurantoin/side-effects-of-nitrofurantoin/",
+   "action": "kept"
+  },
+  {
+   "id": "c75",
+   "where": "keyFacts.value[4]",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/MedlinePlus text states this (see ledger source).",
+   "url": "https://www.nhs.uk/medicines/nitrofurantoin/side-effects-of-nitrofurantoin/",
+   "action": "kept"
+  },
+  {
+   "id": "c76",
+   "where": "keyFacts.value[5]",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/MedlinePlus text states this (see ledger source).",
+   "url": "https://www.nhs.uk/medicines/nitrofurantoin/who-can-and-cannot-take-nitrofurantoin/",
+   "action": "kept"
+  },
+  {
+   "id": "c77",
+   "where": "sideEffects.common/cautions",
+   "classification": "supported",
+   "evidence": "Added sentence from retrieved NHS text (searches 5, 9); not counted in first-pass counts.",
+   "url": "https://www.nhs.uk/medicines/nitrofurantoin/about-nitrofurantoin/",
+   "action": "edited",
+   "newSentence": "The NHS says alcohol can be drunk while taking nitrofurantoin"
+  },
+  {
+   "id": "c78",
+   "where": "article.sections[0].body",
+   "classification": "supported",
+   "evidence": "Added sentence from retrieved NHS text (searches 5, 9); not counted in first-pass counts.",
+   "url": "https://www.nhs.uk/medicines/nitrofurantoin/about-nitrofurantoin/",
+   "action": "edited",
+   "newSentence": "The NHS explains that most of a dose is filtered from the blood into the urine, which concentrates the medicine where the bacteria are."
+  },
+  {
+   "id": "c79",
+   "where": "howItWorks",
+   "classification": "supported",
+   "evidence": "Added sentence from retrieved NHS text (searches 5, 9); not counted in first-pass counts.",
+   "url": "https://www.nhs.uk/medicines/nitrofurantoin/about-nitrofurantoin/",
+   "action": "edited",
+   "newSentence": "The NHS explains that most of a dose is filtered from the blood into the urine, which concentrates the medicine where the bacteria are."
+  },
+  {
+   "id": "c80",
+   "where": "article.sections[1].body",
+   "classification": "supported",
+   "evidence": "Added sentence from retrieved NHS text (searches 5, 9); not counted in first-pass counts.",
+   "url": "https://www.nhs.uk/medicines/nitrofurantoin/how-and-when-to-take-nitrofurantoin/",
+   "action": "edited",
+   "newSentence": "For a urinary tract infection it says treatment usually lasts 3 to 7 days, while preventing repeat infections can take months, and that a doctor should be told if there is no improvement after 3 days or if symptoms get worse at any time."
+  },
+  {
+   "id": "c81",
+   "where": "article.sections[4].body",
+   "classification": "supported",
+   "evidence": "Added sentence from retrieved NHS text (searches 5, 9); not counted in first-pass counts.",
+   "url": "https://www.nhs.uk/medicines/nitrofurantoin/about-nitrofurantoin/",
+   "action": "edited",
+   "newSentence": "The NHS says alcohol can be drunk while taking nitrofurantoin."
+  }
+ ],
+ "notes": "Search cap 13 used. Kidney: NHS eGFR cut-offs differ between sources (SPS/NICE 45, West Yorkshire caution 45/avoid 30, BSW 10); none in prose. Pregnancy: NHS says earlier than week 28; a March 2026 Devon formulary notice says not recommended in third trimester; prose kept to NHS wording, check later. NHS \"common questions\" page not used. Removed dosageFormIds \"solution\" (liquid form not retrieved). Antacid/urine-alkalinising points rest on NHS England PGD via search summaries (sodium citrate confirmed in fragment; potassium citrate/sodium bicarbonate from one blended summary). Added 5 sentences from retrieved text (listed after first-pass rows). kidney-function-tests and amoxicillin ids must exist in content ids (checked by check_batch)."
+}

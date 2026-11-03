@@ -1,0 +1,440 @@
+{
+ "id": "apixaban",
+ "searchesUsed": 8,
+ "counts": {
+  "supported": 31,
+  "textbook": 4,
+  "unsupported": 16,
+  "wrong": 0,
+  "unsafe": 0,
+  "unchecked": 0
+ },
+ "claims": [
+  {
+   "id": "c01",
+   "classification": "supported",
+   "sentence": "S0: Apixaban is an anticoagulant...",
+   "evidence": "NHS: anticoagulant; reduces chance of clots forming",
+   "url": "https://www.nhs.uk/medicines/apixaban/about-apixaban/",
+   "action": "kept"
+  },
+  {
+   "id": "c02",
+   "classification": "supported",
+   "sentence": "S0: available only on prescription",
+   "evidence": "Prescription-only",
+   "url": "https://www.nhs.uk/medicines/apixaban/",
+   "action": "kept"
+  },
+  {
+   "id": "c03",
+   "classification": "supported",
+   "sentence": "S0: NHS lists uses such as...",
+   "evidence": "Uses: DVT, PE; high risk of clots (AF, heart failure, past stroke/TIA), hip/knee replacement",
+   "url": "https://www.nhs.uk/medicines/apixaban/about-apixaban/",
+   "action": "edited",
+   "newSentence": "Expanded to the NHS list of uses."
+  },
+  {
+   "id": "c04",
+   "classification": "textbook",
+   "sentence": "S1: makes the blood take longer to clot...",
+   "evidence": "NHS main page says blood less likely to clot; longer bleeding from cuts is on the side-effects list. Wording 'take longer to clot' not seen verbatim this pass",
+   "url": "https://www.nhs.uk/medicines/apixaban/",
+   "action": "kept"
+  },
+  {
+   "id": "c05",
+   "classification": "supported",
+   "sentence": "S1: with or without food",
+   "evidence": "With or without food",
+   "url": "https://www.nhs.uk/medicines/apixaban/",
+   "action": "kept"
+  },
+  {
+   "id": "c06",
+   "classification": "unsupported",
+   "sentence": "S1: same time each day / missed tablets page",
+   "evidence": "'Same time each day' and the apixaban missed-dose page not retrieved; missed-dose rule seen only on the anticoagulants dosage page",
+   "url": "https://www.nhs.uk/medicines/anticoagulants/dosage/",
+   "action": "removed"
+  },
+  {
+   "id": "c07",
+   "classification": "supported",
+   "sentence": "S1: should not stop",
+   "evidence": "Do not stop without talking to doctor",
+   "url": "https://www.nhs.uk/medicines/apixaban/",
+   "action": "kept"
+  },
+  {
+   "id": "c08",
+   "classification": "supported",
+   "sentence": "S2: most common side effect",
+   "evidence": "Most common side effect: bleeding more easily",
+   "url": "https://www.nhs.uk/medicines/apixaban/side-effects-of-apixaban/",
+   "action": "kept"
+  },
+  {
+   "id": "c09",
+   "classification": "supported",
+   "sentence": "S2: forms of bleeding",
+   "evidence": "Nosebleeds, heavier periods, gum bleeding, bruising",
+   "url": "https://www.nhs.uk/medicines/apixaban/side-effects-of-apixaban/",
+   "action": "kept"
+  },
+  {
+   "id": "c10",
+   "classification": "supported",
+   "sentence": "S2: minor bleeding sentence",
+   "evidence": "Minor bleeding not dangerous, should stop by itself, tell doctor if it bothers or does not stop",
+   "url": "https://www.nhs.uk/medicines/apixaban/side-effects-of-apixaban/",
+   "action": "edited",
+   "newSentence": "The NHS describes this kind of bleeding as not dangerous, and says it should stop by itself. The doctor should be told if it bothers the person or does not stop."
+  },
+  {
+   "id": "c11",
+   "classification": "unsupported",
+   "sentence": "S2: red/black poo or growing bruises -> NHS 111",
+   "evidence": "NHS apixaban page gives NHS 111 for 'symptoms of bleeding, a head injury or other serious side effects' generally; no per-symptom split (red/black poo, bruises) retrieved; hospital leaflets conflict (111/GP vs 999/A&E)",
+   "url": "https://www.nhs.uk/medicines/apixaban/",
+   "action": "edited",
+   "newSentence": "On its main apixaban page, the NHS says to call NHS 111 for symptoms of bleeding, a head injury, or other possible serious side effects."
+  },
+  {
+   "id": "c12",
+   "classification": "unsupported",
+   "sentence": "S2: long nosebleed, blood in vomit, cuts -> A&E",
+   "evidence": "A&E for prolonged nosebleed / vomited blood came only from trust leaflets (Cambridge, Dorset), not NHS site pages; leaflets disagree with each other",
+   "url": "https://www.nhs.uk/medicines/apixaban/",
+   "action": "removed"
+  },
+  {
+   "id": "c13",
+   "classification": "supported",
+   "sentence": "S2: brain-bleed signs -> 999/A&E",
+   "evidence": "Side-effects page: 999 or A&E for sudden severe headache, fits, sudden vision loss/blurring, numbness or tingling in limbs",
+   "url": "https://www.nhs.uk/medicines/apixaban/side-effects-of-apixaban/",
+   "action": "kept"
+  },
+  {
+   "id": "c14",
+   "classification": "supported",
+   "sentence": "S2: allergic reaction -> 999",
+   "evidence": "Serious allergic reaction (swollen face/throat, breathing difficulty) -> 999",
+   "url": "https://www.nhs.uk/medicines/apixaban/side-effects-of-apixaban/",
+   "action": "kept"
+  },
+  {
+   "id": "c15",
+   "classification": "supported",
+   "sentence": "S3: prescribers need to know everything",
+   "evidence": "Tell GP/dentist/pharmacist about all medicines incl OTC, vitamins, supplements",
+   "url": "https://www.nhs.uk/medicines/apixaban/taking-apixaban-with-other-medicines-and-herbal-supplements/",
+   "action": "kept"
+  },
+  {
+   "id": "c16",
+   "classification": "supported",
+   "sentence": "S3: some antidepressants and painkillers",
+   "evidence": "NHS list of medicines that may not mix well includes other anticoagulants, some antidepressants, NSAIDs/painkillers",
+   "url": "https://www.nhs.uk/medicines/apixaban/taking-apixaban-with-other-medicines-and-herbal-supplements/",
+   "action": "edited",
+   "newSentence": "The NHS says some medicines may not mix well with apixaban, including other anticoagulants, some antidepressants, and painkillers or anti-inflammatories such as aspirin and ibuprofen."
+  },
+  {
+   "id": "c17",
+   "classification": "supported",
+   "sentence": "S3: alcohol possible",
+   "evidence": "Alcohol allowed",
+   "url": "https://www.nhs.uk/medicines/apixaban/",
+   "action": "edited",
+   "newSentence": "Number of units omitted (cut-off rule)."
+  },
+  {
+   "id": "c18",
+   "classification": "supported",
+   "sentence": "S3: heavy drinking increases effect and bleeding",
+   "evidence": "Heavy or binge drinking raises bleeding risk; 'increases the effect of apixaban' not in retrieved text",
+   "url": "https://www.nhs.uk/medicines/apixaban/",
+   "action": "edited",
+   "newSentence": "...heavy or binge drinking raises the risk of bleeding."
+  },
+  {
+   "id": "c19",
+   "classification": "unsupported",
+   "sentence": "S4: alert card is given by doctor or pharmacist",
+   "evidence": "'Given by doctor or pharmacist' not retrieved",
+   "url": "https://www.nhs.uk/medicines/apixaban/",
+   "action": "edited",
+   "newSentence": "The NHS says people taking apixaban should carry an anticoagulant alert card and tell their surgeon or dentist that they take it."
+  },
+  {
+   "id": "c20",
+   "classification": "supported",
+   "sentence": "S4: carry card, show before surgery",
+   "evidence": "Carry the card; tell surgeon/dentist",
+   "url": "https://www.nhs.uk/medicines/apixaban/",
+   "action": "kept"
+  },
+  {
+   "id": "c21",
+   "classification": "supported",
+   "sentence": "S4: may be paused before procedures",
+   "evidence": "Dose may need lowering or stopping a few days before an operation",
+   "url": "https://www.nhs.uk/medicines/apixaban/",
+   "action": "edited",
+   "newSentence": "Because of the risk of bleeding, the dose may need to be lowered or stopped a few days before an operation, and the clinical team makes that decision."
+  },
+  {
+   "id": "c22",
+   "classification": "unsupported",
+   "sentence": "S5: allergic to it or another anticoagulant",
+   "evidence": "NHS: allergic reaction to apixaban or any other medicine, not 'another anticoagulant'",
+   "url": "https://www.nhs.uk/medicines/apixaban/who-can-and-cannot-take-apixaban/",
+   "action": "edited",
+   "newSentence": "...a past allergic reaction to apixaban or any other medicine..."
+  },
+  {
+   "id": "c23",
+   "classification": "supported",
+   "sentence": "S5: bleeding injuries/ulcer/brain bleed",
+   "evidence": "Active heavy bleeding, stomach ulcer, recent brain bleed listed",
+   "url": "https://www.nhs.uk/medicines/apixaban/who-can-and-cannot-take-apixaban/",
+   "action": "edited",
+   "newSentence": "Reworded as 'reasons apixaban may not be suitable'."
+  },
+  {
+   "id": "c24",
+   "classification": "supported",
+   "sentence": "S5: liver or kidney disease",
+   "evidence": "Liver or kidney problems listed",
+   "url": "https://www.nhs.uk/medicines/apixaban/who-can-and-cannot-take-apixaban/",
+   "action": "kept"
+  },
+  {
+   "id": "c25",
+   "classification": "unsupported",
+   "sentence": "S5: blood tests before starting and yearly",
+   "evidence": "Yearly kidney/liver blood tests not retrieved from NHS pages (and NHS says no INR monitoring)",
+   "url": "https://www.nhs.uk/medicines/apixaban/who-can-and-cannot-take-apixaban/",
+   "action": "removed"
+  },
+  {
+   "id": "c26",
+   "classification": "supported",
+   "sentence": "S5: not recommended in pregnancy",
+   "evidence": "Pregnant or trying to get pregnant: can be harmful to baby",
+   "url": "https://www.nhs.uk/medicines/apixaban/",
+   "action": "edited",
+   "newSentence": "Reworded."
+  },
+  {
+   "id": "c27",
+   "classification": "unsupported",
+   "sentence": "S5: breastfeeding because unclear effect on baby",
+   "evidence": "NHS says should not be used while breastfeeding; 'unclear how it affects the baby' came from SPS (sps.nhs.uk), not NHS page, and was blended",
+   "url": "https://www.nhs.uk/medicines/apixaban/who-can-and-cannot-take-apixaban/",
+   "action": "edited",
+   "newSentence": "It also says apixaban should not be used while breastfeeding."
+  },
+  {
+   "id": "c28",
+   "classification": "unsupported",
+   "sentence": "FAQ1: blood thinner denial",
+   "evidence": "'Does not thin the blood' not in any retrieved text",
+   "url": "https://www.nhs.uk/medicines/apixaban/",
+   "action": "removed"
+  },
+  {
+   "id": "c29",
+   "classification": "supported",
+   "sentence": "FAQ1",
+   "evidence": "NHS describes anticoagulant helping prevent clots",
+   "url": "https://www.nhs.uk/medicines/apixaban/",
+   "action": "kept"
+  },
+  {
+   "id": "c30",
+   "classification": "textbook",
+   "sentence": "FAQ1: slows clotting, why bleeding main side effect",
+   "evidence": "Slowing clotting explains bleeding: reasonable but not stated",
+   "url": "https://www.nhs.uk/medicines/apixaban/",
+   "action": "removed"
+  },
+  {
+   "id": "c31",
+   "classification": "supported",
+   "sentence": "FAQ1: prescription",
+   "evidence": "Prescription only",
+   "url": "https://www.nhs.uk/medicines/apixaban/",
+   "action": "kept"
+  },
+  {
+   "id": "c32",
+   "classification": "supported",
+   "sentence": "FAQ2: NHS gives specific advice",
+   "evidence": "Anticoagulants dosage page gives missed-dose advice depending on time to next dose (6-hour rule, not published here)",
+   "url": "https://www.nhs.uk/medicines/anticoagulants/dosage/",
+   "action": "kept"
+  },
+  {
+   "id": "c33",
+   "classification": "unsupported",
+   "sentence": "FAQ2: not two doses",
+   "evidence": "'Do not take two doses together' not retrieved",
+   "url": "https://www.nhs.uk/medicines/anticoagulants/dosage/",
+   "action": "removed"
+  },
+  {
+   "id": "c34",
+   "classification": "textbook",
+   "sentence": "FAQ2: pharmacist or GP",
+   "evidence": "Pharmacist/GP can explain: generic",
+   "url": "https://www.nhs.uk/medicines/anticoagulants/dosage/",
+   "action": "removed"
+  },
+  {
+   "id": "c35",
+   "classification": "supported",
+   "sentence": "FAQ3",
+   "evidence": "Do not stop without talking to doctor",
+   "url": "https://www.nhs.uk/medicines/apixaban/",
+   "action": "kept"
+  },
+  {
+   "id": "c36",
+   "classification": "unsupported",
+   "sentence": "FAQ3 s2",
+   "evidence": "Treatment length varies / feeling well reflects medicine working: not retrieved",
+   "url": "https://www.nhs.uk/medicines/apixaban/",
+   "action": "removed"
+  },
+  {
+   "id": "c37",
+   "classification": "unsupported",
+   "sentence": "FAQ3 s3",
+   "evidence": "Doctor reviews protection next: not retrieved. Replaced with NHS: clotting returns to pre-treatment rate within a day or two of stopping",
+   "url": "https://www.nhs.uk/medicines/apixaban/",
+   "action": "edited",
+   "newSentence": "If it is stopped, the way the blood clots returns to what it was before treatment, usually within a day or two."
+  },
+  {
+   "id": "c38",
+   "classification": "unsupported",
+   "sentence": "FAQ4 s1: knock to head needs urgent assessment",
+   "evidence": "Hospital leaflets attributed to NHS side-effects page; page not shown to say this",
+   "url": "https://www.nhs.uk/medicines/apixaban/side-effects-of-apixaban/",
+   "action": "edited",
+   "newSentence": "Rewritten to the two NHS pages' routes."
+  },
+  {
+   "id": "c39",
+   "classification": "unsupported",
+   "sentence": "FAQ4 s2",
+   "evidence": "'Severe bleeding' -> A&E/999 not on NHS pages; main page says 111 for bleeding/head injury",
+   "url": "https://www.nhs.uk/medicines/apixaban/",
+   "action": "edited",
+   "newSentence": "On its side-effects page, it says to call 999 or go to A&E for a sudden severe headache, fits, or sudden vision changes."
+  },
+  {
+   "id": "c40",
+   "classification": "unsupported",
+   "sentence": "FAQ4 s3",
+   "evidence": "Red/black poo -> 111 not retrieved",
+   "url": "https://www.nhs.uk/medicines/apixaban/",
+   "action": "removed"
+  },
+  {
+   "id": "c41",
+   "classification": "supported",
+   "sentence": "FAQ5 s1",
+   "evidence": "Alcohol allowed",
+   "url": "https://www.nhs.uk/medicines/apixaban/",
+   "action": "kept"
+  },
+  {
+   "id": "c42",
+   "classification": "supported",
+   "sentence": "FAQ5 s2",
+   "evidence": "Heavy or binge drinking raises bleeding risk; 'strengthen the effect' dropped",
+   "url": "https://www.nhs.uk/medicines/apixaban/",
+   "action": "edited",
+   "newSentence": "Heavy or binge drinking raises the risk of bleeding."
+  },
+  {
+   "id": "c43",
+   "classification": "textbook",
+   "sentence": "FAQ5 s3",
+   "evidence": "GP/pharmacist can talk through: generic",
+   "url": "https://www.nhs.uk/medicines/apixaban/",
+   "action": "removed"
+  },
+  {
+   "id": "c44",
+   "classification": "unsupported",
+   "sentence": "FAQ5 s4",
+   "evidence": "Circular claim about routes in side-effects section",
+   "url": "https://www.nhs.uk/medicines/apixaban/",
+   "action": "removed"
+  },
+  {
+   "id": "c45",
+   "classification": "supported",
+   "sentence": "keyFact: Medicine type",
+   "evidence": "NHS main page / side-effects page",
+   "url": "https://www.nhs.uk/medicines/apixaban/",
+   "action": "kept"
+  },
+  {
+   "id": "c46",
+   "classification": "supported",
+   "sentence": "keyFact: Availability",
+   "evidence": "NHS main page / side-effects page",
+   "url": "https://www.nhs.uk/medicines/apixaban/",
+   "action": "kept"
+  },
+  {
+   "id": "c47",
+   "classification": "supported",
+   "sentence": "keyFact: Taken",
+   "evidence": "NHS main page / side-effects page",
+   "url": "https://www.nhs.uk/medicines/apixaban/",
+   "action": "edited"
+  },
+  {
+   "id": "c48",
+   "classification": "supported",
+   "sentence": "keyFact: Main side effect",
+   "evidence": "NHS main page / side-effects page",
+   "url": "https://www.nhs.uk/medicines/apixaban/",
+   "action": "kept"
+  },
+  {
+   "id": "c49",
+   "classification": "supported",
+   "sentence": "keyFact: Carry",
+   "evidence": "NHS main page / side-effects page",
+   "url": "https://www.nhs.uk/medicines/apixaban/",
+   "action": "edited"
+  },
+  {
+   "id": "c50",
+   "classification": "supported",
+   "sentence": "keyFact: Alcohol",
+   "evidence": "NHS main page / side-effects page",
+   "url": "https://www.nhs.uk/medicines/apixaban/",
+   "action": "edited"
+  },
+  {
+   "id": "c51",
+   "classification": "unsupported",
+   "sentence": "keyFact: Urgent bleeding",
+   "evidence": "'999 or A&E for bleeding that will not stop; NHS 111 for red or black poo' not supported by NHS pages",
+   "url": "https://www.nhs.uk/medicines/apixaban/side-effects-of-apixaban/",
+   "action": "edited",
+   "newSentence": "NHS 111 for bleeding symptoms or a head injury; 999 or A&E for sudden severe headache, fits or sudden vision changes; 999 for a serious allergic reaction"
+  }
+ ],
+ "notes": "Routes to care: NHS main apixaban page says 111 for symptoms of bleeding, head injury or other serious side effects (updated more recently); the side-effects page says 999/A&E for sudden severe headache, fits, vision changes, numbness. Per-symptom routing (black poo, nosebleed length) exists only in trust leaflets, which disagree with each other, so was removed. Article now states both NHS pages' wording and says they differ. Uses section now matches NHS list. Breastfeeding reason came from SPS and was dropped. Missed-dose page URL for apixaban was not retrieved; cited anticoagulants dosage page instead (6-hour rule deliberately not published). Search summaries blend pages, so URL attribution within nhs.uk/medicines/apixaban/ pages is by page title/topic, not verbatim. Doubt: one textbook sentence kept (longer clotting); NHS wording is 'blood flows more easily, less likely to clot'. Final article ~900 words incl FAQs/key facts. medications.json consistent (it also says 111/head-injury needs urgent assessment)."
+}

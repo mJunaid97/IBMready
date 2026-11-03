@@ -1,0 +1,419 @@
+{
+ "id": "paracetamol",
+ "searchesUsed": 7,
+ "counts": {
+  "supported": 33,
+  "textbook": 1,
+  "unsupported": 19,
+  "wrong": 2,
+  "unsafe": 0,
+  "unchecked": 0
+ },
+ "claims": [
+  {
+   "id": "c01",
+   "classification": "supported",
+   "evidence": "Page title: 'painkiller for pain and high temperature'",
+   "url": "https://www.nhs.uk/medicines/paracetamol-for-adults/",
+   "action": "kept"
+  },
+  {
+   "id": "c02",
+   "classification": "unsupported",
+   "evidence": "'Mild to moderate' not in retrieved text; title says pain and high temperature",
+   "url": "https://www.nhs.uk/medicines/paracetamol-for-adults/",
+   "action": "edited",
+   "newSentence": "It is used to ease pain."
+  },
+  {
+   "id": "c03",
+   "classification": "unsupported",
+   "evidence": "Retrieval did not mention toothache or sore throat; joint swelling and cold/flu list not retrieved",
+   "url": "https://www.nhs.uk/medicines/paracetamol-for-adults/about-paracetamol-for-adults/",
+   "action": "removed"
+  },
+  {
+   "id": "c04",
+   "classification": "supported",
+   "evidence": "Most types can be bought from shops and pharmacies",
+   "url": "https://www.nhs.uk/medicines/paracetamol-for-adults/about-paracetamol-for-adults/",
+   "action": "kept"
+  },
+  {
+   "id": "c05",
+   "classification": "unsupported",
+   "evidence": "Retrieved: some types only on prescription, 1g tablets either way; 'for long-term pain' not retrieved",
+   "url": "https://www.nhs.uk/medicines/paracetamol-for-adults/about-paracetamol-for-adults/",
+   "action": "edited",
+   "newSentence": "Some types are only available on prescription."
+  },
+  {
+   "id": "c06",
+   "classification": "supported",
+   "evidence": "NHS page lists tablets and capsules and liquid (oral suspension); leaflet attribution dropped",
+   "url": "https://www.nhs.uk/medicines/paracetamol-for-adults/about-paracetamol-for-adults/",
+   "action": "edited",
+   "newSentence": "The NHS lists tablets and capsules, a liquid, tablets that are swallowed whole and dissolvable tablets."
+  },
+  {
+   "id": "c07",
+   "classification": "textbook",
+   "evidence": "Paracetamol and Codeine tablet SmPC retrieved; co-codamol = paracetamol plus codeine is plain fact",
+   "url": "https://www.medicines.org.uk/emc/product/11496/smpc",
+   "action": "kept"
+  },
+  {
+   "id": "c08",
+   "classification": "supported",
+   "evidence": "Avoid other paracetamol-containing products such as cold and flu remedies because of overdose risk",
+   "url": "https://www.nhs.uk/medicines/paracetamol-for-adults/about-paracetamol-for-adults/",
+   "action": "kept"
+  },
+  {
+   "id": "c09",
+   "classification": "supported",
+   "evidence": "Seems to work by blocking chemical messengers in the brain that signal pain",
+   "url": "https://www.nhs.uk/medicines/paracetamol-for-adults/common-questions-about-paracetamol-for-adults/",
+   "action": "kept"
+  },
+  {
+   "id": "c10",
+   "classification": "supported",
+   "evidence": "Also reduces a high temperature via messengers in brain area regulating temperature",
+   "url": "https://www.nhs.uk/medicines/paracetamol-for-adults/common-questions-about-paracetamol-for-adults/",
+   "action": "kept"
+  },
+  {
+   "id": "c11",
+   "classification": "supported",
+   "evidence": "Can take up to an hour to work; keeps working about 5 hours",
+   "url": "https://www.nhs.uk/medicines/paracetamol-for-adults/common-questions-about-paracetamol-for-adults/",
+   "action": "kept"
+  },
+  {
+   "id": "c12",
+   "classification": "supported",
+   "evidence": "You can eat and drink normally; can be taken on an empty stomach",
+   "url": "https://www.nhs.uk/medicines/paracetamol-for-adults/common-questions-about-paracetamol-for-adults/",
+   "action": "kept"
+  },
+  {
+   "id": "c13",
+   "classification": "supported",
+   "evidence": "SmPC interaction sections list drugs that change paracetamol handling (enzyme inducers, absorption changes)",
+   "url": "https://www.medicines.org.uk/emc/product/6694/smpc",
+   "action": "kept"
+  },
+  {
+   "id": "c14",
+   "classification": "unsupported",
+   "evidence": "SmPC: metoclopramide or domperidone speed up absorption; 'medicines that speed up the stomach' not retrieved",
+   "url": "https://www.medicines.org.uk/emc/product/8078/smpc",
+   "action": "edited",
+   "newSentence": "UK product information says that metoclopramide and domperidone make paracetamol be absorbed faster."
+  },
+  {
+   "id": "c15",
+   "classification": "supported",
+   "evidence": "Too much can damage the liver (NHS and NHS 111 Wales)",
+   "url": "https://www.nhs.uk/medicines/paracetamol-for-adults/common-questions-about-paracetamol-for-adults/",
+   "action": "kept"
+  },
+  {
+   "id": "c16",
+   "classification": "unsupported",
+   "evidence": "Retrieved: 'serious side effects are rare'; 'rarely causes side effects' not retrieved",
+   "url": "https://www.nhs.uk/medicines/paracetamol-for-adults/",
+   "action": "edited",
+   "newSentence": "The NHS says serious side effects of paracetamol are rare."
+  },
+  {
+   "id": "c17",
+   "classification": "supported",
+   "evidence": "Serious: allergic reaction (anaphylaxis), liver problems, problem with blood cells",
+   "url": "https://www.nhs.uk/medicines/paracetamol-for-adults/",
+   "action": "kept"
+  },
+  {
+   "id": "c18",
+   "classification": "unsupported",
+   "evidence": "NHS: swollen throat or tongue, raised itchy rash, difficulty breathing. 'Lips' and 'swallowing' not in NHS text; 999 or A&E advice came from NHS 111 Wales",
+   "url": "https://111.wales.nhs.uk/encyclopaedia/p/article/paracetamolforadults/",
+   "action": "edited",
+   "newSentence": "A swollen throat or tongue, a raised and itchy rash, or difficulty breathing can be signs of a serious allergic reaction (anaphylaxis), and NHS 111 Wales says to call 999 or go to A&E."
+  },
+  {
+   "id": "c19",
+   "classification": "supported",
+   "evidence": "Nausea and yellow skin or whites of eyes; harder to see on black or brown skin",
+   "url": "https://www.nhs.uk/medicines/paracetamol-for-adults/",
+   "action": "kept"
+  },
+  {
+   "id": "c20",
+   "classification": "supported",
+   "evidence": "Blood cell problem: bruising easily and nosebleeds",
+   "url": "https://www.nhs.uk/medicines/paracetamol-for-adults/",
+   "action": "kept"
+  },
+  {
+   "id": "c21",
+   "classification": "unsupported",
+   "evidence": "Signposting line was marked textbook; retrieved NHS text did not name this route. Only the Boots leaflet (advises contacting a doctor about unexpected bruising or bleeding) was retrieved",
+   "url": "https://www.medicines.org.uk/emc/product/10013/pil",
+   "action": "edited",
+   "newSentence": "A leaflet for a UK paracetamol brand advises contacting a doctor about unexpected bruising or bleeding."
+  },
+  {
+   "id": "c22",
+   "classification": "supported",
+   "evidence": "Extra dose unlikely to cause problems but important to get medical advice; can sometimes damage liver",
+   "url": "https://www.nhs.uk/medicines/paracetamol-for-adults/common-questions-about-paracetamol-for-adults/",
+   "action": "kept"
+  },
+  {
+   "id": "c23",
+   "classification": "supported",
+   "evidence": "Do not take with other products containing paracetamol",
+   "url": "https://www.nhs.uk/medicines/paracetamol-for-adults/about-paracetamol-for-adults/",
+   "action": "kept"
+  },
+  {
+   "id": "c24",
+   "classification": "supported",
+   "evidence": "Oral suspension SmPC: barbiturates, tricyclic antidepressants, alcohol may raise liver toxicity risk, especially after overdose",
+   "url": "https://www.medicines.org.uk/emc/product/6694/smpc",
+   "action": "kept"
+  },
+  {
+   "id": "c25",
+   "classification": "unsupported",
+   "evidence": "SmPC: prolonged regular use may enhance warfarin/coumarins; occasional doses no significant effect. 'Several days' not retrieved",
+   "url": "https://www.medicines.org.uk/emc/product/6694/smpc",
+   "action": "edited",
+   "newSentence": "Product information also says that prolonged regular use of paracetamol may enhance the effect of warfarin and related anticoagulants, raising the risk of bleeding, while occasional doses have no significant effect."
+  },
+  {
+   "id": "c26",
+   "classification": "supported",
+   "evidence": "NHS 111 Wales: warfarin listed, regular use raises bleeding risk, check with doctor or pharmacist",
+   "url": "https://111.wales.nhs.uk/encyclopaedia/p/article/paracetamolforadults/",
+   "action": "edited",
+   "newSentence": "NHS 111 Wales advises people who take warfarin to check with a doctor or pharmacist, because regular paracetamol can raise the risk of bleeding."
+  },
+  {
+   "id": "c27",
+   "classification": "supported",
+   "evidence": "Small amount of alcohol usually safe (word not reproduced; 'acceptable' used)",
+   "url": "https://www.nhs.uk/medicines/paracetamol-for-adults/common-questions-about-paracetamol-for-adults/",
+   "action": "kept"
+  },
+  {
+   "id": "c28",
+   "classification": "unsupported",
+   "evidence": "May not be safe with conditions such as liver problems retrieved; 'points to the leaflet' not retrieved",
+   "url": "https://www.nhs.uk/medicines/paracetamol-for-adults/common-questions-about-paracetamol-for-adults/",
+   "action": "edited",
+   "newSentence": "It adds that drinking may not be suitable for people with some conditions, such as liver problems."
+  },
+  {
+   "id": "c29",
+   "classification": "unsupported",
+   "evidence": "SmPC summary called heavy regular alcohol 'a risk factor' without saying for what; 'at overdose levels' not retrieved",
+   "url": "https://www.medicines.org.uk/emc/product/6694/smpc",
+   "action": "removed"
+  },
+  {
+   "id": "c30",
+   "classification": "supported",
+   "evidence": "Most adults can take it; not suitable for everyone",
+   "url": "https://www.nhs.uk/medicines/paracetamol-for-adults/who-can-and-cannot-take-paracetamol-for-adults/",
+   "action": "kept"
+  },
+  {
+   "id": "c31",
+   "classification": "unsupported",
+   "evidence": "Retrieved: allergic reaction, kidney or liver condition, drink alcohol heavily or binge drink; 'dependent on alcohol' not retrieved",
+   "url": "https://www.nhs.uk/medicines/paracetamol-for-adults/who-can-and-cannot-take-paracetamol-for-adults/",
+   "action": "edited",
+   "newSentence": "It lists people who have had an allergic reaction to it, people with kidney or liver conditions, and people who drink alcohol heavily or binge drink."
+  },
+  {
+   "id": "c32",
+   "classification": "supported",
+   "evidence": "111 Wales: check with doctor or pharmacist for low weight; NHS England page: may need lower dose. Weight threshold omitted",
+   "url": "https://111.wales.nhs.uk/encyclopaedia/p/article/paracetamolforadults/",
+   "action": "edited",
+   "newSentence": "NHS 111 Wales advises people with a low body weight to check with a doctor or pharmacist, and the NHS says a lower dose may be needed."
+  },
+  {
+   "id": "c33",
+   "classification": "supported",
+   "evidence": "111 Wales: can be taken in pregnancy and breastfeeding at recommended doses (the word 'safe' not used)",
+   "url": "https://111.wales.nhs.uk/encyclopaedia/p/article/paracetamolforadults/",
+   "action": "kept"
+  },
+  {
+   "id": "c34",
+   "classification": "unsupported",
+   "evidence": "Lowest effective amount, shortest time and brain-development studies not retrieved; retrieved pregnancy results were research papers, not product labels",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c35",
+   "classification": "unsupported",
+   "evidence": "SPS page was not returned by any search",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c36",
+   "classification": "supported",
+   "evidence": "As c12",
+   "url": "https://www.nhs.uk/medicines/paracetamol-for-adults/common-questions-about-paracetamol-for-adults/",
+   "action": "kept"
+  },
+  {
+   "id": "c37",
+   "classification": "supported",
+   "evidence": "As c11",
+   "url": "https://www.nhs.uk/medicines/paracetamol-for-adults/common-questions-about-paracetamol-for-adults/",
+   "action": "kept"
+  },
+  {
+   "id": "c38",
+   "classification": "unsupported",
+   "evidence": "Nothing retrieved about combined or special forms differing",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c39",
+   "classification": "supported",
+   "evidence": "As c22",
+   "url": "https://www.nhs.uk/medicines/paracetamol-for-adults/common-questions-about-paracetamol-for-adults/",
+   "action": "kept"
+  },
+  {
+   "id": "c40",
+   "classification": "supported",
+   "evidence": "NHS hospital leaflets: many people feel fine in early stages of overdose; NHS 111 Wales: contact 111 even if you feel well",
+   "url": "https://www.uhsussex.nhs.uk/resources/paracetamol-overdose-emergency-department-leaflet/",
+   "action": "edited",
+   "newSentence": "NHS hospital leaflets say many people feel well in the early stages of an overdose."
+  },
+  {
+   "id": "c41",
+   "classification": "wrong",
+   "evidence": "NHS says call 111 if more taken than the packet says; if told to go to A&E do not drive, ask someone or call 999 for an ambulance. The sentence made 999/A&E the first route for any suspected overdose",
+   "url": "https://www.nhs.uk/medicines/paracetamol-for-adults/common-questions-about-paracetamol-for-adults/",
+   "action": "edited",
+   "newSentence": "The NHS says not to drive to A&E: ask someone else to drive, or call 999 for an ambulance."
+  },
+  {
+   "id": "c42",
+   "classification": "unsupported",
+   "evidence": "Signposting line marked textbook; NHS names NHS 111 (not 'or a GP') for extra doses",
+   "url": "https://www.nhs.uk/medicines/paracetamol-for-adults/common-questions-about-paracetamol-for-adults/",
+   "action": "edited",
+   "newSentence": "It advises calling NHS 111 if more has been taken than the packet or leaflet says, even if the person feels well."
+  },
+  {
+   "id": "c43",
+   "classification": "supported",
+   "evidence": "UK NHS guidance says paracetamol can be taken regularly for many years if the recommended dose is not exceeded (source uses 'safe'; not published)",
+   "url": "https://www.nhs.uk/medicines/paracetamol-for-adults/common-questions-about-paracetamol-for-adults/",
+   "action": "kept"
+  },
+  {
+   "id": "c44",
+   "classification": "unsupported",
+   "evidence": "'For ongoing pain' not retrieved; retrieved only that some types need a prescription",
+   "url": "https://www.nhs.uk/medicines/paracetamol-for-adults/about-paracetamol-for-adults/",
+   "action": "edited",
+   "newSentence": "Some types are only available on prescription."
+  },
+  {
+   "id": "c45",
+   "classification": "supported",
+   "evidence": "NHS: do not take for more than 3 days unless a doctor advises (number omitted)",
+   "url": "https://www.nhs.uk/medicines/paracetamol-for-adults/about-paracetamol-for-adults/",
+   "action": "kept"
+  },
+  {
+   "id": "c46",
+   "classification": "unsupported",
+   "evidence": "Link between low weight, heavy drinking and liver harm not retrieved; a UK guideline said low weight alone is not a marker of toxicity risk. Retrieved: not suitable for heavy drinkers; lower dose may be needed under a weight",
+   "url": "https://www.nhs.uk/medicines/paracetamol-for-adults/who-can-and-cannot-take-paracetamol-for-adults/",
+   "action": "edited",
+   "newSentence": "The NHS also says it is not suitable for people who drink alcohol heavily, and that people with a low body weight may need a lower dose."
+  },
+  {
+   "id": "c47",
+   "classification": "supported",
+   "evidence": "No good evidence paracetamol reduces fertility in men or women",
+   "url": "https://111.wales.nhs.uk/encyclopaedia/p/article/paracetamolforadults/",
+   "action": "kept"
+  },
+  {
+   "id": "c48",
+   "classification": "unsupported",
+   "evidence": "Contraception and driving: nothing retrieved in two searches",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c49",
+   "classification": "supported",
+   "evidence": "Can be taken in pregnancy and breastfeeding at recommended doses",
+   "url": "https://111.wales.nhs.uk/encyclopaedia/p/article/paracetamolforadults/",
+   "action": "kept"
+  },
+  {
+   "id": "c50",
+   "classification": "supported",
+   "evidence": "As c01",
+   "url": "https://www.nhs.uk/medicines/paracetamol-for-adults/",
+   "action": "kept"
+  },
+  {
+   "id": "c51",
+   "classification": "unsupported",
+   "evidence": "Prescription for 'long-term pain' not retrieved",
+   "url": "https://www.nhs.uk/medicines/paracetamol-for-adults/about-paracetamol-for-adults/",
+   "action": "edited",
+   "newSentence": "Sold in pharmacies and shops; some types are available on prescription"
+  },
+  {
+   "id": "c52",
+   "classification": "supported",
+   "evidence": "As c11",
+   "url": "https://www.nhs.uk/medicines/paracetamol-for-adults/common-questions-about-paracetamol-for-adults/",
+   "action": "kept"
+  },
+  {
+   "id": "c53",
+   "classification": "supported",
+   "evidence": "As c15",
+   "url": "https://www.nhs.uk/medicines/paracetamol-for-adults/common-questions-about-paracetamol-for-adults/",
+   "action": "kept"
+  },
+  {
+   "id": "c54",
+   "classification": "wrong",
+   "evidence": "NHS advises calling 111 for suspected overdose; A&E/999 only if told to go or severe symptoms",
+   "url": "https://www.nhs.uk/medicines/paracetamol-for-adults/common-questions-about-paracetamol-for-adults/",
+   "action": "edited",
+   "newSentence": "The NHS advises calling NHS 111, even if the person feels well"
+  },
+  {
+   "id": "c55",
+   "classification": "supported",
+   "evidence": "Cold and flu remedies carry paracetamol; co-codamol is paracetamol plus codeine",
+   "url": "https://www.nhs.uk/medicines/paracetamol-for-adults/about-paracetamol-for-adults/",
+   "action": "kept"
+  }
+ ],
+ "notes": "Claims c01-c08 section 1, c09-c15 section 2, c16-c22 section 3, c23-c29 section 4, c30-c35 section 5, c36-c38 FAQ1, c39-c42 FAQ2, c43-c46 FAQ3, c47-c49 FAQ4, c50-c55 keyFacts. Search summaries blend pages, so URLs are the page named in the result; the NHS side-effects subpage was never returned, so its claims are cited to the main NHS page and NHS 111 Wales. Both 'textbook' signposting sentences were not found in NHS text and were rewritten to what was retrieved (NHS: call 111 for extra dose; Boots leaflet: contact a doctor about bruising). The overdose 999/A&E line was wrong as written (NHS says 111 first; 999 or ambulance only when told to go to A&E). 'Can be taken regularly for many years' is kept as a paraphrase of the NHS statement that uses 'safe'; the word safe is not published, reviewer may prefer to drop it. Final article is 4 sections (merged sections 1+2) because cuts left 5 sections short of 110 words; it is about 880 words (sections and FAQs). Removed unverified: toothache/sore-throat list, pregnancy labelling and brain-development studies, SPS breastfeeding line, contraception and driving, heavy-drinking-at-overdose line. Existing medications.json entry not changed; note its text 'gentle on the stomach' and dose figures were not checked here."
+}

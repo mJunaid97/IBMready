@@ -1,0 +1,632 @@
+{
+ "id": "stroke",
+ "searchesUsed": 16,
+ "counts": {
+  "supported": 36,
+  "textbook": 0,
+  "unsupported": 37,
+  "wrong": 0,
+  "unsafe": 0,
+  "unchecked": 0
+ },
+ "claims": [
+  {
+   "id": "c01",
+   "classification": "supported",
+   "evidence": "NHS stroke page: FAST (face, arms, speech, time to call 999).",
+   "url": "https://www.nhs.uk/conditions/stroke/",
+   "action": "kept",
+   "newSentence": "The NHS uses the FAST test to describe the main signs of a stroke."
+  },
+  {
+   "id": "c02",
+   "classification": "supported",
+   "evidence": "NHS: FAST (face, arms, speech, time to call 999).",
+   "url": "https://www.nhs.uk/conditions/stroke/",
+   "action": "kept",
+   "newSentence": "FAST stands for face, arms, speech and time to call 999."
+  },
+  {
+   "id": "c03",
+   "classification": "unsupported",
+   "evidence": "NHS: main signs are facial droop, arm weakness and slurred speech.",
+   "url": "https://www.nhs.uk/conditions/stroke/",
+   "action": "edited",
+   "newSentence": "The main signs are facial droop, arm weakness and slurred speech."
+  },
+  {
+   "id": "c04",
+   "classification": "supported",
+   "evidence": "NHS symptoms page lists weakness or numbness down one side, blurred vision/sight loss, confusion and memory loss.",
+   "url": "https://www.nhs.uk/conditions/stroke/symptoms/",
+   "action": "kept",
+   "newSentence": "Other signs include weakness or numbness down one side of the body, blurred vision, and confusion and memory loss."
+  },
+  {
+   "id": "c05",
+   "classification": "unsupported",
+   "evidence": "NHS: call 999 even if signs have stopped; assessment in hospital should still be done.",
+   "url": "https://www.nhs.uk/conditions/stroke/",
+   "action": "edited",
+   "newSentence": "It says to call 999 even if the symptoms stop, because an assessment in hospital is still needed."
+  },
+  {
+   "id": "c06",
+   "classification": "unsupported",
+   "evidence": "NHS stroke page: medical emergency; call 999.",
+   "url": "https://www.nhs.uk/conditions/stroke/",
+   "action": "edited",
+   "newSentence": "The NHS describes a stroke as a medical emergency and says to call 999 if a stroke is suspected."
+  },
+  {
+   "id": "c07",
+   "classification": "supported",
+   "evidence": "Stroke Association TIA page: same symptoms as a stroke, usually a few minutes to a few hours.",
+   "url": "https://www.stroke.org.uk/stroke/type/tia",
+   "action": "edited",
+   "newSentence": "A transient ischaemic attack, or TIA, causes symptoms like those of a stroke, and the Stroke Association says they usually last from a few minutes to a few hours."
+  },
+  {
+   "id": "c08",
+   "classification": "supported",
+   "evidence": "CDC About Stroke: no way to know in the beginning whether symptoms are from a TIA or a major type of stroke. NHS: call 999 even if symptoms stop.",
+   "url": "https://www.cdc.gov/stroke/about/index.html",
+   "action": "edited",
+   "newSentence": "The CDC says there is no way to know at the start whether symptoms are from a TIA or from a major type of stroke."
+  },
+  {
+   "id": "c09",
+   "classification": "supported",
+   "evidence": "NHS inform: ischaemic = blood supply stopped by a blood clot, most cases.",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/brain-nerves-and-spinal-cord/stroke-and-tia-transient-ischaemic-attack/stroke",
+   "action": "edited",
+   "newSentence": "Ischaemic strokes happen when the blood supply is stopped by a blood clot, and NHS inform says this is the cause in most cases."
+  },
+  {
+   "id": "c10",
+   "classification": "supported",
+   "evidence": "NHS inform: haemorrhagic = weakened blood vessel supplying the brain bursts.",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/brain-nerves-and-spinal-cord/stroke-and-tia-transient-ischaemic-attack/stroke",
+   "action": "kept",
+   "newSentence": "Haemorrhagic strokes happen when a weakened blood vessel supplying the brain bursts."
+  },
+  {
+   "id": "c11",
+   "classification": "unsupported",
+   "evidence": "NHS: bleeding can occur inside the brain tissue or in the space around it.",
+   "url": "https://www.nhs.uk/conditions/stroke/",
+   "action": "edited",
+   "newSentence": "The NHS says bleeding can occur inside the brain tissue or in the space around it."
+  },
+  {
+   "id": "c12",
+   "classification": "supported",
+   "evidence": "NHS inform: TIA or mini stroke is a temporary disruption of blood supply to part of the brain.",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/brain-nerves-and-spinal-cord/stroke-and-tia-transient-ischaemic-attack/stroke",
+   "action": "edited",
+   "newSentence": "A TIA is also called a mini-stroke because the symptoms are temporary."
+  },
+  {
+   "id": "c13",
+   "classification": "supported",
+   "evidence": "WHO fact sheet: TIA usually lasts only a few minutes and does not cause long-term damage.",
+   "url": "https://www.who.int/news-room/fact-sheets/detail/stroke",
+   "action": "edited",
+   "newSentence": "The WHO says a TIA usually lasts only a few minutes and does not cause long-term damage."
+  },
+  {
+   "id": "c14",
+   "classification": "unsupported",
+   "evidence": "Stroke Association: a TIA is a warning sign. CDC: brief, but a sign of a serious condition that will not go away without medical help.",
+   "url": "https://www.stroke.org.uk/stroke/type/tia",
+   "action": "edited",
+   "newSentence": "The Stroke Association describes a TIA as a warning sign, and the CDC calls it a sign of a serious condition that will not go away without medical help."
+  },
+  {
+   "id": "c15",
+   "classification": "unsupported",
+   "evidence": "Author meta-claim about \"some sources\" not retrieved.",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c16",
+   "classification": "supported",
+   "evidence": "NHS stroke page risk factors: high blood pressure, diabetes, atrial fibrillation, high cholesterol.",
+   "url": "https://www.nhs.uk/conditions/stroke/",
+   "action": "edited",
+   "newSentence": "The NHS lists high blood pressure, diabetes, atrial fibrillation and high cholesterol among the risk factors for stroke."
+  },
+  {
+   "id": "c17",
+   "classification": "supported",
+   "evidence": "NHS diagnosis page: blood tests, scans and other checks.",
+   "url": "https://www.nhs.uk/conditions/stroke/diagnosis/",
+   "action": "edited",
+   "newSentence": "The NHS says a stroke is diagnosed mainly through blood tests, scans and other checks."
+  },
+  {
+   "id": "c18",
+   "classification": "supported",
+   "evidence": "NHS inform: scan establishes whether a clot or a burst vessel caused it, which part of the brain, and how severe.",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/brain-nerves-and-spinal-cord/stroke-and-tia-transient-ischaemic-attack/stroke",
+   "action": "edited",
+   "newSentence": "The scan shows whether a clot or a burst blood vessel caused the stroke, which part of the brain is affected and how severe it is."
+  },
+  {
+   "id": "c19",
+   "classification": "unsupported",
+   "evidence": "Not in retrieved text.",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c20",
+   "classification": "unsupported",
+   "evidence": "Not in retrieved text.",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c21",
+   "classification": "unsupported",
+   "evidence": "Not in retrieved text.",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c22",
+   "classification": "unsupported",
+   "evidence": "Stroke Association: brain scan ideally within an hour of arriving at hospital if possible; wording kept to words, no number.",
+   "url": "https://www.stroke.org.uk/what-is-stroke/diagnosis-to-discharge",
+   "action": "edited",
+   "newSentence": "The Stroke Association says a brain scan should ideally happen soon after arrival at hospital."
+  },
+  {
+   "id": "c23",
+   "classification": "supported",
+   "evidence": "NHS diagnosis: blood tests, CT, MRI and ultrasound scans to check in and around the brain, and an ECG to check the heart.",
+   "url": "https://www.nhs.uk/conditions/stroke/diagnosis/",
+   "action": "edited",
+   "newSentence": "It lists CT scans, MRI scans and ultrasound scans to check in and around the brain, and an electrocardiogram (ECG) to check the heart."
+  },
+  {
+   "id": "c24",
+   "classification": "unsupported",
+   "evidence": "Carotid Doppler / checks for diabetes and cholesterol not reliably attributable to a retrieved page.",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c25",
+   "classification": "supported",
+   "evidence": "NHS: treatment depends on stroke type.",
+   "url": "https://www.nhs.uk/conditions/stroke/",
+   "action": "edited",
+   "newSentence": "The NHS says treatment depends on the type of stroke."
+  },
+  {
+   "id": "c26",
+   "classification": "supported",
+   "evidence": "NHS treatment page: clot-dissolving medicine (thrombolysis); thrombectomy or draining fluid from the brain; procedure to stop pressure building up in the skull.",
+   "url": "https://www.nhs.uk/conditions/stroke/treatment/",
+   "action": "edited",
+   "newSentence": "Early treatment may include clot-dissolving medicine, surgery to remove a clot or drain fluid, and a procedure to ease pressure inside the skull."
+  },
+  {
+   "id": "c27",
+   "classification": "supported",
+   "evidence": "Stroke Association ischaemic treatments: thrombolysis uses clot-busting medicine to break up clots and restore blood flow.",
+   "url": "https://www.stroke.org.uk/stroke/types/ischaemic/treatments",
+   "action": "kept",
+   "newSentence": "The Stroke Association says thrombolysis uses a clot-busting medicine to break up clots and restore blood flow."
+  },
+  {
+   "id": "c28",
+   "classification": "supported",
+   "evidence": "Stroke Association: thrombectomy removes the blood clot to help reduce brain damage by restoring blood flow.",
+   "url": "https://www.stroke.org.uk/stroke/types/ischaemic/treatments",
+   "action": "kept",
+   "newSentence": "Thrombectomy removes the blood clot to help reduce brain damage by restoring blood flow."
+  },
+  {
+   "id": "c29",
+   "classification": "supported",
+   "evidence": "NHS inform: effective at treating ischaemic strokes caused by a blood clot in a large artery in the brain.",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/brain-nerves-and-spinal-cord/stroke-and-tia-transient-ischaemic-attack/treatment-for-stroke/",
+   "action": "edited",
+   "newSentence": "NHS inform says it is effective for ischaemic strokes caused by a clot in a large artery in the brain."
+  },
+  {
+   "id": "c30",
+   "classification": "unsupported",
+   "evidence": "NHS: alteplase most effective if started as soon as possible after the stroke. (Draft claim about thrombectomy benefit falling over time was not retrieved.)",
+   "url": "https://www.nhs.uk/conditions/stroke/treatment/",
+   "action": "edited",
+   "newSentence": "The NHS says clot-dissolving treatment is most effective when started as soon as possible after the stroke."
+  },
+  {
+   "id": "c31",
+   "classification": "unsupported",
+   "evidence": "Not in retrieved text.",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c32",
+   "classification": "unsupported",
+   "evidence": "NHS inform: combination of treatments to reduce risk of another stroke; long-term prevention can involve anticoagulants or antiplatelets and statins (search summary blends NHS pages). Medicines to lower blood pressure not retrieved.",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/brain-nerves-and-spinal-cord/stroke-and-tia-transient-ischaemic-attack/treatment-for-stroke/",
+   "action": "edited",
+   "newSentence": "NHS inform says a combination of treatments is usually recommended to reduce the risk of another stroke, and long-term prevention can involve anticoagulants or antiplatelets and statins to lower cholesterol."
+  },
+  {
+   "id": "c33",
+   "classification": "supported",
+   "evidence": "Stroke Association: most people given blood-thinning medication to help prevent clots; most need it for life.",
+   "url": "https://www.stroke.org.uk/stroke/types/ischaemic/treatments",
+   "action": "edited",
+   "newSentence": "The Stroke Association says most people who have an ischaemic stroke are given blood-thinning medication to help prevent clots, and that most will need it for life."
+  },
+  {
+   "id": "c34",
+   "classification": "supported",
+   "evidence": "NHS: it can take days, weeks, months or years to recover.",
+   "url": "https://www.nhs.uk/conditions/stroke/",
+   "action": "edited",
+   "newSentence": "The NHS says it can take days, weeks, months or years to recover from a stroke."
+  },
+  {
+   "id": "c35",
+   "classification": "unsupported",
+   "evidence": "Not in retrieved text.",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c36",
+   "classification": "supported",
+   "evidence": "NHS: some recover within days or weeks; for others months or years and may mean making life changes. \"Little impact on life\" not retrieved.",
+   "url": "https://www.nhs.uk/conditions/stroke/",
+   "action": "edited",
+   "newSentence": "Some people recover within days or weeks, while for others recovery can take months or years and may mean making life changes."
+  },
+  {
+   "id": "c37",
+   "classification": "unsupported",
+   "evidence": "NHS inform life after a stroke describes physiotherapy, occupational therapy and speech and language therapy. \"Central to progress\" not retrieved.",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/brain-nerves-and-spinal-cord/stroke-and-tia-transient-ischaemic-attack/life-after-a-stroke",
+   "action": "edited",
+   "newSentence": "NHS inform describes several kinds of rehabilitation."
+  },
+  {
+   "id": "c38",
+   "classification": "unsupported",
+   "evidence": "NHS inform: physiotherapy often involves exercises to improve muscle strength to overcome walking difficulties.",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/brain-nerves-and-spinal-cord/stroke-and-tia-transient-ischaemic-attack/life-after-a-stroke",
+   "action": "edited",
+   "newSentence": "Physiotherapy often involves exercises to improve muscle strength to overcome walking difficulties."
+  },
+  {
+   "id": "c39",
+   "classification": "unsupported",
+   "evidence": "NHS inform: SLT assesses communication and swallowing; might provide treatment to manage swallowing problems.",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/brain-nerves-and-spinal-cord/stroke-and-tia-transient-ischaemic-attack/life-after-a-stroke",
+   "action": "edited",
+   "newSentence": "Speech and language therapists help with communication and swallowing problems."
+  },
+  {
+   "id": "c40",
+   "classification": "unsupported",
+   "evidence": "\"Recommend ways to make eating safe\" not retrieved.",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c41",
+   "classification": "supported",
+   "evidence": "NHS pages (search summary): rehabilitation usually starts in hospital and can continue at home or in the community.",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/brain-nerves-and-spinal-cord/stroke-and-tia-transient-ischaemic-attack/life-after-a-stroke",
+   "action": "edited",
+   "newSentence": "Rehabilitation usually starts in hospital and can continue at home or in the community."
+  },
+  {
+   "id": "c42",
+   "classification": "unsupported",
+   "evidence": "Not retrieved.",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c43",
+   "classification": "unsupported",
+   "evidence": "Team membership list not retrieved.",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c44",
+   "classification": "unsupported",
+   "evidence": "WHO fact sheet: dysphagia and aspiration pneumonia (a lung infection) among complications.",
+   "url": "https://www.who.int/news-room/fact-sheets/detail/stroke",
+   "action": "edited",
+   "newSentence": "The WHO lists trouble swallowing (dysphagia) and aspiration pneumonia, a lung infection, among the complications of stroke."
+  },
+  {
+   "id": "c45",
+   "classification": "unsupported",
+   "evidence": "Stroke Association (search summary): immobility raises risk of clots forming in leg veins. \"Poor circulation\" not retrieved.",
+   "url": "https://www.stroke.org.uk/stroke/types/ischaemic/treatments",
+   "action": "edited",
+   "newSentence": "The Stroke Association says being immobile raises the risk of blood clots forming in the leg veins."
+  },
+  {
+   "id": "c46",
+   "classification": "unsupported",
+   "evidence": "WHO fact-sheet snippet returned did not show pressure ulcers, contracture, spasticity or shoulder pain.",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c47",
+   "classification": "unsupported",
+   "evidence": "Aphasia/dysphasia wording not carried by a retrieved page; language-problem sentence kept in rewritten form (new claim).",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c48",
+   "classification": "unsupported",
+   "evidence": "Replaced (see c49 and new claims).",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c49",
+   "classification": "supported",
+   "evidence": "NHS inform life after stroke: extreme tiredness can last months or even years; bewilderment, anger, frustration common. Replaces unsupported depression/anxiety/laughing-crying attribution (c48).",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/brain-nerves-and-spinal-cord/stroke-and-tia-transient-ischaemic-attack/life-after-a-stroke",
+   "action": "edited",
+   "newSentence": "NHS inform says tiredness can be extreme and can last months or even years, and that bewilderment, anger and frustration are also common."
+  },
+  {
+   "id": "c50",
+   "classification": "supported",
+   "evidence": "Stroke Association emotional changes: at least one third of survivors have some form of depression within the first year.",
+   "url": "https://www.stroke.org.uk/stroke/effects/emotional-changes",
+   "action": "edited",
+   "newSentence": "The Stroke Association says depression is common after a stroke and that at least one third of survivors have some form of it within the first year."
+  },
+  {
+   "id": "c51",
+   "classification": "unsupported",
+   "evidence": "Stroke Association guide title: Stroke Helpline 0303 3033 100. \"Raise low mood with a stroke nurse or GP\" not retrieved.",
+   "url": "https://www.stroke.org.uk/sites/default/files/publications/ischaemic_stroke_guide.pdf",
+   "action": "edited",
+   "newSentence": "The Stroke Association lists its Stroke Helpline as 0303 3033 100."
+  },
+  {
+   "id": "c52",
+   "classification": "supported",
+   "evidence": "NHS: FAST (face, arms, speech, time to call 999).",
+   "url": "https://www.nhs.uk/conditions/stroke/",
+   "action": "kept",
+   "newSentence": "FAST stands for face, arms, speech and time to call 999, the NHS says."
+  },
+  {
+   "id": "c53",
+   "classification": "unsupported",
+   "evidence": "Retrieved: facial droop, arm weakness, slurred speech; \"keeping both arms raised\" not in retrieved text.",
+   "url": "https://www.nhs.uk/conditions/stroke/",
+   "action": "edited",
+   "newSentence": "The main signs are facial droop, arm weakness and slurred speech."
+  },
+  {
+   "id": "c54",
+   "classification": "unsupported",
+   "evidence": "NHS: call 999 even if signs stop; \"symptoms can pass quickly\" gloss not retrieved.",
+   "url": "https://www.nhs.uk/conditions/stroke/",
+   "action": "edited",
+   "newSentence": "The NHS says to call 999 even if the symptoms stop, because an assessment in hospital is still needed."
+  },
+  {
+   "id": "c55",
+   "classification": "supported",
+   "evidence": "Stroke Association TIA page: same symptoms as stroke, usually a few minutes to a few hours.",
+   "url": "https://www.stroke.org.uk/stroke/type/tia",
+   "action": "edited",
+   "newSentence": "A TIA, or mini-stroke, has symptoms like those of a stroke, but the Stroke Association says they usually last from a few minutes to a few hours."
+  },
+  {
+   "id": "c56",
+   "classification": "supported",
+   "evidence": "CDC: no way to know in the beginning whether TIA or major stroke; NHS: call 999 even if symptoms stop.",
+   "url": "https://www.cdc.gov/stroke/about/index.html",
+   "action": "edited",
+   "newSentence": "The CDC says there is no way to know at the start whether symptoms are from a TIA or a major type of stroke."
+  },
+  {
+   "id": "c57",
+   "classification": "unsupported",
+   "evidence": "Stroke Association: TIA is a warning sign; CDC \"future stroke\" wording not carried by retrieved text.",
+   "url": "https://www.stroke.org.uk/stroke/type/tia",
+   "action": "edited",
+   "newSentence": "The Stroke Association describes a TIA as a warning sign."
+  },
+  {
+   "id": "c58",
+   "classification": "unsupported",
+   "evidence": "NHS lists CT, MRI and ultrasound scans; \"two main types\" not carried by retrieved NHS inform text.",
+   "url": "https://www.nhs.uk/conditions/stroke/diagnosis/",
+   "action": "edited",
+   "newSentence": "The NHS lists CT scans, MRI scans and ultrasound scans to check in and around the brain, along with blood tests and an electrocardiogram (ECG) to check the heart."
+  },
+  {
+   "id": "c59",
+   "classification": "unsupported",
+   "evidence": "\"Depends on the symptoms\" and \"some people have both\" not in retrieved NHS/NHS inform text.",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/brain-nerves-and-spinal-cord/stroke-and-tia-transient-ischaemic-attack/stroke",
+   "action": "removed"
+  },
+  {
+   "id": "c60",
+   "classification": "supported",
+   "evidence": "NHS inform: scan establishes clot vs burst vessel, which part of brain, how severe.",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/brain-nerves-and-spinal-cord/stroke-and-tia-transient-ischaemic-attack/stroke",
+   "action": "edited",
+   "newSentence": "NHS inform says the scan shows whether a clot or a burst blood vessel caused the stroke, which part of the brain is affected and how severe it is."
+  },
+  {
+   "id": "c61",
+   "classification": "supported",
+   "evidence": "NHS: days, weeks, months or years.",
+   "url": "https://www.nhs.uk/conditions/stroke/",
+   "action": "edited",
+   "newSentence": "The NHS says it can take days, weeks, months or years to recover from a stroke."
+  },
+  {
+   "id": "c62",
+   "classification": "unsupported",
+   "evidence": "\"Little impact on life\" not retrieved.",
+   "url": "https://www.nhs.uk/conditions/stroke/",
+   "action": "edited",
+   "newSentence": "Some people recover within days or weeks, while for others recovery can take months or years and may mean making life changes."
+  },
+  {
+   "id": "c63",
+   "classification": "supported",
+   "evidence": "NHS: for others months or years and may mean making life changes.",
+   "url": "https://www.nhs.uk/conditions/stroke/",
+   "action": "kept",
+   "newSentence": "For others it can take months or years and may mean making life changes."
+  },
+  {
+   "id": "c64",
+   "classification": "unsupported",
+   "evidence": "\"Central to progress\" not retrieved; NHS inform describes the therapies.",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/brain-nerves-and-spinal-cord/stroke-and-tia-transient-ischaemic-attack/life-after-a-stroke",
+   "action": "edited",
+   "newSentence": "NHS inform describes rehabilitation from physiotherapists, occupational therapists and speech and language therapists."
+  },
+  {
+   "id": "c65",
+   "classification": "unsupported",
+   "evidence": "NHS inform excerpt carried tiredness, anger, frustration, bewilderment; depression/anxiety/laughing-crying not attributable to it.",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/brain-nerves-and-spinal-cord/stroke-and-tia-transient-ischaemic-attack/life-after-a-stroke",
+   "action": "edited",
+   "newSentence": "NHS inform says anger, frustration and bewilderment are also common, and that medicines and psychological therapies can help some people."
+  },
+  {
+   "id": "c66",
+   "classification": "supported",
+   "evidence": "Stroke Association: depression can appear at any point or return.",
+   "url": "https://www.stroke.org.uk/stroke/effects/emotional-changes",
+   "action": "edited",
+   "newSentence": "The Stroke Association says depression is common after a stroke, with at least one third of survivors having some form of it within the first year, and that it can appear at any point or return."
+  },
+  {
+   "id": "c67",
+   "classification": "unsupported",
+   "evidence": "\"Raise with stroke nurse or GP\" not retrieved.",
+   "url": "https://www.stroke.org.uk/stroke/effects/emotional-changes",
+   "action": "removed"
+  },
+  {
+   "id": "c68",
+   "classification": "supported",
+   "evidence": "NHS stroke page describes ischaemic, haemorrhagic and TIA.",
+   "url": "https://www.nhs.uk/conditions/stroke/",
+   "action": "kept",
+   "newSentence": "Ischaemic (a blocked blood supply), haemorrhagic (a burst blood vessel) and TIA (temporary symptoms)"
+  },
+  {
+   "id": "c69",
+   "classification": "supported",
+   "evidence": "NHS: FAST.",
+   "url": "https://www.nhs.uk/conditions/stroke/",
+   "action": "kept",
+   "newSentence": "FAST: face, arms, speech, time to call 999"
+  },
+  {
+   "id": "c70",
+   "classification": "supported",
+   "evidence": "NHS: call 999 even if stopped.",
+   "url": "https://www.nhs.uk/conditions/stroke/",
+   "action": "kept",
+   "newSentence": "Call 999, even if symptoms pass"
+  },
+  {
+   "id": "c71",
+   "classification": "unsupported",
+   "evidence": "NHS lists CT, MRI and ultrasound; \"main brain scans CT and MRI\" not carried.",
+   "url": "https://www.nhs.uk/conditions/stroke/diagnosis/",
+   "action": "edited",
+   "newSentence": "CT, MRI and ultrasound"
+  },
+  {
+   "id": "c72",
+   "classification": "supported",
+   "evidence": "NHS treatment: clot-dissolving medicine, thrombectomy/drain fluid, procedure for skull pressure.",
+   "url": "https://www.nhs.uk/conditions/stroke/treatment/",
+   "action": "kept",
+   "newSentence": "Clot-dissolving medicine, clot removal surgery, procedures to relieve pressure in the skull"
+  },
+  {
+   "id": "c73",
+   "classification": "supported",
+   "evidence": "NHS: days, weeks, months or years.",
+   "url": "https://www.nhs.uk/conditions/stroke/",
+   "action": "kept",
+   "newSentence": "Varies widely, from days or weeks to months or years"
+  },
+  {
+   "id": "n01",
+   "classification": "supported",
+   "evidence": "NHS symptoms page also includes difficulty speaking or finding words, dizziness, severe headache, nausea or vomiting.",
+   "url": "https://www.nhs.uk/conditions/stroke/symptoms/",
+   "action": "added",
+   "newSentence": "The NHS also lists difficulty speaking or finding words, dizziness, a severe headache, and nausea or vomiting among the symptoms."
+  },
+  {
+   "id": "n02",
+   "classification": "supported",
+   "evidence": "NHLBI causes page: blockage usually a piece of plaque built up in arteries (search summary).",
+   "url": "https://www.nhlbi.nih.gov/health/stroke/causes",
+   "action": "added",
+   "newSentence": "The NHLBI says the blockage is usually caused by a piece of plaque that builds up in the arteries during some cardiovascular diseases."
+  },
+  {
+   "id": "n03",
+   "classification": "supported",
+   "evidence": "NHS inform: even if physical symptoms are obvious, you should have a brain scan.",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/brain-nerves-and-spinal-cord/stroke-and-tia-transient-ischaemic-attack/stroke",
+   "action": "added",
+   "newSentence": "NHS inform says that even when the physical signs of a stroke are obvious, a brain scan is needed."
+  },
+  {
+   "id": "n04",
+   "classification": "supported",
+   "evidence": "NHS inform: occupational therapists assess ability to carry out everyday tasks, can help adapt home or suggest equipment.",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/brain-nerves-and-spinal-cord/stroke-and-tia-transient-ischaemic-attack/life-after-a-stroke",
+   "action": "added",
+   "newSentence": "Occupational therapists assess a person’s ability to carry out everyday tasks and can help adapt the home or suggest equipment to make tasks easier."
+  },
+  {
+   "id": "n05",
+   "classification": "supported",
+   "evidence": "NHS inform: language problems can affect speaking, understanding, reading and writing.",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/brain-nerves-and-spinal-cord/stroke-and-tia-transient-ischaemic-attack/life-after-a-stroke",
+   "action": "added",
+   "newSentence": "NHS inform notes that problems with language can affect speaking, understanding, reading and writing."
+  },
+  {
+   "id": "n06",
+   "classification": "supported",
+   "evidence": "NHS inform: medicines and psychological therapies like counselling or CBT can help some people.",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/brain-nerves-and-spinal-cord/stroke-and-tia-transient-ischaemic-attack/life-after-a-stroke",
+   "action": "added",
+   "newSentence": "NHS inform says medicines and psychological therapies, such as counselling or cognitive behavioural therapy (CBT), can help some people."
+  }
+ ],
+ "notes": "Searches used: 16 (cap). Summaries blend pages, so some attributions are to the page whose title matched the query; marked in claim evidence. Textbook: none used. Not retrievable from allowed hosts: WHO complications list beyond dysphagia/aspiration pneumonia (snippet cut off), carotid ultrasound, DVT page-level source (Stroke Association via summary). Draft first-pass counts: 37 of 73 sentences needed edit or removal. EXISTING PAGE ENTRY (not edited): (1) definition says ischaemic is 85%: NHLBI result said roughly 87% (a Nigerian study ~88%); 85% not supported by anything retrieved. (2) overview 'Brain tissue dies within minutes' and 'works only in the first hours' not retrieved; NHS says clot-dissolving treatment is most effective as soon as possible. (3) diagnosis: 'Immediate CT', 'CT or MR angiography', blood glucose 'to exclude hypoglycaemia', 'echocardiography' and 'carotid ultrasound' not retrieved from NHS pages (NHS lists blood tests, CT, MRI, ultrasound, ECG); also a number-free but unsourced phrase. (4) treatment: 4.5 hours for thrombolysis and ~6 hours for thrombectomy are supported by NHS/NICE summaries, up to 24 hours in selected people supported by NICE summary; but the numbers sit in prose, which the authoring rules disallow. 'Then antiplatelet drugs, statins, blood pressure control' is broadly consistent (NICE advised against starting statins immediately in acute stroke but continuing existing ones); 'anticoagulation if AF is found' and the bleed treatments (reversal of anticoagulants, blood pressure control, surgery) not retrieved. (5) causes/riskFactors: arterial dissection in younger people, vascular malformations, 'excess alcohol' and 'age' not retrieved (NHS lists high BP, diabetes, AF, high cholesterol, and prevention via not smoking, diet, exercise, less alcohol). (6) complications: 'Seizures' not retrieved (WHO snippet began a long-term list with post-stroke epilepsy, so plausible); 'Permanent disability' consistent with CDC. (7) seekCare: 'Call emergency services immediately' consistent; 999 named later in the text; CDC FAST wording is US. (8) The 'TIA' alias is listed as a stroke alias and urlAlias; NHS and Stroke Association treat a TIA as a separate condition that is a warning sign, so the alias may mislead."
+}

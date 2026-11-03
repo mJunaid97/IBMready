@@ -1,0 +1,293 @@
+{
+ "id": "high-blood-pressure-what-happens-next",
+ "searchesUsed": 6,
+ "counts": {
+  "supported": 19,
+  "textbook": 2,
+  "unsupported": 7,
+  "wrong": 2,
+  "unsafe": 0,
+  "unchecked": 0
+ },
+ "claims": [
+  {
+   "id": "c01",
+   "where": "body[0]",
+   "sentence": "Blood pressure is the force of blood against the walls of the arteries.",
+   "classification": "textbook",
+   "evidence": "Plain general fact.",
+   "url": "",
+   "action": "kept"
+  },
+  {
+   "id": "c02",
+   "where": "body[0]",
+   "sentence": "A reading gives two numbers: the pressure when the heart beats and the pressure between beats.",
+   "classification": "supported",
+   "evidence": "Top number is pressure when the heart contracts, bottom number when it relaxes between beats.",
+   "url": "https://leaflets.ekhuft.nhs.uk/high-blood-pressure-hypertension/html/",
+   "action": "kept"
+  },
+  {
+   "id": "c03",
+   "where": "body[0]",
+   "sentence": "The site's page on blood pressure measurement explains how they are taken.",
+   "classification": "textbook",
+   "evidence": "Harmless pointer to another page on this site.",
+   "url": "",
+   "action": "kept"
+  },
+  {
+   "id": "c04",
+   "where": "body[0]",
+   "sentence": "The NHS and NICE use different thresholds for clinic and home readings, and a GP uses them to decide whether blood pressure is high.",
+   "classification": "wrong",
+   "evidence": "Retrieved text gives one set of figures (clinic vs home) and says NICE retained its thresholds; no evidence NHS and NICE differ. Also cut-offs must not appear.",
+   "url": "https://www.england.nhs.uk/london/wp-content/uploads/sites/8/2019/11/NICE-NG136-Visual-Summary.pdf",
+   "action": "edited",
+   "newSentence": "Doctors use different thresholds for readings taken in a clinic and for readings taken at home when deciding whether blood pressure is high."
+  },
+  {
+   "id": "c05",
+   "where": "body[0]",
+   "sentence": "A clinician can say which applies to the person.",
+   "classification": "unsupported",
+   "evidence": "No retrieved evidence for this sentence.",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c06",
+   "where": "body[1]",
+   "sentence": "Usually not.",
+   "classification": "supported",
+   "evidence": "High blood pressure usually causes no symptoms.",
+   "url": "https://www.bhf.org.uk/informationsupport/risk-factors/high-blood-pressure",
+   "action": "kept"
+  },
+  {
+   "id": "c07",
+   "where": "body[1]",
+   "sentence": "The NHS says high blood pressure often has no symptoms, so many people do not know they have it, and the only way to find out is to have it measured.",
+   "classification": "supported",
+   "evidence": "Usually no symptoms, most people do not know they have it, only way to know is to have it measured.",
+   "url": "https://www.nhs.uk/conditions/high-blood-pressure/",
+   "action": "kept"
+  },
+  {
+   "id": "c08",
+   "where": "body[1]",
+   "sentence": "Rarely it can cause headaches, blurred vision or chest pain.",
+   "classification": "supported",
+   "evidence": "Rarely it can cause symptoms such as headaches, blurred vision or chest pain.",
+   "url": "https://www.nhs.uk/conditions/high-blood-pressure/",
+   "action": "kept"
+  },
+  {
+   "id": "c09",
+   "where": "body[1]",
+   "sentence": "Over time, the NHS says, untreated high blood pressure raises the chance of problems such as stroke and heart disease.",
+   "classification": "supported",
+   "evidence": "Raises risk of heart attacks, strokes and kidney disease if left untreated.",
+   "url": "https://www.bhf.org.uk/informationsupport/risk-factors/high-blood-pressure",
+   "action": "kept"
+  },
+  {
+   "id": "c10",
+   "where": "body[2]",
+   "sentence": "For most people there is no obvious cause, which is called essential hypertension, and it can run in families.",
+   "classification": "supported",
+   "evidence": "No obvious cause is called essential hypertension; having a relative with high blood pressure is a risk factor.",
+   "url": "https://www.bhf.org.uk/informationsupport/risk-factors/high-blood-pressure",
+   "action": "kept"
+  },
+  {
+   "id": "c11",
+   "where": "body[2]",
+   "sentence": "In a small number of people there is an underlying cause, such as a kidney or adrenal gland condition.",
+   "classification": "supported",
+   "evidence": "Underlying cause in fewer than 1 in 20 cases, such as kidney or adrenal disorders.",
+   "url": "https://www.bhf.org.uk/informationsupport/risk-factors/high-blood-pressure",
+   "action": "kept"
+  },
+  {
+   "id": "c12",
+   "where": "body[2]",
+   "sentence": "The NHS says risk rises with age, with Black African or Black Caribbean ethnicity, and with a family history.",
+   "classification": "supported",
+   "evidence": "Risk rises with age, close relatives with high blood pressure, and Black African, Black Caribbean or South Asian background (summary of NHS guidance).",
+   "url": "https://www.nhs.uk/conditions/high-blood-pressure/",
+   "action": "kept"
+  },
+  {
+   "id": "c13",
+   "where": "body[2]",
+   "sentence": "Smoking, drinking too much alcohol, being overweight and not being active are also linked.",
+   "classification": "supported",
+   "evidence": "Being overweight, too much salt, lack of exercise, too much alcohol, smoking listed as risk factors.",
+   "url": "https://www.bhf.org.uk/informationsupport/risk-factors/high-blood-pressure",
+   "action": "kept"
+  },
+  {
+   "id": "c14",
+   "where": "body[3]",
+   "sentence": "A single clinic reading is usually followed by other checks.",
+   "classification": "supported",
+   "evidence": "Clinic measurement alone is not adequate to diagnose; a single reading is usually not enough.",
+   "url": "https://www.england.nhs.uk/london/wp-content/uploads/sites/8/2019/11/NICE-NG136-Visual-Summary.pdf",
+   "action": "kept"
+  },
+  {
+   "id": "c15",
+   "where": "body[3]",
+   "sentence": "NICE advises confirming raised clinic readings with home monitoring or with a 24-hour ambulatory monitor, which takes readings through the day.",
+   "classification": "supported",
+   "evidence": "Elevated clinic readings should be confirmed with ambulatory (preferred) or home monitoring; ambulatory uses daytime readings spread through the day.",
+   "url": "https://www.england.nhs.uk/london/wp-content/uploads/sites/8/2019/11/NICE-NG136-Visual-Summary.pdf",
+   "action": "kept"
+  },
+  {
+   "id": "c16",
+   "where": "body[3]",
+   "sentence": "Some people have higher readings in a clinic than at home, sometimes called the white coat effect, which is one reason these extra checks are used.",
+   "classification": "supported",
+   "evidence": "About 1 in 4 people read higher at a clinic than at home; home or ambulatory devices are useful for these people.",
+   "url": "https://leaflets.ekhuft.nhs.uk/high-blood-pressure-hypertension/html/",
+   "action": "kept"
+  },
+  {
+   "id": "c17",
+   "where": "body[3]",
+   "sentence": "A GP may also arrange blood and urine tests and an ECG to look for effects on the body and for other causes.",
+   "classification": "unsupported",
+   "evidence": "Blood tests (cholesterol, kidney function), ECG (heart rhythm) and urine tests (blood, sugar, protein) were mentioned but from unattributed summaries; 'effects on the body and other causes' not stated.",
+   "url": "",
+   "action": "edited",
+   "newSentence": "A GP may also arrange blood and urine tests and an ECG, which checks the heart rhythm."
+  },
+  {
+   "id": "c18",
+   "where": "body[4]",
+   "sentence": "Lifestyle changes come first for many people.",
+   "classification": "supported",
+   "evidence": "Lifestyle changes come first; NHS treatment page says lifestyle changes help whether or not medicine is taken.",
+   "url": "https://www.nhs.uk/conditions/high-blood-pressure-hypertension/treatment/",
+   "action": "kept"
+  },
+  {
+   "id": "c19",
+   "where": "body[4]",
+   "sentence": "The NHS lists a balanced diet, regular physical activity, cutting down on salt and alcohol, losing weight where relevant, and not smoking.",
+   "classification": "unsupported",
+   "evidence": "List retrieved: cutting salt, alcohol and caffeine, losing weight if needed, exercising, stopping smoking. 'Balanced diet' not stated.",
+   "url": "https://www.nhs.uk/conditions/high-blood-pressure-hypertension/treatment/",
+   "action": "edited",
+   "newSentence": "The NHS lists cutting down on salt and alcohol, being more physically active, losing weight where needed, and stopping smoking."
+  },
+  {
+   "id": "c20",
+   "where": "body[4]",
+   "sentence": "A GP will usually prescribe medicine if blood pressure is very high, if the person has a higher risk of heart attack or stroke, or if it stays high after lifestyle changes.",
+   "classification": "supported",
+   "evidence": "GP usually prescribes medicine if very high, raised risk of heart attack or stroke, or stays high after lifestyle changes.",
+   "url": "https://www.nhs.uk/conditions/high-blood-pressure-hypertension/treatment/",
+   "action": "kept"
+  },
+  {
+   "id": "c21",
+   "where": "body[4]",
+   "sentence": "Several types are used, including ACE inhibitors, angiotensin receptor blockers, calcium channel blockers and diuretics, and some people need more than one.",
+   "classification": "unsupported",
+   "evidence": "Classes listed match, but 'some people need more than one' is not stated; choice depends on how high pressure is, age and ethnicity.",
+   "url": "https://www.bhf.org.uk/informationsupport/risk-factors/high-blood-pressure",
+   "action": "edited",
+   "newSentence": "Several types are used, including ACE inhibitors, angiotensin receptor blockers, calcium channel blockers and diuretics, and the choice depends on things such as age and ethnicity."
+  },
+  {
+   "id": "c22",
+   "where": "body[4]",
+   "sentence": "The NHS advises against stopping blood pressure medicine without speaking to the GP first.",
+   "classification": "unsupported",
+   "evidence": "No retrieved NHS text says this; the only related text is that some people may need medicine long term and may be able to cut back if pressure stays controlled for several years.",
+   "url": "https://www.nwlondonicb.nhs.uk/your-health-services/hypertension",
+   "action": "edited",
+   "newSentence": "Some people need to take blood pressure medicine long term, though if blood pressure stays under control for several years it may be possible to cut back or stop treatment."
+  },
+  {
+   "id": "c23",
+   "where": "body[5]",
+   "sentence": "The NHS says to call 999 for chest pain that does not go away, or pain spreading to the arm, neck, jaw or back.",
+   "classification": "unsupported",
+   "evidence": "999 for sudden chest pain that does not go away, or with sweating, sickness, light-headedness or breathlessness; spreading to arm, neck, jaw or back was not confirmed.",
+   "url": "https://www.nhs.uk/conditions/high-blood-pressure/",
+   "action": "edited",
+   "newSentence": "The NHS says to call 999 for sudden chest pain that does not go away, or chest pain with sweating, sickness, light-headedness or breathlessness, as it could be a heart attack."
+  },
+  {
+   "id": "c24",
+   "where": "body[5]",
+   "sentence": "A very high reading with symptoms such as severe headache, vision changes or confusion should be discussed urgently with NHS 111 or a GP, and 999 is the route if the person is very unwell.",
+   "classification": "wrong",
+   "evidence": "Retrieved NHS pharmacy-service guidance says a very high clinic reading with acute symptoms (headache, palpitations, new confusion, chest pain) is referred to A&E, via 999 where necessary; 'vision changes' not listed. NHS 111 advice applies to frequent headaches or blurred vision.",
+   "url": "https://www.england.nhs.uk/wp-content/uploads/2021/11/PRN00948-nhs-community-pharmacy-hypertension-case-finding-advanced-service-v2.3.pdf",
+   "action": "edited",
+   "newSentence": "NHS guidance for pharmacy staff says a very high clinic reading together with symptoms such as headache, palpitations, new confusion or chest pain should be referred to A&E, using 999 where necessary."
+  },
+  {
+   "id": "c25",
+   "where": "keyPoints",
+   "sentence": "High blood pressure usually causes no symptoms, and the only way to know is to have it measured.",
+   "classification": "supported",
+   "evidence": "Usually no symptoms; only way to know is to have it measured.",
+   "url": "https://www.nhs.uk/conditions/high-blood-pressure/",
+   "action": "kept"
+  },
+  {
+   "id": "c26",
+   "where": "keyPoints",
+   "sentence": "In most people no single cause is found; age, family history, ethnicity and lifestyle all play a part.",
+   "classification": "supported",
+   "evidence": "No single cause in most people; age, relatives, ethnicity, lifestyle are risk factors.",
+   "url": "https://www.nhs.uk/conditions/high-blood-pressure/",
+   "action": "kept"
+  },
+  {
+   "id": "c27",
+   "where": "keyPoints",
+   "sentence": "Readings taken at home or by a 24-hour monitor can be used alongside clinic readings to confirm the diagnosis.",
+   "classification": "supported",
+   "evidence": "Elevated clinic readings should be confirmed with ambulatory or home monitoring.",
+   "url": "https://www.england.nhs.uk/london/wp-content/uploads/sites/8/2019/11/NICE-NG136-Visual-Summary.pdf",
+   "action": "kept"
+  },
+  {
+   "id": "c28",
+   "where": "keyPoints",
+   "sentence": "Lifestyle changes are the first step, and a GP may prescribe medicine if blood pressure is very high or stays high.",
+   "classification": "supported",
+   "evidence": "Lifestyle first; GP prescribes if very high, higher risk, or stays high.",
+   "url": "https://www.nhs.uk/conditions/high-blood-pressure-hypertension/treatment/",
+   "action": "kept"
+  },
+  {
+   "id": "c29",
+   "where": "keyPoints",
+   "sentence": "Chest pain that does not go away, or pain spreading to the arm, neck, jaw or back, needs 999.",
+   "classification": "unsupported",
+   "evidence": "As body sentence: spreading to arm/neck/jaw/back not confirmed.",
+   "url": "https://www.nhs.uk/conditions/high-blood-pressure/",
+   "action": "edited",
+   "newSentence": "The NHS says to call 999 for sudden chest pain that does not go away, or chest pain with sweating, sickness, light-headedness or breathlessness, as it could be a heart attack."
+  },
+  {
+   "id": "c30",
+   "where": "summary",
+   "sentence": "High blood pressure usually causes no symptoms and is found by measuring it; treatment starts with lifestyle changes and may include medicine.",
+   "classification": "supported",
+   "evidence": "Usually no symptoms; lifestyle first, then medicine if needed.",
+   "url": "https://www.nhs.uk/conditions/high-blood-pressure-hypertension/treatment/",
+   "action": "kept"
+  }
+ ],
+ "notes": "Search summaries blend pages; official nhs.uk and NICE page text was only partly visible. nhs.uk blood-pressure-test and conditions pages were returned as results but their own excerpts were not shown, so NHS attributions rely on matching wording across summaries. Test (blood/urine/ECG) details were not attributable to a named page. Draft's 'NHS and NICE differ' threshold claim is wrong. Clinic/home cut-offs seen in results (140/90, 135/85, 180/120) deliberately not used."
+}

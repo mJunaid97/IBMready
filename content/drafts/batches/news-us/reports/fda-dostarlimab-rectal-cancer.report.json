@@ -1,0 +1,105 @@
+{
+ "id": "fda-dostarlimab-rectal-cancer",
+ "searchesUsed": 3,
+ "counts": {
+  "supported": 7,
+  "textbook": 2,
+  "unsupported": 2,
+  "wrong": 0,
+  "unsafe": 0,
+  "unchecked": 0
+ },
+ "claims": [
+  {
+   "id": "c01",
+   "sentenceId": "summary",
+   "classification": "supported",
+   "evidence": "FDA notice: accelerated approval for Jemperli (dostarlimab, GSK) on October 19, 2026 for adults with Stage II/III locally advanced rectal cancer that is MSI-H or dMMR.",
+   "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-grants-accelerated-approval-dostarlimab-locally-advanced-rectal-cancer",
+   "action": "kept"
+  },
+  {
+   "id": "c02",
+   "sentenceId": "keyPoints[0]",
+   "classification": "supported",
+   "evidence": "FDA notice: accelerated approval for Jemperli (dostarlimab, GSK) on October 19, 2026 for adults with Stage II/III locally advanced rectal cancer that is MSI-H or dMMR.",
+   "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-grants-accelerated-approval-dostarlimab-locally-advanced-rectal-cancer",
+   "action": "kept"
+  },
+  {
+   "id": "c03",
+   "sentenceId": "keyPoints[1]",
+   "classification": "supported",
+   "evidence": "Stage II/III locally advanced rectal cancer, MSI-H or dMMR, adults.",
+   "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-grants-accelerated-approval-dostarlimab-locally-advanced-rectal-cancer",
+   "action": "kept"
+  },
+  {
+   "id": "c04",
+   "sentenceId": "keyPoints[2]",
+   "classification": "unsupported",
+   "evidence": "AZUR-1 and interim-results basis confirmed (press announcement: accelerated approval based on interim trial results), but retrieved text describes AZUR-1 as single-arm, open-label, 154 patients; 'phase 2' not stated in retrieved text.",
+   "url": "https://www.fda.gov/news-events/press-announcements/fda-approves-immunotherapy-may-allow-certain-patients-rectal-cancer-avoid-chemotherapy-radiation-and",
+   "action": "edited",
+   "newSentence": "The approval rests on interim results from a single-arm, open-label study called AZUR-1."
+  },
+  {
+   "id": "c05",
+   "sentenceId": "keyPoints[3]",
+   "classification": "textbook",
+   "evidence": "Regulatory jurisdiction is general fact; not on FDA page.",
+   "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-grants-accelerated-approval-dostarlimab-locally-advanced-rectal-cancer",
+   "action": "kept"
+  },
+  {
+   "id": "c06",
+   "sentenceId": "body[0].s0",
+   "classification": "supported",
+   "evidence": "FDA notice: accelerated approval for Jemperli (dostarlimab, GSK) on October 19, 2026 for adults with Stage II/III locally advanced rectal cancer that is MSI-H or dMMR.",
+   "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-grants-accelerated-approval-dostarlimab-locally-advanced-rectal-cancer",
+   "action": "kept"
+  },
+  {
+   "id": "c07",
+   "sentenceId": "body[0].s1",
+   "classification": "supported",
+   "evidence": "Adults with Stage II/III LARC that is MSI-H or dMMR (dMMR/MSI-H expansions are the brief's own explanation).",
+   "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-grants-accelerated-approval-dostarlimab-locally-advanced-rectal-cancer",
+   "action": "kept"
+  },
+  {
+   "id": "c08",
+   "sentenceId": "body[0].s2",
+   "classification": "supported",
+   "evidence": "Search summary of FDA notice: approval came four months before the FDA goal date; dostarlimab also received Breakthrough Therapy designation (and Priority Review).",
+   "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-grants-accelerated-approval-dostarlimab-locally-advanced-rectal-cancer",
+   "action": "kept"
+  },
+  {
+   "id": "c09",
+   "sentenceId": "body[1].s0",
+   "classification": "unsupported",
+   "evidence": "AZUR-1 (NCT05723562): multicenter, single-arm, open-label trial in 154 patients with previously untreated MSI-H/dMMR Stage II/III LARC. 'Phase 2' and 'alone' not explicitly in retrieved text.",
+   "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-grants-accelerated-approval-dostarlimab-locally-advanced-rectal-cancer",
+   "action": "edited",
+   "newSentence": "The FDA says the approval relied on interim results from AZUR-1, a single-arm, open-label study in patients with previously untreated dMMR or MSI-H locally advanced rectal cancer."
+  },
+  {
+   "id": "c10",
+   "sentenceId": "body[1].s1",
+   "classification": "supported",
+   "evidence": "Press announcement: because this is an accelerated approval based on interim results, the sponsor must continue following patients to show lasting clinical benefit.",
+   "url": "https://www.fda.gov/news-events/press-announcements/fda-approves-immunotherapy-may-allow-certain-patients-rectal-cancer-avoid-chemotherapy-radiation-and",
+   "action": "kept"
+  },
+  {
+   "id": "c11",
+   "sentenceId": "body[1].s2",
+   "classification": "textbook",
+   "evidence": "Regulatory jurisdiction is general fact; not on FDA page. MHRA/NICE roles are general knowledge.",
+   "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-grants-accelerated-approval-dostarlimab-locally-advanced-rectal-cancer",
+   "action": "kept"
+  }
+ ],
+ "notes": "Dates, indication, GSK, 4-months-early and breakthrough designation all matched. Only 'phase 2' and 'alone' were not found in retrieved text; AZUR-1 efficacy figures (cCR12 47%) not used in brief."
+}

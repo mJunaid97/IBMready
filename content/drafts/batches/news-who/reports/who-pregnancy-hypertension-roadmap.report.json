@@ -1,0 +1,114 @@
+{
+  "id": "who-pregnancy-hypertension-roadmap",
+  "searchesUsed": 2,
+  "counts": {
+    "supported": 11,
+    "textbook": 0,
+    "unsupported": 0,
+    "wrong": 0,
+    "unsafe": 0,
+    "unchecked": 0
+  },
+  "claims": [
+    {
+      "id": "c01",
+      "where": "summary",
+      "sentence": "In October 2026 the WHO and partners launched a global roadmap for 2026 to 2035 on hypertensive disorders in pregnancy, including pre-eclampsia.",
+      "classification": "supported",
+      "evidence": "WHO news item (URL dated 08-10-2026): 'WHO and partners today launched a new global roadmap to tackle hypertensive disorders of pregnancy, including pre-eclampsia'; roadmap title 2026 to 2035.",
+      "url": "https://www.who.int/news/item/08-10-2026-new-global-roadmap-launched-to-tackle-hypertension-in-pregnancy-a-leading-cause-of-maternal-and-newborn-deaths",
+      "action": "kept"
+    },
+    {
+      "id": "c02",
+      "where": "keyPoints[0]",
+      "sentence": "The WHO news item announcing the roadmap is dated 8 October 2026.",
+      "classification": "supported",
+      "evidence": "News item URL is 08-10-2026. Discrepancy: the publication page and DG media briefing remarks are dated 7 October 2026, so the sentence must stay tied to the news item.",
+      "url": "https://www.who.int/news/item/08-10-2026-new-global-roadmap-launched-to-tackle-hypertension-in-pregnancy-a-leading-cause-of-maternal-and-newborn-deaths",
+      "action": "kept"
+    },
+    {
+      "id": "c03",
+      "where": "keyPoints[1]",
+      "sentence": "The roadmap covers 2026 to 2035 and sets out coordinated actions on research, clinical guidance, access to medicines and diagnostics, implementation, advocacy and accountability.",
+      "classification": "supported",
+      "evidence": "WHO news: 'Global roadmap for hypertensive disorders of pregnancy from 2026 to 2035 and beyond ... actions on research, clinical guidance, medicines and diagnostics, implementation, advocacy and accountability'. (Publication page lists five areas: research and innovation; norms and standards; access to health products; implementation; advocacy and accountability.)",
+      "url": "https://www.who.int/news/item/08-10-2026-new-global-roadmap-launched-to-tackle-hypertension-in-pregnancy-a-leading-cause-of-maternal-and-newborn-deaths",
+      "action": "kept"
+    },
+    {
+      "id": "c04",
+      "where": "keyPoints[2]",
+      "sentence": "The WHO says hypertensive disorders complicate an estimated 10 to 15% of pregnancies worldwide.",
+      "classification": "supported",
+      "evidence": "WHO news release: 'hypertensive disorders complicate an estimated 10-15% of pregnancies worldwide'.",
+      "url": "https://www.who.int/news/item/08-10-2026-new-global-roadmap-launched-to-tackle-hypertension-in-pregnancy-a-leading-cause-of-maternal-and-newborn-deaths",
+      "action": "kept"
+    },
+    {
+      "id": "c05",
+      "where": "keyPoints[3]",
+      "sentence": "The roadmap points to a shortage of medicines approved specifically for preventing or treating pre-eclampsia or eclampsia.",
+      "classification": "supported",
+      "evidence": "WHO news: 'striking innovation gap ... lack of medicines specifically developed and approved by regulators for prevention or treatment of pre-eclampsia or eclampsia'.",
+      "url": "https://www.who.int/news/item/08-10-2026-new-global-roadmap-launched-to-tackle-hypertension-in-pregnancy-a-leading-cause-of-maternal-and-newborn-deaths",
+      "action": "kept"
+    },
+    {
+      "id": "c06",
+      "where": "body[0].p0.s0",
+      "sentence": "The World Health Organization (WHO) and partners launched a global roadmap on hypertensive disorders in pregnancy, including pre-eclampsia, in a news item dated 8 October 2026.",
+      "classification": "supported",
+      "evidence": "News item dated 8 October 2026 (URL). Launch described as 'today'; roadmap publication page dated 7 October, so date is tied to the news item.",
+      "url": "https://www.who.int/news/item/08-10-2026-new-global-roadmap-launched-to-tackle-hypertension-in-pregnancy-a-leading-cause-of-maternal-and-newborn-deaths",
+      "action": "kept"
+    },
+    {
+      "id": "c07",
+      "where": "body[0].p0.s1",
+      "sentence": "The roadmap covers 2026 to 2035 and sets out coordinated actions on research, clinical guidance, access to medicines and diagnostics, implementation, advocacy and accountability.",
+      "classification": "supported",
+      "evidence": "WHO news: actions on research, clinical guidance, medicines and diagnostics, implementation, advocacy and accountability; 2026 to 2035.",
+      "url": "https://www.who.int/news/item/08-10-2026-new-global-roadmap-launched-to-tackle-hypertension-in-pregnancy-a-leading-cause-of-maternal-and-newborn-deaths",
+      "action": "kept"
+    },
+    {
+      "id": "c08",
+      "where": "body[0].p1.s0",
+      "sentence": "The WHO says hypertensive disorders complicate an estimated 10 to 15% of pregnancies worldwide and are a leading cause of maternal and newborn deaths.",
+      "classification": "supported",
+      "evidence": "10-15% from WHO news release; 'leading cause of maternal and newborn deaths' is in the WHO news item title. Note the DG briefing gave about 16% of maternal deaths, which the sentence does not use.",
+      "url": "https://www.who.int/news/item/08-10-2026-new-global-roadmap-launched-to-tackle-hypertension-in-pregnancy-a-leading-cause-of-maternal-and-newborn-deaths",
+      "action": "kept"
+    },
+    {
+      "id": "c09",
+      "where": "body[1].p0.s0",
+      "sentence": "The roadmap highlights a gap in approved treatments: few medicines have been approved by regulators specifically to prevent or treat pre-eclampsia or eclampsia.",
+      "classification": "supported",
+      "evidence": "WHO news: gap in 'medicines specifically developed and approved by regulators' for pre-eclampsia/eclampsia.",
+      "url": "https://www.who.int/news/item/08-10-2026-new-global-roadmap-launched-to-tackle-hypertension-in-pregnancy-a-leading-cause-of-maternal-and-newborn-deaths",
+      "action": "kept"
+    },
+    {
+      "id": "c10",
+      "where": "body[1].p0.s1",
+      "sentence": "The WHO notes that many countries still lack reliable access to basic blood-pressure measurement, testing and essential medicines.",
+      "classification": "supported",
+      "evidence": "WHO news: 'in many countries, women still lack reliable access to basic blood-pressure measurement, urine protein testing and essential medicines, including aspirin, antihypertensives and magnesium sulfate'.",
+      "url": "https://www.who.int/news/item/08-10-2026-new-global-roadmap-launched-to-tackle-hypertension-in-pregnancy-a-leading-cause-of-maternal-and-newborn-deaths",
+      "action": "kept"
+    },
+    {
+      "id": "c11",
+      "where": "body[1].p0.s2",
+      "sentence": "In May 2026 the WHO brought together more than 140 partners at a summit to identify 20 priority research questions.",
+      "classification": "supported",
+      "evidence": "WHO news: 'brought together more than 140 partners at a global summit in May 2026 to identify 20 priority research questions' (WHO events page: Global pre-eclampsia summit, 5 May 2026).",
+      "url": "https://www.who.int/news/item/08-10-2026-new-global-roadmap-launched-to-tackle-hypertension-in-pregnancy-a-leading-cause-of-maternal-and-newborn-deaths",
+      "action": "kept"
+    }
+  ],
+  "notes": "News item dated 8 October 2026 (URL); publication page and DG briefing remarks are dated 7 October. Keep the sentence tied to the news item. Kigali (5-8 May 2026) was in search text but is not used in the brief. Search summaries blend pages; the 'lack reliable access' and 140 partners/20 questions statements are attributed by the search to the WHO news release, which I did not read directly."
+}

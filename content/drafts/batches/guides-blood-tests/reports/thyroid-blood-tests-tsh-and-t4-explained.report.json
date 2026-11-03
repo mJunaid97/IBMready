@@ -1,0 +1,324 @@
+{
+ "id": "thyroid-blood-tests-tsh-and-t4-explained",
+ "searchesUsed": 16,
+ "counts": {
+  "supported": 13,
+  "textbook": 2,
+  "unsupported": 21,
+  "wrong": 0,
+  "unsafe": 0,
+  "unchecked": 0
+ },
+ "claims": [
+  {
+   "id": "c01",
+   "classification": "unsupported",
+   "evidence": "Retrieved: TSH is the principal test for primary thyroid dysfunction and free T4 is needed to interpret an abnormal TSH; the high/low pattern was not stated in returned text",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5321289/",
+   "action": "edited",
+   "newSentence": "Thyroid tests read TSH and free T4 together, because free T4 helps to interpret an abnormal TSH."
+  },
+  {
+   "id": "c02",
+   "classification": "textbook",
+   "evidence": "Plain fact: the thyroid is a gland in the neck that makes hormones",
+   "url": "",
+   "action": "kept"
+  },
+  {
+   "id": "c03",
+   "classification": "unsupported",
+   "evidence": "Retrieved: a pituitary problem can cause too much or too little TSH (MedlinePlus); wording on TSH telling the thyroid what to do not returned",
+   "url": "https://medlineplus.gov/lab-tests/thyroxine-t4-test/",
+   "action": "edited",
+   "newSentence": "TSH is linked to the pituitary gland, and a pituitary problem can cause too much or too little of it."
+  },
+  {
+   "id": "c04",
+   "classification": "unsupported",
+   "evidence": "BTF wording not returned; a 2017 review titled TSH is the best and often only test needed; TSH is the principal test for primary thyroid dysfunction",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5321289/",
+   "action": "edited",
+   "newSentence": "A medical review describes TSH as the main test for finding problems with the thyroid gland itself."
+  },
+  {
+   "id": "c05",
+   "classification": "unsupported",
+   "evidence": "Retrieved: free T4 should be measured to tell overt from subclinical hypothyroidism when TSH is raised; protein-binding wording not returned",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5321289/",
+   "action": "edited",
+   "newSentence": "Free T4 is measured to tell overt from subclinical hypothyroidism when the TSH is raised."
+  },
+  {
+   "id": "c06",
+   "classification": "supported",
+   "evidence": "Free T4 is needed to interpret an abnormal TSH",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5321289/",
+   "action": "kept"
+  },
+  {
+   "id": "c07",
+   "classification": "textbook",
+   "evidence": "Plain undisputed pattern: raised TSH with low free T4 indicates underactive thyroid",
+   "url": "",
+   "action": "kept"
+  },
+  {
+   "id": "c08",
+   "classification": "unsupported",
+   "evidence": "NHS summary: diagnosis usually involves a neck exam and blood tests for TSH and T4; \"only accurate way\" not returned",
+   "url": "https://www.nhs.uk/conditions/underactive-thyroid-hypothyroidism/",
+   "action": "edited",
+   "newSentence": "The NHS says an underactive thyroid is diagnosed with blood tests for TSH and T4."
+  },
+  {
+   "id": "c09",
+   "classification": "unsupported",
+   "evidence": "NHS summary mentions a neck exam; asking about symptoms not returned",
+   "url": "https://www.nhs.uk/conditions/underactive-thyroid-hypothyroidism/",
+   "action": "edited",
+   "newSentence": "The NHS says diagnosis of an underactive thyroid also usually involves a neck examination."
+  },
+  {
+   "id": "c10",
+   "classification": "unsupported",
+   "evidence": "Thyroid UK FAQ: some people continue to have symptoms on levothyroxine; the quoted diagnosis wording was not returned",
+   "url": "https://thyroiduk.org/if-you-are-hypothyroid/frequently-asked-questions-for-hypothyroidism/",
+   "action": "edited",
+   "newSentence": "Thyroid UK says some people continue to have symptoms while taking levothyroxine."
+  },
+  {
+   "id": "c11",
+   "classification": "unsupported",
+   "evidence": "Reverse pattern not stated in returned text; BTF leaflet says overactive thyroid is diagnosed by a blood test measuring thyroid hormones",
+   "url": "https://www.btf-thyroid.org/hyperthyroidism-leaflet",
+   "action": "edited",
+   "newSentence": "A British Thyroid Foundation leaflet says an overactive thyroid, or hyperthyroidism, is diagnosed with a blood test measuring thyroid hormones."
+  },
+  {
+   "id": "c12",
+   "classification": "unsupported",
+   "evidence": "NHS overactive diagnosis page not returned; point now covered by c11",
+   "url": "https://www.btf-thyroid.org/hyperthyroidism-leaflet",
+   "action": "removed"
+  },
+  {
+   "id": "c13",
+   "classification": "supported",
+   "evidence": "Subclinical hypothyroidism = mildly raised TSH with normal free T4",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5321289/",
+   "action": "kept"
+  },
+  {
+   "id": "c14",
+   "classification": "unsupported",
+   "evidence": "Not returned; BTF says TSH returns to normal in around half of people with subclinical thyroid disease over time",
+   "url": "https://www.btf-thyroid.org/subclinical-thyroid-disease",
+   "action": "edited",
+   "newSentence": "The British Thyroid Foundation says blood TSH levels return to normal in around half of people with subclinical thyroid disease."
+  },
+  {
+   "id": "c15",
+   "classification": "supported",
+   "evidence": "TPO antibodies estimate progression risk to overt hypothyroidism; UK sources suggest checking them",
+   "url": "https://pathlabs.rlbuht.nhs.uk/tft_guideline_summary.pdf",
+   "action": "kept"
+  },
+  {
+   "id": "c16",
+   "classification": "unsupported",
+   "evidence": "Thyroid UK page not returned; BTF says little clinical evidence that treatment gives long-term benefit in subclinical thyroid disease",
+   "url": "https://www.btf-thyroid.org/subclinical-thyroid-disease",
+   "action": "edited",
+   "newSentence": "The British Thyroid Foundation says there is little clinical evidence that treatment gives long-term benefit in subclinical thyroid disease."
+  },
+  {
+   "id": "c17",
+   "classification": "unsupported",
+   "evidence": "Low TSH with low T4 not stated; MedlinePlus: abnormal T4 can reflect a pituitary problem causing too much or too little TSH",
+   "url": "https://medlineplus.gov/lab-tests/thyroxine-t4-test/",
+   "action": "edited",
+   "newSentence": "MedlinePlus says abnormal T4 levels can sometimes be a sign of a pituitary problem that causes too much or too little TSH."
+  },
+  {
+   "id": "c18",
+   "classification": "supported",
+   "evidence": "Abnormal T4 levels do not always mean a medical condition that needs treatment",
+   "url": "https://medlineplus.gov/lab-tests/thyroxine-t4-test/",
+   "action": "kept"
+  },
+  {
+   "id": "c19",
+   "classification": "unsupported",
+   "evidence": "Birth control pills not named in returned text; MedlinePlus lists pregnancy, oestrogen level, liver problems and severe illness",
+   "url": "https://medlineplus.gov/lab-tests/thyroxine-t4-test/",
+   "action": "edited",
+   "newSentence": "MedlinePlus says pregnancy, oestrogen levels, liver problems and severe body-wide illness can affect T4 results."
+  },
+  {
+   "id": "c20",
+   "classification": "supported",
+   "evidence": "Treatment is typically levothyroxine long term",
+   "url": "https://www.nhs.uk/medicines/levothyroxine/",
+   "action": "kept"
+  },
+  {
+   "id": "c21",
+   "classification": "supported",
+   "evidence": "NHS: usually need treatment for the rest of your life",
+   "url": "https://www.nhs.uk/conditions/underactive-thyroid-hypothyroidism/treatment/",
+   "action": "kept"
+  },
+  {
+   "id": "c22",
+   "classification": "supported",
+   "evidence": "NHS inform: absent or very mild symptoms may not need treatment",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/glands/underactive-thyroid/",
+   "action": "kept"
+  },
+  {
+   "id": "c23",
+   "classification": "unsupported",
+   "evidence": "NHS: regular blood tests check dose; NHS inform: side effects usually only if taking too much; the symptom list was not returned",
+   "url": "https://www.nhs.uk/medicines/levothyroxine/",
+   "action": "edited",
+   "newSentence": "Regular blood tests check the dose is right, and NHS inform says side effects usually only occur with too much levothyroxine."
+  },
+  {
+   "id": "c24",
+   "classification": "unsupported",
+   "evidence": "BTF wording not returned; Thyroid UK: if symptoms do not improve on levothyroxine, re-measure TSH and adjust dose if still raised",
+   "url": "https://thyroiduk.org/if-you-are-hypothyroid/frequently-asked-questions-for-hypothyroidism/",
+   "action": "edited",
+   "newSentence": "Thyroid UK says that if symptoms do not improve on levothyroxine, TSH is measured again and the dose may be adjusted."
+  },
+  {
+   "id": "c25",
+   "classification": "supported",
+   "evidence": "NHS: Hashimoto's disease is the main cause of an underactive thyroid",
+   "url": "https://www.nhs.uk/conditions/underactive-thyroid-hypothyroidism/",
+   "action": "kept"
+  },
+  {
+   "id": "c26",
+   "classification": "unsupported",
+   "evidence": "Not stated in anything retrieved",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/glands/underactive-thyroid/",
+   "action": "removed"
+  },
+  {
+   "id": "c27",
+   "classification": "unsupported",
+   "evidence": "NHS: symptoms appear gradually and can be mild: tiredness, weight gain, constipation, low mood, hoarse voice; feeling cold not returned",
+   "url": "https://www.nhs.uk/conditions/underactive-thyroid-hypothyroidism/",
+   "action": "edited",
+   "newSentence": "Symptoms of an underactive thyroid tend to appear gradually and can be mild, such as tiredness, weight gain, constipation and low mood."
+  },
+  {
+   "id": "c28",
+   "classification": "supported",
+   "evidence": "Graves' disease is the most common cause of an overactive thyroid",
+   "url": "https://www.nhs.uk/conditions/overactive-thyroid-hyperthyroidism/",
+   "action": "kept"
+  },
+  {
+   "id": "c29",
+   "classification": "unsupported",
+   "evidence": "Returned list: nervousness, anxiety, poor sleep, fast or irregular heartbeat, trembling, weight loss; \"despite good appetite\" not returned",
+   "url": "https://www.nhs.uk/conditions/overactive-thyroid-hyperthyroidism/",
+   "action": "edited",
+   "newSentence": "Symptoms of an overactive thyroid include nervousness, poor sleep, a fast or irregular heartbeat, trembling and weight loss."
+  },
+  {
+   "id": "c30",
+   "classification": "supported",
+   "evidence": "Anti-thyroid drugs, beta-blockers for symptom relief, radioactive iodine (and surgery)",
+   "url": "https://www.btf-thyroid.org/hyperthyroidism-leaflet",
+   "action": "kept"
+  },
+  {
+   "id": "c31",
+   "classification": "supported",
+   "evidence": "After radioactive iodine many people need lifelong thyroid hormone replacement",
+   "url": "https://www.btf-thyroid.org/hyperthyroidism-leaflet",
+   "action": "kept"
+  },
+  {
+   "id": "c32",
+   "classification": "unsupported",
+   "evidence": "TSH receptor antibodies are associated with Graves' disease; full sentence not returned",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6143469/",
+   "action": "edited",
+   "newSentence": "TSH receptor antibodies are associated with Graves' disease, so antibody tests can help find the cause of an overactive thyroid."
+  },
+  {
+   "id": "c33",
+   "classification": "unsupported",
+   "evidence": "As c04/c01: TSH is the principal test and free T4 helps interpret abnormal TSH; \"most sensitive\" wording not returned",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5321289/",
+   "action": "edited",
+   "newSentence": "TSH is the main test for thyroid problems, and free T4 helps to interpret an abnormal TSH."
+  },
+  {
+   "id": "c34",
+   "classification": "unsupported",
+   "evidence": "Pattern not stated in returned text; reword to what was returned",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5321289/",
+   "action": "edited",
+   "newSentence": "Free T4 is measured when the TSH is raised, to tell overt from subclinical hypothyroidism."
+  },
+  {
+   "id": "c35",
+   "classification": "supported",
+   "evidence": "Subclinical: raised TSH, normal T4; repeat testing after about 3 months",
+   "url": "https://www.rightdecisions.scot.nhs.uk/borders-ref-help-toolkit/endocrinology/thyroid/",
+   "action": "kept"
+  },
+  {
+   "id": "c36",
+   "classification": "supported",
+   "evidence": "MedlinePlus: severe illness and medicines affect T4; abnormal T4 does not always mean disease",
+   "url": "https://medlineplus.gov/lab-tests/thyroxine-t4-test/",
+   "action": "kept"
+  }
+ ],
+ "additions": [
+  {
+   "section": "new: Treatment",
+   "sentence": "Pregnancy often means the levothyroxine dose needs to be changed, according to the NHS.",
+   "url": "https://www.nhs.uk/conditions/underactive-thyroid-hypothyroidism/",
+   "evidence": "NHS: pregnancy often requires dose changes"
+  },
+  {
+   "section": "body[6]",
+   "sentence": "People with a family history of thyroid problems are more likely to develop an underactive thyroid, the NHS says.",
+   "url": "https://www.nhs.uk/conditions/underactive-thyroid-hypothyroidism/",
+   "evidence": "NHS: people with a family history of thyroid problems are more likely to develop it"
+  },
+  {
+   "section": "body[3]",
+   "sentence": "A raised TSH with a normal free T4 is often repeated after about three months, because it can be a temporary finding.",
+   "url": "https://www.rightdecisions.scot.nhs.uk/borders-ref-help-toolkit/endocrinology/thyroid/",
+   "evidence": "Pattern can be transient and should be repeated in three months"
+  },
+  {
+   "section": "body[6]",
+   "sentence": "Some people with Graves' disease develop eye problems, known as thyroid eye disease.",
+   "url": "https://www.btf-thyroid.org/hyperthyroidism-leaflet",
+   "evidence": "About a third of patients with Graves' disease develop eye problems"
+  },
+  {
+   "section": "body[6]",
+   "sentence": "Thyroid eye disease may get worse after radioactive iodine, so doctors discuss this beforehand.",
+   "url": "https://www.royalberkshire.nhs.uk/media/lynj0snv/radioiodine-treatment-for-hyperthyroidism_may23.pdf",
+   "evidence": "Thyroid eye disease may get worse after the treatment, doctors discuss this beforehand"
+  },
+  {
+   "section": "body[6]",
+   "sentence": "Beta-blockers ease symptoms in the first weeks of an overactive thyroid but do not change how much hormone the thyroid makes.",
+   "url": "https://www.cuh.nhs.uk/patient-information/hyperthyroidism-due-to-graves-disease/",
+   "evidence": "Beta-blockers ease symptoms early on but do not change hormone production"
+  }
+ ],
+ "notes": "16 searches shared across both guides (9 on thyroid). BTF thyroid-function-tests page text was never returned in full; its claims were checked via other returned sources. Textbook: c02, c07 (pattern sentences c01/c11/c34 reworded because no returned text stated them). c34 wording is a fallback. Addition URLs for Graves points are from search summaries blending several NHS trust leaflets."
+}

@@ -1,0 +1,130 @@
+{
+ "id": "fda-thyroid-tablets-lot-recall-vitruvias",
+ "searchesUsed": 3,
+ "counts": {
+  "supported": 9,
+  "textbook": 2,
+  "unsupported": 2,
+  "wrong": 1,
+  "unsafe": 0,
+  "unchecked": 0
+ },
+ "claims": [
+  {
+   "id": "c01",
+   "sentenceId": "summary",
+   "classification": "wrong",
+   "evidence": "Company announced 21 Aug 2026; the recall is of lot 504950 to consumer level. 21 Aug is the announcement, not the recall date per se, and FDA posted 24 Aug.",
+   "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/vitruvias-therapeutics-inc-issues-nationwide-recall-one-lot-thyroid-tablets-usp-30-mg-due-potential",
+   "action": "edited",
+   "newSentence": "Vitruvias Therapeutics announced a recall of one lot of Thyroid Tablets, USP 30 mg in the US on 21 August 2026 because testing confirmed the product could be superpotent."
+  },
+  {
+   "id": "c02",
+   "sentenceId": "keyPoints[0]",
+   "classification": "supported",
+   "evidence": "Company announced 21 Aug 2026; FDA published 24 Aug 2026.",
+   "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/vitruvias-therapeutics-inc-issues-nationwide-recall-one-lot-thyroid-tablets-usp-30-mg-due-potential",
+   "action": "kept"
+  },
+  {
+   "id": "c03",
+   "sentenceId": "keyPoints[1]",
+   "classification": "supported",
+   "evidence": "Lot 504950, Thyroid Tablets USP 30 mg, potential superpotency.",
+   "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/vitruvias-therapeutics-inc-issues-nationwide-recall-one-lot-thyroid-tablets-usp-30-mg-due-potential",
+   "action": "kept"
+  },
+  {
+   "id": "c04",
+   "sentenceId": "keyPoints[2]",
+   "classification": "supported",
+   "evidence": "Notice: superpotent thyroid can cause hyperthyroidism (overactive thyroid) symptoms.",
+   "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/vitruvias-therapeutics-inc-issues-nationwide-recall-one-lot-thyroid-tablets-usp-30-mg-due-potential",
+   "action": "kept"
+  },
+  {
+   "id": "c05",
+   "sentenceId": "keyPoints[3]",
+   "classification": "textbook",
+   "evidence": "MHRA is the UK medicines regulator; not in the notice but general knowledge.",
+   "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/vitruvias-therapeutics-inc-issues-nationwide-recall-one-lot-thyroid-tablets-usp-30-mg-due-potential",
+   "action": "kept"
+  },
+  {
+   "id": "c06",
+   "sentenceId": "body[0].s0",
+   "classification": "supported",
+   "evidence": "Announcement 21 Aug 2026, nationwide US recall, FDA publication 24 Aug 2026.",
+   "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/vitruvias-therapeutics-inc-issues-nationwide-recall-one-lot-thyroid-tablets-usp-30-mg-due-potential",
+   "action": "kept"
+  },
+  {
+   "id": "c07",
+   "sentenceId": "body[0].s1",
+   "classification": "supported",
+   "evidence": "Lot 504950, consumer level.",
+   "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/vitruvias-therapeutics-inc-issues-nationwide-recall-one-lot-thyroid-tablets-usp-30-mg-due-potential",
+   "action": "kept"
+  },
+  {
+   "id": "c08",
+   "sentenceId": "body[0].s2",
+   "classification": "supported",
+   "evidence": "Testing confirmed potential for product to be superpotent.",
+   "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/vitruvias-therapeutics-inc-issues-nationwide-recall-one-lot-thyroid-tablets-usp-30-mg-due-potential",
+   "action": "kept"
+  },
+  {
+   "id": "c09",
+   "sentenceId": "body[0].s3",
+   "classification": "supported",
+   "evidence": "Company has received no adverse event reports related to the recall.",
+   "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/vitruvias-therapeutics-inc-issues-nationwide-recall-one-lot-thyroid-tablets-usp-30-mg-due-potential",
+   "action": "kept"
+  },
+  {
+   "id": "c10",
+   "sentenceId": "body[1].s0",
+   "classification": "unsupported",
+   "evidence": "Retrieved summary lists weight loss, heart rate changes and chest pain; 'heart rhythm problems' not confirmed in retrieved text.",
+   "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/vitruvias-therapeutics-inc-issues-nationwide-recall-one-lot-thyroid-tablets-usp-30-mg-due-potential",
+   "action": "edited",
+   "newSentence": "The notice says superpotent thyroid tablets can cause symptoms of an overactive thyroid, such as weight loss and changes in heart rate."
+  },
+  {
+   "id": "c11",
+   "sentenceId": "body[1].s1",
+   "classification": "supported",
+   "evidence": "Elderly, pregnant women and infants at greater risk, especially over extended periods.",
+   "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/vitruvias-therapeutics-inc-issues-nationwide-recall-one-lot-thyroid-tablets-usp-30-mg-due-potential",
+   "action": "kept"
+  },
+  {
+   "id": "c12",
+   "sentenceId": "body[1].s2",
+   "classification": "supported",
+   "evidence": "Patients should not discontinue without contacting healthcare provider for guidance and/or a replacement prescription.",
+   "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/vitruvias-therapeutics-inc-issues-nationwide-recall-one-lot-thyroid-tablets-usp-30-mg-due-potential",
+   "action": "kept"
+  },
+  {
+   "id": "c13",
+   "sentenceId": "body[1].s3",
+   "classification": "unsupported",
+   "evidence": "FDA pages retrieved say unapproved/animal-derived thyroid products are not FDA-approved and (consumer guidance) not reviewed for safety, effectiveness or quality; the 'safety, purity and potency' wording was not found, and it is not in the recall notice.",
+   "url": "https://www.fda.gov/drugs/enforcement-activities-fda/fdas-actions-address-unapproved-thyroid-medications",
+   "action": "edited",
+   "newSentence": "The FDA has said that animal-derived (desiccated) thyroid medicines are unapproved, meaning the agency has not reviewed them for safety, effectiveness or quality."
+  },
+  {
+   "id": "c14",
+   "sentenceId": "body[1].s4",
+   "classification": "textbook",
+   "evidence": "MHRA regulates UK medicines; general knowledge.",
+   "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/vitruvias-therapeutics-inc-issues-nationwide-recall-one-lot-thyroid-tablets-usp-30-mg-due-potential",
+   "action": "kept"
+  }
+ ],
+ "notes": "Notice describes tablets as porcine-derived. Page text itself not fully retrieved; evidence is from search extract of the FDA page. Suggest brief states both dates explicitly."
+}

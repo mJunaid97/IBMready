@@ -1,0 +1,563 @@
+{
+ "id": "deep-vein-thrombosis",
+ "searchesUsed": 14,
+ "counts": {
+  "supported": 25,
+  "textbook": 2,
+  "unsupported": 34,
+  "wrong": 0,
+  "unsafe": 0,
+  "unchecked": 0
+ },
+ "claims": [
+  {
+   "id": "c01",
+   "where": "article.sections[0]",
+   "classification": "unsupported",
+   "evidence": "NICE says a likely DVT (Wells score 2 or more) should have a leg vein ultrasound within 4 hours of request, or within 24 hours if not possible; the NHS page text and a 24-hour referral were not retrieved.",
+   "url": "https://www.nice.org.uk/guidance/qs201/chapter/Quality-statement-3-Proximal-leg-vein-ultrasound-scan-for-a-likely-deep-vein-thrombosis-Wells-score",
+   "action": "edited",
+   "newSentence": "NICE says that people with a likely DVT should have a leg vein ultrasound scan within 4 hours of it being requested, or within 24 hours if that is not possible."
+  },
+  {
+   "id": "c02",
+   "where": "article.sections[0]",
+   "classification": "unsupported",
+   "evidence": "No retrieved text describes what the scan shows.",
+   "url": "",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c03",
+   "where": "article.sections[0]",
+   "classification": "unsupported",
+   "evidence": "Leaflet not retrieved; vague. NHS inform says tests include a D-dimer blood test and/or an ultrasound.",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/blood-and-lymph/deep-vein-thrombosis/",
+   "action": "edited",
+   "newSentence": "NHS inform says that if a doctor thinks you have DVT, you will need tests, including a blood test called a D-dimer and/or an ultrasound scan."
+  },
+  {
+   "id": "c04",
+   "where": "article.sections[0]",
+   "classification": "supported",
+   "evidence": "NICE NG158 pathway: determine the 2-level DVT Wells score first.",
+   "url": "https://www.nice.org.uk/guidance/ng158/resources/visual-summary-pdf-11193380893",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c05",
+   "where": "article.sections[0]",
+   "classification": "unsupported",
+   "evidence": "Retrieved text gives D-dimer route for unlikely score and says a positive D-dimer needs a scan; no text stated a negative D-dimer rules out DVT with no further tests.",
+   "url": "",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c06",
+   "where": "article.sections[0]",
+   "classification": "supported",
+   "evidence": "NHS Dorset appendix (NICE-based pathway): Wells 1 or less with positive D-dimer recommended to have ultrasound.",
+   "url": "https://nhsdorset.nhs.uk/Downloads/aboutus/finance/03_CVDS_0036%20Community%20DVT/03_CVDS_0036%20Appendix%20C%20Wells%20Score%20Tables.pdf",
+   "action": "edited",
+   "newSentence": "In NHS guidance, people with a low Wells score but a positive D-dimer test are recommended to have an ultrasound scan."
+  },
+  {
+   "id": "c07",
+   "where": "article.sections[0]",
+   "classification": "unsupported",
+   "evidence": "NICE uses a two-level score: Wells 2 or more (likely) goes to ultrasound; \"moderate or high\" wording and \"D-dimer skipped\" not in retrieved text.",
+   "url": "https://www.nice.org.uk/guidance/qs201/chapter/Quality-statement-3-Proximal-leg-vein-ultrasound-scan-for-a-likely-deep-vein-thrombosis-Wells-score",
+   "action": "edited",
+   "newSentence": "If the Wells score shows that a DVT is likely, NICE says the person should have a leg vein ultrasound scan."
+  },
+  {
+   "id": "c08",
+   "where": "article.sections[0]",
+   "classification": "textbook",
+   "evidence": "Plain fact; a DVT can occur in an arm. Only unnamed leaflet text retrieved.",
+   "url": "",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c09",
+   "where": "article.sections[0]",
+   "classification": "unsupported",
+   "evidence": "Retrieved NHS text: throbbing pain (calf or thigh), swelling in one leg, swollen veins. Another trust says a clot can occur without symptoms. No source gave \"about half\".",
+   "url": "https://www.nhs.uk/conditions/deep-vein-thrombosis-dvt/",
+   "action": "edited",
+   "newSentence": "Typical symptoms include throbbing pain, usually in the calf or thigh, and swelling in one leg, often with swollen veins, although a clot can sometimes cause no symptoms."
+  },
+  {
+   "id": "c10",
+   "where": "article.sections[0]",
+   "classification": "supported",
+   "evidence": "NHS DVT page: leg symptoms with breathlessness or chest pain means call 999 or go to A&E.",
+   "url": "https://www.nhs.uk/conditions/deep-vein-thrombosis-dvt/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c11",
+   "where": "article.sections[1]",
+   "classification": "supported",
+   "evidence": "NHS trust leaflets (Chelsea and Westminster, Gloucestershire, Exeter) describe anticoagulants as the main treatment; NHS says blood-thinning medicine is usual.",
+   "url": "https://www.chelwest.nhs.uk/your-visit/patient-leaflets/blood-clots-prevention-of-dvt-pe",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c12",
+   "where": "article.sections[1]",
+   "classification": "unsupported",
+   "evidence": "NHS retrieved text names rivaroxaban only; Exeter leaflet lists warfarin, heparin injections and DOACs (rivaroxaban, apixaban). \"Favours\" not stated.",
+   "url": "https://www.chelwest.nhs.uk/your-visit/patient-leaflets/blood-clots-prevention-of-dvt-pe",
+   "action": "edited",
+   "newSentence": "NHS hospital leaflets describe treatment with blood-thinning tablets such as rivaroxaban or apixaban, or with warfarin or heparin injections."
+  },
+  {
+   "id": "c13",
+   "where": "article.sections[1]",
+   "classification": "supported",
+   "evidence": "NHS: blood-thinning medicine such as rivaroxaban taken for at least 3 months to reduce risk of another clot.",
+   "url": "https://www.nhs.uk/conditions/deep-vein-thrombosis-dvt/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c14",
+   "where": "article.sections[1]",
+   "classification": "unsupported",
+   "evidence": "Vague pointer to a leaflet; CUH text on length not retrieved (only calf DVT about twelve weeks).",
+   "url": "",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c15",
+   "where": "article.sections[1]",
+   "classification": "unsupported",
+   "evidence": "CUH wording of three to six months for a first unprovoked DVT was not retrieved.",
+   "url": "",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c16",
+   "where": "article.sections[1]",
+   "classification": "supported",
+   "evidence": "North Tees leaflet: if not a first DVT, treatment normally recommended for life.",
+   "url": "https://www.nth.nhs.uk/resources/deep-vein-thrombosis/",
+   "action": "edited",
+   "newSentence": "NHS hospital leaflets say that if it is not a first DVT, treatment is normally recommended for life."
+  },
+  {
+   "id": "c17",
+   "where": "article.sections[1]",
+   "classification": "supported",
+   "evidence": "Royal Berkshire leaflet: anticoagulants reduce the risk of the clot worsening and let the body break it down; NHS inform: they do not literally thin the blood.",
+   "url": "https://www.royalberkshire.nhs.uk/media/vqqi5x2j/deep-vein-thrombosis_jun26.pdf",
+   "action": "edited",
+   "newSentence": "Anticoagulants reduce the risk of the clot getting worse and give the body time to break the clot down."
+  },
+  {
+   "id": "c18",
+   "where": "article.sections[1]",
+   "classification": "supported",
+   "evidence": "Royal Berkshire leaflet: the body breaks down the clot.",
+   "url": "https://www.royalberkshire.nhs.uk/media/vqqi5x2j/deep-vein-thrombosis_jun26.pdf",
+   "action": "edited",
+   "newSentence": "The body breaks the clot down over time."
+  },
+  {
+   "id": "c19",
+   "where": "article.sections[1]",
+   "classification": "supported",
+   "evidence": "Chelsea and Westminster leaflet: the drug stops the clot growing; NHS: reduces risk of another clot.",
+   "url": "https://www.chelwest.nhs.uk/your-visit/patient-leaflets/blood-clots-prevention-of-dvt-pe",
+   "action": "edited",
+   "newSentence": "The medicine stops the clot growing and reduces the risk of another clot."
+  },
+  {
+   "id": "c20",
+   "where": "article.sections[1]",
+   "classification": "supported",
+   "evidence": "A UK hospital page: occasionally, in very severe cases, a thrombolytic (clot buster) or less commonly surgery may be needed.",
+   "url": "https://www.gloshospitals.nhs.uk/your-visit/patient-information-leaflets/venous-thrombo-embolism-vte/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c21",
+   "where": "article.sections[2]",
+   "classification": "unsupported",
+   "evidence": "CUH dalteparin leaflet lists minor bruising or bleeding as most common side effect; \"all anticoagulants\" not stated.",
+   "url": "https://www.cuh.nhs.uk/patient-information/dalteparin-for-the-treatment-of-venous-thromboembolism-dvtpe/",
+   "action": "edited",
+   "newSentence": "NHS hospital leaflets list minor bruising or bleeding as the most common side effect of blood-thinning injections such as dalteparin."
+  },
+  {
+   "id": "c22",
+   "where": "article.sections[2]",
+   "classification": "unsupported",
+   "evidence": "Bleeding signs found in other NHS trust leaflets (blood in vomit or cough, black or bloody stools, blood in urine, prolonged nosebleeds, unexplained bruising), not confirmed in the CUH leaflet; severe period bleeding not found.",
+   "url": "https://www.nth.nhs.uk/resources/anticoagulants-blood-thinners/",
+   "action": "edited",
+   "newSentence": "NHS hospital leaflets list warning signs of bleeding on blood thinners, including blood when vomiting or coughing, black or bloody stools, blood in the urine, prolonged nosebleeds and unexplained or severe bruising, and advise seeking medical advice."
+  },
+  {
+   "id": "c23",
+   "where": "article.sections[2]",
+   "classification": "unsupported",
+   "evidence": "No retrieved text on aspirin, NSAIDs or paracetamol with anticoagulants; medicine instruction.",
+   "url": "",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c24",
+   "where": "article.sections[2]",
+   "classification": "unsupported",
+   "evidence": "Retrieved leaflets list oestrogen-containing pill and HRT as risk-raising; no clear rule on restarting after a clot.",
+   "url": "",
+   "action": "edited",
+   "newSentence": "NHS hospital leaflets say that combined contraceptive pills and HRT containing oestrogen can increase the risk of a DVT or pulmonary embolism."
+  },
+  {
+   "id": "c25",
+   "where": "article.sections[2]",
+   "classification": "unsupported",
+   "evidence": "Retrieved leaflets disagree (two weeks vs four weeks); CUH text not retrieved.",
+   "url": "",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c26",
+   "where": "article.sections[2]",
+   "classification": "unsupported",
+   "evidence": "One UK leaflet says aspirin has not been proven to reduce travel clot risk (an older leaflet is more positive); advice-to-seek-help part not retrieved for CUH.",
+   "url": "https://www.stgeorges.nhs.uk/wp-content/uploads/2025/03/HAE_DVT_LP.pdf",
+   "action": "edited",
+   "newSentence": "Some NHS hospital leaflets say aspirin has not been proven to reduce the risk of clots on long journeys."
+  },
+  {
+   "id": "c27",
+   "where": "article.sections[3]",
+   "classification": "supported",
+   "evidence": "NHS inform/NHS trust leaflets: a clot can travel to the lungs (pulmonary embolism), which can be life-threatening.",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/blood-and-lymph/deep-vein-thrombosis/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c28",
+   "where": "article.sections[3]",
+   "classification": "supported",
+   "evidence": "Retrieved: a pulmonary embolism can be life-threatening and needs to be treated quickly.",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/blood-and-lymph/deep-vein-thrombosis/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c29",
+   "where": "article.sections[3]",
+   "classification": "unsupported",
+   "evidence": "UCLH calls post-thrombotic syndrome a common complication; \"main\" long-term problem not stated.",
+   "url": "https://www.uclh.nhs.uk/patients-and-visitors/patient-information-pages/deep-vein-thrombosis",
+   "action": "edited",
+   "newSentence": "Post-thrombotic syndrome is a common long-term complication of DVT in the leg."
+  },
+  {
+   "id": "c30",
+   "where": "article.sections[3]",
+   "classification": "unsupported",
+   "evidence": "UCLH: leg swelling, varicose veins, occasionally leg ulcers. Chronic pain and redness not confirmed.",
+   "url": "https://www.uclh.nhs.uk/patients-and-visitors/patient-information-pages/deep-vein-thrombosis",
+   "action": "edited",
+   "newSentence": "A UCLH leaflet describes post-thrombotic syndrome as causing symptoms that include leg swelling, varicose veins and occasionally leg ulcers."
+  },
+  {
+   "id": "c31",
+   "where": "article.sections[3]",
+   "classification": "supported",
+   "evidence": "Thrombosis UK: most cases appear within about six months to two years of the clot.",
+   "url": "https://old.thrombosisuk.org/post-thrombotic-syndrome.php",
+   "action": "edited",
+   "newSentence": "Post-thrombotic syndrome usually appears within about six months to two years of the clot."
+  },
+  {
+   "id": "c32",
+   "where": "article.sections[3]",
+   "classification": "supported",
+   "evidence": "UCLH: 20 to 50 per cent, usually with extensive DVTs; NNUH puts it at about 1 in 4.",
+   "url": "https://www.uclh.nhs.uk/patients-and-visitors/patient-information-pages/deep-vein-thrombosis",
+   "action": "edited",
+   "newSentence": "Estimates of how many people develop post-thrombotic syndrome vary: a UCLH leaflet says 20 to 50 in 100, usually after extensive clots, while another hospital leaflet says about 1 in 4."
+  },
+  {
+   "id": "c33",
+   "where": "article.sections[3]",
+   "classification": "supported",
+   "evidence": "UCLH: stockings may help with these symptoms.",
+   "url": "https://www.uclh.nhs.uk/patients-and-visitors/patient-information-pages/deep-vein-thrombosis",
+   "action": "edited",
+   "newSentence": "A UCLH leaflet says compression stockings may help with these symptoms."
+  },
+  {
+   "id": "c34",
+   "where": "article.sections[3]",
+   "classification": "unsupported",
+   "evidence": "UCLH: stockings should wait until initial swelling has settled. The circulation/skin-problem leaflet was not retrieved.",
+   "url": "https://www.uclh.nhs.uk/patients-and-visitors/patient-information-pages/deep-vein-thrombosis",
+   "action": "edited",
+   "newSentence": "A UCLH leaflet says compression stockings should not be worn until the initial leg swelling has settled."
+  },
+  {
+   "id": "c35",
+   "where": "article.sections[3]",
+   "classification": "unsupported",
+   "evidence": "No retrieved text supports advice to wear stockings for more than two years (only a trial of two years).",
+   "url": "",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c36",
+   "where": "article.sections[3]",
+   "classification": "unsupported",
+   "evidence": "Calf exercises not found; NHS attribution not found. One NHS leaflet advises regular exercise, walking especially, and walking breaks on long journeys.",
+   "url": "https://www.leicspart.nhs.uk/wp-content/uploads/2017/11/84-Reducing-the-risk-of-getting-a-blood-clot-DVT-while-you-are-in-hospital-4.pdf",
+   "action": "edited",
+   "newSentence": "An NHS hospital leaflet advises regular exercise, with walking especially helpful, and regular short walking breaks on long journeys."
+  },
+  {
+   "id": "c37",
+   "where": "article.sections[4]",
+   "classification": "unsupported",
+   "evidence": "Attribution to Cambridge leaflet and pregnancy/immobility/IV drug items not retrieved. NHS lists age over 60, obesity, smoking, hormonal contraception or HRT, cancer, previous DVT.",
+   "url": "https://www.nhs.uk/conditions/deep-vein-thrombosis-dvt/",
+   "action": "edited",
+   "newSentence": "The NHS lists risk factors for DVT including being over 60, obesity, smoking, hormonal contraception or HRT, cancer and a previous DVT."
+  },
+  {
+   "id": "c38",
+   "where": "article.sections[4]",
+   "classification": "unsupported",
+   "evidence": "NHS retrieved text covers smoking, over 60, HRT; varicose veins came from a non-NHS-page leaflet.",
+   "url": "https://www.nhs.uk/conditions/deep-vein-thrombosis-dvt/",
+   "action": "edited",
+   "newSentence": "The NHS also lists smoking, being over 60 and taking hormone replacement therapy as risk factors."
+  },
+  {
+   "id": "c39",
+   "where": "article.sections[4]",
+   "classification": "unsupported",
+   "evidence": "The 1 in 1,000 figure was not confirmed in retrieved text.",
+   "url": "",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c40",
+   "where": "article.sections[4]",
+   "classification": "unsupported",
+   "evidence": "NHS trust guidelines: warfarin contraindicated in pregnancy; DOACs lack data in pregnancy (Royal Devon). Not the Black Country leaflet.",
+   "url": "https://www.royaldevon.nhs.uk/media/2aejvd1o/foi-f4522-anticoagulants.pdf",
+   "action": "edited",
+   "newSentence": "NHS trust guidance says warfarin should not be used in pregnancy and that there is too little research on the newer oral anticoagulants in pregnancy."
+  },
+  {
+   "id": "c41",
+   "where": "article.sections[4]",
+   "classification": "supported",
+   "evidence": "Frimley NHS guideline: low-molecular-weight heparin is the standard choice in pregnancy.",
+   "url": "https://fhac-archive.frimley.icb.nhs.uk/media/6867/thromboprophylaxisplusandplustheplustreatmentplusofplusvteplusinpluspregnancyplusandplustheplusPuerperium-1.pdf",
+   "action": "edited",
+   "newSentence": "NHS trust guidance describes low-molecular-weight heparin injections as the usual choice for treating a clot in pregnancy."
+  },
+  {
+   "id": "c42",
+   "where": "article.sections[4]",
+   "classification": "unsupported",
+   "evidence": "Leaflet content on in-hospital risk assessment was not retrieved.",
+   "url": "",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c43",
+   "where": "article.faqs[0].a",
+   "classification": "supported",
+   "evidence": "Consistent with the retrieved anticoagulant evidence (answer to whether blood thinners dissolve the clot); caveat: question text not in ledger.",
+   "url": "https://www.royalberkshire.nhs.uk/media/vqqi5x2j/deep-vein-thrombosis_jun26.pdf",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c44",
+   "where": "article.faqs[0].a",
+   "classification": "supported",
+   "evidence": "Royal Berkshire leaflet: reduce risk of clot worsening and let the body break it down.",
+   "url": "https://www.royalberkshire.nhs.uk/media/vqqi5x2j/deep-vein-thrombosis_jun26.pdf",
+   "action": "edited",
+   "newSentence": "A hospital leaflet says anticoagulants reduce the risk of the clot getting worse and let the body break it down."
+  },
+  {
+   "id": "c45",
+   "where": "article.faqs[0].a",
+   "classification": "supported",
+   "evidence": "Chelsea and Westminster leaflet: stops the clot growing; NHS: reduces risk of another clot.",
+   "url": "https://www.chelwest.nhs.uk/your-visit/patient-leaflets/blood-clots-prevention-of-dvt-pe",
+   "action": "edited",
+   "newSentence": "The medicine stops the clot growing and reduces the risk of another clot."
+  },
+  {
+   "id": "c46",
+   "where": "article.faqs[0].a",
+   "classification": "supported",
+   "evidence": "A UK hospital page: very severe cases may need a clot buster or less commonly surgery.",
+   "url": "https://www.gloshospitals.nhs.uk/your-visit/patient-information-leaflets/venous-thrombo-embolism-vte/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c47",
+   "where": "article.faqs[1].a",
+   "classification": "supported",
+   "evidence": "NHS: blood-thinning medicine for at least 3 months.",
+   "url": "https://www.nhs.uk/conditions/deep-vein-thrombosis-dvt/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c48",
+   "where": "article.faqs[1].a",
+   "classification": "unsupported",
+   "evidence": "CUH 3-6 month wording not retrieved; North Tees leaflet gives the \"for life\" part.",
+   "url": "https://www.nth.nhs.uk/resources/deep-vein-thrombosis/",
+   "action": "edited",
+   "newSentence": "NHS hospital leaflets say that if it is not a first DVT, treatment is normally recommended for life."
+  },
+  {
+   "id": "c49",
+   "where": "article.faqs[1].a",
+   "classification": "unsupported",
+   "evidence": "No retrieved text says the clinician sets the length; Chelsea and Westminster leaflet says not to stop without talking to a doctor.",
+   "url": "https://www.chelwest.nhs.uk/your-visit/patient-leaflets/blood-clots-prevention-of-dvt-pe",
+   "action": "edited",
+   "newSentence": "People prescribed a blood thinner are advised not to stop it without talking to a doctor."
+  },
+  {
+   "id": "c50",
+   "where": "article.faqs[2].a",
+   "classification": "unsupported",
+   "evidence": "CUH flying advice not retrieved; other leaflets conflict (two vs four weeks).",
+   "url": "",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c51",
+   "where": "article.faqs[2].a",
+   "classification": "unsupported",
+   "evidence": "Not retrieved from the CUH leaflet.",
+   "url": "",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c52",
+   "where": "article.faqs[3].a",
+   "classification": "unsupported",
+   "evidence": "No retrieved text on painkillers with anticoagulants.",
+   "url": "",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c53",
+   "where": "article.faqs[3].a",
+   "classification": "unsupported",
+   "evidence": "Generic pharmacist/GP referral not found in any retrieved leaflet.",
+   "url": "",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c54",
+   "where": "article.faqs[4].a",
+   "classification": "supported",
+   "evidence": "NHS: leg symptoms with breathlessness or chest pain means call 999 or go to A&E; link to clot reaching lungs is consistent with PE description.",
+   "url": "https://www.nhs.uk/conditions/deep-vein-thrombosis-dvt/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c55",
+   "where": "article.faqs[4].a",
+   "classification": "unsupported",
+   "evidence": "No retrieved text says same-day assessment; NICE gives 4-hour/24-hour scan targets for a likely DVT. Note: no route-to-care sentence is source-supported, add one with an NHS 111/GP source if wanted.",
+   "url": "https://www.nice.org.uk/guidance/qs201/chapter/Quality-statement-3-Proximal-leg-vein-ultrasound-scan-for-a-likely-deep-vein-thrombosis-Wells-score",
+   "action": "edited",
+   "newSentence": "If a doctor thinks a leg clot is likely, NICE says an ultrasound scan should be available within 4 hours of it being requested, or within 24 hours if that is not possible."
+  },
+  {
+   "id": "c56",
+   "where": "article.keyFacts[0]",
+   "classification": "textbook",
+   "evidence": "Plain definition of DVT.",
+   "url": "",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c57",
+   "where": "article.keyFacts[1]",
+   "classification": "supported",
+   "evidence": "NHS: leg symptoms with breathlessness or chest pain means call 999 or go to A&E.",
+   "url": "https://www.nhs.uk/conditions/deep-vein-thrombosis-dvt/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c58",
+   "where": "article.keyFacts[2]",
+   "classification": "unsupported",
+   "evidence": "NICE: scan within 4 hours where possible, otherwise within 24 hours (not \"usually within 24 hours\").",
+   "url": "https://www.nice.org.uk/guidance/qs201/chapter/Quality-statement-3-Proximal-leg-vein-ultrasound-scan-for-a-likely-deep-vein-thrombosis-Wells-score",
+   "action": "edited",
+   "newSentence": "Scan: Ultrasound, within 4 hours of being requested where possible, or within 24 hours"
+  },
+  {
+   "id": "c59",
+   "where": "article.keyFacts[3]",
+   "classification": "supported",
+   "evidence": "NHS: blood-thinning medicine for at least 3 months.",
+   "url": "https://www.nhs.uk/conditions/deep-vein-thrombosis-dvt/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c60",
+   "where": "article.keyFacts[4]",
+   "classification": "unsupported",
+   "evidence": "UCLH: leg swelling, varicose veins, occasionally ulcers; \"main\" and redness not confirmed.",
+   "url": "https://www.uclh.nhs.uk/patients-and-visitors/patient-information-pages/deep-vein-thrombosis",
+   "action": "edited",
+   "newSentence": "Main long-term problem: Post-thrombotic syndrome: leg swelling, varicose veins or sometimes leg ulcers"
+  },
+  {
+   "id": "c61",
+   "where": "article.keyFacts[5]",
+   "classification": "supported",
+   "evidence": "Retrieved: a clot can travel to the lungs, a pulmonary embolism.",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/blood-and-lymph/deep-vein-thrombosis/",
+   "action": "kept",
+   "newSentence": ""
+  }
+ ]
+}

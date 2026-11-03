@@ -1,0 +1,420 @@
+{
+ "id": "loperamide",
+ "searchesUsed": 13,
+ "counts": {
+  "supported": 32,
+  "unsafe": 6,
+  "unsupported": 5,
+  "wrong": 2,
+  "textbook": 0,
+  "unchecked": 0
+ },
+ "claims": [
+  {
+   "id": "c01",
+   "where": "summary[0]",
+   "classification": "supported",
+   "evidence": "NHS About: medicine to treat diarrhoea; anti-motility, slows passage through gut, firmer stools.",
+   "url": "https://www.nhs.uk/medicines/loperamide/about-loperamide/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c02",
+   "where": "summary[1]",
+   "classification": "supported",
+   "evidence": "NHS: short-term diarrhoea or IBS; who-can page: OTC IBS only if doctor-diagnosed (adults).",
+   "url": "https://www.nhs.uk/medicines/loperamide/who-can-and-cannot-take-loperamide/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c03",
+   "where": "summary[2]",
+   "classification": "unsafe",
+   "evidence": "NHS: contact 111 if more than recommended dose with fast/irregular heartbeat; 'pounding' and 'urgent help' wording not seen; MedlinePlus boxed warning supports serious heart problems.",
+   "url": "https://www.nhs.uk/medicines/loperamide/common-questions-about-loperamide/",
+   "action": "edited",
+   "newSentence": "The NHS says to contact 111 straight away if you take more than the recommended amount and get a fast or irregular heartbeat, because higher amounts can cause serious heart problems."
+  },
+  {
+   "id": "c04",
+   "where": "usedFor[0]",
+   "classification": "supported",
+   "evidence": "NHS About: can help with short-term diarrhoea.",
+   "url": "https://www.nhs.uk/medicines/loperamide/about-loperamide/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c05",
+   "where": "usedFor[1]",
+   "classification": "supported",
+   "evidence": "NHS: can help with IBS; OTC for adults with doctor-diagnosed IBS.",
+   "url": "https://www.nhs.uk/medicines/loperamide/who-can-and-cannot-take-loperamide/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c06",
+   "where": "usedFor[2]",
+   "classification": "supported",
+   "evidence": "NHS About: longer-lasting diarrhoea from Crohn's, ulcerative colitis, short bowel syndrome; available on prescription.",
+   "url": "https://www.nhs.uk/medicines/loperamide/about-loperamide/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c07",
+   "where": "howItWorks[0]",
+   "classification": "supported",
+   "evidence": "NHS About/Common questions: slows the gut / anti-motility medicine.",
+   "url": "https://www.nhs.uk/medicines/loperamide/about-loperamide/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c08",
+   "where": "howItWorks[1]",
+   "classification": "unsupported",
+   "evidence": "Water absorption wording seen in UK product information (SmPC: increases transit time, enhances resorption of water and electrolytes), not clearly in NHS summary.",
+   "url": "https://www.medicines.org.uk/emc/product/10420/smpc",
+   "action": "edited",
+   "newSentence": "Product information for UK loperamide medicines says it lengthens the time contents spend in the gut and increases absorption of water and electrolytes, so stools become firmer."
+  },
+  {
+   "id": "c09",
+   "where": "howItWorks[2]",
+   "classification": "wrong",
+   "evidence": "Opioid-receptor mechanism seen in FDA drug label and UK SmPC (mu-opioid agonist, gut wall), not in the FDA safety communication cited; attribution wrong.",
+   "url": "https://www.medicines.org.uk/emc/product/10420/smpc",
+   "action": "edited",
+   "newSentence": "UK and US product information describes loperamide as an opioid (mu) receptor agonist that acts on the gut wall to reduce propulsive movement of the bowel."
+  },
+  {
+   "id": "c10",
+   "where": "onset",
+   "classification": "supported",
+   "evidence": "NHS Common questions: usually begins easing diarrhoea within 1 hour.",
+   "url": "https://www.nhs.uk/medicines/loperamide/common-questions-about-loperamide/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c11",
+   "where": "sideEffects.common[0]",
+   "classification": "unsupported",
+   "evidence": "NHS side effects summary confirmed constipation, headache, feeling sick; dizziness and wind attributed to 'other NHS and hospital leaflets', not confirmed on the NHS page.",
+   "url": "https://www.nhs.uk/medicines/loperamide/side-effects-of-loperamide/",
+   "action": "edited",
+   "newSentence": "The NHS lists constipation, headache and feeling sick as side effects of loperamide; dizziness is also listed in NHS common questions."
+  },
+  {
+   "id": "c12",
+   "where": "sideEffects.common[1]",
+   "classification": "supported",
+   "evidence": "NHS Common questions: can cause dizziness, tiredness or drowsiness; alcohol makes side effects more likely.",
+   "url": "https://www.nhs.uk/medicines/loperamide/common-questions-about-loperamide/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c13",
+   "where": "sideEffects.common[2]",
+   "classification": "supported",
+   "evidence": "NHS Common questions: avoid driving or machinery until you feel better.",
+   "url": "https://www.nhs.uk/medicines/loperamide/common-questions-about-loperamide/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c14",
+   "where": "sideEffects.serious[0]",
+   "classification": "unsafe",
+   "evidence": "NHS: 999 for lips, mouth, throat or tongue swelling, fast/struggling breathing; 'face' not seen.",
+   "url": "https://www.nhs.uk/medicines/loperamide/side-effects-of-loperamide/",
+   "action": "edited",
+   "newSentence": "The NHS says swelling of the lips, mouth, throat or tongue, or very fast or struggling breathing, may be a serious allergic reaction, and to call 999."
+  },
+  {
+   "id": "c15",
+   "where": "sideEffects.serious[1]",
+   "classification": "supported",
+   "evidence": "MedlinePlus boxed warning: serious or life-threatening heart rhythm changes, mainly above recommended amount.",
+   "url": "https://medlineplus.gov/druginfo/meds/a682280.html",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c16",
+   "where": "sideEffects.serious[2]",
+   "classification": "wrong",
+   "evidence": "NHS side effects page: contact 111/doctor for faintness, stomach pain with high temperature or fast pulse, severe constipation, difficulty peeing; heartbeat via 111 after extra doses. Bloody stools is on the who-can page (reason not to use), not a side-effect list.",
+   "url": "https://www.nhs.uk/medicines/loperamide/side-effects-of-loperamide/",
+   "action": "edited",
+   "newSentence": "The NHS says to contact 111 or a doctor straight away for fainting, stomach pain or tenderness with a high temperature, severe constipation or difficulty passing urine."
+  },
+  {
+   "id": "c17",
+   "where": "sideEffects.serious[3]",
+   "classification": "supported",
+   "evidence": "FDA DSC: higher than recommended doses can cause serious heart problems leading to death (US).",
+   "url": "https://www.fda.gov/Drugs/DrugSafety/ucm504617.htm",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c18",
+   "where": "cautions[0]",
+   "classification": "supported",
+   "evidence": "NHS who-can: anyone 12+ with short-term diarrhoea; adults with IBS only if doctor-diagnosed.",
+   "url": "https://www.nhs.uk/medicines/loperamide/who-can-and-cannot-take-loperamide/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c19",
+   "where": "cautions[1]",
+   "classification": "supported",
+   "evidence": "NHS who-can: prescription for children 11 or under and adults with long-lasting diarrhoea.",
+   "url": "https://www.nhs.uk/medicines/loperamide/who-can-and-cannot-take-loperamide/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c20",
+   "where": "cautions[2]",
+   "classification": "supported",
+   "evidence": "NHS who-can: severe diarrhoea after antibiotics, IBD flare-up, constipation/swollen stomach, recent blood in poo and high temperature.",
+   "url": "https://www.nhs.uk/medicines/loperamide/who-can-and-cannot-take-loperamide/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c21",
+   "where": "cautions[3]",
+   "classification": "supported",
+   "evidence": "NHS pregnancy page: not usually recommended, not enough evidence; talk to doctor first.",
+   "url": "https://www.nhs.uk/medicines/loperamide/pregnancy-breastfeeding-and-fertility-while-taking-loperamide/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c22",
+   "where": "cautions[4]",
+   "classification": "supported",
+   "evidence": "NHS pregnancy page: acceptable while breastfeeding, tiny amounts in milk. Conflict: NHS who-can page and some UK SmPCs list breastfeeding as a caution.",
+   "url": "https://www.nhs.uk/medicines/loperamide/pregnancy-breastfeeding-and-fertility-while-taking-loperamide/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c23",
+   "where": "cautions[5]",
+   "classification": "supported",
+   "evidence": "NHS other-medicines page lists clozapine, ritonavir, quinidine, itraconazole, gemfibrozil, desmopressin and other bowel medicines.",
+   "url": "https://www.nhs.uk/medicines/loperamide/taking-loperamide-with-other-medicines-and-herbal-supplements/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c24",
+   "where": "cautions[6]",
+   "classification": "supported",
+   "evidence": "NHS Common questions: ok with paracetamol/ibuprofen; does not stop contraception, severe diarrhoea over 24h may reduce pill protection.",
+   "url": "https://www.nhs.uk/medicines/loperamide/common-questions-about-loperamide/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c25",
+   "where": "monitoring",
+   "classification": "unsupported",
+   "evidence": "NHS only says prescription needed for long-lasting diarrhoea/children; 'supervised by a doctor' not stated.",
+   "url": "https://www.nhs.uk/medicines/loperamide/about-loperamide/",
+   "action": "edited",
+   "newSentence": "The NHS says children aged 11 or under and adults with long-lasting diarrhoea need a prescription."
+  },
+  {
+   "id": "c26",
+   "where": "regulatory[0]",
+   "classification": "supported",
+   "evidence": "NHS: bought from shops/pharmacies; 12+ short-term diarrhoea.",
+   "url": "https://www.nhs.uk/medicines/loperamide/who-can-and-cannot-take-loperamide/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c27",
+   "where": "regulatory[1]",
+   "classification": "supported",
+   "evidence": "NHS who-can: prescription for 11 or under and long-lasting diarrhoea in adults.",
+   "url": "https://www.nhs.uk/medicines/loperamide/who-can-and-cannot-take-loperamide/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c28",
+   "where": "article.sections[0]",
+   "classification": "supported",
+   "evidence": "NHS About: medicine to treat diarrhoea.",
+   "url": "https://www.nhs.uk/medicines/loperamide/about-loperamide/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c29",
+   "where": "article.sections[1]",
+   "classification": "supported",
+   "evidence": "As summary[1].",
+   "url": "https://www.nhs.uk/medicines/loperamide/who-can-and-cannot-take-loperamide/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c30",
+   "where": "article.sections[2]",
+   "classification": "supported",
+   "evidence": "NHS About: Crohn's, ulcerative colitis, short bowel syndrome, prescription.",
+   "url": "https://www.nhs.uk/medicines/loperamide/about-loperamide/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c31",
+   "where": "article.sections[0]",
+   "classification": "supported",
+   "evidence": "NHS: slows passage through gut; SmPC: increases intestinal transit time.",
+   "url": "https://www.medicines.org.uk/emc/product/10420/smpc",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c32",
+   "where": "article.sections[1]",
+   "classification": "unsupported",
+   "evidence": "Water absorption from UK SmPC, not NHS summary.",
+   "url": "https://www.medicines.org.uk/emc/product/10420/smpc",
+   "action": "edited",
+   "newSentence": "Product information for UK loperamide medicines says it lengthens the time contents spend in the gut and increases absorption of water and electrolytes, so stools become firmer."
+  },
+  {
+   "id": "c33",
+   "where": "article.sections[2]",
+   "classification": "supported",
+   "evidence": "NHS Common questions: usually begins easing diarrhoea within 1 hour.",
+   "url": "https://www.nhs.uk/medicines/loperamide/common-questions-about-loperamide/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c34",
+   "where": "article.sections[0]",
+   "classification": "unsupported",
+   "evidence": "Only constipation, headache, feeling sick confirmed on NHS side-effects page.",
+   "url": "https://www.nhs.uk/medicines/loperamide/side-effects-of-loperamide/",
+   "action": "edited",
+   "newSentence": "The NHS lists constipation, headache and feeling sick as side effects of loperamide."
+  },
+  {
+   "id": "c35",
+   "where": "article.sections[1]",
+   "classification": "supported",
+   "evidence": "NHS Common questions: alcohol makes dizziness/drowsiness side effects more likely.",
+   "url": "https://www.nhs.uk/medicines/loperamide/common-questions-about-loperamide/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c36",
+   "where": "article.sections[2]",
+   "classification": "unsafe",
+   "evidence": "NHS: fast or irregular heartbeat after too much; 'pounding' not seen; no route to care.",
+   "url": "https://www.nhs.uk/medicines/loperamide/common-questions-about-loperamide/",
+   "action": "edited",
+   "newSentence": "A fast or irregular heartbeat after taking more than the recommended amount can be a sign of serious heart problems, and the NHS says to contact 111 straight away."
+  },
+  {
+   "id": "c37",
+   "where": "article.sections[3]",
+   "classification": "unsafe",
+   "evidence": "NHS: 999 for lips, mouth, throat or tongue swelling, struggling breathing; 'face' not seen.",
+   "url": "https://www.nhs.uk/medicines/loperamide/side-effects-of-loperamide/",
+   "action": "edited",
+   "newSentence": "Swelling of the lips, mouth, throat or tongue, or very fast or struggling breathing, may be a serious allergic reaction: call 999."
+  },
+  {
+   "id": "c38",
+   "where": "article.sections[4]",
+   "classification": "unsafe",
+   "evidence": "NHS side-effects page does not list bloody stools/severe swelling/fever as side effects; 'same day' is a schedule/cut-off not found. Blood in stool with high temperature is a reason not to take it (who-can).",
+   "url": "https://www.nhs.uk/medicines/loperamide/side-effects-of-loperamide/",
+   "action": "edited",
+   "newSentence": "Fainting, stomach pain with a high temperature, severe constipation or difficulty passing urine need medical advice straight away: contact NHS 111 or a doctor."
+  },
+  {
+   "id": "c39",
+   "where": "article.sections[0]",
+   "classification": "supported",
+   "evidence": "NHS who-can page.",
+   "url": "https://www.nhs.uk/medicines/loperamide/who-can-and-cannot-take-loperamide/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c40",
+   "where": "article.sections[1]",
+   "classification": "supported",
+   "evidence": "NHS pregnancy page.",
+   "url": "https://www.nhs.uk/medicines/loperamide/pregnancy-breastfeeding-and-fertility-while-taking-loperamide/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c41",
+   "where": "article.sections[2]",
+   "classification": "supported",
+   "evidence": "NHS other-medicines page.",
+   "url": "https://www.nhs.uk/medicines/loperamide/taking-loperamide-with-other-medicines-and-herbal-supplements/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c42",
+   "where": "article.faqs",
+   "classification": "supported",
+   "evidence": "NHS who-can: anyone 12+ with short-term diarrhoea. Question text for this FAQ not in ledger; check it matches.",
+   "url": "https://www.nhs.uk/medicines/loperamide/who-can-and-cannot-take-loperamide/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c43",
+   "where": "article.faqs[0]",
+   "classification": "supported",
+   "evidence": "MedlinePlus boxed warning.",
+   "url": "https://medlineplus.gov/druginfo/meds/a682280.html",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c44",
+   "where": "article.faqs[1]",
+   "classification": "unsafe",
+   "evidence": "NHS: contact 111 for fast/irregular heartbeat after too much; 'needs urgent help' lacks named route.",
+   "url": "https://www.nhs.uk/medicines/loperamide/common-questions-about-loperamide/",
+   "action": "edited",
+   "newSentence": "The NHS says to contact 111 straight away if you have a fast or irregular heartbeat after taking more than the recommended amount."
+  },
+  {
+   "id": "c45",
+   "where": "article.faqs",
+   "classification": "supported",
+   "evidence": "NHS pregnancy page; note breastfeeding conflict with who-can page.",
+   "url": "https://www.nhs.uk/medicines/loperamide/pregnancy-breastfeeding-and-fertility-while-taking-loperamide/",
+   "action": "kept",
+   "newSentence": null
+  }
+ ],
+ "notes": "Breastfeeding conflict: NHS pregnancy page says acceptable, NHS who-can page lists breastfeeding as a situation to check and some UK SmPCs advise against; review. NHS side-effects page text itself was only seen via summary (common list unconfirmed beyond constipation/headache/sick). 'Pounding' heartbeat not found in NHS text. Water-absorption and opioid-receptor statements re-attributed to product labels (SmPC/FDA label); US FDA must stay marked US. 'same day' wording removed as unsupported cut-off. MedlinePlus page appears old (about 3,000 days); MHRA Drug Safety Update (gov.uk) also covers cardiac risk and could be cited for a UK source. UC/Crohn's prescription sentences rest on summaries of NHS About page. The class page caution wording 'flare-up of ulcerative colitis' omits other inflammatory conditions; fine. | Editorial tidy-ups after the second pass (duplicate sentences removed or one wording softened) are marked in the claims where they apply. Replacement sentences came from the second-pass retrieval and were not run through a third check."
+}

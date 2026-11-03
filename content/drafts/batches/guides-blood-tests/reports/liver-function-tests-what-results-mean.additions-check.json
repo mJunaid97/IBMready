@@ -1,0 +1,56 @@
+{
+  "id": "liver-function-tests-what-results-mean",
+  "searchesUsed": 8,
+  "checks": [
+    {
+      "index": 0,
+      "classification": "supported",
+      "evidence": "Review: AST:ALT ratio >1 in 92% and >2 in 70% of alcoholic liver disease; ratio <1 points toward NAFLD/NASH.",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3903934",
+      "action": "kept"
+    },
+    {
+      "index": 1,
+      "classification": "unsupported",
+      "evidence": "Search returned nothing on muscle injury, heart attack or hypothyroidism raising ALT/AST.",
+      "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK559278/",
+      "action": "removed"
+    },
+    {
+      "index": 2,
+      "classification": "supported",
+      "evidence": "Both GGT and ALP rise in liver disease but only ALP rises with bone disease; normal GGT with high ALP suggests bone cause. Exact PMC page ambiguous in blended results.",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3609680/",
+      "action": "kept"
+    },
+    {
+      "index": 3,
+      "classification": "supported",
+      "evidence": "British Liver Trust: bilirubin forms as the body clears worn-out red blood cells; the liver normally removes it.",
+      "url": "https://britishlivertrust.org.uk/liver-information/tests-and-screening/liver-blood-tests-formerly-lfts",
+      "action": "kept"
+    },
+    {
+      "index": 4,
+      "classification": "supported",
+      "evidence": "British Liver Trust: albumin is a protein made by the liver; level falls if the liver is damaged.",
+      "url": "https://britishlivertrust.org.uk/liver-information/tests-and-screening/liver-blood-tests-formerly-lfts",
+      "action": "kept"
+    },
+    {
+      "index": 5,
+      "classification": "unsupported",
+      "evidence": "Returned: extrahepatic causes of acute jaundice include gallstone disease, haemolysis, malignancy. Hepatitis, pancreatitis, sickle cell, alcohol not confirmed.",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11637320/",
+      "action": "edited",
+      "newSentence": "Jaundice can have causes outside the liver, including gallstone disease and the breakdown of red blood cells (haemolysis)."
+    },
+    {
+      "index": 6,
+      "classification": "unsupported",
+      "evidence": "Referral and repeat-testing pathway variation not found in returned text.",
+      "url": "https://northeast.devonformularyguidance.nhs.uk/referral-guidance/eastern-locality/gi-liver/management-of-abnormal-lfts-in-asymptomatic-adults",
+      "action": "removed"
+    }
+  ]
+}

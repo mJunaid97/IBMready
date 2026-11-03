@@ -1,0 +1,95 @@
+{
+ "id": "antimalarial-dmards",
+ "searchesUsed": 0,
+ "counts": {
+  "supported": 9,
+  "textbook": 0,
+  "unsupported": 1,
+  "wrong": 0,
+  "unsafe": 0,
+  "unchecked": 0
+ },
+ "claims": [
+  {
+   "id": "c01",
+   "classification": "supported",
+   "evidence": "Original: \"MedlinePlus places hydroxychloroquine in a group ...\" | Retrieved: MedlinePlus: antimalarial class; antirheumatic drug.",
+   "url": "https://medlineplus.gov/druginfo/meds/a601240.html",
+   "action": "kept",
+   "newSentence": "MedlinePlus places hydroxychloroquine in a group of medicines called antimalarials and also describes it as an antirheumatic drug."
+  },
+  {
+   "id": "c02",
+   "classification": "supported",
+   "evidence": "Original: \"The NHS describes hydroxychloroquine as a DMARD that calms the immune system.\" | Retrieved: NHS: DMARD that works by blocking effects of chemicals released when immune system attacks the body.",
+   "url": "https://www.nhs.uk/medicines/hydroxychloroquine/",
+   "action": "edited",
+   "newSentence": "The NHS describes it as a disease-modifying anti-rheumatic drug (DMARD) that works by blocking the effects of chemicals released when the immune system attacks the body."
+  },
+  {
+   "id": "c03",
+   "classification": "supported",
+   "evidence": "Original: \"The Royal College of Ophthalmologists publishes eye-monitoring recommendations ...\" | Retrieved: RCOphth publishes monitoring recommendations for hydroxychloroquine and chloroquine retinopathy.",
+   "url": "https://curriculum.rcophth.ac.uk/2020/12/hydroxychloroquine-and-chloroquine-retinopathy-recommendations-on-monitoring/",
+   "action": "kept",
+   "newSentence": "The Royal College of Ophthalmologists publishes eye-monitoring recommendations for users of hydroxychloroquine and chloroquine."
+  },
+  {
+   "id": "c04",
+   "classification": "supported",
+   "evidence": "Original: \"How these medicines calm the immune system has not been fully worked out. Reviews describe them building up inside lysosomes ...\" | Retrieved: Reviews: accumulate in lysosomes, raise pH, inhibit antigen processing; 2024 review: mechanism not yet fully elucidated.",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7880079",
+   "action": "edited",
+   "newSentence": "Reviews describe hydroxychloroquine building up in lysosomes and disrupting how immune cells process antigens, and one review notes that its exact mechanism has not been fully worked out."
+  },
+  {
+   "id": "c05",
+   "classification": "supported",
+   "evidence": "Original: \"Retinal damage ... largely irreversible, so eye monitoring is recommended.\" | Retrieved: RCOphth: retinopathy largely irreversible; baseline test not recommended, monitoring recommended.",
+   "url": "https://curriculum.rcophth.ac.uk/2020/12/hydroxychloroquine-and-chloroquine-retinopathy-recommendations-on-monitoring/",
+   "action": "edited",
+   "newSentence": "Retinal damage from these medicines is largely irreversible, so eye monitoring is recommended."
+  },
+  {
+   "id": "c06",
+   "classification": "supported",
+   "evidence": "Original: \"The Royal College says extra risk factors can justify starting eye monitoring earlier.\" | Retrieved: RCOphth: additional risk factors may justify annual monitoring from the start.",
+   "url": "https://curriculum.rcophth.ac.uk/2020/12/hydroxychloroquine-and-chloroquine-retinopathy-recommendations-on-monitoring/",
+   "action": "edited",
+   "newSentence": "The Royal College says extra risk factors can justify eye monitoring from the start of treatment, as decided by the prescriber."
+  },
+  {
+   "id": "c07",
+   "classification": "unsupported",
+   "evidence": "Original: \"The prescriber, not the eye specialist, decides whether to stop treatment.\" | Retrieved: No retrieved source for the prescriber-not-eye-specialist decision.",
+   "url": "https://www.rcophth.ac.uk/wp-content/uploads/2026/06/Hydroxychloroquine-Exec-summary.pdf",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c08",
+   "classification": "supported",
+   "evidence": "Original: \"(new)\" | Retrieved: RCOphth: chloroquine appears more retinotoxic than hydroxychloroquine.",
+   "url": "https://curriculum.rcophth.ac.uk/2020/12/hydroxychloroquine-and-chloroquine-retinopathy-recommendations-on-monitoring/",
+   "action": "edited",
+   "newSentence": "The Royal College says chloroquine appears to be more retinotoxic than hydroxychloroquine."
+  },
+  {
+   "id": "c09",
+   "classification": "supported",
+   "evidence": "Original: \"The Royal College lists tamoxifen use as a factor that can justify earlier eye monitoring.\" | Retrieved: RCOphth: tamoxifen use is an additional risk factor.",
+   "url": "https://curriculum.rcophth.ac.uk/2020/12/hydroxychloroquine-and-chloroquine-retinopathy-recommendations-on-monitoring/",
+   "action": "kept",
+   "newSentence": "The Royal College lists tamoxifen use as a factor that can justify eye monitoring from the start of treatment."
+  },
+  {
+   "id": "c10",
+   "classification": "supported",
+   "evidence": "Original: \"NRAS advises contacting the GP or specialist team about any change in vision.\" | Retrieved: NRAS: contact GP or specialist team about any vision change.",
+   "url": "https://nras.org.uk/resource/hydroxychloroquine/",
+   "action": "kept",
+   "newSentence": "NRAS advises contacting the GP or specialist team about any change in vision ."
+  }
+ ],
+ "notes": "Class page reuses retrievals of hydroxychloroquine item (no separate searches). Chloroquine membership rests on the RCOphth guideline covering both drugs only; no chloroquine NHS page retrieved."
+}

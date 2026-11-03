@@ -1,0 +1,1115 @@
+{
+ "id": "covid-19",
+ "searchesUsed": 14,
+ "counts": {
+  "supported": 85,
+  "textbook": 2,
+  "unsupported": 20,
+  "wrong": 2,
+  "unsafe": 1,
+  "unchecked": 0
+ },
+ "claims": [
+  {
+   "id": "c001",
+   "where": "definition",
+   "sentence": "COVID-19 is an illness caused by a virus called coronavirus (SARS-CoV-2), with symptoms that overlap with colds and flu.",
+   "classification": "supported",
+   "evidence": "NHS/WHO: caused by SARS-CoV-2, spreads via respiratory particles; symptoms very similar to colds and flu; WHO lists higher-risk groups; NHS describes long COVID",
+   "url": "https://www.nhs.uk/conditions/covid-19/covid-19-symptoms-and-what-to-do/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c002",
+   "where": "overview",
+   "sentence": "COVID-19 is an infection caused by a virus that spreads through the air when an infected person breathes, talks, coughs or sneezes.",
+   "classification": "supported",
+   "evidence": "NHS/WHO: caused by SARS-CoV-2, spreads via respiratory particles; symptoms very similar to colds and flu; WHO lists higher-risk groups; NHS describes long COVID",
+   "url": "https://www.nhs.uk/conditions/covid-19/covid-19-symptoms-and-what-to-do/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c003",
+   "where": "overview",
+   "sentence": "Its symptoms are very similar to those of other illnesses such as colds and flu.",
+   "classification": "supported",
+   "evidence": "NHS/WHO: caused by SARS-CoV-2, spreads via respiratory particles; symptoms very similar to colds and flu; WHO lists higher-risk groups; NHS describes long COVID",
+   "url": "https://www.nhs.uk/conditions/covid-19/covid-19-symptoms-and-what-to-do/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c004",
+   "where": "overview",
+   "sentence": "Some people, including older adults and those with weakened immune systems or certain long-term conditions, are at higher risk of becoming seriously ill.",
+   "classification": "supported",
+   "evidence": "NHS/WHO: caused by SARS-CoV-2, spreads via respiratory particles; symptoms very similar to colds and flu; WHO lists higher-risk groups; NHS describes long COVID",
+   "url": "https://www.nhs.uk/conditions/covid-19/covid-19-symptoms-and-what-to-do/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c005",
+   "where": "overview",
+   "sentence": "Some people go on to have symptoms that last for a long time, which is called long COVID.",
+   "classification": "supported",
+   "evidence": "NHS/WHO: caused by SARS-CoV-2, spreads via respiratory particles; symptoms very similar to colds and flu; WHO lists higher-risk groups; NHS describes long COVID",
+   "url": "https://www.nhs.uk/conditions/covid-19/covid-19-symptoms-and-what-to-do/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c006",
+   "where": "diagnosis",
+   "sentence": "COVID-19 can be suspected from symptoms, but these are very similar to colds and flu, so a test is used to confirm it.",
+   "classification": "unsupported",
+   "evidence": "NHS says symptoms very similar to colds/flu; retrieved text does not say a test is used to confirm; NHS says most with symptoms need not test",
+   "url": "https://www.nhs.uk/conditions/covid-19/covid-19-symptoms-and-what-to-do/",
+   "action": "edited",
+   "newSentence": "The NHS says the symptoms are very similar to those of colds and flu."
+  },
+  {
+   "id": "c007",
+   "where": "diagnosis",
+   "sentence": "Rapid antigen tests give quick results and can be done at home, while PCR tests are done at testing sites or healthcare facilities.",
+   "classification": "unsupported",
+   "evidence": "No retrieved text on rapid antigen vs PCR location/home use",
+   "url": "",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c008",
+   "where": "diagnosis",
+   "sentence": "The NHS says most people cannot get free tests, though eligible people can check whether they can get free NHS tests.",
+   "classification": "supported",
+   "evidence": "NHS LFT page: most people cannot get free tests; free for those at highest risk (attribution to NHS fine; wording tightened)",
+   "url": "https://www.nhs.uk/tests-and-treatments/covid-19-rapid-lateral-flow-test/",
+   "action": "edited",
+   "newSentence": "It also says most people cannot get free rapid lateral flow tests, though some people at highest risk of serious illness can, and that most people with symptoms do not need to take one."
+  },
+  {
+   "id": "c009",
+   "where": "diagnosis",
+   "sentence": "For people eligible for COVID-19 treatments, the NHS advises taking a rapid lateral flow test as soon as symptoms start.",
+   "classification": "supported",
+   "evidence": "NHS symptoms page: eligible for treatments, take LFT as soon as symptoms start",
+   "url": "https://www.nhs.uk/conditions/covid-19/covid-19-symptoms-and-what-to-do/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c010",
+   "where": "treatment",
+   "sentence": "Most illness is managed at home with rest and plenty of fluids, and the NHS says paracetamol or ibuprofen can be considered.",
+   "classification": "unsupported",
+   "evidence": "NHS: home measures can ease symptoms; \"most illness managed at home\" not stated",
+   "url": "https://www.nhs.uk/conditions/covid-19/covid-19-symptoms-and-what-to-do/",
+   "action": "edited",
+   "newSentence": "The NHS says home measures such as rest, plenty of fluids and paracetamol or ibuprofen can ease symptoms."
+  },
+  {
+   "id": "c011",
+   "where": "treatment",
+   "sentence": "The NHS suggests avoiding lying flat on the back when coughing and not using a fan to cool the room.",
+   "classification": "supported",
+   "evidence": "NHS: avoid lying flat with cough, no fan",
+   "url": "https://www.nhs.uk/conditions/covid-19/covid-19-symptoms-and-what-to-do/",
+   "action": "edited",
+   "newSentence": "For a cough, it suggests avoiding lying flat on the back and not using a fan to cool the room."
+  },
+  {
+   "id": "c012",
+   "where": "treatment",
+   "sentence": "Antiviral medicines, including nirmatrelvir with ritonavir and molnupiravir, are offered to people at highest risk of becoming seriously ill.",
+   "classification": "supported",
+   "evidence": "NHS: antivirals for highest risk (Paxlovid, Lagevrio)",
+   "url": "https://www.nhs.uk/conditions/covid-19/covid-19-symptoms-and-what-to-do/",
+   "action": "edited",
+   "newSentence": "The NHS offers antiviral medicines, including nirmatrelvir with ritonavir and molnupiravir, to people at highest risk of becoming seriously ill."
+  },
+  {
+   "id": "c013",
+   "where": "treatment",
+   "sentence": "Antiviral treatment has to be started early in the illness to be effective.",
+   "classification": "supported",
+   "evidence": "CDC: treatment must start within days of symptom onset (not NHS-attributed in the retrieved text)",
+   "url": "https://www.cdc.gov/covid/treatment/index.html",
+   "action": "edited",
+   "newSentence": "The CDC says antiviral treatment has to be started soon after symptoms begin."
+  },
+  {
+   "id": "c014",
+   "where": "prevention",
+   "sentence": "Vaccination helps protect against severe illness, and the UK offers a seasonal programme to the groups at highest risk.",
+   "classification": "textbook",
+   "evidence": "Vaccination protects against severe illness: widely accepted; no retrieved sentence; programme for highest-risk groups supported by NHS/UKHSA",
+   "url": "https://www.nhs.uk/vaccinations/covid-19-vaccine/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c015",
+   "where": "prevention",
+   "sentence": "The NHS advises staying at home and away from others when symptoms make a person feel unwell.",
+   "classification": "supported",
+   "evidence": "NHS: stay home with high temp or too unwell for normal activities",
+   "url": "https://www.nhs.uk/conditions/covid-19/covid-19-symptoms-and-what-to-do/",
+   "action": "edited",
+   "newSentence": "The NHS advises staying at home and away from others when there is a high temperature or a person does not feel well enough to do normal activities."
+  },
+  {
+   "id": "c016",
+   "where": "seekCare",
+   "sentence": "Call 999 or go to A&E for sudden chest pain, severe breathlessness, coughing up blood, or collapsing.",
+   "classification": "supported",
+   "evidence": "NHS: 999/A&E list; GP for persisting symptoms",
+   "url": "https://www.nhs.uk/conditions/covid-19/covid-19-symptoms-and-what-to-do/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c017",
+   "where": "seekCare",
+   "sentence": "Contact the GP or NHS 111 if symptoms get worse or do not improve, or if a high temperature persists.",
+   "classification": "supported",
+   "evidence": "NHS: contact GP/111 if worsening or not improving; high temperature for five days or more",
+   "url": "https://www.nhs.uk/conditions/covid-19/covid-19-symptoms-and-what-to-do/",
+   "action": "edited",
+   "newSentence": "Contact the GP or NHS 111 urgently if symptoms are getting worse or not improving, or if a high temperature lasts five days or more."
+  },
+  {
+   "id": "c018",
+   "where": "seekCare",
+   "sentence": "People at higher risk, such as those who are pregnant, older or have a weakened immune system, are advised to get medical advice sooner.",
+   "classification": "supported",
+   "evidence": "NHS: higher risk, e.g. pregnant, 60+, immunocompromised, get advice",
+   "url": "https://www.nhs.uk/conditions/covid-19/covid-19-symptoms-and-what-to-do/",
+   "action": "edited",
+   "newSentence": "People at higher risk, such as those who are pregnant, aged 60 or over, or have a weakened immune system, are advised to get medical advice sooner."
+  },
+  {
+   "id": "c019",
+   "where": "seekCare",
+   "sentence": "A routine GP appointment is the route for symptoms that last a long time after the infection.",
+   "classification": "supported",
+   "evidence": "NHS: 999/A&E list; GP for persisting symptoms",
+   "url": "https://www.nhs.uk/conditions/covid-19/covid-19-symptoms-and-what-to-do/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c020",
+   "where": "causes[0]",
+   "sentence": "Infection with the virus SARS-CoV-2",
+   "classification": "supported",
+   "evidence": "WHO: spread via infectious respiratory particles, surfaces then eyes/nose/mouth, close contact and shared closed space",
+   "url": "https://www.who.int/news-room/fact-sheets/detail/coronavirus-disease-(covid-19)",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c021",
+   "where": "causes[1]",
+   "sentence": "Breathing in infectious respiratory particles released when an infected person breathes, talks, coughs or sneezes",
+   "classification": "supported",
+   "evidence": "WHO: spread via infectious respiratory particles, surfaces then eyes/nose/mouth, close contact and shared closed space",
+   "url": "https://www.who.int/news-room/fact-sheets/detail/coronavirus-disease-(covid-19)",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c022",
+   "where": "causes[2]",
+   "sentence": "Touching a contaminated surface and then the eyes, nose or mouth",
+   "classification": "supported",
+   "evidence": "WHO: spread via infectious respiratory particles, surfaces then eyes/nose/mouth, close contact and shared closed space",
+   "url": "https://www.who.int/news-room/fact-sheets/detail/coronavirus-disease-(covid-19)",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c023",
+   "where": "causes[3]",
+   "sentence": "Close contact with an infected person or sharing a closed space with them",
+   "classification": "supported",
+   "evidence": "WHO: spread via infectious respiratory particles, surfaces then eyes/nose/mouth, close contact and shared closed space",
+   "url": "https://www.who.int/news-room/fact-sheets/detail/coronavirus-disease-(covid-19)",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c024",
+   "where": "riskFactors[0]",
+   "sentence": "Older age",
+   "classification": "supported",
+   "evidence": "WHO lists older adults, underlying conditions (diabetes, obesity, lung, heart disease), immunosuppression incl HIV, pregnancy, unvaccinated",
+   "url": "https://www.who.int/news-room/fact-sheets/detail/coronavirus-disease-(covid-19)",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c025",
+   "where": "riskFactors[1]",
+   "sentence": "Underlying health conditions such as diabetes, heart or lung disease and obesity",
+   "classification": "supported",
+   "evidence": "WHO lists older adults, underlying conditions (diabetes, obesity, lung, heart disease), immunosuppression incl HIV, pregnancy, unvaccinated",
+   "url": "https://www.who.int/news-room/fact-sheets/detail/coronavirus-disease-(covid-19)",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c026",
+   "where": "riskFactors[2]",
+   "sentence": "A weakened immune system, including HIV",
+   "classification": "supported",
+   "evidence": "WHO lists older adults, underlying conditions (diabetes, obesity, lung, heart disease), immunosuppression incl HIV, pregnancy, unvaccinated",
+   "url": "https://www.who.int/news-room/fact-sheets/detail/coronavirus-disease-(covid-19)",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c027",
+   "where": "riskFactors[3]",
+   "sentence": "Pregnancy",
+   "classification": "supported",
+   "evidence": "WHO lists older adults, underlying conditions (diabetes, obesity, lung, heart disease), immunosuppression incl HIV, pregnancy, unvaccinated",
+   "url": "https://www.who.int/news-room/fact-sheets/detail/coronavirus-disease-(covid-19)",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c028",
+   "where": "riskFactors[4]",
+   "sentence": "Not being vaccinated",
+   "classification": "supported",
+   "evidence": "WHO lists older adults, underlying conditions (diabetes, obesity, lung, heart disease), immunosuppression incl HIV, pregnancy, unvaccinated",
+   "url": "https://www.who.int/news-room/fact-sheets/detail/coronavirus-disease-(covid-19)",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c029",
+   "where": "riskFactors[5]",
+   "sentence": "Working in health and care, which raises the chance of being exposed",
+   "classification": "unsupported",
+   "evidence": "No retrieved source says health/care work raises exposure risk (CDC text only about aerosol-generating procedures)",
+   "url": "",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c030",
+   "where": "signs[0]",
+   "sentence": "A high temperature",
+   "classification": "supported",
+   "evidence": "NHS: high temperature is a core symptom",
+   "url": "https://www.nhs.uk/conditions/covid-19/covid-19-symptoms-and-what-to-do/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c031",
+   "where": "signs[1]",
+   "sentence": "Fast or laboured breathing in more severe illness",
+   "classification": "unsupported",
+   "evidence": "CDC lists difficulty breathing as adult warning sign; \"fast/laboured breathing\" is listed for children, not adults",
+   "url": "https://www.cdc.gov/respiratory-viruses/about/index.html",
+   "action": "edited",
+   "newSentence": "Difficulty breathing or shortness of breath in more severe illness, which the CDC lists as an emergency warning sign in adults"
+  },
+  {
+   "id": "c032",
+   "where": "complications[0]",
+   "sentence": "Becoming seriously ill, especially in people at higher risk",
+   "classification": "supported",
+   "evidence": "NHS long COVID page: fatigue, breathlessness, joint pain, muscle aches, brain fog, palpitations, dizziness, anxiety, depression; severe illness more likely in higher-risk groups (WHO)",
+   "url": "https://www.nhs.uk/conditions/long-covid/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c033",
+   "where": "complications[1]",
+   "sentence": "Long COVID, with symptoms lasting for weeks or longer",
+   "classification": "supported",
+   "evidence": "NHS long COVID page: fatigue, breathlessness, joint pain, muscle aches, brain fog, palpitations, dizziness, anxiety, depression; severe illness more likely in higher-risk groups (WHO)",
+   "url": "https://www.nhs.uk/conditions/long-covid/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c034",
+   "where": "complications[2]",
+   "sentence": "Persistent tiredness, breathlessness, joint pain and aching muscles after the infection",
+   "classification": "supported",
+   "evidence": "NHS long COVID page: fatigue, breathlessness, joint pain, muscle aches, brain fog, palpitations, dizziness, anxiety, depression; severe illness more likely in higher-risk groups (WHO)",
+   "url": "https://www.nhs.uk/conditions/long-covid/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c035",
+   "where": "complications[3]",
+   "sentence": "Problems with memory and concentration, often called brain fog",
+   "classification": "supported",
+   "evidence": "NHS long COVID page: fatigue, breathlessness, joint pain, muscle aches, brain fog, palpitations, dizziness, anxiety, depression; severe illness more likely in higher-risk groups (WHO)",
+   "url": "https://www.nhs.uk/conditions/long-covid/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c036",
+   "where": "complications[4]",
+   "sentence": "Heart palpitations, dizziness, and anxiety or depression during long COVID",
+   "classification": "supported",
+   "evidence": "NHS long COVID page: fatigue, breathlessness, joint pain, muscle aches, brain fog, palpitations, dizziness, anxiety, depression; severe illness more likely in higher-risk groups (WHO)",
+   "url": "https://www.nhs.uk/conditions/long-covid/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c037",
+   "where": "sec0",
+   "sentence": "COVID-19 is an illness caused by a virus called coronavirus, formally SARS-CoV-2.",
+   "classification": "supported",
+   "evidence": "WHO: respiratory particles, contaminated surface then eyes/nose/mouth, close contact/shared indoor air",
+   "url": "https://www.who.int/news-room/fact-sheets/detail/coronavirus-disease-(covid-19)",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c038",
+   "where": "sec0",
+   "sentence": "The virus spreads through the air in infectious respiratory particles that an infected person releases when breathing, talking, coughing or sneezing.",
+   "classification": "supported",
+   "evidence": "WHO: respiratory particles, contaminated surface then eyes/nose/mouth, close contact/shared indoor air",
+   "url": "https://www.who.int/news-room/fact-sheets/detail/coronavirus-disease-(covid-19)",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c039",
+   "where": "sec0",
+   "sentence": "It can also enter the body when someone touches a contaminated surface and then touches the eyes, nose or mouth.",
+   "classification": "supported",
+   "evidence": "WHO: respiratory particles, contaminated surface then eyes/nose/mouth, close contact/shared indoor air",
+   "url": "https://www.who.int/news-room/fact-sheets/detail/coronavirus-disease-(covid-19)",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c040",
+   "where": "sec0",
+   "sentence": "People are more likely to catch the virus when they are close to an infected person, or when they share a closed space with them.",
+   "classification": "supported",
+   "evidence": "WHO: respiratory particles, contaminated surface then eyes/nose/mouth, close contact/shared indoor air",
+   "url": "https://www.who.int/news-room/fact-sheets/detail/coronavirus-disease-(covid-19)",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c041",
+   "where": "sec0",
+   "sentence": "An infected person can pass the virus on before any symptoms appear, and may also spread it without ever having symptoms.",
+   "classification": "supported",
+   "evidence": "CDC: infected people can spread without symptoms and before symptoms; attribution WHO -> CDC",
+   "url": "https://archive.cdc.gov/www_cdc_gov/coronavirus/2019-ncov/hcp/clinical-care/clinical-considerations-presentation.html",
+   "action": "edited",
+   "newSentence": "The US Centers for Disease Control and Prevention (CDC) says that anyone infected can spread the virus even without symptoms, and that people can pass it on before symptoms begin."
+  },
+  {
+   "id": "c042",
+   "where": "sec0",
+   "sentence": "WHO also describes transmission as occurring mainly from people who have symptoms, and sometimes just before they develop them.",
+   "classification": "unsupported",
+   "evidence": "Retrieved WHO text did not say transmission occurs mainly from symptomatic people",
+   "url": "",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c043",
+   "where": "sec1",
+   "sentence": "The NHS says the symptoms are very similar to those of other illnesses such as colds and flu, which can make them hard to tell apart.",
+   "classification": "supported",
+   "evidence": "NHS symptoms page: very similar to colds/flu; high temp, new continuous cough, change in smell/taste; shortness of breath, tiredness, body aches, headache",
+   "url": "https://www.nhs.uk/conditions/covid-19/covid-19-symptoms-and-what-to-do/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c044",
+   "where": "sec1",
+   "sentence": "The most typical ones are a high temperature, a new continuous cough, and a change in the sense of smell or taste.",
+   "classification": "supported",
+   "evidence": "NHS symptoms page: very similar to colds/flu; high temp, new continuous cough, change in smell/taste; shortness of breath, tiredness, body aches, headache",
+   "url": "https://www.nhs.uk/conditions/covid-19/covid-19-symptoms-and-what-to-do/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c045",
+   "where": "sec1",
+   "sentence": "The NHS also lists shortness of breath, tiredness, body aches and headache.",
+   "classification": "supported",
+   "evidence": "NHS symptoms page: very similar to colds/flu; high temp, new continuous cough, change in smell/taste; shortness of breath, tiredness, body aches, headache",
+   "url": "https://www.nhs.uk/conditions/covid-19/covid-19-symptoms-and-what-to-do/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c046",
+   "where": "sec1",
+   "sentence": "Some people have a sore throat, a blocked or runny nose, loss of appetite, diarrhoea or feel sick.",
+   "classification": "unsupported",
+   "evidence": "Only sore throat and diarrhoea retrieved; blocked/runny nose, loss of appetite, feeling sick not retrieved",
+   "url": "https://www.nhs.uk/conditions/covid-19/covid-19-symptoms-and-what-to-do/",
+   "action": "edited",
+   "newSentence": "some people have a sore throat or diarrhoea."
+  },
+  {
+   "id": "c047",
+   "where": "sec1",
+   "sentence": "The NHS advises staying at home and away from other people when there is a high temperature or a person does not feel well enough to do normal activities.",
+   "classification": "supported",
+   "evidence": "NHS symptoms page: stay home with high temp or too unwell; return when better; rest, fluids, paracetamol or ibuprofen; avoid lying flat with cough, no fan",
+   "url": "https://www.nhs.uk/conditions/covid-19/covid-19-symptoms-and-what-to-do/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c048",
+   "where": "sec1",
+   "sentence": "Normal activities can restart once the person feels better or the temperature has gone down.",
+   "classification": "supported",
+   "evidence": "NHS symptoms page: stay home with high temp or too unwell; return when better; rest, fluids, paracetamol or ibuprofen; avoid lying flat with cough, no fan",
+   "url": "https://www.nhs.uk/conditions/covid-19/covid-19-symptoms-and-what-to-do/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c049",
+   "where": "sec1",
+   "sentence": "Self-care described by the NHS includes resting, drinking plenty of fluids and considering paracetamol or ibuprofen.",
+   "classification": "supported",
+   "evidence": "NHS symptoms page: stay home with high temp or too unwell; return when better; rest, fluids, paracetamol or ibuprofen; avoid lying flat with cough, no fan",
+   "url": "https://www.nhs.uk/conditions/covid-19/covid-19-symptoms-and-what-to-do/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c050",
+   "where": "sec1",
+   "sentence": "It also suggests avoiding lying flat on the back when coughing and not using a fan to cool the room.",
+   "classification": "supported",
+   "evidence": "NHS symptoms page: stay home with high temp or too unwell; return when better; rest, fluids, paracetamol or ibuprofen; avoid lying flat with cough, no fan",
+   "url": "https://www.nhs.uk/conditions/covid-19/covid-19-symptoms-and-what-to-do/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c051",
+   "where": "sec2",
+   "sentence": "WHO says older adults, people with underlying health conditions and unvaccinated people are at higher risk of severe illness.",
+   "classification": "supported",
+   "evidence": "WHO fact sheet lists older adults, underlying conditions, unvaccinated, pregnancy, immunosuppression incl HIV; CDC: risk greater with more comorbidities",
+   "url": "https://www.who.int/news-room/fact-sheets/detail/coronavirus-disease-(covid-19)",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c052",
+   "where": "sec2",
+   "sentence": "The conditions it lists include diabetes, heart or lung disease, obesity and a weakened immune system.",
+   "classification": "supported",
+   "evidence": "WHO fact sheet lists older adults, underlying conditions, unvaccinated, pregnancy, immunosuppression incl HIV; CDC: risk greater with more comorbidities",
+   "url": "https://www.who.int/news-room/fact-sheets/detail/coronavirus-disease-(covid-19)",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c053",
+   "where": "sec2",
+   "sentence": "Pregnant women and people with immunosuppression, such as those living with HIV, are also named as higher-risk groups.",
+   "classification": "supported",
+   "evidence": "WHO fact sheet lists older adults, underlying conditions, unvaccinated, pregnancy, immunosuppression incl HIV; CDC: risk greater with more comorbidities",
+   "url": "https://www.who.int/news-room/fact-sheets/detail/coronavirus-disease-(covid-19)",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c054",
+   "where": "sec2",
+   "sentence": "The US Centers for Disease Control and Prevention says the risk rises with each additional underlying condition.",
+   "classification": "supported",
+   "evidence": "WHO fact sheet lists older adults, underlying conditions, unvaccinated, pregnancy, immunosuppression incl HIV; CDC: risk greater with more comorbidities",
+   "url": "https://www.who.int/news-room/fact-sheets/detail/coronavirus-disease-(covid-19)",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c055",
+   "where": "sec2",
+   "sentence": "Health and care workers face a higher chance of exposure because of where they work.",
+   "classification": "unsupported",
+   "evidence": "No retrieved text",
+   "url": "",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c056",
+   "where": "sec2",
+   "sentence": "In the UK, the Joint Committee on Vaccination and Immunisation advised that older adults and people who are immunosuppressed remain at highest risk of serious disease.",
+   "classification": "unsupported",
+   "evidence": "JCVI statement text not retrieved as saying older/immunosuppressed remain at highest risk",
+   "url": "",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c057",
+   "where": "sec2",
+   "sentence": "For this reason, antiviral medicines through the NHS are aimed at people at highest risk of becoming seriously ill.",
+   "classification": "unsupported",
+   "evidence": "Causal \"for this reason\" not in sources; NHS offers antivirals to highest-risk group",
+   "url": "https://www.nhs.uk/conditions/covid-19/covid-19-symptoms-and-what-to-do/",
+   "action": "edited",
+   "newSentence": "The NHS offers antiviral medicines to people at highest risk of becoming seriously ill."
+  },
+  {
+   "id": "c058",
+   "where": "sec3",
+   "sentence": "Rapid antigen tests give quick results and can be done at home, while PCR tests are done at testing sites or healthcare facilities.",
+   "classification": "unsupported",
+   "evidence": "No retrieved text on antigen vs PCR",
+   "url": "",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c059",
+   "where": "sec3",
+   "sentence": "The NHS advises people who are eligible for COVID-19 treatments to take a rapid lateral flow test as soon as symptoms start.",
+   "classification": "supported",
+   "evidence": "NHS: eligible people advised to take LFT as soon as symptoms start; antivirals nirmatrelvir+ritonavir (Paxlovid) and molnupiravir (Lagevrio) for highest risk",
+   "url": "https://www.nhs.uk/conditions/covid-19/covid-19-symptoms-and-what-to-do/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c060",
+   "where": "sec3",
+   "sentence": "GOV.UK states that there are no COVID-19 restrictions in the UK and that most people cannot get free tests, though some eligible people can.",
+   "classification": "wrong",
+   "evidence": "Attributed to GOV.UK; \"no restrictions\" only from a stale gov.uk page; free-test statement comes from NHS pages",
+   "url": "https://www.nhs.uk/tests-and-treatments/covid-19-rapid-lateral-flow-test/",
+   "action": "edited",
+   "newSentence": "The NHS says most people cannot get free COVID-19 rapid lateral flow tests, though some people at highest risk of serious illness can."
+  },
+  {
+   "id": "c061",
+   "where": "sec3",
+   "sentence": "Most illness is managed at home with rest and fluids.",
+   "classification": "unsupported",
+   "evidence": "Not stated; NHS says home measures can ease symptoms",
+   "url": "https://www.nhs.uk/conditions/covid-19/covid-19-symptoms-and-what-to-do/",
+   "action": "edited",
+   "newSentence": "The NHS says home measures such as rest and plenty of fluids can ease symptoms."
+  },
+  {
+   "id": "c062",
+   "where": "sec3",
+   "sentence": "Antiviral medicines, such as nirmatrelvir with ritonavir (Paxlovid) and molnupiravir (Lagevrio), are offered to people at highest risk of becoming seriously ill.",
+   "classification": "supported",
+   "evidence": "NHS: eligible people advised to take LFT as soon as symptoms start; antivirals nirmatrelvir+ritonavir (Paxlovid) and molnupiravir (Lagevrio) for highest risk",
+   "url": "https://www.nhs.uk/conditions/covid-19/covid-19-symptoms-and-what-to-do/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c063",
+   "where": "sec3",
+   "sentence": "Antivirals have to be started early in the illness, so a clinician decides whether a person qualifies soon after symptoms begin.",
+   "classification": "unsupported",
+   "evidence": "\"Clinician decides whether a person qualifies soon after symptoms begin\" not retrieved; NHS: doctor advises most suitable treatment after assessment; CDC: start soon",
+   "url": "https://www.cdc.gov/covid/treatment/index.html",
+   "action": "edited",
+   "newSentence": "a doctor advises which treatment is most suitable after assessment. The CDC says antiviral treatment has to be started soon after symptoms begin, and advises people at higher risk to talk to a healthcare provider right away, even with mild symptoms."
+  },
+  {
+   "id": "c064",
+   "where": "sec3",
+   "sentence": "Testing can help guide treatment decisions, and a person at higher risk can ask a clinician about treatment.",
+   "classification": "supported",
+   "evidence": "CDC: testing can guide treatment; high-risk people should talk to a provider right away",
+   "url": "https://www.cdc.gov/covid/treatment/index.html",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c065",
+   "where": "sec4",
+   "sentence": "The UK runs a seasonal COVID-19 vaccination programme that offers vaccine to the groups at highest risk.",
+   "classification": "supported",
+   "evidence": "NHS vaccine page: seasonal programme; 75+, 6 months-74 weakened immune system, older-adult care home residents",
+   "url": "https://www.nhs.uk/vaccinations/covid-19-vaccine/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c066",
+   "where": "sec4",
+   "sentence": "The NHS says the vaccine is available to people aged 75 and over, to some people aged 6 months to 74 with a weakened immune system, and to residents of older adult care homes.",
+   "classification": "supported",
+   "evidence": "NHS vaccine page: seasonal programme; 75+, 6 months-74 weakened immune system, older-adult care home residents",
+   "url": "https://www.nhs.uk/vaccinations/covid-19-vaccine/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c067",
+   "where": "sec4",
+   "sentence": "The UKHSA states that the groups are the same across England, Scotland, Wales and Northern Ireland.",
+   "classification": "unsupported",
+   "evidence": "Retrieved UKHSA statement is for the spring 2026 programme only",
+   "url": "https://ukhsa.blog.gov.uk/2026/04/07/whos-eligible-for-the-2026-covid-19-vaccine-or-spring-booster/",
+   "action": "edited",
+   "newSentence": "For the spring 2026 programme, UKHSA said the groups were the same across England, Scotland, Wales and Northern Ireland."
+  },
+  {
+   "id": "c068",
+   "where": "sec4",
+   "sentence": "Eligibility for people with a weakened immune system depends on criteria in the Green Book, which UKHSA publishes for health professionals.",
+   "classification": "supported",
+   "evidence": "Green Book chapter 14a immunosuppression criteria; \"UKHSA publishes for health professionals\" dropped",
+   "url": "https://www.nhs.uk/vaccinations/covid-19-vaccine/",
+   "action": "edited",
+   "newSentence": "Eligibility for people with a weakened immune system depends on criteria in the Green Book."
+  },
+  {
+   "id": "c069",
+   "where": "sec4",
+   "sentence": "The NHS lists causes such as blood cancers, transplants, HIV and long-term immunosuppressive treatment, and says the list is only a guide, so a GP or pharmacist can advise.",
+   "classification": "supported",
+   "evidence": "NHS vaccine page examples: blood cancer, transplants, HIV, steroids; list does not cover everything",
+   "url": "https://www.nhs.uk/vaccinations/covid-19-vaccine/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c070",
+   "where": "sec4",
+   "sentence": "Most eligible people can have the vaccine, including those who are pregnant or breastfeeding and most people with allergies.",
+   "classification": "unsafe",
+   "evidence": "No retrieved text on pregnancy, breastfeeding or allergies; reassurance about allergies is unsafe without a source",
+   "url": "",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c071",
+   "where": "sec4",
+   "sentence": "A person with a COVID-19 infection or a high temperature is asked to wait until they feel better before vaccination.",
+   "classification": "unsupported",
+   "evidence": "No retrieved text on waiting after infection or fever",
+   "url": "",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c072",
+   "where": "sec4",
+   "sentence": "Appointments can be booked online or in the NHS App, or through a walk-in site, without waiting for an invitation.",
+   "classification": "supported",
+   "evidence": "NHS vaccine page: book online or NHS App, or walk-in; no need to wait for invitation",
+   "url": "https://www.nhs.uk/vaccinations/covid-19-vaccine/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c073",
+   "where": "sec4",
+   "sentence": "The JCVI noted that current vaccines give limited protection against mild infection and no evident protection against passing the virus on.",
+   "classification": "unsupported",
+   "evidence": "JCVI efficacy statement not retrieved",
+   "url": "",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c074",
+   "where": "sec5",
+   "sentence": "The NHS describes long COVID, also called post-COVID syndrome, as symptoms of COVID-19 that last longer than 12 weeks.",
+   "classification": "supported",
+   "evidence": "NHS long COVID: >12 weeks; common symptoms; severity at first illness not linked; no cure but treatment helps; physiotherapy; GP assesses and services exist",
+   "url": "https://www.nhs.uk/conditions/long-covid/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c075",
+   "where": "sec5",
+   "sentence": "The most commonly reported symptoms are extreme tiredness, shortness of breath, joint pain and aching muscles, and problems with memory and concentration.",
+   "classification": "supported",
+   "evidence": "NHS long COVID: >12 weeks; common symptoms; severity at first illness not linked; no cure but treatment helps; physiotherapy; GP assesses and services exist",
+   "url": "https://www.nhs.uk/conditions/long-covid/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c076",
+   "where": "sec5",
+   "sentence": "Having a mild first illness does not rule it out, as the chance of long-term symptoms does not seem to be linked to how ill someone was at first.",
+   "classification": "supported",
+   "evidence": "NHS long COVID: >12 weeks; common symptoms; severity at first illness not linked; no cure but treatment helps; physiotherapy; GP assesses and services exist",
+   "url": "https://www.nhs.uk/conditions/long-covid/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c077",
+   "where": "sec5",
+   "sentence": "The NHS says there is no cure, but treatment can help manage symptoms, and physiotherapy for breathing and tiredness is one option.",
+   "classification": "supported",
+   "evidence": "NHS long COVID: >12 weeks; common symptoms; severity at first illness not linked; no cure but treatment helps; physiotherapy; GP assesses and services exist",
+   "url": "https://www.nhs.uk/conditions/long-covid/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c078",
+   "where": "sec5",
+   "sentence": "For persistent symptoms, the route is a GP appointment, and a GP may refer the person to an NHS long COVID service.",
+   "classification": "supported",
+   "evidence": "NHS long COVID: >12 weeks; common symptoms; severity at first illness not linked; no cure but treatment helps; physiotherapy; GP assesses and services exist",
+   "url": "https://www.nhs.uk/conditions/long-covid/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c079",
+   "where": "sec5",
+   "sentence": "For an urgent worsening of acute illness, the NHS says to contact the GP or NHS 111 the same day.",
+   "classification": "unsupported",
+   "evidence": "NHS: contact GP/NHS 111 urgently; \"same day\" not retrieved",
+   "url": "https://www.nhs.uk/conditions/covid-19/covid-19-symptoms-and-what-to-do/",
+   "action": "edited",
+   "newSentence": "For worsening acute illness, the NHS says to contact a GP or NHS 111 urgently."
+  },
+  {
+   "id": "c080",
+   "where": "sec5",
+   "sentence": "Call 999 or go to A&E for sudden chest pain, severe breathlessness, coughing up blood, or collapsing.",
+   "classification": "supported",
+   "evidence": "NHS: 999/A&E for sudden chest pain, severe breathlessness, coughing up blood, collapse",
+   "url": "https://www.nhs.uk/conditions/covid-19/covid-19-symptoms-and-what-to-do/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c081",
+   "where": "faq0.q",
+   "sentence": "Is COVID-19 the same as flu or a cold?",
+   "classification": "supported",
+   "evidence": "Question only, no assertion; answer checked separately",
+   "url": "",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c082",
+   "where": "faq0.a",
+   "sentence": "They are different illnesses, but the NHS says the symptoms of COVID-19 are very similar to those of colds and flu.",
+   "classification": "textbook",
+   "evidence": "Different illnesses: textbook; cut anyway",
+   "url": "https://www.nhs.uk/conditions/covid-19/covid-19-symptoms-and-what-to-do/",
+   "action": "edited",
+   "newSentence": "The NHS says the symptoms of COVID-19 are very similar to those of colds and flu, so they can be hard to tell apart."
+  },
+  {
+   "id": "c083",
+   "where": "faq0.a",
+   "sentence": "The most typical COVID-19 symptoms are a fever, a cough and a change in smell or taste.",
+   "classification": "supported",
+   "evidence": "NHS: typical symptoms high temperature, cough, smell/taste change",
+   "url": "https://www.nhs.uk/conditions/covid-19/covid-19-symptoms-and-what-to-do/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c084",
+   "where": "faq0.a",
+   "sentence": "Because symptoms overlap, a test is how COVID-19 is told apart, and the NHS advises a lateral flow test for people eligible for treatment.",
+   "classification": "unsupported",
+   "evidence": "NHS says most with symptoms need not test; \"a test is how it is told apart\" not stated",
+   "url": "https://www.nhs.uk/conditions/covid-19/covid-19-symptoms-and-what-to-do/",
+   "action": "edited",
+   "newSentence": "The NHS says most people with symptoms do not need a rapid lateral flow test, but people eligible for COVID-19 treatments are advised to take one as soon as symptoms start."
+  },
+  {
+   "id": "c085",
+   "where": "faq1.q",
+   "sentence": "Who can have the COVID-19 vaccine on the NHS?",
+   "classification": "supported",
+   "evidence": "Question only, no assertion; answer checked separately",
+   "url": "",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c086",
+   "where": "faq1.a",
+   "sentence": "The NHS says the vaccine is available to people aged 75 and over, to people aged 6 months to 74 with a weakened immune system, and to older adult care home residents.",
+   "classification": "supported",
+   "evidence": "NHS vaccine page eligibility; UKHSA/practice notices show eligibility changed between seasons",
+   "url": "https://www.nhs.uk/vaccinations/covid-19-vaccine/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c087",
+   "where": "faq1.a",
+   "sentence": "The groups are the same across the UK nations.",
+   "classification": "unsupported",
+   "evidence": "Same across nations only retrieved for spring 2026",
+   "url": "",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c088",
+   "where": "faq1.a",
+   "sentence": "The NHS list of conditions and treatments that weaken the immune system is a guide, and a GP or pharmacist can advise someone who is unsure.",
+   "classification": "supported",
+   "evidence": "NHS list is not exhaustive; criteria in Green Book",
+   "url": "https://www.nhs.uk/vaccinations/covid-19-vaccine/",
+   "action": "edited",
+   "newSentence": "Its list of conditions and treatments that weaken the immune system does not cover everything, and the full criteria are in the Green Book."
+  },
+  {
+   "id": "c089",
+   "where": "faq1.a",
+   "sentence": "Eligibility can change from one season to the next.",
+   "classification": "supported",
+   "evidence": "NHS vaccine page eligibility; UKHSA/practice notices show eligibility changed between seasons",
+   "url": "https://www.nhs.uk/vaccinations/covid-19-vaccine/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c090",
+   "where": "faq2.q",
+   "sentence": "Can COVID-19 be spread by someone with no symptoms?",
+   "classification": "supported",
+   "evidence": "Question only, no assertion; answer checked separately",
+   "url": "",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c091",
+   "where": "faq2.a",
+   "sentence": "Yes.",
+   "classification": "supported",
+   "evidence": "CDC: infected people can spread without symptoms",
+   "url": "https://archive.cdc.gov/www_cdc_gov/coronavirus/2019-ncov/hcp/clinical-care/clinical-considerations-presentation.html",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c092",
+   "where": "faq2.a",
+   "sentence": "WHO says an infected person can spread the virus before symptoms appear and may spread it without developing symptoms at all.",
+   "classification": "wrong",
+   "evidence": "Attributed to WHO; retrieved statements come from CDC",
+   "url": "https://archive.cdc.gov/www_cdc_gov/coronavirus/2019-ncov/hcp/clinical-care/clinical-considerations-presentation.html",
+   "action": "edited",
+   "newSentence": "The CDC says anyone infected can spread the virus even without symptoms, and a CDC travel guide says most spread appears to happen early in the infection."
+  },
+  {
+   "id": "c093",
+   "where": "faq2.a",
+   "sentence": "The virus passes through the air in respiratory particles from breathing, talking, coughing or sneezing.",
+   "classification": "supported",
+   "evidence": "WHO: respiratory particles from breathing, talking, coughing, sneezing",
+   "url": "https://www.who.int/news-room/fact-sheets/detail/coronavirus-disease-(covid-19)",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c094",
+   "where": "faq2.a",
+   "sentence": "People are more likely to catch it when close to an infected person or sharing a closed space with them.",
+   "classification": "supported",
+   "evidence": "WHO: close contact and shared closed space raise risk",
+   "url": "https://www.who.int/news-room/fact-sheets/detail/coronavirus-disease-(covid-19)",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c095",
+   "where": "faq3.q",
+   "sentence": "What is long COVID?",
+   "classification": "supported",
+   "evidence": "Question only, no assertion; answer checked separately",
+   "url": "",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c096",
+   "where": "faq3.a",
+   "sentence": "Long COVID, also called post-COVID syndrome, is when symptoms of COVID-19 last longer than 12 weeks, according to the NHS.",
+   "classification": "supported",
+   "evidence": "NHS long COVID: >12 weeks; symptoms; no cure but treatment helps",
+   "url": "https://www.nhs.uk/conditions/long-covid/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c097",
+   "where": "faq3.a",
+   "sentence": "Common symptoms include extreme tiredness, shortness of breath, joint pain, aching muscles and memory and concentration problems.",
+   "classification": "supported",
+   "evidence": "NHS long COVID: >12 weeks; symptoms; no cure but treatment helps",
+   "url": "https://www.nhs.uk/conditions/long-covid/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c098",
+   "where": "faq3.a",
+   "sentence": "The NHS says there is no cure, but treatment can help manage symptoms.",
+   "classification": "supported",
+   "evidence": "NHS long COVID: >12 weeks; symptoms; no cure but treatment helps",
+   "url": "https://www.nhs.uk/conditions/long-covid/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c099",
+   "where": "faq3.a",
+   "sentence": "A GP can refer someone with persistent symptoms to an NHS long COVID service.",
+   "classification": "supported",
+   "evidence": "NHS: GP assesses; specialist services exist for those with big impact (referral wording softened)",
+   "url": "https://www.nhs.uk/conditions/long-covid/",
+   "action": "edited",
+   "newSentence": "A GP can assess persistent symptoms, and specialist post-COVID services exist for people whose symptoms have a big impact on their lives."
+  },
+  {
+   "id": "c100",
+   "where": "faq4.q",
+   "sentence": "When is COVID-19 an emergency?",
+   "classification": "supported",
+   "evidence": "Question only, no assertion; answer checked separately",
+   "url": "",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c101",
+   "where": "faq4.a",
+   "sentence": "The NHS says to call 999 or go to A&E for sudden chest pain, severe breathlessness, coughing up blood, or collapsing.",
+   "classification": "supported",
+   "evidence": "NHS: 999/A&E list",
+   "url": "https://www.nhs.uk/conditions/covid-19/covid-19-symptoms-and-what-to-do/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c102",
+   "where": "faq4.a",
+   "sentence": "Symptoms that are getting worse or not improving call for contact with the GP or NHS 111.",
+   "classification": "supported",
+   "evidence": "NHS: contact GP/NHS 111 if worsening or not improving",
+   "url": "https://www.nhs.uk/conditions/covid-19/covid-19-symptoms-and-what-to-do/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c103",
+   "where": "faq4.a",
+   "sentence": "Most mild illness is managed at home with rest and fluids.",
+   "classification": "unsupported",
+   "evidence": "\"Most mild illness managed at home\" not retrieved",
+   "url": "",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c104",
+   "where": "kf0",
+   "sentence": "Also called: Coronavirus, SARS-CoV-2 infection",
+   "classification": "supported",
+   "evidence": "Key fact consistent with NHS/WHO text above",
+   "url": "https://www.nhs.uk/conditions/covid-19/covid-19-symptoms-and-what-to-do/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c105",
+   "where": "kf1",
+   "sentence": "Caused by: The virus SARS-CoV-2",
+   "classification": "supported",
+   "evidence": "Key fact consistent with NHS/WHO text above",
+   "url": "https://www.nhs.uk/conditions/covid-19/covid-19-symptoms-and-what-to-do/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c106",
+   "where": "kf2",
+   "sentence": "Typical symptoms: High temperature, new continuous cough, change in smell or taste",
+   "classification": "supported",
+   "evidence": "Key fact consistent with NHS/WHO text above",
+   "url": "https://www.nhs.uk/conditions/covid-19/covid-19-symptoms-and-what-to-do/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c107",
+   "where": "kf3",
+   "sentence": "Spreads by: Respiratory particles in the air from breathing, talking, coughing or sneezing",
+   "classification": "supported",
+   "evidence": "Key fact consistent with NHS/WHO text above",
+   "url": "https://www.nhs.uk/conditions/covid-19/covid-19-symptoms-and-what-to-do/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c108",
+   "where": "kf4",
+   "sentence": "Higher risk: Older adults, weakened immune system, some long-term conditions, pregnancy",
+   "classification": "supported",
+   "evidence": "Key fact consistent with NHS/WHO text above",
+   "url": "https://www.nhs.uk/conditions/covid-19/covid-19-symptoms-and-what-to-do/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c109",
+   "where": "kf5",
+   "sentence": "Urgent help: Call 999 or A&E for sudden chest pain, severe breathlessness, coughing blood or collapse; otherwise GP or NHS 111",
+   "classification": "supported",
+   "evidence": "Key fact consistent with NHS/WHO text above",
+   "url": "https://www.nhs.uk/conditions/covid-19/covid-19-symptoms-and-what-to-do/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c110",
+   "where": "kf6",
+   "sentence": "Vaccination: Seasonal NHS programme for the groups at highest risk",
+   "classification": "supported",
+   "evidence": "Key fact consistent with NHS/WHO text above",
+   "url": "https://www.nhs.uk/conditions/covid-19/covid-19-symptoms-and-what-to-do/",
+   "action": "kept",
+   "newSentence": ""
+  }
+ ],
+ "notes": "Retrieval was via blended summaries; NHS main page and symptoms page ~4 and ~1 months old. Removed copd from related (only research papers connected it), nausea from symptoms (not retrieved), health-worker risk factor, JCVI efficacy sentence, vaccine-in-pregnancy/allergy sentence. Added pneumonia/sepsis complications (US CDC MMWR hospital study) to support related links; US data. UKHSA reference swapped to spring-2026 page that was actually retrieved; autumn 2026 UKHSA blog and MedlinePlus long COVID not retrieved so dropped; JCVI reference dropped. NHS long COVID URL changed to /conditions/long-covid/. Questions (5) counted as supported non-assertions. Article block ~1280 words, slightly over target."
+}

@@ -2,6 +2,37 @@
 
 ## Unreleased
 
+<!-- blog-and-batches -->
+- Blog and health news: a new `blog` content type (one file per post under `content/blog/`, kind `guide` or `news`). The hub `/blog/`
+  groups posts by month and filters by kind and topic; a post page has key points, a dated byline, its sources (a news brief always
+  lists the announcement it summarises first, in a source box) and the condition, medicine and test pages it concerns, which in turn
+  list it under "Guides and news". `Article` / `NewsArticle` schema, an RSS feed (`/feed.xml`, written by the packager for production
+  builds), the `learning` sitemap, navigation, footer and a "Latest" block on the home page. The compiler derives and validates each
+  post's search snippet (70 to 160 characters). The smoke test checks the blog pages, the feed and every feed link against the sitemap;
+  the reference checker also reads the posts. 146 guides and 75 news briefs are published (MHRA 23, World Health Organization 19, US Food and Drug Administration 15, NICE 8, GOV.UK (Department of Health and Social Care) 2, NHS England 2, US National Institutes of Health 2, UK Health Security Agency 2, US Centers for Disease Control and Prevention 1, Department of Health and Social Care 1); US agency briefs say they are US decisions.
+- Optional `article` block on any page (sections, questions and answers, key facts), rendered under the structured fields; every
+  detail page gains "Connected pages in detail": one line per linked test, medicine, condition or symptom, taken from that page's own lead
+  (derived text only, from `clinical.json` blurbs).
+- Content wave from author sessions, each with its own search budget, under the two-pass evidence protocol (`docs/authoring/`,
+  CLINICAL.md 5.6): 64 new conditions (114 in all; the new ones carry 800 to 1,200 words of article on top of the structured fields), 46 new medicines (87 in all) with
+  28 new drug classes mapped into the therapeutic-area taxonomy, 32 existing conditions and 20 existing medicines deepened with an in-depth article. The second pass classified 19,255 first-pass sentences in 37 batches and removed 6,097
+  (31 per cent) as unsupported, wrong or unsafe before merging. Everything is `source-verified`; nothing is clinically reviewed. Ledgers and reports are in `content/drafts/batches/`;
+  `docs/verification/README.md` lists what a clinician should confirm first.
+- Tools: `tools/verification/check_batch.py` (validate a batch against the real compiler in a scratch copy), `merge_batches.py` (fetch, validate and merge the batches
+  that sessions push; waits for a final report), `lint_new_content.py` (doses, instructions, absolute claims, US spellings, urgency without a route),
+  `post_merge_fixups.py` (reference redirects, prose and links the maintainer repairs after a merge), `map_taxonomy.py` (point taxonomy classes at drug-class pages).
+  The medication taxonomy builder crashed on a drug class outside the taxonomy; fixed. Interaction records that named a now-existing medicine as a plain substance
+  point at its page (simvastatin, methotrexate) or are split into a pair record and a group record (ondansetron, spironolactone).
+- References: the Reference links check found 7 dead and 165 redirecting reference URLs after the content wave. The redirecting ones now point at their final
+  address (NHS medicine and condition sub-pages are merged into one page, Arthritis UK, Eczema UK and Miscarriage UK have rebranded, PubMed Central moved host, NICE
+  renamed chapters), and references that became duplicates are merged into one entry whose "section" lists the original sub-pages. Of the dead ones, hydroxychloroquine
+  (Arthritis UK), the British Liver Trust liver blood tests page, the Met Office pollen page, the FDA loperamide notice and the NHS pre-eclampsia symptoms page point at the
+  address the publisher now uses; a WHO commentary that no longer exists is replaced by the WHO question-and-answer page that supersedes it (two sentences reworded to
+  match, a reviewer should read that page); the Food Standards Agency study page and a South West London tirzepatide sheet are dropped, with the one sentence that cited the sheet.
+  All of it is recorded in `tools/verification/post_merge_fixups.py`, which can be re-run safely.
+- Conditions hub: the filter chips and the category tag on every card had 30 of 114 conditions (ADHD, depression, acne, eczema, flu and more) under one
+  catch-all, "Blood, infection & other". Three groups are added (Mental health & neurodevelopment 8, Skin, allergy & eyes 7, Infections 10) and the catch-all
+  is now "Blood, immune system & other" (5). A condition's `category` is the only thing that changes; URLs do not.
 - Body figure ("where in the body"): every organ page shows a schematic front view of the body with the organ drawn at its
   real position and shape, beside the 3D preview, with a one-line description and X-ray, exploded and cross-section
   shortcuts into the explorer; system pages draw every organ of the system as a link; condition, test, procedure and

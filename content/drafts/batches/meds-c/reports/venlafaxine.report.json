@@ -1,0 +1,927 @@
+{
+  "id": "venlafaxine",
+  "searchesUsed": 11,
+  "counts": {
+    "supported": 90,
+    "textbook": 13,
+    "unsupported": 10,
+    "wrong": 1,
+    "unsafe": 0,
+    "unchecked": 0
+  },
+  "claims": [
+    {
+      "id": "c01",
+      "classification": "textbook",
+      "evidence": "Plain classification of venlafaxine as an SNRI antidepressant for depression; NHS page title \"Venlafaxine: an antidepressant medicine\" returned; class and use not otherwise returned in text.",
+      "url": "https://www.nhs.uk/medicines/venlafaxine/",
+      "action": "kept",
+      "newSentence": "Venlafaxine is an antidepressant called a serotonin and noradrenaline reuptake inhibitor (SNRI), used for depression."
+    },
+    {
+      "id": "c02",
+      "classification": "textbook",
+      "evidence": "Plain regulatory fact (UK prescription-only medicine); not stated in returned text.",
+      "url": "https://www.nhs.uk/medicines/venlafaxine/",
+      "action": "kept",
+      "newSentence": "It is available only on prescription, UK product information says it can raise blood pressure, and stopping it suddenly can cause withdrawal symptoms."
+    },
+    {
+      "id": "c03",
+      "classification": "textbook",
+      "evidence": "Plain classification of venlafaxine as an SNRI antidepressant for depression; NHS page title \"Venlafaxine: an antidepressant medicine\" returned; class and use not otherwise returned in text.",
+      "url": "https://www.nhs.uk/medicines/venlafaxine/",
+      "action": "kept",
+      "newSentence": "Depression"
+    },
+    {
+      "id": "c04",
+      "classification": "textbook",
+      "evidence": "Plain classification of venlafaxine as an SNRI antidepressant for depression; NHS page title \"Venlafaxine: an antidepressant medicine\" returned; class and use not otherwise returned in text.",
+      "url": "https://www.nhs.uk/medicines/venlafaxine/",
+      "action": "kept",
+      "newSentence": "Venlafaxine is a serotonin and noradrenaline reuptake inhibitor (SNRI)."
+    },
+    {
+      "id": "c05",
+      "classification": "textbook",
+      "evidence": "Standard mechanism of SNRIs; not stated in returned text.",
+      "url": "https://medlineplus.gov/druginfo/meds/a694020.html",
+      "action": "kept",
+      "newSentence": "SNRIs are thought to work by raising the levels of the chemical messengers serotonin and noradrenaline in the brain."
+    },
+    {
+      "id": "c06",
+      "classification": "supported",
+      "evidence": "Returned summary of NHS/MedlinePlus: may take several weeks or longer to feel full benefit.",
+      "url": "https://www.nhs.uk/medicines/venlafaxine/how-and-when-to-take-venlafaxine/",
+      "action": "kept",
+      "newSentence": "The NHS and MedlinePlus say it may take several weeks or longer to feel the full benefit of venlafaxine."
+    },
+    {
+      "id": "c07",
+      "classification": "supported",
+      "evidence": "NHS side effects: headaches, dry mouth, sweating common; most ease after a couple of weeks; headaches usually go within first week; dry mouth ask doctor if not gone after a week or two.",
+      "url": "https://www.nhs.uk/medicines/venlafaxine/side-effects-of-venlafaxine/",
+      "action": "kept",
+      "newSentence": "Headaches, sweating and a dry mouth are among the common side effects."
+    },
+    {
+      "id": "c08",
+      "classification": "supported",
+      "evidence": "NHS side effects: headaches, dry mouth, sweating common; most ease after a couple of weeks; headaches usually go within first week; dry mouth ask doctor if not gone after a week or two.",
+      "url": "https://www.nhs.uk/medicines/venlafaxine/side-effects-of-venlafaxine/",
+      "action": "kept",
+      "newSentence": "The NHS says most side effects should ease after a couple of weeks as the body gets used to the medicine."
+    },
+    {
+      "id": "c09",
+      "classification": "supported",
+      "evidence": "NHS: if dizzy or drowsy, do not drive, ride a bike or use machinery until it passes.",
+      "url": "https://www.nhs.uk/medicines/venlafaxine/side-effects-of-venlafaxine/",
+      "action": "kept",
+      "newSentence": "If dizziness or drowsiness occurs, the NHS advises against driving, riding a bike or using machinery until it has gone away."
+    },
+    {
+      "id": "c10",
+      "classification": "supported",
+      "evidence": "NHS: call NHS 111 if you think you might be having serious side effects.",
+      "url": "https://www.nhs.uk/medicines/venlafaxine/side-effects-of-venlafaxine/",
+      "action": "kept",
+      "newSentence": "The NHS says that anyone taking venlafaxine who thinks they may be having serious side effects can call NHS 111."
+    },
+    {
+      "id": "c11",
+      "classification": "supported",
+      "evidence": "NHS: call 999 if lips, mouth, throat or tongue suddenly swell or struggling to breathe (anaphylaxis).",
+      "url": "https://www.nhs.uk/medicines/venlafaxine/side-effects-of-venlafaxine/",
+      "action": "kept",
+      "newSentence": "The NHS says to call 999 if the lips, mouth, throat or tongue suddenly swell or there is difficulty breathing, which can be signs of a serious allergic reaction (anaphylaxis)."
+    },
+    {
+      "id": "c12",
+      "classification": "supported",
+      "evidence": "NHS antidepressant side effects: uncommon but some people have suicidal thoughts/urge to self-harm at start; 24 or under or previous thoughts most at risk.",
+      "url": "https://www.nhs.uk/mental-health/talking-therapies-medicine-treatments/medicines-and-psychiatry/antidepressants/side-effects/",
+      "action": "kept",
+      "newSentence": "With antidepressants, the NHS says it is uncommon, but some people have suicidal thoughts or an urge to self-harm when they start treatment, and people aged 24 or under, or who have had these thoughts before, may be most at risk."
+    },
+    {
+      "id": "c13",
+      "classification": "supported",
+      "evidence": "NHS: contact GP or go to A&E for thoughts of harming oneself at any time; call 999 or A&E if in danger or cannot keep safe.",
+      "url": "https://www.nhs.uk/mental-health/talking-therapies-medicine-treatments/medicines-and-psychiatry/antidepressants/side-effects/",
+      "action": "kept",
+      "newSentence": "The NHS says to contact a GP, or go to A&E, for thoughts of killing or harming oneself at any time during treatment, and to call 999 or go to A&E if in danger or unable to keep safe."
+    },
+    {
+      "id": "c14",
+      "classification": "supported",
+      "evidence": "NHS urgent support: NHS 111 mental health option for urgent non-emergency help; Samaritans 116 123 free 24/7.",
+      "url": "https://www.nhs.uk/every-mind-matters/urgent-support/",
+      "action": "kept",
+      "newSentence": "For urgent mental health help that is not an emergency, the NHS points to NHS 111 (mental health option), and the Samaritans on 116 123 are free at any time."
+    },
+    {
+      "id": "c15",
+      "classification": "supported",
+      "evidence": "NHS: not addictive but withdrawal possible if stopped suddenly; do not stop suddenly; doctor reduces gradually over several weeks or months, longer after long-term use.",
+      "url": "https://www.nhs.uk/medicines/venlafaxine/common-questions-about-venlafaxine/",
+      "action": "kept",
+      "newSentence": "Stopping suddenly can cause withdrawal symptoms, and the NHS says a doctor will usually lower the dose gradually over several weeks or months."
+    },
+    {
+      "id": "c16",
+      "classification": "supported",
+      "evidence": "NHS lists serotonin syndrome: fast heartbeat, sweating, shaking, twitching muscles, confused or agitated.",
+      "url": "https://www.nhs.uk/medicines/venlafaxine/side-effects-of-venlafaxine/",
+      "action": "kept",
+      "newSentence": "The NHS lists the signs of serotonin syndrome as a fast heartbeat, sweating, shaking, twitching muscles and feeling confused or agitated."
+    },
+    {
+      "id": "c17",
+      "classification": "supported",
+      "evidence": "UK SmPC: dose-related BP increases commonly reported; severely elevated BP needing immediate treatment reported post-marketing; patients screened and pre-existing hypertension controlled before starting; FDA label: dose-related BP rises and regular monitoring recommended.",
+      "url": "https://www.medicines.org.uk/emc/product/15057/smpc",
+      "action": "kept",
+      "newSentence": "The NHS says venlafaxine can make the heart beat faster or cause an irregular heartbeat, and UK product information describes dose-related rises in blood pressure as common."
+    },
+    {
+      "id": "c18",
+      "classification": "supported",
+      "evidence": "NHS who-can-and-cannot page lists diabetes, epilepsy, heart problems, glaucoma, bleeding disorder.",
+      "url": "https://www.nhs.uk/medicines/venlafaxine/who-can-and-cannot-take-venlafaxine/",
+      "action": "kept",
+      "newSentence": "The NHS says venlafaxine is not suitable for everyone, and lists diabetes, epilepsy, heart problems, glaucoma and a bleeding disorder among the conditions that need care."
+    },
+    {
+      "id": "c19",
+      "classification": "supported",
+      "evidence": "NHS who-can page: past allergic reaction to venlafaxine is a reason not to take it.",
+      "url": "https://www.nhs.uk/medicines/venlafaxine/who-can-and-cannot-take-venlafaxine/",
+      "action": "kept",
+      "newSentence": "An earlier allergic reaction to venlafaxine is also on the NHS list of reasons it may not be suitable."
+    },
+    {
+      "id": "c20",
+      "classification": "supported",
+      "evidence": "emc patient leaflets: speak to doctor first with a history of high blood pressure, heart problems or abnormal heart rhythm.",
+      "url": "https://www.medicines.org.uk/emc/product/101803/pil",
+      "action": "kept",
+      "newSentence": "UK patient leaflets ask people with a history of high blood pressure, heart problems or an abnormal heart rhythm to talk to their doctor before starting."
+    },
+    {
+      "id": "c21",
+      "classification": "supported",
+      "evidence": "UK SmPC: dose-related BP increases commonly reported; severely elevated BP needing immediate treatment reported post-marketing; patients screened and pre-existing hypertension controlled before starting; FDA label: dose-related BP rises and regular monitoring recommended.",
+      "url": "https://www.medicines.org.uk/emc/product/15057/smpc",
+      "action": "kept",
+      "newSentence": "UK product information says patients should be screened for high blood pressure and that existing high blood pressure should be controlled before treatment starts."
+    },
+    {
+      "id": "c22",
+      "classification": "supported",
+      "evidence": "NHS: venlafaxine can increase pressure in the eye (glaucoma); may raise risk of fit or seizure (epilepsy).",
+      "url": "https://www.nhs.uk/medicines/venlafaxine/who-can-and-cannot-take-venlafaxine/",
+      "action": "kept",
+      "newSentence": "The NHS says venlafaxine can increase the pressure in the eye and may raise the risk of a fit or seizure in people with epilepsy."
+    },
+    {
+      "id": "c23",
+      "classification": "supported",
+      "evidence": "emc leaflets: MAOIs for depression or Parkinson's must not be taken with venlafaxine; tell doctor if taken recently (within last 14 days; number deliberately not stated).",
+      "url": "https://www.medicines.org.uk/emc/product/101803/pil",
+      "action": "kept",
+      "newSentence": "UK patient leaflets say monoamine oxidase inhibitors (MAOIs), another type of antidepressant that is also used for Parkinson's disease, must not be taken with venlafaxine, and ask people who have taken one recently to tell their doctor."
+    },
+    {
+      "id": "c24",
+      "classification": "supported",
+      "evidence": "NHS: venlafaxine can make heart beat faster or cause irregular heartbeat; some rarely used antidepressants can affect venlafaxine and cause very high blood pressure.",
+      "url": "https://www.nhs.uk/medicines/venlafaxine/who-can-and-cannot-take-venlafaxine/",
+      "action": "kept",
+      "newSentence": "The NHS says some rarely used antidepressants can affect venlafaxine and cause very high blood pressure."
+    },
+    {
+      "id": "c25",
+      "classification": "supported",
+      "evidence": "NHS: do not use St John's wort with venlafaxine, raised risk of side effects.",
+      "url": "https://www.nhs.uk/medicines/venlafaxine/taking-venlafaxine-with-other-medicines-and-herbal-supplements/",
+      "action": "kept",
+      "newSentence": "The NHS advises against using the herbal supplement St John's wort with venlafaxine because it raises the risk of side effects."
+    },
+    {
+      "id": "c26",
+      "classification": "supported",
+      "evidence": "NHS: anticoagulants such as warfarin and apixaban and NSAIDs such as aspirin and ibuprofen may not mix well.",
+      "url": "https://www.nhs.uk/medicines/venlafaxine/taking-venlafaxine-with-other-medicines-and-herbal-supplements/",
+      "action": "kept",
+      "newSentence": "The NHS lists anti-inflammatory painkillers such as aspirin and ibuprofen, and anticoagulants such as warfarin and apixaban, among medicines that may not mix well with venlafaxine."
+    },
+    {
+      "id": "c27",
+      "classification": "supported",
+      "evidence": "emc leaflets: serotonin syndrome risk with triptans, tramadol, dextromethorphan, linezolid; lists vary by product.",
+      "url": "https://www.medicines.org.uk/emc/product/101803/pil",
+      "action": "kept",
+      "newSentence": "Some UK patient leaflets name tramadol, triptans for migraine and dextromethorphan, found in some cough medicines, as examples of medicines that raise the risk of serotonin syndrome."
+    },
+    {
+      "id": "c28",
+      "classification": "supported",
+      "evidence": "NHS common questions: can drink but may feel sleepy, suggests avoiding in first few days; main page: best not to drink as alcohol raises side-effect risk.",
+      "url": "https://www.nhs.uk/medicines/venlafaxine/common-questions-about-venlafaxine/",
+      "action": "kept",
+      "newSentence": "The NHS says alcohol may make a person feel sleepy while taking venlafaxine and suggests avoiding it in the first few days, and its main venlafaxine page says it is best not to drink because alcohol can raise the risk of side effects."
+    },
+    {
+      "id": "c29",
+      "classification": "supported",
+      "evidence": "NHS common questions: stop driving/cycling for first few days until you know how it makes you feel.",
+      "url": "https://www.nhs.uk/medicines/venlafaxine/common-questions-about-venlafaxine/",
+      "action": "kept",
+      "newSentence": "The NHS suggests it might be best to avoid driving and cycling for the first few days of treatment, until a person knows how the medicine makes them feel."
+    },
+    {
+      "id": "c30",
+      "classification": "supported",
+      "evidence": "NHS who-can page (via search summary): pregnancy/breastfeeding need a risk-benefit discussion with doctor.",
+      "url": "https://www.nhs.uk/medicines/venlafaxine/who-can-and-cannot-take-venlafaxine/",
+      "action": "kept",
+      "newSentence": "The NHS says pregnancy and breastfeeding call for a discussion of the risks and benefits with the doctor."
+    },
+    {
+      "id": "c31",
+      "classification": "supported",
+      "evidence": "UK SmPC: BP reviewed periodically after initiation and after dose increases; US label recommends regular BP monitoring.",
+      "url": "https://www.medicines.org.uk/emc/product/15057/smpc",
+      "action": "kept",
+      "newSentence": "UK product information says blood pressure should be reviewed periodically, after treatment starts and after dose increases, and the US label recommends regular blood pressure monitoring."
+    },
+    {
+      "id": "c32",
+      "classification": "textbook",
+      "evidence": "Oral tablets/capsules; forms seen in emc titles.",
+      "url": "https://www.medicines.org.uk/emc/product/101803/pil",
+      "action": "kept",
+      "newSentence": "Taken by mouth as tablets or capsules, including prolonged-release forms."
+    },
+    {
+      "id": "c33",
+      "classification": "textbook",
+      "evidence": "Plain classification of venlafaxine as an SNRI antidepressant for depression; NHS page title \"Venlafaxine: an antidepressant medicine\" returned; class and use not otherwise returned in text.",
+      "url": "https://www.nhs.uk/medicines/venlafaxine/",
+      "action": "kept",
+      "newSentence": "Venlafaxine is an antidepressant medicine."
+    },
+    {
+      "id": "c34",
+      "classification": "textbook",
+      "evidence": "Plain classification of venlafaxine as an SNRI antidepressant for depression; NHS page title \"Venlafaxine: an antidepressant medicine\" returned; class and use not otherwise returned in text.",
+      "url": "https://www.nhs.uk/medicines/venlafaxine/",
+      "action": "kept",
+      "newSentence": "It belongs to a group called serotonin and noradrenaline reuptake inhibitors, or SNRIs, and it is used to treat depression."
+    },
+    {
+      "id": "c35",
+      "classification": "textbook",
+      "evidence": "Plain regulatory fact (UK prescription-only medicine); not stated in returned text.",
+      "url": "https://www.nhs.uk/medicines/venlafaxine/",
+      "action": "kept",
+      "newSentence": "It is available only on prescription."
+    },
+    {
+      "id": "c36",
+      "classification": "textbook",
+      "evidence": "Standard mechanism of SNRIs; not stated in returned text.",
+      "url": "https://medlineplus.gov/druginfo/meds/a694020.html",
+      "action": "kept",
+      "newSentence": "Serotonin and noradrenaline are chemical messengers in the brain, and SNRIs are thought to work by raising their levels."
+    },
+    {
+      "id": "c37",
+      "classification": "supported",
+      "evidence": "Returned summary of NHS/MedlinePlus: may take several weeks or longer to feel full benefit.",
+      "url": "https://www.nhs.uk/medicines/venlafaxine/how-and-when-to-take-venlafaxine/",
+      "action": "kept",
+      "newSentence": "The NHS and MedlinePlus say it may take several weeks or longer to feel the full benefit."
+    },
+    {
+      "id": "c38",
+      "classification": "supported",
+      "evidence": "emc lists venlafaxine standard tablets and prolonged-release tablets and capsules.",
+      "url": "https://www.medicines.org.uk/emc/product/101803/pil",
+      "action": "kept",
+      "newSentence": "UK product information lists standard tablets as well as prolonged-release tablets and capsules, which release the medicine slowly."
+    },
+    {
+      "id": "c39",
+      "classification": "supported",
+      "evidence": "NHS who-can-and-cannot page lists diabetes, epilepsy, heart problems, glaucoma, bleeding disorder.",
+      "url": "https://www.nhs.uk/medicines/venlafaxine/who-can-and-cannot-take-venlafaxine/",
+      "action": "kept",
+      "newSentence": "The NHS says venlafaxine is not suitable for everyone, and it lists diabetes, epilepsy, heart problems, glaucoma and a bleeding disorder among the conditions that call for extra care."
+    },
+    {
+      "id": "c40",
+      "classification": "supported",
+      "evidence": "NHS who-can page: past allergic reaction to venlafaxine is a reason not to take it.",
+      "url": "https://www.nhs.uk/medicines/venlafaxine/who-can-and-cannot-take-venlafaxine/",
+      "action": "kept",
+      "newSentence": "An earlier allergic reaction to venlafaxine is another reason it may not be suitable."
+    },
+    {
+      "id": "c41",
+      "classification": "supported",
+      "evidence": "NHS how to take: usually with food; morning if trouble sleeping.",
+      "url": "https://www.nhs.uk/medicines/venlafaxine/how-and-when-to-take-venlafaxine/",
+      "action": "kept",
+      "newSentence": "The NHS says venlafaxine is usually taken with food."
+    },
+    {
+      "id": "c42",
+      "classification": "supported",
+      "evidence": "NHS how to take: usually with food; morning if trouble sleeping.",
+      "url": "https://www.nhs.uk/medicines/venlafaxine/how-and-when-to-take-venlafaxine/",
+      "action": "kept",
+      "newSentence": "For a person who has trouble sleeping, the NHS says the morning is the best time to take it."
+    },
+    {
+      "id": "c43",
+      "classification": "supported",
+      "evidence": "MedlinePlus: missed dose taken when remembered unless nearly time for next, never double up; NHS gives same advice and suggests an alarm.",
+      "url": "https://medlineplus.gov/druginfo/meds/a694020.html",
+      "action": "kept",
+      "newSentence": "MedlinePlus says a missed dose is taken once it is remembered, unless it is almost time for the next one, and that doses are not doubled up."
+    },
+    {
+      "id": "c44",
+      "classification": "supported",
+      "evidence": "NHS: setting an alarm can help if you often forget doses.",
+      "url": "https://www.nhs.uk/medicines/venlafaxine/how-and-when-to-take-venlafaxine/",
+      "action": "kept",
+      "newSentence": "The NHS adds that an alarm can help if doses are often forgotten."
+    },
+    {
+      "id": "c45",
+      "classification": "supported",
+      "evidence": "NHS: not addictive but withdrawal possible if stopped suddenly; do not stop suddenly; doctor reduces gradually over several weeks or months, longer after long-term use.",
+      "url": "https://www.nhs.uk/medicines/venlafaxine/common-questions-about-venlafaxine/",
+      "action": "kept",
+      "newSentence": "Stopping suddenly can cause withdrawal symptoms, although the NHS says venlafaxine is not addictive."
+    },
+    {
+      "id": "c46",
+      "classification": "supported",
+      "evidence": "NHS: not addictive but withdrawal possible if stopped suddenly; do not stop suddenly; doctor reduces gradually over several weeks or months, longer after long-term use.",
+      "url": "https://www.nhs.uk/medicines/venlafaxine/common-questions-about-venlafaxine/",
+      "action": "kept",
+      "newSentence": "The NHS says a person who wants to stop should speak to the doctor first."
+    },
+    {
+      "id": "c47",
+      "classification": "supported",
+      "evidence": "NHS: not addictive but withdrawal possible if stopped suddenly; do not stop suddenly; doctor reduces gradually over several weeks or months, longer after long-term use.",
+      "url": "https://www.nhs.uk/medicines/venlafaxine/common-questions-about-venlafaxine/",
+      "action": "kept",
+      "newSentence": "The doctor will usually lower the dose gradually over several weeks or months, and this can take longer after long-term use."
+    },
+    {
+      "id": "c48",
+      "classification": "supported",
+      "evidence": "NHS: stopping too early can bring depression back.",
+      "url": "https://www.nhs.uk/medicines/venlafaxine/how-and-when-to-take-venlafaxine/",
+      "action": "kept",
+      "newSentence": "Stopping too early can also let depression come back."
+    },
+    {
+      "id": "c49",
+      "classification": "supported",
+      "evidence": "NHS side effects: headaches, dry mouth, sweating common; most ease after a couple of weeks; headaches usually go within first week; dry mouth ask doctor if not gone after a week or two.",
+      "url": "https://www.nhs.uk/medicines/venlafaxine/side-effects-of-venlafaxine/",
+      "action": "kept",
+      "newSentence": "Headaches, sweating and a dry mouth are among the common side effects."
+    },
+    {
+      "id": "c50",
+      "classification": "supported",
+      "evidence": "NHS side effects: headaches, dry mouth, sweating common; most ease after a couple of weeks; headaches usually go within first week; dry mouth ask doctor if not gone after a week or two.",
+      "url": "https://www.nhs.uk/medicines/venlafaxine/side-effects-of-venlafaxine/",
+      "action": "kept",
+      "newSentence": "The NHS says most side effects should ease after a couple of weeks as the body gets used to the medicine."
+    },
+    {
+      "id": "c51",
+      "classification": "supported",
+      "evidence": "NHS side effects: headaches, dry mouth, sweating common; most ease after a couple of weeks; headaches usually go within first week; dry mouth ask doctor if not gone after a week or two.",
+      "url": "https://www.nhs.uk/medicines/venlafaxine/side-effects-of-venlafaxine/",
+      "action": "kept",
+      "newSentence": "It says headaches usually go away after the first week, and that a dry mouth which does not go away after a week or two is worth raising with the doctor."
+    },
+    {
+      "id": "c52",
+      "classification": "supported",
+      "evidence": "NHS: if dizzy or drowsy, do not drive, ride a bike or use machinery until it passes.",
+      "url": "https://www.nhs.uk/medicines/venlafaxine/side-effects-of-venlafaxine/",
+      "action": "kept",
+      "newSentence": "If dizziness or drowsiness occurs, the NHS advises against driving, riding a bike or using machinery until it has gone away."
+    },
+    {
+      "id": "c53",
+      "classification": "supported",
+      "evidence": "NHS: call NHS 111 if you think you might be having serious side effects.",
+      "url": "https://www.nhs.uk/medicines/venlafaxine/side-effects-of-venlafaxine/",
+      "action": "kept",
+      "newSentence": "The NHS says that anyone taking venlafaxine who thinks they may be having serious side effects can call NHS 111."
+    },
+    {
+      "id": "c54",
+      "classification": "supported",
+      "evidence": "NHS lists serotonin syndrome: fast heartbeat, sweating, shaking, twitching muscles, confused or agitated.",
+      "url": "https://www.nhs.uk/medicines/venlafaxine/side-effects-of-venlafaxine/",
+      "action": "kept",
+      "newSentence": "It lists the signs of serotonin syndrome as a fast heartbeat, sweating, shaking, twitching muscles and feeling confused or agitated."
+    },
+    {
+      "id": "c55",
+      "classification": "supported",
+      "evidence": "NHS: call 999 if lips, mouth, throat or tongue suddenly swell or struggling to breathe (anaphylaxis).",
+      "url": "https://www.nhs.uk/medicines/venlafaxine/side-effects-of-venlafaxine/",
+      "action": "kept",
+      "newSentence": "The NHS says to call 999 if the lips, mouth, throat or tongue suddenly swell or there is difficulty breathing, which can be signs of a serious allergic reaction (anaphylaxis)."
+    },
+    {
+      "id": "c56",
+      "classification": "supported",
+      "evidence": "NHS antidepressant side effects: uncommon but some people have suicidal thoughts/urge to self-harm at start; 24 or under or previous thoughts most at risk.",
+      "url": "https://www.nhs.uk/mental-health/talking-therapies-medicine-treatments/medicines-and-psychiatry/antidepressants/side-effects/",
+      "action": "kept",
+      "newSentence": "The NHS says it is uncommon, but some people have suicidal thoughts or an urge to self-harm when they start an antidepressant."
+    },
+    {
+      "id": "c57",
+      "classification": "supported",
+      "evidence": "NHS antidepressant side effects: uncommon but some people have suicidal thoughts/urge to self-harm at start; 24 or under or previous thoughts most at risk.",
+      "url": "https://www.nhs.uk/mental-health/talking-therapies-medicine-treatments/medicines-and-psychiatry/antidepressants/side-effects/",
+      "action": "kept",
+      "newSentence": "People aged 24 or under, or who have had these thoughts before, may be most at risk."
+    },
+    {
+      "id": "c58",
+      "classification": "supported",
+      "evidence": "NHS: contact GP or go to A&E for thoughts of harming oneself at any time; call 999 or A&E if in danger or cannot keep safe.",
+      "url": "https://www.nhs.uk/mental-health/talking-therapies-medicine-treatments/medicines-and-psychiatry/antidepressants/side-effects/",
+      "action": "kept",
+      "newSentence": "The NHS says to contact a GP, or go to A&E, for thoughts of killing or harming oneself at any time during treatment."
+    },
+    {
+      "id": "c59",
+      "classification": "supported",
+      "evidence": "NHS: contact GP or go to A&E for thoughts of harming oneself at any time; call 999 or A&E if in danger or cannot keep safe.",
+      "url": "https://www.nhs.uk/mental-health/talking-therapies-medicine-treatments/medicines-and-psychiatry/antidepressants/side-effects/",
+      "action": "kept",
+      "newSentence": "If a person is in danger or cannot keep themselves safe, the NHS says to call 999 or go to A&E."
+    },
+    {
+      "id": "c60",
+      "classification": "supported",
+      "evidence": "NHS urgent support: NHS 111 mental health option for urgent non-emergency help; Samaritans 116 123 free 24/7.",
+      "url": "https://www.nhs.uk/every-mind-matters/urgent-support/",
+      "action": "kept",
+      "newSentence": "For urgent mental health help that is not an emergency, the NHS points to NHS 111 (mental health option)."
+    },
+    {
+      "id": "c61",
+      "classification": "supported",
+      "evidence": "NHS urgent support: NHS 111 mental health option for urgent non-emergency help; Samaritans 116 123 free 24/7.",
+      "url": "https://www.nhs.uk/every-mind-matters/urgent-support/",
+      "action": "kept",
+      "newSentence": "The Samaritans on 116 123 are free to call at any time."
+    },
+    {
+      "id": "c62",
+      "classification": "supported",
+      "evidence": "NHS antidepressant guidance: tell a relative or close friend so they can watch for changes in behaviour.",
+      "url": "https://www.nhs.uk/mental-health/talking-therapies-medicine-treatments/medicines-and-psychiatry/antidepressants/side-effects/",
+      "action": "kept",
+      "newSentence": "The NHS also suggests that telling a relative or close friend about starting an antidepressant can help them notice changes in behaviour."
+    },
+    {
+      "id": "c63",
+      "classification": "supported",
+      "evidence": "UK SmPC: dose-related BP increases commonly reported; severely elevated BP needing immediate treatment reported post-marketing; patients screened and pre-existing hypertension controlled before starting; FDA label: dose-related BP rises and regular monitoring recommended.",
+      "url": "https://www.medicines.org.uk/emc/product/15057/smpc",
+      "action": "kept",
+      "newSentence": "Venlafaxine can raise blood pressure."
+    },
+    {
+      "id": "c64",
+      "classification": "supported",
+      "evidence": "UK SmPC: dose-related BP increases commonly reported; severely elevated BP needing immediate treatment reported post-marketing; patients screened and pre-existing hypertension controlled before starting; FDA label: dose-related BP rises and regular monitoring recommended.",
+      "url": "https://www.medicines.org.uk/emc/product/15057/smpc",
+      "action": "kept",
+      "newSentence": "UK product information says dose-related rises in blood pressure are common, and that severe rises needing immediate treatment have been reported since the medicine came on the market."
+    },
+    {
+      "id": "c65",
+      "classification": "supported",
+      "evidence": "UK SmPC: dose-related BP increases commonly reported; severely elevated BP needing immediate treatment reported post-marketing; patients screened and pre-existing hypertension controlled before starting; FDA label: dose-related BP rises and regular monitoring recommended.",
+      "url": "https://www.medicines.org.uk/emc/product/15057/smpc",
+      "action": "kept",
+      "newSentence": "It says patients should be screened for high blood pressure and that existing high blood pressure should be controlled before treatment starts."
+    },
+    {
+      "id": "c66",
+      "classification": "supported",
+      "evidence": "UK SmPC: BP reviewed periodically after initiation and after dose increases; US label recommends regular BP monitoring.",
+      "url": "https://www.medicines.org.uk/emc/product/15057/smpc",
+      "action": "kept",
+      "newSentence": "It also says blood pressure should be reviewed periodically, after treatment starts and after dose increases."
+    },
+    {
+      "id": "c67",
+      "classification": "supported",
+      "evidence": "UK SmPC: dose-related BP increases commonly reported; severely elevated BP needing immediate treatment reported post-marketing; patients screened and pre-existing hypertension controlled before starting; FDA label: dose-related BP rises and regular monitoring recommended.",
+      "url": "https://www.medicines.org.uk/emc/product/15057/smpc",
+      "action": "kept",
+      "newSentence": "The US label describes dose-related rises in blood pressure and recommends regular blood pressure monitoring."
+    },
+    {
+      "id": "c68",
+      "classification": "supported",
+      "evidence": "emc patient leaflets: speak to doctor first with a history of high blood pressure, heart problems or abnormal heart rhythm.",
+      "url": "https://www.medicines.org.uk/emc/product/101803/pil",
+      "action": "kept",
+      "newSentence": "UK patient leaflets ask people with a history of high blood pressure, heart problems or an abnormal heart rhythm to talk to their doctor before starting."
+    },
+    {
+      "id": "c69",
+      "classification": "supported",
+      "evidence": "NHS: venlafaxine can make heart beat faster or cause irregular heartbeat; some rarely used antidepressants can affect venlafaxine and cause very high blood pressure.",
+      "url": "https://www.nhs.uk/medicines/venlafaxine/who-can-and-cannot-take-venlafaxine/",
+      "action": "kept",
+      "newSentence": "The NHS says venlafaxine can make the heart beat faster or cause an irregular heartbeat."
+    },
+    {
+      "id": "c70",
+      "classification": "supported",
+      "evidence": "NHS: venlafaxine can make heart beat faster or cause irregular heartbeat; some rarely used antidepressants can affect venlafaxine and cause very high blood pressure.",
+      "url": "https://www.nhs.uk/medicines/venlafaxine/who-can-and-cannot-take-venlafaxine/",
+      "action": "kept",
+      "newSentence": "It also says some rarely used antidepressants can affect venlafaxine and cause very high blood pressure."
+    },
+    {
+      "id": "c71",
+      "classification": "supported",
+      "evidence": "NHS: do not use St John's wort with venlafaxine, raised risk of side effects.",
+      "url": "https://www.nhs.uk/medicines/venlafaxine/taking-venlafaxine-with-other-medicines-and-herbal-supplements/",
+      "action": "kept",
+      "newSentence": "The NHS advises against using the herbal supplement St John's wort with venlafaxine because it raises the risk of side effects."
+    },
+    {
+      "id": "c72",
+      "classification": "supported",
+      "evidence": "emc leaflets: MAOIs for depression or Parkinson's must not be taken with venlafaxine; tell doctor if taken recently (within last 14 days; number deliberately not stated).",
+      "url": "https://www.medicines.org.uk/emc/product/101803/pil",
+      "action": "kept",
+      "newSentence": "UK patient leaflets say monoamine oxidase inhibitors (MAOIs), another type of antidepressant, must not be taken with venlafaxine, and they ask people who have taken one recently to tell their doctor."
+    },
+    {
+      "id": "c73",
+      "classification": "supported",
+      "evidence": "NHS: anticoagulants such as warfarin and apixaban and NSAIDs such as aspirin and ibuprofen may not mix well.",
+      "url": "https://www.nhs.uk/medicines/venlafaxine/taking-venlafaxine-with-other-medicines-and-herbal-supplements/",
+      "action": "kept",
+      "newSentence": "The NHS lists anti-inflammatory painkillers such as aspirin and ibuprofen, and anticoagulants such as warfarin and apixaban, among medicines that may not mix well with it."
+    },
+    {
+      "id": "c74",
+      "classification": "supported",
+      "evidence": "emc leaflets: serotonin syndrome risk with triptans, tramadol, dextromethorphan, linezolid; lists vary by product.",
+      "url": "https://www.medicines.org.uk/emc/product/101803/pil",
+      "action": "kept",
+      "newSentence": "Some UK leaflets name tramadol, triptans for migraine and dextromethorphan, found in some cough medicines, as examples that raise the risk of serotonin syndrome."
+    },
+    {
+      "id": "c75",
+      "classification": "supported",
+      "evidence": "NHS common questions: can drink but may feel sleepy, suggests avoiding in first few days; main page: best not to drink as alcohol raises side-effect risk.",
+      "url": "https://www.nhs.uk/medicines/venlafaxine/common-questions-about-venlafaxine/",
+      "action": "kept",
+      "newSentence": "The NHS says alcohol may make a person feel sleepy, and its main venlafaxine page says it is best not to drink because alcohol can raise the risk of side effects."
+    },
+    {
+      "id": "c76",
+      "classification": "supported",
+      "evidence": "NHS who-can page (via search summary): pregnancy/breastfeeding need a risk-benefit discussion with doctor.",
+      "url": "https://www.nhs.uk/medicines/venlafaxine/who-can-and-cannot-take-venlafaxine/",
+      "action": "kept",
+      "newSentence": "The NHS says pregnancy and breastfeeding call for a discussion of the risks and benefits with the doctor."
+    },
+    {
+      "id": "c77",
+      "classification": "supported",
+      "evidence": "NHS: venlafaxine is not addictive.",
+      "url": "https://www.nhs.uk/medicines/venlafaxine/common-questions-about-venlafaxine/",
+      "action": "kept",
+      "newSentence": "The NHS says venlafaxine is not addictive."
+    },
+    {
+      "id": "c78",
+      "classification": "supported",
+      "evidence": "NHS: not addictive but withdrawal possible if stopped suddenly; do not stop suddenly; doctor reduces gradually over several weeks or months, longer after long-term use.",
+      "url": "https://www.nhs.uk/medicines/venlafaxine/common-questions-about-venlafaxine/",
+      "action": "kept",
+      "newSentence": "However, withdrawal effects can happen if it is stopped suddenly."
+    },
+    {
+      "id": "c79",
+      "classification": "supported",
+      "evidence": "NHS: not addictive but withdrawal possible if stopped suddenly; do not stop suddenly; doctor reduces gradually over several weeks or months, longer after long-term use.",
+      "url": "https://www.nhs.uk/medicines/venlafaxine/common-questions-about-venlafaxine/",
+      "action": "kept",
+      "newSentence": "The NHS says a doctor will usually lower the dose gradually over several weeks or months."
+    },
+    {
+      "id": "c80",
+      "classification": "supported",
+      "evidence": "NHS: not addictive but withdrawal possible if stopped suddenly; do not stop suddenly; doctor reduces gradually over several weeks or months, longer after long-term use.",
+      "url": "https://www.nhs.uk/medicines/venlafaxine/common-questions-about-venlafaxine/",
+      "action": "kept",
+      "newSentence": "A person who wants to stop is advised to speak to the doctor first."
+    },
+    {
+      "id": "c81",
+      "classification": "supported",
+      "evidence": "UK SmPC: dose-related BP increases commonly reported; severely elevated BP needing immediate treatment reported post-marketing; patients screened and pre-existing hypertension controlled before starting; FDA label: dose-related BP rises and regular monitoring recommended.",
+      "url": "https://www.medicines.org.uk/emc/product/15057/smpc",
+      "action": "kept",
+      "newSentence": "UK product information says dose-related rises in blood pressure are common with venlafaxine."
+    },
+    {
+      "id": "c82",
+      "classification": "supported",
+      "evidence": "UK SmPC: BP reviewed periodically after initiation and after dose increases; US label recommends regular BP monitoring.",
+      "url": "https://www.medicines.org.uk/emc/product/15057/smpc",
+      "action": "kept",
+      "newSentence": "The US label recommends regular blood pressure monitoring."
+    },
+    {
+      "id": "c83",
+      "classification": "supported",
+      "evidence": "emc patient leaflets: speak to doctor first with a history of high blood pressure, heart problems or abnormal heart rhythm.",
+      "url": "https://www.medicines.org.uk/emc/product/101803/pil",
+      "action": "kept",
+      "newSentence": "UK patient leaflets ask people with a history of high blood pressure or heart problems to talk to their doctor before starting."
+    },
+    {
+      "id": "c84",
+      "classification": "supported",
+      "evidence": "NHS: call NHS 111 if you think you might be having serious side effects.",
+      "url": "https://www.nhs.uk/medicines/venlafaxine/side-effects-of-venlafaxine/",
+      "action": "kept",
+      "newSentence": "The NHS says anyone who thinks they may be having serious side effects can call NHS 111."
+    },
+    {
+      "id": "c85",
+      "classification": "supported",
+      "evidence": "Returned summary of NHS/MedlinePlus: may take several weeks or longer to feel full benefit.",
+      "url": "https://www.nhs.uk/medicines/venlafaxine/how-and-when-to-take-venlafaxine/",
+      "action": "kept",
+      "newSentence": "The NHS and MedlinePlus say it may take several weeks or longer to feel the full benefit."
+    },
+    {
+      "id": "c86",
+      "classification": "supported",
+      "evidence": "NHS side effects: headaches, dry mouth, sweating common; most ease after a couple of weeks; headaches usually go within first week; dry mouth ask doctor if not gone after a week or two.",
+      "url": "https://www.nhs.uk/medicines/venlafaxine/side-effects-of-venlafaxine/",
+      "action": "kept",
+      "newSentence": "The NHS says most side effects should ease after a couple of weeks as the body gets used to the medicine."
+    },
+    {
+      "id": "c87",
+      "classification": "supported",
+      "evidence": "NHS: stopping too early can bring depression back.",
+      "url": "https://www.nhs.uk/medicines/venlafaxine/how-and-when-to-take-venlafaxine/",
+      "action": "kept",
+      "newSentence": "Stopping too early can let depression come back."
+    },
+    {
+      "id": "c88",
+      "classification": "supported",
+      "evidence": "NHS: not addictive but withdrawal possible if stopped suddenly; do not stop suddenly; doctor reduces gradually over several weeks or months, longer after long-term use.",
+      "url": "https://www.nhs.uk/medicines/venlafaxine/common-questions-about-venlafaxine/",
+      "action": "kept",
+      "newSentence": "The NHS says a person who wants to stop should speak to the doctor first."
+    },
+    {
+      "id": "c89",
+      "classification": "supported",
+      "evidence": "NHS common questions: can drink but may feel sleepy, suggests avoiding in first few days; main page: best not to drink as alcohol raises side-effect risk.",
+      "url": "https://www.nhs.uk/medicines/venlafaxine/common-questions-about-venlafaxine/",
+      "action": "kept",
+      "newSentence": "The NHS says alcohol may make a person feel sleepy while taking venlafaxine, and its main venlafaxine page says it is best not to drink because alcohol can raise the risk of side effects."
+    },
+    {
+      "id": "c90",
+      "classification": "supported",
+      "evidence": "NHS common questions: stop driving/cycling for first few days until you know how it makes you feel.",
+      "url": "https://www.nhs.uk/medicines/venlafaxine/common-questions-about-venlafaxine/",
+      "action": "kept",
+      "newSentence": "The NHS suggests it might be best to avoid driving and cycling for the first few days of treatment, until a person knows how the medicine makes them feel."
+    },
+    {
+      "id": "c91",
+      "classification": "supported",
+      "evidence": "NHS: if dizzy or drowsy, do not drive, ride a bike or use machinery until it passes.",
+      "url": "https://www.nhs.uk/medicines/venlafaxine/side-effects-of-venlafaxine/",
+      "action": "kept",
+      "newSentence": "If dizziness or drowsiness occurs, the NHS advises against driving, riding a bike or using machinery until it has gone away."
+    },
+    {
+      "id": "c92",
+      "classification": "supported",
+      "evidence": "NHS who-can page (via search summary): pregnancy/breastfeeding need a risk-benefit discussion with doctor.",
+      "url": "https://www.nhs.uk/medicines/venlafaxine/who-can-and-cannot-take-venlafaxine/",
+      "action": "kept",
+      "newSentence": "The NHS says pregnancy and breastfeeding call for a discussion of the risks and benefits with the doctor."
+    },
+    {
+      "id": "c93",
+      "classification": "supported",
+      "evidence": "NHS antidepressant side effects: uncommon but some people have suicidal thoughts/urge to self-harm at start; 24 or under or previous thoughts most at risk.",
+      "url": "https://www.nhs.uk/mental-health/talking-therapies-medicine-treatments/medicines-and-psychiatry/antidepressants/side-effects/",
+      "action": "kept",
+      "newSentence": "The NHS says it is uncommon, but some people have suicidal thoughts or an urge to self-harm when they start an antidepressant."
+    },
+    {
+      "id": "c94",
+      "classification": "supported",
+      "evidence": "NHS antidepressant side effects: uncommon but some people have suicidal thoughts/urge to self-harm at start; 24 or under or previous thoughts most at risk.",
+      "url": "https://www.nhs.uk/mental-health/talking-therapies-medicine-treatments/medicines-and-psychiatry/antidepressants/side-effects/",
+      "action": "kept",
+      "newSentence": "People aged 24 or under, or who have had these thoughts before, may be most at risk."
+    },
+    {
+      "id": "c95",
+      "classification": "supported",
+      "evidence": "NHS: contact GP or go to A&E for thoughts of harming oneself at any time; call 999 or A&E if in danger or cannot keep safe.",
+      "url": "https://www.nhs.uk/mental-health/talking-therapies-medicine-treatments/medicines-and-psychiatry/antidepressants/side-effects/",
+      "action": "kept",
+      "newSentence": "The NHS says to contact a GP, or go to A&E, for such thoughts at any time during treatment, and to call 999 or go to A&E if in danger or unable to keep safe."
+    },
+    {
+      "id": "c96",
+      "classification": "supported",
+      "evidence": "NHS urgent support: NHS 111 mental health option for urgent non-emergency help; Samaritans 116 123 free 24/7.",
+      "url": "https://www.nhs.uk/every-mind-matters/urgent-support/",
+      "action": "kept",
+      "newSentence": "NHS 111 (mental health option) and the Samaritans on 116 123, free at any time, are other routes to urgent support."
+    },
+    {
+      "id": "c97",
+      "classification": "textbook",
+      "evidence": "Plain classification of venlafaxine as an SNRI antidepressant for depression; NHS page title \"Venlafaxine: an antidepressant medicine\" returned; class and use not otherwise returned in text.",
+      "url": "https://www.nhs.uk/medicines/venlafaxine/",
+      "action": "kept",
+      "newSentence": "Antidepressant (serotonin and noradrenaline reuptake inhibitor, SNRI)"
+    },
+    {
+      "id": "c98",
+      "classification": "textbook",
+      "evidence": "Plain classification of venlafaxine as an SNRI antidepressant for depression; NHS page title \"Venlafaxine: an antidepressant medicine\" returned; class and use not otherwise returned in text.",
+      "url": "https://www.nhs.uk/medicines/venlafaxine/",
+      "action": "kept",
+      "newSentence": "Depression"
+    },
+    {
+      "id": "c99",
+      "classification": "textbook",
+      "evidence": "Plain regulatory fact (UK prescription-only medicine); not stated in returned text.",
+      "url": "https://www.nhs.uk/medicines/venlafaxine/",
+      "action": "kept",
+      "newSentence": "Prescription only"
+    },
+    {
+      "id": "c100",
+      "classification": "supported",
+      "evidence": "Returned summary of NHS/MedlinePlus: may take several weeks or longer to feel full benefit.",
+      "url": "https://www.nhs.uk/medicines/venlafaxine/how-and-when-to-take-venlafaxine/",
+      "action": "kept",
+      "newSentence": "Several weeks or longer, according to the NHS and MedlinePlus"
+    },
+    {
+      "id": "c101",
+      "classification": "supported",
+      "evidence": "NHS: not addictive but withdrawal possible if stopped suddenly; do not stop suddenly; doctor reduces gradually over several weeks or months, longer after long-term use.",
+      "url": "https://www.nhs.uk/medicines/venlafaxine/common-questions-about-venlafaxine/",
+      "action": "kept",
+      "newSentence": "Stopping suddenly can cause withdrawal symptoms, so doctors usually lower the dose gradually"
+    },
+    {
+      "id": "c102",
+      "classification": "supported",
+      "evidence": "UK SmPC: dose-related BP increases commonly reported; severely elevated BP needing immediate treatment reported post-marketing; patients screened and pre-existing hypertension controlled before starting; FDA label: dose-related BP rises and regular monitoring recommended.",
+      "url": "https://www.medicines.org.uk/emc/product/15057/smpc",
+      "action": "kept",
+      "newSentence": "Can raise blood pressure, according to UK product information"
+    },
+    {
+      "id": "c103",
+      "classification": "supported",
+      "evidence": "NHS urgent support: NHS 111 mental health option for urgent non-emergency help; Samaritans 116 123 free 24/7.",
+      "url": "https://www.nhs.uk/every-mind-matters/urgent-support/",
+      "action": "kept",
+      "newSentence": "999 if in immediate danger; NHS 111 (mental health option); Samaritans 116 123, free at any time"
+    },
+    {
+      "id": "r01",
+      "classification": "unsupported",
+      "evidence": "Returned text never stated these uses; NHS about page not returned.",
+      "url": "",
+      "action": "removed",
+      "newSentence": ""
+    },
+    {
+      "id": "r02",
+      "classification": "unsupported",
+      "evidence": "Not in returned text (headaches, dry mouth, sweating were).",
+      "url": "",
+      "action": "removed",
+      "newSentence": ""
+    },
+    {
+      "id": "r03",
+      "classification": "unsupported",
+      "evidence": "Not in returned text.",
+      "url": "",
+      "action": "removed",
+      "newSentence": ""
+    },
+    {
+      "id": "r04",
+      "classification": "unsupported",
+      "evidence": "Leaflet snippets only carried the 'talk to doctor first' warning; BP claim re-attributed to SmPC/FDA and NHS heartbeat statement.",
+      "url": "",
+      "action": "edited",
+      "newSentence": ""
+    },
+    {
+      "id": "r05",
+      "classification": "unsupported",
+      "evidence": "Not in returned NHS list.",
+      "url": "",
+      "action": "removed",
+      "newSentence": ""
+    },
+    {
+      "id": "r06",
+      "classification": "unsupported",
+      "evidence": "Search returned nothing on methadone.",
+      "url": "",
+      "action": "removed",
+      "newSentence": ""
+    },
+    {
+      "id": "r07",
+      "classification": "unsupported",
+      "evidence": "Pregnancy page text not returned; only risk-benefit discussion supported.",
+      "url": "",
+      "action": "removed",
+      "newSentence": ""
+    },
+    {
+      "id": "r08",
+      "classification": "unsupported",
+      "evidence": "Not in returned text.",
+      "url": "",
+      "action": "removed",
+      "newSentence": ""
+    },
+    {
+      "id": "r09",
+      "classification": "wrong",
+      "evidence": "NHS gives 999 for swelling/breathing difficulty; 'rare' not returned. Reworded.",
+      "url": "",
+      "action": "edited",
+      "newSentence": ""
+    },
+    {
+      "id": "r10",
+      "classification": "unsupported",
+      "evidence": "Reworded to 'taken recently, tell doctor' (leaflet).",
+      "url": "",
+      "action": "edited",
+      "newSentence": ""
+    },
+    {
+      "id": "r11",
+      "classification": "unsupported",
+      "evidence": "Pages not returned by any search; replaced with returned URLs.",
+      "url": "",
+      "action": "removed",
+      "newSentence": ""
+    }
+  ],
+  "notes": "Uses other than depression (anxiety, panic, GAD, social anxiety) could not be retrieved in 11 searches and were removed; 'depression', SNRI class, prescription-only and the mechanism are marked textbook. Reviewer may restore anxiety uses from the NHS about page. Pregnancy/breastfeeding text rests on a search summary of the NHS who-can page; the pregnancy page itself returned no text. BP content now rests on SmPC/FDA plus NHS heartbeat and rarely-used-antidepressant statements; no NHS page returned a plain 'raises blood pressure' statement. Brands Vencarm XL, Viepax XL, Efexor XL confirmed on emc ingredient listing; Effexor XR on FDA label title."
+}

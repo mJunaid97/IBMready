@@ -1,0 +1,115 @@
+{
+  "id": "who-global-health-estimates-2023",
+  "searchesUsed": 4,
+  "counts": {
+    "supported": 10,
+    "textbook": 0,
+    "unsupported": 1,
+    "wrong": 0,
+    "unsafe": 0,
+    "unchecked": 0
+  },
+  "claims": [
+    {
+      "id": "c01",
+      "where": "summary",
+      "sentence": "On 2 October 2026 the WHO published new Global Health Estimates for 2000 to 2023, showing heart disease still the top cause of death and dementia rising to fifth.",
+      "classification": "supported",
+      "evidence": "WHO news 02-10-2026 'New WHO estimates show changing global health landscape': Global Health Estimates 2000-2023; IHD remains first (16% of deaths, 9.5 million); dementia fifth.",
+      "url": "https://www.who.int/news/item/02-10-2026-new-who-estimates-show-changing-global-health-landscape",
+      "action": "kept"
+    },
+    {
+      "id": "c02",
+      "where": "keyPoints[0]",
+      "sentence": "The WHO published new Global Health Estimates covering 2000 to 2023 on 2 October 2026.",
+      "classification": "supported",
+      "evidence": "WHO news item URL dated 02-10-2026; estimates cover 2000 to 2023.",
+      "url": "https://www.who.int/news/item/02-10-2026-new-who-estimates-show-changing-global-health-landscape",
+      "action": "kept"
+    },
+    {
+      "id": "c03",
+      "where": "keyPoints[1]",
+      "sentence": "Noncommunicable diseases caused 74% of global deaths in 2023, up from 58% in 2000, according to the WHO release.",
+      "classification": "supported",
+      "evidence": "WHO: 'NCDs accounted for 74% of deaths globally in 2023, compared with 58% in 2000'. Do not mix with 2019 release (59.5% in 2000, 73.9% in 2019).",
+      "url": "https://www.who.int/news/item/02-10-2026-new-who-estimates-show-changing-global-health-landscape",
+      "action": "kept"
+    },
+    {
+      "id": "c04",
+      "where": "keyPoints[2]",
+      "sentence": "Ischaemic heart disease remained the leading cause of death; dementia moved up to fifth place from 19th in 2000.",
+      "classification": "supported",
+      "evidence": "WHO top-10 fact sheet/news: IHD first; 'dementia became the fifth leading cause of death globally in 2023, compared with 19th in 2000'.",
+      "url": "https://www.who.int/news-room/fact-sheets/detail/the-top-10-causes-of-death",
+      "action": "kept"
+    },
+    {
+      "id": "c05",
+      "where": "keyPoints[3]",
+      "sentence": "Diabetes ranked sixth, lung cancers seventh and kidney diseases ninth.",
+      "classification": "supported",
+      "evidence": "Ranks inferred from the printed 2023 top-10 order on the WHO fact sheet (IHD, stroke, COPD, lower respiratory infections, Alzheimer/dementias, diabetes, lung cancers, hypertensive heart disease, kidney diseases, diarrhoeal): diabetes 6th, lung 7th, kidney 9th. Positions come from list order, not explicit rank labels; the page itself should be rechecked.",
+      "url": "https://www.who.int/news-room/fact-sheets/detail/the-top-10-causes-of-death",
+      "action": "kept"
+    },
+    {
+      "id": "c06",
+      "where": "body[0].p0.s0",
+      "sentence": "On 2 October 2026 the World Health Organization (WHO) released new Global Health Estimates covering 2000 to 2023.",
+      "classification": "supported",
+      "evidence": "Same WHO release: 'On 2 October 2026 ... Global Health Estimates 2000-2023' (URL date 02-10-2026).",
+      "url": "https://www.who.int/news/item/02-10-2026-new-who-estimates-show-changing-global-health-landscape",
+      "action": "kept"
+    },
+    {
+      "id": "c07",
+      "where": "body[0].p0.s1",
+      "sentence": "The WHO says noncommunicable diseases accounted for 74% of deaths worldwide in 2023, up from 58% in 2000.",
+      "classification": "supported",
+      "evidence": "WHO: 74% NCD share in 2023, 58% in 2000.",
+      "url": "https://www.who.int/news/item/02-10-2026-new-who-estimates-show-changing-global-health-landscape",
+      "action": "kept"
+    },
+    {
+      "id": "c08",
+      "where": "body[0].p0.s2",
+      "sentence": "Eight of the ten leading causes of death were noncommunicable diseases.",
+      "classification": "supported",
+      "evidence": "WHO: 'Eight of the world's ten leading causes of death were NCDs in 2023'. Another WHO page says those eight NCDs accounted for 47% of all deaths; that is a different measure from the 74% overall NCD share and must not be conflated.",
+      "url": "https://www.who.int/news/item/02-10-2026-new-who-estimates-show-changing-global-health-landscape",
+      "action": "kept"
+    },
+    {
+      "id": "c09",
+      "where": "body[0].p1.s0",
+      "sentence": "Ischaemic heart disease remained the leading cause of death. Dementia rose to fifth place from 19th in 2000, diabetes ranked sixth, tracheal, bronchial and lung cancers seventh, and kidney diseases ninth.",
+      "classification": "supported",
+      "evidence": "WHO fact sheet: IHD first; dementia fifth from 19th; top-10 list order gives diabetes 6th, lung cancers 7th, kidney diseases 9th (rank labels inferred from order).",
+      "url": "https://www.who.int/news-room/fact-sheets/detail/the-top-10-causes-of-death",
+      "action": "kept"
+    },
+    {
+      "id": "c10",
+      "where": "body[0].p1.s1",
+      "sentence": "HIV and AIDS fell to 22nd place from seventh in 2000, and COVID-19 left the top ten for the first time since the pandemic began.",
+      "classification": "supported",
+      "evidence": "WHO top-10 fact sheet: 'HIV and AIDS ... moving from the world's seventh leading cause of death in 2000 to the twenty-second in 2023'; leading-causes page: COVID-19 fell out of the top 10 'for the first time since the pandemic began'; fact sheet puts it 14th in 2023.",
+      "url": "https://www.who.int/news-room/fact-sheets/detail/the-top-10-causes-of-death",
+      "action": "kept"
+    },
+    {
+      "id": "c11",
+      "where": "body[1].p0.s0",
+      "sentence": "The estimates replace earlier WHO series, so the WHO's earlier figures are not directly comparable with them.",
+      "classification": "unsupported",
+      "evidence": "WHO says 2000-2023 estimates 'are not comparable to previously-released WHO estimates' due to changes in data and methods. The word 'replace' is not found in retrieved text.",
+      "url": "https://www.who.int/data/gho/data/themes/mortality-and-global-health-estimates/ghe-leading-causes-of-death",
+      "action": "edited",
+      "newSentence": "The WHO says the 2000 to 2023 estimates are not comparable with its previously released estimates, because of changes in data and methods."
+    }
+  ],
+  "notes": "74% (all NCDs) vs 47% (the eight NCDs in the top ten) are different measures; the brief uses 74% and 'eight of ten' separately, which is correct. Rank positions for diabetes/lung/kidney are inferred from list order. Rank wording 'replace earlier WHO series' is not in the WHO text; WHO says only not comparable."
+}

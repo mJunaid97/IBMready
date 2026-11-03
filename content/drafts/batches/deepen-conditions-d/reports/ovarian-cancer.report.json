@@ -1,0 +1,536 @@
+{
+ "id": "ovarian-cancer",
+ "searchesUsed": 14,
+ "counts": {
+  "supported": 25,
+  "textbook": 2,
+  "unsupported": 31,
+  "wrong": 0,
+  "unsafe": 0,
+  "unchecked": 0
+ },
+ "claims": [
+  {
+   "id": "c01",
+   "where": "article.sections[0]",
+   "classification": "unsupported",
+   "evidence": "Retrieved text attributes \"12 times a month or more... new, frequent and persistent\" to the Royal Marsden (an NHS trust) and a similar \"roughly 12 or more times a month\" wording appears in an NHS-trust quote; nhs.uk symptoms page text was not retrieved, so the NHS attribution is unconfirmed.",
+   "url": "https://www.royalmarsden.nhs.uk/private-care/news-and-blogs/ovarian-cancer-what-are-symptoms-and-how-do-i-manage-them",
+   "action": "edited",
+   "newSentence": "The Royal Marsden says symptoms such as bloating usually happen 12 times a month or more, and are new, frequent and persistent."
+  },
+  {
+   "id": "c02",
+   "where": "article.sections[0]",
+   "classification": "unsupported",
+   "evidence": "Target Ovarian Cancer lists feeling full quickly, loss of appetite, pelvic or tummy pain and urinary urgency/frequency; CRUK symptoms page text not retrieved so the CRUK attribution is unconfirmed.",
+   "url": "https://www.targetovariancancer.org.uk/about-ovarian-cancer/symptoms",
+   "action": "edited",
+   "newSentence": "Target Ovarian Cancer also lists feeling full quickly, loss of appetite, pain in the tummy or pelvis, and needing to wee more often or urgently."
+  },
+  {
+   "id": "c03",
+   "where": "article.sections[0]",
+   "classification": "unsupported",
+   "evidence": "No retrieved text says early-stage disease may cause no symptoms. Royal Marsden says it often causes rather vague symptoms, making it difficult to diagnose.",
+   "url": "https://www.royalmarsden.nhs.uk/private-care/news-and-blogs/ovarian-cancer-what-are-symptoms-and-how-do-i-manage-them",
+   "action": "edited",
+   "newSentence": "The Royal Marsden says ovarian cancer often causes vague symptoms, which can make it hard to diagnose."
+  },
+  {
+   "id": "c04",
+   "where": "article.sections[0]",
+   "classification": "unsupported",
+   "evidence": "Royal Marsden IBS/endometriosis overlap not retrieved. CRUK (via summary) says these symptoms are often caused by less serious conditions such as IBS.",
+   "url": "https://www.cancerresearchuk.org/about-cancer/ovarian-cancer/symptoms",
+   "action": "edited",
+   "newSentence": "Cancer Research UK notes that these symptoms are often caused by less serious conditions, such as irritable bowel syndrome."
+  },
+  {
+   "id": "c05",
+   "where": "article.sections[0]",
+   "classification": "unsupported",
+   "evidence": "Connective sentence; no source text. Covered by the CRUK statement in c04.",
+   "url": "https://www.cancerresearchuk.org/about-cancer/ovarian-cancer/symptoms",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c06",
+   "where": "article.sections[0]",
+   "classification": "supported",
+   "evidence": "NHS England Midlands, Cancer Matters Wessex and Royal Marsden text describe symptoms as new, frequent and persistent and recommend a GP visit; nhs.uk page itself not retrieved, so attribution softened.",
+   "url": "https://cancermatterswessex.nhs.uk/ovarian-cancer/",
+   "action": "edited",
+   "newSentence": "NHS cancer information describes these symptoms as usually new, frequent and persistent, and recommends seeing a GP about them."
+  },
+  {
+   "id": "c07",
+   "where": "article.sections[0]",
+   "classification": "supported",
+   "evidence": "Target Ovarian Cancer (via summary): a GP will typically ask about symptoms, examine, and may order a CA125 blood test.",
+   "url": "https://www.targetovariancancer.org.uk/about-ovarian-cancer/symptoms",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c08",
+   "where": "article.sections[1]",
+   "classification": "supported",
+   "evidence": "NHS causes page: risk increases with age; most cases in UK are in women over 50.",
+   "url": "https://www.nhs.uk/conditions/ovarian-cancer/causes/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c09",
+   "where": "article.sections[1]",
+   "classification": "unsupported",
+   "evidence": "NHS causes page lists inherited faulty genes (BRCA, Lynch), breast or bowel cancer, endometriosis, overweight, smoking; previous radiotherapy was not in retrieved text.",
+   "url": "https://www.nhs.uk/conditions/ovarian-cancer/causes/",
+   "action": "edited",
+   "newSentence": "The NHS lists an inherited faulty gene, such as the BRCA genes or those linked to Lynch syndrome, a previous breast or bowel cancer, endometriosis, smoking and being overweight among the factors that raise risk."
+  },
+  {
+   "id": "c10",
+   "where": "article.sections[1]",
+   "classification": "unsupported",
+   "evidence": "Royal Marsden BRCA wording not retrieved. CRUK names a fault in BRCA1 or BRCA2 as a major inherited risk, plus Lynch syndrome.",
+   "url": "https://www.cancerresearchuk.org/about-cancer/ovarian-cancer/risks-causes",
+   "action": "edited",
+   "newSentence": "Cancer Research UK names a fault in the BRCA1 or BRCA2 gene, and Lynch syndrome, as inherited factors that raise the risk of ovarian cancer."
+  },
+  {
+   "id": "c11",
+   "where": "article.sections[1]",
+   "classification": "supported",
+   "evidence": "Royal Marsden: the combined contraceptive pill appears to reduce risk of ovarian cancer.",
+   "url": "https://www.royalmarsden.nhs.uk/private-care/news-and-blogs/understanding-ovarian-cancer-causes-and-risk-factors",
+   "action": "edited",
+   "newSentence": "The Royal Marsden says taking the combined contraceptive pill appears to reduce the risk of ovarian cancer."
+  },
+  {
+   "id": "c12",
+   "where": "article.sections[1]",
+   "classification": "supported",
+   "evidence": "Royal Marsden: no concrete evidence that fertility treatment increases the risk. \"Same source\" in the sentence is ambiguous, so attribute it.",
+   "url": "https://www.royalmarsden.nhs.uk/private-care/news-and-blogs/understanding-ovarian-cancer-causes-and-risk-factors",
+   "action": "edited",
+   "newSentence": "The Royal Marsden says there is no concrete evidence that fertility treatment increases the risk of ovarian cancer."
+  },
+  {
+   "id": "c13",
+   "where": "article.sections[1]",
+   "classification": "textbook",
+   "evidence": "Plain undisputed fact about risk factors in general.",
+   "url": "https://www.royalmarsden.nhs.uk/private-care/news-and-blogs/understanding-ovarian-cancer-causes-and-risk-factors",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c14",
+   "where": "article.sections[1]",
+   "classification": "unsupported",
+   "evidence": "No retrieved text states this; stronger than the sources.",
+   "url": "https://www.royalmarsden.nhs.uk/private-care/news-and-blogs/understanding-ovarian-cancer-causes-and-risk-factors",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c15",
+   "where": "article.sections[2]",
+   "classification": "supported",
+   "evidence": "CRUK and Ovarian Cancer Action stage pages (via summary): ovarian cancer is staged 1 to 4.",
+   "url": "https://www.cancerresearchuk.org/about-cancer/ovarian-cancer/stages-grades",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c16",
+   "where": "article.sections[2]",
+   "classification": "unsupported",
+   "evidence": "Stage 1 only in one or both ovaries and stage 4 at distant organs retrieved; \"such as the liver or lungs\" not retrieved.",
+   "url": "https://www.cancerresearchuk.org/about-cancer/ovarian-cancer/stages-grades",
+   "action": "edited",
+   "newSentence": "Cancer Research UK describes stage 1 as cancer found only in one or both ovaries, and stage 4 as cancer that has spread to distant organs."
+  },
+  {
+   "id": "c17",
+   "where": "article.sections[2]",
+   "classification": "supported",
+   "evidence": "Stage/grade sources (via summary): grade describes how abnormal the cells look under a microscope.",
+   "url": "https://www.cancerresearchuk.org/about-cancer/ovarian-cancer/stages-grades",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c18",
+   "where": "article.sections[2]",
+   "classification": "unsupported",
+   "evidence": "Retrieved text says treatment depends on type, location, stage, grade and general health; nothing about judging outlook.",
+   "url": "https://www.cancerresearchuk.org/about-cancer/ovarian-cancer/treatment/treatment-decisions",
+   "action": "edited",
+   "newSentence": "Treatment depends on the type of cancer, where it is, its stage and grade, and the person's general health."
+  },
+  {
+   "id": "c19",
+   "where": "article.sections[2]",
+   "classification": "unsupported",
+   "evidence": "Vague connective sentence with no source text.",
+   "url": "https://www.cancerresearchuk.org/about-cancer/ovarian-cancer/stages-grades",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c20",
+   "where": "article.sections[2]",
+   "classification": "supported",
+   "evidence": "Target page (via summary): PARP inhibitors listed for high-grade serous cancer; trametinib, a MEK inhibitor, for low-grade serous cancer that returned or kept growing after platinum. \"Mainly\" came from a blended summary, so wording tightened.",
+   "url": "https://targetovariancancer.org.uk/about-ovarian-cancer/treatment/targeted-treatments-ovarian-cancer",
+   "action": "edited",
+   "newSentence": "Target Ovarian Cancer says PARP inhibitors are used for high-grade serous cancer, and the MEK inhibitor trametinib for low-grade serous cancer that has returned or kept growing after platinum chemotherapy."
+  },
+  {
+   "id": "c21",
+   "where": "article.sections[2]",
+   "classification": "unsupported",
+   "evidence": "MedlinePlus (via summary): ovarian cancer is seldom found early; when diagnosed and treated before it spreads beyond the ovary, five-year survival is high. \"Survival depends strongly on stage\" not stated.",
+   "url": "https://medlineplus.gov/ency/article/000889.htm",
+   "action": "edited",
+   "newSentence": "MedlinePlus says ovarian cancer is seldom found early, and that survival is high when it is found and treated before it has spread beyond the ovary."
+  },
+  {
+   "id": "c22",
+   "where": "article.sections[2]",
+   "classification": "unsupported",
+   "evidence": "No source text; points readers to figures without stating any.",
+   "url": "https://medlineplus.gov/ency/article/000889.htm",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c23",
+   "where": "article.sections[3]",
+   "classification": "supported",
+   "evidence": "NHS treatment page: the main treatments are surgery and chemotherapy.",
+   "url": "https://www.nhs.uk/conditions/ovarian-cancer/treatment/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c24",
+   "where": "article.sections[3]",
+   "classification": "supported",
+   "evidence": "NHS treatment page (via summary): surgery usually comes first.",
+   "url": "https://www.nhs.uk/conditions/ovarian-cancer/treatment/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c25",
+   "where": "article.sections[3]",
+   "classification": "unsupported",
+   "evidence": "Not retrieved. CRUK: stage 1, surgery is the main treatment and some people also have chemotherapy.",
+   "url": "https://www.cancerresearchuk.org/about-cancer/ovarian-cancer/treatment/treatment-decisions",
+   "action": "edited",
+   "newSentence": "In stage 1 ovarian cancer, surgery is the main treatment, and some people also have chemotherapy."
+  },
+  {
+   "id": "c26",
+   "where": "article.sections[3]",
+   "classification": "unsupported",
+   "evidence": "NHS: chemotherapy usually given in addition to surgery, occasionally before surgery to shrink the cancer; \"or both\" for advanced disease not retrieved.",
+   "url": "https://www.nhs.uk/conditions/ovarian-cancer/treatment/",
+   "action": "edited",
+   "newSentence": "The NHS says chemotherapy is usually given in addition to surgery, and is sometimes given before surgery to shrink the cancer."
+  },
+  {
+   "id": "c27",
+   "where": "article.sections[3]",
+   "classification": "unsupported",
+   "evidence": "Not retrieved from NHS inform. Only an NHS trust snippet about chemotherapy as main treatment when cancer has spread outside the abdomen or to the liver.",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/cancer/cancer-types-in-adults/ovarian-cancer/",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c28",
+   "where": "article.sections[3]",
+   "classification": "unsupported",
+   "evidence": "Retrieved: radiotherapy is rarely used (occasionally for cancer that has come back); NHS: sometimes used to reduce symptoms. \"Mainly for easing symptoms\" is not stated.",
+   "url": "https://www.nhs.uk/conditions/ovarian-cancer/treatment/",
+   "action": "edited",
+   "newSentence": "Radiotherapy is rarely used for ovarian cancer, and is sometimes used to reduce symptoms."
+  },
+  {
+   "id": "c29",
+   "where": "article.sections[3]",
+   "classification": "supported",
+   "evidence": "Target page exists titled \"Targeted treatments for ovarian cancer\" and describes PARP inhibitors, bevacizumab and trametinib.",
+   "url": "https://targetovariancancer.org.uk/about-ovarian-cancer/treatment/targeted-treatments-ovarian-cancer",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c30",
+   "where": "article.sections[3]",
+   "classification": "unsupported",
+   "evidence": "Retrieved summary: PARP inhibitors generally offered to stage 3 or 4 disease that responded to platinum chemotherapy, high-grade serous; \"only used once\" for trametinib \"as with PARP inhibitors\". \"Epithelial ovarian, fallopian tube or primary peritoneal\" wording not in retrieved text.",
+   "url": "https://targetovariancancer.org.uk/about-ovarian-cancer/treatment/targeted-treatments-ovarian-cancer",
+   "action": "edited",
+   "newSentence": "Target Ovarian Cancer says PARP inhibitors are generally offered for stage 3 or 4 high-grade serous cancer that has responded to platinum-based chemotherapy, and can usually only be used once."
+  },
+  {
+   "id": "c31",
+   "where": "article.sections[3]",
+   "classification": "unsupported",
+   "evidence": "Nothing retrieved about bevacizumab and BRCA status. Target: bevacizumab can be given with olaparib as maintenance in newly diagnosed disease; with chemotherapy in platinum-resistant disease.",
+   "url": "https://targetovariancancer.org.uk/about-ovarian-cancer/treatment/targeted-treatments-ovarian-cancer",
+   "action": "edited",
+   "newSentence": "Target Ovarian Cancer says bevacizumab can be given with the PARP inhibitor olaparib as a maintenance treatment for newly diagnosed disease."
+  },
+  {
+   "id": "c32",
+   "where": "article.sections[3]",
+   "classification": "unsupported",
+   "evidence": "Royal Marsden wording not retrieved; the closing \"care team decides\" line was the search tool's own summary, not source text.",
+   "url": "https://www.royalmarsden.nhs.uk/your-care/cancer-types/gynaecological/ovarian-cancer",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c33",
+   "where": "article.sections[4]",
+   "classification": "supported",
+   "evidence": "NHS inform (via summary): if the person has not reached menopause, treatment will usually bring it on.",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/cancer/cancer-types-in-adults/ovarian-cancer/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c34",
+   "where": "article.sections[4]",
+   "classification": "supported",
+   "evidence": "NHS inform (via summary): cancer and treatment can change physical and emotional aspects of intimacy; difficulties often ease gradually after treatment.",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/cancer/cancer-types-in-adults/ovarian-cancer/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c35",
+   "where": "article.sections[4]",
+   "classification": "supported",
+   "evidence": "Target page title and summary: follow-up appointments and monitoring tests (blood tests, examination, scans).",
+   "url": "https://targetovariancancer.org.uk/follow-appointments-and-monitoring-tests",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c36",
+   "where": "article.sections[4]",
+   "classification": "supported",
+   "evidence": "Target (via summary): follow-up may include CA125; a gradually rising or persistently raised level may lead the team to order tests to check for recurrence; a single result is not enough.",
+   "url": "https://targetovariancancer.org.uk/follow-appointments-and-monitoring-tests",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c37",
+   "where": "article.sections[4]",
+   "classification": "unsupported",
+   "evidence": "Retrieved NHS inform text says people do not have to wait for a follow-up appointment if they have concerns; advice to contact \"specialist doctor or nurse\" not retrieved.",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/cancer/cancer-types-in-adults/ovarian-cancer/",
+   "action": "edited",
+   "newSentence": "NHS inform says people do not have to wait for a follow-up appointment if they have concerns about symptoms."
+  },
+  {
+   "id": "c38",
+   "where": "article.sections[4]",
+   "classification": "unsupported",
+   "evidence": "No retrieved text on specialist nurse support or Macmillan advanced cancer information.",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/cancer/cancer-types-in-adults/ovarian-cancer/",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c39",
+   "where": "article.sections[4]",
+   "classification": "unsupported",
+   "evidence": "No retrieved text for this statement.",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/cancer/cancer-types-in-adults/ovarian-cancer/",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c40",
+   "where": "article.faqs[0].a",
+   "classification": "supported",
+   "evidence": "Royal Marsden/NICE (via summary): CA125 and an ultrasound of abdomen and pelvis; CA125 useful in primary care.",
+   "url": "https://www.royalmarsden.nhs.uk/your-care/cancer-types/gynaecological/ovarian-cancer",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c41",
+   "where": "article.faqs[0].a",
+   "classification": "unsupported",
+   "evidence": "Royal Marsden: CA125 is not always raised in early-stage disease and can be raised by non-cancerous conditions; imaging includes ultrasound, CT or MRI. \"Often raised\" not stated.",
+   "url": "https://www.royalmarsden.nhs.uk/your-care/cancer-types/gynaecological/ovarian-cancer",
+   "action": "edited",
+   "newSentence": "CA125 is a blood marker that is not always raised in ovarian cancer and can also be raised by other conditions, and imaging may be an ultrasound, CT or MRI scan."
+  },
+  {
+   "id": "c42",
+   "where": "article.faqs[0].a",
+   "classification": "textbook",
+   "evidence": "Plain undisputed fact that cancer is confirmed by examining tissue; retrieved text did not describe it.",
+   "url": "https://www.royalmarsden.nhs.uk/your-care/cancer-types/gynaecological/ovarian-cancer",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c43",
+   "where": "article.faqs[1].a",
+   "classification": "supported",
+   "evidence": "CRUK (via summary): these symptoms are often caused by less serious conditions, so \"not usually\" is consistent.",
+   "url": "https://www.cancerresearchuk.org/about-cancer/ovarian-cancer/symptoms",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c44",
+   "where": "article.faqs[1].a",
+   "classification": "unsupported",
+   "evidence": "Royal Marsden IBS/endometriosis overlap not retrieved; CRUK states IBS only.",
+   "url": "https://www.cancerresearchuk.org/about-cancer/ovarian-cancer/symptoms",
+   "action": "edited",
+   "newSentence": "Cancer Research UK notes that these symptoms are often caused by less serious conditions, such as irritable bowel syndrome."
+  },
+  {
+   "id": "c45",
+   "where": "article.faqs[1].a",
+   "classification": "supported",
+   "evidence": "As c06: NHS-body texts describe symptoms as new, frequent, persistent and recommend a GP visit; nhs.uk page not retrieved.",
+   "url": "https://cancermatterswessex.nhs.uk/ovarian-cancer/",
+   "action": "edited",
+   "newSentence": "NHS cancer information describes these symptoms as usually new, frequent and persistent, and recommends seeing a GP about them."
+  },
+  {
+   "id": "c46",
+   "where": "article.faqs[2].a",
+   "classification": "supported",
+   "evidence": "NHS inform (via summary): if the person has not reached menopause, treatment will usually bring it on.",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/cancer/cancer-types-in-adults/ovarian-cancer/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c47",
+   "where": "article.faqs[2].a",
+   "classification": "unsupported",
+   "evidence": "No retrieved text.",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/cancer/cancer-types-in-adults/ovarian-cancer/",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c48",
+   "where": "article.faqs[3].a",
+   "classification": "supported",
+   "evidence": "Target page: PARP inhibitors are a targeted treatment.",
+   "url": "https://targetovariancancer.org.uk/about-ovarian-cancer/treatment/targeted-treatments-ovarian-cancer",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c49",
+   "where": "article.faqs[3].a",
+   "classification": "unsupported",
+   "evidence": "Same as c30: full eligibility wording not retrieved; stage 3/4 high-grade serous, responded to platinum, usually only once are.",
+   "url": "https://targetovariancancer.org.uk/about-ovarian-cancer/treatment/targeted-treatments-ovarian-cancer",
+   "action": "edited",
+   "newSentence": "Target Ovarian Cancer says PARP inhibitors are generally offered for stage 3 or 4 high-grade serous cancer that has responded to platinum-based chemotherapy, and can usually only be used once."
+  },
+  {
+   "id": "c50",
+   "where": "article.faqs[4].a",
+   "classification": "supported",
+   "evidence": "Target pages cover treatment when ovarian cancer has returned and follow-up that checks for recurrence.",
+   "url": "https://targetovariancancer.org.uk/follow-appointments-and-monitoring-tests",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c51",
+   "where": "article.faqs[4].a",
+   "classification": "unsupported",
+   "evidence": "Recurrence and follow-up are covered by Target Ovarian Cancer; NHS inform attribution not confirmed.",
+   "url": "https://targetovariancancer.org.uk/follow-appointments-and-monitoring-tests",
+   "action": "edited",
+   "newSentence": "Target Ovarian Cancer says follow-up appointments are used to check for any return of the cancer, as well as how treatment has affected daily life."
+  },
+  {
+   "id": "c52",
+   "where": "article.faqs[4].a",
+   "classification": "unsupported",
+   "evidence": "\"Contact specialist doctor or nurse\" not retrieved; NHS inform says no need to wait for a follow-up appointment if concerned.",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/cancer/cancer-types-in-adults/ovarian-cancer/",
+   "action": "edited",
+   "newSentence": "A person who has concerns after treatment does not have to wait for a follow-up appointment before getting in touch with their care team."
+  },
+  {
+   "id": "c53",
+   "where": "article.keyFacts[0]",
+   "classification": "supported",
+   "evidence": "Target, Macmillan, Royal Marsden and Wessex all list persistent bloating or a swollen tummy as a main symptom.",
+   "url": "https://www.targetovariancancer.org.uk/about-ovarian-cancer/symptoms",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c54",
+   "where": "article.keyFacts[1]",
+   "classification": "unsupported",
+   "evidence": "NICE (via Royal Marsden summary): CA125 and ultrasound first; CT to show extent if findings suggest cancer.",
+   "url": "https://www.royalmarsden.nhs.uk/your-care/cancer-types/gynaecological/ovarian-cancer",
+   "action": "edited",
+   "newSentence": "First tests: A CA125 blood test and an ultrasound scan, with a CT scan if more detail is needed"
+  },
+  {
+   "id": "c55",
+   "where": "article.keyFacts[2]",
+   "classification": "unsupported",
+   "evidence": "No retrieved text on biopsy/microscope confirmation; textbook allowance already used at c13 and c42.",
+   "url": "https://www.royalmarsden.nhs.uk/your-care/cancer-types/gynaecological/ovarian-cancer",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c56",
+   "where": "article.keyFacts[3]",
+   "classification": "supported",
+   "evidence": "Stage pages: stage 1 only in the ovaries, stage 4 at distant organs.",
+   "url": "https://www.cancerresearchuk.org/about-cancer/ovarian-cancer/stages-grades",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c57",
+   "where": "article.keyFacts[4]",
+   "classification": "supported",
+   "evidence": "NHS: surgery and chemotherapy; CRUK: some people with stage 3 or 4 also have targeted drugs.",
+   "url": "https://www.nhs.uk/conditions/ovarian-cancer/treatment/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c58",
+   "where": "article.keyFacts[5]",
+   "classification": "supported",
+   "evidence": "NHS-body texts recommend seeing a GP for new, frequent, persistent symptoms.",
+   "url": "https://cancermatterswessex.nhs.uk/ovarian-cancer/",
+   "action": "kept",
+   "newSentence": ""
+  }
+ ]
+}

@@ -1,0 +1,694 @@
+{
+ "id": "vertigo",
+ "searchesUsed": 11,
+ "counts": {
+  "supported": 63,
+  "textbook": 5,
+  "unsupported": 25,
+  "wrong": 0,
+  "unsafe": 0,
+  "unchecked": 0
+ },
+ "claims": [
+  {
+   "id": "c01",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/NIDCD/NICE text matches.",
+   "url": "https://www.nhs.uk/conditions/vertigo/",
+   "action": "kept"
+  },
+  {
+   "id": "c02",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/NIDCD/NICE text matches.",
+   "url": "https://www.nhs.uk/conditions/vertigo/",
+   "action": "kept"
+  },
+  {
+   "id": "c03",
+   "classification": "supported",
+   "evidence": "NHS: vertigo usually due to a problem with the inner ear.",
+   "url": "https://www.nhs.uk/conditions/vertigo/",
+   "action": "kept"
+  },
+  {
+   "id": "c04",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/NIDCD/NICE text matches.",
+   "url": "https://www.nidcd.nih.gov/health/balance-disorders",
+   "action": "kept"
+  },
+  {
+   "id": "c05",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/NIDCD/NICE text matches.",
+   "url": "https://www.nhs.uk/conditions/vertigo/",
+   "action": "kept"
+  },
+  {
+   "id": "c06",
+   "classification": "supported",
+   "evidence": "NHS: usually due to inner ear problem.",
+   "url": "https://www.nhs.uk/conditions/vertigo/",
+   "action": "kept"
+  },
+  {
+   "id": "c07",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/NIDCD/NICE text matches.",
+   "url": "https://www.nhs.uk/conditions/vertigo/",
+   "action": "kept"
+  },
+  {
+   "id": "c08",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/NIDCD/NICE text matches.",
+   "url": "https://www.nidcd.nih.gov/health/balance-disorders",
+   "action": "kept"
+  },
+  {
+   "id": "c09",
+   "classification": "unsupported",
+   "evidence": "NIDCD fact sheet says theories vary about causes; MedlinePlus says cause unknown. 'Still unknown according to NIDCD' not found.",
+   "url": "https://medlineplus.gov/ency/article/000702.htm",
+   "action": "edited",
+   "newSentence": "The cause of Ménière's disease is unknown according to MedlinePlus, and the NIDCD says theories about the cause vary."
+  },
+  {
+   "id": "c10",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/NIDCD/NICE text matches.",
+   "url": "https://cks.nice.org.uk/topics/vertigo/diagnosis/assessment/",
+   "action": "kept"
+  },
+  {
+   "id": "c11",
+   "classification": "unsupported",
+   "evidence": "PMC3196003 intro: course ranges from self-treatable to persistent or recurrent disabling; 'often recurs' not found.",
+   "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3196003/",
+   "action": "edited",
+   "newSentence": "BPPV can recur, and in some people it becomes a persistent or recurrent problem"
+  },
+  {
+   "id": "c12",
+   "classification": "unsupported",
+   "evidence": "NIDCD lists hearing loss episodes; 'fluctuating' not confirmed in retrieved NIDCD text.",
+   "url": "https://www.nidcd.nih.gov/health/balance-disorders",
+   "action": "edited",
+   "newSentence": "Hearing loss in Ménière's disease"
+  },
+  {
+   "id": "c13",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/NIDCD/NICE text matches.",
+   "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3196003/",
+   "action": "kept"
+  },
+  {
+   "id": "c14",
+   "classification": "unsupported",
+   "evidence": "Cited review not retrieved. Other sources: no single test, diagnosis from pattern of attacks and audiometry.",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8686442/",
+   "action": "edited",
+   "newSentence": "For Ménière's disease, no single test confirms the diagnosis, which rests on the pattern of recurring attacks and hearing tests."
+  },
+  {
+   "id": "c15",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/NIDCD/NICE text matches.",
+   "url": "https://www.nhs.uk/conditions/menieres-disease/",
+   "action": "kept"
+  },
+  {
+   "id": "c16",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/NIDCD/NICE text matches.",
+   "url": "https://www.nhs.uk/conditions/vertigo/",
+   "action": "kept"
+  },
+  {
+   "id": "c17",
+   "classification": "supported",
+   "evidence": "PMC3196003: BPPV frequently resolved on its own or through office-based canalith repositioning.",
+   "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3196003/",
+   "action": "kept"
+  },
+  {
+   "id": "c18",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/NIDCD/NICE text matches.",
+   "url": "https://www.nhs.uk/conditions/menieres-disease/",
+   "action": "kept"
+  },
+  {
+   "id": "c19",
+   "classification": "unsupported",
+   "evidence": "Review not retrieved. NHS 111 Wales: surgery rarely offered if symptoms hard to control.",
+   "url": "https://111.wales.nhs.uk/encyclopaedia/m/article/menieresdisease",
+   "action": "edited",
+   "newSentence": "NHS 111 Wales says surgery on the inner ear is rarely offered, when symptoms are hard to control."
+  },
+  {
+   "id": "c20",
+   "classification": "unsupported",
+   "evidence": "NHS lifestyle advice retrieved; the 'sources reviewed do not describe prevention of BPPV' clause is a non-claim about absence.",
+   "url": "https://www.nhs.uk/conditions/menieres-disease/",
+   "action": "edited",
+   "newSentence": "The NHS suggests lifestyle changes such as drinking plenty of fluids, avoiding caffeine, not smoking and not drinking alcohol can help manage Ménière's disease."
+  },
+  {
+   "id": "c21",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/NIDCD/NICE text matches.",
+   "url": "https://www.nhs.uk/conditions/vertigo/",
+   "action": "kept"
+  },
+  {
+   "id": "c22",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/NIDCD/NICE text matches.",
+   "url": "https://www.nhs.uk/conditions/vertigo/",
+   "action": "kept"
+  },
+  {
+   "id": "c23",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/NIDCD/NICE text matches.",
+   "url": "https://www.nhs.uk/conditions/vertigo/",
+   "action": "kept"
+  },
+  {
+   "id": "c24",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/NIDCD/NICE text matches.",
+   "url": "https://www.nhs.uk/conditions/vertigo/",
+   "action": "kept"
+  },
+  {
+   "id": "c25",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/NIDCD/NICE text matches.",
+   "url": "https://www.nhs.uk/conditions/vertigo/",
+   "action": "kept"
+  },
+  {
+   "id": "c26",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/NIDCD/NICE text matches.",
+   "url": "https://www.nhs.uk/conditions/vertigo/",
+   "action": "kept"
+  },
+  {
+   "id": "c27",
+   "classification": "supported",
+   "evidence": "NHS: usually due to inner ear problem.",
+   "url": "https://www.nhs.uk/conditions/vertigo/",
+   "action": "kept"
+  },
+  {
+   "id": "c28",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/NIDCD/NICE text matches.",
+   "url": "https://www.nhs.uk/conditions/vertigo/",
+   "action": "kept"
+  },
+  {
+   "id": "c29",
+   "classification": "unsupported",
+   "evidence": "NHS summary: BPPV is one of the most common causes; 'the most common of these' not found.",
+   "url": "https://www.nhs.uk/conditions/vertigo/",
+   "action": "edited",
+   "newSentence": "The NHS describes BPPV as one of the most common causes of vertigo."
+  },
+  {
+   "id": "c30",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/NIDCD/NICE text matches.",
+   "url": "https://www.nhs.uk/conditions/vertigo/",
+   "action": "kept"
+  },
+  {
+   "id": "c31",
+   "classification": "textbook",
+   "evidence": "Signposting to scope of page.",
+   "url": "",
+   "action": "kept"
+  },
+  {
+   "id": "c32",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/NIDCD/NICE text matches.",
+   "url": "https://www.nidcd.nih.gov/health/balance-disorders",
+   "action": "kept"
+  },
+  {
+   "id": "c33",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/NIDCD/NICE text matches.",
+   "url": "https://www.nhs.uk/conditions/vertigo/",
+   "action": "kept"
+  },
+  {
+   "id": "c34",
+   "classification": "unsupported",
+   "evidence": "Search for 'worse in the morning' found nothing.",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c35",
+   "classification": "unsupported",
+   "evidence": "'Under a minute usually BPPV' not found in retrieved review text.",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c36",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/NIDCD/NICE text matches.",
+   "url": "https://www.nidcd.nih.gov/health/balance-disorders",
+   "action": "kept"
+  },
+  {
+   "id": "c37",
+   "classification": "textbook",
+   "evidence": "Basic anatomy; MedlinePlus describes calcium grains in the inner ear.",
+   "url": "",
+   "action": "kept"
+  },
+  {
+   "id": "c38",
+   "classification": "unsupported",
+   "evidence": "PMC3196003 says 'frequently resolved' (not 'usually').",
+   "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3196003/",
+   "action": "edited",
+   "newSentence": "A medical review says BPPV is frequently resolved on its own or through canalith repositioning manoeuvres carried out in a clinic."
+  },
+  {
+   "id": "c39",
+   "classification": "unsupported",
+   "evidence": "StatPearls: prognosis favourable; 'often recurs' not confirmed (Epley series: 30% recurrence in one small series).",
+   "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK470308/",
+   "action": "edited",
+   "newSentence": "StatPearls, an online medical reference, describes the overall outlook as favourable."
+  },
+  {
+   "id": "c40",
+   "classification": "unsupported",
+   "evidence": "Not found in retrieved text (cited PMC2696792 not returned).",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c41",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/NIDCD/NICE text matches.",
+   "url": "https://www.nidcd.nih.gov/health/balance-disorders",
+   "action": "kept"
+  },
+  {
+   "id": "c42",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/NIDCD/NICE text matches.",
+   "url": "https://www.nhs.uk/conditions/menieres-disease/",
+   "action": "kept"
+  },
+  {
+   "id": "c43",
+   "classification": "unsupported",
+   "evidence": "'Roaring tinnitus' not found; review not retrieved.",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c44",
+   "classification": "unsupported",
+   "evidence": "Lanarkshire: attacks usually last a few hours; 'go away for long periods' not found.",
+   "url": "https://www.nhslanarkshire.scot.nhs.uk/services/physiotherapy/vestibular-physiotherapy/menieres-disease/",
+   "action": "edited",
+   "newSentence": "An NHS Lanarkshire page says attacks usually last a few hours."
+  },
+  {
+   "id": "c45",
+   "classification": "supported",
+   "evidence": "Lanarkshire: symptoms can be very troublesome and worrying.",
+   "url": "https://www.nhslanarkshire.scot.nhs.uk/services/physiotherapy/vestibular-physiotherapy/menieres-disease/",
+   "action": "edited",
+   "newSentence": "It adds that the symptoms can be very troublesome and worrying."
+  },
+  {
+   "id": "c46",
+   "classification": "unsupported",
+   "evidence": "NIDCD: theories vary; MedlinePlus: cause unknown.",
+   "url": "https://www.nidcd.nih.gov/health/balance-disorders",
+   "action": "edited",
+   "newSentence": "It says theories vary about what causes the condition, and MedlinePlus says the cause is unknown."
+  },
+  {
+   "id": "c47",
+   "classification": "unsupported",
+   "evidence": "Review not retrieved. NIDCD: fluid imbalance in labyrinth, build-up of endolymph.",
+   "url": "https://www.nidcd.nih.gov/health/balance-disorders",
+   "action": "edited",
+   "newSentence": "The NIDCD links Ménière's disease with a fluid imbalance in the labyrinth, a part of the inner ear, caused by a build-up of a fluid called endolymph."
+  },
+  {
+   "id": "c48",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/NIDCD/NICE text matches.",
+   "url": "https://www.nhs.uk/conditions/menieres-disease/",
+   "action": "kept"
+  },
+  {
+   "id": "c49",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/NIDCD/NICE text matches.",
+   "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3196003/",
+   "action": "kept"
+  },
+  {
+   "id": "c50",
+   "classification": "textbook",
+   "evidence": "Dix-Hallpike is a head-position test; CKS retrieved text covers the diagnostic rule.",
+   "url": "https://cks.nice.org.uk/topics/vertigo/diagnosis/assessment/",
+   "action": "edited",
+   "newSentence": "For BPPV, diagnosis rests mainly on the history of symptoms and on typical findings during the Dix-Hallpike manoeuvre, a head-position test."
+  },
+  {
+   "id": "c51",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/NIDCD/NICE text matches.",
+   "url": "https://cks.nice.org.uk/topics/vertigo/diagnosis/assessment/",
+   "action": "kept"
+  },
+  {
+   "id": "c52",
+   "classification": "supported",
+   "evidence": "NG127: offer Hallpike if trained professional available; if BPPV diagnosed offer canalith repositioning (Epley) if trained professional available.",
+   "url": "https://www.nice.org.uk/guidance/ng127/chapter/recommendations-for-adults-aged-over-16",
+   "action": "edited",
+   "newSentence": "NICE guideline NG127 recommends offering the Hallpike manoeuvre to adults with brief rotational vertigo triggered by head movement, if a trained health professional is available, and offering canalith repositioning if BPPV is diagnosed."
+  },
+  {
+   "id": "c53",
+   "classification": "unsupported",
+   "evidence": "Cited review not retrieved; retrieved reviews: no pathognomonic test, criteria need two or more episodes.",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8686442/",
+   "action": "edited",
+   "newSentence": "For Ménière's disease, no single test confirms the diagnosis. It rests on the pattern of recurring attacks and on hearing tests, and diagnostic criteria require more than one episode of vertigo."
+  },
+  {
+   "id": "c54",
+   "classification": "unsupported",
+   "evidence": "Not found.",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c55",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/NIDCD/NICE text matches.",
+   "url": "https://www.nhs.uk/conditions/menieres-disease/",
+   "action": "kept"
+  },
+  {
+   "id": "c56",
+   "classification": "supported",
+   "evidence": "NG127: alert to vestibular migraine in adults with dizziness episodes lasting 5 minutes to 72 hours and history of recurrent headache.",
+   "url": "https://www.nice.org.uk/guidance/ng127/chapter/recommendations-for-adults-aged-over-16",
+   "action": "edited",
+   "newSentence": "NG127 also asks clinicians to be alert to vestibular migraine, which is migraine-associated vertigo, in adults with episodes of dizziness lasting from 5 minutes to 72 hours and a history of recurrent headache."
+  },
+  {
+   "id": "c57",
+   "classification": "unsupported",
+   "evidence": "'Focal neurological deficit' wording not found in retrieved NG127 text.",
+   "url": "https://www.nice.org.uk/guidance/ng127/chapter/recommendations-for-adults-aged-over-16",
+   "action": "removed"
+  },
+  {
+   "id": "c58",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/NIDCD/NICE text matches.",
+   "url": "https://www.nhs.uk/conditions/vertigo/",
+   "action": "kept"
+  },
+  {
+   "id": "c59",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/NIDCD/NICE text matches.",
+   "url": "https://www.nhs.uk/conditions/vertigo/",
+   "action": "kept"
+  },
+  {
+   "id": "c60",
+   "classification": "supported",
+   "evidence": "NHS Epley leaflet: series of four head movements.",
+   "url": "https://www.ulh.nhs.uk/wp-content/uploads/2025/05/Epley-Manouvre-Right-Ear.pdf",
+   "action": "edited",
+   "newSentence": "For BPPV, NHS patient leaflets describe the Epley manoeuvre, a series of four head movements, as a treatment."
+  },
+  {
+   "id": "c61",
+   "classification": "supported",
+   "evidence": "NG127 offer canalith repositioning if trained professional available.",
+   "url": "https://www.nice.org.uk/guidance/ng127/chapter/recommendations-for-adults-aged-over-16",
+   "action": "edited",
+   "newSentence": "NICE guideline NG127 recommends offering canalith repositioning when BPPV is diagnosed, if a trained health professional is available."
+  },
+  {
+   "id": "c62",
+   "classification": "supported",
+   "evidence": "NHS: medicines that ease dizziness and nausea; tinnitus may need own treatment.",
+   "url": "https://www.nhs.uk/conditions/menieres-disease/",
+   "action": "edited",
+   "newSentence": "For Ménière's disease, the NHS says treatment mainly eases symptoms, with medicines for dizziness and nausea, and that tinnitus may also need treatment."
+  },
+  {
+   "id": "c63",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/NIDCD/NICE text matches.",
+   "url": "https://www.nidcd.nih.gov/health/balance-disorders",
+   "action": "kept"
+  },
+  {
+   "id": "c64",
+   "classification": "supported",
+   "evidence": "NIDCD: anti-vertigo or anti-nausea medicines may relieve symptoms but can make you drowsy.",
+   "url": "https://www.nidcd.nih.gov/health/balance-disorders",
+   "action": "edited",
+   "newSentence": "It adds that anti-vertigo or anti-nausea medicines may relieve symptoms, though they can cause drowsiness."
+  },
+  {
+   "id": "c65",
+   "classification": "unsupported",
+   "evidence": "Review not retrieved; NHS 111 Wales: surgery rarely offered.",
+   "url": "https://111.wales.nhs.uk/encyclopaedia/m/article/menieresdisease",
+   "action": "edited",
+   "newSentence": "NHS 111 Wales says surgery on the inner ear is rarely offered, when symptoms are hard to control."
+  },
+  {
+   "id": "c66",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/NIDCD/NICE text matches.",
+   "url": "https://www.nhs.uk/conditions/vertigo/",
+   "action": "kept"
+  },
+  {
+   "id": "c67",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/NIDCD/NICE text matches.",
+   "url": "https://www.nhs.uk/conditions/vertigo/",
+   "action": "kept"
+  },
+  {
+   "id": "c68",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/NIDCD/NICE text matches.",
+   "url": "https://www.nhs.uk/conditions/menieres-disease/",
+   "action": "kept"
+  },
+  {
+   "id": "c69",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/NIDCD/NICE text matches.",
+   "url": "https://www.nhs.uk/conditions/vertigo/",
+   "action": "kept"
+  },
+  {
+   "id": "c70",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/NIDCD/NICE text matches.",
+   "url": "https://www.nhs.uk/conditions/vertigo/",
+   "action": "kept"
+  },
+  {
+   "id": "c71",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/NIDCD/NICE text matches.",
+   "url": "https://www.nhs.uk/conditions/vertigo/",
+   "action": "kept"
+  },
+  {
+   "id": "c72",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/NIDCD/NICE text matches.",
+   "url": "https://www.nhs.uk/conditions/vertigo/",
+   "action": "kept"
+  },
+  {
+   "id": "c73",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/NIDCD/NICE text matches.",
+   "url": "https://www.nhs.uk/conditions/vertigo/",
+   "action": "kept"
+  },
+  {
+   "id": "c74",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/NIDCD/NICE text matches.",
+   "url": "https://www.nhs.uk/conditions/vertigo/",
+   "action": "kept"
+  },
+  {
+   "id": "c75",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/NIDCD/NICE text matches.",
+   "url": "https://www.nhs.uk/conditions/vertigo/",
+   "action": "kept"
+  },
+  {
+   "id": "c76",
+   "classification": "unsupported",
+   "evidence": "PMC3196003 says 'frequently resolved'.",
+   "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3196003/",
+   "action": "edited",
+   "newSentence": "A medical review says BPPV is frequently resolved on its own or through canalith repositioning manoeuvres done in a clinic."
+  },
+  {
+   "id": "c77",
+   "classification": "unsupported",
+   "evidence": "StatPearls: favourable prognosis; review: course may be persistent or recurrent.",
+   "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK470308/",
+   "action": "edited",
+   "newSentence": "StatPearls describes the overall outlook as favourable, and the review notes that the problem can persist or recur in some people."
+  },
+  {
+   "id": "c78",
+   "classification": "textbook",
+   "evidence": "GP signposting; NHS: see a GP if vertigo keeps coming back.",
+   "url": "https://www.nhs.uk/conditions/vertigo/",
+   "action": "edited",
+   "newSentence": "The NHS advises a routine GP appointment if vertigo will not go away or keeps coming back."
+  },
+  {
+   "id": "c79",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/NIDCD/NICE text matches.",
+   "url": "https://www.nhs.uk/conditions/menieres-disease/",
+   "action": "kept"
+  },
+  {
+   "id": "c80",
+   "classification": "unsupported",
+   "evidence": "NIDCD: theories vary; MedlinePlus: unknown.",
+   "url": "https://medlineplus.gov/ency/article/000702.htm",
+   "action": "edited",
+   "newSentence": "MedlinePlus says the cause is unknown, and the NIDCD says theories about the cause vary."
+  },
+  {
+   "id": "c81",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/NIDCD/NICE text matches.",
+   "url": "https://www.nidcd.nih.gov/health/balance-disorders",
+   "action": "kept"
+  },
+  {
+   "id": "c82",
+   "classification": "unsupported",
+   "evidence": "Review not retrieved; NHS 111 Wales: surgery rarely offered.",
+   "url": "https://111.wales.nhs.uk/encyclopaedia/m/article/menieresdisease",
+   "action": "edited",
+   "newSentence": "NHS 111 Wales says surgery is rarely offered."
+  },
+  {
+   "id": "c83",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/NIDCD/NICE text matches.",
+   "url": "https://www.nidcd.nih.gov/health/balance-disorders",
+   "action": "kept"
+  },
+  {
+   "id": "c84",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/NIDCD/NICE text matches.",
+   "url": "https://www.nidcd.nih.gov/health/balance-disorders",
+   "action": "kept"
+  },
+  {
+   "id": "c85",
+   "classification": "unsupported",
+   "evidence": "Review claim not found.",
+   "url": "https://www.nidcd.nih.gov/health/balance-disorders",
+   "action": "edited",
+   "newSentence": "The NHS also lists loss of balance and hearing loss among the symptoms of Ménière's disease."
+  },
+  {
+   "id": "c86",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/NIDCD/NICE text matches.",
+   "url": "https://www.nhs.uk/conditions/vertigo/",
+   "action": "kept"
+  },
+  {
+   "id": "c87",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/NIDCD/NICE text matches.",
+   "url": "https://www.nhs.uk/conditions/vertigo/",
+   "action": "kept"
+  },
+  {
+   "id": "c88",
+   "classification": "textbook",
+   "evidence": "Aliases of the page.",
+   "url": "",
+   "action": "kept"
+  },
+  {
+   "id": "c89",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/NIDCD/NICE text matches.",
+   "url": "https://www.nhs.uk/conditions/vertigo/",
+   "action": "kept"
+  },
+  {
+   "id": "c90",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/NIDCD/NICE text matches.",
+   "url": "https://www.nhs.uk/conditions/vertigo/",
+   "action": "kept"
+  },
+  {
+   "id": "c91",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/NIDCD/NICE text matches.",
+   "url": "https://www.nidcd.nih.gov/health/balance-disorders",
+   "action": "kept"
+  },
+  {
+   "id": "c92",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/NIDCD/NICE text matches.",
+   "url": "https://www.nhs.uk/conditions/menieres-disease/",
+   "action": "kept"
+  },
+  {
+   "id": "c93",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/NIDCD/NICE text matches.",
+   "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3196003/",
+   "action": "kept"
+  }
+ ],
+ "notes": "11 of 13 searches used. Cited reviews PMC5697545 and PMC2696792 were never returned; claims attributed only to them were cut or re-based on other retrieved text. Items to look at: (1) the 'diagnostic criteria require more than one episode' and 'no single test' wording for Ménière's was taken from search summaries of Ménière's reviews and an NHS trust page whose URL could not be pinned exactly (cited PMC8686442 tentatively); (2) the Epley 'four head movements' sentence is cited to an NHS trust leaflet (ulh.nhs.uk) seen only via summary; (3) NHS walking-stick, antihistamine and BPPV-as-one-of-most-common claims rest on NHS vertigo page summaries, not verbatim excerpts; (4) NICE CKS wording on the Dix-Hallpike head-position test was marked textbook; (5) NG127 says the Hallpike and repositioning steps depend on a trained professional being available, now stated."
+}

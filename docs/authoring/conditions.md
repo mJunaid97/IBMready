@@ -11,7 +11,7 @@ in `content/conditions.json` (`gerd`, `type-2-diabetes`) before you start. Colle
 | --- | --- |
 | `name` | The name people search for ("Irritable bowel syndrome"), sentence case. |
 | `aliases` | Other names and abbreviations people type ("IBS", "spastic colon"). Used by search. |
-| `category` | one of `cardiovascular`, `respiratory`, `neurological`, `digestive`, `musculoskeletal`, `endocrine`, `urinary`, `reproductive`, `other` (infections, cancers of other organs, blood and anything else) |
+| `category` | one of `cardiovascular`, `respiratory`, `neurological`, `mental-health`, `digestive`, `musculoskeletal`, `endocrine`, `urinary`, `reproductive`, `skin` (skin, allergy and eyes), `infection` (infections that are not tied to one organ system), `other` (blood, immune system, cancers of other organs and anything else); the filter chips on `/conditions/` come from it |
 | `definition` | One sentence, plain words. |
 | `overview` | A paragraph (250 to 700 characters): what it is, who it affects, the main picture. |
 | `affects` | `{"organs": [...], "systems": [...], "structures": [...]}`. Organ ids and system ids only from the lists below; `structures` must be exact atlas names (`data/hd/atlas.json`, `structures[].name`): use them sparingly and only after checking the name exists. |

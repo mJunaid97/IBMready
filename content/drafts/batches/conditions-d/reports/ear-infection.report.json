@@ -1,0 +1,849 @@
+{
+ "id": "ear-infection",
+ "searchesUsed": 14,
+ "counts": {
+  "supported": 70,
+  "textbook": 3,
+  "unsupported": 37,
+  "wrong": 1,
+  "unsafe": 0,
+  "unchecked": 0
+ },
+ "claims": [
+  {
+   "id": "c01",
+   "classification": "supported",
+   "evidence": "Middle ear infection; common in children; most get better by themselves (NHS, MedlinePlus)",
+   "url": "https://www.nhs.uk/conditions/ear-infections/",
+   "action": "kept"
+  },
+  {
+   "id": "c02",
+   "classification": "supported",
+   "evidence": "NHS: most ear infections get better by themselves; common in children",
+   "url": "https://www.nhs.uk/conditions/ear-infections/",
+   "action": "kept"
+  },
+  {
+   "id": "c03",
+   "classification": "supported",
+   "evidence": "MedlinePlus: eustachian tube blocked, fluid collects and becomes infected",
+   "url": "https://medlineplus.gov/ency/article/000638.htm",
+   "action": "kept"
+  },
+  {
+   "id": "c04",
+   "classification": "supported",
+   "evidence": "CDC: bacteria and cold viruses can cause middle ear infection",
+   "url": "https://www.cdc.gov/ear-infection/about/index.html",
+   "action": "kept"
+  },
+  {
+   "id": "c05",
+   "classification": "supported",
+   "evidence": "NHS/MedlinePlus/CDC list earache, ear tugging, fever, discharge, hearing loss",
+   "url": "https://www.nhs.uk/conditions/ear-infections/",
+   "action": "kept"
+  },
+  {
+   "id": "c06",
+   "classification": "supported",
+   "evidence": "NHS: usually within about 3 days; MedlinePlus: complications in rare cases",
+   "url": "https://www.nhs.uk/conditions/ear-infections/",
+   "action": "kept"
+  },
+  {
+   "id": "c07",
+   "classification": "unsupported",
+   "evidence": "Retrieved text says bacteria and cold viruses can cause it; 'often viral' not retrieved",
+   "url": "https://www.cdc.gov/ear-infection/about/index.html",
+   "action": "edited",
+   "newSentence": "Both viruses and bacteria can cause ear infections."
+  },
+  {
+   "id": "c08",
+   "classification": "unsupported",
+   "evidence": "CDC names S. pneumoniae and H. influenzae as the two most common; Moraxella not retrieved",
+   "url": "https://www.cdc.gov/ear-infection/about/index.html",
+   "action": "edited",
+   "newSentence": "The CDC names Streptococcus pneumoniae and Haemophilus influenzae as the two most common bacteria involved."
+  },
+  {
+   "id": "c09",
+   "classification": "supported",
+   "evidence": "MedlinePlus: blocked eustachian tube; 'swollen' not retrieved so dropped",
+   "url": "https://medlineplus.gov/ency/article/000638.htm",
+   "action": "edited",
+   "newSentence": "When the eustachian tube is blocked, fluid can collect behind the eardrum and become infected."
+  },
+  {
+   "id": "c10",
+   "classification": "supported",
+   "evidence": "MedlinePlus lists allergies, colds/sinus infections, teething, adenoids, tobacco smoke as contributing factors",
+   "url": "https://medlineplus.gov/ency/article/000638.htm",
+   "action": "edited",
+   "newSentence": "MedlinePlus lists ... as contributing factors."
+  },
+  {
+   "id": "c11",
+   "classification": "supported",
+   "evidence": "2017 review: day care attendance and family history remain major risk factors",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5574724",
+   "action": "kept"
+  },
+  {
+   "id": "c12",
+   "classification": "supported",
+   "evidence": "MedlinePlus lists pacifier use among risk factors",
+   "url": "https://medlineplus.gov/ency/article/000638.htm",
+   "action": "kept"
+  },
+  {
+   "id": "c13",
+   "classification": "supported",
+   "evidence": "Australian study: not being breastfed linked with ear infection; MedlinePlus lists breastfeeding in prevention",
+   "url": "https://medlineplus.gov/ency/article/000638.htm",
+   "action": "kept"
+  },
+  {
+   "id": "c14",
+   "classification": "supported",
+   "evidence": "2017 review: family history of AOM a major risk factor",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5574724",
+   "action": "kept"
+  },
+  {
+   "id": "c15",
+   "classification": "unsupported",
+   "evidence": "'Recent ear infection or other illness' not found in retrieved text",
+   "url": "https://www.cdc.gov/ear-infection/about/index.html",
+   "action": "removed"
+  },
+  {
+   "id": "c16",
+   "classification": "unsupported",
+   "evidence": "CDC: children whose parents smoke around them get more ear infections; 'major cause' not retrieved",
+   "url": "https://www.cdc.gov/ear-infection/about/index.html",
+   "action": "edited",
+   "newSentence": "Exposure to tobacco smoke: the CDC says children whose parents smoke around them get more ear infections"
+  },
+  {
+   "id": "c17",
+   "classification": "unsupported",
+   "evidence": "'Most often between 6 and 24 months' not retrieved",
+   "url": "https://www.cdc.gov/ear-infection/about/index.html",
+   "action": "edited",
+   "newSentence": "Young age: ear infections are common, especially in children"
+  },
+  {
+   "id": "c18",
+   "classification": "supported",
+   "evidence": "StatPearls/CDC: erythema, bulging, effusion, red swollen eardrum",
+   "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK470332/",
+   "action": "kept"
+  },
+  {
+   "id": "c19",
+   "classification": "unsupported",
+   "evidence": "Discharge through perforated eardrum retrieved (NICE); 'bleeding' not retrieved",
+   "url": "https://www.nice.org.uk/guidance/ng91/informationforpublic",
+   "action": "edited",
+   "newSentence": "Discharge from the ear, which can come through a perforated eardrum"
+  },
+  {
+   "id": "c20",
+   "classification": "supported",
+   "evidence": "StatPearls: pneumatic otoscopy detects middle ear effusion",
+   "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK470332/",
+   "action": "kept"
+  },
+  {
+   "id": "c21",
+   "classification": "textbook",
+   "evidence": "Slight short-term hearing loss from middle ear fluid; not re-retrieved, plain textbook",
+   "url": "",
+   "action": "kept"
+  },
+  {
+   "id": "c22",
+   "classification": "unsupported",
+   "evidence": "Glue ear = fluid build-up following colds/infections retrieved; 'stays for weeks' not retrieved",
+   "url": "https://www.alderhey.nhs.uk/conditions/patient-information-leaflets/glue-ear/",
+   "action": "edited",
+   "newSentence": "Glue ear, a build-up of fluid in the middle ear that can follow colds and infections"
+  },
+  {
+   "id": "c23",
+   "classification": "supported",
+   "evidence": "MedlinePlus: tearing of eardrum in rare cases",
+   "url": "https://medlineplus.gov/ency/article/000638.htm",
+   "action": "edited",
+   "newSentence": "A torn (perforated) eardrum, which is rare"
+  },
+  {
+   "id": "c24",
+   "classification": "supported",
+   "evidence": "MedlinePlus: rare spread to mastoid bone or meninges",
+   "url": "https://medlineplus.gov/ency/article/000638.htm",
+   "action": "kept"
+  },
+  {
+   "id": "c25",
+   "classification": "supported",
+   "evidence": "MedlinePlus: chronic ear infection and abscess listed in rare cases",
+   "url": "https://medlineplus.gov/ency/article/000638.htm",
+   "action": "kept"
+  },
+  {
+   "id": "c26",
+   "classification": "supported",
+   "evidence": "StatPearls: otoscopy checking bulging TM, erythema, effusion",
+   "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK470332/",
+   "action": "kept"
+  },
+  {
+   "id": "c27",
+   "classification": "unsupported",
+   "evidence": "Source says pneumatic otoscopy/tympanometry confirm effusion; 'key to establishing diagnosis' not retrieved",
+   "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK470332/",
+   "action": "edited",
+   "newSentence": "Pneumatic otoscopy and tympanometry are used to confirm fluid in the middle ear."
+  },
+  {
+   "id": "c28",
+   "classification": "unsupported",
+   "evidence": "Hearing test for repeated infections not retrieved; retrieved: GP can refer to audiology if hearing is a worry (glue ear leaflets)",
+   "url": "https://www.alderhey.nhs.uk/conditions/patient-information-leaflets/glue-ear/",
+   "action": "edited",
+   "newSentence": "If a child's hearing is a worry, a GP can refer them to audiology for a hearing test."
+  },
+  {
+   "id": "c29",
+   "classification": "supported",
+   "evidence": "CDC watchful waiting 2-3 days; NICE back-up prescription",
+   "url": "https://www.cdc.gov/ear-infection/about/index.html",
+   "action": "kept"
+  },
+  {
+   "id": "c30",
+   "classification": "supported",
+   "evidence": "NHS: paracetamol or ibuprofen",
+   "url": "https://www.nhs.uk/conditions/ear-infections/",
+   "action": "kept"
+  },
+  {
+   "id": "c31",
+   "classification": "supported",
+   "evidence": "NHS Scotland/NICE public info: antibiotics make little difference to symptoms; not usually used",
+   "url": "https://www.nice.org.uk/guidance/ng91/informationforpublic",
+   "action": "kept"
+  },
+  {
+   "id": "c32",
+   "classification": "supported",
+   "evidence": "NG91 favours no antibiotic or back-up for most children, immediate in exceptions (wording 'supports' changed to 'describes ... as the options')",
+   "url": "https://www.nice.org.uk/guidance/ng91/informationforpublic",
+   "action": "edited",
+   "newSentence": "NICE guideline NG91 describes no antibiotic or a back-up antibiotic prescription as the options for most children with acute otitis media, with some exceptions."
+  },
+  {
+   "id": "c33",
+   "classification": "supported",
+   "evidence": "NHS: pharmacist or GP can prescribe antibiotic tablets/eardrops, antifungal/steroid/painkilling drops",
+   "url": "https://www.nhs.uk/conditions/ear-infections/",
+   "action": "kept"
+  },
+  {
+   "id": "c34",
+   "classification": "unsupported",
+   "evidence": "CDC advises vaccines but 'main prevention advice' not stated",
+   "url": "https://www.cdc.gov/ear-infection/about/index.html",
+   "action": "edited",
+   "newSentence": "The CDC advises receiving recommended vaccines, such as the flu and pneumococcal vaccines, because pneumococcal vaccine protects against a common cause of middle ear infections."
+  },
+  {
+   "id": "c35",
+   "classification": "supported",
+   "evidence": "CDC: pneumococcal vaccine protects against common cause; advises avoiding secondhand smoke; MedlinePlus lists smoke avoidance",
+   "url": "https://www.cdc.gov/ear-infection/about/index.html",
+   "action": "edited",
+   "newSentence": "The CDC also advises not smoking and avoiding secondhand smoke. MedlinePlus lists hand washing, breastfeeding and avoiding pacifiers among ways to lower risk."
+  },
+  {
+   "id": "c36",
+   "classification": "supported",
+   "evidence": "NHS: urgent GP appointment or 111 now if generally unwell, very high temperature, swelling around ear, new hearing loss, dizzy or being sick",
+   "url": "https://www.nhs.uk/conditions/ear-infections/",
+   "action": "edited",
+   "newSentence": "The NHS advises asking for an urgent GP appointment or getting help from NHS 111 ... fluid coming out of the ear, dizziness or vomiting."
+  },
+  {
+   "id": "c37",
+   "classification": "supported",
+   "evidence": "NHS: child under 12 months with earache in both ears",
+   "url": "https://www.nhs.uk/conditions/ear-infections/",
+   "action": "kept"
+  },
+  {
+   "id": "c38",
+   "classification": "unsupported",
+   "evidence": "Pus/discharge: NHS lists fluid coming out of ear on urgent list; CDC lists as reason to be seen; NHS: GP if earache over 3 days or recurrent. Route misattributed",
+   "url": "https://www.nhs.uk/conditions/ear-infections/",
+   "action": "edited",
+   "newSentence": "The NHS advises seeing a GP if earache lasts more than 3 days or keeps coming back."
+  },
+  {
+   "id": "c39",
+   "classification": "unsupported",
+   "evidence": "NHS England page does not list 999; Rotherham NHS trust page: A&E/999 for extreme pain or mastoid area pain, swelling, redness",
+   "url": "https://www.therotherhamft.nhs.uk/patients-and-visitors/patient-information/otitis-media",
+   "action": "edited",
+   "newSentence": "One NHS trust page says to call 999 or go to an urgent and emergency care centre for extreme pain, or for pain, tenderness, swelling or redness over the bone behind the ear. In an emergency, call 999."
+  },
+  {
+   "id": "c40",
+   "classification": "supported",
+   "evidence": "Symptom list from NHS/CDC/MedlinePlus",
+   "url": "https://www.nhs.uk/conditions/ear-infections/",
+   "action": "kept"
+  },
+  {
+   "id": "c41",
+   "classification": "supported",
+   "evidence": "NHS: common, especially in children",
+   "url": "https://www.nhs.uk/conditions/ear-infections/",
+   "action": "kept"
+  },
+  {
+   "id": "c42",
+   "classification": "supported",
+   "evidence": "NHS: rub/pull ear, irritable or restless, off food (also not reacting to sounds, losing balance)",
+   "url": "https://www.nhs.uk/conditions/ear-infections/",
+   "action": "edited",
+   "newSentence": "Young children and babies may rub or pull at the ear, be irritable or restless, be off their food, not react to some sounds or keep losing their balance."
+  },
+  {
+   "id": "c43",
+   "classification": "unsupported",
+   "evidence": "'Difficulty sleeping' not retrieved (NHS: restless)",
+   "url": "https://www.nhs.uk/conditions/ear-infections/",
+   "action": "removed"
+  },
+  {
+   "id": "c44",
+   "classification": "wrong",
+   "evidence": "CDC lists duration/worsening as reasons to see a provider, not as signs pointing to infection",
+   "url": "https://www.cdc.gov/ear-infection/about/index.html",
+   "action": "edited",
+   "newSentence": "The CDC lists symptoms lasting more than 2 to 3 days, worsening symptoms, and pus or fluid draining from the ear as reasons to see a healthcare provider."
+  },
+  {
+   "id": "c45",
+   "classification": "unsupported",
+   "evidence": "Perforated eardrum discharge retrieved; bleeding not",
+   "url": "https://www.nice.org.uk/guidance/ng91/informationforpublic",
+   "action": "edited",
+   "newSentence": "Discharge from the ear can come through a perforated eardrum."
+  },
+  {
+   "id": "c46",
+   "classification": "unsupported",
+   "evidence": "'Sudden end to severe pain' as ruptured eardrum: not found in retrieved text",
+   "url": "https://medlineplus.gov/ency/article/000638.htm",
+   "action": "removed"
+  },
+  {
+   "id": "c47",
+   "classification": "supported",
+   "evidence": "NHS/NICE: within about 3 days, can last up to a week",
+   "url": "https://www.nice.org.uk/guidance/ng91/informationforpublic",
+   "action": "edited",
+   "newSentence": "The NHS says that ear infections often get better on their own within about 3 days, although symptoms can sometimes last up to a week."
+  },
+  {
+   "id": "c48",
+   "classification": "unsupported",
+   "evidence": "'Many follow a viral infection' not retrieved; CDC says bacteria and cold viruses can cause",
+   "url": "https://www.cdc.gov/ear-infection/about/index.html",
+   "action": "edited",
+   "newSentence": "Both viruses and bacteria can cause an ear infection."
+  },
+  {
+   "id": "c49",
+   "classification": "unsupported",
+   "evidence": "Moraxella not retrieved",
+   "url": "https://www.cdc.gov/ear-infection/about/index.html",
+   "action": "edited",
+   "newSentence": "The CDC names Streptococcus pneumoniae and Haemophilus influenzae as the two most common bacteria involved, and says cold viruses can also cause middle ear infections."
+  },
+  {
+   "id": "c50",
+   "classification": "supported",
+   "evidence": "MedlinePlus eustachian tube blocked, fluid becomes infected",
+   "url": "https://medlineplus.gov/ency/article/000638.htm",
+   "action": "edited",
+   "newSentence": "When it becomes blocked, fluid can collect behind the eardrum and become infected."
+  },
+  {
+   "id": "c51",
+   "classification": "supported",
+   "evidence": "MedlinePlus contributing factors",
+   "url": "https://medlineplus.gov/ency/article/000638.htm",
+   "action": "kept"
+  },
+  {
+   "id": "c52",
+   "classification": "supported",
+   "evidence": "Daycare, family history (2017 review), pacifier (MedlinePlus), not breastfed (Australian study)",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5574724",
+   "action": "edited",
+   "newSentence": "Several risk factors are described. A 2017 review found ..."
+  },
+  {
+   "id": "c53",
+   "classification": "unsupported",
+   "evidence": "'Major cause' not retrieved; CDC: parents smoking around children, more ear infections",
+   "url": "https://www.cdc.gov/ear-infection/about/index.html",
+   "action": "edited",
+   "newSentence": "The CDC says children whose parents smoke around them get more ear infections."
+  },
+  {
+   "id": "c54",
+   "classification": "unsupported",
+   "evidence": "6-24 months not retrieved",
+   "url": "https://www.cdc.gov/ear-infection/about/index.html",
+   "action": "removed"
+  },
+  {
+   "id": "c55",
+   "classification": "supported",
+   "evidence": "CDC: pneumococcal vaccine protects against a common cause of middle ear infections",
+   "url": "https://www.cdc.gov/ear-infection/about/index.html",
+   "action": "edited",
+   "newSentence": "The CDC also says pneumococcal vaccine protects against a common cause of middle ear infections."
+  },
+  {
+   "id": "c56",
+   "classification": "supported",
+   "evidence": "StatPearls: otoscopic exam",
+   "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK470332/",
+   "action": "kept"
+  },
+  {
+   "id": "c57",
+   "classification": "supported",
+   "evidence": "StatPearls: TM erythema, bulging",
+   "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK470332/",
+   "action": "kept"
+  },
+  {
+   "id": "c58",
+   "classification": "unsupported",
+   "evidence": "'Key to establishing diagnosis' not retrieved; StatPearls: pneumatic otoscopy and tympanometry confirm effusion",
+   "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK470332/",
+   "action": "edited",
+   "newSentence": "Pneumatic otoscopy and tympanometry are used to confirm fluid in the middle ear."
+  },
+  {
+   "id": "c59",
+   "classification": "unsupported",
+   "evidence": "Hearing test for repeated infections not retrieved",
+   "url": "https://www.alderhey.nhs.uk/conditions/patient-information-leaflets/glue-ear/",
+   "action": "edited",
+   "newSentence": "If a child's hearing is a worry, a GP can refer them to audiology for a hearing test."
+  },
+  {
+   "id": "c60",
+   "classification": "unsupported",
+   "evidence": "Bleeding not retrieved",
+   "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK470332/",
+   "action": "edited",
+   "newSentence": "Reviews list fever, discharge from the ear, a full or bulging cloudy eardrum, reduced movement of the eardrum and redness as signs of acute otitis media."
+  },
+  {
+   "id": "c61",
+   "classification": "supported",
+   "evidence": "MedlinePlus/CDC: swimmer's ear is a separate outer ear infection",
+   "url": "https://medlineplus.gov/ency/article/000638.htm",
+   "action": "kept"
+  },
+  {
+   "id": "c62",
+   "classification": "unsupported",
+   "evidence": "NICE public info says seek help if symptoms worsen rapidly; reassessment wording not retrieved",
+   "url": "https://www.nice.org.uk/guidance/ng91/informationforpublic",
+   "action": "edited",
+   "newSentence": "(moved to treatment: back-up prescription can be used if symptoms worsen significantly or do not improve within 3 days)"
+  },
+  {
+   "id": "c63",
+   "classification": "unsupported",
+   "evidence": "Reassessment considering resistant organisms not retrieved",
+   "url": "https://www.nice.org.uk/guidance/ng91/informationforpublic",
+   "action": "removed"
+  },
+  {
+   "id": "c64",
+   "classification": "supported",
+   "evidence": "CDC watchful waiting",
+   "url": "https://www.cdc.gov/ear-infection/about/index.html",
+   "action": "kept"
+  },
+  {
+   "id": "c65",
+   "classification": "supported",
+   "evidence": "NHS: paracetamol or ibuprofen",
+   "url": "https://www.nhs.uk/conditions/ear-infections/",
+   "action": "edited",
+   "newSentence": "Paracetamol or ibuprofen can ease discomfort, and the NHS says children under 16 should not take aspirin."
+  },
+  {
+   "id": "c66",
+   "classification": "supported",
+   "evidence": "NHS: cotton buds/fingers out, water out, no swimming during infection",
+   "url": "https://www.nhs.uk/conditions/ear-infections/",
+   "action": "edited",
+   "newSentence": "... not swimming during an ear infection."
+  },
+  {
+   "id": "c67",
+   "classification": "supported",
+   "evidence": "NHS: do not use decongestants or antihistamines, no evidence",
+   "url": "https://www.nhs.uk/conditions/ear-infections/",
+   "action": "kept"
+  },
+  {
+   "id": "c68",
+   "classification": "supported",
+   "evidence": "NHS Scotland/NICE: antibiotics little difference",
+   "url": "https://www.nice.org.uk/guidance/ng91/informationforpublic",
+   "action": "kept"
+  },
+  {
+   "id": "c69",
+   "classification": "supported",
+   "evidence": "NG91 options no antibiotic or back-up",
+   "url": "https://www.nice.org.uk/guidance/ng91/informationforpublic",
+   "action": "edited",
+   "newSentence": "NICE guideline NG91 describes no antibiotic or a back-up antibiotic prescription as the options for most children."
+  },
+  {
+   "id": "c70",
+   "classification": "supported",
+   "evidence": "NICE: back-up if no better in 3 days or worse",
+   "url": "https://www.nice.org.uk/guidance/ng91/informationforpublic",
+   "action": "kept"
+  },
+  {
+   "id": "c71",
+   "classification": "supported",
+   "evidence": "NICE visual summary: immediate if very unwell, serious illness signs, high risk of complications",
+   "url": "https://www.nice.org.uk/guidance/ng91/informationforpublic",
+   "action": "kept"
+  },
+  {
+   "id": "c72",
+   "classification": "supported",
+   "evidence": "NICE public info: antibiotics might also be given if fluid from ear or under 2 with both ears infected",
+   "url": "https://www.nice.org.uk/guidance/ng91/informationforpublic",
+   "action": "edited",
+   "newSentence": "NICE says antibiotics might also be given if fluid is coming out of the ear, or if a child under 2 has infection in both ears."
+  },
+  {
+   "id": "c73",
+   "classification": "textbook",
+   "evidence": "Slight hearing loss from middle ear fluid; not re-retrieved",
+   "url": "",
+   "action": "kept"
+  },
+  {
+   "id": "c74",
+   "classification": "unsupported",
+   "evidence": "Glue ear = fluid build-up; 'weeks' not retrieved",
+   "url": "https://www.alderhey.nhs.uk/conditions/patient-information-leaflets/glue-ear/",
+   "action": "edited",
+   "newSentence": "Glue ear is a build-up of fluid in the middle ear. The NHS says it often clears up on its own within 3 months."
+  },
+  {
+   "id": "c75",
+   "classification": "unsupported",
+   "evidence": "'Under 7' not retrieved; 'especially common between 2 and 5' from a hospital leaflet; 'not itself an infection' only partly: NHS says antibiotics may be prescribed if glue ear causes an infection",
+   "url": "https://www.alderhey.nhs.uk/conditions/patient-information-leaflets/glue-ear/",
+   "action": "edited",
+   "newSentence": "Hospital leaflets describe it as especially common in young children, most often between 2 and 5 ..."
+  },
+  {
+   "id": "c76",
+   "classification": "supported",
+   "evidence": "Dorset: mild to moderate hearing loss, one or both ears; usually resolves",
+   "url": "https://www.dorsethealthcare.nhs.uk/our-services-and-sites/physical-health/audiology-hearing/childrens-audiology/glue-ear",
+   "action": "edited",
+   "newSentence": "... with mild to moderate hearing loss that may affect one or both ears."
+  },
+  {
+   "id": "c77",
+   "classification": "supported",
+   "evidence": "UK parent guide: treat only if persistent hearing loss, speech delay or recurrent infections (attribution changed from 'NHS leaflet')",
+   "url": "https://www.alderhey.nhs.uk/conditions/patient-information-leaflets/glue-ear/",
+   "action": "edited",
+   "newSentence": "One UK parent guide says glue ear needs treating only if ..."
+  },
+  {
+   "id": "c78",
+   "classification": "unsupported",
+   "evidence": "Grommets tiny tubes in eardrum retrieved; 'plastic' and 'let air move' not retrieved",
+   "url": "https://www.dorsethealthcare.nhs.uk/our-services-and-sites/physical-health/audiology-hearing/childrens-audiology/glue-ear",
+   "action": "edited",
+   "newSentence": "Grommets are tiny tubes placed in the eardrum, and hearing aids are another option for persistent glue ear."
+  },
+  {
+   "id": "c79",
+   "classification": "supported",
+   "evidence": "Hearing aids an alternative",
+   "url": "https://www.dorsethealthcare.nhs.uk/our-services-and-sites/physical-health/audiology-hearing/childrens-audiology/glue-ear",
+   "action": "kept"
+  },
+  {
+   "id": "c80",
+   "classification": "supported",
+   "evidence": "MedlinePlus rare complications",
+   "url": "https://medlineplus.gov/ency/article/000638.htm",
+   "action": "kept"
+  },
+  {
+   "id": "c81",
+   "classification": "supported",
+   "evidence": "NHS urgent list",
+   "url": "https://www.nhs.uk/conditions/ear-infections/",
+   "action": "edited",
+   "newSentence": "... or feels dizzy or is being sick."
+  },
+  {
+   "id": "c82",
+   "classification": "supported",
+   "evidence": "NHS under 12 months both ears",
+   "url": "https://www.nhs.uk/conditions/ear-infections/",
+   "action": "kept"
+  },
+  {
+   "id": "c83",
+   "classification": "unsupported",
+   "evidence": "Misattributed pus route; see c38",
+   "url": "https://www.nhs.uk/conditions/ear-infections/",
+   "action": "edited",
+   "newSentence": "The NHS advises seeing a GP if earache lasts more than 3 days or keeps coming back."
+  },
+  {
+   "id": "c84",
+   "classification": "unsupported",
+   "evidence": "'NHS 111 or GP the same day' route inferred; MedlinePlus (US) lists swelling behind ear, severe headache, dizziness, facial twitching as reasons to contact a provider",
+   "url": "https://medlineplus.gov/ency/article/000638.htm",
+   "action": "edited",
+   "newSentence": "MedlinePlus, a US source, lists swelling behind the ear, severe pain, a high fever, severe headache, dizziness and twitching of the facial muscles as reasons to contact a health care provider."
+  },
+  {
+   "id": "c85",
+   "classification": "unsupported",
+   "evidence": "999 route not on NHS England page; only a trust page and generic signposting",
+   "url": "https://www.therotherhamft.nhs.uk/patients-and-visitors/patient-information/otitis-media",
+   "action": "edited",
+   "newSentence": "In an emergency, call 999."
+  },
+  {
+   "id": "c86",
+   "classification": "supported",
+   "evidence": "NHS: usually within 3 days",
+   "url": "https://www.nhs.uk/conditions/ear-infections/",
+   "action": "kept"
+  },
+  {
+   "id": "c87",
+   "classification": "supported",
+   "evidence": "NHS",
+   "url": "https://www.nhs.uk/conditions/ear-infections/",
+   "action": "edited",
+   "newSentence": "... although symptoms can sometimes last up to a week."
+  },
+  {
+   "id": "c88",
+   "classification": "supported",
+   "evidence": "NHS paracetamol/ibuprofen",
+   "url": "https://www.nhs.uk/conditions/ear-infections/",
+   "action": "kept"
+  },
+  {
+   "id": "c89",
+   "classification": "supported",
+   "evidence": "NHS: GP if earache more than 3 days",
+   "url": "https://www.nhs.uk/conditions/ear-infections/",
+   "action": "edited",
+   "newSentence": "The NHS advises seeing a GP if earache lasts more than 3 days, and NHS 111 or an urgent GP appointment if the person feels generally unwell or fluid comes out of the ear."
+  },
+  {
+   "id": "c90",
+   "classification": "supported",
+   "evidence": "NICE/NHS",
+   "url": "https://www.nice.org.uk/guidance/ng91/informationforpublic",
+   "action": "kept"
+  },
+  {
+   "id": "c91",
+   "classification": "supported",
+   "evidence": "NHS Scotland/NICE antibiotics little difference",
+   "url": "https://www.nice.org.uk/guidance/ng91/informationforpublic",
+   "action": "kept"
+  },
+  {
+   "id": "c92",
+   "classification": "supported",
+   "evidence": "NICE back-up",
+   "url": "https://www.nice.org.uk/guidance/ng91/informationforpublic",
+   "action": "kept"
+  },
+  {
+   "id": "c93",
+   "classification": "supported",
+   "evidence": "NICE immediate antibiotics",
+   "url": "https://www.nice.org.uk/guidance/ng91/informationforpublic",
+   "action": "kept"
+  },
+  {
+   "id": "c94",
+   "classification": "unsupported",
+   "evidence": "'No' too absolute; glue ear is fluid build-up, NHS says antibiotics may be prescribed if it causes an infection",
+   "url": "https://www.alderhey.nhs.uk/conditions/patient-information-leaflets/glue-ear/",
+   "action": "edited",
+   "newSentence": "Not quite."
+  },
+  {
+   "id": "c95",
+   "classification": "unsupported",
+   "evidence": "'One NHS leaflet notes not an ear infection' not retrieved as such",
+   "url": "https://www.alderhey.nhs.uk/conditions/patient-information-leaflets/glue-ear/",
+   "action": "edited",
+   "newSentence": "Glue ear is a build-up of fluid in the middle ear ... antibiotics may be prescribed if glue ear causes an ear infection, but they are not a standard treatment for glue ear itself."
+  },
+  {
+   "id": "c96",
+   "classification": "unsupported",
+   "evidence": "'Fluid that stays after infection can lead to it' not retrieved; colds/infections/allergies/adenoids block the tube",
+   "url": "https://www.alderhey.nhs.uk/conditions/patient-information-leaflets/glue-ear/",
+   "action": "edited",
+   "newSentence": "colds, infections, allergies and enlarged adenoids can all block the eustachian tube."
+  },
+  {
+   "id": "c97",
+   "classification": "supported",
+   "evidence": "Hearing loss usually mild to moderate (Dorset)",
+   "url": "https://www.dorsethealthcare.nhs.uk/our-services-and-sites/physical-health/audiology-hearing/childrens-audiology/glue-ear",
+   "action": "edited",
+   "newSentence": "Hospital leaflets describe the hearing loss as usually mild or moderate."
+  },
+  {
+   "id": "c98",
+   "classification": "supported",
+   "evidence": "CDC: recommended vaccines such as flu and pneumococcal",
+   "url": "https://www.cdc.gov/ear-infection/about/index.html",
+   "action": "kept"
+  },
+  {
+   "id": "c99",
+   "classification": "supported",
+   "evidence": "CDC: pneumococcal vaccine protects against common cause",
+   "url": "https://www.cdc.gov/ear-infection/about/index.html",
+   "action": "kept"
+  },
+  {
+   "id": "c100",
+   "classification": "unsupported",
+   "evidence": "'Major cause' not retrieved",
+   "url": "https://www.cdc.gov/ear-infection/about/index.html",
+   "action": "edited",
+   "newSentence": "The CDC also advises not smoking and avoiding secondhand smoke."
+  },
+  {
+   "id": "c101",
+   "classification": "supported",
+   "evidence": "CDC/MedlinePlus smoke avoidance",
+   "url": "https://www.cdc.gov/ear-infection/about/index.html",
+   "action": "edited",
+   "newSentence": "MedlinePlus lists hand washing, breastfeeding and avoiding pacifiers among ways to lower risk."
+  },
+  {
+   "id": "c102",
+   "classification": "textbook",
+   "evidence": "Slight hearing loss from middle ear fluid",
+   "url": "",
+   "action": "kept"
+  },
+  {
+   "id": "c103",
+   "classification": "unsupported",
+   "evidence": "'Weeks' not retrieved",
+   "url": "https://www.alderhey.nhs.uk/conditions/patient-information-leaflets/glue-ear/",
+   "action": "edited",
+   "newSentence": "Glue ear, a build-up of fluid in the middle ear, can also cause mild to moderate hearing loss."
+  },
+  {
+   "id": "c104",
+   "classification": "supported",
+   "evidence": "NHS: new hearing loss is on urgent list",
+   "url": "https://www.nhs.uk/conditions/ear-infections/",
+   "action": "edited",
+   "newSentence": "New hearing loss is on the NHS list of reasons to ask for an urgent GP appointment or help from NHS 111."
+  },
+  {
+   "id": "c105",
+   "classification": "supported",
+   "evidence": "Names used by NHS/MedlinePlus",
+   "url": "https://www.nhs.uk/conditions/ear-infections/",
+   "action": "kept"
+  },
+  {
+   "id": "c106",
+   "classification": "supported",
+   "evidence": "NHS: common especially in children",
+   "url": "https://www.nhs.uk/conditions/ear-infections/",
+   "action": "kept"
+  },
+  {
+   "id": "c107",
+   "classification": "unsupported",
+   "evidence": "'Often after a cold': MedlinePlus lists colds as triggers",
+   "url": "https://medlineplus.gov/ency/article/000638.htm",
+   "action": "edited",
+   "newSentence": "Viruses or bacteria; colds are among the listed triggers"
+  },
+  {
+   "id": "c108",
+   "classification": "supported",
+   "evidence": "StatPearls otoscope",
+   "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK470332/",
+   "action": "kept"
+  },
+  {
+   "id": "c109",
+   "classification": "supported",
+   "evidence": "NHS 3 days",
+   "url": "https://www.nhs.uk/conditions/ear-infections/",
+   "action": "kept"
+  },
+  {
+   "id": "c110",
+   "classification": "supported",
+   "evidence": "NICE/NHS",
+   "url": "https://www.nice.org.uk/guidance/ng91/informationforpublic",
+   "action": "edited",
+   "newSentence": "Not usually offered ...; NICE describes no antibiotic or a back-up prescription as the options for most children"
+  },
+  {
+   "id": "c111",
+   "classification": "unsupported",
+   "evidence": "Glue ear is not listed as a rare complication; torn eardrum and mastoiditis are (MedlinePlus)",
+   "url": "https://medlineplus.gov/ency/article/000638.htm",
+   "action": "edited",
+   "newSentence": "Rare; they include a torn eardrum and mastoiditis"
+  }
+ ],
+ "notes": "111 first-pass sentences. NG91: public info and evidence summary confirm no antibiotic or back-up for most, immediate antibiotics when very unwell/serious illness/high risk, and 'might also' for fluid from ear or under 2 with both ears; the first-pass reassessment/resistant-organisms sentence was not retrieved and was removed. Glue ear: 'under 7', 'plastic tubes', 'fluid stays for weeks' and the 'NHS leaflet' attribution were not supported; reworded to hospital leaflets (Alder Hey, Dorset, Imperial) and 'one UK parent guide'; glue-ear details come from hospital leaflets, not nhs.uk/conditions/glue-ear itself. Smoke: 'major cause' not retrieved; CDC says children whose parents smoke get more ear infections and advises avoiding secondhand smoke. Care routes: the NHS England page (as summarised) does not list 999 or a 'same day GP/111' route for swelling behind the ear, headache or facial twitching; the latter now attributed to MedlinePlus (US) and the former to one NHS trust page (Rotherham) plus a generic 'In an emergency, call 999' signposting line (textbook). NHS urgent list: two search summaries agree on generally unwell, very high temperature, swelling around ear, new hearing loss, dizzy/being sick and under-12-months both ears; fluid coming out of the ear also appeared in two summaries but nhs.uk was only seen via summaries. NHS Wales/Rotherham use under 2 for the bilateral threshold; NHS England says under 12 months. Article block is about 1270 words, slightly above the 1200 target. Search tool returned summaries not page text, so some attributions to a single URL are by title only."
+}

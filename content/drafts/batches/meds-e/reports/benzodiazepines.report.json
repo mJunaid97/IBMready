@@ -1,0 +1,87 @@
+{
+ "id": "benzodiazepines",
+ "searchesUsed": 0,
+ "counts": {
+  "supported": 7,
+  "wrong": 1,
+  "textbook": 0,
+  "unsupported": 0,
+  "unsafe": 0,
+  "unchecked": 0
+ },
+ "claims": [
+  {
+   "id": "c01",
+   "where": "summary[0]",
+   "classification": "supported",
+   "evidence": "NHS inform: depressant drugs; slow down the central nervous system. 'Member covered on this site' is a site statement.",
+   "url": "https://www.nhsinform.scot/healthy-living/drugs-and-drug-use/common-drugs/benzodiazepines-benzos-diazepam-valium/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c02",
+   "where": "summary[1]",
+   "classification": "supported",
+   "evidence": "MHRA CPD: dependence at therapeutic doses, established within weeks.",
+   "url": "https://cpd.mhra.gov.uk/benzodiazepines/CON234573_11/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c03",
+   "where": "mechanism",
+   "classification": "supported",
+   "evidence": "NHS inform: slow down the central nervous system.",
+   "url": "https://www.nhsinform.scot/healthy-living/drugs-and-drug-use/common-drugs/benzodiazepines-benzos-diazepam-valium/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c04",
+   "where": "cautions[0]",
+   "classification": "supported",
+   "evidence": "NHS diazepam page: alcohol and grapefruit juice. Diazepam-specific; fine on class page only if framed as diazepam (it is).",
+   "url": "https://www.nhs.uk/medicines/diazepam/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c05",
+   "where": "cautions[1]",
+   "classification": "wrong",
+   "evidence": "Same as medication index 19: baby withdrawal wording not on NHS diazepam page.",
+   "url": "https://www.medicines.org.uk/emc/files/pil.101911.pdf",
+   "action": "edited",
+   "newSentence": "The NHS says diazepam should not be taken in pregnancy unless a doctor or pharmacist advises it. The manufacturer's patient leaflet says that regular use during pregnancy may cause withdrawal symptoms in the baby."
+  },
+  {
+   "id": "c06",
+   "where": "cautions[2]",
+   "classification": "supported",
+   "evidence": "NHS inform: combination raises overdose risk.",
+   "url": "https://www.nhsinform.scot/healthy-living/drugs-and-drug-use/common-drugs/benzodiazepines-benzos-diazepam-valium/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c07",
+   "where": "cautions[3]",
+   "classification": "supported",
+   "evidence": "NHS inform: abrupt stop can cause life-threatening withdrawal effects.",
+   "url": "https://www.nhsinform.scot/healthy-living/drugs-and-drug-use/common-drugs/benzodiazepines-benzos-diazepam-valium/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c08",
+   "where": "cautions[4]",
+   "classification": "supported",
+   "evidence": "ACMD: licensed benzodiazepines diazepam, lorazepam, fludiazepam, nordazepam, clonazepam are Class C, Schedule 4 Part 1; legislation lists clonazepam, diazepam, lorazepam in Sch 4 Part I. Not all benzodiazepines (e.g. temazepam) are in this schedule/part - keep 'such as'.",
+   "url": "https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/881969/ACMD_report_-_a_review_of_the_evidence_of_use_and_harms_of_novel_benzodiazepines.pdf",
+   "action": "kept",
+   "newSentence": null
+  }
+ ],
+ "notes": "Class page: checked in the same second-pass run as diazepam (searches counted there)."
+}

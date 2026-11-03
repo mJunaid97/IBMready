@@ -1,0 +1,719 @@
+{
+ "id": "co-amoxiclav",
+ "searchesUsed": 11,
+ "counts": {
+  "supported": 60,
+  "textbook": 0,
+  "unsupported": 23,
+  "wrong": 0,
+  "unsafe": 4,
+  "unchecked": 0
+ },
+ "claims": [
+  {
+   "id": "c01",
+   "where": "summary",
+   "classification": "unsupported",
+   "evidence": "NHS excerpts retrieved say only penicillin antibiotic for bacterial infections; skin/ear not confirmed",
+   "url": "edited",
+   "action": "https://www.nhs.uk/medicines/co-amoxiclav/",
+   "newSentence": "Reworded to NHS bacterial infections plus MedlinePlus list."
+  },
+  {
+   "id": "c02",
+   "where": "summary",
+   "classification": "supported",
+   "evidence": "Retrieved text states this.",
+   "url": "https://www.nhs.uk/medicines/co-amoxiclav/",
+   "action": "kept"
+  },
+  {
+   "id": "c03",
+   "where": "summary",
+   "classification": "supported",
+   "evidence": "Retrieved text states this.",
+   "url": "https://www.nhs.uk/medicines/co-amoxiclav/",
+   "action": "kept"
+  },
+  {
+   "id": "c04",
+   "where": "usedFor[0]",
+   "classification": "unsupported",
+   "evidence": "NHS excerpts retrieved say only penicillin antibiotic for bacterial infections; skin/ear not confirmed",
+   "url": "edited",
+   "action": "https://www.nhs.uk/medicines/co-amoxiclav/",
+   "newSentence": "Reworded to NHS bacterial infections plus MedlinePlus list."
+  },
+  {
+   "id": "c05",
+   "where": "usedFor[1]",
+   "classification": "supported",
+   "evidence": "emc search: sinus, bone and joint, dental; chest/urinary not confirmed",
+   "url": "https://www.medicines.org.uk/emc/product/4078/pil",
+   "action": "edited",
+   "newSentence": "Sinus, bone and joint, and dental infections."
+  },
+  {
+   "id": "c06",
+   "where": "usedFor[2]",
+   "classification": "supported",
+   "evidence": "MedlinePlus text retrieved",
+   "url": "https://medlineplus.gov/druginfo/meds/a685024.html",
+   "action": "kept"
+  },
+  {
+   "id": "c07",
+   "where": "howItWorks",
+   "classification": "supported",
+   "evidence": "emc leaflet: antibiotic killing bacteria; contains amoxicillin and clavulanic acid",
+   "url": "https://www.medicines.org.uk/emc/product/4078/pil",
+   "action": "kept"
+  },
+  {
+   "id": "c08",
+   "where": "howItWorks",
+   "classification": "supported",
+   "evidence": "emc leaflet: antibiotic killing bacteria; contains amoxicillin and clavulanic acid",
+   "url": "https://www.medicines.org.uk/emc/product/4078/pil",
+   "action": "kept"
+  },
+  {
+   "id": "c09",
+   "where": "howItWorks",
+   "classification": "supported",
+   "evidence": "MedlinePlus text retrieved",
+   "url": "https://medlineplus.gov/druginfo/meds/a685024.html",
+   "action": "kept"
+  },
+  {
+   "id": "c10",
+   "where": "howItWorks",
+   "classification": "unsupported",
+   "evidence": "Tayside PDF returned in results without text; no retrieved text states this",
+   "url": "https://www.nhs.uk/medicines/co-amoxiclav/",
+   "action": "removed"
+  },
+  {
+   "id": "c11",
+   "where": "sideEffects.common[0]",
+   "classification": "supported",
+   "evidence": "Retrieved text states this.",
+   "url": "https://www.nhs.uk/medicines/co-amoxiclav/",
+   "action": "kept"
+  },
+  {
+   "id": "c12",
+   "where": "sideEffects.common[1]",
+   "classification": "supported",
+   "evidence": "Retrieved text states this.",
+   "url": "https://www.nhs.uk/medicines/co-amoxiclav/",
+   "action": "kept"
+  },
+  {
+   "id": "c13",
+   "where": "sideEffects.common[2]",
+   "classification": "unsupported",
+   "evidence": "Frequency of rash/itching/headache and meningitis not found in retrieved text",
+   "url": "https://www.medicines.org.uk/emc/product/4078/pil",
+   "action": "removed"
+  },
+  {
+   "id": "c14",
+   "where": "sideEffects.serious[0]",
+   "classification": "supported",
+   "evidence": "NHS amoxicillin page: 999 for lip/mouth/throat/tongue swelling and breathing difficulty; co-amoxiclav page: throat/tongue swelling",
+   "url": "https://www.nhs.uk/medicines/amoxicillin/side-effects-of-amoxicillin/",
+   "action": "edited"
+  },
+  {
+   "id": "c15",
+   "where": "sideEffects.serious[1]",
+   "classification": "supported",
+   "evidence": "NHS: blistering or peeling skin; 111 for suspected serious effects (bottom/thigh rash not retrieved, removed)",
+   "url": "https://www.nhs.uk/medicines/co-amoxiclav/",
+   "action": "edited"
+  },
+  {
+   "id": "c16",
+   "where": "sideEffects.serious[2]",
+   "classification": "unsafe",
+   "evidence": "NHS page says call NHS 111; same-day GP routing was author wording",
+   "url": "https://www.nhs.uk/medicines/co-amoxiclav/",
+   "action": "edited"
+  },
+  {
+   "id": "c17",
+   "where": "sideEffects.serious[3]",
+   "classification": "unsupported",
+   "evidence": "emc: inflammation of large intestine, watery diarrhoea; blood/mucus, fever, contact doctor not confirmed",
+   "url": "https://www.medicines.org.uk/emc/product/4078/pil",
+   "action": "edited"
+  },
+  {
+   "id": "c18",
+   "where": "sideEffects.serious[4]",
+   "classification": "unsafe",
+   "evidence": "NHS page says call NHS 111; same-day GP routing was author wording",
+   "url": "https://www.nhs.uk/medicines/co-amoxiclav/",
+   "action": "edited"
+  },
+  {
+   "id": "c19",
+   "where": "cautions[0]",
+   "classification": "supported",
+   "evidence": "Retrieved text states this.",
+   "url": "https://www.nhs.uk/medicines/co-amoxiclav/",
+   "action": "kept"
+  },
+  {
+   "id": "c20",
+   "where": "cautions[1]",
+   "classification": "supported",
+   "evidence": "NHS allergy wording kept; penicillin allergy leaflet clause not retrieved",
+   "url": "https://www.nhs.uk/medicines/co-amoxiclav/",
+   "action": "edited"
+  },
+  {
+   "id": "c21",
+   "where": "cautions[2]",
+   "classification": "supported",
+   "evidence": "NHS and MedlinePlus; wording tidied to \"while taking an antibiotic\"",
+   "url": "https://medlineplus.gov/druginfo/meds/a685024.html",
+   "action": "edited"
+  },
+  {
+   "id": "c22",
+   "where": "cautions[3]",
+   "classification": "unsupported",
+   "evidence": "Glandular fever not found in retrieved leaflets or NHS excerpt",
+   "url": "https://www.medicines.org.uk/emc/product/4078/pil",
+   "action": "removed"
+  },
+  {
+   "id": "c23",
+   "where": "cautions[4]",
+   "classification": "supported",
+   "evidence": "NHS excerpt retrieved",
+   "url": "https://www.nhs.uk/medicines/co-amoxiclav/",
+   "action": "kept"
+  },
+  {
+   "id": "c24",
+   "where": "cautions[5]",
+   "classification": "supported",
+   "evidence": "NHS excerpt retrieved",
+   "url": "https://www.nhs.uk/medicines/co-amoxiclav/",
+   "action": "kept"
+  },
+  {
+   "id": "c25",
+   "where": "cautions[6]",
+   "classification": "supported",
+   "evidence": "Somerset March 2026 guide: avoid broad-spectrum such as co-amoxiclav; C. difficile, MRSA, resistant UTIs",
+   "url": "https://nhssomerset.nhs.uk/wp-content/uploads/sites/2/Managing-common-infections-Guidance-for-Primary-Care-March-2026-v2.0.pdf",
+   "action": "kept"
+  },
+  {
+   "id": "c26",
+   "where": "monitoring",
+   "classification": "unsupported",
+   "evidence": "Only kidney problems may need treatment changed was retrieved; blood tests not",
+   "url": "https://www.medicines.org.uk/emc/product/4078/pil",
+   "action": "edited",
+   "newSentence": "UK patient leaflets note that some people with kidney problems may need the treatment changed."
+  },
+  {
+   "id": "c27",
+   "where": "regimenNote",
+   "classification": "unsupported",
+   "evidence": "Chewable tablets not confirmed in retrieved MedlinePlus text; formularies/dm+d list tablets and oral suspension",
+   "url": "https://www.nhs.uk/medicines/co-amoxiclav/",
+   "action": "edited",
+   "newSentence": "Available as tablets and as an oral suspension (liquid), according to NHS formularies; injection forms also exist."
+  },
+  {
+   "id": "c28",
+   "where": "article.sections[0].body",
+   "classification": "supported",
+   "evidence": "emc leaflet: antibiotic killing bacteria; contains amoxicillin and clavulanic acid",
+   "url": "https://www.medicines.org.uk/emc/product/4078/pil",
+   "action": "kept"
+  },
+  {
+   "id": "c29",
+   "where": "article.sections[0].body",
+   "classification": "unsupported",
+   "evidence": "NHS excerpts retrieved say only penicillin antibiotic for bacterial infections; skin/ear not confirmed",
+   "url": "edited",
+   "action": "https://www.nhs.uk/medicines/co-amoxiclav/",
+   "newSentence": "Reworded to NHS bacterial infections plus MedlinePlus list."
+  },
+  {
+   "id": "c30",
+   "where": "article.sections[0].body",
+   "classification": "supported",
+   "evidence": "emc search: sinus, bone and joint, dental; chest/urinary not confirmed",
+   "url": "https://www.medicines.org.uk/emc/product/4078/pil",
+   "action": "edited",
+   "newSentence": "Sinus, bone and joint, and dental infections."
+  },
+  {
+   "id": "c31",
+   "where": "article.sections[0].body",
+   "classification": "supported",
+   "evidence": "MedlinePlus text retrieved",
+   "url": "https://medlineplus.gov/druginfo/meds/a685024.html",
+   "action": "kept"
+  },
+  {
+   "id": "c32",
+   "where": "article.sections[0].body",
+   "classification": "supported",
+   "evidence": "Retrieved text states this.",
+   "url": "https://www.nhs.uk/medicines/co-amoxiclav/",
+   "action": "kept"
+  },
+  {
+   "id": "c33",
+   "where": "article.sections[0].body",
+   "classification": "unsupported",
+   "evidence": "Chewable tablets not confirmed in retrieved MedlinePlus text; formularies/dm+d list tablets and oral suspension",
+   "url": "https://www.nhs.uk/medicines/co-amoxiclav/",
+   "action": "edited"
+  },
+  {
+   "id": "c34",
+   "where": "article.sections[0].body",
+   "classification": "supported",
+   "evidence": "Somerset March 2026 guide: avoid broad-spectrum such as co-amoxiclav; C. difficile, MRSA, resistant UTIs",
+   "url": "https://nhssomerset.nhs.uk/wp-content/uploads/sites/2/Managing-common-infections-Guidance-for-Primary-Care-March-2026-v2.0.pdf",
+   "action": "kept"
+  },
+  {
+   "id": "c35",
+   "where": "article.sections[0].body",
+   "classification": "supported",
+   "evidence": "Somerset March 2026 guide: avoid broad-spectrum such as co-amoxiclav; C. difficile, MRSA, resistant UTIs",
+   "url": "https://nhssomerset.nhs.uk/wp-content/uploads/sites/2/Managing-common-infections-Guidance-for-Primary-Care-March-2026-v2.0.pdf",
+   "action": "kept"
+  },
+  {
+   "id": "c36",
+   "where": "article.sections[1].body",
+   "classification": "supported",
+   "evidence": "emc leaflet: antibiotic killing bacteria; contains amoxicillin and clavulanic acid",
+   "url": "https://www.medicines.org.uk/emc/product/4078/pil",
+   "action": "kept"
+  },
+  {
+   "id": "c37",
+   "where": "article.sections[1].body",
+   "classification": "supported",
+   "evidence": "emc leaflet: antibiotic killing bacteria; contains amoxicillin and clavulanic acid",
+   "url": "https://www.medicines.org.uk/emc/product/4078/pil",
+   "action": "kept"
+  },
+  {
+   "id": "c38",
+   "where": "article.sections[1].body",
+   "classification": "supported",
+   "evidence": "MedlinePlus text retrieved",
+   "url": "https://medlineplus.gov/druginfo/meds/a685024.html",
+   "action": "kept"
+  },
+  {
+   "id": "c39",
+   "where": "article.sections[1].body",
+   "classification": "supported",
+   "evidence": "Retrieved text states this.",
+   "url": "https://www.nhs.uk/medicines/co-amoxiclav/",
+   "action": "kept"
+  },
+  {
+   "id": "c40",
+   "where": "article.sections[1].body",
+   "classification": "unsupported",
+   "evidence": "Tayside PDF returned in results without text; no retrieved text states this",
+   "url": "https://www.nhs.uk/medicines/co-amoxiclav/",
+   "action": "removed"
+  },
+  {
+   "id": "c41",
+   "where": "article.sections[1].body",
+   "classification": "unsupported",
+   "evidence": "Reasoning not in retrieved text",
+   "url": "https://www.nhs.uk/medicines/co-amoxiclav/",
+   "action": "removed"
+  },
+  {
+   "id": "c42",
+   "where": "article.sections[1].body",
+   "classification": "supported",
+   "evidence": "MedlinePlus text retrieved",
+   "url": "https://medlineplus.gov/druginfo/meds/a685024.html",
+   "action": "kept"
+  },
+  {
+   "id": "c43",
+   "where": "article.sections[1].body",
+   "classification": "unsupported",
+   "evidence": "Chewable tablets not confirmed in retrieved MedlinePlus text; formularies/dm+d list tablets and oral suspension",
+   "url": "https://www.nhs.uk/medicines/co-amoxiclav/",
+   "action": "edited"
+  },
+  {
+   "id": "c44",
+   "where": "article.sections[1].body",
+   "classification": "unsupported",
+   "evidence": "Chewable tablets not confirmed in retrieved MedlinePlus text; formularies/dm+d list tablets and oral suspension",
+   "url": "https://www.nhs.uk/medicines/co-amoxiclav/",
+   "action": "removed"
+  },
+  {
+   "id": "c45",
+   "where": "article.sections[2].body",
+   "classification": "supported",
+   "evidence": "Retrieved text states this.",
+   "url": "https://www.nhs.uk/medicines/co-amoxiclav/",
+   "action": "kept"
+  },
+  {
+   "id": "c46",
+   "where": "article.sections[2].body",
+   "classification": "supported",
+   "evidence": "Retrieved text states this.",
+   "url": "https://www.nhs.uk/medicines/co-amoxiclav/",
+   "action": "kept"
+  },
+  {
+   "id": "c47",
+   "where": "article.sections[2].body",
+   "classification": "unsupported",
+   "evidence": "Frequency of rash/itching/headache and meningitis not found in retrieved text",
+   "url": "https://www.medicines.org.uk/emc/product/4078/pil",
+   "action": "removed"
+  },
+  {
+   "id": "c48",
+   "where": "article.sections[2].body",
+   "classification": "supported",
+   "evidence": "NHS: serious side effects possible but most are rare",
+   "url": "https://www.nhs.uk/medicines/co-amoxiclav/",
+   "action": "edited"
+  },
+  {
+   "id": "c49",
+   "where": "article.sections[2].body",
+   "classification": "supported",
+   "evidence": "MedlinePlus text retrieved",
+   "url": "https://medlineplus.gov/druginfo/meds/a685024.html",
+   "action": "kept"
+  },
+  {
+   "id": "c50",
+   "where": "article.sections[2].body",
+   "classification": "unsupported",
+   "evidence": "General advice / emc differs by product only",
+   "url": "https://www.medicines.org.uk/emc/product/4078/pil",
+   "action": "edited"
+  },
+  {
+   "id": "c51",
+   "where": "article.sections[2].body",
+   "classification": "unsupported",
+   "evidence": "Frequency of rash/itching/headache and meningitis not found in retrieved text",
+   "url": "https://www.medicines.org.uk/emc/product/4078/pil",
+   "action": "removed"
+  },
+  {
+   "id": "c52",
+   "where": "article.sections[3].body",
+   "classification": "supported",
+   "evidence": "NHS amoxicillin page: 999 for lip/mouth/throat/tongue swelling and breathing difficulty; co-amoxiclav page: throat/tongue swelling",
+   "url": "https://www.nhs.uk/medicines/amoxicillin/side-effects-of-amoxicillin/",
+   "action": "edited"
+  },
+  {
+   "id": "c53",
+   "where": "article.sections[3].body",
+   "classification": "supported",
+   "evidence": "NHS amoxicillin page: 999 for lip/mouth/throat/tongue swelling and breathing difficulty; co-amoxiclav page: throat/tongue swelling",
+   "url": "https://www.nhs.uk/medicines/amoxicillin/side-effects-of-amoxicillin/",
+   "action": "edited"
+  },
+  {
+   "id": "c54",
+   "where": "article.sections[3].body",
+   "classification": "supported",
+   "evidence": "Retrieved text states this.",
+   "url": "https://www.nhs.uk/medicines/co-amoxiclav/",
+   "action": "kept"
+  },
+  {
+   "id": "c55",
+   "where": "article.sections[3].body",
+   "classification": "supported",
+   "evidence": "NHS: blistering or peeling skin; 111 for suspected serious effects (bottom/thigh rash not retrieved, removed)",
+   "url": "https://www.nhs.uk/medicines/co-amoxiclav/",
+   "action": "edited"
+  },
+  {
+   "id": "c56",
+   "where": "article.sections[3].body",
+   "classification": "unsafe",
+   "evidence": "NHS page says call NHS 111; same-day GP routing was author wording",
+   "url": "https://www.nhs.uk/medicines/co-amoxiclav/",
+   "action": "edited"
+  },
+  {
+   "id": "c57",
+   "where": "article.sections[3].body",
+   "classification": "supported",
+   "evidence": "Retrieved text states this.",
+   "url": "https://www.nhs.uk/medicines/co-amoxiclav/",
+   "action": "kept"
+  },
+  {
+   "id": "c58",
+   "where": "article.sections[3].body",
+   "classification": "unsupported",
+   "evidence": "emc: inflammation of large intestine, watery diarrhoea; blood/mucus, fever, contact doctor not confirmed",
+   "url": "https://www.medicines.org.uk/emc/product/4078/pil",
+   "action": "edited"
+  },
+  {
+   "id": "c59",
+   "where": "article.sections[3].body",
+   "classification": "supported",
+   "evidence": "Retrieved text states this.",
+   "url": "https://www.nhs.uk/medicines/co-amoxiclav/",
+   "action": "kept"
+  },
+  {
+   "id": "c60",
+   "where": "article.sections[4].body",
+   "classification": "supported",
+   "evidence": "Retrieved text states this.",
+   "url": "https://www.nhs.uk/medicines/co-amoxiclav/",
+   "action": "kept"
+  },
+  {
+   "id": "c61",
+   "where": "article.sections[4].body",
+   "classification": "supported",
+   "evidence": "Retrieved text states this.",
+   "url": "https://www.nhs.uk/medicines/co-amoxiclav/",
+   "action": "kept"
+  },
+  {
+   "id": "c62",
+   "where": "article.sections[4].body",
+   "classification": "unsupported",
+   "evidence": "Glandular fever not found in retrieved leaflets or NHS excerpt",
+   "url": "https://www.medicines.org.uk/emc/product/4078/pil",
+   "action": "removed"
+  },
+  {
+   "id": "c63",
+   "where": "article.sections[4].body",
+   "classification": "supported",
+   "evidence": "MedlinePlus text retrieved",
+   "url": "https://medlineplus.gov/druginfo/meds/a685024.html",
+   "action": "kept"
+  },
+  {
+   "id": "c64",
+   "where": "article.sections[4].body",
+   "classification": "supported",
+   "evidence": "NHS excerpt retrieved",
+   "url": "https://www.nhs.uk/medicines/co-amoxiclav/",
+   "action": "kept"
+  },
+  {
+   "id": "c65",
+   "where": "article.sections[4].body",
+   "classification": "supported",
+   "evidence": "NHS excerpt retrieved",
+   "url": "https://www.nhs.uk/medicines/co-amoxiclav/",
+   "action": "kept"
+  },
+  {
+   "id": "c66",
+   "where": "article.sections[4].body",
+   "classification": "supported",
+   "evidence": "NHS excerpt retrieved",
+   "url": "https://www.nhs.uk/medicines/co-amoxiclav/",
+   "action": "kept"
+  },
+  {
+   "id": "c67",
+   "where": "article.sections[4].body",
+   "classification": "unsupported",
+   "evidence": "Not in retrieved text",
+   "url": "https://www.medicines.org.uk/emc/product/4078/pil",
+   "action": "removed"
+  },
+  {
+   "id": "c68",
+   "where": "article.faqs[0].a",
+   "classification": "supported",
+   "evidence": "MedlinePlus: amoxicillin plus clavulanic acid beta-lactamase inhibitor",
+   "url": "https://medlineplus.gov/druginfo/meds/a685024.html",
+   "action": "edited"
+  },
+  {
+   "id": "c69",
+   "where": "article.faqs[0].a",
+   "classification": "supported",
+   "evidence": "MedlinePlus text retrieved",
+   "url": "https://medlineplus.gov/druginfo/meds/a685024.html",
+   "action": "kept"
+  },
+  {
+   "id": "c70",
+   "where": "article.faqs[0].a",
+   "classification": "unsupported",
+   "evidence": "Tayside PDF returned in results without text; no retrieved text states this",
+   "url": "https://www.nhs.uk/medicines/co-amoxiclav/",
+   "action": "removed"
+  },
+  {
+   "id": "c71",
+   "where": "article.faqs[1].a",
+   "classification": "supported",
+   "evidence": "Retrieved text states this.",
+   "url": "https://www.nhs.uk/medicines/co-amoxiclav/",
+   "action": "kept"
+  },
+  {
+   "id": "c72",
+   "where": "article.faqs[1].a",
+   "classification": "supported",
+   "evidence": "NHS: serious side effects possible but most are rare",
+   "url": "https://www.nhs.uk/medicines/co-amoxiclav/",
+   "action": "edited"
+  },
+  {
+   "id": "c73",
+   "where": "article.faqs[2].a",
+   "classification": "supported",
+   "evidence": "Retrieved text states this.",
+   "url": "https://www.nhs.uk/medicines/co-amoxiclav/",
+   "action": "kept"
+  },
+  {
+   "id": "c74",
+   "where": "article.faqs[2].a",
+   "classification": "supported",
+   "evidence": "Retrieved text states this.",
+   "url": "https://www.nhs.uk/medicines/co-amoxiclav/",
+   "action": "kept"
+  },
+  {
+   "id": "c75",
+   "where": "article.faqs[2].a",
+   "classification": "unsafe",
+   "evidence": "NHS page says call NHS 111; same-day GP routing was author wording",
+   "url": "https://www.nhs.uk/medicines/co-amoxiclav/",
+   "action": "edited"
+  },
+  {
+   "id": "c76",
+   "where": "article.faqs[3].a",
+   "classification": "supported",
+   "evidence": "NHS amoxicillin page: 999 for lip/mouth/throat/tongue swelling and breathing difficulty; co-amoxiclav page: throat/tongue swelling",
+   "url": "https://www.nhs.uk/medicines/amoxicillin/side-effects-of-amoxicillin/",
+   "action": "edited"
+  },
+  {
+   "id": "c77",
+   "where": "article.faqs[3].a",
+   "classification": "supported",
+   "evidence": "Retrieved text states this.",
+   "url": "https://www.nhs.uk/medicines/co-amoxiclav/",
+   "action": "kept"
+  },
+  {
+   "id": "c78",
+   "where": "article.faqs[4].a",
+   "classification": "supported",
+   "evidence": "NHS excerpt retrieved",
+   "url": "https://www.nhs.uk/medicines/co-amoxiclav/",
+   "action": "kept"
+  },
+  {
+   "id": "c79",
+   "where": "article.faqs[4].a",
+   "classification": "unsupported",
+   "evidence": "General routing, not source claim",
+   "url": "https://www.medicines.org.uk/emc/product/4078/pil",
+   "action": "removed"
+  },
+  {
+   "id": "c80",
+   "where": "article.keyFacts[0].value",
+   "classification": "supported",
+   "evidence": "Retrieved text states this.",
+   "url": "https://medlineplus.gov/druginfo/meds/a685024.html",
+   "action": "kept"
+  },
+  {
+   "id": "c81",
+   "where": "article.keyFacts[1].value",
+   "classification": "supported",
+   "evidence": "emc leaflet: antibiotic killing bacteria; contains amoxicillin and clavulanic acid",
+   "url": "https://www.medicines.org.uk/emc/product/4078/pil",
+   "action": "kept"
+  },
+  {
+   "id": "c82",
+   "where": "article.keyFacts[2].value",
+   "classification": "unsupported",
+   "evidence": "Chewable tablets not confirmed in retrieved MedlinePlus text; formularies/dm+d list tablets and oral suspension",
+   "url": "https://www.nhs.uk/medicines/co-amoxiclav/",
+   "action": "edited"
+  },
+  {
+   "id": "c83",
+   "where": "article.keyFacts[3].value",
+   "classification": "supported",
+   "evidence": "Retrieved text states this.",
+   "url": "https://www.nhs.uk/medicines/co-amoxiclav/",
+   "action": "kept"
+  },
+  {
+   "id": "c84",
+   "where": "article.keyFacts[4].value",
+   "classification": "supported",
+   "evidence": "Retrieved text states this.",
+   "url": "https://www.nhs.uk/medicines/co-amoxiclav/",
+   "action": "kept"
+  },
+  {
+   "id": "c85",
+   "where": "article.keyFacts[5].value",
+   "classification": "supported",
+   "evidence": "Retrieved text states this.",
+   "url": "https://www.nhs.uk/medicines/co-amoxiclav/",
+   "action": "kept"
+  },
+  {
+   "id": "c86",
+   "where": "brands.UK",
+   "classification": "supported",
+   "evidence": "emc lists Augmentin 625mg tablets and suspensions; NHS says common brand is Augmentin",
+   "url": "https://www.medicines.org.uk/emc/product/281/smpc",
+   "action": "kept"
+  },
+  {
+   "id": "c87",
+   "where": "regulatory[0]",
+   "classification": "supported",
+   "evidence": "emc lists Augmentin under POM legal category; NHS summary: prescription only",
+   "url": "https://www.medicines.org.uk/emc/product/281/smpc",
+   "action": "edited",
+   "newSentence": "Source changed to emc Augmentin SmPC (legal category POM)."
+  }
+ ],
+ "notes": "Tayside dental PDF text never retrieved (removed). NHS co-amoxiclav page text only partly returned; skin/ear use, glandular fever, kidney-as-contraindication, chewable tablets not confirmed and removed. 999 wording is from the NHS amoxicillin side-effects page; the co-amoxiclav page routes suspected serious effects to NHS 111. No alcohol info found. Contraceptive caution added from MedlinePlus. Chewable-tablet dosage form id removed."
+}

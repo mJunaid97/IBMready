@@ -1,0 +1,124 @@
+{
+ "id": "levothyroxine-timing-and-other-medicines",
+ "searchesUsed": 7,
+ "counts": {
+  "supported": 30,
+  "textbook": 0,
+  "unsupported": 10,
+  "wrong": 0,
+  "unsafe": 1,
+  "unchecked": 0
+ },
+ "claims": [
+  {
+   "id": "c01",
+   "classification": "unsupported",
+   "evidence": "dangling pronoun; not in retrieved text",
+   "url": "",
+   "action": "removed",
+   "sentence": "In an underactive thyroid the gland does not make enough of them."
+  },
+  {
+   "id": "c02",
+   "classification": "unsupported",
+   "evidence": "not retrieved in second pass",
+   "url": "",
+   "action": "removed",
+   "sentence": "The NHS says diagnosis uses a thyroid function test measuring TSH and T4."
+  },
+  {
+   "id": "c03",
+   "classification": "unsupported",
+   "evidence": "not retrieved",
+   "url": "",
+   "action": "removed",
+   "sentence": "A high TSH level together with a low T4 level could mean the thyroid is underactive."
+  },
+  {
+   "id": "c04",
+   "classification": "unsupported",
+   "evidence": "not retrieved",
+   "url": "",
+   "action": "removed",
+   "sentence": "These tests measure thyroid hormone levels, including TSH."
+  },
+  {
+   "id": "c05",
+   "classification": "unsupported",
+   "evidence": "NHS Inform says morning usually, some prefer night; trust attribution not retrieved. Replaced with NHS inform, MedlinePlus, PMC review",
+   "url": "",
+   "action": "removed",
+   "sentence": "Some NHS trust leaflets note that people choose morning or bedtime..."
+  },
+  {
+   "id": "c06",
+   "classification": "unsupported",
+   "evidence": "inference; replaced by NHS statement that medicines, supplements, foods affect absorption",
+   "url": "",
+   "action": "removed",
+   "sentence": "This is why the NHS wording ... matters."
+  },
+  {
+   "id": "c07",
+   "classification": "unsupported",
+   "evidence": "MedlinePlus pages do not mention biotin; no NHS text retrieved",
+   "url": "",
+   "action": "removed",
+   "sentence": "Biotin sentence"
+  },
+  {
+   "id": "c08",
+   "classification": "unsupported",
+   "evidence": "not retrieved",
+   "url": "",
+   "action": "removed",
+   "sentence": "The NHS says symptoms may ease soon in some people..."
+  },
+  {
+   "id": "c09",
+   "classification": "unsupported",
+   "evidence": "not retrieved in second pass",
+   "url": "",
+   "action": "removed",
+   "sentence": "Untreated complications (heart disease, goitre, pregnancy problems)"
+  },
+  {
+   "id": "c10",
+   "classification": "unsafe",
+   "evidence": "textbook mark; no retrieved NHS text names 999 for thyroid crisis; NHS page text retrieved says call NHS 111 for suspected serious side effects",
+   "url": "",
+   "action": "removed",
+   "sentence": "These are emergencies, so the route is 999."
+  },
+  {
+   "id": "c11",
+   "classification": "unsupported",
+   "evidence": "overdose page not re-retrieved",
+   "url": "",
+   "action": "removed",
+   "sentence": "MedlinePlus overdose warning signs sentence"
+  },
+  {
+   "id": "c12",
+   "classification": "supported",
+   "evidence": "PMC8002057 abstract: coffee, soy, fibre, calcium, iron, enteral nutrition decreased absorption; morning and bedtime equally effective; gap helps. Earlier sentence rested on title only.",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8002057/",
+   "action": "edited"
+  },
+  {
+   "id": "c13",
+   "classification": "supported",
+   "evidence": "MedlinePlus calcium/iron/antacid sentences kept, labelled US; NHS trust (Sheffield Childrens) leaflet cited for avoiding calcium or iron together",
+   "url": "https://medlineplus.gov/ency/article/000353.htm",
+   "action": "edited"
+  },
+  {
+   "id": "c14",
+   "classification": "supported",
+   "evidence": "nhs.uk levothyroxine page text quoted in search summaries (page title 'Levothyroxine: a medicine for an underactive thyroid (hypothyroidism) - NHS'); the sub-page titles 'How and when to take', 'Side effects', 'common questions' did not return as separate pages; NHS 111 for suspected serious side effects and overdose route quoted",
+   "url": "https://www.nhs.uk/medicines/levothyroxine/",
+   "action": "kept"
+  }
+ ],
+ "notes": "Counts approximate (first-pass 41 sentences, 11 removed, 30 kept/edited). nhs.uk attributions rest on search summaries quoting the page; separate sub-pages never returned. Body now ~705 words (under 700-1000 target ok). Amounts/intervals omitted. 999 removed; user may want direct NHS emergency wording confirmed."
+}

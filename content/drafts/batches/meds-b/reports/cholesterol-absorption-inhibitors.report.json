@@ -1,0 +1,103 @@
+{
+ "id": "cholesterol-absorption-inhibitors",
+ "searchesUsed": 13,
+ "counts": {
+  "supported": 8,
+  "textbook": 0,
+  "unsupported": 2,
+  "wrong": 0,
+  "unsafe": 1,
+  "unchecked": 0
+ },
+ "claims": [
+  {
+   "id": "c01",
+   "classification": "supported",
+   "evidence": "Heart UK: ezetimibe partly blocks cholesterol absorption in small intestine (class defined by its one member).",
+   "url": "https://www.heartuk.org.uk/getting-treatment/ezetimibe",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c02",
+   "classification": "supported",
+   "evidence": "NHS.",
+   "url": "https://www.nhs.uk/medicines/ezetimibe/about-ezetimibe/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c03",
+   "classification": "supported",
+   "evidence": "Heart UK.",
+   "url": "https://www.heartuk.org.uk/getting-treatment/ezetimibe",
+   "action": "edited",
+   "newSentence": "Mechanism now Heart UK + review (NPC1L1) wording."
+  },
+  {
+   "id": "c04",
+   "classification": "unsupported",
+   "evidence": "NHS wording not retrieved.",
+   "url": "https://www.nhs.uk/medicines/ezetimibe/about-ezetimibe/",
+   "action": "removed",
+   "newSentence": null
+  },
+  {
+   "id": "c05",
+   "classification": "supported",
+   "evidence": "Heart UK.",
+   "url": "https://www.heartuk.org.uk/getting-treatment/ezetimibe",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c06",
+   "classification": "supported",
+   "evidence": "Heart UK.",
+   "url": "https://www.heartuk.org.uk/getting-treatment/ezetimibe",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c07",
+   "classification": "supported",
+   "evidence": "NHS.",
+   "url": "https://www.nhs.uk/medicines/ezetimibe/side-effects-of-ezetimibe/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c08",
+   "classification": "supported",
+   "evidence": "Heart UK.",
+   "url": "https://www.heartuk.org.uk/getting-treatment/ezetimibe",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c09",
+   "classification": "unsafe",
+   "evidence": "Route vague ('reported to a doctor ... usually GP'); MedlinePlus not retrieved. NHS: doctor or 111 straight away.",
+   "url": "https://www.nhs.uk/medicines/ezetimibe/side-effects-of-ezetimibe/",
+   "action": "edited",
+   "newSentence": "Unexplained muscle pain, tenderness or weakness, or yellowing of the skin or eyes, needs a doctor or NHS 111 straight away, according to the NHS."
+  },
+  {
+   "id": "c10",
+   "classification": "supported",
+   "evidence": "NHS asks to tell doctor; 'discussed with prescriber first' reworded to avoid instruction.",
+   "url": "https://www.nhs.uk/medicines/ezetimibe/who-can-and-cannot-take-ezetimibe/",
+   "action": "edited",
+   "newSentence": "The NHS asks people to tell their doctor about pregnancy, planning a pregnancy, breastfeeding and liver problems."
+  },
+  {
+   "id": "c11",
+   "classification": "unsupported",
+   "evidence": "Ciclosporin/warfarin not in NHS list retrieved.",
+   "url": "https://www.nhs.uk/medicines/ezetimibe/taking-ezetimibe-with-other-medicines-and-herbal-supplements/",
+   "action": "edited",
+   "newSentence": "The NHS lists other cholesterol-lowering medicines such as bezafibrate and colestyramine ... and UK product information advises caution with ciclosporin."
+  }
+ ],
+ "notes": "Searches shared with ezetimibe. Class defined by single member ezetimibe, so all claims inherit its evidence. Mechanism field now identical to ezetimibe howItWorks."
+}

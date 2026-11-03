@@ -1,0 +1,780 @@
+{
+ "id": "trimethoprim",
+ "searchesUsed": 13,
+ "counts": {
+  "supported": 66,
+  "textbook": 0,
+  "unsupported": 9,
+  "wrong": 0,
+  "unsafe": 10,
+  "unchecked": 0
+ },
+ "claims": [
+  {
+   "id": "c01",
+   "where": "summary",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/NICE/MedlinePlus text states this: Returned NHS excerpt states this; paraphrased.",
+   "url": "https://www.nhs.uk/medicines/trimethoprim/about-trimethoprim/",
+   "action": "kept",
+   "newSentence": "Trimethoprim is an antibiotic used to treat and prevent urinary tract infections such as cystitis, and occasionally other infections."
+  },
+  {
+   "id": "c02",
+   "where": "summary",
+   "classification": "unsupported",
+   "evidence": "Mechanism and early-pregnancy caution supported; 'recurring theme' was editorial",
+   "url": "https://www.nhs.uk/medicines/trimethoprim/common-questions-about-trimethoprim/",
+   "action": "edited",
+   "newSentence": "see final.json"
+  },
+  {
+   "id": "c03",
+   "where": "summary",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/NICE/MedlinePlus text states this: Returned NHS excerpt states this; paraphrased.",
+   "url": "https://www.nhs.uk/medicines/trimethoprim/side-effects-of-trimethoprim/",
+   "action": "kept",
+   "newSentence": "The NHS lists blood and skin reactions as rare serious side effects that need prompt medical help."
+  },
+  {
+   "id": "c04",
+   "where": "usedFor[0]",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/NICE/MedlinePlus text states this: Returned NHS excerpt states this; paraphrased.",
+   "url": "https://www.nhs.uk/medicines/trimethoprim/about-trimethoprim/",
+   "action": "kept",
+   "newSentence": "Treating urinary tract infections, such as cystitis"
+  },
+  {
+   "id": "c05",
+   "where": "usedFor[1]",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/NICE/MedlinePlus text states this: Returned NHS excerpt states this; paraphrased.",
+   "url": "https://www.nhs.uk/medicines/trimethoprim/about-trimethoprim/",
+   "action": "kept",
+   "newSentence": "Preventing urinary tract infections"
+  },
+  {
+   "id": "c06",
+   "where": "usedFor[2]",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/NICE/MedlinePlus text states this: Returned NHS excerpt states this; paraphrased.",
+   "url": "https://www.nhs.uk/medicines/trimethoprim/about-trimethoprim/",
+   "action": "kept",
+   "newSentence": "Occasionally other infections, including chest infections and acne"
+  },
+  {
+   "id": "c07",
+   "where": "howItWorks",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/NICE/MedlinePlus text states this: NHS common-questions page; blended extended search.",
+   "url": "https://www.nhs.uk/medicines/trimethoprim/common-questions-about-trimethoprim/",
+   "action": "kept",
+   "newSentence": "Trimethoprim works by interfering with the way bacteria make folic acid."
+  },
+  {
+   "id": "c08",
+   "where": "howItWorks",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/NICE/MedlinePlus text states this: Returned NHS excerpt states this; paraphrased.",
+   "url": "https://www.nhs.uk/medicines/trimethoprim/about-trimethoprim/",
+   "action": "kept",
+   "newSentence": "Antibiotics such as this act on bacteria and do not work against colds, flu or other viral infections."
+  },
+  {
+   "id": "c09",
+   "where": "howItWorks",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/NICE/MedlinePlus text states this: Returned NHS excerpt states this; paraphrased.",
+   "url": "https://www.nhs.uk/medicines/trimethoprim/common-questions-about-trimethoprim/",
+   "action": "kept",
+   "newSentence": "In the body, a long course can occasionally lower folic acid levels."
+  },
+  {
+   "id": "c10",
+   "where": "sideEffects.common[0]",
+   "classification": "unsupported",
+   "evidence": "'more than 1 in 100' not in retrieved text; list of effects is",
+   "url": "https://www.nhs.uk/medicines/trimethoprim/side-effects-of-trimethoprim/",
+   "action": "edited",
+   "newSentence": "see final.json"
+  },
+  {
+   "id": "c11",
+   "where": "sideEffects.common[1]",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/NICE/MedlinePlus text states this: Returned NHS excerpt states this; paraphrased.",
+   "url": "https://www.nhs.uk/medicines/trimethoprim/side-effects-of-trimethoprim/",
+   "action": "kept",
+   "newSentence": "Being sick or having severe diarrhoea can stop contraceptive pills from protecting against pregnancy."
+  },
+  {
+   "id": "c12",
+   "where": "sideEffects.common[2]",
+   "classification": "unsafe",
+   "evidence": "NHS says paracetamol/ibuprofen considered safe for headaches; reworded to 'suitable'",
+   "url": "https://www.nhs.uk/medicines/trimethoprim/side-effects-of-trimethoprim/",
+   "action": "edited",
+   "newSentence": "see final.json"
+  },
+  {
+   "id": "c13",
+   "where": "sideEffects.serious[0]",
+   "classification": "unsafe",
+   "evidence": "NHS: contact doctor or 111 straight away; 'GP the same day' was author's routing; reworded to retrieved wording",
+   "url": "https://www.nhs.uk/medicines/trimethoprim/side-effects-of-trimethoprim/",
+   "action": "edited",
+   "newSentence": "see final.json"
+  },
+  {
+   "id": "c14",
+   "where": "sideEffects.serious[1]",
+   "classification": "unsafe",
+   "evidence": "Routing reworded to NHS 111 or a doctor",
+   "url": "https://www.nhs.uk/medicines/trimethoprim/side-effects-of-trimethoprim/",
+   "action": "edited",
+   "newSentence": "see final.json"
+  },
+  {
+   "id": "c15",
+   "where": "sideEffects.serious[2]",
+   "classification": "unsafe",
+   "evidence": "Routing reworded; pancreatitis/liver parentheticals retrieved",
+   "url": "https://www.nhs.uk/medicines/trimethoprim/side-effects-of-trimethoprim/",
+   "action": "edited",
+   "newSentence": "see final.json"
+  },
+  {
+   "id": "c16",
+   "where": "sideEffects.serious[3]",
+   "classification": "supported",
+   "evidence": "NHS: meningitis very rare; 999 for meningitis, high potassium (weakness, abnormal heartbeat, chest pains), anaphylaxis",
+   "url": "https://www.nhs.uk/medicines/trimethoprim/side-effects-of-trimethoprim/",
+   "action": "edited",
+   "newSentence": "see final.json"
+  },
+  {
+   "id": "c17",
+   "where": "sideEffects.serious[4]",
+   "classification": "supported",
+   "evidence": "NHS: tongue, fast/difficult breathing, anaphylaxis, 999",
+   "url": "https://www.nhs.uk/medicines/trimethoprim/side-effects-of-trimethoprim/",
+   "action": "edited",
+   "newSentence": "see final.json"
+  },
+  {
+   "id": "c18",
+   "where": "cautions[0]",
+   "classification": "unsupported",
+   "evidence": "'low folate levels' not in list; page says iron deficiency or folate deficiency anaemia, porphyria, blood disorder",
+   "url": "https://www.nhs.uk/medicines/trimethoprim/who-can-and-cannot-take-trimethoprim/",
+   "action": "edited",
+   "newSentence": "see final.json"
+  },
+  {
+   "id": "c19",
+   "where": "cautions[1]",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/NICE/MedlinePlus text states this: Returned NHS excerpt states this; paraphrased.",
+   "url": "https://www.nhs.uk/medicines/trimethoprim/about-trimethoprim/",
+   "action": "kept",
+   "newSentence": "Pregnancy and trying to conceive are circumstances where the NHS advises checking with a doctor first."
+  },
+  {
+   "id": "c20",
+   "where": "cautions[2]",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/NICE/MedlinePlus text states this: Returned NHS excerpt states this; paraphrased.",
+   "url": "https://www.nhs.uk/medicines/trimethoprim/pregnancy-breastfeeding-and-fertility-while-taking-trimethoprim/",
+   "action": "kept",
+   "newSentence": "The NHS says trimethoprim can be taken in pregnancy but is not usually recommended in early pregnancy, because it can lower folic acid levels."
+  },
+  {
+   "id": "c21",
+   "where": "cautions[3]",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/NICE/MedlinePlus text states this: Returned NHS excerpt states this; paraphrased.",
+   "url": "https://www.nhs.uk/medicines/trimethoprim/pregnancy-breastfeeding-and-fertility-while-taking-trimethoprim/",
+   "action": "kept",
+   "newSentence": "For someone trying to conceive who takes it daily, the NHS says the doctor may change the antibiotic or prescribe high-dose folic acid."
+  },
+  {
+   "id": "c22",
+   "where": "cautions[4]",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/NICE/MedlinePlus text states this: Returned NHS excerpt states this; paraphrased.",
+   "url": "https://www.nhs.uk/medicines/trimethoprim/pregnancy-breastfeeding-and-fertility-while-taking-trimethoprim/",
+   "action": "kept",
+   "newSentence": "Small amounts pass into breast milk and side effects in the baby are unlikely with short-term use, though a pharmacist, doctor, midwife or health visitor is the person to ask."
+  },
+  {
+   "id": "c23",
+   "where": "cautions[5]",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/NICE/MedlinePlus text states this: Returned NHS excerpt states this; paraphrased.",
+   "url": "https://www.nhs.uk/medicines/trimethoprim/taking-trimethoprim-with-other-medicines-and-herbal-supplements/",
+   "action": "kept",
+   "newSentence": "Medicines named by the NHS as interacting include rifampicin, warfarin, acenocoumarol, digoxin, phenytoin, repaglinide, pioglitazone and methotrexate."
+  },
+  {
+   "id": "c24",
+   "where": "cautions[6]",
+   "classification": "unsafe",
+   "evidence": "Used the word safe; reworded",
+   "url": "https://www.nhs.uk/medicines/trimethoprim/taking-trimethoprim-with-other-medicines-and-herbal-supplements/",
+   "action": "edited",
+   "newSentence": "see final.json"
+  },
+  {
+   "id": "c25",
+   "where": "cautions[7]",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/NICE/MedlinePlus text states this: Returned NHS excerpt states this; paraphrased.",
+   "url": "https://medlineplus.gov/druginfo/meds/a684025.html",
+   "action": "kept",
+   "newSentence": "MedlinePlus asks people to tell the prescriber about allergies to trimethoprim or sulfa drugs and about all other medicines, vitamins and supplements."
+  },
+  {
+   "id": "c26",
+   "where": "cautions[9]",
+   "classification": "unsupported",
+   "evidence": "'heavy drinking' not retrieved; NHS says best not to drink too much",
+   "url": "https://www.nhs.uk/medicines/trimethoprim/common-questions-about-trimethoprim/",
+   "action": "edited",
+   "newSentence": "see final.json"
+  },
+  {
+   "id": "c27",
+   "where": "cautions[8]",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/NICE/MedlinePlus text states this: Returned NHS excerpt states this; paraphrased.",
+   "url": "https://www.nhs.uk/medicines/trimethoprim/taking-trimethoprim-with-other-medicines-and-herbal-supplements/",
+   "action": "kept",
+   "newSentence": "The NHS says normal eating and drinking can continue during treatment."
+  },
+  {
+   "id": "c28",
+   "where": "monitoring",
+   "classification": "unsupported",
+   "evidence": "Absence claim; no source says no tests are needed",
+   "url": "https://www.nhs.uk/medicines/trimethoprim/",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c29",
+   "where": "monitoring",
+   "classification": "supported",
+   "evidence": "Merged into monitoring",
+   "url": "https://www.nhs.uk/medicines/trimethoprim/common-questions-about-trimethoprim/",
+   "action": "edited",
+   "newSentence": "see final.json"
+  },
+  {
+   "id": "c30",
+   "where": "regulatory",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/NICE/MedlinePlus text states this: NHS about page describes it as a prescription medicine (search summary).",
+   "url": "https://www.nhs.uk/medicines/trimethoprim/about-trimethoprim/",
+   "action": "kept",
+   "newSentence": "Trimethoprim is a medicine available on prescription in the UK."
+  },
+  {
+   "id": "c31",
+   "where": "regimenNote[0]",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/NICE/MedlinePlus text states this: emc product page title (Trimethoprim suspension) and NHS Scotland PGD tablet titles; forms only, no strengths.",
+   "url": "https://www.medicines.org.uk/emc/product/4566/smpc",
+   "action": "kept",
+   "newSentence": "Supplied as tablets and as an oral suspension."
+  },
+  {
+   "id": "c32",
+   "where": "article.sections[0].body",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/NICE/MedlinePlus text states this: Returned NHS excerpt states this; paraphrased.",
+   "url": "https://www.nhs.uk/medicines/trimethoprim/",
+   "action": "kept",
+   "newSentence": "Trimethoprim is an antibiotic, a medicine that treats infections caused by bacteria."
+  },
+  {
+   "id": "c33",
+   "where": "article.sections[0].body",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/NICE/MedlinePlus text states this: Returned NHS excerpt states this; paraphrased.",
+   "url": "https://www.nhs.uk/medicines/trimethoprim/about-trimethoprim/",
+   "action": "kept",
+   "newSentence": "The NHS says it is used to treat and to prevent urinary tract infections, such as cystitis."
+  },
+  {
+   "id": "c34",
+   "where": "article.sections[0].body",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/NICE/MedlinePlus text states this: Returned NHS excerpt states this; paraphrased.",
+   "url": "https://www.nhs.uk/medicines/trimethoprim/about-trimethoprim/",
+   "action": "kept",
+   "newSentence": "Less often it is used for other infections, including chest infections and acne."
+  },
+  {
+   "id": "c35",
+   "where": "article.sections[0].body",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/NICE/MedlinePlus text states this: Returned NHS excerpt states this; paraphrased.",
+   "url": "https://www.nice.org.uk/guidance/ng109/resources/urinary-tract-infection-lower-antimicrobial-prescribing-pdf-66141546350533",
+   "action": "kept",
+   "newSentence": "NICE guidance on lower urinary tract infection names trimethoprim as one of two first-choice antibiotics, alongside nitrofurantoin."
+  },
+  {
+   "id": "c36",
+   "where": "article.sections[0].body",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/NICE/MedlinePlus text states this: Returned NHS excerpt states this; paraphrased.",
+   "url": "https://www.nice.org.uk/guidance/ng109/resources/urinary-tract-infection-lower-antimicrobial-prescribing-pdf-66141546350533",
+   "action": "kept",
+   "newSentence": "NICE adds that resistance to trimethoprim is high across the country, so it is considered when the individual risk of resistance is low."
+  },
+  {
+   "id": "c37",
+   "where": "article.sections[0].body",
+   "classification": "unsupported",
+   "evidence": "Only 'not used in past 3 months' retrieved; care homes not retrieved",
+   "url": "https://www.nice.org.uk/guidance/ng109/resources/urinary-tract-infection-lower-antimicrobial-prescribing-pdf-66141546350533",
+   "action": "edited",
+   "newSentence": "see final.json"
+  },
+  {
+   "id": "c38",
+   "where": "article.sections[0].body",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/NICE/MedlinePlus text states this: Returned NHS excerpt states this; paraphrased.",
+   "url": "https://www.nice.org.uk/guidance/ng109/resources/urinary-tract-infection-lower-antimicrobial-prescribing-pdf-66141546350533",
+   "action": "kept",
+   "newSentence": "In men, NICE notes that trimethoprim can reach useful levels in prostate tissue."
+  },
+  {
+   "id": "c39",
+   "where": "article.sections[0].body",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/NICE/MedlinePlus text states this: Returned NHS excerpt states this; paraphrased.",
+   "url": "https://www.nhs.uk/medicines/antibiotics/",
+   "action": "kept",
+   "newSentence": "Antibiotics do not work against colds, flu or other viral infections, as the NHS points out."
+  },
+  {
+   "id": "c40",
+   "where": "article.sections[1].body",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/NICE/MedlinePlus text states this: Returned NHS excerpt states this; paraphrased.",
+   "url": "https://www.nhs.uk/medicines/trimethoprim/common-questions-about-trimethoprim/",
+   "action": "kept",
+   "newSentence": "Trimethoprim works by interfering with the way bacteria make folic acid."
+  },
+  {
+   "id": "c41",
+   "where": "article.sections[1].body",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/NICE/MedlinePlus text states this: Returned NHS excerpt states this; paraphrased.",
+   "url": "https://www.nhs.uk/medicines/trimethoprim/common-questions-about-trimethoprim/",
+   "action": "kept",
+   "newSentence": "The NHS explains that a long course can occasionally lower folic acid levels in the body."
+  },
+  {
+   "id": "c42",
+   "where": "article.sections[1].body",
+   "classification": "unsupported",
+   "evidence": "Editorial synthesis",
+   "url": "https://www.nhs.uk/medicines/trimethoprim/who-can-and-cannot-take-trimethoprim/",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c43",
+   "where": "article.sections[1].body",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/NICE/MedlinePlus text states this: Returned NHS excerpt states this; paraphrased.",
+   "url": "https://www.nhs.uk/medicines/trimethoprim/who-can-and-cannot-take-trimethoprim/",
+   "action": "kept",
+   "newSentence": "Low folate levels appear on the NHS list of reasons why the medicine may not be suitable."
+  },
+  {
+   "id": "c44",
+   "where": "article.sections[1].body",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/NICE/MedlinePlus text states this: Returned NHS excerpt states this; paraphrased.",
+   "url": "https://www.nhs.uk/medicines/trimethoprim/pregnancy-breastfeeding-and-fertility-while-taking-trimethoprim/",
+   "action": "kept",
+   "newSentence": "The NHS also notes that the medicine can lower folic acid levels in pregnancy, which is why it is not usually recommended in early pregnancy."
+  },
+  {
+   "id": "c45",
+   "where": "article.sections[1].body",
+   "classification": "supported",
+   "evidence": "NHS England case-study search summary states spinal cord malformation; from summary only",
+   "url": "https://www.england.nhs.uk/long-read/use-of-trimethoprim-in-women-of-child-bearing-age/",
+   "action": "edited",
+   "newSentence": "see final.json"
+  },
+  {
+   "id": "c46",
+   "where": "article.sections[1].body",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/NICE/MedlinePlus text states this: Returned NHS excerpt states this; paraphrased.",
+   "url": "https://www.nhs.uk/medicines/trimethoprim/pregnancy-breastfeeding-and-fertility-while-taking-trimethoprim/",
+   "action": "kept",
+   "newSentence": "For someone trying to conceive who takes the medicine daily, the NHS says the doctor may switch antibiotic or prescribe high-dose folic acid."
+  },
+  {
+   "id": "c47",
+   "where": "article.sections[1].body",
+   "classification": "supported",
+   "evidence": "Duplicate of earlier sentence; removed for redundancy",
+   "url": "https://www.nhs.uk/medicines/trimethoprim/about-trimethoprim/",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c48",
+   "where": "article.sections[2].body",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/NICE/MedlinePlus text states this: Returned NHS excerpt states this; paraphrased.",
+   "url": "https://www.nhs.uk/medicines/trimethoprim/side-effects-of-trimethoprim/",
+   "action": "kept",
+   "newSentence": "The NHS lists itching or a mild rash, feeling or being sick, diarrhoea, thrush and headaches as common effects."
+  },
+  {
+   "id": "c49",
+   "where": "article.sections[2].body",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/NICE/MedlinePlus text states this: Returned NHS excerpt states this; paraphrased.",
+   "url": "https://www.nhs.uk/medicines/trimethoprim/side-effects-of-trimethoprim/",
+   "action": "kept",
+   "newSentence": "Being sick or having severe diarrhoea can stop contraceptive pills from working."
+  },
+  {
+   "id": "c50",
+   "where": "article.sections[2].body",
+   "classification": "supported",
+   "evidence": "NHS: high temperature; blood problem signs",
+   "url": "https://www.nhs.uk/medicines/trimethoprim/side-effects-of-trimethoprim/",
+   "action": "edited",
+   "newSentence": "see final.json"
+  },
+  {
+   "id": "c51",
+   "where": "article.sections[2].body",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/NICE/MedlinePlus text states this: Returned NHS excerpt states this; paraphrased.",
+   "url": "https://www.nhs.uk/medicines/trimethoprim/side-effects-of-trimethoprim/",
+   "action": "kept",
+   "newSentence": "Blistering or peeling skin is a serious skin reaction."
+  },
+  {
+   "id": "c52",
+   "where": "article.sections[2].body",
+   "classification": "unsafe",
+   "evidence": "Routing reworded to NHS 111 or a doctor",
+   "url": "https://www.nhs.uk/medicines/trimethoprim/side-effects-of-trimethoprim/",
+   "action": "edited",
+   "newSentence": "see final.json"
+  },
+  {
+   "id": "c53",
+   "where": "article.sections[2].body",
+   "classification": "supported",
+   "evidence": "NHS: meningitis very rare; 999 for meningitis, high potassium (weakness, abnormal heartbeat, chest pains), anaphylaxis",
+   "url": "https://www.nhs.uk/medicines/trimethoprim/side-effects-of-trimethoprim/",
+   "action": "edited",
+   "newSentence": "see final.json"
+  },
+  {
+   "id": "c54",
+   "where": "article.sections[3].body",
+   "classification": "unsupported",
+   "evidence": "'low folate levels' not in list; page says iron deficiency or folate deficiency anaemia, porphyria, blood disorder",
+   "url": "https://www.nhs.uk/medicines/trimethoprim/who-can-and-cannot-take-trimethoprim/",
+   "action": "edited",
+   "newSentence": "see final.json"
+  },
+  {
+   "id": "c55",
+   "where": "article.sections[3].body",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/NICE/MedlinePlus text states this: Returned NHS excerpt states this; paraphrased.",
+   "url": "https://medlineplus.gov/druginfo/meds/a684025.html",
+   "action": "kept",
+   "newSentence": "MedlinePlus also asks people to tell the prescriber about allergies to trimethoprim or sulfa drugs."
+  },
+  {
+   "id": "c56",
+   "where": "article.sections[3].body",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/NICE/MedlinePlus text states this: Returned NHS excerpt states this; paraphrased.",
+   "url": "https://www.nhs.uk/medicines/trimethoprim/about-trimethoprim/",
+   "action": "kept",
+   "newSentence": "Pregnancy is another consideration."
+  },
+  {
+   "id": "c57",
+   "where": "article.sections[3].body",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/NICE/MedlinePlus text states this: Returned NHS excerpt states this; paraphrased.",
+   "url": "https://www.nhs.uk/medicines/trimethoprim/pregnancy-breastfeeding-and-fertility-while-taking-trimethoprim/",
+   "action": "kept",
+   "newSentence": "The NHS says trimethoprim can be taken in pregnancy but is not usually recommended in the early weeks."
+  },
+  {
+   "id": "c58",
+   "where": "article.sections[3].body",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/NICE/MedlinePlus text states this: Returned NHS excerpt states this; paraphrased.",
+   "url": "https://www.nhs.uk/medicines/trimethoprim/pregnancy-breastfeeding-and-fertility-while-taking-trimethoprim/",
+   "action": "kept",
+   "newSentence": "It says there is no evidence that the medicine affects fertility in men or women."
+  },
+  {
+   "id": "c59",
+   "where": "article.sections[3].body",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/NICE/MedlinePlus text states this: Returned NHS excerpt states this; paraphrased.",
+   "url": "https://www.nhs.uk/medicines/trimethoprim/pregnancy-breastfeeding-and-fertility-while-taking-trimethoprim/",
+   "action": "kept",
+   "newSentence": "For someone trying to conceive who takes it daily, a doctor may switch antibiotic or prescribe high-dose folic acid."
+  },
+  {
+   "id": "c60",
+   "where": "article.sections[3].body",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/NICE/MedlinePlus text states this: Returned NHS excerpt states this; paraphrased.",
+   "url": "https://www.nhs.uk/medicines/trimethoprim/pregnancy-breastfeeding-and-fertility-while-taking-trimethoprim/",
+   "action": "kept",
+   "newSentence": "The NHS says small amounts pass into breast milk and that side effects in the baby are unlikely with short-term use."
+  },
+  {
+   "id": "c61",
+   "where": "article.sections[4].body",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/NICE/MedlinePlus text states this: Returned NHS excerpt states this; paraphrased.",
+   "url": "https://www.nhs.uk/medicines/trimethoprim/taking-trimethoprim-with-other-medicines-and-herbal-supplements/",
+   "action": "kept",
+   "newSentence": "The NHS names several medicines that interact with trimethoprim and can raise the chance of side effects."
+  },
+  {
+   "id": "c62",
+   "where": "article.sections[4].body",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/NICE/MedlinePlus text states this: Returned NHS excerpt states this; paraphrased.",
+   "url": "https://www.nhs.uk/medicines/trimethoprim/taking-trimethoprim-with-other-medicines-and-herbal-supplements/",
+   "action": "kept",
+   "newSentence": "These include rifampicin, warfarin, acenocoumarol, digoxin, phenytoin, repaglinide, pioglitazone and methotrexate."
+  },
+  {
+   "id": "c63",
+   "where": "article.sections[4].body",
+   "classification": "unsafe",
+   "evidence": "Reworded as suitable for headaches per NHS",
+   "url": "https://www.nhs.uk/medicines/trimethoprim/side-effects-of-trimethoprim/",
+   "action": "edited",
+   "newSentence": "see final.json"
+  },
+  {
+   "id": "c64",
+   "where": "article.sections[4].body",
+   "classification": "unsafe",
+   "evidence": "Source's 'safe' avoided",
+   "url": "https://www.nhs.uk/medicines/trimethoprim/taking-trimethoprim-with-other-medicines-and-herbal-supplements/",
+   "action": "edited",
+   "newSentence": "see final.json"
+  },
+  {
+   "id": "c65",
+   "where": "article.sections[4].body",
+   "classification": "unsupported",
+   "evidence": "'heavy drinking' not retrieved; NHS says best not to drink too much",
+   "url": "https://www.nhs.uk/medicines/trimethoprim/common-questions-about-trimethoprim/",
+   "action": "edited",
+   "newSentence": "see final.json"
+  },
+  {
+   "id": "c66",
+   "where": "article.sections[4].body",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/NICE/MedlinePlus text states this: Returned NHS excerpt states this; paraphrased.",
+   "url": "https://www.nhs.uk/medicines/trimethoprim/taking-trimethoprim-with-other-medicines-and-herbal-supplements/",
+   "action": "kept",
+   "newSentence": "Normal eating and drinking can continue."
+  },
+  {
+   "id": "c67",
+   "where": "article.sections[4].body",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/NICE/MedlinePlus text states this: Returned NHS excerpt states this; paraphrased.",
+   "url": "https://www.nhs.uk/medicines/trimethoprim/side-effects-of-trimethoprim/",
+   "action": "kept",
+   "newSentence": "For sickness, the NHS suggests taking the tablets with or after food."
+  },
+  {
+   "id": "c68",
+   "where": "article.sections[4].body",
+   "classification": "supported",
+   "evidence": "MedlinePlus: doses may need changing",
+   "url": "https://medlineplus.gov/druginfo/meds/a684025.html",
+   "action": "edited",
+   "newSentence": "see final.json"
+  },
+  {
+   "id": "c69",
+   "where": "article.faqs[0].a",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/NICE/MedlinePlus text states this: Returned NHS excerpt states this; paraphrased.",
+   "url": "https://www.nhs.uk/medicines/trimethoprim/pregnancy-breastfeeding-and-fertility-while-taking-trimethoprim/",
+   "action": "kept",
+   "newSentence": "The NHS says it can be taken in pregnancy but is not usually recommended in early pregnancy, because it can lower folic acid levels."
+  },
+  {
+   "id": "c70",
+   "where": "article.faqs[0].a",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/NICE/MedlinePlus text states this: Returned NHS excerpt states this; paraphrased.",
+   "url": "https://www.nhs.uk/medicines/trimethoprim/about-trimethoprim/",
+   "action": "kept",
+   "newSentence": "Anyone who is pregnant or trying to conceive is advised by the NHS to check with a doctor first."
+  },
+  {
+   "id": "c71",
+   "where": "article.faqs[0].a",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/NICE/MedlinePlus text states this: Returned NHS excerpt states this; paraphrased.",
+   "url": "https://www.nhs.uk/medicines/trimethoprim/pregnancy-breastfeeding-and-fertility-while-taking-trimethoprim/",
+   "action": "kept",
+   "newSentence": "A doctor may choose a different antibiotic or prescribe high-dose folic acid."
+  },
+  {
+   "id": "c72",
+   "where": "article.faqs[1].a",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/NICE/MedlinePlus text states this: Returned NHS excerpt states this; paraphrased.",
+   "url": "https://www.nhs.uk/medicines/trimethoprim/common-questions-about-trimethoprim/",
+   "action": "kept",
+   "newSentence": "Trimethoprim interferes with folic acid production in bacteria, and a long course can occasionally lower folic acid levels in the body."
+  },
+  {
+   "id": "c73",
+   "where": "article.faqs[1].a",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/NICE/MedlinePlus text states this: Returned NHS excerpt states this; paraphrased.",
+   "url": "https://www.nhs.uk/medicines/trimethoprim/who-can-and-cannot-take-trimethoprim/",
+   "action": "kept",
+   "newSentence": "Low folate levels are on the NHS list of reasons the medicine may not suit someone, and early pregnancy is a time of particular care."
+  },
+  {
+   "id": "c74",
+   "where": "article.faqs[2].a",
+   "classification": "unsafe",
+   "evidence": "Routing reworded",
+   "url": "https://www.nhs.uk/medicines/trimethoprim/side-effects-of-trimethoprim/",
+   "action": "edited",
+   "newSentence": "see final.json"
+  },
+  {
+   "id": "c75",
+   "where": "article.faqs[2].a",
+   "classification": "supported",
+   "evidence": "As above",
+   "url": "https://www.nhs.uk/medicines/trimethoprim/side-effects-of-trimethoprim/",
+   "action": "edited",
+   "newSentence": "see final.json"
+  },
+  {
+   "id": "c76",
+   "where": "article.faqs[3].a",
+   "classification": "supported",
+   "evidence": "NHS about page: alcohol can be drunk; side-effects page: best not to drink too much",
+   "url": "https://www.nhs.uk/medicines/trimethoprim/common-questions-about-trimethoprim/",
+   "action": "kept",
+   "newSentence": "The NHS says alcohol can be drunk during treatment, but it is best not to drink too much."
+  },
+  {
+   "id": "c77",
+   "where": "article.faqs[3].a",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/NICE/MedlinePlus text states this: Returned NHS excerpt states this; paraphrased.",
+   "url": "https://www.nhs.uk/medicines/trimethoprim/taking-trimethoprim-with-other-medicines-and-herbal-supplements/",
+   "action": "kept",
+   "newSentence": "It also says normal eating and drinking can continue."
+  },
+  {
+   "id": "c78",
+   "where": "article.faqs[4].a",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/NICE/MedlinePlus text states this: Returned NHS excerpt states this; paraphrased.",
+   "url": "https://www.nhs.uk/medicines/trimethoprim/about-trimethoprim/",
+   "action": "kept",
+   "newSentence": "No. The NHS notes that antibiotics do not work against colds, flu or other viral infections."
+  },
+  {
+   "id": "c79",
+   "where": "article.faqs[4].a",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/NICE/MedlinePlus text states this: Returned NHS excerpt states this; paraphrased.",
+   "url": "https://www.nhs.uk/medicines/trimethoprim/about-trimethoprim/",
+   "action": "kept",
+   "newSentence": "Trimethoprim is mainly used to treat and prevent urinary tract infections, and sometimes chest infections and acne."
+  },
+  {
+   "id": "c80",
+   "where": "article.keyFacts[0]",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/NICE/MedlinePlus text states this: Returned NHS excerpt states this; paraphrased.",
+   "url": "https://www.nhs.uk/medicines/trimethoprim/",
+   "action": "kept",
+   "newSentence": "Antibiotic"
+  },
+  {
+   "id": "c81",
+   "where": "article.keyFacts[1]",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/NICE/MedlinePlus text states this: Returned NHS excerpt states this; paraphrased.",
+   "url": "https://www.nhs.uk/medicines/trimethoprim/about-trimethoprim/",
+   "action": "kept",
+   "newSentence": "Treating and preventing urinary tract infections such as cystitis"
+  },
+  {
+   "id": "c82",
+   "where": "article.keyFacts[2]",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/NICE/MedlinePlus text states this: Returned NHS excerpt states this; paraphrased.",
+   "url": "https://www.nhs.uk/medicines/trimethoprim/common-questions-about-trimethoprim/",
+   "action": "kept",
+   "newSentence": "Interferes with folic acid production in bacteria"
+  },
+  {
+   "id": "c83",
+   "where": "article.keyFacts[3]",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/NICE/MedlinePlus text states this: Returned NHS excerpt states this; paraphrased.",
+   "url": "https://www.nhs.uk/medicines/trimethoprim/pregnancy-breastfeeding-and-fertility-while-taking-trimethoprim/",
+   "action": "kept",
+   "newSentence": "Not usually recommended in early pregnancy; low folate levels are a reason it may not suit"
+  },
+  {
+   "id": "c84",
+   "where": "article.keyFacts[4]",
+   "classification": "unsafe",
+   "evidence": "Routing reworded",
+   "url": "https://www.nhs.uk/medicines/trimethoprim/side-effects-of-trimethoprim/",
+   "action": "edited",
+   "newSentence": "see final.json"
+  },
+  {
+   "id": "c85",
+   "where": "article.keyFacts[5]",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/NICE/MedlinePlus text states this: Returned NHS excerpt states this; paraphrased.",
+   "url": "https://www.nhs.uk/medicines/trimethoprim/about-trimethoprim/",
+   "action": "kept",
+   "newSentence": "On prescription in the UK"
+  }
+ ],
+ "notes": "NICE NG109, emc and NHS England case-study claims rest on search summaries, not page text. 'NHS 111 or the GP the same day' replaced by NHS wording 'NHS 111 or a doctor straight away'. Prescription status and tablet/liquid forms: NHS About page and emc suspension SmPC. cautions[8] kept; cautions[9] alcohol reworded; 'safe' wording removed from herbal caution. Absence-claim monitoring sentence removed."
+}

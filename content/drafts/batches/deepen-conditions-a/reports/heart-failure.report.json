@@ -1,0 +1,603 @@
+{
+ "id": "heart-failure",
+ "searchesUsed": 16,
+ "counts": {
+  "supported": 40,
+  "textbook": 1,
+  "unsupported": 30,
+  "wrong": 1,
+  "unsafe": 0,
+  "unchecked": 0
+ },
+ "claims": [
+  {
+   "id": "c01",
+   "classification": "supported",
+   "evidence": "NHS: heart cannot pump blood properly; NHLBI: cannot pump enough blood",
+   "url": "https://www.nhs.uk/conditions/heart-failure/",
+   "action": "kept"
+  },
+  {
+   "id": "c02",
+   "classification": "supported",
+   "evidence": "NHS: does not mean the heart has stopped or is about to stop working",
+   "url": "https://www.nhs.uk/conditions/heart-failure/",
+   "action": "kept"
+  },
+  {
+   "id": "c03",
+   "classification": "supported",
+   "evidence": "NHS symptom list: breathlessness in everyday activity or lying down, tiredness, light-headedness, swollen feet/ankles/legs/tummy",
+   "url": "https://www.nhs.uk/conditions/heart-failure/",
+   "action": "edited",
+   "newSentence": "Symptoms the NHS lists include breathlessness during everyday activity or when lying down, unusual tiredness, light-headedness, swelling in the feet, ankles, legs or tummy, sudden weight gain and a cough at night."
+  },
+  {
+   "id": "c04",
+   "classification": "unsupported",
+   "evidence": "NHS says night-time coughing; MedlinePlus lists a pulse that feels fast or irregular. 'Keeps coming back' is a gloss not in the text",
+   "url": "https://medlineplus.gov/ency/article/000158.htm",
+   "action": "edited",
+   "newSentence": "MedlinePlus adds that the pulse may feel fast or irregular."
+  },
+  {
+   "id": "c05",
+   "classification": "unsupported",
+   "evidence": "Misattributed: NHLBI did not say 'lifelong' (NHS says treatment usually for the rest of your life); NHLBI says symptoms usually get worse as the heart grows weaker; NHS 111 Wales says usually gets slowly worse",
+   "url": "https://www.nhlbi.nih.gov/health/heart-failure/symptoms",
+   "action": "edited",
+   "newSentence": "The US National Heart, Lung, and Blood Institute (NHLBI) says symptoms usually get worse as the heart grows weaker."
+  },
+  {
+   "id": "c06",
+   "classification": "supported",
+   "evidence": "NHLBI living-with: weight gain, ankle swelling or increasing breathlessness may mean fluid is building up",
+   "url": "https://www.nhlbi.nih.gov/health/heart-failure/living-with",
+   "action": "kept"
+  },
+  {
+   "id": "c07",
+   "classification": "unsupported",
+   "evidence": "Not retrieved (confusion, worsening cough, abdomen swelling as fluid signs); NHLBI lists abdomen swelling only for right-sided failure",
+   "url": "https://www.nhlbi.nih.gov/health/heart-failure/symptoms",
+   "action": "removed"
+  },
+  {
+   "id": "c08",
+   "classification": "unsupported",
+   "evidence": "Not retrieved: no text said left-sided is the more common form",
+   "url": "https://www.nhlbi.nih.gov/health/heart-failure",
+   "action": "removed"
+  },
+  {
+   "id": "c09",
+   "classification": "supported",
+   "evidence": "NHLBI diagnosis: ejection fraction is the percent of blood in the left ventricle pumped out with each heartbeat; reduced/preserved categories",
+   "url": "https://www.nhlbi.nih.gov/health/heart-failure/diagnosis",
+   "action": "edited",
+   "newSentence": "NHLBI describes two forms of left-sided heart failure, named after the ejection fraction. This is the percentage of the blood in the left ventricle that is pumped out with each heartbeat."
+  },
+  {
+   "id": "c10",
+   "classification": "unsupported",
+   "evidence": "NHLBI: weakened heart muscle is the usual driver of reduced EF; 'cannot pump enough blood to the rest of the body' not retrieved",
+   "url": "https://www.nhlbi.nih.gov/health/heart-failure/causes",
+   "action": "edited",
+   "newSentence": "In heart failure with reduced ejection fraction, weakened heart muscle is the usual driver."
+  },
+  {
+   "id": "c11",
+   "classification": "unsupported",
+   "evidence": "NHLBI: ventricle is stiff rather than weak so it cannot fill with enough blood; 'relax between heartbeats' not retrieved",
+   "url": "https://www.nhlbi.nih.gov/health/heart-failure/causes",
+   "action": "edited",
+   "newSentence": "In heart failure with preserved ejection fraction, the ventricle is stiff rather than weak, so it cannot fill with enough blood to pump out to the body."
+  },
+  {
+   "id": "c12",
+   "classification": "unsupported",
+   "evidence": "BHF page not returned by search; mildly reduced group only in research papers, not an official body. Removed",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c13",
+   "classification": "supported",
+   "evidence": "NHLBI: left-sided failure is the main cause of right-sided failure",
+   "url": "https://www.nhlbi.nih.gov/health/heart-failure/causes",
+   "action": "kept"
+  },
+  {
+   "id": "c14",
+   "classification": "unsupported",
+   "evidence": "'Progress to the right' is an inference; NHLBI text: pressure backs up into the lungs and strains the right side",
+   "url": "https://www.nhlbi.nih.gov/health/heart-failure/causes",
+   "action": "edited",
+   "newSentence": "NHLBI says left-sided heart failure is the main cause of right-sided heart failure, because pressure backs up into the lungs and strains the right side."
+  },
+  {
+   "id": "c15",
+   "classification": "unsupported",
+   "evidence": "Chronic cause wording not retrieved; NHLBI lists long-term conditions (obesity, high blood pressure, diabetes, sleep apnoea, kidney disease) as contributors. Removed for length",
+   "url": "https://www.nhlbi.nih.gov/health/heart-failure/causes",
+   "action": "removed"
+  },
+  {
+   "id": "c16",
+   "classification": "supported",
+   "evidence": "NHLBI causes: acute can be caused by injury or infection that damages the heart, heart attack, blood clot in the lung. Removed later for length only",
+   "url": "https://www.nhlbi.nih.gov/health/heart-failure/causes",
+   "action": "removed"
+  },
+  {
+   "id": "c17",
+   "classification": "supported",
+   "evidence": "NHS: GP should offer checks and a blood test to see how well the heart is working",
+   "url": "https://www.nhs.uk/conditions/heart-failure/diagnosis/",
+   "action": "edited",
+   "newSentence": "The NHS says a GP should check the symptoms and offer a blood test to see how well the heart is working."
+  },
+  {
+   "id": "c18",
+   "classification": "supported",
+   "evidence": "NHS England: GPs should refer patients with suspected heart failure for an urgent NT-proBNP blood test ('natriuretic peptide' wording not retrieved)",
+   "url": "https://www.england.nhs.uk/long-read/enhancing-gp-direct-access-to-diagnostic-tests-for-patients-with-suspected-chronic-obstructive-pulmonary-disease-asthma-or-heart-failure/",
+   "action": "edited",
+   "newSentence": "NHS England advises GPs to arrange an NT-proBNP blood test for people with suspected heart failure."
+  },
+  {
+   "id": "c19",
+   "classification": "supported",
+   "evidence": "NICE: NT-proBNP thresholds set referral for specialist assessment and echocardiography within 2 or 6 weeks; higher levels sooner; low level in untreated person makes HF less likely (numbers left out of prose)",
+   "url": "https://www.nice.org.uk/guidance/ng106/chapter/recommendations",
+   "action": "edited",
+   "newSentence": "NICE says a low result in a person who is not on treatment makes heart failure less likely, while higher results lead to faster referral for specialist assessment and an echocardiogram."
+  },
+  {
+   "id": "c20",
+   "classification": "unsupported",
+   "evidence": "NHS page 'specialist heart failure team' wording not retrieved; NICE/NHS England say elevated results lead to specialist assessment",
+   "url": "https://www.nice.org.uk/guidance/ng106/chapter/recommendations",
+   "action": "removed"
+  },
+  {
+   "id": "c21",
+   "classification": "supported",
+   "evidence": "NHS: blood tests, ECG, echocardiogram, breathing tests, chest X-ray; main page adds urine and MRI",
+   "url": "https://www.nhs.uk/conditions/heart-failure/diagnosis/",
+   "action": "edited",
+   "newSentence": "The NHS lists blood tests, an electrocardiogram (ECG), an echocardiogram, breathing tests and a chest X-ray among the tests used. Its main heart failure page also mentions urine tests and MRI scans."
+  },
+  {
+   "id": "c22",
+   "classification": "textbook",
+   "evidence": "Plain undisputed fact",
+   "url": "",
+   "action": "kept"
+  },
+  {
+   "id": "c23",
+   "classification": "unsupported",
+   "evidence": "NICE: echo used to exclude important valve disease among other purposes; left-ventricle assessment wording not confirmed",
+   "url": "https://www.nice.org.uk/guidance/ng106/chapter/recommendations",
+   "action": "edited",
+   "newSentence": "NICE says it is used to exclude important valve disease, among other purposes."
+  },
+  {
+   "id": "c24",
+   "classification": "supported",
+   "evidence": "NHS: medicines are the main treatment; surgery is an option",
+   "url": "https://www.nhs.uk/conditions/heart-failure/treatment/",
+   "action": "edited",
+   "newSentence": "The NHS lists healthy lifestyle changes, medicines, implanted devices and surgery among the treatments for heart failure, and describes medicines as the main one."
+  },
+  {
+   "id": "c25",
+   "classification": "supported",
+   "evidence": "NHS treatment: healthy lifestyle changes listed among main treatments",
+   "url": "https://www.nhs.uk/conditions/heart-failure/treatment/",
+   "action": "edited",
+   "newSentence": "(merged into previous sentence)"
+  },
+  {
+   "id": "c26",
+   "classification": "unsupported",
+   "evidence": "NHS: treatment usually continues for the rest of life (supported); 'two or three different medicines' not retrieved",
+   "url": "https://www.nhs.uk/conditions/heart-failure/treatment/",
+   "action": "edited",
+   "newSentence": "The NHS says treatment will usually need to continue for the rest of life."
+  },
+  {
+   "id": "c27",
+   "classification": "supported",
+   "evidence": "NHS: devices implanted in the chest to control heart rhythm",
+   "url": "https://www.nhs.uk/conditions/heart-failure/treatment/",
+   "action": "edited",
+   "newSentence": "Implanted devices can help control or monitor the heart rhythm."
+  },
+  {
+   "id": "c28",
+   "classification": "supported",
+   "evidence": "Retrieved: CRT devices described as most common; combination devices called CRT-Ds. Replaced by device list (pacemakers, CRT, ICDs) for accuracy",
+   "url": "https://www.nhs.uk/conditions/heart-failure/treatment/",
+   "action": "edited",
+   "newSentence": "They include pacemakers, cardiac resynchronisation therapy (CRT) devices and implantable cardioverter defibrillators."
+  },
+  {
+   "id": "c29",
+   "classification": "supported",
+   "evidence": "NHS: repair/replace valves, improve blood flow from blocked arteries, LVAD, heart transplant for severe cases",
+   "url": "https://www.nhs.uk/conditions/heart-failure/treatment/",
+   "action": "edited",
+   "newSentence": "Surgery can repair or replace damaged valves or improve blood flow from blocked arteries. For severe cases, options include a left ventricular assist device and a heart transplant."
+  },
+  {
+   "id": "c30",
+   "classification": "supported",
+   "evidence": "NHS: transplant may be needed in severe HF not treated effectively by medicines or other surgery; serious risks; not suitable for everyone",
+   "url": "https://www.nhs.uk/conditions/heart-failure/treatment/",
+   "action": "edited",
+   "newSentence": "The NHS says a transplant may be needed when severe heart failure cannot be treated effectively with medicines or other surgery, and that it carries serious risks and is not suitable for everyone."
+  },
+  {
+   "id": "c31",
+   "classification": "unsupported",
+   "evidence": "Retrieved: patients should be offered an exercise-based cardiac rehabilitation programme (often education and emotional support). 'Everyone diagnosed' not retrieved",
+   "url": "https://www.nhs.uk/conditions/heart-failure/living-with/",
+   "action": "edited",
+   "newSentence": "The NHS says people should be offered an exercise-based cardiac rehabilitation programme, which often includes education and emotional support."
+  },
+  {
+   "id": "c32",
+   "classification": "supported",
+   "evidence": "NHS: weigh yourself regularly / daily weighing so weight changes caught quickly",
+   "url": "https://www.nhs.uk/conditions/heart-failure/living-with/",
+   "action": "edited",
+   "newSentence": "Care teams may suggest daily weighing so that changes in weight are caught quickly, and the NHS lists regular monitoring as part of care."
+  },
+  {
+   "id": "c33",
+   "classification": "supported",
+   "evidence": "NHS treatment: staying active, eating well, quitting smoking, healthy weight (other NHS page), medicines as prescribed",
+   "url": "https://www.nhs.uk/conditions/heart-failure/treatment/",
+   "action": "edited",
+   "newSentence": "It describes taking medicines as prescribed, weighing regularly, staying active, eating well and stopping smoking as helpful."
+  },
+  {
+   "id": "c34",
+   "classification": "unsupported",
+   "evidence": "Only 'cutting salt' retrieved from NHS; 'not adding at table or in cooking' not retrieved. NHLBI: may be asked to limit salt and liquids",
+   "url": "https://www.nhlbi.nih.gov/health/heart-failure/living-with",
+   "action": "edited",
+   "newSentence": "NHLBI says people may be asked to limit salt and liquids to reduce fluid build-up."
+  },
+  {
+   "id": "c35",
+   "classification": "wrong",
+   "evidence": "Contradicted: NHS living-with says people can usually continue to drink within recommended limits and may be advised to stop only if HF is directly related to alcohol; 'very little' is not what it says",
+   "url": "https://www.nhs.uk/conditions/heart-failure/living-with/",
+   "action": "edited",
+   "newSentence": "The NHS says people can usually still drink alcohol within the recommended limits, but may be advised to stop completely if their heart failure is directly related to drinking."
+  },
+  {
+   "id": "c36",
+   "classification": "supported",
+   "evidence": "NHS: everyone with heart failure should be offered the annual flu vaccine and one-off pneumococcal vaccination",
+   "url": "https://www.nhs.uk/conditions/heart-failure/living-with/",
+   "action": "kept"
+  },
+  {
+   "id": "c37",
+   "classification": "unsupported",
+   "evidence": "A six-month interval was reported by one search summary but not by another; numeric schedule not allowed in prose. Removed",
+   "url": "https://www.nhs.uk/conditions/heart-failure/living-with/",
+   "action": "removed"
+  },
+  {
+   "id": "c38",
+   "classification": "supported",
+   "evidence": "NHLBI living-with: may cause fear, anxiety, depression and stress",
+   "url": "https://www.nhlbi.nih.gov/health/heart-failure/living-with",
+   "action": "edited",
+   "newSentence": "NHLBI says living with heart failure may cause fear, anxiety, depression and stress, and that relaxation techniques, counselling and support groups can help lower stress and anxiety."
+  },
+  {
+   "id": "c39",
+   "classification": "unsupported",
+   "evidence": "'These feelings are common' not retrieved",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c40",
+   "classification": "unsupported",
+   "evidence": "Retrieved: worries can be raised with GP or care team; heart support group may be useful; 'should be told if they make everyday life hard' not retrieved",
+   "url": "https://www.nhs.uk/conditions/heart-failure/living-with/",
+   "action": "edited",
+   "newSentence": "The NHS says worries can be raised with the GP or care team, and that a heart support group may be useful."
+  },
+  {
+   "id": "c41",
+   "classification": "unsupported",
+   "evidence": "Retrieved only that it is very difficult to tell how HF will progress in an individual (NHS 111 Wales), not about length of life",
+   "url": "https://111.wales.nhs.uk/encyclopaedia/h/article/heartfailure",
+   "action": "edited",
+   "newSentence": "NHS 111 Wales describes heart failure as a long-term condition that usually gets slowly worse over time, although it is very difficult to tell how it will progress in any one person."
+  },
+  {
+   "id": "c42",
+   "classification": "unsupported",
+   "evidence": "Not retrieved (cause, age, symptoms, general health as outlook factors)",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c43",
+   "classification": "unsupported",
+   "evidence": "Not retrieved (risk of sudden death from dangerous rhythm)",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c44",
+   "classification": "supported",
+   "evidence": "NHS: no cure for most people; treatment keeps symptoms under control possibly for many years; NHLBI: higher quality of life",
+   "url": "https://www.nhs.uk/conditions/heart-failure/treatment/",
+   "action": "edited",
+   "newSentence": "The NHS says that for most people heart failure is a long-term condition that cannot be cured, but treatment can help keep the symptoms under control, possibly for many years. NHLBI says treatment can help many people have a higher quality of life."
+  },
+  {
+   "id": "c45",
+   "classification": "unsupported",
+   "evidence": "NHS: book a GP appointment if you have symptoms (supported); 'routine GP appointment is the usual first step' is a gloss",
+   "url": "https://www.nhs.uk/conditions/heart-failure/",
+   "action": "edited",
+   "newSentence": "The NHS advises booking a GP appointment for symptoms of heart failure."
+  },
+  {
+   "id": "c46",
+   "classification": "supported",
+   "evidence": "NHS: urgent GP or NHS 111 for breathless lying down or in everyday activity, frothy pink phlegm, sudden weight gain",
+   "url": "https://www.nhs.uk/conditions/heart-failure/",
+   "action": "edited",
+   "newSentence": "It advises asking for an urgent GP appointment or contacting NHS 111 for breathlessness when lying down or during everyday activity, coughing up frothy pink phlegm, or sudden weight gain."
+  },
+  {
+   "id": "c47",
+   "classification": "supported",
+   "evidence": "NHS: 999 for severe breathlessness, pale/blue/grey lips or skin, passed out and not responding normally",
+   "url": "https://www.nhs.uk/conditions/heart-failure/",
+   "action": "edited",
+   "newSentence": "The NHS says to call 999 for severe breathlessness, such as gasping, choking or being unable to get words out, for pale, blue or grey lips or skin, or if someone has passed out and is not responding normally."
+  },
+  {
+   "id": "c48",
+   "classification": "supported",
+   "evidence": "NHS: do not drive yourself to A&E",
+   "url": "https://www.nhs.uk/conditions/heart-failure/",
+   "action": "edited",
+   "newSentence": "It advises people not to drive themselves to A&E."
+  },
+  {
+   "id": "c49",
+   "classification": "supported",
+   "evidence": "FAQ1 'No.' follows from NHS: does not mean the heart has stopped",
+   "url": "https://www.nhs.uk/conditions/heart-failure/",
+   "action": "kept"
+  },
+  {
+   "id": "c50",
+   "classification": "supported",
+   "evidence": "NHS: heart cannot pump blood properly but has not stopped working",
+   "url": "https://www.nhs.uk/conditions/heart-failure/",
+   "action": "edited",
+   "newSentence": "The NHS says heart failure means the heart cannot pump blood properly, but it does not mean the heart has stopped working or is about to stop working."
+  },
+  {
+   "id": "c51",
+   "classification": "supported",
+   "evidence": "NHS treatment: treatment can help keep symptoms under control, possibly for many years ('possibly' restored)",
+   "url": "https://www.nhs.uk/conditions/heart-failure/treatment/",
+   "action": "edited",
+   "newSentence": "For most people it is a long-term condition, and the NHS says treatment can help keep symptoms under control, possibly for many years."
+  },
+  {
+   "id": "c52",
+   "classification": "supported",
+   "evidence": "NHS: cannot be cured for most people",
+   "url": "https://www.nhs.uk/conditions/heart-failure/treatment/",
+   "action": "edited",
+   "newSentence": "The NHS says that for most people heart failure is a long-term condition that cannot be cured."
+  },
+  {
+   "id": "c53",
+   "classification": "supported",
+   "evidence": "NHS: treatment can keep symptoms under control, possibly for many years",
+   "url": "https://www.nhs.uk/conditions/heart-failure/treatment/",
+   "action": "edited",
+   "newSentence": "Treatment can help keep symptoms under control, possibly for many years."
+  },
+  {
+   "id": "c54",
+   "classification": "unsupported",
+   "evidence": "Options list supported; 'a clinician decides which suit each person' is author signposting not in retrieved text",
+   "url": "https://www.nhs.uk/conditions/heart-failure/treatment/",
+   "action": "removed"
+  },
+  {
+   "id": "c55",
+   "classification": "supported",
+   "evidence": "NHS: treatment usually continues for the rest of your life",
+   "url": "https://www.nhs.uk/conditions/heart-failure/treatment/",
+   "action": "edited",
+   "newSentence": "The NHS says treatment will usually need to continue for the rest of life."
+  },
+  {
+   "id": "c56",
+   "classification": "supported",
+   "evidence": "NHS: treatment usually continues for the rest of your life",
+   "url": "https://www.nhs.uk/conditions/heart-failure/treatment/",
+   "action": "edited",
+   "newSentence": "The NHS says treatment will usually need to continue for the rest of life."
+  },
+  {
+   "id": "c57",
+   "classification": "unsupported",
+   "evidence": "Medicines main treatment supported; 'two or three types' not retrieved",
+   "url": "https://www.nhs.uk/conditions/heart-failure/treatment/",
+   "action": "edited",
+   "newSentence": "It describes medicines as the main treatment, alongside healthy lifestyle changes."
+  },
+  {
+   "id": "c58",
+   "classification": "unsupported",
+   "evidence": "'At least every six months' not reliably retrieved and is a schedule; NHS lists regular monitoring and daily weighing",
+   "url": "https://www.nhs.uk/conditions/heart-failure/living-with/",
+   "action": "edited",
+   "newSentence": "Care teams may suggest daily weighing so that changes in weight are caught quickly, and the NHS lists regular monitoring as part of care."
+  },
+  {
+   "id": "c59",
+   "classification": "supported",
+   "evidence": "NHS: GP should offer checks and a blood test",
+   "url": "https://www.nhs.uk/conditions/heart-failure/diagnosis/",
+   "action": "edited",
+   "newSentence": "A GP usually starts by checking the symptoms and offering a blood test."
+  },
+  {
+   "id": "c60",
+   "classification": "unsupported",
+   "evidence": "'Specialist heart failure team' not retrieved; NICE links raised NT-proBNP to specialist assessment and echocardiography",
+   "url": "https://www.nice.org.uk/guidance/ng106/chapter/recommendations",
+   "action": "edited",
+   "newSentence": "NICE links a raised NT-proBNP result to referral for specialist assessment and an echocardiogram."
+  },
+  {
+   "id": "c61",
+   "classification": "unsupported",
+   "evidence": "Pumping Marvellous not retrieved; BHF page not returned. NHS: heart support group may be useful; carers can attend appointments",
+   "url": "https://www.nhs.uk/conditions/heart-failure/living-with/",
+   "action": "edited",
+   "newSentence": "The NHS says worries can be raised with the GP or care team, and that a heart support group may be useful. Carers can attend appointments too."
+  },
+  {
+   "id": "c62",
+   "classification": "unsupported",
+   "evidence": "'Everyone diagnosed' not retrieved; NHS: patients should be offered exercise-based cardiac rehabilitation",
+   "url": "https://www.nhs.uk/conditions/heart-failure/living-with/",
+   "action": "edited",
+   "newSentence": "The NHS says people with heart failure should be offered an exercise-based cardiac rehabilitation programme, which often includes education and emotional support."
+  },
+  {
+   "id": "c63",
+   "classification": "supported",
+   "evidence": "NHS: exercise-based programme",
+   "url": "https://www.nhs.uk/conditions/heart-failure/living-with/",
+   "action": "kept"
+  },
+  {
+   "id": "c64",
+   "classification": "supported",
+   "evidence": "NHS: staying active, eating well, quitting smoking; healthy weight (NHS)",
+   "url": "https://www.nhs.uk/conditions/heart-failure/treatment/",
+   "action": "removed"
+  },
+  {
+   "id": "c65",
+   "classification": "supported",
+   "evidence": "NHS: flu and pneumococcal vaccines should be offered",
+   "url": "https://www.nhs.uk/conditions/heart-failure/living-with/",
+   "action": "edited",
+   "newSentence": "The NHS says everyone with heart failure should be offered a flu vaccine every year and a one-off pneumococcal vaccine."
+  },
+  {
+   "id": "c66",
+   "classification": "supported",
+   "evidence": "keyFact: NHS says does not mean stopped",
+   "url": "https://www.nhs.uk/conditions/heart-failure/",
+   "action": "edited",
+   "newSentence": "The heart cannot pump blood properly; it has not stopped working."
+  },
+  {
+   "id": "c67",
+   "classification": "unsupported",
+   "evidence": "'Specialist heart failure team' not retrieved",
+   "url": "https://www.nice.org.uk/guidance/ng106/chapter/recommendations",
+   "action": "edited",
+   "newSentence": "A GP checks symptoms and offers a blood test; a raised result leads to specialist assessment."
+  },
+  {
+   "id": "c68",
+   "classification": "unsupported",
+   "evidence": "'Two or three types' not retrieved",
+   "url": "https://www.nhs.uk/conditions/heart-failure/treatment/",
+   "action": "edited",
+   "newSentence": "Medicines, with healthy lifestyle changes; implanted devices and surgery are also options."
+  },
+  {
+   "id": "c69",
+   "classification": "unsupported",
+   "evidence": "'Everyone diagnosed' not retrieved",
+   "url": "https://www.nhs.uk/conditions/heart-failure/living-with/",
+   "action": "edited",
+   "newSentence": "People should be offered an exercise-based cardiac rehabilitation programme."
+  },
+  {
+   "id": "c70",
+   "classification": "supported",
+   "evidence": "NHS: flu vaccine yearly and one-off pneumococcal",
+   "url": "https://www.nhs.uk/conditions/heart-failure/living-with/",
+   "action": "edited",
+   "newSentence": "A flu vaccine every year and a one-off pneumococcal vaccine should be offered."
+  },
+  {
+   "id": "c71",
+   "classification": "supported",
+   "evidence": "NHS 111 Wales/NHLBI: usually gets slowly worse; NHS: lifelong treatment; NHLBI: quality of life",
+   "url": "https://111.wales.nhs.uk/encyclopaedia/h/article/heartfailure",
+   "action": "edited",
+   "newSentence": "Usually long-term and not curable; treatment can keep symptoms under control, possibly for many years."
+  },
+  {
+   "id": "c72",
+   "classification": "supported",
+   "evidence": "NHS: 999 for severe breathlessness, pale/blue/grey lips or skin, passed out",
+   "url": "https://www.nhs.uk/conditions/heart-failure/",
+   "action": "edited",
+   "newSentence": "Call 999 for severe breathlessness, pale, blue or grey lips or skin, or if someone has passed out."
+  },
+  {
+   "id": "c73",
+   "classification": "supported",
+   "evidence": "NHLBI: 'Heart failure can develop suddenly (the acute kind) or over time as your heart gets weaker (the chronic kind). It can affect one or both sides.'",
+   "url": "https://www.nhlbi.nih.gov/health/heart-failure",
+   "action": "kept",
+   "newSentence": "NHLBI says heart failure can develop suddenly, which is called acute, or over time as the heart gets weaker, which is called chronic. It can affect one or both sides of the heart."
+  },
+  {
+   "id": "c74",
+   "classification": "supported",
+   "evidence": "NHLBI causes page: congenital heart defects, abnormal heart valves, lung damage such as COPD",
+   "url": "https://www.nhlbi.nih.gov/health/heart-failure/causes",
+   "action": "kept",
+   "newSentence": "Other causes of right-sided heart failure include congenital heart defects, abnormal heart valves and lung damage such as chronic obstructive pulmonary disease."
+  },
+  {
+   "id": "c75",
+   "classification": "supported",
+   "evidence": "NHS treatment: diuretics reduce fluid build-up, ankle swelling and breathlessness; beta blockers slow the heart; medicines the main treatment",
+   "url": "https://www.nhs.uk/conditions/heart-failure/treatment/",
+   "action": "kept",
+   "newSentence": "It says diuretics reduce fluid build-up, ankle swelling and breathlessness, and that beta blockers slow the heart."
+  },
+  {
+   "id": "c76",
+   "classification": "supported",
+   "evidence": "MedlinePlus lists a pulse that feels fast or irregular; text added in c04 edit",
+   "url": "https://medlineplus.gov/ency/article/000158.htm",
+   "action": "kept",
+   "newSentence": "MedlinePlus adds that the pulse may feel fast or irregular."
+  }
+ ],
+ "notes": "Counts refer to the 72 first-pass sentences (section sentences, FAQ answers, keyFacts values). Added replacement sentences c73-c76 are supported. Search summaries blend pages so attributions are to the page whose title matched the query; the 'every six months' monitoring claim was reported by one summary and denied by another, so the number was dropped. Contradictions with the EXISTING page entry (not edited): (1) seekCare gives 'rapid weight gain (more than 2 kg in three days)': that threshold was not retrieved in any NHS/NHLBI text (NHS says only 'sudden weight gain'); also seekCare says 'seek urgent help' without naming 999 vs NHS 111/same-day GP, and lists 'pink frothy sputum, chest pain, fainting' without routes. (2) overview/definition: 'syndrome ... or can do so only at raised filling pressures', 'Coronary artery disease is the commonest cause', and the listed risk of cocaine use, heart tumours and congenital disease were not retrieved in this pass; unsupported here, not shown contradicted. (3) overview says 'There is no cure'; NHS says no cure for most people (a cure may be possible with a treatable cause such as faulty valves, per one NHS-affiliated summary). (4) treatment text 'rarely, transplantation' and 'ACE inhibitors or ARNI, beta blockers, mineralocorticoid antagonists and SGLT2 inhibitors prolong life' not retrieved as worded (NHS names ACE inhibitors, beta blockers, diuretics, SGLT2 inhibitors only). (5) 'Pitting ankle oedema', 'Third heart sound', 'Raised JVP' signs and 'Enlarged liver' not retrieved. (6) diagnosis states 'BNP is raised' without NT-proBNP/NICE nuance; the draft also wrongly attributed 'lifelong treatment' to NHLBI and had said alcohol 'very little' whereas NHS says drinking within limits is usually possible."
+}

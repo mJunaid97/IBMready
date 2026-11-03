@@ -1,0 +1,92 @@
+{
+  "id": "who-heat-maternal-child-indicators",
+  "searchesUsed": 3,
+  "counts": {
+    "supported": 3,
+    "textbook": 0,
+    "unsupported": 5,
+    "wrong": 0,
+    "unsafe": 0,
+    "unchecked": 0
+  },
+  "claims": [
+    {
+      "id": "c01",
+      "where": "summary",
+      "sentence": "On 21 October 2026 the WHO and partners released the first set of priority indicators for tracking how extreme heat affects pregnant women, newborns and children.",
+      "classification": "unsupported",
+      "evidence": "Date 21 Oct 2026 supported by URL slug; WHO framework on pregnant women, newborns, children confirmed. 'first' set not stated; partners not stated.",
+      "url": "https://www.who.int/news/item/21-10-2026-new-global-framework-launched-to-track-increasing-health-risks-of-extreme-heat-for-pregnant-women--newborns-and-children",
+      "action": "edited",
+      "newSentence": "On 21 October 2026 the WHO released a new global framework of priority indicators for tracking the health risks of extreme heat for pregnant women, newborns and children."
+    },
+    {
+      "id": "c02",
+      "where": "keyPoints[0]",
+      "sentence": "The WHO, WMO, UNICEF and UNFPA jointly released the indicators on 21 October 2026.",
+      "classification": "unsupported",
+      "evidence": "No retrieved text names WMO, UNICEF or UNFPA as joint releasers.",
+      "url": "https://www.who.int/news/item/21-10-2026-new-global-framework-launched-to-track-increasing-health-risks-of-extreme-heat-for-pregnant-women--newborns-and-children",
+      "action": "edited",
+      "newSentence": "The WHO released the framework on 21 October 2026."
+    },
+    {
+      "id": "c03",
+      "where": "keyPoints[1]",
+      "sentence": "The report recommends that countries monitor preterm births, stillbirths, low birthweight, hypertension in pregnancy, child deaths and health-facility visits during extreme heat.",
+      "classification": "supported",
+      "evidence": "'recommends that countries monitor preterm births, stillbirths, low birthweight, pregnancy hypertension, child deaths and health-facility visits during extreme heat'.",
+      "url": "https://www.who.int/news/item/21-10-2026-new-global-framework-launched-to-track-increasing-health-risks-of-extreme-heat-for-pregnant-women--newborns-and-children",
+      "action": "kept"
+    },
+    {
+      "id": "c04",
+      "where": "keyPoints[2]",
+      "sentence": "The WHO says the data can help health authorities prepare facilities for higher demand and identify the communities most at risk.",
+      "classification": "unsupported",
+      "evidence": "Search explicitly found nothing on facilities or higher demand; 'communities most at risk' not found. Retrieved text says routine health and heat-exposure data can identify possible heat-related signals.",
+      "url": "https://www.who.int/news/item/21-10-2026-new-global-framework-launched-to-track-increasing-health-risks-of-extreme-heat-for-pregnant-women--newborns-and-children",
+      "action": "edited",
+      "newSentence": "The WHO says combining routine health data with heat-exposure data can help countries spot unusual changes during extreme heat and investigate them."
+    },
+    {
+      "id": "c05",
+      "where": "body[0].p0.s0",
+      "sentence": "On 21 October 2026 the World Health Organization (WHO), the World Meteorological Organization, UNICEF and UNFPA jointly released the first set of priority indicators for monitoring the effects of extreme heat on maternal, newborn and child health.",
+      "classification": "unsupported",
+      "evidence": "Date and WHO authorship supported; 'World Meteorological Organization, UNICEF and UNFPA jointly' and 'first set' not found.",
+      "url": "https://www.who.int/news/item/21-10-2026-new-global-framework-launched-to-track-increasing-health-risks-of-extreme-heat-for-pregnant-women--newborns-and-children",
+      "action": "edited",
+      "newSentence": "On 21 October 2026 the World Health Organization (WHO) released a new global framework of priority indicators for monitoring the effects of extreme heat on maternal, newborn and child health."
+    },
+    {
+      "id": "c06",
+      "where": "body[0].p0.s1",
+      "sentence": "The report recommends that countries monitor preterm births, stillbirths, low birthweight, hypertension in pregnancy, child deaths and health-facility visits during extreme heat.",
+      "classification": "supported",
+      "evidence": "Same indicator list as c03 in WHO news item.",
+      "url": "https://www.who.int/news/item/21-10-2026-new-global-framework-launched-to-track-increasing-health-risks-of-extreme-heat-for-pregnant-women--newborns-and-children",
+      "action": "kept"
+    },
+    {
+      "id": "c07",
+      "where": "body[1].p0.s0",
+      "sentence": "According to the release, the data can help health authorities get facilities ready for higher demand and identify the communities most at risk.",
+      "classification": "unsupported",
+      "evidence": "No retrieved text mentions preparing facilities for higher demand or identifying communities most at risk.",
+      "url": "https://www.who.int/news/item/21-10-2026-new-global-framework-launched-to-track-increasing-health-risks-of-extreme-heat-for-pregnant-women--newborns-and-children",
+      "action": "edited",
+      "newSentence": "According to the release, routine health data and heat-exposure data such as air temperature can help identify possible heat-related signals."
+    },
+    {
+      "id": "c08",
+      "where": "body[1].p0.s1",
+      "sentence": "A companion publication organises the indicators across four areas: routine maternal, newborn and child health monitoring, public health and surveillance systems, climate and health monitoring, and measures of heat exposure.",
+      "classification": "supported",
+      "evidence": "WHO publication 'Priority indicators to monitor the impact of heat exposure on maternal, newborn and child health' organised across four domains: routine MNCH monitoring, public health and surveillance systems, climate and health monitoring, measures of heat exposure. Whether the news item calls it 'companion' not seen.",
+      "url": "https://www.who.int/publications/i/item/9789240125063",
+      "action": "kept"
+    }
+  ],
+  "notes": "One search errored on a usage limit (counted). Retrieved only search summaries of the WHO news item. Not confirmed anywhere: 'first' set of indicators, WMO/UNICEF/UNFPA as joint releasers, 'facilities ready for higher demand', 'communities most at risk'. A related WHO scoping-meeting report on priority indicators dates from 2023/2024, so 'first' is doubtful. Retrieved text also lists school attendance as a recommended item, which the brief omits (not an error)."
+}

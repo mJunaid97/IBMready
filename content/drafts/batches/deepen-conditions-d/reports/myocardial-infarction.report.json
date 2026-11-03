@@ -1,0 +1,572 @@
+{
+ "id": "myocardial-infarction",
+ "searchesUsed": 11,
+ "counts": {
+  "supported": 34,
+  "textbook": 1,
+  "unsupported": 27,
+  "wrong": 0,
+  "unsafe": 0,
+  "unchecked": 0
+ },
+ "claims": [
+  {
+   "id": "c01",
+   "where": "article.sections[0]",
+   "classification": "unsupported",
+   "evidence": "Retrieved NHS text: call 999 for chest pain that feels tight or squeezing or spreads to the arms, neck or jaw; other symptoms include shortness of breath, feeling or being sick, sweating and pale, blue or grey skin. 'Severe' breathlessness and 'passing out' were not in the retrieved text.",
+   "url": "https://www.nhs.uk/conditions/heart-attack/",
+   "action": "edited",
+   "newSentence": "The NHS says to call 999 for chest pain that feels tight or squeezing or that spreads to the arms, neck or jaw; other symptoms can include shortness of breath, feeling or being sick, sweating, and pale, blue or grey skin."
+  },
+  {
+   "id": "c02",
+   "where": "article.sections[0]",
+   "classification": "textbook",
+   "evidence": "Plain undisputed fact; retrieved NHS text treats it as a 999 situation but the exact sentence was not returned.",
+   "url": "https://www.nhs.uk/conditions/heart-attack/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c03",
+   "where": "article.sections[0]",
+   "classification": "supported",
+   "evidence": "BHF: some people may have other symptoms such as shortness of breath, feeling or being sick and back or jaw pain without any chest pain.",
+   "url": "https://www.bhf.org.uk/informationsupport/conditions/heart-attack/signs-and-symptoms-of-heart-attacks-in-women",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c04",
+   "where": "article.sections[0]",
+   "classification": "supported",
+   "evidence": "NHS 111 Wales: most common symptom in both sexes is chest pain; women are more likely to have other symptoms such as shortness of breath, feeling or being sick and back and jaw pain.",
+   "url": "https://111.wales.nhs.uk/encyclopaedia/t/article/trawiadarygalon",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c05",
+   "where": "article.sections[0]",
+   "classification": "unsupported",
+   "evidence": "The BHF-funded study on men and women having the same key symptoms was not returned by two searches; no retrieved text states it or that the evidence is 'mixed'.",
+   "url": "https://www.bhf.org.uk/informationsupport/conditions/heart-attack/signs-and-symptoms-of-heart-attacks-in-women",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c06",
+   "where": "article.sections[0]",
+   "classification": "unsupported",
+   "evidence": "Retrieved text says symptoms vary and older adults and people with diabetes may have milder or atypical symptoms; 'particularly women' as 'other guidance' was not stated in a retrieved source.",
+   "url": "https://www.nhs.uk/conditions/heart-attack/",
+   "action": "edited",
+   "newSentence": "Symptoms vary from person to person, and some people, including older adults and people with diabetes, may have milder or atypical symptoms."
+  },
+  {
+   "id": "c07",
+   "where": "article.sections[0]",
+   "classification": "supported",
+   "evidence": "NHS coronary heart disease guidance: it may help to chew and then swallow an aspirin tablet if you are not allergic to aspirin (dose omitted here). Source page is the CHD symptoms page, not the heart-attack page.",
+   "url": "https://www.nhs.uk/conditions/coronary-heart-disease/symptoms/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c08",
+   "where": "article.sections[1]",
+   "classification": "supported",
+   "evidence": "NHS causes page: a heart attack follows a sudden interruption of blood supply to the heart, which can damage heart muscle and cause it to die.",
+   "url": "https://www.nhs.uk/conditions/heart-attack/causes/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c09",
+   "where": "article.sections[1]",
+   "classification": "supported",
+   "evidence": "NHS 111 Wales: coronary heart disease is the leading cause.",
+   "url": "https://111.wales.nhs.uk/encyclopaedia/h/article/heartattack(myocardialinfarctionmi)",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c10",
+   "where": "article.sections[1]",
+   "classification": "supported",
+   "evidence": "NHS: usual trigger is a clot forming where a fatty plaque in a coronary artery has ruptured.",
+   "url": "https://www.nhs.uk/conditions/heart-attack/causes/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c11",
+   "where": "article.sections[1]",
+   "classification": "supported",
+   "evidence": "NHS causes page: carbon monoxide poisoning can lower blood oxygen so the heart gets too little, a less common route.",
+   "url": "https://www.nhs.uk/conditions/heart-attack/causes/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c12",
+   "where": "article.sections[1]",
+   "classification": "supported",
+   "evidence": "NHS heart attack page lists smoking, high blood pressure, high cholesterol, diabetes, being overweight and family history.",
+   "url": "https://www.nhs.uk/conditions/heart-attack/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c13",
+   "where": "article.sections[1]",
+   "classification": "unsupported",
+   "evidence": "Only NHS Inform listing age and ethnicity as risk factors (for coronary heart disease) was retrieved; 'sex' and 'cannot be changed' not stated.",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/cardiovascular-disease/heart-disease/coronary-heart-disease/",
+   "action": "edited",
+   "newSentence": "NHS Inform lists age and ethnicity among the risk factors for coronary heart disease."
+  },
+  {
+   "id": "c14",
+   "where": "article.sections[1]",
+   "classification": "supported",
+   "evidence": "NHS causes page: heart attack is an interruption of blood supply to the heart muscle.",
+   "url": "https://www.nhs.uk/conditions/heart-attack/causes/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c15",
+   "where": "article.sections[1]",
+   "classification": "supported",
+   "evidence": "NHS causes page: if a large part of the heart is damaged the heart can stop beating, which is cardiac arrest.",
+   "url": "https://www.nhs.uk/conditions/heart-attack/causes/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c16",
+   "where": "article.sections[2]",
+   "classification": "supported",
+   "evidence": "NHS diagnosis page: main tests are an ECG and blood tests (troponin).",
+   "url": "https://www.nhs.uk/conditions/heart-attack/diagnosis/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c17",
+   "where": "article.sections[2]",
+   "classification": "supported",
+   "evidence": "StatPearls: ECG findings classify myocardial infarction into two principal types, STEMI and NSTEMI. NICE NG185 also splits STEMI and NSTEMI pathways.",
+   "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK513228/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c18",
+   "where": "article.sections[2]",
+   "classification": "unsupported",
+   "evidence": "Retrieved: STEMI shows ST-segment elevation on the ECG. 'One artery completely blocked' was not in the retrieved text.",
+   "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK513228/",
+   "action": "edited",
+   "newSentence": "In a STEMI, the ECG shows a rise in a part of the tracing called the ST segment."
+  },
+  {
+   "id": "c19",
+   "where": "article.sections[2]",
+   "classification": "unsupported",
+   "evidence": "Retrieved: NSTEMI is diagnosed when symptoms fit acute coronary syndrome and troponin is raised but the ECG lacks STEMI-type changes; ECG may show ST depression or T-wave inversion or be normal. 'Significantly narrowed' not retrieved.",
+   "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK513228/",
+   "action": "edited",
+   "newSentence": "In an NSTEMI, the ECG does not show the ST rise seen in a STEMI, and it can look normal or show other changes."
+  },
+  {
+   "id": "c20",
+   "where": "article.sections[2]",
+   "classification": "unsupported",
+   "evidence": "Retrieved: troponin is a biomarker of heart muscle injury. 'Proteins leak into the blood' was not stated.",
+   "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK513228/",
+   "action": "edited",
+   "newSentence": "Troponin, a marker of damage to the heart muscle, is measured in blood tests."
+  },
+  {
+   "id": "c21",
+   "where": "article.sections[2]",
+   "classification": "unsupported",
+   "evidence": "Retrieved: troponin is the preferred biomarker for diagnosing myocardial infarction; a raised level with a non-STEMI ECG points to NSTEMI. 'Level helps diagnose the type' is looser than the source.",
+   "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK513228/",
+   "action": "edited",
+   "newSentence": "Troponin is the preferred blood marker for diagnosing a heart attack, and a raised level with an ECG that lacks STEMI changes points to an NSTEMI."
+  },
+  {
+   "id": "c22",
+   "where": "article.sections[2]",
+   "classification": "unsupported",
+   "evidence": "BHF: Edinburgh trial of over 1,000 people with chest pain found the new troponin test doubled the number of women diagnosed with a heart attack. 'Would otherwise have been told they did not have one' was not in retrieved text.",
+   "url": "https://www.bhf.org.uk/-/media/files/heart-matters/bias-and-biology-briefing.pdf",
+   "action": "edited",
+   "newSentence": "A BHF-funded trial in Edinburgh found that a high-sensitivity troponin test doubled the number of women diagnosed with a heart attack."
+  },
+  {
+   "id": "c23",
+   "where": "article.sections[3]",
+   "classification": "unsupported",
+   "evidence": "NHS: the choice of treatment depends on severity; 'type' not stated.",
+   "url": "https://www.nhs.uk/conditions/heart-attack/",
+   "action": "edited",
+   "newSentence": "The NHS says the choice of treatment depends on how severe the heart attack is."
+  },
+  {
+   "id": "c24",
+   "where": "article.sections[3]",
+   "classification": "unsupported",
+   "evidence": "NHS lists medicines that treat the blockage, angioplasty with a stent, and bypass surgery; 'clot-dissolving' specifically appeared only on NHS Inform.",
+   "url": "https://www.nhs.uk/conditions/heart-attack/treatment/",
+   "action": "edited",
+   "newSentence": "The NHS lists medicines to treat the blockage, angioplasty with a stent, and coronary artery bypass surgery."
+  },
+  {
+   "id": "c25",
+   "where": "article.sections[3]",
+   "classification": "unsupported",
+   "evidence": "NHS: a procedure to open blocked arteries using a small plastic tube called a stent. 'Hold it open' not stated.",
+   "url": "https://www.nhs.uk/tests-and-treatments/coronary-angioplasty/",
+   "action": "edited",
+   "newSentence": "In angioplasty, a small plastic tube called a stent is used to open a blocked artery."
+  },
+  {
+   "id": "c26",
+   "where": "article.sections[3]",
+   "classification": "supported",
+   "evidence": "NICE NG185: offer coronary angiography with follow-on primary PCI as the preferred reperfusion strategy for acute STEMI when presenting within the time window and PCI can be delivered promptly. NHS: emergency angioplasty (primary PCI) is the usual approach.",
+   "url": "https://www.nice.org.uk/guidance/ng185/chapter/Recommendations",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c27",
+   "where": "article.sections[3]",
+   "classification": "supported",
+   "evidence": "NICE NG185 'Acute coronary syndromes' guideline, early management, published 18 November 2020.",
+   "url": "https://www.nice.org.uk/guidance/ng185/chapter/Recommendations",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c28",
+   "where": "article.sections[3]",
+   "classification": "supported",
+   "evidence": "BHF: most people stay about two to five days. Retrieved attribution is to BHF, not clearly NHS.",
+   "url": "https://www.bhf.org.uk/informationsupport/conditions/heart-attack",
+   "action": "edited",
+   "newSentence": "The BHF says most people stay in hospital for about two to five days after a heart attack, and for two or three days after coronary angioplasty or stents."
+  },
+  {
+   "id": "c29",
+   "where": "article.sections[3]",
+   "classification": "unsupported",
+   "evidence": "NHS complications page was returned by title only; arrhythmia and heart failure as 'most common' not in retrieved text.",
+   "url": "https://www.nhs.uk/conditions/heart-attack/complications/",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c30",
+   "where": "article.sections[3]",
+   "classification": "unsupported",
+   "evidence": "NHS describes heart rupture as an extremely serious but relatively uncommon complication; comparison with cardiogenic shock being 'less common' not stated.",
+   "url": "https://www.nhs.uk/conditions/heart-attack/complications/",
+   "action": "edited",
+   "newSentence": "The NHS describes rupture of the heart's muscle, walls or valves as an extremely serious but relatively uncommon complication of a heart attack."
+  },
+  {
+   "id": "c31",
+   "where": "article.sections[3]",
+   "classification": "unsupported",
+   "evidence": "No retrieved text lists age, extent of damage and speed of treatment as determinants of outcome.",
+   "url": "https://www.nhs.uk/conditions/heart-attack/",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c32",
+   "where": "article.sections[4]",
+   "classification": "unsupported",
+   "evidence": "BHF: clopidogrel or ticagrelor commonly prescribed for a year to reduce the chance of another heart attack; 'most people' and 'several medicines' not stated.",
+   "url": "https://bhf.org.uk/informationsupport/heart-matters-magazine/medical/focus-on-heart-attacks",
+   "action": "edited",
+   "newSentence": "People are commonly prescribed medicines after a heart attack, such as antiplatelets, beta blockers and statins, to lower the chance of another one."
+  },
+  {
+   "id": "c33",
+   "where": "article.sections[4]",
+   "classification": "supported",
+   "evidence": "BHF: clopidogrel or ticagrelor commonly prescribed for 1 year; most people also prescribed lifelong aspirin.",
+   "url": "https://bhf.org.uk/informationsupport/heart-matters-magazine/medical/focus-on-heart-attacks",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c34",
+   "where": "article.sections[4]",
+   "classification": "supported",
+   "evidence": "BHF: beta blockers help control heart rate; statins lower cholesterol; GTN spray helps reduce chest pain after a heart attack.",
+   "url": "https://bhf.org.uk/informationsupport/heart-matters-magazine/medical/focus-on-heart-attacks",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c35",
+   "where": "article.sections[4]",
+   "classification": "supported",
+   "evidence": "NHS recovery page: cardiac rehabilitation can be attended in person or remotely.",
+   "url": "https://www.nhs.uk/conditions/heart-attack/recovery/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c36",
+   "where": "article.sections[4]",
+   "classification": "unsupported",
+   "evidence": "BHF description as 'exercise and education programme' with 'regular assessments' not in retrieved text.",
+   "url": "https://www.bhf.org.uk/informationsupport/heart-matters-magazine/wellbeing/cardiac-rehab",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c37",
+   "where": "article.sections[4]",
+   "classification": "unsupported",
+   "evidence": "BHF: rehab usually starts around a month to six weeks after getting home (another NHS leaflet says about four weeks); topics include driving, returning to work, holidays. 'Two to six weeks' not supported.",
+   "url": "https://www.bhf.org.uk/informationsupport/heart-matters-magazine/wellbeing/cardiac-rehab",
+   "action": "edited",
+   "newSentence": "The BHF says cardiac rehabilitation usually starts around a month to six weeks after getting home from hospital, and typically covers topics such as driving, returning to work and holidays."
+  },
+  {
+   "id": "c38",
+   "where": "article.sections[4]",
+   "classification": "unsupported",
+   "evidence": "NHS recovery page: recovery can take several weeks or longer. 4-6 weeks came from a hospital trust leaflet and 6-8 weeks referred to recovery time, not NHS return-to-work. Royal Berkshire leaflet: timing depends on job, severity and recovery rate.",
+   "url": "https://www.nhs.uk/conditions/heart-attack/recovery/",
+   "action": "edited",
+   "newSentence": "The NHS says recovery after a heart attack can take several weeks or longer, and hospital guidance says when someone can return to work depends on their job, how severe the heart attack was and how quickly they recover."
+  },
+  {
+   "id": "c39",
+   "where": "article.sections[4]",
+   "classification": "supported",
+   "evidence": "NHS trust guidance: ward/hospital team gives a fit note for the hospital stay and the GP provides further certificates.",
+   "url": "https://www.uhs.nhs.uk/Media/UHS-website-2019/Patientinformation/Heartandlungs/Recovering-from-a-heart-attack-1363-PIL.pdf",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c40",
+   "where": "article.sections[5]",
+   "classification": "unsupported",
+   "evidence": "Quote about being 'bound to lead to apprehension' not found in retrieved text.",
+   "url": "https://www.royalberkshire.nhs.uk/media/frrbd5hx/after-heart-attack-cardiac-rehabilitation_nov25.pdf",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c41",
+   "where": "article.sections[5]",
+   "classification": "supported",
+   "evidence": "BHF: cardiac rehab should include assessment of anxiety or depression, tips for dealing with stress and information on other sources of help.",
+   "url": "https://www.bhf.org.uk/informationsupport/heart-matters-magazine/wellbeing/cardiac-rehab",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c42",
+   "where": "article.sections[5]",
+   "classification": "unsupported",
+   "evidence": "Retrieved: NHS says most people can return to sex; it can raise heart rate and blood pressure and occasionally cause breathlessness or chest pain in people with CHD; NHS 111 Wales citing BHF gives about 4-6 weeks. 'Does not put at further risk' NOT found and is reassurance the retrieved text does not give.",
+   "url": "https://111.wales.nhs.uk/encyclopaedia/h/article/heartattack(myocardialinfarctionmi)",
+   "action": "edited",
+   "newSentence": "Most people can return to having sex after a heart attack, and NHS 111 Wales, citing the BHF, gives about four to six weeks as a usual time."
+  },
+  {
+   "id": "c43",
+   "where": "article.sections[5]",
+   "classification": "unsupported",
+   "evidence": "BHF Heart Helpline not mentioned in retrieved text.",
+   "url": "https://www.bhf.org.uk/informationsupport/conditions/heart-attack",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c44",
+   "where": "article.sections[5]",
+   "classification": "supported",
+   "evidence": "NHS: call 999 for tight or squeezing chest pain or pain spreading to arms, neck or jaw. Route correct; 'new' and 'rather than wait' not in source, reworded.",
+   "url": "https://www.nhs.uk/conditions/heart-attack/",
+   "action": "edited",
+   "newSentence": "Chest pain that feels tight or squeezing, or that spreads to the arms, neck or jaw, is a reason to call 999 immediately, as described at the top of this article."
+  },
+  {
+   "id": "c45",
+   "where": "article.faqs[0].a",
+   "classification": "supported",
+   "evidence": "NHS causes page: sudden interruption of blood supply to the heart.",
+   "url": "https://www.nhs.uk/conditions/heart-attack/causes/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c46",
+   "where": "article.faqs[0].a",
+   "classification": "supported",
+   "evidence": "NHS causes page: heart can stop beating, which is cardiac arrest.",
+   "url": "https://www.nhs.uk/conditions/heart-attack/causes/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c47",
+   "where": "article.faqs[0].a",
+   "classification": "supported",
+   "evidence": "NHS causes page: if a large part of the heart is damaged, the heart can stop beating.",
+   "url": "https://www.nhs.uk/conditions/heart-attack/causes/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c48",
+   "where": "article.faqs[1].a",
+   "classification": "unsupported",
+   "evidence": "No retrieved source says the evidence is mixed.",
+   "url": "https://www.bhf.org.uk/informationsupport/conditions/heart-attack/signs-and-symptoms-of-heart-attacks-in-women",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c49",
+   "where": "article.faqs[1].a",
+   "classification": "unsupported",
+   "evidence": "BHF-funded study not returned by search.",
+   "url": "https://www.bhf.org.uk/informationsupport/conditions/heart-attack/signs-and-symptoms-of-heart-attacks-in-women",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c50",
+   "where": "article.faqs[1].a",
+   "classification": "supported",
+   "evidence": "NHS 111 Wales: women are more likely to have other symptoms such as shortness of breath, feeling or being sick and back and jaw pain.",
+   "url": "https://111.wales.nhs.uk/encyclopaedia/t/article/trawiadarygalon",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c51",
+   "where": "article.faqs[2].a",
+   "classification": "supported",
+   "evidence": "BHF: most people stay about two to five days; retrieved attribution is BHF, not NHS.",
+   "url": "https://www.bhf.org.uk/informationsupport/conditions/heart-attack",
+   "action": "edited",
+   "newSentence": "The BHF says people usually stay in hospital for about two to five days after a heart attack."
+  },
+  {
+   "id": "c52",
+   "where": "article.faqs[2].a",
+   "classification": "supported",
+   "evidence": "BHF: after coronary angioplasty or stents a stay of two or three days is likely.",
+   "url": "https://www.bhf.org.uk/informationsupport/conditions/heart-attack",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c53",
+   "where": "article.faqs[3].a",
+   "classification": "supported",
+   "evidence": "BHF: clopidogrel or ticagrelor commonly prescribed for a year; most people prescribed lifelong aspirin.",
+   "url": "https://bhf.org.uk/informationsupport/heart-matters-magazine/medical/focus-on-heart-attacks",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c54",
+   "where": "article.faqs[3].a",
+   "classification": "supported",
+   "evidence": "BHF: beta blockers and statins are part of usual medicines after a heart attack.",
+   "url": "https://bhf.org.uk/informationsupport/heart-matters-magazine/medical/focus-on-heart-attacks",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c55",
+   "where": "article.faqs[3].a",
+   "classification": "unsupported",
+   "evidence": "No retrieved source text; the 'prescriber's advice takes priority' line was only a search-summary remark.",
+   "url": "https://www.nhs.uk/conditions/heart-attack/",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c56",
+   "where": "article.faqs[4].a",
+   "classification": "unsupported",
+   "evidence": "As c42: 'no further risk' not found; NHS 111 Wales citing BHF gives about 4-6 weeks.",
+   "url": "https://111.wales.nhs.uk/encyclopaedia/h/article/heartattack(myocardialinfarctionmi)",
+   "action": "edited",
+   "newSentence": "Most people can return to having sex after a heart attack, and NHS 111 Wales, citing the BHF, gives about four to six weeks as a usual time."
+  },
+  {
+   "id": "c57",
+   "where": "article.keyFacts[0]",
+   "classification": "supported",
+   "evidence": "NHS: call 999 for chest pain that feels tight or squeezing or spreads to arms, neck or jaw; ledger gave no URL.",
+   "url": "https://www.nhs.uk/conditions/heart-attack/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c58",
+   "where": "article.keyFacts[1]",
+   "classification": "supported",
+   "evidence": "NHS causes page and NHS 111 Wales: coronary heart disease leading cause; clot forms on ruptured fatty plaque.",
+   "url": "https://www.nhs.uk/conditions/heart-attack/causes/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c59",
+   "where": "article.keyFacts[2]",
+   "classification": "unsupported",
+   "evidence": "'Fully blocked' vs 'significantly narrowed' not found in retrieved text; ECG distinguishes STEMI (ST rise) from NSTEMI.",
+   "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK513228/",
+   "action": "edited",
+   "newSentence": "Types: STEMI and NSTEMI, told apart mainly by the ECG"
+  },
+  {
+   "id": "c60",
+   "where": "article.keyFacts[3]",
+   "classification": "supported",
+   "evidence": "NHS diagnosis page: ECG and blood tests for cardiac troponin.",
+   "url": "https://www.nhs.uk/conditions/heart-attack/diagnosis/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c61",
+   "where": "article.keyFacts[4]",
+   "classification": "supported",
+   "evidence": "BHF: most patients stay about two to five days; retrieved attribution is BHF.",
+   "url": "https://www.bhf.org.uk/informationsupport/conditions/heart-attack",
+   "action": "edited",
+   "newSentence": "Hospital stay: usually about 2 to 5 days, per the BHF"
+  },
+  {
+   "id": "c62",
+   "where": "article.keyFacts[5]",
+   "classification": "supported",
+   "evidence": "BHF/NHS: medicines, cardiac rehabilitation, and rehab includes assessment of anxiety or depression and support for stress.",
+   "url": "https://www.nhs.uk/conditions/heart-attack/recovery/",
+   "action": "kept",
+   "newSentence": ""
+  }
+ ]
+}

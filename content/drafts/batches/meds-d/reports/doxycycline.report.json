@@ -1,0 +1,723 @@
+{
+ "id": "doxycycline",
+ "searchesUsed": 14,
+ "counts": {
+  "supported": 65,
+  "textbook": 0,
+  "unsupported": 13,
+  "wrong": 5,
+  "unsafe": 0,
+  "unchecked": 0
+ },
+ "claims": [
+  {
+   "id": "c01",
+   "where": "summary",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/MedlinePlus text states this.",
+   "url": "https://www.nhs.uk/medicines/doxycycline/",
+   "action": "kept"
+  },
+  {
+   "id": "c02",
+   "where": "summary",
+   "classification": "wrong",
+   "evidence": "NHS pregnancy page: not recommended in pregnancy (tooth and bone development); breastfeeding short courses possible, so \"not usually used during breastfeeding because of teeth\" misstates it.",
+   "url": "https://www.nhs.uk/medicines/doxycycline/pregnancy-breastfeeding-and-fertility-while-taking-doxycycline/",
+   "action": "edited",
+   "newSentence": "see doxycycline.final.json at summary"
+  },
+  {
+   "id": "c03",
+   "where": "usedFor[0]",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/MedlinePlus text states this.",
+   "url": "https://www.nhs.uk/medicines/doxycycline/",
+   "action": "kept"
+  },
+  {
+   "id": "c04",
+   "where": "usedFor[1]",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/MedlinePlus text states this.",
+   "url": "https://www.nhs.uk/medicines/doxycycline/",
+   "action": "kept"
+  },
+  {
+   "id": "c05",
+   "where": "usedFor[2]",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/MedlinePlus text states this.",
+   "url": "https://www.nhs.uk/medicines/doxycycline/",
+   "action": "kept"
+  },
+  {
+   "id": "c06",
+   "where": "usedFor[3]",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/MedlinePlus text states this.",
+   "url": "https://medlineplus.gov/druginfo/meds/a682063.html",
+   "action": "kept"
+  },
+  {
+   "id": "c07",
+   "where": "usedFor[4]",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/MedlinePlus text states this.",
+   "url": "https://www.nhs.uk/medicines/doxycycline/",
+   "action": "kept"
+  },
+  {
+   "id": "c08",
+   "where": "howItWorks",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/MedlinePlus text states this.",
+   "url": "https://www.nhs.uk/medicines/doxycycline/common-questions-about-doxycycline/",
+   "action": "kept"
+  },
+  {
+   "id": "c09",
+   "where": "howItWorks",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/MedlinePlus text states this.",
+   "url": "https://www.nhs.uk/medicines/doxycycline/common-questions-about-doxycycline/",
+   "action": "kept"
+  },
+  {
+   "id": "c10",
+   "where": "howItWorks",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/MedlinePlus text states this.",
+   "url": "https://medlineplus.gov/druginfo/meds/a682063.html",
+   "action": "kept"
+  },
+  {
+   "id": "c11",
+   "where": "howItWorks",
+   "classification": "unsupported",
+   "evidence": "No retrieved NHS/MedlinePlus text states antibiotics do not work on viruses.",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c12",
+   "where": "onset",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/MedlinePlus text states this.",
+   "url": "https://www.nhs.uk/medicines/doxycycline/common-questions-about-doxycycline/",
+   "action": "kept"
+  },
+  {
+   "id": "c13",
+   "where": "sideEffects.common[0]",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/MedlinePlus text states this.",
+   "url": "https://www.nhs.uk/medicines/doxycycline/",
+   "action": "kept"
+  },
+  {
+   "id": "c14",
+   "where": "sideEffects.common[1]",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/MedlinePlus text states this.",
+   "url": "https://www.nhs.uk/medicines/doxycycline/",
+   "action": "kept"
+  },
+  {
+   "id": "c15",
+   "where": "sideEffects.common[2]",
+   "classification": "supported",
+   "evidence": "NHS Common questions: cover up, hat, sunglasses, high-factor sunscreen; NHS England PGD: avoid direct sunlight/sunbeds.",
+   "url": "https://www.nhs.uk/medicines/doxycycline/common-questions-about-doxycycline/",
+   "action": "edited",
+   "newSentence": "see doxycycline.final.json at sideEffects.common[2]"
+  },
+  {
+   "id": "c16",
+   "where": "sideEffects.serious[0]",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/MedlinePlus text states this.",
+   "url": "https://www.nhs.uk/medicines/doxycycline/side-effects-of-doxycycline/",
+   "action": "kept"
+  },
+  {
+   "id": "c17",
+   "where": "sideEffects.serious[1]",
+   "classification": "unsupported",
+   "evidence": "NHS lists painful/difficult swallowing, sore throat, heartburn, chest pain worse with eating as oesophagitis; \"reduced appetite\" not retrieved; NHS says call NHS 111 for suspected serious effects (not GP-or-111 wording).",
+   "url": "https://www.nhs.uk/medicines/doxycycline/side-effects-of-doxycycline/",
+   "action": "edited",
+   "newSentence": "see doxycycline.final.json at sideEffects.serious[1]"
+  },
+  {
+   "id": "c18",
+   "where": "sideEffects.serious[2]",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/MedlinePlus text states this.",
+   "url": "https://www.nhs.uk/medicines/doxycycline/side-effects-of-doxycycline/",
+   "action": "kept"
+  },
+  {
+   "id": "c19",
+   "where": "sideEffects.serious[3]",
+   "classification": "unsupported",
+   "evidence": "List (bowel, blood cells, liver, pancreatitis, raised brain pressure) supported by NHS; route wording replaced with NHS 111 per NHS.",
+   "url": "https://www.nhs.uk/medicines/doxycycline/side-effects-of-doxycycline/",
+   "action": "edited",
+   "newSentence": "see doxycycline.final.json at sideEffects.serious[3]"
+  },
+  {
+   "id": "c20",
+   "where": "cautions[0]",
+   "classification": "unsupported",
+   "evidence": "NHS: adults and children over 12; younger children for some infections; \"older children\" vague. Tooth discolouration from NHS Common questions.",
+   "url": "https://www.nhs.uk/medicines/doxycycline/who-can-and-cannot-take-doxycycline/",
+   "action": "edited",
+   "newSentence": "see doxycycline.final.json at cautions[0]"
+  },
+  {
+   "id": "c21",
+   "where": "cautions[1]",
+   "classification": "supported",
+   "evidence": "NHS also lists oesophagitis; added.",
+   "url": "https://www.nhs.uk/medicines/doxycycline/who-can-and-cannot-take-doxycycline/",
+   "action": "edited",
+   "newSentence": "see doxycycline.final.json at cautions[1]"
+  },
+  {
+   "id": "c22",
+   "where": "cautions[2]",
+   "classification": "wrong",
+   "evidence": "NHS: not recommended in pregnancy; breastfeeding short courses (under 3 weeks) possible after doctor/health visitor check, while Who-can page lists breastfeeding as a reason not to; emc: contraindicated in pregnancy and lactation. Split into two cautions.",
+   "url": "https://www.nhs.uk/medicines/doxycycline/pregnancy-breastfeeding-and-fertility-while-taking-doxycycline/",
+   "action": "edited",
+   "newSentence": "see doxycycline.final.json at cautions[2]"
+  },
+  {
+   "id": "c23",
+   "where": "cautions[3]",
+   "classification": "supported",
+   "evidence": "NHS: anticoagulants such as warfarin, antacids, acne medicines, iron/zinc may not mix well.",
+   "url": "https://www.nhs.uk/medicines/doxycycline/taking-doxycycline-with-other-medicines-and-herbal-supplements/",
+   "action": "edited",
+   "newSentence": "see doxycycline.final.json at cautions[3]"
+  },
+  {
+   "id": "c24",
+   "where": "cautions[4]",
+   "classification": "supported",
+   "evidence": "NHS interactions page lists aluminium, bismuth, calcium, magnesium, zinc; spacing differs between local leaflets (2 to 3 hours, 2h/6h in PGDs). \"Reduce absorption\" claim dropped in favour of NHS wording.",
+   "url": "https://www.nhs.uk/medicines/doxycycline/taking-doxycycline-with-other-medicines-and-herbal-supplements/",
+   "action": "edited",
+   "newSentence": "see doxycycline.final.json at cautions[4]"
+  },
+  {
+   "id": "c25",
+   "where": "cautions[5]",
+   "classification": "supported",
+   "evidence": "emc capsule leaflet: not with oral retinoids, raised intracranial pressure risk; Vibramycin-D SmPC: avoid systemic retinoids such as isotretinoin. Capsule SmPC itself not seen to state it; attribution broadened to emc product information.",
+   "url": "https://www.medicines.org.uk/emc/files/pil.13082.pdf",
+   "action": "edited",
+   "newSentence": "see doxycycline.final.json at cautions[5]"
+  },
+  {
+   "id": "c26",
+   "where": "cautions[6]",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/MedlinePlus text states this.",
+   "url": "https://www.nhs.uk/medicines/doxycycline/common-questions-about-doxycycline/",
+   "action": "kept"
+  },
+  {
+   "id": "c27",
+   "where": "cautions[7]",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/MedlinePlus text states this.",
+   "url": "https://www.nhs.uk/medicines/doxycycline/common-questions-about-doxycycline/",
+   "action": "kept"
+  },
+  {
+   "id": "c28",
+   "where": "monitoring",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/MedlinePlus text states this.",
+   "url": "https://www.nhs.uk/medicines/doxycycline/common-questions-about-doxycycline/",
+   "action": "kept"
+  },
+  {
+   "id": "c29",
+   "where": "monitoring",
+   "classification": "unsupported",
+   "evidence": "Vibramycin-D SmPC: prolonged prothrombin time with warfarin. Scottish PGD INR check not retrieved: removed.",
+   "url": "https://www.medicines.org.uk/emc/medicine/20879/spc",
+   "action": "edited",
+   "newSentence": "see doxycycline.final.json at monitoring"
+  },
+  {
+   "id": "c30",
+   "where": "regimenNote",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/MedlinePlus text states this.",
+   "url": "https://www.nhs.uk/medicines/doxycycline/how-and-when-to-take-doxycycline/",
+   "action": "kept"
+  },
+  {
+   "id": "c31",
+   "where": "article.sections[0].body",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/MedlinePlus text states this.",
+   "url": "https://www.nhs.uk/medicines/doxycycline/",
+   "action": "kept"
+  },
+  {
+   "id": "c32",
+   "where": "article.sections[0].body",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/MedlinePlus text states this.",
+   "url": "https://www.nhs.uk/medicines/doxycycline/",
+   "action": "kept"
+  },
+  {
+   "id": "c33",
+   "where": "article.sections[0].body",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/MedlinePlus text states this.",
+   "url": "https://www.nhs.uk/medicines/doxycycline/",
+   "action": "kept"
+  },
+  {
+   "id": "c34",
+   "where": "article.sections[0].body",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/MedlinePlus text states this.",
+   "url": "https://www.nhs.uk/medicines/doxycycline/",
+   "action": "kept"
+  },
+  {
+   "id": "c35",
+   "where": "article.sections[0].body",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/MedlinePlus text states this.",
+   "url": "https://medlineplus.gov/druginfo/meds/a682063.html",
+   "action": "kept"
+  },
+  {
+   "id": "c36",
+   "where": "article.sections[0].body",
+   "classification": "unsupported",
+   "evidence": "Viral-infection statement not retrieved.",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c37",
+   "where": "article.sections[1].body",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/MedlinePlus text states this.",
+   "url": "https://www.nhs.uk/medicines/doxycycline/common-questions-about-doxycycline/",
+   "action": "kept"
+  },
+  {
+   "id": "c38",
+   "where": "article.sections[1].body",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/MedlinePlus text states this.",
+   "url": "https://www.nhs.uk/medicines/doxycycline/common-questions-about-doxycycline/",
+   "action": "kept"
+  },
+  {
+   "id": "c39",
+   "where": "article.sections[1].body",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/MedlinePlus text states this.",
+   "url": "https://medlineplus.gov/druginfo/meds/a682063.html",
+   "action": "kept"
+  },
+  {
+   "id": "c40",
+   "where": "article.sections[1].body",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/MedlinePlus text states this.",
+   "url": "https://www.nhs.uk/medicines/doxycycline/common-questions-about-doxycycline/",
+   "action": "kept"
+  },
+  {
+   "id": "c41",
+   "where": "article.sections[1].body",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/MedlinePlus text states this.",
+   "url": "https://www.nhs.uk/medicines/doxycycline/how-and-when-to-take-doxycycline/",
+   "action": "kept"
+  },
+  {
+   "id": "c42",
+   "where": "article.sections[1].body",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/MedlinePlus text states this.",
+   "url": "https://www.nhs.uk/medicines/doxycycline/how-and-when-to-take-doxycycline/",
+   "action": "kept"
+  },
+  {
+   "id": "c43",
+   "where": "article.sections[1].body",
+   "classification": "unsupported",
+   "evidence": "NHS: higher strengths with or without food, less sick with food; side-effects page: after meal/snack or with milk may ease nausea. Reworded to side-effects page.",
+   "url": "https://www.nhs.uk/medicines/doxycycline/side-effects-of-doxycycline/",
+   "action": "edited",
+   "newSentence": "see doxycycline.final.json at article.sections[1].body"
+  },
+  {
+   "id": "c44",
+   "where": "article.sections[1].body",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/MedlinePlus text states this.",
+   "url": "https://www.nhs.uk/medicines/doxycycline/common-questions-about-doxycycline/",
+   "action": "kept"
+  },
+  {
+   "id": "c45",
+   "where": "article.sections[2].body",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/MedlinePlus text states this.",
+   "url": "https://www.nhs.uk/medicines/doxycycline/",
+   "action": "kept"
+  },
+  {
+   "id": "c46",
+   "where": "article.sections[2].body",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/MedlinePlus text states this.",
+   "url": "https://www.nhs.uk/medicines/doxycycline/",
+   "action": "kept"
+  },
+  {
+   "id": "c47",
+   "where": "article.sections[2].body",
+   "classification": "supported",
+   "evidence": "NHS Common questions covers cover up/hat/sunglasses/sunscreen; PGD adds avoiding sunlight/sunbeds.",
+   "url": "https://www.nhs.uk/medicines/doxycycline/common-questions-about-doxycycline/",
+   "action": "edited",
+   "newSentence": "see doxycycline.final.json at article.sections[2].body"
+  },
+  {
+   "id": "c48",
+   "where": "article.sections[2].body",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/MedlinePlus text states this.",
+   "url": "https://www.nhs.uk/medicines/doxycycline/side-effects-of-doxycycline/",
+   "action": "kept"
+  },
+  {
+   "id": "c49",
+   "where": "article.sections[2].body",
+   "classification": "unsupported",
+   "evidence": "\"Reduced appetite\" not retrieved; \"acid reflux\" replaced by heartburn.",
+   "url": "https://www.nhs.uk/medicines/doxycycline/side-effects-of-doxycycline/",
+   "action": "edited",
+   "newSentence": "see doxycycline.final.json at article.sections[2].body"
+  },
+  {
+   "id": "c50",
+   "where": "article.sections[2].body",
+   "classification": "unsupported",
+   "evidence": "NHS says call NHS 111 if serious side effects suspected; GP route not sourced.",
+   "url": "https://www.nhs.uk/medicines/doxycycline/side-effects-of-doxycycline/",
+   "action": "edited",
+   "newSentence": "see doxycycline.final.json at article.sections[2].body"
+  },
+  {
+   "id": "c51",
+   "where": "article.sections[2].body",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/MedlinePlus text states this.",
+   "url": "https://www.nhs.uk/medicines/doxycycline/side-effects-of-doxycycline/",
+   "action": "kept"
+  },
+  {
+   "id": "c52",
+   "where": "article.sections[2].body",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/MedlinePlus text states this.",
+   "url": "https://www.nhs.uk/medicines/doxycycline/side-effects-of-doxycycline/",
+   "action": "kept"
+  },
+  {
+   "id": "c53",
+   "where": "article.sections[3].body",
+   "classification": "unsupported",
+   "evidence": "\"older children\" replaced by \"over 12\".",
+   "url": "https://www.nhs.uk/medicines/doxycycline/who-can-and-cannot-take-doxycycline/",
+   "action": "edited",
+   "newSentence": "see doxycycline.final.json at article.sections[3].body"
+  },
+  {
+   "id": "c54",
+   "where": "article.sections[3].body",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/MedlinePlus text states this.",
+   "url": "https://www.nhs.uk/medicines/doxycycline/who-can-and-cannot-take-doxycycline/",
+   "action": "kept"
+  },
+  {
+   "id": "c55",
+   "where": "article.sections[3].body",
+   "classification": "supported",
+   "evidence": "NHS: not recommended; tooth and bone development.",
+   "url": "https://www.nhs.uk/medicines/doxycycline/pregnancy-breastfeeding-and-fertility-while-taking-doxycycline/",
+   "action": "edited",
+   "newSentence": "see doxycycline.final.json at article.sections[3].body"
+  },
+  {
+   "id": "c56",
+   "where": "article.sections[3].body",
+   "classification": "wrong",
+   "evidence": "NHS allows short courses if baby healthy after doctor/health visitor check; \"risk of side effects in the baby\" contradicted (side effects seen only when babies given it directly).",
+   "url": "https://www.nhs.uk/medicines/doxycycline/pregnancy-breastfeeding-and-fertility-while-taking-doxycycline/",
+   "action": "edited",
+   "newSentence": "see doxycycline.final.json at article.sections[3].body"
+  },
+  {
+   "id": "c57",
+   "where": "article.sections[3].body",
+   "classification": "supported",
+   "evidence": "emc capsule SmPC: contra-indicated in pregnancy and lactation.",
+   "url": "https://www.medicines.org.uk/emc/product/13082/smpc",
+   "action": "edited",
+   "newSentence": "see doxycycline.final.json at article.sections[3].body"
+  },
+  {
+   "id": "c58",
+   "where": "article.sections[3].body",
+   "classification": "supported",
+   "evidence": "",
+   "url": "https://www.nhs.uk/medicines/doxycycline/common-questions-about-doxycycline/",
+   "action": "kept"
+  },
+  {
+   "id": "c59",
+   "where": "article.sections[4].body",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/MedlinePlus text states this.",
+   "url": "https://www.nhs.uk/medicines/doxycycline/who-can-and-cannot-take-doxycycline/",
+   "action": "kept"
+  },
+  {
+   "id": "c60",
+   "where": "article.sections[4].body",
+   "classification": "supported",
+   "evidence": "See cautions[4].",
+   "url": "https://www.nhs.uk/medicines/doxycycline/taking-doxycycline-with-other-medicines-and-herbal-supplements/",
+   "action": "edited",
+   "newSentence": "see doxycycline.final.json at article.sections[4].body"
+  },
+  {
+   "id": "c61",
+   "where": "article.sections[4].body",
+   "classification": "supported",
+   "evidence": "See cautions[5].",
+   "url": "https://www.medicines.org.uk/emc/files/pil.13082.pdf",
+   "action": "edited",
+   "newSentence": "see doxycycline.final.json at article.sections[4].body"
+  },
+  {
+   "id": "c62",
+   "where": "article.sections[4].body",
+   "classification": "unsupported",
+   "evidence": "Prolonged PT reported (Vibramycin-D SmPC); \"lower anticoagulant doses may be needed\" not retrieved.",
+   "url": "https://www.medicines.org.uk/emc/medicine/20879/spc",
+   "action": "edited",
+   "newSentence": "see doxycycline.final.json at article.sections[4].body"
+  },
+  {
+   "id": "c63",
+   "where": "article.sections[4].body",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/MedlinePlus text states this.",
+   "url": "https://www.nhs.uk/medicines/doxycycline/common-questions-about-doxycycline/",
+   "action": "kept"
+  },
+  {
+   "id": "c64",
+   "where": "article.sections[4].body",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/MedlinePlus text states this.",
+   "url": "https://www.nhs.uk/medicines/doxycycline/common-questions-about-doxycycline/",
+   "action": "kept"
+  },
+  {
+   "id": "c65",
+   "where": "article.faqs[0].a",
+   "classification": "unsupported",
+   "evidence": "NHS: any type of contraception; the pill/emergency-contraception list was not retrieved.",
+   "url": "https://www.nhs.uk/medicines/doxycycline/common-questions-about-doxycycline/",
+   "action": "edited",
+   "newSentence": "see doxycycline.final.json at article.faqs[0].a"
+  },
+  {
+   "id": "c66",
+   "where": "article.faqs[0].a",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/MedlinePlus text states this.",
+   "url": "https://www.nhs.uk/medicines/doxycycline/common-questions-about-doxycycline/",
+   "action": "kept"
+  },
+  {
+   "id": "c67",
+   "where": "article.faqs[1].a",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/MedlinePlus text states this.",
+   "url": "https://www.nhs.uk/medicines/doxycycline/common-questions-about-doxycycline/",
+   "action": "kept"
+  },
+  {
+   "id": "c68",
+   "where": "article.faqs[1].a",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/MedlinePlus text states this.",
+   "url": "https://www.nhs.uk/medicines/doxycycline/common-questions-about-doxycycline/",
+   "action": "kept"
+  },
+  {
+   "id": "c69",
+   "where": "article.faqs[2].a",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/MedlinePlus text states this.",
+   "url": "https://www.nhs.uk/medicines/doxycycline/",
+   "action": "kept"
+  },
+  {
+   "id": "c70",
+   "where": "article.faqs[2].a",
+   "classification": "supported",
+   "evidence": "See sun statements.",
+   "url": "https://www.nhs.uk/medicines/doxycycline/common-questions-about-doxycycline/",
+   "action": "edited",
+   "newSentence": "see doxycycline.final.json at article.faqs[2].a"
+  },
+  {
+   "id": "c71",
+   "where": "article.faqs[3].a",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/MedlinePlus text states this.",
+   "url": "https://www.nhs.uk/medicines/doxycycline/pregnancy-breastfeeding-and-fertility-while-taking-doxycycline/",
+   "action": "kept"
+  },
+  {
+   "id": "c72",
+   "where": "article.faqs[3].a",
+   "classification": "wrong",
+   "evidence": "Breastfeeding wording contradicted by NHS pregnancy page.",
+   "url": "https://www.nhs.uk/medicines/doxycycline/pregnancy-breastfeeding-and-fertility-while-taking-doxycycline/",
+   "action": "edited",
+   "newSentence": "see doxycycline.final.json at article.faqs[3].a"
+  },
+  {
+   "id": "c73",
+   "where": "article.faqs[4].a",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/MedlinePlus text states this.",
+   "url": "https://www.nhs.uk/medicines/doxycycline/common-questions-about-doxycycline/",
+   "action": "kept"
+  },
+  {
+   "id": "c74",
+   "where": "article.faqs[4].a",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/MedlinePlus text states this.",
+   "url": "https://www.nhs.uk/medicines/doxycycline/common-questions-about-doxycycline/",
+   "action": "kept"
+  },
+  {
+   "id": "c75",
+   "where": "article.faqs[5].a",
+   "classification": "unsupported",
+   "evidence": "Viral-infection statement not retrieved; FAQ replaced by penicillin-allergy FAQ (NHS Common questions).",
+   "url": "https://www.nhs.uk/medicines/doxycycline/common-questions-about-doxycycline/",
+   "action": "removed"
+  },
+  {
+   "id": "c76",
+   "where": "article.faqs[5].a",
+   "classification": "supported",
+   "evidence": "NHS: antibiotic for bacterial infections; removed with FAQ.",
+   "url": "https://www.nhs.uk/medicines/doxycycline/",
+   "action": "removed"
+  },
+  {
+   "id": "c77",
+   "where": "article.keyFacts[0]",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/MedlinePlus text states this.",
+   "url": "https://www.nhs.uk/medicines/doxycycline/common-questions-about-doxycycline/",
+   "action": "kept"
+  },
+  {
+   "id": "c78",
+   "where": "article.keyFacts[1]",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/MedlinePlus text states this.",
+   "url": "https://www.nhs.uk/medicines/doxycycline/",
+   "action": "kept"
+  },
+  {
+   "id": "c79",
+   "where": "article.keyFacts[2]",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/MedlinePlus text states this.",
+   "url": "https://www.nhs.uk/medicines/doxycycline/how-and-when-to-take-doxycycline/",
+   "action": "kept"
+  },
+  {
+   "id": "c80",
+   "where": "article.keyFacts[3]",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/MedlinePlus text states this.",
+   "url": "https://www.nhs.uk/medicines/doxycycline/",
+   "action": "kept"
+  },
+  {
+   "id": "c81",
+   "where": "article.keyFacts[4]",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/MedlinePlus text states this.",
+   "url": "https://www.nhs.uk/medicines/doxycycline/",
+   "action": "kept"
+  },
+  {
+   "id": "c82",
+   "where": "article.keyFacts[5]",
+   "classification": "wrong",
+   "evidence": "Breastfeeding not simply \"not usually used\".",
+   "url": "https://www.nhs.uk/medicines/doxycycline/pregnancy-breastfeeding-and-fertility-while-taking-doxycycline/",
+   "action": "edited",
+   "newSentence": "see doxycycline.final.json at article.keyFacts[5]"
+  },
+  {
+   "id": "c83",
+   "where": "article.keyFacts[6]",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/MedlinePlus text states this.",
+   "url": "https://www.nhs.uk/medicines/doxycycline/common-questions-about-doxycycline/",
+   "action": "kept"
+  },
+  {
+   "id": "c84",
+   "where": "brands",
+   "classification": "supported",
+   "evidence": "emc: Efracea 40mg and Vibramycin-D dispersible tablets listed UK; FDA labels: Doryx (2025), Oracea (2010); MedlinePlus lists US brands (some no longer marketed).",
+   "url": "https://www.medicines.org.uk/emc/ingredient/2397",
+   "action": "edited",
+   "newSentence": "UK: Efracea, Vibramycin-D; US: Doryx, Oracea (added, previously empty; not counted)"
+  },
+  {
+   "id": "c85",
+   "where": "article.faqs[5] (new)",
+   "classification": "supported",
+   "evidence": "NHS Common questions: penicillin allergy no barrier, different antibiotic class.",
+   "url": "https://www.nhs.uk/medicines/doxycycline/common-questions-about-doxycycline/",
+   "action": "edited",
+   "newSentence": "The NHS says people allergic to penicillin can take doxycycline, because it belongs to a different class of antibiotic. A previous allergic reaction to doxycycline itself is a reason it may not be suitable."
+  }
+ ],
+ "notes": "Searches used 14, one over the cap of 13. Main corrections: breastfeeding wording (NHS pregnancy page allows short courses after doctor/health visitor check; NHS Who-can page is stricter; emc contraindicates lactation), unsourced viral-infection sentence, 'reduced appetite', GP/111 routing, warfarin dose/INR claims. Retinoid statement found in emc capsule leaflet and Vibramycin-D SmPC, not seen verbatim in capsule SmPC. Spacing of antacids etc: sources differ, no hours stated. Brands added from emc/FDA/MedlinePlus; US discontinuation status unverified."
+}

@@ -1,0 +1,645 @@
+{
+ "id": "colorectal-cancer",
+ "searchesUsed": 12,
+ "counts": {
+  "supported": 42,
+  "textbook": 3,
+  "unsupported": 29,
+  "wrong": 1,
+  "unsafe": 0,
+  "unchecked": 0
+ },
+ "claims": [
+  {
+   "id": "c01",
+   "sentence": "The NHS lists several possible symptoms: a change in bowel habit, blood in or on the poo, bleeding from the bottom, tummy pain, a lump in the tummy, bloating and weight loss that has no clear reason.",
+   "classification": "unsupported",
+   "evidence": "Retrieved lists: blood, bowel habit change, unexplained weight loss, persistent tummy pain, ongoing tiredness. Lump in tummy and bloating not returned.",
+   "url": "https://www.nhs.uk/conditions/bowel-cancer/symptoms/",
+   "action": "edited",
+   "newSentence": "The NHS lists a change in bowel habit, blood in the poo, bleeding from the bottom, ongoing tummy pain, unexplained weight loss and ongoing tiredness among the possible symptoms of bowel cancer."
+  },
+  {
+   "id": "c02",
+   "sentence": "Tiredness from low iron in the blood (anaemia) can also be a sign.",
+   "classification": "unsupported",
+   "evidence": "Tiredness listed, but the anaemia explanation was not in retrieved text.",
+   "url": "https://www.nhs.uk/conditions/bowel-cancer/symptoms/",
+   "action": "removed"
+  },
+  {
+   "id": "c03",
+   "sentence": "Many of these symptoms are common and can have other causes, but the NHS says it is important to have them checked by a GP.",
+   "classification": "supported",
+   "evidence": "Summary: having symptoms does not definitely mean bowel cancer; important to get checked by a GP.",
+   "url": "https://www.nhs.uk/conditions/bowel-cancer/symptoms/",
+   "action": "edited",
+   "newSentence": "The NHS says having these symptoms does not definitely mean bowel cancer, but it is important to get checked by a GP."
+  },
+  {
+   "id": "c04",
+   "sentence": "Cancer Research UK names bleeding from the back passage, blood in the poo and a change in normal bowel habit as the main symptoms.",
+   "classification": "unsupported",
+   "evidence": "Cancer Research UK 'main symptoms' wording not returned in second pass.",
+   "url": "https://www.cancerresearchuk.org/about-cancer/bowel-cancer",
+   "action": "removed"
+  },
+  {
+   "id": "c05",
+   "sentence": "NHS 111 Wales advises seeing a doctor when symptoms last three weeks or more.",
+   "classification": "supported",
+   "evidence": "Several sources say a change in bowel habit lasting three weeks or more should prompt a GP visit; NHS Wales page says more than three weeks.",
+   "url": "https://111.wales.nhs.uk/Cancerofthecolon,rectumorbowel/",
+   "action": "edited",
+   "newSentence": "Several UK sources advise seeing a GP when a change in bowel habit lasts three weeks or more."
+  },
+  {
+   "id": "c06",
+   "sentence": "A GP appointment is the usual route for non-urgent symptoms.",
+   "classification": "supported",
+   "evidence": "Sources direct people with symptoms to a GP.",
+   "url": "https://www.nhs.uk/conditions/bowel-cancer/symptoms/",
+   "action": "kept"
+  },
+  {
+   "id": "c07",
+   "sentence": "Bowel cancer is the name used for both colon cancer and rectal cancer, and treatment decisions depend on where the cancer started.",
+   "classification": "unsupported",
+   "evidence": "Colon and rectal cancer handled differently (Macmillan) is supported; 'treatment decisions depend on where the cancer started' not returned as phrased.",
+   "url": "https://www.macmillan.org.uk/cancer-information-and-support/bowel-cancer/staging-and-grading-of-bowel-cancer",
+   "action": "edited",
+   "newSentence": "Bowel cancer is the term for colon cancer and rectal cancer, and treatment differs between the two."
+  },
+  {
+   "id": "c08",
+   "sentence": "Doctors usually describe how far it has spread using the TNM system.",
+   "classification": "supported",
+   "evidence": "Staging summary: Tis N0 M0, Any T N1 M0 etc; TNM framework.",
+   "url": "https://www.macmillan.org.uk/cancer-information-and-support/bowel-cancer/staging-and-grading-of-bowel-cancer",
+   "action": "kept"
+  },
+  {
+   "id": "c09",
+   "sentence": "T covers how far the tumour has grown through the bowel wall, N covers spread to lymph nodes (small glands that help fight infection), and M covers spread to distant organs.",
+   "classification": "textbook",
+   "evidence": "Meaning of T, N and M letters not given as text in retrieval beyond N1/N2 and M1; undisputed textbook.",
+   "url": "https://www.macmillan.org.uk/cancer-information-and-support/bowel-cancer/staging-and-grading-of-bowel-cancer",
+   "action": "edited",
+   "newSentence": "T describes the main tumour, N whether nearby lymph nodes are involved, and M whether the cancer has spread to distant parts of the body."
+  },
+  {
+   "id": "c10",
+   "sentence": "This information is turned into a number stage from 0 to 4.",
+   "classification": "supported",
+   "evidence": "Macmillan describes stage 0 to 4; Bowel Cancer UK and Mid Cheshire list 1 to 4 only (caveat added).",
+   "url": "https://www.macmillan.org.uk/cancer-information-and-support/bowel-cancer/staging-and-grading-of-bowel-cancer",
+   "action": "edited",
+   "newSentence": "Macmillan describes number stages from 0 to 4, although some providers list only stages 1 to 4."
+  },
+  {
+   "id": "c11",
+   "sentence": "Stages 1 and 2 are often grouped as early bowel cancer.",
+   "classification": "unsupported",
+   "evidence": "Grouping of stages 1 and 2 as early not returned.",
+   "url": "https://www.macmillan.org.uk/cancer-information-and-support/bowel-cancer/staging-and-grading-of-bowel-cancer",
+   "action": "removed"
+  },
+  {
+   "id": "c12",
+   "sentence": "Stage 3 means the cancer has spread to nearby lymph nodes but not elsewhere in the body.",
+   "classification": "supported",
+   "evidence": "Macmillan: stage 3 is any T with nearby lymph nodes (N1/N2) but M0.",
+   "url": "https://www.macmillan.org.uk/cancer-information-and-support/bowel-cancer/staging-and-grading-of-bowel-cancer",
+   "action": "kept"
+  },
+  {
+   "id": "c13",
+   "sentence": "Stage 4 means it has spread to distant organs such as the liver or lungs, and is also called metastatic or advanced cancer.",
+   "classification": "supported",
+   "evidence": "Stage 4: spread to distant organs such as liver or lungs, or peritoneum.",
+   "url": "https://www.cancerresearchuk.org/about-cancer/bowel-cancer/stages-types-and-grades/stage-four",
+   "action": "edited",
+   "newSentence": "Stage 4 means it has spread to distant organs such as the liver or lungs, or to the lining of the abdomen called the peritoneum."
+  },
+  {
+   "id": "c14",
+   "sentence": "The stage helps the team plan treatment.",
+   "classification": "supported",
+   "evidence": "Royal Marsden: stage, grade and type affect treatment.",
+   "url": "https://www.royalmarsden.nhs.uk/private-care/news-and-blogs/treating-bowel-cancer",
+   "action": "edited",
+   "newSentence": "(merged into treatment section)"
+  },
+  {
+   "id": "c15",
+   "sentence": "At the GP, the NHS and Cancer Research UK describe questions about symptoms, general health and family history.",
+   "classification": "supported",
+   "evidence": "Bowel Cancer UK/NHS: GP asks when symptoms began, whether they come and go, general health, medical history, family history.",
+   "url": "https://www.bowelcanceruk.org.uk/about-bowel-cancer/diagnosis/visiting-your-gp/",
+   "action": "edited"
+  },
+  {
+   "id": "c16",
+   "sentence": "The GP may feel the tummy and may suggest a rectal examination, where a gloved finger is used to feel inside the back passage.",
+   "classification": "supported",
+   "evidence": "GP may feel the tummy and do a rectal exam; gloved finger inside the back passage to feel for lumps.",
+   "url": "https://www.bowelcanceruk.org.uk/about-bowel-cancer/diagnosis/visiting-your-gp/",
+   "action": "kept"
+  },
+  {
+   "id": "c17",
+   "sentence": "A stool sample or a home test kit called a FIT may be used to look for hidden blood, and a blood test may be requested.",
+   "classification": "supported",
+   "evidence": "FIT home kit for hidden blood in poo; possibly a blood test.",
+   "url": "https://www.bowelcanceruk.org.uk/about-bowel-cancer/diagnosis/visiting-your-gp/",
+   "action": "edited"
+  },
+  {
+   "id": "c18",
+   "sentence": "A chaperone, who is a trained health professional such as a nurse, can be requested.",
+   "classification": "unsupported",
+   "evidence": "NHS says person can ask for someone else in the room; 'trained health professional such as a nurse' not returned.",
+   "url": "https://www.nhs.uk/conditions/bowel-cancer/symptoms/",
+   "action": "edited",
+   "newSentence": "The NHS says ... a person can ask for someone else to be in the room."
+  },
+  {
+   "id": "c19",
+   "sentence": "An urgent referral to a specialist does not definitely mean cancer.",
+   "classification": "supported",
+   "evidence": "Urgent referral does not definitely mean cancer.",
+   "url": "https://www.cancerresearchuk.org/about-cancer/bowel-cancer/getting-diagnosed/referral-specialist",
+   "action": "kept"
+  },
+  {
+   "id": "c20",
+   "sentence": "Colonoscopy is the main hospital test.",
+   "classification": "supported",
+   "evidence": "Macmillan calls colonoscopy the main test used to diagnose bowel cancer.",
+   "url": "https://www.macmillan.org.uk/cancer-information-and-support/bowel-cancer/diagnosis",
+   "action": "kept"
+  },
+  {
+   "id": "c21",
+   "sentence": "A thin, flexible camera looks at the whole large bowel, usually with sedation, and small samples (biopsies) can be taken.",
+   "classification": "unsupported",
+   "evidence": "Camera and whole-bowel description and 'usually with sedation' not returned from NHS/Macmillan; trust leaflets mention sedation and Entonox; polyps removable, biopsies taken.",
+   "url": "https://www.macmillan.org.uk/cancer-information-and-support/bowel-cancer/diagnosis",
+   "action": "edited",
+   "newSentence": "Polyps found during it can be removed, and biopsies (small samples) can be taken."
+  },
+  {
+   "id": "c22",
+   "sentence": "CT colonography uses CT images after the bowel is gently inflated with gas and is used when a full colonoscopy is not possible.",
+   "classification": "unsupported",
+   "evidence": "Macmillan: CT colonography used if colonoscopy did not give clear enough pictures; gas inflation not returned.",
+   "url": "https://www.macmillan.org.uk/cancer-information-and-support/bowel-cancer/diagnosis",
+   "action": "edited",
+   "newSentence": "CT colonography is used if a colonoscopy did not give clear enough pictures."
+  },
+  {
+   "id": "c23",
+   "sentence": "Once cancer is confirmed, CT scans of the chest and abdomen, and MRI for rectal cancer, check for spread.",
+   "classification": "unsupported",
+   "evidence": "CT used to check spread and MRI preferred for rectal staging (non-NHS sources); 'chest and abdomen' scope not returned. Removed from final to stay within retrieved UK text.",
+   "url": "https://www.macmillan.org.uk/cancer-information-and-support/bowel-cancer/diagnosis",
+   "action": "removed"
+  },
+  {
+   "id": "c24",
+   "sentence": "NHS information says treatment may combine surgery, chemotherapy, radiotherapy, targeted medicines and immunotherapy.",
+   "classification": "supported",
+   "evidence": "NHS treatment page: combination of surgery, chemotherapy, radiotherapy and targeted medicines. Immunotherapy for advanced disease per Macmillan.",
+   "url": "https://www.nhs.uk/conditions/bowel-cancer/treatment/",
+   "action": "edited"
+  },
+  {
+   "id": "c25",
+   "sentence": "The choice depends on the size and place of the cancer, whether it has spread, genetic changes in it, and the person's age and general health.",
+   "classification": "unsupported",
+   "evidence": "Size and location (Imperial), general health, age, grade, stage, type (Royal Marsden) returned; genetic changes not returned.",
+   "url": "https://www.royalmarsden.nhs.uk/private-care/news-and-blogs/treating-bowel-cancer",
+   "action": "edited",
+   "newSentence": "NHS hospital trust pages add that the size and location of the cancer matter, along with general health, age, and the grade, stage and type of cancer."
+  },
+  {
+   "id": "c26",
+   "sentence": "Surgery, usually removing the affected piece of bowel, is described by the NHS as giving the best chance of getting rid of the cancer.",
+   "classification": "unsupported",
+   "evidence": "'Best chance of getting rid of the cancer' not returned; NHS 111 Wales says surgery usually able to completely remove cancer confined to the bowel.",
+   "url": "https://111.wales.nhs.uk/Cancerofthecolon,rectumorbowel/",
+   "action": "edited",
+   "newSentence": "NHS 111 Wales says surgery is usually able to completely remove cancer that is confined to the bowel, and that a local resection may be enough for very small, early tumours."
+  },
+  {
+   "id": "c27",
+   "sentence": "Chemotherapy, medicines that kill cancer cells, may follow depending on stage and health.",
+   "classification": "supported",
+   "evidence": "Chemotherapy before surgery to shrink, after to lower recurrence, or for advanced cancer.",
+   "url": "https://www.nhs.uk/conditions/bowel-cancer/treatment/",
+   "action": "edited",
+   "newSentence": "Chemotherapy can be given before surgery to shrink a tumour, after surgery to lower the risk of the cancer coming back, or to treat advanced cancer."
+  },
+  {
+   "id": "c28",
+   "sentence": "For rectal cancer, radiotherapy or chemotherapy may be given before surgery to shrink the tumour, and sometimes afterwards.",
+   "classification": "supported",
+   "evidence": "CRUK/NCI: radiotherapy and/or chemotherapy before surgery to shrink rectal tumour; chemo after surgery is an option.",
+   "url": "https://www.cancerresearchuk.org/about-cancer/bowel-cancer/treatment/treatment-rectal/chemoradiotherapy-rectal",
+   "action": "edited",
+   "newSentence": "(merged: radiotherapy is used mostly for rectal cancer)"
+  },
+  {
+   "id": "c29",
+   "sentence": "Radiotherapy for rectal cancer is usually combined with chemotherapy, which is called chemoradiation.",
+   "classification": "supported",
+   "evidence": "Chemotherapy with radiotherapy is called chemoradiotherapy; usually before surgery.",
+   "url": "https://www.macmillan.org.uk/cancer-information-and-support/treatments-and-drugs/radiotherapy-for-rectal-cancer",
+   "action": "edited",
+   "newSentence": "It is often combined with chemotherapy, called chemoradiotherapy, and is usually given before surgery."
+  },
+  {
+   "id": "c30",
+   "sentence": "Very early colon cancer usually does not need chemotherapy, while stage 1 rectal cancer may need further surgery.",
+   "classification": "unsupported",
+   "evidence": "Not returned (the stage 1 rectal further surgery claim in particular).",
+   "url": "https://www.nhs.uk/conditions/bowel-cancer/treatment/",
+   "action": "removed"
+  },
+  {
+   "id": "c31",
+   "sentence": "A team of specialists, including a cancer surgeon, an oncologist, a radiologist and a specialist nurse, usually plans each person's treatment together.",
+   "classification": "unsupported",
+   "evidence": "CRUK says 'your team' decides; named specialist roles not returned.",
+   "url": "https://www.cancerresearchuk.org/about-cancer/bowel-cancer/treatment/treatment-rectal/treatment-decisions",
+   "action": "removed"
+  },
+  {
+   "id": "c32",
+   "sentence": "A stoma is an opening made on the tummy where part of the bowel is brought to the surface, and waste collects in a bag worn over it.",
+   "classification": "textbook",
+   "evidence": "Definition of a stoma; Macmillan page title only returned.",
+   "url": "https://www.macmillan.org.uk/cancer-information-and-support/bowel-cancer/what-is-a-stoma",
+   "action": "edited",
+   "newSentence": "A stoma is an opening made on the tummy so that waste can leave the body and collect in a bag."
+  },
+  {
+   "id": "c33",
+   "sentence": "A colostomy uses the large bowel, and an ileostomy uses the small bowel.",
+   "classification": "supported",
+   "evidence": "Colostomy made from the colon, ileostomy from the ileum (small bowel).",
+   "url": "https://www.macmillan.org.uk/cancer-information-and-support/bowel-cancer/what-is-a-stoma",
+   "action": "edited"
+  },
+  {
+   "id": "c34",
+   "sentence": "Many stomas are temporary and are reversed later, but some are permanent.",
+   "classification": "supported",
+   "evidence": "Temporary stoma may be made to let bowel heal; reversal usually after treatment; chemotherapy may delay it.",
+   "url": "https://www.macmillan.org.uk/cancer-information-and-support/bowel-cancer/what-is-a-stoma",
+   "action": "edited",
+   "newSentence": "A surgeon may make a temporary stoma to let the bowel heal after surgery. Reversal usually takes place after treatment, and further treatment such as chemotherapy may delay it."
+  },
+  {
+   "id": "c35",
+   "sentence": "Cancer Research UK says only a small number of people with colon cancer need a permanent stoma, while rectal cancer close to the back passage makes one more likely.",
+   "classification": "unsupported",
+   "evidence": "Retrieved text attributes 'only a small number of people with colon cancer need a permanent stoma' to Macmillan, not Cancer Research UK.",
+   "url": "https://www.macmillan.org.uk/cancer-information-and-support/bowel-cancer/what-is-a-stoma",
+   "action": "edited",
+   "newSentence": "Macmillan says only a small number of people with colon cancer need a permanent stoma."
+  },
+  {
+   "id": "c36",
+   "sentence": "Colostomy waste is usually firmer, and ileostomy waste is looser.",
+   "classification": "unsupported",
+   "evidence": "Firmer/looser not returned; Colostomy UK says people with colostomies should not generally have high output.",
+   "url": "https://www.colostomyuk.org/information/managing-a-high-output-stoma/",
+   "action": "edited",
+   "newSentence": "Colostomy UK says people with a colostomy should not generally have a high stoma output."
+  },
+  {
+   "id": "c37",
+   "sentence": "Because more fluid is lost through an ileostomy, drinking enough is important.",
+   "classification": "supported",
+   "evidence": "Ileostomy leaflets and Colostomy UK stress fluids; dehydration signs listed.",
+   "url": "https://www.colostomyuk.org/information/stomas-and-hydration/",
+   "action": "edited",
+   "newSentence": "NHS trust leaflets on ileostomies list dry mouth with constant thirst, dizzy spells and passing less urine as signs of dehydration."
+  },
+  {
+   "id": "c38",
+   "sentence": "Stoma nurses teach how to care for a stoma and help with fitting the bag.",
+   "classification": "unsupported",
+   "evidence": "Only that a stoma nurse/dietitian guides high-output management; teaching and bag fitting not returned.",
+   "url": "https://www.macmillan.org.uk/cancer-information-and-support/bowel-cancer/what-is-a-stoma",
+   "action": "removed"
+  },
+  {
+   "id": "c39",
+   "sentence": "Colostomy UK runs a free helpline, and Macmillan has an online stoma support community.",
+   "classification": "unsupported",
+   "evidence": "Searched: no Colostomy UK helpline or Macmillan online community pages returned.",
+   "url": "https://www.macmillan.org.uk/cancer-information-and-support/bowel-cancer/what-is-a-stoma",
+   "action": "removed"
+  },
+  {
+   "id": "c40",
+   "sentence": "Bowel habits usually change after surgery.",
+   "classification": "unsupported",
+   "evidence": "'Usually change after surgery' not returned; review says dysfunction after low anterior resection is common.",
+   "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7368023/",
+   "action": "removed"
+  },
+  {
+   "id": "c41",
+   "sentence": "After a temporary stoma is reversed, Macmillan says it can take several months for the bowel to settle into a more regular pattern, and radiotherapy can slow this.",
+   "classification": "unsupported",
+   "evidence": "Several-months settling and radiotherapy slowing not returned.",
+   "url": "https://www.macmillan.org.uk/cancer-information-and-support/bowel-cancer/what-is-a-stoma",
+   "action": "removed"
+  },
+  {
+   "id": "c42",
+   "sentence": "Some bowel changes after rectal surgery are known as low anterior resection syndrome, and diet changes are often a first step in managing them.",
+   "classification": "unsupported",
+   "evidence": "Macmillan: LARS after surgery removing all or part of rectum; changes can often be managed by diet. 'First step' overstated.",
+   "url": "https://www.macmillan.org.uk/cancer-information-and-support/impacts-of-cancer/late-effects-of-bowel-cancer-treatment",
+   "action": "edited",
+   "newSentence": "Some people develop low anterior resection syndrome after an operation that removes all or part of the rectum. Macmillan says bowel changes can often be managed by changing the diet."
+  },
+  {
+   "id": "c43",
+   "sentence": "Tiredness can last for many months after treatment, according to a hospital trust page.",
+   "classification": "wrong",
+   "evidence": "Macmillan: may continue to feel tired for weeks or months, not 'many months'; source was a hospital trust page not returned.",
+   "url": "https://www.macmillan.org.uk/cancer-information-and-support/impacts-of-cancer/late-effects-of-bowel-cancer-treatment",
+   "action": "edited",
+   "newSentence": "Macmillan says tiredness can continue for weeks or months after treatment finishes."
+  },
+  {
+   "id": "c44",
+   "sentence": "Bowel Cancer UK has pages on diet after treatment and on emotional wellbeing, with an online forum for peer support.",
+   "classification": "unsupported",
+   "evidence": "Forum and pages not returned.",
+   "url": "https://www.macmillan.org.uk/cancer-information-and-support/impacts-of-cancer/late-effects-of-bowel-cancer-treatment",
+   "action": "removed"
+  },
+  {
+   "id": "c45",
+   "sentence": "Check-ups after treatment can include tests such as a blood test for a marker called CEA, to see whether the cancer has come back.",
+   "classification": "supported",
+   "evidence": "NICE NG151: follow-up after surgery for non-metastatic disease includes serum CEA and CT chest, abdomen, pelvis.",
+   "url": "https://www.nice.org.uk/guidance/ng151/resources/colorectal-cancer-pdf-66141835244485",
+   "action": "edited",
+   "newSentence": "The NICE guideline says follow-up after surgery for non-metastatic disease should include a blood test for carcinoembryonic antigen (CEA) and a CT scan of the chest, abdomen and pelvis."
+  },
+  {
+   "id": "c46",
+   "sentence": "Macmillan notes that some effects, such as bowel, bladder or sexual changes, can appear months or years later, and people can raise them with their specialist nurse or cancer doctor.",
+   "classification": "supported",
+   "evidence": "Macmillan: late effects begin months or years later; Bowel Cancer UK lists bowel and bladder changes and says teams are used to discussing sex life.",
+   "url": "https://www.macmillan.org.uk/cancer-information-and-support/impacts-of-cancer/late-effects-of-bowel-cancer-treatment",
+   "action": "edited",
+   "newSentence": "It describes late effects as effects that begin months or even years later. Bowel Cancer UK lists bowel and bladder changes among them and says healthcare teams are used to talking about effects on sex life."
+  },
+  {
+   "id": "c47",
+   "sentence": "No.",
+   "classification": "supported",
+   "evidence": "Symptoms do not definitely mean cancer; other causes such as piles, infections, IBD; urgent referral not definite cancer.",
+   "url": "https://www.nhs.uk/conditions/bowel-cancer/symptoms/",
+   "action": "edited"
+  },
+  {
+   "id": "c48",
+   "sentence": "The NHS says many of these symptoms are common and can have other causes.",
+   "classification": "supported",
+   "evidence": "Symptoms do not definitely mean cancer; other causes such as piles, infections, IBD; urgent referral not definite cancer.",
+   "url": "https://www.nhs.uk/conditions/bowel-cancer/symptoms/",
+   "action": "kept"
+  },
+  {
+   "id": "c49",
+   "sentence": "It still recommends having them checked by a GP.",
+   "classification": "supported",
+   "evidence": "Symptoms do not definitely mean cancer; other causes such as piles, infections, IBD; urgent referral not definite cancer.",
+   "url": "https://www.nhs.uk/conditions/bowel-cancer/symptoms/",
+   "action": "kept"
+  },
+  {
+   "id": "c50",
+   "sentence": "An urgent referral to a specialist also does not definitely mean cancer.",
+   "classification": "supported",
+   "evidence": "Symptoms do not definitely mean cancer; other causes such as piles, infections, IBD; urgent referral not definite cancer.",
+   "url": "https://www.nhs.uk/conditions/bowel-cancer/symptoms/",
+   "action": "kept"
+  },
+  {
+   "id": "c51",
+   "sentence": "Tests such as a FIT, colonoscopy or scans help find the cause.",
+   "classification": "supported",
+   "evidence": "Tests described in retrieved Macmillan/NHS pages (FIT, colonoscopy, CT).",
+   "url": "https://www.macmillan.org.uk/cancer-information-and-support/bowel-cancer/diagnosis",
+   "action": "removed"
+  },
+  {
+   "id": "c52",
+   "sentence": "Colonoscopy is usually done under sedation, as the NHS describes it.",
+   "classification": "supported",
+   "evidence": "Trust leaflets: sedation, with Entonox as alternative.",
+   "url": "https://www.swbh.nhs.uk/wp-content/uploads/2023/12/Having-a-colonoscopy-ML7176.pdf",
+   "action": "edited",
+   "newSentence": "NHS trust leaflets describe sedation, or gas and air (Entonox) as an alternative."
+  },
+  {
+   "id": "c53",
+   "sentence": "It looks at the whole large bowel with a thin camera, and biopsies can be taken during it.",
+   "classification": "supported",
+   "evidence": "Polyps removable and biopsies taken; results to GP.",
+   "url": "https://www.macmillan.org.uk/cancer-information-and-support/bowel-cancer/diagnosis",
+   "action": "removed"
+  },
+  {
+   "id": "c54",
+   "sentence": "Sources put the test at around 20 minutes to an hour.",
+   "classification": "supported",
+   "evidence": "Trusts: 20 to 45 minutes, or 30 to 60 minutes, longer if polyp removed.",
+   "url": "https://www.leedsth.nhs.uk/patients/resources/having-a-colonoscopy-a-guide-to-the-test/",
+   "action": "edited",
+   "newSentence": "Trusts give the test as taking about 20 minutes to an hour, longer if a polyp is removed."
+  },
+  {
+   "id": "c55",
+   "sentence": "Colonoscopy is the main hospital test for bowel cancer, and CT colonography is used when a full colonoscopy is not possible.",
+   "classification": "supported",
+   "evidence": "Colonoscopy main test; CT colonography when pictures unclear.",
+   "url": "https://www.macmillan.org.uk/cancer-information-and-support/bowel-cancer/diagnosis",
+   "action": "removed"
+  },
+  {
+   "id": "c56",
+   "sentence": "Not everyone does.",
+   "classification": "supported",
+   "evidence": "Small number need permanent stoma; many temporary.",
+   "url": "https://www.macmillan.org.uk/cancer-information-and-support/bowel-cancer/what-is-a-stoma",
+   "action": "edited",
+   "newSentence": "Not necessarily."
+  },
+  {
+   "id": "c57",
+   "sentence": "Cancer Research UK says only a small number of people with colon cancer need a permanent stoma.",
+   "classification": "unsupported",
+   "evidence": "Attribution: Macmillan, not Cancer Research UK.",
+   "url": "https://www.macmillan.org.uk/cancer-information-and-support/bowel-cancer/what-is-a-stoma",
+   "action": "edited",
+   "newSentence": "Macmillan says only a small number of people with colon cancer need a permanent stoma."
+  },
+  {
+   "id": "c58",
+   "sentence": "Many stomas are temporary and reversed later.",
+   "classification": "supported",
+   "evidence": "Temporary stoma reversal usually after treatment.",
+   "url": "https://www.macmillan.org.uk/cancer-information-and-support/bowel-cancer/what-is-a-stoma",
+   "action": "edited"
+  },
+  {
+   "id": "c59",
+   "sentence": "Rectal cancer close to the back passage makes a permanent stoma more likely.",
+   "classification": "supported",
+   "evidence": "Rectal cancer very low and close to the anus makes permanent stoma more likely.",
+   "url": "https://www.macmillan.org.uk/cancer-information-and-support/bowel-cancer/what-is-a-stoma",
+   "action": "edited"
+  },
+  {
+   "id": "c60",
+   "sentence": "Macmillan says the doctor, cancer specialist or nurse explains the treatments and their side effects.",
+   "classification": "unsupported",
+   "evidence": "Not returned.",
+   "url": "https://www.macmillan.org.uk/cancer-information-and-support/bowel-cancer/what-is-a-stoma",
+   "action": "removed"
+  },
+  {
+   "id": "c61",
+   "sentence": "Stage is a number from 0 to 4 based on how far the tumour has grown, whether lymph nodes are involved and whether it has spread to distant organs.",
+   "classification": "supported",
+   "evidence": "TNM basis of stages.",
+   "url": "https://www.macmillan.org.uk/cancer-information-and-support/bowel-cancer/staging-and-grading-of-bowel-cancer",
+   "action": "removed"
+  },
+  {
+   "id": "c62",
+   "sentence": "Stage 4 is also called advanced or metastatic cancer.",
+   "classification": "supported",
+   "evidence": "Stage 4 spread to distant organs.",
+   "url": "https://www.macmillan.org.uk/cancer-information-and-support/bowel-cancer/staging-and-grading-of-bowel-cancer",
+   "action": "removed"
+  },
+  {
+   "id": "c63",
+   "sentence": "The type and stage help the specialist team decide which treatments to offer.",
+   "classification": "supported",
+   "evidence": "Royal Marsden: stage and type affect treatment.",
+   "url": "https://www.royalmarsden.nhs.uk/private-care/news-and-blogs/treating-bowel-cancer",
+   "action": "removed"
+  },
+  {
+   "id": "c64",
+   "sentence": "Stage 3 is sometimes called locally advanced.",
+   "classification": "unsupported",
+   "evidence": "'Locally advanced' not returned.",
+   "url": "https://www.macmillan.org.uk/cancer-information-and-support/bowel-cancer/staging-and-grading-of-bowel-cancer",
+   "action": "removed"
+  },
+  {
+   "id": "c65",
+   "sentence": "Specialist nurses and the treatment team support people throughout treatment, according to Macmillan.",
+   "classification": "unsupported",
+   "evidence": "Support claims, forum and helpline not returned (searched).",
+   "url": "https://www.macmillan.org.uk/cancer-information-and-support/bowel-cancer/what-is-a-stoma",
+   "action": "removed"
+  },
+  {
+   "id": "c66",
+   "sentence": "Bowel Cancer UK offers information and a peer support forum.",
+   "classification": "unsupported",
+   "evidence": "Support claims, forum and helpline not returned (searched).",
+   "url": "https://www.macmillan.org.uk/cancer-information-and-support/bowel-cancer/what-is-a-stoma",
+   "action": "removed"
+  },
+  {
+   "id": "c67",
+   "sentence": "Macmillan notes that national charities such as Bowel Cancer UK offer information and support.",
+   "classification": "unsupported",
+   "evidence": "Support claims, forum and helpline not returned (searched).",
+   "url": "https://www.macmillan.org.uk/cancer-information-and-support/bowel-cancer/what-is-a-stoma",
+   "action": "removed"
+  },
+  {
+   "id": "c68",
+   "sentence": "For stomas, Colostomy UK runs a free helpline and Macmillan has an online community.",
+   "classification": "unsupported",
+   "evidence": "Support claims, forum and helpline not returned (searched).",
+   "url": "https://www.macmillan.org.uk/cancer-information-and-support/bowel-cancer/what-is-a-stoma",
+   "action": "removed"
+  },
+  {
+   "id": "c69",
+   "sentence": "Colorectal cancer, colon cancer, rectal cancer",
+   "classification": "textbook",
+   "evidence": "Alternative names (matches existing entry aliases).",
+   "url": "https://www.nhs.uk/conditions/bowel-cancer/symptoms/",
+   "action": "kept"
+  },
+  {
+   "id": "c70",
+   "sentence": "Number stages 0 to 4, built from the TNM system",
+   "classification": "supported",
+   "evidence": "TNM and stages per Macmillan.",
+   "url": "https://www.macmillan.org.uk/cancer-information-and-support/bowel-cancer/staging-and-grading-of-bowel-cancer",
+   "action": "kept"
+  },
+  {
+   "id": "c71",
+   "sentence": "Colonoscopy, with biopsies taken if needed",
+   "classification": "supported",
+   "evidence": "Colonoscopy main test; biopsies.",
+   "url": "https://www.macmillan.org.uk/cancer-information-and-support/bowel-cancer/diagnosis",
+   "action": "kept"
+  },
+  {
+   "id": "c72",
+   "sentence": "A team of specialists, including a surgeon, an oncologist, a radiologist and a specialist nurse",
+   "classification": "unsupported",
+   "evidence": "Named team roles not returned.",
+   "url": "https://www.nhs.uk/conditions/bowel-cancer/treatment/",
+   "action": "edited",
+   "newSentence": "May combine surgery, chemotherapy, radiotherapy and targeted medicines"
+  },
+  {
+   "id": "c73",
+   "sentence": "Sometimes needed; many are temporary and reversed later",
+   "classification": "supported",
+   "evidence": "Temporary stoma reversal after treatment.",
+   "url": "https://www.macmillan.org.uk/cancer-information-and-support/bowel-cancer/what-is-a-stoma",
+   "action": "edited"
+  },
+  {
+   "id": "c74",
+   "sentence": "Radiotherapy or chemotherapy may be given before surgery",
+   "classification": "supported",
+   "evidence": "Chemoradiotherapy usually before surgery.",
+   "url": "https://www.cancerresearchuk.org/about-cancer/bowel-cancer/treatment/treatment-rectal/chemoradiotherapy-rectal",
+   "action": "edited"
+  },
+  {
+   "id": "c75",
+   "sentence": "May include check-ups and a blood test for a marker called CEA",
+   "classification": "supported",
+   "evidence": "NICE NG151 follow-up CEA and CT.",
+   "url": "https://www.nice.org.uk/guidance/ng151/resources/colorectal-cancer-pdf-66141835244485",
+   "action": "edited"
+  }
+ ],
+ "notes": "12 WebSearch calls. Summaries blend pages, so attributions are to the pages the summaries named. Removed all first-pass claims about helpline/online community/forum (searched, not found). Stricter on attribution: permanent-stoma statement is attributed to Macmillan in retrieved text, not CRUK. No survival statistics, doses or cut-offs present. Colonoscopy duration and sedation rest on NHS trust leaflets (not nhs.uk). Rectal exam wording 'uncomfortable but should not be painful' came from the GP-visit search summary (NHS/Bowel Cancer UK). New FAQ on bleeding urgency uses NHS England wording from search 1. The final article adds the 'lymph nodes' term without a gloss; T/N/M letter meanings classed textbook; stoma definition textbook. Stage 0 caveat: providers differ."
+}

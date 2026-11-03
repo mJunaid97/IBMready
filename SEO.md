@@ -28,6 +28,7 @@ One canonical, lowercase, hyphenated, trailing-slash URL per entity, flat under 
 | Anatomy (organs) | `/anatomy/heart/` | canonical entity page; `/organs/` is a browse hub, `/organs/<id>/` 301s here |
 | Body systems | `/systems/heart/` | the atlas systems (ids are stable deep-link keys of the explorer) |
 | Physiology … Health | `/physiology/cardiac-cycle/`, `/symptoms/chest-pain/`, `/conditions/hypertension/`, `/tests/complete-blood-count/`, `/imaging/x-ray/`, `/procedures/angioplasty/`, `/medications/amlodipine/`, `/drug-classes/statins/`, `/first-aid/cpr/`, `/health/sleep/` | |
+| Blog and health news | `/blog/`, `/blog/who-child-obesity-guidelines/`, `/feed.xml` | guides and news briefs, one URL per post; the hub is indexable, the RSS feed is written by `tools/package-site.py` for production builds |
 | Medical terms | `/medical-terms/#distal` | one substantial glossary page; per-term pages are deliberately not published while entries are short |
 | Hubs | `/anatomy/`, `/organs/`, `/systems/`, `/conditions/` … `/medical-terms/`, `/study/`, `/explorer/` | |
 | Policies | `/about/`, `/editorial-policy/`, `/medical-review-policy/`, `/references-policy/`, `/corrections-policy/`, `/disclaimer/`, `/contact/` | linked from every footer |
@@ -89,7 +90,10 @@ slash → with slash, `/organs/<id>/` → `/anatomy/<id>/`, `/learn/terminology.
   `MedicalWebPage` (author organisation, `dateModified`, structured `citation` list; `lastReviewed` only once a
   review has happened) and the entity node: `AnatomicalStructure`, `AnatomicalSystem`, `MedicalCondition`,
   `MedicalSignOrSymptom`, `MedicalTest`, `ImagingTest`, `MedicalProcedure`, `Drug` (with `DrugClass`),
-  `DrugClass`, `HowTo` (first aid), `DefinedTermSet` (terminology), `CollectionPage` + `ItemList` (hubs).
+  `DrugClass`, `HowTo` (first aid), `DefinedTermSet` (terminology), `CollectionPage` + `ItemList` (hubs). A blog post is a
+  `WebPage` whose entity node is an `Article` (a guide) or a `NewsArticle` (a news brief), with `datePublished`,
+  `dateModified`, the site image, the editorial team as author and, for a news brief, `isBasedOn` naming the announcement
+  and its publisher; `about` lists the conditions the post links to.
   Schema is generated from the same data the page shows; nothing is added that is not visible.
 
 ## 5. Breadcrumbs, internal linking, related topics
@@ -135,7 +139,7 @@ requires. `tools/package-site.py` assigns every URL to exactly one group through
 | `/sitemaps/anatomy.xml` | the `/anatomy/`, `/systems/` and `/organs/` hubs, every organ article and body system | 31 |
 | `/sitemaps/clinical.xml` | physiology, symptoms, conditions, tests, the test-category hub and its indexable categories, biomarkers, imaging, procedures, first aid, health, comparisons | 245 |
 | `/sitemaps/medications.xml` | medications, the class hub, drug classes, drug targets | 92 |
-| `/sitemaps/learning.xml` | `/medical-terms/`, `/study/` | 2 |
+| `/sitemaps/learning.xml` | `/medical-terms/`, `/study/`, the `/blog/` hub and every indexable post | 2 + the posts |
 
 Every entry carries only `<loc>` and a meaningful `<lastmod>`; `<changefreq>` and `<priority>` are never
 emitted, because Google does not use them (specification section 8). One function decides membership —
@@ -154,6 +158,17 @@ carry `noindex,follow` in their server-rendered HTML and stay out of every sitem
 is served `X-Robots-Tag: noindex, follow` from `.htaccess` and `vercel.json`, because a crawler reads the
 prerendered HTML and never runs the script that used to set it. Rendering assets are never blocked, and the
 clinical tools under `/tools/` are indexable pages.
+
+### The blog and its feed
+
+A post's page title is `<name> | Anatomy Nexus` and its `name` is limited to 15 to 49 characters so the title fits the 65 the
+smoke test allows. The search snippet is the post's `summary` (70 to 160 characters, or its leading whole sentences that fit) or an
+explicit `metaDescription`; the compiler derives and validates it (`derive_meta_description` in `tools/build-content.py`), so a post
+cannot be published with a snippet that the smoke test would reject. `feed.xml` is RSS 2.0 with the 50 newest indexable posts
+(title, link, guid, publication date, kind and summary), newest first, absolute HTTPS links only; the packager writes it for a
+production build and the hub's RSS button and `<link rel="alternate">` point at it. The smoke test fetches it and checks that every
+item is a sitemap URL. News briefs are dated, attributed summaries of an official announcement, never a prediction or advice; they are
+not submitted to Google News (a news sitemap would need a publisher application), and old briefs stay on the site as dated records.
 
 ## 9. Performance
 

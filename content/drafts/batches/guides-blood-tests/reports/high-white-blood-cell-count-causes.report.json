@@ -1,0 +1,277 @@
+{
+ "id": "high-white-blood-cell-count-causes",
+ "searchesUsed": 16,
+ "counts": {
+  "supported": 22,
+  "textbook": 1,
+  "unsupported": 7,
+  "wrong": 0,
+  "unsafe": 1,
+  "unchecked": 0
+ },
+ "claims": [
+  {
+   "id": "c01",
+   "classification": "supported",
+   "evidence": "MedlinePlus: finding not a diagnosis; infection, commonly bacterial, is a frequent cause; differential splits cell types",
+   "url": "https://medlineplus.gov/ency/article/003643.htm",
+   "action": "kept"
+  },
+  {
+   "id": "c02",
+   "classification": "unsupported",
+   "evidence": "NHS inform page not seen. LTO/Severn Pathology: FBC measures number and type of cells: red cells, white cells, platelets",
+   "url": "https://labtestsonline.org.uk/tests/full-blood-count-fbc",
+   "action": "edited",
+   "newSentence": "A full blood count measures the number and type of cells in the blood, including red cells, white cells and platelets."
+  },
+  {
+   "id": "c03",
+   "classification": "supported",
+   "evidence": "Lab reports give total white cell count plus differential for the five types",
+   "url": "https://labtestsonline.org.uk/tests/full-blood-count-fbc",
+   "action": "kept"
+  },
+  {
+   "id": "c04",
+   "classification": "supported",
+   "evidence": "Five main types: neutrophils, lymphocytes, monocytes, eosinophils, basophils",
+   "url": "https://labtestsonline.org.uk/tests/full-blood-count-fbc",
+   "action": "kept"
+  },
+  {
+   "id": "c05",
+   "classification": "textbook",
+   "evidence": "Plain undisputed fact; search found no dedicated source",
+   "url": "https://labtestsonline.org.uk/tests/full-blood-count-fbc",
+   "action": "kept"
+  },
+  {
+   "id": "c06",
+   "classification": "supported",
+   "evidence": "A high count is a finding, not a diagnosis; many possible causes",
+   "url": "https://labtestsonline.org.uk/tests/white-blood-cell-count",
+   "action": "kept"
+  },
+  {
+   "id": "c07",
+   "classification": "supported",
+   "evidence": "MedlinePlus: high WBC can indicate infection, inflammation, or leukaemia and other blood disorders",
+   "url": "https://medlineplus.gov/ency/article/003643.htm",
+   "action": "kept"
+  },
+  {
+   "id": "c08",
+   "classification": "supported",
+   "evidence": "StatPearls/BNSSG: infection, most commonly bacterial, is a frequent cause",
+   "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK560882/",
+   "action": "kept"
+  },
+  {
+   "id": "c09",
+   "classification": "supported",
+   "evidence": "LTO: older people sometimes do not show a raised count with infection; counts differ by age and time of day",
+   "url": "https://labtestsonline.org.uk/tests/white-blood-cell-count",
+   "action": "kept"
+  },
+  {
+   "id": "c10",
+   "classification": "supported",
+   "evidence": "LTO: inflammation such as rheumatoid arthritis; MedlinePlus: allergic reactions, autoimmune or inflammatory disorders",
+   "url": "https://medlineplus.gov/ency/article/003643.htm",
+   "action": "kept"
+  },
+  {
+   "id": "c11",
+   "classification": "supported",
+   "evidence": "MedlinePlus: certain steroids can raise it; glucocorticoid-induced leukocytosis",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6833099/",
+   "action": "kept"
+  },
+  {
+   "id": "c12",
+   "classification": "unsupported",
+   "evidence": "Burns/tissue damage not stated in retrieved text",
+   "url": "https://medlineplus.gov/ency/article/003643.htm",
+   "action": "removed"
+  },
+  {
+   "id": "c13",
+   "classification": "unsupported",
+   "evidence": "Retrieved: physiologic stress (StatPearls), physical or emotional stress can affect results (LTO); injury and surgery not stated",
+   "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK560882/",
+   "action": "edited",
+   "newSentence": "Physical or emotional stress can affect the white cell count."
+  },
+  {
+   "id": "c14",
+   "classification": "supported",
+   "evidence": "MedlinePlus: smoking, stress, medicines or pregnancy may raise count; LTO: pregnancy, especially later stages",
+   "url": "https://medlineplus.gov/ency/article/003643.htm",
+   "action": "kept"
+  },
+  {
+   "id": "c15",
+   "classification": "supported",
+   "evidence": "LTO: a high neutrophil count usually suggests bacterial infection, inflammation, or physical stress",
+   "url": "https://labtestsonline.org.uk/tests/white-blood-cell-count",
+   "action": "kept"
+  },
+  {
+   "id": "c16",
+   "classification": "supported",
+   "evidence": "High lymphocytes can reflect viral infection or CLL (BNSSG/Peninsula guidance)",
+   "url": "https://remedy.bnssg.icb.nhs.uk/adults/haematology/leucocytosis-including-neutrophilia-and-lymphocytosis/",
+   "action": "kept"
+  },
+  {
+   "id": "c17",
+   "classification": "unsupported",
+   "evidence": "MedlinePlus lists leukaemia or Hodgkin disease as possible causes; persistence and follow-up not stated",
+   "url": "https://medlineplus.gov/ency/article/003643.htm",
+   "action": "edited",
+   "newSentence": "Leukaemia and Hodgkin disease are among the conditions that can cause a high white cell count."
+  },
+  {
+   "id": "c18",
+   "classification": "supported",
+   "evidence": "Hampshire: persistent mild leucocytosis likely associated with chronic inflammatory or infective process or smoking",
+   "url": "https://www.hampshirehospitals.nhs.uk/application/files/8017/6112/5908/Leukocytosis.pdf",
+   "action": "kept"
+  },
+  {
+   "id": "c19",
+   "classification": "supported",
+   "evidence": "Hampshire: unexplained very high count is an indication for urgent haematology referral",
+   "url": "https://www.hampshirehospitals.nhs.uk/application/files/8017/6112/5908/Leukocytosis.pdf",
+   "action": "kept"
+  },
+  {
+   "id": "c20",
+   "classification": "supported",
+   "evidence": "Differential (FBC), blood film and repeat counts mentioned in Hampshire/Sheffield guidance",
+   "url": "https://www.hampshirehospitals.nhs.uk/application/files/8017/6112/5908/Leukocytosis.pdf",
+   "action": "kept"
+  },
+  {
+   "id": "c21",
+   "classification": "supported",
+   "evidence": "Lab reports print the range their own laboratory uses; ranges vary with age and sex",
+   "url": "https://labtestsonline.org.uk/tests/full-blood-count-fbc",
+   "action": "kept"
+  },
+  {
+   "id": "c22",
+   "classification": "unsafe",
+   "evidence": "NHS 111/same-day GP advice for fever not retrieved; NHS heart attack page: severe breathing difficulty or collapse needs 999",
+   "url": "https://www.nhs.uk/conditions/heart-attack/",
+   "action": "edited",
+   "newSentence": "The NHS says severe breathing difficulty, or someone who has passed out and is not responding normally, needs a 999 call."
+  },
+  {
+   "id": "c23",
+   "classification": "unsupported",
+   "evidence": "NHS CML page: GP may arrange blood test; very high level of white blood cells could be a sign of leukaemia; \"abnormal\" not stated",
+   "url": "https://www.nhs.uk/conditions/chronic-myeloid-leukaemia/symptoms/",
+   "action": "edited",
+   "newSentence": "A GP may arrange a blood test if leukaemia is suspected, and a very high white cell count could be a sign of it."
+  },
+  {
+   "id": "c24",
+   "classification": "supported",
+   "evidence": "NHS 111 Wales: if results are abnormal you will be urgently referred to a haematologist",
+   "url": "http://111.wales.nhs.uk/Encyclopaedia/l/article/leukaemia,acutemyeloid/",
+   "action": "kept"
+  },
+  {
+   "id": "c25",
+   "classification": "unsupported",
+   "evidence": "Symptoms retrieved from Cancer Research UK, Royal Marsden and others; NHS attribution not confirmed",
+   "url": "https://www.cancerresearchuk.org/about-cancer/chronic-lymphocytic-leukaemia-cll/symptoms",
+   "action": "edited",
+   "newSentence": "UK sources list tiredness, bleeding or bruising easily, night sweats, weight loss and frequent infections among leukaemia symptoms."
+  },
+  {
+   "id": "c26",
+   "classification": "unsupported",
+   "evidence": "CRUK: symptoms can be vague, minor conditions common, leukaemia rare; NHS wording not seen",
+   "url": "https://www.cancerresearchuk.org/about-cancer/chronic-lymphocytic-leukaemia-cll/symptoms",
+   "action": "edited",
+   "newSentence": "Cancer Research UK says leukaemia symptoms can be vague, and that minor conditions are common while leukaemia is rare."
+  },
+  {
+   "id": "c27",
+   "classification": "supported",
+   "evidence": "NHS CML symptoms page: non-urgent advice, see a GP if you have symptoms",
+   "url": "https://www.nhs.uk/conditions/chronic-myeloid-leukaemia/symptoms/",
+   "action": "kept"
+  },
+  {
+   "id": "c28",
+   "classification": "supported",
+   "evidence": "MedlinePlus: infections, steroids, stress, smoking; leukaemia among causes",
+   "url": "https://medlineplus.gov/ency/article/003643.htm",
+   "action": "kept"
+  },
+  {
+   "id": "c29",
+   "classification": "supported",
+   "evidence": "Differential breaks total into five types; neutrophil/lymphocyte patterns point to causes",
+   "url": "https://labtestsonline.org.uk/tests/full-blood-count-fbc",
+   "action": "kept"
+  },
+  {
+   "id": "c30",
+   "classification": "supported",
+   "evidence": "Hampshire: persistent mild rise likely chronic inflammatory/infective process or smoking; unexplained very high count urgent haematology",
+   "url": "https://www.hampshirehospitals.nhs.uk/application/files/8017/6112/5908/Leukocytosis.pdf",
+   "action": "kept"
+  },
+  {
+   "id": "c31",
+   "classification": "supported",
+   "evidence": "A high count is a finding not a diagnosis; persistent counts are repeated (Sheffield guidance)",
+   "url": "https://labtestsonline.org.uk/tests/white-blood-cell-count",
+   "action": "kept"
+  }
+ ],
+ "additions": [
+  {
+   "section": "body[2]",
+   "sentence": "Corticosteroids raise the white cell count partly by increasing the release of neutrophils from the bone marrow.",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6833099/",
+   "evidence": "corticosteroids also increase the bone marrow release rate of neutrophils, a major cause of the leukocytosis"
+  },
+  {
+   "section": "body[3]",
+   "sentence": "Reactive lymphocytes on a blood film point to infection, typically viral, as the likely cause of a raised lymphocyte count.",
+   "url": "https://remedy.bnssg.icb.nhs.uk/adults/haematology/leucocytosis-including-neutrophilia-and-lymphocytosis/",
+   "evidence": "Reactive lymphocytes seen on a blood film indicates that the most likely cause is infection, typically viral"
+  },
+  {
+   "section": "body[3]",
+   "sentence": "Smoking commonly causes a mild rise in neutrophils, lymphocytes or both.",
+   "url": "https://remedy.bnssg.icb.nhs.uk/adults/haematology/leucocytosis-including-neutrophilia-and-lymphocytosis/",
+   "evidence": "Smoking commonly causes a mild neutrophilia and/or lymphocytosis"
+  },
+  {
+   "section": "body[2]",
+   "sentence": "Physical stress can make the white cell count rise within hours, because the body holds a large store of neutrophils in the bone marrow and blood vessels.",
+   "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK560882/",
+   "evidence": "count can double within hours after certain stimuli because of bone marrow storage and marginated pools of neutrophils"
+  },
+  {
+   "section": "body[5]",
+   "sentence": "For suspected leukaemia the NHS says a GP asks about symptoms and medical history, examines the person and sends a blood sample for testing.",
+   "url": "https://www.nhs.uk/conditions/chronic-lymphocytic-leukaemia/diagnosis/",
+   "evidence": "GP asks about symptoms and history, examines you, sends blood sample; main test is full blood count"
+  },
+  {
+   "section": "body[4]",
+   "sentence": "Medicines and a recent blood transfusion can also change white cell results, according to laboratory guidance.",
+   "url": "https://labtestsonline.org.uk/tests/white-blood-cell-count",
+   "evidence": "Medicines and a recent blood transfusion can also change results (source page unclear in summary)"
+  }
+ ],
+ "notes": "NHS inform, Gloucestershire and Hampshire pages came through only as search summaries. Last addition rests on an unattributed summary line; drop if unverified. Persistent-lymphocytosis timing figures were not added. Hampshire referral thresholds are numeric and deliberately left out of prose. c12 removed; flow check needed."
+}

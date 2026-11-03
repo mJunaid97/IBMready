@@ -1,0 +1,103 @@
+{
+ "id": "fda-imlunestrant-abemaciclib-breast-cancer",
+ "searchesUsed": 4,
+ "counts": {
+  "supported": 9,
+  "textbook": 2,
+  "unsupported": 0,
+  "wrong": 0,
+  "unsafe": 0,
+  "unchecked": 0
+ },
+ "claims": [
+  {
+   "id": "c01",
+   "sentenceId": "summary",
+   "classification": "supported",
+   "evidence": "FDA approved imlunestrant (Inluriyo) with abemaciclib on September 18, 2026 for ER+, HER2-, ESR1-mutated advanced/metastatic breast cancer",
+   "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-imlunestrant-combination-abemaciclib-er-positive-her2-negative-esr1-mutated-advanced-or",
+   "action": "kept"
+  },
+  {
+   "id": "c02",
+   "sentenceId": "keyPoints[0]",
+   "classification": "supported",
+   "evidence": "Approval of imlunestrant with abemaciclib (Verzenio) on September 18, 2026",
+   "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-imlunestrant-combination-abemaciclib-er-positive-her2-negative-esr1-mutated-advanced-or",
+   "action": "kept"
+  },
+  {
+   "id": "c03",
+   "sentenceId": "keyPoints[1]",
+   "classification": "supported",
+   "evidence": "Adults with ER-positive, HER2-negative, ESR1-mutated advanced or metastatic breast cancer",
+   "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-imlunestrant-combination-abemaciclib-er-positive-her2-negative-esr1-mutated-advanced-or",
+   "action": "kept"
+  },
+  {
+   "id": "c04",
+   "sentenceId": "keyPoints[2]",
+   "classification": "supported",
+   "evidence": "FDA also approved Guardant360 CDx to identify ESR1 mutations",
+   "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-imlunestrant-combination-abemaciclib-er-positive-her2-negative-esr1-mutated-advanced-or",
+   "action": "kept"
+  },
+  {
+   "id": "c05",
+   "sentenceId": "keyPoints[3]",
+   "classification": "textbook",
+   "evidence": "Editorial statement about UK regulation; plain general fact (separate regulators), not from FDA text",
+   "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-imlunestrant-combination-abemaciclib-er-positive-her2-negative-esr1-mutated-advanced-or",
+   "action": "kept"
+  },
+  {
+   "id": "c06",
+   "sentenceId": "body[0].s0",
+   "classification": "supported",
+   "evidence": "Approved 18 Sept 2026, imlunestrant (Inluriyo) with abemaciclib (Verzenio)",
+   "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-imlunestrant-combination-abemaciclib-er-positive-her2-negative-esr1-mutated-advanced-or",
+   "action": "kept"
+  },
+  {
+   "id": "c07",
+   "sentenceId": "body[0].s1",
+   "classification": "supported",
+   "evidence": "Adults, ER+/HER2-/ESR1-mutated advanced or metastatic breast cancer",
+   "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-imlunestrant-combination-abemaciclib-er-positive-her2-negative-esr1-mutated-advanced-or",
+   "action": "kept"
+  },
+  {
+   "id": "c08",
+   "sentenceId": "body[0].s2",
+   "classification": "supported",
+   "evidence": "Guardant360 CDx approved as companion diagnostic for ESR1 mutations for treatment with imlunestrant and abemaciclib",
+   "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-imlunestrant-combination-abemaciclib-er-positive-her2-negative-esr1-mutated-advanced-or",
+   "action": "kept"
+  },
+  {
+   "id": "c09",
+   "sentenceId": "body[1].s0",
+   "classification": "supported",
+   "evidence": "EMBER-3 randomized 1:1:1 to imlunestrant, investigator's choice endocrine therapy (fulvestrant or exemestane), or imlunestrant plus abemaciclib. 'Phase 3' not seen in snippet but EMBER-3 is a phase 3 trial (clinicaltrials.gov/FDA).",
+   "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-imlunestrant-combination-abemaciclib-er-positive-her2-negative-esr1-mutated-advanced-or",
+   "action": "removed"
+  },
+  {
+   "id": "c10",
+   "sentenceId": "body[1].s1",
+   "classification": "supported",
+   "evidence": "FDA approved imlunestrant monotherapy on September 25, 2025 for ESR1-mutated disease after at least one line of endocrine therapy",
+   "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-imlunestrant-er-positive-her2-negative-esr1-mutated-advanced-or-metastatic-breast",
+   "action": "kept"
+  },
+  {
+   "id": "c11",
+   "sentenceId": "body[1].s2",
+   "classification": "textbook",
+   "evidence": "Editorial statement about UK regulation; plain general fact (separate regulators), not from FDA text",
+   "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-imlunestrant-combination-abemaciclib-er-positive-her2-negative-esr1-mutated-advanced-or",
+   "action": "kept"
+  }
+ ],
+ "notes": "No errors found. Optional nuance: 'phase 3' was not in retrieved snippet text; low risk."
+}

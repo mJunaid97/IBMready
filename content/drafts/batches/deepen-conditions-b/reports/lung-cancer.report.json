@@ -1,0 +1,560 @@
+{
+ "id": "lung-cancer",
+ "searchesUsed": 12,
+ "counts": {
+  "supported": 26,
+  "textbook": 4,
+  "unsupported": 33,
+  "wrong": 1,
+  "unsafe": 0,
+  "unchecked": 0
+ },
+ "claims": [
+  {
+   "id": "c01",
+   "sentence": "Lung cancer is mostly divided into two groups, called non-small cell and small cell lung cancer.",
+   "classification": "supported",
+   "evidence": "MedlinePlus: NSCLC 85 percent, SCLC remaining 15 percent",
+   "url": "https://medlineplus.gov/genetics/condition/lung-cancer/",
+   "action": "kept"
+  },
+  {
+   "id": "c02",
+   "sentence": "Roy Castle says around 85 in every 100 people with lung cancer have a non-small cell type and about 15 in 100 have small cell lung cancer.",
+   "classification": "unsupported",
+   "evidence": "Figures 85/15 carried by MedlinePlus; the Roy Castle page was not returned, so the attribution is unverified",
+   "url": "https://medlineplus.gov/genetics/condition/lung-cancer/",
+   "action": "edited",
+   "newSentence": "MedlinePlus says non-small cell lung cancer accounts for 85 percent of lung cancer, and small cell lung cancer accounts for the remaining 15 percent."
+  },
+  {
+   "id": "c03",
+   "sentence": "Adenocarcinoma is the most common kind of non-small cell cancer.",
+   "classification": "textbook",
+   "evidence": "Search text said adenocarcinoma is the most common type (unnamed page); undisputed textbook fact",
+   "url": "",
+   "action": "kept"
+  },
+  {
+   "id": "c04",
+   "sentence": "It grows more slowly than some other types, but it can spread early.",
+   "classification": "unsupported",
+   "evidence": "Nothing retrieved for adenocarcinoma growth or early spread; only patent text on well-differentiated squamous growing slowly",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c05",
+   "sentence": "Squamous cell carcinoma starts in the cells that line the airways and is often caused by smoking.",
+   "classification": "unsupported",
+   "evidence": "Only patent text; search itself noted no health-publisher text established the smoking link",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c06",
+   "sentence": "Large cell carcinoma is less common and tends to spread outside the lung at an earlier stage than other non-small cell types.",
+   "classification": "unsupported",
+   "evidence": "Search explicitly found no source for early spread of large cell carcinoma",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c07",
+   "sentence": "Small cell lung cancer grows and spreads more quickly than the non-small cell types and is strongly linked with smoking.",
+   "classification": "unsupported",
+   "evidence": "Only patent documents said SCLC grows rapidly and is almost always caused by smoking; no publisher page returned",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c08",
+   "sentence": "Because small cell cancer often spreads quite early, doctors generally treat it as if it has spread, whether or not a secondary cancer shows up.",
+   "classification": "unsupported",
+   "evidence": "Only patent text; NHS says surgery is not usually used for SCLC because it has often already spread by diagnosis",
+   "url": "https://www.nhs.uk/conditions/lung-cancer/treatment/",
+   "action": "edited",
+   "newSentence": "It also says surgery is not usually used to treat small cell lung cancer, because the cancer has often already spread to other areas of the body by the time it is diagnosed."
+  },
+  {
+   "id": "c09",
+   "sentence": "Knowing the type matters, because the NHS says treatment depends on the type of lung cancer and how far it has spread.",
+   "classification": "supported",
+   "evidence": "NHS: treatment depends on size and location, type, whether spread, genetic changes, general health",
+   "url": "https://www.nhs.uk/conditions/lung-cancer/treatment/",
+   "action": "edited",
+   "newSentence": "The NHS says treatment depends on the size of the cancer and where it is, the type of lung cancer, whether it has spread, whether it has certain genetic changes and the person's general health."
+  },
+  {
+   "id": "c10",
+   "sentence": "Staging describes how far a cancer has grown and spread.",
+   "classification": "textbook",
+   "evidence": "Plain textbook definition; not needed",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c11",
+   "sentence": "Cancer Research UK says the TNM system is the most common way to stage lung cancer.",
+   "classification": "supported",
+   "evidence": "CRUK: TNM stands for Tumour, Node, Metastasis; most common way to stage lung cancer",
+   "url": "https://www.cancerresearchuk.org/about-cancer/lung-cancer/stages-types/tnm-staging",
+   "action": "kept"
+  },
+  {
+   "id": "c12",
+   "sentence": "The number system uses TNM to place lung cancers into stages 1 to 4.",
+   "classification": "supported",
+   "evidence": "CRUK: number staging uses TNM, stages run 1 to 4",
+   "url": "https://www.cancerresearchuk.org/about-cancer/lung-cancer/stages-types/tnm-staging",
+   "action": "kept"
+  },
+  {
+   "id": "c13",
+   "sentence": "Macmillan says doctors use the same staging system for non-small cell and small cell lung cancer.",
+   "classification": "unsupported",
+   "evidence": "Not carried by retrieved Macmillan text (which described limited/extensive wording)",
+   "url": "https://www.macmillan.org.uk/cancer-information-and-support/lung-cancer/staging-of-lung-cancer",
+   "action": "removed"
+  },
+  {
+   "id": "c14",
+   "sentence": "Small cell lung cancer may also be described as limited or extensive stage.",
+   "classification": "supported",
+   "evidence": "CRUK limited/extensive page returned",
+   "url": "https://www.cancerresearchuk.org/about-cancer/lung-cancer/stages-types/limited-extensive",
+   "action": "kept"
+  },
+  {
+   "id": "c15",
+   "sentence": "Cancer Research UK calls this an older, simpler system that is becoming less common.",
+   "classification": "supported",
+   "evidence": "CRUK: simpler and older system, used less often as more is learned about SCLC",
+   "url": "https://www.cancerresearchuk.org/about-cancer/lung-cancer/stages-types/limited-extensive",
+   "action": "kept"
+  },
+  {
+   "id": "c16",
+   "sentence": "Limited stage means the cancer is within a single area on one side of the chest.",
+   "classification": "unsupported",
+   "evidence": "Retrieved wording differs: Macmillan says cancer cells seen in one lung and nearby lymph nodes",
+   "url": "https://www.macmillan.org.uk/cancer-information-and-support/lung-cancer/staging-of-lung-cancer",
+   "action": "edited",
+   "newSentence": "Macmillan describes limited stage as cancer cells that can be seen in one lung and in nearby lymph nodes"
+  },
+  {
+   "id": "c17",
+   "sentence": "Extensive stage means it has spread beyond a single area that can be treated with radiotherapy.",
+   "classification": "unsupported",
+   "evidence": "Retrieved wording differs: Macmillan says spread outside the lung, to the chest area or other parts of the body",
+   "url": "https://www.macmillan.org.uk/cancer-information-and-support/lung-cancer/staging-of-lung-cancer",
+   "action": "edited",
+   "newSentence": "extensive stage as cancer that has spread outside the lung, to the chest area or to other parts of the body."
+  },
+  {
+   "id": "c18",
+   "sentence": "Cancer Research UK adds that extensive disease generally means stage 4 small cell lung cancer.",
+   "classification": "unsupported",
+   "evidence": "Retrieval attributes stage IV with distant metastases to NCI, not CRUK",
+   "url": "https://www.cancer.gov/types/lung/hp/small-cell-lung-treatment-pdq",
+   "action": "edited",
+   "newSentence": "The National Cancer Institute defines extensive stage as TNM stage IV with distant metastases."
+  },
+  {
+   "id": "c19",
+   "sentence": "Roy Castle says stage 4 lung cancer is not curable but it is treatable, and many people can live well with advanced cancer.",
+   "classification": "supported",
+   "evidence": "Roy Castle stage 4 page text, verbatim. Flagged: contains 'not curable' (sourced, general, not individual advice)",
+   "url": "https://roycastle.org/learn-about-lung-cancer/getting-diagnosed/stages-of-lung-cancer/stage-4-lung-cancer/",
+   "action": "kept"
+  },
+  {
+   "id": "c20",
+   "sentence": "A chest X-ray is often one of the first tests when a GP has any concern about lung cancer.",
+   "classification": "supported",
+   "evidence": "Search: chest X-ray is usually the first test, often cannot give a definitive diagnosis alone",
+   "url": "https://www.nhs.uk/conditions/lung-cancer/diagnosis/",
+   "action": "edited",
+   "newSentence": "A chest X-ray is usually the first test for lung cancer. It often cannot give a definitive diagnosis on its own."
+  },
+  {
+   "id": "c21",
+   "sentence": "A CT scan is the main imaging step.",
+   "classification": "unsupported",
+   "evidence": "Retrieved: CT is usually the next test after a chest X-ray",
+   "url": "https://www.cancerresearchuk.org/about-cancer/lung-cancer/getting-diagnosed/tests-for-lung-cancer",
+   "action": "edited",
+   "newSentence": "A CT scan is usually the next test."
+  },
+  {
+   "id": "c22",
+   "sentence": "It helps show where the cancer is and whether it may have spread to other organs, and the person lies on a table that slides into the scanner.",
+   "classification": "unsupported",
+   "evidence": "Not carried by retrieved text",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c23",
+   "sentence": "In a bronchoscopy, a thin scope is passed through the airways so doctors can look inside and take a tiny tissue sample, called a biopsy.",
+   "classification": "supported",
+   "evidence": "Retrieved: doctor can look inside the airways and remove a small sample of cells (thin scope detail not retrieved)",
+   "url": "https://www.cancerresearchuk.org/about-cancer/lung-cancer/getting-diagnosed/tests-for-lung-cancer",
+   "action": "edited",
+   "newSentence": "a bronchoscopy lets the doctor look inside the airways and remove a small sample of cells."
+  },
+  {
+   "id": "c24",
+   "sentence": "Sometimes a needle biopsy through the skin is used instead.",
+   "classification": "supported",
+   "evidence": "Retrieved: CT-guided needle biopsy, thin hollow needle through the chest wall into the lung; Macmillan: needle through skin into lung",
+   "url": "https://www.macmillan.org.uk/cancer-information-and-support/diagnostic-tests/lung-needle-biopsy",
+   "action": "edited",
+   "newSentence": "Another option is a CT-guided needle biopsy, in which a thin hollow needle is passed through the chest wall into the lung."
+  },
+  {
+   "id": "c25",
+   "sentence": "The radiologist asks the person to hold their breath while a fine needle goes through the skin into the lung.",
+   "classification": "unsupported",
+   "evidence": "Not carried; breath-holding appeared only in a trial protocol about the X-ray",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c26",
+   "sentence": "Pressure may be felt during sampling, and a chest X-ray usually follows an hour or more later to check the lung.",
+   "classification": "unsupported",
+   "evidence": "Retrieval: X-ray timing varies by centre (30 min to 3-4 h), so 'an hour or more' is not supported; X-ray checks for pneumothorax",
+   "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12295871/",
+   "action": "edited",
+   "newSentence": "A chest X-ray afterwards is the standard way to check for a collapsed lung (pneumothorax), which is a known risk of the biopsy."
+  },
+  {
+   "id": "c27",
+   "sentence": "Other tests can include a PET-CT scan, a blood test for tumour DNA and a bone scan to check whether the cancer has spread.",
+   "classification": "unsupported",
+   "evidence": "PET-CT and liquid biopsy (blood test for lung cancer DNA) retrieved; bone scan not retrieved",
+   "url": "https://www.cancerresearchuk.org/about-cancer/lung-cancer/getting-diagnosed/tests-for-lung-cancer",
+   "action": "edited",
+   "newSentence": "A PET-CT scan is typically used when a CT scan has shown cancer. A biopsy is usually how doctors confirm lung cancer."
+  },
+  {
+   "id": "c28",
+   "sentence": "The NHS says surgery is the main option for lung cancer, and that chemotherapy, radiotherapy, targeted medicines or immunotherapy may also be used.",
+   "classification": "unsupported",
+   "evidence": "NHS: you may be offered a combination of surgery, chemo, radiotherapy, targeted medicines; immunotherapy may also be used. 'Main option' not carried",
+   "url": "https://www.nhs.uk/conditions/lung-cancer/treatment/",
+   "action": "edited",
+   "newSentence": "The NHS says that you may be offered a combination of treatments, including surgery, chemotherapy, radiotherapy and targeted medicines, and that immunotherapy may also be used."
+  },
+  {
+   "id": "c29",
+   "sentence": "Cancer Research UK says surgery is generally for early-stage disease, and after surgery the doctor may offer treatment to lower the chance of the cancer coming back.",
+   "classification": "unsupported",
+   "evidence": "Retrieved: NHS says surgery generally first option for NSCLC in one lung in good health, may be followed by chemotherapy; the CRUK attribution and 'lower chance of returning' not carried",
+   "url": "https://www.nhs.uk/conditions/lung-cancer/treatment/",
+   "action": "edited",
+   "newSentence": "For non-small cell lung cancer, the NHS says surgery is generally the first option when the cancer is in one lung and the person is in good health, and it may be followed by a course of chemotherapy."
+  },
+  {
+   "id": "c30",
+   "sentence": "Radiotherapy is often used on its own, but it may also be given together with or after chemotherapy or surgery.",
+   "classification": "unsupported",
+   "evidence": "Retrieved: radiotherapy can be used alone instead of surgery for early-stage NSCLC; combined with chemotherapy; 'after surgery' not carried",
+   "url": "https://www.cancerresearchuk.org/about-cancer/lung-cancer/treatment/non-small-cell-lung-cancer",
+   "action": "edited",
+   "newSentence": "Cancer Research UK says radiotherapy can be used on its own, instead of surgery, for early-stage non-small cell lung cancer, and that it can also be combined with chemotherapy."
+  },
+  {
+   "id": "c31",
+   "sentence": "Small cell lung cancer is usually treated with chemotherapy, on its own or with radiotherapy.",
+   "classification": "supported",
+   "evidence": "NHS: usually chemotherapy alone or with radiotherapy; surgery not usually used",
+   "url": "https://www.nhs.uk/conditions/lung-cancer/treatment/",
+   "action": "kept"
+  },
+  {
+   "id": "c32",
+   "sentence": "Targeted drugs are used when a tumour has a specific genetic change, so tumour samples are sent for genetic testing to look for targets.",
+   "classification": "supported",
+   "evidence": "Retrieved: used when a specific molecular target is found in the tumour; cancer cells tested to see whether a targeted drug may suit",
+   "url": "https://www.cancerresearchuk.org/about-cancer/lung-cancer/treatment/non-small-cell-lung-cancer",
+   "action": "edited",
+   "newSentence": "Targeted medicines are used when a specific molecular target is found in the tumour, so cancer cells are tested to see whether a targeted drug may suit."
+  },
+  {
+   "id": "c33",
+   "sentence": "NHS 111 Wales notes that targeted therapies cannot cure lung cancer but can slow its spread.",
+   "classification": "supported",
+   "evidence": "Retrieved text: targeted therapies cannot cure lung cancer but can slow its spread (NHS treatment context; 111 Wales page returned)",
+   "url": "https://111.wales.nhs.uk/cancerofthelung/",
+   "action": "kept"
+  },
+  {
+   "id": "c34",
+   "sentence": "The NHS says targeted medicines or immunotherapy are sometimes used for advanced lung cancer that has spread to other parts of the body.",
+   "classification": "unsupported",
+   "evidence": "Retrieved NHS wording: if NSCLC has spread too far for surgery or radiotherapy, chemotherapy and/or immunotherapy usually recommended",
+   "url": "https://www.nhs.uk/conditions/lung-cancer/treatment/",
+   "action": "edited",
+   "newSentence": "If the cancer has spread too far for surgery or radiotherapy to be effective, chemotherapy and/or immunotherapy is usually recommended."
+  },
+  {
+   "id": "c35",
+   "sentence": "Roy Castle says courses of immunotherapy often have a time limit, as long as the cancer keeps responding and there are no troublesome side effects.",
+   "classification": "unsupported",
+   "evidence": "Not carried; retrieval showed only trial protocols (about 2 years) and forum posts",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c36",
+   "sentence": "Cancer Research UK says tiredness can come on during treatment, tends to get worse as treatment goes on, and can last for some weeks afterwards.",
+   "classification": "unsupported",
+   "evidence": "Retrieved only that tiredness is common and slowly improves, source unclear; 'some weeks' not carried",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c37",
+   "sentence": "Resting while also doing some gentle physical activity can help.",
+   "classification": "unsupported",
+   "evidence": "Not retrieved",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c38",
+   "sentence": "Chest radiotherapy can cause a dry cough or breathlessness soon after treatment.",
+   "classification": "supported",
+   "evidence": "CRUK: cough and breathlessness are early symptoms and settle within a few weeks",
+   "url": "https://www.cancerresearchuk.org/about-cancer/lung-cancer/treatment/radiotherapy/side-effects",
+   "action": "edited",
+   "newSentence": "a cough or breathlessness can be early symptoms after radiotherapy to the chest, and these settle within a few weeks of finishing treatment."
+  },
+  {
+   "id": "c39",
+   "sentence": "Scarring can develop later, and steroids or other medicines can help with breathing.",
+   "classification": "unsupported",
+   "evidence": "CRUK: scarring or inflammation can cause breathlessness or cough, may start months later; steroids not carried",
+   "url": "https://www.cancerresearchuk.org/about-cancer/lung-cancer/treatment/radiotherapy/side-effects",
+   "action": "edited",
+   "newSentence": "Scarring or inflammation in the treated lung can cause breathlessness or a cough later on, and this might start months after treatment."
+  },
+  {
+   "id": "c40",
+   "sentence": "Clinical nurse specialists give information and support during treatment.",
+   "classification": "supported",
+   "evidence": "Lung cancer CNS gives information and emotional support and can refer you on",
+   "url": "https://www.cancerresearchuk.org/about-cancer/lung-cancer/advanced/living-with/support-at-home",
+   "action": "edited",
+   "newSentence": "A lung cancer clinical nurse specialist can give information and emotional support and can refer you on to other services."
+  },
+  {
+   "id": "c41",
+   "sentence": "Palliative care nurses help with symptoms such as pain and sickness, and also support carers.",
+   "classification": "unsupported",
+   "evidence": "Retrieved: palliative nurse may phone or visit at home to check symptoms are managed; pain, sickness, carers not carried",
+   "url": "https://www.cancerresearchuk.org/about-cancer/lung-cancer/advanced/living-with/support-at-home",
+   "action": "edited",
+   "newSentence": "palliative care nurses can also phone or visit you at home to check that symptoms are being managed."
+  },
+  {
+   "id": "c42",
+   "sentence": "A GP can usually arrange for a specialist nurse to visit at home.",
+   "classification": "wrong",
+   "evidence": "Retrieved: ask doctor to arrange you see a specialist nurse; Leeds says its lung nurses cannot do home visits themselves; GP responsible for home care, district nurses visit",
+   "url": "https://www.cancerresearchuk.org/about-cancer/lung-cancer/advanced/living-with/support-at-home",
+   "action": "edited",
+   "newSentence": "Your GP is responsible for your care at home, community or district nurses can make regular home visits"
+  },
+  {
+   "id": "c43",
+   "sentence": "Cancer Research UK suggests that sharing worries can make them seem less overwhelming, and that many people find counselling helpful.",
+   "classification": "unsupported",
+   "evidence": "Not carried; only referral route to counselling retrieved",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c44",
+   "sentence": "After treatment, the first check-up is usually within 4 to 6 weeks, with later visits spaced further apart and including blood tests, X-rays and scans.",
+   "classification": "supported",
+   "evidence": "CRUK: likely appointment within 4 to 6 weeks after treatment; less frequent over time; tests might include blood tests, X-rays, CT, PET-CT",
+   "url": "https://www.cancerresearchuk.org/about-cancer/lung-cancer/treatment/follow-up",
+   "action": "edited",
+   "newSentence": "you are likely to have an appointment with your doctor within 4 to 6 weeks after the treatment has finished ... Tests at some visits might include blood tests, X-rays, a CT scan or a PET-CT scan."
+  },
+  {
+   "id": "c45",
+   "sentence": "Non-small cell lung cancer is the larger group, with adenocarcinoma, squamous cell and large cell types.",
+   "classification": "textbook",
+   "evidence": "Undisputed; patent text groups these as NSCLC; MedlinePlus 85 percent",
+   "url": "https://medlineplus.gov/genetics/condition/lung-cancer/",
+   "action": "kept"
+  },
+  {
+   "id": "c46",
+   "sentence": "Small cell lung cancer is less common, grows and spreads more quickly, and is usually treated with chemotherapy, on its own or with radiotherapy.",
+   "classification": "unsupported",
+   "evidence": "Less common (15 percent) and chemotherapy supported; faster growth/spread only from patent text",
+   "url": "https://www.nhs.uk/conditions/lung-cancer/treatment/",
+   "action": "edited",
+   "newSentence": "The NHS says small cell lung cancer is usually treated with chemotherapy, either on its own or in combination with radiotherapy, and that surgery is not usually used for it."
+  },
+  {
+   "id": "c47",
+   "sentence": "Roy Castle says stage 4 lung cancer is not curable but it is treatable, and many people can live well with advanced cancer. (FAQ)",
+   "classification": "supported",
+   "evidence": "As above",
+   "url": "https://roycastle.org/learn-about-lung-cancer/getting-diagnosed/stages-of-lung-cancer/stage-4-lung-cancer/",
+   "action": "kept"
+  },
+  {
+   "id": "c48",
+   "sentence": "The NHS says targeted medicines or immunotherapy are sometimes used for advanced cancer that has spread. (FAQ)",
+   "classification": "unsupported",
+   "evidence": "See earlier: not carried as worded",
+   "url": "https://www.nhs.uk/conditions/lung-cancer/treatment/",
+   "action": "edited",
+   "newSentence": "The NHS says that if non-small cell lung cancer has spread too far for surgery or radiotherapy to be effective, chemotherapy and/or immunotherapy is usually recommended."
+  },
+  {
+   "id": "c49",
+   "sentence": "Treatment decisions are made with the cancer team.",
+   "classification": "unsupported",
+   "evidence": "Not carried by retrieved text",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c50",
+   "sentence": "Targeted drugs are used when a tumour has a specific genetic change. (FAQ)",
+   "classification": "supported",
+   "evidence": "Molecular target found in the tumour",
+   "url": "https://www.cancerresearchuk.org/about-cancer/lung-cancer/treatment/non-small-cell-lung-cancer",
+   "action": "edited",
+   "newSentence": "Targeted medicines are used when a specific molecular target is found in the tumour, so cancer cells are tested to see whether a targeted drug may suit."
+  },
+  {
+   "id": "c51",
+   "sentence": "St George's describes tumour samples being sent to a regional genomics hub for next generation sequencing, to find targets for treatment.",
+   "classification": "unsupported",
+   "evidence": "St George's page not returned",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c52",
+   "sentence": "Targeted therapies cannot cure lung cancer but can slow its spread, according to NHS 111 Wales. (FAQ)",
+   "classification": "supported",
+   "evidence": "As above",
+   "url": "https://111.wales.nhs.uk/cancerofthelung/",
+   "action": "kept"
+  },
+  {
+   "id": "c53",
+   "sentence": "Cancer Research UK says the first check-up usually comes within 4 to 6 weeks of finishing treatment.",
+   "classification": "supported",
+   "evidence": "CRUK follow-up page",
+   "url": "https://www.cancerresearchuk.org/about-cancer/lung-cancer/treatment/follow-up",
+   "action": "edited",
+   "newSentence": "Cancer Research UK says that after surgery, radiotherapy or chemotherapy you are likely to have an appointment with your doctor within 4 to 6 weeks after the treatment has finished"
+  },
+  {
+   "id": "c54",
+   "sentence": "Later visits are spaced further apart and can include blood tests, X-rays and scans.",
+   "classification": "supported",
+   "evidence": "CRUK: less frequent over time; tests might include blood tests, X-rays, CT, PET-CT",
+   "url": "https://www.cancerresearchuk.org/about-cancer/lung-cancer/treatment/follow-up",
+   "action": "edited",
+   "newSentence": "Tests at some visits might include blood tests, X-rays, a CT scan or a PET-CT scan."
+  },
+  {
+   "id": "c55",
+   "sentence": "Support is available during and after treatment from clinical nurse specialists, cancer charities, community services, family and friends.",
+   "classification": "unsupported",
+   "evidence": "Only CNS and community nursing retrieved; remainder not carried",
+   "url": "https://www.cancerresearchuk.org/about-cancer/lung-cancer/advanced/living-with/support-at-home",
+   "action": "removed"
+  },
+  {
+   "id": "c56",
+   "sentence": "In a needle biopsy through the skin, the radiologist asks the person to hold their breath while a fine needle goes into the lung. (FAQ)",
+   "classification": "unsupported",
+   "evidence": "Not carried",
+   "url": "",
+   "action": "edited",
+   "newSentence": "A CT-guided needle biopsy passes a thin hollow needle through the chest wall into the lung, with a CT scan guiding where the needle goes."
+  },
+  {
+   "id": "c57",
+   "sentence": "Pressure may be felt during sampling, and a chest X-ray usually follows an hour or more later. (FAQ)",
+   "classification": "unsupported",
+   "evidence": "X-ray timing varies by centre; not carried",
+   "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12295871/",
+   "action": "removed"
+  },
+  {
+   "id": "c58",
+   "sentence": "The sources describe a collapsed lung (pneumothorax) as the main complication of this biopsy.",
+   "classification": "unsupported",
+   "evidence": "Retrieved: pneumothorax is a known risk; 'main complication' not carried",
+   "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12295871/",
+   "action": "edited",
+   "newSentence": "A chest X-ray afterwards is the standard way to check for a collapsed lung (pneumothorax), which is a known risk of the procedure."
+  },
+  {
+   "id": "c59",
+   "sentence": "Key fact: Non-small cell and small cell lung cancer",
+   "classification": "supported",
+   "evidence": "MedlinePlus",
+   "url": "https://medlineplus.gov/genetics/condition/lung-cancer/",
+   "action": "edited",
+   "newSentence": "Non-small cell (about 85 percent) and small cell (about 15 percent)"
+  },
+  {
+   "id": "c60",
+   "sentence": "Key fact: Adenocarcinoma",
+   "classification": "textbook",
+   "evidence": "Textbook",
+   "url": "",
+   "action": "kept"
+  },
+  {
+   "id": "c61",
+   "sentence": "Key fact: TNM, number stages 1 to 4, and limited or extensive stage for small cell",
+   "classification": "supported",
+   "evidence": "CRUK",
+   "url": "https://www.cancerresearchuk.org/about-cancer/lung-cancer/stages-types/tnm-staging",
+   "action": "kept"
+  },
+  {
+   "id": "c62",
+   "sentence": "Key fact: Chest X-ray",
+   "classification": "supported",
+   "evidence": "Usually the first test",
+   "url": "https://www.nhs.uk/conditions/lung-cancer/diagnosis/",
+   "action": "edited",
+   "newSentence": "Usual first test"
+  },
+  {
+   "id": "c63",
+   "sentence": "Key fact: Surgery, radiotherapy, chemotherapy, targeted medicines, immunotherapy",
+   "classification": "supported",
+   "evidence": "NHS",
+   "url": "https://www.nhs.uk/conditions/lung-cancer/treatment/",
+   "action": "kept"
+  },
+  {
+   "id": "c64",
+   "sentence": "Key fact: Usually within 4 to 6 weeks, according to Cancer Research UK",
+   "classification": "supported",
+   "evidence": "CRUK",
+   "url": "https://www.cancerresearchuk.org/about-cancer/lung-cancer/treatment/follow-up",
+   "action": "edited",
+   "newSentence": "Likely within 4 to 6 weeks, according to Cancer Research UK"
+  }
+ ],
+ "notes": "Search tool returns summarised text, often patent documents for type-specific claims; sentences resting only on patent text were treated as unsupported. Roy Castle types page, CRUK needle-biopsy page, CRUK coping page, Christie, St George's and Leeds pages were not returned verbatim, so first-pass claims relying on them were cut or re-sourced. CRUK/NHS attribution of several reworded sentences rests on the search summary naming the returned page (e.g. targeted-therapy 'cannot cure' sentence attributed to 111 Wales; NSCLC treatment order attributed to NHS). Pneumothorax sentence rests on a PMC article (PMC12295871). Flagged: 'stage 4 is not curable' (Roy Castle, sourced, general); survival statistics (pembrolizumab 30 vs 14 months) retrieved but deliberately not used. Final article removed the tiredness/gentle-exercise advice and immunotherapy time-limit claim. Final text counts: 3 textbook sentences of about 60."
+}

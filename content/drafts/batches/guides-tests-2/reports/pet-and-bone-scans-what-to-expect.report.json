@@ -1,0 +1,261 @@
+{
+ "id": "pet-and-bone-scans-what-to-expect",
+ "searchesUsed": 8,
+ "counts": {
+  "supported": 20,
+  "textbook": 0,
+  "unsupported": 11,
+  "wrong": 1,
+  "unsafe": 1,
+  "unchecked": 0
+ },
+ "claims": [
+  {
+   "id": "c01",
+   "classification": "supported",
+   "evidence": "NHS: PET uses small amount of radiation; tracer injected. Bone-scan leaflets: radioactive tracer injected. Glucose/'tissues working' not retrieved.",
+   "url": "https://www.nhs.uk/tests-and-treatments/pet-scan/",
+   "action": "edited",
+   "newSentence": "PET and bone scans both use a small amount of radioactive tracer given by injection."
+  },
+  {
+   "id": "c02",
+   "classification": "supported",
+   "evidence": "Bone scan: wait of a few hours after injection (York leaflet); PET: rest about an hour after injection, about 2 hours at hospital.",
+   "url": "https://www.yorkhospitals.nhs.uk/seecmsfile/?id=3139",
+   "action": "edited",
+   "newSentence": "Both scans involve a waiting period after the injection."
+  },
+  {
+   "id": "c03",
+   "classification": "unsupported",
+   "evidence": "NHS: small amount of radiation to scan inside body; glucose form of tracer not in retrieved text.",
+   "url": "https://www.nhs.uk/tests-and-treatments/pet-scan/",
+   "action": "edited",
+   "newSentence": "A PET scan uses a small amount of radioactive tracer given by injection to scan inside the body."
+  },
+  {
+   "id": "c04",
+   "classification": "supported",
+   "evidence": "Search summary of NHS PET page: used to diagnose conditions and plan treatment, mainly cancer, dementia, epilepsy (page excerpt not shown; moderate confidence).",
+   "url": "https://www.nhs.uk/conditions/pet-scan/",
+   "action": "kept"
+  },
+  {
+   "id": "c05",
+   "classification": "supported",
+   "evidence": "Search summary of bone-scan leaflets: tracer gathers where bone is remodelling (breakdown/repair).",
+   "url": "",
+   "action": "kept"
+  },
+  {
+   "id": "c06",
+   "classification": "supported",
+   "evidence": "NHS: low radiation; bone scan leaflets: dose small; trusts' instructions vary, check appointment letter.",
+   "url": "https://www.nhs.uk/tests-and-treatments/pet-scan/",
+   "action": "kept"
+  },
+  {
+   "id": "c07",
+   "classification": "supported",
+   "evidence": "NHS: PET scan uses small amount of radiation to scan inside the body.",
+   "url": "https://www.nhs.uk/tests-and-treatments/pet-scan/",
+   "action": "kept"
+  },
+  {
+   "id": "c08",
+   "classification": "unsupported",
+   "evidence": "Injection of radioactive tracer retrieved; 'vein in the arm' and 'liquid' not retrieved.",
+   "url": "https://www.nhs.uk/tests-and-treatments/pet-scan/",
+   "action": "edited",
+   "newSentence": "A small amount of radioactive tracer is given by injection."
+  },
+  {
+   "id": "c09",
+   "classification": "unsupported",
+   "evidence": "FDG/radioactive glucose not in retrieved NHS text.",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c10",
+   "classification": "unsupported",
+   "evidence": "Not retrieved.",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c11",
+   "classification": "supported",
+   "evidence": "NHS: PET can be combined with CT or MRI for more detailed images.",
+   "url": "https://www.nhs.uk/conditions/pet-scan/",
+   "action": "kept"
+  },
+  {
+   "id": "c12",
+   "classification": "supported",
+   "evidence": "Search summary of NHS PET page: diagnose and plan treatment, cancer, dementia, epilepsy.",
+   "url": "https://www.nhs.uk/conditions/pet-scan/",
+   "action": "kept"
+  },
+  {
+   "id": "c13",
+   "classification": "supported",
+   "evidence": "Summary: bone scan is a nuclear medicine test measuring how active bone cells are.",
+   "url": "",
+   "action": "kept"
+  },
+  {
+   "id": "c14",
+   "classification": "supported",
+   "evidence": "Summary: tracer injected into a vein, gathers in bone, gamma camera images.",
+   "url": "",
+   "action": "kept"
+  },
+  {
+   "id": "c15",
+   "classification": "unsupported",
+   "evidence": "Retrieved text mentions hot spots where bone remodelling is greater; 'cold/dark' description not reliably retrieved.",
+   "url": "",
+   "action": "edited",
+   "newSentence": "Areas where more tracer collects show up as hot spots."
+  },
+  {
+   "id": "c16",
+   "classification": "supported",
+   "evidence": "Summary: scan shows bone breakdown and repair (remodelling).",
+   "url": "",
+   "action": "kept"
+  },
+  {
+   "id": "c17",
+   "classification": "unsupported",
+   "evidence": "Fasting commonly asked (e.g. about 6 hours) but varies, some trusts none; metal items such as jewellery removed. 'Clothing with metal' not found.",
+   "url": "https://www.nhs.uk/tests-and-treatments/pet-scan/",
+   "action": "edited",
+   "newSentence": "Hospitals usually give fasting instructions for a PET scan, which vary, and ask people to remove metal items such as jewellery."
+  },
+  {
+   "id": "c18",
+   "classification": "unsupported",
+   "evidence": "Bladder emptying before PET not retrieved.",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c19",
+   "classification": "unsupported",
+   "evidence": "Retrieved: tracer typically about an hour before scan, rest while it spreads; 60-90 minutes not found.",
+   "url": "https://www.nhs.uk/tests-and-treatments/pet-scan/",
+   "action": "edited",
+   "newSentence": "After the injection, people usually rest for around an hour while the tracer spreads through the body."
+  },
+  {
+   "id": "c20",
+   "classification": "supported",
+   "evidence": "One NHS page: scan usually 30 to 60 minutes; another trust 90 to 120 minutes; must stay still.",
+   "url": "https://www.nhs.uk/tests-and-treatments/pet-scan/",
+   "action": "edited",
+   "newSentence": "The scan itself usually takes around 30 to 60 minutes, and longer at some hospitals, and people need to stay still."
+  },
+  {
+   "id": "c21",
+   "classification": "supported",
+   "evidence": "Bone scan leaflets: wait of roughly 2.5 to 4 hours; several suggest drinking fluids and emptying bladder often.",
+   "url": "https://www.yorkhospitals.nhs.uk/seecmsfile/?id=3139",
+   "action": "edited",
+   "newSentence": "For a bone scan, leaflets describe a wait of a few hours after the injection, and some suggest drinking plenty of fluids and emptying the bladder often."
+  },
+  {
+   "id": "c22",
+   "classification": "supported",
+   "evidence": "Summary: gamma camera images after the wait.",
+   "url": "https://www.yorkhospitals.nhs.uk/seecmsfile/?id=3139",
+   "action": "kept"
+  },
+  {
+   "id": "c23",
+   "classification": "unsupported",
+   "evidence": "Fresh-tracer and short-notice cancellations not retrieved.",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c24",
+   "classification": "supported",
+   "evidence": "Preparation and times vary between trusts; check appointment letter/own leaflet.",
+   "url": "https://www.nhs.uk/tests-and-treatments/pet-scan/",
+   "action": "kept"
+  },
+  {
+   "id": "c25",
+   "classification": "supported",
+   "evidence": "NHS: small amount of radiation; bone scan dose small.",
+   "url": "https://www.nhs.uk/tests-and-treatments/pet-scan/",
+   "action": "kept"
+  },
+  {
+   "id": "c26",
+   "classification": "unsafe",
+   "evidence": "NHS described as usually safe with very small radiation risk; 'safe' wording avoided; PET-CT extra dose not retrieved.",
+   "url": "https://www.nhs.uk/tests-and-treatments/pet-scan/",
+   "action": "edited",
+   "newSentence": "The NHS describes the radiation risk from the tracer injection as very small."
+  },
+  {
+   "id": "c27",
+   "classification": "unsupported",
+   "evidence": "Bone scan dose small (leaflets); a Sussex table gave 3.9 mSv vs chest CT 6.2 mSv, so 'similar to CT' and 'minimal risk' not stated.",
+   "url": "",
+   "action": "edited",
+   "newSentence": "Hospital leaflets describe the radiation dose from a bone scan as small."
+  },
+  {
+   "id": "c28",
+   "classification": "supported",
+   "evidence": "NHS: avoid long close contact with young children or pregnant people; staff say how long. Durations vary (rest of day to 24 hours).",
+   "url": "https://www.nhs.uk/tests-and-treatments/pet-scan/",
+   "action": "edited",
+   "newSentence": "Some hospitals advise limiting close, prolonged contact with pregnant women and young children for a period afterwards, and staff say for how long."
+  },
+  {
+   "id": "c29",
+   "classification": "supported",
+   "evidence": "CRUK: contact the department beforehand if pregnant or might be.",
+   "url": "https://www.cancerresearchuk.org/about-cancer/tests-and-scans/pet-scan",
+   "action": "edited",
+   "newSentence": "Departments ask anyone who is or might be pregnant to contact them before the scan."
+  },
+  {
+   "id": "c30",
+   "classification": "supported",
+   "evidence": "NHS: can usually go home soon after the scan.",
+   "url": "https://www.nhs.uk/tests-and-treatments/pet-scan/",
+   "action": "kept"
+  },
+  {
+   "id": "c31",
+   "classification": "unsupported",
+   "evidence": "Retrieved: a radiologist reviews images and sends report to referring doctor; 'nuclear medicine specialist' not stated.",
+   "url": "https://www.nhs.uk/tests-and-treatments/pet-scan/",
+   "action": "edited",
+   "newSentence": "A radiologist reviews the images and the report goes to the doctor who referred the person."
+  },
+  {
+   "id": "c32",
+   "classification": "supported",
+   "evidence": "NHS: usually takes 1 or 2 weeks to get results.",
+   "url": "https://www.nhs.uk/tests-and-treatments/pet-scan/",
+   "action": "kept"
+  },
+  {
+   "id": "c33",
+   "classification": "wrong",
+   "evidence": "Retrieved: bone scan results 3 to 5 working days at one hospital, 2 to 3 weeks at another.",
+   "url": "",
+   "action": "edited",
+   "newSentence": "Bone scan results vary by hospital, from days to a few weeks, so the hospital that arranged the scan can say."
+  }
+ ],
+ "notes": "Search results were blended summaries without page excerpts; url left empty where no specific page was attributed (bone scan leaflets, summary-level). c04/c12 rest on a summary of nhs.uk/conditions/pet-scan, moderate confidence. Author reference URLs royalmarsden/chelwest/christie/rnoh were returned by search in other forms but not individually verified; chelwest bone-scan URL not returned."
+}

@@ -1,0 +1,120 @@
+{
+ "id": "fda-ezplaz-freeze-dried-plasma-licensed",
+ "searchesUsed": 4,
+ "counts": {
+  "supported": 10,
+  "textbook": 2,
+  "unsupported": 1,
+  "wrong": 0,
+  "unsafe": 0,
+  "unchecked": 0
+ },
+ "claims": [
+  {
+   "id": "c01",
+   "sentenceId": "summary",
+   "classification": "supported",
+   "evidence": "FDA: licensed Ezplaz Freeze Dried Plasma, first freeze-dried plasma product licensed for use in the US; licence dated 07/29/2026; indicated for adults.",
+   "url": "https://www.fda.gov/news-events/press-announcements/fda-licenses-first-ever-freeze-dried-plasma-product-us",
+   "action": "kept"
+  },
+  {
+   "id": "c02",
+   "sentenceId": "keyPoints[0]",
+   "classification": "supported",
+   "evidence": "Approval letter and BLA approvals table date 07/29/2026.",
+   "url": "https://fda.gov/media/193931/download?attachment=",
+   "action": "kept"
+  },
+  {
+   "id": "c03",
+   "sentenceId": "keyPoints[1]",
+   "classification": "supported",
+   "evidence": "FDA press announcement wording: first freeze-dried plasma product licensed for use in the United States.",
+   "url": "https://www.fda.gov/news-events/press-announcements/fda-licenses-first-ever-freeze-dried-plasma-product-us",
+   "action": "kept"
+  },
+  {
+   "id": "c04",
+   "sentenceId": "keyPoints[2]",
+   "classification": "supported",
+   "evidence": "Indicated for transfusion in adults when plasma is required and other plasma products are not available.",
+   "url": "https://www.fda.gov/vaccines-blood-biologics/blood-blood-products/ezplaz",
+   "action": "kept"
+  },
+  {
+   "id": "c05",
+   "sentenceId": "keyPoints[3]",
+   "classification": "textbook",
+   "evidence": "Editorial regional disclaimer.",
+   "url": "",
+   "action": "kept"
+  },
+  {
+   "id": "c06",
+   "sentenceId": "body[0].s0",
+   "classification": "supported",
+   "evidence": "As summary/keyPoints[1].",
+   "url": "https://www.fda.gov/news-events/press-announcements/fda-licenses-first-ever-freeze-dried-plasma-product-us",
+   "action": "kept"
+  },
+  {
+   "id": "c07",
+   "sentenceId": "body[0].s1",
+   "classification": "supported",
+   "evidence": "Indication: adult patients needing plasma when other plasma products are not available.",
+   "url": "https://www.fda.gov/vaccines-blood-biologics/blood-blood-products/ezplaz",
+   "action": "kept"
+  },
+  {
+   "id": "c08",
+   "sentenceId": "body[0].s2",
+   "classification": "supported",
+   "evidence": "FDA: derived from a single unit of fresh frozen plasma collected from FDA-licensed blood establishments.",
+   "url": "https://www.fda.gov/news-events/press-announcements/fda-licenses-first-ever-freeze-dried-plasma-product-us",
+   "action": "kept"
+  },
+  {
+   "id": "c09",
+   "sentenceId": "body[1].s0",
+   "classification": "supported",
+   "evidence": "FDA kit description: one unit of freeze-dried plasma, one 250 mL bag of sterile water for injection, one sterile fluid transfer set, one sterile blood transfusion set.",
+   "url": "https://www.fda.gov/media/194320/download",
+   "action": "kept"
+  },
+  {
+   "id": "c10",
+   "sentenceId": "body[1].s1",
+   "classification": "unsupported",
+   "evidence": "Retrieved text only shows the Circular of Information warning that, being human plasma, it may transmit infectious agents; a statement that safety is 'consistent with other plasma products' was not found in retrieved text.",
+   "url": "https://www.fda.gov/media/193932/download",
+   "action": "edited",
+   "newSentence": "Because Ezplaz is made from human plasma, the FDA's Circular of Information notes it may carry a risk of transmitting infectious agents."
+  },
+  {
+   "id": "c11",
+   "sentenceId": "body[1].s2",
+   "classification": "supported",
+   "evidence": "Approval letter addressed to Vascular Solutions, LLC, a Teleflex subsidiary, US License 2135.",
+   "url": "https://fda.gov/media/193931/download?attachment=",
+   "action": "kept"
+  },
+  {
+   "id": "c12",
+   "sentenceId": "body[1].s3",
+   "classification": "supported",
+   "evidence": "FDA announcement/EUA fact sheets: French FDP authorised under EUA for US military use (combat hemorrhage); EUA products are by definition not licensed. The explicit 'FDA notes it is not licensed' wording was not seen in the snippet.",
+   "url": "https://www.fda.gov/media/174558/download",
+   "action": "kept"
+  },
+  {
+   "id": "c13",
+   "sentenceId": "body[1].s4",
+   "classification": "textbook",
+   "evidence": "Editorial regional disclaimer.",
+   "url": "",
+   "action": "kept"
+  }
+ ],
+ "notes": "Only body[1].s1 failed to be matched. Kit contents come from the FDA product document; the French FDP kit is different (bottle of water plus transfuser)."
+}

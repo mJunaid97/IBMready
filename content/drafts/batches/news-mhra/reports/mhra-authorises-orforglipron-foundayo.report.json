@@ -1,0 +1,109 @@
+{
+ "id": "mhra-authorises-orforglipron-foundayo",
+ "searchesUsed": 2,
+ "counts": {
+  "supported": 6,
+  "textbook": 0,
+  "unsupported": 5,
+  "wrong": 0,
+  "unsafe": 0,
+  "unchecked": 0
+ },
+ "claims": [
+  {
+   "id": "c01",
+   "classification": "supported",
+   "sentence": "The MHRA authorised orforglipron (Foundayo), a GLP-1 tablet, for weight management and type 2 diabetes, saying the UK is the first country in Europe to do so.",
+   "evidence": "Retrieved: MHRA authorised orforglipron (Foundayo) on 10 August 2026, UK first country in Europe to approve this GLP-1 tablet for weight management and type 2 diabetes.",
+   "url": "https://www.gov.uk/government/news/uk-first-in-europe-to-authorise-orforglipron-for-weight-management-and-type-2-diabetes",
+   "action": "kept"
+  },
+  {
+   "id": "c02",
+   "classification": "supported",
+   "sentence": "The MHRA authorised orforglipron (Foundayo) on 10 August 2026.",
+   "evidence": "Retrieved: authorised 10 August 2026; news release dated 10 August 2026.",
+   "url": "https://www.gov.uk/government/news/uk-first-in-europe-to-authorise-orforglipron-for-weight-management-and-type-2-diabetes",
+   "action": "kept"
+  },
+  {
+   "id": "c03",
+   "classification": "supported",
+   "sentence": "The MHRA says the UK is the first country in Europe to authorise this GLP-1 tablet for weight management and type 2 diabetes.",
+   "evidence": "Retrieved, as above.",
+   "url": "https://www.gov.uk/government/news/uk-first-in-europe-to-authorise-orforglipron-for-weight-management-and-type-2-diabetes",
+   "action": "kept"
+  },
+  {
+   "id": "c04",
+   "classification": "unsupported",
+   "sentence": "For weight management it is licensed for adults who meet set body mass index and weight-related health criteria, alongside a reduced-calorie diet and more physical activity.",
+   "evidence": "Retrieved only: 'adults with weight management needs'. Search 2 explicitly found nothing on BMI criteria or the diet/physical-activity requirement.",
+   "url": "https://www.gov.uk/government/news/uk-first-in-europe-to-authorise-orforglipron-for-weight-management-and-type-2-diabetes",
+   "action": "edited",
+   "newSentence": "For weight management it is licensed for adults."
+  },
+  {
+   "id": "c05",
+   "classification": "unsupported",
+   "sentence": "For diabetes it is licensed to improve blood sugar control in adults whose type 2 diabetes is not controlled well enough.",
+   "evidence": "Retrieved: authorised to improve glycaemic control for patients with insufficiently controlled type 2 diabetes. 'Adults' is not stated for the diabetes indication specifically.",
+   "url": "https://www.gov.uk/government/news/uk-first-in-europe-to-authorise-orforglipron-for-weight-management-and-type-2-diabetes",
+   "action": "edited",
+   "newSentence": "For diabetes it is licensed to improve blood sugar control in people whose type 2 diabetes is not controlled well enough."
+  },
+  {
+   "id": "c06",
+   "classification": "supported",
+   "sentence": "The MHRA says it authorised orforglipron, sold as Foundayo, on 10 August 2026.",
+   "evidence": "Retrieved, as c02.",
+   "url": "https://www.gov.uk/government/news/uk-first-in-europe-to-authorise-orforglipron-for-weight-management-and-type-2-diabetes",
+   "action": "kept"
+  },
+  {
+   "id": "c07",
+   "classification": "unsupported",
+   "sentence": "It describes orforglipron as a GLP-1 receptor agonist taken as a tablet, and says the UK is the first country in Europe to authorise it for weight management and type 2 diabetes.",
+   "evidence": "'GLP-1 tablet' and 'first in Europe' retrieved from gov.uk; 'GLP-1 receptor agonist' as the MHRA's own description appeared only in a non-gov.uk journal title, not the MHRA page.",
+   "url": "https://www.gov.uk/government/news/uk-first-in-europe-to-authorise-orforglipron-for-weight-management-and-type-2-diabetes",
+   "action": "edited",
+   "newSentence": "It describes orforglipron as a GLP-1 tablet, and says the UK is the first country in Europe to authorise it for weight management and type 2 diabetes."
+  },
+  {
+   "id": "c08",
+   "classification": "unsupported",
+   "sentence": "For weight management, the licence covers adults who meet set criteria for body mass index and weight-related health conditions, and treatment is used together with a reduced-calorie diet and more physical activity.",
+   "evidence": "Not retrieved (see c04).",
+   "url": "https://www.gov.uk/government/news/uk-first-in-europe-to-authorise-orforglipron-for-weight-management-and-type-2-diabetes",
+   "action": "edited",
+   "newSentence": "For weight management, the licence covers adults."
+  },
+  {
+   "id": "c09",
+   "classification": "supported",
+   "sentence": "For type 2 diabetes, it is licensed to improve glycaemic (blood sugar) control in people whose diabetes is insufficiently controlled.",
+   "evidence": "Retrieved: improve glycaemic control for patients with insufficiently controlled type 2 diabetes.",
+   "url": "https://www.gov.uk/government/news/uk-first-in-europe-to-authorise-orforglipron-for-weight-management-and-type-2-diabetes",
+   "action": "kept"
+  },
+  {
+   "id": "c10",
+   "classification": "supported",
+   "sentence": "The announcement concerns the MHRA's licensing decision.",
+   "evidence": "Retrieved: the page is an MHRA news release about its authorisation of orforglipron. Trivial framing sentence.",
+   "url": "https://www.gov.uk/government/news/uk-first-in-europe-to-authorise-orforglipron-for-weight-management-and-type-2-diabetes",
+   "action": "kept"
+  },
+  {
+   "id": "c11",
+   "classification": "unsupported",
+   "sentence": "The site's pages on type 2 diabetes, weight and GLP-1 receptor agonists give background.",
+   "evidence": "Site-navigation pointer to another page on this site, not a claim from the MHRA page; the retrieved gov.uk text does not mention it. ",
+   "url": "https://www.gov.uk/government/news/uk-first-in-europe-to-authorise-orforglipron-for-weight-management-and-type-2-diabetes",
+   "action": "removed"
+  }
+ ],
+ "dateConfirmed": "2026-08-10",
+ "dateEvidence": "Search result states 'The MHRA news release is dated 10 August 2026' and that the regulator authorised it that day (gov.uk page above).",
+ "notes": "Retrieval also said the tablet is taken once daily with no food or water restrictions, and is not currently available via the NHS (a first-pass-uncited point; if added, needs re-retrieval of exact wording; avoid dosing detail). The summary 'GLP-1 tablet' is fine. A separate gov.uk release (first GLP-1 tablet for weight loss approved, semaglutide, 11 June 2026) exists, so 'first in Europe' must stay attributed to the MHRA, as the brief does. No instructions, 'safe' claims or doses."
+}

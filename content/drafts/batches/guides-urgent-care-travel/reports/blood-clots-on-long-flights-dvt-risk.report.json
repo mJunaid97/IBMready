@@ -1,0 +1,394 @@
+{
+ "id": "blood-clots-on-long-flights-dvt-risk",
+ "searchesUsed": 6,
+ "counts": {
+  "supported": 32,
+  "textbook": 1,
+  "unsupported": 8,
+  "wrong": 0,
+  "unsafe": 0,
+  "unchecked": 0
+ },
+ "claims": [
+  {
+   "id": "c01",
+   "where": "summary",
+   "sentence": "Long journeys can raise the chance of a leg blood clot (DVT); the NHS and TravelHealthPro describe moving, drinking water and sometimes stockings.",
+   "classification": "supported",
+   "evidence": "NHS DVT and PE pages; NHS 111 Wales and TravelHealthPro list walking, water, stockings (see below)",
+   "url": "https://www.nhs.uk/conditions/deep-vein-thrombosis-dvt/",
+   "action": "edited",
+   "newSentence": "Long journeys can raise the chance of a leg blood clot (DVT); the NHS and TravelHealthPro describe moving, drinking water and sometimes stockings."
+  },
+  {
+   "id": "c02",
+   "where": "keyPoints[0]",
+   "sentence": "A deep vein thrombosis (DVT) is a blood clot in a deep vein, usually in the leg, and a clot that reaches the lungs is called a pulmonary embolism.",
+   "classification": "supported",
+   "evidence": "NHS DVT page: clot in deep vein, usually leg; clot reaching lungs is PE",
+   "url": "https://www.nhs.uk/conditions/deep-vein-thrombosis-dvt/",
+   "action": "kept"
+  },
+  {
+   "id": "c03",
+   "where": "keyPoints[1]",
+   "sentence": "Sitting still for long periods is one of the risk factors the NHS lists, and TravelHealthPro names groups of travellers at higher risk who are advised to seek advice from a health professional.",
+   "classification": "supported",
+   "evidence": "NHS: immobility raises risk; TravelHealthPro: increased-risk travellers advised to seek advice from a health care provider",
+   "url": "https://travelhealthpro.org.uk/factsheet/54/venous-thromboembolism",
+   "action": "edited",
+   "newSentence": "Sitting still for long periods is one of the risk factors the NHS lists, and TravelHealthPro names groups of travellers at higher risk who are advised to seek advice from a health professional."
+  },
+  {
+   "id": "c04",
+   "where": "keyPoints[2]",
+   "sentence": "Walking about, doing calf exercises, drinking water and wearing loose clothes are among the steps described for journeys; sources differ on how widely compression stockings are advised.",
+   "classification": "supported",
+   "evidence": "Stockings: 111 Wales and TravelHealthPro favour for some; cancer-alliance sheet more cautious (stated as differing)",
+   "url": "https://111.wales.nhs.uk/travelhealth/traveltips/",
+   "action": "edited",
+   "newSentence": "Walking about, doing calf exercises, drinking water and wearing loose clothes are among the steps described for journeys; sources differ on how widely compression stockings are advised."
+  },
+  {
+   "id": "c05",
+   "where": "keyPoints[3]",
+   "sentence": "For suspected DVT the NHS says to ask for an urgent GP appointment or get help from NHS 111, and to call 999 or go to A&E for sudden difficulty breathing or chest pain.",
+   "classification": "supported",
+   "evidence": "NHS search results: urgent GP appointment or get help from NHS 111 for suspected DVT; 999/A&E for sudden breathing difficulty, chest pain",
+   "url": "https://www.nhs.uk/conditions/pulmonary-embolism/",
+   "action": "edited",
+   "newSentence": "For suspected DVT the NHS says to ask for an urgent GP appointment or get help from NHS 111, and to call 999 or go to A&E for sudden difficulty breathing or chest pain."
+  },
+  {
+   "id": "c06",
+   "where": "keyPoints[4]",
+   "sentence": "Treatment is usually with anticoagulants, often called blood thinners, which aim to keep the clot from growing while the body gradually breaks it down.",
+   "classification": "supported",
+   "evidence": "NHS DVT page/trust leaflets: anticoagulants stop clot growing while body breaks it down",
+   "url": "https://www.nhs.uk/conditions/deep-vein-thrombosis-dvt/",
+   "action": "edited",
+   "newSentence": "Treatment is usually with anticoagulants, often called blood thinners, which aim to keep the clot from growing while the body gradually breaks it down."
+  },
+  {
+   "id": "c07",
+   "where": "body[0]",
+   "sentence": "A deep vein thrombosis, or DVT, is a blood clot in one of the deep veins, most often in the leg.",
+   "classification": "supported",
+   "evidence": "NHS DVT page: clot in deep vein, usually leg",
+   "url": "https://www.nhs.uk/conditions/deep-vein-thrombosis-dvt/",
+   "action": "kept"
+  },
+  {
+   "id": "c08",
+   "where": "body[0]",
+   "sentence": "The NHS says the main worry is that part of the clot can travel to the lungs.",
+   "classification": "supported",
+   "evidence": "Clot reaching the lungs is a PE",
+   "url": "https://www.nhs.uk/conditions/deep-vein-thrombosis-dvt/",
+   "action": "kept"
+  },
+  {
+   "id": "c09",
+   "where": "body[0]",
+   "sentence": "This is called a pulmonary embolism, and the NHS lists it among the reasons to call 999.",
+   "classification": "supported",
+   "evidence": "NHS PE page: sudden breathing difficulty is a call-999 reason (reworded from 'life-threatening', which this pass could not re-retrieve)",
+   "url": "https://www.nhs.uk/conditions/pulmonary-embolism/",
+   "action": "edited",
+   "newSentence": "This is called a pulmonary embolism, and the NHS lists it among the reasons to call 999."
+  },
+  {
+   "id": "c10",
+   "where": "body[0]",
+   "sentence": "Some clots cause no symptoms at all, which is why a DVT can be hard to spot.",
+   "classification": "supported",
+   "evidence": "NHS: DVT may have no symptoms, hard to spot",
+   "url": "https://www.nhs.uk/conditions/deep-vein-thrombosis-dvt/",
+   "action": "kept"
+  },
+  {
+   "id": "c11",
+   "where": "body[1]",
+   "sentence": "Blood flow in the leg veins slows when the legs stay still.",
+   "classification": "textbook",
+   "evidence": "plain physiology",
+   "url": "",
+   "action": "kept"
+  },
+  {
+   "id": "c12",
+   "where": "body[1]",
+   "sentence": "The NHS lists being immobile, such as sitting or lying down for long periods, among the things that raise the risk of DVT.",
+   "classification": "supported",
+   "evidence": "NHS: risk higher if immobile for long periods",
+   "url": "https://www.nhs.uk/conditions/deep-vein-thrombosis-dvt/",
+   "action": "kept"
+  },
+  {
+   "id": "c13",
+   "where": "body[1]",
+   "sentence": "The NHS also says that on journeys of four hours or more by plane, train or car, there are things that can lower the chance of DVT.",
+   "classification": "supported",
+   "evidence": "NHS: for travel of 4 hours or more by plane, train or car there are steps that lower DVT chance",
+   "url": "https://www.nhs.uk/conditions/deep-vein-thrombosis-dvt/",
+   "action": "edited",
+   "newSentence": "The NHS also says that on journeys of four hours or more by plane, train or car, there are things that can lower the chance of DVT."
+  },
+  {
+   "id": "c14",
+   "where": "body[1]",
+   "sentence": "TravelHealthPro, the UK national travel health service, has a factsheet on venous thromboembolism, the term covering DVT and pulmonary embolism together.",
+   "classification": "supported",
+   "evidence": "Page title NaTHNaC - Venous thromboembolism",
+   "url": "https://travelhealthpro.org.uk/factsheet/54/venous-thromboembolism",
+   "action": "kept"
+  },
+  {
+   "id": "c15",
+   "where": "body[2]",
+   "sentence": "TravelHealthPro lists a previous DVT or pulmonary embolism, a family history of clots, a clotting disorder, recent surgery or injury, cancer, pregnancy and being overweight as factors that raise the risk of travel-related clots.",
+   "classification": "supported",
+   "evidence": "TravelHealthPro/UK travel guidance results list previous DVT/PE, family history, clotting disorder, recent surgery/trauma, cancer, pregnancy, overweight (summary blended across leaflets; attributed to TravelHealthPro)",
+   "url": "https://travelhealthpro.org.uk/factsheet/54/venous-thromboembolism",
+   "action": "edited",
+   "newSentence": "TravelHealthPro lists a previous DVT or pulmonary embolism, a family history of clots, a clotting disorder, recent surgery or injury, cancer, pregnancy and being overweight as factors that raise the risk of travel-related clots."
+  },
+  {
+   "id": "c16",
+   "where": "body[2]",
+   "sentence": "It says travellers at increased risk are advised to seek advice from their health care provider.",
+   "classification": "supported",
+   "evidence": "Travel-health guidance: those at increased risk should seek advice from their health care provider",
+   "url": "https://travelhealthpro.org.uk/factsheet/54/venous-thromboembolism",
+   "action": "edited",
+   "newSentence": "It says travellers at increased risk are advised to seek advice from their health care provider."
+  },
+  {
+   "id": "c17",
+   "where": "body[2]",
+   "sentence": "The NHS DVT page also lists cancer, hormone replacement therapy and the oestrogen-based contraceptive pill among the things that raise the chance of DVT.",
+   "classification": "supported",
+   "evidence": "Cancer, HRT and oestrogen pill listed in NHS DVT guidance (earlier excerpt; this pass saw them in trust leaflets; age 'over 60' removed because trust leaflets gave 40/65 and the nhs.uk page text was not retrieved)",
+   "url": "https://www.nhs.uk/conditions/deep-vein-thrombosis-dvt/",
+   "action": "edited",
+   "newSentence": "The NHS DVT page also lists cancer, hormone replacement therapy and the oestrogen-based contraceptive pill among the things that raise the chance of DVT."
+  },
+  {
+   "id": "c18",
+   "where": "body[3]",
+   "sentence": "NHS 111 Wales travel advice describes walking around when it is possible, and doing calf and ankle exercises while seated.",
+   "classification": "supported",
+   "evidence": "111 Wales: walk, move legs/anti-DVT exercises, flex ankles",
+   "url": "https://111.wales.nhs.uk/travelhealth/traveltips/",
+   "action": "kept"
+  },
+  {
+   "id": "c19",
+   "where": "body[3]",
+   "sentence": "It also describes drinking water, avoiding alcohol and wearing loose, comfortable clothes.",
+   "classification": "supported",
+   "evidence": "111 Wales: water, avoid alcohol, loose clothes",
+   "url": "https://111.wales.nhs.uk/travelhealth/traveltips/",
+   "action": "kept"
+  },
+  {
+   "id": "c20",
+   "where": "body[3]",
+   "sentence": "On stockings, the sources differ.",
+   "classification": "supported",
+   "evidence": "Sources do differ (stockings advised vs routine use not recommended)",
+   "url": "https://111.wales.nhs.uk/travelhealth/traveltips/",
+   "action": "edited",
+   "newSentence": "On stockings, the sources differ."
+  },
+  {
+   "id": "c21",
+   "where": "body[3]",
+   "sentence": "NHS 111 Wales says passengers who wear compression stockings on flights of four hours or more can significantly reduce their risk of DVT and leg swelling, and that ill-fitting ones could raise the risk.",
+   "classification": "supported",
+   "evidence": "111 Wales: stockings on flights of 4 hours or more reduce risk (author excerpt); fit: ill-fitting stockings could raise risk (re-confirmed)",
+   "url": "https://111.wales.nhs.uk/travelhealth/traveltips/",
+   "action": "kept"
+  },
+  {
+   "id": "c22",
+   "where": "body[3]",
+   "sentence": "TravelHealthPro advises travellers at increased risk to consider properly fitted below-knee graduated compression socks.",
+   "classification": "supported",
+   "evidence": "TravelHealthPro: increased-risk travellers advised to consider properly fitted below-knee graduated compression socks",
+   "url": "https://travelhealthpro.org.uk/factsheet/54/venous-thromboembolism",
+   "action": "edited",
+   "newSentence": "TravelHealthPro advises travellers at increased risk to consider properly fitted below-knee graduated compression socks."
+  },
+  {
+   "id": "c23",
+   "where": "body[3]",
+   "sentence": "An NHS cancer alliance information sheet for GPs is more cautious: it says routine use of stockings or anticoagulants for all travellers is not recommended, and that stockings are for those at the highest risk.",
+   "classification": "supported",
+   "evidence": "Cancer alliance GP sheet: global use of stockings/anticoagulation not recommended; highest-risk travellers should wear below-knee stockings",
+   "url": "https://www.swagcanceralliance.nhs.uk/wp-content/uploads/2021/03/Travel-related-thrombosis-GP_Information.pdf",
+   "action": "edited",
+   "newSentence": "An NHS cancer alliance information sheet for GPs is more cautious: it says routine use of stockings or anticoagulants for all travellers is not recommended, and that stockings are for those at the highest risk."
+  },
+  {
+   "id": "c24",
+   "where": "body[4]",
+   "sentence": "The NHS describes a throbbing pain and swelling in one leg, usually in the calf or thigh.",
+   "classification": "supported",
+   "evidence": "NHS: throbbing pain, swelling in one leg, usually calf/thigh",
+   "url": "https://www.nhs.uk/conditions/deep-vein-thrombosis-dvt/",
+   "action": "kept"
+  },
+  {
+   "id": "c25",
+   "where": "body[4]",
+   "sentence": "The skin over the area can look red, blue or darkened, and the veins near the surface can be swollen.",
+   "classification": "supported",
+   "evidence": "NHS: red, blue or darkened skin, swollen veins",
+   "url": "https://www.nhs.uk/conditions/deep-vein-thrombosis-dvt/",
+   "action": "kept"
+  },
+  {
+   "id": "c26",
+   "where": "body[4]",
+   "sentence": "For suspected DVT, the NHS says to ask for an urgent GP appointment or get help from NHS 111.",
+   "classification": "supported",
+   "evidence": "NHS: ask for an urgent GP appointment or get help from NHS 111 (search paraphrase 'contact 111'; nhs.uk page text itself not retrievable)",
+   "url": "https://www.nhs.uk/conditions/deep-vein-thrombosis-dvt/",
+   "action": "edited",
+   "newSentence": "For suspected DVT, the NHS says to ask for an urgent GP appointment or get help from NHS 111."
+  },
+  {
+   "id": "c27",
+   "where": "body[4]",
+   "sentence": "The signs of a pulmonary embolism include sudden difficulty breathing, chest pain that is worse when breathing in, and coughing up blood.",
+   "classification": "supported",
+   "evidence": "NHS 111 Wales/NHS: sudden breathing difficulty, chest pain worse on breathing in, coughing up blood",
+   "url": "https://www.nhs.uk/conditions/pulmonary-embolism/",
+   "action": "kept"
+  },
+  {
+   "id": "c28",
+   "where": "body[4]",
+   "sentence": "The NHS says to call 999 or go to A&E for sudden difficulty breathing, chest or upper back pain, a very fast heartbeat or passing out.",
+   "classification": "supported",
+   "evidence": "NHS PE page: call 999 or go to A&E for sudden breathing difficulty, chest or upper back pain, very fast heartbeat, passing out",
+   "url": "https://www.nhs.uk/conditions/pulmonary-embolism/",
+   "action": "edited",
+   "newSentence": "The NHS says to call 999 or go to A&E for sudden difficulty breathing, chest or upper back pain, a very fast heartbeat or passing out."
+  },
+  {
+   "id": "c29",
+   "where": "body[4]",
+   "sentence": "It advises against driving yourself to A&E, and says to ask someone to drive or call 999 for an ambulance.",
+   "classification": "supported",
+   "evidence": "NHS PE page: do not drive to A&E; ask someone to drive or call 999",
+   "url": "https://www.nhs.uk/conditions/pulmonary-embolism/",
+   "action": "kept"
+  },
+  {
+   "id": "c30",
+   "where": "body[5]",
+   "sentence": "Treatment usually involves anticoagulants, often called blood thinners.",
+   "classification": "supported",
+   "evidence": "NHS: anticoagulants main DVT treatment",
+   "url": "https://www.nhs.uk/conditions/deep-vein-thrombosis-dvt/",
+   "action": "kept"
+  },
+  {
+   "id": "c31",
+   "where": "body[5]",
+   "sentence": "Their main role is to keep the clot from growing while the body gradually breaks it down.",
+   "classification": "supported",
+   "evidence": "Anticoagulants keep clot from growing while body breaks it down",
+   "url": "https://www.nhs.uk/conditions/deep-vein-thrombosis-dvt/",
+   "action": "edited",
+   "newSentence": "Their main role is to keep the clot from growing while the body gradually breaks it down."
+  },
+  {
+   "id": "c32",
+   "where": "body[5]",
+   "sentence": "Hospital leaflets note that anticoagulants increase the risk of bleeding, so people taking them are told to report unusual bleeding.",
+   "classification": "supported",
+   "evidence": "Trust leaflets: anticoagulants increase bleeding risk, report unusual bleeding (blended; trust leaflet, not NHS.uk)",
+   "url": "https://www.uclh.nhs.uk/patients-and-visitors/patient-information-pages/deep-vein-thrombosis",
+   "action": "edited",
+   "newSentence": "Hospital leaflets note that anticoagulants increase the risk of bleeding, so people taking them are told to report unusual bleeding."
+  },
+  {
+   "id": "c33",
+   "where": "body[5]",
+   "sentence": "Doctors choose the medicine and how long treatment lasts for each person, and the leaflets advise talking to a doctor before stopping it.",
+   "classification": "supported",
+   "evidence": "Clinician picks drug; duration varies; do not stop without talking to doctor (trust leaflets)",
+   "url": "https://www.uclh.nhs.uk/patients-and-visitors/patient-information-pages/deep-vein-thrombosis",
+   "action": "edited",
+   "newSentence": "Doctors choose the medicine and how long treatment lasts for each person, and the leaflets advise talking to a doctor before stopping it."
+  },
+  {
+   "id": "r01",
+   "sentence": "Thrombosis UK describes travel as a minor risk factor rather than a major one.",
+   "classification": "unsupported",
+   "evidence": "No Thrombosis UK page was returned in a targeted search; removed with its reference.",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "r02",
+   "sentence": "being over 60 ...",
+   "classification": "unsupported",
+   "evidence": "Age threshold not confirmable; trust leaflets say 40/65.",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "r03",
+   "sentence": "For longer flights, NHS travel advice names ... stroke ... obesity (NHS Scotland 2016 PDF)",
+   "classification": "unsupported",
+   "evidence": "Archived PDF; replaced with TravelHealthPro list.",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "r04",
+   "sentence": "The same advice says anyone ... can see a GP before travelling / doctor or consultant can confirm when flying is suitable",
+   "classification": "unsupported",
+   "evidence": "Archived PDF only; replaced with TravelHealthPro 'seek advice from health care provider'.",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "r05",
+   "sentence": "NHS Scotland advice says passengers do not need to take any medicine",
+   "classification": "unsupported",
+   "evidence": "Archived PDF only; removed.",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "r06",
+   "sentence": "risk rising with ... several flights close together",
+   "classification": "unsupported",
+   "evidence": "Not re-retrieved; removed.",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "r07",
+   "sentence": "call NHS 111 if a GP cannot be seen",
+   "classification": "unsupported",
+   "evidence": "Not re-retrieved; removed.",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "r08",
+   "sentence": "Most come as tablets, and some are given by injection.",
+   "classification": "unsupported",
+   "evidence": "Only trust leaflet; removed.",
+   "url": "",
+   "action": "removed"
+  }
+ ],
+ "notes": "Final post ~620 words of prose per checker (below 700; not padded). nhs.uk DVT page text was never directly returned: urgent-route wording ('urgent GP appointment or get help from NHS 111'; 999/A&E for PE signs) rests on search paraphrases of the NHS DVT/PE pages, so the maintainer should eyeball nhs.uk once. Anticoagulant bleeding/stopping sentences rest on NHS trust leaflets (UCLH cited). Stockings: sources differ and each is attributed; the Croydon guideline was not re-retrieved, a SWAG cancer-alliance GP sheet is used instead. Thrombosis UK, NHS Scotland 2016 PDF removed. No contradiction with content/conditions.json deep-vein-thrombosis (its seekCare says same-day assessment, 999/A&E for breathlessness/chest pain; consistent). Note: the site page lists 'long flights' and 'dehydration' as causes/risk; guide avoids claiming dehydration causes DVT."
+}

@@ -9,6 +9,7 @@ usage: python3 tools/verification/merge_batches.py [--batches id1,id2,...] [--ap
   --apply      merge each passing fragment into content/ (check_batch.py --apply), in order; the next batch is validated on top of it
   --evidence   with --apply: also copy BATCH-REPORT.md, ledgers/ and reports/ of a merged batch into content/drafts/batches/<id>/ (the audit trail)
   --extra      also try the other fragment*.json files of a batch (for example a held-back item); they are reported separately
+  --evidence-only  copy the audit trail (BATCH-REPORT.md, ledgers/, reports/) of every batch that has a final report into content/drafts/batches/<id>/ and stop
   --allow-partial  also merge a batch whose BATCH-REPORT.md is missing (the session has not finished: its fragment may hold first-pass text)
   --update-batches id1,id2  with --apply: replace entities of these batches whose fragment text changed after they were merged (a session's later, second-pass version)
 
@@ -77,6 +78,19 @@ def main():
     if not wanted: print('no content/* branches on origin'); return 0
     r = sh('git', 'fetch', '-q', 'origin', *[f'content/{b}' for b in wanted])
     if r.returncode: print('git fetch failed:', r.stderr[:300]); return 1
+    if '--evidence-only' in argv:
+        n = 0
+        for b in wanted:
+            ref = f'origin/content/{b}'; base = f'content/drafts/batches/{b}'
+            files = sh('git', 'ls-tree', '-r', '--name-only', ref, base + '/').stdout.split()
+            if f'{base}/BATCH-REPORT.md' not in files: print(f'{b}: no report, skipped'); continue
+            rep = sh('git', 'show', f'{ref}:{base}/BATCH-REPORT.md').stdout[:1500]
+            if re.search(r'interim|first[- ]pass (?:drafts )?only|second pass has not been completed', rep, re.I): print(f'{b}: interim report, skipped'); continue
+            paths = [p for p in files if p == f'{base}/BATCH-REPORT.md' or p.startswith(f'{base}/ledgers/') or p.startswith(f'{base}/reports/')]
+            os.makedirs(os.path.join(ROOT, base), exist_ok=True)
+            tar = subprocess.run(['git', 'archive', ref] + paths, cwd=ROOT, capture_output=True)
+            subprocess.run(['tar', '-x', '-C', ROOT], input=tar.stdout, check=False); n += 1; print(f'{b}: {len(paths)} files')
+        print(f'copied the audit trail of {n} batch(es)'); return 0
     tmp = tempfile.mkdtemp(prefix='anx-merge-')
     rows, merged = [], 0
     for b in wanted:
@@ -87,6 +101,9 @@ def main():
         todo = [main_frag] if main_frag in frags else []
         if extra: todo += [f for f in frags if f != main_frag]
         has_report = f'{base}/BATCH-REPORT.md' in files
+        if has_report:      # a report that calls itself interim, or says the second pass is not finished, is not a final report
+            rep = sh('git', 'show', f'{ref}:{base}/BATCH-REPORT.md').stdout[:1500]
+            if re.search(r'interim|first[- ]pass (?:drafts )?only|second pass has not been completed|not yet (?:been )?(?:verified|merged)', rep, re.I): has_report = False
         if not todo:
             rows.append((b, 'no fragment yet', '', '', 'report' if has_report else 'no report')); continue
         for fpath in todo:
@@ -104,7 +121,7 @@ def main():
                         f_, rk_ = cb.FILES[coll]; path_ = os.path.join(ROOT, 'content', f_); dd, st_ = cb.load_styled(path_); (dd if rk_ is None else dd[rk_])[eid] = ent; cb.save_styled(path_, dd, st_)
                 changed_done = list(changed); changed = []
             else: changed_done = []
-            label = (b if fpath == main_frag else f'{b}:{os.path.basename(fpath)}') + ('' if has_report else ' [NO REPORT YET]')
+            label = (b if fpath == main_frag else f'{b}:{os.path.basename(fpath)}') + ('' if has_report else ' [NO FINAL REPORT YET]')
             if not any(frag.values()):
                 rows.append((label, 'already merged' if dropped else 'empty', f'{len(dropped)} present', '', ('CHANGED since merged: ' + ', '.join(changed[:6])) if changed else (f'UPDATED {len(changed_done)} changed entities from the final fragment' if changed_done else ''))); continue
             tmpf = os.path.join(tmp, label.replace(':', '_') + '.json'); json.dump(frag, open(tmpf, 'w', encoding='utf-8'), ensure_ascii=False)
@@ -113,7 +130,7 @@ def main():
             lint = sh(sys.executable, os.path.join(ROOT, 'tools', 'verification', 'lint_new_content.py'), tmpf, '--quiet').stdout.strip().splitlines()[-1:]
             note = '' if ok else ' | '.join(l.strip()[:150] for l in r.stdout.splitlines() if l.strip().startswith(('ERROR', 'NOT', 'the compiler', 'merged')) or re.match(r'\s+\S.*', l) and 'NOT PUBLISHABLE' in l)[:420] or r.stdout.strip()[-300:]
             if ok and apply and not has_report and not partial:
-                ok = False; note = 'not merged: the session has not written BATCH-REPORT.md yet (use --allow-partial to merge its early fragment)'
+                ok = False; note = 'not merged: the session has not written a final BATCH-REPORT.md yet (use --allow-partial to merge its early fragment)'
             elif ok and apply:
                 a = sh(sys.executable, os.path.join(ROOT, 'tools', 'verification', 'check_batch.py'), tmpf, '--apply')
                 ok = a.returncode == 0

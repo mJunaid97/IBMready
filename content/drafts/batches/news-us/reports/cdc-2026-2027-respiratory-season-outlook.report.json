@@ -1,0 +1,113 @@
+{
+ "id": "cdc-2026-2027-respiratory-season-outlook",
+ "searchesUsed": 3,
+ "counts": {
+  "supported": 9,
+  "textbook": 2,
+  "unsupported": 1,
+  "wrong": 0,
+  "unsafe": 0,
+  "unchecked": 0
+ },
+ "claims": [
+  {
+   "id": "c01",
+   "sentenceId": "summary",
+   "classification": "supported",
+   "evidence": "Peak similar to last season, within 20%, low to moderate confidence.",
+   "url": "https://www.cdc.gov/cfa-qualitative-assessments/php/data-research/season-outlook26-27.html",
+   "action": "kept"
+  },
+  {
+   "id": "c02",
+   "sentenceId": "keyPoints[0]",
+   "classification": "supported",
+   "evidence": "Outlook dated 23 Sep 2026.",
+   "url": "https://www.cdc.gov/cfa-qualitative-assessments/php/data-research/season-outlook26-27.html",
+   "action": "kept"
+  },
+  {
+   "id": "c03",
+   "sentenceId": "keyPoints[1]",
+   "classification": "supported",
+   "evidence": "Within 20% of 2025-2026 peak.",
+   "url": "https://www.cdc.gov/cfa-qualitative-assessments/php/data-research/season-outlook26-27.html",
+   "action": "kept"
+  },
+  {
+   "id": "c04",
+   "sentenceId": "keyPoints[2]",
+   "classification": "supported",
+   "evidence": "High-level information, not a forecast; will be updated as trajectories change.",
+   "url": "https://www.cdc.gov/cfa-qualitative-assessments/php/data-research/season-outlook26-27.html",
+   "action": "kept"
+  },
+  {
+   "id": "c05",
+   "sentenceId": "keyPoints[3]",
+   "classification": "textbook",
+   "evidence": "CDC is a US agency.",
+   "url": "https://www.cdc.gov/cfa-qualitative-assessments/php/data-research/season-outlook26-27.html",
+   "action": "kept"
+  },
+  {
+   "id": "c06",
+   "sentenceId": "body[0].s0",
+   "classification": "supported",
+   "evidence": "Dated 23 Sep 2026.",
+   "url": "https://www.cdc.gov/cfa-qualitative-assessments/php/data-research/season-outlook26-27.html",
+   "action": "kept"
+  },
+  {
+   "id": "c07",
+   "sentenceId": "body[0].s1",
+   "classification": "supported",
+   "evidence": "High-level information on how the season could unfold; not a forecast.",
+   "url": "https://www.cdc.gov/cfa-qualitative-assessments/php/data-research/season-outlook26-27.html",
+   "action": "kept"
+  },
+  {
+   "id": "c08",
+   "sentenceId": "body[0].s2",
+   "classification": "supported",
+   "evidence": "Within 20% of 2025-2026 peak, low to moderate confidence.",
+   "url": "https://www.cdc.gov/cfa-qualitative-assessments/php/data-research/season-outlook26-27.html",
+   "action": "kept"
+  },
+  {
+   "id": "c09",
+   "sentenceId": "body[1].s0",
+   "classification": "supported",
+   "evidence": "CDC found no evidence of a higher-severity season than usual; exact phrase 'than has been observed historically' not seen. Note CDC expects a moderate flu season.",
+   "url": "https://www.cdc.gov/cfa-qualitative-assessments/php/data-research/season-outlook26-27.html",
+   "action": "edited",
+   "newSentence": "For influenza, the CDC says it found no evidence pointing to a higher-severity season than usual, and expects a moderate season, with low to moderate confidence."
+  },
+  {
+   "id": "c10",
+   "sentenceId": "body[1].s1",
+   "classification": "supported",
+   "evidence": "2025-2026 RSV peak (week ending 21 Feb 2026) later than past seasons; cause unclear.",
+   "url": "https://www.cdc.gov/cfa-qualitative-assessments/php/data-research/season-outlook26-27.html",
+   "action": "kept"
+  },
+  {
+   "id": "c11",
+   "sentenceId": "body[1].s2",
+   "classification": "unsupported",
+   "evidence": "Drivers seen: viruses evading immunity, lower vaccine uptake or effectiveness; 'greater severity' not seen in retrieved text.",
+   "url": "https://www.cdc.gov/cfa-qualitative-assessments/php/data-research/season-outlook26-27.html",
+   "action": "edited",
+   "newSentence": "The CDC lists a higher peak as a risk, driven by viruses that evade existing immunity or by lower vaccine uptake or effectiveness."
+  },
+  {
+   "id": "c12",
+   "sentenceId": "body[1].s3",
+   "classification": "textbook",
+   "evidence": "UKHSA and NHS are UK bodies; general knowledge.",
+   "url": "https://www.cdc.gov/cfa-qualitative-assessments/php/data-research/season-outlook26-27.html",
+   "action": "kept"
+  }
+ ],
+ "notes": "Search extract only; CDC also gives COVID-19 moderate confidence of similar or lower peak (not in brief)."
+}

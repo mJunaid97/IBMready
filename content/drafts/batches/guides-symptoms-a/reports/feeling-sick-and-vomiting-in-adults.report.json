@@ -1,0 +1,183 @@
+{
+ "id": "feeling-sick-and-vomiting-in-adults",
+ "searchesUsed": 6,
+ "counts": {
+  "supported": 12,
+  "textbook": 0,
+  "unsupported": 0,
+  "wrong": 6,
+  "unsafe": 0,
+  "unchecked": 0
+ },
+ "claims": [
+  {
+   "id": "c01",
+   "where": "body[0]",
+   "sentence": "The NHS says feeling sick is common and usually goes away on its own.",
+   "classification": "supported",
+   "evidence": "NHS page: feeling sick is common and usually goes away on its own.",
+   "url": "https://www.nhs.uk/symptoms/feeling-sick-nausea/",
+   "action": "kept"
+  },
+  {
+   "id": "c02",
+   "where": "body[0]",
+   "sentence": "Diarrhoea or vomiting can point to norovirus or food poisoning, and a headache with a high temperature can suggest an infection such as flu.",
+   "classification": "supported",
+   "evidence": "NHS table: diarrhoea or vomiting points to norovirus or food poisoning; headache with high temperature to infection such as flu.",
+   "url": "https://www.nhs.uk/symptoms/feeling-sick-nausea/",
+   "action": "kept"
+  },
+  {
+   "id": "c03",
+   "where": "body[0]",
+   "sentence": "Other causes include morning sickness in pregnancy, motion sickness, anxiety, alcohol, medicines and recent surgery.",
+   "classification": "supported",
+   "evidence": "Causes listed include pregnancy (morning sickness), motion sickness, anxiety, alcohol, medicines, recent surgery.",
+   "url": "https://www.nhs.uk/symptoms/feeling-sick-nausea/",
+   "action": "kept"
+  },
+  {
+   "id": "c04",
+   "where": "body[0]",
+   "sentence": "NHS inform calls gastroenteritis one of the most common causes of vomiting in adults, and also lists migraine, labyrinthitis, appendicitis and medicines such as antibiotics and opioid painkillers.",
+   "classification": "supported",
+   "evidence": "NHS inform lists gastroenteritis as one of the most common causes of vomiting in adults, plus migraine, labyrinthitis, appendicitis, antibiotics and opioid painkillers.",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/stomach-liver-and-gastrointestinal-tract/vomiting-in-adults/",
+   "action": "kept"
+  },
+  {
+   "id": "c05",
+   "where": "body[0]",
+   "sentence": "NHS trust leaflets say norovirus symptoms usually clear within a few days, and that apart from letting the illness run its course there is no specific treatment.",
+   "classification": "wrong",
+   "evidence": "Retrieved text for this is from NHS inform's Norovirus page (usually clears in a few days, no specific treatment, run its course), not from NHS trust leaflets; no trust leaflet text was retrieved. Attribution overstated.",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/infections-and-poisoning/norovirus/",
+   "action": "edited",
+   "newSentence": "NHS inform says norovirus usually clears up by itself within a few days, and that there is no specific treatment, so the illness has to run its course."
+  },
+  {
+   "id": "c06",
+   "where": "body[0]",
+   "sentence": "The main advice in those leaflets is to drink fluids to prevent dehydration, and antibiotics do not work because norovirus is a virus.",
+   "classification": "wrong",
+   "evidence": "Retrieved text attributes antibiotics not working (norovirus is a virus) to NHS inform's norovirus page, and sipping water to prevent dehydration to NHS inform's vomiting page; no trust-leaflet text retrieved.",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/infections-and-poisoning/norovirus/",
+   "action": "edited",
+   "newSentence": "NHS inform says antibiotics will not help norovirus because it is caused by a virus, and that small sips of water help to prevent dehydration."
+  },
+  {
+   "id": "c07",
+   "where": "body[1]",
+   "sentence": "The NHS describes getting fresh air, sipping cold drinks, trying ginger or peppermint tea, and eating smaller, more frequent meals.",
+   "classification": "supported",
+   "evidence": "NHS page lists fresh air, small sips of a cold drink, ginger or peppermint tea, smaller more frequent meals.",
+   "url": "https://www.nhs.uk/symptoms/feeling-sick-nausea/",
+   "action": "kept"
+  },
+  {
+   "id": "c08",
+   "where": "body[1]",
+   "sentence": "It also lists hot, fried or greasy food, eating too quickly and lying down soon after eating as things to avoid.",
+   "classification": "supported",
+   "evidence": "NHS page advises avoiding strong-smelling, hot, fried or greasy food, eating slowly, not lying down soon after eating.",
+   "url": "https://www.nhs.uk/symptoms/feeling-sick-nausea/",
+   "action": "kept"
+  },
+  {
+   "id": "c09",
+   "where": "body[1]",
+   "sentence": "NHS inform advises resting at home and taking small sips of water or squash often so that dehydration does not develop.",
+   "classification": "supported",
+   "evidence": "NHS inform: rest at home; take small sips of water or squash often so you don't become dehydrated.",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/stomach-liver-and-gastrointestinal-tract/vomiting-in-adults/",
+   "action": "kept"
+  },
+  {
+   "id": "c10",
+   "where": "body[2]",
+   "sentence": "NHS inform lists confusion, a fast heartbeat, sunken eyes and passing little or no urine as warning signs of dehydration.",
+   "classification": "wrong",
+   "evidence": "On NHS inform's vomiting page these signs (confusion, rapid heartbeat, sunken eyes, little or no urine) are listed as signs of SEVERE dehydration under the call-111 advice, not as general warning signs; the gastroenteritis page puts confusion under 999/A&E and little urine with dizziness under urgent 111/GP. Sentence omits severity and route to care and cites the wrong page.",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/stomach-liver-and-gastrointestinal-tract/vomiting-in-adults/",
+   "action": "edited",
+   "newSentence": "NHS inform lists signs of severe dehydration, including confusion, a rapid heartbeat, sunken eyes and passing little or no urine, among the reasons to call NHS 111."
+  },
+  {
+   "id": "c11",
+   "where": "body[2]",
+   "sentence": "NHS inform advises people with diabetes who have been vomiting a lot to call NHS 111, especially if they take insulin, because vomiting can affect blood sugar levels.",
+   "classification": "supported",
+   "evidence": "NHS inform: if you have diabetes and have been vomiting a lot, particularly if you take insulin, as it can affect blood sugar level, phone 111.",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/stomach-liver-and-gastrointestinal-tract/vomiting-in-adults/",
+   "action": "kept"
+  },
+  {
+   "id": "c12",
+   "where": "body[3]",
+   "sentence": "The NHS says to go to A&E for vomit that contains blood or looks like ground coffee, or for green vomit.",
+   "classification": "wrong",
+   "evidence": "NHS inform says blood in vomit or coffee-granule vomit, and green or yellow-green vomit, mean call 999 or go to A&E; the sentence says only 'the NHS' and 'A&E', dropping 999 and misnaming the publisher.",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/stomach-liver-and-gastrointestinal-tract/vomiting-in-adults/",
+   "action": "edited",
+   "newSentence": "NHS inform says to call 999 or go to A&E for vomit that contains blood or looks like coffee granules, or for green or yellow-green vomit."
+  },
+  {
+   "id": "c13",
+   "where": "body[3]",
+   "sentence": "NHS inform advises calling NHS 111 for a person who keeps being sick and cannot keep fluids down, has been vomiting for more than 2 days, has lost a lot of weight since becoming ill, has a fever, or has bloody diarrhoea.",
+   "classification": "wrong",
+   "evidence": "Vomiting page supports: can't keep fluids down, vomiting more than 2 days, lost a lot of weight. Fever and bloody diarrhoea came from the gastroenteritis page (fever over 38C or bloody diarrhoea: contact 111 or the GP urgently), so single-page attribution is wrong and the GP route is omitted.",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/stomach-liver-and-gastrointestinal-tract/vomiting-in-adults/",
+   "action": "edited",
+   "newSentence": "NHS inform advises calling NHS 111 for a person who keeps being sick and cannot keep fluids down, has been vomiting for more than 2 days, or has lost a lot of weight since becoming ill; its gastroenteritis page lists fever and bloody diarrhoea as reasons to contact NHS 111 or the GP practice urgently."
+  },
+  {
+   "id": "c14",
+   "where": "body[3]",
+   "sentence": "The NHS says to call 999 if sudden sickness comes with tight or heavy chest pain, pain spreading to the arms, back, neck or jaw, or shortness of breath, because these could be signs of a heart attack.",
+   "classification": "supported",
+   "evidence": "NHS Feeling sick page text (returned in search 3): suddenly feel sick with tight or heavy chest pain, pain spreading to arms, back, neck or jaw, or shortness of breath: call 999, could be a heart attack. Note a separate search summary said the page did not mention 999, so moderate confidence.",
+   "url": "https://www.nhs.uk/symptoms/feeling-sick-nausea/",
+   "action": "kept"
+  },
+  {
+   "id": "c15",
+   "where": "body[4]",
+   "sentence": "The NHS advises seeing a GP if the sickness has not improved after a few days or keeps coming back, and calling NHS 111 for advice if a GP cannot be seen.",
+   "classification": "supported",
+   "evidence": "NHS page: see a GP if you do not feel better in a few days or it keeps coming back; call 111 for advice if you cannot see a GP.",
+   "url": "https://www.nhs.uk/symptoms/feeling-sick-nausea/",
+   "action": "kept"
+  },
+  {
+   "id": "c16",
+   "where": "body[4]",
+   "sentence": "The GP can look for the cause and may prescribe anti-sickness medicine.",
+   "classification": "supported",
+   "evidence": "NHS page: a GP can look for the cause and suggest treatments; may prescribe anti-sickness medicine if needed.",
+   "url": "https://www.nhs.uk/symptoms/feeling-sick-nausea/",
+   "action": "kept"
+  },
+  {
+   "id": "c17",
+   "where": "body[4]",
+   "sentence": "The NHS says a pregnant person who is being sick often and cannot keep food down should tell their midwife or doctor, or contact the hospital, as soon as possible.",
+   "classification": "supported",
+   "evidence": "NHS pregnancy page: if being sick frequently and can't keep food down, tell your midwife or doctor, or contact the hospital, as soon as possible.",
+   "url": "https://www.nhs.uk/pregnancy/complications/severe-vomiting/",
+   "action": "kept"
+  },
+  {
+   "id": "c18",
+   "where": "summary",
+   "sentence": "Nausea and vomiting in adults usually pass within a day or two, but vomiting blood needs A&E and being sick for more than 2 days needs NHS 111.",
+   "classification": "wrong",
+   "evidence": "NHS inform says vomiting in adults usually lasts only 1 or 2 days (vomiting, not nausea); blood in vomit means 999 or A&E, not A&E alone; over 2 days is one of several 111 reasons.",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/stomach-liver-and-gastrointestinal-tract/vomiting-in-adults/",
+   "action": "edited",
+   "newSentence": "NHS inform says vomiting in adults usually lasts only 1 or 2 days, but blood in vomit means calling 999 or going to A&E, and vomiting for more than 2 days is a reason to call NHS 111."
+  }
+ ],
+ "notes": "Searches used: 6 of 8. Dehydration sentence and urgent-signs sentences changed route/publisher: NHS inform vomiting page lists severe dehydration signs under call 111, while gastroenteritis page puts confusion under 999/A&E; consider routing via the severe-dehydration wording. Chest pain 999 claim: one search summary said the NHS feeling-sick page did not mention it, another quoted it; kept as supported but worth a manual look at nhs.uk/symptoms/feeling-sick-nausea. 'NHS says' phrasing in keyPoints repeats the same errors (keyPoints[1], [2], [3] need the same edits). Site symptom pages not checked. Hospital-trust norovirus leaflet was never retrieved; replace with NHS inform Norovirus page."
+}

@@ -1,0 +1,99 @@
+{
+  "id": "who-heat-illness-mass-gatherings",
+  "searchesUsed": 2,
+  "counts": {
+    "supported": 6,
+    "textbook": 0,
+    "unsupported": 3,
+    "wrong": 0,
+    "unsafe": 0,
+    "unchecked": 0
+  },
+  "claims": [
+    {
+      "id": "c01",
+      "where": "summary",
+      "sentence": "On 30 September 2026 the WHO released a resource suite on preventing and managing heat-related illness at mass gatherings such as sporting and religious events.",
+      "classification": "unsupported",
+      "evidence": "Release date 30 Sep 2026 and title supported by URL slug and summary; 'sporting and religious events' not found in retrieved WHO text, which says only 'mass gatherings'/'major events'.",
+      "url": "https://www.who.int/news/item/30-09-2026-who-releases-new-guidance-to-prevent-heat-related-illness-at-mass-gatherings",
+      "action": "edited",
+      "newSentence": "On 30 September 2026 the WHO released a resource suite on preventing and managing heat-related illness at mass gatherings."
+    },
+    {
+      "id": "c02",
+      "where": "keyPoints[0]",
+      "sentence": "The WHO released the guidance suite on 30 September 2026.",
+      "classification": "supported",
+      "evidence": "WHO release page dated 30-09-2026 (URL slug).",
+      "url": "https://www.who.int/news/item/30-09-2026-who-releases-new-guidance-to-prevent-heat-related-illness-at-mass-gatherings",
+      "action": "kept"
+    },
+    {
+      "id": "c03",
+      "where": "keyPoints[1]",
+      "sentence": "The WHO's evidence review of studies from 1980 to 2025 found nearly half a million medical encounters at mass gatherings, including more than 22,000 heat-related illnesses.",
+      "classification": "supported",
+      "evidence": "'covering studies published between 1980 and 2025 ... nearly half a million medical encounters ... more than 22,000 heat-related illnesses'.",
+      "url": "https://www.who.int/news/item/30-09-2026-who-releases-new-guidance-to-prevent-heat-related-illness-at-mass-gatherings",
+      "action": "kept"
+    },
+    {
+      "id": "c04",
+      "where": "keyPoints[2]",
+      "sentence": "The suite includes a heat-risk assessment tool and is aimed at spectators, attendees, volunteers and workers as well as organisers.",
+      "classification": "unsupported",
+      "evidence": "Heat-risk assessment tool is listed as a component. WHO page 'names spectators, attendees, volunteers and workers as those affected', not explicitly as the audience of the suite.",
+      "url": "https://www.who.int/news/item/30-09-2026-who-releases-new-guidance-to-prevent-heat-related-illness-at-mass-gatherings",
+      "action": "edited",
+      "newSentence": "The suite includes a heat-risk assessment tool, and WHO names spectators, attendees, volunteers and workers among those affected by heat at mass gatherings."
+    },
+    {
+      "id": "c05",
+      "where": "body[0].p0.s0",
+      "sentence": "On 30 September 2026 the World Health Organization (WHO) released a resource suite called \"Prevention and management of heat-related illness at mass gatherings\".",
+      "classification": "supported",
+      "evidence": "Title 'Prevention and management of heat-related illness at mass gatherings' and date 30 Sep 2026 match.",
+      "url": "https://www.who.int/news/item/30-09-2026-who-releases-new-guidance-to-prevent-heat-related-illness-at-mass-gatherings",
+      "action": "kept"
+    },
+    {
+      "id": "c06",
+      "where": "body[0].p0.s1",
+      "sentence": "The WHO says heat-related illness at major sporting, religious and cultural events has become a significant public health and operational risk.",
+      "classification": "unsupported",
+      "evidence": "Retrieved text says heat-related illnesses at 'major events' are largely preventable or treatable; no statement found of 'significant public health and operational risk' or of sporting/religious/cultural events.",
+      "url": "https://www.who.int/news/item/30-09-2026-who-releases-new-guidance-to-prevent-heat-related-illness-at-mass-gatherings",
+      "action": "edited",
+      "newSentence": "The WHO says most heat-related illnesses at major events can be prevented or treated on site when timely risk management measures are in place."
+    },
+    {
+      "id": "c07",
+      "where": "body[0].p1.s0",
+      "sentence": "Its evidence review of studies from 1980 to 2025 found nearly half a million medical encounters at mass gatherings, including more than 22,000 heat-related illnesses.",
+      "classification": "supported",
+      "evidence": "Same evidence-review figures as c03.",
+      "url": "https://www.who.int/news/item/30-09-2026-who-releases-new-guidance-to-prevent-heat-related-illness-at-mass-gatherings",
+      "action": "kept"
+    },
+    {
+      "id": "c08",
+      "where": "body[1].p0.s0",
+      "sentence": "The guidance includes a heat-risk assessment tool and is intended to complement the WHO's heat-health action plan guidance and existing national plans.",
+      "classification": "supported",
+      "evidence": "'intended to complement WHO's heat-health action plan guidance, existing national heat-health action plans...'; heat-risk assessment tool listed as a component.",
+      "url": "https://www.who.int/news/item/30-09-2026-who-releases-new-guidance-to-prevent-heat-related-illness-at-mass-gatherings",
+      "action": "kept"
+    },
+    {
+      "id": "c09",
+      "where": "body[1].p0.s1",
+      "sentence": "The WHO urges governments, event organisers and partners to build heat risk management into health planning and event operations.",
+      "classification": "supported",
+      "evidence": "'calling on governments, event organizers and partners to integrate heat risk management into health planning, preparedness and operations'.",
+      "url": "https://www.who.int/news/item/30-09-2026-who-releases-new-guidance-to-prevent-heat-related-illness-at-mass-gatherings",
+      "action": "kept"
+    }
+  ],
+  "notes": "Only search summaries of the WHO news item were retrieved, not full text. Examples 'sporting, religious and cultural' events appear nowhere in retrieved text (Tokyo 2020 and papal-visit items were third-party studies). Search noted some metadata date discrepancy on the release page; URL slug says 30-09-2026."
+}

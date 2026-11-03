@@ -1,0 +1,472 @@
+{
+ "id": "metformin",
+ "searchesUsed": 8,
+ "counts": {
+  "supported": 42,
+  "textbook": 0,
+  "unsupported": 20,
+  "wrong": 0,
+  "unsafe": 0,
+  "unchecked": 0
+ },
+ "claims": [
+  {
+   "id": "c01",
+   "classification": "supported",
+   "evidence": "NHS: prescription medicine, main use is type 2 diabetes",
+   "url": "https://www.nhs.uk/medicines/metformin/",
+   "action": "kept"
+  },
+  {
+   "id": "c02",
+   "classification": "supported",
+   "evidence": "NHS now uses polyendocrine metabolic ovarian syndrome (PMOS), replacing older PCOS / polycystic ovary syndrome; also used in gestational diabetes",
+   "url": "https://www.nhs.uk/medicines/metformin/about-metformin/",
+   "action": "edited",
+   "newSentence": "The NHS says it can also be used for gestational diabetes and for polyendocrine metabolic ovarian syndrome (PMOS), the name the NHS now uses for what was previously called polycystic ovary syndrome (PCOS)."
+  },
+  {
+   "id": "c03",
+   "classification": "supported",
+   "evidence": "Also used to help prevent type 2 diabetes if at high risk",
+   "url": "https://www.nhs.uk/medicines/metformin/about-metformin/",
+   "action": "kept"
+  },
+  {
+   "id": "c04",
+   "classification": "supported",
+   "evidence": "NHS trust page: gestational diabetes is high blood sugar that appears in pregnancy and typically resolves after delivery",
+   "url": "https://www.guysandstthomas.nhs.uk/health-information/diabetes-in-pregnancy-gestational-diabetes",
+   "action": "kept"
+  },
+  {
+   "id": "c05",
+   "classification": "supported",
+   "evidence": "NHS: lowers blood sugar by improving the way the body handles insulin",
+   "url": "https://www.nhs.uk/medicines/metformin/about-metformin/",
+   "action": "kept"
+  },
+  {
+   "id": "c06",
+   "classification": "unsupported",
+   "evidence": "Retrieved text says other sources add it reduces glucose released by the liver; the NHS insulin-sensitivity wording and exact page not confirmed",
+   "url": "https://www.diabetes.org.uk/about-diabetes/looking-after-diabetes/treatments/tablets-and-medication/metformin",
+   "action": "edited",
+   "newSentence": "Other descriptions add that it reduces how much glucose the liver releases."
+  },
+  {
+   "id": "c07",
+   "classification": "supported",
+   "evidence": "NHS: standard tablets release metformin quickly; slow-release tablets work gradually",
+   "url": "https://www.nhs.uk/medicines/metformin/about-metformin/",
+   "action": "edited",
+   "newSentence": "It comes as standard tablets, which release metformin quickly, and as slow-release tablets, which work gradually."
+  },
+  {
+   "id": "c08",
+   "classification": "unsupported",
+   "evidence": "Retrieved text says doses usually start low and rise over several weeks but does not tie this to fewer side effects; also implies a dosing schedule",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c09",
+   "classification": "supported",
+   "evidence": "Common: feeling or being sick, diarrhoea, tummy pain, loss of appetite",
+   "url": "https://www.nhs.uk/medicines/metformin/",
+   "action": "kept"
+  },
+  {
+   "id": "c10",
+   "classification": "supported",
+   "evidence": "Change to the way things taste listed",
+   "url": "https://www.nhs.uk/medicines/metformin/",
+   "action": "kept"
+  },
+  {
+   "id": "c11",
+   "classification": "supported",
+   "evidence": "Most side effects ease after a couple of weeks",
+   "url": "https://www.nhs.uk/medicines/metformin/",
+   "action": "edited",
+   "newSentence": "The NHS says most of these ease after a couple of weeks."
+  },
+  {
+   "id": "c12",
+   "classification": "unsupported",
+   "evidence": "Taking with a meal reduces side effects is retrieved; the doctor suggesting slow-release tablets is not",
+   "url": "https://www.nhs.uk/medicines/metformin/",
+   "action": "edited",
+   "newSentence": "The NHS advises taking metformin with a meal to reduce side effects."
+  },
+  {
+   "id": "c13",
+   "classification": "unsupported",
+   "evidence": "Vitamin B12 deficiency listed, more likely with long-term use; tiredness as a result not retrieved",
+   "url": "https://www.nhs.uk/medicines/metformin/",
+   "action": "edited",
+   "newSentence": "Vitamin B12 deficiency is also listed as a side effect and is more likely with long-term use."
+  },
+  {
+   "id": "c14",
+   "classification": "unsupported",
+   "evidence": "Retrieved: doctor checks B12 with blood test in some people; supplements helping not retrieved",
+   "url": "https://www.nhs.uk/medicines/metformin/",
+   "action": "edited",
+   "newSentence": "Doctors may check vitamin B12 levels with a blood test in some people who take metformin for a long time."
+  },
+  {
+   "id": "c15",
+   "classification": "supported",
+   "evidence": "UK leaflets: lactic acidosis is a very rare but very serious side effect; NHS lists too much acid in blood as serious",
+   "url": "https://www.medicines.org.uk/emc/files/pil.11980.pdf",
+   "action": "edited",
+   "newSentence": "Lactic acidosis, a build-up of acid in the blood, is a very rare but serious side effect."
+  },
+  {
+   "id": "c16",
+   "classification": "supported",
+   "evidence": "NHS: lactic acidosis can show as vomiting, stomach pain, muscle cramps, breathing problems, severe tiredness",
+   "url": "https://www.nhs.uk/medicines/metformin/",
+   "action": "kept"
+  },
+  {
+   "id": "c17",
+   "classification": "supported",
+   "evidence": "NHS: call 999 if you think you might have lactic acidosis or anaphylaxis",
+   "url": "https://www.nhs.uk/medicines/metformin/",
+   "action": "kept"
+  },
+  {
+   "id": "c18",
+   "classification": "supported",
+   "evidence": "NHS: call NHS 111 for any other serious side effect; hepatitis (inflammation of the liver) listed",
+   "url": "https://www.nhs.uk/medicines/metformin/",
+   "action": "kept"
+  },
+  {
+   "id": "c19",
+   "classification": "unsupported",
+   "evidence": "Leaflet says lactic acidosis may lead to serious illness and hospital is needed; the words medical emergency not retrieved",
+   "url": "https://www.medicines.org.uk/emc/files/pil.11980.pdf",
+   "action": "edited",
+   "newSentence": "A UK patient leaflet says lactic acidosis can lead to serious illness that needs hospital care."
+  },
+  {
+   "id": "c20",
+   "classification": "supported",
+   "evidence": "NHS: limit alcohol because it can increase risk of serious side effects",
+   "url": "https://www.nhs.uk/medicines/metformin/",
+   "action": "kept"
+  },
+  {
+   "id": "c21",
+   "classification": "supported",
+   "evidence": "Leaflets: avoid excessive alcohol, may increase lactic acidosis risk",
+   "url": "https://www.medicines.org.uk/emc/files/pil.11980.pdf",
+   "action": "kept"
+  },
+  {
+   "id": "c22",
+   "classification": "unsupported",
+   "evidence": "The NHS telling people to tell the doctor before a scan or surgery was not retrieved; a UK leaflet says to stop metformin before or at the time of the contrast injection and the doctor says when to restart",
+   "url": "https://www.medicines.org.uk/emc/files/pil.13161.pdf",
+   "action": "edited",
+   "newSentence": "A UK patient leaflet says metformin is stopped before or at the time of an injection of contrast dye, and the doctor says when to restart."
+  },
+  {
+   "id": "c23",
+   "classification": "supported",
+   "evidence": "PMC review of manufacturer labels: all advise discontinuation before contrast-enhanced imaging",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12516328/",
+   "action": "kept"
+  },
+  {
+   "id": "c24",
+   "classification": "unsupported",
+   "evidence": "Leaflets: stop for a short time with conditions that may cause dehydration, such as severe vomiting or diarrhoea; fever not confirmed in leaflets",
+   "url": "https://www.medicines.org.uk/emc/files/pil.11980.pdf",
+   "action": "edited",
+   "newSentence": "UK patient leaflets say metformin is stopped for a short time with a condition that may cause dehydration, such as severe vomiting or diarrhoea."
+  },
+  {
+   "id": "c25",
+   "classification": "unsupported",
+   "evidence": "Unnamed source; content duplicates the leaflet point and the source could not be identified",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c26",
+   "classification": "supported",
+   "evidence": "NHS: if you have taken more than your prescribed amount, call NHS 111",
+   "url": "https://www.nhs.uk/medicines/metformin/pregnancy-breastfeeding-and-fertility-while-taking-metformin/",
+   "action": "kept"
+  },
+  {
+   "id": "c27",
+   "classification": "supported",
+   "evidence": "NHS: most adults and children aged 10 and over can take metformin; tell doctor first if certain conditions",
+   "url": "https://www.nhs.uk/medicines/metformin/who-can-and-cannot-take-metformin/",
+   "action": "kept"
+  },
+  {
+   "id": "c28",
+   "classification": "supported",
+   "evidence": "NHS list: uncontrolled diabetes, liver or kidney problems, severe infection, heart failure, heavy drinking",
+   "url": "https://www.nhs.uk/medicines/metformin/who-can-and-cannot-take-metformin/",
+   "action": "kept"
+  },
+  {
+   "id": "c29",
+   "classification": "supported",
+   "evidence": "NHS lists previous allergic reaction to metformin",
+   "url": "https://www.nhs.uk/medicines/metformin/who-can-and-cannot-take-metformin/",
+   "action": "kept"
+  },
+  {
+   "id": "c30",
+   "classification": "supported",
+   "evidence": "Leaflets: lactic acidosis risk increases with degree of kidney impairment",
+   "url": "https://www.medicines.org.uk/emc/files/pil.11980.pdf",
+   "action": "edited",
+   "newSentence": "The risk of lactic acidosis is higher when the kidneys do not work well, UK patient leaflets say."
+  },
+  {
+   "id": "c31",
+   "classification": "supported",
+   "evidence": "NHS: if blood sugar is stable, metformin should not affect driving, cycling or using machinery",
+   "url": "https://www.nhs.uk/medicines/metformin/pregnancy-breastfeeding-and-fertility-while-taking-metformin/",
+   "action": "edited",
+   "newSentence": "The NHS says that if blood sugar levels are stable, metformin should not affect the ability to drive, cycle or use machinery and tools."
+  },
+  {
+   "id": "c32",
+   "classification": "unsupported",
+   "evidence": "Dizziness advice not retrieved; NHS says any risk comes from other diabetes medicines",
+   "url": "https://www.nhs.uk/medicines/metformin/pregnancy-breastfeeding-and-fertility-while-taking-metformin/",
+   "action": "edited",
+   "newSentence": "The NHS says the risk comes from other diabetes medicines that can lower blood sugar."
+  },
+  {
+   "id": "c33",
+   "classification": "unsupported",
+   "evidence": "Leaflets say kidney function is checked regularly (at least yearly); checked before starting not confirmed",
+   "url": "https://www.medicines.org.uk/emc/files/pil.13161.pdf",
+   "action": "edited",
+   "newSentence": "UK patient leaflets say the doctor checks how well the kidneys work regularly during treatment."
+  },
+  {
+   "id": "c34",
+   "classification": "supported",
+   "evidence": "NHS: can take metformin in pregnancy but check with a doctor first",
+   "url": "https://www.nhs.uk/medicines/metformin/pregnancy-breastfeeding-and-fertility-while-taking-metformin/",
+   "action": "kept"
+  },
+  {
+   "id": "c35",
+   "classification": "unsupported",
+   "evidence": "Alone or with insulin came from a trust leaflet (Dorset) or unspecified page; not a preferred source",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c36",
+   "classification": "supported",
+   "evidence": "NHS gestational diabetes treatment page: medicines to control blood sugar usually stopped after birth",
+   "url": "https://www.nhs.uk/conditions/gestational-diabetes/treatment/",
+   "action": "edited",
+   "newSentence": "The NHS says that in gestational diabetes, medicines taken to control blood sugar are usually stopped after the baby is born."
+  },
+  {
+   "id": "c37",
+   "classification": "unsupported",
+   "evidence": "Not retrieved from any preferred source",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c38",
+   "classification": "supported",
+   "evidence": "NHS: if doctor or midwife confirms baby is healthy, metformin can be taken while breastfeeding",
+   "url": "https://www.nhs.uk/medicines/metformin/pregnancy-breastfeeding-and-fertility-while-taking-metformin/",
+   "action": "kept"
+  },
+  {
+   "id": "c39",
+   "classification": "unsupported",
+   "evidence": "Tiny amounts pass into breast milk is retrieved from NHS; no side effects linked came from a non-nhs.uk trust page",
+   "url": "https://www.nhs.uk/medicines/metformin/pregnancy-breastfeeding-and-fertility-while-taking-metformin/",
+   "action": "edited",
+   "newSentence": "Only tiny amounts pass into breast milk, the NHS says."
+  },
+  {
+   "id": "c40",
+   "classification": "supported",
+   "evidence": "PMC review of 17 manufacturer labels: all advise against metformin during breastfeeding; NHS says it can be taken",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12516328/",
+   "action": "edited",
+   "newSentence": "A review of manufacturers' labels found that they advise against metformin during breastfeeding, which differs from the NHS advice."
+  },
+  {
+   "id": "c41",
+   "classification": "unsupported",
+   "evidence": "Retrieved: contact a health professional if baby feeds poorly or seems unusually drowsy or restless; NHS 111 for any concern not retrieved",
+   "url": "https://www.nhs.uk/medicines/metformin/pregnancy-breastfeeding-and-fertility-while-taking-metformin/",
+   "action": "edited",
+   "newSentence": "The NHS says a health professional should be contacted if a breastfed baby feeds poorly or seems unusually drowsy or restless."
+  },
+  {
+   "id": "c42",
+   "classification": "supported",
+   "evidence": "Very rare but serious (leaflets); NHS lists as serious",
+   "url": "https://www.medicines.org.uk/emc/files/pil.11980.pdf",
+   "action": "edited",
+   "newSentence": "Lactic acidosis is a very rare but serious side effect."
+  },
+  {
+   "id": "c43",
+   "classification": "supported",
+   "evidence": "NHS symptom list",
+   "url": "https://www.nhs.uk/medicines/metformin/",
+   "action": "kept"
+  },
+  {
+   "id": "c44",
+   "classification": "supported",
+   "evidence": "NHS: call 999 if suspected",
+   "url": "https://www.nhs.uk/medicines/metformin/",
+   "action": "kept"
+  },
+  {
+   "id": "c45",
+   "classification": "supported",
+   "evidence": "Leaflets: risk rises with kidney impairment",
+   "url": "https://www.medicines.org.uk/emc/files/pil.11980.pdf",
+   "action": "kept"
+  },
+  {
+   "id": "c46",
+   "classification": "supported",
+   "evidence": "NHS: take with a meal reduces side effects",
+   "url": "https://www.nhs.uk/medicines/metformin/",
+   "action": "kept"
+  },
+  {
+   "id": "c47",
+   "classification": "unsupported",
+   "evidence": "Slow increase lowering side effects not retrieved; implies dosing schedule",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c48",
+   "classification": "unsupported",
+   "evidence": "Doctor suggesting slow-release tablets not retrieved",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c49",
+   "classification": "supported",
+   "evidence": "Most side effects ease after a couple of weeks",
+   "url": "https://www.nhs.uk/medicines/metformin/",
+   "action": "edited",
+   "newSentence": "Most side effects ease after a couple of weeks, the NHS says."
+  },
+  {
+   "id": "c50",
+   "classification": "supported",
+   "evidence": "NHS: limit alcohol",
+   "url": "https://www.nhs.uk/medicines/metformin/",
+   "action": "kept"
+  },
+  {
+   "id": "c51",
+   "classification": "supported",
+   "evidence": "Leaflets: excessive alcohol may increase lactic acidosis risk",
+   "url": "https://www.medicines.org.uk/emc/files/pil.11980.pdf",
+   "action": "kept"
+  },
+  {
+   "id": "c52",
+   "classification": "supported",
+   "evidence": "NHS: tell doctor before starting if heavy drinker",
+   "url": "https://www.nhs.uk/medicines/metformin/who-can-and-cannot-take-metformin/",
+   "action": "kept"
+  },
+  {
+   "id": "c53",
+   "classification": "supported",
+   "evidence": "B12 deficiency with long-term use",
+   "url": "https://www.nhs.uk/medicines/metformin/",
+   "action": "kept"
+  },
+  {
+   "id": "c54",
+   "classification": "unsupported",
+   "evidence": "Tiredness not retrieved; blood test to check levels retrieved",
+   "url": "https://www.nhs.uk/medicines/metformin/",
+   "action": "removed"
+  },
+  {
+   "id": "c55",
+   "classification": "unsupported",
+   "evidence": "Supplements helping not retrieved",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c56",
+   "classification": "unsupported",
+   "evidence": "Leaflet listing of low B12 not retrieved this pass",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c57",
+   "classification": "supported",
+   "evidence": "NHS: type 2 diabetes, gestational diabetes, PMOS (previously PCOS), prevention at high risk",
+   "url": "https://www.nhs.uk/medicines/metformin/about-metformin/",
+   "action": "edited",
+   "newSentence": "Type 2 diabetes; also gestational diabetes, PMOS (previously polycystic ovary syndrome) and preventing type 2 diabetes in people at high risk"
+  },
+  {
+   "id": "c58",
+   "classification": "supported",
+   "evidence": "NHS common side effects, ease after a couple of weeks",
+   "url": "https://www.nhs.uk/medicines/metformin/",
+   "action": "edited",
+   "newSentence": "Feeling sick, diarrhoea, tummy pain and loss of appetite, which mostly ease after a couple of weeks"
+  },
+  {
+   "id": "c59",
+   "classification": "supported",
+   "evidence": "NHS: call 999 if lactic acidosis suspected",
+   "url": "https://www.nhs.uk/medicines/metformin/",
+   "action": "kept"
+  },
+  {
+   "id": "c60",
+   "classification": "supported",
+   "evidence": "B12 deficiency more likely with long-term use",
+   "url": "https://www.nhs.uk/medicines/metformin/",
+   "action": "kept"
+  },
+  {
+   "id": "c61",
+   "classification": "supported",
+   "evidence": "NHS: limit alcohol",
+   "url": "https://www.nhs.uk/medicines/metformin/",
+   "action": "kept"
+  },
+  {
+   "id": "c62",
+   "classification": "supported",
+   "evidence": "NHS: can take in pregnancy, check with doctor first",
+   "url": "https://www.nhs.uk/medicines/metformin/pregnancy-breastfeeding-and-fertility-while-taking-metformin/",
+   "action": "kept"
+  }
+ ],
+ "notes": "PMOS: the NHS about-metformin text retrieved says the NHS now uses polyendocrine metabolic ovarian syndrome (PMOS) in place of PCOS (polycystic ovary syndrome). Final text names both so readers recognise either; this differs from the site entry in content/medications.json (which says polycystic ovary syndrome, off label) and from the first-pass wording only in adding the older name. Reviewer should decide whether the site-wide term should change. Breastfeeding: NHS says it can be taken if the baby is healthy; a PMC review of manufacturer labels says labels advise against; both are described, neither instructs. Kidney sentence: reworded to 'the doctor checks kidney function regularly' (leaflets); the 'before starting' claim was only in a trial protocol and was cut. Gestational diabetes sentence is no longer treated as textbook; NHS trust pages (Guy's and St Thomas') support it. Dorset hospital leaflet attribution removed; the alone-or-with-insulin claim removed. Search summaries blend pages, so URLs for some NHS claims are the main metformin page or the nearest NHS metformin page (the side effects subpage was not returned by search); the leaflet URL for the contrast-dye sentence (emc pil.13161) is the best match but the summary did not name the exact leaflet. 'The NHS asks people who drink heavily to tell the doctor' rests on the who-can-and-cannot summary. Existing site entry also says dose/eGFR/HbA1c numbers that were not rechecked here (outside this article). Eight searches used."
+}

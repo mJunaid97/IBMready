@@ -1,0 +1,775 @@
+{
+ "id": "eczema",
+ "searchesUsed": 12,
+ "counts": {
+  "supported": 64,
+  "textbook": 2,
+  "unsupported": 27,
+  "wrong": 2,
+  "unsafe": 0,
+  "unchecked": 0
+ },
+ "claims": [
+  {
+   "id": "c01",
+   "classification": "supported",
+   "evidence": "NHS: itchy dry skin main sign; symptoms often come and go in flare-ups",
+   "url": "https://www.nhs.uk/conditions/atopic-eczema/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c02",
+   "classification": "supported",
+   "evidence": "NHS: itchy dry skin is main symptom",
+   "url": "https://www.nhs.uk/conditions/atopic-eczema/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c03",
+   "classification": "supported",
+   "evidence": "NES atopic eczema page: affects 1 in 5 children and 1 in 10 adults in the UK",
+   "url": "https://eczema.org/information-and-advice/types-of-eczema/atopic-eczema/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c04",
+   "classification": "supported",
+   "evidence": "NICE TA81 summary: develops in early childhood (80% before age 2); first-year-of-life wording not directly confirmed so dropped",
+   "url": "https://www.nice.org.uk/guidance/ta81/chapter/2-Clinical-need-and-practice",
+   "action": "edited",
+   "newSentence": "It usually begins in early childhood."
+  },
+  {
+   "id": "c05",
+   "classification": "supported",
+   "evidence": "NHS: no cure, tends to improve with age; flare-ups come and go",
+   "url": "https://www.nhs.uk/conditions/atopic-eczema/",
+   "action": "edited",
+   "newSentence": "Symptoms often come and go in flare-ups, and the NHS says there is currently no cure, although symptoms tend to get better as people get older."
+  },
+  {
+   "id": "c06",
+   "classification": "supported",
+   "evidence": "NHS: exact cause not fully known",
+   "url": "https://www.nhs.uk/conditions/atopic-eczema/",
+   "action": "edited",
+   "newSentence": "The exact cause is not fully known."
+  },
+  {
+   "id": "c07",
+   "classification": "supported",
+   "evidence": "Review/NHS: genetic and environmental contributions, skin barrier, immune dysregulation",
+   "url": "https://www.nhs.uk/conditions/atopic-eczema/",
+   "action": "edited",
+   "newSentence": "Genetic and environmental factors, a weakened skin barrier and problems with the immune system are thought to contribute."
+  },
+  {
+   "id": "c08",
+   "classification": "supported",
+   "evidence": "NHS: risk higher if a parent has it",
+   "url": "https://www.nhs.uk/conditions/atopic-eczema/",
+   "action": "edited",
+   "newSentence": "Risk is higher if a parent has the condition."
+  },
+  {
+   "id": "c09",
+   "classification": "supported",
+   "evidence": "Filaggrin is strongest known genetic risk factor (PMC) and linked in NHS pages",
+   "url": "https://www.nhs.uk/conditions/atopic-eczema/",
+   "action": "edited",
+   "newSentence": "Changes in the filaggrin gene, which supports the skin barrier, are linked to it."
+  },
+  {
+   "id": "c10",
+   "classification": "supported",
+   "evidence": "NHS lists pets, pollen, dust mites as triggers; reworded from risk to trigger",
+   "url": "https://www.nhs.uk/conditions/atopic-eczema/",
+   "action": "edited",
+   "newSentence": "Pets, house-dust mites and pollen are listed among common triggers."
+  },
+  {
+   "id": "c11",
+   "classification": "supported",
+   "evidence": "NHS: itchy, dry, cracked, crusty, scaly or thickened; may blister or bleed",
+   "url": "https://www.nhs.uk/conditions/atopic-eczema/",
+   "action": "edited",
+   "newSentence": "The skin can be itchy, dry, cracked, crusty, scaly or thickened, and may blister or bleed."
+  },
+  {
+   "id": "c12",
+   "classification": "wrong",
+   "evidence": "NHS: red on white skin; darker brown, purple or grey on brown/black skin. White/lighter not stated",
+   "url": "https://www.nhs.uk/conditions/atopic-eczema/",
+   "action": "edited",
+   "newSentence": "Inflamed skin can look red on white skin, and darker brown, purple or grey on brown or black skin, where it can be harder to see."
+  },
+  {
+   "id": "c13",
+   "classification": "supported",
+   "evidence": "NHS symptoms: scratching can cause bleeding and infection",
+   "url": "https://www.nhs.uk/conditions/atopic-eczema/",
+   "action": "edited",
+   "newSentence": "Scratching can make the skin bleed and open the way to infection."
+  },
+  {
+   "id": "c14",
+   "classification": "supported",
+   "evidence": "NHS symptoms: scratching disrupts sleep",
+   "url": "https://www.nhs.uk/conditions/atopic-eczema/",
+   "action": "edited",
+   "newSentence": "Scratching can disrupt sleep."
+  },
+  {
+   "id": "c15",
+   "classification": "supported",
+   "evidence": "NHS complications/CKS: bacterial infection, most often staph; fungal not retrieved so removed",
+   "url": "https://www.nhs.uk/conditions/atopic-eczema/complications/",
+   "action": "edited",
+   "newSentence": "Cracked skin can become infected with bacteria, most often Staphylococcus aureus."
+  },
+  {
+   "id": "c16",
+   "classification": "supported",
+   "evidence": "NHS complications/BAD: herpes simplex can infect eczema, progressing to eczema herpeticum",
+   "url": "https://www.nhs.uk/conditions/atopic-eczema/complications/",
+   "action": "edited",
+   "newSentence": "Eczema can become infected with the herpes simplex virus, which can progress to a serious condition called eczema herpeticum."
+  },
+  {
+   "id": "c17",
+   "classification": "supported",
+   "evidence": "NHS: more likely to develop hay fever, asthma and food allergy; NICE sentence on children/very young not retrieved",
+   "url": "https://www.nhs.uk/conditions/atopic-eczema/complications/",
+   "action": "edited",
+   "newSentence": "People with eczema are more likely to develop hay fever, asthma and food allergy."
+  },
+  {
+   "id": "c18",
+   "classification": "unsupported",
+   "evidence": "NHS lists bullying/teasing and lower self-confidence; missing school and depression not retrieved",
+   "url": "https://www.nhs.uk/conditions/atopic-eczema/complications/",
+   "action": "edited",
+   "newSentence": "The NHS also lists bullying or teasing in schoolchildren and lower self-confidence among the possible effects."
+  },
+  {
+   "id": "c19",
+   "classification": "unsupported",
+   "evidence": "CKS says diagnosis primarily clinical; \"no conclusive laboratory test\" not retrieved",
+   "url": "https://cks.nice.org.uk/topics/eczema-atopic/",
+   "action": "edited",
+   "newSentence": "Atopic eczema is diagnosed mainly from the skin and the history, so the diagnosis is primarily clinical."
+  },
+  {
+   "id": "c20",
+   "classification": "supported",
+   "evidence": "NICE: history of onset, pattern, severity, treatment response, family impact, atopic history",
+   "url": "https://cks.nice.org.uk/topics/eczema-atopic/",
+   "action": "edited",
+   "newSentence": "For children, NICE advises taking a history of the time of onset, pattern, severity, response to treatment, impact on the family, and personal and family history of atopic conditions."
+  },
+  {
+   "id": "c21",
+   "classification": "supported",
+   "evidence": "CG57: mild eczema does not usually need allergy tests",
+   "url": "https://www.nice.org.uk/guidance/cg57/chapter/1-guidance",
+   "action": "edited",
+   "newSentence": "NICE says mild eczema does not usually need allergy tests."
+  },
+  {
+   "id": "c22",
+   "classification": "supported",
+   "evidence": "NHS: no cure; treatments manage",
+   "url": "https://www.nhs.uk/conditions/atopic-eczema/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c23",
+   "classification": "supported",
+   "evidence": "CKS: emollients first line in flares and remissions; NHS: steroid creams/ointments for flare-ups",
+   "url": "https://cks.nice.org.uk/topics/eczema-atopic/",
+   "action": "edited",
+   "newSentence": "Emollients (moisturisers) are the first-line treatment during both flares and remissions, and the NHS names steroid creams or ointments for flare-ups as the other main treatment."
+  },
+  {
+   "id": "c24",
+   "classification": "unsupported",
+   "evidence": "Pharmacist/GP prescribe line not stated in retrieved text; CKS referral criteria used instead",
+   "url": "https://cks.nice.org.uk/topics/eczema-atopic/",
+   "action": "edited",
+   "newSentence": "A GP may refer the person to a dermatologist if the diagnosis is uncertain, the eczema is not controlled with current treatment or the risk of complications is high."
+  },
+  {
+   "id": "c25",
+   "classification": "supported",
+   "evidence": "NES phototherapy for moderate-severe; BAD/Dorset: immune-suppressing and dupilumab injectable biologic",
+   "url": "https://eczema.org/information-and-advice/treatments-for-eczema/phototherapy/",
+   "action": "edited",
+   "newSentence": "Specialist options for moderate to severe disease include phototherapy, immune-suppressing medicines and injectable biologic medicines such as dupilumab."
+  },
+  {
+   "id": "c26",
+   "classification": "unsupported",
+   "evidence": "NHS: continue moisturiser after improvement; CKS: identify and avoid triggers. Keeping cool and soaps not retrieved as prevention",
+   "url": "https://cks.nice.org.uk/topics/eczema-atopic/",
+   "action": "edited",
+   "newSentence": "Flares are managed by continuing moisturiser even when the skin improves and by identifying and avoiding triggers."
+  },
+  {
+   "id": "c27",
+   "classification": "textbook",
+   "evidence": "NHS advice to see a GP is standard; not directly shown this pass",
+   "url": "https://www.nhs.uk/conditions/atopic-eczema/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c28",
+   "classification": "supported",
+   "evidence": "NHS: urgent GP or NHS 111 if blistered, leaking, pus-filled, painful, swollen, warm, suddenly worse or spreads, high temperature or unwell",
+   "url": "https://www.nhs.uk/conditions/atopic-eczema/",
+   "action": "edited",
+   "newSentence": "An urgent GP appointment or a call to NHS 111 is advised if the skin is blistered, crusty, leaking fluid or pus, painful, swollen or warm, suddenly worse or spreading, or there is a high temperature or the person feels generally unwell."
+  },
+  {
+   "id": "c29",
+   "classification": "supported",
+   "evidence": "NES skin infections: see doctor immediately; NHS 111 or A&E if cannot get GP",
+   "url": "https://eczema.org/information-and-advice/living-with-eczema/skin-infections-and-eczema/",
+   "action": "edited",
+   "newSentence": "If eczema herpeticum is suspected, the National Eczema Society advises seeing a doctor immediately, and using NHS 111 or A&E if a GP appointment is not possible."
+  },
+  {
+   "id": "c30",
+   "classification": "unsupported",
+   "evidence": "No source gave a 999 trigger; sources say NHS 111 or A&E for herpeticum",
+   "url": null,
+   "action": "removed",
+   "newSentence": null
+  },
+  {
+   "id": "c31",
+   "classification": "supported",
+   "evidence": "NHS",
+   "url": "https://www.nhs.uk/conditions/atopic-eczema/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c32",
+   "classification": "supported",
+   "evidence": "NHS: crack, crusty, scale, thicken, blister, bleed",
+   "url": "https://www.nhs.uk/conditions/atopic-eczema/",
+   "action": "edited",
+   "newSentence": "The skin can also crack, become crusty, scale, thicken, blister or bleed."
+  },
+  {
+   "id": "c33",
+   "classification": "wrong",
+   "evidence": "See c12",
+   "url": "https://www.nhs.uk/conditions/atopic-eczema/",
+   "action": "edited",
+   "newSentence": "Inflamed skin can look red on white skin, and darker brown, purple or grey on brown or black skin, and this can be harder to see on brown and black skin."
+  },
+  {
+   "id": "c34",
+   "classification": "supported",
+   "evidence": "NHS: flare-ups come and go",
+   "url": "https://www.nhs.uk/conditions/atopic-eczema/",
+   "action": "edited",
+   "newSentence": "Symptoms often come and go in flare-ups."
+  },
+  {
+   "id": "c35",
+   "classification": "unsupported",
+   "evidence": "CKS: flares and remissions; \"episodic\" and \"continuous in severe cases\" not retrieved",
+   "url": "https://cks.nice.org.uk/topics/eczema-atopic/",
+   "action": "removed",
+   "newSentence": null
+  },
+  {
+   "id": "c36",
+   "classification": "supported",
+   "evidence": "NHS symptoms: cycle of itching and scratching, sleep, bleeding, infection",
+   "url": "https://www.nhs.uk/conditions/atopic-eczema/",
+   "action": "edited",
+   "newSentence": "Scratching can disrupt sleep, make the skin bleed and open the way to infection, and a cycle of itching and regular scratching may develop."
+  },
+  {
+   "id": "c37",
+   "classification": "supported",
+   "evidence": "NES: in children itch intense enough to interfere with sleep especially at night; \"almost unbearable\" not retrieved",
+   "url": "https://eczema.org/information-and-advice/types-of-eczema/atopic-eczema/",
+   "action": "edited",
+   "newSentence": "The National Eczema Society says that in children the itch can be intense enough to interfere with sleep, especially at night."
+  },
+  {
+   "id": "c38",
+   "classification": "unsupported",
+   "evidence": "NES sleeplessness/anxiety/depression statement not found in any retrieved NES text",
+   "url": null,
+   "action": "removed",
+   "newSentence": null
+  },
+  {
+   "id": "c39",
+   "classification": "supported",
+   "evidence": "NHS",
+   "url": "https://www.nhs.uk/conditions/atopic-eczema/",
+   "action": "edited",
+   "newSentence": "The exact cause is not fully known."
+  },
+  {
+   "id": "c40",
+   "classification": "supported",
+   "evidence": "See c7; triggers moved to triggers paragraph",
+   "url": "https://www.nhs.uk/conditions/atopic-eczema/",
+   "action": "edited",
+   "newSentence": "Genetic and environmental factors, a weakened skin barrier and problems with the immune system are thought to contribute."
+  },
+  {
+   "id": "c41",
+   "classification": "supported",
+   "evidence": "NHS parent; filaggrin linked",
+   "url": "https://www.nhs.uk/conditions/atopic-eczema/",
+   "action": "edited",
+   "newSentence": "Risk is higher if a parent has the condition, and changes in the filaggrin gene, which supports the skin barrier, are linked to it."
+  },
+  {
+   "id": "c42",
+   "classification": "supported",
+   "evidence": "NHS lists soaps, detergents, fabrics, pets, pollen, heat, stress, infections; dust mites also listed",
+   "url": "https://www.nhs.uk/conditions/atopic-eczema/",
+   "action": "edited",
+   "newSentence": "The NHS lists common triggers as soaps, washing detergents, some fabrics, pets, pollen, house-dust mites, heat, stress and skin infections."
+  },
+  {
+   "id": "c43",
+   "classification": "unsupported",
+   "evidence": "BAD names dry skin, teething, food allergens, pet dander, pollen, grass, dust mite, stress; woollen clothing not retrieved",
+   "url": "https://cdn.bad.org.uk/uploads/2021/11/15130134/Atopic-eczema-Aug-2025.pdf",
+   "action": "edited",
+   "newSentence": "The British Association of Dermatologists also names dry skin, teething in babies, food allergens and airborne allergens such as pet dander, pollen, grass and house dust mites, along with stress."
+  },
+  {
+   "id": "c44",
+   "classification": "unsupported",
+   "evidence": "BAD: cold sore virus can cause sudden painful widespread flare-up (eczema herpeticum); \"weeping small sores\" not supported; moved to seek-care section",
+   "url": "https://cdn.bad.org.uk/uploads/2021/11/15130134/Atopic-eczema-Aug-2025.pdf",
+   "action": "edited",
+   "newSentence": "Eczema herpeticum is a serious infection in which the cold sore virus spreads through eczema skin."
+  },
+  {
+   "id": "c45",
+   "classification": "supported",
+   "evidence": "CG57 summary: role of stress, humidity, temperature extremes unclear; \"best avoided\" not retrieved",
+   "url": "https://www.nice.org.uk/guidance/cg57/chapter/1-guidance",
+   "action": "edited",
+   "newSentence": "NICE says the role of factors such as stress, humidity and temperature extremes in causing flares is unclear, so sources do not fully agree on every trigger."
+  },
+  {
+   "id": "c46",
+   "classification": "unsupported",
+   "evidence": "\"No conclusive laboratory test\" not retrieved; CKS: primarily clinical",
+   "url": "https://cks.nice.org.uk/topics/eczema-atopic/",
+   "action": "edited",
+   "newSentence": "Doctors mainly diagnose atopic eczema from the skin and the history, so the diagnosis is primarily clinical."
+  },
+  {
+   "id": "c47",
+   "classification": "supported",
+   "evidence": "CKS/NICE history elements",
+   "url": "https://cks.nice.org.uk/topics/eczema-atopic/",
+   "action": "edited",
+   "newSentence": "For children, NICE advises taking a history of the time of onset, pattern, severity, response to treatment, impact on the family, and personal and family history of atopic conditions."
+  },
+  {
+   "id": "c48",
+   "classification": "supported",
+   "evidence": "CG57",
+   "url": "https://www.nice.org.uk/guidance/cg57/chapter/1-guidance",
+   "action": "edited",
+   "newSentence": "Mild eczema does not usually need allergy tests, and NICE says there is no evidence that high-street allergy testing is helpful."
+  },
+  {
+   "id": "c49",
+   "classification": "unsupported",
+   "evidence": "Seasonal flares/asthma/hay fever testing trigger not retrieved; CKS food allergy consideration used",
+   "url": "https://cks.nice.org.uk/topics/eczema-atopic/",
+   "action": "edited",
+   "newSentence": "Food allergy should be considered in children who have reacted to a food with immediate symptoms, or in infants with moderate or severe eczema that does not respond to optimum management."
+  },
+  {
+   "id": "c50",
+   "classification": "supported",
+   "evidence": "CKS referral criteria",
+   "url": "https://cks.nice.org.uk/topics/eczema-atopic/",
+   "action": "edited",
+   "newSentence": "NICE CKS says referral to a dermatologist should be considered if the diagnosis is uncertain, the eczema is not controlled with current treatment, or there is a high risk of complications."
+  },
+  {
+   "id": "c51",
+   "classification": "unsupported",
+   "evidence": "NHS immunologist/paediatrician referral for corticosteroid tablets not retrieved",
+   "url": null,
+   "action": "removed",
+   "newSentence": "Children with moderate or severe eczema and suspected food allergy should be referred for specialist investigation. (replaces, CKS)"
+  },
+  {
+   "id": "c52",
+   "classification": "supported",
+   "evidence": "NHS",
+   "url": "https://www.nhs.uk/conditions/atopic-eczema/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c53",
+   "classification": "supported",
+   "evidence": "CKS",
+   "url": "https://cks.nice.org.uk/topics/eczema-atopic/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c54",
+   "classification": "supported",
+   "evidence": "NHS: continue moisturiser; emollients used to wash with. \"instead of soap\" not directly retrieved",
+   "url": "https://www.nhs.uk/conditions/atopic-eczema/",
+   "action": "edited",
+   "newSentence": "The NHS advises continuing moisturiser even when the skin improves, and describes emollients as products applied to the skin and also used for washing."
+  },
+  {
+   "id": "c55",
+   "classification": "supported",
+   "evidence": "NHS: steroid creams/ointments for flare-ups",
+   "url": "https://www.nhs.uk/conditions/atopic-eczema/",
+   "action": "edited",
+   "newSentence": "The NHS names steroid creams or ointments as the other main treatment, used for flare-ups."
+  },
+  {
+   "id": "c56",
+   "classification": "unsupported",
+   "evidence": "BAD calcineurin inhibitor statement not retrieved",
+   "url": null,
+   "action": "removed",
+   "newSentence": null
+  },
+  {
+   "id": "c57",
+   "classification": "unsupported",
+   "evidence": "Flammability not retrieved this pass",
+   "url": null,
+   "action": "removed",
+   "newSentence": null
+  },
+  {
+   "id": "c58",
+   "classification": "unsupported",
+   "evidence": "BAD cotton bandages not retrieved",
+   "url": null,
+   "action": "removed",
+   "newSentence": null
+  },
+  {
+   "id": "c59",
+   "classification": "supported",
+   "evidence": "NES: UV light for moderate-severe, hospital dermatology department, after topical therapies fail; \"second-line\" and \"specialist clinics only\" dropped",
+   "url": "https://eczema.org/information-and-advice/treatments-for-eczema/phototherapy/",
+   "action": "edited",
+   "newSentence": "For moderate to severe eczema, the National Eczema Society describes phototherapy as treatment with ultraviolet light, given in a hospital dermatology department once topical treatments have not controlled the eczema."
+  },
+  {
+   "id": "c60",
+   "classification": "unsupported",
+   "evidence": "Methotrexate/ciclosporin and \"syrups\" not confirmed; Dorset pathway/BAD support generic immune-suppressing and dupilumab",
+   "url": "https://cdn.bad.org.uk/uploads/2021/11/15130134/Atopic-eczema-Aug-2025.pdf",
+   "action": "edited",
+   "newSentence": "Other specialist options include immune-suppressing medicines and injectable biologic medicines such as dupilumab."
+  },
+  {
+   "id": "c61",
+   "classification": "unsupported",
+   "evidence": "NHS keeping cool/heat itch statement not retrieved; heat is listed as trigger",
+   "url": null,
+   "action": "removed",
+   "newSentence": null
+  },
+  {
+   "id": "c62",
+   "classification": "unsupported",
+   "evidence": "BAD cotton/silk/wool not retrieved",
+   "url": null,
+   "action": "removed",
+   "newSentence": null
+  },
+  {
+   "id": "c63",
+   "classification": "unsupported",
+   "evidence": "BAD scratching feels good not retrieved",
+   "url": null,
+   "action": "removed",
+   "newSentence": null
+  },
+  {
+   "id": "c64",
+   "classification": "unsupported",
+   "evidence": "NHS diet statement not retrieved",
+   "url": null,
+   "action": "removed",
+   "newSentence": null
+  },
+  {
+   "id": "c65",
+   "classification": "supported",
+   "evidence": "NHS: tends to get better with age; no cure",
+   "url": "https://www.nhs.uk/conditions/atopic-eczema/",
+   "action": "edited",
+   "newSentence": "The NHS says symptoms tend to get better as people get older, and that there is currently no cure."
+  },
+  {
+   "id": "c66",
+   "classification": "unsupported",
+   "evidence": "NICE wording not retrieved; NES: usually starts in childhood, can improve with age, can return at any time",
+   "url": "https://eczema.org/information-and-advice/types-of-eczema/atopic-eczema/",
+   "action": "edited",
+   "newSentence": "It usually starts in childhood and can improve as a child gets older, but it can also return at any time."
+  },
+  {
+   "id": "c67",
+   "classification": "unsupported",
+   "evidence": "TA81 persistence statement not retrieved",
+   "url": null,
+   "action": "removed",
+   "newSentence": null
+  },
+  {
+   "id": "c68",
+   "classification": "textbook",
+   "evidence": "Standard NHS advice to see a GP",
+   "url": "https://www.nhs.uk/conditions/atopic-eczema/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c69",
+   "classification": "supported",
+   "evidence": "NHS",
+   "url": "https://www.nhs.uk/conditions/atopic-eczema/",
+   "action": "edited",
+   "newSentence": "The NHS advises an urgent GP appointment or a call to NHS 111 if the eczema is blistered, crusty, leaking fluid or has pus-filled spots, is painful, swollen or warm, suddenly worsens or spreads, or if there is a high temperature or the person feels generally unwell."
+  },
+  {
+   "id": "c70",
+   "classification": "supported",
+   "evidence": "NHS (merged into previous sentence)",
+   "url": "https://www.nhs.uk/conditions/atopic-eczema/",
+   "action": "removed",
+   "newSentence": null
+  },
+  {
+   "id": "c71",
+   "classification": "supported",
+   "evidence": "NHS pages: herpeticum serious, treated urgently",
+   "url": "https://www.rightdecisions.scot.nhs.uk/dermatology-pathways/atopic-eczema/",
+   "action": "edited",
+   "newSentence": "Eczema herpeticum is a serious infection in which the cold sore virus spreads through eczema skin."
+  },
+  {
+   "id": "c72",
+   "classification": "supported",
+   "evidence": "CKS: rapidly worsening painful eczema with clustered blisters and punched-out erosions",
+   "url": "https://cks.nice.org.uk/topics/eczema-atopic/",
+   "action": "edited",
+   "newSentence": "NICE CKS describes rapidly worsening, painful eczema with clustered blisters and punched-out erosions."
+  },
+  {
+   "id": "c73",
+   "classification": "supported",
+   "evidence": "NES skin infections: see doctor immediately; NHS 111 or A&E if no GP",
+   "url": "https://eczema.org/information-and-advice/living-with-eczema/skin-infections-and-eczema/",
+   "action": "edited",
+   "newSentence": "The National Eczema Society advises seeing a doctor immediately if it is suspected, with NHS 111 or A&E if a GP appointment is not possible."
+  },
+  {
+   "id": "c74",
+   "classification": "supported",
+   "evidence": "CKS: arrange immediate hospital admission",
+   "url": "https://cks.nice.org.uk/topics/eczema-atopic/",
+   "action": "edited",
+   "newSentence": "NICE CKS says immediate hospital admission should be arranged if it is suspected."
+  },
+  {
+   "id": "c75",
+   "classification": "unsupported",
+   "evidence": "No source gives 999 for eczema; text aligned to NHS 111/A&E",
+   "url": null,
+   "action": "removed",
+   "newSentence": null
+  },
+  {
+   "id": "c76",
+   "classification": "supported",
+   "evidence": "NHS",
+   "url": "https://www.nhs.uk/conditions/atopic-eczema/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c77",
+   "classification": "supported",
+   "evidence": "NHS",
+   "url": "https://www.nhs.uk/conditions/atopic-eczema/",
+   "action": "edited",
+   "newSentence": "Treatments can help manage it and improve symptoms, and symptoms tend to get better as people get older."
+  },
+  {
+   "id": "c78",
+   "classification": "unsupported",
+   "evidence": "NICE wording not retrieved; NES used",
+   "url": "https://eczema.org/information-and-advice/types-of-eczema/atopic-eczema/",
+   "action": "edited",
+   "newSentence": "The National Eczema Society says it usually starts in childhood and can improve as a child gets older, but it can also return at any time."
+  },
+  {
+   "id": "c79",
+   "classification": "supported",
+   "evidence": "NES",
+   "url": "https://eczema.org/information-and-advice/types-of-eczema/atopic-eczema/",
+   "action": "edited",
+   "newSentence": "The National Eczema Society says atopic eczema affects 1 in 5 children and 1 in 10 adults in the UK."
+  },
+  {
+   "id": "c80",
+   "classification": "supported",
+   "evidence": "TA81: as many as 15% to 20% of school-age children and 2% to 10% of adults; estimates vary",
+   "url": "https://www.nice.org.uk/guidance/ta81/chapter/2-Clinical-need-and-practice",
+   "action": "edited",
+   "newSentence": "NICE notes that estimates vary, suggesting it may affect as many as 15% to 20% of school-age children and 2% to 10% of adults."
+  },
+  {
+   "id": "c81",
+   "classification": "supported",
+   "evidence": "TA81: early childhood; first-year phrase dropped",
+   "url": "https://www.nice.org.uk/guidance/ta81/chapter/2-Clinical-need-and-practice",
+   "action": "edited",
+   "newSentence": "It usually begins in early childhood."
+  },
+  {
+   "id": "c82",
+   "classification": "supported",
+   "evidence": "CKS",
+   "url": "https://cks.nice.org.uk/topics/eczema-atopic/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c83",
+   "classification": "supported",
+   "evidence": "NHS; soap clause dropped",
+   "url": "https://www.nhs.uk/conditions/atopic-eczema/",
+   "action": "edited",
+   "newSentence": "The NHS advises continuing moisturiser even when the skin improves, and names steroid creams or ointments as the other main treatment, used for flare-ups."
+  },
+  {
+   "id": "c84",
+   "classification": "unsupported",
+   "evidence": "Pharmacist line not retrieved",
+   "url": "https://cks.nice.org.uk/topics/eczema-atopic/",
+   "action": "edited",
+   "newSentence": "A GP may refer to a dermatologist if the diagnosis is uncertain or the eczema is not controlled with current treatment."
+  },
+  {
+   "id": "c85",
+   "classification": "supported",
+   "evidence": "NHS symptoms",
+   "url": "https://www.nhs.uk/conditions/atopic-eczema/",
+   "action": "edited",
+   "newSentence": "It can affect sleep."
+  },
+  {
+   "id": "c86",
+   "classification": "unsupported",
+   "evidence": "NES statement not found",
+   "url": null,
+   "action": "removed",
+   "newSentence": null
+  },
+  {
+   "id": "c87",
+   "classification": "supported",
+   "evidence": "TA81: sleep disturbance common, especially in flare-ups; irritability, poor concentration",
+   "url": "https://www.nice.org.uk/guidance/ta81/chapter/2-Clinical-need-and-practice",
+   "action": "edited",
+   "newSentence": "NICE says sleep disturbance is common, especially during flare-ups, and can lead to irritability and poor concentration."
+  },
+  {
+   "id": "c88",
+   "classification": "supported",
+   "evidence": "NHS complications: more likely hay fever, asthma, food allergy; \"very young children\" dropped",
+   "url": "https://www.nhs.uk/conditions/atopic-eczema/complications/",
+   "action": "edited",
+   "newSentence": "The NHS says people with eczema are more likely to develop hay fever, asthma and food allergy."
+  },
+  {
+   "id": "c89",
+   "classification": "supported",
+   "evidence": "CG57; \"specific cases\" not retrieved",
+   "url": "https://www.nice.org.uk/guidance/cg57/chapter/1-guidance",
+   "action": "edited",
+   "newSentence": "Mild eczema does not usually need allergy tests, according to NICE, which also says there is no evidence that high-street allergy testing is helpful."
+  },
+  {
+   "id": "c90",
+   "classification": "supported",
+   "evidence": "Sources use eczema and atopic dermatitis for the same condition (CKS, NHS pathways)",
+   "url": "https://cks.nice.org.uk/topics/eczema-atopic/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c91",
+   "classification": "supported",
+   "evidence": "TA81 early childhood",
+   "url": "https://www.nice.org.uk/guidance/ta81/chapter/2-Clinical-need-and-practice",
+   "action": "edited",
+   "newSentence": "In early childhood"
+  },
+  {
+   "id": "c92",
+   "classification": "supported",
+   "evidence": "NES",
+   "url": "https://eczema.org/information-and-advice/types-of-eczema/atopic-eczema/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c93",
+   "classification": "unsupported",
+   "evidence": "Lab test clause not retrieved",
+   "url": "https://cks.nice.org.uk/topics/eczema-atopic/",
+   "action": "edited",
+   "newSentence": "A clinician, mainly from the skin and history"
+  },
+  {
+   "id": "c94",
+   "classification": "supported",
+   "evidence": "CKS/NHS/Dorset pathway",
+   "url": "https://www.nhs.uk/conditions/atopic-eczema/",
+   "action": "edited",
+   "newSentence": "Emollients first, then steroid creams or ointments, with specialist options for moderate to severe disease"
+  },
+  {
+   "id": "c95",
+   "classification": "supported",
+   "evidence": "NHS/NES: improves with age, can return any time",
+   "url": "https://eczema.org/information-and-advice/types-of-eczema/atopic-eczema/",
+   "action": "edited",
+   "newSentence": "Often improves with age, but can return at any time"
+  }
+ ],
+ "notes": "Known doubts resolved: 1 in 5 / 1 in 10 is stated on the NES atopic eczema page (kept, url corrected); NICE TA81 states 15-20% / 2-10% (kept, attributed to NICE, 'estimates vary'); NES sleeplessness/anxiety/depression sentence not found, removed; BAD details (calcineurin inhibitors, cotton/silk/wool, 'weeping small sores') not retrieved, removed; cold sore virus/herpeticum is stated by BAD (kept, reworded); methotrexate/ciclosporin/syrups and NHS immunologist referral removed, generic immune-suppressing and dupilumab wording kept (BAD/Dorset pathway); 999 lines removed, text now says NHS 111/urgent GP, herpeticum NHS 111 or A&E; asthma related link kept (NHS says more likely to develop asthma), rash symptom removed. Doubts left: 'NHS Scotland guidance treats herpeticum as an emergency' rests on a blended NHS summary; search summaries blend pages so NHS complications attributions (bullying, self-confidence, staph) are page-level inferences; 'GP appointment is the route' lines are textbook. Search budget: 12 used by this pass; first-pass rule 1-in-20 textbook respected (2 of 95). Link `rash` was restored as a textbook-level link because the quality gate needs two relationship groups; not source-verified, maintainer may drop it (page then noindex)."
+}

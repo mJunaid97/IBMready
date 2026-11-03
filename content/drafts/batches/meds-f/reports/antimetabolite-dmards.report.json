@@ -1,0 +1,111 @@
+{
+ "id": "antimetabolite-dmards",
+ "searchesUsed": 0,
+ "counts": {
+  "supported": 12,
+  "textbook": 0,
+  "unsupported": 0,
+  "wrong": 0,
+  "unsafe": 0,
+  "unchecked": 0
+ },
+ "claims": [
+  {
+   "id": "c01",
+   "classification": "supported",
+   "evidence": "Original: \"Methotrexate is an immunosuppressant ...\" | Retrieved: NHS: immunosuppressant for RA, psoriasis, Crohn's; sometimes cancer.",
+   "url": "https://www.nhs.uk/medicines/methotrexate/about-methotrexate/",
+   "action": "kept",
+   "newSentence": "Methotrexate is an immunosuppressant used for inflammatory conditions such as rheumatoid arthritis, psoriasis and Crohn's disease, and sometimes for cancer."
+  },
+  {
+   "id": "c02",
+   "classification": "supported",
+   "evidence": "Original: \"The NHS says it calms the immune system to help stop it attacking the body's own cells.\" | Retrieved: NHS: calms/slows the immune system and reduces inflammation.",
+   "url": "https://www.nhs.uk/medicines/methotrexate/about-methotrexate/",
+   "action": "edited",
+   "newSentence": "The NHS says it calms the immune system and helps reduce inflammation."
+  },
+  {
+   "id": "c03",
+   "classification": "supported",
+   "evidence": "Original: \"Methotrexate blocks dihydrofolate reductase, an enzyme needed to make the active form of folic acid used to build DNA and RNA.\" | Retrieved: Reviews: DHFR inhibition; tetrahydrofolate; DNA/RNA synthesis.",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/30081197/",
+   "action": "edited",
+   "newSentence": "Methotrexate blocks an enzyme called dihydrofolate reductase, which the body uses to make tetrahydrofolate, a form of folate needed to build DNA and RNA."
+  },
+  {
+   "id": "c04",
+   "classification": "supported",
+   "evidence": "Original: \"In inflammatory conditions, how low-dose methotrexate works is less clear.\" | Retrieved: Reviews: low-dose anti-inflammatory mechanism less clear.",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/30081197/",
+   "action": "kept",
+   "newSentence": "In inflammatory conditions, how low-dose methotrexate works is less clear."
+  },
+  {
+   "id": "c05",
+   "classification": "supported",
+   "evidence": "Original: \"Taking methotrexate daily by mistake instead of weekly has led to overdoses that were sometimes fatal.\" | Retrieved: MHRA/MedlinePlus: daily-for-weekly mistake caused fatal overdose.",
+   "url": "https://www.gov.uk/drug-safety-update/methotrexate-once-weekly-for-autoimmune-diseases-new-measures-to-reduce-risk-of-fatal-overdose-due-to-inadvertent-daily-instead-of-weekly-dosing",
+   "action": "edited",
+   "newSentence": "Taking it daily by mistake instead of weekly has caused overdoses that were sometimes fatal."
+  },
+  {
+   "id": "c06",
+   "classification": "supported",
+   "evidence": "Original: \"The MHRA introduced new measures in 2020 ... including a patient card.\" | Retrieved: MHRA Sept 2020: new measures including patient card.",
+   "url": "https://www.gov.uk/drug-safety-update/methotrexate-once-weekly-for-autoimmune-diseases-new-measures-to-reduce-risk-of-fatal-overdose-due-to-inadvertent-daily-instead-of-weekly-dosing",
+   "action": "edited",
+   "newSentence": "The MHRA introduced new measures in 2020 to reduce this risk, including a patient card for oral products."
+  },
+  {
+   "id": "c07",
+   "classification": "supported",
+   "evidence": "Original: \"Regular blood tests are used to monitor treatment.\" | Retrieved: Versus Arthritis / NHS: regular blood tests.",
+   "url": "https://versusarthritis.org/about-arthritis/treatments/drugs/methotrexate/",
+   "action": "kept",
+   "newSentence": "Regular blood tests are used to monitor treatment."
+  },
+  {
+   "id": "c08",
+   "classification": "supported",
+   "evidence": "Original: \"The NHS says methotrexate is not recommended in pregnancy, as it can cause birth defects.\" | Retrieved: NHS: not recommended in pregnancy; birth defects.",
+   "url": "https://www.nhs.uk/medicines/methotrexate/pregnancy-breastfeeding-and-fertility-while-taking-methotrexate/",
+   "action": "edited",
+   "newSentence": "The NHS says methotrexate is not recommended in pregnancy because it can cause birth defects."
+  },
+  {
+   "id": "c09",
+   "classification": "supported",
+   "evidence": "Original: \"NSAIDs can raise the risk of kidney toxicity, so they are used with caution on specialist advice.\" | Retrieved: SPS: NSAIDs raise methotrexate toxicity risk; 'kidney toxicity' not confirmed.",
+   "url": "https://sps.nhs.uk/articles/managing-interactions-with-methotrexate/",
+   "action": "edited",
+   "newSentence": "NSAIDs can increase the risk of methotrexate toxicity, so they are used only on specialist advice."
+  },
+  {
+   "id": "c10",
+   "classification": "supported",
+   "evidence": "Original: \"Trimethoprim and co-trimoxazole are advised against because of the risk of severe bone marrow suppression.\" | Retrieved: SPS/Scottish guidance: avoid; additive antifolate effect and bone marrow suppression.",
+   "url": "https://sps.nhs.uk/articles/managing-interactions-with-methotrexate/",
+   "action": "kept",
+   "newSentence": "Trimethoprim and co-trimoxazole are advised against because of the risk of severe bone marrow suppression."
+  },
+  {
+   "id": "c11",
+   "classification": "supported",
+   "evidence": "Original: \"Live vaccines are avoided.\" | Retrieved: SPS/hospital guidance: live vaccines not recommended.",
+   "url": "https://sps.nhs.uk/articles/managing-interactions-with-methotrexate/",
+   "action": "edited",
+   "newSentence": "Live vaccines are not recommended during treatment."
+  },
+  {
+   "id": "c12",
+   "classification": "supported",
+   "evidence": "Original: \"Taking methotrexate daily by mistake ... (classWarning)\" | Retrieved: MHRA/MedlinePlus: daily-for-weekly mistake caused fatal overdose.",
+   "url": "https://www.gov.uk/drug-safety-update/methotrexate-once-weekly-for-autoimmune-diseases-new-measures-to-reduce-risk-of-fatal-overdose-due-to-inadvertent-daily-instead-of-weekly-dosing",
+   "action": "edited",
+   "newSentence": "Taking it daily by mistake instead of weekly has caused overdoses that were sometimes fatal."
+  }
+ ],
+ "notes": "Class page reuses retrievals of the methotrexate item (no separate searches). Single member only."
+}

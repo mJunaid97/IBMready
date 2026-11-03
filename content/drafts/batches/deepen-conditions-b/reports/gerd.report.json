@@ -1,0 +1,519 @@
+{
+ "id": "gerd",
+ "searchesUsed": 9,
+ "counts": {
+  "supported": 41,
+  "textbook": 2,
+  "unsupported": 20,
+  "wrong": 0,
+  "unsafe": 0,
+  "unchecked": 0
+ },
+ "claims": [
+  {
+   "id": "c01",
+   "classification": "supported",
+   "evidence": "Carried by retrieved NHS / NHS inform / NIDDK text",
+   "url": "https://www.nhs.uk/conditions/heartburn-and-acid-reflux/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c02",
+   "classification": "supported",
+   "evidence": "Carried by retrieved NHS / NHS inform / NIDDK text",
+   "url": "https://www.nhs.uk/conditions/heartburn-and-acid-reflux/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c03",
+   "classification": "unsupported",
+   "evidence": "NHS inform summary lists sore throat, hoarseness, belching, vomiting; swallowing pain not carried",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/stomach-liver-and-gastrointestinal-tract/gastro-oesophageal-reflux-disease-gord/",
+   "action": "edited",
+   "newSentence": "NHS inform lists other possible symptoms, including bloating, belching, vomiting, a hoarse voice and a sore throat."
+  },
+  {
+   "id": "c04",
+   "classification": "unsupported",
+   "evidence": "Not retrieved; NIDDK says heartburn and regurgitation most common",
+   "url": "https://www.niddk.nih.gov/health-information/digestive-diseases/acid-reflux-ger-gerd-adults",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c05",
+   "classification": "unsupported",
+   "evidence": "Nausea, tooth wear, trouble swallowing not carried by retrieved text",
+   "url": "https://www.niddk.nih.gov/health-information/digestive-diseases/acid-reflux-ger-gerd-adults",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c06",
+   "classification": "supported",
+   "evidence": "Carried by retrieved NHS / NHS inform / NIDDK text",
+   "url": "https://www.nhs.uk/conditions/heartburn-and-acid-reflux/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c07",
+   "classification": "supported",
+   "evidence": "Carried by retrieved NHS / NHS inform / NIDDK text",
+   "url": "https://www.nhs.uk/conditions/heartburn-and-acid-reflux/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c08",
+   "classification": "unsupported",
+   "evidence": "Retrieved NICE text: regurgitation common and normal in infancy; not 'children and adults'",
+   "url": "https://www.nice.org.uk/guidance/ng1/chapter/Recommendations",
+   "action": "edited",
+   "newSentence": "NICE guidance ... describes regurgitation ... as common and normal in infancy."
+  },
+  {
+   "id": "c09",
+   "classification": "unsupported",
+   "evidence": "Not carried by retrieved text",
+   "url": "https://www.nice.org.uk/guidance/ng1/chapter/Recommendations",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c10",
+   "classification": "unsupported",
+   "evidence": "Not carried by retrieved text",
+   "url": "https://www.nice.org.uk/guidance/ng1/chapter/Recommendations",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c11",
+   "classification": "unsupported",
+   "evidence": "Poor weight gain/refusing feeds/breathing problems not carried",
+   "url": "https://www.nhs.uk/conditions/reflux-in-babies/",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c12",
+   "classification": "unsupported",
+   "evidence": "Heartburn in older children and chronic cough/pneumonia not carried; leaflet lists cough, wheeze",
+   "url": "https://www.chelwest.nhs.uk/your-visit/patient-leaflets/paediatrics/gastro-oesophageal-reflux-gor",
+   "action": "edited",
+   "newSentence": "A children's hospital leaflet lists coughing, gagging, trouble swallowing and wheezing ..."
+  },
+  {
+   "id": "c13",
+   "classification": "unsupported",
+   "evidence": "NHS: baby with reflux does not usually need a doctor if happy, healthy, gaining weight; 'children' not carried",
+   "url": "https://www.nhs.uk/conditions/reflux-in-babies/",
+   "action": "edited",
+   "newSentence": "The NHS says a baby with reflux does not usually need to see a doctor if they are happy, healthy and gaining weight ..."
+  },
+  {
+   "id": "c14",
+   "classification": "unsupported",
+   "evidence": "NICE: smaller more frequent feeds then thickened formula for formula-fed distressed infants; smoke avoidance and back-sleeping not carried",
+   "url": "https://www.nice.org.uk/guidance/ng1/chapter/key-priorities-for-implementation",
+   "action": "edited",
+   "newSentence": "For formula-fed babies who often regurgitate ... NICE sets out steps ..."
+  },
+  {
+   "id": "c15",
+   "classification": "unsupported",
+   "evidence": "NHS: babies usually grow out by age 1; weaning not carried; 'most children' overreach",
+   "url": "https://www.nhs.uk/conditions/reflux-in-babies/",
+   "action": "edited",
+   "newSentence": "... babies usually grow out of it by the age of 1."
+  },
+  {
+   "id": "c16",
+   "classification": "supported",
+   "evidence": "Carried by retrieved NHS / NHS inform / NIDDK text",
+   "url": "https://www.nhs.uk/conditions/heartburn-and-acid-reflux/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c17",
+   "classification": "supported",
+   "evidence": "Carried by retrieved NHS / NHS inform / NIDDK text",
+   "url": "https://www.nhs.uk/conditions/heartburn-and-acid-reflux/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c18",
+   "classification": "textbook",
+   "evidence": "Plain description of gastroscopy / emergency route 999 (not carried verbatim by retrieved text)",
+   "url": "https://www.nhs.uk/conditions/heartburn-and-acid-reflux/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c19",
+   "classification": "supported",
+   "evidence": "Carried by retrieved NHS / NHS inform / NIDDK text",
+   "url": "https://www.nhs.uk/conditions/heartburn-and-acid-reflux/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c20",
+   "classification": "supported",
+   "evidence": "Carried by retrieved NHS / NHS inform / NIDDK text",
+   "url": "https://www.nhs.uk/conditions/heartburn-and-acid-reflux/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c21",
+   "classification": "supported",
+   "evidence": "Carried by retrieved NHS / NHS inform / NIDDK text",
+   "url": "https://www.nhs.uk/conditions/heartburn-and-acid-reflux/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c22",
+   "classification": "supported",
+   "evidence": "Carried by retrieved NHS / NHS inform / NIDDK text",
+   "url": "https://www.nhs.uk/conditions/heartburn-and-acid-reflux/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c23",
+   "classification": "supported",
+   "evidence": "Carried by retrieved NHS / NHS inform / NIDDK text",
+   "url": "https://www.nhs.uk/conditions/heartburn-and-acid-reflux/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c24",
+   "classification": "unsupported",
+   "evidence": "Not carried by retrieved text",
+   "url": "https://www.nhs.uk/conditions/heartburn-and-acid-reflux/",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c25",
+   "classification": "supported",
+   "evidence": "Carried by retrieved NHS / NHS inform / NIDDK text",
+   "url": "https://www.nhs.uk/conditions/heartburn-and-acid-reflux/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c26",
+   "classification": "supported",
+   "evidence": "Carried by retrieved NHS / NHS inform / NIDDK text",
+   "url": "https://www.nhs.uk/conditions/heartburn-and-acid-reflux/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c27",
+   "classification": "supported",
+   "evidence": "Carried by retrieved NHS / NHS inform / NIDDK text",
+   "url": "https://www.nhs.uk/conditions/heartburn-and-acid-reflux/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c28",
+   "classification": "supported",
+   "evidence": "Carried by retrieved NHS / NHS inform / NIDDK text",
+   "url": "https://www.nhs.uk/conditions/heartburn-and-acid-reflux/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c29",
+   "classification": "supported",
+   "evidence": "Carried by retrieved NHS / NHS inform / NIDDK text",
+   "url": "https://www.nhs.uk/conditions/heartburn-and-acid-reflux/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c30",
+   "classification": "supported",
+   "evidence": "Carried by retrieved NHS / NHS inform / NIDDK text",
+   "url": "https://www.nhs.uk/conditions/heartburn-and-acid-reflux/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c31",
+   "classification": "supported",
+   "evidence": "Carried by retrieved NHS / NHS inform / NIDDK text",
+   "url": "https://www.nhs.uk/conditions/heartburn-and-acid-reflux/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c32",
+   "classification": "supported",
+   "evidence": "Carried by retrieved NHS / NHS inform / NIDDK text",
+   "url": "https://www.nhs.uk/conditions/heartburn-and-acid-reflux/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c33",
+   "classification": "supported",
+   "evidence": "Carried by retrieved NHS / NHS inform / NIDDK text",
+   "url": "https://www.nhs.uk/conditions/heartburn-and-acid-reflux/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c34",
+   "classification": "unsupported",
+   "evidence": "Not carried by retrieved text",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/stomach-liver-and-gastrointestinal-tract/gastro-oesophageal-reflux-disease-gord/",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c35",
+   "classification": "supported",
+   "evidence": "Carried by retrieved NHS / NHS inform / NIDDK text",
+   "url": "https://www.nhs.uk/conditions/heartburn-and-acid-reflux/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c36",
+   "classification": "supported",
+   "evidence": "Carried by retrieved NHS / NHS inform / NIDDK text",
+   "url": "https://www.nhs.uk/conditions/heartburn-and-acid-reflux/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c37",
+   "classification": "supported",
+   "evidence": "Carried by retrieved NHS / NHS inform / NIDDK text",
+   "url": "https://www.nhs.uk/conditions/heartburn-and-acid-reflux/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c38",
+   "classification": "supported",
+   "evidence": "Carried by retrieved NHS / NHS inform / NIDDK text",
+   "url": "https://www.nhs.uk/conditions/heartburn-and-acid-reflux/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c39",
+   "classification": "unsupported",
+   "evidence": "Leaflet: many have no symptoms; follow-up by endoscopy surveillance; exact sentence not carried",
+   "url": "https://www.northerncarealliance.nhs.uk/patient-information/patient-leaflets/gastroenterology-barretts-oesophagus",
+   "action": "edited",
+   "newSentence": "Hospital leaflets say ... many people have no symptoms from it."
+  },
+  {
+   "id": "c40",
+   "classification": "unsupported",
+   "evidence": "Retrieved leaflets give a small increased risk only, not a duration relationship",
+   "url": "https://www.northerncarealliance.nhs.uk/patient-information/patient-leaflets/gastroenterology-barretts-oesophagus",
+   "action": "edited",
+   "newSentence": "The changed cells are not cancerous, but they carry a small increased risk of becoming so."
+  },
+  {
+   "id": "c41",
+   "classification": "unsupported",
+   "evidence": "Retrieved: hiatus hernia makes reflux more likely; 'impaired valve' not carried",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/stomach-liver-and-gastrointestinal-tract/hiatus-hernia/",
+   "action": "edited",
+   "newSentence": "NHS inform says it makes reflux more likely."
+  },
+  {
+   "id": "c42",
+   "classification": "unsupported",
+   "evidence": "Refractory symptoms not retrieved this pass",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/stomach-liver-and-gastrointestinal-tract/gastro-oesophageal-reflux-disease-gord/",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c43",
+   "classification": "supported",
+   "evidence": "Carried by retrieved NHS / NHS inform / NIDDK text",
+   "url": "https://www.nhs.uk/conditions/heartburn-and-acid-reflux/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c44",
+   "classification": "supported",
+   "evidence": "Carried by retrieved NHS / NHS inform / NIDDK text",
+   "url": "https://www.nhs.uk/conditions/heartburn-and-acid-reflux/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c45",
+   "classification": "supported",
+   "evidence": "Carried by retrieved NHS / NHS inform / NIDDK text",
+   "url": "https://www.nhs.uk/conditions/heartburn-and-acid-reflux/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c46",
+   "classification": "supported",
+   "evidence": "Carried by retrieved NHS / NHS inform / NIDDK text",
+   "url": "https://www.nhs.uk/conditions/heartburn-and-acid-reflux/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c47",
+   "classification": "supported",
+   "evidence": "Carried by retrieved NHS / NHS inform / NIDDK text",
+   "url": "https://www.nhs.uk/conditions/heartburn-and-acid-reflux/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c48",
+   "classification": "supported",
+   "evidence": "Carried by retrieved NHS / NHS inform / NIDDK text",
+   "url": "https://www.nhs.uk/conditions/heartburn-and-acid-reflux/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c49",
+   "classification": "supported",
+   "evidence": "Carried by retrieved NHS / NHS inform / NIDDK text",
+   "url": "https://www.nhs.uk/conditions/heartburn-and-acid-reflux/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c50",
+   "classification": "supported",
+   "evidence": "Carried by retrieved NHS / NHS inform / NIDDK text",
+   "url": "https://www.nhs.uk/conditions/heartburn-and-acid-reflux/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c51",
+   "classification": "supported",
+   "evidence": "Carried by retrieved NHS / NHS inform / NIDDK text",
+   "url": "https://www.nhs.uk/conditions/heartburn-and-acid-reflux/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c52",
+   "classification": "unsupported",
+   "evidence": "NHS: babies usually grow out of reflux by age 1; 'most children' not carried",
+   "url": "https://www.nhs.uk/conditions/reflux-in-babies/",
+   "action": "edited",
+   "newSentence": "The NHS says babies usually grow out of reflux by the age of 1."
+  },
+  {
+   "id": "c53",
+   "classification": "unsupported",
+   "evidence": "Weaning not addressed by retrieved text",
+   "url": "https://www.nhs.uk/conditions/reflux-in-babies/",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c54",
+   "classification": "unsupported",
+   "evidence": "Not carried by retrieved text",
+   "url": "https://www.nhs.uk/conditions/reflux-in-babies/",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c55",
+   "classification": "supported",
+   "evidence": "Carried by retrieved NHS / NHS inform / NIDDK text",
+   "url": "https://www.nhs.uk/conditions/heartburn-and-acid-reflux/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c56",
+   "classification": "textbook",
+   "evidence": "Plain description of gastroscopy / emergency route 999 (not carried verbatim by retrieved text)",
+   "url": "https://www.nhs.uk/conditions/heartburn-and-acid-reflux/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c57",
+   "classification": "supported",
+   "evidence": "Carried by retrieved NHS / NHS inform / NIDDK text",
+   "url": "https://www.nhs.uk/conditions/heartburn-and-acid-reflux/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c58",
+   "classification": "supported",
+   "evidence": "Carried by retrieved NHS / NHS inform / NIDDK text",
+   "url": "https://www.nhs.uk/conditions/heartburn-and-acid-reflux/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c59",
+   "classification": "supported",
+   "evidence": "Carried by retrieved NHS / NHS inform / NIDDK text",
+   "url": "https://www.nhs.uk/conditions/heartburn-and-acid-reflux/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c60",
+   "classification": "supported",
+   "evidence": "Carried by retrieved NHS / NHS inform / NIDDK text",
+   "url": "https://www.nhs.uk/conditions/heartburn-and-acid-reflux/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c61",
+   "classification": "supported",
+   "evidence": "Carried by retrieved NHS / NHS inform / NIDDK text",
+   "url": "https://www.nhs.uk/conditions/heartburn-and-acid-reflux/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c62",
+   "classification": "supported",
+   "evidence": "Carried by retrieved NHS / NHS inform / NIDDK text",
+   "url": "https://www.nhs.uk/conditions/heartburn-and-acid-reflux/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c63",
+   "classification": "supported",
+   "evidence": "Carried by retrieved NHS / NHS inform / NIDDK text",
+   "url": "https://www.nhs.uk/conditions/heartburn-and-acid-reflux/",
+   "action": "kept",
+   "newSentence": ""
+  }
+ ],
+ "notes": "Claim ids follow section bodies, FAQ answers, then key-fact values in order. Supported claims used the blended search summaries (NHS, NHS inform, NIDDK, NICE); per-sentence page attribution inferred from page titles. Final text adds sentences from retrieved text (pH monitoring, pregnancy pharmacist advice, stricture/Barrett's leaflets, babies reflux). Numbers: three-to-four hours before bed (NHS), three hours (NIDDK), 1-2 weeks alginate (NICE) are source-stated, not doses. No existing-entry contradictions."
+}

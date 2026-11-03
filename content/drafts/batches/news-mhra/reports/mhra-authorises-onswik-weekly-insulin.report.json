@@ -1,0 +1,114 @@
+{
+ "id": "mhra-authorises-onswik-weekly-insulin",
+ "searchesUsed": 1,
+ "counts": {
+  "supported": 6,
+  "textbook": 0,
+  "unsupported": 6,
+  "wrong": 0,
+  "unsafe": 0,
+  "unchecked": 0
+ },
+ "claims": [
+  {
+   "id": "c01",
+   "classification": "supported",
+   "sentence": "The MHRA has authorised Onswik (insulin efsitora alfa), a once-weekly insulin injection, for adults with type 2 diabetes.",
+   "evidence": "Retrieved: MHRA authorised Onswik (insulin efsitora alfa) for T2D in adults; administered by injection once weekly; long-acting basal insulin.",
+   "url": "https://www.gov.uk/government/news/mhra-authorises-onswik-insulin-efsitora-alfa-for-adults-with-type-2-diabetes",
+   "action": "kept"
+  },
+  {
+   "id": "c02",
+   "classification": "supported",
+   "sentence": "The MHRA authorised Onswik (insulin efsitora alfa) for adults with type 2 diabetes on 13 October 2026.",
+   "evidence": "Retrieved: 'the MHRA authorised it on 13 October 2026'; announcement dated 13 October 2026.",
+   "url": "https://www.gov.uk/government/news/mhra-authorises-onswik-insulin-efsitora-alfa-for-adults-with-type-2-diabetes",
+   "action": "kept"
+  },
+  {
+   "id": "c03",
+   "classification": "supported",
+   "sentence": "It is a once-weekly injection.",
+   "evidence": "Retrieved: administered via injection once weekly.",
+   "url": "https://www.gov.uk/government/news/mhra-authorises-onswik-insulin-efsitora-alfa-for-adults-with-type-2-diabetes",
+   "action": "kept"
+  },
+  {
+   "id": "c04",
+   "classification": "supported",
+   "sentence": "The MHRA says it may reduce the number of injections needed from up to 365 a year to 52.",
+   "evidence": "Retrieved: 'may reduce the number of injections required from up to 365 a year to 52' (applies to some adults, not all).",
+   "url": "https://www.gov.uk/government/news/mhra-authorises-onswik-insulin-efsitora-alfa-for-adults-with-type-2-diabetes",
+   "action": "kept"
+  },
+  {
+   "id": "c05",
+   "classification": "unsupported",
+   "sentence": "The MHRA names low blood sugar (hypoglycaemia) as the most common adverse reaction.",
+   "evidence": "Not in the retrieved text (no adverse-reaction statement returned).",
+   "url": "https://www.gov.uk/government/news/mhra-authorises-onswik-insulin-efsitora-alfa-for-adults-with-type-2-diabetes",
+   "action": "removed"
+  },
+  {
+   "id": "c06",
+   "classification": "supported",
+   "sentence": "The MHRA says it has authorised Onswik (insulin efsitora alfa) for adults with type 2 diabetes.",
+   "evidence": "As c01.",
+   "url": "https://www.gov.uk/government/news/mhra-authorises-onswik-insulin-efsitora-alfa-for-adults-with-type-2-diabetes",
+   "action": "kept"
+  },
+  {
+   "id": "c07",
+   "classification": "supported",
+   "sentence": "Onswik is a once-weekly injection, and the MHRA says this treatment option may reduce the number of injections needed from up to 365 a year to 52.",
+   "evidence": "As c03/c04.",
+   "url": "https://www.gov.uk/government/news/mhra-authorises-onswik-insulin-efsitora-alfa-for-adults-with-type-2-diabetes",
+   "action": "kept"
+  },
+  {
+   "id": "c08",
+   "classification": "unsupported",
+   "sentence": "The licence was granted to Eli Lilly Nederland B.V. through the ACCESS procedure.",
+   "evidence": "Retrieved text says the product is made by Eli Lilly; it returned nothing on the ACCESS procedure (explicitly 'unverified') or the 'Nederland B.V.' entity.",
+   "url": "https://www.gov.uk/government/news/mhra-authorises-onswik-insulin-efsitora-alfa-for-adults-with-type-2-diabetes",
+   "action": "removed"
+  },
+  {
+   "id": "c09",
+   "classification": "unsupported",
+   "sentence": "The summary of product characteristics and the patient leaflet are to be published later on the MHRA Products website.",
+   "evidence": "Not in the Onswik retrieval (similar wording appeared only for other products).",
+   "url": "https://www.gov.uk/government/news/mhra-authorises-onswik-insulin-efsitora-alfa-for-adults-with-type-2-diabetes",
+   "action": "removed"
+  },
+  {
+   "id": "c10",
+   "classification": "unsupported",
+   "sentence": "An MHRA executive director said that in trials, weekly dosing gave blood sugar control similar to once-daily basal insulin.",
+   "evidence": "Retrieved: 'the MHRA says clinical trial data showed once-weekly efsitora provided glycaemic control comparable to once-daily basal insulin'. No speaker or title (executive director) was returned.",
+   "url": "https://www.gov.uk/government/news/mhra-authorises-onswik-insulin-efsitora-alfa-for-adults-with-type-2-diabetes",
+   "action": "edited",
+   "newSentence": "The MHRA says clinical trial data showed that once-weekly insulin efsitora alfa gave blood sugar control comparable to once-daily basal insulin in adults with type 2 diabetes."
+  },
+  {
+   "id": "c11",
+   "classification": "unsupported",
+   "sentence": "The MHRA reports that hypoglycaemia, or low blood sugar, was the most common adverse reaction.",
+   "evidence": "Not in the retrieved text.",
+   "url": "https://www.gov.uk/government/news/mhra-authorises-onswik-insulin-efsitora-alfa-for-adults-with-type-2-diabetes",
+   "action": "removed"
+  },
+  {
+   "id": "c12",
+   "classification": "unsupported",
+   "sentence": "The site's type 2 diabetes and insulin pages give background.",
+   "evidence": "Site-navigation pointer to another page on this site, not a claim from the MHRA page; the retrieved gov.uk text does not mention it. ",
+   "url": "https://www.gov.uk/government/news/mhra-authorises-onswik-insulin-efsitora-alfa-for-adults-with-type-2-diabetes",
+   "action": "removed"
+  }
+ ],
+ "dateConfirmed": "2026-10-13",
+ "dateEvidence": "Search result states 'The MHRA announcement, dated 13 October 2026' and that the MHRA authorised it on 13 October 2026 (gov.uk page, URL above).",
+ "notes": "Only one search was needed. Retrieval also noted NICE final draft guidance recommends efsitora for certain adults (not used; do not add without a NICE source). Sentences c05 and c11 are the only safety content; if hypoglycaemia is wanted it needs a fresh retrieval. No instructions, 'safe' claims or doses."
+}

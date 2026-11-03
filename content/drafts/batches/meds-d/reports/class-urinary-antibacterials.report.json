@@ -1,0 +1,60 @@
+{
+ "id": "class-urinary-antibacterials",
+ "searchesUsed": 2,
+ "counts": {
+  "supported": 2,
+  "textbook": 0,
+  "unsupported": 3,
+  "wrong": 0,
+  "unsafe": 0,
+  "unchecked": 0
+ },
+ "claims": [
+  {
+   "id": "c01",
+   "where": "summary",
+   "classification": "supported",
+   "evidence": "NHS: nitrofurantoin treats UTIs such as cystitis; NHS trimethoprim pages cover UTIs",
+   "url": "https://www.nhs.uk/medicines/nitrofurantoin/about-nitrofurantoin/",
+   "action": "edited",
+   "newSentence": "added trimethoprim"
+  },
+  {
+   "id": "c02",
+   "where": "mechanism",
+   "classification": "unsupported",
+   "evidence": "MedlinePlus statement not re-retrieved",
+   "url": "https://www.nhs.uk/medicines/nitrofurantoin/",
+   "action": "edited",
+   "newSentence": "replaced with retrieved: nitrofurantoin useful concentrations only in urine, unsuitable for upper UTI"
+  },
+  {
+   "id": "c03",
+   "where": "cautions[0]",
+   "classification": "unsupported",
+   "evidence": "kidney function check only in local guidance; NHS lists severe kidney problems etc.",
+   "url": "https://www.nhs.uk/medicines/nitrofurantoin/",
+   "action": "edited",
+   "newSentence": "reworded to NHS list"
+  },
+  {
+   "id": "c04",
+   "where": "cautions[1]",
+   "classification": "unsupported",
+   "evidence": "not retrieved in second pass",
+   "url": "https://www.nhs.uk/medicines/nitrofurantoin/",
+   "action": "removed",
+   "newSentence": "pregnancy sentence added instead"
+  },
+  {
+   "id": "c05",
+   "where": "classEffects[0]",
+   "classification": "supported",
+   "evidence": "NHS: nausea, diarrhoea, loss of appetite, headaches, dark urine",
+   "url": "https://www.nhs.uk/medicines/nitrofurantoin/side-effects-of-nitrofurantoin/",
+   "action": "edited",
+   "newSentence": "added dark urine"
+  }
+ ],
+ "notes": "Trimethoprim described for UTIs per NHS pages in search results (about/who can take); text of 'about' page not returned in full, search summary attributed UTI use. Added anaphylaxis sentence (999) and trimethoprim cautions. Compiler 600-character gate passes (only link errors for medicine ids that live in other fragments)."
+}

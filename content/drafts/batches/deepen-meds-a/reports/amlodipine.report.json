@@ -1,0 +1,452 @@
+{
+ "id": "amlodipine",
+ "searchesUsed": 8,
+ "counts": {
+  "supported": 47,
+  "textbook": 1,
+  "unsupported": 10,
+  "wrong": 1,
+  "unsafe": 0,
+  "unchecked": 0
+ },
+ "claims": [
+  {
+   "id": "c01",
+   "classification": "supported",
+   "evidence": "NHS describes amlodipine as a calcium channel blocker for high blood pressure and angina; 'prescription' not shown in retrieved text",
+   "url": "https://www.nhs.uk/medicines/amlodipine/about-amlodipine/",
+   "action": "edited",
+   "newSentence": "Amlodipine is a calcium channel blocker."
+  },
+  {
+   "id": "c02",
+   "classification": "supported",
+   "evidence": "Used for high blood pressure",
+   "url": "https://www.nhs.uk/medicines/amlodipine/about-amlodipine/",
+   "action": "edited",
+   "newSentence": "Doctors use it to treat high blood pressure."
+  },
+  {
+   "id": "c03",
+   "classification": "supported",
+   "evidence": "NHS: if you have high blood pressure, amlodipine can help prevent future heart disease, heart attacks and strokes",
+   "url": "https://www.nhs.uk/medicines/amlodipine/about-amlodipine/",
+   "action": "edited",
+   "newSentence": "The NHS says that if you have high blood pressure, taking amlodipine can help to prevent future heart disease, heart attacks and strokes."
+  },
+  {
+   "id": "c04",
+   "classification": "textbook",
+   "evidence": "Angina listed as a use; definition as chest pain from heart disease is a plain undisputed fact",
+   "url": "https://www.nhs.uk/medicines/amlodipine/about-amlodipine/",
+   "action": "kept"
+  },
+  {
+   "id": "c05",
+   "classification": "supported",
+   "evidence": "NHS: blocks calcium into heart and vessel muscles so they relax and widen",
+   "url": "https://www.nhs.uk/medicines/amlodipine/about-amlodipine/",
+   "action": "edited",
+   "newSentence": "The NHS says it works by blocking calcium from going into the muscles of the heart and blood vessels."
+  },
+  {
+   "id": "c06",
+   "classification": "unsupported",
+   "evidence": "'Easier for the heart to pump' not in retrieved text",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c07",
+   "classification": "supported",
+   "evidence": "NHS: most adults and children over 6 can take it, not suitable for some people",
+   "url": "https://www.nhs.uk/medicines/amlodipine/about-amlodipine/",
+   "action": "edited",
+   "newSentence": "The NHS says most adults and children over the age of 6 can take amlodipine, but it is not suitable for some people."
+  },
+  {
+   "id": "c08",
+   "classification": "supported",
+   "evidence": "Any time, but try for around the same time each day",
+   "url": "https://www.nhs.uk/medicines/amlodipine/about-amlodipine/",
+   "action": "kept"
+  },
+  {
+   "id": "c09",
+   "classification": "supported",
+   "evidence": "If side effects bother you, doctor may be able to prescribe a different medicine",
+   "url": "https://www.nhs.uk/medicines/amlodipine/common-questions-about-amlodipine/",
+   "action": "kept"
+  },
+  {
+   "id": "c10",
+   "classification": "unsupported",
+   "evidence": "Retrieved NHS text says some effects ease after a week or so and others last longer; 'usually mild and short' not retrieved",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c11",
+   "classification": "supported",
+   "evidence": "NHS list: ankle/foot/leg swelling, headaches, dizziness, sleepiness, palpitations, flushing, nausea, constipation or diarrhoea, tiredness",
+   "url": "https://www.nhs.uk/medicines/amlodipine/side-effects-of-amlodipine/",
+   "action": "edited",
+   "newSentence": "The NHS lists the common side effects of amlodipine as swelling in the ankles, feet and legs, headaches, dizziness, sleepiness, a pounding heartbeat (palpitations), flushing, feeling sick, constipation or diarrhoea, and tiredness."
+  },
+  {
+   "id": "c12",
+   "classification": "unsupported",
+   "evidence": "Retrieved text says 'a common side effect', not 'one of the most common'",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c13",
+   "classification": "wrong",
+   "evidence": "Retrieved NHS text says some effects ease after a week or so; 'a few days' not supported",
+   "url": "https://www.nhs.uk/medicines/amlodipine/common-questions-about-amlodipine/",
+   "action": "edited",
+   "newSentence": "The NHS says some side effects should ease after a week or so as the body gets used to the medicine, but others can last longer."
+  },
+  {
+   "id": "c14",
+   "classification": "supported",
+   "evidence": "NHS suggests raising legs when sitting for swollen ankles",
+   "url": "https://www.nhs.uk/medicines/amlodipine/side-effects-of-amlodipine/",
+   "action": "kept"
+  },
+  {
+   "id": "c15",
+   "classification": "supported",
+   "evidence": "Some ease after a week or so, others can last longer",
+   "url": "https://www.nhs.uk/medicines/amlodipine/common-questions-about-amlodipine/",
+   "action": "edited",
+   "newSentence": "(merged into the corrected sentence above)"
+  },
+  {
+   "id": "c16",
+   "classification": "supported",
+   "evidence": "Do not drive, ride a bike or use tools/machinery until dizziness passes",
+   "url": "https://www.nhs.uk/medicines/amlodipine/side-effects-of-amlodipine/",
+   "action": "kept"
+  },
+  {
+   "id": "c17",
+   "classification": "supported",
+   "evidence": "Serious side effects are rare",
+   "url": "https://www.nhs.uk/medicines/amlodipine/side-effects-of-amlodipine/",
+   "action": "kept"
+  },
+  {
+   "id": "c18",
+   "classification": "supported",
+   "evidence": "Severe stomach pain (pancreatitis) and yellowing of eyes/skin (liver) listed; may be less obvious on brown or black skin",
+   "url": "https://www.nhs.uk/medicines/amlodipine/side-effects-of-amlodipine/",
+   "action": "edited",
+   "newSentence": "The NHS lists severe stomach pain, which can be a sign of an inflamed pancreas, and yellowing of the whites of the eyes or skin, which can be a sign of liver problems."
+  },
+  {
+   "id": "c19",
+   "classification": "unsupported",
+   "evidence": "Retrieved NHS text does not give a route for these two signs; NHS 111 / same-day GP was the author's addition",
+   "url": "https://www.nhs.uk/medicines/amlodipine/side-effects-of-amlodipine/",
+   "action": "removed"
+  },
+  {
+   "id": "c20",
+   "classification": "supported",
+   "evidence": "Call 999 for swelling of lips, mouth, throat, tongue or difficulty breathing (allergic reaction)",
+   "url": "https://www.nhs.uk/medicines/amlodipine/side-effects-of-amlodipine/",
+   "action": "kept"
+  },
+  {
+   "id": "c21",
+   "classification": "supported",
+   "evidence": "Call 999 for chest pain not stopping after a few minutes, or new/worse with angina; 'could be a heart attack' not retrieved so dropped",
+   "url": "https://www.nhs.uk/medicines/amlodipine/side-effects-of-amlodipine/",
+   "action": "edited",
+   "newSentence": "The NHS also says to call 999 for chest pain that does not go away after a few minutes, or chest pain that is new or worse in someone who already has angina."
+  },
+  {
+   "id": "c22",
+   "classification": "supported",
+   "evidence": "NHS: large amounts of grapefruit raise amlodipine level and worsen side effects (the main NHS page is stricter: avoid grapefruit)",
+   "url": "https://www.nhs.uk/medicines/amlodipine/how-and-when-to-take-amlodipine/",
+   "action": "edited"
+  },
+  {
+   "id": "c23",
+   "classification": "unsupported",
+   "evidence": "Leaflet text on grapefruit was not retrieved",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c24",
+   "classification": "supported",
+   "evidence": "NHS: alcohol can make the blood-pressure-lowering effect stronger; may cause sleepiness, dizziness, headache",
+   "url": "https://www.nhs.uk/medicines/amlodipine/common-questions-about-amlodipine/",
+   "action": "edited",
+   "newSentence": "The NHS says alcohol can make the blood-pressure-lowering effect of amlodipine stronger."
+  },
+  {
+   "id": "c25",
+   "classification": "supported",
+   "evidence": "Limit how much you drink",
+   "url": "https://www.nhs.uk/medicines/amlodipine/common-questions-about-amlodipine/",
+   "action": "edited",
+   "newSentence": "This can cause sleepiness, dizziness or a headache, so the NHS suggests limiting how much you drink."
+  },
+  {
+   "id": "c26",
+   "classification": "supported",
+   "evidence": "MHRA Drug Safety Update: simvastatin dose limitations with amlodipine",
+   "url": "https://www.gov.uk/drug-safety-update/simvastatin-dose-limitations-with-concomitant-amlodipine-or-diltiazem",
+   "action": "edited",
+   "newSentence": "Amlodipine can also interact with simvastatin, a statin."
+  },
+  {
+   "id": "c27",
+   "classification": "supported",
+   "evidence": "MHRA: amlodipine increased exposure to simvastatin acid; maximum simvastatin dose limited (figure omitted)",
+   "url": "https://www.gov.uk/drug-safety-update/simvastatin-dose-limitations-with-concomitant-amlodipine-or-diltiazem",
+   "action": "edited",
+   "newSentence": "The UK Drug Safety Update from the MHRA says amlodipine increases exposure to simvastatin, so the maximum recommended dose of simvastatin is limited when the two medicines are taken together."
+  },
+  {
+   "id": "c28",
+   "classification": "unsupported",
+   "evidence": "Muscle damage as the stated reason was not retrieved for amlodipine specifically",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c29",
+   "classification": "supported",
+   "evidence": "NHS: not suitable for some people",
+   "url": "https://www.nhs.uk/medicines/amlodipine/about-amlodipine/",
+   "action": "kept"
+  },
+  {
+   "id": "c30",
+   "classification": "supported",
+   "evidence": "NHS: reaction or serious side effect from amlodipine or similar medicine",
+   "url": "https://www.nhs.uk/medicines/amlodipine/about-amlodipine/",
+   "action": "edited",
+   "newSentence": "It says the medicine may not suit people who have had an allergic reaction or serious side effect from amlodipine or a similar medicine before."
+  },
+  {
+   "id": "c31",
+   "classification": "supported",
+   "evidence": "NHS list: low blood pressure, heart failure, recent heart attack, certain valve disease",
+   "url": "https://www.nhs.uk/medicines/amlodipine/about-amlodipine/",
+   "action": "edited",
+   "newSentence": "The same NHS list names low blood pressure, heart failure, a recent heart attack and certain heart valve disease."
+  },
+  {
+   "id": "c32",
+   "classification": "supported",
+   "evidence": "UK leaflets: severe low blood pressure (and aortic valve narrowing)",
+   "url": "https://www.medicines.org.uk/emc/files/pil.8943.pdf",
+   "action": "edited"
+  },
+  {
+   "id": "c33",
+   "classification": "supported",
+   "evidence": "Main NHS page: not usually recommended, similar medicines are safer, may be used if others fail",
+   "url": "https://www.nhs.uk/medicines/amlodipine/",
+   "action": "edited",
+   "newSentence": "In pregnancy, the main NHS amlodipine page says it is not usually recommended because there are similar medicines that are safer, but it may be used if other options have failed."
+  },
+  {
+   "id": "c34",
+   "classification": "supported",
+   "evidence": "Detailed NHS page: not thought harmful to baby, evidence limited",
+   "url": "https://www.nhs.uk/medicines/amlodipine/pregnancy-breastfeeding-and-fertility-while-taking-amlodipine/",
+   "action": "edited",
+   "newSentence": "A more detailed NHS page says it is not thought to be harmful to the baby, although the evidence is limited."
+  },
+  {
+   "id": "c35",
+   "classification": "supported",
+   "evidence": "SPS: usually very small amounts in milk; no side effects reported in infants (first pass attributed this to the NHS pregnancy page)",
+   "url": "https://sps.nhs.uk/articles/using-calcium-channel-blockers-during-breastfeeding/",
+   "action": "edited",
+   "newSentence": "For breastfeeding, the Specialist Pharmacy Service, an NHS service, says amlodipine passes into breast milk usually in very small amounts and that no side effects have been reported in breastfed infants."
+  },
+  {
+   "id": "c36",
+   "classification": "unsupported",
+   "evidence": "Retrieved: acceptable if baby is healthy; 'doctor or health visitor confirms' not retrieved; main page says not usually used when breastfeeding",
+   "url": "https://www.nhs.uk/medicines/amlodipine/pregnancy-breastfeeding-and-fertility-while-taking-amlodipine/",
+   "action": "edited",
+   "newSentence": "One NHS page says it is acceptable if the baby is healthy, while the main page says it is not usually used when breastfeeding."
+  },
+  {
+   "id": "c37",
+   "classification": "supported",
+   "evidence": "Ankle swelling is a common side effect",
+   "url": "https://www.nhs.uk/medicines/amlodipine/side-effects-of-amlodipine/",
+   "action": "kept"
+  },
+  {
+   "id": "c38",
+   "classification": "supported",
+   "evidence": "Raise legs when sitting",
+   "url": "https://www.nhs.uk/medicines/amlodipine/side-effects-of-amlodipine/",
+   "action": "kept"
+  },
+  {
+   "id": "c39",
+   "classification": "unsupported",
+   "evidence": "'GP appointment is the way' was the author's route; NHS advises speaking to a doctor or pharmacist if side effects bother you",
+   "url": "https://www.nhs.uk/medicines/amlodipine/common-questions-about-amlodipine/",
+   "action": "edited",
+   "newSentence": "The NHS advises speaking to a doctor or pharmacist if side effects bother you or do not go away, and says a doctor may be able to prescribe a different medicine."
+  },
+  {
+   "id": "c40",
+   "classification": "supported",
+   "evidence": "Alcohol strengthens BP-lowering effect",
+   "url": "https://www.nhs.uk/medicines/amlodipine/common-questions-about-amlodipine/",
+   "action": "edited"
+  },
+  {
+   "id": "c41",
+   "classification": "supported",
+   "evidence": "Sleepiness, dizziness, headache",
+   "url": "https://www.nhs.uk/medicines/amlodipine/common-questions-about-amlodipine/",
+   "action": "kept"
+  },
+  {
+   "id": "c42",
+   "classification": "supported",
+   "evidence": "Limit alcohol",
+   "url": "https://www.nhs.uk/medicines/amlodipine/common-questions-about-amlodipine/",
+   "action": "kept"
+  },
+  {
+   "id": "c43",
+   "classification": "supported",
+   "evidence": "Dizzy: do not drive etc.",
+   "url": "https://www.nhs.uk/medicines/amlodipine/side-effects-of-amlodipine/",
+   "action": "kept"
+  },
+  {
+   "id": "c44",
+   "classification": "supported",
+   "evidence": "Large amounts of grapefruit raise amlodipine level",
+   "url": "https://www.nhs.uk/medicines/amlodipine/how-and-when-to-take-amlodipine/",
+   "action": "kept"
+  },
+  {
+   "id": "c45",
+   "classification": "supported",
+   "evidence": "Side effects worse",
+   "url": "https://www.nhs.uk/medicines/amlodipine/how-and-when-to-take-amlodipine/",
+   "action": "kept"
+  },
+  {
+   "id": "c46",
+   "classification": "unsupported",
+   "evidence": "Leaflet grapefruit text not retrieved",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c47",
+   "classification": "supported",
+   "evidence": "Different medicine if side effects bother you",
+   "url": "https://www.nhs.uk/medicines/amlodipine/common-questions-about-amlodipine/",
+   "action": "kept"
+  },
+  {
+   "id": "c48",
+   "classification": "supported",
+   "evidence": "Pregnancy: not usually recommended, may be used if others fail",
+   "url": "https://www.nhs.uk/medicines/amlodipine/",
+   "action": "edited"
+  },
+  {
+   "id": "c49",
+   "classification": "supported",
+   "evidence": "Breastfeeding: wording corrected to the NHS pages' differing statements",
+   "url": "https://www.nhs.uk/medicines/amlodipine/pregnancy-breastfeeding-and-fertility-while-taking-amlodipine/",
+   "action": "edited"
+  },
+  {
+   "id": "c50",
+   "classification": "supported",
+   "evidence": "999 list",
+   "url": "https://www.nhs.uk/medicines/amlodipine/side-effects-of-amlodipine/",
+   "action": "kept"
+  },
+  {
+   "id": "c51",
+   "classification": "supported",
+   "evidence": "Severe stomach pain / yellow skin or eyes listed as possible signs",
+   "url": "https://www.nhs.uk/medicines/amlodipine/side-effects-of-amlodipine/",
+   "action": "edited"
+  },
+  {
+   "id": "c52",
+   "classification": "unsupported",
+   "evidence": "Route for these two signs not given by retrieved NHS text",
+   "url": "https://www.nhs.uk/medicines/amlodipine/side-effects-of-amlodipine/",
+   "action": "removed"
+  },
+  {
+   "id": "c53",
+   "classification": "supported",
+   "evidence": "Calcium channel blocker; 'prescription-only' not retrieved",
+   "url": "https://www.nhs.uk/medicines/amlodipine/about-amlodipine/",
+   "action": "edited",
+   "newSentence": "A calcium channel blocker."
+  },
+  {
+   "id": "c54",
+   "classification": "supported",
+   "evidence": "High blood pressure and angina; definition of angina dropped here",
+   "url": "https://www.nhs.uk/medicines/amlodipine/about-amlodipine/",
+   "action": "edited",
+   "newSentence": "High blood pressure and angina."
+  },
+  {
+   "id": "c55",
+   "classification": "supported",
+   "evidence": "Blocks calcium into heart/vessel muscle so they relax and widen",
+   "url": "https://www.nhs.uk/medicines/amlodipine/about-amlodipine/",
+   "action": "edited",
+   "newSentence": "Blocks calcium from going into muscle cells in the heart and blood vessels, so the vessels relax and widen."
+  },
+  {
+   "id": "c56",
+   "classification": "supported",
+   "evidence": "Common side effects list",
+   "url": "https://www.nhs.uk/medicines/amlodipine/side-effects-of-amlodipine/",
+   "action": "kept"
+  },
+  {
+   "id": "c57",
+   "classification": "supported",
+   "evidence": "Grapefruit and alcohol",
+   "url": "https://www.nhs.uk/medicines/amlodipine/how-and-when-to-take-amlodipine/",
+   "action": "kept"
+  },
+  {
+   "id": "c58",
+   "classification": "supported",
+   "evidence": "999 list",
+   "url": "https://www.nhs.uk/medicines/amlodipine/side-effects-of-amlodipine/",
+   "action": "kept"
+  },
+  {
+   "id": "c59",
+   "classification": "supported",
+   "evidence": "Pregnancy",
+   "url": "https://www.nhs.uk/medicines/amlodipine/",
+   "action": "kept"
+  }
+ ],
+ "notes": "The retrieved NHS text gives no route for the pancreas/liver signs, so the two 'NHS 111 or same-day GP' sentences were cut and the section heading no longer says 'urgent'. NHS pages differ: the main page says grapefruit should be avoided and amlodipine is not usually used when breastfeeding; the detailed page and how-and-when page are milder. The final text states the differences. Leaflet, SmPC and muscle-damage claims were not retrieved and were cut; the simvastatin interaction is cited to the GOV.UK MHRA update. Claim c15 is merged into c13's replacement. Attributions to specific NHS subpages come from blended search summaries; page-level attribution is moderate-confidence (grapefruit/alcohol/different-medicine lines)."
+}

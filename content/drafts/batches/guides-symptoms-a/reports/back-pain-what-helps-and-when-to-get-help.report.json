@@ -1,0 +1,233 @@
+{
+ "id": "back-pain-what-helps-and-when-to-get-help",
+ "searchesUsed": 7,
+ "counts": {
+  "supported": 7,
+  "textbook": 1,
+  "unsupported": 13,
+  "wrong": 2,
+  "unsafe": 0,
+  "unchecked": 0
+ },
+ "claims": [
+  {
+   "id": "c01",
+   "where": "body[0]",
+   "sentence": "An NHS back pain page says a strain is a common cause and that serious causes such as a fracture, cancer or infection are very rare.",
+   "classification": "supported",
+   "evidence": "Retrieved NHS text: a common cause is an injury like a pulled muscle (strain); very rarely back pain can signal a broken bone, cancer or infection.",
+   "url": "https://www.nhs.uk/conditions/back-pain/",
+   "action": "kept"
+  },
+  {
+   "id": "c02",
+   "where": "body[0]",
+   "sentence": "The NHS says a slipped disc is the most common cause of sciatica, and the likelihood rises with age.",
+   "classification": "supported",
+   "evidence": "Retrieved NHS sciatica text: slipped disc is the most common cause and more likely as you get older.",
+   "url": "https://www.nhs.uk/conditions/sciatica/",
+   "action": "kept"
+  },
+  {
+   "id": "c03",
+   "where": "body[0]",
+   "sentence": "Other causes of sciatica include spinal stenosis, spondylolisthesis and a back injury.",
+   "classification": "supported",
+   "evidence": "Royal Orthopaedic Hospital sciatica page lists spinal stenosis, spondylolisthesis and back injury. Sentence does not claim NHS.uk; better URL is the ROH page.",
+   "url": "https://roh.nhs.uk/services-information/musculoskeletal/sciatica-service",
+   "action": "kept"
+  },
+  {
+   "id": "c04",
+   "where": "body[0]",
+   "sentence": "Sciatica is pain that spreads from the lower back down the leg because the sciatic nerve is irritated.",
+   "classification": "textbook",
+   "evidence": "Trivial definition.",
+   "url": "https://www.nhs.uk/conditions/sciatica/",
+   "action": "kept"
+  },
+  {
+   "id": "c05",
+   "where": "body[1]",
+   "sentence": "NHS sources say that staying active is part of treatment and that most back pain settles with time.",
+   "classification": "supported",
+   "evidence": "NHS inform: keeping active is an essential part of treatment and recovery; most problems improved within 6 weeks.",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/muscle-bone-and-joints/neck-and-back-problems-and-conditions/back-problems/",
+   "action": "kept"
+  },
+  {
+   "id": "c06",
+   "where": "body[1]",
+   "sentence": "NHS inform describes keeping active as the single best thing a person can do for their back.",
+   "classification": "unsupported",
+   "evidence": "Retrieved NHS inform text says keeping active is 'an essential part of your treatment and recovery'; 'single best thing' not found.",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/muscle-bone-and-joints/neck-and-back-problems-and-conditions/back-problems/",
+   "action": "edited",
+   "newSentence": "NHS inform describes keeping active as an essential part of treatment and recovery."
+  },
+  {
+   "id": "c07",
+   "where": "body[1]",
+   "sentence": "In most cases, back pain gets better after a few weeks.",
+   "classification": "supported",
+   "evidence": "NHS leaflets/NHS inform: 9 in 10 cases gone or greatly eased within six weeks; most improved within 6 weeks. 'A few weeks' is a fair paraphrase; NHS inform URL is a better attribution than the trust leaflets.",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/muscle-bone-and-joints/neck-and-back-problems-and-conditions/back-problems/",
+   "action": "kept"
+  },
+  {
+   "id": "c08",
+   "where": "body[1]",
+   "sentence": "NHS trust leaflets suggest gentle movements, walking, swimming or cycling, and say that any type of exercise can be worthwhile if it is something the person enjoys.",
+   "classification": "unsupported",
+   "evidence": "Specific list (swimming, cycling, any enjoyable exercise) not found in retrieved text; only 'keep moving' and gentle exercise.",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c09",
+   "where": "body[1]",
+   "sentence": "They generally suggest a cold pack in the first few days and heat afterwards, with a cloth between the pack and the skin.",
+   "classification": "unsupported",
+   "evidence": "Retrieved text: ice pack wrapped in a tea towel to reduce pain and swelling; heat packs for sciatica. No retrieved 'cold first few days then heat' sequence.",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c10",
+   "where": "body[1]",
+   "sentence": "Prolonged bed rest can leave the back stiff and the muscles weak, and a physiotherapist can design a personal exercise plan.",
+   "classification": "unsupported",
+   "evidence": "Bed-rest harm and physiotherapist plan not found in retrieved text.",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c11",
+   "where": "body[1]",
+   "sentence": "Bed rest during the day is no longer recommended, because people who stay active tend to get better more quickly.",
+   "classification": "unsupported",
+   "evidence": "NHS inform: resting in bed doesn't help back pain and often makes it harder to get going again. 'No longer recommended because... better more quickly' not found.",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/muscle-bone-and-joints/neck-and-back-problems-and-conditions/back-problems/",
+   "action": "edited",
+   "newSentence": "NHS inform says resting in bed does not help back pain and often makes it harder to get going again."
+  },
+  {
+   "id": "c12",
+   "where": "body[1]",
+   "sentence": "The NHS sciatica page suggests staying active, doing regular exercises and asking a pharmacist about painkillers, and notes that paracetamol is unlikely to help sciatica.",
+   "classification": "unsupported",
+   "evidence": "NHS sciatica text retrieved: ask a pharmacist about painkillers; paracetamol unlikely to help. 'Regular exercises' not clearly retrieved.",
+   "url": "https://www.nhs.uk/conditions/sciatica/",
+   "action": "edited",
+   "newSentence": "The NHS sciatica page suggests asking a pharmacist about painkillers and says paracetamol is unlikely to help sciatica."
+  },
+  {
+   "id": "c13",
+   "where": "body[1]",
+   "sentence": "The NHS back pain page says paracetamol on its own is not recommended for back pain and that anti-inflammatory painkillers such as ibuprofen may not suit everyone.",
+   "classification": "unsupported",
+   "evidence": "Retrieved: main NHS page says paracetamol alone is not recommended for back pain. 'Ibuprofen may not suit everyone' was only found in trust leaflets, not nhs.uk.",
+   "url": "https://www.nhs.uk/conditions/back-pain/",
+   "action": "edited",
+   "newSentence": "The NHS back pain page says paracetamol on its own is not recommended for back pain."
+  },
+  {
+   "id": "c14",
+   "where": "body[2]",
+   "sentence": "NICE guideline NG59 on low back pain and sciatica in people over 16 recommends advice and information that help people manage their own pain, and staying active.",
+   "classification": "unsupported",
+   "evidence": "Retrieved NICE NG59 text: consider a group exercise programme for an episode or flare-up. Self-management advice not retrieved this session.",
+   "url": "https://www.nice.org.uk/guidance/ng59/chapter/recommendations",
+   "action": "edited",
+   "newSentence": "NICE guideline NG59 on low back pain and sciatica in people over 16 recommends considering a group exercise programme for a specific episode or flare-up."
+  },
+  {
+   "id": "c15",
+   "where": "body[2]",
+   "sentence": "It recommends manual therapy only as part of a package of care that includes exercise.",
+   "classification": "unsupported",
+   "evidence": "Retrieved text gave recommendation 1.2.7 (manual therapy only with exercise) but a NICE PDF notes recommendations on manual therapies were withdrawn in July 2026; current status unresolved.",
+   "url": "https://www.nice.org.uk/guidance/ng59/chapter/recommendations",
+   "action": "removed"
+  },
+  {
+   "id": "c16",
+   "where": "body[2]",
+   "sentence": "It does not recommend belts or corsets, foot orthotics, traction, or TENS and interferential therapy.",
+   "classification": "unsupported",
+   "evidence": "Retrieved: do not offer belts or corsets, TENS; patient version also says no foot supports or traction. Interferential therapy not specifically retrieved.",
+   "url": "https://www.nice.org.uk/guidance/ng59/chapter/recommendations",
+   "action": "edited",
+   "newSentence": "NICE guideline NG59 says not to offer belts or corsets, foot supports, traction or TENS for low back pain."
+  },
+  {
+   "id": "c17",
+   "where": "body[3]",
+   "sentence": "NHS sources suggest asking a GP or an NHS physiotherapist for advice if back symptoms are still getting in the way of normal activities after about 6 weeks.",
+   "classification": "supported",
+   "evidence": "Retrieved NHS leaflet text: if symptoms still interfere with normal things after 6 weeks, seek advice from GP or NHS physiotherapist. Search did not show which page; NHS inform not confirmed as the source.",
+   "url": "https://www.lauderdalemedicalpractice.scot.nhs.uk/back-pain",
+   "action": "kept"
+  },
+  {
+   "id": "c18",
+   "where": "body[3]",
+   "sentence": "NHS 111 Wales says physiotherapy is free on the NHS, though waiting times can be long, and that in some areas people can refer themselves without seeing a GP.",
+   "classification": "unsupported",
+   "evidence": "NHS 111 Wales physiotherapy page: free on the NHS; depending on area may self-refer or need GP first. 'Waiting times long' not found; URL should be the physiotherapy page.",
+   "url": "https://111.wales.nhs.uk/physiotherapy/",
+   "action": "edited",
+   "newSentence": "NHS 111 Wales says physiotherapy is free on the NHS and that, depending on where a person lives, they may be able to refer themselves or may need to see a GP first."
+  },
+  {
+   "id": "c19",
+   "where": "body[3]",
+   "sentence": "Sciatica usually improves within weeks to months, though it can last longer and may come back.",
+   "classification": "unsupported",
+   "evidence": "Retrieved: sciatica usually gets better in about 4 to 6 weeks (other source 6 to 12 weeks) but can last longer. 'May come back' not found.",
+   "url": "https://www.nhs.uk/conditions/sciatica/",
+   "action": "edited",
+   "newSentence": "Sciatica often improves within weeks, though it can last longer."
+  },
+  {
+   "id": "c20",
+   "where": "body[4]",
+   "sentence": "Cauda equina syndrome is a rare but serious condition that needs emergency treatment.",
+   "classification": "supported",
+   "evidence": "Trust leaflets: condition is rare; go to an emergency service if suspected. Original cuh.nhs.uk text was not returned this session.",
+   "url": "https://www.sussexcommunity.nhs.uk/patients-and-visitors/resources/patient-resources/sciatica/cauda-equina-syndrome-ces",
+   "action": "kept"
+  },
+  {
+   "id": "c21",
+   "where": "body[4]",
+   "sentence": "NHS sources list its warning signs as loss of bladder or bowel control or feeling, being unable to pass urine, numbness around the genitals or back passage, and worsening weakness or pain in both legs.",
+   "classification": "unsupported",
+   "evidence": "Retrieved: changes in bladder or bowel control, numbness around genitals/back passage, pain or weakness in both legs. 'Unable to pass urine' and 'loss of feeling' of bladder not found.",
+   "url": "https://www.torbayandsouthdevon.nhs.uk/services/specialist-spinal-orthopaedic-physiotherapy-service/common-spinal-conditions/cauda-equina-syndrome/",
+   "action": "edited",
+   "newSentence": "NHS sources list its warning signs as changes in bladder or bowel control, numbness or pins and needles around the genitals or back passage, and pain or weakness in both legs."
+  },
+  {
+   "id": "c22",
+   "where": "body[4]",
+   "sentence": "They say that a person who develops these signs after back pain should go to the nearest A&E department.",
+   "classification": "wrong",
+   "evidence": "Torbay: attend the Emergency Department immediately if two or more symptoms appear suddenly. Sussex Community: attend A&E or call NHS 111. 'Nearest A&E' alone changes the route to care.",
+   "url": "https://www.sussexcommunity.nhs.uk/patients-and-visitors/resources/patient-resources/sciatica/cauda-equina-syndrome-ces",
+   "action": "edited",
+   "newSentence": "One NHS trust leaflet says to attend the Emergency Department immediately if two or more of these symptoms appear suddenly, and another says to attend A&E or call NHS 111."
+  },
+  {
+   "id": "c23",
+   "where": "summary",
+   "sentence": "Most back pain settles with time and staying active helps, but numbness around the genitals or loss of bladder or bowel control needs A&E.",
+   "classification": "wrong",
+   "evidence": "Summary names only A&E and says 'numbness or loss of control' alone needs it; sources say A&E or NHS 111, usually for sudden or several symptoms.",
+   "url": "https://www.sussexcommunity.nhs.uk/patients-and-visitors/resources/patient-resources/sciatica/cauda-equina-syndrome-ces",
+   "action": "edited",
+   "newSentence": "Most back pain settles with time and staying active helps, but new numbness around the genitals or changes in bladder or bowel control need urgent help, and NHS leaflets point to A&E or NHS 111."
+  }
+ ],
+ "notes": "Search results are blended summaries; page attribution uncertain for c17, c20-c22 (trust leaflets, not nhs.uk). c15: NICE note says manual-therapy recommendation 1.2.7 withdrawn July 2026 while the live page may still list it; removed pending a direct check. Red-flag route: sources say A&E (some also NHS 111); none retrieved said 999. Consider whether the site's cauda equina page gives 999/A&E; keep consistent. Summary sentence needs the same route fix as c22."
+}

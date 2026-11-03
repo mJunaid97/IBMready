@@ -1,0 +1,536 @@
+{
+ "id": "pneumonia",
+ "searchesUsed": 11,
+ "counts": {
+  "supported": 42,
+  "textbook": 2,
+  "unsupported": 14,
+  "wrong": 0,
+  "unsafe": 0,
+  "unchecked": 0
+ },
+ "claims": [
+  {
+   "id": "c01",
+   "where": "article.sections[0]",
+   "classification": "supported",
+   "evidence": "Retrieved NHS text: pneumonia can start suddenly or build up over a few days.",
+   "url": "https://www.nhs.uk/conditions/pneumonia/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c02",
+   "where": "article.sections[0]",
+   "classification": "supported",
+   "evidence": "NHS lists cough, fever, breathlessness, chest pain; confusion common in older people.",
+   "url": "https://www.nhs.uk/conditions/pneumonia/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c03",
+   "where": "article.sections[0]",
+   "classification": "supported",
+   "evidence": "Cough may bring up yellow or green phlegm.",
+   "url": "https://www.nhs.uk/conditions/pneumonia/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c04",
+   "where": "article.sections[0]",
+   "classification": "supported",
+   "evidence": "NHS pleurisy page: inflammation of lung lining, sharp chest pain on breathing in, known complication of pneumonia.",
+   "url": "https://www.nhs.uk/conditions/pleurisy/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c05",
+   "where": "article.sections[0]",
+   "classification": "unsupported",
+   "evidence": "Retrieved NHS text: urgent GP/111 for a cough lasting about three weeks or more, yellow/green phlegm, breathlessness. An unqualified 'a cough' is not supported.",
+   "url": "https://www.nhs.uk/conditions/pneumonia/",
+   "action": "edited",
+   "newSentence": "The NHS advises an urgent GP appointment or a call to NHS 111 for a cough that lasts about three weeks or more, yellow or green phlegm or breathlessness."
+  },
+  {
+   "id": "c06",
+   "where": "article.sections[0]",
+   "classification": "supported",
+   "evidence": "NHS: call 999 for struggling to breathe, pale/blue/blotchy skin, lips or tongue, sudden confusion, coughing up more than streaks of blood; do not drive yourself to A&E. Wording tightened.",
+   "url": "https://www.nhs.uk/conditions/pneumonia/",
+   "action": "edited",
+   "newSentence": "It advises calling 999 for severe difficulty breathing, pale, blue or blotchy skin, lips or tongue, sudden confusion or coughing up more than streaks of blood, and says not to drive yourself to A&E."
+  },
+  {
+   "id": "c07",
+   "where": "article.sections[0]",
+   "classification": "supported",
+   "evidence": "Pneumonia can affect any age but is more common and can be more serious in young children.",
+   "url": "https://www.nhs.uk/conditions/pneumonia/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c08",
+   "where": "article.sections[1]",
+   "classification": "textbook",
+   "evidence": "Not found verbatim in retrieved text; plain definition.",
+   "url": "",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c09",
+   "where": "article.sections[1]",
+   "classification": "supported",
+   "evidence": "NHS trust leaflet: most common causes are viruses, bacteria or fungi.",
+   "url": "https://www.worcsacute.nhs.uk/leaflets/pneumonia/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c10",
+   "where": "article.sections[1]",
+   "classification": "unsupported",
+   "evidence": "Retrieved NHS vaccine page says the vaccine protects against pneumonia; no retrieved text calls pneumococcus a common cause of pneumonia.",
+   "url": "https://www.nhs.uk/vaccinations/pneumococcal-vaccine/",
+   "action": "edited",
+   "newSentence": "The pneumococcus bacterium can cause pneumonia, and the vaccine against it is described below."
+  },
+  {
+   "id": "c11",
+   "where": "article.sections[1]",
+   "classification": "supported",
+   "evidence": "Trust leaflet: food or liquid entering the lungs (aspiration pneumonia) can cause pneumonia. 'According to the sources reviewed' is meta text.",
+   "url": "https://www.worcsacute.nhs.uk/leaflets/pneumonia/",
+   "action": "edited",
+   "newSentence": "Aspiration, which means food or liquid going down into the lungs by mistake, can also cause pneumonia."
+  },
+  {
+   "id": "c12",
+   "where": "article.sections[1]",
+   "classification": "supported",
+   "evidence": "Pneumonia can affect people of any age.",
+   "url": "https://www.nhs.uk/conditions/pneumonia/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c13",
+   "where": "article.sections[1]",
+   "classification": "unsupported",
+   "evidence": "No retrieved text says outlook is good for healthy people. Retrieved: older people and babies/young children at higher risk; other serious illness means poorer recovery; hospital care more likely for over 65s, heart/lung conditions, babies.",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/lungs-and-airways/pneumonia/",
+   "action": "edited",
+   "newSentence": "Pneumonia can be more serious in young children, in people over 65 and in people with other serious health problems, who are more likely to need hospital care."
+  },
+  {
+   "id": "c14",
+   "where": "article.sections[1]",
+   "classification": "unsupported",
+   "evidence": "Trust leaflet lists pleurisy, fluid around lungs, lung abscess, sepsis, respiratory failure. Empyema not found by name or as 'pus collection'.",
+   "url": "https://www.worcsacute.nhs.uk/leaflets/pneumonia/",
+   "action": "edited",
+   "newSentence": "Complications of pneumonia can include pleurisy, fluid around the lungs, a lung abscess, sepsis and respiratory failure."
+  },
+  {
+   "id": "c15",
+   "where": "article.sections[1]",
+   "classification": "unsupported",
+   "evidence": "No retrieved text says complications are uncommon in healthy people.",
+   "url": "",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c16",
+   "where": "article.sections[2]",
+   "classification": "supported",
+   "evidence": "GP can diagnose by asking about symptoms and examining the chest with a stethoscope.",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/lungs-and-airways/pneumonia/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c17",
+   "where": "article.sections[2]",
+   "classification": "supported",
+   "evidence": "Chest X-ray usually confirms diagnosis; blood tests common; sputum samples may be taken in some cases (NHS inform: not routinely needed).",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/lungs-and-airways/pneumonia/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c18",
+   "where": "article.sections[2]",
+   "classification": "unsupported",
+   "evidence": "No source says 'one purpose of the assessment'; NHS inform says CRB-65 is used to gauge how serious pneumonia is.",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/lungs-and-airways/pneumonia/",
+   "action": "edited",
+   "newSentence": "Doctors often use a scoring system to gauge how serious the pneumonia is."
+  },
+  {
+   "id": "c19",
+   "where": "article.sections[2]",
+   "classification": "supported",
+   "evidence": "NHS inform: GPs use CRB-65 to gauge seriousness; higher scores mean higher risk of complications and urgent hospital admission.",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/lungs-and-airways/pneumonia/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c20",
+   "where": "article.sections[2]",
+   "classification": "supported",
+   "evidence": "Most cases treated at home; admission for more severe illness or higher risk.",
+   "url": "https://www.ouh.nhs.uk/media/qvvjrtu3/78368pneumonia.pdf",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c21",
+   "where": "article.sections[2]",
+   "classification": "supported",
+   "evidence": "Hospital care can give antibiotics and fluids into a vein and oxygen (NHLBI); UK patient guidance mentions steroids as a possible extra treatment. Note: first mentioned source for drip is US.",
+   "url": "https://www.nhlbi.nih.gov/health/pneumonia/treatment",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c22",
+   "where": "article.sections[2]",
+   "classification": "supported",
+   "evidence": "NICE: advises against routine follow-up chest X-rays.",
+   "url": "https://www.nice.org.uk/guidance/ng250/resources/pneumonia-diagnosis-and-management-pdf-66144010347205",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c23",
+   "where": "article.sections[2]",
+   "classification": "unsupported",
+   "evidence": "NICE/NHS leaflet: consider X-ray about 6 weeks later for people who smoke or are over 50. 'Symptoms not improved or come back' not found.",
+   "url": "https://www.nice.org.uk/guidance/ng250/resources/pneumonia-diagnosis-and-management-pdf-66144010347205",
+   "action": "edited",
+   "newSentence": "It may be arranged about six weeks later for some people, for example those who smoke or are over 50."
+  },
+  {
+   "id": "c24",
+   "where": "article.sections[3]",
+   "classification": "supported",
+   "evidence": "NHS treatment page: antibiotics if likely bacterial.",
+   "url": "https://www.nhs.uk/conditions/pneumonia/treatment/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c25",
+   "where": "article.sections[3]",
+   "classification": "supported",
+   "evidence": "NHS: mild pneumonia usually treated at home with rest, antibiotics and plenty of fluids.",
+   "url": "https://www.nhs.uk/conditions/pneumonia/treatment/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c26",
+   "where": "article.sections[3]",
+   "classification": "supported",
+   "evidence": "MedlinePlus: antibiotics do not work on viruses; most viral pneumonia gets better without treatment.",
+   "url": "https://medlineplus.gov/ency/article/000073.htm",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c27",
+   "where": "article.sections[3]",
+   "classification": "supported",
+   "evidence": "Admission more likely if very unwell or higher risk.",
+   "url": "https://www.nhs.uk/conditions/pneumonia/treatment/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c28",
+   "where": "article.sections[3]",
+   "classification": "supported",
+   "evidence": "Antibiotics via vein in hospital (NHLBI); steroids a possible addition in UK patient guidance.",
+   "url": "https://www.nhlbi.nih.gov/health/pneumonia/treatment",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c29",
+   "where": "article.sections[3]",
+   "classification": "supported",
+   "evidence": "Oxygen therapy used in hospital.",
+   "url": "https://www.nhlbi.nih.gov/health/pneumonia/treatment",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c30",
+   "where": "article.sections[3]",
+   "classification": "supported",
+   "evidence": "Sources say timing varies with severity and other conditions.",
+   "url": "https://www.nhs.uk/conditions/pneumonia/treatment/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c31",
+   "where": "article.sections[3]",
+   "classification": "supported",
+   "evidence": "UK leaflet/NHS timeline: about 1 week fever, 4 weeks less mucus, 6 weeks less cough and easier breathing.",
+   "url": "https://www.nhs.uk/conditions/pneumonia/treatment/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c32",
+   "where": "article.sections[3]",
+   "classification": "supported",
+   "evidence": "NHS timeline: 3 months most symptoms resolved though fatigue; 6 months most back to normal.",
+   "url": "https://www.nhs.uk/conditions/pneumonia/treatment/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c33",
+   "where": "article.sections[3]",
+   "classification": "unsupported",
+   "evidence": "'Other NHS sources' range not found as stated; a trust leaflet says recovery can take longer than six months in older people or those with other health problems.",
+   "url": "https://www.nhs.uk/conditions/pneumonia/treatment/",
+   "action": "edited",
+   "newSentence": "Recovery can take longer in older people and in people with other health problems."
+  },
+  {
+   "id": "c34",
+   "where": "article.sections[3]",
+   "classification": "supported",
+   "evidence": "NHS: cough may persist 2 to 3 weeks after finishing antibiotics; tiredness may last longer.",
+   "url": "https://www.nhs.uk/conditions/pneumonia/treatment/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c35",
+   "where": "article.sections[3]",
+   "classification": "supported",
+   "evidence": "Trust leaflet: more prone to chest infections while recovering.",
+   "url": "https://www.gloshospitals.nhs.uk/your-visit/patient-information-leaflets/pneumonia-and-what-to-expect-after-discharge-ghpi1645/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c36",
+   "where": "article.sections[4]",
+   "classification": "unsupported",
+   "evidence": "NHS inform: vaccine does not protect against illnesses caused by other bacteria or viruses; NHS: protects against serious illnesses like pneumonia. 'Lowers risk of severe pneumonia' is not stated.",
+   "url": "https://www.nhs.uk/vaccinations/pneumococcal-vaccine/",
+   "action": "edited",
+   "newSentence": "The pneumococcal vaccine helps protect against serious illnesses such as pneumonia, but it does not protect against illnesses caused by other bacteria or viruses."
+  },
+  {
+   "id": "c37",
+   "where": "article.sections[4]",
+   "classification": "supported",
+   "evidence": "NHS: protects against serious illnesses such as pneumonia and meningitis; NHS inform/Wales add septicaemia.",
+   "url": "https://www.nhs.uk/vaccinations/pneumococcal-vaccine/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c38",
+   "where": "article.sections[4]",
+   "classification": "unsupported",
+   "evidence": "NHS: routine childhood vaccine for babies, can still be had until second birthday. 'Conjugate' and 'all children under two' not stated.",
+   "url": "https://www.nhs.uk/vaccinations/pneumococcal-vaccine/",
+   "action": "edited",
+   "newSentence": "In the UK the pneumococcal vaccine is offered to babies as part of the routine childhood programme."
+  },
+  {
+   "id": "c39",
+   "where": "article.sections[4]",
+   "classification": "supported",
+   "evidence": "NHS: adults 65+ offered PPV; ages 2 to 64 with health condition raising risk are eligible.",
+   "url": "https://www.nhs.uk/vaccinations/pneumococcal-vaccine/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c40",
+   "where": "article.sections[4]",
+   "classification": "unsupported",
+   "evidence": "Flu, RSV, COVID-19 groups found on NHS pages; Wales leaflet claim about children's flu vaccine and pneumonia not retrieved.",
+   "url": "https://www.nhs.uk/live-well/seasonal-health/keep-warm-keep-well/",
+   "action": "edited",
+   "newSentence": "The NHS also offers flu, RSV and COVID-19 vaccines to some groups, such as older people and people with certain long-term health conditions."
+  },
+  {
+   "id": "c41",
+   "where": "article.faqs[0].a",
+   "classification": "supported",
+   "evidence": "Follows from c42 (page structure).",
+   "url": "https://www.nhs.uk/conditions/pneumonia/treatment/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c42",
+   "where": "article.faqs[0].a",
+   "classification": "supported",
+   "evidence": "Antibiotics for likely bacterial cause; viral pneumonia gets better without antibiotics.",
+   "url": "https://www.nhs.uk/conditions/pneumonia/treatment/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c43",
+   "where": "article.faqs[0].a",
+   "classification": "unsupported",
+   "evidence": "Only search-engine commentary, not source text.",
+   "url": "",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c44",
+   "where": "article.faqs[1].a",
+   "classification": "supported",
+   "evidence": "As c25.",
+   "url": "https://www.nhs.uk/conditions/pneumonia/treatment/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c45",
+   "where": "article.faqs[1].a",
+   "classification": "supported",
+   "evidence": "As c21 and c29.",
+   "url": "https://www.nhlbi.nih.gov/health/pneumonia/treatment",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c46",
+   "where": "article.faqs[2].a",
+   "classification": "supported",
+   "evidence": "As c34.",
+   "url": "https://www.nhs.uk/conditions/pneumonia/treatment/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c47",
+   "where": "article.faqs[2].a",
+   "classification": "supported",
+   "evidence": "As c31 (6 weeks for cough/breathing).",
+   "url": "https://www.nhs.uk/conditions/pneumonia/treatment/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c48",
+   "where": "article.faqs[3].a",
+   "classification": "supported",
+   "evidence": "As c06; wording tightened.",
+   "url": "https://www.nhs.uk/conditions/pneumonia/",
+   "action": "edited",
+   "newSentence": "The NHS says to call 999 for severe difficulty breathing, pale, blue or blotchy skin, lips or tongue, sudden confusion or coughing up more than streaks of blood, and not to drive yourself to A&E."
+  },
+  {
+   "id": "c49",
+   "where": "article.faqs[3].a",
+   "classification": "unsupported",
+   "evidence": "As c05: cough trigger is a cough lasting about three weeks or more.",
+   "url": "https://www.nhs.uk/conditions/pneumonia/",
+   "action": "edited",
+   "newSentence": "For a cough that lasts about three weeks or more, yellow or green phlegm or breathlessness it advises an urgent GP appointment or NHS 111."
+  },
+  {
+   "id": "c50",
+   "where": "article.faqs[4].a",
+   "classification": "supported",
+   "evidence": "Pneumococcal and other vaccines exist.",
+   "url": "https://www.nhs.uk/vaccinations/pneumococcal-vaccine/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c51",
+   "where": "article.faqs[4].a",
+   "classification": "unsupported",
+   "evidence": "As c38/c39.",
+   "url": "https://www.nhs.uk/vaccinations/pneumococcal-vaccine/",
+   "action": "edited",
+   "newSentence": "The pneumococcal vaccine is offered to babies and to people aged 65 and over or at higher risk."
+  },
+  {
+   "id": "c52",
+   "where": "article.faqs[4].a",
+   "classification": "supported",
+   "evidence": "NHS pages list flu/RSV/COVID groups; NHS inform: vaccine does not cover other causes.",
+   "url": "https://www.nhs.uk/vaccinations/pneumococcal-vaccine/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c53",
+   "where": "article.keyFacts[0]",
+   "classification": "textbook",
+   "evidence": "Plain definition.",
+   "url": "",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c54",
+   "where": "article.keyFacts[1]",
+   "classification": "supported",
+   "evidence": "Viruses, bacteria or fungi.",
+   "url": "https://www.worcsacute.nhs.uk/leaflets/pneumonia/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c55",
+   "where": "article.keyFacts[2]",
+   "classification": "supported",
+   "evidence": "As c24/c26.",
+   "url": "https://www.nhs.uk/conditions/pneumonia/treatment/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c56",
+   "where": "article.keyFacts[3]",
+   "classification": "supported",
+   "evidence": "As c06; wording tightened.",
+   "url": "https://www.nhs.uk/conditions/pneumonia/",
+   "action": "edited",
+   "newSentence": "Emergency route: Call 999 for severe breathing difficulty, pale, blue or blotchy skin, lips or tongue, sudden confusion or coughing up more than streaks of blood"
+  },
+  {
+   "id": "c57",
+   "where": "article.keyFacts[4]",
+   "classification": "supported",
+   "evidence": "As c38/c39/c40.",
+   "url": "https://www.nhs.uk/vaccinations/pneumococcal-vaccine/",
+   "action": "edited",
+   "newSentence": "Vaccines: Pneumococcal for babies and for those aged 65 and over or at higher risk; flu, RSV and COVID-19 for some groups"
+  },
+  {
+   "id": "c58",
+   "where": "article.keyFacts[5]",
+   "classification": "supported",
+   "evidence": "Timeline weeks to months; cough and tiredness persist.",
+   "url": "https://www.nhs.uk/conditions/pneumonia/treatment/",
+   "action": "kept",
+   "newSentence": ""
+  }
+ ]
+}

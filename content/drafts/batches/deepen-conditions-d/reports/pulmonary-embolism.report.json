@@ -1,0 +1,509 @@
+{
+ "id": "pulmonary-embolism",
+ "searchesUsed": 8,
+ "counts": {
+  "supported": 22,
+  "textbook": 2,
+  "unsupported": 30,
+  "wrong": 0,
+  "unsafe": 1,
+  "unchecked": 0
+ },
+ "claims": [
+  {
+   "id": "c01",
+   "where": "article.sections[0]",
+   "classification": "supported",
+   "evidence": "NHS page lists difficulty breathing that comes on suddenly, chest pain worse on breathing in, coughing up blood; leg pain and swelling are DVT signs.",
+   "url": "https://www.nhs.uk/conditions/pulmonary-embolism/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c02",
+   "where": "article.sections[0]",
+   "classification": "supported",
+   "evidence": "NHS: call 999 or go to A&E for sudden difficulty breathing, chest or upper back pain, very fast heartbeat, or someone passing out.",
+   "url": "https://www.nhs.uk/conditions/pulmonary-embolism/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c03",
+   "where": "article.sections[0]",
+   "classification": "unsupported",
+   "evidence": "No retrieved text states this; one search noted sources differ on onset. Vague connective.",
+   "url": "https://www.nhs.uk/conditions/pulmonary-embolism/",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c04",
+   "where": "article.sections[0]",
+   "classification": "unsupported",
+   "evidence": "A leaflet says a small PE may cause no symptoms at all. The 'build up over days to weeks' claim was not supported and a follow-up check found sources describing sudden onset.",
+   "url": "https://www.kingstonandrichmond.nhs.uk/patients-and-families/patient-leaflets/pulmonary-embolism",
+   "action": "edited",
+   "newSentence": "Hospital leaflets note that a small pulmonary embolism may cause no symptoms at all."
+  },
+  {
+   "id": "c05",
+   "where": "article.sections[0]",
+   "classification": "unsupported",
+   "evidence": "Not stated in retrieved text. NICE NG158 describes a probability score then D-dimer or imaging.",
+   "url": "https://www.nice.org.uk/guidance/ng158/chapter/recommendations",
+   "action": "edited",
+   "newSentence": "NICE guidance on suspected pulmonary embolism describes using a clinical probability score, followed by tests such as a D-dimer blood test or a scan."
+  },
+  {
+   "id": "c06",
+   "where": "article.sections[1]",
+   "classification": "unsupported",
+   "evidence": "Leaflet text: clot originally formed in a deep vein (DVT) in the leg or pelvis. 'Almost all cases' not retrieved.",
+   "url": "https://www.kingstonandrichmond.nhs.uk/patients-and-families/patient-leaflets/pulmonary-embolism",
+   "action": "edited",
+   "newSentence": "NHS hospital leaflets say the clot is usually a deep vein thrombosis (DVT), most often in the leg or pelvis, that has travelled to the lungs."
+  },
+  {
+   "id": "c07",
+   "where": "article.sections[1]",
+   "classification": "supported",
+   "evidence": "A leaflet says occasionally a PE may come from a clot in an arm vein or one formed in the heart.",
+   "url": "https://www.kingstonandrichmond.nhs.uk/patients-and-families/patient-leaflets/pulmonary-embolism",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c08",
+   "where": "article.sections[1]",
+   "classification": "unsupported",
+   "evidence": "Vague connective; nothing retrieved compares leaflets.",
+   "url": "",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c09",
+   "where": "article.sections[1]",
+   "classification": "unsupported",
+   "evidence": "Retrieved text supports only hormonal contraception/HRT, pregnancy and the weeks after birth, and active cancer. Immobility, surgery, smoking, age and family history not retrieved.",
+   "url": "https://www.bucksformulary.nhs.uk/docs/Guideline_646FM.pdf",
+   "action": "edited",
+   "newSentence": "Risk factors include pregnancy and the weeks after birth, oestrogen-containing contraception or hormone replacement therapy, and cancer."
+  },
+  {
+   "id": "c10",
+   "where": "article.sections[1]",
+   "classification": "unsupported",
+   "evidence": "Retrieved text lists inherited thrombophilias (factor V Leiden, protein C and S deficiency); 'acquired' wording not retrieved as such.",
+   "url": "https://www.bucksformulary.nhs.uk/docs/Guideline_646FM.pdf",
+   "action": "edited",
+   "newSentence": "Some people have an inherited tendency for their blood to clot (thrombophilia), such as factor V Leiden."
+  },
+  {
+   "id": "c11",
+   "where": "article.sections[1]",
+   "classification": "supported",
+   "evidence": "Roughly a third of PE cases have no identifiable trigger (unprovoked).",
+   "url": "https://www.bucksformulary.nhs.uk/docs/Guideline_646FM.pdf",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c12",
+   "where": "article.sections[1]",
+   "classification": "supported",
+   "evidence": "Unprovoked defined as no identifiable trigger; leaflet says duration depends on the cause; guideline reviews cause at three months to set duration.",
+   "url": "https://www.bucksformulary.nhs.uk/docs/Guideline_646FM.pdf",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c13",
+   "where": "article.sections[2]",
+   "classification": "unsupported",
+   "evidence": "The Scottish PDF text was not retrieved. NICE NG158 uses a two-level Wells score then D-dimer or imaging.",
+   "url": "https://www.nice.org.uk/guidance/ng158/chapter/recommendations",
+   "action": "edited",
+   "newSentence": "NICE guidance describes estimating the clinical probability of pulmonary embolism with a score, then using a D-dimer blood test or imaging depending on the result."
+  },
+  {
+   "id": "c14",
+   "where": "article.sections[2]",
+   "classification": "unsupported",
+   "evidence": "Whittington policy: a negative D-dimer reliably excludes PE in low clinical probability so imaging is not needed in that group. 'Imaging confirms' not stated as such; policy is dated 2015.",
+   "url": "https://www.whittington.nhs.uk/document.ashx?id=6065",
+   "action": "edited",
+   "newSentence": "A Whittington Health policy says a negative D-dimer test reliably excludes pulmonary embolism in people with a low clinical probability, so further imaging is not needed in that group."
+  },
+  {
+   "id": "c15",
+   "where": "article.sections[2]",
+   "classification": "unsupported",
+   "evidence": "NICE lists CTPA as first-line imaging. 'Shows state of lung vessels' not retrieved.",
+   "url": "https://www.nice.org.uk/guidance/ng158/chapter/recommendations",
+   "action": "edited",
+   "newSentence": "The usual confirming scan is a CT pulmonary angiogram (CTPA)."
+  },
+  {
+   "id": "c16",
+   "where": "article.sections[2]",
+   "classification": "unsupported",
+   "evidence": "Only the section heading 'Will I have a scan on my first visit' was retrieved, not its answer.",
+   "url": "https://www.gloshospitals.nhs.uk/your-visit/patient-information-leaflets/pulmonary-embolism/",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c17",
+   "where": "article.sections[2]",
+   "classification": "unsupported",
+   "evidence": "Not found in retrieved text.",
+   "url": "",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c18",
+   "where": "article.sections[2]",
+   "classification": "unsupported",
+   "evidence": "Scottish guideline text not retrieved. NICE: interim therapeutic anticoagulation if imaging cannot be done immediately (likely PE) or D-dimer not available within 4 hours.",
+   "url": "https://www.nice.org.uk/guidance/ng158/chapter/recommendations",
+   "action": "edited",
+   "newSentence": "NICE guidance says that when a scan cannot be done straight away, people thought likely to have a pulmonary embolism are offered interim anticoagulant treatment until it can be done."
+  },
+  {
+   "id": "c19",
+   "where": "article.sections[2]",
+   "classification": "supported",
+   "evidence": "NICE: interim anticoagulation is offered while diagnostic imaging is delayed.",
+   "url": "https://www.nice.org.uk/guidance/ng158/chapter/recommendations",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c20",
+   "where": "article.sections[3]",
+   "classification": "supported",
+   "evidence": "Trust leaflet: anticoagulant may be a pill or an injection depending on circumstances.",
+   "url": "https://dchft.nhs.uk/leaflets/pulmonary-embolism/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c21",
+   "where": "article.sections[3]",
+   "classification": "supported",
+   "evidence": "Leaflet: blood thinner prevents the clot growing while the body naturally dissolves it.",
+   "url": "https://dchft.nhs.uk/leaflets/pulmonary-embolism/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c22",
+   "where": "article.sections[3]",
+   "classification": "supported",
+   "evidence": "Leaflet: body naturally dissolves the clot, usually over four to six weeks.",
+   "url": "https://dchft.nhs.uk/leaflets/pulmonary-embolism/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c23",
+   "where": "article.sections[3]",
+   "classification": "supported",
+   "evidence": "Leaflet: prevents the clot increasing in size and new clots forming.",
+   "url": "https://dchft.nhs.uk/leaflets/pulmonary-embolism/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c24",
+   "where": "article.sections[3]",
+   "classification": "unsupported",
+   "evidence": "Trust guideline: confirmed PE with haemodynamic compromise is considered urgently for thrombolysis. 'Reserved for severe cases' paraphrase not stated.",
+   "url": "https://www.nnuh.nhs.uk/publication/download/investigation-of-venous-thromboembolism-and-management-of-ca5040v8/",
+   "action": "edited",
+   "newSentence": "Clot-busting drugs (thrombolysis) are considered for people whose circulation is affected by a severe pulmonary embolism."
+  },
+  {
+   "id": "c25",
+   "where": "article.sections[3]",
+   "classification": "supported",
+   "evidence": "Leaflet: at least three months; some people for life, depending on cause and previous clots. (UCLH page says usually three to six months.)",
+   "url": "https://dchft.nhs.uk/leaflets/pulmonary-embolism/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c26",
+   "where": "article.sections[3]",
+   "classification": "unsupported",
+   "evidence": "Not from the Whittington text retrieved; duplicates an earlier claim.",
+   "url": "",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c27",
+   "where": "article.sections[3]",
+   "classification": "supported",
+   "evidence": "Leaflet: the main side effect of anticoagulants is bleeding more easily.",
+   "url": "https://dchft.nhs.uk/leaflets/pulmonary-embolism/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c28",
+   "where": "article.sections[3]",
+   "classification": "unsupported",
+   "evidence": "Leaflets list blood in vomit, sputum, urine or stool and black stools as warning signs; heavy bleeding that does not stop: urgent GP, 111 or A&E. A 999 route for this was not retrieved verbatim.",
+   "url": "https://www.gloshospitals.nhs.uk/your-visit/patient-information-leaflets/apixaban-vte-medication/",
+   "action": "edited",
+   "newSentence": "Hospital leaflets list black or bloody stools, vomiting or coughing up blood, and heavy bleeding that does not stop as reasons to get urgent medical help, by calling NHS 111 or going to A&E."
+  },
+  {
+   "id": "c29",
+   "where": "article.sections[4]",
+   "classification": "supported",
+   "evidence": "NHS: you should make a full recovery if a pulmonary embolism is spotted and treated early.",
+   "url": "https://www.nhs.uk/conditions/pulmonary-embolism/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c30",
+   "where": "article.sections[4]",
+   "classification": "unsupported",
+   "evidence": "A trust says it is common to feel breathless for a few weeks or months; tiredness and 'improve gradually' not clearly retrieved.",
+   "url": "https://www.nhs.uk/conditions/pulmonary-embolism/",
+   "action": "edited",
+   "newSentence": "Hospital leaflets say it is common to feel breathless for a few weeks or months after a pulmonary embolism."
+  },
+  {
+   "id": "c31",
+   "where": "article.sections[4]",
+   "classification": "unsafe",
+   "evidence": "Cut-off instruction to individuals; sources conflict (one trust says 8 weeks, another 3 months).",
+   "url": "https://www.nhs.uk/conditions/pulmonary-embolism/",
+   "action": "edited",
+   "newSentence": "Hospital leaflets advise talking to a GP if breathlessness does not improve, and note that a minority of people have symptoms for a prolonged period."
+  },
+  {
+   "id": "c32",
+   "where": "article.sections[4]",
+   "classification": "supported",
+   "evidence": "Leaflet: a minority continue to experience symptoms for a prolonged period.",
+   "url": "https://www.nhs.uk/conditions/pulmonary-embolism/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c33",
+   "where": "article.sections[4]",
+   "classification": "unsupported",
+   "evidence": "Retrieved leaflet text says a minority have prolonged symptoms that may be due to CTEPH; 'heart problems' not retrieved. Merged with next sentence.",
+   "url": "https://www.nhs.uk/conditions/pulmonary-embolism/",
+   "action": "edited",
+   "newSentence": "One NHS leaflet notes that a minority of people continue to have symptoms for a long time, which may be due to a condition called chronic thromboembolic pulmonary hypertension (CTEPH)."
+  },
+  {
+   "id": "c34",
+   "where": "article.sections[4]",
+   "classification": "unsupported",
+   "evidence": "Merged into the rewritten previous sentence.",
+   "url": "",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c35",
+   "where": "article.sections[4]",
+   "classification": "unsupported",
+   "evidence": "Not found in retrieved text.",
+   "url": "",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c36",
+   "where": "article.sections[4]",
+   "classification": "unsupported",
+   "evidence": "Vague; nothing retrieved beyond NHS full recovery statement.",
+   "url": "",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c37",
+   "where": "article.sections[4]",
+   "classification": "textbook",
+   "evidence": "Signposting to the clinical team; no factual claim beyond that.",
+   "url": "",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c38",
+   "where": "article.faqs[0].a",
+   "classification": "unsupported",
+   "evidence": "Same as claim c06.",
+   "url": "https://www.kingstonandrichmond.nhs.uk/patients-and-families/patient-leaflets/pulmonary-embolism",
+   "action": "edited",
+   "newSentence": "NHS hospital leaflets say the clot is usually a deep vein thrombosis (DVT), most often in the leg or pelvis, that has travelled to the lungs."
+  },
+  {
+   "id": "c39",
+   "where": "article.faqs[0].a",
+   "classification": "supported",
+   "evidence": "Leaflet: occasionally from an arm vein or a clot formed in the heart.",
+   "url": "https://www.kingstonandrichmond.nhs.uk/patients-and-families/patient-leaflets/pulmonary-embolism",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c40",
+   "where": "article.faqs[1].a",
+   "classification": "supported",
+   "evidence": "Answers 'Can a PE cause no symptoms?': leaflets say a small PE may cause no symptoms.",
+   "url": "https://www.kingstonandrichmond.nhs.uk/patients-and-families/patient-leaflets/pulmonary-embolism",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c41",
+   "where": "article.faqs[1].a",
+   "classification": "unsupported",
+   "evidence": "Same as c04; 'days to weeks' not supported.",
+   "url": "https://www.kingstonandrichmond.nhs.uk/patients-and-families/patient-leaflets/pulmonary-embolism",
+   "action": "edited",
+   "newSentence": "Hospital leaflets note that a small pulmonary embolism may cause no symptoms at all."
+  },
+  {
+   "id": "c42",
+   "where": "article.faqs[1].a",
+   "classification": "unsupported",
+   "evidence": "Not stated as such. NICE describes score then D-dimer or imaging.",
+   "url": "https://www.nice.org.uk/guidance/ng158/chapter/recommendations",
+   "action": "edited",
+   "newSentence": "NICE guidance describes using a clinical probability score and tests such as a D-dimer blood test and a scan to diagnose it."
+  },
+  {
+   "id": "c43",
+   "where": "article.faqs[2].a",
+   "classification": "unsupported",
+   "evidence": "Whittington: negative D-dimer excludes PE in low probability. 'Not to confirm it' not retrieved.",
+   "url": "https://www.whittington.nhs.uk/document.ashx?id=6065",
+   "action": "edited",
+   "newSentence": "A negative D-dimer test reliably excludes pulmonary embolism in people with a low clinical probability, according to a Whittington Health policy."
+  },
+  {
+   "id": "c44",
+   "where": "article.faqs[2].a",
+   "classification": "unsupported",
+   "evidence": "NICE: imaging (CTPA first) for likely PE; 'to confirm' paraphrase.",
+   "url": "https://www.nice.org.uk/guidance/ng158/chapter/recommendations",
+   "action": "edited",
+   "newSentence": "NICE guidance recommends imaging, usually a CT pulmonary angiogram (CTPA), when a pulmonary embolism is thought likely."
+  },
+  {
+   "id": "c45",
+   "where": "article.faqs[2].a",
+   "classification": "unsupported",
+   "evidence": "Not found in retrieved text.",
+   "url": "",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c46",
+   "where": "article.faqs[3].a",
+   "classification": "supported",
+   "evidence": "Leaflet: at least three months; some people for life.",
+   "url": "https://dchft.nhs.uk/leaflets/pulmonary-embolism/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c47",
+   "where": "article.faqs[3].a",
+   "classification": "supported",
+   "evidence": "Leaflet: depends on cause and previous clots; guideline sets duration at three-month review.",
+   "url": "https://dchft.nhs.uk/leaflets/pulmonary-embolism/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c48",
+   "where": "article.faqs[4].a",
+   "classification": "unsupported",
+   "evidence": "Same as c30.",
+   "url": "https://www.nhs.uk/conditions/pulmonary-embolism/",
+   "action": "edited",
+   "newSentence": "Hospital leaflets say it is common to feel breathless for a few weeks or months after a pulmonary embolism."
+  },
+  {
+   "id": "c49",
+   "where": "article.faqs[4].a",
+   "classification": "unsupported",
+   "evidence": "NHS full recovery supported; 'several weeks to months' came from trust leaflets, not NHS.",
+   "url": "https://www.nhs.uk/conditions/pulmonary-embolism/",
+   "action": "edited",
+   "newSentence": "The NHS says people should make a full recovery if the condition is spotted and treated early, though hospital leaflets say it is common to feel breathless for a few weeks or months."
+  },
+  {
+   "id": "c50",
+   "where": "article.keyFacts[0]",
+   "classification": "textbook",
+   "evidence": "Plain definition of the condition (blockage of a lung artery, usually by a clot).",
+   "url": "https://medlineplus.gov/pulmonaryembolism.html",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c51",
+   "where": "article.keyFacts[1]",
+   "classification": "supported",
+   "evidence": "NHS emergency route; reworded to match NHS symptom list.",
+   "url": "https://www.nhs.uk/conditions/pulmonary-embolism/",
+   "action": "edited",
+   "newSentence": "Emergency route: Call 999 or go to A&E for sudden difficulty breathing, chest or upper back pain, a very fast heartbeat or passing out"
+  },
+  {
+   "id": "c52",
+   "where": "article.keyFacts[2]",
+   "classification": "supported",
+   "evidence": "Leaflets: DVT in the leg or pelvis.",
+   "url": "https://www.kingstonandrichmond.nhs.uk/patients-and-families/patient-leaflets/pulmonary-embolism",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c53",
+   "where": "article.keyFacts[3]",
+   "classification": "supported",
+   "evidence": "NICE: CTPA first-line imaging.",
+   "url": "https://www.nice.org.uk/guidance/ng158/chapter/recommendations",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c54",
+   "where": "article.keyFacts[4]",
+   "classification": "unsupported",
+   "evidence": "Same as c24 (thrombolysis for severe cases).",
+   "url": "https://www.nnuh.nhs.uk/publication/download/investigation-of-venous-thromboembolism-and-management-of-ca5040v8/",
+   "action": "edited",
+   "newSentence": "Treatment: Anticoagulant tablets or injections; clot-busting drugs are considered when the circulation is affected"
+  },
+  {
+   "id": "c55",
+   "where": "article.keyFacts[5]",
+   "classification": "supported",
+   "evidence": "Leaflet: at least three months, some for life, depending on cause.",
+   "url": "https://dchft.nhs.uk/leaflets/pulmonary-embolism/",
+   "action": "kept",
+   "newSentence": ""
+  }
+ ]
+}

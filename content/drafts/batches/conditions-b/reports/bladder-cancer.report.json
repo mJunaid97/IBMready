@@ -1,0 +1,759 @@
+{
+ "id": "bladder-cancer",
+ "searchesUsed": 11,
+ "counts": {
+  "supported": 46,
+  "textbook": 1,
+  "unsupported": 46,
+  "wrong": 0,
+  "unsafe": 0,
+  "unchecked": 0
+ },
+ "claims": [
+  {
+   "id": "c01",
+   "classification": "supported",
+   "evidence": "NCI: cancer that forms in tissues of the bladder; original 'starts in' wording reworded.",
+   "url": "https://www.cancer.gov/types/bladder",
+   "action": "edited",
+   "newSentence": "Bladder cancer is cancer that forms in the tissues of the bladder, the organ that stores urine."
+  },
+  {
+   "id": "c02",
+   "classification": "unsupported",
+   "evidence": "Macmillan says blood is the most common sign and can be visible or found only on a urine test; no retrieved text says it is painless (it says pain is less common).",
+   "url": "https://www.macmillan.org.uk/cancer-information-and-support/bladder-cancer/signs-and-symptoms-of-bladder-cancer",
+   "action": "edited",
+   "newSentence": "Blood in the urine is the most common sign of bladder cancer, according to Macmillan and MedlinePlus. Many people with blood in their urine do not have bladder cancer, but the NHS advises asking for an urgent GP appointment or contacting NHS 111. Smoking is the biggest known risk factor for bladder cancer. Treatment depends on the stage and type of the cancer, and the NHS says surgery is usually offered first, with chemotherapy, radiotherapy or immunotherapy added in some cases."
+  },
+  {
+   "id": "c03",
+   "classification": "unsupported",
+   "evidence": "Macmillan says many (not most) people with blood in urine do not have bladder cancer; NHS symptoms page says ask for an urgent GP appointment or NHS 111.",
+   "url": "https://www.nhs.uk/conditions/bladder-cancer/symptoms/",
+   "action": "edited",
+   "newSentence": "Blood in the urine is the most common sign of bladder cancer, according to Macmillan and MedlinePlus. Many people with blood in their urine do not have bladder cancer, but the NHS advises asking for an urgent GP appointment or contacting NHS 111. Smoking is the biggest known risk factor for bladder cancer. Treatment depends on the stage and type of the cancer, and the NHS says surgery is usually offered first, with chemotherapy, radiotherapy or immunotherapy added in some cases."
+  },
+  {
+   "id": "c04",
+   "classification": "supported",
+   "evidence": "NHS 111 Wales and MedlinePlus: smoking is the biggest risk factor.",
+   "url": "https://111.wales.nhs.uk/encyclopaedia/c/article/cancerofthebladder",
+   "action": "kept",
+   "newSentence": "Blood in the urine is the most common sign of bladder cancer, according to Macmillan and MedlinePlus. Many people with blood in their urine do not have bladder cancer, but the NHS advises asking for an urgent GP appointment or contacting NHS 111. Smoking is the biggest known risk factor for bladder cancer. Treatment depends on the stage and type of the cancer, and the NHS says surgery is usually offered first, with chemotherapy, radiotherapy or immunotherapy added in some cases."
+  },
+  {
+   "id": "c05",
+   "classification": "unsupported",
+   "evidence": "Retrieved NHS treatment text says treatment depends on stage and type; 'size and position' not found.",
+   "url": "https://www.nhs.uk/conditions/bladder-cancer/treatment/",
+   "action": "edited",
+   "newSentence": "Blood in the urine is the most common sign of bladder cancer, according to Macmillan and MedlinePlus. Many people with blood in their urine do not have bladder cancer, but the NHS advises asking for an urgent GP appointment or contacting NHS 111. Smoking is the biggest known risk factor for bladder cancer. Treatment depends on the stage and type of the cancer, and the NHS says surgery is usually offered first, with chemotherapy, radiotherapy or immunotherapy added in some cases."
+  },
+  {
+   "id": "c06",
+   "classification": "unsupported",
+   "evidence": "Only NHS 111 Wales states 'more than a third' (not nhs.uk England page); Macmillan suggests about half and a Bristol NHS page also higher, so 'the NHS estimates' overstated agreement.",
+   "url": "https://111.wales.nhs.uk/encyclopaedia/c/article/cancerofthebladder",
+   "action": "edited",
+   "newSentence": "Smoking is the biggest known risk factor, and estimates of its share of cases vary between sources"
+  },
+  {
+   "id": "c07",
+   "classification": "supported",
+   "evidence": "NHS trust pages list workplace chemicals (aromatic amines, aniline dyes).",
+   "url": "https://www.hdft.nhs.uk/services/bladder-cancer/",
+   "action": "kept",
+   "newSentence": "Contact with certain chemicals at work, such as aromatic amines used in some industries, is also linked to the cancer"
+  },
+  {
+   "id": "c08",
+   "classification": "unsupported",
+   "evidence": "Harrogate NHS page links repeated UTIs and untreated stones to a less common squamous cell type, not to bladder cancer in general.",
+   "url": "https://www.hdft.nhs.uk/services/bladder-cancer/",
+   "action": "edited",
+   "newSentence": "Repeated urinary infections and long-term bladder stones have been linked to a less common squamous cell type"
+  },
+  {
+   "id": "c09",
+   "classification": "unsupported",
+   "evidence": "Chewing tobacco not found in any retrieved text.",
+   "url": "https://111.wales.nhs.uk/encyclopaedia/c/article/cancerofthebladder",
+   "action": "edited",
+   "newSentence": "Smoking, including heavy and long-term smoking"
+  },
+  {
+   "id": "c10",
+   "classification": "supported",
+   "evidence": "Workplace chemicals listed by NHS pages.",
+   "url": "https://www.hdft.nhs.uk/services/bladder-cancer/",
+   "action": "kept",
+   "newSentence": "Exposure to certain chemicals in the workplace"
+  },
+  {
+   "id": "c11",
+   "classification": "supported",
+   "evidence": "NHS 111 Wales / Royal Marsden: men more affected.",
+   "url": "https://111.wales.nhs.uk/encyclopaedia/c/article/cancerofthebladder",
+   "action": "edited",
+   "newSentence": "Being male"
+  },
+  {
+   "id": "c12",
+   "classification": "unsupported",
+   "evidence": "No retrieved text lists this factor (catheter, previous radiotherapy, overweight, relative/diabetes).",
+   "url": "https://www.nhs.uk/conditions/bladder-cancer/",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c13",
+   "classification": "unsupported",
+   "evidence": "No retrieved text lists this factor (catheter, previous radiotherapy, overweight, relative/diabetes).",
+   "url": "https://www.nhs.uk/conditions/bladder-cancer/",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c14",
+   "classification": "unsupported",
+   "evidence": "No retrieved text lists this factor (catheter, previous radiotherapy, overweight, relative/diabetes).",
+   "url": "https://www.nhs.uk/conditions/bladder-cancer/",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c15",
+   "classification": "unsupported",
+   "evidence": "No retrieved text lists this factor (catheter, previous radiotherapy, overweight, relative/diabetes).",
+   "url": "https://www.nhs.uk/conditions/bladder-cancer/",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c16",
+   "classification": "supported",
+   "evidence": "NHS symptoms page: pink, red or dark brown (not 'sometimes brown').",
+   "url": "https://www.nhs.uk/conditions/bladder-cancer/symptoms/",
+   "action": "edited",
+   "newSentence": "Visible blood in the urine, which may look pink, red or dark brown"
+  },
+  {
+   "id": "c17",
+   "classification": "supported",
+   "evidence": "Macmillan: may be found only on a urine test.",
+   "url": "https://www.macmillan.org.uk/cancer-information-and-support/bladder-cancer/signs-and-symptoms-of-bladder-cancer",
+   "action": "edited",
+   "newSentence": "Blood that is only found on a urine test"
+  },
+  {
+   "id": "c18",
+   "classification": "supported",
+   "evidence": "Macmillan lists urinary symptoms (burning, frequency, urgency).",
+   "url": "https://www.macmillan.org.uk/cancer-information-and-support/bladder-cancer/signs-and-symptoms-of-bladder-cancer",
+   "action": "edited",
+   "newSentence": "Burning when passing urine, passing urine more often or feeling the bladder has not emptied"
+  },
+  {
+   "id": "c19",
+   "classification": "supported",
+   "evidence": "PMC8571151: NMIBC recurs often; 'particularly early-stage lining disease' reworded.",
+   "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8571151/",
+   "action": "edited",
+   "newSentence": "Non-muscle-invasive bladder cancer often comes back after treatment"
+  },
+  {
+   "id": "c20",
+   "classification": "unsupported",
+   "evidence": "Progression to muscle-invasive disease not stated in retrieved text; only risk of progression.",
+   "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8571151/",
+   "action": "edited",
+   "newSentence": "Some tumours can progress, so follow-up after treatment is usually long-term"
+  },
+  {
+   "id": "c21",
+   "classification": "unsupported",
+   "evidence": "Retrieved review lists irritative symptoms, haematuria and fever; urgency/pelvic pain wording not confirmed.",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12647504/",
+   "action": "edited",
+   "newSentence": "Treatment placed into the bladder, such as BCG, can cause bladder irritation, blood in the urine and fever"
+  },
+  {
+   "id": "c22",
+   "classification": "unsupported",
+   "evidence": "CRUK summary: urine sample for infection and cancer cells, blood tests possible; kidney function and blood counts not stated.",
+   "url": "https://www.cancerresearchuk.org/about-cancer/bladder-cancer/getting-diagnosed/gp",
+   "action": "edited",
+   "newSentence": "A GP usually sees a person first and may ask for a urine sample to be sent for testing. The sample is checked for infection and, in some cases, for cancer cells. If the GP thinks cancer is possible or is unsure of the cause, they refer the person to a urologist, a specialist in the urinary tract. The main test is a cystoscopy, in which a thin camera is passed through the urethra to look inside the bladder. Imaging such as a CT urogram may also be used, and abnormal areas can be removed in an operation called TURBT so they can be tested for cancer."
+  },
+  {
+   "id": "c23",
+   "classification": "supported",
+   "evidence": "CRUK: GP refers to a urologist if cancer suspected or cause unclear (Leeds/Macmillan not re-confirmed).",
+   "url": "https://www.cancerresearchuk.org/about-cancer/bladder-cancer/getting-diagnosed/gp",
+   "action": "edited",
+   "newSentence": "A GP usually sees a person first and may ask for a urine sample to be sent for testing. The sample is checked for infection and, in some cases, for cancer cells. If the GP thinks cancer is possible or is unsure of the cause, they refer the person to a urologist, a specialist in the urinary tract. The main test is a cystoscopy, in which a thin camera is passed through the urethra to look inside the bladder. Imaging such as a CT urogram may also be used, and abnormal areas can be removed in an operation called TURBT so they can be tested for cancer."
+  },
+  {
+   "id": "c24",
+   "classification": "supported",
+   "evidence": "CRUK/Macmillan: cystoscopy is the main test.",
+   "url": "https://www.cancerresearchuk.org/about-cancer/bladder-cancer/getting-diagnosed/tests-for-bladder-cancer",
+   "action": "kept",
+   "newSentence": "A GP usually sees a person first and may ask for a urine sample to be sent for testing. The sample is checked for infection and, in some cases, for cancer cells. If the GP thinks cancer is possible or is unsure of the cause, they refer the person to a urologist, a specialist in the urinary tract. The main test is a cystoscopy, in which a thin camera is passed through the urethra to look inside the bladder. Imaging such as a CT urogram may also be used, and abnormal areas can be removed in an operation called TURBT so they can be tested for cancer."
+  },
+  {
+   "id": "c25",
+   "classification": "supported",
+   "evidence": "CRUK: CT urogram among imaging; TURBT removes abnormal tissue for testing.",
+   "url": "https://www.cancerresearchuk.org/about-cancer/bladder-cancer/getting-diagnosed/tests-for-bladder-cancer",
+   "action": "edited",
+   "newSentence": "A GP usually sees a person first and may ask for a urine sample to be sent for testing. The sample is checked for infection and, in some cases, for cancer cells. If the GP thinks cancer is possible or is unsure of the cause, they refer the person to a urologist, a specialist in the urinary tract. The main test is a cystoscopy, in which a thin camera is passed through the urethra to look inside the bladder. Imaging such as a CT urogram may also be used, and abnormal areas can be removed in an operation called TURBT so they can be tested for cancer."
+  },
+  {
+   "id": "c26",
+   "classification": "unsupported",
+   "evidence": "Retrieved NHS treatment text: depends on stage and type.",
+   "url": "https://www.nhs.uk/conditions/bladder-cancer/treatment/",
+   "action": "edited",
+   "newSentence": "Treatment depends on the stage and type of the cancer. The NHS says surgery is usually offered first, and chemotherapy, radiotherapy, targeted medicines or immunotherapy may be added depending on the case. For early-stage disease, treatments such as BCG or mitomycin can be placed directly into the bladder. Removing the whole bladder, called cystectomy, is used for higher-risk or muscle-invasive disease, and radiotherapy with chemotherapy is another approach."
+  },
+  {
+   "id": "c27",
+   "classification": "supported",
+   "evidence": "NHS treatment page: surgery usually first; others may be added.",
+   "url": "https://www.nhs.uk/conditions/bladder-cancer/treatment/",
+   "action": "edited",
+   "newSentence": "Treatment depends on the stage and type of the cancer. The NHS says surgery is usually offered first, and chemotherapy, radiotherapy, targeted medicines or immunotherapy may be added depending on the case. For early-stage disease, treatments such as BCG or mitomycin can be placed directly into the bladder. Removing the whole bladder, called cystectomy, is used for higher-risk or muscle-invasive disease, and radiotherapy with chemotherapy is another approach."
+  },
+  {
+   "id": "c28",
+   "classification": "supported",
+   "evidence": "PMC12282301 covers intravesical BCG and mitomycin C for NMIBC.",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12282301/",
+   "action": "edited",
+   "newSentence": "Treatment depends on the stage and type of the cancer. The NHS says surgery is usually offered first, and chemotherapy, radiotherapy, targeted medicines or immunotherapy may be added depending on the case. For early-stage disease, treatments such as BCG or mitomycin can be placed directly into the bladder. Removing the whole bladder, called cystectomy, is used for higher-risk or muscle-invasive disease, and radiotherapy with chemotherapy is another approach."
+  },
+  {
+   "id": "c29",
+   "classification": "unsupported",
+   "evidence": "Cystectomy is for higher-risk/muscle-invasive disease (NHS), radiotherapy with chemotherapy another approach; 'advanced cancer' framing not supported.",
+   "url": "https://www.nhs.uk/conditions/bladder-cancer/treatment/",
+   "action": "edited",
+   "newSentence": "Treatment depends on the stage and type of the cancer. The NHS says surgery is usually offered first, and chemotherapy, radiotherapy, targeted medicines or immunotherapy may be added depending on the case. For early-stage disease, treatments such as BCG or mitomycin can be placed directly into the bladder. Removing the whole bladder, called cystectomy, is used for higher-risk or muscle-invasive disease, and radiotherapy with chemotherapy is another approach."
+  },
+  {
+   "id": "c30",
+   "classification": "unsupported",
+   "evidence": "Chewing tobacco link not found in retrieved text.",
+   "url": "https://111.wales.nhs.uk/encyclopaedia/c/article/cancerofthebladder",
+   "action": "edited",
+   "newSentence": "Smoking is the biggest known risk factor, and workplace exposure to certain chemicals is also linked to the cancer."
+  },
+  {
+   "id": "c31",
+   "classification": "supported",
+   "evidence": "Workplace chemicals linked (NHS trust pages).",
+   "url": "https://www.hdft.nhs.uk/services/bladder-cancer/",
+   "action": "edited",
+   "newSentence": "Smoking is the biggest known risk factor, and workplace exposure to certain chemicals is also linked to the cancer."
+  },
+  {
+   "id": "c32",
+   "classification": "unsupported",
+   "evidence": "NHS symptoms: urgent GP appointment or NHS 111, not simply 'as soon as possible'; 'comes and goes' is NHS 111 Wales.",
+   "url": "https://www.nhs.uk/conditions/bladder-cancer/symptoms/",
+   "action": "edited",
+   "newSentence": "The NHS advises asking for an urgent GP appointment, or contacting NHS 111, for blood in the urine, even if it is a small amount or there are no other symptoms. NHS 111 Wales says blood in the urine should be checked even if it comes and goes. Many people with blood in their urine do not have bladder cancer, as infections, kidney stones and an enlarged prostate are other possible causes, but it still needs checking."
+  },
+  {
+   "id": "c33",
+   "classification": "unsupported",
+   "evidence": "Macmillan says many (not most); NHS 111 Wales lists causes.",
+   "url": "https://www.macmillan.org.uk/cancer-information-and-support/bladder-cancer/signs-and-symptoms-of-bladder-cancer",
+   "action": "edited",
+   "newSentence": "The NHS advises asking for an urgent GP appointment, or contacting NHS 111, for blood in the urine, even if it is a small amount or there are no other symptoms. NHS 111 Wales says blood in the urine should be checked even if it comes and goes. Many people with blood in their urine do not have bladder cancer, as infections, kidney stones and an enlarged prostate are other possible causes, but it still needs checking."
+  },
+  {
+   "id": "c34",
+   "classification": "unsupported",
+   "evidence": "Macmillan says blood is the most common sign and can be visible or found only on a urine test; no retrieved text says it is painless (it says pain is less common).",
+   "url": "https://www.macmillan.org.uk/cancer-information-and-support/bladder-cancer/signs-and-symptoms-of-bladder-cancer",
+   "action": "edited",
+   "newSentence": "(see rewritten article.sections[0])"
+  },
+  {
+   "id": "c35",
+   "classification": "supported",
+   "evidence": "As item 15.",
+   "url": "https://www.nhs.uk/conditions/bladder-cancer/symptoms/",
+   "action": "edited",
+   "newSentence": "(see rewritten article.sections[0])"
+  },
+  {
+   "id": "c36",
+   "classification": "supported",
+   "evidence": "Macmillan: may be found only on a urine test.",
+   "url": "https://www.macmillan.org.uk/cancer-information-and-support/bladder-cancer/signs-and-symptoms-of-bladder-cancer",
+   "action": "edited",
+   "newSentence": "(see rewritten article.sections[0])"
+  },
+  {
+   "id": "c37",
+   "classification": "unsupported",
+   "evidence": "Macmillan lists urinary symptoms and less common lower tummy/back pain; recurrent infections not stated.",
+   "url": "https://www.macmillan.org.uk/cancer-information-and-support/bladder-cancer/signs-and-symptoms-of-bladder-cancer",
+   "action": "edited",
+   "newSentence": "(see rewritten article.sections[0])"
+  },
+  {
+   "id": "c38",
+   "classification": "unsupported",
+   "evidence": "Not re-found as stated; replaced by Macmillan's statement that urinary symptoms are usually caused by infection, overactive bladder or enlarged prostate.",
+   "url": "https://www.macmillan.org.uk/cancer-information-and-support/bladder-cancer/signs-and-symptoms-of-bladder-cancer",
+   "action": "edited",
+   "newSentence": "(see rewritten article.sections[0])"
+  },
+  {
+   "id": "c39",
+   "classification": "supported",
+   "evidence": "NHS 111 Wales: check even if it comes and goes (not nhs.uk England page).",
+   "url": "https://111.wales.nhs.uk/encyclopaedia/c/article/cancerofthebladder",
+   "action": "edited",
+   "newSentence": "(see rewritten article.sections[0])"
+  },
+  {
+   "id": "c40",
+   "classification": "supported",
+   "evidence": "Macmillan / NHS 111 Wales list infection, stones, enlarged prostate; 'kidney infection' not separately confirmed.",
+   "url": "https://www.macmillan.org.uk/cancer-information-and-support/bladder-cancer/signs-and-symptoms-of-bladder-cancer",
+   "action": "edited",
+   "newSentence": "(see rewritten article.sections[0])"
+  },
+  {
+   "id": "c41",
+   "classification": "unsupported",
+   "evidence": "Macmillan says many, not most.",
+   "url": "https://www.macmillan.org.uk/cancer-information-and-support/bladder-cancer/signs-and-symptoms-of-bladder-cancer",
+   "action": "edited",
+   "newSentence": "(see rewritten article.sections[0])"
+  },
+  {
+   "id": "c42",
+   "classification": "supported",
+   "evidence": "As item 3.",
+   "url": "https://111.wales.nhs.uk/encyclopaedia/c/article/cancerofthebladder",
+   "action": "kept",
+   "newSentence": "(see rewritten article.sections[1])"
+  },
+  {
+   "id": "c43",
+   "classification": "unsupported",
+   "evidence": "Only NHS 111 Wales states 'more than a third' (not nhs.uk England page); Macmillan suggests about half and a Bristol NHS page also higher, so 'the NHS estimates' overstated agreement.",
+   "url": "https://111.wales.nhs.uk/encyclopaedia/c/article/cancerofthebladder",
+   "action": "edited",
+   "newSentence": "(see rewritten article.sections[1])"
+  },
+  {
+   "id": "c44",
+   "classification": "supported",
+   "evidence": "As item 6.",
+   "url": "https://www.hdft.nhs.uk/services/bladder-cancer/",
+   "action": "edited",
+   "newSentence": "(see rewritten article.sections[1])"
+  },
+  {
+   "id": "c45",
+   "classification": "unsupported",
+   "evidence": "Characterisation of what an NHS summary 'highlights' not verifiable.",
+   "url": "https://www.nhs.uk/conditions/bladder-cancer/",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c46",
+   "classification": "unsupported",
+   "evidence": "Filler lead-in to a list that was largely unsupported.",
+   "url": "https://www.nhs.uk/conditions/bladder-cancer/",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c47",
+   "classification": "unsupported",
+   "evidence": "Catheter, radiotherapy, overweight, relative and diabetes not found; being a man found.",
+   "url": "https://111.wales.nhs.uk/encyclopaedia/c/article/cancerofthebladder",
+   "action": "edited",
+   "newSentence": "(see rewritten article.sections[1])"
+  },
+  {
+   "id": "c48",
+   "classification": "unsupported",
+   "evidence": "As item 7: the link is to squamous cell type.",
+   "url": "https://www.hdft.nhs.uk/services/bladder-cancer/",
+   "action": "edited",
+   "newSentence": "(see rewritten article.sections[1])"
+  },
+  {
+   "id": "c49",
+   "classification": "textbook",
+   "evidence": "General statement about risk factors.",
+   "url": "https://www.nhs.uk/conditions/bladder-cancer/",
+   "action": "kept",
+   "newSentence": "(see rewritten article.sections[1])"
+  },
+  {
+   "id": "c50",
+   "classification": "supported",
+   "evidence": "CRUK GP page: urine sample sent for testing.",
+   "url": "https://www.cancerresearchuk.org/about-cancer/bladder-cancer/getting-diagnosed/gp",
+   "action": "edited",
+   "newSentence": "(see rewritten article.sections[2])"
+  },
+  {
+   "id": "c51",
+   "classification": "unsupported",
+   "evidence": "Blood tests may be arranged (CRUK); kidney function and blood counts not stated.",
+   "url": "https://www.cancerresearchuk.org/about-cancer/bladder-cancer/getting-diagnosed/gp",
+   "action": "edited",
+   "newSentence": "(see rewritten article.sections[2])"
+  },
+  {
+   "id": "c52",
+   "classification": "supported",
+   "evidence": "CRUK: referral to a urologist.",
+   "url": "https://www.cancerresearchuk.org/about-cancer/bladder-cancer/getting-diagnosed/gp",
+   "action": "edited",
+   "newSentence": "(see rewritten article.sections[2])"
+  },
+  {
+   "id": "c53",
+   "classification": "supported",
+   "evidence": "CRUK/Macmillan: cystoscopy with thin camera via urethra.",
+   "url": "https://www.cancerresearchuk.org/about-cancer/bladder-cancer/getting-diagnosed/tests-for-bladder-cancer",
+   "action": "edited",
+   "newSentence": "(see rewritten article.sections[2])"
+  },
+  {
+   "id": "c54",
+   "classification": "supported",
+   "evidence": "CRUK: biopsy may be taken.",
+   "url": "https://www.cancerresearchuk.org/about-cancer/bladder-cancer/getting-diagnosed/tests-for-bladder-cancer",
+   "action": "edited",
+   "newSentence": "(see rewritten article.sections[2])"
+  },
+  {
+   "id": "c55",
+   "classification": "supported",
+   "evidence": "CRUK: CT urogram, ultrasound, MRI.",
+   "url": "https://www.cancerresearchuk.org/about-cancer/bladder-cancer/getting-diagnosed/tests-for-bladder-cancer",
+   "action": "edited",
+   "newSentence": "(see rewritten article.sections[2])"
+  },
+  {
+   "id": "c56",
+   "classification": "supported",
+   "evidence": "TURBT removes abnormal tissue for testing.",
+   "url": "https://www.cancerresearchuk.org/about-cancer/bladder-cancer/getting-diagnosed/tests-for-bladder-cancer",
+   "action": "edited",
+   "newSentence": "(see rewritten article.sections[2])"
+  },
+  {
+   "id": "c57",
+   "classification": "unsupported",
+   "evidence": "NCI diagnosis page not retrieved; only NCI 'What Is Bladder Cancer?' page returned.",
+   "url": "https://www.cancer.gov/types/bladder",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c58",
+   "classification": "unsupported",
+   "evidence": "Retrieved NHS text: stage and type.",
+   "url": "https://www.nhs.uk/conditions/bladder-cancer/treatment/",
+   "action": "edited",
+   "newSentence": "(see rewritten article.sections[3])"
+  },
+  {
+   "id": "c59",
+   "classification": "supported",
+   "evidence": "NHS treatment page.",
+   "url": "https://www.nhs.uk/conditions/bladder-cancer/treatment/",
+   "action": "edited",
+   "newSentence": "(see rewritten article.sections[3])"
+  },
+  {
+   "id": "c60",
+   "classification": "supported",
+   "evidence": "NHS treatment page.",
+   "url": "https://www.nhs.uk/conditions/bladder-cancer/treatment/",
+   "action": "edited",
+   "newSentence": "(see rewritten article.sections[3])"
+  },
+  {
+   "id": "c61",
+   "classification": "unsupported",
+   "evidence": "Not found as stated; removed.",
+   "url": "https://www.nhs.uk/conditions/bladder-cancer/treatment/",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c62",
+   "classification": "unsupported",
+   "evidence": "Single-dose chemotherapy into bladder after surgery found (NHS); 'often followed' framing not found.",
+   "url": "https://www.nhs.uk/conditions/bladder-cancer/treatment/",
+   "action": "edited",
+   "newSentence": "(see rewritten article.sections[3])"
+  },
+  {
+   "id": "c63",
+   "classification": "supported",
+   "evidence": "PMC12282301 covers BCG and mitomycin C.",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12282301/",
+   "action": "edited",
+   "newSentence": "(see rewritten article.sections[3])"
+  },
+  {
+   "id": "c64",
+   "classification": "unsupported",
+   "evidence": "Reworded: cystectomy for higher-risk/muscle-invasive disease (NHS); not 'advanced cancer'.",
+   "url": "https://www.nhs.uk/conditions/bladder-cancer/treatment/",
+   "action": "edited",
+   "newSentence": "(see rewritten article.sections[3])"
+  },
+  {
+   "id": "c65",
+   "classification": "unsupported",
+   "evidence": "PMC10369196 not re-retrieved; NHS says removing the whole bladder is cystectomy.",
+   "url": "https://www.nhs.uk/conditions/bladder-cancer/treatment/",
+   "action": "edited",
+   "newSentence": "(see rewritten article.sections[3])"
+  },
+  {
+   "id": "c66",
+   "classification": "unsupported",
+   "evidence": "PMC10369196 not re-retrieved; other reviews say NMIBC recurs often with high rates in the first years.",
+   "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8571151/",
+   "action": "edited",
+   "newSentence": "(see rewritten article.sections[4])"
+  },
+  {
+   "id": "c67",
+   "classification": "unsupported",
+   "evidence": "Progression 'to muscle' not confirmed; only 'risk of progression'.",
+   "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8571151/",
+   "action": "edited",
+   "newSentence": "(see rewritten article.sections[4])"
+  },
+  {
+   "id": "c68",
+   "classification": "supported",
+   "evidence": "PMC8571151: recurrence requires long-term follow-up.",
+   "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8571151/",
+   "action": "edited",
+   "newSentence": "(see rewritten article.sections[4])"
+  },
+  {
+   "id": "c69",
+   "classification": "supported",
+   "evidence": "PMC12647504 on intravesical treatment side effects.",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12647504/",
+   "action": "edited",
+   "newSentence": "(see rewritten article.sections[4])"
+  },
+  {
+   "id": "c70",
+   "classification": "unsupported",
+   "evidence": "Review lists irritation, haematuria and fever; specific symptom list not confirmed.",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12647504/",
+   "action": "edited",
+   "newSentence": "(see rewritten article.sections[4])"
+  },
+  {
+   "id": "c71",
+   "classification": "supported",
+   "evidence": "PMC12647504: side effects the main reason for withdrawal; 'affect quality of life' general.",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12647504/",
+   "action": "edited",
+   "newSentence": "(see rewritten article.sections[4])"
+  },
+  {
+   "id": "c72",
+   "classification": "unsupported",
+   "evidence": "Long-lasting QoL effects of cystectomy not found; one summary says chemoradiation may give better QoL (observational).",
+   "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4779141/",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c73",
+   "classification": "supported",
+   "evidence": "Reworded: Macmillan 'many'.",
+   "url": "https://www.macmillan.org.uk/cancer-information-and-support/bladder-cancer/signs-and-symptoms-of-bladder-cancer",
+   "action": "edited",
+   "newSentence": "(see rewritten article.faqs[0].a)"
+  },
+  {
+   "id": "c74",
+   "classification": "supported",
+   "evidence": "Macmillan / NHS 111 Wales.",
+   "url": "https://www.macmillan.org.uk/cancer-information-and-support/bladder-cancer/signs-and-symptoms-of-bladder-cancer",
+   "action": "edited",
+   "newSentence": "(see rewritten article.faqs[0].a)"
+  },
+  {
+   "id": "c75",
+   "classification": "supported",
+   "evidence": "NHS 111 Wales: even if it comes and goes.",
+   "url": "https://111.wales.nhs.uk/encyclopaedia/c/article/cancerofthebladder",
+   "action": "edited",
+   "newSentence": "(see rewritten article.faqs[0].a)"
+  },
+  {
+   "id": "c76",
+   "classification": "supported",
+   "evidence": "CRUK/Macmillan.",
+   "url": "https://www.cancerresearchuk.org/about-cancer/bladder-cancer/getting-diagnosed/tests-for-bladder-cancer",
+   "action": "edited",
+   "newSentence": "(see rewritten article.faqs[1].a)"
+  },
+  {
+   "id": "c77",
+   "classification": "supported",
+   "evidence": "CRUK/Macmillan.",
+   "url": "https://www.cancerresearchuk.org/about-cancer/bladder-cancer/getting-diagnosed/tests-for-bladder-cancer",
+   "action": "edited",
+   "newSentence": "(see rewritten article.faqs[1].a)"
+  },
+  {
+   "id": "c78",
+   "classification": "unsupported",
+   "evidence": "Biopsy may be taken; 'usually' not stated.",
+   "url": "https://www.cancerresearchuk.org/about-cancer/bladder-cancer/getting-diagnosed/tests-for-bladder-cancer",
+   "action": "edited",
+   "newSentence": "(see rewritten article.faqs[1].a)"
+  },
+  {
+   "id": "c79",
+   "classification": "supported",
+   "evidence": "NHS 111 Wales / MedlinePlus.",
+   "url": "https://111.wales.nhs.uk/encyclopaedia/c/article/cancerofthebladder",
+   "action": "kept",
+   "newSentence": "(see rewritten article.faqs[2].a)"
+  },
+  {
+   "id": "c80",
+   "classification": "unsupported",
+   "evidence": "Only NHS 111 Wales states 'more than a third' (not nhs.uk England page); Macmillan suggests about half and a Bristol NHS page also higher, so 'the NHS estimates' overstated agreement.",
+   "url": "https://111.wales.nhs.uk/encyclopaedia/c/article/cancerofthebladder",
+   "action": "edited",
+   "newSentence": "(see rewritten article.faqs[2].a)"
+  },
+  {
+   "id": "c81",
+   "classification": "unsupported",
+   "evidence": "Chewing tobacco link not found in retrieved text.",
+   "url": "https://111.wales.nhs.uk/encyclopaedia/c/article/cancerofthebladder",
+   "action": "edited",
+   "newSentence": "(see rewritten article.faqs[2].a)"
+  },
+  {
+   "id": "c82",
+   "classification": "unsupported",
+   "evidence": "Stage and type.",
+   "url": "https://www.nhs.uk/conditions/bladder-cancer/treatment/",
+   "action": "edited",
+   "newSentence": "(see rewritten article.faqs[3].a)"
+  },
+  {
+   "id": "c83",
+   "classification": "supported",
+   "evidence": "NHS treatment page.",
+   "url": "https://www.nhs.uk/conditions/bladder-cancer/treatment/",
+   "action": "edited",
+   "newSentence": "(see rewritten article.faqs[3].a)"
+  },
+  {
+   "id": "c84",
+   "classification": "supported",
+   "evidence": "NHS treatment page.",
+   "url": "https://www.nhs.uk/conditions/bladder-cancer/treatment/",
+   "action": "edited",
+   "newSentence": "(see rewritten article.faqs[3].a)"
+  },
+  {
+   "id": "c85",
+   "classification": "unsupported",
+   "evidence": "PMC10369196 not re-retrieved; other reviews say NMIBC recurs often with high rates in the first years.",
+   "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8571151/",
+   "action": "edited",
+   "newSentence": "(see rewritten article.faqs[4].a)"
+  },
+  {
+   "id": "c86",
+   "classification": "unsupported",
+   "evidence": "Progression 'to muscle' not confirmed; only 'risk of progression'.",
+   "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8571151/",
+   "action": "edited",
+   "newSentence": "(see rewritten article.faqs[4].a)"
+  },
+  {
+   "id": "c87",
+   "classification": "supported",
+   "evidence": "Reworded to long-term follow-up (PMC8571151).",
+   "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8571151/",
+   "action": "edited",
+   "newSentence": "(see rewritten article.faqs[4].a)"
+  },
+  {
+   "id": "c88",
+   "classification": "supported",
+   "evidence": "NHS 111 Wales page title 'Cancer of the bladder'.",
+   "url": "https://111.wales.nhs.uk/encyclopaedia/c/article/cancerofthebladder",
+   "action": "kept",
+   "newSentence": "Cancer of the bladder"
+  },
+  {
+   "id": "c89",
+   "classification": "unsupported",
+   "evidence": "Macmillan says blood is the most common sign and can be visible or found only on a urine test; no retrieved text says it is painless (it says pain is less common).",
+   "url": "https://www.macmillan.org.uk/cancer-information-and-support/bladder-cancer/signs-and-symptoms-of-bladder-cancer",
+   "action": "edited",
+   "newSentence": "Blood in the urine, which may be visible or found only on a urine test"
+  },
+  {
+   "id": "c90",
+   "classification": "supported",
+   "evidence": "Smoking biggest risk factor.",
+   "url": "https://111.wales.nhs.uk/encyclopaedia/c/article/cancerofthebladder",
+   "action": "kept",
+   "newSentence": "Smoking"
+  },
+  {
+   "id": "c91",
+   "classification": "supported",
+   "evidence": "Cystoscopy main test.",
+   "url": "https://www.cancerresearchuk.org/about-cancer/bladder-cancer/getting-diagnosed/tests-for-bladder-cancer",
+   "action": "kept",
+   "newSentence": "Cystoscopy, a camera test of the inside of the bladder"
+  },
+  {
+   "id": "c92",
+   "classification": "supported",
+   "evidence": "NHS treatment page.",
+   "url": "https://www.nhs.uk/conditions/bladder-cancer/treatment/",
+   "action": "kept",
+   "newSentence": "Surgery, chemotherapy, radiotherapy, immunotherapy and targeted medicines"
+  },
+  {
+   "id": "c93",
+   "classification": "unsupported",
+   "evidence": "NHS symptoms page: urgent GP appointment or NHS 111.",
+   "url": "https://www.nhs.uk/conditions/bladder-cancer/symptoms/",
+   "action": "edited",
+   "newSentence": "Ask for an urgent GP appointment, or contact NHS 111, for blood in the urine"
+  }
+ ],
+ "notes": "Second pass used 11 WebSearch calls, all domain-restricted with differently worded queries. Tool summaries blend pages; attributions marked 'via search summary' are not page-certain. The old NHS URL /diagnosis/ was not returned; the real page is /tests-and-next-steps/ (title only seen) and was kept only as a supporting reference in the ledger. Cut: NHS 'more than a third' now attributed to NHS 111 Wales with Macmillan 'about half'; 'painless', chewing tobacco, catheter, radiotherapy, overweight, diabetes, relative, kidney-function/blood-count tests, NCI diagnosis sentence, cystectomy quality-of-life claim, PMC10369196/PMC10800852 claims (not re-retrieved; replaced with retrieved reviews PMC8571151, PMC12327299, PMC12647504, PMC12282301, PMC5433354, PMC4779141). Route to care reworded to NHS wording: urgent GP appointment or NHS 111 (no 999 claim retrieved). tests list trimmed to urinalysis and biopsy. Recurrence and BCG statements rest on PMC reviews seen only as search summaries; Macmillan 'about half' came from an unnamed Macmillan page in a summary. Human reviewer should glance at the urologist-referral and 'stage, grade and type' removal choices."
+}

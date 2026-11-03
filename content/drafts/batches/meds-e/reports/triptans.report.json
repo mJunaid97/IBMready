@@ -1,0 +1,60 @@
+{
+ "id": "triptans",
+ "searchesUsed": 0,
+ "counts": {
+  "supported": 4,
+  "unsupported": 1,
+  "textbook": 0,
+  "wrong": 0,
+  "unsafe": 0,
+  "unchecked": 0
+ },
+ "claims": [
+  {
+   "id": "c01",
+   "where": "summary[0]",
+   "classification": "supported",
+   "evidence": "Migraine Trust lists sumatriptan among seven triptans; NHS page for sumatriptan. 'Covered on this site' is internal.",
+   "url": "https://migrainetrust.org/live-with-migraine/healthcare/treatments/triptans/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c02",
+   "where": "summary[1]",
+   "classification": "supported",
+   "evidence": "NHS: does not prevent migraines or cluster headaches; treats an attack.",
+   "url": "https://www.nhs.uk/medicines/sumatriptan/about-sumatriptan/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c03",
+   "where": "mechanism",
+   "classification": "unsupported",
+   "evidence": "As medication item 6.",
+   "url": "https://www.nhs.uk/medicines/sumatriptan/common-questions-about-sumatriptan/",
+   "action": "edited",
+   "newSentence": "The NHS says migraines may be linked to temporarily widened blood vessels in the brain, and that sumatriptan narrows these blood vessels."
+  },
+  {
+   "id": "c04",
+   "where": "cautions[0]",
+   "classification": "supported",
+   "evidence": "Who-can page.",
+   "url": "https://www.nhs.uk/medicines/sumatriptan/who-can-and-cannot-take-or-use-sumatriptan/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c05",
+   "where": "cautions[1]",
+   "classification": "supported",
+   "evidence": "NHS other-medicines page and UK leaflets: antidepressants and St John's wort raise serotonin syndrome risk (wording 'can cause' slightly strong; 'raise risk of').",
+   "url": "https://www.nhs.uk/medicines/sumatriptan/taking-sumatriptan-with-other-medicines-and-herbal-supplements/",
+   "action": "edited",
+   "newSentence": "Combining sumatriptan with some antidepressants or St John's wort can raise the risk of serotonin syndrome, according to the NHS and UK leaflets."
+  }
+ ],
+ "notes": "Class page: checked in the same second-pass run as sumatriptan (searches counted there)."
+}

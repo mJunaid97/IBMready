@@ -1,0 +1,584 @@
+{
+ "id": "type-2-diabetes",
+ "searchesUsed": 16,
+ "counts": {
+  "supported": 32,
+  "textbook": 0,
+  "unsupported": 31,
+  "wrong": 0,
+  "unsafe": 2,
+  "unchecked": 0
+ },
+ "claims": [
+  {
+   "id": "c01",
+   "classification": "supported",
+   "evidence": "NHS inform: signs often appear slowly over a few years; sources agree many have no symptoms",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/diabetes/type-2-diabetes/",
+   "action": "kept"
+  },
+  {
+   "id": "c02",
+   "classification": "supported",
+   "evidence": "NHS symptoms page: most common signs tiredness, urinating more, constant thirst, unintentional weight loss",
+   "url": "https://www.nhs.uk/conditions/type-2-diabetes/symptoms/",
+   "action": "edited",
+   "newSentence": "The NHS lists tiredness, needing to pee more, constant thirst and unintended weight loss as the most common symptoms."
+  },
+  {
+   "id": "c03",
+   "classification": "supported",
+   "evidence": "NHS: less common blurred vision, recurring thrush, slow-healing cuts, genital itching",
+   "url": "https://www.nhs.uk/conditions/type-2-diabetes/symptoms/",
+   "action": "edited",
+   "newSentence": "Other possible signs are blurred vision, slow-healing cuts, and genital itching or repeated thrush."
+  },
+  {
+   "id": "c04",
+   "classification": "unsupported",
+   "evidence": "Nothing retrieved says people are found during tests for something else",
+   "url": "https://www.nhs.uk/conditions/type-2-diabetes/symptoms/",
+   "action": "removed"
+  },
+  {
+   "id": "c05",
+   "classification": "unsupported",
+   "evidence": "No NHS description of prediabetes retrieved (only NHS Scotland threshold guidance)",
+   "url": "https://www.rightdecisions.scot.nhs.uk/borders-ref-help-toolkit/diabetes/diabetes-diagnosis/",
+   "action": "removed"
+  },
+  {
+   "id": "c06",
+   "classification": "unsupported",
+   "evidence": "Retrieved MedlinePlus text: body may still make insulin but cells respond poorly; no \"extra insulin\" wording",
+   "url": "https://medlineplus.gov/ency/article/000313.htm",
+   "action": "edited",
+   "newSentence": "The NHS explains that in type 2 diabetes the body either does not make enough insulin or the insulin it makes does not work correctly."
+  },
+  {
+   "id": "c07",
+   "classification": "unsupported",
+   "evidence": "\"cannot make enough over time\" came only from a patent document; NHS text: either not enough insulin or it does not work correctly",
+   "url": "https://111.wales.nhs.uk/Diabetes,type2/",
+   "action": "edited",
+   "newSentence": "The NHS explains that in type 2 diabetes the body either does not make enough insulin or the insulin it makes does not work correctly."
+  },
+  {
+   "id": "c08",
+   "classification": "supported",
+   "evidence": "MyHealth Devon (NHS): GP can diagnose with a urine test and a blood test",
+   "url": "https://myhealth-devon.nhs.uk/my-condition/condition/diabetes-type-2-1/",
+   "action": "kept"
+  },
+  {
+   "id": "c09",
+   "classification": "supported",
+   "evidence": "NHS Scotland Right Decisions: HbA1c preferred test, no fasting, reflects average glucose over previous months",
+   "url": "https://www.rightdecisions.scot.nhs.uk/borders-ref-help-toolkit/diabetes/diabetes-diagnosis/",
+   "action": "edited",
+   "newSentence": "NHS Scotland guidance describes HbA1c as the preferred diagnostic test, because it does not require fasting and reflects average blood glucose over the previous few months."
+  },
+  {
+   "id": "c10",
+   "classification": "unsupported",
+   "evidence": "\"thorough\" is a gloss; NICE public guide describes a yearly check-up (annual review)",
+   "url": "https://www.nice.org.uk/guidance/ng28/ifp/chapter/what-your-diabetes-care-team-will-do",
+   "action": "edited",
+   "newSentence": "After diagnosis, NICE describes a yearly check-up called the annual review."
+  },
+  {
+   "id": "c11",
+   "classification": "unsupported",
+   "evidence": "\"whether treatment is working\" and \"eye checks\" not in the NICE text; NICE lists BP, glucose, cardiovascular risk, foot checks, kidney and nerve problems",
+   "url": "https://www.nice.org.uk/guidance/ng28/ifp/chapter/what-your-diabetes-care-team-will-do",
+   "action": "edited",
+   "newSentence": "NICE says it includes checking blood pressure, blood glucose and cardiovascular risk, with regular foot checks, and covers other long-term complications such as kidney and nerve problems."
+  },
+  {
+   "id": "c12",
+   "classification": "supported",
+   "evidence": "Diabetes UK/NHS annual-check material: blood tests incl. kidney function, urine test for kidney protein (ACR), retinal screen",
+   "url": "https://www.diabetes.org.uk/about-diabetes/looking-after-diabetes/care-to-expect",
+   "action": "edited",
+   "newSentence": "Diabetes UK and NHS material on annual checks also list a urine test for kidney protein and a retinal eye screen."
+  },
+  {
+   "id": "c13",
+   "classification": "unsupported",
+   "evidence": "Nothing retrieved about treatment to stop kidney disease worsening (only nerve damage)",
+   "url": "https://www.nhs.uk/conditions/type-2-diabetes/complications/",
+   "action": "removed"
+  },
+  {
+   "id": "c14",
+   "classification": "unsupported",
+   "evidence": "Diabetes UK check: told results and level of risk of foot problems; \"ulcers and loss of feeling\" wording not retrieved",
+   "url": "https://www.diabetes.org.uk/about-diabetes/looking-after-diabetes/care-to-expect",
+   "action": "removed"
+  },
+  {
+   "id": "c15",
+   "classification": "unsupported",
+   "evidence": "Source advice that self-checks are not enough came from an unattributed page",
+   "url": "https://www.diabetes.org.uk/about-diabetes/looking-after-diabetes/care-to-expect",
+   "action": "removed"
+  },
+  {
+   "id": "c16",
+   "classification": "unsupported",
+   "evidence": "Retinal photograph, not an optician test, retrieved; \"often arranged separately\" and \"looking for retinopathy\" not carried",
+   "url": "https://www.diabetes.org.uk/about-diabetes/looking-after-diabetes/care-to-expect",
+   "action": "edited",
+   "newSentence": "Eye screening is a photograph of the back of the eye, and it is not the same as a routine optician sight test."
+  },
+  {
+   "id": "c17",
+   "classification": "unsupported",
+   "evidence": "NHS treatment page: lifestyle plus medicines; ordering \"first, then\" not clearly carried",
+   "url": "https://www.nhs.uk/conditions/type-2-diabetes/treatment/",
+   "action": "edited",
+   "newSentence": "The NHS says treatment usually combines lifestyle changes with medicines."
+  },
+  {
+   "id": "c18",
+   "classification": "unsupported",
+   "evidence": "NHS page centres on diet, activity, weight, smoking; alcohol not retrieved",
+   "url": "https://www.nhs.uk/conditions/type-2-diabetes/treatment/",
+   "action": "edited",
+   "newSentence": "Its treatment page centres on diet, physical activity, weight and smoking, and suggests eating more wholegrains, pulses, fruit and vegetables."
+  },
+  {
+   "id": "c19",
+   "classification": "unsupported",
+   "evidence": "Who-prescribes/first-line claim: NHS page frames usual start as metformin plus SGLT2 inhibitor; metformin-first is from local NHS formularies/NICE",
+   "url": "https://www.nhs.uk/conditions/type-2-diabetes/treatment/",
+   "action": "edited",
+   "newSentence": "For people without other serious conditions, the NHS describes the usual starting point as metformin together with an SGLT2 inhibitor, which lowers blood sugar by letting extra sugar leave the body in urine."
+  },
+  {
+   "id": "c20",
+   "classification": "supported",
+   "evidence": "NHS treatment page: metformin plus SGLT2 inhibitor for people without other serious conditions; SGLT2 lets extra sugar leave in urine",
+   "url": "https://www.nhs.uk/conditions/type-2-diabetes/treatment/",
+   "action": "edited",
+   "newSentence": "For people without other serious conditions, the NHS describes the usual starting point as metformin together with an SGLT2 inhibitor, which lowers blood sugar by letting extra sugar leave the body in urine."
+  },
+  {
+   "id": "c21",
+   "classification": "supported",
+   "evidence": "NHS treatment page: GLP-1 agonist by injection for history of heart disease or obesity when other treatments not enough; schedule removed",
+   "url": "https://www.nhs.uk/conditions/type-2-diabetes/treatment/",
+   "action": "edited",
+   "newSentence": "A GLP-1 agonist, given by injection, may be offered to people with a history of heart disease or with obesity when other treatments have not lowered blood sugar enough."
+  },
+  {
+   "id": "c22",
+   "classification": "supported",
+   "evidence": "Local NHS formularies/Leeds Community Healthcare medication page name gliclazide, sitagliptin, pioglitazone",
+   "url": "https://leedscommunityhealthcare.nhs.uk/our-services-a-z/diabetes/type-2-diabetes-draft/treating-your-diabetes/medication-for-type-2-diabetes/",
+   "action": "edited",
+   "newSentence": "Local NHS guidance also describes gliclazide, sitagliptin and pioglitazone as further options."
+  },
+  {
+   "id": "c23",
+   "classification": "supported",
+   "evidence": "NHS: insulin prescribed if other diabetes medicines no longer keep glucose in healthy range",
+   "url": "https://www.nhs.uk/medicines/insulin/insulin-for-type-2-diabetes/",
+   "action": "kept"
+  },
+  {
+   "id": "c24",
+   "classification": "unsupported",
+   "evidence": "Retrieved Diabetes UK text is about remission mainly through weight loss, not \"healthy eating, being more active\"",
+   "url": "https://www.diabetes.org.uk/about-diabetes/type-2-diabetes/remission",
+   "action": "edited",
+   "newSentence": "Diabetes UK says type 2 diabetes can sometimes go into remission, mainly through weight loss."
+  },
+  {
+   "id": "c25",
+   "classification": "supported",
+   "evidence": "NHS treatment page and NHS England: 12-week low-calorie total diet replacement (soups, shakes) for eligible people with T2D and overweight/obesity",
+   "url": "https://www.england.nhs.uk/diabetes/treatment-care/diabetes-remission/",
+   "action": "kept"
+  },
+  {
+   "id": "c26",
+   "classification": "unsupported",
+   "evidence": "\"Almost half\" after one year not in retrieved text (retrieved: quarter lost 15kg+, 86% of those in remission)",
+   "url": "https://www.england.nhs.uk/diabetes/treatment-care/diabetes-remission/",
+   "action": "removed"
+  },
+  {
+   "id": "c27",
+   "classification": "supported",
+   "evidence": "NHS treatment page advises against very strict low-calorie diets without medical advice, esp. with insulin or other diabetes medicines",
+   "url": "https://www.nhs.uk/conditions/type-2-diabetes/treatment/",
+   "action": "kept"
+  },
+  {
+   "id": "c28",
+   "classification": "supported",
+   "evidence": "NHS complications page lists damage to blood vessels, nerves, eyes, kidneys, feet, gums",
+   "url": "https://www.nhs.uk/conditions/type-2-diabetes/complications/",
+   "action": "kept"
+  },
+  {
+   "id": "c29",
+   "classification": "supported",
+   "evidence": "NHS: coronary heart disease and stroke, foot problems, untreated ulcers/infections can lead to amputation, retinopathy, kidney problems, gum disease",
+   "url": "https://www.nhs.uk/conditions/type-2-diabetes/complications/",
+   "action": "edited",
+   "newSentence": "The NHS lists coronary heart disease and stroke, foot problems where untreated ulcers or infections can lead to amputation, sight problems such as diabetic retinopathy, kidney problems and gum disease."
+  },
+  {
+   "id": "c30",
+   "classification": "supported",
+   "evidence": "NHS: diabetes can reduce blood supply to feet and cause loss of feeling, so foot injuries do not heal well",
+   "url": "https://www.nhs.uk/conditions/type-2-diabetes/complications/",
+   "action": "removed"
+  },
+  {
+   "id": "c31",
+   "classification": "supported",
+   "evidence": "NHS: controlling blood sugar and regular check-ups best way to lower risk of complications",
+   "url": "https://www.nhs.uk/conditions/type-2-diabetes/complications/",
+   "action": "kept"
+  },
+  {
+   "id": "c32",
+   "classification": "unsupported",
+   "evidence": "\"ketones build up\" and \"very high glucose leads to\" glosses not retrieved; NHS: DKA and HHS rare in type 2",
+   "url": "https://www.nhs.uk/conditions/type-2-diabetes/health-problems/",
+   "action": "edited",
+   "newSentence": "Diabetic ketoacidosis (DKA) and HHS are rare in type 2 diabetes but can be life threatening."
+  },
+  {
+   "id": "c33",
+   "classification": "supported",
+   "evidence": "NHS: DKA and HHS can be life threatening",
+   "url": "https://www.nhs.uk/conditions/type-2-diabetes/health-problems/",
+   "action": "kept"
+  },
+  {
+   "id": "c34",
+   "classification": "unsupported",
+   "evidence": "NHS 999/A&E list: peeing a lot, very thirsty, feel sick, confused or very sleepy, drowsy, short of breath; \"vomiting\" and \"with high blood glucose\" not retrieved",
+   "url": "https://www.nhs.uk/conditions/type-2-diabetes/health-problems/",
+   "action": "edited",
+   "newSentence": "The NHS advises calling 999 or going to A&E if someone with type 2 diabetes is peeing a lot, feels very thirsty, feels sick, is confused or very sleepy, or is short of breath."
+  },
+  {
+   "id": "c35",
+   "classification": "unsupported",
+   "evidence": "Constipation, diarrhoea and \"diabetes nurse\" route not retrieved",
+   "url": "https://www.nhs.uk/conditions/type-2-diabetes/complications/",
+   "action": "removed"
+  },
+  {
+   "id": "c36",
+   "classification": "unsafe",
+   "evidence": "Gives non-urgent GP route for worsening vision and cracked/blistered feet; NHS inform says new skin damage needs urgent podiatrist/GP contact or NHS 111",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/diabetes/diabetic-foot-issues/",
+   "action": "removed"
+  },
+  {
+   "id": "c37",
+   "classification": "supported",
+   "evidence": "NHS inform: urgent contact with podiatrist or GP practice for hot, red, swollen foot, new skin damage, new pain; NHS 111 if closed",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/diabetes/diabetic-foot-issues/",
+   "action": "edited",
+   "newSentence": "NHS inform advises contacting a podiatrist or GP practice urgently for a hot, red, swollen foot or new skin damage, and phoning NHS 111 if the practice is closed."
+  },
+  {
+   "id": "c38",
+   "classification": "supported",
+   "evidence": "NHS: healthy diet with fruit, vegetables, wholegrain such as wholemeal bread and oats, pulses such as chickpeas and lentils",
+   "url": "https://www.nhs.uk/conditions/type-2-diabetes/treatment/",
+   "action": "edited",
+   "newSentence": "The NHS suggests a healthy diet that includes fruit, vegetables, wholegrain foods such as wholemeal bread and oats, and pulses such as chickpeas and lentils."
+  },
+  {
+   "id": "c39",
+   "classification": "supported",
+   "evidence": "NHS: stop smoking, diabetes increases the harmful effects of smoking",
+   "url": "https://www.nhs.uk/conditions/type-2-diabetes/treatment/",
+   "action": "kept"
+  },
+  {
+   "id": "c40",
+   "classification": "unsupported",
+   "evidence": "\"within a year of diagnosis\" not retrieved; NICE: structured education at diagnosis with yearly reinforcement; Diabetes UK: should be offered a free course",
+   "url": "https://www.nice.org.uk/guidance/ng28/ifp/chapter/what-your-diabetes-care-team-will-do",
+   "action": "edited",
+   "newSentence": "NICE recommends structured education for adults with type 2 diabetes at the time of diagnosis, with yearly reinforcement and review."
+  },
+  {
+   "id": "c41",
+   "classification": "unsupported",
+   "evidence": "Daily foot check retrieved from NHS Lanarkshire; \"yearly foot check by clinician\" and attribution to the NHS not carried",
+   "url": "https://www.nhslanarkshire.scot.nhs.uk/services/podiatry/diabetes/",
+   "action": "edited",
+   "newSentence": "NHS Lanarkshire advises checking the feet every day for cuts, skin breaks or hard skin."
+  },
+  {
+   "id": "c42",
+   "classification": "supported",
+   "evidence": "NHS 111 Wales: if you take insulin for type 2 diabetes you must tell the DVLA because of hypo risk",
+   "url": "https://111.wales.nhs.uk/Diabetes,type2/",
+   "action": "kept"
+  },
+  {
+   "id": "c43",
+   "classification": "unsupported",
+   "evidence": "NHS England DVLA wording not retrieved; Diabetes UK: DVLA rules depend on treatment and any complications must be reported",
+   "url": "https://www.diabetes.org.uk/living-with-diabetes/life-with-diabetes/driving/driving-licence",
+   "action": "removed"
+  },
+  {
+   "id": "c44",
+   "classification": "supported",
+   "evidence": "Diabetes UK / NHS England remission pages describe remission for some people",
+   "url": "https://www.diabetes.org.uk/about-diabetes/type-2-diabetes/remission",
+   "action": "edited",
+   "newSentence": "Diabetes UK says type 2 diabetes can sometimes go into remission, mainly through weight loss, though it is not guaranteed to last."
+  },
+  {
+   "id": "c45",
+   "classification": "supported",
+   "evidence": "NHS England programme page: low-calorie TDR (soups, shakes) for eligible people with T2D and overweight/obesity",
+   "url": "https://www.england.nhs.uk/diabetes/treatment-care/diabetes-remission/",
+   "action": "kept"
+  },
+  {
+   "id": "c46",
+   "classification": "unsupported",
+   "evidence": "\"Almost half\" not retrieved",
+   "url": "https://www.england.nhs.uk/diabetes/treatment-care/diabetes-remission/",
+   "action": "removed"
+  },
+  {
+   "id": "c47",
+   "classification": "supported",
+   "evidence": "NHS (and NHS 111 Wales): in type 2 the body does not make enough insulin or the insulin does not work correctly",
+   "url": "https://111.wales.nhs.uk/Diabetes,type2/",
+   "action": "kept"
+  },
+  {
+   "id": "c48",
+   "classification": "unsupported",
+   "evidence": "MedlinePlus: immune system attacks beta cells so little or no insulin; \"does not produce any\" overstated",
+   "url": "https://medlineplus.gov/ency/article/000305.htm",
+   "action": "edited",
+   "newSentence": "MedlinePlus describes type 1 as an autoimmune condition in which the immune system attacks the insulin-producing cells, so little or no insulin is made."
+  },
+  {
+   "id": "c49",
+   "classification": "unsupported",
+   "evidence": "\"One source\" unattributed; MedlinePlus says type 2 linked to lifestyle and genes",
+   "url": "https://medlineplus.gov/ency/article/000313.htm",
+   "action": "removed"
+  },
+  {
+   "id": "c50",
+   "classification": "unsupported",
+   "evidence": "Metformin-first is from local formularies/NICE; NHS page says metformin with SGLT2 inhibitor for people without other serious conditions",
+   "url": "https://www.nhs.uk/conditions/type-2-diabetes/treatment/",
+   "action": "edited",
+   "newSentence": "The NHS says treatment usually combines lifestyle changes with medicines, and that insulin is prescribed if other diabetes medicines no longer keep blood glucose within a healthy range."
+  },
+  {
+   "id": "c51",
+   "classification": "supported",
+   "evidence": "NHS: insulin prescribed if other medicines no longer keep glucose in healthy range",
+   "url": "https://www.nhs.uk/medicines/insulin/insulin-for-type-2-diabetes/",
+   "action": "kept"
+  },
+  {
+   "id": "c52",
+   "classification": "unsupported",
+   "evidence": "Diabetes UK text is about remission by weight loss; the \"manage through eating/activity\" wording not carried; replaced with NHS 111 Wales insulin-timing statement",
+   "url": "https://111.wales.nhs.uk/Diabetes,type2/",
+   "action": "edited",
+   "newSentence": "NHS 111 Wales notes that insulin is not often used in the early years."
+  },
+  {
+   "id": "c53",
+   "classification": "supported",
+   "evidence": "NHS: many people have no symptoms; NHS inform: signs build slowly over a few years",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/diabetes/type-2-diabetes/",
+   "action": "edited",
+   "newSentence": "Yes. The NHS says symptoms may come on gradually and not everyone gets them, and NHS inform notes that signs often appear slowly over a few years, so some people do not realise they have it."
+  },
+  {
+   "id": "c54",
+   "classification": "unsupported",
+   "evidence": "Not retrieved",
+   "url": "https://www.nhs.uk/conditions/type-2-diabetes/symptoms/",
+   "action": "removed"
+  },
+  {
+   "id": "c55",
+   "classification": "supported",
+   "evidence": "MyHealth Devon: GP can diagnose with blood and urine tests",
+   "url": "https://myhealth-devon.nhs.uk/my-condition/condition/diabetes-type-2-1/",
+   "action": "removed"
+  },
+  {
+   "id": "c56",
+   "classification": "unsupported",
+   "evidence": "\"vomiting\" and \"with high blood glucose\" not retrieved; NHS list as in c34",
+   "url": "https://www.nhs.uk/conditions/type-2-diabetes/health-problems/",
+   "action": "edited",
+   "newSentence": "The NHS advises calling 999 or going to A&E if someone with type 2 diabetes is peeing a lot, feels very thirsty, feels sick, is confused or very sleepy, or is short of breath, as these can signal DKA or HHS."
+  },
+  {
+   "id": "c57",
+   "classification": "supported",
+   "evidence": "NHS: DKA and HHS can be life threatening (rare in type 2)",
+   "url": "https://www.nhs.uk/conditions/type-2-diabetes/health-problems/",
+   "action": "edited",
+   "newSentence": "The NHS says both are rare in type 2 diabetes but can be life threatening."
+  },
+  {
+   "id": "c58",
+   "classification": "unsafe",
+   "evidence": "Downgrades worsening vision/cracked skin to non-urgent GP/diabetes nurse advice; sources do not say this",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/diabetes/diabetic-foot-issues/",
+   "action": "removed"
+  },
+  {
+   "id": "c59",
+   "classification": "unsupported",
+   "evidence": "NHS page: metformin with SGLT2 inhibitor is the usual start; \"NHS says metformin usually first\" overstated",
+   "url": "https://www.nhs.uk/conditions/type-2-diabetes/treatment/",
+   "action": "edited",
+   "newSentence": "The NHS describes metformin with an SGLT2 inhibitor as the usual starting point for people without other serious conditions."
+  },
+  {
+   "id": "c60",
+   "classification": "supported",
+   "evidence": "NHS symptoms page",
+   "url": "https://www.nhs.uk/conditions/type-2-diabetes/symptoms/",
+   "action": "edited",
+   "newSentence": "Tiredness, needing to pee more, constant thirst and unintended weight loss; many people have none at first."
+  },
+  {
+   "id": "c61",
+   "classification": "supported",
+   "evidence": "MyHealth Devon: blood and urine tests",
+   "url": "https://myhealth-devon.nhs.uk/my-condition/condition/diabetes-type-2-1/",
+   "action": "kept"
+  },
+  {
+   "id": "c62",
+   "classification": "unsupported",
+   "evidence": "Eye checks and kidney/foot split not carried; NICE list is BP, glucose, cardiovascular risk, foot checks",
+   "url": "https://www.nice.org.uk/guidance/ng28/ifp/chapter/what-your-diabetes-care-team-will-do",
+   "action": "edited",
+   "newSentence": "NICE describes an annual review covering blood pressure, blood glucose, cardiovascular risk and foot checks."
+  },
+  {
+   "id": "c63",
+   "classification": "supported",
+   "evidence": "NHS complications page",
+   "url": "https://www.nhs.uk/conditions/type-2-diabetes/complications/",
+   "action": "kept"
+  },
+  {
+   "id": "c64",
+   "classification": "supported",
+   "evidence": "Diabetes UK and NHS England remission pages",
+   "url": "https://www.england.nhs.uk/diabetes/treatment-care/diabetes-remission/",
+   "action": "kept"
+  },
+  {
+   "id": "c65",
+   "classification": "unsupported",
+   "evidence": "\"Confusion, drowsiness, breathlessness or vomiting with high blood glucose\" not as retrieved; list is peeing a lot, thirst, feel sick, confused/sleepy, short of breath",
+   "url": "https://www.nhs.uk/conditions/type-2-diabetes/health-problems/",
+   "action": "edited",
+   "newSentence": "Call 999 or go to A&E if peeing a lot, very thirsty, feeling sick, confused, very sleepy or short of breath."
+  },
+  {
+   "id": "c66",
+   "classification": "supported",
+   "evidence": "NHS inform: lists tingling or numbness, which can point to nerve damage",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/diabetes/type-2-diabetes/",
+   "action": "added",
+   "newSentence": "NHS inform also lists tingling or numbness, which can point to nerve damage."
+  },
+  {
+   "id": "c67",
+   "classification": "supported",
+   "evidence": "NHS 111 Wales: often associated with being overweight or inactive, or family history",
+   "url": "https://111.wales.nhs.uk/Diabetes,type2/",
+   "action": "added",
+   "newSentence": "NHS 111 Wales describes type 2 diabetes as often associated with being overweight or inactive, or with a family history of the condition."
+  },
+  {
+   "id": "c68",
+   "classification": "supported",
+   "evidence": "NHS 111 Wales: speak to your GP if you have any symptoms or worry about risk",
+   "url": "https://111.wales.nhs.uk/Diabetes,type2/",
+   "action": "added",
+   "newSentence": "NHS 111 Wales advises speaking to a GP about any of these symptoms or about worries over personal risk."
+  },
+  {
+   "id": "c69",
+   "classification": "supported",
+   "evidence": "NICE public guide: annual review checks BP, glucose, cardiovascular risk, regular foot checks, kidney and nerve problems",
+   "url": "https://www.nice.org.uk/guidance/ng28/ifp/chapter/what-your-diabetes-care-team-will-do",
+   "action": "added",
+   "newSentence": "NICE says it includes checking blood pressure, blood glucose and cardiovascular risk, with regular foot checks, and covers other long-term complications such as kidney and nerve problems."
+  },
+  {
+   "id": "c70",
+   "classification": "supported",
+   "evidence": "NHS treatment page: if metformin causes side effects, SGLT2 inhibitor alone may be recommended",
+   "url": "https://www.nhs.uk/conditions/type-2-diabetes/treatment/",
+   "action": "added",
+   "newSentence": "If metformin causes side effects, an SGLT2 inhibitor alone may be recommended."
+  },
+  {
+   "id": "c71",
+   "classification": "supported",
+   "evidence": "NHS treatment page: children with type 2 diabetes will be under specialist care",
+   "url": "https://www.nhs.uk/conditions/type-2-diabetes/treatment/",
+   "action": "added",
+   "newSentence": "Children with type 2 diabetes are under specialist care."
+  },
+  {
+   "id": "c72",
+   "classification": "supported",
+   "evidence": "Diabetes UK: avoids \"cure\"; no evidence state could remain permanent; many who regained weight came out of remission",
+   "url": "https://www.diabetes.org.uk/about-diabetes/type-2-diabetes/remission",
+   "action": "added",
+   "newSentence": "Diabetes UK avoids the word cure because there is no evidence that remission could remain permanent, and many people who regain weight come out of remission."
+  },
+  {
+   "id": "c73",
+   "classification": "supported",
+   "evidence": "NHS England: strict nature of the diet means programme not suitable for everyone",
+   "url": "https://www.england.nhs.uk/diabetes/treatment-care/diabetes-remission/",
+   "action": "added",
+   "newSentence": "NHS England notes that the strict nature of the diet means it is not suitable for everyone."
+  },
+  {
+   "id": "c74",
+   "classification": "supported",
+   "evidence": "Diabetes UK: should be offered a free diabetes education course",
+   "url": "https://www.diabetes.org.uk/about-diabetes/looking-after-diabetes/care-to-expect",
+   "action": "added",
+   "newSentence": "Diabetes UK says people should be offered a free diabetes education course."
+  },
+  {
+   "id": "c75",
+   "classification": "supported",
+   "evidence": "NICE public guide: team can point you to support groups; ask for help or advice at any time",
+   "url": "https://www.nice.org.uk/guidance/ng28/ifp/chapter/what-your-diabetes-care-team-will-do",
+   "action": "added",
+   "newSentence": "NICE says the care team can point people to support groups, and people can ask for help or advice at any time."
+  }
+ ],
+ "notes": "Counts refer to the 65 draft sentences; added replacement sentences (c66-c75) are all supported. Existing page entry: (1) 'diagnosis' gives HbA1c 48 mmol/mol / fasting glucose 7 mmol/L cut-offs; only NHS Scotland Right Decisions retrieved these (HbA1c 48 or more, fasting 7.0 or more, repeat if no symptoms), so they are supported by that page but not by NHS England text. (2) 'treatment' says metformin first, then SGLT2 inhibitors; the current NHS treatment page describes metformin together with an SGLT2 inhibitor as the usual starting point for people without other serious conditions (metformin alone first-line comes from older NICE/local formularies), so 'metformin first, then SGLT2 inhibitors' is at odds with the NHS page. (3) 'prevention' says programmes halve the risk in prediabetes: not retrieved/unsupported. (4) 'overview' says over 90% of diabetes is type 2 and that early weight loss can put it into remission: MedlinePlus gives 90-95% for the US; remission-through-weight-loss supported by Diabetes UK, but 'early' and 'over 90%' for the UK were not retrieved. (5) 'seekCare' says call 999 for chest pain, and same-day GP/NHS 111 for sudden vision change: not retrieved here; the NHS 999/A&E list retrieved was peeing a lot, very thirsty, feeling sick, confused/very sleepy, short of breath, and NHS inform wants urgent podiatrist/GP contact (NHS 111 if closed) for a hot, red, swollen foot or new skin damage. (6) 'riskFactors' age over 40 and South Asian/Black/Hispanic thresholds, and 'signs' acanthosis nigricans: not retrieved. Draft-specific: c36/c58 (non-urgent route for worsening vision) were marked unsafe because they conflict with the existing page's same-day advice for sudden vision change. The search budget (16) was fully used; pages not directly retrieved: NHS England Path to Remission evidence about remission rates, NHS England DVLA text. HbA1c cut-off numbers deliberately kept out of prose. Attribution caveats: the annual-review eye/urine details and the 'retinal photograph, not optician test' wording came from blended summaries (Diabetes UK annual review page listed first); MedlinePlus type 2 'gradually' and 'more common' claims were dropped from final text."
+}

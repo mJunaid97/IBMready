@@ -1,0 +1,461 @@
+{
+ "id": "aspirin",
+ "searchesUsed": 8,
+ "counts": {
+  "supported": 32,
+  "textbook": 1,
+  "unsupported": 21,
+  "wrong": 0,
+  "unsafe": 6,
+  "unchecked": 0
+ },
+ "claims": [
+  {
+   "id": "c01",
+   "classification": "supported",
+   "evidence": "Search summaries of NHS aspirin pages call aspirin and ibuprofen NSAIDs ('both are NSAIDs'); weakly attributed.",
+   "url": "https://www.nhs.uk/medicines/aspirin/",
+   "action": "kept"
+  },
+  {
+   "id": "c02",
+   "classification": "supported",
+   "evidence": "NHS about page: used to lower risk of heart attacks and strokes in people at high risk; NHS aspirin page title: 'preventing blood clots'.",
+   "url": "https://www.nhs.uk/medicines/low-dose-aspirin/about-low-dose-aspirin/",
+   "action": "kept"
+  },
+  {
+   "id": "c03",
+   "classification": "supported",
+   "evidence": "Pregnancy page: doctors may suggest low-dose aspirin to help prevent pre-eclampsia. The definition as 'high blood pressure in pregnancy' was not retrieved, so reworded.",
+   "url": "https://www.nhs.uk/medicines/low-dose-aspirin/pregnancy-breastfeeding-and-fertility-while-taking-low-dose-aspirin/",
+   "action": "edited",
+   "newSentence": "The NHS also describes low-dose aspirin being used to help prevent pre-eclampsia, a complication of pregnancy."
+  },
+  {
+   "id": "c04",
+   "classification": "unsupported",
+   "evidence": "'Higher doses' and 'short-term' pain relief not retrieved; only that aspirin has a separate pain-relief use.",
+   "url": "https://www.nhs.uk/medicines/aspirin/",
+   "action": "edited",
+   "newSentence": "Aspirin is also used for pain relief, and the NHS gives separate information for that use."
+  },
+  {
+   "id": "c05",
+   "classification": "supported",
+   "evidence": "About page: for people at high risk of heart attack and stroke.",
+   "url": "https://www.nhs.uk/medicines/low-dose-aspirin/about-low-dose-aspirin/",
+   "action": "kept"
+  },
+  {
+   "id": "c06",
+   "classification": "supported",
+   "evidence": "About page: those who have already had one or have angina. Angina definition clause not retrieved; cut.",
+   "url": "https://www.nhs.uk/medicines/low-dose-aspirin/about-low-dose-aspirin/",
+   "action": "edited",
+   "newSentence": "Examples of people at high risk are those who have already had a heart attack or stroke, or who have angina."
+  },
+  {
+   "id": "c07",
+   "classification": "supported",
+   "evidence": "Who-can-take page: most people aged 16 and over can take it if a doctor recommends it.",
+   "url": "https://www.nhs.uk/medicines/low-dose-aspirin/who-can-and-cannot-take-low-dose-aspirin/",
+   "action": "kept"
+  },
+  {
+   "id": "c08",
+   "classification": "unsupported",
+   "evidence": "Retrieved: usually take for a long time, sometimes for life, works best over many months and years. 'Do not stop unless a doctor tells them' was explicitly NOT confirmed as a blanket rule.",
+   "url": "https://www.nhs.uk/medicines/low-dose-aspirin/common-questions-about-low-dose-aspirin/",
+   "action": "edited",
+   "newSentence": "To prevent a heart attack or stroke, the NHS says people usually need to take it for a long time, sometimes for life."
+  },
+  {
+   "id": "c09",
+   "classification": "unsupported",
+   "evidence": "No retrieved NHS text says 'less sticky'. Retrieved text (PubMed/PMC) describes cutting thromboxane A2 that drives platelet clumping; replaced.",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/15199473/",
+   "action": "edited",
+   "newSentence": "By blocking this enzyme, aspirin cuts the production of thromboxane A2, a chemical signal that drives platelets to clump together."
+  },
+  {
+   "id": "c10",
+   "classification": "textbook",
+   "evidence": "Plain undisputed fact (the only textbook sentence).",
+   "url": null,
+   "action": "kept"
+  },
+  {
+   "id": "c11",
+   "classification": "unsupported",
+   "evidence": "Not retrieved.",
+   "url": null,
+   "action": "removed"
+  },
+  {
+   "id": "c12",
+   "classification": "unsafe",
+   "evidence": "Implies a daily schedule and is not retrieved.",
+   "url": null,
+   "action": "removed"
+  },
+  {
+   "id": "c13",
+   "classification": "supported",
+   "evidence": "PubMed 15199473: aspirin acts on platelet COX-1 (acetylates the enzyme) and cuts thromboxane A2. 'Permanently/irreversibly' not retrieved, so softened.",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/15199473/",
+   "action": "edited",
+   "newSentence": "Research papers describe aspirin as acting on an enzyme in platelets called COX-1."
+  },
+  {
+   "id": "c14",
+   "classification": "supported",
+   "evidence": "PMC1852201: platelets cannot make new COX enzyme so suppression is prolonged; recovery needs new platelets, persisting for days (summary attribution moderately certain).",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1852201/",
+   "action": "edited",
+   "newSentence": "Platelets cannot make new COX enzyme, so aspirin's effect on them is prolonged. The research describes platelet clumping as recovering only as new platelets are made, which is why the effect lasts for days."
+  },
+  {
+   "id": "c15",
+   "classification": "unsupported",
+   "evidence": "MedlinePlus text on mechanism (fever, pain, swelling, clots) not retrieved.",
+   "url": null,
+   "action": "removed"
+  },
+  {
+   "id": "c16",
+   "classification": "supported",
+   "evidence": "Side effects page: indigestion and stomach aches most common; bleeding more easily (nosebleeds, bruising, slow-stopping cuts).",
+   "url": "https://www.nhs.uk/medicines/low-dose-aspirin/side-effects-of-low-dose-aspirin/",
+   "action": "kept"
+  },
+  {
+   "id": "c17",
+   "classification": "supported",
+   "evidence": "Indigestion that does not go away could be a sign of a stomach ulcer.",
+   "url": "https://www.nhs.uk/medicines/low-dose-aspirin/side-effects-of-low-dose-aspirin/",
+   "action": "kept"
+  },
+  {
+   "id": "c18",
+   "classification": "unsupported",
+   "evidence": "Retrieved route is 'speak to a GP or pharmacist'; the doctor prescribing gastric protection or a switch was not retrieved.",
+   "url": "https://www.nhs.uk/medicines/low-dose-aspirin/side-effects-of-low-dose-aspirin/",
+   "action": "edited",
+   "newSentence": "...the NHS advises speaking to a GP or pharmacist about it."
+  },
+  {
+   "id": "c19",
+   "classification": "supported",
+   "evidence": "Take with or just after food (about page). 'Not on an empty stomach' not stated; sentence dropped from final for word budget.",
+   "url": "https://www.nhs.uk/medicines/low-dose-aspirin/about-low-dose-aspirin/",
+   "action": "removed"
+  },
+  {
+   "id": "c20",
+   "classification": "unsupported",
+   "evidence": "'Rare', and the list (ulcers, breathing difficulties, allergic reactions) not retrieved as a serious-side-effect list.",
+   "url": "https://www.nhs.uk/medicines/low-dose-aspirin/side-effects-of-low-dose-aspirin/",
+   "action": "removed"
+  },
+  {
+   "id": "c21",
+   "classification": "unsupported",
+   "evidence": "Blood in pee/poo/vomit supported; the 'hospital leaflet' black bowel motions attribution is unclear (summary only).",
+   "url": "https://www.nhs.uk/medicines/low-dose-aspirin/side-effects-of-low-dose-aspirin/",
+   "action": "edited",
+   "newSentence": "The NHS says to call a doctor or NHS 111 straight away for coughing up blood, or for blood in the pee, poo or vomit."
+  },
+  {
+   "id": "c22",
+   "classification": "unsupported",
+   "evidence": "Retrieved route: call your doctor or 111 now. 'GP the same day' not stated.",
+   "url": "https://www.nhs.uk/medicines/low-dose-aspirin/side-effects-of-low-dose-aspirin/",
+   "action": "edited",
+   "newSentence": "(merged into the sentence above)"
+  },
+  {
+   "id": "c23",
+   "classification": "supported",
+   "evidence": "999 for sudden swelling of lips/mouth/throat/tongue, fast or difficult breathing, tight throat.",
+   "url": "https://www.nhs.uk/medicines/low-dose-aspirin/side-effects-of-low-dose-aspirin/",
+   "action": "kept"
+  },
+  {
+   "id": "c24",
+   "classification": "supported",
+   "evidence": "Herbal page: low-dose aspirin may not mix well with many herbal products.",
+   "url": "https://www.nhs.uk/medicines/low-dose-aspirin/taking-low-dose-aspirin-with-other-medicines-and-herbal-supplements/",
+   "action": "kept"
+  },
+  {
+   "id": "c25",
+   "classification": "unsupported",
+   "evidence": "Mechanism of the interaction not retrieved.",
+   "url": null,
+   "action": "removed"
+  },
+  {
+   "id": "c26",
+   "classification": "supported",
+   "evidence": "Herbal page names turmeric as raising bleeding risk.",
+   "url": "https://www.nhs.uk/medicines/low-dose-aspirin/taking-low-dose-aspirin-with-other-medicines-and-herbal-supplements/",
+   "action": "kept"
+  },
+  {
+   "id": "c27",
+   "classification": "unsafe",
+   "evidence": "Summariser's own advice ('check with a doctor or pharmacist'), instructs the reader; not source text.",
+   "url": null,
+   "action": "removed"
+  },
+  {
+   "id": "c28",
+   "classification": "unsupported",
+   "evidence": "Search text said ibuprofen may blunt aspirin's platelet effect but the source page was not identified (PMC5345232 not retrieved); cannot attribute a URL.",
+   "url": null,
+   "action": "removed"
+  },
+  {
+   "id": "c29",
+   "classification": "unsafe",
+   "evidence": "Not retrieved; would imply drinking is acceptable.",
+   "url": null,
+   "action": "removed"
+  },
+  {
+   "id": "c30",
+   "classification": "unsupported",
+   "evidence": "Alcohol/stomach irritation statement not retrieved from NHS.",
+   "url": null,
+   "action": "removed"
+  },
+  {
+   "id": "c31",
+   "classification": "supported",
+   "evidence": "Possible link to Reye's syndrome in children (NHS pages).",
+   "url": "https://www.nhs.uk/conditions/reyes-syndrome/",
+   "action": "kept"
+  },
+  {
+   "id": "c32",
+   "classification": "unsupported",
+   "evidence": "'Very rare' and 'liver and brain damage' not retrieved.",
+   "url": null,
+   "action": "removed"
+  },
+  {
+   "id": "c33",
+   "classification": "supported",
+   "evidence": "NHS Reye's page: advises against aspirin for under-16s unless a doctor says to.",
+   "url": "https://www.nhs.uk/conditions/reyes-syndrome/",
+   "action": "edited",
+   "newSentence": "The NHS describes a possible link between aspirin and Reye's syndrome in children, and advises against giving aspirin to children under 16 unless a doctor says to."
+  },
+  {
+   "id": "c34",
+   "classification": "supported",
+   "evidence": "About page: children only when prescribed, such as after heart surgery or for Kawasaki disease. 'Rare condition' cut.",
+   "url": "https://www.nhs.uk/medicines/low-dose-aspirin/about-low-dose-aspirin/",
+   "action": "edited",
+   "newSentence": "The NHS says low-dose aspirin is given to children only when a doctor prescribes it, for example after heart surgery or for Kawasaki disease."
+  },
+  {
+   "id": "c35",
+   "classification": "unsupported",
+   "evidence": "MedlinePlus flu/chickenpox statement not retrieved.",
+   "url": null,
+   "action": "removed"
+  },
+  {
+   "id": "c36",
+   "classification": "supported",
+   "evidence": "Who-can-take page: past ulcer, asthma or lung disease, bleeding or clotting problem, liver or kidney problems, gout.",
+   "url": "https://www.nhs.uk/medicines/low-dose-aspirin/who-can-and-cannot-take-low-dose-aspirin/",
+   "action": "edited",
+   "newSentence": "The NHS says some adults should talk to a doctor before taking low-dose aspirin, including people who have had a stomach ulcer, or who have asthma or lung disease, a bleeding or clotting problem, liver or kidney problems, or gout."
+  },
+  {
+   "id": "c37",
+   "classification": "supported",
+   "evidence": "Allergy to aspirin or similar painkillers and recent stroke retrieved; 'serious side effect' item not retrieved, dropped.",
+   "url": "https://www.nhs.uk/medicines/low-dose-aspirin/who-can-and-cannot-take-low-dose-aspirin/",
+   "action": "edited",
+   "newSentence": "A past allergy to aspirin or similar painkillers, and a recent stroke, are also on the list."
+  },
+  {
+   "id": "c38",
+   "classification": "supported",
+   "evidence": "Pregnancy page: only if specialist, midwife, GP or fertility doctor advises.",
+   "url": "https://www.nhs.uk/medicines/low-dose-aspirin/pregnancy-breastfeeding-and-fertility-while-taking-low-dose-aspirin/",
+   "action": "kept"
+  },
+  {
+   "id": "c39",
+   "classification": "supported",
+   "evidence": "As sentence 33.",
+   "url": "https://www.nhs.uk/conditions/reyes-syndrome/",
+   "action": "edited",
+   "newSentence": "The NHS advises against giving aspirin to children under 16 unless a doctor says to, because of a possible link with Reye's syndrome."
+  },
+  {
+   "id": "c40",
+   "classification": "unsupported",
+   "evidence": "Liver and brain damage / very rare not retrieved; possible link supported.",
+   "url": "https://www.nhs.uk/conditions/reyes-syndrome/",
+   "action": "edited",
+   "newSentence": "(merged into FAQ sentence above; added NHS: Reye's most commonly affects children 5 to 14)"
+  },
+  {
+   "id": "c41",
+   "classification": "supported",
+   "evidence": "After heart surgery or Kawasaki disease (about page).",
+   "url": "https://www.nhs.uk/medicines/low-dose-aspirin/about-low-dose-aspirin/",
+   "action": "kept"
+  },
+  {
+   "id": "c42",
+   "classification": "unsafe",
+   "evidence": "Not retrieved; implies drinking is acceptable.",
+   "url": null,
+   "action": "removed"
+  },
+  {
+   "id": "c43",
+   "classification": "unsupported",
+   "evidence": "Not retrieved.",
+   "url": null,
+   "action": "removed"
+  },
+  {
+   "id": "c44",
+   "classification": "unsupported",
+   "evidence": "Retrieved route is GP or pharmacist, not a 'GP appointment'.",
+   "url": "https://www.nhs.uk/medicines/low-dose-aspirin/side-effects-of-low-dose-aspirin/",
+   "action": "edited",
+   "newSentence": "The NHS advises speaking to a GP or pharmacist about indigestion that does not go away."
+  },
+  {
+   "id": "c45",
+   "classification": "supported",
+   "evidence": "Pregnancy page.",
+   "url": "https://www.nhs.uk/medicines/low-dose-aspirin/pregnancy-breastfeeding-and-fertility-while-taking-low-dose-aspirin/",
+   "action": "kept"
+  },
+  {
+   "id": "c46",
+   "classification": "unsupported",
+   "evidence": "Higher-dose pain relief not recommended in pregnancy retrieved; 'paracetamol usually best' only retrieved for breastfeeding, so cut.",
+   "url": "https://www.nhs.uk/medicines/low-dose-aspirin/pregnancy-breastfeeding-and-fertility-while-taking-low-dose-aspirin/",
+   "action": "edited",
+   "newSentence": "...higher-dose aspirin for pain relief is not recommended."
+  },
+  {
+   "id": "c47",
+   "classification": "supported",
+   "evidence": "Pregnancy page: trace amounts reach milk, unlikely to harm baby; possible Reye's link.",
+   "url": "https://www.nhs.uk/medicines/low-dose-aspirin/pregnancy-breastfeeding-and-fertility-while-taking-low-dose-aspirin/",
+   "action": "edited",
+   "newSentence": "Only trace amounts reach breast milk and are unlikely to harm the baby, although there is a possible link with Reye's syndrome."
+  },
+  {
+   "id": "c48",
+   "classification": "supported",
+   "evidence": "Usually a long time, sometimes for life (two NHS pages).",
+   "url": "https://www.nhs.uk/medicines/low-dose-aspirin/common-questions-about-low-dose-aspirin/",
+   "action": "edited",
+   "newSentence": "...usually need to take low-dose aspirin for a long time, sometimes for life, and that it works best when taken for many months and years."
+  },
+  {
+   "id": "c49",
+   "classification": "unsafe",
+   "evidence": "Instructs the individual not to stop; blanket rule not confirmed in retrieved text.",
+   "url": null,
+   "action": "removed"
+  },
+  {
+   "id": "c50",
+   "classification": "unsupported",
+   "evidence": "Gastric protection / switch not retrieved; 'GP appointment' route not as stated.",
+   "url": null,
+   "action": "removed"
+  },
+  {
+   "id": "c51",
+   "classification": "supported",
+   "evidence": "As sentence 23.",
+   "url": "https://www.nhs.uk/medicines/low-dose-aspirin/side-effects-of-low-dose-aspirin/",
+   "action": "kept"
+  },
+  {
+   "id": "c52",
+   "classification": "unsupported",
+   "evidence": "Retrieved route: doctor or NHS 111 now.",
+   "url": "https://www.nhs.uk/medicines/low-dose-aspirin/side-effects-of-low-dose-aspirin/",
+   "action": "edited",
+   "newSentence": "It says to call a doctor or NHS 111 straight away for coughing up blood, or for blood in the pee, poo or vomit."
+  },
+  {
+   "id": "c53",
+   "classification": "supported",
+   "evidence": "Blood in pee listed in the same urgent list.",
+   "url": "https://www.nhs.uk/medicines/low-dose-aspirin/side-effects-of-low-dose-aspirin/",
+   "action": "edited",
+   "newSentence": "(merged with sentence above)"
+  },
+  {
+   "id": "c54",
+   "classification": "supported",
+   "evidence": "As sentence 1.",
+   "url": "https://www.nhs.uk/medicines/aspirin/",
+   "action": "kept"
+  },
+  {
+   "id": "c55",
+   "classification": "supported",
+   "evidence": "About page: lowers heart attack and stroke risk; pre-eclampsia per pregnancy page.",
+   "url": "https://www.nhs.uk/medicines/low-dose-aspirin/about-low-dose-aspirin/",
+   "action": "edited",
+   "newSentence": "Lowers the risk of heart attacks and strokes in people at high risk, according to the NHS."
+  },
+  {
+   "id": "c56",
+   "classification": "unsupported",
+   "evidence": "NHS 'less sticky' wording not retrieved.",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/15199473/",
+   "action": "edited",
+   "newSentence": "Acts on the COX-1 enzyme in platelets, reducing the signal that makes platelets clump."
+  },
+  {
+   "id": "c57",
+   "classification": "supported",
+   "evidence": "Side effects page.",
+   "url": "https://www.nhs.uk/medicines/low-dose-aspirin/side-effects-of-low-dose-aspirin/",
+   "action": "kept"
+  },
+  {
+   "id": "c58",
+   "classification": "supported",
+   "evidence": "NHS Reye's and about pages.",
+   "url": "https://www.nhs.uk/conditions/reyes-syndrome/",
+   "action": "edited",
+   "newSentence": "The NHS advises against giving aspirin to under-16s unless a doctor says to, because of a possible link with Reye's syndrome."
+  },
+  {
+   "id": "c59",
+   "classification": "unsafe",
+   "evidence": "Not retrieved; implies drinking is acceptable.",
+   "url": null,
+   "action": "removed"
+  },
+  {
+   "id": "c60",
+   "classification": "supported",
+   "evidence": "As sentence 23.",
+   "url": "https://www.nhs.uk/medicines/low-dose-aspirin/side-effects-of-low-dose-aspirin/",
+   "action": "edited",
+   "newSentence": "Sudden swelling of the lips, mouth, throat or tongue, fast or difficult breathing, or a tight throat."
+  }
+ ],
+ "notes": "Search summaries blend pages; attributions for PMC1852201 (platelet recovery) and the 'both are NSAIDs' line are moderate-confidence. Removed: alcohol content, ibuprofen blunting (source unidentified), MedlinePlus claims (not retrieved), 'do not stop' instruction. Route lines now use retrieved wording (call a doctor or NHS 111 straight away; speak to a GP or pharmacist). Final article about 889 words, 4 sections (111-163 words), 4 FAQs (48-66), 6 keyFacts. Existing medications.json entry not changed (it contains doses such as 300 mg and '7-10 day' life; flag for maintainer)."
+}

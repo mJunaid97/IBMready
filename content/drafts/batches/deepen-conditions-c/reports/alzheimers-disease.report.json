@@ -1,0 +1,583 @@
+{
+ "id": "alzheimers-disease",
+ "searchesUsed": 13,
+ "counts": {
+  "supported": 29,
+  "textbook": 3,
+  "unsupported": 36,
+  "wrong": 1,
+  "unsafe": 2,
+  "unchecked": 0
+ },
+ "claims": [
+  {
+   "id": "c01",
+   "classification": "unsupported",
+   "evidence": "Retrieved NHS symptoms text says symptoms become increasingly severe; 'develop over many years' not retrieved.",
+   "url": "https://www.nhs.uk/conditions/alzheimers-disease/symptoms/",
+   "action": "edited",
+   "newSentence": "The NHS describes the symptoms of Alzheimer's disease as becoming increasingly severe as the condition progresses."
+  },
+  {
+   "id": "c02",
+   "classification": "unsupported",
+   "evidence": "Alz Soc: memory loss usually first and main early symptom; NHS lists trouble finding the right word, poorer judgement. 'Misplacing items', 'forgetting recent conversations' not retrieved.",
+   "url": "https://www.alzheimers.org.uk/about-dementia/stages-and-symptoms/early-stages-dementia",
+   "action": "edited",
+   "newSentence": "Memory loss is usually the first and main symptom in the early stage; NHS lists trouble finding the right word and poorer judgement."
+  },
+  {
+   "id": "c03",
+   "classification": "unsupported",
+   "evidence": "Only mood changes and reduced flexibility retrieved; anxiety, distance judgement, getting lost not retrieved.",
+   "url": "https://www.alzheimers.org.uk/about-dementia/stages-and-symptoms/early-stages-dementia",
+   "action": "edited",
+   "newSentence": "Changes in mood can occur; early symptoms also include becoming less flexible and more hesitant to try new things."
+  },
+  {
+   "id": "c04",
+   "classification": "unsupported",
+   "evidence": "Retrieved: memory and thinking problems worsen; harder to recognise family or close friends. 'Names of people they know' not retrieved.",
+   "url": "https://www.alzheimers.org.uk/about-dementia/stages-and-symptoms/early-stages-dementia",
+   "action": "edited",
+   "newSentence": "In the middle stage, existing memory and thinking problems get worse, and many people find it harder to recognise family or close friends."
+  },
+  {
+   "id": "c05",
+   "classification": "unsupported",
+   "evidence": "Retrieved: confusion about time and place worse, delusions or hallucinations, more help with daily tasks. Disturbed sleep not retrieved.",
+   "url": "https://www.alzheimers.org.uk/about-dementia/stages-and-symptoms/early-stages-dementia",
+   "action": "edited",
+   "newSentence": "Confusion about time and place becomes more severe, some people develop delusions or hallucinations, and help with daily tasks increases."
+  },
+  {
+   "id": "c06",
+   "classification": "unsupported",
+   "evidence": "NHS: dysphagia, weight loss, urinary and bowel incontinence in later stage; NHS 111 Wales: full-time care and help eating, moving, toilet. 'Loss of speech' not confirmed (NHS page cut off).",
+   "url": "https://www.nhs.uk/conditions/alzheimers-disease/symptoms/",
+   "action": "edited",
+   "newSentence": "In the later stage, the NHS lists difficulty eating and swallowing, weight loss and incontinence; severe stages may need full-time care and help with eating, moving and toilet use."
+  },
+  {
+   "id": "c07",
+   "classification": "textbook",
+   "evidence": "Alz Soc: Alzheimer's the most common of four main types; names of the other main types not returned verbatim; undisputed textbook.",
+   "url": "https://www.alzheimers.org.uk/about-dementia/types-dementia",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c08",
+   "classification": "supported",
+   "evidence": "Alz Soc and NHS: mixed dementia is most often Alzheimer's with vascular dementia.",
+   "url": "https://www.alzheimers.org.uk/about-dementia/types-dementia/what-is-mixed-dementia",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c09",
+   "classification": "supported",
+   "evidence": "Alz Soc: dementia diagnosed before 65 is young-onset dementia.",
+   "url": "https://www.alzheimers.org.uk/about-dementia/types-dementia/young-onset-dementia",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c10",
+   "classification": "unsupported",
+   "evidence": "Alz Soc: MCI not a type of dementia but increases risk of dementia; 'minor problems with memory or thinking' not retrieved.",
+   "url": "https://www.alzheimers.org.uk/about-dementia/types-dementia",
+   "action": "edited",
+   "newSentence": "Mild cognitive impairment is not a type of dementia, but people with it have an increased risk of developing dementia."
+  },
+  {
+   "id": "c11",
+   "classification": "unsupported",
+   "evidence": "Causes list (depression, stress, medicines, alcohol) not retrieved.",
+   "url": "",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c12",
+   "classification": "unsafe",
+   "evidence": "Reader-directed advice ('if you are worried'); retrieved: GP is right first call for gradual memory problems (NHS trust page).",
+   "url": "https://slam.nhs.uk/sudden-confusion",
+   "action": "edited",
+   "newSentence": "For gradual memory problems, the GP is the usual first point of contact."
+  },
+  {
+   "id": "c13",
+   "classification": "unsupported",
+   "evidence": "Retrieved: GP asks about symptoms, examines, sets memory and thinking tasks. 'What family noticed' not retrieved.",
+   "url": "https://www.england.nhs.uk/wp-content/uploads/2015/01/dementia-diag-mng-ab-pt.pdf",
+   "action": "edited",
+   "newSentence": "A GP typically asks about symptoms, may examine the person and sets memory and thinking tasks."
+  },
+  {
+   "id": "c14",
+   "classification": "unsupported",
+   "evidence": "Merged into previous sentence (second person, 'pen-and-paper' not retrieved).",
+   "url": "https://www.england.nhs.uk/wp-content/uploads/2015/01/dementia-diag-mng-ab-pt.pdf",
+   "action": "edited",
+   "newSentence": "Merged into the sentence above."
+  },
+  {
+   "id": "c15",
+   "classification": "supported",
+   "evidence": "Retrieved: if unsure, GP may refer to old age psychiatrist or neurologist, may be based in a memory clinic. Reworded to third person.",
+   "url": "https://www.england.nhs.uk/wp-content/uploads/2015/01/dementia-diag-mng-ab-pt.pdf",
+   "action": "edited",
+   "newSentence": "If the GP is unsure, the person may be referred to a specialist, such as an old age psychiatrist or a neurologist, who may be based in a memory clinic."
+  },
+  {
+   "id": "c16",
+   "classification": "unsupported",
+   "evidence": "Neurologists reviewing scans and neuropsychologists carrying out tests not retrieved.",
+   "url": "",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c17",
+   "classification": "supported",
+   "evidence": "Retrieved: blood tests rarely helpful for diagnosis itself but needed to rule out underlying causes.",
+   "url": "https://www.england.nhs.uk/wp-content/uploads/2015/01/dementia-diag-mng-ab-pt.pdf",
+   "action": "edited",
+   "newSentence": "Blood tests are mainly used to rule out other underlying causes rather than to make the diagnosis itself."
+  },
+  {
+   "id": "c18",
+   "classification": "unsupported",
+   "evidence": "Retrieved: CT/MRI not essential for diagnosis; shrinkage may support Alzheimer's but cannot indicate a specific diagnosis; PET when earlier scans unclear. 'MRI shows which parts shrinking' and 'for many people useful' not retrieved.",
+   "url": "https://www.england.nhs.uk/wp-content/uploads/2015/01/dementia-diag-mng-ab-pt.pdf",
+   "action": "edited",
+   "newSentence": "According to NHS England, brain scans such as CT or MRI are not essential for a clinical diagnosis. ... shrinkage seen on a scan may support a diagnosis of Alzheimer's disease but cannot point to a specific diagnosis."
+  },
+  {
+   "id": "c19",
+   "classification": "textbook",
+   "evidence": "Retrieved summary: no single test confirms dementia, workup combines assessment and sometimes imaging; 'reliable' dropped.",
+   "url": "https://www.england.nhs.uk/wp-content/uploads/2015/01/dementia-diag-mng-ab-pt.pdf",
+   "action": "edited",
+   "newSentence": "There is no single test that confirms dementia, so assessment combines the history, memory and thinking tasks and sometimes scans."
+  },
+  {
+   "id": "c20",
+   "classification": "unsupported",
+   "evidence": "Advice to bring someone along not retrieved.",
+   "url": "",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c21",
+   "classification": "supported",
+   "evidence": "NHS treatment page: no cure; medicine can temporarily reduce some symptoms or slow progression in some people.",
+   "url": "https://www.nhs.uk/conditions/alzheimers-disease/treatment/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c22",
+   "classification": "supported",
+   "evidence": "NHS: donepezil, galantamine, rivastigmine for early to mid-stage; memantine moderate or severe.",
+   "url": "https://www.nhs.uk/conditions/alzheimers-disease/treatment/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c23",
+   "classification": "supported",
+   "evidence": "NHS: CST is group activities and exercises designed to improve memory and problem-solving.",
+   "url": "https://www.nhs.uk/conditions/alzheimers-disease/treatment/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c24",
+   "classification": "unsupported",
+   "evidence": "Retrieved NHS dementia treatment page: cognitive rehabilitation uses working parts of brain to help parts that are not. 'Trained professional' and 'personal goal' not retrieved.",
+   "url": "https://www.nhs.uk/conditions/dementia/about-dementia/treatment/",
+   "action": "edited",
+   "newSentence": "The NHS describes cognitive rehabilitation as using the parts of the brain that are working to help the parts that are not."
+  },
+  {
+   "id": "c25",
+   "classification": "unsupported",
+   "evidence": "NHS: reminiscence and life story work is talking about things and events from your past; 'photos, music, keepsakes' not retrieved.",
+   "url": "https://www.nhs.uk/conditions/alzheimers-disease/treatment/",
+   "action": "edited",
+   "newSentence": "Reminiscence and life story work involves talking about things and events from the person's past."
+  },
+  {
+   "id": "c26",
+   "classification": "unsupported",
+   "evidence": "NHS: coping strategies first; consultant psychiatrist can prescribe risperidone for persistent aggression or extreme distress; lowest dose and shortest time due to serious side effects. 'An antipsychotic such as' overreached.",
+   "url": "https://www.nhs.uk/conditions/alzheimers-disease/treatment/",
+   "action": "edited",
+   "newSentence": "The NHS says coping strategies are tried first for aggression, and if they fail a consultant psychiatrist can prescribe risperidone ... for the shortest time possible because of its serious side effects."
+  },
+  {
+   "id": "c27",
+   "classification": "unsupported",
+   "evidence": "NICE final draft guidance: benefits remain too small to justify additional costs; search found appeals upheld in part and revised final draft guidance pending, so 'so far not recommended ... currently not cost effective' is time-sensitive. Alz Soc: approved for UK use but not on NHS.",
+   "url": "https://www.nice.org.uk/news/articles/the-benefits-of-alzheimers-treatments-donanemab-and-lecanemab-remain-too-small-to-justify-the-additional-costs-says-nice-in-final-draft-guidance",
+   "action": "edited",
+   "newSentence": "NICE's final draft guidance said their benefits remain too small to justify the additional costs to the NHS, so the NICE website has the current position."
+  },
+  {
+   "id": "c28",
+   "classification": "unsupported",
+   "evidence": "NHS inform: keep in touch, join activities, dementia-friendly groups, communities, sport and cultural activities. Memory cafes and 'swap practical tips' not retrieved; source is NHS inform, not 'NHS guidance'.",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/brain-nerves-and-spinal-cord/dementia/living-with-dementia/living-well-with-dementia/",
+   "action": "edited",
+   "newSentence": "NHS inform suggests keeping in touch with people and joining activities, and notes that dementia-friendly groups, communities, sport and cultural activities exist for people with dementia."
+  },
+  {
+   "id": "c29",
+   "classification": "supported",
+   "evidence": "NHS inform daily living: routine can encourage feelings of security, value and worth. Attributed to NHS inform; 'recommended' softened.",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/brain-nerves-and-spinal-cord/dementia/caring-for-someone-with-dementia/daily-living-and-dementia/",
+   "action": "edited",
+   "newSentence": "It says a daily routine can encourage feelings of security, value and worth."
+  },
+  {
+   "id": "c30",
+   "classification": "supported",
+   "evidence": "NHS inform: pictures on cupboard doors of what is inside; Alz Soc: device that plays recorded reminder at the door.",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/brain-nerves-and-spinal-cord/dementia/caring-for-someone-with-dementia/daily-living-and-dementia/",
+   "action": "edited",
+   "newSentence": "Suggested memory aids around the home include pictures on cupboard doors showing what is inside, and technology such as a device that plays a recorded reminder when the front door is opened."
+  },
+  {
+   "id": "c31",
+   "classification": "unsupported",
+   "evidence": "Diet, exercise, sleep and dental, eyesight, hearing checks not retrieved.",
+   "url": "",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c32",
+   "classification": "wrong",
+   "evidence": "NHS inform says depression is common in dementia (not 'very common'); talk to GP, talking treatments can help.",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/brain-nerves-and-spinal-cord/dementia/living-with-dementia/living-well-with-dementia/",
+   "action": "edited",
+   "newSentence": "Depression is common in dementia, and NHS inform says a GP can talk through talking treatments that can help."
+  },
+  {
+   "id": "c33",
+   "classification": "unsafe",
+   "evidence": "Second-person instruction ('You can ask'). Retrieved: care needs assessment from social services; carer's assessment from local council.",
+   "url": "https://www.nhs.uk/conditions/dementia/care-and-support/social-services-and-the-nhs/",
+   "action": "edited",
+   "newSentence": "A care needs assessment can be arranged through social services, and carers can ask the local council for a carer's assessment."
+  },
+  {
+   "id": "c34",
+   "classification": "unsupported",
+   "evidence": "'Fundamental for everyone' and Lasting Power of Attorney not retrieved (searches said LPA not mentioned). NHS inform covers advance care planning as which treatments and end-of-life treatments a person would want.",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/brain-nerves-and-spinal-cord/dementia/living-with-dementia/living-well-with-dementia/",
+   "action": "edited",
+   "newSentence": "NHS inform describes advance care planning as thinking ahead about which treatments a person would want, including whether they would want certain end-of-life treatments."
+  },
+  {
+   "id": "c35",
+   "classification": "unsupported",
+   "evidence": "No retrieved source states this.",
+   "url": "",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c36",
+   "classification": "unsupported",
+   "evidence": "Alz Soc: middle stage often the longest; 'later stage usually shortest' not confirmed.",
+   "url": "https://www.alzheimers.org.uk/about-dementia/stages-and-symptoms/progression-stages-dementia",
+   "action": "edited",
+   "newSentence": "The Alzheimer's Society says the middle stage of dementia is often the longest."
+  },
+  {
+   "id": "c37",
+   "classification": "supported",
+   "evidence": "NHS 111 Wales: many people have trouble eating or swallowing, can lead to choking, chest infections and other problems.",
+   "url": "https://111.wales.nhs.uk/encyclopaedia/a/article/alzheimersdisease",
+   "action": "edited",
+   "newSentence": "In the later stage many people have trouble eating or swallowing, which can lead to choking, chest infections and other problems."
+  },
+  {
+   "id": "c38",
+   "classification": "supported",
+   "evidence": "Alz Soc delirium: person seems 'not themselves'; delirium develops over 1-2 days; dementia gradual.",
+   "url": "https://www.alzheimers.org.uk/get-support/living-with-dementia/delirium",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c39",
+   "classification": "unsupported",
+   "evidence": "UTI supported (Alz Soc); confusion as stroke sign and sepsis retrieved (NHS pages). Low blood sugar and head injury as causes not retrieved.",
+   "url": "https://www.alzheimers.org.uk/get-support/living-with-dementia/urinary-tract-infections-utis-dementia",
+   "action": "edited",
+   "newSentence": "Urinary tract infections can cause sudden and severe confusion ... and confusion can also be a sign of a stroke or sepsis."
+  },
+  {
+   "id": "c40",
+   "classification": "supported",
+   "evidence": "Alz Soc: UTIs can cause sudden and severe confusion known as delirium in someone with memory problems or dementia.",
+   "url": "https://www.alzheimers.org.uk/get-support/living-with-dementia/urinary-tract-infections-utis-dementia",
+   "action": "edited",
+   "newSentence": "(merged into previous sentence)"
+  },
+  {
+   "id": "c41",
+   "classification": "unsupported",
+   "evidence": "SLaM NHS trust page: A&E or 999 for sudden confusion (not nhs.uk centrally); Alz Soc: urgent GP appointment or NHS 111. 'Straight away' and 'NHS says' overreach. Route to care kept.",
+   "url": "https://slam.nhs.uk/sudden-confusion",
+   "action": "edited",
+   "newSentence": "NHS services such as South London and Maudsley NHS Foundation Trust advise going to A&E or calling 999 ... The Alzheimer's Society advises making an urgent GP appointment or calling NHS 111 ..."
+  },
+  {
+   "id": "c42",
+   "classification": "unsupported",
+   "evidence": "Alz Soc: dementia can make a person much more likely to have delirium; 'biggest single risk factor' and 'may be missed' not retrieved.",
+   "url": "https://www.alzheimers.org.uk/get-support/living-with-dementia/delirium",
+   "action": "edited",
+   "newSentence": "The Alzheimer's Society says dementia can make a person much more likely to have delirium."
+  },
+  {
+   "id": "c43",
+   "classification": "supported",
+   "evidence": "Alz Soc: Alzheimer's most common of four main types (19 in 20 people).",
+   "url": "https://www.alzheimers.org.uk/about-dementia/types-dementia",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c44",
+   "classification": "unsupported",
+   "evidence": "Duplicate list of types not retrieved verbatim; removed to keep textbook budget.",
+   "url": "",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c45",
+   "classification": "supported",
+   "evidence": "Alz Soc and NHS: mixed dementia, most often Alzheimer's with vascular.",
+   "url": "https://www.alzheimers.org.uk/about-dementia/types-dementia/what-is-mixed-dementia",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c46",
+   "classification": "supported",
+   "evidence": "NHS treatment page, as above.",
+   "url": "https://www.nhs.uk/conditions/alzheimers-disease/treatment/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c47",
+   "classification": "supported",
+   "evidence": "NHS: CST; reminiscence and life story work listed as non-drug treatments.",
+   "url": "https://www.nhs.uk/conditions/alzheimers-disease/treatment/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c48",
+   "classification": "supported",
+   "evidence": "Reworded to third person: needs assessment via social services; carer's assessment via local council.",
+   "url": "https://www.nhs.uk/conditions/dementia/care-and-support/social-services-and-the-nhs/",
+   "action": "edited",
+   "newSentence": "A care needs assessment can be arranged through social services, and carers can ask the local council for a carer's assessment."
+  },
+  {
+   "id": "c49",
+   "classification": "unsupported",
+   "evidence": "Circular; retrieved NHS England: CT/MRI not essential for a clinical diagnosis.",
+   "url": "https://www.england.nhs.uk/wp-content/uploads/2015/01/dementia-diag-mng-ab-pt.pdf",
+   "action": "edited",
+   "newSentence": "According to NHS England, brain scans such as CT or MRI are not essential for a clinical diagnosis."
+  },
+  {
+   "id": "c50",
+   "classification": "unsupported",
+   "evidence": "Retrieved: CT can check for stroke or tumour; shrinkage may support Alzheimer's; PET when earlier scans unclear. 'Rule out other causes' via PET not retrieved.",
+   "url": "https://www.alzheimers.org.uk/about-dementia/dementia-diagnosis/how-to-get-dementia-diagnosis/tests-and-scans",
+   "action": "edited",
+   "newSentence": "A CT scan can check for signs of a stroke or a brain tumour ... PET scans are typically used when earlier scans are unclear."
+  },
+  {
+   "id": "c51",
+   "classification": "unsupported",
+   "evidence": "Scan looking normal early on not retrieved.",
+   "url": "",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c52",
+   "classification": "supported",
+   "evidence": "Alz Soc delirium: sudden change, 'not themselves', differs from gradual dementia.",
+   "url": "https://www.alzheimers.org.uk/get-support/living-with-dementia/delirium",
+   "action": "edited",
+   "newSentence": "A sudden change is different from the slow worsening of dementia and may be delirium."
+  },
+  {
+   "id": "c53",
+   "classification": "unsupported",
+   "evidence": "UTI retrieved; low blood sugar and head injury as causes not retrieved.",
+   "url": "https://www.alzheimers.org.uk/get-support/living-with-dementia/urinary-tract-infections-utis-dementia",
+   "action": "edited",
+   "newSentence": "Urinary tract infections are one cause of sudden and severe confusion in someone with dementia."
+  },
+  {
+   "id": "c54",
+   "classification": "unsupported",
+   "evidence": "See c41: attribution and 'straight away' corrected.",
+   "url": "https://slam.nhs.uk/sudden-confusion",
+   "action": "edited",
+   "newSentence": "NHS services advise going to A&E or calling 999 for sudden confusion, and the Alzheimer's Society advises an urgent GP appointment or NHS 111 ..."
+  },
+  {
+   "id": "c55",
+   "classification": "unsupported",
+   "evidence": "Bring-someone advice not retrieved; question rewritten.",
+   "url": "",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c56",
+   "classification": "unsupported",
+   "evidence": "Same as c13/c14; second person removed.",
+   "url": "https://www.england.nhs.uk/wp-content/uploads/2015/01/dementia-diag-mng-ab-pt.pdf",
+   "action": "edited",
+   "newSentence": "A GP typically asks about symptoms, may examine the person and sets memory and thinking tasks."
+  },
+  {
+   "id": "c57",
+   "classification": "textbook",
+   "evidence": "Undisputed textbook that memory problems have causes other than dementia; blood tests to rule out underlying causes retrieved (NHS England).",
+   "url": "https://www.england.nhs.uk/wp-content/uploads/2015/01/dementia-diag-mng-ab-pt.pdf",
+   "action": "edited",
+   "newSentence": "Memory problems are not always caused by dementia, so the GP may look for other causes."
+  },
+  {
+   "id": "c58",
+   "classification": "unsupported",
+   "evidence": "'Develop over many years' not retrieved; NHS: increasingly severe.",
+   "url": "https://www.nhs.uk/conditions/alzheimers-disease/symptoms/",
+   "action": "edited",
+   "newSentence": "Symptoms become increasingly severe over time, says the NHS."
+  },
+  {
+   "id": "c59",
+   "classification": "unsupported",
+   "evidence": "Alz Soc: memory loss usually first and main symptom; specific examples not retrieved.",
+   "url": "https://www.alzheimers.org.uk/about-dementia/stages-and-symptoms/early-stages-dementia",
+   "action": "edited",
+   "newSentence": "Memory loss is usually the first and main symptom, says the Alzheimer's Society."
+  },
+  {
+   "id": "c60",
+   "classification": "supported",
+   "evidence": "Alz Soc: Alzheimer's most common type.",
+   "url": "https://www.alzheimers.org.uk/about-dementia/types-dementia",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c61",
+   "classification": "supported",
+   "evidence": "NHS treatment page.",
+   "url": "https://www.nhs.uk/conditions/alzheimers-disease/treatment/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c62",
+   "classification": "supported",
+   "evidence": "NHS treatment page (CST, reminiscence) and NHS dementia treatment page (cognitive rehabilitation).",
+   "url": "https://www.nhs.uk/conditions/dementia/about-dementia/treatment/",
+   "action": "edited",
+   "newSentence": ""
+  },
+  {
+   "id": "c63",
+   "classification": "unsupported",
+   "evidence": "Route to care kept; attribution corrected (SLaM trust vs Alz Soc); 'needs urgent help' now cited to both routes.",
+   "url": "https://slam.nhs.uk/sudden-confusion",
+   "action": "edited",
+   "newSentence": "Different from slow progression: NHS services advise A&E or 999, and the Alzheimer's Society advises an urgent GP appointment or NHS 111."
+  },
+  {
+   "id": "c64",
+   "classification": "supported",
+   "evidence": "GP is usual first contact for gradual memory problems (NHS trust page).",
+   "url": "https://slam.nhs.uk/sudden-confusion",
+   "action": "edited",
+   "newSentence": "For gradual memory problems, the GP is the usual first point of contact."
+  },
+  {
+   "id": "c65",
+   "classification": "supported",
+   "evidence": "Alz Soc: around 19 in 20 people with dementia have one of four main types.",
+   "url": "https://www.alzheimers.org.uk/about-dementia/types-dementia",
+   "action": "edited",
+   "newSentence": "(sentence added to restore word count)"
+  },
+  {
+   "id": "c66",
+   "classification": "supported",
+   "evidence": "Alz Soc: mixed dementia affects at least 1 in 10 people diagnosed with dementia.",
+   "url": "https://www.alzheimers.org.uk/about-dementia/types-dementia/what-is-mixed-dementia",
+   "action": "edited",
+   "newSentence": "(sentence added to restore word count)"
+  },
+  {
+   "id": "c67",
+   "classification": "supported",
+   "evidence": "Alz Soc: younger people less likely to have memory loss as first symptom; more likely a rarer form such as FTD.",
+   "url": "https://www.alzheimers.org.uk/about-dementia/types-dementia/young-onset-dementia",
+   "action": "edited",
+   "newSentence": "(sentence added to restore word count)"
+  },
+  {
+   "id": "c68",
+   "classification": "supported",
+   "evidence": "Retrieved: CT can check for stroke or tumour (Alz Soc tests and scans).",
+   "url": "https://www.alzheimers.org.uk/about-dementia/dementia-diagnosis/how-to-get-dementia-diagnosis/tests-and-scans",
+   "action": "edited",
+   "newSentence": "(sentence added to restore word count)"
+  },
+  {
+   "id": "c69",
+   "classification": "supported",
+   "evidence": "Local councils provide information on aids and adaptations; memory services can offer memory aids and strategies (NHS inform/NHS 111 Wales).",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/brain-nerves-and-spinal-cord/dementia/living-with-dementia/living-well-with-dementia/",
+   "action": "edited",
+   "newSentence": "(sentence added to restore word count)"
+  },
+  {
+   "id": "c70",
+   "classification": "supported",
+   "evidence": "Alz Soc delirium: once the cause is treated symptoms usually improve in a few days for many people, some have longer problems.",
+   "url": "https://www.alzheimers.org.uk/get-support/living-with-dementia/delirium",
+   "action": "edited",
+   "newSentence": "(sentence added to restore word count)"
+  },
+  {
+   "id": "c71",
+   "classification": "supported",
+   "evidence": "Alz Soc: lecanemab and donanemab approved for use in the UK but not on the NHS.",
+   "url": "https://www.alzheimers.org.uk/news/2024-11-19/alzheimers-drug-lecanemab-approved-use-uk-not-nhs",
+   "action": "edited",
+   "newSentence": "(sentence added to restore word count)"
+  }
+ ],
+ "notes": "Search tool returned blended summaries; several statements rest on NHS trust, NHS inform and NHS 111 Wales pages rather than nhs.uk (sudden confusion A&E/999 advice from slam.nhs.uk). NHS and Alzheimer's Society advice on sudden confusion differs (A&E/999 vs urgent GP/NHS 111); both routes are shown. NICE lecanemab/donanemab position was in flux (final draft negative, appeals reported); sentence kept time-neutral. Claims c65-c71 are sentences added in the final text. Textbook sentences: c07, c19, c57 (3 of 71). Claims c13/c14 merged in final text. Several claims cite the exact search-returned URL but the summary did not always say which page carried a point."
+}

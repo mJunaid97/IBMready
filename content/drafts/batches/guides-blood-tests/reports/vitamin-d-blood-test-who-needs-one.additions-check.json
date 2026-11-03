@@ -1,0 +1,50 @@
+{
+ "id": "vitamin-d-blood-test-who-needs-one",
+ "searchesUsed": 3,
+ "checks": [
+  {
+   "index": 0,
+   "classification": "supported",
+   "evidence": "Returned text: routine test measures 25(OH)D, the storage form, widely treated as best marker of overall status; persists longer in blood than active form.",
+   "url": "https://labtestsonline.org.uk/tests/vitamin-d",
+   "action": "kept"
+  },
+  {
+   "index": 1,
+   "classification": "supported",
+   "evidence": "Returned text: liver produces 25(OH)D first, then kidneys produce the active 1,25-dihydroxy form.",
+   "url": "https://labtestsonline.org.uk/tests/vitamin-d",
+   "action": "kept"
+  },
+  {
+   "index": 2,
+   "classification": "wrong",
+   "evidence": "Returned NHS text says children aged 1 to 4 should take a daily supplement all year; 'under five drops all year' is not stated as written (babies differ) and original source was not returned. Dose omitted.",
+   "url": "https://www.nhs.uk/conditions/vitamins-and-minerals/vitamin-d/",
+   "action": "edited",
+   "newSentence": "The NHS advises that children aged 1 to 4 should take a daily vitamin D supplement throughout the year."
+  },
+  {
+   "index": 3,
+   "classification": "unsupported",
+   "evidence": "NHS Inform text lists people with low or no sun exposure, including housebound people and care home residents, as higher risk; aged 65+ was only in a regional guideline, not NHS Inform.",
+   "url": "https://www.nhsinform.scot/healthy-living/food-and-nutrition/eating-well/vitamin-d/",
+   "action": "edited",
+   "newSentence": "NHS Inform lists people who are housebound, stay indoors for long periods or live in a care home as being at higher risk because they get little sun exposure."
+  },
+  {
+   "index": 4,
+   "classification": "unsupported",
+   "evidence": "Search returned that some UK guidance suggests retesting after about three months, but the text was not attributed to the eput.nhs.uk formulary and other guidance says routine retesting is unnecessary.",
+   "url": "https://eput.nhs.uk/wp-content/uploads/2025/04/section-23-management-of-vitamin-d-deficiency-updated-may-2024.pdf",
+   "action": "removed"
+  },
+  {
+   "index": 5,
+   "classification": "unsupported",
+   "evidence": "A UK guideline was said to call non-skeletal evidence inconsistent/absent, but the returned text did not tie it to the RNOH policy; RNOH page was not returned.",
+   "url": "https://www.rnoh.nhs.uk/application/files/2915/7252/2096/policy_on_the_diagnosis_and_management_of_vitamin_d_deficiency_or_insufficiency.pdf",
+   "action": "removed"
+  }
+ ]
+}

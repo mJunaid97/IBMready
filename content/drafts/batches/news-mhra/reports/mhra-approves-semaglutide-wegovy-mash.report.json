@@ -1,0 +1,90 @@
+{
+ "id": "mhra-approves-semaglutide-wegovy-mash",
+ "searchesUsed": 1,
+ "counts": {
+  "supported": 7,
+  "textbook": 1,
+  "unsupported": 1,
+  "wrong": 0,
+  "unsafe": 0,
+  "unchecked": 0
+ },
+ "claims": [
+  {
+   "id": "c01",
+   "classification": "supported",
+   "sentence": "The MHRA approved Wegovy (semaglutide) on 3 July 2026 for MASH, a form of liver disease, in adults with moderate-to-advanced liver fibrosis.",
+   "evidence": "Page: approved Wegovy for MASH in adults with moderate-to-advanced liver fibrosis; authorisation granted 3 July 2026.",
+   "url": "https://www.gov.uk/government/news/semaglutide-wegovy-approved-to-treat-form-of-liver-disease",
+   "action": "kept"
+  },
+  {
+   "id": "c02",
+   "classification": "supported",
+   "sentence": "The MHRA approved Wegovy (semaglutide) on 3 July 2026 for MASH in adults with moderate-to-advanced liver fibrosis.",
+   "evidence": "Same as above.",
+   "url": "https://www.gov.uk/government/news/semaglutide-wegovy-approved-to-treat-form-of-liver-disease",
+   "action": "kept"
+  },
+  {
+   "id": "c03",
+   "classification": "supported",
+   "sentence": "The approval is conditional on further results from an ongoing study being submitted.",
+   "evidence": "Page: approval is on the condition that further results from an ongoing study are submitted.",
+   "url": "https://www.gov.uk/government/news/semaglutide-wegovy-approved-to-treat-form-of-liver-disease",
+   "action": "kept"
+  },
+  {
+   "id": "c04",
+   "classification": "supported",
+   "sentence": "The announcement says people with MASH cannot yet get semaglutide for this condition on the NHS.",
+   "evidence": "Page: 'Patients with MASH are not currently able to get semaglutide to treat this condition on the NHS.'",
+   "url": "https://www.gov.uk/government/news/semaglutide-wegovy-approved-to-treat-form-of-liver-disease",
+   "action": "kept"
+  },
+  {
+   "id": "c05",
+   "classification": "supported",
+   "sentence": "The MHRA says it has approved Wegovy (semaglutide) for MASH in adults with moderate-to-advanced liver fibrosis.",
+   "evidence": "Same as c01.",
+   "url": "https://www.gov.uk/government/news/semaglutide-wegovy-approved-to-treat-form-of-liver-disease",
+   "action": "kept"
+  },
+  {
+   "id": "c06",
+   "classification": "textbook",
+   "sentence": "MASH stands for metabolic dysfunction-associated steatohepatitis, a form of liver disease linked to fat build-up and inflammation in the liver.",
+   "evidence": "Retrieved text names the condition 'metabolic-associated steatohepatitis' and says nothing about fat build-up; expansion of MASH as a liver disease is textbook.",
+   "url": "https://www.gov.uk/government/news/semaglutide-wegovy-approved-to-treat-form-of-liver-disease",
+   "action": "edited",
+   "newSentence": "MASH (metabolic dysfunction-associated steatohepatitis) is a form of liver disease."
+  },
+  {
+   "id": "c07",
+   "classification": "supported",
+   "sentence": "The approval is conditional: the company must submit further results from an ongoing study in adults with MASH and moderate to advanced liver scarring.",
+   "evidence": "Page: conditional on further results from an ongoing study in adults with MASH and moderate to advanced liver scarring being submitted.",
+   "url": "https://www.gov.uk/government/news/semaglutide-wegovy-approved-to-treat-form-of-liver-disease",
+   "action": "kept"
+  },
+  {
+   "id": "c08",
+   "classification": "supported",
+   "sentence": "The announcement states that people with MASH cannot yet get semaglutide for this condition on the NHS.",
+   "evidence": "Same as c04.",
+   "url": "https://www.gov.uk/government/news/semaglutide-wegovy-approved-to-treat-form-of-liver-disease",
+   "action": "kept"
+  },
+  {
+   "id": "c09",
+   "classification": "unsupported",
+   "sentence": "The site's pages on fatty liver disease and semaglutide give background.",
+   "evidence": "Not a statement from the source page; an internal-link sentence the retrieved text does not contain.",
+   "url": "https://www.gov.uk/government/news/semaglutide-wegovy-approved-to-treat-form-of-liver-disease",
+   "action": "removed"
+  }
+ ],
+ "dateConfirmed": "2026-07-03",
+ "dateEvidence": "Retrieved GOV.UK text: 'Authorisation for this new indication for semaglutide (Wegovy) was granted on 3 July 2026 to Novo Nordisk.' This is the grant date quoted in the announcement; the page's own publication stamp was not shown by the search tool.",
+ "notes": "3 July is the authorisation date as quoted in the release; the page's own publication stamp was not directly readable. Low risk. Brief is otherwise safe to keep."
+}

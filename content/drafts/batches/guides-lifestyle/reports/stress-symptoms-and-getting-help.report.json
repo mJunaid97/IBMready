@@ -1,0 +1,198 @@
+{
+ "id": "stress-symptoms-and-getting-help",
+ "searchesUsed": 9,
+ "counts": {
+  "supported": 15,
+  "textbook": 0,
+  "unsupported": 10,
+  "wrong": 0,
+  "unchecked": 0,
+  "unsafe": 0
+ },
+ "claims": [
+  {
+   "id": "c01",
+   "classification": "unsupported",
+   "evidence": "Retrieved NHS 'Get help with stress' text says most people feel stressed sometimes, some find it helpful or motivating, and that if stress is affecting life there are things that may help. I could not confirm the specific 'GP or NHS 111 when it affects daily life' advice; the 111/urgent GP wording retrieved belongs to urgent (non-emergency) mental health help.",
+   "url": "https://www.nhs.uk/mental-health/feelings-symptoms-behaviours/feelings-and-symptoms/stress/",
+   "action": "edited",
+   "newSentence": "Stress is a reaction to mental or emotional pressure that can affect mood, body and behaviour, and the NHS says support is available when it affects daily life."
+  },
+  {
+   "id": "c02",
+   "classification": "supported",
+   "evidence": "Every Mind Matters stress page returned as 'Stress is usually a reaction to mental or emotional pressure. It's often related to feeling like you're losing control over something, but sometimes there's no obvious cause.' Caveat: this wording came back in a search whose query quoted it, so treat as moderately confident.",
+   "url": "https://www.nhs.uk/every-mind-matters/mental-health-issues/stress/",
+   "action": "kept"
+  },
+  {
+   "id": "c03",
+   "classification": "supported",
+   "evidence": "NHS stress pages list emotional changes (irritable, angry, tearful), physical signs (headaches, stomach problems, muscle tension, dizziness) and behaviour changes such as drinking or smoking more.",
+   "url": "https://www.nhs.uk/mental-health/feelings-symptoms-behaviours/feelings-and-symptoms/stress/",
+   "action": "kept"
+  },
+  {
+   "id": "c04",
+   "classification": "unsupported",
+   "evidence": "Could not retrieve an NHS statement that long-term stress leads to burnout; the only burnout text returned was from non-NHS/patent sources. What was retrieved (Every Mind Matters): too much stress can affect mood, the body and relationships.",
+   "url": "https://www.nhs.uk/every-mind-matters/mental-health-issues/stress/",
+   "action": "edited",
+   "newSentence": "The NHS says too much stress can affect mood, the body and relationships."
+  },
+  {
+   "id": "c05",
+   "classification": "supported",
+   "evidence": "NHS stress page and NHS Talking Therapies pages: refer yourself directly without a GP referral if aged 18 or over (16 or 17 in some areas). Doubt: one NHS page says registration with a GP is needed, another says it may not be; the sentence does not touch this.",
+   "url": "https://www.nhs.uk/mental-health/feelings-symptoms-behaviours/feelings-and-symptoms/stress/",
+   "action": "kept"
+  },
+  {
+   "id": "c06",
+   "classification": "supported",
+   "evidence": "As c02: Every Mind Matters stress page, 'usually a reaction to mental or emotional pressure... often related to feeling like you're losing control... sometimes no obvious cause'.",
+   "url": "https://www.nhs.uk/every-mind-matters/mental-health-issues/stress/",
+   "action": "kept"
+  },
+  {
+   "id": "c07",
+   "classification": "supported",
+   "evidence": "NHS 111 Wales stress page lists triggers: work pressure, relationship difficulties/family, financial problems, illness, injury and bereavement. Sentence says 'it lists', which fits; the page is NHS 111 Wales rather than NHS England.",
+   "url": "https://111.wales.nhs.uk/Stress",
+   "action": "kept"
+  },
+  {
+   "id": "c08",
+   "classification": "unsupported",
+   "evidence": "Retrieved: NHS says most people feel stressed sometimes and some find stress helpful or even motivating, and that if it affects life there are things to try. 'Becomes a problem when constant' / 'all the time' was not confirmed in returned text.",
+   "url": "https://www.nhs.uk/mental-health/feelings-symptoms-behaviours/feelings-and-symptoms/stress/",
+   "action": "edited",
+   "newSentence": "The NHS says most people feel stressed sometimes and some find stress helpful or even motivating, but that if it is affecting life there are things that may help."
+  },
+  {
+   "id": "c09",
+   "classification": "unsupported",
+   "evidence": "Burnout wording not confirmed from any NHS text returned (see c04). Duplicates c04 and the summary.",
+   "url": "https://www.nhs.uk/every-mind-matters/mental-health-issues/stress/",
+   "action": "edited",
+   "newSentence": "The NHS says too much stress can affect mood, the body and relationships."
+  },
+  {
+   "id": "c10",
+   "classification": "unsupported",
+   "evidence": "Returned text confirms irritable, angry and tearful only; 'worry' and 'feeling overwhelmed' were not seen.",
+   "url": "https://www.nhs.uk/every-mind-matters/mental-health-issues/stress/",
+   "action": "edited",
+   "newSentence": "The NHS says stress can affect emotions, causing feelings such as irritability, anger and tearfulness."
+  },
+  {
+   "id": "c11",
+   "classification": "unsupported",
+   "evidence": "Returned lists confirm headaches, stomach problems, muscle tension and dizziness. 'Muscle pain' was not seen (tension is the word returned). 'Rashes' came only from an unclear-source snippet.",
+   "url": "https://www.nhs.uk/mental-health/feelings-symptoms-behaviours/feelings-and-symptoms/stress/",
+   "action": "edited",
+   "newSentence": "Physical symptoms listed include headaches, stomach problems, muscle tension and dizziness."
+  },
+  {
+   "id": "c12",
+   "classification": "supported",
+   "evidence": "Every Mind Matters: 'sometimes, stress causes high blood pressure and chest pains, but these symptoms should stop when your stress goes'. Ledger URL (NHS 111 Wales) did not carry it; the Every Mind Matters page did. Risk note: chest pain can have other causes; consider adding a route, but that would need a sourced sentence. | Author removed: mentions chest pain without a care route and no sourced route sentence was retrieved.",
+   "url": "https://www.nhs.uk/every-mind-matters/mental-health-issues/stress/",
+   "action": "removed"
+  },
+  {
+   "id": "c13",
+   "classification": "unsupported",
+   "evidence": "Returned NHS-trust text confirms sleeping problems, loss of appetite and drinking or smoking more. 'Sleeping too much', 'eating more' and 'avoiding people or places' were not confirmed.",
+   "url": "https://talkingtherapies.cnwl.nhs.uk/how-we-can-help/problems-we-help/after-traumatic-event",
+   "action": "edited",
+   "newSentence": "Behaviour can change too, for example with sleep problems, loss of appetite, or drinking or smoking more."
+  },
+  {
+   "id": "c14",
+   "classification": "supported",
+   "evidence": "NHS inform '10 stress busters': identifying the cause is the first step; set small targets you can achieve; focus energy on things you can change. Ledger cited the 'what to do' page; the stress-busters page carried it.",
+   "url": "https://www.nhsinform.scot/healthy-living/mental-wellbeing/stress/10-stress-busters/",
+   "action": "kept"
+  },
+  {
+   "id": "c15",
+   "classification": "supported",
+   "evidence": "Northumbria NHS self-help guide: 'Controlled breathing, deep muscle relaxation, mindful breathing and relaxing activity can all help in reducing tension and switching off some of the physical signs of stress.' Ledger cited NHS inform, but this wording came from the Northumbria/CNTW guide. Sentence does not name a publisher, so acceptable.",
+   "url": "https://www.northumbria.nhs.uk/application/files/4916/5236/0573/Stress.pdf",
+   "action": "kept"
+  },
+  {
+   "id": "c16",
+   "classification": "supported",
+   "evidence": "NHS 'Get help with stress' suggests talking to someone you trust; the page also points to Samaritans 116 123.",
+   "url": "https://www.nhs.uk/mental-health/feelings-symptoms-behaviours/feelings-and-symptoms/stress/",
+   "action": "kept"
+  },
+  {
+   "id": "c17",
+   "classification": "unsupported",
+   "evidence": "No returned text mentioned CBT videos or guides for stress on the NHS inform page. Could not confirm.",
+   "url": "https://www.nhsinform.scot/healthy-living/mental-wellbeing/stress/what-to-do-if-you-are-struggling-with-stress/",
+   "action": "removed"
+  },
+  {
+   "id": "c18",
+   "classification": "supported",
+   "evidence": "NHS inform: advises against using alcohol, cigarettes, gambling or drugs to relieve stress because they can all contribute to poor mental health.",
+   "url": "https://www.nhsinform.scot/healthy-living/mental-wellbeing/stress/10-stress-busters/",
+   "action": "kept"
+  },
+  {
+   "id": "c19",
+   "classification": "unsupported",
+   "evidence": "The returned text supports 'NHS 111 or an urgent GP appointment' only for urgent, non-emergency help, not as a general route 'if stress affects daily life'. Reworded to what was retrieved, with the route named.",
+   "url": "https://www.nhs.uk/every-mind-matters/urgent-support/",
+   "action": "edited",
+   "newSentence": "If urgent help is needed for mental health but it is not an emergency, the NHS says to use NHS 111 online or call 111 and choose the mental health option, or to ask for an urgent GP appointment."
+  },
+  {
+   "id": "c20",
+   "classification": "supported",
+   "evidence": "NHS stress page and NHS Talking Therapies pages: 'aged 18 or over (and aged 16 or 17 in some areas)', no GP referral needed. Sentence wording ('in some areas the minimum age is 16') matches. Not for use as an England-only claim in Scotland/Wales; sentence says England, fine.",
+   "url": "https://www.nhs.uk/mental-health/feelings-symptoms-behaviours/feelings-and-symptoms/stress/",
+   "action": "kept"
+  },
+  {
+   "id": "c21",
+   "classification": "supported",
+   "evidence": "Crisis route checked against NHS pages. (1) 999: NHS says if someone is in danger, has seriously harmed themselves or may be about to, call 999 or go to A&E (Help for suicidal thoughts / urgent support). (2) NHS 111: for urgent but non-emergency help, use NHS 111 online or call 111 and select the mental health option (England wording; Wales and Scotland use different lines). (3) Samaritans 116 123: free, runs around the clock (NHS Every Mind Matters urgent support page). All three parts carried. Basis was wrongly labelled textbook and the ledger URL (NHS inform stress) did not carry the route; it is sourced, not textbook. Author may wish to add 'in England' to the 111 mental health option.",
+   "url": "https://www.nhs.uk/every-mind-matters/urgent-support/",
+   "action": "kept"
+  },
+  {
+   "id": "c22",
+   "classification": "supported",
+   "evidence": "Northumbria NHS stress self-help guide describes stress as the body's reaction to feeling threatened and says mild pressure can motivate.",
+   "url": "https://www.northumbria.nhs.uk/application/files/4916/5236/0573/Stress.pdf",
+   "action": "kept"
+  },
+  {
+   "id": "c23",
+   "classification": "supported",
+   "evidence": "BHF 'Effects of stress on the body': brain signals the body to release hormones such as adrenaline and cortisol.",
+   "url": "https://www.bhf.org.uk/informationsupport/heart-matters-magazine/wellbeing/stress-and-the-body",
+   "action": "kept"
+  },
+  {
+   "id": "c24",
+   "classification": "supported",
+   "evidence": "BHF: if the response keeps switching on repeatedly it can take its toll on the body over time.",
+   "url": "https://www.bhf.org.uk/informationsupport/heart-matters-magazine/wellbeing/stress-and-the-body",
+   "action": "kept"
+  },
+  {
+   "id": "c25",
+   "classification": "unsupported",
+   "evidence": "Search of the Northumbria guide returned that prolonged pressure raises the risk of a more severe stress reaction (sibling guide), not the exact 'unmanaged stress can be bad for health' wording. c24 already covers the harm point, so removed.",
+   "url": "https://www.northumbria.nhs.uk/application/files/4916/5236/0573/Stress.pdf",
+   "action": "removed"
+  }
+ ],
+ "notes": "Instruction-style wording: none aimed at an individual in the ledger sentences (all attributed 'the NHS says/suggests'); c19 as rewritten stays descriptive. Urgency statements: c12 (chest pains from stress) has no route; c19 and c21 give routes. Crisis route in c21 fully carried by NHS pages (999, 111 mental health option, Samaritans 116 123 free at any time). NHS 111 mental health option is England wording; Wales (111 / C.A.L.L. 0800 132 737) and Scotland (NHS 24 on 111, Breathing Space) differ, so UK-wide copy may need a nation note. Several sentences were attributed to the wrong URL in the ledger (c12, c14, c15, c21). Burnout wording could not be confirmed from NHS text and was reworded. Search tool results blend pages, so c02/c06 loss-of-control wording is moderately confident only."
+}

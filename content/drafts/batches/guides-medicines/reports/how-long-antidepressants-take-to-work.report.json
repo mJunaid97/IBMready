@@ -1,0 +1,134 @@
+{
+ "id": "how-long-antidepressants-take-to-work",
+ "searchesUsed": 7,
+ "counts": {
+  "supported": 28,
+  "textbook": 2,
+  "unsupported": 14,
+  "wrong": 1,
+  "unsafe": 0,
+  "unchecked": 0
+ },
+ "claims": [
+  {
+   "id": "c01",
+   "classification": "unsupported",
+   "evidence": "Sertraline uses (OCD, PTSD etc.) not in verifier retrieval",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c02",
+   "classification": "unsupported",
+   "evidence": "'Most adults can take sertraline' / heart, glaucoma, epilepsy not retrieved",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c03",
+   "classification": "unsupported",
+   "evidence": "Citalopram common effects: retrieved list was tiredness, nervous, dry mouth, sweating (not headaches/nausea)",
+   "url": "",
+   "action": "edited"
+  },
+  {
+   "id": "c04",
+   "classification": "unsupported",
+   "evidence": "'some can last longer' not retrieved",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c05",
+   "classification": "unsupported",
+   "evidence": "'feel worse in first weeks of citalopram' only in a Camden/Islington trust guide, not NHS page",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c06",
+   "classification": "unsupported",
+   "evidence": "Long-lasting sexual effects: only in medicines.org.uk leaflet; NHS lists sexual problems as common",
+   "url": "",
+   "action": "edited"
+  },
+  {
+   "id": "c07",
+   "classification": "unsupported",
+   "evidence": "NHS 111 for serious side effect / self-harm not retrieved from medicine page",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c08",
+   "classification": "unsupported",
+   "evidence": "Anaphylaxis 999 advice not retrieved",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c09",
+   "classification": "unsupported",
+   "evidence": "6 weeks citalopram talk to doctor: not retrieved; retrieved citalopram text says 4 to 6 weeks",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c10",
+   "classification": "unsupported",
+   "evidence": "4 weeks no benefit: only an older NHS dosage page; main page 'what if' section not surfaced",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c11",
+   "classification": "unsupported",
+   "evidence": "Missed doses cause withdrawal: not in retrieved NICE text",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c12",
+   "classification": "unsupported",
+   "evidence": "Withdrawal not same as relapse: not retrieved",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c13",
+   "classification": "unsupported",
+   "evidence": "NHS 111 Wales withdrawal severity sentence: not retrieved",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c14",
+   "classification": "unsupported",
+   "evidence": "Recurrent depression 'much longer': retrieved sources differ (Scottish guidance up to 2 years, Wales indefinitely), NHS page text not retrieved",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c15",
+   "classification": "wrong",
+   "evidence": "Talking therapies: retrieved NHS says adults 18+ in England can self-refer without a GP referral, not 'registered with a GP'; not for crisis",
+   "url": "",
+   "action": "edited"
+  },
+  {
+   "id": "c16",
+   "classification": "supported",
+   "evidence": "All other sentences matched retrieved NHS/NICE text (timings 1-2 weeks, up to 8 weeks, 4-6 weeks for both medicines; alcohol and grapefruit for sertraline; tapering; 6 months to a year; 999/111/Samaritans)",
+   "url": "https://www.nhs.uk/medicines/antidepressants/",
+   "action": "kept"
+  },
+  {
+   "id": "c17",
+   "classification": "textbook",
+   "evidence": "SSRI classification; pharmacist/GP signposting sentence",
+   "url": "",
+   "action": "kept"
+  }
+ ],
+ "notes": "Final body is about 616 words (below 700 because unsupported text was cut, not padded). 1-2 weeks, up to 8 weeks and 4-6 weeks appear in NHS excerpts; one NHS dosage page gives 4 weeks for no improvement, which differs from the 4-6 weeks on medicine pages, so that sentence was removed. Crisis route (999, NHS 111 mental health option, Samaritans 116 123) retained and retrieved. Sertraline stopping sentence rests on search summaries that blend pages."
+}

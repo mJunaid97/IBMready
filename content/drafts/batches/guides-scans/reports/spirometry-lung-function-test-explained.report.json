@@ -1,0 +1,339 @@
+{
+ "id": "spirometry-lung-function-test-explained",
+ "searchesUsed": 10,
+ "counts": {
+  "supported": 20,
+  "textbook": 0,
+  "unsupported": 14,
+  "wrong": 3,
+  "unsafe": 1,
+  "unchecked": 0
+ },
+ "claims": [
+  {
+   "id": "c01",
+   "sentence": "Spirometry is the most common lung function test.",
+   "classification": "supported",
+   "evidence": "Retrieved review text calls spirometry the most commonly used lung function test (non-UK academic source).",
+   "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10679964/",
+   "action": "kept"
+  },
+  {
+   "id": "c02",
+   "sentence": "It measures how much air the lungs can hold and how quickly air can be blown out.",
+   "classification": "wrong",
+   "evidence": "Retrieved text: spirometry measures how much and how fast air can be exhaled; lung volumes need a separate lung volume test.",
+   "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10679964/",
+   "action": "edited",
+   "newSentence": "It measures how much air a person can blow out and how quickly."
+  },
+  {
+   "id": "c03",
+   "sentence": "Lung function tests give an indication of the capacity of the lungs and how clear the airways are.",
+   "classification": "unsupported",
+   "evidence": "Retrieved: spirometry is the main test for airflow obstruction; wider lung function tests assess lung volumes and gas exchange. Wording 'capacity ... how clear airways' not found.",
+   "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10679964/",
+   "action": "edited",
+   "newSentence": "Spirometry is the main test for detecting airflow obstruction, while other lung function tests measure lung volumes and gas exchange."
+  },
+  {
+   "id": "c04",
+   "sentence": "The person wears a nose clip so air goes through the mouth, and breathes through a mouthpiece into the lung function machine.",
+   "classification": "supported",
+   "evidence": "Retrieved: nose clip or holding the nose, lips sealed around mouthpiece.",
+   "url": "https://www.swbh.nhs.uk/wp-content/uploads/2012/06/Spirometry-testing-reversibility-testing-ML3744.pdf",
+   "action": "kept"
+  },
+  {
+   "id": "c05",
+   "sentence": "They breathe normally, take a deep breath in, and then blow out as hard and fast as possible.",
+   "classification": "supported",
+   "evidence": "Retrieved: deep breath in, then a forceful, fast breath out until the lungs feel empty.",
+   "url": "https://www.swbh.nhs.uk/wp-content/uploads/2012/06/Spirometry-testing-reversibility-testing-ML3744.pdf",
+   "action": "kept"
+  },
+  {
+   "id": "c06",
+   "sentence": "Each blow is repeated at least three times, with enough rest in between.",
+   "classification": "unsupported",
+   "evidence": "'At least three times' not found in retrieved text; one source says you may have to repeat the manoeuvre a number of times.",
+   "url": "https://www.swbh.nhs.uk/wp-content/uploads/2012/06/Spirometry-testing-reversibility-testing-ML3744.pdf",
+   "action": "edited",
+   "newSentence": "Each blow may be repeated several times, with rests in between."
+  },
+  {
+   "id": "c07",
+   "sentence": "The test usually takes about 15 minutes.",
+   "classification": "supported",
+   "evidence": "One NHS trust leaflet: the whole test normally takes around 15 minutes; others say 10 to 30 minutes.",
+   "url": "https://www.swbh.nhs.uk/wp-content/uploads/2012/06/Spirometry-testing-reversibility-testing-ML3744.pdf",
+   "action": "edited",
+   "newSentence": "One NHS trust says the test normally takes around 15 minutes."
+  },
+  {
+   "id": "c08",
+   "sentence": "One NHS practice suggests avoiding vigorous exercise for 30 minutes before the test.",
+   "classification": "supported",
+   "evidence": "Retrieved NHS sources: avoid vigorous exercise for about 30 minutes before.",
+   "url": "https://www.nhs.uk/tests-and-treatments/spirometry/",
+   "action": "kept"
+  },
+  {
+   "id": "c09",
+   "sentence": "The same guidance suggests wearing loose clothing, removing loose-fitting dentures and chewing gum, and emptying the bladder.",
+   "classification": "unsupported",
+   "evidence": "Loose clothing retrieved; dentures, chewing gum and bladder not retrieved.",
+   "url": "https://www.nhs.uk/tests-and-treatments/spirometry/",
+   "action": "edited",
+   "newSentence": "The same guidance suggests wearing loose clothing."
+  },
+  {
+   "id": "c10",
+   "sentence": "It also asks people to tell staff about a recent chest infection that needed antibiotics or steroids, or a heart attack in the last three months.",
+   "classification": "unsupported",
+   "evidence": "Retrieved: recent antibiotics or steroids can affect results; recent coughing up blood or surgery can make testing unsuitable. 'Heart attack in last three months' not retrieved.",
+   "url": "https://www.nhs.uk/tests-and-treatments/spirometry/",
+   "action": "edited",
+   "newSentence": "It also notes that a recent chest infection, or recent antibiotics or steroids, can affect the results."
+  },
+  {
+   "id": "c11",
+   "sentence": "Practices differ, so the appointment letter has the exact instructions.",
+   "classification": "unsupported",
+   "evidence": "Retrieved: stopping times for inhalers vary by drug and patients are told if they need to stop medicines; 'appointment letter' not retrieved.",
+   "url": "https://www.nhs.uk/tests-and-treatments/spirometry/",
+   "action": "edited",
+   "newSentence": "Preparation varies, and patients are told whether they need to stop any inhalers or medicines beforehand."
+  },
+  {
+   "id": "c12",
+   "sentence": "The test is often repeated after a reliever inhaler to check whether it helps the airways.",
+   "classification": "unsupported",
+   "evidence": "Retrieved: the repeat-after-inhaler test is sometimes done to investigate asthma or when the diagnosis is unclear, not always 'often'.",
+   "url": "https://www.nhs.uk/tests-and-treatments/spirometry/",
+   "action": "edited",
+   "newSentence": "The test is sometimes repeated after a reliever inhaler to check whether it helps the airways."
+  },
+  {
+   "id": "c13",
+   "sentence": "The person takes the test, uses the inhaler, waits a short time and repeats the test.",
+   "classification": "supported",
+   "evidence": "Retrieved: spirometry, then inhaler, a pause (10 to 40 minutes depending on the trust and medicine), then repeat.",
+   "url": "https://www.swbh.nhs.uk/wp-content/uploads/2012/06/Spirometry-testing-reversibility-testing-ML3744.pdf",
+   "action": "kept"
+  },
+  {
+   "id": "c14",
+   "sentence": "A clear improvement suggests that the airways respond to the medicine, which supports a diagnosis of asthma.",
+   "classification": "unsafe",
+   "evidence": "Retrieved: the comparison shows how much airways respond to medicine and helps check whether the inhaler helps breathing. 'Supports a diagnosis of asthma' not retrieved; NICE says a single normal result does not rule out asthma.",
+   "url": "https://www.swbh.nhs.uk/wp-content/uploads/2012/06/Spirometry-testing-reversibility-testing-ML3744.pdf",
+   "action": "edited",
+   "newSentence": "The comparison shows how much the airways respond to the medicine, and the test is sometimes used when asthma is being investigated."
+  },
+  {
+   "id": "c15",
+   "sentence": "Results are compared with predicted values for someone of the same height, age and sex.",
+   "classification": "supported",
+   "evidence": "Cornwall NHS guideline: predicted values are calculated from height, age and sex.",
+   "url": "https://doclibrary-rcht.cornwall.nhs.uk/GET/d10288341",
+   "action": "kept"
+  },
+  {
+   "id": "c16",
+   "sentence": "The laboratory report shows the reference values used for the comparison.",
+   "classification": "unsupported",
+   "evidence": "Retrieved: a typical report shows measured values, predicted values and percent predicted; 'reference values used' not specifically retrieved.",
+   "url": "https://doclibrary-rcht.cornwall.nhs.uk/GET/d10288341",
+   "action": "edited",
+   "newSentence": "A typical report shows the measured values alongside the predicted values."
+  },
+  {
+   "id": "c17",
+   "sentence": "In obstructive conditions such as asthma and chronic obstructive pulmonary disease (COPD), the airways narrow, making it harder for air to flow out of the lungs.",
+   "classification": "supported",
+   "evidence": "StatPearls/PMC: obstructive diseases raise resistance to airflow through partial or complete airway blockage; spirometry diagnoses asthma and COPD.",
+   "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK560880/",
+   "action": "kept"
+  },
+  {
+   "id": "c18",
+   "sentence": "Restrictive conditions are different, because they decrease the amount of air the lungs can hold.",
+   "classification": "supported",
+   "evidence": "StatPearls: restrictive disorders have smaller lung volumes, mainly lower total lung capacity.",
+   "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK560880/",
+   "action": "kept"
+  },
+  {
+   "id": "c19",
+   "sentence": "A respiratory doctor reviews the results and, if needed, arranges a follow-up appointment to explain them.",
+   "classification": "unsupported",
+   "evidence": "Royal Wolverhampton leaflet: results are discussed at the next clinic appointment with the consultant or GP. 'Respiratory doctor arranges follow-up' not retrieved.",
+   "url": "https://www.royalwolverhampton.nhs.uk/wp-content/uploads/2025/06/Spirometry.pdf",
+   "action": "edited",
+   "newSentence": "One NHS leaflet says results are discussed at the next clinic appointment with the consultant or GP."
+  },
+  {
+   "id": "c20",
+   "sentence": "If no follow-up is needed, the results go directly to the GP.",
+   "classification": "unsupported",
+   "evidence": "Direct routing of results to the GP not found.",
+   "url": "https://www.wsh.nhs.uk/CMS-Documents/Patient-leaflets/RespiratoryMedicine/5048-3LungFunction(Breathing)Tests.pdf",
+   "action": "removed"
+  },
+  {
+   "id": "c21",
+   "sentence": "NHS leaflets say there are no direct risks from lung function tests.",
+   "classification": "wrong",
+   "evidence": "Retrieved NHS leaflets mention dizziness or fainting, and rare serious complications (airway narrowing, collapsed lung); not 'no risks'.",
+   "url": "https://www.wsh.nhs.uk/CMS-Documents/Patient-leaflets/RespiratoryMedicine/5048-3LungFunction(Breathing)Tests.pdf",
+   "action": "edited",
+   "newSentence": "NHS leaflets describe the test as painless and non-invasive, with dizziness or fainting the most common side effects and more serious complications very rare."
+  },
+  {
+   "id": "c22",
+   "sentence": "The effort can be tiring, and people are given time to recover between tests.",
+   "classification": "unsupported",
+   "evidence": "Retrieved: exertion required can cause dizziness or fainting; 'tiring' and recovery time not retrieved.",
+   "url": "https://www.wsh.nhs.uk/CMS-Documents/Patient-leaflets/RespiratoryMedicine/5048-3LungFunction(Breathing)Tests.pdf",
+   "action": "edited",
+   "newSentence": "The test needs a good effort, which can make some people feel dizzy or faint."
+  },
+  {
+   "id": "c23",
+   "sentence": "Some people feel dizzy or faint, and coughing is common.",
+   "classification": "supported",
+   "evidence": "Retrieved: some patients feel dizzy or faint; coughing is common.",
+   "url": "https://www.wsh.nhs.uk/CMS-Documents/Patient-leaflets/RespiratoryMedicine/5048-3LungFunction(Breathing)Tests.pdf",
+   "action": "kept"
+  },
+  {
+   "id": "c24",
+   "sentence": "In spirometry the person breathes through a mouthpiece, with a nose clip, into a machine that measures airflow.",
+   "classification": "supported",
+   "evidence": "Nose clip and mouthpiece into a spirometer (retrieved).",
+   "url": "https://www.swbh.nhs.uk/wp-content/uploads/2012/06/Spirometry-testing-reversibility-testing-ML3744.pdf",
+   "action": "kept"
+  },
+  {
+   "id": "c25",
+   "sentence": "Each blow is repeated at least three times, with rests in between.",
+   "classification": "unsupported",
+   "evidence": "'At least three times' not found.",
+   "url": "https://www.swbh.nhs.uk/wp-content/uploads/2012/06/Spirometry-testing-reversibility-testing-ML3744.pdf",
+   "action": "edited",
+   "newSentence": "Each blow may be repeated several times, with rests in between."
+  },
+  {
+   "id": "c26",
+   "sentence": "Results are compared with values predicted for someone of the same height, age and sex.",
+   "classification": "supported",
+   "evidence": "Cornwall NHS guideline: predicted values from height, age and sex.",
+   "url": "https://doclibrary-rcht.cornwall.nhs.uk/GET/d10288341",
+   "action": "kept"
+  },
+  {
+   "id": "c27",
+   "sentence": "The test may be repeated after a reliever inhaler to see whether the airways open up.",
+   "classification": "supported",
+   "evidence": "Retrieved: sometimes repeated after an inhaler to see whether it helps breathing.",
+   "url": "https://www.swbh.nhs.uk/wp-content/uploads/2012/06/Spirometry-testing-reversibility-testing-ML3744.pdf",
+   "action": "edited",
+   "newSentence": "The test may be repeated after a reliever inhaler to see whether it helps breathing."
+  },
+  {
+   "id": "c28",
+   "sentence": "Spirometry measures how much air the lungs hold and how fast it can be blown out. This guide covers the test, preparation and what results are compared with.",
+   "classification": "wrong",
+   "evidence": "Spirometry measures air blown out and its speed, not how much the lungs hold.",
+   "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10679964/",
+   "action": "edited",
+   "newSentence": "Spirometry measures how much air can be blown out and how fast. This guide covers the test, preparation and what results are compared with."
+  },
+  {
+   "sentence": "The NHS says spirometry measures how much air a person can breathe out in one breath, and it is also called a lung function test.",
+   "classification": "supported",
+   "evidence": "NHS spirometry page: measures how much air you can breathe out in one breath; also called a lung function test.",
+   "url": "https://www.nhs.uk/tests-and-treatments/spirometry/",
+   "action": "kept",
+   "id": "a29"
+  },
+  {
+   "sentence": "It is used to find out whether symptoms come from a lung condition such as asthma, COPD or pulmonary fibrosis (scarring of the lungs), to monitor an existing condition, or to check fitness before surgery.",
+   "classification": "supported",
+   "evidence": "NHS page: used to find out if symptoms are caused by asthma, COPD or pulmonary fibrosis, to monitor a condition, and to check health before surgery.",
+   "url": "https://www.nhs.uk/tests-and-treatments/spirometry/",
+   "action": "kept",
+   "id": "a30"
+  },
+  {
+   "sentence": "NHS England guidance says NICE recommends quality-assured spirometry as one of several objective tests for diagnosing asthma and COPD.",
+   "classification": "supported",
+   "evidence": "NHS England commissioning guidance: a suite of objective tests including quality-assured spirometry recommended by NICE for diagnosing asthma and COPD. NICE text itself not retrieved.",
+   "url": "https://www.england.nhs.uk/wp-content/uploads/2020/03/spirometry-commissioning-guidance.pdf",
+   "action": "kept",
+   "id": "a31"
+  },
+  {
+   "sentence": "The same guidance says normal spirometry does not rule out asthma, and that the results are read alongside the person's history.",
+   "classification": "unsupported",
+   "evidence": "Guidance says normal spirometry does not exclude asthma; 'read alongside history' not retrieved.",
+   "url": "https://www.england.nhs.uk/wp-content/uploads/2020/03/spirometry-commissioning-guidance.pdf",
+   "action": "edited",
+   "newSentence": "The same guidance says normal spirometry does not rule out asthma.",
+   "id": "a32"
+  },
+  {
+   "sentence": "The NHS says staff record the person's height and weight, because they are needed for the calculations.",
+   "classification": "unsupported",
+   "evidence": "Height and weight recording was in NHS trust leaflets (Kingston, Oxford), not confirmed on the NHS page itself.",
+   "url": "https://www.kingstonandrichmond.nhs.uk/patients-and-families/patient-leaflets/lung-function-breathing-tests",
+   "action": "edited",
+   "newSentence": "NHS trust leaflets say staff record the person's height and weight, which are entered into the machine for the calculations.",
+   "id": "a33"
+  },
+  {
+   "sentence": "The person sits beside the machine with a nose clip, breathes in deeply, seals their lips around the tube and breathes out as hard and fast as possible.",
+   "classification": "supported",
+   "evidence": "NHS page: breathe in fully, seal lips around the tube, blow out as hard and fast as possible; nose clip in trust leaflets. 'Beside the machine' not retrieved.",
+   "url": "https://www.nhs.uk/tests-and-treatments/spirometry/",
+   "action": "edited",
+   "newSentence": "The person uses a nose clip, breathes in deeply, seals their lips around the tube and breathes out as hard and fast as possible.",
+   "id": "a34"
+  },
+  {
+   "sentence": "The NHS says this is repeated two more times, and that staff may ask the person to use an inhaler and repeat the test.",
+   "classification": "supported",
+   "evidence": "NHS page: repeat 2 more times; may be asked to use an inhaler and repeat after a break.",
+   "url": "https://www.nhs.uk/tests-and-treatments/spirometry/",
+   "action": "kept",
+   "id": "a35"
+  },
+  {
+   "sentence": "The NHS says the appointment should take no more than an hour, and that dizziness during or just after the test is possible but should be brief.",
+   "classification": "supported",
+   "evidence": "NHS page: appointment no more than an hour; may feel dizzy or faint during or shortly after but should not last long.",
+   "url": "https://www.nhs.uk/tests-and-treatments/spirometry/",
+   "action": "kept",
+   "id": "a36"
+  },
+  {
+   "sentence": "The NHS says the test should not be done during a chest infection or soon after a heart attack or stroke.",
+   "classification": "supported",
+   "evidence": "NHS page: not safe with a chest infection, certain heart problems, or after a recent heart attack, stroke or certain surgery.",
+   "url": "https://www.nhs.uk/tests-and-treatments/spirometry/",
+   "action": "kept",
+   "id": "a37"
+  },
+  {
+   "sentence": "The NHS says results should arrive within a few weeks, and that a doctor explains what they mean if there is a problem.",
+   "classification": "unsupported",
+   "evidence": "Retrieval conflicted: one search reported the NHS page giving 'within a few weeks', a later one did not find it. A practice page says specialist reviews then sends to referring doctor who discusses days later. 'Doctor explains if there is a problem' not found.",
+   "url": "https://villamedicalcentrewirral.nhs.uk/spirometry-testing/",
+   "action": "edited",
+   "newSentence": "Trust and practice pages say the results are reviewed and then sent to the doctor who requested the test, who discusses them with the person.",
+   "id": "a38"
+  }
+ ],
+ "notes": "Extra facts: spirometry measures how much and how fast air is exhaled (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10679964/); NICE says a single normal spirometry result does not rule out asthma (https://www.nice.org.uk/guidance/htg776/documents/final-scope); NHS leaflets list stopping times for inhalers varying by drug (https://www.nhs.uk/tests-and-treatments/spirometry/); rare serious complications exist but dizziness/fainting are most common (https://www.wsh.nhs.uk/CMS-Documents/Patient-leaflets/RespiratoryMedicine/5048-3LungFunction(Breathing)Tests.pdf). The nhs.uk spirometry page itself was not retrieved verbatim; search summaries are lossy. | Round 2 additions (ids a..) checked separately: Conflict between two retrievals on 'within a few weeks' on nhs.uk; sentence 10 reworded conservatively. Re-check live NHS page."
+}

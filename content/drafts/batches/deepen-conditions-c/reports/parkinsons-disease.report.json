@@ -1,0 +1,655 @@
+{
+ "id": "parkinsons-disease",
+ "searchesUsed": 13,
+ "counts": {
+  "supported": 51,
+  "textbook": 1,
+  "unsupported": 28,
+  "wrong": 0,
+  "unsafe": 0,
+  "unchecked": 0
+ },
+ "claims": [
+  {
+   "id": "c01",
+   "classification": "supported",
+   "evidence": "NHS symptoms: symptoms usually start gradually and are mild at first.",
+   "url": "https://www.nhs.uk/conditions/parkinsons-disease/symptoms/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c02",
+   "classification": "supported",
+   "evidence": "NHS names tremor, slowness of movement (bradykinesia) and muscle stiffness (rigidity).",
+   "url": "https://www.nhs.uk/conditions/parkinsons-disease/symptoms/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c03",
+   "classification": "supported",
+   "evidence": "Tremor: shaking, usually begins in hand or arm, more likely when limb relaxed and resting.",
+   "url": "https://www.nhs.uk/conditions/parkinsons-disease/symptoms/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c04",
+   "classification": "supported",
+   "evidence": "Bradykinesia can result in a distinctive slow, shuffling walk with very small steps.",
+   "url": "https://www.nhs.uk/conditions/parkinsons-disease/symptoms/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c05",
+   "classification": "supported",
+   "evidence": "[sentence added] NHS: slowness of movement (bradykinesia) can make everyday tasks difficult.",
+   "url": "https://www.nhs.uk/conditions/parkinsons-disease/symptoms/",
+   "action": "edited",
+   "newSentence": "Slowed movement can make everyday tasks difficult."
+  },
+  {
+   "id": "c06",
+   "classification": "supported",
+   "evidence": "Rigidity can make it difficult to move around and make facial expressions, and can result in painful muscle cramps.",
+   "url": "https://www.nhs.uk/conditions/parkinsons-disease/symptoms/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c07",
+   "classification": "unsupported",
+   "evidence": "Retrieved text says only that the order and severity of symptoms differ for each person; 'unlikely to have all or most' not retrieved.",
+   "url": "https://www.nhs.uk/conditions/parkinsons-disease/symptoms/",
+   "action": "edited",
+   "newSentence": "The order in which symptoms develop and how severe they are differs for each person."
+  },
+  {
+   "id": "c08",
+   "classification": "unsupported",
+   "evidence": "Wording not returned by any search.",
+   "url": "https://www.nhs.uk/conditions/parkinsons-disease/symptoms/",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c09",
+   "classification": "supported",
+   "evidence": "Symptoms generally worsen over time; progression varies widely between people (search summary, NHS pages).",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/brain-nerves-and-spinal-cord/parkinsons-disease/",
+   "action": "edited",
+   "newSentence": "Symptoms generally worsen over time, and the speed of progression varies widely between people."
+  },
+  {
+   "id": "c10",
+   "classification": "supported",
+   "evidence": "NHS symptoms page lists non-motor symptoms (balance problems, loss of smell, sleep problems, mood changes).",
+   "url": "https://www.nhs.uk/conditions/parkinsons-disease/symptoms/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c11",
+   "classification": "supported",
+   "evidence": "NHS inform lists balance, smell, nerve pain, urinary problems, constipation, sweating, swallowing; NHS symptoms page adds depression, anxiety, memory problems. Attribution widened to NHS pages.",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/brain-nerves-and-spinal-cord/parkinsons-disease/",
+   "action": "edited",
+   "newSentence": "The NHS and NHS inform list balance problems, a reduced sense of smell, nerve pain, bladder problems, constipation, sweating, swallowing difficulties, and changes in mood or memory."
+  },
+  {
+   "id": "c12",
+   "classification": "textbook",
+   "evidence": "Balance problems may increase chance of a fall (NHS); falls causing injury is undisputed general knowledge.",
+   "url": "https://www.nhs.uk/conditions/parkinsons-disease/symptoms/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c13",
+   "classification": "supported",
+   "evidence": "NHS inform: loss of smell sometimes occurs several years before other symptoms.",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/brain-nerves-and-spinal-cord/parkinsons-disease/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c14",
+   "classification": "supported",
+   "evidence": "[sentence added] NHS symptoms page lists problems sleeping (insomnia) among non-motor symptoms.",
+   "url": "https://www.nhs.uk/conditions/parkinsons-disease/symptoms/",
+   "action": "edited",
+   "newSentence": "The NHS also lists problems sleeping (insomnia) among the symptoms that are not about movement."
+  },
+  {
+   "id": "c15",
+   "classification": "unsupported",
+   "evidence": "'Softer food' not in any retrieved text.",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/brain-nerves-and-spinal-cord/parkinsons-disease/",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c16",
+   "classification": "unsupported",
+   "evidence": "NHS 111 Wales lists depression, anxiety and dementia as symptoms; 'common' and 'later' not stated.",
+   "url": "https://111.wales.nhs.uk/encyclopaedia/p/article/parkinsonsdisease/",
+   "action": "edited",
+   "newSentence": "NHS 111 Wales lists depression, anxiety and dementia among the cognitive and psychiatric symptoms."
+  },
+  {
+   "id": "c17",
+   "classification": "unsupported",
+   "evidence": "Retrieved review text says late-stage patients develop motor and non-motor complications that dramatically impair quality of life; the specific list was blended across sources.",
+   "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3038575/",
+   "action": "edited",
+   "newSentence": "A review of advanced Parkinson's disease says that late-stage patients develop motor and non-motor complications that can greatly affect quality of life."
+  },
+  {
+   "id": "c18",
+   "classification": "supported",
+   "evidence": "NHS: No tests can conclusively show that you have Parkinson's disease.",
+   "url": "https://www.nhs.uk/conditions/parkinsons-disease/diagnosis/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c19",
+   "classification": "supported",
+   "evidence": "NHS: doctor will base a diagnosis on symptoms, medical history and a detailed physical examination.",
+   "url": "https://www.nhs.uk/conditions/parkinsons-disease/diagnosis/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c20",
+   "classification": "unsupported",
+   "evidence": "Not returned.",
+   "url": "https://www.nhs.uk/conditions/parkinsons-disease/diagnosis/",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c21",
+   "classification": "unsupported",
+   "evidence": "Symptoms mild at first is supported, but GP uncertainty is not stated.",
+   "url": "https://www.nhs.uk/conditions/parkinsons-disease/diagnosis/",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c22",
+   "classification": "unsupported",
+   "evidence": "Geriatrician not mentioned in any result; NICE advises referral to a specialist with expertise in differential diagnosis; UK primary-care review: neurologist or specialist.",
+   "url": "https://www.nice.org.uk/guidance/ng71/resources/parkinsons-disease-in-adults-pdf-1837629189061",
+   "action": "edited",
+   "newSentence": "If Parkinson's is suspected, the GP refers the person to a specialist, such as a neurologist, for a formal diagnosis."
+  },
+  {
+   "id": "c23",
+   "classification": "unsupported",
+   "evidence": "Blood tests and scans can exclude other causes; NICE NG71 advises against structural MRI to diagnose. Reworded generally.",
+   "url": "https://www.nice.org.uk/guidance/ng71/resources/parkinsons-disease-in-adults-pdf-1837629189061",
+   "action": "edited",
+   "newSentence": "Blood tests and brain scans may be used to rule out other conditions."
+  },
+  {
+   "id": "c24",
+   "classification": "supported",
+   "evidence": "NHS trust leaflets: DaTSCAN is a nuclear medicine brain scan used in diagnosing Parkinson's; DaT-SPECT images dopamine transporters.",
+   "url": "https://www.esht.nhs.uk/leaflet/nuclear-medicine-dat-brain-scan/",
+   "action": "edited",
+   "newSentence": "A DaT scan is a brain scan, done in a nuclear medicine department, that looks at dopamine transporters in the brain."
+  },
+  {
+   "id": "c25",
+   "classification": "unsupported",
+   "evidence": "Leaflet: can differentiate Parkinson's from conditions such as essential tremor; review: NICE recommends DaT scans only in selected cases. 'Often' and 'occasionally' not stated.",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10962518/",
+   "action": "edited",
+   "newSentence": "It can help tell Parkinson's apart from conditions such as essential tremor, and NICE recommends DaT scans only in selected cases."
+  },
+  {
+   "id": "c26",
+   "classification": "supported",
+   "evidence": "Leaflet: tracer injected into a vein; lie still; report sent to referring doctor, who will contact you to discuss results.",
+   "url": "https://www.esht.nhs.uk/leaflet/nuclear-medicine-dat-brain-scan/",
+   "action": "edited",
+   "newSentence": "For the scan, a tracer is injected into a vein and the person lies still, and the report goes to the referring doctor, who contacts the person to discuss the results."
+  },
+  {
+   "id": "c27",
+   "classification": "supported",
+   "evidence": "NHS: treatments are available to help relieve the symptoms and maintain quality of life, but there is no cure.",
+   "url": "https://www.nhs.uk/conditions/parkinsons-disease/treatment/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c28",
+   "classification": "unsupported",
+   "evidence": "NHS list wording not returned; physiotherapy, OT, speech therapy roles and DBS surgery are supported separately.",
+   "url": "https://111.wales.nhs.uk/encyclopaedia/p/article/parkinsonsdisease/",
+   "action": "edited",
+   "newSentence": "Treatment can include medicine, therapies such as physiotherapy, occupational therapy and speech and language therapy, and sometimes surgery."
+  },
+  {
+   "id": "c29",
+   "classification": "supported",
+   "evidence": "NHS: levodopa is the drug most people with Parkinson's eventually need.",
+   "url": "https://www.nhs.uk/conditions/parkinsons-disease/treatment/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c30",
+   "classification": "supported",
+   "evidence": "[sentence added] NHS: levodopa usually improves movement problems.",
+   "url": "https://www.nhs.uk/conditions/parkinsons-disease/treatment/",
+   "action": "edited",
+   "newSentence": "The NHS says levodopa usually improves movement problems."
+  },
+  {
+   "id": "c31",
+   "classification": "unsupported",
+   "evidence": "NHS: MAO-B inhibitors are an alternative to levodopa in early disease; formulary shows less improvement in motor symptoms than levodopa. 'Small' not stated.",
+   "url": "https://southwest.devonformularyguidance.nhs.uk/formulary/chapters/4-central-nervous-system/parkinsons-disease",
+   "action": "edited",
+   "newSentence": "MAO-B inhibitors are another option in early Parkinson's disease and give less improvement in movement symptoms than levodopa."
+  },
+  {
+   "id": "c32",
+   "classification": "unsupported",
+   "evidence": "Duodopa gel goes through a tube into the small intestine as a device-aided option when oral medication no longer controls symptoms; the draft's specific criteria were not stated.",
+   "url": "https://www.nbt.nhs.uk/our-services/a-z-services/movement-disorders-service/movement-disorders-patient-information/device-assisted-therapies-parkinsons",
+   "action": "edited",
+   "newSentence": "When tablets no longer give enough control, some people are considered for levodopa gel delivered through a tube into the small intestine."
+  },
+  {
+   "id": "c33",
+   "classification": "supported",
+   "evidence": "[sentence added] Device-aided options include continuous subcutaneous apomorphine infusion.",
+   "url": "https://www.nbt.nhs.uk/our-services/a-z-services/movement-disorders-service/movement-disorders-patient-information/device-assisted-therapies-parkinsons",
+   "action": "edited",
+   "newSentence": "Another device-aided option is a continuous infusion of apomorphine under the skin."
+  },
+  {
+   "id": "c34",
+   "classification": "supported",
+   "evidence": "DBS is a neurosurgical symptomatic therapy for eligible patients; it is not a cure.",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9531694/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c35",
+   "classification": "supported",
+   "evidence": "[sentence added] DBS involves implanting a 'brain pacemaker' with leads placed by stereotactic surgery in the subthalamic nucleus or globus pallidus interna.",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9531694/",
+   "action": "edited",
+   "newSentence": "It involves implanting a device, sometimes called a brain pacemaker, with leads placed in the brain by stereotactic surgery."
+  },
+  {
+   "id": "c36",
+   "classification": "unsupported",
+   "evidence": "Source says device-aided therapies are candidates once oral medication stops giving enough control; 'fluctuations' criterion not stated.",
+   "url": "https://www.nbt.nhs.uk/our-services/a-z-services/movement-disorders-service/movement-disorders-patient-information/device-assisted-therapies-parkinsons",
+   "action": "edited",
+   "newSentence": "It is considered for people whose symptoms are no longer well controlled by oral medicines."
+  },
+  {
+   "id": "c37",
+   "classification": "unsupported",
+   "evidence": "Not returned.",
+   "url": "https://www.nhs.uk/conditions/parkinsons-disease/treatment/",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c38",
+   "classification": "supported",
+   "evidence": "NHS 111 Wales: regular exercise is particularly important in helping relieve muscle stiffness, improving mood and relieving stress.",
+   "url": "https://111.wales.nhs.uk/encyclopaedia/p/article/parkinsonsdisease/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c39",
+   "classification": "unsupported",
+   "evidence": "Not returned.",
+   "url": "https://111.wales.nhs.uk/encyclopaedia/p/article/parkinsonsdisease/",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c40",
+   "classification": "supported",
+   "evidence": "NHS 111 Wales: many people have swallowing difficulties and problems with their speech.",
+   "url": "https://111.wales.nhs.uk/encyclopaedia/p/article/parkinsonsdisease/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c41",
+   "classification": "supported",
+   "evidence": "NHS 111 Wales: therapist can often help by teaching speaking and swallowing exercises or providing assistive technology.",
+   "url": "https://111.wales.nhs.uk/encyclopaedia/p/article/parkinsonsdisease/",
+   "action": "edited",
+   "newSentence": "A speech and language therapist can often help by teaching speaking and swallowing exercises."
+  },
+  {
+   "id": "c42",
+   "classification": "supported",
+   "evidence": "NHS 111 Wales: occupational therapist can identify areas of difficulty such as dressing or getting to local shops.",
+   "url": "https://111.wales.nhs.uk/encyclopaedia/p/article/parkinsonsdisease/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c43",
+   "classification": "supported",
+   "evidence": "[sentence added] Bucks Healthcare: occupational therapists provide equipment and strategies to maintain independence and safety at home.",
+   "url": "https://www.buckshealthcare.nhs.uk/our-services/parkinsons/",
+   "action": "edited",
+   "newSentence": "Occupational therapists can also provide equipment and strategies that help people stay independent and safe at home."
+  },
+  {
+   "id": "c44",
+   "classification": "unsupported",
+   "evidence": "Listing wording not returned; physiotherapist role is supported.",
+   "url": "https://111.wales.nhs.uk/encyclopaedia/p/article/parkinsonsdisease/",
+   "action": "edited",
+   "newSentence": "A physiotherapist can work on muscle stiffness and joint pain through movement and exercise."
+  },
+  {
+   "id": "c45",
+   "classification": "supported",
+   "evidence": "[sentence added] Nottingham NHS trust: Parkinson's nurse specialists can facilitate referrals to physiotherapist, occupational therapist, speech and language therapist (blended summary).",
+   "url": "https://www.nuh.nhs.uk/parkinsons/",
+   "action": "edited",
+   "newSentence": "Parkinson's nurse specialists can help arrange referrals to physiotherapy, occupational therapy and speech and language therapy."
+  },
+  {
+   "id": "c46",
+   "classification": "unsupported",
+   "evidence": "Balance-fall link supported but 'flags falls as a risk to be aware of' is not; duplicate of section 2.",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/brain-nerves-and-spinal-cord/parkinsons-disease/",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c47",
+   "classification": "unsupported",
+   "evidence": "First half supported (it can become increasingly difficult to carry out everyday activities without help); second half not stated.",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/brain-nerves-and-spinal-cord/parkinsons-disease/",
+   "action": "edited",
+   "newSentence": "As the condition advances, it can become increasingly difficult to carry out everyday activities without help."
+  },
+  {
+   "id": "c48",
+   "classification": "supported",
+   "evidence": "NHS 111 Wales: does not directly cause people to die, but strains the body and can make people more vulnerable to serious infections. Attribution changed to 111 Wales.",
+   "url": "https://111.wales.nhs.uk/encyclopaedia/p/article/parkinsonsdisease/",
+   "action": "edited",
+   "newSentence": "NHS 111 Wales says that Parkinson's disease does not directly cause people to die, but it can leave them more vulnerable to serious infections."
+  },
+  {
+   "id": "c49",
+   "classification": "unsupported",
+   "evidence": "Search explicitly found no source stating this.",
+   "url": "https://111.wales.nhs.uk/encyclopaedia/p/article/parkinsonsdisease/",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c50",
+   "classification": "unsupported",
+   "evidence": "Not returned.",
+   "url": "https://111.wales.nhs.uk/encyclopaedia/p/article/parkinsonsdisease/",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c51",
+   "classification": "supported",
+   "evidence": "NHS 111 Wales: with advances in treatment most people now have a normal or near-normal life expectancy.",
+   "url": "https://111.wales.nhs.uk/encyclopaedia/p/article/parkinsonsdisease/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c52",
+   "classification": "supported",
+   "evidence": "Single-centre retrospective study of 605 admissions: respiratory infection the largest cause (23%).",
+   "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10027758/",
+   "action": "edited",
+   "newSentence": "One single-centre study of hospital admissions found that respiratory infection was the most common cause, at 23% of admissions."
+  },
+  {
+   "id": "c53",
+   "classification": "unsupported",
+   "evidence": "List blended across sources; duplicate of section 1.",
+   "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3038575/",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c54",
+   "classification": "supported",
+   "evidence": "[sentence added] Palliative review lists aspiration pneumonia, urinary tract infections, complications from falls and fractures, and sepsis from pressure ulcers as main risks in advanced disease.",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5873561/",
+   "action": "edited",
+   "newSentence": "A review of palliative care in advanced Parkinson's disease lists aspiration pneumonia, urinary tract infections, complications from falls and fractures, and sepsis from pressure ulcers as the main risks."
+  },
+  {
+   "id": "c55",
+   "classification": "supported",
+   "evidence": "[sentence added] Rotterdam Study analysis: reduced life expectancy for people diagnosed with parkinsonism, mainly when diagnosed before age 70.",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/32712564/",
+   "action": "edited",
+   "newSentence": "A separate Rotterdam Study analysis found reduced life expectancy in people diagnosed with parkinsonism, mainly when diagnosis came before age 70."
+  },
+  {
+   "id": "c56",
+   "classification": "supported",
+   "evidence": "Progression varies widely between people; sources differ on life expectancy.",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/brain-nerves-and-spinal-cord/parkinsons-disease/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c57",
+   "classification": "supported",
+   "evidence": "NHS: no cure.",
+   "url": "https://www.nhs.uk/conditions/parkinsons-disease/treatment/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c58",
+   "classification": "supported",
+   "evidence": "Quality-of-life wording from NHS; physiotherapy and OT roles from 111 Wales; medicines from NHS treatment.",
+   "url": "https://www.nhs.uk/conditions/parkinsons-disease/treatment/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c59",
+   "classification": "supported",
+   "evidence": "DBS is symptomatic, not a cure.",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9531694/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c60",
+   "classification": "supported",
+   "evidence": "As above.",
+   "url": "https://www.nhs.uk/conditions/parkinsons-disease/diagnosis/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c61",
+   "classification": "supported",
+   "evidence": "As above.",
+   "url": "https://www.nhs.uk/conditions/parkinsons-disease/diagnosis/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c62",
+   "classification": "unsupported",
+   "evidence": "MRI wording unclear (NICE advises against MRI to diagnose); DaT used when diagnostic uncertainty (specialist practice).",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10962518/",
+   "action": "edited",
+   "newSentence": "Blood tests and brain scans may be used to rule out other conditions, and a DaT scan, which looks at dopamine transporters in the brain, may be used when the diagnosis is unclear."
+  },
+  {
+   "id": "c63",
+   "classification": "supported",
+   "evidence": "As above.",
+   "url": "https://111.wales.nhs.uk/encyclopaedia/p/article/parkinsonsdisease/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c64",
+   "classification": "supported",
+   "evidence": "NHS 111 Wales wording; attribution changed.",
+   "url": "https://111.wales.nhs.uk/encyclopaedia/p/article/parkinsonsdisease/",
+   "action": "edited",
+   "newSentence": "NHS 111 Wales says the condition does not directly cause death, but it can leave people more vulnerable to serious infections."
+  },
+  {
+   "id": "c65",
+   "classification": "unsupported",
+   "evidence": "Not returned.",
+   "url": "https://111.wales.nhs.uk/encyclopaedia/p/article/parkinsonsdisease/",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c66",
+   "classification": "supported",
+   "evidence": "[sentence added] Rotterdam Study analysis.",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/32712564/",
+   "action": "edited",
+   "newSentence": "A Rotterdam Study analysis found reduced life expectancy in people diagnosed with parkinsonism, mainly when diagnosis came before age 70."
+  },
+  {
+   "id": "c67",
+   "classification": "supported",
+   "evidence": "NHS inform and NHS symptoms lists.",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/brain-nerves-and-spinal-cord/parkinsons-disease/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c68",
+   "classification": "unsupported",
+   "evidence": "Only order and severity differing was retrieved.",
+   "url": "https://www.nhs.uk/conditions/parkinsons-disease/symptoms/",
+   "action": "edited",
+   "newSentence": "The order in which symptoms develop and how severe they are differs for each person."
+  },
+  {
+   "id": "c69",
+   "classification": "supported",
+   "evidence": "NHS inform.",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/brain-nerves-and-spinal-cord/parkinsons-disease/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c70",
+   "classification": "unsupported",
+   "evidence": "Listing wording not returned.",
+   "url": "https://111.wales.nhs.uk/encyclopaedia/p/article/parkinsonsdisease/",
+   "action": "edited",
+   "newSentence": "A physiotherapist can work on muscle stiffness and joint pain through movement and exercise."
+  },
+  {
+   "id": "c71",
+   "classification": "supported",
+   "evidence": "NHS 111 Wales.",
+   "url": "https://111.wales.nhs.uk/encyclopaedia/p/article/parkinsonsdisease/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c72",
+   "classification": "supported",
+   "evidence": "NHS 111 Wales.",
+   "url": "https://111.wales.nhs.uk/encyclopaedia/p/article/parkinsonsdisease/",
+   "action": "edited",
+   "newSentence": "A speech and language therapist can often help by teaching speaking and swallowing exercises."
+  },
+  {
+   "id": "c73",
+   "classification": "supported",
+   "evidence": "[sentence added] Nottingham trust page (blended).",
+   "url": "https://www.nuh.nhs.uk/parkinsons/",
+   "action": "edited",
+   "newSentence": "Parkinson's nurse specialists can help arrange referrals to these therapies."
+  },
+  {
+   "id": "c74",
+   "classification": "unsupported",
+   "evidence": "Gradual and mild at first supported; brain damage clause not returned.",
+   "url": "https://www.nhs.uk/conditions/parkinsons-disease/symptoms/",
+   "action": "edited",
+   "newSentence": "Usually develops gradually and is mild at first."
+  },
+  {
+   "id": "c75",
+   "classification": "supported",
+   "evidence": "NHS symptoms.",
+   "url": "https://www.nhs.uk/conditions/parkinsons-disease/symptoms/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c76",
+   "classification": "supported",
+   "evidence": "NHS diagnosis.",
+   "url": "https://www.nhs.uk/conditions/parkinsons-disease/diagnosis/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c77",
+   "classification": "unsupported",
+   "evidence": "Geriatrician not supported; GP refers to specialist.",
+   "url": "https://www.nice.org.uk/guidance/ng71/resources/parkinsons-disease-in-adults-pdf-1837629189061",
+   "action": "edited",
+   "newSentence": "A GP refers people with suspected Parkinson's to a specialist, such as a neurologist."
+  },
+  {
+   "id": "c78",
+   "classification": "supported",
+   "evidence": "NHS treatment.",
+   "url": "https://www.nhs.uk/conditions/parkinsons-disease/treatment/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c79",
+   "classification": "supported",
+   "evidence": "DBS review.",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9531694/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c80",
+   "classification": "supported",
+   "evidence": "NHS 111 Wales.",
+   "url": "https://111.wales.nhs.uk/encyclopaedia/p/article/parkinsonsdisease/",
+   "action": "kept",
+   "newSentence": ""
+  }
+ ],
+ "notes": "Search tool returned blended summaries; attributions marked in evidence where uncertain. Removed: GP exam tasks, geriatrician, 'mild to moderate disability' and minority-responder claims, softer food, balanced diet, early-stage little treatment, brain damage over many years. Added sentences each have retrieved support. Several URLs (NHS treatment, Devon formulary, NBT, Nottingham, Bucks) were returned by search but their own text was only seen via the summary. Existing conditions.json page text not contradicted except: it says diagnosis includes 'response to levodopa' and MRI 'excludes other causes' (NICE NG71 advises structural MRI not be used to diagnose; consistent for exclusion) and 'DaT scan can confirm' (sources say it helps in uncertain cases)."
+}

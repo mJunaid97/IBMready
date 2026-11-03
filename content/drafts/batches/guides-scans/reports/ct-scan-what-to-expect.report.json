@@ -1,0 +1,375 @@
+{
+ "id": "ct-scan-what-to-expect",
+ "searchesUsed": 7,
+ "counts": {
+  "supported": 18,
+  "textbook": 4,
+  "unsupported": 20,
+  "wrong": 0,
+  "unsafe": 1,
+  "unchecked": 0
+ },
+ "claims": [
+  {
+   "id": "c01",
+   "sentence": "CT stands for computed tomography.",
+   "classification": "textbook",
+   "evidence": "Basic expansion of the abbreviation (UK leaflets use 'computerised tomography').",
+   "url": "",
+   "action": "kept"
+  },
+  {
+   "id": "c02",
+   "sentence": "A CT scanner rotates an X-ray source around the body while the person lies on a bed that moves through a ring shaped like a doughnut.",
+   "classification": "supported",
+   "evidence": "Retrieved: X-ray tube and detectors on a ring that spins around the body while the table moves through; Leeds describes a polo-mint shaped machine.",
+   "url": "https://www.leedsth.nhs.uk/services/radiology/ct-scan/",
+   "action": "kept"
+  },
+  {
+   "id": "c03",
+   "sentence": "Detectors on the opposite side pick up the X-rays, and a computer turns each rotation into a thin cross-sectional slice.",
+   "classification": "supported",
+   "evidence": "Retrieved: each full rotation lets the computer construct a two-dimensional slice (NIBIB, US source).",
+   "url": "https://www.nibib.nih.gov/science-education/science-topics/computed-tomography-ct",
+   "action": "kept"
+  },
+  {
+   "id": "c04",
+   "sentence": "The slices can be stacked to make a three-dimensional image.",
+   "classification": "supported",
+   "evidence": "Retrieved: stacking slices gives a 3D view (NIBIB, US source).",
+   "url": "https://www.nibib.nih.gov/science-education/science-topics/computed-tomography-ct",
+   "action": "kept"
+  },
+  {
+   "id": "c05",
+   "sentence": "The NHS lists CT scans among the tests that use X-rays to give more detailed images than a standard X-ray.",
+   "classification": "supported",
+   "evidence": "NHS X-ray page lists CT scans among related tests, giving more detailed images than a standard X-ray.",
+   "url": "https://www.nhs.uk/tests-and-treatments/x-ray/",
+   "action": "kept"
+  },
+  {
+   "id": "c06",
+   "sentence": "Instructions differ between hospitals, and the appointment letter has the local details.",
+   "classification": "supported",
+   "evidence": "Retrieved NHS trust leaflets: instructions vary by hospital and the appointment letter has the details.",
+   "url": "https://www.royalmarsden.nhs.uk/your-care/diagnosis/ct-scans",
+   "action": "kept"
+  },
+  {
+   "id": "c07",
+   "sentence": "One trust asks for no food for two hours and about half a litre of water beforehand, while another asks for no solid food for four hours and says drinks are fine.",
+   "classification": "unsupported",
+   "evidence": "Retrieved: most leaflets ask to stop eating about 2 hours before, one asks for 4 hours; water volumes vary. Exact 'drinks are fine' wording not confirmed. Specific times are cut-offs and risk being followed.",
+   "url": "https://www.royalmarsden.nhs.uk/your-care/diagnosis/ct-scans",
+   "action": "edited",
+   "newSentence": "Instructions about eating and drinking before a CT scan differ between NHS trusts, and the appointment letter says which apply."
+  },
+  {
+   "id": "c08",
+   "sentence": "Some scans of the abdomen or pelvis need a larger amount of fluid or a drink containing contrast beforehand.",
+   "classification": "unsupported",
+   "evidence": "Retrieved: water or oral contrast may be given by mouth to show the bowel; 'need' is too strong.",
+   "url": "https://medlineplus.gov/ency/article/003330.htm",
+   "action": "edited",
+   "newSentence": "Some scans of the abdomen or pelvis involve drinking extra fluid or a drink containing contrast beforehand."
+  },
+  {
+   "id": "c09",
+   "sentence": "Some people have a blood test first, mainly to check how well the kidneys are working.",
+   "classification": "supported",
+   "evidence": "Retrieved: blood test to check kidney function depends on age and history, per NHS trust leaflets.",
+   "url": "https://www.royalmarsden.nhs.uk/your-care/diagnosis/ct-scans",
+   "action": "kept"
+  },
+  {
+   "id": "c10",
+   "sentence": "Metal items such as zips, jewellery and clips may need to come off, and a gown may be provided.",
+   "classification": "unsupported",
+   "evidence": "Retrieved: attend in loose clothing with anything metallic removed. Gown for a standard CT not confirmed.",
+   "url": "https://www.royalmarsden.nhs.uk/your-care/diagnosis/ct-scans",
+   "action": "edited",
+   "newSentence": "NHS trust leaflets ask people to attend in loose clothing with anything metallic removed."
+  },
+  {
+   "id": "c11",
+   "sentence": "Staff ask about allergies, especially to iodine or to earlier contrast dye, and about medicines the person takes.",
+   "classification": "supported",
+   "evidence": "Retrieved: known iodine allergy, past contrast reactions, other allergies and medicines such as metformin are asked about.",
+   "url": "https://www.royalmarsden.nhs.uk/your-care/diagnosis/ct-scans",
+   "action": "kept"
+  },
+  {
+   "id": "c12",
+   "sentence": "The person lies on a flat, motorised table that slides into the scanner.",
+   "classification": "supported",
+   "evidence": "Retrieved: table moves through the scanner ring (NIBIB); Leeds describes the machine.",
+   "url": "https://www.leedsth.nhs.uk/services/radiology/ct-scan/",
+   "action": "kept"
+  },
+  {
+   "id": "c13",
+   "sentence": "They are asked to keep very still and may be asked to hold their breath for a few seconds.",
+   "classification": "textbook",
+   "evidence": "Basic procedural fact; not specifically retrieved from the sources searched.",
+   "url": "",
+   "action": "kept"
+  },
+  {
+   "id": "c14",
+   "sentence": "Sources give different lengths for the scan itself, from a few minutes to around 20 minutes, and a visit can last an hour or two.",
+   "classification": "unsupported",
+   "evidence": "Retrieved lengths: scan itself about 5 to 30 minutes (trust leaflets), whole visit 90 to 120 minutes when fluids are involved.",
+   "url": "https://www.cancerresearchuk.org/about-cancer/tests-and-scans/ct-scan",
+   "action": "edited",
+   "newSentence": "Leaflets quote different lengths for the scan itself, which is short, and the whole visit takes longer, especially when drinks are needed beforehand."
+  },
+  {
+   "id": "c15",
+   "sentence": "MedlinePlus says the scan is painless but can be uncomfortable because the person has to stay still.",
+   "classification": "unsupported",
+   "evidence": "MedlinePlus statement about painless but uncomfortable not found in retrieved text.",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c16",
+   "sentence": "Most people can go home or return to normal activities straight away.",
+   "classification": "unsupported",
+   "evidence": "Retrieved: the radiographer may ask the person to wait briefly while they check no more images are needed, then they are free to leave.",
+   "url": "https://www.cancerresearchuk.org/about-cancer/tests-and-scans/ct-scan",
+   "action": "edited",
+   "newSentence": "After the scan the radiographer may ask the person to wait briefly while they check that no more images are needed, and the person is then free to leave."
+  },
+  {
+   "id": "c17",
+   "sentence": "Contrast is a substance that makes blood vessels, organs or other tissues easier to see.",
+   "classification": "textbook",
+   "evidence": "Basic definition; consistent with MRI contrast wording in NHS leaflets.",
+   "url": "",
+   "action": "kept"
+  },
+  {
+   "id": "c18",
+   "sentence": "Depending on the area, it may be given by mouth, through a vein, or by enema.",
+   "classification": "supported",
+   "evidence": "MedlinePlus: contrast may be given by mouth, into a vein, or rarely by enema (US source).",
+   "url": "https://medlineplus.gov/ency/article/003330.htm",
+   "action": "kept"
+  },
+  {
+   "id": "c19",
+   "sentence": "The type given through a vein usually contains iodine, and trust leaflets state that it is not radioactive.",
+   "classification": "unsupported",
+   "evidence": "MedlinePlus: the most common contrast given into a vein contains iodine (US). Trust leaflet statement on radioactivity not retrieved.",
+   "url": "https://medlineplus.gov/ency/article/003330.htm",
+   "action": "edited",
+   "newSentence": "MedlinePlus says the most common type of contrast given into a vein contains iodine."
+  },
+  {
+   "id": "c20",
+   "sentence": "It goes in through a small tube, called a cannula, in the arm or hand.",
+   "classification": "unsupported",
+   "evidence": "Cannula in arm or hand for CT not found in retrieved text (arm cannula found only for MRI).",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c21",
+   "sentence": "It can cause a warm flush, a metallic taste or a feeling of needing to pass urine, and these usually pass quickly.",
+   "classification": "unsupported",
+   "evidence": "MedlinePlus: IV contrast can cause a slight burning feeling, a metallic taste and warm flushing that fade within seconds. Needing to pass urine not found.",
+   "url": "https://medlineplus.gov/ency/article/003330.htm",
+   "action": "edited",
+   "newSentence": "MedlinePlus says contrast given through a vein can cause a slight burning feeling, a metallic taste and warm flushing, which usually fade quickly."
+  },
+  {
+   "id": "c22",
+   "sentence": "Serious allergic reactions are rare, and milder reactions such as a rash, itching or nausea are possible.",
+   "classification": "unsupported",
+   "evidence": "MedlinePlus: allergic reactions can happen, and a life-threatening allergic response is rare. Rash/itching/nausea only from trial consent forms.",
+   "url": "https://medlineplus.gov/ency/article/003330.htm",
+   "action": "edited",
+   "newSentence": "MedlinePlus says allergic reactions to the dye can happen, and that a life-threatening reaction is rare."
+  },
+  {
+   "id": "c23",
+   "sentence": "Rarely the dye leaks into the tissue around the vein and causes swelling or discomfort.",
+   "classification": "unsupported",
+   "evidence": "No retrieved text on dye leaking into surrounding tissue.",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c24",
+   "sentence": "Effects on the kidneys are uncommon and occur mainly in people who already have kidney problems, so staff check kidney function and sometimes suggest extra fluids.",
+   "classification": "unsupported",
+   "evidence": "MedlinePlus: IV contrast can worsen kidney function; people with kidney disease or diabetes may get extra fluids afterwards. 'Uncommon' not retrieved. UK leaflets: blood test checks kidney function.",
+   "url": "https://medlineplus.gov/ency/article/003330.htm",
+   "action": "edited",
+   "newSentence": "MedlinePlus says contrast given through a vein can worsen kidney function, and that people with kidney disease or diabetes may be given extra fluids afterwards."
+  },
+  {
+   "id": "c25",
+   "sentence": "Some trusts ask people to wait for a short time after an injection so staff can check for a delayed reaction.",
+   "classification": "unsupported",
+   "evidence": "No retrieved source on waiting after the injection.",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c26",
+   "sentence": "Difficulty breathing or swelling of the face after an injection is an emergency, and a 999 call is the route.",
+   "classification": "unsafe",
+   "evidence": "999 instruction not found in retrieved text; emergency instructions to individuals must come from an authoritative source.",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c27",
+   "sentence": "CT uses ionising radiation, and the dose is higher than for a standard X-ray, although staff keep it as low as possible.",
+   "classification": "unsupported",
+   "evidence": "Retrieved: CT delivers more radiation than an ordinary X-ray (trust leaflet); MedlinePlus says most new scanners can reduce the dose.",
+   "url": "https://medlineplus.gov/ency/article/003330.htm",
+   "action": "edited",
+   "newSentence": "A CT scan uses more radiation than an ordinary X-ray, and MedlinePlus says most new scanners can reduce the dose."
+  },
+  {
+   "id": "c28",
+   "sentence": "MedlinePlus says having many X-rays or CT scans over time may raise the risk of cancer, but the risk from any one scan is small.",
+   "classification": "supported",
+   "evidence": "MedlinePlus: many X-rays or CT scans over time may increase cancer risk, but the risk from any one scan is small (US source).",
+   "url": "https://medlineplus.gov/ency/article/003330.htm",
+   "action": "kept"
+  },
+  {
+   "id": "c29",
+   "sentence": "Children are more sensitive to radiation, and scanner settings for children are adjusted to lower the dose.",
+   "classification": "unsupported",
+   "evidence": "Retrieved: a UK trust leaflet says children are more sensitive to radiation and should have a CT only if essential for diagnosis. Adjusted scanner settings not retrieved.",
+   "url": "https://www.ruh.nhs.uk/patients/patient_information/RAD027_Having_a_CT_scan.pdf",
+   "action": "edited",
+   "newSentence": "An NHS trust leaflet says children are more sensitive to radiation and that a CT is done only when it is essential for making a diagnosis."
+  },
+  {
+   "id": "c30",
+   "sentence": "Trust leaflets say people who might be pregnant should check with the department before the scan.",
+   "classification": "supported",
+   "evidence": "UK guidance and X-ray leaflets: patients who may be pregnant are asked to say so. Original wording was instructional.",
+   "url": "https://www.rcr.ac.uk/news-policy/latest-updates/imaging-in-pregnancy-for-the-diagnosis-and-staging-of-suspected-cancer-joint-position-statement/",
+   "action": "edited",
+   "newSentence": "Trust leaflets ask people who might be pregnant to tell the imaging team before the scan."
+  },
+  {
+   "id": "c31",
+   "sentence": "The NHS describes X-ray tests as safe, with a very small cancer risk linked to having many of them.",
+   "classification": "unsupported",
+   "evidence": "NHS page: cancer risk thought to be very small; word 'safe' and 'many of them' not confirmed.",
+   "url": "https://www.nhs.uk/tests-and-treatments/x-ray/",
+   "action": "edited",
+   "newSentence": "The NHS says the cancer risk from X-ray tests is thought to be very small."
+  },
+  {
+   "id": "c32",
+   "sentence": "GOV.UK safety advice describes the risks from properly justified imaging as far smaller than the risks of the conditions being investigated, and the added chance of cancer as very small and appearing years or decades later.",
+   "classification": "unsupported",
+   "evidence": "GOV.UK: when justified and optimised the risks are much less than the risks of the conditions being investigated; risks lower for older patients because cancers take decades. 'Very small' wording not retrieved.",
+   "url": "https://www.gov.uk/government/publications/ionising-radiation-from-medical-imaging-examinations-safety-advice/exposure-to-ionising-radiation-from-medical-imaging-safety-advice",
+   "action": "edited",
+   "newSentence": "GOV.UK safety advice says that when imaging is properly justified and optimised, the risks are much less than the risks of the conditions being investigated, and that cancers linked to radiation can take decades to develop."
+  },
+  {
+   "id": "c33",
+   "sentence": "It lists CT among the examinations that carry a low risk even though they involve more images or higher doses.",
+   "classification": "unsupported",
+   "evidence": "COMARE report categorises CT risk; 'low risk' category wording not found.",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c34",
+   "sentence": "Trust leaflets add that the benefit of a scan usually outweighs the small risk.",
+   "classification": "unsupported",
+   "evidence": "Retrieved (Cornwall leaflet, general radiation): the benefit of a test should be greater than its radiation risk. CT-specific leaflets not retrieved.",
+   "url": "https://doclibrary-rcht.cornwall.nhs.uk/GET/d10358732",
+   "action": "edited",
+   "newSentence": "An NHS trust leaflet says the benefit of a test should be greater than its radiation risk."
+  },
+  {
+   "id": "c35",
+   "sentence": "A radiologist reviews the images and sends a report to the doctor who asked for the scan.",
+   "classification": "supported",
+   "evidence": "Retrieved: radiologist sends report to the doctor who ordered the scan.",
+   "url": "https://www.cancerresearchuk.org/about-cancer/tests-and-scans/ct-scan",
+   "action": "kept"
+  },
+  {
+   "id": "c36",
+   "sentence": "That doctor then discusses the results with the person.",
+   "classification": "supported",
+   "evidence": "Retrieved: the referring clinician goes over results with the person.",
+   "url": "https://www.cancerresearchuk.org/about-cancer/tests-and-scans/ct-scan",
+   "action": "kept"
+  },
+  {
+   "id": "c37",
+   "sentence": "Timing varies by hospital, and leaflets quote from about one or two weeks to about four weeks.",
+   "classification": "supported",
+   "evidence": "Retrieved: Cancer Research UK 1 to 2 weeks; trusts quote up to four weeks.",
+   "url": "https://www.cancerresearchuk.org/about-cancer/tests-and-scans/ct-scan",
+   "action": "kept"
+  },
+  {
+   "id": "c38",
+   "sentence": "Results are not given on the day.",
+   "classification": "supported",
+   "evidence": "Retrieved: the radiographer cannot give results at the time of the scan.",
+   "url": "https://www.cancerresearchuk.org/about-cancer/tests-and-scans/ct-scan",
+   "action": "kept"
+  },
+  {
+   "id": "c39",
+   "sentence": "A CT scanner rotates an X-ray source around the body, and a computer builds cross-sectional slices that can be stacked into a three-dimensional picture.",
+   "classification": "supported",
+   "evidence": "As claims 2 to 4.",
+   "url": "https://www.nibib.nih.gov/science-education/science-topics/computed-tomography-ct",
+   "action": "kept"
+  },
+  {
+   "id": "c40",
+   "sentence": "CT uses more radiation than a standard X-ray, the amount is kept as low as possible, and the risk from a single scan is small.",
+   "classification": "unsupported",
+   "evidence": "Original 'kept as low as possible' not retrieved; MedlinePlus says risk from any one scan is small and CT delivers more radiation than ordinary X-ray.",
+   "url": "https://medlineplus.gov/ency/article/003330.htm",
+   "action": "edited",
+   "newSentence": "CT uses more radiation than a standard X-ray, and MedlinePlus says the cancer risk from any one scan is small."
+  },
+  {
+   "id": "c41",
+   "sentence": "Some scans use an injected iodine-based dye called contrast, which can cause a warm flush and a metallic taste that usually pass quickly.",
+   "classification": "supported",
+   "evidence": "MedlinePlus: most common IV contrast contains iodine; burning feeling, metallic taste, warm flushing fade within seconds (US).",
+   "url": "https://medlineplus.gov/ency/article/003330.htm",
+   "action": "kept"
+  },
+  {
+   "id": "c42",
+   "sentence": "A radiologist reviews the images and sends a report to the doctor who requested the scan, who then discusses it with the person.",
+   "classification": "supported",
+   "evidence": "As claims 35 and 36.",
+   "url": "https://www.cancerresearchuk.org/about-cancer/tests-and-scans/ct-scan",
+   "action": "kept"
+  },
+  {
+   "id": "c43",
+   "sentence": "A CT scan uses X-rays and a computer to build slice pictures of the body. This guide covers preparation, contrast dye, radiation and when results arrive.",
+   "classification": "textbook",
+   "evidence": "Sentence 1 is a basic description supported by NIBIB; sentence 2 is a table of contents.",
+   "url": "",
+   "action": "kept"
+  }
+ ],
+ "notes": "Extra facts: (1) MedlinePlus: new CT scanners can reduce dose (https://medlineplus.gov/ency/article/003330.htm, US). (2) Cancer Research UK says CT results usually take 1 to 2 weeks (https://www.cancerresearchuk.org/about-cancer/tests-and-scans/ct-scan). (3) GOV.UK says many people over 65 may not live long enough for a radiation-induced cancer to develop; cancers take decades (https://www.gov.uk/government/publications/ionising-radiation-from-medical-imaging-examinations-safety-advice/exposure-to-ionising-radiation-from-medical-imaging-safety-advice). Safety-critical lines on contrast reactions and 999 were removed because no reputable retrieved text supported them. MedlinePlus is a US source for all contrast and radiation claims retained."
+}

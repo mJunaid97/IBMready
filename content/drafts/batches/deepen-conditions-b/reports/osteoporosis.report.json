@@ -1,0 +1,463 @@
+{
+ "id": "osteoporosis",
+ "searchesUsed": 12,
+ "counts": {
+  "supported": 23,
+  "textbook": 0,
+  "unsupported": 33,
+  "wrong": 0,
+  "unsafe": 0,
+  "unchecked": 0
+ },
+ "claims": [
+  {
+   "id": "c01",
+   "classification": "supported",
+   "evidence": "NIAMS: silent disease, typically no symptoms, may not know until a bone breaks",
+   "url": "https://www.niams.nih.gov/health-topics/osteoporosis",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c02",
+   "classification": "supported",
+   "evidence": "NHS-based source: often diagnosed only when a fall or sudden impact causes a break; fragility fracture after minor fall",
+   "url": "https://www.nhs.uk/conditions/osteoporosis/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c03",
+   "classification": "supported",
+   "evidence": "NIAMS: hip, spine and wrist are the usual fracture locations",
+   "url": "https://www.niams.nih.gov/health-topics/osteoporosis",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c04",
+   "classification": "supported",
+   "evidence": "Spinal fracture may occur without a fall or significant force (one source)",
+   "url": "https://theros.org.uk/information-and-support/about-osteoporosis-and-osteopenia/osteoporosis-symptoms/",
+   "action": "edited",
+   "newSentence": "Some sources say a weakened vertebra may fracture even without a fall or significant force."
+  },
+  {
+   "id": "c05",
+   "classification": "supported",
+   "evidence": "Warning signs: severe back pain, loss of height, stooped or hunched posture",
+   "url": "https://theros.org.uk/information-and-support/about-osteoporosis-and-osteopenia/osteoporosis-symptoms/",
+   "action": "edited",
+   "newSentence": "Warning signs of a spinal fracture include severe back pain, loss of height, or a stooped or hunched posture."
+  },
+  {
+   "id": "c06",
+   "classification": "unsupported",
+   "evidence": "Loss of height and stooped posture retrieved; 'several vertebrae' and 'curve' not retrieved",
+   "url": "https://theros.org.uk/information-and-support/about-osteoporosis-and-osteopenia/osteoporosis-symptoms/",
+   "action": "edited",
+   "newSentence": "(merged into warning-signs sentence)"
+  },
+  {
+   "id": "c07",
+   "classification": "unsupported",
+   "evidence": "Searched for crush fractures and breathing; NHS 111 Wales results explicitly did not cover it",
+   "url": "https://111.wales.nhs.uk/encyclopaedia/o/article/osteoporosis/",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c08",
+   "classification": "unsupported",
+   "evidence": "Hip fractures go to Emergency Department (Cornwall referral doc); spinal leaflet says GP supplies painkillers; paracetamol/codeine not retrieved",
+   "url": "https://rms.cornwall.nhs.uk/primary_care_clinical_referral_criteria/primary_care_clinical_referral_criteria/rheumatology/osteoporosis",
+   "action": "edited",
+   "newSentence": "A suspected hip fracture should go to an Emergency Department rather than a minor injury unit, according to an NHS referral document."
+  },
+  {
+   "id": "c09",
+   "classification": "unsupported",
+   "evidence": "'Normally assessed and managed by a GP' not retrieved; only spinal-fracture follow-up usually with GP (leaflet)",
+   "url": "https://leaflets.ekhuft.nhs.uk/s3/leaflets/stable-fractures-breaks-of-the-spine/9a692c5b-3c32-403b-8ecd-7c2db7126b1c.p1732711301.pdf",
+   "action": "edited",
+   "newSentence": "For most spinal fractures, follow-up is usually with the GP, and painkillers and mobility advice come from there."
+  },
+  {
+   "id": "c10",
+   "classification": "supported",
+   "evidence": "Low-dose X-ray, painless, short; 'no cuts or needles' not retrieved",
+   "url": "https://medlineplus.gov/lab-tests/bone-density-scan/",
+   "action": "edited",
+   "newSentence": "A bone density scan, also called a DEXA or DXA scan, uses low-dose X-rays to see how dense, or strong, the bones are."
+  },
+  {
+   "id": "c11",
+   "classification": "supported",
+   "evidence": "Lie on soft table; c-arm moves along body without touching; 'padded', 'goes home' not retrieved",
+   "url": "https://www.bartshealth.nhs.uk/download/preparing-for-dexa-scan.pdf?ver=52725",
+   "action": "edited",
+   "newSentence": "For the central scan, the person lies on a soft table while the scanner passes over the lower spine and hip, and must stay still."
+  },
+  {
+   "id": "c12",
+   "classification": "supported",
+   "evidence": "MedlinePlus: may be told to stop calcium supplements; eat/drink normally and continue usual prescription medicines",
+   "url": "https://medlineplus.gov/lab-tests/bone-density-scan/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c13",
+   "classification": "unsupported",
+   "evidence": "Retrieved: overlap in BMD between those who fracture and those who do not (research review); exact low/average claim not retrieved. Mild tension with entry citing NIAMS 'most reliable way to predict fracture risk'",
+   "url": "https://www.niams.nih.gov/health-topics/bone-mineral-density-tests-what-numbers-mean",
+   "action": "edited",
+   "newSentence": "One research review notes that bone density is a continuous risk factor for fracture, with no natural threshold, and that scores overlap between people who do and do not fracture."
+  },
+  {
+   "id": "c14",
+   "classification": "unsupported",
+   "evidence": "Diet/exercise/alcohol/smoking weighing not retrieved; 111 Wales: treatment depends on age, sex, fracture risk, previous injuries",
+   "url": "https://111.wales.nhs.uk/encyclopaedia/o/article/osteoporosis/",
+   "action": "edited",
+   "newSentence": "Treatment depends on factors such as age, sex, fracture risk and previous injuries, not on the scan result alone."
+  },
+  {
+   "id": "c15",
+   "classification": "unsupported",
+   "evidence": "NIAMS 'main parts of treatment' not retrieved; 111 Wales gives exercise, calcium/vitamin D diet, fall prevention",
+   "url": "https://111.wales.nhs.uk/encyclopaedia/o/article/osteoporosis/",
+   "action": "edited",
+   "newSentence": "NHS 111 Wales suggests regular exercise, a diet rich in calcium and vitamin D, and fall-prevention steps at home."
+  },
+  {
+   "id": "c16",
+   "classification": "unsupported",
+   "evidence": "Choice factors not retrieved as stated; 'usually considered when fracture risk high' not retrieved",
+   "url": "https://111.wales.nhs.uk/encyclopaedia/o/article/osteoporosis/",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c17",
+   "classification": "unsupported",
+   "evidence": "'Most common' not retrieved; 111 Wales lists bisphosphonates, calcium/vitamin D supplements may be prescribed at a different time",
+   "url": "https://111.wales.nhs.uk/encyclopaedia/o/article/osteoporosis/",
+   "action": "edited",
+   "newSentence": "(dropped from final for length)"
+  },
+  {
+   "id": "c18",
+   "classification": "unsupported",
+   "evidence": "Fracture-reduction claim came from an unattributed research summary, not Versus Arthritis; 111 Wales: bisphosphonates slow bone breakdown",
+   "url": "https://111.wales.nhs.uk/encyclopaedia/o/article/osteoporosis/",
+   "action": "edited",
+   "newSentence": "NHS 111 Wales lists alendronic acid, risedronic acid, ibandronic acid and zoledronic acid, which work by slowing bone breakdown."
+  },
+  {
+   "id": "c19",
+   "classification": "unsupported",
+   "evidence": "Versus 'drugs' page returned by title only; retrieved: denosumab for those who cannot take bisphosphonates (Versus), NHS also severe osteoporosis; raloxifene/calcitonin/HRT not carried by an attributable page",
+   "url": "https://www.versusarthritis.org/about-arthritis/treatments/drugs/denosumab/",
+   "action": "edited",
+   "newSentence": "Versus Arthritis says denosumab is recommended for postmenopausal women who cannot take bisphosphonates, and the NHS says it may be recommended if other medicines cannot be taken or osteoporosis is severe."
+  },
+  {
+   "id": "c20",
+   "classification": "unsupported",
+   "evidence": "Retrieved: UK guidance positions anabolic agents for severe osteoporosis at high risk of further fracture; no 'other treatments failed' criterion",
+   "url": "https://ntag.nhs.uk/wp-content/uploads/2026/03/NENC-ICS-guideline-for-management-of-osteoporosis-in-primary-care-approved-Jan-2026-v9.1-updated-March-2026.pdf",
+   "action": "edited",
+   "newSentence": "Teriparatide, a bone-building medicine, is generally positioned for severe osteoporosis at high risk of further fracture, according to NHS guidance for primary care."
+  },
+  {
+   "id": "c21",
+   "classification": "supported",
+   "evidence": "111 Wales: side effects can include irritation of the gullet; upper GI most common in reviews; 'ulcers', 'reflux' not retrieved from named page",
+   "url": "https://111.wales.nhs.uk/encyclopaedia/o/article/osteoporosis/",
+   "action": "edited",
+   "newSentence": "Side effects can include irritation of the gullet, according to NHS 111 Wales."
+  },
+  {
+   "id": "c22",
+   "classification": "unsupported",
+   "evidence": "111 Wales: osteonecrosis of the jaw is rare; 'dental surgery or injury came first' not retrieved",
+   "url": "https://111.wales.nhs.uk/encyclopaedia/o/article/osteoporosis/",
+   "action": "edited",
+   "newSentence": "Osteonecrosis of the jaw, a problem with the jaw bone, is rare, according to NHS 111 Wales."
+  },
+  {
+   "id": "c23",
+   "classification": "supported",
+   "evidence": "Reviews: AFF risk rises with duration; absolute risks small; ASBMR task force suggests periodic reassessment (URL attribution within search summary)",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4906542/",
+   "action": "edited",
+   "newSentence": "Research reviews report that the risk of an unusual thigh bone fracture, called an atypical femoral fracture, rises with the length of bisphosphonate treatment, although absolute risks are small."
+  },
+  {
+   "id": "c24",
+   "classification": "supported",
+   "evidence": "Versus: weight-bearing exercise good for maintaining bone strength; NHS: weight-bearing and strengthening strongest, walking examples; 'balance lowers falls' via tai chi evidence mixed",
+   "url": "https://www.versusarthritis.org/about-arthritis/conditions/osteoporosis/",
+   "action": "edited",
+   "newSentence": "Versus Arthritis says weight-bearing exercise is good for maintaining bone strength and reducing the risk of osteoporosis."
+  },
+  {
+   "id": "c25",
+   "classification": "unsupported",
+   "evidence": "'Very effective' not retrieved; trial evidence described as mixed",
+   "url": "https://medlineplus.gov/ency/article/000360.htm",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c26",
+   "classification": "unsupported",
+   "evidence": "MedlinePlus advises avoiding fall-risk exercise and high-impact exercise; NIAMS attribution and 'talk to doctor first' not retrieved",
+   "url": "https://medlineplus.gov/ency/article/000360.htm",
+   "action": "edited",
+   "newSentence": "MedlinePlus advises avoiding exercise that carries a risk of falling and high-impact exercise that could cause fractures in older adults."
+  },
+  {
+   "id": "c27",
+   "classification": "unsupported",
+   "evidence": "Not retrieved",
+   "url": "https://www.versusarthritis.org/about-arthritis/conditions/osteoporosis/",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c28",
+   "classification": "unsupported",
+   "evidence": "Diet rich in calcium/vitamin D supported (111 Wales); 'supplements when diet insufficient' not retrieved; 10 microgram dose noted but not used",
+   "url": "https://111.wales.nhs.uk/encyclopaedia/o/article/osteoporosis/",
+   "action": "edited",
+   "newSentence": "NHS 111 Wales suggests a diet rich in calcium and vitamin D, stopping smoking and cutting down alcohol, and fall-prevention steps at home."
+  },
+  {
+   "id": "c29",
+   "classification": "supported",
+   "evidence": "111 Wales advises fall-prevention steps at home",
+   "url": "https://111.wales.nhs.uk/encyclopaedia/o/article/osteoporosis/",
+   "action": "edited",
+   "newSentence": "(merged)"
+  },
+  {
+   "id": "c30",
+   "classification": "unsupported",
+   "evidence": "Retrieved: throw rugs, grab bars, non-slip flooring, night lights, low-heeled well-fitting shoes incl. slippers; drowsiness medicines not retrieved",
+   "url": "https://medlineplus.gov/ency/article/000360.htm",
+   "action": "edited",
+   "newSentence": "MedlinePlus examples include removing throw rugs, adding grab bars and non-slip flooring in bathrooms, leaving night lights on, and wearing low-heeled, well-fitting shoes, including slippers."
+  },
+  {
+   "id": "c31",
+   "classification": "unsupported",
+   "evidence": "NHS: hormone changes at menopause directly affect bone density, oestrogen essential; 'rapid drop' and NHS Wales attribution not retrieved",
+   "url": "https://www.nhs.uk/conditions/osteoporosis/causes/",
+   "action": "edited",
+   "newSentence": "The NHS says women are more at risk than men because hormone changes at the menopause directly affect bone density, and describes oestrogen as essential for healthy bones."
+  },
+  {
+   "id": "c32",
+   "classification": "unsupported",
+   "evidence": "Versus lists oral steroids as risk factor; kidney/calcium absorption mechanism not found",
+   "url": "https://www.versusarthritis.org/about-arthritis/conditions/osteoporosis/",
+   "action": "edited",
+   "newSentence": "Versus Arthritis lists steroids, especially those taken by mouth, as a risk factor."
+  },
+  {
+   "id": "c33",
+   "classification": "unsupported",
+   "evidence": "Mixed attribution: NIAMS (steroids, heavy drinking, smoking, parental history), NHS (early menopause); 'poor diet' only as calcium/vitamin D advice",
+   "url": "https://www.niams.nih.gov/health-topics/osteoporosis",
+   "action": "edited",
+   "newSentence": "NIAMS calls chronic heavy drinking a significant risk factor and says smoking is a risk factor for osteoporosis and fracture."
+  },
+  {
+   "id": "c34",
+   "classification": "unsupported",
+   "evidence": "Versus page does not describe alcohol reducing bone making",
+   "url": "https://www.versusarthritis.org/about-arthritis/conditions/osteoporosis/",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c35",
+   "classification": "unsupported",
+   "evidence": "'Hallmark' review sentence not retrieved",
+   "url": "",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c36",
+   "classification": "supported",
+   "evidence": "As sentences 1-2",
+   "url": "https://www.niams.nih.gov/health-topics/osteoporosis",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c37",
+   "classification": "unsupported",
+   "evidence": "'Several vertebrae curve' not retrieved",
+   "url": "https://theros.org.uk/information-and-support/about-osteoporosis-and-osteopenia/osteoporosis-symptoms/",
+   "action": "edited",
+   "newSentence": "Warning signs of a spinal fracture include severe back pain, loss of height, or a stooped or hunched posture."
+  },
+  {
+   "id": "c38",
+   "classification": "unsupported",
+   "evidence": "'GP usual route' not retrieved as general; spinal follow-up GP, hip fracture to ED",
+   "url": "https://leaflets.ekhuft.nhs.uk/s3/leaflets/stable-fractures-breaks-of-the-spine/9a692c5b-3c32-403b-8ecd-7c2db7126b1c.p1732711301.pdf",
+   "action": "edited",
+   "newSentence": "(route-to-care sentence added)"
+  },
+  {
+   "id": "c39",
+   "classification": "supported",
+   "evidence": "Painless low-dose X-ray",
+   "url": "https://medlineplus.gov/lab-tests/bone-density-scan/",
+   "action": "edited",
+   "newSentence": ""
+  },
+  {
+   "id": "c40",
+   "classification": "supported",
+   "evidence": "Soft table; moves over spine and hip",
+   "url": "https://www.bartshealth.nhs.uk/download/preparing-for-dexa-scan.pdf?ver=52725",
+   "action": "edited",
+   "newSentence": ""
+  },
+  {
+   "id": "c41",
+   "classification": "unsupported",
+   "evidence": "Chest X-ray gives more radiation than DEXA (MedlinePlus); 'go home' not retrieved",
+   "url": "https://medlineplus.gov/lab-tests/bone-density-scan/",
+   "action": "edited",
+   "newSentence": ""
+  },
+  {
+   "id": "c42",
+   "classification": "supported",
+   "evidence": "NHS causes page",
+   "url": "https://www.nhs.uk/conditions/osteoporosis/causes/",
+   "action": "edited",
+   "newSentence": ""
+  },
+  {
+   "id": "c43",
+   "classification": "unsupported",
+   "evidence": "'Rapid' not retrieved",
+   "url": "https://www.nhs.uk/conditions/osteoporosis/causes/",
+   "action": "edited",
+   "newSentence": ""
+  },
+  {
+   "id": "c44",
+   "classification": "unsupported",
+   "evidence": "Risks listed per NIAMS; 'men can be affected' only from patent text",
+   "url": "https://www.niams.nih.gov/health-topics/osteoporosis",
+   "action": "edited",
+   "newSentence": ""
+  },
+  {
+   "id": "c45",
+   "classification": "supported",
+   "evidence": "NHS/MedlinePlus: weight-bearing, strengthening, balance",
+   "url": "https://www.nhs.uk/live-well/bone-health/keep-your-bones-strong-over-65/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c46",
+   "classification": "unsupported",
+   "evidence": "Attribution to NIAMS/Versus not retrieved",
+   "url": "https://medlineplus.gov/ency/article/000360.htm",
+   "action": "edited",
+   "newSentence": ""
+  },
+  {
+   "id": "c47",
+   "classification": "unsupported",
+   "evidence": "Speak-to-doctor advice not retrieved",
+   "url": "https://medlineplus.gov/ency/article/000360.htm",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c48",
+   "classification": "supported",
+   "evidence": "Gut irritation (111 Wales)",
+   "url": "https://111.wales.nhs.uk/encyclopaedia/o/article/osteoporosis/",
+   "action": "edited",
+   "newSentence": ""
+  },
+  {
+   "id": "c49",
+   "classification": "unsupported",
+   "evidence": "Jaw problem linked to longer treatment not retrieved (rare only); AFF duration supported",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13110635/",
+   "action": "edited",
+   "newSentence": ""
+  },
+  {
+   "id": "c50",
+   "classification": "unsupported",
+   "evidence": "Reassessment supported by ASBMR report; 'prescriber decides' not retrieved",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4906542/",
+   "action": "edited",
+   "newSentence": ""
+  },
+  {
+   "id": "c51",
+   "classification": "supported",
+   "evidence": "As above",
+   "url": "https://www.niams.nih.gov/health-topics/osteoporosis",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c52",
+   "classification": "supported",
+   "evidence": "As above",
+   "url": "https://www.niams.nih.gov/health-topics/osteoporosis",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c53",
+   "classification": "supported",
+   "evidence": "As above",
+   "url": "https://medlineplus.gov/lab-tests/bone-density-scan/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c54",
+   "classification": "supported",
+   "evidence": "111 Wales: bisphosphonates with calcium/vitamin D supplements",
+   "url": "https://111.wales.nhs.uk/encyclopaedia/o/article/osteoporosis/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c55",
+   "classification": "supported",
+   "evidence": "As above",
+   "url": "https://www.nhs.uk/live-well/bone-health/keep-your-bones-strong-over-65/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c56",
+   "classification": "unsupported",
+   "evidence": "GP manages / requests scan not retrieved",
+   "url": "https://leaflets.ekhuft.nhs.uk/s3/leaflets/stable-fractures-breaks-of-the-spine/9a692c5b-3c32-403b-8ecd-7c2db7126b1c.p1732711301.pdf",
+   "action": "edited",
+   "newSentence": "Replaced by 'Suspected hip fracture' route-to-care fact."
+  }
+ ],
+ "notes": "Search tool is US-focused; the NHS 111 Wales page, NHS treatment page and Versus Arthritis drugs pages returned only as titles or blended summaries, so many first-pass attributions to them could not be confirmed and were reworded to retrieved text. Atypical femoral fracture duration and ASBMR reassessment statements came from blended summaries of PMC results; attribution to PMC13110635/PMC4906542 is probable but not certain. First-pass sentence 13 (DXA does not predict fractures perfectly) sits in mild tension with the existing entry (NIAMS: DXA most reliable way to predict risk); final text uses a softer research-review sentence. No T-score cut-offs, doses or ages included in final. Final adds one textbook sentence (999 as UK emergency number) so urgency has a route to care. Raloxifene, calcitonin, HRT and teriparatide failure criteria dropped as unretrieved. First draft's PMC6741378, PMC5101006, PMC6679098, NIAMS BMD-adjacent NHS DEXA what-happens URLs, and Versus bisphosphonate/teriparatide pages were not returned by my searches and were dropped (Versus drugs-for-osteoporosis was only returned as a title)."
+}

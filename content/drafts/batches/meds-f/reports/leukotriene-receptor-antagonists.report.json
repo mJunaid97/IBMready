@@ -1,0 +1,78 @@
+{
+ "id": "leukotriene-receptor-antagonists",
+ "searchesUsed": 13,
+ "counts": {
+  "supported": 7,
+  "textbook": 0,
+  "unsupported": 1,
+  "wrong": 0,
+  "unsafe": 0,
+  "unchecked": 0
+ },
+ "claims": [
+  {
+   "id": "c01",
+   "classification": "supported",
+   "evidence": "As montelukast what-it-is claim.",
+   "url": "https://www.nhs.uk/medicines/montelukast/about-montelukast/",
+   "action": "edited",
+   "newSentence": "Montelukast is a prescription medicine that helps prevent asthma symptoms."
+  },
+  {
+   "id": "c02",
+   "classification": "supported",
+   "evidence": "AL UK: add-on alongside preventer inhaler. 'not a steroid' dropped.",
+   "url": "https://www.asthmaandlung.org.uk/symptoms-tests-treatments/treatments/montelukast",
+   "action": "edited",
+   "newSentence": "Asthma and Lung UK describes it as an add-on taken alongside the regular preventer inhaler."
+  },
+  {
+   "id": "c03",
+   "classification": "supported",
+   "evidence": "StatPearls: montelukast and zafirlukast antagonise CysLT1 not CysLT2.",
+   "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK554445/",
+   "action": "kept",
+   "newSentence": "Montelukast and zafirlukast block cysteinyl leukotriene type 1 receptors but not type 2 receptors."
+  },
+  {
+   "id": "c04",
+   "classification": "unsupported",
+   "evidence": "'airway narrowing, leaky blood vessels, long-term inflammation' not retrieved.",
+   "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK554445/",
+   "action": "edited"
+  },
+  {
+   "id": "c05",
+   "classification": "supported",
+   "evidence": "StatPearls: eosinophils main source of CysLTs, important in eosinophil recruitment.",
+   "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK554445/",
+   "action": "edited",
+   "newSentence": "StatPearls says eosinophils are the main source of cysteinyl leukotrienes, which are important in recruiting more eosinophils."
+  },
+  {
+   "id": "c06",
+   "classification": "supported",
+   "evidence": "MHRA DSU neuropsychiatric reactions (caution and class warning).",
+   "url": "https://www.gov.uk/drug-safety-update/montelukast-reminder-of-the-risk-of-neuropsychiatric-reactions",
+   "action": "edited",
+   "newSentence": "The MHRA warns that montelukast can cause neuropsychiatric reactions, including sleep disorders, hallucinations and changes in behaviour and mood."
+  },
+  {
+   "id": "c07",
+   "classification": "supported",
+   "evidence": "MHRA: speak to prescriber immediately or seek urgent medical attention.",
+   "url": "https://www.gov.uk/drug-safety-update/montelukast-reminder-of-the-risk-of-neuropsychiatric-reactions",
+   "action": "kept",
+   "newSentence": "The MHRA advises patients to speak to their prescriber immediately, or seek urgent medical attention, if these reactions occur."
+  },
+  {
+   "id": "c08",
+   "classification": "supported",
+   "evidence": "NHS: epilepsy medicines such as phenobarbital/phenytoin, rifampicin, gemfibrozil.",
+   "url": "https://www.nhs.uk/medicines/montelukast/taking-montelukast-with-other-medicines-and-herbal-supplements/",
+   "action": "edited",
+   "newSentence": "The NHS lists epilepsy medicines such as phenobarbital or phenytoin, rifampicin and gemfibrozil as medicines to mention to a doctor or pharmacist before taking montelukast."
+  }
+ ],
+ "notes": "Searches shared with montelukast (same retrievals, 13 total used by this pair). Zafirlukast membership supported only by StatPearls mention; no zafirlukast-specific safety claims made. Class cautions are montelukast-specific per MHRA."
+}

@@ -13,6 +13,7 @@ sentences that break a rule the second-pass reviewers can miss:
   markdown   markdown or HTML in plain text fields
   no-route   urgency is mentioned ("emergency", "urgent", "immediately") but no route to care is named in the same paragraph
   crisis     a mental-health page without the crisis route (999, NHS 111, Samaritans 116 123)
+  snippet    the lead (summary, definition or overview) starts with a digit or a lower-case letter: it becomes the search snippet and the smoke test rejects that
 
 Findings are advice for the human reviewer, not compiler errors; the exit status is 0 unless --strict is given and a "dose",
 "command" or "absolute" finding exists. A flagged sentence is often fine ("do not drive" quoted from the NHS); read it in context.
@@ -78,6 +79,8 @@ def lint_entity(coll, eid, ent):
             low_np = re.sub(r"centers? for disease control|national centers? for|centers? for medicare", "", low)       # proper names keep their spelling
             hit = next(((us, uk) for us, uk in US_STEMS.items() if re.search(r"\b" + re.escape(us), low_np)), None) or next(((us, uk) for us, uk in US_WORDS.items() if re.search(r"\b" + re.escape(us) + r"s?\b", low_np)), None)
             if hit: out.append(("us-spell", path, f"{hit[0]} -> {hit[1]}: {s[:100]}"))
+    lead = next((ent[k] for k in ("summary", "what", "definition", "overview") if isinstance(ent.get(k), str) and ent.get(k)), "")
+    if lead and re.match(r"[a-z0-9]", lead): out.append(("snippet", "lead", lead[:100]))
     joined = "\n".join(whole)
     if (re.search(r"suicid|self-harm", joined, re.I) or eid in MENTAL_IDS or (coll in ("blog", "medications") and len(MENTAL.findall(joined)) >= 6)) and not CRISIS.search(joined):
         out.append(("crisis", "(page)", "mental-health content without the crisis route (999, NHS 111, Samaritans 116 123)"))

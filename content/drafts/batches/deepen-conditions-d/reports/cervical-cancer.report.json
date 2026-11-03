@@ -1,0 +1,554 @@
+{
+ "id": "cervical-cancer",
+ "searchesUsed": 14,
+ "counts": {
+  "supported": 31,
+  "textbook": 0,
+  "unsupported": 29,
+  "wrong": 0,
+  "unsafe": 0,
+  "unchecked": 0
+ },
+ "claims": [
+  {
+   "id": "c01",
+   "where": "article.sections[0]",
+   "classification": "unsupported",
+   "evidence": "Retrieved NHS/Macmillan/NCI text lists bleeding that is unusual for you, bleeding after sex and between periods; 'after the menopause' and 'main symptom' were not in retrieved text.",
+   "url": "https://www.nhs.uk/conditions/cervical-cancer/symptoms/",
+   "action": "edited",
+   "newSentence": "The NHS lists unusual vaginal bleeding, including bleeding after sex or between periods, as a symptom of cervical cancer."
+  },
+  {
+   "id": "c02",
+   "where": "article.sections[0]",
+   "classification": "supported",
+   "evidence": "NHS: changes to vaginal discharge, pain during sex, pain in lower back, pelvis or lower tummy.",
+   "url": "https://www.nhs.uk/conditions/cervical-cancer/symptoms/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c03",
+   "where": "article.sections[0]",
+   "classification": "supported",
+   "evidence": "Retrieved: very early cervical cancer may not cause symptoms; if symptoms occur between regular screening appointments, do not wait for the next appointment.",
+   "url": "https://www.nhs.uk/conditions/cervical-cancer/symptoms/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c04",
+   "where": "article.sections[0]",
+   "classification": "unsupported",
+   "evidence": "Retrieved text says to see a GP and not wait; the phrase 'symptoms change, get worse or do not feel normal' was not retrieved.",
+   "url": "https://www.nhs.uk/conditions/cervical-cancer/symptoms/",
+   "action": "edited",
+   "newSentence": "A GP appointment is the route to getting symptoms checked, rather than waiting for the next screening appointment."
+  },
+  {
+   "id": "c05",
+   "where": "article.sections[0]",
+   "classification": "unsupported",
+   "evidence": "Retrieved text says symptoms can have other causes; no retrieved Cancer Research UK text said they are 'common' or attributed this to CRUK.",
+   "url": "https://www.nhs.uk/conditions/cervical-cancer/symptoms/",
+   "action": "edited",
+   "newSentence": "These symptoms can have other causes, so they do not by themselves mean cancer."
+  },
+  {
+   "id": "c06",
+   "where": "article.sections[0]",
+   "classification": "unsupported",
+   "evidence": "No retrieved text says 'screening cannot assess symptoms'; only that screening is not a test for cancer. Redundant with the preceding sentences.",
+   "url": "https://www.cancerresearchuk.org/about-cancer/cervical-cancer/getting-diagnosed/screening",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c07",
+   "where": "article.sections[0]",
+   "classification": "unsupported",
+   "evidence": "No retrieved text describes 'usual next steps' of examination and referral.",
+   "url": "https://www.nhs.uk/conditions/cervical-cancer/symptoms/",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c08",
+   "where": "article.sections[1]",
+   "classification": "unsupported",
+   "evidence": "Retrieved NHS causes page and CRUK say nearly all cervical cancer is associated with HPV; NHS 111 Wales page was not retrieved and 'high-risk types' was not in retrieved text.",
+   "url": "https://www.nhs.uk/conditions/cervical-cancer/causes/",
+   "action": "edited",
+   "newSentence": "The NHS says nearly all cervical cancers are linked to infection with the human papillomavirus (HPV)."
+  },
+  {
+   "id": "c09",
+   "where": "article.sections[1]",
+   "classification": "unsupported",
+   "evidence": "Newcastle hospitals leaflet appeared only as a title; no retrieved text said HPV is very common or that most people clear it.",
+   "url": "https://www.newcastle-hospitals.nhs.uk/resources/information-for-people-referred-with-a-cervical-sample-smear-abnormality/",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c10",
+   "where": "article.sections[1]",
+   "classification": "unsupported",
+   "evidence": "Vague connective sentence with no source.",
+   "url": "",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c11",
+   "where": "article.sections[1]",
+   "classification": "supported",
+   "evidence": "NHS: children aged 12 to 13 are offered the HPV vaccine; screening offered free to women and people with a cervix aged 25 to 64.",
+   "url": "https://www.nhs.uk/conditions/cervical-cancer/causes/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c12",
+   "where": "article.sections[1]",
+   "classification": "supported",
+   "evidence": "CRUK/NHS England: screening offered to women and people with a cervix; trans men and non-binary people with a cervix are eligible.",
+   "url": "https://www.cancerresearchuk.org/about-cancer/cervical-cancer/getting-diagnosed/screening",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c13",
+   "where": "article.sections[1]",
+   "classification": "supported",
+   "evidence": "NHS: screening helps prevent cervical cancer by identifying HPV and, where necessary, abnormal cell changes before they can develop into cancer.",
+   "url": "https://www.cancerresearchuk.org/about-cancer/cervical-cancer/getting-diagnosed/screening",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c14",
+   "where": "article.sections[1]",
+   "classification": "unsupported",
+   "evidence": "Vague restatement of the previous sentence; no separate source.",
+   "url": "https://www.cancerresearchuk.org/about-cancer/cervical-cancer/getting-diagnosed/screening",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c15",
+   "where": "article.sections[1]",
+   "classification": "unsupported",
+   "evidence": "Retrieved NHS text: 'Cervical screening is not a test for cancer'. The 'Pap smears screen for, but do not diagnose, pre-cancers' wording was not found: MedlinePlus only says a Pap test can detect dysplasia.",
+   "url": "https://www.cancerresearchuk.org/about-cancer/cervical-cancer/getting-diagnosed/screening",
+   "action": "edited",
+   "newSentence": "Cervical screening is not a test for cancer."
+  },
+  {
+   "id": "c16",
+   "where": "article.sections[2]",
+   "classification": "supported",
+   "evidence": "Retrieved text: an abnormal screening result is followed by colposcopy, with biopsies from suspicious areas.",
+   "url": "https://www.nhs.uk/tests-and-treatments/colposcopy/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c17",
+   "where": "article.sections[2]",
+   "classification": "unsupported",
+   "evidence": "Retrieved NHS text: specialist examines the cervix with a magnifying microscope with a light and may take a pin-head-sized tissue sample if something looks unusual; 'punch biopsy is common' was not stated.",
+   "url": "https://www.nhs.uk/tests-and-treatments/colposcopy/",
+   "action": "edited",
+   "newSentence": "Colposcopy is usually offered after an abnormal screening result: the cervix is looked at closely through a magnifying instrument, and a small tissue sample (biopsy) may be taken from anywhere that looks unusual."
+  },
+  {
+   "id": "c18",
+   "where": "article.sections[2]",
+   "classification": "supported",
+   "evidence": "Hospital leaflet text: colposcopist decides between punch biopsies and a wire loop (LLETZ); cone biopsy removes a cone-shaped piece of tissue.",
+   "url": "https://www.yorkhospitals.nhs.uk/our-services/organdonation/a-z-of-services/colposcopy/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c19",
+   "where": "article.sections[2]",
+   "classification": "supported",
+   "evidence": "Retrieved leaflet text: punch biopsies are taken to confirm the diagnosis; colposcopy is an examination of the cervix.",
+   "url": "https://www.yorkhospitals.nhs.uk/our-services/organdonation/a-z-of-services/colposcopy/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c20",
+   "where": "article.sections[2]",
+   "classification": "supported",
+   "evidence": "Retrieved text: biopsy samples are examined by histology to confirm the diagnosis.",
+   "url": "https://www.yorkhospitals.nhs.uk/our-services/organdonation/a-z-of-services/colposcopy/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c21",
+   "where": "article.sections[2]",
+   "classification": "unsupported",
+   "evidence": "No retrieved NHS inform text gave this. Retrieved NHS text says cancer is found in rare cases; most abnormal findings are precancerous changes (CIN); 'very few require further treatment'.",
+   "url": "https://www.nhs.uk/tests-and-treatments/colposcopy/",
+   "action": "edited",
+   "newSentence": "Most findings at colposcopy are cell changes that are not cancer, and the NHS says cancer is found only in rare cases."
+  },
+  {
+   "id": "c22",
+   "where": "article.sections[2]",
+   "classification": "supported",
+   "evidence": "Royal Marsden NHS page: staging work-up includes MRI, PET-CT and chest X-ray to find the extent (stage) of the cancer.",
+   "url": "https://www.royalmarsden.nhs.uk/private-care/news-and-blogs/cervical-cancer-stages-and-diagnosis",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c23",
+   "where": "article.sections[2]",
+   "classification": "supported",
+   "evidence": "Retrieved: doctors use the FIGO system, which looks at the size of the cancer and whether it has spread.",
+   "url": "https://www.royalmarsden.nhs.uk/private-care/news-and-blogs/cervical-cancer-stages-and-diagnosis",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c24",
+   "where": "article.sections[3]",
+   "classification": "supported",
+   "evidence": "Retrieved CRUK/NHS text: radiotherapy, chemotherapy and surgery are used; choice depends on stage, size and spread.",
+   "url": "https://www.cancerresearchuk.org/about-cancer/cervical-cancer/treatment/treatment-decisions",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c25",
+   "where": "article.sections[3]",
+   "classification": "supported",
+   "evidence": "Retrieved: for stage 1A1 LLETZ or cone biopsy may remove all the cancer; radical hysterectomy is standard for early disease; radical trachelectomy keeps the uterus.",
+   "url": "https://www.macmillan.org.uk/cancer-information-and-support/treatments-and-drugs/cervical-cancer-surgery",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c26",
+   "where": "article.sections[3]",
+   "classification": "unsupported",
+   "evidence": "Retrieved CRUK/Macmillan text: radiotherapy mainly used for more advanced disease or when surgery is not suitable; chemotherapy or radiotherapy may follow surgery. 'Not fit for general anaesthetic' and 'reduce risk of coming back' were not retrieved.",
+   "url": "https://www.cancerresearchuk.org/about-cancer/cervical-cancer/treatment/treatment-decisions",
+   "action": "edited",
+   "newSentence": "Radiotherapy is mainly used for more advanced cancer or when surgery is not suitable, and chemotherapy or radiotherapy may be given after surgery."
+  },
+  {
+   "id": "c27",
+   "where": "article.sections[3]",
+   "classification": "supported",
+   "evidence": "CRUK: chemoradiotherapy is the usual approach from stage 1B2 up to 4A; cisplatin is the most common drug.",
+   "url": "https://www.cancerresearchuk.org/about-cancer/cervical-cancer/treatment/chemoradiotherapy/having-chemoradiotherapy",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c28",
+   "where": "article.sections[3]",
+   "classification": "unsupported",
+   "evidence": "CRUK: chemoradiotherapy most likely for stage 2B; may be suggested instead of surgery for some larger 2A tumours. 'Sometimes with surgery' was not retrieved.",
+   "url": "https://www.cancerresearchuk.org/about-cancer/cervical-cancer/treatment/treatment-decisions",
+   "action": "edited",
+   "newSentence": "For stage 2B, chemoradiotherapy is the most likely treatment, and for some larger stage 2A cancers it may be suggested instead of surgery."
+  },
+  {
+   "id": "c29",
+   "where": "article.sections[3]",
+   "classification": "supported",
+   "evidence": "CRUK stage 4 page: pelvic exenteration (removal of pelvic organs) is offered to only a few people with stage 4A.",
+   "url": "https://www.cancerresearchuk.org/about-cancer/cervical-cancer/stages-types-grades/stage-4",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c30",
+   "where": "article.sections[3]",
+   "classification": "unsupported",
+   "evidence": "NICE TA939 recommends pembrolizumab with chemotherapy, with or without bevacizumab, for persistent, recurrent or metastatic cervical cancer (with a tumour test requirement); 'cancer that has spread' is too loose.",
+   "url": "https://www.nice.org.uk/guidance/ta939/chapter/1-Recommendations",
+   "action": "edited",
+   "newSentence": "For cervical cancer that is persistent, has come back or has spread, NICE recommends the immunotherapy drug pembrolizumab with chemotherapy, with or without the targeted drug bevacizumab, for some adults."
+  },
+  {
+   "id": "c31",
+   "where": "article.sections[3]",
+   "classification": "supported",
+   "evidence": "CRUK small cell cervical cancer page exists; retrieved summary says it is rare (about 1 to 2 percent of cervical cancers) and treatment differs from the common types (chemotherapy often used for advanced disease). Weakly supported; could be reworded to 'rare' only.",
+   "url": "https://www.cancerresearchuk.org/about-cancer/cervical-cancer/stages-types-grades/small-cell-cancer-cervix",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c32",
+   "where": "article.sections[4]",
+   "classification": "unsupported",
+   "evidence": "Retrieved UK text says people are usually referred to a fertility specialist before treatment; no retrieved NHS text for this exact wording.",
+   "url": "https://www.cancerresearchuk.org/about-cancer/cervical-cancer/living-with/fertility",
+   "action": "edited",
+   "newSentence": "People are usually referred to a fertility specialist before treatment starts, so that options such as storing eggs, embryos or ovarian tissue can be discussed."
+  },
+  {
+   "id": "c33",
+   "where": "article.sections[4]",
+   "classification": "unsupported",
+   "evidence": "Merged into the fertility specialist sentence; 'if fertility cannot be preserved through the treatment itself' was not retrieved.",
+   "url": "https://www.cancerresearchuk.org/about-cancer/cervical-cancer/living-with/fertility",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c34",
+   "where": "article.sections[4]",
+   "classification": "supported",
+   "evidence": "CRUK/Macmillan: eggs or ovarian tissue can be removed and frozen before treatment; egg, embryo or tissue storage discussed with a fertility specialist.",
+   "url": "https://www.cancerresearchuk.org/about-cancer/cervical-cancer/living-with/fertility",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c35",
+   "where": "article.sections[4]",
+   "classification": "supported",
+   "evidence": "Macmillan/CRUK: for people who want children, radical trachelectomy removes the cancer but keeps the uterus; it is not possible for everyone with early cancer.",
+   "url": "https://www.macmillan.org.uk/cancer-information-and-support/treatments-and-drugs/cervical-cancer-surgery",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c36",
+   "where": "article.sections[4]",
+   "classification": "unsupported",
+   "evidence": "No retrieved NHS text mentioned specialist team and Macmillan support.",
+   "url": "",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c37",
+   "where": "article.sections[4]",
+   "classification": "unsupported",
+   "evidence": "No retrieved CRUK text on coping with diagnosis.",
+   "url": "",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c38",
+   "where": "article.sections[4]",
+   "classification": "unsupported",
+   "evidence": "No retrieved text lists type, stage and recurrence as prognosis factors; replaced by the supportive MedlinePlus point.",
+   "url": "https://medlineplus.gov/ency/article/000893.htm",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c39",
+   "where": "article.sections[4]",
+   "classification": "supported",
+   "evidence": "MedlinePlus (US source): survival falls as the cancer spreads outside the walls of the cervix. Contains no figure, but is a US source with no year; reworded to avoid survival-rate language.",
+   "url": "https://medlineplus.gov/ency/article/000893.htm",
+   "action": "edited",
+   "newSentence": "Outlook is generally better when cervical cancer is found before it has spread outside the cervix, which is one reason early diagnosis matters."
+  },
+  {
+   "id": "c40",
+   "where": "article.faqs[0].a",
+   "classification": "supported",
+   "evidence": "NHS: cervical screening is not a test for cancer (assumes FAQ asks whether a smear test is a cancer test).",
+   "url": "https://www.cancerresearchuk.org/about-cancer/cervical-cancer/getting-diagnosed/screening",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c41",
+   "where": "article.faqs[0].a",
+   "classification": "supported",
+   "evidence": "Retrieved: an abnormal smear is followed by colposcopy.",
+   "url": "https://www.nhs.uk/tests-and-treatments/colposcopy/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c42",
+   "where": "article.faqs[0].a",
+   "classification": "unsupported",
+   "evidence": "As for earlier sentence: NHS inform wording not retrieved; NHS says cancer is found only in rare cases.",
+   "url": "https://www.nhs.uk/tests-and-treatments/colposcopy/",
+   "action": "edited",
+   "newSentence": "Most findings at colposcopy are cell changes that are not cancer, and the NHS says cancer is found only in rare cases."
+  },
+  {
+   "id": "c43",
+   "where": "article.faqs[0].a",
+   "classification": "unsupported",
+   "evidence": "Retrieved text says most abnormal findings are precancerous changes or not cancer; 'lead to treatment' conflicts with a leaflet saying very few require further treatment.",
+   "url": "https://www.nhs.uk/tests-and-treatments/colposcopy/",
+   "action": "edited",
+   "newSentence": "Most abnormal findings at colposcopy are cell changes rather than cancer."
+  },
+  {
+   "id": "c44",
+   "where": "article.faqs[1].a",
+   "classification": "unsupported",
+   "evidence": "'Punch biopsy is common' not stated in retrieved text.",
+   "url": "https://www.nhs.uk/tests-and-treatments/colposcopy/",
+   "action": "edited",
+   "newSentence": "The cervix is looked at closely, and a small tissue sample (biopsy) may be taken from anywhere that looks unusual."
+  },
+  {
+   "id": "c45",
+   "where": "article.faqs[1].a",
+   "classification": "supported",
+   "evidence": "Hospital leaflet: colposcopist decides between punch biopsies and a wire loop (LLETZ); cone biopsy also possible.",
+   "url": "https://www.yorkhospitals.nhs.uk/our-services/organdonation/a-z-of-services/colposcopy/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c46",
+   "where": "article.faqs[1].a",
+   "classification": "supported",
+   "evidence": "Retrieved: an abnormal smear is followed by colposcopy.",
+   "url": "https://www.nhs.uk/tests-and-treatments/colposcopy/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c47",
+   "where": "article.faqs[2].a",
+   "classification": "supported",
+   "evidence": "Retrieved: symptoms can have other causes.",
+   "url": "https://www.nhs.uk/conditions/cervical-cancer/symptoms/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c48",
+   "where": "article.faqs[2].a",
+   "classification": "unsupported",
+   "evidence": "Not attributed to CRUK in retrieved text; 'common' not stated.",
+   "url": "https://www.nhs.uk/conditions/cervical-cancer/symptoms/",
+   "action": "edited",
+   "newSentence": "These symptoms can have other causes, so they do not by themselves mean cancer."
+  },
+  {
+   "id": "c49",
+   "where": "article.faqs[2].a",
+   "classification": "unsupported",
+   "evidence": "Retrieved: do not wait for next appointment; see GP. 'Cannot be assessed by screening' not retrieved.",
+   "url": "https://www.nhs.uk/conditions/cervical-cancer/symptoms/",
+   "action": "edited",
+   "newSentence": "The NHS advises that symptoms between screening appointments should not wait for the next appointment, and that a GP can check them."
+  },
+  {
+   "id": "c50",
+   "where": "article.faqs[3].a",
+   "classification": "supported",
+   "evidence": "CRUK: radiotherapy and some chemotherapy can damage the ovaries; trachelectomy keeps the uterus; effect varies with treatment.",
+   "url": "https://www.cancerresearchuk.org/about-cancer/cervical-cancer/living-with/fertility",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c51",
+   "where": "article.faqs[3].a",
+   "classification": "unsupported",
+   "evidence": "See c32: fertility specialist referral reworded to what UK sources retrieved.",
+   "url": "https://www.cancerresearchuk.org/about-cancer/cervical-cancer/living-with/fertility",
+   "action": "edited",
+   "newSentence": "People are usually referred to a fertility specialist before treatment starts, so that options such as storing eggs, embryos or ovarian tissue can be discussed."
+  },
+  {
+   "id": "c52",
+   "where": "article.faqs[3].a",
+   "classification": "unsupported",
+   "evidence": "Trachelectomy is fertility-sparing but only for selected early cancers; 'aims to preserve fertility' needs that limit to avoid overpromising.",
+   "url": "https://www.macmillan.org.uk/cancer-information-and-support/treatments-and-drugs/cervical-cancer-surgery",
+   "action": "edited",
+   "newSentence": "Egg or embryo storage before treatment can be discussed, and for some people with early cancer a trachelectomy can remove the cancer while keeping the womb."
+  },
+  {
+   "id": "c53",
+   "where": "article.faqs[4].a",
+   "classification": "supported",
+   "evidence": "NHS: screening offered to women and people with a cervix aged 25 to 64.",
+   "url": "https://www.cancerresearchuk.org/about-cancer/cervical-cancer/getting-diagnosed/screening",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c54",
+   "where": "article.faqs[4].a",
+   "classification": "supported",
+   "evidence": "NHS: children aged 12 to 13 are offered the HPV vaccine.",
+   "url": "https://www.nhs.uk/conditions/cervical-cancer/causes/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c55",
+   "where": "article.keyFacts[0]",
+   "classification": "unsupported",
+   "evidence": "'Persistent' and 'high-risk types' not in retrieved text; NHS says nearly all cases linked to HPV infection.",
+   "url": "https://www.nhs.uk/conditions/cervical-cancer/causes/",
+   "action": "edited",
+   "newSentence": "Main cause: infection with the human papillomavirus (HPV)"
+  },
+  {
+   "id": "c56",
+   "where": "article.keyFacts[1]",
+   "classification": "supported",
+   "evidence": "Retrieved: very early cervical cancer may not cause symptoms.",
+   "url": "https://www.nhs.uk/conditions/cervical-cancer/symptoms/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c57",
+   "where": "article.keyFacts[2]",
+   "classification": "unsupported",
+   "evidence": "'After the menopause' not in retrieved text; bleeding after sex and between periods was.",
+   "url": "https://www.nhs.uk/conditions/cervical-cancer/symptoms/",
+   "action": "edited",
+   "newSentence": "Main symptom: Unusual vaginal bleeding, for example after sex or between periods"
+  },
+  {
+   "id": "c58",
+   "where": "article.keyFacts[3]",
+   "classification": "supported",
+   "evidence": "Retrieved: colposcopy with biopsy is the route to diagnosis after an abnormal smear.",
+   "url": "https://www.nhs.uk/tests-and-treatments/colposcopy/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c59",
+   "where": "article.keyFacts[4]",
+   "classification": "supported",
+   "evidence": "Retrieved: doctors use the FIGO system (stages 1 to 4 on CRUK pages).",
+   "url": "https://www.royalmarsden.nhs.uk/private-care/news-and-blogs/cervical-cancer-stages-and-diagnosis",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c60",
+   "where": "article.keyFacts[5]",
+   "classification": "supported",
+   "evidence": "Retrieved: do not wait for the next screening appointment if symptoms occur; see a GP.",
+   "url": "https://www.nhs.uk/conditions/cervical-cancer/symptoms/",
+   "action": "kept",
+   "newSentence": ""
+  }
+ ]
+}

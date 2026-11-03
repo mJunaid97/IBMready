@@ -1,0 +1,759 @@
+{
+ "id": "hay-fever",
+ "searchesUsed": 12,
+ "counts": {
+  "supported": 58,
+  "textbook": 0,
+  "unsupported": 34,
+  "wrong": 1,
+  "unsafe": 0,
+  "unchecked": 0
+ },
+ "claims": [
+  {
+   "id": "c01",
+   "classification": "supported",
+   "evidence": "Asthma + Lung UK: hay fever is an allergic reaction to pollen, also called seasonal allergic rhinitis",
+   "url": "https://www.asthmaandlung.org.uk/conditions/hay-fever-seasonal-allergic-rhinitis/what-is-hay-fever",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c02",
+   "classification": "supported",
+   "evidence": "NHS search summary: common symptoms include sneezing and coughing, itchy red watery eyes",
+   "url": "https://www.nhs.uk/conditions/hay-fever/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c03",
+   "classification": "unsupported",
+   "evidence": "Asthma+Lung UK/NHS returned 'allergic reaction to pollen'; the mouth/nose/eyes/throat contact wording was not returned this pass",
+   "url": "https://www.nhs.uk/conditions/hay-fever/",
+   "action": "edited",
+   "newSentence": "It is an allergic reaction to pollen from plants."
+  },
+  {
+   "id": "c04",
+   "classification": "supported",
+   "evidence": "NHS: can last weeks or months unlike a cold (1-2 weeks); no cure, cannot be prevented, symptoms can be eased",
+   "url": "https://www.nhs.uk/conditions/hay-fever/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c05",
+   "classification": "supported",
+   "evidence": "NHS: can last weeks or months unlike a cold (1-2 weeks); no cure, cannot be prevented, symptoms can be eased",
+   "url": "https://www.nhs.uk/conditions/hay-fever/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c06",
+   "classification": "unsupported",
+   "evidence": "MedlinePlus exam/tests section not returned; NHS Devon says diagnosed from typical seasonal symptoms",
+   "url": "https://myhealth-devon.nhs.uk/my-condition/hayfever",
+   "action": "edited",
+   "newSentence": "Hay fever is usually recognised from typical seasonal symptoms, and formal allergy testing is not usually needed."
+  },
+  {
+   "id": "c07",
+   "classification": "supported",
+   "evidence": "NHS-affiliated leaflet: if doubt, doctor may suggest blood tests or skin prick testing",
+   "url": "https://best.barnsleyccg.nhs.uk/media/txphj32i/hay-fever-patient-information-sheet-2018.pdf",
+   "action": "edited",
+   "newSentence": "If there is doubt, a doctor may suggest blood tests or skin prick testing to confirm a pollen allergy."
+  },
+  {
+   "id": "c08",
+   "classification": "supported",
+   "evidence": "NHS: pharmacist can suggest antihistamine drops/tablets/nasal sprays and steroid nasal sprays; if these fail GP may refer for immunotherapy",
+   "url": "https://www.nhs.uk/conditions/hay-fever/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c09",
+   "classification": "supported",
+   "evidence": "NHS: pharmacist can suggest antihistamine drops/tablets/nasal sprays and steroid nasal sprays; if these fail GP may refer for immunotherapy",
+   "url": "https://www.nhs.uk/conditions/hay-fever/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c10",
+   "classification": "supported",
+   "evidence": "NHS: no cure and cannot be prevented",
+   "url": "https://www.nhs.uk/conditions/hay-fever/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c11",
+   "classification": "supported",
+   "evidence": "Allergy UK: monitor pollen forecasts; shower, wash hair and change clothes on arriving home",
+   "url": "https://www.allergyuk.org/about-allergy/types-of-allergies/hayfever/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c12",
+   "classification": "supported",
+   "evidence": "NHS: pharmacist can give advice and suggest best treatments ('usual first contact' was a paraphrase)",
+   "url": "https://www.nhs.uk/conditions/hay-fever/",
+   "action": "edited",
+   "newSentence": "A pharmacist can give advice and suggest treatments for hay fever."
+  },
+  {
+   "id": "c13",
+   "classification": "unsupported",
+   "evidence": "NHS: GP if worse or not improving after pharmacy medicines; Allergy UK: >2 weeks and affecting everyday tasks. 'Treatment causes side effects' not returned",
+   "url": "https://www.allergyuk.org/about-allergy/types-of-allergies/hayfever/",
+   "action": "edited",
+   "newSentence": "A GP appointment is the route if symptoms get worse or do not improve with pharmacy medicines, or if they last more than two weeks and affect everyday tasks."
+  },
+  {
+   "id": "c14",
+   "classification": "unsupported",
+   "evidence": "No source returned the NHS 111 / same-day GP route for hay fever breathlessness; NHS Wales says speak to pharmacist, GP practice or asthma nurse",
+   "url": "https://www.meddygfaminafon.wales.nhs.uk/health-resources/25966-hay-fever",
+   "action": "edited",
+   "newSentence": "If hay fever affects breathing or means a reliever inhaler is needed more than usual, NHS Wales advises speaking to a pharmacist, GP practice or asthma nurse."
+  },
+  {
+   "id": "c15",
+   "classification": "supported",
+   "evidence": "NHS Wales / Asthma + Lung UK: call 999 if struggling to breathe, cannot speak in full sentences, or reliever not helping",
+   "url": "https://www.meddygfaminafon.wales.nhs.uk/health-resources/25966-hay-fever",
+   "action": "edited",
+   "newSentence": "Call 999 if struggling to breathe, unable to speak in full sentences, or if a reliever inhaler is not helping."
+  },
+  {
+   "id": "c16",
+   "classification": "supported",
+   "evidence": "Allergy UK: tree, grass, weed pollen; MedlinePlus: pollen from trees, weeds, grasses",
+   "url": "https://www.allergyuk.org/about-allergy/types-of-allergies/hayfever/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c17",
+   "classification": "supported",
+   "evidence": "Allergy UK: tree, grass, weed pollen; MedlinePlus: pollen from trees, weeds, grasses",
+   "url": "https://www.allergyuk.org/about-allergy/types-of-allergies/hayfever/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c18",
+   "classification": "supported",
+   "evidence": "NIH PMC review: family history of allergic disease is a documented (strongest) risk factor",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1661616/",
+   "action": "edited",
+   "newSentence": "A family history of allergic disease is a recognised risk factor for allergic rhinitis."
+  },
+  {
+   "id": "c19",
+   "classification": "unsupported",
+   "evidence": "Antibiotic use and air pollution not returned; early childhood cigarette smoke exposure returned in a PMC review",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1661616/",
+   "action": "edited",
+   "newSentence": "Early childhood exposure to cigarette smoke has also been reported as a risk factor."
+  },
+  {
+   "id": "c20",
+   "classification": "unsupported",
+   "evidence": "Crease across nose / open-mouth breathing / dark shadows not returned by any source this pass",
+   "url": "",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c21",
+   "classification": "unsupported",
+   "evidence": "PMC review lists acute sinusitis, otitis media etc. as reported complications; 'most common' not stated",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1661616/",
+   "action": "edited",
+   "newSentence": "Sinusitis and middle ear infection have been reported as complications of allergic rhinitis."
+  },
+  {
+   "id": "c22",
+   "classification": "supported",
+   "evidence": "PMC retrospective cohort: allergic rhinitis is an independent risk factor for asthma",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1661616/",
+   "action": "edited",
+   "newSentence": "Allergic rhinitis is a recognised risk factor for developing asthma."
+  },
+  {
+   "id": "c23",
+   "classification": "supported",
+   "evidence": "Allergy UK/NHS leaflet: hay fever can trigger asthma symptoms; untreated rhinitis raises risk of sudden asthma attack",
+   "url": "https://frimley-healthiertogether.nhs.uk/application/files/7816/6021/1855/Hayfever_and_asthma.pdf",
+   "action": "edited",
+   "newSentence": "Hay fever can trigger asthma symptoms, and an NHS source says leaving it untreated raises the risk of a sudden asthma attack in people with asthma."
+  },
+  {
+   "id": "c24",
+   "classification": "supported",
+   "evidence": "NHS: sneezing, coughing, runny/blocked nose, itchy red watery eyes, loss of smell",
+   "url": "https://www.nhs.uk/conditions/hay-fever/",
+   "action": "edited",
+   "newSentence": "The NHS lists sneezing and coughing, a runny or blocked nose, itchy, red or watery eyes and loss of smell as common symptoms of hay fever."
+  },
+  {
+   "id": "c25",
+   "classification": "unsupported",
+   "evidence": "Itchy throat (Allergy UK), headache (MedlinePlus) returned; tiredness not returned",
+   "url": "https://www.allergyuk.org/about-allergy/types-of-allergies/hayfever/",
+   "action": "edited",
+   "newSentence": "Allergy UK also lists an itchy throat or ears. MedlinePlus, a United States source, says a stuffy nose, coughing and headache can develop later."
+  },
+  {
+   "id": "c26",
+   "classification": "unsupported",
+   "evidence": "Allergy UK: itchy throat or ears; fatigue and poor sleep not returned",
+   "url": "https://www.allergyuk.org/about-allergy/types-of-allergies/hayfever/",
+   "action": "edited",
+   "newSentence": "(merged into the sentence above)"
+  },
+  {
+   "id": "c27",
+   "classification": "supported",
+   "evidence": "NHS: weeks or months unlike a cold, which clears in 1-2 weeks",
+   "url": "https://www.nhs.uk/conditions/hay-fever/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c28",
+   "classification": "supported",
+   "evidence": "NHS: weeks or months unlike a cold, which clears in 1-2 weeks",
+   "url": "https://www.nhs.uk/conditions/hay-fever/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c29",
+   "classification": "unsupported",
+   "evidence": "'Local NHS pages' not returned; Asthma + Lung UK says usually worse March to September",
+   "url": "https://www.asthmaandlung.org.uk/conditions/hay-fever-seasonal-allergic-rhinitis/what-is-hay-fever",
+   "action": "edited",
+   "newSentence": "Asthma + Lung UK says symptoms are usually worse between March and September, when pollen counts are highest."
+  },
+  {
+   "id": "c30",
+   "classification": "supported",
+   "evidence": "Hay fever can trigger asthma symptoms: cough, wheeze, chest tightness, breathlessness",
+   "url": "https://frimley-healthiertogether.nhs.uk/application/files/7816/6021/1855/Hayfever_and_asthma.pdf",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c31",
+   "classification": "unsupported",
+   "evidence": "No 'prompt attention' NHS wording returned; NHS Wales advice replaces it",
+   "url": "https://www.meddygfaminafon.wales.nhs.uk/health-resources/25966-hay-fever",
+   "action": "edited",
+   "newSentence": "NHS Wales advises speaking to a pharmacist, GP practice or asthma nurse if hay fever affects breathing or means the reliever inhaler is needed more than usual."
+  },
+  {
+   "id": "c32",
+   "classification": "supported",
+   "evidence": "Asthma + Lung UK / NHS: allergic reaction to pollen",
+   "url": "https://www.asthmaandlung.org.uk/conditions/hay-fever-seasonal-allergic-rhinitis/what-is-hay-fever",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c33",
+   "classification": "unsupported",
+   "evidence": "Contact with mouth/nose/eyes/throat not returned",
+   "url": "https://www.nhs.uk/conditions/hay-fever/",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c34",
+   "classification": "unsupported",
+   "evidence": "MedlinePlus returned names trees, weeds and grasses; ragweed not returned",
+   "url": "https://medlineplus.gov/hayfever.html",
+   "action": "edited",
+   "newSentence": "MedlinePlus, a United States source, names pollen from trees, weeds and grasses, and says the plants responsible vary from person to person and from area to area."
+  },
+  {
+   "id": "c35",
+   "classification": "supported",
+   "evidence": "Allergy UK: tree, grass, weed pollen",
+   "url": "https://www.allergyuk.org/about-allergy/types-of-allergies/hayfever/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c36",
+   "classification": "supported",
+   "evidence": "Met Office: tree pollen first, late March to mid-May",
+   "url": "https://weather.metoffice.gov.uk/warnings-and-advice/seasonal-advice/health-wellbeing/pollen/when-is-hayfever-season",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c37",
+   "classification": "unsupported",
+   "evidence": "Met Office: weed pollen June to September; 'peak July and August' not returned",
+   "url": "https://weather.metoffice.gov.uk/warnings-and-advice/seasonal-advice/health-wellbeing/pollen/when-is-hayfever-season",
+   "action": "edited",
+   "newSentence": "Grass pollen peaks from mid-May to July, and weed pollen lasts from June to September."
+  },
+  {
+   "id": "c38",
+   "classification": "unsupported",
+   "evidence": "Not returned by any source",
+   "url": "",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c39",
+   "classification": "unsupported",
+   "evidence": "Not returned by any source",
+   "url": "",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c40",
+   "classification": "unsupported",
+   "evidence": "Allergy UK: warm, dry, windy days raise counts; 'calm, sunny' and 'cloudy' not returned",
+   "url": "https://www.allergyuk.org/about-allergy/types-of-allergies/hayfever/",
+   "action": "edited",
+   "newSentence": "Allergy UK says warm, dry and windy days can lead to higher pollen counts, while rain helps wash pollen out of the air."
+  },
+  {
+   "id": "c41",
+   "classification": "supported",
+   "evidence": "Allergy UK: rain washes pollen out of the air",
+   "url": "https://www.allergyuk.org/about-allergy/types-of-allergies/hayfever/",
+   "action": "kept",
+   "newSentence": "(merged with previous)"
+  },
+  {
+   "id": "c42",
+   "classification": "unsupported",
+   "evidence": "MedlinePlus exam/history text not returned",
+   "url": "https://medlineplus.gov/ency/article/000813.htm",
+   "action": "edited",
+   "newSentence": "The NHS in Devon says hay fever is usually recognised from typical seasonal symptoms."
+  },
+  {
+   "id": "c43",
+   "classification": "supported",
+   "evidence": "Leaflet: blood or skin prick tests if doubt; 'allergy-related substances' not returned",
+   "url": "https://best.barnsleyccg.nhs.uk/media/txphj32i/hay-fever-patient-information-sheet-2018.pdf",
+   "action": "edited",
+   "newSentence": ""
+  },
+  {
+   "id": "c44",
+   "classification": "supported",
+   "evidence": "NHS Devon / NHS inform: formal testing not usually required",
+   "url": "https://myhealth-devon.nhs.uk/my-condition/hayfever",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c45",
+   "classification": "unsupported",
+   "evidence": "'Local NHS pathways' wording not returned; NHS Devon replaces it",
+   "url": "https://myhealth-devon.nhs.uk/my-condition/hayfever",
+   "action": "edited",
+   "newSentence": ""
+  },
+  {
+   "id": "c46",
+   "classification": "unsupported",
+   "evidence": "Formulary, review and Devon urgent-ENT referral text not returned",
+   "url": "",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c47",
+   "classification": "unsupported",
+   "evidence": "Crease across nose / open-mouth breathing / dark shadows not returned by any source this pass",
+   "url": "",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c48",
+   "classification": "unsupported",
+   "evidence": "Formulary, review and Devon urgent-ENT referral text not returned",
+   "url": "",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c49",
+   "classification": "unsupported",
+   "evidence": "Formulary, review and Devon urgent-ENT referral text not returned",
+   "url": "",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c50",
+   "classification": "supported",
+   "evidence": "NHS: no cure; pharmacist suggests antihistamines and steroid nasal sprays",
+   "url": "https://www.nhs.uk/conditions/hay-fever/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c51",
+   "classification": "supported",
+   "evidence": "NHS: no cure; pharmacist suggests antihistamines and steroid nasal sprays",
+   "url": "https://www.nhs.uk/conditions/hay-fever/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c52",
+   "classification": "unsupported",
+   "evidence": "NHS cetirizine page: non-drowsy antihistamine for hay fever; loratadine/fexofenadine 'first choice' wording not returned",
+   "url": "https://www.nhs.uk/medicines/cetirizine/",
+   "action": "edited",
+   "newSentence": "The NHS describes cetirizine as a non-drowsy antihistamine used for allergy symptoms such as hay fever..."
+  },
+  {
+   "id": "c53",
+   "classification": "supported",
+   "evidence": "NHS chlorphenamine page: drowsy (sedating) antihistamine; non-drowsy less likely to cause sleepiness",
+   "url": "https://www.nhs.uk/medicines/chlorphenamine-including-piriton/",
+   "action": "edited",
+   "newSentence": "...and chlorphenamine as a drowsy antihistamine."
+  },
+  {
+   "id": "c54",
+   "classification": "unsupported",
+   "evidence": "Spray onset/combination and cromoglicate regular-use text not returned",
+   "url": "",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c55",
+   "classification": "supported",
+   "evidence": "MedlinePlus: nasal corticosteroid sprays are the most effective treatment for allergic rhinitis (attributed, US source)",
+   "url": "https://medlineplus.gov/ency/article/000813.htm",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c56",
+   "classification": "unsupported",
+   "evidence": "Spray onset/combination and cromoglicate regular-use text not returned",
+   "url": "",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c57",
+   "classification": "supported",
+   "evidence": "Frimley ICB leaflet: GP no longer prescribes antihistamine tablets/liquids, steroid nasal sprays, cromoglicate eye drops; kept as clearly local",
+   "url": "https://www.frimley.icb.nhs.uk/policies-and-documents/medicines-optimisation/prescribing-guidelines-1/ear-nose-and-throat/1352-treating-your-hayfever-a-patient-information-leaflet/file",
+   "action": "edited",
+   "newSentence": "Some local NHS areas in England, such as Frimley, say GPs no longer prescribe antihistamine tablets, steroid nasal sprays or sodium cromoglicate eye drops for hay fever."
+  },
+  {
+   "id": "c58",
+   "classification": "supported",
+   "evidence": "ICB guidance: policies vary by area",
+   "url": "https://www.frimley.icb.nhs.uk/policies-and-documents/medicines-optimisation/prescribing-guidelines-1/ear-nose-and-throat/1352-treating-your-hayfever-a-patient-information-leaflet/file",
+   "action": "edited",
+   "newSentence": "Policies vary by area."
+  },
+  {
+   "id": "c59",
+   "classification": "supported",
+   "evidence": "NHS: GP may refer for immunotherapy; usually starts a few months before season; specialist service, may not be available everywhere",
+   "url": "https://www.nhs.uk/conditions/hay-fever/",
+   "action": "edited",
+   "newSentence": "Immunotherapy gives small amounts of pollen as an injection or tablet... usually starts a few months before the hay fever season and may not be available everywhere."
+  },
+  {
+   "id": "c60",
+   "classification": "supported",
+   "evidence": "NHS: GP may refer for immunotherapy; usually starts a few months before season; specialist service, may not be available everywhere",
+   "url": "https://www.nhs.uk/conditions/hay-fever/",
+   "action": "edited",
+   "newSentence": "Immunotherapy gives small amounts of pollen as an injection or tablet... usually starts a few months before the hay fever season and may not be available everywhere."
+  },
+  {
+   "id": "c61",
+   "classification": "supported",
+   "evidence": "NHS self-help: wraparound sunglasses, shower after going out, windows shut, petroleum jelly around nostrils",
+   "url": "https://www.nhs.uk/conditions/hay-fever/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c62",
+   "classification": "supported",
+   "evidence": "NHS self-help: wraparound sunglasses, shower after going out, windows shut, petroleum jelly around nostrils",
+   "url": "https://www.nhs.uk/conditions/hay-fever/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c63",
+   "classification": "supported",
+   "evidence": "Allergy UK: monitor forecasts daily, stay indoors where possible when high, shower and change clothes",
+   "url": "https://www.allergyuk.org/about-allergy/types-of-allergies/hayfever/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c64",
+   "classification": "supported",
+   "evidence": "Allergy UK: monitor forecasts daily, stay indoors where possible when high, shower and change clothes",
+   "url": "https://www.allergyuk.org/about-allergy/types-of-allergies/hayfever/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c65",
+   "classification": "supported",
+   "evidence": "Allergy UK: most people manage with a daily non-sedating antihistamine",
+   "url": "https://www.allergyuk.org/about-allergy/types-of-allergies/hayfever/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c66",
+   "classification": "supported",
+   "evidence": "NHS: pharmacist can give advice (paraphrase 'usual first contact' removed)",
+   "url": "https://www.nhs.uk/conditions/hay-fever/",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c67",
+   "classification": "wrong",
+   "evidence": "Allergy UK: GP or practice nurse (not pharmacist) if symptoms persist despite medicines or last >2 weeks and affect everyday tasks",
+   "url": "https://www.allergyuk.org/about-allergy/types-of-allergies/hayfever/",
+   "action": "edited",
+   "newSentence": "Allergy UK advises seeing a GP or practice nurse if symptoms persist despite antihistamines or other medicines, or if they last more than two weeks and affect everyday tasks."
+  },
+  {
+   "id": "c68",
+   "classification": "unsupported",
+   "evidence": "Side-effects trigger not returned",
+   "url": "",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c69",
+   "classification": "unsupported",
+   "evidence": "NHS 111 / same-day GP route not stated by any returned source; NHS Wales wording used",
+   "url": "https://www.meddygfaminafon.wales.nhs.uk/health-resources/25966-hay-fever",
+   "action": "edited",
+   "newSentence": "NHS Wales advises speaking to a pharmacist, GP practice or asthma nurse...call 999 if struggling to breathe or reliever not helping."
+  },
+  {
+   "id": "c70",
+   "classification": "supported",
+   "evidence": "NHS/Allergy UK as above",
+   "url": "https://www.nhs.uk/conditions/hay-fever/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c71",
+   "classification": "supported",
+   "evidence": "NHS/Allergy UK as above",
+   "url": "https://www.nhs.uk/conditions/hay-fever/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c72",
+   "classification": "supported",
+   "evidence": "NHS/Allergy UK as above",
+   "url": "https://www.nhs.uk/conditions/hay-fever/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c73",
+   "classification": "supported",
+   "evidence": "NHS/Allergy UK as above",
+   "url": "https://www.nhs.uk/conditions/hay-fever/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c74",
+   "classification": "supported",
+   "evidence": "NHS: hay fever vs cold; Allergy UK/NHS symptoms",
+   "url": "https://www.nhs.uk/conditions/hay-fever/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c75",
+   "classification": "supported",
+   "evidence": "NHS: hay fever vs cold; Allergy UK/NHS symptoms",
+   "url": "https://www.nhs.uk/conditions/hay-fever/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c76",
+   "classification": "supported",
+   "evidence": "NHS: hay fever vs cold; Allergy UK/NHS symptoms",
+   "url": "https://www.nhs.uk/conditions/hay-fever/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c77",
+   "classification": "unsupported",
+   "evidence": "Allergy UK condition is 'and affect everyday tasks'; GP or practice nurse",
+   "url": "https://www.allergyuk.org/about-allergy/types-of-allergies/hayfever/",
+   "action": "edited",
+   "newSentence": "Allergy UK advises seeing a GP or practice nurse if symptoms last more than two weeks and affect everyday tasks."
+  },
+  {
+   "id": "c78",
+   "classification": "supported",
+   "evidence": "Hay fever can trigger asthma symptoms",
+   "url": "https://frimley-healthiertogether.nhs.uk/application/files/7816/6021/1855/Hayfever_and_asthma.pdf",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c79",
+   "classification": "supported",
+   "evidence": "PMC cohort; NHS leaflet",
+   "url": "https://frimley-healthiertogether.nhs.uk/application/files/7816/6021/1855/Hayfever_and_asthma.pdf",
+   "action": "edited",
+   "newSentence": "Hay fever can trigger asthma symptoms... untreated raises risk of sudden attack."
+  },
+  {
+   "id": "c80",
+   "classification": "unsupported",
+   "evidence": "NHS 111 / same-day GP route not stated by any returned source; NHS Wales wording used",
+   "url": "https://www.meddygfaminafon.wales.nhs.uk/health-resources/25966-hay-fever",
+   "action": "edited",
+   "newSentence": "NHS Wales advises speaking to a pharmacist, GP practice or asthma nurse...call 999 if struggling to breathe or reliever not helping."
+  },
+  {
+   "id": "c81",
+   "classification": "supported",
+   "evidence": "Met Office / Allergy UK: tree pollen late March to mid-May",
+   "url": "https://weather.metoffice.gov.uk/warnings-and-advice/seasonal-advice/health-wellbeing/pollen/when-is-hayfever-season",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c82",
+   "classification": "unsupported",
+   "evidence": "Met Office: weed June to September",
+   "url": "https://weather.metoffice.gov.uk/warnings-and-advice/seasonal-advice/health-wellbeing/pollen/when-is-hayfever-season",
+   "action": "edited",
+   "newSentence": "Grass pollen peaks mid-May to July; weed pollen lasts June to September."
+  },
+  {
+   "id": "c83",
+   "classification": "unsupported",
+   "evidence": "Not returned",
+   "url": "",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c84",
+   "classification": "unsupported",
+   "evidence": "Allergy UK: warm, dry, windy raises counts; rain washes pollen out",
+   "url": "https://www.allergyuk.org/about-allergy/types-of-allergies/hayfever/",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c85",
+   "classification": "supported",
+   "evidence": "PMC review: family history strongest risk factor; '2024 review' date not verified",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1661616/",
+   "action": "edited",
+   "newSentence": "A family history of allergic disease is one of the strongest documented risk factors for allergic rhinitis, according to published reviews."
+  },
+  {
+   "id": "c86",
+   "classification": "unsupported",
+   "evidence": "Antibiotics/pollution not returned; smoking in early childhood returned",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1661616/",
+   "action": "edited",
+   "newSentence": "Early childhood exposure to cigarette smoke has also been reported as a risk factor."
+  },
+  {
+   "id": "c87",
+   "classification": "supported",
+   "evidence": "NHS: allergic reaction to pollen",
+   "url": "https://www.nhs.uk/conditions/hay-fever/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c88",
+   "classification": "supported",
+   "evidence": "Asthma + Lung UK: seasonal allergic rhinitis; MedlinePlus: allergic rhinitis",
+   "url": "https://www.asthmaandlung.org.uk/conditions/hay-fever-seasonal-allergic-rhinitis/what-is-hay-fever",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c89",
+   "classification": "supported",
+   "evidence": "NHS: allergic reaction to pollen; symptoms list",
+   "url": "https://www.nhs.uk/conditions/hay-fever/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c90",
+   "classification": "supported",
+   "evidence": "NHS: allergic reaction to pollen; symptoms list",
+   "url": "https://www.nhs.uk/conditions/hay-fever/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c91",
+   "classification": "supported",
+   "evidence": "Met Office: tree pollen late March to mid-May then grass, weed",
+   "url": "https://weather.metoffice.gov.uk/warnings-and-advice/seasonal-advice/health-wellbeing/pollen/when-is-hayfever-season",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c92",
+   "classification": "supported",
+   "evidence": "NHS: pharmacist can give advice",
+   "url": "https://www.nhs.uk/conditions/hay-fever/",
+   "action": "edited",
+   "newSentence": "A pharmacist can advise on treatments"
+  },
+  {
+   "id": "c93",
+   "classification": "supported",
+   "evidence": "NHS: no cure, symptoms eased",
+   "url": "https://www.nhs.uk/conditions/hay-fever/",
+   "action": "kept",
+   "newSentence": ""
+  }
+ ],
+ "notes": "NICE CKS (cks.nice.org.uk 'Allergic rhinitis') was searched and not returned, so it is not cited. Removed: chlorphenamine and fatigue links, 'pollen allergy' kept as alias (MedlinePlus describes hay fever as a pollen allergy), signs list emptied (no retrieved source), ragweed, 'peak July/August', 'most common complication', antibiotic/pollution risks, cromoglicate eye-drop claim, steroid-spray onset, Devon ENT referral, NHS 111 same-day route. Kept: Frimley local prescribing change as clearly local. Several attributions rest on blended summaries (family history/complications: PMC reviews; asthma untreated-risk: Frimley-hosted Allergy UK leaflet; diagnosis: NHS Devon and a Barnsley leaflet of patient.info text). MedlinePlus 'most effective' kept attributed to MedlinePlus. Alias 'seasonal allergic rhinitis' now supported by Asthma + Lung UK. 999 line now supported by NHS Wales/Asthma + Lung UK. Immunotherapy 'few months before season' supported by NHS summary. 'Patient information site' sentence on early treatment rests on NHS inform/patient.info summary, not individually cited. Remaining doubt: first-pass search-sourced text for the 'NHS lists ... loss of smell' wording came from a blended NHS summary."
+}

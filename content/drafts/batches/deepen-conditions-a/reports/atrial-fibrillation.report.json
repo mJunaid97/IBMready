@@ -1,0 +1,571 @@
+{
+ "id": "atrial-fibrillation",
+ "searchesUsed": 10,
+ "counts": {
+  "supported": 50,
+  "textbook": 0,
+  "unsupported": 27,
+  "wrong": 0,
+  "unsafe": 0,
+  "unchecked": 0
+ },
+ "claims": [
+  {
+   "id": "c01",
+   "classification": "unsupported",
+   "evidence": "NHS: palpitations most common; tiredness, breathlessness, dizziness, chest discomfort. 'Irregular pulse', 'fast heartbeat', 'chest tightness' not in retrieved text.",
+   "url": "https://www.nhs.uk/conditions/atrial-fibrillation/",
+   "action": "edited",
+   "newSentence": "The NHS describes atrial fibrillation (AF) as a common heart rhythm problem. It lists palpitations as the most common sign, along with tiredness, breathlessness, dizziness and chest discomfort."
+  },
+  {
+   "id": "c02",
+   "classification": "unsupported",
+   "evidence": "'Reduced ability to exercise' not retrieved.",
+   "url": "https://www.nhs.uk/conditions/atrial-fibrillation/",
+   "action": "removed"
+  },
+  {
+   "id": "c03",
+   "classification": "supported",
+   "evidence": "NHS: sometimes no symptoms.",
+   "url": "https://www.nhs.uk/conditions/atrial-fibrillation/",
+   "action": "kept"
+  },
+  {
+   "id": "c04",
+   "classification": "supported",
+   "evidence": "NHS: found at routine check-up or tests for something else.",
+   "url": "https://www.nhs.uk/conditions/atrial-fibrillation/",
+   "action": "kept"
+  },
+  {
+   "id": "c05",
+   "classification": "unsupported",
+   "evidence": "Pulse check mentioned by NICE (manual pulse palpation if AF suspected), not NHS as drafted.",
+   "url": "https://www.nice.org.uk/guidance/ng196/chapter/Recommendations",
+   "action": "edited",
+   "newSentence": "NICE guidance advises a manual pulse check to look for an irregular pulse when AF is suspected."
+  },
+  {
+   "id": "c06",
+   "classification": "supported",
+   "evidence": "NHS inform: generally not dangerous in itself.",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/cardiovascular-disease/heart-disease/atrial-fibrillation/",
+   "action": "edited",
+   "newSentence": "NHS inform describes atrial fibrillation as generally not dangerous in itself, and says many people live normal, healthy lives with it."
+  },
+  {
+   "id": "c07",
+   "classification": "supported",
+   "evidence": "NHS inform: many people live normal healthy lives.",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/cardiovascular-disease/heart-disease/atrial-fibrillation/",
+   "action": "kept"
+  },
+  {
+   "id": "c08",
+   "classification": "supported",
+   "evidence": "BHF: no cure, people with AF can lead healthy lives.",
+   "url": "https://www.bhf.org.uk/informationsupport/heart-matters-magazine/medical/living-with-atrial-fibrillation",
+   "action": "kept"
+  },
+  {
+   "id": "c09",
+   "classification": "supported",
+   "evidence": "NHS inform classifies by duration.",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/cardiovascular-disease/heart-disease/atrial-fibrillation/",
+   "action": "kept"
+  },
+  {
+   "id": "c10",
+   "classification": "supported",
+   "evidence": "NHS inform and BHF: paroxysmal minutes to hours.",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/cardiovascular-disease/heart-disease/atrial-fibrillation/",
+   "action": "kept"
+  },
+  {
+   "id": "c11",
+   "classification": "supported",
+   "evidence": "NHS inform: persistent over 7 days.",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/cardiovascular-disease/heart-disease/atrial-fibrillation/",
+   "action": "kept"
+  },
+  {
+   "id": "c12",
+   "classification": "supported",
+   "evidence": "NHS inform: long-term persistent continuous over a year.",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/cardiovascular-disease/heart-disease/atrial-fibrillation/",
+   "action": "edited",
+   "newSentence": "Long-term persistent AF is continuous for over a year."
+  },
+  {
+   "id": "c13",
+   "classification": "unsupported",
+   "evidence": "'Rhythm does not go back to normal' not in retrieved text; BHF says permanent is continuous.",
+   "url": "https://www.bhf.org.uk/informationsupport/heart-matters-magazine/medical/living-with-atrial-fibrillation",
+   "action": "edited",
+   "newSentence": "The BHF describes permanent AF as continuous, and says people with it may always have symptoms."
+  },
+  {
+   "id": "c14",
+   "classification": "unsupported",
+   "evidence": "'Even after treatment' not retrieved.",
+   "url": "https://www.bhf.org.uk/informationsupport/heart-matters-magazine/medical/living-with-atrial-fibrillation",
+   "action": "removed"
+  },
+  {
+   "id": "c15",
+   "classification": "unsupported",
+   "evidence": "'Hard to catch' is an inference; NHS says portable ECG helps diagnose paroxysmal AF.",
+   "url": "https://www.nhs.uk/conditions/atrial-fibrillation/",
+   "action": "edited",
+   "newSentence": "The NHS says a portable ECG recorder can help diagnose paroxysmal AF, because it can be worn for 24 hours or longer."
+  },
+  {
+   "id": "c16",
+   "classification": "unsupported",
+   "evidence": "Royal Papworth page not retrieved.",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c17",
+   "classification": "unsupported",
+   "evidence": "Retrieved types list was attributed to NHS inform, not the NHS page.",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c18",
+   "classification": "supported",
+   "evidence": "NHS: see a GP if you think you have symptoms.",
+   "url": "https://www.nhs.uk/conditions/atrial-fibrillation/",
+   "action": "kept"
+  },
+  {
+   "id": "c19",
+   "classification": "supported",
+   "evidence": "NHS: GP if palpitations keep happening/worsen or treatment not controlling symptoms.",
+   "url": "https://www.nhs.uk/conditions/atrial-fibrillation/",
+   "action": "kept"
+  },
+  {
+   "id": "c20",
+   "classification": "unsupported",
+   "evidence": "'Irregular or very fast at rest' not retrieved.",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c21",
+   "classification": "unsupported",
+   "evidence": "Retrieved: GP may refer to cardiologist who checks heart rate and symptoms.",
+   "url": "https://www.nhs.uk/conditions/atrial-fibrillation/",
+   "action": "edited",
+   "newSentence": "A GP may refer a person to a cardiologist, a heart specialist, who checks the heart rate and symptoms."
+  },
+  {
+   "id": "c22",
+   "classification": "supported",
+   "evidence": "NICE: 12-lead ECG confirms diagnosis; gloss as a recording of electrical activity is a textbook definition.",
+   "url": "https://www.nice.org.uk/guidance/ng196/chapter/Recommendations",
+   "action": "edited",
+   "newSentence": "It says a 12-lead ECG, a recording of the heart's electrical activity, should be used to confirm the diagnosis."
+  },
+  {
+   "id": "c23",
+   "classification": "supported",
+   "evidence": "NHS: echo, chest X-ray, blood tests may be arranged.",
+   "url": "https://www.nhs.uk/conditions/atrial-fibrillation/",
+   "action": "kept"
+  },
+  {
+   "id": "c24",
+   "classification": "supported",
+   "evidence": "NHS: portable ECG 24 hours or longer helps diagnose paroxysmal AF.",
+   "url": "https://www.nhs.uk/conditions/atrial-fibrillation/",
+   "action": "kept"
+  },
+  {
+   "id": "c25",
+   "classification": "supported",
+   "evidence": "NHS: no cure currently; treatment helps manage symptoms and lower complication risk (blood clots, stroke, heart failure).",
+   "url": "https://www.nhs.uk/conditions/atrial-fibrillation/",
+   "action": "edited"
+  },
+  {
+   "id": "c26",
+   "classification": "supported",
+   "evidence": "NHLBI: treatment to prevent clots, slow heartbeat, restore rhythm.",
+   "url": "https://www.nhlbi.nih.gov/health/atrial-fibrillation/treatment",
+   "action": "edited"
+  },
+  {
+   "id": "c27",
+   "classification": "supported",
+   "evidence": "NHS/NHS inform: beta blockers, anti-arrhythmic drugs.",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/cardiovascular-disease/heart-disease/atrial-fibrillation/",
+   "action": "kept"
+  },
+  {
+   "id": "c28",
+   "classification": "supported",
+   "evidence": "NHS trust leaflet: blood thinners reduce clot/stroke risk.",
+   "url": "https://dchft.nhs.uk/leaflets/atrial-fibrillation-and-anticoagulation/",
+   "action": "edited"
+  },
+  {
+   "id": "c29",
+   "classification": "unsupported",
+   "evidence": "Formulary says DOACs first line, warfarin if intolerant; 'vitamin K antagonist' wording not in text.",
+   "url": "https://southwest.devonformularyguidance.nhs.uk/formulary/chapters/2-cardiovascular/atrial-fibrillation",
+   "action": "edited",
+   "newSentence": "Local NHS guidance lists direct-acting oral anticoagulants first, with warfarin for people who cannot take them."
+  },
+  {
+   "id": "c30",
+   "classification": "supported",
+   "evidence": "NHS inform: ablation, pacemaker, cardioversion among treatments.",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/cardiovascular-disease/heart-disease/atrial-fibrillation/",
+   "action": "edited"
+  },
+  {
+   "id": "c31",
+   "classification": "unsupported",
+   "evidence": "NICE: ablation usually reserved when antiarrhythmic drugs have failed; 'not suitable' not retrieved.",
+   "url": "https://www.nice.org.uk/guidance/ng196/chapter/Recommendations",
+   "action": "edited",
+   "newSentence": "NICE says catheter ablation is usually reserved for people in whom antiarrhythmic drugs have failed."
+  },
+  {
+   "id": "c32",
+   "classification": "unsupported",
+   "evidence": "NICE found four techniques (radiofrequency, multi-electrode, laser, cryoballoon); 'usual' framing not retrieved.",
+   "url": "https://www.nice.org.uk/guidance/ng196/chapter/Recommendations",
+   "action": "removed"
+  },
+  {
+   "id": "c33",
+   "classification": "unsupported",
+   "evidence": "NHLBI recent-onset/athletes not retrieved; NHLBI: rhythm control for continuing symptoms or not improving on rate-control medicines.",
+   "url": "https://www.nhlbi.nih.gov/health/atrial-fibrillation/treatment",
+   "action": "edited",
+   "newSentence": "NHLBI describes rhythm control as recommended for people who continue to have symptoms or are not improving on medicines that control heart rate."
+  },
+  {
+   "id": "c34",
+   "classification": "unsupported",
+   "evidence": "UK charity leaflet on anticoagulation after ablation not retrieved.",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c35",
+   "classification": "unsupported",
+   "evidence": "NHLBI list (stimulants, stress, heart-healthy foods) not retrieved; only weight/activity/alcohol advice seen.",
+   "url": "https://www.nhlbi.nih.gov/health/atrial-fibrillation/living-with",
+   "action": "edited",
+   "newSentence": "NHLBI says combining weight loss with physical activity and managing other risk factors, such as high blood pressure, diabetes, alcohol use and smoking, can improve symptoms more than weight loss alone."
+  },
+  {
+   "id": "c36",
+   "classification": "unsupported",
+   "evidence": "Exact wording about severity/frequency not retrieved.",
+   "url": "https://www.nhlbi.nih.gov/health/atrial-fibrillation/living-with",
+   "action": "removed"
+  },
+  {
+   "id": "c37",
+   "classification": "unsupported",
+   "evidence": "NHS inform lifestyle wording not retrieved; NHS 111 Wales lists triggers (caffeine, spicy food, stress, dehydration, lack of sleep).",
+   "url": "https://111.wales.nhs.uk/encyclopaedia/a/article/atrialfibrillation",
+   "action": "edited",
+   "newSentence": "NHS 111 Wales lists caffeine, spicy food, stress, dehydration and lack of sleep as possible triggers."
+  },
+  {
+   "id": "c38",
+   "classification": "supported",
+   "evidence": "BHF: working out triggers is important part of self-management.",
+   "url": "https://www.bhf.org.uk/informationsupport/heart-matters-magazine/medical/living-with-atrial-fibrillation",
+   "action": "kept"
+  },
+  {
+   "id": "c39",
+   "classification": "supported",
+   "evidence": "BHF: permanent AF generally safe to exercise if well; intermittent only in normal rhythm.",
+   "url": "https://www.bhf.org.uk/informationsupport/heart-matters-magazine/medical/living-with-atrial-fibrillation",
+   "action": "edited"
+  },
+  {
+   "id": "c40",
+   "classification": "supported",
+   "evidence": "NHLBI: possibility of severe bleeding in brain with blood thinners.",
+   "url": "https://www.nhlbi.nih.gov/health/atrial-fibrillation/living-with",
+   "action": "kept"
+  },
+  {
+   "id": "c41",
+   "classification": "unsupported",
+   "evidence": "Post-ablation check-ups not retrieved.",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c42",
+   "classification": "supported",
+   "evidence": "NHLBI: undiagnosed/untreated AF can cause serious, even life-threatening complications.",
+   "url": "https://www.nhlbi.nih.gov/health/atrial-fibrillation/symptoms",
+   "action": "kept"
+  },
+  {
+   "id": "c43",
+   "classification": "supported",
+   "evidence": "Stroke Association: raises stroke risk, AF strokes cause more brain damage.",
+   "url": "https://www.stroke.org.uk/stroke/managing-risk/atrial-fibrillation",
+   "action": "edited",
+   "newSentence": "The Stroke Association says AF raises the risk of stroke, and that strokes linked to AF tend to cause more brain damage."
+  },
+  {
+   "id": "c44",
+   "classification": "unsupported",
+   "evidence": "Heart Rhythm Alliance booklet saying outlook 'excellent' not retrieved.",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c45",
+   "classification": "supported",
+   "evidence": "NHS: 999 for fast/irregular heartbeat with chest pain, SOB, fainting or dizziness, stroke-like signs.",
+   "url": "https://www.nhs.uk/conditions/atrial-fibrillation/",
+   "action": "edited"
+  },
+  {
+   "id": "c46",
+   "classification": "supported",
+   "evidence": "NHS: do not drive yourself to A&E.",
+   "url": "https://www.nhs.uk/conditions/atrial-fibrillation/",
+   "action": "kept"
+  },
+  {
+   "id": "c47",
+   "classification": "supported",
+   "evidence": "Stroke Association: FAST signs, call 999 straight away.",
+   "url": "https://www.stroke.org.uk/stroke/managing-risk/atrial-fibrillation",
+   "action": "kept"
+  },
+  {
+   "id": "c48",
+   "classification": "supported",
+   "evidence": "NHS: see GP for non-emergency symptoms.",
+   "url": "https://www.nhs.uk/conditions/atrial-fibrillation/",
+   "action": "kept"
+  },
+  {
+   "id": "c49",
+   "classification": "unsupported",
+   "evidence": "Stroke Association page not retrieved saying anticoagulants often included.",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c50",
+   "classification": "supported",
+   "evidence": "FAQ1 sentences 1-4 as per NHS/NHLBI (no cure; manage symptoms; aims; options)",
+   "url": "https://www.nhs.uk/conditions/atrial-fibrillation/",
+   "action": "edited"
+  },
+  {
+   "id": "c51",
+   "classification": "supported",
+   "evidence": "FAQ1 sentences 1-4 as per NHS/NHLBI (no cure; manage symptoms; aims; options)",
+   "url": "https://www.nhs.uk/conditions/atrial-fibrillation/",
+   "action": "edited"
+  },
+  {
+   "id": "c52",
+   "classification": "supported",
+   "evidence": "FAQ1 sentences 1-4 as per NHS/NHLBI (no cure; manage symptoms; aims; options)",
+   "url": "https://www.nhs.uk/conditions/atrial-fibrillation/",
+   "action": "edited"
+  },
+  {
+   "id": "c53",
+   "classification": "supported",
+   "evidence": "FAQ1 sentences 1-4 as per NHS/NHLBI (no cure; manage symptoms; aims; options)",
+   "url": "https://www.nhs.uk/conditions/atrial-fibrillation/",
+   "action": "edited"
+  },
+  {
+   "id": "c54",
+   "classification": "supported",
+   "evidence": "FAQ2 NHS inform not dangerous in itself",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/cardiovascular-disease/heart-disease/atrial-fibrillation/",
+   "action": "kept"
+  },
+  {
+   "id": "c55",
+   "classification": "supported",
+   "evidence": "FAQ2 NHLBI serious complications",
+   "url": "https://www.nhlbi.nih.gov/health/atrial-fibrillation/symptoms",
+   "action": "kept"
+  },
+  {
+   "id": "c56",
+   "classification": "supported",
+   "evidence": "FAQ2 Stroke Association raises stroke risk",
+   "url": "https://www.stroke.org.uk/stroke/managing-risk/atrial-fibrillation",
+   "action": "kept"
+  },
+  {
+   "id": "c57",
+   "classification": "supported",
+   "evidence": "FAQ3 NHS no symptoms",
+   "url": "https://www.nhs.uk/conditions/atrial-fibrillation/",
+   "action": "kept"
+  },
+  {
+   "id": "c58",
+   "classification": "supported",
+   "evidence": "FAQ3 found at check-up",
+   "url": "https://www.nhs.uk/conditions/atrial-fibrillation/",
+   "action": "kept"
+  },
+  {
+   "id": "c59",
+   "classification": "unsupported",
+   "evidence": "Pulse check is NICE not NHS; ECG usually used for diagnosis -> NICE 12-lead ECG",
+   "url": "https://www.nice.org.uk/guidance/ng196/chapter/Recommendations",
+   "action": "edited",
+   "newSentence": "NICE guidance advises a manual pulse check to look for an irregular pulse when AF is suspected, and a 12-lead ECG is used to confirm the diagnosis."
+  },
+  {
+   "id": "c60",
+   "classification": "supported",
+   "evidence": "FAQ4 NHS inform duration",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/cardiovascular-disease/heart-disease/atrial-fibrillation/",
+   "action": "kept"
+  },
+  {
+   "id": "c61",
+   "classification": "supported",
+   "evidence": "FAQ4 paroxysmal",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/cardiovascular-disease/heart-disease/atrial-fibrillation/",
+   "action": "kept"
+  },
+  {
+   "id": "c62",
+   "classification": "unsupported",
+   "evidence": "Permanent 'rhythm does not return' not retrieved",
+   "url": "https://www.bhf.org.uk/informationsupport/heart-matters-magazine/medical/living-with-atrial-fibrillation",
+   "action": "edited",
+   "newSentence": "The BHF describes permanent AF as continuous, with people possibly always having symptoms."
+  },
+  {
+   "id": "c63",
+   "classification": "supported",
+   "evidence": "FAQ4 persistent/long-term persistent durations",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/cardiovascular-disease/heart-disease/atrial-fibrillation/",
+   "action": "edited"
+  },
+  {
+   "id": "c64",
+   "classification": "unsupported",
+   "evidence": "FAQ5 NHLBI list not fully retrieved",
+   "url": "https://www.nhlbi.nih.gov/health/atrial-fibrillation/living-with",
+   "action": "edited",
+   "newSentence": "NHLBI says combining weight loss with physical activity and managing risk factors ... can improve symptoms more than weight loss alone."
+  },
+  {
+   "id": "c65",
+   "classification": "unsupported",
+   "evidence": "Healthy weight reduces severity/frequency not retrieved",
+   "url": "https://www.nhlbi.nih.gov/health/atrial-fibrillation/living-with",
+   "action": "removed"
+  },
+  {
+   "id": "c66",
+   "classification": "unsupported",
+   "evidence": "NHS inform caffeine not retrieved",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c67",
+   "classification": "supported",
+   "evidence": "FAQ6 999 route",
+   "url": "https://www.nhs.uk/conditions/atrial-fibrillation/",
+   "action": "edited"
+  },
+  {
+   "id": "c68",
+   "classification": "supported",
+   "evidence": "do not drive",
+   "url": "https://www.nhs.uk/conditions/atrial-fibrillation/",
+   "action": "kept"
+  },
+  {
+   "id": "c69",
+   "classification": "supported",
+   "evidence": "palpitations -> GP",
+   "url": "https://www.nhs.uk/conditions/atrial-fibrillation/",
+   "action": "kept"
+  },
+  {
+   "id": "c70",
+   "classification": "unsupported",
+   "evidence": "Irregular/very fast at rest not retrieved",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c71",
+   "classification": "supported",
+   "evidence": "Key fact types",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/cardiovascular-disease/heart-disease/atrial-fibrillation/",
+   "action": "edited"
+  },
+  {
+   "id": "c72",
+   "classification": "supported",
+   "evidence": "ECG usual first test (NICE 12-lead ECG)",
+   "url": "https://www.nice.org.uk/guidance/ng196/chapter/Recommendations",
+   "action": "edited"
+  },
+  {
+   "id": "c73",
+   "classification": "supported",
+   "evidence": "portable ECG 24h",
+   "url": "https://www.nhs.uk/conditions/atrial-fibrillation/",
+   "action": "kept"
+  },
+  {
+   "id": "c74",
+   "classification": "supported",
+   "evidence": "aims (NHLBI)",
+   "url": "https://www.nhlbi.nih.gov/health/atrial-fibrillation/treatment",
+   "action": "edited"
+  },
+  {
+   "id": "c75",
+   "classification": "supported",
+   "evidence": "no cure",
+   "url": "https://www.nhs.uk/conditions/atrial-fibrillation/",
+   "action": "kept"
+  },
+  {
+   "id": "c76",
+   "classification": "supported",
+   "evidence": "stroke link",
+   "url": "https://www.stroke.org.uk/stroke/managing-risk/atrial-fibrillation",
+   "action": "edited"
+  },
+  {
+   "id": "c77",
+   "classification": "supported",
+   "evidence": "999 route",
+   "url": "https://www.nhs.uk/conditions/atrial-fibrillation/",
+   "action": "edited"
+  }
+ ],
+ "notes": "Contradictions/unsupported in EXISTING page entry: (1) overview says AF 'causes one in five strokes'; CDC (retrieved) says about 1 in 7 strokes (US); I could not support one in five. (2) overview says 'hundreds of electrical impulses a minute swirl' and sinoatrial/atrioventricular node mechanism: not retrieved. (3) overview says sudden cardiac arrest and cognitive impairment/dementia: NHLBI does list these. (4) 'AF is not usually life-threatening' is consistent with NHS inform. (5) treatment text names digoxin, rate-limiting calcium-channel blockers, surgical approaches, stroke risk score components: not retrieved by me; the NHS retrieved lists calcium channel blockers, beta blockers, anti-arrhythmics. (6) diagnosis says ECG 'shows no P waves': not retrieved. (7) riskFactors 'Age over 65', 'Family history', 'Overweight' and causes 'Alcohol binges', 'Lung disease' not retrieved (NHS listed age, sex, smoking, some medicines, high BP, heart attack, CKD, overactive thyroid, diabetes, sleep apnoea). (8) seekCare 'urgent care' for palpitations with chest pain: NHS says 999. (9) signs 'pulse deficit' and 'low blood pressure' not retrieved (NHLBI lists low BP as a symptom). Search tool returned several summaries blending pages; claims assigned to NHS inform page types section are from summary of that page. Claim granularity for FAQs/keyFacts was grouped so counts are approximate. Search count includes 10 searches."
+}

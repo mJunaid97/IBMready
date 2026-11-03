@@ -1,0 +1,700 @@
+{
+ "id": "prostate-cancer",
+ "searchesUsed": 13,
+ "counts": {
+  "supported": 51,
+  "textbook": 2,
+  "unsupported": 35,
+  "wrong": 0,
+  "unsafe": 0,
+  "unchecked": 0
+ },
+ "claims": [
+  {
+   "id": "c01",
+   "classification": "textbook",
+   "evidence": "Anatomy of the prostate is textbook-level; not re-retrieved.",
+   "url": "https://www.nhs.uk/conditions/prostate-cancer/treatment/",
+   "action": "kept"
+  },
+  {
+   "id": "c02",
+   "classification": "supported",
+   "evidence": "NHS symptoms page: often no symptoms at first.",
+   "url": "https://www.nhs.uk/conditions/prostate-cancer/symptoms/",
+   "action": "edited",
+   "newSentence": "Prostate cancer often causes no symptoms at first."
+  },
+  {
+   "id": "c03",
+   "classification": "supported",
+   "evidence": "NHS treatment page: treatment not always necessary; often grows slowly and may never cause problems. \"monitoring is a common first step\" not retrieved.",
+   "url": "https://www.nhs.uk/conditions/prostate-cancer/treatment/",
+   "action": "edited",
+   "newSentence": "The NHS says it often grows slowly and may never cause problems, so treatment is not always needed."
+  },
+  {
+   "id": "c04",
+   "classification": "unsupported",
+   "evidence": "Retrieved text attributes age, ethnicity and family history to Macmillan/Prostate Cancer UK; the \"NHS lists over 50 ... \" attribution was not confirmed.",
+   "url": "https://www.macmillan.org.uk/cancer-information-and-support/prostate-cancer/causes-and-risk-factors-of-prostate-cancer",
+   "action": "edited",
+   "newSentence": "Age, Black ethnicity and family history are linked with a higher risk."
+  },
+  {
+   "id": "c05",
+   "classification": "supported",
+   "evidence": "NHS PSA page: currently no national programme; routine PSA not offered except BRCA2. UK NSC final recommendation (targeted screening, BRCA2 variant plus family history) added so the overview is not out of date.",
+   "url": "https://www.nhs.uk/tests-and-treatments/psa-test/",
+   "action": "edited",
+   "newSentence": "The NHS PSA test page says there is no national screening programme, and the UK National Screening Committee has recommended targeted screening for some men with a BRCA2 gene change."
+  },
+  {
+   "id": "c06",
+   "classification": "supported",
+   "evidence": "NHS treatment page lists surgery, hormone therapy, radiotherapy; chemotherapy if spread. Moved out of the overview to keep it within length.",
+   "url": "https://www.nhs.uk/conditions/prostate-cancer/treatment/",
+   "action": "removed"
+  },
+  {
+   "id": "c07",
+   "classification": "unsupported",
+   "evidence": "Meta statement about the sources; no retrieved text says this.",
+   "url": "https://111.wales.nhs.uk/encyclopaedia/c/article/canceroftheprostate/",
+   "action": "edited",
+   "newSentence": "The causes of prostate cancer are largely unknown, according to NHS 111 Wales"
+  },
+  {
+   "id": "c08",
+   "classification": "supported",
+   "evidence": "Prostate Cancer UK: BRCA1/BRCA2 changes can increase risk of prostate cancer but do not guarantee it.",
+   "url": "https://prostatecanceruk.org/prostate-information-and-support/risk-and-symptoms/are-you-at-risk",
+   "action": "edited",
+   "newSentence": "Inherited changes in the BRCA1 or BRCA2 genes can raise the risk, according to Prostate Cancer UK"
+  },
+  {
+   "id": "c09",
+   "classification": "supported",
+   "evidence": "Macmillan: uncommon before 50, more common over 75; PCUK: mainly men over 50.",
+   "url": "https://www.macmillan.org.uk/cancer-information-and-support/prostate-cancer/causes-and-risk-factors-of-prostate-cancer",
+   "action": "kept"
+  },
+  {
+   "id": "c10",
+   "classification": "unsupported",
+   "evidence": "Retrieved text says Black men / Black ethnic background; \"African or African Caribbean\" not stated.",
+   "url": "https://www.macmillan.org.uk/cancer-information-and-support/prostate-cancer/causes-and-risk-factors-of-prostate-cancer",
+   "action": "edited",
+   "newSentence": "Being from a Black ethnic background"
+  },
+  {
+   "id": "c11",
+   "classification": "supported",
+   "evidence": "Macmillan says under 65, Prostate Cancer UK says under 60; the age is therefore not stated.",
+   "url": "https://www.macmillan.org.uk/cancer-information-and-support/prostate-cancer/causes-and-risk-factors-of-prostate-cancer",
+   "action": "edited",
+   "newSentence": "A father or brother who has had prostate cancer, with the risk greater if the relative was diagnosed at a younger age"
+  },
+  {
+   "id": "c12",
+   "classification": "supported",
+   "evidence": "Prostate Cancer UK: BRCA1 and BRCA2 changes.",
+   "url": "https://prostatecanceruk.org/prostate-information-and-support/risk-and-symptoms/are-you-at-risk",
+   "action": "edited",
+   "newSentence": "A BRCA1 or BRCA2 gene change"
+  },
+  {
+   "id": "c13",
+   "classification": "unsupported",
+   "evidence": "No retrieved text on relatives with pancreatic cancer for prostate risk (Macmillan: breast or ovarian).",
+   "url": "https://www.macmillan.org.uk/cancer-information-and-support/prostate-cancer/causes-and-risk-factors-of-prostate-cancer",
+   "action": "edited",
+   "newSentence": "A family history of breast or ovarian cancer"
+  },
+  {
+   "id": "c14",
+   "classification": "supported",
+   "evidence": "NHS symptoms page: weak flow.",
+   "url": "https://www.nhs.uk/conditions/prostate-cancer/symptoms/",
+   "action": "kept"
+  },
+  {
+   "id": "c15",
+   "classification": "unsupported",
+   "evidence": "No retrieved text describes a hard or enlarged prostate on examination; Royal Marsden says DRE cannot diagnose alone.",
+   "url": "https://www.nhs.uk/conditions/prostate-cancer/diagnosis/",
+   "action": "removed"
+  },
+  {
+   "id": "c16",
+   "classification": "supported",
+   "evidence": "NHS symptoms page: unexplained weight loss in advanced cases.",
+   "url": "https://www.nhs.uk/conditions/prostate-cancer/symptoms/",
+   "action": "edited",
+   "newSentence": "Unexplained weight loss in advanced disease"
+  },
+  {
+   "id": "c17",
+   "classification": "supported",
+   "evidence": "NHS treatment page: chemotherapy may be needed if the cancer has spread.",
+   "url": "https://www.nhs.uk/conditions/prostate-cancer/treatment/",
+   "action": "kept"
+  },
+  {
+   "id": "c18",
+   "classification": "unsupported",
+   "evidence": "NHS symptoms text retrieved lists lower back pain and unexplained weight loss for advanced cases; tiredness not retrieved.",
+   "url": "https://www.nhs.uk/conditions/prostate-cancer/symptoms/",
+   "action": "edited",
+   "newSentence": "Lower back pain and unexplained weight loss in advanced disease"
+  },
+  {
+   "id": "c19",
+   "classification": "unsupported",
+   "evidence": "Recurrence not re-retrieved.",
+   "url": "https://111.wales.nhs.uk/encyclopaedia/c/article/canceroftheprostate/",
+   "action": "removed"
+  },
+  {
+   "id": "c20",
+   "classification": "unsupported",
+   "evidence": "Surgery side effects not retrieved; radiotherapy and hormone therapy side effects were (Macmillan, CRUK, St George's).",
+   "url": "https://www.macmillan.org.uk/cancer-information-and-support/treatments-and-drugs/radiotherapy-for-prostate-cancer",
+   "action": "edited",
+   "newSentence": "Radiotherapy side effects such as urinary and bowel irritation and erection problems"
+  },
+  {
+   "id": "c21",
+   "classification": "unsupported",
+   "evidence": "\"No single test\" wording not found in retrieved text.",
+   "url": "https://www.nhs.uk/tests-and-treatments/psa-test/",
+   "action": "removed"
+  },
+  {
+   "id": "c22",
+   "classification": "supported",
+   "evidence": "NHS 111 Wales lists blood tests, DRE, MRI, biopsy as most commonly used; NHS diagnosis page covers them.",
+   "url": "https://111.wales.nhs.uk/encyclopaedia/c/article/canceroftheprostate/",
+   "action": "edited",
+   "newSentence": "The NHS 111 Wales page lists blood tests, a digital rectal examination, an MRI scan and a biopsy as the most commonly used tests for prostate cancer."
+  },
+  {
+   "id": "c23",
+   "classification": "supported",
+   "evidence": "NHS tests and next steps: MRI after specialist referral, then biopsy with small needle if more information needed.",
+   "url": "https://www.nhs.uk/conditions/prostate-cancer/tests-and-next-steps/",
+   "action": "edited",
+   "newSentence": "If a person is referred to a specialist because prostate cancer is possible, the NHS says an MRI scan is arranged."
+  },
+  {
+   "id": "c24",
+   "classification": "supported",
+   "evidence": "NHS tests and next steps: CT, MRI, PET, bone scan help decide treatment.",
+   "url": "https://www.nhs.uk/conditions/prostate-cancer/tests-and-next-steps/",
+   "action": "edited",
+   "newSentence": "If cancer is found, the NHS lists a CT scan, MRI scan, PET scan and bone scan as further tests that help decide on treatment."
+  },
+  {
+   "id": "c25",
+   "classification": "supported",
+   "evidence": "NHS treatment page: surgery, hormone therapy, radiotherapy; chemotherapy if spread.",
+   "url": "https://www.nhs.uk/conditions/prostate-cancer/treatment/",
+   "action": "edited",
+   "newSentence": "When treatment is needed it may include surgery, radiotherapy and hormone therapy, with chemotherapy if the cancer has spread."
+  },
+  {
+   "id": "c26",
+   "classification": "supported",
+   "evidence": "Macmillan: regular PSA tests and MRI scans, biopsy usually only if signs of growth. \"Aims to avoid unnecessary treatment of harmless cancers\" not stated; Macmillan says it avoids or delays side effects. PMC and NHS 111 Wales not used.",
+   "url": "https://www.macmillan.org.uk/cancer-information-and-support/treatments-and-drugs/active-surveillance-and-watchful-waiting-for-prostate-cancer",
+   "action": "edited",
+   "newSentence": "Macmillan describes active surveillance as monitoring the cancer with regular PSA blood tests and MRI scans, with a biopsy usually only if there are signs the cancer may be growing."
+  },
+  {
+   "id": "c27",
+   "classification": "unsupported",
+   "evidence": "Surgery side effects not in retrieved text; radiotherapy erection/urinary/bowel effects are (Macmillan, CRUK).",
+   "url": "https://www.macmillan.org.uk/cancer-information-and-support/treatments-and-drugs/radiotherapy-for-prostate-cancer",
+   "action": "edited",
+   "newSentence": "Macmillan says radiotherapy for prostate cancer can cause urinary and bowel irritation and problems getting or keeping an erection."
+  },
+  {
+   "id": "c28",
+   "classification": "supported",
+   "evidence": "NHS: hormone therapy alone does not cure but can slow it and help symptoms. The testosterone mechanism was not retrieved and was cut.",
+   "url": "https://www.nhs.uk/conditions/prostate-cancer/treatment/",
+   "action": "edited",
+   "newSentence": "The NHS says hormone therapy on its own does not cure prostate cancer but can slow it down and help with symptoms."
+  },
+  {
+   "id": "c29",
+   "classification": "unsupported",
+   "evidence": "Absence statement not retrieved; replaced by Surrey and Sussex Cancer Alliance: not linked to any clear preventable causes.",
+   "url": "https://surreyandsussexcanceralliance.nhs.uk/our-work/prevention-early-diagnosis/early-diagnosis-prostate-cancer",
+   "action": "edited",
+   "newSentence": "The Surrey and Sussex Cancer Alliance says prostate cancer is not linked to any clear preventable causes."
+  },
+  {
+   "id": "c30",
+   "classification": "unsupported",
+   "evidence": "\"GP will consider cancer risk\" not retrieved. Retrieved: 2016 Public Health England guidance says a man aged 50 or over without symptoms can make an appointment to discuss PSA testing. (dated 2016 blog; removed at assembly)",
+   "url": "https://phescreening.blog.gov.uk/2016/03/29/updated-guidance-for-gps-on-psa-testing-for-prostate-cancer/",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c31",
+   "classification": "supported",
+   "evidence": "NHS symptoms page: non-urgent advice, see a GP if trouble peeing or other symptoms or worried about risk. Routine route supported by the \"non-urgent\" label; no urgent route found on the page and none added.",
+   "url": "https://www.nhs.uk/conditions/prostate-cancer/symptoms/",
+   "action": "edited",
+   "newSentence": "The NHS lists seeing a GP as non-urgent advice if a person has trouble passing urine or other symptoms of prostate cancer, or is worried about their risk."
+  },
+  {
+   "id": "c32",
+   "classification": "supported",
+   "evidence": "NHS symptoms page: symptoms often have other causes, e.g. enlarged prostate.",
+   "url": "https://www.nhs.uk/conditions/prostate-cancer/symptoms/",
+   "action": "edited",
+   "newSentence": "Many of these symptoms have other causes, such as an enlarged prostate, so they do not by themselves mean a person has prostate cancer."
+  },
+  {
+   "id": "c33",
+   "classification": "supported",
+   "evidence": "NHS symptoms page.",
+   "url": "https://www.nhs.uk/conditions/prostate-cancer/symptoms/",
+   "action": "edited",
+   "newSentence": "The NHS says prostate cancer often causes no symptoms at first."
+  },
+  {
+   "id": "c34",
+   "classification": "supported",
+   "evidence": "NHS symptoms page: symptoms are usually urinary.",
+   "url": "https://www.nhs.uk/conditions/prostate-cancer/symptoms/",
+   "action": "edited",
+   "newSentence": "When symptoms do appear, they are usually changes to passing urine."
+  },
+  {
+   "id": "c35",
+   "classification": "supported",
+   "evidence": "NHS symptoms page: trouble starting, weak flow, urgency, often, at night.",
+   "url": "https://www.nhs.uk/conditions/prostate-cancer/symptoms/",
+   "action": "edited",
+   "newSentence": "The NHS lists difficulty starting to pass urine, a weak flow, needing to go urgently or often, and getting up to pass urine during the night."
+  },
+  {
+   "id": "c36",
+   "classification": "supported",
+   "evidence": "NHS symptoms page also lists erectile dysfunction and blood in urine or semen.",
+   "url": "https://www.nhs.uk/conditions/prostate-cancer/symptoms/",
+   "action": "edited",
+   "newSentence": "Erection problems and blood in the urine or semen are also listed."
+  },
+  {
+   "id": "c37",
+   "classification": "unsupported",
+   "evidence": "Tiredness not in the retrieved NHS list; back pain and unexplained weight loss are.",
+   "url": "https://www.nhs.uk/conditions/prostate-cancer/symptoms/",
+   "action": "edited",
+   "newSentence": "In more advanced cases, the NHS lists lower back pain and unexplained weight loss."
+  },
+  {
+   "id": "c38",
+   "classification": "supported",
+   "evidence": "NHS symptoms page: enlarged prostate is a very common non-cancerous condition as men get older.",
+   "url": "https://www.nhs.uk/conditions/prostate-cancer/symptoms/",
+   "action": "edited",
+   "newSentence": "The NHS describes an enlarged prostate as a very common non-cancerous condition that becomes more likely as men get older and can cause similar urinary symptoms."
+  },
+  {
+   "id": "c39",
+   "classification": "unsupported",
+   "evidence": "Derived inference, not stated in retrieved text.",
+   "url": "https://www.nhs.uk/conditions/prostate-cancer/symptoms/",
+   "action": "removed"
+  },
+  {
+   "id": "c40",
+   "classification": "supported",
+   "evidence": "Macmillan: uncommon before 50, more common over 75. \"Strongest risk factor\" not retrieved.",
+   "url": "https://www.macmillan.org.uk/cancer-information-and-support/prostate-cancer/causes-and-risk-factors-of-prostate-cancer",
+   "action": "edited",
+   "newSentence": "Macmillan says prostate cancer is uncommon before the age of 50 and more common over the age of 75."
+  },
+  {
+   "id": "c41",
+   "classification": "unsupported",
+   "evidence": "The NHS attribution was not confirmed; Prostate Cancer UK says it mainly affects men over 50.",
+   "url": "https://prostatecanceruk.org/prostate-information-and-support/risk-and-symptoms/are-you-at-risk",
+   "action": "edited",
+   "newSentence": "Prostate Cancer UK says the condition mainly affects men over 50."
+  },
+  {
+   "id": "c42",
+   "classification": "supported",
+   "evidence": "Macmillan: Black men have a much higher risk and tend to develop it younger. The genetic reason was not retrieved and was cut.",
+   "url": "https://www.macmillan.org.uk/cancer-information-and-support/prostate-cancer/causes-and-risk-factors-of-prostate-cancer",
+   "action": "edited",
+   "newSentence": "Macmillan says Black men have a much higher risk of prostate cancer and tend to develop it at a younger age."
+  },
+  {
+   "id": "c43",
+   "classification": "supported",
+   "evidence": "Macmillan under 65 vs PCUK under 60; wording generalised.",
+   "url": "https://www.macmillan.org.uk/cancer-information-and-support/prostate-cancer/causes-and-risk-factors-of-prostate-cancer",
+   "action": "edited",
+   "newSentence": "Macmillan lists a father or brother who has had prostate cancer as a risk factor, with a greater risk if the relative was diagnosed at a younger age."
+  },
+  {
+   "id": "c44",
+   "classification": "unsupported",
+   "evidence": "\"Clearest link\" not in retrieved text; PCUK says BRCA1/BRCA2 changes can raise risk.",
+   "url": "https://prostatecanceruk.org/prostate-information-and-support/risk-and-symptoms/are-you-at-risk",
+   "action": "edited",
+   "newSentence": "Prostate Cancer UK says changes in the BRCA1 and BRCA2 genes can raise the risk of prostate cancer but do not guarantee it, and that such changes are uncommon."
+  },
+  {
+   "id": "c45",
+   "classification": "unsupported",
+   "evidence": "NHS causes text not retrieved on pancreatic/breast/ovarian relatives; Macmillan lists breast or ovarian.",
+   "url": "https://www.macmillan.org.uk/cancer-information-and-support/prostate-cancer/causes-and-risk-factors-of-prostate-cancer",
+   "action": "edited",
+   "newSentence": "Macmillan also lists a family history of breast or ovarian cancer."
+  },
+  {
+   "id": "c46",
+   "classification": "supported",
+   "evidence": "NHS PSA page: currently no national screening programme because PSA is not always accurate.",
+   "url": "https://www.nhs.uk/tests-and-treatments/psa-test/",
+   "action": "edited",
+   "newSentence": "The NHS PSA test page says there is currently no national screening programme for prostate cancer in the UK, because the PSA test is not always accurate."
+  },
+  {
+   "id": "c47",
+   "classification": "supported",
+   "evidence": "NHS PSA page: routine PSA not currently offered unless genetic tests show a faulty BRCA2 gene.",
+   "url": "https://www.nhs.uk/tests-and-treatments/psa-test/",
+   "action": "edited",
+   "newSentence": "It says routine PSA testing is not currently offered on the NHS unless genetic tests have shown a faulty version of the BRCA2 gene."
+  },
+  {
+   "id": "c48",
+   "classification": "unsupported",
+   "evidence": "\"GP will consider his cancer risk\" not retrieved; ask-GP statement now sourced to 2016 PHE guidance and placed in the prevention field.",
+   "url": "https://phescreening.blog.gov.uk/2016/03/29/updated-guidance-for-gps-on-psa-testing-for-prostate-cancer/",
+   "action": "removed"
+  },
+  {
+   "id": "c49",
+   "classification": "supported",
+   "evidence": "NHS PSA page: raised PSA can be cancer or another condition (enlarged prostate, prostatitis, UTI). PSA-as-protein gloss unsourced and cut.",
+   "url": "https://www.nhs.uk/tests-and-treatments/psa-test/",
+   "action": "edited",
+   "newSentence": "The NHS says a raised PSA level may be a sign of prostate cancer but can also be caused by another condition, such as an enlarged prostate, prostatitis or a urinary tract infection, so a high result does not mean a person has cancer."
+  },
+  {
+   "id": "c50",
+   "classification": "unsupported",
+   "evidence": "Referral after persistently high PSA not retrieved.",
+   "url": "https://www.nhs.uk/tests-and-treatments/psa-test/",
+   "action": "removed"
+  },
+  {
+   "id": "c51",
+   "classification": "unsupported",
+   "evidence": "\"No single test\" wording not found in retrieved text.",
+   "url": "https://www.nhs.uk/tests-and-treatments/psa-test/",
+   "action": "removed"
+  },
+  {
+   "id": "c52",
+   "classification": "supported",
+   "evidence": "NHS 111 Wales wording; NHS pages list the same tests.",
+   "url": "https://111.wales.nhs.uk/encyclopaedia/c/article/canceroftheprostate/",
+   "action": "edited",
+   "newSentence": "NHS 111 Wales lists blood tests, a digital rectal examination, an MRI scan and a biopsy as the most commonly used tests for prostate cancer."
+  },
+  {
+   "id": "c53",
+   "classification": "textbook",
+   "evidence": "Gloss replaced by retrieved wording: DRE is a physical examination of the prostate; Royal Marsden says it cannot diagnose cancer alone.",
+   "url": "https://www.nhs.uk/conditions/prostate-cancer/diagnosis/",
+   "action": "edited",
+   "newSentence": "A digital rectal examination is a physical examination of the prostate, and the Royal Marsden says it cannot diagnose cancer on its own."
+  },
+  {
+   "id": "c54",
+   "classification": "supported",
+   "evidence": "NHS tests and next steps: MRI gives a clearer view and shows whether more tests are needed.",
+   "url": "https://www.nhs.uk/conditions/prostate-cancer/tests-and-next-steps/",
+   "action": "edited",
+   "newSentence": "If a person is referred to a specialist because prostate cancer is possible, the NHS says an MRI scan is arranged, which gives a clearer view of the prostate and shows whether more tests are needed."
+  },
+  {
+   "id": "c55",
+   "classification": "supported",
+   "evidence": "NHS tests and next steps: small needle takes a tissue sample.",
+   "url": "https://www.nhs.uk/conditions/prostate-cancer/tests-and-next-steps/",
+   "action": "kept"
+  },
+  {
+   "id": "c56",
+   "classification": "supported",
+   "evidence": "NHS tests and next steps.",
+   "url": "https://www.nhs.uk/conditions/prostate-cancer/tests-and-next-steps/",
+   "action": "edited",
+   "newSentence": "If cancer is found, the NHS lists a CT scan, MRI scan, PET scan and bone scan as further tests that help the team decide on treatment."
+  },
+  {
+   "id": "c57",
+   "classification": "supported",
+   "evidence": "NHS treatment: treatment not always necessary; early cancer without symptoms can be delayed; often grows slowly.",
+   "url": "https://www.nhs.uk/conditions/prostate-cancer/treatment/",
+   "action": "edited",
+   "newSentence": "The NHS says treatment is not always necessary, and that for early cancer without symptoms it can be delayed until symptoms appear."
+  },
+  {
+   "id": "c58",
+   "classification": "supported",
+   "evidence": "Macmillan monitoring page: regular PSA tests and MRI, biopsy usually only if signs of growth.",
+   "url": "https://www.macmillan.org.uk/cancer-information-and-support/treatments-and-drugs/active-surveillance-and-watchful-waiting-for-prostate-cancer",
+   "action": "edited",
+   "newSentence": "It involves regular PSA blood tests and MRI scans, and a biopsy is usually only needed if there are signs the cancer may be growing."
+  },
+  {
+   "id": "c59",
+   "classification": "unsupported",
+   "evidence": "NHS 111 Wales wording on aims not re-retrieved.",
+   "url": "https://111.wales.nhs.uk/encyclopaedia/c/article/canceroftheprostate/",
+   "action": "removed"
+  },
+  {
+   "id": "c60",
+   "classification": "supported",
+   "evidence": "NHS treatment page.",
+   "url": "https://www.nhs.uk/conditions/prostate-cancer/treatment/",
+   "action": "edited",
+   "newSentence": "When treatment is needed it may include surgery, radiotherapy and hormone therapy, and chemotherapy may be needed if the cancer has spread."
+  },
+  {
+   "id": "c61",
+   "classification": "supported",
+   "evidence": "NHS: does not cure but can slow it down and help symptoms; testosterone mechanism not retrieved and cut.",
+   "url": "https://www.nhs.uk/conditions/prostate-cancer/treatment/",
+   "action": "edited",
+   "newSentence": "The NHS says hormone therapy on its own does not cure prostate cancer but can slow it down and help with symptoms."
+  },
+  {
+   "id": "c62",
+   "classification": "supported",
+   "evidence": "Macmillan brachytherapy page titled internal radiotherapy; Royal Marsden: radiation placed in the prostate.",
+   "url": "https://www.macmillan.org.uk/cancer-information-and-support/treatments-and-drugs/brachytherapy-for-prostate-cancer",
+   "action": "edited",
+   "newSentence": "Brachytherapy is a form of internal radiotherapy in which radiation is placed in the prostate."
+  },
+  {
+   "id": "c63",
+   "classification": "unsupported",
+   "evidence": "Surgery side effects not retrieved; radiotherapy side effects are (Macmillan, CRUK). Brachytherapy comparison added from Macmillan.",
+   "url": "https://www.macmillan.org.uk/cancer-information-and-support/treatments-and-drugs/radiotherapy-for-prostate-cancer",
+   "action": "edited",
+   "newSentence": "Macmillan says brachytherapy causes similar side effects, and that on its own it is less likely than external radiotherapy to cause late bowel effects, although short-term urinary effects may be more severe."
+  },
+  {
+   "id": "c64",
+   "classification": "unsupported",
+   "evidence": "Tiredness and diarrhoea for radiotherapy not retrieved; hormone therapy list replaced by Macmillan and St George's lists plus PCUK bone weakening.",
+   "url": "https://www.macmillan.org.uk/cancer-information-and-support/treatments-and-drugs/hormonal-therapy-for-prostate-cancer",
+   "action": "edited",
+   "newSentence": "Macmillan lists tiredness, difficulty sleeping, hot flushes and weight gain, and St George's adds loss of sex drive, erection problems and breast swelling or tenderness."
+  },
+  {
+   "id": "c65",
+   "classification": "unsupported",
+   "evidence": "Recurrence estimate not re-retrieved.",
+   "url": "https://111.wales.nhs.uk/encyclopaedia/c/article/canceroftheprostate/",
+   "action": "removed"
+  },
+  {
+   "id": "c66",
+   "classification": "unsupported",
+   "evidence": "ProtecT trial: no official source retrieved; single PMC snippet only.",
+   "url": "https://111.wales.nhs.uk/encyclopaedia/c/article/canceroftheprostate/",
+   "action": "removed"
+  },
+  {
+   "id": "c67",
+   "classification": "supported",
+   "evidence": "Macmillan; duplicate of the active surveillance sentence, removed to avoid repetition.",
+   "url": "https://www.macmillan.org.uk/cancer-information-and-support/treatments-and-drugs/active-surveillance-and-watchful-waiting-for-prostate-cancer",
+   "action": "removed"
+  },
+  {
+   "id": "c68",
+   "classification": "unsupported",
+   "evidence": "NHS attribution of side-effect picture unsupported; replaced by NHS 111 Wales referral to specialist services.",
+   "url": "https://111.wales.nhs.uk/encyclopaedia/c/article/canceroftheprostate/",
+   "action": "edited",
+   "newSentence": "NHS 111 Wales advises that people with side effects from treatment should be referred to specialist services, such as continence services."
+  },
+  {
+   "id": "c69",
+   "classification": "supported",
+   "evidence": "NHS PSA page.",
+   "url": "https://www.nhs.uk/tests-and-treatments/psa-test/",
+   "action": "edited",
+   "newSentence": "The NHS PSA test page says there is currently no national screening programme for prostate cancer, and routine PSA testing is not offered unless genetic tests have shown a faulty BRCA2 gene."
+  },
+  {
+   "id": "c70",
+   "classification": "supported",
+   "evidence": "NHS PSA page (BRCA2 exception).",
+   "url": "https://www.nhs.uk/tests-and-treatments/psa-test/",
+   "action": "kept"
+  },
+  {
+   "id": "c71",
+   "classification": "unsupported",
+   "evidence": "\"GP will consider his risk\" not retrieved; replaced by UK NSC recommendation sentence.",
+   "url": "https://view-health-screening-recommendations.service.gov.uk/prostate-cancer/",
+   "action": "edited",
+   "newSentence": "The UK National Screening Committee has recommended targeted screening for men aged 45 to 61 with a BRCA2 variant and a family history of certain cancers, and ministers in England have agreed to a nationally managed approach."
+  },
+  {
+   "id": "c72",
+   "classification": "supported",
+   "evidence": "NHS PSA page.",
+   "url": "https://www.nhs.uk/tests-and-treatments/psa-test/",
+   "action": "edited",
+   "newSentence": "The NHS says a raised PSA level can be a sign of prostate cancer but can also be caused by another condition, such as an enlarged prostate, prostatitis or a urinary tract infection."
+  },
+  {
+   "id": "c73",
+   "classification": "unsupported",
+   "evidence": "Referral after persistently high PSA not retrieved; NHS \"3 in 4 raised PSA without cancer\" added instead.",
+   "url": "https://www.nhs.uk/tests-and-treatments/psa-test/",
+   "action": "edited",
+   "newSentence": "It adds that around 3 in 4 men with a raised PSA level will not have cancer."
+  },
+  {
+   "id": "c74",
+   "classification": "supported",
+   "evidence": "NHS symptoms page.",
+   "url": "https://www.nhs.uk/conditions/prostate-cancer/symptoms/",
+   "action": "edited",
+   "newSentence": "No."
+  },
+  {
+   "id": "c75",
+   "classification": "unsupported",
+   "evidence": "Tiredness not retrieved; replaced by NHS list.",
+   "url": "https://www.nhs.uk/conditions/prostate-cancer/symptoms/",
+   "action": "edited",
+   "newSentence": "When symptoms appear they are usually changes to passing urine, and lower back pain and unexplained weight loss can occur in advanced cases."
+  },
+  {
+   "id": "c76",
+   "classification": "unsupported",
+   "evidence": "\"GP can help work out\" not retrieved; replaced with enlarged prostate cause (NHS).",
+   "url": "https://www.nhs.uk/conditions/prostate-cancer/symptoms/",
+   "action": "edited",
+   "newSentence": "An enlarged prostate is a common non-cancerous cause of similar urinary symptoms."
+  },
+  {
+   "id": "c77",
+   "classification": "supported",
+   "evidence": "NHS treatment page.",
+   "url": "https://www.nhs.uk/conditions/prostate-cancer/treatment/",
+   "action": "edited",
+   "newSentence": "The NHS says treatment is not always necessary, and that prostate cancer often grows slowly and may never cause problems."
+  },
+  {
+   "id": "c78",
+   "classification": "unsupported",
+   "evidence": "\"Avoid unnecessary treatment of harmless cancers\" not retrieved; Macmillan wording used.",
+   "url": "https://www.macmillan.org.uk/cancer-information-and-support/treatments-and-drugs/active-surveillance-and-watchful-waiting-for-prostate-cancer",
+   "action": "edited",
+   "newSentence": "Macmillan describes active surveillance as monitoring with regular PSA tests and MRI scans instead of treating straight away."
+  },
+  {
+   "id": "c79",
+   "classification": "unsupported",
+   "evidence": "NHS attribution not confirmed; Macmillan/PCUK list age, ethnicity, family history.",
+   "url": "https://www.macmillan.org.uk/cancer-information-and-support/prostate-cancer/causes-and-risk-factors-of-prostate-cancer",
+   "action": "edited",
+   "newSentence": "Macmillan and Prostate Cancer UK both describe age, Black ethnicity and family history as linked with a higher risk."
+  },
+  {
+   "id": "c80",
+   "classification": "unsupported",
+   "evidence": "\"Clearest link\" not retrieved; PCUK: BRCA changes can raise risk, uncommon.",
+   "url": "https://prostatecanceruk.org/prostate-information-and-support/risk-and-symptoms/are-you-at-risk",
+   "action": "edited",
+   "newSentence": "Prostate Cancer UK says changes in the BRCA genes can also raise the risk, although they are uncommon."
+  },
+  {
+   "id": "c81",
+   "classification": "supported",
+   "evidence": "NHS symptoms page, non-urgent advice.",
+   "url": "https://www.nhs.uk/conditions/prostate-cancer/symptoms/",
+   "action": "edited",
+   "newSentence": "The NHS lists seeing a GP as non-urgent advice if a person has trouble passing urine or other symptoms of prostate cancer, or is worried about their risk."
+  },
+  {
+   "id": "c82",
+   "classification": "unsupported",
+   "evidence": "\"Usually routine\" and \"pros and cons\" not retrieved; NHS diagnosis page: GP assesses risk using PSA, examination, age, family history, ethnic group, can refer.",
+   "url": "https://www.nhs.uk/conditions/prostate-cancer/diagnosis/",
+   "action": "edited",
+   "newSentence": "The NHS says a GP assesses the chance of prostate cancer using factors such as PSA levels, the prostate examination, age, family history and ethnic group, and can refer a person to hospital for further tests."
+  },
+  {
+   "id": "c83",
+   "classification": "supported",
+   "evidence": "NHS 111 Wales page title.",
+   "url": "https://111.wales.nhs.uk/encyclopaedia/c/article/canceroftheprostate/",
+   "action": "kept"
+  },
+  {
+   "id": "c84",
+   "classification": "supported",
+   "evidence": "NHS symptoms.",
+   "url": "https://www.nhs.uk/conditions/prostate-cancer/symptoms/",
+   "action": "edited",
+   "newSentence": "Often no symptoms at first (NHS)"
+  },
+  {
+   "id": "c85",
+   "classification": "unsupported",
+   "evidence": "NHS attribution of over 50 not confirmed.",
+   "url": "https://www.macmillan.org.uk/cancer-information-and-support/prostate-cancer/causes-and-risk-factors-of-prostate-cancer",
+   "action": "edited",
+   "newSentence": "Older men, Black men and men with a family history"
+  },
+  {
+   "id": "c86",
+   "classification": "supported",
+   "evidence": "NHS 111 Wales / NHS.",
+   "url": "https://111.wales.nhs.uk/encyclopaedia/c/article/canceroftheprostate/",
+   "action": "edited",
+   "newSentence": "Blood tests, prostate examination, MRI scan and biopsy"
+  },
+  {
+   "id": "c87",
+   "classification": "supported",
+   "evidence": "NHS, Macmillan.",
+   "url": "https://www.nhs.uk/conditions/prostate-cancer/treatment/",
+   "action": "edited",
+   "newSentence": "Active surveillance, surgery, radiotherapy and hormone therapy; chemotherapy if spread"
+  },
+  {
+   "id": "c88",
+   "classification": "supported",
+   "evidence": "NHS PSA page; UK NSC.",
+   "url": "https://view-health-screening-recommendations.service.gov.uk/prostate-cancer/",
+   "action": "edited",
+   "newSentence": "No national programme per the NHS PSA page; targeted BRCA2 screening recommended by the UK NSC"
+  }
+ ],
+ "notes": "Screening policy has moved: the NHS PSA page (as retrieved) says no national programme, while the UK NSC final recommendation (March 2026 meeting, published May 2026) recommends targeted PSA screening every 2 years for men aged 45 to 61 with a pathogenic BRCA2 variant and a family history of breast, ovarian, pancreatic or prostate cancer, and gov.uk says ministers in England agreed to implement; no start date retrieved. Final text states both without claiming the programme is running. The PHE 2016 'man aged 50+ can ask GP' statement comes from one search summary of an old blog and is flagged for human review. Macmillan (under 65) and Prostate Cancer UK (under 60) disagree on family-history age so no age is stated. No urgent route (999/NHS 111) was found for prostate cancer symptoms on the NHS page, so only the NHS non-urgent GP advice is stated. ProtecT, recurrence, DRE finding gloss, 'clearest BRCA2 link', pancreatic relatives, surgery side effects removed as unretrieved. Search summaries blend pages, so some URL attributions are to the page titled in results. Reference to 'NCI' and 'MedlinePlus' dropped as not re-retrieved."
+}

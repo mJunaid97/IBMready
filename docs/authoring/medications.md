@@ -35,7 +35,7 @@ simple string-list style of `cetirizine` (strings in `usedFor`, `cautions`, `sid
 | `ingredientVariants` | salt or ester names ("diclofenac sodium"). |
 | `regulatory` | `[{"jurisdiction": "UK", "status": "prescription", "source": {"title": "NHS: ...", "url": "https://..."}}]`; `status` is one of `prescription`, `otc`, `pharmacy`, `controlled` (vocabularies `regulatoryStatuses`); give a UK entry, and a US entry only if you retrieved the FDA/MedlinePlus status. Status is never universal. |
 | `terminology` | optional `{"rxcui": "...", "atc": ["..."]}`; leave it out unless you retrieved the codes (ATC from the WHO index, RxCUI from RxNav). Never guess a code. |
-| `regimenNote` | optional one line naming the forms; **no doses**. |
+| `regimenNote` | optional **list** of one-line strings naming the forms (`["Tablets and an oral solution."]`), never a bare string; **no doses**. |
 | `references` | at least 4, from at least 2 publishers, one official: NHS medicines page, BNF, MedlinePlus, NICE, MHRA/emc patient leaflet. |
 | `article` | optional in-depth block (format in `conditions.md`): 4 to 6 sections of what a patient reads in the leaflet, explained: "What is X used for?", "How does X work?", "Side effects", "Taking X with other medicines or alcohol", "Who needs extra care?"; FAQs. Aim for 600 to 900 words. |
 

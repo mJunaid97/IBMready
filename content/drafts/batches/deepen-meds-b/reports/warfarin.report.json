@@ -1,0 +1,359 @@
+{
+ "id": "warfarin",
+ "searchesUsed": 8,
+ "counts": {
+  "supported": 32,
+  "textbook": 3,
+  "unsupported": 11,
+  "wrong": 0,
+  "unsafe": 0,
+  "unchecked": 0
+ },
+ "claims": [
+  {
+   "id": "c01",
+   "classification": "supported",
+   "evidence": "NHS warfarin page title: medicine used to prevent and treat blood clots",
+   "url": "https://www.nhs.uk/medicines/warfarin/",
+   "action": "kept"
+  },
+  {
+   "id": "c02",
+   "classification": "textbook",
+   "evidence": "Not stated in retrieved text; plain pharmacology",
+   "url": "https://www.nhs.uk/medicines/warfarin/",
+   "action": "kept"
+  },
+  {
+   "id": "c03",
+   "classification": "supported",
+   "evidence": "NHS: main side effect is increased risk of bleeding",
+   "url": "https://www.nhs.uk/medicines/warfarin/",
+   "action": "kept"
+  },
+  {
+   "id": "c04",
+   "classification": "supported",
+   "evidence": "Retrieved text refers to showing the anticoagulant alert card; 'because of' reasoning not directly retrieved",
+   "url": "https://www.nhs.uk/medicines/warfarin/",
+   "action": "edited",
+   "newSentence": "People taking warfarin are given an anticoagulant alert card."
+  },
+  {
+   "id": "c05",
+   "classification": "unsupported",
+   "evidence": "No retrieved text on who decides indications",
+   "url": "https://www.nhs.uk/medicines/warfarin/",
+   "action": "removed"
+  },
+  {
+   "id": "c06",
+   "classification": "supported",
+   "evidence": "INR test measures how quickly blood clots; dose adjusted from results",
+   "url": "https://www.nhs.uk/medicines/warfarin/",
+   "action": "kept"
+  },
+  {
+   "id": "c07",
+   "classification": "supported",
+   "evidence": "Called international normalised ratio (INR)",
+   "url": "https://www.nhs.uk/medicines/warfarin/",
+   "action": "kept"
+  },
+  {
+   "id": "c08",
+   "classification": "supported",
+   "evidence": "Blood tests every day or few days at the start, less often once stable",
+   "url": "https://www.nhs.uk/medicines/warfarin/",
+   "action": "kept"
+  },
+  {
+   "id": "c09",
+   "classification": "supported",
+   "evidence": "NHS: main side effect is bleeding",
+   "url": "https://www.nhs.uk/medicines/warfarin/",
+   "action": "kept"
+  },
+  {
+   "id": "c10",
+   "classification": "unsupported",
+   "evidence": "Route 'anticoagulant service or GP' not what NHS says (NHS says call NHS 111)",
+   "url": "https://www.nhs.uk/medicines/warfarin/",
+   "action": "edited",
+   "newSentence": "The NHS lists blood in the urine or poo, unexplained bruising or nosebleeds, and coughing up or vomiting blood among the signs of bleeding."
+  },
+  {
+   "id": "c11",
+   "classification": "unsupported",
+   "evidence": "Blood in pee/poo, bruising, nosebleeds, coughing/vomiting blood retrieved; black poo (only trust leaflet) and heavy periods not retrieved",
+   "url": "https://www.nhs.uk/medicines/warfarin/",
+   "action": "edited",
+   "newSentence": "(merged into the sentence above)"
+  },
+  {
+   "id": "c12",
+   "classification": "supported",
+   "evidence": "NHS: urgent advice from 111 for symptoms of bleeding, a head injury or other serious side effects",
+   "url": "https://www.nhs.uk/medicines/warfarin/",
+   "action": "kept"
+  },
+  {
+   "id": "c13",
+   "classification": "supported",
+   "evidence": "Severe bleeding: 999 (search summary; GOSH/other NHS trust sources say 999 or Emergency Department); not seen verbatim from main NHS page",
+   "url": "https://www.nhs.uk/medicines/warfarin/",
+   "action": "edited",
+   "newSentence": "Severe bleeding that will not stop needs a 999 call or A&E."
+  },
+  {
+   "id": "c14",
+   "classification": "unsupported",
+   "evidence": "Sudden bad headache, confusion, slurred speech, difficulty moving arms/legs signal brain bleeding (retrieved); 'or a stroke' not retrieved; 999 for brain bleeding shown on NHS apixaban/rivaroxaban/edoxaban pages, not seen on warfarin page",
+   "url": "https://www.nhs.uk/medicines/warfarin/",
+   "action": "edited",
+   "newSentence": "A sudden bad headache with confusion, slurred speech or difficulty moving the arms or legs can signal bleeding in the brain, which is an emergency needing a 999 call."
+  },
+  {
+   "id": "c15",
+   "classification": "supported",
+   "evidence": "Painful skin rash can signal calciphylaxis; listed as rare but serious",
+   "url": "https://www.nhs.uk/medicines/anticoagulants/side-effects/",
+   "action": "kept"
+  },
+  {
+   "id": "c16",
+   "classification": "supported",
+   "evidence": "Anaphylaxis needs emergency care; 999 route shown on sister NHS pages",
+   "url": "https://www.nhs.uk/medicines/anticoagulants/side-effects/",
+   "action": "edited",
+   "newSentence": "A severe allergic reaction (anaphylaxis) is an emergency needing a 999 call."
+  },
+  {
+   "id": "c17",
+   "classification": "unsupported",
+   "evidence": "Vitamin K foods affect warfarin, leafy greens named; liver and chickpeas not retrieved from publisher text",
+   "url": "https://www.nhs.uk/medicines/warfarin/",
+   "action": "edited",
+   "newSentence": "Foods rich in vitamin K, such as leafy greens, affect how warfarin works."
+  },
+  {
+   "id": "c18",
+   "classification": "supported",
+   "evidence": "Vitamin K foods can still be eaten; steady intake matters; clinic adjusts dose",
+   "url": "https://www.nhs.uk/medicines/warfarin/",
+   "action": "edited",
+   "newSentence": "The NHS says they can still be eaten; keeping the amount steady matters more than avoiding them, and the warfarin clinic can adjust the dose to match."
+  },
+  {
+   "id": "c19",
+   "classification": "supported",
+   "evidence": "Avoid cranberry and grapefruit juice; can increase blood-thinning effect",
+   "url": "https://www.nhs.uk/medicines/warfarin/",
+   "action": "kept"
+  },
+  {
+   "id": "c20",
+   "classification": "supported",
+   "evidence": "NHS: never binge drinking; modest regular drinking (numeric limit omitted)",
+   "url": "https://www.nhs.uk/medicines/anticoagulants/considerations/",
+   "action": "edited",
+   "newSentence": "The NHS advises never binge drinking on warfarin, and keeping regular drinking modest."
+  },
+  {
+   "id": "c21",
+   "classification": "supported",
+   "evidence": "Tell doctor about all medicines, remedies, supplements",
+   "url": "https://www.nhs.uk/medicines/warfarin/",
+   "action": "kept"
+  },
+  {
+   "id": "c22",
+   "classification": "unsupported",
+   "evidence": "NSAIDs/ibuprofen, antibiotics, antidepressants, statins retrieved; steroids and anticonvulsants not retrieved",
+   "url": "https://www.nhs.uk/medicines/warfarin/",
+   "action": "edited",
+   "newSentence": "Painkillers such as ibuprofen, antibiotics, antidepressants and statins are among the medicines the NHS lists as possible problems."
+  },
+  {
+   "id": "c23",
+   "classification": "supported",
+   "evidence": "NHS advises against St John's wort and vitamin K supplements",
+   "url": "https://www.nhs.uk/medicines/warfarin/",
+   "action": "edited",
+   "newSentence": "The NHS advises against St John's wort and vitamin K supplements while on warfarin."
+  },
+  {
+   "id": "c24",
+   "classification": "supported",
+   "evidence": "Tell clinic if ill with diarrhoea or vomiting; can change INR",
+   "url": "https://www.nhs.uk/medicines/warfarin/",
+   "action": "kept"
+  },
+  {
+   "id": "c25",
+   "classification": "supported",
+   "evidence": "Most people can take warfarin but not suitable for everyone",
+   "url": "https://www.nhs.uk/medicines/warfarin/",
+   "action": "kept"
+  },
+  {
+   "id": "c26",
+   "classification": "unsupported",
+   "evidence": "List retrieved: allergy, liver/kidney problems, recent stroke, recent/upcoming surgery, condition making bleeding more likely; high blood pressure and stomach ulcer not retrieved",
+   "url": "https://www.nhs.uk/medicines/warfarin/",
+   "action": "edited",
+   "newSentence": "It lists an allergy to warfarin, liver or kidney problems, a recent stroke, recent or planned surgery, and a condition that makes bleeding more likely."
+  },
+  {
+   "id": "c27",
+   "classification": "supported",
+   "evidence": "Not usually used in pregnancy, can affect baby's development, sometimes used after risks/benefits discussed",
+   "url": "https://www.nhs.uk/medicines/warfarin/",
+   "action": "kept"
+  },
+  {
+   "id": "c28",
+   "classification": "unsupported",
+   "evidence": "'Straight away' not retrieved; NHS says speak to GP or anticoagulant clinic and do not stop unless doctor says",
+   "url": "https://www.nhs.uk/medicines/anticoagulants/considerations/",
+   "action": "edited",
+   "newSentence": "The NHS advises anyone who is pregnant or planning a pregnancy to speak to their GP or anticoagulant clinic, and not to stop warfarin unless a doctor says so."
+  },
+  {
+   "id": "c29",
+   "classification": "supported",
+   "evidence": "Usually can take while breastfeeding; discuss with GP or midwife first",
+   "url": "https://www.nhs.uk/medicines/warfarin/",
+   "action": "kept"
+  },
+  {
+   "id": "c30",
+   "classification": "textbook",
+   "evidence": "'Not literally' - plain pharmacology",
+   "url": "https://www.nhs.uk/medicines/warfarin/",
+   "action": "edited",
+   "newSentence": "Not literally; it is called a blood thinner, but it makes clots form less readily."
+  },
+  {
+   "id": "c31",
+   "classification": "textbook",
+   "evidence": "Mechanism explanation, not in retrieved text",
+   "url": "https://www.nhs.uk/medicines/warfarin/",
+   "action": "edited",
+   "newSentence": "(merged with previous)"
+  },
+  {
+   "id": "c32",
+   "classification": "supported",
+   "evidence": "Medicine to prevent and treat clots; main side effect bleeding",
+   "url": "https://www.nhs.uk/medicines/warfarin/",
+   "action": "kept"
+  },
+  {
+   "id": "c33",
+   "classification": "supported",
+   "evidence": "Alert card given to people on warfarin",
+   "url": "https://www.nhs.uk/medicines/warfarin/",
+   "action": "edited",
+   "newSentence": "It is a card given to people taking warfarin, who may be at risk of bleeding."
+  },
+  {
+   "id": "c34",
+   "classification": "supported",
+   "evidence": "111 for head injury and signs of bleeding",
+   "url": "https://www.nhs.uk/medicines/warfarin/",
+   "action": "edited",
+   "newSentence": "The NHS says to get urgent advice from NHS 111 after a head injury while on warfarin, as well as for any signs of bleeding."
+  },
+  {
+   "id": "c35",
+   "classification": "unsupported",
+   "evidence": "'or a stroke' not retrieved; 999 route as c14",
+   "url": "https://www.nhs.uk/medicines/warfarin/",
+   "action": "edited",
+   "newSentence": "A sudden bad headache with confusion, slurred speech or difficulty moving the arms or legs can signal bleeding in the brain and needs a 999 call."
+  },
+  {
+   "id": "c36",
+   "classification": "supported",
+   "evidence": "Vitamin K foods can still be eaten",
+   "url": "https://www.nhs.uk/medicines/warfarin/",
+   "action": "kept"
+  },
+  {
+   "id": "c37",
+   "classification": "unsupported",
+   "evidence": "Liver and chickpeas not retrieved",
+   "url": "https://www.nhs.uk/medicines/warfarin/",
+   "action": "edited",
+   "newSentence": "Leafy greens are rich in vitamin K and affect warfarin, but the NHS says they can still be eaten and that a steady intake matters, so the clinic can adjust the dose."
+  },
+  {
+   "id": "c38",
+   "classification": "supported",
+   "evidence": "Cranberry and grapefruit juice avoided",
+   "url": "https://www.nhs.uk/medicines/warfarin/",
+   "action": "kept"
+  },
+  {
+   "id": "c39",
+   "classification": "supported",
+   "evidence": "As c27",
+   "url": "https://www.nhs.uk/medicines/warfarin/",
+   "action": "kept"
+  },
+  {
+   "id": "c40",
+   "classification": "unsupported",
+   "evidence": "'Straight away' not retrieved",
+   "url": "https://www.nhs.uk/medicines/anticoagulants/considerations/",
+   "action": "edited",
+   "newSentence": "Anyone pregnant or planning a pregnancy is advised to speak to their GP or anticoagulant clinic and not to stop it unless a doctor says so."
+  },
+  {
+   "id": "c41",
+   "classification": "supported",
+   "evidence": "keyFact 'Medicine type' supported as above",
+   "url": "https://www.nhs.uk/medicines/warfarin/",
+   "action": "kept"
+  },
+  {
+   "id": "c42",
+   "classification": "supported",
+   "evidence": "keyFact 'Main risk' supported as above",
+   "url": "https://www.nhs.uk/medicines/warfarin/",
+   "action": "kept"
+  },
+  {
+   "id": "c43",
+   "classification": "supported",
+   "evidence": "keyFact 'Monitoring' supported as above",
+   "url": "https://www.nhs.uk/medicines/warfarin/",
+   "action": "kept"
+  },
+  {
+   "id": "c44",
+   "classification": "supported",
+   "evidence": "keyFact 'Food' supported as above",
+   "url": "https://www.nhs.uk/medicines/warfarin/",
+   "action": "edited",
+   "newSentence": "Vitamin K foods affect it, so a steady amount matters; cranberry and grapefruit juice are avoided"
+  },
+  {
+   "id": "c45",
+   "classification": "supported",
+   "evidence": "keyFact 'Urgent help' supported as above",
+   "url": "https://www.nhs.uk/medicines/warfarin/",
+   "action": "edited",
+   "newSentence": "999 for severe bleeding or signs of bleeding in the brain; NHS 111 for signs of bleeding or a head injury"
+  },
+  {
+   "id": "c46",
+   "classification": "supported",
+   "evidence": "keyFact 'Pregnancy' supported as above",
+   "url": "https://www.nhs.uk/medicines/warfarin/",
+   "action": "kept"
+  }
+ ],
+ "notes": "All 8 searches used. 999 wording for severe bleeding and brain-bleed symptoms was not seen verbatim from the warfarin page itself (searches returned NHS apixaban/rivaroxaban/edoxaban pages and NHS trust leaflets for 999; warfarin page returned 111 for bleeding/head injury); reviewer should confirm against nhs.uk/medicines/warfarin. Local NHS trusts differ on head injury (some say A&E/999); text follows the main NHS page (111). Sections 1 and 2 merged because section 2 was thin. Black poo, heavy periods, steroids, anticonvulsants, high blood pressure, stomach ulcer, liver/chickpeas cut as not retrieved. Alert card 'because' reasoning dropped. No dose/INR range in text."
+}

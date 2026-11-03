@@ -1,0 +1,401 @@
+{
+ "id": "citalopram",
+ "searchesUsed": 8,
+ "counts": {
+  "supported": 35,
+  "textbook": 2,
+  "unsupported": 14,
+  "wrong": 2,
+  "unsafe": 0,
+  "unchecked": 0
+ },
+ "claims": [
+  {
+   "id": "c01",
+   "classification": "supported",
+   "evidence": "NHS: often used to treat low mood/depression",
+   "url": "https://www.nhs.uk/medicines/citalopram/",
+   "action": "kept"
+  },
+  {
+   "id": "c02",
+   "classification": "textbook",
+   "evidence": "Panic attacks as a use not re-retrieved in second pass (first-pass ledger cites NHS about page; consistent with medications.json)",
+   "url": "https://www.nhs.uk/medicines/citalopram/about-citalopram/",
+   "action": "kept"
+  },
+  {
+   "id": "c03",
+   "classification": "textbook",
+   "evidence": "SSRI group not stated in re-retrieved summaries (NHS titles it 'an antidepressant medicine'); consistent with medications.json",
+   "url": "https://www.nhs.uk/medicines/citalopram/",
+   "action": "kept"
+  },
+  {
+   "id": "c04",
+   "classification": "unsupported",
+   "evidence": "Re-retrieval: NHS pages in results do not cover depression returning if stopped early",
+   "url": "https://www.nhs.uk/medicines/citalopram/",
+   "action": "removed"
+  },
+  {
+   "id": "c05",
+   "classification": "supported",
+   "evidence": "NHS: usually need at least 6 months, keep taking as long as doctor recommends",
+   "url": "https://www.nhs.uk/medicines/citalopram/common-questions-about-citalopram/",
+   "action": "kept"
+  },
+  {
+   "id": "c06",
+   "classification": "unsupported",
+   "evidence": "Serotonin mechanism not returned in re-retrieval",
+   "url": "https://www.nhs.uk/medicines/citalopram/common-questions-about-citalopram/",
+   "action": "removed"
+  },
+  {
+   "id": "c07",
+   "classification": "unsupported",
+   "evidence": "Serotonin/mood/sleep not returned",
+   "url": "https://www.nhs.uk/medicines/citalopram/common-questions-about-citalopram/",
+   "action": "removed"
+  },
+  {
+   "id": "c08",
+   "classification": "supported",
+   "evidence": "NHS: may take 1 or 2 weeks to start working",
+   "url": "https://www.nhs.uk/medicines/citalopram/common-questions-about-citalopram/",
+   "action": "kept"
+  },
+  {
+   "id": "c09",
+   "classification": "supported",
+   "evidence": "NHS: usually 4 to 6 weeks for full benefit",
+   "url": "https://www.nhs.uk/medicines/citalopram/common-questions-about-citalopram/",
+   "action": "kept"
+  },
+  {
+   "id": "c10",
+   "classification": "supported",
+   "evidence": "NHS: give at least 6 weeks, talk to doctor if no better after 6 weeks",
+   "url": "https://www.nhs.uk/medicines/citalopram/common-questions-about-citalopram/",
+   "action": "kept"
+  },
+  {
+   "id": "c11",
+   "classification": "unsupported",
+   "evidence": "'Feel worse first' not returned",
+   "url": "https://www.nhs.uk/medicines/citalopram/common-questions-about-citalopram/",
+   "action": "removed"
+  },
+  {
+   "id": "c12",
+   "classification": "supported",
+   "evidence": "NHS: common (more than 1 in 100) headaches, sweating, dry mouth, sleep problems; 'feeling sick' not listed in summary, so list reworded",
+   "url": "https://www.nhs.uk/medicines/citalopram/side-effects-of-citalopram/",
+   "action": "edited",
+   "newSentence": "Examples it gives include headaches, sweating, dry mouth and sleep problems."
+  },
+  {
+   "id": "c13",
+   "classification": "supported",
+   "evidence": "NHS: usually mild, ease after a couple of weeks as body gets used to it",
+   "url": "https://www.nhs.uk/medicines/citalopram/common-questions-about-citalopram/",
+   "action": "kept"
+  },
+  {
+   "id": "c14",
+   "classification": "supported",
+   "evidence": "NHS: serious side effects rare, fewer than 1 in 1,000",
+   "url": "https://www.nhs.uk/medicines/citalopram/side-effects-of-citalopram/",
+   "action": "edited",
+   "newSentence": "The NHS calls serious side effects rare, affecting fewer than 1 in 1,000 people."
+  },
+  {
+   "id": "c15",
+   "classification": "supported",
+   "evidence": "NHS: serotonin syndrome - fast heartbeat, sweating, shaking, twitching muscles, confused/agitated",
+   "url": "https://www.nhs.uk/medicines/citalopram/side-effects-of-citalopram/",
+   "action": "kept"
+  },
+  {
+   "id": "c16",
+   "classification": "supported",
+   "evidence": "NHS: rare life-threatening condition, fast irregular heartbeat, light-headedness, fainting",
+   "url": "https://www.nhs.uk/medicines/citalopram/side-effects-of-citalopram/",
+   "action": "kept"
+  },
+  {
+   "id": "c17",
+   "classification": "unsupported",
+   "evidence": "Low sodium not returned",
+   "url": "https://www.nhs.uk/medicines/citalopram/side-effects-of-citalopram/",
+   "action": "removed"
+  },
+  {
+   "id": "c18",
+   "classification": "supported",
+   "evidence": "NHS main page: call 111 if you think you might be having serious side effects",
+   "url": "https://www.nhs.uk/medicines/citalopram/",
+   "action": "kept"
+  },
+  {
+   "id": "c19",
+   "classification": "unsupported",
+   "evidence": "Re-retrieval conflicted on route for self-harm thoughts (one summary 999/A&E list, another 111). Chest pain, first fit, very dizzy/passing out = 999/A&E supported. Self-harm route now taken from NHS 'Help for suicidal thoughts' (999/A&E if about to harm yourself) plus Samaritans 116 123, NHS 111 and Mind",
+   "url": "https://www.nhs.uk/medicines/citalopram/side-effects-of-citalopram/",
+   "action": "edited",
+   "newSentence": "It says to call 999 or go to A&E for chest pain or pressure, a fit or seizure for the first time, or feeling very dizzy or passing out. ... call 999 or go straight to A&E if you think you may be about to harm yourself, or if you already have."
+  },
+  {
+   "id": "c20",
+   "classification": "supported",
+   "evidence": "NHS: do not stop suddenly; may cause withdrawal symptoms",
+   "url": "https://www.nhs.uk/medicines/citalopram/common-questions-about-citalopram/",
+   "action": "kept"
+  },
+  {
+   "id": "c21",
+   "classification": "supported",
+   "evidence": "NHS: reduce gradually, over several weeks or longer after long course",
+   "url": "https://www.nhs.uk/medicines/citalopram/how-and-when-to-take-citalopram/",
+   "action": "kept"
+  },
+  {
+   "id": "c22",
+   "classification": "supported",
+   "evidence": "MedlinePlus (US) lists those withdrawal symptoms, but replaced with NHS-listed symptoms (dizzy, sick, trouble sleeping, agitated/anxious, headaches) and MedlinePlus reference dropped",
+   "url": "https://www.nhs.uk/medicines/citalopram/common-questions-about-citalopram/",
+   "action": "edited",
+   "newSentence": "The NHS lists feeling dizzy, feeling sick, trouble sleeping, feeling agitated or anxious, and headaches among possible withdrawal symptoms."
+  },
+  {
+   "id": "c23",
+   "classification": "supported",
+   "evidence": "NHS: do not use St John's wort, increases risk of side effects",
+   "url": "https://www.nhs.uk/medicines/citalopram/taking-citalopram-with-other-medicines-and-herbal-supplements/",
+   "action": "kept"
+  },
+  {
+   "id": "c24",
+   "classification": "unsupported",
+   "evidence": "Specific names aspirin, ibuprofen, diclofenac, anticoagulants not confirmed; summary gave NSAIDs and blood thinners only",
+   "url": "https://www.nhs.uk/medicines/citalopram/taking-citalopram-with-other-medicines-and-herbal-supplements/",
+   "action": "edited",
+   "newSentence": "Its list includes ... anti-inflammatory painkillers (NSAIDs), blood thinners ..."
+  },
+  {
+   "id": "c25",
+   "classification": "supported",
+   "evidence": "NHS list: sumatriptan, tramadol, heart rhythm medicines, other antidepressants",
+   "url": "https://www.nhs.uk/medicines/citalopram/taking-citalopram-with-other-medicines-and-herbal-supplements/",
+   "action": "kept"
+  },
+  {
+   "id": "c26",
+   "classification": "wrong",
+   "evidence": "NHS says alcohol may make you sleepy and it might be best to stop drinking until you see how it affects you; not 'increases chance of side effects'",
+   "url": "https://www.nhs.uk/medicines/citalopram/common-questions-about-citalopram/",
+   "action": "edited",
+   "newSentence": "On alcohol, the NHS says it may make a person feel sleepy, and that it might be best to stop drinking alcohol until they see how the medicine makes them feel."
+  },
+  {
+   "id": "c27",
+   "classification": "supported",
+   "evidence": "NHS: heart condition (e.g. previous heart attack, heart rhythm problem) listed as reason citalopram may not suit",
+   "url": "https://www.nhs.uk/medicines/citalopram/who-can-and-cannot-take-citalopram/",
+   "action": "edited",
+   "newSentence": "The NHS lists a heart condition, such as a heart rhythm problem, among the reasons citalopram may not suit some people."
+  },
+  {
+   "id": "c28",
+   "classification": "supported",
+   "evidence": "NHS: can be used in pregnancy if needed; lowest effective dose",
+   "url": "https://www.nhs.uk/medicines/citalopram/pregnancy-breastfeeding-and-fertility-while-taking-citalopram/",
+   "action": "kept"
+  },
+  {
+   "id": "c29",
+   "classification": "unsupported",
+   "evidence": "Newborn withdrawal not returned; the bleeding-after-delivery part (last month of pregnancy, may slightly increase risk) is supported and kept",
+   "url": "https://www.nhs.uk/medicines/citalopram/pregnancy-breastfeeding-and-fertility-while-taking-citalopram/",
+   "action": "edited",
+   "newSentence": "Taking it in the last month of pregnancy may slightly increase the risk of bleeding after delivery."
+  },
+  {
+   "id": "c30",
+   "classification": "unsupported",
+   "evidence": "'Rare and treatable, not a reason to stop' not returned",
+   "url": "https://www.nhs.uk/medicines/citalopram/pregnancy-breastfeeding-and-fertility-while-taking-citalopram/",
+   "action": "removed"
+  },
+  {
+   "id": "c31",
+   "classification": "supported",
+   "evidence": "NHS: can breastfeed if doctor/health visitor says baby healthy",
+   "url": "https://www.nhs.uk/medicines/citalopram/pregnancy-breastfeeding-and-fertility-while-taking-citalopram/",
+   "action": "kept"
+  },
+  {
+   "id": "c32",
+   "classification": "supported",
+   "evidence": "as c08",
+   "url": "https://www.nhs.uk/medicines/citalopram/common-questions-about-citalopram/",
+   "action": "kept"
+  },
+  {
+   "id": "c33",
+   "classification": "supported",
+   "evidence": "as c09",
+   "url": "https://www.nhs.uk/medicines/citalopram/common-questions-about-citalopram/",
+   "action": "kept"
+  },
+  {
+   "id": "c34",
+   "classification": "unsupported",
+   "evidence": "as c11",
+   "url": "https://www.nhs.uk/medicines/citalopram/common-questions-about-citalopram/",
+   "action": "removed"
+  },
+  {
+   "id": "c35",
+   "classification": "supported",
+   "evidence": "as c10",
+   "url": "https://www.nhs.uk/medicines/citalopram/common-questions-about-citalopram/",
+   "action": "kept"
+  },
+  {
+   "id": "c36",
+   "classification": "wrong",
+   "evidence": "as c26 (alcohol)",
+   "url": "https://www.nhs.uk/medicines/citalopram/common-questions-about-citalopram/",
+   "action": "edited",
+   "newSentence": "The NHS says alcohol may make a person feel sleepy while taking citalopram."
+  },
+  {
+   "id": "c37",
+   "classification": "supported",
+   "evidence": "common side effects headaches/sweating supported but sentence dropped from FAQ",
+   "url": "https://www.nhs.uk/medicines/citalopram/side-effects-of-citalopram/",
+   "action": "removed"
+  },
+  {
+   "id": "c38",
+   "classification": "unsupported",
+   "evidence": "'raise with pharmacist' not returned",
+   "url": "https://www.nhs.uk/medicines/citalopram/common-questions-about-citalopram/",
+   "action": "removed"
+  },
+  {
+   "id": "c39",
+   "classification": "supported",
+   "evidence": "as c20",
+   "url": "https://www.nhs.uk/medicines/citalopram/common-questions-about-citalopram/",
+   "action": "kept"
+  },
+  {
+   "id": "c40",
+   "classification": "supported",
+   "evidence": "as c21",
+   "url": "https://www.nhs.uk/medicines/citalopram/common-questions-about-citalopram/",
+   "action": "kept"
+  },
+  {
+   "id": "c41",
+   "classification": "supported",
+   "evidence": "as c22 (MedlinePlus US sentence replaced by NHS list)",
+   "url": "https://www.nhs.uk/medicines/citalopram/common-questions-about-citalopram/",
+   "action": "edited"
+  },
+  {
+   "id": "c42",
+   "classification": "supported",
+   "evidence": "as c28",
+   "url": "https://www.nhs.uk/medicines/citalopram/pregnancy-breastfeeding-and-fertility-while-taking-citalopram/",
+   "action": "kept"
+  },
+  {
+   "id": "c43",
+   "classification": "supported",
+   "evidence": "as c31",
+   "url": "https://www.nhs.uk/medicines/citalopram/pregnancy-breastfeeding-and-fertility-while-taking-citalopram/",
+   "action": "kept"
+  },
+  {
+   "id": "c44",
+   "classification": "unsupported",
+   "evidence": "as c29 newborn",
+   "url": "https://www.nhs.uk/medicines/citalopram/pregnancy-breastfeeding-and-fertility-while-taking-citalopram/",
+   "action": "edited",
+   "newSentence": "Replaced with bleeding after delivery sentence"
+  },
+  {
+   "id": "c45",
+   "classification": "unsupported",
+   "evidence": "as c19 self-harm route ambiguity",
+   "url": "https://www.nhs.uk/medicines/citalopram/side-effects-of-citalopram/",
+   "action": "edited",
+   "newSentence": "The NHS says to call 999 or go straight to A&E if you think you may be about to harm yourself, or if you already have."
+  },
+  {
+   "id": "c46",
+   "classification": "supported",
+   "evidence": "as c18",
+   "url": "https://www.nhs.uk/medicines/citalopram/",
+   "action": "kept"
+  },
+  {
+   "id": "c47",
+   "classification": "supported",
+   "evidence": "as c19 (first fit, passing out, chest pain)",
+   "url": "https://www.nhs.uk/medicines/citalopram/side-effects-of-citalopram/",
+   "action": "edited",
+   "newSentence": "...feeling very dizzy or passing out"
+  },
+  {
+   "id": "c48",
+   "classification": "supported",
+   "evidence": "antidepressant (c01); SSRI dropped from this key fact",
+   "url": "https://www.nhs.uk/medicines/citalopram/",
+   "action": "edited",
+   "newSentence": "An antidepressant."
+  },
+  {
+   "id": "c49",
+   "classification": "supported",
+   "evidence": "depression supported; panic attacks dropped from key fact (not re-retrieved)",
+   "url": "https://www.nhs.uk/medicines/citalopram/",
+   "action": "edited",
+   "newSentence": "Low mood and depression."
+  },
+  {
+   "id": "c50",
+   "classification": "supported",
+   "evidence": "as c08/c09",
+   "url": "https://www.nhs.uk/medicines/citalopram/common-questions-about-citalopram/",
+   "action": "kept"
+  },
+  {
+   "id": "c51",
+   "classification": "supported",
+   "evidence": "as c05",
+   "url": "https://www.nhs.uk/medicines/citalopram/common-questions-about-citalopram/",
+   "action": "kept"
+  },
+  {
+   "id": "c52",
+   "classification": "supported",
+   "evidence": "as c23",
+   "url": "https://www.nhs.uk/medicines/citalopram/taking-citalopram-with-other-medicines-and-herbal-supplements/",
+   "action": "kept"
+  },
+  {
+   "id": "c53",
+   "classification": "unsupported",
+   "evidence": "as c19",
+   "url": "https://www.nhs.uk/medicines/citalopram/side-effects-of-citalopram/",
+   "action": "edited",
+   "newSentence": "999 or A&E for chest pain, a first seizure or feeling very dizzy or passing out; NHS 111 for other serious side effects."
+  }
+ ],
+ "notes": "8 searches (budget exhausted). Added content not in first pass, all from retrieved text: under-18s not usually recommended; sexual side effects; allergic reaction/swelling = 999; bleeding signs = doctor or 111; herbal supplements not tested; fertility cut for length; self-harm route from NHS Help for suicidal thoughts (999/A&E if about to harm yourself, 111 or online for support), Samaritans 116 123 (via NHS/Samaritans summary), Mind (GP/pharmacist/111). Re-retrieval summaries conflicted on whether the citalopram side-effects page puts self-harm thoughts under 999 or 111, so the text now cites the general NHS suicidal-thoughts page instead. Two textbook sentences (panic attacks use; SSRI group) kept but not re-retrieved; they match content/medications.json. MedlinePlus (US) cut and its reference dropped. Fertility sentences and a nausea/dry mouth self-care sentence cut for length. Section bodies ~845 words; with FAQs/keyFacts ~1200 total. Summaries blend pages so per-URL attribution is approximate; the Samaritans and Mind references rest on search summaries not full pages. No doses/schedules; word 'safe' avoided."
+}

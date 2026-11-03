@@ -1,0 +1,299 @@
+{
+ "id": "fluconazole",
+ "searchesUsed": 10,
+ "counts": {
+  "supported": 24,
+  "textbook": 0,
+  "unsupported": 13,
+  "wrong": 0,
+  "unsafe": 0,
+  "unchecked": 0
+ },
+ "claims": [
+  {
+   "id": "c01",
+   "classification": "supported",
+   "evidence": "NHS about: Fluconazole is an antifungal medicine used to treat infections caused by different kinds of fungus, including candida thrush.",
+   "url": "https://www.nhs.uk/medicines/fluconazole/about-fluconazole/",
+   "action": "kept",
+   "newSentence": "Fluconazole is an antifungal medicine used for thrush and other fungal infections."
+  },
+  {
+   "id": "c02",
+   "classification": "supported",
+   "evidence": "NHS: not usually recommended in pregnancy but may be used if the benefits outweigh the risks. (First pass said 'generally not recommended', a paraphrase; wording now matches the NHS.)",
+   "url": "https://www.nhs.uk/medicines/fluconazole/pregnancy-breastfeeding-and-fertility-while-taking-fluconazole/",
+   "action": "edited",
+   "newSentence": "The NHS says fluconazole is not usually recommended in pregnancy but may be used if the benefits outweigh the risks."
+  },
+  {
+   "id": "c03",
+   "classification": "supported",
+   "evidence": "NHS: advises speaking to a doctor or pharmacist before use in pregnancy (patient page points to BUMPS).",
+   "url": "https://www.nhs.uk/medicines/fluconazole/pregnancy-breastfeeding-and-fertility-while-taking-fluconazole/",
+   "action": "edited",
+   "newSentence": "A pharmacist or doctor is asked before use in pregnancy."
+  },
+  {
+   "id": "c04",
+   "classification": "supported",
+   "evidence": "NHS about: thrush (vaginal, balanitis, oral), cryptococcal meningitis, prevention of fungal infection in people at high risk e.g. HIV or weakened immune system.",
+   "url": "https://www.nhs.uk/medicines/fluconazole/about-fluconazole/",
+   "action": "edited",
+   "newSentence": "usedFor list"
+  },
+  {
+   "id": "c05",
+   "classification": "unsupported",
+   "evidence": "First pass use 'Skin infections such as pityriasis versicolor' came only from a search summary; the retrieved NHS about-page text names thrush, cryptococcal meningitis and prevention only. Nails: search found nothing. Pityriasis versicolor: only small trial literature.",
+   "url": "https://www.nhs.uk/medicines/fluconazole/about-fluconazole/",
+   "action": "removed"
+  },
+  {
+   "id": "c06",
+   "classification": "unsupported",
+   "evidence": "First pass use 'Fungal nail infections' came only from a search summary; the retrieved NHS about-page text names thrush, cryptococcal meningitis and prevention only. Nails: search found nothing. Pityriasis versicolor: only small trial literature.",
+   "url": "https://www.nhs.uk/medicines/fluconazole/about-fluconazole/",
+   "action": "removed"
+  },
+  {
+   "id": "c07",
+   "classification": "unsupported",
+   "evidence": "First pass use 'Deeper (more serious) fungal infections (as a named list item)' came only from a search summary; the retrieved NHS about-page text names thrush, cryptococcal meningitis and prevention only. Nails: search found nothing. Pityriasis versicolor: only small trial literature.",
+   "url": "https://www.nhs.uk/medicines/fluconazole/about-fluconazole/",
+   "action": "removed"
+  },
+  {
+   "id": "c08",
+   "classification": "supported",
+   "evidence": "NHS: kills fungus by making holes in the fungus's cell membrane so the contents leak out.",
+   "url": "https://www.nhs.uk/medicines/fluconazole/about-fluconazole/",
+   "action": "kept",
+   "newSentence": "The NHS says fluconazole kills the fungus causing the infection by making holes in the fungus's cell membrane so that the contents leak out."
+  },
+  {
+   "id": "c09",
+   "classification": "supported",
+   "evidence": "MedlinePlus fluconazole: triazole antifungal that works by slowing the growth of the fungi that cause infection. (Differs from NHS 'kills'; both attributed.)",
+   "url": "https://medlineplus.gov/druginfo/meds/a690002.html",
+   "action": "edited",
+   "newSentence": "MedlinePlus describes fluconazole as slowing the growth of the fungi that cause infection."
+  },
+  {
+   "id": "c10",
+   "classification": "supported",
+   "evidence": "StatPearls: azoles block lanosterol 14-alpha-demethylase, reducing ergosterol; inability to produce ergosterol increases membrane permeability.",
+   "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK551581/",
+   "action": "kept",
+   "newSentence": "Azole antifungals block a step in the making of ergosterol, a main part of fungal cell membranes."
+  },
+  {
+   "id": "c11",
+   "classification": "supported",
+   "evidence": "NHS about: thrush symptoms better within 7 days; serious fungal infection 1 to 2 weeks to work fully.",
+   "url": "https://www.nhs.uk/medicines/fluconazole/about-fluconazole/",
+   "action": "edited",
+   "newSentence": "The NHS says symptoms of vaginal thrush, balanitis or oral thrush should be better within a week, and that a serious fungal infection can take longer, 1 to 2 weeks, to work fully."
+  },
+  {
+   "id": "c12",
+   "classification": "supported",
+   "evidence": "NHS: common side effects listed; most common are feeling sick and diarrhoea.",
+   "url": "https://www.nhs.uk/medicines/fluconazole/side-effects-of-fluconazole/",
+   "action": "kept",
+   "newSentence": "The NHS lists stomach pain or discomfort, diarrhoea, headache, feeling or being sick and rash as common side effects, with nausea and diarrhoea the most common."
+  },
+  {
+   "id": "c13",
+   "classification": "supported",
+   "evidence": "NHS common questions: can usually drive; dizziness uncommon; if affected do not drive or cycle until it goes away.",
+   "url": "https://www.nhs.uk/medicines/fluconazole/common-questions-about-fluconazole/",
+   "action": "edited",
+   "newSentence": "Dizziness is uncommon; the NHS advises not driving or cycling until the feeling goes away."
+  },
+  {
+   "id": "c14",
+   "classification": "supported",
+   "evidence": "NHS common questions: not likely to affect contraception (combined pill, progestogen-only pill, emergency contraception) except vomiting/severe diarrhoea.",
+   "url": "https://www.nhs.uk/medicines/fluconazole/common-questions-about-fluconazole/",
+   "action": "edited",
+   "newSentence": "The NHS says fluconazole is not likely to affect contraception, but vomiting or severe diarrhoea can mean contraceptive pills do not protect against pregnancy."
+  },
+  {
+   "id": "c15",
+   "classification": "supported",
+   "evidence": "NHS: call 999 for hypersensitivity reaction, severe skin reaction or anaphylaxis.",
+   "url": "https://www.nhs.uk/medicines/fluconazole/side-effects-of-fluconazole/",
+   "action": "edited",
+   "newSentence": "A severe allergic reaction (anaphylaxis), another hypersensitivity reaction or a severe skin reaction such as Stevens-Johnson syndrome needs a 999 call, according to the NHS."
+  },
+  {
+   "id": "c16",
+   "classification": "supported",
+   "evidence": "NHS: liver trouble signs (itching, darker urine, pale stools, yellowing); harder to spot on black/brown skin; other serious side effects call 111.",
+   "url": "https://www.nhs.uk/medicines/fluconazole/side-effects-of-fluconazole/",
+   "action": "edited",
+   "newSentence": "Liver problems can show as itching, darker urine, pale stools or yellowing of the skin or eyes, which may be harder to see on black or brown skin; the NHS advises calling NHS 111 for any other serious side effect."
+  },
+  {
+   "id": "c17",
+   "classification": "unsupported",
+   "evidence": "First pass: easy bruising or infections (blood disorder) and faster or irregular heartbeat as warning signs. Not in retrieved text.",
+   "url": "https://www.nhs.uk/medicines/fluconazole/side-effects-of-fluconazole/",
+   "action": "removed"
+  },
+  {
+   "id": "c18",
+   "classification": "supported",
+   "evidence": "NHS: must use contraception while taking fluconazole and for 7 days after stopping if could get pregnant, as it could be harmful to baby or increase chance of miscarriage. (Duration left out of prose.)",
+   "url": "https://www.nhs.uk/medicines/fluconazole/common-questions-about-fluconazole/",
+   "action": "edited",
+   "newSentence": "The NHS advises contraception for anyone who could become pregnant while taking fluconazole and for a short time after stopping, because the medicine could harm a baby or increase the chance of miscarriage."
+  },
+  {
+   "id": "c19",
+   "classification": "supported",
+   "evidence": "NHS who-can-and-cannot page lists these groups.",
+   "url": "https://www.nhs.uk/medicines/fluconazole/who-can-and-cannot-take-fluconazole/",
+   "action": "edited",
+   "newSentence": "The NHS lists an allergic reaction or serious side effect from fluconazole or another antifungal, liver or kidney problems, heart problems including rhythm problems, abnormal potassium, calcium or magnesium levels, and porphyria (a rare blood condition) as reasons fluconazole may not be suitable."
+  },
+  {
+   "id": "c20",
+   "classification": "supported",
+   "evidence": "NHS who-can page: for vaginal thrush/balanitis most adults and children aged 16 or over; younger children and other conditions if prescribed.",
+   "url": "https://www.nhs.uk/medicines/fluconazole/who-can-and-cannot-take-fluconazole/",
+   "action": "edited",
+   "newSentence": "For vaginal thrush or balanitis, the NHS says most adults and children aged 16 or over can take fluconazole, while younger children, and people 16 or over who need it for other conditions, can take it if a doctor prescribes it."
+  },
+  {
+   "id": "c21",
+   "classification": "supported",
+   "evidence": "NHS interactions page text as retrieved lists these medicines.",
+   "url": "https://www.nhs.uk/medicines/fluconazole/taking-fluconazole-with-other-medicines-and-herbal-supplements/",
+   "action": "edited",
+   "newSentence": "The NHS names pimozide, quetiapine, amisulpride, haloperidol, lithium, risperidone, escitalopram, venlafaxine, warfarin, dabigatran, clopidogrel and statins among medicines to discuss with a doctor before starting fluconazole."
+  },
+  {
+   "id": "c22",
+   "classification": "unsupported",
+   "evidence": "First pass also named erythromycin, clarithromycin, carbamazepine, losartan (and ergotamine, amiodarone in article) as NHS examples; not seen in retrieved NHS text (erythromycin appears only in a UK leaflet as a must-not-combine drug).",
+   "url": "https://www.nhs.uk/medicines/fluconazole/taking-fluconazole-with-other-medicines-and-herbal-supplements/",
+   "action": "removed"
+  },
+  {
+   "id": "c23",
+   "classification": "unsupported",
+   "evidence": "First pass: NHS says not enough information to show herbal remedies/supplements safe with fluconazole. The herbal section of the NHS fluconazole page was cut off in results; not confirmed.",
+   "url": "https://www.nhs.uk/medicines/fluconazole/taking-fluconazole-with-other-medicines-and-herbal-supplements/",
+   "action": "removed"
+  },
+  {
+   "id": "c24",
+   "classification": "supported",
+   "evidence": "NHS common questions: you can drink alcohol while taking fluconazole.",
+   "url": "https://www.nhs.uk/medicines/fluconazole/common-questions-about-fluconazole/",
+   "action": "kept",
+   "newSentence": "The NHS says alcohol can be drunk while taking fluconazole."
+  },
+  {
+   "id": "c25",
+   "classification": "unsupported",
+   "evidence": "First pass: food is not restricted. Not retrieved.",
+   "url": "https://www.nhs.uk/medicines/fluconazole/common-questions-about-fluconazole/",
+   "action": "removed"
+  },
+  {
+   "id": "c26",
+   "classification": "supported",
+   "evidence": "emc/search: in patients receiving coumarin-type anticoagulants concurrently with fluconazole the prothrombin time should be carefully monitored.",
+   "url": "https://www.medicines.org.uk/emc/product/4720/smpc",
+   "action": "edited",
+   "newSentence": "UK product information says prothrombin time, a blood clotting test, should be carefully monitored in people taking warfarin-type anticoagulants with fluconazole."
+  },
+  {
+   "id": "c27",
+   "classification": "unsupported",
+   "evidence": "First pass: 'No routine monitoring ... the prescriber may check for liver problems if symptoms appear'. Not retrieved; guessed liver-function-tests link removed as well.",
+   "url": "https://www.nhs.uk/medicines/fluconazole/",
+   "action": "removed"
+  },
+  {
+   "id": "c28",
+   "classification": "supported",
+   "evidence": "NHS about: Brand names: Azocan, Diflucan, Canesten Thrush Oral Capsules. emc: Diflucan 150 mg hard capsules (Pfizer) and Canesten Thrush Oral Capsule 150 mg SmPC exist. (Canesten Thrush Duo is a capsule plus cream pack and is not listed.)",
+   "url": "https://www.nhs.uk/medicines/fluconazole/about-fluconazole/",
+   "action": "edited",
+   "newSentence": "brands UK"
+  },
+  {
+   "id": "c29",
+   "classification": "unsupported",
+   "evidence": "First pass US brand Diflucan: no US source retrieved.",
+   "url": "https://medlineplus.gov/druginfo/meds/a690002.html",
+   "action": "removed"
+  },
+  {
+   "id": "c30",
+   "classification": "supported",
+   "evidence": "NHS: Fluconazole is available on prescription. You can also buy it from a pharmacy for vaginal thrush or balanitis.",
+   "url": "https://www.nhs.uk/medicines/fluconazole/about-fluconazole/",
+   "action": "edited",
+   "newSentence": "The NHS says fluconazole is available on prescription and can also be bought from a pharmacy for vaginal thrush or balanitis."
+  },
+  {
+   "id": "c31",
+   "classification": "supported",
+   "evidence": "NHS: capsules or liquid to swallow; dose and duration depend on the kind of infection.",
+   "url": "https://www.nhs.uk/medicines/fluconazole/about-fluconazole/",
+   "action": "edited",
+   "newSentence": "The NHS describes capsules or a liquid to swallow, and says the length of treatment depends on the kind of infection."
+  },
+  {
+   "id": "c32",
+   "classification": "supported",
+   "evidence": "NHS: can buy from a pharmacy for vaginal thrush or balanitis (brand names include Azocan and Canesten Thrush Oral Capsules).",
+   "url": "https://www.nhs.uk/medicines/fluconazole/about-fluconazole/",
+   "action": "edited",
+   "newSentence": "The NHS says pharmacy purchase covers vaginal thrush or balanitis; the brand names it gives include Azocan and Canesten Thrush Oral Capsules."
+  },
+  {
+   "id": "c33",
+   "classification": "unsupported",
+   "evidence": "First pass: 'Thrush is a yeast infection that can affect vagina, head of penis or mouth' defined from memory; kept only as list text in usedFor (balanitis defined as inflammation of the head of the penis per NHS wording).",
+   "url": "https://www.nhs.uk/medicines/fluconazole/about-fluconazole/",
+   "action": "removed"
+  },
+  {
+   "id": "c34",
+   "classification": "unsupported",
+   "evidence": "First pass: 'For thrush in pregnancy NHS points towards clotrimazole ... after seeing GP or midwife' and 'a different medicine may be suggested'. Only local formularies (not NHS patient page) mention intravaginal clotrimazole.",
+   "url": "https://www.nhs.uk/medicines/fluconazole/pregnancy-breastfeeding-and-fertility-while-taking-fluconazole/",
+   "action": "removed"
+  },
+  {
+   "id": "c35",
+   "classification": "unsupported",
+   "evidence": "First pass: 'Several strengths of capsule exist, prescriber or pharmacist chooses'. Strength talk removed.",
+   "url": "https://www.nhs.uk/medicines/fluconazole/about-fluconazole/",
+   "action": "removed"
+  },
+  {
+   "id": "c36",
+   "classification": "unsupported",
+   "evidence": "First pass: 'Anyone still having symptoms a week later is advised to see a doctor'. Retrieved NHS text says to see a doctor if symptoms are not better within 7 days for thrush; kept in reworded form below.",
+   "url": "https://www.nhs.uk/medicines/fluconazole/about-fluconazole/",
+   "action": "edited",
+   "newSentence": "The NHS advises seeing a doctor if symptoms of thrush are not better within the expected time."
+  },
+  {
+   "id": "c37",
+   "classification": "supported",
+   "evidence": "NHS: see a doctor if thrush symptoms not better within 7 days (about page).",
+   "url": "https://www.nhs.uk/medicines/fluconazole/about-fluconazole/",
+   "action": "kept",
+   "newSentence": "Tied to the 'see a doctor' sentence above; no new claim."
+  }
+ ],
+ "notes": "Doubts: (1) the pregnancy wording now follows the NHS 'not usually recommended ... may be used if benefits outweigh risks'; local formularies and a Tayside leaflet are stricter (should not be used), which the page does not mention; (2) NHS fluconazole herbal section was cut off in results, claim removed; (3) breastfeeding left out because NHS (can often be used) and leaflets (differ by dose) disagree; (4) nails/skin uses removed - the NHS page may well list them but the retrieved text did not; re-add only with retrieved text; (5) MedlinePlus 'slowing growth' versus NHS 'kills' are both attributed; (6) the Canesten Thrush Oral Capsules brand is on the NHS page and an emc SmPC exists, Canesten Thrush Duo omitted; (7) the last claim (c-final) is a duplicate bookkeeping entry for the see-a-doctor sentence; (8) a few NHS-attributed sentences rest on search summaries that blend pages, notably the interactions list and contraception duration; (9) the NHS who-can wording ('should not take') was summarised by the search tool; the sentence uses 'may not be suitable'."
+}

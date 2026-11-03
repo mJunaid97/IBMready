@@ -229,6 +229,32 @@ if" list with a standard line (999 in an emergency, 112 elsewhere in Europe, NHS
 smoke test fails a symptom page whose list does not name 999. First-aid, condition and procedure text that says "urgent" says
 to whom (999, A&E, NHS 111, GP the same day).
 
+### 5.6 New pages written by author sessions (conditions, medicines, guides, news briefs)
+
+New conditions, medicines, blog guides and news briefs are produced in batches by author sessions that each have their own web
+search budget, under the same protocol as §5.5 and the brief in `docs/authoring/` (the evidence protocol, the writing rules,
+the schemas and one assignment per batch). A session writes only from retrieved text, keeps a sentence ledger, has every
+sentence re-retrieved and classified by separate subagents (supported, textbook, unsupported, wrong, unsafe) and publishes only
+the supported and textbook sentences, in `content/drafts/batches/<batch>/fragment.json`. The maintainer validates a fragment with
+`tools/verification/check_batch.py` (the real compiler on a scratch copy: ids, links, vocabularies, the publishing gate),
+reads `tools/verification/lint_new_content.py` (doses and schedules in prose, instructions to an individual, absolute claims, US
+spellings, urgency without a route, the crisis route on mental-health pages), merges with `tools/verification/merge_batches.py`
+(a batch is merged only after its final report exists; an early fragment can hold first-pass text) and applies
+`tools/verification/post_merge_fixups.py`. The ledgers and reports of every merged batch are kept in `content/drafts/batches/`
+(not compiled, packaged or served), so the evidence behind any sentence can be inspected.
+
+What the second pass found: across the first 37 batches it classified 19,255 first-pass sentences and removed 6,097 (31 per cent)
+as unsupported (5,693), wrong (250) or unsafe (154); 13,158 were kept. A first pass written without the second pass would have
+published about three unsupported sentences in ten. The pages are `source-verified` and not clinically reviewed.
+
+Known limits, stated on the pages' evidence trail rather than hidden: the search tool returns summaries that blend several pages and
+rarely the nhs.uk page itself, so many attributions rest on NHS trust, NHS inform or NHS 111 Wales pages, or on a summary that named the
+page; per-sentence URLs in the ledgers are therefore page-level. NICE clinical knowledge summaries and the BNF were almost never
+returned, so no BNF page is cited by the new content and NICE CKS only occasionally. Several urgent-care routes
+(999 or NHS 111 or A&E) rest on the wording the sources gave and are listed in each `BATCH-REPORT.md` for a clinician to confirm;
+`docs/verification/README.md` collects them. News briefs state only what the announcement says, with its date and publisher; US
+agency briefs say they are US decisions and that UK availability is decided separately.
+
 ## 6. Adding content
 
 1. **A biomarker**: add a key to `content/biomarkers.json` (name, aliases, category, summary,

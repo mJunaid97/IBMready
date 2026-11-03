@@ -1,0 +1,744 @@
+{
+ "id": "metronidazole",
+ "searchesUsed": 9,
+ "counts": {
+  "supported": 58,
+  "textbook": 0,
+  "unsupported": 23,
+  "wrong": 0,
+  "unsafe": 0,
+  "unchecked": 0
+ },
+ "claims": [
+  {
+   "id": "c01",
+   "where": "summary",
+   "classification": "supported",
+   "evidence": "NHS: trichomoniasis treated with antibiotics, usually metronidazole",
+   "url": "https://www.nhs.uk/conditions/trichomoniasis/",
+   "action": "kept",
+   "newSentence": "An antibiotic used for bacterial infections of the skin, mouth and gums, and the vagina and pelvis, and the usual treatment for trichomoniasis."
+  },
+  {
+   "id": "c02",
+   "where": "summary",
+   "classification": "supported",
+   "evidence": "Matches retrieved NHS text",
+   "url": "https://www.nhs.uk/medicines/metronidazole/about-metronidazole/",
+   "action": "kept",
+   "newSentence": "It comes as tablets, liquid, suppositories, gels and creams, and the NHS advises avoiding alcohol during treatment and for 2 days afterwards."
+  },
+  {
+   "id": "c03",
+   "where": "usedFor[0]",
+   "classification": "supported",
+   "evidence": "Matches retrieved NHS text",
+   "url": "https://www.nhs.uk/medicines/metronidazole/about-metronidazole/",
+   "action": "kept",
+   "newSentence": "Bacterial skin infections and rosacea"
+  },
+  {
+   "id": "c04",
+   "where": "usedFor[1]",
+   "classification": "supported",
+   "evidence": "Matches retrieved NHS text",
+   "url": "https://www.nhs.uk/medicines/metronidazole/about-metronidazole/",
+   "action": "kept",
+   "newSentence": "Mouth infections, including infected gums and dental abscesses"
+  },
+  {
+   "id": "c05",
+   "where": "usedFor[2]",
+   "classification": "supported",
+   "evidence": "Matches retrieved NHS text",
+   "url": "https://www.nhs.uk/medicines/metronidazole/about-metronidazole/",
+   "action": "kept",
+   "newSentence": "Bacterial vaginosis and pelvic inflammatory disease"
+  },
+  {
+   "id": "c06",
+   "where": "usedFor[3]",
+   "classification": "supported",
+   "evidence": "Matches retrieved NHS text",
+   "url": "https://www.nhs.uk/medicines/metronidazole/about-metronidazole/",
+   "action": "kept",
+   "newSentence": "Infected insect bites, skin ulcers, bed sores and wounds"
+  },
+  {
+   "id": "c07",
+   "where": "usedFor[4]",
+   "classification": "supported",
+   "evidence": "NHS: trichomoniasis treated with antibiotics, usually metronidazole",
+   "url": "https://www.nhs.uk/conditions/trichomoniasis/",
+   "action": "kept",
+   "newSentence": "Trichomoniasis, a sexually transmitted infection, which the NHS says is usually treated with metronidazole"
+  },
+  {
+   "id": "c08",
+   "where": "howItWorks",
+   "classification": "unsupported",
+   "evidence": "NHS summary says it is an antibiotic for bacterial and parasitic infections; 'stops growth' wording not retrieved",
+   "url": "https://www.nhs.uk/medicines/metronidazole/about-metronidazole/",
+   "action": "edited",
+   "newSentence": "Metronidazole is an antibiotic that treats bacterial and parasitic infections."
+  },
+  {
+   "id": "c09",
+   "where": "howItWorks",
+   "classification": "supported",
+   "evidence": "PubMed abstracts 6849201/7000306: activation via low-redox pathways absent in aerobic host cells; DNA damage",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/6849201/",
+   "action": "kept",
+   "newSentence": "Laboratory studies describe it as being switched on inside susceptible organisms, many of which live without oxygen, by pathways that human cells do not have."
+  },
+  {
+   "id": "c10",
+   "where": "howItWorks",
+   "classification": "supported",
+   "evidence": "DNA binding, strand breaks",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/6849201/",
+   "action": "kept",
+   "newSentence": "Once switched on, it forms short-lived chemical products that bind to DNA and damage it."
+  },
+  {
+   "id": "c11",
+   "where": "onset",
+   "classification": "supported",
+   "evidence": "Matches retrieved NHS text",
+   "url": "https://www.nhs.uk/medicines/metronidazole/about-metronidazole/",
+   "action": "kept",
+   "newSentence": "The NHS says most infections start to improve within a few days, although the full course is still finished."
+  },
+  {
+   "id": "c12",
+   "where": "sideEffects.common[0]",
+   "classification": "supported",
+   "evidence": "NHS lists nausea, vomiting, diarrhoea, metallic taste",
+   "url": "https://www.nhs.uk/medicines/metronidazole/side-effects-of-metronidazole/",
+   "action": "kept",
+   "newSentence": "Feeling or being sick, diarrhoea and a slight metallic taste in the mouth are the common side effects of the tablets, liquid, suppositories and vaginal gel"
+  },
+  {
+   "id": "c13",
+   "where": "sideEffects.common[1]",
+   "classification": "unsupported",
+   "evidence": "Cramps, headache, dizziness not confirmed in retrieved text; NHS says drowsiness can occur in some people",
+   "url": "https://www.nhs.uk/medicines/metronidazole/side-effects-of-metronidazole/",
+   "action": "edited",
+   "newSentence": "Some people feel drowsy, so the NHS suggests checking reaction times before driving."
+  },
+  {
+   "id": "c14",
+   "where": "sideEffects.common[2]",
+   "classification": "unsupported",
+   "evidence": "No retrieved text mentions thrush as a side effect; NHS says gel or cream can cause dryness, itching or irritation",
+   "url": "https://www.nhs.uk/medicines/metronidazole/side-effects-of-metronidazole/",
+   "action": "edited",
+   "newSentence": "Metronidazole gel or cream can cause dryness, itching or irritation of the skin."
+  },
+  {
+   "id": "c15",
+   "where": "sideEffects.serious[0]",
+   "classification": "supported",
+   "evidence": "Serious side effects fewer than 1 in 1,000; yellow skin/eyes linked to liver or gallbladder; route to care per site signposting rule",
+   "url": "https://www.nhs.uk/medicines/metronidazole/side-effects-of-metronidazole/",
+   "action": "kept",
+   "newSentence": "Serious side effects are rare, affecting fewer than 1 in 1,000 people; yellow skin or eyes, which the NHS links with liver or gallbladder problems, needs prompt contact with the GP or NHS 111"
+  },
+  {
+   "id": "c16",
+   "where": "sideEffects.serious[1]",
+   "classification": "unsupported",
+   "evidence": "As serious[1]",
+   "url": "https://www.nhs.uk/medicines/metronidazole/side-effects-of-metronidazole/",
+   "action": "edited",
+   "newSentence": "The NHS lists meningitis and brain disease as very rare serious side effects, and sudden serious symptoms of this kind are an emergency: call 999 or go to A&E."
+  },
+  {
+   "id": "c17",
+   "where": "sideEffects.serious[2]",
+   "classification": "supported",
+   "evidence": "Swelling of lips, mouth or throat or trouble breathing: call 999 (allergic reaction)",
+   "url": "https://www.nhs.uk/medicines/metronidazole/side-effects-of-metronidazole/",
+   "action": "edited",
+   "newSentence": "Swelling of the lips, mouth or throat, or trouble breathing, can signal a serious allergic reaction and needs a 999 call."
+  },
+  {
+   "id": "c18",
+   "where": "sideEffects.serious[3]",
+   "classification": "supported",
+   "evidence": "Sussex NHS leaflet: long-term use can damage nerves in hands and feet",
+   "url": "https://www.uhsussex.nhs.uk/resources/metronidazole-following-bowel-resection-for-crohns-disease/",
+   "action": "kept",
+   "newSentence": "Numbness or tingling in the hands and feet can occur with longer courses, which is a reason to speak to the prescriber or GP"
+  },
+  {
+   "id": "c19",
+   "where": "cautions[0]",
+   "classification": "supported",
+   "evidence": "Allergy and blood tests listed",
+   "url": "https://www.nhs.uk/medicines/metronidazole/who-can-and-cannot-take-metronidazole/",
+   "action": "kept",
+   "newSentence": "The NHS says to discuss metronidazole first if there has ever been an allergic reaction to it or another medicine, or if blood tests are planned, because it can interfere with some of them"
+  },
+  {
+   "id": "c20",
+   "where": "cautions[1]",
+   "classification": "supported",
+   "evidence": "Avoid alcohol during treatment and for 2 days after; sickness, stomach pain, hot flushes, palpitations, headache",
+   "url": "https://www.nhs.uk/medicines/metronidazole/common-questions-about-metronidazole/",
+   "action": "edited",
+   "newSentence": "The NHS advises not drinking alcohol while taking metronidazole tablets or liquid or using suppositories, and avoiding it for 2 days after finishing, as the combination can cause feeling or being sick, stomach pain, hot flushes, palpitations and headache; the NHS trichomoniasis page gives at least 24 hours and MedlinePlus at least 3 days, so advice differs between pages."
+  },
+  {
+   "id": "c21",
+   "where": "cautions[2]",
+   "classification": "supported",
+   "evidence": "Doubting ability to avoid alcohol listed as a point to discuss",
+   "url": "https://www.nhs.uk/medicines/metronidazole/who-can-and-cannot-take-metronidazole/",
+   "action": "kept",
+   "newSentence": "The NHS also lists feeling unable to stop drinking alcohol during treatment as a reason to talk to the prescriber first"
+  },
+  {
+   "id": "c22",
+   "where": "cautions[3]",
+   "classification": "supported",
+   "evidence": "Liver problems, dialysis, nervous system disease for tablets, liquid, suppositories",
+   "url": "https://www.nhs.uk/medicines/metronidazole/who-can-and-cannot-take-metronidazole/",
+   "action": "kept",
+   "newSentence": "Liver problems, dialysis and diseases of the nervous system are further points to tell the prescriber about for tablets, liquid or suppositories"
+  },
+  {
+   "id": "c23",
+   "where": "cautions[4]",
+   "classification": "unsupported",
+   "evidence": "NHS: may be able to use in pregnancy, check with doctor first; UK leaflet comparison not retrieved; MedlinePlus says generally not in first trimester",
+   "url": "https://www.nhs.uk/medicines/metronidazole/pregnancy-breastfeeding-and-fertility-while-taking-or-using-metronidazole/",
+   "action": "edited",
+   "newSentence": "In pregnancy the NHS says metronidazole may be possible but a doctor or pharmacist should be asked first, while MedlinePlus, a US source, says it generally should not be used in the first trimester."
+  },
+  {
+   "id": "c24",
+   "where": "cautions[5]",
+   "classification": "supported",
+   "evidence": "No evidence of effect on fertility in men or women",
+   "url": "https://www.nhs.uk/medicines/metronidazole/pregnancy-breastfeeding-and-fertility-while-taking-or-using-metronidazole/",
+   "action": "kept",
+   "newSentence": "The NHS says there is no evidence of an effect on fertility in men or women"
+  },
+  {
+   "id": "c25",
+   "where": "cautions[6]",
+   "classification": "supported",
+   "evidence": "SPS: usual courses can be used; NHS: contact healthcare professional or 111 if baby feeds poorly, upset stomach or oral thrush",
+   "url": "https://sps.nhs.uk/articles/using-metronidazole-during-breastfeeding/",
+   "action": "edited",
+   "newSentence": "The Specialist Pharmacy Service says usual courses can be used during breastfeeding; the NHS asks for the baby to be watched, with contact with a healthcare professional or NHS 111 if the baby feeds poorly, has an upset stomach or has oral thrush, and MedlinePlus says a doctor may advise expressing and discarding milk."
+  },
+  {
+   "id": "c26",
+   "where": "cautions[7]",
+   "classification": "unsupported",
+   "evidence": "Retrieved NHS text only says that sickness or diarrhoea lasting over 24 hours may stop the contraceptive pill protecting against pregnancy",
+   "url": "https://www.nhs.uk/medicines/metronidazole/side-effects-of-metronidazole/",
+   "action": "edited",
+   "newSentence": "The NHS says that if sickness or diarrhoea lasts more than 24 hours, the contraceptive pill may not protect against pregnancy."
+  },
+  {
+   "id": "c27",
+   "where": "monitoring",
+   "classification": "unsupported",
+   "evidence": "Meta statement about absence of monitoring not supported; NHS says it can affect some blood tests; nerve symptoms with long-term use",
+   "url": "https://www.nhs.uk/medicines/metronidazole/who-can-and-cannot-take-metronidazole/",
+   "action": "edited",
+   "newSentence": "The NHS notes that metronidazole can affect the results of some blood tests, so it is mentioned before tests are arranged, and numbness or tingling in the hands and feet with longer use is a reason to speak to the prescriber."
+  },
+  {
+   "id": "c28",
+   "where": "regimenNote",
+   "classification": "supported",
+   "evidence": "Matches retrieved NHS text",
+   "url": "https://www.nhs.uk/medicines/metronidazole/about-metronidazole/",
+   "action": "kept",
+   "newSentence": "Available as tablets, liquid, suppositories, skin gel and cream, vaginal gel, and as an injection given in hospital."
+  },
+  {
+   "id": "c29",
+   "where": "article.sections[0].body",
+   "classification": "supported",
+   "evidence": "Matches retrieved NHS text",
+   "url": "https://www.nhs.uk/medicines/metronidazole/about-metronidazole/",
+   "action": "kept",
+   "newSentence": "Metronidazole is an antibiotic that the NHS describes as treating several bacterial infections."
+  },
+  {
+   "id": "c30",
+   "where": "article.sections[0].body",
+   "classification": "supported",
+   "evidence": "Matches retrieved NHS text",
+   "url": "https://www.nhs.uk/medicines/metronidazole/about-metronidazole/",
+   "action": "kept",
+   "newSentence": "These include infections of the skin, rosacea, infections of the mouth such as infected gums and dental abscesses, bacterial vaginosis and pelvic inflammatory disease."
+  },
+  {
+   "id": "c31",
+   "where": "article.sections[0].body",
+   "classification": "supported",
+   "evidence": "Matches retrieved NHS text",
+   "url": "https://www.nhs.uk/medicines/metronidazole/about-metronidazole/",
+   "action": "kept",
+   "newSentence": "It can also be used for infected insect bites, skin ulcers, bed sores and wounds."
+  },
+  {
+   "id": "c32",
+   "where": "article.sections[0].body",
+   "classification": "supported",
+   "evidence": "NHS: trichomoniasis treated with antibiotics, usually metronidazole",
+   "url": "https://www.nhs.uk/conditions/trichomoniasis/",
+   "action": "kept",
+   "newSentence": "Trichomoniasis, a sexually transmitted infection, is treated with antibiotics, usually metronidazole."
+  },
+  {
+   "id": "c33",
+   "where": "article.sections[0].body",
+   "classification": "unsupported",
+   "evidence": "Not found in retrieved text",
+   "url": "https://www.nhs.uk/medicines/metronidazole/about-metronidazole/",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c34",
+   "where": "article.sections[0].body",
+   "classification": "supported",
+   "evidence": "Matches retrieved NHS text",
+   "url": "https://www.nhs.uk/medicines/metronidazole/about-metronidazole/",
+   "action": "kept",
+   "newSentence": "It comes as tablets, a liquid to drink, suppositories, skin gel, skin cream and vaginal gel."
+  },
+  {
+   "id": "c35",
+   "where": "article.sections[0].body",
+   "classification": "supported",
+   "evidence": "Matches retrieved NHS text",
+   "url": "https://www.nhs.uk/medicines/metronidazole/about-metronidazole/",
+   "action": "kept",
+   "newSentence": "It can also be given by injection, but this is usually done only in hospital."
+  },
+  {
+   "id": "c36",
+   "where": "article.sections[0].body",
+   "classification": "supported",
+   "evidence": "Matches retrieved NHS text",
+   "url": "https://www.nhs.uk/medicines/metronidazole/about-metronidazole/",
+   "action": "kept",
+   "newSentence": "For most infections, the NHS says people feel better within a few days."
+  },
+  {
+   "id": "c37",
+   "where": "article.sections[1].body",
+   "classification": "unsupported",
+   "evidence": "NHS summary says it is an antibiotic for bacterial and parasitic infections; 'stops growth' wording not retrieved",
+   "url": "https://www.nhs.uk/medicines/metronidazole/about-metronidazole/",
+   "action": "edited",
+   "newSentence": "Metronidazole is an antibiotic that treats bacterial and parasitic infections."
+  },
+  {
+   "id": "c38",
+   "where": "article.sections[1].body",
+   "classification": "unsupported",
+   "evidence": "MedlinePlus: nitroimidazole antimicrobials (supported); tinidazole membership not retrieved",
+   "url": "https://medlineplus.gov/druginfo/meds/a689011.html",
+   "action": "edited",
+   "newSentence": "It belongs to a group of medicines called nitroimidazole antimicrobials."
+  },
+  {
+   "id": "c39",
+   "where": "article.sections[1].body",
+   "classification": "supported",
+   "evidence": "PubMed abstracts 6849201/7000306: activation via low-redox pathways absent in aerobic host cells; DNA damage",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/6849201/",
+   "action": "kept",
+   "newSentence": "Laboratory studies describe it as being switched on inside susceptible organisms, many of which live without oxygen."
+  },
+  {
+   "id": "c40",
+   "where": "article.sections[1].body",
+   "classification": "supported",
+   "evidence": "Absent in aerobic host cells",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/6849201/",
+   "action": "kept",
+   "newSentence": "The switching-on pathways are absent in the aerobic cells of the human body, which helps explain why the medicine targets microbes."
+  },
+  {
+   "id": "c41",
+   "where": "article.sections[1].body",
+   "classification": "supported",
+   "evidence": "DNA binding, strand breaks",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/6849201/",
+   "action": "kept",
+   "newSentence": "Once switched on, it forms short-lived products that bind to DNA and cause damage, including breaks in the DNA strands."
+  },
+  {
+   "id": "c42",
+   "where": "article.sections[1].body",
+   "classification": "unsupported",
+   "evidence": "Cited only to a ClinicalTrials.gov protocol; not an acceptable source and not re-retrieved from official hosts",
+   "url": "",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c43",
+   "where": "article.sections[1].body",
+   "classification": "unsupported",
+   "evidence": "Not retrieved in second pass",
+   "url": "",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c44",
+   "where": "article.sections[2].body",
+   "classification": "supported",
+   "evidence": "As above",
+   "url": "https://www.nhs.uk/medicines/metronidazole/side-effects-of-metronidazole/",
+   "action": "kept",
+   "newSentence": "The NHS lists feeling or being sick, diarrhoea and a slight metallic taste in the mouth as common side effects of the tablets, liquid, suppositories and vaginal gel."
+  },
+  {
+   "id": "c45",
+   "where": "article.sections[2].body",
+   "classification": "unsupported",
+   "evidence": "dup",
+   "url": "https://www.nhs.uk/medicines/metronidazole/side-effects-of-metronidazole/",
+   "action": "edited",
+   "newSentence": "x"
+  },
+  {
+   "id": "c46",
+   "where": "article.sections[2].body",
+   "classification": "unsupported",
+   "evidence": "As above",
+   "url": "https://www.nhs.uk/medicines/metronidazole/side-effects-of-metronidazole/",
+   "action": "edited",
+   "newSentence": "Metronidazole gel or cream can cause dryness, itching or irritation of the skin."
+  },
+  {
+   "id": "c47",
+   "where": "article.sections[2].body",
+   "classification": "supported",
+   "evidence": "As above",
+   "url": "https://www.nhs.uk/medicines/metronidazole/side-effects-of-metronidazole/",
+   "action": "kept",
+   "newSentence": "Serious side effects are rare and, according to the NHS, affect fewer than 1 in 1,000 people."
+  },
+  {
+   "id": "c48",
+   "where": "article.sections[2].body",
+   "classification": "supported",
+   "evidence": "As above",
+   "url": "https://www.nhs.uk/medicines/metronidazole/side-effects-of-metronidazole/",
+   "action": "kept",
+   "newSentence": "Yellow skin or eyes, which the NHS links with liver or gallbladder problems, needs prompt contact with the GP or NHS 111."
+  },
+  {
+   "id": "c49",
+   "where": "article.sections[2].body",
+   "classification": "unsupported",
+   "evidence": "As serious[1]",
+   "url": "https://www.nhs.uk/medicines/metronidazole/side-effects-of-metronidazole/",
+   "action": "edited",
+   "newSentence": "The NHS lists meningitis and brain disease as very rare serious side effects, and sudden serious symptoms of this kind are an emergency: call 999 or go to A&E."
+  },
+  {
+   "id": "c50",
+   "where": "article.sections[2].body",
+   "classification": "supported",
+   "evidence": "As above",
+   "url": "https://www.nhs.uk/medicines/metronidazole/side-effects-of-metronidazole/",
+   "action": "edited",
+   "newSentence": "Swelling of the lips, mouth or throat, or trouble breathing, can signal a serious allergic reaction and also needs a 999 call."
+  },
+  {
+   "id": "c51",
+   "where": "article.sections[2].body",
+   "classification": "supported",
+   "evidence": "Sussex NHS leaflet: nerve damage with long-term use",
+   "url": "https://www.uhsussex.nhs.uk/resources/metronidazole-following-bowel-resection-for-crohns-disease/",
+   "action": "kept",
+   "newSentence": "A hospital factsheet adds that numbness or tingling in the hands and feet can occur with longer courses, a reason to speak to the prescriber."
+  },
+  {
+   "id": "c52",
+   "where": "article.sections[3].body",
+   "classification": "supported",
+   "evidence": "As above",
+   "url": "https://www.nhs.uk/medicines/metronidazole/common-questions-about-metronidazole/",
+   "action": "kept",
+   "newSentence": "The NHS advises not drinking alcohol while taking metronidazole tablets or liquid or using suppositories."
+  },
+  {
+   "id": "c53",
+   "where": "article.sections[3].body",
+   "classification": "supported",
+   "evidence": "Avoid alcohol for 2 days after finishing (NHS common questions page)",
+   "url": "https://www.nhs.uk/medicines/metronidazole/common-questions-about-metronidazole/",
+   "action": "edited",
+   "newSentence": "It says to keep avoiding alcohol for 2 days after treatment finishes, while the NHS trichomoniasis page gives at least 24 hours."
+  },
+  {
+   "id": "c54",
+   "where": "article.sections[3].body",
+   "classification": "supported",
+   "evidence": "As above",
+   "url": "https://www.nhs.uk/medicines/metronidazole/common-questions-about-metronidazole/",
+   "action": "edited",
+   "newSentence": "The reason is that alcohol with metronidazole can cause feeling or being sick, stomach pain, hot flushes, palpitations and headache."
+  },
+  {
+   "id": "c55",
+   "where": "article.sections[3].body",
+   "classification": "supported",
+   "evidence": "As above",
+   "url": "https://www.nhs.uk/medicines/metronidazole/who-can-and-cannot-take-metronidazole/",
+   "action": "kept",
+   "newSentence": "The NHS also lists feeling unable to stop drinking alcohol during treatment among the reasons to talk to a doctor before using it."
+  },
+  {
+   "id": "c56",
+   "where": "article.sections[3].body",
+   "classification": "unsupported",
+   "evidence": "Retrieved NHS text says vaginal gel can sometimes cause the same alcohol effects; 'little absorbed' not retrieved",
+   "url": "https://www.nhs.uk/medicines/metronidazole/common-questions-about-metronidazole/",
+   "action": "edited",
+   "newSentence": "With the vaginal gel, the NHS says drinking can sometimes cause the same effects."
+  },
+  {
+   "id": "c57",
+   "where": "article.sections[3].body",
+   "classification": "supported",
+   "evidence": "At least 3 days after final dose",
+   "url": "https://medlineplus.gov/druginfo/meds/a689011.html",
+   "action": "kept",
+   "newSentence": "MedlinePlus, a US source, gives a longer wait of at least 3 days after the last dose, so advice differs between publishers."
+  },
+  {
+   "id": "c58",
+   "where": "article.sections[4].body",
+   "classification": "supported",
+   "evidence": "Pregnancy/breastfeeding listed on who-can page per search summary; allergy; blood tests",
+   "url": "https://www.nhs.uk/medicines/metronidazole/who-can-and-cannot-take-metronidazole/",
+   "action": "kept",
+   "newSentence": "The NHS page on who can take metronidazole mentions people who have ever had an allergic reaction to it or another medicine, people who are pregnant or breastfeeding, and people who are having blood tests."
+  },
+  {
+   "id": "c59",
+   "where": "article.sections[4].body",
+   "classification": "supported",
+   "evidence": "Liver problems, dialysis, nervous system disease for tablets, liquid, suppositories",
+   "url": "https://www.nhs.uk/medicines/metronidazole/who-can-and-cannot-take-metronidazole/",
+   "action": "kept",
+   "newSentence": "Liver problems, dialysis and diseases of the nervous system are further points to tell the prescriber about for tablets, liquid or suppositories."
+  },
+  {
+   "id": "c60",
+   "where": "article.sections[4].body",
+   "classification": "supported",
+   "evidence": "May be able to use in pregnancy; check with doctor or pharmacist first",
+   "url": "https://www.nhs.uk/medicines/metronidazole/pregnancy-breastfeeding-and-fertility-while-taking-or-using-metronidazole/",
+   "action": "kept",
+   "newSentence": "On pregnancy, the NHS says metronidazole may be an option but advises discussing it with a doctor first."
+  },
+  {
+   "id": "c61",
+   "where": "article.sections[4].body",
+   "classification": "supported",
+   "evidence": "Matches retrieved NHS text",
+   "url": "https://www.nhs.uk/medicines/metronidazole/about-metronidazole/",
+   "action": "kept",
+   "newSentence": "It also says there is no evidence of an effect on fertility in men or women."
+  },
+  {
+   "id": "c62",
+   "where": "article.sections[4].body",
+   "classification": "supported",
+   "evidence": "SPS plus NHS monitoring advice",
+   "url": "https://sps.nhs.uk/articles/using-metronidazole-during-breastfeeding/",
+   "action": "kept",
+   "newSentence": "The Specialist Pharmacy Service says usual courses can be used during breastfeeding, with the baby watched for poor feeding, stomach upset or oral thrush."
+  },
+  {
+   "id": "c63",
+   "where": "article.sections[4].body",
+   "classification": "unsupported",
+   "evidence": "emc leaflet not retrieved",
+   "url": "",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c64",
+   "where": "article.sections[4].body",
+   "classification": "unsupported",
+   "evidence": "As cautions[7]",
+   "url": "https://www.nhs.uk/medicines/metronidazole/side-effects-of-metronidazole/",
+   "action": "edited",
+   "newSentence": "The NHS says that if sickness or diarrhoea lasts more than 24 hours, the contraceptive pill may not protect against pregnancy."
+  },
+  {
+   "id": "c65",
+   "where": "article.faqs[0].a",
+   "classification": "supported",
+   "evidence": "2 days",
+   "url": "https://www.nhs.uk/medicines/metronidazole/common-questions-about-metronidazole/",
+   "action": "kept",
+   "newSentence": "The NHS advises avoiding alcohol during treatment and for 2 days after finishing."
+  },
+  {
+   "id": "c66",
+   "where": "article.faqs[0].a",
+   "classification": "supported",
+   "evidence": "Effects",
+   "url": "https://www.nhs.uk/medicines/metronidazole/common-questions-about-metronidazole/",
+   "action": "edited",
+   "newSentence": "Alcohol with metronidazole can cause feeling or being sick, stomach pain, hot flushes, palpitations and headache."
+  },
+  {
+   "id": "c67",
+   "where": "article.faqs[1].a",
+   "classification": "unsupported",
+   "evidence": "Not retrieved in this form",
+   "url": "https://www.nhs.uk/medicines/metronidazole/side-effects-of-metronidazole/",
+   "action": "edited",
+   "newSentence": "The NHS says sickness or diarrhoea that lasts more than 24 hours can stop the contraceptive pill protecting against pregnancy."
+  },
+  {
+   "id": "c68",
+   "where": "article.faqs[1].a",
+   "classification": "unsupported",
+   "evidence": "As above",
+   "url": "https://www.nhs.uk/medicines/metronidazole/side-effects-of-metronidazole/",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c69",
+   "where": "article.faqs[2].a",
+   "classification": "supported",
+   "evidence": "Matches retrieved NHS text",
+   "url": "https://www.nhs.uk/medicines/metronidazole/about-metronidazole/",
+   "action": "kept",
+   "newSentence": "The NHS says it may be possible to use it in pregnancy but advises discussing it with a doctor first."
+  },
+  {
+   "id": "c70",
+   "where": "article.faqs[2].a",
+   "classification": "supported",
+   "evidence": "Matches retrieved NHS text",
+   "url": "https://www.nhs.uk/medicines/metronidazole/about-metronidazole/",
+   "action": "kept",
+   "newSentence": "The Specialist Pharmacy Service says usual courses can be used while breastfeeding, with the baby watched for feeding problems."
+  },
+  {
+   "id": "c71",
+   "where": "article.faqs[3].a",
+   "classification": "unsupported",
+   "evidence": "NHS says it can cause drowsiness in some people and reaction times are worth checking",
+   "url": "https://www.nhs.uk/medicines/metronidazole/side-effects-of-metronidazole/",
+   "action": "edited",
+   "newSentence": "The NHS says metronidazole can cause drowsiness in some people, so reaction times are worth checking before driving."
+  },
+  {
+   "id": "c72",
+   "where": "article.faqs[3].a",
+   "classification": "unsupported",
+   "evidence": "Hospital leaflet not confirmed; covered by NHS wording",
+   "url": "https://www.nhs.uk/medicines/metronidazole/side-effects-of-metronidazole/",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c73",
+   "where": "article.faqs[4].a",
+   "classification": "supported",
+   "evidence": "Matches retrieved NHS text",
+   "url": "https://www.nhs.uk/medicines/metronidazole/about-metronidazole/",
+   "action": "kept",
+   "newSentence": "The NHS says people usually feel better within a few days for most infections."
+  },
+  {
+   "id": "c74",
+   "where": "article.faqs[4].a",
+   "classification": "supported",
+   "evidence": "Matches retrieved NHS text",
+   "url": "https://www.nhs.uk/medicines/metronidazole/about-metronidazole/",
+   "action": "kept",
+   "newSentence": "The full course is still finished as prescribed even when symptoms ease."
+  },
+  {
+   "id": "c75",
+   "where": "article.keyFacts[0].value",
+   "classification": "supported",
+   "evidence": "MedlinePlus nitroimidazole antimicrobial",
+   "url": "https://medlineplus.gov/druginfo/meds/a689011.html",
+   "action": "kept",
+   "newSentence": "Antibiotic from the nitroimidazole group"
+  },
+  {
+   "id": "c76",
+   "where": "article.keyFacts[1].value",
+   "classification": "supported",
+   "evidence": "NHS forms",
+   "url": "https://www.nhs.uk/medicines/metronidazole/about-metronidazole/",
+   "action": "kept",
+   "newSentence": "Tablets, liquid, suppositories, skin gel and cream, vaginal gel, hospital injection"
+  },
+  {
+   "id": "c77",
+   "where": "article.keyFacts[2].value",
+   "classification": "supported",
+   "evidence": "As above",
+   "url": "https://www.nhs.uk/medicines/metronidazole/side-effects-of-metronidazole/",
+   "action": "kept",
+   "newSentence": "Feeling sick, diarrhoea, slight metallic taste"
+  },
+  {
+   "id": "c78",
+   "where": "article.keyFacts[3].value",
+   "classification": "supported",
+   "evidence": "As above",
+   "url": "https://www.nhs.uk/medicines/metronidazole/common-questions-about-metronidazole/",
+   "action": "kept",
+   "newSentence": "Avoid during treatment and for 2 days afterwards (NHS)"
+  },
+  {
+   "id": "c79",
+   "where": "article.keyFacts[4].value",
+   "classification": "supported",
+   "evidence": "As above",
+   "url": "https://www.nhs.uk/medicines/metronidazole/side-effects-of-metronidazole/",
+   "action": "kept",
+   "newSentence": "Rare, fewer than 1 in 1,000 people (NHS)"
+  },
+  {
+   "id": "c80",
+   "where": "article.keyFacts[5].value",
+   "classification": "unsupported",
+   "evidence": "As above",
+   "url": "https://www.nhs.uk/medicines/metronidazole/side-effects-of-metronidazole/",
+   "action": "edited",
+   "newSentence": "Sickness or diarrhoea over 24 hours may stop the pill working"
+  },
+  {
+   "id": "c81",
+   "where": "regulatory[0]",
+   "classification": "supported",
+   "evidence": "NHS: prescription only",
+   "url": "https://www.nhs.uk/medicines/metronidazole/about-metronidazole/",
+   "action": "kept",
+   "newSentence": "UK status: prescription"
+  }
+ ],
+ "notes": "Alcohol 2 days is stated by the NHS common-questions page; NHS trichomoniasis page says at least 24 hours, MedlinePlus at least 3 days; page now shows the difference. Pregnancy: NHS main page says may be possible; summaries suggest the who-can page lists pregnancy as a discuss point; MedlinePlus says generally avoid first trimester. Spectrum sentence (ClinicalTrials.gov) and tinidazole claims removed. Brands taken from emc/MedlinePlus/formulary search results (Flagyl, Rozex, Zidoval, MetroGel); regulatory UK prescription from NHS about page. Search summaries blend pages so per-page attribution is best effort. 'Few days' onset and 'finish course' from NHS summaries. FAQ 'Can alcohol be drunk' q kept. Some faq/new sentences (anyone unsure ask doctor) are routing only."
+}

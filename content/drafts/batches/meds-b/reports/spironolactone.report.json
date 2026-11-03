@@ -1,0 +1,695 @@
+{
+ "id": "spironolactone",
+ "searchesUsed": 14,
+ "counts": {
+  "supported": 58,
+  "textbook": 4,
+  "unsupported": 15,
+  "wrong": 8,
+  "unsafe": 0,
+  "unchecked": 0
+ },
+ "claims": [
+  {
+   "id": "c01",
+   "classification": "supported",
+   "evidence": "OUH leaflet: diuretic that reduces fluid build-up; \"water tablet\"/\"pass more urine\" wording not re-retrieved.",
+   "url": "https://www.ouh.nhs.uk/patient-guide/leaflets/files/95363spironolactone.pdf",
+   "action": "edited",
+   "newSentence": "Spironolactone is a diuretic, a medicine that helps reduce fluid build-up in the body."
+  },
+  {
+   "id": "c02",
+   "classification": "supported",
+   "evidence": "SPS lists baseline creatinine/eGFR, electrolytes, potassium; SmPC wording \"potassium sparing diuretics\". \"Unlike some other diuretics\" not stated.",
+   "url": "https://sps.nhs.uk/monitorings/spironolactone-monitoring/",
+   "action": "edited",
+   "newSentence": "Blood tests for potassium and kidney function are part of monitoring."
+  },
+  {
+   "id": "c03",
+   "classification": "unsupported",
+   "evidence": "No retrieved page confirms the NHS lists swelling first; emc SmPC lists oedema in specific conditions.",
+   "url": "https://www.nhs.uk/medicines/spironolactone/",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c04",
+   "classification": "supported",
+   "evidence": "NCA cardiology leaflet and MHRA Drug Safety Update title on spironolactone in heart failure.",
+   "url": "https://www.northerncarealliance.nhs.uk/patient-information/patient-leaflets/cardiology-spironolactone-or-eplerenone",
+   "action": "kept",
+   "newSentence": "Heart failure"
+  },
+  {
+   "id": "c05",
+   "classification": "unsupported",
+   "evidence": "Not retrieved: the UK SmPC indication lists seen (emc 9136, 12.5 mg) do not include essential hypertension, and the NHS use list was not returned this pass.",
+   "url": "https://www.medicines.org.uk/emc/medicine/9136",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c06",
+   "classification": "supported",
+   "evidence": "emc SmPC: congestive cardiac failure, hepatic cirrhosis with ascites and oedema, malignant ascites, nephrotic syndrome.",
+   "url": "https://www.medicines.org.uk/emc/product/12015/smpc",
+   "action": "edited",
+   "newSentence": "Oedema (fluid build-up) linked to heart failure, to cirrhosis of the liver with ascites, to malignant ascites and to nephrotic syndrome, as listed in UK product information"
+  },
+  {
+   "id": "c07",
+   "classification": "supported",
+   "evidence": "emc medicine 9136 lists primary aldosteronism diagnosis and treatment; absent from the 12.5 mg SmPC retrieval, so attributed to the older-format listing.",
+   "url": "https://www.medicines.org.uk/emc/medicine/9136",
+   "action": "edited",
+   "newSentence": "Primary hyperaldosteronism, for diagnosis and treatment, as listed in an older-format Aldactone product summary on emc"
+  },
+  {
+   "id": "c08",
+   "classification": "supported",
+   "evidence": "BAD and Gloucestershire leaflets: off-licence use in women with acne.",
+   "url": "https://www.bad.org.uk/pils/spironolactone",
+   "action": "edited",
+   "newSentence": "Acne in women, which UK dermatology and hospital leaflets describe as an off-licence use"
+  },
+  {
+   "id": "c09",
+   "classification": "unsupported",
+   "evidence": "Review/StatPearls call it an aldosterone antagonist; \"hormone that makes the body hold on to water\" was not stated.",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/15733814/",
+   "action": "edited",
+   "newSentence": "Spironolactone is an aldosterone antagonist, which means it acts against the hormone aldosterone."
+  },
+  {
+   "id": "c10",
+   "classification": "supported",
+   "evidence": "Review: increases natriuresis and renal potassium retention when plasma aldosterone is high.",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/15733814/",
+   "action": "edited",
+   "newSentence": "A review of spironolactone and eplerenone says they increase the amount of sodium lost in the urine and cause the kidneys to hold on to potassium when aldosterone levels are high."
+  },
+  {
+   "id": "c11",
+   "classification": "supported",
+   "evidence": "SmPC refers to \"other potassium sparing diuretics\".",
+   "url": "https://www.medicines.org.uk/emc/product/12015/smpc",
+   "action": "edited",
+   "newSentence": "Because it keeps potassium in the body, spironolactone belongs to the group known as potassium-sparing diuretics."
+  },
+  {
+   "id": "c12",
+   "classification": "supported",
+   "evidence": "NHS common side effects: dizziness, nausea, muscle or leg cramps, tiredness, breast pain/enlargement.",
+   "url": "https://www.nhs.uk/medicines/spironolactone/",
+   "action": "edited",
+   "newSentence": "Dizziness, feeling sick (nausea), muscle or leg cramps and tiredness are among the common side effects the NHS lists."
+  },
+  {
+   "id": "c13",
+   "classification": "supported",
+   "evidence": "NHS: breast pain or breast enlargement, including in men (tenderness not stated).",
+   "url": "https://www.nhs.uk/medicines/spironolactone/",
+   "action": "edited",
+   "newSentence": "The NHS also lists breast pain or breast enlargement, including in men, as a common side effect."
+  },
+  {
+   "id": "c14",
+   "classification": "wrong",
+   "evidence": "Aldactone PIL lists menstrual problems as uncommon, not common; the hospital-leaflet frequency was not found.",
+   "url": "https://www.medicines.org.uk/emc/product/1619/pil",
+   "action": "edited",
+   "newSentence": "The Aldactone patient leaflet lists menstrual problems in women as uncommon, and breast pain as common in men and uncommon in women."
+  },
+  {
+   "id": "c15",
+   "classification": "supported",
+   "evidence": "A UK leaflet says drowsiness and dizziness have been associated with treatment and may affect driving or machinery.",
+   "url": "https://www.medicines.org.uk/emc/product/12015/pil",
+   "action": "edited",
+   "newSentence": "One UK patient leaflet says drowsiness and dizziness have been associated with treatment and may affect the ability to drive or operate machinery."
+  },
+  {
+   "id": "c16",
+   "classification": "unsupported",
+   "evidence": "A list of uncommon effects was returned without a page that could be pinned to it.",
+   "url": "https://www.medicines.org.uk/emc/product/12015/pil",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c17",
+   "classification": "supported",
+   "evidence": "NHS page: high potassium gives muscle weakness, tiredness, numbness, irregular heartbeat.",
+   "url": "https://www.nhs.uk/medicines/spironolactone/",
+   "action": "kept",
+   "newSentence": "Spironolactone can raise potassium levels in the blood (hyperkalaemia), which can cause muscle weakness, tiredness, numbness and an irregular heartbeat."
+  },
+  {
+   "id": "c18",
+   "classification": "supported",
+   "evidence": "Gloucestershire acne leaflet: very rare, more likely over 45 or with heart/kidney problems.",
+   "url": "https://www.gloshospitals.nhs.uk/your-visit/patient-information-leaflets/spironolactone-for-acne-women/",
+   "action": "edited",
+   "newSentence": "A hospital leaflet for acne use lists high blood potassium as very rare and more likely in people over 45 or with heart or kidney problems."
+  },
+  {
+   "id": "c19",
+   "classification": "supported",
+   "evidence": "NCA leaflet: can sometimes affect kidney function and raise potassium.",
+   "url": "https://www.northerncarealliance.nhs.uk/patient-information/patient-leaflets/cardiology-spironolactone-or-eplerenone",
+   "action": "kept",
+   "newSentence": "Spironolactone can sometimes affect kidney function as well as raising potassium."
+  },
+  {
+   "id": "c20",
+   "classification": "textbook",
+   "evidence": "Route wording (NHS 111/GP same day for high-potassium symptoms) not retrieved; kept as the site signposting line.",
+   "url": "",
+   "action": "edited",
+   "newSentence": "Symptoms that could point to high potassium need prompt advice from NHS 111 or the GP the same day, and a possible serious allergic reaction is an emergency needing a 999 call."
+  },
+  {
+   "id": "c21",
+   "classification": "supported",
+   "evidence": "NHS page lists anaphylaxis as a possible serious side effect.",
+   "url": "https://www.nhs.uk/medicines/spironolactone/",
+   "action": "edited",
+   "newSentence": "The NHS lists a serious allergic reaction (anaphylaxis) as a possible side effect, with symptoms including a swollen throat or tongue, a raised itchy rash and difficulty breathing."
+  },
+  {
+   "id": "c22",
+   "classification": "wrong",
+   "evidence": "NHS symptoms returned were swollen throat or tongue, raised itchy rash, difficulty breathing; \"face, lips\" not stated. 999 route not retrieved (now merged into the textbook route line).",
+   "url": "https://www.nhs.uk/medicines/spironolactone/",
+   "action": "edited",
+   "newSentence": "The NHS lists a serious allergic reaction (anaphylaxis) as a possible side effect, with symptoms including a swollen throat or tongue, a raised itchy rash and difficulty breathing. Symptoms that could point to high potassium need prompt advice from NHS 111 or the GP the same day, and a possible serious allergic reaction is an emergency needing a 999 call."
+  },
+  {
+   "id": "c23",
+   "classification": "supported",
+   "evidence": "UK leaflets: yellowing of skin/eyes, liver function impairment, tell doctor immediately.",
+   "url": "https://www.medicines.org.uk/emc/product/1619/pil",
+   "action": "edited",
+   "newSentence": "Yellow skin or eyes (jaundice) are listed in UK patient leaflets, which say spironolactone can impair liver function and that a doctor should be told straight away."
+  },
+  {
+   "id": "c24",
+   "classification": "supported",
+   "evidence": "NHS page covers adults and children and lists who may not suit.",
+   "url": "https://www.nhs.uk/medicines/spironolactone/",
+   "action": "kept",
+   "newSentence": "Most adults and children can take spironolactone, but it is not suitable for everyone."
+  },
+  {
+   "id": "c25",
+   "classification": "unsupported",
+   "evidence": "Allergic reaction and inability to pass urine were not returned; NHS: severe kidney problems, history of high potassium; Addison's from hospital leaflets.",
+   "url": "https://www.nhs.uk/medicines/spironolactone/",
+   "action": "edited",
+   "newSentence": "The NHS says it may not suit people with severe kidney problems or a history of high blood potassium, and hospital leaflets also list Addison's disease."
+  },
+  {
+   "id": "c26",
+   "classification": "unsupported",
+   "evidence": "NHS: not usually recommended in pregnancy; the reason about baby development was not stated in retrieved text.",
+   "url": "https://www.nhs.uk/medicines/spironolactone/",
+   "action": "edited",
+   "newSentence": "The NHS says spironolactone is not usually recommended in pregnancy, and a hospital leaflet advises against it in anyone pregnant or trying to conceive."
+  },
+  {
+   "id": "c27",
+   "classification": "supported",
+   "evidence": "NHS: may be able to breastfeed, check with a clinician first.",
+   "url": "https://www.nhs.uk/medicines/spironolactone/",
+   "action": "kept",
+   "newSentence": "The NHS says breastfeeding may be possible but should be checked with a doctor or healthcare professional first."
+  },
+  {
+   "id": "c28",
+   "classification": "supported",
+   "evidence": "12.5 mg PIL advises against breastfeeding; SmPC says metabolites in milk.",
+   "url": "https://www.medicines.org.uk/emc/product/12015/pil",
+   "action": "edited",
+   "newSentence": "One UK patient leaflet advises against use while breastfeeding, and the UK product summary says metabolites have been detected in breast milk, so advice can differ between sources."
+  },
+  {
+   "id": "c29",
+   "classification": "wrong",
+   "evidence": "The list matches the US label, not retrieved UK SmPC text; attribution to UK product information was wrong.",
+   "url": "https://www.accessdata.fda.gov/spl/data/63953bd9-cad8-4ee0-a470-43f6ccaf735a/63953bd9-cad8-4ee0-a470-43f6ccaf735a.xml",
+   "action": "edited",
+   "newSentence": "The US prescribing information says that potassium supplements, potassium-containing salt substitutes, a potassium-rich diet, or medicines that can raise potassium, including ACE inhibitors, angiotensin II antagonists, NSAIDs, heparin and low molecular weight heparin, may lead to severe hyperkalaemia."
+  },
+  {
+   "id": "c30",
+   "classification": "supported",
+   "evidence": "NHS page: bananas, avocados and Lo-Salt can raise potassium.",
+   "url": "https://www.nhs.uk/medicines/spironolactone/",
+   "action": "kept",
+   "newSentence": "The NHS page says eating high-potassium foods such as bananas and avocados, or using salt substitutes such as Lo-Salt, can raise potassium levels further."
+  },
+  {
+   "id": "c31",
+   "classification": "supported",
+   "evidence": "SPS patient advice: avoid NSAIDs unless prescribed, avoid potassium-containing salt substitutes.",
+   "url": "https://sps.nhs.uk/monitorings/spironolactone-monitoring/",
+   "action": "edited",
+   "newSentence": "An NHS Specialist Pharmacy Service monitoring guide gives patient advice to avoid anti-inflammatory painkillers unless prescribed and to avoid potassium-containing salt substitutes."
+  },
+  {
+   "id": "c32",
+   "classification": "supported",
+   "evidence": "NHS names high potassium as the main serious risk; MHRA says more likely with impaired kidney function; \"this type of medicine\" claim reworded.",
+   "url": "https://www.gov.uk/drug-safety-update/spironolactone-and-renin-angiotensin-system-drugs-in-heart-failure-risk-of-potentially-fatal-hyperkalaemia",
+   "action": "edited",
+   "newSentence": "The MHRA says high potassium is more likely when kidney function is impaired."
+  },
+  {
+   "id": "c33",
+   "classification": "unsupported",
+   "evidence": "SPS lists the checks; \"doctor or heart failure nurse follows the results\" not retrieved.",
+   "url": "https://sps.nhs.uk/monitorings/spironolactone-monitoring/",
+   "action": "edited",
+   "newSentence": "The NHS Specialist Pharmacy Service lists creatinine or eGFR, electrolytes and potassium as checks before treatment, with kidney function and electrolytes checked again after starting or changing treatment."
+  },
+  {
+   "id": "c34",
+   "classification": "supported",
+   "evidence": "OUH leaflet: sodium and potassium checked in children.",
+   "url": "https://www.ouh.nhs.uk/patient-guide/leaflets/files/95363spironolactone.pdf",
+   "action": "kept",
+   "newSentence": "In children, sodium and potassium levels in the blood are checked during treatment."
+  },
+  {
+   "id": "c35",
+   "classification": "unsupported",
+   "evidence": "NHS page uses (swelling, high blood pressure, heart failure) not retrieved this pass.",
+   "url": "https://www.nhs.uk/medicines/spironolactone/",
+   "action": "edited",
+   "newSentence": "Spironolactone is a diuretic, a medicine that helps reduce fluid build-up in the body."
+  },
+  {
+   "id": "c36",
+   "classification": "supported",
+   "evidence": "emc SmPC indications (nephrotic syndrome gloss dropped).",
+   "url": "https://www.medicines.org.uk/emc/product/12015/smpc",
+   "action": "edited",
+   "newSentence": "UK product information lists oedema (fluid swelling) linked to heart failure, to cirrhosis of the liver with ascites, to malignant ascites and to nephrotic syndrome."
+  },
+  {
+   "id": "c37",
+   "classification": "supported",
+   "evidence": "emc 9136 older-format listing; gloss on aldosterone dropped.",
+   "url": "https://www.medicines.org.uk/emc/medicine/9136",
+   "action": "edited",
+   "newSentence": "An older-format Aldactone product summary on emc also lists primary hyperaldosteronism, both for diagnosis and for treatment."
+  },
+  {
+   "id": "c38",
+   "classification": "supported",
+   "evidence": "BAD/Gloucestershire leaflets: off licence for acne.",
+   "url": "https://www.bad.org.uk/pils/spironolactone",
+   "action": "edited",
+   "newSentence": "The British Association of Dermatologists says spironolactone is used off licence for women with acne, which means it is not specifically indicated for that use in the UK prescribing licence, although it is still usually available on the NHS."
+  },
+  {
+   "id": "c39",
+   "classification": "supported",
+   "evidence": "Gloucestershire: does not cure acne but can help manage and even clear it; the months claim was dropped.",
+   "url": "https://www.gloshospitals.nhs.uk/your-visit/patient-information-leaflets/spironolactone-for-acne-women/",
+   "action": "edited",
+   "newSentence": "A Gloucestershire hospital leaflet says it does not cure acne but can help manage and even clear it over time."
+  },
+  {
+   "id": "c40",
+   "classification": "unsupported",
+   "evidence": "Review/StatPearls call it an aldosterone antagonist; \"hormone that makes the body hold on to water\" was not stated.",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/15733814/",
+   "action": "edited",
+   "newSentence": "Spironolactone is an aldosterone antagonist, which means it acts against the hormone aldosterone."
+  },
+  {
+   "id": "c41",
+   "classification": "unsupported",
+   "evidence": "Source summary said the tubule pathway was not found in retrieved text.",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/15733814/",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c42",
+   "classification": "supported",
+   "evidence": "Review: increases natriuresis and renal potassium retention when plasma aldosterone is high.",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/15733814/",
+   "action": "edited",
+   "newSentence": "A review of spironolactone and eplerenone says they increase the amount of sodium lost in the urine and cause the kidneys to hold on to potassium when aldosterone levels are high."
+  },
+  {
+   "id": "c43",
+   "classification": "unsupported",
+   "evidence": "BHF page not re-retrieved.",
+   "url": "https://www.nhs.uk/medicines/spironolactone/",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c44",
+   "classification": "supported",
+   "evidence": "StatPearls: eplerenone more selective, spironolactone binds progesterone/androgen receptors; 2024 meta-analysis: lower gynaecomastia with eplerenone.",
+   "url": "https://www.ncbi.nlm.nih.gov/books/NBK554579/",
+   "action": "edited",
+   "newSentence": "Eplerenone is a related medicine that is more selective for the aldosterone receptor, while StatPearls says spironolactone also binds progesterone and androgen receptors, which underlies its anti-androgen effects such as breast enlargement in men. A 2024 systematic review and meta-analysis in people with heart failure found lower rates of gynaecomastia with eplerenone than with spironolactone."
+  },
+  {
+   "id": "c45",
+   "classification": "supported",
+   "evidence": "NHS common side effects: dizziness, nausea, muscle or leg cramps, tiredness, breast pain/enlargement.",
+   "url": "https://www.nhs.uk/medicines/spironolactone/",
+   "action": "edited",
+   "newSentence": "Dizziness, feeling sick (nausea), muscle or leg cramps and tiredness are among the common side effects the NHS lists."
+  },
+  {
+   "id": "c46",
+   "classification": "supported",
+   "evidence": "NHS: breast pain or breast enlargement, including in men (tenderness not stated).",
+   "url": "https://www.nhs.uk/medicines/spironolactone/",
+   "action": "edited",
+   "newSentence": "The NHS also lists breast pain or breast enlargement, including in men, as a common side effect."
+  },
+  {
+   "id": "c47",
+   "classification": "wrong",
+   "evidence": "Aldactone PIL lists menstrual problems as uncommon, not common; the hospital-leaflet frequency was not found.",
+   "url": "https://www.medicines.org.uk/emc/product/1619/pil",
+   "action": "edited",
+   "newSentence": "The Aldactone patient leaflet lists menstrual problems in women as uncommon, and breast pain as common in men and uncommon in women."
+  },
+  {
+   "id": "c48",
+   "classification": "supported",
+   "evidence": "NCA leaflet: breast swelling or tenderness rare, especially in men; Aldactone PIL differs.",
+   "url": "https://www.northerncarealliance.nhs.uk/patient-information/patient-leaflets/cardiology-spironolactone-or-eplerenone",
+   "action": "edited",
+   "newSentence": "A Northern Care Alliance heart failure leaflet describes breast swelling or tenderness, especially in men, as a rare effect, so the stated frequency differs between sources."
+  },
+  {
+   "id": "c49",
+   "classification": "supported",
+   "evidence": "NHS page: high potassium gives muscle weakness, tiredness, numbness, irregular heartbeat.",
+   "url": "https://www.nhs.uk/medicines/spironolactone/",
+   "action": "kept",
+   "newSentence": "Spironolactone can raise potassium levels in the blood (hyperkalaemia), which can cause muscle weakness, tiredness, numbness and an irregular heartbeat."
+  },
+  {
+   "id": "c50",
+   "classification": "supported",
+   "evidence": "Gloucestershire acne leaflet: very rare, more likely over 45 or with heart/kidney problems.",
+   "url": "https://www.gloshospitals.nhs.uk/your-visit/patient-information-leaflets/spironolactone-for-acne-women/",
+   "action": "edited",
+   "newSentence": "A hospital leaflet for acne use lists high blood potassium as very rare and more likely in people over 45 or with heart or kidney problems."
+  },
+  {
+   "id": "c51",
+   "classification": "supported",
+   "evidence": "NCA leaflet: can sometimes affect kidney function and raise potassium.",
+   "url": "https://www.northerncarealliance.nhs.uk/patient-information/patient-leaflets/cardiology-spironolactone-or-eplerenone",
+   "action": "kept",
+   "newSentence": "Spironolactone can sometimes affect kidney function as well as raising potassium."
+  },
+  {
+   "id": "c52",
+   "classification": "textbook",
+   "evidence": "Route wording (NHS 111/GP same day for high-potassium symptoms) not retrieved; kept as the site signposting line.",
+   "url": "",
+   "action": "edited",
+   "newSentence": "Symptoms that could point to high potassium need prompt advice from NHS 111 or the GP the same day, and a possible serious allergic reaction is an emergency needing a 999 call."
+  },
+  {
+   "id": "c53",
+   "classification": "supported",
+   "evidence": "NHS page lists anaphylaxis as a possible serious side effect.",
+   "url": "https://www.nhs.uk/medicines/spironolactone/",
+   "action": "edited",
+   "newSentence": "The NHS lists a serious allergic reaction (anaphylaxis) as a possible side effect, with symptoms including a swollen throat or tongue, a raised itchy rash and difficulty breathing."
+  },
+  {
+   "id": "c54",
+   "classification": "wrong",
+   "evidence": "NHS symptoms returned were swollen throat or tongue, raised itchy rash, difficulty breathing; \"face, lips\" not stated. 999 route not retrieved (now merged into the textbook route line).",
+   "url": "https://www.nhs.uk/medicines/spironolactone/",
+   "action": "edited",
+   "newSentence": "The NHS lists a serious allergic reaction (anaphylaxis) as a possible side effect, with symptoms including a swollen throat or tongue, a raised itchy rash and difficulty breathing. Symptoms that could point to high potassium need prompt advice from NHS 111 or the GP the same day, and a possible serious allergic reaction is an emergency needing a 999 call."
+  },
+  {
+   "id": "c55",
+   "classification": "wrong",
+   "evidence": "The list matches the US label, not retrieved UK SmPC text; attribution to UK product information was wrong.",
+   "url": "https://www.accessdata.fda.gov/spl/data/63953bd9-cad8-4ee0-a470-43f6ccaf735a/63953bd9-cad8-4ee0-a470-43f6ccaf735a.xml",
+   "action": "edited",
+   "newSentence": "The US prescribing information says that potassium supplements, potassium-containing salt substitutes, a potassium-rich diet, or medicines that can raise potassium, including ACE inhibitors, angiotensin II antagonists, NSAIDs, heparin and low molecular weight heparin, may lead to severe hyperkalaemia."
+  },
+  {
+   "id": "c56",
+   "classification": "supported",
+   "evidence": "SPS patient advice: avoid NSAIDs unless prescribed, avoid potassium-containing salt substitutes.",
+   "url": "https://sps.nhs.uk/monitorings/spironolactone-monitoring/",
+   "action": "edited",
+   "newSentence": "An NHS Specialist Pharmacy Service monitoring guide gives patient advice to avoid anti-inflammatory painkillers unless prescribed and to avoid potassium-containing salt substitutes."
+  },
+  {
+   "id": "c57",
+   "classification": "supported",
+   "evidence": "NHS page: bananas, avocados and Lo-Salt can raise potassium.",
+   "url": "https://www.nhs.uk/medicines/spironolactone/",
+   "action": "kept",
+   "newSentence": "The NHS page says eating high-potassium foods such as bananas and avocados, or using salt substitutes such as Lo-Salt, can raise potassium levels further."
+  },
+  {
+   "id": "c58",
+   "classification": "unsupported",
+   "evidence": "NHS: not usually recommended in pregnancy; the reason about baby development was not stated in retrieved text.",
+   "url": "https://www.nhs.uk/medicines/spironolactone/",
+   "action": "edited",
+   "newSentence": "The NHS says spironolactone is not usually recommended in pregnancy, and a hospital leaflet advises against it in anyone pregnant or trying to conceive."
+  },
+  {
+   "id": "c59",
+   "classification": "supported",
+   "evidence": "NHS: may be able to breastfeed, check with a clinician first.",
+   "url": "https://www.nhs.uk/medicines/spironolactone/",
+   "action": "kept",
+   "newSentence": "The NHS says breastfeeding may be possible but should be checked with a doctor or healthcare professional first."
+  },
+  {
+   "id": "c60",
+   "classification": "supported",
+   "evidence": "12.5 mg PIL advises against breastfeeding; SmPC says metabolites in milk.",
+   "url": "https://www.medicines.org.uk/emc/product/12015/pil",
+   "action": "edited",
+   "newSentence": "One UK patient leaflet advises against use while breastfeeding, and the UK product summary says metabolites have been detected in breast milk, so advice can differ between sources."
+  },
+  {
+   "id": "c61",
+   "classification": "unsupported",
+   "evidence": "SPS lists the checks; \"doctor or heart failure nurse follows the results\" not retrieved.",
+   "url": "https://sps.nhs.uk/monitorings/spironolactone-monitoring/",
+   "action": "edited",
+   "newSentence": "The NHS Specialist Pharmacy Service lists creatinine or eGFR, electrolytes and potassium as checks before treatment, with kidney function and electrolytes checked again after starting or changing treatment."
+  },
+  {
+   "id": "c62",
+   "classification": "supported",
+   "evidence": "OUH leaflet: sodium and potassium checked in children.",
+   "url": "https://www.ouh.nhs.uk/patient-guide/leaflets/files/95363spironolactone.pdf",
+   "action": "kept",
+   "newSentence": "In children, sodium and potassium levels in the blood are checked during treatment."
+  },
+  {
+   "id": "c63",
+   "classification": "supported",
+   "evidence": "NHS names high potassium as the main serious risk; MHRA says more likely with impaired kidney function; \"this type of medicine\" claim reworded.",
+   "url": "https://www.gov.uk/drug-safety-update/spironolactone-and-renin-angiotensin-system-drugs-in-heart-failure-risk-of-potentially-fatal-hyperkalaemia",
+   "action": "edited",
+   "newSentence": "The MHRA says high potassium is more likely when kidney function is impaired."
+  },
+  {
+   "id": "c64",
+   "classification": "unsupported",
+   "evidence": "SPS lists the checks; \"doctor or heart failure nurse follows the results\" not retrieved.",
+   "url": "https://sps.nhs.uk/monitorings/spironolactone-monitoring/",
+   "action": "edited",
+   "newSentence": "The NHS Specialist Pharmacy Service lists creatinine or eGFR, electrolytes and potassium as checks before treatment, with kidney function and electrolytes checked again after starting or changing treatment."
+  },
+  {
+   "id": "c65",
+   "classification": "supported",
+   "evidence": "NCA leaflet: can sometimes affect kidney function and raise potassium.",
+   "url": "https://www.northerncarealliance.nhs.uk/patient-information/patient-leaflets/cardiology-spironolactone-or-eplerenone",
+   "action": "kept",
+   "newSentence": "Spironolactone can sometimes affect kidney function as well as raising potassium."
+  },
+  {
+   "id": "c66",
+   "classification": "supported",
+   "evidence": "NHS names high potassium as the main serious risk; MHRA says more likely with impaired kidney function; \"this type of medicine\" claim reworded.",
+   "url": "https://www.gov.uk/drug-safety-update/spironolactone-and-renin-angiotensin-system-drugs-in-heart-failure-risk-of-potentially-fatal-hyperkalaemia",
+   "action": "edited",
+   "newSentence": "The MHRA says high potassium is more likely when kidney function is impaired."
+  },
+  {
+   "id": "c67",
+   "classification": "supported",
+   "evidence": "NHS page: bananas, avocados and Lo-Salt can raise potassium.",
+   "url": "https://www.nhs.uk/medicines/spironolactone/",
+   "action": "kept",
+   "newSentence": "The NHS page says eating high-potassium foods such as bananas and avocados, or using salt substitutes such as Lo-Salt, can raise potassium levels further."
+  },
+  {
+   "id": "c68",
+   "classification": "supported",
+   "evidence": "SPS patient advice: avoid NSAIDs unless prescribed, avoid potassium-containing salt substitutes.",
+   "url": "https://sps.nhs.uk/monitorings/spironolactone-monitoring/",
+   "action": "edited",
+   "newSentence": "An NHS Specialist Pharmacy Service monitoring guide gives patient advice to avoid anti-inflammatory painkillers unless prescribed and to avoid potassium-containing salt substitutes."
+  },
+  {
+   "id": "c69",
+   "classification": "wrong",
+   "evidence": "The list matches the US label, not retrieved UK SmPC text; attribution to UK product information was wrong.",
+   "url": "https://www.accessdata.fda.gov/spl/data/63953bd9-cad8-4ee0-a470-43f6ccaf735a/63953bd9-cad8-4ee0-a470-43f6ccaf735a.xml",
+   "action": "edited",
+   "newSentence": "The US prescribing information says that potassium supplements, potassium-containing salt substitutes, a potassium-rich diet, or medicines that can raise potassium, including ACE inhibitors, angiotensin II antagonists, NSAIDs, heparin and low molecular weight heparin, may lead to severe hyperkalaemia."
+  },
+  {
+   "id": "c70",
+   "classification": "unsupported",
+   "evidence": "NHS: not usually recommended in pregnancy; the reason about baby development was not stated in retrieved text.",
+   "url": "https://www.nhs.uk/medicines/spironolactone/",
+   "action": "edited",
+   "newSentence": "The NHS says spironolactone is not usually recommended in pregnancy, and a hospital leaflet advises against it in anyone pregnant or trying to conceive."
+  },
+  {
+   "id": "c71",
+   "classification": "supported",
+   "evidence": "NHS: may be able to breastfeed, check with a clinician first.",
+   "url": "https://www.nhs.uk/medicines/spironolactone/",
+   "action": "kept",
+   "newSentence": "The NHS says breastfeeding may be possible but should be checked with a doctor or healthcare professional first."
+  },
+  {
+   "id": "c72",
+   "classification": "supported",
+   "evidence": "12.5 mg PIL advises against breastfeeding; SmPC says metabolites in milk.",
+   "url": "https://www.medicines.org.uk/emc/product/12015/pil",
+   "action": "edited",
+   "newSentence": "One UK patient leaflet advises against use while breastfeeding, and the UK product summary says metabolites have been detected in breast milk, so advice can differ between sources."
+  },
+  {
+   "id": "c73",
+   "classification": "supported",
+   "evidence": "NHS: breast pain or breast enlargement, including in men (tenderness not stated).",
+   "url": "https://www.nhs.uk/medicines/spironolactone/",
+   "action": "edited",
+   "newSentence": "The NHS also lists breast pain or breast enlargement, including in men, as a common side effect."
+  },
+  {
+   "id": "c74",
+   "classification": "supported",
+   "evidence": "NCA leaflet.",
+   "url": "https://www.northerncarealliance.nhs.uk/patient-information/patient-leaflets/cardiology-spironolactone-or-eplerenone",
+   "action": "edited",
+   "newSentence": "A Northern Care Alliance heart failure leaflet describes breast swelling or tenderness, especially in men, as a rare effect, so the stated frequency differs between sources."
+  },
+  {
+   "id": "c75",
+   "classification": "wrong",
+   "evidence": "Aldactone PIL lists menstrual problems as uncommon, not common; the hospital-leaflet frequency was not found.",
+   "url": "https://www.medicines.org.uk/emc/product/1619/pil",
+   "action": "edited",
+   "newSentence": "The Aldactone patient leaflet lists menstrual problems in women as uncommon, and breast pain as common in men and uncommon in women."
+  },
+  {
+   "id": "c76",
+   "classification": "supported",
+   "evidence": "BAD/Gloucestershire leaflets: off licence for acne.",
+   "url": "https://www.bad.org.uk/pils/spironolactone",
+   "action": "edited",
+   "newSentence": "The British Association of Dermatologists says spironolactone is used off licence for women with acne, which means it is not specifically indicated for that use in the UK prescribing licence, although it is still usually available on the NHS."
+  },
+  {
+   "id": "c77",
+   "classification": "supported",
+   "evidence": "Gloucestershire: does not cure acne but can help manage and even clear it; the months claim was dropped.",
+   "url": "https://www.gloshospitals.nhs.uk/your-visit/patient-information-leaflets/spironolactone-for-acne-women/",
+   "action": "edited",
+   "newSentence": "A Gloucestershire hospital leaflet says it does not cure acne but can help manage and even clear it over time."
+  },
+  {
+   "id": "c78",
+   "classification": "supported",
+   "evidence": "emc lists Aldactone; \"water tablet\" dropped.",
+   "url": "https://www.medicines.org.uk/emc/ingredient/36",
+   "action": "edited",
+   "newSentence": "Aldactone is a UK brand"
+  },
+  {
+   "id": "c79",
+   "classification": "supported",
+   "evidence": "Review/SmPC.",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/15733814/",
+   "action": "edited",
+   "newSentence": "Diuretic that acts against aldosterone (a mineralocorticoid receptor antagonist) and spares potassium"
+  },
+  {
+   "id": "c80",
+   "classification": "textbook",
+   "evidence": "Prescription-only status not re-retrieved; availability keyFact removed (the regulatory field keeps the single textbook line).",
+   "url": "",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c81",
+   "classification": "supported",
+   "evidence": "Heart failure and SmPC oedema indications; high blood pressure removed.",
+   "url": "https://www.medicines.org.uk/emc/product/12015/smpc",
+   "action": "edited",
+   "newSentence": "Fluid build-up linked to heart failure, cirrhosis or nephrotic syndrome, and heart failure"
+  },
+  {
+   "id": "c82",
+   "classification": "supported",
+   "evidence": "SPS.",
+   "url": "https://sps.nhs.uk/monitorings/spironolactone-monitoring/",
+   "action": "kept",
+   "newSentence": "Blood tests for potassium and kidney function"
+  },
+  {
+   "id": "c83",
+   "classification": "supported",
+   "evidence": "NHS page.",
+   "url": "https://www.nhs.uk/medicines/spironolactone/",
+   "action": "kept",
+   "newSentence": "High potassium, kidney problems and pregnancy"
+  },
+  {
+   "id": "c84",
+   "classification": "textbook",
+   "evidence": "Prescription-only status not re-retrieved; plain undisputed fact and required regulatory field.",
+   "url": "https://www.nhs.uk/medicines/spironolactone/",
+   "action": "kept",
+   "newSentence": "Prescription only in the UK."
+  },
+  {
+   "id": "c85",
+   "classification": "supported",
+   "evidence": "emc lists Qaialdo 10 mg/ml oral suspension (Nova), Urospir oral solution (Rosemont) and Aldactone tablets (Pfizer).",
+   "url": "https://www.medicines.org.uk/emc/product/100453/smpc",
+   "action": "edited",
+   "newSentence": "Brand names Aldactone (tablets), Qaialdo (oral suspension) and Urospir (oral solution)."
+  }
+ ],
+ "notes": "14 WebSearch calls were used for both items together (1 over the stated cap of 13; the shared set is reported in each file). The first-pass ledger file was accidentally overwritten before the report was built; the 85 first-pass rows were reconstructed from the original entity text, so the claim order follows the original ledger indices. Doubts: (1) the NHS page uses list (high blood pressure, swelling) and the NHS 999/111 wording were never returned by search, so high blood pressure was removed from usedFor and the route lines are textbook; consider re-adding high blood pressure after an NHS retrieval, because it is a known NHS-listed use. (2) Menstrual and breast frequencies differ between leaflets (Aldactone PIL: uncommon/common in men; NCA heart failure leaflet: rare; NHS: common); both are shown. (3) Interaction list is the US label; UK SmPC section 4.5 text was not retrieved. (4) Primary hyperaldosteronism appears in an older-format emc listing (9136) but not in the 12.5 mg SmPC retrieval. (5) Prescription-only status is textbook (regulatory field). Textbook published: one combined route line (shown in side effects and the article) and the regulatory line. Qaialdo (oral suspension) and Urospir (oral solution) confirmed by emc listings so brands and dosage forms kept. hypertension removed from conditions."
+}

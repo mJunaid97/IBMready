@@ -1,0 +1,599 @@
+{
+ "id": "gout",
+ "searchesUsed": 13,
+ "counts": {
+  "supported": 37,
+  "textbook": 0,
+  "unsupported": 25,
+  "wrong": 6,
+  "unsafe": 5,
+  "unchecked": 0
+ },
+ "claims": [
+  {
+   "id": "c01",
+   "classification": "supported",
+   "evidence": "NHS: gout causes sudden severe joint pain; crystals form around joints (search 1, 11)",
+   "url": "https://www.nhs.uk/conditions/gout/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c02",
+   "classification": "unsupported",
+   "evidence": "Retrieved text did not say 'hot and very tender'; sites: big toe most common, ankle, knee, midfoot, wrist, fingers",
+   "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK546606/",
+   "action": "edited",
+   "newSentence": "The big toe is the most common site, and the ankles, knees, hands and fingers can also be affected."
+  },
+  {
+   "id": "c03",
+   "classification": "supported",
+   "evidence": "NHS: untreated attack usually lasts 1 to 2 weeks",
+   "url": "https://www.nhs.uk/conditions/gout/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c04",
+   "classification": "supported",
+   "evidence": "NHS: future attacks may last longer if untreated",
+   "url": "https://www.nhs.uk/conditions/gout/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c05",
+   "classification": "wrong",
+   "evidence": "Sources say about 60% (StatPearls) / 62% (guideline) have a second attack within a year, not almost everyone",
+   "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK546606/",
+   "action": "edited",
+   "newSentence": "StatPearls reports that around six in ten people have a second attack within a year, and the NHS notes that flares can come back every few months or after years."
+  },
+  {
+   "id": "c06",
+   "classification": "unsupported",
+   "evidence": "Returned text: more often when untreated, more joints, tophi hard deposits under skin around ears, fingers, elbows; 'longer' and 'chronic gout' wording not stated",
+   "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK546606/",
+   "action": "edited",
+   "newSentence": "Without treatment, attacks tend to come more often and can affect more joints."
+  },
+  {
+   "id": "c07",
+   "classification": "unsupported",
+   "evidence": "No retrieved source on everyday tasks/mobility",
+   "url": "https://www.nhs.uk/conditions/gout/",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c08",
+   "classification": "unsupported",
+   "evidence": "No retrieved source on what a GP asks or examines",
+   "url": "https://www.nhs.uk/conditions/gout/",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c09",
+   "classification": "unsupported",
+   "evidence": "No retrieved source on diet/family history questions",
+   "url": "https://www.nhs.uk/conditions/gout/",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c10",
+   "classification": "supported",
+   "evidence": "Bucks guideline: acute attack lowers serum urate; normal level does not rule out gout",
+   "url": "https://www.bucksformulary.nhs.uk/docs/Guideline_777FM.pdf",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c11",
+   "classification": "unsupported",
+   "evidence": "Guidelines differ: NICE at least 2 weeks after flare settles; NHS formularies 2-4 or 4-6 weeks; 'about four weeks' not uniform",
+   "url": "https://www.bucksformulary.nhs.uk/docs/Guideline_777FM.pdf",
+   "action": "edited",
+   "newSentence": "Because of this, the test may be repeated some weeks after the flare has settled."
+  },
+  {
+   "id": "c12",
+   "classification": "supported",
+   "evidence": "Returned text: normal urate during flare does not rule gout out",
+   "url": "https://www.bucksformulary.nhs.uk/docs/Guideline_777FM.pdf",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c13",
+   "classification": "supported",
+   "evidence": "Synovial fluid microscopy for crystals is the reference standard; NICE: image if aspiration not possible or diagnosis uncertain",
+   "url": "https://www.nice.org.uk/guidance/ng219/chapter/Recommendations",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c14",
+   "classification": "supported",
+   "evidence": "NICE: if aspiration cannot be done or diagnosis uncertain consider X-ray, ultrasound or dual-energy CT",
+   "url": "https://www.nice.org.uk/guidance/ng219/chapter/Recommendations",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c15",
+   "classification": "unsupported",
+   "evidence": "Search 2 returned no referral guidance; rheumatologist referral not supported",
+   "url": "https://www.nice.org.uk/guidance/ng219/chapter/Recommendations",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c16",
+   "classification": "supported",
+   "evidence": "NHS inform: treatment aims to relieve flare symptoms and prevent future flares",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/muscle-bone-and-joints/leg-and-foot-problems-and-conditions/gout/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c17",
+   "classification": "wrong",
+   "evidence": "NICE lists NSAID, colchicine or short oral steroid course as equal first-line; draft implied NSAID/steroid first and colchicine separate",
+   "url": "https://www.nice.org.uk/guidance/ng219/chapter/Recommendations",
+   "action": "edited",
+   "newSentence": "NICE recommends an NSAID (an anti-inflammatory painkiller), colchicine or a short course of steroid tablets as first-line treatment for a flare, depending on the person's other conditions, medicines and preferences."
+  },
+  {
+   "id": "c18",
+   "classification": "unsupported",
+   "evidence": "NICE: intra-articular or intramuscular steroid injection if NSAIDs and colchicine contraindicated, not tolerated or ineffective",
+   "url": "https://www.nice.org.uk/guidance/ng219/chapter/Recommendations",
+   "action": "edited",
+   "newSentence": "A steroid injection into the joint or a muscle is considered if NSAIDs and colchicine cannot be used, are not tolerated or do not work."
+  },
+  {
+   "id": "c19",
+   "classification": "supported",
+   "evidence": "NIAMS: colchicine works best when started as soon as symptoms appear",
+   "url": "https://www.niams.nih.gov/health-topics/gout/diagnosis-treatment-and-steps-to-take",
+   "action": "edited",
+   "newSentence": "NIAMS notes that colchicine works best when started as soon as symptoms appear."
+  },
+  {
+   "id": "c20",
+   "classification": "wrong",
+   "evidence": "NHS medicines page: colchicine may take a day or two before pain eases; 'two or three days' and NHS inform 'start early' not retrieved",
+   "url": "https://www.nhs.uk/medicines/colchicine/",
+   "action": "edited",
+   "newSentence": "NHS medicines information says it can take a day or two before pain and inflammation start to get better with colchicine."
+  },
+  {
+   "id": "c21",
+   "classification": "supported",
+   "evidence": "NHS inform: symptoms can be relieved using ice packs",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/muscle-bone-and-joints/leg-and-foot-problems-and-conditions/gout/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c22",
+   "classification": "unsupported",
+   "evidence": "Raising joint, bedsheets advice not returned from Versus Arthritis",
+   "url": "https://versusarthritis.org/about-arthritis/conditions/gout/",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c23",
+   "classification": "supported",
+   "evidence": "NICE: gout lifelong, benefits from long-term ULT to eliminate crystals and prevent flares",
+   "url": "https://www.nice.org.uk/guidance/ng219/chapter/Recommendations",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c24",
+   "classification": "unsupported",
+   "evidence": "Shrinking tophi retrieved; preventing joint damage per NIAMS (goal to prevent/resolve tophi so joint damage stops), not NICE",
+   "url": "https://www.niams.nih.gov/health-topics/gout/diagnosis-treatment-and-steps-to-take",
+   "action": "edited",
+   "newSentence": "NIAMS says a main goal of treatment is to prevent and resolve tophi so that joint damage stops."
+  },
+  {
+   "id": "c25",
+   "classification": "unsupported",
+   "evidence": "NHS inform lifelong wording not retrieved",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/muscle-bone-and-joints/leg-and-foot-problems-and-conditions/gout/",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c26",
+   "classification": "supported",
+   "evidence": "NICE/NHS: flares at initiation; prophylaxis for several months",
+   "url": "https://www.nice.org.uk/guidance/ng219/chapter/Recommendations",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c27",
+   "classification": "unsupported",
+   "evidence": "NICE: lower starting allopurinol and slow up-titration; 'fewer flares' not stated",
+   "url": "https://www.nice.org.uk/guidance/ng219/chapter/Recommendations",
+   "action": "edited",
+   "newSentence": "NICE recommends starting allopurinol low and increasing it slowly according to blood urate measurements."
+  },
+  {
+   "id": "c28",
+   "classification": "supported",
+   "evidence": "NIAMS: lifestyle alone not sufficient with frequent flares/tophi; urate-lowering drugs mainstay",
+   "url": "https://www.niams.nih.gov/health-topics/gout/diagnosis-treatment-and-steps-to-take",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c29",
+   "classification": "supported",
+   "evidence": "NHS: lifestyle changes can reduce future flares",
+   "url": "https://www.nhs.uk/conditions/gout/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c30",
+   "classification": "supported",
+   "evidence": "Versus Arthritis: too much alcohol, especially beer and spirits, raises urate and risk of attacks",
+   "url": "https://versusarthritis.org/about-arthritis/conditions/gout/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c31",
+   "classification": "unsupported",
+   "evidence": "Small amounts of wine supported; spreading drinking across week not retrieved",
+   "url": "https://versusarthritis.org/about-arthritis/conditions/gout/",
+   "action": "edited",
+   "newSentence": "It says beer is particularly bad because it contains a lot of purines, and that small amounts of wine do not appear to raise the risk."
+  },
+  {
+   "id": "c32",
+   "classification": "unsupported",
+   "evidence": "Versus: lose weight gradually; extreme/starvation diets not recommended as they can raise urate; 'trigger an attack' not retrieved",
+   "url": "https://versusarthritis.org/about-arthritis/conditions/gout/",
+   "action": "edited",
+   "newSentence": "It advises losing weight gradually, and says extreme weight loss or starvation diets are not recommended because they can raise urate levels."
+  },
+  {
+   "id": "c33",
+   "classification": "unsupported",
+   "evidence": "NHS: avoid crash diets; dehydration listed as trigger; 'plenty of fluids' only from a hospital leaflet",
+   "url": "https://www.nhs.uk/conditions/gout/",
+   "action": "edited",
+   "newSentence": "The NHS also advises avoiding crash diets and lists dehydration as a possible trigger of an attack."
+  },
+  {
+   "id": "c34",
+   "classification": "wrong",
+   "evidence": "Sugar-sweetened drinks claim came from NHS dietetic leaflet, not Versus; Versus lists a glass of skimmed milk; low-fat yoghurt not retrieved",
+   "url": "https://www.wsh.nhs.uk/CMS-Documents/Patient-leaflets/NutritionandDieteticService/6753-1-Gout-and-diet.pdf",
+   "action": "edited",
+   "newSentence": "An NHS dietetic leaflet says regularly drinking sugar-sweetened drinks can increase the risk of gout, while sugar-free fizzy drinks do not."
+  },
+  {
+   "id": "c35",
+   "classification": "unsupported",
+   "evidence": "Red meat/seafood only from an NHS Scotland summary of unclear page; removed",
+   "url": "https://www.nhs.uk/conditions/gout/",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c36",
+   "classification": "unsafe",
+   "evidence": "NHS inform: vitamin C not suitable for everyone, talk to GP first; 'may help a little' not retrieved; 'you should' instruction",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/muscle-bone-and-joints/leg-and-foot-problems-and-conditions/gout/",
+   "action": "edited",
+   "newSentence": "NHS inform notes that vitamin C supplements are not suitable for everyone and recommends talking to a GP before using them."
+  },
+  {
+   "id": "c37",
+   "classification": "supported",
+   "evidence": "NHS: leaving gout untreated may cause lasting joint damage",
+   "url": "https://www.nhs.uk/conditions/gout/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c38",
+   "classification": "unsupported",
+   "evidence": "NHS inform: severe pain can lead to depression or anxiety; mood/work/home not confirmed in a later search",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/muscle-bone-and-joints/leg-and-foot-problems-and-conditions/gout/",
+   "action": "edited",
+   "newSentence": "Severe gout pain can lead to feelings of depression or anxiety, according to NHS inform."
+  },
+  {
+   "id": "c39",
+   "classification": "unsupported",
+   "evidence": "NIAMS care for related conditions not retrieved",
+   "url": "https://www.niams.nih.gov/health-topics/gout/diagnosis-treatment-and-steps-to-take",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c40",
+   "classification": "unsupported",
+   "evidence": "'Manageable' wording not retrieved",
+   "url": "https://www.nhs.uk/conditions/gout/",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c41",
+   "classification": "unsafe",
+   "evidence": "NHS: see a GP for a first episode or when usual treatments not helping; draft was an instruction",
+   "url": "https://www.nhs.uk/conditions/gout/",
+   "action": "edited",
+   "newSentence": "The NHS advises a GP appointment for a first episode of gout symptoms, or when usual treatments are not helping."
+  },
+  {
+   "id": "c42",
+   "classification": "unsafe",
+   "evidence": "NHS: urgent GP or 111 for worsening swollen joint with very high temperature, hot/shivery, sick or unable to eat; 38C came from NHS inform; instruction and cut-off",
+   "url": "https://www.nhs.uk/conditions/gout/",
+   "action": "edited",
+   "newSentence": "For a painful swollen joint that is getting worse, especially with a very high temperature, feeling hot or shivery, or feeling sick or unable to eat, the NHS advises an urgent GP appointment or a call to NHS 111."
+  },
+  {
+   "id": "c43",
+   "classification": "supported",
+   "evidence": "NHS: signs of infection inside the joint (septic arthritis)",
+   "url": "https://www.nhs.uk/conditions/gout/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c44",
+   "classification": "supported",
+   "evidence": "NHS: untreated attack 1 to 2 weeks",
+   "url": "https://www.nhs.uk/conditions/gout/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c45",
+   "classification": "supported",
+   "evidence": "NHS: later attacks may last longer",
+   "url": "https://www.nhs.uk/conditions/gout/",
+   "action": "edited",
+   "newSentence": "Merged into first sentence."
+  },
+  {
+   "id": "c46",
+   "classification": "wrong",
+   "evidence": "'Within two days' not supported; colchicine may take a day or two",
+   "url": "https://www.nhs.uk/medicines/colchicine/",
+   "action": "edited",
+   "newSentence": "NHS medicines information says colchicine can take a day or two before pain and inflammation start to get better."
+  },
+  {
+   "id": "c47",
+   "classification": "wrong",
+   "evidence": "'Settles by itself' and 'almost everyone within a year' not supported; ~60% second attack in a year",
+   "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK546606/",
+   "action": "edited",
+   "newSentence": "Without treatment, a flare usually lasts about one to two weeks, according to the NHS, but further flares are common."
+  },
+  {
+   "id": "c48",
+   "classification": "supported",
+   "evidence": "NICE: lifelong condition benefiting from long-term ULT to prevent flares",
+   "url": "https://www.nice.org.uk/guidance/ng219/chapter/Recommendations",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c49",
+   "classification": "supported",
+   "evidence": "NHS: see a GP if usual treatments not helping",
+   "url": "https://www.nhs.uk/conditions/gout/",
+   "action": "edited",
+   "newSentence": "The NHS advises seeing a GP when usual treatments are not helping."
+  },
+  {
+   "id": "c50",
+   "classification": "supported",
+   "evidence": "Urate often falls in flare",
+   "url": "https://www.bucksformulary.nhs.uk/docs/Guideline_777FM.pdf",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c51",
+   "classification": "unsupported",
+   "evidence": "'About four weeks' varies by guideline",
+   "url": "https://www.bucksformulary.nhs.uk/docs/Guideline_777FM.pdf",
+   "action": "edited",
+   "newSentence": "The test may be repeated some weeks after the flare has settled."
+  },
+  {
+   "id": "c52",
+   "classification": "supported",
+   "evidence": "Normal result does not rule out",
+   "url": "https://www.bucksformulary.nhs.uk/docs/Guideline_777FM.pdf",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c53",
+   "classification": "supported",
+   "evidence": "Versus Arthritis alcohol statement",
+   "url": "https://versusarthritis.org/about-arthritis/conditions/gout/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c54",
+   "classification": "supported",
+   "evidence": "Versus: beer particularly bad due to purines; small wine amounts do not appear to raise risk",
+   "url": "https://versusarthritis.org/about-arthritis/conditions/gout/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c55",
+   "classification": "unsupported",
+   "evidence": "Spreading drinking across week not retrieved; replaced by Oxford Kidney Unit advice to minimise alcohol",
+   "url": "https://www.ouh.nhs.uk/media/btzd24ef/110778gout.pdf",
+   "action": "edited",
+   "newSentence": "An Oxford Kidney Unit leaflet advises people prone to gout attacks to reduce alcohol to a minimum or avoid it."
+  },
+  {
+   "id": "c56",
+   "classification": "unsafe",
+   "evidence": "Imperative and fever wording; NHS text: very high temperature, sick or unable to eat",
+   "url": "https://www.nhs.uk/conditions/gout/",
+   "action": "edited",
+   "newSentence": "For a painful swollen joint that is getting worse, especially with a very high temperature or feeling sick or unable to eat, the NHS advises an urgent GP appointment or a call to NHS 111."
+  },
+  {
+   "id": "c57",
+   "classification": "supported",
+   "evidence": "NHS: infection inside joint",
+   "url": "https://www.nhs.uk/conditions/gout/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c58",
+   "classification": "unsafe",
+   "evidence": "'Should be seen' instruction; NHS advises GP for first episode",
+   "url": "https://www.nhs.uk/conditions/gout/",
+   "action": "edited",
+   "newSentence": "The NHS advises a GP appointment for a first episode of gout symptoms."
+  },
+  {
+   "id": "c59",
+   "classification": "supported",
+   "evidence": "NHS: untreated attack 1 to 2 weeks",
+   "url": "https://www.nhs.uk/conditions/gout/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c60",
+   "classification": "unsupported",
+   "evidence": "Hot/tender and fingers-only list not retrieved; big toe most common",
+   "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK546606/",
+   "action": "edited",
+   "newSentence": "Big toe most often; also ankles, knees, hands and fingers"
+  },
+  {
+   "id": "c61",
+   "classification": "supported",
+   "evidence": "NICE first-line NSAID, colchicine or oral steroid",
+   "url": "https://www.nice.org.uk/guidance/ng219/chapter/Recommendations",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c62",
+   "classification": "unsupported",
+   "evidence": "'Usually lifelong' not stated; NICE lifelong condition, long-term ULT",
+   "url": "https://www.nice.org.uk/guidance/ng219/chapter/Recommendations",
+   "action": "edited",
+   "newSentence": "Urate-lowering medicine for a lifelong condition"
+  },
+  {
+   "id": "c63",
+   "classification": "unsupported",
+   "evidence": "About four weeks not uniform",
+   "url": "https://www.bucksformulary.nhs.uk/docs/Guideline_777FM.pdf",
+   "action": "edited",
+   "newSentence": "Urate can read normal in a flare, so the test may be repeated some weeks later"
+  },
+  {
+   "id": "c64",
+   "classification": "unsupported",
+   "evidence": "Plenty of fluids not from Versus/NHS gout page; sugary drinks from leaflet",
+   "url": "https://versusarthritis.org/about-arthritis/conditions/gout/",
+   "action": "edited",
+   "newSentence": "Gradual weight loss, less beer and spirits, fewer sugary drinks"
+  },
+  {
+   "id": "c65",
+   "classification": "supported",
+   "evidence": "NHS: urgent GP or 111 for worsening swollen joint with very high temperature",
+   "url": "https://www.nhs.uk/conditions/gout/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c66",
+   "classification": "supported",
+   "evidence": "Added: StatPearls ~60% second attack within a year; NHS flares return months or years",
+   "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK546606/",
+   "action": "edited",
+   "newSentence": "Further flares are common."
+  },
+  {
+   "id": "c67",
+   "classification": "supported",
+   "evidence": "Added: Hard urate deposits under skin around ears, fingers, elbows",
+   "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK546606/",
+   "action": "edited",
+   "newSentence": "Hard lumps of urate called tophi can also form under the skin, usually around the ears, fingers and elbows."
+  },
+  {
+   "id": "c68",
+   "classification": "supported",
+   "evidence": "Added: Bucks guideline: raised urate alone without joint symptoms does not equal gout",
+   "url": "https://www.bucksformulary.nhs.uk/docs/Guideline_777FM.pdf",
+   "action": "edited",
+   "newSentence": "...a raised urate level on its own, without joint symptoms, is not a diagnosis of gout."
+  },
+  {
+   "id": "c69",
+   "classification": "supported",
+   "evidence": "Added: Search 10 summary: gout and septic arthritis can coexist so joint fluid may be tested; page attribution blended",
+   "url": "https://www.nhs.uk/conditions/gout/",
+   "action": "edited",
+   "newSentence": "The fluid can also be tested for infection, because gout and septic arthritis can occur together."
+  },
+  {
+   "id": "c70",
+   "classification": "supported",
+   "evidence": "Added: NICE: no strong evidence any one first-line treatment is more effective used before others",
+   "url": "https://www.nice.org.uk/guidance/ng219/chapter/Recommendations",
+   "action": "edited",
+   "newSentence": "NICE found no strong evidence that any one of these works better than the others when used first."
+  },
+  {
+   "id": "c71",
+   "classification": "supported",
+   "evidence": "Added: NHS: repeated attacks can damage joints and cause kidney stones",
+   "url": "https://www.nhs.uk/conditions/gout/",
+   "action": "edited",
+   "newSentence": "...the NHS notes that repeated attacks can damage joints and cause kidney stones."
+  },
+  {
+   "id": "c72",
+   "classification": "supported",
+   "evidence": "Added: Search 10 summary: gout and septic arthritis can coexist; clinician may test joint fluid; blended source",
+   "url": "https://www.nhs.uk/conditions/gout/",
+   "action": "edited",
+   "newSentence": "Gout can look the same as septic arthritis, which is why fluid from the joint may be tested for infection."
+  },
+  {
+   "id": "c73",
+   "classification": "supported",
+   "evidence": "Added: Versus: daily glass of skimmed milk listed in management tips",
+   "url": "https://versusarthritis.org/about-arthritis/conditions/gout/",
+   "action": "edited",
+   "newSentence": "Versus Arthritis lists a daily glass of skimmed milk among its management tips."
+  }
+ ],
+ "notes": "Claims 1-65 are the draft sentences in order (sections, FAQs, key facts); c66-c73 are sentences added to restore word count. Five of the 13 searches returned blended summaries without page attribution, so some URLs are best-fit. Timing of repeat urate test varies (NICE at least 2 weeks after flare settles; NHS formularies 2-4 or 4-6 weeks), so text says 'some weeks'. Mood sentence: NHS inform attribution came from search 10 but a later search could not re-confirm it. Red meat/seafood and 'rheumatologist referral' removed as unretrieved."
+}

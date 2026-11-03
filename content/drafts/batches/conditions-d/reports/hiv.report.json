@@ -1,0 +1,956 @@
+{
+ "id": "hiv",
+ "searchesUsed": 14,
+ "counts": {
+  "supported": 85,
+  "textbook": 1,
+  "unsupported": 25,
+  "wrong": 1,
+  "unsafe": 0,
+  "unchecked": 0
+ },
+ "claims": [
+  {
+   "id": "c01",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/WHO/CDC/THT/NHS 111 Wales text agrees (2-6 weeks flu-like illness; no cure; long healthy life; free testing; second blood test; condoms; PrEP free; PEP clinics/A&E and within 72 h; U=U; open-access services).",
+   "url": "https://www.nhs.uk/conditions/hiv-and-aids/",
+   "action": "kept",
+   "sentence": "HIV is a virus that attacks the immune system and, with treatment, can be managed as a long-term condition."
+  },
+  {
+   "id": "c02",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/WHO/CDC/THT/NHS 111 Wales text agrees (2-6 weeks flu-like illness; no cure; long healthy life; free testing; second blood test; condoms; PrEP free; PEP clinics/A&E and within 72 h; U=U; open-access services).",
+   "url": "https://www.nhs.uk/conditions/hiv-and-aids/",
+   "action": "kept",
+   "sentence": "HIV is a virus that attacks the immune system."
+  },
+  {
+   "id": "c03",
+   "classification": "supported",
+   "evidence": "NHS: most people have the flu-like illness.",
+   "url": "https://www.nhs.uk/conditions/hiv-and-aids/",
+   "action": "edited",
+   "newSentence": "(reworded in overview; see hiv.final.json)",
+   "sentence": "It is passed on through certain body fluids, and some people have a short flu-like illness soon after infection while ot"
+  },
+  {
+   "id": "c04",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/WHO/CDC/THT/NHS 111 Wales text agrees (2-6 weeks flu-like illness; no cure; long healthy life; free testing; second blood test; condoms; PrEP free; PEP clinics/A&E and within 72 h; U=U; open-access services).",
+   "url": "https://www.nhs.uk/conditions/hiv-and-aids/",
+   "action": "kept",
+   "sentence": "HIV is not the same as AIDS, which is the most advanced stage of infection."
+  },
+  {
+   "id": "c05",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/WHO/CDC/THT/NHS 111 Wales text agrees (2-6 weeks flu-like illness; no cure; long healthy life; free testing; second blood test; condoms; PrEP free; PEP clinics/A&E and within 72 h; U=U; open-access services).",
+   "url": "https://www.nhs.uk/conditions/hiv-and-aids/",
+   "action": "kept",
+   "sentence": "There is currently no cure, but antiretroviral treatment helps people live long, healthy lives."
+  },
+  {
+   "id": "c06",
+   "classification": "unsupported",
+   "evidence": "WHO attribution of U=U not confirmed in its own excerpt; NHS and THT confirmed.",
+   "url": "https://www.nhs.uk/conditions/hiv-and-aids/",
+   "action": "edited",
+   "newSentence": "(reworded in overview; see hiv.final.json)",
+   "sentence": "WHO and Terrence Higgins Trust both say that a person on effective treatment whose virus is suppressed will not pass HIV"
+  },
+  {
+   "id": "c07",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/WHO/CDC/THT/NHS 111 Wales text agrees (2-6 weeks flu-like illness; no cure; long healthy life; free testing; second blood test; condoms; PrEP free; PEP clinics/A&E and within 72 h; U=U; open-access services).",
+   "url": "https://www.nhs.uk/conditions/hiv-and-aids/",
+   "action": "kept",
+   "sentence": "HIV is diagnosed with a test, which the NHS provides free of charge to anyone."
+  },
+  {
+   "id": "c08",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/WHO/CDC/THT/NHS 111 Wales text agrees (2-6 weeks flu-like illness; no cure; long healthy life; free testing; second blood test; condoms; PrEP free; PEP clinics/A&E and within 72 h; U=U; open-access services).",
+   "url": "https://www.nhs.uk/conditions/hiv-and-aids/",
+   "action": "kept",
+   "sentence": "Testing can be done at a sexual health clinic, with a home testing kit or with a home sampling kit."
+  },
+  {
+   "id": "c09",
+   "classification": "unsupported",
+   "evidence": "NHS: saliva or finger-prick sample, lab results within a few days; \"results in minutes\" not retrieved.",
+   "url": "https://www.nhs.uk/conditions/hiv-and-aids/",
+   "action": "edited",
+   "newSentence": "(reworded in diagnosis; see hiv.final.json)",
+   "sentence": "A clinic may offer a finger-prick test with results in minutes, while a more detailed test can take a few days."
+  },
+  {
+   "id": "c10",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/WHO/CDC/THT/NHS 111 Wales text agrees (2-6 weeks flu-like illness; no cure; long healthy life; free testing; second blood test; condoms; PrEP free; PEP clinics/A&E and within 72 h; U=U; open-access services).",
+   "url": "https://www.nhs.uk/conditions/hiv-and-aids/",
+   "action": "kept",
+   "sentence": "If a first test suggests HIV, a further blood test confirms the result."
+  },
+  {
+   "id": "c11",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/WHO/CDC/THT/NHS 111 Wales text agrees (2-6 weeks flu-like illness; no cure; long healthy life; free testing; second blood test; condoms; PrEP free; PEP clinics/A&E and within 72 h; U=U; open-access services).",
+   "url": "https://www.nhs.uk/conditions/hiv-and-aids/",
+   "action": "kept",
+   "sentence": "A test may not pick up HIV acquired very recently, a gap called the window period, and its length differs between tests."
+  },
+  {
+   "id": "c12",
+   "classification": "unsupported",
+   "evidence": "No retrieved text on early diagnosis improving outcomes; THT says start treatment straight away.",
+   "url": "https://www.nhs.uk/conditions/hiv-and-aids/",
+   "action": "edited",
+   "newSentence": "(reworded in diagnosis; see hiv.final.json)",
+   "sentence": "Early diagnosis means treatment can start sooner."
+  },
+  {
+   "id": "c13",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/WHO/CDC/THT/NHS 111 Wales text agrees (2-6 weeks flu-like illness; no cure; long healthy life; free testing; second blood test; condoms; PrEP free; PEP clinics/A&E and within 72 h; U=U; open-access services).",
+   "url": "https://www.nhs.uk/conditions/hiv-and-aids/",
+   "action": "kept",
+   "sentence": "HIV is treated with antiretroviral medicines, which stop the virus from replicating in the body."
+  },
+  {
+   "id": "c14",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/WHO/CDC/THT/NHS 111 Wales text agrees (2-6 weeks flu-like illness; no cure; long healthy life; free testing; second blood test; condoms; PrEP free; PEP clinics/A&E and within 72 h; U=U; open-access services).",
+   "url": "https://www.nhs.uk/conditions/hiv-and-aids/",
+   "action": "edited",
+   "newSentence": "(reworded in treatment; see hiv.final.json)",
+   "sentence": "These are taken every day as the doctor recommends, and the aim is an undetectable viral load."
+  },
+  {
+   "id": "c15",
+   "classification": "unsupported",
+   "evidence": "THT: start straight away regardless of CD4 count; \"protects the immune system\" not retrieved.",
+   "url": "https://www.nhs.uk/conditions/hiv-and-aids/",
+   "action": "edited",
+   "newSentence": "(reworded in treatment; see hiv.final.json)",
+   "sentence": "Terrence Higgins Trust says treatment is recommended straight away and still protects the immune system when it has alre"
+  },
+  {
+   "id": "c16",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/WHO/CDC/THT/NHS 111 Wales text agrees (2-6 weeks flu-like illness; no cure; long healthy life; free testing; second blood test; condoms; PrEP free; PEP clinics/A&E and within 72 h; U=U; open-access services).",
+   "url": "https://www.nhs.uk/conditions/hiv-and-aids/",
+   "action": "edited",
+   "newSentence": "(reworded in treatment; see hiv.final.json)",
+   "sentence": "Treatment is free on the NHS in England."
+  },
+  {
+   "id": "c17",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/WHO/CDC/THT/NHS 111 Wales text agrees (2-6 weeks flu-like illness; no cure; long healthy life; free testing; second blood test; condoms; PrEP free; PEP clinics/A&E and within 72 h; U=U; open-access services).",
+   "url": "https://www.nhs.uk/conditions/hiv-and-aids/",
+   "action": "kept",
+   "sentence": "Condoms are the most effective protection against HIV and other sexually transmitted infections."
+  },
+  {
+   "id": "c18",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/WHO/CDC/THT/NHS 111 Wales text agrees (2-6 weeks flu-like illness; no cure; long healthy life; free testing; second blood test; condoms; PrEP free; PEP clinics/A&E and within 72 h; U=U; open-access services).",
+   "url": "https://www.nhs.uk/conditions/hiv-and-aids/",
+   "action": "edited",
+   "newSentence": "(reworded in prevention; see hiv.final.json)",
+   "sentence": "PrEP is medicine taken by people without HIV to lower their chance of acquiring it, and it is free through NHS sexual he"
+  },
+  {
+   "id": "c19",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/WHO/CDC/THT/NHS 111 Wales text agrees (2-6 weeks flu-like illness; no cure; long healthy life; free testing; second blood test; condoms; PrEP free; PEP clinics/A&E and within 72 h; U=U; open-access services).",
+   "url": "https://www.nhs.uk/conditions/hiv-and-aids/",
+   "action": "kept",
+   "sentence": "PEP is a short course of medicine taken after a possible exposure."
+  },
+  {
+   "id": "c20",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/WHO/CDC/THT/NHS 111 Wales text agrees (2-6 weeks flu-like illness; no cure; long healthy life; free testing; second blood test; condoms; PrEP free; PEP clinics/A&E and within 72 h; U=U; open-access services).",
+   "url": "https://www.nhs.uk/conditions/hiv-and-aids/",
+   "action": "edited",
+   "newSentence": "(reworded in prevention; see hiv.final.json)",
+   "sentence": "Not sharing needles also helps prevent HIV."
+  },
+  {
+   "id": "c21",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/WHO/CDC/THT/NHS 111 Wales text agrees (2-6 weeks flu-like illness; no cure; long healthy life; free testing; second blood test; condoms; PrEP free; PEP clinics/A&E and within 72 h; U=U; open-access services).",
+   "url": "https://www.nhs.uk/conditions/hiv-and-aids/",
+   "action": "edited",
+   "newSentence": "(reworded in prevention; see hiv.final.json)",
+   "sentence": "Effective treatment prevents onward transmission, including to sexual partners."
+  },
+  {
+   "id": "c22",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/WHO/CDC/THT/NHS 111 Wales text agrees (2-6 weeks flu-like illness; no cure; long healthy life; free testing; second blood test; condoms; PrEP free; PEP clinics/A&E and within 72 h; U=U; open-access services).",
+   "url": "https://www.nhs.uk/conditions/hiv-and-aids/",
+   "action": "edited",
+   "newSentence": "(reworded in seekCare; see hiv.final.json)",
+   "sentence": "Anyone who thinks they have recently been exposed to HIV can go to a sexual health clinic or an A&E department, where PE"
+  },
+  {
+   "id": "c23",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/WHO/CDC/THT/NHS 111 Wales text agrees (2-6 weeks flu-like illness; no cure; long healthy life; free testing; second blood test; condoms; PrEP free; PEP clinics/A&E and within 72 h; U=U; open-access services).",
+   "url": "https://www.nhs.uk/conditions/hiv-and-aids/",
+   "action": "kept",
+   "sentence": "A routine HIV test is available free from NHS sexual health services, or with a home kit."
+  },
+  {
+   "id": "c24",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/WHO/CDC/THT/NHS 111 Wales text agrees (2-6 weeks flu-like illness; no cure; long healthy life; free testing; second blood test; condoms; PrEP free; PEP clinics/A&E and within 72 h; U=U; open-access services).",
+   "url": "https://www.nhs.uk/conditions/hiv-and-aids/",
+   "action": "kept",
+   "sentence": "Terrence Higgins Trust's helpline, THT Direct, can connect people with an HIV doctor."
+  },
+  {
+   "id": "c25",
+   "classification": "textbook",
+   "evidence": "Site route-to-care rule.",
+   "url": "https://www.nhs.uk/conditions/hiv-and-aids/",
+   "action": "kept",
+   "sentence": "Someone who is seriously unwell can call NHS 111, or 999 in an emergency."
+  },
+  {
+   "id": "c26",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/WHO/CDC/THT/NHS 111 Wales text agrees (2-6 weeks flu-like illness; no cure; long healthy life; free testing; second blood test; condoms; PrEP free; PEP clinics/A&E and within 72 h; U=U; open-access services).",
+   "url": "https://www.nhs.uk/conditions/hiv-and-aids/",
+   "action": "kept",
+   "sentence": "Infection with the human immunodeficiency virus, a virus that attacks the immune system."
+  },
+  {
+   "id": "c27",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/WHO/CDC/THT/NHS 111 Wales text agrees (2-6 weeks flu-like illness; no cure; long healthy life; free testing; second blood test; condoms; PrEP free; PEP clinics/A&E and within 72 h; U=U; open-access services).",
+   "url": "https://www.nhs.uk/conditions/hiv-and-aids/",
+   "action": "kept",
+   "sentence": "The virus passes on when certain body fluids, such as blood, semen, vaginal fluids and breast milk, reach another person"
+  },
+  {
+   "id": "c28",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/WHO/CDC/THT/NHS 111 Wales text agrees (2-6 weeks flu-like illness; no cure; long healthy life; free testing; second blood test; condoms; PrEP free; PEP clinics/A&E and within 72 h; U=U; open-access services).",
+   "url": "https://www.nhs.uk/conditions/hiv-and-aids/",
+   "action": "kept",
+   "sentence": "It can also be passed on by sharing needles."
+  },
+  {
+   "id": "c29",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/WHO/CDC/THT/NHS 111 Wales text agrees (2-6 weeks flu-like illness; no cure; long healthy life; free testing; second blood test; condoms; PrEP free; PEP clinics/A&E and within 72 h; U=U; open-access services).",
+   "url": "https://www.nhs.uk/conditions/hiv-and-aids/",
+   "action": "kept",
+   "sentence": "It can pass from a mother to her baby during pregnancy, delivery or breastfeeding."
+  },
+  {
+   "id": "c30",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/WHO/CDC/THT/NHS 111 Wales text agrees (2-6 weeks flu-like illness; no cure; long healthy life; free testing; second blood test; condoms; PrEP free; PEP clinics/A&E and within 72 h; U=U; open-access services).",
+   "url": "https://www.nhs.uk/conditions/hiv-and-aids/",
+   "action": "kept",
+   "sentence": "Sex without a condom, since condoms are the most effective protection against HIV during sexual contact."
+  },
+  {
+   "id": "c31",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/WHO/CDC/THT/NHS 111 Wales text agrees (2-6 weeks flu-like illness; no cure; long healthy life; free testing; second blood test; condoms; PrEP free; PEP clinics/A&E and within 72 h; U=U; open-access services).",
+   "url": "https://www.nhs.uk/conditions/hiv-and-aids/",
+   "action": "kept",
+   "sentence": "Sharing needles or other injecting equipment."
+  },
+  {
+   "id": "c32",
+   "classification": "unsupported",
+   "evidence": "Social determinants not retrieved.",
+   "url": "https://www.nhs.uk/conditions/hiv-and-aids/",
+   "action": "removed",
+   "newSentence": "(removed; see final text)",
+   "sentence": "Social factors such as stigma, discrimination, income, education and where a person lives can shape risk."
+  },
+  {
+   "id": "c33",
+   "classification": "unsupported",
+   "evidence": "Stigma/mistrust claim not retrieved.",
+   "url": "https://www.nhs.uk/conditions/hiv-and-aids/",
+   "action": "removed",
+   "newSentence": "(removed; see final text)",
+   "sentence": "Stigma and mistrust of health care can keep some people, such as people who inject drugs, from seeking testing, care and"
+  },
+  {
+   "id": "c34",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/WHO/CDC/THT/NHS 111 Wales text agrees (2-6 weeks flu-like illness; no cure; long healthy life; free testing; second blood test; condoms; PrEP free; PEP clinics/A&E and within 72 h; U=U; open-access services).",
+   "url": "https://www.nhs.uk/conditions/hiv-and-aids/",
+   "action": "kept",
+   "sentence": "Swollen glands and a skin rash during the early flu-like illness."
+  },
+  {
+   "id": "c35",
+   "classification": "unsupported",
+   "evidence": "Not retrieved.",
+   "url": "https://www.nhs.uk/conditions/hiv-and-aids/",
+   "action": "removed",
+   "newSentence": "(removed; see final text)",
+   "sentence": "Infections that are more frequent or more severe because the immune system is weakened."
+  },
+  {
+   "id": "c36",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/WHO/CDC/THT/NHS 111 Wales text agrees (2-6 weeks flu-like illness; no cure; long healthy life; free testing; second blood test; condoms; PrEP free; PEP clinics/A&E and within 72 h; U=U; open-access services).",
+   "url": "https://www.nhs.uk/conditions/hiv-and-aids/",
+   "action": "edited",
+   "newSentence": "(reworded in complications[0]; see hiv.final.json)",
+   "sentence": "Opportunistic infections, which happen more often or are more severe when the immune system is weakened."
+  },
+  {
+   "id": "c37",
+   "classification": "unsupported",
+   "evidence": "Only AIDS-defining illnesses such as TB or lymphoma retrieved (Chelsea and Westminster NHS).",
+   "url": "https://www.nhs.uk/conditions/hiv-and-aids/",
+   "action": "edited",
+   "newSentence": "(reworded in complications[1]; see hiv.final.json)",
+   "sentence": "A greater chance of becoming ill with diseases such as tuberculosis, other infections and some cancers."
+  },
+  {
+   "id": "c38",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/WHO/CDC/THT/NHS 111 Wales text agrees (2-6 weeks flu-like illness; no cure; long healthy life; free testing; second blood test; condoms; PrEP free; PEP clinics/A&E and within 72 h; U=U; open-access services).",
+   "url": "https://www.nhs.uk/conditions/hiv-and-aids/",
+   "action": "edited",
+   "newSentence": "(reworded in complications[2]; see hiv.final.json)",
+   "sentence": "AIDS, the most advanced stage, in which failure of the immune system allows life-threatening infections and cancers to t"
+  },
+  {
+   "id": "c39",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/WHO/CDC/THT/NHS 111 Wales text agrees (2-6 weeks flu-like illness; no cure; long healthy life; free testing; second blood test; condoms; PrEP free; PEP clinics/A&E and within 72 h; U=U; open-access services).",
+   "url": "https://www.nhs.uk/conditions/hiv-and-aids/",
+   "action": "kept",
+   "sentence": "Passing HIV on to a baby during pregnancy, delivery or breastfeeding, a chance that effective treatment lowers."
+  },
+  {
+   "id": "c40",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/WHO/CDC/THT/NHS 111 Wales text agrees (2-6 weeks flu-like illness; no cure; long healthy life; free testing; second blood test; condoms; PrEP free; PEP clinics/A&E and within 72 h; U=U; open-access services).",
+   "url": "https://www.nhs.uk/conditions/hiv-and-aids/",
+   "action": "kept",
+   "sentence": "HIV is a virus that attacks the immune system."
+  },
+  {
+   "id": "c41",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/WHO/CDC/THT/NHS 111 Wales text agrees (2-6 weeks flu-like illness; no cure; long healthy life; free testing; second blood test; condoms; PrEP free; PEP clinics/A&E and within 72 h; U=U; open-access services).",
+   "url": "https://www.nhs.uk/conditions/hiv-and-aids/",
+   "action": "kept",
+   "sentence": "HIV and AIDS are not the same thing: HIV is the virus, while AIDS is the most advanced stage of infection."
+  },
+  {
+   "id": "c42",
+   "classification": "unsupported",
+   "evidence": "CDC three stages retrieved; \"acute then chronic\" detail not.",
+   "url": "https://www.nhs.uk/conditions/hiv-and-aids/",
+   "action": "edited",
+   "newSentence": "(reworded in sec0; see hiv.final.json)",
+   "sentence": "Without treatment, infection moves through an early acute stage and a chronic stage before reaching AIDS."
+  },
+  {
+   "id": "c43",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/WHO/CDC/THT/NHS 111 Wales text agrees (2-6 weeks flu-like illness; no cure; long healthy life; free testing; second blood test; condoms; PrEP free; PEP clinics/A&E and within 72 h; U=U; open-access services).",
+   "url": "https://www.nhs.uk/conditions/hiv-and-aids/",
+   "action": "kept",
+   "sentence": "The CDC says progression to AIDS is less common today because of advances in treatment."
+  },
+  {
+   "id": "c44",
+   "classification": "unsupported",
+   "evidence": "NHS 111 Wales: most people will not develop AIDS-related illnesses with early diagnosis and effective treatment; \"NHS hospital service never develop AIDS\" not retrieved as worded.",
+   "url": "https://www.nhs.uk/conditions/hiv-and-aids/",
+   "action": "edited",
+   "newSentence": "(reworded in sec0; see hiv.final.json)",
+   "sentence": "An NHS hospital HIV service says most people living with HIV will never develop AIDS, because effective treatment stops "
+  },
+  {
+   "id": "c45",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/WHO/CDC/THT/NHS 111 Wales text agrees (2-6 weeks flu-like illness; no cure; long healthy life; free testing; second blood test; condoms; PrEP free; PEP clinics/A&E and within 72 h; U=U; open-access services).",
+   "url": "https://www.nhs.uk/conditions/hiv-and-aids/",
+   "action": "kept",
+   "sentence": "There is currently no cure for HIV."
+  },
+  {
+   "id": "c46",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/WHO/CDC/THT/NHS 111 Wales text agrees (2-6 weeks flu-like illness; no cure; long healthy life; free testing; second blood test; condoms; PrEP free; PEP clinics/A&E and within 72 h; U=U; open-access services).",
+   "url": "https://www.nhs.uk/conditions/hiv-and-aids/",
+   "action": "kept",
+   "sentence": "It can be treated with antiretroviral medicines, and WHO describes it as a manageable long-term condition when preventio"
+  },
+  {
+   "id": "c47",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/WHO/CDC/THT/NHS 111 Wales text agrees (2-6 weeks flu-like illness; no cure; long healthy life; free testing; second blood test; condoms; PrEP free; PEP clinics/A&E and within 72 h; U=U; open-access services).",
+   "url": "https://www.nhs.uk/conditions/hiv-and-aids/",
+   "action": "edited",
+   "newSentence": "(reworded in sec1; see hiv.final.json)",
+   "sentence": "Some people have a short flu-like illness around 2 to 6 weeks after acquiring HIV, according to the NHS."
+  },
+  {
+   "id": "c48",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/WHO/CDC/THT/NHS 111 Wales text agrees (2-6 weeks flu-like illness; no cure; long healthy life; free testing; second blood test; condoms; PrEP free; PEP clinics/A&E and within 72 h; U=U; open-access services).",
+   "url": "https://www.nhs.uk/conditions/hiv-and-aids/",
+   "action": "edited",
+   "newSentence": "(reworded in sec1; see hiv.final.json)",
+   "sentence": "It can include a sore throat, a high temperature, swollen glands, muscle aches, tiredness and a skin rash."
+  },
+  {
+   "id": "c49",
+   "classification": "unsupported",
+   "evidence": "CDC acute phase \"2 to 4 weeks\" is about viral load; duration claim not supported.",
+   "url": "https://www.nhs.uk/conditions/hiv-and-aids/",
+   "action": "removed",
+   "newSentence": "(removed; see final text)",
+   "sentence": "The CDC says this illness may last a few weeks."
+  },
+  {
+   "id": "c50",
+   "classification": "unsupported",
+   "evidence": "Not retrieved.",
+   "url": "https://www.nhs.uk/conditions/hiv-and-aids/",
+   "action": "removed",
+   "newSentence": "(removed; see final text)",
+   "sentence": "Other people have no symptoms in the first few weeks after infection."
+  },
+  {
+   "id": "c51",
+   "classification": "unsupported",
+   "evidence": "NHS: may not cause symptoms for many years; \"keeps damaging\" not retrieved.",
+   "url": "https://www.nhs.uk/conditions/hiv-and-aids/",
+   "action": "edited",
+   "newSentence": "(reworded in sec1; see hiv.final.json)",
+   "sentence": "After this early phase, HIV may cause no symptoms for many years, although the NHS says the virus keeps damaging the imm"
+  },
+  {
+   "id": "c52",
+   "classification": "unsupported",
+   "evidence": "Not retrieved.",
+   "url": "https://www.nhs.uk/conditions/hiv-and-aids/",
+   "action": "removed",
+   "newSentence": "(removed; see final text)",
+   "sentence": "This is one reason an early diagnosis matters: treatment can then start sooner, which can improve the chances of control"
+  },
+  {
+   "id": "c53",
+   "classification": "unsupported",
+   "evidence": "WHO TB line not re-retrieved.",
+   "url": "https://www.nhs.uk/conditions/hiv-and-aids/",
+   "action": "removed",
+   "newSentence": "(removed; see final text)",
+   "sentence": "WHO says HIV makes it easier to become ill with tuberculosis, other infections and some cancers."
+  },
+  {
+   "id": "c54",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/WHO/CDC/THT/NHS 111 Wales text agrees (2-6 weeks flu-like illness; no cure; long healthy life; free testing; second blood test; condoms; PrEP free; PEP clinics/A&E and within 72 h; U=U; open-access services).",
+   "url": "https://www.nhs.uk/conditions/hiv-and-aids/",
+   "action": "edited",
+   "newSentence": "(reworded in sec2; see hiv.final.json)",
+   "sentence": "HIV is passed on when infected body fluids get into another person's bloodstream, the NHS says."
+  },
+  {
+   "id": "c55",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/WHO/CDC/THT/NHS 111 Wales text agrees (2-6 weeks flu-like illness; no cure; long healthy life; free testing; second blood test; condoms; PrEP free; PEP clinics/A&E and within 72 h; U=U; open-access services).",
+   "url": "https://www.nhs.uk/conditions/hiv-and-aids/",
+   "action": "kept",
+   "sentence": "WHO lists blood, breast milk, semen and vaginal fluids as the fluids involved."
+  },
+  {
+   "id": "c56",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/WHO/CDC/THT/NHS 111 Wales text agrees (2-6 weeks flu-like illness; no cure; long healthy life; free testing; second blood test; condoms; PrEP free; PEP clinics/A&E and within 72 h; U=U; open-access services).",
+   "url": "https://www.nhs.uk/conditions/hiv-and-aids/",
+   "action": "kept",
+   "sentence": "The CDC explains that these fluids must reach a mucous membrane or damaged tissue, or be injected directly into the bloo"
+  },
+  {
+   "id": "c57",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/WHO/CDC/THT/NHS 111 Wales text agrees (2-6 weeks flu-like illness; no cure; long healthy life; free testing; second blood test; condoms; PrEP free; PEP clinics/A&E and within 72 h; U=U; open-access services).",
+   "url": "https://www.nhs.uk/conditions/hiv-and-aids/",
+   "action": "kept",
+   "sentence": "The NHS adds that HIV can be spread by sharing needles."
+  },
+  {
+   "id": "c58",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/WHO/CDC/THT/NHS 111 Wales text agrees (2-6 weeks flu-like illness; no cure; long healthy life; free testing; second blood test; condoms; PrEP free; PEP clinics/A&E and within 72 h; U=U; open-access services).",
+   "url": "https://www.nhs.uk/conditions/hiv-and-aids/",
+   "action": "edited",
+   "newSentence": "(reworded in sec2; see hiv.final.json)",
+   "sentence": "It can also pass from a mother to her baby during pregnancy and delivery and through breastfeeding, and effective treatm"
+  },
+  {
+   "id": "c59",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/WHO/CDC/THT/NHS 111 Wales text agrees (2-6 weeks flu-like illness; no cure; long healthy life; free testing; second blood test; condoms; PrEP free; PEP clinics/A&E and within 72 h; U=U; open-access services).",
+   "url": "https://www.nhs.uk/conditions/hiv-and-aids/",
+   "action": "kept",
+   "sentence": "HIV does not spread through the air like cold and flu viruses, the NHS says."
+  },
+  {
+   "id": "c60",
+   "classification": "wrong",
+   "evidence": "See wrong note.",
+   "url": "https://www.cdc.gov/hiv/about/index.html",
+   "action": "edited",
+   "newSentence": "(reworded in sec2; see hiv.final.json)",
+   "sentence": "WHO states that casual contact such as kissing or sharing food does not spread it, and the NHS describes passing it on t"
+  },
+  {
+   "id": "c61",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/WHO/CDC/THT/NHS 111 Wales text agrees (2-6 weeks flu-like illness; no cure; long healthy life; free testing; second blood test; condoms; PrEP free; PEP clinics/A&E and within 72 h; U=U; open-access services).",
+   "url": "https://www.nhs.uk/conditions/hiv-and-aids/",
+   "action": "kept",
+   "sentence": "HIV is diagnosed with a test, and the NHS provides testing free of charge to anyone."
+  },
+  {
+   "id": "c62",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/WHO/CDC/THT/NHS 111 Wales text agrees (2-6 weeks flu-like illness; no cure; long healthy life; free testing; second blood test; condoms; PrEP free; PEP clinics/A&E and within 72 h; U=U; open-access services).",
+   "url": "https://www.nhs.uk/conditions/hiv-and-aids/",
+   "action": "kept",
+   "sentence": "Options include testing at a sexual health clinic, a home testing kit and a home sampling kit."
+  },
+  {
+   "id": "c63",
+   "classification": "unsupported",
+   "evidence": "Details of kit types not retrieved.",
+   "url": "https://www.nhs.uk/conditions/hiv-and-aids/",
+   "action": "edited",
+   "newSentence": "(reworded in sec3; see hiv.final.json)",
+   "sentence": "With a home testing kit a person collects a saliva sample or a small spot of blood and tests it themselves, whereas with"
+  },
+  {
+   "id": "c64",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/WHO/CDC/THT/NHS 111 Wales text agrees (2-6 weeks flu-like illness; no cure; long healthy life; free testing; second blood test; condoms; PrEP free; PEP clinics/A&E and within 72 h; U=U; open-access services).",
+   "url": "https://www.nhs.uk/conditions/hiv-and-aids/",
+   "action": "kept",
+   "sentence": "If a first test suggests HIV, a further blood test is needed to confirm the result."
+  },
+  {
+   "id": "c65",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/WHO/CDC/THT/NHS 111 Wales text agrees (2-6 weeks flu-like illness; no cure; long healthy life; free testing; second blood test; condoms; PrEP free; PEP clinics/A&E and within 72 h; U=U; open-access services).",
+   "url": "https://www.nhs.uk/conditions/hiv-and-aids/",
+   "action": "kept",
+   "sentence": "A test may not detect HIV acquired very recently, a gap known as the window period, and its length differs between tests"
+  },
+  {
+   "id": "c66",
+   "classification": "unsupported",
+   "evidence": "Window-period transmission statement not retrieved.",
+   "url": "https://www.nhs.uk/conditions/hiv-and-aids/",
+   "action": "removed",
+   "newSentence": "(removed; see final text)",
+   "sentence": "It is still possible to pass on HIV during the window period."
+  },
+  {
+   "id": "c67",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/WHO/CDC/THT/NHS 111 Wales text agrees (2-6 weeks flu-like illness; no cure; long healthy life; free testing; second blood test; condoms; PrEP free; PEP clinics/A&E and within 72 h; U=U; open-access services).",
+   "url": "https://www.nhs.uk/conditions/hiv-and-aids/",
+   "action": "kept",
+   "sentence": "HIV is treated with antiretroviral medicines, which stop the virus from replicating in the body."
+  },
+  {
+   "id": "c68",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/WHO/CDC/THT/NHS 111 Wales text agrees (2-6 weeks flu-like illness; no cure; long healthy life; free testing; second blood test; condoms; PrEP free; PEP clinics/A&E and within 72 h; U=U; open-access services).",
+   "url": "https://www.nhs.uk/conditions/hiv-and-aids/",
+   "action": "kept",
+   "sentence": "These are taken every day as the doctor recommends, and the aim is an undetectable viral load."
+  },
+  {
+   "id": "c69",
+   "classification": "supported",
+   "evidence": "NHS: usually around 6 months; THT: up to 6 months for some; NHS 111 Wales: undetectable 6 months or more.",
+   "url": "https://www.nhs.uk/conditions/hiv-and-aids/",
+   "action": "edited",
+   "newSentence": "(reworded in sec4; see hiv.final.json)",
+   "sentence": "NHS 111 Wales says most people taking daily treatment reach an undetectable viral load within about six months, and Terr"
+  },
+  {
+   "id": "c70",
+   "classification": "unsupported",
+   "evidence": "See 15.",
+   "url": "https://www.nhs.uk/conditions/hiv-and-aids/",
+   "action": "edited",
+   "newSentence": "(reworded in sec4; see hiv.final.json)",
+   "sentence": "Terrence Higgins Trust says treatment is recommended straight away and still protects the immune system when it has alre"
+  },
+  {
+   "id": "c71",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/WHO/CDC/THT/NHS 111 Wales text agrees (2-6 weeks flu-like illness; no cure; long healthy life; free testing; second blood test; condoms; PrEP free; PEP clinics/A&E and within 72 h; U=U; open-access services).",
+   "url": "https://www.nhs.uk/conditions/hiv-and-aids/",
+   "action": "kept",
+   "sentence": "Terrence Higgins Trust says someone on effective treatment with an undetectable viral load cannot pass on HIV, and WHO s"
+  },
+  {
+   "id": "c72",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/WHO/CDC/THT/NHS 111 Wales text agrees (2-6 weeks flu-like illness; no cure; long healthy life; free testing; second blood test; condoms; PrEP free; PEP clinics/A&E and within 72 h; U=U; open-access services).",
+   "url": "https://www.nhs.uk/conditions/hiv-and-aids/",
+   "action": "kept",
+   "sentence": "This is often shortened to U=U, meaning undetectable equals untransmittable."
+  },
+  {
+   "id": "c73",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/WHO/CDC/THT/NHS 111 Wales text agrees (2-6 weeks flu-like illness; no cure; long healthy life; free testing; second blood test; condoms; PrEP free; PEP clinics/A&E and within 72 h; U=U; open-access services).",
+   "url": "https://www.nhs.uk/conditions/hiv-and-aids/",
+   "action": "kept",
+   "sentence": "The Trust adds that a current sexually transmitted infection does not change this."
+  },
+  {
+   "id": "c74",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/WHO/CDC/THT/NHS 111 Wales text agrees (2-6 weeks flu-like illness; no cure; long healthy life; free testing; second blood test; condoms; PrEP free; PEP clinics/A&E and within 72 h; U=U; open-access services).",
+   "url": "https://www.nhs.uk/conditions/hiv-and-aids/",
+   "action": "kept",
+   "sentence": "The NHS says condoms are the most effective protection against HIV and other sexually transmitted infections."
+  },
+  {
+   "id": "c75",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/WHO/CDC/THT/NHS 111 Wales text agrees (2-6 weeks flu-like illness; no cure; long healthy life; free testing; second blood test; condoms; PrEP free; PEP clinics/A&E and within 72 h; U=U; open-access services).",
+   "url": "https://www.nhs.uk/conditions/hiv-and-aids/",
+   "action": "kept",
+   "sentence": "PrEP, or pre-exposure prophylaxis, is medicine taken by people without HIV to lower their chance of acquiring it."
+  },
+  {
+   "id": "c76",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/WHO/CDC/THT/NHS 111 Wales text agrees (2-6 weeks flu-like illness; no cure; long healthy life; free testing; second blood test; condoms; PrEP free; PEP clinics/A&E and within 72 h; U=U; open-access services).",
+   "url": "https://www.nhs.uk/conditions/hiv-and-aids/",
+   "action": "kept",
+   "sentence": "It is available free through NHS sexual health services, usually as tablets taken daily or on demand, although some peop"
+  },
+  {
+   "id": "c77",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/WHO/CDC/THT/NHS 111 Wales text agrees (2-6 weeks flu-like illness; no cure; long healthy life; free testing; second blood test; condoms; PrEP free; PEP clinics/A&E and within 72 h; U=U; open-access services).",
+   "url": "https://www.nhs.uk/conditions/hiv-and-aids/",
+   "action": "kept",
+   "sentence": "PrEP does not protect against other sexually transmitted infections, so condoms are still advised."
+  },
+  {
+   "id": "c78",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/WHO/CDC/THT/NHS 111 Wales text agrees (2-6 weeks flu-like illness; no cure; long healthy life; free testing; second blood test; condoms; PrEP free; PEP clinics/A&E and within 72 h; U=U; open-access services).",
+   "url": "https://www.nhs.uk/conditions/hiv-and-aids/",
+   "action": "kept",
+   "sentence": "PEP, or post-exposure prophylaxis, is a short course of medicine after a possible exposure to HIV."
+  },
+  {
+   "id": "c79",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/WHO/CDC/THT/NHS 111 Wales text agrees (2-6 weeks flu-like illness; no cure; long healthy life; free testing; second blood test; condoms; PrEP free; PEP clinics/A&E and within 72 h; U=U; open-access services).",
+   "url": "https://www.nhs.uk/conditions/hiv-and-aids/",
+   "action": "kept",
+   "sentence": "It is available from sexual health clinics and A&E departments, and the sooner it is started the more likely it is to wo"
+  },
+  {
+   "id": "c80",
+   "classification": "unsupported",
+   "evidence": "CDC needle advice not retrieved; NHS says sharing with detectable viral load can spread HIV.",
+   "url": "https://www.nhs.uk/conditions/hiv-and-aids/",
+   "action": "edited",
+   "newSentence": "(reworded in sec5; see hiv.final.json)",
+   "sentence": "The CDC advises never sharing needles, syringes or other drug injection equipment."
+  },
+  {
+   "id": "c81",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/WHO/CDC/THT/NHS 111 Wales text agrees (2-6 weeks flu-like illness; no cure; long healthy life; free testing; second blood test; condoms; PrEP free; PEP clinics/A&E and within 72 h; U=U; open-access services).",
+   "url": "https://www.nhs.uk/conditions/hiv-and-aids/",
+   "action": "kept",
+   "sentence": "Terrence Higgins Trust says people living with HIV can now have long, healthy lives."
+  },
+  {
+   "id": "c82",
+   "classification": "supported",
+   "evidence": "NHS 111 Wales: near-normal lifespan with early diagnosis and effective treatment.",
+   "url": "https://www.nhs.uk/conditions/hiv-and-aids/",
+   "action": "edited",
+   "newSentence": "(reworded in sec6; see hiv.final.json)",
+   "sentence": "An NHS sexual health service describes near normal life expectancy with treatment."
+  },
+  {
+   "id": "c83",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/WHO/CDC/THT/NHS 111 Wales text agrees (2-6 weeks flu-like illness; no cure; long healthy life; free testing; second blood test; condoms; PrEP free; PEP clinics/A&E and within 72 h; U=U; open-access services).",
+   "url": "https://www.nhs.uk/conditions/hiv-and-aids/",
+   "action": "kept",
+   "sentence": "HIV services in England are open access, so adults with a diagnosis can refer themselves to a provider of their choice."
+  },
+  {
+   "id": "c84",
+   "classification": "unsupported",
+   "evidence": "Connective claim, nothing retrieved.",
+   "url": "https://www.nhs.uk/conditions/hiv-and-aids/",
+   "action": "removed",
+   "newSentence": "(removed; see final text)",
+   "sentence": "Support goes beyond medical care."
+  },
+  {
+   "id": "c85",
+   "classification": "unsupported",
+   "evidence": "Counselling not retrieved; THT Direct is.",
+   "url": "https://www.nhs.uk/conditions/hiv-and-aids/",
+   "action": "removed",
+   "newSentence": "(removed; see final text)",
+   "sentence": "Terrence Higgins Trust offers counselling, face to face or online, and a helpline, THT Direct."
+  },
+  {
+   "id": "c86",
+   "classification": "unsupported",
+   "evidence": "\"Group for recently diagnosed\" not retrieved; peer support with all members living with HIV is (THT).",
+   "url": "https://www.nhs.uk/conditions/hiv-and-aids/",
+   "action": "removed",
+   "newSentence": "(removed; see final text)",
+   "sentence": "It also runs peer support in which everyone taking part is living with HIV, including a group for people recently diagno"
+  },
+  {
+   "id": "c87",
+   "classification": "unsupported",
+   "evidence": "Organisations not retrieved.",
+   "url": "https://www.nhs.uk/conditions/hiv-and-aids/",
+   "action": "removed",
+   "newSentence": "(removed; see final text)",
+   "sentence": "Other community organisations listed by an NHS trust include Positive East and Positively UK."
+  },
+  {
+   "id": "c88",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/WHO/CDC/THT/NHS 111 Wales text agrees (2-6 weeks flu-like illness; no cure; long healthy life; free testing; second blood test; condoms; PrEP free; PEP clinics/A&E and within 72 h; U=U; open-access services).",
+   "url": "https://www.nhs.uk/conditions/hiv-and-aids/",
+   "action": "kept",
+   "sentence": "No."
+  },
+  {
+   "id": "c89",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/WHO/CDC/THT/NHS 111 Wales text agrees (2-6 weeks flu-like illness; no cure; long healthy life; free testing; second blood test; condoms; PrEP free; PEP clinics/A&E and within 72 h; U=U; open-access services).",
+   "url": "https://www.nhs.uk/conditions/hiv-and-aids/",
+   "action": "kept",
+   "sentence": "HIV is a virus, while AIDS is the most advanced stage of HIV infection."
+  },
+  {
+   "id": "c90",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/WHO/CDC/THT/NHS 111 Wales text agrees (2-6 weeks flu-like illness; no cure; long healthy life; free testing; second blood test; condoms; PrEP free; PEP clinics/A&E and within 72 h; U=U; open-access services).",
+   "url": "https://www.nhs.uk/conditions/hiv-and-aids/",
+   "action": "kept",
+   "sentence": "The CDC says progression to AIDS is less common today because of advances in treatment."
+  },
+  {
+   "id": "c91",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/WHO/CDC/THT/NHS 111 Wales text agrees (2-6 weeks flu-like illness; no cure; long healthy life; free testing; second blood test; condoms; PrEP free; PEP clinics/A&E and within 72 h; U=U; open-access services).",
+   "url": "https://www.nhs.uk/conditions/hiv-and-aids/",
+   "action": "edited",
+   "newSentence": "(reworded in faq0; see hiv.final.json)",
+   "sentence": "An NHS hospital HIV service says most people living with HIV will never develop AIDS, because effective treatment preven"
+  },
+  {
+   "id": "c92",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/WHO/CDC/THT/NHS 111 Wales text agrees (2-6 weeks flu-like illness; no cure; long healthy life; free testing; second blood test; condoms; PrEP free; PEP clinics/A&E and within 72 h; U=U; open-access services).",
+   "url": "https://www.nhs.uk/conditions/hiv-and-aids/",
+   "action": "kept",
+   "sentence": "Terrence Higgins Trust says someone on effective treatment with an undetectable viral load cannot pass on HIV."
+  },
+  {
+   "id": "c93",
+   "classification": "unsupported",
+   "evidence": "WHO U=U not confirmed in its own excerpt.",
+   "url": "https://www.nhs.uk/conditions/hiv-and-aids/",
+   "action": "removed",
+   "newSentence": "(removed; see final text)",
+   "sentence": "WHO says a person on antiretroviral treatment who is virally suppressed will not pass HIV to sexual partners."
+  },
+  {
+   "id": "c94",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/WHO/CDC/THT/NHS 111 Wales text agrees (2-6 weeks flu-like illness; no cure; long healthy life; free testing; second blood test; condoms; PrEP free; PEP clinics/A&E and within 72 h; U=U; open-access services).",
+   "url": "https://www.nhs.uk/conditions/hiv-and-aids/",
+   "action": "kept",
+   "sentence": "This is known as U=U, undetectable equals untransmittable."
+  },
+  {
+   "id": "c95",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/WHO/CDC/THT/NHS 111 Wales text agrees (2-6 weeks flu-like illness; no cure; long healthy life; free testing; second blood test; condoms; PrEP free; PEP clinics/A&E and within 72 h; U=U; open-access services).",
+   "url": "https://www.nhs.uk/conditions/hiv-and-aids/",
+   "action": "kept",
+   "sentence": "Condoms still protect against other sexually transmitted infections."
+  },
+  {
+   "id": "c96",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/WHO/CDC/THT/NHS 111 Wales text agrees (2-6 weeks flu-like illness; no cure; long healthy life; free testing; second blood test; condoms; PrEP free; PEP clinics/A&E and within 72 h; U=U; open-access services).",
+   "url": "https://www.nhs.uk/conditions/hiv-and-aids/",
+   "action": "edited",
+   "newSentence": "(reworded in faq2; see hiv.final.json)",
+   "sentence": "WHO states that casual contact such as kissing or sharing food does not spread HIV."
+  },
+  {
+   "id": "c97",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/WHO/CDC/THT/NHS 111 Wales text agrees (2-6 weeks flu-like illness; no cure; long healthy life; free testing; second blood test; condoms; PrEP free; PEP clinics/A&E and within 72 h; U=U; open-access services).",
+   "url": "https://www.nhs.uk/conditions/hiv-and-aids/",
+   "action": "kept",
+   "sentence": "The NHS says the virus does not spread through the air like cold and flu viruses, and that passing it on through kissing"
+  },
+  {
+   "id": "c98",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/WHO/CDC/THT/NHS 111 Wales text agrees (2-6 weeks flu-like illness; no cure; long healthy life; free testing; second blood test; condoms; PrEP free; PEP clinics/A&E and within 72 h; U=U; open-access services).",
+   "url": "https://www.nhs.uk/conditions/hiv-and-aids/",
+   "action": "kept",
+   "sentence": "It is passed on when infected body fluids get into the bloodstream."
+  },
+  {
+   "id": "c99",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/WHO/CDC/THT/NHS 111 Wales text agrees (2-6 weeks flu-like illness; no cure; long healthy life; free testing; second blood test; condoms; PrEP free; PEP clinics/A&E and within 72 h; U=U; open-access services).",
+   "url": "https://www.nhs.uk/conditions/hiv-and-aids/",
+   "action": "kept",
+   "sentence": "There is currently no cure for HIV."
+  },
+  {
+   "id": "c100",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/WHO/CDC/THT/NHS 111 Wales text agrees (2-6 weeks flu-like illness; no cure; long healthy life; free testing; second blood test; condoms; PrEP free; PEP clinics/A&E and within 72 h; U=U; open-access services).",
+   "url": "https://www.nhs.uk/conditions/hiv-and-aids/",
+   "action": "kept",
+   "sentence": "It can be treated with antiretroviral medicines, which stop the virus from replicating."
+  },
+  {
+   "id": "c101",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/WHO/CDC/THT/NHS 111 Wales text agrees (2-6 weeks flu-like illness; no cure; long healthy life; free testing; second blood test; condoms; PrEP free; PEP clinics/A&E and within 72 h; U=U; open-access services).",
+   "url": "https://www.nhs.uk/conditions/hiv-and-aids/",
+   "action": "kept",
+   "sentence": "With access to effective prevention, diagnosis, treatment and care, WHO describes HIV as a manageable long-term conditio"
+  },
+  {
+   "id": "c102",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/WHO/CDC/THT/NHS 111 Wales text agrees (2-6 weeks flu-like illness; no cure; long healthy life; free testing; second blood test; condoms; PrEP free; PEP clinics/A&E and within 72 h; U=U; open-access services).",
+   "url": "https://www.nhs.uk/conditions/hiv-and-aids/",
+   "action": "kept",
+   "sentence": "The NHS provides HIV testing free of charge to anyone, including at sexual health clinics."
+  },
+  {
+   "id": "c103",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/WHO/CDC/THT/NHS 111 Wales text agrees (2-6 weeks flu-like illness; no cure; long healthy life; free testing; second blood test; condoms; PrEP free; PEP clinics/A&E and within 72 h; U=U; open-access services).",
+   "url": "https://www.nhs.uk/conditions/hiv-and-aids/",
+   "action": "kept",
+   "sentence": "Home testing kits and home sampling kits are also available."
+  },
+  {
+   "id": "c104",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/WHO/CDC/THT/NHS 111 Wales text agrees (2-6 weeks flu-like illness; no cure; long healthy life; free testing; second blood test; condoms; PrEP free; PEP clinics/A&E and within 72 h; U=U; open-access services).",
+   "url": "https://www.nhs.uk/conditions/hiv-and-aids/",
+   "action": "kept",
+   "sentence": "If a first test suggests HIV, a further blood test confirms the result."
+  },
+  {
+   "id": "c105",
+   "classification": "unsupported",
+   "evidence": "Not retrieved.",
+   "url": "https://www.nhs.uk/conditions/hiv-and-aids/",
+   "action": "removed",
+   "newSentence": "(removed; see final text)",
+   "sentence": "Early diagnosis means treatment can start sooner."
+  },
+  {
+   "id": "c106",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/WHO/CDC/THT/NHS 111 Wales text agrees (2-6 weeks flu-like illness; no cure; long healthy life; free testing; second blood test; condoms; PrEP free; PEP clinics/A&E and within 72 h; U=U; open-access services).",
+   "url": "https://www.nhs.uk/conditions/hiv-and-aids/",
+   "action": "kept",
+   "sentence": "Human immunodeficiency virus, HIV infection"
+  },
+  {
+   "id": "c107",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/WHO/CDC/THT/NHS 111 Wales text agrees (2-6 weeks flu-like illness; no cure; long healthy life; free testing; second blood test; condoms; PrEP free; PEP clinics/A&E and within 72 h; U=U; open-access services).",
+   "url": "https://www.nhs.uk/conditions/hiv-and-aids/",
+   "action": "kept",
+   "sentence": "A virus that attacks the immune system"
+  },
+  {
+   "id": "c108",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/WHO/CDC/THT/NHS 111 Wales text agrees (2-6 weeks flu-like illness; no cure; long healthy life; free testing; second blood test; condoms; PrEP free; PEP clinics/A&E and within 72 h; U=U; open-access services).",
+   "url": "https://www.nhs.uk/conditions/hiv-and-aids/",
+   "action": "kept",
+   "sentence": "Through certain body fluids reaching the bloodstream, not through the air or casual contact"
+  },
+  {
+   "id": "c109",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/WHO/CDC/THT/NHS 111 Wales text agrees (2-6 weeks flu-like illness; no cure; long healthy life; free testing; second blood test; condoms; PrEP free; PEP clinics/A&E and within 72 h; U=U; open-access services).",
+   "url": "https://www.nhs.uk/conditions/hiv-and-aids/",
+   "action": "edited",
+   "newSentence": "(reworded in kf3; see hiv.final.json)",
+   "sentence": "A short flu-like illness for some people; others have no symptoms for years"
+  },
+  {
+   "id": "c110",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/WHO/CDC/THT/NHS 111 Wales text agrees (2-6 weeks flu-like illness; no cure; long healthy life; free testing; second blood test; condoms; PrEP free; PEP clinics/A&E and within 72 h; U=U; open-access services).",
+   "url": "https://www.nhs.uk/conditions/hiv-and-aids/",
+   "action": "edited",
+   "newSentence": "(reworded in kf4; see hiv.final.json)",
+   "sentence": "A test at a sexual health clinic or with a home kit, confirmed by a further blood test"
+  },
+  {
+   "id": "c111",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/WHO/CDC/THT/NHS 111 Wales text agrees (2-6 weeks flu-like illness; no cure; long healthy life; free testing; second blood test; condoms; PrEP free; PEP clinics/A&E and within 72 h; U=U; open-access services).",
+   "url": "https://www.nhs.uk/conditions/hiv-and-aids/",
+   "action": "kept",
+   "sentence": "Daily antiretroviral medicines"
+  },
+  {
+   "id": "c112",
+   "classification": "supported",
+   "evidence": "Retrieved NHS/WHO/CDC/THT/NHS 111 Wales text agrees (2-6 weeks flu-like illness; no cure; long healthy life; free testing; second blood test; condoms; PrEP free; PEP clinics/A&E and within 72 h; U=U; open-access services).",
+   "url": "https://www.nhs.uk/conditions/hiv-and-aids/",
+   "action": "kept",
+   "sentence": "No cure at present; treatment keeps the virus under control"
+  }
+ ],
+ "notes": "Search summaries blend pages, so page-level attribution is approximate. Added from retrieval: NHS 111 Wales six-months-undetectable U=U condition, PEP 72h/24h (NHS 111 Wales), PrEP free in NHS England/Scotland/Wales, open access and assessment timing (NHS England spec). Window-period lengths deliberately given in words only. WHO U=U not confirmed in its own excerpt, so removed. Article block 1173 words. affects.systems lymphatic not source-checked (structural)."
+}

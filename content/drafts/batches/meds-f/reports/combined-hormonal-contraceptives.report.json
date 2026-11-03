@@ -1,0 +1,93 @@
+{
+ "id": "combined-hormonal-contraceptives",
+ "searchesUsed": 14,
+ "counts": {
+  "supported": 9,
+  "textbook": 0,
+  "unsupported": 0,
+  "wrong": 1,
+  "unsafe": 0,
+  "unchecked": 0
+ },
+ "claims": [
+  {
+   "id": "c01",
+   "classification": "supported",
+   "evidence": "Scottish CHC guideline and NHS patch page: CHCs are pills, patch, ring with oestrogen and progestogen",
+   "url": "https://www.nhs.uk/conditions/contraception/contraceptive-patch/",
+   "action": "kept"
+  },
+  {
+   "id": "c02",
+   "classification": "supported",
+   "evidence": "NHS trust/Devon pages: patch and ring stop monthly egg release like the pill; Scottish guideline lists patch and ring as CHC members",
+   "url": "https://www.nhs.uk/conditions/contraception/contraceptive-patch/",
+   "action": "edited",
+   "newSentence": "They work mainly by stopping ovulation ..."
+  },
+  {
+   "id": "c03",
+   "classification": "supported",
+   "evidence": "NHS trust pages: thicker cervical mucus (pill)",
+   "url": "https://www.opendoors.nhs.uk/content/combined-pill",
+   "action": "edited",
+   "newSentence": "For the combined pill, NHS sources add that the mucus ... becomes thicker."
+  },
+  {
+   "id": "c04",
+   "classification": "supported",
+   "evidence": "NHS: clot risk very small",
+   "url": "https://www.nhs.uk/contraception/methods-of-contraception/combined-pill/side-effects/",
+   "action": "kept"
+  },
+  {
+   "id": "c05",
+   "classification": "supported",
+   "evidence": "MHRA: relative risk by progestogen",
+   "url": "https://www.gov.uk/drug-safety-update/combined-hormonal-contraceptives-and-venous-thromboembolism-review-confirms-risk-is-small",
+   "action": "edited",
+   "newSentence": "...than with levonorgestrel, norethisterone or norgestimate products."
+  },
+  {
+   "id": "c06",
+   "classification": "supported",
+   "evidence": "NHS who-can-take list (only re-retrieved items kept; 'some cancers, liver disease, high blood pressure, stroke' narrowed)",
+   "url": "https://www.nhs.uk/contraception/methods-of-contraception/combined-pill/who-can-take-it/",
+   "action": "edited",
+   "newSentence": "A history of blood clots, migraine with aura, breast cancer, liver cancer or severe cirrhosis, heart problems or complications of diabetes can make the combined pill unsuitable."
+  },
+  {
+   "id": "c07",
+   "classification": "supported",
+   "evidence": "NHS interactions: TB/epilepsy/HIV medicines and St John's wort",
+   "url": "https://www.nhs.uk/conditions/contraception/contraceptive-pill-interact-medicines/",
+   "action": "edited",
+   "newSentence": "...can make the combined pill less effective."
+  },
+  {
+   "id": "c08",
+   "classification": "wrong",
+   "evidence": "First pass said lamotrigine might reduce the effectiveness of CHC; the retrieved NHS text says the interaction runs the other way (hormonal contraceptives may change lamotrigine's effect). Also the Scottish guideline was not re-retrieved on this point",
+   "url": "https://www.nhs.uk/conditions/contraception/contraceptive-pill-interact-medicines/",
+   "action": "edited",
+   "newSentence": "The NHS notes that some hormonal contraceptives can change the effect of other medicines, such as the epilepsy treatment lamotrigine."
+  },
+  {
+   "id": "c09",
+   "classification": "supported",
+   "evidence": "NHS PE page 999/A&E; DVT page leg advice; first pass wording 'painful swollen leg needs urgent advice' made consistent with NHS 'medical help as soon as possible'",
+   "url": "https://www.nhs.uk/conditions/pulmonary-embolism/",
+   "action": "edited",
+   "newSentence": "...for a possible clot in the leg, the NHS advises getting medical help as soon as possible, for example an urgent GP appointment or NHS 111."
+  },
+  {
+   "id": "c10",
+   "classification": "supported",
+   "evidence": "NHS: does not protect against STIs (stated for the pill; scoped to the combined pill, because patch/ring STI statement not retrieved)",
+   "url": "https://www.nhs.uk/conditions/contraception/combined-contraceptive-pill/",
+   "action": "edited",
+   "newSentence": "The combined pill does not protect against sexually transmitted infections."
+  }
+ ],
+ "notes": "Class lamotrigine line was reversed in the first pass (corrected to the NHS direction). Patch/ring membership rests on the NHS patch page and NHS sexual health trust pages (Devon, Bucks) that say they release oestrogen and progestogen like the pill. STI sentence scoped to the combined pill only. MedlinePlus reference dropped as not re-retrieved. Class 'medications' list left as combined-pill. Searches shared with combined-pill (14 total)."
+}

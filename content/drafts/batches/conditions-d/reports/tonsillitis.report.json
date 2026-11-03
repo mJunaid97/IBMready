@@ -1,0 +1,780 @@
+{
+ "id": "tonsillitis",
+ "searchesUsed": 14,
+ "counts": {
+  "supported": 70,
+  "textbook": 3,
+  "unsupported": 23,
+  "wrong": 2,
+  "unsafe": 3,
+  "unchecked": 0
+ },
+ "claims": [
+  {
+   "id": "c01",
+   "classification": "supported",
+   "evidence": "NHS: swelling of tonsils, sore throat, fever, usually viral, sometimes bacterial",
+   "url": "https://www.nhs.uk/conditions/tonsillitis/",
+   "action": "kept"
+  },
+  {
+   "id": "c02",
+   "classification": "supported",
+   "evidence": "StatPearls: tonsils are lymphoid tissue at the throat entrance; palatine tonsils either side",
+   "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK539792/",
+   "action": "edited",
+   "newSentence": "The tonsils are lymphoid tissue at the back of the throat, one on each side."
+  },
+  {
+   "id": "c03",
+   "classification": "supported",
+   "evidence": "NHS/NHS inform/nidirect text agrees",
+   "url": "https://www.nhs.uk/conditions/tonsillitis/",
+   "action": "kept"
+  },
+  {
+   "id": "c04",
+   "classification": "supported",
+   "evidence": "NHS/NHS inform/nidirect text agrees",
+   "url": "https://www.nhs.uk/conditions/tonsillitis/",
+   "action": "kept"
+  },
+  {
+   "id": "c05",
+   "classification": "supported",
+   "evidence": "NHS: symptoms usually go after 3-4 days; NHS source: better on its own within a week",
+   "url": "https://www.nhs.uk/conditions/tonsillitis/",
+   "action": "edited",
+   "newSentence": "The NHS says symptoms usually ease within three to four days... NHS sources describe it as usually getting better within a week."
+  },
+  {
+   "id": "c06",
+   "classification": "unsupported",
+   "evidence": "Sources say antibiotics for bacterial cases prescribed by GP; 'considered only' not stated",
+   "url": "https://www.nhs.uk/conditions/tonsillitis/",
+   "action": "edited",
+   "newSentence": "Viral cases usually clear up on their own, and a GP may prescribe antibiotics if a bacterial cause is found."
+  },
+  {
+   "id": "c07",
+   "classification": "supported",
+   "evidence": "NHS/NHS inform/nidirect text agrees",
+   "url": "https://www.nhs.uk/conditions/tonsillitis/",
+   "action": "kept"
+  },
+  {
+   "id": "c08",
+   "classification": "unsupported",
+   "evidence": "'most often' strain not retrieved; CDC links group A strep to strep throat",
+   "url": "https://www.nhs.uk/conditions/tonsillitis/",
+   "action": "edited",
+   "newSentence": "One bacterial cause is group A streptococcus, which also causes strep throat"
+  },
+  {
+   "id": "c09",
+   "classification": "supported",
+   "evidence": "NHS/NHS inform/nidirect text agrees",
+   "url": "https://www.nhs.uk/conditions/tonsillitis/",
+   "action": "kept"
+  },
+  {
+   "id": "c10",
+   "classification": "supported",
+   "evidence": "NHS/NHS inform/nidirect text agrees",
+   "url": "https://www.nhs.uk/conditions/tonsillitis/",
+   "action": "kept"
+  },
+  {
+   "id": "c11",
+   "classification": "unsupported",
+   "evidence": "No retrieved text lists close contact as a risk factor",
+   "url": "https://www.nhs.uk/conditions/tonsillitis/",
+   "action": "removed"
+  },
+  {
+   "id": "c12",
+   "classification": "supported",
+   "evidence": "NHS/NHS inform/nidirect text agrees",
+   "url": "https://www.nhs.uk/conditions/tonsillitis/",
+   "action": "kept"
+  },
+  {
+   "id": "c13",
+   "classification": "supported",
+   "evidence": "NHS: white pus-filled spots on tonsils",
+   "url": "https://www.nhs.uk/conditions/tonsillitis/",
+   "action": "edited",
+   "newSentence": "White, pus-filled spots on the tonsils in some people"
+  },
+  {
+   "id": "c14",
+   "classification": "supported",
+   "evidence": "NHS/NHS inform/nidirect text agrees",
+   "url": "https://www.nhs.uk/conditions/tonsillitis/",
+   "action": "kept"
+  },
+  {
+   "id": "c15",
+   "classification": "supported",
+   "evidence": "NHS/NHS inform/nidirect text agrees",
+   "url": "https://www.nhs.uk/conditions/tonsillitis/",
+   "action": "kept"
+  },
+  {
+   "id": "c16",
+   "classification": "supported",
+   "evidence": "NHS: rare and potentially serious complication; abscess between tonsil and throat wall",
+   "url": "https://www.nidirect.gov.uk/conditions/quinsy",
+   "action": "edited",
+   "newSentence": "see final.json (complications)"
+  },
+  {
+   "id": "c17",
+   "classification": "supported",
+   "evidence": "MedlinePlus: rheumatic fever follows strep throat, does not often occur in US/developed countries",
+   "url": "https://medlineplus.gov/ency/article/003940.htm",
+   "action": "edited",
+   "newSentence": "Rheumatic fever, which can follow strep throat; MedlinePlus says it does not often occur in the US and other developed countries"
+  },
+  {
+   "id": "c18",
+   "classification": "supported",
+   "evidence": "NHS: if oral antibiotics do not help and symptoms worse, GP may refer to hospital for IV antibiotics",
+   "url": "https://www.nhs.uk/conditions/tonsillitis/",
+   "action": "edited",
+   "newSentence": "see final.json (complications)"
+  },
+  {
+   "id": "c19",
+   "classification": "unsupported",
+   "evidence": "'usually only when cause is bacterial' not stated for all complications",
+   "url": "https://www.nhs.uk/conditions/tonsillitis/",
+   "action": "removed"
+  },
+  {
+   "id": "c20",
+   "classification": "textbook",
+   "evidence": "Plain clinical fact (history and throat examination); not returned verbatim",
+   "url": "https://www.nhs.uk/conditions/tonsillitis/",
+   "action": "kept"
+  },
+  {
+   "id": "c21",
+   "classification": "supported",
+   "evidence": "NHS: GP may swab; results take a few days",
+   "url": "https://www.nhs.uk/conditions/tonsillitis/",
+   "action": "edited",
+   "newSentence": "A GP may swab the throat to check whether bacteria are the cause; results usually take a few days."
+  },
+  {
+   "id": "c22",
+   "classification": "supported",
+   "evidence": "Blood test for glandular fever usually considered when symptoms severe or persistent",
+   "url": "https://www.nhs.uk/conditions/tonsillitis/",
+   "action": "edited",
+   "newSentence": "A blood test for glandular fever is usually considered when symptoms are severe or persist."
+  },
+  {
+   "id": "c23",
+   "classification": "supported",
+   "evidence": "NG84: FeverPAIN or Centor to identify who is likely to benefit",
+   "url": "https://www.nice.org.uk/guidance/ng84/chapter/recommendations",
+   "action": "edited",
+   "newSentence": "see final.json (diagnosis)"
+  },
+  {
+   "id": "c24",
+   "classification": "supported",
+   "evidence": "NHS: viral tonsillitis clears up on its own",
+   "url": "https://www.nhs.uk/conditions/tonsillitis/",
+   "action": "kept"
+  },
+  {
+   "id": "c25",
+   "classification": "supported",
+   "evidence": "NHS: paracetamol/ibuprofen, rest, cool drinks, gargle warm salty water (children should not)",
+   "url": "https://www.nhs.uk/conditions/tonsillitis/",
+   "action": "edited",
+   "newSentence": "see final.json (treatment)"
+  },
+  {
+   "id": "c26",
+   "classification": "supported",
+   "evidence": "NHS: aspirin not for under 16; pharmacist can suggest lozenges (pharmacist-advice wording reworded)",
+   "url": "https://www.nhs.uk/conditions/tonsillitis/",
+   "action": "edited",
+   "newSentence": "see final.json (treatment)"
+  },
+  {
+   "id": "c27",
+   "classification": "supported",
+   "evidence": "NHS: short course of oral antibiotics",
+   "url": "https://www.nhs.uk/conditions/tonsillitis/",
+   "action": "kept"
+  },
+  {
+   "id": "c28",
+   "classification": "wrong",
+   "evidence": "NICE: small benefit, withholding unlikely to cause complications; term is back-up (not delayed) prescription; immediate offered if very unwell/high risk; 'generally recommended unless' not stated",
+   "url": "https://www.nice.org.uk/guidance/ng84/chapter/recommendations",
+   "action": "edited",
+   "newSentence": "see final.json (treatment)"
+  },
+  {
+   "id": "c29",
+   "classification": "supported",
+   "evidence": "NHS: very rare; usually only severe tonsillitis that keeps coming back",
+   "url": "https://www.nhs.uk/conditions/tonsillitis/",
+   "action": "edited",
+   "newSentence": "see final.json (treatment)"
+  },
+  {
+   "id": "c30",
+   "classification": "unsupported",
+   "evidence": "Hygiene advice retrieved for colds/flu (NHS), not tonsillitis; 'avoiding close contact' not retrieved",
+   "url": "https://www.nhs.uk/conditions/common-cold/",
+   "action": "edited",
+   "newSentence": "see final.json (prevention)"
+  },
+  {
+   "id": "c31",
+   "classification": "unsafe",
+   "evidence": "NHS: 999/A&E list also includes difficulty opening mouth; 'do not drive' not retrieved; missing NHS 111 route for pus spots/painful eating",
+   "url": "https://www.nhs.uk/conditions/tonsillitis/",
+   "action": "edited",
+   "newSentence": "see final.json (seekCare)"
+  },
+  {
+   "id": "c32",
+   "classification": "supported",
+   "evidence": "NHS: GP if not gone within 1 week or keeps coming back; NHS inform 4 days",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/ears-nose-and-throat/tonsillitis/",
+   "action": "edited",
+   "newSentence": "see final.json (seekCare)"
+  },
+  {
+   "id": "c33",
+   "classification": "supported",
+   "evidence": "NG84 safety-netting wording",
+   "url": "https://www.nice.org.uk/guidance/ng84/chapter/recommendations",
+   "action": "kept"
+  },
+  {
+   "id": "c34",
+   "classification": "supported",
+   "evidence": "NHS symptoms list",
+   "url": "https://www.nhs.uk/conditions/tonsillitis/",
+   "action": "kept"
+  },
+  {
+   "id": "c35",
+   "classification": "supported",
+   "evidence": "NHS: white pus-filled spots",
+   "url": "https://www.nhs.uk/conditions/tonsillitis/",
+   "action": "edited",
+   "newSentence": "see final.json (sec0)"
+  },
+  {
+   "id": "c36",
+   "classification": "supported",
+   "evidence": "NHS: swollen neck glands",
+   "url": "https://www.nhs.uk/conditions/tonsillitis/",
+   "action": "kept"
+  },
+  {
+   "id": "c37",
+   "classification": "unsupported",
+   "evidence": "'worse over 2-3 days then settle' not found",
+   "url": "https://www.nhs.uk/conditions/tonsillitis/",
+   "action": "removed"
+  },
+  {
+   "id": "c38",
+   "classification": "supported",
+   "evidence": "NHS 3-4 days",
+   "url": "https://www.nhs.uk/conditions/tonsillitis/",
+   "action": "kept"
+  },
+  {
+   "id": "c39",
+   "classification": "supported",
+   "evidence": "NHS source: better within a week; attribution made generic",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/ears-nose-and-throat/tonsillitis/",
+   "action": "edited",
+   "newSentence": "see final.json (sec0)"
+  },
+  {
+   "id": "c40",
+   "classification": "unsupported",
+   "evidence": "No retrieved support",
+   "url": "https://www.nhs.uk/conditions/tonsillitis/",
+   "action": "removed"
+  },
+  {
+   "id": "c41",
+   "classification": "unsupported",
+   "evidence": "NICE terminology not retrieved",
+   "url": "https://www.nice.org.uk/guidance/ng84/chapter/recommendations",
+   "action": "removed"
+  },
+  {
+   "id": "c42",
+   "classification": "supported",
+   "evidence": "NHS",
+   "url": "https://www.nhs.uk/conditions/tonsillitis/",
+   "action": "edited",
+   "newSentence": "see final.json (sec1)"
+  },
+  {
+   "id": "c43",
+   "classification": "unsupported",
+   "evidence": "'usual bacterial cause' not retrieved",
+   "url": "https://www.nhs.uk/conditions/tonsillitis/",
+   "action": "edited",
+   "newSentence": "see final.json (sec1)"
+  },
+  {
+   "id": "c44",
+   "classification": "supported",
+   "evidence": "NHS: tonsillitis itself not contagious",
+   "url": "https://www.nhs.uk/conditions/tonsillitis/",
+   "action": "edited",
+   "newSentence": "see final.json (sec1)"
+  },
+  {
+   "id": "c45",
+   "classification": "unsupported",
+   "evidence": "Inference not in sources",
+   "url": "https://www.nhs.uk/conditions/tonsillitis/",
+   "action": "removed"
+  },
+  {
+   "id": "c46",
+   "classification": "supported",
+   "evidence": "Common in children, teenagers, young adults",
+   "url": "https://www.nhs.uk/conditions/tonsillitis/",
+   "action": "kept"
+  },
+  {
+   "id": "c47",
+   "classification": "supported",
+   "evidence": "Follows from viral clears alone / bacterial antibiotics",
+   "url": "https://www.nhs.uk/conditions/tonsillitis/",
+   "action": "kept"
+  },
+  {
+   "id": "c48",
+   "classification": "supported",
+   "evidence": "NHS",
+   "url": "https://www.nhs.uk/conditions/tonsillitis/",
+   "action": "edited",
+   "newSentence": "see final.json (sec1)"
+  },
+  {
+   "id": "c49",
+   "classification": "unsupported",
+   "evidence": "Streptococcal-infection benefit not retrieved (only higher scores)",
+   "url": "https://www.nice.org.uk/guidance/ng84/chapter/recommendations",
+   "action": "removed"
+  },
+  {
+   "id": "c50",
+   "classification": "textbook",
+   "evidence": "Plain clinical fact",
+   "url": "https://www.nhs.uk/conditions/tonsillitis/",
+   "action": "kept"
+  },
+  {
+   "id": "c51",
+   "classification": "supported",
+   "evidence": "Swab",
+   "url": "https://www.nhs.uk/conditions/tonsillitis/",
+   "action": "edited",
+   "newSentence": "see final.json (sec2)"
+  },
+  {
+   "id": "c52",
+   "classification": "supported",
+   "evidence": "Glandular fever blood test",
+   "url": "https://www.nhs.uk/conditions/tonsillitis/",
+   "action": "edited",
+   "newSentence": "see final.json (sec2)"
+  },
+  {
+   "id": "c53",
+   "classification": "supported",
+   "evidence": "NG84 scoring tools",
+   "url": "https://www.nice.org.uk/guidance/ng84/chapter/recommendations",
+   "action": "edited",
+   "newSentence": "see final.json (sec2)"
+  },
+  {
+   "id": "c54",
+   "classification": "supported",
+   "evidence": "NG84: low scores self-care; higher consider immediate or back-up; back-up explained",
+   "url": "https://www.nice.org.uk/guidance/ng84/chapter/recommendations",
+   "action": "edited",
+   "newSentence": "see final.json (sec2)"
+  },
+  {
+   "id": "c55",
+   "classification": "unsupported",
+   "evidence": "'usual few days' vague; NICE says after 1 week, NHS inform 4 days",
+   "url": "https://www.nice.org.uk/guidance/ng84/chapter/recommendations",
+   "action": "edited",
+   "newSentence": "see final.json (sec2)"
+  },
+  {
+   "id": "c56",
+   "classification": "supported",
+   "evidence": "NHS: difficulty breathing 999/A&E",
+   "url": "https://www.nhs.uk/conditions/tonsillitis/",
+   "action": "kept"
+  },
+  {
+   "id": "c57",
+   "classification": "supported",
+   "evidence": "NHS",
+   "url": "https://www.nhs.uk/conditions/tonsillitis/",
+   "action": "kept"
+  },
+  {
+   "id": "c58",
+   "classification": "supported",
+   "evidence": "NHS (plenty of rest and fluids reworded to rest, cool drinks)",
+   "url": "https://www.nhs.uk/conditions/tonsillitis/",
+   "action": "edited",
+   "newSentence": "see final.json (sec3)"
+  },
+  {
+   "id": "c59",
+   "classification": "supported",
+   "evidence": "NG84: consider paracetamol, or ibuprofen if preferred and suitable",
+   "url": "https://www.nice.org.uk/guidance/ng84/chapter/recommendations",
+   "action": "edited",
+   "newSentence": "see final.json (sec3)"
+  },
+  {
+   "id": "c60",
+   "classification": "supported",
+   "evidence": "NHS aspirin; lozenges",
+   "url": "https://www.nhs.uk/conditions/tonsillitis/",
+   "action": "edited",
+   "newSentence": "see final.json (sec3)"
+  },
+  {
+   "id": "c61",
+   "classification": "unsupported",
+   "evidence": "Not stated",
+   "url": "https://www.nice.org.uk/guidance/ng84/chapter/recommendations",
+   "action": "removed"
+  },
+  {
+   "id": "c62",
+   "classification": "supported",
+   "evidence": "NHS",
+   "url": "https://www.nhs.uk/conditions/tonsillitis/",
+   "action": "edited",
+   "newSentence": "see final.json (sec3)"
+  },
+  {
+   "id": "c63",
+   "classification": "unsupported",
+   "evidence": "Not retrieved",
+   "url": "https://www.nice.org.uk/guidance/ng84/chapter/recommendations",
+   "action": "removed"
+  },
+  {
+   "id": "c64",
+   "classification": "supported",
+   "evidence": "NG84 evidence summary: small benefit; withholding unlikely to cause complications",
+   "url": "https://www.nice.org.uk/guidance/ng84/chapter/recommendations",
+   "action": "edited",
+   "newSentence": "see final.json (sec3)"
+  },
+  {
+   "id": "c65",
+   "classification": "wrong",
+   "evidence": "NICE term is back-up prescription; 'high risk of serious illness' should be systemically very unwell / more serious illness / high risk of complications: offer immediate",
+   "url": "https://www.nice.org.uk/guidance/ng84/chapter/recommendations",
+   "action": "edited",
+   "newSentence": "see final.json (sec3)"
+  },
+  {
+   "id": "c66",
+   "classification": "supported",
+   "evidence": "NHS IV antibiotics",
+   "url": "https://www.nhs.uk/conditions/tonsillitis/",
+   "action": "edited",
+   "newSentence": "see final.json (sec3)"
+  },
+  {
+   "id": "c67",
+   "classification": "unsupported",
+   "evidence": "Not stated",
+   "url": "https://www.nhs.uk/conditions/tonsillitis/",
+   "action": "edited",
+   "newSentence": "see final.json (sec4)"
+  },
+  {
+   "id": "c68",
+   "classification": "supported",
+   "evidence": "Quinsy definition",
+   "url": "https://www.nidirect.gov.uk/conditions/quinsy",
+   "action": "kept"
+  },
+  {
+   "id": "c69",
+   "classification": "supported",
+   "evidence": "NHS rare, potentially serious",
+   "url": "https://www.nidirect.gov.uk/conditions/quinsy",
+   "action": "kept"
+  },
+  {
+   "id": "c70",
+   "classification": "supported",
+   "evidence": "NHS quinsy signs (adds difficulty opening mouth)",
+   "url": "https://www.nhs.uk/conditions/tonsillitis/",
+   "action": "edited",
+   "newSentence": "see final.json (sec4)"
+  },
+  {
+   "id": "c71",
+   "classification": "unsafe",
+   "evidence": "999/A&E supported; 'not driving' not retrieved",
+   "url": "https://www.nhs.uk/conditions/tonsillitis/",
+   "action": "edited",
+   "newSentence": "see final.json (sec4)"
+  },
+  {
+   "id": "c72",
+   "classification": "unsupported",
+   "evidence": "NHS inform GP review claim not retrieved",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/ears-nose-and-throat/tonsillitis/",
+   "action": "removed"
+  },
+  {
+   "id": "c73",
+   "classification": "supported",
+   "evidence": "Follows strep throat; rare in developed countries (MedlinePlus, US)",
+   "url": "https://medlineplus.gov/ency/article/003940.htm",
+   "action": "edited",
+   "newSentence": "see final.json (sec4)"
+  },
+  {
+   "id": "c74",
+   "classification": "unsupported",
+   "evidence": "Not retrieved",
+   "url": "https://www.nice.org.uk/guidance/ng84/chapter/recommendations",
+   "action": "removed"
+  },
+  {
+   "id": "c75",
+   "classification": "supported",
+   "evidence": "Tonsillectomy definition",
+   "url": "https://www.nhs.uk/conditions/tonsillitis/",
+   "action": "kept"
+  },
+  {
+   "id": "c76",
+   "classification": "supported",
+   "evidence": "NHS: very rare; usually severe recurrent",
+   "url": "https://www.nhs.uk/conditions/tonsillitis/",
+   "action": "edited",
+   "newSentence": "see final.json (sec5)"
+  },
+  {
+   "id": "c77",
+   "classification": "unsupported",
+   "evidence": "NHS inform wording not retrieved",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/ears-nose-and-throat/tonsillitis/",
+   "action": "removed"
+  },
+  {
+   "id": "c78",
+   "classification": "supported",
+   "evidence": "Trust leaflets: general anaesthetic, through mouth, no incision",
+   "url": "https://www.pah.nhs.uk/resources/after-a-tonsillectomy-or-adenoidectomy/",
+   "action": "edited",
+   "newSentence": "see final.json (sec5)"
+  },
+  {
+   "id": "c79",
+   "classification": "supported",
+   "evidence": "Leaflets: sore throat about 2 weeks (some 3); bleeding up to 2 weeks; A&E for fresh bleeding, 999 if heavy",
+   "url": "https://www.pah.nhs.uk/resources/after-a-tonsillectomy-or-adenoidectomy/",
+   "action": "edited",
+   "newSentence": "see final.json (sec5)"
+  },
+  {
+   "id": "c80",
+   "classification": "unsupported",
+   "evidence": "GP review against local criteria not retrieved; SIGN guidance advises watchful waiting",
+   "url": "https://www.rightdecisions.scot.nhs.uk/media/3yzlt3jv/referral-guidelines-for-tonsillectomy.pdf",
+   "action": "edited",
+   "newSentence": "see final.json (sec5)"
+  },
+  {
+   "id": "c81",
+   "classification": "supported",
+   "evidence": "NHS",
+   "url": "https://www.nhs.uk/conditions/tonsillitis/",
+   "action": "edited",
+   "newSentence": "see final.json (faq0)"
+  },
+  {
+   "id": "c82",
+   "classification": "unsupported",
+   "evidence": "Hygiene advice is from NHS common cold page",
+   "url": "https://www.nhs.uk/conditions/common-cold/",
+   "action": "edited",
+   "newSentence": "see final.json (faq0)"
+  },
+  {
+   "id": "c83",
+   "classification": "unsupported",
+   "evidence": "Not found",
+   "url": "https://www.nhs.uk/conditions/tonsillitis/",
+   "action": "removed"
+  },
+  {
+   "id": "c84",
+   "classification": "supported",
+   "evidence": "NHS",
+   "url": "https://www.nhs.uk/conditions/tonsillitis/",
+   "action": "kept"
+  },
+  {
+   "id": "c85",
+   "classification": "supported",
+   "evidence": "NG84",
+   "url": "https://www.nice.org.uk/guidance/ng84/chapter/recommendations",
+   "action": "kept"
+  },
+  {
+   "id": "c86",
+   "classification": "supported",
+   "evidence": "NHS",
+   "url": "https://www.nhs.uk/conditions/tonsillitis/",
+   "action": "kept"
+  },
+  {
+   "id": "c87",
+   "classification": "supported",
+   "evidence": "NHS",
+   "url": "https://www.nhs.uk/conditions/tonsillitis/",
+   "action": "kept"
+  },
+  {
+   "id": "c88",
+   "classification": "supported",
+   "evidence": "NG84; reworded",
+   "url": "https://www.nice.org.uk/guidance/ng84/chapter/recommendations",
+   "action": "edited",
+   "newSentence": "see final.json (faq2)"
+  },
+  {
+   "id": "c89",
+   "classification": "supported",
+   "evidence": "NHS quinsy signs",
+   "url": "https://www.nhs.uk/conditions/tonsillitis/",
+   "action": "edited",
+   "newSentence": "see final.json (faq3)"
+  },
+  {
+   "id": "c90",
+   "classification": "unsafe",
+   "evidence": "999/A&E supported; driving not retrieved; NHS 111 route added",
+   "url": "https://www.nhs.uk/conditions/tonsillitis/",
+   "action": "edited",
+   "newSentence": "see final.json (faq3)"
+  },
+  {
+   "id": "c91",
+   "classification": "supported",
+   "evidence": "GP within a week",
+   "url": "https://www.nhs.uk/conditions/tonsillitis/",
+   "action": "edited",
+   "newSentence": "see final.json (faq3)"
+  },
+  {
+   "id": "c92",
+   "classification": "supported",
+   "evidence": "NHS",
+   "url": "https://www.nhs.uk/conditions/tonsillitis/",
+   "action": "edited",
+   "newSentence": "see final.json (faq4)"
+  },
+  {
+   "id": "c93",
+   "classification": "unsupported",
+   "evidence": "Not retrieved",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/ears-nose-and-throat/tonsillitis/",
+   "action": "removed"
+  },
+  {
+   "id": "c94",
+   "classification": "unsupported",
+   "evidence": "Local criteria vary supported; GP review not",
+   "url": "https://www.rightdecisions.scot.nhs.uk/media/3yzlt3jv/referral-guidelines-for-tonsillectomy.pdf",
+   "action": "edited",
+   "newSentence": "see final.json (faq4)"
+  },
+  {
+   "id": "c95",
+   "classification": "supported",
+   "evidence": "NHS",
+   "url": "https://www.nhs.uk/conditions/tonsillitis/",
+   "action": "kept"
+  },
+  {
+   "id": "c96",
+   "classification": "supported",
+   "evidence": "NHS",
+   "url": "https://www.nhs.uk/conditions/tonsillitis/",
+   "action": "edited",
+   "newSentence": "see final.json (kf)"
+  },
+  {
+   "id": "c97",
+   "classification": "supported",
+   "evidence": "NHS",
+   "url": "https://www.nhs.uk/conditions/tonsillitis/",
+   "action": "edited",
+   "newSentence": "see final.json (kf)"
+  },
+  {
+   "id": "c98",
+   "classification": "textbook",
+   "evidence": "History and examination; swab supported",
+   "url": "https://www.nhs.uk/conditions/tonsillitis/",
+   "action": "edited",
+   "newSentence": "see final.json (kf)"
+  },
+  {
+   "id": "c99",
+   "classification": "supported",
+   "evidence": "NHS/NICE",
+   "url": "https://www.nhs.uk/conditions/tonsillitis/",
+   "action": "edited",
+   "newSentence": "see final.json (kf)"
+  },
+  {
+   "id": "c100",
+   "classification": "supported",
+   "evidence": "NHS 999 list",
+   "url": "https://www.nhs.uk/conditions/tonsillitis/",
+   "action": "edited",
+   "newSentence": "see final.json (kf)"
+  },
+  {
+   "id": "c101",
+   "classification": "supported",
+   "evidence": "NHS",
+   "url": "https://www.nhs.uk/conditions/tonsillitis/",
+   "action": "edited",
+   "newSentence": "see final.json (kf)"
+  }
+ ],
+ "notes": "Added to final: NHS 111 route for pus-filled spots/painful eating, difficulty opening mouth, NHS inform 4-day advice, SIGN watchful waiting, rheumatic fever/NHS cold refs. 'Do not drive' removed (NHS tonsillitis page did not return it). Tonsillectomy details come from trust leaflets (nhs.uk tonsil removal page not returned); leaflets vary 2 vs 3 weeks. Key doubts: group A strep as stated cause; 'tonsillitis itself not contagious' from summaries only; NG84 'offer immediate' wording from visual summary. Article block ~1262 words, slightly over."
+}

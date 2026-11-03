@@ -1,0 +1,342 @@
+{
+ "id": "mri-scan-what-to-expect",
+ "searchesUsed": 6,
+ "counts": {
+  "supported": 19,
+  "textbook": 1,
+  "unsupported": 19,
+  "wrong": 0,
+  "unsafe": 0,
+  "unchecked": 0
+ },
+ "claims": [
+  {
+   "id": "c01",
+   "sentence": "Magnetic resonance imaging, or MRI, uses strong magnetic fields and radio waves to take very detailed pictures from almost every angle.",
+   "classification": "unsupported",
+   "evidence": "Retrieved text says a strong magnet lines up protons and radio wave bursts make them emit signals the scanner measures to build images; 'very detailed ... from almost every angle' not found.",
+   "url": "https://www.nhs.uk/conditions/mri-scan/",
+   "action": "edited",
+   "newSentence": "MRI uses a strong magnet and radio waves to build images of the inside of the body."
+  },
+  {
+   "id": "c02",
+   "sentence": "It does not use X-rays or other ionising radiation.",
+   "classification": "supported",
+   "evidence": "Retrieved: 'Unlike CT or X-ray, no ionizing radiation is used in MRI' (US wording); NHS Inform says it does not use X-rays and is not linked to increased cancer risk.",
+   "url": "https://www.nhsinform.scot/tests-and-treatments/scans-and-x-rays/mri-scan",
+   "action": "kept"
+  },
+  {
+   "id": "c03",
+   "sentence": "Coils placed around the part of the body being studied help to send and receive the radio waves and improve the quality of the pictures.",
+   "classification": "unsupported",
+   "evidence": "No retrieved text mentions coils.",
+   "url": "https://www.nhs.uk/conditions/mri-scan/",
+   "action": "removed"
+  },
+  {
+   "id": "c04",
+   "sentence": "The person operating the scanner watches from another room.",
+   "classification": "supported",
+   "evidence": "NHS: the radiographer controls the scanner from another room and can hear and speak to you.",
+   "url": "https://www.nhs.uk/conditions/mri-scan/what-happens/",
+   "action": "kept"
+  },
+  {
+   "id": "c05",
+   "sentence": "Scan length depends on the area examined, and NHS trust leaflets quote different times, from about 10 minutes to about 90 minutes.",
+   "classification": "supported",
+   "evidence": "Retrieved NHS wording: 15 to 90 minutes depending on area and number of images; Gloucestershire leaflet gives image capture of about 10 to 45 minutes.",
+   "url": "https://www.gloshospitals.nhs.uk/your-visit/patient-information-leaflets/adults-having-mri-scan-ghpi0318/",
+   "action": "kept"
+  },
+  {
+   "id": "c06",
+   "sentence": "One trust says the total time in the department is likely to be about an hour.",
+   "classification": "supported",
+   "evidence": "Gloucestershire leaflet: total time in the department likely to be about 60 minutes.",
+   "url": "https://www.gloshospitals.nhs.uk/your-visit/patient-information-leaflets/adults-having-mri-scan-ghpi0318/",
+   "action": "kept"
+  },
+  {
+   "id": "c07",
+   "sentence": "Staff settle the person on a couch that slides into the scanner.",
+   "classification": "supported",
+   "evidence": "NHS: lie on a flat motorised bed that moves inside the scanner.",
+   "url": "https://www.nhs.uk/conditions/mri-scan/what-happens/",
+   "action": "kept"
+  },
+  {
+   "id": "c08",
+   "sentence": "An intercom lets the person talk to the radiographer, and a call button is provided.",
+   "classification": "unsupported",
+   "evidence": "Intercom and monitor are supported (radiographer can see and speak to you); a call button was not found in retrieved text.",
+   "url": "https://www.nhs.uk/conditions/mri-scan/what-happens/",
+   "action": "edited",
+   "newSentence": "An intercom lets the person talk to the radiographer during the scan."
+  },
+  {
+   "id": "c09",
+   "sentence": "The person is asked to keep still, because movement can blur the pictures.",
+   "classification": "supported",
+   "evidence": "Trust leaflet: keep as still as possible to avoid blurry images.",
+   "url": "https://www.gloshospitals.nhs.uk/your-visit/patient-information-leaflets/adults-having-mri-scan-ghpi0318/",
+   "action": "kept"
+  },
+  {
+   "id": "c10",
+   "sentence": "Some scans include an injection of contrast, a dye that helps to produce a more detailed picture and improves the accuracy of the scan.",
+   "classification": "supported",
+   "evidence": "Gloucestershire leaflet: contrast medium injected via a cannula helps produce a more detailed image and improves accuracy.",
+   "url": "https://www.gloshospitals.nhs.uk/your-visit/patient-information-leaflets/adults-having-mri-scan-ghpi0318/",
+   "action": "kept"
+  },
+  {
+   "id": "c11",
+   "sentence": "MedlinePlus says contrast is usually given through a vein, and that the most common agent contains gadolinium.",
+   "classification": "unsupported",
+   "evidence": "MedlinePlus text was not retrieved. Only trial consent forms mention gadolinium given by vein, not a reputable source; NHS trust leaflets say contrast is injected into a vein via a cannula.",
+   "url": "https://www.gloshospitals.nhs.uk/your-visit/patient-information-leaflets/adults-having-mri-scan-ghpi0318/",
+   "action": "edited",
+   "newSentence": "Some scans use contrast dye, which NHS trust leaflets say is injected into a vein through a small tube called a cannula."
+  },
+  {
+   "id": "c12",
+   "sentence": "It adds that allergic reactions to this substance rarely occur.",
+   "classification": "unsupported",
+   "evidence": "MedlinePlus text not retrieved. NHS Inform says complications are rare but some people get side effects or an allergic reaction to the contrast dye.",
+   "url": "https://www.nhsinform.scot/tests-and-treatments/scans-and-x-rays/mri-scan",
+   "action": "edited",
+   "newSentence": "NHS Inform says complications are rare, but some people have side effects or an allergic reaction to the contrast dye."
+  },
+  {
+   "id": "c13",
+   "sentence": "MedlinePlus also says gadolinium can be harmful for people with kidney problems who need dialysis, so kidney health is a standard question before a contrast scan.",
+   "classification": "unsupported",
+   "evidence": "Kidney/dialysis statement came only from trial consent forms, not a reputable patient source; not retrieved from MedlinePlus.",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c14",
+   "sentence": "The scanner makes loud beeping or hammering noises, so earplugs or headphones are provided and some departments play music.",
+   "classification": "supported",
+   "evidence": "NHS: the scanner is loud and ear protection is provided; music may be played or radio allowed.",
+   "url": "https://www.nhs.uk/conditions/mri-scan/",
+   "action": "kept"
+  },
+  {
+   "id": "c15",
+   "sentence": "MedlinePlus notes that some people feel claustrophobic, which means anxious in enclosed spaces.",
+   "classification": "unsupported",
+   "evidence": "MedlinePlus not retrieved. NHS says MRI is painless and safe but noisy and may create a feeling of claustrophobia.",
+   "url": "https://www.nhs.uk/conditions/mri-scan/",
+   "action": "edited",
+   "newSentence": "The NHS says an MRI scan is noisy and may create a feeling of claustrophobia, which means feeling anxious in enclosed spaces."
+  },
+  {
+   "id": "c16",
+   "sentence": "Trust leaflets say some people find the scan difficult for this reason.",
+   "classification": "unsupported",
+   "evidence": "No retrieved leaflet text states that people find the scan difficult; claim is redundant with the NHS claustrophobia wording.",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c17",
+   "sentence": "They list options such as visiting the department beforehand, using a wider scanner, techniques that staff can use during the scan, or a mild sedative prescribed by a GP.",
+   "classification": "unsupported",
+   "evidence": "Wide-bore benefit found in studies (PubMed), not leaflets; sedative via GP and pre-visit not found in retrieved text.",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/21598040/",
+   "action": "edited",
+   "newSentence": "A study found that a wide-bore scanner increased the success rate of MRI in people with claustrophobia."
+  },
+  {
+   "id": "c18",
+   "sentence": "A person who has a sedative needs someone to take them home afterwards.",
+   "classification": "supported",
+   "evidence": "Trust leaflet: after a sedative a friend or relative will need to take you home and stay with you; not safe to drive for 24 hours.",
+   "url": "https://www.nhs.uk/conditions/mri-scan/",
+   "action": "kept"
+  },
+  {
+   "id": "c19",
+   "sentence": "Before the scan each person completes a safety questionnaire.",
+   "classification": "supported",
+   "evidence": "Retrieved: patients complete an MRI safety questionnaire; screening questionnaires are standard.",
+   "url": "https://www.nhs.uk/conditions/mri-scan/",
+   "action": "kept"
+  },
+  {
+   "id": "c20",
+   "sentence": "York Hospitals says there are no known risks from an MRI scan when a person meets the safety standards.",
+   "classification": "unsupported",
+   "evidence": "'No known risks' not found; NHS describes MRI as painless and safe although noisy. 'No known risks' is an absolute safety claim.",
+   "url": "https://www.nhs.uk/conditions/mri-scan/",
+   "action": "edited",
+   "newSentence": "The NHS describes MRI as painless and safe, although it is noisy."
+  },
+  {
+   "id": "c21",
+   "sentence": "The magnet can make pacemakers, artificial limbs and other implanted devices that contain metal malfunction or heat up, according to MedlinePlus.",
+   "classification": "unsupported",
+   "evidence": "NHS: strong magnet can pull strongly on some metals; people with a metal implant such as a pacemaker or artificial joint may not be able to have an MRI. MedlinePlus attribution and 'heat up' not retrieved.",
+   "url": "https://www.nhs.uk/conditions/mri-scan/",
+   "action": "edited",
+   "newSentence": "The NHS says the MRI magnet is strong, so people with a metal implant such as a pacemaker or artificial joint may not be able to have a scan."
+  },
+  {
+   "id": "c22",
+   "sentence": "Loose metal objects can be pulled toward the magnet and cause injury.",
+   "classification": "unsupported",
+   "evidence": "Only paraphrased wording 'strong magnet can pull strongly on some metals' retrieved; MedlinePlus not retrieved.",
+   "url": "https://www.nhs.uk/conditions/mri-scan/",
+   "action": "edited",
+   "newSentence": "The magnet is strong enough to pull strongly on some metals."
+  },
+  {
+   "id": "c23",
+   "sentence": "For that reason removable metal, such as jewellery and watches, comes off before the scan.",
+   "classification": "unsupported",
+   "evidence": "Retrieved: patients asked to remove magnetic objects and change into a gown (trust leaflet); jewellery and watches not named in a reputable source.",
+   "url": "",
+   "action": "edited",
+   "newSentence": "NHS trust leaflets say patients are asked to remove magnetic objects and may change into a gown before the scan."
+  },
+  {
+   "id": "c24",
+   "sentence": "Some implants, such as certain brain aneurysm clips or programmable shunts, may mean a scan cannot be done.",
+   "classification": "unsupported",
+   "evidence": "Scottish NHS MRI physics pages: MR Conditional clips can be scanned only if conditions are met; programmable shunt valves are MR Conditional and may need resetting. 'Cannot be done' not stated generally.",
+   "url": "https://www.mriphysics.scot.nhs.uk/implant-safety-policies/aneurysm-clips/",
+   "action": "edited",
+   "newSentence": "NHS safety policies say some implants, such as aneurysm clips and programmable shunt valves, can be scanned only if specific conditions are met."
+  },
+  {
+   "id": "c25",
+   "sentence": "Implants made of non-magnetic material are usually labelled MR safe or MR conditional, and some pacemakers can be scanned under strict conditions, according to a safety review.",
+   "classification": "unsupported",
+   "evidence": "Retrieved: MR conditional pacemaker systems are available and scanning is allowed only under precautions; 'non-magnetic ... usually labelled MR safe' not retrieved.",
+   "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4026122/",
+   "action": "edited",
+   "newSentence": "Some implants, including some pacemakers, are labelled MR conditional, which means they can be scanned only under set conditions."
+  },
+  {
+   "id": "c26",
+   "sentence": "Trust leaflets ask people to tell the imaging staff about any implants.",
+   "classification": "supported",
+   "evidence": "NHS: important for the radiographer carrying out the scan to be aware of any metal in the body.",
+   "url": "https://www.nhs.uk/conditions/mri-scan/",
+   "action": "kept"
+  },
+  {
+   "id": "c27",
+   "sentence": "MedlinePlus says tattoo dyes can irritate the skin or eyes, and medication patches can cause a skin burn.",
+   "classification": "unsupported",
+   "evidence": "Tattoo dye and patch burns came only from trial consent forms, not a reputable patient source.",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c28",
+   "sentence": "Usually no preparation is needed, and people can typically eat and drink as normal.",
+   "classification": "unsupported",
+   "evidence": "Retrieved: most MRI scans need no special preparation (NHS trust info). 'Eat and drink as normal' only found for prostate MRI.",
+   "url": "https://www.royalmarsden.nhs.uk/your-care/diagnosis/mri-scans",
+   "action": "edited",
+   "newSentence": "Most MRI scans need no special preparation, according to NHS trust information."
+  },
+  {
+   "id": "c29",
+   "sentence": "Some scans of the abdomen or pelvis may need fasting for a few hours, and bowel-relaxing medicine is sometimes given.",
+   "classification": "supported",
+   "evidence": "Retrieved: fasting for some pelvis, gall bladder or small bowel scans (4 to 6 hours in trust leaflets); Buscopan bowel-relaxing injection used for abdominal and pelvic scans.",
+   "url": "https://www.uclh.nhs.uk/patients-and-visitors/patient-information-pages/having-mri-your-small-bowel",
+   "action": "kept"
+  },
+  {
+   "id": "c30",
+   "sentence": "Results are not usually given on the day of the scan.",
+   "classification": "supported",
+   "evidence": "Retrieved: NHS 1 to 2 weeks; results usually discussed at a follow-up appointment.",
+   "url": "https://www.nhs.uk/conditions/mri-scan/",
+   "action": "kept"
+  },
+  {
+   "id": "c31",
+   "sentence": "A radiologist, a doctor who specialises in reading scans, studies the images and writes a report for the doctor who requested the scan.",
+   "classification": "supported",
+   "evidence": "Radiologist reads the images; report goes to the doctor who ordered the scan.",
+   "url": "https://www.nhs.uk/conditions/mri-scan/",
+   "action": "kept"
+  },
+  {
+   "id": "c32",
+   "sentence": "That doctor then discusses the findings with the person.",
+   "classification": "supported",
+   "evidence": "Report goes to the referring doctor; results discussed at follow-up appointment.",
+   "url": "https://www.nhs.uk/conditions/mri-scan/",
+   "action": "kept"
+  },
+  {
+   "id": "c33",
+   "sentence": "The main extra risks come from the injection, as a small chance of a reaction to the contrast, and rare discomfort or tissue damage if the cannula, the small tube in the vein, leaks.",
+   "classification": "unsupported",
+   "evidence": "Retrieved: complications rare; side effects or allergic reaction to the dye possible. Cannula leak not found.",
+   "url": "https://www.nhs.uk/conditions/mri-scan/",
+   "action": "edited",
+   "newSentence": "The NHS says complications from an MRI scan are rare, but some people get side effects or an allergic reaction to the contrast dye."
+  },
+  {
+   "id": "c34",
+   "sentence": "Trouble breathing or swelling of the face after an injection would need a 999 call.",
+   "classification": "unsupported",
+   "evidence": "999 instruction not found. Retrieved: reactions mostly happen soon after the dye, so people are often asked to wait about 30 minutes (trust leaflet).",
+   "url": "https://www.nhs.uk/conditions/mri-scan/",
+   "action": "edited",
+   "newSentence": "Reactions to contrast dye usually happen soon after the injection, so some trusts ask people to stay for about 30 minutes afterwards."
+  },
+  {
+   "id": "c35",
+   "sentence": "MRI uses strong magnetic fields and radio waves to take detailed pictures, and it does not use X-rays.",
+   "classification": "supported",
+   "evidence": "As claims 1, 2: magnet and radio waves, no X-rays; 'detailed' acceptable (contrast gives more detailed pictures).",
+   "url": "https://www.nhs.uk/conditions/mri-scan/",
+   "action": "kept"
+  },
+  {
+   "id": "c36",
+   "sentence": "The scanner is loud, so earplugs or headphones are provided, and staff can talk to the person through an intercom.",
+   "classification": "supported",
+   "evidence": "Ear protection provided and intercom contact retrieved (NHS).",
+   "url": "https://www.nhs.uk/conditions/mri-scan/",
+   "action": "kept"
+  },
+  {
+   "id": "c37",
+   "sentence": "A safety questionnaire is completed first because some implanted devices can stop a scan from going ahead.",
+   "classification": "supported",
+   "evidence": "Safety questionnaire standard; NHS says people with metal implants such as pacemakers may not be able to have MRI.",
+   "url": "https://www.nhs.uk/conditions/mri-scan/",
+   "action": "kept"
+  },
+  {
+   "id": "c38",
+   "sentence": "Results are not usually given on the day: a radiologist reports the images to the doctor who requested the scan.",
+   "classification": "supported",
+   "evidence": "Radiologist reads images; report goes to the requesting doctor; results not given on the day (1 to 2 weeks).",
+   "url": "https://www.nhs.uk/conditions/mri-scan/",
+   "action": "kept"
+  },
+  {
+   "id": "c39",
+   "sentence": "An MRI scan uses a strong magnet and radio waves, not X-rays, to take detailed pictures. This guide covers noise, safety checks, contrast and results.",
+   "classification": "textbook",
+   "evidence": "Sentence 1 supported (magnet, radio waves, no X-rays); sentence 2 is a description of the guide's contents.",
+   "url": "",
+   "action": "kept"
+  }
+ ],
+ "notes": "Extra facts: (1) NHS says a radiographer controls the scanner from another room and can hear and speak to the person, and can see them on a monitor (https://www.nhs.uk/conditions/mri-scan/what-happens/). (2) A trust leaflet says reactions to contrast mostly happen soon after, so some people wait about 30 minutes (https://www.nhsinform.scot/tests-and-treatments/scans-and-x-rays/mri-scan). (3) NHS Scotland MRI physics pages give implant-specific conditions for clips and shunts (https://www.mriphysics.scot.nhs.uk/implant-safety-policies/aneurysm-clips/). (4) Wide-bore scanners improved success in claustrophobic patients (https://pubmed.ncbi.nlm.nih.gov/21598040/). MedlinePlus MRI page and the York/Barnsley/NBT leaflets were not directly retrieved, so all MedlinePlus-attributed sentences were reworded or removed. Search results arrive as summaries, not verbatim page text."
+}

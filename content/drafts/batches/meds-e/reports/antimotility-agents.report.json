@@ -1,0 +1,78 @@
+{
+ "id": "antimotility-agents",
+ "searchesUsed": 0,
+ "counts": {
+  "textbook": 1,
+  "unsupported": 1,
+  "wrong": 1,
+  "supported": 4,
+  "unsafe": 0,
+  "unchecked": 0
+ },
+ "claims": [
+  {
+   "id": "c01",
+   "where": "summary[0]",
+   "classification": "textbook",
+   "evidence": "Anti-motility description consistent with NHS About; site-scope statement.",
+   "url": "https://www.nhs.uk/medicines/loperamide/about-loperamide/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c02",
+   "where": "summary[1]",
+   "classification": "unsupported",
+   "evidence": "Water absorption from UK SmPC rather than NHS summary.",
+   "url": "https://www.medicines.org.uk/emc/product/10420/smpc",
+   "action": "edited",
+   "newSentence": "Product information for UK loperamide medicines says it slows the bowel and increases absorption of water and electrolytes, so stools firm up."
+  },
+  {
+   "id": "c03",
+   "where": "mechanism",
+   "classification": "wrong",
+   "evidence": "Mu-opioid agonist in FDA label and UK SmPC; not in cited safety communication.",
+   "url": "https://www.medicines.org.uk/emc/product/10420/smpc",
+   "action": "edited",
+   "newSentence": "UK and US product information describes loperamide as an opioid (mu) receptor agonist that acts on the gut wall to reduce propulsive movement of the bowel."
+  },
+  {
+   "id": "c04",
+   "where": "cautions[0]",
+   "classification": "supported",
+   "evidence": "NHS who-can page.",
+   "url": "https://www.nhs.uk/medicines/loperamide/who-can-and-cannot-take-loperamide/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c05",
+   "where": "cautions[1]",
+   "classification": "supported",
+   "evidence": "NHS pregnancy page.",
+   "url": "https://www.nhs.uk/medicines/loperamide/pregnancy-breastfeeding-and-fertility-while-taking-loperamide/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c06",
+   "where": "cautions[2]",
+   "classification": "supported",
+   "evidence": "NHS other-medicines page.",
+   "url": "https://www.nhs.uk/medicines/loperamide/taking-loperamide-with-other-medicines-and-herbal-supplements/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c07",
+   "where": "cautions[3]",
+   "classification": "supported",
+   "evidence": "MedlinePlus boxed warning.",
+   "url": "https://medlineplus.gov/druginfo/meds/a682280.html",
+   "action": "kept",
+   "newSentence": null
+  }
+ ],
+ "notes": "Class page: checked in the same second-pass run as loperamide (searches counted there)."
+}

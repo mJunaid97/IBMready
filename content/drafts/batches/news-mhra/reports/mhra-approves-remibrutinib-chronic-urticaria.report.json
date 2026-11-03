@@ -1,0 +1,106 @@
+{
+ "id": "mhra-approves-remibrutinib-chronic-urticaria",
+ "searchesUsed": 1,
+ "counts": {
+  "supported": 5,
+  "textbook": 0,
+  "unsupported": 6,
+  "wrong": 0,
+  "unsafe": 0,
+  "unchecked": 0
+ },
+ "claims": [
+  {
+   "id": "c01",
+   "classification": "supported",
+   "sentence": "The MHRA has approved remibrutinib (Rhapsido) tablets for adults with chronic spontaneous urticaria whose symptoms antihistamines do not control well enough.",
+   "evidence": "Retrieved: MHRA approved remibrutinib (Rhapsido) 25 mg film-coated tablets for adults with CSU not adequately controlled by antihistamines.",
+   "url": "https://www.gov.uk/government/news/mhra-approves-remibrutinib-for-adults-with-chronic-spontaneous-urticaria",
+   "action": "kept"
+  },
+  {
+   "id": "c02",
+   "classification": "supported",
+   "sentence": "The MHRA approved remibrutinib (Rhapsido) for adults with chronic spontaneous urticaria (CSU).",
+   "evidence": "Retrieved, as above.",
+   "url": "https://www.gov.uk/government/news/mhra-approves-remibrutinib-for-adults-with-chronic-spontaneous-urticaria",
+   "action": "kept"
+  },
+  {
+   "id": "c03",
+   "classification": "supported",
+   "sentence": "It is for people whose symptoms are not adequately controlled by antihistamines.",
+   "evidence": "Retrieved, as above.",
+   "url": "https://www.gov.uk/government/news/mhra-approves-remibrutinib-for-adults-with-chronic-spontaneous-urticaria",
+   "action": "kept"
+  },
+  {
+   "id": "c04",
+   "classification": "unsupported",
+   "sentence": "The approval used the International Recognition Procedure, Route B.",
+   "evidence": "Not in the retrieved text; the 'route' returned was oral tablet.",
+   "url": "https://www.gov.uk/government/news/mhra-approves-remibrutinib-for-adults-with-chronic-spontaneous-urticaria",
+   "action": "removed"
+  },
+  {
+   "id": "c05",
+   "classification": "unsupported",
+   "sentence": "The MHRA cites two main clinical studies with 925 adults, in which remibrutinib reduced itch and hive symptoms more than placebo.",
+   "evidence": "Two main studies, 925 adults retrieved. Reduced itch/hives versus placebo is not in the gov.uk text retrieved (the only efficacy statement was REMIX-1/2 'met all primary endpoints' from a journal article about the FDA, not MHRA).",
+   "url": "https://www.gov.uk/government/news/mhra-approves-remibrutinib-for-adults-with-chronic-spontaneous-urticaria",
+   "action": "edited",
+   "newSentence": "The MHRA cites two main clinical studies involving 925 adults for whom H1 antihistamine treatment did not work well enough."
+  },
+  {
+   "id": "c06",
+   "classification": "supported",
+   "sentence": "The MHRA says it has approved remibrutinib (Rhapsido) tablets for adults with chronic spontaneous urticaria (CSU) whose symptoms are not adequately controlled by antihistamines.",
+   "evidence": "Retrieved.",
+   "url": "https://www.gov.uk/government/news/mhra-approves-remibrutinib-for-adults-with-chronic-spontaneous-urticaria",
+   "action": "kept"
+  },
+  {
+   "id": "c07",
+   "classification": "unsupported",
+   "sentence": "The approval came through the International Recognition Procedure (IRP), Route B.",
+   "evidence": "Not retrieved.",
+   "url": "https://www.gov.uk/government/news/mhra-approves-remibrutinib-for-adults-with-chronic-spontaneous-urticaria",
+   "action": "removed"
+  },
+  {
+   "id": "c08",
+   "classification": "supported",
+   "sentence": "The MHRA says the decision rests on two main clinical studies involving 925 adults who had not responded well enough to H1 antihistamines.",
+   "evidence": "Retrieved: approval follows assessment of two main clinical studies involving 925 adults for whom H1 antihistamine treatment did not work well enough.",
+   "url": "https://www.gov.uk/government/news/mhra-approves-remibrutinib-for-adults-with-chronic-spontaneous-urticaria",
+   "action": "kept"
+  },
+  {
+   "id": "c09",
+   "classification": "unsupported",
+   "sentence": "In these studies, people treated with remibrutinib had significantly greater reductions in itch and hive symptoms than people given placebo.",
+   "evidence": "Not in the MHRA text retrieved.",
+   "url": "https://www.gov.uk/government/news/mhra-approves-remibrutinib-for-adults-with-chronic-spontaneous-urticaria",
+   "action": "removed"
+  },
+  {
+   "id": "c10",
+   "classification": "unsupported",
+   "sentence": "The MHRA says it will keep the safety and effectiveness of remibrutinib under close review.",
+   "evidence": "Not retrieved for remibrutinib (the retrieval mentioned only the SmPC/PIL on the MHRA website).",
+   "url": "https://www.gov.uk/government/news/mhra-approves-remibrutinib-for-adults-with-chronic-spontaneous-urticaria",
+   "action": "removed"
+  },
+  {
+   "id": "c11",
+   "classification": "unsupported",
+   "sentence": "The site's hives page explains the condition.",
+   "evidence": "Site-navigation pointer to another page on this site, not a claim from the MHRA page; the retrieved gov.uk text does not mention it. ",
+   "url": "https://www.gov.uk/government/news/mhra-approves-remibrutinib-for-adults-with-chronic-spontaneous-urticaria",
+   "action": "removed"
+  }
+ ],
+ "dateConfirmed": "2026-08-06",
+ "dateEvidence": "Search result says 'the MHRA published the announcement on 6 August 2026' (gov.uk page above). The licence/authorisation date (5 Aug per first pass) was not returned.",
+ "notes": "Only one search needed. After removals the brief is thin (approval, indication, two studies, 925 adults) but accurate; a re-retrieval for IRP route and efficacy wording could restore c04/c07/c09 if the exact MHRA text is found. No instructions, 'safe' claims or doses."
+}

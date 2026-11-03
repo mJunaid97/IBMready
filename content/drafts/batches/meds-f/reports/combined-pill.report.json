@@ -1,0 +1,718 @@
+{
+ "id": "combined-pill",
+ "searchesUsed": 14,
+ "counts": {
+  "supported": 79,
+  "textbook": 1,
+  "unsupported": 14,
+  "wrong": 0,
+  "unsafe": 0,
+  "unchecked": 0
+ },
+ "claims": [
+  {
+   "id": "c01",
+   "classification": "supported",
+   "evidence": "NHS combined pill pages: contains oestrogen and progestogen",
+   "url": "https://www.nhs.uk/conditions/contraception/combined-contraceptive-pill/",
+   "action": "kept"
+  },
+  {
+   "id": "c02",
+   "classification": "supported",
+   "evidence": "Stops ovaries releasing an egg each month (NHS trust pages/NHS)",
+   "url": "https://www.nhs.uk/conditions/contraception/combined-contraceptive-pill/",
+   "action": "kept"
+  },
+  {
+   "id": "c03",
+   "classification": "supported",
+   "evidence": "NHS side-effects page: risk of clot 'very small' (first pass said 'small')",
+   "url": "https://www.nhs.uk/contraception/methods-of-contraception/combined-pill/side-effects/",
+   "action": "edited",
+   "newSentence": "It carries a very small risk of blood clots; sudden breathlessness or chest pain needs a 999 call or A&E."
+  },
+  {
+   "id": "c04",
+   "classification": "supported",
+   "evidence": "NHS PE page: 999/A&E for sudden difficulty breathing, chest or upper back pain, very fast heartbeat, fainting",
+   "url": "https://www.nhs.uk/conditions/pulmonary-embolism/",
+   "action": "edited",
+   "newSentence": "...sudden breathlessness or chest pain needs a 999 call or A&E (kept, softened by 'very small')."
+  },
+  {
+   "id": "c05",
+   "classification": "supported",
+   "evidence": "NHS DVT page: throbbing calf/thigh pain, swelling in one leg; get help as soon as possible; urgent GP or 111",
+   "url": "https://www.nhs.uk/conditions/deep-vein-thrombosis-dvt/",
+   "action": "edited",
+   "newSentence": "Pain and swelling in one leg can be a clot, and the NHS advises getting medical help through an urgent GP appointment or NHS 111."
+  },
+  {
+   "id": "c06",
+   "classification": "supported",
+   "evidence": "NHS: over 99% effective when always used perfectly (first pass said 'taken correctly'; wording aligned)",
+   "url": "https://www.nhs.uk/conditions/contraception/combined-contraceptive-pill/",
+   "action": "edited",
+   "newSentence": "...with over 99% effectiveness when always used perfectly"
+  },
+  {
+   "id": "c07",
+   "classification": "supported",
+   "evidence": "NHS: usually makes periods regular, lighter, less painful (current NHS page; 2019 leaflet not relied on)",
+   "url": "https://www.nhs.uk/conditions/contraception/combined-contraceptive-pill/",
+   "action": "edited",
+   "newSentence": "Making periods regular, lighter and less painful, which the NHS says it usually does"
+  },
+  {
+   "id": "c08",
+   "classification": "supported",
+   "evidence": "NHS: may help with PMS and endometriosis",
+   "url": "https://www.nhs.uk/conditions/contraception/combined-contraceptive-pill/",
+   "action": "edited",
+   "newSentence": "Easing the symptoms of PMS and endometriosis, where the NHS says it may help"
+  },
+  {
+   "id": "c09",
+   "classification": "supported",
+   "evidence": "Two hormones, oestrogen and progestogen (howItWorks)",
+   "url": "https://www.nhs.uk/conditions/contraception/combined-contraceptive-pill/",
+   "action": "kept"
+  },
+  {
+   "id": "c10",
+   "classification": "supported",
+   "evidence": "Stops ovaries releasing an egg each month",
+   "url": "https://www.nhs.uk/conditions/contraception/combined-contraceptive-pill/",
+   "action": "kept"
+  },
+  {
+   "id": "c11",
+   "classification": "supported",
+   "evidence": "NHS trust pages (Devon, opendoors): thickens cervical mucus so sperm find it harder to pass",
+   "url": "https://www.opendoors.nhs.uk/content/combined-pill",
+   "action": "kept"
+  },
+  {
+   "id": "c12",
+   "classification": "unsupported",
+   "evidence": "MedlinePlus sentence not re-retrieved in this pass; mechanism already covered by NHS sources, and blended US/UK summary",
+   "url": "https://medlineplus.gov/druginfo/meds/a625049.html",
+   "action": "removed"
+  },
+  {
+   "id": "c13",
+   "classification": "supported",
+   "evidence": "NHS side-effects: bleeding between periods/changes common in first few months",
+   "url": "https://www.nhs.uk/contraception/methods-of-contraception/combined-pill/side-effects/",
+   "action": "kept"
+  },
+  {
+   "id": "c14",
+   "classification": "supported",
+   "evidence": "Headaches, mood changes, sore breasts listed; nausea from NHS 111 Wales; 'dizzy' not retrieved",
+   "url": "https://www.nhs.uk/contraception/methods-of-contraception/combined-pill/side-effects/",
+   "action": "edited",
+   "newSentence": "Headaches, mood changes, nausea and sore breasts are also listed."
+  },
+  {
+   "id": "c15",
+   "classification": "supported",
+   "evidence": "NHS: no evidence pill causes weight gain or changes sex drive",
+   "url": "https://www.nhs.uk/contraception/methods-of-contraception/combined-pill/side-effects/",
+   "action": "kept"
+  },
+  {
+   "id": "c16",
+   "classification": "supported",
+   "evidence": "NHS: risks listed are clot in leg or lung, heart attack, stroke; very small",
+   "url": "https://www.nhs.uk/contraception/methods-of-contraception/combined-pill/side-effects/",
+   "action": "kept"
+  },
+  {
+   "id": "c17",
+   "classification": "supported",
+   "evidence": "NHS PE page: 999/A&E for sudden breathlessness, chest/upper back pain, very fast heartbeat, passing out",
+   "url": "https://www.nhs.uk/conditions/pulmonary-embolism/",
+   "action": "edited",
+   "newSentence": "For a possible clot in the lung, the NHS says to call 999 or go to A&E for sudden difficulty breathing, chest or upper back pain, a very fast heartbeat or fainting."
+  },
+  {
+   "id": "c18",
+   "classification": "supported",
+   "evidence": "NHS PE page lists coughing up blood as a PE symptom; NHS coughing-up-blood page: 999/A&E for more than a few spots/streaks or with breathing difficulty, fast heartbeat, chest pain. First pass line said coughing up blood only 'listed' with no route, which left urgency unrouted",
+   "url": "https://www.nhs.uk/symptoms/coughing-up-blood/",
+   "action": "edited",
+   "newSentence": "Coughing up blood is also listed as a symptom ... the NHS says to call 999 or go to A&E for coughing up more than a few spots or streaks of blood, or with difficulty breathing, a very fast heartbeat or chest pain."
+  },
+  {
+   "id": "c19",
+   "classification": "supported",
+   "evidence": "NHS DVT page: throbbing pain usually calf or thigh, swelling in one leg; medical help as soon as possible; urgent GP/111 per NHS summaries",
+   "url": "https://www.nhs.uk/conditions/deep-vein-thrombosis-dvt/",
+   "action": "edited",
+   "newSentence": "Throbbing pain, usually in the calf or thigh, with swelling in one leg can be a clot in the leg ... urgent GP appointment or NHS 111."
+  },
+  {
+   "id": "c20",
+   "classification": "unsupported",
+   "evidence": "'Warmth or redness' of the leg: not carried by retrieved NHS DVT page text (redness appeared only in an unattributed blended summary)",
+   "url": "https://www.nhs.uk/conditions/deep-vein-thrombosis-dvt/",
+   "action": "removed"
+  },
+  {
+   "id": "c21",
+   "classification": "supported",
+   "evidence": "MHRA 2014 update: gestodene, desogestrel, drospirenone relative risk 1.5-2.0 vs levonorgestrel; levonorgestrel, norethisterone, norgestimate lowest",
+   "url": "https://www.gov.uk/drug-safety-update/combined-hormonal-contraceptives-and-venous-thromboembolism-review-confirms-risk-is-small",
+   "action": "edited",
+   "newSentence": "...higher relative risk than levonorgestrel, norethisterone or norgestimate"
+  },
+  {
+   "id": "c22",
+   "classification": "supported",
+   "evidence": "NHS: can cause high blood pressure in a small number of people (evidence described as unclear)",
+   "url": "https://www.nhs.uk/contraception/methods-of-contraception/combined-pill/side-effects/",
+   "action": "kept"
+  },
+  {
+   "id": "c23",
+   "classification": "supported",
+   "evidence": "NHS: slightly raises breast and cervical cancer risk; lowers womb, ovarian, bowel",
+   "url": "https://www.nhs.uk/contraception/methods-of-contraception/combined-pill/side-effects/",
+   "action": "kept"
+  },
+  {
+   "id": "c24",
+   "classification": "supported",
+   "evidence": "NHS: clinician checks risk factors before prescribing",
+   "url": "https://www.nhs.uk/contraception/methods-of-contraception/combined-pill/who-can-take-it/",
+   "action": "edited",
+   "newSentence": "...a clinician checks risk factors, including those for blood clots, before prescribing."
+  },
+  {
+   "id": "c25",
+   "classification": "supported",
+   "evidence": "NHS who-can-take: history of clots, migraine with aura, breast cancer, liver cancer/severe cirrhosis, diabetes complications, heart problem",
+   "url": "https://www.nhs.uk/contraception/methods-of-contraception/combined-pill/who-can-take-it/",
+   "action": "edited",
+   "newSentence": "Conditions ... include a history of blood clots, migraine with aura, breast cancer, liver cancer or severe cirrhosis, complications of diabetes and heart problems."
+  },
+  {
+   "id": "c26",
+   "classification": "unsupported",
+   "evidence": "High blood pressure, stroke, and gallbladder/bile duct problems as exclusions: not shown in text I re-retrieved (only blended summaries)",
+   "url": "https://www.nhs.uk/contraception/methods-of-contraception/combined-pill/who-can-take-it/",
+   "action": "removed"
+  },
+  {
+   "id": "c27",
+   "classification": "supported",
+   "evidence": "NHS: obesity, and smoking aged 35 or over, may rule it out (age cut-off omitted from prose)",
+   "url": "https://www.nhs.uk/contraception/methods-of-contraception/combined-pill/who-can-take-it/",
+   "action": "edited",
+   "newSentence": "The NHS also lists obesity, and smoking at older ages, as reasons the pill may not suit someone."
+  },
+  {
+   "id": "c28",
+   "classification": "supported",
+   "evidence": "NHS: some medicines for TB, epilepsy, HIV, and St John's wort may make pill less effective (enzyme inducers)",
+   "url": "https://www.nhs.uk/conditions/contraception/contraceptive-pill-interact-medicines/",
+   "action": "edited",
+   "newSentence": "Some medicines can make the pill less effective, including some used for TB, epilepsy or HIV, and the herbal remedy St John's wort."
+  },
+  {
+   "id": "c29",
+   "classification": "unsupported",
+   "evidence": "'so a pharmacist or doctor is asked' - retrieved NHS text suggests extra contraception or change of method; the 'asked' wording not shown",
+   "url": "https://www.nhs.uk/conditions/contraception/contraceptive-pill-interact-medicines/",
+   "action": "removed"
+  },
+  {
+   "id": "c30",
+   "classification": "supported",
+   "evidence": "NHS: antibiotics such as rifampicin and rifabutin can reduce effectiveness",
+   "url": "https://www.nhs.uk/conditions/contraception/contraceptive-pill-interact-medicines/",
+   "action": "edited",
+   "newSentence": "The NHS names the antibiotics rifampicin and rifabutin as ones that can reduce its effectiveness."
+  },
+  {
+   "id": "c31",
+   "classification": "unsupported",
+   "evidence": "'NHS says its list is not complete' not retrieved",
+   "url": "https://www.nhs.uk/conditions/contraception/contraceptive-pill-interact-medicines/",
+   "action": "removed"
+  },
+  {
+   "id": "c32",
+   "classification": "supported",
+   "evidence": "NHS: does not protect against STIs; condoms still needed",
+   "url": "https://www.nhs.uk/conditions/contraception/combined-contraceptive-pill/",
+   "action": "kept"
+  },
+  {
+   "id": "c33",
+   "classification": "supported",
+   "evidence": "Clinician checks suitability/clot risk factors before prescribing",
+   "url": "https://www.nhs.uk/contraception/methods-of-contraception/combined-pill/who-can-take-it/",
+   "action": "edited",
+   "newSentence": "A clinician checks suitability and blood clot risk factors before prescribing."
+  },
+  {
+   "id": "c34",
+   "classification": "supported",
+   "evidence": "NHS: can cause high blood pressure in a small number of people",
+   "url": "https://www.nhs.uk/contraception/methods-of-contraception/combined-pill/side-effects/",
+   "action": "kept"
+  },
+  {
+   "id": "c35",
+   "classification": "supported",
+   "evidence": "NHS: if side effects still a problem after 3 months, speak to pharmacist or doctor; different pill may help",
+   "url": "https://www.nhs.uk/contraception/methods-of-contraception/combined-pill/side-effects/",
+   "action": "kept"
+  },
+  {
+   "id": "c36",
+   "classification": "unsupported",
+   "evidence": "'two main types of combined pill taken in different ways' not re-retrieved",
+   "url": "https://www.nhs.uk/conditions/contraception/combined-contraceptive-pill/",
+   "action": "removed",
+   "newSentence": "Oral tablets."
+  },
+  {
+   "id": "c37",
+   "classification": "supported",
+   "evidence": "Brand pairing via emc ingredient listing: Microgynon 30 and Logynon = ethinylestradiol + levonorgestrel; Marvelon = desogestrel; Yasmin = drospirenone",
+   "url": "https://www.medicines.org.uk/emc/ingredient/163",
+   "action": "edited",
+   "newSentence": "Microgynon and Logynon contain levonorgestrel, Marvelon contains desogestrel, and Yasmin contains drospirenone."
+  },
+  {
+   "id": "c38",
+   "classification": "unsupported",
+   "evidence": "Cilest: emc listing returned norgestimate products only under other brand names (Cilique); Cilest itself and its norgestimate pairing not confirmed. Removed from aliases, brands and article",
+   "url": "https://www.medicines.org.uk/emc/ingredient/163",
+   "action": "removed"
+  },
+  {
+   "id": "c39",
+   "classification": "supported",
+   "evidence": "emc: UK products listed as ethinylestradiol with a progestogen",
+   "url": "https://www.medicines.org.uk/emc/ingredient/163",
+   "action": "edited",
+   "newSentence": "The emc lists UK brands as ethinylestradiol, an oestrogen, combined with a progestogen."
+  },
+  {
+   "id": "c40",
+   "classification": "supported",
+   "evidence": "The pill is also known as the combined pill/COC (NHS and NHS trust pages)",
+   "url": "https://www.nhs.uk/conditions/contraception/combined-contraceptive-pill/",
+   "action": "kept"
+  },
+  {
+   "id": "c41",
+   "classification": "unsupported",
+   "evidence": "Packs 'monophasic, phasic, every-day with dummy tablets': not retrieved this pass",
+   "url": "https://www.nhs.uk/conditions/contraception/combined-contraceptive-pill/",
+   "action": "removed"
+  },
+  {
+   "id": "c42",
+   "classification": "supported",
+   "evidence": "Devon sexual health / NHS patch page: patch and vaginal ring release oestrogen and progestogen like the pill",
+   "url": "https://www.nhs.uk/conditions/contraception/contraceptive-patch/",
+   "action": "kept"
+  },
+  {
+   "id": "c43",
+   "classification": "supported",
+   "evidence": "NHS where-to-get-it: sexual health clinics, GP surgeries, young people's services; pharmacies via NHS Pharmacy Contraception Service, no prescription, free",
+   "url": "https://www.nhs.uk/contraception/methods-of-contraception/combined-pill/where-to-get-it/",
+   "action": "edited",
+   "newSentence": "The NHS says the pill is available from sexual health clinics, GP surgeries and young people's services. Some pharmacies can also supply it, without a prescription and free of charge, after a consultation with a pharmacist."
+  },
+  {
+   "id": "c44",
+   "classification": "supported",
+   "evidence": "Contraception free from sexual health clinics, some GP surgeries, some pharmacies; first pass 'services are free and confidential' narrowed; sentence dropped as blended",
+   "url": "https://www.nhs.uk/contraception/methods-of-contraception/combined-pill/where-to-get-it/",
+   "action": "removed"
+  },
+  {
+   "id": "c45",
+   "classification": "supported",
+   "evidence": "Stops ovaries releasing an egg each month (article)",
+   "url": "https://www.nhs.uk/conditions/contraception/combined-contraceptive-pill/",
+   "action": "kept"
+  },
+  {
+   "id": "c46",
+   "classification": "supported",
+   "evidence": "Thickens cervical mucus (article)",
+   "url": "https://www.opendoors.nhs.uk/content/combined-pill",
+   "action": "kept"
+  },
+  {
+   "id": "c47",
+   "classification": "unsupported",
+   "evidence": "MedlinePlus ovulation sentence not re-retrieved (US source, blended)",
+   "url": "https://medlineplus.gov/druginfo/meds/a625049.html",
+   "action": "removed"
+  },
+  {
+   "id": "c48",
+   "classification": "supported",
+   "evidence": "NHS: more than 99% effective if always used perfectly (typical use lower)",
+   "url": "https://www.nhs.uk/conditions/contraception/combined-contraceptive-pill/",
+   "action": "edited",
+   "newSentence": "...when always used perfectly."
+  },
+  {
+   "id": "c49",
+   "classification": "supported",
+   "evidence": "Trust pages (Sheffield/Croydon/Devon): missed pills, vomiting, severe diarrhoea reduce effectiveness",
+   "url": "https://www.nhs.uk/conditions/contraception/combined-contraceptive-pill/",
+   "action": "edited",
+   "newSentence": "Missed pills, vomiting or severe diarrhoea can make it less effective."
+  },
+  {
+   "id": "c50",
+   "classification": "supported",
+   "evidence": "Medicines/herbal remedies can reduce effectiveness",
+   "url": "https://www.nhs.uk/conditions/contraception/contraceptive-pill-interact-medicines/",
+   "action": "kept"
+  },
+  {
+   "id": "c51",
+   "classification": "supported",
+   "evidence": "NHS: no STI protection, condoms still needed",
+   "url": "https://www.nhs.uk/conditions/contraception/combined-contraceptive-pill/",
+   "action": "kept"
+  },
+  {
+   "id": "c52",
+   "classification": "unsupported",
+   "evidence": "'can be taken until the menopause' - not in any text retrieved this pass (search explicitly found nothing)",
+   "url": "https://www.nhs.uk/conditions/contraception/combined-contraceptive-pill/",
+   "action": "removed"
+  },
+  {
+   "id": "c53",
+   "classification": "supported",
+   "evidence": "NHS: may help with PMS and endometriosis; usually makes periods regular, lighter, less painful",
+   "url": "https://www.nhs.uk/conditions/contraception/combined-contraceptive-pill/",
+   "action": "edited",
+   "newSentence": "The NHS says the pill usually makes periods regular, lighter and less painful, and that it may help with premenstrual syndrome and endometriosis."
+  },
+  {
+   "id": "c54",
+   "classification": "unsupported",
+   "evidence": "'Another NHS source' / 2019 leaflet attribution and 'early side effects go away within about three months' not tied to a retrieved page; sourced from old FPA leaflet (Sheffield, 2019)",
+   "url": "https://www.sexualhealthsheffield.nhs.uk/wp-content/uploads/2019/06/FPA-Combined-Pill-1001.pdf",
+   "action": "removed"
+  },
+  {
+   "id": "c55",
+   "classification": "supported",
+   "evidence": "Bleeding between periods/changes common in first months",
+   "url": "https://www.nhs.uk/contraception/methods-of-contraception/combined-pill/side-effects/",
+   "action": "kept"
+  },
+  {
+   "id": "c56",
+   "classification": "supported",
+   "evidence": "Headaches, mood changes, nausea, sore breasts",
+   "url": "https://www.nhs.uk/contraception/methods-of-contraception/combined-pill/side-effects/",
+   "action": "edited",
+   "newSentence": "Headaches, mood changes, nausea and sore breasts are also listed."
+  },
+  {
+   "id": "c57",
+   "classification": "supported",
+   "evidence": "No evidence of weight gain / sex drive change",
+   "url": "https://www.nhs.uk/contraception/methods-of-contraception/combined-pill/side-effects/",
+   "action": "kept"
+  },
+  {
+   "id": "c58",
+   "classification": "supported",
+   "evidence": "High blood pressure in small number of people",
+   "url": "https://www.nhs.uk/contraception/methods-of-contraception/combined-pill/side-effects/",
+   "action": "kept"
+  },
+  {
+   "id": "c59",
+   "classification": "supported",
+   "evidence": "Cancer risk changes",
+   "url": "https://www.nhs.uk/contraception/methods-of-contraception/combined-pill/side-effects/",
+   "action": "kept"
+  },
+  {
+   "id": "c60",
+   "classification": "supported",
+   "evidence": "Three-month review advice",
+   "url": "https://www.nhs.uk/contraception/methods-of-contraception/combined-pill/side-effects/",
+   "action": "kept"
+  },
+  {
+   "id": "c61",
+   "classification": "supported",
+   "evidence": "Risks listed; very small; clinician checks risk factors",
+   "url": "https://www.nhs.uk/contraception/methods-of-contraception/combined-pill/side-effects/",
+   "action": "edited",
+   "newSentence": "It describes the risk as very small, and a clinician checks risk factors before prescribing."
+  },
+  {
+   "id": "c62",
+   "classification": "supported",
+   "evidence": "MHRA relative risk by progestogen",
+   "url": "https://www.gov.uk/drug-safety-update/combined-hormonal-contraceptives-and-venous-thromboembolism-review-confirms-risk-is-small",
+   "action": "edited",
+   "newSentence": "...a higher relative risk than pills containing levonorgestrel, norethisterone or norgestimate."
+  },
+  {
+   "id": "c63",
+   "classification": "supported",
+   "evidence": "NHS PE page 999/A&E list",
+   "url": "https://www.nhs.uk/conditions/pulmonary-embolism/",
+   "action": "edited",
+   "newSentence": "...sudden difficulty breathing, chest or upper back pain, a very fast heartbeat or fainting."
+  },
+  {
+   "id": "c64",
+   "classification": "supported",
+   "evidence": "PE symptoms: chest pain worse on breathing in; coughing up blood",
+   "url": "https://www.nhs.uk/conditions/pulmonary-embolism/",
+   "action": "kept"
+  },
+  {
+   "id": "c65",
+   "classification": "supported",
+   "evidence": "Coughing up blood routing",
+   "url": "https://www.nhs.uk/symptoms/coughing-up-blood/",
+   "action": "edited",
+   "newSentence": "The NHS says to call 999 or go to A&E for coughing up more than a few spots or streaks of blood, or coughing up blood with breathing difficulty or chest pain."
+  },
+  {
+   "id": "c66",
+   "classification": "supported",
+   "evidence": "Leg clot signs: throbbing calf/thigh pain, swelling in one leg (redness/warmth dropped)",
+   "url": "https://www.nhs.uk/conditions/deep-vein-thrombosis-dvt/",
+   "action": "edited",
+   "newSentence": "A clot in the leg can cause throbbing pain, usually in the calf or thigh, and swelling in one leg."
+  },
+  {
+   "id": "c67",
+   "classification": "supported",
+   "evidence": "NHS: get medical help as soon as possible; urgent GP / 111 (first pass said 'NHS 111 now')",
+   "url": "https://www.nhs.uk/conditions/deep-vein-thrombosis-dvt/",
+   "action": "edited",
+   "newSentence": "The NHS advises getting medical help as soon as possible, for example through an urgent GP appointment or NHS 111."
+  },
+  {
+   "id": "c68",
+   "classification": "supported",
+   "evidence": "Not suitable for everyone",
+   "url": "https://www.nhs.uk/contraception/methods-of-contraception/combined-pill/who-can-take-it/",
+   "action": "kept"
+  },
+  {
+   "id": "c69",
+   "classification": "supported",
+   "evidence": "Conditions list (reduced to those re-retrieved)",
+   "url": "https://www.nhs.uk/contraception/methods-of-contraception/combined-pill/who-can-take-it/",
+   "action": "edited",
+   "newSentence": "...a history of blood clots, migraine with aura, breast cancer, liver cancer or severe cirrhosis, complications of diabetes and heart problems."
+  },
+  {
+   "id": "c70",
+   "classification": "supported",
+   "evidence": "Obesity; smoking at older ages",
+   "url": "https://www.nhs.uk/contraception/methods-of-contraception/combined-pill/who-can-take-it/",
+   "action": "edited",
+   "newSentence": "It also lists obesity, and smoking at older ages."
+  },
+  {
+   "id": "c71",
+   "classification": "supported",
+   "evidence": "Medicines list",
+   "url": "https://www.nhs.uk/conditions/contraception/contraceptive-pill-interact-medicines/",
+   "action": "kept"
+  },
+  {
+   "id": "c72",
+   "classification": "supported",
+   "evidence": "Rifampicin and rifabutin",
+   "url": "https://www.nhs.uk/conditions/contraception/contraceptive-pill-interact-medicines/",
+   "action": "edited",
+   "newSentence": "The NHS names the antibiotics rifampicin and rifabutin."
+  },
+  {
+   "id": "c73",
+   "classification": "unsupported",
+   "evidence": "'A doctor, nurse or pharmacist checks whether the pill suits the person' - 'nurse/pharmacist' wording not tied to retrieved text",
+   "url": "https://www.nhs.uk/contraception/methods-of-contraception/combined-pill/who-can-take-it/",
+   "action": "removed"
+  },
+  {
+   "id": "c74",
+   "classification": "supported",
+   "evidence": "FAQ STI: NHS does not protect; condoms still needed",
+   "url": "https://www.nhs.uk/conditions/contraception/combined-contraceptive-pill/",
+   "action": "edited",
+   "newSentence": "No, the NHS says the combined pill does not protect against sexually transmitted infections, so condoms are still needed for that."
+  },
+  {
+   "id": "c75",
+   "classification": "unsupported",
+   "evidence": "'Sexual health services recommend condoms alongside the pill' - not tied to a retrieved page",
+   "url": "https://www.nhs.uk/conditions/contraception/combined-contraceptive-pill/",
+   "action": "removed"
+  },
+  {
+   "id": "c76",
+   "classification": "textbook",
+   "evidence": "STI definition: infections that pass from person to person through sexual contact (plain textbook definition; 'vaginal, anal and oral' detail dropped)",
+   "url": "",
+   "action": "edited",
+   "newSentence": "Sexually transmitted infections, or STIs, are infections that pass from person to person through sexual contact."
+  },
+  {
+   "id": "c77",
+   "classification": "supported",
+   "evidence": "FAQ pharmacy/GP: availability list; pharmacy service not offered by every pharmacy",
+   "url": "https://www.nhs.uk/contraception/methods-of-contraception/combined-pill/where-to-get-it/",
+   "action": "edited",
+   "newSentence": "Some pharmacies can supply it without a prescription and free of charge after a consultation with a pharmacist, though not every pharmacy offers this."
+  },
+  {
+   "id": "c78",
+   "classification": "supported",
+   "evidence": "FAQ warning signs: PE symptoms",
+   "url": "https://www.nhs.uk/conditions/pulmonary-embolism/",
+   "action": "edited",
+   "newSentence": "A clot in the lung can cause sudden difficulty breathing, chest pain that is worse on breathing in, and coughing up blood."
+  },
+  {
+   "id": "c79",
+   "classification": "supported",
+   "evidence": "FAQ: 999 list and leg advice as above",
+   "url": "https://www.nhs.uk/conditions/pulmonary-embolism/",
+   "action": "edited",
+   "newSentence": "The NHS says to call 999 or go to A&E for sudden difficulty breathing, chest or upper back pain, a very fast heartbeat or fainting."
+  },
+  {
+   "id": "c80",
+   "classification": "supported",
+   "evidence": "FAQ: weight gain / sex drive",
+   "url": "https://www.nhs.uk/contraception/methods-of-contraception/combined-pill/side-effects/",
+   "action": "kept"
+  },
+  {
+   "id": "c81",
+   "classification": "supported",
+   "evidence": "FAQ: three-month advice",
+   "url": "https://www.nhs.uk/contraception/methods-of-contraception/combined-pill/side-effects/",
+   "action": "kept"
+  },
+  {
+   "id": "c82",
+   "classification": "supported",
+   "evidence": "FAQ: NHS says some antibiotics (rifampicin, rifabutin) reduce effectiveness",
+   "url": "https://www.nhs.uk/conditions/contraception/contraceptive-pill-interact-medicines/",
+   "action": "edited",
+   "newSentence": "The NHS says some antibiotics, such as rifampicin and rifabutin, can reduce its effectiveness."
+  },
+  {
+   "id": "c83",
+   "classification": "supported",
+   "evidence": "FAQ: TB/epilepsy/HIV medicines and St John's wort",
+   "url": "https://www.nhs.uk/conditions/contraception/contraceptive-pill-interact-medicines/",
+   "action": "edited",
+   "newSentence": "Medicines used for TB, epilepsy or HIV, and St John's wort, are also named as able to make the pill less effective."
+  },
+  {
+   "id": "c84",
+   "classification": "unsupported",
+   "evidence": "'medicines called enzyme inducers' as NHS wording and 'NHS says its list is not complete' not confirmed in retrieved NHS text",
+   "url": "https://www.nhs.uk/conditions/contraception/contraceptive-pill-interact-medicines/",
+   "action": "removed"
+  },
+  {
+   "id": "c85",
+   "classification": "supported",
+   "evidence": "FAQ cancer: slight increase breast/cervical; lower womb/ovarian/bowel",
+   "url": "https://www.nhs.uk/contraception/methods-of-contraception/combined-pill/side-effects/",
+   "action": "kept"
+  },
+  {
+   "id": "c86",
+   "classification": "supported",
+   "evidence": "Summary of one NHS search result: risk returns to normal 10 years after stopping (also trust page: undetectable at 10 years)",
+   "url": "https://www.nhs.uk/contraception/methods-of-contraception/combined-pill/side-effects/",
+   "action": "edited",
+   "newSentence": "The NHS says the breast and cervical cancer risk goes back to normal about 10 years after stopping the pill."
+  },
+  {
+   "id": "c87",
+   "classification": "supported",
+   "evidence": "Key fact: also called",
+   "url": "https://www.nhs.uk/conditions/contraception/combined-contraceptive-pill/",
+   "action": "kept"
+  },
+  {
+   "id": "c88",
+   "classification": "supported",
+   "evidence": "Key fact: hormones",
+   "url": "https://www.nhs.uk/conditions/contraception/combined-contraceptive-pill/",
+   "action": "kept"
+  },
+  {
+   "id": "c89",
+   "classification": "supported",
+   "evidence": "Key fact: main action",
+   "url": "https://www.nhs.uk/conditions/contraception/combined-contraceptive-pill/",
+   "action": "kept"
+  },
+  {
+   "id": "c90",
+   "classification": "supported",
+   "evidence": "Key fact: over 99% when always used perfectly",
+   "url": "https://www.nhs.uk/conditions/contraception/combined-contraceptive-pill/",
+   "action": "edited",
+   "newSentence": "The NHS says over 99% effective when always used perfectly"
+  },
+  {
+   "id": "c91",
+   "classification": "supported",
+   "evidence": "Key fact: STI",
+   "url": "https://www.nhs.uk/conditions/contraception/combined-contraceptive-pill/",
+   "action": "kept"
+  },
+  {
+   "id": "c92",
+   "classification": "supported",
+   "evidence": "Key fact: clots; 999/A&E for sudden difficulty breathing or chest pain",
+   "url": "https://www.nhs.uk/conditions/pulmonary-embolism/",
+   "action": "edited",
+   "newSentence": "Blood clots; sudden difficulty breathing or chest pain needs 999 or A&E"
+  },
+  {
+   "id": "c93",
+   "classification": "supported",
+   "evidence": "Key fact: where to get it",
+   "url": "https://www.nhs.uk/contraception/methods-of-contraception/combined-pill/where-to-get-it/",
+   "action": "edited",
+   "newSentence": "Sexual health clinics, GP surgeries, young people's services, some pharmacies"
+  },
+  {
+   "id": "c94",
+   "classification": "supported",
+   "evidence": "Regulatory: NHS says pharmacies can supply without a prescription under the NHS Pharmacy Contraception Service, and clinics/GPs prescribe. Legally POM; status kept 'prescription'. Not a statement in prose",
+   "url": "https://www.nhs.uk/contraception/methods-of-contraception/combined-pill/where-to-get-it/",
+   "action": "kept"
+  }
+ ],
+ "notes": "Shared 14 searches across both items. Blood-clot routing: NHS PE page puts sudden breathlessness, chest/upper back pain, very fast heartbeat and fainting under 999/A&E and lists coughing up blood as a symptom; the NHS 'Coughing up blood' page gives the 999 rule for more than a few spots/streaks or with breathing difficulty/chest pain, so the final text states exactly that rather than 'coughing up blood needs 999'. Regulatory: legal supply is prescription (POM); NHS also allows pharmacist supply via PGD under the NHS Pharmacy Contraception Service, described in prose; status left 'prescription' with the NHS where-to-get-it source, which a maintainer may wish to confirm (alternative 'pharmacy'). Not re-retrieved by the search tool and therefore dropped: MedlinePlus sentence, 'until the menopause', high BP/stroke/gallbladder as exclusions, dummy-pill pack types, Cilest. Search summaries blended pages, so attributions to individual nhs.uk URLs rest on page titles; a human should spot-check the PE, DVT and coughing-up-blood pages. MHRA table is the 2014 update. The age-35 smoking and obesity detail was kept out of prose per the no cut-offs rule. MedlinePlus reference removed. Textbook count 1 of about 90 sentences."
+}

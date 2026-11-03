@@ -1,0 +1,350 @@
+{
+ "id": "levothyroxine",
+ "searchesUsed": 5,
+ "counts": {
+  "supported": 32,
+  "textbook": 3,
+  "unsupported": 9,
+  "wrong": 2,
+  "unsafe": 0,
+  "unchecked": 0
+ },
+ "claims": [
+  {
+   "id": "c01",
+   "classification": "supported",
+   "evidence": "NHS page title: medicine for underactive thyroid (hypothyroidism)",
+   "url": "https://www.nhs.uk/medicines/levothyroxine/",
+   "action": "kept"
+  },
+  {
+   "id": "c02",
+   "classification": "supported",
+   "evidence": "NHS summary: suitable for most adults and children, not everyone",
+   "url": "https://www.nhs.uk/medicines/levothyroxine/",
+   "action": "kept"
+  },
+  {
+   "id": "c03",
+   "classification": "unsupported",
+   "evidence": "MedlinePlus: used with surgery and radioactive iodine to treat thyroid cancer; 'some people take it after thyroid surgery' rested on trust-leaflet titles only",
+   "url": "https://medlineplus.gov/druginfo/meds/a682461.html",
+   "action": "edited",
+   "newSentence": "MedlinePlus, a US source, says it is also used alongside surgery and radioactive iodine treatment for thyroid cancer."
+  },
+  {
+   "id": "c04",
+   "classification": "supported",
+   "evidence": "MedlinePlus warning: not for weight loss; large doses esp. with amphetamines serious/life-threatening",
+   "url": "https://medlineplus.gov/druginfo/meds/a682461.html",
+   "action": "kept"
+  },
+  {
+   "id": "c05",
+   "classification": "supported",
+   "evidence": "NHS: synthetic T4 replacing missing hormone",
+   "url": "https://www.nhs.uk/medicines/levothyroxine/",
+   "action": "kept"
+  },
+  {
+   "id": "c06",
+   "classification": "supported",
+   "evidence": "NHS: usually lifelong",
+   "url": "https://www.nhs.uk/conditions/underactive-thyroid-hypothyroidism/treatment/",
+   "action": "kept"
+  },
+  {
+   "id": "c07",
+   "classification": "supported",
+   "evidence": "MedlinePlus: keep taking when well; do not stop without talking to doctor",
+   "url": "https://medlineplus.gov/druginfo/meds/a682461.html",
+   "action": "kept"
+  },
+  {
+   "id": "c08",
+   "classification": "supported",
+   "evidence": "NHS: regular blood tests initially until correct dose; 'can take a while' not retrieved",
+   "url": "https://www.nhs.uk/conditions/underactive-thyroid-hypothyroidism/treatment/",
+   "action": "edited",
+   "newSentence": "At first there are regular blood tests until the right amount is reached."
+  },
+  {
+   "id": "c09",
+   "classification": "supported",
+   "evidence": "NHS: yearly blood test once stable",
+   "url": "https://www.nhs.uk/conditions/underactive-thyroid-hypothyroidism/treatment/",
+   "action": "kept"
+  },
+  {
+   "id": "c10",
+   "classification": "unsupported",
+   "evidence": "Leeds attribution loose; 'weight change signals dose review' not retrieved. Other NHS sources list sweating, headaches, diarrhoea, sickness as signs of too much hormone",
+   "url": "https://www.nhs.uk/medicines/levothyroxine/",
+   "action": "removed"
+  },
+  {
+   "id": "c11",
+   "classification": "supported",
+   "evidence": "NHS common side effects: trouble sleeping, headaches, anxiety, sweating, hair loss",
+   "url": "https://www.nhs.uk/medicines/levothyroxine/",
+   "action": "kept"
+  },
+  {
+   "id": "c12",
+   "classification": "supported",
+   "evidence": "NHS: side effects mostly when dose too high; other NHS leaflets list signs of too much hormone",
+   "url": "https://www.nhs.uk/medicines/levothyroxine/",
+   "action": "edited",
+   "newSentence": "It says most side effects happen when the dose is too high, and NHS leaflets describe signs of too much thyroid hormone such as sweating, headaches, diarrhoea and being sick."
+  },
+  {
+   "id": "c13",
+   "classification": "supported",
+   "evidence": "NHS: serious reactions uncommon/rare",
+   "url": "https://www.nhs.uk/medicines/levothyroxine/",
+   "action": "kept"
+  },
+  {
+   "id": "c14",
+   "classification": "wrong",
+   "evidence": "Symptoms of thyroid crisis supported, but the 'call NHS 111 for suspected serious side effects' routing was not found; a retrieval suggested the NHS page puts thyroid crisis under non-urgent 'speak to a doctor or pharmacist'. Routing removed rather than guessed",
+   "url": "https://www.nhs.uk/medicines/levothyroxine/",
+   "action": "edited",
+   "newSentence": "The NHS lists a sudden rise in thyroid hormone, called thyroid crisis, which can cause a high temperature, a fast or irregular heartbeat, dizziness or faintness, and yellowing of the skin or eyes."
+  },
+  {
+   "id": "c15",
+   "classification": "supported",
+   "evidence": "NHS lists anaphylaxis (throat/tongue swelling, itchy rash, breathing difficulty); NHS Anaphylaxis page: call 999 if suspected. Sheffield also says 999 for children",
+   "url": "https://www.nhs.uk/conditions/anaphylaxis/",
+   "action": "edited",
+   "newSentence": "For a suspected anaphylactic reaction the NHS says to call 999."
+  },
+  {
+   "id": "c16",
+   "classification": "unsupported",
+   "evidence": "'Absorption is the weak point' editorial; 'food' not retrieved. NHS lists calcium/iron interactions; North Tees leaflet: caffeine, calcium, iron, antacids disturb absorption",
+   "url": "https://www.nth.nhs.uk/resources/levothyroxine-after-total-thyroid-surgery/",
+   "action": "edited",
+   "newSentence": "An NHS trust leaflet explains that caffeinated drinks, calcium, iron and antacids can disturb how well the medicine is absorbed."
+  },
+  {
+   "id": "c17",
+   "classification": "supported",
+   "evidence": "NHS: empty stomach, before first meal, before caffeine or other medicine (30-60 min figure dropped as schedule)",
+   "url": "https://www.nhs.uk/medicines/levothyroxine/",
+   "action": "edited",
+   "newSentence": "The NHS says levothyroxine is usually taken on an empty stomach, before the first meal of the day, and before any drink with caffeine, such as tea or coffee, or any other medicine."
+  },
+  {
+   "id": "c18",
+   "classification": "supported",
+   "evidence": "NHS lists antidepressants such as sertraline, calcium and iron",
+   "url": "https://www.nhs.uk/medicines/levothyroxine/",
+   "action": "kept"
+  },
+  {
+   "id": "c19",
+   "classification": "textbook",
+   "evidence": "Generic pharmacist/doctor advice, not quoted",
+   "url": "https://www.nhs.uk/medicines/levothyroxine/",
+   "action": "removed"
+  },
+  {
+   "id": "c20",
+   "classification": "supported",
+   "evidence": "NHS: can be taken in pregnancy if needed",
+   "url": "https://www.nhs.uk/medicines/levothyroxine/",
+   "action": "kept"
+  },
+  {
+   "id": "c21",
+   "classification": "supported",
+   "evidence": "NHS: may need more blood tests",
+   "url": "https://www.nhs.uk/medicines/levothyroxine/",
+   "action": "kept"
+  },
+  {
+   "id": "c22",
+   "classification": "supported",
+   "evidence": "Trust guidance: dose usually increases early in pregnancy; most resume pre-pregnancy dose after birth (page-level attribution loose; uhb PDF dropped)",
+   "url": "https://www.uhsussex.nhs.uk/resources/pregnancy-and-hypothyroidism/",
+   "action": "edited",
+   "newSentence": "A UK hospital leaflet notes that the amount often has to be raised early in pregnancy, and that most women return to their earlier amount after the birth."
+  },
+  {
+   "id": "c23",
+   "classification": "supported",
+   "evidence": "NHS: usually can take while breastfeeding, check with pharmacist or doctor first",
+   "url": "https://www.nhs.uk/medicines/levothyroxine/",
+   "action": "kept"
+  },
+  {
+   "id": "c24",
+   "classification": "unsupported",
+   "evidence": "Breast-milk statement not retrieved; source page uncertain",
+   "url": null,
+   "action": "removed"
+  },
+  {
+   "id": "c25",
+   "classification": "supported",
+   "evidence": "NHS: lifelong",
+   "url": "https://www.nhs.uk/conditions/underactive-thyroid-hypothyroidism/treatment/",
+   "action": "kept"
+  },
+  {
+   "id": "c26",
+   "classification": "supported",
+   "evidence": "NHS: regular tests, yearly once stable",
+   "url": "https://www.nhs.uk/conditions/underactive-thyroid-hypothyroidism/treatment/",
+   "action": "kept"
+  },
+  {
+   "id": "c27",
+   "classification": "supported",
+   "evidence": "MedlinePlus",
+   "url": "https://medlineplus.gov/druginfo/meds/a682461.html",
+   "action": "kept"
+  },
+  {
+   "id": "c28",
+   "classification": "unsupported",
+   "evidence": "Weight gain/loss from wrong dose not retrieved from a cited page; replaced by MedlinePlus warning",
+   "url": "https://medlineplus.gov/druginfo/meds/a682461.html",
+   "action": "removed"
+  },
+  {
+   "id": "c29",
+   "classification": "supported",
+   "evidence": "MedlinePlus warning against weight-loss use",
+   "url": "https://medlineplus.gov/druginfo/meds/a682461.html",
+   "action": "kept"
+  },
+  {
+   "id": "c30",
+   "classification": "unsupported",
+   "evidence": "Editorial GP-appointment routing, not from any source",
+   "url": null,
+   "action": "removed"
+  },
+  {
+   "id": "c31",
+   "classification": "unsupported",
+   "evidence": "Devon formulary 'next day' not retrieved; NHS says take when remembered unless next dose nearly due, then skip",
+   "url": "https://www.nhs.uk/medicines/levothyroxine/",
+   "action": "edited",
+   "newSentence": "The NHS says a missed dose is taken once remembered, unless the next one is nearly due, in which case the missed one is skipped."
+  },
+  {
+   "id": "c32",
+   "classification": "supported",
+   "evidence": "NHS: do not take 2 doses at the same time",
+   "url": "https://www.nhs.uk/medicines/levothyroxine/",
+   "action": "kept"
+  },
+  {
+   "id": "c33",
+   "classification": "supported",
+   "evidence": "Sheffield Children's leaflet: extra dose given by mistake unlikely to cause harm (about children)",
+   "url": "https://library.sheffieldchildrens.nhs.uk/levothyroxine-for-hypothyroidism/",
+   "action": "edited",
+   "newSentence": "A Sheffield Children's leaflet says an extra dose given to a child by mistake is unlikely to cause harm."
+  },
+  {
+   "id": "c34",
+   "classification": "supported",
+   "evidence": "NHS: speak to pharmacist asap; NHS 111 if cannot reach one or took extra on purpose",
+   "url": "https://www.nhs.uk/medicines/levothyroxine/",
+   "action": "edited",
+   "newSentence": "...speak to a pharmacist as soon as possible, or call NHS 111 if none can be reached or the extra was taken on purpose."
+  },
+  {
+   "id": "c35",
+   "classification": "unsupported",
+   "evidence": "'Mainly absorption' not carried by Torbay in retrieval; antidepressants are not an absorption effect. North Tees: calcium, iron, antacids disturb absorption",
+   "url": "https://www.nth.nhs.uk/resources/levothyroxine-after-total-thyroid-surgery/",
+   "action": "edited",
+   "newSentence": "Some can. An NHS trust leaflet says calcium, iron and antacids can disturb absorption..."
+  },
+  {
+   "id": "c36",
+   "classification": "supported",
+   "evidence": "NHS lists calcium, iron, antidepressants such as sertraline",
+   "url": "https://www.nhs.uk/medicines/levothyroxine/",
+   "action": "kept"
+  },
+  {
+   "id": "c37",
+   "classification": "textbook",
+   "evidence": "Pharmacist/doctor can check new medicines: generic advice",
+   "url": "https://www.nhs.uk/medicines/levothyroxine/",
+   "action": "kept"
+  },
+  {
+   "id": "c38",
+   "classification": "supported",
+   "evidence": "NHS: blood tests until correct dose",
+   "url": "https://www.nhs.uk/conditions/underactive-thyroid-hypothyroidism/treatment/",
+   "action": "kept"
+  },
+  {
+   "id": "c39",
+   "classification": "unsupported",
+   "evidence": "SPS '6 weeks' monitoring not retrieved in re-check",
+   "url": null,
+   "action": "removed"
+  },
+  {
+   "id": "c40",
+   "classification": "supported",
+   "evidence": "NHS: yearly once stable",
+   "url": "https://www.nhs.uk/conditions/underactive-thyroid-hypothyroidism/treatment/",
+   "action": "kept"
+  },
+  {
+   "id": "c41",
+   "classification": "supported",
+   "evidence": "NHS title/description",
+   "url": "https://www.nhs.uk/medicines/levothyroxine/",
+   "action": "kept"
+  },
+  {
+   "id": "c42",
+   "classification": "textbook",
+   "evidence": "Prescription-only status not shown in retrieved text; medications.json regulatory record cites the NHS page",
+   "url": "https://www.nhs.uk/medicines/levothyroxine/",
+   "action": "kept"
+  },
+  {
+   "id": "c43",
+   "classification": "supported",
+   "evidence": "NHS: lifelong",
+   "url": "https://www.nhs.uk/conditions/underactive-thyroid-hypothyroidism/treatment/",
+   "action": "kept"
+  },
+  {
+   "id": "c44",
+   "classification": "supported",
+   "evidence": "NHS: regular tests then yearly",
+   "url": "https://www.nhs.uk/conditions/underactive-thyroid-hypothyroidism/treatment/",
+   "action": "kept"
+  },
+  {
+   "id": "c45",
+   "classification": "supported",
+   "evidence": "NHS common side effects",
+   "url": "https://www.nhs.uk/medicines/levothyroxine/",
+   "action": "kept"
+  },
+  {
+   "id": "c46",
+   "classification": "wrong",
+   "evidence": "999 for throat swelling/breathing trouble supported by NHS anaphylaxis page; 'other suspected serious effects: NHS 111' unverified",
+   "url": "https://www.nhs.uk/conditions/anaphylaxis/",
+   "action": "edited",
+   "newSentence": "Throat or tongue swelling or trouble breathing: the NHS says to call 999."
+  }
+ ],
+ "notes": "Claim ids follow the ledger order (46 entries). Retrieval was by search summaries only; page-level attribution is loose, so remaining supported items rest on consistent NHS/MedlinePlus summaries. Thyroid-crisis routing is not stated in retrieved text: the article names no route for it (a retrieval hinted the NHS page treats it as non-urgent speak-to-doctor advice); a human should check the live NHS page. Removed: breast-milk sentence, SPS monitoring, Devon formulary missed-dose, GP-routing, weight-change causation. Allergic-reaction 999 now rests on the NHS Anaphylaxis page. Textbook: 3 of 46 (one removed). Dropped references: Leeds, UHB PDF. Does not contradict medications.json; no doses or ranges."
+}

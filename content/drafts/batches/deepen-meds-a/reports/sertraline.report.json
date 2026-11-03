@@ -1,0 +1,477 @@
+{
+ "id": "sertraline",
+ "searchesUsed": 8,
+ "counts": {
+  "supported": 36,
+  "textbook": 0,
+  "unsupported": 24,
+  "wrong": 3,
+  "unsafe": 0,
+  "unchecked": 0
+ },
+ "claims": [
+  {
+   "id": "c01",
+   "classification": "supported",
+   "evidence": "NHS: sertraline is an SSRI antidepressant.",
+   "url": "https://www.nhs.uk/medicines/sertraline/",
+   "action": "kept"
+  },
+  {
+   "id": "c02",
+   "classification": "unsupported",
+   "evidence": "NHS: often used for depression, sometimes panic attacks, OCD, PTSD. Social anxiety not retrieved from NHS (MedlinePlus lists it).",
+   "url": "https://www.nhs.uk/medicines/sertraline/",
+   "action": "edited",
+   "newSentence": "The NHS says it is often used for depression and sometimes for panic attacks, OCD and PTSD. MedlinePlus also lists social anxiety disorder."
+  },
+  {
+   "id": "c03",
+   "classification": "unsupported",
+   "evidence": "PMDD only seen in a clinical-trial protocol, not MedlinePlus.",
+   "url": "https://medlineplus.gov/druginfo/meds/a697048.html",
+   "action": "removed"
+  },
+  {
+   "id": "c04",
+   "classification": "wrong",
+   "evidence": "NHS: children aged 6 to 17 can take sertraline, but only for OCD; severe depression in teenagers not retrieved.",
+   "url": "https://www.nhs.uk/medicines/sertraline/who-can-and-cannot-take-sertraline/",
+   "action": "edited",
+   "newSentence": "The NHS says children aged 6 to 17 can also take sertraline, but only for OCD."
+  },
+  {
+   "id": "c05",
+   "classification": "unsupported",
+   "evidence": "Tablets confirmed by the leaflet title; liquid concentrate and dilution not seen in retrieved text.",
+   "url": "https://www.medicines.org.uk/emc/files/pil.4348.pdf",
+   "action": "edited",
+   "newSentence": "It comes as tablets."
+  },
+  {
+   "id": "c06",
+   "classification": "unsupported",
+   "evidence": "NHS antidepressants page: one view is that they increase neurotransmitters, mainly serotonin and noradrenaline; the sertraline-specific serotonin wording was not retrieved.",
+   "url": "https://www.nhs.uk/mental-health/talking-therapies-medicine-treatments/medicines-and-psychiatry/antidepressants/overview/",
+   "action": "edited",
+   "newSentence": "One view is that they increase the levels of brain chemicals called neurotransmitters, mainly serotonin and noradrenaline."
+  },
+  {
+   "id": "c07",
+   "classification": "supported",
+   "evidence": "NHS: not known exactly how antidepressants work.",
+   "url": "https://www.nhs.uk/mental-health/talking-therapies-medicine-treatments/medicines-and-psychiatry/antidepressants/overview/",
+   "action": "kept"
+  },
+  {
+   "id": "c08",
+   "classification": "unsupported",
+   "evidence": "SSRIs block reabsorption: only the NHS 111 Wales page was the claimed source and nothing retrieved states it.",
+   "url": "https://www.nhs.uk/medicines/sertraline/",
+   "action": "removed"
+  },
+  {
+   "id": "c09",
+   "classification": "supported",
+   "evidence": "NHS: feel better after 1 to 2 weeks, usually 4 to 6 weeks to work fully.",
+   "url": "https://www.nhs.uk/medicines/sertraline/",
+   "action": "edited",
+   "newSentence": "The NHS says people may start to feel better after 1 to 2 weeks, but sertraline usually takes 4 to 6 weeks to work fully."
+  },
+  {
+   "id": "c10",
+   "classification": "supported",
+   "evidence": "NHS: headaches, feeling sick, dizziness or drowsiness, dry mouth, diarrhoea, problems sleeping, sexual problems (and weight gain).",
+   "url": "https://www.nhs.uk/medicines/sertraline/side-effects-of-sertraline/",
+   "action": "edited",
+   "newSentence": "...and sexual problems among the common side effects."
+  },
+  {
+   "id": "c11",
+   "classification": "unsupported",
+   "evidence": "NHS: some of the common side effects gradually improve as the body gets used to it; \"most ... after a couple of weeks\" not retrieved.",
+   "url": "https://www.nhs.uk/medicines/sertraline/side-effects-of-sertraline/",
+   "action": "edited",
+   "newSentence": "The NHS says some of the common side effects gradually improve as the body gets used to the medicine."
+  },
+  {
+   "id": "c12",
+   "classification": "unsupported",
+   "evidence": "Driving/machinery advice not in retrieved text.",
+   "url": "https://www.nhs.uk/medicines/sertraline/side-effects-of-sertraline/",
+   "action": "removed"
+  },
+  {
+   "id": "c13",
+   "classification": "supported",
+   "evidence": "NHS: serious reactions are rarer.",
+   "url": "https://www.nhs.uk/medicines/sertraline/side-effects-of-sertraline/",
+   "action": "edited",
+   "newSentence": "Serious reactions are rarer."
+  },
+  {
+   "id": "c14",
+   "classification": "unsupported",
+   "evidence": "NHS: serotonin syndrome uncommon but potentially serious, linked to SSRIs/SNRIs. The symptom list (confusion, fever, stiffness, fast heartbeat) was not retrieved.",
+   "url": "https://www.nhs.uk/medicines/antidepressants/",
+   "action": "edited",
+   "newSentence": "The NHS describes serotonin syndrome as an uncommon but potentially serious set of side effects linked to SSRIs."
+  },
+  {
+   "id": "c15",
+   "classification": "supported",
+   "evidence": "NHS lists mania among serious reactions (hypomania wording not retrieved).",
+   "url": "https://www.nhs.uk/medicines/sertraline/side-effects-of-sertraline/",
+   "action": "edited",
+   "newSentence": "The NHS lists serotonin syndrome and mania among them."
+  },
+  {
+   "id": "c16",
+   "classification": "unsupported",
+   "evidence": "Low sodium only from a case report; no guideline text retrieved.",
+   "url": null,
+   "action": "removed"
+  },
+  {
+   "id": "c17",
+   "classification": "supported",
+   "evidence": "MedlinePlus: raised risk of suicidal thoughts and actions in children, teenagers, young adults; more likely in first few months and when dose increased; warning signs and advice to call a doctor right away.",
+   "url": "https://medlineplus.gov/druginfo/meds/a697048.html",
+   "action": "edited",
+   "newSentence": "MedlinePlus warns ... first few months of treatment and when the dose is increased. It lists new or worsening depression ... and advises calling a doctor right away."
+  },
+  {
+   "id": "c18",
+   "classification": "supported",
+   "evidence": "NHS: if you may be about to harm yourself call 999 or go to A&E; Samaritans free 24 hours, 116 123 (NHS suicidal-thoughts page). NHS 111 option 2 for urgent mental health support (NHS GP-practice page titled 'NHS 111 - option 2 for crisis mental health support'); GP emergency appointment also suggested.",
+   "url": "https://www.nhs.uk/mental-health/feelings-symptoms-behaviours/behaviours/help-for-suicidal-thoughts/",
+   "action": "edited",
+   "newSentence": "The NHS says that anyone who may be about to harm themselves should call 999 or go to A&E. For urgent mental health help, NHS 111 has a mental health option (option 2), and Samaritans is free to call on 116 123 at any time. A GP can also be asked for an emergency appointment."
+  },
+  {
+   "id": "c19",
+   "classification": "supported",
+   "evidence": "NHS: best not to drink alcohol because it can stop the medicine working properly.",
+   "url": "https://www.nhs.uk/medicines/sertraline/",
+   "action": "kept"
+  },
+  {
+   "id": "c20",
+   "classification": "unsupported",
+   "evidence": "Alcohol worsening side effects was in an unattributed \"other sources\" line, not MedlinePlus.",
+   "url": null,
+   "action": "removed"
+  },
+  {
+   "id": "c21",
+   "classification": "supported",
+   "evidence": "NHS: grapefruit juice can increase the amount of sertraline in the body and the risk of side effects (\"advised against\" not stated).",
+   "url": "https://www.nhs.uk/medicines/sertraline/taking-sertraline-with-other-medicines-and-herbal-supplements/",
+   "action": "edited",
+   "newSentence": "Grapefruit juice can increase the amount of sertraline in the body and the risk of side effects."
+  },
+  {
+   "id": "c22",
+   "classification": "supported",
+   "evidence": "NHS: do not take St John's wort as it increases risk of side effects.",
+   "url": "https://www.nhs.uk/medicines/sertraline/taking-sertraline-with-other-medicines-and-herbal-supplements/",
+   "action": "edited"
+  },
+  {
+   "id": "c23",
+   "classification": "unsupported",
+   "evidence": "Tryptophan, aspirin, ibuprofen, naproxen from MedlinePlus not retrieved.",
+   "url": null,
+   "action": "removed"
+  },
+  {
+   "id": "c24",
+   "classification": "unsupported",
+   "evidence": "Warfarin, antipsychotics, antibiotics not retrieved from leaflets. NHS page flags heartbeat medicines and other antidepressants instead.",
+   "url": "https://www.nhs.uk/medicines/sertraline/taking-sertraline-with-other-medicines-and-herbal-supplements/",
+   "action": "edited",
+   "newSentence": "The NHS flags medicines that affect the heartbeat, and other antidepressants, as ones to raise with a doctor first."
+  },
+  {
+   "id": "c25",
+   "classification": "supported",
+   "evidence": "Leaflet: must not take with MAOIs such as selegiline or moclobemide, or linezolid.",
+   "url": "https://www.medicines.org.uk/emc/files/pil.4348.pdf",
+   "action": "edited"
+  },
+  {
+   "id": "c26",
+   "classification": "unsupported",
+   "evidence": "Dextromethorphan/supplement serotonin syndrome only from case reports; no guideline text.",
+   "url": null,
+   "action": "removed"
+  },
+  {
+   "id": "c27",
+   "classification": "unsupported",
+   "evidence": "Retrieved NHS text: very little information about other herbal remedies and supplements; the \"tell the doctor about everything\" instruction was not retrieved.",
+   "url": "https://www.nhs.uk/medicines/sertraline/taking-sertraline-with-other-medicines-and-herbal-supplements/",
+   "action": "edited",
+   "newSentence": "The NHS says there is very little information about other herbal remedies and supplements."
+  },
+  {
+   "id": "c28",
+   "classification": "supported",
+   "evidence": "NHS: most adults can take sertraline.",
+   "url": "https://www.nhs.uk/medicines/sertraline/who-can-and-cannot-take-sertraline/",
+   "action": "kept"
+  },
+  {
+   "id": "c29",
+   "classification": "unsupported",
+   "evidence": "NHS lists heart problems, glaucoma, epilepsy, diabetes (blood sugar harder to control); bleeding disorder and past mania not retrieved.",
+   "url": "https://www.nhs.uk/medicines/sertraline/who-can-and-cannot-take-sertraline/",
+   "action": "edited",
+   "newSentence": "The NHS also lists heart problems, glaucoma and epilepsy as reasons for extra care ... Sertraline can make blood sugar harder to control ..."
+  },
+  {
+   "id": "c30",
+   "classification": "supported",
+   "evidence": "NHS lists allergic reaction to sertraline or another medicine among those who may not be able to take it.",
+   "url": "https://www.nhs.uk/medicines/sertraline/who-can-and-cannot-take-sertraline/",
+   "action": "edited"
+  },
+  {
+   "id": "c31",
+   "classification": "unsupported",
+   "evidence": "Under-18 leaflet wording not retrieved (MedlinePlus covers young people).",
+   "url": null,
+   "action": "removed"
+  },
+  {
+   "id": "c32",
+   "classification": "supported",
+   "evidence": "NHS: sertraline can be taken in pregnancy.",
+   "url": "https://www.nhs.uk/medicines/sertraline/pregnancy-breastfeeding-and-fertility-while-taking-sertraline/",
+   "action": "kept"
+  },
+  {
+   "id": "c33",
+   "classification": "supported",
+   "evidence": "NHS: some studies suggest it might occasionally affect baby's heart; if any risk it is small, most babies have a normal heart.",
+   "url": "https://www.nhs.uk/medicines/sertraline/pregnancy-breastfeeding-and-fertility-while-taking-sertraline/",
+   "action": "edited"
+  },
+  {
+   "id": "c34",
+   "classification": "supported",
+   "evidence": "NHS: in the weeks before delivery can sometimes cause short-term withdrawal symptoms and very rarely breathing problems; baby checked after birth.",
+   "url": "https://www.nhs.uk/medicines/sertraline/pregnancy-breastfeeding-and-fertility-while-taking-sertraline/",
+   "action": "edited"
+  },
+  {
+   "id": "c35",
+   "classification": "unsupported",
+   "evidence": "Retrieved only MedlinePlus advice to tell a doctor about pregnancy, plans or breastfeeding.",
+   "url": "https://medlineplus.gov/druginfo/meds/a697048.html",
+   "action": "edited",
+   "newSentence": "MedlinePlus advises telling a doctor about a pregnancy, a plan to become pregnant or breastfeeding."
+  },
+  {
+   "id": "c36",
+   "classification": "unsupported",
+   "evidence": "NHS: OK to take while breastfeeding if doctor or health visitor says baby is healthy; one of preferred antidepressants. \"Best to check\" not retrieved.",
+   "url": "https://www.nhs.uk/medicines/sertraline/pregnancy-breastfeeding-and-fertility-while-taking-sertraline/",
+   "action": "edited",
+   "newSentence": "The NHS says that if a doctor or health visitor says the baby is healthy, it is OK to take sertraline while breastfeeding..."
+  },
+  {
+   "id": "c37",
+   "classification": "supported",
+   "evidence": "NHS: stopping involves gradual dose reduction to help prevent withdrawal; leaflet: do not stop unless doctor tells you.",
+   "url": "https://www.nhs.uk/mental-health/talking-therapies-medicine-treatments/medicines-and-psychiatry/stopping-or-coming-off-antidepressants/",
+   "action": "edited"
+  },
+  {
+   "id": "c38",
+   "classification": "supported",
+   "evidence": "NHS: dose slowly reduced, normally over several weeks or months, pace depends on drug, dose and duration.",
+   "url": "https://www.nhs.uk/mental-health/talking-therapies-medicine-treatments/medicines-and-psychiatry/stopping-or-coming-off-antidepressants/",
+   "action": "edited"
+  },
+  {
+   "id": "c39",
+   "classification": "supported",
+   "evidence": "NHS: symptoms usually within 5 days, generally last 1 to 2 weeks.",
+   "url": "https://www.nhs.uk/mental-health/talking-therapies-medicine-treatments/medicines-and-psychiatry/stopping-or-coming-off-antidepressants/",
+   "action": "edited"
+  },
+  {
+   "id": "c40",
+   "classification": "unsupported",
+   "evidence": "NHS: some people have severe symptoms lasting several months or more; \"some have none\" not retrieved.",
+   "url": "https://www.nhs.uk/mental-health/talking-therapies-medicine-treatments/medicines-and-psychiatry/stopping-or-coming-off-antidepressants/",
+   "action": "edited"
+  },
+  {
+   "id": "c41",
+   "classification": "unsupported",
+   "evidence": "Symptoms starting weeks after a reduction not retrieved from RCPsych.",
+   "url": "https://www.rcpsych.ac.uk/mental-health/treatments-and-wellbeing/stopping-antidepressants",
+   "action": "removed"
+  },
+  {
+   "id": "c42",
+   "classification": "wrong",
+   "evidence": "RCPsych retrieved text said to wait at least four weeks before the next reduction (a schedule, not used); the sentence does not match.",
+   "url": "https://www.rcpsych.ac.uk/mental-health/treatments-and-wellbeing/stopping-antidepressants",
+   "action": "edited",
+   "newSentence": "The Royal College of Psychiatrists says withdrawal symptoms usually improve quickly, in days or even hours, if the antidepressant is restarted."
+  },
+  {
+   "id": "c43",
+   "classification": "supported",
+   "evidence": "NHS: if symptoms are severe a doctor may suggest reducing more slowly or going back to a higher dose before trying again.",
+   "url": "https://www.nhs.uk/mental-health/talking-therapies-medicine-treatments/medicines-and-psychiatry/stopping-or-coming-off-antidepressants/",
+   "action": "edited"
+  },
+  {
+   "id": "c44",
+   "classification": "wrong",
+   "evidence": "Retrieved text says going back to a higher dose, not switching to another medicine from the same group.",
+   "url": "https://www.nhs.uk/mental-health/talking-therapies-medicine-treatments/medicines-and-psychiatry/stopping-or-coming-off-antidepressants/",
+   "action": "removed"
+  },
+  {
+   "id": "c45",
+   "classification": "supported",
+   "evidence": "NHS: 1 to 2 weeks to feel better, 4 to 6 weeks to work fully.",
+   "url": "https://www.nhs.uk/medicines/sertraline/",
+   "action": "edited"
+  },
+  {
+   "id": "c46",
+   "classification": "unsupported",
+   "evidence": "\"Side effects come first\" not retrieved; NHS says some improve as body gets used to it.",
+   "url": "https://www.nhs.uk/medicines/sertraline/side-effects-of-sertraline/",
+   "action": "edited"
+  },
+  {
+   "id": "c47",
+   "classification": "unsupported",
+   "evidence": "\"Anxious before better\" not stated; NHS antidepressant side effects page lists agitation, shakiness, anxiety among early side effects that generally improve.",
+   "url": "https://www.nhs.uk/mental-health/talking-therapies-medicine-treatments/medicines-and-psychiatry/antidepressants/side-effects/",
+   "action": "edited",
+   "newSentence": "It also lists agitation, shakiness and anxiety among the early side effects of antidepressants, which generally improve with time."
+  },
+  {
+   "id": "c48",
+   "classification": "unsupported",
+   "evidence": "\"Keep taking even when well\" not found in MedlinePlus results.",
+   "url": "https://medlineplus.gov/druginfo/meds/a697048.html",
+   "action": "removed"
+  },
+  {
+   "id": "c49",
+   "classification": "supported",
+   "evidence": "NHS how and when: once feeling better likely to continue for several more months.",
+   "url": "https://www.nhs.uk/medicines/sertraline/how-and-when-to-take-sertraline/",
+   "action": "edited"
+  },
+  {
+   "id": "c50",
+   "classification": "supported",
+   "evidence": "NHS: stopping involves gradual reduction; leaflet: do not stop unless doctor says.",
+   "url": "https://www.nhs.uk/mental-health/talking-therapies-medicine-treatments/medicines-and-psychiatry/stopping-or-coming-off-antidepressants/",
+   "action": "edited"
+  },
+  {
+   "id": "c51",
+   "classification": "supported",
+   "evidence": "NHS: reduction normally over several weeks or months.",
+   "url": "https://www.nhs.uk/mental-health/talking-therapies-medicine-treatments/medicines-and-psychiatry/stopping-or-coming-off-antidepressants/",
+   "action": "kept"
+  },
+  {
+   "id": "c52",
+   "classification": "supported",
+   "evidence": "NHS: can be taken in pregnancy.",
+   "url": "https://www.nhs.uk/medicines/sertraline/pregnancy-breastfeeding-and-fertility-while-taking-sertraline/",
+   "action": "kept"
+  },
+  {
+   "id": "c53",
+   "classification": "supported",
+   "evidence": "NHS: some studies, occasionally; small risk if any.",
+   "url": "https://www.nhs.uk/medicines/sertraline/pregnancy-breastfeeding-and-fertility-while-taking-sertraline/",
+   "action": "edited"
+  },
+  {
+   "id": "c54",
+   "classification": "supported",
+   "evidence": "NHS: short-term withdrawal symptoms in the baby.",
+   "url": "https://www.nhs.uk/medicines/sertraline/pregnancy-breastfeeding-and-fertility-while-taking-sertraline/",
+   "action": "kept"
+  },
+  {
+   "id": "c55",
+   "classification": "unsupported",
+   "evidence": "\"Talk to your doctor about benefits and risks\" not retrieved; replaced by NHS: baby checked after birth and given extra care if needed.",
+   "url": "https://www.nhs.uk/medicines/sertraline/pregnancy-breastfeeding-and-fertility-while-taking-sertraline/",
+   "action": "edited",
+   "newSentence": "The NHS says the baby will be checked after birth and given extra care if needed."
+  },
+  {
+   "id": "c56",
+   "classification": "supported",
+   "evidence": "MedlinePlus boxed warning retrieved.",
+   "url": "https://medlineplus.gov/druginfo/meds/a697048.html",
+   "action": "edited"
+  },
+  {
+   "id": "c57",
+   "classification": "supported",
+   "evidence": "NHS: if you may be about to harm yourself call 999 or go to A&E; Samaritans free 24 hours, 116 123 (NHS suicidal-thoughts page). NHS 111 option 2 for urgent mental health support (NHS GP-practice page titled 'NHS 111 - option 2 for crisis mental health support'); GP emergency appointment also suggested.",
+   "url": "https://www.nhs.uk/mental-health/feelings-symptoms-behaviours/behaviours/help-for-suicidal-thoughts/",
+   "action": "edited"
+  },
+  {
+   "id": "c58",
+   "classification": "supported",
+   "evidence": "NHS: SSRI antidepressant",
+   "url": "https://www.nhs.uk/medicines/sertraline/",
+   "action": "kept"
+  },
+  {
+   "id": "c59",
+   "classification": "supported",
+   "evidence": "NHS: depression, panic, OCD, PTSD",
+   "url": "https://www.nhs.uk/medicines/sertraline/",
+   "action": "kept"
+  },
+  {
+   "id": "c60",
+   "classification": "supported",
+   "evidence": "NHS: 4 to 6 weeks",
+   "url": "https://www.nhs.uk/medicines/sertraline/",
+   "action": "kept"
+  },
+  {
+   "id": "c61",
+   "classification": "supported",
+   "evidence": "NHS: best not to drink",
+   "url": "https://www.nhs.uk/medicines/sertraline/",
+   "action": "kept"
+  },
+  {
+   "id": "c62",
+   "classification": "supported",
+   "evidence": "NHS: gradual reduction; leaflet: unless doctor says",
+   "url": "https://www.nhs.uk/mental-health/talking-therapies-medicine-treatments/medicines-and-psychiatry/stopping-or-coming-off-antidepressants/",
+   "action": "kept"
+  },
+  {
+   "id": "c63",
+   "classification": "supported",
+   "evidence": "NHS: don't take St John's wort",
+   "url": "https://www.nhs.uk/medicines/sertraline/",
+   "action": "kept"
+  }
+ ],
+ "notes": "Used all 8 searches. The two crisis sentences (999, NHS 111 mental health option, Samaritans 116 123) are now backed by retrieved NHS wording (NHS 'Help for suicidal thoughts' and a GP-practice page titled 'NHS 111 - option 2 for crisis mental health support'); the 111 option rests on an NHS GP-practice page, a human may want to confirm it against nhs.uk/nhs-services/mental-health-services. Cut: SSRI reabsorption sentence, low sodium and dextromethorphan case reports, PMDD, driving advice, 'talk to your doctor' pregnancy line, 'keep taking when well' MedlinePlus claim. Corrected: children's use is OCD only (NHS), not teen depression. Several search summaries blend pages, so URL attribution within NHS sertraline pages is best effort. The existing site entry says sertraline is 'a first choice after a heart attack' and 'better-studied in pregnancy': not checked here. The \"extra care\" and \"other medicines\" sections were merged into one; final article has 5 sections, 4 FAQs, 6 keyFacts."
+}

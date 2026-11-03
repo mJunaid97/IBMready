@@ -1,0 +1,841 @@
+{
+ "id": "autism",
+ "searchesUsed": 5,
+ "counts": {
+  "supported": 49,
+  "textbook": 9,
+  "unsupported": 55,
+  "wrong": 0,
+  "unsafe": 0,
+  "unchecked": 0
+ },
+ "claims": [
+  {
+   "id": "c001",
+   "classification": "textbook",
+   "evidence": "Plain undisputed framing (difference rather than an illness; no cure; spectrum label); not surfaced in my retrieved summaries.",
+   "url": "",
+   "action": "edited",
+   "newSentence": "(see items/autism.json)"
+  },
+  {
+   "id": "c002",
+   "classification": "supported",
+   "evidence": "Corroborated by retrieved NHS / NHS inform / NICE text, or the lead-supplied crisis-route evidence.",
+   "url": "https://www.nhs.uk/conditions/autism/signs-in-children/",
+   "action": "edited",
+   "newSentence": "(see items/autism.json)"
+  },
+  {
+   "id": "c003",
+   "classification": "unsupported",
+   "evidence": "Not found in my retrieved text (NHS/NHS inform/NICE/NAS pages returned); ledger note could not be corroborated.",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c004",
+   "classification": "supported",
+   "evidence": "Corroborated by retrieved NHS / NHS inform / NICE text, or the lead-supplied crisis-route evidence.",
+   "url": "https://www.nhs.uk/conditions/autism/signs-in-children/",
+   "action": "kept"
+  },
+  {
+   "id": "c005",
+   "classification": "textbook",
+   "evidence": "Plain undisputed framing (difference rather than an illness; no cure; spectrum label); not surfaced in my retrieved summaries.",
+   "url": "",
+   "action": "edited",
+   "newSentence": "(see items/autism.json)"
+  },
+  {
+   "id": "c006",
+   "classification": "supported",
+   "evidence": "Corroborated by retrieved NHS / NHS inform / NICE text, or the lead-supplied crisis-route evidence.",
+   "url": "https://www.nhs.uk/conditions/autism/signs-in-children/",
+   "action": "edited",
+   "newSentence": "(see items/autism.json)"
+  },
+  {
+   "id": "c007",
+   "classification": "supported",
+   "evidence": "Corroborated by retrieved NHS / NHS inform / NICE text, or the lead-supplied crisis-route evidence.",
+   "url": "https://www.nhs.uk/conditions/autism/signs-in-children/",
+   "action": "kept"
+  },
+  {
+   "id": "c008",
+   "classification": "unsupported",
+   "evidence": "Not found in my retrieved text (NHS/NHS inform/NICE/NAS pages returned); ledger note could not be corroborated.",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c009",
+   "classification": "supported",
+   "evidence": "Corroborated by retrieved NHS / NHS inform / NICE text, or the lead-supplied crisis-route evidence.",
+   "url": "https://www.nice.org.uk/guidance/cg128",
+   "action": "kept"
+  },
+  {
+   "id": "c010",
+   "classification": "textbook",
+   "evidence": "Plain undisputed framing (difference rather than an illness; no cure; spectrum label); not surfaced in my retrieved summaries.",
+   "url": "",
+   "action": "kept"
+  },
+  {
+   "id": "c011",
+   "classification": "unsupported",
+   "evidence": "Not found in my retrieved text (NHS/NHS inform/NICE/NAS pages returned); ledger note could not be corroborated.",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c012",
+   "classification": "unsupported",
+   "evidence": "Not found in my retrieved text (NHS/NHS inform/NICE/NAS pages returned); ledger note could not be corroborated.",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c013",
+   "classification": "unsupported",
+   "evidence": "Not found in my retrieved text (NHS/NHS inform/NICE/NAS pages returned); ledger note could not be corroborated.",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c014",
+   "classification": "unsupported",
+   "evidence": "Not found in my retrieved text (NHS/NHS inform/NICE/NAS pages returned); ledger note could not be corroborated.",
+   "url": "",
+   "action": "edited",
+   "newSentence": "(see items/autism.json)"
+  },
+  {
+   "id": "c015",
+   "classification": "unsupported",
+   "evidence": "Valproate part corroborated (NAS what-causes page: rare cause now; Danish registry study, PubMed 23613074); rubella only on NAS pages, not independently corroborated by an official source, so cut.",
+   "url": "https://www.autism.org.uk/advice-and-guidance/about-autism/what-causes-autism",
+   "action": "removed"
+  },
+  {
+   "id": "c016",
+   "classification": "supported",
+   "evidence": "Corroborated by retrieved NHS / NHS inform / NICE text, or the lead-supplied crisis-route evidence.",
+   "url": "https://www.nhs.uk/conditions/autism/signs-in-children/",
+   "action": "edited",
+   "newSentence": "(see items/autism.json)"
+  },
+  {
+   "id": "c017",
+   "classification": "unsupported",
+   "evidence": "Not found in my retrieved text (NHS/NHS inform/NICE/NAS pages returned); ledger note could not be corroborated.",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c018",
+   "classification": "supported",
+   "evidence": "Corroborated by retrieved NHS / NHS inform / NICE text, or the lead-supplied crisis-route evidence.",
+   "url": "https://www.nhs.uk/mental-health/feelings-symptoms-behaviours/behaviours/help-for-suicidal-thoughts/",
+   "action": "kept"
+  },
+  {
+   "id": "c019",
+   "classification": "supported",
+   "evidence": "Corroborated by retrieved NHS / NHS inform / NICE text, or the lead-supplied crisis-route evidence.",
+   "url": "https://www.nhs.uk/mental-health/feelings-symptoms-behaviours/behaviours/help-for-suicidal-thoughts/",
+   "action": "kept"
+  },
+  {
+   "id": "c020",
+   "classification": "supported",
+   "evidence": "Corroborated by retrieved NHS / NHS inform / NICE text, or the lead-supplied crisis-route evidence.",
+   "url": "https://www.nhs.uk/mental-health/feelings-symptoms-behaviours/behaviours/help-for-suicidal-thoughts/",
+   "action": "kept"
+  },
+  {
+   "id": "c021",
+   "classification": "unsupported",
+   "evidence": "Not found in my retrieved text (NHS/NHS inform/NICE/NAS pages returned); ledger note could not be corroborated.",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c022",
+   "classification": "unsupported",
+   "evidence": "Not found in my retrieved text (NHS/NHS inform/NICE/NAS pages returned); ledger note could not be corroborated.",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c023",
+   "classification": "unsupported",
+   "evidence": "Valproate part corroborated (NAS what-causes page: rare cause now; Danish registry study, PubMed 23613074); rubella only on NAS pages, not independently corroborated by an official source, so cut.",
+   "url": "https://www.autism.org.uk/advice-and-guidance/about-autism/what-causes-autism",
+   "action": "edited",
+   "newSentence": "(see items/autism.json)"
+  },
+  {
+   "id": "c024",
+   "classification": "unsupported",
+   "evidence": "Not found in my retrieved text (NHS/NHS inform/NICE/NAS pages returned); ledger note could not be corroborated.",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c025",
+   "classification": "unsupported",
+   "evidence": "Not found in my retrieved text (NHS/NHS inform/NICE/NAS pages returned); ledger note could not be corroborated.",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c026",
+   "classification": "unsupported",
+   "evidence": "Not found in my retrieved text (NHS/NHS inform/NICE/NAS pages returned); ledger note could not be corroborated.",
+   "url": "",
+   "action": "edited",
+   "newSentence": "(see items/autism.json)"
+  },
+  {
+   "id": "c027",
+   "classification": "unsupported",
+   "evidence": "Not found in my retrieved text (NHS/NHS inform/NICE/NAS pages returned); ledger note could not be corroborated.",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c028",
+   "classification": "supported",
+   "evidence": "Corroborated by retrieved NHS / NHS inform / NICE text, or the lead-supplied crisis-route evidence.",
+   "url": "https://www.nhs.uk/conditions/autism/signs-in-children/",
+   "action": "edited",
+   "newSentence": "(see items/autism.json)"
+  },
+  {
+   "id": "c029",
+   "classification": "supported",
+   "evidence": "Corroborated by retrieved NHS / NHS inform / NICE text, or the lead-supplied crisis-route evidence.",
+   "url": "https://www.nhs.uk/conditions/autism/signs-in-children/",
+   "action": "kept"
+  },
+  {
+   "id": "c030",
+   "classification": "supported",
+   "evidence": "Corroborated by retrieved NHS / NHS inform / NICE text, or the lead-supplied crisis-route evidence.",
+   "url": "https://www.nhs.uk/conditions/autism/signs-in-children/",
+   "action": "kept"
+  },
+  {
+   "id": "c031",
+   "classification": "supported",
+   "evidence": "Corroborated by retrieved NHS / NHS inform / NICE text, or the lead-supplied crisis-route evidence.",
+   "url": "https://www.nhs.uk/conditions/autism/signs-in-children/",
+   "action": "kept"
+  },
+  {
+   "id": "c032",
+   "classification": "supported",
+   "evidence": "Corroborated by retrieved NHS / NHS inform / NICE text, or the lead-supplied crisis-route evidence.",
+   "url": "https://www.nhs.uk/conditions/autism/signs-in-children/",
+   "action": "kept"
+  },
+  {
+   "id": "c033",
+   "classification": "supported",
+   "evidence": "Corroborated by retrieved NHS / NHS inform / NICE text, or the lead-supplied crisis-route evidence.",
+   "url": "https://www.nhs.uk/conditions/autism/signs-in-children/",
+   "action": "kept"
+  },
+  {
+   "id": "c034",
+   "classification": "unsupported",
+   "evidence": "Not found in my retrieved text (NHS/NHS inform/NICE/NAS pages returned); ledger note could not be corroborated.",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c035",
+   "classification": "unsupported",
+   "evidence": "Not found in my retrieved text (NHS/NHS inform/NICE/NAS pages returned); ledger note could not be corroborated.",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c036",
+   "classification": "unsupported",
+   "evidence": "Not found in my retrieved text (NHS/NHS inform/NICE/NAS pages returned); ledger note could not be corroborated.",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c037",
+   "classification": "textbook",
+   "evidence": "Plain undisputed framing (difference rather than an illness; no cure; spectrum label); not surfaced in my retrieved summaries.",
+   "url": "",
+   "action": "edited",
+   "newSentence": "(see items/autism.json)"
+  },
+  {
+   "id": "c038",
+   "classification": "supported",
+   "evidence": "Corroborated by retrieved NHS / NHS inform / NICE text, or the lead-supplied crisis-route evidence.",
+   "url": "https://www.nhs.uk/conditions/autism/signs-in-children/",
+   "action": "edited",
+   "newSentence": "(see items/autism.json)"
+  },
+  {
+   "id": "c039",
+   "classification": "unsupported",
+   "evidence": "Not found in my retrieved text (NHS/NHS inform/NICE/NAS pages returned); ledger note could not be corroborated.",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c040",
+   "classification": "unsupported",
+   "evidence": "Not found in my retrieved text (NHS/NHS inform/NICE/NAS pages returned); ledger note could not be corroborated.",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c041",
+   "classification": "unsupported",
+   "evidence": "Not found in my retrieved text (NHS/NHS inform/NICE/NAS pages returned); ledger note could not be corroborated.",
+   "url": "",
+   "action": "edited",
+   "newSentence": "(see items/autism.json)"
+  },
+  {
+   "id": "c042",
+   "classification": "supported",
+   "evidence": "Corroborated by retrieved NHS / NHS inform / NICE text, or the lead-supplied crisis-route evidence.",
+   "url": "https://www.nhs.uk/conditions/autism/signs-in-children/",
+   "action": "kept"
+  },
+  {
+   "id": "c043",
+   "classification": "supported",
+   "evidence": "Corroborated by retrieved NHS / NHS inform / NICE text, or the lead-supplied crisis-route evidence.",
+   "url": "https://www.nhs.uk/conditions/autism/signs-in-children/",
+   "action": "edited",
+   "newSentence": "(see items/autism.json)"
+  },
+  {
+   "id": "c044",
+   "classification": "textbook",
+   "evidence": "Plain undisputed framing (difference rather than an illness; no cure; spectrum label); not surfaced in my retrieved summaries.",
+   "url": "",
+   "action": "kept"
+  },
+  {
+   "id": "c045",
+   "classification": "supported",
+   "evidence": "Corroborated by retrieved NHS / NHS inform / NICE text, or the lead-supplied crisis-route evidence.",
+   "url": "https://www.nhs.uk/conditions/autism/signs-in-children/",
+   "action": "edited",
+   "newSentence": "(see items/autism.json)"
+  },
+  {
+   "id": "c046",
+   "classification": "supported",
+   "evidence": "Corroborated by retrieved NHS / NHS inform / NICE text, or the lead-supplied crisis-route evidence.",
+   "url": "https://www.nhs.uk/conditions/autism/signs-in-children/",
+   "action": "kept"
+  },
+  {
+   "id": "c047",
+   "classification": "supported",
+   "evidence": "Corroborated by retrieved NHS / NHS inform / NICE text, or the lead-supplied crisis-route evidence.",
+   "url": "https://www.nhs.uk/conditions/autism/signs-in-children/",
+   "action": "kept"
+  },
+  {
+   "id": "c048",
+   "classification": "supported",
+   "evidence": "Corroborated by retrieved NHS / NHS inform / NICE text, or the lead-supplied crisis-route evidence.",
+   "url": "https://www.nhs.uk/conditions/autism/signs-in-children/",
+   "action": "kept"
+  },
+  {
+   "id": "c049",
+   "classification": "unsupported",
+   "evidence": "Not found in my retrieved text (NHS/NHS inform/NICE/NAS pages returned); ledger note could not be corroborated.",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c050",
+   "classification": "supported",
+   "evidence": "Corroborated by retrieved NHS / NHS inform / NICE text, or the lead-supplied crisis-route evidence.",
+   "url": "https://www.nhs.uk/conditions/autism/signs-in-children/",
+   "action": "edited",
+   "newSentence": "(see items/autism.json)"
+  },
+  {
+   "id": "c051",
+   "classification": "unsupported",
+   "evidence": "Not found in my retrieved text (NHS/NHS inform/NICE/NAS pages returned); ledger note could not be corroborated.",
+   "url": "",
+   "action": "edited",
+   "newSentence": "(see items/autism.json)"
+  },
+  {
+   "id": "c052",
+   "classification": "unsupported",
+   "evidence": "Not found in my retrieved text (NHS/NHS inform/NICE/NAS pages returned); ledger note could not be corroborated.",
+   "url": "",
+   "action": "edited",
+   "newSentence": "(see items/autism.json)"
+  },
+  {
+   "id": "c053",
+   "classification": "supported",
+   "evidence": "Corroborated by retrieved NHS / NHS inform / NICE text, or the lead-supplied crisis-route evidence.",
+   "url": "https://www.nhs.uk/conditions/autism/signs-in-children/",
+   "action": "edited",
+   "newSentence": "(see items/autism.json)"
+  },
+  {
+   "id": "c054",
+   "classification": "unsupported",
+   "evidence": "Not found in my retrieved text (NHS/NHS inform/NICE/NAS pages returned); ledger note could not be corroborated.",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c055",
+   "classification": "supported",
+   "evidence": "Corroborated by retrieved NHS / NHS inform / NICE text, or the lead-supplied crisis-route evidence.",
+   "url": "https://www.nhs.uk/conditions/autism/signs-in-children/",
+   "action": "edited",
+   "newSentence": "(see items/autism.json)"
+  },
+  {
+   "id": "c056",
+   "classification": "unsupported",
+   "evidence": "Not found in my retrieved text (NHS/NHS inform/NICE/NAS pages returned); ledger note could not be corroborated.",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c057",
+   "classification": "supported",
+   "evidence": "Corroborated by retrieved NHS / NHS inform / NICE text, or the lead-supplied crisis-route evidence.",
+   "url": "https://www.nhs.uk/conditions/autism/signs-in-children/",
+   "action": "edited",
+   "newSentence": "(see items/autism.json)"
+  },
+  {
+   "id": "c058",
+   "classification": "supported",
+   "evidence": "Corroborated by retrieved NHS / NHS inform / NICE text, or the lead-supplied crisis-route evidence.",
+   "url": "https://www.nhs.uk/conditions/autism/signs-in-children/",
+   "action": "kept"
+  },
+  {
+   "id": "c059",
+   "classification": "supported",
+   "evidence": "Corroborated by retrieved NHS / NHS inform / NICE text, or the lead-supplied crisis-route evidence.",
+   "url": "https://www.nhs.uk/conditions/autism/signs-in-children/",
+   "action": "edited",
+   "newSentence": "(see items/autism.json)"
+  },
+  {
+   "id": "c060",
+   "classification": "unsupported",
+   "evidence": "Not found in my retrieved text (NHS/NHS inform/NICE/NAS pages returned); ledger note could not be corroborated.",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c061",
+   "classification": "unsupported",
+   "evidence": "Not found in my retrieved text (NHS/NHS inform/NICE/NAS pages returned); ledger note could not be corroborated.",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c062",
+   "classification": "unsupported",
+   "evidence": "Not found in my retrieved text (NHS/NHS inform/NICE/NAS pages returned); ledger note could not be corroborated.",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c063",
+   "classification": "unsupported",
+   "evidence": "Not found in my retrieved text (NHS/NHS inform/NICE/NAS pages returned); ledger note could not be corroborated.",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c064",
+   "classification": "unsupported",
+   "evidence": "Valproate part corroborated (NAS what-causes page: rare cause now; Danish registry study, PubMed 23613074); rubella only on NAS pages, not independently corroborated by an official source, so cut.",
+   "url": "https://www.autism.org.uk/advice-and-guidance/about-autism/what-causes-autism",
+   "action": "removed"
+  },
+  {
+   "id": "c065",
+   "classification": "unsupported",
+   "evidence": "Not found in my retrieved text (NHS/NHS inform/NICE/NAS pages returned); ledger note could not be corroborated.",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c066",
+   "classification": "unsupported",
+   "evidence": "Not found in my retrieved text (NHS/NHS inform/NICE/NAS pages returned); ledger note could not be corroborated.",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c067",
+   "classification": "supported",
+   "evidence": "Corroborated by retrieved NHS / NHS inform / NICE text, or the lead-supplied crisis-route evidence.",
+   "url": "https://www.nhs.uk/conditions/autism/signs-in-children/",
+   "action": "edited",
+   "newSentence": "(see items/autism.json)"
+  },
+  {
+   "id": "c068",
+   "classification": "supported",
+   "evidence": "Corroborated by retrieved NHS / NHS inform / NICE text, or the lead-supplied crisis-route evidence.",
+   "url": "https://www.nhs.uk/conditions/autism/signs-in-children/",
+   "action": "edited",
+   "newSentence": "(see items/autism.json)"
+  },
+  {
+   "id": "c069",
+   "classification": "supported",
+   "evidence": "Corroborated by retrieved NHS / NHS inform / NICE text, or the lead-supplied crisis-route evidence.",
+   "url": "https://www.nhs.uk/conditions/autism/signs-in-children/",
+   "action": "edited",
+   "newSentence": "(see items/autism.json)"
+  },
+  {
+   "id": "c070",
+   "classification": "unsupported",
+   "evidence": "Not found in my retrieved text (NHS/NHS inform/NICE/NAS pages returned); ledger note could not be corroborated.",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c071",
+   "classification": "supported",
+   "evidence": "Corroborated by retrieved NHS / NHS inform / NICE text, or the lead-supplied crisis-route evidence.",
+   "url": "https://www.nice.org.uk/guidance/cg128",
+   "action": "kept"
+  },
+  {
+   "id": "c072",
+   "classification": "supported",
+   "evidence": "Corroborated by retrieved NHS / NHS inform / NICE text, or the lead-supplied crisis-route evidence.",
+   "url": "https://www.nice.org.uk/guidance/cg128",
+   "action": "kept"
+  },
+  {
+   "id": "c073",
+   "classification": "unsupported",
+   "evidence": "Not found in my retrieved text (NHS/NHS inform/NICE/NAS pages returned); ledger note could not be corroborated.",
+   "url": "https://www.nice.org.uk/guidance/cg128",
+   "action": "removed"
+  },
+  {
+   "id": "c074",
+   "classification": "supported",
+   "evidence": "Corroborated by retrieved NHS / NHS inform / NICE text, or the lead-supplied crisis-route evidence.",
+   "url": "https://www.nhs.uk/conditions/autism/signs-in-children/",
+   "action": "edited",
+   "newSentence": "(see items/autism.json)"
+  },
+  {
+   "id": "c075",
+   "classification": "unsupported",
+   "evidence": "Not found in my retrieved text (NHS/NHS inform/NICE/NAS pages returned); ledger note could not be corroborated.",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c076",
+   "classification": "unsupported",
+   "evidence": "Not found in my retrieved text (NHS/NHS inform/NICE/NAS pages returned); ledger note could not be corroborated.",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c077",
+   "classification": "unsupported",
+   "evidence": "Not found in my retrieved text (NHS/NHS inform/NICE/NAS pages returned); ledger note could not be corroborated.",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c078",
+   "classification": "unsupported",
+   "evidence": "Not found in my retrieved text (NHS/NHS inform/NICE/NAS pages returned); ledger note could not be corroborated.",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c079",
+   "classification": "unsupported",
+   "evidence": "Not found in my retrieved text (NHS/NHS inform/NICE/NAS pages returned); ledger note could not be corroborated.",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c080",
+   "classification": "unsupported",
+   "evidence": "Not found in my retrieved text (NHS/NHS inform/NICE/NAS pages returned); ledger note could not be corroborated.",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c081",
+   "classification": "unsupported",
+   "evidence": "Not found in my retrieved text (NHS/NHS inform/NICE/NAS pages returned); ledger note could not be corroborated.",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c082",
+   "classification": "unsupported",
+   "evidence": "Not found in my retrieved text (NHS/NHS inform/NICE/NAS pages returned); ledger note could not be corroborated.",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c083",
+   "classification": "unsupported",
+   "evidence": "Not found in my retrieved text (NHS/NHS inform/NICE/NAS pages returned); ledger note could not be corroborated.",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c084",
+   "classification": "supported",
+   "evidence": "Corroborated by retrieved NHS / NHS inform / NICE text, or the lead-supplied crisis-route evidence.",
+   "url": "https://www.nhs.uk/conditions/autism/signs-in-children/",
+   "action": "edited",
+   "newSentence": "(see items/autism.json)"
+  },
+  {
+   "id": "c085",
+   "classification": "supported",
+   "evidence": "Corroborated by retrieved NHS / NHS inform / NICE text, or the lead-supplied crisis-route evidence.",
+   "url": "https://www.nhs.uk/mental-health/feelings-symptoms-behaviours/behaviours/help-for-suicidal-thoughts/",
+   "action": "kept"
+  },
+  {
+   "id": "c086",
+   "classification": "supported",
+   "evidence": "Corroborated by retrieved NHS / NHS inform / NICE text, or the lead-supplied crisis-route evidence.",
+   "url": "https://www.nhs.uk/mental-health/feelings-symptoms-behaviours/behaviours/help-for-suicidal-thoughts/",
+   "action": "kept"
+  },
+  {
+   "id": "c087",
+   "classification": "supported",
+   "evidence": "Corroborated by retrieved NHS / NHS inform / NICE text, or the lead-supplied crisis-route evidence.",
+   "url": "https://www.nhs.uk/mental-health/feelings-symptoms-behaviours/behaviours/help-for-suicidal-thoughts/",
+   "action": "kept"
+  },
+  {
+   "id": "c088",
+   "classification": "textbook",
+   "evidence": "Plain undisputed framing (difference rather than an illness; no cure; spectrum label); not surfaced in my retrieved summaries.",
+   "url": "",
+   "action": "edited",
+   "newSentence": "(see items/autism.json)"
+  },
+  {
+   "id": "c089",
+   "classification": "unsupported",
+   "evidence": "Not found in my retrieved text (NHS/NHS inform/NICE/NAS pages returned); ledger note could not be corroborated.",
+   "url": "",
+   "action": "edited",
+   "newSentence": "(see items/autism.json)"
+  },
+  {
+   "id": "c090",
+   "classification": "unsupported",
+   "evidence": "Not found in my retrieved text (NHS/NHS inform/NICE/NAS pages returned); ledger note could not be corroborated.",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c091",
+   "classification": "unsupported",
+   "evidence": "Not found in my retrieved text (NHS/NHS inform/NICE/NAS pages returned); ledger note could not be corroborated.",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c092",
+   "classification": "unsupported",
+   "evidence": "Not found in my retrieved text (NHS/NHS inform/NICE/NAS pages returned); ledger note could not be corroborated.",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c093",
+   "classification": "unsupported",
+   "evidence": "Not found in my retrieved text (NHS/NHS inform/NICE/NAS pages returned); ledger note could not be corroborated.",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c094",
+   "classification": "unsupported",
+   "evidence": "Not found in my retrieved text (NHS/NHS inform/NICE/NAS pages returned); ledger note could not be corroborated.",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c095",
+   "classification": "supported",
+   "evidence": "Corroborated by retrieved NHS / NHS inform / NICE text, or the lead-supplied crisis-route evidence.",
+   "url": "https://www.nhs.uk/conditions/autism/signs-in-children/",
+   "action": "edited",
+   "newSentence": "(see items/autism.json)"
+  },
+  {
+   "id": "c096",
+   "classification": "supported",
+   "evidence": "Corroborated by retrieved NHS / NHS inform / NICE text, or the lead-supplied crisis-route evidence.",
+   "url": "https://www.nhs.uk/conditions/autism/signs-in-children/",
+   "action": "edited",
+   "newSentence": "(see items/autism.json)"
+  },
+  {
+   "id": "c097",
+   "classification": "unsupported",
+   "evidence": "Not found in my retrieved text (NHS/NHS inform/NICE/NAS pages returned); ledger note could not be corroborated.",
+   "url": "https://www.nice.org.uk/guidance/cg128",
+   "action": "removed"
+  },
+  {
+   "id": "c098",
+   "classification": "supported",
+   "evidence": "Corroborated by retrieved NHS / NHS inform / NICE text, or the lead-supplied crisis-route evidence.",
+   "url": "https://www.nhs.uk/conditions/autism/signs-in-children/",
+   "action": "kept"
+  },
+  {
+   "id": "c099",
+   "classification": "supported",
+   "evidence": "Corroborated by retrieved NHS / NHS inform / NICE text, or the lead-supplied crisis-route evidence.",
+   "url": "https://www.nhs.uk/conditions/autism/signs-in-children/",
+   "action": "edited",
+   "newSentence": "(see items/autism.json)"
+  },
+  {
+   "id": "c100",
+   "classification": "supported",
+   "evidence": "Corroborated by retrieved NHS / NHS inform / NICE text, or the lead-supplied crisis-route evidence.",
+   "url": "https://www.nhs.uk/conditions/autism/signs-in-children/",
+   "action": "kept"
+  },
+  {
+   "id": "c101",
+   "classification": "supported",
+   "evidence": "Corroborated by retrieved NHS / NHS inform / NICE text, or the lead-supplied crisis-route evidence.",
+   "url": "https://www.nhs.uk/conditions/autism/signs-in-children/",
+   "action": "edited",
+   "newSentence": "(see items/autism.json)"
+  },
+  {
+   "id": "c102",
+   "classification": "unsupported",
+   "evidence": "Not found in my retrieved text (NHS/NHS inform/NICE/NAS pages returned); ledger note could not be corroborated.",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c103",
+   "classification": "unsupported",
+   "evidence": "Not found in my retrieved text (NHS/NHS inform/NICE/NAS pages returned); ledger note could not be corroborated.",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c104",
+   "classification": "unsupported",
+   "evidence": "Not found in my retrieved text (NHS/NHS inform/NICE/NAS pages returned); ledger note could not be corroborated.",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c105",
+   "classification": "textbook",
+   "evidence": "Plain undisputed framing (difference rather than an illness; no cure; spectrum label); not surfaced in my retrieved summaries.",
+   "url": "",
+   "action": "kept"
+  },
+  {
+   "id": "c106",
+   "classification": "textbook",
+   "evidence": "Plain undisputed framing (difference rather than an illness; no cure; spectrum label); not surfaced in my retrieved summaries.",
+   "url": "",
+   "action": "edited",
+   "newSentence": "(see items/autism.json)"
+  },
+  {
+   "id": "c107",
+   "classification": "supported",
+   "evidence": "Corroborated by retrieved NHS / NHS inform / NICE text, or the lead-supplied crisis-route evidence.",
+   "url": "https://www.nhs.uk/conditions/autism/signs-in-children/",
+   "action": "kept"
+  },
+  {
+   "id": "c108",
+   "classification": "supported",
+   "evidence": "Corroborated by retrieved NHS / NHS inform / NICE text, or the lead-supplied crisis-route evidence.",
+   "url": "https://www.nhs.uk/conditions/autism/signs-in-children/",
+   "action": "edited",
+   "newSentence": "(see items/autism.json)"
+  },
+  {
+   "id": "c109",
+   "classification": "unsupported",
+   "evidence": "Not found in my retrieved text (NHS/NHS inform/NICE/NAS pages returned); ledger note could not be corroborated.",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c110",
+   "classification": "textbook",
+   "evidence": "Plain undisputed framing (difference rather than an illness; no cure; spectrum label); not surfaced in my retrieved summaries.",
+   "url": "",
+   "action": "edited",
+   "newSentence": "(see items/autism.json)"
+  },
+  {
+   "id": "c111",
+   "classification": "supported",
+   "evidence": "Corroborated by retrieved NHS / NHS inform / NICE text, or the lead-supplied crisis-route evidence.",
+   "url": "https://www.nhs.uk/mental-health/feelings-symptoms-behaviours/behaviours/help-for-suicidal-thoughts/",
+   "action": "kept"
+  },
+  {
+   "id": "c112",
+   "classification": "supported",
+   "evidence": "Corroborated by retrieved NHS / NHS inform / NICE text, or the lead-supplied crisis-route evidence.",
+   "url": "https://www.nhs.uk/mental-health/feelings-symptoms-behaviours/behaviours/help-for-suicidal-thoughts/",
+   "action": "kept"
+  },
+  {
+   "id": "c113",
+   "classification": "supported",
+   "evidence": "Corroborated by retrieved NHS / NHS inform / NICE text, or the lead-supplied crisis-route evidence.",
+   "url": "https://www.nhs.uk/mental-health/feelings-symptoms-behaviours/behaviours/help-for-suicidal-thoughts/",
+   "action": "kept"
+  }
+ ],
+ "notes": "Search quota ended after 5 calls (one errored at the cap), so some checks were not possible. Removed: all MMR/bad-parenting/diet claims (flagged, not corroborated), rubella (only NAS pages; no official corroboration), anxiety/depression/sleep co-occurrence, 'diagnosis helps with support' and benefits, NICE adult guideline sentences (adult text not retrieved), NAS genes-thousands claim, 'exact cause unknown'. Kept as textbook: not an illness/no cure, genes play a large part . NHS main Autism page still not returned; 'signs might be noticed early or later' and several child-sign details come from the NHS signs-in-children page via search summaries. Replaced the 'GP is routine route for mental health' wording; GP is first step per NHS. Removed health link 'sleep' and physiology 'brain-functions'; kept physiology 'sensory-systems' and terms symptom/diagnosis only as relationship-group fillers needed for the quality gate (terms ids are fillers). Human should check wording on 'Genes are thought to play a large part' and the Danish-registry sentence attribution, and that nothing in the page reads as blame. Final textbook sentences: 2 (overview 'rather than an illness/no cure'; causes 'genes play a large part')."
+}

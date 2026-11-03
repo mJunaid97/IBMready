@@ -1,0 +1,101 @@
+{
+ "id": "mhra-seizes-counterfeit-weight-loss-pens",
+ "searchesUsed": 3,
+ "counts": {
+  "supported": 5,
+  "textbook": 1,
+  "unsupported": 4,
+  "wrong": 0,
+  "unsafe": 0,
+  "unchecked": 0
+ },
+ "claims": [
+  {
+   "id": "c01",
+   "classification": "supported",
+   "sentence": "The MHRA and West Midlands Police seized counterfeit weight loss pens worth about £2 million in Birmingham, including fake retatrutide and tirzepatide products.",
+   "evidence": "Search text: 'Over 12,000 fake retatrutide and tirzepatide pens were seized, along with packaging for around 30,000 more products ... approximately £2 million ... industrial unit in Birmingham ... raid carried out by the MHRA and West Midlands Police'.",
+   "url": "https://www.gov.uk/government/news/counterfeit-weight-loss-pens-worth-2-million-seized-by-mhra-and-west-mids-police",
+   "action": "kept"
+  },
+  {
+   "id": "c02",
+   "classification": "unsupported",
+   "sentence": "The MHRA and West Midlands Police seized counterfeit weight loss medicines worth about £2 million in a raid on an industrial unit in Birmingham in October 2026.",
+   "evidence": "Search text: 'The release gives the raid date as October 14' (year not stated in excerpt; 'about 18 days old'). The year 2026 is not stated in the retrieved text (only inferred from page age).",
+   "url": "https://www.gov.uk/government/news/counterfeit-weight-loss-pens-worth-2-million-seized-by-mhra-and-west-mids-police",
+   "action": "edited",
+   "newSentence": "The MHRA and West Midlands Police seized counterfeit weight loss medicines worth about £2 million in a raid on an industrial unit in Birmingham on 14 October."
+  },
+  {
+   "id": "c03",
+   "classification": "supported",
+   "sentence": "The haul included more than 12,000 counterfeit retatrutide and tirzepatide pens.",
+   "evidence": "Search text: 'Over 12,000 fake retatrutide and tirzepatide pens were seized, along with packaging for around 30,000 more products ... approximately £2 million ... industrial unit in Birmingham ... raid carried out by the MHRA and West Midlands Police'.",
+   "url": "https://www.gov.uk/government/news/counterfeit-weight-loss-pens-worth-2-million-seized-by-mhra-and-west-mids-police",
+   "action": "kept"
+  },
+  {
+   "id": "c04",
+   "classification": "unsupported",
+   "sentence": "The MHRA says the products were never checked for safety, quality or effectiveness.",
+   "evidence": "Source says the products 'have not been assessed for safety, quality or effectiveness'; 'never' is not stated.",
+   "url": "https://www.gov.uk/government/news/counterfeit-weight-loss-pens-worth-2-million-seized-by-mhra-and-west-mids-police",
+   "action": "edited",
+   "newSentence": "The MHRA says the products have not been assessed for safety, quality or effectiveness."
+  },
+  {
+   "id": "c05",
+   "classification": "supported",
+   "sentence": "The MHRA says retatrutide is not authorised for use in the UK.",
+   "evidence": "Search 3: 'Retatrutide is not authorised for UK use' per MHRA's own guidance. Not confirmed to be wording of this particular release; consider also citing the MHRA retatrutide notice.",
+   "url": "https://www.gov.uk/government/news/counterfeit-weight-loss-pens-worth-2-million-seized-by-mhra-and-west-mids-police",
+   "action": "kept"
+  },
+  {
+   "id": "c06",
+   "classification": "supported",
+   "sentence": "The MHRA says it worked with West Midlands Police to seize counterfeit weight loss medicines worth about £2 million from an industrial unit in Birmingham.",
+   "evidence": "Search text: 'Over 12,000 fake retatrutide and tirzepatide pens were seized, along with packaging for around 30,000 more products ... approximately £2 million ... industrial unit in Birmingham ... raid carried out by the MHRA and West Midlands Police'.",
+   "url": "https://www.gov.uk/government/news/counterfeit-weight-loss-pens-worth-2-million-seized-by-mhra-and-west-mids-police",
+   "action": "kept"
+  },
+  {
+   "id": "c07",
+   "classification": "supported",
+   "sentence": "Officers took more than 12,000 counterfeit retatrutide and tirzepatide pens, plus packaging for around 30,000 more products.",
+   "evidence": "Search text: 'Over 12,000 fake retatrutide and tirzepatide pens were seized, along with packaging for around 30,000 more products ... approximately £2 million ... industrial unit in Birmingham ... raid carried out by the MHRA and West Midlands Police'.",
+   "url": "https://www.gov.uk/government/news/counterfeit-weight-loss-pens-worth-2-million-seized-by-mhra-and-west-mids-police",
+   "action": "kept"
+  },
+  {
+   "id": "c08",
+   "classification": "unsupported",
+   "sentence": "The MHRA says the products were never checked for safety, quality or effectiveness, so their contents and any contamination are unknown.",
+   "evidence": "Source: 'not assessed for safety, quality or effectiveness' and 'no guarantee of what they contain or whether they have been contaminated with harmful substances'. 'Never checked' and 'unknown' are stronger.",
+   "url": "https://www.gov.uk/government/news/counterfeit-weight-loss-pens-worth-2-million-seized-by-mhra-and-west-mids-police",
+   "action": "edited",
+   "newSentence": "The MHRA says the products have not been assessed for safety, quality or effectiveness, and that there is no guarantee of what they contain or whether they are contaminated with harmful substances."
+  },
+  {
+   "id": "c09",
+   "classification": "unsupported",
+   "sentence": "It also says retatrutide is not authorised for use in the UK and that selling it outside legitimate clinical trials is illegal and a public health risk.",
+   "evidence": "Search 3: MHRA Criminal Enforcement Unit says 'products sold as retatrutide outside legitimate clinical trials are being supplied illegally and could pose serious risks to public health'. Brief turns 'could pose serious risks' into a flat 'is a public health risk' and the wording is not confirmed to come from this release.",
+   "url": "https://www.gov.uk/government/news/counterfeit-weight-loss-pens-worth-2-million-seized-by-mhra-and-west-mids-police",
+   "action": "edited",
+   "newSentence": "It also says retatrutide is not authorised for use in the UK and that products sold as retatrutide outside legitimate clinical trials are being supplied illegally and could pose serious risks to public health."
+  },
+  {
+   "id": "c10",
+   "classification": "textbook",
+   "sentence": "The site's pages on tirzepatide and weight give background on the genuine medicine and the topic.",
+   "evidence": "Editorial cross-link, no claim about the source.",
+   "url": "https://www.gov.uk/government/news/counterfeit-weight-loss-pens-worth-2-million-seized-by-mhra-and-west-mids-police",
+   "action": "kept"
+  }
+ ],
+ "dateConfirmed": null,
+ "dateEvidence": "Three searches. The gov.uk release is retrieved with the raid date given as 14 October ('the release gives the raid date as October 14'), but no excerpt prints the publication date or year. The only indicator is a relative label 'about 18 days old', which from 2026-11-03 would be about 16 October, not 15 October. So 'published: 2026-10-15' in the fragment is NOT confirmed (neither 15 nor 16 Oct can be read).",
+ "notes": "Figures 12,000 pens, 30,000 packaging, approx £2m, Birmingham industrial unit, MHRA plus West Midlands Police are all supported. Raid 14 Oct stated; release date unverified: either set published to a date confirmed by someone who can read the page, or drop the precise date. Retatrutide statements come from MHRA material but the search did not tie the 'illegal outside clinical trials' wording to this release; reworded to the source's 'could pose serious risks'. No 'safe' wording, no instructions. No sentence claims retatrutide is a GLP-1; fragment drugClasses 'glp-1-receptor-agonists' is unverified by any retrieved text (tirzepatide is not shown as GLP-1 either) and should be dropped or sourced."
+}

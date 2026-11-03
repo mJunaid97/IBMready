@@ -1,0 +1,904 @@
+{
+ "id": "meningitis",
+ "searchesUsed": 14,
+ "counts": {
+  "supported": 77,
+  "textbook": 2,
+  "unsupported": 25,
+  "wrong": 2,
+  "unsafe": 0,
+  "unchecked": 0
+ },
+ "claims": [
+  {
+   "id": "c01",
+   "sentence": "Meningitis is an infection of the protective membranes that surround the brain and spinal cord.",
+   "classification": "textbook",
+   "evidence": "Plain textbook definition of meningitis; not quoted in retrieved text.",
+   "url": "https://www.nhs.uk/conditions/meningitis/",
+   "action": "kept"
+  },
+  {
+   "id": "c02",
+   "sentence": "The NHS says meningitis is usually caused by a viral or bacterial infection, and fungi can also be a cause.",
+   "classification": "supported",
+   "evidence": "NHS: caused by viral or bacterial infection; summaries mention fungi (Meningitis Now, CDC).",
+   "url": "https://www.nhs.uk/conditions/meningitis/",
+   "action": "kept"
+  },
+  {
+   "id": "c03",
+   "sentence": "Viral meningitis is the most common type and the least serious, while bacterial meningitis is the more serious form and needs treatment in hospital.",
+   "classification": "supported",
+   "evidence": "NHS: viral most common and least serious; bacterial more serious, hospital treatment.",
+   "url": "https://www.nhs.uk/conditions/meningitis/",
+   "action": "kept"
+  },
+  {
+   "id": "c04",
+   "sentence": "Symptoms can develop suddenly.",
+   "classification": "supported",
+   "evidence": "NHS symptoms page: symptoms can develop suddenly.",
+   "url": "https://www.nhs.uk/conditions/meningitis/symptoms/",
+   "action": "kept"
+  },
+  {
+   "id": "c05",
+   "sentence": "The NHS gives the same emergency advice for meningitis and sepsis: call 999 or go to A&E.",
+   "classification": "supported",
+   "evidence": "NHS: call 999 or go to A&E immediately if meningitis or sepsis suspected.",
+   "url": "https://www.nhs.uk/conditions/meningitis/",
+   "action": "kept"
+  },
+  {
+   "id": "c06",
+   "sentence": "Vaccination is the main way of preventing some bacterial causes.",
+   "classification": "supported",
+   "evidence": "NHS vaccination page: several vaccines give some protection; WHO: vaccines offer best protection against common bacterial types.",
+   "url": "https://www.nhs.uk/conditions/meningitis/vaccination/",
+   "action": "edited",
+   "newSentence": "Vaccination is the main way of preventing some causes of meningitis."
+  },
+  {
+   "id": "c07",
+   "sentence": "A viral or bacterial infection is the usual cause.",
+   "classification": "supported",
+   "evidence": "NHS: usually viral or bacterial infection.",
+   "url": "https://www.nhs.uk/conditions/meningitis/",
+   "action": "kept"
+  },
+  {
+   "id": "c08",
+   "sentence": "Fungi can also cause meningitis, and fungal cases develop more slowly.",
+   "classification": "supported",
+   "evidence": "Meningitis Now: fungal meningitis often develops slowly with vague symptoms; CDC: antifungal treatment.",
+   "url": "https://www.meningitisnow.org/meningitis-explained/types-of-meningitis/fungal-meningitis/",
+   "action": "edited",
+   "newSentence": "Fungi can also cause meningitis, and fungal cases often develop slowly."
+  },
+  {
+   "id": "c09",
+   "sentence": "Viral meningitis is the most common type and the least serious.",
+   "classification": "supported",
+   "evidence": "NHS: viral most common, least serious.",
+   "url": "https://www.nhs.uk/conditions/meningitis/",
+   "action": "kept"
+  },
+  {
+   "id": "c10",
+   "sentence": "Bacterial meningitis is the more serious form.",
+   "classification": "supported",
+   "evidence": "NHS: bacterial is the more serious form.",
+   "url": "https://www.nhs.uk/conditions/meningitis/",
+   "action": "kept"
+  },
+  {
+   "id": "c11",
+   "sentence": "The infections spread through close contact with someone who carries the infection.",
+   "classification": "supported",
+   "evidence": "NHS: spreads mainly through very close contact with a person carrying the infection, even without symptoms.",
+   "url": "https://www.nhs.uk/conditions/meningitis/",
+   "action": "edited",
+   "newSentence": "The infections spread mainly through very close contact with a person carrying the infection."
+  },
+  {
+   "id": "c12",
+   "sentence": "Prolonged close contact with a person who has meningococcal disease in a household-type setting in the days before their illness began.",
+   "classification": "supported",
+   "evidence": "UKHSA: prolonged close contact in household-type setting during 7 days before onset.",
+   "url": "https://assets.publishing.service.gov.uk/media/694a83a9033693d5d50eb8f7/Meningo-disease-guidelines-2025.pdf",
+   "action": "kept"
+  },
+  {
+   "id": "c13",
+   "sentence": "UKHSA lists household members, partners and university students who share a kitchen as examples of close contacts.",
+   "classification": "unsupported",
+   "evidence": "UKHSA text retrieved lists household-type contact, intimate kissing and respiratory secretions; partners and university shared kitchens not found (summary said shared kitchen is not a standard trigger).",
+   "url": "https://assets.publishing.service.gov.uk/media/694a83a9033693d5d50eb8f7/Meningo-disease-guidelines-2025.pdf",
+   "action": "edited",
+   "newSentence": "UKHSA also counts intimate kissing or equivalent close contact, and exposure to respiratory secretions, as close contact with a case."
+  },
+  {
+   "id": "c14",
+   "sentence": "A rash that does not fade when a glass is pressed against it is a key warning sign, though not everyone with meningitis has one.",
+   "classification": "supported",
+   "evidence": "NHS: non-fading rash is a warning sign but may not always develop.",
+   "url": "https://www.nhs.uk/conditions/meningitis/symptoms/",
+   "action": "kept"
+  },
+  {
+   "id": "c15",
+   "sentence": "A stiff neck.",
+   "classification": "supported",
+   "evidence": "NHS symptoms list: stiff neck.",
+   "url": "https://www.nhs.uk/conditions/meningitis/symptoms/",
+   "action": "kept"
+  },
+  {
+   "id": "c16",
+   "sentence": "Seizures.",
+   "classification": "unsupported",
+   "evidence": "Seizures as a symptom/sign not returned in any retrieved symptom list (NHS lists seizures as a complication).",
+   "url": "https://www.nhs.uk/conditions/meningitis/complications/",
+   "action": "removed"
+  },
+  {
+   "id": "c17",
+   "sentence": "In babies, a bulging soft spot on the top of the head.",
+   "classification": "supported",
+   "evidence": "NHS: bulging soft spot on head in babies; WHO: bulging fontanelle in infants.",
+   "url": "https://www.nhs.uk/conditions/meningitis/symptoms/",
+   "action": "kept"
+  },
+  {
+   "id": "c18",
+   "sentence": "Early signs of sepsis alongside suspected meningococcal disease.",
+   "classification": "unsupported",
+   "evidence": "NICE sepsis-feature wording not returned by search.",
+   "url": "https://www.nice.org.uk/guidance/ng240/chapter/Recommendations",
+   "action": "removed"
+  },
+  {
+   "id": "c19",
+   "sentence": "Meningococcal disease may be missed in older adults who have delirium or altered consciousness.",
+   "classification": "supported",
+   "evidence": "NICE: bacterial meningitis may be missed in older adults with delirium or altered consciousness (scope was bacterial meningitis).",
+   "url": "https://www.nice.org.uk/guidance/ng240/chapter/Recommendations",
+   "action": "edited",
+   "newSentence": "Bacterial meningitis may be missed in older adults who have delirium or altered consciousness."
+  },
+  {
+   "id": "c20",
+   "sentence": "Hearing loss or vision loss.",
+   "classification": "supported",
+   "evidence": "NHS: long-term problems include hearing or vision loss.",
+   "url": "https://www.nhs.uk/conditions/meningitis/complications/",
+   "action": "kept"
+  },
+  {
+   "id": "c21",
+   "sentence": "Seizures, including epilepsy.",
+   "classification": "unsupported",
+   "evidence": "NHS lists seizures; \"including epilepsy\" not returned.",
+   "url": "https://www.nhs.uk/conditions/meningitis/complications/",
+   "action": "edited",
+   "newSentence": "Seizures."
+  },
+  {
+   "id": "c22",
+   "sentence": "Problems with movement, balance and coordination.",
+   "classification": "supported",
+   "evidence": "NHS: problems with movement and co-ordination.",
+   "url": "https://www.nhs.uk/conditions/meningitis/complications/",
+   "action": "kept"
+  },
+  {
+   "id": "c23",
+   "sentence": "Difficulty with memory and concentration.",
+   "classification": "supported",
+   "evidence": "NHS: problems with memory and concentration.",
+   "url": "https://www.nhs.uk/conditions/meningitis/complications/",
+   "action": "kept"
+  },
+  {
+   "id": "c24",
+   "sentence": "Loss of digits or limbs in some people.",
+   "classification": "supported",
+   "evidence": "NHS: prosthetic limbs and rehabilitation if amputation needed; Meningitis Now: amputation may be needed in severe septicaemia.",
+   "url": "https://www.nhs.uk/conditions/meningitis/complications/",
+   "action": "kept"
+  },
+  {
+   "id": "c25",
+   "sentence": "Sepsis.",
+   "classification": "supported",
+   "evidence": "WHO: bloodstream infection can quickly lead to sepsis.",
+   "url": "https://www.who.int/news-room/fact-sheets/detail/meningitis",
+   "action": "kept"
+  },
+  {
+   "id": "c26",
+   "sentence": "The doctor examines the person, asks about symptoms and may arrange blood tests and a lumbar puncture, which collects a sample of cerebrospinal fluid for examination.",
+   "classification": "supported",
+   "evidence": "NHS: physical exam, blood tests, lumbar puncture.",
+   "url": "https://www.nhs.uk/conditions/meningitis/treatment/",
+   "action": "kept"
+  },
+  {
+   "id": "c27",
+   "sentence": "A CT scan may be used to look for brain problems such as swelling.",
+   "classification": "supported",
+   "evidence": "NHS: CT scan to look for problems such as swelling.",
+   "url": "https://www.nhs.uk/conditions/meningitis/treatment/",
+   "action": "kept"
+  },
+  {
+   "id": "c28",
+   "sentence": "When bacterial infection is suspected, antibiotics usually start before the diagnosis is confirmed, and the WHO says a lumbar puncture should never delay them.",
+   "classification": "supported",
+   "evidence": "NHS: antibiotics usually start before diagnosis confirmed, stopped if viral; WHO: LP should never delay antibiotics.",
+   "url": "https://www.who.int/news-room/fact-sheets/detail/meningitis",
+   "action": "kept"
+  },
+  {
+   "id": "c29",
+   "sentence": "Treatment depends on whether the cause is viral or bacterial.",
+   "classification": "supported",
+   "evidence": "NHS: treatment depends on viral or bacterial cause.",
+   "url": "https://www.nhs.uk/conditions/meningitis/treatment/",
+   "action": "kept"
+  },
+  {
+   "id": "c30",
+   "sentence": "Bacterial meningitis is treated in hospital, usually for at least a week, with antibiotics and fluids given into a vein and oxygen through a face mask if needed.",
+   "classification": "supported",
+   "evidence": "NHS: bacterial treated in hospital, usually at least a week; antibiotics and fluids into a vein, oxygen via face mask.",
+   "url": "https://www.nhs.uk/conditions/meningitis/treatment/",
+   "action": "kept"
+  },
+  {
+   "id": "c31",
+   "sentence": "Steroid medicine is sometimes added to reduce swelling around the brain.",
+   "classification": "supported",
+   "evidence": "NHS Wales: steroids may be given in some cases to reduce swelling around brain; WHO: corticosteroids with first antibiotic dose in non-epidemic settings.",
+   "url": "https://www.who.int/news-room/fact-sheets/detail/meningitis",
+   "action": "edited",
+   "newSentence": "Steroid medicine may be given in some cases to reduce swelling around the brain."
+  },
+  {
+   "id": "c32",
+   "sentence": "Viral meningitis usually improves on its own within 7 to 10 days and can often be managed at home with rest, painkillers and anti-sickness medicine.",
+   "classification": "supported",
+   "evidence": "NHS: viral meningitis tends to get better within 7 to 10 days; rest, painkillers, anti-sickness medicine at home.",
+   "url": "https://www.nhs.uk/conditions/meningitis/treatment/",
+   "action": "kept"
+  },
+  {
+   "id": "c33",
+   "sentence": "Fungal meningitis is treated with antifungal medicine.",
+   "classification": "supported",
+   "evidence": "CDC: fungal meningitis treated with antifungal medicines.",
+   "url": "https://www.cdc.gov/meningitis/about/fungal-meningitis.html",
+   "action": "kept"
+  },
+  {
+   "id": "c34",
+   "sentence": "The NHS describes vaccination as the main way to prevent some causes of meningitis, with MenB for babies, MenACWY for teenagers and the 6-in-1, pneumococcal and MMRV vaccines in the routine schedule.",
+   "classification": "supported",
+   "evidence": "NHS vaccination page lists MenB, 6-in-1, pneumococcal, MMRV, MenACWY (school year 9).",
+   "url": "https://www.nhs.uk/conditions/meningitis/vaccination/",
+   "action": "kept"
+  },
+  {
+   "id": "c35",
+   "sentence": "Close contacts of someone with meningococcal disease are offered antibiotics to clear the bacteria from the nose.",
+   "classification": "unsupported",
+   "evidence": "UKHSA: preventive antibiotics offered ideally within 24 hours; \"clear bacteria from the nose\" not in retrieved text.",
+   "url": "https://assets.publishing.service.gov.uk/media/694a83a9033693d5d50eb8f7/Meningo-disease-guidelines-2025.pdf",
+   "action": "edited",
+   "newSentence": "Close contacts of someone with meningococcal disease are offered preventive antibiotics."
+  },
+  {
+   "id": "c36",
+   "sentence": "The NHS advises calling 999 or going to the nearest A&E immediately if meningitis or sepsis is suspected, and says that waiting for every symptom or for a rash is not advised.",
+   "classification": "unsupported",
+   "evidence": "NHS: call 999/A&E; \"waiting for every symptom or rash is not advised\" not retrieved; NHS says rash may not always develop.",
+   "url": "https://www.nhs.uk/conditions/meningitis/",
+   "action": "edited",
+   "newSentence": "The NHS advises calling 999 or going to the nearest A&E immediately if meningitis or sepsis is suspected, and notes that a rash does not always develop."
+  },
+  {
+   "id": "c37",
+   "sentence": "NHS 111 can advise when it is unclear whether symptoms are serious.",
+   "classification": "textbook",
+   "evidence": "Standard NHS 111 signposting; not in retrieved excerpts.",
+   "url": "https://111.nhs.uk/",
+   "action": "kept"
+  },
+  {
+   "id": "c38",
+   "sentence": "UKHSA guidance says close contacts who become unwell should seek urgent medical attention even if they took preventive antibiotics.",
+   "classification": "unsupported",
+   "evidence": "UKHSA: close contacts should seek medical advice if unwell; \"urgent ... even if took antibiotics\" not retrieved.",
+   "url": "https://assets.publishing.service.gov.uk/media/694a83a9033693d5d50eb8f7/Meningo-disease-guidelines-2025.pdf",
+   "action": "edited",
+   "newSentence": "UKHSA guidance says close contacts who become unwell should seek medical advice."
+  },
+  {
+   "id": "c39",
+   "sentence": "The NHS says meningitis symptoms can develop suddenly.",
+   "classification": "supported",
+   "evidence": "NHS symptoms page.",
+   "url": "https://www.nhs.uk/conditions/meningitis/symptoms/",
+   "action": "kept"
+  },
+  {
+   "id": "c40",
+   "sentence": "They include a high temperature, very cold hands and feet, a stiff neck, joint and muscle pain, a severe headache that keeps getting worse, and seizures.",
+   "classification": "unsupported",
+   "evidence": "Retrieved NHS list: high temperature, cold hands and feet, stiff neck, joint and muscle pain, severe worsening headache; seizures not returned.",
+   "url": "https://www.nhs.uk/conditions/meningitis/symptoms/",
+   "action": "edited",
+   "newSentence": "Seizures removed from the list; flu-like early symptoms added."
+  },
+  {
+   "id": "c41",
+   "sentence": "A rash that does not fade when a glass is pressed against it is a key warning sign, but not everyone with meningitis develops spots or a rash.",
+   "classification": "supported",
+   "evidence": "NHS: non-fading rash key warning sign, not always present.",
+   "url": "https://www.nhs.uk/conditions/meningitis/symptoms/",
+   "action": "kept"
+  },
+  {
+   "id": "c42",
+   "sentence": "Babies and young children can show different signs, such as refusing feeds, being irritable, having a high-pitched cry or having a bulging soft spot on the top of the head.",
+   "classification": "supported",
+   "evidence": "NHS: refusing feeds, high-pitched cry, bulging soft spot; WHO: infants irritable, drowsy.",
+   "url": "https://www.nhs.uk/conditions/meningitis/symptoms/",
+   "action": "edited",
+   "newSentence": "Babies and young children can show different signs, such as refusing feeds, a high-pitched cry or a bulging soft spot on the top of the head."
+  },
+  {
+   "id": "c43",
+   "sentence": "The WHO notes that symptoms can differ depending on the cause and how quickly the illness progresses, and that serious complications such as sepsis can occur.",
+   "classification": "unsupported",
+   "evidence": "WHO text retrieved says infants often have different symptoms, not that symptoms depend on speed of progression.",
+   "url": "https://www.who.int/news-room/fact-sheets/detail/meningitis",
+   "action": "edited",
+   "newSentence": "The WHO adds that infants often have different symptoms from adults, including unusual drowsiness or inactivity and irritability."
+  },
+  {
+   "id": "c44",
+   "sentence": "Several NHS pages say that the full set of symptoms, or a rash, should not be waited for.",
+   "classification": "unsupported",
+   "evidence": "No retrieved NHS text says people should not wait for a rash or full symptom set.",
+   "url": "https://www.nhs.uk/conditions/meningitis/",
+   "action": "removed"
+  },
+  {
+   "id": "c45",
+   "sentence": "The NICE guideline lists a rash that does not fade under pressure and early signs of sepsis as features that should raise suspicion of meningococcal disease.",
+   "classification": "unsupported",
+   "evidence": "NICE retrieved: non-blanching rash mainly in meningococcal disease; sepsis-feature wording not returned.",
+   "url": "https://www.nice.org.uk/guidance/ng240/chapter/Recommendations",
+   "action": "edited",
+   "newSentence": "The NICE guideline says a non-blanching rash is mainly associated with meningococcal disease, and that bacterial meningitis should not be ruled out just because a person lacks some of the listed signs."
+  },
+  {
+   "id": "c46",
+   "sentence": "It also notes that the disease may be missed in older adults who have delirium or altered consciousness.",
+   "classification": "supported",
+   "evidence": "NICE: missed in older adults with delirium; fever less common in older adults.",
+   "url": "https://www.nice.org.uk/guidance/ng240/chapter/Recommendations",
+   "action": "edited",
+   "newSentence": "It notes that bacterial meningitis may be missed in older adults with delirium or altered consciousness, and that fever is less common in older adults."
+  },
+  {
+   "id": "c47",
+   "sentence": "The NHS says meningitis is usually caused by a viral or bacterial infection.",
+   "classification": "supported",
+   "evidence": "NHS: usually viral or bacterial.",
+   "url": "https://www.nhs.uk/conditions/meningitis/",
+   "action": "kept"
+  },
+  {
+   "id": "c48",
+   "sentence": "Viral meningitis is the most common type and the least serious, while bacterial meningitis is the more serious form.",
+   "classification": "supported",
+   "evidence": "NHS: viral most common, least serious.",
+   "url": "https://www.nhs.uk/conditions/meningitis/",
+   "action": "kept"
+  },
+  {
+   "id": "c49",
+   "sentence": "Meningitis Research Foundation material adds that fungi can also cause it, and that fungal cases develop more slowly and are treated with antifungal medicine.",
+   "classification": "wrong",
+   "evidence": "Fungal slow onset and cause came from Meningitis Now and CDC pages, not Meningitis Research Foundation.",
+   "url": "https://www.meningitisnow.org/meningitis-explained/types-of-meningitis/fungal-meningitis/",
+   "action": "edited",
+   "newSentence": "Meningitis Now says fungal meningitis often develops slowly, with vague symptoms such as tiredness and a persistent headache, and the CDC says it typically affects only people with weakened immune systems."
+  },
+  {
+   "id": "c50",
+   "sentence": "The infections that cause meningitis spread through close contact with someone who carries the infection.",
+   "classification": "supported",
+   "evidence": "NHS: spreads mainly through very close contact with a carrier.",
+   "url": "https://www.nhs.uk/conditions/meningitis/",
+   "action": "edited",
+   "newSentence": "The NHS says the infections that cause meningitis spread mainly through very close contact with a person carrying the infection, even if they have no symptoms."
+  },
+  {
+   "id": "c51",
+   "sentence": "UKHSA guidance on meningococcal disease defines a close contact as a person who had prolonged close contact with the case in a household-type setting in the 7 days before the illness began.",
+   "classification": "supported",
+   "evidence": "UKHSA: prolonged close contact in household-type setting during 7 days before onset.",
+   "url": "https://assets.publishing.service.gov.uk/media/694a83a9033693d5d50eb8f7/Meningo-disease-guidelines-2025.pdf",
+   "action": "kept"
+  },
+  {
+   "id": "c52",
+   "sentence": "Examples it gives include household members, partners and university students who share a kitchen.",
+   "classification": "unsupported",
+   "evidence": "Household members and partners not returned; university shared kitchen not supported (UKHSA education guidance says shared kitchen alone is not a standard trigger).",
+   "url": "https://assets.publishing.service.gov.uk/media/694a83a9033693d5d50eb8f7/Meningo-disease-guidelines-2025.pdf",
+   "action": "edited",
+   "newSentence": "UKHSA guidance counts intimate kissing or equivalent close contact and exposure to respiratory secretions; sharing a water bottle or toys that may be mouthed is not considered high risk."
+  },
+  {
+   "id": "c53",
+   "sentence": "UKHSA describes the signs of meningococcal disease as meningitis and sepsis, which is why the two are often named together in public health advice.",
+   "classification": "unsupported",
+   "evidence": "UKHSA wording not returned; WHO says bacteria can enter bloodstream and cause sepsis.",
+   "url": "https://www.who.int/news-room/fact-sheets/detail/meningitis",
+   "action": "edited",
+   "newSentence": "The WHO notes that some bacteria can enter the bloodstream and quickly cause sepsis."
+  },
+  {
+   "id": "c54",
+   "sentence": "NHS material says the doctor examines the person, asks about symptoms and may arrange blood tests and a lumbar puncture.",
+   "classification": "supported",
+   "evidence": "NHS: exam, symptoms, blood tests, lumbar puncture.",
+   "url": "https://www.nhs.uk/conditions/meningitis/treatment/",
+   "action": "kept"
+  },
+  {
+   "id": "c55",
+   "sentence": "A lumbar puncture collects a sample of cerebrospinal fluid so that it can be examined.",
+   "classification": "supported",
+   "evidence": "WHO: lumbar puncture needed to examine cerebrospinal fluid.",
+   "url": "https://www.who.int/news-room/fact-sheets/detail/meningitis",
+   "action": "kept"
+  },
+  {
+   "id": "c56",
+   "sentence": "A CT scan may be used to look for brain problems such as swelling.",
+   "classification": "supported",
+   "evidence": "NHS: CT scan for problems such as swelling.",
+   "url": "https://www.nhs.uk/conditions/meningitis/treatment/",
+   "action": "kept"
+  },
+  {
+   "id": "c57",
+   "sentence": "When a bacterial cause is suspected, antibiotics usually start before the diagnosis is confirmed and are stopped later if tests show a viral cause.",
+   "classification": "supported",
+   "evidence": "NHS: antibiotics started before diagnosis confirmed, stopped if viral.",
+   "url": "https://www.nhs.uk/conditions/meningitis/treatment/",
+   "action": "kept"
+  },
+  {
+   "id": "c58",
+   "sentence": "The WHO stresses that a lumbar puncture should never delay antibiotics when bacterial infection is suspected.",
+   "classification": "supported",
+   "evidence": "WHO: LP should never delay antibiotics if bacterial meningitis suspected.",
+   "url": "https://www.who.int/news-room/fact-sheets/detail/meningitis",
+   "action": "kept"
+  },
+  {
+   "id": "c59",
+   "sentence": "For suspected meningococcal disease, NICE recommends a bacterial throat swab for meningococcal culture, preferably taken before antibiotics.",
+   "classification": "unsupported",
+   "evidence": "NICE text retrieved: for suspected bacterial meningitis, bacterial throat swab for meningococcal culture preferably before antibiotics; scope was bacterial meningitis, not only meningococcal disease.",
+   "url": "https://www.nice.org.uk/guidance/ng240/chapter/Recommendations",
+   "action": "edited",
+   "newSentence": "For people with suspected bacterial meningitis, NICE recommends a bacterial throat swab for meningococcal culture, preferably taken before antibiotics are started."
+  },
+  {
+   "id": "c60",
+   "sentence": "It says that tests in hospital are usually done before antibiotics are given, although antibiotics may need to start before the results are available.",
+   "classification": "supported",
+   "evidence": "NICE: blood tests before antibiotics; take bloods, give antibiotics and stabilise before imaging; antibiotics should not wait for LP/imaging.",
+   "url": "https://www.nice.org.uk/guidance/ng240/chapter/Recommendations",
+   "action": "edited",
+   "newSentence": "NICE also says blood tests should be taken before antibiotics, and describes taking blood samples, giving antibiotics and stabilising the person before imaging."
+  },
+  {
+   "id": "c61",
+   "sentence": "Treatment depends on whether the cause is viral or bacterial.",
+   "classification": "supported",
+   "evidence": "NHS: treatment depends on cause.",
+   "url": "https://www.nhs.uk/conditions/meningitis/treatment/",
+   "action": "kept"
+  },
+  {
+   "id": "c62",
+   "sentence": "Bacterial meningitis needs hospital treatment, usually for at least a week.",
+   "classification": "supported",
+   "evidence": "NHS: bacterial needs hospital, usually at least a week.",
+   "url": "https://www.nhs.uk/conditions/meningitis/treatment/",
+   "action": "kept"
+  },
+  {
+   "id": "c63",
+   "sentence": "Hospital care includes antibiotics and fluids given into a vein, and oxygen through a face mask if needed.",
+   "classification": "supported",
+   "evidence": "NHS: IV antibiotics, IV fluids, oxygen via face mask.",
+   "url": "https://www.nhs.uk/conditions/meningitis/treatment/",
+   "action": "kept"
+  },
+  {
+   "id": "c64",
+   "sentence": "Steroid medicine is sometimes added to reduce swelling around the brain, and the WHO recommends giving it with the first antibiotic dose in non-epidemic settings.",
+   "classification": "supported",
+   "evidence": "NHS Wales: steroids may be given in some cases; WHO: corticosteroids with first antibiotic dose in non-epidemic settings.",
+   "url": "https://www.who.int/news-room/fact-sheets/detail/meningitis",
+   "action": "edited",
+   "newSentence": "Steroid medicine may be given in some cases to reduce swelling around the brain, and the WHO recommends corticosteroids with the first antibiotic dose in non-epidemic settings."
+  },
+  {
+   "id": "c65",
+   "sentence": "NICE recommends that antibiotics for suspected meningococcal disease start within 1 hour of arrival at hospital, and that they are given before hospital arrival when the disease is strongly suspected.",
+   "classification": "supported",
+   "evidence": "NICE NG240: senior decision maker ensures antibiotics start within 1 hour of arrival at hospital; do not delay transfer; ceftriaxone or benzylpenicillin outside hospital when strongly suspected, not if severe allergy.",
+   "url": "https://www.nice.org.uk/guidance/ng240/chapter/Recommendations",
+   "action": "edited",
+   "newSentence": "NICE says a senior clinical decision maker should make sure antibiotics for suspected meningococcal disease start within 1 hour of the person arriving at hospital. It also says transfer to hospital should not be delayed to give antibiotics, and that for strongly suspected meningococcal disease an antibiotic should be given as soon as possible outside hospital unless there is a severe allergy."
+  },
+  {
+   "id": "c66",
+   "sentence": "UKHSA guidance gives rapid admission to hospital as the highest priority when meningococcal disease is suspected.",
+   "classification": "supported",
+   "evidence": "UKHSA 2025 guidance: rapid admission to hospital is highest priority when IMD suspected.",
+   "url": "https://assets.publishing.service.gov.uk/media/694a83a9033693d5d50eb8f7/Meningo-disease-guidelines-2025.pdf",
+   "action": "kept"
+  },
+  {
+   "id": "c67",
+   "sentence": "Viral meningitis usually improves on its own within 7 to 10 days.",
+   "classification": "supported",
+   "evidence": "NHS: viral meningitis tends to get better on its own within 7 to 10 days.",
+   "url": "https://www.nhs.uk/conditions/meningitis/treatment/",
+   "action": "kept"
+  },
+  {
+   "id": "c68",
+   "sentence": "It can often be managed at home with rest, painkillers and anti-sickness medicine.",
+   "classification": "supported",
+   "evidence": "NHS: rest, painkillers, anti-sickness medicine at home.",
+   "url": "https://www.nhs.uk/conditions/meningitis/treatment/",
+   "action": "kept"
+  },
+  {
+   "id": "c69",
+   "sentence": "The NHS describes vaccination as the main way of preventing meningitis caused by several bacteria.",
+   "classification": "supported",
+   "evidence": "NHS: several vaccines offer some protection because meningitis has many causes; WHO: best protection against common bacterial types.",
+   "url": "https://www.nhs.uk/conditions/meningitis/vaccination/",
+   "action": "edited",
+   "newSentence": "The NHS says several vaccines offer some protection against meningitis, because it can be caused by a number of different infections."
+  },
+  {
+   "id": "c70",
+   "sentence": "The routine schedule includes the MenB vaccine for babies, the MenACWY vaccine for teenagers, and the 6-in-1, pneumococcal and MMRV vaccines.",
+   "classification": "supported",
+   "evidence": "NHS vaccination page: MenB babies, 6-in-1, pneumococcal, MMRV, MenACWY school year 9, catch-up to 25.",
+   "url": "https://www.nhs.uk/conditions/meningitis/vaccination/",
+   "action": "edited",
+   "newSentence": "NHS vaccination pages list MenB for babies, MenACWY for teenagers in school year 9 (with a catch-up up to age 25 if missed), and the 6-in-1, pneumococcal and MMRV vaccines."
+  },
+  {
+   "id": "c71",
+   "sentence": "UKHSA says vaccines reduce the risk of becoming severely ill, being admitted to hospital and developing long-term complications.",
+   "classification": "unsupported",
+   "evidence": "UKHSA statement about reduced severity not returned.",
+   "url": "https://assets.publishing.service.gov.uk/media/694a83a9033693d5d50eb8f7/Meningo-disease-guidelines-2025.pdf",
+   "action": "removed"
+  },
+  {
+   "id": "c72",
+   "sentence": "People who have been in close contact with someone who has meningococcal disease are offered antibiotics to clear the bacteria from the nose.",
+   "classification": "unsupported",
+   "evidence": "Preventive antibiotics supported (UKHSA); \"to clear the bacteria from the nose\" not retrieved.",
+   "url": "https://assets.publishing.service.gov.uk/media/694a83a9033693d5d50eb8f7/Meningo-disease-guidelines-2025.pdf",
+   "action": "edited",
+   "newSentence": "UKHSA guidance says close contacts of someone with meningococcal disease are offered preventive antibiotics as soon as possible."
+  },
+  {
+   "id": "c73",
+   "sentence": "UKHSA guidance says these are ideally started within 24 hours of the first person's diagnosis.",
+   "classification": "supported",
+   "evidence": "UKHSA: ideally within 24 hours of diagnosis of index case, regardless of vaccination status.",
+   "url": "https://assets.publishing.service.gov.uk/media/694a83a9033693d5d50eb8f7/Meningo-disease-guidelines-2025.pdf",
+   "action": "kept"
+  },
+  {
+   "id": "c74",
+   "sentence": "It says close contacts can attend school or work as normal unless they become unwell, and it does not advise face masks in education settings to prevent spread.",
+   "classification": "supported",
+   "evidence": "UKHSA: close contacts can attend education/early years settings as normal; no face masks advised.",
+   "url": "https://assets.publishing.service.gov.uk/media/694a83a9033693d5d50eb8f7/Meningo-disease-guidelines-2025.pdf",
+   "action": "edited",
+   "newSentence": "It says close contacts can attend education and early years settings as normal, and does not advise face masks in those settings to prevent spread."
+  },
+  {
+   "id": "c75",
+   "sentence": "The guidance adds that contacts who become unwell should seek urgent medical attention, even if they have taken the preventive antibiotics.",
+   "classification": "unsupported",
+   "evidence": "UKHSA retrieved: seek medical advice if unwell; \"urgent ... even if taken preventive antibiotics\" not returned.",
+   "url": "https://assets.publishing.service.gov.uk/media/694a83a9033693d5d50eb8f7/Meningo-disease-guidelines-2025.pdf",
+   "action": "edited",
+   "newSentence": "The guidance adds that contacts who become unwell should seek medical advice."
+  },
+  {
+   "id": "c76",
+   "sentence": "Most people recover from meningitis, but the after-effects depend on the cause.",
+   "classification": "unsupported",
+   "evidence": "No retrieved text says most people recover; MRF says most children survive without permanent after-effects (bacterial).",
+   "url": "https://www.meningitisnow.org/meningitis-explained/after-effects-meningitis/",
+   "action": "removed"
+  },
+  {
+   "id": "c77",
+   "sentence": "Viral meningitis does not usually cause long-term problems, although headaches, exhaustion and memory loss can follow and, for some people, last a long time.",
+   "classification": "unsupported",
+   "evidence": "Meningitis Now: viral after-effects can include headaches, exhaustion, memory loss; \"does not usually cause long-term problems\" not returned.",
+   "url": "https://www.meningitisnow.org/meningitis-explained/after-effects-meningitis/",
+   "action": "edited",
+   "newSentence": "Meningitis Now says long-term after-effects of viral meningitis can include headaches, exhaustion and memory loss."
+  },
+  {
+   "id": "c78",
+   "sentence": "Very rarely, cognitive or neurological problems persist.",
+   "classification": "unsupported",
+   "evidence": "No retrieved source says cognitive or neurological problems very rarely persist.",
+   "url": "https://www.meningitisnow.org/meningitis-explained/after-effects-meningitis/",
+   "action": "removed"
+  },
+  {
+   "id": "c79",
+   "sentence": "Bacterial meningitis can cause lasting harm.",
+   "classification": "supported",
+   "evidence": "NHS: bacterial meningitis may cause long-term problems.",
+   "url": "https://www.nhs.uk/conditions/meningitis/complications/",
+   "action": "kept"
+  },
+  {
+   "id": "c80",
+   "sentence": "Possible after-effects include hearing or vision loss, seizures, movement and coordination problems, and difficulty with memory and concentration.",
+   "classification": "supported",
+   "evidence": "NHS: hearing or vision loss, seizures, movement/co-ordination, memory/concentration problems.",
+   "url": "https://www.nhs.uk/conditions/meningitis/complications/",
+   "action": "kept"
+  },
+  {
+   "id": "c81",
+   "sentence": "Some people lose digits or limbs.",
+   "classification": "supported",
+   "evidence": "Meningitis Now/NHS: amputation may be necessary in severe septicaemia.",
+   "url": "https://www.meningitisnow.org/meningitis-explained/after-effects-meningitis/",
+   "action": "edited",
+   "newSentence": "Meningitis Now says amputation of fingers, toes or limbs may be necessary in severe meningococcal septicaemia."
+  },
+  {
+   "id": "c82",
+   "sentence": "Meningitis Research Foundation material reports that around one in five people who have bacterial meningitis are left with permanent after-effects.",
+   "classification": "wrong",
+   "evidence": "The \"about one in five ... long-lasting after-effects\" figure is from the WHO fact sheet, not MRF, and says long-lasting, not permanent. MRF guide says most children survive without permanent after-effects; a GOSH release gave one in three for MenB in children.",
+   "url": "https://www.who.int/news-room/fact-sheets/detail/meningitis",
+   "action": "edited",
+   "newSentence": "The WHO says about one in five people who survive bacterial meningitis may have long-lasting after-effects."
+  },
+  {
+   "id": "c83",
+   "sentence": "Support can include rehabilitation, prosthetic limbs where limbs were amputated, and counselling if the experience causes problems such as disturbed sleep or fear of doctors and hospitals.",
+   "classification": "supported",
+   "evidence": "NHS: prosthetic limbs and rehabilitation; counselling for disturbed sleep and fear of doctors/hospitals.",
+   "url": "https://www.nhs.uk/conditions/meningitis/complications/",
+   "action": "kept"
+  },
+  {
+   "id": "c84",
+   "sentence": "Charities such as Meningitis Research Foundation and Meningitis Now offer information and support.",
+   "classification": "supported",
+   "evidence": "MRF and Meningitis Now provide support services.",
+   "url": "https://www.meningitis.org/get-support/",
+   "action": "kept"
+  },
+  {
+   "id": "c85",
+   "sentence": "The NHS gives the same emergency advice for both: call 999 or go to A&E immediately if either is suspected.",
+   "classification": "supported",
+   "evidence": "NHS: same 999/A&E advice.",
+   "url": "https://www.nhs.uk/conditions/meningitis/",
+   "action": "kept"
+  },
+  {
+   "id": "c86",
+   "sentence": "NICE lists early signs of sepsis among the features that should raise suspicion of meningococcal disease, and UKHSA describes the signs of meningococcal disease as meningitis and sepsis.",
+   "classification": "unsupported",
+   "evidence": "NICE sepsis-feature wording not returned.",
+   "url": "https://www.nice.org.uk/guidance/ng240/chapter/Recommendations",
+   "action": "removed"
+  },
+  {
+   "id": "c87",
+   "sentence": "The WHO notes that sepsis is among the serious complications that can affect how meningitis shows itself.",
+   "classification": "unsupported",
+   "evidence": "WHO retrieved: bacteria can enter the bloodstream and quickly cause sepsis; non-blanching rash with meningococcal sepsis.",
+   "url": "https://www.who.int/news-room/fact-sheets/detail/meningitis",
+   "action": "edited",
+   "newSentence": "The WHO notes that some bacteria that cause meningitis can enter the bloodstream and quickly cause sepsis, with signs such as cold hands and feet, fast breathing and low blood pressure."
+  },
+  {
+   "id": "c88",
+   "sentence": "The NHS says viral meningitis is the most common type and the least serious, while bacterial meningitis is more serious.",
+   "classification": "supported",
+   "evidence": "NHS: viral most common and least serious.",
+   "url": "https://www.nhs.uk/conditions/meningitis/",
+   "action": "kept"
+  },
+  {
+   "id": "c89",
+   "sentence": "Bacterial meningitis needs hospital treatment, usually for at least a week, with antibiotics into a vein.",
+   "classification": "supported",
+   "evidence": "NHS: bacterial hospital treatment, usually at least a week, IV antibiotics.",
+   "url": "https://www.nhs.uk/conditions/meningitis/treatment/",
+   "action": "kept"
+  },
+  {
+   "id": "c90",
+   "sentence": "Viral meningitis usually improves on its own within 7 to 10 days and can often be managed at home.",
+   "classification": "supported",
+   "evidence": "NHS: viral improves in 7 to 10 days; home care.",
+   "url": "https://www.nhs.uk/conditions/meningitis/treatment/",
+   "action": "kept"
+  },
+  {
+   "id": "c91",
+   "sentence": "No.",
+   "classification": "supported",
+   "evidence": "NHS: rash may not always develop.",
+   "url": "https://www.nhs.uk/conditions/meningitis/symptoms/",
+   "action": "kept"
+  },
+  {
+   "id": "c92",
+   "sentence": "The NHS says a rash that does not fade when a glass is pressed against it is a key warning sign, but not everyone with meningitis gets spots or a rash.",
+   "classification": "supported",
+   "evidence": "NHS: non-fading rash key warning sign, not always present.",
+   "url": "https://www.nhs.uk/conditions/meningitis/symptoms/",
+   "action": "edited",
+   "newSentence": "No. The NHS says a rash that does not fade when a glass is pressed against it is a key warning sign, but a rash does not always develop."
+  },
+  {
+   "id": "c93",
+   "sentence": "Several NHS pages say that people should not wait for a rash, or for every symptom, to appear before getting urgent help by calling 999 or going to A&E.",
+   "classification": "unsupported",
+   "evidence": "No retrieved text says \"several NHS pages\" tell people not to wait for a rash; NHS says call 999 for suspected meningitis/sepsis and non-fading rash.",
+   "url": "https://www.nhs.uk/conditions/meningitis/",
+   "action": "edited",
+   "newSentence": "The NHS advises calling 999 or going to A&E immediately if meningitis or sepsis is suspected, and NHS pages say a non-fading rash can be a sign of sepsis that needs a 999 call straight away."
+  },
+  {
+   "id": "c94",
+   "sentence": "The NHS says the infections that cause meningitis spread through close contact with someone who carries the infection.",
+   "classification": "supported",
+   "evidence": "NHS: spreads mainly through very close contact with a carrier.",
+   "url": "https://www.nhs.uk/conditions/meningitis/",
+   "action": "edited",
+   "newSentence": "The NHS says the infections that cause meningitis spread mainly through very close contact with a person carrying the infection."
+  },
+  {
+   "id": "c95",
+   "sentence": "Close contacts of a person with meningococcal disease are offered antibiotics.",
+   "classification": "supported",
+   "evidence": "UKHSA: preventive antibiotics for close contacts.",
+   "url": "https://assets.publishing.service.gov.uk/media/694a83a9033693d5d50eb8f7/Meningo-disease-guidelines-2025.pdf",
+   "action": "edited",
+   "newSentence": "UKHSA says close contacts of a person with meningococcal disease are offered preventive antibiotics."
+  },
+  {
+   "id": "c96",
+   "sentence": "UKHSA says they can usually attend school or work as normal, unless they become unwell, when they should seek urgent medical advice.",
+   "classification": "supported",
+   "evidence": "UKHSA: close contacts attend education settings as normal; seek medical advice if unwell.",
+   "url": "https://assets.publishing.service.gov.uk/media/694a83a9033693d5d50eb8f7/Meningo-disease-guidelines-2025.pdf",
+   "action": "edited",
+   "newSentence": "They can attend education settings as normal, and should seek medical advice if they become unwell."
+  },
+  {
+   "id": "c97",
+   "sentence": "Most people recover, but it depends on the cause.",
+   "classification": "unsupported",
+   "evidence": "No retrieved source says most people recover from meningitis in general.",
+   "url": "https://www.meningitisnow.org/meningitis-explained/after-effects-meningitis/",
+   "action": "edited",
+   "newSentence": "It depends on the cause."
+  },
+  {
+   "id": "c98",
+   "sentence": "Viral meningitis does not usually cause long-term problems.",
+   "classification": "unsupported",
+   "evidence": "Not returned as stated; Meningitis Now lists long-term viral after-effects.",
+   "url": "https://www.meningitisnow.org/meningitis-explained/after-effects-meningitis/",
+   "action": "edited",
+   "newSentence": "Meningitis Now says viral meningitis can have long-term after-effects such as headaches, exhaustion and memory loss."
+  },
+  {
+   "id": "c99",
+   "sentence": "Bacterial meningitis can leave lasting effects such as hearing loss, vision loss, seizures or memory and concentration problems.",
+   "classification": "supported",
+   "evidence": "NHS: hearing loss, vision loss, seizures, memory and concentration problems.",
+   "url": "https://www.nhs.uk/conditions/meningitis/complications/",
+   "action": "kept"
+  },
+  {
+   "id": "c100",
+   "sentence": "Meningitis Research Foundation says most children who have bacterial meningitis or meningococcal sepsis survive without permanent after-effects.",
+   "classification": "supported",
+   "evidence": "MRF guide: most children with bacterial meningitis or meningococcal sepsis survive without permanent after-effects.",
+   "url": "https://www.meningitis.org/wp-content/uploads/2026/01/Your-Guide-0-16-2026.pdf",
+   "action": "kept"
+  },
+  {
+   "id": "c101",
+   "sentence": "Viral, bacterial and fungal",
+   "classification": "supported",
+   "evidence": "NHS/Meningitis Now/CDC: viral, bacterial, fungal causes.",
+   "url": "https://www.nhs.uk/conditions/meningitis/",
+   "action": "kept"
+  },
+  {
+   "id": "c102",
+   "sentence": "Bacterial meningitis, which needs hospital treatment",
+   "classification": "supported",
+   "evidence": "NHS: bacterial more serious, hospital treatment.",
+   "url": "https://www.nhs.uk/conditions/meningitis/",
+   "action": "kept"
+  },
+  {
+   "id": "c103",
+   "sentence": "The NHS advises calling 999 or going to A&E if meningitis or sepsis is suspected",
+   "classification": "supported",
+   "evidence": "NHS: call 999 or go to A&E if meningitis or sepsis suspected.",
+   "url": "https://www.nhs.uk/conditions/meningitis/",
+   "action": "kept"
+  },
+  {
+   "id": "c104",
+   "sentence": "Examination, blood tests and often a lumbar puncture",
+   "classification": "supported",
+   "evidence": "NHS: examination, blood tests, lumbar puncture.",
+   "url": "https://www.nhs.uk/conditions/meningitis/treatment/",
+   "action": "edited",
+   "newSentence": "Examination, blood tests and a lumbar puncture"
+  },
+  {
+   "id": "c105",
+   "sentence": "Usually improves on its own and can often be managed at home",
+   "classification": "supported",
+   "evidence": "NHS: viral improves on its own, often treated at home.",
+   "url": "https://www.nhs.uk/conditions/meningitis/treatment/",
+   "action": "kept"
+  },
+  {
+   "id": "c106",
+   "sentence": "Vaccination, plus antibiotics for close contacts of meningococcal disease",
+   "classification": "supported",
+   "evidence": "NHS/UKHSA: vaccination main prevention; preventive antibiotics for close contacts.",
+   "url": "https://www.nhs.uk/conditions/meningitis/vaccination/",
+   "action": "edited",
+   "newSentence": "Vaccination, plus preventive antibiotics for close contacts of meningococcal disease"
+  }
+ ],
+ "notes": "14 searches used. Search summaries blend pages so some NHS attributions rest on summary text (steroids: NHS Wales page, not the main NHS treatment page, which does not list them; seizures as a symptom was not returned and was removed). NICE throat-swab wording is scoped to suspected bacterial meningitis. One-in-five figure is WHO (long-lasting), not MRF (permanent); a GOSH press release gave one in three for MenB in children, included with attribution. Vaccine ages/schedule intentionally not stated (schedule changed 2025-26); NHS 111 line and definition marked textbook. Article block is about 1,340 words, slightly above the 1,200 target; all section and FAQ limits met. check_batch ok."
+}

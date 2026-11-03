@@ -1,0 +1,107 @@
+{
+ "id": "who-postpartum-haemorrhage-blueprint",
+ "searchesUsed": 4,
+ "counts": {
+  "supported": 7,
+  "textbook": 0,
+  "unsupported": 3,
+  "wrong": 0,
+  "unsafe": 0,
+  "unchecked": 0
+ },
+ "claims": [
+  {
+   "id": "c01",
+   "where": "summary",
+   "sentence": "On 12 June 2026 the WHO publicised a Lancet Series on postpartum haemorrhage, severe bleeding after birth, and what it says can be done about it.",
+   "classification": "supported",
+   "evidence": "WHO item dated 12-06-2026 (URL) describes the Lancet Series on PPH",
+   "url": "https://www.who.int/news/item/12-06-2026-a-new-blueprint-offers-definitive-solutions-to-end-one-of-childbirth-s-deadliest-complications",
+   "action": "kept"
+  },
+  {
+   "id": "c02",
+   "where": "keyPoints[0]",
+   "sentence": "The WHO news item is dated 12 June 2026 and concerns a Lancet Series on postpartum haemorrhage (excessive bleeding after birth).",
+   "classification": "supported",
+   "evidence": "WHO item dated 12-06-2026 (URL) describes the Lancet Series on PPH",
+   "url": "https://www.who.int/news/item/12-06-2026-a-new-blueprint-offers-definitive-solutions-to-end-one-of-childbirth-s-deadliest-complications",
+   "action": "kept"
+  },
+  {
+   "id": "c03",
+   "where": "keyPoints[1]",
+   "sentence": "The series estimates that excessive bleeding after birth affects 27 million women and kills nearly 43,000 women every year.",
+   "classification": "supported",
+   "evidence": "Series estimates excessive bleeding after birth affects 27 million women, kills nearly 43 000 women every year, costs over US$ 10 billion each year",
+   "url": "https://www.who.int/news/item/12-06-2026-a-new-blueprint-offers-definitive-solutions-to-end-one-of-childbirth-s-deadliest-complications",
+   "action": "kept"
+  },
+  {
+   "id": "c04",
+   "where": "keyPoints[2]",
+   "sentence": "It calls for calibrated blood collection drapes in place of visual estimates of blood loss, which it judges grossly inaccurate.",
+   "classification": "unsupported",
+   "evidence": "Retrieved WHO text mentions calibrated drapes only in guideline documents; not confirmed that this news item itself calls for them; 'grossly inaccurate' is supported",
+   "url": "https://www.who.int/news/item/12-06-2026-a-new-blueprint-offers-definitive-solutions-to-end-one-of-childbirth-s-deadliest-complications",
+   "action": "edited",
+   "newSentence": "It concludes that visually estimating blood loss after birth is grossly inaccurate."
+  },
+  {
+   "id": "c05",
+   "where": "keyPoints[3]",
+   "sentence": "The lead researchers come from HRP, WHO and the University of Oxford.",
+   "classification": "unsupported",
+   "evidence": "Only author names (Coomarasamy, Sindhu, Gallos et al.) seen; no HRP/WHO/Oxford lead-researcher statement retrieved",
+   "url": "https://www.who.int/news/item/12-06-2026-a-new-blueprint-offers-definitive-solutions-to-end-one-of-childbirth-s-deadliest-complications",
+   "action": "removed"
+  },
+  {
+   "id": "c06",
+   "where": "body[0].p0.s0",
+   "sentence": "On 12 June 2026 the World Health Organization (WHO) published a news item on a Lancet Series about postpartum haemorrhage, which means severe bleeding after childbirth.",
+   "classification": "supported",
+   "evidence": "WHO item dated 12-06-2026 (URL) describes the Lancet Series on PPH",
+   "url": "https://www.who.int/news/item/12-06-2026-a-new-blueprint-offers-definitive-solutions-to-end-one-of-childbirth-s-deadliest-complications",
+   "action": "kept"
+  },
+  {
+   "id": "c07",
+   "where": "body[0].p0.s1",
+   "sentence": "The series estimates that excessive bleeding after birth affects 27 million women and kills nearly 43,000 women every year.",
+   "classification": "supported",
+   "evidence": "Series estimates excessive bleeding after birth affects 27 million women, kills nearly 43 000 women every year, costs over US$ 10 billion each year",
+   "url": "https://www.who.int/news/item/12-06-2026-a-new-blueprint-offers-definitive-solutions-to-end-one-of-childbirth-s-deadliest-complications",
+   "action": "kept"
+  },
+  {
+   "id": "c08",
+   "where": "body[0].p0.s2",
+   "sentence": "It also estimates a cost to countries, health systems and families of over US$ 10 billion each year.",
+   "classification": "supported",
+   "evidence": "Series estimates excessive bleeding after birth affects 27 million women, kills nearly 43 000 women every year, costs over US$ 10 billion each year",
+   "url": "https://www.who.int/news/item/12-06-2026-a-new-blueprint-offers-definitive-solutions-to-end-one-of-childbirth-s-deadliest-complications",
+   "action": "kept"
+  },
+  {
+   "id": "c09",
+   "where": "body[1].p0.s0",
+   "sentence": "The series says that visually estimating blood loss after birth is grossly inaccurate and results in missing half of postpartum haemorrhage cases, and it calls for calibrated blood collection drapes instead.",
+   "classification": "unsupported",
+   "evidence": "Visually estimating blood loss after birth is grossly inaccurate as it results in missing half of PPH cases (supported); Retrieved WHO text mentions calibrated drapes only in guideline documents; not confirmed that this news item itself calls for them",
+   "url": "https://www.who.int/news/item/12-06-2026-a-new-blueprint-offers-definitive-solutions-to-end-one-of-childbirth-s-deadliest-complications",
+   "action": "edited",
+   "newSentence": "The series says that visually estimating blood loss after birth is grossly inaccurate and results in missing half of postpartum haemorrhage cases."
+  },
+  {
+   "id": "c10",
+   "where": "body[1].p0.s1",
+   "sentence": "It also points to missed opportunities to prevent haemorrhage before it starts.",
+   "classification": "supported",
+   "evidence": "Highlights missed opportunities to prevent haemorrhage before it starts",
+   "url": "https://www.who.int/news/item/12-06-2026-a-new-blueprint-offers-definitive-solutions-to-end-one-of-childbirth-s-deadliest-complications",
+   "action": "kept"
+  }
+ ],
+ "notes": "Search snippets only (no full-page fetch). Two sentences edited, one removed."
+}

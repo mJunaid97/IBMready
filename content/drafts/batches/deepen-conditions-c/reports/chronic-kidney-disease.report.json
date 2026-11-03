@@ -1,0 +1,583 @@
+{
+ "id": "chronic-kidney-disease",
+ "searchesUsed": 13,
+ "counts": {
+  "supported": 42,
+  "textbook": 0,
+  "unsupported": 24,
+  "wrong": 1,
+  "unsafe": 4,
+  "unchecked": 0
+ },
+ "claims": [
+  {
+   "id": "c01",
+   "classification": "supported",
+   "evidence": "111 Wales/NHS: early CKD usually no symptoms, often found by chance through blood or urine test.",
+   "url": "https://111.wales.nhs.uk/Kidneydisease,chronic/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c02",
+   "classification": "supported",
+   "evidence": "NHS main page lists tiredness, swollen ankles/feet/hands, breathlessness, feeling sick, blood in urine; advanced stage.",
+   "url": "https://www.nhs.uk/conditions/kidney-disease/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c03",
+   "classification": "supported",
+   "evidence": "Itching and muscle cramps supported (KRUK stage 5, MedlinePlus); change in urine frequency not retrieved.",
+   "url": "https://www.kidneyresearchuk.org/conditions-symptoms/stage-5-chronic-kidney-disease/",
+   "action": "edited",
+   "newSentence": "Later kidney failure can also bring itching and muscle cramps."
+  },
+  {
+   "id": "c04",
+   "classification": "supported",
+   "evidence": "KRUK: stage 5 is most severe; NHS stages 1 to 5 by eGFR.",
+   "url": "https://www.kidneyresearchuk.org/conditions-symptoms/stage-5-chronic-kidney-disease/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c05",
+   "classification": "supported",
+   "evidence": "Retrieved staging text: stage 1 normal eGFR with other evidence of damage; stage 2 slightly lower.",
+   "url": "https://www.nhs.uk/conditions/kidney-disease/diagnosis/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c06",
+   "classification": "supported",
+   "evidence": "3a/3b and stage 5 as kidney failure supported; 'established kidney failure' and stage 4 wording not retrieved.",
+   "url": "https://www.kidneyresearchuk.org/conditions-symptoms/stage-5-chronic-kidney-disease/",
+   "action": "edited",
+   "newSentence": "Stage 3 is split into 3a and 3b, and stage 5 is kidney failure."
+  },
+  {
+   "id": "c07",
+   "classification": "supported",
+   "evidence": "NHS page cited about 2 in 100 progress to kidney failure; 111 Wales 1 in 50 (same figure).",
+   "url": "https://www.nhs.uk/conditions/kidney-disease/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c08",
+   "classification": "unsupported",
+   "evidence": "Gradual/slow progression retrieved (Kidney Care UK, slowly over 10-20 years); 'time to plan' not retrieved.",
+   "url": "https://111.wales.nhs.uk/Kidneydisease,chronic/",
+   "action": "edited",
+   "newSentence": "When the kidneys do stop working, this usually happens slowly."
+  },
+  {
+   "id": "c09",
+   "classification": "supported",
+   "evidence": "NHS diagnosis: CKD diagnosed with blood and urine tests.",
+   "url": "https://www.nhs.uk/conditions/kidney-disease/diagnosis/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c10",
+   "classification": "supported",
+   "evidence": "NHS: blood test gives eGFR (how well kidneys filter); urine tests check for blood or protein.",
+   "url": "https://www.nhs.uk/conditions/kidney-disease/diagnosis/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c11",
+   "classification": "unsupported",
+   "evidence": "NHS: repeated eGFR tests over time confirm diagnosis; 'regular follow-up tests' wording not retrieved (stage-specific annual schedules would be a schedule).",
+   "url": "https://www.nhs.uk/conditions/kidney-disease/diagnosis/",
+   "action": "edited",
+   "newSentence": "One abnormal result is not usually enough, and repeated tests are used to confirm the diagnosis."
+  },
+  {
+   "id": "c12",
+   "classification": "unsupported",
+   "evidence": "Lithium/omeprazole/NSAID monitoring: no NHS or listed-publisher text retrieved (only non-listed lithium guidance; nothing on omeprazole).",
+   "url": "",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c13",
+   "classification": "unsupported",
+   "evidence": "Anaemia stage 3-5 and renal bone disease in advanced CKD retrieved but not as a statement about BP/red cells/bone being checked; moved and reworded in complications section.",
+   "url": "",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c14",
+   "classification": "unsupported",
+   "evidence": "No retrieved text on dietitian referral being common.",
+   "url": "",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c15",
+   "classification": "supported",
+   "evidence": "NHS outcome text: most people can manage the condition with medicine and regular check-ups.",
+   "url": "https://www.nhs.uk/conditions/kidney-disease/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c16",
+   "classification": "supported",
+   "evidence": "NHS: no cure, treatment can help relieve symptoms and stop it getting worse.",
+   "url": "https://www.nhs.uk/conditions/kidney-disease/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c17",
+   "classification": "supported",
+   "evidence": "NHS treatment: lifestyle changes, medicines for blood pressure and cholesterol.",
+   "url": "https://www.nhs.uk/conditions/kidney-disease/treatment/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c18",
+   "classification": "supported",
+   "evidence": "NHS treatment: ACE inhibitors often used for blood pressure; statins prescribed to reduce cardiovascular risk.",
+   "url": "https://www.nhs.uk/conditions/kidney-disease/treatment/",
+   "action": "edited",
+   "newSentence": "ACE inhibitors are often used for blood pressure in this condition, and statins are prescribed to reduce the risk of cardiovascular disease, meaning heart and blood vessel problems."
+  },
+  {
+   "id": "c19",
+   "classification": "wrong",
+   "evidence": "'Most people are given iron' overreaches: NHS says tablets or injections may be given to help make red blood cells; reviews say ESAs or iron.",
+   "url": "https://www.nhs.uk/conditions/kidney-disease/treatment/",
+   "action": "edited",
+   "newSentence": "Anaemia, a shortage of red blood cells, can develop in kidney disease, and the NHS says tablets or injections may be given to help the body make more red blood cells."
+  },
+  {
+   "id": "c20",
+   "classification": "supported",
+   "evidence": "Review: anaemia in CKD traditionally treated with ESAs or iron preparations; 'erythropoietin' not named verbatim.",
+   "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11242251/",
+   "action": "edited",
+   "newSentence": "Medical reviews describe anaemia in kidney disease as traditionally treated with iron preparations or erythropoiesis-stimulating agents."
+  },
+  {
+   "id": "c21",
+   "classification": "supported",
+   "evidence": "NHS treatment: medicines for symptoms of kidney failure such as breathlessness, anaemia, loss of appetite, itchy skin.",
+   "url": "https://www.nhs.uk/conditions/kidney-disease/treatment/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c22",
+   "classification": "supported",
+   "evidence": "NHS: advanced cases need dialysis or transplant; only about 2 in 100 progress.",
+   "url": "https://www.nhs.uk/conditions/kidney-disease/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c23",
+   "classification": "supported",
+   "evidence": "NIDDK: peritoneal dialysis filters wastes and extra fluid; haemodialysis filters blood.",
+   "url": "https://www.niddk.nih.gov/health-information/kidney-disease/kidney-failure",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c24",
+   "classification": "supported",
+   "evidence": "NIDDK: haemodialysis machine filters blood outside the body; PD uses lining of belly.",
+   "url": "https://www.niddk.nih.gov/health-information/kidney-disease/kidney-failure",
+   "action": "edited",
+   "newSentence": "NIDDK describes haemodialysis as a machine filtering the blood outside the body, while peritoneal dialysis uses the lining of the abdomen to filter waste and extra fluid."
+  },
+  {
+   "id": "c25",
+   "classification": "supported",
+   "evidence": "NIDDK lists transplant among options; NHSBT covers living and deceased donors.",
+   "url": "https://www.niddk.nih.gov/health-information/kidney-disease/kidney-failure",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c26",
+   "classification": "supported",
+   "evidence": "NHSBT: approximately 30 out of 100 kidney transplants from living donors; living donor wait about 3-6 months vs 2-3 years deceased.",
+   "url": "https://www.nhsbt.nhs.uk/organ-transplantation/kidney/receiving-a-kidney/living-donor-kidney-transplant/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c27",
+   "classification": "unsupported",
+   "evidence": "NIDDK: anti-rejection medicines required, can cause infections, cataracts, diabetes, bone disease etc; 'for as long as the kidney works' not stated.",
+   "url": "https://www.niddk.nih.gov/health-information/kidney-disease/kidney-failure/kidney-transplant",
+   "action": "edited",
+   "newSentence": "People with a transplant take anti-rejection medicines, and NIDDK notes these can cause other health problems."
+  },
+  {
+   "id": "c28",
+   "classification": "unsupported",
+   "evidence": "NIDDK: conservative management continues care without dialysis/transplant; NHS: symptom medicines in supportive care; 'psychological and practical support' and 'may not suit them' not retrieved.",
+   "url": "https://www.niddk.nih.gov/health-information/kidney-disease/kidney-failure",
+   "action": "edited",
+   "newSentence": "Some people choose not to have dialysis or a transplant, and conservative care then continues their care without either, including treatment for symptoms."
+  },
+  {
+   "id": "c29",
+   "classification": "unsupported",
+   "evidence": "'NHS says unduly affected' not found; an NHS trust leaflet says with good care many live long and active lives.",
+   "url": "https://www.royalberkshire.nhs.uk/media/4iljpc2w/living-with-chronic-kidney-disease_oct24.pdf",
+   "action": "edited",
+   "newSentence": "A hospital leaflet from an NHS trust says that with good care many people with chronic kidney disease live long and active lives."
+  },
+  {
+   "id": "c30",
+   "classification": "unsupported",
+   "evidence": "No retrieved text that general health 'particularly' lowers heart disease and stroke risk.",
+   "url": "",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c31",
+   "classification": "unsupported",
+   "evidence": "Smoking advice not retrieved; exercise (Kidney Care UK: studies show it can improve kidney function) moved to reworded sentence.",
+   "url": "https://kidneycareuk.org/get-support/healthy-diet-support/patient-info-healthy-eating-and-lifestyle-for-your-kidneys/",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c32",
+   "classification": "supported",
+   "evidence": "Leaflet: plenty of fruit and vegetables including pulses, smaller amounts of animal protein such as meat, fish, eggs.",
+   "url": "https://www.royalberkshire.nhs.uk/media/4iljpc2w/living-with-chronic-kidney-disease_oct24.pdf",
+   "action": "edited",
+   "newSentence": "It favours plenty of fruit and vegetables, including pulses, with smaller amounts of animal protein such as meat, fish and eggs."
+  },
+  {
+   "id": "c33",
+   "classification": "supported",
+   "evidence": "Kidney Care UK: diet low in salt and rich in fibre and potassium from fruit, veg, wholegrains, nuts, seeds, pulses lowers blood pressure and complication risk.",
+   "url": "https://kidneycareuk.org/get-support/healthy-diet-support/patient-info-healthy-eating-and-lifestyle-for-your-kidneys/",
+   "action": "edited",
+   "newSentence": "Kidney Care UK says a diet low in salt and rich in fibre and potassium from fruit, vegetables, wholegrains, nuts, seeds and pulses helps to lower blood pressure and reduce the risk of complications."
+  },
+  {
+   "id": "c34",
+   "classification": "unsupported",
+   "evidence": "Dietitian-led individual advice changing with progression not retrieved.",
+   "url": "",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c35",
+   "classification": "unsafe",
+   "evidence": "Instructional ('best avoided'); retrieved text: avoid OTC NSAIDs such as ibuprofen unless advised by a medical professional, can harm kidneys (attributed to a hospital leaflet; summary did not name page for certain). Reworded as description.",
+   "url": "https://www.royalberkshire.nhs.uk/media/4iljpc2w/living-with-chronic-kidney-disease_oct24.pdf",
+   "action": "edited",
+   "newSentence": "The hospital leaflet says over-the-counter anti-inflammatory painkillers such as ibuprofen are avoided unless a medical professional advises otherwise, because these medicines can harm the kidneys in people with kidney disease."
+  },
+  {
+   "id": "c36",
+   "classification": "unsafe",
+   "evidence": "Instructs the reader ('people are advised to check'); not retrieved.",
+   "url": "",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c37",
+   "classification": "supported",
+   "evidence": "Review: cardiovascular complications are the most common cause of death in CKD stage G5 on dialysis; NHS statins for CV risk.",
+   "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10478756/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c38",
+   "classification": "supported",
+   "evidence": "Review: most patients with progressive CKD die before reaching kidney failure due to high CV death rate.",
+   "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10478756/",
+   "action": "edited",
+   "newSentence": "One review says cardiovascular complications are the most common cause of death in people with kidney failure on regular dialysis, and that most people with progressive chronic kidney disease die before reaching kidney failure because of the high rate of cardiovascular death."
+  },
+  {
+   "id": "c39",
+   "classification": "supported",
+   "evidence": "Many people with stage 3, 4 and 5 CKD develop anaemia (Kidney Care UK style text; page attribution not certain); 'more common as it advances' reworded to stages.",
+   "url": "https://kidneycareuk.org/kidney-disease-information/kidney-conditions/patient-info-ckd-chronic-kidney-disease/",
+   "action": "edited",
+   "newSentence": "Many people with stage 3, 4 and 5 disease develop anaemia."
+  },
+  {
+   "id": "c40",
+   "classification": "unsupported",
+   "evidence": "Calcium/phosphate/vitamin D mechanism not confirmed; mineral bone disorder with raised fracture risk retrieved.",
+   "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10971621/",
+   "action": "edited",
+   "newSentence": "Mineral and bone disorder can also develop in advanced kidney disease and is linked to a higher risk of bone fractures, heart and blood vessel events and death."
+  },
+  {
+   "id": "c41",
+   "classification": "unsupported",
+   "evidence": "Synthesis not stated by any retrieved source.",
+   "url": "",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c42",
+   "classification": "supported",
+   "evidence": "111 Wales: CKD progresses to kidney failure in around 1 in 50.",
+   "url": "https://111.wales.nhs.uk/Kidneydisease,chronic/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c43",
+   "classification": "unsupported",
+   "evidence": "'Outlook depends on' overreaches NHS wording (most can control with medicine and check-ups); already stated elsewhere.",
+   "url": "",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c44",
+   "classification": "supported",
+   "evidence": "NHS: no cure; treatment relieves symptoms and stops it getting worse.",
+   "url": "https://www.nhs.uk/conditions/kidney-disease/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c45",
+   "classification": "supported",
+   "evidence": "NHS: most people can manage with medicine and regular check-ups.",
+   "url": "https://www.nhs.uk/conditions/kidney-disease/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c46",
+   "classification": "unsupported",
+   "evidence": "No retrieved text for heart disease/stroke wording.",
+   "url": "",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c47",
+   "classification": "unsupported",
+   "evidence": "'Unduly affected' not found; trust leaflet says long and active lives.",
+   "url": "https://www.royalberkshire.nhs.uk/media/4iljpc2w/living-with-chronic-kidney-disease_oct24.pdf",
+   "action": "edited",
+   "newSentence": "A hospital leaflet from an NHS trust adds that with good care many people live long and active lives."
+  },
+  {
+   "id": "c48",
+   "classification": "supported",
+   "evidence": "NHS: progression to kidney failure uncommon.",
+   "url": "https://www.nhs.uk/conditions/kidney-disease/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c49",
+   "classification": "supported",
+   "evidence": "NHS about 2 in 100; 111 Wales 1 in 50.",
+   "url": "https://111.wales.nhs.uk/Kidneydisease,chronic/",
+   "action": "edited",
+   "newSentence": "The NHS says around 2 in 100 people with the condition reach kidney failure, and NHS 111 Wales gives the figure as around 1 in 50."
+  },
+  {
+   "id": "c50",
+   "classification": "unsupported",
+   "evidence": "Slowly supported; 'time to plan' not retrieved.",
+   "url": "https://www.kidneyresearchuk.org/conditions-symptoms/stage-5-chronic-kidney-disease/",
+   "action": "edited",
+   "newSentence": "When the kidneys do stop working, this usually happens slowly rather than suddenly."
+  },
+  {
+   "id": "c51",
+   "classification": "supported",
+   "evidence": "NIDDK: dialysis filters wastes and extra fluid.",
+   "url": "https://www.niddk.nih.gov/health-information/kidney-disease/kidney-failure",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c52",
+   "classification": "supported",
+   "evidence": "NIDDK: machine filters blood outside the body.",
+   "url": "https://www.niddk.nih.gov/health-information/kidney-disease/kidney-failure",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c53",
+   "classification": "supported",
+   "evidence": "NIDDK: lining of belly filters wastes and extra fluid.",
+   "url": "https://www.niddk.nih.gov/health-information/kidney-disease/kidney-failure",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c54",
+   "classification": "unsupported",
+   "evidence": "Not retrieved that a kidney team discusses options beforehand.",
+   "url": "",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c55",
+   "classification": "supported",
+   "evidence": "NIDDK: conservative management is a path without dialysis/transplant; 'may not suit everyone' not retrieved.",
+   "url": "https://www.niddk.nih.gov/health-information/kidney-disease/kidney-failure",
+   "action": "edited",
+   "newSentence": "No. NIDDK describes conservative management as continuing a person's care without dialysis or a kidney transplant."
+  },
+  {
+   "id": "c56",
+   "classification": "supported",
+   "evidence": "NHS treatment: medicines for kidney failure symptoms as part of supportive care.",
+   "url": "https://www.nhs.uk/conditions/kidney-disease/treatment/",
+   "action": "edited",
+   "newSentence": "The NHS says medicines can be used to treat symptoms of kidney failure such as breathlessness, loss of appetite and itchy skin, as part of supportive care."
+  },
+  {
+   "id": "c57",
+   "classification": "unsupported",
+   "evidence": "'Medical, psychological and practical support' not retrieved.",
+   "url": "",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c58",
+   "classification": "unsupported",
+   "evidence": "Discussion before need not retrieved.",
+   "url": "",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c59",
+   "classification": "unsafe",
+   "evidence": "Instructs ('avoiding them is advised'); source: hospital leaflet says avoid OTC NSAIDs unless advised by a professional.",
+   "url": "https://www.royalberkshire.nhs.uk/media/4iljpc2w/living-with-chronic-kidney-disease_oct24.pdf",
+   "action": "edited",
+   "newSentence": "A hospital leaflet from an NHS trust says over-the-counter anti-inflammatory painkillers (NSAIDs) such as ibuprofen can harm the kidneys in people with kidney disease and are avoided unless a medical professional advises otherwise."
+  },
+  {
+   "id": "c60",
+   "classification": "unsupported",
+   "evidence": "Lithium/omeprazole/NSAID extra testing not retrieved from listed publishers; 111 Wales lists NSAIDs and lithium as causes.",
+   "url": "https://111.wales.nhs.uk/Kidneydisease,chronic/",
+   "action": "edited",
+   "newSentence": "NHS 111 Wales also lists long-term use of some medicines, including NSAIDs and lithium, among the causes of chronic kidney disease."
+  },
+  {
+   "id": "c61",
+   "classification": "unsupported",
+   "evidence": "Not retrieved.",
+   "url": "",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c62",
+   "classification": "supported",
+   "evidence": "Leaflet: plenty of fruit and vegetables including pulses, smaller amounts of animal protein.",
+   "url": "https://www.royalberkshire.nhs.uk/media/4iljpc2w/living-with-chronic-kidney-disease_oct24.pdf",
+   "action": "edited",
+   "newSentence": "A hospital leaflet from an NHS trust favours plenty of fruit and vegetables, including pulses, with smaller amounts of animal protein such as meat, fish and eggs."
+  },
+  {
+   "id": "c63",
+   "classification": "supported",
+   "evidence": "Kidney Care UK: diet low in salt.",
+   "url": "https://kidneycareuk.org/get-support/healthy-diet-support/patient-info-healthy-eating-and-lifestyle-for-your-kidneys/",
+   "action": "edited",
+   "newSentence": "Kidney Care UK describes a diet low in salt and rich in fibre and potassium from fruit, vegetables, wholegrains, nuts, seeds and pulses as helping to lower blood pressure and reduce the risk of complications."
+  },
+  {
+   "id": "c64",
+   "classification": "unsupported",
+   "evidence": "Individual diet advice and common dietitian referral not retrieved.",
+   "url": "",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c65",
+   "classification": "supported",
+   "evidence": "NHS: no cure, treatment can help.",
+   "url": "https://www.nhs.uk/conditions/kidney-disease/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c66",
+   "classification": "supported",
+   "evidence": "NHS/111 Wales: early CKD often no symptoms; found by blood or urine test.",
+   "url": "https://111.wales.nhs.uk/Kidneydisease,chronic/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c67",
+   "classification": "supported",
+   "evidence": "NHS about 2 in 100.",
+   "url": "https://www.nhs.uk/conditions/kidney-disease/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c68",
+   "classification": "supported",
+   "evidence": "NIDDK: dialysis, transplant or conservative management.",
+   "url": "https://www.niddk.nih.gov/health-information/kidney-disease/kidney-failure",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c69",
+   "classification": "unsupported",
+   "evidence": "ACE inhibitors and statins supported (NHS); 'iron' for most people not supported; NHS says tablets or injections for anaemia.",
+   "url": "https://www.nhs.uk/conditions/kidney-disease/treatment/",
+   "action": "edited",
+   "newSentence": "Lifestyle changes, blood pressure medicines such as ACE inhibitors, statins, and tablets or injections for anaemia."
+  },
+  {
+   "id": "c70",
+   "classification": "unsafe",
+   "evidence": "Reworded: hospital leaflet says avoid OTC NSAIDs unless advised; can harm kidneys.",
+   "url": "https://www.royalberkshire.nhs.uk/media/4iljpc2w/living-with-chronic-kidney-disease_oct24.pdf",
+   "action": "edited",
+   "newSentence": "Over-the-counter NSAIDs such as ibuprofen can harm the kidneys in kidney disease, according to hospital guidance."
+  },
+  {
+   "id": "c71",
+   "classification": "supported",
+   "evidence": "Review: CV complications most common cause of death.",
+   "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10478756/",
+   "action": "kept",
+   "newSentence": ""
+  }
+ ],
+ "notes": "Search summaries blend pages; URLs for the hospital-leaflet claims (Royal Berkshire) and the anaemia-by-stage sentence (Kidney Care UK) were not named with certainty in the returned text, so a human should confirm them. First-pass attributions of '2 in 100' to the NHS main page was reported in one search; another search could not confirm it and 111 Wales / Kidney Care UK give 1 in 50 (same figure). Several first-pass claims (lithium/omeprazole monitoring, dietitian referral, iron for most, mechanism of bone disease) could not be retrieved and were removed. Only a few edited sentences (e.g. erythropoiesis-stimulating agents) rely on review papers, not UK publishers."
+}

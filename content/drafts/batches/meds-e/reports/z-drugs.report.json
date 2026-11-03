@@ -1,0 +1,87 @@
+{
+ "id": "z-drugs",
+ "searchesUsed": 0,
+ "counts": {
+  "textbook": 1,
+  "supported": 6,
+  "wrong": 1,
+  "unsupported": 0,
+  "unsafe": 0,
+  "unchecked": 0
+ },
+ "claims": [
+  {
+   "id": "c01",
+   "where": "summary[0]",
+   "classification": "textbook",
+   "evidence": "NHS zopiclone and zolpidem pages: both short-term insomnia medicines; ACMD groups zaleplon, zolpidem, zopiclone as 'z-drugs'. 'Covered on this site' is an internal statement.",
+   "url": "https://www.nhs.uk/medicines/zolpidem/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c02",
+   "where": "summary[1]",
+   "classification": "supported",
+   "evidence": "NICE TA77 title: zaleplon, zolpidem and zopiclone for the short-term management of insomnia.",
+   "url": "https://www.nice.org.uk/guidance/ta77",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c03",
+   "where": "mechanism",
+   "classification": "wrong",
+   "evidence": "NHS says zopiclone boosts GABA effect; so 'no mechanism described' is contradicted. Class-level mechanism not retrieved.",
+   "url": "https://www.nhs.uk/medicines/zopiclone/common-questions-about-zopiclone/",
+   "action": "edited",
+   "newSentence": "The NHS says zopiclone boosts the effect of GABA, a calming chemical in the brain."
+  },
+  {
+   "id": "c04",
+   "where": "cautions[0]",
+   "classification": "supported",
+   "evidence": "As medication 13.",
+   "url": "https://www.nhs.uk/medicines/zopiclone/common-questions-about-zopiclone/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c05",
+   "where": "cautions[1]",
+   "classification": "supported",
+   "evidence": "As medication 9.",
+   "url": "https://www.nhs.uk/medicines/zopiclone/how-and-when-to-take-zopiclone/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c06",
+   "where": "cautions[2]",
+   "classification": "supported",
+   "evidence": "As medication 20.",
+   "url": "https://www.nhs.uk/medicines/zopiclone/common-questions-about-zopiclone/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c07",
+   "where": "cautions[3]",
+   "classification": "supported",
+   "evidence": "As medication 11.",
+   "url": "https://www.medicines.org.uk/emc/product/10590/smpc",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c08",
+   "where": "cautions[4]",
+   "classification": "supported",
+   "evidence": "As medication 2; ACMD advised same Class C, Schedule 4 control for all three z-drugs.",
+   "url": "https://www.legislation.gov.uk/uksi/2014/1275/made",
+   "action": "kept",
+   "newSentence": null
+  }
+ ],
+ "notes": "Class page: checked in the same second-pass run as zopiclone (searches counted there)."
+}

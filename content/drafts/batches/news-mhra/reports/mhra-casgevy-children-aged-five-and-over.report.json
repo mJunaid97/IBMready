@@ -1,0 +1,98 @@
+{
+ "id": "mhra-casgevy-children-aged-five-and-over",
+ "searchesUsed": 3,
+ "counts": {
+  "supported": 6,
+  "textbook": 1,
+  "unsupported": 3,
+  "wrong": 0,
+  "unsafe": 0,
+  "unchecked": 0
+ },
+ "claims": [
+  {
+   "id": "c01",
+   "classification": "supported",
+   "sentence": "The MHRA extended the UK authorisation of Casgevy to children aged five and over with severe sickle cell disease or transfusion-dependent beta thalassaemia.",
+   "evidence": "Retrieved: licence extended to children aged five and over with severe sickle-cell disease and transfusion-dependent beta-thalassaemia.",
+   "url": "https://www.gov.uk/government/news/mhra-approves-gene-editing-treatment-for-children-aged-five-and-over-with-serious-inherited-blood-disorders",
+   "action": "kept"
+  },
+  {
+   "id": "c02",
+   "classification": "supported",
+   "sentence": "The MHRA extended the UK authorisation of the gene-editing treatment Casgevy (exagamglogene autotemcel) to children aged five and over.",
+   "evidence": "Retrieved (page title: 'gene-editing treatment for children aged five and over').",
+   "url": "https://www.gov.uk/government/news/mhra-approves-gene-editing-treatment-for-children-aged-five-and-over-with-serious-inherited-blood-disorders",
+   "action": "kept"
+  },
+  {
+   "id": "c03",
+   "classification": "supported",
+   "sentence": "It is for severe sickle cell disease and transfusion-dependent beta thalassaemia.",
+   "evidence": "Retrieved.",
+   "url": "https://www.gov.uk/government/news/mhra-approves-gene-editing-treatment-for-children-aged-five-and-over-with-serious-inherited-blood-disorders",
+   "action": "kept"
+  },
+  {
+   "id": "c04",
+   "classification": "supported",
+   "sentence": "Casgevy was previously authorised in the UK for people aged 12 and over.",
+   "evidence": "Retrieved: previously authorised in the UK for patients 12 and over.",
+   "url": "https://www.gov.uk/government/news/mhra-approves-gene-editing-treatment-for-children-aged-five-and-over-with-serious-inherited-blood-disorders",
+   "action": "kept"
+  },
+  {
+   "id": "c05",
+   "classification": "supported",
+   "sentence": "The MHRA says Casgevy (exagamglogene autotemcel) can now be used in eligible children from the age of five with severe sickle cell disease or transfusion-dependent beta thalassaemia.",
+   "evidence": "Retrieved: approval allows children aged five and over with these conditions to receive the treatment. ('eligible' is an author qualifier, reasonable.)",
+   "url": "https://www.gov.uk/government/news/mhra-approves-gene-editing-treatment-for-children-aged-five-and-over-with-serious-inherited-blood-disorders",
+   "action": "kept"
+  },
+  {
+   "id": "c06",
+   "classification": "supported",
+   "sentence": "Before this decision, the UK authorisation covered people aged 12 and over.",
+   "evidence": "Retrieved.",
+   "url": "https://www.gov.uk/government/news/mhra-approves-gene-editing-treatment-for-children-aged-five-and-over-with-serious-inherited-blood-disorders",
+   "action": "kept"
+  },
+  {
+   "id": "c07",
+   "classification": "unsupported",
+   "sentence": "The MHRA describes both conditions as serious, lifelong conditions that can in some cases be fatal.",
+   "evidence": "No description of the conditions was returned (page title says 'serious inherited blood disorders' only).",
+   "url": "https://www.gov.uk/government/news/mhra-approves-gene-editing-treatment-for-children-aged-five-and-over-with-serious-inherited-blood-disorders",
+   "action": "edited",
+   "newSentence": "The MHRA describes both as serious inherited blood disorders."
+  },
+  {
+   "id": "c08",
+   "classification": "unsupported",
+   "sentence": "It explains that Casgevy works by editing the faulty gene in a patient's bone marrow stem cells so that the body produces functioning haemoglobin.",
+   "evidence": "Mechanism not in the retrieved text.",
+   "url": "https://www.gov.uk/government/news/mhra-approves-gene-editing-treatment-for-children-aged-five-and-over-with-serious-inherited-blood-disorders",
+   "action": "removed"
+  },
+  {
+   "id": "c09",
+   "classification": "textbook",
+   "sentence": "The MHRA decision is separate from NHS access, which in England is decided through NICE.",
+   "evidence": "Not in the retrieved MHRA text; a general, undisputed fact about UK process (licensing vs NICE appraisal). Kept as the brief's single textbook sentence; first pass sourced it to a 2023 MHRA case study, which is a different source.",
+   "url": "https://www.gov.uk/government/news/mhra-approves-gene-editing-treatment-for-children-aged-five-and-over-with-serious-inherited-blood-disorders",
+   "action": "kept"
+  },
+  {
+   "id": "c10",
+   "classification": "unsupported",
+   "sentence": "The site's anaemia page gives background on blood disorders.",
+   "evidence": "Site-navigation pointer to another page on this site, not a claim from the MHRA page; the retrieved gov.uk text does not mention it. Note also that sickle cell disease and thalassaemia are inherited haemoglobin disorders and 'anaemia' as the sole conditions tag is a loose fit.",
+   "url": "https://www.gov.uk/government/news/mhra-approves-gene-editing-treatment-for-children-aged-five-and-over-with-serious-inherited-blood-disorders",
+   "action": "removed"
+  }
+ ],
+ "dateConfirmed": null,
+ "dateEvidence": "Page's own date unsettled. Search 1: 'press release is dated 27 October 2026' with relative ages '4 days ago' and '33 days ago'. Search 3: the page lists 'Published: 30 October 2026' and the gov.uk feed timestamp is 30 October 2026, while a separate MHRA listing shows '27 October 2026 - Press release'. Not resolved with the three searches allowed.",
+ "notes": "Do not publish 2026-10-30 as fact without checking: the page-level text suggests 30 Oct, a listing says 27 Oct. Safest: use 30 Oct only if an editor can open the page, otherwise omit a precise date or say 'late October 2026'. Retrieval also named Julian Beach (MHRA Executive Director Operations) saying the MHRA will keep monitoring safety and effectiveness; not used in the brief. No instructions, 'safe' claims or doses. Brief should not be dropped."
+}

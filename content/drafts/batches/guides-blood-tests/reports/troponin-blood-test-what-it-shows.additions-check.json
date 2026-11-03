@@ -1,0 +1,63 @@
+{
+ "id": "troponin-blood-test-what-it-shows",
+ "searchesUsed": 6,
+ "checks": [
+  {
+   "index": 0,
+   "classification": "unsupported",
+   "evidence": "MedlinePlus page not returned; search found heart failure/tachycardia as causes in PMC papers but no pulmonary hypertension source.",
+   "url": "https://medlineplus.gov/ency/article/007452.htm",
+   "action": "removed"
+  },
+  {
+   "index": 1,
+   "classification": "unsupported",
+   "evidence": "Returned results did not state ECG is painless or takes about 5 minutes.",
+   "url": "https://www.nhs.uk/conditions/heart-attack/diagnosis/",
+   "action": "removed"
+  },
+  {
+   "index": 2,
+   "classification": "unsupported",
+   "evidence": "Returned text did not say troponin is the most commonly measured protein.",
+   "url": "https://www.nhs.uk/conditions/heart-attack/diagnosis/",
+   "action": "removed"
+  },
+  {
+   "index": 3,
+   "classification": "wrong",
+   "evidence": "NICE briefing described ECG as first-choice test for STEMI with diagnosis based on ST-segment changes; 'alone without waiting for blood test' not stated.",
+   "url": "https://www.nice.org.uk/guidance/qs68/documents/acute-coronary-syndromes-including-myocardial-infarction-briefing-paper2",
+   "action": "edited",
+   "newSentence": "NICE material describes the ECG as the first-choice test for a suspected STEMI, with the diagnosis based on changes in the ST segment."
+  },
+  {
+   "index": 4,
+   "classification": "unsupported",
+   "evidence": "MedlinePlus page not returned; no text on retesting over 24 hours found.",
+   "url": "https://medlineplus.gov/lab-tests/troponin-test/",
+   "action": "removed"
+  },
+  {
+   "index": 5,
+   "classification": "unsupported",
+   "evidence": "Scottish knowledge.scot PDF not returned; text about troponin T in kidney problems not confirmed.",
+   "url": "https://www.knowledge.scot.nhs.uk/media/CLT/ResourceUploads/4098319/a3e81db2-0cc1-4580-8623-78901a89886e.pdf",
+   "action": "removed"
+  },
+  {
+   "index": 6,
+   "classification": "unsupported",
+   "evidence": "Southampton press release not returned; the 'flawed' claim was not found.",
+   "url": "https://www.uhs.nhs.uk/whats-new/press-releases/leading-doctor-warns-use-of-blood-test-to-diagnose-heart-attacks-is-flawed",
+   "action": "removed"
+  },
+  {
+   "index": 7,
+   "classification": "unsupported",
+   "evidence": "No BHF text on paramedic care and ECG on the way to hospital was returned.",
+   "url": "https://www.bhf.org.uk/informationsupport/conditions/heart-attack",
+   "action": "removed"
+  }
+ ]
+}

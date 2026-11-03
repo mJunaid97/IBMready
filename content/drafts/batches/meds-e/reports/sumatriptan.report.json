@@ -1,0 +1,519 @@
+{
+ "id": "sumatriptan",
+ "searchesUsed": 14,
+ "counts": {
+  "supported": 36,
+  "unsupported": 17,
+  "wrong": 2,
+  "textbook": 1,
+  "unsafe": 0,
+  "unchecked": 0
+ },
+ "claims": [
+  {
+   "id": "c01",
+   "where": "summary[0]",
+   "classification": "supported",
+   "evidence": "NHS About page: triptan used to treat migraines and cluster headaches.",
+   "url": "https://www.nhs.uk/medicines/sumatriptan/about-sumatriptan/",
+   "action": "removed",
+   "newSentence": null
+  },
+  {
+   "id": "c02",
+   "where": "summary[1]",
+   "classification": "unsupported",
+   "evidence": "Retrieved NHS text names migraine and cluster headaches and says it does not prevent them; the specific symptom list (headache, sickness, light and sound sensitivity) was not seen in retrieved text.",
+   "url": "https://www.nhs.uk/medicines/sumatriptan/",
+   "action": "edited",
+   "newSentence": "Sumatriptan is a medicine used to treat migraines and cluster headaches once an attack has begun, and it does not stop migraines from starting."
+  },
+  {
+   "id": "c03",
+   "where": "summary[2]",
+   "classification": "supported",
+   "evidence": "NHS who-can page lists heart problems; side-effects page: serious effects are rare, lists heart attack, call 999.",
+   "url": "https://www.nhs.uk/medicines/sumatriptan/side-effects-of-sumatriptan/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c04",
+   "where": "usedFor[0]",
+   "classification": "unsupported",
+   "evidence": "Retrieved NHS text names migraine and cluster headaches and says it does not prevent them; the specific symptom list (headache, sickness, light and sound sensitivity) was not seen in retrieved text.",
+   "url": "https://www.nhs.uk/medicines/sumatriptan/",
+   "action": "edited",
+   "newSentence": "Treating migraine attacks."
+  },
+  {
+   "id": "c05",
+   "where": "usedFor[1]",
+   "classification": "supported",
+   "evidence": "NHS: used for migraines and cluster headaches.",
+   "url": "https://www.nhs.uk/medicines/sumatriptan/about-sumatriptan/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c06",
+   "where": "howItWorks[0]",
+   "classification": "supported",
+   "evidence": "NHS About page: migraines and cluster headaches may be linked to temporarily widened blood vessels in the brain.",
+   "url": "https://www.nhs.uk/medicines/sumatriptan/about-sumatriptan/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c07",
+   "where": "howItWorks[1]",
+   "classification": "unsupported",
+   "evidence": "NHS says it narrows the blood vessels thought to widen during an attack (About; Common questions: acts on serotonin receptors on brain blood vessels, causing them to narrow); 'believed to reduce widening' not seen verbatim.",
+   "url": "https://www.nhs.uk/medicines/sumatriptan/common-questions-about-sumatriptan/",
+   "action": "edited",
+   "newSentence": "The NHS says sumatriptan narrows the blood vessels in the brain that are thought to widen during an attack."
+  },
+  {
+   "id": "c08",
+   "where": "howItWorks[2]",
+   "classification": "supported",
+   "evidence": "NHS: does not prevent migraines or cluster headaches from starting.",
+   "url": "https://www.nhs.uk/medicines/sumatriptan/about-sumatriptan/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c09",
+   "where": "howItWorks[3]",
+   "classification": "supported",
+   "evidence": "Migraine Trust triptans page lists sumatriptan among seven UK triptans.",
+   "url": "https://migrainetrust.org/live-with-migraine/healthcare/treatments/triptans/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c10",
+   "where": "sideEffects.common[0]",
+   "classification": "unsupported",
+   "evidence": "NHS side-effects page seen: nausea or vomiting, dizziness, flushing; About page: sick, sleepy, dizzy. 'Unsteadiness' and 'feeling hot or cold' not seen.",
+   "url": "https://www.nhs.uk/medicines/sumatriptan/side-effects-of-sumatriptan/",
+   "action": "edited",
+   "newSentence": "The NHS lists feeling or being sick, dizziness, feeling sleepy and flushing among the common side effects."
+  },
+  {
+   "id": "c11",
+   "where": "sideEffects.common[1]",
+   "classification": "unsupported",
+   "evidence": "Seen: 'many people have no side effects or only minor ones'. 'Do not last long' not seen.",
+   "url": "https://www.nhs.uk/medicines/sumatriptan/side-effects-of-sumatriptan/",
+   "action": "edited",
+   "newSentence": "The NHS says many people have no side effects or only minor ones."
+  },
+  {
+   "id": "c12",
+   "where": "sideEffects.common[2]",
+   "classification": "unsupported",
+   "evidence": "Seen: nosebleeds and throat irritation after nasal spray; bruising at injection site. 'Bad taste' and 'swelling' not seen.",
+   "url": "https://www.nhs.uk/medicines/sumatriptan/side-effects-of-sumatriptan/",
+   "action": "edited",
+   "newSentence": "The nasal spray can cause nosebleeds and throat irritation, and the injection can cause bruising where it goes in."
+  },
+  {
+   "id": "c13",
+   "where": "sideEffects.common[3]",
+   "classification": "supported",
+   "evidence": "NHS Common questions: you can feel very dizzy or tired; avoid driving until you feel better. Cycling and machinery not seen.",
+   "url": "https://www.nhs.uk/medicines/sumatriptan/common-questions-about-sumatriptan/",
+   "action": "edited",
+   "newSentence": "The NHS says that if sumatriptan makes you feel very dizzy or tired, you should avoid driving until you feel better."
+  },
+  {
+   "id": "c14",
+   "where": "sideEffects.serious[0]",
+   "classification": "supported",
+   "evidence": "Side-effects page: serious effects uncommon; anaphylaxis and heart attack listed; call 999.",
+   "url": "https://www.nhs.uk/medicines/sumatriptan/side-effects-of-sumatriptan/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c15",
+   "where": "sideEffects.serious[1]",
+   "classification": "unsupported",
+   "evidence": "Heart attack and 999 advice seen; 'severe pain or tightness in chest' wording not seen (only 'chest pains' under overdose).",
+   "url": "https://www.nhs.uk/medicines/sumatriptan/side-effects-of-sumatriptan/",
+   "action": "edited",
+   "newSentence": "The NHS says to call 999 if you think you might be having a heart attack while taking sumatriptan."
+  },
+  {
+   "id": "c16",
+   "where": "sideEffects.serious[2]",
+   "classification": "supported",
+   "evidence": "NHS other-medicines page via search: confusion or agitation, muscle twitching, high temperature, raised heart rate; contact a doctor right away; search also says 999 for severe symptoms.",
+   "url": "https://www.nhs.uk/medicines/sumatriptan/taking-sumatriptan-with-other-medicines-and-herbal-supplements/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c17",
+   "where": "sideEffects.serious[3]",
+   "classification": "supported",
+   "evidence": "Side-effects page: call NHS 111 for any other serious side effect.",
+   "url": "https://www.nhs.uk/medicines/sumatriptan/side-effects-of-sumatriptan/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c18",
+   "where": "cautions[0]",
+   "classification": "unsupported",
+   "evidence": "Only 'heart problems' seen in who-can page; coronary heart disease, angina, rhythm problems not seen.",
+   "url": "https://www.nhs.uk/medicines/sumatriptan/who-can-and-cannot-take-or-use-sumatriptan/",
+   "action": "edited",
+   "newSentence": "The NHS lists heart problems, including a previous heart attack, among the reasons sumatriptan may not be suitable."
+  },
+  {
+   "id": "c19",
+   "where": "cautions[1]",
+   "classification": "supported",
+   "evidence": "Who-can page: peripheral vascular disease, past stroke or TIA, liver disease, seizures, high blood pressure.",
+   "url": "https://www.nhs.uk/medicines/sumatriptan/who-can-and-cannot-take-or-use-sumatriptan/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c20",
+   "where": "cautions[2]",
+   "classification": "supported",
+   "evidence": "NHS: most adults up to 65; older adults sometimes if a doctor prescribes.",
+   "url": "https://www.nhs.uk/medicines/sumatriptan/about-sumatriptan/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c21",
+   "where": "cautions[3]",
+   "classification": "wrong",
+   "evidence": "NHS pages differ: one says a specialist may prescribe for a child aged 6 or over; another says nasal spray sometimes prescribed from age 12. Migraine Trust says nasal spray is the only triptan licensed for ages over 12. 'Not officially approved for children' not seen and oversimplifies.",
+   "url": "https://www.nhs.uk/medicines/sumatriptan/about-sumatriptan/",
+   "action": "edited",
+   "newSentence": "NHS pages differ on children: one says a specialist may sometimes prescribe sumatriptan for a child aged 6 or over, and another says the nasal spray is sometimes prescribed from age 12."
+  },
+  {
+   "id": "c22",
+   "where": "cautions[4]",
+   "classification": "supported",
+   "evidence": "Overdose text: can narrow blood vessels and cause heart problems including chest pains, abnormal heart rhythm, heart attack.",
+   "url": "https://www.nhs.uk/medicines/sumatriptan/side-effects-of-sumatriptan/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c23",
+   "where": "cautions[5]",
+   "classification": "supported",
+   "evidence": "NHS: tell doctor about ergotamine, other triptans; antidepressants raise serotonin syndrome risk.",
+   "url": "https://www.nhs.uk/medicines/sumatriptan/taking-sumatriptan-with-other-medicines-and-herbal-supplements/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c24",
+   "where": "cautions[6]",
+   "classification": "supported",
+   "evidence": "NHS: SSRIs/SNRIs/MAOIs can raise serotonin syndrome risk; Imigran leaflet: do not use with MAOI (taken in last 2 weeks).",
+   "url": "https://www.medicines.org.uk/emc/files/pil.524.pdf",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c25",
+   "where": "cautions[7]",
+   "classification": "supported",
+   "evidence": "NHS advises against St John's wort; raises serotonin syndrome risk.",
+   "url": "https://www.nhs.uk/medicines/sumatriptan/taking-sumatriptan-with-other-medicines-and-herbal-supplements/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c26",
+   "where": "cautions[8]",
+   "classification": "supported",
+   "evidence": "NHS: not enough evidence for other herbal remedies/supplements; generally not tested.",
+   "url": "https://www.nhs.uk/medicines/sumatriptan/taking-sumatriptan-with-other-medicines-and-herbal-supplements/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c27",
+   "where": "cautions[9]",
+   "classification": "supported",
+   "evidence": "UK leaflets: frequent use can make headaches worse; SmPC mentions overuse headache with regular headache medication.",
+   "url": "https://www.medicines.org.uk/emc/files/pil.524.pdf",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c28",
+   "where": "cautions[10]",
+   "classification": "supported",
+   "evidence": "NHS pregnancy page: not thought to harm developing baby, research not conclusive. NHS overview says ask a doctor and weigh risks; who-can page lists pregnancy as a situation for caution; conflicting.",
+   "url": "https://www.nhs.uk/medicines/sumatriptan/pregnancy-breastfeeding-and-fertility-while-taking-sumatriptan/",
+   "action": "edited",
+   "newSentence": "The NHS pregnancy page says sumatriptan is not thought to harm a developing baby, but the research is not conclusive, so other NHS pages advise asking a doctor first."
+  },
+  {
+   "id": "c29",
+   "where": "cautions[11]",
+   "classification": "unsupported",
+   "evidence": "Not found. NHS overview page says wait at least 12 hours after taking it before breastfeeding; pregnancy page says OK if baby healthy; NHS pages conflict.",
+   "url": "https://www.nhs.uk/medicines/sumatriptan/pregnancy-breastfeeding-and-fertility-while-taking-sumatriptan/",
+   "action": "edited",
+   "newSentence": "NHS pages give different advice on breastfeeding, so it is worth asking a pharmacist or doctor."
+  },
+  {
+   "id": "c30",
+   "where": "monitoring[0]",
+   "classification": "textbook",
+   "evidence": "Statement of absence from sources; no NHS monitoring section retrieved.",
+   "url": "https://www.nhs.uk/medicines/sumatriptan/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c31",
+   "where": "monitoring[1]",
+   "classification": "unsupported",
+   "evidence": "Seen: using too often can cause medication overuse headache; contact doctor if headaches worsen or become more frequent. No source says a prescriber routinely reviews.",
+   "url": "https://www.nhs.uk/medicines/sumatriptan/common-questions-about-sumatriptan/",
+   "action": "edited",
+   "newSentence": "The NHS says using sumatriptan too often can cause medication overuse headaches, and to see a doctor if you are worried about this."
+  },
+  {
+   "id": "c32",
+   "where": "regulatory",
+   "classification": "supported",
+   "evidence": "NHS About: available on prescription; packs of two 50mg tablets from a pharmacy only if previously diagnosed with migraine.",
+   "url": "https://www.nhs.uk/medicines/sumatriptan/about-sumatriptan/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c33",
+   "where": "article.sections[0]",
+   "classification": "supported",
+   "evidence": "As item 0.",
+   "url": "https://www.nhs.uk/medicines/sumatriptan/about-sumatriptan/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c34",
+   "where": "article.sections[1]",
+   "classification": "unsupported",
+   "evidence": "Retrieved NHS text names migraine and cluster headaches and says it does not prevent them; the specific symptom list (headache, sickness, light and sound sensitivity) was not seen in retrieved text.",
+   "url": "https://www.nhs.uk/medicines/sumatriptan/",
+   "action": "removed",
+   "newSentence": null
+  },
+  {
+   "id": "c35",
+   "where": "article.sections[2]",
+   "classification": "supported",
+   "evidence": "NHS: does not prevent migraines or cluster headaches.",
+   "url": "https://www.nhs.uk/medicines/sumatriptan/about-sumatriptan/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c36",
+   "where": "article.sections[3]",
+   "classification": "supported",
+   "evidence": "Torbay and South Devon leaflet excerpt: take once headache pain is starting, not in aura; do not work as well if taken too early. Migraine Trust also says take at headache phase.",
+   "url": "https://www.torbayandsouthdevon.nhs.uk/uploads/25467.pdf",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c37",
+   "where": "article.sections[0]",
+   "classification": "supported",
+   "evidence": "As item 5.",
+   "url": "https://www.nhs.uk/medicines/sumatriptan/about-sumatriptan/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c38",
+   "where": "article.sections[1]",
+   "classification": "unsupported",
+   "evidence": "As item 6.",
+   "url": "https://www.nhs.uk/medicines/sumatriptan/common-questions-about-sumatriptan/",
+   "action": "edited",
+   "newSentence": "The NHS says sumatriptan narrows the blood vessels thought to widen during an attack."
+  },
+  {
+   "id": "c39",
+   "where": "article.sections[2]",
+   "classification": "supported",
+   "evidence": "NHS About: tablets, nasal spray or injection.",
+   "url": "https://www.nhs.uk/medicines/sumatriptan/about-sumatriptan/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c40",
+   "where": "article.sections[0]",
+   "classification": "unsupported",
+   "evidence": "As item 9.",
+   "url": "https://www.nhs.uk/medicines/sumatriptan/side-effects-of-sumatriptan/",
+   "action": "edited",
+   "newSentence": "The NHS lists feeling or being sick, dizziness, feeling sleepy and flushing as common side effects."
+  },
+  {
+   "id": "c41",
+   "where": "article.sections[1]",
+   "classification": "unsupported",
+   "evidence": "As item 10.",
+   "url": "https://www.nhs.uk/medicines/sumatriptan/side-effects-of-sumatriptan/",
+   "action": "edited",
+   "newSentence": "The NHS says many people have no side effects or only minor ones."
+  },
+  {
+   "id": "c42",
+   "where": "article.sections[2]",
+   "classification": "supported",
+   "evidence": "Side-effects page: serious effects rare; anaphylaxis and heart attack; call 999.",
+   "url": "https://www.nhs.uk/medicines/sumatriptan/side-effects-of-sumatriptan/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c43",
+   "where": "article.sections[3]",
+   "classification": "unsupported",
+   "evidence": "As item 14.",
+   "url": "https://www.nhs.uk/medicines/sumatriptan/side-effects-of-sumatriptan/",
+   "action": "edited",
+   "newSentence": "The NHS says to call 999 if you think you might be having a heart attack while taking sumatriptan."
+  },
+  {
+   "id": "c44",
+   "where": "article.sections[4]",
+   "classification": "supported",
+   "evidence": "Call NHS 111 for other serious side effects.",
+   "url": "https://www.nhs.uk/medicines/sumatriptan/side-effects-of-sumatriptan/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c45",
+   "where": "article.sections[0]",
+   "classification": "supported",
+   "evidence": "As item 22.",
+   "url": "https://www.nhs.uk/medicines/sumatriptan/taking-sumatriptan-with-other-medicines-and-herbal-supplements/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c46",
+   "where": "article.sections[1]",
+   "classification": "supported",
+   "evidence": "As items 23-24.",
+   "url": "https://www.nhs.uk/medicines/sumatriptan/taking-sumatriptan-with-other-medicines-and-herbal-supplements/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c47",
+   "where": "article.sections[2]",
+   "classification": "supported",
+   "evidence": "As item 18 plus heart problems.",
+   "url": "https://www.nhs.uk/medicines/sumatriptan/who-can-and-cannot-take-or-use-sumatriptan/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c48",
+   "where": "article.sections[3]",
+   "classification": "supported",
+   "evidence": "As item 27 (conflict noted).",
+   "url": "https://www.nhs.uk/medicines/sumatriptan/pregnancy-breastfeeding-and-fertility-while-taking-sumatriptan/",
+   "action": "edited",
+   "newSentence": "The NHS pregnancy page says it is not thought to harm a developing baby, but the research is not conclusive; ask a doctor before using it in pregnancy."
+  },
+  {
+   "id": "c49",
+   "where": "article.faqs[0]",
+   "classification": "supported",
+   "evidence": "Does not prevent migraines.",
+   "url": "https://www.nhs.uk/medicines/sumatriptan/about-sumatriptan/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c50",
+   "where": "article.faqs[1]",
+   "classification": "unsupported",
+   "evidence": "Symptom relief during attack: only 'treats an attack once begun' seen; low risk.",
+   "url": "https://www.nhs.uk/medicines/sumatriptan/about-sumatriptan/",
+   "action": "edited",
+   "newSentence": "It is used to treat an attack that has already started."
+  },
+  {
+   "id": "c51",
+   "where": "article.faqs[0]",
+   "classification": "supported",
+   "evidence": "NHS About: prescription; two 50mg-tablet packs from pharmacy if previously diagnosed.",
+   "url": "https://www.nhs.uk/medicines/sumatriptan/about-sumatriptan/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c52",
+   "where": "article.faqs[1]",
+   "classification": "unsupported",
+   "evidence": "The local formulary was not retrieved. Imigran 10mg nasal spray SmPC lists POM; injection legal status not confirmed. A Devon formulary even says sumatriptan is readily available OTC (tablets presumably).",
+   "url": "https://www.medicines.org.uk/emc/product/2214/smpc",
+   "action": "edited",
+   "newSentence": "The Imigran nasal spray is a prescription-only medicine, according to its UK product information."
+  },
+  {
+   "id": "c53",
+   "where": "article.faqs[0]",
+   "classification": "supported",
+   "evidence": "As item 19.",
+   "url": "https://www.nhs.uk/medicines/sumatriptan/about-sumatriptan/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c54",
+   "where": "article.faqs[1]",
+   "classification": "wrong",
+   "evidence": "As item 20.",
+   "url": "https://www.nhs.uk/medicines/sumatriptan/about-sumatriptan/",
+   "action": "edited",
+   "newSentence": "NHS pages differ on children: one says a specialist may sometimes prescribe sumatriptan for a child aged 6 or over, and another says the nasal spray is sometimes prescribed from age 12."
+  },
+  {
+   "id": "c55",
+   "where": "article.faqs[0]",
+   "classification": "supported",
+   "evidence": "As item 26.",
+   "url": "https://www.medicines.org.uk/emc/files/pil.524.pdf",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c56",
+   "where": "article.faqs[1]",
+   "classification": "supported",
+   "evidence": "As item 21.",
+   "url": "https://www.nhs.uk/medicines/sumatriptan/side-effects-of-sumatriptan/",
+   "action": "kept",
+   "newSentence": null
+  }
+ ],
+ "notes": "14 searches used. Review: (1) Children: NHS pages conflict (specialist from age 6 vs nasal spray from 12); Migraine Trust says nasal spray the only triptan licensed over 12; check SmPC. (2) Breastfeeding: NHS overview says wait 12 hours; pregnancy page says OK if baby healthy; nhsinform page uses the word 'safe' (do not copy). (3) Pregnancy: who-can page lists as caution while pregnancy page is reassuring. (4) Regulatory: injection legal status not confirmed; nasal spray POM per SmPC; Devon formulary says readily OTC (tablets). (5) Serotonin syndrome: NHS advises 999 for severe symptoms; consider adding. (6) Torbay leaflet is a 2018 local trust leaflet; Migraine Trust gives same aura advice. (7) Several NHS statements seen only through search summaries; page dates may vary (Common questions reviewed Dec 2022). | Editorial tidy-ups after the second pass (duplicate sentences removed or one wording softened) are marked in the claims where they apply. Replacement sentences came from the second-pass retrieval and were not run through a third check."
+}

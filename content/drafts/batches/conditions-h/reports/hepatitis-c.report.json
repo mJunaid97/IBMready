@@ -1,0 +1,1078 @@
+{
+ "id": "hepatitis-c",
+ "searchesUsed": 9,
+ "counts": {
+  "supported": 81,
+  "textbook": 1,
+  "unsupported": 23,
+  "wrong": 0,
+  "unsafe": 0,
+  "unchecked": 0
+ },
+ "claims": [
+  {
+   "id": "c01",
+   "where": "definition",
+   "sentence": "Hepatitis C is an infection with a virus that causes inflammation of the liver, which can damage the liver over time.",
+   "classification": "supported",
+   "evidence": "NHS pages/search results state this",
+   "url": "https://www.nhshighland.scot.nhs.uk/your-services/all-services-a-z/blood-borne-viruses/hepatitis-c/",
+   "action": "kept"
+  },
+  {
+   "id": "c02",
+   "where": "overview",
+   "sentence": "Hepatitis C is a virus that causes inflammation of the liver, and over time the inflamed liver can become damaged.",
+   "classification": "supported",
+   "evidence": "NHS pages/search results state this",
+   "url": "https://www.nhshighland.scot.nhs.uk/your-services/all-services-a-z/blood-borne-viruses/hepatitis-c/",
+   "action": "kept"
+  },
+  {
+   "id": "c03",
+   "where": "overview",
+   "sentence": "Most people with hepatitis C have no symptoms, so many people do not know they have it.",
+   "classification": "supported",
+   "evidence": "NHS pages/search results state this",
+   "url": "https://www.nhs.uk/conditions/hepatitis-c/",
+   "action": "kept"
+  },
+  {
+   "id": "c04",
+   "where": "overview",
+   "sentence": "It is spread through contact with infected blood.",
+   "classification": "supported",
+   "evidence": "WHO fact sheet states this",
+   "url": "https://www.who.int/news-room/fact-sheets/detail/hepatitis-c",
+   "action": "kept"
+  },
+  {
+   "id": "c05",
+   "where": "overview",
+   "sentence": "It is diagnosed with a blood test, and treatment is a short course of antiviral tablets.",
+   "classification": "supported",
+   "evidence": "NHS pages/search results state this",
+   "url": "https://www.nhshighland.scot.nhs.uk/your-services/all-services-a-z/blood-borne-viruses/hepatitis-c/",
+   "action": "kept"
+  },
+  {
+   "id": "c06",
+   "where": "overview",
+   "sentence": "Without treatment it can lead to cirrhosis, liver failure and liver cancer.",
+   "classification": "supported",
+   "evidence": "MedlinePlus states this",
+   "url": "https://medlineplus.gov/ency/article/000284.htm",
+   "action": "kept"
+  },
+  {
+   "id": "c07",
+   "where": "causes[0]",
+   "sentence": "Hepatitis C is caused by a virus that is spread through contact with infected blood.",
+   "classification": "supported",
+   "evidence": "WHO fact sheet states this",
+   "url": "https://www.who.int/news-room/fact-sheets/detail/hepatitis-c",
+   "action": "kept"
+  },
+  {
+   "id": "c08",
+   "where": "causes[1]",
+   "sentence": "Casual contact does not spread the virus, and it is not passed on through breast milk, food or water, according to WHO.",
+   "classification": "supported",
+   "evidence": "WHO fact sheet states this",
+   "url": "https://www.who.int/news-room/fact-sheets/detail/hepatitis-c",
+   "action": "kept"
+  },
+  {
+   "id": "c09",
+   "where": "riskFactors[0]",
+   "sentence": "Sharing drug-injecting equipment.",
+   "classification": "supported",
+   "evidence": "NHS pages/search results state this",
+   "url": "https://www.nhs.uk/conditions/hepatitis-c/",
+   "action": "kept"
+  },
+  {
+   "id": "c10",
+   "where": "riskFactors[1]",
+   "sentence": "Having medical care abroad, in a part of the world where hepatitis C is more common.",
+   "classification": "unsupported",
+   "evidence": "Not retrieved; WHO lists reuse/inadequate sterilisation of medical equipment instead",
+   "url": "https://www.who.int/news-room/fact-sheets/detail/hepatitis-c",
+   "action": "edited",
+   "newSentence": "Medical or dental equipment that is reused or not properly sterilised, especially needles and syringes, according to WHO."
+  },
+  {
+   "id": "c11",
+   "where": "riskFactors[2]",
+   "sentence": "Having received certain blood transfusions or transplants in the UK in the past.",
+   "classification": "unsupported",
+   "evidence": "NHS summary: UK blood transfusions in the past; transplants not retrieved",
+   "url": "https://www.nhs.uk/conditions/hepatitis-c/",
+   "action": "edited",
+   "newSentence": "Having had a blood transfusion in the UK in the past."
+  },
+  {
+   "id": "c12",
+   "where": "riskFactors[3]",
+   "sentence": "Being the baby of a mother who has hepatitis C.",
+   "classification": "supported",
+   "evidence": "NHS pages/search results state this",
+   "url": "https://www.nhs.uk/conditions/hepatitis-c/",
+   "action": "kept"
+  },
+  {
+   "id": "c13",
+   "where": "riskFactors[4]",
+   "sentence": "Having a tattoo abroad.",
+   "classification": "unsupported",
+   "evidence": "BLT: home-made or overseas tattoo; NHS: unsterilised tattoo/piercing tools",
+   "url": "https://britishlivertrust.org.uk/information-and-support/liver-conditions/hepatitis-c/",
+   "action": "edited",
+   "newSentence": "Having a home-made or overseas tattoo, or a tattoo or piercing done with equipment that was not sterile."
+  },
+  {
+   "id": "c14",
+   "where": "signs[0]",
+   "sentence": "Yellowing of the skin or the whites of the eyes (jaundice) may be seen.",
+   "classification": "supported",
+   "evidence": "NHS pages/search results state this",
+   "url": "https://www.nhs.uk/conditions/hepatitis-c/",
+   "action": "kept"
+  },
+  {
+   "id": "c15",
+   "where": "signs[1]",
+   "sentence": "Swelling of the tummy from fluid may occur.",
+   "classification": "unsupported",
+   "evidence": "MedlinePlus abdominal swelling not retrieved in re-check",
+   "url": "https://medlineplus.gov/ency/article/000284.htm",
+   "action": "removed"
+  },
+  {
+   "id": "c16",
+   "where": "complications[0]",
+   "sentence": "Cirrhosis, which is scarring of the liver.",
+   "classification": "supported",
+   "evidence": "NHS pages/search results state this",
+   "url": "https://www.nhs.uk/conditions/hepatitis-c/",
+   "action": "kept"
+  },
+  {
+   "id": "c17",
+   "where": "complications[1]",
+   "sentence": "Liver failure.",
+   "classification": "supported",
+   "evidence": "MedlinePlus states this",
+   "url": "https://medlineplus.gov/ency/article/000284.htm",
+   "action": "kept"
+  },
+  {
+   "id": "c18",
+   "where": "complications[2]",
+   "sentence": "Liver cancer.",
+   "classification": "supported",
+   "evidence": "MedlinePlus states this",
+   "url": "https://medlineplus.gov/ency/article/000284.htm",
+   "action": "kept"
+  },
+  {
+   "id": "c19",
+   "where": "complications[3]",
+   "sentence": "The risk of liver damage rises with regular alcohol use or infection with hepatitis B or HIV.",
+   "classification": "supported",
+   "evidence": "NHS: complications may come more quickly with regular alcohol or hepatitis B/HIV",
+   "url": "https://www.nhs.uk/conditions/hepatitis-c/",
+   "action": "edited",
+   "newSentence": "Complications may come more quickly with regular alcohol use or with hepatitis B or HIV as well."
+  },
+  {
+   "id": "c20",
+   "where": "diagnosis",
+   "sentence": "Hepatitis C is diagnosed using two blood tests, an antibody test and a PCR test.",
+   "classification": "supported",
+   "evidence": "NHS pages/search results state this",
+   "url": "https://www.nhs.uk/conditions/hepatitis-c/diagnosis/",
+   "action": "kept"
+  },
+  {
+   "id": "c21",
+   "where": "diagnosis",
+   "sentence": "The antibody test shows past exposure, while a positive PCR test means the infection is current.",
+   "classification": "supported",
+   "evidence": "NHS pages/search results state this",
+   "url": "https://www.nhs.uk/conditions/hepatitis-c/diagnosis/",
+   "action": "kept"
+  },
+  {
+   "id": "c22",
+   "where": "diagnosis",
+   "sentence": "Tests are available through GPs, sexual health clinics and drug treatment services.",
+   "classification": "supported",
+   "evidence": "NHS pages/search results state this",
+   "url": "https://www.nhs.uk/conditions/hepatitis-c/",
+   "action": "kept"
+  },
+  {
+   "id": "c23",
+   "where": "treatment",
+   "sentence": "Treatment is with antiviral medicines.",
+   "classification": "supported",
+   "evidence": "NHS pages/search results state this",
+   "url": "https://www.nhs.uk/conditions/hepatitis-c/",
+   "action": "kept"
+  },
+  {
+   "id": "c24",
+   "where": "treatment",
+   "sentence": "The medicines now used are tablets called direct-acting antivirals, taken daily for 8 to 12 weeks, according to the British Liver Trust.",
+   "classification": "supported",
+   "evidence": "NHS treatment page: tablets every day for 8 to 12 weeks (BLT page not returned in re-check, but BLT summary also gave 8-12 weeks)",
+   "url": "https://www.nhs.uk/conditions/hepatitis-c/treatment/",
+   "action": "edited",
+   "newSentence": "The medicines now used are tablets called direct-acting antivirals, taken daily for 8 to 12 weeks, according to the NHS."
+  },
+  {
+   "id": "c25",
+   "where": "treatment",
+   "sentence": "A specialist usually manages treatment.",
+   "classification": "supported",
+   "evidence": "MedlinePlus states this",
+   "url": "https://medlineplus.gov/ency/article/000284.htm",
+   "action": "kept"
+  },
+  {
+   "id": "c26",
+   "where": "prevention",
+   "sentence": "There is no vaccine for hepatitis C.",
+   "classification": "supported",
+   "evidence": "NHS pages/search results state this",
+   "url": "https://www.nhs.uk/conditions/hepatitis-c/",
+   "action": "kept"
+  },
+  {
+   "id": "c27",
+   "where": "prevention",
+   "sentence": "Ways to reduce the risk include not sharing drug-injecting equipment, razors or toothbrushes.",
+   "classification": "supported",
+   "evidence": "NHS pages/search results state this",
+   "url": "https://www.nhs.uk/conditions/hepatitis-c/",
+   "action": "kept"
+  },
+  {
+   "id": "c28",
+   "where": "seekCare",
+   "sentence": "The NHS advises a GP appointment for anyone who has symptoms or thinks they could have been infected.",
+   "classification": "textbook",
+   "evidence": "Standard route-to-care signposting; NHS lists GP as a place to test",
+   "url": "https://www.nhs.uk/conditions/hepatitis-c/",
+   "action": "kept"
+  },
+  {
+   "id": "c29",
+   "where": "seekCare",
+   "sentence": "The British Liver Trust urges testing for anyone who has ever injected drugs, had a tattoo abroad or had unprotected sex with someone who may have been infected, even if they feel well.",
+   "classification": "unsupported",
+   "evidence": "BLT: testing for past injecting, UK transfusion, home-made/overseas tattoo; unprotected sex not retrieved",
+   "url": "https://britishlivertrust.org.uk/information-and-support/liver-conditions/hepatitis-c/",
+   "action": "edited",
+   "newSentence": "The British Liver Trust recommends testing for people who have ever injected drugs or had a home-made or overseas tattoo, even if they feel well."
+  },
+  {
+   "id": "c30",
+   "where": "article.sections[0]",
+   "sentence": "Most people with hepatitis C have no symptoms.",
+   "classification": "supported",
+   "evidence": "NHS pages/search results state this",
+   "url": "https://www.nhs.uk/conditions/hepatitis-c/",
+   "action": "kept"
+  },
+  {
+   "id": "c31",
+   "where": "article.sections[0]",
+   "sentence": "Because of this, many people do not know they have the virus.",
+   "classification": "supported",
+   "evidence": "NHS pages/search results state this",
+   "url": "https://www.nhshighland.scot.nhs.uk/your-services/all-services-a-z/blood-borne-viruses/hepatitis-c/",
+   "action": "kept"
+  },
+  {
+   "id": "c32",
+   "where": "article.sections[0]",
+   "sentence": "When symptoms do appear, they can take weeks, months or even years to start.",
+   "classification": "supported",
+   "evidence": "NHS pages/search results state this",
+   "url": "https://www.nhs.uk/conditions/hepatitis-c/",
+   "action": "kept"
+  },
+  {
+   "id": "c33",
+   "where": "article.sections[0]",
+   "sentence": "Early symptoms can include a high temperature, tiredness, tummy pain, loss of appetite, feeling or being sick, and yellowing of the skin or whites of the eyes, which is called jaundice.",
+   "classification": "supported",
+   "evidence": "NHS pages/search results state this",
+   "url": "https://www.nhs.uk/conditions/hepatitis-c/",
+   "action": "kept"
+  },
+  {
+   "id": "c34",
+   "where": "article.sections[0]",
+   "sentence": "Among people who get early symptoms, around 1 in 5 have jaundice.",
+   "classification": "supported",
+   "evidence": "NHS 111 Wales: around 1 in 5 people who have symptoms develop jaundice",
+   "url": "https://111.wales.nhs.uk/encyclopaedia/h/article/hepatitisc/",
+   "action": "edited",
+   "newSentence": "NHS 111 Wales says around 1 in 5 people who get symptoms also develop jaundice."
+  },
+  {
+   "id": "c35",
+   "where": "article.sections[0]",
+   "sentence": "MedlinePlus also lists itching, dark urine and pale, clay-coloured stools as possible symptoms.",
+   "classification": "unsupported",
+   "evidence": "Not found in re-check",
+   "url": "https://medlineplus.gov/ency/article/000284.htm",
+   "action": "removed"
+  },
+  {
+   "id": "c36",
+   "where": "article.sections[0]",
+   "sentence": "It lists swelling of the tummy caused by fluid as well.",
+   "classification": "unsupported",
+   "evidence": "Not found in re-check",
+   "url": "https://medlineplus.gov/ency/article/000284.htm",
+   "action": "removed"
+  },
+  {
+   "id": "c37",
+   "where": "article.sections[0]",
+   "sentence": "The British Liver Trust says symptoms are often vague, such as tiredness or loss of appetite, and can be mistaken for other conditions.",
+   "classification": "unsupported",
+   "evidence": "NHS: symptoms resemble other illnesses; only a test can tell",
+   "url": "https://www.nhs.uk/conditions/hepatitis-c/",
+   "action": "edited",
+   "newSentence": "These symptoms look like those of other illnesses, so the only way to know whether hepatitis C is the cause is to have a blood test."
+  },
+  {
+   "id": "c38",
+   "where": "article.sections[0]",
+   "sentence": "It adds that about 8 in 10 people with a new, or acute, infection have no symptoms.",
+   "classification": "supported",
+   "evidence": "BLT page (via search) states this",
+   "url": "https://britishlivertrust.org.uk/information-and-support/liver-conditions/hepatitis-c/",
+   "action": "kept"
+  },
+  {
+   "id": "c39",
+   "where": "article.sections[0]",
+   "sentence": "For longer-lasting infection, the Trust lists tiredness, itchy skin, nausea, joint pain and mood changes among the possible symptoms.",
+   "classification": "unsupported",
+   "evidence": "NHS: untreated infection can later bring fatigue, itchy skin, low mood, memory/concentration problems; BLT list not retrieved",
+   "url": "https://www.nhs.uk/conditions/hepatitis-c/",
+   "action": "edited",
+   "newSentence": "Later on, untreated infection can bring tiredness, itchy skin, low mood, and problems with memory or concentration, the NHS says."
+  },
+  {
+   "id": "c40",
+   "where": "article.sections[1]",
+   "sentence": "Hepatitis C is spread through contact with infected blood.",
+   "classification": "supported",
+   "evidence": "WHO fact sheet states this",
+   "url": "https://www.who.int/news-room/fact-sheets/detail/hepatitis-c",
+   "action": "kept"
+  },
+  {
+   "id": "c41",
+   "where": "article.sections[1]",
+   "sentence": "The NHS lists sharing drug-injecting equipment as a risk.",
+   "classification": "supported",
+   "evidence": "NHS pages/search results state this",
+   "url": "https://www.nhs.uk/conditions/hepatitis-c/",
+   "action": "kept"
+  },
+  {
+   "id": "c42",
+   "where": "article.sections[1]",
+   "sentence": "It also lists having medical care abroad, and some blood transfusions or transplants in the UK in the past.",
+   "classification": "unsupported",
+   "evidence": "NHS: razors/toothbrushes, unsterilised tattoo/piercing, UK transfusions; WHO: reused medical equipment",
+   "url": "https://www.nhs.uk/conditions/hepatitis-c/",
+   "action": "edited",
+   "newSentence": "Other routes it lists include sharing razors or toothbrushes, unsterilised tattoo or piercing equipment, and blood transfusions in the UK in the past."
+  },
+  {
+   "id": "c43",
+   "where": "article.sections[1]",
+   "sentence": "A baby can catch the virus from an infected mother, and UK guidance describes this as uncommon.",
+   "classification": "unsupported",
+   "evidence": "GOV.UK: risk 3-5%, higher with HIV; the word 'uncommon' not found",
+   "url": "https://www.gov.uk/government/publications/hepatitis-c-patient-re-engagement-exercise/hepatitis-c-information-for-gps",
+   "action": "edited",
+   "newSentence": "A baby can catch the virus from an infected mother. GOV.UK guidance for GPs says the chance is higher when the mother also has HIV."
+  },
+  {
+   "id": "c44",
+   "where": "article.sections[1]",
+   "sentence": "The NHS describes sexual transmission as very rare.",
+   "classification": "unsupported",
+   "evidence": "NHS summary says 'rare' not 'very rare'",
+   "url": "https://www.nhs.uk/conditions/hepatitis-c/",
+   "action": "edited",
+   "newSentence": "The NHS describes sexual transmission as rare."
+  },
+  {
+   "id": "c45",
+   "where": "article.sections[1]",
+   "sentence": "WHO says casual contact does not spread the virus.",
+   "classification": "supported",
+   "evidence": "WHO fact sheet states this",
+   "url": "https://www.who.int/news-room/fact-sheets/detail/hepatitis-c",
+   "action": "kept"
+  },
+  {
+   "id": "c46",
+   "where": "article.sections[1]",
+   "sentence": "It is also not passed on through breast milk, food or water.",
+   "classification": "supported",
+   "evidence": "WHO fact sheet states this",
+   "url": "https://www.who.int/news-room/fact-sheets/detail/hepatitis-c",
+   "action": "kept"
+  },
+  {
+   "id": "c47",
+   "where": "article.sections[1]",
+   "sentence": "UK guidance suggests not sharing razors or toothbrushes.",
+   "classification": "supported",
+   "evidence": "GOV.UK: lower risk by not sharing injecting equipment, razors, toothbrushes; NHS lists razors/toothbrushes as route",
+   "url": "https://www.gov.uk/government/publications/hepatitis-c-patient-re-engagement-exercise/hepatitis-c-information-for-gps",
+   "action": "edited",
+   "newSentence": "Other routes it lists include sharing razors or toothbrushes"
+  },
+  {
+   "id": "c48",
+   "where": "article.sections[1]",
+   "sentence": "The British Liver Trust urges testing for anyone who has ever injected drugs or had a tattoo abroad, even if they feel well.",
+   "classification": "supported",
+   "evidence": "BLT: past injecting, home-made/overseas tattoo",
+   "url": "https://britishlivertrust.org.uk/information-and-support/liver-conditions/hepatitis-c/",
+   "action": "edited",
+   "newSentence": "The British Liver Trust recommends testing for people who have ever injected drugs or had a home-made or overseas tattoo, even if they have no symptoms."
+  },
+  {
+   "id": "c49",
+   "where": "article.sections[1]",
+   "sentence": "Because the virus can be present for years without symptoms, testing is the only way to know whether someone has it.",
+   "classification": "supported",
+   "evidence": "NHS: only way to know if symptoms are hepatitis C is a test",
+   "url": "https://www.nhs.uk/conditions/hepatitis-c/",
+   "action": "edited",
+   "newSentence": "These symptoms look like those of other illnesses, so the only way to know whether hepatitis C is the cause is to have a blood test."
+  },
+  {
+   "id": "c50",
+   "where": "article.sections[2]",
+   "sentence": "Hepatitis C is diagnosed with a blood test.",
+   "classification": "supported",
+   "evidence": "NHS pages/search results state this",
+   "url": "https://www.nhshighland.scot.nhs.uk/your-services/all-services-a-z/blood-borne-viruses/hepatitis-c/",
+   "action": "kept"
+  },
+  {
+   "id": "c51",
+   "where": "article.sections[2]",
+   "sentence": "Two blood tests are used, an antibody test and a PCR test.",
+   "classification": "supported",
+   "evidence": "NHS pages/search results state this",
+   "url": "https://www.nhs.uk/conditions/hepatitis-c/diagnosis/",
+   "action": "kept"
+  },
+  {
+   "id": "c52",
+   "where": "article.sections[2]",
+   "sentence": "The antibody test shows that a person has been exposed to the virus at some point.",
+   "classification": "supported",
+   "evidence": "NHS pages/search results state this",
+   "url": "https://www.nhs.uk/conditions/hepatitis-c/diagnosis/",
+   "action": "kept"
+  },
+  {
+   "id": "c53",
+   "where": "article.sections[2]",
+   "sentence": "A positive PCR test means the infection is current.",
+   "classification": "supported",
+   "evidence": "NHS pages/search results state this",
+   "url": "https://www.nhs.uk/conditions/hepatitis-c/diagnosis/",
+   "action": "kept"
+  },
+  {
+   "id": "c54",
+   "where": "article.sections[2]",
+   "sentence": "The British Liver Trust says a positive antibody test is followed by an RNA test to confirm active infection.",
+   "classification": "supported",
+   "evidence": "BLT page (via search) states this",
+   "url": "https://britishlivertrust.org.uk/information-and-support/liver-conditions/hepatitis-c/",
+   "action": "kept"
+  },
+  {
+   "id": "c55",
+   "where": "article.sections[2]",
+   "sentence": "Tests are available from GPs, sexual health clinics, genitourinary medicine clinics and drug treatment services.",
+   "classification": "supported",
+   "evidence": "NHS pages/search results state this",
+   "url": "https://www.nhs.uk/conditions/hepatitis-c/",
+   "action": "kept"
+  },
+  {
+   "id": "c56",
+   "where": "article.sections[2]",
+   "sentence": "NHS England also offers a free, confidential home test kit that people aged 18 or over in England can order online.",
+   "classification": "unsupported",
+   "evidence": "Free home test, 18+, England supported; 'confidential' not retrieved",
+   "url": "https://www.nhs.uk/conditions/hepatitis-c/",
+   "action": "edited",
+   "newSentence": "People aged 18 or over in England can also order a free home test kit from the NHS."
+  },
+  {
+   "id": "c57",
+   "where": "article.sections[2]",
+   "sentence": "The kit uses a finger-prick blood sample that is posted to a laboratory.",
+   "classification": "supported",
+   "evidence": "NHS: pricking your finger and sending the blood to be tested",
+   "url": "https://www.nhs.uk/conditions/hepatitis-c/",
+   "action": "edited",
+   "newSentence": "The test involves pricking a finger and sending the blood off to be tested."
+  },
+  {
+   "id": "c58",
+   "where": "article.sections[2]",
+   "sentence": "Testing is suggested even without symptoms, because many people feel well.",
+   "classification": "supported",
+   "evidence": "BLT/MedlinePlus: screening matters even without symptoms; replaced by BLT testing sentence",
+   "url": "https://britishlivertrust.org.uk/information-and-support/liver-conditions/hepatitis-c/",
+   "action": "removed"
+  },
+  {
+   "id": "c59",
+   "where": "article.sections[2]",
+   "sentence": "Anyone diagnosed is usually referred to a specialist for treatment.",
+   "classification": "supported",
+   "evidence": "MedlinePlus states this",
+   "url": "https://medlineplus.gov/ency/article/000284.htm",
+   "action": "kept"
+  },
+  {
+   "id": "c60",
+   "where": "article.sections[3]",
+   "sentence": "Hepatitis C is treated with antiviral medicines.",
+   "classification": "supported",
+   "evidence": "NHS pages/search results state this",
+   "url": "https://www.nhs.uk/conditions/hepatitis-c/",
+   "action": "kept"
+  },
+  {
+   "id": "c61",
+   "where": "article.sections[3]",
+   "sentence": "The medicines now used are called direct-acting antivirals.",
+   "classification": "supported",
+   "evidence": "BLT page (via search) states this",
+   "url": "https://britishlivertrust.org.uk/information-and-support/liver-conditions/hepatitis-c/",
+   "action": "kept"
+  },
+  {
+   "id": "c62",
+   "where": "article.sections[3]",
+   "sentence": "They are tablets taken every day for 8 to 12 weeks, the British Liver Trust says.",
+   "classification": "supported",
+   "evidence": "NHS treatment page: antiviral tablets every day for 8 to 12 weeks",
+   "url": "https://www.nhs.uk/conditions/hepatitis-c/treatment/",
+   "action": "edited",
+   "newSentence": "The NHS says these are tablets taken every day for 8 to 12 weeks, and that it is important to finish the course for treatment to work."
+  },
+  {
+   "id": "c63",
+   "where": "article.sections[3]",
+   "sentence": "NHS England describes treatment as a short course of antiviral tablets that clears the virus in more than 95 in 100 cases.",
+   "classification": "supported",
+   "evidence": "NHS: free course 8 to 12 weeks cures more than 95% of cases; 9 out of 10 elsewhere on NHS",
+   "url": "https://www.nhs.uk/conditions/hepatitis-c/treatment/",
+   "action": "edited",
+   "newSentence": "The NHS says these medicines cure 9 out of 10 patients, and another NHS source gives a figure of more than 95 in 100."
+  },
+  {
+   "id": "c64",
+   "where": "article.sections[3]",
+   "sentence": "WHO reports that direct-acting antivirals can clear the virus in more than 95 in 100 people.",
+   "classification": "supported",
+   "evidence": "WHO fact sheet states this",
+   "url": "https://www.who.int/news-room/fact-sheets/detail/hepatitis-c",
+   "action": "kept"
+  },
+  {
+   "id": "c65",
+   "where": "article.sections[3]",
+   "sentence": "The British Liver Trust says more than 9 in 10 people get rid of the virus with treatment.",
+   "classification": "unsupported",
+   "evidence": "BLT figure not retrieved; NHS says 9 out of 10",
+   "url": "https://www.nhs.uk/conditions/hepatitis-c/treatment/",
+   "action": "edited",
+   "newSentence": "(merged into NHS 9 out of 10 sentence)"
+  },
+  {
+   "id": "c66",
+   "where": "article.sections[3]",
+   "sentence": "Most people have no side effects, and headache and tiredness are the most common ones when they happen.",
+   "classification": "unsupported",
+   "evidence": "NHS: very few or no side effects; headache/tiredness not retrieved",
+   "url": "https://www.nhs.uk/conditions/hepatitis-c/treatment/",
+   "action": "edited",
+   "newSentence": "The NHS says most people have very few side effects, or none."
+  },
+  {
+   "id": "c67",
+   "where": "article.sections[3]",
+   "sentence": "Interferon, the older treatment, is no longer used for hepatitis C in the UK.",
+   "classification": "unsupported",
+   "evidence": "NHS mentions ribavirin/interferon only as older pages; BLT statement not retrieved",
+   "url": "https://www.nhs.uk/conditions/hepatitis-c/",
+   "action": "removed"
+  },
+  {
+   "id": "c68",
+   "where": "article.sections[3]",
+   "sentence": "A specialist usually manages treatment.",
+   "classification": "supported",
+   "evidence": "MedlinePlus states this",
+   "url": "https://medlineplus.gov/ency/article/000284.htm",
+   "action": "kept"
+  },
+  {
+   "id": "c69",
+   "where": "article.sections[3]",
+   "sentence": "With a new infection, a clinician may wait to see whether it becomes long-lasting before starting treatment.",
+   "classification": "supported",
+   "evidence": "MedlinePlus states this",
+   "url": "https://medlineplus.gov/ency/article/000284.htm",
+   "action": "kept"
+  },
+  {
+   "id": "c70",
+   "where": "article.sections[4]",
+   "sentence": "In about 1 in 4 people the immune system clears the virus within a few months.",
+   "classification": "unsupported",
+   "evidence": "UK hospital sources say about 15 to 20%; 1 in 4 not confirmed",
+   "url": "https://medlineplus.gov/ency/article/000284.htm",
+   "action": "removed"
+  },
+  {
+   "id": "c71",
+   "where": "article.sections[4]",
+   "sentence": "In the others the infection stays for years, which is called chronic hepatitis C.",
+   "classification": "supported",
+   "evidence": "NHS: infection continuing several months is chronic; MedlinePlus: most develop chronic infection",
+   "url": "https://medlineplus.gov/ency/article/000284.htm",
+   "action": "edited",
+   "newSentence": "MedlinePlus says most people who are infected go on to have long-lasting, or chronic, hepatitis C unless they are treated."
+  },
+  {
+   "id": "c72",
+   "where": "article.sections[4]",
+   "sentence": "Without treatment, it can eventually cause scarring of the liver, called cirrhosis.",
+   "classification": "supported",
+   "evidence": "MedlinePlus: untreated chronic infection can lead to cirrhosis, liver failure, liver cancer",
+   "url": "https://medlineplus.gov/ency/article/000284.htm",
+   "action": "edited",
+   "newSentence": "Without treatment, it can lead to scarring of the liver, called cirrhosis, as well as liver failure and liver cancer."
+  },
+  {
+   "id": "c73",
+   "where": "article.sections[4]",
+   "sentence": "MedlinePlus says untreated hepatitis C may also lead to liver failure and liver cancer.",
+   "classification": "supported",
+   "evidence": "MedlinePlus states this",
+   "url": "https://medlineplus.gov/ency/article/000284.htm",
+   "action": "kept"
+  },
+  {
+   "id": "c74",
+   "where": "article.sections[4]",
+   "sentence": "The risk of liver damage rises with regular alcohol use or infection with hepatitis B or HIV.",
+   "classification": "supported",
+   "evidence": "NHS: complications may come more quickly with regular alcohol or hepatitis B/HIV",
+   "url": "https://www.nhs.uk/conditions/hepatitis-c/",
+   "action": "edited",
+   "newSentence": "The NHS says complications may come more quickly with regular alcohol use or with hepatitis B or HIV as well."
+  },
+  {
+   "id": "c75",
+   "where": "article.sections[4]",
+   "sentence": "Catching hepatitis C again is possible, and completing treatment does not make a person immune.",
+   "classification": "supported",
+   "evidence": "NHS: successful treatment does not give protection",
+   "url": "https://www.nhs.uk/conditions/hepatitis-c/treatment/",
+   "action": "edited",
+   "newSentence": "The NHS says successful treatment does not give protection against getting hepatitis C again, so catching it a second time is possible."
+  },
+  {
+   "id": "c76",
+   "where": "article.sections[4]",
+   "sentence": "Clearing the virus, whether naturally or through treatment, does not give lasting protection.",
+   "classification": "unsupported",
+   "evidence": "Not retrieved; UK reinfection page not found",
+   "url": "https://www.gov.uk/government/publications/hepatitis-c-patient-re-engagement-exercise/hepatitis-c-information-for-gps",
+   "action": "removed"
+  },
+  {
+   "id": "c77",
+   "where": "article.sections[4]",
+   "sentence": "The British Liver Trust advises people who are recovering to keep alcohol to a very small amount.",
+   "classification": "supported",
+   "evidence": "BLT page (via search) states this",
+   "url": "https://britishlivertrust.org.uk/information-and-support/liver-conditions/hepatitis-c/",
+   "action": "kept"
+  },
+  {
+   "id": "c78",
+   "where": "article.sections[4]",
+   "sentence": "It says a doctor may advise no alcohol at all if liver damage is more severe.",
+   "classification": "supported",
+   "evidence": "BLT page (via search) states this",
+   "url": "https://britishlivertrust.org.uk/information-and-support/liver-conditions/hepatitis-c/",
+   "action": "kept"
+  },
+  {
+   "id": "c79",
+   "where": "article.sections[4]",
+   "sentence": "NHS England is aiming to eliminate hepatitis C as a public health threat, with a target of 2030.",
+   "classification": "unsupported",
+   "evidence": "Search found no source for an England 2030 target (2030 is the global goal)",
+   "url": "https://www.nhs.uk/conditions/hepatitis-c/",
+   "action": "removed"
+  },
+  {
+   "id": "c80",
+   "where": "article.faqs[0].a",
+   "sentence": "The British Liver Trust says more than 9 in 10 people get rid of the virus with treatment.",
+   "classification": "unsupported",
+   "evidence": "BLT figure not retrieved; NHS says 9 out of 10",
+   "url": "https://www.nhs.uk/conditions/hepatitis-c/treatment/",
+   "action": "edited",
+   "newSentence": "The NHS says antiviral tablets cure 9 out of 10 patients, and WHO reports that direct-acting antivirals cure more than 95 in 100 people."
+  },
+  {
+   "id": "c81",
+   "where": "article.faqs[0].a",
+   "sentence": "Treatment is a course of daily tablets for 8 to 12 weeks.",
+   "classification": "supported",
+   "evidence": "BLT page (via search) states this",
+   "url": "https://britishlivertrust.org.uk/information-and-support/liver-conditions/hepatitis-c/",
+   "action": "kept"
+  },
+  {
+   "id": "c82",
+   "where": "article.faqs[0].a",
+   "sentence": "WHO reports that direct-acting antivirals clear the virus in more than 95 in 100 people.",
+   "classification": "supported",
+   "evidence": "WHO fact sheet states this",
+   "url": "https://www.who.int/news-room/fact-sheets/detail/hepatitis-c",
+   "action": "kept"
+  },
+  {
+   "id": "c83",
+   "where": "article.faqs[0].a",
+   "sentence": "A specialist usually manages treatment.",
+   "classification": "supported",
+   "evidence": "MedlinePlus states this",
+   "url": "https://medlineplus.gov/ency/article/000284.htm",
+   "action": "kept"
+  },
+  {
+   "id": "c84",
+   "where": "article.faqs[1].a",
+   "sentence": "No. Most people with hepatitis C have no symptoms.",
+   "classification": "supported",
+   "evidence": "NHS pages/search results state this",
+   "url": "https://www.nhs.uk/conditions/hepatitis-c/",
+   "action": "kept"
+  },
+  {
+   "id": "c85",
+   "where": "article.faqs[1].a",
+   "sentence": "Any symptoms that appear can take weeks, months or years to start.",
+   "classification": "supported",
+   "evidence": "NHS pages/search results state this",
+   "url": "https://www.nhs.uk/conditions/hepatitis-c/",
+   "action": "kept"
+  },
+  {
+   "id": "c86",
+   "where": "article.faqs[1].a",
+   "sentence": "The British Liver Trust says about 8 in 10 people with a new infection have no symptoms.",
+   "classification": "supported",
+   "evidence": "BLT page (via search) states this",
+   "url": "https://britishlivertrust.org.uk/information-and-support/liver-conditions/hepatitis-c/",
+   "action": "kept"
+  },
+  {
+   "id": "c87",
+   "where": "article.faqs[1].a",
+   "sentence": "Because of this, many people do not know they have the virus, and testing is suggested for people who may have been exposed.",
+   "classification": "supported",
+   "evidence": "BLT: many people only find out once liver-disease symptoms start",
+   "url": "https://britishlivertrust.org.uk/information-and-support/liver-conditions/hepatitis-c/",
+   "action": "edited",
+   "newSentence": "Because of this, many people only find out once they get symptoms of liver disease, so testing is recommended for people who may have been exposed."
+  },
+  {
+   "id": "c88",
+   "where": "article.faqs[2].a",
+   "sentence": "Yes, the NHS says catching hepatitis C more than once is possible.",
+   "classification": "supported",
+   "evidence": "NHS: successful treatment does not protect against future infection",
+   "url": "https://www.nhs.uk/conditions/hepatitis-c/treatment/",
+   "action": "edited",
+   "newSentence": "Yes. The NHS says successful treatment does not give protection against getting hepatitis C again, so it can be caught a second time."
+  },
+  {
+   "id": "c89",
+   "where": "article.faqs[2].a",
+   "sentence": "Completing treatment does not make a person immune.",
+   "classification": "supported",
+   "evidence": "NHS: successful treatment does not give protection",
+   "url": "https://www.nhs.uk/conditions/hepatitis-c/treatment/",
+   "action": "edited",
+   "newSentence": "(merged into previous)"
+  },
+  {
+   "id": "c90",
+   "where": "article.faqs[2].a",
+   "sentence": "There is no vaccine for hepatitis C.",
+   "classification": "supported",
+   "evidence": "NHS pages/search results state this",
+   "url": "https://www.nhs.uk/conditions/hepatitis-c/",
+   "action": "kept"
+  },
+  {
+   "id": "c91",
+   "where": "article.faqs[2].a",
+   "sentence": "Ways to lower the risk include not sharing drug-injecting equipment, razors or toothbrushes.",
+   "classification": "supported",
+   "evidence": "NHS pages/search results state this",
+   "url": "https://www.nhs.uk/conditions/hepatitis-c/",
+   "action": "kept"
+  },
+  {
+   "id": "c92",
+   "where": "article.faqs[3].a",
+   "sentence": "The NHS describes sexual transmission as very rare.",
+   "classification": "unsupported",
+   "evidence": "NHS summary says 'rare' not 'very rare'",
+   "url": "https://www.nhs.uk/conditions/hepatitis-c/",
+   "action": "edited",
+   "newSentence": "The NHS describes sexual transmission as rare."
+  },
+  {
+   "id": "c93",
+   "where": "article.faqs[3].a",
+   "sentence": "UK guidance describes passing the virus from mother to baby as uncommon, with a higher chance when HIV is also present.",
+   "classification": "unsupported",
+   "evidence": "GOV.UK: higher with HIV; 'uncommon' not found",
+   "url": "https://www.gov.uk/government/publications/hepatitis-c-patient-re-engagement-exercise/hepatitis-c-information-for-gps",
+   "action": "edited",
+   "newSentence": "A baby can catch the virus from an infected mother, and GOV.UK guidance for GPs says the chance is higher when the mother also has HIV."
+  },
+  {
+   "id": "c94",
+   "where": "article.faqs[3].a",
+   "sentence": "WHO says casual contact does not spread the virus.",
+   "classification": "supported",
+   "evidence": "WHO fact sheet states this",
+   "url": "https://www.who.int/news-room/fact-sheets/detail/hepatitis-c",
+   "action": "kept"
+  },
+  {
+   "id": "c95",
+   "where": "article.faqs[3].a",
+   "sentence": "It is also not passed on through breast milk, food or water.",
+   "classification": "supported",
+   "evidence": "WHO fact sheet states this",
+   "url": "https://www.who.int/news-room/fact-sheets/detail/hepatitis-c",
+   "action": "kept"
+  },
+  {
+   "id": "c96",
+   "where": "article.faqs[4].a",
+   "sentence": "Hepatitis C is diagnosed using an antibody blood test and a PCR blood test.",
+   "classification": "supported",
+   "evidence": "NHS pages/search results state this",
+   "url": "https://www.nhs.uk/conditions/hepatitis-c/diagnosis/",
+   "action": "kept"
+  },
+  {
+   "id": "c97",
+   "where": "article.faqs[4].a",
+   "sentence": "Tests are available from GPs, sexual health clinics and drug treatment services.",
+   "classification": "supported",
+   "evidence": "NHS pages/search results state this",
+   "url": "https://www.nhs.uk/conditions/hepatitis-c/",
+   "action": "kept"
+  },
+  {
+   "id": "c98",
+   "where": "article.faqs[4].a",
+   "sentence": "NHS England also offers a free, confidential home kit that people aged 18 or over in England can order online.",
+   "classification": "unsupported",
+   "evidence": "Free home test, 18+, England supported; 'confidential' not retrieved",
+   "url": "https://www.nhs.uk/conditions/hepatitis-c/",
+   "action": "edited",
+   "newSentence": "People aged 18 or over in England can also order a free home kit from the NHS, which involves pricking a finger and sending the blood off to be tested."
+  },
+  {
+   "id": "c99",
+   "where": "article.faqs[4].a",
+   "sentence": "It uses a finger-prick sample posted to a laboratory.",
+   "classification": "supported",
+   "evidence": "NHS: pricking your finger and sending the blood to be tested",
+   "url": "https://www.nhs.uk/conditions/hepatitis-c/",
+   "action": "edited",
+   "newSentence": "which involves pricking a finger and sending the blood off to be tested."
+  },
+  {
+   "id": "c100",
+   "where": "article.keyFacts[0].value",
+   "sentence": "A virus spread through contact with infected blood",
+   "classification": "supported",
+   "evidence": "WHO fact sheet states this",
+   "url": "https://www.who.int/news-room/fact-sheets/detail/hepatitis-c",
+   "action": "kept"
+  },
+  {
+   "id": "c101",
+   "where": "article.keyFacts[1].value",
+   "sentence": "Most people have none",
+   "classification": "supported",
+   "evidence": "NHS pages/search results state this",
+   "url": "https://www.nhs.uk/conditions/hepatitis-c/",
+   "action": "kept"
+  },
+  {
+   "id": "c102",
+   "where": "article.keyFacts[2].value",
+   "sentence": "An antibody blood test and a PCR blood test",
+   "classification": "supported",
+   "evidence": "NHS pages/search results state this",
+   "url": "https://www.nhs.uk/conditions/hepatitis-c/diagnosis/",
+   "action": "kept"
+  },
+  {
+   "id": "c103",
+   "where": "article.keyFacts[3].value",
+   "sentence": "Antiviral tablets, taken daily for 8 to 12 weeks",
+   "classification": "supported",
+   "evidence": "NHS treatment page: 8 to 12 weeks",
+   "url": "https://www.nhs.uk/conditions/hepatitis-c/treatment/",
+   "action": "kept"
+  },
+  {
+   "id": "c104",
+   "where": "article.keyFacts[4].value",
+   "sentence": "None is available",
+   "classification": "supported",
+   "evidence": "NHS pages/search results state this",
+   "url": "https://www.nhs.uk/conditions/hepatitis-c/",
+   "action": "kept"
+  },
+  {
+   "id": "c105",
+   "where": "article.keyFacts[5].value",
+   "sentence": "Possible, even after treatment",
+   "classification": "supported",
+   "evidence": "NHS treatment page",
+   "url": "https://www.nhs.uk/conditions/hepatitis-c/treatment/",
+   "action": "kept"
+  },
+  {
+   "id": "c106",
+   "classification": "supported",
+   "evidence": "Results usually come back within 2 weeks (NHS diagnosis).",
+   "url": "see evidence",
+   "action": "added"
+  },
+  {
+   "id": "c107",
+   "classification": "supported",
+   "evidence": "The doctor assesses the liver by blood test or fibroscan (NHS treatment).",
+   "url": "see evidence",
+   "action": "added"
+  },
+  {
+   "id": "c108",
+   "classification": "supported",
+   "evidence": "Blood tests at end of treatment and 12 or 24 weeks later (NHS treatment).",
+   "url": "see evidence",
+   "action": "added"
+  },
+  {
+   "id": "c109",
+   "classification": "supported",
+   "evidence": "MedlinePlus describes a cure as virus not detectable 12+ weeks after treatment.",
+   "url": "see evidence",
+   "action": "added"
+  },
+  {
+   "id": "c110",
+   "classification": "supported",
+   "evidence": "Treatment available for children aged 3 and over (NHS England).",
+   "url": "see evidence",
+   "action": "added"
+  },
+  {
+   "id": "c111",
+   "classification": "supported",
+   "evidence": "Chronic infection often goes unnoticed until liver damage, decades later (MedlinePlus).",
+   "url": "see evidence",
+   "action": "added"
+  },
+  {
+   "id": "c112",
+   "classification": "supported",
+   "evidence": "Early diagnosis and treatment can prevent complications (MedlinePlus).",
+   "url": "see evidence",
+   "action": "added"
+  },
+  {
+   "id": "c113",
+   "classification": "supported",
+   "evidence": "If the virus is stopped early enough the liver can start to heal (BLT).",
+   "url": "see evidence",
+   "action": "added"
+  },
+  {
+   "id": "c114",
+   "classification": "supported",
+   "evidence": "People who inject drugs incl. anabolic steroids at highest risk; sharing equipment main UK route (NHS).",
+   "url": "see evidence",
+   "action": "added"
+  },
+  {
+   "id": "c115",
+   "classification": "supported",
+   "evidence": "WHO: reused/inadequately sterilised medical equipment and unscreened blood transfusion.",
+   "url": "see evidence",
+   "action": "added"
+  },
+  {
+   "id": "c116",
+   "classification": "supported",
+   "evidence": "NHS: later symptoms of untreated infection (fatigue, itchy skin, low mood, memory).",
+   "url": "see evidence",
+   "action": "added"
+  },
+  {
+   "id": "c117",
+   "classification": "supported",
+   "evidence": "GOV.UK: mother-to-baby chance higher with HIV.",
+   "url": "see evidence",
+   "action": "added"
+  }
+ ],
+ "notes": "BLT page was returned only once by a BLT-restricted query, and only as a summary; its 8 to 12 weeks and 8 in 10 acute-no-symptoms points were taken from that summary. Treatment cure rates differ between NHS pages (9 in 10 vs more than 95%); both attributed. Removed 1 in 4 clearance (sources said 15-20%) and the NHS England 2030 target (not confirmed; 2030 is the WHO global goal). Transfusion dates differ between sources (1991 BLT, 1996 NHS) so none given. Some ledger URLs were not re-retrieved (NHS main page sentences are supported via search summaries that blended pages); the NHS England 2023 home-test reference was dropped because no search returned it; the NHS England 2021 children page was returned. Reviewer may wish to verify the 'seekCare' GP sentence on the live NHS page (classed textbook route-to-care). The related link to cirrhosis is kept (complication per MedlinePlus). Remaining word count of article: 809.",
+ "searchesUsed_detail": "9 WebSearch calls"
+}

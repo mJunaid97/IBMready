@@ -1,0 +1,554 @@
+{
+ "id": "type-1-diabetes",
+ "searchesUsed": 17,
+ "counts": {
+  "supported": 31,
+  "textbook": 3,
+  "unsupported": 25,
+  "wrong": 1,
+  "unsafe": 0,
+  "unchecked": 0
+ },
+ "claims": [
+  {
+   "id": "c01",
+   "where": "article.sections[0]",
+   "classification": "textbook",
+   "evidence": "MedlinePlus: with type 1 the body makes little or no insulin. 'Lifelong' not stated in any retrieved text; plain undisputed fact.",
+   "url": "https://medlineplus.gov/diabetestype1.html",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c02",
+   "where": "article.sections[0]",
+   "classification": "supported",
+   "evidence": "MedlinePlus: type 1 is an autoimmune disease; the immune system attacks insulin-making pancreas cells.",
+   "url": "https://medlineplus.gov/diabetestype1.html",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c03",
+   "where": "article.sections[0]",
+   "classification": "unsupported",
+   "evidence": "No retrieved text states that glucose cannot move into cells without insulin.",
+   "url": "",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c04",
+   "where": "article.sections[0]",
+   "classification": "unsupported",
+   "evidence": "NIDDK: type 1 can run in families (per summary). Diabetes UK: family history raises risk but most people with type 1 have none. 'The NHS notes' not found.",
+   "url": "https://www.diabetes.org.uk/about-diabetes/type-1-diabetes/causes",
+   "action": "edited",
+   "newSentence": "Type 1 diabetes can run in families, but Diabetes UK says most people with type 1 have no family history of it."
+  },
+  {
+   "id": "c05",
+   "where": "article.sections[0]",
+   "classification": "unsupported",
+   "evidence": "Diabetes UK: exact cause not known; viruses thought to play a role, though no firm evidence any virus directly causes it. 'Research reviews' phrasing not from a UK source.",
+   "url": "https://www.diabetes.org.uk/about-diabetes/type-1-diabetes/causes",
+   "action": "edited",
+   "newSentence": "Diabetes UK says the exact cause of type 1 diabetes is not known, and that things in the environment, such as viruses, may play a part in triggering it."
+  },
+  {
+   "id": "c06",
+   "where": "article.sections[0]",
+   "classification": "unsupported",
+   "evidence": "'Great majority worldwide' not in UK/official text retrieved; Diabetes UK gives UK split of about 90% type 2, 8% type 1 of diagnosed cases.",
+   "url": "https://www.diabetes.org.uk/about-us/news-and-views/number-people-living-diabetes-uk-tops-5-million-first-time",
+   "action": "edited",
+   "newSentence": "In the UK, Diabetes UK reports that about 90% of people diagnosed with diabetes have type 2 and about 8% have type 1."
+  },
+  {
+   "id": "c07",
+   "where": "article.sections[0]",
+   "classification": "supported",
+   "evidence": "NHS symptoms page: needing the toilet more, thirst, tiredness, weight loss; 4 Ts toilet, thirsty, tired, thinner.",
+   "url": "https://www.nhs.uk/conditions/type-1-diabetes/symptoms/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c08",
+   "where": "article.sections[0]",
+   "classification": "supported",
+   "evidence": "NIDDK: the first symptoms of type 1 can be symptoms of DKA, especially in children.",
+   "url": "https://www.niddk.nih.gov/health-information/diabetes/overview/what-is-diabetes/type-1-diabetes",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c09",
+   "where": "article.sections[1]",
+   "classification": "supported",
+   "evidence": "NHS: GP usually runs a urine test, may check blood glucose, refers to hospital for assessment.",
+   "url": "https://www.nhs.uk/conditions/type-1-diabetes/symptoms/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c10",
+   "where": "article.sections[1]",
+   "classification": "unsupported",
+   "evidence": "NHS: stay in hospital until blood test results are back. 'Generally the same day' not found.",
+   "url": "https://www.nhs.uk/conditions/type-1-diabetes/symptoms/",
+   "action": "edited",
+   "newSentence": "The NHS says people are usually kept in hospital until their blood test results are back."
+  },
+  {
+   "id": "c11",
+   "where": "article.sections[1]",
+   "classification": "wrong",
+   "evidence": "Few days or weeks wording came from NIDDK, not the NHS (NHS text retrieved did not give this).",
+   "url": "https://www.niddk.nih.gov/health-information/diabetes/overview/what-is-diabetes/type-1-diabetes",
+   "action": "edited",
+   "newSentence": "NIDDK says symptoms of type 1 diabetes usually develop quickly, over a few days or weeks."
+  },
+  {
+   "id": "c12",
+   "where": "article.sections[1]",
+   "classification": "supported",
+   "evidence": "NHS: blurred vision, sweet or fruity breath, slow-healing cuts, recurring infections such as thrush as less common signs.",
+   "url": "https://www.nhs.uk/conditions/type-1-diabetes/symptoms/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c13",
+   "where": "article.sections[1]",
+   "classification": "supported",
+   "evidence": "NHS: call 999 or go to A&E if symptoms worsen fast, or stomach pain, vomiting, drowsiness or confusion, or faster deeper breathing; NIDDK: DKA can be first sign. NHS also lists vomiting (omitted, not wrong).",
+   "url": "https://www.nhs.uk/conditions/type-1-diabetes/symptoms/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c14",
+   "where": "article.sections[1]",
+   "classification": "unsupported",
+   "evidence": "NHS says see a GP for non-urgent advice about these symptoms; no 'same-day' or child-specific wording retrieved.",
+   "url": "https://www.nhs.uk/conditions/type-1-diabetes/symptoms/",
+   "action": "edited",
+   "newSentence": "The NHS advises seeing a GP about these symptoms, and calling 999 or going to A&E if they get worse quickly."
+  },
+  {
+   "id": "c15",
+   "where": "article.sections[2]",
+   "classification": "unsupported",
+   "evidence": "'Insulin for life' and regular glucose checks as NHS treatment statement not found in retrieved text; NHS insulin page describes insulin regimens.",
+   "url": "https://www.nhs.uk/medicines/insulin/insulin-for-type-1-diabetes/",
+   "action": "edited",
+   "newSentence": "The NHS says people with type 1 diabetes take insulin, either with pens or with a pump."
+  },
+  {
+   "id": "c16",
+   "where": "article.sections[2]",
+   "classification": "supported",
+   "evidence": "NHS insulin page: most people use long-acting (basal) insulin once or twice a day plus rapid-acting (bolus) insulin before meals.",
+   "url": "https://www.nhs.uk/medicines/insulin/insulin-for-type-1-diabetes/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c17",
+   "where": "article.sections[2]",
+   "classification": "supported",
+   "evidence": "NHS insulin page calls this a basal bolus regimen.",
+   "url": "https://www.nhs.uk/medicines/insulin/insulin-for-type-1-diabetes/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c18",
+   "where": "article.sections[2]",
+   "classification": "unsupported",
+   "evidence": "NHS: pump gives small doses throughout the day using only rapid-acting insulin. 'Day and night' not retrieved.",
+   "url": "https://www.nhs.uk/medicines/insulin/insulin-for-type-1-diabetes/",
+   "action": "edited",
+   "newSentence": "Insulin can be given with pens or by a pump, which gives small amounts of rapid-acting insulin throughout the day."
+  },
+  {
+   "id": "c19",
+   "where": "article.sections[2]",
+   "classification": "supported",
+   "evidence": "NHS 111 Wales: pump therapy is open to adults, teenagers and children with adult supervision (not on the NHS insulin page cited by the ledger).",
+   "url": "https://111.wales.nhs.uk/encyclopaedia/d/article/diabetes,type1/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c20",
+   "where": "article.sections[2]",
+   "classification": "unsupported",
+   "evidence": "NHS: rapid-acting doses are worked out per meal from the carbohydrate to be eaten (carb counting). Pre-meal glucose dependence and 'which is why taught' not retrieved.",
+   "url": "https://www.nhs.uk/medicines/insulin/insulin-for-type-1-diabetes/",
+   "action": "edited",
+   "newSentence": "The NHS says the dose of rapid-acting insulin at a meal is worked out from the amount of carbohydrate to be eaten, which is called carbohydrate counting."
+  },
+  {
+   "id": "c21",
+   "where": "article.sections[2]",
+   "classification": "unsupported",
+   "evidence": "No retrieved NHS inform text listed glucose checks, check-ups, driving and pregnancy planning as tasks.",
+   "url": "",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c22",
+   "where": "article.sections[2]",
+   "classification": "supported",
+   "evidence": "NHS 111 Wales: keep taking insulin when unwell; personal plan shows whether a short-term increase is needed.",
+   "url": "https://111.wales.nhs.uk/encyclopaedia/d/article/diabetes,type1/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c23",
+   "where": "article.sections[3]",
+   "classification": "supported",
+   "evidence": "NHS: a hypo is blood glucose that is too low (usually treated below 4 mmol/L, figure not to be used in prose).",
+   "url": "https://www.nhs.uk/conditions/low-blood-sugar-hypoglycaemia/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c24",
+   "where": "article.sections[3]",
+   "classification": "unsupported",
+   "evidence": "NHS lists hunger, dizziness, sweating, shaking, tingling lips, racing heart, confusion, progressing to drowsiness or loss of consciousness if untreated. 'Tiredness' and NICE attribution (and long-standing diabetes missing signs) not found.",
+   "url": "https://www.nhs.uk/conditions/low-blood-sugar-hypoglycaemia/",
+   "action": "edited",
+   "newSentence": "The NHS lists feeling hungry, dizzy, sweaty and shaky among the signs of a hypo, and says that if it is not treated it can lead to drowsiness or loss of consciousness."
+  },
+  {
+   "id": "c25",
+   "where": "article.sections[3]",
+   "classification": "unsupported",
+   "evidence": "No NHS inform page text retrieved saying injected insulin moves too much glucose out of the blood; NHS pages say too much insulin is a cause.",
+   "url": "",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c26",
+   "where": "article.sections[3]",
+   "classification": "supported",
+   "evidence": "NHS hypo pages: delayed or missed meals, too little carbohydrate, strenuous or extra exercise, too much insulin, alcohol on an empty stomach.",
+   "url": "https://www.nhs.uk/conditions/type-1-diabetes/managing-blood-glucose-levels/hypoglycaemia-hypos/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c27",
+   "where": "article.sections[3]",
+   "classification": "supported",
+   "evidence": "NHS: treat with fast-acting sugar such as sugary drink or sweets.",
+   "url": "https://www.nhs.uk/conditions/low-blood-sugar-hypoglycaemia/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c28",
+   "where": "article.sections[3]",
+   "classification": "supported",
+   "evidence": "Retrieved NHS text: 'you may need an injection of glucagon into your muscle or glucose into a vein' (page not named in summary; NHS hypo pages). NHS: call 999 if no response within 10 minutes of glucagon. Sentence lacked a route to care, so edited to add the NHS 999 route.",
+   "url": "https://www.nhs.uk/conditions/type-1-diabetes/managing-blood-glucose-levels/hypoglycaemia-hypos/",
+   "action": "edited",
+   "newSentence": "In a severe hypo a person may become drowsy, confused or lose consciousness and may need a glucagon injection into a muscle or glucose given into a vein; the NHS says to call 999 and ask for an ambulance if they do not come round within 10 minutes of a glucagon injection."
+  },
+  {
+   "id": "c29",
+   "where": "article.sections[3]",
+   "classification": "supported",
+   "evidence": "NICE NG17: assess hypoglycaemia awareness in adults with type 1 diabetes at each annual review.",
+   "url": "https://www.nice.org.uk/guidance/ng17/resources/type-1-diabetes-in-adults-diagnosis-and-management-pdf-564275347909",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c30",
+   "where": "article.sections[4]",
+   "classification": "unsupported",
+   "evidence": "Retrieved text did not define DKA via ketones build-up; NHS text: DKA is a medical emergency treated in hospital with insulin and fluids; untreated type 1 can progress to DKA.",
+   "url": "https://www.nhs.uk/conditions/diabetic-ketoacidosis/",
+   "action": "edited",
+   "newSentence": "Diabetic ketoacidosis (DKA) is a medical emergency that can follow untreated type 1 diabetes and is treated in hospital with insulin and fluids."
+  },
+  {
+   "id": "c31",
+   "where": "article.sections[4]",
+   "classification": "unsupported",
+   "evidence": "Merged into previous sentence: 'medical emergency' and hospital treatment found, 'life-threatening' wording not found.",
+   "url": "https://www.nhs.uk/conditions/diabetic-ketoacidosis/",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c32",
+   "where": "article.sections[4]",
+   "classification": "unsupported",
+   "evidence": "Diabetes UK list has no deep breathing (NHS lists it). Otherwise thirst, wee more, tired and sleepy, confusion, blurred vision, stomach pain, sick, fruity breath.",
+   "url": "https://www.diabetes.org.uk/about-diabetes/looking-after-diabetes/complications/diabetic-ketoacidosis",
+   "action": "edited",
+   "newSentence": "Diabetes UK lists being very thirsty, needing to wee more often, feeling tired and sleepy, confusion, blurred vision, stomach pain, feeling or being sick, and sweet or fruity-smelling breath; the NHS also lists breathing more deeply than usual."
+  },
+  {
+   "id": "c33",
+   "where": "article.sections[4]",
+   "classification": "supported",
+   "evidence": "Diabetes UK and NHS: signs may develop over about 24 hours but can be faster (Diabetes UK: especially in children or with a pump). 'It says' is ambiguous after the previous sentence is edited.",
+   "url": "https://www.diabetes.org.uk/about-diabetes/looking-after-diabetes/complications/diabetic-ketoacidosis",
+   "action": "edited",
+   "newSentence": "Diabetes UK and the NHS say DKA symptoms usually develop over about 24 hours but can come on faster."
+  },
+  {
+   "id": "c34",
+   "where": "article.sections[4]",
+   "classification": "supported",
+   "evidence": "NHS DKA page: call 999 or go to A&E if symptoms getting worse quickly, stomach pain, drowsiness or confusion, faster deeper breathing; also if symptoms and ketone level unknown. Route to care present.",
+   "url": "https://www.nhs.uk/conditions/diabetic-ketoacidosis/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c35",
+   "where": "article.sections[4]",
+   "classification": "unsupported",
+   "evidence": "NHS gives 999/A&E ketone thresholds (not to be stated: cut-offs). 'Taught to test' and 'contact the diabetes team at lower levels' not found in national NHS text; local trusts differ.",
+   "url": "https://www.nhs.uk/conditions/diabetic-ketoacidosis/",
+   "action": "edited",
+   "newSentence": "The NHS says to call 999 or go to A&E if ketone levels are high, or if there are symptoms of DKA and the ketone level is not known."
+  },
+  {
+   "id": "c36",
+   "where": "article.sections[4]",
+   "classification": "unsupported",
+   "evidence": "NHS Scotland: untreated DKA can lead to unconsciousness. Vomiting is a symptom; dehydration and death not stated in retrieved text.",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/diabetes/diabetic-ketoacidosis-dka/",
+   "action": "edited",
+   "newSentence": "NHS inform says untreated DKA can lead to unconsciousness, so the NHS advises calling 999 or going to A&E if the warning signs appear."
+  },
+  {
+   "id": "c37",
+   "where": "article.sections[5]",
+   "classification": "supported",
+   "evidence": "NHS: damage to retina blood vessels, nerve damage in feet, kidney damage from high glucose over time.",
+   "url": "https://www.nhs.uk/conditions/type-1-diabetes/complications/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c38",
+   "where": "article.sections[5]",
+   "classification": "unsupported",
+   "evidence": "NHS page covers eyes, feet and kidneys (also mentions cataracts and glaucoma); 'three main areas' count not stated.",
+   "url": "https://www.nhs.uk/conditions/type-1-diabetes/complications/",
+   "action": "edited",
+   "newSentence": "The NHS describes complications affecting the eyes, feet and kidneys."
+  },
+  {
+   "id": "c39",
+   "where": "article.sections[5]",
+   "classification": "supported",
+   "evidence": "NHS: retinal damage can threaten vision, blindness uncommon; adults and children aged 12 or over are offered eye screening every year (quote confirmed).",
+   "url": "https://www.nhs.uk/conditions/type-1-diabetes/complications/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c40",
+   "where": "article.sections[5]",
+   "classification": "supported",
+   "evidence": "NHS: loss of feeling means cuts may go unnoticed, can lead to ulcers; check feet daily; foot check every year by nurse or foot specialist.",
+   "url": "https://www.nhs.uk/conditions/type-1-diabetes/complications/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c41",
+   "where": "article.sections[5]",
+   "classification": "supported",
+   "evidence": "NHS: kidney disease usually has no symptoms at first so have a test every year.",
+   "url": "https://www.nhs.uk/conditions/type-1-diabetes/complications/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c42",
+   "where": "article.sections[5]",
+   "classification": "unsupported",
+   "evidence": "NICE public info: annual review includes foot checks and checking for kidney and nerve problems; periodontitis risk advice (not 'dental checks').",
+   "url": "https://www.nice.org.uk/guidance/ng17/resources/type-1-diabetes-in-adults-diagnosis-and-management-pdf-564275347909",
+   "action": "edited",
+   "newSentence": "NICE says the annual review for adults includes foot checks and checks for complications such as kidney and nerve problems, and advice about the higher risk of gum disease."
+  },
+  {
+   "id": "c43",
+   "where": "article.sections[5]",
+   "classification": "unsupported",
+   "evidence": "NICE patient info: children's blood pressure checked every year after 12. Cholesterol for type 1 not found in national text (only a local trust page). NHS complications page not shown to say this.",
+   "url": "https://www.nice.org.uk/guidance/ng18/resources/type-1-diabetes-in-children-and-young-people-pdf-3224306721733",
+   "action": "edited",
+   "newSentence": "NICE says children with type 1 diabetes should have their blood pressure checked every year after they turn 12."
+  },
+  {
+   "id": "c44",
+   "where": "article.faqs[0].a",
+   "classification": "textbook",
+   "evidence": "Plain answer to 'Is type 1 the same as type 2?'; content supported by the following sentences.",
+   "url": "https://www.niddk.nih.gov/health-information/diabetes/overview/what-is-diabetes/type-1-diabetes",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c45",
+   "where": "article.faqs[0].a",
+   "classification": "unsupported",
+   "evidence": "Little or no insulin and autoimmune confirmed (MedlinePlus); 'insulin needed from diagnosis' not found.",
+   "url": "https://medlineplus.gov/diabetestype1.html",
+   "action": "edited",
+   "newSentence": "Type 1 is an autoimmune condition in which the body makes little or no insulin."
+  },
+  {
+   "id": "c46",
+   "where": "article.faqs[0].a",
+   "classification": "unsupported",
+   "evidence": "Same as c06.",
+   "url": "https://www.diabetes.org.uk/about-us/news-and-views/number-people-living-diabetes-uk-tops-5-million-first-time",
+   "action": "edited",
+   "newSentence": "Type 2 is a different condition; in the UK about 90% of people diagnosed with diabetes have type 2, according to Diabetes UK."
+  },
+  {
+   "id": "c47",
+   "where": "article.faqs[1].a",
+   "classification": "supported",
+   "evidence": "NHS: toilet, thirst, tiredness, weight loss; 4 Ts.",
+   "url": "https://www.nhs.uk/conditions/type-1-diabetes/symptoms/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c48",
+   "where": "article.faqs[1].a",
+   "classification": "supported",
+   "evidence": "NHS: blurred vision, fruity breath, slow-healing cuts, recurring infections.",
+   "url": "https://www.nhs.uk/conditions/type-1-diabetes/symptoms/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c49",
+   "where": "article.faqs[2].a",
+   "classification": "unsupported",
+   "evidence": "Same as c25: NHS inform statement not found.",
+   "url": "",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c50",
+   "where": "article.faqs[2].a",
+   "classification": "supported",
+   "evidence": "NHS hypo pages: triggers as listed.",
+   "url": "https://www.nhs.uk/conditions/type-1-diabetes/managing-blood-glucose-levels/hypoglycaemia-hypos/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c51",
+   "where": "article.faqs[3].a",
+   "classification": "supported",
+   "evidence": "NHS 111 Wales: keep taking insulin when unwell.",
+   "url": "https://111.wales.nhs.uk/encyclopaedia/d/article/diabetes,type1/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c52",
+   "where": "article.faqs[3].a",
+   "classification": "supported",
+   "evidence": "NHS 111 Wales: personal plan shows whether a short-term increase is needed; follow own diabetes team's advice.",
+   "url": "https://111.wales.nhs.uk/encyclopaedia/d/article/diabetes,type1/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c53",
+   "where": "article.faqs[4].a",
+   "classification": "supported",
+   "evidence": "NHS: 999/A&E for rapidly worsening symptoms, stomach pain, drowsiness/confusion, faster deeper breathing. Route present.",
+   "url": "https://www.nhs.uk/conditions/diabetic-ketoacidosis/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c54",
+   "where": "article.faqs[4].a",
+   "classification": "unsupported",
+   "evidence": "'Life-threatening' wording not found; NHS: medical emergency treated in hospital.",
+   "url": "https://www.nhs.uk/conditions/diabetic-ketoacidosis/",
+   "action": "edited",
+   "newSentence": "DKA is a medical emergency that is treated in hospital."
+  },
+  {
+   "id": "c55",
+   "where": "article.keyFacts[0]",
+   "classification": "supported",
+   "evidence": "MedlinePlus and NIDDK: autoimmune attack on insulin-making cells.",
+   "url": "https://medlineplus.gov/diabetestype1.html",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c56",
+   "where": "article.keyFacts[1]",
+   "classification": "supported",
+   "evidence": "NHS symptoms page.",
+   "url": "https://www.nhs.uk/conditions/type-1-diabetes/symptoms/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c57",
+   "where": "article.keyFacts[2]",
+   "classification": "unsupported",
+   "evidence": "'For life' and regular glucose checks not found in retrieved text; NHS: insulin by pen or pump.",
+   "url": "https://www.nhs.uk/medicines/insulin/insulin-for-type-1-diabetes/",
+   "action": "edited",
+   "newSentence": "Treatment: Insulin, by pen or pump"
+  },
+  {
+   "id": "c58",
+   "where": "article.keyFacts[3]",
+   "classification": "supported",
+   "evidence": "NHS DKA/symptoms pages: 999 or A&E for rapid worsening, drowsiness, confusion, faster deeper breathing.",
+   "url": "https://www.nhs.uk/conditions/diabetic-ketoacidosis/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c59",
+   "where": "article.keyFacts[4]",
+   "classification": "supported",
+   "evidence": "NHS complications page: yearly eye screening, foot check and kidney test.",
+   "url": "https://www.nhs.uk/conditions/type-1-diabetes/complications/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c60",
+   "where": "article.keyFacts[5]",
+   "classification": "textbook",
+   "evidence": "Type 1 diabetes is lifelong: plain undisputed fact.",
+   "url": "",
+   "action": "kept",
+   "newSentence": ""
+  }
+ ]
+}

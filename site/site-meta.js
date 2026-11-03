@@ -39,8 +39,8 @@ export const SITE = {
     "organs": 48,
     "anatomyArticles": 37,
     "terms": 156,
-    "topics": 604,
-    "links": 7440,
+    "topics": 688,
+    "links": 7734,
     "testCategories": 36,
     "testConcepts": 837,
     "classConcepts": 537,
@@ -57,6 +57,6 @@ export const SITE = {
     "targets": 24,
     "first-aid": 16,
     "health": 9,
-    "blog": 137
+    "blog": 221
   }
 };

@@ -1,0 +1,735 @@
+{
+ "id": "asthma",
+ "searchesUsed": 16,
+ "counts": {
+  "supported": 34,
+  "textbook": 2,
+  "unsupported": 49,
+  "wrong": 0,
+  "unsafe": 0,
+  "unchecked": 0
+ },
+ "claims": [
+  {
+   "id": "c01",
+   "classification": "textbook",
+   "evidence": "Plain gloss; NHS lists coughing, wheezing, chest tightness, breathlessness.",
+   "url": "https://www.nhs.uk/conditions/asthma/",
+   "action": "edited",
+   "newSentence": "The NHS lists coughing, wheezing, chest tightness and breathlessness as the main symptoms of asthma."
+  },
+  {
+   "id": "c02",
+   "classification": "supported",
+   "evidence": "NHS: coughing, wheezing, chest tightness and breathlessness.",
+   "url": "https://www.nhs.uk/conditions/asthma/",
+   "action": "edited",
+   "newSentence": "(merged into first sentence)"
+  },
+  {
+   "id": "c03",
+   "classification": "supported",
+   "evidence": "NHS: symptoms often worse at night and early in the morning, or with certain triggers.",
+   "url": "https://www.nhs.uk/conditions/asthma/",
+   "action": "edited",
+   "newSentence": "They are often worse at night and early in the morning, or when a trigger is present."
+  },
+  {
+   "id": "c04",
+   "classification": "unsupported",
+   "evidence": "NHS says asthma involves swelling (inflammation) of the breathing tubes; the causal \"symptoms happen when\" is a gloss.",
+   "url": "https://www.nhs.uk/conditions/asthma/",
+   "action": "edited",
+   "newSentence": "Asthma involves swelling, called inflammation, of the breathing tubes that carry air in and out of the lungs."
+  },
+  {
+   "id": "c05",
+   "classification": "unsupported",
+   "evidence": "Asthma + Lung UK summary: reliever needed 3+ times a week suggests asthma not well controlled; speak to GP, nurse or pharmacist. No \"red flag\" wording.",
+   "url": "https://www.asthmaandlung.org.uk/symptoms-tests-treatments/treatments/reliever-inhalers",
+   "action": "edited",
+   "newSentence": "Asthma + Lung UK says frequent use of a reliever inhaler is a sign that asthma is not well controlled, and advises speaking to a GP, nurse or pharmacist."
+  },
+  {
+   "id": "c06",
+   "classification": "unsupported",
+   "evidence": "Source says speak to GP, nurse or pharmacist; \"as soon as possible\" not retrieved.",
+   "url": "https://www.asthmaandlung.org.uk/symptoms-tests-treatments/treatments/reliever-inhalers",
+   "action": "edited",
+   "newSentence": "(merged into reworded c05)"
+  },
+  {
+   "id": "c07",
+   "classification": "unsupported",
+   "evidence": "\"Quicker review\" not retrieved; only \"not well controlled\".",
+   "url": "https://www.asthmaandlung.org.uk/symptoms-tests-treatments/treatments/reliever-inhalers",
+   "action": "removed"
+  },
+  {
+   "id": "c08",
+   "classification": "supported",
+   "evidence": "NHS: not fully understood what causes asthma.",
+   "url": "https://www.nhs.uk/conditions/asthma/",
+   "action": "kept"
+  },
+  {
+   "id": "c09",
+   "classification": "unsupported",
+   "evidence": "NHS causes page lists family history of asthma or atopic conditions, bronchiolitis, childhood tobacco smoke, mother smoking in pregnancy, prematurity/low birth weight; allergies and air pollution not listed as risk factors.",
+   "url": "https://www.nhs.uk/conditions/asthma/causes/",
+   "action": "edited",
+   "newSentence": "Risk factors it lists include a family history of asthma or atopic conditions (conditions linked to allergy), childhood exposure to tobacco smoke, and being born prematurely or at low birth weight."
+  },
+  {
+   "id": "c10",
+   "classification": "unsupported",
+   "evidence": "NHS lists infections (colds, flu), allergens (pollen, dust mites, animals), smoke, pollution, medicines, emotions, weather, mould or damp, exercise; \"animal dander\" and \"cold weather\" are not the retrieved wording.",
+   "url": "https://www.nhs.uk/conditions/asthma/causes/",
+   "action": "edited",
+   "newSentence": "The NHS lists common triggers such as infections like colds and flu, allergens such as pollen, dust mites and animals, smoke, pollution, weather, mould or damp, and exercise."
+  },
+  {
+   "id": "c11",
+   "classification": "supported",
+   "evidence": "NHS causes: some cases linked to workplace exposures, known as occupational asthma; MedlinePlus: workplace substances make airways swell and narrow.",
+   "url": "https://www.nhs.uk/conditions/asthma/causes/",
+   "action": "kept"
+  },
+  {
+   "id": "c12",
+   "classification": "unsupported",
+   "evidence": "Severe-asthma phenotype definitions (eosinophils in airways, IgE levels, non-eosinophilic) not stated by any official page retrieved; only research papers.",
+   "url": "https://www.uhsussex.nhs.uk/resources/biologic-treatments-for-severe-asthma/",
+   "action": "removed"
+  },
+  {
+   "id": "c13",
+   "classification": "unsupported",
+   "evidence": "Severe-asthma phenotype definitions (eosinophils in airways, IgE levels, non-eosinophilic) not stated by any official page retrieved; only research papers.",
+   "url": "https://www.uhsussex.nhs.uk/resources/biologic-treatments-for-severe-asthma/",
+   "action": "removed"
+  },
+  {
+   "id": "c14",
+   "classification": "textbook",
+   "evidence": "Eosinophils are a type of white blood cell (plain fact).",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c15",
+   "classification": "unsupported",
+   "evidence": "Severe-asthma phenotype definitions (eosinophils in airways, IgE levels, non-eosinophilic) not stated by any official page retrieved; only research papers.",
+   "url": "https://www.uhsussex.nhs.uk/resources/biologic-treatments-for-severe-asthma/",
+   "action": "removed"
+  },
+  {
+   "id": "c16",
+   "classification": "unsupported",
+   "evidence": "Severe-asthma phenotype definitions (eosinophils in airways, IgE levels, non-eosinophilic) not stated by any official page retrieved; only research papers.",
+   "url": "https://www.uhsussex.nhs.uk/resources/biologic-treatments-for-severe-asthma/",
+   "action": "removed"
+  },
+  {
+   "id": "c17",
+   "classification": "unsupported",
+   "evidence": "NHS: GP asks about symptoms and triggers, may check for eczema, allergies or family history; \"listen to the chest\" not retrieved.",
+   "url": "https://www.nhs.uk/conditions/asthma/",
+   "action": "edited",
+   "newSentence": "A GP will typically ask about symptoms and triggers, and may ask about eczema, allergies or a family history of them."
+  },
+  {
+   "id": "c18",
+   "classification": "unsupported",
+   "evidence": "NHS diagnosis page lists FeNO, spirometry and peak flow; blood test not on the NHS list; NHS: diagnosis from symptom history and breathing tests.",
+   "url": "https://www.nhs.uk/conditions/asthma/diagnosis/",
+   "action": "edited",
+   "newSentence": "There is no single test for asthma. A diagnosis is made from the symptom history and the results of breathing tests."
+  },
+  {
+   "id": "c19",
+   "classification": "supported",
+   "evidence": "NHS diagnosis: FeNO, spirometry and peak flow.",
+   "url": "https://www.nhs.uk/conditions/asthma/diagnosis/",
+   "action": "edited",
+   "newSentence": "The NHS lists FeNO, spirometry and peak flow among the main tests."
+  },
+  {
+   "id": "c20",
+   "classification": "unsupported",
+   "evidence": "NHS: spirometry measures airflow and lung volume; \"how much air blown out and how fast\" not retrieved.",
+   "url": "https://www.nhs.uk/conditions/asthma/diagnosis/",
+   "action": "edited",
+   "newSentence": "Spirometry measures airflow and lung volume."
+  },
+  {
+   "id": "c21",
+   "classification": "unsupported",
+   "evidence": "NHS: peak flow is a handheld device used over a few weeks; \"usually at home\" not retrieved.",
+   "url": "https://www.nhs.uk/conditions/asthma/diagnosis/",
+   "action": "edited",
+   "newSentence": "Peak flow testing uses a handheld device over a few weeks."
+  },
+  {
+   "id": "c22",
+   "classification": "unsupported",
+   "evidence": "NG245 retrieval covered children 5 to 16 (FeNO first); adult first-line order not stated in retrieved text.",
+   "url": "https://www.nice.org.uk/guidance/ng245/resources/asthma-diagnosis-monitoring-and-chronic-asthma-management-bts-nice-sign-pdf-66143958279109",
+   "action": "removed"
+  },
+  {
+   "id": "c23",
+   "classification": "unsupported",
+   "evidence": "Spirometry-after-FeNO sequence retrieved for children 5 to 16 only; adult sequence not retrieved.",
+   "url": "https://www.nice.org.uk/guidance/ng245/resources/asthma-diagnosis-monitoring-and-chronic-asthma-management-bts-nice-sign-pdf-66143958279109",
+   "action": "removed"
+  },
+  {
+   "id": "c24",
+   "classification": "supported",
+   "evidence": "NG245: if spirometry is unavailable or delayed, measure peak flow over a period (schedule omitted).",
+   "url": "https://www.nice.org.uk/guidance/ng245/resources/asthma-diagnosis-monitoring-and-chronic-asthma-management-bts-nice-sign-pdf-66143958279109",
+   "action": "edited",
+   "newSentence": "Peak flow measurements over a period of time are used if spirometry is unavailable or delayed."
+  },
+  {
+   "id": "c25",
+   "classification": "supported",
+   "evidence": "NG245 for children aged 5 to 16 with a suggestive history: FeNO first, then spirometry with bronchodilator reversibility.",
+   "url": "https://www.nice.org.uk/guidance/ng245/resources/asthma-diagnosis-monitoring-and-chronic-asthma-management-bts-nice-sign-pdf-66143958279109",
+   "action": "edited",
+   "newSentence": "For children aged 5 to 16 with a history suggestive of asthma, FeNO comes first, followed by spirometry with bronchodilator reversibility."
+  },
+  {
+   "id": "c26",
+   "classification": "unsupported",
+   "evidence": "Guideline title says 5 to 16; \"does not cover under 5\" not stated.",
+   "url": "https://www.nice.org.uk/guidance/ng245/resources/asthma-diagnosis-monitoring-and-chronic-asthma-management-bts-nice-sign-pdf-66143958279109",
+   "action": "removed"
+  },
+  {
+   "id": "c27",
+   "classification": "unsupported",
+   "evidence": "Only a local NHS page said FeNO/spirometry may not be available in all areas; \"GP surgery\" wording not retrieved.",
+   "url": "https://www.nhs.uk/conditions/asthma/diagnosis/",
+   "action": "removed"
+  },
+  {
+   "id": "c28",
+   "classification": "unsupported",
+   "evidence": "Preference of spirometry over peak flow and reasons not retrieved.",
+   "url": "https://www.nice.org.uk/guidance/ng245/resources/asthma-diagnosis-monitoring-and-chronic-asthma-management-bts-nice-sign-pdf-66143958279109",
+   "action": "removed"
+  },
+  {
+   "id": "c29",
+   "classification": "supported",
+   "evidence": "NHS: inhalers are the main treatment.",
+   "url": "https://www.nhs.uk/conditions/asthma/treatment/",
+   "action": "kept"
+  },
+  {
+   "id": "c30",
+   "classification": "supported",
+   "evidence": "NHS: relievers used when symptoms occur; preventers taken daily.",
+   "url": "https://www.nhs.uk/conditions/asthma/treatment/",
+   "action": "edited",
+   "newSentence": "Reliever inhalers are used when symptoms occur. Preventer inhalers are taken daily to reduce inflammation in the airways."
+  },
+  {
+   "id": "c31",
+   "classification": "supported",
+   "evidence": "NHS: preventer inhalers taken daily to reduce airway inflammation.",
+   "url": "https://www.nhs.uk/conditions/asthma/treatment/",
+   "action": "kept"
+  },
+  {
+   "id": "c32",
+   "classification": "unsupported",
+   "evidence": "Asthma + Lung UK: blue reliever opens airways quickly but has no steroid so cannot reduce inflammation; draft gloss differs.",
+   "url": "https://www.asthmaandlung.org.uk/symptoms-tests-treatments/treatments/reliever-inhalers",
+   "action": "edited",
+   "newSentence": "Asthma + Lung UK explains that a blue reliever inhaler opens the airways but contains no steroid, so it cannot reduce inflammation."
+  },
+  {
+   "id": "c33",
+   "classification": "unsupported",
+   "evidence": "\"Most people prescribed two types of inhaler\" not retrieved.",
+   "url": "https://www.asthmaandlung.org.uk/symptoms-tests-treatments/treatments/reliever-inhalers",
+   "action": "removed"
+  },
+  {
+   "id": "c34",
+   "classification": "supported",
+   "evidence": "Asthma + Lung UK: AIR is one combination inhaler with a steroid and a reliever medicine, used only when symptoms appear.",
+   "url": "https://www.asthmaandlung.org.uk/symptoms-tests-treatments/treatments/air",
+   "action": "edited",
+   "newSentence": "Some people use a single combination inhaler called an anti-inflammatory reliever. It contains a steroid and a reliever medicine and is taken only when symptoms appear."
+  },
+  {
+   "id": "c35",
+   "classification": "supported",
+   "evidence": "Asthma + Lung UK: NICE guidelines recommend no one with asthma should have only a blue reliever inhaler (attribution within blended summary).",
+   "url": "https://www.asthmaandlung.org.uk/symptoms-tests-treatments/treatments/reliever-inhalers",
+   "action": "edited",
+   "newSentence": "The charity says NICE guidelines recommend that no one with asthma should have only a blue reliever inhaler, and that anyone using one also needs a steroid preventer."
+  },
+  {
+   "id": "c36",
+   "classification": "supported",
+   "evidence": "Asthma + Lung UK: anyone using a blue reliever also needs a steroid preventer.",
+   "url": "https://www.asthmaandlung.org.uk/symptoms-tests-treatments/treatments/reliever-inhalers",
+   "action": "edited",
+   "newSentence": "(merged into c35 rewrite)"
+  },
+  {
+   "id": "c37",
+   "classification": "supported",
+   "evidence": "NHS treatment: tablets and other treatments may be needed if asthma is severe.",
+   "url": "https://www.nhs.uk/conditions/asthma/treatment/",
+   "action": "edited",
+   "newSentence": "The NHS says tablets may be added if inhalers alone are not controlling symptoms."
+  },
+  {
+   "id": "c38",
+   "classification": "supported",
+   "evidence": "Research papers (PMC) say omalizumab targets IgE and mepolizumab/reslizumab/benralizumab target the IL-5 pathway; no official page retrieved, so dropped from the page.",
+   "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5102127/",
+   "action": "removed"
+  },
+  {
+   "id": "c39",
+   "classification": "unsupported",
+   "evidence": "Only anti-IL-5 research reviews said exacerbation reduction and steroid-sparing; \"in clinical trials, biologics reduced attacks\" is not carried by an official page.",
+   "url": "https://www.uhsussex.nhs.uk/resources/biologic-treatments-for-severe-asthma/",
+   "action": "removed"
+  },
+  {
+   "id": "c40",
+   "classification": "unsupported",
+   "evidence": "UHNM trust page says biologics can sometimes raise risk of severe allergic reaction; \"rare\" and \"life-threatening\" not carried; another trust says generally very safe.",
+   "url": "https://www.uhsussex.nhs.uk/resources/biologic-treatments-for-severe-asthma/",
+   "action": "removed"
+  },
+  {
+   "id": "c41",
+   "classification": "supported",
+   "evidence": "NHS: always carrying your inhaler, using it as the care team recommends, avoiding triggers, vaccinations such as flu.",
+   "url": "https://www.nhs.uk/conditions/asthma/",
+   "action": "edited",
+   "newSentence": "The NHS lists useful steps such as always carrying an inhaler, avoiding known triggers and having vaccinations such as the flu vaccine."
+  },
+  {
+   "id": "c42",
+   "classification": "unsupported",
+   "evidence": "Exercising regularly and healthy weight not in retrieved NHS self-care list.",
+   "url": "https://www.nhs.uk/conditions/asthma/",
+   "action": "edited",
+   "newSentence": "(avoiding triggers and vaccination kept in c41 rewrite)"
+  },
+  {
+   "id": "c43",
+   "classification": "supported",
+   "evidence": "Asthma + Lung UK: action plan helps understand symptoms and what to do if they get worse; sections for everyday care, worsening symptoms, attack; NHS: usually have a personal action plan.",
+   "url": "https://www.asthmaandlung.org.uk/healthcare-professionals/adult-asthma/AAPs/completing-asthma-action-plan-your-patients",
+   "action": "edited",
+   "newSentence": "A person with asthma will usually have a personal asthma action plan. Asthma + Lung UK says an action plan helps a person understand their symptoms and what to do if they get worse."
+  },
+  {
+   "id": "c44",
+   "classification": "supported",
+   "evidence": "Asthma + Lung UK HCP pages: traffic-light sections green (routine), amber/yellow (warning), red (emergency/attack).",
+   "url": "https://www.asthmaandlung.org.uk/healthcare-professionals/adult-asthma/AAPs/completing-asthma-action-plan-your-patients",
+   "action": "edited",
+   "newSentence": "It is arranged in traffic-light sections. Green covers everyday care, amber covers worsening symptoms, and red covers the signs of an asthma attack, what to do, when to call 999 and when to contact the GP afterwards."
+  },
+  {
+   "id": "c45",
+   "classification": "unsupported",
+   "evidence": "\"Lowers the risk of an asthma attack\" not retrieved.",
+   "url": "https://www.asthmaandlung.org.uk/healthcare-professionals/adult-asthma/AAPs/completing-asthma-action-plan-your-patients",
+   "action": "removed"
+  },
+  {
+   "id": "c46",
+   "classification": "unsupported",
+   "evidence": "Retrieved: NHS Notts self-management plan says attending the annual review matters even when well controlled; \"everyone should have regular reviews\" attributed to Asthma + Lung UK not retrieved.",
+   "url": "https://www.nottsapc.nhs.uk/media/anskspbc/asthma-self-management-plan.pdf",
+   "action": "removed"
+  },
+  {
+   "id": "c47",
+   "classification": "unsupported",
+   "evidence": "Plan update, inhaler technique check, medicine check at review not retrieved.",
+   "url": "https://www.asthmaandlung.org.uk/healthcare-professionals/adult-asthma/AAPs/completing-asthma-action-plan-your-patients",
+   "action": "removed"
+  },
+  {
+   "id": "c48",
+   "classification": "unsupported",
+   "evidence": "NHS: long-term or frequent steroid tablet use can cause side effects including osteoporosis (fragile bones), with regular monitoring; pneumonia not retrieved.",
+   "url": "https://www.nhs.uk/conditions/asthma/treatment/",
+   "action": "edited",
+   "newSentence": "Long-term or frequent use can cause side effects, including fragile bones (osteoporosis), so people are monitored regularly."
+  },
+  {
+   "id": "c49",
+   "classification": "unsupported",
+   "evidence": "Airway changes from long-standing inflammation not retrieved.",
+   "url": "https://medlineplus.gov/ency/article/000141.htm",
+   "action": "removed"
+  },
+  {
+   "id": "c50",
+   "classification": "unsupported",
+   "evidence": "Asthma-COPD overlap found only in research papers, no official page.",
+   "url": "https://medlineplus.gov/ency/article/000141.htm",
+   "action": "removed"
+  },
+  {
+   "id": "c51",
+   "classification": "supported",
+   "evidence": "MedlinePlus: no cure, but with self-care and medical treatment most people can live normal lives.",
+   "url": "https://medlineplus.gov/ency/article/000141.htm",
+   "action": "edited",
+   "newSentence": "MedlinePlus says there is no cure, but with self-care and medical treatment most people can live normal lives."
+  },
+  {
+   "id": "c52",
+   "classification": "unsupported",
+   "evidence": "No source retrieved on life expectancy.",
+   "url": "https://medlineplus.gov/ency/article/000141.htm",
+   "action": "edited",
+   "newSentence": "It adds that symptoms sometimes ease over time, especially in children, and that attacks can be life-threatening and are more common in people with severe asthma."
+  },
+  {
+   "id": "c53",
+   "classification": "supported",
+   "evidence": "NHS: asthma attack is severe symptoms and difficulty breathing, which can be life-threatening.",
+   "url": "https://www.nhs.uk/conditions/asthma/",
+   "action": "edited",
+   "newSentence": "The NHS describes an asthma attack as having severe symptoms and difficulty breathing, which can be life-threatening."
+  },
+  {
+   "id": "c54",
+   "classification": "supported",
+   "evidence": "NHS 111 Wales: sit up and try to stay calm, then take puffs of the reliever.",
+   "url": "https://111.wales.nhs.uk/encyclopaedia/a/article/asthma",
+   "action": "edited",
+   "newSentence": "NHS 111 Wales advises sitting up, trying to stay calm and taking puffs of the reliever inhaler."
+  },
+  {
+   "id": "c55",
+   "classification": "unsupported",
+   "evidence": "Wales: call 999 if you feel worse at any point or do not feel better after the puffs; \"no inhaler\" and \"maximum reliever dose\" not retrieved for general case.",
+   "url": "https://111.wales.nhs.uk/encyclopaedia/a/article/asthma",
+   "action": "edited",
+   "newSentence": "It says to call 999 for an ambulance if a person feels worse at any point, or does not feel better after taking the puffs."
+  },
+  {
+   "id": "c56",
+   "classification": "supported",
+   "evidence": "NHS inform: phone 999 or go to A&E for severe breathing difficulty, e.g. struggling to speak without pausing, gasping or choking.",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/lungs-and-airways/asthma/",
+   "action": "edited",
+   "newSentence": "NHS inform says to call 999 or go to A&E for severe breathing difficulty, such as struggling to speak without pausing, gasping or choking."
+  },
+  {
+   "id": "c57",
+   "classification": "unsupported",
+   "evidence": "Blue lips mentioned by unnamed NHS pages; \"pale or grey\" lips/skin not found.",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/lungs-and-airways/asthma/",
+   "action": "removed"
+  },
+  {
+   "id": "c58",
+   "classification": "supported",
+   "evidence": "NHS 111 Wales: reliever not helping and breathlessness that stops you speaking, eating or sleeping are signs of an attack; call 999.",
+   "url": "https://111.wales.nhs.uk/encyclopaedia/a/article/asthma",
+   "action": "edited",
+   "newSentence": "NHS 111 Wales lists a reliever inhaler that is not helping, and breathlessness that stops a person speaking, eating or sleeping, as signs of an attack."
+  },
+  {
+   "id": "c59",
+   "classification": "unsupported",
+   "evidence": "Retrieved instead: contact a GP urgently if more breathless than usual despite using inhalers; \"see GP after settling\" not retrieved.",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/lungs-and-airways/asthma/",
+   "action": "edited",
+   "newSentence": "NHS information also says to contact a GP urgently if a person is more short of breath than usual despite using inhalers as prescribed."
+  },
+  {
+   "id": "c60",
+   "classification": "unsupported",
+   "evidence": "NHS 111 as route when unclear not retrieved.",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/lungs-and-airways/asthma/",
+   "action": "removed"
+  },
+  {
+   "id": "c61",
+   "classification": "supported",
+   "evidence": "NHS: long-term condition with no cure, manageable with treatment.",
+   "url": "https://www.nhs.uk/conditions/asthma/treatment/",
+   "action": "edited",
+   "newSentence": "The NHS says there is no cure for asthma, but treatment can help control the symptoms."
+  },
+  {
+   "id": "c62",
+   "classification": "supported",
+   "evidence": "MedlinePlus: most people can live normal lives with self-care and treatment.",
+   "url": "https://medlineplus.gov/ency/article/000141.htm",
+   "action": "edited",
+   "newSentence": "MedlinePlus says symptoms sometimes ease over time, especially in children, and that with self-care and medical treatment most people can live normal lives."
+  },
+  {
+   "id": "c63",
+   "classification": "unsupported",
+   "evidence": "\"Action plan lowers risk of attack\" not retrieved.",
+   "url": "https://www.asthmaandlung.org.uk/healthcare-professionals/adult-asthma/AAPs/completing-asthma-action-plan-your-patients",
+   "action": "edited",
+   "newSentence": "Inhalers are the main treatment."
+  },
+  {
+   "id": "c64",
+   "classification": "unsupported",
+   "evidence": "Not stated in retrieved text.",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c65",
+   "classification": "supported",
+   "evidence": "NHS: relievers used when symptoms appear, quickly relax the airways.",
+   "url": "https://www.nhs.uk/conditions/asthma/treatment/",
+   "action": "edited",
+   "newSentence": "Reliever inhalers are used when symptoms occur and quickly relax the airways to make breathing easier."
+  },
+  {
+   "id": "c66",
+   "classification": "supported",
+   "evidence": "NHS: preventers taken daily to reduce airway inflammation.",
+   "url": "https://www.nhs.uk/conditions/asthma/treatment/",
+   "action": "kept"
+  },
+  {
+   "id": "c67",
+   "classification": "unsupported",
+   "evidence": "Gloss differs; source: blue reliever has no steroid so cannot reduce inflammation.",
+   "url": "https://www.asthmaandlung.org.uk/symptoms-tests-treatments/treatments/reliever-inhalers",
+   "action": "edited",
+   "newSentence": "Asthma + Lung UK says a blue reliever inhaler contains no steroid, so it cannot reduce inflammation, and that anyone using one also needs a steroid preventer."
+  },
+  {
+   "id": "c68",
+   "classification": "unsupported",
+   "evidence": "Not retrieved.",
+   "url": "https://www.asthmaandlung.org.uk/symptoms-tests-treatments/treatments/reliever-inhalers",
+   "action": "removed"
+  },
+  {
+   "id": "c69",
+   "classification": "unsupported",
+   "evidence": "\"Listens to the chest\" not retrieved.",
+   "url": "https://www.nhs.uk/conditions/asthma/",
+   "action": "removed"
+  },
+  {
+   "id": "c70",
+   "classification": "unsupported",
+   "evidence": "Blood test not on NHS list; diagnosis from history and breathing tests.",
+   "url": "https://www.nhs.uk/conditions/asthma/diagnosis/",
+   "action": "edited",
+   "newSentence": "The NHS says there is no single test for asthma. A diagnosis is made from the symptom history and the results of breathing tests."
+  },
+  {
+   "id": "c71",
+   "classification": "supported",
+   "evidence": "NHS diagnosis: FeNO, spirometry, peak flow.",
+   "url": "https://www.nhs.uk/conditions/asthma/diagnosis/",
+   "action": "edited",
+   "newSentence": "The tests it lists are FeNO, which measures nitric oxide in the breath, spirometry, which measures airflow and lung volume, and peak flow testing with a handheld device over a few weeks."
+  },
+  {
+   "id": "c72",
+   "classification": "unsupported",
+   "evidence": "Surgery availability not retrieved from an official source.",
+   "url": "https://www.nhs.uk/conditions/asthma/diagnosis/",
+   "action": "removed"
+  },
+  {
+   "id": "c73",
+   "classification": "supported",
+   "evidence": "Asthma + Lung UK: action plan helps understand symptoms and what to do if worse.",
+   "url": "https://www.asthmaandlung.org.uk/healthcare-professionals/adult-asthma/AAPs/completing-asthma-action-plan-your-patients",
+   "action": "edited",
+   "newSentence": "An asthma action plan helps a person understand their symptoms and what to do if they get worse."
+  },
+  {
+   "id": "c74",
+   "classification": "supported",
+   "evidence": "Asthma + Lung UK HCP pages: green, amber/yellow, red.",
+   "url": "https://www.asthmaandlung.org.uk/healthcare-professionals/adult-asthma/AAPs/completing-asthma-action-plan-your-patients",
+   "action": "edited",
+   "newSentence": "Asthma + Lung UK describes green sections for everyday care, amber for worsening symptoms and red for an asthma attack."
+  },
+  {
+   "id": "c75",
+   "classification": "unsupported",
+   "evidence": "\"Lowers risk of an attack\" not retrieved.",
+   "url": "https://www.asthmaandlung.org.uk/healthcare-professionals/adult-asthma/AAPs/completing-asthma-action-plan-your-patients",
+   "action": "removed"
+  },
+  {
+   "id": "c76",
+   "classification": "unsupported",
+   "evidence": "Updating the plan at review not retrieved.",
+   "url": "https://www.asthmaandlung.org.uk/healthcare-professionals/adult-asthma/AAPs/completing-asthma-action-plan-your-patients",
+   "action": "removed"
+  },
+  {
+   "id": "c77",
+   "classification": "supported",
+   "evidence": "NHS 111 Wales: if you feel worse at any point, call 999.",
+   "url": "https://111.wales.nhs.uk/encyclopaedia/a/article/asthma",
+   "action": "edited",
+   "newSentence": "NHS 111 Wales says to call 999 for an ambulance if a person feels worse at any point, or does not feel better after taking puffs of the reliever inhaler."
+  },
+  {
+   "id": "c78",
+   "classification": "unsupported",
+   "evidence": "\"No inhaler\" and \"maximum dose\" not retrieved for general case.",
+   "url": "https://111.wales.nhs.uk/encyclopaedia/a/article/asthma",
+   "action": "removed"
+  },
+  {
+   "id": "c79",
+   "classification": "unsupported",
+   "evidence": "Struggling to speak is on NHS inform; pale/grey lips not found.",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/lungs-and-airways/asthma/",
+   "action": "edited",
+   "newSentence": "NHS inform says to call 999 or go to A&E for severe breathing difficulty, such as struggling to speak without pausing, gasping or choking."
+  },
+  {
+   "id": "c80",
+   "classification": "unsupported",
+   "evidence": "NHS 111 route not retrieved.",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/lungs-and-airways/asthma/",
+   "action": "removed"
+  },
+  {
+   "id": "c81",
+   "classification": "supported",
+   "evidence": "NHS symptoms list.",
+   "url": "https://www.nhs.uk/conditions/asthma/",
+   "action": "edited",
+   "newSentence": "Coughing, wheezing, chest tightness and breathlessness."
+  },
+  {
+   "id": "c82",
+   "classification": "supported",
+   "evidence": "NHS: inhalers main treatment; tablets and other treatments for severe asthma.",
+   "url": "https://www.nhs.uk/conditions/asthma/treatment/",
+   "action": "kept"
+  },
+  {
+   "id": "c83",
+   "classification": "unsupported",
+   "evidence": "Cold weather/respiratory infections wording differs from NHS list.",
+   "url": "https://www.nhs.uk/conditions/asthma/causes/",
+   "action": "edited",
+   "newSentence": "Allergens, smoke, pollution, weather, exercise and infections such as colds and flu."
+  },
+  {
+   "id": "c84",
+   "classification": "supported",
+   "evidence": "Asthma + Lung UK: green, amber/yellow, red sections.",
+   "url": "https://www.asthmaandlung.org.uk/healthcare-professionals/adult-asthma/AAPs/completing-asthma-action-plan-your-patients",
+   "action": "kept"
+  },
+  {
+   "id": "c85",
+   "classification": "unsupported",
+   "evidence": "\"Maximum reliever dose\"/\"no inhaler\" not retrieved for general case.",
+   "url": "https://111.wales.nhs.uk/encyclopaedia/a/article/asthma",
+   "action": "edited",
+   "newSentence": "Call 999 or go to A&E for severe breathing difficulty, or if a person feels worse at any point during an attack."
+  },
+  {
+   "id": "a01",
+   "classification": "supported",
+   "evidence": "NHS diagnosis: asthma can take some time to diagnose; no one test; (dropped for length)",
+   "url": "https://www.nhs.uk/conditions/asthma/diagnosis/",
+   "action": "added"
+  },
+  {
+   "id": "a02",
+   "classification": "supported",
+   "evidence": "NHS diagnosis: FeNO test, breathe into a machine measuring nitric oxide, a sign of lung inflammation.",
+   "url": "https://www.nhs.uk/conditions/asthma/diagnosis/",
+   "action": "added",
+   "newSentence": "In a FeNO test a person breathes into a machine that measures nitric oxide in the breath, which is a sign of inflammation in the lungs."
+  },
+  {
+   "id": "a03",
+   "classification": "supported",
+   "evidence": "Asthma + Lung UK: AIR/steroid; NHS causes: sensitive airways narrow in response to triggers.",
+   "url": "https://www.nhs.uk/conditions/asthma/causes/",
+   "action": "added"
+  },
+  {
+   "id": "a04",
+   "classification": "textbook",
+   "evidence": "Atopic conditions are conditions linked to allergy (plain gloss).",
+   "url": "",
+   "action": "added",
+   "newSentence": "atopic conditions (conditions linked to allergy)"
+  },
+  {
+   "id": "a05",
+   "classification": "supported",
+   "evidence": "NHS treatment: reliever/injected biological therapies for severe asthma not controlled by inhalers and tablets; only an asthma specialist prescribes; Sussex: for specific types of severe asthma.",
+   "url": "https://www.nhs.uk/conditions/asthma/treatment/",
+   "action": "added",
+   "newSentence": "If asthma is severe and not controlled by inhalers and tablets, injected medicines called biological therapies may be offered. Only an asthma specialist can prescribe them, and they suit only specific types of severe asthma."
+  },
+  {
+   "id": "a06",
+   "classification": "supported",
+   "evidence": "NHS treatment: steroid tablets short course during an attack, daily long term in very severe asthma.",
+   "url": "https://www.nhs.uk/conditions/asthma/treatment/",
+   "action": "added",
+   "newSentence": "The NHS says steroid tablets may be used as a short course during an attack, or daily over the long term only in very severe asthma."
+  },
+  {
+   "id": "a07",
+   "classification": "supported",
+   "evidence": "NHS 111 Wales/guide: GP urgently for more breathless than usual despite inhalers (see c59).",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/lungs-and-airways/asthma/",
+   "action": "added"
+  },
+  {
+   "id": "a08",
+   "classification": "supported",
+   "evidence": "NHS (FAQ): there is no single test for asthma.",
+   "url": "https://www.nhs.uk/conditions/asthma/diagnosis/",
+   "action": "added",
+   "newSentence": "The NHS says there is no single test for asthma."
+  },
+  {
+   "id": "a09",
+   "classification": "supported",
+   "evidence": "Asthma + Lung UK: red section covers signs of attack, what to do, when to call 999, when to contact GP after.",
+   "url": "https://www.asthmaandlung.org.uk/healthcare-professionals/adult-asthma/AAPs/completing-asthma-action-plan-your-patients",
+   "action": "added",
+   "newSentence": "The red section covers the signs of an attack, what to do, when to call 999 and when to contact the GP afterwards."
+  },
+  {
+   "id": "a10",
+   "classification": "supported",
+   "evidence": "NHS: no cure, treatment helps control symptoms (key fact).",
+   "url": "https://www.nhs.uk/conditions/asthma/treatment/",
+   "action": "added",
+   "newSentence": "No cure, but treatment can help control the symptoms (NHS)."
+  }
+ ],
+ "notes": "Counts are first-pass (draft) sentences, c01-c85 (sections, FAQ answers, keyFact values). Added/replacement sentences are listed as a01-a10. Several summaries blended pages; Asthma + Lung UK claims (reliever frequency, NICE 'no blue reliever only') were attributed to the reliever-inhalers page within a blended summary. EXISTING PAGE ENTRY: (1) overview 'about one child in ten and one adult in twelve' not retrieved/supported. (2) seekCare 'peak flow below a third of best' is a test cut-off not supported by retrieved text (retrieved signs: struggling to speak without pausing, reliever not helping, breathlessness stopping speech/eating/sleeping, gasping/choking; blue lips only from unnamed NHS pages). (3) causes 'Genetic susceptibility plus environmental exposure ... early viral infections ... occupational chemicals' not supported: NHS says it is not fully understood what causes asthma; retrieved NHS risk factors are family history of asthma/atopic conditions, bronchiolitis in childhood, childhood tobacco smoke, mother smoking in pregnancy, prematurity/low birth weight. (4) riskFactors 'Eczema and hay fever' and 'Obesity' not in the retrieved NHS list. (5) signs 'A silent chest' and 'Fast breathing, use of accessory muscles' not retrieved. (6) complications 'Airway remodelling and fixed narrowing' not retrieved (steroid-tablet side effects incl. osteoporosis are supported). (7) tests (pulse-oximetry, complete-blood-count) and imaging (x-ray) not supported by retrieved text; NHS lists FeNO, spirometry, peak flow; NG245 adds blood eosinophils/allergy tests. (8) treatment 'long-acting bronchodilator as needed' and 'Attacks are treated with high-dose reliever, oral steroids and oxygen' only partly seen (NHS hospital treatment: oxygen by mask, nebuliser, steroid tablets or injections). (9) related 'pneumonia' not supported. (10) references: 'Global Initiative for Asthma' not retrieved. Draft errors removed: lower life expectancy, COPD overlap, pneumonia from steroids, 'pathway does not cover under 5', spirometry-over-peak-flow preference, pale/grey lips attributed to NHS inform, 'most people prescribed two inhalers'. Dropped severe-asthma phenotype sentences (only research papers retrieved). The NHS asthma page excerpts came through blended summaries; no direct page fetch."
+}

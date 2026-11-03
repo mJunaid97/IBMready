@@ -1,0 +1,63 @@
+{
+  "id": "egfr-and-creatinine-kidney-blood-tests",
+  "searchesUsed": 4,
+  "checks": [
+    {
+      "index": 0,
+      "classification": "unsupported",
+      "evidence": "Search explicitly did not confirm eGFR is reported with every creatinine result.",
+      "url": "https://www.nice.org.uk/guidance/ng203/resources/chronic-kidney-disease-assessment-and-management-pdf-66143713055173",
+      "action": "removed"
+    },
+    {
+      "index": 1,
+      "classification": "supported",
+      "evidence": "NICE: more muscle produces more creatinine, giving lower eGFR than true function.",
+      "url": "https://www.nice.org.uk/guidance/ng203/resources/chronic-kidney-disease-assessment-and-management-pdf-66143713055173",
+      "action": "kept"
+    },
+    {
+      "index": 2,
+      "classification": "supported",
+      "evidence": "Cystatin C less affected by muscle mass than creatinine (NICE; cohort study).",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11294032/",
+      "action": "kept"
+    },
+    {
+      "index": 3,
+      "classification": "edited",
+      "evidence": "Lab Tests Online UK says very high ACR shows more severe kidney disease; 'very low means normal' per NHS not seen.",
+      "url": "https://labtestsonline.org.uk/tests/urine-albumin-creatinine-ratio-or-acr",
+      "action": "edited",
+      "newSentence": "Lab Tests Online UK says a very high urine ACR shows that kidney disease is present in a more severe form."
+    },
+    {
+      "index": 4,
+      "classification": "supported",
+      "evidence": "NICE recommends ACR ideally on an early morning sample.",
+      "url": "https://www.nice.org.uk/guidance/ng203/resources/chronic-kidney-disease-assessment-and-management-pdf-66143713055173",
+      "action": "kept"
+    },
+    {
+      "index": 5,
+      "classification": "unsupported",
+      "evidence": "Lupus and family history not found; kidney stones only on a Scottish GP page, not NHS 111 Wales.",
+      "url": "https://www.nhs.uk/conditions/kidney-disease/",
+      "action": "removed"
+    },
+    {
+      "index": 6,
+      "classification": "supported",
+      "evidence": "NHS: most people with CKD manage it with medicine and regular check-ups.",
+      "url": "https://www.nhs.uk/conditions/kidney-disease/",
+      "action": "kept"
+    },
+    {
+      "index": 7,
+      "classification": "supported",
+      "evidence": "NHS lists glomerulonephritis (kidney inflammation) among causes of CKD.",
+      "url": "https://www.nhs.uk/conditions/kidney-disease/",
+      "action": "kept"
+    }
+  ]
+}

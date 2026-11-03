@@ -1,0 +1,161 @@
+{
+  "id": "bone-health-keeping-bones-strong",
+  "searchesUsed": 9,
+  "counts": {
+    "supported": 6,
+    "textbook": 0,
+    "unsupported": 13,
+    "wrong": 0,
+    "unsafe": 0,
+    "unchecked": 0
+  },
+  "claims": [
+    {
+      "id": "c01",
+      "classification": "unsupported",
+      "evidence": "NHS prevention page: weight-bearing and resistance exercise, vitamin D supplement/sunlight, smoking, alcohol 14 units. Inactivity as a risk factor appears only in a trust list (Calderdale), not the NHS page text returned.",
+      "url": "https://www.nhs.uk/conditions/osteoporosis/prevention/",
+      "action": "edited",
+      "newSentence": "NHS pages link bone health to weight-bearing exercise, calcium, vitamin D, not smoking and keeping alcohol low."
+    },
+    {
+      "id": "c02",
+      "classification": "unsupported",
+      "evidence": "NHS: weight-bearing and resistance exercise are 'particularly important for improving bone density'. 'Most useful' overstates.",
+      "url": "https://www.nhs.uk/conditions/osteoporosis/prevention/",
+      "action": "edited",
+      "newSentence": "NHS guidance describes weight-bearing and resistance exercise as particularly important for bone strength."
+    },
+    {
+      "id": "c03",
+      "classification": "supported",
+      "evidence": "NHS Tayside leaflet and ROS/NHS pages: body needs vitamin D to absorb calcium from food; dietary calcium and vitamin D emphasised for bone health.",
+      "url": "https://www.nhs.uk/conditions/osteoporosis/prevention/",
+      "action": "kept"
+    },
+    {
+      "id": "c04",
+      "classification": "unsupported",
+      "evidence": "Calderdale trust and ROS list low body weight/BMI, lack of activity, smoking, excess alcohol. Overweight is not supported: research summary shows lowest fracture risk in overweight people, and no NHS text lists overweight.",
+      "url": "https://www.nhs.uk/conditions/osteoporosis/causes/",
+      "action": "edited",
+      "newSentence": "Being inactive, having a low body weight, smoking and heavy drinking are listed as risk factors for weaker bones."
+    },
+    {
+      "id": "c05",
+      "classification": "supported",
+      "evidence": "NHS bone health over 65: strength activities at least twice a week; balance and flexibility work twice a week.",
+      "url": "https://www.nhs.uk/live-well/bone-health/keep-your-bones-strong-over-65/",
+      "action": "kept"
+    },
+    {
+      "id": "c06",
+      "classification": "unsupported",
+      "evidence": "As c02: NHS says 'particularly important for improving bone density'.",
+      "url": "https://www.nhs.uk/conditions/osteoporosis/prevention/",
+      "action": "edited",
+      "newSentence": "NHS guidance describes weight-bearing and resistance exercise as particularly important for improving bone density."
+    },
+    {
+      "id": "c07",
+      "classification": "supported",
+      "evidence": "NHS prevention: high-impact weight-bearing exercise such as running, skipping, dancing, aerobics and jumping on the spot strengthen muscles, ligaments and joints.",
+      "url": "https://www.nhs.uk/conditions/osteoporosis/prevention/",
+      "action": "kept"
+    },
+    {
+      "id": "c08",
+      "classification": "supported",
+      "evidence": "NHS prevention: swimming and cycling are not weight-bearing; NHS inform: good for fitness but do not build bone density as effectively.",
+      "url": "https://www.nhs.uk/conditions/osteoporosis/prevention/",
+      "action": "kept"
+    },
+    {
+      "id": "c09",
+      "classification": "unsupported",
+      "evidence": "Only 'lack of physical activity' as a risk factor is in returned text (Calderdale trust). Muscle and bone loss and falls mechanism was not stated.",
+      "url": "https://www.nhs.uk/conditions/osteoporosis/causes/",
+      "action": "edited",
+      "newSentence": "Lack of physical activity is listed as a risk factor for osteoporosis."
+    },
+    {
+      "id": "c10",
+      "classification": "unsupported",
+      "evidence": "NHS prevention returned text says adults need 700mg calcium a day, which should be obtainable from the daily diet. 'Important for maintaining bone health' not shown verbatim.",
+      "url": "https://www.nhs.uk/conditions/osteoporosis/prevention/",
+      "action": "edited",
+      "newSentence": "The NHS says most adults should be able to get the calcium they need from their daily diet."
+    },
+    {
+      "id": "c11",
+      "classification": "unsupported",
+      "evidence": "NHS: difficult to get enough vitamin D from food alone, so consider a daily supplement. Dose is not to be given in prose; 'for people at risk' not what the page said (it was for adults generally).",
+      "url": "https://www.nhs.uk/conditions/osteoporosis/prevention/",
+      "action": "edited",
+      "newSentence": "Vitamin D helps the body absorb calcium, and the NHS says it can be difficult to get enough vitamin D from food alone, so a daily supplement may be considered."
+    },
+    {
+      "id": "c12",
+      "classification": "unsupported",
+      "evidence": "NHS: sunlight from late March/early April to end of September triggers vitamin D production; consider a daily supplement. 'All adults ... October to March' came from NHS Tayside, not the cited NHS page.",
+      "url": "https://www.nhs.uk/conditions/osteoporosis/prevention/",
+      "action": "edited",
+      "newSentence": "Sunlight from about late March or early April to the end of September helps the body make vitamin D, and the NHS suggests considering a daily vitamin D supplement."
+    },
+    {
+      "id": "c13",
+      "classification": "unsupported",
+      "evidence": "Only underweight/low BMI supported as a risk factor (Calderdale trust). Osteopenia described by NHS 111 Wales as bone loss before osteoporosis. Overweight not supported.",
+      "url": "https://111.wales.nhs.uk/encyclopaedia/o/article/osteoporosis/",
+      "action": "edited",
+      "newSentence": "Osteopenia is the stage of bone loss before osteoporosis, and being underweight is listed among the risk factors for bone loss."
+    },
+    {
+      "id": "c14",
+      "classification": "supported",
+      "evidence": "NHS 111 Wales: smoking linked to higher osteoporosis risk; advises not more than 14 units alcohol a week; Calderdale trust lists excess alcohol; NHS prevention covers cutting alcohol.",
+      "url": "https://111.wales.nhs.uk/encyclopaedia/o/article/osteoporosis/",
+      "action": "kept"
+    },
+    {
+      "id": "c15",
+      "classification": "unsupported",
+      "evidence": "Royal Osteoporosis Society says excess salt may increase urinary calcium loss. It was not in the cited NHS page text, and ROS says 'may'.",
+      "url": "https://theros.org.uk/information-and-support/food-and-supplements/are-there-any-foods-i-should-avoid/",
+      "action": "edited",
+      "newSentence": "The Royal Osteoporosis Society says too much salt may increase the amount of calcium lost in urine."
+    },
+    {
+      "id": "c16",
+      "classification": "supported",
+      "evidence": "NHS bone health over 65: muscle-strengthening at least twice a week; balance and flexibility twice a week.",
+      "url": "https://www.nhs.uk/live-well/bone-health/keep-your-bones-strong-over-65/",
+      "action": "kept"
+    },
+    {
+      "id": "c17",
+      "classification": "unsupported",
+      "evidence": "NHS over-65 page: 150 minutes of moderate activity a week, spread across the week. 'Built up gradually' not in returned text.",
+      "url": "https://www.nhs.uk/live-well/bone-health/keep-your-bones-strong-over-65/",
+      "action": "edited",
+      "newSentence": "It also advises 150 minutes (2 and a half hours) of moderate-intensity activity a week, ideally spread across the days."
+    },
+    {
+      "id": "c18",
+      "classification": "unsupported",
+      "evidence": "Statement came from NHS 111 Wales (talk to GP or health specialist before a new exercise programme after diagnosis); ROS says most can exercise safely and advises a doctor or physio if many fractures. The cited NHS prevention page text did not show it.",
+      "url": "https://111.wales.nhs.uk/encyclopaedia/o/article/osteoporosis/",
+      "action": "edited",
+      "newSentence": "NHS 111 Wales suggests that people diagnosed with osteoporosis talk to a GP or health specialist before starting a new exercise programme."
+    },
+    {
+      "id": "c19",
+      "classification": "unsupported",
+      "evidence": "NHS DEXA page: a scan is often used to help diagnose osteoporosis or assess risk. 'The standard test' not stated.",
+      "url": "https://www.nhs.uk/tests-and-treatments/dexa-scan/why-its-done/",
+      "action": "edited",
+      "newSentence": "A DEXA bone density scan is often used to help diagnose osteoporosis or to assess the risk of it."
+    }
+  ],
+  "notes": "Overweight as a bone risk is not backed by returned UK text and research summaries suggest a more complex picture, so it was dropped from c04/c13. Vitamin D dose (10 micrograms) removed from prose per writing rules. No urgency statements in this guide. 9/9 searches used."
+}

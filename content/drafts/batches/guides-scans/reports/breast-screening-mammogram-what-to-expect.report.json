@@ -1,0 +1,251 @@
+{
+ "id": "breast-screening-mammogram-what-to-expect",
+ "searchesUsed": 7,
+ "counts": {
+  "supported": 13,
+  "textbook": 1,
+  "unsupported": 14,
+  "wrong": 0,
+  "unsafe": 0,
+  "unchecked": 0
+ },
+ "claims": [
+  {
+   "id": "c01",
+   "sentence": "The NHS says screening is offered from age 50 up to the 71st birthday.",
+   "classification": "supported",
+   "evidence": "GOV.UK/NHS: \"All individuals from 50 up to their 71st birthday who are registered as female with their GP are automatically invited\". (Some local trusts say 70 and 11 months.)",
+   "url": "https://assets.publishing.service.gov.uk/media/693c3e69c72b0f8ccf33d6e2/Breast_screening_for_trans_and_non-binary_people.pdf",
+   "action": "kept"
+  },
+  {
+   "id": "c02",
+   "sentence": "The first invitation comes between the ages of 50 and 53, and further invitations follow every three years until the 71st birthday.",
+   "classification": "unsupported",
+   "evidence": "First invitation between 50 and 53 and three-yearly invitations seen in summaries; \"usually\" qualifier needed.",
+   "url": "https://assets.publishing.service.gov.uk/media/693c3e69c72b0f8ccf33d6e2/Breast_screening_for_trans_and_non-binary_people.pdf",
+   "action": "edited",
+   "newSentence": "The first invitation usually comes between the ages of 50 and 53, and further invitations follow every three years until the 71st birthday."
+  },
+  {
+   "id": "c03",
+   "sentence": "Anyone registered with a GP as female is invited automatically.",
+   "classification": "supported",
+   "evidence": "GOV.UK: individuals registered as female with their GP are automatically invited.",
+   "url": "https://assets.publishing.service.gov.uk/media/693c3e69c72b0f8ccf33d6e2/Breast_screening_for_trans_and_non-binary_people.pdf",
+   "action": "kept"
+  },
+  {
+   "id": "c04",
+   "sentence": "People over 71 are not invited automatically but can ask for screening every three years.",
+   "classification": "supported",
+   "evidence": "NHS trust (Torbay): over 71 can refer themselves; entitled to refer every three years.",
+   "url": "https://www.torbayandsouthdevon.nhs.uk/services/breast-care-unit/breast-screening/",
+   "action": "kept"
+  },
+  {
+   "id": "c05",
+   "sentence": "For trans and non-binary people, invitations depend on the sex registered with the GP, and the NHS says people who have taken feminising hormones for more than two years can have screening.",
+   "classification": "unsupported",
+   "evidence": "Sources conflict: Hull NHS trust page says trans women on feminising hormones for over 2 years can be screened; Cancer Research UK says to consider screening after five years. Eligibility also depends on chest surgery and registration.",
+   "url": "https://www.cancerresearchuk.org/about-cancer/spot-cancer-early/screening/trans-and-non-binary-cancer-screening",
+   "action": "edited",
+   "newSentence": "For trans and non-binary people, eligibility for breast screening depends on the sex registered with the GP and on any hormone treatment or surgery, so NHS guidance advises checking with the GP or local screening service."
+  },
+  {
+   "id": "c06",
+   "sentence": "A mammogram takes two X-rays of each breast.",
+   "classification": "supported",
+   "evidence": "Cancer Research UK/NHS: the mammographer will usually take 2 X-rays of each breast.",
+   "url": "https://www.cancerresearchuk.org/about-cancer/tests-and-scans/mammogram",
+   "action": "kept"
+  },
+  {
+   "id": "c07",
+   "sentence": "Each breast is pressed between two plates, which is likely to be uncomfortable, and some people find it painful, but it is over quickly.",
+   "classification": "unsupported",
+   "evidence": "Sources say some women find it uncomfortable or painful and any pain is usually brief; \"likely to be uncomfortable\" not retrieved.",
+   "url": "https://www.nhs.uk/tests-and-treatments/breast-screening-mammogram/what-happens-at-your-breast-screening-appointment/",
+   "action": "edited",
+   "newSentence": "Each breast is pressed between two plates, which some people find uncomfortable or painful, but any discomfort should not last long."
+  },
+  {
+   "id": "c08",
+   "sentence": "Sources describe an appointment as taking roughly 20 to 30 minutes, and one unit suggests allowing up to an hour.",
+   "classification": "unsupported",
+   "evidence": "Retrieved: mammogram takes a few minutes and the whole appointment should take no longer than 30 minutes. \"Up to an hour\" and \"20 to 30\" not retrieved (1 to 3 hours applies to the follow-up assessment clinic).",
+   "url": "https://www.nhs.uk/tests-and-treatments/breast-screening-mammogram/what-happens-at-your-breast-screening-appointment/",
+   "action": "edited",
+   "newSentence": "NHS pages say the mammogram itself takes only a few minutes and the whole appointment should take no longer than 30 minutes."
+  },
+  {
+   "id": "c09",
+   "sentence": "Results usually come within two weeks of the appointment and are also sent to the GP.",
+   "classification": "supported",
+   "evidence": "NHS: \"You should get your results within 2 weeks of your screening appointment. We'll also send your results to your GP surgery.\" (Some units say 2 to 3 weeks.)",
+   "url": "https://www.nhs.uk/tests-and-treatments/breast-screening-mammogram/what-happens-at-your-breast-screening-appointment/",
+   "action": "kept"
+  },
+  {
+   "id": "c10",
+   "sentence": "A normal result means another invitation in three years.",
+   "classification": "unsupported",
+   "evidence": "Not stated in retrieved text; only three-yearly invitations (c02) and normal-result frequency from individual units retrieved.",
+   "url": "https://www.nhs.uk/tests-and-treatments/breast-screening-mammogram/what-happens-at-your-breast-screening-appointment/",
+   "action": "removed"
+  },
+  {
+   "id": "c11",
+   "sentence": "If the mammogram looks abnormal, the person is called back for more tests, such as a breast ultrasound scan or a biopsy.",
+   "classification": "unsupported",
+   "evidence": "Retrieved text mentions assessment clinic for recalled women; ultrasound and biopsy not named in retrieved text.",
+   "url": "https://www.cancerresearchuk.org/about-cancer/tests-and-scans/mammogram",
+   "action": "edited",
+   "newSentence": "If the mammogram needs a closer look, the person is invited back to an assessment clinic for further tests."
+  },
+  {
+   "id": "c12",
+   "sentence": "The NHS says about four in every 100 women are asked to come back, and of these, one will be found to have cancer.",
+   "classification": "unsupported",
+   "evidence": "Royal Marsden page: about 4 in 100 women are asked back and three in four of those have normal results after further tests. \"One will be found to have cancer\" not stated; page is a Royal Marsden private-care blog, not NHS England.",
+   "url": "https://www.royalmarsden.nhs.uk/private-care/news-and-blogs/what-happens-during-breast-screening",
+   "action": "edited",
+   "newSentence": "A Royal Marsden page says about 4 in 100 women are asked to come back, and about three in four of those have normal results after further tests."
+  },
+  {
+   "id": "c13",
+   "sentence": "Screening aims to find breast cancers at an early stage, when they are too small to see or feel.",
+   "classification": "unsupported",
+   "evidence": "No retrieved text states the \"too small to see or feel\" aim.",
+   "url": "https://www.nhs.uk/tests-and-treatments/breast-screening-mammogram/what-happens-at-your-breast-screening-appointment/",
+   "action": "edited",
+   "newSentence": "Breast screening is offered to people without symptoms, using mammograms to look for breast cancer."
+  },
+  {
+   "id": "c14",
+   "sentence": "It does not prevent breast cancer.",
+   "classification": "textbook",
+   "evidence": "Undisputed: screening detects rather than prevents cancer; no retrieved text.",
+   "url": "https://www.nhs.uk/tests-and-treatments/breast-screening-mammogram/what-happens-at-your-breast-screening-appointment/",
+   "action": "kept"
+  },
+  {
+   "id": "c15",
+   "sentence": "Mammograms use a very low dose of X-rays, and the benefits are judged to greatly outweigh that risk.",
+   "classification": "unsupported",
+   "evidence": "No retrieved text on mammogram dose; Royal Marsden page treats \"benefits outweigh risks\" as a common belief rather than settled; one UK estimate: for every death prevented, 3 women overdiagnosed.",
+   "url": "https://www.royalmarsden.nhs.uk/private-care/news-and-blogs/what-happens-during-breast-screening",
+   "action": "removed"
+  },
+  {
+   "id": "c16",
+   "sentence": "Screening does not always find a cancer that is there, so some people with breast cancer are missed.",
+   "classification": "supported",
+   "evidence": "Royal Marsden page and a UK National Screening Committee submission: cancers can be missed at screening, more likely in denser breasts.",
+   "url": "https://www.royalmarsden.nhs.uk/private-care/news-and-blogs/what-happens-during-breast-screening",
+   "action": "kept"
+  },
+  {
+   "id": "c17",
+   "sentence": "A mammogram can flag something in a person who does not have cancer, which can cause anxiety and lead to more tests such as a biopsy.",
+   "classification": "unsupported",
+   "evidence": "Royal Marsden page: follow-up tests are invasive and time-consuming and about three in four recalled have normal results. Anxiety and biopsy not retrieved.",
+   "url": "https://www.royalmarsden.nhs.uk/private-care/news-and-blogs/what-happens-during-breast-screening",
+   "action": "edited",
+   "newSentence": "Some people are asked back for more tests and then found not to have cancer, and the follow-up tests can be invasive and time-consuming."
+  },
+  {
+   "id": "c18",
+   "sentence": "Some people who are screened are diagnosed and treated for a breast cancer that would never have been found or caused them harm.",
+   "classification": "supported",
+   "evidence": "Royal Marsden page: screening sometimes finds cancers that would never cause harm; UK estimate 129 overdiagnosed per 10,000 invited over 20 years.",
+   "url": "https://www.royalmarsden.nhs.uk/private-care/news-and-blogs/what-happens-during-breast-screening",
+   "action": "kept"
+  },
+  {
+   "id": "c19",
+   "sentence": "Screening is not a substitute for noticing changes, and a new lump, change in shape or nipple discharge needs a GP appointment, with no wait for the next invitation.",
+   "classification": "unsupported",
+   "evidence": "Cancer Research UK: for changes to nipples, chest area or armpits, do not wait for screening and tell your doctor. \"Lump\" and \"shape\" not in retrieved text.",
+   "url": "https://www.cancerresearchuk.org/about-cancer/spot-cancer-early/screening/trans-and-non-binary-cancer-screening",
+   "action": "edited",
+   "newSentence": "Cancer Research UK says anyone who notices changes to their nipples, chest area or armpits should not wait for screening and should tell their doctor."
+  },
+  {
+   "id": "c20",
+   "sentence": "The NHS offers breast screening from age 50 up to the 71st birthday, with invitations every three years.",
+   "classification": "supported",
+   "evidence": "Per c01 and c02 sources: 50 up to 71st birthday, three-yearly.",
+   "url": "https://assets.publishing.service.gov.uk/media/693c3e69c72b0f8ccf33d6e2/Breast_screening_for_trans_and_non-binary_people.pdf",
+   "action": "kept"
+  },
+  {
+   "id": "c21",
+   "sentence": "A mammogram takes two X-rays of each breast, with each breast pressed between two plates.",
+   "classification": "supported",
+   "evidence": "Per c06 and c07 sources.",
+   "url": "https://www.cancerresearchuk.org/about-cancer/tests-and-scans/mammogram",
+   "action": "kept"
+  },
+  {
+   "id": "c22",
+   "sentence": "Screening aims to find breast cancers at an early stage, when they are too small to see or feel, and it does not prevent breast cancer.",
+   "classification": "unsupported",
+   "evidence": "Depends on c13 (not retrieved); \"aims to find cancers too small to see or feel\" unsupported; \"does not prevent\" is textbook.",
+   "url": "https://www.nhs.uk/tests-and-treatments/breast-screening-mammogram/what-happens-at-your-breast-screening-appointment/",
+   "action": "edited",
+   "newSentence": "Breast screening is offered to people without symptoms to look for breast cancer, and it does not prevent breast cancer."
+  },
+  {
+   "id": "c23",
+   "sentence": "Screening can miss a cancer and can raise false alarms, and some people are diagnosed with a cancer that would never have caused harm.",
+   "classification": "supported",
+   "evidence": "Supported by Royal Marsden page and NSC submission: missed cancers, recalls that end normal, overdiagnosis.",
+   "url": "https://www.royalmarsden.nhs.uk/private-care/news-and-blogs/what-happens-during-breast-screening",
+   "action": "kept"
+  },
+  {
+   "id": "c24",
+   "sentence": "NHS breast screening uses mammograms to look for cancers too small to see or feel. This guide covers who is invited, the appointment, results and harms.",
+   "classification": "unsupported",
+   "evidence": "\"Too small to see or feel\" not retrieved; invited/appointment/results/harms scope is supported.",
+   "url": "https://www.nhs.uk/tests-and-treatments/breast-screening-mammogram/what-happens-at-your-breast-screening-appointment/",
+   "action": "edited",
+   "newSentence": "NHS breast screening uses mammograms to look for breast cancer in people without symptoms. This guide covers who is invited, the appointment, results and harms."
+  },
+  {
+   "sentence": "The NHS leaflet 'Helping you decide' describes breast screening as a personal choice and sets out its benefits and risks.",
+   "classification": "supported",
+   "evidence": "Leaflet text: 'It is your choice whether to have breast screening or not. This leaflet aims to help you decide', with benefits and risks.",
+   "url": "https://phescreening.blog.gov.uk/wp-content/uploads/sites/152/2021/02/BSP01-plain-text-A4-PDF-Feb-2021.pdf",
+   "action": "kept",
+   "id": "a25"
+  },
+  {
+   "sentence": "It says screening does not prevent breast cancer from developing.",
+   "classification": "supported",
+   "evidence": "Leaflet: 'Screening does not prevent you from getting breast cancer.'",
+   "url": "https://phescreening.blog.gov.uk/wp-content/uploads/sites/152/2021/02/BSP01-plain-text-A4-PDF-Feb-2021.pdf",
+   "action": "kept",
+   "id": "a26"
+  },
+  {
+   "sentence": "Overdiagnosis means finding a cancer that would never have caused harm, and estimates of how often it happens vary between studies.",
+   "classification": "supported",
+   "evidence": "Trust page describes overdiagnosis as cancers that would not cause harm; a review reports trial estimates ranging widely (under 1% to 30%).",
+   "url": "https://services.eastcheshire.nhs.uk/breast-screening?back_cID=214",
+   "action": "kept",
+   "id": "a27"
+  },
+  {
+   "sentence": "A 2012 independent review, cited by an NHS trust, estimated that among 10,000 UK women screened from age 50 for 20 years, about 43 breast cancer deaths would be prevented and 129 cancers would be overdiagnosed.",
+   "classification": "unsupported",
+   "evidence": "Retrieved text gives 129 overdiagnosed vs 43 deaths prevented per 10,000 over 20 years from the 2012 panel, but one source says 'invited' not 'screened', and a letter cites per-1,000 figures (5 deaths prevented, 17 overdiagnosed) that scale differently. Exact source page not confirmed.",
+   "url": "https://www.cancerresearchuk.org/about-cancer/breast-cancer/screening/screening-2012-review",
+   "action": "edited",
+   "newSentence": "A 2012 independent review estimated that among 10,000 UK women invited to screening from age 50 for 20 years, about 43 breast cancer deaths would be prevented and 129 cancers would be overdiagnosed, although other estimates differ.",
+   "id": "a28"
+  }
+ ],
+ "notes": "The search tool returns summaries, so nhs.uk text was not read verbatim. The 4-in-100 recall figure comes from a Royal Marsden private-care page, not NHS England; the cited NHS source should be checked. The trans hormone rule conflicts between sources (2 years at Hull trust, 5 years at CRUK). Extra facts: UK estimate of 129 overdiagnosed cancers and 43 breast cancer deaths prevented per 10,000 women invited for 20 years (https://www.gov.uk/government/publications/breast-screening-helping-women-decide/nhs-breast-screening-helping-you-decide). Some local units use 70 and 11 months as the upper age (https://www.torbayandsouthdevon.nhs.uk/services/breast-care-unit/breast-screening/). | Round 2 additions (ids a..) checked separately: Re-check 43/129 against the review itself before publication."
+}

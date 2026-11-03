@@ -1,0 +1,299 @@
+{
+ "id": "chest-pain-causes-and-when-to-get-help",
+ "searchesUsed": 8,
+ "counts": {
+  "supported": 13,
+  "textbook": 1,
+  "unsupported": 14,
+  "wrong": 2,
+  "unsafe": 0,
+  "unchecked": 0
+ },
+ "claims": [
+  {
+   "id": "c01",
+   "where": "body[0]",
+   "sentence": "The NHS says that in most cases chest pain is not caused by a heart problem.",
+   "classification": "supported",
+   "evidence": "NHS and trust chest pain text returned: most chest pain is not caused by a heart problem. Ledger URL /symptoms/chest-pain/ was not returned; the page returned is /conditions/chest-pain/.",
+   "url": "https://www.nhs.uk/conditions/chest-pain/",
+   "action": "kept"
+  },
+  {
+   "id": "c02",
+   "where": "body[0]",
+   "sentence": "Common causes that do not involve the heart include heartburn or indigestion, a strained chest muscle, anxiety or panic, and chest infections such as pneumonia or pleurisy.",
+   "classification": "supported",
+   "evidence": "Returned text lists heartburn/reflux, strained chest wall muscle, anxiety/panic, and pneumonia/pleurisy (pain on breathing in) as non-heart causes.",
+   "url": "https://www.nhs.uk/conditions/chest-pain/",
+   "action": "kept"
+  },
+  {
+   "id": "c03",
+   "where": "body[0]",
+   "sentence": "Shingles can also cause chest pain, often with a skin rash.",
+   "classification": "supported",
+   "evidence": "Returned text: shingles shows with tingling skin then a rash that blisters.",
+   "url": "https://www.nhs.uk/conditions/chest-pain/",
+   "action": "kept"
+  },
+  {
+   "id": "c04",
+   "where": "body[0]",
+   "sentence": "The main heart-related causes are angina, heart attack and pericarditis.",
+   "classification": "unsupported",
+   "evidence": "Retrieved text does not call these 'the main' heart-related causes; it only shows each of angina, heart attack and pericarditis can cause chest pain.",
+   "url": "https://www.nhs.uk/conditions/chest-pain/",
+   "action": "edited",
+   "newSentence": "Angina, heart attack and pericarditis are heart conditions that can cause chest pain."
+  },
+  {
+   "id": "c05",
+   "where": "body[0]",
+   "sentence": "Pericarditis is inflammation of the lining around the heart, and the NHS says it often follows a viral infection such as a cold or flu.",
+   "classification": "supported",
+   "evidence": "Pericarditis page: inflammation of the sac/layer around the heart, usually a viral infection such as a cold or flu.",
+   "url": "https://www.nhs.uk/conditions/pericarditis/",
+   "action": "kept"
+  },
+  {
+   "id": "c06",
+   "where": "body[1]",
+   "sentence": "Angina is chest pain that comes and goes because blood flow to the heart is reduced, and it is often triggered by physical effort or stress.",
+   "classification": "unsupported",
+   "evidence": "Retrieved: angina is a symptom/sign of a heart problem; attacks usually stop after rest or angina medicine; GTN can be used before a known trigger such as exercise. 'Because blood flow is reduced' and 'triggered by effort or stress' were not stated in retrieved NHS text.",
+   "url": "https://www.nhs.uk/conditions/angina/",
+   "action": "edited",
+   "newSentence": "Angina is chest pain that is a sign of a heart problem, and GTN can be used to ease an attack or before a known trigger such as exercise."
+  },
+  {
+   "id": "c07",
+   "where": "body[1]",
+   "sentence": "Angina attacks usually last less than 10 minutes.",
+   "classification": "supported",
+   "evidence": "Retrieved: angina attacks usually last less than 10 minutes and should stop after resting or taking angina medicine.",
+   "url": "https://www.nhs.uk/conditions/angina/",
+   "action": "kept"
+  },
+  {
+   "id": "c08",
+   "where": "body[1]",
+   "sentence": "The NHS says chest pain is the most common sign of a heart attack, but symptoms vary: the pain is often severe, though some people have only minor pain similar to indigestion.",
+   "classification": "unsupported",
+   "evidence": "Retrieved: most common symptom is chest pain but symptoms vary; indigestion-like discomfort listed; pain described as crushing or squeezing. 'Often severe' and 'minor pain' not stated in retrieved text.",
+   "url": "https://www.nhs.uk/conditions/heart-attack/symptoms/",
+   "action": "edited",
+   "newSentence": "The NHS says chest pain is the most common symptom of a heart attack, but symptoms vary from person to person."
+  },
+  {
+   "id": "c09",
+   "where": "body[1]",
+   "sentence": "Other signs include pain spreading to the arms, jaw, neck or back, sweating, breathlessness and feeling or being sick, and some people have these without any chest pain.",
+   "classification": "supported",
+   "evidence": "Retrieved: pain may spread to arm, neck, jaw; sweating; shortness of breath; feeling or being sick; back or jaw pain; some people have these without chest pain.",
+   "url": "https://www.nhs.uk/conditions/heart-attack/symptoms/",
+   "action": "kept"
+  },
+  {
+   "id": "c10",
+   "where": "body[1]",
+   "sentence": "Unlike the pain of angina, the symptoms of a heart attack are not usually relieved by a nitrate tablet or spray.",
+   "classification": "supported",
+   "evidence": "Retrieved verbatim: 'Unlike angina, the symptoms of a heart attack are not usually relieved using a nitrate tablet or spray.'",
+   "url": "https://www.nhs.uk/conditions/heart-attack/",
+   "action": "kept"
+  },
+  {
+   "id": "c11",
+   "where": "body[1]",
+   "sentence": "A heart attack has similar symptoms but is more serious and needs emergency treatment.",
+   "classification": "unsupported",
+   "evidence": "Retrieved only that a heart attack can be life-threatening and needs emergency treatment in hospital. 'Similar symptoms' (to angina) and 'more serious' were not stated.",
+   "url": "https://www.nhs.uk/conditions/heart-attack/",
+   "action": "edited",
+   "newSentence": "A heart attack can be life-threatening and needs emergency treatment in hospital."
+  },
+  {
+   "id": "c12",
+   "where": "body[1]",
+   "sentence": "NHS 111 Wales says angina is usually caused by coronary heart disease, in which narrowed or blocked arteries reduce the blood supply to the heart.",
+   "classification": "unsupported",
+   "evidence": "Not retrieved: no returned text from 111 Wales stated this (only the URL appeared in results).",
+   "url": "https://111.wales.nhs.uk/encyclopaedia/a/article/angina",
+   "action": "removed"
+  },
+  {
+   "id": "c13",
+   "where": "body[2]",
+   "sentence": "The NHS says to call 999 for sudden chest pain that does not ease, or pain that spreads to the arm, jaw, neck or back.",
+   "classification": "supported",
+   "evidence": "Retrieved: call 999 if sudden chest pain that does not go away, or spreads to arms, back, neck or jaw, feels tight or heavy, or lasts more than 15 minutes.",
+   "url": "https://www.nhs.uk/conditions/chest-pain/",
+   "action": "kept"
+  },
+  {
+   "id": "c14",
+   "where": "body[2]",
+   "sentence": "Chest pain that comes with sweating, nausea, light-headedness or breathlessness is in the same group.",
+   "classification": "supported",
+   "evidence": "Retrieved: chest pain with sweating, feeling sick, light-headedness or shortness of breath is a 999 trigger (NHS angina/chest pain wording).",
+   "url": "https://www.nhs.uk/conditions/chest-pain/",
+   "action": "kept"
+  },
+  {
+   "id": "c15",
+   "where": "body[2]",
+   "sentence": "The NHS says a person with these symptoms should not drive themselves to A&E.",
+   "classification": "supported",
+   "evidence": "Retrieved: 'Do not drive yourself to A&E. The person you speak to at 999 will give you advice.'",
+   "url": "https://www.nhs.uk/conditions/angina/",
+   "action": "kept"
+  },
+  {
+   "id": "c16",
+   "where": "body[2]",
+   "sentence": "For someone already diagnosed with angina, the NHS treats pain that does not settle after rest or after their usual angina medicine as an emergency that needs a 999 call.",
+   "classification": "supported",
+   "evidence": "Retrieved: for people diagnosed with angina, call 999 if pain does not stop after rest or medicine (NHS page gives a step: call 999 if symptoms persist 5 minutes after a second GTN dose). Wording is consistent.",
+   "url": "https://www.nhs.uk/conditions/angina/",
+   "action": "kept"
+  },
+  {
+   "id": "c17",
+   "where": "body[3]",
+   "sentence": "For sharp or stabbing chest pain that changes with breathing, swallowing, coughing or lying down, the NHS suggests an urgent GP appointment or help from NHS 111.",
+   "classification": "wrong",
+   "evidence": "The urgent GP / NHS 111 advice for sharp or stabbing pain that is worse on breathing, swallowing, coughing or lying down was returned on the pericarditis page, not confirmed for the general chest pain page (a search explicitly found no such line there). 'Changes with' also softens 'worse with'. Applying it to all such pain could mislead because other causes (e.g. lung clot) share it.",
+   "url": "https://www.nhs.uk/conditions/pericarditis/",
+   "action": "edited",
+   "newSentence": "For sharp or stabbing chest pain that gets worse with deep breathing, swallowing, coughing or lying down, as can happen with pericarditis, the NHS pericarditis page suggests an urgent GP appointment or help from NHS 111."
+  },
+  {
+   "id": "c18",
+   "where": "body[3]",
+   "sentence": "The NHS also advises getting help from NHS 111 for angina that is getting worse, happening more often or coming on at rest.",
+   "classification": "wrong",
+   "evidence": "Retrieved: angina that feels worse than before, happens more often, lasts longer or happens at rest is a reason to contact the GP urgently. NHS 111 was not stated for this in retrieved text, so the route to care differs.",
+   "url": "https://www.nhs.uk/conditions/angina/",
+   "action": "edited",
+   "newSentence": "Angina that feels worse than before, happens more often, lasts longer or happens at rest is a reason to contact a GP urgently."
+  },
+  {
+   "id": "c19",
+   "where": "body[4]",
+   "sentence": "The NHS says a GP who thinks a person has angina will refer them to a specialist.",
+   "classification": "unsupported",
+   "evidence": "Retrieved (source page unclear, 111 Wales/other blended result): if a GP thinks someone may have angina they are referred to a heart specialist (cardiologist). Could not tie it to the NHS angina page.",
+   "url": "https://111.wales.nhs.uk/encyclopaedia/a/article/angina",
+   "action": "edited",
+   "newSentence": "If a GP thinks someone may have angina, they can be referred to a heart specialist (cardiologist)."
+  },
+  {
+   "id": "c20",
+   "where": "body[4]",
+   "sentence": "Tests can include an electrocardiogram (ECG), blood tests, blood oxygen tests or scans.",
+   "classification": "unsupported",
+   "evidence": "Retrieved: ECG and blood tests are used to find out if someone is having a heart attack; angina tests listed were echocardiogram, coronary angiogram, perfusion scan, cardiac MRI. 'Blood oxygen tests' not found.",
+   "url": "https://www.nhs.uk/conditions/heart-attack/",
+   "action": "edited",
+   "newSentence": "Tests to find out whether someone is having a heart attack include an electrocardiogram (ECG) and blood tests, and further tests can include a coronary angiogram."
+  },
+  {
+   "id": "c21",
+   "where": "body[4]",
+   "sentence": "An ECG records the heart's electrical activity.",
+   "classification": "textbook",
+   "evidence": "Plain definition (author marked textbook).",
+   "action": "kept"
+  },
+  {
+   "id": "c22",
+   "where": "body[4]",
+   "sentence": "An NHS emergency department leaflet says staff check for serious causes such as a heart attack, a blood clot in the lung and a collapsed lung.",
+   "classification": "supported",
+   "evidence": "Sussex ED leaflet text: serious causes screened for include heart attack, clots in the lungs, a collapsed lung and torn large blood vessels.",
+   "url": "https://www.uhsussex.nhs.uk/wp-content/uploads/2022/09/Chest-pain-ED.pdf",
+   "action": "kept"
+  },
+  {
+   "id": "c23",
+   "where": "body[4]",
+   "sentence": "The same leaflets describe troponin blood tests, which may be repeated, together with a chest X-ray or an ECG.",
+   "classification": "unsupported",
+   "evidence": "Leaflet text returned mentions troponin (heart involvement) and D-dimer (lung clots). Repeat troponin came from a Scottish leaflet; chest X-ray/ECG not found in the Sussex leaflet. 'Same leaflets' overstated.",
+   "url": "https://www.uhsussex.nhs.uk/wp-content/uploads/2022/09/Chest-pain-ED.pdf",
+   "action": "edited",
+   "newSentence": "The Sussex hospital leaflet says staff may test for troponin, which shows whether the heart is involved, and for D-dimer, which looks for clots in the lungs."
+  },
+  {
+   "id": "c24",
+   "where": "body[4]",
+   "sentence": "A normal first troponin result lowers the chance of a heart problem but does not rule it out.",
+   "classification": "unsupported",
+   "evidence": "Leaflet: a normal troponin makes a cardiac cause less likely but does not necessarily mean the pain is unrelated to the heart. 'First' result not stated.",
+   "url": "https://www.uhsussex.nhs.uk/wp-content/uploads/2022/09/Chest-pain-ED.pdf",
+   "action": "edited",
+   "newSentence": "The Sussex hospital leaflet says a normal troponin result makes a heart problem less likely, but does not necessarily mean the pain is unrelated to the heart."
+  },
+  {
+   "id": "c25",
+   "where": "body[5]",
+   "sentence": "For a heart attack, the blood tests look for troponin, a protein released when heart muscle is damaged, and further tests can include an echocardiogram and a coronary angiogram, which shows where blood flow is blocked.",
+   "classification": "unsupported",
+   "evidence": "NHS heart attack text: ECG and blood tests; coronary angiogram finds where blood flow is blocked. Troponin was not named in NHS results (only in the hospital leaflet) and echocardiogram appeared only under angina.",
+   "url": "https://www.nhs.uk/conditions/heart-attack/",
+   "action": "edited",
+   "newSentence": "Tests for a heart attack include an ECG and blood tests, and further tests can include a coronary angiogram, which can show exactly where blood flow to the heart is blocked."
+  },
+  {
+   "id": "c26",
+   "where": "body[5]",
+   "sentence": "A heart attack is treated in hospital, and options include medicines to clear blockages, angioplasty with a stent, and bypass surgery.",
+   "classification": "unsupported",
+   "evidence": "Retrieved: heart attack needs emergency treatment in hospital; coronary angioplasty (opening blocked arteries with a stent) and coronary artery bypass; medicine also used. 'Medicines to clear blockages' not stated.",
+   "url": "https://www.nhs.uk/conditions/heart-attack/",
+   "action": "edited",
+   "newSentence": "A heart attack needs emergency treatment in hospital, and treatment can include medicine, coronary angioplasty (opening blocked arteries with a stent) and coronary artery bypass surgery."
+  },
+  {
+   "id": "c27",
+   "where": "body[5]",
+   "sentence": "The NHS says the aims of angina treatment are to relieve symptoms, prevent further attacks, and reduce the risk of a heart attack or stroke.",
+   "classification": "unsupported",
+   "evidence": "Retrieved: treatment can help stop angina attacks and reduce the risk of further problems like heart attacks. 'Relieve symptoms' and 'stroke' not stated.",
+   "url": "https://www.nhs.uk/conditions/angina/treatment/",
+   "action": "edited",
+   "newSentence": "NHS treatment for angina aims to help stop attacks and reduce the risk of further problems such as a heart attack."
+  },
+  {
+   "id": "c28",
+   "where": "body[5]",
+   "sentence": "Medicines include GTN for attacks and beta blockers or calcium channel blockers to prevent them, and surgery may be recommended to improve blood flow to the heart.",
+   "classification": "unsupported",
+   "evidence": "Retrieved: GTN is the usual option for stable angina (also before exercise); beta blockers slow the heart; calcium channel blockers relax the arteries; surgery (CABG, PCI) may be recommended if medicines are not controlling angina. 'To prevent them' not stated.",
+   "url": "https://www.nhs.uk/conditions/angina/treatment/",
+   "action": "edited",
+   "newSentence": "Medicines for angina include GTN, beta blockers, which slow the heart, and calcium channel blockers, which relax the arteries, and surgery may be recommended if medicines are not controlling angina."
+  },
+  {
+   "id": "c29",
+   "where": "body[5]",
+   "sentence": "Lifestyle changes the NHS lists for angina include a balanced diet, cutting down on alcohol, stopping smoking and losing weight if overweight.",
+   "classification": "unsupported",
+   "evidence": "Retrieved only: a GP may ask about diet, smoking and drinking, and healthy lifestyle changes with treatment help control angina. The specific list (balanced diet, alcohol, stopping smoking, weight) and the /living/ page were not returned.",
+   "url": "https://www.nhs.uk/conditions/angina/",
+   "action": "edited",
+   "newSentence": "A GP may ask about lifestyle, such as diet, smoking and drinking, and healthy lifestyle changes alongside treatment can help control angina."
+  },
+  {
+   "id": "c30",
+   "where": "summary",
+   "sentence": "Most chest pain does not come from the heart, but sudden pain that does not ease or spreads to the arm, jaw, neck or back needs a 999 call.",
+   "classification": "supported",
+   "evidence": "Combines supported body sentences (most chest pain not from the heart; 999 for sudden pain that does not go away or spreads to arm, neck, jaw or back).",
+   "url": "https://www.nhs.uk/conditions/chest-pain/",
+   "action": "kept"
+  }
+ ],
+ "notes": "Budget of 8 searches used. The NHS chest pain page returned at https://www.nhs.uk/conditions/chest-pain/ (ledger used /symptoms/chest-pain/, not returned); its own text was never directly quoted, so c01-c03, c13-c14 rest on blended summaries that agree across several NHS pages. The 'urgent GP or NHS 111' route (c17) was only confirmed for pericarditis; a search found no such line for general chest pain. c18 added NHS 111 where retrieved text said GP urgently. Sources not tied to a page: c19 (referral) came from an unattributed blended result. Hospital leaflet (Sussex) must not be attributed to 'the NHS' generally. 111 Wales angina claim (c12) unretrievable so removed. Site's own symptom/condition pages were not checked for contradictions. Medicine names (GTN, aspirin) appear in sources but no doses used. Consider adding the retrieved 'lasts more than 15 minutes' and 'tight or heavy' 999 triggers to body[2] for completeness."
+}

@@ -1,0 +1,359 @@
+{
+ "id": "hydroxychloroquine",
+ "searchesUsed": 15,
+ "counts": {
+  "supported": 35,
+  "textbook": 1,
+  "unsupported": 6,
+  "wrong": 1,
+  "unsafe": 0,
+  "unchecked": 0
+ },
+ "claims": [
+  {
+   "id": "c01",
+   "classification": "supported",
+   "evidence": "Original: \"Hydroxychloroquine is a medicine used to treat rheumatoid arthritis, lupus and some skin conditions.\" | Retrieved: NHS: used to treat rheumatoid arthritis, lupus and some skin conditions; prescription-only.",
+   "url": "https://www.nhs.uk/medicines/hydroxychloroquine/",
+   "action": "kept",
+   "newSentence": "Hydroxychloroquine is a medicine used to treat rheumatoid arthritis, lupus and some skin conditions."
+  },
+  {
+   "id": "c02",
+   "classification": "wrong",
+   "evidence": "Original: \"Hydroxychloroquine can, rarely, cause changes in the retina ... after long-term use.\" | Retrieved: RCOphth 2020 guideline gives long-term prevalence of retinopathy around 7.5% and its 2026 summary says it is more common than previously reported; 'rarely' is not supported.",
+   "url": "https://www.rcophth.ac.uk/wp-content/uploads/2026/06/Hydroxychloroquine-Exec-summary.pdf",
+   "action": "edited",
+   "newSentence": "With long-term use it can cause changes in the retina, the light-sensitive layer at the back of the eye, and the Royal College of Ophthalmologists says this is more common than previously reported."
+  },
+  {
+   "id": "c03",
+   "classification": "supported",
+   "evidence": "Original: \"NRAS advises contacting the GP or specialist team about any change in vision while taking it.\" | Retrieved: NRAS: if any vision changes occur, contact the GP or specialist team.",
+   "url": "https://nras.org.uk/resource/hydroxychloroquine/",
+   "action": "kept",
+   "newSentence": "NRAS advises contacting the GP or specialist team about any change in vision while taking it."
+  },
+  {
+   "id": "c04",
+   "classification": "supported",
+   "evidence": "Original: \"The NHS describes it as a DMARD that calms the immune system.\" | Retrieved: NHS: a DMARD; works by blocking the effects of chemicals released when the immune system attacks the body. MedlinePlus: may work by decreasing immune system activity.",
+   "url": "https://www.nhs.uk/medicines/hydroxychloroquine/about-hydroxychloroquine/",
+   "action": "edited",
+   "newSentence": "The NHS describes it as a disease-modifying anti-rheumatic drug (DMARD) that works by blocking the effects of chemicals released when the immune system attacks the body."
+  },
+  {
+   "id": "c05",
+   "classification": "supported",
+   "evidence": "Original: \"How hydroxychloroquine calms the immune system has not been fully worked out. Reviews describe it building up inside ... lysosomes and disrupting how immune cells process and present antigens.\" | Retrieved: Reviews: weak base accumulating in lysosomes, raising pH and inhibiting antigen processing/presentation to MHC-II; a 2024 review says mechanism not yet fully elucidated.",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7880079",
+   "action": "edited",
+   "newSentence": "Reviews describe it building up inside small compartments of cells called lysosomes, which disrupts how immune cells process and present antigens, and one review notes that its exact mechanism has not been fully worked out."
+  },
+  {
+   "id": "c06",
+   "classification": "supported",
+   "evidence": "Original: \"The NHS says benefit comes slowly, and it can take several weeks before improvement is noticed in conditions such as rheumatoid arthritis and lupus.\" | Retrieved: NHS: may take several weeks before improvement is noticed. Versus Arthritis: slow-acting drug, not a painkiller.",
+   "url": "https://www.nhs.uk/medicines/hydroxychloroquine/",
+   "action": "edited",
+   "newSentence": "The NHS says it may take several weeks before improvement is noticed, and Versus Arthritis describes it as slow-acting."
+  },
+  {
+   "id": "c07",
+   "classification": "supported",
+   "evidence": "Original: \"It is not a painkiller, although pain may ease as symptoms improve.\" | Retrieved: Versus Arthritis: hydroxychloroquine is slow-acting, not a painkiller.",
+   "url": "https://versusarthritis.org/about-arthritis/treatments/drugs/hydroxychloroquine",
+   "action": "edited",
+   "newSentence": "Versus Arthritis says it is not a painkiller."
+  },
+  {
+   "id": "c08",
+   "classification": "supported",
+   "evidence": "Original: \"The NHS advises that feeling better is not on its own a reason to stop treatment.\" | Retrieved: NHS common questions: keep taking until doctor says otherwise; do not stop just because you feel better; symptoms may return.",
+   "url": "https://www.nhs.uk/medicines/hydroxychloroquine/common-questions-about-hydroxychloroquine/",
+   "action": "kept",
+   "newSentence": "The NHS advises that feeling better is not on its own a reason to stop treatment."
+  },
+  {
+   "id": "c09",
+   "classification": "supported",
+   "evidence": "Original: \"It is available only on prescription.\" | Retrieved: NHS: only available on prescription.",
+   "url": "https://www.nhs.uk/medicines/hydroxychloroquine/",
+   "action": "kept",
+   "newSentence": "It is available only on prescription."
+  },
+  {
+   "id": "c10",
+   "classification": "supported",
+   "evidence": "Original: \"MedlinePlus places it in a group of medicines called antimalarials and also describes it as an antirheumatic drug.\" | Retrieved: MedlinePlus: antimalarial class; also called an antirheumatic drug.",
+   "url": "https://medlineplus.gov/druginfo/meds/a601240.html",
+   "action": "kept",
+   "newSentence": "MedlinePlus places it in a group of medicines called antimalarials and also describes it as an antirheumatic drug."
+  },
+  {
+   "id": "c11",
+   "classification": "supported",
+   "evidence": "Original: \"Common side effects listed by the NHS include stomach ache, ... itchy rash. / Mood changes are also listed.\" | Retrieved: NHS: stomach ache, feeling sick, being sick, loss of appetite, diarrhoea, headache listed as common; itchy rash and mood changes in NHS listing.",
+   "url": "https://www.nhs.uk/medicines/hydroxychloroquine/side-effects-of-hydroxychloroquine/",
+   "action": "edited",
+   "newSentence": "The NHS lists stomach ache, feeling or being sick, loss of appetite, diarrhoea, headache, an itchy rash and mood changes among the possible side effects."
+  },
+  {
+   "id": "c12",
+   "classification": "supported",
+   "evidence": "Original: \"Blurred vision can occur when treatment starts, and the NHS says to avoid driving, cycling or using machinery until vision is back to normal.\" | Retrieved: NHS: can sometimes cause blurred vision when first starting; do not drive, ride a bike or use machinery until vision is back to normal.",
+   "url": "https://www.nhs.uk/medicines/hydroxychloroquine/side-effects-of-hydroxychloroquine/",
+   "action": "kept",
+   "newSentence": "Blurred vision can occur when treatment starts, and the NHS says to avoid driving, cycling or using machinery until vision is back to normal."
+  },
+  {
+   "id": "c13",
+   "classification": "supported",
+   "evidence": "Original: \"Serious but uncommon effects listed by the NHS ...\" | Retrieved: NHS: most serious side effects are rare.",
+   "url": "https://www.nhs.uk/medicines/hydroxychloroquine/side-effects-of-hydroxychloroquine/",
+   "action": "edited",
+   "newSentence": "The NHS says most serious side effects are rare."
+  },
+  {
+   "id": "c14",
+   "classification": "supported",
+   "evidence": "Original: \"...damage to the retina of the eye.\" | Retrieved: NHS side effects page: eye problems such as blurred vision, sensitivity to light or changes in colour vision: contact doctor or call 111 straight away.",
+   "url": "https://www.nhs.uk/medicines/hydroxychloroquine/side-effects-of-hydroxychloroquine/",
+   "action": "edited",
+   "newSentence": "The NHS says to contact a doctor or call NHS 111 straight away about eye problems, such as constant blurred vision, sensitivity to light or changes in how colours look."
+  },
+  {
+   "id": "c15",
+   "classification": "supported",
+   "evidence": "Original: \"severe skin reactions, liver problems, ... low blood sugar, unusual bruising or infections, muscle weakness, and changes in mood or thinking\" | Retrieved: NHS: blistering/peeling skin, yellowing skin or dark urine (liver), unusual infections or bruising, low blood sugar symptoms, mood changes incl. thoughts of self-harm listed with NHS 111 advice.",
+   "url": "https://www.nhs.uk/medicines/hydroxychloroquine/side-effects-of-hydroxychloroquine/",
+   "action": "edited",
+   "newSentence": "The NHS also lists severe skin reactions such as blistering or peeling, liver problems such as yellow skin or dark urine, unusual infections or bruising, symptoms of low blood sugar, and mood changes including thoughts of self-harm, and says to call NHS 111 about them."
+  },
+  {
+   "id": "c16",
+   "classification": "unsupported",
+   "evidence": "Original: \"muscle weakness; changes in thinking\" | Retrieved: No retrieved NHS text confirmed muscle weakness or 'changes in thinking' as listed effects.",
+   "url": "https://www.nhs.uk/medicines/hydroxychloroquine/side-effects-of-hydroxychloroquine/",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c17",
+   "classification": "supported",
+   "evidence": "Original: \"The NHS says to call 999 if the lips, mouth, throat or tongue suddenly swell, or if breathing becomes very difficult.\" | Retrieved: NHS: call 999 if lips, mouth, throat or tongue suddenly swell, or breathing is very fast or difficult.",
+   "url": "https://www.nhs.uk/medicines/hydroxychloroquine/side-effects-of-hydroxychloroquine/",
+   "action": "kept",
+   "newSentence": "The NHS says to call 999 if the lips, mouth, throat or tongue suddenly swell, or if breathing becomes very fast or difficult."
+  },
+  {
+   "id": "c18",
+   "classification": "unsupported",
+   "evidence": "Original: \"For thoughts of self-harm, 999 is for immediate danger, NHS 111 has a mental health option, and Samaritans is free on 116 123 at any time.\" | Retrieved: Samaritans/999-for-danger line is a site rule for mental-health pages; no retrieved source statement for hydroxychloroquine pages. NHS side-effect page route (NHS 111) is retained instead. Flagged for human decision.",
+   "url": "https://www.nhs.uk/medicines/hydroxychloroquine/side-effects-of-hydroxychloroquine/",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c19",
+   "classification": "unsupported",
+   "evidence": "Original: \"For other serious side effects the NHS points people to NHS 111.\" | Retrieved: NHS side-effect page route is NHS 111; the sentence as a separate claim duplicates S 'skin'.",
+   "url": "https://www.nhs.uk/medicines/hydroxychloroquine/side-effects-of-hydroxychloroquine/",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c20",
+   "classification": "supported",
+   "evidence": "Original: \"The NHS lists a past allergic reaction to hydroxychloroquine or similar medicines, such as quinine, as a reason it may not be suitable.\" | Retrieved: NHS who-can-take: past allergic reaction to hydroxychloroquine or similar medicines such as quinine.",
+   "url": "https://www.nhs.uk/medicines/hydroxychloroquine/who-can-and-cannot-take-hydroxychloroquine/",
+   "action": "kept",
+   "newSentence": "The NHS lists a past allergic reaction to hydroxychloroquine or similar medicines, such as quinine, as a reason it may not be suitable."
+  },
+  {
+   "id": "c21",
+   "classification": "supported",
+   "evidence": "Original: \"It also lists some eye, liver, kidney, heart and blood conditions, psoriasis and porphyria as needing care.\" | Retrieved: NHS: may not be suitable with liver, kidney, blood or heart problems, maculopathy or other eye problems, diabetes, psoriasis. Porphyria appears only on an older NHS page/shared care protocols.",
+   "url": "https://www.nhs.uk/medicines/hydroxychloroquine/who-can-and-cannot-take-hydroxychloroquine/",
+   "action": "edited",
+   "newSentence": "The NHS lists liver, kidney, blood or heart problems, maculopathy or other eye problems, diabetes and psoriasis as conditions that may make it unsuitable or need care."
+  },
+  {
+   "id": "c22",
+   "classification": "supported",
+   "evidence": "Original: \"Versus Arthritis says it is not usually prescribed to people with maculopathy, a problem with the central part of the retina.\" | Retrieved: Versus Arthritis: won't usually be prescribed with maculopathy, a problem with the central part of the retina.",
+   "url": "https://versusarthritis.org/about-arthritis/treatments/drugs/hydroxychloroquine",
+   "action": "kept",
+   "newSentence": "Versus Arthritis says it is not usually prescribed to people with maculopathy, a problem with the central part of the retina."
+  },
+  {
+   "id": "c23",
+   "classification": "supported",
+   "evidence": "Original: \"The NHS says it is not considered an immunosuppressant but may lower white blood cell numbers, which can make infections more likely.\" | Retrieved: NHS common questions: not considered an immunosuppressant but may lower white blood cells, raising infection risk.",
+   "url": "https://www.nhs.uk/medicines/hydroxychloroquine/common-questions-about-hydroxychloroquine/",
+   "action": "kept",
+   "newSentence": "The NHS says it is not considered an immunosuppressant but may lower white blood cell numbers, which can make infections more likely."
+  },
+  {
+   "id": "c24",
+   "classification": "supported",
+   "evidence": "Original: \"Hospital guidance generally says treatment can continue through pregnancy, and the specialist team is told early if pregnancy is planned or happens.\" | Retrieved: NHS pregnancy page: can be used in pregnancy; recommended to keep taking because poorly treated inflammatory conditions like lupus can affect the baby (premature birth, growth problems). Main NHS page: lowest effective dose in pregnancy.",
+   "url": "https://www.nhs.uk/medicines/hydroxychloroquine/pregnancy-breastfeeding-and-fertility-while-taking-hydroxychloroquine/",
+   "action": "edited",
+   "newSentence": "The NHS pregnancy page says it is recommended to keep taking hydroxychloroquine during pregnancy, because inflammatory conditions that are not well treated can affect the baby."
+  },
+  {
+   "id": "c25",
+   "classification": "supported",
+   "evidence": "Original: \"Some guidance describes it as compatible with breastfeeding, although small amounts pass into breast milk.\" | Retrieved: NHS: if doctor or health visitor says the baby is healthy, OK while breastfeeding; very small amounts pass into milk; no known side effects in breastfed babies.",
+   "url": "https://www.nhs.uk/medicines/hydroxychloroquine/pregnancy-breastfeeding-and-fertility-while-taking-hydroxychloroquine/",
+   "action": "edited",
+   "newSentence": "The NHS says that if the doctor or health visitor says the baby is healthy, hydroxychloroquine can be taken while breastfeeding; it passes into breast milk in very small amounts and has not been known to cause side effects in breastfed babies."
+  },
+  {
+   "id": "c26",
+   "classification": "unsupported",
+   "evidence": "Original: \"Sheets from different hospitals differ in age and wording on pregnancy, so the specialist team gives advice for each person.\" | Retrieved: Author's own flag: local sheets differ; the main NHS pages are clear, so this hedge sentence is not a source statement.",
+   "url": "https://www.nhs.uk/medicines/hydroxychloroquine/pregnancy-breastfeeding-and-fertility-while-taking-hydroxychloroquine/",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c27",
+   "classification": "supported",
+   "evidence": "Original: \"The NHS says alcohol can be drunk while taking hydroxychloroquine.\" | Retrieved: NHS common questions: you can drink alcohol while taking hydroxychloroquine.",
+   "url": "https://www.nhs.uk/medicines/hydroxychloroquine/common-questions-about-hydroxychloroquine/",
+   "action": "kept",
+   "newSentence": "The NHS says alcohol can be drunk while taking hydroxychloroquine."
+  },
+  {
+   "id": "c28",
+   "classification": "supported",
+   "evidence": "Original: \"The NHS advises telling the doctor about all other medicines, herbal remedies, vitamins and supplements before starting.\" | Retrieved: NHS other-medicines page exists; antacids can affect absorption; not enough information on herbal remedies and supplements.",
+   "url": "https://www.nhs.uk/medicines/hydroxychloroquine/taking-hydroxychloroquine-with-other-medicines-and-herbal-supplements/",
+   "action": "edited",
+   "newSentence": "The NHS has a page on taking it with other medicines and herbal supplements; it says antacids can affect how well it is absorbed and that there is not enough information on herbal remedies and supplements."
+  },
+  {
+   "id": "c29",
+   "classification": "supported",
+   "evidence": "Original: \"Versus Arthritis says to report new eye symptoms to a doctor straight away.\" | Retrieved: Versus Arthritis: report any new eye symptoms to your doctor straight away.",
+   "url": "https://versusarthritis.org/about-arthritis/treatments/drugs/hydroxychloroquine",
+   "action": "kept",
+   "newSentence": "Versus Arthritis says to report new eye symptoms to a doctor straight away."
+  },
+  {
+   "id": "c30",
+   "classification": "supported",
+   "evidence": "Original: \"Long-term users usually have regular blood tests and eye checks.\" | Retrieved: NHS: long-term users get regular check-ups and eye exams; SPS/shared care mention blood counts. RCOphth: baseline testing no longer recommended; annual monitoring after several years of therapy with SD-OCT and fundus autofluorescence.",
+   "url": "https://curriculum.rcophth.ac.uk/2020/12/hydroxychloroquine-and-chloroquine-retinopathy-recommendations-on-monitoring/",
+   "action": "edited",
+   "newSentence": "Long-term use is monitored, which can include blood counts and eye examinations."
+  },
+  {
+   "id": "c31",
+   "classification": "supported",
+   "evidence": "Original: \"The Royal College no longer asks for a routine baseline eye test for people starting treatment.\" | Retrieved: RCOphth: baseline testing for new initiators no longer recommended.",
+   "url": "https://curriculum.rcophth.ac.uk/2020/12/hydroxychloroquine-and-chloroquine-retinopathy-recommendations-on-monitoring/",
+   "action": "edited",
+   "newSentence": "The Royal College of Ophthalmologists no longer recommends a routine baseline eye test for people starting treatment."
+  },
+  {
+   "id": "c32",
+   "classification": "supported",
+   "evidence": "Original: \"The retinal changes are largely irreversible, which is why early detection matters.\" | Retrieved: RCOphth: retinopathy results in largely irreversible structural and functional retinal deficits; can progress after stopping.",
+   "url": "https://curriculum.rcophth.ac.uk/2020/12/hydroxychloroquine-and-chloroquine-retinopathy-recommendations-on-monitoring/",
+   "action": "kept",
+   "newSentence": "The Royal College of Ophthalmologists describes the retinal changes as largely irreversible, and they can continue to progress after the medicine is stopped."
+  },
+  {
+   "id": "c33",
+   "classification": "supported",
+   "evidence": "Original: \"Retinopathy can be silent at first, so eye checks are used to find it before symptoms appear. ... Severe damage to the central retina can cause permanent sight loss.\" | Retrieved: Review (PMC9606779): early structural damage often precedes visual symptoms; irreversible visual impairment can result.",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9606779",
+   "action": "edited",
+   "newSentence": "A review says early damage to the retina often comes before changes in vision, so eye checks are used to look for it, and it can result in permanent loss of vision."
+  },
+  {
+   "id": "c34",
+   "classification": "supported",
+   "evidence": "Original: \"The Royal College of Ophthalmologists says extra risk factors, such as high daily dose, tamoxifen or reduced kidney function, can justify earlier eye monitoring.\" | Retrieved: RCOphth: additional risk factors tamoxifen, impaired kidney function, higher dose; may be monitored annually from the start, as decided by prescriber.",
+   "url": "https://curriculum.rcophth.ac.uk/2020/12/hydroxychloroquine-and-chloroquine-retinopathy-recommendations-on-monitoring/",
+   "action": "edited",
+   "newSentence": "The Royal College says extra risk factors, such as tamoxifen use, reduced kidney function or a higher daily dose, can justify eye monitoring from the start of treatment, as decided by the prescriber."
+  },
+  {
+   "id": "c35",
+   "classification": "supported",
+   "evidence": "Original: \"Its guidance describes monitoring with retinal imaging such as optical coherence tomography (OCT) scans.\" | Retrieved: RCOphth: monitoring with SD-OCT and widefield fundus autofluorescence imaging.",
+   "url": "https://curriculum.rcophth.ac.uk/2020/12/hydroxychloroquine-and-chloroquine-retinopathy-recommendations-on-monitoring/",
+   "action": "edited",
+   "newSentence": "Its guidance describes monitoring with retinal imaging such as optical coherence tomography (OCT) scans."
+  },
+  {
+   "id": "c36",
+   "classification": "supported",
+   "evidence": "Original: \"Long-term users usually have regular ... eye checks.\" | Retrieved: RCOphth: referral for annual monitoring after five years of therapy.",
+   "url": "https://curriculum.rcophth.ac.uk/2020/12/hydroxychloroquine-and-chloroquine-retinopathy-recommendations-on-monitoring/",
+   "action": "edited",
+   "newSentence": "The guidance recommends regular eye monitoring after several years of treatment."
+  },
+  {
+   "id": "c37",
+   "classification": "supported",
+   "evidence": "Original: \"(new, sourced from 2026 RCOphth executive summary)\" | Retrieved: RCOphth 2026 executive summary headline: hydroxychloroquine retinopathy is more common than previously reported.",
+   "url": "https://www.rcophth.ac.uk/wp-content/uploads/2026/06/Hydroxychloroquine-Exec-summary.pdf",
+   "action": "kept",
+   "newSentence": "A 2026 summary from the Royal College says retinopathy is more common than previously reported."
+  },
+  {
+   "id": "c38",
+   "classification": "supported",
+   "evidence": "Original: \"Versus Arthritis advises telling an optician about hydroxychloroquine and having regular eye check-ups.\" | Retrieved: Versus Arthritis: tell the optician you take hydroxychloroquine; check-up with an optician once a year.",
+   "url": "https://versusarthritis.org/about-arthritis/treatments/drugs/hydroxychloroquine",
+   "action": "edited",
+   "newSentence": "Versus Arthritis advises telling an optician about hydroxychloroquine and having regular eye check-ups."
+  },
+  {
+   "id": "c39",
+   "classification": "unsupported",
+   "evidence": "Original: \"The Royal College says the decision to stop treatment belongs to the prescribing doctor rather than the eye specialist.\" | Retrieved: No retrieved source stated that the decision to stop belongs to the prescriber rather than the eye specialist; 2026 summary snippet was fragmentary.",
+   "url": "https://www.rcophth.ac.uk/wp-content/uploads/2026/06/Hydroxychloroquine-Exec-summary.pdf",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c40",
+   "classification": "unsupported",
+   "evidence": "Original: \"Hospital guidance generally says ... specialist team is told early if pregnancy is planned or happens.\" | Retrieved: Only shared-care protocols, not the main NHS pages, support 'hospital guidance' wording; replaced by NHS pregnancy/breastfeeding claims.",
+   "url": "https://www.nhs.uk/medicines/hydroxychloroquine/pregnancy-breastfeeding-and-fertility-while-taking-hydroxychloroquine/",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c41",
+   "classification": "supported",
+   "evidence": "Original: \"Tablets are taken by mouth.\" | Retrieved: NHS/emc: 200 mg film-coated tablets, prescription only.",
+   "url": "https://www.nhs.uk/medicines/hydroxychloroquine/",
+   "action": "kept",
+   "newSentence": "Tablets are taken by mouth."
+  },
+  {
+   "id": "c42",
+   "classification": "supported",
+   "evidence": "Original: \"brands UK/US Plaquenil\" | Retrieved: MedlinePlus and local NHS documents list Plaquenil as a brand name.",
+   "url": "https://medlineplus.gov/druginfo/meds/a601240.html",
+   "action": "kept",
+   "newSentence": "Brand: Plaquenil (UK and US)."
+  },
+  {
+   "id": "c43",
+   "classification": "textbook",
+   "evidence": "Original: \"class field\" | Retrieved: Antimalarial DMARD class label combines MedlinePlus (antimalarial, antirheumatic) and NHS (DMARD).",
+   "url": "https://medlineplus.gov/druginfo/meds/a601240.html",
+   "action": "kept",
+   "newSentence": "Antimalarial disease-modifying anti-rheumatic drug (DMARD)"
+  }
+ ],
+ "notes": "Searches are a shared pool (35 total across the four items; the class pages reuse the same retrievals). Pregnancy/breastfeeding now rest on the main NHS pregnancy page (can be used in pregnancy; OK to breastfeed if baby healthy); local-sheet hedging removed. 'Rarely' removed from retinopathy (RCOphth prevalence ~7.5% long-term; 2026 summary says more common than reported); the 2026 summary text was fragmentary so only its headline is used. Crisis-signposting sentence (Samaritans etc.) removed as a mental-health-page site rule not stated by the sources; the NHS side-effects page routes mood changes/self-harm thoughts to NHS 111, which is retained - a human may wish to add 999/Samaritans for the self-harm mention. 'Muscle weakness', porphyria, prescriber-decides-to-stop removed as unverified. Mechanism line rests on review articles (PMC7880079); its 'not fully worked out' wording is from a 2024 review. Sentences reused across summary/article/FAQ count once. Claims 'textbook' uses: 1 (class label)."
+}

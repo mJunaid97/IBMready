@@ -1,0 +1,124 @@
+{
+  "id": "mhra-ketone-test-strips-supply-disruption",
+  "searchesUsed": 2,
+  "counts": {
+    "supported": 9,
+    "textbook": 1,
+    "unsupported": 3,
+    "wrong": 0,
+    "unsafe": 0,
+    "unchecked": 0
+  },
+  "claims": [
+    {
+      "id": "c01",
+      "classification": "supported",
+      "sentence": "The MHRA warned of disruption to blood ketone testing after Nova Biomedical recalled StatStrip ketone test strip lots and paused distribution.",
+      "evidence": "Title: risk of disruption to blood ketone testing due to quality-control failures and supply interruption; recall initiated and distribution of affected lots paused.",
+      "url": "https://www.gov.uk/drug-device-alerts/nova-biomedical-statstrip-ketone-test-strips-risk-of-disruption-to-blood-ketone-testing-due-to-quality-control-failures-and-supply-interruption-dsi-slash-2026-slash-013",
+      "action": "kept"
+    },
+    {
+      "id": "c02",
+      "classification": "supported",
+      "sentence": "The MHRA issued a Device Safety Information notice on 9 October 2026 about Nova Biomedical StatStrip ketone test strips.",
+      "evidence": "Two searches: DSI/2026/013 issued 9 October 2026.",
+      "url": "https://www.gov.uk/drug-device-alerts/nova-biomedical-statstrip-ketone-test-strips-risk-of-disruption-to-blood-ketone-testing-due-to-quality-control-failures-and-supply-interruption-dsi-slash-2026-slash-013",
+      "action": "kept"
+    },
+    {
+      "id": "c03",
+      "classification": "supported",
+      "sentence": "Nova Biomedical has recalled specified lots after repeated quality-control failures and paused distribution of those lots.",
+      "evidence": "'specified lots ... associated with repeated QC failures'; 'initiated a recall'; 'paused distribution of the affected lots'.",
+      "url": "https://www.gov.uk/drug-device-alerts/nova-biomedical-statstrip-ketone-test-strips-risk-of-disruption-to-blood-ketone-testing-due-to-quality-control-failures-and-supply-interruption-dsi-slash-2026-slash-013",
+      "action": "kept"
+    },
+    {
+      "id": "c04",
+      "classification": "supported",
+      "sentence": "The company says it cannot replenish UK stock for roughly four weeks.",
+      "evidence": "'unable to replenish UK stock levels for approximately 4 weeks'.",
+      "url": "https://www.gov.uk/drug-device-alerts/nova-biomedical-statstrip-ketone-test-strips-risk-of-disruption-to-blood-ketone-testing-due-to-quality-control-failures-and-supply-interruption-dsi-slash-2026-slash-013",
+      "action": "kept"
+    },
+    {
+      "id": "c05",
+      "classification": "unsupported",
+      "sentence": "The MHRA says losing timely ketone testing could delay recognition and treatment of diabetic ketoacidosis.",
+      "evidence": "Retrieved text: risk of 'delayed recognition or exclusion of DKA'. 'Treatment' (and 'escalation') not confirmed; the first search did not return the DKA wording at all.",
+      "url": "https://www.gov.uk/drug-device-alerts/nova-biomedical-statstrip-ketone-test-strips-risk-of-disruption-to-blood-ketone-testing-due-to-quality-control-failures-and-supply-interruption-dsi-slash-2026-slash-013",
+      "action": "edited",
+      "newSentence": "The MHRA says disruption to ketone testing risks delayed recognition or exclusion of diabetic ketoacidosis (DKA)."
+    },
+    {
+      "id": "c06",
+      "classification": "supported",
+      "sentence": "The MHRA says Nova Biomedical has recalled specified lots of StatStrip ketone test strips after repeated quality-control failures and has paused distribution of those lots.",
+      "evidence": "As above.",
+      "url": "https://www.gov.uk/drug-device-alerts/nova-biomedical-statstrip-ketone-test-strips-risk-of-disruption-to-blood-ketone-testing-due-to-quality-control-failures-and-supply-interruption-dsi-slash-2026-slash-013",
+      "action": "kept"
+    },
+    {
+      "id": "c07",
+      "classification": "supported",
+      "sentence": "Any further lots that fail quality control are to be withdrawn, which could steadily reduce the strips available for clinical use.",
+      "evidence": "'any further lots found to fail QC testing should also be withdrawn from use'; 'may result in a progressive reduction in the availability of ketone test strips'.",
+      "url": "https://www.gov.uk/drug-device-alerts/nova-biomedical-statstrip-ketone-test-strips-risk-of-disruption-to-blood-ketone-testing-due-to-quality-control-failures-and-supply-interruption-dsi-slash-2026-slash-013",
+      "action": "kept"
+    },
+    {
+      "id": "c08",
+      "classification": "supported",
+      "sentence": "The company has said it cannot replenish UK stock for about four weeks.",
+      "evidence": "As above.",
+      "url": "https://www.gov.uk/drug-device-alerts/nova-biomedical-statstrip-ketone-test-strips-risk-of-disruption-to-blood-ketone-testing-due-to-quality-control-failures-and-supply-interruption-dsi-slash-2026-slash-013",
+      "action": "kept"
+    },
+    {
+      "id": "c09",
+      "classification": "unsupported",
+      "sentence": "The MHRA warns that losing timely ketone testing can delay recognition, escalation and treatment of diabetic ketoacidosis (DKA), and that this could contribute to serious harm or death.",
+      "evidence": "The second search explicitly found no 'serious harm or death' wording; 'escalation and treatment' not confirmed either. Only 'delayed recognition or exclusion of DKA' is retrieved. Do not publish the harm/death claim unless read on the page.",
+      "url": "https://www.gov.uk/drug-device-alerts/nova-biomedical-statstrip-ketone-test-strips-risk-of-disruption-to-blood-ketone-testing-due-to-quality-control-failures-and-supply-interruption-dsi-slash-2026-slash-013",
+      "action": "edited",
+      "newSentence": "The MHRA warns that disruption to ketone testing risks delayed recognition or exclusion of diabetic ketoacidosis (DKA)."
+    },
+    {
+      "id": "c10",
+      "classification": "textbook",
+      "sentence": "DKA is a serious complication of diabetes.",
+      "evidence": "Not in retrieved text; plain textbook fact.",
+      "url": "https://www.gov.uk/drug-device-alerts/nova-biomedical-statstrip-ketone-test-strips-risk-of-disruption-to-blood-ketone-testing-due-to-quality-control-failures-and-supply-interruption-dsi-slash-2026-slash-013",
+      "action": "kept"
+    },
+    {
+      "id": "c11",
+      "classification": "supported",
+      "sentence": "Where supply is limited, the MHRA advises clinicians to prioritise testing for patients at greatest risk, including those with suspected or established DKA, children, and acutely unwell people with type 1 diabetes.",
+      "evidence": "'prioritise blood ketone testing for patients at greatest clinical risk ... suspected or established DKA, paediatric patients, acutely unwell patients with type 1 diabetes, patients requiring serial ketone measurements'. Clinician-directed.",
+      "url": "https://www.gov.uk/drug-device-alerts/nova-biomedical-statstrip-ketone-test-strips-risk-of-disruption-to-blood-ketone-testing-due-to-quality-control-failures-and-supply-interruption-dsi-slash-2026-slash-013",
+      "action": "kept"
+    },
+    {
+      "id": "c12",
+      "classification": "supported",
+      "sentence": "A separate National Patient Safety Alert on the supply disruption was issued on 13 October 2026.",
+      "evidence": "Retrieved: 'national supply disruption alert' NatPSA/2026/007/NSDR listed as issued 13-Oct-2026 on the MHRA Central Alerting System (cas.mhra.gov.uk). The expansion 'National Patient Safety Alert' is not in the text; the page that carried the line is uncertain (search listed several CAS pages).",
+      "url": "https://www.cas.mhra.gov.uk/SearchAlerts.aspx",
+      "action": "edited",
+      "newSentence": "A separate national supply disruption alert (NatPSA/2026/007/NSDR) was issued on 13 October 2026, according to the MHRA Central Alerting System listing."
+    },
+    {
+      "id": "c13",
+      "classification": "unsupported",
+      "sentence": "The site's type 1 diabetes page gives background on the condition.",
+      "evidence": "Site-navigation sentence; not from retrieved text.",
+      "url": "https://www.gov.uk/drug-device-alerts/nova-biomedical-statstrip-ketone-test-strips-risk-of-disruption-to-blood-ketone-testing-due-to-quality-control-failures-and-supply-interruption-dsi-slash-2026-slash-013",
+      "action": "removed"
+    }
+  ],
+  "dateConfirmed": "2026-10-09",
+  "dateEvidence": "Two searches state DSI/2026/013 was issued 9 October 2026 (gov.uk alert page). Page header not read directly. 13 October is the national supply disruption alert date from the CAS listing (cas.mhra.gov.uk), not a gov.uk alert page. The October roundup (published 27 Oct) also lists this item.",
+  "notes": "Both dates confirmed: 9 October (DSI) and 13 October (NatPSA/NSDR, CAS listing only). 'Serious harm or death' and 'escalation and treatment' must go. If the CAS date is judged too weakly sourced, drop the 13 October sentence. Recall wording: sources say 'recall' of lots and 'do not use' - keep clinician framing, no instruction to people with diabetes."
+}
