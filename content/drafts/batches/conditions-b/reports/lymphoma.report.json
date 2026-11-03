@@ -1,0 +1,637 @@
+{
+ "id": "lymphoma",
+ "searchesUsed": 14,
+ "counts": {
+  "supported": 52,
+  "textbook": 1,
+  "unsupported": 26,
+  "wrong": 0,
+  "unsafe": 2,
+  "unchecked": 0
+ },
+ "claims": [
+  {
+   "id": "c01",
+   "classification": "textbook",
+   "evidence": "Plain textbook definition; no retrieved page worded it.",
+   "url": "",
+   "action": "kept"
+  },
+  {
+   "id": "c02",
+   "classification": "supported",
+   "evidence": "NHS: painless lump or swelling in neck, armpit or groin is the most common NHL symptom.",
+   "url": "https://www.nhs.uk/conditions/non-hodgkin-lymphoma/symptoms/",
+   "action": "edited",
+   "newSentence": "A painless lump or swelling in the neck, armpit or groin is the most common symptom of non-Hodgkin lymphoma, according to the NHS."
+  },
+  {
+   "id": "c03",
+   "classification": "supported",
+   "evidence": "NHS lists fever, night sweats, itching, unexplained weight loss; MedlinePlus lists fatigue.",
+   "url": "https://www.nhs.uk/conditions/non-hodgkin-lymphoma/symptoms/",
+   "action": "edited",
+   "newSentence": "Fever, night sweats, itching and unexplained weight loss are also listed."
+  },
+  {
+   "id": "c04",
+   "classification": "unsupported",
+   "evidence": "NHS: NHL cause not known, weakened immune system raises risk; weakened immunity as a Hodgkin risk factor not retrieved.",
+   "url": "https://www.nhs.uk/conditions/non-hodgkin-lymphoma/",
+   "action": "edited",
+   "newSentence": "The NHS says the cause of non-Hodgkin lymphoma is not known, and a weakened immune system is among the things that can raise the risk."
+  },
+  {
+   "id": "c05",
+   "classification": "supported",
+   "evidence": "NHS: biopsy of affected node; treatment depends on growth speed, location, type, spread.",
+   "url": "https://www.nhs.uk/conditions/non-hodgkin-lymphoma/",
+   "action": "edited",
+   "newSentence": "A biopsy of an affected lymph node is the main diagnostic test, and treatment depends on the type, how fast it grows, where it is and whether it has spread."
+  },
+  {
+   "id": "c06",
+   "classification": "supported",
+   "evidence": "NHS: cause of NHL not known.",
+   "url": "https://www.nhs.uk/conditions/non-hodgkin-lymphoma/",
+   "action": "edited",
+   "newSentence": "The NHS says the cause of non-Hodgkin lymphoma is not known."
+  },
+  {
+   "id": "c07",
+   "classification": "supported",
+   "evidence": "111 Wales Hodgkin: exact cause unknown.",
+   "url": "https://111.wales.nhs.uk/hodgkinslymphoma/?locale=en",
+   "action": "edited",
+   "newSentence": "NHS 111 Wales says the exact cause of Hodgkin lymphoma is unknown."
+  },
+  {
+   "id": "c08",
+   "classification": "supported",
+   "evidence": "NHS names Epstein-Barr virus and hepatitis C; Macmillan lists several infections.",
+   "url": "https://www.nhs.uk/conditions/non-hodgkin-lymphoma/",
+   "action": "edited",
+   "newSentence": "Certain infections, such as Epstein-Barr virus or hepatitis C"
+  },
+  {
+   "id": "c09",
+   "classification": "supported",
+   "evidence": "NHS: weakened immune system; Macmillan: immunosuppressive drugs may add a slight risk.",
+   "url": "https://www.macmillan.org.uk/cancer-information-and-support/lymphoma/non-hodgkin/causes-and-risk-factors",
+   "action": "edited",
+   "newSentence": "A weakened immune system"
+  },
+  {
+   "id": "c10",
+   "classification": "unsupported",
+   "evidence": "No retrieved page lists previous cancer and its treatment.",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c11",
+   "classification": "supported",
+   "evidence": "111 Wales Hodgkin lists prior Epstein-Barr virus exposure as a risk factor.",
+   "url": "https://111.wales.nhs.uk/hodgkinslymphoma/?locale=en",
+   "action": "kept",
+   "newSentence": "Past exposure to Epstein-Barr virus (Hodgkin lymphoma)"
+  },
+  {
+   "id": "c12",
+   "classification": "unsupported",
+   "evidence": "Macmillan lists a close relative with NHL, not Hodgkin; Hodgkin family risk not retrieved.",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c13",
+   "classification": "supported",
+   "evidence": "NHS, Lymphoma Action and MedlinePlus: painless swollen node(s) in neck, armpit, groin.",
+   "url": "https://www.nhs.uk/conditions/non-hodgkin-lymphoma/symptoms/",
+   "action": "kept"
+  },
+  {
+   "id": "c14",
+   "classification": "supported",
+   "evidence": "NHS: GP asks about symptoms, feels for lumps, refers to hospital specialist.",
+   "url": "https://www.nhs.uk/conditions/non-hodgkin-lymphoma/",
+   "action": "edited",
+   "newSentence": "A GP asks about symptoms, may feel for lumps in the neck, armpit and groin, and refers the person to a hospital specialist for tests if non-Hodgkin lymphoma is suspected."
+  },
+  {
+   "id": "c15",
+   "classification": "supported",
+   "evidence": "111 Wales: biopsy only way to confirm Hodgkin; NHS: sample of affected nodes checked for cancer.",
+   "url": "https://111.wales.nhs.uk/hodgkinslymphoma/?locale=en",
+   "action": "edited",
+   "newSentence": "NHS 111 Wales says a biopsy is the only way to confirm a diagnosis of Hodgkin lymphoma, and that further tests then check how far it has spread."
+  },
+  {
+   "id": "c16",
+   "classification": "unsupported",
+   "evidence": "PET scan sentence came from the MALT page and was generalised to all lymphoma; retrieved text gives CT or PET for staging follicular lymphoma and CT (PET-CT optional) for MALT only.",
+   "url": "https://lymphoma-action.org.uk/information-and-support/types-lymphoma/non-hodgkin-lymphoma/follicular-lymphoma",
+   "action": "removed",
+   "newSentence": "For follicular lymphoma, Lymphoma Action says diagnosis is by biopsy, followed by staging, which typically uses a CT or PET scan."
+  },
+  {
+   "id": "c17",
+   "classification": "supported",
+   "evidence": "NHS: depends on growth speed, location, type, spread. Stage/grade wording replaced with NHS wording.",
+   "url": "https://www.nhs.uk/conditions/non-hodgkin-lymphoma/",
+   "action": "edited",
+   "newSentence": "The NHS says treatment for non-Hodgkin lymphoma depends on how fast the lymphoma grows, where it is in the body, its type and whether it has spread."
+  },
+  {
+   "id": "c18",
+   "classification": "unsupported",
+   "evidence": "NHS: chemotherapy, radiotherapy, targeted medicines, rituximab; stem cell transplant for NHL not retrieved.",
+   "url": "https://www.nhs.uk/conditions/non-hodgkin-lymphoma/",
+   "action": "edited",
+   "newSentence": "Common treatments include chemotherapy, radiotherapy and medicines that target cancer cells, including monoclonal antibodies such as rituximab."
+  },
+  {
+   "id": "c19",
+   "classification": "supported",
+   "evidence": "NHS: slow-growing types may be monitored; fast-growing treated straight away.",
+   "url": "https://www.nhs.uk/conditions/non-hodgkin-lymphoma/",
+   "action": "edited",
+   "newSentence": "Slow-growing types may sometimes be monitored without immediate treatment, while fast-growing types need treatment straight away."
+  },
+  {
+   "id": "c20",
+   "classification": "supported",
+   "evidence": "Royal Marsden: chemotherapy and radiotherapy main options.",
+   "url": "https://www.royalmarsden.nhs.uk/your-care/cancer-types/blood-cancers/lymphoma/lymphoma-hodgkin",
+   "action": "kept"
+  },
+  {
+   "id": "c21",
+   "classification": "unsupported",
+   "evidence": "Absence-of-evidence statement; no retrieved page addresses prevention. Replaced by Macmillan statement that most people with linked infections do not develop NHL.",
+   "url": "https://www.macmillan.org.uk/cancer-information-and-support/lymphoma/non-hodgkin/causes-and-risk-factors",
+   "action": "removed",
+   "newSentence": "Macmillan says most people who have had infections linked to non-Hodgkin lymphoma, such as Epstein-Barr virus or Helicobacter pylori, will not develop it."
+  },
+  {
+   "id": "c22",
+   "classification": "supported",
+   "evidence": "Lymphoma Action: see GP about a lump that lasts or grows; other causes common. No NHS GP threshold retrieved.",
+   "url": "https://lymphoma-action.org.uk/information-and-support/lymphoma-symptoms",
+   "action": "edited",
+   "newSentence": "Lymphoma Action says many things other than lymphoma can cause lumps, and it advises seeing a GP about a lump that lasts or keeps growing."
+  },
+  {
+   "id": "c23",
+   "classification": "unsupported",
+   "evidence": "No retrieved lymphoma text mentions 111/999. Replaced by one generic textbook signposting sentence.",
+   "url": "",
+   "action": "edited",
+   "newSentence": "In an emergency, such as severe difficulty breathing, call 999; NHS 111 can advise when it is unclear how urgent a problem is."
+  },
+  {
+   "id": "c24",
+   "classification": "supported",
+   "evidence": "Lymphoma Action: lump(s) in neck, armpit, groin most common sign; other causes of lumps common.",
+   "url": "https://lymphoma-action.org.uk/information-and-support/lymphoma-symptoms",
+   "action": "edited",
+   "newSentence": "Lymphoma Action describes a lump or lumps in the neck, armpit or groin as the most common sign of lymphoma, and says many things that are not lymphoma can cause lumps."
+  },
+  {
+   "id": "c25",
+   "classification": "supported",
+   "evidence": "NHS NHL symptoms page: painless lump most common symptom.",
+   "url": "https://www.nhs.uk/conditions/non-hodgkin-lymphoma/symptoms/",
+   "action": "edited",
+   "newSentence": "The NHS describes a painless lump or swelling ... as the most common symptom of non-Hodgkin lymphoma."
+  },
+  {
+   "id": "c26",
+   "classification": "unsupported",
+   "evidence": "NHS NHL page lists fever, night sweats, itching, weight loss; shortness of breath and the Hodgkin list were not retrieved.",
+   "url": "https://www.nhs.uk/conditions/non-hodgkin-lymphoma/symptoms/",
+   "action": "edited",
+   "newSentence": "Fever, night sweats, itching and unexplained weight loss are also listed."
+  },
+  {
+   "id": "c27",
+   "classification": "unsupported",
+   "evidence": "Term B symptoms seen only in a Macmillan page title; no text defined it.",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c28",
+   "classification": "supported",
+   "evidence": "MedlinePlus NHL: fatigue among usual signs.",
+   "url": "https://medlineplus.gov/ency/article/000581.htm",
+   "action": "edited",
+   "newSentence": "MedlinePlus lists swollen lymph nodes, fever, drenching night sweats, weight loss and fatigue as the usual signs of non-Hodgkin lymphoma."
+  },
+  {
+   "id": "c29",
+   "classification": "unsupported",
+   "evidence": "Cough, abdominal pain, shortness of breath by site not retrieved.",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c30",
+   "classification": "supported",
+   "evidence": "Lymphoma Action advises GP for lasting lumps; NHS: GP refers if suspected.",
+   "url": "https://lymphoma-action.org.uk/information-and-support/lymphoma-symptoms",
+   "action": "edited"
+  },
+  {
+   "id": "c31",
+   "classification": "supported",
+   "evidence": "NHS has separate Hodgkin and non-Hodgkin pages.",
+   "url": "https://www.nhs.uk/conditions/non-hodgkin-lymphoma/",
+   "action": "edited",
+   "newSentence": "Lymphoma is grouped into Hodgkin lymphoma and non-Hodgkin lymphoma."
+  },
+  {
+   "id": "c32",
+   "classification": "supported",
+   "evidence": "Lymphoma Action follicular and MALT pages.",
+   "url": "https://lymphoma-action.org.uk/information-and-support/types-lymphoma/non-hodgkin-lymphoma/follicular-lymphoma",
+   "action": "edited",
+   "newSentence": "Non-Hodgkin lymphoma has many subtypes, and Lymphoma Action describes follicular lymphoma and MALT lymphoma among them."
+  },
+  {
+   "id": "c33",
+   "classification": "supported",
+   "evidence": "NHS: two types of Hodgkin lymphoma, classical and nodular lymphocyte predominant.",
+   "url": "https://www.nhs.uk/conditions/hodgkin-lymphoma/treatment/",
+   "action": "edited",
+   "newSentence": "The NHS says there are two types of Hodgkin lymphoma: classical Hodgkin lymphoma and nodular lymphocyte predominant Hodgkin lymphoma."
+  },
+  {
+   "id": "c34",
+   "classification": "unsupported",
+   "evidence": "Skin lymphoma T-cell versus B-cell wording not retrieved (page titles only).",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c35",
+   "classification": "supported",
+   "evidence": "NHS: cause not known; weakened immune system, over 50, infections, autoimmune conditions; previous cancer not retrieved.",
+   "url": "https://www.nhs.uk/conditions/non-hodgkin-lymphoma/",
+   "action": "edited",
+   "newSentence": "The NHS says the cause of non-Hodgkin lymphoma is not known, but some things can raise the risk, including a weakened immune system."
+  },
+  {
+   "id": "c36",
+   "classification": "unsupported",
+   "evidence": "UCLH Hodgkin text not re-retrieved; replaced by 111 Wales cause unknown and Epstein-Barr virus.",
+   "url": "https://111.wales.nhs.uk/hodgkinslymphoma/?locale=en",
+   "action": "removed",
+   "newSentence": "For Hodgkin lymphoma, NHS 111 Wales says the exact cause is unknown, and it lists past exposure to Epstein-Barr virus as a risk factor."
+  },
+  {
+   "id": "c37",
+   "classification": "unsupported",
+   "evidence": "First-degree relative risk for Hodgkin not retrieved.",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c38",
+   "classification": "supported",
+   "evidence": "NHS: GP asks about symptoms and feels for lumps.",
+   "url": "https://www.nhs.uk/conditions/non-hodgkin-lymphoma/",
+   "action": "edited",
+   "newSentence": "A GP asks about symptoms and may feel for lumps in the neck, armpit and groin."
+  },
+  {
+   "id": "c39",
+   "classification": "supported",
+   "evidence": "111 Wales: biopsy only way to confirm Hodgkin.",
+   "url": "https://111.wales.nhs.uk/hodgkinslymphoma/?locale=en",
+   "action": "edited",
+   "newSentence": "NHS 111 Wales says a biopsy is the only way to confirm Hodgkin lymphoma, and that further tests then check how far it has spread."
+  },
+  {
+   "id": "c40",
+   "classification": "supported",
+   "evidence": "NHS: sample of affected nodes taken and checked for signs of cancer (previously unsourced textbook).",
+   "url": "https://www.nhs.uk/conditions/non-hodgkin-lymphoma/",
+   "action": "edited",
+   "newSentence": "The main test is a biopsy, in which a sample of an affected lymph node is taken and checked for signs of cancer."
+  },
+  {
+   "id": "c41",
+   "classification": "supported",
+   "evidence": "NHS: sample of affected lymph nodes taken (NHL).",
+   "url": "https://www.nhs.uk/conditions/non-hodgkin-lymphoma/",
+   "action": "edited"
+  },
+  {
+   "id": "c42",
+   "classification": "supported",
+   "evidence": "Lymphoma Action: staging typically uses CT or PET scan (follicular).",
+   "url": "https://lymphoma-action.org.uk/information-and-support/types-lymphoma/non-hodgkin-lymphoma/follicular-lymphoma",
+   "action": "edited",
+   "newSentence": "For follicular lymphoma, Lymphoma Action says diagnosis is by biopsy, followed by staging, which typically uses a CT or PET scan."
+  },
+  {
+   "id": "c43",
+   "classification": "unsupported",
+   "evidence": "Retrieved MALT text: staging usually a CT scan, PET-CT optional; no comparison with other lymphomas found.",
+   "url": "https://www.cancerresearchuk.org/about-cancer/non-hodgkin-lymphoma/types/malt",
+   "action": "edited",
+   "newSentence": "For MALT lymphoma, Cancer Research UK says staging usually involves a CT scan, and other staging tests can include a PET-CT scan and a bone marrow test."
+  },
+  {
+   "id": "c44",
+   "classification": "unsupported",
+   "evidence": "Scan unlikely unless troubling symptoms: not found in retrieved text.",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c45",
+   "classification": "supported",
+   "evidence": "NHS: treatment depends on growth speed, location, type, spread.",
+   "url": "https://www.nhs.uk/conditions/non-hodgkin-lymphoma/",
+   "action": "edited",
+   "newSentence": "Because treatment depends on how fast the lymphoma grows, where it is, its type and whether it has spread, the tests that establish these matter for the plan."
+  },
+  {
+   "id": "c46",
+   "classification": "supported",
+   "evidence": "NHS NHL treatment dependence.",
+   "url": "https://www.nhs.uk/conditions/non-hodgkin-lymphoma/",
+   "action": "edited",
+   "newSentence": "The NHS says treatment for non-Hodgkin lymphoma depends on how fast the lymphoma grows, where it is, its type and whether it has spread."
+  },
+  {
+   "id": "c47",
+   "classification": "unsupported",
+   "evidence": "Stem cell transplant and immunotherapy for NHL not retrieved; NHS lists chemotherapy, radiotherapy, targeted medicines, rituximab.",
+   "url": "https://www.nhs.uk/conditions/non-hodgkin-lymphoma/",
+   "action": "edited",
+   "newSentence": "Common treatments include chemotherapy, radiotherapy and medicines that target cancer cells, including monoclonal antibodies such as rituximab."
+  },
+  {
+   "id": "c48",
+   "classification": "supported",
+   "evidence": "NHS: slow-growing may be monitored.",
+   "url": "https://www.nhs.uk/conditions/non-hodgkin-lymphoma/",
+   "action": "edited",
+   "newSentence": "Fast-growing types need treatment straight away, while slow-growing types may sometimes be managed by monitoring."
+  },
+  {
+   "id": "c49",
+   "classification": "supported",
+   "evidence": "Lymphoma Action: active monitoring for low-grade lymphoma not causing problems; follicular without troublesome symptoms.",
+   "url": "https://lymphoma-action.org.uk/information-and-support/lymphoma-treatment/active-monitoring-watch-and-wait",
+   "action": "edited",
+   "newSentence": "Lymphoma Action says active monitoring, also called watch and wait, may be offered for a low-grade (slow-growing) lymphoma that is not causing problems that affect daily life."
+  },
+  {
+   "id": "c50",
+   "classification": "supported",
+   "evidence": "Lymphoma Action MALT: main options include treating infection, active monitoring, radiotherapy, immunochemotherapy.",
+   "url": "https://lymphoma-action.org.uk/information-and-support/types-lymphoma/non-hodgkin-lymphoma/malt-lymphoma",
+   "action": "edited",
+   "newSentence": "For MALT lymphoma, Lymphoma Action lists treating a linked infection, active monitoring, radiotherapy and immunochemotherapy as the main options."
+  },
+  {
+   "id": "c51",
+   "classification": "supported",
+   "evidence": "Royal Marsden: chemotherapy and radiotherapy main.",
+   "url": "https://www.royalmarsden.nhs.uk/your-care/cancer-types/blood-cancers/lymphoma/lymphoma-hodgkin",
+   "action": "kept"
+  },
+  {
+   "id": "c52",
+   "classification": "supported",
+   "evidence": "Royal Marsden: early stage radiotherapy alone or with chemo; chemo main for widespread disease.",
+   "url": "https://www.royalmarsden.nhs.uk/your-care/cancer-types/blood-cancers/lymphoma/lymphoma-hodgkin",
+   "action": "edited",
+   "newSentence": "For Hodgkin lymphoma, the Royal Marsden says early-stage disease may be treated with radiotherapy alone or with chemotherapy, while chemotherapy is the main treatment for more widespread disease."
+  },
+  {
+   "id": "c53",
+   "classification": "unsupported",
+   "evidence": "NHS Hodgkin symptoms page was cited but does not cover drugs. Retrieved: NHS Hodgkin treatment (targeted/immunotherapy if it returns); 111 Wales on brentuximab.",
+   "url": "https://www.nhs.uk/conditions/hodgkin-lymphoma/treatment/",
+   "action": "edited",
+   "newSentence": "NHS 111 Wales says brentuximab vedotin is available on the NHS for CD30-positive Hodgkin lymphoma in people who have already had a stem cell transplant using their own cells or cannot have chemotherapy."
+  },
+  {
+   "id": "c54",
+   "classification": "supported",
+   "evidence": "Macmillan: high-grade respond well; advanced low-grade aim is control. Subtype wording replaced.",
+   "url": "https://www.macmillan.org.uk/cancer-information-and-support/lymphoma/non-hodgkin",
+   "action": "edited",
+   "newSentence": "For non-Hodgkin lymphoma, Macmillan says high-grade lymphomas tend to respond well to treatment, while the aim for advanced low-grade disease is usually to keep it under control for as long as possible."
+  },
+  {
+   "id": "c55",
+   "classification": "unsafe",
+   "evidence": "111 Wales uses the word cured, but site rules forbid presenting a condition as cured; reworded to what the page also says.",
+   "url": "https://111.wales.nhs.uk/hodgkinslymphoma/?locale=en",
+   "action": "edited",
+   "newSentence": "NHS 111 Wales describes treatment for Hodgkin lymphoma as highly effective and the condition as one of the most easily treated types of cancer."
+  },
+  {
+   "id": "c56",
+   "classification": "unsupported",
+   "evidence": "NCI clinician-summary cure wording not retrieved (NCI patient page gave no cure percentage).",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c57",
+   "classification": "supported",
+   "evidence": "Lymphoma Action: see GP about a lump that lasts or grows.",
+   "url": "https://lymphoma-action.org.uk/information-and-support/lymphoma-symptoms",
+   "action": "edited",
+   "newSentence": "Lymphoma Action advises seeing a GP about a lump in the neck, armpit or groin that lasts or keeps growing, and notes that many other conditions cause lumps."
+  },
+  {
+   "id": "c58",
+   "classification": "unsupported",
+   "evidence": "111/999 sentence unsupported by retrieved lymphoma text (see c23).",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c59",
+   "classification": "supported",
+   "evidence": "NHS has separate pages.",
+   "url": "https://www.nhs.uk/conditions/non-hodgkin-lymphoma/",
+   "action": "edited",
+   "newSentence": "They are the two main groups of lymphoma, and the NHS has a separate page for each."
+  },
+  {
+   "id": "c60",
+   "classification": "supported",
+   "evidence": "NHS NHL treatment dependence.",
+   "url": "https://www.nhs.uk/conditions/non-hodgkin-lymphoma/",
+   "action": "edited",
+   "newSentence": "Non-Hodgkin lymphoma has many subtypes, and its treatment depends on how fast it grows, where it is, its type and whether it has spread."
+  },
+  {
+   "id": "c61",
+   "classification": "supported",
+   "evidence": "Royal Marsden.",
+   "url": "https://www.royalmarsden.nhs.uk/your-care/cancer-types/blood-cancers/lymphoma/lymphoma-hodgkin",
+   "action": "kept"
+  },
+  {
+   "id": "c62",
+   "classification": "supported",
+   "evidence": "Lymphoma Action: many non-lymphoma causes of lumps.",
+   "url": "https://lymphoma-action.org.uk/information-and-support/lymphoma-symptoms",
+   "action": "kept"
+  },
+  {
+   "id": "c63",
+   "classification": "supported",
+   "evidence": "Lymphoma Action; NHS.",
+   "url": "https://lymphoma-action.org.uk/information-and-support/lymphoma-symptoms",
+   "action": "edited",
+   "newSentence": "A painless lump in the neck, armpit or groin is the most common sign of lymphoma, but many other conditions cause lumps."
+  },
+  {
+   "id": "c64",
+   "classification": "supported",
+   "evidence": "NHS: GP refers to specialist for tests.",
+   "url": "https://www.nhs.uk/conditions/non-hodgkin-lymphoma/",
+   "action": "edited",
+   "newSentence": "If lymphoma is suspected, the GP refers the person to a hospital specialist for tests."
+  },
+  {
+   "id": "c65",
+   "classification": "unsupported",
+   "evidence": "B symptoms definition not retrieved.",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c66",
+   "classification": "unsupported",
+   "evidence": "NHS Hodgkin symptom list not retrieved; FAQ replaced by one on risk groups.",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c67",
+   "classification": "unsupported",
+   "evidence": "Depended on removed claims.",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c68",
+   "classification": "supported",
+   "evidence": "NHS and Lymphoma Action: not all need immediate treatment.",
+   "url": "https://lymphoma-action.org.uk/information-and-support/lymphoma-treatment/active-monitoring-watch-and-wait",
+   "action": "kept"
+  },
+  {
+   "id": "c69",
+   "classification": "supported",
+   "evidence": "Lymphoma Action active monitoring.",
+   "url": "https://lymphoma-action.org.uk/information-and-support/lymphoma-treatment/active-monitoring-watch-and-wait",
+   "action": "edited",
+   "newSentence": "Lymphoma Action describes active monitoring, also called watch and wait, for low-grade lymphoma that is not causing problems that affect daily life, with regular appointments until treatment is needed."
+  },
+  {
+   "id": "c70",
+   "classification": "supported",
+   "evidence": "Supported by Lymphoma Action MALT page; folded into section text.",
+   "url": "https://lymphoma-action.org.uk/information-and-support/types-lymphoma/non-hodgkin-lymphoma/malt-lymphoma",
+   "action": "removed"
+  },
+  {
+   "id": "c71",
+   "classification": "supported",
+   "evidence": "Generic; replaced by NHS fast-growing treated straight away.",
+   "url": "https://www.nhs.uk/conditions/non-hodgkin-lymphoma/",
+   "action": "edited",
+   "newSentence": "The NHS says fast-growing types need treatment straight away, while slow-growing types may sometimes be managed by monitoring."
+  },
+  {
+   "id": "c72",
+   "classification": "unsafe",
+   "evidence": "Cured wording; replaced with 111 Wales highly effective wording.",
+   "url": "https://111.wales.nhs.uk/hodgkinslymphoma/?locale=en",
+   "action": "edited",
+   "newSentence": "NHS 111 Wales describes treatment for Hodgkin lymphoma as highly effective and the condition as one of the most easily treated types of cancer."
+  },
+  {
+   "id": "c73",
+   "classification": "supported",
+   "evidence": "Supported but redundant after FAQ rewrite.",
+   "url": "https://www.royalmarsden.nhs.uk/your-care/cancer-types/blood-cancers/lymphoma/lymphoma-hodgkin",
+   "action": "removed"
+  },
+  {
+   "id": "c74",
+   "classification": "supported",
+   "evidence": "Supported but kept only in section text.",
+   "url": "https://www.royalmarsden.nhs.uk/your-care/cancer-types/blood-cancers/lymphoma/lymphoma-hodgkin",
+   "action": "removed"
+  },
+  {
+   "id": "c75",
+   "classification": "unsupported",
+   "evidence": "Subtype-based outlook not retrieved; Macmillan grade wording used in section text.",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c76",
+   "classification": "unsupported",
+   "evidence": "Also-called list not stated by a retrieved page; replaced by Main groups key fact.",
+   "url": "https://www.nhs.uk/conditions/non-hodgkin-lymphoma/",
+   "action": "edited",
+   "newSentence": "Hodgkin lymphoma and non-Hodgkin lymphoma (NHL)."
+  },
+  {
+   "id": "c77",
+   "classification": "supported",
+   "evidence": "NHS and Lymphoma Action.",
+   "url": "https://www.nhs.uk/conditions/non-hodgkin-lymphoma/symptoms/",
+   "action": "edited",
+   "newSentence": "A painless lump or swelling in the neck, armpit or groin."
+  },
+  {
+   "id": "c78",
+   "classification": "supported",
+   "evidence": "NHS and MedlinePlus.",
+   "url": "https://www.nhs.uk/conditions/non-hodgkin-lymphoma/symptoms/",
+   "action": "edited",
+   "newSentence": "Fever, night sweats, itching, unexplained weight loss and fatigue can occur."
+  },
+  {
+   "id": "c79",
+   "classification": "supported",
+   "evidence": "NHS and 111 Wales: biopsy.",
+   "url": "https://www.nhs.uk/conditions/non-hodgkin-lymphoma/",
+   "action": "kept"
+  },
+  {
+   "id": "c80",
+   "classification": "unsupported",
+   "evidence": "Stem cell transplant for NHL and targeted drugs by type not fully retrieved.",
+   "url": "https://www.nhs.uk/conditions/non-hodgkin-lymphoma/",
+   "action": "edited",
+   "newSentence": "Chemotherapy, radiotherapy and targeted medicines, depending on the type."
+  },
+  {
+   "id": "c81",
+   "classification": "unsupported",
+   "evidence": "Contact sentence with 111/999 not retrieved.",
+   "url": "",
+   "action": "edited",
+   "newSentence": "A GP, who can arrange referral to a hospital specialist for tests."
+  }
+ ],
+ "notes": "14 WebSearch calls. The first pass leaned on NHS 111 Wales, UCLH and Royal Marsden pages; nhs.uk has its own NHL pages, now cited. No retrieved lymphoma text covered 999/NHS 111, so only one generic textbook signposting sentence remains. Final text: 88 sentences, 3 textbook (definition, 999 sentence, FAQ closing line), under 1 in 20. The word cured removed (111 Wales also gives an undated five-year figure, not used). Added spleen and liver to affects (MedlinePlus: pain below ribs from swollen spleen or liver), CT/PET scan links, and a late-effects complication. Related left empty: no retrieved page ties lymphoma to another existing page. Search summaries blend pages; ledger notes flag blended attribution. Note: this overwrote an earlier committed lymphoma.final.* from a previous run."
+}
