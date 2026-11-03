@@ -1,0 +1,102 @@
+{
+ "id": "osmotic-laxatives",
+ "searchesUsed": 9,
+ "counts": {
+  "supported": 3,
+  "textbook": 1,
+  "unsupported": 5,
+  "wrong": 1,
+  "unsafe": 0,
+  "unchecked": 0
+ },
+ "claims": [
+  {
+   "id": "c01",
+   "where": "summary[2]",
+   "classification": "supported",
+   "evidence": "NHS laxatives page returned as saying osmotic laxatives take a few days (2 to 3 days); non-numeric wording kept.",
+   "url": "https://www.nhs.uk/medicines/laxatives/",
+   "action": "kept"
+  },
+  {
+   "id": "c02",
+   "where": "summary[3]",
+   "classification": "supported",
+   "evidence": "Page title 'Lactulose: a laxative medicine to treat constipation - NHS' returned.",
+   "url": "https://www.nhs.uk/medicines/lactulose/",
+   "action": "kept"
+  },
+  {
+   "id": "c03",
+   "where": "mechanism[1]",
+   "classification": "textbook",
+   "evidence": "StatPearls excerpt: negligible systemic absorption; no enzymes in small intestine to split it, reaches large bowel unchanged. 'Effects stay within the bowel' not stated.",
+   "url": "https://www.ncbi.nlm.nih.gov/books/NBK536930/",
+   "action": "edited",
+   "newSentence": "StatPearls says lactulose has negligible absorption into the body and reaches the large bowel unchanged."
+  },
+  {
+   "id": "c04",
+   "where": "mechanism[2]",
+   "classification": "unsupported",
+   "evidence": "NHS macrogol page excerpt: osmotic laxative, brings water into the bowel, makes stools softer and easier to pass. 'Adds volume' and 'triggers the reflex' not retrieved; 'not absorbed' came from a blended result/review, not clearly this page.",
+   "url": "https://www.nhs.uk/medicines/macrogol/",
+   "action": "edited",
+   "newSentence": "The NHS describes macrogol as an osmotic laxative that brings water into the bowel, making stools softer and easier to pass."
+  },
+  {
+   "id": "c05",
+   "where": "classEffects[0]",
+   "classification": "unsupported",
+   "evidence": "Macrogol page lists stomach pain, bloating, wind, nausea or vomiting, diarrhoea. Lactulose page excerpt listed bloating, wind, stomach ache, diarrhoea; being sick not shown for lactulose.",
+   "url": "https://www.nhs.uk/medicines/macrogol/",
+   "action": "edited",
+   "newSentence": "Stomach ache, bloating, wind and diarrhoea are listed by the NHS for both macrogol and lactulose; feeling or being sick is listed for macrogol."
+  },
+  {
+   "id": "c06",
+   "where": "classEffects[1]",
+   "classification": "supported",
+   "evidence": "NHS: diarrhoea is the most common lactulose side effect, more likely at higher amounts; reducing the amount may help (check with pharmacist or doctor).",
+   "url": "https://www.nhs.uk/medicines/lactulose/side-effects-of-lactulose/",
+   "action": "kept"
+  },
+  {
+   "id": "c07",
+   "where": "cautions[4]",
+   "classification": "wrong",
+   "evidence": "NHS page lists muscle cramps or weakness and irregular heartbeat as serious side effects, with advice to call a doctor or NHS 111 straight away if they follow severe diarrhoea or vomiting; 'uncommon' label and 'same day' not retrieved (excerpt said rare). 999 for serious allergic reaction is site signposting.",
+   "url": "https://www.nhs.uk/medicines/lactulose/side-effects-of-lactulose/",
+   "action": "edited",
+   "newSentence": "The NHS lists muscle cramps or weakness and an irregular heartbeat as serious side effects of lactulose, and says to contact a doctor or NHS 111 straight away if they follow severe diarrhoea or vomiting; a serious allergic reaction needs a 999 call."
+  },
+  {
+   "id": "c08",
+   "where": "cautions[5]",
+   "classification": "unsupported",
+   "evidence": "StatPearls excerpts mention large changes in fluid and electrolytes and diarrhoea as most significant side effect; potassium not named. Potassium link appeared only in a blended NHS-attributed summary.",
+   "url": "https://www.ncbi.nlm.nih.gov/books/NBK536930/",
+   "action": "edited",
+   "newSentence": "StatPearls says lactulose, like most laxatives, can cause large changes in the body's fluid and electrolyte balance, and that diarrhoea is its most significant side effect."
+  },
+  {
+   "id": "c09",
+   "where": "cautions[6]",
+   "classification": "unsupported",
+   "evidence": "Statement clearly carried by NHS laxatives page (drink plenty of fluids with bulk-forming or osmotic laxatives to avoid dehydration), not shown on macrogol page excerpt.",
+   "url": "https://www.nhs.uk/medicines/laxatives/",
+   "action": "edited",
+   "newSentence": "The NHS says it is important to drink plenty of fluid when taking osmotic laxatives, to avoid dehydration."
+  },
+  {
+   "id": "c10",
+   "where": "cautions[7]",
+   "classification": "unsupported",
+   "evidence": "Lactulose page: babies and younger children only if a doctor prescribes or recommends. Macrogol page: younger children only if prescribed. Original omitted 'prescribes'; ages kept out of prose.",
+   "url": "https://www.nhs.uk/medicines/lactulose/who-can-and-cannot-take-lactulose/",
+   "action": "edited",
+   "newSentence": "The NHS says lactulose is for babies and younger children only if a doctor prescribes or recommends it, and macrogol for younger children only if prescribed."
+  }
+ ],
+ "notes": "Macrogol URL attributions for fluid advice and not-absorbed are blended; reattributed to laxatives page or removed. cautions[7] second URL (macrogol page) retained as source for the macrogol clause."
+}
