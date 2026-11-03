@@ -1,0 +1,97 @@
+{
+  "id": "mhra-fluenz-nasal-flu-vaccine-fainting",
+  "searchesUsed": 2,
+  "counts": {
+    "supported": 9,
+    "textbook": 0,
+    "unsupported": 1,
+    "wrong": 0,
+    "unsafe": 0,
+    "unchecked": 0
+  },
+  "claims": [
+    {
+      "id": "c01",
+      "classification": "supported",
+      "sentence": "The MHRA's September 2026 Safety Roundup says Fluenz nasal flu vaccine information now notes a higher chance of fainting soon after the spray is given.",
+      "evidence": "Product information updated for increased risk of syncope immediately following administration.",
+      "url": "https://www.gov.uk/drug-device-alerts/mhra-safety-roundup-september-2026",
+      "action": "kept"
+    },
+    {
+      "id": "c02",
+      "classification": "supported",
+      "sentence": "The MHRA's September 2026 Safety Roundup says the Fluenz product information has been updated to reflect an increased risk of syncope (fainting).",
+      "evidence": "'product information for Fluenz has been updated to reflect that there is an increased risk of syncope'.",
+      "url": "https://www.gov.uk/drug-device-alerts/mhra-safety-roundup-september-2026",
+      "action": "kept"
+    },
+    {
+      "id": "c03",
+      "classification": "supported",
+      "sentence": "The risk applies right after the nasal spray is given.",
+      "evidence": "'immediately following administration of the nasal spray'.",
+      "url": "https://www.gov.uk/drug-device-alerts/mhra-safety-roundup-september-2026",
+      "action": "kept"
+    },
+    {
+      "id": "c04",
+      "classification": "supported",
+      "sentence": "The MHRA says vaccine providers should have procedures in place to prevent injury from fainting and to manage fainting reactions.",
+      "evidence": "'procedures should be put in place to prevent injury from fainting and manage syncopal reactions'.",
+      "url": "https://www.gov.uk/drug-device-alerts/mhra-safety-roundup-september-2026",
+      "action": "kept"
+    },
+    {
+      "id": "c05",
+      "classification": "supported",
+      "sentence": "The MHRA says the information is not in the patient leaflet for this season's campaign.",
+      "evidence": "'Due to timing constraints, this information is not included in the patient information leaflet for this season's campaign'.",
+      "url": "https://www.gov.uk/drug-device-alerts/mhra-safety-roundup-september-2026",
+      "action": "kept"
+    },
+    {
+      "id": "c06",
+      "classification": "supported",
+      "sentence": "The MHRA's Safety Roundup for September 2026, published on 29 September 2026, says the product information for the Fluenz nasal spray flu vaccine now notes a higher risk of fainting right after the spray is given.",
+      "evidence": "Both searches' summaries: roundup published 29 September 2026. Retrieved text also says the risk is 'particularly if the individual has previously fainted following vaccination' (optional supported addition).",
+      "url": "https://www.gov.uk/drug-device-alerts/mhra-safety-roundup-september-2026",
+      "action": "kept"
+    },
+    {
+      "id": "c07",
+      "classification": "supported",
+      "sentence": "The MHRA says procedures should be in place to prevent injury from fainting and to manage fainting reactions.",
+      "evidence": "As above.",
+      "url": "https://www.gov.uk/drug-device-alerts/mhra-safety-roundup-september-2026",
+      "action": "kept"
+    },
+    {
+      "id": "c08",
+      "classification": "supported",
+      "sentence": "The MHRA also says this information is not included in the patient information leaflet for this season's campaign, so clinicians should tell parents and patients about the risk beforehand.",
+      "evidence": "'please ensure that parents and patients are informed of this potential risk before administration'. Reported clinician-directed advice.",
+      "url": "https://www.gov.uk/drug-device-alerts/mhra-safety-roundup-september-2026",
+      "action": "kept"
+    },
+    {
+      "id": "c09",
+      "classification": "supported",
+      "sentence": "The MHRA's notice is addressed to healthcare professionals who give the vaccine.",
+      "evidence": "Retrieved text asks the reader to 'ensure that parents and patients are informed ... before administration', which implies those giving the vaccine; an explicit audience label was only the search tool's paraphrase. Acceptable but weakest sentence.",
+      "url": "https://www.gov.uk/drug-device-alerts/mhra-safety-roundup-september-2026",
+      "action": "kept"
+    },
+    {
+      "id": "c10",
+      "classification": "unsupported",
+      "sentence": "The site's influenza page and its pages on the flu vaccine give background on the vaccine.",
+      "evidence": "Site-navigation sentence, not a claim from the retrieved text; not supportable. Links/tags can stay (flu vaccine is the topic) but the sentence adds nothing verifiable.",
+      "url": "https://www.gov.uk/drug-device-alerts/mhra-safety-roundup-september-2026",
+      "action": "removed"
+    }
+  ],
+  "dateConfirmed": "2026-09-29",
+  "dateEvidence": "Both searches' summaries of the gov.uk roundup page state 'published on 29 September 2026'. I could not read the page header directly (no fetch); date is the roundup's, not the date the Fluenz label change occurred.",
+  "notes": "One search noted the risk is highest 'particularly if previously fainted' - the first pass omitted this; now stated twice, may be added as a supported sentence. No 'safe' wording, doses or cut-offs found. Brief is sound."
+}

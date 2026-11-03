@@ -1,0 +1,114 @@
+{
+  "id": "mhra-osimertinib-muscle-toxicity-reminder",
+  "searchesUsed": 3,
+  "counts": {
+    "supported": 9,
+    "textbook": 1,
+    "unsupported": 2,
+    "wrong": 0,
+    "unsafe": 0,
+    "unchecked": 0
+  },
+  "claims": [
+    {
+      "id": "c01",
+      "classification": "unsupported",
+      "sentence": "The MHRA's October 2026 Safety Roundup covers osimertinib (Tagrisso) and muscle toxicity, including a rare breakdown of muscle tissue called rhabdomyolysis.",
+      "evidence": "Roundup includes an osimertinib item on skeletal muscle toxicity (supported). Retrieved gov.uk text says rhabdomyolysis was reported post-marketing in other countries; it does not call it 'rare' (the only 'exceedingly rare' wording came from a PMC case report, not MHRA).",
+      "url": "https://www.gov.uk/drug-device-alerts/mhra-safety-roundup-october-2026",
+      "action": "edited",
+      "newSentence": "The MHRA's October 2026 Safety Roundup covers osimertinib (Tagrisso) and skeletal muscle toxicity, including cases of rhabdomyolysis (breakdown of muscle tissue) reported after marketing in other countries."
+    },
+    {
+      "id": "c02",
+      "classification": "supported",
+      "sentence": "The MHRA's October 2026 Safety Roundup, issued on 27 October 2026, includes an item on osimertinib (Tagrisso) and skeletal muscle toxicity.",
+      "evidence": "Roundup page shows 'Published: 27 October 2026'; item on osimertinib skeletal muscle toxicity (Tagrisso). MHRA organisation page lists the roundup under 30 October 2026 (discrepancy).",
+      "url": "https://www.gov.uk/drug-device-alerts/mhra-safety-roundup-october-2026",
+      "action": "kept"
+    },
+    {
+      "id": "c03",
+      "classification": "supported",
+      "sentence": "The MHRA says myositis and raised blood creatine phosphokinase (CPK) are recognised side effects of osimertinib.",
+      "evidence": "'myositis and blood creatine phosphokinase (CPK) increased are recognised side effects' (Tagrisso).",
+      "url": "https://www.gov.uk/drug-device-alerts/mhra-safety-roundup-october-2026",
+      "action": "kept"
+    },
+    {
+      "id": "c04",
+      "classification": "supported",
+      "sentence": "Cases of rhabdomyolysis have been reported after marketing in other countries, and the MHRA had received no UK Yellow Card reports to date.",
+      "evidence": "'cases of rhabdomyolysis have also been reported post-marketing in other countries; however MHRA has not received any UK Yellow Card reports to date'.",
+      "url": "https://www.gov.uk/drug-device-alerts/mhra-safety-roundup-october-2026",
+      "action": "kept"
+    },
+    {
+      "id": "c05",
+      "classification": "supported",
+      "sentence": "The MHRA says patients should be told before treatment to report unexplained muscle symptoms and dark urine.",
+      "evidence": "'before initiating treatment, patients should be advised to report any unexplained muscle pain, tenderness, weakness, trouble moving arms or legs, dark tea-coloured urine, or decreased urination'. Reported clinician-directed advice, not an instruction to the reader.",
+      "url": "https://www.gov.uk/drug-device-alerts/mhra-safety-roundup-october-2026",
+      "action": "kept"
+    },
+    {
+      "id": "c06",
+      "classification": "supported",
+      "sentence": "The MHRA says myositis, which is muscle inflammation, and a raised blood level of creatine phosphokinase (CPK) are recognised side effects of osimertinib (Tagrisso).",
+      "evidence": "Core claim as above. The gloss 'muscle inflammation' is not in the retrieved text (plain textbook definition of myositis).",
+      "url": "https://www.gov.uk/drug-device-alerts/mhra-safety-roundup-october-2026",
+      "action": "kept"
+    },
+    {
+      "id": "c07",
+      "classification": "supported",
+      "sentence": "It adds that cases of rhabdomyolysis have been reported after marketing in other countries, but that it has not received any UK Yellow Card reports to date.",
+      "evidence": "As kp2.",
+      "url": "https://www.gov.uk/drug-device-alerts/mhra-safety-roundup-october-2026",
+      "action": "kept"
+    },
+    {
+      "id": "c08",
+      "classification": "textbook",
+      "sentence": "Rhabdomyolysis is the breakdown of muscle tissue.",
+      "evidence": "No definition in retrieved gov.uk text. Plain textbook fact.",
+      "url": "https://www.gov.uk/drug-device-alerts/mhra-safety-roundup-october-2026",
+      "action": "kept"
+    },
+    {
+      "id": "c09",
+      "classification": "supported",
+      "sentence": "The roundup says that, before treatment starts, patients should be advised to report any unexplained muscle pain, tenderness, weakness, trouble moving arms or legs, dark tea-coloured urine or decreased urination.",
+      "evidence": "Matches retrieved text almost word for word. Reported advice to clinicians; names no route to care (consider adding that patients should tell their clinician) but not an individual instruction.",
+      "url": "https://www.gov.uk/drug-device-alerts/mhra-safety-roundup-october-2026",
+      "action": "kept"
+    },
+    {
+      "id": "c10",
+      "classification": "supported",
+      "sentence": "The MHRA says a suspected rise in CPK, myositis or rhabdomyolysis calls for clinical evaluation and treatment.",
+      "evidence": "'signs of raised CPK, myositis or rhabdomyolysis should warrant appropriate clinical evaluation and treatment as indicated'.",
+      "url": "https://www.gov.uk/drug-device-alerts/mhra-safety-roundup-october-2026",
+      "action": "kept"
+    },
+    {
+      "id": "c11",
+      "classification": "supported",
+      "sentence": "In severe events, osimertinib treatment may need to be interrupted, and the MHRA points clinicians to the product's summary of product characteristics.",
+      "evidence": "'in the case of severe events, treatment may need to be interrupted'; 'consult the Summary of Product Characteristics'.",
+      "url": "https://www.gov.uk/drug-device-alerts/mhra-safety-roundup-october-2026",
+      "action": "kept"
+    },
+    {
+      "id": "c12",
+      "classification": "unsupported",
+      "sentence": "The site's lung cancer page explains the condition osimertinib is used for.",
+      "evidence": "No retrieved gov.uk text says what osimertinib is used for. Across 3 searches the only indication wording came from clinicaltrials.gov trial titles (EGFR-mutated NSCLC), not an MHRA/gov.uk source. Lung cancer use is NOT stated in the gov.uk text.",
+      "url": "https://www.gov.uk/drug-device-alerts/mhra-safety-roundup-october-2026",
+      "action": "removed"
+    }
+  ],
+  "dateConfirmed": "2026-10-27",
+  "dateEvidence": "Roundup page (gov.uk/drug-device-alerts/mhra-safety-roundup-october-2026) shows 'Published: 27 October 2026' in two searches' summaries; PDF copy not dated. The MHRA organisation page lists the same roundup as 30 October 2026, so a 3-day discrepancy exists (27 is the date on the roundup page itself; 30 may be a listing date).",
+  "notes": "Remove the 'conditions: lung-cancer' tag/link too, since the retrieved gov.uk text never states the indication. Tagrisso was found only in the roundup text; the brief is otherwise sound. Roundup is a monthly digest, so 'published' = roundup date, not the date the osimertinib warning was first issued. Consider keeping source.published 2026-10-27 but mention in the body that the page lists 27 October."
+}
