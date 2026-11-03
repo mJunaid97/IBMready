@@ -1,0 +1,299 @@
+{
+ "id": "stroke-and-tia-spotting-the-signs",
+ "searchesUsed": 4,
+ "counts": {
+  "supported": 16,
+  "textbook": 1,
+  "unsupported": 13,
+  "wrong": 0,
+  "unsafe": 0,
+  "unchecked": 0
+ },
+ "claims": [
+  {
+   "id": "c01",
+   "where": "body[0]",
+   "sentence": "The FAST test is used across the UK to spot a stroke.",
+   "classification": "supported",
+   "evidence": "Stroke Association symptoms page: FAST is the standard way to spot a stroke in the UK.",
+   "url": "https://www.stroke.org.uk/stroke/symptoms",
+   "action": "kept"
+  },
+  {
+   "id": "c02",
+   "where": "body[0]",
+   "sentence": "It checks the face, the arms and the speech: does the face droop on one side, can the person raise both arms, and is speech slurred or confused.",
+   "classification": "unsupported",
+   "evidence": "Page describes mouth or eye drooped, raising both arms fully and keeping them there, slurred speech or not understanding. 'On one side' and 'confused' not backed.",
+   "url": "https://www.stroke.org.uk/stroke/symptoms",
+   "action": "edited",
+   "newSentence": "It checks the face, the arms and the speech: has the mouth or eye drooped, can the person raise both arms fully and keep them there, and is their speech slurred or hard to understand."
+  },
+  {
+   "id": "c03",
+   "where": "body[0]",
+   "sentence": "The NHS and the Stroke Association say that any one of these signs is a reason to call 999.",
+   "classification": "supported",
+   "evidence": "Any one sign means call 999; do not wait for several symptoms.",
+   "url": "https://www.stroke.org.uk/stroke/symptoms",
+   "action": "kept"
+  },
+  {
+   "id": "c04",
+   "where": "body[0]",
+   "sentence": "It is the time, not the cause, that matters most in treatment.",
+   "classification": "unsupported",
+   "evidence": "Only evidence is that delays are common (average 88 minutes from first symptom to 999 call); no source says time matters more than cause.",
+   "url": "https://www.england.nhs.uk/2024/11/nhs-launches-major-new-stroke-campaign-as-thousands-delay-calling-999-by-nearly-90-minutes/",
+   "action": "edited",
+   "newSentence": "NHS England has found that many people wait too long to call 999, with an average of 88 minutes between the first symptom and the call."
+  },
+  {
+   "id": "c05",
+   "where": "body[1]",
+   "sentence": "A transient ischaemic attack, or TIA, is often called a mini-stroke.",
+   "classification": "supported",
+   "evidence": "TIA also known as a mini-stroke.",
+   "url": "https://www.stroke.org.uk/stroke/symptoms",
+   "action": "kept"
+  },
+  {
+   "id": "c06",
+   "where": "body[1]",
+   "sentence": "It causes the same symptoms as a stroke, but they are temporary.",
+   "classification": "unsupported",
+   "evidence": "Retrieved text defines TIA as a temporary disruption of blood supply to part of the brain; 'same symptoms as a stroke' not retrieved.",
+   "url": "https://111.wales.nhs.uk/transientischaemicattack/",
+   "action": "edited",
+   "newSentence": "A TIA is a temporary disruption of the blood supply to part of the brain."
+  },
+  {
+   "id": "c07",
+   "where": "body[1]",
+   "sentence": "The Stroke Association says the symptoms of a TIA usually last from a few minutes to a few hours and settle completely within 24 hours.",
+   "classification": "unsupported",
+   "evidence": "Attributed to Stroke Association but not retrieved there. NHS trust guidance says symptoms recover completely within 24 hours; another trust says usually within an hour. 'Few minutes to few hours' not backed.",
+   "url": "https://www.royalberkshire.nhs.uk/media/cmedrpdm/transient-ischaemic-attack_apr24.pdf",
+   "action": "edited",
+   "newSentence": "NHS hospital guidance says the symptoms of a TIA recover completely within 24 hours."
+  },
+  {
+   "id": "c08",
+   "where": "body[1]",
+   "sentence": "If symptoms last longer than that, it is classed as a stroke.",
+   "classification": "supported",
+   "evidence": "Royal Berkshire NHS: if symptoms continue for longer than 24 hours, this is a stroke.",
+   "url": "https://www.royalberkshire.nhs.uk/media/cmedrpdm/transient-ischaemic-attack_apr24.pdf",
+   "action": "kept"
+  },
+  {
+   "id": "c09",
+   "where": "body[1]",
+   "sentence": "In the first minutes it is usually impossible to tell the two apart, so both are treated as emergencies.",
+   "classification": "unsupported",
+   "evidence": "'Usually impossible to tell apart' not retrieved. Sources say call 999 even if symptoms seem minor or go away.",
+   "url": "https://www.stroke.org.uk/stroke/symptoms",
+   "action": "edited",
+   "newSentence": "The NHS and the Stroke Association say to call 999 for a suspected stroke or TIA, even if the symptoms seem minor or go away."
+  },
+  {
+   "id": "c10",
+   "where": "body[2]",
+   "sentence": "A TIA can be a warning sign that a full stroke may follow.",
+   "classification": "unsupported",
+   "evidence": "'Warning sign' wording not retrieved. NHS says aspirin is given straight away to prevent a stroke after a suspected TIA.",
+   "url": "https://www.nhs.uk/conditions/transient-ischaemic-attack-tia/diagnosis/",
+   "action": "edited",
+   "newSentence": "After a suspected TIA there is a risk of a stroke, which is why aspirin is given straight away to help prevent one."
+  },
+  {
+   "id": "c11",
+   "where": "body[2]",
+   "sentence": "The Stroke Association says the risk is greatest in the first days and weeks afterwards.",
+   "classification": "unsupported",
+   "evidence": "A search specifically looked for timing of risk and could not confirm 'first days and weeks'.",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c12",
+   "where": "body[2]",
+   "sentence": "For this reason the NHS says a suspected TIA should be assessed urgently, even if the symptoms have gone by the time the ambulance arrives.",
+   "classification": "supported",
+   "evidence": "NHS: even if symptoms disappear while waiting for the ambulance, you still need to be assessed in hospital.",
+   "url": "https://www.nhs.uk/conditions/transient-ischaemic-attack-tia/",
+   "action": "kept"
+  },
+  {
+   "id": "c13",
+   "where": "body[2]",
+   "sentence": "A person whose symptoms have cleared still needs to be seen in hospital.",
+   "classification": "supported",
+   "evidence": "Same: still need to be assessed in hospital even if symptoms disappear.",
+   "url": "https://www.nhs.uk/conditions/transient-ischaemic-attack-tia/",
+   "action": "kept"
+  },
+  {
+   "id": "c14",
+   "where": "body[3]",
+   "sentence": "A scan is used to find out whether a stroke is caused by a blood clot (ischaemic) or by bleeding in the brain (haemorrhagic), because the treatments differ.",
+   "classification": "supported",
+   "evidence": "Stroke Association diagnosis page: a scan shows whether stroke is from a clot or a bleed; haemorrhagic treatment differs.",
+   "url": "https://www.stroke.org.uk/stroke/symptoms/diagnosis-treatment",
+   "action": "kept"
+  },
+  {
+   "id": "c15",
+   "where": "body[3]",
+   "sentence": "For an ischaemic stroke, emergency options include clot-busting medicine, called thrombolysis, and removal of the clot with a catheter, called thrombectomy.",
+   "classification": "supported",
+   "evidence": "Thrombolysis (clot-dissolving drugs) and thrombectomy (physically removing a clot) described by Stroke Association.",
+   "url": "https://www.stroke.org.uk/stroke/symptoms/diagnosis-treatment",
+   "action": "kept"
+  },
+  {
+   "id": "c16",
+   "where": "body[3]",
+   "sentence": "A stroke caused by bleeding is treated differently, for example by lowering blood pressure.",
+   "classification": "unsupported",
+   "evidence": "Haemorrhagic treatment focuses on stopping the bleeding and relieving pressure on the brain, sometimes by surgery. 'Lowering blood pressure' not retrieved.",
+   "url": "https://www.stroke.org.uk/stroke/types/haemorrhagic/treatment",
+   "action": "edited",
+   "newSentence": "A stroke caused by bleeding is treated differently, with treatment aimed at stopping the bleeding and relieving pressure on the brain, sometimes with surgery."
+  },
+  {
+   "id": "c17",
+   "where": "body[3]",
+   "sentence": "These treatments work best when started early, which is part of why calling 999 matters.",
+   "classification": "unsupported",
+   "evidence": "'Work best when started early' not retrieved. Guidance advises a scan soon after symptoms begin.",
+   "url": "https://www.stroke.org.uk/stroke/symptoms/diagnosis-treatment",
+   "action": "edited",
+   "newSentence": "Hospital teams aim to scan the brain soon after symptoms begin, which is part of why calling 999 matters."
+  },
+  {
+   "id": "c18",
+   "where": "body[4]",
+   "sentence": "For a suspected TIA, the NHS says aspirin is usually given to lower the risk of a stroke, unless there is a medical reason to avoid it.",
+   "classification": "supported",
+   "evidence": "NHS diagnosis page: given aspirin straight away to prevent a stroke unless a medical reason prevents it.",
+   "url": "https://www.nhs.uk/conditions/transient-ischaemic-attack-tia/diagnosis/",
+   "action": "kept"
+  },
+  {
+   "id": "c19",
+   "where": "body[4]",
+   "sentence": "The person is then referred to a specialist doctor or nurse within 24 hours of the symptoms.",
+   "classification": "supported",
+   "evidence": "NHS: referred to a specialist within 24 hours of start of symptoms. 'Doctor or nurse' not stated.",
+   "url": "https://www.nhs.uk/conditions/transient-ischaemic-attack-tia/diagnosis/",
+   "action": "edited",
+   "newSentence": "The NHS says the person should be referred to a specialist within 24 hours of the start of their symptoms."
+  },
+  {
+   "id": "c20",
+   "where": "body[4]",
+   "sentence": "Longer-term care focuses on preventing clots and tackling the risks behind them, such as high blood pressure.",
+   "classification": "unsupported",
+   "evidence": "Retrieved: after stroke/TIA from carotid disease, antiplatelet such as aspirin, a statin and blood pressure tablets if needed. Preventing clots/'risks behind them' generalised.",
+   "url": "https://myhealth-devon.nhs.uk/my-condition/condition/carotid-endarterectomy-stroke-prevention-surgery/",
+   "action": "edited",
+   "newSentence": "Care after a TIA can include a blood thinner such as aspirin, a statin, and blood pressure tablets if needed."
+  },
+  {
+   "id": "c21",
+   "where": "body[4]",
+   "sentence": "Medicines that thin the blood or reduce clotting may be used, and sometimes surgery is offered to clear a narrowed artery in the neck.",
+   "classification": "supported",
+   "evidence": "Blood thinner (antiplatelet) and carotid endarterectomy to unblock narrowed neck arteries to reduce stroke risk.",
+   "url": "https://myhealth-devon.nhs.uk/my-condition/condition/carotid-endarterectomy-stroke-prevention-surgery/",
+   "action": "kept"
+  },
+  {
+   "id": "c22",
+   "where": "body[5]",
+   "sentence": "The Stroke Association runs a Stroke Support Helpline on 0303 3033 100 for people affected by stroke and TIA, and for their families.",
+   "classification": "supported",
+   "evidence": "Helpline number 0303 3033 100 confirmed on Stroke Association guide. Retrieved name is 'Stroke Helpline'; supports survivors, family and carers; TIA not stated.",
+   "url": "https://www.stroke.org.uk/sites/default/files/publications/ischaemic_stroke_guide.pdf",
+   "action": "edited",
+   "newSentence": "The Stroke Association runs a Stroke Helpline on 0303 3033 100 for stroke survivors, their families and carers."
+  },
+  {
+   "id": "c23",
+   "where": "body[5]",
+   "sentence": "A GP can explain what the diagnosis means and arrange follow-up care.",
+   "classification": "textbook",
+   "evidence": "Harmless general pointer to GP follow-up; not retrieved.",
+   "url": "",
+   "action": "kept"
+  },
+  {
+   "id": "c24",
+   "where": "body[5]",
+   "sentence": "In an emergency, the route is always 999.",
+   "classification": "supported",
+   "evidence": "Stroke Association/NHS: call 999 for suspected stroke or TIA.",
+   "url": "https://www.stroke.org.uk/stroke/symptoms",
+   "action": "kept"
+  },
+  {
+   "id": "c25",
+   "where": "keyPoints",
+   "sentence": "The FAST test checks for face drooping, arm weakness and speech problems, and the NHS says to call 999 if any sign is present.",
+   "classification": "supported",
+   "evidence": "Restates FAST and 999 sentences (c01-c03).",
+   "url": "https://www.stroke.org.uk/stroke/symptoms",
+   "action": "kept"
+  },
+  {
+   "id": "c26",
+   "where": "keyPoints",
+   "sentence": "A TIA, sometimes called a mini-stroke, causes the same symptoms as a stroke but they go away, usually within a short time.",
+   "classification": "unsupported",
+   "evidence": "'Same symptoms' and 'usually within a short time' not backed; evidence is temporary blood-supply disruption recovering within 24 hours.",
+   "url": "https://111.wales.nhs.uk/transientischaemicattack/",
+   "action": "edited",
+   "newSentence": "A TIA, sometimes called a mini-stroke, is a temporary disruption of the blood supply to the brain, and its symptoms recover completely within 24 hours."
+  },
+  {
+   "id": "c27",
+   "where": "keyPoints",
+   "sentence": "A TIA is a warning that a full stroke may follow, so it needs urgent assessment even when symptoms have settled.",
+   "classification": "unsupported",
+   "evidence": "'Warning' not retrieved; NHS says assessed in hospital even if symptoms disappear.",
+   "url": "https://www.nhs.uk/conditions/transient-ischaemic-attack-tia/",
+   "action": "edited",
+   "newSentence": "Symptoms of a TIA can pass, but the person still needs to be assessed in hospital, so call 999."
+  },
+  {
+   "id": "c28",
+   "where": "keyPoints",
+   "sentence": "Treatment differs for strokes caused by a blood clot and strokes caused by bleeding, which is why a hospital scan comes first.",
+   "classification": "supported",
+   "evidence": "Scan shows clot or bleed; treatment differs.",
+   "url": "https://www.stroke.org.uk/stroke/symptoms/diagnosis-treatment",
+   "action": "kept"
+  },
+  {
+   "id": "c29",
+   "where": "keyPoints",
+   "sentence": "The Stroke Association runs a support helpline for people affected by stroke.",
+   "classification": "supported",
+   "evidence": "Helpline exists (0303 3033 100).",
+   "url": "https://www.stroke.org.uk/sites/default/files/publications/ischaemic_stroke_guide.pdf",
+   "action": "kept"
+  },
+  {
+   "id": "c30",
+   "where": "summary",
+   "sentence": "A stroke and a TIA cause the same symptoms; in a TIA they pass, but both are emergencies and the NHS says to call 999.",
+   "classification": "unsupported",
+   "evidence": "'Same symptoms' not backed; call 999 even if symptoms go away.",
+   "url": "https://www.stroke.org.uk/stroke/symptoms",
+   "action": "edited",
+   "newSentence": "A stroke and a TIA are both emergencies: the NHS and the Stroke Association say to call 999 even if the symptoms pass."
+  }
+ ],
+ "notes": "Search summaries only; the NHS TIA overview and Stroke Association TIA pages were not returned with their own excerpts, so 'same symptoms as a stroke' and the risk-timing claim could not be confirmed. The 24-hour TIA definition came from an NHS trust leaflet (Royal Berkshire), not the Stroke Association. 'Stroke Support Helpline' name differs from retrieved 'Stroke Helpline'. The draft's 'Stroke Association says' TIA duration attribution should be dropped. c11 has no salvage; remove."
+}

@@ -1,0 +1,235 @@
+{
+ "id": "migraine-and-tension-headache-compared",
+ "searchesUsed": 4,
+ "counts": {
+  "supported": 7,
+  "textbook": 2,
+  "unsupported": 14,
+  "wrong": 0,
+  "unsafe": 0,
+  "unchecked": 0
+ },
+ "claims": [
+  {
+   "id": "c01",
+   "where": "body[0]",
+   "sentence": "Tension-type headache typically causes a pressing or tightening pain on both sides of the head, and the area can feel tender to the touch.",
+   "classification": "unsupported",
+   "evidence": "MedlinePlus: dull pressure, tight band; leaflet: both sides. 'Tender to touch' not retrieved.",
+   "url": "https://medlineplus.gov/ency/article/000797.htm",
+   "action": "edited",
+   "newSentence": "Tension-type headache typically causes a dull, pressing or tight-band pain felt on both sides of the head."
+  },
+  {
+   "id": "c02",
+   "where": "body[0]",
+   "sentence": "NICE describes the pain as mild to moderate and not made worse by routine activity.",
+   "classification": "unsupported",
+   "evidence": "Mild-to-moderate and not worsened by daily activity came from an NHS-linked leaflet, not retrieved NICE text.",
+   "url": "https://www.nottsapc.nhs.uk/media/skuozd4u/headaches_self-care_apc.pdf",
+   "action": "edited",
+   "newSentence": "An NHS-linked self-care leaflet describes tension-type headache as mild to moderate and not made worse by ordinary daily activity."
+  },
+  {
+   "id": "c03",
+   "where": "body[0]",
+   "sentence": "The NHS says a tension headache is commonly felt for 30 minutes to several hours, but it can last for days.",
+   "classification": "unsupported",
+   "evidence": "NHS page: at least 30 minutes, can last several days. 'Several hours' came from trust leaflets.",
+   "url": "https://www.nhs.uk/conditions/tension-headaches/",
+   "action": "edited",
+   "newSentence": "The NHS says tension headaches last at least 30 minutes and can last for several days."
+  },
+  {
+   "id": "c04",
+   "where": "body[0]",
+   "sentence": "MedlinePlus says it usually does not come with nausea, vomiting, or sensitivity to light and sound.",
+   "classification": "unsupported",
+   "evidence": "MedlinePlus: usually no nausea or vomiting; light/sound not retrieved from it. NINDS says tension-type headache may involve light or sound sensitivity.",
+   "url": "https://medlineplus.gov/ency/article/000797.htm",
+   "action": "edited",
+   "newSentence": "MedlinePlus says tension headaches usually do not cause nausea or vomiting."
+  },
+  {
+   "id": "c05",
+   "where": "body[1]",
+   "sentence": "NICE describes migraine as a headache that is usually throbbing or pulsating, often moderate to severe, and that can be on one side or both.",
+   "classification": "unsupported",
+   "evidence": "Moderate-to-severe, one or both sides, from leaflet; NICE diagnostic text not retrieved; 'usually throbbing' only from NHS 111 Wales.",
+   "url": "https://www.nottsapc.nhs.uk/media/skuozd4u/headaches_self-care_apc.pdf",
+   "action": "edited",
+   "newSentence": "An NHS-linked self-care leaflet describes migraine as usually moderate to severe, on one or both sides of the head, and it can be made worse by ordinary daily activity."
+  },
+  {
+   "id": "c06",
+   "where": "body[1]",
+   "sentence": "Nausea, vomiting, and sensitivity to light and sound are common.",
+   "classification": "supported",
+   "evidence": "NHS migraine page lists feeling/being sick and sensitivity to light and sound as main symptoms.",
+   "url": "https://www.nhs.uk/conditions/migraine/",
+   "action": "kept"
+  },
+  {
+   "id": "c07",
+   "where": "body[1]",
+   "sentence": "Attacks typically last for hours, and some people have an aura, a set of temporary symptoms such as visual disturbance, before the headache starts.",
+   "classification": "supported",
+   "evidence": "NHS migraine page: attacks usually last 4 hours to 3 days; aura includes zigzag lines/flashing lights, numbness etc.",
+   "url": "https://www.nhs.uk/conditions/migraine/",
+   "action": "kept"
+  },
+  {
+   "id": "c08",
+   "where": "body[2]",
+   "sentence": "For tension-type headache, the NHS says over-the-counter painkillers such as paracetamol and ibuprofen can help, along with relaxation, exercise and good sleep and posture habits.",
+   "classification": "unsupported",
+   "evidence": "NICE: consider aspirin, paracetamol or NSAID for TTH. NHS: relaxation activities. Exercise, sleep, posture not retrieved; NHS-attribution of painkillers came from a leaflet.",
+   "url": "https://www.nice.org.uk/guidance/cg150/chapter/recommendations",
+   "action": "edited",
+   "newSentence": "For tension-type headache, NICE advises considering aspirin, paracetamol or an NSAID for the acute treatment, and the NHS mentions activities that help you relax."
+  },
+  {
+   "id": "c09",
+   "where": "body[2]",
+   "sentence": "A GP may discuss a preventive medicine for frequent headaches.",
+   "classification": "unsupported",
+   "evidence": "Not retrieved for TTH; NICE MOH info says preventive treatment for the underlying headache may be offered with withdrawal.",
+   "url": "https://www.nice.org.uk/guidance/cg150/ifp/chapter/treatment-for-medication-overuse-headache",
+   "action": "edited",
+   "newSentence": "NICE says treatment to help prevent the underlying headache may be offered alongside stopping the medicines that are causing medication-overuse headache."
+  },
+  {
+   "id": "c10",
+   "where": "body[2]",
+   "sentence": "For migraine, NICE advises that acute treatment is most effective when started early.",
+   "classification": "unsupported",
+   "evidence": "NHS migraine page says take painkillers as soon as headache starts; NICE 'most effective early' not retrieved.",
+   "url": "https://www.nhs.uk/conditions/migraine/",
+   "action": "edited",
+   "newSentence": "The NHS migraine page advises taking painkillers as soon as the headache starts."
+  },
+  {
+   "id": "c11",
+   "where": "body[2]",
+   "sentence": "It recommends a triptan combined with a non-steroidal anti-inflammatory drug or paracetamol, with the choice made by the clinician.",
+   "classification": "unsupported",
+   "evidence": "NICE: offer oral triptan with NSAID, or with paracetamol. 'Choice made by clinician' not retrieved.",
+   "url": "https://www.nice.org.uk/guidance/cg150/chapter/recommendations",
+   "action": "edited",
+   "newSentence": "For the acute treatment of migraine, NICE advises offering an oral triptan together with an NSAID, or an oral triptan together with paracetamol."
+  },
+  {
+   "id": "c12",
+   "where": "body[2]",
+   "sentence": "Taking painkillers or triptans too often can cause medication-overuse headache, so a GP can advise on how often is appropriate.",
+   "classification": "unsupported",
+   "evidence": "MOH cause stated in a trust leaflet; NICE: treated by stopping medicines. 'GP can advise how often' not retrieved.",
+   "url": "https://www.nice.org.uk/guidance/cg150/ifp/chapter/treatment-for-medication-overuse-headache",
+   "action": "edited",
+   "newSentence": "Taking painkillers or triptans too often can cause medication-overuse headache, which NICE says is treated by stopping the medicines, with advice from a healthcare professional."
+  },
+  {
+   "id": "c13",
+   "where": "body[3]",
+   "sentence": "The NHS says to call 999 or go to A&E for a sudden, extremely painful headache, a headache after a serious head injury, sudden problems with speech or memory, loss of vision, drowsiness or confusion, or a high temperature with other signs of meningitis such as a stiff neck or a rash.",
+   "classification": "unsupported",
+   "evidence": "NHS Headaches page lists sudden extremely painful onset, head injury, loss of vision, confusion/drowsiness, seizure, numbness/weakness, non-fading rash. Speech/memory problems and fever with stiff neck came only from hospital leaflets.",
+   "url": "https://www.nhs.uk/symptoms/headaches/",
+   "action": "edited",
+   "newSentence": "The NHS says to call 999 or go to A&E for a sudden and extremely painful headache, a headache after a head injury, loss of vision, confusion or drowsiness, a seizure, new numbness or weakness, or a rash that does not fade under a glass."
+  },
+  {
+   "id": "c14",
+   "where": "body[3]",
+   "sentence": "These signs can mean a serious condition, and getting help promptly matters.",
+   "classification": "textbook",
+   "evidence": "General statement, harmless.",
+   "url": "",
+   "action": "kept"
+  },
+  {
+   "id": "c15",
+   "where": "body[4]",
+   "sentence": "A GP appointment is the route when headaches are frequent or severe, when painkillers are not helping, or when headaches affect work or daily life.",
+   "classification": "unsupported",
+   "evidence": "NHS: see GP if headaches several times a week or severe, or painkillers/relaxation do not help. 'Affect work or daily life' not retrieved.",
+   "url": "https://www.nhs.uk/conditions/tension-headaches/",
+   "action": "edited",
+   "newSentence": "The NHS advises seeing a GP if headaches happen several times a week or are severe, or if painkillers and relaxing activities do not help."
+  },
+  {
+   "id": "c16",
+   "where": "body[4]",
+   "sentence": "A GP can look for other causes, review any painkillers being taken and discuss preventive treatment where it is suitable.",
+   "classification": "unsupported",
+   "evidence": "No retrieved text on what a GP will review or offer.",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c17",
+   "where": "body[4]",
+   "sentence": "The site's page on headache sets out causes and warning signs in more detail.",
+   "classification": "textbook",
+   "evidence": "Meta pointer to site page, harmless.",
+   "url": "",
+   "action": "kept"
+  },
+  {
+   "id": "c18",
+   "where": "keyPoints",
+   "sentence": "Tension-type headache usually causes a pressing or tightening pain on both sides of the head, with mild to moderate severity.",
+   "classification": "supported",
+   "evidence": "MedlinePlus dull pressure/tight band; leaflet mild-moderate both sides.",
+   "url": "https://www.nottsapc.nhs.uk/media/skuozd4u/headaches_self-care_apc.pdf",
+   "action": "kept"
+  },
+  {
+   "id": "c19",
+   "where": "keyPoints",
+   "sentence": "Migraine is often a throbbing pain that can be moderate to severe, with nausea, vomiting and sensitivity to light and sound.",
+   "classification": "supported",
+   "evidence": "NHS migraine symptoms; moderate-severe from leaflet; throbbing from NHS 111 Wales.",
+   "url": "https://www.nhs.uk/conditions/migraine/",
+   "action": "kept"
+  },
+  {
+   "id": "c20",
+   "where": "keyPoints",
+   "sentence": "Some people have an aura before a migraine, and attacks last longer than a typical tension headache.",
+   "classification": "supported",
+   "evidence": "NHS migraine: aura and 4h-3 days vs TTH 30 min up to days.",
+   "url": "https://www.nhs.uk/conditions/migraine/",
+   "action": "kept"
+  },
+  {
+   "id": "c21",
+   "where": "keyPoints",
+   "sentence": "Painkillers help both, but frequent use of painkillers can itself cause headaches.",
+   "classification": "supported",
+   "evidence": "NICE acute treatment for both; trust leaflet on medication-overuse headache.",
+   "url": "https://www.nice.org.uk/guidance/cg150/chapter/recommendations",
+   "action": "kept"
+  },
+  {
+   "id": "c22",
+   "where": "keyPoints",
+   "sentence": "A sudden, extremely painful headache, or a headache with confusion, vision loss or a stiff neck and high temperature, needs 999 or A&E.",
+   "classification": "unsupported",
+   "evidence": "Fever with stiff neck not on retrieved NHS 999 list; remaining items are.",
+   "url": "https://www.nhs.uk/symptoms/headaches/",
+   "action": "edited",
+   "newSentence": "A sudden, extremely painful headache, or a headache with loss of vision, confusion or drowsiness, or a rash that does not fade under a glass, needs 999 or A&E."
+  },
+  {
+   "id": "c23",
+   "where": "summary",
+   "sentence": "Tension headache is usually a dull, tight pressure on both sides of the head, while migraine often throbs and brings nausea or sensitivity to light.",
+   "classification": "supported",
+   "evidence": "Supported by MedlinePlus, leaflet and NHS migraine page.",
+   "url": "https://www.nhs.uk/conditions/migraine/",
+   "action": "kept"
+  }
+ ],
+ "notes": "Retrieval did not surface NICE CG150 diagnostic feature text or the NHS Headaches page 999 list verbatim in full; mild-moderate/both-sides/throbbing descriptions rest on an NHS-linked Nottinghamshire leaflet and NHS 111 Wales, not NICE. Verify the 999 list against nhs.uk/symptoms/headaches before publishing. NINDS says tension-type headache may involve light or sound sensitivity, so avoid saying it never does."
+}
