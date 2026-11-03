@@ -16,3 +16,5 @@ Drafted but NOT verified (first pass only, in posts/ and ledgers/, not in the fr
 
 Not started or incomplete: inhalers, opioids, antibiotics and viruses (authors interrupted).
 Review note: the statins guide marks one sentence ("high cholesterol can lead to cardiovascular disease") as textbook; atorvastatin NHS pages disagree on grapefruit amounts, so no figure is given.
+
+In progress at last push (not in fragment unless listed above): inhalers, opioids, BP medicines, antibiotics-and-viruses (second pass running).
