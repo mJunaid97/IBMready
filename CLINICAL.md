@@ -61,6 +61,9 @@ country ("guidance and licensed information may differ by country").
 (interpret a result against the interval supplied by the laboratory that performed the test).
 Clinical decision thresholds are separate records (`thresholds[]`: name, value, unit, context,
 jurisdiction, source) and are never derived from a reference interval.
+`thresholdScales[]` (optional) group some of a test's own threshold records into one scale: `{title, bands: [threshold names, in order of value]}`. The page
+draws a scale as a strip of bands above the table (equal width, not to scale, and the caption says so); every word on the strip comes from the sourced
+records, so a scale adds no figure or claim. The compiler rejects a scale with fewer than two bands and a band that is not the name of one of the test's thresholds.
 
 ## 4. Interactions
 

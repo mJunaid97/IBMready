@@ -15,8 +15,8 @@ the largest English-speaking market for these terms; UK volumes are lower but fo
 | hand bones | 41,000 | 14 | `/anatomy/hand/` | source-verified article, title "Hand Bones Anatomy" |
 | bones of the hand | 13,000 | 10 | `/anatomy/hand/` | same page, H2 "Bones of the hand" |
 | heart anatomy | 41,000 | 10 | `/anatomy/heart/` | article |
-| shoulder anatomy | 39,000 | 12 | `/anatomy/shoulder-girdle/` | **partly**: the article covers the girdle (clavicle, scapula, two joints, muscles that move it) but not the shoulder joint, rotator cuff or deltoid, which this search is mostly about |
-| shoulder bones | 6,400 | 4 | `/anatomy/shoulder-girdle/` | source-verified article (v1.10.1), title "Shoulder Girdle Anatomy" |
+| shoulder anatomy | 39,000 | 12 | `/anatomy/shoulder-girdle/` | source-verified article (v1.10.4) covering the shoulder joint, rotator cuff, deltoid and girdle, title "Shoulder Anatomy: 3D Model, Rotator Cuff, Joints" |
+| shoulder bones | 6,400 | 4 | `/anatomy/shoulder-girdle/` | same page (section "Bones and their features") |
 | spine anatomy | 28,000 | 15 | `/anatomy/spine/` | article |
 | penis anatomy | 21,000 | 39 | `/anatomy/penis/` | source-verified article (v1.10.1) |
 | pelvic floor muscles | 20,000 | 47 | `/anatomy/pelvic-floor/` | article |
@@ -44,13 +44,9 @@ the largest English-speaking market for these terms; UK volumes are lower but fo
 
 ## What follows from it
 
-1. **The largest unanswered demand is now the shoulder joint.** The foot, rib cage, prostate, gallbladder, spleen and the other organ
-   pages that had no article were written and source-checked in v1.10.1, so all 48 anatomy pages are indexable. "Shoulder anatomy"
-   (39,000 searches a month, KD 12) is mostly about the shoulder *joint*: the glenohumeral joint, rotator cuff, deltoid and the
-   muscles that move the arm. The shoulder-girdle article covers the clavicle, scapula and their two joints, not those, so it
-   answers "shoulder bones" (6,400) but only part of "shoulder anatomy". A second article ("Shoulder joint and rotator cuff")
-   is the highest-value page still missing. It must pass the two-pass protocol in CLINICAL.md 5.5 before it is merged: a first
-   pass written only from retrieved text, then an independent second pass that re-retrieves every sentence.
+1. **The anatomy gaps are closed.** All 48 organ pages are articles (v1.10.1), and the shoulder page now covers the shoulder joint, the rotator cuff and the deltoid as well as the clavicle and scapula (v1.10.4), so "shoulder
+   anatomy" (39,000 searches a month, KD 12) has a page that answers it. What is searched and still has no page of its own: the elbow, wrist and hip joints, the muscles of the upper and lower limb as a set, and the
+   spine's ligaments. Each article must pass the two-pass protocol in CLINICAL.md 5.5 before it is merged. Measure before writing more: Search Console shows which of the 48 pages get impressions.
 2. **Pages that exist now carry the searched phrase.** Titles read "Hand Bones Anatomy: 3D Model, Carpals | Anatomy Nexus",
    "Pelvis Anatomy: 3D Model, Hip Bones, Sacrum | Anatomy Nexus" and so on: the phrase people type first, then the feature that
    sets the page apart from the flat diagrams and slide-deck results that fill the first page (an interactive 3D model, shown

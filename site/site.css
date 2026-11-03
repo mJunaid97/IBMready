@@ -341,6 +341,9 @@ select { height: var(--control-h-sm); padding: 0 8px; border: 1px solid var(--bo
 .kv tbody th { color: var(--text-primary); font-weight: 600; width: 34%; }
 .grid-table th, .grid-table td { font-size: 13.5px; }
 .grid-table th[scope="row"] { width: auto; min-width: 120px; }
+/* a table of four or more columns keeps its words whole (a long code widens the table inside its scrolling wrapper instead of being cut into letters), and on a phone scrolls inside the wrapper */
+table.wide th, table.wide td { overflow-wrap: break-word; }
+@media (max-width: 640px) { table.wide { min-width: 560px; } }
 table.compare th[scope="row"] { width: 22%; }
 table.compare thead th { font-size: 14px; text-transform: none; letter-spacing: 0; color: var(--text-primary); }
 table.compare thead th a { text-decoration: none; }
@@ -360,6 +363,23 @@ dl.facts.pops dt { font-weight: 600; color: var(--text-primary); }
 .steps li { position: relative; padding: 0 0 16px 46px; }
 .steps li::before { counter-increment: step; content: counter(step); position: absolute; left: 0; top: 0; width: 30px; height: 30px; border-radius: 50%; background: var(--interactive); color: var(--interactive-ink); font-weight: 700; display: grid; place-items: center; font-size: 13.5px; }
 .steps li b { display: block; margin-bottom: 2px; }
+/* step flow: the numbered steps are joined by a line, so the order reads as a sequence */
+.steps li:not(:last-child)::after { content: ""; position: absolute; left: 14px; top: 33px; bottom: 3px; width: 2px; border-radius: 1px; background: var(--border-strong); }
+/* threshold bands: the sourced threshold records of one scale, in order of value, equal width (not to scale) */
+.bands { margin: 10px 0 6px; }
+.bands figcaption { font-weight: 600; margin-bottom: 8px; }
+ol.band-strip { list-style: none; margin: 0; padding: 0; display: flex; gap: 4px; }
+ol.band-strip .band { position: relative; flex: 1 1 0; min-width: 0; padding: 14px 12px 10px; border: 1px solid var(--border-strong); border-radius: var(--control-radius); background: var(--surface); font-size: 14px; line-height: 1.35; }
+ol.band-strip .band::before { content: ""; position: absolute; left: 0; right: 0; top: 0; height: 6px; border-radius: var(--control-radius) var(--control-radius) 0 0; background: var(--brand-teal); opacity: var(--band-opacity, .5); }
+ol.band-strip .band-0 { --band-opacity: .28; } ol.band-strip .band-1 { --band-opacity: .5; } ol.band-strip .band-2 { --band-opacity: .72; } ol.band-strip .band-3 { --band-opacity: .88; } ol.band-strip .band-4 { --band-opacity: 1; }
+.band-name { display: block; font-weight: 600; overflow-wrap: anywhere; }
+.band-value { display: block; margin-top: 2px; overflow-wrap: anywhere; }
+.band-unit { color: var(--muted); font-size: 12.5px; }
+@media (max-width: 640px) { ol.band-strip { flex-direction: column; } }
+/* organ pages: the box with HTML for reusing the 3D preview, with the credit line the 3D data's licence requires */
+.share details { border: 1px solid var(--border); border-radius: var(--radius); padding: 10px 12px; background: var(--surface); }
+.share summary { cursor: pointer; font-weight: 600; }
+.share-code { width: 100%; box-sizing: border-box; margin-top: 4px; padding: 8px; font-family: var(--mono); font-size: 12px; line-height: 1.45; color: var(--text-primary); background: var(--surface-alt); border: 1px solid var(--border-strong); border-radius: var(--control-radius); resize: vertical; }
 
 /* ================================================================== 10. knowledge-graph components: related topics, in the body, pathway, terms, sources, editorial */
 .rel-group { margin: 0 0 12px; }

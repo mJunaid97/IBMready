@@ -44,7 +44,7 @@ export const SITE = {
     "testCategories": 36,
     "testConcepts": 837,
     "classConcepts": 537,
-    "edges": 3543,
+    "edges": 3576,
     "physiology": 35,
     "symptoms": 22,
     "conditions": 114,

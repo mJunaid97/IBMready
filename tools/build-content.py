@@ -427,6 +427,15 @@ def validate_clinical(key, eid, e, ids, errors):
             if not t.get("jurisdiction"): errors.append(f"{where}: threshold '{t.get('name')}' has no jurisdiction")
             else: check_enum(t["jurisdiction"], JURISDICTIONS, where, errors, "threshold.jurisdiction")
             t["source"] = one_source(t, f"{where} threshold '{t.get('name')}'", errors, acc)
+        # thresholdScales: groups of this test's threshold records shown as one strip of bands in order of value (CLINICAL.md section 3).
+        # A scale only names records that already carry a source; it adds no figure or claim of its own.
+        names = [t.get("name") for t in e.get("thresholds") or []]
+        for i, sc in enumerate(e.get("thresholdScales") or []):
+            if not (isinstance(sc, dict) and sc.get("title") and isinstance(sc.get("bands"), list) and len(sc["bands"]) >= 2):
+                errors.append(f"{where}: thresholdScales[{i}] needs a title and at least two bands"); continue
+            if len(set(sc["bands"])) != len(sc["bands"]): errors.append(f"{where}: thresholdScales[{i}] names a band twice")
+            for b in sc["bands"]:
+                if b not in names: errors.append(f"{where}: thresholdScales[{i}] band '{b}' is not the name of a threshold of this test")
     if key == "targets":
         check_enum(e.get("kind"), TARGET_KINDS, where, errors, "kind")
     if key == "imaging": TX.validate_imaging(e, where, errors)
@@ -1165,6 +1174,13 @@ def main():
             rec["article"] = {"title": art["title"], "descriptor": art.get("descriptor", ""), "intro": art.get("intro", ""), "keyFacts": art.get("keyFacts", []),
                               "sections": art.get("sections", []), "structures": sids,
                               "references": enrich_references(art.get("references"), art.get("updated") or articles_updated, f"anatomy/{o['id']}", errors)}
+            # the search snippet of the page, written by the author from the article's own text; without one the page derives it from the
+            # article's opening sentences (anatomy/anatomy.js), which is not possible when the first sentence is longer than the snippet allows
+            md = art.get("metaDescription")
+            if md is not None:
+                if not (isinstance(md, str) and 70 <= len(md) <= 160 and md[:1].isupper() and md.endswith(".") and "..." not in md and "…" not in md):
+                    errors.append(f"anatomy/{o['id']}: article.metaDescription must be a complete statement of 70 to 160 characters that ends with a full stop")
+                else: rec["article"]["metaDescription"] = md
             rec["updated"] = art.get("updated") or articles_updated
             if len(rec["article"]["references"]) < 2: errors.append(f"anatomy/{o['id']}: an anatomy article needs at least two references")
         rec["index"] = bool(art)

@@ -1,0 +1,107 @@
+{
+ "id": "benzodiazepines",
+ "searchesUsed": 13,
+ "counts": {
+  "supported": 6,
+  "textbook": 1,
+  "unsupported": 4,
+  "wrong": 0,
+  "unsafe": 0,
+  "unchecked": 0
+ },
+ "claims": [
+  {
+   "id": "c01",
+   "where": "summary",
+   "classification": "supported",
+   "evidence": "MedlinePlus: oral diazepam prescribed for anxiety, agitation from alcohol withdrawal, muscle spasms/stiffness from certain nerve disorders, seizures.",
+   "url": "https://medlineplus.gov/druginfo/meds/a682047.html",
+   "action": "kept"
+  },
+  {
+   "id": "c02",
+   "where": "summary",
+   "classification": "supported",
+   "evidence": "NHS Diazepam page: short term only (up to 4 weeks), because longer use can cause addiction and withdrawal symptoms.",
+   "url": "https://www.nhs.uk/medicines/diazepam/",
+   "action": "kept"
+  },
+  {
+   "id": "c03",
+   "where": "mechanism",
+   "classification": "supported",
+   "evidence": "MedlinePlus describes action as calming abnormal/overactive brain activity.",
+   "url": "https://medlineplus.gov/druginfo/meds/a682047.html",
+   "action": "kept"
+  },
+  {
+   "id": "c04",
+   "where": "mechanism",
+   "classification": "unsupported",
+   "evidence": "PMC8629021 ('Benzodiazepines: Uses, Dangers, and Clinical Considerations'): BZDs primarily work on the GABA-A receptor. Sedative effects not seen in returned text.",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8629021/",
+   "action": "edited",
+   "newSentence": "A review in the NIH's PubMed Central archive says benzodiazepines act mainly on the GABA-A receptor."
+  },
+  {
+   "id": "c05",
+   "where": "mechanism",
+   "classification": "supported",
+   "evidence": "NHS inform: tolerance can develop quickly with frequent use.",
+   "url": "https://www.nhsinform.scot/healthy-living/drugs-and-drug-use/common-drugs/benzodiazepines-benzos-diazepam-valium/",
+   "action": "kept"
+  },
+  {
+   "id": "c06",
+   "where": "mechanism",
+   "classification": "unsupported",
+   "evidence": "PMC8629021: regular use can cause severe psychological and physical dependence; withdrawal resembles alcohol withdrawal. 'Life-threatening' came from NHS inform, not the review.",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8629021/",
+   "action": "edited",
+   "newSentence": "The same review says regular use can cause physical and psychological dependence, with withdrawal resembling alcohol withdrawal; NHS inform adds that stopping suddenly can cause withdrawal effects that could be life-threatening."
+  },
+  {
+   "id": "c07",
+   "where": "classEffects[0]",
+   "classification": "supported",
+   "evidence": "NHS diazepam common side effects: less alert, drowsy, tiredness, low blood pressure.",
+   "url": "https://www.nhs.uk/medicines/diazepam/",
+   "action": "kept"
+  },
+  {
+   "id": "c08",
+   "where": "classEffects[1]",
+   "classification": "unsupported",
+   "evidence": "NHS says serious side effects are rare (not 'uncommon'); lists anaphylaxis, slower/shallower breathing, yellowing of eyes/skin.",
+   "url": "https://www.nhs.uk/medicines/diazepam/",
+   "action": "edited",
+   "newSentence": "Serious side effects of diazepam are rare; the NHS lists allergic reactions, slow or shallow breathing and yellowing of the skin or eyes."
+  },
+  {
+   "id": "c09",
+   "where": "cautions[5]",
+   "classification": "supported",
+   "evidence": "NHS inform: mixing with depressants like alcohol, gabapentin, opioids can pose serious health risks; advises against other drugs or extra benzodiazepines for withdrawal.",
+   "url": "https://www.nhsinform.scot/healthy-living/drugs-and-drug-use/common-drugs/benzodiazepines-benzos-diazepam-valium/",
+   "action": "kept"
+  },
+  {
+   "id": "c10",
+   "where": "cautions[6]",
+   "classification": "unsupported",
+   "evidence": "NHS inform advice applies to shorter-term use: reduce gradually over a few days can greatly reduce unpleasant withdrawal; sentence dropped that qualifier.",
+   "url": "https://www.nhsinform.scot/healthy-living/drugs-and-drug-use/common-drugs/benzodiazepines-benzos-diazepam-valium/",
+   "action": "edited",
+   "newSentence": "NHS inform says that for people who have used benzodiazepines for a shorter period, reducing use gradually can greatly ease unpleasant withdrawal symptoms."
+  },
+  {
+   "id": "c11",
+   "where": "cautions[7]",
+   "classification": "textbook",
+   "evidence": "Generic UK routes to care (999, NHS 111, Samaritans 116 123); matches site signposting rule. Describes routes, not an individual dose instruction.",
+   "url": "https://www.nhsinform.scot/healthy-living/drugs-and-drug-use/common-drugs/benzodiazepines-benzos-diazepam-valium/",
+   "action": "kept"
+  }
+ ],
+ "notes": "No sentence contains a dose, schedule or numeric cut-off or the word 'safe'. NHS inform and NHS pages were not read directly (fetch blocked); evidence is from search summaries. c04 'sedative effects' dropped as not seen in returned text."
+}

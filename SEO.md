@@ -76,7 +76,7 @@ slash → with slash, `/organs/<id>/` → `/anatomy/<id>/`, `/learn/terminology.
 * Organ pages (`anatomy/anatomy.js`): the descriptor is prefixed with *3D Model* when the atlas holds the organ, so the title
   reads *Hand Bones Anatomy: 3D Model, Carpals | Anatomy Nexus* (the searched phrase first, then what sets the page apart
   from flat diagrams), and the description is the article's opening whole sentence(s) plus *Explore it in 3D*; when no
-  whole sentence fits in 138 characters the page falls back to a template. The page's 3D preview is named in
+  whole sentence fits in 138 characters the page falls back to a template. An article may carry its own `metaDescription` (70 to 160 characters, a complete statement written from the article's text, checked by the compiler), which wins over both; the 21 pages whose first sentence is too long have one. The page's 3D preview is named in
   `og:image:alt`, `twitter:image:alt` and `primaryImageOfPage` of the `MedicalWebPage` node. The keyword research behind
   this (what people search, which page answers it, which articles are missing) is in `docs/seo/keyword-research.md`.
 * Meta description from the entity's lead paragraph: whole sentences up to 160 characters, then the next sentence's

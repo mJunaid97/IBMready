@@ -1,0 +1,128 @@
+{
+ "id": "dopamine-antagonist-antiemetics",
+ "searchesUsed": 7,
+ "counts": {
+  "supported": 9,
+  "textbook": 2,
+  "unsupported": 2,
+  "wrong": 0,
+  "unsafe": 0,
+  "unchecked": 0
+ },
+ "claims": [
+  {
+   "id": "c01",
+   "where": "summary[2]",
+   "classification": "supported",
+   "evidence": "NHS About page: you will usually only take metoclopramide for a short time.",
+   "url": "https://www.nhs.uk/medicines/metoclopramide/about-metoclopramide/",
+   "action": "edited",
+   "newSentence": "The NHS says metoclopramide is usually taken for a short time. [cite About page, not side-effects page]"
+  },
+  {
+   "id": "c02",
+   "where": "summary[3]",
+   "classification": "supported",
+   "evidence": "MedlinePlus tablet page: treats GERD (heartburn/reflux) and gastroparesis (slowed stomach emptying).",
+   "url": "https://medlineplus.gov/druginfo/meds/a684035.html",
+   "action": "kept"
+  },
+  {
+   "id": "c03",
+   "where": "mechanism[1]",
+   "classification": "unsupported",
+   "evidence": "StatPearls excerpt: antagonises central and peripheral D2 receptors in the medullary chemoreceptor trigger zone (area postrema). 'Mainly used as an anti-sickness medicine' not in returned StatPearls text.",
+   "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK519517/?report=reader",
+   "action": "edited",
+   "newSentence": "StatPearls describes metoclopramide as blocking dopamine-2 receptors, including in the chemoreceptor trigger zone of the brainstem."
+  },
+  {
+   "id": "c04",
+   "where": "mechanism[2]",
+   "classification": "textbook",
+   "evidence": "A review excerpt says 'in the basal ganglia, metoclopramide inhibits dopamine receptors causing dopaminergic-cholinergic imbalance', but the search blended pages and the specific URL was not confirmed as NBK519517; the lay gloss of the basal ganglia is general knowledge.",
+   "url": "",
+   "action": "kept",
+   "newSentence": "Keep text; drop or re-verify the NBK519517 citation."
+  },
+  {
+   "id": "c05",
+   "where": "mechanism[3]",
+   "classification": "textbook",
+   "evidence": "Review excerpt links akathisia, acute dystonia, drug-induced parkinsonism and tardive dyskinesia to this mechanism; source page not confirmed for NBK519517; plain-English glosses are general knowledge.",
+   "url": "",
+   "action": "kept",
+   "newSentence": "Keep text; drop or re-verify the NBK519517 citation."
+  },
+  {
+   "id": "c06",
+   "where": "classEffects[0]",
+   "classification": "supported",
+   "evidence": "NHS: most common side effects are feeling sleepy and diarrhoea; low mood or depression is in the common list.",
+   "url": "https://www.nhs.uk/medicines/metoclopramide/side-effects-of-metoclopramide/",
+   "action": "edited",
+   "newSentence": "Drowsiness, low mood or depression, and diarrhoea are listed by the NHS as common side effects."
+  },
+  {
+   "id": "c07",
+   "where": "classEffects[1]",
+   "classification": "supported",
+   "evidence": "NHS side-effects page covers feeling dizzy (stop what you are doing, sit or lie down).",
+   "url": "https://www.nhs.uk/medicines/metoclopramide/side-effects-of-metoclopramide/",
+   "action": "kept"
+  },
+  {
+   "id": "c08",
+   "where": "classEffects[2]",
+   "classification": "supported",
+   "evidence": "NHS: the most common serious side effect is uncontrollable movements such as tics, tremors, muscle stiffness and spasms.",
+   "url": "https://www.nhs.uk/medicines/metoclopramide/side-effects-of-metoclopramide/",
+   "action": "kept"
+  },
+  {
+   "id": "c09",
+   "where": "cautions[4]",
+   "classification": "supported",
+   "evidence": "Tablet page: TD may persist after stopping. 'Risk rises with longer treatment' came from the injection page, not the tablet page.",
+   "url": "https://medlineplus.gov/druginfo/meds/a684035.html ; https://medlineplus.gov/druginfo/meds/a601158.html",
+   "action": "edited",
+   "newSentence": "MedlinePlus, a US source, says tardive dyskinesia, a movement disorder, may not go away after metoclopramide is stopped. Its injection page adds that the risk rises the longer treatment lasts."
+  },
+  {
+   "id": "c10",
+   "where": "cautions[5]",
+   "classification": "supported",
+   "evidence": "MedlinePlus tablet page: older adults (65 and over) usually should not take it for GERD/gastroparesis as other medicines are safer; US source already labelled.",
+   "url": "https://medlineplus.gov/druginfo/meds/a684035.html",
+   "action": "kept"
+  },
+  {
+   "id": "c11",
+   "where": "cautions[6]",
+   "classification": "supported",
+   "evidence": "NHS: call 999 or go to A&E if you have a seizure or fit; wording clearly on how-and-when page, side-effects page reported to match but blended.",
+   "url": "https://www.nhs.uk/medicines/metoclopramide/how-and-when-to-take-metoclopramide/ ; https://www.nhs.uk/medicines/metoclopramide/side-effects-of-metoclopramide/",
+   "action": "edited",
+   "newSentence": "The NHS says to call 999 or go to A&E straight away after a seizure or fit while taking metoclopramide. [cite How and when page plus side-effects page]"
+  },
+  {
+   "id": "c12",
+   "where": "cautions[7]",
+   "classification": "supported",
+   "evidence": "NHS: avoid alcohol; it will make you feel more sleepy (About page). A second NHS page is softer ('best not to drink').",
+   "url": "https://www.nhs.uk/medicines/metoclopramide/about-metoclopramide/",
+   "action": "edited",
+   "newSentence": "The NHS advises avoiding alcohol with metoclopramide because it will make a person feel more sleepy. [cite About page]"
+  },
+  {
+   "id": "c13",
+   "where": "cautions[8]",
+   "classification": "unsupported",
+   "evidence": "StatPearls excerpt: patients who develop NMS should stop metoclopramide; 'rare, life-threatening' not in returned text. The 999 advice comes from NHS (call 999 if you think you might be having NMS), not StatPearls.",
+   "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK519517/?report=reader ; https://www.nhs.uk/medicines/metoclopramide/how-and-when-to-take-metoclopramide/",
+   "action": "edited",
+   "newSentence": "StatPearls describes neuroleptic malignant syndrome as a possible complication of metoclopramide. The NHS says to call 999 if you think you might be having it. [cite StatPearls plus NHS How and when page]"
+  }
+ ],
+ "notes": "Seizure 999/A&E confirmed on NHS how-and-when page (side-effects page reportedly matches). NHS alcohol: About page says avoid, will make you sleepy; another NHS page is softer. NHS pages ~2 years old per search. StatPearls URL returned as ?report=reader/printable variant. mechanism[2]/[3] retained as textbook; citation unconfirmed."
+}

@@ -6,7 +6,7 @@
 import { renderHeader, renderFooter, loadData, loadClinical, link, esc, pageId, paths, PRERENDERED, SITE, breadcrumbHtml, facadeHtml, canonical, entityLink, TYPE_ORDER, organHash } from '../site/site.js';
 import { relatedForAnatomy, relatedCountForAnatomy, referencesHtml, editorialHtml } from '../site/entity.js';
 import { locatorFigure } from '../site/locator.js';
-import { applyMeta, seoTitle, metaDescription, webPageNode } from '../site/seo.js';
+import { applyMeta, seoTitle, metaDescription, webPageNode, absolute } from '../site/seo.js';
 renderHeader('anatomy'); renderFooter();
 if (!PRERENDERED) {
   const [data, clinical] = await Promise.all([loadData(), loadClinical()]); const { atlas, content, terms, locator } = data;
@@ -29,7 +29,8 @@ if (!PRERENDERED) {
   const sentences = (t) => !!t && art.intro.replace(/\s+/g, ' ').startsWith(t);        // whole sentences of the intro, not a clause cut out of a long one
   const lead = art ? metaDescription(art.intro, 138) : '';
   const whole = art ? metaDescription(art.intro, 160, template) : '';
-  const description = art ? (modelled && sentences(lead) && lead.length >= 60 && lead.length <= 140 ? `${lead} Explore it in 3D.` : sentences(whole) && whole.length >= 70 ? whole : template) : `${o.name}: ${o.summary}`;
+  // an article may carry its own snippet (`metaDescription`, 70 to 160 characters, checked by the compiler): used when the opening sentence is too long for the rule above
+  const description = art ? (art.metaDescription || (modelled && sentences(lead) && lead.length >= 60 && lead.length <= 140 ? `${lead} Explore it in 3D.` : sentences(whole) && whole.length >= 70 ? whole : template)) : `${o.name}: ${o.summary}`;
   const crumbs = [{ name: 'Home', href: link.home() }, { name: 'Anatomy', href: link.page('anatomy') }, { name: sys ? sys.name : o.system, href: link.systemPage(o.system) }, { name: o.name }];
   const topics = clinical.organs?.[o.id] || {};
   const node = { '@type': 'AnatomicalStructure', '@id': canonical(path) + '#entity', name: o.name, url: canonical(path), description: metaDescription(art ? art.intro : o.summary, 300), ...(o.aliases?.length ? { alternateName: o.aliases } : {}),
@@ -40,6 +41,12 @@ if (!PRERENDERED) {
     jsonld: [webPageNode({ path, title, description: metaDescription(description), entityId: canonical(path) + '#entity', updated: o.updated, references: art?.references }), node] });
   const single = structs.length === 1 ? content.structures[structs[0].id] : null;
   const locFig = locatorFigure(locator, [{ id: o.id, name: o.name, color: sys?.color }]);
+  // "use this preview": HTML that shows the page's 3D preview image with a link back and the licence credit the 3D data requires (CC BY 4.0)
+  const shareHtml = hash && modelled ? (() => {
+    const page = canonical(path), img = absolute(link.preview(hash)), nm = o.name.toLowerCase();
+    const code = `<a href="${page}"><img src="${img}" alt="3D model of the ${nm}, from Anatomy Nexus" width="600" height="315" loading="lazy"></a>\n<p>3D model of the ${nm} by <a href="${page}">Anatomy Nexus</a>. Geometry: BodyParts3D \u00a9 DBCLS and, for female structures, the NIH Human Reference Atlas, both <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.</p>`;
+    return `<section class="share"><details><summary>Use this 3D preview on your site</summary><p class="small muted">Copy the HTML to show the preview with a link back to this page. The 3D data is licensed CC BY 4.0, so keep the credit line.</p><textarea class="share-code" rows="8" readonly spellcheck="false" aria-label="HTML for the ${esc(nm)} preview">${esc(code)}</textarea><p><button type="button" class="btn" data-copy>Copy the HTML</button> <span class="small muted" role="status" aria-live="polite"></span></p></details></section>`;
+  })() : '';
   main.innerHTML = `
     ${breadcrumbHtml(crumbs)}
     <div class="eyebrow">Anatomy · <a href="${link.systemPage(o.system)}">${esc(sys ? sys.name : o.system)}</a>${region ? ` · <a href="${link.region(region.id)}">${esc(region.name)}</a>` : ''}</div>
@@ -74,8 +81,15 @@ if (!PRERENDERED) {
         ${relatedForAnatomy('organs', o.id, clinical, `Related topics · ${relatedCountForAnatomy('organs', o.id, clinical)}`) || `<section><h2>Related topics</h2><p class="muted small">No physiology, condition, test or procedure pages mention the ${esc(o.name.toLowerCase())} yet. <a href="${link.search(o.name)}">Search the site.</a></p></section>`}
         ${relTerms.length ? `<section><h2>Terms to know</h2><div class="chips">${relTerms.map(t => `<a class="chip" href="${link.term(t.id)}" title="${esc(t.definition)}">${esc(t.term)}</a>`).join('')}</div></section>` : ''}
         ${others.length ? `<section><h2>Also in this system</h2><div class="chips">${others.map(x => `<a class="chip" href="${link.organPage(x.id)}">${esc(x.name)}</a>`).join('')}</div></section>` : ''}
+        ${shareHtml}
         ${referencesHtml(art?.references)}
         ${editorialHtml({ updated: o.updated, references: art?.references || [] })}
       </aside>
     </div>`;
 }
+// the copy button of the "use this preview" box works on the prerendered HTML and on a client-rendered page alike
+document.addEventListener('click', async (ev) => {
+  const b = ev.target.closest && ev.target.closest('[data-copy]'); if (!b) return;
+  const box = b.closest('.share'); const ta = box && box.querySelector('.share-code'); const st = box && box.querySelector('[role="status"]'); if (!ta) return;
+  try { await navigator.clipboard.writeText(ta.value); if (st) st.textContent = 'Copied.'; } catch { ta.focus(); ta.select(); if (st) st.textContent = 'Press Ctrl+C to copy.'; }
+});

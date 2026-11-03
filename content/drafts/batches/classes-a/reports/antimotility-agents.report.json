@@ -1,0 +1,105 @@
+{
+ "id": "antimotility-agents",
+ "searchesUsed": 5,
+ "counts": {
+  "supported": 8,
+  "textbook": 0,
+  "unsupported": 2,
+  "wrong": 0,
+  "unsafe": 0,
+  "unchecked": 0
+ },
+ "claims": [
+  {
+   "id": "c01",
+   "where": "summary[2]",
+   "classification": "supported",
+   "evidence": "Common questions page: anti-motility medicine, slows food through the gut, body draws in more water, poos get firmer and less often. The About page excerpt did not carry this text, so the cited URL should be the common-questions page.",
+   "url": "https://www.nhs.uk/medicines/loperamide/common-questions-about-loperamide/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c02",
+   "where": "summary[3]",
+   "classification": "supported",
+   "evidence": "About page: if bought over the counter, do not take for more than 48 hours without speaking to a doctor (number not used in the site sentence).",
+   "url": "https://www.nhs.uk/medicines/loperamide/about-loperamide/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c03",
+   "where": "mechanism[1]",
+   "classification": "supported",
+   "evidence": "Common questions page: body can draw in more water from the intestines as food slows. Cite common-questions page rather than About.",
+   "url": "https://www.nhs.uk/medicines/loperamide/common-questions-about-loperamide/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c04",
+   "where": "classEffects[0]",
+   "classification": "unsupported",
+   "evidence": "Side effects page lists constipation, feeling sick and headaches as common (more than 1 in 100). 'Commonest' implies a ranking the page does not make.",
+   "url": "https://www.nhs.uk/medicines/loperamide/side-effects-of-loperamide/",
+   "action": "edited",
+   "newSentence": "Constipation, headache and feeling sick are common side effects, according to the NHS."
+  },
+  {
+   "id": "c05",
+   "where": "classEffects[1]",
+   "classification": "supported",
+   "evidence": "NHS: loperamide can cause dizziness, tiredness or sleepiness; alcohol can make dizziness and sleepiness more likely.",
+   "url": "https://www.nhs.uk/medicines/loperamide/side-effects-of-loperamide/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c06",
+   "where": "cautions[4]",
+   "classification": "unsupported",
+   "evidence": "NHS About page says taking too much can cause serious heart problems; that statement is on the About page, not the side-effects page, and the draft sentence omitted it. The 'call 999 or go to A&E' action wording was not in retrieved NHS text; the 999/NHS 111/Samaritans routes are site signposting and are retained as a description.",
+   "url": "https://www.nhs.uk/medicines/loperamide/about-loperamide/",
+   "action": "edited",
+   "newSentence": "The NHS says taking too much loperamide can cause serious heart problems. If too much has been taken, 999 or A&E is the route for urgent help; if it was taken on purpose, NHS 111 and Samaritans on 116 123 (free, any time) can also help."
+  },
+  {
+   "id": "c07",
+   "where": "cautions[5]",
+   "classification": "supported",
+   "evidence": "MedlinePlus: children under 2 should not receive loperamide because of serious breathing and heart problems; labelled US source in the sentence. FDA safety communication agrees. Search noted the page may not be the latest revision.",
+   "url": "https://medlineplus.gov/druginfo/meds/a682280.html",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c08",
+   "where": "cautions[6]",
+   "classification": "supported",
+   "evidence": "MedlinePlus: tell doctor if prolonged QT interval, slow or irregular heartbeat, or low blood potassium.",
+   "url": "https://medlineplus.gov/druginfo/meds/a682280.html",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c09",
+   "where": "cautions[7]",
+   "classification": "supported",
+   "evidence": "NHS: serious allergic reaction (anaphylaxis) to loperamide happens rarely but is possible; call 999 emergency guidance present.",
+   "url": "https://www.nhs.uk/medicines/loperamide/side-effects-of-loperamide/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c10",
+   "where": "cautions[8]",
+   "classification": "supported",
+   "evidence": "NHS: if dizziness, tiredness or sleepiness, do not drive, cycle or use machinery until feeling better. 'Or tools' was not in the retrieved text, so removed.",
+   "url": "https://www.nhs.uk/medicines/loperamide/side-effects-of-loperamide/",
+   "action": "edited",
+   "newSentence": "The NHS advises not driving, cycling or using machinery if loperamide causes dizziness, tiredness or sleepiness."
+  }
+ ],
+ "notes": "Corrected counts: 8 supported (c10 trimmed 'or tools'), 2 unsupported (c04, c06). Citation URLs for summary[2] and mechanism[1] should be the common-questions page; cautions[4] should cite the About page for the heart statement. MedlinePlus page may not be latest revision."
+}

@@ -241,7 +241,9 @@ def validate_cross(types, products, errors, queues):
         # a variant shares a stem with the ingredient name or with one of its synonyms (an INN spelling such as
         # 'fludeoxyglucose (18F)' for 'Fluorodeoxyglucose F-18' is recorded as an alias, so it is the same ingredient)
         stems = {norm(x).split(" ")[0][:5] for x in [m["name"], *(m.get("aliases") or [])] if len(norm(x).split(" ")[0]) >= 5}
-        for v in m.get("ingredientVariants") or []:
+        # a page that stands for a combination product (`combinationProduct: true`, the combined pill) lists the ingredients of its
+        # products, which share no stem with the page's name: they are deliberate, not spellings of one ingredient
+        for v in ([] if m.get("combinationProduct") else m.get("ingredientVariants") or []):
             if not any(st in norm(v) for st in stems): queues["possible_active_ingredient_error"].append({"entity": where, "detail": f"ingredient variant '{v}' does not contain the ingredient name '{m['name']}'"})
         cls = (m.get("links") or {}).get("drugClass", [None])[0]
         listed_in = member_of.get(norm(m["name"]), set())

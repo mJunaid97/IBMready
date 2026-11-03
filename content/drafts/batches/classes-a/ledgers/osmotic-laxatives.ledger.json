@@ -1,0 +1,98 @@
+{
+ "id": "osmotic-laxatives",
+ "pass": 1,
+ "items": [
+  {
+   "where": "summary[2]",
+   "sentence": "The NHS says they can take a few days to work.",
+   "basis": "excerpt",
+   "urls": [
+    "https://www.nhs.uk/medicines/laxatives/"
+   ],
+   "note": "search summary NHS laxatives: 2 to 3 days"
+  },
+  {
+   "where": "summary[3]",
+   "sentence": "Lactulose is described by the NHS as a laxative medicine to treat constipation.",
+   "basis": "excerpt",
+   "urls": [
+    "https://www.nhs.uk/medicines/lactulose/"
+   ],
+   "note": "NHS title"
+  },
+  {
+   "where": "mechanism[1]",
+   "sentence": "StatPearls says lactulose is hardly absorbed by the gut, so its effects stay within the bowel.",
+   "basis": "excerpt",
+   "urls": [
+    "https://www.ncbi.nlm.nih.gov/books/NBK536930/"
+   ],
+   "note": "search summary StatPearls"
+  },
+  {
+   "where": "mechanism[2]",
+   "sentence": "Macrogol is not broken down in the body when taken by mouth; it hydrates hard stools, adds to their volume and triggers the reflex to pass them.",
+   "basis": "excerpt",
+   "urls": [
+    "https://www.nhs.uk/medicines/macrogol/"
+   ],
+   "note": "search summary; page attribution uncertain (pharmacology source)"
+  },
+  {
+   "where": "classEffects[0]",
+   "sentence": "Stomach ache, bloating, wind, feeling or being sick and diarrhoea are listed by the NHS for macrogol and lactulose.",
+   "basis": "excerpt",
+   "urls": [
+    "https://www.nhs.uk/medicines/macrogol/",
+    "https://www.nhs.uk/medicines/lactulose/side-effects-of-lactulose/"
+   ],
+   "note": "NHS pages"
+  },
+  {
+   "where": "classEffects[1]",
+   "sentence": "Diarrhoea is particularly common with lactulose at higher amounts, and the NHS says reducing the amount may help.",
+   "basis": "excerpt",
+   "urls": [
+    "https://www.nhs.uk/medicines/lactulose/side-effects-of-lactulose/"
+   ],
+   "note": "NHS lactulose side effects"
+  },
+  {
+   "where": "cautions[4]",
+   "sentence": "The NHS lists muscle cramps or weakness, an irregular heartbeat and serious allergic reactions as uncommon side effects of lactulose; a serious allergic reaction needs a 999 call, and the other symptoms NHS 111 or the GP the same day.",
+   "basis": "excerpt",
+   "urls": [
+    "https://www.nhs.uk/medicines/lactulose/side-effects-of-lactulose/"
+   ],
+   "note": "NHS lactulose side effects; routes are site signposting"
+  },
+  {
+   "where": "cautions[5]",
+   "sentence": "StatPearls says frequent diarrhoea from taking too much lactulose for too long can lower blood potassium.",
+   "basis": "excerpt",
+   "urls": [
+    "https://www.ncbi.nlm.nih.gov/books/NBK536930/"
+   ],
+   "note": "search summary"
+  },
+  {
+   "where": "cautions[6]",
+   "sentence": "The NHS says it is important to drink plenty of fluid when taking macrogol, to avoid dehydration.",
+   "basis": "excerpt",
+   "urls": [
+    "https://www.nhs.uk/medicines/macrogol/"
+   ],
+   "note": "search summary; page attribution uncertain"
+  },
+  {
+   "where": "cautions[7]",
+   "sentence": "The NHS says lactulose is given to younger children only on a doctor's recommendation, and macrogol to younger children only if prescribed.",
+   "basis": "excerpt",
+   "urls": [
+    "https://www.nhs.uk/medicines/lactulose/who-can-and-cannot-take-lactulose/",
+    "https://www.nhs.uk/medicines/macrogol/"
+   ],
+   "note": "search summary NHS"
+  }
+ ]
+}

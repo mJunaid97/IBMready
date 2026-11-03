@@ -1,5 +1,30 @@
 # Changelog
 
+## v1.10.4 — 2026-11-03
+
+Every actionable item left in the review queues is cleared, the shoulder joint is written, and the visuals that were not built before are in.
+
+- Shoulder Anatomy: the shoulder-girdle page covers the shoulder (glenohumeral) joint, the rotator cuff, the deltoid and the upper humerus as well as the clavicle and scapula (10 sections, about 1,800 words;
+  "shoulder anatomy" is searched about 39,000 times a month and the old page answered only "shoulder bones"). Written from retrieved NHS, StatPearls and OpenStax text, checked in three passes (the third
+  corrected four sentences, three of them urgent-care wording that named no route); the 3D page now highlights the humeri and the four rotator cuff muscles on each side.
+- Test cut-offs: the twelve test pages that quoted numbers without a sourced record now carry 47 sourced threshold records between them (UK guidance first, each with its country and source). Figures no
+  retrieved page gave were put into words: the 5.6 mmol/L impaired-fasting-glucose bound was the American value (WHO gives 6.1, NICE 5.5) and the page now says so; "double every two days", "20-25 IU/L", the 5-20 mg/L
+  "mildly raised" CRP band and the ESR "over 100" are gone as numbers. The COPD condition page says "post-bronchodilator" like the spirometry page.
+- UK availability notes for ten medicines (naproxen, esomeprazole, fexofenadine, sumatriptan, loperamide, lactulose, sildenafil, tadalafil, aciclovir, fluconazole): each record says what is sold without a prescription
+  and what is not. MHRA moved Nexium Control tablets to general sale in 2015, so esomeprazole gains an over-the-counter record.
+- Review queues: possible_active_ingredient_error, class_mapping_conflict, test_reference_range_risk, regulatory_status_conflict and sparse_public_page are empty (the combined pill is marked a combination product; amoxicillin's class text names
+  the penicillins). What remains needs a clinician (688 pages not yet clinically reviewed, the quarantined amlodipine record, the CPR and choking re-check) or is a backlog (catalogued test concepts without a page).
+- Ten thin drug-class pages deepened (triptans, 5-HT3 antagonists, dopamine-antagonist antiemetics, antimotility agents, osmotic laxatives, benzodiazepines, Z-drugs, nitroimidazoles, alpha blockers, 5-alpha reductase inhibitors):
+  summary, mechanism, class effects and cautions written from retrieved NHS, MedlinePlus, StatPearls and NICE text and checked in two passes (33 sentences reworded to what the sources say); four to twelve references each;
+  the protected safety fields (interactions, warnings, duplication rule) are unchanged.
+- First aid: the CPR and choking notices say what the 2025 Resuscitation Council UK edition changes (call 999 for any unresponsive person without first confirming abnormal breathing; updated choking advice). The sequences are untouched.
+- Anatomy snippets: 21 organ pages whose first sentence was too long for the answer-first rule (knee, foot, skull and pelvis among them) have a hand-written search description (`metaDescription`, checked by the compiler), and so
+  does Shoulder.
+- Visuals: **threshold bands** (the sourced thresholds of NT-proBNP, HbA1c, eGFR, CRP and urine ACR as one strip in order of value, above the table that holds their sources); **step flow** (the numbered steps of procedures
+  and first aid are joined by a line); **"Use this 3D preview on your site"** on every modelled organ page (HTML with a link back and the CC BY 4.0 credit the 3D data requires, with a copy button). Tables of four or more
+  columns keep their words whole and scroll inside their wrapper on a phone instead of being cut into letters.
+- Smoke test: threshold bands on the NT-proBNP page, the preview box on the heart page.
+
 ## v1.10.3 — 2026-11-03
 
 SEO and speed: a page-by-page audit of the production build (836 pages, Lighthouse on seven templates, structured data, sitemaps, headers, internal links, Ahrefs)

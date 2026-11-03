@@ -100,16 +100,26 @@ Counts are the sessions' own, per item report; a few reports are approximate (th
 * **178 low-severity editorial findings** (numbers in prose, tags that point at a neighbouring organ, wording nuances) are
   queued in `editorial-qa/*.json` with `status: open`.
 
-## Why the second pass stopped at seven articles, and how to continue
+## Anatomy articles, test thresholds, availability notes (3 November 2026)
 
-Web search allows 200 calls per turn, shared by every agent, and a second pass costs 25 to 30 searches per article; this round
-used the allowance on the seven articles whose search volume is highest. The page fetch tool cannot reach the publishers from the
-cloud sandbox (`openstax.org`, `nhs.uk`, `ncbi.nlm.nih.gov` and similar fail to resolve), and fetching is not limited per turn.
-**Allowing those hosts in the environment's network settings is the single change that would let the rest be checked page by
-page instead of through search summaries.**
+Since this file was first written, v1.10.1 wrote and source-checked the last eleven anatomy articles (every one of the 48 organ pages is now an article) and v1.10.4 added:
 
-Order of work, by what people search (docs/seo/keyword-research.md): foot, shoulder girdle, penis, prostate, gallbladder, rib cage,
-spleen; then pituitary, thymus, ureters, uterine ligaments (the last three have a first-pass draft, the rest none).
+* **The shoulder joint and rotator cuff** (batch `shoulder`, `content/drafts/batches/shoulder/`): the shoulder-girdle article now covers the glenohumeral joint, the rotator cuff, the deltoid
+  and the upper humerus, and the page is titled *Shoulder Anatomy*. First pass 45 ledger entries; second pass by a separate subagent (supported 29, textbook 5, unsupported 11, wrong 0, unsafe 0; the
+  eleven were reworded to what the retrieved text says); a third adversarial check of the 50 new or changed sentences was run before merging (see `docs/verification/shoulder-2026-11/`).
+* **Twelve test cut-offs** (batches `thresholds-a` and `thresholds-b`): see `content/drafts/thresholds/README.md`. Second pass: supported 98, textbook 3, unsupported 5 (removed or reworded), wrong 2 (corrected), unsafe 0.
+* **UK availability notes** for ten medicines (naproxen, esomeprazole, fexofenadine, sumatriptan, loperamide, lactulose, sildenafil, tadalafil, aciclovir, fluconazole): each UK regulatory record
+  now says what is sold without a prescription and what is not, written from NHS and MHRA text and re-checked by a separate subagent (`docs/verification/regulatory-notes-2026-11/`). One finding changed the
+  data: MHRA moved Nexium Control tablets to general sale in 2015, so esomeprazole gained an `otc` record.
+* **Ten thin drug-class pages** (batches `classes-a` and `classes-b`, `content/drafts/batches/classes-a|b/`): triptans, 5-HT3 receptor antagonists, dopamine-antagonist antiemetics, antimotility agents, osmotic laxatives, benzodiazepines, Z-drugs,
+  nitroimidazoles, alpha blockers and 5-alpha reductase inhibitors now carry a full summary, mechanism, class effects and cautions (about 1,800 to 3,300 characters each) and four to twelve references; the protected clinical fields
+  (`classInteractions`, `classWarnings`, `duplicationRule`, members, links) were not touched. Second pass, by separate subagents: supported 71, textbook 7, unsupported 33 (reworded to what the retrieved text says), wrong 2, unsafe 0.
+  The batch reports list what a clinician should look at (for example that no NHS page could be fetched, a 2004 NICE appraisal where newer guidance exists, and US-only MedlinePlus statements, which the pages label as US).
+* **First aid**: the CPR and choking pages still follow the 2021 Resuscitation Council UK edition and show the interim notice; the notice now names what the 2025 edition changes (call 999 for any
+  unresponsive person without first confirming abnormal breathing; updated choking advice). The sequences themselves were not touched: that needs the full 2025 text and a clinician's approval.
+
+The page fetch tool still cannot reach the publishers from the cloud sandbox (`openstax.org`, `nhs.uk`, `ncbi.nlm.nih.gov`, `resus.org.uk` fail to resolve), so every check runs through search summaries.
+**Allowing those hosts in the environment's network settings is the single change that would let pages be checked page by page.**
 
 ## Tools
 

@@ -55,7 +55,7 @@ const paras = (arr) => (arr || []).map(para).join('');
 const list = (arr, cls = 'plain') => arr && arr.length ? `<ul class="${cls}">${arr.map(x => `<li>${esc(x)}</li>`).join('')}</ul>` : '';
 const section = (title, html, id) => html ? `<h2${id ? ` id="${id}"` : ''}>${esc(title)}</h2>${html}` : '';
 const kv = (rows, [h1, h2]) => rows && rows.length ? `<div class="table-wrap"><table class="kv"><thead><tr><th scope="col">${esc(h1)}</th><th scope="col">${esc(h2)}</th></tr></thead><tbody>${rows.map(([a, b]) => `<tr><th scope="row">${a}</th><td>${b}</td></tr>`).join('')}</tbody></table></div>` : '';
-const table = (heads, rows, cls = 'kv grid-table') => rows && rows.length ? `<div class="table-wrap"><table class="${cls}"><thead><tr>${heads.map(h => `<th scope="col">${esc(h)}</th>`).join('')}</tr></thead><tbody>${rows.map(r => `<tr>${r.map((c, i) => i === 0 ? `<th scope="row">${c}</th>` : `<td>${c}</td>`).join('')}</tr>`).join('')}</tbody></table></div>` : '';
+const table = (heads, rows, cls = 'kv grid-table') => rows && rows.length ? `<div class="table-wrap"><table class="${heads.length >= 4 ? cls + ' wide' : cls}"><thead><tr>${heads.map(h => `<th scope="col">${esc(h)}</th>`).join('')}</tr></thead><tbody>${rows.map(r => `<tr>${r.map((c, i) => i === 0 ? `<th scope="row">${c}</th>` : `<td>${c}</td>`).join('')}</tr>`).join('')}</tbody></table></div>` : '';
 const causes = (arr) => arr && arr.length ? arr.map(c => `<div class="cause"><b>${esc(c.name)}</b><span class="muted">${esc(c.note)}</span></div>`).join('') : '';
 const trim = (s, n = 150) => { s = String(s || ''); return s.length > n ? s.slice(0, n).replace(/\s+\S*$/, '') + '…' : s; };
 export const lead = (e) => e.summary || e.what || e.definition || e.overview || '';
@@ -160,6 +160,21 @@ export function editorialHtml({ updated, references = [], reviewed, kind = 'page
 
 // ------------------------------------------------------------ clinical blocks (spec: Clinical Content Depth)
 const quickBox = (rows) => `<dl class="quick">${rows.filter(([, v]) => v).map(([k, v]) => `<div><dt>${esc(k)}</dt><dd>${v}</dd></div>`).join('')}</dl>`;
+/** Threshold bands: the sourced threshold records of one scale (named by the test's `thresholdScales`) as a strip in the order the
+ *  scale lists them. Every word on it comes from the records; the strip groups them and adds no figure or claim. Equal-width, so it
+ *  is not to scale (the caption says so), and the full records with their country and source follow in the table. */
+export function bandsHtml(e) {
+  const strips = [];
+  for (const sc of e.thresholdScales || []) {
+    const rows = (sc.bands || []).map(n => (e.thresholds || []).find(t => t.name === n)).filter(Boolean);
+    if (rows.length < 2) continue;
+    // bands that share a prefix before a colon ("Suspected lower respiratory tract infection: antibiotics not routinely offered") show only what differs
+    const heads = rows.map(t => t.name.split(': ')[0]); const strip = rows.every(t => t.name.includes(': ')) && heads.every(h => h === heads[0]);
+    const label = (t) => strip ? t.name.slice(t.name.indexOf(': ') + 2).replace(/^./, c => c.toUpperCase()) : t.name;
+    strips.push(`<figure class="bands"><figcaption>${esc(sc.title)}</figcaption><ol class="band-strip">${rows.map((t, i) => `<li class="band band-${Math.min(i, 4)}"><span class="band-name">${esc(label(t))}</span><span class="band-value">${esc(String(t.value))} <span class="band-unit">${esc(t.unit)}</span></span></li>`).join('')}</ol></figure>`);
+  }
+  return strips.length ? strips.join('') + '<p class="small muted">Bands are in order of value and not drawn to scale. Each threshold, its country and its source are in the table below.</p>' : '';
+}
 function pathwayHtml(steps) {
   if (!steps || !steps.length) return '';
   const node = (s) => { const l = s.link; if (!l) return `<span>${esc(s.label)}</span>`; const href = l.type === 'organs' ? link.organPage(l.id) : l.type === 'systems' ? link.systemPage(l.id) : l.type === 'terms' ? link.term(l.id) : entityLink(l.type, l.id); return `<a href="${href}">${esc(s.label)}</a>`; };
@@ -341,7 +356,7 @@ const T = {
       ${section('Do I need to prepare?', para(e.preparation), 'preparation')}
       ${section('What do the results generally mean?', kv((e.interpretation || []).map(i => [esc(i.finding), esc(i.meaning)]), ['Finding', 'What it may indicate'])
         + `<div class="callout info"><b>${esc(RANGE_POLICY[e.rangePolicy] || 'Reference range policy')}.</b> ${esc(e.rangeNote || 'Reference ranges vary by laboratory and testing method. Interpret your result using the range supplied by the laboratory that performed the test.')}</div>`
-        + (thr.length ? `<h3>Guideline thresholds</h3>${table(['Threshold', 'Value', 'Unit', 'Applies to', 'Country · source'], thr)}<p class="small muted">Clinical decision thresholds come from the named guideline and country; they are not laboratory reference intervals, and they change when guidance changes.</p>` : ''), 'results')}
+        + (thr.length ? `<h3>Guideline thresholds</h3>${bandsHtml(e)}${table(['Threshold', 'Value', 'Unit', 'Applies to', 'Country · source'], thr)}<p class="small muted">Clinical decision thresholds come from the named guideline and country; they are not laboratory reference intervals, and they change when guidance changes.</p>` : ''), 'results')}
       ${section('What can affect the result?', list(e.factors) + (e.medicinesNote ? `<p><b>Medicines.</b> ${esc(e.medicinesNote)}</p>` : ''), 'factors')}
       ${section('What can the test not tell you?', list(e.cannotTell) + para(e.limitations), 'limits')}
       ${(e.links?.related?.length || e.links?.imaging?.length) ? section('Other tests commonly used with it', inlineChips(clinical, 'tests', e.links?.related) + inlineChips(clinical, 'imaging', e.links?.imaging), 'with') : ''}${extras}`;
