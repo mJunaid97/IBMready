@@ -29,9 +29,9 @@ test('every severity state of the data maps to a display tier', () => {
 test('resolve: generic name, brand, alias, product and named substance', () => {
   eq(E.resolve('amlodipine').id, 'amlodipine'); eq(E.resolve('Norvasc').id, 'amlodipine'); eq(E.resolve('norvasc').kind, 'medication');
   eq(E.resolve('acetaminophen').id, 'paracetamol'); eq(E.resolve('co-codamol').kind, 'product'); eq(E.resolve('Solpadeine Max').id, 'co-codamol');
-  eq(E.resolve('simvastatin').kind, 'substance'); eq(E.resolve('cyclosporine').id, 'ciclosporin'); eq(E.resolve('lithium').kind, 'substance');
+  eq(E.resolve('simvastatin').kind, 'medication'); eq(E.resolve('simvastatin').id, 'simvastatin'); eq(E.resolve('cyclosporine').id, 'ciclosporin'); eq(E.resolve('lithium').kind, 'substance');
   assert(E.resolve('no-such-medicine-xyz') === null, 'unknown token resolves to null');
-  assert(E.resolve('codeine').kind === 'substance', 'codeine is a named substance (opioid), not the morphine page');
+  assert(E.resolve('codeine').kind === 'medication' && E.resolve('codeine').id === 'codeine', 'codeine resolves to its own page, not the morphine page');
   assert(E.resolve('citalopram').kind === 'medication' && E.resolve('citalopram').id === 'citalopram', 'citalopram resolves to its own page, not the sertraline page');
   assert(E.resolve('erythromycin').kind === 'substance', 'erythromycin is a named substance (macrolide), not the clarithromycin page');
 });
