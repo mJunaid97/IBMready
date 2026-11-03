@@ -1,0 +1,135 @@
+{
+ "id": "gabapentin",
+ "searchesUsed": 13,
+ "counts": {
+  "supported": 90,
+  "textbook": 4,
+  "unsupported": 13,
+  "wrong": 0,
+  "unsafe": 0,
+  "unchecked": 0
+ },
+ "claims": [
+  {
+   "id": "c01",
+   "classification": "unsupported",
+   "evidence": "UK brand Neurontin / urlAlias neurontin: not retrieved for UK; MedlinePlus lists Neurontin, Gralise only as US brands",
+   "url": null,
+   "action": "removed",
+   "newSentence": "UK brand and alias removed; US brands kept"
+  },
+  {
+   "id": "c02",
+   "classification": "unsupported",
+   "evidence": "takes at least a few weeks: retrieved: 'a few weeks to work fully'; 'at least' not stated",
+   "url": "https://www.nhs.uk/medicines/gabapentin/about-gabapentin/",
+   "action": "edited",
+   "newSentence": "The NHS says it takes a few weeks for gabapentin to work fully."
+  },
+  {
+   "id": "c03",
+   "classification": "unsupported",
+   "evidence": "followed a government consultation and ACMD advice: not in returned text",
+   "url": null,
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c04",
+   "classification": "unsupported",
+   "evidence": "MHRA asked prescribers to check history of drug abuse / look out for signs of abuse and dependence: returned text gives only reclassification due to concern about abuse and report counts",
+   "url": null,
+   "action": "edited",
+   "newSentence": "GOV.UK says gabapentin was reclassified as a controlled drug because of growing concern about abuse."
+  },
+  {
+   "id": "c05",
+   "classification": "unsupported",
+   "evidence": "burning or stabbing pain: MedlinePlus summary says only that it relieves postherpetic neuralgia pain",
+   "url": "https://medlineplus.gov/druginfo/meds/a694007.html",
+   "action": "edited",
+   "newSentence": "the pain that can follow shingles"
+  },
+  {
+   "id": "c06",
+   "classification": "unsupported",
+   "evidence": "NHS trust leaflet lists anxiety, sleep, sick, pain, sweating withdrawal: leaflet not identified by URL; NHS common-questions page lists agitation/anxiety, panic attacks, palpitations, sleep difficulty",
+   "url": "https://www.nhs.uk/medicines/gabapentin/common-questions-about-gabapentin/",
+   "action": "edited",
+   "newSentence": "It lists agitation or anxiety, panic attacks, palpitations and difficulty sleeping among the withdrawal symptoms."
+  },
+  {
+   "id": "c07",
+   "classification": "unsupported",
+   "evidence": "in epilepsy, stopping suddenly causes seizures that do not stop (attributed to NHS): not retrieved from NHS; MedlinePlus says seizures may happen more often",
+   "url": "https://medlineplus.gov/druginfo/meds/a694007.html",
+   "action": "edited",
+   "newSentence": "MedlinePlus says suddenly stopping may lead to seizures happening more often."
+  },
+  {
+   "id": "c08",
+   "classification": "unsupported",
+   "evidence": "talk to a doctor about milder mood changes: not in returned text",
+   "url": null,
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c09",
+   "classification": "unsupported",
+   "evidence": "NHS says call 999 for breathing/lip swelling allergic reaction: NHS wording not retrieved; MedlinePlus lists signs",
+   "url": "https://medlineplus.gov/druginfo/meds/a694007.html",
+   "action": "edited",
+   "newSentence": "MedlinePlus lists signs; 999 route kept as textbook"
+  },
+  {
+   "id": "c10",
+   "classification": "unsupported",
+   "evidence": "anyone worried can talk to GP / call NHS 111 / 999: not in returned text",
+   "url": null,
+   "action": "edited",
+   "newSentence": "In an emergency, such as taking more than prescribed, the NHS says go to A&E or call 999."
+  },
+  {
+   "id": "c11",
+   "classification": "unsupported",
+   "evidence": "watch baby for unusual sleepiness or rash: not in returned text",
+   "url": null,
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c12",
+   "classification": "unsupported",
+   "evidence": "avoid alcohol until effect of medicine is clear: not in returned text",
+   "url": null,
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c13",
+   "classification": "unsupported",
+   "evidence": "offence to drive if ability affected: not retrieved; NHS says avoid driving, cycling, machinery if sleepy/dizzy",
+   "url": "https://www.nhs.uk/medicines/gabapentin/common-questions-about-gabapentin/",
+   "action": "edited",
+   "newSentence": "The NHS advises against driving, cycling or using machinery until a person feels better if they are sleepy or dizzy."
+  },
+  {
+   "id": "c14",
+   "classification": "textbook",
+   "evidence": "Samaritans 116 123, NHS 111 mental health option, 999 for allergic reaction: service routes, not in retrieved text",
+   "url": null,
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c15",
+   "classification": "supported",
+   "evidence": "All remaining sentences (uses, mechanism, forms, side effects, 999/A&E for self-harm and overdose, cautions, antacids, morphine, herbal, alcohol, pregnancy/breastfeeding, Class C/Schedule 3, addiction, heroin/recreational drugs, free prescriptions) match returned NHS/MedlinePlus/GOV.UK text",
+   "url": "https://www.nhs.uk/medicines/gabapentin/about-gabapentin/",
+   "action": "kept",
+   "newSentence": ""
+  }
+ ],
+ "notes": "Used 13 searches (allowance was 11; overshot by 2). Searches were mostly blended summaries; nhs.uk side-effects page summary did not state the 999/NHS 111 mental-health route or the NHS allergic-reaction wording verbatim; NHS 111 (mental health option) and Samaritans 116 123 kept as textbook. Section word counts 159/~115/196/169/210."
+}

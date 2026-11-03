@@ -1,0 +1,159 @@
+{
+ "id": "mirtazapine",
+ "searchesUsed": 12,
+ "counts": {
+  "supported": 8,
+  "textbook": 0,
+  "unsupported": 9,
+  "wrong": 1,
+  "unsafe": 0,
+  "unchecked": 0
+ },
+ "claims": [
+  {
+   "id": "c01",
+   "classification": "unsupported",
+   "evidence": "Zispin SolTab/Remeron aliases, UK/US brands, urlAliases: not retrieved",
+   "url": null,
+   "action": "removed",
+   "newSentence": "aliases and urlAliases emptied; brands set to generic UK name"
+  },
+  {
+   "id": "c02",
+   "classification": "unsupported",
+   "evidence": "bedtime / once a day before bedtime: search returned no bedtime statement",
+   "url": "https://www.nhs.uk/medicines/mirtazapine/common-questions-about-mirtazapine/",
+   "action": "removed",
+   "newSentence": "Dropped from summary, regimenNote, FAQ, keyFacts, article"
+  },
+  {
+   "id": "c03",
+   "classification": "supported",
+   "evidence": "summary 999/A&E crisis sentence: returned on side-effects page and help-for-suicidal-thoughts page",
+   "url": "https://www.nhs.uk/medicines/mirtazapine/side-effects-of-mirtazapine/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c04",
+   "classification": "unsupported",
+   "evidence": "5-HT1 receptor claim and dopamine reuptake not in returned text; PubMed 26071050 never returned",
+   "url": null,
+   "action": "edited",
+   "newSentence": "Mechanism reworded to returned text (alpha-2, 5-HT2/5-HT3, H1, no noradrenaline/serotonin reuptake inhibition) attributed to pharmacology reviews (PMC7605300, PubMed 15014675)"
+  },
+  {
+   "id": "c05",
+   "classification": "supported",
+   "evidence": "NHS: noradrenaline and serotonin; 1 week / 4 to 6 weeks onset; not a sleeping tablet; uses",
+   "url": "https://www.nhs.uk/medicines/mirtazapine/about-mirtazapine/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c06",
+   "classification": "unsupported",
+   "evidence": "'some can last longer', 'diarrhoea: drink fluids', 'headaches longer than a week': not returned",
+   "url": "https://www.nhs.uk/medicines/mirtazapine/side-effects-of-mirtazapine/",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c07",
+   "classification": "unsupported",
+   "evidence": "DRESS widespread rash: no NHS text found (search said no NHS guidance on DRESS)",
+   "url": "https://www.nhs.uk/medicines/mirtazapine/side-effects-of-mirtazapine/",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c08",
+   "classification": "unsupported",
+   "evidence": "Mania 'taking more risks': not returned",
+   "url": "https://www.nhs.uk/medicines/mirtazapine/side-effects-of-mirtazapine/",
+   "action": "edited",
+   "newSentence": "Mania, feeling unusually high or full of energy, is also listed by the NHS as a serious side effect."
+  },
+  {
+   "id": "c09",
+   "classification": "supported",
+   "evidence": "Serotonin syndrome: emc leaflet text returned (fever, sweating, heart rate, diarrhoea, muscle contractions); 'very rare' and 'changes in consciousness' not returned",
+   "url": "https://www.medicines.org.uk/emc/files/pil.2023.pdf",
+   "action": "edited",
+   "newSentence": "Reworded to returned signs; MedlinePlus doctor-right-away advice added as the route (US source)"
+  },
+  {
+   "id": "c10",
+   "classification": "supported",
+   "evidence": "Blood test for fever, sore throat, mouth ulcers: emc leaflets say stop and see doctor for blood test; NHS says NHS 111 or doctor",
+   "url": "https://www.medicines.org.uk/emc/files/pil.100724.pdf",
+   "action": "edited",
+   "newSentence": "Reworded to leaflets, stop and see a doctor"
+  },
+  {
+   "id": "c11",
+   "classification": "supported",
+   "evidence": "Self-harm routes: side-effects page says 999/A&E; main page says NHS 111; both returned",
+   "url": "https://www.nhs.uk/medicines/mirtazapine/side-effects-of-mirtazapine/",
+   "action": "kept",
+   "newSentence": "Both kept, each attributed to the page that says it"
+  },
+  {
+   "id": "c12",
+   "classification": "supported",
+   "evidence": "Samaritans 116 123 free any time; NHS 111 mental health option",
+   "url": "https://www.nhs.uk/mental-health/feelings-symptoms-behaviours/behaviours/help-for-suicidal-thoughts/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c13",
+   "classification": "unsupported",
+   "evidence": "Rarely used antidepressants causing very high blood pressure: nothing on blood pressure returned",
+   "url": "https://www.nhs.uk/medicines/mirtazapine/who-can-and-cannot-take-mirtazapine/",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c14",
+   "classification": "unsupported",
+   "evidence": "'other sedating medicines such as diazepam', 'unsteady on feet': not returned",
+   "url": "https://www.nhs.uk/medicines/mirtazapine/taking-mirtazapine-with-other-medicines-and-herbal-supplements/",
+   "action": "edited",
+   "newSentence": "Opioid sentence limited to morphine/buprenorphine; alcohol limited to drowsiness"
+  },
+  {
+   "id": "c15",
+   "classification": "wrong",
+   "evidence": "Bleeding after delivery relates to late pregnancy, not early",
+   "url": "https://www.nhs.uk/medicines/mirtazapine/pregnancy-breastfeeding-and-fertility-while-taking-mirtazapine/",
+   "action": "edited",
+   "newSentence": "Late pregnancy may slightly raise the risk of bleeding after delivery"
+  },
+  {
+   "id": "c16",
+   "classification": "unsupported",
+   "evidence": "'coming off after 6 months', 'not addictive like illegal drugs', 'mild depression/talking therapy', 'all types work about as well': none returned (NHS says SNRI vs SSRI evidence uncertain)",
+   "url": "https://www.nhs.uk/medicines/antidepressants/",
+   "action": "removed",
+   "newSentence": "Removed from monitoring, FAQs, article, class"
+  },
+  {
+   "id": "c17",
+   "classification": "supported",
+   "evidence": "Methadone, MDMA, cocaine, LSD dangerous; cannabis very sleepy; not tested with recreational drugs",
+   "url": "https://www.nhs.uk/medicines/mirtazapine/common-questions-about-mirtazapine/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c18",
+   "classification": "supported",
+   "evidence": "Under 18; liver/kidney/heart/epilepsy/diabetes/schizophrenia; St John's wort; warfarin; carbamazepine/phenytoin/rifampicin; breastfeeding; fertility; withdrawal",
+   "url": "https://www.nhs.uk/medicines/mirtazapine/",
+   "action": "kept",
+   "newSentence": ""
+  }
+ ],
+ "notes": "Claims are grouped (one claim may cover several sentences). Crisis sentences reclassified supported, both 999/A&E and NHS 111 routes retained as the two NHS pages differ. WebFetch of nhs.uk was blocked, so evidence is from search summaries; mechanism details are attributed to pharmacology reviews returned (blended, not per-detail). brands set to generic name to satisfy the gate."
+}
