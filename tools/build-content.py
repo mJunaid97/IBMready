@@ -44,7 +44,7 @@ from urllib.parse import urlsplit
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import taxonomy as TX   # vocabularies, taxonomies, terminology, drug-name rules, edges, review queues (tools/taxonomy.py)
 
-ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+ROOT = os.environ.get("ANX_ROOT") or os.path.dirname(os.path.dirname(os.path.abspath(__file__)))     # ANX_ROOT: a scratch tree (tools/verification/check_batch.py validates a batch there)
 C = os.path.join(ROOT, "content")
 OUT = os.path.join(ROOT, "data", "content")
 SLUG = re.compile(r"^[a-z0-9]+(?:-[a-z0-9]+)*$")
@@ -137,11 +137,23 @@ TYPES = [
     ("targets",      "targets.json",      "targets",     "Drug targets",  "Biological target", "targets",     "target.html"),
     ("first-aid",    "first-aid.json",    "topics",      "First aid",     "First aid topic",  "first-aid",    "topic.html"),
     ("health",       "health.json",       "topics",      "Health",        "Health topic",     "health",       "topic.html"),
+    ("blog",         "blog.json",         "posts",       "Blog",          "Article",          "blog",         "post.html"),     # content/blog/<slug>.json, one file per post
 ]
+BLOG_ABOUT = ("Guides to common conditions, medicines and tests, and plain-English summaries of the latest announcements from official health bodies "
+              "such as the NHS, NICE, UKHSA and the World Health Organization. Every article cites its sources and links to the full pages on this site.")
+def load_blog():
+    """The blog is a directory of one-file-per-post (content/blog/<slug>.json), so many authors can add posts without touching a shared file."""
+    d = os.path.join(C, "blog"); posts = {}; upd = ""
+    if os.path.isdir(d):
+        for fn in sorted(os.listdir(d)):
+            if not fn.endswith(".json") or fn.startswith("_"): continue
+            posts[fn[:-5]] = json.load(open(os.path.join(d, fn), encoding="utf-8"))
+            upd = max(upd, str(posts[fn[:-5]].get("updated") or ""))
+    return {"_about": BLOG_ABOUT, "_updated": upd or "2026-11-03", "_priority": [], "posts": posts}
 # link field on an entity -> the type it points at. `drugClass` is a single id on a medication; everything else is a list.
 LINK_FIELDS = {"conditions": "conditions", "symptoms": "symptoms", "associated": "symptoms", "tests": "tests", "imaging": "imaging",
                "procedures": "procedures", "medications": "medications", "drugClass": "drug-classes", "drugClasses": "drug-classes", "physiology": "physiology", "terms": "terms",
-               "firstAid": "first-aid", "health": "health", "biomarkers": "biomarkers", "targets": "targets", "related": SAME}
+               "firstAid": "first-aid", "health": "health", "blog": "blog", "biomarkers": "biomarkers", "targets": "targets", "related": SAME}
 # ---- clinical layer vocabularies (spec: Clinical Content Depth). Values outside these lists fail the build.
 REVIEW_STATUSES = ["draft", "source-ingested", "source-verified", "editorial-review", "clinical-review", "approved", "published", "needs-review", "archived"]
 INDEXABLE_STATUSES = ["source-verified", "editorial-review", "clinical-review", "approved", "published"]
@@ -263,6 +275,57 @@ def text_size(e):
         return 0
     return sum(walk(v) for k, v in e.items() if k not in skip)
 
+DATE_RE = re.compile(r"^\d{4}-\d{2}-\d{2}$")
+def validate_article_block(where, art, errors):
+    """The optional `article` block of an entity: 3 to 10 sections of real prose, up to 8 questions with answers, optional key facts."""
+    if not isinstance(art, dict): errors.append(f"{where}: article must be an object"); return
+    secs = art.get("sections")
+    if not isinstance(secs, list) or not (3 <= len(secs) <= 10): errors.append(f"{where}: article.sections must be a list of 3 to 10 sections"); secs = []
+    for i, sec in enumerate(secs):
+        if not isinstance(sec, dict) or set(sec) - {"heading", "body"}: errors.append(f"{where}: article.sections[{i}] needs exactly heading and body"); continue
+        if not (isinstance(sec.get("heading"), str) and 6 <= len(sec["heading"]) <= 100): errors.append(f"{where}: article.sections[{i}].heading must be 6 to 100 characters")
+        if not (isinstance(sec.get("body"), str) and len(sec["body"]) >= 200): errors.append(f"{where}: article.sections[{i}].body must be at least 200 characters of prose")
+        elif re.search(r"\*\*|^#|\n- |\[.*\]\(.*\)", sec["body"]): errors.append(f"{where}: article.sections[{i}].body must be plain paragraphs (blank line between), no markdown")
+    faqs = art.get("faqs") or []
+    if not isinstance(faqs, list) or len(faqs) > 8: errors.append(f"{where}: article.faqs must be a list of at most 8 questions")
+    for i, f in enumerate(faqs if isinstance(faqs, list) else []):
+        if not (isinstance(f, dict) and set(f) == {"q", "a"} and isinstance(f["q"], str) and isinstance(f["a"], str)): errors.append(f"{where}: article.faqs[{i}] needs exactly q and a"); continue
+        if not f["q"].strip().endswith("?"): errors.append(f"{where}: article.faqs[{i}].q must be a question ending in '?'")
+        if len(f["a"]) < 60: errors.append(f"{where}: article.faqs[{i}].a is under 60 characters")
+    for i, k in enumerate(art.get("keyFacts") or []):
+        if not (isinstance(k, dict) and set(k) == {"label", "value"} and k["label"] and k["value"]): errors.append(f"{where}: article.keyFacts[{i}] needs exactly label and value")
+    extra = set(art) - {"sections", "faqs", "keyFacts"}
+    if extra: errors.append(f"{where}: article has unsupported keys {sorted(extra)}")
+
+def validate_blog(eid, e, errors):
+    where = f"blog/{eid}"
+    if e.get("kind") not in ("news", "guide"): errors.append(f"{where}: kind must be 'news' or 'guide'")
+    # the page <title> is "<name> | Anatomy Nexus" and must fit 65 characters; a longer on-page headline goes in `headline`
+    if not (15 <= len(e.get("name", "")) <= 49): errors.append(f"{where}: name is the page title and must be 15 to 49 characters (it is {len(e.get('name', ''))}); put a longer on-page headline in `headline`")
+    if e.get("headline") and not (15 <= len(e["headline"]) <= 120): errors.append(f"{where}: headline must be 15 to 120 characters")
+    for f in ("published", "updated"):
+        if not DATE_RE.match(str(e.get(f, ""))): errors.append(f"{where}: {f} must be a YYYY-MM-DD date")
+    summ = e.get("summary", "")
+    if not (60 <= len(summ) <= 400): errors.append(f"{where}: summary must be 60 to 400 characters (it is {len(summ)})")
+    kp = e.get("keyPoints") or []
+    if not (2 <= len(kp) <= 6) or not all(isinstance(x, str) and 15 <= len(x) <= 260 for x in kp): errors.append(f"{where}: keyPoints must be 2 to 6 sentences of 15 to 260 characters")
+    body = e.get("body")
+    if not isinstance(body, list) or not body: errors.append(f"{where}: body must be a list of sections {{heading, body}}"); body = []
+    for i, b in enumerate(body):
+        if not (isinstance(b, dict) and set(b) == {"heading", "body"} and b["heading"] and len(b["body"]) >= 120): errors.append(f"{where}: body[{i}] needs a heading and at least 120 characters of prose")
+        elif re.search(r"\*\*|^#|\n- |\[.*\]\(.*\)", b["body"]): errors.append(f"{where}: body[{i}] must be plain paragraphs, no markdown")
+    if e.get("kind") == "news":
+        s = e.get("source") or {}
+        for f in ("publisher", "title", "url", "published"):
+            if not s.get(f): errors.append(f"{where}: a news brief needs source.{f} (the announcement it summarises)")
+        if s.get("url") and not re.match(r"^https://[^\s\"'<>]+$", s["url"]): errors.append(f"{where}: source.url must be an https address")
+        if s.get("published") and not DATE_RE.match(str(s["published"])): errors.append(f"{where}: source.published must be a YYYY-MM-DD date")
+        refs = list(e.get("references") or [])
+        if s.get("url") and s["url"] not in [r.get("url") for r in refs if isinstance(r, dict)]:
+            e["references"] = [{"title": s.get("title", s["url"]), "url": s["url"]}] + refs      # the announcement is always the first reference
+    else:
+        if len(e.get("references") or []) < 2: errors.append(f"{where}: a guide needs at least two references")
+
 def quality_gate(e, require_clinical=False):
     """Indexability: a page must have a lead, real body text, at least one source, be connected to the graph, and carry an
     indexable review status (optionally: clinical review or later, for sites that require it before publishing)."""
@@ -274,7 +337,7 @@ def quality_gate(e, require_clinical=False):
     if text_size(e) < 600: reasons.append("body text under 600 characters")
     if len(e.get("references") or []) < 1: reasons.append("no references")
     groups = sum(1 for v in (e.get("links") or {}).values() if v) + sum(1 for v in (e.get("backlinks") or {}).values() if v)
-    if groups < 2: reasons.append("fewer than two relationship groups")
+    if groups < (1 if e.get("type") == "blog" else 2): reasons.append("fewer than two relationship groups" if e.get("type") != "blog" else "no relationship group")
     t = e.get("type")
     if t == "tests":   # §89: identity, purpose, what it measures, interpretation, limitations
         if not e.get("kind"): reasons.append("no test kind")
@@ -678,7 +741,7 @@ def compile_knowledge(atlas, out_organs, systems, terms):
     errors = []
     types = {}
     for key, fname, rootkey, name, singular, d, page in TYPES:
-        raw = load(fname, None)
+        raw = load_blog() if key == "blog" else load(fname, None)
         if raw is None: errors.append(f"{fname} missing"); continue
         items = raw if rootkey is None else raw.get(rootkey, {})
         meta = {"name": name, "singular": singular, "dir": d, "page": page, "about": raw.get("_about") or "", "updated": raw.get("_updated") or "",
@@ -706,6 +769,7 @@ def compile_knowledge(atlas, out_organs, systems, terms):
     types["physiology"]["meta"]["categories"] = list(sys_cats)
     types["drug-classes"]["meta"]["categories"] = list(sys_cats)
     types["health"]["meta"]["categories"] = [{"id": "lifestyle", "name": "Lifestyle"}]
+    types["blog"]["meta"]["categories"] = [{"id": "news", "name": "Health news"}, {"id": "guide", "name": "Guides"}]
     types["biomarkers"]["meta"]["categories"] = [{"id": c, "name": n} for c, n in (("blood", "Blood cells"), ("liver", "Liver"), ("kidney", "Kidney"), ("cardiac", "Heart"), ("lipids", "Lipids"), ("glucose", "Glucose"),
                                                                                   ("thyroid", "Thyroid"), ("hormone", "Other hormones"), ("inflammation", "Inflammation"), ("iron", "Iron & vitamins"), ("electrolytes", "Electrolytes"), ("other", "Other"))]
     types["targets"]["meta"]["categories"] = [{"id": k, "name": k.capitalize()} for k in TARGET_KINDS]
@@ -754,10 +818,15 @@ def compile_knowledge(atlas, out_organs, systems, terms):
             elif key == "imaging": e["category"] = e.get("radiation", "none")
             elif key in ("physiology", "drug-classes"): e["category"] = (syss[0] if syss else "")
             elif key == "health": e["category"] = "lifestyle"
+            elif key == "blog": e["category"] = e.get("kind", "guide")
             elif key == "biomarkers": e["category"] = e.get("category", "other")
             elif key == "targets": e["category"] = e.get("kind", "other")
             if "category" in e and e["category"] and e["category"] not in {c["id"] for c in T["meta"]["categories"]}:
                 errors.append(f"{key}/{eid}: unknown category '{e['category']}'")
+            # ---- blog posts: a guide or a news brief with a dated, cited announcement behind it
+            if key == "blog": validate_blog(eid, e, errors)
+            # ---- any page may carry an in-depth article block (sections, FAQs, key facts) on top of its structured fields
+            if e.get("article") is not None: validate_article_block(f"{key}/{eid}", e["article"], errors)
             # ---- links implied by structured clinical fields (a test's components, a medicine's monitoring plan and lab
             # effects) become typed links, so the graph and the backlinks include them without duplicating the ids by hand
             def imply(field, value):

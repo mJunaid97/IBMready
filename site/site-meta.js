@@ -56,6 +56,7 @@ export const SITE = {
     "biomarkers": 37,
     "targets": 24,
     "first-aid": 16,
-    "health": 9
+    "health": 9,
+    "blog": 0
   }
 };

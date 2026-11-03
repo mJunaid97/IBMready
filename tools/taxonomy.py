@@ -20,7 +20,7 @@ Implements the Comprehensive Clinical Tests & Medications specification on top o
 """
 import collections, json, os, re, unicodedata
 
-ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+ROOT = os.environ.get("ANX_ROOT") or os.path.dirname(os.path.dirname(os.path.abspath(__file__)))     # ANX_ROOT: scratch tree of tools/verification/check_batch.py
 C = os.path.join(ROOT, "content")
 
 def load(name, default=None):
