@@ -1,0 +1,583 @@
+{
+ "id": "epilepsy",
+ "searchesUsed": 13,
+ "counts": {
+  "supported": 42,
+  "textbook": 0,
+  "unsupported": 27,
+  "wrong": 0,
+  "unsafe": 2,
+  "unchecked": 0
+ },
+ "claims": [
+  {
+   "id": "c01",
+   "classification": "supported",
+   "evidence": "Epilepsy Action: seizures classed as focal (one part of brain) or generalised (both sides).",
+   "url": "https://www.epilepsy.org.uk/info/seizures/focal-seizures",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c02",
+   "classification": "supported",
+   "evidence": "Focal seizures: some people stay aware, for others awareness is affected; begins in one part of the brain.",
+   "url": "https://www.epilepsy.org.uk/info/seizures/focal-seizures",
+   "action": "edited",
+   "newSentence": "Focal seizures start in one part of the brain, and some people stay aware during them while for others awareness is affected."
+  },
+  {
+   "id": "c03",
+   "classification": "unsupported",
+   "evidence": "Generalised = start in or very quickly affect both sides; 'does not usually stay conscious' not stated in retrieved text.",
+   "url": "https://www.epilepsy.org.uk/info/seizures/focal-seizures",
+   "action": "edited",
+   "newSentence": "Generalised seizures start in, or very quickly affect, both sides of the brain."
+  },
+  {
+   "id": "c04",
+   "classification": "supported",
+   "evidence": "NHS inform: focal aware seizures are sometimes called warnings or auras.",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/brain-nerves-and-spinal-cord/epilepsy/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c05",
+   "classification": "supported",
+   "evidence": "Epilepsy Action: an aura is a type of focal seizure.",
+   "url": "https://www.epilepsy.org.uk/info/seizures/focal-seizures",
+   "action": "edited",
+   "newSentence": "Epilepsy Action says an aura is a type of focal seizure in its own right."
+  },
+  {
+   "id": "c06",
+   "classification": "unsupported",
+   "evidence": "NHS symptoms page names rising stomach feeling, unusual smells/tastes, tingling; 'hard to describe' and 'events happened before' not retrieved.",
+   "url": "https://www.nhs.uk/conditions/epilepsy/symptoms/",
+   "action": "edited",
+   "newSentence": "Examples include a rising feeling in the tummy, unusual smells or tastes, and tingling in the arms and legs."
+  },
+  {
+   "id": "c07",
+   "classification": "supported",
+   "evidence": "Tonic phase: stiffening, loss of consciousness, usually falls.",
+   "url": "https://www.nhs.uk/conditions/epilepsy/symptoms/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c08",
+   "classification": "supported",
+   "evidence": "Clonic phase: shaking/jerking follows stiffening.",
+   "url": "https://www.epilepsy.org.uk/info/seizures/tonic-clonic",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c09",
+   "classification": "supported",
+   "evidence": "Epilepsy Action: focal seizure can spread to both sides; focal to bilateral tonic-clonic.",
+   "url": "https://www.epilepsy.org.uk/info/seizures/tonic-clonic",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c10",
+   "classification": "supported",
+   "evidence": "Epilepsy Action: if the person did not go to hospital at the time, see a GP as soon as possible.",
+   "url": "https://www.epilepsy.org.uk/info/diagnosis",
+   "action": "edited",
+   "newSentence": "Epilepsy Action advises seeing a GP as soon as possible after a suspected seizure, even if the person did not go to hospital at the time."
+  },
+  {
+   "id": "c11",
+   "classification": "unsupported",
+   "evidence": "NICE: refer urgently so a specialist is involved early; QS211: seen within 2 weeks of presentation. 'Children over 2' and 'of the GP making the referral' not retrieved.",
+   "url": "https://www.nice.org.uk/guidance/qs211/chapter/Quality-statement-1-Referral-and-assessment-after-first-seizure",
+   "action": "edited",
+   "newSentence": "NICE says people with a suspected first seizure should be referred urgently so that a specialist is involved early in diagnosing epilepsy, and its quality standard aims for them to be seen within 2 weeks."
+  },
+  {
+   "id": "c12",
+   "classification": "unsupported",
+   "evidence": "'GP may arrange tests while you wait' not retrieved; retrieved: NICE says 12-lead ECG after first suspected seizure; Epilepsy Action ECG to rule out heart problem.",
+   "url": "https://www.nice.org.uk/guidance/ng217/chapter/1-Diagnosis-and-assessment-of-epilepsy",
+   "action": "edited",
+   "newSentence": "Epilepsy Action says anyone with a suspected seizure should have an ECG, a heart tracing, to rule out a heart problem."
+  },
+  {
+   "id": "c13",
+   "classification": "supported",
+   "evidence": "Summary of Epilepsy Action diagnosis page: no single test confirms epilepsy (blended summary; moderate confidence).",
+   "url": "https://www.epilepsy.org.uk/info/diagnosis",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c14",
+   "classification": "supported",
+   "evidence": "NICE: if EEG requested after first seizure, do as soon as possible.",
+   "url": "https://www.nice.org.uk/guidance/ng217/chapter/1-Diagnosis-and-assessment-of-epilepsy",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c15",
+   "classification": "unsupported",
+   "evidence": "Normal EEG not excluding epilepsy supported (NICE); 'positive finding supports provisional diagnosis' not retrieved.",
+   "url": "https://www.nice.org.uk/guidance/ng217/chapter/1-Diagnosis-and-assessment-of-epilepsy",
+   "action": "edited",
+   "newSentence": "A normal EEG does not rule epilepsy out, because many people with epilepsy do not show abnormal activity between seizures."
+  },
+  {
+   "id": "c16",
+   "classification": "supported",
+   "evidence": "NICE: offer MRI to people diagnosed with epilepsy except IGE and SeLECTS.",
+   "url": "https://www.nice.org.uk/guidance/ng217/chapter/1-Diagnosis-and-assessment-of-epilepsy",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c17",
+   "classification": "unsupported",
+   "evidence": "Retrieved: one source says MRI cannot determine by itself whether someone has epilepsy, useful alongside other information; 'help clinician judge likely cause' overreach.",
+   "url": "https://www.epilepsy.org.uk/info/diagnosis",
+   "action": "edited",
+   "newSentence": "An MRI scan cannot decide on its own whether someone has epilepsy and is useful alongside other information."
+  },
+  {
+   "id": "c18",
+   "classification": "supported",
+   "evidence": "Epilepsy Action recommends a seizure diary and bringing it to appointments.",
+   "url": "https://www.epilepsy.org.uk/info/diagnosis",
+   "action": "edited",
+   "newSentence": "Epilepsy Action advises keeping a seizure diary and taking it to appointments."
+  },
+  {
+   "id": "c19",
+   "classification": "unsupported",
+   "evidence": "Referral to specialist epilepsy centre when unclear not retrieved.",
+   "url": "https://www.epilepsy.org.uk/info/diagnosis",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c20",
+   "classification": "supported",
+   "evidence": "NHS inform: diagnosis can still be made from the description of seizures even when tests show nothing (added sentence).",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/brain-nerves-and-spinal-cord/epilepsy/",
+   "action": "edited",
+   "newSentence": "NHS inform says a diagnosis can still be made from the person's description of their seizures even when tests show nothing."
+  },
+  {
+   "id": "c21",
+   "classification": "supported",
+   "evidence": "NHS England treatment page: medicine to prevent seizures (anti-seizure) is the main treatment.",
+   "url": "https://www.nhs.uk/conditions/epilepsy/treatment/",
+   "action": "edited",
+   "newSentence": "The NHS says medicine to prevent seizures, called anti-seizure medicine, is the main treatment for epilepsy."
+  },
+  {
+   "id": "c22",
+   "classification": "supported",
+   "evidence": "NHS 111 Wales: help control seizures in about 7 out of 10 people (NICE says about two-thirds); nhs.uk page itself lacked the figure.",
+   "url": "https://111.wales.nhs.uk/encyclopaedia/e/article/epilepsy/",
+   "action": "edited",
+   "newSentence": "NHS 111 Wales says these medicines help control seizures in about 7 out of 10 people."
+  },
+  {
+   "id": "c23",
+   "classification": "supported",
+   "evidence": "NHS England: medicines do not cure epilepsy but can stop seizures.",
+   "url": "https://www.nhs.uk/conditions/epilepsy/treatment/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c24",
+   "classification": "unsafe",
+   "evidence": "NHS inform: some ASMs reduce effectiveness of some contraception; 'combined pill and implants' not retrieved; 'worth raising with a doctor' is an instruction.",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/brain-nerves-and-spinal-cord/epilepsy/",
+   "action": "edited",
+   "newSentence": "NHS inform says some anti-seizure medicines can reduce how well some types of contraception work."
+  },
+  {
+   "id": "c25",
+   "classification": "supported",
+   "evidence": "Surgery considered only if medication not working; VNS when medicines failed.",
+   "url": "https://111.wales.nhs.uk/encyclopaedia/e/article/epilepsy/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c26",
+   "classification": "unsupported",
+   "evidence": "'Only a minority of people with hard-to-control epilepsy' not retrieved; NHS England says surgery is for rare cases.",
+   "url": "https://www.nhs.uk/conditions/epilepsy/treatment/",
+   "action": "edited",
+   "newSentence": "The NHS describes surgery as an option for rare cases."
+  },
+  {
+   "id": "c27",
+   "classification": "supported",
+   "evidence": "NICE evidence review: VNS for people whose seizures not controlled by ASMs and not suitable for surgery.",
+   "url": "https://www.nice.org.uk/guidance/ng217/evidence/14-vagus-nerve-stimulation-pdf-398366282777",
+   "action": "edited",
+   "newSentence": "NICE's evidence review describes vagus nerve stimulation as used for people whose seizures have not responded to anti-seizure medicines and who are not suitable for surgery."
+  },
+  {
+   "id": "c28",
+   "classification": "supported",
+   "evidence": "NHS: ketogenic diet high fat, low carbohydrate/protein, mainly used in children; Chelsea and Westminster: usually reserved for children who have not responded to medicines.",
+   "url": "https://www.chelwest.nhs.uk/services/childrens-services/childrens-medicine/ketogenic-diet-for-epilepsy-children",
+   "action": "edited",
+   "newSentence": "The ketogenic diet, which is high in fat and low in carbohydrate and protein, is mainly used in children, usually those who have not responded to medicines."
+  },
+  {
+   "id": "c29",
+   "classification": "supported",
+   "evidence": "NHS inform: for children only under supervision of an epilepsy specialist with a dietitian.",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/brain-nerves-and-spinal-cord/epilepsy/",
+   "action": "edited",
+   "newSentence": "NHS inform says it should only be used under the supervision of an epilepsy specialist with the help of a dietitian."
+  },
+  {
+   "id": "c30",
+   "classification": "supported",
+   "evidence": "Added: NHS England says discuss treatment with a specialist if there is a chance of becoming pregnant while taking epilepsy medicine.",
+   "url": "https://www.nhs.uk/conditions/epilepsy/treatment/",
+   "action": "edited",
+   "newSentence": "The NHS says it is very important to discuss treatment with a specialist if there is a chance of becoming pregnant while taking epilepsy medicine."
+  },
+  {
+   "id": "c31",
+   "classification": "unsupported",
+   "evidence": "NHS Healthier Together: cushion or gently hold the head; 'support gently' and 'not try to move them' not retrieved.",
+   "url": "https://www.healthiertogether.nhs.uk/child-under-12-years/seizure",
+   "action": "edited",
+   "newSentence": "NHS advice for a convulsive seizure is to cushion or gently hold the person's head to protect it from injury."
+  },
+  {
+   "id": "c32",
+   "classification": "unsupported",
+   "evidence": "Retrieved: do not restrain, do not put anything in mouth; 'unless in immediate danger' not retrieved.",
+   "url": "https://www.epilepsy.org.uk/app/uploads/2024/11/EPILEPSY-ACTION-CARE-FIRST-AID-LEAFLET-A4.pdf",
+   "action": "edited",
+   "newSentence": "The NHS also advises not restraining the person and not putting anything in their mouth."
+  },
+  {
+   "id": "c33",
+   "classification": "unsupported",
+   "evidence": "Retrieved: once jerking stops turn person onto side (recovery position); 'stay with them and note times' not retrieved.",
+   "url": "https://www.epilepsy.org.uk/app/uploads/2024/11/EPILEPSY-ACTION-CARE-FIRST-AID-LEAFLET-A4.pdf",
+   "action": "edited",
+   "newSentence": "Once the jerking stops, the advice is to turn the person onto their side in the recovery position."
+  },
+  {
+   "id": "c34",
+   "classification": "supported",
+   "evidence": "NHS symptoms page: call 999 if first time, longer than usual for them, or longer than 5 minutes if usual length not known.",
+   "url": "https://www.nhs.uk/conditions/epilepsy/symptoms/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c35",
+   "classification": "unsupported",
+   "evidence": "NHS: call 999 if does not recover as usual or has another seizure before recovering; serious injury/breathing problems (summary); 'full consciousness' wording not retrieved.",
+   "url": "https://www.nhs.uk/conditions/epilepsy/symptoms/",
+   "action": "edited",
+   "newSentence": "A 999 call is also advised if the person does not recover as usual, has another seizure before recovering, is seriously injured or has trouble breathing."
+  },
+  {
+   "id": "c36",
+   "classification": "unsupported",
+   "evidence": "CDC defines status epilepticus (over 5 minutes or back-to-back seizures); NHS inform says phone 999 immediately if suspected; draft attributed the definition to NHS inform.",
+   "url": "https://www.cdc.gov/epilepsy/health-safety-concerns/index.html",
+   "action": "edited",
+   "newSentence": "Status epilepticus, a seizure lasting more than 5 minutes or seizures back to back with no recovery in between, needs emergency treatment, and NHS inform says to phone 999 straight away if it is suspected."
+  },
+  {
+   "id": "c37",
+   "classification": "supported",
+   "evidence": "Added: Epilepsy Action first aid leaflet says clear the area of anything potentially harmful.",
+   "url": "https://www.epilepsy.org.uk/app/uploads/2024/11/EPILEPSY-ACTION-CARE-FIRST-AID-LEAFLET-A4.pdf",
+   "action": "edited",
+   "newSentence": "Epilepsy Action adds that anything potentially harmful nearby should be cleared."
+  },
+  {
+   "id": "c38",
+   "classification": "unsupported",
+   "evidence": "NHS 111 Wales suggests a seizure diary; triggers listed by Epilepsy Action/Epilepsy Society/CDC, not 'NHS suggests'; 'food' not retrieved (alcohol is).",
+   "url": "https://111.wales.nhs.uk/encyclopaedia/e/article/epilepsy/",
+   "action": "edited",
+   "newSentence": "NHS 111 Wales suggests keeping a seizure diary, noting when seizures happen and what the person was doing beforehand, to help work out triggers."
+  },
+  {
+   "id": "c39",
+   "classification": "unsupported",
+   "evidence": "Not 'Epilepsy Action' specifically; Epilepsy Society and NHS-linked guidance list lack of sleep, missed medicine, stress, alcohol; CDC lists period hormones.",
+   "url": "https://epilepsysociety.org.uk/about-epilepsy/epileptic-seizures/seizure-triggers/alcohol-drugs-and-epilepsy",
+   "action": "edited",
+   "newSentence": "Epilepsy charities and NHS guidance list lack of sleep, missing anti-seizure medicine, stress and alcohol among possible triggers, and the CDC lists hormonal changes with a period."
+  },
+  {
+   "id": "c40",
+   "classification": "unsupported",
+   "evidence": "Exercise, yoga and meditation as help: not found in any result.",
+   "url": "https://epilepsysociety.org.uk/about-epilepsy/epileptic-seizures/seizure-triggers/alcohol-drugs-and-epilepsy",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c41",
+   "classification": "unsupported",
+   "evidence": "GOV.UK: must stop driving and tell DVLA after any epileptic seizure; NHS wording not retrieved.",
+   "url": "https://www.gov.uk/epilepsy-and-driving",
+   "action": "edited",
+   "newSentence": "GOV.UK says a person must stop driving straight away after any epileptic seizure and tell the DVLA."
+  },
+  {
+   "id": "c42",
+   "classification": "supported",
+   "evidence": "GOV.UK: reapplying depends on seizure type and time seizure-free.",
+   "url": "https://www.gov.uk/epilepsy-and-driving",
+   "action": "edited",
+   "newSentence": "When driving can start again depends on the type of seizure and how long the person has been seizure-free."
+  },
+  {
+   "id": "c43",
+   "classification": "unsupported",
+   "evidence": "Contraception and pregnancy planning supported (NHS England); jobs not retrieved; swimming advice was child-specific.",
+   "url": "https://www.nhs.uk/conditions/epilepsy/treatment/",
+   "action": "edited",
+   "newSentence": "Epilepsy can also affect decisions about contraception and planning a pregnancy."
+  },
+  {
+   "id": "c44",
+   "classification": "unsupported",
+   "evidence": "NHS: 'An epileptic seizure usually stops by itself and does not cause any lasting problems'; 'for most people' not in source.",
+   "url": "https://111.wales.nhs.uk/encyclopaedia/e/article/epilepsy/",
+   "action": "edited",
+   "newSentence": "The NHS says an epileptic seizure usually stops by itself and does not cause any lasting problems."
+  },
+  {
+   "id": "c45",
+   "classification": "unsupported",
+   "evidence": "NHS: rarely a seizure lasts long or several without recovery (status epilepticus, urgent); small SUDEP risk; 'injury' as main risk not retrieved.",
+   "url": "https://111.wales.nhs.uk/encyclopaedia/e/article/epilepsy/",
+   "action": "edited",
+   "newSentence": "Rarely, a seizure can last a long time, or several can happen without recovery in between, which is called status epilepticus and is a medical emergency that needs a 999 call."
+  },
+  {
+   "id": "c46",
+   "classification": "supported",
+   "evidence": "NHS: small risk of SUDEP, but rare, and treatment can reduce risk.",
+   "url": "https://111.wales.nhs.uk/encyclopaedia/e/article/epilepsy/",
+   "action": "edited",
+   "newSentence": "There is also a small risk of sudden unexpected death in epilepsy (SUDEP). The NHS describes SUDEP as rare and says epilepsy treatment can reduce the risk."
+  },
+  {
+   "id": "c47",
+   "classification": "unsupported",
+   "evidence": "CDC lists uncontrolled or frequent seizures among SUDEP risk factors; 'which is why seizure control matters' is inference.",
+   "url": "https://www.cdc.gov/epilepsy/sudep/index.html",
+   "action": "edited",
+   "newSentence": "The CDC lists frequent or uncontrolled seizures among the factors linked to a higher risk."
+  },
+  {
+   "id": "c48",
+   "classification": "unsupported",
+   "evidence": "Epilepsy Action: not enough research to prove pillows reduce SUDEP risk (not 'no research evidence').",
+   "url": "https://www.epilepsy.org.uk/epilepsy-technology-guide/anti-suffocation-pillows",
+   "action": "edited",
+   "newSentence": "Epilepsy Action says there is not enough research to show that anti-suffocation pillows reduce the risk."
+  },
+  {
+   "id": "c49",
+   "classification": "supported",
+   "evidence": "Added: Epilepsy Action says 3 to 5 in 100 people with epilepsy have photosensitive seizures; worded as a small number.",
+   "url": "https://www.epilepsy.org.uk/info/seizure-triggers/photosensitive-epilepsy",
+   "action": "edited",
+   "newSentence": "Flashing lights trigger seizures in a small number of people."
+  },
+  {
+   "id": "c50",
+   "classification": "supported",
+   "evidence": "NHS: ASMs do not cure but can stop seizures.",
+   "url": "https://www.nhs.uk/conditions/epilepsy/treatment/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c51",
+   "classification": "supported",
+   "evidence": "NHS 111 Wales: about 7 out of 10.",
+   "url": "https://111.wales.nhs.uk/encyclopaedia/e/article/epilepsy/",
+   "action": "edited",
+   "newSentence": "NHS 111 Wales says they help control seizures in about 7 out of 10 people."
+  },
+  {
+   "id": "c52",
+   "classification": "supported",
+   "evidence": "Surgery, VNS, ketogenic diet retrieved as options when medicines fail; specialist supervision for diet.",
+   "url": "https://www.nice.org.uk/guidance/ng217/evidence/14-vagus-nerve-stimulation-pdf-398366282777",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c53",
+   "classification": "supported",
+   "evidence": "NICE: do not use EEG to exclude epilepsy.",
+   "url": "https://www.nice.org.uk/guidance/ng217/chapter/1-Diagnosis-and-assessment-of-epilepsy",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c54",
+   "classification": "supported",
+   "evidence": "As above.",
+   "url": "https://www.nice.org.uk/guidance/ng217/chapter/1-Diagnosis-and-assessment-of-epilepsy",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c55",
+   "classification": "unsupported",
+   "evidence": "'Positive result supports provisional diagnosis' not retrieved.",
+   "url": "https://www.nice.org.uk/guidance/ng217/chapter/1-Diagnosis-and-assessment-of-epilepsy",
+   "action": "edited",
+   "newSentence": "No single test can confirm epilepsy."
+  },
+  {
+   "id": "c56",
+   "classification": "supported",
+   "evidence": "NHS inform: diagnosis from description; MRI alongside other information.",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/brain-nerves-and-spinal-cord/epilepsy/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c57",
+   "classification": "unsupported",
+   "evidence": "GOV.UK, not NHS, retrieved.",
+   "url": "https://www.gov.uk/epilepsy-and-driving",
+   "action": "edited",
+   "newSentence": "GOV.UK says a person must stop driving straight away after any epileptic seizure and tell the DVLA."
+  },
+  {
+   "id": "c58",
+   "classification": "supported",
+   "evidence": "GOV.UK/Epilepsy Action: reapplying depends on seizure type and time since.",
+   "url": "https://www.gov.uk/epilepsy-and-driving",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c59",
+   "classification": "unsafe",
+   "evidence": "'Rules differ in other countries' not retrieved; 'should check' is an instruction.",
+   "url": "https://www.gov.uk/epilepsy-and-driving",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c60",
+   "classification": "supported",
+   "evidence": "Added: Epilepsy Action: exception for people already given permission to drive with their type of seizures.",
+   "url": "https://www.gov.uk/epilepsy-and-driving",
+   "action": "edited",
+   "newSentence": "The exception is for people who have already been given permission to drive with their type of seizures."
+  },
+  {
+   "id": "c61",
+   "classification": "unsupported",
+   "evidence": "NHS inform: seizures sometimes called warnings or auras because they can signal another seizure is coming; 'often' not stated.",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/brain-nerves-and-spinal-cord/epilepsy/",
+   "action": "edited",
+   "newSentence": "An aura is a warning that some people have before a seizure."
+  },
+  {
+   "id": "c62",
+   "classification": "supported",
+   "evidence": "Epilepsy Action: aura is a focal seizure.",
+   "url": "https://www.epilepsy.org.uk/info/seizures/focal-seizures",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c63",
+   "classification": "unsupported",
+   "evidence": "Only rising stomach feeling, smells/tastes, tingling retrieved.",
+   "url": "https://www.nhs.uk/conditions/epilepsy/symptoms/",
+   "action": "edited",
+   "newSentence": "Examples include a rising feeling in the tummy, unusual smells or tastes, and tingling in the arms and legs."
+  },
+  {
+   "id": "c64",
+   "classification": "supported",
+   "evidence": "NHS: 999 for first seizure, longer than usual, over 5 min if usual unknown.",
+   "url": "https://www.nhs.uk/conditions/epilepsy/symptoms/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c65",
+   "classification": "unsupported",
+   "evidence": "As c37 wording 'full consciousness' not retrieved.",
+   "url": "https://www.nhs.uk/conditions/epilepsy/symptoms/",
+   "action": "edited",
+   "newSentence": "It also advises calling if the person does not recover as usual, has another seizure before recovering, is seriously injured or has trouble breathing."
+  },
+  {
+   "id": "c66",
+   "classification": "supported",
+   "evidence": "EA: focal begins in one part of brain; generalised in or very quickly both sides.",
+   "url": "https://www.epilepsy.org.uk/info/seizures/focal-seizures",
+   "action": "edited",
+   "newSentence": "Focal seizures start in one part of the brain, while generalised seizures start in or very quickly affect both sides."
+  },
+  {
+   "id": "c67",
+   "classification": "supported",
+   "evidence": "NHS inform: warnings or auras.",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/brain-nerves-and-spinal-cord/epilepsy/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c68",
+   "classification": "supported",
+   "evidence": "As above.",
+   "url": "https://www.epilepsy.org.uk/info/diagnosis",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c69",
+   "classification": "supported",
+   "evidence": "NHS: main treatment; do not cure but can stop seizures.",
+   "url": "https://www.nhs.uk/conditions/epilepsy/treatment/",
+   "action": "edited",
+   "newSentence": "Anti-seizure medicines are the main treatment and do not cure epilepsy but can stop seizures happening."
+  },
+  {
+   "id": "c70",
+   "classification": "supported",
+   "evidence": "GOV.UK.",
+   "url": "https://www.gov.uk/epilepsy-and-driving",
+   "action": "edited",
+   "newSentence": "In the UK a person must stop driving straight away after any seizure and tell the DVLA."
+  },
+  {
+   "id": "c71",
+   "classification": "supported",
+   "evidence": "NHS symptoms page.",
+   "url": "https://www.nhs.uk/conditions/epilepsy/symptoms/",
+   "action": "kept",
+   "newSentence": ""
+  }
+ ],
+ "notes": "Claims in order of original draft per section then FAQs then key facts; added replacement sentences also listed (action edited, evidence says 'Added'). Search summaries blend pages, so some URL attributions are to the page named in the summary (e.g. no-single-test statement). Draft's nhs.uk first-aid page and ng217 URL were not returned verbatim; first-aid steps cited to Epilepsy Action leaflet and NHS Healthier Together. No textbook sentences used. Existing page fields to review: symptoms list (dizziness, weakness, headache, fatigue) is not what NHS lists for epilepsy; overview 'Most people become seizure-free on medication' vs NHS Wales about 7 in 10 and NICE about two-thirds; treatment text on laser ablation and valproate not re-checked."
+}

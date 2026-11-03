@@ -1,0 +1,663 @@
+{
+ "id": "hypothyroidism",
+ "searchesUsed": 13,
+ "counts": {
+  "supported": 56,
+  "textbook": 2,
+  "unsupported": 23,
+  "wrong": 0,
+  "unsafe": 0,
+  "unchecked": 0
+ },
+ "claims": [
+  {
+   "id": "c01",
+   "classification": "supported",
+   "evidence": "NIDDK: condition progresses gradually, people can go months or even years without noticing symptoms.",
+   "url": "https://www.niddk.nih.gov/health-information/endocrine-diseases/hypothyroidism",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c02",
+   "classification": "supported",
+   "evidence": "NIDDK says months or even years, not 'several years' specifically.",
+   "url": "https://www.niddk.nih.gov/health-information/endocrine-diseases/hypothyroidism",
+   "action": "edited",
+   "newSentence": "Because the changes build up gradually, some people go months or even years without noticing symptoms."
+  },
+  {
+   "id": "c03",
+   "classification": "supported",
+   "evidence": "NHS 111 Wales/NHS list feeling extremely tired, feeling cold more than usual, putting on weight, constipation.",
+   "url": "https://www.nhs.uk/conditions/underactive-thyroid-hypothyroidism/symptoms/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c04",
+   "classification": "unsupported",
+   "evidence": "Retrieved text supports croaky/hoarse voice (NHS) and heavy or irregular periods (NIDDK); poor concentration, low mood, dry skin and hair loss were not in the retrieved text.",
+   "url": "https://www.nhs.uk/conditions/underactive-thyroid-hypothyroidism/symptoms/",
+   "action": "edited",
+   "newSentence": "A croaky or hoarse voice is also described, and some women have heavy or irregular periods."
+  },
+  {
+   "id": "c05",
+   "classification": "supported",
+   "evidence": "[orig: (added) Symptoms often resemble other conditions.] NHS: symptoms often resemble those of other conditions, which can delay recognition.",
+   "url": "https://www.nhs.uk/conditions/underactive-thyroid-hypothyroidism/",
+   "action": "edited",
+   "newSentence": "Symptoms often resemble those of other conditions, which can delay recognition."
+  },
+  {
+   "id": "c06",
+   "classification": "unsupported",
+   "evidence": "Not stated in retrieved text.",
+   "url": "https://www.nhs.uk/conditions/underactive-thyroid-hypothyroidism/",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c07",
+   "classification": "supported",
+   "evidence": "NHS: only accurate way to find out is a thyroid function test; fatigue and weight gain are common and not necessarily thyroid.",
+   "url": "https://www.nhs.uk/conditions/underactive-thyroid-hypothyroidism/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c08",
+   "classification": "unsupported",
+   "evidence": "Lifelong and levothyroxine supported (NHS inform/NHS); 'common' not in retrieved text.",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/glands/underactive-thyroid/",
+   "action": "edited",
+   "newSentence": "The NHS describes an underactive thyroid as usually lifelong, and says it can be managed with medicine."
+  },
+  {
+   "id": "c09",
+   "classification": "unsupported",
+   "evidence": "Search found no source stating long-term stability; MedlinePlus text not retrieved.",
+   "url": "https://medlineplus.gov/lab-tests/tsh-thyroid-stimulating-hormone-test/",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c10",
+   "classification": "supported",
+   "evidence": "NHS sources: Hashimoto's most common cause in UK; NHS inform: most common autoimmune cause.",
+   "url": "https://www.nhs.uk/conditions/underactive-thyroid-hypothyroidism/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c11",
+   "classification": "supported",
+   "evidence": "Sources describe Hashimoto's as the immune system attacking the thyroid.",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/glands/underactive-thyroid/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c12",
+   "classification": "unsupported",
+   "evidence": "Search could not confirm what share of people with Hashimoto's develop hypothyroidism.",
+   "url": "https://www.niddk.nih.gov/health-information/endocrine-diseases/hashimotos-disease",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c13",
+   "classification": "supported",
+   "evidence": "NHS lists another thyroid condition such as thyroiditis.",
+   "url": "https://www.nhs.uk/conditions/underactive-thyroid-hypothyroidism/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c14",
+   "classification": "supported",
+   "evidence": "[orig: (added) Iodine deficiency.] NHS: not getting enough iodine in the diet is a cause, rare in the UK.",
+   "url": "https://www.nhs.uk/conditions/underactive-thyroid-hypothyroidism/",
+   "action": "edited",
+   "newSentence": "Not getting enough iodine in the diet can also be a cause, but the NHS says this is rare in the UK."
+  },
+  {
+   "id": "c15",
+   "classification": "supported",
+   "evidence": "NHS list.",
+   "url": "https://www.nhs.uk/conditions/underactive-thyroid-hypothyroidism/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c16",
+   "classification": "supported",
+   "evidence": "NHS list.",
+   "url": "https://www.nhs.uk/conditions/underactive-thyroid-hypothyroidism/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c17",
+   "classification": "unsupported",
+   "evidence": "NIDDK: 'if you receive radioactive iodine treatment, you probably will eventually develop hypothyroidism'; 'gradually' not retrieved.",
+   "url": "https://www.niddk.nih.gov/health-information/endocrine-diseases/hypothyroidism",
+   "action": "edited",
+   "newSentence": "The NIDDK says people who receive radioactive iodine treatment will probably eventually develop an underactive thyroid."
+  },
+  {
+   "id": "c18",
+   "classification": "supported",
+   "evidence": "NIDDK fact sheet names amiodarone, interferon alpha, lithium.",
+   "url": "https://www.niddk.nih.gov/-/media/Files/Endocrine-Diseases/Hypothyroidism_508.pdf",
+   "action": "edited",
+   "newSentence": "Certain medicines, including lithium, amiodarone and interferon alpha, have been linked to the condition."
+  },
+  {
+   "id": "c19",
+   "classification": "supported",
+   "evidence": "Congenital hypothyroidism reviews.",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11763606/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c20",
+   "classification": "unsupported",
+   "evidence": "NHS: GP may feel the neck for enlargement; family history not stated.",
+   "url": "https://www.nhs.uk/conditions/underactive-thyroid-hypothyroidism/",
+   "action": "edited",
+   "newSentence": "A GP may ask about symptoms and may feel the neck to check whether the thyroid is enlarged."
+  },
+  {
+   "id": "c21",
+   "classification": "supported",
+   "evidence": "MedlinePlus TSH test: no preparation needed; biotin can distort TSH results.",
+   "url": "https://medlineplus.gov/lab-tests/tsh-thyroid-stimulating-hormone-test/",
+   "action": "edited",
+   "newSentence": "The TSH blood test needs no special preparation, according to MedlinePlus."
+  },
+  {
+   "id": "c22",
+   "classification": "supported",
+   "evidence": "[orig: (added) biotin] MedlinePlus: biotin (vitamin B7) can distort TSH results.",
+   "url": "https://medlineplus.gov/lab-tests/tsh-thyroid-stimulating-hormone-test/",
+   "action": "edited",
+   "newSentence": "MedlinePlus also says biotin (vitamin B7) can distort TSH results."
+  },
+  {
+   "id": "c23",
+   "classification": "textbook",
+   "evidence": "Standard endocrinology fact; not retrieved verbatim.",
+   "url": "",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c24",
+   "classification": "supported",
+   "evidence": "NHS/NIDDK: high TSH with low T4 could mean an underactive thyroid.",
+   "url": "https://www.nhs.uk/conditions/underactive-thyroid-hypothyroidism/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c25",
+   "classification": "unsupported",
+   "evidence": "NIDDK: TPO antibody test positive in most people; Thyroid UK suggests TPO test; 'usually' not stated.",
+   "url": "https://www.niddk.nih.gov/health-information/endocrine-diseases/hashimotos-disease",
+   "action": "edited",
+   "newSentence": "When Hashimoto's disease is suspected, a blood test for thyroid peroxidase (TPO) antibodies can be used, and the NIDDK says it is positive in most people with the condition."
+  },
+  {
+   "id": "c26",
+   "classification": "supported",
+   "evidence": "Duplicate of the edited sentence above.",
+   "url": "https://www.niddk.nih.gov/health-information/endocrine-diseases/hashimotos-disease",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c27",
+   "classification": "supported",
+   "evidence": "NIDDK: ultrasound may follow if no antithyroid antibodies are found.",
+   "url": "https://www.niddk.nih.gov/health-information/endocrine-diseases/hashimotos-disease",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c28",
+   "classification": "unsupported",
+   "evidence": "Retrieved statement was NIDDK: additional testing usually unnecessary to confirm; not MedlinePlus.",
+   "url": "https://www.niddk.nih.gov/health-information/endocrine-diseases/hashimotos-disease",
+   "action": "edited",
+   "newSentence": "The NIDDK adds that further testing is usually unnecessary to confirm the diagnosis."
+  },
+  {
+   "id": "c29",
+   "classification": "supported",
+   "evidence": "[orig: (added) ultrasound other causes] NIDDK: ultrasound can also rule out other causes of an enlarged thyroid such as nodules.",
+   "url": "https://www.niddk.nih.gov/health-information/endocrine-diseases/hashimotos-disease",
+   "action": "edited",
+   "newSentence": "The NIDDK says ultrasound can also help rule out other causes of an enlarged thyroid, such as nodules."
+  },
+  {
+   "id": "c30",
+   "classification": "unsupported",
+   "evidence": "Not in retrieved text.",
+   "url": "",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c31",
+   "classification": "supported",
+   "evidence": "NHS: levothyroxine is the medicine for an underactive thyroid.",
+   "url": "https://www.nhs.uk/medicines/levothyroxine/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c32",
+   "classification": "unsupported",
+   "evidence": "'Identical' came only from a patent; NHS says it replaces the missing hormone.",
+   "url": "https://www.nhs.uk/conditions/thyroiditis/",
+   "action": "edited",
+   "newSentence": "Levothyroxine replaces the thyroid hormone the body is missing."
+  },
+  {
+   "id": "c33",
+   "classification": "supported",
+   "evidence": "NHS inform: you'll usually need to take levothyroxine for the rest of your life; 'to stop symptoms' not retrieved.",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/glands/underactive-thyroid/",
+   "action": "edited",
+   "newSentence": "NHS inform says people usually need to take it for the rest of their lives."
+  },
+  {
+   "id": "c34",
+   "classification": "supported",
+   "evidence": "NHS inform.",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/glands/underactive-thyroid/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c35",
+   "classification": "unsupported",
+   "evidence": "NHS inform: regular blood tests initially until correct dose; 'takes a while' not retrieved.",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/glands/underactive-thyroid/",
+   "action": "edited",
+   "newSentence": "Regular blood tests are used at the start until the right dose is found."
+  },
+  {
+   "id": "c36",
+   "classification": "supported",
+   "evidence": "NIDDK: test after starting and after each dose change.",
+   "url": "https://www.niddk.nih.gov/health-information/endocrine-diseases/hypothyroidism",
+   "action": "edited",
+   "newSentence": "A follow-up blood test is usually arranged after a dose is started or changed."
+  },
+  {
+   "id": "c37",
+   "classification": "unsupported",
+   "evidence": "NIDDK: most likely can be controlled with thyroid hormone medicine as long as recommended dose is taken as instructed; follow-up part not retrieved.",
+   "url": "https://www.niddk.nih.gov/health-information/endocrine-diseases/hypothyroidism",
+   "action": "edited",
+   "newSentence": "The NIDDK says the condition can most likely be controlled with thyroid hormone medicine as long as the recommended dose is taken as instructed."
+  },
+  {
+   "id": "c38",
+   "classification": "supported",
+   "evidence": "NIDDK: too much can cause serious problems such as atrial fibrillation or osteoporosis.",
+   "url": "https://www.niddk.nih.gov/health-information/endocrine-diseases/hypothyroidism",
+   "action": "edited",
+   "newSentence": "The NIDDK also warns that taking too much thyroid hormone medicine can cause serious problems, such as atrial fibrillation (an irregular heart rhythm) or osteoporosis (weak bones)."
+  },
+  {
+   "id": "c39",
+   "classification": "supported",
+   "evidence": "[orig: (added) wrong dose side effects] NHS: wrong dose can cause feeling sick, diarrhoea, headaches, sleep problems.",
+   "url": "https://www.nhs.uk/medicines/levothyroxine/",
+   "action": "edited",
+   "newSentence": "NHS guidance says the wrong dose can cause side effects such as feeling sick, diarrhoea, headaches or problems sleeping."
+  },
+  {
+   "id": "c40",
+   "classification": "supported",
+   "evidence": "NHS: tell your GP; further tests; dose likely to change.",
+   "url": "https://www.nhs.uk/conditions/underactive-thyroid-hypothyroidism/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c41",
+   "classification": "supported",
+   "evidence": "NHS: likely your dose will need to change.",
+   "url": "https://www.nhs.uk/conditions/underactive-thyroid-hypothyroidism/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c42",
+   "classification": "unsupported",
+   "evidence": "Not in retrieved text.",
+   "url": "",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c43",
+   "classification": "supported",
+   "evidence": "NHS lists high blood pressure (pre-eclampsia), birth defects, premature birth, miscarriage as complications.",
+   "url": "https://www.nhs.uk/conditions/underactive-thyroid-hypothyroidism/complications/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c44",
+   "classification": "unsupported",
+   "evidence": "Only a prescribing-information source (not an allowed publisher) said so; reviews uncertain.",
+   "url": "",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c45",
+   "classification": "supported",
+   "evidence": "Duplicate of section 2 statement; reworded below.",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11763606/",
+   "action": "edited",
+   "newSentence": "Congenital hypothyroidism, an underactive thyroid present from birth, often has subtle signs or none at birth."
+  },
+  {
+   "id": "c46",
+   "classification": "supported",
+   "evidence": "PMC reviews: manifestations often subtle or not present at birth; screening catches most cases.",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12371337/",
+   "action": "edited",
+   "newSentence": "This is why newborn screening matters."
+  },
+  {
+   "id": "c47",
+   "classification": "supported",
+   "evidence": "Review: growth and development return to normal with early and adequate treatment.",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12371337/",
+   "action": "edited",
+   "newSentence": "A clinical review reports that growth and development return to normal with early and adequate treatment."
+  },
+  {
+   "id": "c48",
+   "classification": "supported",
+   "evidence": "Transient CH described in reviews.",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11763606/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c49",
+   "classification": "unsupported",
+   "evidence": "Review: mild subclinical hearing deficits despite early treatment, hearing should be checked periodically; school progress not retrieved. (Search summary did not name which PMC page.)",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8382885/",
+   "action": "edited",
+   "newSentence": "Another review says some children treated early still have mild hearing deficits, so hearing should be checked periodically."
+  },
+  {
+   "id": "c50",
+   "classification": "supported",
+   "evidence": "NHS 111 Wales: not usually serious if you're having the right treatment.",
+   "url": "https://111.wales.nhs.uk/encyclopaedia/t/article/thyroid,underactive",
+   "action": "edited",
+   "newSentence": "NHS 111 Wales says an underactive thyroid is not usually serious if the right treatment is being given."
+  },
+  {
+   "id": "c51",
+   "classification": "unsupported",
+   "evidence": "NHS: untreated raises cardiovascular disease risk; NHS 111 Wales lists bone problems incl. osteoporosis; 'poorly controlled' not stated.",
+   "url": "https://www.nhs.uk/conditions/underactive-thyroid-hypothyroidism/complications/",
+   "action": "edited",
+   "newSentence": "Untreated, it raises the risk of cardiovascular disease, according to the NHS, and NHS 111 Wales lists bone problems including osteoporosis."
+  },
+  {
+   "id": "c52",
+   "classification": "supported",
+   "evidence": "NHS sources list goitre and pregnancy problems.",
+   "url": "https://www.nhs.uk/conditions/underactive-thyroid-hypothyroidism/complications/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c53",
+   "classification": "supported",
+   "evidence": "NHS: very rare, life-threatening, emergency hospital treatment.",
+   "url": "https://www.nhs.uk/conditions/underactive-thyroid-hypothyroidism/complications/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c54",
+   "classification": "unsupported",
+   "evidence": "Drowsy/confused not retrieved; 999 route is the site's signposting rule.",
+   "url": "https://www.nhs.uk/conditions/underactive-thyroid-hypothyroidism/complications/",
+   "action": "edited",
+   "newSentence": "The route to care for myxoedema coma is to call 999."
+  },
+  {
+   "id": "c55",
+   "classification": "unsupported",
+   "evidence": "Not stated in retrieved text; instructional.",
+   "url": "",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c56",
+   "classification": "supported",
+   "evidence": "[orig: (added) heart reversible] Cardiology review: heart dysfunction typically reversible with hormone supplementation.",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10575566/",
+   "action": "edited",
+   "newSentence": "A cardiology review describes the heart effects as typically reversible with hormone replacement."
+  },
+  {
+   "id": "c57",
+   "classification": "supported",
+   "evidence": "[orig: (added) IV treatment] NHS: treatment usually thyroid hormone replacement given directly into a vein.",
+   "url": "https://www.nhs.uk/conditions/underactive-thyroid-hypothyroidism/complications/",
+   "action": "edited",
+   "newSentence": "The NHS says treatment usually involves thyroid hormone replacement medicine given directly into a vein."
+  },
+  {
+   "id": "c58",
+   "classification": "supported",
+   "evidence": "NHS inform lifelong.",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/glands/underactive-thyroid/",
+   "action": "edited",
+   "newSentence": "NHS inform says people usually need to take levothyroxine for the rest of their lives."
+  },
+  {
+   "id": "c59",
+   "classification": "supported",
+   "evidence": "NHS inform.",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/glands/underactive-thyroid/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c60",
+   "classification": "supported",
+   "evidence": "NHS inform.",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/glands/underactive-thyroid/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c61",
+   "classification": "unsupported",
+   "evidence": "Not retrieved.",
+   "url": "",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c62",
+   "classification": "supported",
+   "evidence": "[orig: (added) controlled] NIDDK: most likely can be controlled with medicine taken as instructed.",
+   "url": "https://www.niddk.nih.gov/health-information/endocrine-diseases/hypothyroidism",
+   "action": "edited",
+   "newSentence": "The NIDDK says it can most likely be controlled with thyroid hormone medicine taken as instructed."
+  },
+  {
+   "id": "c63",
+   "classification": "supported",
+   "evidence": "Sources.",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/glands/underactive-thyroid/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c64",
+   "classification": "supported",
+   "evidence": "NHS sources.",
+   "url": "https://www.nhs.uk/conditions/underactive-thyroid-hypothyroidism/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c65",
+   "classification": "unsupported",
+   "evidence": "Not confirmed.",
+   "url": "https://www.niddk.nih.gov/health-information/endocrine-diseases/hashimotos-disease",
+   "action": "edited",
+   "newSentence": "The NHS says it is most common in women and usually starts between the ages of 30 and 50."
+  },
+  {
+   "id": "c66",
+   "classification": "supported",
+   "evidence": "NIDDK: TPO antibody positive in most; Thyroid UK suggests as first step.",
+   "url": "https://www.niddk.nih.gov/health-information/endocrine-diseases/hashimotos-disease",
+   "action": "edited",
+   "newSentence": "A blood test for TPO antibodies can be part of the check, and the NIDDK says it is positive in most people with the condition."
+  },
+  {
+   "id": "c67",
+   "classification": "unsupported",
+   "evidence": "Family history not stated; NHS: GP may feel the neck.",
+   "url": "https://www.nhs.uk/conditions/underactive-thyroid-hypothyroidism/",
+   "action": "edited",
+   "newSentence": "A GP may ask about symptoms and may feel the neck to check whether the thyroid is enlarged."
+  },
+  {
+   "id": "c68",
+   "classification": "supported",
+   "evidence": "NHS.",
+   "url": "https://www.nhs.uk/conditions/underactive-thyroid-hypothyroidism/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c69",
+   "classification": "supported",
+   "evidence": "NHS/NIDDK.",
+   "url": "https://www.nhs.uk/conditions/underactive-thyroid-hypothyroidism/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c70",
+   "classification": "supported",
+   "evidence": "NHS complications.",
+   "url": "https://www.nhs.uk/conditions/underactive-thyroid-hypothyroidism/complications/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c71",
+   "classification": "supported",
+   "evidence": "NHS.",
+   "url": "https://www.nhs.uk/conditions/underactive-thyroid-hypothyroidism/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c72",
+   "classification": "supported",
+   "evidence": "NHS.",
+   "url": "https://www.nhs.uk/conditions/underactive-thyroid-hypothyroidism/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c73",
+   "classification": "supported",
+   "evidence": "NHS 111 Wales.",
+   "url": "https://111.wales.nhs.uk/encyclopaedia/t/article/thyroid,underactive",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c74",
+   "classification": "unsupported",
+   "evidence": "'Poorly controlled' not stated.",
+   "url": "https://www.nhs.uk/conditions/underactive-thyroid-hypothyroidism/complications/",
+   "action": "edited",
+   "newSentence": "Untreated, it can raise the risk of cardiovascular disease and of bone problems such as osteoporosis."
+  },
+  {
+   "id": "c75",
+   "classification": "supported",
+   "evidence": "NHS; route 999 is site signposting.",
+   "url": "https://www.nhs.uk/conditions/underactive-thyroid-hypothyroidism/complications/",
+   "action": "edited",
+   "newSentence": "Myxoedema coma is very rare but life-threatening and needs emergency hospital treatment, and the route to care is 999."
+  },
+  {
+   "id": "c76",
+   "classification": "textbook",
+   "evidence": "Alternative name.",
+   "url": "",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c77",
+   "classification": "supported",
+   "evidence": "NHS.",
+   "url": "https://www.nhs.uk/conditions/underactive-thyroid-hypothyroidism/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c78",
+   "classification": "supported",
+   "evidence": "NIDDK.",
+   "url": "https://www.niddk.nih.gov/health-information/endocrine-diseases/hypothyroidism",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c79",
+   "classification": "supported",
+   "evidence": "NHS.",
+   "url": "https://www.nhs.uk/conditions/underactive-thyroid-hypothyroidism/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c80",
+   "classification": "supported",
+   "evidence": "NHS inform/NHS.",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/glands/underactive-thyroid/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c81",
+   "classification": "supported",
+   "evidence": "NHS; 999 signposting.",
+   "url": "https://www.nhs.uk/conditions/underactive-thyroid-hypothyroidism/complications/",
+   "action": "kept",
+   "newSentence": ""
+  }
+ ],
+ "notes": "13 searches. Search summaries blend pages, so some URLs are best-guess attributions (hearing claim PMC8382885; MedlinePlus TSH preparation/biotin; NIDDK pregnancy-dose items not used). Removed: Hashimoto's 'often stable for years', 'most people with Hashimoto's develop hypothyroidism', post-birth dose return, family history, 'poor concentration/low mood/dry skin/hair loss' symptoms (not retrieved). Existing page overview lists those symptoms, says 'daily tablet restores normal life', and treatment field has doses/schedules (every six to eight weeks, yearly) and a debated-screening statement; not re-checked here. Page seekCare mentions drowsiness/very low temperature/confusion as emergency triggers; not retrieved this pass."
+}
