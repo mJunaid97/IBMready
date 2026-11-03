@@ -608,15 +608,19 @@ const HUB_FACETS = {
   symptoms: [['region', null, 'Body region']],
   'first-aid': [['emergency', null, 'Urgency']],
   targets: [['kind', null, 'Target kind']],
+  blog: [['topic', null, 'Topic']],
 };
 const FACET_LABEL = {
   depth: { full: 'Full clinical detail', standard: 'Standard overview' },
   emergency: { true: 'Emergency (call for help first)', false: 'Not usually an emergency' },
+  topic: { conditions: 'Conditions', medicines: 'Medicines', tests: 'Tests and scans', symptoms: 'Symptoms', health: 'Health and lifestyle' },
   radiation: { none: 'None', low: 'Low dose', moderate: 'Moderate dose' },
   region: { head: 'Head and neck', chest: 'Chest', abdomen: 'Abdomen', pelvis: 'Pelvis', back: 'Back', arms: 'Arms and hands', legs: 'Legs and feet', general: 'General or whole body' },
   kind: { receptor: 'Receptor', enzyme: 'Enzyme', transporter: 'Transporter', 'ion channel': 'Ion channel', pathway: 'Pathway', protein: 'Protein', other: 'Other' },
 };
-const FACET_ORDER = { radiation: ['none', 'low', 'moderate'], depth: ['full', 'standard'], emergency: ['true', 'false'] };
+const FACET_ORDER = { radiation: ['none', 'low', 'moderate'], depth: ['full', 'standard'], emergency: ['true', 'false'], topic: ['conditions', 'medicines', 'tests', 'symptoms', 'health'] };
+/** A blog post's topics, read from the kinds of page it links to (conditions, medicines, tests and scans, symptoms, health and lifestyle). */
+const BLOG_TOPIC_OF = { conditions: 'conditions', medications: 'medicines', drugClasses: 'medicines', drugClass: 'medicines', tests: 'tests', biomarkers: 'tests', imaging: 'tests', procedures: 'tests', symptoms: 'symptoms', health: 'health', physiology: 'health', firstAid: 'health' };
 const RESERVED_PARAMS = new Set(['cat', 'q', 'system', 'id']);
 export async function renderIndex(type) {
   const TT = TYPES[type]; renderHeader(type); renderFooter();
@@ -626,7 +630,7 @@ export async function renderIndex(type) {
   const inCat = (e, id) => (e.categories || [e.category]).includes(id);
   const FACETS = [...(HUB_FACETS[type] || []), ['system', '@systems', 'Body system']];
   const systemsOf = (e) => [...new Set([...(e.anatomy?.systems || []), ...(e.anatomy?.organs || []).map(id => organSystem.get(id)).filter(Boolean)])];
-  const facetValue = (e, field) => field === 'system' ? systemsOf(e) : field === 'depth' ? [e.depth === 'full' ? 'full' : 'standard'] : Array.isArray(e[field]) ? e[field].map(String) : e[field] !== undefined && e[field] !== null && e[field] !== '' ? [String(e[field])] : [];
+  const facetValue = (e, field) => field === 'system' ? systemsOf(e) : field === 'topic' ? [...new Set(Object.entries(e.links || {}).filter(([, v]) => v && v.length).map(([k]) => BLOG_TOPIC_OF[k]).filter(Boolean))] : field === 'depth' ? [e.depth === 'full' ? 'full' : 'standard'] : Array.isArray(e[field]) ? e[field].map(String) : e[field] !== undefined && e[field] !== null && e[field] !== '' ? [String(e[field])] : [];
   const facetOptions = (field, key) => {
     const used = new Map(); for (const e of items) for (const v of facetValue(e, field)) used.set(v, (used.get(v) || 0) + 1);
     let opts;

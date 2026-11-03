@@ -24,27 +24,31 @@ def sh(*cmd, **kw):
     return subprocess.run(cmd, cwd=ROOT, capture_output=True, text=True, **kw)
 
 
-def existing_ids():
+def existing():
+    """collection -> {id: entity} for everything in content/ (blog posts read from their own files)."""
     have = {}
     for coll, (f, rk) in cb.FILES.items():
         d, _ = cb.load_styled(os.path.join(ROOT, 'content', f))
-        have[coll] = set((d if rk is None else d[rk]).keys())
+        have[coll] = dict(d if rk is None else d[rk])
     blog = os.path.join(ROOT, 'content', 'blog')
-    have['blog'] = {x[:-5] for x in os.listdir(blog)} if os.path.isdir(blog) else set()
+    have['blog'] = {x[:-5]: json.load(open(os.path.join(blog, x), encoding='utf-8')) for x in os.listdir(blog) if x.endswith('.json')} if os.path.isdir(blog) else {}
     return have
 
 
 def drop_existing(frag, have):
-    """Remove entities already in content/ from a fragment's new-entity collections; returns (fragment, dropped ids)."""
-    out, dropped = {}, []
+    """Remove entities already in content/ from a fragment's new-entity collections; returns (fragment, dropped ids, ids whose
+    fragment text differs from what is merged: the session changed them after they were merged, a human decides)."""
+    out, dropped, changed = {}, [], []
     for coll, items in frag.items():
         if coll == 'patch': out[coll] = items; continue
         keep = {}
         for eid, ent in items.items():
-            if eid in have.get(coll, ()): dropped.append(f'{coll}/{eid}')
+            if eid in have.get(coll, {}):
+                dropped.append(f'{coll}/{eid}')
+                if json.dumps(have[coll][eid], sort_keys=True, ensure_ascii=False) != json.dumps(ent, sort_keys=True, ensure_ascii=False): changed.append(f'{coll}/{eid}')
             else: keep[eid] = ent
         if keep: out[coll] = keep
-    return out, dropped
+    return out, dropped, changed
 
 
 def count(frag):
@@ -84,10 +88,10 @@ def main():
             raw = sh('git', 'show', f'{ref}:{fpath}').stdout
             try: frag = json.loads(raw)
             except Exception as ex: rows.append((b, 'INVALID JSON', str(ex)[:80], '', '')); continue
-            frag, dropped = drop_existing(frag, existing_ids())
+            frag, dropped, changed = drop_existing(frag, existing())
             label = b if fpath == main_frag else f'{b}:{os.path.basename(fpath)}'
             if not any(frag.values()):
-                rows.append((label, 'already merged' if dropped else 'empty', f'{len(dropped)} present', '', '')); continue
+                rows.append((label, 'already merged' if dropped else 'empty', f'{len(dropped)} present', '', ('CHANGED since merged: ' + ', '.join(changed[:6])) if changed else '')); continue
             tmpf = os.path.join(tmp, label.replace(':', '_') + '.json'); json.dump(frag, open(tmpf, 'w', encoding='utf-8'), ensure_ascii=False)
             r = sh(sys.executable, os.path.join(ROOT, 'tools', 'verification', 'check_batch.py'), tmpf)
             ok = r.returncode == 0
@@ -105,6 +109,7 @@ def main():
                             tar = subprocess.run(['git', 'archive', ref] + paths, cwd=ROOT, capture_output=True)
                             subprocess.run(['tar', '-x', '-C', ROOT], input=tar.stdout, check=False)
                 else: note = 'apply failed: ' + a.stdout[-200:]
+            if changed: note = (note + ' ' if note else '') + 'CHANGED since merged: ' + ', '.join(changed[:6])
             rows.append((label, ('MERGED' if apply else 'ok') if ok else 'FAILS', count(frag) + (f' (+{len(dropped)} already present)' if dropped else ''), lint[0] if lint else '', note))
     w = max(len(r[0]) for r in rows)
     for r in rows: print(f'{r[0]:{w}}  {r[1]:14} {r[2]}' + (f'  | lint: {r[3]}' if r[3] else '') + (f'\n{"":{w}}    {r[4]}' if r[4] else ''))

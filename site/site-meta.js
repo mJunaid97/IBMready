@@ -39,15 +39,15 @@ export const SITE = {
     "organs": 48,
     "anatomyArticles": 37,
     "terms": 156,
-    "topics": 353,
-    "links": 6165,
+    "topics": 436,
+    "links": 6623,
     "testCategories": 36,
     "testConcepts": 837,
     "classConcepts": 536,
     "edges": 2772,
     "physiology": 35,
     "symptoms": 22,
-    "conditions": 58,
+    "conditions": 74,
     "tests": 39,
     "imaging": 8,
     "procedures": 19,
@@ -57,6 +57,6 @@ export const SITE = {
     "targets": 24,
     "first-aid": 16,
     "health": 9,
-    "blog": 7
+    "blog": 74
   }
 };
