@@ -247,20 +247,171 @@ https://www.ouh.nhs.uk/patient-guide/leaflets/files/95363spironolactone.pdf http
 https://www.pancreaticcancer.org.uk/information/signs-and-symptoms-of-pancreatic-cancer/ https://www.pancreaticcancer.org.uk/information-and-support/signs-and-symptoms-of-pancreatic-cancer/
 https://www.psoriasis-association.org.uk/types-of-psoriasis https://psoriasisuk.org.uk/information-and-support/page.aspx?ID=11
 https://versusarthritis.org/about-arthritis/treatments/drugs/hydroxychloroquine https://www.arthritis-uk.org/information-and-support/understanding-arthritis/arthritis-treatments/drugs/hydroxychloroquine/
-https://weather.metoffice.gov.uk/warnings-and-advice/seasonal-advice/health-wellbeing/pollen/when-is-hayfever-season https://www.metoffice.gov.uk/blog/2025/what-are-the-different-types-of-pollen
 https://www.britishlivertrust.org.uk/liver-information/tests-and-screening/liver-blood-tests-formerly-lfts/ https://britishlivertrust.org.uk/information-and-support/living-with-a-liver-condition/liver-blood-tests/
 https://www.fda.gov/Drugs/DrugSafety/ucm594232.htm https://www.fda.gov/files/FDA-limits-packaging-for-anti-diarrhea-medicine-loperamide-(Imodium)-to-encourage-safe-use_PDF.pdf
 https://www.nhs.uk/conditions/pre-eclampsia/symptoms/ https://www.nhs.uk/conditions/pre-eclampsia/
-https://apps.who.int/mediacentre/commentaries/stop-antibiotic-resistance/en/index.html https://www.who.int/news-room/questions-and-answers/item/antimicrobial-resistance-does-stopping-a-course-of-antibiotics-early-lead-to-antibiotic-resistance
+https://breastcancernow.org/about-breast-cancer/secondary-breast-cancer/secondary-breast-cancer-treatment https://breastcancernow.org/about-breast-cancer/metastatic-breast-cancer/metastatic-breast-cancer-treatment
+https://britishlivertrust.org.uk/information-and-support/living-with-a-liver-condition/liver-blood-tests/ https://liveruk.org/about-liver-disease/tests/liver-blood-tests/
+https://epilepsysociety.org.uk/about-epilepsy/epileptic-seizures/seizure-triggers/alcohol-drugs-and-epilepsy https://epilepsysociety.org.uk/living-with-epilepsy/alcohol-drugs-and-epilepsy
+https://nhlbi.nih.gov/health-topics/pneumonia https://www.nhlbi.nih.gov/health/pneumonia
+https://rnid.org.uk/information-and-support/ear-health/protect-your-hearing/how-loud-is-too-loud https://rnid.org.uk/information-and-support/protect-your-hearing/how-loud-is-too-loud/
+https://travelhealthpro.org.uk/country/155/mozambique https://travelhealthpro.org.uk/countries/mozambique
+https://travelhealthpro.org.uk/disease/12/altitude-illness https://travelhealthpro.org.uk/diseases/altitude-illness
+https://travelhealthpro.org.uk/factsheet/30/general-advice-for-travellers https://travelhealthpro.org.uk/factsheets/general-travel-advice
+https://travelhealthpro.org.uk/factsheet/54/venous-thromboembolism https://travelhealthpro.org.uk/factsheets/venous-thromboembolism
+https://travelhealthpro.org.uk/news/898/a-food-and-water-hygiene-reminder-for-travellers https://travelhealthpro.org.uk/news/a-food-and-water-hygiene-reminder-for-travellers
+https://versusarthritis.org/about-arthritis/conditions/gout/ https://www.arthritis-uk.org/information-and-support/understanding-arthritis/conditions/gout/
+https://www.bhf.org.uk/informationsupport/heart-matters-magazine/medical/drug-cabinet/beta-blockers https://www.bhf.org.uk/informationsupport/treatments/medicine/beta-blockers
+https://www.blood.co.uk/the-donation-process/further-information/tests-we-carry-out/ https://www.blood.co.uk/the-donation-process/donation-advice-and-information/donation-safety-and-testing/tests-we-carry-out/
+https://www.cancerresearchuk.org/about-cancer/lung-cancer/advanced/living-with/support-at-home https://www.cancerresearchuk.org/about-cancer/lung-cancer/living-with/coping
+https://www.gov.uk/government/publications/beat-the-heat-hot-weather-advice/beat-the-heat-staying-safe-in-hot-weather https://www.gov.uk/government/publications/beat-the-heat-resources-for-hot-weather/beat-the-heat-staying-safe-in-hot-weather
+https://www.gov.uk/travelling-controlled-drugs https://www.gov.uk/take-medicine-in-or-out-uk
+https://www.migrainetrust.org/about-migraine/migraine-what-is-it/symptoms-and-stages/ https://migrainetrust.org/understand-migraine/stages-of-a-migraine-attack/
+https://www.miscarriageassociation.org.uk/information/worried-about-pregnancy-loss/signs-symptoms/ https://www.miscarriageuk.org/signs-symptoms-diagnosis/
+https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10027758/ https://pmc.ncbi.nlm.nih.gov/articles/PMC10027758/
+https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10478756/ https://pmc.ncbi.nlm.nih.gov/articles/PMC10478756/
+https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10971621/ https://pmc.ncbi.nlm.nih.gov/articles/PMC10971621/
+https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11103346/ https://pmc.ncbi.nlm.nih.gov/articles/PMC11103346/
+https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11242251/ https://pmc.ncbi.nlm.nih.gov/articles/PMC11242251/
+https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11695029/ https://pmc.ncbi.nlm.nih.gov/articles/PMC11695029/
+https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12223887/ https://pmc.ncbi.nlm.nih.gov/articles/PMC12223887/
+https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12640426/ https://pmc.ncbi.nlm.nih.gov/articles/PMC12640426/
+https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3038575/ https://pmc.ncbi.nlm.nih.gov/articles/PMC3038575/
+https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7205016/ https://pmc.ncbi.nlm.nih.gov/articles/PMC7205016/
+https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7356332/ https://pmc.ncbi.nlm.nih.gov/articles/PMC7356332/
+https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7368023/ https://pmc.ncbi.nlm.nih.gov/articles/PMC7368023/
+https://www.nhs.uk/conditions/anaphylaxis/treatment/ https://www.nhs.uk/conditions/anaphylaxis/
+https://www.nhs.uk/conditions/asthma/asthma-attack/ https://www.nhs.uk/conditions/asthma/
+https://www.nhs.uk/conditions/asthma/causes/ https://www.nhs.uk/conditions/asthma/
+https://www.nhs.uk/conditions/asthma/diagnosis/ https://www.nhs.uk/conditions/asthma/
+https://www.nhs.uk/conditions/asthma/treatment/ https://www.nhs.uk/conditions/asthma/
+https://www.nhs.uk/conditions/atrial-fibrillation/treatment/ https://www.nhs.uk/conditions/atrial-fibrillation/
+https://www.nhs.uk/conditions/breast-cancer/symptoms/ https://www.nhs.uk/conditions/breast-cancer-in-women/symptoms-of-breast-cancer-in-women/
+https://www.nhs.uk/conditions/breast-cancer/treatment/ https://www.nhs.uk/conditions/breast-cancer-in-women/treatment-for-breast-cancer-in-women/
+https://www.nhs.uk/conditions/breast-screening-mammogram/when-youll-be-invited-and-who-should-go/ https://www.nhs.uk/tests-and-treatments/breast-screening-mammogram/who-breast-screening-is-for/
+https://www.nhs.uk/conditions/burns-and-scalds/recovery/ https://www.nhs.uk/conditions/burns-and-scalds/
+https://www.nhs.uk/conditions/burns-and-scalds/treatment/ https://www.nhs.uk/conditions/burns-and-scalds/
+https://www.nhs.uk/conditions/contraception/contraceptive-injection/ https://www.nhs.uk/contraception/methods-of-contraception/contraceptive-injection/
+https://www.nhs.uk/conditions/contraception/vasectomy-male-sterilisation/ https://www.nhs.uk/contraception/methods-of-contraception/vasectomy-male-sterilisation/
+https://www.nhs.uk/conditions/diabetic-eye-screening/ https://www.nhs.uk/tests-and-treatments/diabetic-eye-screening/
+https://www.nhs.uk/conditions/epilepsy/symptoms/ https://www.nhs.uk/conditions/epilepsy/
+https://www.nhs.uk/conditions/epilepsy/treatment/ https://www.nhs.uk/conditions/epilepsy/
+https://www.nhs.uk/conditions/general-anaesthesia/ https://www.nhs.uk/tests-and-treatments/general-anaesthesia/
+https://www.nhs.uk/conditions/heart-attack/causes/ https://www.nhs.uk/conditions/heart-attack/
+https://www.nhs.uk/conditions/heart-attack/recovery/ https://www.nhs.uk/conditions/heart-attack/
+https://www.nhs.uk/conditions/heart-failure/diagnosis/ https://www.nhs.uk/conditions/heart-failure/
+https://www.nhs.uk/conditions/heart-failure/living-with/ https://www.nhs.uk/conditions/heart-failure/
+https://www.nhs.uk/conditions/heart-failure/treatment/ https://www.nhs.uk/conditions/heart-failure/
+https://www.nhs.uk/conditions/lumbar-puncture/ https://www.nhs.uk/tests-and-treatments/lumbar-puncture/
+https://www.nhs.uk/conditions/lung-cancer/diagnosis/ https://www.nhs.uk/conditions/lung-cancer/tests-and-next-steps/
+https://www.nhs.uk/conditions/migraine/symptoms/ https://www.nhs.uk/conditions/migraine/
+https://www.nhs.uk/conditions/pet-scan/ https://www.nhs.uk/tests-and-treatments/pet-scan/
+https://www.nhs.uk/conditions/pneumonia/treatment/ https://www.nhs.uk/conditions/pneumonia/
+https://www.nhs.uk/conditions/polycystic-ovary-syndrome-pcos/diagnosis/ https://www.nhs.uk/conditions/polyendocrine-metabolic-ovarian-syndrome-pmos/
+https://www.nhs.uk/conditions/prostate-cancer/psa-testing/ https://www.nhs.uk/tests-and-treatments/psa-test/
+https://www.nhs.uk/conditions/thyroiditis/ https://www.nhs.uk/conditions/underactive-thyroid-hypothyroidism/
+https://www.nhs.uk/conditions/type-2-diabetes/food-and-keeping-active/ https://www.nhs.uk/conditions/type-2-diabetes/treatment/
+https://www.nhs.uk/conditions/type-2-diabetes/health-problems/ https://www.nhs.uk/conditions/type-2-diabetes/complications/
+https://www.nhs.uk/conditions/underactive-thyroid-hypothyroidism/complications/ https://www.nhs.uk/conditions/underactive-thyroid-hypothyroidism/
+https://www.nhs.uk/conditions/underactive-thyroid-hypothyroidism/symptoms/ https://www.nhs.uk/conditions/underactive-thyroid-hypothyroidism/
+https://www.nhs.uk/conditions/vaccinations/6-in-1-vaccine-side-effects/ https://www.nhs.uk/vaccinations/6-in-1-vaccine/
+https://www.nhs.uk/live-well/eat-well/food-types/salt-nutrition/ https://www.nhs.uk/live-well/eat-well/food-types/salt-in-your-diet/
+https://www.nhs.uk/medicines/amlodipine/about-amlodipine/ https://www.nhs.uk/medicines/amlodipine/
+https://www.nhs.uk/medicines/amlodipine/common-questions-about-amlodipine/ https://www.nhs.uk/medicines/amlodipine/
+https://www.nhs.uk/medicines/amlodipine/how-and-when-to-take-amlodipine/ https://www.nhs.uk/medicines/amlodipine/
+https://www.nhs.uk/medicines/amlodipine/pregnancy-breastfeeding-and-fertility-while-taking-amlodipine/ https://www.nhs.uk/medicines/amlodipine/
+https://www.nhs.uk/medicines/apixaban/about-apixaban/ https://www.nhs.uk/medicines/apixaban/
+https://www.nhs.uk/medicines/apixaban/who-can-and-cannot-take-apixaban/ https://www.nhs.uk/medicines/apixaban/
+https://www.nhs.uk/medicines/atorvastatin/how-and-when-to-take-atorvastatin/ https://www.nhs.uk/medicines/atorvastatin/
+https://www.nhs.uk/medicines/atorvastatin/side-effects-of-atorvastatin/ https://www.nhs.uk/medicines/atorvastatin/
+https://www.nhs.uk/medicines/atorvastatin/who-can-and-cannot-take-atorvastatin/ https://www.nhs.uk/medicines/atorvastatin/
+https://www.nhs.uk/medicines/bisoprolol/about-bisoprolol/ https://www.nhs.uk/medicines/bisoprolol/
+https://www.nhs.uk/medicines/bisoprolol/common-questions-about-bisoprolol/ https://www.nhs.uk/medicines/bisoprolol/
+https://www.nhs.uk/medicines/bisoprolol/how-and-when-to-take-bisoprolol/ https://www.nhs.uk/medicines/bisoprolol/
+https://www.nhs.uk/medicines/bisoprolol/pregnancy-breastfeeding-and-fertility-while-taking-bisoprolol/ https://www.nhs.uk/medicines/bisoprolol/
+https://www.nhs.uk/medicines/bisoprolol/side-effects-of-bisoprolol/ https://www.nhs.uk/medicines/bisoprolol/
+https://www.nhs.uk/medicines/bisoprolol/taking-bisoprolol-with-other-medicines-and-herbal-supplements/ https://www.nhs.uk/medicines/bisoprolol/
+https://www.nhs.uk/medicines/bisoprolol/who-can-and-cannot-take-bisoprolol/ https://www.nhs.uk/medicines/bisoprolol/
+https://www.nhs.uk/medicines/citalopram/about-citalopram/ https://www.nhs.uk/medicines/citalopram/
+https://www.nhs.uk/medicines/citalopram/pregnancy-breastfeeding-and-fertility-while-taking-citalopram/ https://www.nhs.uk/medicines/citalopram/
+https://www.nhs.uk/medicines/citalopram/side-effects-of-citalopram/ https://www.nhs.uk/medicines/citalopram/
+https://www.nhs.uk/medicines/citalopram/taking-citalopram-with-other-medicines-and-herbal-supplements/ https://www.nhs.uk/medicines/citalopram/
+https://www.nhs.uk/medicines/citalopram/who-can-and-cannot-take-citalopram/ https://www.nhs.uk/medicines/citalopram/
+https://www.nhs.uk/medicines/ibuprofen-for-adults/common-questions-about-ibuprofen-for-adults/ https://www.nhs.uk/medicines/ibuprofen-for-adults/
+https://www.nhs.uk/medicines/ibuprofen-for-adults/how-and-when-to-take-ibuprofen/ https://www.nhs.uk/medicines/ibuprofen-for-adults/
+https://www.nhs.uk/medicines/lisinopril/about-lisinopril/ https://www.nhs.uk/medicines/lisinopril/
+https://www.nhs.uk/medicines/lisinopril/common-questions-about-lisinopril/ https://www.nhs.uk/medicines/lisinopril/
+https://www.nhs.uk/medicines/lisinopril/how-and-when-to-take-lisinopril/ https://www.nhs.uk/medicines/lisinopril/
+https://www.nhs.uk/medicines/lisinopril/pregnancy-breastfeeding-and-fertility-while-taking-lisinopril/ https://www.nhs.uk/medicines/lisinopril/
+https://www.nhs.uk/medicines/lisinopril/side-effects-of-lisinopril/ https://www.nhs.uk/medicines/lisinopril/
+https://www.nhs.uk/medicines/lisinopril/taking-lisinopril-with-other-medicines-and-herbal-supplements/ https://www.nhs.uk/medicines/lisinopril/
+https://www.nhs.uk/medicines/lisinopril/who-can-and-cannot-take-lisinopril/ https://www.nhs.uk/medicines/lisinopril/
+https://www.nhs.uk/medicines/losartan/about-losartan/ https://www.nhs.uk/medicines/losartan/
+https://www.nhs.uk/medicines/losartan/how-and-when-to-take-losartan/ https://www.nhs.uk/medicines/losartan/
+https://www.nhs.uk/medicines/losartan/side-effects-of-losartan/ https://www.nhs.uk/medicines/losartan/
+https://www.nhs.uk/medicines/losartan/taking-losartan-with-other-medicines-and-herbal-supplements/ https://www.nhs.uk/medicines/losartan/
+https://www.nhs.uk/medicines/losartan/who-can-and-cannot-take-losartan/ https://www.nhs.uk/medicines/losartan/
+https://www.nhs.uk/medicines/low-dose-aspirin/about-low-dose-aspirin/ https://www.nhs.uk/medicines/aspirin/
+https://www.nhs.uk/medicines/low-dose-aspirin/common-questions-about-low-dose-aspirin/ https://www.nhs.uk/medicines/aspirin/
+https://www.nhs.uk/medicines/low-dose-aspirin/pregnancy-breastfeeding-and-fertility-while-taking-low-dose-aspirin/ https://www.nhs.uk/medicines/aspirin/
+https://www.nhs.uk/medicines/low-dose-aspirin/side-effects-of-low-dose-aspirin/ https://www.nhs.uk/medicines/aspirin/
+https://www.nhs.uk/medicines/low-dose-aspirin/taking-low-dose-aspirin-with-other-medicines-and-herbal-supplements/ https://www.nhs.uk/medicines/aspirin/
+https://www.nhs.uk/medicines/low-dose-aspirin/who-can-and-cannot-take-low-dose-aspirin/ https://www.nhs.uk/medicines/aspirin/
+https://www.nhs.uk/medicines/metformin/about-metformin/ https://www.nhs.uk/medicines/metformin/
+https://www.nhs.uk/medicines/metformin/pregnancy-breastfeeding-and-fertility-while-taking-metformin/ https://www.nhs.uk/medicines/metformin/
+https://www.nhs.uk/medicines/omeprazole/about-omeprazole/ https://www.nhs.uk/medicines/omeprazole/
+https://www.nhs.uk/medicines/omeprazole/common-questions-about-omeprazole/ https://www.nhs.uk/medicines/omeprazole/
+https://www.nhs.uk/medicines/omeprazole/how-and-when-to-take-omeprazole/ https://www.nhs.uk/medicines/omeprazole/
+https://www.nhs.uk/medicines/omeprazole/pregnancy-breastfeeding-and-fertility-while-taking-omeprazole/ https://www.nhs.uk/medicines/omeprazole/
+https://www.nhs.uk/medicines/omeprazole/side-effects-of-omeprazole/ https://www.nhs.uk/medicines/omeprazole/
+https://www.nhs.uk/medicines/paracetamol-for-adults/about-paracetamol-for-adults/ https://www.nhs.uk/medicines/paracetamol-for-adults/
+https://www.nhs.uk/medicines/paracetamol-for-adults/common-questions-about-paracetamol-for-adults/ https://www.nhs.uk/medicines/paracetamol-for-adults/
+https://www.nhs.uk/medicines/paracetamol-for-adults/who-can-and-cannot-take-paracetamol-for-adults/ https://www.nhs.uk/medicines/paracetamol-for-adults/
+https://www.nhs.uk/medicines/prednisolone/about-prednisolone-tablets-and-liquid/ https://www.nhs.uk/medicines/prednisolone-tablets-and-liquid/
+https://www.nhs.uk/medicines/prednisolone/common-questions-about-prednisolone-tablets-and-liquid/ https://www.nhs.uk/medicines/prednisolone-tablets-and-liquid/
+https://www.nhs.uk/medicines/prednisolone/pregnancy-breastfeeding-and-fertility-while-taking-prednisolone-tablets-and-liquid/ https://www.nhs.uk/medicines/prednisolone-tablets-and-liquid/
+https://www.nhs.uk/medicines/prednisolone/side-effects-of-prednisolone-tablets-and-liquid/ https://www.nhs.uk/medicines/prednisolone-tablets-and-liquid/
+https://www.nhs.uk/medicines/sertraline/pregnancy-breastfeeding-and-fertility-while-taking-sertraline/ https://www.nhs.uk/medicines/sertraline/
+https://www.nhs.uk/medicines/sertraline/taking-sertraline-with-other-medicines-and-herbal-supplements/ https://www.nhs.uk/medicines/sertraline/
+https://www.nhs.uk/medicines/sertraline/who-can-and-cannot-take-sertraline/ https://www.nhs.uk/medicines/sertraline/
+https://www.nhs.uk/mental-health/talking-therapies-medicine-treatments/medicines-and-psychiatry/antidepressants/overview/ https://www.nhs.uk/medicines/antidepressants/
+https://www.nhs.uk/mental-health/talking-therapies-medicine-treatments/medicines-and-psychiatry/stopping-or-coming-off-antidepressants/ https://www.nhs.uk/medicines/antidepressants/
+https://www.nhs.uk/nhs-services/dentists/get-help-with-dental-costs/ https://www.nhs.uk/nhs-services/dentists/who-can-get-free-nhs-dental-treatment/
+https://www.nhs.uk/pregnancy/finding-out/your-first-midwife-appointment/ https://www.nhs.uk/pregnancy/your-pregnancy-care/your-antenatal-care-and-appointments/
+https://www.nhs.uk/pregnancy/trying-for-a-baby/signs-and-symptoms-of-pregnancy/ https://www.nhs.uk/pregnancy/trying-for-a-baby/signs-and-symptoms-that-might-mean-youre-pregnant/
+https://www.nhs.uk/tests-and-treatments/colonoscopy/why-its-done/ https://www.nhs.uk/tests-and-treatments/colonoscopy/
+https://www.nhs.uk/vaccinations/travel-vaccinations/available-travel-vaccines/ https://www.nhs.uk/vaccinations/travel-vaccinations/
+https://www.nhs.uk/vaccinations/travel-vaccinations/travel-vaccination-advice/ https://www.nhs.uk/vaccinations/travel-vaccinations/
+https://www.nice.org.uk/guidance/ng28/chapter/1-recommendations https://www.nice.org.uk/guidance/ng28
+https://www.royaldevon.nhs.uk/services/medical-imaging-radiology-x-ray/medical-imaging-eastern-services/ultrasound/ https://www.royaldevon.nhs.uk/services/imaging-services-medical-imaging-radiology-x-ray/medical-imaging-eastern-services/ultrasound/
+https://www.samaritans.org/how-we-can-help/support-and-information/if-youre-having-difficult-time/if-you-want-self-harm/ https://www.samaritans.org/how-we-can-help/if-youre-having-difficult-time/if-you-want-self-harm/
+https://www.stroke.org.uk/stroke/effects/emotional-changes https://www.stroke.org.uk/stroke/effects/emotional-and-behavioural
+https://www.versusarthritis.org/about-arthritis/conditions/osteoarthritis/ https://www.arthritis-uk.org/information-and-support/understanding-arthritis/conditions/osteoarthritis/
+https://www.versusarthritis.org/about-arthritis/conditions/osteoporosis/ https://www.arthritis-uk.org/information-and-support/understanding-arthritis/conditions/osteoporosis/
+https://www.versusarthritis.org/about-arthritis/treatments/drugs/denosumab/ https://www.arthritis-uk.org/information-and-support/understanding-arthritis/arthritis-treatments/drugs/denosumab/
+https://www.nice.org.uk/guidance/ng28/ifp/chapter/what-your-diabetes-care-team-will-do https://www.nice.org.uk/guidance/ng28
 """
 DROP_URLS = {"https://www.nhs.uk/common-health-questions/medicines/does-grapefruit-affect-my-medicine/",      # redirects to the medicines index: the page is gone
              "https://www.food.gov.uk/research/food-allergy-and-intolerance-research/patterns-and-prevalence-of-adult-food-allergy",     # 404; the prose cites the Anaphylaxis UK report of it
-             "https://swlimo.southwestlondon.icb.nhs.uk/wp-content/uploads/Tirzepatide-information-sheet-v1.0.pdf"}                     # 404; the sentence that cited it is removed (TEXT)
+             "https://swlimo.southwestlondon.icb.nhs.uk/wp-content/uploads/Tirzepatide-information-sheet-v1.0.pdf",                     # 404; the sentence that cited it is removed (TEXT)
+             # the second Reference links run: pages that return 404 or 410 (hospital leaflets that moved, a food label page, a NICE leaflet chapter) and two search-found
+             # replacements that were dead too; the sentences that named the Met Office, WHO and NHS 111 Wales pages are removed or reworded (TEXT)
+             "https://www.chelwest.nhs.uk/services/childrens-services/childrens-medicine/ketogenic-diet-for-epilepsy-children",
+             "https://www.chelwest.nhs.uk/services/childrens-services/community-services/cheyne/support-for-children-and-families/puberty-girls",
+             "https://www.chelwest.nhs.uk/your-visit/patient-leaflets/imaging/mri-magnetic-resonance-imaging-information-for-patients",
+             "https://www.chelwest.nhs.uk/your-visit/patient-leaflets/medicine-services/transoesophgeal-echocardiogram-toe",
+             "https://www.chelwest.nhs.uk/your-visit/patient-leaflets/medicine-services/your-coronary-angiogram",
+             "https://www.chelwest.nhs.uk/your-visit/patient-leaflets/paediatrics/gastro-oesophageal-reflux-gor",
+             "https://www.chelwest.nhs.uk/your-visit/patient-leaflets/surgery-services/is-your-procedure-being-performed-under-general-anaesthetic-or-sedation",
+             "https://www.food.gov.uk/safety-hygiene/check-the-label",
+             "https://www.rightdecisions.scot.nhs.uk/m/2716/003-pulmonary-embolism.pdf",
+             "https://111.wales.nhs.uk/encyclopaedia/s/article/steroidtablets",
+             "https://weather.metoffice.gov.uk/warnings-and-advice/seasonal-advice/health-wellbeing/pollen/when-is-hayfever-season",
+             "https://www.metoffice.gov.uk/blog/2025/what-are-the-different-types-of-pollen",
+             "https://apps.who.int/mediacentre/commentaries/stop-antibiotic-resistance/en/index.html",
+             "https://www.who.int/news-room/questions-and-answers/item/antimicrobial-resistance-does-stopping-a-course-of-antibiotics-early-lead-to-antibiotic-resistance"}                     # 404; the sentence that cited it is removed (TEXT)
 # a replaced reference keeps its place in the list; where the page changed its name the title follows
-RETITLE = {
-    "https://www.metoffice.gov.uk/blog/2025/what-are-the-different-types-of-pollen": "Met Office: Pollen: what are the different types?",
-    "https://www.who.int/news-room/questions-and-answers/item/antimicrobial-resistance-does-stopping-a-course-of-antibiotics-early-lead-to-antibiotic-resistance": "WHO: Does stopping a course of antibiotics early lead to antibiotic resistance?",
-}
+RETITLE = {"https://www.nice.org.uk/guidance/ng28": "NICE NG28: Type 2 diabetes in adults: management"}     # the NICE leaflet chapter that was cited is gone; the guideline page remains
 
 # ---- 2. prose ---------------------------------------------------------------------------------------------------------------------
 # (file, old phrase, new phrase, how many times it must occur); an old phrase that starts with "^" only matches at the start of a string, which keeps
@@ -284,6 +435,15 @@ TEXT = [
     ("content/blog/why-antibiotics-do-not-work-for-viruses.json",
      "A WHO commentary advises finishing a prescribed course but also says shorter courses may work for some infections, so sources differ in emphasis.",
      "WHO says shorter courses of antibiotics may work as well as longer ones for some infections, while an NHS page describes stopping a course early as a risk, so sources differ in emphasis.", 1),
+    # second round: the Met Office, WHO and NHS 111 Wales pages are gone, so the sentences that name them go (what the NHS and other listed sources say stays)
+    ("content/conditions.json", "\n\nThe Met Office says tree pollen comes first, from late March to mid-May. Grass pollen peaks from mid-May to July, and weed pollen lasts from June to September. It says the season starts later and is shorter in the north of the UK, where there is generally less pollen.", "", 1),
+    ("content/conditions.json", " The Met Office says tree pollen comes first, from late March to mid-May, grass pollen peaks from mid-May to July, and weed pollen lasts from June to September. It says the season starts later and is shorter in the north of the UK.", "", 1),
+    ("content/medications.json", "\n\nNHS 111 Wales advises avoiding close contact with people who are ill, and getting medical advice quickly after possible exposure to chickenpox, shingles or measles.", "", 1),
+    ("content/blog/why-antibiotics-do-not-work-for-viruses.json",
+     " A WHO question-and-answer page says shorter courses of antibiotics may be just as effective as longer courses for some infections, and that shorter treatment can slow resistance by reducing how long bacteria are exposed to antibiotics. A 2024 research review on stopping antibiotics when feeling better argues that this evidence may mean the broad public message to complete every course needs revisiting. The sources therefore differ in emphasis.", "", 1),
+    ("content/blog/why-antibiotics-do-not-work-for-viruses.json",
+     "WHO says shorter courses of antibiotics may work as well as longer ones for some infections, while an NHS page describes stopping a course early as a risk, so sources differ in emphasis.",
+     "One NHS page notes that if antibiotics are stopped early, bacteria can become resistant to them.", 1),
     # a class summary is its page's lead and its search snippet: it must not start with a digit or repeat its medicine's summary
     ("content/drug-classes.json", "5-HT3 receptor antagonists are anti-sickness medicines; ondansetron is the member covered on this site.", "Anti-sickness medicines that block 5-HT3 receptors; ondansetron is the member covered on this site.", 1),
     ("content/drug-classes.json", "^Methotrexate is an immunosuppressant used for inflammatory conditions such as rheumatoid arthritis, psoriasis and Crohn's disease, and sometimes for cancer. The NHS says it calms",

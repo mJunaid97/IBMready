@@ -23,13 +23,14 @@
   `post_merge_fixups.py` (reference redirects, prose and links the maintainer repairs after a merge), `map_taxonomy.py` (point taxonomy classes at drug-class pages).
   The medication taxonomy builder crashed on a drug class outside the taxonomy; fixed. Interaction records that named a now-existing medicine as a plain substance
   point at its page (simvastatin, methotrexate) or are split into a pair record and a group record (ondansetron, spironolactone).
-- References: the Reference links check found 7 dead and 165 redirecting reference URLs after the content wave. The redirecting ones now point at their final
-  address (NHS medicine and condition sub-pages are merged into one page, Arthritis UK, Eczema UK and Miscarriage UK have rebranded, PubMed Central moved host, NICE
-  renamed chapters), and references that became duplicates are merged into one entry whose "section" lists the original sub-pages. Of the dead ones, hydroxychloroquine
-  (Arthritis UK), the British Liver Trust liver blood tests page, the Met Office pollen page, the FDA loperamide notice and the NHS pre-eclampsia symptoms page point at the
-  address the publisher now uses; a WHO commentary that no longer exists is replaced by the WHO question-and-answer page that supersedes it (two sentences reworded to
-  match, a reviewer should read that page); the Food Standards Agency study page and a South West London tirzepatide sheet are dropped, with the one sentence that cited the sheet.
-  All of it is recorded in `tools/verification/post_merge_fixups.py`, which can be re-run safely.
+- References: the Reference links check ran twice on the content wave (7 dead and 165 redirecting URLs, then 12 dead and 143 redirecting among the newer posts).
+  Redirecting URLs now point at their final address (NHS medicine and condition sub-pages are merged into one page; Arthritis UK, Eczema UK, Miscarriage UK and Liver UK
+  have rebranded; PubMed Central moved host; NICE renamed chapters), and references that became duplicates are merged into one entry whose "section" lists the original
+  sub-pages. Dead URLs are repointed where the publisher's new address is known (hydroxychloroquine at Arthritis UK, the Liver UK blood tests page, the FDA loperamide
+  notice, NHS pre-eclampsia, a NICE leaflet chapter to its guideline) and otherwise no longer cited: hospital leaflets that moved, a Food Standards Agency study and label
+  page, a Right Decisions PDF, a South West London tirzepatide sheet, an NHS 111 Wales page, and a WHO commentary and a Met Office pollen page whose replacements, found by
+  search, were dead as well. The sentences that named a dropped source are removed (hay fever season dates, the antibiotic-course nuance, a tirzepatide dehydration warning, an
+  NHS 111 Wales contact warning). All of it is recorded in `tools/verification/post_merge_fixups.py`, which can be re-run safely.
 - Conditions hub: the filter chips and the category tag on every card had 30 of 114 conditions (ADHD, depression, acne, eczema, flu and more) under one
   catch-all, "Blood, infection & other". Three groups are added (Mental health & neurodevelopment 8, Skin, allergy & eyes 7, Infections 10) and the catch-all
   is now "Blood, immune system & other" (5). A condition's `category` is the only thing that changes; URLs do not.
