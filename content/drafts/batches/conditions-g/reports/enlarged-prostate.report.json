@@ -1,0 +1,690 @@
+{
+ "id": "enlarged-prostate",
+ "searchesUsed": 7,
+ "counts": {
+  "supported": 51,
+  "textbook": 0,
+  "unsupported": 37,
+  "wrong": 0,
+  "unsafe": 4,
+  "unchecked": 0
+ },
+ "claims": [
+  {
+   "id": "c01",
+   "classification": "unsupported",
+   "evidence": "NHS-linked text: prostate sits round urethra and can squeeze it; NIDDK \"non-cancerous\" wording not retrieved",
+   "url": "https://www.nhs.uk/conditions/enlarged-prostate/",
+   "action": "edited",
+   "newSentence": "An enlarged prostate is a common condition in which the prostate gland grows larger and can squeeze the urethra, the outlet tube for urine, slowing the flow of urine from the bladder."
+  },
+  {
+   "id": "c02",
+   "classification": "supported",
+   "evidence": "NHS: common and not usually serious, treatments can help",
+   "url": "https://www.nhs.uk/conditions/enlarged-prostate/",
+   "action": "kept"
+  },
+  {
+   "id": "c03",
+   "classification": "supported",
+   "evidence": "NHS: most common in men over 50",
+   "url": "https://www.nhs.uk/conditions/enlarged-prostate/",
+   "action": "kept"
+  },
+  {
+   "id": "c04",
+   "classification": "supported",
+   "evidence": "NHS: main symptoms are peeing problems: weak flow, straining, more often",
+   "url": "https://www.nhs.uk/conditions/enlarged-prostate/",
+   "action": "kept"
+  },
+  {
+   "id": "c05",
+   "classification": "unsupported",
+   "evidence": "\"Often does not cause any problems\" not in retrieved text; treatments help if needed is supported",
+   "url": "https://www.nhs.uk/conditions/enlarged-prostate/",
+   "action": "edited",
+   "newSentence": "Treatments can help for men who need them, and the NHS says an enlarged prostate is not linked to a higher risk of prostate cancer."
+  },
+  {
+   "id": "c06",
+   "classification": "unsupported",
+   "evidence": "No retrieved text says cause is unclear",
+   "url": "https://www.nhs.uk/conditions/enlarged-prostate/",
+   "action": "removed"
+  },
+  {
+   "id": "c07",
+   "classification": "supported",
+   "evidence": "NHS page links enlargement to hormone level changes with age",
+   "url": "https://www.nhs.uk/conditions/enlarged-prostate/",
+   "action": "edited",
+   "newSentence": "Changes in hormone levels as a man gets older, which the NHS links with the condition"
+  },
+  {
+   "id": "c08",
+   "classification": "supported",
+   "evidence": "More likely over 50",
+   "url": "https://www.nhs.uk/conditions/enlarged-prostate/",
+   "action": "edited",
+   "newSentence": "Being over 50, when the condition is most common"
+  },
+  {
+   "id": "c09",
+   "classification": "unsupported",
+   "evidence": "High blood pressure/diabetes link not in retrieved text",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/kidneys-bladder-and-prostate/benign-prostate-enlargement/",
+   "action": "removed"
+  },
+  {
+   "id": "c10",
+   "classification": "unsupported",
+   "evidence": "Retrieved text says rectal exam feels size and shape; no \"larger than expected for age\" wording",
+   "url": "https://www.nhs.uk/conditions/prostate-enlargement/diagnosis/",
+   "action": "removed"
+  },
+  {
+   "id": "c11",
+   "classification": "supported",
+   "evidence": "NHS inform: sudden inability to pass any urine, medical emergency; painful per retrieved text",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/kidneys-bladder-and-prostate/benign-prostate-enlargement/",
+   "action": "edited",
+   "newSentence": "Acute urinary retention, the sudden inability to pass any urine, which is painful and treated as an emergency"
+  },
+  {
+   "id": "c12",
+   "classification": "supported",
+   "evidence": "NHS inform: UTI, urine retention later, bladder stones, bladder infections, kidney damage; \"chronic\" not used",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/kidneys-bladder-and-prostate/benign-prostate-enlargement/",
+   "action": "edited",
+   "newSentence": "Urinary tract infection, and later urine retention, bladder stones, bladder infections and kidney damage"
+  },
+  {
+   "id": "c13",
+   "classification": "supported",
+   "evidence": "NHS: urine and fluid diary",
+   "url": "https://www.nhs.uk/conditions/enlarged-prostate/",
+   "action": "kept"
+  },
+  {
+   "id": "c14",
+   "classification": "supported",
+   "evidence": "NHS: urine sample tested, PSA considered",
+   "url": "https://www.nhs.uk/conditions/enlarged-prostate/",
+   "action": "kept"
+  },
+  {
+   "id": "c15",
+   "classification": "supported",
+   "evidence": "NHS diagnosis: rectal exam, feels size and shape of prostate",
+   "url": "https://www.nhs.uk/conditions/prostate-enlargement/diagnosis/",
+   "action": "kept"
+  },
+  {
+   "id": "c16",
+   "classification": "unsupported",
+   "evidence": "\"Rule out other conditions\" supported; prostate cancer similarity not retrieved",
+   "url": "https://www.nhs.uk/conditions/prostate-enlargement/diagnosis/",
+   "action": "edited",
+   "newSentence": "The GP will also want to rule out other conditions that cause similar symptoms."
+  },
+  {
+   "id": "c17",
+   "classification": "supported",
+   "evidence": "NHS: treatment depends on how much symptoms affect you",
+   "url": "https://www.nhs.uk/conditions/prostate-enlargement/treatment/",
+   "action": "kept"
+  },
+  {
+   "id": "c18",
+   "classification": "supported",
+   "evidence": "NHS: mild symptoms managed with lifestyle changes first",
+   "url": "https://www.nhs.uk/conditions/prostate-enlargement/treatment/",
+   "action": "kept"
+  },
+  {
+   "id": "c19",
+   "classification": "supported",
+   "evidence": "NHS tamsulosin / treatment: relaxes muscles round prostate and bladder",
+   "url": "https://www.nhs.uk/medicines/tamsulosin/",
+   "action": "kept"
+  },
+  {
+   "id": "c20",
+   "classification": "supported",
+   "evidence": "NHS inform: surgery usually only for moderate to severe symptoms not responding to medication",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/kidneys-bladder-and-prostate/benign-prostate-enlargement/",
+   "action": "kept"
+  },
+  {
+   "id": "c21",
+   "classification": "unsupported",
+   "evidence": "Editorial statement about sources, not in retrieved text",
+   "url": "https://www.nhs.uk/conditions/prostate-enlargement/treatment/",
+   "action": "edited",
+   "newSentence": "The NHS describes lifestyle measures that can ease symptoms."
+  },
+  {
+   "id": "c22",
+   "classification": "supported",
+   "evidence": "Retrieved NHS text: cutting down alcohol and caffeine, healthy weight, avoiding constipation",
+   "url": "https://www.nhs.uk/conditions/prostate-enlargement/treatment/",
+   "action": "kept"
+  },
+  {
+   "id": "c23",
+   "classification": "unsafe",
+   "evidence": "Emergency route: NHS inform retrieved text says medical emergency but no 999 instruction; MyHealth Devon says go immediately to nearest A&E. 999 attribution to NHS inform unconfirmed",
+   "url": "https://myhealth-devon.nhs.uk/my-condition/condition/benign-prostatic-hyperplasia-bph/",
+   "action": "edited",
+   "newSentence": "Suddenly being unable to pass any urine is an emergency: NHS inform describes acute urinary retention as a medical emergency, and MyHealth Devon advises going immediately to the nearest A&E."
+  },
+  {
+   "id": "c24",
+   "classification": "supported",
+   "evidence": "NHS symptoms page: blood in urine or pain urinating: urgent GP or NHS 111",
+   "url": "https://www.nhs.uk/conditions/prostate-enlargement/symptoms/",
+   "action": "kept"
+  },
+  {
+   "id": "c25",
+   "classification": "unsupported",
+   "evidence": "Cancer-similarity rationale not retrieved; GP assessment is described on NHS diagnosis page",
+   "url": "https://www.nhs.uk/conditions/prostate-enlargement/diagnosis/",
+   "action": "edited",
+   "newSentence": "For other urinary symptoms, a GP can carry out the assessment, which may include a questionnaire, urine and PSA tests and a rectal examination."
+  },
+  {
+   "id": "c26",
+   "classification": "supported",
+   "evidence": "NHS: main symptoms are peeing problems",
+   "url": "https://www.nhs.uk/conditions/enlarged-prostate/",
+   "action": "edited",
+   "newSentence": "The NHS describes the main symptoms of an enlarged prostate as problems with peeing."
+  },
+  {
+   "id": "c27",
+   "classification": "supported",
+   "evidence": "NHS symptoms: difficulty starting, straining, weak flow, more often incl at night",
+   "url": "https://www.nhs.uk/conditions/prostate-enlargement/symptoms/",
+   "action": "edited"
+  },
+  {
+   "id": "c28",
+   "classification": "supported",
+   "evidence": "NHS: feeling of incomplete emptying",
+   "url": "https://www.nhs.uk/conditions/enlarged-prostate/",
+   "action": "edited"
+  },
+  {
+   "id": "c29",
+   "classification": "supported",
+   "evidence": "NHS: develop slowly, may worsen with age",
+   "url": "https://www.nhs.uk/conditions/enlarged-prostate/",
+   "action": "kept"
+  },
+  {
+   "id": "c30",
+   "classification": "unsupported",
+   "evidence": "Not in retrieved text",
+   "url": "https://www.nhs.uk/conditions/enlarged-prostate/",
+   "action": "removed"
+  },
+  {
+   "id": "c31",
+   "classification": "supported",
+   "evidence": "NHS-linked source: prostate squeezes outlet tube slowing flow; \"pressing on bladder\" not retrieved",
+   "url": "https://www.nhs.uk/conditions/enlarged-prostate/",
+   "action": "edited",
+   "newSentence": "The prostate sits around the urethra, and as it grows it can squeeze that outlet tube and slow the flow of urine from the bladder."
+  },
+  {
+   "id": "c32",
+   "classification": "supported",
+   "evidence": "NHS-linked leaflet: severity of symptoms not always related to prostate size",
+   "url": "https://www.nhs.uk/conditions/enlarged-prostate/",
+   "action": "edited",
+   "newSentence": "NHS information leaflets note that the severity of symptoms is not always related to the size of the prostate, so a larger gland does not always mean worse symptoms."
+  },
+  {
+   "id": "c33",
+   "classification": "unsupported",
+   "evidence": "Prostate cancer similarity not in retrieved text",
+   "url": "https://www.nhs.uk/conditions/enlarged-prostate/",
+   "action": "removed"
+  },
+  {
+   "id": "c34",
+   "classification": "unsupported",
+   "evidence": "Not in retrieved text",
+   "url": "https://www.nhs.uk/conditions/enlarged-prostate/",
+   "action": "removed"
+  },
+  {
+   "id": "c35",
+   "classification": "supported",
+   "evidence": "NHS page links enlargement to hormone changes with age; \"most experts agree\" not retrieved",
+   "url": "https://www.nhs.uk/conditions/enlarged-prostate/",
+   "action": "edited",
+   "newSentence": "The NHS links benign prostate enlargement to changes in hormone levels as a man gets older, and it is most common in men over 50."
+  },
+  {
+   "id": "c36",
+   "classification": "unsupported",
+   "evidence": "Prostate Cancer UK page not returned by any search",
+   "url": "https://prostatecanceruk.org/prostate-information-and-support/just-diagnosed/other-prostate-problems/enlarged-prostate",
+   "action": "removed"
+  },
+  {
+   "id": "c37",
+   "classification": "unsupported",
+   "evidence": "Not in retrieved text",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/kidneys-bladder-and-prostate/benign-prostate-enlargement/",
+   "action": "removed"
+  },
+  {
+   "id": "c38",
+   "classification": "supported",
+   "evidence": "NHS: over 50; common, not usually serious",
+   "url": "https://www.nhs.uk/conditions/enlarged-prostate/",
+   "action": "edited"
+  },
+  {
+   "id": "c39",
+   "classification": "unsupported",
+   "evidence": "NIDDK page not returned",
+   "url": "https://www.niddk.nih.gov/health-information/urologic-diseases/prostate-problems/enlarged-prostate-benign-prostatic-hyperplasia",
+   "action": "removed"
+  },
+  {
+   "id": "c40",
+   "classification": "supported",
+   "evidence": "NHS: not linked to higher prostate cancer risk; NHS England clinical director said same",
+   "url": "https://www.nhs.uk/conditions/enlarged-prostate/",
+   "action": "edited",
+   "newSentence": "The NHS says an enlarged prostate is not linked to a higher risk of prostate cancer, and a clinical director at NHS England has made the same point."
+  },
+  {
+   "id": "c41",
+   "classification": "supported",
+   "evidence": "NHS: urine and fluid diary",
+   "url": "https://www.nhs.uk/conditions/enlarged-prostate/",
+   "action": "kept"
+  },
+  {
+   "id": "c42",
+   "classification": "supported",
+   "evidence": "NHS: urine sample, PSA",
+   "url": "https://www.nhs.uk/conditions/enlarged-prostate/",
+   "action": "kept"
+  },
+  {
+   "id": "c43",
+   "classification": "unsupported",
+   "evidence": "Dipstick not in retrieved text",
+   "url": "https://www.nhs.uk/conditions/enlarged-prostate/",
+   "action": "removed"
+  },
+  {
+   "id": "c44",
+   "classification": "supported",
+   "evidence": "NHS diagnosis: doctor feels size and shape through gloved finger",
+   "url": "https://www.nhs.uk/conditions/prostate-enlargement/diagnosis/",
+   "action": "kept"
+  },
+  {
+   "id": "c45",
+   "classification": "unsupported",
+   "evidence": "Retrieved: PSA gives rough idea of size/growth; high result does not mean cancer; NHS inform: cannot give definite cancer diagnosis. \"Significantly raised may point to cancer\" not retrieved",
+   "url": "https://www.nhs.uk/conditions/prostate-enlargement/diagnosis/",
+   "action": "edited",
+   "newSentence": "NHS information says it gives a rough idea of how large the prostate may be and how quickly it is growing, and that a high result does not mean cancer."
+  },
+  {
+   "id": "c46",
+   "classification": "unsupported",
+   "evidence": "NICE CG97 not returned",
+   "url": "https://www.nice.org.uk/guidance/cg97/chapter/recommendations",
+   "action": "removed"
+  },
+  {
+   "id": "c47",
+   "classification": "supported",
+   "evidence": "NHS diagnosis: GP will want to rule out other conditions with similar symptoms",
+   "url": "https://www.nhs.uk/conditions/prostate-enlargement/diagnosis/",
+   "action": "edited"
+  },
+  {
+   "id": "c48",
+   "classification": "supported",
+   "evidence": "NHS: treatment depends on severity of symptoms",
+   "url": "https://www.nhs.uk/conditions/prostate-enlargement/treatment/",
+   "action": "kept"
+  },
+  {
+   "id": "c49",
+   "classification": "supported",
+   "evidence": "NHS: mild symptoms lifestyle first",
+   "url": "https://www.nhs.uk/conditions/prostate-enlargement/treatment/",
+   "action": "kept"
+  },
+  {
+   "id": "c50",
+   "classification": "unsupported",
+   "evidence": "Not stated in retrieved text in this form",
+   "url": "https://www.nhs.uk/conditions/enlarged-prostate/",
+   "action": "removed"
+  },
+  {
+   "id": "c51",
+   "classification": "unsupported",
+   "evidence": "Tamsulosin and alfuzosin retrieved as common alpha blockers; doxazosin not retrieved",
+   "url": "https://www.nhs.uk/conditions/prostate-enlargement/treatment/",
+   "action": "edited",
+   "newSentence": "Medicines include alpha blockers, such as tamsulosin and alfuzosin, which relax the muscles around the bladder and prostate and can make it easier to pee."
+  },
+  {
+   "id": "c52",
+   "classification": "unsupported",
+   "evidence": "Finasteride/dutasteride shrink the gland retrieved; \"high risk of worsening\" not retrieved",
+   "url": "https://www.nhs.uk/conditions/prostate-enlargement/treatment/",
+   "action": "edited",
+   "newSentence": "Finasteride and dutasteride are 5-alpha reductase inhibitors, which shrink the prostate gland."
+  },
+  {
+   "id": "c53",
+   "classification": "unsupported",
+   "evidence": "Not in retrieved text",
+   "url": "https://www.nhs.uk/conditions/prostate-enlargement/treatment/",
+   "action": "removed"
+  },
+  {
+   "id": "c54",
+   "classification": "supported",
+   "evidence": "NHS inform: surgery usually only for moderate to severe symptoms not responding to medication",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/kidneys-bladder-and-prostate/benign-prostate-enlargement/",
+   "action": "kept"
+  },
+  {
+   "id": "c55",
+   "classification": "supported",
+   "evidence": "NHS: most common surgery is TURP, removes part of prostate through thin tube up penis",
+   "url": "https://www.nhs.uk/conditions/prostate-enlargement/treatment/",
+   "action": "kept"
+  },
+  {
+   "id": "c56",
+   "classification": "unsupported",
+   "evidence": "HoLEP uses laser (retrieved); \"as effective as TURP\" not retrieved",
+   "url": "https://www.nhs.uk/conditions/prostate-enlargement/treatment/",
+   "action": "edited",
+   "newSentence": "Another option is HoLEP, which uses a laser."
+  },
+  {
+   "id": "c57",
+   "classification": "unsupported",
+   "evidence": "NIDDK not returned; Cambridge/NHS article: Rezum and UroLift offered in England",
+   "url": "https://www.cuh.nhs.uk/news/pioneering-prostate-treatment-to-be-rolled-out-across-england/",
+   "action": "edited",
+   "newSentence": "Newer minimally invasive options, including Rezum steam therapy and UroLift implants, have also been offered in England."
+  },
+  {
+   "id": "c58",
+   "classification": "supported",
+   "evidence": "Retrieved NHS text: cutting down alcohol and caffeine; \"irritate the bladder\" not retrieved",
+   "url": "https://www.nhs.uk/conditions/prostate-enlargement/treatment/",
+   "action": "edited"
+  },
+  {
+   "id": "c59",
+   "classification": "unsupported",
+   "evidence": "Evening fluids not in retrieved text",
+   "url": "https://www.nhs.uk/conditions/enlarged-prostate/",
+   "action": "removed"
+  },
+  {
+   "id": "c60",
+   "classification": "supported",
+   "evidence": "MyHealth Devon: more fibre; constipation adds bladder pressure",
+   "url": "https://myhealth-devon.nhs.uk/my-condition/condition/benign-prostatic-hyperplasia-bph/",
+   "action": "edited"
+  },
+  {
+   "id": "c61",
+   "classification": "unsupported",
+   "evidence": "Bladder training not in retrieved text",
+   "url": "https://www.nhs.uk/conditions/enlarged-prostate/",
+   "action": "removed"
+  },
+  {
+   "id": "c62",
+   "classification": "unsupported",
+   "evidence": "Decongestants/antihistamines not in retrieved text; MedlinePlus not returned",
+   "url": "https://medlineplus.gov/ency/patientinstructions/000398.htm",
+   "action": "removed"
+  },
+  {
+   "id": "c63",
+   "classification": "unsupported",
+   "evidence": "Not in retrieved text",
+   "url": "https://www.nhs.uk/conditions/enlarged-prostate/",
+   "action": "removed"
+  },
+  {
+   "id": "c64",
+   "classification": "unsupported",
+   "evidence": "\"Not usual\" not retrieved; NHS inform says can sometimes lead to UTI or acute urinary retention",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/kidneys-bladder-and-prostate/benign-prostate-enlargement/",
+   "action": "edited",
+   "newSentence": "NHS inform says benign prostate enlargement can sometimes lead to complications such as a urinary tract infection or acute urinary retention."
+  },
+  {
+   "id": "c65",
+   "classification": "supported",
+   "evidence": "NHS inform: sudden inability to pass any urine; medical emergency",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/kidneys-bladder-and-prostate/benign-prostate-enlargement/",
+   "action": "edited"
+  },
+  {
+   "id": "c66",
+   "classification": "unsafe",
+   "evidence": "999 instruction not confirmed by retrieval; A&E from MyHealth Devon (immediately, nearest A&E)",
+   "url": "https://myhealth-devon.nhs.uk/my-condition/condition/benign-prostatic-hyperplasia-bph/",
+   "action": "edited",
+   "newSentence": "MyHealth Devon lists its warning signs as suddenly not being able to pee at all, severe lower tummy pain and a swollen bladder that can be felt, and advises going immediately to the nearest A&E."
+  },
+  {
+   "id": "c67",
+   "classification": "supported",
+   "evidence": "MyHealth Devon: treated with urinary catheter (NHS inform attribution not confirmed)",
+   "url": "https://myhealth-devon.nhs.uk/my-condition/condition/benign-prostatic-hyperplasia-bph/",
+   "action": "edited",
+   "newSentence": "Treatment is usually with a urinary catheter, according to MyHealth Devon."
+  },
+  {
+   "id": "c68",
+   "classification": "supported",
+   "evidence": "NHS symptoms page: blood in urine or pain: urgent GP or NHS 111; colours not retrieved",
+   "url": "https://www.nhs.uk/conditions/prostate-enlargement/symptoms/",
+   "action": "edited"
+  },
+  {
+   "id": "c69",
+   "classification": "unsupported",
+   "evidence": "Not in retrieved form; replaced with description of GP assessment",
+   "url": "https://www.nhs.uk/conditions/prostate-enlargement/diagnosis/",
+   "action": "edited",
+   "newSentence": "A GP is the usual first contact for other urinary symptoms, and the assessment is described in the diagnosis section above."
+  },
+  {
+   "id": "c70",
+   "classification": "unsupported",
+   "evidence": "Not raising cancer risk retrieved; \"new or changing symptoms checked\" not retrieved",
+   "url": "https://www.nhs.uk/conditions/enlarged-prostate/",
+   "action": "edited"
+  },
+  {
+   "id": "c71",
+   "classification": "unsupported",
+   "evidence": "NIDDK not returned; sentence dropped",
+   "url": "https://www.nhs.uk/conditions/enlarged-prostate/",
+   "action": "removed"
+  },
+  {
+   "id": "c72",
+   "classification": "supported",
+   "evidence": "NHS: not linked to higher risk",
+   "url": "https://www.nhs.uk/conditions/enlarged-prostate/",
+   "action": "edited"
+  },
+  {
+   "id": "c73",
+   "classification": "unsupported",
+   "evidence": "Cancer similarity not retrieved; replaced by rule-out-other-conditions",
+   "url": "https://www.nhs.uk/conditions/prostate-enlargement/diagnosis/",
+   "action": "edited"
+  },
+  {
+   "id": "c74",
+   "classification": "unsupported",
+   "evidence": "Not in retrieved text",
+   "url": "https://www.nhs.uk/conditions/enlarged-prostate/",
+   "action": "removed"
+  },
+  {
+   "id": "c75",
+   "classification": "supported",
+   "evidence": "NHS: mild symptoms lifestyle first",
+   "url": "https://www.nhs.uk/conditions/prostate-enlargement/treatment/",
+   "action": "edited"
+  },
+  {
+   "id": "c76",
+   "classification": "supported",
+   "evidence": "NHS inform: surgery only for moderate/severe not responding to medication",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/kidneys-bladder-and-prostate/benign-prostate-enlargement/",
+   "action": "edited"
+  },
+  {
+   "id": "c77",
+   "classification": "unsupported",
+   "evidence": "NIDDK not returned",
+   "url": "https://www.niddk.nih.gov/health-information/urologic-diseases/prostate-problems/enlarged-prostate-benign-prostatic-hyperplasia",
+   "action": "removed"
+  },
+  {
+   "id": "c78",
+   "classification": "unsupported",
+   "evidence": "NIDDK names not returned",
+   "url": "https://www.niddk.nih.gov/health-information/urologic-diseases/prostate-problems/enlarged-prostate-benign-prostatic-hyperplasia",
+   "action": "removed"
+  },
+  {
+   "id": "c79",
+   "classification": "supported",
+   "evidence": "NHS: enlarged prostate / benign prostate enlargement, common, not usually serious",
+   "url": "https://www.nhs.uk/conditions/enlarged-prostate/",
+   "action": "edited"
+  },
+  {
+   "id": "c80",
+   "classification": "supported",
+   "evidence": "NHS inform: sudden inability to pass any urine; medical emergency",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/kidneys-bladder-and-prostate/benign-prostate-enlargement/",
+   "action": "edited"
+  },
+  {
+   "id": "c81",
+   "classification": "unsafe",
+   "evidence": "999 not confirmed; A&E from MyHealth Devon",
+   "url": "https://myhealth-devon.nhs.uk/my-condition/condition/benign-prostatic-hyperplasia-bph/",
+   "action": "edited",
+   "newSentence": "MyHealth Devon advises going immediately to the nearest A&E, and says treatment is usually with a urinary catheter."
+  },
+  {
+   "id": "c82",
+   "classification": "supported",
+   "evidence": "Catheter treatment retrieved (MyHealth Devon)",
+   "url": "https://myhealth-devon.nhs.uk/my-condition/condition/benign-prostatic-hyperplasia-bph/",
+   "action": "edited"
+  },
+  {
+   "id": "c83",
+   "classification": "supported",
+   "evidence": "NHS: mild symptoms lifestyle first",
+   "url": "https://www.nhs.uk/conditions/prostate-enlargement/treatment/",
+   "action": "kept"
+  },
+  {
+   "id": "c84",
+   "classification": "unsupported",
+   "evidence": "Alcohol, caffeine, weight, constipation, fibre retrieved; evening fluids not",
+   "url": "https://www.nhs.uk/conditions/prostate-enlargement/treatment/",
+   "action": "edited",
+   "newSentence": "The measures it lists include cutting down on alcohol and caffeine, keeping to a healthy weight and avoiding constipation."
+  },
+  {
+   "id": "c85",
+   "classification": "supported",
+   "evidence": "NHS inform: medication usually recommended as well as lifestyle changes for moderate to severe",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/kidneys-bladder-and-prostate/benign-prostate-enlargement/",
+   "action": "kept"
+  },
+  {
+   "id": "c86",
+   "classification": "unsupported",
+   "evidence": "\"Benign prostatic obstruction\" not retrieved",
+   "url": "https://www.nhs.uk/conditions/enlarged-prostate/",
+   "action": "edited",
+   "newSentence": "Benign prostate enlargement, benign prostatic hyperplasia (BPH)"
+  },
+  {
+   "id": "c87",
+   "classification": "supported",
+   "evidence": "NHS: over 50",
+   "url": "https://www.nhs.uk/conditions/enlarged-prostate/",
+   "action": "kept"
+  },
+  {
+   "id": "c88",
+   "classification": "supported",
+   "evidence": "NHS",
+   "url": "https://www.nhs.uk/conditions/enlarged-prostate/",
+   "action": "kept"
+  },
+  {
+   "id": "c89",
+   "classification": "supported",
+   "evidence": "Questionnaire, urine, PSA, rectal exam on NHS diagnosis page",
+   "url": "https://www.nhs.uk/conditions/prostate-enlargement/diagnosis/",
+   "action": "edited",
+   "newSentence": "A symptom questionnaire, a urine test, a PSA blood test and a rectal examination"
+  },
+  {
+   "id": "c90",
+   "classification": "supported",
+   "evidence": "NHS: not linked to higher risk",
+   "url": "https://www.nhs.uk/conditions/enlarged-prostate/",
+   "action": "edited",
+   "newSentence": "The NHS says it is not linked to a higher risk of prostate cancer"
+  },
+  {
+   "id": "c91",
+   "classification": "unsafe",
+   "evidence": "Emergency route: 999 not confirmed; A&E per MyHealth Devon",
+   "url": "https://myhealth-devon.nhs.uk/my-condition/condition/benign-prostatic-hyperplasia-bph/",
+   "action": "edited",
+   "newSentence": "Suddenly being unable to pass any urine: MyHealth Devon advises going immediately to the nearest A&E"
+  },
+  {
+   "id": "c92",
+   "classification": "supported",
+   "evidence": "NHS / NHS inform stepped approach",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/kidneys-bladder-and-prostate/benign-prostate-enlargement/",
+   "action": "edited",
+   "newSentence": "Lifestyle changes first for mild symptoms; medication and sometimes surgery for moderate to severe symptoms"
+  }
+ ],
+ "notes": "Search pool refused the 8th call (usage limit), so only 7 searches were used. Summaries blend pages; attributions are to the page named in results. NIDDK, NICE CG97, Prostate Cancer UK and MedlinePlus pages were never returned, so those references and claims were dropped. Emergency route: the 999 instruction attributed to NHS inform was not confirmed (NHS inform text retrieved only says medical emergency); the page now names A&E per MyHealth Devon, so a human should check nhs.uk/NHS inform wording for 999 vs A&E. NHS symptoms-page summary grouped 'unable to urinate at all' with urgent GP/111 advice, which conflicts with A&E; not used. Text edited to remove 'often does not cause any problems', dipstick, bladder training, evening fluids, decongestants, HoLEP effectiveness, doxazosin. MyHealth Devon is an NHS site but a local one."
+}
