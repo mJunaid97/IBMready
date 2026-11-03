@@ -6,7 +6,7 @@
   "urls": [
    "https://www.nhsinform.scot/tests-and-treatments/medicines-and-medical-aids/types-of-medicine/antibiotics/"
   ],
-  "note": "NHS inform: antibiotics do not work against viral infections, including colds, flu and most coughs and sore throats."
+  "note": "Second-pass search summary carried this."
  },
  {
   "where": "keyPoints[0]",
@@ -15,420 +15,358 @@
   "urls": [
    "https://www.nhsinform.scot/tests-and-treatments/medicines-and-medical-aids/types-of-medicine/antibiotics/"
   ],
-  "note": "NHS inform antibiotics page."
+  "note": "Second-pass search summary carried this."
  },
  {
   "where": "keyPoints[1]",
-  "sentence": "NHS inform says antibiotics are not often prescribed for mild bacterial infections, because the immune system can usually clear them.",
+  "sentence": "NHS England says overuse of antibiotics in recent years has played a major part in antibiotic resistance, which can lead to treatment failure.",
   "basis": "excerpt",
   "urls": [
-   "https://www.nhsinform.scot/tests-and-treatments/medicines-and-medical-aids/types-of-medicine/antibiotics/"
+   "https://www.england.nhs.uk/ourwork/prevention/antimicrobial-resistance-amr/"
   ],
-  "note": "NHS inform: not often prescribed for mild bacterial infections."
+  "note": "Second-pass search summary carried this."
  },
  {
   "where": "keyPoints[2]",
-  "sentence": "Taking antibiotics when they are not needed can make harmful bacteria resistant, so the medicine may not work when it is needed.",
+  "sentence": "NICE describes acute cough as usually self-limiting, getting better within about 3 to 4 weeks without antibiotics.",
   "basis": "excerpt",
   "urls": [
-   "https://www.nhsinform.scot/tests-and-treatments/medicines-and-medical-aids/types-of-medicine/antibiotics/"
+   "https://www.nice.org.uk/guidance/ng120/chapter/recommendations"
   ],
-  "note": "NHS inform: unnecessary use can make harmful bacteria resistant."
+  "note": "Second-pass search summary carried this."
  },
  {
   "where": "keyPoints[3]",
-  "sentence": "NHS inform says to finish a course even when feeling better, while WHO notes shorter courses may work for some infections, so sources differ in emphasis.",
+  "sentence": "A WHO commentary advises finishing a prescribed course but also says shorter courses may work for some infections, so sources differ in emphasis.",
   "basis": "excerpt",
   "urls": [
-   "https://www.nhsinform.scot/tests-and-treatments/medicines-and-medical-aids/types-of-medicine/antibiotics/",
    "https://apps.who.int/mediacentre/commentaries/stop-antibiotic-resistance/en/index.html"
   ],
-  "note": "NHS inform on finishing the course; WHO commentary on shorter courses."
+  "note": "Second-pass search summary carried this."
  },
  {
   "where": "keyPoints[4]",
-  "sentence": "For breathlessness or chest pain the NHS points to a GP, NHS 111 if the practice is closed, and 999 for severe difficulty breathing.",
+  "sentence": "For flu, NHS pages describe 999 for severe difficulty breathing, and an urgent GP or NHS 111 route for people who feel short of breath.",
+  "basis": "excerpt",
+  "urls": [
+   "https://www.nhs.uk/conditions/flu/",
+   "https://www.nhsinform.scot/illnesses-and-conditions/infections-and-poisoning/flu/"
+  ],
+  "note": "Second-pass search summary carried this."
+ },
+ {
+  "where": "body[0]",
+  "sentence": "Antibiotics are medicines used to treat or prevent some bacterial infections.",
+  "basis": "excerpt",
+  "urls": [
+   "https://www.nhsinform.scot/tests-and-treatments/medicines-and-medical-aids/types-of-medicine/antibiotics/"
+  ],
+  "note": "Verifier second pass: matched to returned summary text; some summaries blend pages (see report)."
+ },
+ {
+  "where": "body[0]",
+  "sentence": "NHS inform says they kill bacteria or stop them from reproducing and spreading.",
+  "basis": "excerpt",
+  "urls": [
+   "https://www.nhsinform.scot/tests-and-treatments/medicines-and-medical-aids/types-of-medicine/antibiotics/"
+  ],
+  "note": "Verifier second pass: matched to returned summary text; some summaries blend pages (see report)."
+ },
+ {
+  "where": "body[0]",
+  "sentence": "Antibiotics do not work against infections caused by viruses.",
+  "basis": "excerpt",
+  "urls": [
+   "https://www.nhsinform.scot/tests-and-treatments/medicines-and-medical-aids/types-of-medicine/antibiotics/"
+  ],
+  "note": "Verifier second pass: matched to returned summary text; some summaries blend pages (see report)."
+ },
+ {
+  "where": "body[0]",
+  "sentence": "NHS inform lists the common cold, flu, most coughs and most sore throats among these viral illnesses.",
+  "basis": "excerpt",
+  "urls": [
+   "https://www.nhsinform.scot/tests-and-treatments/medicines-and-medical-aids/types-of-medicine/antibiotics/"
+  ],
+  "note": "Verifier second pass: matched to returned summary text; some summaries blend pages (see report)."
+ },
+ {
+  "where": "body[0]",
+  "sentence": "Penicillins, the group that includes amoxicillin, are antibiotics, so they act on bacteria only.",
+  "basis": "textbook",
+  "urls": [],
+  "note": "Plain fact (penicillins are antibiotics)."
+ },
+ {
+  "where": "body[1]",
+  "sentence": "The NHS common cold page says GPs do not recommend antibiotics for colds, because they will not relieve symptoms or speed up recovery.",
+  "basis": "excerpt",
+  "urls": [
+   "https://www.nhs.uk/conditions/common-cold/",
+   "https://www.nhsinform.scot/illnesses-and-conditions/infections-and-poisoning/flu/",
+   "https://www.nice.org.uk/guidance/ng120/chapter/recommendations"
+  ],
+  "note": "Verifier second pass: matched to returned summary text; some summaries blend pages (see report)."
+ },
+ {
+  "where": "body[1]",
+  "sentence": "NHS inform says the same about flu.",
+  "basis": "excerpt",
+  "urls": [
+   "https://www.nhs.uk/conditions/common-cold/",
+   "https://www.nhsinform.scot/illnesses-and-conditions/infections-and-poisoning/flu/",
+   "https://www.nice.org.uk/guidance/ng120/chapter/recommendations"
+  ],
+  "note": "Verifier second pass: matched to returned summary text; some summaries blend pages (see report)."
+ },
+ {
+  "where": "body[1]",
+  "sentence": "NICE guidance on acute cough describes the illness as usually self-limiting, which means it gets better, within about 3 to 4 weeks, without antibiotics.",
+  "basis": "excerpt",
+  "urls": [
+   "https://www.nhs.uk/conditions/common-cold/",
+   "https://www.nhsinform.scot/illnesses-and-conditions/infections-and-poisoning/flu/",
+   "https://www.nice.org.uk/guidance/ng120/chapter/recommendations"
+  ],
+  "note": "Verifier second pass: matched to returned summary text; some summaries blend pages (see report)."
+ },
+ {
+  "where": "body[1]",
+  "sentence": "NICE also notes that antibiotics make little difference to how long a cough lasts.",
+  "basis": "excerpt",
+  "urls": [
+   "https://www.nhs.uk/conditions/common-cold/",
+   "https://www.nhsinform.scot/illnesses-and-conditions/infections-and-poisoning/flu/",
+   "https://www.nice.org.uk/guidance/ng120/chapter/recommendations"
+  ],
+  "note": "Verifier second pass: matched to returned summary text; some summaries blend pages (see report)."
+ },
+ {
+  "where": "body[2]",
+  "sentence": "Antibiotic resistance means that a strain of bacteria no longer responds to treatment with one or more types of antibiotic.",
+  "basis": "excerpt",
+  "urls": [
+   "https://www.england.nhs.uk/ourwork/prevention/antimicrobial-resistance-amr/",
+   "https://campaignresources.dhsc.gov.uk/campaigns/keep-antibiotics-working/"
+  ],
+  "note": "Verifier second pass: matched to returned summary text; some summaries blend pages (see report)."
+ },
+ {
+  "where": "body[2]",
+  "sentence": "NHS England says overuse of antibiotics in recent years has played a major part in it.",
+  "basis": "excerpt",
+  "urls": [
+   "https://www.england.nhs.uk/ourwork/prevention/antimicrobial-resistance-amr/",
+   "https://campaignresources.dhsc.gov.uk/campaigns/keep-antibiotics-working/"
+  ],
+  "note": "Verifier second pass: matched to returned summary text; some summaries blend pages (see report)."
+ },
+ {
+  "where": "body[2]",
+  "sentence": "It says resistance can lead to treatment failure, repeat GP appointments, hospital admissions and more.",
+  "basis": "excerpt",
+  "urls": [
+   "https://www.england.nhs.uk/ourwork/prevention/antimicrobial-resistance-amr/",
+   "https://campaignresources.dhsc.gov.uk/campaigns/keep-antibiotics-working/"
+  ],
+  "note": "Verifier second pass: matched to returned summary text; some summaries blend pages (see report)."
+ },
+ {
+  "where": "body[2]",
+  "sentence": "The UKHSA campaign Keep Antibiotics Working, listed on a Department of Health and Social Care campaign page, gives three core messages: antibiotics are not for colds and flu, which are caused by viruses; antibiotics are taken as directed by the prescriber; and leftover antibiotics are not saved, because they may not work properly and could make the problem worse.",
+  "basis": "excerpt",
+  "urls": [
+   "https://www.england.nhs.uk/ourwork/prevention/antimicrobial-resistance-amr/",
+   "https://campaignresources.dhsc.gov.uk/campaigns/keep-antibiotics-working/"
+  ],
+  "note": "Verifier second pass: matched to returned summary text; some summaries blend pages (see report)."
+ },
+ {
+  "where": "body[3]",
+  "sentence": "NHS sources describe stopping a course early as a risk: one NHS page notes that if antibiotics are stopped early, bacteria can become resistant to them.",
+  "basis": "excerpt",
+  "urls": [
+   "https://www.nhsinform.scot/tests-and-treatments/medicines-and-medical-aids/types-of-medicine/antibiotics/",
+   "https://apps.who.int/mediacentre/commentaries/stop-antibiotic-resistance/en/index.html",
+   "https://pmc.ncbi.nlm.nih.gov/articles/PMC11382136/"
+  ],
+  "note": "Verifier second pass: matched to returned summary text; some summaries blend pages (see report)."
+ },
+ {
+  "where": "body[3]",
+  "sentence": "A WHO commentary likewise advises patients to complete the prescribed course, because stopping early can favour drug-resistant bacteria.",
+  "basis": "excerpt",
+  "urls": [
+   "https://www.nhsinform.scot/tests-and-treatments/medicines-and-medical-aids/types-of-medicine/antibiotics/",
+   "https://apps.who.int/mediacentre/commentaries/stop-antibiotic-resistance/en/index.html",
+   "https://pmc.ncbi.nlm.nih.gov/articles/PMC11382136/"
+  ],
+  "note": "Verifier second pass: matched to returned summary text; some summaries blend pages (see report)."
+ },
+ {
+  "where": "body[3]",
+  "sentence": "The same commentary says evidence is emerging that shorter courses may be effective for some infections and can slow resistance by reducing how long bacteria are exposed to antibiotics.",
+  "basis": "excerpt",
+  "urls": [
+   "https://www.nhsinform.scot/tests-and-treatments/medicines-and-medical-aids/types-of-medicine/antibiotics/",
+   "https://apps.who.int/mediacentre/commentaries/stop-antibiotic-resistance/en/index.html",
+   "https://pmc.ncbi.nlm.nih.gov/articles/PMC11382136/"
+  ],
+  "note": "Verifier second pass: matched to returned summary text; some summaries blend pages (see report)."
+ },
+ {
+  "where": "body[3]",
+  "sentence": "A 2024 research review on stopping antibiotics when feeling better argues that this evidence may mean the broad public message to complete every course needs revisiting.",
+  "basis": "excerpt",
+  "urls": [
+   "https://www.nhsinform.scot/tests-and-treatments/medicines-and-medical-aids/types-of-medicine/antibiotics/",
+   "https://apps.who.int/mediacentre/commentaries/stop-antibiotic-resistance/en/index.html",
+   "https://pmc.ncbi.nlm.nih.gov/articles/PMC11382136/"
+  ],
+  "note": "Verifier second pass: matched to returned summary text; some summaries blend pages (see report)."
+ },
+ {
+  "where": "body[3]",
+  "sentence": "The sources therefore differ in emphasis.",
+  "basis": "excerpt",
+  "urls": [
+   "https://www.nhsinform.scot/tests-and-treatments/medicines-and-medical-aids/types-of-medicine/antibiotics/",
+   "https://apps.who.int/mediacentre/commentaries/stop-antibiotic-resistance/en/index.html",
+   "https://pmc.ncbi.nlm.nih.gov/articles/PMC11382136/"
+  ],
+  "note": "Verifier second pass: matched to returned summary text; some summaries blend pages (see report)."
+ },
+ {
+  "where": "body[4]",
+  "sentence": "NHS guidance on flu describes rest, fluids and paracetamol or ibuprofen for symptoms.",
   "basis": "excerpt",
   "urls": [
    "https://www.nhsinform.scot/illnesses-and-conditions/infections-and-poisoning/flu/",
-   "https://www.nhs.uk/conditions/common-cold/"
+   "https://www.nice.org.uk/guidance/ng120/chapter/recommendations",
+   "https://www.nhsinform.scot/illnesses-and-conditions/infections-and-poisoning/common-cold/"
   ],
-  "note": "NHS inform flu page and NHS common cold page, via search 6 summary."
- },
- {
-  "where": "body[0]",
-  "sentence": "Antibiotics are medicines that treat infections caused by bacteria.",
-  "basis": "excerpt",
-  "urls": [
-   "https://www.esht.nhs.uk/wp-content/uploads/2024/03/1085.pdf",
-   "https://www.royalfree.nhs.uk/patients-and-visitors/patient-information-leaflets/antibiotics"
-  ],
-  "note": "Search 1 summary of NHS trust leaflets: antibiotics treat bacterial infections; summary blends pages."
- },
- {
-  "where": "body[0]",
-  "sentence": "They work by killing bacteria or by stopping them from growing.",
-  "basis": "excerpt",
-  "urls": [
-   "https://www.esht.nhs.uk/wp-content/uploads/2024/03/1085.pdf",
-   "https://www.royalfree.nhs.uk/patients-and-visitors/patient-information-leaflets/antibiotics"
-  ],
-  "note": "Same summary: antibiotics work by killing bacteria or preventing their growth."
- },
- {
-  "where": "body[0]",
-  "sentence": "The NHS says antibiotics do not work against viral infections.",
-  "basis": "excerpt",
-  "urls": [
-   "https://www.nhsinform.scot/tests-and-treatments/medicines-and-medical-aids/types-of-medicine/antibiotics/"
-  ],
-  "note": "NHS inform page: Antibiotics do not work against viral infections."
- },
- {
-  "where": "body[0]",
-  "sentence": "That includes the common cold, flu and most coughs and sore throats.",
-  "basis": "excerpt",
-  "urls": [
-   "https://www.nhsinform.scot/tests-and-treatments/medicines-and-medical-aids/types-of-medicine/antibiotics/"
-  ],
-  "note": "NHS inform page: this includes the common cold, flu, most coughs and sore throats."
- },
- {
-  "where": "body[1]",
-  "sentence": "In the UK, antibiotics are only available on prescription from a doctor or a dentist.",
-  "basis": "excerpt",
-  "urls": [
-   "https://www.esht.nhs.uk/wp-content/uploads/2024/03/1085.pdf",
-   "https://www.royalfree.nhs.uk/patients-and-visitors/patient-information-leaflets/antibiotics"
-  ],
-  "note": "Search 1 summary of trust leaflets."
- },
- {
-  "where": "body[1]",
-  "sentence": "The NHS says they are used for serious bacterial infections, such as sepsis, pneumonia, gonorrhoea and meningococcal meningitis.",
-  "basis": "excerpt",
-  "urls": [
-   "https://www.nhsinform.scot/tests-and-treatments/medicines-and-medical-aids/types-of-medicine/antibiotics/"
-  ],
-  "note": "NHS inform listing serious bacterial infections needing antibiotics."
- },
- {
-  "where": "body[1]",
-  "sentence": "NHS inform says antibiotics are not often prescribed for mild bacterial infections, because the immune system can usually clear these on its own.",
-  "basis": "excerpt",
-  "urls": [
-   "https://www.nhsinform.scot/tests-and-treatments/medicines-and-medical-aids/types-of-medicine/antibiotics/"
-  ],
-  "note": "NHS inform: not often prescribed for mild bacterial infections as immune system usually clears them."
- },
- {
-  "where": "body[1]",
-  "sentence": "NHS 111 Wales says antibiotics are no longer routinely used for chest infections, ear infections in children or sore throats.",
-  "basis": "excerpt",
-  "urls": [
-   "https://111.wales.nhs.uk/antibiotics/"
-  ],
-  "note": "Search 3 summary of NHS 111 Wales page."
- },
- {
-  "where": "body[1]",
-  "sentence": "Amoxicillin, which this site describes on its own page, belongs to a family of antibiotics called the penicillins.",
-  "basis": "textbook",
-  "urls": [],
-  "note": "Plain undisputed fact, not from a retrieved page."
- },
- {
-  "where": "body[1]",
-  "sentence": "A penicillin works only on bacteria, so it has no effect on a cold or flu virus.",
-  "basis": "excerpt",
-  "urls": [
-   "https://www.nhsinform.scot/tests-and-treatments/medicines-and-medical-aids/types-of-medicine/antibiotics/"
-  ],
-  "note": "Follows from NHS inform statement that antibiotics do not work against viral infections; amoxicillin is a penicillin per site page."
- },
- {
-  "where": "body[2]",
-  "sentence": "All colds and most coughs and sore throats are caused by viruses, according to NHS trust leaflets, which is why antibiotics are not the answer for them.",
-  "basis": "excerpt",
-  "urls": [
-   "https://www.esht.nhs.uk/wp-content/uploads/2024/03/1085.pdf",
-   "https://www.royalfree.nhs.uk/patients-and-visitors/patient-information-leaflets/antibiotics"
-  ],
-  "note": "Search 1 summary: all colds and most coughs and sore throats are caused by viruses."
- },
- {
-  "where": "body[2]",
-  "sentence": "The NHS says the common cold is caused by a virus, so antibiotics are not used to treat it.",
-  "basis": "excerpt",
-  "urls": [
-   "https://www.nhs.uk/conditions/common-cold/"
-  ],
-  "note": "Search 6 summary: NHS common cold page says colds are caused by viruses and not treated with antibiotics."
- },
- {
-  "where": "body[2]",
-  "sentence": "NHS inform says GPs do not recommend antibiotics for flu, because they will not relieve symptoms or speed up recovery.",
-  "basis": "excerpt",
-  "urls": [
-   "https://www.nhsinform.scot/illnesses-and-conditions/infections-and-poisoning/flu/"
-  ],
-  "note": "Search 6 summary of NHS inform flu page."
- },
- {
-  "where": "body[2]",
-  "sentence": "NICE guidance on acute cough says the illness is usually self-limiting, which means it gets better without antibiotics.",
-  "basis": "excerpt",
-  "urls": [
-   "https://www.nice.org.uk/guidance/ng120/chapter/recommendations"
-  ],
-  "note": "Search 6 summary of NICE NG120 recommendations."
- },
- {
-  "where": "body[2]",
-  "sentence": "Trust leaflets reported in search results add that most coughs and colds get better just as quickly without antibiotics.",
-  "basis": "excerpt",
-  "urls": [
-   "https://www.esht.nhs.uk/wp-content/uploads/2024/03/1085.pdf",
-   "https://www.royalfree.nhs.uk/patients-and-visitors/patient-information-leaflets/antibiotics"
-  ],
-  "note": "Search 1 summary; blended from NHS trust leaflets."
- },
- {
-  "where": "body[3]",
-  "sentence": "Bacteria can adapt so that an antibiotic no longer works against them, which is called antibiotic resistance.",
-  "basis": "excerpt",
-  "urls": [
-   "https://www.esht.nhs.uk/wp-content/uploads/2024/03/1085.pdf",
-   "https://www.royalfree.nhs.uk/patients-and-visitors/patient-information-leaflets/antibiotics"
-  ],
-  "note": "Search 1 summary: bacteria adapt and become antibiotic resistant."
- },
- {
-  "where": "body[3]",
-  "sentence": "NHS inform says taking antibiotics when they are not needed can make harmful bacteria in the body resistant.",
-  "basis": "excerpt",
-  "urls": [
-   "https://www.nhsinform.scot/tests-and-treatments/medicines-and-medical-aids/types-of-medicine/antibiotics/"
-  ],
-  "note": "NHS inform: taking antibiotics when you do not need them can cause harmful bacteria inside you to become resistant."
- },
- {
-  "where": "body[3]",
-  "sentence": "That means the medicine may not work when it is needed.",
-  "basis": "excerpt",
-  "urls": [
-   "https://www.nhsinform.scot/tests-and-treatments/medicines-and-medical-aids/types-of-medicine/antibiotics/"
-  ],
-  "note": "Same NHS inform sentence."
- },
- {
-  "where": "body[3]",
-  "sentence": "Trust leaflets also point out that fewer new antibiotics have been discovered in recent years.",
-  "basis": "excerpt",
-  "urls": [
-   "https://www.esht.nhs.uk/wp-content/uploads/2024/03/1085.pdf",
-   "https://www.royalfree.nhs.uk/patients-and-visitors/patient-information-leaflets/antibiotics"
-  ],
-  "note": "Search 1 summary."
- },
- {
-  "where": "body[3]",
-  "sentence": "A UKHSA campaign called Keep Antibiotics Working, as summarised by a local NHS body, says leftover antibiotics are not to be saved, because they may not work properly and may add to resistance.",
-  "basis": "excerpt",
-  "urls": [
-   "https://www.midandsouthessex.ics.nhs.uk/news/keep-antibiotics-working-join-the-fight-against-antimicrobial-resistance/"
-  ],
-  "note": "Search 2 summary of Mid and South Essex ICS page; UKHSA's own page was not returned."
- },
- {
-  "where": "body[3]",
-  "sentence": "NHS pages say unused antibiotics should go back to a pharmacy rather than be saved or shared.",
-  "basis": "excerpt",
-  "urls": [
-   "https://www.midandsouthessex.ics.nhs.uk/news/keep-antibiotics-working-join-the-fight-against-antimicrobial-resistance/",
-   "https://www.esht.nhs.uk/wp-content/uploads/2024/03/1085.pdf"
-  ],
-  "note": "Searches 2 and 5 summaries; leaflet wording on returning unused antibiotics to a pharmacy."
+  "note": "Verifier second pass: matched to returned summary text; some summaries blend pages (see report)."
  },
  {
   "where": "body[4]",
-  "sentence": "NHS inform says a course of antibiotics must be finished even when the person feels better.",
+  "sentence": "A local NHS page on colds says most colds do not need a visit to the GP and that pharmacists can advise on suitable medicines.",
   "basis": "excerpt",
   "urls": [
-   "https://www.nhsinform.scot/tests-and-treatments/medicines-and-medical-aids/types-of-medicine/antibiotics/"
+   "https://www.nhsinform.scot/illnesses-and-conditions/infections-and-poisoning/flu/",
+   "https://www.nice.org.uk/guidance/ng120/chapter/recommendations",
+   "https://www.nhsinform.scot/illnesses-and-conditions/infections-and-poisoning/common-cold/"
   ],
-  "note": "NHS inform: You must finish taking your course of antibiotics, even if you feel better."
+  "note": "Verifier second pass: matched to returned summary text; some summaries blend pages (see report)."
  },
  {
   "where": "body[4]",
-  "sentence": "It says that stopping early can let bacteria become resistant to the antibiotic.",
+  "sentence": "NICE lists honey as a self-care option for acute cough in people older than one year, although it describes the evidence as weak.",
   "basis": "excerpt",
   "urls": [
-   "https://www.nhsinform.scot/tests-and-treatments/medicines-and-medical-aids/types-of-medicine/antibiotics/"
+   "https://www.nhsinform.scot/illnesses-and-conditions/infections-and-poisoning/flu/",
+   "https://www.nice.org.uk/guidance/ng120/chapter/recommendations",
+   "https://www.nhsinform.scot/illnesses-and-conditions/infections-and-poisoning/common-cold/"
   ],
-  "note": "NHS inform: if you stop early, bacteria can become resistant."
- },
- {
-  "where": "body[4]",
-  "sentence": "An NHS trust leaflet frames this as finishing the full prescribed course unless a healthcare professional says otherwise.",
-  "basis": "excerpt",
-  "urls": [
-   "https://www.royalberkshire.nhs.uk/media/j2kn3hg3/antibiotics_jun25.pdf"
-  ],
-  "note": "Search 2 summary of Royal Berkshire leaflet."
- },
- {
-  "where": "body[4]",
-  "sentence": "The WHO has an older commentary that also tells people to complete the full prescription, because stopping early can promote drug-resistant bacteria.",
-  "basis": "excerpt",
-  "urls": [
-   "https://apps.who.int/mediacentre/commentaries/stop-antibiotic-resistance/en/index.html"
-  ],
-  "note": "Search 4 summary of WHO commentary."
- },
- {
-  "where": "body[4]",
-  "sentence": "The same WHO commentary says evidence is emerging that shorter courses may work for some infections, and that WHO is updating its guidelines on prescribing.",
-  "basis": "excerpt",
-  "urls": [
-   "https://apps.who.int/mediacentre/commentaries/stop-antibiotic-resistance/en/index.html"
-  ],
-  "note": "Search 4 summary of WHO commentary."
- },
- {
-  "where": "body[4]",
-  "sentence": "Published research reviews also discuss whether advice to complete every course should change, and describe stopping when better as an idea still being studied.",
-  "basis": "excerpt",
-  "urls": [
-   "https://pmc.ncbi.nlm.nih.gov/articles/PMC11382136/"
-  ],
-  "note": "Search 4: 2024 review 'Stop antibiotics when you feel better?' as summarised."
- },
- {
-  "where": "body[4]",
-  "sentence": "So the sources differ in emphasis, and the NHS leaflets point back to the prescriber's instructions for a particular course.",
-  "basis": "excerpt",
-  "urls": [
-   "https://www.royalberkshire.nhs.uk/media/j2kn3hg3/antibiotics_jun25.pdf",
-   "https://www.nhsinform.scot/tests-and-treatments/medicines-and-medical-aids/types-of-medicine/antibiotics/"
-  ],
-  "note": "Synthesis of the above; Royal Berkshire says unless a professional says otherwise."
+  "note": "Verifier second pass: matched to returned summary text; some summaries blend pages (see report)."
  },
  {
   "where": "body[5]",
-  "sentence": "Trust leaflets describe the usual advice for colds and coughs as rest and fluids, with over-the-counter remedies if needed.",
+  "sentence": "NHS trust leaflets list feeling sick, vomiting, diarrhoea and bloating as the most common side effects of antibiotics.",
   "basis": "excerpt",
   "urls": [
    "https://www.esht.nhs.uk/wp-content/uploads/2024/03/1085.pdf",
-   "https://www.royalfree.nhs.uk/patients-and-visitors/patient-information-leaflets/antibiotics"
-  ],
-  "note": "Search 1 summary."
- },
- {
-  "where": "body[5]",
-  "sentence": "The NHS common cold page says a pharmacist can advise on over-the-counter medicines, and lists paracetamol or ibuprofen for aches or a high temperature.",
-  "basis": "excerpt",
-  "urls": [
-   "https://www.nhs.uk/conditions/common-cold/"
-  ],
-  "note": "Search 6 summary of NHS common cold page."
- },
- {
-  "where": "body[5]",
-  "sentence": "NICE says honey may be used for cough in people older than one year.",
-  "basis": "excerpt",
-  "urls": [
-   "https://www.nice.org.uk/guidance/ng120/chapter/recommendations"
-  ],
-  "note": "Search 6 summary: NICE recommends honey for cough in people aged over 1 year."
- },
- {
-  "where": "body[5]",
-  "sentence": "NICE also says limited evidence suggests antihistamines, decongestants and codeine-containing cough medicines do not help cough symptoms.",
-  "basis": "excerpt",
-  "urls": [
-   "https://www.nice.org.uk/guidance/ng120/chapter/recommendations"
-  ],
-  "note": "Search 6 summary of NICE NG120."
- },
- {
-  "where": "body[6]",
-  "sentence": "The NHS common cold page advises seeing a GP for shortness of breath or chest pain.",
-  "basis": "excerpt",
-  "urls": [
-   "https://www.nhs.uk/conditions/common-cold/"
-  ],
-  "note": "Search 6 summary of NHS common cold page."
- },
- {
-  "where": "body[6]",
-  "sentence": "NHS inform says to contact the GP urgently when someone is more short of breath than usual or is coughing up blood.",
-  "basis": "excerpt",
-  "urls": [
-   "https://www.nhsinform.scot/illnesses-and-conditions/infections-and-poisoning/flu/"
-  ],
-  "note": "Search 6 summary of NHS inform flu page."
- },
- {
-  "where": "body[6]",
-  "sentence": "It adds that NHS 111 can be called when the GP practice is closed.",
-  "basis": "excerpt",
-  "urls": [
-   "https://www.nhsinform.scot/illnesses-and-conditions/infections-and-poisoning/flu/"
-  ],
-  "note": "Same summary."
- },
- {
-  "where": "body[6]",
-  "sentence": "NHS inform says to call 999 for severe difficulty breathing, such as struggling to speak without pausing, gasping or choking.",
-  "basis": "excerpt",
-  "urls": [
-   "https://www.nhsinform.scot/illnesses-and-conditions/infections-and-poisoning/flu/"
-  ],
-  "note": "Same summary."
- },
- {
-  "where": "body[6]",
-  "sentence": "It also lists severe chest pain in the middle of the chest that does not go away, pain spreading to the arms, back, neck or jaw, and feeling more drowsy than usual or finding it harder to wake.",
-  "basis": "excerpt",
-  "urls": [
-   "https://www.nhsinform.scot/illnesses-and-conditions/infections-and-poisoning/flu/"
-  ],
-  "note": "Same summary."
- },
- {
-  "where": "body[6]",
-  "sentence": "After an antibiotic course, a trust leaflet advises contacting a doctor about a high temperature, feeling unwell or symptoms that persist or come back.",
-  "basis": "excerpt",
-  "urls": [
-   "https://www.esht.nhs.uk/wp-content/uploads/2024/03/1085.pdf",
-   "https://www.royalfree.nhs.uk/patients-and-visitors/patient-information-leaflets/antibiotics"
-  ],
-  "note": "Search 1 summary."
- },
- {
-  "where": "body[6]",
-  "sentence": "A trust leaflet lists feeling sick, diarrhoea and bloating as common reactions to antibiotics, and says some people have an allergic reaction with a rash, swelling or difficulty breathing.",
-  "basis": "excerpt",
-  "urls": [
    "https://www.chelwest.nhs.uk/your-visit/patient-leaflets/medicine-services/antibiotics"
   ],
-  "note": "Search 4 summary of Chelsea and Westminster leaflet."
+  "note": "Verifier second pass: matched to returned summary text; some summaries blend pages (see report)."
  },
  {
-  "where": "body[6]",
-  "sentence": "For urgent advice that cannot wait, NHS 111 is the route, and 999 is for emergencies such as severe difficulty breathing.",
+  "where": "body[5]",
+  "sentence": "Allergic reactions are rarer but can be serious, with swelling of the face or tongue and difficulty breathing as warning signs.",
   "basis": "excerpt",
   "urls": [
-   "https://www.nhsinform.scot/illnesses-and-conditions/infections-and-poisoning/flu/"
+   "https://www.esht.nhs.uk/wp-content/uploads/2024/03/1085.pdf",
+   "https://www.chelwest.nhs.uk/your-visit/patient-leaflets/medicine-services/antibiotics"
   ],
-  "note": "NHS inform flu page: 999 for severe difficulty breathing; 111 when GP closed."
+  "note": "Verifier second pass: matched to returned summary text; some summaries blend pages (see report)."
+ },
+ {
+  "where": "body[5]",
+  "sentence": "One leaflet says anyone with difficulty breathing, dizziness or collapse should call 999.",
+  "basis": "excerpt",
+  "urls": [
+   "https://www.esht.nhs.uk/wp-content/uploads/2024/03/1085.pdf",
+   "https://www.chelwest.nhs.uk/your-visit/patient-leaflets/medicine-services/antibiotics"
+  ],
+  "note": "Verifier second pass: matched to returned summary text; some summaries blend pages (see report)."
+ },
+ {
+  "where": "body[5]",
+  "sentence": "Severe diarrhoea can be a symptom of C. difficile infection, and the same leaflet says to contact the GP if diarrhoea continues after the course ends.",
+  "basis": "excerpt",
+  "urls": [
+   "https://www.esht.nhs.uk/wp-content/uploads/2024/03/1085.pdf",
+   "https://www.chelwest.nhs.uk/your-visit/patient-leaflets/medicine-services/antibiotics"
+  ],
+  "note": "Verifier second pass: matched to returned summary text; some summaries blend pages (see report)."
+ },
+ {
+  "where": "body[5]",
+  "sentence": "A pharmacist or GP can answer questions about a particular medicine.",
+  "basis": "excerpt",
+  "urls": [
+   "https://www.esht.nhs.uk/wp-content/uploads/2024/03/1085.pdf",
+   "https://www.chelwest.nhs.uk/your-visit/patient-leaflets/medicine-services/antibiotics"
+  ],
+  "note": "Verifier second pass: matched to returned summary text; some summaries blend pages (see report)."
  },
  {
   "where": "body[6]",
-  "sentence": "For non-urgent questions about a medicine, a pharmacist or GP can help.",
-  "basis": "textbook",
-  "urls": [],
-  "note": "Routing statement used across the site."
+  "sentence": "NHS inform says to call 999 for severe difficulty breathing.",
+  "basis": "excerpt",
+  "urls": [
+   "https://www.nhsinform.scot/illnesses-and-conditions/infections-and-poisoning/flu/",
+   "https://www.nhs.uk/conditions/flu/"
+  ],
+  "note": "Verifier second pass: matched to returned summary text; some summaries blend pages (see report)."
+ },
+ {
+  "where": "body[6]",
+  "sentence": "NHS England's flu page lists sudden chest pain, severe breathing trouble and coughing up blood as reasons for emergency care, by calling 999 or going to A&E.",
+  "basis": "excerpt",
+  "urls": [
+   "https://www.nhsinform.scot/illnesses-and-conditions/infections-and-poisoning/flu/",
+   "https://www.nhs.uk/conditions/flu/"
+  ],
+  "note": "Verifier second pass: matched to returned summary text; some summaries blend pages (see report)."
+ },
+ {
+  "where": "body[6]",
+  "sentence": "NHS inform adds lips or skin turning blue or grey, and being harder to wake than usual.",
+  "basis": "excerpt",
+  "urls": [
+   "https://www.nhsinform.scot/illnesses-and-conditions/infections-and-poisoning/flu/",
+   "https://www.nhs.uk/conditions/flu/"
+  ],
+  "note": "Verifier second pass: matched to returned summary text; some summaries blend pages (see report)."
+ },
+ {
+  "where": "body[6]",
+  "sentence": "NHS flu pages place people who feel short of breath, and people at higher risk of complications, in an urgent group for a same-day GP appointment or NHS 111.",
+  "basis": "excerpt",
+  "urls": [
+   "https://www.nhsinform.scot/illnesses-and-conditions/infections-and-poisoning/flu/",
+   "https://www.nhs.uk/conditions/flu/"
+  ],
+  "note": "Verifier second pass: matched to returned summary text; some summaries blend pages (see report)."
+ },
+ {
+  "where": "body[6]",
+  "sentence": "Questions that are not urgent can go to a pharmacist or the GP.",
+  "basis": "excerpt",
+  "urls": [
+   "https://www.nhsinform.scot/illnesses-and-conditions/infections-and-poisoning/flu/",
+   "https://www.nhs.uk/conditions/flu/"
+  ],
+  "note": "Verifier second pass: matched to returned summary text; some summaries blend pages (see report)."
  }
 ]
