@@ -1,0 +1,324 @@
+{
+ "id": "colonoscopy-preparation-and-what-happens",
+ "searchesUsed": 6,
+ "counts": {
+  "supported": 16,
+  "textbook": 1,
+  "unsupported": 17,
+  "wrong": 1,
+  "unsafe": 1,
+  "unchecked": 0
+ },
+ "claims": [
+  {
+   "id": "c01",
+   "sentence": "The NHS says a colonoscopy is often done to find the cause of bowel symptoms.",
+   "classification": "unsupported",
+   "evidence": "MedlinePlus (US source) says doctors order colonoscopy for symptoms such as abdominal pain, changes in bowel movements or weight loss. The NHS wording was not retrieved.",
+   "url": "https://medlineplus.gov/ency/article/003886.htm",
+   "action": "edited",
+   "newSentence": "A colonoscopy is often done to look for the cause of bowel symptoms, such as abdominal pain or a change in bowel habit."
+  },
+  {
+   "id": "c02",
+   "sentence": "Other reasons include looking for early signs of bowel cancer in people at high risk, and checking after earlier treatment for bowel cancer.",
+   "classification": "unsupported",
+   "evidence": "MedlinePlus (US) lists follow-up of earlier polyps or colon cancer. 'Early signs in people at high risk' not retrieved.",
+   "url": "https://medlineplus.gov/ency/article/003886.htm",
+   "action": "edited",
+   "newSentence": "Colonoscopy is also used to follow up after earlier polyps or bowel cancer, according to MedlinePlus, a US source."
+  },
+  {
+   "id": "c03",
+   "sentence": "People who have had polyps removed before, or who have a family history of bowel cancer, may also be referred.",
+   "classification": "unsupported",
+   "evidence": "Retrieved PMC text: repeat colonoscopy is routinely recommended after polyp removal; family history at least doubles risk. No text on referral for family history.",
+   "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10388570/",
+   "action": "edited",
+   "newSentence": "People who have had polyps removed before are routinely advised to have repeat colonoscopies."
+  },
+  {
+   "id": "c04",
+   "sentence": "For a clear view, the bowel needs to be empty.",
+   "classification": "supported",
+   "evidence": "MedlinePlus: the colon must be emptied first because problems may be missed if the intestines are not cleaned out (US source).",
+   "url": "https://medlineplus.gov/ency/article/003886.htm",
+   "action": "kept"
+  },
+  {
+   "id": "c05",
+   "sentence": "Trusts generally prescribe a laxative solution, often a powder mixed with water, to empty the bowel.",
+   "classification": "unsupported",
+   "evidence": "Laxatives are mentioned (MedlinePlus, US) but 'trusts generally' and 'powder mixed with water' were not retrieved.",
+   "url": "https://medlineplus.gov/ency/article/003886.htm",
+   "action": "edited",
+   "newSentence": "Preparation can include laxatives to empty the bowel."
+  },
+  {
+   "id": "c06",
+   "sentence": "One trust describes the preparation as taking laxatives, cutting down on fibre, and stopping all food in the last few hours beforehand.",
+   "classification": "unsupported",
+   "evidence": "Not retrieved for a specific trust. MedlinePlus (US) says prep can include enemas, clear liquids the day before and laxatives.",
+   "url": "https://medlineplus.gov/ency/article/003886.htm",
+   "action": "edited",
+   "newSentence": "Preparation can include clear liquids the day before and laxatives, according to MedlinePlus, a US source."
+  },
+  {
+   "id": "c07",
+   "sentence": "Leaflets warn of frequent diarrhoea, cramping and nausea, and advise staying near a toilet.",
+   "classification": "unsupported",
+   "evidence": "A review (PMC) lists vomiting, colicky stomach ache and dizziness among the most common prep problems; diarrhoea and 'stay near a toilet' not retrieved.",
+   "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8947288/",
+   "action": "edited",
+   "newSentence": "A review of bowel preparation lists vomiting, colicky stomach ache and dizziness among the most common problems."
+  },
+  {
+   "id": "c08",
+   "sentence": "One trust notes that the laxative can cause dehydration, light-headedness, low blood pressure or kidney problems.",
+   "classification": "unsupported",
+   "evidence": "Review did not give kidney problems or low blood pressure from prep; not confirmed.",
+   "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8947288/",
+   "action": "removed"
+  },
+  {
+   "id": "c09",
+   "sentence": "Preparation details differ between trusts, and the hospital sends its own instructions.",
+   "classification": "unsupported",
+   "evidence": "Only partly: MedlinePlus says the type of prep depends on what the doctor recommends. 'Hospital sends own instructions' not retrieved verbatim.",
+   "url": "https://medlineplus.gov/ency/article/003886.htm",
+   "action": "edited",
+   "newSentence": "Preparation depends on which type the doctor recommends, and it can differ between hospitals."
+  },
+  {
+   "id": "c10",
+   "sentence": "A nurse sees the person first to discuss their medical history, carry out simple checks and explain what will happen.",
+   "classification": "supported",
+   "evidence": "NHS pages: a nurse checks details, explains the procedure and risks, and checks pulse, blood pressure and oxygen levels.",
+   "url": "https://www.nhs.uk/tests-and-treatments/colonoscopy/what-happens-on-the-day/",
+   "action": "kept"
+  },
+  {
+   "id": "c11",
+   "sentence": "A thin, flexible tube with a camera is passed through the anus and around the large bowel.",
+   "classification": "supported",
+   "evidence": "NHS pages: a thin, flexible tube with a camera goes in through the anus.",
+   "url": "https://www.nhs.uk/tests-and-treatments/colonoscopy/what-happens-on-the-day/",
+   "action": "kept"
+  },
+  {
+   "id": "c12",
+   "sentence": "Air is pumped in to open the bowel, which can cause bloating or cramps.",
+   "classification": "supported",
+   "evidence": "NHS pages: air or gas is passed through the tube to open the bowel; can cause bloating and cramping.",
+   "url": "https://www.nhs.uk/tests-and-treatments/colonoscopy/what-happens-on-the-day/",
+   "action": "kept"
+  },
+  {
+   "id": "c13",
+   "sentence": "The NHS says a colonoscopy can be uncomfortable but should not be painful.",
+   "classification": "supported",
+   "evidence": "NHS says the camera may be felt going in but it should not hurt; cramping is common. One trust leaflet warns it can sometimes be quite painful.",
+   "url": "https://www.nhs.uk/tests-and-treatments/colonoscopy/",
+   "action": "kept"
+  },
+  {
+   "id": "c14",
+   "sentence": "The procedure itself takes about 30 to 45 minutes, and a person may be at the hospital for about two hours in total.",
+   "classification": "supported",
+   "evidence": "NHS England says it should take 30 to 45 minutes and you might be at the hospital for around 2 hours. Other trusts quote different times; unattributed sentence should name the source.",
+   "url": "https://www.england.nhs.uk/long-read/your-guide-to-nhs-bowel-cancer-screening/",
+   "action": "edited",
+   "newSentence": "NHS England says a colonoscopy should take 30 to 45 minutes, and a person may be at the hospital for around two hours in total."
+  },
+  {
+   "id": "c15",
+   "sentence": "A leaflet says some people have sedation, some breathe a pain-relieving gas called Entonox, and some have no pain relief.",
+   "classification": "supported",
+   "evidence": "Trust pages: choice of sedation, Entonox (gas and air) or neither.",
+   "url": "https://www.nhs.uk/tests-and-treatments/colonoscopy/what-happens-on-the-day/",
+   "action": "kept"
+  },
+  {
+   "id": "c16",
+   "sentence": "Sedation is given through a small needle in the back of the hand.",
+   "classification": "unsupported",
+   "evidence": "Sources say sedation goes through a cannula in the hand or arm; 'needle in back of hand' not retrieved.",
+   "url": "https://www.nhs.uk/tests-and-treatments/colonoscopy/what-happens-on-the-day/",
+   "action": "edited",
+   "newSentence": "Sedation is given through a thin tube called a cannula in the hand or arm."
+  },
+  {
+   "id": "c17",
+   "sentence": "Polyps are growths on the bowel lining, and they are usually not cancer.",
+   "classification": "supported",
+   "evidence": "PMC text: most polyps are benign; hyperplastic polyps carry no cancer risk, adenomas can progress.",
+   "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10388570/",
+   "action": "kept"
+  },
+  {
+   "id": "c18",
+   "sentence": "It is not possible to tell by looking whether a polyp contains cancer cells, so polyps are removed and examined under a microscope.",
+   "classification": "unsupported",
+   "evidence": "PMC text: the physician usually cannot tell polyp type by eye, so suspicious polyps are usually removed and sent for microscope examination. 'Not possible' is stronger than retrieved.",
+   "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10388570/",
+   "action": "edited",
+   "newSentence": "Doctors usually cannot tell the type of polyp just by looking, so suspicious polyps are usually removed and examined under a microscope."
+  },
+  {
+   "id": "c19",
+   "sentence": "Staff can also take small tissue samples, called biopsies, which is painless.",
+   "classification": "supported",
+   "evidence": "MedlinePlus (US) and trusts: tissue samples are taken with forceps or snare and patients typically do not feel it.",
+   "url": "https://medlineplus.gov/ency/article/003886.htm",
+   "action": "edited",
+   "newSentence": "Staff can also take small tissue samples, called biopsies, which people typically do not feel."
+  },
+  {
+   "id": "c20",
+   "sentence": "Afterwards the person is usually told whether any polyps were removed or samples taken.",
+   "classification": "unsupported",
+   "evidence": "MedlinePlus (US): some findings are shared after sedation wears off; 'usually told whether polyps removed' not retrieved.",
+   "url": "https://medlineplus.gov/ency/article/003886.htm",
+   "action": "edited",
+   "newSentence": "Some findings may be shared once the sedation has worn off, according to MedlinePlus, a US source."
+  },
+  {
+   "id": "c21",
+   "sentence": "The NHS describes colonoscopy as a common and straightforward procedure.",
+   "classification": "unsupported",
+   "evidence": "Not retrieved as an NHS statement. Trust leaflets describe colonoscopy as very safe with serious complications rare.",
+   "url": "https://www.hey.nhs.uk/patient-leaflet/colonoscopy-2/",
+   "action": "edited",
+   "newSentence": "NHS trust leaflets describe colonoscopy as very safe, with serious complications rare."
+  },
+  {
+   "id": "c22",
+   "sentence": "The main risks are a tear in the bowel wall, called perforation, and bleeding.",
+   "classification": "supported",
+   "evidence": "MedlinePlus (US) and trust leaflets: bleeding and perforation are the main complications.",
+   "url": "https://medlineplus.gov/ency/article/003886.htm",
+   "action": "kept"
+  },
+  {
+   "id": "c23",
+   "sentence": "Trust leaflets give perforation figures that differ, and one says it happens to about one person in 1,000 nationally.",
+   "classification": "unsupported",
+   "evidence": "Trust leaflets give about 1 in 1,500, less than 1 in 1,700 and about 1 in 1,000 procedures. 'Nationally' not retrieved.",
+   "url": "https://www.hey.nhs.uk/patient-leaflet/colonoscopy-2/",
+   "action": "edited",
+   "newSentence": "Trust leaflets give perforation figures that differ, and one says about 1 in 1,000 procedures."
+  },
+  {
+   "id": "c24",
+   "sentence": "The risk rises when polyps are removed, especially large or complex ones.",
+   "classification": "supported",
+   "evidence": "Trust leaflets: polyp removal raises bleeding and perforation risk; one gives 1 in 500 to 1 in 20 depending on polyp size, location and difficulty.",
+   "url": "https://www.nth.nhs.uk/resources/colonoscopy/",
+   "action": "kept"
+  },
+  {
+   "id": "c25",
+   "sentence": "Sometimes a hole can be closed with clips during the procedure.",
+   "classification": "unsupported",
+   "evidence": "Clip closure not retrieved. Leaflets say repair often needs surgery; one says antibiotics and rest can sometimes settle it.",
+   "url": "https://www.nth.nhs.uk/resources/colonoscopy/",
+   "action": "edited",
+   "newSentence": "A perforation is treated in hospital, and surgery is sometimes needed, according to NHS trust leaflets."
+  },
+  {
+   "id": "c26",
+   "sentence": "It is common to pass a small amount of blood from the anus after a biopsy or polyp removal.",
+   "classification": "supported",
+   "evidence": "Trust leaflets: small amounts of blood are expected after biopsy or polyp removal; North Tees says it can occur up to 2 weeks later.",
+   "url": "https://www.nth.nhs.uk/resources/colonoscopy/",
+   "action": "kept"
+  },
+  {
+   "id": "c27",
+   "sentence": "Colonoscopy is very accurate, but occasionally a problem, including rarely a cancer, can be missed.",
+   "classification": "unsupported",
+   "evidence": "Frimley leaflet: chance of missing cancer or a polyp approx 3 in 100; other trusts say occasional, rarely cancer. 'Very accurate' not retrieved.",
+   "url": "https://www.fhft.nhs.uk/patients-and-visitors/patient-information-library/colonoscopy-bowel-cancer-screening",
+   "action": "edited",
+   "newSentence": "Trust leaflets say a colonoscopy can occasionally miss a problem, including, rarely, a cancer."
+  },
+  {
+   "id": "c28",
+   "sentence": "Severe belly pain, heavy bleeding or a fever after the test needs urgent help: NHS 111 or the hospital unit, and 999 if it is severe.",
+   "classification": "unsupported",
+   "evidence": "NHS colonoscopy page: call 111 or the hospital for some symptoms, 999 or A&E for more serious ones; full symptom list not retrieved, so specific symptoms (fever, heavy bleeding) not confirmed.",
+   "url": "https://www.nhs.uk/tests-and-treatments/colonoscopy/",
+   "action": "edited",
+   "newSentence": "The NHS says to call NHS 111 or the hospital where the test was done for some symptoms after a colonoscopy, and to call 999 or go to A&E for more serious ones; its page lists which symptoms apply."
+  },
+  {
+   "id": "c29",
+   "sentence": "A letter or call with the results usually comes two to three weeks after a colonoscopy.",
+   "classification": "supported",
+   "evidence": "NHS trust pages: letter or call about 2 to 3 weeks after; other trusts quote longer waits for biopsy results.",
+   "url": "https://www.nhs.uk/tests-and-treatments/colonoscopy/what-happens-on-the-day/",
+   "action": "edited",
+   "newSentence": "Some NHS trusts say a letter or call with the results comes about two to three weeks after a colonoscopy, though waits can differ."
+  },
+  {
+   "id": "c30",
+   "sentence": "A normal result means no polyps or cancer were found in the bowel.",
+   "classification": "unsafe",
+   "evidence": "Not retrieved. Sources say the results say whether things are normal or need treatment; a normal result does not exclude a missed finding (leaflets note missed problems).",
+   "url": "https://www.fhft.nhs.uk/patients-and-visitors/patient-information-library/colonoscopy-bowel-cancer-screening",
+   "action": "edited",
+   "newSentence": "The result will say whether anything abnormal was found and whether further treatment is needed, according to NHS trust pages."
+  },
+  {
+   "id": "c31",
+   "sentence": "If a biopsy was taken, the biopsy results can take up to two weeks.",
+   "classification": "wrong",
+   "evidence": "Retrieved waits for biopsy/polyp results: several days, usually within 2-3 weeks, 4-6 weeks, 8-10 weeks. 'Up to two weeks' not supported.",
+   "url": "https://www.hey.nhs.uk/patient-leaflet/colonoscopy-2/",
+   "action": "edited",
+   "newSentence": "If a biopsy was taken, trust leaflets give differing waits for the biopsy results, from several days to several weeks."
+  },
+  {
+   "id": "c32",
+   "sentence": "A colonoscopy passes a thin, flexible tube with a camera through the bowel to look for the cause of symptoms, to screen for bowel cancer, or to follow up earlier problems.",
+   "classification": "supported",
+   "evidence": "MedlinePlus (US): symptoms and follow-up of polyps/cancer; screening shown by NHS England bowel screening guide and Frimley 'Bowel Cancer Screening' colonoscopy leaflet (titles/snippets).",
+   "url": "https://www.england.nhs.uk/long-read/your-guide-to-nhs-bowel-cancer-screening/",
+   "action": "kept"
+  },
+  {
+   "id": "c33",
+   "sentence": "The bowel must be empty for a clear view, so a laxative preparation is taken beforehand and often causes frequent diarrhoea.",
+   "classification": "unsupported",
+   "evidence": "Empty bowel supported (MedlinePlus, US); 'often causes frequent diarrhoea' not retrieved.",
+   "url": "https://medlineplus.gov/ency/article/003886.htm",
+   "action": "edited",
+   "newSentence": "The bowel must be empty for a clear view, so a bowel preparation, which can include laxatives, is taken beforehand."
+  },
+  {
+   "id": "c34",
+   "sentence": "Polyps, which are growths on the bowel lining, can be removed during the test and examined under a microscope.",
+   "classification": "supported",
+   "evidence": "Polyps are removed (snare/forceps) and suspicious ones examined under a microscope (PMC; MedlinePlus).",
+   "url": "https://medlineplus.gov/ency/article/003886.htm",
+   "action": "kept"
+  },
+  {
+   "id": "c35",
+   "sentence": "Perforation, a tear in the bowel wall, is the main serious risk and is uncommon, with higher risk when polyps are removed.",
+   "classification": "supported",
+   "evidence": "Trust leaflets: bleeding and perforation are the main risks, serious complications rare; polyp removal raises risk.",
+   "url": "https://www.nth.nhs.uk/resources/colonoscopy/",
+   "action": "kept"
+  },
+  {
+   "id": "c36",
+   "sentence": "A colonoscopy uses a thin camera to look inside the large bowel. This guide covers bowel preparation, sedation, risks and when results arrive.",
+   "classification": "textbook",
+   "evidence": "Descriptive summary; thin camera looking inside the large bowel is basic fact, listed topics match the body.",
+   "url": "https://www.nhs.uk/tests-and-treatments/colonoscopy/",
+   "action": "kept"
+  }
+ ],
+ "notes": "Search summaries were lossy; MedlinePlus and PMC are US/academic. Extra facts: NHS England says test takes 30 to 45 min, ~2 hours at hospital (https://www.england.nhs.uk/long-read/your-guide-to-nhs-bowel-cancer-screening/); trust leaflets say bleeding can occur up to 2 weeks after (https://www.nth.nhs.uk/resources/colonoscopy/); Frimley leaflet puts missed cancer/polyp chance at about 3 in 100 (https://www.fhft.nhs.uk/patients-and-visitors/patient-information-library/colonoscopy-bowel-cancer-screening); Entonox can be breathed in and controlled by the patient, wearing off in about 30 minutes (https://www.nhs.uk/tests-and-treatments/colonoscopy/what-happens-on-the-day/). Triage wording and sedation-after-care were not fully retrieved."
+}

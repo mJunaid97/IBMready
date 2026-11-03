@@ -1,0 +1,271 @@
+{
+ "id": "gastroscopy-what-happens-and-what-to-expect",
+ "searchesUsed": 5,
+ "counts": {
+  "supported": 13,
+  "textbook": 1,
+  "unsupported": 11,
+  "wrong": 3,
+  "unsafe": 2,
+  "unchecked": 0
+ },
+ "claims": [
+  {
+   "id": "c01",
+   "sentence": "A gastroscopy is a test in which a thin, flexible tube with a small camera goes into the mouth, or sometimes the nose, and down into the stomach.",
+   "classification": "unsupported",
+   "evidence": "Mouth route supported (trust leaflets, CRUK). 'Or sometimes the nose' not retrieved.",
+   "url": "https://www.cancerresearchuk.org/about-cancer/tests-and-scans/gastroscopy",
+   "action": "edited",
+   "newSentence": "A gastroscopy is a test in which a thin, flexible tube with a small camera goes into the mouth and down into the stomach."
+  },
+  {
+   "id": "c02",
+   "sentence": "The doctor or nurse watches the lining of the gullet, stomach and the first part of the small bowel on a screen.",
+   "classification": "supported",
+   "evidence": "Leaflets: camera looks at the gullet, stomach and first part of the small bowel.",
+   "url": "https://www.nhs.uk/tests-and-treatments/gastroscopy/",
+   "action": "kept"
+  },
+  {
+   "id": "c03",
+   "sentence": "Tiny tissue samples, called biopsies, may be taken, and this is painless.",
+   "classification": "supported",
+   "evidence": "Leaflet: a small tissue sample (biopsy) can be taken and is painless.",
+   "url": "https://www.nhs.uk/tests-and-treatments/gastroscopy/",
+   "action": "kept"
+  },
+  {
+   "id": "c04",
+   "sentence": "The stomach must be empty, so trusts ask people to stop eating for about six hours beforehand.",
+   "classification": "supported",
+   "evidence": "Retrieved: most guides say to avoid food for about six hours beforehand.",
+   "url": "https://www.nhs.uk/tests-and-treatments/gastroscopy/",
+   "action": "kept"
+  },
+  {
+   "id": "c05",
+   "sentence": "Clear fluids are usually allowed in small sips until about two hours before the test.",
+   "classification": "supported",
+   "evidence": "Retrieved: clear fluids in sips up to two hours before; one trust says stop three hours before.",
+   "url": "https://www.nhs.uk/tests-and-treatments/gastroscopy/",
+   "action": "edited",
+   "newSentence": "Many trusts allow sips of clear fluid until about two hours before the test, though some stop earlier."
+  },
+  {
+   "id": "c06",
+   "sentence": "One trust explains that an empty stomach matters because sedation can allow food to enter the lungs and cause an infection.",
+   "classification": "unsupported",
+   "evidence": "Reason about sedation and aspiration not retrieved.",
+   "url": "https://www.nhs.uk/tests-and-treatments/gastroscopy/",
+   "action": "removed"
+  },
+  {
+   "id": "c07",
+   "sentence": "People usually choose between a throat spray and sedation.",
+   "classification": "unsupported",
+   "evidence": "Retrieved: a person can have a numbing spray, a sedative injection, or both; 'choose between' not stated.",
+   "url": "https://www.nhs.uk/tests-and-treatments/gastroscopy/",
+   "action": "edited",
+   "newSentence": "People can usually have a throat spray, sedation, or both, depending on the trust."
+  },
+  {
+   "id": "c08",
+   "sentence": "The throat spray is a local anaesthetic that numbs the back of the throat, and the person stays awake while a nurse talks them through the test.",
+   "classification": "supported",
+   "evidence": "Retrieved: spray numbs the throat, person stays awake, nurse talks them through. (Local anaesthetic wording implied by 'numbing spray'.)",
+   "url": "https://www.nhs.uk/tests-and-treatments/gastroscopy/what-happens/",
+   "action": "kept"
+  },
+  {
+   "id": "c09",
+   "sentence": "For sedation, a small tube called a cannula is placed in a vein, usually in the back of the hand.",
+   "classification": "supported",
+   "evidence": "Retrieved: cannula in a vein, usually the back of the hand.",
+   "url": "https://www.nhs.uk/tests-and-treatments/gastroscopy/what-happens/",
+   "action": "kept"
+  },
+  {
+   "id": "c10",
+   "sentence": "The medicine makes the person relaxed and drowsy, but not fully asleep, and they may not remember the test afterwards.",
+   "classification": "unsupported",
+   "evidence": "Relaxed, drowsy, not fully asleep supported; 'may not remember' not retrieved for gastroscopy.",
+   "url": "https://www.nhs.uk/tests-and-treatments/gastroscopy/what-happens/",
+   "action": "edited",
+   "newSentence": "The medicine makes the person relaxed and sometimes drowsy, but not fully asleep."
+  },
+  {
+   "id": "c11",
+   "sentence": "Air is passed in to inflate the stomach, which can cause bloating and burping.",
+   "classification": "supported",
+   "evidence": "NHS: air is pumped in to inflate the stomach; may feel bloated and burp.",
+   "url": "https://www.nhs.uk/tests-and-treatments/gastroscopy/what-happens/",
+   "action": "kept"
+  },
+  {
+   "id": "c12",
+   "sentence": "The test usually takes between 5 and 20 minutes.",
+   "classification": "wrong",
+   "evidence": "NHS page gives 15 to 45 minutes; other trusts 5 to 20 or under 5 to 30. '5 to 20' is not the NHS figure.",
+   "url": "https://www.nhs.uk/tests-and-treatments/gastroscopy/what-happens/",
+   "action": "edited",
+   "newSentence": "Trust leaflets give different times for the test itself, and the NHS page gives 15 to 45 minutes."
+  },
+  {
+   "id": "c13",
+   "sentence": "Common effects include a sore throat and stomach discomfort, which pass within a few hours.",
+   "classification": "wrong",
+   "evidence": "Retrieved: sore throat and bloating are the most common after-effects and usually pass within 24 hours, not a few hours.",
+   "url": "https://www.bedfordshirehospitals.nhs.uk/patient-information-leaflets/gastroscopy-information-leaflet/",
+   "action": "edited",
+   "newSentence": "Common effects include a sore throat and bloating, which usually pass within 24 hours, according to trust leaflets."
+  },
+  {
+   "id": "c14",
+   "sentence": "After a throat spray, people can usually leave straight away, though the throat stays numb for up to an hour and eating and drinking wait until the feeling returns.",
+   "classification": "unsupported",
+   "evidence": "Retrieved: after spray only, a person may make their own way home; drink once swallowing is normal (a leaflet: usually 20 to 60 minutes). 'Numb up to an hour' not confirmed.",
+   "url": "https://www.bedfordshirehospitals.nhs.uk/patient-information-leaflets/gastroscopy-information-leaflet/",
+   "action": "edited",
+   "newSentence": "After a throat spray alone, people may be able to make their own way home, and can drink once swallowing returns to normal, which one leaflet puts at about 20 to 60 minutes."
+  },
+  {
+   "id": "c15",
+   "sentence": "After sedation, the person rests in a recovery area for a couple of hours.",
+   "classification": "unsupported",
+   "evidence": "Retrieved: rest at least 30 to 45 minutes; stay in the endoscopy department for an hour or two.",
+   "url": "https://www.leedsth.nhs.uk/patients/resources/endoscopy-unit-having-a-gastroscopy/",
+   "action": "edited",
+   "newSentence": "After sedation, people rest in the endoscopy department for an hour or two, according to a trust leaflet."
+  },
+  {
+   "id": "c16",
+   "sentence": "They need to bring someone with them and go home by car or taxi, because the sedative can stay in the body for 24 hours.",
+   "classification": "unsupported",
+   "evidence": "Retrieved: an escort should take the person home; one trust says the sedative stays in the body for up to 24 hours. 'Car or taxi' not retrieved.",
+   "url": "https://www.leedsth.nhs.uk/patients/resources/endoscopy-unit-having-a-gastroscopy/",
+   "action": "edited",
+   "newSentence": "After sedation, an escort is needed to take the person home, and one trust says the sedative can stay in the body for up to 24 hours."
+  },
+  {
+   "id": "c17",
+   "sentence": "Leaflets advise avoiding driving, alcohol and signing important documents for 24 hours.",
+   "classification": "unsupported",
+   "evidence": "Retrieved: one trust says clear thinking and decision-making may be affected for up to 24 hours. Driving, alcohol and documents advice not retrieved.",
+   "url": "https://www.leedsth.nhs.uk/patients/resources/endoscopy-unit-having-a-gastroscopy/",
+   "action": "edited",
+   "newSentence": "One trust says that after sedation, clear thinking and decision-making may be affected for up to 24 hours."
+  },
+  {
+   "id": "c18",
+   "sentence": "Serious complications are rare, and one leaflet says they occur in fewer than 1 in 500 tests.",
+   "classification": "unsupported",
+   "evidence": "'Fewer than 1 in 500' not found. Perforation figures vary: about 1 in 2,000 to under 1 in 10,000; serious complications described as uncommon.",
+   "url": "https://www.southtees.nhs.uk/resources/gastroscopy/",
+   "action": "edited",
+   "newSentence": "Serious complications are rare, and trust leaflets give differing figures for a tear in the gut wall, from about 1 in 2,000 to less than 1 in 10,000."
+  },
+  {
+   "id": "c19",
+   "sentence": "Possible problems include a tear in the gut wall that may need surgery, bleeding, and an allergic reaction to the sedation or throat spray.",
+   "classification": "supported",
+   "evidence": "Leaflets: perforation (repair may need surgery), bleeding, reactions to sedation or throat spray (UCLH lists allergy).",
+   "url": "https://www.uclh.nhs.uk/patients-and-visitors/patient-information-pages/gastroscopy-guide-patients",
+   "action": "kept"
+  },
+  {
+   "id": "c20",
+   "sentence": "Sedation can affect breathing, heart rate and blood pressure, which is why staff monitor them.",
+   "classification": "unsupported",
+   "evidence": "Sedation can cause short-term problems with breathing, heart rate and blood pressure (Bedfordshire). Monitoring rationale not retrieved.",
+   "url": "https://www.bedfordshirehospitals.nhs.uk/patient-information-leaflets/gastroscopy-information-leaflet/",
+   "action": "edited",
+   "newSentence": "Sedation can occasionally cause short-term problems with breathing, heart rate and blood pressure."
+  },
+  {
+   "id": "c21",
+   "sentence": "Rare complications include damage to loose teeth, crowns or bridgework.",
+   "classification": "supported",
+   "evidence": "Leeds leaflet lists damage to loose teeth, crowns or bridgework as rare.",
+   "url": "https://www.leedsth.nhs.uk/patients/resources/endoscopy-unit-having-a-gastroscopy/",
+   "action": "kept"
+  },
+  {
+   "id": "c22",
+   "sentence": "A leaflet says to call 999 or go to A&E if stomach pain gets worse or if the person vomits blood.",
+   "classification": "unsafe",
+   "evidence": "NHS page lists vomiting blood under 'call 999 or go to A&E'; another NHS page says call 111 for worse pain or vomiting blood. Worsening pain for 999 not confirmed.",
+   "url": "https://www.nhs.uk/tests-and-treatments/gastroscopy/what-happens/",
+   "action": "edited",
+   "newSentence": "The NHS lists vomiting blood after a gastroscopy among the reasons to call 999 or go to A&E."
+  },
+  {
+   "id": "c23",
+   "sentence": "People are told the main findings before they leave and get a written summary to take home.",
+   "classification": "unsupported",
+   "evidence": "Retrieved: a doctor or nurse usually goes through the findings before leaving. Written summary not retrieved.",
+   "url": "https://www.nhs.uk/tests-and-treatments/gastroscopy/what-happens/",
+   "action": "edited",
+   "newSentence": "A doctor or nurse will usually go through the main findings before the person leaves."
+  },
+  {
+   "id": "c24",
+   "sentence": "Biopsy results from the laboratory are not available on the day.",
+   "classification": "supported",
+   "evidence": "NHS: if a biopsy was taken you need to wait for the results.",
+   "url": "https://www.nhs.uk/tests-and-treatments/gastroscopy/",
+   "action": "kept"
+  },
+  {
+   "id": "c25",
+   "sentence": "They go to the GP or specialist and usually take two to three weeks.",
+   "classification": "wrong",
+   "evidence": "Retrieved biopsy waits: 1 to 2 weeks, 2 to 6 weeks, up to 2 months. 'Usually two to three weeks' not supported.",
+   "url": "https://www.nhs.uk/tests-and-treatments/gastroscopy/",
+   "action": "edited",
+   "newSentence": "Biopsy results go to the referring doctor and the GP, and trust leaflets give waits that range from a couple of weeks to several weeks."
+  },
+  {
+   "id": "c26",
+   "sentence": "A gastroscopy passes a thin, flexible tube with a camera through the mouth and down to the stomach.",
+   "classification": "supported",
+   "evidence": "Mouth route supported (trust leaflets, CRUK).",
+   "url": "https://www.cancerresearchuk.org/about-cancer/tests-and-scans/gastroscopy",
+   "action": "kept"
+  },
+  {
+   "id": "c27",
+   "sentence": "The stomach needs to be empty, and trusts ask for a fast of several hours beforehand.",
+   "classification": "supported",
+   "evidence": "Six hours fast supported by most guides; 'several hours' is consistent.",
+   "url": "https://www.nhs.uk/tests-and-treatments/gastroscopy/",
+   "action": "kept"
+  },
+  {
+   "id": "c28",
+   "sentence": "People can have a throat spray and stay awake, or sedation that leaves them relaxed and drowsy.",
+   "classification": "supported",
+   "evidence": "Throat spray leaves person awake; sedation relaxes without full sleep.",
+   "url": "https://www.nhs.uk/tests-and-treatments/gastroscopy/what-happens/",
+   "action": "kept"
+  },
+  {
+   "id": "c29",
+   "sentence": "Serious complications are rare, but a person who has severe stomach pain or vomits blood afterwards should call 999 or go to A&E.",
+   "classification": "unsafe",
+   "evidence": "Serious complications described as rare; NHS lists vomiting blood under 999/A&E. Severe stomach pain at 999 not confirmed.",
+   "url": "https://www.nhs.uk/tests-and-treatments/gastroscopy/what-happens/",
+   "action": "edited",
+   "newSentence": "Serious complications are rare, but vomiting blood after a gastroscopy is among the reasons the NHS lists for calling 999 or going to A&E."
+  },
+  {
+   "id": "c30",
+   "sentence": "A gastroscopy uses a thin camera to look at the gullet and stomach. This guide covers fasting, throat spray or sedation, risks and results.",
+   "classification": "textbook",
+   "evidence": "Descriptive summary; looking at the gullet and stomach is basic fact; topics match the body.",
+   "url": "https://www.nhs.uk/tests-and-treatments/gastroscopy/",
+   "action": "kept"
+  }
+ ],
+ "notes": "Extra facts: NHS page gives 15 to 45 minutes for the test (https://www.nhs.uk/tests-and-treatments/gastroscopy/what-happens/); trust leaflets say sore throat and bloating usually pass within 24 hours (https://www.bedfordshirehospitals.nhs.uk/patient-information-leaflets/gastroscopy-information-leaflet/); Leeds lists loose teeth/crowns as rare (https://www.leedsth.nhs.uk/patients/resources/endoscopy-unit-having-a-gastroscopy/); a small plastic mouth guard protects the teeth (https://www.leedsth.nhs.uk/patients/resources/endoscopy-unit-having-a-gastroscopy/); NHS pages conflict on 111 versus 999 for vomiting blood, so urgent wording should follow the live NHS page."
+}
