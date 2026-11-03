@@ -1,0 +1,22 @@
+{
+  "slug": "fda-ezplaz-freeze-dried-plasma-licensed",
+  "searchesUsed": 4,
+  "dateConfirmed": true,
+  "dateEvidence": "FDA approval letter 'July 29, 2026 Approval Letter - EZPLAZ' (STN BL 125702/0, Vascular Solutions, US License 2135) and CBER 2026 BLA approvals table list 07/29/2026. The press release's own date was not displayed in the snippet, so the date rests on the licence letter/table.",
+  "claims": [
+    {"id": "summary", "classification": "supported", "evidence": "FDA: licensed Ezplaz Freeze Dried Plasma, first freeze-dried plasma product licensed for use in the US; licence dated 07/29/2026; indicated for adults.", "url": "https://www.fda.gov/news-events/press-announcements/fda-licenses-first-ever-freeze-dried-plasma-product-us", "fix": null},
+    {"id": "keyPoints[0]", "classification": "supported", "evidence": "Approval letter and BLA approvals table date 07/29/2026.", "url": "https://fda.gov/media/193931/download?attachment=", "fix": null},
+    {"id": "keyPoints[1]", "classification": "supported", "evidence": "FDA press announcement wording: first freeze-dried plasma product licensed for use in the United States.", "url": "https://www.fda.gov/news-events/press-announcements/fda-licenses-first-ever-freeze-dried-plasma-product-us", "fix": null},
+    {"id": "keyPoints[2]", "classification": "supported", "evidence": "Indicated for transfusion in adults when plasma is required and other plasma products are not available.", "url": "https://www.fda.gov/vaccines-blood-biologics/blood-blood-products/ezplaz", "fix": null},
+    {"id": "keyPoints[3]", "classification": "textbook", "evidence": "Editorial regional disclaimer.", "url": "", "fix": null},
+    {"id": "body[0].s0", "classification": "supported", "evidence": "As summary/keyPoints[1].", "url": "https://www.fda.gov/news-events/press-announcements/fda-licenses-first-ever-freeze-dried-plasma-product-us", "fix": null},
+    {"id": "body[0].s1", "classification": "supported", "evidence": "Indication: adult patients needing plasma when other plasma products are not available.", "url": "https://www.fda.gov/vaccines-blood-biologics/blood-blood-products/ezplaz", "fix": null},
+    {"id": "body[0].s2", "classification": "supported", "evidence": "FDA: derived from a single unit of fresh frozen plasma collected from FDA-licensed blood establishments.", "url": "https://www.fda.gov/news-events/press-announcements/fda-licenses-first-ever-freeze-dried-plasma-product-us", "fix": null},
+    {"id": "body[1].s0", "classification": "supported", "evidence": "FDA kit description: one unit of freeze-dried plasma, one 250 mL bag of sterile water for injection, one sterile fluid transfer set, one sterile blood transfusion set.", "url": "https://www.fda.gov/media/194320/download", "fix": null},
+    {"id": "body[1].s1", "classification": "unsupported", "evidence": "Retrieved text only shows the Circular of Information warning that, being human plasma, it may transmit infectious agents; a statement that safety is 'consistent with other plasma products' was not found in retrieved text.", "url": "https://www.fda.gov/media/193932/download", "fix": "Because Ezplaz is made from human plasma, the FDA's Circular of Information notes it may carry a risk of transmitting infectious agents."},
+    {"id": "body[1].s2", "classification": "supported", "evidence": "Approval letter addressed to Vascular Solutions, LLC, a Teleflex subsidiary, US License 2135.", "url": "https://fda.gov/media/193931/download?attachment=", "fix": null},
+    {"id": "body[1].s3", "classification": "supported", "evidence": "FDA announcement/EUA fact sheets: French FDP authorised under EUA for US military use (combat hemorrhage); EUA products are by definition not licensed. The explicit 'FDA notes it is not licensed' wording was not seen in the snippet.", "url": "https://www.fda.gov/media/174558/download", "fix": null},
+    {"id": "body[1].s4", "classification": "textbook", "evidence": "Editorial regional disclaimer.", "url": "", "fix": null}
+  ],
+  "notes": "Only body[1].s1 failed to be matched. Kit contents come from the FDA product document; the French FDP kit is different (bottle of water plus transfuser)."
+}

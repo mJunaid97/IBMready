@@ -28,7 +28,7 @@ B['fda-casgevy-sickle-cell-children-aged-2-and-over'] = dict(
  keyPoints=[
   "The US FDA approved Casgevy (exagamglogene autotemcel) for patients aged 2 years and older on 1 July 2026.",
   "It covers sickle cell disease with recurrent vaso-occlusive crises and transfusion-dependent beta thalassaemia.",
-  "The FDA first approved Casgevy and Lyfgenia in December 2023 for patients aged 12 and older.",
+  "The FDA first approved Casgevy and Lyfgenia for sickle cell disease in December 2023, for patients aged 12 and older.",
   KP],
  source=("FDA","FDA Approves First Gene Therapy for Young Children with Sickle Cell Disease","https://www.fda.gov/news-events/press-announcements/fda-approves-first-gene-therapy-young-children-sickle-cell-disease"),
  refs=[], links=dict(conditions=["anaemia"]),
@@ -37,7 +37,7 @@ B['fda-casgevy-sickle-cell-children-aged-2-and-over'] = dict(
   ("The FDA says it is the first gene therapy approved for patients aged 2 years and older with sickle cell disease.","Search text."),
   ("The approval covers sickle cell disease with recurrent vaso-occlusive crises, and transfusion-dependent beta thalassaemia.","Search text."),
   ]),("What it means",[
-  ("The FDA first approved Casgevy and Lyfgenia in December 2023 for patients aged 12 and older.","Search text."),
+  ("The FDA first approved Casgevy and Lyfgenia for sickle cell disease in December 2023, for patients aged 12 and older.","Search text."),
   ("The FDA notes that Casgevy is the first FDA-approved therapy that uses CRISPR/Cas9 genome editing.","Search text."),
   ("Before the Casgevy infusion, patients receive a high-intensity preparatory treatment called myeloablative conditioning.","Search text."),
   (US,"EDITORIAL")])])
@@ -58,23 +58,22 @@ B['fda-ezplaz-freeze-dried-plasma-licensed'] = dict(
   ("The FDA says Ezplaz is made from a single unit of fresh frozen plasma collected from FDA-licensed blood establishments.","Search text."),
   ]),("What it means",[
   ("Each kit includes the freeze-dried plasma, a bag of sterile water and transfusion sets.","Search text."),
-  ("The FDA says the safety profile of Ezplaz is consistent with other plasma products used for transfusion.","Search text."),
   ("The licence went to Vascular Solutions, LLC, a subsidiary of Teleflex.","Search text."),
   ("Before licensure the FDA had authorised a different product, French FDP, under an emergency use authorisation for military use; the FDA notes it is not an FDA-licensed product.","Search text."),
   (US,"EDITORIAL")])])
 
 B['fda-camzyos-children-obstructive-hcm'] = dict(
  name="FDA approves Camzyos for children", published="2026-09-30",
- summary="The US FDA approved Camzyos (mavacamten) for children with symptomatic obstructive hypertrophic cardiomyopathy, the first drug for this use in children, on 30 September 2026.",
+ summary="The US FDA approved Camzyos (mavacamten) for children weighing at least 30 kg with symptomatic obstructive hypertrophic cardiomyopathy, on 30 September 2026.",
  keyPoints=[
-  "The US FDA approved Camzyos (mavacamten) for children with symptomatic obstructive hypertrophic cardiomyopathy on 30 September 2026.",
+  "The US FDA approved Camzyos (mavacamten) for children weighing at least 30 kg with symptomatic obstructive hypertrophic cardiomyopathy on 30 September 2026.",
   "The FDA says it is the first treatment to improve functional capacity and symptoms in children with this condition.",
   "Camzyos carries a boxed warning for the risk of heart failure and is available only through a restricted programme.",
   KP],
  source=("FDA","FDA approves first drug to improve functional capacity and symptoms in children with rare inherited heart condition","https://www.fda.gov/drugs/news-events-human-drugs/fda-approves-first-drug-improve-functional-capacity-and-symptoms-children-rare-inherited-heart"),
  refs=[], links=dict(conditions=["heart-failure"]),
  sections=[("What was announced",[
-  ("On 30 September 2026 the US Food and Drug Administration (FDA) approved Camzyos (mavacamten) for children with symptomatic obstructive hypertrophic cardiomyopathy.","Search text."),
+  ("On 30 September 2026 the US Food and Drug Administration (FDA) approved Camzyos (mavacamten) for children weighing at least 30 kg with symptomatic obstructive hypertrophic cardiomyopathy.","Search text."),
   ("The FDA describes this as the first treatment to improve functional capacity and symptoms in children with the condition.","Search text."),
   ("It describes the condition as inherited and causing a thickened heart muscle, with symptoms that can include shortness of breath, fatigue and an abnormal heart rhythm that can be life-threatening.","Search text."),
   ]),("What it means",[
