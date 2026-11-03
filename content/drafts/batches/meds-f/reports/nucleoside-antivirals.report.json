@@ -1,0 +1,116 @@
+{
+ "id": "nucleoside-antivirals",
+ "searchesUsed": 1,
+ "counts": {
+  "supported": 10,
+  "textbook": 0,
+  "unsupported": 3,
+  "wrong": 0,
+  "unsafe": 0,
+  "unchecked": 0
+ },
+ "claims": [
+  {
+   "id": "c01",
+   "classification": "supported",
+   "evidence": "MedlinePlus valacyclovir: antiviral for cold sores, chickenpox, shingles, genital herpes; NHS aciclovir uses likewise.",
+   "url": "https://medlineplus.gov/druginfo/meds/a695010.html",
+   "action": "edited",
+   "newSentence": "Antiviral medicines used for herpes virus infections such as cold sores, shingles, chickenpox and genital herpes. Aciclovir is described on this site, and valaciclovir is a related medicine."
+  },
+  {
+   "id": "c02",
+   "classification": "supported",
+   "evidence": "MedlinePlus: synthetic nucleoside analogue; stops spread of herpes virus.",
+   "url": "https://medlineplus.gov/druginfo/meds/a606001.html",
+   "action": "kept",
+   "newSentence": "MedlinePlus describes aciclovir as a synthetic nucleoside analogue antiviral that works by stopping the spread of the herpes virus in the body."
+  },
+  {
+   "id": "c03",
+   "classification": "supported",
+   "evidence": "NHS: stops the herpes virus growing and spreading and helps the immune system.",
+   "url": "https://www.nhs.uk/medicines/aciclovir/common-questions-about-aciclovir/",
+   "action": "edited",
+   "newSentence": "The NHS says aciclovir stops the herpes virus growing and spreading, which helps the immune system deal with the infection."
+  },
+  {
+   "id": "c04",
+   "classification": "supported",
+   "evidence": "LiverTox: valacyclovir is a nucleoside analogue antiviral and prodrug of acyclovir.",
+   "url": "https://www.ncbi.nlm.nih.gov/books/NBK548655/",
+   "action": "kept",
+   "newSentence": "NIH LiverTox describes valaciclovir as a nucleoside analogue antiviral and a prodrug of aciclovir."
+  },
+  {
+   "id": "c05",
+   "classification": "supported",
+   "evidence": "NHS: no medicine removes the herpes virus completely.",
+   "url": "https://www.nhs.uk/medicines/aciclovir/common-questions-about-aciclovir/",
+   "action": "kept",
+   "newSentence": "The NHS says no medicine or treatment removes the herpes virus from the body completely."
+  },
+  {
+   "id": "c06",
+   "classification": "supported",
+   "evidence": "emc SmPC: allergy to aciclovir or valaciclovir.",
+   "url": "https://www.medicines.org.uk/emc/product/4335/smpc",
+   "action": "edited",
+   "newSentence": "UK product information lists allergy to aciclovir or valaciclovir as a reason the medicine is not used."
+  },
+  {
+   "id": "c07",
+   "classification": "supported",
+   "evidence": "emc SmPC: renal elimination; dosage adjustment in renal impairment.",
+   "url": "https://www.medicines.org.uk/emc/product/2353",
+   "action": "edited",
+   "newSentence": "UK product information says aciclovir is cleared through the kidneys, so treatment may be adjusted in kidney problems."
+  },
+  {
+   "id": "c08",
+   "classification": "supported",
+   "evidence": "emc SmPC: probenecid and cimetidine increase aciclovir exposure.",
+   "url": "https://www.medicines.org.uk/emc/product/4335/smpc",
+   "action": "edited",
+   "newSentence": "Cimetidine, probenecid interaction effect."
+  },
+  {
+   "id": "c09",
+   "classification": "supported",
+   "evidence": "emc SmPC: aciclovir raises theophylline exposure.",
+   "url": "https://www.medicines.org.uk/emc/product/4335/smpc",
+   "action": "edited",
+   "newSentence": "Theophylline interaction effect."
+  },
+  {
+   "id": "c10",
+   "classification": "unsupported",
+   "evidence": "First pass listed mycophenolate mofetil and aminophylline as NHS-named interacting medicines; not seen in retrieved text.",
+   "url": "https://www.nhs.uk/medicines/aciclovir/taking-or-using-aciclovir-with-other-medicines-and-herbal-supplements/",
+   "action": "removed"
+  },
+  {
+   "id": "c11",
+   "classification": "supported",
+   "evidence": "NHS: serious allergic reaction 999; liver/kidney/blood effects 111.",
+   "url": "https://www.nhs.uk/medicines/aciclovir/side-effects-of-aciclovir/",
+   "action": "edited",
+   "newSentence": "classWarnings x2"
+  },
+  {
+   "id": "c12",
+   "classification": "unsupported",
+   "evidence": "First pass: 'A serious allergic reaction is rare' - 'rare' not in retrieved text.",
+   "url": "https://www.nhs.uk/medicines/aciclovir/side-effects-of-aciclovir/",
+   "action": "removed"
+  },
+  {
+   "id": "c13",
+   "classification": "unsupported",
+   "evidence": "First pass urlAliases 'nucleoside-analogue-antivirals' and 'antiherpes-antivirals' were invented search names; no source uses them as class names.",
+   "url": "",
+   "action": "removed"
+  }
+ ],
+ "notes": "Doubts: valaciclovir is a member name with no page on the site (compiler should be run to confirm that members need not be pages); urlAliases emptied; the class concept 'nucleoside antiviral' for valaciclovir rests on LiverTox, not MedlinePlus (MedlinePlus labels it only 'antiviral'). Shares search evidence with the aciclovir report (searches used here: the valaciclovir lookup)."
+}

@@ -1,0 +1,100 @@
+{
+ "id": "azole-antifungals",
+ "searchesUsed": 1,
+ "counts": {
+  "supported": 8,
+  "textbook": 0,
+  "unsupported": 3,
+  "wrong": 0,
+  "unsafe": 0,
+  "unchecked": 0
+ },
+ "claims": [
+  {
+   "id": "c01",
+   "classification": "supported",
+   "evidence": "NHS: fluconazole is an antifungal for thrush and other fungal infections; StatPearls calls azoles ergosterol synthesis inhibitors.",
+   "url": "https://www.nhs.uk/medicines/fluconazole/about-fluconazole/",
+   "action": "edited",
+   "newSentence": "Antifungal medicines, including fluconazole, used for thrush and other fungal infections."
+  },
+  {
+   "id": "c02",
+   "classification": "unsupported",
+   "evidence": "First pass: 'taken by mouth or used on the skin depending on the medicine' - generalisation about the class not retrieved.",
+   "url": "https://www.nhs.uk/medicines/fluconazole/about-fluconazole/",
+   "action": "removed"
+  },
+  {
+   "id": "c03",
+   "classification": "supported",
+   "evidence": "StatPearls ergosterol.",
+   "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK551581/",
+   "action": "kept",
+   "newSentence": "Azole antifungals block a step in the making of ergosterol, a main part of fungal cell membranes."
+  },
+  {
+   "id": "c04",
+   "classification": "supported",
+   "evidence": "NHS holes in cell membrane.",
+   "url": "https://www.nhs.uk/medicines/fluconazole/about-fluconazole/",
+   "action": "kept",
+   "newSentence": "The NHS says fluconazole kills the fungus causing the infection by making holes in the fungus's cell membrane so that the contents leak out."
+  },
+  {
+   "id": "c05",
+   "classification": "supported",
+   "evidence": "MedlinePlus slowing growth.",
+   "url": "https://medlineplus.gov/druginfo/meds/a690002.html",
+   "action": "kept",
+   "newSentence": "MedlinePlus describes fluconazole as slowing the growth of the fungi that cause infection."
+  },
+  {
+   "id": "c06",
+   "classification": "supported",
+   "evidence": "NHS who-can page.",
+   "url": "https://www.nhs.uk/medicines/fluconazole/who-can-and-cannot-take-fluconazole/",
+   "action": "edited",
+   "newSentence": "The NHS lists an allergic reaction or serious side effect from fluconazole or another antifungal, liver or kidney problems, heart problems including rhythm problems, abnormal potassium, calcium or magnesium levels, and porphyria (a rare blood condition) as reasons fluconazole may not be suitable."
+  },
+  {
+   "id": "c07",
+   "classification": "supported",
+   "evidence": "NHS pregnancy.",
+   "url": "https://www.nhs.uk/medicines/fluconazole/pregnancy-breastfeeding-and-fertility-while-taking-fluconazole/",
+   "action": "edited",
+   "newSentence": "The NHS says fluconazole is not usually recommended in pregnancy but may be used if the benefits outweigh the risks."
+  },
+  {
+   "id": "c08",
+   "classification": "supported",
+   "evidence": "NHS interactions list.",
+   "url": "https://www.nhs.uk/medicines/fluconazole/taking-fluconazole-with-other-medicines-and-herbal-supplements/",
+   "action": "edited",
+   "newSentence": "The NHS names pimozide, quetiapine, amisulpride, haloperidol, lithium, risperidone, escitalopram, venlafaxine, warfarin, dabigatran, clopidogrel and statins among medicines to discuss with a doctor before starting fluconazole."
+  },
+  {
+   "id": "c09",
+   "classification": "unsupported",
+   "evidence": "First pass: carbamazepine, losartan, erythromycin, clarithromycin as NHS-named interactions - not in retrieved NHS text.",
+   "url": "https://www.nhs.uk/medicines/fluconazole/taking-fluconazole-with-other-medicines-and-herbal-supplements/",
+   "action": "removed"
+  },
+  {
+   "id": "c10",
+   "classification": "supported",
+   "evidence": "NHS side effects page 999 / 111 / liver signs.",
+   "url": "https://www.nhs.uk/medicines/fluconazole/side-effects-of-fluconazole/",
+   "action": "edited",
+   "newSentence": "classWarnings x2"
+  },
+  {
+   "id": "c11",
+   "classification": "unsupported",
+   "evidence": "First pass urlAliases 'azoles' and 'azole-antifungal-medicines' were invented.",
+   "url": "",
+   "action": "removed"
+  }
+ ],
+ "notes": "Doubts: class page is built from fluconazole sources alone, so it describes one member; other azoles (clotrimazole, itraconazole) are not covered and the summary does not claim to. MedlinePlus calls fluconazole a triazole; 'azole' class label rests on StatPearls. urlAliases emptied. Searches shared with the fluconazole report (class lookup of MedlinePlus wording)."
+}
