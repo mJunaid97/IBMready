@@ -1,0 +1,115 @@
+{
+ "id": "who-asthma-guidelines-preview",
+ "searchesUsed": 3,
+ "counts": {
+  "supported": 8,
+  "textbook": 0,
+  "unsupported": 3,
+  "wrong": 0,
+  "unsafe": 0,
+  "unchecked": 0
+ },
+ "claims": [
+  {
+   "id": "c01",
+   "where": "summary",
+   "sentence": "On 17 September 2026 the WHO described the safety themes of its forthcoming asthma guidelines, which have not yet been published.",
+   "classification": "supported",
+   "evidence": "Page URL dated 17-09-2026, title \"Patient safety at the heart of forthcoming WHO asthma guidelines\"; retrieved text describes the guidance as not yet published.",
+   "url": "https://www.who.int/news/item/17-09-2026-patient-safety-at-the-heart-of-forthcoming-who-asthma-guidelines",
+   "action": "kept"
+  },
+  {
+   "id": "c02",
+   "where": "keyPoints[0]",
+   "sentence": "The WHO published the article on 17 September 2026, linked to World Patient Safety Day.",
+   "classification": "unsupported",
+   "evidence": "Date 17 September 2026 confirmed by URL. The World Patient Safety Day link came only from a blended search summary that also drew on the separate WPSD 2026 calls-to-action page; I cannot tell the news item itself says it.",
+   "url": "https://www.who.int/news/item/17-09-2026-patient-safety-at-the-heart-of-forthcoming-who-asthma-guidelines",
+   "action": "edited",
+   "newSentence": "The WHO published the article on 17 September 2026."
+  },
+  {
+   "id": "c03",
+   "where": "keyPoints[1]",
+   "sentence": "The WHO estimates that asthma affected about 363 million people in 2023 and caused 442,000 deaths.",
+   "classification": "supported",
+   "evidence": "Retrieved text: \"Asthma affected an estimated 363 million people in 2023 and caused 442 000 deaths\", attributed to the 17 Sept 2026 news item.",
+   "url": "https://www.who.int/news/item/17-09-2026-patient-safety-at-the-heart-of-forthcoming-who-asthma-guidelines",
+   "action": "kept"
+  },
+  {
+   "id": "c04",
+   "where": "keyPoints[2]",
+   "sentence": "The WHO links overuse of reliever inhalers with more asthma attacks and deaths.",
+   "classification": "supported",
+   "evidence": "\"Reliever inhaler overuse has been associated with increased rates of asthma attacks and mortality\" (WHO news item). \"Links\" is slightly stronger than \"associated\"; acceptable.",
+   "url": "https://www.who.int/news/item/17-09-2026-patient-safety-at-the-heart-of-forthcoming-who-asthma-guidelines",
+   "action": "kept"
+  },
+  {
+   "id": "c05",
+   "where": "keyPoints[3]",
+   "sentence": "The forthcoming guidance stresses shared decision-making, correct use of inhalers and devices, continuity of care and follow-up after severe attacks.",
+   "classification": "unsupported",
+   "evidence": "The wording on shared decision-making, correct use of medicines/devices, continuity of care and follow-up after severe attacks came from a summary that cited the WPSD 2026 calls-to-action page; could not confirm the news item itself states it.",
+   "url": "https://www.who.int/campaigns/world-patient-safety-day/2026/calls-to-action-and-key-messages",
+   "action": "kept"
+  },
+  {
+   "id": "c06",
+   "where": "body[0].p0.s0",
+   "sentence": "On 17 September 2026 the World Health Organization (WHO) published an article on patient safety in its forthcoming asthma guidelines. The guidelines themselves have not yet been published.",
+   "classification": "supported",
+   "evidence": "News item dated 17 Sept 2026 about forthcoming guidelines; guidelines described as not yet published.",
+   "url": "https://www.who.int/news/item/17-09-2026-patient-safety-at-the-heart-of-forthcoming-who-asthma-guidelines",
+   "action": "kept"
+  },
+  {
+   "id": "c07",
+   "where": "body[0].p0.s1",
+   "sentence": "The WHO estimates that asthma affected about 363 million people in 2023 and caused 442,000 deaths.",
+   "classification": "supported",
+   "evidence": "Same figures quoted from the news item: 363 million in 2023, 442 000 deaths.",
+   "url": "https://www.who.int/news/item/17-09-2026-patient-safety-at-the-heart-of-forthcoming-who-asthma-guidelines",
+   "action": "kept"
+  },
+  {
+   "id": "c08",
+   "where": "body[1].p0.s0",
+   "sentence": "It says overusing reliever inhalers is linked to more asthma attacks and deaths.",
+   "classification": "supported",
+   "evidence": "Overuse \"associated with increased rates of asthma attacks and mortality\" attributed to WHO item.",
+   "url": "https://www.who.int/news/item/17-09-2026-patient-safety-at-the-heart-of-forthcoming-who-asthma-guidelines",
+   "action": "kept"
+  },
+  {
+   "id": "c09",
+   "where": "body[1].p0.s1",
+   "sentence": "It also cites a Global Asthma Network survey in which 45% to 60% of people with severe symptoms were not taking inhaled corticosteroids, with larger gaps in lower-income settings.",
+   "classification": "supported",
+   "evidence": "Summary of the item: Global Asthma Network survey, 45% to 60% of people with severe symptoms not taking inhaled corticosteroids depending on age group, larger gaps in lower-income settings (quote from Prof Refiloe Masekela). Reported as WHO relaying the survey, matching the sentence.",
+   "url": "https://www.who.int/news/item/17-09-2026-patient-safety-at-the-heart-of-forthcoming-who-asthma-guidelines",
+   "action": "kept"
+  },
+  {
+   "id": "c10",
+   "where": "body[1].p0.s2",
+   "sentence": "The WHO says the forthcoming guidance aims to strengthen evidence-based care and reduce avoidable harm.",
+   "classification": "supported",
+   "evidence": "\"WHO's forthcoming asthma guidance aims to strengthen evidence-based care and reduce avoidable harm\" appears as the page wording.",
+   "url": "https://www.who.int/news/item/17-09-2026-patient-safety-at-the-heart-of-forthcoming-who-asthma-guidelines",
+   "action": "kept"
+  },
+  {
+   "id": "c11",
+   "where": "body[1].p0.s3",
+   "sentence": "It stresses shared decision-making, correct use of inhalers and devices, continuity of care, and follow-up after severe attacks.",
+   "classification": "unsupported",
+   "evidence": "Same issue as key point 4: themes retrieved from the WPSD 2026 calls-to-action text, not clearly from the news item. Note one summary says guidance is due early 2027 (not in the brief).",
+   "url": "https://www.who.int/campaigns/world-patient-safety-day/2026/calls-to-action-and-key-messages",
+   "action": "kept"
+  }
+ ],
+ "notes": "The item is confirmed as an article about FORTHCOMING guidelines; figures it states: 363 million (2023), 442,000 deaths, GAN 45-60% not on ICS. World Patient Safety Day link and the four safety themes could not be pinned to the news item itself; author should verify against the page text or attribute to the WPSD calls to action. Page was not fetched directly (WebFetch blocked). [Author restructured sections after the check: sentence positions re-mapped, text unchanged.]"
+}

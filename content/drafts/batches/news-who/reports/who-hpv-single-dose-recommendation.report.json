@@ -1,0 +1,98 @@
+{
+  "id": "who-hpv-single-dose-recommendation",
+  "searchesUsed": 3,
+  "counts": {
+    "supported": 7,
+    "textbook": 0,
+    "unsupported": 2,
+    "wrong": 0,
+    "unsafe": 0,
+    "unchecked": 0
+  },
+  "claims": [
+    {
+      "id": "c01",
+      "where": "summary",
+      "sentence": "On 29 October 2026 the WHO reported that its immunization advisers, meeting on 5 to 8 October, recommend a single-dose HPV vaccine schedule for girls aged 9 to 14.",
+      "classification": "supported",
+      "evidence": "Director message dated 29 Oct 2026 (WHO news item); SAGE meeting highlights titled 5-8 October 2026; both state single dose for girls 9-14.",
+      "url": "https://www.who.int/news/item/29-10-2026-message-by-the-director-of-the-department-of-immunization--vaccines-and-biologicals-at-who---october-2026",
+      "action": "kept"
+    },
+    {
+      "id": "c02",
+      "where": "keyPoints[0]",
+      "sentence": "The WHO's Strategic Advisory Group of Experts on Immunization (SAGE) met from 5 to 8 October 2026.",
+      "classification": "supported",
+      "evidence": "Highlights file name and event page: SAGE meeting 5-8 October 2026.",
+      "url": "https://cdn.who.int/media/docs/default-source/_sage-2026/sage-on-immunization-meeting-highlights-5-8-october-2026.pdf?sfvrsn=f4a9c751_4",
+      "action": "kept"
+    },
+    {
+      "id": "c03",
+      "where": "keyPoints[1]",
+      "sentence": "SAGE recommends HPV vaccination of girls aged 9 to 14 years with a single-dose schedule, which it describes as the most efficient approach to reach the goals of the global cervical cancer strategy.",
+      "classification": "unsupported",
+      "evidence": "Highlights: \"A single dose schedule is the most efficient immunization strategy for cervical cancer prevention in girls aged 9-14 years\" and SAGE recommends single dose for 9-14. The phrase \"goals of the global cervical cancer strategy\" was not seen.",
+      "url": "https://cdn.who.int/media/docs/default-source/_sage-2026/sage-on-immunization-meeting-highlights-5-8-october-2026.pdf?sfvrsn=f4a9c751_4",
+      "action": "edited",
+      "newSentence": "SAGE recommends HPV vaccination of girls aged 9 to 14 years with a single-dose schedule, which it describes as the most efficient immunization strategy for cervical cancer prevention."
+    },
+    {
+      "id": "c04",
+      "where": "keyPoints[2]",
+      "sentence": "SAGE says countries may consider routine single-dose vaccination of girls aged 4 to 8 years.",
+      "classification": "supported",
+      "evidence": "Highlights: \"Countries may consider routine vaccination of girls aged 4-8 years with a single dose of HPV.\" Stated in the meeting highlights, not confirmed in the director message.",
+      "url": "https://cdn.who.int/media/docs/default-source/_sage-2026/sage-on-immunization-meeting-highlights-5-8-october-2026.pdf?sfvrsn=f4a9c751_4",
+      "action": "kept"
+    },
+    {
+      "id": "c05",
+      "where": "body[0].p0.s0",
+      "sentence": "A message from the director of the World Health Organization's immunization department, dated 29 October 2026, reports on the October meeting of its Strategic Advisory Group of Experts on Immunization (SAGE), held from 5 to 8 October.",
+      "classification": "supported",
+      "evidence": "Director message dated 29 Oct 2026 by the Director of Immunization, Vaccines and Biologicals (Kate O'Brien); meeting dates 5-8 Oct from highlights.",
+      "url": "https://www.who.int/news/item/29-10-2026-message-by-the-director-of-the-department-of-immunization--vaccines-and-biologicals-at-who---october-2026",
+      "action": "kept"
+    },
+    {
+      "id": "c06",
+      "where": "body[0].p0.s1",
+      "sentence": "SAGE recommends human papillomavirus (HPV) vaccination of girls aged 9 to 14 years using a single-dose schedule, which it identifies as the most efficient approach to the goals of the global cervical cancer strategy.",
+      "classification": "unsupported",
+      "evidence": "Single dose for girls 9-14 is stated by the highlights and the director message. The wording \"goals of the global cervical cancer strategy\" was not seen; the retrieved wording is \"most efficient immunization strategy for cervical cancer prevention\".",
+      "url": "https://cdn.who.int/media/docs/default-source/_sage-2026/sage-on-immunization-meeting-highlights-5-8-october-2026.pdf?sfvrsn=f4a9c751_4",
+      "action": "edited",
+      "newSentence": "SAGE recommends human papillomavirus (HPV) vaccination of girls aged 9 to 14 years using a single-dose schedule, which it describes as the most efficient immunization strategy for cervical cancer prevention."
+    },
+    {
+      "id": "c07",
+      "where": "body[0].p1.s0",
+      "sentence": "According to the meeting highlights, countries may also consider routine single-dose vaccination of girls aged 4 to 8 years, and single-dose coverage could later extend to further target groups.",
+      "classification": "supported",
+      "evidence": "Ages 4-8 from the highlights; \"single-dose use may later expand to other target groups\" attributed to the highlights.",
+      "url": "https://cdn.who.int/media/docs/default-source/_sage-2026/sage-on-immunization-meeting-highlights-5-8-october-2026.pdf?sfvrsn=f4a9c751_4",
+      "action": "kept"
+    },
+    {
+      "id": "c08",
+      "where": "body[0].p1.s1",
+      "sentence": "The director's message adds that a single dose can be used for people up to age 30.",
+      "classification": "supported",
+      "evidence": "Director message: a single dose can be used up to age 30. Caution: one summary says the SAGE report frames this as a sequenced expansion (catch-up to 25, then to 30, cost-effectiveness considered) while another could not confirm it in the highlights; the sentence is correctly attributed to the director only, but is easy to misread as a general recommendation.",
+      "url": "https://www.who.int/news/item/29-10-2026-message-by-the-director-of-the-department-of-immunization--vaccines-and-biologicals-at-who---october-2026",
+      "action": "kept"
+    },
+    {
+      "id": "c09",
+      "where": "body[1].p0.s0",
+      "sentence": "The 2022 SAGE position allowed one or two doses for the primary target group of girls aged 9 to 14; the October 2026 advice is for a single dose.",
+      "classification": "supported",
+      "evidence": "2022 SAGE: \"one or two-dose schedule for the primary target of girls aged 9-14\" (also 15-20); October 2026 advice is single dose for 9-14. Neither October page was seen making this comparison, so it is the author's synthesis from the 2022 documents; the 2022 position also covered ages 15-20, which the sentence omits.",
+      "url": "https://cdn.who.int/media/docs/default-source/immunization/position_paper_documents/human-papillomavirus-(hpv)/evidence-to-recommendation-table-1-dose-vs-2-dose.pdf?sfvrsn=eb11e290_1",
+      "action": "kept"
+    }
+  ],
+  "notes": "Claim-by-page: single dose 9-14 = highlights and director message; routine single dose 4-8 = highlights only (not seen in director message); up to age 30 = director message only (SAGE report reportedly frames it as sequenced catch-up); 2022 comparison = older WHO/SAGE documents, not the October 2026 pages. Texts were search excerpts, not full PDFs (WebFetch blocked). Total searches used across all three briefs: 9 of 11."
+}

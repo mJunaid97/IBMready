@@ -1,0 +1,126 @@
+{
+  "id": "who-child-obesity-guidelines",
+  "searchesUsed": 3,
+  "counts": {
+    "supported": 9,
+    "textbook": 0,
+    "unsupported": 3,
+    "wrong": 0,
+    "unsafe": 0,
+    "unchecked": 0
+  },
+  "claims": [
+    {
+      "id": "c01",
+      "where": "summary",
+      "sentence": "On 7 October 2026 the WHO issued its first global guidelines on obesity in children and adolescents, with one document for each age group.",
+      "classification": "supported",
+      "evidence": "WHO news item dated 7 October 2026, 'WHO issues first global guidelines on child and adolescent obesity'; two guideline documents (children, adolescents).",
+      "url": "https://www.who.int/news/item/07-10-2026-who-issues-first-global-guidelines-on-child-and-adolescent-obesity",
+      "action": "kept"
+    },
+    {
+      "id": "c02",
+      "where": "keyPoints[0]",
+      "sentence": "The WHO published its first global guidelines on child and adolescent obesity on 7 October 2026.",
+      "classification": "supported",
+      "evidence": "News item URL and title give 7 October 2026 and 'first global guidelines'.",
+      "url": "https://www.who.int/news/item/07-10-2026-who-issues-first-global-guidelines-on-child-and-adolescent-obesity",
+      "action": "kept"
+    },
+    {
+      "id": "c03",
+      "where": "keyPoints[1]",
+      "sentence": "One guideline covers children aged 29 days to under 10 years and another covers adolescents aged 10 to 19 years.",
+      "classification": "supported",
+      "evidence": "Publication page for children's guideline: recommendations for children aged 29 days to under 10 years; adolescent guideline covers 10-19 years.",
+      "url": "https://www.who.int/publications/i/item/9789240123397",
+      "action": "kept"
+    },
+    {
+      "id": "c04",
+      "where": "keyPoints[2]",
+      "sentence": "The WHO strongly recommends structured changes to diet, behaviour and physical activity for children and adolescents with obesity.",
+      "classification": "supported",
+      "evidence": "Retrieved summary of the news item: 'strongly recommends structured dietary, physical activity and behaviour-changing interventions'. Whether the page itself says it for both age groups is from a blended summary.",
+      "url": "https://www.who.int/news/item/07-10-2026-who-issues-first-global-guidelines-on-child-and-adolescent-obesity",
+      "action": "kept"
+    },
+    {
+      "id": "c05",
+      "where": "keyPoints[3]",
+      "sentence": "The WHO says management should aim for better health, functioning and wellbeing, not only weight loss.",
+      "classification": "unsupported",
+      "evidence": "No retrieved WHO text mentions health, functioning and wellbeing as the aim beyond weight loss; the search explicitly found nothing on this.",
+      "url": "https://www.who.int/news/item/07-10-2026-who-issues-first-global-guidelines-on-child-and-adolescent-obesity",
+      "action": "edited",
+      "newSentence": "The WHO says the foundation of obesity care for children and adolescents is access to comprehensive support for healthy eating, physical activity and sustainable behaviour change, not medicines or surgery."
+    },
+    {
+      "id": "c06",
+      "where": "body[0].p0.s0",
+      "sentence": "The World Health Organization (WHO) issued its first global guidelines on child and adolescent obesity on 7 October 2026.",
+      "classification": "supported",
+      "evidence": "News item dated 7 October 2026, first global guidelines on child and adolescent obesity.",
+      "url": "https://www.who.int/news/item/07-10-2026-who-issues-first-global-guidelines-on-child-and-adolescent-obesity",
+      "action": "kept"
+    },
+    {
+      "id": "c07",
+      "where": "body[0].p0.s1",
+      "sentence": "The WHO describes them as guidance for health systems and health workers on delivering evidence-based, people-centred care.",
+      "classification": "unsupported",
+      "evidence": "Retrieved text says 'evidence-informed recommendations'; 'people-centred care' and 'guidance for health systems and health workers' not seen in retrieved text.",
+      "url": "https://www.who.int/publications/i/item/9789240123397",
+      "action": "edited",
+      "newSentence": "The WHO describes them as evidence-informed recommendations for managing obesity in children and adolescents."
+    },
+    {
+      "id": "c08",
+      "where": "body[0].p1.s0",
+      "sentence": "There are two documents: one for children aged 29 days to under 10 years and one for adolescents aged 10 to 19 years.",
+      "classification": "supported",
+      "evidence": "Children's publication page: aged 29 days to under 10 years; adolescents 10-19 years.",
+      "url": "https://www.who.int/publications/i/item/9789240123397",
+      "action": "kept"
+    },
+    {
+      "id": "c09",
+      "where": "body[0].p1.s1",
+      "sentence": "The recommendations cover diet, physical activity, sedentary behaviour and sleep, behaviour-change and digital health interventions, medicines, bariatric surgery, weight-management devices and combined approaches.",
+      "classification": "supported",
+      "evidence": "Publication description: dietary interventions, physical activity, sedentary behaviour and sleep, behaviour changing interventions, digital health interventions, pharmacotherapy, bariatric surgery and weight-management devices, and multimodal interventions.",
+      "url": "https://www.who.int/publications/i/item/9789240123397",
+      "action": "kept"
+    },
+    {
+      "id": "c10",
+      "where": "body[0].p1.s2",
+      "sentence": "The WHO strongly recommends structured changes to diet, behaviour and physical activity for children and adolescents with obesity.",
+      "classification": "supported",
+      "evidence": "Summary of news item: strongly recommends structured diet, physical activity and behaviour change interventions.",
+      "url": "https://www.who.int/news/item/07-10-2026-who-issues-first-global-guidelines-on-child-and-adolescent-obesity",
+      "action": "kept"
+    },
+    {
+      "id": "c11",
+      "where": "body[1].p0.s0",
+      "sentence": "The WHO treats obesity management as more than weight loss, with the aim of better health, functioning and wellbeing.",
+      "classification": "unsupported",
+      "evidence": "Searches for wellbeing/functioning wording returned nothing; the retrieved text does not say obesity management aims at wellbeing beyond weight loss.",
+      "url": "https://www.who.int/news/item/07-10-2026-who-issues-first-global-guidelines-on-child-and-adolescent-obesity",
+      "action": "edited",
+      "newSentence": "The WHO says medicines, surgery and devices are not the foundation of care for children and adolescents with obesity; comprehensive support for healthy eating, physical activity and behaviour change is."
+    },
+    {
+      "id": "c12",
+      "where": "body[1].p0.s1",
+      "sentence": "It presents the guidelines as part of a life-course approach that sits alongside its existing recommendations for adults.",
+      "classification": "supported",
+      "evidence": "Summary of WHO news/guideline: presented as part of a life-course approach alongside existing adult recommendations (blended summary; moderate confidence).",
+      "url": "https://www.who.int/news/item/07-10-2026-who-issues-first-global-guidelines-on-child-and-adolescent-obesity",
+      "action": "kept"
+    }
+  ],
+  "notes": "Date 7 Oct 2026 on who.int; PAHO republished 8 Oct 2026 (paho.org/en/news/8-10-2026-...). Early development documents said 0-9 years; final says 29 days to under 10. The 'wellbeing' framing (c05, c11) is unsupported; recommend removing from keyPoints and body. Search summaries blend pages, so c12 and c04 are moderate confidence."
+}

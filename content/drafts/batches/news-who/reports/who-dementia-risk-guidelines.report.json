@@ -1,0 +1,115 @@
+{
+  "id": "who-dementia-risk-guidelines",
+  "searchesUsed": 3,
+  "counts": {
+    "supported": 9,
+    "textbook": 1,
+    "unsupported": 1,
+    "wrong": 0,
+    "unsafe": 0,
+    "unchecked": 0
+  },
+  "claims": [
+    {
+      "id": "c01",
+      "where": "summary",
+      "sentence": "On 15 July 2026 the WHO issued updated guidelines on reducing the risk of cognitive decline and dementia, linking up to 45% of risk to factors that can be changed.",
+      "classification": "supported",
+      "evidence": "News item dated 15-07-2026: 'up to 45% of dementia risk could be prevented or delayed'; updated guidelines.",
+      "url": "https://www.who.int/news/item/15-07-2026-new-who-guidelines--up-to-45--of-dementia-risk-could-be-prevented-or-delayed",
+      "action": "kept"
+    },
+    {
+      "id": "c02",
+      "where": "keyPoints[0]",
+      "sentence": "The WHO published the second edition of its guidelines on reducing the risk of cognitive decline and dementia on 15 July 2026.",
+      "classification": "supported",
+      "evidence": "Publication page: 'Risk reduction of cognitive decline and dementia: WHO guidelines, second edition'; news 15 July 2026.",
+      "url": "https://www.who.int/publications/i/item/9789240123557",
+      "action": "kept"
+    },
+    {
+      "id": "c03",
+      "where": "keyPoints[1]",
+      "sentence": "The WHO says up to 45% of dementia risk can be attributed to modifiable risk factors.",
+      "classification": "supported",
+      "evidence": "News headline up to 45%; summary says linked to modifiable factors. Note another source attributes the 45% to the 2024 Lancet Commission.",
+      "url": "https://www.who.int/news/item/15-07-2026-new-who-guidelines--up-to-45--of-dementia-risk-could-be-prevented-or-delayed",
+      "action": "kept"
+    },
+    {
+      "id": "c04",
+      "where": "keyPoints[2]",
+      "sentence": "The risk factors named include tobacco, alcohol use, social isolation, physical inactivity, air pollution, high blood pressure and diabetes.",
+      "classification": "supported",
+      "evidence": "Summary of news item lists tobacco, alcohol, social isolation, inactivity, air pollution, and NCDs such as hypertension and diabetes (blended summary).",
+      "url": "https://www.who.int/news/item/15-07-2026-new-who-guidelines--up-to-45--of-dementia-risk-could-be-prevented-or-delayed",
+      "action": "kept"
+    },
+    {
+      "id": "c05",
+      "where": "keyPoints[3]",
+      "sentence": "The WHO says hearing aids may be offered as part of risk-reduction strategies.",
+      "classification": "supported",
+      "evidence": "'hearing aids may be offered as part of risk-reduction strategies'.",
+      "url": "https://www.who.int/news/item/15-07-2026-new-who-guidelines--up-to-45--of-dementia-risk-could-be-prevented-or-delayed",
+      "action": "kept"
+    },
+    {
+      "id": "c06",
+      "where": "body[0].p0.s0",
+      "sentence": "On 15 July 2026 the World Health Organization (WHO) released updated guidelines on reducing the risk of cognitive decline and dementia.",
+      "classification": "supported",
+      "evidence": "News item dated 15-07-2026.",
+      "url": "https://www.who.int/news/item/15-07-2026-new-who-guidelines--up-to-45--of-dementia-risk-could-be-prevented-or-delayed",
+      "action": "kept"
+    },
+    {
+      "id": "c07",
+      "where": "body[0].p0.s1",
+      "sentence": "They follow the WHO's first recommendations on the subject in 2019 and reflect a larger body of evidence.",
+      "classification": "supported",
+      "evidence": "Second edition 'reflects the considerable growth of the evidence base since the publication of 2019 guidelines'; 2019 were first WHO guidelines.",
+      "url": "https://www.who.int/publications/i/item/9789240123557",
+      "action": "kept"
+    },
+    {
+      "id": "c08",
+      "where": "body[0].p1.s0",
+      "sentence": "The WHO says that, although there is no cure for dementia, up to 45% of the risk can be attributed to modifiable risk factors.",
+      "classification": "unsupported",
+      "evidence": "Retrieved text supports the 45% modifiable-risk statement but 'although there is no cure for dementia' was not seen in the retrieved WHO text.",
+      "url": "https://www.who.int/news/item/15-07-2026-new-who-guidelines--up-to-45--of-dementia-risk-could-be-prevented-or-delayed",
+      "action": "edited",
+      "newSentence": "The WHO says that up to 45% of dementia risk can be attributed to modifiable risk factors."
+    },
+    {
+      "id": "c09",
+      "where": "body[0].p1.s1",
+      "sentence": "These include tobacco, alcohol use, social isolation, physical inactivity, air pollution and noncommunicable diseases such as high blood pressure and diabetes.",
+      "classification": "supported",
+      "evidence": "Same list as c04 from the news item summary.",
+      "url": "https://www.who.int/news/item/15-07-2026-new-who-guidelines--up-to-45--of-dementia-risk-could-be-prevented-or-delayed",
+      "action": "kept"
+    },
+    {
+      "id": "c10",
+      "where": "body[1].p0.s0",
+      "sentence": "The WHO says that managing cardiometabolic conditions such as hypertension, diabetes and high cholesterol can also help reduce dementia risk, and that hearing aids may be offered as part of risk-reduction strategies.",
+      "classification": "supported",
+      "evidence": "'management of cardiometabolic conditions such as hypertension, diabetes, and high cholesterol can also help reduce dementia risk'; hearing aids may be offered.",
+      "url": "https://www.who.int/news/item/15-07-2026-new-who-guidelines--up-to-45--of-dementia-risk-could-be-prevented-or-delayed",
+      "action": "kept"
+    },
+    {
+      "id": "c11",
+      "where": "body[1].p0.s1",
+      "sentence": "The 45% figure is an estimate of the share of risk linked to changeable factors; it is not a promise that addressing them would prevent dementia in any one person.",
+      "classification": "textbook",
+      "evidence": "Editorial caveat about population-level estimates; consistent with the nature of attributable-risk figures. Not stated in retrieved text.",
+      "url": "https://www.who.int/news/item/15-07-2026-new-who-guidelines--up-to-45--of-dementia-risk-could-be-prevented-or-delayed",
+      "action": "kept"
+    }
+  ],
+  "notes": "Date 15 July 2026 confirmed on who.int; PAHO republished 16 July 2026; launch webinar 16 July. Possible nuance: 45% is a Lancet Commission 2024 estimate referenced by WHO, so 'attributed' wording is fine but do not call it WHO's own calculation. First edition hearing-aid wording was 'insufficient evidence' so hearing aids is a genuinely new statement; keep 'may be offered' exactly."
+}
