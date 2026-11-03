@@ -1,0 +1,81 @@
+{
+ "id": "spirometry-lung-function-test-explained",
+ "searchesUsed": 4,
+ "claims": [
+  {
+   "sentence": "The NHS says spirometry measures how much air a person can breathe out in one breath, and it is also called a lung function test.",
+   "classification": "supported",
+   "evidence": "NHS spirometry page: measures how much air you can breathe out in one breath; also called a lung function test.",
+   "url": "https://www.nhs.uk/tests-and-treatments/spirometry/",
+   "action": "kept"
+  },
+  {
+   "sentence": "It is used to find out whether symptoms come from a lung condition such as asthma, COPD or pulmonary fibrosis (scarring of the lungs), to monitor an existing condition, or to check fitness before surgery.",
+   "classification": "supported",
+   "evidence": "NHS page: used to find out if symptoms are caused by asthma, COPD or pulmonary fibrosis, to monitor a condition, and to check health before surgery.",
+   "url": "https://www.nhs.uk/tests-and-treatments/spirometry/",
+   "action": "kept"
+  },
+  {
+   "sentence": "NHS England guidance says NICE recommends quality-assured spirometry as one of several objective tests for diagnosing asthma and COPD.",
+   "classification": "supported",
+   "evidence": "NHS England commissioning guidance: a suite of objective tests including quality-assured spirometry recommended by NICE for diagnosing asthma and COPD. NICE text itself not retrieved.",
+   "url": "https://www.england.nhs.uk/wp-content/uploads/2020/03/spirometry-commissioning-guidance.pdf",
+   "action": "kept"
+  },
+  {
+   "sentence": "The same guidance says normal spirometry does not rule out asthma, and that the results are read alongside the person's history.",
+   "classification": "unsupported",
+   "evidence": "Guidance says normal spirometry does not exclude asthma; 'read alongside history' not retrieved.",
+   "url": "https://www.england.nhs.uk/wp-content/uploads/2020/03/spirometry-commissioning-guidance.pdf",
+   "action": "edited",
+   "newSentence": "The same guidance says normal spirometry does not rule out asthma."
+  },
+  {
+   "sentence": "The NHS says staff record the person's height and weight, because they are needed for the calculations.",
+   "classification": "unsupported",
+   "evidence": "Height and weight recording was in NHS trust leaflets (Kingston, Oxford), not confirmed on the NHS page itself.",
+   "url": "https://www.kingstonandrichmond.nhs.uk/patients-and-families/patient-leaflets/lung-function-breathing-tests",
+   "action": "edited",
+   "newSentence": "NHS trust leaflets say staff record the person's height and weight, which are entered into the machine for the calculations."
+  },
+  {
+   "sentence": "The person sits beside the machine with a nose clip, breathes in deeply, seals their lips around the tube and breathes out as hard and fast as possible.",
+   "classification": "supported",
+   "evidence": "NHS page: breathe in fully, seal lips around the tube, blow out as hard and fast as possible; nose clip in trust leaflets. 'Beside the machine' not retrieved.",
+   "url": "https://www.nhs.uk/tests-and-treatments/spirometry/",
+   "action": "edited",
+   "newSentence": "The person uses a nose clip, breathes in deeply, seals their lips around the tube and breathes out as hard and fast as possible."
+  },
+  {
+   "sentence": "The NHS says this is repeated two more times, and that staff may ask the person to use an inhaler and repeat the test.",
+   "classification": "supported",
+   "evidence": "NHS page: repeat 2 more times; may be asked to use an inhaler and repeat after a break.",
+   "url": "https://www.nhs.uk/tests-and-treatments/spirometry/",
+   "action": "kept"
+  },
+  {
+   "sentence": "The NHS says the appointment should take no more than an hour, and that dizziness during or just after the test is possible but should be brief.",
+   "classification": "supported",
+   "evidence": "NHS page: appointment no more than an hour; may feel dizzy or faint during or shortly after but should not last long.",
+   "url": "https://www.nhs.uk/tests-and-treatments/spirometry/",
+   "action": "kept"
+  },
+  {
+   "sentence": "The NHS says the test should not be done during a chest infection or soon after a heart attack or stroke.",
+   "classification": "supported",
+   "evidence": "NHS page: not safe with a chest infection, certain heart problems, or after a recent heart attack, stroke or certain surgery.",
+   "url": "https://www.nhs.uk/tests-and-treatments/spirometry/",
+   "action": "kept"
+  },
+  {
+   "sentence": "The NHS says results should arrive within a few weeks, and that a doctor explains what they mean if there is a problem.",
+   "classification": "unsupported",
+   "evidence": "Retrieval conflicted: one search reported the NHS page giving 'within a few weeks', a later one did not find it. A practice page says specialist reviews then sends to referring doctor who discusses days later. 'Doctor explains if there is a problem' not found.",
+   "url": "https://villamedicalcentrewirral.nhs.uk/spirometry-testing/",
+   "action": "edited",
+   "newSentence": "Trust and practice pages say the results are reviewed and then sent to the doctor who requested the test, who discusses them with the person."
+  }
+ ],
+ "notes": "Conflict between two retrievals on 'within a few weeks' on nhs.uk; sentence 10 reworded conservatively. Re-check live NHS page."
+}

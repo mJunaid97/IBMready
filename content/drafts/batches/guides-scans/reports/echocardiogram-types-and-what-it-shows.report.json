@@ -1,10 +1,10 @@
 {
  "id": "echocardiogram-types-and-what-it-shows",
- "searchesUsed": 3,
+ "searchesUsed": 7,
  "counts": {
-  "supported": 17,
+  "supported": 23,
   "textbook": 0,
-  "unsupported": 14,
+  "unsupported": 20,
   "wrong": 0,
   "unsafe": 0,
   "unchecked": 0
@@ -265,7 +265,109 @@
    "evidence": "Ultrasound picture of the heart supported; guide-contents description.",
    "url": "https://www.nhs.uk/tests-and-treatments/echocardiogram/",
    "action": "kept"
+  },
+  {
+   "sentence": "For a standard echocardiogram no preparation is needed, and NHS trust leaflets say people can eat and drink as normal before and afterwards.",
+   "classification": "supported",
+   "evidence": "UHCW leaflet: no special preparation, take medication and eat and drink as normal; East Sussex and Essex leaflets agree on eating and drinking.",
+   "url": "https://www.uhcw.nhs.uk/download/clientfiles/files/Patient%20Information%20Leaflets/Medicine/Cardiology/Echocardiogram.pdf",
+   "action": "kept",
+   "id": "a32"
+  },
+  {
+   "sentence": "The person lies on their left side while a cardiac physiologist, a specially trained technician, scans the chest after putting gel on it.",
+   "classification": "supported",
+   "evidence": "Southampton (UHS) leaflet: lie on left side, probe with gel on chest. Cardiac physiologist performing the scan is in the Sussex leaflet; 'technician' is a plain gloss.",
+   "url": "https://www.uhs.nhs.uk/Media/UHS-website-2019/Patientinformation/Heartandlungs/Echocardiogram-633-PIL.pdf",
+   "action": "kept",
+   "id": "a33"
+  },
+  {
+   "sentence": "The physiologist may ask the person to change position or to hold their breath briefly so that the pictures are clearer.",
+   "classification": "supported",
+   "evidence": "Sussex leaflet: 'The cardiac physiologist may ask you to change positions or hold your breath briefly. This will help them to get better images.'",
+   "url": "https://www.uhsussex.nhs.uk/resources/having-an-echocardiogram/",
+   "action": "kept",
+   "id": "a34"
+  },
+  {
+   "sentence": "Trust leaflets describe a standard echocardiogram as having no meaningful risks.",
+   "classification": "unsupported",
+   "evidence": "Retrieved leaflets say painless, no side effects, no radioactivity (Southampton) and low risk; the phrase 'no meaningful risks' was not found.",
+   "url": "https://www.uhs.nhs.uk/Media/UHS-website-2019/Patientinformation/Heartandlungs/Echocardiogram-633-PIL.pdf",
+   "action": "edited",
+   "newSentence": "One trust leaflet describes a standard echocardiogram as painless, with no side effects and no radiation.",
+   "id": "a35"
+  },
+  {
+   "sentence": "A stress echocardiogram checks how the heart copes with a greater workload, by taking pictures at rest and again under stress.",
+   "classification": "supported",
+   "evidence": "Stress echo leaflets: pictures taken at rest and again after the heart rate is increased, then compared.",
+   "url": "https://www.ashfordstpeters.nhs.uk/leaflets/3416-cardiology-leaflet-stress-echocardiogram",
+   "action": "kept",
+   "id": "a36"
+  },
+  {
+   "sentence": "The stress comes from a treadmill or exercise bike or, for people who cannot exercise, from a medicine given into a vein.",
+   "classification": "unsupported",
+   "evidence": "Leaflets retrieved describe treadmill exercise or the drug dobutamine to raise heart rate. Exercise bike, 'into a vein' and 'cannot exercise' wording not retrieved.",
+   "url": "https://www.plymouthhospitals.nhs.uk/display-pil/pil-stress-echocardiogram-4021/",
+   "action": "edited",
+   "newSentence": "The stress usually comes from walking on a treadmill or, in a dobutamine stress echocardiogram, from a medicine called dobutamine that raises the heart rate.",
+   "id": "a37"
+  },
+  {
+   "sentence": "A cardiologist or a specially trained cardiac physiologist supervises the test.",
+   "classification": "supported",
+   "evidence": "Gloucestershire leaflet: 'supervised by a Cardiologist and/or a specially trained Cardiac Physiologist'.",
+   "url": "https://www.gloshospitals.nhs.uk/your-visit/patient-information-leaflets/exercise-stress-echocardiogram-ese/",
+   "action": "kept",
+   "id": "a38"
+  },
+  {
+   "sentence": "Trusts ask people to stop certain heart medicines beforehand, because they can stop the stress medicine from making the heart work harder, and each hospital gives its own instructions.",
+   "classification": "unsupported",
+   "evidence": "Plymouth leaflet asks to avoid beta blockers and calcium-channel blockers beforehand unless the doctor says otherwise; a research source notes some centres do not interrupt beta blockers. The stated mechanism was not in a retrieved leaflet.",
+   "url": "https://www.plymouthhospitals.nhs.uk/display-pil/pil-stress-echocardiogram-4021/",
+   "action": "edited",
+   "newSentence": "Some trust leaflets ask people to avoid certain heart medicines, such as beta blockers, before a dobutamine stress echocardiogram unless the doctor advises otherwise, and each hospital gives its own instructions.",
+   "id": "a39"
+  },
+  {
+   "sentence": "Leaflets describe the stress test as very safe, and they quote different figures for rare complications such as abnormal heart rhythms or allergic reactions.",
+   "classification": "unsupported",
+   "evidence": "Leaflets cite rare abnormal rhythm at different rates (about 1 in 1,000 in one, about 1 in 500 in another). 'Very safe' and allergic reactions not found.",
+   "url": "https://www.plymouthhospitals.nhs.uk/display-pil/pil-stress-echocardiogram-4021/",
+   "action": "edited",
+   "newSentence": "Leaflets describe rare complications such as an abnormal heart rhythm and quote different figures, for example around 1 in 1,000 patients in one leaflet and around 1 in 500 in another.",
+   "id": "a40"
+  },
+  {
+   "sentence": "A cardiac physiologist analyses the recorded images and writes a report for the doctor who requested the test.",
+   "classification": "supported",
+   "evidence": "Sussex leaflet: recorded images analysed by a cardiac physiologist who writes a report and sends it to the requesting doctor.",
+   "url": "https://www.uhsussex.nhs.uk/resources/having-an-echocardiogram/",
+   "action": "kept",
+   "id": "a41"
+  },
+  {
+   "sentence": "That doctor then discusses the results at a clinic appointment, by phone or by letter.",
+   "classification": "unsupported",
+   "evidence": "Leaflets say results go to the requesting clinician, possibly heard at the next clinic visit, or via a letter to the GP with a copy to the patient. Telephone not found.",
+   "url": "https://www.ashfordstpeters.nhs.uk/leaflets/3416-cardiology-leaflet-stress-echocardiogram",
+   "action": "edited",
+   "newSentence": "The doctor who requested the test then receives the report and passes on the results, for example at a clinic appointment or by letter, depending on the trust.",
+   "id": "a42"
+  },
+  {
+   "sentence": "For stress echocardiograms results usually take longer, and one leaflet says this may take two to four weeks.",
+   "classification": "unsupported",
+   "evidence": "Ashford and St Peters: letter to GP with copy to patient, taking about 2-4 weeks. A comparison with standard echo results was not retrieved.",
+   "url": "https://www.ashfordstpeters.nhs.uk/leaflets/3416-cardiology-leaflet-stress-echocardiogram",
+   "action": "edited",
+   "newSentence": "One trust leaflet says the letter about stress echocardiogram results, sent to the GP with a copy to the patient, can take about two to four weeks.",
+   "id": "a43"
   }
  ],
- "notes": "Retrieval was thin (search summaries, few verbatim page texts); strict classification applied. Extra facts: TOE fasting commonly about 4-6 hours per trust leaflets (do not publish figure): https://www.esht.nhs.uk/leaflet/transoesophageal-echocardiogram-toe/ | TOE: avoid driving 24 hours after sedative (NHS): https://www.nhs.uk/tests-and-treatments/echocardiogram/ | Bubble echo is quick and painless (BHF): https://www.bhf.org.uk/echocardiogram"
+ "notes": "Retrieval was thin (search summaries, few verbatim page texts); strict classification applied. Extra facts: TOE fasting commonly about 4-6 hours per trust leaflets (do not publish figure): https://www.esht.nhs.uk/leaflet/transoesophageal-echocardiogram-toe/ | TOE: avoid driving 24 hours after sedative (NHS): https://www.nhs.uk/tests-and-treatments/echocardiogram/ | Bubble echo is quick and painless (BHF): https://www.bhf.org.uk/echocardiogram | Round 2 additions (ids a..) checked separately: Ledger entry on first sentence of stress echo section is general; trust practice varies. Medication wording kept non-instructional."
 }

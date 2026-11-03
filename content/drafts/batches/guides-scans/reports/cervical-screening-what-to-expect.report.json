@@ -1,10 +1,10 @@
 {
  "id": "cervical-screening-what-to-expect",
- "searchesUsed": 3,
+ "searchesUsed": 6,
  "counts": {
-  "supported": 10,
+  "supported": 14,
   "textbook": 0,
-  "unsupported": 19,
+  "unsupported": 20,
   "wrong": 0,
   "unsafe": 1,
   "unchecked": 0
@@ -264,7 +264,48 @@
    "evidence": "Summary: HPV-first testing supported by NHS programme page; scope statement.",
    "url": "https://www.gov.uk/guidance/cervical-screening-programme-overview",
    "action": "kept"
+  },
+  {
+   "sentence": "The NHS describes cervical screening as a test of the health of the cervix that helps to prevent cervical cancer, rather than a test for cancer.",
+   "classification": "supported",
+   "evidence": "NHS: 'not a test for cancer, it's a test to help prevent cancer'; checks the health of the cervix.",
+   "url": "https://www.nhs.uk/tests-and-treatments/cervical-screening/",
+   "action": "kept",
+   "id": "a31"
+  },
+  {
+   "sentence": "The NHS says screening is still important for people who have had the HPV vaccine.",
+   "classification": "supported",
+   "evidence": "NHS England: if you've had the HPV vaccine it is still important to attend; vaccine does not protect against all HPV types.",
+   "url": "https://www.england.nhs.uk/south-east/info-professionals/public-health/cervical-screening/6374-2/introduction-2/hpv-vaccine-and-cervical-screening/",
+   "action": "kept",
+   "id": "a32"
+  },
+  {
+   "sentence": "Booking is usually through the GP surgery, online or in the NHS App, and some sexual health clinics also offer it.",
+   "classification": "supported",
+   "evidence": "Usually via GP surgery; some areas offer sexual health clinics or walk-in centres; online via NHS App or by phone.",
+   "url": "https://www.nhs.uk/tests-and-treatments/cervical-screening/",
+   "action": "kept",
+   "id": "a33"
+  },
+  {
+   "sentence": "The NHS suggests wearing something that can stay on during the test, such as a skirt or long top, and bringing someone for support.",
+   "classification": "supported",
+   "evidence": "Guide: may want something to leave on like a long jumper, dress or skirt; can bring a friend, relative, partner or support worker.",
+   "url": "https://www.england.nhs.uk/long-read/your-guide-to-nhs-cervical-screening/",
+   "action": "kept",
+   "id": "a34"
+  },
+  {
+   "sentence": "The NHS says some people find the test uncomfortable or painful, and that the person can ask to stop at any point.",
+   "classification": "unsupported",
+   "evidence": "Guide says say if you feel pain, ask for adjustments (smaller speculum, different position) and ask to stop at any time. 'Some find it uncomfortable' not stated in retrieved text.",
+   "url": "https://www.england.nhs.uk/long-read/your-guide-to-nhs-cervical-screening/",
+   "action": "edited",
+   "newSentence": "The NHS says the person can ask to stop at any time and can ask for adjustments, such as a smaller speculum or a different position, to feel more comfortable.",
+   "id": "a35"
   }
  ],
- "notes": "The search tool returns summaries, so nhs.uk text was not read verbatim; the 1 July 2025 transition details (who moved, who stays on three-year) should be verified on nhs.uk and gov.uk before publishing. Nothing retrieved on 12-month/24-month HPV follow-up wording beyond yearly surveillance, on unclear samples, result timing, or NHS statements about colposcopy and cancer. Extra facts: a person with a negative HPV result at their first test at 25 is next due in 5 years (https://www.gov.uk/guidance/cervical-screening-programme-overview); Cancer Research UK says cervical screening is not a test for cancer (https://www.cancerresearchuk.org/about-cancer/cervical-cancer/getting-diagnosed/screening)."
+ "notes": "The search tool returns summaries, so nhs.uk text was not read verbatim; the 1 July 2025 transition details (who moved, who stays on three-year) should be verified on nhs.uk and gov.uk before publishing. Nothing retrieved on 12-month/24-month HPV follow-up wording beyond yearly surveillance, on unclear samples, result timing, or NHS statements about colposcopy and cancer. Extra facts: a person with a negative HPV result at their first test at 25 is next due in 5 years (https://www.gov.uk/guidance/cervical-screening-programme-overview); Cancer Research UK says cervical screening is not a test for cancer (https://www.cancerresearchuk.org/about-cancer/cervical-cancer/getting-diagnosed/screening). | Round 2 additions (ids a..) checked separately: "
 }

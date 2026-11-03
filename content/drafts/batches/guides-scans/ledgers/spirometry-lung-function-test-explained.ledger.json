@@ -242,8 +242,7 @@
    "urls": [
     "https://www.nhs.uk/tests-and-treatments/spirometry/"
    ],
-   "note": "Added after second pass; retrieved in the deepening search (round 2); needs independent check",
-   "new": true
+   "note": "NHS spirometry page: measures how much air you can breathe out in one breath; also called a lung function test."
   },
   {
    "where": "body[2]",
@@ -252,8 +251,7 @@
    "urls": [
     "https://www.nhs.uk/tests-and-treatments/spirometry/"
    ],
-   "note": "Added after second pass; retrieved in the deepening search (round 2); needs independent check",
-   "new": true
+   "note": "NHS page: used to find out if symptoms are caused by asthma, COPD or pulmonary fibrosis, to monitor a condition, and to check health before surgery."
   },
   {
    "where": "body[2]",
@@ -262,38 +260,34 @@
    "urls": [
     "https://www.england.nhs.uk/wp-content/uploads/2020/03/spirometry-commissioning-guidance.pdf"
    ],
-   "note": "Added after second pass; retrieved in the deepening search (round 2); needs independent check",
-   "new": true
+   "note": "NHS England commissioning guidance: a suite of objective tests including quality-assured spirometry recommended by NICE for diagnosing asthma and COPD. NICE text itself not retrieved."
   },
   {
    "where": "body[2]",
-   "sentence": "The same guidance says normal spirometry does not rule out asthma, and that the results are read alongside the person's history.",
+   "sentence": "The same guidance says normal spirometry does not rule out asthma.",
    "basis": "excerpt",
    "urls": [
     "https://www.england.nhs.uk/wp-content/uploads/2020/03/spirometry-commissioning-guidance.pdf"
    ],
-   "note": "Added after second pass; retrieved in the deepening search (round 2); needs independent check",
-   "new": true
+   "note": "Guidance says normal spirometry does not exclude asthma; 'read alongside history' not retrieved."
   },
   {
    "where": "body[4]",
-   "sentence": "The NHS says staff record the person's height and weight, because they are needed for the calculations.",
+   "sentence": "NHS trust leaflets say staff record the person's height and weight, which are entered into the machine for the calculations.",
+   "basis": "excerpt",
+   "urls": [
+    "https://www.kingstonandrichmond.nhs.uk/patients-and-families/patient-leaflets/lung-function-breathing-tests"
+   ],
+   "note": "Height and weight recording was in NHS trust leaflets (Kingston, Oxford), not confirmed on the NHS page itself."
+  },
+  {
+   "where": "body[4]",
+   "sentence": "The person uses a nose clip, breathes in deeply, seals their lips around the tube and breathes out as hard and fast as possible.",
    "basis": "excerpt",
    "urls": [
     "https://www.nhs.uk/tests-and-treatments/spirometry/"
    ],
-   "note": "Added after second pass; retrieved in the deepening search (round 2); needs independent check",
-   "new": true
-  },
-  {
-   "where": "body[4]",
-   "sentence": "The person sits beside the machine with a nose clip, breathes in deeply, seals their lips around the tube and breathes out as hard and fast as possible.",
-   "basis": "excerpt",
-   "urls": [
-    "https://www.nhs.uk/tests-and-treatments/spirometry/"
-   ],
-   "note": "Added after second pass; retrieved in the deepening search (round 2); needs independent check",
-   "new": true
+   "note": "NHS page: breathe in fully, seal lips around the tube, blow out as hard and fast as possible; nose clip in trust leaflets. 'Beside the machine' not retrieved."
   },
   {
    "where": "body[4]",
@@ -302,8 +296,7 @@
    "urls": [
     "https://www.nhs.uk/tests-and-treatments/spirometry/"
    ],
-   "note": "Added after second pass; retrieved in the deepening search (round 2); needs independent check",
-   "new": true
+   "note": "NHS page: repeat 2 more times; may be asked to use an inhaler and repeat after a break."
   },
   {
    "where": "body[4]",
@@ -312,8 +305,7 @@
    "urls": [
     "https://www.nhs.uk/tests-and-treatments/spirometry/"
    ],
-   "note": "Added after second pass; retrieved in the deepening search (round 2); needs independent check",
-   "new": true
+   "note": "NHS page: appointment no more than an hour; may feel dizzy or faint during or shortly after but should not last long."
   },
   {
    "where": "body[4]",
@@ -322,18 +314,16 @@
    "urls": [
     "https://www.nhs.uk/tests-and-treatments/spirometry/"
    ],
-   "note": "Added after second pass; retrieved in the deepening search (round 2); needs independent check",
-   "new": true
+   "note": "NHS page: not safe with a chest infection, certain heart problems, or after a recent heart attack, stroke or certain surgery."
   },
   {
    "where": "body[4]",
-   "sentence": "The NHS says results should arrive within a few weeks, and that a doctor explains what they mean if there is a problem.",
+   "sentence": "Trust and practice pages say the results are reviewed and then sent to the doctor who requested the test, who discusses them with the person.",
    "basis": "excerpt",
    "urls": [
-    "https://www.nhs.uk/tests-and-treatments/spirometry/"
+    "https://villamedicalcentrewirral.nhs.uk/spirometry-testing/"
    ],
-   "note": "Added after second pass; retrieved in the deepening search (round 2); needs independent check",
-   "new": true
+   "note": "Retrieval conflicted: one search reported the NHS page giving 'within a few weeks', a later one did not find it. A practice page says specialist reviews then sends to referring doctor who discusses days later. 'Doctor explains if there is a problem' not found."
   }
  ]
 }
