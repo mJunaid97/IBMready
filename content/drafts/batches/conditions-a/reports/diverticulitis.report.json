@@ -1,0 +1,765 @@
+{
+ "id": "diverticulitis",
+ "searchesUsed": 9,
+ "counts": {
+  "supported": 85,
+  "textbook": 1,
+  "unsupported": 12,
+  "wrong": 2,
+  "unsafe": 0,
+  "unchecked": 0
+ },
+ "claims": [
+  {
+   "id": "c01",
+   "classification": "supported",
+   "evidence": "NHS: small pouches in the bowel wall; diverticulitis when they become inflamed or infected. Search summary of NHS page.",
+   "url": "https://www.nhs.uk/conditions/diverticular-disease-and-diverticulitis/",
+   "action": "kept"
+  },
+  {
+   "id": "c02",
+   "classification": "supported",
+   "evidence": "NIDDK: small outpouchings of the colon wall. \"Weak spots\" not retrieved, dropped.",
+   "url": "https://www.niddk.nih.gov/health-information/digestive-diseases/diverticulosis-diverticulitis",
+   "action": "edited",
+   "newSentence": "Diverticula are small pouches that bulge out of the wall of the large intestine."
+  },
+  {
+   "id": "c03",
+   "classification": "supported",
+   "evidence": "NHS inform: common as we get older; most people with pouches have no symptoms.",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/stomach-liver-and-gastrointestinal-tract/diverticular-disease-and-diverticulitis/",
+   "action": "edited",
+   "newSentence": "Pouches are common as people get older, and most people with them have no symptoms."
+  },
+  {
+   "id": "c04",
+   "classification": "supported",
+   "evidence": "NHS: disease = pouches causing symptoms. \"bleeding or inflammation\" wording not retrieved as definition, dropped.",
+   "url": "https://www.nhs.uk/conditions/diverticular-disease-and-diverticulitis/",
+   "action": "edited",
+   "newSentence": "When the pouches cause symptoms, doctors use the term diverticular disease."
+  },
+  {
+   "id": "c05",
+   "classification": "supported",
+   "evidence": "NIDDK: diverticulitis most often causes abdominal pain, usually severe; NHS: inflamed/infected.",
+   "url": "https://www.niddk.nih.gov/health-information/digestive-diseases/diverticulosis-diverticulitis",
+   "action": "kept"
+  },
+  {
+   "id": "c06",
+   "classification": "supported",
+   "evidence": "NHS inform lists abscess, perforation, blockage, bleeding, fistula; it also says complications affect 1 in 5 people with diverticulitis, so \"uncommon\" is not safe.",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/stomach-liver-and-gastrointestinal-tract/diverticular-disease-and-diverticulitis/",
+   "action": "edited",
+   "newSentence": "Complications can include an abscess, a blockage, a hole in the bowel, bleeding and fistulas."
+  },
+  {
+   "id": "c07",
+   "classification": "supported",
+   "evidence": "NIDDK: outpouchings of colon wall; \"weak spots\" not retrieved.",
+   "url": "https://www.niddk.nih.gov/health-information/digestive-diseases/diverticulosis-diverticulitis",
+   "action": "edited",
+   "newSentence": "Small pouches form and bulge out of the wall of the large intestine."
+  },
+  {
+   "id": "c08",
+   "classification": "supported",
+   "evidence": "NIDDK: experts are not sure what causes these conditions.",
+   "url": "https://www.niddk.nih.gov/health-information/digestive-diseases/diverticulosis-diverticulitis",
+   "action": "kept"
+  },
+  {
+   "id": "c09",
+   "classification": "supported",
+   "evidence": "NHS: infected or inflamed pouches are called diverticulitis.",
+   "url": "https://www.nhs.uk/conditions/diverticular-disease-and-diverticulitis/",
+   "action": "kept"
+  },
+  {
+   "id": "c10",
+   "classification": "supported",
+   "evidence": "NIDDK: diverticulosis quite common especially as people age.",
+   "url": "https://www.niddk.nih.gov/health-information/digestive-diseases/diverticulosis-diverticulitis",
+   "action": "kept"
+  },
+  {
+   "id": "c11",
+   "classification": "supported",
+   "evidence": "StatPearls: low-fibre, high-red-meat diet may be associated with increased risk; PMC review lists red meat. Hedged.",
+   "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK430771/",
+   "action": "edited",
+   "newSentence": "A diet low in fibre and high in red meat, which may be linked to higher risk"
+  },
+  {
+   "id": "c12",
+   "classification": "supported",
+   "evidence": "PMC review lists inactivity among risk factors; vigorous exercise appears protective.",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10935533/",
+   "action": "kept"
+  },
+  {
+   "id": "c13",
+   "classification": "supported",
+   "evidence": "PMC review: regular NSAIDs raise risk; NIDDK: NSAIDs may increase complication chance. Steroids not retrieved, dropped.",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10935533/",
+   "action": "edited",
+   "newSentence": "Regular use of NSAID painkillers"
+  },
+  {
+   "id": "c14",
+   "classification": "supported",
+   "evidence": "StatPearls/PMC: obesity tied to higher rates of diverticulitis and bleeding.",
+   "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK430771/",
+   "action": "kept"
+  },
+  {
+   "id": "c15",
+   "classification": "supported",
+   "evidence": "PMC review lists smoking among major risk factors.",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10935533/",
+   "action": "kept"
+  },
+  {
+   "id": "c16",
+   "classification": "supported",
+   "evidence": "NIDDK: research suggests certain genes may make some people more likely to develop diverticular disease.",
+   "url": "https://www.niddk.nih.gov/health-information/digestive-diseases/diverticulosis-diverticulitis",
+   "action": "kept"
+  },
+  {
+   "id": "c17",
+   "classification": "supported",
+   "evidence": "NHS: high temperature with diverticulitis.",
+   "url": "https://www.nhs.uk/conditions/diverticular-disease-and-diverticulitis/",
+   "action": "kept"
+  },
+  {
+   "id": "c18",
+   "classification": "supported",
+   "evidence": "NHS: blood in your poo.",
+   "url": "https://www.nhs.uk/conditions/diverticular-disease-and-diverticulitis/",
+   "action": "kept"
+  },
+  {
+   "id": "c19",
+   "classification": "supported",
+   "evidence": "NHS 999 advice: sepsis signs, confusion, pale or blotchy skin.",
+   "url": "https://www.nhs.uk/conditions/diverticular-disease-and-diverticulitis/",
+   "action": "kept"
+  },
+  {
+   "id": "c20",
+   "classification": "supported",
+   "evidence": "NHS inform: bleeding described as complication.",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/stomach-liver-and-gastrointestinal-tract/diverticular-disease-and-diverticulitis/",
+   "action": "kept"
+  },
+  {
+   "id": "c21",
+   "classification": "supported",
+   "evidence": "NHS inform: abscess, a pus-filled cavity, most common complication of diverticulitis.",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/stomach-liver-and-gastrointestinal-tract/diverticular-disease-and-diverticulitis/",
+   "action": "edited",
+   "newSentence": "An abscess, a pus-filled cavity"
+  },
+  {
+   "id": "c22",
+   "classification": "supported",
+   "evidence": "NHS inform: hole (perforation) in the bowel.",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/stomach-liver-and-gastrointestinal-tract/diverticular-disease-and-diverticulitis/",
+   "action": "kept"
+  },
+  {
+   "id": "c23",
+   "classification": "supported",
+   "evidence": "NHS inform: scarring can narrow/block the bowel.",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/stomach-liver-and-gastrointestinal-tract/diverticular-disease-and-diverticulitis/",
+   "action": "kept"
+  },
+  {
+   "id": "c24",
+   "classification": "supported",
+   "evidence": "NHS inform: fistulas are abnormal connections to organs such as the bladder. \"May need surgery\" for fistula not retrieved.",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/stomach-liver-and-gastrointestinal-tract/diverticular-disease-and-diverticulitis/",
+   "action": "edited",
+   "newSentence": "A fistula, an abnormal connection between the bowel and another organ such as the bladder"
+  },
+  {
+   "id": "c25",
+   "classification": "supported",
+   "evidence": "NIDDK diagnosis page: doctors take history, examine, order tests.",
+   "url": "https://www.niddk.nih.gov/health-information/digestive-diseases/diverticulosis-diverticulitis/diagnosis",
+   "action": "edited",
+   "newSentence": "Doctors review the person's history, carry out a physical examination and order tests."
+  },
+  {
+   "id": "c26",
+   "classification": "supported",
+   "evidence": "NIDDK: blood tests, stool test, imaging (typically CT), colonoscopy to confirm and rule out cancer. \"Blood tests for inflammation commonly used\" not retrieved; NICE offers FBC and CRP to people with suspected complicated disease referred for same-day assessment.",
+   "url": "https://www.niddk.nih.gov/health-information/digestive-diseases/diverticulosis-diverticulitis/diagnosis",
+   "action": "edited",
+   "newSentence": "Doctors may order blood tests, a stool test, imaging tests (typically a CT scan) and a colonoscopy, which may be recommended to confirm a diagnosis and rule out other conditions such as cancer. NICE offers a full blood count and C-reactive protein test to people with suspected complicated diverticulitis who are referred for same-day hospital assessment."
+  },
+  {
+   "id": "c27",
+   "classification": "supported",
+   "evidence": "NHS: high-fibre diet can often ease symptoms; paracetamol for pain. Bulk-forming laxatives and antispasmodics not retrieved (unsupported), dropped.",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/stomach-liver-and-gastrointestinal-tract/diverticular-disease-and-diverticulitis/",
+   "action": "edited",
+   "newSentence": "The NHS says a high-fibre diet can often ease symptoms of diverticular disease, and paracetamol can be used to relieve pain."
+  },
+  {
+   "id": "c28",
+   "classification": "supported",
+   "evidence": "NHS: mild diverticulitis usually treated at home with GP-prescribed antibiotics; serious cases may need hospital care. \"When caused by infection\" not stated.",
+   "url": "https://www.nhs.uk/conditions/diverticular-disease-and-diverticulitis/",
+   "action": "edited",
+   "newSentence": "Mild diverticulitis can usually be treated at home with antibiotics prescribed by a GP, and more serious cases may need hospital care, usually with intravenous antibiotics."
+  },
+  {
+   "id": "c29",
+   "classification": "supported",
+   "evidence": "NICE NG147: offer IV antibiotics to people admitted to secondary care with suspected complicated acute diverticulitis.",
+   "url": "https://www.nice.org.uk/guidance/ng147/chapter/recommendations",
+   "action": "kept"
+  },
+  {
+   "id": "c30",
+   "classification": "supported",
+   "evidence": "NHS inform: surgery to remove affected bowel sometimes recommended after serious complications, rare. Fistula/blockage specifics not retrieved.",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/stomach-liver-and-gastrointestinal-tract/diverticular-disease-and-diverticulitis/",
+   "action": "edited",
+   "newSentence": "Surgery to remove the affected section of bowel is sometimes recommended after serious complications, although this is rare."
+  },
+  {
+   "id": "c31",
+   "classification": "supported",
+   "evidence": "NHS: things you can do: increase fibre slowly, plenty of water, stop smoking, healthy weight. \"Prevention\" framing not claimed.",
+   "url": "https://www.nhs.uk/conditions/diverticular-disease-and-diverticulitis/",
+   "action": "edited",
+   "newSentence": "The NHS lists increasing fibre slowly, drinking plenty of water, stopping smoking and keeping a healthy weight among the things people can do."
+  },
+  {
+   "id": "c32",
+   "classification": "supported",
+   "evidence": "MedlinePlus: whether a low-fibre diet leads to this problem is not well proven.",
+   "url": "https://medlineplus.gov/ency/article/007668.htm",
+   "action": "kept",
+   "newSentence": "MedlinePlus says whether a low-fibre diet leads to this problem is not well proven."
+  },
+  {
+   "id": "c33",
+   "classification": "supported",
+   "evidence": "NHS: 999/A&E for severe tummy pain with vomiting, swollen tummy, unable to pass stools or wind, heavy bleeding from bottom, sepsis signs incl. confusion, pale/blotchy skin, fast breathing.",
+   "url": "https://www.nhs.uk/conditions/diverticular-disease-and-diverticulitis/",
+   "action": "edited",
+   "newSentence": "Call 999 or go to A&E for severe tummy pain with vomiting, a swollen tummy, being unable to pass stool or wind, heavy bleeding from the bottom, or signs of sepsis such as confusion, pale or blotchy skin or fast breathing."
+  },
+  {
+   "id": "c34",
+   "classification": "supported",
+   "evidence": "NHS: urgent GP appointment or NHS 111 for blood/mucus (slime) in poo, worsening/persistent pain, high temperature, repeated vomiting. Wording \"same day\" not retrieved.",
+   "url": "https://www.nhs.uk/conditions/diverticular-disease-and-diverticulitis/",
+   "action": "edited",
+   "newSentence": "An urgent GP appointment or NHS 111 is advised for blood or mucus in the stool, tummy pain that is getting worse or not going away, a high temperature, or repeated vomiting that stops fluids staying down."
+  },
+  {
+   "id": "c35",
+   "classification": "supported",
+   "evidence": "NHS/NIDDK: pouches in bowel wall.",
+   "url": "https://www.niddk.nih.gov/health-information/digestive-diseases/diverticulosis-diverticulitis",
+   "action": "kept"
+  },
+  {
+   "id": "c36",
+   "classification": "supported",
+   "evidence": "NIDDK/StatPearls: diverticulosis usually asymptomatic.",
+   "url": "https://www.niddk.nih.gov/health-information/digestive-diseases/diverticulosis-diverticulitis",
+   "action": "kept"
+  },
+  {
+   "id": "c37",
+   "classification": "supported",
+   "evidence": "NIDDK: pouches often found incidentally during tests for other reasons.",
+   "url": "https://www.niddk.nih.gov/health-information/digestive-diseases/diverticulosis-diverticulitis",
+   "action": "kept"
+  },
+  {
+   "id": "c38",
+   "classification": "supported",
+   "evidence": "Retrieved NIDDK text does not define the term this way; NHS: disease = pouches cause symptoms. Reworded to that.",
+   "url": "https://www.nhs.uk/conditions/diverticular-disease-and-diverticulitis/",
+   "action": "edited",
+   "newSentence": "Diverticular disease is the term used when the pouches cause symptoms."
+  },
+  {
+   "id": "c39",
+   "classification": "supported",
+   "evidence": "NIDDK: diverticular disease can cause constipation, diarrhoea, abdominal pain or bloating. \"Without inflammation\" not retrieved.",
+   "url": "https://www.niddk.nih.gov/health-information/digestive-diseases/diverticulosis-diverticulitis",
+   "action": "edited",
+   "newSentence": "Diverticular disease can cause constipation, diarrhoea, abdominal pain or bloating."
+  },
+  {
+   "id": "c40",
+   "classification": "supported",
+   "evidence": "NHS: if intestine becomes infected or inflamed it is called diverticulitis.",
+   "url": "https://www.nhs.uk/conditions/diverticular-disease-and-diverticulitis/",
+   "action": "kept"
+  },
+  {
+   "id": "c41",
+   "classification": "supported",
+   "evidence": "NIDDK: experts are not sure what causes these conditions.",
+   "url": "https://www.niddk.nih.gov/health-information/digestive-diseases/diverticulosis-diverticulitis",
+   "action": "kept"
+  },
+  {
+   "id": "c42",
+   "classification": "supported",
+   "evidence": "Genes supported (NIDDK). Gut-bacteria/immune \"still studying\" not retrieved from NIDDK; moved to a separate HRA-supported sentence.",
+   "url": "https://www.niddk.nih.gov/health-information/digestive-diseases/diverticulosis-diverticulitis",
+   "action": "edited",
+   "newSentence": "It says research suggests that certain genes may make some people more likely to develop diverticular disease."
+  },
+  {
+   "id": "c43",
+   "classification": "supported",
+   "evidence": "NIDDK.",
+   "url": "https://www.niddk.nih.gov/health-information/digestive-diseases/diverticulosis-diverticulitis",
+   "action": "kept"
+  },
+  {
+   "id": "c44",
+   "classification": "supported",
+   "evidence": "NHS: constipation, diarrhoea, blood in poo, bloating; diverticulitis adds severe constant tummy pain and high temperature.",
+   "url": "https://www.nhs.uk/conditions/diverticular-disease-and-diverticulitis/",
+   "action": "kept"
+  },
+  {
+   "id": "c45",
+   "classification": "supported",
+   "evidence": "NIDDK: disease can cause constipation, diarrhoea, abdominal pain or bloating; \"not inflamed\" not retrieved.",
+   "url": "https://www.niddk.nih.gov/health-information/digestive-diseases/diverticulosis-diverticulitis",
+   "action": "edited",
+   "newSentence": "Diverticular disease can cause constipation, diarrhoea, abdominal pain or bloating."
+  },
+  {
+   "id": "c46",
+   "classification": "unsupported",
+   "evidence": "PMC4789974 was not returned by any search; no retrieved text says symptoms alone cannot settle the diagnosis.",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4789974/",
+   "action": "removed"
+  },
+  {
+   "id": "c47",
+   "classification": "unsupported",
+   "evidence": "NHS England page not retrieved saying this; NHS inform says complications affect 1 in 5 people with diverticulitis.",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/stomach-liver-and-gastrointestinal-tract/diverticular-disease-and-diverticulitis/",
+   "action": "removed"
+  },
+  {
+   "id": "c48",
+   "classification": "supported",
+   "evidence": "NHS inform: abscess, perforation, blockage, bleeding, fistula; surgery after serious complications, rare.",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/stomach-liver-and-gastrointestinal-tract/diverticular-disease-and-diverticulitis/",
+   "action": "edited",
+   "newSentence": "Complications can include an abscess, a blockage, a hole in the bowel, bleeding and fistulas."
+  },
+  {
+   "id": "c49",
+   "classification": "supported",
+   "evidence": "Bleeding and abscess supported by NHS inform; NIDDK attribution not retrieved, so attributed to NHS inform.",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/stomach-liver-and-gastrointestinal-tract/diverticular-disease-and-diverticulitis/",
+   "action": "edited",
+   "newSentence": "NHS inform describes an abscess as a pus-filled cavity, and a fistula as an abnormal connection between the bowel and another organ such as the bladder."
+  },
+  {
+   "id": "c50",
+   "classification": "supported",
+   "evidence": "NHS: urgent advice for worsening/persistent pain, high temperature, blood in poo. \"Severe or constant\" not the NHS trigger.",
+   "url": "https://www.nhs.uk/conditions/diverticular-disease-and-diverticulitis/",
+   "action": "edited",
+   "newSentence": "Tummy pain that is getting worse or not going away, a high temperature, or blood in the stool are features for which the NHS advises getting urgent advice."
+  },
+  {
+   "id": "c51",
+   "classification": "supported",
+   "evidence": "NIDDK diagnosis: medical history, physical exam, tests.",
+   "url": "https://www.niddk.nih.gov/health-information/digestive-diseases/diverticulosis-diverticulitis/diagnosis",
+   "action": "kept"
+  },
+  {
+   "id": "c52",
+   "classification": "supported",
+   "evidence": "NIDDK: imaging typically CT; colonoscopy may be recommended to confirm and rule out cancer.",
+   "url": "https://www.niddk.nih.gov/health-information/digestive-diseases/diverticulosis-diverticulitis/diagnosis",
+   "action": "edited",
+   "newSentence": "NIDDK says they may then order blood tests, a stool test, imaging tests and a colonoscopy. Imaging is typically a CT scan."
+  },
+  {
+   "id": "c53",
+   "classification": "unsupported",
+   "evidence": "Searches did not return text saying WBC and CRP are \"commonly used\"; a primary-care review found white cell count not useful as triage. Retrieved: NICE guideline offers FBC, U&E and CRP to suspected complicated disease referred for same-day assessment.",
+   "url": "https://www.nice.org.uk/guidance/ng147/chapter/recommendations",
+   "action": "edited",
+   "newSentence": "For people with suspected complicated acute diverticulitis who are referred for same-day hospital assessment, NICE guideline NG147 offers a full blood count, a urea and electrolytes test and a C-reactive protein test."
+  },
+  {
+   "id": "c54",
+   "classification": "unsupported",
+   "evidence": "PMC4789974 not returned by any search.",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4789974/",
+   "action": "removed"
+  },
+  {
+   "id": "c55",
+   "classification": "unsupported",
+   "evidence": "Retrieved: 98% sensitivity in one subgroup from a single study (number not used); committee called contrast CT the gold standard. \"Picks up most true cases\" gloss not sourced.",
+   "url": "https://www.nice.org.uk/guidance/ng147/evidence/g-diagnostic-tests-for-acute-diverticulitis-pdf-6969106484",
+   "action": "edited",
+   "newSentence": "The NICE committee called contrast CT the gold standard diagnostic test for acute diverticulitis and its complications."
+  },
+  {
+   "id": "c56",
+   "classification": "unsupported",
+   "evidence": "PMC9793761 not returned by any search; replaced by NICE committee sentence.",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9793761/",
+   "action": "removed"
+  },
+  {
+   "id": "c57",
+   "classification": "supported",
+   "evidence": "NHS: mild at home, serious may need hospital; NICE separates by systemic illness.",
+   "url": "https://www.nhs.uk/conditions/diverticular-disease-and-diverticulitis/",
+   "action": "kept"
+  },
+  {
+   "id": "c58",
+   "classification": "supported",
+   "evidence": "Paracetamol and high-fibre supported; laxatives/antispasmodics not retrieved.",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/stomach-liver-and-gastrointestinal-tract/diverticular-disease-and-diverticulitis/",
+   "action": "edited",
+   "newSentence": "The NHS says a high-fibre diet can often ease symptoms of diverticular disease, and paracetamol can be used to relieve pain."
+  },
+  {
+   "id": "c59",
+   "classification": "supported",
+   "evidence": "See treatment field.",
+   "url": "https://www.nhs.uk/conditions/diverticular-disease-and-diverticulitis/",
+   "action": "edited",
+   "newSentence": "For diverticulitis, the NHS says mild cases can usually be treated at home with antibiotics prescribed by a GP, while more serious cases may need hospital care, usually with intravenous antibiotics."
+  },
+  {
+   "id": "c60",
+   "classification": "supported",
+   "evidence": "NICE NG147 recommendations exist for different situations.",
+   "url": "https://www.nice.org.uk/guidance/ng147/chapter/recommendations",
+   "action": "kept"
+  },
+  {
+   "id": "c61",
+   "classification": "supported",
+   "evidence": "NICE: oral antibiotics if systemically unwell but not meeting referral criteria.",
+   "url": "https://www.nice.org.uk/guidance/ng147/chapter/recommendations",
+   "action": "kept"
+  },
+  {
+   "id": "c62",
+   "classification": "wrong",
+   "evidence": "NICE committee recommended antibiotics for the CT-confirmed uncomplicated group because watchful waiting could increase recurrence and further surgery; retrieved text says need for antibiotics is reviewed. The \"watchful waiting is an option\" claim is not what retrieved text says.",
+   "url": "https://www.nice.org.uk/guidance/ng147/chapter/recommendations",
+   "action": "edited",
+   "newSentence": "Where a CT scan confirms uncomplicated acute diverticulitis, NICE says the need for antibiotics is reviewed, taking account of other medical conditions."
+  },
+  {
+   "id": "c63",
+   "classification": "supported",
+   "evidence": "NICE.",
+   "url": "https://www.nice.org.uk/guidance/ng147/chapter/recommendations",
+   "action": "kept"
+  },
+  {
+   "id": "c64",
+   "classification": "supported",
+   "evidence": "NHS inform: surgery to remove affected bowel sometimes recommended after serious complications; \"colectomy\", fistula/blockage not retrieved.",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/stomach-liver-and-gastrointestinal-tract/diverticular-disease-and-diverticulitis/",
+   "action": "edited",
+   "newSentence": "NHS inform says surgery to remove the affected section of bowel is sometimes recommended after serious complications, although this is rare."
+  },
+  {
+   "id": "c65",
+   "classification": "supported",
+   "evidence": "NICE: do not offer aminosalicylate or antibiotics to prevent recurrent acute diverticulitis.",
+   "url": "https://www.nice.org.uk/guidance/ng147/chapter/recommendations",
+   "action": "kept"
+  },
+  {
+   "id": "c66",
+   "classification": "supported",
+   "evidence": "NHS: increase fibre slowly, plenty of water, stop smoking, healthy weight.",
+   "url": "https://www.nhs.uk/conditions/diverticular-disease-and-diverticulitis/",
+   "action": "edited",
+   "newSentence": "The NHS self-care advice includes increasing fibre slowly, drinking plenty of water, stopping smoking and keeping a healthy weight."
+  },
+  {
+   "id": "c67",
+   "classification": "supported",
+   "evidence": "NHS: NSAIDs/opioids can cause stomach problems or constipation and raise risk of bowel perforation.",
+   "url": "https://www.nhs.uk/conditions/diverticular-disease-and-diverticulitis/",
+   "action": "edited",
+   "newSentence": "It also says NSAID painkillers such as ibuprofen and opioids such as codeine can cause stomach problems or constipation and raise the risk of a bowel perforation."
+  },
+  {
+   "id": "c68",
+   "classification": "unsupported",
+   "evidence": "NIDDK list was truncated in searches; StatPearls/PMC review support the link (hedged); NIDDK: NSAIDs may increase complication chance.",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10935533/",
+   "action": "edited",
+   "newSentence": "Reviews on the NIH library site link low-fibre, high-red-meat diets, obesity, smoking, inactivity and regular NSAID use with higher risk. NIDDK says NSAIDs may increase the chance of diverticulitis complications."
+  },
+  {
+   "id": "c69",
+   "classification": "supported",
+   "evidence": "MedlinePlus: providers may recommend a high-fibre, low-red-meat diet, regular physical activity and not smoking.",
+   "url": "https://medlineplus.gov/ency/article/007668.htm",
+   "action": "edited",
+   "newSentence": "MedlinePlus says providers may recommend a diet high in fibre and low in red meat, regular physical activity and not smoking."
+  },
+  {
+   "id": "c70",
+   "classification": "supported",
+   "evidence": "MedlinePlus.",
+   "url": "https://medlineplus.gov/ency/article/007668.htm",
+   "action": "edited",
+   "newSentence": "However, it also states that whether a low-fibre diet leads to the problem is not well proven."
+  },
+  {
+   "id": "c71",
+   "classification": "unsupported",
+   "evidence": "NIDDK: quite common especially as people age; \"major factor\" and lifestyle inference not stated.",
+   "url": "https://www.niddk.nih.gov/health-information/digestive-diseases/diverticulosis-diverticulitis",
+   "action": "edited",
+   "newSentence": "NIDDK says diverticulosis is quite common, especially as people age."
+  },
+  {
+   "id": "c72",
+   "classification": "supported",
+   "evidence": "NHS inform: common with age; most with pouches have no symptoms.",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/stomach-liver-and-gastrointestinal-tract/diverticular-disease-and-diverticulitis/",
+   "action": "edited",
+   "newSentence": "NHS inform says most people with pouches have no symptoms."
+  },
+  {
+   "id": "c73",
+   "classification": "supported",
+   "evidence": "Trial/HRA registrations study gut microbiome in diverticulitis; summary says cause not established. NIDDK attribution dropped.",
+   "url": "https://www.hra.nhs.uk/planning-and-improving-research/application-summaries/research-summaries/the-gut-microbiome-in-diverticulitis-and-diverticulosis/",
+   "action": "edited",
+   "newSentence": "Researchers are studying whether changes in gut bacteria and immune responses play a role, but a cause has not been established."
+  },
+  {
+   "id": "c74",
+   "classification": "supported",
+   "evidence": "NHS.",
+   "url": "https://www.nhs.uk/conditions/diverticular-disease-and-diverticulitis/",
+   "action": "kept"
+  },
+  {
+   "id": "c75",
+   "classification": "supported",
+   "evidence": "NHS: heavy bleeding from the bottom; sepsis signs confusion, pale/blotchy skin, breathing fast. \"Abnormal temperature\" not retrieved.",
+   "url": "https://www.nhs.uk/conditions/diverticular-disease-and-diverticulitis/",
+   "action": "edited",
+   "newSentence": "The same applies to heavy bleeding from the bottom and to signs of sepsis, such as confusion, pale or blotchy skin, or fast breathing."
+  },
+  {
+   "id": "c76",
+   "classification": "supported",
+   "evidence": "NHS: urgent GP appointment or NHS 111.",
+   "url": "https://www.nhs.uk/conditions/diverticular-disease-and-diverticulitis/",
+   "action": "edited",
+   "newSentence": "An urgent GP appointment or NHS 111 is advised for blood or mucus in the stool, tummy pain that is getting worse or not going away, a high temperature, or repeated vomiting that stops fluids staying down."
+  },
+  {
+   "id": "c77",
+   "classification": "unsupported",
+   "evidence": "Linking these symptoms to complications is an inference not in retrieved text.",
+   "url": "https://www.nhs.uk/conditions/diverticular-disease-and-diverticulitis/",
+   "action": "removed"
+  },
+  {
+   "id": "c78",
+   "classification": "unsupported",
+   "evidence": "\"Routine GP appointment otherwise\" not stated by retrieved NHS text.",
+   "url": "https://www.nhs.uk/conditions/diverticular-disease-and-diverticulitis/",
+   "action": "removed"
+  },
+  {
+   "id": "c79",
+   "classification": "supported",
+   "evidence": "NIDDK/StatPearls.",
+   "url": "https://www.niddk.nih.gov/health-information/digestive-diseases/diverticulosis-diverticulitis",
+   "action": "kept"
+  },
+  {
+   "id": "c80",
+   "classification": "supported",
+   "evidence": "NHS: disease = pouches cause symptoms.",
+   "url": "https://www.nhs.uk/conditions/diverticular-disease-and-diverticulitis/",
+   "action": "kept"
+  },
+  {
+   "id": "c81",
+   "classification": "supported",
+   "evidence": "NHS.",
+   "url": "https://www.nhs.uk/conditions/diverticular-disease-and-diverticulitis/",
+   "action": "kept"
+  },
+  {
+   "id": "c82",
+   "classification": "supported",
+   "evidence": "NICE.",
+   "url": "https://www.nice.org.uk/guidance/ng147/chapter/recommendations",
+   "action": "kept"
+  },
+  {
+   "id": "c83",
+   "classification": "wrong",
+   "evidence": "See sections[3]; replaced with NICE review of antibiotic need.",
+   "url": "https://www.nice.org.uk/guidance/ng147/chapter/recommendations",
+   "action": "edited",
+   "newSentence": "Where a CT scan confirms uncomplicated acute diverticulitis, NICE says the need for antibiotics is reviewed, taking account of other medical conditions."
+  },
+  {
+   "id": "c84",
+   "classification": "supported",
+   "evidence": "NICE.",
+   "url": "https://www.nice.org.uk/guidance/ng147/chapter/recommendations",
+   "action": "kept"
+  },
+  {
+   "id": "c85",
+   "classification": "unsupported",
+   "evidence": "No retrieved text says this.",
+   "url": "https://www.nice.org.uk/guidance/ng147/chapter/recommendations",
+   "action": "removed"
+  },
+  {
+   "id": "c86",
+   "classification": "supported",
+   "evidence": "NHS: paracetamol can be used to relieve pain.",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/stomach-liver-and-gastrointestinal-tract/diverticular-disease-and-diverticulitis/",
+   "action": "kept"
+  },
+  {
+   "id": "c87",
+   "classification": "supported",
+   "evidence": "NHS: stomach problems or constipation; perforation risk.",
+   "url": "https://www.nhs.uk/conditions/diverticular-disease-and-diverticulitis/",
+   "action": "edited",
+   "newSentence": "It says NSAIDs such as ibuprofen, and opioids such as codeine, can cause stomach problems or constipation and raise the risk of a bowel perforation."
+  },
+  {
+   "id": "c88",
+   "classification": "textbook",
+   "evidence": "General routing; not stated verbatim. Narrowed to GP.",
+   "url": "https://www.nhs.uk/conditions/diverticular-disease-and-diverticulitis/",
+   "action": "edited",
+   "newSentence": "A GP can advise on the right choice for an individual."
+  },
+  {
+   "id": "c89",
+   "classification": "supported",
+   "evidence": "NIDDK.",
+   "url": "https://www.niddk.nih.gov/health-information/digestive-diseases/diverticulosis-diverticulitis",
+   "action": "kept"
+  },
+  {
+   "id": "c90",
+   "classification": "unsupported",
+   "evidence": "NIDDK list truncated; MedlinePlus lists low-fibre/high-red-meat diets as lifestyle factors and says providers may recommend high-fibre, low-red-meat diet.",
+   "url": "https://medlineplus.gov/ency/article/007668.htm",
+   "action": "edited",
+   "newSentence": "MedlinePlus lists diets low in fibre and high in red meat among lifestyle factors, and says providers may recommend a diet high in fibre and low in red meat."
+  },
+  {
+   "id": "c91",
+   "classification": "supported",
+   "evidence": "MedlinePlus.",
+   "url": "https://medlineplus.gov/ency/article/007668.htm",
+   "action": "kept"
+  },
+  {
+   "id": "c92",
+   "classification": "supported",
+   "evidence": "NHS 999 advice.",
+   "url": "https://www.nhs.uk/conditions/diverticular-disease-and-diverticulitis/",
+   "action": "kept"
+  },
+  {
+   "id": "c93",
+   "classification": "supported",
+   "evidence": "NHS: urgent GP appointment or NHS 111.",
+   "url": "https://www.nhs.uk/conditions/diverticular-disease-and-diverticulitis/",
+   "action": "edited",
+   "newSentence": "For blood or mucus in the stool, worsening pain, a high temperature or repeated vomiting, it advises an urgent GP appointment or NHS 111."
+  },
+  {
+   "id": "c94",
+   "classification": "supported",
+   "evidence": "NHS.",
+   "url": "https://www.nhs.uk/conditions/diverticular-disease-and-diverticulitis/",
+   "action": "kept"
+  },
+  {
+   "id": "c95",
+   "classification": "supported",
+   "evidence": "NHS inform: pouches common with age.",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/stomach-liver-and-gastrointestinal-tract/diverticular-disease-and-diverticulitis/",
+   "action": "edited",
+   "newSentence": "Small pouches called diverticula; common as people get older"
+  },
+  {
+   "id": "c96",
+   "classification": "supported",
+   "evidence": "NHS.",
+   "url": "https://www.nhs.uk/conditions/diverticular-disease-and-diverticulitis/",
+   "action": "kept"
+  },
+  {
+   "id": "c97",
+   "classification": "supported",
+   "evidence": "NIDDK.",
+   "url": "https://www.niddk.nih.gov/health-information/digestive-diseases/diverticulosis-diverticulitis",
+   "action": "kept"
+  },
+  {
+   "id": "c98",
+   "classification": "supported",
+   "evidence": "NIDDK: blood tests, imaging (typically CT), colonoscopy.",
+   "url": "https://www.niddk.nih.gov/health-information/digestive-diseases/diverticulosis-diverticulitis/diagnosis",
+   "action": "edited",
+   "newSentence": "Blood tests, imaging (typically CT) and sometimes colonoscopy"
+  },
+  {
+   "id": "c99",
+   "classification": "supported",
+   "evidence": "NHS/NHS inform: paracetamol, antibiotics for diverticulitis, surgery rare.",
+   "url": "https://www.nhs.uk/conditions/diverticular-disease-and-diverticulitis/",
+   "action": "edited",
+   "newSentence": "Pain relief, antibiotics for diverticulitis where needed, surgery only rarely"
+  },
+  {
+   "id": "c100",
+   "classification": "supported",
+   "evidence": "NHS.",
+   "url": "https://www.nhs.uk/conditions/diverticular-disease-and-diverticulitis/",
+   "action": "kept"
+  }
+ ],
+ "notes": "Second pass 9 searches. Author alias \"diverticulitis\" equalled the entity id and was removed (kept \"diverticular-disease\"; no conflicts found in content/*.json or other batch fragments). NICE \"watchful waiting\" claim was contrary to retrieved NICE committee reasoning and removed. NHS England page text came via search summaries and NHS inform; NIDDK risk-factor list was truncated so risk factors now rest on StatPearls/PMC reviews (hedged). Several PMC/NICE review sentences from first pass never retrieved and were cut. Textbook count 1. NICE NG147 used instead of CKS. Numbers (1 in 5, 70-80%, 98% CT sensitivity) deliberately not used."
+}

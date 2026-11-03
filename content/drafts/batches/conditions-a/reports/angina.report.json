@@ -1,0 +1,791 @@
+{
+ "id": "angina",
+ "searchesUsed": 12,
+ "counts": {
+  "supported": 66,
+  "textbook": 0,
+  "unsupported": 31,
+  "wrong": 0,
+  "unsafe": 0,
+  "unchecked": 0
+ },
+ "claims": [
+  {
+   "id": "c01",
+   "classification": "supported",
+   "evidence": "NHS: angina is chest discomfort from reduced blood flow",
+   "url": "https://www.nhs.uk/conditions/angina/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c02",
+   "classification": "supported",
+   "evidence": "Search summary: angina is chest discomfort caused by reduced blood flow",
+   "url": "https://www.nhs.uk/conditions/angina/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c03",
+   "classification": "supported",
+   "evidence": "NHS: usually CHD, vessels narrowed by fatty deposits",
+   "url": "https://www.nhs.uk/conditions/angina/",
+   "action": "edited",
+   "newSentence": "The NHS says it is usually due to coronary heart disease, where fatty deposits narrow the arteries that supply the heart."
+  },
+  {
+   "id": "c04",
+   "classification": "supported",
+   "evidence": "NHS symptoms: triggered by exertion/stress, stops within minutes of rest",
+   "url": "https://www.nhs.uk/conditions/angina/symptoms/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c05",
+   "classification": "supported",
+   "evidence": "BHF describes four main types: stable, unstable, vasospastic, microvascular",
+   "url": "https://www.bhf.org.uk/informationsupport/conditions/angina",
+   "action": "edited",
+   "newSentence": "The British Heart Foundation describes four main types: stable, unstable, vasospastic and microvascular angina."
+  },
+  {
+   "id": "c06",
+   "classification": "unsupported",
+   "evidence": "Retrieved text says angina is usually a sign of CHD and a signal of greater heart-attack risk; 'most people diagnosed' not found",
+   "url": "https://www.bhf.org.uk/informationsupport/heart-matters-magazine/medical/angina-common-questions",
+   "action": "edited",
+   "newSentence": "The NHS describes angina as a warning sign of a risk of serious problems such as heart attacks and strokes."
+  },
+  {
+   "id": "c07",
+   "classification": "supported",
+   "evidence": "NHS: usually CHD with vessels narrowed by fatty deposits",
+   "url": "https://www.nhs.uk/conditions/angina/",
+   "action": "edited",
+   "newSentence": "Narrowing of the arteries that supply the heart muscle, usually from a build-up of fatty deposits (coronary heart disease)."
+  },
+  {
+   "id": "c08",
+   "classification": "supported",
+   "evidence": "NHS notes some cases come from artery spasm (vasospastic); BHF: spasm",
+   "url": "https://www.bhf.org.uk/informationsupport/conditions/angina",
+   "action": "edited",
+   "newSentence": "Spasm of a coronary artery, as in vasospastic angina."
+  },
+  {
+   "id": "c09",
+   "classification": "unsupported",
+   "evidence": "No retrieved text says other conditions can cause angina",
+   "url": "https://www.nhs.uk/conditions/angina/",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c10",
+   "classification": "supported",
+   "evidence": "Smoking named by NHS CHD causes",
+   "url": "https://www.nhs.uk/conditions/coronary-heart-disease/causes/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c11",
+   "classification": "supported",
+   "evidence": "Not exercising regularly named by NHS CHD causes",
+   "url": "https://www.nhs.uk/conditions/coronary-heart-disease/causes/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c12",
+   "classification": "supported",
+   "evidence": "Unhealthy diet linked to CHD by NHS",
+   "url": "https://www.nhs.uk/conditions/coronary-heart-disease/causes/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c13",
+   "classification": "supported",
+   "evidence": "Age named as risk factor (NHS)",
+   "url": "https://www.nhs.uk/conditions/coronary-heart-disease/causes/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c14",
+   "classification": "supported",
+   "evidence": "Family history named (NHS)",
+   "url": "https://www.nhs.uk/conditions/coronary-heart-disease/causes/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c15",
+   "classification": "supported",
+   "evidence": "NHS diagnosis: GP checks BP, BMI, waist, cholesterol, asks about symptoms/family history",
+   "url": "https://www.nhs.uk/conditions/angina/diagnosis/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c16",
+   "classification": "supported",
+   "evidence": "NHS: ECG checks heart rhythm and electrical activity",
+   "url": "https://www.nhs.uk/conditions/angina/diagnosis/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c17",
+   "classification": "supported",
+   "evidence": "NHS: angina is a warning sign of risk of heart attack and stroke",
+   "url": "https://www.nhs.uk/conditions/angina/",
+   "action": "edited",
+   "newSentence": "Angina is a warning sign of a risk of serious problems such as heart attacks and strokes, according to the NHS."
+  },
+  {
+   "id": "c18",
+   "classification": "unsupported",
+   "evidence": "Not found; BHF says unstable carries higher heart attack risk, not that stable becomes unstable",
+   "url": "https://www.bhf.org.uk/informationsupport/conditions/angina",
+   "action": "edited",
+   "newSentence": "Unstable angina carries a higher risk of a heart attack, according to the BHF."
+  },
+  {
+   "id": "c19",
+   "classification": "unsupported",
+   "evidence": "'Most people diagnosed have underlying CHD' not found",
+   "url": "https://www.bhf.org.uk/informationsupport/heart-matters-magazine/medical/angina-common-questions",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c20",
+   "classification": "supported",
+   "evidence": "NHS diagnosis page",
+   "url": "https://www.nhs.uk/conditions/angina/diagnosis/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c21",
+   "classification": "supported",
+   "evidence": "NHS 111 Wales: referred to cardiologist (NHS England says hospital)",
+   "url": "https://111.wales.nhs.uk/encyclopaedia/a/article/angina",
+   "action": "edited",
+   "newSentence": "If angina is suspected, NHS 111 Wales says the person is referred to a heart specialist (cardiologist)."
+  },
+  {
+   "id": "c22",
+   "classification": "unsupported",
+   "evidence": "ECG, exercise ECG, angiography, blood tests supported; 'treadmill or exercise bike' and 'using dye' not in retrieved text",
+   "url": "https://www.nhs.uk/conditions/angina/diagnosis/",
+   "action": "edited",
+   "newSentence": "Hospital tests listed by the NHS include an ECG, an exercise ECG, coronary angiography and blood tests."
+  },
+  {
+   "id": "c23",
+   "classification": "unsupported",
+   "evidence": "'Most people take several medicines' and 'help stop attacks' not found; NHS lists three approaches",
+   "url": "https://www.nhs.uk/conditions/angina/treatment/",
+   "action": "edited",
+   "newSentence": "The NHS describes three main approaches: medicines to relieve attacks, medicines to prevent attacks, and surgery."
+  },
+  {
+   "id": "c24",
+   "classification": "supported",
+   "evidence": "NHS treatment: GTN for attacks; beta blockers/CCBs prevent; aspirin, statins reduce risk",
+   "url": "https://www.nhs.uk/conditions/angina/treatment/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c25",
+   "classification": "supported",
+   "evidence": "NHS: some people need surgery (angioplasty with stent, CABG)",
+   "url": "https://www.nhs.uk/conditions/angina/treatment/",
+   "action": "edited",
+   "newSentence": "Some people need surgery, such as angioplasty with a stent or a coronary artery bypass graft."
+  },
+  {
+   "id": "c26",
+   "classification": "supported",
+   "evidence": "BHF: stopping smoking, staying active, controlling weight, cholesterol, BP, diabetes",
+   "url": "https://www.bhf.org.uk/informationsupport/heart-matters-magazine/medical/angina-common-questions",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c27",
+   "classification": "supported",
+   "evidence": "NHS living with angina: avoid triggers such as stress, cold temperatures, large meals",
+   "url": "https://www.nhs.uk/conditions/angina/living/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c28",
+   "classification": "supported",
+   "evidence": "NHS: call 999 if pain does not stop after rest or medicine, spreads, or with sweating etc.",
+   "url": "https://www.nhs.uk/conditions/angina/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c29",
+   "classification": "unsupported",
+   "evidence": "Retrieved text did not say NHS 111 / same-day GP for worsening known angina; it says urgent GP appointment if pain goes away in a few minutes",
+   "url": "https://www.nhs.uk/conditions/angina/",
+   "action": "edited",
+   "newSentence": "For chest pain that goes away within a few minutes, the NHS advises an urgent GP appointment."
+  },
+  {
+   "id": "c30",
+   "classification": "unsupported",
+   "evidence": "Marked textbook by author; replaced by retrieved advice that undiagnosed exertional pain easing with rest should contact the GP practice",
+   "url": "https://www.nhs.uk/conditions/angina/",
+   "action": "edited",
+   "newSentence": "Someone with chest pain on exertion that eases with rest and no diagnosis is advised to contact the GP practice."
+  },
+  {
+   "id": "c31",
+   "classification": "supported",
+   "evidence": "NHS: tight, dull or heavy",
+   "url": "https://www.nhs.uk/conditions/angina/symptoms/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c32",
+   "classification": "supported",
+   "evidence": "NHS: spreads to arms, neck, jaw, back",
+   "url": "https://www.nhs.uk/conditions/angina/symptoms/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c33",
+   "classification": "supported",
+   "evidence": "NHS: breathlessness, nausea, tiredness can occur",
+   "url": "https://www.nhs.uk/conditions/angina/symptoms/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c34",
+   "classification": "supported",
+   "evidence": "NHS: exertion/stress triggers, eases with rest",
+   "url": "https://www.nhs.uk/conditions/angina/symptoms/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c35",
+   "classification": "supported",
+   "evidence": "NHS: avoid triggers such as stress, cold, large meals",
+   "url": "https://www.nhs.uk/conditions/angina/living/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c36",
+   "classification": "supported",
+   "evidence": "BHF: not a mini heart attack, generally no lasting damage",
+   "url": "https://www.bhf.org.uk/informationsupport/heart-matters-magazine/medical/angina-common-questions",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c37",
+   "classification": "supported",
+   "evidence": "BHF: heart attack pain does not go away with rest or medicine, lasts longer",
+   "url": "https://www.bhf.org.uk/informationsupport/heart-matters-magazine/medical/angina-common-questions",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c38",
+   "classification": "supported",
+   "evidence": "BHF: symptoms not resolving with rest or GTN could be start of a heart attack",
+   "url": "https://www.bhf.org.uk/informationsupport/heart-matters-magazine/medical/angina-common-questions",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c39",
+   "classification": "supported",
+   "evidence": "BHF: stable angina most common",
+   "url": "https://www.bhf.org.uk/informationsupport/conditions/angina",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c40",
+   "classification": "supported",
+   "evidence": "BHF: brought on by exertion, eases with rest or medication; 'walking uphill' not found",
+   "url": "https://www.bhf.org.uk/informationsupport/conditions/angina",
+   "action": "edited",
+   "newSentence": "It is typically brought on by exertion and generally eases with rest or medicine."
+  },
+  {
+   "id": "c41",
+   "classification": "supported",
+   "evidence": "BHF: unstable angina less predictable, can occur at rest",
+   "url": "https://www.bhf.org.uk/informationsupport/conditions/angina",
+   "action": "edited",
+   "newSentence": "Unstable angina is less predictable. It can occur at rest, may not respond well to medicine, and carries a higher risk of a heart attack, according to the BHF."
+  },
+  {
+   "id": "c42",
+   "classification": "unsupported",
+   "evidence": "'More severe, last longer' and 'stable can become unstable' not found",
+   "url": "https://www.bhf.org.uk/informationsupport/conditions/angina",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c43",
+   "classification": "supported",
+   "evidence": "BHF: also called Prinzmetal's or variant angina; caused by artery spasm",
+   "url": "https://www.bhf.org.uk/informationsupport/conditions/angina",
+   "action": "edited",
+   "newSentence": "Vasospastic angina, also called Prinzmetal's angina or variant angina, is caused by a coronary artery going into spasm."
+  },
+  {
+   "id": "c44",
+   "classification": "unsupported",
+   "evidence": "Effect on blood and oxygen to muscle not stated in retrieved text",
+   "url": "https://www.bhf.org.uk/informationsupport/conditions/angina",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c45",
+   "classification": "unsupported",
+   "evidence": "'Rare' not found; early morning/night at rest is supported",
+   "url": "https://www.bhf.org.uk/informationsupport/conditions/angina",
+   "action": "edited",
+   "newSentence": "It usually comes on at rest, often in the early morning or at night, and people with it typically do not get angina during exercise."
+  },
+  {
+   "id": "c46",
+   "classification": "supported",
+   "evidence": "BHF: also called cardiac syndrome X; smallest coronary arteries",
+   "url": "https://www.bhf.org.uk/informationsupport/conditions/angina",
+   "action": "edited",
+   "newSentence": "Microvascular angina, also called cardiac syndrome X, affects the smallest coronary arteries and tends to appear under physical or emotional stress."
+  },
+  {
+   "id": "c47",
+   "classification": "unsupported",
+   "evidence": "Physical or emotional stress supported; 'pain caused by spasms in those arteries' not supported",
+   "url": "https://www.bhf.org.uk/informationsupport/conditions/angina",
+   "action": "edited",
+   "newSentence": "The BHF notes that it can occur alongside vasospastic angina."
+  },
+  {
+   "id": "c48",
+   "classification": "supported",
+   "evidence": "NHS: usually CHD, narrowed by fatty deposits",
+   "url": "https://www.nhs.uk/conditions/angina/",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c49",
+   "classification": "unsupported",
+   "evidence": "'Other conditions can also cause it' not found; artery spasm supported",
+   "url": "https://www.nhs.uk/conditions/angina/",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c50",
+   "classification": "supported",
+   "evidence": "NHS CHD causes: smoking, BP, cholesterol, diabetes, inactivity, diet; age, family history",
+   "url": "https://www.nhs.uk/conditions/coronary-heart-disease/causes/",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c51",
+   "classification": "unsupported",
+   "evidence": "Not found as worded",
+   "url": "https://www.bhf.org.uk/informationsupport/heart-matters-magazine/medical/angina-common-questions",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c52",
+   "classification": "supported",
+   "evidence": "BHF: angina is a signal of greater heart attack risk",
+   "url": "https://www.bhf.org.uk/informationsupport/heart-matters-magazine/medical/angina-common-questions",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c53",
+   "classification": "unsupported",
+   "evidence": "Not found in retrieved text",
+   "url": "https://www.bhf.org.uk/informationsupport/heart-matters-magazine/medical/angina-common-questions",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c54",
+   "classification": "unsupported",
+   "evidence": "Search explicitly found no source saying 'not usually life-threatening'; NHS says warning sign",
+   "url": "https://www.nhs.uk/conditions/angina/",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c55",
+   "classification": "unsupported",
+   "evidence": "NICE 'low but appreciable' wording not retrieved",
+   "url": "https://www.nice.org.uk/guidance/cg126/chapter/1-guidance",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c56",
+   "classification": "unsupported",
+   "evidence": "'Stepwise process' not stated",
+   "url": "https://www.nhs.uk/conditions/angina/diagnosis/",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c57",
+   "classification": "supported",
+   "evidence": "NHS diagnosis: BP, BMI, waist, cholesterol blood test, symptoms, family history",
+   "url": "https://www.nhs.uk/conditions/angina/diagnosis/",
+   "action": "edited",
+   "newSentence": ""
+  },
+  {
+   "id": "c58",
+   "classification": "supported",
+   "evidence": "NHS 111 Wales: referred to cardiologist",
+   "url": "https://111.wales.nhs.uk/encyclopaedia/a/article/angina",
+   "action": "edited",
+   "newSentence": ""
+  },
+  {
+   "id": "c59",
+   "classification": "supported",
+   "evidence": "NHS: ECG checks rhythm and electrical activity; blood tests",
+   "url": "https://www.nhs.uk/conditions/angina/diagnosis/",
+   "action": "edited",
+   "newSentence": ""
+  },
+  {
+   "id": "c60",
+   "classification": "unsupported",
+   "evidence": "Treadmill/bike and 'staff stop test' not in retrieved text",
+   "url": "https://www.nhs.uk/conditions/angina/diagnosis/",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c61",
+   "classification": "unsupported",
+   "evidence": "Stress echo description came only from a preprint; not UK-official",
+   "url": "https://www.nhlbi.nih.gov/health/angina/diagnosis",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c62",
+   "classification": "supported",
+   "evidence": "Coronary angiography listed by NHS; 'uses dye' not retrieved",
+   "url": "https://www.nhs.uk/conditions/angina/diagnosis/",
+   "action": "edited",
+   "newSentence": "Hospital tests listed by the NHS include an ECG, an exercise ECG, coronary angiography and blood tests."
+  },
+  {
+   "id": "c63",
+   "classification": "unsupported",
+   "evidence": "Replaced by NHS's three approaches",
+   "url": "https://www.nhs.uk/conditions/angina/treatment/",
+   "action": "edited",
+   "newSentence": "The NHS describes three main approaches: medicines to relieve attacks, medicines to prevent attacks, and surgery."
+  },
+  {
+   "id": "c64",
+   "classification": "supported",
+   "evidence": "NHS: GTN usual rescue medicine, spray or tablets; GTN page: widens blood vessels",
+   "url": "https://www.nhs.uk/medicines/glyceryl-trinitrate-gtn/common-questions-about-glyceryl-trinitrate-gtn/",
+   "action": "edited",
+   "newSentence": ""
+  },
+  {
+   "id": "c65",
+   "classification": "supported",
+   "evidence": "NHS: beta blockers slow heart; CCBs widen arteries; aspirin, statins, ACE inhibitors lower risk",
+   "url": "https://www.nhs.uk/conditions/angina/treatment/",
+   "action": "edited",
+   "newSentence": ""
+  },
+  {
+   "id": "c66",
+   "classification": "supported",
+   "evidence": "NICE CG126: offer beta blocker or CCB first-line",
+   "url": "https://www.nice.org.uk/guidance/cg126/chapter/1-guidance",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c67",
+   "classification": "unsupported",
+   "evidence": "Aspirin in NICE draft; 'bleeding risk' wording not retrieved; statin 'in line with lipid guidance' supported",
+   "url": "https://www.nice.org.uk/guidance/cg126/chapter/1-guidance",
+   "action": "edited",
+   "newSentence": "NICE guidance says statin treatment is offered in line with its lipid guidance."
+  },
+  {
+   "id": "c68",
+   "classification": "unsupported",
+   "evidence": "ACE inhibitor for diabetes came from a local formulary; supplements claim not found",
+   "url": "https://www.nice.org.uk/guidance/cg126/chapter/1-guidance",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c69",
+   "classification": "supported",
+   "evidence": "NICE: revascularisation when symptoms uncontrolled on best medical therapy; NHS: angioplasty, CABG",
+   "url": "https://www.nice.org.uk/guidance/cg126/chapter/1-guidance",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c70",
+   "classification": "supported",
+   "evidence": "GTN: headache, dizziness, flushing",
+   "url": "https://www.nhs.uk/medicines/glyceryl-trinitrate-gtn/common-questions-about-glyceryl-trinitrate-gtn/",
+   "action": "edited",
+   "newSentence": ""
+  },
+  {
+   "id": "c71",
+   "classification": "supported",
+   "evidence": "NHS: stopping regular GTN may worsen angina",
+   "url": "https://www.nhs.uk/medicines/glyceryl-trinitrate-gtn/common-questions-about-glyceryl-trinitrate-gtn/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c72",
+   "classification": "supported",
+   "evidence": "NHS: call 999 if pain does not stop after rest or medicine",
+   "url": "https://www.nhs.uk/conditions/angina/",
+   "action": "edited",
+   "newSentence": ""
+  },
+  {
+   "id": "c73",
+   "classification": "supported",
+   "evidence": "NHS: spread, sweating, nausea, light-headedness, shortness of breath",
+   "url": "https://www.nhs.uk/conditions/angina/",
+   "action": "edited",
+   "newSentence": ""
+  },
+  {
+   "id": "c74",
+   "classification": "supported",
+   "evidence": "NHS: do not drive yourself to A&E",
+   "url": "https://www.nhs.uk/conditions/angina/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c75",
+   "classification": "unsupported",
+   "evidence": "NHS 111 route not found; urgent GP appointment advice found",
+   "url": "https://www.nhs.uk/conditions/angina/",
+   "action": "edited",
+   "newSentence": "If the pain goes away within a few minutes, the NHS advises making an urgent GP appointment."
+  },
+  {
+   "id": "c76",
+   "classification": "supported",
+   "evidence": "BHF: could be onset of heart attack",
+   "url": "https://www.bhf.org.uk/informationsupport/heart-matters-magazine/medical/angina-common-questions",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c77",
+   "classification": "unsupported",
+   "evidence": "BHF wording not retrieved; NHS: call 999 for ambulance if symptoms do not stop in a few minutes",
+   "url": "https://www.nhs.uk/conditions/angina/",
+   "action": "edited",
+   "newSentence": "For chest pain that has not been diagnosed, the NHS advises stopping and resting, and calling 999 for an ambulance if symptoms do not stop within a few minutes."
+  },
+  {
+   "id": "c78",
+   "classification": "supported",
+   "evidence": "BHF not a mini heart attack",
+   "url": "https://www.bhf.org.uk/informationsupport/heart-matters-magazine/medical/angina-common-questions",
+   "action": "edited",
+   "newSentence": ""
+  },
+  {
+   "id": "c79",
+   "classification": "supported",
+   "evidence": "BHF: eases with rest/GTN; heart attack lasts longer",
+   "url": "https://www.bhf.org.uk/informationsupport/heart-matters-magazine/medical/angina-common-questions",
+   "action": "edited",
+   "newSentence": ""
+  },
+  {
+   "id": "c80",
+   "classification": "unsupported",
+   "evidence": "'Most diagnosed have CHD' not found; signal of greater risk found",
+   "url": "https://www.bhf.org.uk/informationsupport/heart-matters-magazine/medical/angina-common-questions",
+   "action": "edited",
+   "newSentence": "Angina is also a signal of a greater risk of a heart attack, so the NHS advises calling 999 if symptoms do not stop within a few minutes."
+  },
+  {
+   "id": "c81",
+   "classification": "unsupported",
+   "evidence": "MyHealth Devon wording not retrieved; NHS: normal life with controlled symptoms",
+   "url": "https://www.nhs.uk/conditions/angina/living/",
+   "action": "edited",
+   "newSentence": "The NHS says that with symptoms well controlled and healthy lifestyle changes, people can usually have a normal life with angina, and that with treatment symptoms should improve over time and may eventually stop."
+  },
+  {
+   "id": "c82",
+   "classification": "unsupported",
+   "evidence": "'Help stop attacks, several medicines' not found",
+   "url": "https://www.nhs.uk/conditions/angina/treatment/",
+   "action": "edited",
+   "newSentence": "Treatment includes medicines to relieve and prevent attacks, and some people need surgery such as angioplasty or a bypass graft."
+  },
+  {
+   "id": "c83",
+   "classification": "supported",
+   "evidence": "NHS: some people need surgery",
+   "url": "https://www.nhs.uk/conditions/angina/treatment/",
+   "action": "edited",
+   "newSentence": ""
+  },
+  {
+   "id": "c84",
+   "classification": "supported",
+   "evidence": "GTN is the usual attack medicine",
+   "url": "https://www.nhs.uk/medicines/glyceryl-trinitrate-gtn/common-questions-about-glyceryl-trinitrate-gtn/",
+   "action": "edited",
+   "newSentence": ""
+  },
+  {
+   "id": "c85",
+   "classification": "supported",
+   "evidence": "GTN works by widening blood vessels",
+   "url": "https://www.nhs.uk/medicines/glyceryl-trinitrate-gtn/common-questions-about-glyceryl-trinitrate-gtn/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c86",
+   "classification": "unsupported",
+   "evidence": "Headache, dizziness supported; link to vessels widening elsewhere not found",
+   "url": "https://www.nhs.uk/medicines/glyceryl-trinitrate-gtn/common-questions-about-glyceryl-trinitrate-gtn/",
+   "action": "edited",
+   "newSentence": ""
+  },
+  {
+   "id": "c87",
+   "classification": "supported",
+   "evidence": "NHS diagnosis: GP checks; NHS 111 Wales: cardiologist",
+   "url": "https://www.nhs.uk/conditions/angina/diagnosis/",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c88",
+   "classification": "supported",
+   "evidence": "As claim 21",
+   "url": "https://www.nhs.uk/conditions/angina/diagnosis/",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c89",
+   "classification": "unsupported",
+   "evidence": "Stress echo statement not from UK/official page",
+   "url": "https://www.nhlbi.nih.gov/health/angina/diagnosis",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c90",
+   "classification": "supported",
+   "evidence": "NHS: 999 criteria",
+   "url": "https://www.nhs.uk/conditions/angina/",
+   "action": "edited",
+   "newSentence": ""
+  },
+  {
+   "id": "c91",
+   "classification": "unsupported",
+   "evidence": "NHS 111 route not found",
+   "url": "https://www.nhs.uk/conditions/angina/",
+   "action": "edited",
+   "newSentence": "For chest pain that goes away within a few minutes, the NHS advises an urgent GP appointment."
+  },
+  {
+   "id": "c92",
+   "classification": "supported",
+   "evidence": "BHF four main types",
+   "url": "https://www.bhf.org.uk/informationsupport/conditions/angina",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c93",
+   "classification": "supported",
+   "evidence": "NHS symptoms",
+   "url": "https://www.nhs.uk/conditions/angina/symptoms/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c94",
+   "classification": "supported",
+   "evidence": "NHS: CHD fatty deposits",
+   "url": "https://www.nhs.uk/conditions/angina/",
+   "action": "edited",
+   "newSentence": "Narrowed arteries from a fatty build-up, as the NHS describes"
+  },
+  {
+   "id": "c95",
+   "classification": "supported",
+   "evidence": "NHS 111 Wales: GP refers to cardiologist",
+   "url": "https://111.wales.nhs.uk/encyclopaedia/a/article/angina",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c96",
+   "classification": "supported",
+   "evidence": "NHS treatment page",
+   "url": "https://www.nhs.uk/conditions/angina/treatment/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c97",
+   "classification": "supported",
+   "evidence": "NHS 999 advice",
+   "url": "https://www.nhs.uk/conditions/angina/",
+   "action": "edited",
+   "newSentence": ""
+  }
+ ],
+ "notes": "No NICE CKS retrieved. Search summaries blend pages, so URL attributions are approximate. Removed: 'other conditions cause angina', 'stable can become unstable', 'not usually life-threatening', NICE 'low but appreciable', treadmill/bike/dye details, NHS 111 route for worsening known angina (not found in retrieved text; replaced with urgent GP appointment advice), the author's textbook routine-GP sentence (replaced with retrieved advice). Stress echocardiogram dropped (preprint only). NHS Scotland is cited as 'NHS inform' in the diagnosis section; its URL is in the search results but not added as reference. Final article trimmed to 5 sections and 4 FAQs (1171 words) to meet the length limit; the causes section and tests FAQ were dropped as they repeated structured fields."
+}
