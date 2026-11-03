@@ -1,0 +1,819 @@
+[
+ {
+  "where": "summary",
+  "sentence": "Lansoprazole is a proton pump inhibitor, a medicine that lowers stomach acid, used for indigestion, heartburn, reflux disease and stomach ulcers.",
+  "basis": "excerpt",
+  "urls": [
+   "https://www.nhs.uk/medicines/lansoprazole/about-lansoprazole/"
+  ],
+  "note": "NHS About: lowers stomach acid; prescribed for indigestion, heartburn, reflux disease, stomach ulcers; PPI class stated in NHS common questions/leaflet."
+ },
+ {
+  "where": "summary",
+  "sentence": "It is available on prescription only, and longer-term use is reviewed by a doctor because it is linked to low magnesium, vitamin B12 deficiency, bone fractures and gut infections.",
+  "basis": "excerpt",
+  "urls": [
+   "https://www.nhs.uk/medicines/lansoprazole/about-lansoprazole/",
+   "https://www.nhs.uk/medicines/lansoprazole/common-questions-about-lansoprazole/"
+  ],
+  "note": "NHS About: prescription only. NHS common questions: more than 1 year raises chance of fractures, gut infections, B12 deficiency; low magnesium after more than 3 months; doctor regularly reviews."
+ },
+ {
+  "where": "usedFor[0]",
+  "sentence": "Indigestion and heartburn",
+  "basis": "excerpt",
+  "urls": [
+   "https://www.nhs.uk/medicines/lansoprazole/about-lansoprazole/"
+  ],
+  "note": "NHS About lists indigestion and heartburn."
+ },
+ {
+  "where": "usedFor[1]",
+  "sentence": "Reflux disease, where stomach acid flows back up towards the gullet",
+  "basis": "excerpt",
+  "urls": [
+   "https://www.nhs.uk/medicines/lansoprazole/about-lansoprazole/"
+  ],
+  "note": "NHS About lists reflux disease; the explanatory clause is a plain gloss."
+ },
+ {
+  "where": "usedFor[2]",
+  "sentence": "Stomach ulcers",
+  "basis": "excerpt",
+  "urls": [
+   "https://www.nhs.uk/medicines/lansoprazole/about-lansoprazole/"
+  ],
+  "note": "NHS About lists stomach ulcers."
+ },
+ {
+  "where": "usedFor[3]",
+  "sentence": "Occasionally, Zollinger-Ellison syndrome",
+  "basis": "excerpt",
+  "urls": [
+   "https://www.nhs.uk/medicines/lansoprazole/about-lansoprazole/"
+  ],
+  "note": "NHS About: occasionally used for Zollinger-Ellison syndrome."
+ },
+ {
+  "where": "howItWorks",
+  "sentence": "Lansoprazole belongs to a group of medicines called proton pump inhibitors.",
+  "basis": "excerpt",
+  "urls": [
+   "https://www.nhs.uk/medicines/lansoprazole/common-questions-about-lansoprazole/",
+   "https://www.medicines.org.uk/emc/files/pil.14551.pdf"
+  ],
+  "note": "NHS common questions and emc leaflet describe it as a proton pump inhibitor."
+ },
+ {
+  "where": "howItWorks",
+  "sentence": "It dampens down the enzymes in the lining of the stomach that make acid, so less acid is produced.",
+  "basis": "excerpt",
+  "urls": [
+   "https://www.nhs.uk/medicines/lansoprazole/common-questions-about-lansoprazole/"
+  ],
+  "note": "NHS common questions on how it works."
+ },
+ {
+  "where": "howItWorks",
+  "sentence": "Having less acid is what eases symptoms such as indigestion, heartburn and reflux.",
+  "basis": "textbook",
+  "urls": [
+   "https://www.nhs.uk/medicines/lansoprazole/about-lansoprazole/",
+   "https://www.nhs.uk/medicines/lansoprazole/common-questions-about-lansoprazole/"
+  ],
+  "note": "Joins NHS statements that it lowers stomach acid and is used for these symptoms; plain inference."
+ },
+ {
+  "where": "onset",
+  "sentence": "Symptoms usually start to improve within 2 to 3 days, although the full effect can take up to 4 weeks.",
+  "basis": "excerpt",
+  "urls": [
+   "https://www.nhs.uk/medicines/lansoprazole/common-questions-about-lansoprazole/",
+   "https://www.nhs.uk/medicines/lansoprazole/about-lansoprazole/"
+  ],
+  "note": "NHS: improvement within 2-3 days, full effect up to 4 weeks (from search summary of NHS pages)."
+ },
+ {
+  "where": "sideEffects.common[0]",
+  "sentence": "Headache, which usually eases after the first week",
+  "basis": "excerpt",
+  "urls": [
+   "https://www.nhs.uk/medicines/lansoprazole/side-effects-of-lansoprazole/"
+  ],
+  "note": "NHS side effects: headaches usually ease after the first week."
+ },
+ {
+  "where": "sideEffects.common[1]",
+  "sentence": "Feeling sick, diarrhoea, stomach pain and constipation",
+  "basis": "excerpt",
+  "urls": [
+   "https://www.nhs.uk/medicines/lansoprazole/side-effects-of-lansoprazole/"
+  ],
+  "note": "NHS side effects common list."
+ },
+ {
+  "where": "sideEffects.common[2]",
+  "sentence": "An itchy or mild rash, dizziness or tiredness, and a dry mouth",
+  "basis": "excerpt",
+  "urls": [
+   "https://www.nhs.uk/medicines/lansoprazole/side-effects-of-lansoprazole/"
+  ],
+  "note": "NHS side effects common list."
+ },
+ {
+  "where": "sideEffects.common[3]",
+  "sentence": "Common side effects are usually mild and tend to go away when the medicine is stopped",
+  "basis": "excerpt",
+  "urls": [
+   "https://www.nhs.uk/medicines/lansoprazole/side-effects-of-lansoprazole/"
+  ],
+  "note": "NHS side effects: usually mild, go away when you stop."
+ },
+ {
+  "where": "sideEffects.serious[0]",
+  "sentence": "Worsening stomach pain, yellowing of the skin or whites of the eyes, or dark urine can signal inflammation of the pancreas or liver and needs a same-day call to the GP or NHS 111",
+  "basis": "excerpt",
+  "urls": [
+   "https://www.nhs.uk/medicines/lansoprazole/side-effects-of-lansoprazole/"
+  ],
+  "note": "NHS serious side effects (rare, under 1 in 1,000). Route-to-care wording (GP or NHS 111 the same day) follows the NHS page's advice to contact a doctor or 111; exact route inferred."
+ },
+ {
+  "where": "sideEffects.serious[1]",
+  "sentence": "Joint pain together with a red rash on sun-exposed skin can signal a skin form of lupus and needs a same-day call to the GP or NHS 111",
+  "basis": "excerpt",
+  "urls": [
+   "https://www.nhs.uk/medicines/lansoprazole/side-effects-of-lansoprazole/"
+  ],
+  "note": "NHS serious side effects: subacute cutaneous lupus erythematosus. Route-to-care wording (GP or NHS 111 the same day) follows the NHS page's advice to contact a doctor or 111; exact route inferred."
+ },
+ {
+  "where": "sideEffects.serious[2]",
+  "sentence": "Severe or persistent diarrhoea can signal an inflamed bowel and needs a same-day call to the GP or NHS 111",
+  "basis": "excerpt",
+  "urls": [
+   "https://www.nhs.uk/medicines/lansoprazole/side-effects-of-lansoprazole/"
+  ],
+  "note": "NHS serious side effects. Route-to-care wording (GP or NHS 111 the same day) follows the NHS page's advice to contact a doctor or 111; exact route inferred."
+ },
+ {
+  "where": "sideEffects.serious[3]",
+  "sentence": "A serious allergic reaction (anaphylaxis) is rare; swelling of the lips, mouth, throat or tongue, fast or difficult breathing, a tight throat, trouble swallowing, blue, grey or pale skin, sudden confusion or fainting needs a 999 call",
+  "basis": "excerpt",
+  "urls": [
+   "https://www.nhs.uk/medicines/lansoprazole/side-effects-of-lansoprazole/"
+  ],
+  "note": "NHS anaphylaxis box: call 999."
+ },
+ {
+  "where": "sideEffects.serious[4]",
+  "sentence": "Low blood magnesium is possible after more than 3 months of use and can cause tiredness, dizziness, muscle twitches or an irregular heartbeat, which calls for a GP appointment or NHS 111 if it happens",
+  "basis": "excerpt",
+  "urls": [
+   "https://www.nhs.uk/medicines/lansoprazole/common-questions-about-lansoprazole/"
+  ],
+  "note": "NHS common questions: low magnesium after more than 3 months; symptom list from search summary. Route of care inferred."
+ },
+ {
+  "where": "sideEffects.serious[5]",
+  "sentence": "Use for more than a year may raise the chance of bone fractures, gut infections and vitamin B12 deficiency",
+  "basis": "excerpt",
+  "urls": [
+   "https://www.nhs.uk/medicines/lansoprazole/common-questions-about-lansoprazole/"
+  ],
+  "note": "NHS common questions."
+ },
+ {
+  "where": "cautions[0]",
+  "sentence": "Most adults and children can take lansoprazole, but the NHS advises checking with a doctor first in liver problems, pregnancy, trying for a baby, breastfeeding, low vitamin B12 or before an endoscopy",
+  "basis": "excerpt",
+  "urls": [
+   "https://www.nhs.uk/medicines/lansoprazole/who-can-and-cannot-take-lansoprazole/"
+  ],
+  "note": "NHS Who can and cannot take (via search summary)."
+ },
+ {
+  "where": "cautions[1]",
+  "sentence": "Lansoprazole may hide some of the problems an endoscopy would usually find",
+  "basis": "excerpt",
+  "urls": [
+   "https://www.nhs.uk/medicines/lansoprazole/who-can-and-cannot-take-lansoprazole/"
+  ],
+  "note": "NHS Who can and cannot take."
+ },
+ {
+  "where": "cautions[2]",
+  "sentence": "It is not used by people who are allergic to lansoprazole or any ingredient in the product",
+  "basis": "excerpt",
+  "urls": [
+   "https://www.medicines.org.uk/emc/files/pil.14551.pdf"
+  ],
+  "note": "emc leaflet contraindication."
+ },
+ {
+  "where": "cautions[3]",
+  "sentence": "People with osteoporosis or taking corticosteroids are advised to tell their doctor, because proton pump inhibitors have been linked to fractures of the wrist, hip and spine",
+  "basis": "excerpt",
+  "urls": [
+   "https://www.medicines.org.uk/emc/files/pil.14551.pdf",
+   "https://medlineplus.gov/druginfo/meds/a695020.html"
+  ],
+  "note": "emc leaflet says tell doctor; MedlinePlus notes fracture link."
+ },
+ {
+  "where": "cautions[4]",
+  "sentence": "Antacids can reduce how much lansoprazole the body takes in, so the pharmacist or doctor advises on timing",
+  "basis": "excerpt",
+  "urls": [
+   "https://www.nhs.uk/medicines/lansoprazole/taking-lansoprazole-with-other-medicines-and-herbal-supplements/",
+   "https://www.medicines.org.uk/emc/product/1714/smpc"
+  ],
+  "note": "NHS other medicines: antacids reduce absorption; timing detail deliberately omitted."
+ },
+ {
+  "where": "cautions[5]",
+  "sentence": "St John's wort is best avoided because it may stop lansoprazole working as well as it should",
+  "basis": "excerpt",
+  "urls": [
+   "https://www.nhs.uk/medicines/lansoprazole/taking-lansoprazole-with-other-medicines-and-herbal-supplements/"
+  ],
+  "note": "NHS other medicines."
+ },
+ {
+  "where": "cautions[6]",
+  "sentence": "Medicines that can interact include digoxin, itraconazole, ketoconazole, posaconazole, methotrexate, HIV medicines, rifampicin, warfarin, fluvoxamine, tacrolimus and theophylline",
+  "basis": "excerpt",
+  "urls": [
+   "https://www.nhs.uk/medicines/lansoprazole/taking-lansoprazole-with-other-medicines-and-herbal-supplements/",
+   "https://www.medicines.org.uk/emc/product/1714/smpc"
+  ],
+  "note": "Lists from NHS other-medicines page and emc SmPC (ketoconazole, theophylline from SmPC); blended in search summary, so attribution to both."
+ },
+ {
+  "where": "cautions[7]",
+  "sentence": "It can make the emergency contraceptive ellaOne less effective, while regular contraceptive pills are not affected unless vomiting or severe diarrhoea stops the pill working",
+  "basis": "excerpt",
+  "urls": [
+   "https://www.nhs.uk/medicines/lansoprazole/common-questions-about-lansoprazole/"
+  ],
+  "note": "NHS common questions on contraception."
+ },
+ {
+  "where": "cautions[8]",
+  "sentence": "Alcohol is not ruled out, but too much increases stomach acid and can make symptoms worse",
+  "basis": "excerpt",
+  "urls": [
+   "https://www.nhs.uk/medicines/lansoprazole/common-questions-about-lansoprazole/"
+  ],
+  "note": "NHS common questions on alcohol."
+ },
+ {
+  "where": "cautions[9]",
+  "sentence": "In pregnancy the NHS says omeprazole is usually offered instead of lansoprazole",
+  "basis": "excerpt",
+  "urls": [
+   "https://www.nhs.uk/medicines/lansoprazole/pregnancy-breastfeeding-and-fertility-while-taking-lansoprazole/"
+  ],
+  "note": "NHS pregnancy page (search summary). The emc SmPC advises avoiding in pregnancy as a precaution; sources differ in wording."
+ },
+ {
+  "where": "cautions[10]",
+  "sentence": "While breastfeeding it can be taken, with attention to feeding problems, constipation, diarrhoea, vomiting or unsettled behaviour in the baby, and fertility does not appear to be affected",
+  "basis": "excerpt",
+  "urls": [
+   "https://www.nhs.uk/medicines/lansoprazole/pregnancy-breastfeeding-and-fertility-while-taking-lansoprazole/"
+  ],
+  "note": "NHS pregnancy, breastfeeding and fertility page."
+ },
+ {
+  "where": "cautions[11]",
+  "sentence": "Dizziness or tiredness can occur, so care is advised before driving or using machinery",
+  "basis": "excerpt",
+  "urls": [
+   "https://www.medicines.org.uk/emc/files/pil.14551.pdf"
+  ],
+  "note": "emc leaflet."
+ },
+ {
+  "where": "monitoring",
+  "sentence": "A doctor regularly reviews whether continued treatment is still needed, particularly with long-term use.",
+  "basis": "excerpt",
+  "urls": [
+   "https://www.nhs.uk/medicines/lansoprazole/common-questions-about-lansoprazole/"
+  ],
+  "note": "NHS common questions: doctor regularly reviews ongoing use."
+ },
+ {
+  "where": "monitoring",
+  "sentence": "Clotting tests may be needed alongside warfarin, and blood levels of tacrolimus may be monitored when lansoprazole is started or stopped.",
+  "basis": "excerpt",
+  "urls": [
+   "https://www.medicines.org.uk/emc/product/1714/smpc"
+  ],
+  "note": "emc SmPC interactions (via search summary)."
+ },
+ {
+  "where": "article.sections[0]",
+  "sentence": "Lansoprazole is a medicine that lowers the amount of acid made in the stomach.",
+  "basis": "excerpt",
+  "urls": [
+   "https://www.nhs.uk/medicines/lansoprazole/about-lansoprazole/"
+  ],
+  "note": "NHS About."
+ },
+ {
+  "where": "article.sections[0]",
+  "sentence": "It is prescribed for indigestion, heartburn, reflux disease and stomach ulcers, and occasionally for Zollinger-Ellison syndrome.",
+  "basis": "excerpt",
+  "urls": [
+   "https://www.nhs.uk/medicines/lansoprazole/about-lansoprazole/"
+  ],
+  "note": "NHS About."
+ },
+ {
+  "where": "article.sections[0]",
+  "sentence": "Reflux disease is the name for stomach acid repeatedly flowing back up into the gullet.",
+  "basis": "textbook",
+  "urls": [
+   "https://www.nhs.uk/medicines/lansoprazole/about-lansoprazole/"
+  ],
+  "note": "Plain gloss of reflux; widely accepted definition."
+ },
+ {
+  "where": "article.sections[0]",
+  "sentence": "In the UK it is only available on prescription.",
+  "basis": "excerpt",
+  "urls": [
+   "https://www.nhs.uk/medicines/lansoprazole/about-lansoprazole/"
+  ],
+  "note": "NHS About: prescription only."
+ },
+ {
+  "where": "article.sections[0]",
+  "sentence": "It comes as capsules that are swallowed and as orodispersible tablets that melt in the mouth.",
+  "basis": "excerpt",
+  "urls": [
+   "https://www.nhs.uk/medicines/lansoprazole/about-lansoprazole/"
+  ],
+  "note": "NHS About: capsules and orodispersible tablets."
+ },
+ {
+  "where": "article.sections[0]",
+  "sentence": "Local prescribing guidance describes the melting tablets as the choice for people who find swallowing difficult.",
+  "basis": "excerpt",
+  "urls": [
+   "https://bswformulary.nhs.uk/chaptersSubDetails.asp?FormularySectionID=1&SubSectionRef=01.03.05&SubSectionID=A100"
+  ],
+  "note": "NHS formulary page (search summary): capsules by default, orodispersible tablets for swallowing difficulty; hospital/formulary source, not national."
+ },
+ {
+  "where": "article.sections[1]",
+  "sentence": "Lansoprazole is a proton pump inhibitor.",
+  "basis": "excerpt",
+  "urls": [
+   "https://www.nhs.uk/medicines/lansoprazole/common-questions-about-lansoprazole/",
+   "https://www.medicines.org.uk/emc/files/pil.14551.pdf"
+  ],
+  "note": "NHS common questions; emc leaflet."
+ },
+ {
+  "where": "article.sections[1]",
+  "sentence": "It dampens down the enzymes in the lining of the stomach that make acid, so less acid is produced.",
+  "basis": "excerpt",
+  "urls": [
+   "https://www.nhs.uk/medicines/lansoprazole/common-questions-about-lansoprazole/"
+  ],
+  "note": "NHS common questions."
+ },
+ {
+  "where": "article.sections[1]",
+  "sentence": "Symptoms usually start to improve within 2 to 3 days.",
+  "basis": "excerpt",
+  "urls": [
+   "https://www.nhs.uk/medicines/lansoprazole/common-questions-about-lansoprazole/",
+   "https://www.nhs.uk/medicines/lansoprazole/about-lansoprazole/"
+  ],
+  "note": "NHS."
+ },
+ {
+  "where": "article.sections[1]",
+  "sentence": "The full effect can take up to 4 weeks.",
+  "basis": "excerpt",
+  "urls": [
+   "https://www.nhs.uk/medicines/lansoprazole/common-questions-about-lansoprazole/",
+   "https://www.nhs.uk/medicines/lansoprazole/about-lansoprazole/"
+  ],
+  "note": "NHS."
+ },
+ {
+  "where": "article.sections[1]",
+  "sentence": "How long treatment lasts is decided by the prescriber and depends on the reason it was started.",
+  "basis": "excerpt",
+  "urls": [
+   "https://www.nhs.uk/medicines/lansoprazole/common-questions-about-lansoprazole/"
+  ],
+  "note": "NHS: doctor regularly reviews whether treatment should continue; wording generalised."
+ },
+ {
+  "where": "article.sections[2]",
+  "sentence": "The NHS lists headache, feeling sick, diarrhoea, stomach pain, constipation, an itchy or mild rash, dizziness or tiredness, and a dry mouth as common side effects.",
+  "basis": "excerpt",
+  "urls": [
+   "https://www.nhs.uk/medicines/lansoprazole/side-effects-of-lansoprazole/"
+  ],
+  "note": "NHS side effects."
+ },
+ {
+  "where": "article.sections[2]",
+  "sentence": "They are usually mild and tend to go away when the medicine is stopped.",
+  "basis": "excerpt",
+  "urls": [
+   "https://www.nhs.uk/medicines/lansoprazole/side-effects-of-lansoprazole/"
+  ],
+  "note": "NHS side effects."
+ },
+ {
+  "where": "article.sections[2]",
+  "sentence": "Headaches usually ease after the first week.",
+  "basis": "excerpt",
+  "urls": [
+   "https://www.nhs.uk/medicines/lansoprazole/side-effects-of-lansoprazole/"
+  ],
+  "note": "NHS side effects."
+ },
+ {
+  "where": "article.sections[2]",
+  "sentence": "Serious side effects are rare, affecting fewer than 1 in 1,000 people according to the NHS.",
+  "basis": "excerpt",
+  "urls": [
+   "https://www.nhs.uk/medicines/lansoprazole/side-effects-of-lansoprazole/"
+  ],
+  "note": "NHS: rare, under 1 in 1,000."
+ },
+ {
+  "where": "article.sections[2]",
+  "sentence": "Worsening stomach pain, yellowing of the skin or eyes, or dark urine can signal inflammation of the pancreas or liver.",
+  "basis": "excerpt",
+  "urls": [
+   "https://www.nhs.uk/medicines/lansoprazole/side-effects-of-lansoprazole/"
+  ],
+  "note": "NHS serious side effects."
+ },
+ {
+  "where": "article.sections[2]",
+  "sentence": "Joint pain with a red rash on sun-exposed skin can signal a skin form of lupus.",
+  "basis": "excerpt",
+  "urls": [
+   "https://www.nhs.uk/medicines/lansoprazole/side-effects-of-lansoprazole/"
+  ],
+  "note": "NHS serious side effects."
+ },
+ {
+  "where": "article.sections[2]",
+  "sentence": "Severe or persistent diarrhoea can signal an inflamed bowel.",
+  "basis": "excerpt",
+  "urls": [
+   "https://www.nhs.uk/medicines/lansoprazole/side-effects-of-lansoprazole/"
+  ],
+  "note": "NHS serious side effects."
+ },
+ {
+  "where": "article.sections[2]",
+  "sentence": "Any of these needs a same-day call to the GP or NHS 111.",
+  "basis": "excerpt",
+  "urls": [
+   "https://www.nhs.uk/medicines/lansoprazole/side-effects-of-lansoprazole/"
+  ],
+  "note": "Route-to-care wording (GP or NHS 111 the same day) follows the NHS page's advice to contact a doctor or 111; exact route inferred."
+ },
+ {
+  "where": "article.sections[2]",
+  "sentence": "A serious allergic reaction (anaphylaxis) is rare.",
+  "basis": "excerpt",
+  "urls": [
+   "https://www.nhs.uk/medicines/lansoprazole/side-effects-of-lansoprazole/"
+  ],
+  "note": "NHS."
+ },
+ {
+  "where": "article.sections[2]",
+  "sentence": "Swelling of the lips, mouth, throat or tongue, fast or difficult breathing, a tight throat, trouble swallowing, blue, grey or pale skin, sudden confusion or fainting needs a 999 call straight away.",
+  "basis": "excerpt",
+  "urls": [
+   "https://www.nhs.uk/medicines/lansoprazole/side-effects-of-lansoprazole/"
+  ],
+  "note": "NHS anaphylaxis box: call 999."
+ },
+ {
+  "where": "article.sections[3]",
+  "sentence": "Antacids can reduce how much lansoprazole the body takes in, so a pharmacist or doctor advises on timing.",
+  "basis": "excerpt",
+  "urls": [
+   "https://www.nhs.uk/medicines/lansoprazole/taking-lansoprazole-with-other-medicines-and-herbal-supplements/",
+   "https://www.medicines.org.uk/emc/product/1714/smpc"
+  ],
+  "note": "NHS other medicines; timing omitted."
+ },
+ {
+  "where": "article.sections[3]",
+  "sentence": "St John's wort is best avoided because it may stop lansoprazole working as well as it should.",
+  "basis": "excerpt",
+  "urls": [
+   "https://www.nhs.uk/medicines/lansoprazole/taking-lansoprazole-with-other-medicines-and-herbal-supplements/"
+  ],
+  "note": "NHS other medicines."
+ },
+ {
+  "where": "article.sections[3]",
+  "sentence": "Medicines that can interact include digoxin, itraconazole, ketoconazole, posaconazole, methotrexate, HIV medicines, rifampicin, warfarin, fluvoxamine, tacrolimus and theophylline.",
+  "basis": "excerpt",
+  "urls": [
+   "https://www.nhs.uk/medicines/lansoprazole/taking-lansoprazole-with-other-medicines-and-herbal-supplements/",
+   "https://www.medicines.org.uk/emc/product/1714/smpc"
+  ],
+  "note": "NHS other medicines page and emc SmPC."
+ },
+ {
+  "where": "article.sections[3]",
+  "sentence": "The NHS says there is not enough information to say that other complementary medicines and herbal remedies are fine to take with it.",
+  "basis": "excerpt",
+  "urls": [
+   "https://www.nhs.uk/medicines/lansoprazole/taking-lansoprazole-with-other-medicines-and-herbal-supplements/"
+  ],
+  "note": "NHS other medicines (search summary)."
+ },
+ {
+  "where": "article.sections[3]",
+  "sentence": "Alcohol is not ruled out, but too much increases stomach acid and can make symptoms worse.",
+  "basis": "excerpt",
+  "urls": [
+   "https://www.nhs.uk/medicines/lansoprazole/common-questions-about-lansoprazole/"
+  ],
+  "note": "NHS common questions."
+ },
+ {
+  "where": "article.sections[3]",
+  "sentence": "Regular contraceptive pills are not affected, although vomiting or severe diarrhoea can stop a pill working.",
+  "basis": "excerpt",
+  "urls": [
+   "https://www.nhs.uk/medicines/lansoprazole/common-questions-about-lansoprazole/"
+  ],
+  "note": "NHS common questions."
+ },
+ {
+  "where": "article.sections[3]",
+  "sentence": "Lansoprazole can make the emergency contraceptive ellaOne less effective, so another option may be suggested.",
+  "basis": "excerpt",
+  "urls": [
+   "https://www.nhs.uk/medicines/lansoprazole/common-questions-about-lansoprazole/"
+  ],
+  "note": "NHS common questions."
+ },
+ {
+  "where": "article.sections[4]",
+  "sentence": "Most adults and children can take lansoprazole, but the NHS advises checking with a doctor first in liver problems, pregnancy, trying for a baby, breastfeeding, low vitamin B12 or before an endoscopy.",
+  "basis": "excerpt",
+  "urls": [
+   "https://www.nhs.uk/medicines/lansoprazole/who-can-and-cannot-take-lansoprazole/"
+  ],
+  "note": "NHS Who can and cannot take."
+ },
+ {
+  "where": "article.sections[4]",
+  "sentence": "Lansoprazole may hide some of the problems an endoscopy would usually find.",
+  "basis": "excerpt",
+  "urls": [
+   "https://www.nhs.uk/medicines/lansoprazole/who-can-and-cannot-take-lansoprazole/"
+  ],
+  "note": "NHS."
+ },
+ {
+  "where": "article.sections[4]",
+  "sentence": "It is not used by people who are allergic to lansoprazole or any ingredient in the product.",
+  "basis": "excerpt",
+  "urls": [
+   "https://www.medicines.org.uk/emc/files/pil.14551.pdf"
+  ],
+  "note": "emc leaflet."
+ },
+ {
+  "where": "article.sections[4]",
+  "sentence": "People with osteoporosis or taking corticosteroids are advised to tell their doctor.",
+  "basis": "excerpt",
+  "urls": [
+   "https://www.medicines.org.uk/emc/files/pil.14551.pdf"
+  ],
+  "note": "emc leaflet."
+ },
+ {
+  "where": "article.sections[4]",
+  "sentence": "In pregnancy the NHS says omeprazole is usually offered instead of lansoprazole.",
+  "basis": "excerpt",
+  "urls": [
+   "https://www.nhs.uk/medicines/lansoprazole/pregnancy-breastfeeding-and-fertility-while-taking-lansoprazole/"
+  ],
+  "note": "NHS pregnancy page; SmPC wording differs."
+ },
+ {
+  "where": "article.sections[4]",
+  "sentence": "While breastfeeding it can be taken, with attention to feeding problems, constipation, diarrhoea, vomiting or unsettled behaviour in the baby.",
+  "basis": "excerpt",
+  "urls": [
+   "https://www.nhs.uk/medicines/lansoprazole/pregnancy-breastfeeding-and-fertility-while-taking-lansoprazole/"
+  ],
+  "note": "NHS."
+ },
+ {
+  "where": "article.sections[4]",
+  "sentence": "Taking lansoprazole for more than a year may raise the chance of bone fractures, gut infections and vitamin B12 deficiency.",
+  "basis": "excerpt",
+  "urls": [
+   "https://www.nhs.uk/medicines/lansoprazole/common-questions-about-lansoprazole/"
+  ],
+  "note": "NHS common questions."
+ },
+ {
+  "where": "article.sections[4]",
+  "sentence": "Low blood magnesium is possible after more than 3 months, and can cause tiredness, dizziness, muscle twitches or an irregular heartbeat.",
+  "basis": "excerpt",
+  "urls": [
+   "https://www.nhs.uk/medicines/lansoprazole/common-questions-about-lansoprazole/"
+  ],
+  "note": "NHS common questions."
+ },
+ {
+  "where": "article.sections[4]",
+  "sentence": "For this reason a doctor regularly reviews whether treatment should continue.",
+  "basis": "excerpt",
+  "urls": [
+   "https://www.nhs.uk/medicines/lansoprazole/common-questions-about-lansoprazole/"
+  ],
+  "note": "NHS common questions."
+ },
+ {
+  "where": "article.faqs[0].a",
+  "sentence": "The NHS says symptoms usually start to improve within 2 to 3 days.",
+  "basis": "excerpt",
+  "urls": [
+   "https://www.nhs.uk/medicines/lansoprazole/common-questions-about-lansoprazole/",
+   "https://www.nhs.uk/medicines/lansoprazole/about-lansoprazole/"
+  ],
+  "note": "NHS."
+ },
+ {
+  "where": "article.faqs[0].a",
+  "sentence": "The full effect can take up to 4 weeks, so it can take time to judge whether it is helping.",
+  "basis": "excerpt",
+  "urls": [
+   "https://www.nhs.uk/medicines/lansoprazole/common-questions-about-lansoprazole/",
+   "https://www.nhs.uk/medicines/lansoprazole/about-lansoprazole/"
+  ],
+  "note": "NHS; second clause is plain consequence."
+ },
+ {
+  "where": "article.faqs[1].a",
+  "sentence": "The NHS does not rule out alcohol.",
+  "basis": "excerpt",
+  "urls": [
+   "https://www.nhs.uk/medicines/lansoprazole/common-questions-about-lansoprazole/"
+  ],
+  "note": "NHS."
+ },
+ {
+  "where": "article.faqs[1].a",
+  "sentence": "It says too much alcohol increases stomach acid and can make symptoms worse.",
+  "basis": "excerpt",
+  "urls": [
+   "https://www.nhs.uk/medicines/lansoprazole/common-questions-about-lansoprazole/"
+  ],
+  "note": "NHS."
+ },
+ {
+  "where": "article.faqs[2].a",
+  "sentence": "Long-term use is something a doctor keeps under review.",
+  "basis": "excerpt",
+  "urls": [
+   "https://www.nhs.uk/medicines/lansoprazole/common-questions-about-lansoprazole/"
+  ],
+  "note": "NHS."
+ },
+ {
+  "where": "article.faqs[2].a",
+  "sentence": "The NHS says use for more than a year may raise the chance of bone fractures, gut infections and vitamin B12 deficiency, and low magnesium is possible after more than 3 months.",
+  "basis": "excerpt",
+  "urls": [
+   "https://www.nhs.uk/medicines/lansoprazole/common-questions-about-lansoprazole/"
+  ],
+  "note": "NHS."
+ },
+ {
+  "where": "article.faqs[2].a",
+  "sentence": "Anyone wondering about stopping after long use can ask the prescriber or pharmacist.",
+  "basis": "textbook",
+  "urls": [
+   "https://www.nhs.uk/medicines/lansoprazole/common-questions-about-lansoprazole/"
+  ],
+  "note": "Signposting; the NHS says a doctor reviews ongoing use."
+ },
+ {
+  "where": "article.faqs[3].a",
+  "sentence": "The NHS says regular contraceptive pills are not affected.",
+  "basis": "excerpt",
+  "urls": [
+   "https://www.nhs.uk/medicines/lansoprazole/common-questions-about-lansoprazole/"
+  ],
+  "note": "NHS."
+ },
+ {
+  "where": "article.faqs[3].a",
+  "sentence": "Vomiting or severe diarrhoea can stop a pill working, and lansoprazole can make the emergency contraceptive ellaOne less effective.",
+  "basis": "excerpt",
+  "urls": [
+   "https://www.nhs.uk/medicines/lansoprazole/common-questions-about-lansoprazole/"
+  ],
+  "note": "NHS."
+ },
+ {
+  "where": "article.faqs[4].a",
+  "sentence": "In pregnancy the NHS says omeprazole is usually offered instead of lansoprazole.",
+  "basis": "excerpt",
+  "urls": [
+   "https://www.nhs.uk/medicines/lansoprazole/pregnancy-breastfeeding-and-fertility-while-taking-lansoprazole/"
+  ],
+  "note": "NHS."
+ },
+ {
+  "where": "article.faqs[4].a",
+  "sentence": "While breastfeeding, it can be taken, with attention to the baby for feeding problems, constipation, diarrhoea, vomiting or unsettled behaviour.",
+  "basis": "excerpt",
+  "urls": [
+   "https://www.nhs.uk/medicines/lansoprazole/pregnancy-breastfeeding-and-fertility-while-taking-lansoprazole/"
+  ],
+  "note": "NHS."
+ },
+ {
+  "where": "article.keyFacts[0].value",
+  "sentence": "Proton pump inhibitor, which lowers stomach acid",
+  "basis": "excerpt",
+  "urls": [
+   "https://www.nhs.uk/medicines/lansoprazole/common-questions-about-lansoprazole/",
+   "https://www.nhs.uk/medicines/lansoprazole/about-lansoprazole/"
+  ],
+  "note": "NHS."
+ },
+ {
+  "where": "article.keyFacts[1].value",
+  "sentence": "Indigestion, heartburn, reflux disease and stomach ulcers",
+  "basis": "excerpt",
+  "urls": [
+   "https://www.nhs.uk/medicines/lansoprazole/about-lansoprazole/"
+  ],
+  "note": "NHS About."
+ },
+ {
+  "where": "article.keyFacts[2].value",
+  "sentence": "Prescription only",
+  "basis": "excerpt",
+  "urls": [
+   "https://www.nhs.uk/medicines/lansoprazole/about-lansoprazole/"
+  ],
+  "note": "NHS About."
+ },
+ {
+  "where": "article.keyFacts[3].value",
+  "sentence": "Capsules and orodispersible (melt-in-the-mouth) tablets",
+  "basis": "excerpt",
+  "urls": [
+   "https://www.nhs.uk/medicines/lansoprazole/about-lansoprazole/"
+  ],
+  "note": "NHS About."
+ },
+ {
+  "where": "article.keyFacts[4].value",
+  "sentence": "Symptoms usually improve within 2 to 3 days; full effect can take up to 4 weeks",
+  "basis": "excerpt",
+  "urls": [
+   "https://www.nhs.uk/medicines/lansoprazole/common-questions-about-lansoprazole/",
+   "https://www.nhs.uk/medicines/lansoprazole/about-lansoprazole/"
+  ],
+  "note": "NHS."
+ },
+ {
+  "where": "article.keyFacts[5].value",
+  "sentence": "Reviewed regularly by a doctor",
+  "basis": "excerpt",
+  "urls": [
+   "https://www.nhs.uk/medicines/lansoprazole/common-questions-about-lansoprazole/"
+  ],
+  "note": "NHS."
+ },
+ {
+  "where": "regimenNote",
+  "sentence": "Gastro-resistant capsules and orodispersible tablets",
+  "basis": "excerpt",
+  "urls": [
+   "https://www.nhs.uk/medicines/lansoprazole/about-lansoprazole/"
+  ],
+  "note": "NHS About: capsules and orodispersible tablets."
+ }
+]
