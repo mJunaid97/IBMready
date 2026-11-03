@@ -1,0 +1,348 @@
+{
+ "id": "osteoarthritis-and-rheumatoid-arthritis-compared",
+ "searchesUsed": 5,
+ "counts": {
+  "supported": 23,
+  "textbook": 1,
+  "unsupported": 12,
+  "wrong": 0,
+  "unsafe": 0,
+  "unchecked": 0
+ },
+ "claims": [
+  {
+   "id": "c01",
+   "where": "body[0]",
+   "sentence": "Both osteoarthritis (OA) and rheumatoid arthritis (RA) are types of arthritis, and both cause joint pain and stiffness.",
+   "classification": "supported",
+   "evidence": "NHS OA page: condition that makes joints painful and stiff; RA page: swollen, stiff, painful joints; arthritis page covers both",
+   "url": "https://www.nhs.uk/conditions/osteoarthritis/",
+   "action": "kept"
+  },
+  {
+   "id": "c02",
+   "where": "body[0]",
+   "sentence": "Because of that overlap, people sometimes assume they are the same condition.",
+   "classification": "unsupported",
+   "evidence": "No retrieved text says people assume they are the same",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c03",
+   "where": "body[0]",
+   "sentence": "They are not.",
+   "classification": "supported",
+   "evidence": "OA and RA described as distinct conditions with different mechanisms (cartilage breakdown vs autoimmune)",
+   "url": "https://www.nhs.uk/conditions/rheumatoid-arthritis/",
+   "action": "kept"
+  },
+  {
+   "id": "c04",
+   "where": "body[0]",
+   "sentence": "They have different causes, tend to affect different joints and are treated differently.",
+   "classification": "supported",
+   "evidence": "OA: knees, hips, hand joints; RA: autoimmune, usually both sides, hands and feet; different treatments (lifestyle/pain relief vs DMARDs)",
+   "url": "https://www.nhs.uk/conditions/rheumatoid-arthritis/",
+   "action": "kept"
+  },
+  {
+   "id": "c05",
+   "where": "body[1]",
+   "sentence": "Osteoarthritis is a condition that makes joints painful and stiff.",
+   "classification": "supported",
+   "evidence": "NHS: osteoarthritis is a condition that makes joints painful and stiff",
+   "url": "https://www.nhs.uk/conditions/osteoarthritis/",
+   "action": "kept"
+  },
+  {
+   "id": "c06",
+   "where": "body[1]",
+   "sentence": "The NHS says it is the most common type of arthritis in the UK.",
+   "classification": "supported",
+   "evidence": "NHS: the most common form of arthritis in the UK",
+   "url": "https://www.nhs.uk/conditions/osteoarthritis/",
+   "action": "kept"
+  },
+  {
+   "id": "c07",
+   "where": "body[1]",
+   "sentence": "The protective cartilage on the ends of the bones gradually breaks down.",
+   "classification": "textbook",
+   "evidence": "Cartilage breakdown not in the excerpts retrieved this pass; undisputed general fact",
+   "url": "",
+   "action": "kept"
+  },
+  {
+   "id": "c08",
+   "where": "body[1]",
+   "sentence": "The NHS says the exact cause is not known, but several things are thought to raise the risk, and age is one of them.",
+   "classification": "unsupported",
+   "evidence": "'Exact cause not known' not retrieved; retrieved risk factors: age, obesity, being female, joint injury, family history",
+   "url": "https://www.nhs.uk/conditions/osteoarthritis/",
+   "action": "edited",
+   "newSentence": "The NHS lists several things that raise the risk of osteoarthritis, including age, joint injury, extra weight, being female and family history."
+  },
+  {
+   "id": "c09",
+   "where": "body[1]",
+   "sentence": "It most often causes problems in the knees, hips and small joints of the hands.",
+   "classification": "supported",
+   "evidence": "Almost any joint can be affected but most often knees, hips and small joints of the hands",
+   "url": "https://www.nhs.uk/conditions/osteoarthritis/",
+   "action": "kept"
+  },
+  {
+   "id": "c10",
+   "where": "body[1]",
+   "sentence": "Symptoms can be mild and come and go, or be more constant and severe.",
+   "classification": "unsupported",
+   "evidence": "'Mild and come and go' not retrieved; retrieved: condition does not necessarily get worse over time",
+   "url": "https://www.nhs.uk/conditions/osteoarthritis/",
+   "action": "edited",
+   "newSentence": "The NHS says osteoarthritis does not necessarily get any worse over time."
+  },
+  {
+   "id": "c11",
+   "where": "body[2]",
+   "sentence": "Rheumatoid arthritis is a long-term condition that causes pain, swelling and stiffness in the joints, usually in the hands, feet and wrists.",
+   "classification": "unsupported",
+   "evidence": "Long-term autoimmune condition; hands and feet most often involved; 'wrists' not retrieved",
+   "url": "https://www.nhs.uk/conditions/rheumatoid-arthritis/symptoms/",
+   "action": "edited",
+   "newSentence": "Rheumatoid arthritis is a long-term condition that causes swollen, stiff and painful joints, most often in the hands and feet."
+  },
+  {
+   "id": "c12",
+   "where": "body[2]",
+   "sentence": "It is an autoimmune disease: the immune system attacks the lining of the joints.",
+   "classification": "supported",
+   "evidence": "Immune system attacks the cells lining the joints",
+   "url": "https://www.nhs.uk/conditions/rheumatoid-arthritis/",
+   "action": "kept"
+  },
+  {
+   "id": "c13",
+   "where": "body[2]",
+   "sentence": "The NHS says it usually affects joints on both sides of the body, and that morning stiffness often lasts longer than it does in osteoarthritis.",
+   "classification": "supported",
+   "evidence": "Typically both sides of the body; morning stiffness often lasts longer than the 30 minutes typical of OA (NICE: prolonged morning stiffness points away from OA)",
+   "url": "https://www.nhs.uk/conditions/rheumatoid-arthritis/symptoms/",
+   "action": "kept"
+  },
+  {
+   "id": "c14",
+   "where": "body[2]",
+   "sentence": "Some people also have tiredness, a fever or weight loss.",
+   "classification": "supported",
+   "evidence": "Fatigue, fever, sweating, poor appetite, weight loss can occur",
+   "url": "https://www.nhs.uk/conditions/rheumatoid-arthritis/symptoms/",
+   "action": "kept"
+  },
+  {
+   "id": "c15",
+   "where": "body[2]",
+   "sentence": "The trigger is not clear, but a higher risk is linked with being female, having a family history of the condition and smoking.",
+   "classification": "supported",
+   "evidence": "Unclear trigger; being a woman, family history, smoking raise risk",
+   "url": "https://www.nhs.uk/conditions/rheumatoid-arthritis/symptoms/",
+   "action": "kept"
+  },
+  {
+   "id": "c16",
+   "where": "body[3]",
+   "sentence": "For osteoarthritis, the NHS recommends regular exercise, keeping to a healthy weight, suitable footwear and aids that reduce strain on the joint.",
+   "classification": "supported",
+   "evidence": "Healthy weight, regular exercise, shock-absorbing footwear, aids such as tap turners",
+   "url": "https://www.nhs.uk/conditions/osteoarthritis/treatment/",
+   "action": "kept"
+  },
+  {
+   "id": "c17",
+   "where": "body[3]",
+   "sentence": "More severe symptoms may need painkillers and a structured exercise plan with a physiotherapist.",
+   "classification": "unsupported",
+   "evidence": "'More severe symptoms' not retrieved; retrieved: pain-relief medicines, and physiotherapists/occupational therapists give structured exercise plans and advice on aids",
+   "url": "https://www.nhs.uk/conditions/osteoarthritis/treatment/",
+   "action": "edited",
+   "newSentence": "Medicines can be used to relieve the pain of osteoarthritis, and physiotherapists and occupational therapists can provide structured exercise plans and advice on aids."
+  },
+  {
+   "id": "c18",
+   "where": "body[3]",
+   "sentence": "Surgery to repair, strengthen or replace a damaged joint is considered in some cases where other treatments have not helped.",
+   "classification": "unsupported",
+   "evidence": "Retrieved: surgery generally considered when other treatments are not enough; hip and knee replacement most common; 'repair, strengthen' not retrieved",
+   "url": "https://www.nhs.uk/conditions/osteoarthritis/treatment/",
+   "action": "edited",
+   "newSentence": "Surgery, most often a hip or knee replacement, is generally considered when other treatments are not enough."
+  },
+  {
+   "id": "c19",
+   "where": "body[3]",
+   "sentence": "Rheumatoid arthritis is treated with medicines that slow the disease and reduce inflammation, known as disease-modifying drugs, sometimes alongside biological treatments.",
+   "classification": "supported",
+   "evidence": "DMARDs main medicines; biological treatments added when DMARDs alone are not enough; reduce inflammation, slow joint damage",
+   "url": "https://www.nhs.uk/conditions/rheumatoid-arthritis/",
+   "action": "kept"
+  },
+  {
+   "id": "c20",
+   "where": "body[3]",
+   "sentence": "Painkillers and steroids can ease symptoms, and physiotherapy and occupational therapy are part of care.",
+   "classification": "supported",
+   "evidence": "Painkillers, NSAIDs and short-term steroids; physiotherapy and occupational therapy",
+   "url": "https://www.nhs.uk/conditions/rheumatoid-arthritis/",
+   "action": "kept"
+  },
+  {
+   "id": "c21",
+   "where": "body[3]",
+   "sentence": "With treatment it is possible to reduce the number of flares and limit long-term joint damage.",
+   "classification": "unsupported",
+   "evidence": "Retrieved: treatment can reduce inflammation, relieve pain, prevent or slow joint damage; 'flares' not retrieved",
+   "url": "https://www.nhs.uk/conditions/rheumatoid-arthritis/",
+   "action": "edited",
+   "newSentence": "There is no cure, but treatment can help to reduce inflammation, relieve pain and prevent or slow joint damage."
+  },
+  {
+   "id": "c22",
+   "where": "body[4]",
+   "sentence": "A GP asks about symptoms and examines the joints.",
+   "classification": "supported",
+   "evidence": "GP asks about symptoms and examines the joints (OA diagnosis)",
+   "url": "https://www.nhs.uk/conditions/osteoarthritis/",
+   "action": "kept"
+  },
+  {
+   "id": "c23",
+   "where": "body[4]",
+   "sentence": "Osteoarthritis can often be diagnosed from the symptoms and an examination.",
+   "classification": "supported",
+   "evidence": "NHS/NICE: OA usually diagnosed from history and examination; X-rays/blood tests not usually needed",
+   "url": "https://www.nhs.uk/conditions/osteoarthritis/",
+   "action": "kept"
+  },
+  {
+   "id": "c24",
+   "where": "body[4]",
+   "sentence": "For suspected rheumatoid arthritis, blood tests that look for inflammation are used, and the site's pages on CRP and ESR explain two of them.",
+   "classification": "supported",
+   "evidence": "NHS RA diagnosis: ESR and CRP inflammation markers among blood tests; meta part harmless",
+   "url": "https://www.nhs.uk/conditions/rheumatoid-arthritis/diagnosis/",
+   "action": "kept"
+  },
+  {
+   "id": "c25",
+   "where": "body[4]",
+   "sentence": "The laboratory report shows the reference range used.",
+   "classification": "unsupported",
+   "evidence": "Nothing retrieved about reference ranges on reports",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c26",
+   "where": "body[4]",
+   "sentence": "Imaging such as X-rays or ultrasound may also be arranged.",
+   "classification": "unsupported",
+   "evidence": "NHS: scans (X-rays standard) may check for joint inflammation and damage; NICE found ultrasound evidence too limited for routine use",
+   "url": "https://www.nhs.uk/conditions/rheumatoid-arthritis/diagnosis/",
+   "action": "edited",
+   "newSentence": "Scans such as X-rays may be done to check for joint inflammation and damage."
+  },
+  {
+   "id": "c27",
+   "where": "body[5]",
+   "sentence": "A GP appointment is the usual route for joint pain, swelling or stiffness that does not settle.",
+   "classification": "supported",
+   "evidence": "See a GP for unexplained pain, swelling or stiffness in joints that does not go away in a few days",
+   "url": "https://www.nhs.uk/conditions/arthritis/",
+   "action": "kept"
+  },
+  {
+   "id": "c28",
+   "where": "body[5]",
+   "sentence": "The NHS emphasises that early diagnosis and treatment of rheumatoid arthritis can help to prevent joint damage.",
+   "classification": "supported",
+   "evidence": "Seeing a GP early: early treatment can prevent it getting worse and reduce risk of joint damage",
+   "url": "https://www.nhs.uk/conditions/rheumatoid-arthritis/symptoms/",
+   "action": "kept"
+  },
+  {
+   "id": "c29",
+   "where": "body[5]",
+   "sentence": "If a joint becomes suddenly hot, red and very painful, or there is a fever with a painful joint, the person should contact NHS 111 or the GP the same day.",
+   "classification": "unsupported",
+   "evidence": "NHS: ask for an urgent GP appointment or get help from NHS 111 if skin around a joint is red or hot, or sore joints with a high or low temperature; 'same day' and 'sudden/very painful' wording not on the page",
+   "url": "https://www.nhs.uk/conditions/arthritis/",
+   "action": "edited",
+   "newSentence": "If the skin around a joint is red or hot, or sore joints come with a high or low temperature, the NHS advises asking for an urgent GP appointment or getting help from NHS 111."
+  },
+  {
+   "id": "c30",
+   "where": "body[5]",
+   "sentence": "Severe symptoms such as sudden inability to move a limb need 999.",
+   "classification": "unsupported",
+   "evidence": "999 advice for sudden inability to move a limb not retrieved",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c31",
+   "where": "keyPoints",
+   "sentence": "Osteoarthritis is the most common type of arthritis in the UK and mostly affects the knees, hips and small joints of the hands.",
+   "classification": "supported",
+   "evidence": "OA most common arthritis; knees, hips, hand joints",
+   "url": "https://www.nhs.uk/conditions/osteoarthritis/",
+   "action": "kept"
+  },
+  {
+   "id": "c32",
+   "where": "keyPoints",
+   "sentence": "Rheumatoid arthritis is an autoimmune condition in which the immune system attacks the lining of the joints.",
+   "classification": "supported",
+   "evidence": "Immune system attacks cells lining the joints",
+   "url": "https://www.nhs.uk/conditions/rheumatoid-arthritis/",
+   "action": "kept"
+  },
+  {
+   "id": "c33",
+   "where": "keyPoints",
+   "sentence": "Rheumatoid arthritis usually affects joints on both sides of the body and brings long morning stiffness, as well as tiredness.",
+   "classification": "supported",
+   "evidence": "Both sides of the body, morning stiffness longer than OA, fatigue",
+   "url": "https://www.nhs.uk/conditions/rheumatoid-arthritis/symptoms/",
+   "action": "kept"
+  },
+  {
+   "id": "c34",
+   "where": "keyPoints",
+   "sentence": "Osteoarthritis is managed with exercise, weight management and pain relief; rheumatoid arthritis needs medicines that reduce inflammation.",
+   "classification": "supported",
+   "evidence": "OA: exercise, healthy weight, pain-relief medicines; RA: DMARDs reduce inflammation",
+   "url": "https://www.nhs.uk/conditions/osteoarthritis/treatment/",
+   "action": "kept"
+  },
+  {
+   "id": "c35",
+   "where": "keyPoints",
+   "sentence": "Early assessment matters for rheumatoid arthritis, so a GP appointment is the first step for persistent joint swelling or stiffness.",
+   "classification": "supported",
+   "evidence": "See a GP for joint symptoms that persist; early treatment reduces joint damage",
+   "url": "https://www.nhs.uk/conditions/rheumatoid-arthritis/symptoms/",
+   "action": "kept"
+  },
+  {
+   "id": "c36",
+   "where": "summary",
+   "sentence": "Osteoarthritis is wear in the joint cartilage; rheumatoid arthritis is an autoimmune condition that inflames the joint lining.",
+   "classification": "unsupported",
+   "evidence": "'Wear in cartilage' not retrieved this pass; autoimmune part supported",
+   "url": "https://www.nhs.uk/conditions/rheumatoid-arthritis/",
+   "action": "edited",
+   "newSentence": "Osteoarthritis is a condition that makes joints painful and stiff; rheumatoid arthritis is an autoimmune condition in which the immune system attacks the lining of the joints."
+  }
+ ],
+ "notes": "Evidence is from search summaries naming NHS/NICE pages; URLs attribute by page title. Ultrasound for RA diagnosis is not routinely recommended per NICE evidence review, so removed. The morning-stiffness comparison rests on the summary's 30-minute OA figure plus NICE; avoid quoting the figure."
+}

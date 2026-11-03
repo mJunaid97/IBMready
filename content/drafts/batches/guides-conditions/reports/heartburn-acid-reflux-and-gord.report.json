@@ -1,0 +1,276 @@
+{
+ "id": "heartburn-acid-reflux-and-gord",
+ "searchesUsed": 4,
+ "counts": {
+  "supported": 17,
+  "textbook": 0,
+  "unsupported": 8,
+  "wrong": 0,
+  "unsafe": 3,
+  "unchecked": 0
+ },
+ "claims": [
+  {
+   "id": "c01",
+   "where": "body[0]",
+   "sentence": "Heartburn is a burning feeling in the chest.",
+   "classification": "supported",
+   "evidence": "NHS page: heartburn is a burning feeling in the chest caused by stomach acid rising towards the throat",
+   "url": "https://www.nhs.uk/conditions/heartburn-and-acid-reflux/",
+   "action": "kept"
+  },
+  {
+   "id": "c02",
+   "where": "body[0]",
+   "sentence": "NHS sources describe it as caused by stomach acid travelling up towards the throat, which is known as acid reflux.",
+   "classification": "supported",
+   "evidence": "Same page: stomach acid rising towards the throat",
+   "url": "https://www.nhs.uk/conditions/heartburn-and-acid-reflux/",
+   "action": "kept"
+  },
+  {
+   "id": "c03",
+   "where": "body[0]",
+   "sentence": "If it keeps happening, the condition is called gastro-oesophageal reflux disease, or GORD.",
+   "classification": "supported",
+   "evidence": "If it keeps happening it may be GORD",
+   "url": "https://www.nhs.uk/conditions/heartburn-and-acid-reflux/",
+   "action": "kept"
+  },
+  {
+   "id": "c04",
+   "where": "body[0]",
+   "sentence": "The terms heartburn, acid reflux and GORD overlap, and the difference lies mostly in how often and how long the symptoms occur.",
+   "classification": "unsupported",
+   "evidence": "No retrieved text says the difference lies in frequency and duration",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c05",
+   "where": "body[1]",
+   "sentence": "The main symptoms of acid reflux are heartburn and an unpleasant sour taste in the mouth caused by stomach acid.",
+   "classification": "supported",
+   "evidence": "Heartburn and sour taste in the mouth listed as symptoms",
+   "url": "https://www.nhs.uk/conditions/heartburn-and-acid-reflux/",
+   "action": "kept"
+  },
+  {
+   "id": "c06",
+   "where": "body[1]",
+   "sentence": "Some people also have a cough, a hoarse voice, bloating or feeling sick.",
+   "classification": "unsupported",
+   "evidence": "Retrieved list is hoarse voice, bad breath, bloating, feeling sick; cough not listed",
+   "url": "https://www.nhs.uk/conditions/heartburn-and-acid-reflux/",
+   "action": "edited",
+   "newSentence": "Some people also have a hoarse voice, bad breath, bloating or feeling sick."
+  },
+  {
+   "id": "c07",
+   "where": "body[1]",
+   "sentence": "Symptoms tend to get worse after eating, when lying down or when bending over.",
+   "classification": "supported",
+   "evidence": "Symptoms tend to worsen after eating, lying down or bending over",
+   "url": "https://www.nhs.uk/conditions/heartburn-and-acid-reflux/",
+   "action": "kept"
+  },
+  {
+   "id": "c08",
+   "where": "body[2]",
+   "sentence": "NHS sources list a number of contributors: being overweight, smoking, drinking alcohol, eating large meals or eating close to bedtime, stress, having a hiatus hernia, and pregnancy.",
+   "classification": "unsupported",
+   "evidence": "Retrieved causes: certain foods or drinks, being overweight, smoking, pregnancy, stress or anxiety, some medicines such as ibuprofen, hiatus hernia. Alcohol and large meals not retrieved",
+   "url": "https://www.nhs.uk/conditions/heartburn-and-acid-reflux/",
+   "action": "edited",
+   "newSentence": "NHS sources list several contributors: certain foods and drinks, being overweight, smoking, stress or anxiety, having a hiatus hernia, and pregnancy."
+  },
+  {
+   "id": "c09",
+   "where": "body[2]",
+   "sentence": "Some medicines, including anti-inflammatory painkillers such as ibuprofen, can also play a part.",
+   "classification": "supported",
+   "evidence": "Some medicines such as ibuprofen listed as triggers",
+   "url": "https://www.nhs.uk/conditions/heartburn-and-acid-reflux/",
+   "action": "kept"
+  },
+  {
+   "id": "c10",
+   "where": "body[2]",
+   "sentence": "A pharmacist or GP can review whether any medicine a person takes is relevant, and the person should not change a prescribed medicine without that advice.",
+   "classification": "unsafe",
+   "evidence": "Individual-directed advice about prescribed medicines; not in retrieved text",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c11",
+   "where": "body[3]",
+   "sentence": "Lifestyle changes are usually the first step.",
+   "classification": "supported",
+   "evidence": "Lifestyle changes are the first step",
+   "url": "https://www.nhs.uk/conditions/heartburn-and-acid-reflux/",
+   "action": "kept"
+  },
+  {
+   "id": "c12",
+   "where": "body[3]",
+   "sentence": "NHS advice includes avoiding late meals, raising the head of the bed, cutting down on trigger foods such as coffee, chocolate and fatty or spicy food, and losing weight where that is relevant.",
+   "classification": "unsupported",
+   "evidence": "Retrieved advice: smaller more frequent meals, avoid trigger foods, not eating within a few hours of bed, not smoking. Raising bed head, named foods and weight loss not retrieved",
+   "url": "https://www.nhs.uk/conditions/heartburn-and-acid-reflux/",
+   "action": "edited",
+   "newSentence": "NHS advice includes eating smaller, more frequent meals, avoiding foods that trigger symptoms, and not eating within a few hours of going to bed."
+  },
+  {
+   "id": "c13",
+   "where": "body[3]",
+   "sentence": "Stopping smoking and cutting down on alcohol are also advised.",
+   "classification": "unsupported",
+   "evidence": "Not smoking is advised; alcohol not mentioned in retrieved text",
+   "url": "https://www.nhs.uk/conditions/heartburn-and-acid-reflux/",
+   "action": "edited",
+   "newSentence": "Not smoking is also advised."
+  },
+  {
+   "id": "c14",
+   "where": "body[3]",
+   "sentence": "Antacids and alginates, which are available from pharmacies, can ease symptoms, and a pharmacist can talk through the options.",
+   "classification": "supported",
+   "evidence": "A pharmacist can recommend antacids or alginates (not for regular long-term use)",
+   "url": "https://www.nhs.uk/conditions/heartburn-and-acid-reflux/",
+   "action": "kept"
+  },
+  {
+   "id": "c15",
+   "where": "body[4]",
+   "sentence": "A GP appointment is the usual route if lifestyle changes and pharmacy medicines do not help, or if heartburn happens most days.",
+   "classification": "supported",
+   "evidence": "See a GP if lifestyle changes and pharmacy medicines are not helping or heartburn most days",
+   "url": "https://www.nhs.uk/conditions/heartburn-and-acid-reflux/",
+   "action": "kept"
+  },
+  {
+   "id": "c16",
+   "where": "body[4]",
+   "sentence": "Some symptoms need prompt attention, by contacting the GP or NHS 111.",
+   "classification": "supported",
+   "evidence": "If you have alarm symptoms contact your GP or NHS 111 promptly",
+   "url": "https://www.nhs.uk/conditions/heartburn-and-acid-reflux/",
+   "action": "kept"
+  },
+  {
+   "id": "c17",
+   "where": "body[4]",
+   "sentence": "NHS sources list difficulty swallowing, unintentional weight loss, repeated vomiting, severe or worsening pain, being 55 or older with new symptoms, and blood in vomit or in stools.",
+   "classification": "unsafe",
+   "evidence": "Retrieved: difficulty swallowing, weight loss, food stuck in throat, frequent vomiting. 55 or older only in a local 2022 leaflet, severe pain not retrieved. Blood in vomit is an emergency-care symptom (NHS vomiting-blood page), not a routine GP/111 item",
+   "url": "https://www.nhs.uk/conditions/heartburn-and-acid-reflux/",
+   "action": "edited",
+   "newSentence": "NHS sources list difficulty swallowing, unintentional weight loss, food getting stuck in the throat and frequent vomiting as reasons to contact a GP or NHS 111."
+  },
+  {
+   "id": "c18",
+   "where": "body[4]",
+   "sentence": "Chest pain can also be a sign of a heart problem.",
+   "classification": "supported",
+   "evidence": "Severe chest pain can be mistaken for a heart attack",
+   "url": "https://www.nhs.uk/conditions/heartburn-and-acid-reflux/",
+   "action": "kept"
+  },
+  {
+   "id": "c19",
+   "where": "body[4]",
+   "sentence": "Sudden chest pain, pain spreading to the arm, neck or jaw, or breathlessness is a reason to call 999.",
+   "classification": "unsupported",
+   "evidence": "NHS chest pain page: call 999 for sudden chest discomfort that does not ease, with sweating, sickness, light-headedness or breathlessness. Arm/neck/jaw only from a trust leaflet; Devon page not shown to carry this",
+   "url": "https://www.nhs.uk/symptoms/chest-pain/",
+   "action": "edited",
+   "newSentence": "Call 999 for sudden chest pain that does not ease, especially with sweating, feeling sick, light-headedness or breathlessness, as it may be a heart attack."
+  },
+  {
+   "id": "c20",
+   "where": "body[5]",
+   "sentence": "A GP may prescribe a proton pump inhibitor, a medicine that reduces the amount of acid the stomach makes.",
+   "classification": "supported",
+   "evidence": "GP may prescribe a PPI such as omeprazole or lansoprazole, which reduces stomach acid",
+   "url": "https://www.nhs.uk/conditions/heartburn-and-acid-reflux/",
+   "action": "kept"
+  },
+  {
+   "id": "c21",
+   "where": "body[5]",
+   "sentence": "NHS 111 Wales says people usually need this type of medicine for a limited course, depending on how severe the reflux is, and that anyone whose symptoms return afterwards should go back to the GP, as longer-term treatment may be needed.",
+   "classification": "unsupported",
+   "evidence": "NHS summary says you may need a long-term prescription; 111 Wales page not shown to carry the limited-course wording; Cornwall guidance 4-8 weeks, longer term for recurrence",
+   "url": "https://www.nhs.uk/conditions/heartburn-and-acid-reflux/",
+   "action": "edited",
+   "newSentence": "A GP may prescribe a proton pump inhibitor for a short time, and some people need a long-term prescription, so anyone whose symptoms continue or return should go back to the GP."
+  },
+  {
+   "id": "c22",
+   "where": "body[5]",
+   "sentence": "If symptoms continue despite treatment, or if there are warning signs, a GP may arrange a gastroscopy, a test that uses a thin camera to look at the upper gut.",
+   "classification": "unsupported",
+   "evidence": "Gastroscopy if symptoms persist despite treatment (Cornwall referral guidance); 'thin camera' and warning-sign wording not retrieved",
+   "url": "https://rms.cornwall.nhs.uk/rms/primary_care_clinical_referral_criteria/rms/primary_care_clinical_referral_criteria/gastro/gord",
+   "action": "edited",
+   "newSentence": "If symptoms continue despite treatment, a GP may refer someone for a gastroscopy, a test to look at the lining of the food pipe."
+  },
+  {
+   "id": "c23",
+   "where": "keyPoints",
+   "sentence": "Heartburn is a burning feeling in the chest caused by stomach acid travelling up towards the throat.",
+   "classification": "supported",
+   "evidence": "As body sentence 1",
+   "url": "https://www.nhs.uk/conditions/heartburn-and-acid-reflux/",
+   "action": "kept"
+  },
+  {
+   "id": "c24",
+   "where": "keyPoints",
+   "sentence": "When reflux keeps happening it is called gastro-oesophageal reflux disease, or GORD.",
+   "classification": "supported",
+   "evidence": "As body sentence 3",
+   "url": "https://www.nhs.uk/conditions/heartburn-and-acid-reflux/",
+   "action": "kept"
+  },
+  {
+   "id": "c25",
+   "where": "keyPoints",
+   "sentence": "Lifestyle changes and pharmacy medicines are the usual first steps, and a pharmacist can advise on options.",
+   "classification": "supported",
+   "evidence": "Lifestyle first; pharmacist can recommend antacids or alginates",
+   "url": "https://www.nhs.uk/conditions/heartburn-and-acid-reflux/",
+   "action": "kept"
+  },
+  {
+   "id": "c26",
+   "where": "keyPoints",
+   "sentence": "Difficulty swallowing, unintentional weight loss, repeated vomiting or blood in vomit or stools need prompt medical advice.",
+   "classification": "unsafe",
+   "evidence": "Blood in vomit is an emergency-care symptom (vomiting-blood page), and mixing it with GP-level items understates urgency",
+   "url": "https://www.nhs.uk/symptoms/vomiting-blood/",
+   "action": "edited",
+   "newSentence": "Difficulty swallowing, unintentional weight loss or frequent vomiting need prompt advice from a GP or NHS 111."
+  },
+  {
+   "id": "c27",
+   "where": "keyPoints",
+   "sentence": "A GP can prescribe acid-reducing medicine and arrange tests if symptoms continue.",
+   "classification": "supported",
+   "evidence": "GP may prescribe a PPI (NHS page); tests if symptoms persist (Cornwall guidance)",
+   "url": "https://www.nhs.uk/conditions/heartburn-and-acid-reflux/",
+   "action": "kept"
+  },
+  {
+   "id": "c28",
+   "where": "summary",
+   "sentence": "Heartburn is a burning feeling in the chest from acid reflux; when it keeps happening it is called gastro-oesophageal reflux disease (GORD).",
+   "classification": "supported",
+   "evidence": "As body sentence 1 and 3",
+   "url": "https://www.nhs.uk/conditions/heartburn-and-acid-reflux/",
+   "action": "kept"
+  }
+ ],
+ "notes": "Evidence is from search summaries only; basic NHS claims attributed to the nhs.uk heartburn page whose title was returned, but the summary blended pages. The draft's 111 Wales/MyHealth Devon/CUH pages were not shown to carry the red-flag list, PPI course or 999 sentence. 55-or-older appears only in a local 2022 leaflet, so dropped. 999 sentence rerouted to nhs.uk chest pain page. Recommend replacing references with the nhs.uk heartburn page, nhs.uk chest pain page and Cornwall referral guidance."
+}

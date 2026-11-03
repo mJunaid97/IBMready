@@ -1,0 +1,286 @@
+{
+ "id": "kidney-stones-symptoms-and-treatment",
+ "searchesUsed": 2,
+ "counts": {
+  "supported": 15,
+  "textbook": 1,
+  "unsupported": 11,
+  "wrong": 0,
+  "unsafe": 2,
+  "unchecked": 0
+ },
+ "claims": [
+  {
+   "id": "c01",
+   "where": "body[0]",
+   "sentence": "Kidney stones are hard lumps that form in the kidneys.",
+   "classification": "textbook",
+   "evidence": "Plain general description; not stated verbatim in retrieved excerpts.",
+   "url": "https://www.nhs.uk/conditions/kidney-stones/",
+   "action": "kept"
+  },
+  {
+   "id": "c02",
+   "where": "body[0]",
+   "sentence": "The NHS says they are caused by chemicals from urine building up in the kidneys.",
+   "classification": "supported",
+   "evidence": "NHS: usually caused by a build-up of chemicals found in your pee.",
+   "url": "https://www.nhs.uk/conditions/kidney-stones/",
+   "action": "kept"
+  },
+  {
+   "id": "c03",
+   "where": "body[0]",
+   "sentence": "They can sit in the kidney or travel down the tubes that lead to the bladder.",
+   "classification": "unsupported",
+   "evidence": "Retrieved excerpts do not say stones sit in the kidney or travel down the tubes.",
+   "url": "https://www.nhs.uk/conditions/kidney-stones/",
+   "action": "removed"
+  },
+  {
+   "id": "c04",
+   "where": "body[0]",
+   "sentence": "Small stones may cause no symptoms and are sometimes found by chance on an X-ray or scan done for another reason.",
+   "classification": "unsupported",
+   "evidence": "Excerpt says small stones often cause no symptoms and may pass unnoticed; 'found by chance on X-ray/scan' not retrieved.",
+   "url": "https://www.nhs.uk/conditions/kidney-stones/symptoms/",
+   "action": "edited",
+   "newSentence": "Small stones often cause no symptoms and may pass unnoticed."
+  },
+  {
+   "id": "c05",
+   "where": "body[1]",
+   "sentence": "Larger stones can cause pain in the side of the tummy or the lower back, and the pain may spread towards the groin.",
+   "classification": "unsupported",
+   "evidence": "Excerpt lists severe pain but not location (side, back, groin).",
+   "url": "https://www.nhs.uk/conditions/kidney-stones/symptoms/",
+   "action": "edited",
+   "newSentence": "Larger stones can cause severe pain."
+  },
+  {
+   "id": "c06",
+   "where": "body[1]",
+   "sentence": "It can come and go in waves.",
+   "classification": "supported",
+   "evidence": "Excerpt: severe pain that comes and goes.",
+   "url": "https://www.nhs.uk/conditions/kidney-stones/symptoms/",
+   "action": "kept"
+  },
+  {
+   "id": "c07",
+   "where": "body[1]",
+   "sentence": "Other symptoms can include nausea or vomiting, needing to pass urine more often, cloudy urine, blood in the urine, and a high temperature.",
+   "classification": "unsupported",
+   "evidence": "Retrieved list: high temperature, sweating, severe pain that comes and goes, nausea or vomiting, blood in urine, urine infection. Passing urine more often and cloudy urine not retrieved.",
+   "url": "https://www.nhs.uk/conditions/kidney-stones/symptoms/",
+   "action": "edited",
+   "newSentence": "Other symptoms can include nausea or vomiting, blood in the urine, sweating, a high temperature and a urine infection."
+  },
+  {
+   "id": "c08",
+   "where": "body[2]",
+   "sentence": "The NHS says kidney stones can be caused by dehydration, by some medicines, and by some medical conditions.",
+   "classification": "supported",
+   "evidence": "NHS causes: dehydration, certain medicines and some medical conditions raise the risk.",
+   "url": "https://www.nhs.uk/conditions/kidney-stones/",
+   "action": "kept"
+  },
+  {
+   "id": "c09",
+   "where": "body[2]",
+   "sentence": "Not drinking enough water raises the chance of getting one.",
+   "classification": "supported",
+   "evidence": "Dehydration listed as a risk; equivalent.",
+   "url": "https://www.nhs.uk/conditions/kidney-stones/",
+   "action": "kept"
+  },
+  {
+   "id": "c10",
+   "where": "body[2]",
+   "sentence": "A GP or pharmacist can say whether a medicine the person takes may be relevant.",
+   "classification": "unsupported",
+   "evidence": "No retrieved text about asking a GP or pharmacist about medicines.",
+   "url": "https://www.nhs.uk/conditions/kidney-stones/",
+   "action": "removed"
+  },
+  {
+   "id": "c11",
+   "where": "body[2]",
+   "sentence": "Prescribed medicines should not be stopped without that advice.",
+   "classification": "unsafe",
+   "evidence": "Instruction to an individual about prescribed medicines; not in retrieved text.",
+   "url": "https://www.nhs.uk/conditions/kidney-stones/",
+   "action": "removed"
+  },
+  {
+   "id": "c12",
+   "where": "body[3]",
+   "sentence": "A GP can usually diagnose kidney stones from the symptoms and medical history.",
+   "classification": "supported",
+   "evidence": "NHS: a doctor can usually diagnose kidney stones based on your symptoms.",
+   "url": "https://www.nhs.uk/conditions/kidney-stones/",
+   "action": "kept"
+  },
+  {
+   "id": "c13",
+   "where": "body[3]",
+   "sentence": "Urine and blood tests may be used.",
+   "classification": "supported",
+   "evidence": "NHS: urine and blood tests may be used.",
+   "url": "https://www.nhs.uk/conditions/kidney-stones/",
+   "action": "kept"
+  },
+  {
+   "id": "c14",
+   "where": "body[3]",
+   "sentence": "If the pain is severe, the NHS says the person should be referred to hospital for an urgent scan.",
+   "classification": "unsupported",
+   "evidence": "Excerpt says a hospital referral for a scan if pain is severe; 'urgent' not stated.",
+   "url": "https://www.nhs.uk/conditions/kidney-stones/",
+   "action": "edited",
+   "newSentence": "If the pain is severe, the NHS says the person may be referred to hospital for a scan."
+  },
+  {
+   "id": "c15",
+   "where": "body[3]",
+   "sentence": "A CT scan is usually offered to adults, and an ultrasound scan to pregnant women and to children under 16.",
+   "classification": "unsupported",
+   "evidence": "Excerpt: CT scan if adult, ultrasound if pregnant or children under 16; 'usually offered' wording not stated.",
+   "url": "https://www.nhs.uk/conditions/kidney-stones/",
+   "action": "edited",
+   "newSentence": "If a scan is needed, the NHS says adults have a CT scan, while pregnant women and children under 16 have an ultrasound scan."
+  },
+  {
+   "id": "c16",
+   "where": "body[4]",
+   "sentence": "Most kidney stones can be treated at home.",
+   "classification": "supported",
+   "evidence": "NHS: most kidney stones can be treated at home with medicine.",
+   "url": "https://www.nhs.uk/conditions/kidney-stones/",
+   "action": "kept"
+  },
+  {
+   "id": "c17",
+   "where": "body[4]",
+   "sentence": "The NHS says this usually means painkillers, anti-sickness medicine, medicines that help a stone pass, and drinking plenty of water.",
+   "classification": "supported",
+   "evidence": "NHS: painkillers, anti-sickness medicine, drinking plenty of fluids, alpha-blockers that help stones pass.",
+   "url": "https://www.nhs.uk/conditions/kidney-stones/treatment/",
+   "action": "kept"
+  },
+  {
+   "id": "c18",
+   "where": "body[4]",
+   "sentence": "Larger stones may need to be broken up or removed.",
+   "classification": "supported",
+   "evidence": "NHS: for larger stones, surgical options include shockwave lithotripsy and ureteroscopy.",
+   "url": "https://www.nhs.uk/conditions/kidney-stones/treatment/",
+   "action": "kept"
+  },
+  {
+   "id": "c19",
+   "where": "body[4]",
+   "sentence": "One option is shock wave lithotripsy, which uses sound waves from outside the body to break the stone into smaller pieces that can pass in the urine.",
+   "classification": "unsupported",
+   "evidence": "Treatment page: ultrasound locates the stone, then shock waves are directed at it to break it up; 'sound waves', 'from outside the body' and 'pass in the urine' not retrieved. More than one session may be needed.",
+   "url": "https://www.nhs.uk/conditions/kidney-stones/treatment/",
+   "action": "edited",
+   "newSentence": "One option is shockwave lithotripsy, where shock waves are aimed at the stone to break it up."
+  },
+  {
+   "id": "c20",
+   "where": "body[4]",
+   "sentence": "Other procedures use a thin scope to reach the stone.",
+   "classification": "supported",
+   "evidence": "Treatment page: ureteroscopy, a thin telescope passed up through the urethra and bladder into the ureter, under general anaesthetic.",
+   "url": "https://www.nhs.uk/conditions/kidney-stones/treatment/",
+   "action": "kept"
+  },
+  {
+   "id": "c21",
+   "where": "body[5]",
+   "sentence": "The NHS advises asking for an urgent GP appointment or contacting NHS 111 for anyone with kidney stone symptoms who is in severe pain, or has a high temperature, or feels hot, cold or shivery.",
+   "classification": "supported",
+   "evidence": "NHS: ask for an urgent GP appointment or call 111 if you think you have a stone and severe pain, high temperature, or feel hot, cold or shivery.",
+   "url": "https://www.nhs.uk/conditions/kidney-stones/",
+   "action": "kept"
+  },
+  {
+   "id": "c22",
+   "where": "body[5]",
+   "sentence": "A fever with a stone can mean the kidney is infected, which needs prompt treatment.",
+   "classification": "unsupported",
+   "evidence": "High temperature is listed among signs of infection (Guy's and St Thomas'); 'kidney is infected' not stated for NHS page.",
+   "url": "https://www.guysandstthomas.nhs.uk/health-information/kidney-stone-pain-renal-colic",
+   "action": "edited",
+   "newSentence": "A high temperature can be a sign of infection, so it needs prompt advice from a GP or NHS 111."
+  },
+  {
+   "id": "c23",
+   "where": "body[5]",
+   "sentence": "Being unable to pass urine is also a reason to seek urgent help, and 999 is the route if the person is very unwell.",
+   "classification": "unsafe",
+   "evidence": "Hospital leaflets say return to A&E if you cannot pee; NHS pages give no 999 criteria for this, so the original 999 route was unsupported.",
+   "url": "https://www.guysandstthomas.nhs.uk/health-information/kidney-stone-pain-renal-colic",
+   "action": "edited",
+   "newSentence": "Hospital leaflets say anyone who cannot pass urine should go to A&E, and 999 should be called in an emergency."
+  },
+  {
+   "id": "c24",
+   "where": "keyPoints",
+   "sentence": "Kidney stones form when chemicals from urine build up in the kidneys, and small stones may cause no symptoms.",
+   "classification": "supported",
+   "evidence": "Chemicals build-up in pee; small stones often cause no symptoms.",
+   "url": "https://www.nhs.uk/conditions/kidney-stones/",
+   "action": "kept"
+  },
+  {
+   "id": "c25",
+   "where": "keyPoints",
+   "sentence": "Larger stones can cause severe pain in the side or lower back that comes and goes, sometimes with nausea or blood in the urine.",
+   "classification": "unsupported",
+   "evidence": "Severe pain that comes and goes, nausea, blood in urine supported; 'side or lower back' not retrieved.",
+   "url": "https://www.nhs.uk/conditions/kidney-stones/symptoms/",
+   "action": "edited",
+   "newSentence": "Larger stones can cause severe pain that comes and goes, sometimes with nausea or blood in the urine."
+  },
+  {
+   "id": "c26",
+   "where": "keyPoints",
+   "sentence": "A GP can often diagnose kidney stones from symptoms and history, with urine and blood tests and sometimes a scan.",
+   "classification": "supported",
+   "evidence": "Doctor can usually diagnose from symptoms; urine and blood tests; scan if pain severe.",
+   "url": "https://www.nhs.uk/conditions/kidney-stones/",
+   "action": "kept"
+  },
+  {
+   "id": "c27",
+   "where": "keyPoints",
+   "sentence": "Most stones can be treated at home with medicines and plenty of fluids; larger stones may need to be broken up or removed.",
+   "classification": "supported",
+   "evidence": "Most treated at home with medicine and fluids; surgical options for larger stones.",
+   "url": "https://www.nhs.uk/conditions/kidney-stones/treatment/",
+   "action": "kept"
+  },
+  {
+   "id": "c28",
+   "where": "keyPoints",
+   "sentence": "Severe pain, a high temperature or feeling hot, cold or shivery needs urgent advice from NHS 111 or a GP.",
+   "classification": "supported",
+   "evidence": "Urgent GP or 111 for severe pain, high temperature, feeling hot, cold or shivery.",
+   "url": "https://www.nhs.uk/conditions/kidney-stones/",
+   "action": "kept"
+  },
+  {
+   "id": "c29",
+   "where": "summary",
+   "sentence": "Kidney stones are hard deposits that can cause severe pain in the side or back; many pass on their own, while large ones may need a procedure.",
+   "classification": "unsupported",
+   "evidence": "'Many pass on their own' and 'hard deposits' not retrieved; severe pain location not retrieved.",
+   "url": "https://www.nhs.uk/conditions/kidney-stones/",
+   "action": "edited",
+   "newSentence": "Kidney stones form when chemicals in urine build up; small ones may cause no symptoms, while larger ones can cause severe pain, and some may need a procedure."
+  }
+ ],
+ "notes": "Evidence is from search summaries of NHS pages (main, symptoms, treatment) plus hospital leaflets for the A&E point. Original 'hard lumps' kept as textbook. Edited keyPoints/summary must stay consistent with edited body sentences."
+}
