@@ -50,3 +50,12 @@ Window 1 July to 3 November 2026. 20 briefs, all `kind: news`, source = MHRA / g
 About 115 of 200: 65 by the author (discovery and first pass), 50 by six separate verification subagents (A to F, 2 to 3 searches per brief, gov.uk only, differently worded). The remaining budget was not spent because discovery had stopped returning new items the site can link to: the last eight discovery queries (by month and by topic) returned only items already listed or without a linkable page.
 
 Pass-2 totals are in `reports/*.report.json`; wrong or unsafe sentences found: none. Unsupported sentences found and cut or reworded: roughly one in three across the first batch of briefs.
+
+## Addendum (follow-up session, 3 November 2026)
+
+A second author session restarted on this batch, found this branch already complete and did not overwrite it. It spent 44 further searches (about 159 in total across both sessions) and made no change to `fragment.json`.
+
+* **Aficamten** (still dropped): NICE's own page says final guidance TA1181 was published on **30 July 2026** (https://www.nice.org.uk/guidance/TA1181), and the GOV.UK release describes the MHRA authorisation as co-ordinated with it. The release's own date is still not printed in any retrieved text. If a reviewer confirms the GOV.UK page date, the brief can be restored from `reports/mhra-nice-aficamten-hypertrophic-cardiomyopathy.report.json` with `published: 2026-07-30`.
+* **Inqlexzo** (still dropped): the release is only dated by relative age ("about 125 days"), roughly late June to early July. Open https://www.gov.uk/government/news/mhra-authorises-gemcitabine-delivery-system-for-adults-with-bcg-unresponsive-high-risk-non-muscle-invasive-bladder-cancer to read the date. No site page for bladder cancer exists, so it also has no link target.
+* **Casgevy date** re-checked: one search says the extension was granted 29 October and announced 30 October, matching the 30 October used here (another MHRA listing shows 27 October).
+* Further discovery by month and topic returned only items already covered or without a linkable page.
