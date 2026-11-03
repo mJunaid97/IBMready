@@ -1,0 +1,99 @@
+{
+ "id": "nitroimidazoles",
+ "searchesUsed": 8,
+ "counts": {
+  "supported": 7,
+  "textbook": 0,
+  "unsupported": 3,
+  "wrong": 0,
+  "unsafe": 0,
+  "unchecked": 0
+ },
+ "claims": [
+  {
+   "id": "c01",
+   "where": "summary",
+   "classification": "supported",
+   "evidence": "NHS About metronidazole: antibiotic for bacterial infections incl. skin infections, rosacea, mouth and dental infections, bacterial vaginosis, pelvic inflammatory disease; prescription only.",
+   "url": "https://www.nhs.uk/medicines/metronidazole/about-metronidazole/",
+   "action": "kept"
+  },
+  {
+   "id": "c02",
+   "where": "summary",
+   "classification": "supported",
+   "evidence": "MedlinePlus tinidazole page: treats trichomoniasis, bacterial vaginosis, giardiasis, amebiasis; class nitroimidazole antimicrobials.",
+   "url": "https://medlineplus.gov/druginfo/meds/a604036.html",
+   "action": "kept"
+  },
+  {
+   "id": "c03",
+   "where": "mechanism",
+   "classification": "supported",
+   "evidence": "PubMed 9360057 'Metronidazole. A therapeutic review and update': limited spectrum covering various protozoans and most Gram-negative and Gram-positive anaerobes; no efficacy against aerobes. PMID 363399 (Brogden 1978) abstract does not carry the aerobe wording, so the first-pass URL was wrong.",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/9360057/",
+   "action": "edited",
+   "newSentence": "A therapeutic review says metronidazole has a limited spectrum that covers various protozoa and most anaerobic bacteria, and that it lacks efficacy against aerobic organisms."
+  },
+  {
+   "id": "c04",
+   "where": "mechanism",
+   "classification": "supported",
+   "evidence": "PubMed 6749473 (tinidazole review): like metronidazole, active in vitro against most clinically important obligate anaerobes.",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/6749473/",
+   "action": "kept"
+  },
+  {
+   "id": "c05",
+   "where": "classEffects[1]",
+   "classification": "supported",
+   "evidence": "NHS side effects of metronidazole: common ones are feeling or being sick, diarrhoea, slight metallic taste.",
+   "url": "https://www.nhs.uk/medicines/metronidazole/side-effects-of-metronidazole/",
+   "action": "kept"
+  },
+  {
+   "id": "c06",
+   "where": "classEffects[2]",
+   "classification": "unsupported",
+   "evidence": "Returned MedlinePlus text confirmed only a sharp, unpleasant metallic taste; nausea, vomiting and loss of appetite appeared only in a patent, not MedlinePlus, so the rest is unverified.",
+   "url": "https://medlineplus.gov/druginfo/meds/a604036.html",
+   "action": "edited",
+   "newSentence": "MedlinePlus lists a sharp, unpleasant metallic taste among the side effects of tinidazole."
+  },
+  {
+   "id": "c07",
+   "where": "classEffects[3]",
+   "classification": "unsupported",
+   "evidence": "NHS lists yellowing of skin or eyes among warning signs of rare serious side effects (under 1 in 1,000). The 'liver or gallbladder problems' interpretation and a care route for metronidazole were not in the returned text (the GP/111 route came from the doxazosin page).",
+   "url": "https://www.nhs.uk/medicines/metronidazole/side-effects-of-metronidazole/",
+   "action": "edited",
+   "newSentence": "The NHS lists yellowing of the skin or whites of the eyes among the warning signs of rare but serious side effects of metronidazole."
+  },
+  {
+   "id": "c08",
+   "where": "cautions[3]",
+   "classification": "supported",
+   "evidence": "MedlinePlus tinidazole: do not drink alcohol or use alcohol-containing products during treatment and for 3 days after; may cause upset stomach, vomiting, stomach cramps, headaches, sweating, flushing. Number of days correctly omitted.",
+   "url": "https://medlineplus.gov/druginfo/meds/a604036.html",
+   "action": "kept"
+  },
+  {
+   "id": "c09",
+   "where": "cautions[4]",
+   "classification": "unsupported",
+   "evidence": "PMC7038249 review (snippets only): tinidazole entries are inconsistent (one says avoid alcohol 72 h, another says alcohol may be consumed); one notes a potential concern due to chemical similarity to metronidazole with no direct data. 'Labelling' and 'review found no data' attribution not clearly confirmed.",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7038249/",
+   "action": "edited",
+   "newSentence": "A review of alcohol and antibiotic interactions says the concern about alcohol with tinidazole rests on its chemical similarity to metronidazole, with no direct data identified."
+  },
+  {
+   "id": "c10",
+   "where": "cautions[5]",
+   "classification": "supported",
+   "evidence": "MedlinePlus metronidazole: precautions list kidney or liver disease among conditions to tell the doctor about.",
+   "url": "https://medlineplus.gov/druginfo/meds/a689011.html",
+   "action": "kept"
+  }
+ ],
+ "notes": "cautions[4] (c09) sits next to the MedlinePlus alcohol advice in c08; keep editorially subordinate so it does not read as permission to drink. Full PMC7038249 text was seen only as snippets. c07 needs the NHS care route (GP or NHS 111) added from a page that states it for metronidazole; not verified here. No doses present in any sentence."
+}
