@@ -1,0 +1,108 @@
+{
+ "id": "5-alpha-reductase-inhibitors",
+ "searchesUsed": 9,
+ "counts": {
+  "supported": 7,
+  "textbook": 1,
+  "unsupported": 3,
+  "wrong": 0,
+  "unsafe": 0,
+  "unchecked": 0
+ },
+ "claims": [
+  {
+   "id": "c01",
+   "where": "summary",
+   "classification": "supported",
+   "evidence": "MedlinePlus: dutasteride used for benign prostatic hyperplasia (enlarged prostate); belongs to 5-alpha reductase inhibitors.",
+   "url": "https://medlineplus.gov/druginfo/meds/a603001.html",
+   "action": "edited",
+   "newSentence": "MedlinePlus (a US source) says dutasteride is used to treat benign prostatic hyperplasia, an enlarged prostate gland, and belongs to the 5-alpha reductase inhibitors."
+  },
+  {
+   "id": "c02",
+   "where": "summary",
+   "classification": "supported",
+   "evidence": "NHS About finasteride: for hair loss only on private prescription, not on the NHS; still licensed on NHS for enlarged prostate.",
+   "url": "https://www.nhs.uk/medicines/finasteride/about-finasteride/",
+   "action": "kept"
+  },
+  {
+   "id": "c03",
+   "where": "mechanism",
+   "classification": "unsupported",
+   "evidence": "StatPearls dutasteride page describes inhibition of types I and II only; the 'all 3 isoenzymes / 99%' wording appears on the finasteride StatPearls page and conflicts with other reviews. Dutasteride lowering serum DHT more than finasteride is supported by PMC1550785 (dual inhibitor, near-complete suppression) and PMC2809314 (head-to-head: about 94.7% vs 70.8%); PMC10080355 says finasteride is type 2 selective.",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1550785/",
+   "action": "edited",
+   "newSentence": "Reviews describe dutasteride as blocking both type 1 and type 2 of the 5-alpha reductase enzyme, whereas finasteride mainly blocks type 2, and dutasteride lowers blood DHT further than finasteride does."
+  },
+  {
+   "id": "c04",
+   "where": "mechanism",
+   "classification": "supported",
+   "evidence": "PMC5407420 systematic review: insufficient evidence that either finasteride or dutasteride offers an advantage in efficacy or safety for clinically important outcomes.",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5407420/",
+   "action": "kept"
+  },
+  {
+   "id": "c05",
+   "where": "classEffects[2]",
+   "classification": "unsupported",
+   "evidence": "Retrieved MedlinePlus text did not show the side-effect list (erection, sex drive, ejaculation, breast changes). StatPearls dutasteride gives impotence, decreased libido, difficulty ejaculating and advises reporting breast enlargement or tenderness.",
+   "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK603726/",
+   "action": "edited",
+   "newSentence": "StatPearls lists erection problems, reduced sex drive and difficulty ejaculating among the sexual side effects of dutasteride, and advises that breast enlargement or tenderness be reported."
+  },
+  {
+   "id": "c06",
+   "where": "classEffects[3]",
+   "classification": "supported",
+   "evidence": "StatPearls dutasteride: sexual adverse effects may persist despite discontinuation (another StatPearls page calls this rare).",
+   "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK603726/",
+   "action": "kept"
+  },
+  {
+   "id": "c07",
+   "where": "cautions[2]",
+   "classification": "supported",
+   "evidence": "NHS Who can and cannot take finasteride: most men 18 or over can take it; generally not recommended for women or children.",
+   "url": "https://www.nhs.uk/medicines/finasteride/who-can-and-cannot-take-finasteride/",
+   "action": "kept"
+  },
+  {
+   "id": "c08",
+   "where": "cautions[3]",
+   "classification": "supported",
+   "evidence": "NHS page lists depression or thoughts of harming themselves, severe bladder problems and liver problems among things to tell a doctor.",
+   "url": "https://www.nhs.uk/medicines/finasteride/who-can-and-cannot-take-finasteride/",
+   "action": "kept"
+  },
+  {
+   "id": "c09",
+   "where": "cautions[4]",
+   "classification": "supported",
+   "evidence": "NHS Fertility and pregnancy page: harm to a pregnant partner or baby from a man taking finasteride is very unlikely.",
+   "url": "https://www.nhs.uk/medicines/finasteride/fertility-and-pregnancy-while-taking-finasteride/",
+   "action": "kept"
+  },
+  {
+   "id": "c10",
+   "where": "cautions[5]",
+   "classification": "unsupported",
+   "evidence": "MedlinePlus excerpt confirms women who are or may become pregnant should not handle capsules, but blood-donation advice was not found on MedlinePlus (only in a trial consent form, six months after stopping). Blood-donation clause removed.",
+   "url": "https://medlineplus.gov/druginfo/meds/a603001.html",
+   "action": "edited",
+   "newSentence": "MedlinePlus (a US source) says dutasteride is for use only in men, and that women who are or may become pregnant should not handle dutasteride capsules."
+  },
+  {
+   "id": "c11",
+   "where": "cautions[6]",
+   "classification": "textbook",
+   "evidence": "NHS side-effects page: call 999 or go to A&E if thoughts of harming yourself; About page: mood changes such as depression/self-harm thoughts, speak to doctor. NHS 111 and Samaritans not in retrieved NHS finasteride text; they are the site's generic routes. Original wording (call 111 for self-harm thoughts) did not match NHS wording, so reworded.",
+   "url": "https://www.nhs.uk/medicines/finasteride/side-effects-of-finasteride/",
+   "action": "edited",
+   "newSentence": "The NHS says anyone with thoughts of harming themselves should call 999 or go to A&E; for low mood or distress, NHS 111 (mental health option) and Samaritans on 116 123, free at any time, can help."
+  }
+ ],
+ "notes": "c01 supported but edited only to mark MedlinePlus as US source (c01/c05/c10 all carry the US marker). c03: first-pass claim of 'all three forms' not on the dutasteride StatPearls page; replaced with type 1+2 wording, comparison cited to PMC1550785/PMC2809314 (PMC10080355 for finasteride type 2). Add those URLs to the ledger for c03; c05 now cites StatPearls only. c11: NHS 111 and Samaritans were not found on the NHS finasteride pages; retained as the site signposting rule (textbook), and NHS finasteride pages direct self-harm thoughts to 999/A&E. No doses or 'safe' wording remain. MHRA May 2026 Drug Safety Update on finasteride/dutasteride psychiatric and sexual effects exists on gov.uk but was not used."
+}

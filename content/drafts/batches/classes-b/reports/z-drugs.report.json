@@ -1,0 +1,99 @@
+{
+ "id": "z-drugs",
+ "searchesUsed": 13,
+ "counts": {
+  "supported": 5,
+  "textbook": 1,
+  "unsupported": 4,
+  "wrong": 0,
+  "unsafe": 0,
+  "unchecked": 0
+ },
+ "claims": [
+  {
+   "id": "c01",
+   "where": "summary",
+   "classification": "supported",
+   "evidence": "NHS: sleeping pill for short-term treatment of severe insomnia; prescription-only.",
+   "url": "https://www.nhs.uk/medicines/zopiclone/",
+   "action": "kept"
+  },
+  {
+   "id": "c02",
+   "where": "summary",
+   "classification": "unsupported",
+   "evidence": "MedlinePlus boxed warning: serious/possibly life-threatening complex sleep behaviours; driving while not fully awake; no memory afterwards. Food preparation, phone calls not seen in this pass's returned text.",
+   "url": "https://medlineplus.gov/druginfo/meds/a693025.html",
+   "action": "edited",
+   "newSentence": "MedlinePlus warns that zolpidem can cause serious, possibly life-threatening sleep behaviours, such as driving while not fully awake, without remembering it afterwards."
+  },
+  {
+   "id": "c03",
+   "where": "mechanism",
+   "classification": "supported",
+   "evidence": "StatPearls: unlike benzodiazepines, which bind all BZ subtypes non-selectively, zolpidem binds the BZ1 receptor preferentially (text is garbled in places but this point is clear).",
+   "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK442008/",
+   "action": "kept"
+  },
+  {
+   "id": "c04",
+   "where": "mechanism",
+   "classification": "supported",
+   "evidence": "NICE TA77: 'In common with the benzodiazepines, the sedative effects of the Z-drugs may persist the next day.'",
+   "url": "https://www.nice.org.uk/guidance/ta77",
+   "action": "kept"
+  },
+  {
+   "id": "c05",
+   "where": "classEffects[0]",
+   "classification": "unsupported",
+   "evidence": "NHS common side effects: bitter/metallic taste, dry mouth, sleepy or tired next day. 'Dazed' and 'less alert' not seen in returned text.",
+   "url": "https://www.nhs.uk/medicines/zopiclone/side-effects-of-zopiclone/",
+   "action": "edited",
+   "newSentence": "The NHS lists a dry mouth, a bitter or metallic taste, and feeling sleepy or tired the next day as common side effects of zopiclone."
+  },
+  {
+   "id": "c06",
+   "where": "classEffects[1]",
+   "classification": "unsupported",
+   "evidence": "NHS: serious side effects include sleepwalking and doing things such as making food or phone calls while asleep, and severe allergic reaction (anaphylaxis). 'Mental health problems' is not a listed serious effect in returned text.",
+   "url": "https://www.nhs.uk/medicines/zopiclone/side-effects-of-zopiclone/",
+   "action": "edited",
+   "newSentence": "The NHS lists sleepwalking, or doing things such as making food or phone calls while asleep, and a serious allergic reaction as possible serious side effects of zopiclone."
+  },
+  {
+   "id": "c07",
+   "where": "cautions[5]",
+   "classification": "supported",
+   "evidence": "NHS zopiclone page: not suitable for everyone; includes muscle weakness (myasthenia gravis), sleep apnoea/breathing problems, liver problems, past addiction to alcohol/drugs, especially opioids.",
+   "url": "https://www.nhs.uk/medicines/zopiclone/",
+   "action": "kept"
+  },
+  {
+   "id": "c08",
+   "where": "cautions[6]",
+   "classification": "unsupported",
+   "evidence": "NHS: dependence becomes more likely with longer use; ask doctor/pharmacist before stopping; they help come off gradually; insomnia can return for a time. Specific withdrawal symptoms (agitation, anxiety) not seen in returned text.",
+   "url": "https://www.nhs.uk/medicines/zopiclone/common-questions-about-zopiclone/",
+   "action": "edited",
+   "newSentence": "The NHS says dependence becomes more likely with longer use, and that a doctor or pharmacist can help someone come off zopiclone gradually, as sleep problems can temporarily return."
+  },
+  {
+   "id": "c09",
+   "where": "cautions[7]",
+   "classification": "supported",
+   "evidence": "NICE TA77: product labels warn of tolerance, dependence and withdrawal; guidance says risk of dependence and withdrawal should be considered; rebound insomnia described.",
+   "url": "https://www.nice.org.uk/guidance/ta77",
+   "action": "kept"
+  },
+  {
+   "id": "c10",
+   "where": "cautions[8]",
+   "classification": "textbook",
+   "evidence": "Generic UK routes to care (999, NHS 111, Samaritans 116 123); acceptable signposting.",
+   "url": "https://www.nhs.uk/medicines/zopiclone/",
+   "action": "kept"
+  }
+ ],
+ "notes": "No dose or numeric cut-off in final sentences (the 4-week figure was deliberately left out of c08). NICE TA77 is a 2004 appraisal; wording reflects it. NHS pages not read directly, evidence from search summaries."
+}
