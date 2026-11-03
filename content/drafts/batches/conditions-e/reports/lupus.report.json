@@ -1,0 +1,322 @@
+{
+ "id": "lupus",
+ "searchesUsed": 6,
+ "counts": {
+  "supported": 70,
+  "textbook": 4,
+  "unsupported": 33,
+  "wrong": 0,
+  "unsafe": 0,
+  "unchecked": 0
+ },
+ "claims": [
+  {
+   "id": "c01",
+   "classification": "supported",
+   "evidence": "NHS: long-term autoimmune; joint pain, rashes, tiredness",
+   "url": "https://www.nhs.uk/conditions/lupus/",
+   "action": "kept",
+   "sentence": "definition; overview (autoimmune, features, women, no cure/early treatment); causes x3; risk women/background; signs rash/mouth ulcers/hair loss/antibody; signs joints (NIAMS)"
+  },
+  {
+   "id": "c02",
+   "classification": "unsupported",
+   "evidence": "Age-50 onset not found in retrieved text",
+   "url": "https://www.nhs.uk/conditions/lupus/",
+   "action": "removed",
+   "sentence": "riskFactors: Developing it before the age of 50 is typical"
+  },
+  {
+   "id": "c03",
+   "classification": "textbook",
+   "evidence": "Organ inflammation in severe lupus",
+   "url": "https://www.niams.nih.gov/health-topics/lupus",
+   "action": "kept",
+   "sentence": "complications[0]"
+  },
+  {
+   "id": "c04",
+   "classification": "supported",
+   "evidence": "GOSH: can in a few cases progress to kidney failure",
+   "url": "https://www.gosh.nhs.uk/conditions-and-treatments/conditions-we-treat/lupus-nephritis/",
+   "action": "kept",
+   "sentence": "complications[1]; section 5 nephritis sentence"
+  },
+  {
+   "id": "c05",
+   "classification": "unsupported",
+   "evidence": "Retrieved: pregnancies can sometimes end in miscarriage or stillbirth; 'increased risk' wording not seen",
+   "url": "https://lupusuk.org.uk/wp-content/uploads/2024/08/LUPUS-A-Guide-to-Pregnancy-V1.pdf",
+   "action": "edited",
+   "sentence": "complications[2]; faq3 miscarriage; section 5 miscarriage",
+   "newSentence": "Pregnancies can sometimes end in miscarriage or stillbirth"
+  },
+  {
+   "id": "c06",
+   "classification": "unsupported",
+   "evidence": "'More likely when lupus active in early pregnancy' not found",
+   "url": "https://lupusuk.org.uk/wp-content/uploads/2024/08/LUPUS-A-Guide-to-Pregnancy-V1.pdf",
+   "action": "edited",
+   "sentence": "complications[3]; section 5 and faq3 pre-eclampsia/premature birth",
+   "newSentence": "Pre-eclampsia, a pregnancy complication that Lupus UK discusses for women with lupus"
+  },
+  {
+   "id": "c07",
+   "classification": "supported",
+   "evidence": "NIAMS: no single test; NHS: GP blood tests, antibody",
+   "url": "https://www.niams.nih.gov/health-topics/lupus/diagnosis-treatment-and-steps-to-take",
+   "action": "kept",
+   "sentence": "diagnosis sentences 1-2; section 2 no single test / GP blood tests / NHS antibody"
+  },
+  {
+   "id": "c08",
+   "classification": "unsupported",
+   "evidence": "Blood counts and kidney function tests not seen; NIDDK says urine and blood tests and biopsy for nephritis",
+   "url": "https://www.niddk.nih.gov/health-information/kidney-disease/lupus-nephritis",
+   "action": "edited",
+   "sentence": "diagnosis sentence 3; section 2 'blood counts...'",
+   "newSentence": "Urine and blood tests, and sometimes a kidney biopsy..."
+  },
+  {
+   "id": "c09",
+   "classification": "supported",
+   "evidence": "NHS: scans of heart, kidneys follow",
+   "url": "https://www.nhs.uk/conditions/lupus/",
+   "action": "kept",
+   "sentence": "diagnosis imaging sentence; section 2 imaging"
+  },
+  {
+   "id": "c10",
+   "classification": "unsupported",
+   "evidence": "'Tailored to symptoms; prevent, limit, stop flares' not seen; Lupus UK: aims to keep disease controlled to reduce chance of flare",
+   "url": "https://lupusuk.org.uk/what-is-lupus/",
+   "action": "edited",
+   "sentence": "treatment sentence 1; section 3 NIAMS tailored",
+   "newSentence": "Lupus UK says treatment aims to keep the disease controlled to reduce the chance of a flare."
+  },
+  {
+   "id": "c11",
+   "classification": "supported",
+   "evidence": "NHS: ibuprofen, hydroxychloroquine, steroids; immunosuppressant/biologics severe; self-care",
+   "url": "https://www.nhs.uk/conditions/lupus/",
+   "action": "kept",
+   "sentence": "treatment drug list; severe; self-care; prevention NHS self-care; section 3 options; faq1 NHS list"
+  },
+  {
+   "id": "c12",
+   "classification": "textbook",
+   "evidence": "Absence statement",
+   "url": "https://www.nhs.uk/conditions/lupus/",
+   "action": "kept",
+   "sentence": "prevention: sources did not describe prevention"
+  },
+  {
+   "id": "c13",
+   "classification": "unsupported",
+   "evidence": "Retrieved text did not state 'easier to manage when found early' for 111 Wales; NHS says symptoms can improve if treatment starts early",
+   "url": "https://www.nhs.uk/conditions/lupus/",
+   "action": "edited",
+   "sentence": "seekCare sentence 1; faq4 111 Wales sentence",
+   "newSentence": "A routine GP appointment is the usual route if lupus symptoms keep coming back, since the NHS says symptoms can improve if treatment starts early."
+  },
+  {
+   "id": "c14",
+   "classification": "unsupported",
+   "evidence": "Seizures, new weakness, vision problems not in retrieved text",
+   "url": "https://www.nhs.uk/conditions/lupus/",
+   "action": "edited",
+   "sentence": "seekCare sentence 2; faq4 last sentence",
+   "newSentence": "Severe or sudden symptoms, such as chest pain, need urgent help: NHS 111 or the GP the same day, and call 999 in an emergency."
+  },
+  {
+   "id": "c15",
+   "classification": "supported",
+   "evidence": "NHS: main symptoms, rash, other signs, Raynaud's; NIAMS butterfly rash/arthritis/organs",
+   "url": "https://www.nhs.uk/conditions/lupus/",
+   "action": "kept",
+   "sentence": "section 0 sentences on symptoms, rash, butterfly, other signs, Raynaud's, arthritis, organs"
+  },
+  {
+   "id": "c16",
+   "classification": "unsupported",
+   "evidence": "Mistaken for inflammatory arthritis for months or years: not found",
+   "url": "https://www.niams.nih.gov/health-topics/lupus",
+   "action": "removed",
+   "sentence": "section 0 last sentence"
+  },
+  {
+   "id": "c17",
+   "classification": "supported",
+   "evidence": "NHS: autoimmune, not contagious, triggers listed, more common in women/backgrounds",
+   "url": "https://www.nhs.uk/conditions/lupus/",
+   "action": "kept",
+   "sentence": "section 1 autoimmune; contagious; triggers; women/background; faq0 sentences"
+  },
+  {
+   "id": "c18",
+   "classification": "unsupported",
+   "evidence": "Unusual antibodies/inflammation wording not retrieved (replaced with Lupus UK wording)",
+   "url": "https://lupusuk.org.uk/what-is-lupus/",
+   "action": "edited",
+   "sentence": "section 1 antibody sentence",
+   "newSentence": "Lupus UK explains that the immune system becomes overactive and makes antibodies against the body's own cells..."
+  },
+  {
+   "id": "c19",
+   "classification": "unsupported",
+   "evidence": "About nine times more common in women; tends to develop before 50; not found",
+   "url": "https://www.nhs.uk/conditions/lupus/",
+   "action": "removed",
+   "sentence": "section 1 hospital rheumatology sentence"
+  },
+  {
+   "id": "c20",
+   "classification": "unsupported",
+   "evidence": "'Local NHS guideline describes as rare' not found",
+   "url": "https://www.nhs.uk/conditions/lupus/",
+   "action": "removed",
+   "sentence": "section 1 last sentence"
+  },
+  {
+   "id": "c21",
+   "classification": "supported",
+   "evidence": "NHS: symptoms overlap, diagnosis can take time",
+   "url": "https://www.nhs.uk/conditions/lupus/",
+   "action": "kept",
+   "sentence": "section 2 first sentence"
+  },
+  {
+   "id": "c22",
+   "classification": "unsupported",
+   "evidence": "Misdiagnosis claim not retrieved",
+   "url": "https://www.niams.nih.gov/health-topics/lupus",
+   "action": "removed",
+   "sentence": "section 2 misdiagnosed sentence"
+  },
+  {
+   "id": "c23",
+   "classification": "supported",
+   "evidence": "NIAMS: positive ANA does not confirm; healthy people can test positive",
+   "url": "https://www.niams.nih.gov/health-topics/lupus/diagnosis-treatment-and-steps-to-take",
+   "action": "edited",
+   "sentence": "section 2 ANA sentence ('often the first step' dropped)",
+   "newSentence": "NIAMS says a positive ANA ... is common in lupus but does not confirm it..."
+  },
+  {
+   "id": "c24",
+   "classification": "unsupported",
+   "evidence": "NIAMS lowest effective dose of corticosteroids not found",
+   "url": "https://www.niams.nih.gov/health-topics/lupus/diagnosis-treatment-and-steps-to-take",
+   "action": "removed",
+   "sentence": "section 3 corticosteroids lowest dose"
+  },
+  {
+   "id": "c25",
+   "classification": "unsupported",
+   "evidence": "Severe organ involvement often needs specialist care: not found",
+   "url": "https://www.niams.nih.gov/health-topics/lupus",
+   "action": "removed",
+   "sentence": "section 3 specialist care"
+  },
+  {
+   "id": "c26",
+   "classification": "unsupported",
+   "evidence": "Not stopping medicines: NIAMS retrieved text says take medicines as prescribed",
+   "url": "https://www.niams.nih.gov/community-outreach-initiative/understanding-joint-health/living-with-lupus",
+   "action": "edited",
+   "sentence": "section 3 medicines should not be stopped",
+   "newSentence": "NIAMS advises working with a doctor ... taking medicines as prescribed."
+  },
+  {
+   "id": "c27",
+   "classification": "supported",
+   "evidence": "NIAMS: flare warning signs, triggers, spotting signs helps; Lupus UK: flares and remission",
+   "url": "https://www.niams.nih.gov/community-outreach-initiative/understanding-joint-health/living-with-lupus",
+   "action": "edited",
+   "sentence": "section 4 flares sentences ('mild to serious, no pattern' not seen)",
+   "newSentence": "Rewritten section 4 flare sentences"
+  },
+  {
+   "id": "c28",
+   "classification": "supported",
+   "evidence": "NHS: sunscreen with hat; 111 Wales: avoid smoking",
+   "url": "https://www.nhs.uk/conditions/lupus/",
+   "action": "kept",
+   "sentence": "section 4 self-care; sun protection"
+  },
+  {
+   "id": "c29",
+   "classification": "unsupported",
+   "evidence": "Vitamin D and calcium diet advice not found",
+   "url": "https://www.nhs.uk/conditions/lupus/",
+   "action": "removed",
+   "sentence": "section 4 other advice"
+  },
+  {
+   "id": "c30",
+   "classification": "unsupported",
+   "evidence": "Regular doctor visits emphasised: not found",
+   "url": "https://www.niams.nih.gov/community-outreach-initiative/understanding-joint-health/living-with-lupus",
+   "action": "removed",
+   "sentence": "section 4"
+  },
+  {
+   "id": "c31",
+   "classification": "unsupported",
+   "evidence": "Oestrogen contraceptives avoided: not found",
+   "url": "https://lupusuk.org.uk/what-is-lupus/",
+   "action": "removed",
+   "sentence": "section 4 contraceptives"
+  },
+  {
+   "id": "c32",
+   "classification": "supported",
+   "evidence": "Lupus UK: kidney disease has no symptoms; NIDDK urine/blood tests",
+   "url": "https://lupusuk.org.uk/wp-content/uploads/2024/08/Lupus-and-the-Kidneys-V2.pdf",
+   "action": "kept",
+   "sentence": "section 5 kidney sentence"
+  },
+  {
+   "id": "c33",
+   "classification": "unsupported",
+   "evidence": "Congenital heart block / anti-Ro risk: not found",
+   "url": "https://lupusuk.org.uk/wp-content/uploads/2024/08/LUPUS-A-Guide-to-Pregnancy-V1.pdf",
+   "action": "removed",
+   "sentence": "section 5 last sentence"
+  },
+  {
+   "id": "c34",
+   "classification": "unsupported",
+   "evidence": "'Most continue mild; smaller group serious' not found",
+   "url": "https://lupusuk.org.uk/what-is-lupus/",
+   "action": "edited",
+   "sentence": "faq2",
+   "newSentence": "Lupus UK says the outlook for survival has improved in recent years, and that with early treatment lupus may settle and ultimately go into remission. The course is variable: some people have one flare, while others have periodic increased disease activity followed by remission. A rheumatologist or lupus specialist can discuss what this means for an individual."
+  },
+  {
+   "id": "c35",
+   "classification": "unsupported",
+   "evidence": "NIAMS 'treatment improved, many manage well' not found",
+   "url": "https://www.niams.nih.gov/health-topics/lupus",
+   "action": "removed",
+   "sentence": "faq1"
+  },
+  {
+   "id": "c36",
+   "classification": "supported",
+   "evidence": "Lupus UK: many successful pregnancies; planning/stable disease",
+   "url": "https://lupusuk.org.uk/wp-content/uploads/2024/08/LUPUS-A-Guide-to-Pregnancy-V1.pdf",
+   "action": "edited",
+   "sentence": "faq3 first and last sentences"
+  },
+  {
+   "id": "c37",
+   "classification": "supported",
+   "evidence": "keyFacts values (also called, type, features, diagnosis, groups, contagious, cure)",
+   "url": "https://www.nhs.uk/conditions/lupus/",
+   "action": "kept",
+   "sentence": "keyFacts 0-6"
+  }
+ ],
+ "notes": "Claims are grouped by source sentence blocks (see 'sentence'); counts are approximate sentence-level first-pass tallies. Human check: pre-eclampsia mention is thin (Lupus UK factsheet, no figure kept); NHS statements were from search summaries of nhs.uk; 111 Wales smoking advice; NIAMS biologic (anifrolumab-type) statement came from summary text; seekCare chest-pain wording is signposting."
+}

@@ -193,12 +193,12 @@
  },
  {
   "where": "complications[2]",
-  "sentence": "Temporary infertility, which can usually be reversed",
+  "sentence": "Temporary infertility",
   "basis": "excerpt",
   "urls": [
    "https://www.nhs.uk/conditions/vitamin-b12-or-folate-deficiency-anaemia/complications/"
   ],
-  "note": "NHS complications page excerpt states this"
+  "note": "Retrieved text: B12 deficiency can sometimes lead to temporary infertility; 'usually reversed' dropped"
  },
  {
   "where": "complications[3]",
@@ -229,40 +229,30 @@
  },
  {
   "where": "diagnosis",
-  "sentence": "NICE advises that vitamin B12 deficiency should not be ruled out just because anaemia or larger red blood cells are absent.",
+  "sentence": "A blood test of total or active vitamin B12 is usually the first test, and a single blood test can be enough to support the diagnosis, although some people need further tests.",
   "basis": "excerpt",
   "urls": [
    "https://www.nice.org.uk/guidance/ng239/chapter/recommendations"
   ],
-  "note": "NICE NG239 recommendations excerpt"
+  "note": "NICE: total or active B12 as initial test; single test can be enough"
  },
  {
   "where": "diagnosis",
-  "sentence": "A blood test of total or active vitamin B12 is usually the first test, and some people need further tests.",
-  "basis": "excerpt",
-  "urls": [
-   "https://www.nice.org.uk/guidance/ng239/chapter/recommendations",
-   "https://onlinelibrary.wiley.com/doi/10.1111/bjh.12959"
-  ],
-  "note": "NICE NG239 recommendations excerpt; BSH 2014 guideline title/summary; full text not seen, secondary summary only"
- },
- {
-  "where": "diagnosis",
-  "sentence": "If pernicious anaemia is suspected, an anti-intrinsic factor antibody test may be considered.",
+  "sentence": "If autoimmune gastritis is suspected, an anti-intrinsic factor antibody test may be considered.",
   "basis": "excerpt",
   "urls": [
    "https://www.nice.org.uk/guidance/ng239/chapter/recommendations"
   ],
-  "note": "NICE NG239 recommendations excerpt"
+  "note": "NICE: consider anti-intrinsic factor antibody test if autoimmune gastritis suspected"
  },
  {
   "where": "diagnosis",
-  "sentence": "Coeliac disease blood tests may be offered if the cause is still unknown.",
+  "sentence": "Coeliac disease blood tests may be offered if the cause of the deficiency is unclear.",
   "basis": "excerpt",
   "urls": [
    "https://www.nice.org.uk/guidance/ng239/chapter/recommendations"
   ],
-  "note": "NICE NG239 recommendations excerpt"
+  "note": "NICE: offer coeliac serology where cause unclear"
  },
  {
   "where": "diagnosis",
@@ -320,15 +310,6 @@
   "note": "NHS treatment page excerpt states this"
  },
  {
-  "where": "treatment",
-  "sentence": "Diet-related vitamin B12 deficiency is potentially reversible.",
-  "basis": "excerpt",
-  "urls": [
-   "https://www.nice.org.uk/guidance/ng239/chapter/recommendations"
-  ],
-  "note": "NICE NG239 recommendations excerpt"
- },
- {
   "where": "prevention",
   "sentence": "Eating foods that contain vitamin B12, such as meat, fish, eggs, dairy products and fortified foods, and folate, such as green vegetables like broccoli, Brussels sprouts and peas, can help prevent a lack of either vitamin.",
   "basis": "excerpt",
@@ -339,12 +320,12 @@
  },
  {
   "where": "prevention",
-  "sentence": "Deficiency caused by pernicious anaemia or poor absorption is not prevented by diet alone.",
+  "sentence": "The NHS notes that when vitamin B12 deficiency is not caused by diet, injections are usually needed long term.",
   "basis": "excerpt",
   "urls": [
-   "https://www.nice.org.uk/guidance/ng239/chapter/recommendations"
+   "https://www.nhs.uk/conditions/vitamin-b12-or-folate-deficiency-anaemia/treatment/"
   ],
-  "note": "NICE NG239 recommendations excerpt"
+  "note": "NHS: if not caused by lack in diet, usually injections every 2 to 3 months for life; 'not prevented by diet alone' not retrieved verbatim"
  },
  {
   "where": "seekCare",
@@ -387,7 +368,8 @@
   "sentence": "General symptoms include tiredness and low energy, shortness of breath or rapid breathing, headaches, palpitations, indigestion, loss of appetite and diarrhoea.",
   "basis": "excerpt",
   "urls": [
-   "https://www.nhs.uk/conditions/vitamin-b12-or-folate-deficiency-anaemia/symptoms/"
+   "https://www.nhs.uk/conditions/vitamin-b12-or-folate-deficiency-anaemia/symptoms/",
+   "https://www.wchc.nhs.uk/health-care/health/vitamin-b12-or-folate-deficiency-anaemia/symptoms/"
   ],
   "note": "NHS symptoms page excerpt lists this"
  },
@@ -513,57 +495,39 @@
  },
  {
   "where": "article.sections[2]",
-  "sentence": "NICE guidance on vitamin B12 deficiency says a single blood test is often enough to support the diagnosis, although some people need further tests.",
+  "sentence": "NICE guidance on vitamin B12 deficiency says a total vitamin B12 or an active vitamin B12 blood test is the usual first test, and a single blood test can be enough to support the diagnosis, although some people need further tests.",
   "basis": "excerpt",
   "urls": [
    "https://www.nice.org.uk/guidance/ng239/chapter/recommendations"
   ],
-  "note": "NICE NG239 recommendations excerpt"
+  "note": "Merged with first-test sentence"
  },
  {
   "where": "article.sections[2]",
-  "sentence": "It also says the diagnosis should not be ruled out just because anaemia or larger red blood cells are absent.",
+  "sentence": "The NHS notes that some symptoms of vitamin B12 deficiency can occur even when there is no anaemia.",
+  "basis": "excerpt",
+  "urls": [
+   "https://www.nhs.uk/conditions/vitamin-b12-or-folate-deficiency-anaemia/symptoms/"
+  ],
+  "note": "Search did not return NICE wording on absent anaemia/macrocytosis; NHS symptoms page says symptoms can occur without anaemia"
+ },
+ {
+  "where": "article.sections[2]",
+  "sentence": "If autoimmune gastritis is suspected, NICE says an anti-intrinsic factor antibody test should be considered.",
   "basis": "excerpt",
   "urls": [
    "https://www.nice.org.uk/guidance/ng239/chapter/recommendations"
   ],
-  "note": "NICE NG239 recommendations excerpt"
+  "note": "Anti-IF test supported; 'after further investigation' qualifier not retrieved, dropped (coeliac sentence rewritten)"
  },
  {
   "where": "article.sections[2]",
-  "sentence": "The first test is usually total vitamin B12 or active vitamin B12.",
+  "sentence": "The NHS says symptoms suggesting that the nervous system has been affected can lead to referral to a haematologist, a blood specialist.",
   "basis": "excerpt",
   "urls": [
-   "https://www.nice.org.uk/guidance/ng239/chapter/recommendations"
+   "https://www.nhs.uk/conditions/vitamin-b12-or-folate-deficiency-anaemia/treatment/"
   ],
-  "note": "NICE NG239 recommendations excerpt"
- },
- {
-  "where": "article.sections[2]",
-  "sentence": "If autoimmune gastritis is suspected, an anti-intrinsic factor antibody test should be considered, and coeliac disease blood tests are offered if the cause is still unknown after further investigation.",
-  "basis": "excerpt",
-  "urls": [
-   "https://www.nice.org.uk/guidance/ng239/chapter/recommendations"
-  ],
-  "note": "NICE NG239 recommendations excerpt"
- },
- {
-  "where": "article.sections[2]",
-  "sentence": "The British Society for Haematology publishes a guideline on the diagnosis and treatment of cobalamin (vitamin B12) and folate disorders.",
-  "basis": "excerpt",
-  "urls": [
-   "https://onlinelibrary.wiley.com/doi/10.1111/bjh.12959"
-  ],
-  "note": "BSH 2014 guideline title/summary; full text not seen, secondary summary only"
- },
- {
-  "where": "article.sections[2]",
-  "sentence": "The NHS says a haematologist, a blood specialist, may be involved if the GP is uncertain of the cause, if the person is pregnant, or if symptoms suggest the nervous system has been affected.",
-  "basis": "excerpt",
-  "urls": [
-   "https://www.nhs.uk/conditions/vitamin-b12-or-folate-deficiency-anaemia/diagnosis/"
-  ],
-  "note": "NHS/NHS 111 Wales page excerpt states GP diagnosis and referral points"
+  "note": "Search retrieved only neurological-symptom referral to haematologist; GP-uncertain and pregnancy triggers not returned"
  },
  {
   "where": "article.sections[3]",
@@ -622,22 +586,21 @@
  },
  {
   "where": "article.sections[3]",
-  "sentence": "Improving the diet can help treat the condition and prevent it coming back in some cases, and NICE describes deficiency caused by diet as potentially reversible.",
+  "sentence": "Improving the diet can help treat the condition and prevent it coming back in some cases.",
   "basis": "excerpt",
   "urls": [
-   "https://www.nhs.uk/conditions/vitamin-b12-or-folate-deficiency-anaemia/treatment/",
-   "https://www.nice.org.uk/guidance/ng239/chapter/recommendations"
+   "https://www.nhs.uk/conditions/vitamin-b12-or-folate-deficiency-anaemia/treatment/"
   ],
-  "note": "NHS treatment page excerpt states this; NICE NG239 recommendations excerpt"
+  "note": "NHS supports first half; NICE 'potentially reversible' not retrieved"
  },
  {
   "where": "article.sections[4]",
-  "sentence": "The NHS says complications are rare when the condition is treated, but they can occasionally develop, particularly after a long period of deficiency.",
+  "sentence": "The NHS describes complications as rare, because the condition can usually be treated easily and effectively.",
   "basis": "excerpt",
   "urls": [
    "https://www.nhs.uk/conditions/vitamin-b12-or-folate-deficiency-anaemia/complications/"
   ],
-  "note": "NHS complications page excerpt states this"
+  "note": "Retrieved: rare as condition easily treated; 'particularly after a long period' not retrieved"
  },
  {
   "where": "article.sections[4]",
@@ -659,12 +622,12 @@
  },
  {
   "where": "article.sections[4]",
-  "sentence": "Both deficiencies can cause temporary infertility, which can usually be reversed.",
+  "sentence": "Vitamin B12 deficiency can sometimes cause temporary infertility.",
   "basis": "excerpt",
   "urls": [
    "https://www.nhs.uk/conditions/vitamin-b12-or-folate-deficiency-anaemia/complications/"
   ],
-  "note": "NHS complications page excerpt states this"
+  "note": "Retrieved text names vitamin B12 deficiency; 'both' and 'usually reversed' not confirmed"
  },
  {
   "where": "article.sections[4]",
@@ -683,15 +646,6 @@
    "https://www.nhs.uk/conditions/vitamin-b12-or-folate-deficiency-anaemia/complications/"
   ],
   "note": "NHS complications page excerpt states this"
- },
- {
-  "where": "article.sections[4]",
-  "sentence": "NICE also covers monitoring for gastric cancer in people with autoimmune gastritis.",
-  "basis": "excerpt",
-  "urls": [
-   "https://www.nice.org.uk/guidance/ng239/chapter/recommendations"
-  ],
-  "note": "NICE NG239 recommendations excerpt"
  },
  {
   "where": "article.sections[5]",
@@ -777,10 +731,12 @@
  },
  {
   "where": "article.faqs[1]",
-  "sentence": "Treating a vitamin B12 deficiency with folic acid alone can leave nerve problems untreated, so the two vitamins are looked at together.",
-  "basis": "textbook",
-  "urls": [],
-  "note": "textbook"
+  "sentence": "The two vitamins are therefore considered together.",
+  "basis": "excerpt",
+  "urls": [
+   "https://www.nhs.uk/conditions/vitamin-b12-or-folate-deficiency-anaemia/treatment/"
+  ],
+  "note": "Inference beyond source: NHS says folic acid can mask B12 deficiency, so B12 is checked first; reworded"
  },
  {
   "where": "article.faqs[2]",
@@ -793,13 +749,13 @@
  },
  {
   "where": "article.faqs[2]",
-  "sentence": "Some of the nerve damage can sometimes be irreversible, which is why a GP may refer to a haematologist when the nervous system seems affected.",
+  "sentence": "Some of the nerve damage can sometimes be irreversible. A GP may refer to a haematologist when symptoms suggest the nervous system has been affected.",
   "basis": "excerpt",
   "urls": [
    "https://www.nhs.uk/conditions/vitamin-b12-or-folate-deficiency-anaemia/complications/",
-   "https://www.nhs.uk/conditions/vitamin-b12-or-folate-deficiency-anaemia/diagnosis/"
+   "https://www.nhs.uk/conditions/vitamin-b12-or-folate-deficiency-anaemia/treatment/"
   ],
-  "note": "NHS complications page excerpt states this; NHS/NHS 111 Wales page excerpt states GP diagnosis and referral points"
+  "note": "Causal 'which is why' not in source; separated into two sourced statements"
  },
  {
   "where": "article.faqs[3]",
@@ -827,24 +783,6 @@
    "https://www.nhs.uk/conditions/vitamin-b12-or-folate-deficiency-anaemia/treatment/"
   ],
   "note": "NHS treatment page excerpt states this"
- },
- {
-  "where": "article.faqs[4]",
-  "sentence": "The NHS says a GP may refer to a haematologist, a blood specialist, if the cause is uncertain, if the person is pregnant, or if symptoms suggest the nervous system has been affected.",
-  "basis": "excerpt",
-  "urls": [
-   "https://www.nhs.uk/conditions/vitamin-b12-or-folate-deficiency-anaemia/diagnosis/"
-  ],
-  "note": "NHS/NHS 111 Wales page excerpt states GP diagnosis and referral points"
- },
- {
-  "where": "article.faqs[4]",
-  "sentence": "A gastroenterologist, a digestive system specialist, may be involved if the problem seems to be absorption of the vitamin.",
-  "basis": "excerpt",
-  "urls": [
-   "https://www.nhs.uk/conditions/vitamin-b12-or-folate-deficiency-anaemia/diagnosis/"
-  ],
-  "note": "NHS/NHS 111 Wales page excerpt states GP diagnosis and referral points"
  },
  {
   "where": "article.keyFacts[0]",
@@ -899,5 +837,111 @@
    "https://www.nhs.uk/conditions/vitamin-b12-or-folate-deficiency-anaemia/symptoms/"
   ],
   "note": "NHS symptoms page excerpt lists this"
+ },
+ {
+  "where": "article.sections[2]",
+  "sentence": "Where problems absorbing the vitamin are confirmed or suspected, NICE says treatment with injections can start without waiting for that result.",
+  "basis": "excerpt",
+  "urls": [
+   "https://www.nice.org.uk/guidance/ng239/chapter/recommendations"
+  ],
+  "note": "NICE: start IM replacement without waiting for antibody result where malabsorption confirmed or suspected"
+ },
+ {
+  "where": "article.sections[2]",
+  "sentence": "If autoimmune gastritis is still suspected after a negative result, NICE recommends further investigations, such as an anti-gastric parietal cell antibody test.",
+  "basis": "excerpt",
+  "urls": [
+   "https://www.nice.org.uk/guidance/ng239/chapter/recommendations"
+  ],
+  "note": "NICE: further investigations such as anti-gastric parietal cell antibody test"
+ },
+ {
+  "where": "article.sections[2]",
+  "sentence": "NICE also says to offer coeliac disease blood tests where the cause of the deficiency is unclear.",
+  "basis": "excerpt",
+  "urls": [
+   "https://www.nice.org.uk/guidance/ng239/chapter/recommendations"
+  ],
+  "note": "NICE: offer coeliac serology where cause unclear"
+ },
+ {
+  "where": "article.sections[3]",
+  "sentence": "The NHS adds that when the deficiency is not caused by diet, injections are usually needed long term.",
+  "basis": "excerpt",
+  "urls": [
+   "https://www.nhs.uk/conditions/vitamin-b12-or-folate-deficiency-anaemia/treatment/"
+  ],
+  "note": "NHS: if not caused by diet, hydroxocobalamin injections every 2 to 3 months for life"
+ },
+ {
+  "where": "article.sections[3]",
+  "sentence": "The NHS says folic acid tablets usually need to be taken for about 4 months.",
+  "basis": "excerpt",
+  "urls": [
+   "https://www.nhs.uk/conditions/vitamin-b12-or-folate-deficiency-anaemia/treatment/"
+  ],
+  "note": "NHS: folic acid tablets usually for about 4 months"
+ },
+ {
+  "where": "article.sections[4]",
+  "sentence": "The NHS notes that anaemia of any cause can lead to heart and lung complications because the heart struggles to pump oxygen to the vital organs.",
+  "basis": "excerpt",
+  "urls": [
+   "https://www.nhs.uk/conditions/vitamin-b12-or-folate-deficiency-anaemia/complications/"
+  ],
+  "note": "NHS complications page: all anaemia types can lead to heart and lung complications"
+ },
+ {
+  "where": "article.sections[5]",
+  "sentence": "The NHS says these anaemias usually develop gradually but can get worse if they are not treated, and that some symptoms of vitamin B12 deficiency can occur even when there is no anaemia.",
+  "basis": "excerpt",
+  "urls": [
+   "https://www.nhs.uk/conditions/vitamin-b12-or-folate-deficiency-anaemia/symptoms/"
+  ],
+  "note": "NHS symptoms page"
+ },
+ {
+  "where": "article.sections[5]",
+  "sentence": "A GP can often diagnose the condition from the symptoms and the results of blood tests.",
+  "basis": "excerpt",
+  "urls": [
+   "https://www.nhs.uk/conditions/vitamin-b12-or-folate-deficiency-anaemia/diagnosis/"
+  ],
+  "note": "NHS: GP diagnosis from symptoms and blood tests (summaries); textbook-level"
+ },
+ {
+  "where": "article.faqs[1]",
+  "sentence": "The two vitamins are therefore considered together.",
+  "basis": "excerpt",
+  "urls": [
+   "https://www.nhs.uk/conditions/vitamin-b12-or-folate-deficiency-anaemia/treatment/"
+  ],
+  "note": "Follows from NHS B12-before-folic-acid check"
+ },
+ {
+  "where": "article.faqs[4]",
+  "sentence": "Why does folate matter in pregnancy? The NHS says folate deficiency can be linked to pregnancy, because the body needs more of the vitamin.",
+  "basis": "excerpt",
+  "urls": [
+   "https://www.nhs.uk/conditions/vitamin-b12-or-folate-deficiency-anaemia/causes/"
+  ],
+  "note": "NHS causes/guideline: folate needs rise in pregnancy"
+ },
+ {
+  "where": "article.faqs[4]",
+  "sentence": "Low folate in pregnancy is linked with a higher risk of neural tube defects such as spina bifida, and may raise the risk of premature birth or low birth weight.",
+  "basis": "excerpt",
+  "urls": [
+   "https://www.nhs.uk/conditions/vitamin-b12-or-folate-deficiency-anaemia/complications/"
+  ],
+  "note": "NHS complications page"
+ },
+ {
+  "where": "article.faqs[4]",
+  "sentence": "A midwife or GP is the usual route for questions about folate in pregnancy.",
+  "basis": "textbook",
+  "urls": [],
+  "note": "signposting, textbook"
  }
 ]
