@@ -1,0 +1,848 @@
+{
+ "id": "brain-tumour",
+ "searchesUsed": 14,
+ "counts": {
+  "supported": 51,
+  "textbook": 2,
+  "unsupported": 38,
+  "wrong": 3,
+  "unsafe": 0,
+  "unchecked": 0
+ },
+ "claims": [
+  {
+   "id": "c01",
+   "classification": "textbook",
+   "evidence": "Textbook gloss on NHS benign/malignant types.",
+   "url": "https://www.nhs.uk/conditions/brain-tumours/",
+   "action": "kept",
+   "sentence": "A brain tumour is a growth of abnormal cells in or around the brain, and it may be non-cancerous or cancerous."
+  },
+  {
+   "id": "c02",
+   "classification": "supported",
+   "evidence": "NHS.",
+   "url": "https://www.nhs.uk/conditions/brain-tumours/",
+   "action": "kept",
+   "sentence": "Brain tumours can be non-cancerous (benign) or cancerous (malignant)."
+  },
+  {
+   "id": "c03",
+   "classification": "supported",
+   "evidence": "Search 3: Macmillan primary vs secondary.",
+   "url": "https://www.macmillan.org.uk/cancer-information-and-support/brain-tumour/types-of-brain-tumour",
+   "action": "kept",
+   "sentence": "Some start in the brain, while others start elsewhere in the body and spread to it."
+  },
+  {
+   "id": "c04",
+   "classification": "supported",
+   "evidence": "Search 1: symptoms depend on location; 'how big' not retrieved.",
+   "url": "https://www.nhs.uk/conditions/brain-tumours/",
+   "action": "edited",
+   "newSentence": "The symptoms depend mainly on where the tumour is.",
+   "sentence": "The symptoms depend mainly on where the tumour is and how big it is."
+  },
+  {
+   "id": "c05",
+   "classification": "supported",
+   "evidence": "Search 10: Macmillan factors and options.",
+   "url": "https://www.macmillan.org.uk/cancer-information-and-support/brain-tumour/brain-tumour-treatment",
+   "action": "edited",
+   "newSentence": "Treatment depends on the type, size, position and grade of the tumour and may involve watchful monitoring, surgery, radiotherapy or chemotherapy.",
+   "sentence": "Treatment depends on the type, size, position and grade of the tumour and may involve surgery, radiotherapy, chemotherapy or careful monitoring."
+  },
+  {
+   "id": "c06",
+   "classification": "unsupported",
+   "evidence": "No retrieved NHS/Macmillan/CRUK text states this; MedlinePlus not retrieved.",
+   "url": "",
+   "action": "removed",
+   "newSentence": "",
+   "sentence": "The outlook varies a great deal from one type to another."
+  },
+  {
+   "id": "c07",
+   "classification": "supported",
+   "evidence": "Search 1: age a risk factor (CRUK also); 'children' clause not retrieved.",
+   "url": "https://www.cancerresearchuk.org/about-cancer/brain-tumours/risks-causes",
+   "action": "edited",
+   "newSentence": "Cancer Research UK lists age as a risk factor",
+   "sentence": "The NHS says the risk of a brain tumour rises with age, although some types are more common in children"
+  },
+  {
+   "id": "c08",
+   "classification": "unsupported",
+   "evidence": "NHS 'very small number' wording not retrieved; CRUK says <1% of primary brain tumours.",
+   "url": "https://www.cancerresearchuk.org/about-cancer/brain-tumours/risks-causes",
+   "action": "edited",
+   "newSentence": "Cancer Research UK says ionising radiation causes less than 1% of primary brain tumours diagnosed in the UK",
+   "sentence": "Exposure to radiation is a known risk factor, but the NHS says it accounts for only a very small number of tumours"
+  },
+  {
+   "id": "c09",
+   "classification": "supported",
+   "evidence": "Search 7: CRUK links NF1, NF2 and TSC to certain brain tumours.",
+   "url": "https://www.cancerresearchuk.org/about-cancer/brain-tumours/risks-causes",
+   "action": "edited",
+   "newSentence": "Cancer Research UK links neurofibromatosis types 1 and 2 and tuberous sclerosis to certain brain tumours",
+   "sentence": "Inherited conditions such as neurofibromatosis types 1 and 2 are linked to a higher risk"
+  },
+  {
+   "id": "c10",
+   "classification": "supported",
+   "evidence": "CRUK: age a risk factor.",
+   "url": "https://www.cancerresearchuk.org/about-cancer/brain-tumours/risks-causes",
+   "action": "kept",
+   "sentence": "Older age"
+  },
+  {
+   "id": "c11",
+   "classification": "supported",
+   "evidence": "NCI/CRUK radiation and earlier radiotherapy.",
+   "url": "https://www.cancerresearchuk.org/about-cancer/brain-tumours/risks-causes",
+   "action": "edited",
+   "newSentence": "Radiation to the head, including earlier radiotherapy",
+   "sentence": "Radiation exposure, including earlier radiotherapy to the head"
+  },
+  {
+   "id": "c12",
+   "classification": "supported",
+   "evidence": "CRUK NF1/NF2 (plus TSC).",
+   "url": "https://www.cancerresearchuk.org/about-cancer/brain-tumours/risks-causes",
+   "action": "edited",
+   "newSentence": "Neurofibromatosis type 1 or type 2, or tuberous sclerosis",
+   "sentence": "Neurofibromatosis type 1 or type 2"
+  },
+  {
+   "id": "c13",
+   "classification": "supported",
+   "evidence": "Search 1.",
+   "url": "https://www.nhs.uk/conditions/brain-tumours/",
+   "action": "kept",
+   "sentence": "Weakness on one side of the body"
+  },
+  {
+   "id": "c14",
+   "classification": "supported",
+   "evidence": "Search 1.",
+   "url": "https://www.nhs.uk/conditions/brain-tumours/",
+   "action": "kept",
+   "sentence": "Problems with speech or vision"
+  },
+  {
+   "id": "c15",
+   "classification": "supported",
+   "evidence": "Search 1: memory and personality; mood not clearly retrieved.",
+   "url": "https://www.nhs.uk/conditions/brain-tumours/",
+   "action": "edited",
+   "newSentence": "Changes in memory or personality",
+   "sentence": "Changes in memory, mood or personality"
+  },
+  {
+   "id": "c16",
+   "classification": "supported",
+   "evidence": "NHS and CRUK: seizures common.",
+   "url": "https://www.nhs.uk/conditions/brain-tumours/",
+   "action": "kept",
+   "sentence": "Seizures (fits)"
+  },
+  {
+   "id": "c17",
+   "classification": "unsupported",
+   "evidence": "Raised pressure not stated in retrieved text.",
+   "url": "",
+   "action": "removed",
+   "newSentence": "",
+   "sentence": "Raised pressure inside the skull, causing headaches, nausea and vomiting"
+  },
+  {
+   "id": "c18",
+   "classification": "unsupported",
+   "evidence": "Not retrieved for adults.",
+   "url": "",
+   "action": "removed",
+   "newSentence": "",
+   "sentence": "Problems with balance, movement, speech or vision, depending on the area affected"
+  },
+  {
+   "id": "c19",
+   "classification": "unsupported",
+   "evidence": "Neurological examination not found; biopsy identifying type is Macmillan.",
+   "url": "https://www.macmillan.org.uk/cancer-information-and-support/brain-tumour",
+   "action": "edited",
+   "newSentence": "A biopsy, in which a surgeon removes a small piece of tumour, is used to identify the type of tumour.",
+   "sentence": "Diagnosis usually involves a neurological examination, a brain scan and often a biopsy to confirm the type of tumour."
+  },
+  {
+   "id": "c20",
+   "classification": "unsupported",
+   "evidence": "Macmillan: CT usually first, MRI generally also needed; NHS 'main test' wording not retrieved.",
+   "url": "https://www.macmillan.org.uk/cancer-information-and-support/brain-tumour",
+   "action": "edited",
+   "newSentence": "Macmillan says a CT scan is usually the first scan, and that an MRI scan is generally also needed because it gives much more detail about the tumour.",
+   "sentence": "The NHS says a brain scan, usually an MRI, is the main test."
+  },
+  {
+   "id": "c21",
+   "classification": "supported",
+   "evidence": "Search 12: CRUK grades.",
+   "url": "https://www.cancerresearchuk.org/about-cancer/brain-tumours/grades",
+   "action": "edited",
+   "newSentence": "Brain tumours are graded from 1 to 4 ... according to Cancer Research UK.",
+   "sentence": "Brain tumours are given a grade from 1 to 4, with grades 1 and 2 generally low grade and grades 3 and 4 high grade."
+  },
+  {
+   "id": "c22",
+   "classification": "supported",
+   "evidence": "Search 10.",
+   "url": "https://www.macmillan.org.uk/cancer-information-and-support/brain-tumour/brain-tumour-treatment",
+   "action": "edited",
+   "newSentence": "Treatment depends on the size and position of the tumour, its type and grade, any biomarkers and the symptoms it causes.",
+   "sentence": "Treatment depends on the type, size, position and grade of the tumour, any biomarkers and the symptoms it causes."
+  },
+  {
+   "id": "c23",
+   "classification": "unsupported",
+   "evidence": "Macmillan lists watch and wait, surgery, radiotherapy, chemotherapy; 'targeted therapy' and 'many people have a combination' not confirmed.",
+   "url": "https://www.macmillan.org.uk/cancer-information-and-support/brain-tumour/brain-tumour-treatment",
+   "action": "edited",
+   "newSentence": "Options include watch and wait, surgery, radiotherapy and chemotherapy.",
+   "sentence": "Options include watchful waiting, surgery, radiotherapy, chemotherapy and targeted therapy, and many people have a combination."
+  },
+  {
+   "id": "c24",
+   "classification": "supported",
+   "evidence": "Search 14 NHS/CRUK.",
+   "url": "https://www.cancerresearchuk.org/about-cancer/brain-tumours/treatment/controlling-symptoms",
+   "action": "edited",
+   "newSentence": "Medicines can help with symptoms, such as steroids for swelling around the tumour and anti-seizure medicines for fits.",
+   "sentence": "Medicines can help with symptoms, such as steroids for swelling and anti-seizure medicines for fits."
+  },
+  {
+   "id": "c25",
+   "classification": "unsupported",
+   "evidence": "NHS wording not retrieved; CRUK <1%.",
+   "url": "https://www.cancerresearchuk.org/about-cancer/brain-tumours/risks-causes",
+   "action": "edited",
+   "newSentence": "Cancer Research UK says ionising radiation causes less than 1% of primary brain tumours diagnosed in the UK.",
+   "sentence": "Radiation exposure is a known risk factor, but the NHS says it accounts for only a very small number of brain tumours."
+  },
+  {
+   "id": "c26",
+   "classification": "unsupported",
+   "evidence": "Absence-of-evidence sentence; no official text says this.",
+   "url": "https://braintumourresearch.org/pages/information-brain-tumour-causes",
+   "action": "edited",
+   "newSentence": "Brain Tumour Research says no single definitive cause has been identified for primary brain tumours.",
+   "sentence": "The sources retrieved do not describe a reliable way to prevent most brain tumours."
+  },
+  {
+   "id": "c27",
+   "classification": "supported",
+   "evidence": "Search 1/6.",
+   "url": "https://www.nhs.uk/conditions/brain-tumours/",
+   "action": "edited",
+   "newSentence": "The NHS advises seeing a GP about symptoms, particularly a headache that feels different from the usual kind or is getting worse.",
+   "sentence": "The NHS advises seeing a GP for a headache that feels different from the usual kind, or for headaches that are getting worse."
+  },
+  {
+   "id": "c28",
+   "classification": "unsupported",
+   "evidence": "Reworded to retrieved NHS routes: urgent GP or NHS 111 for persistent/worsening or night-waking headaches.",
+   "url": "https://www.nhs.uk/conditions/malignant-brain-tumour/symptoms/",
+   "action": "edited",
+   "newSentence": "Persistent or worsening headaches, or headaches that wake a person at night, call for an urgent GP appointment or NHS 111 rather than 999.",
+   "sentence": "Persistent or worsening symptoms such as seizures, vision changes or personality changes also need a medical assessment."
+  },
+  {
+   "id": "c29",
+   "classification": "supported",
+   "evidence": "Search 6: 999 for first seizure, seizure longer than usual, sudden extremely painful headache. A&E clause not confirmed so reworded.",
+   "url": "https://www.nhs.uk/conditions/malignant-brain-tumour/symptoms/",
+   "action": "edited",
+   "newSentence": "The NHS says to call 999 for a first-time seizure, a seizure lasting longer than usual for that person, or a headache that comes on suddenly and is extremely painful.",
+   "sentence": "The NHS says to call 999 or go to A&E for a first-time fit, a fit lasting longer than usual for that person, or a sudden, extremely painful headache."
+  },
+  {
+   "id": "c30",
+   "classification": "textbook",
+   "evidence": "Textbook gloss.",
+   "url": "https://www.nhs.uk/conditions/brain-tumours/",
+   "action": "kept",
+   "sentence": "A brain tumour is a growth of abnormal cells in or around the brain."
+  },
+  {
+   "id": "c31",
+   "classification": "unsupported",
+   "evidence": "Not stated in retrieved NHS text for all benign tumours.",
+   "url": "",
+   "action": "edited",
+   "newSentence": "Brain tumours can be non-cancerous (benign) or cancerous (malignant).",
+   "sentence": "Brain tumours can be non-cancerous (benign) or cancerous (malignant), and the NHS notes that non-cancerous tumours tend to grow slowly."
+  },
+  {
+   "id": "c32",
+   "classification": "supported",
+   "evidence": "Search 3: Macmillan separates primary brain tumours from secondary ones that start elsewhere and spread.",
+   "url": "https://www.macmillan.org.uk/cancer-information-and-support/brain-tumour/types-of-brain-tumour",
+   "action": "edited",
+   "newSentence": "Macmillan describes tumours that start in the brain as primary brain tumours, and those that start elsewhere in the body and spread to the brain as secondary brain tumours.",
+   "sentence": "Tumours that start in the brain are called primary tumours, while others start elsewhere in the body and spread to the brain."
+  },
+  {
+   "id": "c33",
+   "classification": "unsupported",
+   "evidence": "Meningioma origin not stated in retrieved text.",
+   "url": "",
+   "action": "removed",
+   "newSentence": "",
+   "sentence": "Common primary types include gliomas, which develop from glial cells that support nerve cells, and meningiomas, which arise from the membranes around the brain and spinal cord."
+  },
+  {
+   "id": "c34",
+   "classification": "wrong",
+   "evidence": "Macmillan says glioblastoma is a type of grade 4 astrocytoma; since the 2021 WHO update an IDH-mutant grade 4 astrocytoma also exists, and 'most aggressive' is not stated.",
+   "url": "https://www.macmillan.org.uk/cancer-information-and-support/brain-tumour/astrocytoma",
+   "action": "edited",
+   "newSentence": "Macmillan describes glioblastoma as a type of grade 4 astrocytoma.",
+   "sentence": "Glioblastoma is the highest-grade type of astrocytoma, which is a kind of glioma, and is among the most aggressive primary brain tumours."
+  },
+  {
+   "id": "c35",
+   "classification": "unsupported",
+   "evidence": "NCI text retrieved says grade 1 is most common and slow growing; 'three WHO grades' not stated in retrieved text.",
+   "url": "https://www.cancer.gov/rare-brain-spine-tumor/tumors/meningioma",
+   "action": "edited",
+   "newSentence": "The National Cancer Institute describes grade 1 meningiomas as the most common meningiomas, made up of slow-growing cells.",
+   "sentence": "Meningiomas are grouped into three WHO grades, and grade 1 is the most common and typically slow growing."
+  },
+  {
+   "id": "c36",
+   "classification": "supported",
+   "evidence": "Search 1/8: symptoms depend on location; size not stated.",
+   "url": "https://www.nhs.uk/conditions/brain-tumours/",
+   "action": "edited",
+   "newSentence": "Symptoms depend on which part of the brain is affected.",
+   "sentence": "Symptoms depend on which part of the brain is affected and how big the tumour is."
+  },
+  {
+   "id": "c37",
+   "classification": "supported",
+   "evidence": "NHS and CRUK: seizures common.",
+   "url": "https://www.nhs.uk/conditions/brain-tumours/",
+   "action": "kept",
+   "sentence": "The NHS lists headaches and seizures (fits) as common symptoms, and says they should be checked even though they may not mean a tumour."
+  },
+  {
+   "id": "c38",
+   "classification": "supported",
+   "evidence": "Search 8: CRUK notes tumour unlikely if headache only symptom.",
+   "url": "https://www.cancerresearchuk.org/about-cancer/brain-tumours/symptoms",
+   "action": "edited",
+   "newSentence": "Cancer Research UK says a brain tumour is unlikely if headache is the only symptom.",
+   "sentence": "Cancer Research UK says a headache on its own is unlikely to be a brain tumour."
+  },
+  {
+   "id": "c39",
+   "classification": "unsupported",
+   "evidence": "Only night-waking headaches clearly retrieved; eye problems / worse over weeks not.",
+   "url": "https://www.cancerresearchuk.org/about-cancer/brain-tumours/symptoms",
+   "action": "edited",
+   "newSentence": "Headaches that wake a person at night are among those that UK sources advise having checked by a doctor.",
+   "sentence": "It describes headaches with sickness, headaches that wake a person at night or come with eye problems, and headaches that get steadily worse over weeks as ones to have checked."
+  },
+  {
+   "id": "c40",
+   "classification": "supported",
+   "evidence": "Search 1.",
+   "url": "https://www.nhs.uk/conditions/brain-tumours/",
+   "action": "kept",
+   "sentence": "Other possible symptoms include weakness on one side of the body, memory or personality changes, and problems with speech or vision."
+  },
+  {
+   "id": "c41",
+   "classification": "unsupported",
+   "evidence": "Raised pressure, tiredness, mood and balance not retrieved; nausea/vomiting usually alongside other symptoms.",
+   "url": "https://www.cancerresearchuk.org/about-cancer/brain-tumours/symptoms",
+   "action": "edited",
+   "newSentence": "Nausea and vomiting can occur too, usually alongside other symptoms.",
+   "sentence": "Raised pressure inside the skull can cause nausea and vomiting, and symptoms can also include tiredness, mood changes and problems with movement or balance."
+  },
+  {
+   "id": "c42",
+   "classification": "supported",
+   "evidence": "Search 1.",
+   "url": "https://www.nhs.uk/conditions/brain-tumours/",
+   "action": "edited",
+   "newSentence": "Symptoms may come on suddenly or develop slowly over months or even years.",
+   "sentence": "Symptoms may come on suddenly or develop slowly over months or years, according to the NHS."
+  },
+  {
+   "id": "c43",
+   "classification": "unsupported",
+   "evidence": "Absence-of-evidence sentence; reworded to BTR statement.",
+   "url": "https://braintumourresearch.org/pages/information-brain-tumour-causes",
+   "action": "edited",
+   "newSentence": "Brain Tumour Research says no single definitive cause has been identified for primary brain tumours, though several risk factors are known.",
+   "sentence": "For most brain tumours the sources retrieved do not point to a clear single cause."
+  },
+  {
+   "id": "c44",
+   "classification": "supported",
+   "evidence": "Search 1/7: age a risk factor; 'children' clause not retrieved.",
+   "url": "https://www.cancerresearchuk.org/about-cancer/brain-tumours/risks-causes",
+   "action": "edited",
+   "newSentence": "Cancer Research UK names age as a risk factor.",
+   "sentence": "The NHS says the risk rises with age, although some types are more common in children."
+  },
+  {
+   "id": "c45",
+   "classification": "unsupported",
+   "evidence": "NHS wording not retrieved; CRUK <1%.",
+   "url": "https://www.cancerresearchuk.org/about-cancer/brain-tumours/risks-causes",
+   "action": "edited",
+   "newSentence": "It says ionising radiation causes less than 1% of primary brain tumours diagnosed in the UK, and that radiotherapy for a primary brain tumour was linked to a higher risk of a second brain tumour in a US study.",
+   "sentence": "Radiation is a known risk factor, but the NHS says it accounts for only a very small number of tumours."
+  },
+  {
+   "id": "c46",
+   "classification": "unsupported",
+   "evidence": "Childhood radiation and meningioma: NCI says radiation especially in childhood increases meningioma risk; the CRUK link to second tumour: a US study per CRUK.",
+   "url": "https://www.cancer.gov/rare-brain-spine-tumor/tumors/meningioma",
+   "action": "edited",
+   "newSentence": "The National Cancer Institute says radiation, especially in childhood, can increase the risk of meningioma.",
+   "sentence": "Research summarised by Cancer Research UK links radiation in childhood most strongly to meningioma, and radiotherapy for an earlier brain tumour to a higher chance of a second one."
+  },
+  {
+   "id": "c47",
+   "classification": "supported",
+   "evidence": "Search 7: CRUK links NF1, NF2 and TSC to certain brain tumours.",
+   "url": "https://www.cancerresearchuk.org/about-cancer/brain-tumours/risks-causes",
+   "action": "edited",
+   "newSentence": "Cancer Research UK links neurofibromatosis types 1 and 2 and tuberous sclerosis to certain brain tumours",
+   "sentence": "The National Cancer Institute lists inherited conditions such as neurofibromatosis types 1 and 2 as risk factors."
+  },
+  {
+   "id": "c48",
+   "classification": "unsupported",
+   "evidence": "'Hard to predict' not in retrieved text.",
+   "url": "",
+   "action": "removed",
+   "newSentence": "",
+   "sentence": "Even in these conditions it remains hard to predict which people will develop a tumour."
+  },
+  {
+   "id": "c49",
+   "classification": "unsupported",
+   "evidence": "NCI: grade 1 more common in females, grades 2-3 in males; 'age' not retrieved.",
+   "url": "https://www.cancer.gov/rare-brain-spine-tumor/tumors/meningioma",
+   "action": "edited",
+   "newSentence": "It notes that grade 1 meningiomas are more common in females, while grades 2 and 3 occur more often in males.",
+   "sentence": "Age and sex also appear to influence the risk of meningioma, with grade 1 tumours more common in women and higher grades more common in men."
+  },
+  {
+   "id": "c50",
+   "classification": "supported",
+   "evidence": "NHS: see a GP; referral generic.",
+   "url": "https://www.nhs.uk/conditions/brain-tumours/",
+   "action": "edited",
+   "newSentence": "People with symptoms are usually seen first by a GP, who may refer them for further assessment.",
+   "sentence": "A GP asks about symptoms and may refer the person to a specialist."
+  },
+  {
+   "id": "c51",
+   "classification": "unsupported",
+   "evidence": "Adult/under-25/nation thresholds not retrieved.",
+   "url": "",
+   "action": "removed",
+   "newSentence": "",
+   "sentence": "Cancer Research UK sets out when urgent referral is advised, and the thresholds differ for adults, for people under 25 and between the nations of the UK."
+  },
+  {
+   "id": "c52",
+   "classification": "wrong",
+   "evidence": "Number verified in NICE NG12 1.9.2 (children and young people, newly abnormal cerebellar or central neurological function, 'consider'); the first-pass sentence misattributed it to CRUK and overstated it as 'should consider ... concern about brain or nervous system function'.",
+   "url": "https://www.nice.org.uk/guidance/ng12/chapter/recommendations-organised-by-site-of-cancer",
+   "action": "edited",
+   "newSentence": "NICE guidance on suspected cancer says a very urgent referral, for an appointment within 48 hours, can be considered for children and young people with suspected brain or central nervous system cancer and newly abnormal cerebellar or other central neurological function.",
+   "sentence": "For children, it says the GP should consider referring to a specialist within 48 hours if there is concern about brain or nervous system function."
+  },
+  {
+   "id": "c53",
+   "classification": "unsupported",
+   "evidence": "Neurological examination not found; reworded.",
+   "url": "https://www.macmillan.org.uk/cancer-information-and-support/brain-tumour",
+   "action": "edited",
+   "newSentence": "A biopsy, in which a surgeon removes a small piece of the tumour, is used to identify the type.",
+   "sentence": "Diagnosis usually includes a neurological examination, a brain scan and often a biopsy, which is a sample of tumour tissue, to confirm the type."
+  },
+  {
+   "id": "c54",
+   "classification": "unsupported",
+   "evidence": "Macmillan: CT usually first, MRI generally also needed; NHS 'main test' wording not retrieved.",
+   "url": "https://www.macmillan.org.uk/cancer-information-and-support/brain-tumour",
+   "action": "edited",
+   "newSentence": "Macmillan says a CT scan is usually the first scan, and that an MRI scan is generally also needed because it gives much more detail about the tumour.",
+   "sentence": "The NHS says a brain scan, usually an MRI, is the main test."
+  },
+  {
+   "id": "c55",
+   "classification": "supported",
+   "evidence": "Search 12: CRUK grades.",
+   "url": "https://www.cancerresearchuk.org/about-cancer/brain-tumours/grades",
+   "action": "edited",
+   "newSentence": "Brain tumours are graded from 1 to 4 ... according to Cancer Research UK.",
+   "sentence": "Tumours are then given a grade from 1 to 4, and grades 1 and 2 are generally called low grade while grades 3 and 4 are called high grade."
+  },
+  {
+   "id": "c56",
+   "classification": "supported",
+   "evidence": "Search 10.",
+   "url": "https://www.macmillan.org.uk/cancer-information-and-support/brain-tumour/brain-tumour-treatment",
+   "action": "edited",
+   "newSentence": "Macmillan says treatment depends on the size and position of the tumour, its type and grade, any biomarkers and the symptoms.",
+   "sentence": "Macmillan says treatment depends on the type of tumour, its size, position and grade, any biomarkers and the symptoms."
+  },
+  {
+   "id": "c57",
+   "classification": "unsupported",
+   "evidence": "Macmillan lists watch and wait, surgery, radiotherapy, chemotherapy; 'targeted therapy' and 'many people have a combination' not confirmed.",
+   "url": "https://www.macmillan.org.uk/cancer-information-and-support/brain-tumour/brain-tumour-treatment",
+   "action": "edited",
+   "newSentence": "Options include watch and wait, surgery, radiotherapy and chemotherapy.",
+   "sentence": "Options include watchful waiting, surgery, radiotherapy, chemotherapy and targeted therapy, and many people have a combination."
+  },
+  {
+   "id": "c58",
+   "classification": "supported",
+   "evidence": "Search 9 NHS.",
+   "url": "https://www.nhs.uk/conditions/malignant-brain-tumour/treatment/",
+   "action": "edited",
+   "newSentence": "Surgery aims to remove all or as much of the tumour as possible, and the NHS says it is the main treatment for most types of malignant brain tumour.",
+   "sentence": "The NHS says surgery is the main treatment for most types of malignant brain tumour."
+  },
+  {
+   "id": "c59",
+   "classification": "supported",
+   "evidence": "Search 10 Macmillan: removing part can still help.",
+   "url": "https://www.macmillan.org.uk/cancer-information-and-support/brain-tumour/brain-tumour-treatment",
+   "action": "edited",
+   "newSentence": "If it is not possible to remove all of the tumour, Macmillan says removing part of it can still help.",
+   "sentence": "Where a tumour cannot be removed completely, taking out part of it can still help."
+  },
+  {
+   "id": "c60",
+   "classification": "supported",
+   "evidence": "Search 11 BTR.",
+   "url": "https://braintumourresearch.org/blogs/types-of-brain-tumour/what-is-radiotherapy-for-brain-tumours",
+   "action": "edited",
+   "newSentence": "Brain Tumour Research says radiotherapy can cure some small, non-cancerous or very slow-growing tumours, but for more aggressive, large or diffuse tumours it is more likely to shrink the tumour or temporarily halt its growth.",
+   "sentence": "Brain Tumour Research says radiotherapy can cure some small, non-cancerous or very slow-growing low-grade tumours."
+  },
+  {
+   "id": "c61",
+   "classification": "supported",
+   "evidence": "Search 11 BTR.",
+   "url": "https://braintumourresearch.org/blogs/types-of-brain-tumour/what-is-radiotherapy-for-brain-tumours",
+   "action": "edited",
+   "newSentence": "merged into the radiotherapy sentence above",
+   "sentence": "For more aggressive tumours it is more likely to shrink the tumour or halt its growth for a time."
+  },
+  {
+   "id": "c62",
+   "classification": "unsupported",
+   "evidence": "Macmillan: chemotherapy may be given at the same time as radiotherapy, after radiotherapy or surgery, as main treatment, or if tumour returns; 'often' not stated.",
+   "url": "https://www.macmillan.org.uk/cancer-information-and-support/brain-tumour/brain-tumour-treatment",
+   "action": "edited",
+   "newSentence": "Chemotherapy may be given at the same time as radiotherapy, after radiotherapy or surgery, as the main treatment, or if a tumour comes back.",
+   "sentence": "Chemotherapy is often given after surgery or alongside radiotherapy."
+  },
+  {
+   "id": "c63",
+   "classification": "unsupported",
+   "evidence": "NHS: monitoring with scans for some; 'respond well' not retrieved.",
+   "url": "https://www.nhs.uk/conditions/benign-brain-tumour/treatment/",
+   "action": "edited",
+   "newSentence": "The NHS says a non-cancerous tumour will not usually come back if all of it can be safely removed, and that some people only need repeat scans to monitor it.",
+   "sentence": "Non-cancerous tumours often respond well to treatment, and the NHS says treatment may not be needed straight away because they tend to grow slowly."
+  },
+  {
+   "id": "c64",
+   "classification": "supported",
+   "evidence": "Search 14.",
+   "url": "https://www.cancerresearchuk.org/about-cancer/brain-tumours/treatment/controlling-symptoms",
+   "action": "removed",
+   "newSentence": "",
+   "sentence": "Medicines such as steroids for swelling, anti-seizure medicines and painkillers for headaches can help control symptoms."
+  },
+  {
+   "id": "c65",
+   "classification": "unsupported",
+   "evidence": "No retrieved NHS/Macmillan/CRUK text states this; MedlinePlus not retrieved.",
+   "url": "",
+   "action": "removed",
+   "newSentence": "",
+   "sentence": "The outlook varies a great deal and depends on the type of tumour, where it is in the brain and how well treatment works."
+  },
+  {
+   "id": "c66",
+   "classification": "unsupported",
+   "evidence": "Not stated in retrieved text.",
+   "url": "",
+   "action": "removed",
+   "newSentence": "",
+   "sentence": "Because brain tumours are uncommon and varied, the outlook is hard to predict for an individual."
+  },
+  {
+   "id": "c67",
+   "classification": "unsupported",
+   "evidence": "Retrieved NHS text says a benign tumour will not usually come back if all safely removed, not 'full recovery'.",
+   "url": "https://www.nhs.uk/conditions/benign-brain-tumour/treatment/",
+   "action": "edited",
+   "newSentence": "The NHS says a non-cancerous tumour will not usually come back if all of it can be safely removed.",
+   "sentence": "Treatment of non-cancerous tumours is often successful, and a full recovery is possible."
+  },
+  {
+   "id": "c68",
+   "classification": "unsupported",
+   "evidence": "Only a PMC search summary; not an official source; dropped.",
+   "url": "",
+   "action": "removed",
+   "newSentence": "",
+   "sentence": "A 2024 review describes treatment as often combining surgery, chemotherapy and radiotherapy with intensive rehabilitation."
+  },
+  {
+   "id": "c69",
+   "classification": "supported",
+   "evidence": "Search 5.",
+   "url": "https://www.gov.uk/brain-tumour-and-driving",
+   "action": "edited",
+   "newSentence": "GOV.UK says a person with a brain tumour must tell the DVLA and should also speak to their doctor, who may advise giving up the licence.",
+   "sentence": "GOV.UK says a person with a brain tumour must tell the DVLA, and that the rules depend on the type of tumour, where it is and the treatment given."
+  },
+  {
+   "id": "c70",
+   "classification": "supported",
+   "evidence": "Search 5: official guidance varies by tumour risk category and treatment.",
+   "url": "https://www.gov.uk/brain-tumour-and-driving",
+   "action": "edited",
+   "newSentence": "Some low-risk cases do not need to be reported, but most cases involve stopping driving for a set period, so the official guidance and the clinical team can confirm what applies in a particular case.",
+   "sentence": "The clinical team or the DVLA can confirm what applies in a particular case."
+  },
+  {
+   "id": "c71",
+   "classification": "supported",
+   "evidence": "Search 8: CRUK notes tumour unlikely if headache only symptom.",
+   "url": "https://www.cancerresearchuk.org/about-cancer/brain-tumours/symptoms",
+   "action": "edited",
+   "newSentence": "Cancer Research UK says a brain tumour is unlikely if headache is the only symptom.",
+   "sentence": "Cancer Research UK says a headache on its own is unlikely to be a brain tumour."
+  },
+  {
+   "id": "c72",
+   "classification": "unsupported",
+   "evidence": "Only night-waking retrieved.",
+   "url": "https://www.cancerresearchuk.org/about-cancer/brain-tumours/symptoms",
+   "action": "edited",
+   "newSentence": "reduced to NHS GP advice sentence in FAQ",
+   "sentence": "It advises seeing a doctor about headaches that come with sickness, wake a person at night, come with eye problems or get steadily worse over weeks."
+  },
+  {
+   "id": "c73",
+   "classification": "supported",
+   "evidence": "Search 1/6: see a GP if headache feels different or is getting worse.",
+   "url": "https://www.nhs.uk/conditions/brain-tumours/",
+   "action": "edited",
+   "newSentence": "The NHS says to see a GP about symptoms, particularly a headache that feels different from the usual kind or is getting worse.",
+   "sentence": "The NHS suggests seeing a GP about a headache that feels different from the usual kind or is getting worse."
+  },
+  {
+   "id": "c74",
+   "classification": "supported",
+   "evidence": "NHS.",
+   "url": "https://www.nhs.uk/conditions/brain-tumours/",
+   "action": "kept",
+   "sentence": "No, brain tumours can be non-cancerous (benign) or cancerous (malignant)."
+  },
+  {
+   "id": "c75",
+   "classification": "unsupported",
+   "evidence": "Not stated in retrieved NHS text for all benign tumours.",
+   "url": "",
+   "action": "edited",
+   "newSentence": "Brain tumours can be non-cancerous (benign) or cancerous (malignant).",
+   "sentence": "The NHS says non-cancerous tumours tend to grow slowly and often respond well to treatment."
+  },
+  {
+   "id": "c76",
+   "classification": "supported",
+   "evidence": "Search 12: CRUK grades.",
+   "url": "https://www.cancerresearchuk.org/about-cancer/brain-tumours/grades",
+   "action": "edited",
+   "newSentence": "Brain tumours are graded from 1 to 4 ... according to Cancer Research UK.",
+   "sentence": "Tumours are also given a grade from 1 to 4, which the NHS says is generally low grade for 1 and 2 and high grade for 3 and 4."
+  },
+  {
+   "id": "c77",
+   "classification": "supported",
+   "evidence": "Search 3: gliomas built from glial-like supporting cells.",
+   "url": "https://www.macmillan.org.uk/cancer-information-and-support/brain-tumour/astrocytoma",
+   "action": "edited",
+   "newSentence": "Gliomas are tumours made of cells that resemble glial cells, the supporting cells of the brain and spinal cord.",
+   "sentence": "Gliomas develop from glial cells, which support nerve cells in the brain."
+  },
+  {
+   "id": "c78",
+   "classification": "wrong",
+   "evidence": "Macmillan says glioblastoma is a type of grade 4 astrocytoma; since the 2021 WHO update an IDH-mutant grade 4 astrocytoma also exists, and 'most aggressive' is not stated.",
+   "url": "https://www.macmillan.org.uk/cancer-information-and-support/brain-tumour/astrocytoma",
+   "action": "edited",
+   "newSentence": "Macmillan describes glioblastoma as a type of grade 4 astrocytoma.",
+   "sentence": "Glioblastoma is the highest-grade type of astrocytoma, one kind of glioma, and is among the most aggressive primary brain tumours."
+  },
+  {
+   "id": "c79",
+   "classification": "unsupported",
+   "evidence": "NCI: grade 1 most common; 'most' share not stated verbatim.",
+   "url": "https://www.cancer.gov/rare-brain-spine-tumor/tumors/meningioma",
+   "action": "edited",
+   "newSentence": "The National Cancer Institute says grade 1 is the most common grade of meningioma and its cells grow slowly.",
+   "sentence": "Meningiomas arise from the membranes around the brain and spinal cord, and most are grade 1 and slow growing."
+  },
+  {
+   "id": "c80",
+   "classification": "unsupported",
+   "evidence": "Textbook-level; dropped to stay within textbook limit.",
+   "url": "",
+   "action": "removed",
+   "newSentence": "",
+   "sentence": "It depends on the type."
+  },
+  {
+   "id": "c81",
+   "classification": "supported",
+   "evidence": "Search 11 BTR.",
+   "url": "https://braintumourresearch.org/blogs/types-of-brain-tumour/what-is-radiotherapy-for-brain-tumours",
+   "action": "edited",
+   "newSentence": "Brain Tumour Research says radiotherapy can cure some small, non-cancerous or very slow-growing tumours, but for more aggressive, large or diffuse tumours it is more likely to shrink the tumour or temporarily halt its growth.",
+   "sentence": "Treatment of non-cancerous tumours is often successful, and Brain Tumour Research says radiotherapy can cure some small, non-cancerous or very slow-growing tumours."
+  },
+  {
+   "id": "c82",
+   "classification": "supported",
+   "evidence": "Search 11 BTR.",
+   "url": "https://braintumourresearch.org/blogs/types-of-brain-tumour/what-is-radiotherapy-for-brain-tumours",
+   "action": "edited",
+   "newSentence": "merged into the radiotherapy sentence above",
+   "sentence": "For more aggressive tumours, radiotherapy is more likely to shrink the tumour or halt its growth for a time."
+  },
+  {
+   "id": "c83",
+   "classification": "supported",
+   "evidence": "Search 5.",
+   "url": "https://www.gov.uk/brain-tumour-and-driving",
+   "action": "edited",
+   "newSentence": "GOV.UK says a person with a brain tumour must tell the DVLA and should also speak to their doctor, who may advise giving up the licence.",
+   "sentence": "GOV.UK says a person with a brain tumour must tell the DVLA."
+  },
+  {
+   "id": "c84",
+   "classification": "supported",
+   "evidence": "Search 5: rules vary by risk category and treatment.",
+   "url": "https://www.gov.uk/brain-tumour-and-driving",
+   "action": "edited",
+   "newSentence": "The official fitness-to-drive guidance says the rules vary with the risk category of the tumour and the treatment given.",
+   "sentence": "How long driving must stop depends on the type of tumour, where it is in the brain and the treatment given."
+  },
+  {
+   "id": "c85",
+   "classification": "supported",
+   "evidence": "Search 5: official guidance varies by tumour risk category and treatment.",
+   "url": "https://www.gov.uk/brain-tumour-and-driving",
+   "action": "edited",
+   "newSentence": "Some low-risk cases do not need to be reported, but most cases involve stopping driving for a set period, so the official guidance and the clinical team can confirm what applies in a particular case.",
+   "sentence": "The GOV.UK guidance is the authority, and the clinical team or the DVLA can confirm what applies."
+  },
+  {
+   "id": "c86",
+   "classification": "supported",
+   "evidence": "Search 6.",
+   "url": "https://www.nhs.uk/conditions/malignant-brain-tumour/symptoms/",
+   "action": "edited",
+   "newSentence": "The NHS says to call 999 for a seizure that happens for the first time or one that lasts longer than usual for that person.",
+   "sentence": "The NHS says to call 999 or go to A&E if someone has a fit for the first time or a fit that lasts longer than usual for them."
+  },
+  {
+   "id": "c87",
+   "classification": "supported",
+   "evidence": "Search 6.",
+   "url": "https://www.nhs.uk/conditions/malignant-brain-tumour/symptoms/",
+   "action": "edited",
+   "newSentence": "A headache that comes on suddenly and is extremely painful is also a reason to call 999.",
+   "sentence": "A sudden, extremely painful headache is also a reason for 999 or A&E."
+  },
+  {
+   "id": "c88",
+   "classification": "unsupported",
+   "evidence": "Not retrieved.",
+   "url": "",
+   "action": "removed",
+   "newSentence": "",
+   "sentence": "Cancer Research UK says anyone who has a seizure should see a doctor or go to A&E straight away."
+  },
+  {
+   "id": "c89",
+   "classification": "supported",
+   "evidence": "Search 1/3.",
+   "url": "https://www.nhs.uk/conditions/brain-tumours/",
+   "action": "edited",
+   "newSentence": "Brain cancer when malignant; types include glioma, glioblastoma and meningioma",
+   "sentence": "Brain cancer when malignant; specific types include glioma, glioblastoma and meningioma"
+  },
+  {
+   "id": "c90",
+   "classification": "unsupported",
+   "evidence": "Pituitary not retrieved as a type definition.",
+   "url": "https://www.macmillan.org.uk/cancer-information-and-support/brain-tumour/types-of-brain-tumour",
+   "action": "edited",
+   "newSentence": "Primary tumours that start in the brain, and secondary tumours that spread to the brain from elsewhere",
+   "sentence": "Gliomas, meningiomas, pituitary tumours, and tumours that spread to the brain from elsewhere"
+  },
+  {
+   "id": "c91",
+   "classification": "supported",
+   "evidence": "NHS and CRUK: seizures common.",
+   "url": "https://www.nhs.uk/conditions/brain-tumours/",
+   "action": "kept",
+   "sentence": "Headaches, seizures (fits), and changes in vision, speech, memory or personality"
+  },
+  {
+   "id": "c92",
+   "classification": "unsupported",
+   "evidence": "Macmillan: CT first, MRI also needed.",
+   "url": "https://www.macmillan.org.uk/cancer-information-and-support/brain-tumour",
+   "action": "edited",
+   "newSentence": "A CT or MRI scan, and a biopsy to identify the type",
+   "sentence": "A brain scan, usually MRI, and often a biopsy"
+  },
+  {
+   "id": "c93",
+   "classification": "supported",
+   "evidence": "CRUK grades.",
+   "url": "https://www.cancerresearchuk.org/about-cancer/brain-tumours/grades",
+   "action": "kept",
+   "sentence": "Grades 1 to 4; 1 and 2 are generally low grade, 3 and 4 high grade"
+  },
+  {
+   "id": "c94",
+   "classification": "unsupported",
+   "evidence": "Targeted therapy not confirmed.",
+   "url": "https://www.macmillan.org.uk/cancer-information-and-support/brain-tumour/brain-tumour-treatment",
+   "action": "edited",
+   "newSentence": "Watch and wait, surgery, radiotherapy or chemotherapy, plus medicines for symptoms",
+   "sentence": "Surgery, radiotherapy, chemotherapy, targeted therapy or watchful waiting, plus medicines for symptoms"
+  }
+ ],
+ "notes": "All first-pass sentences covered (94). Search summaries blend pages, so symptom and cause sentences attributed to NHS main page may come from NHS-derived trust text; urls cited are pages returned by the searches. No survival statistics or doses appear. Removed: outlook sentences, 2024 PMC review, 'hard to predict' NF claim, meningioma membranes/three-grades wording, CRUK referral thresholds, absence-of-evidence sentences, targeted therapy, pituitary type. Child 48-hour referral verified against NICE NG12 (1.9.2, consider, newly abnormal cerebellar/central neurological function) and reattributed from CRUK. DVLA wording verified against GOV.UK (must tell DVLA; BT1/BT1V; risk categories). Edited sentences may have merged several first-pass sentences, so some newSentence fields point to the merged text. 'Within 48 hours' retained as a NICE-attributed number. Seizure 999 routes verified against NHS malignant symptoms page via search summary; A&E clause dropped. Meningioma sex pattern is NCI-attributed. Search 13 benign-treatment text is a summary of nhs.uk/conditions/benign-brain-tumour/treatment/."
+}
