@@ -1,0 +1,110 @@
+{
+ "id": "who-cataract-surgery-access",
+ "searchesUsed": 4,
+ "counts": {
+  "supported": 5,
+  "textbook": 0,
+  "unsupported": 5,
+  "wrong": 0,
+  "unsafe": 0,
+  "unchecked": 0
+ },
+ "claims": [
+  {
+   "id": "c01",
+   "where": "summary",
+   "sentence": "On 11 February 2026 the WHO said that nearly half of people worldwide who need cataract surgery cannot get it, citing a new Lancet Global Health study.",
+   "classification": "unsupported",
+   "evidence": "Title/text: '1 in 2 people who need cataract surgery can't access it' / about half; 'nearly half' wording not confirmed",
+   "url": "https://www.who.int/news/item/11-02-2026-one-in-two-people-facing-cataract-blindness-need-access-to-life-changing-surgery",
+   "action": "edited",
+   "newSentence": "On 11 February 2026 the WHO said that one in two people worldwide who need cataract surgery cannot get it, citing a new Lancet Global Health study."
+  },
+  {
+   "id": "c02",
+   "where": "keyPoints[0]",
+   "sentence": "The WHO released the news item on 11 February 2026.",
+   "classification": "supported",
+   "evidence": "WHO item dated 11-02-2026 (URL)",
+   "url": "https://www.who.int/news/item/11-02-2026-one-in-two-people-facing-cataract-blindness-need-access-to-life-changing-surgery",
+   "action": "kept"
+  },
+  {
+   "id": "c03",
+   "where": "keyPoints[1]",
+   "sentence": "It reports a Lancet Global Health study showing that nearly half of people facing cataract-related blindness still need access to surgery.",
+   "classification": "unsupported",
+   "evidence": "Title/text: '1 in 2 people who need cataract surgery can't access it' / about half; 'nearly half' wording not confirmed",
+   "url": "https://www.who.int/news/item/11-02-2026-one-in-two-people-facing-cataract-blindness-need-access-to-life-changing-surgery",
+   "action": "edited",
+   "newSentence": "It reports a Lancet Global Health study showing that one in two people facing cataract-related blindness need access to surgery."
+  },
+  {
+   "id": "c04",
+   "where": "keyPoints[2]",
+   "sentence": "The WHO says the African Region has the biggest gap, with three in four people who need cataract surgery untreated.",
+   "classification": "supported",
+   "evidence": "Africa: 3 in every 4 people untreated; largest gap in African Region",
+   "url": "https://www.who.int/news/item/11-02-2026-one-in-two-people-facing-cataract-blindness-need-access-to-life-changing-surgery",
+   "action": "kept"
+  },
+  {
+   "id": "c05",
+   "where": "keyPoints[3]",
+   "sentence": "The WHO describes cataract surgery as one of the most cost-effective medical interventions.",
+   "classification": "supported",
+   "evidence": "WHO describes cataract surgery as one of the most cost-effective of all health care interventions",
+   "url": "https://www.who.int/news/item/11-02-2026-one-in-two-people-facing-cataract-blindness-need-access-to-life-changing-surgery",
+   "action": "kept"
+  },
+  {
+   "id": "c06",
+   "where": "body[0].p0.s0",
+   "sentence": "On 11 February 2026 the World Health Organization (WHO) urged countries to expand access to cataract surgery.",
+   "classification": "supported",
+   "evidence": "WHO item dated 11-02-2026 (URL); urges access expansion (title: need access to life-changing surgery)",
+   "url": "https://www.who.int/news/item/11-02-2026-one-in-two-people-facing-cataract-blindness-need-access-to-life-changing-surgery",
+   "action": "kept"
+  },
+  {
+   "id": "c07",
+   "where": "body[0].p0.s1",
+   "sentence": "It cited a study in The Lancet Global Health showing that nearly half of the people worldwide facing cataract-related blindness still need access to surgery.",
+   "classification": "unsupported",
+   "evidence": "Title/text: '1 in 2 people who need cataract surgery can't access it' / about half; 'nearly half' wording not confirmed",
+   "url": "https://www.who.int/news/item/11-02-2026-one-in-two-people-facing-cataract-blindness-need-access-to-life-changing-surgery",
+   "action": "edited",
+   "newSentence": "It cited a study in The Lancet Global Health showing that one in two people worldwide facing cataract-related blindness need access to surgery."
+  },
+  {
+   "id": "c08",
+   "where": "body[0].p0.s2",
+   "sentence": "The WHO says the gap is widest in the African Region, where three in four people who need cataract surgery remain untreated.",
+   "classification": "supported",
+   "evidence": "Africa: 3 in every 4 people untreated",
+   "url": "https://www.who.int/news/item/11-02-2026-one-in-two-people-facing-cataract-blindness-need-access-to-life-changing-surgery",
+   "action": "kept"
+  },
+  {
+   "id": "c09",
+   "where": "body[1].p0.s0",
+   "sentence": "The WHO describes cataract surgery as a short procedure and one of the most cost-effective medical interventions.",
+   "classification": "unsupported",
+   "evidence": "WHO describes cataract surgery as one of the most cost-effective of all health care interventions (supported); 'short procedure' not found",
+   "url": "https://www.who.int/news/item/11-02-2026-one-in-two-people-facing-cataract-blindness-need-access-to-life-changing-surgery",
+   "action": "edited",
+   "newSentence": "The WHO describes cataract surgery as one of the most cost-effective medical interventions."
+  },
+  {
+   "id": "c10",
+   "where": "body[1].p0.s1",
+   "sentence": "It notes that coverage of cataract surgery has risen by about 15% over two decades, but that ageing populations and rising case numbers have pushed demand up, and recalls the 2021 World Health Assembly target to raise effective coverage by 30 percentage points by 2030.",
+   "classification": "unsupported",
+   "evidence": "Release: coverage up about 15% over past twenty years; WHA 30-point target (WHA74, 2021) supported. Demand/ageing explanation not found",
+   "url": "https://www.who.int/news/item/11-02-2026-one-in-two-people-facing-cataract-blindness-need-access-to-life-changing-surgery",
+   "action": "edited",
+   "newSentence": "It notes that coverage of cataract surgery has increased by about 15% over the past twenty years, and recalls the 2021 World Health Assembly target to raise effective coverage by 30 percentage points by 2030."
+  }
+ ],
+ "notes": "Search snippets only. Also 2 extra searches shared with PPH brief (6 total). 'nearly half' reworded to WHO's 'one in two'."
+}
