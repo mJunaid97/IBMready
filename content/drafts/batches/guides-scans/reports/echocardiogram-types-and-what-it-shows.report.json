@@ -1,0 +1,271 @@
+{
+ "id": "echocardiogram-types-and-what-it-shows",
+ "searchesUsed": 3,
+ "counts": {
+  "supported": 17,
+  "textbook": 0,
+  "unsupported": 14,
+  "wrong": 0,
+  "unsafe": 0,
+  "unchecked": 0
+ },
+ "claims": [
+  {
+   "id": "c01",
+   "sentence": "An echocardiogram is a scan that uses ultrasound, high-frequency sound waves, to produce moving pictures of the heart.",
+   "classification": "supported",
+   "evidence": "NHS/MedlinePlus: ultrasound used to create pictures of the heart.",
+   "url": "https://www.nhs.uk/tests-and-treatments/echocardiogram/",
+   "action": "kept"
+  },
+  {
+   "id": "c02",
+   "sentence": "An ultrasound probe covered in water-based gel is placed on the chest in the standard test.",
+   "classification": "unsupported",
+   "evidence": "Gel and transducer on chest supported; \"water-based\" not retrieved.",
+   "url": "https://www.nhs.uk/tests-and-treatments/echocardiogram/",
+   "action": "edited",
+   "newSentence": "An ultrasound probe covered in gel is placed on the chest in the standard test."
+  },
+  {
+   "id": "c03",
+   "sentence": "The sources describe this test as causing little or no discomfort.",
+   "classification": "unsupported",
+   "evidence": "Little or no discomfort not found.",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c04",
+   "sentence": "The most common type is the transthoracic echocardiogram, in which the probe is placed over the chest.",
+   "classification": "supported",
+   "evidence": "NHS: most common type is transthoracic, transducer placed on chest.",
+   "url": "https://www.nhs.uk/tests-and-treatments/echocardiogram/",
+   "action": "kept"
+  },
+  {
+   "id": "c05",
+   "sentence": "A transoesophageal echocardiogram uses a probe that passes down the throat and gives more detailed pictures of the heart than the standard test.",
+   "classification": "supported",
+   "evidence": "NHS: probe passed down the throat, more detailed view of the heart.",
+   "url": "https://www.nhs.uk/tests-and-treatments/echocardiogram/",
+   "action": "kept"
+  },
+  {
+   "id": "c06",
+   "sentence": "Doctors may use it when the standard test has not shown enough detail.",
+   "classification": "supported",
+   "evidence": "RBHT (NHS trust): generally used when a chest echo cannot give enough information.",
+   "url": "https://www.rbht.nhs.uk/our-services/transoesophageal-echocardiogram-toe",
+   "action": "kept"
+  },
+  {
+   "id": "c07",
+   "sentence": "A stress echocardiogram is a transthoracic scan done during exercise on a treadmill or exercise bike, or after a medicine that has a similar effect on the heart.",
+   "classification": "supported",
+   "evidence": "NHS: treadmill or exercise bike, or medicine with similar effect.",
+   "url": "https://www.nhs.uk/tests-and-treatments/echocardiogram/",
+   "action": "kept"
+  },
+  {
+   "id": "c08",
+   "sentence": "A contrast echocardiogram uses a harmless substance injected into the bloodstream to produce a clearer image.",
+   "classification": "unsupported",
+   "evidence": "Retrieved (likely NHLBI/MedlinePlus, US): saline or special dye injected into a vein for some echoes. \"Harmless\" and \"clearer image\" not retrieved.",
+   "url": "https://medlineplus.gov/lab-tests/echocardiography/",
+   "action": "edited",
+   "newSentence": "For some echocardiograms, saline or a special dye is injected into a vein to help show the heart more clearly."
+  },
+  {
+   "id": "c09",
+   "sentence": "A stress echocardiogram may be recommended if a heart problem is triggered by physical activity.",
+   "classification": "supported",
+   "evidence": "NHS: stress echo may be recommended when a heart problem is triggered by physical activity.",
+   "url": "https://www.nhs.uk/tests-and-treatments/echocardiogram/",
+   "action": "kept"
+  },
+  {
+   "id": "c10",
+   "sentence": "For the transoesophageal test, the back of the throat is numbed with an anaesthetic spray.",
+   "classification": "supported",
+   "evidence": "NHS: throat numbed with spray for TOE.",
+   "url": "https://www.nhs.uk/tests-and-treatments/echocardiogram/",
+   "action": "kept"
+  },
+  {
+   "id": "c11",
+   "sentence": "People can ask for a sedative, a medicine that leaves them very drowsy but not asleep.",
+   "classification": "unsupported",
+   "evidence": "NHS: a sedative given to help you relax; \"very drowsy but not asleep\" and \"people can ask\" not retrieved.",
+   "url": "https://www.nhs.uk/tests-and-treatments/echocardiogram/",
+   "action": "edited",
+   "newSentence": "A sedative may be given to help the person relax."
+  },
+  {
+   "id": "c12",
+   "sentence": "Avoiding food for several hours beforehand may be needed for this version.",
+   "classification": "supported",
+   "evidence": "NHS: may need to avoid eating for several hours before TOE.",
+   "url": "https://www.nhs.uk/tests-and-treatments/echocardiogram/",
+   "action": "kept"
+  },
+  {
+   "id": "c13",
+   "sentence": "Afterwards the throat may be sore, and this should pass within one or two days.",
+   "classification": "supported",
+   "evidence": "NHS: throat may be sore afterwards, passing within 1 to 2 days.",
+   "url": "https://www.nhs.uk/tests-and-treatments/echocardiogram/",
+   "action": "kept"
+  },
+  {
+   "id": "c14",
+   "sentence": "The NHS says the transoesophageal version can show problems with the heart valves, blood clots within the heart, problems with the aorta, and areas of heart muscle that are not working properly after a heart attack.",
+   "classification": "unsupported",
+   "evidence": "RBHT: can look at valves and heart muscle, clots, aortic tears. Heart muscle after a heart attack not retrieved; source is an NHS trust not nhs.uk page.",
+   "url": "https://www.rbht.nhs.uk/our-services/transoesophageal-echocardiogram-toe",
+   "action": "edited",
+   "newSentence": "An NHS trust says a transoesophageal echocardiogram can look at the heart valves and heart muscle, and check for blood clots and tears in the aorta."
+  },
+  {
+   "id": "c15",
+   "sentence": "The more detailed pictures from this version can help to plan heart surgery.",
+   "classification": "unsupported",
+   "evidence": "RBHT: can guide surgeons during procedures such as mitral valve surgery; \"plan surgery\" not retrieved.",
+   "url": "https://www.rbht.nhs.uk/our-services/transoesophageal-echocardiogram-toe",
+   "action": "edited",
+   "newSentence": "An NHS trust says it can help guide surgeons during some heart procedures."
+  },
+  {
+   "id": "c16",
+   "sentence": "A stress echocardiogram uses pictures taken while the heart is under stress to make a diagnosis.",
+   "classification": "unsupported",
+   "evidence": "Duplicates stress echo purpose; wording not retrieved.",
+   "url": "https://www.nhs.uk/tests-and-treatments/echocardiogram/",
+   "action": "removed"
+  },
+  {
+   "id": "c17",
+   "sentence": "The British Heart Foundation says an echocardiogram uses ultrasound to show the size of the heart, how well it pumps and whether the valves are working.",
+   "classification": "unsupported",
+   "evidence": "BHF: sound waves build a picture of the heart and its structures such as valves. Size and pumping not on BHF page in retrieved text (patent only).",
+   "url": "https://www.bhf.org.uk/echocardiogram",
+   "action": "edited",
+   "newSentence": "The British Heart Foundation says an echocardiogram uses sound waves to build up a picture of the heart and its structures, such as the valves."
+  },
+  {
+   "id": "c18",
+   "sentence": "It describes the test as an important investigation for anyone with suspected heart failure, heart valve problems or cardiomyopathy, a disease of the heart muscle.",
+   "classification": "supported",
+   "evidence": "BHF: important investigation for anyone with suspected heart failure, heart valve problems or cardiomyopathy.",
+   "url": "https://www.bhf.org.uk/informationsupport/heart-matters-magazine/medical/tests/echocardiogram",
+   "action": "kept"
+  },
+  {
+   "id": "c19",
+   "sentence": "The test is painless and does not use radiation.",
+   "classification": "unsupported",
+   "evidence": "BHF: bubble echo quick and painless. No-radiation wording for echo not retrieved; NHS says ultrasound scans do not use radiation.",
+   "url": "https://www.nhs.uk/tests-and-treatments/ultrasound-scan/",
+   "action": "edited",
+   "newSentence": "Like other ultrasound scans, which the NHS says do not use radiation, an echocardiogram uses sound waves."
+  },
+  {
+   "id": "c20",
+   "sentence": "Sources give different times for the scan, and the NHS and the BHF give figures from about 20 minutes to about 45 minutes depending on the type.",
+   "classification": "unsupported",
+   "evidence": "No duration figures retrieved.",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c21",
+   "sentence": "Results are usually not given on the day, although a doctor may sometimes be able to talk through the findings the same day.",
+   "classification": "unsupported",
+   "evidence": "NHS: may be able to talk to a doctor on the day, but most people wait a few weeks.",
+   "url": "https://www.nhs.uk/tests-and-treatments/echocardiogram/",
+   "action": "edited",
+   "newSentence": "The NHS says some people may be able to talk to a doctor about the result on the day, but most people wait a few weeks."
+  },
+  {
+   "id": "c22",
+   "sentence": "Most people wait a few weeks, according to the leaflets retrieved.",
+   "classification": "unsupported",
+   "evidence": "Duplicate of c21 after edit.",
+   "url": "https://www.nhs.uk/tests-and-treatments/echocardiogram/",
+   "action": "removed"
+  },
+  {
+   "id": "c23",
+   "sentence": "The sonographer, the specialist who performs the scan, writes a report that goes to the referring doctor, who discusses it with the person.",
+   "classification": "unsupported",
+   "evidence": "Sonographer report route not retrieved.",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c24",
+   "sentence": "Some leaflets say that a person who has heard nothing after a few weeks should contact the doctor who referred them.",
+   "classification": "unsupported",
+   "evidence": "Instruction about contacting doctor not retrieved.",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c25",
+   "sentence": "For a standard echocardiogram people usually need to do nothing to prepare.",
+   "classification": "supported",
+   "evidence": "BHF/NHS: no special preparation usually needed for standard echo.",
+   "url": "https://www.nhs.uk/tests-and-treatments/echocardiogram/",
+   "action": "kept"
+  },
+  {
+   "id": "c26",
+   "sentence": "The exception is the throat version, which may require avoiding eating for several hours.",
+   "classification": "supported",
+   "evidence": "NHS: may need to avoid eating for several hours before TOE.",
+   "url": "https://www.nhs.uk/tests-and-treatments/echocardiogram/",
+   "action": "kept"
+  },
+  {
+   "id": "c27",
+   "sentence": "The most common type is a transthoracic echocardiogram, in which a probe is placed over the chest.",
+   "classification": "supported",
+   "evidence": "NHS: most common type, transducer on chest.",
+   "url": "https://www.nhs.uk/tests-and-treatments/echocardiogram/",
+   "action": "kept"
+  },
+  {
+   "id": "c28",
+   "sentence": "A stress echocardiogram is done during exercise or after a medicine that has a similar effect on the heart.",
+   "classification": "supported",
+   "evidence": "NHS: treadmill/bike or medicine with similar effect.",
+   "url": "https://www.nhs.uk/tests-and-treatments/echocardiogram/",
+   "action": "kept"
+  },
+  {
+   "id": "c29",
+   "sentence": "A transoesophageal echocardiogram passes a probe down the throat and gives more detailed pictures than the standard test.",
+   "classification": "supported",
+   "evidence": "NHS: probe passed down throat, more detailed view.",
+   "url": "https://www.nhs.uk/tests-and-treatments/echocardiogram/",
+   "action": "kept"
+  },
+  {
+   "id": "c30",
+   "sentence": "Most people need no preparation for a standard echocardiogram, but may need to avoid eating for several hours before the throat version.",
+   "classification": "supported",
+   "evidence": "NHS: no special prep for standard; fasting for several hours may be needed for TOE.",
+   "url": "https://www.nhs.uk/tests-and-treatments/echocardiogram/",
+   "action": "kept"
+  },
+  {
+   "id": "c31",
+   "sentence": "An echocardiogram uses ultrasound to picture the heart. This guide explains the standard, stress and throat versions and what each involves.",
+   "classification": "supported",
+   "evidence": "Ultrasound picture of the heart supported; guide-contents description.",
+   "url": "https://www.nhs.uk/tests-and-treatments/echocardiogram/",
+   "action": "kept"
+  }
+ ],
+ "notes": "Retrieval was thin (search summaries, few verbatim page texts); strict classification applied. Extra facts: TOE fasting commonly about 4-6 hours per trust leaflets (do not publish figure): https://www.esht.nhs.uk/leaflet/transoesophageal-echocardiogram-toe/ | TOE: avoid driving 24 hours after sedative (NHS): https://www.nhs.uk/tests-and-treatments/echocardiogram/ | Bubble echo is quick and painless (BHF): https://www.bhf.org.uk/echocardiogram"
+}
