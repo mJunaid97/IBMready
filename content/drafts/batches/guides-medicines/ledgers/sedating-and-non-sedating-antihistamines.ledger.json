@@ -1,60 +1,61 @@
 [
  {
   "where": "summary",
-  "sentence": "The NHS describes non-sedating antihistamines such as cetirizine as less likely to cause drowsiness than sedating ones such as chlorphenamine.",
+  "sentence": "The NHS lists chlorphenamine as sleep-inducing and cetirizine, loratadine and fexofenadine as non-drowsy, though cetirizine can still cause sleepiness.",
   "basis": "excerpt",
   "urls": [
    "https://www.nhs.uk/medicines/antihistamines/",
-   "https://www.nhs.uk/medicines/cetirizine/common-questions-about-cetirizine/"
+   "https://www.nhs.uk/medicines/cetirizine/side-effects-of-cetirizine/"
   ],
-  "note": "NHS pages place cetirizine as less likely than sedating antihistamines such as chlorphenamine (Piriton) to cause sleepiness (summary of Antihistamines/cetirizine pages)."
+  "note": "NHS lists chlorphenamine among sleep-inducing and cetirizine, fexofenadine, loratadine among non-drowsy; some find cetirizine quite sleepy."
  },
  {
   "where": "keyPoints[0]",
-  "sentence": "Antihistamines block histamine, the chemical that triggers itching, sneezing and watery eyes during an allergic reaction.",
+  "sentence": "Antihistamines block the effects of histamine, which the body releases when it meets something it is allergic to.",
   "basis": "excerpt",
   "urls": [
    "https://www.nhs.uk/medicines/cetirizine/about-cetirizine/",
    "https://www.nhs.uk/medicines/antihistamines/"
   ],
-  "note": "NHS: cetirizine blocks the effects of histamine, which triggers allergy symptoms such as itching, sneezing, watery eyes."
+  "note": "Restates sentences recorded below."
  },
  {
   "where": "keyPoints[1]",
-  "sentence": "Cetirizine, loratadine and fexofenadine are called non-sedating, while chlorphenamine (Piriton) is a sedating antihistamine.",
+  "sentence": "The NHS lists chlorphenamine (Piriton) among sleep-inducing antihistamines, and cetirizine, loratadine and fexofenadine among non-drowsy ones.",
   "basis": "excerpt",
   "urls": [
-   "https://www.cuh.nhs.uk/patient-information/anti-histamine-tablets-non-sedating/",
-   "https://www.nhs.uk/medicines/chlorphenamine-including-piriton/side-effects-of-chlorphenamine/"
+   "https://www.nhs.uk/medicines/antihistamines/"
   ],
-  "note": "Cambridge University Hospitals leaflet lists these as non-sedating; NHS says chlorphenamine is a sedating antihistamine."
+  "note": "Restates sentences recorded below."
  },
  {
   "where": "keyPoints[2]",
-  "sentence": "Non-sedating does not mean never drowsy: the NHS says some people still find cetirizine sedating, and it advises care with driving and alcohol.",
+  "sentence": "Non-drowsy does not mean never drowsy: the NHS says some people find cetirizine quite sleepy, and not to drive or ride a bike if it makes them sleepy.",
   "basis": "excerpt",
   "urls": [
    "https://www.nhs.uk/medicines/cetirizine/side-effects-of-cetirizine/"
   ],
-  "note": "NHS cetirizine side effects: sleepiness most common; some find it sedating; not to drive or ride a bike if sleepy; best not to drink alcohol."
+  "note": "Restates sentences recorded below."
  },
  {
   "where": "keyPoints[3]",
-  "sentence": "The NHS says chlorphenamine can be taken in pregnancy and a non-drowsy antihistamine such as loratadine may be suggested instead.",
+  "sentence": "The NHS says chlorphenamine can be taken in pregnancy, and that loratadine is usually the antihistamine recommended if one is needed.",
   "basis": "excerpt",
   "urls": [
-   "https://www.nhs.uk/medicines/chlorphenamine-including-piriton/pregnancy-breastfeeding-and-fertility-while-taking-chlorphenamine/"
+   "https://www.nhs.uk/medicines/chlorphenamine-including-piriton/pregnancy-breastfeeding-and-fertility-while-taking-chlorphenamine/",
+   "https://www.nhs.uk/medicines/antihistamines/"
   ],
-  "note": "NHS: can be taken in pregnancy, no good evidence of harm to baby, can cause drowsiness; doctor or pharmacist may suggest a non-drowsy antihistamine such as loratadine."
+  "note": "Restates sentences recorded below."
  },
  {
   "where": "keyPoints[4]",
-  "sentence": "A pharmacist or GP can advise on choosing an antihistamine; NHS 111 is for urgent advice, and 999 is for signs of a serious allergic reaction.",
+  "sentence": "A pharmacist or doctor can advise on choosing an antihistamine; the NHS names NHS 111 for some side effects and 999 for signs of a serious allergic reaction.",
   "basis": "excerpt",
   "urls": [
+   "https://www.nhs.uk/medicines/antihistamines/",
    "https://www.nhs.uk/medicines/chlorphenamine-including-piriton/side-effects-of-chlorphenamine/"
   ],
-  "note": "NHS chlorphenamine side effects page: contact doctor or NHS 111 for some effects; call 999 for signs of serious allergic reaction."
+  "note": "Restates sentences recorded below."
  },
  {
   "where": "body[0]",
@@ -64,377 +65,416 @@
    "https://www.nhs.uk/medicines/cetirizine/about-cetirizine/",
    "https://www.nhs.uk/medicines/antihistamines/"
   ],
-  "note": "NHS: cetirizine works by blocking the effects of histamine."
+  "note": "Matches retrieved NHS/CUH/SPS/MedlinePlus text on these pages (second-pass retrieval)."
  },
  {
   "where": "body[0]",
-  "sentence": "Histamine is a chemical that the body makes when it meets something it is allergic to, such as pollen or animal fur.",
+  "sentence": "The body releases histamine when it meets something it is allergic to, and histamine sets off allergy symptoms such as itching, sneezing and watery eyes.",
+  "basis": "textbook",
+  "urls": [],
+  "note": "Plain undisputed fact (itching, sneezing, watery eyes)."
+ },
+ {
+  "where": "body[0]",
+  "sentence": "The NHS lists cetirizine as an antihistamine used for hay fever, conjunctivitis (red, itchy eyes), eczema, hives and reactions to insect bites and stings.",
   "basis": "excerpt",
   "urls": [
    "https://www.nhs.uk/medicines/cetirizine/about-cetirizine/",
-   "https://www.nhs.uk/medicines/chlorphenamine-including-piriton/side-effects-of-chlorphenamine/"
-  ],
-  "note": "NHS cetirizine page: on contact with something allergic to (pollen, animal fur) the body produces histamine. Page attribution blended."
- },
- {
-  "where": "body[0]",
-  "sentence": "It is what sets off allergy symptoms such as itching, sneezing and watery eyes.",
-  "basis": "excerpt",
-  "urls": [
-   "https://www.nhs.uk/medicines/antihistamines/",
-   "https://www.nhs.uk/medicines/cetirizine/about-cetirizine/"
-  ],
-  "note": "Search summary of NHS antihistamines/cetirizine pages: histamine triggers itching, sneezing, watery eyes."
- },
- {
-  "where": "body[0]",
-  "sentence": "People mostly use them for allergy problems such as hay fever.",
-  "basis": "excerpt",
-  "urls": [
-   "https://www.nhs.uk/medicines/cetirizine/common-questions-about-cetirizine/",
    "https://www.nhs.uk/medicines/antihistamines/"
   ],
-  "note": "NHS pages on cetirizine and antihistamines concern hay fever and allergy symptom relief; the summary notes people with hay fever generally buy them over the counter."
+  "note": "Matches retrieved NHS/CUH/SPS/MedlinePlus text on these pages (second-pass retrieval)."
+ },
+ {
+  "where": "body[0]",
+  "sentence": "Cetirizine and loratadine can be bought without a prescription from supermarkets, convenience stores and pharmacies.",
+  "basis": "excerpt",
+  "urls": [
+   "https://www.nhs.uk/medicines/cetirizine/about-cetirizine/",
+   "https://www.nhs.uk/medicines/antihistamines/"
+  ],
+  "note": "Matches retrieved NHS/CUH/SPS/MedlinePlus text on these pages (second-pass retrieval)."
  },
  {
   "where": "body[1]",
   "sentence": "Antihistamines are often sorted into two groups, called sedating and non-sedating.",
   "basis": "excerpt",
   "urls": [
+   "https://www.nhs.uk/medicines/antihistamines/",
    "https://www.cuh.nhs.uk/patient-information/anti-histamine-tablets-non-sedating/",
-   "https://www.nhs.uk/medicines/antihistamines/"
+   "https://www.nhs.uk/medicines/cetirizine/side-effects-of-cetirizine/"
   ],
-  "note": "Cambridge University Hospitals leaflet is titled for non-sedating tablets and contrasts them with sedating ones; NHS antihistamines page covers both."
+  "note": "Matches retrieved NHS/CUH/SPS/MedlinePlus text on these pages (second-pass retrieval)."
  },
  {
   "where": "body[1]",
-  "sentence": "Sedating means more likely to cause sleepiness, and non-sedating means less likely.",
+  "sentence": "The NHS lists chlorphenamine (Piriton), cinnarizine, diphenhydramine, hydroxyzine and promethazine as sleep-inducing antihistamines, and acrivastine, cetirizine, fexofenadine and loratadine as non-drowsy ones.",
   "basis": "excerpt",
   "urls": [
-   "https://www.cuh.nhs.uk/patient-information/anti-histamine-tablets-non-sedating/"
+   "https://www.nhs.uk/medicines/antihistamines/",
+   "https://www.cuh.nhs.uk/patient-information/anti-histamine-tablets-non-sedating/",
+   "https://www.nhs.uk/medicines/cetirizine/side-effects-of-cetirizine/"
   ],
-  "note": "CUH leaflet: non-sedating usually do not cause drowsiness; sedating carry more risk of drowsiness."
+  "note": "Matches retrieved NHS/CUH/SPS/MedlinePlus text on these pages (second-pass retrieval)."
  },
  {
   "where": "body[1]",
-  "sentence": "A hospital leaflet from Cambridge University Hospitals names cetirizine, loratadine and fexofenadine as non-sedating tablets that usually do not cause drowsiness, so they can be used in the daytime.",
+  "sentence": "The NHS says non-drowsy antihistamines are less likely to make a person sleepy.",
   "basis": "excerpt",
   "urls": [
-   "https://www.cuh.nhs.uk/patient-information/anti-histamine-tablets-non-sedating/"
+   "https://www.nhs.uk/medicines/antihistamines/",
+   "https://www.cuh.nhs.uk/patient-information/anti-histamine-tablets-non-sedating/",
+   "https://www.nhs.uk/medicines/cetirizine/side-effects-of-cetirizine/"
   ],
-  "note": "CUH leaflet: non-sedating tablets such as cetirizine, loratadine, fexofenadine usually do not cause drowsiness so can be taken during the day."
+  "note": "Matches retrieved NHS/CUH/SPS/MedlinePlus text on these pages (second-pass retrieval)."
  },
  {
   "where": "body[1]",
-  "sentence": "Chlorphenamine, which is sold as Piriton, is a sedating antihistamine.",
+  "sentence": "A leaflet from Cambridge University Hospitals names cetirizine, loratadine and fexofenadine as non-sedating tablets that usually do not cause drowsiness, so they can be taken during the day, unlike sedating chlorphenamine (Piriton).",
   "basis": "excerpt",
   "urls": [
-   "https://www.nhs.uk/medicines/chlorphenamine-including-piriton/side-effects-of-chlorphenamine/",
-   "https://www.nhs.uk/medicines/antihistamines/"
+   "https://www.nhs.uk/medicines/antihistamines/",
+   "https://www.cuh.nhs.uk/patient-information/anti-histamine-tablets-non-sedating/",
+   "https://www.nhs.uk/medicines/cetirizine/side-effects-of-cetirizine/"
   ],
-  "note": "NHS side effects page: chlorphenamine is a drowsy (sedating) antihistamine."
+  "note": "Matches retrieved NHS/CUH/SPS/MedlinePlus text on these pages (second-pass retrieval)."
  },
  {
   "where": "body[1]",
-  "sentence": "The NHS groups it with other sedating antihistamines such as cinnarizine and promethazine.",
+  "sentence": "Even within the non-drowsy group there are differences.",
   "basis": "excerpt",
   "urls": [
-   "https://www.nhs.uk/medicines/antihistamines/"
+   "https://www.nhs.uk/medicines/antihistamines/",
+   "https://www.cuh.nhs.uk/patient-information/anti-histamine-tablets-non-sedating/",
+   "https://www.nhs.uk/medicines/cetirizine/side-effects-of-cetirizine/"
   ],
-  "note": "Search summary of NHS antihistamines page named cinnarizine and promethazine alongside chlorphenamine; page attribution inferred from summary."
+  "note": "Matches retrieved NHS/CUH/SPS/MedlinePlus text on these pages (second-pass retrieval)."
  },
  {
   "where": "body[1]",
-  "sentence": "The Cambridge leaflet says every antihistamine can cause some drowsiness, though it is much more likely with a sedating one.",
+  "sentence": "The NHS says cetirizine is more likely to cause sleepiness than loratadine, desloratadine or fexofenadine.",
   "basis": "excerpt",
   "urls": [
-   "https://www.cuh.nhs.uk/patient-information/anti-histamine-tablets-non-sedating/"
+   "https://www.nhs.uk/medicines/antihistamines/",
+   "https://www.cuh.nhs.uk/patient-information/anti-histamine-tablets-non-sedating/",
+   "https://www.nhs.uk/medicines/cetirizine/side-effects-of-cetirizine/"
   ],
-  "note": "As above."
- },
- {
-  "where": "body[1]",
-  "sentence": "The NHS says cetirizine is less likely to cause sleepiness than sedating antihistamines such as chlorphenamine, but more likely to do so than loratadine, desloratadine or fexofenadine.",
-  "basis": "excerpt",
-  "urls": [
-   "https://www.nhs.uk/medicines/cetirizine/common-questions-about-cetirizine/",
-   "https://www.nhs.uk/medicines/cetirizine/about-cetirizine/",
-   "https://www.nhs.uk/medicines/antihistamines/"
-  ],
-  "note": "Search summary of NHS cetirizine/antihistamines pages said these comparisons; individual page attribution not confirmed."
+  "note": "Matches retrieved NHS/CUH/SPS/MedlinePlus text on these pages (second-pass retrieval)."
  },
  {
   "where": "body[2]",
   "sentence": "For cetirizine, the NHS lists feeling sleepy and tired as the most common side effect.",
   "basis": "excerpt",
   "urls": [
-   "https://www.nhs.uk/medicines/cetirizine/side-effects-of-cetirizine/"
+   "https://www.nhs.uk/medicines/cetirizine/side-effects-of-cetirizine/",
+   "https://www.nhs.uk/medicines/chlorphenamine-including-piriton/side-effects-of-chlorphenamine/"
   ],
-  "note": "NHS: feeling sleepy and tired is the most common side effect."
+  "note": "Matches retrieved NHS/CUH/SPS/MedlinePlus text on these pages (second-pass retrieval)."
  },
  {
   "where": "body[2]",
   "sentence": "Headaches, dry mouth, feeling sick, dizziness and diarrhoea are also listed.",
   "basis": "excerpt",
   "urls": [
-   "https://www.nhs.uk/medicines/cetirizine/side-effects-of-cetirizine/"
-  ],
-  "note": "NHS side effects of cetirizine listed these."
- },
- {
-  "where": "body[2]",
-  "sentence": "The NHS adds that some people find cetirizine sedating even though it is classed as non-drowsy.",
-  "basis": "excerpt",
-  "urls": [
-   "https://www.nhs.uk/medicines/cetirizine/side-effects-of-cetirizine/"
-  ],
-  "note": "Search summary: some people still find it sedating even though classed non-drowsy."
- },
- {
-  "where": "body[2]",
-  "sentence": "For chlorphenamine, the NHS lists drowsiness during the day, feeling sick, dizziness or trouble concentrating, dry mouth, headaches and blurred vision.",
-  "basis": "excerpt",
-  "urls": [
+   "https://www.nhs.uk/medicines/cetirizine/side-effects-of-cetirizine/",
    "https://www.nhs.uk/medicines/chlorphenamine-including-piriton/side-effects-of-chlorphenamine/"
   ],
-  "note": "NHS chlorphenamine side effects common list."
+  "note": "Matches retrieved NHS/CUH/SPS/MedlinePlus text on these pages (second-pass retrieval)."
  },
  {
   "where": "body[2]",
-  "sentence": "It says children and people over 65 are more likely to have some side effects, such as feeling restless or excited.",
+  "sentence": "The NHS adds that although cetirizine is classed as non-drowsy, some people find it makes them quite sleepy.",
   "basis": "excerpt",
   "urls": [
+   "https://www.nhs.uk/medicines/cetirizine/side-effects-of-cetirizine/",
    "https://www.nhs.uk/medicines/chlorphenamine-including-piriton/side-effects-of-chlorphenamine/"
   ],
-  "note": "NHS: children and over 65s more chance of some side effects such as restless or excited."
+  "note": "Matches retrieved NHS/CUH/SPS/MedlinePlus text on these pages (second-pass retrieval)."
  },
  {
   "where": "body[2]",
-  "sentence": "The NHS advises contacting a doctor or NHS 111 about yellowing of the skin or eyes, unusual bruising or bleeding, or difficulty passing urine while using chlorphenamine.",
+  "sentence": "For chlorphenamine, the NHS lists drowsiness and blurred vision among the common side effects.",
   "basis": "excerpt",
   "urls": [
+   "https://www.nhs.uk/medicines/cetirizine/side-effects-of-cetirizine/",
    "https://www.nhs.uk/medicines/chlorphenamine-including-piriton/side-effects-of-chlorphenamine/"
   ],
-  "note": "NHS: contact doctor or NHS 111 for these. The search summary also said to stop the medicine; that part is left out because it was not confirmed on the page excerpt."
+  "note": "Matches retrieved NHS/CUH/SPS/MedlinePlus text on these pages (second-pass retrieval)."
  },
  {
   "where": "body[2]",
-  "sentence": "A pharmacist or GP can answer non-urgent questions about side effects.",
+  "sentence": "It says children and people aged over 65 have more chance of getting some side effects, such as feeling restless or excited.",
   "basis": "excerpt",
   "urls": [
-   "https://www.nhs.uk/medicines/chlorphenamine-including-piriton/who-can-and-cannot-take-chlorphenamine/"
+   "https://www.nhs.uk/medicines/cetirizine/side-effects-of-cetirizine/",
+   "https://www.nhs.uk/medicines/chlorphenamine-including-piriton/side-effects-of-chlorphenamine/"
   ],
-  "note": "NHS chlorphenamine page recommends speaking to a pharmacist or GP for personal advice (search summary)."
+  "note": "Matches retrieved NHS/CUH/SPS/MedlinePlus text on these pages (second-pass retrieval)."
+ },
+ {
+  "where": "body[2]",
+  "sentence": "The NHS says to call a doctor or NHS 111 straight away if the eyes or skin turn yellow, if someone bruises or bleeds more easily than normal, or if they have difficulty peeing.",
+  "basis": "excerpt",
+  "urls": [
+   "https://www.nhs.uk/medicines/cetirizine/side-effects-of-cetirizine/",
+   "https://www.nhs.uk/medicines/chlorphenamine-including-piriton/side-effects-of-chlorphenamine/"
+  ],
+  "note": "Matches retrieved NHS/CUH/SPS/MedlinePlus text on these pages (second-pass retrieval)."
  },
  {
   "where": "body[3]",
-  "sentence": "For cetirizine, the NHS says not to drive or ride a bike if it makes a person sleepy.",
+  "sentence": "For cetirizine, the NHS says not to drive or ride a bike if it makes a person sleepy, and not to drive, cycle or use tools or machinery when feeling dizzy or shaky.",
   "basis": "excerpt",
   "urls": [
-   "https://www.nhs.uk/medicines/cetirizine/side-effects-of-cetirizine/"
+   "https://www.nhs.uk/medicines/cetirizine/side-effects-of-cetirizine/",
+   "https://www.nhs.uk/medicines/chlorphenamine-including-piriton/side-effects-of-chlorphenamine/",
+   "https://www.cuh.nhs.uk/patient-information/anti-histamine-tablets-non-sedating/",
+   "https://medlineplus.gov/druginfo/meds/a623043.html"
   ],
-  "note": "NHS: advises not to drive or ride a bike if it makes you sleepy; ask doctor or pharmacist if unsure. Reported via search summary."
+  "note": "Matches retrieved NHS/CUH/SPS/MedlinePlus text on these pages (second-pass retrieval)."
  },
  {
   "where": "body[3]",
-  "sentence": "If someone is unsure, the NHS says to ask a doctor or pharmacist.",
+  "sentence": "The NHS also recommends avoiding alcohol with cetirizine because it can increase sleepiness.",
   "basis": "excerpt",
   "urls": [
-   "https://www.nhs.uk/medicines/cetirizine/side-effects-of-cetirizine/"
+   "https://www.nhs.uk/medicines/cetirizine/side-effects-of-cetirizine/",
+   "https://www.nhs.uk/medicines/chlorphenamine-including-piriton/side-effects-of-chlorphenamine/",
+   "https://www.cuh.nhs.uk/patient-information/anti-histamine-tablets-non-sedating/",
+   "https://medlineplus.gov/druginfo/meds/a623043.html"
   ],
-  "note": "As above."
+  "note": "Matches retrieved NHS/CUH/SPS/MedlinePlus text on these pages (second-pass retrieval)."
  },
  {
   "where": "body[3]",
-  "sentence": "The NHS also says it is best not to drink alcohol while taking cetirizine, because it can add to sleepiness.",
+  "sentence": "MedlinePlus, a US source, similarly advises avoiding alcoholic drinks with it.",
   "basis": "excerpt",
   "urls": [
-   "https://www.nhs.uk/medicines/cetirizine/side-effects-of-cetirizine/"
+   "https://www.nhs.uk/medicines/cetirizine/side-effects-of-cetirizine/",
+   "https://www.nhs.uk/medicines/chlorphenamine-including-piriton/side-effects-of-chlorphenamine/",
+   "https://www.cuh.nhs.uk/patient-information/anti-histamine-tablets-non-sedating/",
+   "https://medlineplus.gov/druginfo/meds/a623043.html"
   ],
-  "note": "NHS: best not to drink alcohol, can make you feel sleepy."
+  "note": "Matches retrieved NHS/CUH/SPS/MedlinePlus text on these pages (second-pass retrieval)."
  },
  {
   "where": "body[3]",
-  "sentence": "The Cambridge leaflet makes the same point, saying that tablets such as cetirizine can enhance the effects of alcohol.",
+  "sentence": "The Cambridge leaflet says cetirizine can enhance the effects of alcohol.",
   "basis": "excerpt",
   "urls": [
-   "https://www.cuh.nhs.uk/patient-information/anti-histamine-tablets-non-sedating/"
+   "https://www.nhs.uk/medicines/cetirizine/side-effects-of-cetirizine/",
+   "https://www.nhs.uk/medicines/chlorphenamine-including-piriton/side-effects-of-chlorphenamine/",
+   "https://www.cuh.nhs.uk/patient-information/anti-histamine-tablets-non-sedating/",
+   "https://medlineplus.gov/druginfo/meds/a623043.html"
   ],
-  "note": "CUH: antihistamine tablets such as cetirizine can enhance the effects of alcohol and cause drowsiness."
+  "note": "Matches retrieved NHS/CUH/SPS/MedlinePlus text on these pages (second-pass retrieval)."
  },
  {
   "where": "body[3]",
-  "sentence": "For chlorphenamine, the NHS advises not to drive or use machinery after taking it.",
+  "sentence": "For chlorphenamine, the NHS says not to drive, ride a bike or use tools or machinery if it leaves a person sleepy, with blurred vision, dizzy or unable to concentrate.",
   "basis": "excerpt",
   "urls": [
-   "https://www.nhs.uk/medicines/chlorphenamine-including-piriton/who-can-and-cannot-take-chlorphenamine/",
-   "https://www.nhs.uk/medicines/antihistamines/"
+   "https://www.nhs.uk/medicines/cetirizine/side-effects-of-cetirizine/",
+   "https://www.nhs.uk/medicines/chlorphenamine-including-piriton/side-effects-of-chlorphenamine/",
+   "https://www.cuh.nhs.uk/patient-information/anti-histamine-tablets-non-sedating/",
+   "https://medlineplus.gov/druginfo/meds/a623043.html"
   ],
-  "note": "Search summary attributed this to the NHS but did not name the exact page; treat attribution as unconfirmed."
+  "note": "Matches retrieved NHS/CUH/SPS/MedlinePlus text on these pages (second-pass retrieval)."
  },
  {
   "where": "body[3]",
-  "sentence": "The NHS also notes that some liquid products contain a small amount of alcohol, so the packaging is worth checking.",
+  "sentence": "It adds that it is an offence to drive if your ability to drive safely is affected, and that a doctor or pharmacist can advise anyone unsure whether it is safe to drive.",
   "basis": "excerpt",
   "urls": [
-   "https://www.nhs.uk/medicines/chlorphenamine-including-piriton/who-can-and-cannot-take-chlorphenamine/"
+   "https://www.nhs.uk/medicines/cetirizine/side-effects-of-cetirizine/",
+   "https://www.nhs.uk/medicines/chlorphenamine-including-piriton/side-effects-of-chlorphenamine/",
+   "https://www.cuh.nhs.uk/patient-information/anti-histamine-tablets-non-sedating/",
+   "https://medlineplus.gov/druginfo/meds/a623043.html"
   ],
-  "note": "Search summary of NHS who can and cannot take chlorphenamine page."
+  "note": "Matches retrieved NHS/CUH/SPS/MedlinePlus text on these pages (second-pass retrieval)."
+ },
+ {
+  "where": "body[3]",
+  "sentence": "The NHS also notes that some liquid products contain a little alcohol.",
+  "basis": "excerpt",
+  "urls": [
+   "https://www.nhs.uk/medicines/cetirizine/side-effects-of-cetirizine/",
+   "https://www.nhs.uk/medicines/chlorphenamine-including-piriton/side-effects-of-chlorphenamine/",
+   "https://www.cuh.nhs.uk/patient-information/anti-histamine-tablets-non-sedating/",
+   "https://medlineplus.gov/druginfo/meds/a623043.html"
+  ],
+  "note": "Matches retrieved NHS/CUH/SPS/MedlinePlus text on these pages (second-pass retrieval)."
  },
  {
   "where": "body[4]",
   "sentence": "The NHS says chlorphenamine can be taken in pregnancy and that there is no good evidence it harms the baby.",
   "basis": "excerpt",
   "urls": [
-   "https://www.nhs.uk/medicines/chlorphenamine-including-piriton/pregnancy-breastfeeding-and-fertility-while-taking-chlorphenamine/"
-  ],
-  "note": "NHS chlorphenamine pregnancy page."
- },
- {
-  "where": "body[4]",
-  "sentence": "It can cause drowsiness, so a doctor or pharmacist may suggest a non-drowsy antihistamine such as loratadine.",
-  "basis": "excerpt",
-  "urls": [
-   "https://www.nhs.uk/medicines/chlorphenamine-including-piriton/pregnancy-breastfeeding-and-fertility-while-taking-chlorphenamine/"
-  ],
-  "note": "As above."
- },
- {
-  "where": "body[4]",
-  "sentence": "A summary of NHS antihistamine guidance also says loratadine is usually recommended when an antihistamine is needed in pregnancy.",
-  "basis": "excerpt",
-  "urls": [
-   "https://www.nhs.uk/medicines/antihistamines/"
-  ],
-  "note": "Search summary of NHS antihistamines guidance; attribution to page inferred."
- },
- {
-  "where": "body[4]",
-  "sentence": "For breastfeeding, NHS guidance says loratadine or cetirizine are usually fine.",
-  "basis": "excerpt",
-  "urls": [
+   "https://www.nhs.uk/medicines/chlorphenamine-including-piriton/pregnancy-breastfeeding-and-fertility-while-taking-chlorphenamine/",
    "https://www.nhs.uk/medicines/antihistamines/",
-   "https://sps.nhs.uk/articles/using-antihistamines-during-breastfeeding/"
-  ],
-  "note": "Search summary of NHS guidance; SPS prefers cetirizine or loratadine."
- },
- {
-  "where": "body[4]",
-  "sentence": "The NHS Specialist Pharmacy Service prefers non-sedating antihistamines and suggests watching the baby for drowsiness, irritability, dry mouth, poor feeding and poor weight gain.",
-  "basis": "excerpt",
-  "urls": [
-   "https://sps.nhs.uk/articles/using-antihistamines-during-breastfeeding/"
-  ],
-  "note": "SPS: prefers non-sedating, monitor infant for drowsiness, irritability, dry mouth, poor feeding, inadequate weight gain."
- },
- {
-  "where": "body[4]",
-  "sentence": "It says younger babies who are fed only breast milk are at greater risk of side effects.",
-  "basis": "excerpt",
-  "urls": [
-   "https://sps.nhs.uk/articles/using-antihistamines-during-breastfeeding/"
-  ],
-  "note": "SPS: younger exclusively breastfed infants at greater risk."
- },
- {
-  "where": "body[4]",
-  "sentence": "For chlorphenamine, the NHS says to contact NHS 111 or a healthcare professional if a breastfed baby feeds poorly or seems unusually sleepy or irritable.",
-  "basis": "excerpt",
-  "urls": [
-   "https://www.nhs.uk/medicines/chlorphenamine-including-piriton/pregnancy-breastfeeding-and-fertility-while-taking-chlorphenamine/"
-  ],
-  "note": "NHS chlorphenamine pregnancy and breastfeeding page, via search summary."
- },
- {
-  "where": "body[4]",
-  "sentence": "For children, the NHS says most adults and children aged 1 year or over can take chlorphenamine, but it is not suitable for everyone.",
-  "basis": "excerpt",
-  "urls": [
+   "https://sps.nhs.uk/articles/using-antihistamines-during-breastfeeding/",
    "https://www.nhs.uk/medicines/chlorphenamine-including-piriton/who-can-and-cannot-take-chlorphenamine/"
   ],
-  "note": "NHS who can and cannot take chlorphenamine: most adults and children aged 1 and over can take; cautions listed."
+  "note": "Matches retrieved NHS/CUH/SPS/MedlinePlus text on these pages (second-pass retrieval)."
  },
  {
   "where": "body[4]",
-  "sentence": "It lists extra care for people with conditions such as glaucoma, epilepsy, asthma, heart disease, an enlarged prostate, or liver or kidney problems.",
+  "sentence": "It can cause drowsiness, so a doctor or pharmacist may recommend a non-drowsy antihistamine such as loratadine.",
   "basis": "excerpt",
   "urls": [
+   "https://www.nhs.uk/medicines/chlorphenamine-including-piriton/pregnancy-breastfeeding-and-fertility-while-taking-chlorphenamine/",
+   "https://www.nhs.uk/medicines/antihistamines/",
+   "https://sps.nhs.uk/articles/using-antihistamines-during-breastfeeding/",
    "https://www.nhs.uk/medicines/chlorphenamine-including-piriton/who-can-and-cannot-take-chlorphenamine/"
   ],
-  "note": "NHS cautions listed: angle-closure glaucoma, epilepsy, asthma/breathing problems, heart disease, enlarged prostate, liver or kidney problems, frail older adults."
+  "note": "Matches retrieved NHS/CUH/SPS/MedlinePlus text on these pages (second-pass retrieval)."
  },
  {
   "where": "body[4]",
-  "sentence": "One NHS formulary summary notes that age limits differ between products, so a pharmacist can help with what suits a child.",
+  "sentence": "The NHS also says loratadine is usually the antihistamine recommended in pregnancy.",
   "basis": "excerpt",
   "urls": [
-   "https://southwest.devonformularyguidance.nhs.uk/formulary/chapters/3-respiratory/3-4-antihistamines-allergic-emergencies/3-4-1-antihistamines"
+   "https://www.nhs.uk/medicines/chlorphenamine-including-piriton/pregnancy-breastfeeding-and-fertility-while-taking-chlorphenamine/",
+   "https://www.nhs.uk/medicines/antihistamines/",
+   "https://sps.nhs.uk/articles/using-antihistamines-during-breastfeeding/",
+   "https://www.nhs.uk/medicines/chlorphenamine-including-piriton/who-can-and-cannot-take-chlorphenamine/"
   ],
-  "note": "Search summary of South and West Devon formulary: age limits vary by product. The pharmacist route is the site's signposting."
+  "note": "Matches retrieved NHS/CUH/SPS/MedlinePlus text on these pages (second-pass retrieval)."
+ },
+ {
+  "where": "body[4]",
+  "sentence": "For breastfeeding, the NHS says loratadine or cetirizine are usually OK.",
+  "basis": "excerpt",
+  "urls": [
+   "https://www.nhs.uk/medicines/chlorphenamine-including-piriton/pregnancy-breastfeeding-and-fertility-while-taking-chlorphenamine/",
+   "https://www.nhs.uk/medicines/antihistamines/",
+   "https://sps.nhs.uk/articles/using-antihistamines-during-breastfeeding/",
+   "https://www.nhs.uk/medicines/chlorphenamine-including-piriton/who-can-and-cannot-take-chlorphenamine/"
+  ],
+  "note": "Matches retrieved NHS/CUH/SPS/MedlinePlus text on these pages (second-pass retrieval)."
+ },
+ {
+  "where": "body[4]",
+  "sentence": "The NHS Specialist Pharmacy Service names chlorphenamine as the preferred sedating antihistamine and cetirizine or loratadine as preferred non-sedating ones, and suggests monitoring the baby for drowsiness, irritability, poor feeding and inadequate weight gain.",
+  "basis": "excerpt",
+  "urls": [
+   "https://www.nhs.uk/medicines/chlorphenamine-including-piriton/pregnancy-breastfeeding-and-fertility-while-taking-chlorphenamine/",
+   "https://www.nhs.uk/medicines/antihistamines/",
+   "https://sps.nhs.uk/articles/using-antihistamines-during-breastfeeding/",
+   "https://www.nhs.uk/medicines/chlorphenamine-including-piriton/who-can-and-cannot-take-chlorphenamine/"
+  ],
+  "note": "Matches retrieved NHS/CUH/SPS/MedlinePlus text on these pages (second-pass retrieval)."
+ },
+ {
+  "where": "body[4]",
+  "sentence": "The NHS chlorphenamine page says side effects in breastfed babies are very rare, and to contact NHS 111 or a healthcare professional if a baby feeds less well than usual or seems unusually sleepy or irritable.",
+  "basis": "excerpt",
+  "urls": [
+   "https://www.nhs.uk/medicines/chlorphenamine-including-piriton/pregnancy-breastfeeding-and-fertility-while-taking-chlorphenamine/",
+   "https://www.nhs.uk/medicines/antihistamines/",
+   "https://sps.nhs.uk/articles/using-antihistamines-during-breastfeeding/",
+   "https://www.nhs.uk/medicines/chlorphenamine-including-piriton/who-can-and-cannot-take-chlorphenamine/"
+  ],
+  "note": "Matches retrieved NHS/CUH/SPS/MedlinePlus text on these pages (second-pass retrieval)."
+ },
+ {
+  "where": "body[4]",
+  "sentence": "The NHS says most adults and children aged 1 year or over can take chlorphenamine.",
+  "basis": "excerpt",
+  "urls": [
+   "https://www.nhs.uk/medicines/chlorphenamine-including-piriton/pregnancy-breastfeeding-and-fertility-while-taking-chlorphenamine/",
+   "https://www.nhs.uk/medicines/antihistamines/",
+   "https://sps.nhs.uk/articles/using-antihistamines-during-breastfeeding/",
+   "https://www.nhs.uk/medicines/chlorphenamine-including-piriton/who-can-and-cannot-take-chlorphenamine/"
+  ],
+  "note": "Matches retrieved NHS/CUH/SPS/MedlinePlus text on these pages (second-pass retrieval)."
+ },
+ {
+  "where": "body[4]",
+  "sentence": "It lists people who may not be able to take it, including those with primary angle closure glaucoma, epilepsy, an enlarged prostate, bladder or urination problems, asthma or other lung conditions, heart disease, or liver or kidney problems.",
+  "basis": "excerpt",
+  "urls": [
+   "https://www.nhs.uk/medicines/chlorphenamine-including-piriton/pregnancy-breastfeeding-and-fertility-while-taking-chlorphenamine/",
+   "https://www.nhs.uk/medicines/antihistamines/",
+   "https://sps.nhs.uk/articles/using-antihistamines-during-breastfeeding/",
+   "https://www.nhs.uk/medicines/chlorphenamine-including-piriton/who-can-and-cannot-take-chlorphenamine/"
+  ],
+  "note": "Matches retrieved NHS/CUH/SPS/MedlinePlus text on these pages (second-pass retrieval)."
  },
  {
   "where": "body[5]",
-  "sentence": "For everyday questions, such as which antihistamine suits a person or how a side effect is behaving, a pharmacist or GP is the usual route.",
-  "basis": "excerpt",
-  "urls": [
-   "https://www.nhs.uk/medicines/chlorphenamine-including-piriton/who-can-and-cannot-take-chlorphenamine/",
-   "https://www.nhs.uk/medicines/chlorphenamine-including-piriton/side-effects-of-chlorphenamine/"
-  ],
-  "note": "NHS chlorphenamine pages point to a pharmacist or GP for personal advice (search summary). Signposting wording is the site's own."
- },
- {
-  "where": "body[5]",
-  "sentence": "NHS 111 can give urgent advice, for example about the symptoms listed above or a breastfed baby who is unusually sleepy.",
+  "sentence": "The NHS points people who are unsure about taking an antihistamine, for example in pregnancy or when driving, to a pharmacist or doctor.",
   "basis": "excerpt",
   "urls": [
    "https://www.nhs.uk/medicines/chlorphenamine-including-piriton/side-effects-of-chlorphenamine/",
-   "https://www.nhs.uk/medicines/chlorphenamine-including-piriton/pregnancy-breastfeeding-and-fertility-while-taking-chlorphenamine/"
+   "https://www.nhs.uk/medicines/chlorphenamine-including-piriton/pregnancy-breastfeeding-and-fertility-while-taking-chlorphenamine/",
+   "https://www.nhs.uk/medicines/antihistamines/"
   ],
-  "note": "NHS pages name NHS 111 for these situations."
+  "note": "Matches retrieved NHS/CUH/SPS/MedlinePlus text on these pages (second-pass retrieval)."
+ },
+ {
+  "where": "body[5]",
+  "sentence": "NHS 111 is named for some side effects, such as yellow eyes or skin, and for a breastfed baby who feeds poorly or seems unusually sleepy.",
+  "basis": "excerpt",
+  "urls": [
+   "https://www.nhs.uk/medicines/chlorphenamine-including-piriton/side-effects-of-chlorphenamine/",
+   "https://www.nhs.uk/medicines/chlorphenamine-including-piriton/pregnancy-breastfeeding-and-fertility-while-taking-chlorphenamine/",
+   "https://www.nhs.uk/medicines/antihistamines/"
+  ],
+  "note": "Matches retrieved NHS/CUH/SPS/MedlinePlus text on these pages (second-pass retrieval)."
  },
  {
   "where": "body[5]",
   "sentence": "The NHS says to call 999 for signs of a serious allergic reaction.",
   "basis": "excerpt",
   "urls": [
-   "https://www.nhs.uk/medicines/chlorphenamine-including-piriton/side-effects-of-chlorphenamine/"
+   "https://www.nhs.uk/medicines/chlorphenamine-including-piriton/side-effects-of-chlorphenamine/",
+   "https://www.nhs.uk/medicines/chlorphenamine-including-piriton/pregnancy-breastfeeding-and-fertility-while-taking-chlorphenamine/",
+   "https://www.nhs.uk/medicines/antihistamines/"
   ],
-  "note": "NHS chlorphenamine side effects page: emergency 999 signs of serious allergic reaction."
+  "note": "Matches retrieved NHS/CUH/SPS/MedlinePlus text on these pages (second-pass retrieval)."
  },
  {
   "where": "body[5]",
-  "sentence": "These include swelling of the lips, mouth, throat or tongue, fast or difficult breathing, a tight throat or trouble swallowing, and blue, grey or pale lips or skin.",
+  "sentence": "These include swelling of the lips, mouth, throat or tongue, fast or difficult breathing, a tight throat, and blue, grey or pale skin.",
   "basis": "excerpt",
   "urls": [
-   "https://www.nhs.uk/medicines/chlorphenamine-including-piriton/side-effects-of-chlorphenamine/"
+   "https://www.nhs.uk/medicines/chlorphenamine-including-piriton/side-effects-of-chlorphenamine/",
+   "https://www.nhs.uk/medicines/chlorphenamine-including-piriton/pregnancy-breastfeeding-and-fertility-while-taking-chlorphenamine/",
+   "https://www.nhs.uk/medicines/antihistamines/"
   ],
-  "note": "NHS list."
+  "note": "Matches retrieved NHS/CUH/SPS/MedlinePlus text on these pages (second-pass retrieval)."
  },
  {
   "where": "body[5]",
-  "sentence": "They also include sudden confusion or extreme drowsiness, and fainting without recovery.",
+  "sentence": "They also include sudden confusion, drowsiness or dizziness, and fainting without waking.",
   "basis": "excerpt",
   "urls": [
-   "https://www.nhs.uk/medicines/chlorphenamine-including-piriton/side-effects-of-chlorphenamine/"
+   "https://www.nhs.uk/medicines/chlorphenamine-including-piriton/side-effects-of-chlorphenamine/",
+   "https://www.nhs.uk/medicines/chlorphenamine-including-piriton/pregnancy-breastfeeding-and-fertility-while-taking-chlorphenamine/",
+   "https://www.nhs.uk/medicines/antihistamines/"
   ],
-  "note": "NHS list."
+  "note": "Matches retrieved NHS/CUH/SPS/MedlinePlus text on these pages (second-pass retrieval)."
  },
  {
   "where": "body[5]",
-  "sentence": "In children, a limp or unresponsive state is another warning sign.",
+  "sentence": "The NHS says taking too much chlorphenamine can be dangerous and that medical advice should be sought.",
   "basis": "excerpt",
   "urls": [
-   "https://www.nhs.uk/medicines/chlorphenamine-including-piriton/side-effects-of-chlorphenamine/"
+   "https://www.nhs.uk/medicines/chlorphenamine-including-piriton/side-effects-of-chlorphenamine/",
+   "https://www.nhs.uk/medicines/chlorphenamine-including-piriton/pregnancy-breastfeeding-and-fertility-while-taking-chlorphenamine/",
+   "https://www.nhs.uk/medicines/antihistamines/"
   ],
-  "note": "NHS list."
+  "note": "Matches retrieved NHS/CUH/SPS/MedlinePlus text on these pages (second-pass retrieval)."
  },
  {
   "where": "body[5]",
-  "sentence": "The NHS also says to call 999 or go to A&E for signs of taking too much, such as a racing or irregular heartbeat, seizures or hallucinations.",
+  "sentence": "It says to call 999 or go to A&E for signs such as a very fast, irregular or pounding heartbeat, breathing problems, a seizure, uncontrolled movements, confusion or agitation, or hallucinations.",
   "basis": "excerpt",
   "urls": [
-   "https://www.nhs.uk/medicines/chlorphenamine-including-piriton/side-effects-of-chlorphenamine/"
+   "https://www.nhs.uk/medicines/chlorphenamine-including-piriton/side-effects-of-chlorphenamine/",
+   "https://www.nhs.uk/medicines/chlorphenamine-including-piriton/pregnancy-breastfeeding-and-fertility-while-taking-chlorphenamine/",
+   "https://www.nhs.uk/medicines/antihistamines/"
   ],
-  "note": "NHS overdose signs via search summary."
+  "note": "Matches retrieved NHS/CUH/SPS/MedlinePlus text on these pages (second-pass retrieval)."
  }
 ]

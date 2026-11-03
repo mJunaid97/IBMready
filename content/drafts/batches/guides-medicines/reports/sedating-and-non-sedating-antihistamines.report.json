@@ -1,0 +1,344 @@
+{
+ "id": "sedating-and-non-sedating-antihistamines",
+ "searchesUsed": 8,
+ "counts": {
+  "supported": 33,
+  "textbook": 1,
+  "unsupported": 11,
+  "wrong": 2,
+  "unsafe": 0,
+  "unchecked": 0
+ },
+ "claims": [
+  {
+   "id": "c01",
+   "classification": "unsupported",
+   "evidence": "summary comparison with chlorphenamine not in retrieved text; NHS lists sleep-inducing vs non-drowsy",
+   "url": "https://www.nhs.uk/medicines/antihistamines/",
+   "action": "edited"
+  },
+  {
+   "id": "c02",
+   "classification": "supported",
+   "evidence": "NHS: cetirizine blocks histamine",
+   "url": "https://www.nhs.uk/medicines/cetirizine/about-cetirizine/",
+   "action": "edited"
+  },
+  {
+   "id": "c03",
+   "classification": "supported",
+   "evidence": "NHS/CUH list non-sedating vs chlorphenamine",
+   "url": "https://www.nhs.uk/medicines/antihistamines/",
+   "action": "kept"
+  },
+  {
+   "id": "c04",
+   "classification": "supported",
+   "evidence": "NHS: some find cetirizine quite sleepy; do not drive or ride bike if sleepy",
+   "url": "https://www.nhs.uk/medicines/cetirizine/side-effects-of-cetirizine/",
+   "action": "kept"
+  },
+  {
+   "id": "c05",
+   "classification": "supported",
+   "evidence": "NHS: chlorphenamine ok in pregnancy; loratadine may be suggested",
+   "url": "https://www.nhs.uk/medicines/chlorphenamine-including-piriton/pregnancy-breastfeeding-and-fertility-while-taking-chlorphenamine/",
+   "action": "kept"
+  },
+  {
+   "id": "c06",
+   "classification": "supported",
+   "evidence": "NHS 111/999 and pharmacist/doctor signposting",
+   "url": "https://www.nhs.uk/medicines/chlorphenamine-including-piriton/side-effects-of-chlorphenamine/",
+   "action": "edited"
+  },
+  {
+   "id": "c07",
+   "classification": "supported",
+   "evidence": "NHS: block effects of histamine",
+   "url": "https://www.nhs.uk/medicines/cetirizine/about-cetirizine/",
+   "action": "kept"
+  },
+  {
+   "id": "c08",
+   "classification": "unsupported",
+   "evidence": "pollen/animal fur example not in retrieved text (only animal hair)",
+   "url": "https://www.nhs.uk/medicines/cetirizine/about-cetirizine/",
+   "action": "edited"
+  },
+  {
+   "id": "c09",
+   "classification": "textbook",
+   "evidence": "itching, sneezing, watery eyes as histamine symptoms",
+   "url": "https://www.nhs.uk/medicines/cetirizine/about-cetirizine/",
+   "action": "kept"
+  },
+  {
+   "id": "c10",
+   "classification": "supported",
+   "evidence": "NHS: cetirizine used for hay fever etc.",
+   "url": "https://www.nhs.uk/medicines/cetirizine/about-cetirizine/",
+   "action": "edited"
+  },
+  {
+   "id": "c11",
+   "classification": "supported",
+   "evidence": "NHS/CUH sedating vs non-sedating groups",
+   "url": "https://www.nhs.uk/medicines/antihistamines/",
+   "action": "kept"
+  },
+  {
+   "id": "c12",
+   "classification": "supported",
+   "evidence": "NHS: non-drowsy less likely to make sleepy",
+   "url": "https://www.nhs.uk/medicines/antihistamines/",
+   "action": "kept"
+  },
+  {
+   "id": "c13",
+   "classification": "supported",
+   "evidence": "CUH names cetirizine/loratadine/fexofenadine as non-sedating, daytime",
+   "url": "https://www.cuh.nhs.uk/patient-information/anti-histamine-tablets-non-sedating/",
+   "action": "kept"
+  },
+  {
+   "id": "c14",
+   "classification": "supported",
+   "evidence": "NHS: chlorphenamine sleep-inducing",
+   "url": "https://www.nhs.uk/medicines/antihistamines/",
+   "action": "kept"
+  },
+  {
+   "id": "c15",
+   "classification": "supported",
+   "evidence": "NHS list names cinnarizine, promethazine as sleep-inducing",
+   "url": "https://www.nhs.uk/medicines/antihistamines/",
+   "action": "kept"
+  },
+  {
+   "id": "c16",
+   "classification": "unsupported",
+   "evidence": "'every antihistamine can cause some drowsiness' not retrieved",
+   "url": "https://www.cuh.nhs.uk/patient-information/anti-histamine-tablets-non-sedating/",
+   "action": "removed"
+  },
+  {
+   "id": "c17",
+   "classification": "unsupported",
+   "evidence": "'less likely than chlorphenamine' not retrieved; 'more likely than loratadine/desloratadine/fexofenadine' supported",
+   "url": "https://www.nhs.uk/medicines/cetirizine/side-effects-of-cetirizine/",
+   "action": "edited"
+  },
+  {
+   "id": "c18",
+   "classification": "supported",
+   "evidence": "NHS: sleepy and tired most common",
+   "url": "https://www.nhs.uk/medicines/cetirizine/side-effects-of-cetirizine/",
+   "action": "kept"
+  },
+  {
+   "id": "c19",
+   "classification": "supported",
+   "evidence": "NHS: headaches, dry mouth, sick, dizzy, diarrhoea",
+   "url": "https://www.nhs.uk/medicines/cetirizine/side-effects-of-cetirizine/",
+   "action": "kept"
+  },
+  {
+   "id": "c20",
+   "classification": "supported",
+   "evidence": "NHS: classed non-drowsy, some still quite sleepy",
+   "url": "https://www.nhs.uk/medicines/cetirizine/side-effects-of-cetirizine/",
+   "action": "kept"
+  },
+  {
+   "id": "c21",
+   "classification": "unsupported",
+   "evidence": "only drowsiness and blurred vision confirmed from the chlorphenamine common list; other items not retrieved",
+   "url": "https://www.nhs.uk/medicines/chlorphenamine-including-piriton/side-effects-of-chlorphenamine/",
+   "action": "edited"
+  },
+  {
+   "id": "c22",
+   "classification": "supported",
+   "evidence": "NHS: children and over 65 more chance, restless or excited",
+   "url": "https://www.nhs.uk/medicines/chlorphenamine-including-piriton/side-effects-of-chlorphenamine/",
+   "action": "kept"
+  },
+  {
+   "id": "c23",
+   "classification": "supported",
+   "evidence": "NHS: call doctor or 111 for yellow eyes/skin, bruising/bleeding, difficulty peeing",
+   "url": "https://www.nhs.uk/medicines/chlorphenamine-including-piriton/side-effects-of-chlorphenamine/",
+   "action": "kept"
+  },
+  {
+   "id": "c24",
+   "classification": "unsupported",
+   "evidence": "pharmacist/GP for non-urgent side-effect questions not retrieved",
+   "url": "https://www.nhs.uk/medicines/chlorphenamine-including-piriton/who-can-and-cannot-take-chlorphenamine/",
+   "action": "removed"
+  },
+  {
+   "id": "c25",
+   "classification": "supported",
+   "evidence": "NHS: do not drive or ride bike if cetirizine makes sleepy",
+   "url": "https://www.nhs.uk/medicines/cetirizine/side-effects-of-cetirizine/",
+   "action": "kept"
+  },
+  {
+   "id": "c26",
+   "classification": "supported",
+   "evidence": "NHS: doctor or pharmacist if unsure about driving",
+   "url": "https://www.nhs.uk/medicines/chlorphenamine-including-piriton/side-effects-of-chlorphenamine/",
+   "action": "edited"
+  },
+  {
+   "id": "c27",
+   "classification": "supported",
+   "evidence": "NHS/MedlinePlus: avoid alcohol",
+   "url": "https://www.nhs.uk/medicines/cetirizine/side-effects-of-cetirizine/",
+   "action": "kept"
+  },
+  {
+   "id": "c28",
+   "classification": "supported",
+   "evidence": "CUH: cetirizine enhances alcohol effects",
+   "url": "https://www.cuh.nhs.uk/patient-information/anti-histamine-tablets-non-sedating/",
+   "action": "kept"
+  },
+  {
+   "id": "c29",
+   "classification": "wrong",
+   "evidence": "NHS says not to drive etc. if sleepy, blurred vision, dizzy or unable to concentrate; not blanket 'after taking it'",
+   "url": "https://www.nhs.uk/medicines/chlorphenamine-including-piriton/side-effects-of-chlorphenamine/",
+   "action": "edited"
+  },
+  {
+   "id": "c30",
+   "classification": "supported",
+   "evidence": "NHS: some liquid products contain a little alcohol",
+   "url": "https://www.nhs.uk/medicines/chlorphenamine-including-piriton/who-can-and-cannot-take-chlorphenamine/",
+   "action": "kept"
+  },
+  {
+   "id": "c31",
+   "classification": "supported",
+   "evidence": "NHS: chlorphenamine can be taken in pregnancy, no good evidence of harm",
+   "url": "https://www.nhs.uk/medicines/chlorphenamine-including-piriton/pregnancy-breastfeeding-and-fertility-while-taking-chlorphenamine/",
+   "action": "kept"
+  },
+  {
+   "id": "c32",
+   "classification": "supported",
+   "evidence": "NHS: can cause drowsiness, non-drowsy such as loratadine may be recommended",
+   "url": "https://www.nhs.uk/medicines/chlorphenamine-including-piriton/pregnancy-breastfeeding-and-fertility-while-taking-chlorphenamine/",
+   "action": "kept"
+  },
+  {
+   "id": "c33",
+   "classification": "supported",
+   "evidence": "NHS: loratadine usually recommended in pregnancy",
+   "url": "https://www.nhs.uk/medicines/antihistamines/",
+   "action": "kept"
+  },
+  {
+   "id": "c34",
+   "classification": "supported",
+   "evidence": "NHS: loratadine or cetirizine usually OK in breastfeeding",
+   "url": "https://www.nhs.uk/medicines/antihistamines/",
+   "action": "kept"
+  },
+  {
+   "id": "c35",
+   "classification": "unsupported",
+   "evidence": "'prefers non-sedating' inaccurate (SPS: chlorphenamine preferred sedating, cetirizine/loratadine preferred non-sedating); 'dry mouth' not retrieved",
+   "url": "https://sps.nhs.uk/articles/using-antihistamines-during-breastfeeding/",
+   "action": "edited"
+  },
+  {
+   "id": "c36",
+   "classification": "unsupported",
+   "evidence": "'younger babies at greater risk' not retrieved",
+   "url": "https://sps.nhs.uk/articles/using-antihistamines-during-breastfeeding/",
+   "action": "removed"
+  },
+  {
+   "id": "c37",
+   "classification": "supported",
+   "evidence": "NHS: contact 111/healthcare professional if baby feeds less well, unusually sleepy or irritable",
+   "url": "https://www.nhs.uk/medicines/chlorphenamine-including-piriton/pregnancy-breastfeeding-and-fertility-while-taking-chlorphenamine/",
+   "action": "kept"
+  },
+  {
+   "id": "c38",
+   "classification": "supported",
+   "evidence": "NHS: most adults and children aged 1+ can take",
+   "url": "https://www.nhs.uk/medicines/chlorphenamine-including-piriton/who-can-and-cannot-take-chlorphenamine/",
+   "action": "kept"
+  },
+  {
+   "id": "c39",
+   "classification": "supported",
+   "evidence": "NHS list of people who may not be able to take it; wording changed from 'extra care'",
+   "url": "https://www.nhs.uk/medicines/chlorphenamine-including-piriton/who-can-and-cannot-take-chlorphenamine/",
+   "action": "edited"
+  },
+  {
+   "id": "c40",
+   "classification": "unsupported",
+   "evidence": "Devon formulary age-limit line, local, not on nhs.uk",
+   "url": "https://www.nhs.uk/medicines/antihistamines/",
+   "action": "removed"
+  },
+  {
+   "id": "c41",
+   "classification": "supported",
+   "evidence": "NHS: talk to doctor or pharmacist if unsure",
+   "url": "https://www.nhs.uk/medicines/chlorphenamine-including-piriton/side-effects-of-chlorphenamine/",
+   "action": "edited"
+  },
+  {
+   "id": "c42",
+   "classification": "supported",
+   "evidence": "NHS 111 for listed effects and breastfed baby",
+   "url": "https://www.nhs.uk/medicines/chlorphenamine-including-piriton/pregnancy-breastfeeding-and-fertility-while-taking-chlorphenamine/",
+   "action": "kept"
+  },
+  {
+   "id": "c43",
+   "classification": "supported",
+   "evidence": "NHS: 999 for severe allergic reaction",
+   "url": "https://www.nhs.uk/medicines/chlorphenamine-including-piriton/side-effects-of-chlorphenamine/",
+   "action": "kept"
+  },
+  {
+   "id": "c44",
+   "classification": "unsupported",
+   "evidence": "'trouble swallowing' and 'lips' colour wording not retrieved; retrieved list: swelling lips/mouth/throat/tongue, fast or difficult breathing, tight throat, blue/grey/pale skin",
+   "url": "https://www.nhs.uk/medicines/chlorphenamine-including-piriton/side-effects-of-chlorphenamine/",
+   "action": "edited"
+  },
+  {
+   "id": "c45",
+   "classification": "wrong",
+   "evidence": "NHS says sudden confusion, drowsiness or dizziness; 'extreme drowsiness' overstated; fainting and not waking",
+   "url": "https://www.nhs.uk/medicines/chlorphenamine-including-piriton/side-effects-of-chlorphenamine/",
+   "action": "edited"
+  },
+  {
+   "id": "c46",
+   "classification": "unsupported",
+   "evidence": "child limp/unresponsive sign not retrieved",
+   "url": "https://www.nhs.uk/medicines/chlorphenamine-including-piriton/side-effects-of-chlorphenamine/",
+   "action": "removed"
+  },
+  {
+   "id": "c47",
+   "classification": "supported",
+   "evidence": "NHS 999/A&E: fast irregular pounding heartbeat, breathing problems, seizure, uncontrolled movements, confusion, hallucinations",
+   "url": "https://www.nhs.uk/medicines/chlorphenamine-including-piriton/side-effects-of-chlorphenamine/",
+   "action": "edited"
+  }
+ ],
+ "notes": "Cetirizine/loratadine/fexofenadine comparison: only 'cetirizine more likely than loratadine, desloratadine, fexofenadine' retrieved. Cinnarizine/promethazine grouping supported by NHS Antihistamines list. Chlorphenamine driving line was overstated and corrected. Devon line removed. NHS Antihistamines URL appears as both /conditions/antihistamines/ and /medicines/antihistamines/; kept /medicines/. Page attribution for some items is from blended summaries (search tool), not page text; Direct fetch not used. Added MedlinePlus (US) for second publisher; Cambridge leaflet and SPS are NHS bodies. Final body is 759 words."
+}
