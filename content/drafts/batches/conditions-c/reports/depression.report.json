@@ -1,0 +1,992 @@
+{
+ "id": "depression",
+ "searchesUsed": 13,
+ "counts": {
+  "supported": 74,
+  "textbook": 1,
+  "unsupported": 39,
+  "wrong": 0,
+  "unsafe": 0,
+  "unchecked": 0
+ },
+ "claims": [
+  {
+   "id": "c001",
+   "where": "definition",
+   "classification": "supported",
+   "evidence": "NHS overview: depression is a low mood that lasts for weeks or months and affects daily life; symptoms vary, mild to severe; tiredness, poor sleep, appetite changes. [first-pass: Depression is a low mood that lasts for weeks or months and affects daily life.]",
+   "url": "https://www.nhs.uk/mental-health/conditions/depression-in-adults/overview/",
+   "action": "kept"
+  },
+  {
+   "id": "c002",
+   "where": "overview",
+   "classification": "unsupported",
+   "evidence": "Not found in retrieved text of this pass (searches did not return it). [first-pass: Depression is more than a low mood.]",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c003",
+   "where": "overview",
+   "classification": "supported",
+   "evidence": "NHS overview: depression is a low mood that lasts for weeks or months and affects daily life; symptoms vary, mild to severe; tiredness, poor sleep, appetite changes. [first-pass: Symptoms vary a lot between people and range from mild to severe.]",
+   "url": "https://www.nhs.uk/mental-health/conditions/depression-in-adults/overview/",
+   "action": "kept"
+  },
+  {
+   "id": "c004",
+   "where": "overview",
+   "classification": "supported",
+   "evidence": "NHS symptoms page (retrieved): psychological (continuous low mood, hopelessness, low self-esteem, tearful, suicidal thoughts), physical (aches and pains, appetite/weight change, usually decrease), social (avoiding friends, fewer social activities); see GP if most of the day, every day, for more than 2 weeks; low mood may improve after a short time. [first-pass: They can be psychological, such as low mood and hopelessness, or physical, such as feeling]",
+   "url": "https://www.nhs.uk/mental-health/conditions/depression-in-adults/symptoms/",
+   "action": "edited",
+   "newSentence": "They can be psychological, such as continuous low mood and hopelessness, or physical, such as feeling constantly tired and sleeping badly."
+  },
+  {
+   "id": "c005",
+   "where": "overview",
+   "classification": "unsupported",
+   "evidence": "Not found in retrieved text of this pass (searches did not return it). [first-pass: The NHS says that with the right treatment and support, most people with depression can im]",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c006",
+   "where": "overview",
+   "classification": "supported",
+   "evidence": "NHS treatment page: mild: watchful waiting, exercise, guided self-help (6-8 sessions), CBT if not improving; moderate to severe: talking therapy plus antidepressants; specialist team for severe; interpersonal therapy, counselling, couples therapy. [first-pass: Self-help, talking therapies and antidepressant medicines are among the treatments used.]",
+   "url": "https://www.nhs.uk/mental-health/conditions/depression-in-adults/treatment/",
+   "action": "edited",
+   "newSentence": "Self-help, talking therapies and antidepressant medicines are among the treatments the NHS describes, and the choice depends on how severe the depression is."
+  },
+  {
+   "id": "c007",
+   "where": "diagnosis",
+   "classification": "supported",
+   "evidence": "MedlinePlus/NIMH: genetic, biological, environmental, psychological factors; certain medicines and conditions (viruses, thyroid disorders) can cause symptoms like depression; no lab test diagnoses depression; blood tests for anaemia or thyroid disease. [first-pass: There is no physical test for depression.]",
+   "url": "https://medlineplus.gov/depression.html",
+   "action": "edited",
+   "newSentence": "There is no physical test that diagnoses depression."
+  },
+  {
+   "id": "c008",
+   "where": "diagnosis",
+   "classification": "supported",
+   "evidence": "NHS diagnosis page: GP may examine and do urine or blood tests to rule out similar conditions such as underactive thyroid; GP asks about history, previous mental health problems, lifestyle, triggers, thoughts of suicide or self-harm. [first-pass: A GP may arrange urine or blood tests to rule out other conditions with similar symptoms, ]",
+   "url": "https://www.nhs.uk/mental-health/conditions/depression-in-adults/diagnosis/",
+   "action": "edited",
+   "newSentence": "The NHS says a GP may examine the person and arrange some urine or blood tests to rule out other conditions with similar symptoms, such as an underactive thyroid."
+  },
+  {
+   "id": "c009",
+   "where": "diagnosis",
+   "classification": "unsupported",
+   "evidence": "Not found in retrieved text of this pass (searches did not return it). [first-pass: A GP also considers possible physical causes or side effects from medicines.]",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c010",
+   "where": "diagnosis",
+   "classification": "unsupported",
+   "evidence": "Not found in retrieved text of this pass (searches did not return it). [first-pass: The GP discusses the available treatment options, including antidepressants and talking th]",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c011",
+   "where": "treatment",
+   "classification": "supported",
+   "evidence": "NHS treatment page: mild: watchful waiting, exercise, guided self-help (6-8 sessions), CBT if not improving; moderate to severe: talking therapy plus antidepressants; specialist team for severe; interpersonal therapy, counselling, couples therapy. [first-pass: Treatment is based on how severe the depression is.]",
+   "url": "https://www.nhs.uk/mental-health/conditions/depression-in-adults/treatment/",
+   "action": "kept"
+  },
+  {
+   "id": "c012",
+   "where": "treatment",
+   "classification": "unsupported",
+   "evidence": "NHS treatment page: mild: watchful waiting, exercise, guided self-help (6-8 sessions), CBT if not improving; moderate to severe: talking therapy plus antidepressants; specialist team for severe; interpersonal therapy, counselling, couples therapy. [first-pass: For mild depression, a GP may suggest watchful waiting, with a review after two to four we]",
+   "url": "https://www.nhs.uk/mental-health/conditions/depression-in-adults/treatment/",
+   "action": "edited",
+   "newSentence": "For mild depression, a GP may suggest watchful waiting, in which progress is monitored, along with exercise or guided self-help. (review interval removed)"
+  },
+  {
+   "id": "c013",
+   "where": "treatment",
+   "classification": "supported",
+   "evidence": "NHS treatment page: mild: watchful waiting, exercise, guided self-help (6-8 sessions), CBT if not improving; moderate to severe: talking therapy plus antidepressants; specialist team for severe; interpersonal therapy, counselling, couples therapy. [first-pass: For moderate to severe depression, a combination of talking therapy and antidepressants is]",
+   "url": "https://www.nhs.uk/mental-health/conditions/depression-in-adults/treatment/",
+   "action": "kept"
+  },
+  {
+   "id": "c014",
+   "where": "treatment",
+   "classification": "supported",
+   "evidence": "NICE NG222 (retrieved summary): antidepressants not routinely first-line for less severe depression unless preferred; guided self-help first for most; good evidence for group CBT and group BA; SSRIs preferred if antidepressant chosen; match to needs and preferences. [first-pass: NICE advises against routinely offering antidepressants first for less severe depression u]",
+   "url": "https://www.nice.org.uk/guidance/ng222",
+   "action": "kept"
+  },
+  {
+   "id": "c015",
+   "where": "treatment",
+   "classification": "unsupported",
+   "evidence": "Not found in retrieved text of this pass (searches did not return it). [first-pass: For more severe depression, NICE lists first-line options including individual CBT, indivi]",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c016",
+   "where": "treatment",
+   "classification": "supported",
+   "evidence": "NHS treatment page: mild: watchful waiting, exercise, guided self-help (6-8 sessions), CBT if not improving; moderate to severe: talking therapy plus antidepressants; specialist team for severe; interpersonal therapy, counselling, couples therapy. [first-pass: A GP will usually prescribe a type of antidepressant called a selective serotonin reuptake]",
+   "url": "https://www.nhs.uk/mental-health/conditions/depression-in-adults/treatment/",
+   "action": "kept"
+  },
+  {
+   "id": "c017",
+   "where": "treatment",
+   "classification": "supported",
+   "evidence": "NHS talking therapies page: can refer yourself to an NHS talking therapies service without a GP referral; a GP can also refer; services vary; cannot provide urgent help; contact within a few weeks. [first-pass: People can refer themselves for talking therapies such as CBT or counselling on the NHS wi]",
+   "url": "https://www.nhs.uk/mental-health/talking-therapies-medicine-treatments/talking-therapies-and-counselling/nhs-talking-therapies/",
+   "action": "edited",
+   "newSentence": "The NHS says people can refer themselves directly to an NHS talking therapies service without a GP referral."
+  },
+  {
+   "id": "c018",
+   "where": "prevention",
+   "classification": "supported",
+   "evidence": "Mind (retrieved): persistent depressive disorder 2 years or more; SAD at a particular time of year; antenatal in pregnancy; postnatal first year after baby; self-care: same wake/bed times, eating and drinking regularly, sharing experiences and being listened to helps. [first-pass: The NHS and Mind describe regular exercise, healthy eating, cutting down on alcohol and ta]",
+   "url": "https://www.mind.org.uk/information-support/types-of-mental-health-problems/depression/self-care/",
+   "action": "edited",
+   "newSentence": "The NHS and Mind describe regular exercise, not drinking too much alcohol, eating and drinking regularly and sharing experiences with other people as ways of looking after mood."
+  },
+  {
+   "id": "c019",
+   "where": "seekCare",
+   "classification": "supported",
+   "evidence": "Lead-retrieved NHS help-for-suicidal-thoughts evidence: Samaritans 116 123 free 24 hours; 999/A&E if in immediate danger; NHS 111 24 hours, mental health option; plus NHS symptoms page: severe depression can make you feel suicidal. [first-pass: If someone is in immediate danger, has seriously harmed themselves or may be about to, cal]",
+   "url": "https://www.nhs.uk/mental-health/feelings-symptoms-behaviours/behaviours/help-for-suicidal-thoughts/",
+   "action": "edited",
+   "newSentence": "If someone is in immediate danger, call 999 or go to A&E."
+  },
+  {
+   "id": "c020",
+   "where": "seekCare",
+   "classification": "supported",
+   "evidence": "Lead-retrieved NHS help-for-suicidal-thoughts evidence: Samaritans 116 123 free 24 hours; 999/A&E if in immediate danger; NHS 111 24 hours, mental health option; plus NHS symptoms page: severe depression can make you feel suicidal. [first-pass: For urgent help with thoughts of suicide, NHS 111 is available 24 hours a day, with a ment]",
+   "url": "https://www.nhs.uk/mental-health/feelings-symptoms-behaviours/behaviours/help-for-suicidal-thoughts/",
+   "action": "edited",
+   "newSentence": "For urgent help with thoughts of suicide, NHS 111 is available 24 hours a day (use the mental health option), and Samaritans can be called free on 116 123 at any time."
+  },
+  {
+   "id": "c021",
+   "where": "seekCare",
+   "classification": "supported",
+   "evidence": "NHS symptoms page (retrieved): psychological (continuous low mood, hopelessness, low self-esteem, tearful, suicidal thoughts), physical (aches and pains, appetite/weight change, usually decrease), social (avoiding friends, fewer social activities); see GP if most of the day, every day, for more than 2 weeks; low mood may improve after a short time. [first-pass: A GP appointment is the routine route when symptoms last most of the day, every day, for m]",
+   "url": "https://www.nhs.uk/mental-health/conditions/depression-in-adults/symptoms/",
+   "action": "edited",
+   "newSentence": "A GP appointment is the routine route when symptoms of depression last most of the day, every day, for more than two weeks."
+  },
+  {
+   "id": "c022",
+   "where": "seekCare",
+   "classification": "unsupported",
+   "evidence": "Not found in retrieved text of this pass (searches did not return it). [first-pass: A GP or crisis team can give an emergency appointment, and the GP should be told straight ]",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c023",
+   "where": "causes[0]",
+   "classification": "unsupported",
+   "evidence": "NHS: often a trigger; family history raises likelihood; stressful events, personality, giving birth; grief can bring on symptoms. Not retrieved this pass: losing a job, 'no obvious reason'. [first-pass: Life-changing events such as bereavement, losing a job or giving birth can trigger depress]",
+   "url": "https://www.nhs.uk/mental-health/conditions/depression-in-adults/",
+   "action": "edited",
+   "newSentence": "The NHS lists stressful events, personality and giving birth among the factors, and says grief after bereavement can bring on symptoms of depression. (losing a job removed as unconfirmed)"
+  },
+  {
+   "id": "c024",
+   "where": "causes[1]",
+   "classification": "unsupported",
+   "evidence": "Not found in retrieved text of this pass (searches did not return it). [first-pass: Some people become depressed for no obvious reason.]",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c025",
+   "where": "causes[2]",
+   "classification": "unsupported",
+   "evidence": "Not found in retrieved text of this pass (searches did not return it). [first-pass: Mind describes early-life difficulties and difficult life events as possible contributors.]",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c026",
+   "where": "causes[3]",
+   "classification": "supported",
+   "evidence": "MedlinePlus/NIMH: genetic, biological, environmental, psychological factors; certain medicines and conditions (viruses, thyroid disorders) can cause symptoms like depression; no lab test diagnoses depression; blood tests for anaemia or thyroid disease. [first-pass: Some physical illnesses and medicine side effects can cause depression.]",
+   "url": "https://medlineplus.gov/depression.html",
+   "action": "edited",
+   "newSentence": "Certain medicines and medical conditions, such as viruses or thyroid disorders, can cause symptoms like those of depression, according to NIMH and MedlinePlus."
+  },
+  {
+   "id": "c027",
+   "where": "causes[4]",
+   "classification": "unsupported",
+   "evidence": "Not found in retrieved text of this pass (searches did not return it). [first-pass: Patterns of negative thinking learned over time are described as another factor.]",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c028",
+   "where": "riskFactors[0]",
+   "classification": "supported",
+   "evidence": "NHS: often a trigger; family history raises likelihood; stressful events, personality, giving birth; grief can bring on symptoms. Not retrieved this pass: losing a job, 'no obvious reason'. [first-pass: A family history of depression raises the risk.]",
+   "url": "https://www.nhs.uk/mental-health/conditions/depression-in-adults/",
+   "action": "edited",
+   "newSentence": "A family history of depression raises the likelihood of experiencing it, according to the NHS."
+  },
+  {
+   "id": "c029",
+   "where": "riskFactors[1]",
+   "classification": "unsupported",
+   "evidence": "Not found in retrieved text of this pass (searches did not return it). [first-pass: Early-life difficulties can raise the risk.]",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c030",
+   "where": "riskFactors[2]",
+   "classification": "supported",
+   "evidence": "MedlinePlus/NIMH: genetic, biological, environmental, psychological factors; certain medicines and conditions (viruses, thyroid disorders) can cause symptoms like depression; no lab test diagnoses depression; blood tests for anaemia or thyroid disease. [first-pass: Physical illness can be linked to depression.]",
+   "url": "https://medlineplus.gov/depression.html",
+   "action": "removed"
+  },
+  {
+   "id": "c031",
+   "where": "signs[0]",
+   "classification": "supported",
+   "evidence": "NHS symptoms page (retrieved): psychological (continuous low mood, hopelessness, low self-esteem, tearful, suicidal thoughts), physical (aches and pains, appetite/weight change, usually decrease), social (avoiding friends, fewer social activities); see GP if most of the day, every day, for more than 2 weeks; low mood may improve after a short time. [first-pass: Persistent low mood, hopelessness and low self-esteem.]",
+   "url": "https://www.nhs.uk/mental-health/conditions/depression-in-adults/symptoms/",
+   "action": "edited",
+   "newSentence": "Continuous low mood, hopelessness and low self-esteem."
+  },
+  {
+   "id": "c032",
+   "where": "signs[1]",
+   "classification": "supported",
+   "evidence": "NHS symptoms page (retrieved): psychological (continuous low mood, hopelessness, low self-esteem, tearful, suicidal thoughts), physical (aches and pains, appetite/weight change, usually decrease), social (avoiding friends, fewer social activities); see GP if most of the day, every day, for more than 2 weeks; low mood may improve after a short time. [first-pass: Withdrawal from social contact.]",
+   "url": "https://www.nhs.uk/mental-health/conditions/depression-in-adults/symptoms/",
+   "action": "edited",
+   "newSentence": "Avoiding contact with friends and taking part in fewer social activities."
+  },
+  {
+   "id": "c033",
+   "where": "signs[2]",
+   "classification": "supported",
+   "evidence": "NHS symptoms page (retrieved): psychological (continuous low mood, hopelessness, low self-esteem, tearful, suicidal thoughts), physical (aches and pains, appetite/weight change, usually decrease), social (avoiding friends, fewer social activities); see GP if most of the day, every day, for more than 2 weeks; low mood may improve after a short time. [first-pass: Poor sleep, loss of appetite and constant tiredness.]",
+   "url": "https://www.nhs.uk/mental-health/conditions/depression-in-adults/symptoms/",
+   "action": "edited",
+   "newSentence": "Poor sleep, changes in appetite and constant tiredness."
+  },
+  {
+   "id": "c034",
+   "where": "complications[0]",
+   "classification": "supported",
+   "evidence": "NHS symptoms page (retrieved): psychological (continuous low mood, hopelessness, low self-esteem, tearful, suicidal thoughts), physical (aches and pains, appetite/weight change, usually decrease), social (avoiding friends, fewer social activities); see GP if most of the day, every day, for more than 2 weeks; low mood may improve after a short time. [first-pass: Thoughts of suicide or of harming oneself can occur, especially in severe depression.]",
+   "url": "https://www.nhs.uk/mental-health/conditions/depression-in-adults/symptoms/",
+   "action": "edited",
+   "newSentence": "Severe depression can make a person feel suicidal or feel that life is no longer worth living."
+  },
+  {
+   "id": "c035",
+   "where": "complications[1]",
+   "classification": "supported",
+   "evidence": "NHS inform: someone with psychotic depression might be at higher risk of thinking about suicide. [first-pass: Some people have psychotic symptoms, and those with psychotic depression are at higher ris]",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/mental-health/psychotic-depression/",
+   "action": "edited",
+   "newSentence": "Some people have psychotic depression. NHS inform says that a person with psychotic depression might be at higher risk of thinking about suicide."
+  },
+  {
+   "id": "c036",
+   "where": "complications[2]",
+   "classification": "supported",
+   "evidence": "NHS symptoms page (retrieved): psychological (continuous low mood, hopelessness, low self-esteem, tearful, suicidal thoughts), physical (aches and pains, appetite/weight change, usually decrease), social (avoiding friends, fewer social activities); see GP if most of the day, every day, for more than 2 weeks; low mood may improve after a short time. [first-pass: Depression can affect daily life.]",
+   "url": "https://www.nhs.uk/mental-health/conditions/depression-in-adults/symptoms/",
+   "action": "kept"
+  },
+  {
+   "id": "c037",
+   "where": "article.sections[0]",
+   "classification": "supported",
+   "evidence": "NHS overview: depression is a low mood that lasts for weeks or months and affects daily life; symptoms vary, mild to severe; tiredness, poor sleep, appetite changes. [first-pass: Depression is a low mood that lasts for weeks or months and affects daily life.]",
+   "url": "https://www.nhs.uk/mental-health/conditions/depression-in-adults/overview/",
+   "action": "kept"
+  },
+  {
+   "id": "c038",
+   "where": "article.sections[0]",
+   "classification": "supported",
+   "evidence": "NHS symptoms page (retrieved): psychological (continuous low mood, hopelessness, low self-esteem, tearful, suicidal thoughts), physical (aches and pains, appetite/weight change, usually decrease), social (avoiding friends, fewer social activities); see GP if most of the day, every day, for more than 2 weeks; low mood may improve after a short time. [first-pass: A low mood is usually temporary and often lifts after a few days or weeks.]",
+   "url": "https://www.nhs.uk/mental-health/conditions/depression-in-adults/symptoms/",
+   "action": "edited",
+   "newSentence": "The NHS says a low mood may improve after a short period of time, and that this is not necessarily a sign of depression."
+  },
+  {
+   "id": "c039",
+   "where": "article.sections[0]",
+   "classification": "unsupported",
+   "evidence": "Not found in retrieved text of this pass (searches did not return it). [first-pass: If a low mood lasts longer than about two weeks, it may be a sign of depression.]",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c040",
+   "where": "article.sections[0]",
+   "classification": "supported",
+   "evidence": "NHS symptoms page (retrieved): psychological (continuous low mood, hopelessness, low self-esteem, tearful, suicidal thoughts), physical (aches and pains, appetite/weight change, usually decrease), social (avoiding friends, fewer social activities); see GP if most of the day, every day, for more than 2 weeks; low mood may improve after a short time. [first-pass: The NHS advises seeing a GP when symptoms of depression last for most of the day, every da]",
+   "url": "https://www.nhs.uk/mental-health/conditions/depression-in-adults/symptoms/",
+   "action": "edited",
+   "newSentence": "It advises seeing a GP when symptoms of depression last for most of the day, every day, for more than two weeks."
+  },
+  {
+   "id": "c041",
+   "where": "article.sections[0]",
+   "classification": "unsupported",
+   "evidence": "Not found in retrieved text of this pass (searches did not return it). [first-pass: Depression is more than a low mood, and a diagnosis needs several persistent symptoms in a]",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c042",
+   "where": "article.sections[0]",
+   "classification": "supported",
+   "evidence": "NHS overview: depression is a low mood that lasts for weeks or months and affects daily life; symptoms vary, mild to severe; tiredness, poor sleep, appetite changes. [first-pass: Symptoms range from mild to severe.]",
+   "url": "https://www.nhs.uk/mental-health/conditions/depression-in-adults/overview/",
+   "action": "edited",
+   "newSentence": "Symptoms vary a lot between people and range from mild to severe."
+  },
+  {
+   "id": "c043",
+   "where": "article.sections[0]",
+   "classification": "unsupported",
+   "evidence": "Not found in retrieved text of this pass (searches did not return it). [first-pass: At its mildest, a person may simply feel persistently low in spirit, while severe depressi]",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c044",
+   "where": "article.sections[0]",
+   "classification": "supported",
+   "evidence": "Mind (retrieved): persistent depressive disorder 2 years or more; SAD at a particular time of year; antenatal in pregnancy; postnatal first year after baby; self-care: same wake/bed times, eating and drinking regularly, sharing experiences and being listened to helps. [first-pass: Mind also describes particular forms of depression, including persistent depressive disord]",
+   "url": "https://www.mind.org.uk/information-support/types-of-mental-health-problems/depression/self-care/",
+   "action": "edited",
+   "newSentence": "Mind describes several forms of depression. Persistent depressive disorder is continuous depression that lasts for two years or more."
+  },
+  {
+   "id": "c045",
+   "where": "article.sections[0]",
+   "classification": "supported",
+   "evidence": "Mind (retrieved): persistent depressive disorder 2 years or more; SAD at a particular time of year; antenatal in pregnancy; postnatal first year after baby; self-care: same wake/bed times, eating and drinking regularly, sharing experiences and being listened to helps. [first-pass: Seasonal affective disorder is depression that occurs at a particular time of year, and an]",
+   "url": "https://www.mind.org.uk/information-support/types-of-mental-health-problems/depression/self-care/",
+   "action": "edited",
+   "newSentence": "Seasonal affective disorder is depression that occurs at a particular time of year or during a particular season. Antenatal depression occurs during pregnancy, and postnatal depression occurs in the first year after having a baby."
+  },
+  {
+   "id": "c046",
+   "where": "article.sections[1]",
+   "classification": "supported",
+   "evidence": "NHS symptoms page (retrieved): psychological (continuous low mood, hopelessness, low self-esteem, tearful, suicidal thoughts), physical (aches and pains, appetite/weight change, usually decrease), social (avoiding friends, fewer social activities); see GP if most of the day, every day, for more than 2 weeks; low mood may improve after a short time. [first-pass: Symptoms vary a lot from person to person.]",
+   "url": "https://www.nhs.uk/mental-health/conditions/depression-in-adults/symptoms/",
+   "action": "edited",
+   "newSentence": "Symptoms vary a lot from person to person, and the NHS groups them as psychological, physical and social."
+  },
+  {
+   "id": "c047",
+   "where": "article.sections[1]",
+   "classification": "supported",
+   "evidence": "NHS symptoms page (retrieved): psychological (continuous low mood, hopelessness, low self-esteem, tearful, suicidal thoughts), physical (aches and pains, appetite/weight change, usually decrease), social (avoiding friends, fewer social activities); see GP if most of the day, every day, for more than 2 weeks; low mood may improve after a short time. [first-pass: They can be psychological or physical.]",
+   "url": "https://www.nhs.uk/mental-health/conditions/depression-in-adults/symptoms/",
+   "action": "edited",
+   "newSentence": "Psychological symptoms include continuous low mood, hopelessness, low self-esteem and feeling tearful."
+  },
+  {
+   "id": "c048",
+   "where": "article.sections[1]",
+   "classification": "supported",
+   "evidence": "NHS symptoms page (retrieved): psychological (continuous low mood, hopelessness, low self-esteem, tearful, suicidal thoughts), physical (aches and pains, appetite/weight change, usually decrease), social (avoiding friends, fewer social activities); see GP if most of the day, every day, for more than 2 weeks; low mood may improve after a short time. [first-pass: Psychological symptoms include continuous low mood, hopelessness, low self-esteem, and tho]",
+   "url": "https://www.nhs.uk/mental-health/conditions/depression-in-adults/symptoms/",
+   "action": "edited",
+   "newSentence": "Psychological symptoms include continuous low mood, hopelessness, low self-esteem and feeling tearful. Suicidal thoughts are also listed among the psychological symptoms."
+  },
+  {
+   "id": "c049",
+   "where": "article.sections[1]",
+   "classification": "unsupported",
+   "evidence": "NHS symptoms page (retrieved): psychological (continuous low mood, hopelessness, low self-esteem, tearful, suicidal thoughts), physical (aches and pains, appetite/weight change, usually decrease), social (avoiding friends, fewer social activities); see GP if most of the day, every day, for more than 2 weeks; low mood may improve after a short time. [first-pass: Physical symptoms include feeling constantly tired, sleeping badly, having no appetite or ]",
+   "url": "https://www.nhs.uk/mental-health/conditions/depression-in-adults/symptoms/",
+   "action": "edited",
+   "newSentence": "Physical symptoms include feeling constantly tired, sleeping badly, changes in appetite or weight, usually a decrease, and unexplained aches and pains. (sex drive removed as unconfirmed)"
+  },
+  {
+   "id": "c050",
+   "where": "article.sections[1]",
+   "classification": "supported",
+   "evidence": "NHS symptoms page (retrieved): psychological (continuous low mood, hopelessness, low self-esteem, tearful, suicidal thoughts), physical (aches and pains, appetite/weight change, usually decrease), social (avoiding friends, fewer social activities); see GP if most of the day, every day, for more than 2 weeks; low mood may improve after a short time. [first-pass: Some people also withdraw from social contact.]",
+   "url": "https://www.nhs.uk/mental-health/conditions/depression-in-adults/symptoms/",
+   "action": "edited",
+   "newSentence": "Social effects include avoiding contact with friends and taking part in fewer social activities."
+  },
+  {
+   "id": "c051",
+   "where": "article.sections[1]",
+   "classification": "unsupported",
+   "evidence": "Not found in retrieved text of this pass (searches did not return it). [first-pass: A low mood that does not go away can be a sign of depression, and the NHS describes seeing]",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c052",
+   "where": "article.sections[1]",
+   "classification": "supported",
+   "evidence": "NHS inform: someone with psychotic depression might be at higher risk of thinking about suicide. [first-pass: Some people with depression also have psychotic symptoms, and people with psychotic depres]",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/mental-health/psychotic-depression/",
+   "action": "edited",
+   "newSentence": "Some people have psychotic depression. NHS inform says that a person with psychotic depression might be at higher risk of thinking about suicide."
+  },
+  {
+   "id": "c053",
+   "where": "article.sections[1]",
+   "classification": "unsupported",
+   "evidence": "Not found in retrieved text of this pass (searches did not return it). [first-pass: Because the picture differs so much between people, a GP looks at the whole pattern of sym]",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c054",
+   "where": "article.sections[2]",
+   "classification": "unsupported",
+   "evidence": "NHS: often a trigger; family history raises likelihood; stressful events, personality, giving birth; grief can bring on symptoms. Not retrieved this pass: losing a job, 'no obvious reason'. [first-pass: Life-changing events such as bereavement, losing a job or giving birth can trigger depress]",
+   "url": "https://www.nhs.uk/mental-health/conditions/depression-in-adults/",
+   "action": "edited",
+   "newSentence": "The NHS lists stressful events, personality and giving birth among the factors, and says grief after bereavement can bring on symptoms of depression. (losing a job removed as unconfirmed)"
+  },
+  {
+   "id": "c055",
+   "where": "article.sections[2]",
+   "classification": "unsupported",
+   "evidence": "Not found in retrieved text of this pass (searches did not return it). [first-pass: Some people become depressed for no obvious reason.]",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c056",
+   "where": "article.sections[2]",
+   "classification": "supported",
+   "evidence": "NHS: often a trigger; family history raises likelihood; stressful events, personality, giving birth; grief can bring on symptoms. Not retrieved this pass: losing a job, 'no obvious reason'. [first-pass: A family history of depression is described as raising the risk.]",
+   "url": "https://www.nhs.uk/mental-health/conditions/depression-in-adults/",
+   "action": "edited",
+   "newSentence": "A family history of depression raises the likelihood of experiencing it, according to the NHS."
+  },
+  {
+   "id": "c057",
+   "where": "article.sections[2]",
+   "classification": "unsupported",
+   "evidence": "Not found in retrieved text of this pass (searches did not return it). [first-pass: Mind describes early-life difficulties, difficult life events, physical illness and learne]",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c058",
+   "where": "article.sections[2]",
+   "classification": "unsupported",
+   "evidence": "Not found in retrieved text of this pass (searches did not return it). [first-pass: It also notes that some brain chemicals may be less active than they should be.]",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c059",
+   "where": "article.sections[2]",
+   "classification": "supported",
+   "evidence": "MedlinePlus/NIMH: genetic, biological, environmental, psychological factors; certain medicines and conditions (viruses, thyroid disorders) can cause symptoms like depression; no lab test diagnoses depression; blood tests for anaemia or thyroid disease. [first-pass: There is no physical test for depression.]",
+   "url": "https://medlineplus.gov/depression.html",
+   "action": "edited",
+   "newSentence": "There is no physical test that diagnoses depression."
+  },
+  {
+   "id": "c060",
+   "where": "article.sections[2]",
+   "classification": "supported",
+   "evidence": "NHS diagnosis page: GP may examine and do urine or blood tests to rule out similar conditions such as underactive thyroid; GP asks about history, previous mental health problems, lifestyle, triggers, thoughts of suicide or self-harm. [first-pass: A GP may arrange urine or blood tests to rule out other conditions with similar symptoms, ]",
+   "url": "https://www.nhs.uk/mental-health/conditions/depression-in-adults/diagnosis/",
+   "action": "edited",
+   "newSentence": "The NHS says a GP may examine the person and arrange some urine or blood tests to rule out other conditions with similar symptoms, such as an underactive thyroid."
+  },
+  {
+   "id": "c061",
+   "where": "article.sections[2]",
+   "classification": "unsupported",
+   "evidence": "Not found in retrieved text of this pass (searches did not return it). [first-pass: A GP also considers possible physical causes or side effects from medicines, then discusse]",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c062",
+   "where": "article.sections[3]",
+   "classification": "supported",
+   "evidence": "NHS treatment page: mild: watchful waiting, exercise, guided self-help (6-8 sessions), CBT if not improving; moderate to severe: talking therapy plus antidepressants; specialist team for severe; interpersonal therapy, counselling, couples therapy. [first-pass: Treatment is based on how severe the depression is.]",
+   "url": "https://www.nhs.uk/mental-health/conditions/depression-in-adults/treatment/",
+   "action": "kept"
+  },
+  {
+   "id": "c063",
+   "where": "article.sections[3]",
+   "classification": "unsupported",
+   "evidence": "NHS treatment page: mild: watchful waiting, exercise, guided self-help (6-8 sessions), CBT if not improving; moderate to severe: talking therapy plus antidepressants; specialist team for severe; interpersonal therapy, counselling, couples therapy. [first-pass: For mild depression, a GP may suggest watchful waiting, with a review after two to four we]",
+   "url": "https://www.nhs.uk/mental-health/conditions/depression-in-adults/treatment/",
+   "action": "edited",
+   "newSentence": "For mild depression, a GP may suggest watchful waiting, in which progress is monitored, along with exercise or guided self-help. (review interval removed)"
+  },
+  {
+   "id": "c064",
+   "where": "article.sections[3]",
+   "classification": "supported",
+   "evidence": "NHS overview: depression is a low mood that lasts for weeks or months and affects daily life; symptoms vary, mild to severe; tiredness, poor sleep, appetite changes. [first-pass: For moderate to severe depression, a combination of talking therapy and antidepressants is]",
+   "url": "https://www.nhs.uk/mental-health/conditions/depression-in-adults/overview/",
+   "action": "kept"
+  },
+  {
+   "id": "c065",
+   "where": "article.sections[3]",
+   "classification": "supported",
+   "evidence": "NICE NG222 (retrieved summary): antidepressants not routinely first-line for less severe depression unless preferred; guided self-help first for most; good evidence for group CBT and group BA; SSRIs preferred if antidepressant chosen; match to needs and preferences. [first-pass: NICE says guided self-help should be considered first for most people with less severe dep]",
+   "url": "https://www.nice.org.uk/guidance/ng222",
+   "action": "edited",
+   "newSentence": "NICE says guided self-help is the suggested first step for most people with less severe depression, and that the evidence for group CBT and group behavioural activation was good."
+  },
+  {
+   "id": "c066",
+   "where": "article.sections[3]",
+   "classification": "unsupported",
+   "evidence": "Not found in retrieved text of this pass (searches did not return it). [first-pass: For more severe depression, NICE lists first-line options including individual CBT, indivi]",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c067",
+   "where": "article.sections[3]",
+   "classification": "supported",
+   "evidence": "NICE NG222 (retrieved summary): antidepressants not routinely first-line for less severe depression unless preferred; guided self-help first for most; good evidence for group CBT and group BA; SSRIs preferred if antidepressant chosen; match to needs and preferences. [first-pass: NICE says the choice should be matched to the person's clinical needs and preferences.]",
+   "url": "https://www.nice.org.uk/guidance/ng222",
+   "action": "removed"
+  },
+  {
+   "id": "c068",
+   "where": "article.sections[3]",
+   "classification": "supported",
+   "evidence": "NHS talking therapies page: can refer yourself to an NHS talking therapies service without a GP referral; a GP can also refer; services vary; cannot provide urgent help; contact within a few weeks. [first-pass: People can refer themselves for talking therapies such as CBT or counselling on the NHS wi]",
+   "url": "https://www.nhs.uk/mental-health/talking-therapies-medicine-treatments/talking-therapies-and-counselling/nhs-talking-therapies/",
+   "action": "edited",
+   "newSentence": "The NHS says people can refer themselves directly to an NHS talking therapies service without a GP referral."
+  },
+  {
+   "id": "c069",
+   "where": "article.sections[4]",
+   "classification": "supported",
+   "evidence": "NHS treatment page and NHS sertraline/citalopram pages: GP usually starts with an SSRI; sertraline, paroxetine, fluoxetine, citalopram named; SSRIs as effective as older antidepressants with fewer side effects (nausea, headaches, dry mouth, tiredness, sleep, sex problems); improvement within 4 weeks; continue at least 4-6 months after symptoms ease; do not stop suddenly; not addictive like illegal drugs/cigarettes. [first-pass: A GP will usually prescribe a type of antidepressant called a selective serotonin reuptake]",
+   "url": "https://www.nhs.uk/mental-health/conditions/depression-in-adults/treatment/",
+   "action": "edited",
+   "newSentence": "The NHS says a GP will usually prescribe a type of antidepressant called a selective serotonin reuptake inhibitor (SSRI) if one is thought likely to help."
+  },
+  {
+   "id": "c070",
+   "where": "article.sections[4]",
+   "classification": "supported",
+   "evidence": "NHS treatment page and NHS sertraline/citalopram pages: GP usually starts with an SSRI; sertraline, paroxetine, fluoxetine, citalopram named; SSRIs as effective as older antidepressants with fewer side effects (nausea, headaches, dry mouth, tiredness, sleep, sex problems); improvement within 4 weeks; continue at least 4-6 months after symptoms ease; do not stop suddenly; not addictive like illegal drugs/cigarettes. [first-pass: The NHS names sertraline, paroxetine, fluoxetine and citalopram as commonly used examples.]",
+   "url": "https://www.nhs.uk/mental-health/conditions/depression-in-adults/treatment/",
+   "action": "edited",
+   "newSentence": "It names sertraline, paroxetine, fluoxetine and citalopram as commonly used examples."
+  },
+  {
+   "id": "c071",
+   "where": "article.sections[4]",
+   "classification": "supported",
+   "evidence": "NHS treatment page and NHS sertraline/citalopram pages: GP usually starts with an SSRI; sertraline, paroxetine, fluoxetine, citalopram named; SSRIs as effective as older antidepressants with fewer side effects (nausea, headaches, dry mouth, tiredness, sleep, sex problems); improvement within 4 weeks; continue at least 4-6 months after symptoms ease; do not stop suddenly; not addictive like illegal drugs/cigarettes. [first-pass: It says SSRIs work about as well as older antidepressants with fewer side effects, though ]",
+   "url": "https://www.nhs.uk/mental-health/conditions/depression-in-adults/treatment/",
+   "action": "edited",
+   "newSentence": "The NHS says SSRIs work about as well as older antidepressants with fewer side effects, although they can still cause nausea, headaches, a dry mouth, tiredness, sleeping problems and problems with sex."
+  },
+  {
+   "id": "c072",
+   "where": "article.sections[4]",
+   "classification": "supported",
+   "evidence": "NHS treatment page and NHS sertraline/citalopram pages: GP usually starts with an SSRI; sertraline, paroxetine, fluoxetine, citalopram named; SSRIs as effective as older antidepressants with fewer side effects (nausea, headaches, dry mouth, tiredness, sleep, sex problems); improvement within 4 weeks; continue at least 4-6 months after symptoms ease; do not stop suddenly; not addictive like illegal drugs/cigarettes. [first-pass: Symptoms should start to improve within about four weeks, and treatment usually continues ]",
+   "url": "https://www.nhs.uk/mental-health/conditions/depression-in-adults/treatment/",
+   "action": "edited",
+   "newSentence": "The NHS says symptoms start to improve within four weeks of starting an antidepressant, and that if it is working, it is continued for at least four to six months after symptoms have eased."
+  },
+  {
+   "id": "c073",
+   "where": "article.sections[4]",
+   "classification": "supported",
+   "evidence": "NHS treatment page: mild: watchful waiting, exercise, guided self-help (6-8 sessions), CBT if not improving; moderate to severe: talking therapy plus antidepressants; specialist team for severe; interpersonal therapy, counselling, couples therapy. [first-pass: Tricyclic antidepressants such as amitriptyline are older options.]",
+   "url": "https://www.nhs.uk/mental-health/conditions/depression-in-adults/treatment/",
+   "action": "edited",
+   "newSentence": "Tricyclic antidepressants are older options used for moderate to severe depression."
+  },
+  {
+   "id": "c074",
+   "where": "article.sections[4]",
+   "classification": "unsupported",
+   "evidence": "Not found in retrieved text of this pass (searches did not return it). [first-pass: The NHS says to contact a GP straight away if hopelessness or suicidal thoughts begin or g]",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c075",
+   "where": "article.sections[4]",
+   "classification": "supported",
+   "evidence": "NICE NG222 (retrieved summary): antidepressants not routinely first-line for less severe depression unless preferred; guided self-help first for most; good evidence for group CBT and group BA; SSRIs preferred if antidepressant chosen; match to needs and preferences. [first-pass: For less severe depression, NICE advises against routinely offering antidepressants first ]",
+   "url": "https://www.nice.org.uk/guidance/ng222",
+   "action": "edited",
+   "newSentence": "NICE considers SSRIs the preferred antidepressant if one is chosen, because of their safety and tolerability."
+  },
+  {
+   "id": "c076",
+   "where": "article.sections[5]",
+   "classification": "unsupported",
+   "evidence": "NHS treatment page: mild: watchful waiting, exercise, guided self-help (6-8 sessions), CBT if not improving; moderate to severe: talking therapy plus antidepressants; specialist team for severe; interpersonal therapy, counselling, couples therapy. [first-pass: The NHS suggests getting more exercise, cutting down on alcohol, giving up smoking and eat]",
+   "url": "https://www.nhs.uk/mental-health/conditions/depression-in-adults/treatment/",
+   "action": "edited",
+   "newSentence": "The NHS lists exercise as one of the main treatments for mild depression, and includes not drinking too much alcohol among its tips for coping with depression. (smoking and healthy eating removed as unconfirmed)"
+  },
+  {
+   "id": "c077",
+   "where": "article.sections[5]",
+   "classification": "unsupported",
+   "evidence": "Not found in retrieved text of this pass (searches did not return it). [first-pass: Self-help books and support groups are also described as useful.]",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c078",
+   "where": "article.sections[5]",
+   "classification": "unsupported",
+   "evidence": "Mind (retrieved): persistent depressive disorder 2 years or more; SAD at a particular time of year; antenatal in pregnancy; postnatal first year after baby; self-care: same wake/bed times, eating and drinking regularly, sharing experiences and being listened to helps. [first-pass: Mind describes keeping a regular bedtime and wake-up time, eating regular meals, and pacin]",
+   "url": "https://www.mind.org.uk/information-support/types-of-mental-health-problems/depression/self-care/",
+   "action": "edited",
+   "newSentence": "Mind suggests aiming to wake up and go to bed at the same time each day, and eating and drinking regularly. (pacing removed as unconfirmed)"
+  },
+  {
+   "id": "c079",
+   "where": "article.sections[5]",
+   "classification": "unsupported",
+   "evidence": "Mind (retrieved): persistent depressive disorder 2 years or more; SAD at a particular time of year; antenatal in pregnancy; postnatal first year after baby; self-care: same wake/bed times, eating and drinking regularly, sharing experiences and being listened to helps. [first-pass: It also describes delaying important life decisions until feeling better, talking to peopl]",
+   "url": "https://www.mind.org.uk/information-support/types-of-mental-health-problems/depression/self-care/",
+   "action": "edited",
+   "newSentence": "Mind also notes that sharing experiences with other people can help someone feel better, and that having someone listen and show they care can help in itself. (decision delay and drugs removed as unconfirmed)"
+  },
+  {
+   "id": "c080",
+   "where": "article.sections[5]",
+   "classification": "unsupported",
+   "evidence": "Not found in retrieved text of this pass (searches did not return it). [first-pass: Mind and other results describe walking as one way of being physically active that can lif]",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c081",
+   "where": "article.sections[5]",
+   "classification": "supported",
+   "evidence": "NHS talking therapies page: can refer yourself to an NHS talking therapies service without a GP referral; a GP can also refer; services vary; cannot provide urgent help; contact within a few weeks. [first-pass: People can also refer themselves for talking therapies on the NHS without a GP referral.]",
+   "url": "https://www.nhs.uk/mental-health/talking-therapies-medicine-treatments/talking-therapies-and-counselling/nhs-talking-therapies/",
+   "action": "edited",
+   "newSentence": "The NHS says people can refer themselves directly to an NHS talking therapies service without a GP referral."
+  },
+  {
+   "id": "c082",
+   "where": "article.sections[5]",
+   "classification": "unsupported",
+   "evidence": "Not found in retrieved text of this pass (searches did not return it). [first-pass: The NHS says that with the right treatment and support, most people with depression can im]",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c083",
+   "where": "article.sections[6]",
+   "classification": "supported",
+   "evidence": "NHS symptoms page (retrieved): psychological (continuous low mood, hopelessness, low self-esteem, tearful, suicidal thoughts), physical (aches and pains, appetite/weight change, usually decrease), social (avoiding friends, fewer social activities); see GP if most of the day, every day, for more than 2 weeks; low mood may improve after a short time. [first-pass: Thoughts of suicide or of harming oneself can occur in depression, and the NHS says help i]",
+   "url": "https://www.nhs.uk/mental-health/conditions/depression-in-adults/symptoms/",
+   "action": "edited",
+   "newSentence": "Severe depression can make a person feel suicidal, and the NHS says help is available."
+  },
+  {
+   "id": "c084",
+   "where": "article.sections[6]",
+   "classification": "supported",
+   "evidence": "Lead-retrieved NHS help-for-suicidal-thoughts evidence: Samaritans 116 123 free 24 hours; 999/A&E if in immediate danger; NHS 111 24 hours, mental health option; plus NHS symptoms page: severe depression can make you feel suicidal. [first-pass: The NHS advises that anyone who feels their life is not worth living, or who thinks about ]",
+   "url": "https://www.nhs.uk/mental-health/feelings-symptoms-behaviours/behaviours/help-for-suicidal-thoughts/",
+   "action": "edited",
+   "newSentence": "If someone is in immediate danger, the NHS says to call 999 or go to A&E."
+  },
+  {
+   "id": "c085",
+   "where": "article.sections[6]",
+   "classification": "supported",
+   "evidence": "Lead-retrieved NHS help-for-suicidal-thoughts evidence: Samaritans 116 123 free 24 hours; 999/A&E if in immediate danger; NHS 111 24 hours, mental health option; plus NHS symptoms page: severe depression can make you feel suicidal. [first-pass: If someone has seriously harmed themselves, or may be about to, the NHS says to call 999 f]",
+   "url": "https://www.nhs.uk/mental-health/feelings-symptoms-behaviours/behaviours/help-for-suicidal-thoughts/",
+   "action": "edited",
+   "newSentence": "If someone is in immediate danger, the NHS says to call 999 or go to A&E."
+  },
+  {
+   "id": "c086",
+   "where": "article.sections[6]",
+   "classification": "supported",
+   "evidence": "Lead-retrieved NHS help-for-suicidal-thoughts evidence: Samaritans 116 123 free 24 hours; 999/A&E if in immediate danger; NHS 111 24 hours, mental health option; plus NHS symptoms page: severe depression can make you feel suicidal. [first-pass: Samaritans can be called free on 116 123, 24 hours a day.]",
+   "url": "https://www.nhs.uk/mental-health/feelings-symptoms-behaviours/behaviours/help-for-suicidal-thoughts/",
+   "action": "edited",
+   "newSentence": "Samaritans can be called free on 116 123, 24 hours a day, every day."
+  },
+  {
+   "id": "c087",
+   "where": "article.sections[6]",
+   "classification": "supported",
+   "evidence": "Lead-retrieved NHS help-for-suicidal-thoughts evidence: Samaritans 116 123 free 24 hours; 999/A&E if in immediate danger; NHS 111 24 hours, mental health option; plus NHS symptoms page: severe depression can make you feel suicidal. [first-pass: NHS 111 is available 24 hours a day, and NHS services describe a mental health option on t]",
+   "url": "https://www.nhs.uk/mental-health/feelings-symptoms-behaviours/behaviours/help-for-suicidal-thoughts/",
+   "action": "edited",
+   "newSentence": "NHS 111 is also available 24 hours a day, and the NHS lists it for urgent mental health help."
+  },
+  {
+   "id": "c088",
+   "where": "article.sections[6]",
+   "classification": "unsupported",
+   "evidence": "Not found in retrieved text of this pass (searches did not return it). [first-pass: A GP or crisis team can give an emergency appointment, and a GP can be contacted for routi]",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c089",
+   "where": "article.sections[6]",
+   "classification": "unsupported",
+   "evidence": "Not found in retrieved text of this pass (searches did not return it). [first-pass: The NHS adds that the GP should be told straight away if hopelessness or suicidal thoughts]",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c090",
+   "where": "article.faqs[0]",
+   "classification": "supported",
+   "evidence": "NHS symptoms page (retrieved): psychological (continuous low mood, hopelessness, low self-esteem, tearful, suicidal thoughts), physical (aches and pains, appetite/weight change, usually decrease), social (avoiding friends, fewer social activities); see GP if most of the day, every day, for more than 2 weeks; low mood may improve after a short time. [first-pass: A low mood is usually temporary and often lifts after a few days or weeks.]",
+   "url": "https://www.nhs.uk/mental-health/conditions/depression-in-adults/symptoms/",
+   "action": "edited",
+   "newSentence": "The NHS says a low mood may improve after a short period of time, and that this is not necessarily a sign of depression."
+  },
+  {
+   "id": "c091",
+   "where": "article.faqs[0]",
+   "classification": "supported",
+   "evidence": "NHS overview: depression is a low mood that lasts for weeks or months and affects daily life; symptoms vary, mild to severe; tiredness, poor sleep, appetite changes. [first-pass: Depression is a low mood that lasts for weeks or months and affects daily life.]",
+   "url": "https://www.nhs.uk/mental-health/conditions/depression-in-adults/overview/",
+   "action": "kept"
+  },
+  {
+   "id": "c092",
+   "where": "article.faqs[0]",
+   "classification": "unsupported",
+   "evidence": "Not found in retrieved text of this pass (searches did not return it). [first-pass: If a low mood lasts longer than about two weeks, it may be a sign of depression.]",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c093",
+   "where": "article.faqs[0]",
+   "classification": "supported",
+   "evidence": "NHS symptoms page (retrieved): psychological (continuous low mood, hopelessness, low self-esteem, tearful, suicidal thoughts), physical (aches and pains, appetite/weight change, usually decrease), social (avoiding friends, fewer social activities); see GP if most of the day, every day, for more than 2 weeks; low mood may improve after a short time. [first-pass: Depression usually also brings other symptoms, such as hopelessness, tiredness and poor sl]",
+   "url": "https://www.nhs.uk/mental-health/conditions/depression-in-adults/symptoms/",
+   "action": "edited",
+   "newSentence": "Symptoms can also be physical, such as constant tiredness and poor sleep, and the NHS advises seeing a GP when symptoms last most of the day, every day, for more than two weeks."
+  },
+  {
+   "id": "c094",
+   "where": "article.faqs[1]",
+   "classification": "unsupported",
+   "evidence": "Not found in retrieved text of this pass (searches did not return it). [first-pass: The NHS says that with the right treatment and support, most people with depression can im]",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c095",
+   "where": "article.faqs[1]",
+   "classification": "supported",
+   "evidence": "NHS treatment page: mild: watchful waiting, exercise, guided self-help (6-8 sessions), CBT if not improving; moderate to severe: talking therapy plus antidepressants; specialist team for severe; interpersonal therapy, counselling, couples therapy. [first-pass: Treatment depends on severity and may include self-help, talking therapies such as CBT, an]",
+   "url": "https://www.nhs.uk/mental-health/conditions/depression-in-adults/treatment/",
+   "action": "edited",
+   "newSentence": "The NHS describes treatment that depends on severity. Mild depression may be managed with watchful waiting, exercise, guided self-help or talking therapies such as CBT."
+  },
+  {
+   "id": "c096",
+   "where": "article.faqs[1]",
+   "classification": "supported",
+   "evidence": "NHS treatment page: mild: watchful waiting, exercise, guided self-help (6-8 sessions), CBT if not improving; moderate to severe: talking therapy plus antidepressants; specialist team for severe; interpersonal therapy, counselling, couples therapy. [first-pass: A GP discusses the available options, including antidepressants and talking therapies.]",
+   "url": "https://www.nhs.uk/mental-health/conditions/depression-in-adults/treatment/",
+   "action": "edited",
+   "newSentence": "A GP can discuss which options may suit the person."
+  },
+  {
+   "id": "c097",
+   "where": "article.faqs[2]",
+   "classification": "supported",
+   "evidence": "NHS talking therapies page: can refer yourself to an NHS talking therapies service without a GP referral; a GP can also refer; services vary; cannot provide urgent help; contact within a few weeks. [first-pass: The NHS says people can refer themselves for talking therapies such as CBT or counselling ]",
+   "url": "https://www.nhs.uk/mental-health/talking-therapies-medicine-treatments/talking-therapies-and-counselling/nhs-talking-therapies/",
+   "action": "edited",
+   "newSentence": "The NHS says people can refer themselves directly to an NHS talking therapies service without a GP referral."
+  },
+  {
+   "id": "c098",
+   "where": "article.faqs[2]",
+   "classification": "supported",
+   "evidence": "NHS talking therapies page: can refer yourself to an NHS talking therapies service without a GP referral; a GP can also refer; services vary; cannot provide urgent help; contact within a few weeks. [first-pass: A GP can also discuss treatment options, including antidepressants and talking therapies.]",
+   "url": "https://www.nhs.uk/mental-health/talking-therapies-medicine-treatments/talking-therapies-and-counselling/nhs-talking-therapies/",
+   "action": "edited",
+   "newSentence": "A GP can discuss treatment options, including talking therapies and antidepressants, and can refer a person to talking therapies, although people can also refer themselves."
+  },
+  {
+   "id": "c099",
+   "where": "article.faqs[2]",
+   "classification": "supported",
+   "evidence": "NHS treatment page: mild: watchful waiting, exercise, guided self-help (6-8 sessions), CBT if not improving; moderate to severe: talking therapy plus antidepressants; specialist team for severe; interpersonal therapy, counselling, couples therapy. [first-pass: For mild depression, a GP may suggest watchful waiting, with exercise or guided self-help ]",
+   "url": "https://www.nhs.uk/mental-health/conditions/depression-in-adults/treatment/",
+   "action": "edited",
+   "newSentence": "For mild depression, a GP may suggest watchful waiting, in which progress is monitored, along with exercise or guided self-help."
+  },
+  {
+   "id": "c100",
+   "where": "article.faqs[3]",
+   "classification": "supported",
+   "evidence": "NHS treatment page and NHS sertraline/citalopram pages: GP usually starts with an SSRI; sertraline, paroxetine, fluoxetine, citalopram named; SSRIs as effective as older antidepressants with fewer side effects (nausea, headaches, dry mouth, tiredness, sleep, sex problems); improvement within 4 weeks; continue at least 4-6 months after symptoms ease; do not stop suddenly; not addictive like illegal drugs/cigarettes. [first-pass: The NHS says symptoms should start to improve within about four weeks.]",
+   "url": "https://www.nhs.uk/mental-health/conditions/depression-in-adults/treatment/",
+   "action": "edited",
+   "newSentence": "The NHS says symptoms start to improve within four weeks of starting an antidepressant."
+  },
+  {
+   "id": "c101",
+   "where": "article.faqs[3]",
+   "classification": "supported",
+   "evidence": "NHS treatment page and NHS sertraline/citalopram pages: GP usually starts with an SSRI; sertraline, paroxetine, fluoxetine, citalopram named; SSRIs as effective as older antidepressants with fewer side effects (nausea, headaches, dry mouth, tiredness, sleep, sex problems); improvement within 4 weeks; continue at least 4-6 months after symptoms ease; do not stop suddenly; not addictive like illegal drugs/cigarettes. [first-pass: Common side effects of SSRIs include nausea, headaches, dry mouth, tiredness, sleep proble]",
+   "url": "https://www.nhs.uk/mental-health/conditions/depression-in-adults/treatment/",
+   "action": "edited",
+   "newSentence": "SSRIs can cause side effects such as nausea, headaches, a dry mouth, tiredness and sleeping problems."
+  },
+  {
+   "id": "c102",
+   "where": "article.faqs[3]",
+   "classification": "supported",
+   "evidence": "NHS treatment page and NHS sertraline/citalopram pages: GP usually starts with an SSRI; sertraline, paroxetine, fluoxetine, citalopram named; SSRIs as effective as older antidepressants with fewer side effects (nausea, headaches, dry mouth, tiredness, sleep, sex problems); improvement within 4 weeks; continue at least 4-6 months after symptoms ease; do not stop suddenly; not addictive like illegal drugs/cigarettes. [first-pass: Treatment usually continues for several months after symptoms ease.]",
+   "url": "https://www.nhs.uk/mental-health/conditions/depression-in-adults/treatment/",
+   "action": "edited",
+   "newSentence": "If it is working, treatment is continued for at least four to six months after symptoms have eased."
+  },
+  {
+   "id": "c103",
+   "where": "article.faqs[3]",
+   "classification": "unsupported",
+   "evidence": "Not found in retrieved text of this pass (searches did not return it). [first-pass: A GP should be told straight away if hopelessness or suicidal thoughts begin or get worse ]",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c104",
+   "where": "article.faqs[4]",
+   "classification": "supported",
+   "evidence": "Lead-retrieved NHS help-for-suicidal-thoughts evidence: Samaritans 116 123 free 24 hours; 999/A&E if in immediate danger; NHS 111 24 hours, mental health option; plus NHS symptoms page: severe depression can make you feel suicidal. [first-pass: If someone has seriously harmed themselves or may be about to, the NHS says to call 999 fo]",
+   "url": "https://www.nhs.uk/mental-health/feelings-symptoms-behaviours/behaviours/help-for-suicidal-thoughts/",
+   "action": "edited",
+   "newSentence": "If someone is in immediate danger, call 999 or go to A&E."
+  },
+  {
+   "id": "c105",
+   "where": "article.faqs[4]",
+   "classification": "supported",
+   "evidence": "Lead-retrieved NHS help-for-suicidal-thoughts evidence: Samaritans 116 123 free 24 hours; 999/A&E if in immediate danger; NHS 111 24 hours, mental health option; plus NHS symptoms page: severe depression can make you feel suicidal. [first-pass: Samaritans can be called free on 116 123, 24 hours a day.]",
+   "url": "https://www.nhs.uk/mental-health/feelings-symptoms-behaviours/behaviours/help-for-suicidal-thoughts/",
+   "action": "edited",
+   "newSentence": "Samaritans can be called free on 116 123, 24 hours a day, every day."
+  },
+  {
+   "id": "c106",
+   "where": "article.faqs[4]",
+   "classification": "supported",
+   "evidence": "Lead-retrieved NHS help-for-suicidal-thoughts evidence: Samaritans 116 123 free 24 hours; 999/A&E if in immediate danger; NHS 111 24 hours, mental health option; plus NHS symptoms page: severe depression can make you feel suicidal. [first-pass: NHS 111 is available 24 hours a day, with a mental health option described by NHS services]",
+   "url": "https://www.nhs.uk/mental-health/feelings-symptoms-behaviours/behaviours/help-for-suicidal-thoughts/",
+   "action": "edited",
+   "newSentence": "NHS 111 is also available 24 hours a day, and the NHS lists it for urgent mental health help; the mental health option is chosen from the menu."
+  },
+  {
+   "id": "c107",
+   "where": "article.faqs[4]",
+   "classification": "unsupported",
+   "evidence": "Not found in retrieved text of this pass (searches did not return it). [first-pass: A GP or crisis team can also give an emergency appointment.]",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c108",
+   "where": "article.keyFacts[0]",
+   "classification": "textbook",
+   "evidence": "Plain synonym (MedlinePlus uses 'major depression'); the one textbook item. [first-pass: Clinical depression, major depressive disorder]",
+   "url": "https://medlineplus.gov/depression.html",
+   "action": "kept"
+  },
+  {
+   "id": "c109",
+   "where": "article.keyFacts[1]",
+   "classification": "supported",
+   "evidence": "NHS overview: depression is a low mood that lasts for weeks or months and affects daily life; symptoms vary, mild to severe; tiredness, poor sleep, appetite changes. [first-pass: Low mood lasting weeks or months that affects daily life]",
+   "url": "https://www.nhs.uk/mental-health/conditions/depression-in-adults/overview/",
+   "action": "kept"
+  },
+  {
+   "id": "c110",
+   "where": "article.keyFacts[2]",
+   "classification": "supported",
+   "evidence": "NHS symptoms page (retrieved): psychological (continuous low mood, hopelessness, low self-esteem, tearful, suicidal thoughts), physical (aches and pains, appetite/weight change, usually decrease), social (avoiding friends, fewer social activities); see GP if most of the day, every day, for more than 2 weeks; low mood may improve after a short time. [first-pass: When symptoms last most of the day, every day, for more than two weeks]",
+   "url": "https://www.nhs.uk/mental-health/conditions/depression-in-adults/symptoms/",
+   "action": "edited",
+   "newSentence": "When symptoms last most of the day, every day, for more than two weeks (NHS)"
+  },
+  {
+   "id": "c111",
+   "where": "article.keyFacts[3]",
+   "classification": "supported",
+   "evidence": "NHS overview: depression is a low mood that lasts for weeks or months and affects daily life; symptoms vary, mild to severe; tiredness, poor sleep, appetite changes. [first-pass: A GP; there is no physical test, but tests may rule out other conditions]",
+   "url": "https://www.nhs.uk/mental-health/conditions/depression-in-adults/overview/",
+   "action": "kept"
+  },
+  {
+   "id": "c112",
+   "where": "article.keyFacts[4]",
+   "classification": "supported",
+   "evidence": "NHS overview: depression is a low mood that lasts for weeks or months and affects daily life; symptoms vary, mild to severe; tiredness, poor sleep, appetite changes. [first-pass: Self-help, talking therapies such as CBT, antidepressants, or a combination]",
+   "url": "https://www.nhs.uk/mental-health/conditions/depression-in-adults/overview/",
+   "action": "kept"
+  },
+  {
+   "id": "c113",
+   "where": "article.keyFacts[5]",
+   "classification": "unsupported",
+   "evidence": "Not found in retrieved text of this pass (searches did not return it). [first-pass: With the right treatment and support, most people can improve]",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c114",
+   "where": "article.keyFacts[6]",
+   "classification": "supported",
+   "evidence": "Lead-retrieved NHS help-for-suicidal-thoughts evidence: Samaritans 116 123 free 24 hours; 999/A&E if in immediate danger; NHS 111 24 hours, mental health option; plus NHS symptoms page: severe depression can make you feel suicidal. [first-pass: 999 if in immediate danger; NHS 111 mental health option; Samaritans 116 123, free, any ti]",
+   "url": "https://www.nhs.uk/mental-health/feelings-symptoms-behaviours/behaviours/help-for-suicidal-thoughts/",
+   "action": "kept"
+  }
+ ],
+ "notes": "Second pass used the full 13-search budget; search summaries blend pages, so page attribution is approximate. Removed because not retrieved: 'most people can improve' (also not found by an exact-phrase query), 'tell the GP straight away if suicidal thoughts worsen after starting antidepressants' (searched twice, not returned), Mind early-life/negative-thinking/brain-chemical causes, losing a job, no-obvious-reason, review after 2-4 weeks, NICE first-line list for more severe depression, smoking/healthy eating/books/support groups/walking/pacing/delaying decisions, amitriptyline, emergency appointment from GP or crisis team. Sertraline and citalopram links are supported: an NHS page names sertraline, paroxetine, fluoxetine and citalopram as commonly used SSRIs and NHS pages exist for both. Hypothyroidism related link kept: NHS lists low mood as a common underactive thyroid symptom and the depression diagnosis page names underactive thyroid. NHS talking therapies self-referral confirmed (NHS page). Alias 'major depressive disorder' counted as the one textbook item. Human check: antidepressant duration '4 to 6 months' came from a search summary of the NHS treatment page, and the 'NHS pages for sertraline and citalopram advise against stopping suddenly / not addictive like illegal drugs' sentences came from a summary of those pages; NICE sentences come from NICE page summaries (rationale text), not the full guideline."
+}
