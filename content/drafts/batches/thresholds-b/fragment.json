@@ -76,9 +76,9 @@
       "context": "A 12-lead ECG is recorded and read within this time when an acute coronary syndrome is suspected",
       "jurisdiction": "UK",
       "source": {
-       "title": "NICE QS68: Acute coronary syndromes (including myocardial infarction)",
-       "url": "https://www.nice.org.uk/guidance/qs68",
-       "section": "Statement on 12-lead ECG within 10 minutes"
+       "title": "NHS England North: Guidelines for management of patients with NSTEMI acute coronary syndrome (quoting ESC)",
+       "url": "https://www.england.nhs.uk/north/wp-content/uploads/sites/5/2019/01/guidelines-management-of-patients-with-NSTEMI-acute-coronary-syndrome.pdf",
+       "section": "ECG"
       }
      },
      {
@@ -108,8 +108,8 @@
     ],
     "references": [
      {
-      "title": "NICE QS68: Acute coronary syndromes (including myocardial infarction)",
-      "url": "https://www.nice.org.uk/guidance/qs68"
+      "title": "NHS England North: Guidelines for management of patients with NSTEMI acute coronary syndrome",
+      "url": "https://www.england.nhs.uk/north/wp-content/uploads/sites/5/2019/01/guidelines-management-of-patients-with-NSTEMI-acute-coronary-syndrome.pdf"
      },
      {
       "title": "BHF: Heart and pulse rate: what's normal and how to check it",
@@ -133,7 +133,7 @@
     "measures": [
      {
       "item": "Ejection fraction",
-      "meaning": "The fraction of blood the left ventricle ejects each beat. Sources differ on the lower limit of normal: British Society of Echocardiography reporting categories treat above 55% as normal, while the BHF and NHS England describe 50% or more as normal. Heart failure with reduced ejection fraction is defined as 40% or less."
+      "meaning": "The fraction of blood the left ventricle ejects each beat. Sources differ on the lower limit of normal: British Society of Echocardiography reporting categories treat 55% or more as normal (50 to 54% is borderline low), while the BHF and NHS England describe 50% or more as normal. In heart failure classification, a reduced ejection fraction is usually taken as 40% or less."
      },
      {
       "item": "Valve function",
@@ -172,14 +172,14 @@
     ],
     "thresholds": [
      {
-      "name": "Normal left ventricular ejection fraction (BSE-style reporting)",
-      "value": "above 55",
+      "name": "Normal left ventricular ejection fraction (BSE reporting categories)",
+      "value": "55 or more",
       "unit": "% (LVEF)",
-      "context": "Reporting category used in NHS echo results guidance; borderline and impaired bands lie below it",
+      "context": "BSE 2020 reporting categories: 50 to 54 borderline low, 36 to 49 impaired, 35 or below severely impaired",
       "jurisdiction": "UK",
       "source": {
-       "title": "NHS echocardiography results guidance (based on British Society of Echocardiography categories)",
-       "url": "https://nwknowledgenow.nhs.uk/wp-content/uploads/2024/02/Echocardiography-Results-Guidance-JPUH.pdf",
+       "title": "Latest British Society of Echocardiography recommendations for left ventricular ejection fraction categorisation",
+       "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7487180/",
        "section": "Ejection fraction categories"
       }
      },
@@ -199,18 +199,18 @@
       "name": "Heart failure with reduced ejection fraction",
       "value": "40 or less",
       "unit": "% (LVEF)",
-      "context": "Classification of heart failure; 41 to 49 is mildly reduced",
+      "context": "Classification of heart failure; 41 to 49 is usually called mildly reduced",
       "jurisdiction": "UK",
       "source": {
-       "title": "NHS England: Heart failure with preserved ejection fraction pathway support tool",
-       "url": "https://www.england.nhs.uk/long-read/heart-failure-with-preserved-ejection-fraction-pathway-support-tool/",
-       "section": "Coding table"
+       "title": "NICE TA773: Dapagliflozin for treating chronic heart failure with reduced ejection fraction",
+       "url": "https://www.nice.org.uk/guidance/ta773/chapter/3-Committee-discussion",
+       "section": "Committee discussion"
       }
      }
     ],
     "references": [
      {
-      "title": "NHS echocardiography results guidance (BSE categories)",
+      "title": "Guidance on Echocardiography Results (trust sheet reproducing BSE bands)",
       "url": "https://nwknowledgenow.nhs.uk/wp-content/uploads/2024/02/Echocardiography-Results-Guidance-JPUH.pdf"
      },
      {
@@ -218,8 +218,12 @@
       "url": "https://www.england.nhs.uk/long-read/managing-heart-failure-home-information-for-patients/"
      },
      {
-      "title": "NHS England: Heart failure with preserved ejection fraction pathway support tool",
-      "url": "https://www.england.nhs.uk/long-read/heart-failure-with-preserved-ejection-fraction-pathway-support-tool/"
+      "title": "Latest British Society of Echocardiography recommendations for left ventricular ejection fraction categorisation",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7487180/"
+     },
+     {
+      "title": "NICE TA773: Dapagliflozin for treating chronic heart failure with reduced ejection fraction",
+      "url": "https://www.nice.org.uk/guidance/ta773/chapter/3-Committee-discussion"
      }
     ]
    },

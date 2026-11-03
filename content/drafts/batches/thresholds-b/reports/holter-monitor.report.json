@@ -1,0 +1,43 @@
+{
+ "id": "holter-monitor",
+ "searchesUsed": 2,
+ "counts": {
+  "supported": 4,
+  "textbook": 0,
+  "unsupported": 0,
+  "wrong": 0,
+  "unsafe": 0,
+  "unchecked": 0
+ },
+ "claims": [
+  {
+   "id": "h01a",
+   "classification": "supported",
+   "evidence": "2021 ESC pacing guideline: dual-chamber pacing is indicated to reduce recurrent syncope in patients >40 with severe, unpredictable, recurrent syncope and spontaneously documented symptomatic asystolic pause >3 s (or asymptomatic >6 s from sinus arrest/AV block). 'May be considered, depending on cause' understates (Class I 'indicated') but is safe and non-individual.",
+   "url": "https://academic.oup.com/eurheartj/article/42/35/3427/6358547",
+   "action": "kept"
+  },
+  {
+   "id": "h01b",
+   "classification": "supported",
+   "evidence": "2018 ACC/AHA/HRS: no established minimum heart rate or pause duration at which permanent pacing is recommended in SND; symptom-bradycardia correlation is key; 'a pause >3 s alone should not be used to diagnose SND' fragment appeared in the result though the snippet was truncated.",
+   "url": "https://www.ahajournals.org/doi/10.1161/CIR.0000000000000628",
+   "action": "kept"
+  },
+  {
+   "id": "hr1",
+   "classification": "supported",
+   "evidence": "ESC 2021 retrieved text: patients >40, severe unpredictable recurrent syncope, spontaneously documented symptomatic asystolic pause >3 s or asymptomatic >6 s (sinus arrest or AV block). URL/title match. Section label 'Syncope: reflex syncope, asystolic pauses' is plausible but not verifiable from the excerpt. Jurisdiction 'EU' is imprecise: ESC is European, not EU; use Europe/GLOBAL if the schema allows.",
+   "url": "https://academic.oup.com/eurheartj/article/42/35/3427/6358547",
+   "action": "kept"
+  },
+  {
+   "id": "hr2",
+   "classification": "supported",
+   "evidence": "ACC/AHA/HRS 2018: sinus pause defined as >3 s; text retrieved that 'sinus bradycardia or a pause >3 s alone should not be used to diagnose SND' (snippet truncated after) and that symptoms/temporal correlation drive pacing. Title/URL match; section 'Sinus node dysfunction' reasonable. Fallback if a reviewer wants only fully retrieved text: context 'There is no established minimum heart rate or pause duration at which pacing is recommended in sinus node dysfunction; symptoms linked to the slow rhythm are what matter'.",
+   "url": "https://www.ahajournals.org/doi/10.1161/CIR.0000000000000628",
+   "action": "kept"
+  }
+ ],
+ "notes": "(f) ESC 3 s/6 s and age >40 confirmed; ACC/AHA 'pause alone' sentence retrieved only as a truncated fragment, rest of guideline text confirms symptom-correlation principle. Only 2 searches spent here."
+}
