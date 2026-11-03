@@ -1,0 +1,311 @@
+{
+ "id": "warfarin-apixaban-medicines-and-food",
+ "searchesUsed": 6,
+ "counts": {
+  "supported": 27,
+  "textbook": 0,
+  "unsupported": 15,
+  "wrong": 0,
+  "unsafe": 0,
+  "unchecked": 0
+ },
+ "claims": [
+  {
+   "id": "c01",
+   "classification": "supported",
+   "evidence": "Warfarin/apixaban pages: medicine to prevent (and treat) clots; bleeding main side effect",
+   "url": "https://www.nhs.uk/medicines/warfarin/",
+   "action": "kept"
+  },
+  {
+   "id": "c02",
+   "classification": "supported",
+   "evidence": "Same titles",
+   "url": "https://www.nhs.uk/medicines/warfarin/",
+   "action": "kept"
+  },
+  {
+   "id": "c03",
+   "classification": "supported",
+   "evidence": "NHS inform: keep vitamin K intake steady; avoid cranberry, grapefruit juice",
+   "url": "https://www.nhsinform.scot/tests-and-treatments/medicines-and-medical-aids/types-of-medicine/warfarin/",
+   "action": "kept"
+  },
+  {
+   "id": "c04",
+   "classification": "unsupported",
+   "evidence": "Apixaban no-routine-INR claim rested on a local booklet; not retrieved",
+   "url": "https://www.nhs.uk/medicines/warfarin/",
+   "action": "edited",
+   "newSentence": "Warfarin needs regular INR blood tests, which measure how quickly the blood clots."
+  },
+  {
+   "id": "c05",
+   "classification": "supported",
+   "evidence": "NHS: call 111 for bleeding symptoms/head injury",
+   "url": "https://www.nhs.uk/medicines/warfarin/",
+   "action": "kept"
+  },
+  {
+   "id": "c06",
+   "classification": "supported",
+   "evidence": "Pharmacist check for herbal products/supplements",
+   "url": "https://www.nhs.uk/medicines/apixaban/taking-apixaban-with-other-medicines-and-herbal-supplements/",
+   "action": "kept"
+  },
+  {
+   "id": "c07",
+   "classification": "supported",
+   "evidence": "Anticoagulant definition",
+   "url": "https://www.nhs.uk/medicines/warfarin/",
+   "action": "kept"
+  },
+  {
+   "id": "c08",
+   "classification": "unsupported",
+   "evidence": "Liver/clotting-factor detail not retrieved; Royal Berkshire trust says warfarin blocks vitamin K, involved in clotting",
+   "url": "https://www.royalberkshire.nhs.uk/media/yrbnck34/warfarin_feb24.pdf",
+   "action": "edited",
+   "newSentence": "An NHS trust explains that warfarin works by blocking vitamin K, which is involved in the clotting process."
+  },
+  {
+   "id": "c09",
+   "classification": "unsupported",
+   "evidence": "'Very specific part of clotting system' not retrieved; trust page lists apixaban among DOACs approved by NICE for AF stroke prevention",
+   "url": "https://www.rbht.nhs.uk/our-services/anticoagulant-medications",
+   "action": "edited"
+  },
+  {
+   "id": "c10",
+   "classification": "unsupported",
+   "evidence": "'AF raises stroke risk' not retrieved",
+   "url": "https://www.rbht.nhs.uk/our-services/anticoagulant-medications",
+   "action": "edited"
+  },
+  {
+   "id": "c11",
+   "classification": "supported",
+   "evidence": "Bleeding main risk",
+   "url": "https://www.nhs.uk/medicines/apixaban/",
+   "action": "kept"
+  },
+  {
+   "id": "c12",
+   "classification": "supported",
+   "evidence": "Food and drink affect warfarin",
+   "url": "https://www.nhsinform.scot/tests-and-treatments/medicines-and-medical-aids/types-of-medicine/warfarin/",
+   "action": "kept"
+  },
+  {
+   "id": "c13",
+   "classification": "supported",
+   "evidence": "NHS inform list of vitamin K foods",
+   "url": "https://www.nhsinform.scot/tests-and-treatments/medicines-and-medical-aids/types-of-medicine/warfarin/",
+   "action": "kept"
+  },
+  {
+   "id": "c14",
+   "classification": "unsupported",
+   "evidence": "'Clinic adjusts dose to diet' not retrieved; advice is to keep intake steady",
+   "url": "https://www.nhsinform.scot/tests-and-treatments/medicines-and-medical-aids/types-of-medicine/warfarin/",
+   "action": "edited"
+  },
+  {
+   "id": "c15",
+   "classification": "unsupported",
+   "evidence": "Cranberry/grapefruit supported, but 'large amounts of alcohol' differs: NHS inform says getting drunk/binge drinking",
+   "url": "https://www.nhsinform.scot/tests-and-treatments/medicines-and-medical-aids/types-of-medicine/warfarin/",
+   "action": "edited"
+  },
+  {
+   "id": "c16",
+   "classification": "unsupported",
+   "evidence": "Warfarin with/without food not retrieved",
+   "url": "https://www.nhs.uk/medicines/warfarin/",
+   "action": "removed"
+  },
+  {
+   "id": "c17",
+   "classification": "unsupported",
+   "evidence": "'No known interactions with specific foods' not retrieved; only a leaflet title",
+   "url": "https://www.nhs.uk/medicines/apixaban/",
+   "action": "removed"
+  },
+  {
+   "id": "c18",
+   "classification": "unsupported",
+   "evidence": "Leaflets conflict on alcohol: one says heavy/binge raises bleeding risk, another says no interaction, moderate drinking",
+   "url": "https://www.nhs.uk/medicines/apixaban/",
+   "action": "edited"
+  },
+  {
+   "id": "c19",
+   "classification": "supported",
+   "evidence": "Tell doctor/clinic/pharmacist about new medicines",
+   "url": "https://www.nhs.uk/medicines/warfarin/",
+   "action": "kept"
+  },
+  {
+   "id": "c20",
+   "classification": "supported",
+   "evidence": "Do not take St John's wort or vitamin K supplements",
+   "url": "https://www.nhs.uk/medicines/warfarin/",
+   "action": "kept"
+  },
+  {
+   "id": "c21",
+   "classification": "unsupported",
+   "evidence": "SSRIs not retrieved; page lists other anticoagulants, antifungals, antibiotics, heart-rhythm, transplant, epilepsy",
+   "url": "https://www.nhs.uk/medicines/apixaban/taking-apixaban-with-other-medicines-and-herbal-supplements/",
+   "action": "edited"
+  },
+  {
+   "id": "c22",
+   "classification": "supported",
+   "evidence": "St John's wort not with apixaban; not enough info on other herbals",
+   "url": "https://www.nhs.uk/medicines/apixaban/taking-apixaban-with-other-medicines-and-herbal-supplements/",
+   "action": "kept"
+  },
+  {
+   "id": "c23",
+   "classification": "supported",
+   "evidence": "Aspirin/ibuprofen increase bleeding unless doctor approves",
+   "url": "https://www.nhs.uk/medicines/apixaban/taking-apixaban-with-other-medicines-and-herbal-supplements/",
+   "action": "kept"
+  },
+  {
+   "id": "c24",
+   "classification": "supported",
+   "evidence": "Paracetamol generally fine (apixaban page); trust leaflets: occasional fine, prolonged raises INR (edited to attribute correctly, dropped 'usual choice')",
+   "url": "https://www.nhs.uk/medicines/apixaban/taking-apixaban-with-other-medicines-and-herbal-supplements/",
+   "action": "edited"
+  },
+  {
+   "id": "c25",
+   "classification": "supported",
+   "evidence": "Check with pharmacist before OTC/herbal",
+   "url": "https://www.nhs.uk/medicines/apixaban/taking-apixaban-with-other-medicines-and-herbal-supplements/",
+   "action": "kept"
+  },
+  {
+   "id": "c26",
+   "classification": "supported",
+   "evidence": "INR measures clotting time",
+   "url": "https://www.nhs.uk/medicines/warfarin/",
+   "action": "kept"
+  },
+  {
+   "id": "c27",
+   "classification": "supported",
+   "evidence": "Frequent at first, spaced out once stable (trust leaflets)",
+   "url": "https://www.nhs.uk/medicines/warfarin/",
+   "action": "kept"
+  },
+  {
+   "id": "c28",
+   "classification": "supported",
+   "evidence": "Target depends on condition; dose adjusted",
+   "url": "https://www.nhs.uk/medicines/warfarin/",
+   "action": "kept"
+  },
+  {
+   "id": "c29",
+   "classification": "unsupported",
+   "evidence": "DOAC no-INR/kidney claim from local booklet not retrieved",
+   "url": "https://www.nhs.uk/medicines/warfarin/",
+   "action": "removed"
+  },
+  {
+   "id": "c30",
+   "classification": "supported",
+   "evidence": "Bleeding main risk",
+   "url": "https://www.nhs.uk/medicines/apixaban/",
+   "action": "kept"
+  },
+  {
+   "id": "c31",
+   "classification": "supported",
+   "evidence": "Warfarin bleeding signs",
+   "url": "https://www.nhs.uk/medicines/warfarin/",
+   "action": "kept"
+  },
+  {
+   "id": "c32",
+   "classification": "supported",
+   "evidence": "Brain bleed signs",
+   "url": "https://www.nhs.uk/medicines/warfarin/",
+   "action": "kept"
+  },
+  {
+   "id": "c33",
+   "classification": "supported",
+   "evidence": "Apixaban bleeding signs",
+   "url": "https://www.nhs.uk/medicines/apixaban/side-effects-of-apixaban/",
+   "action": "kept"
+  },
+  {
+   "id": "c34",
+   "classification": "supported",
+   "evidence": "111 for bleeding/head injury",
+   "url": "https://www.nhs.uk/medicines/warfarin/",
+   "action": "kept"
+  },
+  {
+   "id": "c35",
+   "classification": "unsupported",
+   "evidence": "Trust-leaflet 999 list for brain bleed and allergy not retrieved from NHS pages; replaced with NHS inform 999 advice (fall, blow to head, bleeding cannot be stopped) and NHS side-effects page on anaphylaxis",
+   "url": "https://www.nhsinform.scot/tests-and-treatments/medicines-and-medical-aids/types-of-medicine/warfarin/",
+   "action": "edited"
+  },
+  {
+   "id": "c36",
+   "classification": "unsupported",
+   "evidence": "PE symptoms 999 not retrieved",
+   "url": "https://www.nhs.uk/medicines/apixaban/",
+   "action": "removed"
+  },
+  {
+   "id": "c37",
+   "classification": "supported",
+   "evidence": "Tell GP/clinic about persistent effects",
+   "url": "https://www.nhs.uk/medicines/warfarin/",
+   "action": "kept"
+  },
+  {
+   "id": "c38",
+   "classification": "supported",
+   "evidence": "Each page has missed-dose advice; timing varies between services",
+   "url": "https://www.nhsinform.scot/tests-and-treatments/medicines-and-medical-aids/types-of-medicine/warfarin/",
+   "action": "kept"
+  },
+  {
+   "id": "c39",
+   "classification": "supported",
+   "evidence": "Timing differs between sources",
+   "url": "https://www.nhsinform.scot/tests-and-treatments/medicines-and-medical-aids/types-of-medicine/warfarin/",
+   "action": "kept"
+  },
+  {
+   "id": "c40",
+   "classification": "supported",
+   "evidence": "SPS: never double dose",
+   "url": "https://sps.nhs.uk/articles/advising-on-missed-or-delayed-doses-of-medicines/",
+   "action": "kept"
+  },
+  {
+   "id": "c41",
+   "classification": "unsupported",
+   "evidence": "'Contact clinic if often missed' not retrieved; replaced with 'if unsure ask GP/clinic, 111'",
+   "url": "https://www.nhsinform.scot/tests-and-treatments/medicines-and-medical-aids/types-of-medicine/warfarin/",
+   "action": "edited"
+  },
+  {
+   "id": "c42",
+   "classification": "unsupported",
+   "evidence": "111 for overdose not retrieved; apixaban advice is to tell GP if more taken",
+   "url": "https://www.nhs.uk/medicines/apixaban/",
+   "action": "edited"
+  }
+ ],
+ "notes": "Missed-dose and 999 routes rest on NHS inform, SPS and trust leaflets, not the nhs.uk pages (not directly returned). Apixaban alcohol sources conflict (stated). Mechanism sentences rest on NHS trust pages. Apixaban NHS page quoted in summaries has partly garbled text; missed-dose rule worded generally."
+}
