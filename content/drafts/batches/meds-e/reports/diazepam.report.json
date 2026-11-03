@@ -1,0 +1,411 @@
+{
+ "id": "diazepam",
+ "searchesUsed": 10,
+ "counts": {
+  "supported": 37,
+  "textbook": 3,
+  "wrong": 3,
+  "unsupported": 1,
+  "unsafe": 0,
+  "unchecked": 0
+ },
+ "claims": [
+  {
+   "id": "c01",
+   "where": "summary[0]",
+   "classification": "supported",
+   "evidence": "NHS page: used for anxiety, seizures and muscle spasms; NHS inform: benzodiazepines are a group of depressant drugs.",
+   "url": "https://www.nhs.uk/medicines/diazepam/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c02",
+   "where": "summary[1]",
+   "classification": "supported",
+   "evidence": "NHS diazepam page (via search summary): 'Diazepam should only be used short term, up to 4 weeks. Taking it for longer can cause addiction and withdrawal symptoms.'",
+   "url": "https://www.nhs.uk/medicines/diazepam/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c03",
+   "where": "summary[2]",
+   "classification": "supported",
+   "evidence": "ACMD: diazepam Class C, Schedule 4 Part 1 (controlled); NHS: do not drive, cycle, use tools or machinery until you feel better (while affected).",
+   "url": "https://www.nhs.uk/medicines/diazepam/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c04",
+   "where": "usedFor[0]",
+   "classification": "supported",
+   "evidence": "NHS page lists anxiety among uses of diazepam.",
+   "url": "https://www.nhs.uk/medicines/diazepam/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c05",
+   "where": "usedFor[1]",
+   "classification": "supported",
+   "evidence": "NHS page lists muscle spasms among uses of diazepam.",
+   "url": "https://www.nhs.uk/medicines/diazepam/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c06",
+   "where": "usedFor[2]",
+   "classification": "supported",
+   "evidence": "NHS page lists seizures among uses of diazepam.",
+   "url": "https://www.nhs.uk/medicines/diazepam/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c07",
+   "where": "howItWorks[0]",
+   "classification": "supported",
+   "evidence": "NHS inform: 'a group of depressant drugs'; combinations 'slow down the central nervous system'.",
+   "url": "https://www.nhsinform.scot/healthy-living/drugs-and-drug-use/common-drugs/benzodiazepines-benzos-diazepam-valium/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c08",
+   "where": "howItWorks[1]",
+   "classification": "textbook",
+   "evidence": "Statement about the page's own sourcing, not a clinical claim.",
+   "url": "https://www.nhsinform.scot/healthy-living/drugs-and-drug-use/common-drugs/benzodiazepines-benzos-diazepam-valium/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c09",
+   "where": "sideEffects.common[0]",
+   "classification": "supported",
+   "evidence": "NHS page common side effects (search summaries): feeling less alert, drowsy, tiredness, increased anxiety and depression, low blood pressure.",
+   "url": "https://www.nhs.uk/medicines/diazepam/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c10",
+   "where": "sideEffects.common[1]",
+   "classification": "supported",
+   "evidence": "NHS: do not drink alcohol or grapefruit juice as it can increase the risk of side effects.",
+   "url": "https://www.nhs.uk/medicines/diazepam/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c11",
+   "where": "sideEffects.common[2]",
+   "classification": "supported",
+   "evidence": "NHS: do not drive, cycle, or use tools or machinery until you feel better.",
+   "url": "https://www.nhs.uk/medicines/diazepam/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c12",
+   "where": "sideEffects.serious[0]",
+   "classification": "supported",
+   "evidence": "NHS page (search summary) lists serious side effects: allergic reaction (anaphylaxis), slower/shallower breathing, yellowing of skin/whites of eyes. Saw summaries only; the 'rare' qualifier not seen verbatim.",
+   "url": "https://www.nhs.uk/medicines/diazepam/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c13",
+   "where": "sideEffects.serious[1]",
+   "classification": "supported",
+   "evidence": "NHS inform: stopping abruptly can cause withdrawal effects which could be life-threatening.",
+   "url": "https://www.nhsinform.scot/healthy-living/drugs-and-drug-use/common-drugs/benzodiazepines-benzos-diazepam-valium/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c14",
+   "where": "sideEffects.serious[2]",
+   "classification": "textbook",
+   "evidence": "Signposting rule. NHS inform page (summary) names 999/A&E for severe overdose signs; NHS 111 / GP routes are standard NHS routes, not on these pages.",
+   "url": "https://www.nhs.uk/medicines/diazepam/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c15",
+   "where": "cautions[0]",
+   "classification": "supported",
+   "evidence": "NHS diazepam page (via search summary): 'Diazepam should only be used short term, up to 4 weeks. Taking it for longer can cause addiction and withdrawal symptoms.'",
+   "url": "https://www.nhs.uk/medicines/diazepam/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c16",
+   "where": "cautions[1]",
+   "classification": "supported",
+   "evidence": "NHS inform: tolerance can develop quickly with frequent use; risk of mental and physical reliance.",
+   "url": "https://www.nhsinform.scot/healthy-living/drugs-and-drug-use/common-drugs/benzodiazepines-benzos-diazepam-valium/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c17",
+   "where": "cautions[2]",
+   "classification": "supported",
+   "evidence": "MHRA CPD 'Dependence and withdrawal': 'Dependence can occur with therapeutic doses of benzodiazepines and it can become established within weeks.'",
+   "url": "https://cpd.mhra.gov.uk/benzodiazepines/CON234573_11/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c18",
+   "where": "cautions[3]",
+   "classification": "supported",
+   "evidence": "NHS inform: alcohol, gabapentinoids, opioids slow the central nervous system, increasing overdose risk.",
+   "url": "https://www.nhsinform.scot/healthy-living/drugs-and-drug-use/common-drugs/benzodiazepines-benzos-diazepam-valium/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c19",
+   "where": "cautions[4]",
+   "classification": "wrong",
+   "evidence": "NHS who-cannot list: long-term kidney, liver, heart or breathing problems, certain mental health conditions, history of alcohol or recreational drug misuse, past allergic reaction to diazepam 'or any other medicine' (not 'similar medicines'). Also pregnancy.",
+   "url": "https://www.nhs.uk/medicines/diazepam/",
+   "action": "edited",
+   "newSentence": "The NHS lists long-term kidney, liver, heart or breathing problems, certain mental health conditions, a history of alcohol or recreational drug misuse and a past allergic reaction to diazepam or any other medicine as reasons diazepam may not be suitable."
+  },
+  {
+   "id": "c20",
+   "where": "cautions[5]",
+   "classification": "wrong",
+   "evidence": "NHS page: do not take in pregnancy unless advised by a doctor or pharmacist (seen). 'Withdrawal symptoms in the baby' was NOT found on the NHS diazepam page; it appears in the manufacturer patient leaflet (medicines.org.uk): 'if taken regularly during pregnancy your baby may develop withdrawal symptoms'. Attribution wrong.",
+   "url": "https://www.medicines.org.uk/emc/files/pil.101911.pdf",
+   "action": "edited",
+   "newSentence": "The NHS says diazepam should not be taken in pregnancy unless a doctor or pharmacist advises it. The manufacturer's patient leaflet says that if it is taken regularly during pregnancy, the baby may develop withdrawal symptoms."
+  },
+  {
+   "id": "c21",
+   "where": "cautions[6]",
+   "classification": "supported",
+   "evidence": "NHS: can pass into breast milk in small amounts; check with a pharmacist or doctor before use while breastfeeding.",
+   "url": "https://www.nhs.uk/medicines/diazepam/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c22",
+   "where": "monitoring[0]",
+   "classification": "unsupported",
+   "evidence": "Only the NHS 'short term, up to 4 weeks' statement was found; no retrieved text says a prescriber reviews early. Describes practice.",
+   "url": "https://www.nhs.uk/medicines/diazepam/",
+   "action": "edited",
+   "newSentence": "The NHS says diazepam should only be used for the short term, because longer use can cause addiction and withdrawal symptoms."
+  },
+  {
+   "id": "c23",
+   "where": "monitoring[1]",
+   "classification": "supported",
+   "evidence": "NHS page: stopping suddenly can cause withdrawal; doctor will gradually reduce the dose. NHS inform: seek medical advice if long-term use; abrupt stop risky.",
+   "url": "https://www.nhsinform.scot/healthy-living/drugs-and-drug-use/common-drugs/benzodiazepines-benzos-diazepam-valium/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c24",
+   "where": "regulatory[0]",
+   "classification": "supported",
+   "evidence": "NHS inform/NHS page: diazepam only available with a prescription.",
+   "url": "https://www.nhs.uk/medicines/diazepam/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c25",
+   "where": "regulatory[1]",
+   "classification": "supported",
+   "evidence": "Legislation.gov.uk MDR 2001 Schedule 4 Part I lists clonazepam, diazepam, lorazepam; ACMD: 'diazepam, lorazepam, fludiazepam, nordazepam and clonazepam (all Class C, Schedule 4 Part 1)'. Class C itself seen only via ACMD.",
+   "url": "https://www.legislation.gov.uk/uksi/2001/3998/schedule/4",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c26",
+   "where": "article.sections[0]",
+   "classification": "supported",
+   "evidence": "NHS page: benzodiazepine for anxiety, muscle spasms, seizures.",
+   "url": "https://www.nhs.uk/medicines/diazepam/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c27",
+   "where": "article.sections[1]",
+   "classification": "supported",
+   "evidence": "NHS: only available on prescription.",
+   "url": "https://www.nhs.uk/medicines/diazepam/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c28",
+   "where": "article.sections[2]",
+   "classification": "supported",
+   "evidence": "NHS inform: depressant drugs that slow down the central nervous system.",
+   "url": "https://www.nhsinform.scot/healthy-living/drugs-and-drug-use/common-drugs/benzodiazepines-benzos-diazepam-valium/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c29",
+   "where": "article.sections[0]",
+   "classification": "supported",
+   "evidence": "NHS diazepam page (via search summary): 'Diazepam should only be used short term, up to 4 weeks. Taking it for longer can cause addiction and withdrawal symptoms.'",
+   "url": "https://www.nhs.uk/medicines/diazepam/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c30",
+   "where": "article.sections[1]",
+   "classification": "supported",
+   "evidence": "NHS inform: tolerance quickly; mental and physical reliance.",
+   "url": "https://www.nhsinform.scot/healthy-living/drugs-and-drug-use/common-drugs/benzodiazepines-benzos-diazepam-valium/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c31",
+   "where": "article.sections[2]",
+   "classification": "supported",
+   "evidence": "MHRA CPD: dependence at therapeutic doses, established within weeks.",
+   "url": "https://cpd.mhra.gov.uk/benzodiazepines/CON234573_11/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c32",
+   "where": "article.sections[3]",
+   "classification": "supported",
+   "evidence": "NHS inform: stopping abruptly can cause withdrawal which could be life-threatening.",
+   "url": "https://www.nhsinform.scot/healthy-living/drugs-and-drug-use/common-drugs/benzodiazepines-benzos-diazepam-valium/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c33",
+   "where": "article.sections[4]",
+   "classification": "textbook",
+   "evidence": "NHS inform: seek medical advice via GP/drug service for long use; taper. '999 if severe' not in retrieved text; reads as an instruction.",
+   "url": "https://www.nhsinform.scot/healthy-living/drugs-and-drug-use/common-drugs/benzodiazepines-benzos-diazepam-valium/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c34",
+   "where": "article.sections[0]",
+   "classification": "supported",
+   "evidence": "NHS common side effects: feeling less alert, drowsy, tired, low blood pressure.",
+   "url": "https://www.nhs.uk/medicines/diazepam/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c35",
+   "where": "article.sections[1]",
+   "classification": "supported",
+   "evidence": "NHS: do not drive, cycle, use tools or machinery until you feel better.",
+   "url": "https://www.nhs.uk/medicines/diazepam/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c36",
+   "where": "article.sections[2]",
+   "classification": "supported",
+   "evidence": "NHS: alcohol and grapefruit juice can increase risk of side effects.",
+   "url": "https://www.nhs.uk/medicines/diazepam/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c37",
+   "where": "article.sections[3]",
+   "classification": "supported",
+   "evidence": "NHS serious side effects: allergic reaction, slower breathing, yellowing of skin/eyes (summary).",
+   "url": "https://www.nhs.uk/medicines/diazepam/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c38",
+   "where": "article.sections[0]",
+   "classification": "supported",
+   "evidence": "As index 24.",
+   "url": "https://www.legislation.gov.uk/uksi/2001/3998/schedule/4",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c39",
+   "where": "article.sections[1]",
+   "classification": "supported",
+   "evidence": "NHS who-cannot list (search summary): long-term kidney, liver, heart or breathing problems, certain mental health conditions, history of alcohol or recreational drug misuse.",
+   "url": "https://www.nhs.uk/medicines/diazepam/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c40",
+   "where": "article.sections[2]",
+   "classification": "wrong",
+   "evidence": "Pregnancy advice seen on NHS page; 'regular use late in pregnancy can cause withdrawal symptoms in the baby' not found on NHS diazepam page (found in manufacturer leaflet; NHS lorazepam page says similar for lorazepam).",
+   "url": "https://www.medicines.org.uk/emc/files/pil.101911.pdf",
+   "action": "edited",
+   "newSentence": "It is not advised in pregnancy unless a doctor or pharmacist recommends it, and the manufacturer's patient leaflet says that regular use during pregnancy may cause withdrawal symptoms in the baby."
+  },
+  {
+   "id": "c41",
+   "where": "article.sections[3]",
+   "classification": "supported",
+   "evidence": "NHS inform: alcohol, gabapentinoids, opioids with benzodiazepines increase overdose risk.",
+   "url": "https://www.nhsinform.scot/healthy-living/drugs-and-drug-use/common-drugs/benzodiazepines-benzos-diazepam-valium/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c42",
+   "where": "article.faqs",
+   "classification": "supported",
+   "evidence": "NHS diazepam page (via search summary): 'Diazepam should only be used short term, up to 4 weeks. Taking it for longer can cause addiction and withdrawal symptoms.'",
+   "url": "https://www.nhs.uk/medicines/diazepam/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c43",
+   "where": "article.faqs",
+   "classification": "supported",
+   "evidence": "As index 24.",
+   "url": "https://www.legislation.gov.uk/uksi/2001/3998/schedule/4",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c44",
+   "where": "article.faqs",
+   "classification": "supported",
+   "evidence": "NHS: do not drink alcohol while taking diazepam; can increase the risk of side effects.",
+   "url": "https://www.nhs.uk/medicines/diazepam/",
+   "action": "kept",
+   "newSentence": null
+  }
+ ],
+ "notes": "Only search summaries were available (no page fetch). Human check: (1) NHS diazepam pregnancy text re baby withdrawal; (2) 'rare' qualifier on serious side effects; (3) the 'up to 4 weeks' wording was seen in NHS summary but sentences omit the number (fine); (4) driving: only NHS advice checked, not DVLA/drug-driving law; (5) index 32 gives 999/NHS 111 for severe withdrawal, not in sources - keep calm and consider rewording; (6) Class C under the 1971 Act seen only via ACMD, not Schedule 2 of the Act itself; (7) several 'excerpt' basis labels are search summaries not verbatim quotes; (8) MHRA page also gives taper schedules - correctly NOT used (no dosing). Medication index 7 and class index 0 tail are site statements, not facts. | Editorial tidy-ups after the second pass (duplicate sentences removed or one wording softened) are marked in the claims where they apply. Replacement sentences came from the second-pass retrieval and were not run through a third check."
+}

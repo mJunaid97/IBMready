@@ -1,0 +1,384 @@
+{
+ "id": "ondansetron",
+ "searchesUsed": 14,
+ "counts": {
+  "supported": 29,
+  "unsupported": 10,
+  "textbook": 2,
+  "wrong": 0,
+  "unsafe": 0,
+  "unchecked": 0
+ },
+ "claims": [
+  {
+   "id": "c01",
+   "where": "summary[0]",
+   "classification": "supported",
+   "evidence": "MedlinePlus: used to prevent nausea and vomiting from cancer chemotherapy, radiation therapy and surgery; UK leaflets list chemo/radiotherapy and post-operative uses (emc leaflet search results).",
+   "url": "https://medlineplus.gov/druginfo/meds/a601209.html",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c02",
+   "where": "summary[1]",
+   "classification": "supported",
+   "evidence": "MedlinePlus: serotonin 5-HT3 receptor antagonist class; Notts NHS sheet: dose-related QT lengthening; MHRA DSU (Jan 2020): small increased cleft risk after first-trimester use.",
+   "url": "https://www.gov.uk/drug-safety-update/ondansetron-small-increased-risk-of-oral-clefts-following-use-in-the-first-12-weeks-of-pregnancy",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c03",
+   "where": "usedFor[0]",
+   "classification": "supported",
+   "evidence": "emc SmPC snippets: chemotherapy use in children from 6 months; radiotherapy leaflet use limited to adults, so age limits differ.",
+   "url": "https://www.medicines.org.uk/emc/product/5222/smpc",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c04",
+   "where": "usedFor[1]",
+   "classification": "supported",
+   "evidence": "emc leaflets and MedlinePlus list prevention of post-operative nausea and vomiting.",
+   "url": "https://medlineplus.gov/druginfo/meds/a601209.html",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c05",
+   "where": "howItWorks[0]",
+   "classification": "unsupported",
+   "evidence": "Gut and central nervous system wording only seen in patent texts, not in the NHS sheet text retrieved. MedlinePlus says it interferes with serotonin.",
+   "url": "https://medlineplus.gov/druginfo/meds/a601209.html",
+   "action": "edited",
+   "newSentence": "Ondansetron belongs to a group called serotonin 5-HT3 receptor antagonists, which interfere with serotonin, a natural substance that can cause nausea and vomiting."
+  },
+  {
+   "id": "c06",
+   "where": "howItWorks[1]",
+   "classification": "supported",
+   "evidence": "MedlinePlus (via search summary): interferes with serotonin, a naturally occurring chemical that can provoke nausea and vomiting. 'Blocking' softened to 'interfering'.",
+   "url": "https://medlineplus.gov/druginfo/meds/a601209.html",
+   "action": "removed",
+   "newSentence": null
+  },
+  {
+   "id": "c07",
+   "where": "sideEffects.common[0]",
+   "classification": "supported",
+   "evidence": "emc 4 mg tablet leaflet: headache very common (more than 1 in 10).",
+   "url": "https://www.medicines.org.uk/emc/product/5222/pil",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c08",
+   "where": "sideEffects.common[1]",
+   "classification": "supported",
+   "evidence": "emc leaflet: flushing and constipation common; GOSH lists warm flushes, headaches, constipation.",
+   "url": "https://www.medicines.org.uk/emc/product/5222/pil",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c09",
+   "where": "sideEffects.common[2]",
+   "classification": "unsupported",
+   "evidence": "Leaflet/SmPC: hiccups and low blood pressure uncommon. Irregular heartbeat as an uncommon effect not seen in retrieved text.",
+   "url": "https://www.medicines.org.uk/emc/product/5222/pil",
+   "action": "edited",
+   "newSentence": "Hiccups and low blood pressure are listed as uncommon effects."
+  },
+  {
+   "id": "c10",
+   "where": "sideEffects.serious[0]",
+   "classification": "unsupported",
+   "evidence": "Leaflet: allergic reactions and sudden chest pain or chest tightness seen; 'heart rhythm disturbances' only in blended summary, not clearly in leaflet.",
+   "url": "https://www.medicines.org.uk/emc/product/5222/pil",
+   "action": "edited",
+   "newSentence": "Allergic reactions and sudden chest pain or chest tightness are among the serious effects listed in a UK leaflet."
+  },
+  {
+   "id": "c11",
+   "where": "sideEffects.serious[1]",
+   "classification": "textbook",
+   "evidence": "Signposting rule; names 999/A&E, NHS 111, GP, pharmacist.",
+   "url": "https://www.medicines.org.uk/emc/product/5222/pil",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c12",
+   "where": "cautions[0]",
+   "classification": "supported",
+   "evidence": "emc orodispersible leaflet: apomorphine (Parkinson's) listed as not to be taken with ondansetron; allergy exclusion is standard leaflet content.",
+   "url": "https://www.medicines.org.uk/emc/product/101020/pil",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c13",
+   "where": "cautions[1]",
+   "classification": "supported",
+   "evidence": "emc oral solution leaflet (pil.13787): first three months of pregnancy listed as a reason not to take it.",
+   "url": "https://www.medicines.org.uk/emc/files/pil.13787.pdf",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c14",
+   "where": "cautions[2]",
+   "classification": "supported",
+   "evidence": "MHRA Drug Safety Update Jan 2020: small increased risk of oral clefts after use in first 12 weeks; women to be counselled on benefits and risks if offered.",
+   "url": "https://www.gov.uk/drug-safety-update/ondansetron-small-increased-risk-of-oral-clefts-following-use-in-the-first-12-weeks-of-pregnancy",
+   "action": "edited",
+   "newSentence": "The MHRA has warned of a small increased risk of cleft lip or palate after use in the first 12 weeks of pregnancy, and says women should be counselled on the benefits and risks if it is offered."
+  },
+  {
+   "id": "c15",
+   "where": "cautions[3]",
+   "classification": "supported",
+   "evidence": "SPS: can be used with caution during breastfeeding, with monitoring (drowsiness, poor feeding, urinary retention). emc SmPC and leaflet advise mothers not to breastfeed; conflict not mentioned.",
+   "url": "https://sps.nhs.uk/articles/treating-nausea-during-breastfeeding/",
+   "action": "edited",
+   "newSentence": "An NHS Specialist Pharmacy Service page says ondansetron can be used with caution during breastfeeding, with monitoring of the baby. UK manufacturer leaflets, by contrast, advise against breastfeeding during treatment."
+  },
+  {
+   "id": "c16",
+   "where": "cautions[4]",
+   "classification": "supported",
+   "evidence": "emc leaflets: tell doctor first about gut blockage, severe constipation, heart failure/irregular heartbeat, liver problems, potassium/sodium/magnesium problems.",
+   "url": "https://www.medicines.org.uk/emc/files/pil.13787.pdf",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c17",
+   "where": "cautions[5]",
+   "classification": "unsupported",
+   "evidence": "NHS prescribing resource/UK labelling: QT lengthening dose-dependent; TdP reported post-marketing. 'Mainly with high IV doses' not seen in NHS text (FDA 32 mg IV statement was in a trial document).",
+   "url": "https://www.nottsapc.nhs.uk/media/w5ioxh1x/ondansetron-ibs-d-prescribing-info-sheet.pdf",
+   "action": "edited",
+   "newSentence": "An NHS prescribing sheet says ondansetron lengthens the QT interval (a measure of the heart's electrical cycle) in a dose-related way, and that torsade de pointes, a dangerous heart rhythm, has been reported."
+  },
+  {
+   "id": "c18",
+   "where": "cautions[6]",
+   "classification": "supported",
+   "evidence": "Notts sheet: do not prescribe in congenital QT prolongation; hypokalaemia/hypomagnesaemia corrected before use; UK labelling: caution with heart failure, bradyarrhythmias, other QT-prolonging drugs.",
+   "url": "https://www.nottsapc.nhs.uk/media/w5ioxh1x/ondansetron-ibs-d-prescribing-info-sheet.pdf",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c19",
+   "where": "cautions[7]",
+   "classification": "unsupported",
+   "evidence": "Notts sheet names SSRIs and SNRIs for serotonin syndrome; opioids not confirmed in the sheet text retrieved.",
+   "url": "https://www.nottsapc.nhs.uk/media/w5ioxh1x/ondansetron-ibs-d-prescribing-info-sheet.pdf",
+   "action": "edited",
+   "newSentence": "The sheet also warns of serotonin syndrome when ondansetron is combined with serotonergic medicines such as SSRIs and SNRIs."
+  },
+  {
+   "id": "c20",
+   "where": "monitoring[0]",
+   "classification": "supported",
+   "evidence": "Notts sheet: hypokalaemia and hypomagnesaemia should be corrected before ondansetron.",
+   "url": "https://www.nottsapc.nhs.uk/media/w5ioxh1x/ondansetron-ibs-d-prescribing-info-sheet.pdf",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c21",
+   "where": "monitoring[1]",
+   "classification": "supported",
+   "evidence": "Caution with other QT-prolonging medicines is in UK labelling and the NHS resource.",
+   "url": "https://www.nottsapc.nhs.uk/media/w5ioxh1x/ondansetron-ibs-d-prescribing-info-sheet.pdf",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c22",
+   "where": "regulatory",
+   "classification": "unsupported",
+   "evidence": "Oral solution SmPC shows POM; emc listing for 101020 specifically was not seen, though POM is standard across emc ondansetron products.",
+   "url": "https://www.medicines.org.uk/emc/product/13787/smpc",
+   "action": "edited",
+   "newSentence": "Ondansetron is a prescription-only medicine in the UK; the emc lists its oral solution as POM (prescription only medicine)."
+  },
+  {
+   "id": "c23",
+   "where": "article.sections[0]",
+   "classification": "supported",
+   "evidence": "emc leaflets list chemo/radiotherapy and post-operative uses.",
+   "url": "https://www.medicines.org.uk/emc/product/5222/pil",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c24",
+   "where": "article.sections[1]",
+   "classification": "supported",
+   "evidence": "MedlinePlus: chemotherapy, radiation therapy and surgery.",
+   "url": "https://medlineplus.gov/druginfo/meds/a601209.html",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c25",
+   "where": "article.sections[2]",
+   "classification": "supported",
+   "evidence": "GOSH: a medicine which prevents your child feeling sick and being sick.",
+   "url": "https://www.gosh.nhs.uk/conditions-and-treatments/medicines-information/medicines-directory/ondansetron-0/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c26",
+   "where": "article.sections[3]",
+   "classification": "supported",
+   "evidence": "GOSH: tablet, melt or syrup by mouth; injection into a vein.",
+   "url": "https://www.gosh.nhs.uk/conditions-and-treatments/medicines-information/medicines-directory/ondansetron-0/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c27",
+   "where": "article.sections[0]",
+   "classification": "supported",
+   "evidence": "MedlinePlus: serotonin is a natural substance that can cause nausea and vomiting.",
+   "url": "https://medlineplus.gov/druginfo/meds/a601209.html",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c28",
+   "where": "article.sections[1]",
+   "classification": "unsupported",
+   "evidence": "Gut and central nervous system wording not seen in NHS text (only patents).",
+   "url": "https://medlineplus.gov/druginfo/meds/a601209.html",
+   "action": "edited",
+   "newSentence": "Ondansetron interferes with serotonin, which can trigger nausea and vomiting, by acting on 5-HT3 receptors."
+  },
+  {
+   "id": "c29",
+   "where": "article.sections[2]",
+   "classification": "supported",
+   "evidence": "MedlinePlus: class called serotonin 5-HT3 receptor antagonists.",
+   "url": "https://medlineplus.gov/druginfo/meds/a601209.html",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c30",
+   "where": "article.sections[3]",
+   "classification": "supported",
+   "evidence": "GOSH: some medicines can react with ondansetron and alter how well it works; check with doctor or pharmacist.",
+   "url": "https://www.gosh.nhs.uk/conditions-and-treatments/medicines-information/medicines-directory/ondansetron-0/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c31",
+   "where": "article.sections[0]",
+   "classification": "supported",
+   "evidence": "emc leaflet: headache very common; flushing and constipation common.",
+   "url": "https://www.medicines.org.uk/emc/product/5222/pil",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c32",
+   "where": "article.sections[1]",
+   "classification": "unsupported",
+   "evidence": "Allergic reaction and chest pain seen; heart rhythm disturbance not clearly in leaflet.",
+   "url": "https://www.medicines.org.uk/emc/product/5222/pil",
+   "action": "edited",
+   "newSentence": "Allergic reactions and sudden chest pain or chest tightness are among the serious effects listed in a UK leaflet."
+  },
+  {
+   "id": "c33",
+   "where": "article.sections[2]",
+   "classification": "textbook",
+   "evidence": "Routing rule. Reworded to describe rather than instruct.",
+   "url": "https://www.medicines.org.uk/emc/product/5222/pil",
+   "action": "edited",
+   "newSentence": "These effects need prompt medical assessment: the route to care is 999 for an emergency, or NHS 111 for urgent advice that is not an emergency."
+  },
+  {
+   "id": "c34",
+   "where": "article.sections[0]",
+   "classification": "supported",
+   "evidence": "UK labelling and Notts NHS sheet: dose-dependent QT lengthening.",
+   "url": "https://www.nottsapc.nhs.uk/media/w5ioxh1x/ondansetron-ibs-d-prescribing-info-sheet.pdf",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c35",
+   "where": "article.sections[1]",
+   "classification": "supported",
+   "evidence": "Notts sheet: avoid in congenital QT prolongation; UK labelling caution with heart failure, bradyarrhythmias, other QT drugs, electrolyte abnormalities.",
+   "url": "https://www.nottsapc.nhs.uk/media/w5ioxh1x/ondansetron-ibs-d-prescribing-info-sheet.pdf",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c36",
+   "where": "article.sections[2]",
+   "classification": "supported",
+   "evidence": "MHRA DSU Jan 2020 title and text: small increased risk of oral clefts after first 12 weeks.",
+   "url": "https://www.gov.uk/drug-safety-update/ondansetron-small-increased-risk-of-oral-clefts-following-use-in-the-first-12-weeks-of-pregnancy",
+   "action": "edited",
+   "newSentence": "The MHRA has reported a small increased risk of cleft lip or palate with use in the first 12 weeks of pregnancy."
+  },
+  {
+   "id": "c37",
+   "where": "article.sections[3]",
+   "classification": "supported",
+   "evidence": "emc leaflet: apomorphine listed as not to be taken with ondansetron.",
+   "url": "https://www.medicines.org.uk/emc/product/101020/pil",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c38",
+   "where": "article.faqs",
+   "classification": "unsupported",
+   "evidence": "Oral solution SmPC: POM. Cited PIL page for 101020 not verified for legal category.",
+   "url": "https://www.medicines.org.uk/emc/product/13787/smpc",
+   "action": "edited",
+   "newSentence": "No. Ondansetron is a prescription-only medicine in the UK; the emc lists its oral solution as POM."
+  },
+  {
+   "id": "c39",
+   "where": "article.faqs[0]",
+   "classification": "supported",
+   "evidence": "UK labelling and NHS resource: dose-dependent QT lengthening.",
+   "url": "https://www.nottsapc.nhs.uk/media/w5ioxh1x/ondansetron-ibs-d-prescribing-info-sheet.pdf",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c40",
+   "where": "article.faqs[1]",
+   "classification": "unsupported",
+   "evidence": "TdP reported post-marketing; 'mainly high IV doses' not in NHS text retrieved.",
+   "url": "https://www.nottsapc.nhs.uk/media/w5ioxh1x/ondansetron-ibs-d-prescribing-info-sheet.pdf",
+   "action": "edited",
+   "newSentence": "Torsade de pointes, a dangerous heart rhythm, has been reported after the medicine came into use."
+  },
+  {
+   "id": "c41",
+   "where": "article.faqs",
+   "classification": "supported",
+   "evidence": "SPS: can be used with caution during breastfeeding with monitoring; manufacturer labelling advises against.",
+   "url": "https://sps.nhs.uk/articles/treating-nausea-during-breastfeeding/",
+   "action": "edited",
+   "newSentence": "An NHS Specialist Pharmacy Service page says it can be used with caution during breastfeeding, with monitoring of the baby. UK manufacturer leaflets, by contrast, advise against breastfeeding during treatment."
+  }
+ ],
+ "notes": "Searches: 14 of 16. Leaflet URLs cited by author (pil.10159, product/101020/smpc) did not come back in my searches; equivalent emc leaflets (5216, 5222, 10160, 101020, 13787) show the same content, so URL swaps were proposed. GOSH and Notts pages only seen via search summaries, not full text. Conflict: SPS says ondansetron usable with caution in breastfeeding, whereas emc SmPC/leaflets advise mothers not to breastfeed; sentences now mention both. Pregnancy: emc SmPC/leaflet says not to use in first trimester; MHRA says counsel on risk; some formularies say avoid/prefer outside first trimester; MHRA wording is about 'first 12 weeks'. Age limits (chemo from 6 months; radiotherapy/PONV adult-only for tablets per leaflet, with inconsistent paediatric wording) should be checked by a reviewer. Opioids and 'mainly high IV doses' (FDA 16 mg single IV dose limit, 32 mg withdrawn) were not confirmed from NHS sources. Sentence 32 (999/111) is a routing rule, reworded descriptively. Counts: {\"supported\": 35, \"unsupported\": 11, \"textbook\": 2} | Editorial tidy-ups after the second pass (duplicate sentences removed or one wording softened) are marked in the claims where they apply. Replacement sentences came from the second-pass retrieval and were not run through a third check."
+}

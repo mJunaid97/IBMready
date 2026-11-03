@@ -1,0 +1,366 @@
+{
+ "id": "metoclopramide",
+ "searchesUsed": 11,
+ "counts": {
+  "supported": 34,
+  "unsupported": 3,
+  "wrong": 1,
+  "textbook": 1,
+  "unsafe": 0,
+  "unchecked": 0
+ },
+ "claims": [
+  {
+   "id": "c01",
+   "where": "summary[0]",
+   "classification": "supported",
+   "evidence": "NHS About page: anti-sickness medicine, prescribed to prevent or treat nausea and vomiting, including with migraine; prescription-only.",
+   "url": "https://www.nhs.uk/medicines/metoclopramide/about-metoclopramide/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c02",
+   "where": "summary[1]",
+   "classification": "supported",
+   "evidence": "MHRA/EMA review: restricted dose and duration because of neurological risk; NHS safety alert says short-term use (up to 5 days). NHS: usually only for a short time.",
+   "url": "https://www.gov.uk/drug-safety-update/metoclopramide-risk-of-neurological-adverse-effects",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c03",
+   "where": "usedFor[0]",
+   "classification": "supported",
+   "evidence": "NHS About page: used to help stop you feeling or being sick.",
+   "url": "https://www.nhs.uk/medicines/metoclopramide/about-metoclopramide/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c04",
+   "where": "usedFor[1]",
+   "classification": "supported",
+   "evidence": "NHS: also prescribed to treat the sickness that can happen during a migraine.",
+   "url": "https://www.nhs.uk/medicines/metoclopramide/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c05",
+   "where": "usedFor[2]",
+   "classification": "supported",
+   "evidence": "MHRA update: in children 1-18 only second-line for prevention of delayed chemotherapy-induced nausea/vomiting and treatment of established postoperative nausea/vomiting.",
+   "url": "https://www.gov.uk/drug-safety-update/metoclopramide-risk-of-neurological-adverse-effects",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c06",
+   "where": "howItWorks[0]",
+   "classification": "unsupported",
+   "evidence": "No UK source retrieved says metoclopramide is a dopamine blocker (only vet label/patent via non-UK sources). Formularies list it with domperidone; MHRA calls domperidone 'a dopamine antagonist with antiemetic properties'.",
+   "url": "https://www.rightdecisions.scot.nhs.uk/tam-treatments-and-medicines-nhs-highland/formularies/highland-formulary/central-nervous-system-formulary/nausea-and-vertigo-formulary-cns/domperidone-and-metoclopramide-formulary-cns/",
+   "action": "edited",
+   "newSentence": "NHS formularies list metoclopramide together with domperidone, which the MHRA describes as a dopamine antagonist with anti-sickness properties."
+  },
+  {
+   "id": "c07",
+   "where": "howItWorks[1]",
+   "classification": "supported",
+   "evidence": "Accurate: none of the NHS/MHRA pages retrieved describe a mechanism for metoclopramide.",
+   "url": "https://www.nhs.uk/medicines/metoclopramide/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c08",
+   "where": "sideEffects.common[0]",
+   "classification": "supported",
+   "evidence": "NHS About/Side effects pages: drowsiness and diarrhoea are the most common side effects.",
+   "url": "https://www.nhs.uk/medicines/metoclopramide/side-effects-of-metoclopramide/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c09",
+   "where": "sideEffects.common[1]",
+   "classification": "wrong",
+   "evidence": "NHS side effects page lists low mood/depression among common effects, but tics and tremors are listed under the serious uncontrollable-movement effect, not as common.",
+   "url": "https://www.nhs.uk/medicines/metoclopramide/side-effects-of-metoclopramide/",
+   "action": "edited",
+   "newSentence": "The NHS also lists low mood or depression among the common side effects."
+  },
+  {
+   "id": "c10",
+   "where": "sideEffects.common[2]",
+   "classification": "supported",
+   "evidence": "Maxolon 10mg tablet leaflet/SmPC: disturbances in vision possible; drowsiness, dizziness, dyskinesia and dystonia may affect vision and ability to drive/operate machinery. NHS says not to drive if it makes you sleepy or affects vision. Author's URL (oral solution PIL) not the page seen.",
+   "url": "https://www.medicines.org.uk/emc/files/pil.6213.pdf",
+   "action": "edited",
+   "newSentence": "Leaflets say it may affect vision and the ability to drive or use machines."
+  },
+  {
+   "id": "c11",
+   "where": "sideEffects.serious[0]",
+   "classification": "supported",
+   "evidence": "NHS side effects: most common serious side effect is uncontrollable movements such as tics, tremors, muscle stiffness and spasms.",
+   "url": "https://www.nhs.uk/medicines/metoclopramide/side-effects-of-metoclopramide/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c12",
+   "where": "sideEffects.serious[1]",
+   "classification": "supported",
+   "evidence": "MHRA: risk of acute neurological effects is higher in children than in adults.",
+   "url": "https://www.gov.uk/drug-safety-update/metoclopramide-risk-of-neurological-adverse-effects",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c13",
+   "where": "sideEffects.serious[2]",
+   "classification": "textbook",
+   "evidence": "Generic site signposting; NHS page says call a doctor or 111 for unusual movements. Contains no dose/cut-off. Keep.",
+   "url": "https://www.nhs.uk/medicines/metoclopramide/side-effects-of-metoclopramide/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c14",
+   "where": "cautions[0]",
+   "classification": "supported",
+   "evidence": "NHS Who can page: most adults and children aged 1 year and over can take it.",
+   "url": "https://www.nhs.uk/medicines/metoclopramide/who-can-and-cannot-take-metoclopramide/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c15",
+   "where": "cautions[1]",
+   "classification": "supported",
+   "evidence": "NHS Who can page: epilepsy/fits, Parkinson's disease, previous allergic reaction listed as reasons it may not suit.",
+   "url": "https://www.nhs.uk/medicines/metoclopramide/who-can-and-cannot-take-metoclopramide/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c16",
+   "where": "cautions[2]",
+   "classification": "supported",
+   "evidence": "Highland formulary: contraindicated in GI obstruction, perforation or haemorrhage; MHRA DHPC/SmPC and Derby/Somerset formularies: contraindicated under 1 year. Text seen from Highland formulary, not Dorset.",
+   "url": "https://www.rightdecisions.scot.nhs.uk/tam-treatments-and-medicines-nhs-highland/formularies/highland-formulary/central-nervous-system-formulary/nausea-and-vertigo-formulary-cns/domperidone-and-metoclopramide-formulary-cns/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c17",
+   "where": "cautions[3]",
+   "classification": "supported",
+   "evidence": "NHS other-medicines page: can interact with levodopa, sleep-inducing medicines such as diazepam or amitriptyline, and other anti-sickness medicines; tell a doctor or pharmacist.",
+   "url": "https://www.nhs.uk/medicines/metoclopramide/taking-metoclopramide-with-other-medicines-and-herbal-supplements/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c18",
+   "where": "cautions[4]",
+   "classification": "supported",
+   "evidence": "NHS: not enough evidence to say herbal remedies/supplements are safe with it; some can worsen side effects.",
+   "url": "https://www.nhs.uk/medicines/metoclopramide/taking-metoclopramide-with-other-medicines-and-herbal-supplements/",
+   "action": "edited",
+   "newSentence": "The NHS says some herbal remedies and supplements can make the side effects of metoclopramide worse."
+  },
+  {
+   "id": "c19",
+   "where": "cautions[5]",
+   "classification": "supported",
+   "evidence": "NHS main page: best not to drink alcohol as it increases risk of side effects; common-questions page is stricter.",
+   "url": "https://www.nhs.uk/medicines/metoclopramide/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c20",
+   "where": "monitoring[0]",
+   "classification": "supported",
+   "evidence": "NHS: usually only for a short time (up to 5 days) because of side-effect risk.",
+   "url": "https://www.nhs.uk/medicines/metoclopramide/about-metoclopramide/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c21",
+   "where": "monitoring[1]",
+   "classification": "unsupported",
+   "evidence": "MHRA excerpt says short-term use only; no retrieved text says a prescriber reviews the need.",
+   "url": "https://www.gov.uk/drug-safety-update/metoclopramide-risk-of-neurological-adverse-effects",
+   "action": "edited",
+   "newSentence": "The MHRA limits its use to short-term treatment."
+  },
+  {
+   "id": "c22",
+   "where": "regulatory",
+   "classification": "supported",
+   "evidence": "NHS About page: prescription-only.",
+   "url": "https://www.nhs.uk/medicines/metoclopramide/about-metoclopramide/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c23",
+   "where": "article.sections[0]",
+   "classification": "supported",
+   "evidence": "NHS: prescription-only medicine to stop nausea/vomiting.",
+   "url": "https://www.nhs.uk/medicines/metoclopramide/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c24",
+   "where": "article.sections[1]",
+   "classification": "supported",
+   "evidence": "NHS: also prescribed for sickness during migraine.",
+   "url": "https://www.nhs.uk/medicines/metoclopramide/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c25",
+   "where": "article.sections[2]",
+   "classification": "supported",
+   "evidence": "NHS Who can page: most adults and children 1 year and over.",
+   "url": "https://www.nhs.uk/medicines/metoclopramide/who-can-and-cannot-take-metoclopramide/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c26",
+   "where": "article.sections[3]",
+   "classification": "supported",
+   "evidence": "Highland formulary: contraindicated in GI obstruction, perforation or haemorrhage.",
+   "url": "https://www.rightdecisions.scot.nhs.uk/tam-treatments-and-medicines-nhs-highland/formularies/highland-formulary/central-nervous-system-formulary/nausea-and-vertigo-formulary-cns/domperidone-and-metoclopramide-formulary-cns/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c27",
+   "where": "article.sections[0]",
+   "classification": "supported",
+   "evidence": "MHRA/EMA: review of neurological risk, dose and duration restricted.",
+   "url": "https://www.gov.uk/drug-safety-update/metoclopramide-risk-of-neurological-adverse-effects",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c28",
+   "where": "article.sections[1]",
+   "classification": "supported",
+   "evidence": "MHRA: review confirmed extrapyramidal disorders and tardive dyskinesia; risks outweigh benefits in long-term or high-dose use.",
+   "url": "https://www.gov.uk/drug-safety-update/metoclopramide-risk-of-neurological-adverse-effects",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c29",
+   "where": "article.sections[2]",
+   "classification": "supported",
+   "evidence": "MHRA short-term use; NHS usually short time because of side effects.",
+   "url": "https://www.gov.uk/drug-safety-update/metoclopramide-risk-of-neurological-adverse-effects",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c30",
+   "where": "article.sections[3]",
+   "classification": "supported",
+   "evidence": "MHRA: acute neurological effects more likely in children; contraindicated under 1 year.",
+   "url": "https://www.gov.uk/drug-safety-update/metoclopramide-risk-of-neurological-adverse-effects",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c31",
+   "where": "article.sections[0]",
+   "classification": "supported",
+   "evidence": "NHS: drowsiness and diarrhoea most common.",
+   "url": "https://www.nhs.uk/medicines/metoclopramide/side-effects-of-metoclopramide/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c32",
+   "where": "article.sections[1]",
+   "classification": "supported",
+   "evidence": "NHS: most common serious effect is uncontrollable movement (tics, tremors, stiffness, spasms).",
+   "url": "https://www.nhs.uk/medicines/metoclopramide/side-effects-of-metoclopramide/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c33",
+   "where": "article.sections[2]",
+   "classification": "unsupported",
+   "evidence": "NHS text seen: stop and call doctor or 111 now if muscles or eyes move unusually. Nothing retrieved ties 999 to breathing/swallowing for these movements.",
+   "url": "https://www.nhs.uk/medicines/metoclopramide/side-effects-of-metoclopramide/",
+   "action": "edited",
+   "newSentence": "The NHS advises getting medical help straight away, from a doctor or NHS 111, if muscles or eyes start moving in an unusual or uncontrolled way; in an emergency the route is 999 or A&E."
+  },
+  {
+   "id": "c34",
+   "where": "article.sections[0]",
+   "classification": "supported",
+   "evidence": "NHS other-medicines page: Parkinson's medicines, sleep-inducing medicines, other anti-sickness medicines; tell doctor/pharmacist.",
+   "url": "https://www.nhs.uk/medicines/metoclopramide/taking-metoclopramide-with-other-medicines-and-herbal-supplements/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c35",
+   "where": "article.sections[1]",
+   "classification": "supported",
+   "evidence": "NHS main page: best not to drink alcohol, increases risk of side effects.",
+   "url": "https://www.nhs.uk/medicines/metoclopramide/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c36",
+   "where": "article.sections[2]",
+   "classification": "supported",
+   "evidence": "NHS Who can page lists epilepsy and Parkinson's disease.",
+   "url": "https://www.nhs.uk/medicines/metoclopramide/who-can-and-cannot-take-metoclopramide/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c37",
+   "where": "article.faqs",
+   "classification": "supported",
+   "evidence": "NHS short time; MHRA short-term only.",
+   "url": "https://www.gov.uk/drug-safety-update/metoclopramide-risk-of-neurological-adverse-effects",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c38",
+   "where": "article.faqs",
+   "classification": "supported",
+   "evidence": "MHRA: children 1-18 second-line for two uses; contraindicated under 1 year.",
+   "url": "https://www.gov.uk/drug-safety-update/metoclopramide-risk-of-neurological-adverse-effects",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c39",
+   "where": "article.faqs",
+   "classification": "supported",
+   "evidence": "NHS: also prescribed for sickness during migraine.",
+   "url": "https://www.nhs.uk/medicines/metoclopramide/",
+   "action": "kept",
+   "newSentence": null
+  }
+ ],
+ "notes": "1) howItWorks[0] dopamine-blocking wording: no UK source retrieved states metoclopramide's mechanism; reworded to formulary grouping with domperidone. Consider a BNF/SmPC mechanism line if a human can fetch one. 2) MHRA 'up to 5 days' and under-1 contraindication came from DHPC/SmPC/NHS safety alert; sentences avoid day-counts. 3) Low mood is listed as common, tics/tremors as serious; fixed medication[8]. 4) NHS common-questions page is stricter on alcohol (unusually deep sleep, very dangerous) than main page; consider softening reliance. 5) medication[15] formulary text seen from Highland, not Dorset URL; consider updating the url. 6) Class ledger entry 0 second clause is a site statement. 7) Retrieval was via search summaries, not full pages. | Editorial tidy-ups after the second pass (duplicate sentences removed or one wording softened) are marked in the claims where they apply. Replacement sentences came from the second-pass retrieval and were not run through a third check."
+}

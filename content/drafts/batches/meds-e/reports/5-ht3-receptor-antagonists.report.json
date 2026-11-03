@@ -1,0 +1,78 @@
+{
+ "id": "5-ht3-receptor-antagonists",
+ "searchesUsed": 0,
+ "counts": {
+  "supported": 6,
+  "unsupported": 1,
+  "textbook": 0,
+  "wrong": 0,
+  "unsafe": 0,
+  "unchecked": 0
+ },
+ "claims": [
+  {
+   "id": "c01",
+   "where": "summary[0]",
+   "classification": "supported",
+   "evidence": "MedlinePlus: ondansetron belongs to serotonin 5-HT3 receptor antagonists, used for nausea and vomiting.",
+   "url": "https://medlineplus.gov/druginfo/meds/a601209.html",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c02",
+   "where": "summary[1]",
+   "classification": "supported",
+   "evidence": "MedlinePlus: used for chemotherapy, radiation and surgery nausea and vomiting.",
+   "url": "https://medlineplus.gov/druginfo/meds/a601209.html",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c03",
+   "where": "mechanism",
+   "classification": "unsupported",
+   "evidence": "Gut/CNS wording only in patents; MedlinePlus says they interfere with serotonin.",
+   "url": "https://medlineplus.gov/druginfo/meds/a601209.html",
+   "action": "edited",
+   "newSentence": "They interfere with serotonin, a natural substance that can cause nausea and vomiting, by acting on 5-HT3 receptors."
+  },
+  {
+   "id": "c04",
+   "where": "cautions[0]",
+   "classification": "supported",
+   "evidence": "GOSH: tablet, melt or syrup; injection into a vein.",
+   "url": "https://www.gosh.nhs.uk/conditions-and-treatments/medicines-information/medicines-directory/ondansetron-0/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c05",
+   "where": "cautions[1]",
+   "classification": "supported",
+   "evidence": "MHRA DSU Jan 2020: small increased risk of oral clefts after first 12 weeks.",
+   "url": "https://www.gov.uk/drug-safety-update/ondansetron-small-increased-risk-of-oral-clefts-following-use-in-the-first-12-weeks-of-pregnancy",
+   "action": "edited",
+   "newSentence": "The MHRA has warned of a small increased risk of cleft lip or palate after use of ondansetron in the first 12 weeks of pregnancy."
+  },
+  {
+   "id": "c06",
+   "where": "cautions[2]",
+   "classification": "supported",
+   "evidence": "emc leaflet: apomorphine not to be taken with ondansetron.",
+   "url": "https://www.medicines.org.uk/emc/product/101020/pil",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c07",
+   "where": "cautions[3]",
+   "classification": "supported",
+   "evidence": "Notts sheet and UK labelling: dose-dependent QT lengthening; avoid in congenital QT prolongation.",
+   "url": "https://www.nottsapc.nhs.uk/media/w5ioxh1x/ondansetron-ibs-d-prescribing-info-sheet.pdf",
+   "action": "kept",
+   "newSentence": null
+  }
+ ],
+ "notes": "Class page: checked in the same second-pass run as ondansetron (searches counted there)."
+}

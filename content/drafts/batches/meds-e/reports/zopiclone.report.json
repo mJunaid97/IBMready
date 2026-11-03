@@ -1,0 +1,393 @@
+{
+ "id": "zopiclone",
+ "searchesUsed": 12,
+ "counts": {
+  "supported": 32,
+  "unsupported": 7,
+  "wrong": 1,
+  "textbook": 2,
+  "unsafe": 0,
+  "unchecked": 0
+ },
+ "claims": [
+  {
+   "id": "c01",
+   "where": "summary[0]",
+   "classification": "supported",
+   "evidence": "NHS main page: medicine for insomnia, usually prescribed for just 2 to 4 weeks.",
+   "url": "https://www.nhs.uk/medicines/zopiclone/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c02",
+   "where": "summary[1]",
+   "classification": "supported",
+   "evidence": "NHS: tolerance builds quickly; may become dependent if taken longer than 4 weeks; do not drive, ride a bike or use machinery for 12 hours (how-and-when page / main page summary).",
+   "url": "https://www.nhs.uk/medicines/zopiclone/how-and-when-to-take-zopiclone/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c03",
+   "where": "summary[2]",
+   "classification": "supported",
+   "evidence": "SI 2014/1275 inserts Zopiclone in Schedule 4 Part 1 of the 2001 Regulations; 2014 Order made it Class C, in force 10 June 2014; Home Office Circular 008/2014.",
+   "url": "https://www.legislation.gov.uk/uksi/2014/1275/made",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c04",
+   "where": "usedFor[0]",
+   "classification": "supported",
+   "evidence": "Patient leaflet/SmPC describe short-term treatment of sleep problems (insomnia); SmPC says long-term use not recommended; NHS says most adults over 18 can take it. Exact SmPC indication string not seen verbatim.",
+   "url": "https://www.medicines.org.uk/emc/product/10590/smpc",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c05",
+   "where": "usedFor[1]",
+   "classification": "unsupported",
+   "evidence": "NHS main page summary said only 'treat sleeping problems (insomnia)'. 'Severe' appeared in NICE TA77 (hypnotics only for severe insomnia interfering with daily life, short periods) and in NHS pregnancy wording, not as the NHS description of use.",
+   "url": "https://www.nice.org.uk/guidance/ta77/chapter/1-guidance",
+   "action": "edited",
+   "newSentence": "NICE says sleeping medicines such as zopiclone should be considered only for severe insomnia that interferes with daily life, and only for short periods."
+  },
+  {
+   "id": "c06",
+   "where": "howItWorks[0]",
+   "classification": "wrong",
+   "evidence": "NHS common-questions and main pages: zopiclone boosts the effectiveness of GABA, a calming chemical in the brain, and takes around 1 hour to work. So the statement that sources do not describe how it works is contradicted.",
+   "url": "https://www.nhs.uk/medicines/zopiclone/common-questions-about-zopiclone/",
+   "action": "edited",
+   "newSentence": "The NHS says zopiclone boosts the effect of GABA, a calming chemical in the brain, which helps with sleep."
+  },
+  {
+   "id": "c07",
+   "where": "howItWorks[1]",
+   "classification": "supported",
+   "evidence": "NHS common questions: caffeine counteracts the drug.",
+   "url": "https://www.nhs.uk/medicines/zopiclone/common-questions-about-zopiclone/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c08",
+   "where": "sideEffects.common[0]",
+   "classification": "supported",
+   "evidence": "NHS side effects/main page: dry mouth, bitter or metallic taste, sleepy or tired the next day.",
+   "url": "https://www.nhs.uk/medicines/zopiclone/side-effects-of-zopiclone/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c09",
+   "where": "sideEffects.common[1]",
+   "classification": "unsupported",
+   "evidence": "NHS common questions: some people have sleepwalked or made phone calls while asleep without remembering; 'eat' not seen in retrieved text.",
+   "url": "https://www.nhs.uk/medicines/zopiclone/common-questions-about-zopiclone/",
+   "action": "edited",
+   "newSentence": "Some people have sleepwalked or made phone calls while asleep without remembering it afterwards, the NHS says."
+  },
+  {
+   "id": "c10",
+   "where": "sideEffects.common[2]",
+   "classification": "supported",
+   "evidence": "NHS how-and-when/main page summary: do not drive, ride a bike or use machinery for 12 hours after taking zopiclone; wait longer if still sleepy. Note common-questions page worded more generally (avoid driving if drowsy).",
+   "url": "https://www.nhs.uk/medicines/zopiclone/how-and-when-to-take-zopiclone/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c11",
+   "where": "sideEffects.serious[0]",
+   "classification": "unsupported",
+   "evidence": "Side-effects page summary retrieved only: common effects, and anaphylaxis possible but rare. Difficulty breathing, hallucinations and low mood as 'serious' NHS list not retrieved.",
+   "url": "https://www.nhs.uk/medicines/zopiclone/side-effects-of-zopiclone/",
+   "action": "edited",
+   "newSentence": "The NHS says a severe allergic reaction (anaphylaxis) is a rare possible side effect of zopiclone."
+  },
+  {
+   "id": "c12",
+   "where": "sideEffects.serious[1]",
+   "classification": "supported",
+   "evidence": "SmPC: discontinue treatment immediately if a patient experiences a complex sleep behaviour, due to risk to patient and others.",
+   "url": "https://www.medicines.org.uk/emc/product/10590/smpc",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c13",
+   "where": "sideEffects.serious[2]",
+   "classification": "textbook",
+   "evidence": "Site signposting rule; standard UK routes to care (999, NHS 111, GP, pharmacist).",
+   "url": "https://www.nhs.uk/medicines/zopiclone/side-effects-of-zopiclone/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c14",
+   "where": "cautions[0]",
+   "classification": "supported",
+   "evidence": "NHS: avoid alcohol; together can cause very deep sleep and trouble waking; side-effects summary mentions breathing problems and difficulty waking (blended pages).",
+   "url": "https://www.nhs.uk/medicines/zopiclone/common-questions-about-zopiclone/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c15",
+   "where": "cautions[1]",
+   "classification": "supported",
+   "evidence": "NHS: opioid painkillers (codeine, morphine, oxycodone), sedating antihistamines and other sleep/anxiety medicines may not mix well; cannabis, heroin, methadone add to sedative effects.",
+   "url": "https://www.nhs.uk/medicines/zopiclone/common-questions-about-zopiclone/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c16",
+   "where": "cautions[2]",
+   "classification": "supported",
+   "evidence": "NHS who-can page: most adults over 18 can take it; past allergic reaction, liver/kidney problems, myasthenia gravis, breathing problems/sleep apnoea, mental health history, alcohol/drug misuse listed.",
+   "url": "https://www.nhs.uk/medicines/zopiclone/who-can-and-cannot-take-zopiclone/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c17",
+   "where": "cautions[3]",
+   "classification": "supported",
+   "evidence": "SmPC contraindication: previous complex sleep behaviours after zopiclone.",
+   "url": "https://www.medicines.org.uk/emc/product/10590/smpc",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c18",
+   "where": "cautions[4]",
+   "classification": "supported",
+   "evidence": "NHS pregnancy page: may cause drowsiness or withdrawal symptoms such as agitation or shaking in newborns; not usually recommended in pregnancy.",
+   "url": "https://www.nhs.uk/medicines/zopiclone/pregnancy-breastfeeding-and-fertility-while-taking-zopiclone/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c19",
+   "where": "cautions[5]",
+   "classification": "unsupported",
+   "evidence": "NHS pregnancy page: can be taken while breastfeeding if doctor or health visitor says baby is healthy; small amounts pass into milk; do not share a bed with baby. 'Not known to cause side effects / very small risk of sleepiness' wording not found. UK leaflet says not to take while breastfeeding.",
+   "url": "https://www.nhs.uk/medicines/zopiclone/pregnancy-breastfeeding-and-fertility-while-taking-zopiclone/",
+   "action": "edited",
+   "newSentence": "The NHS says zopiclone can be taken while breastfeeding if a doctor or health visitor confirms the baby is healthy, and that it is important not to share a bed with the baby while taking it."
+  },
+  {
+   "id": "c20",
+   "where": "cautions[6]",
+   "classification": "supported",
+   "evidence": "NHS common questions: stopping suddenly can bring back insomnia worse than before, anxiety, restlessness; unlikely to have withdrawal symptoms if taken for under a month.",
+   "url": "https://www.nhs.uk/medicines/zopiclone/common-questions-about-zopiclone/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c21",
+   "where": "monitoring[0]",
+   "classification": "supported",
+   "evidence": "NHS: usually prescribed for only 2 to 4 weeks; body gets used to it quickly.",
+   "url": "https://www.nhs.uk/medicines/zopiclone/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c22",
+   "where": "monitoring[1]",
+   "classification": "unsupported",
+   "evidence": "SmPC: 'as with all hypnotics, long term use of zopiclone is not recommended'. A prescriber 'reviewing the need' was not found.",
+   "url": "https://www.medicines.org.uk/emc/product/10590/smpc",
+   "action": "edited",
+   "newSentence": "The summary of product characteristics says long-term use of zopiclone is not recommended, as with all sleeping medicines."
+  },
+  {
+   "id": "c23",
+   "where": "regulatory[0]",
+   "classification": "supported",
+   "evidence": "NHS: only available on prescription; medicine for insomnia.",
+   "url": "https://www.nhs.uk/medicines/zopiclone/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c24",
+   "where": "regulatory[1]",
+   "classification": "supported",
+   "evidence": "SI 2014/1275 and 2014 Order, both in force 10 June 2014; Home Office Circular 008/2014.",
+   "url": "https://www.legislation.gov.uk/uksi/2014/1275/made",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c25",
+   "where": "article.sections[0]",
+   "classification": "supported",
+   "evidence": "NHS main page title and text.",
+   "url": "https://www.nhs.uk/medicines/zopiclone/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c26",
+   "where": "article.sections[1]",
+   "classification": "supported",
+   "evidence": "As item 3.",
+   "url": "https://www.medicines.org.uk/emc/product/10590/smpc",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c27",
+   "where": "article.sections[2]",
+   "classification": "supported",
+   "evidence": "As item 20.",
+   "url": "https://www.nhs.uk/medicines/zopiclone/common-questions-about-zopiclone/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c28",
+   "where": "article.sections[0]",
+   "classification": "supported",
+   "evidence": "NHS: if taken for up to 4 weeks you're unlikely to become addicted; may become dependent if taken longer than 4 weeks.",
+   "url": "https://www.nhs.uk/medicines/zopiclone/common-questions-about-zopiclone/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c29",
+   "where": "article.sections[1]",
+   "classification": "supported",
+   "evidence": "NHS: do not suddenly stop without telling your doctor, as you may get withdrawal symptoms.",
+   "url": "https://www.nhs.uk/medicines/zopiclone/common-questions-about-zopiclone/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c30",
+   "where": "article.sections[2]",
+   "classification": "supported",
+   "evidence": "NHS: insomnia returns worse, anxiety, restlessness; unlikely if taken under a month.",
+   "url": "https://www.nhs.uk/medicines/zopiclone/common-questions-about-zopiclone/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c31",
+   "where": "article.sections[3]",
+   "classification": "textbook",
+   "evidence": "Site signposting rule: GP for stopping questions; NHS 111/999 for severe symptoms.",
+   "url": "https://www.nhs.uk/medicines/zopiclone/common-questions-about-zopiclone/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c32",
+   "where": "article.sections[0]",
+   "classification": "supported",
+   "evidence": "As item 9.",
+   "url": "https://www.nhs.uk/medicines/zopiclone/how-and-when-to-take-zopiclone/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c33",
+   "where": "article.sections[1]",
+   "classification": "supported",
+   "evidence": "As item 13.",
+   "url": "https://www.nhs.uk/medicines/zopiclone/common-questions-about-zopiclone/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c34",
+   "where": "article.sections[2]",
+   "classification": "unsupported",
+   "evidence": "NHS: sleepwalking and phone calls while asleep; SmPC: stop immediately on complex sleep behaviour. 'Eaten' not seen.",
+   "url": "https://www.nhs.uk/medicines/zopiclone/common-questions-about-zopiclone/",
+   "action": "edited",
+   "newSentence": "Some people have sleepwalked or made phone calls while asleep, and the summary of product characteristics says treatment should stop immediately if a complex sleep behaviour happens."
+  },
+  {
+   "id": "c35",
+   "where": "article.sections[3]",
+   "classification": "supported",
+   "evidence": "NHS: caffeine counteracts zopiclone.",
+   "url": "https://www.nhs.uk/medicines/zopiclone/common-questions-about-zopiclone/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c36",
+   "where": "article.sections[0]",
+   "classification": "supported",
+   "evidence": "As item 7.",
+   "url": "https://www.nhs.uk/medicines/zopiclone/side-effects-of-zopiclone/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c37",
+   "where": "article.sections[1]",
+   "classification": "unsupported",
+   "evidence": "Only anaphylaxis (rare) retrieved from side-effects page; the other listed items not seen.",
+   "url": "https://www.nhs.uk/medicines/zopiclone/side-effects-of-zopiclone/",
+   "action": "edited",
+   "newSentence": "The NHS says a severe allergic reaction (anaphylaxis) is a rare possible side effect of zopiclone."
+  },
+  {
+   "id": "c38",
+   "where": "article.sections[2]",
+   "classification": "supported",
+   "evidence": "As item 15.",
+   "url": "https://www.nhs.uk/medicines/zopiclone/who-can-and-cannot-take-zopiclone/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c39",
+   "where": "article.sections[3]",
+   "classification": "supported",
+   "evidence": "As item 2.",
+   "url": "https://www.legislation.gov.uk/uksi/2014/1275/made",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c40",
+   "where": "article.faqs",
+   "classification": "supported",
+   "evidence": "NHS: unlikely to become addicted within 4 weeks, may become dependent beyond; side-effects summary says possible to become addicted.",
+   "url": "https://www.nhs.uk/medicines/zopiclone/common-questions-about-zopiclone/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c41",
+   "where": "article.faqs",
+   "classification": "supported",
+   "evidence": "As item 2. Check the question text paired with this answer asks about controlled-drug status.",
+   "url": "https://www.legislation.gov.uk/uksi/2014/1275/made",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c42",
+   "where": "article.faqs",
+   "classification": "supported",
+   "evidence": "As item 13.",
+   "url": "https://www.nhs.uk/medicines/zopiclone/common-questions-about-zopiclone/",
+   "action": "kept",
+   "newSentence": null
+  }
+ ],
+ "notes": "12 searches used. 12-hour driving: NHS how-and-when/main page summary says 12 hours, but common-questions page words it generally (avoid driving if drowsy); zolpidem NHS says 8 hours - check page text. SmPC cited is emc 10830 (3.75mg) in ledger; 7.5mg SmPC is product 10590 - confirm the indication line verbatim. Breastfeeding: NHS permits with doctor check, UK leaflet says do not take while breastfeeding; review wording. NHS 999 instruction for anaphylaxis not retrieved. Unverified 'serious side effects' list (breathing, hallucinations, low mood) removed. Schedule status checked only against 2014 sources; confirm no later change. Dependence wording kept calm: NHS says unlikely to become addicted up to 4 weeks, may become dependent beyond. | Editorial tidy-ups after the second pass (duplicate sentences removed or one wording softened) are marked in the claims where they apply. Replacement sentences came from the second-pass retrieval and were not run through a third check."
+}

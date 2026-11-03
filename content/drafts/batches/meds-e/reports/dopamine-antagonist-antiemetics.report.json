@@ -1,0 +1,78 @@
+{
+ "id": "dopamine-antagonist-antiemetics",
+ "searchesUsed": 0,
+ "counts": {
+  "supported": 7,
+  "textbook": 0,
+  "unsupported": 0,
+  "wrong": 0,
+  "unsafe": 0,
+  "unchecked": 0
+ },
+ "claims": [
+  {
+   "id": "c01",
+   "where": "summary[0]",
+   "classification": "supported",
+   "evidence": "MHRA (domperidone update) describes domperidone as a dopamine antagonist with antiemetic properties; NHS formularies pair it with metoclopramide. Second clause is a site statement.",
+   "url": "https://www.rightdecisions.scot.nhs.uk/tam-treatments-and-medicines-nhs-highland/formularies/highland-formulary/central-nervous-system-formulary/nausea-and-vertigo-formulary-cns/domperidone-and-metoclopramide-formulary-cns/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c02",
+   "where": "summary[1]",
+   "classification": "supported",
+   "evidence": "MHRA: restricted because of neurological risk; short-term use.",
+   "url": "https://www.gov.uk/drug-safety-update/metoclopramide-risk-of-neurological-adverse-effects",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c03",
+   "where": "mechanism",
+   "classification": "supported",
+   "evidence": "Formulary title 'Domperidone and metoclopramide'; no mechanism text retrieved for metoclopramide; MHRA calls domperidone a dopamine antagonist.",
+   "url": "https://www.rightdecisions.scot.nhs.uk/tam-treatments-and-medicines-nhs-highland/formularies/highland-formulary/central-nervous-system-formulary/nausea-and-vertigo-formulary-cns/domperidone-and-metoclopramide-formulary-cns/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c04",
+   "where": "cautions[0]",
+   "classification": "supported",
+   "evidence": "MHRA: higher risk in children; 1-18 second-line only.",
+   "url": "https://www.gov.uk/drug-safety-update/metoclopramide-risk-of-neurological-adverse-effects",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c05",
+   "where": "cautions[1]",
+   "classification": "supported",
+   "evidence": "NHS Who can page: epilepsy, Parkinson's.",
+   "url": "https://www.nhs.uk/medicines/metoclopramide/who-can-and-cannot-take-metoclopramide/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c06",
+   "where": "cautions[2]",
+   "classification": "supported",
+   "evidence": "NHS other-medicines page.",
+   "url": "https://www.nhs.uk/medicines/metoclopramide/taking-metoclopramide-with-other-medicines-and-herbal-supplements/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c07",
+   "where": "cautions[3]",
+   "classification": "supported",
+   "evidence": "NHS side effects page.",
+   "url": "https://www.nhs.uk/medicines/metoclopramide/side-effects-of-metoclopramide/",
+   "action": "kept",
+   "newSentence": null
+  }
+ ],
+ "notes": "Class page: checked in the same second-pass run as metoclopramide (searches counted there)."
+}

@@ -1,0 +1,393 @@
+{
+ "id": "lactulose",
+ "searchesUsed": 12,
+ "counts": {
+  "unsupported": 11,
+  "supported": 26,
+  "unsafe": 3,
+  "textbook": 2,
+  "wrong": 0,
+  "unchecked": 0
+ },
+ "claims": [
+  {
+   "id": "c01",
+   "where": "summary[0]",
+   "classification": "unsupported",
+   "evidence": "NHS about page summary: laxative for constipation, also used for 'a condition caused by severe liver disease called hepatic encephalopathy'. 'Causes confusion' not in NHS text seen.",
+   "url": "https://www.nhs.uk/medicines/lactulose/about-lactulose/",
+   "action": "edited",
+   "newSentence": "Lactulose is a laxative used to treat constipation, and it is also used for hepatic encephalopathy, a condition caused by severe liver disease."
+  },
+  {
+   "id": "c02",
+   "where": "summary[1]",
+   "classification": "supported",
+   "evidence": "About page: draws water into bowel to soften stools; at least 2 days to work. Note other NHS pages/summaries say 2 to 3 days.",
+   "url": "https://www.nhs.uk/medicines/lactulose/about-lactulose/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c03",
+   "where": "usedFor[0]",
+   "classification": "supported",
+   "evidence": "NHS lactulose page: laxative to treat constipation.",
+   "url": "https://www.nhs.uk/medicines/lactulose/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c04",
+   "where": "usedFor[1]",
+   "classification": "unsupported",
+   "evidence": "Confusion/tremor/decreased consciousness wording came from UK patient leaflet (medicines.org.uk PIL 5525), not NHS. NHS says condition caused by severe liver disease.",
+   "url": "https://www.nhs.uk/medicines/lactulose/about-lactulose/",
+   "action": "edited",
+   "newSentence": "Treating hepatic encephalopathy, a condition caused by severe liver disease."
+  },
+  {
+   "id": "c05",
+   "where": "howItWorks[0]",
+   "classification": "supported",
+   "evidence": "Common questions/about: osmotic laxative that draws water into bowel to soften stools.",
+   "url": "https://www.nhs.uk/medicines/lactulose/about-lactulose/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c06",
+   "where": "howItWorks[1]",
+   "classification": "unsupported",
+   "evidence": "St George's PDF appeared in results but its text was not retrieved; the sentence was not confirmed. NHS Laxatives page says osmotic laxatives draw water into bowel to soften poo.",
+   "url": "https://www.nhs.uk/medicines/laxatives/",
+   "action": "edited",
+   "newSentence": "The NHS says osmotic laxatives such as lactulose and macrogol draw water into the bowel to soften poo and make it easier to pass."
+  },
+  {
+   "id": "c07",
+   "where": "onset",
+   "classification": "unsafe",
+   "evidence": "'At least 2 days' supported. '4 or 5 days' seen in one search summary of the about page, but the main NHS page and common-questions page are reported as saying 3 days; conflicting, and it is a numeric cut-off.",
+   "url": "https://www.nhs.uk/medicines/lactulose/about-lactulose/",
+   "action": "edited",
+   "newSentence": "The NHS says lactulose is slow-acting and takes at least 2 days to work; if constipation does not improve, it advises talking to a doctor or pharmacist."
+  },
+  {
+   "id": "c08",
+   "where": "sideEffects.common[0]",
+   "classification": "supported",
+   "evidence": "Side effects page: diarrhoea very common, particularly at high doses.",
+   "url": "https://www.nhs.uk/medicines/lactulose/side-effects-of-lactulose/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c09",
+   "where": "sideEffects.common[1]",
+   "classification": "supported",
+   "evidence": "Bloating and wind common, usually mild and short-lived.",
+   "url": "https://www.nhs.uk/medicines/lactulose/side-effects-of-lactulose/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c10",
+   "where": "sideEffects.serious[0]",
+   "classification": "supported",
+   "evidence": "Serious side effects rare; anaphylaxis possible in rare cases.",
+   "url": "https://www.nhs.uk/medicines/lactulose/side-effects-of-lactulose/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c11",
+   "where": "sideEffects.serious[1]",
+   "classification": "supported",
+   "evidence": "Side effects/common questions: longer use can cause prolonged diarrhoea and electrolyte imbalance.",
+   "url": "https://www.nhs.uk/medicines/lactulose/side-effects-of-lactulose/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c12",
+   "where": "sideEffects.serious[2]",
+   "classification": "textbook",
+   "evidence": "Site signposting rule, routes to care present.",
+   "url": "https://www.nhs.uk/medicines/lactulose/side-effects-of-lactulose/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c13",
+   "where": "cautions[0]",
+   "classification": "supported",
+   "evidence": "Who-can page: most adults and people 14+; under 14 needs prescription.",
+   "url": "https://www.nhs.uk/medicines/lactulose/who-can-and-cannot-take-lactulose/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c14",
+   "where": "cautions[1]",
+   "classification": "unsupported",
+   "evidence": "Retrieved: past allergic reaction to lactulose/similar medicines and galactosaemia listed; IBS also. Lactose intolerance and galactose/fructose allergies not seen.",
+   "url": "https://www.nhs.uk/medicines/lactulose/who-can-and-cannot-take-lactulose/",
+   "action": "edited",
+   "newSentence": "The NHS lists a past allergic reaction to lactulose or a similar medicine and galactosaemia as reasons it may not be suitable."
+  },
+  {
+   "id": "c15",
+   "where": "cautions[2]",
+   "classification": "supported",
+   "evidence": "Who-can page: IBS, diverticular disease, Crohn's, bowel blockage not caused by constipation. NHS wording is tell doctor/pharmacist; some summaries say advised against.",
+   "url": "https://www.nhs.uk/medicines/lactulose/who-can-and-cannot-take-lactulose/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c16",
+   "where": "cautions[3]",
+   "classification": "supported",
+   "evidence": "Lactulose increases gas and bloating, which can make IBS worse.",
+   "url": "https://www.nhs.uk/medicines/lactulose/who-can-and-cannot-take-lactulose/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c17",
+   "where": "cautions[4]",
+   "classification": "unsupported",
+   "evidence": "Normal constipation amounts little/no effect; long-term high amounts may affect blood sugar. 'Many months' not seen in who-can/common-questions text (appeared in HE context).",
+   "url": "https://www.nhs.uk/medicines/lactulose/who-can-and-cannot-take-lactulose/",
+   "action": "edited",
+   "newSentence": "The NHS says normal amounts of lactulose for constipation should have little or no effect on blood sugar, but long-term high amounts, such as those used for liver-related brain problems, may affect it."
+  },
+  {
+   "id": "c18",
+   "where": "cautions[5]",
+   "classification": "supported",
+   "evidence": "Pregnancy page: not harmful to baby; breastfeeding fine if doctor/midwife confirms baby healthy.",
+   "url": "https://www.nhs.uk/medicines/lactulose/pregnancy-breastfeeding-and-fertility-while-taking-lactulose/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c19",
+   "where": "cautions[6]",
+   "classification": "supported",
+   "evidence": "Common questions: prolonged vomiting or severe diarrhoea may stop the pill working.",
+   "url": "https://www.nhs.uk/medicines/lactulose/common-questions-about-lactulose/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c20",
+   "where": "monitoring[0]",
+   "classification": "unsafe",
+   "evidence": "Cut-off conflicts (3 days vs 4 or 5 days across NHS pages).",
+   "url": "https://www.nhs.uk/medicines/lactulose/common-questions-about-lactulose/",
+   "action": "edited",
+   "newSentence": "The NHS advises talking to a doctor or pharmacist if constipation does not improve."
+  },
+  {
+   "id": "c21",
+   "where": "monitoring[1]",
+   "classification": "unsupported",
+   "evidence": "NHS: for HE doctor may recommend taking it for many months. Dehydration/clinician-directed claims from hospital guideline not retrieved.",
+   "url": "https://www.nhs.uk/medicines/lactulose/about-lactulose/",
+   "action": "edited",
+   "newSentence": "The NHS says that for hepatic encephalopathy a doctor may recommend taking lactulose for many months."
+  },
+  {
+   "id": "c22",
+   "where": "regulatory[0]",
+   "classification": "supported",
+   "evidence": "Available on prescription or from pharmacies.",
+   "url": "https://www.nhs.uk/medicines/lactulose/about-lactulose/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c23",
+   "where": "regulatory[1]",
+   "classification": "supported",
+   "evidence": "Can be bought from pharmacies; needs prescription for under 14s.",
+   "url": "https://www.nhs.uk/medicines/lactulose/about-lactulose/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c24",
+   "where": "article.sections[0]",
+   "classification": "supported",
+   "evidence": "Constipation and hepatic encephalopathy are the two uses.",
+   "url": "https://www.nhs.uk/medicines/lactulose/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c25",
+   "where": "article.sections[1]",
+   "classification": "unsupported",
+   "evidence": "Symptom list from UK patient leaflet, not NHS.",
+   "url": "https://www.nhs.uk/medicines/lactulose/about-lactulose/",
+   "action": "edited",
+   "newSentence": "The NHS describes hepatic encephalopathy as a condition caused by severe liver disease, and says lactulose helps the body clear toxins that build up when the liver is failing."
+  },
+  {
+   "id": "c26",
+   "where": "article.sections[2]",
+   "classification": "supported",
+   "evidence": "Prescription or pharmacy.",
+   "url": "https://www.nhs.uk/medicines/lactulose/about-lactulose/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c27",
+   "where": "article.sections[3]",
+   "classification": "supported",
+   "evidence": "Under-14s need doctor's prescription (children and babies).",
+   "url": "https://www.nhs.uk/medicines/lactulose/who-can-and-cannot-take-lactulose/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c28",
+   "where": "article.sections[0]",
+   "classification": "supported",
+   "evidence": "Draws water into bowel to soften stools.",
+   "url": "https://www.nhs.uk/medicines/lactulose/about-lactulose/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c29",
+   "where": "article.sections[1]",
+   "classification": "supported",
+   "evidence": "At least 2 days to work (about page); other NHS pages say 2 to 3 days.",
+   "url": "https://www.nhs.uk/medicines/lactulose/about-lactulose/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c30",
+   "where": "article.sections[2]",
+   "classification": "unsafe",
+   "evidence": "Numeric cut-off, conflicting across NHS pages.",
+   "url": "https://www.nhs.uk/medicines/lactulose/common-questions-about-lactulose/",
+   "action": "edited",
+   "newSentence": "The NHS advises talking to a doctor or pharmacist if constipation does not improve."
+  },
+  {
+   "id": "c31",
+   "where": "article.sections[3]",
+   "classification": "unsupported",
+   "evidence": "Local PDF text not retrieved.",
+   "url": "https://www.nhs.uk/medicines/laxatives/",
+   "action": "edited",
+   "newSentence": "The NHS says osmotic laxatives such as lactulose and macrogol draw water into the bowel to soften poo and make it easier to pass."
+  },
+  {
+   "id": "c32",
+   "where": "article.sections[0]",
+   "classification": "supported",
+   "evidence": "Diarrhoea, bloating, wind common.",
+   "url": "https://www.nhs.uk/medicines/lactulose/side-effects-of-lactulose/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c33",
+   "where": "article.sections[1]",
+   "classification": "supported",
+   "evidence": "Usually mild and short-lived.",
+   "url": "https://www.nhs.uk/medicines/lactulose/side-effects-of-lactulose/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c34",
+   "where": "article.sections[2]",
+   "classification": "supported",
+   "evidence": "Serious rare; long-term use prolonged diarrhoea and electrolyte imbalance.",
+   "url": "https://www.nhs.uk/medicines/lactulose/side-effects-of-lactulose/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c35",
+   "where": "article.sections[3]",
+   "classification": "textbook",
+   "evidence": "Site signposting rule.",
+   "url": "https://www.nhs.uk/medicines/lactulose/side-effects-of-lactulose/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c36",
+   "where": "article.sections[0]",
+   "classification": "supported",
+   "evidence": "Under 14 need prescription.",
+   "url": "https://www.nhs.uk/medicines/lactulose/who-can-and-cannot-take-lactulose/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c37",
+   "where": "article.sections[1]",
+   "classification": "unsupported",
+   "evidence": "Lactose intolerance and galactose/fructose allergies not seen.",
+   "url": "https://www.nhs.uk/medicines/lactulose/who-can-and-cannot-take-lactulose/",
+   "action": "edited",
+   "newSentence": "The NHS lists a past allergic reaction and galactosaemia as reasons lactulose may not be suitable."
+  },
+  {
+   "id": "c38",
+   "where": "article.sections[2]",
+   "classification": "unsupported",
+   "evidence": "Gas/bloating reasoning tied by NHS to IBS only, not diverticular disease or Crohn's.",
+   "url": "https://www.nhs.uk/medicines/lactulose/who-can-and-cannot-take-lactulose/",
+   "action": "edited",
+   "newSentence": "The NHS says people with irritable bowel syndrome, diverticular disease or Crohn's disease should check with a doctor or pharmacist first, and that lactulose increases gas and bloating, which can make IBS worse."
+  },
+  {
+   "id": "c39",
+   "where": "article.sections[3]",
+   "classification": "supported",
+   "evidence": "Can be taken in pregnancy.",
+   "url": "https://www.nhs.uk/medicines/lactulose/pregnancy-breastfeeding-and-fertility-while-taking-lactulose/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c40",
+   "where": "article.faqs",
+   "classification": "supported",
+   "evidence": "Prescription and pharmacy.",
+   "url": "https://www.nhs.uk/medicines/lactulose/about-lactulose/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c41",
+   "where": "article.faqs",
+   "classification": "unsupported",
+   "evidence": "See index 16.",
+   "url": "https://www.nhs.uk/medicines/lactulose/who-can-and-cannot-take-lactulose/",
+   "action": "edited",
+   "newSentence": "The NHS says normal amounts of lactulose for constipation should have little or no effect on blood sugar, but long-term high amounts, such as those used for liver-related brain problems, may affect it."
+  },
+  {
+   "id": "c42",
+   "where": "article.faqs",
+   "classification": "supported",
+   "evidence": "HE listed as a use.",
+   "url": "https://www.nhs.uk/medicines/lactulose/about-lactulose/",
+   "action": "kept",
+   "newSentence": null
+  }
+ ],
+ "notes": "Timing conflicts across NHS pages: about page '4 or 5 days' (one summary) versus main/common-questions '3 days'; onset 'at least 2 days' vs '2 to 3 days'. Human should check live pages. Some summaries mentioned doses; none used. St George's PDF never confirmed; NHS Laxatives page covers lactulose and macrogol together. HE symptom wording is from the medicines.org.uk leaflet, not NHS. Lactose intolerance/galactose/fructose allergy items not retrieved. | Editorial tidy-ups after the second pass (duplicate sentences removed or one wording softened) are marked in the claims where they apply. Replacement sentences came from the second-pass retrieval and were not run through a third check."
+}
