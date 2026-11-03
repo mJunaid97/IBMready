@@ -66,7 +66,9 @@ slash → with slash, `/organs/<id>/` → `/anatomy/<id>/`, `/learn/terminology.
 ## 4. Metadata and structured data (`site/seo.js`)
 
 * Title pattern `[Entity]: [Descriptor] | Anatomy Nexus`, descriptor per type (conditions: *Causes, Symptoms &
-  Treatment*; tests: *Purpose, Procedure & Results*; medications: *Uses, Mechanism & Side Effects*; anatomy
+  Treatment*; tests: *Purpose, Procedure & Results*; medications: *Uses, Side Effects & How It Works* (people search
+  "[drug] side effects" about a hundred times more often than "[drug] mechanism of action", and the builder drops trailing topics first,
+  so the searched words come first); anatomy
   articles carry their own, e.g. *Heart Anatomy: Chambers, Valves, Blood Supply & Function*). A title is at most
   65 characters: a longer descriptor is cut back to its leading topics (*Purpose, Procedure & Results* becomes
   *Purpose, Procedure*) and dropped only when even one topic does not fit. Every title and description is unique
@@ -96,6 +98,16 @@ slash → with slash, `/organs/<id>/` → `/anatomy/<id>/`, `/learn/terminology.
   and its publisher; `about` lists the conditions the post links to.
   Schema is generated from the same data the page shows; nothing is added that is not visible.
 
+* **Head rules on every page** (`applyMeta`): `<html lang="en-GB">` and `inLanguage` `en-GB` (the content is British English), `og:locale`
+  `en_GB`, a robots value of `index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1` on indexable pages (the 3D
+  preview is the reason to click, so large previews are allowed; a `noindex` page keeps its directive as given) and the RSS feed announced
+  with `<link rel="alternate" type="application/rss+xml">` on every page of a production build. The explorer app has the same rules in its static head and a
+  `WebApplication` node. The smoke test asserts all of this on every sitemap URL.
+* **Hub titles** are written for what people type, not "[Name]: A–Z Guide": *Health Conditions A–Z: Symptoms & Treatment*, *Medicines A–Z: Uses,
+  Side Effects & Interactions*, *Medical Tests A–Z: What They Show & Results*, *Symptoms A–Z: Causes & When to Get Help* (`HUB_SEO` in `site/entity.js`).
+  Their descriptions are complete sentences that carry the page count and never start with a digit.
+* An `Article` or `NewsArticle` headline is at most 110 characters (Google cuts it there); the compiler rejects a longer one.
+
 ## 5. Breadcrumbs, internal linking, related topics
 
 Visible breadcrumb lists (`<nav aria-label="Breadcrumb"><ol>`) plus `BreadcrumbList` schema:
@@ -105,6 +117,14 @@ computed backlinks): the *Related topics* block groups them by type in a fixed o
 organs, systems and atlas structures; hubs link every entity (A–Z groups, categories, "start here"
 priority pages, body systems, other sections). Every page is reachable within three clicks of the home page
 and the smoke test fails on any broken or redirecting internal link.
+
+* **Blog posts link to each other.** Under every post, *More guides and news* lists the next and previous post on the same subject (posts are
+  ordered by kind, then by the first page they link to) and the posts that share the most linked pages, so every post has at least three links in
+  (the hub and its neighbours) and none depends on the hub alone; the smoke test fails on a post with fewer than three.
+* **The pages people look up most are linked from the home page** (*Popular conditions*, *Popular medicines*: the first twelve of each hub's
+  "Start here" list, `_priority` in `content/conditions.json` and `content/medications.json`). The lists were chosen from UK search volume
+  (Ahrefs, 3 November 2026) weighted by how realistic a first-page result is for a new site: lupus, sinusitis, fibroids, slipped disc, hernia, thrush,
+  irritable bowel syndrome and peptic ulcer (difficulty 1 to 42, 11,000 to 123,000 searches a month) rather than the heavy head terms.
 
 ## 6. Credibility (YMYL)
 
@@ -177,8 +197,13 @@ by `tools/render-previews.mjs` with the brand plate in the corner, also used as 
 vulva, shows the modelled structures around it; pages without a
 3D view share `site/og-cover.png`, the site-wide cover with the logo and positioning line) with a *Load the 3D model* button that swaps in the
 explorer iframe; without scripts the button is a link to the explorer. Pages ship as static HTML with no
-client-side rendering on the critical path, one small stylesheet and no web fonts; images carry width and
-height; the model, JSON and vendor code have long cache lifetimes (`.htaccess`).
+client-side rendering on the critical path and one stylesheet; the one typeface (Inter, self-hosted, `font-display: swap`) is not preloaded (measured:
+no gain when the server compresses, and 1.3 s later on a throttled phone when it does not, because the font competes with the render-blocking stylesheet);
+the 3D preview image is the largest thing above the fold on an article page, so it loads eagerly at high priority, not lazily; images carry width and
+height; the home hero is WebP (80 KB, from 176 KB) with the JPEG as fallback; the model, JSON and vendor code have long cache lifetimes (`.htaccess`).
+Measure against a compressing server (the production server compresses text with Brotli or gzip): an uncompressed local server makes the 60 KB
+stylesheet and 100 KB of script look six times as heavy. Lighthouse on five templates, mobile, simulated slow 4G, compressed: performance 98 to 100,
+largest contentful paint 1.7 to 2.3 s, layout shift 0 to 0.03, accessibility and SEO 100 (details in `docs/seo/audit-2026-11-03.md`).
 
 ## 10. Owner checklist (needs the site owner's Google account)
 

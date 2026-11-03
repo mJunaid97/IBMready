@@ -296,6 +296,16 @@ else {
           if (dsc.length < 70 || dsc.length > 160) { bad++; fail(`sitemap URL meta description is ${dsc.length} characters (70-160): ${u}`); }
           if ((html.match(/<h1[\s>]/gi) || []).length !== 1) { bad++; fail(`sitemap URL does not have exactly one h1: ${u}`); }
           if (/"item":"[^"]*\/\.\.\//.test(html)) { bad++; fail(`sitemap URL carries a '..' address in its structured data: ${u}`); }
+          // v1.10.1: British English declared, large image previews allowed, the locale in Open Graph, the feed announced,
+          // and a headline that structured data can use (Google cuts it after 110 characters)
+          if (!/<html[^>]+lang="en-GB"/i.test(html)) { bad++; fail(`sitemap URL is not lang="en-GB": ${u}`); }
+          if (!/max-image-preview:large/.test(/<meta[^>]+name="robots"[^>]+content="([^"]*)"/i.exec(html)?.[1] || '')) { bad++; fail(`sitemap URL does not allow large image previews: ${u}`); }
+          if (!/<meta property="og:locale" content="en_GB"/.test(html)) { bad++; fail(`sitemap URL has no og:locale en_GB: ${u}`); }
+          if (!/\/explorer\/$/.test(u) && !/type="application\/rss\+xml"/.test(html)) { bad++; fail(`sitemap URL does not announce the RSS feed: ${u}`); }       // the explorer is an app with no feed link
+          for (const blk of html.matchAll(/<script[^>]*application\/ld\+json[^>]*>([\s\S]*?)<\/script>/g)) {
+            let ld; try { ld = JSON.parse(blk[1]); } catch { bad++; fail(`sitemap URL has structured data that does not parse: ${u}`); continue; }
+            for (const n of ld['@graph'] || [ld]) if (/^(News)?Article$/.test(n['@type']) && String(n.headline || '').length > 110) { bad++; fail(`sitemap URL headline is ${n.headline.length} characters (110 at most): ${u}`); }
+          }
         }
       }
     }
@@ -346,19 +356,20 @@ if (PRETTY) {
 // HTML, where the links are in the initial response rather than added by the page script after load.
 if (STATIC && sitemapUrls.length) {
   const localOf = (u) => u.replace(/^https?:\/\/[^/]+\//, base);
-  const linkedTo = new Set();
+  const linkedTo = new Set(); const inbound = new Map();
   let scanned = 0, unreadable = 0;
   for (const u of sitemapUrls) {
     const from = localOf(u);
     const r = await page.request.get(from).catch(() => null);
     if (!r || r.status() !== 200) { unreadable++; continue; }
-    scanned++;
+    scanned++; const seenHere = new Set();
     for (const m of (await r.text()).matchAll(/<a\b[^>]*?\shref="([^"]+)"/gi)) {
       let target;
       try { target = new URL(m[1], from); } catch { continue; }
       const abs = target.origin + target.pathname;           // ignore #fragments and ?queries
       if (!abs.startsWith(base) || abs === from) continue;    // external, or a self-link
       linkedTo.add(abs);
+      if (!seenHere.has(abs)) { seenHere.add(abs); inbound.set(abs, (inbound.get(abs) || 0) + 1); }
     }
   }
   // Policy and contact pages are reached from the footer; the specification allows deliberately standalone
@@ -368,6 +379,10 @@ if (STATIC && sitemapUrls.length) {
   if (unreadable) fail(`orphan check could not read ${unreadable} sitemap URLs`);
   if (orphans.length) fail(`${orphans.length} orphaned sitemap URLs (no inbound internal link): ${orphans.slice(0, 8).map(u => u.replace(base, '/')).join(', ')}${orphans.length > 8 ? ' …' : ''}`);
   else ok(`no orphans: all ${sitemapUrls.length} sitemap URLs are linked from another page (${scanned} pages crawled, ${linkedTo.size} distinct targets)`);
+  // a post that only the hub links to is a weak page: each blog post is linked from the hub and from its neighbours under "More guides and news"
+  const thinLinked = sitemapUrls.map(localOf).filter(u => /\/blog\/[^/]+\/$/.test(u) && (inbound.get(u) || 0) < 3);
+  if (thinLinked.length) fail(`${thinLinked.length} blog posts are linked from fewer than three pages: ${thinLinked.slice(0, 6).map(u => u.replace(base, '/')).join(', ')}${thinLinked.length > 6 ? ' …' : ''}`);
+  else ok('every blog post is linked from at least three pages');
 }
 
 if (STATIC) {
@@ -394,6 +409,12 @@ if (STATIC) {
 
 // 7. URL rules: aliases, query URLs, index.html, trailing slash, retired paths, 404
 const status = async (p) => { const r = await page.request.get(base + p, { maxRedirects: 0 }); return [r.status(), (r.headers().location || '').replace(/^https?:\/\/[^/]+/, '')]; };
+if (STATIC) {
+  // the query-URL templates are build inputs: a prerendered build serves every page at its clean address and nothing else (a template has no canonical, no h1 and no content)
+  const served = [];
+  for (const t of ['blog/post.html', 'conditions/condition.html', 'medications/medication.html', 'anatomy/organ.html', 'symptoms/symptom.html', 'tests/test.html']) { const [st] = await status(t); if (st === 200) served.push(t); }
+  if (served.length) fail(`template pages are served: ${served.join(', ')}`); else ok('no query-URL template page is served');
+}
 const nf = await status('no-such-page-xyz');
 if (nf[0] !== 404) fail(`missing page returned ${nf[0]} instead of 404`); else ok('404 status for a missing page');
 if (PRETTY) {

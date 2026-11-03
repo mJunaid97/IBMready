@@ -19,7 +19,7 @@ sections, built from the retrieved text of at least two publishers and tied to t
 | --- | --- |
 | slug (the key) | lowercase hyphenated; for news start with the subject, not the date; unique. |
 | `name` | **15 to 49 characters**: it is the page title (`<name> | Anatomy Nexus` must fit 65). Specific and plain ("WHO issues first child obesity guidelines"). |
-| `headline` | optional longer on-page headline (15 to 120 characters). |
+| `headline` | optional longer on-page headline (15 to 110 characters: it is also the structured-data headline, which Google cuts after 110). |
 | `kind` | `news` or `guide`. |
 | `published` | news: the date of the announcement (`YYYY-MM-DD`); guide: today. `updated`: the date you checked the sources (today). |
 | `summary` | 70 to 400 characters: the whole story in one or two sentences. It becomes the lead paragraph and the search snippet, so make it answer the question or state the news. The snippet is the summary when it is 70 to 160 characters, else its leading whole sentences that fit; the checker fails a summary whose first sentence cannot be shortened to 70 to 160 characters. |

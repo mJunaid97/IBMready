@@ -299,6 +299,11 @@ def main():
     # ---- explorer: absolute canonical and social image (the explorer is an app, not prerendered)
     p = os.path.join(out, "explorer", "index.html"); s = open(p, encoding="utf-8").read()
     s = s.replace('<link rel="canonical" href="./">', f'<link rel="canonical" href="{origin}explorer/">').replace('<meta property="og:url" content="./">', f'<meta property="og:url" content="{origin}explorer/">').replace('content="../site/og-cover.png"', f'content="{origin}site/og-cover.png"')
+    if origin and "application/ld+json" not in s:       # the explorer is an app, not an article: it says so in structured data, with the organisation as publisher
+        app_ld = {"@context": "https://schema.org", "@type": "WebApplication", "@id": f"{origin}explorer/#app", "name": "Anatomy Nexus 3D Anatomy Explorer", "url": f"{origin}explorer/",
+                  "applicationCategory": "EducationalApplication", "operatingSystem": "Any", "browserRequirements": "Requires WebGL", "inLanguage": "en-GB", "isAccessibleForFree": True,
+                  "publisher": {"@type": "Organization", "@id": f"{origin}#organization", "name": "Anatomy Nexus", "url": origin}}
+        s = s.replace("</head>", '  <script type="application/ld+json">' + json.dumps(app_ld, ensure_ascii=False).replace("<", "\\u003c") + "</script>\n</head>", 1)
     open(p, "w", encoding="utf-8").write(s)
 
     # ---- sub-path installs: root-relative references in the files that use them

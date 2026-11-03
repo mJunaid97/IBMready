@@ -1,5 +1,29 @@
 # Changelog
 
+## v1.10.1 — 2026-11-03
+
+SEO and speed: a page-by-page audit of the production build (836 pages, Lighthouse on seven templates, structured data, sitemaps, headers, internal links, Ahrefs)
+and what it found. The audit and its numbers are in `docs/seo/audit-2026-11-03.md`.
+
+- Head tags on every page: `<html lang="en-GB">` (it was `en`) and `inLanguage` `en-GB`, `og:locale` `en_GB`, robots `index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1`
+  (large previews allowed: the 3D preview image is the reason to click), and the RSS feed announced on every page of a production build, not only the blog. The 3D explorer has the
+  same rules and a `WebApplication` node.
+- `blog/post.html`, the query-URL template of the blog, was shipped as a page with no canonical, no h1 and no content; the other templates were removed at build time and
+  this one was missing from the list. It is removed and the smoke test fails if any template page is served.
+- Speed: the 3D preview image, the largest thing above the fold on every article page, loads eagerly at high priority instead of lazily; the home hero is WebP, 80 KB instead of 176 KB, with the
+  JPEG as fallback. A font preload was tried and left out: it made no difference with a compressing server and delayed the largest contentful paint by 1.3 s on a throttled phone without one.
+- Internal links: every blog post ends with *More guides and news* (the next and previous post on the same subject, then the posts that share the most linked pages), so no post is linked
+  from the hub alone (50 news briefs had two links in; the smoke test now requires three); the home page links the twelve conditions and twelve medicines in the hubs' "Start here" lists,
+  which were re-chosen from UK search volume (Ahrefs) weighted by how realistic a first-page result is for a new site (lupus, sinusitis, fibroids, slipped disc, hernia, thrush, IBS and peptic
+  ulcer rather than only the heavy head terms).
+- Titles written for what people type: hubs read *Health Conditions A–Z: Symptoms & Treatment*, *Medicines A–Z: Uses, Side Effects & Interactions* and so on instead of "[Name]: A–Z Guide";
+  the medicine title ends *Uses, Side Effects & How It Works* (the title builder drops trailing words first, and "[drug] side effects" is searched about a hundred times as often as
+  "[drug] mechanism of action"); Lupus, ACL injury and Diverticulitis lead with the phrase searched, the old names stay as aliases. The medicines hub description no longer ends "doses.".
+- A structured-data headline is at most 110 characters (one WHO brief had 111; the compiler now rejects a longer one).
+- Server rules: a `.git` directory in the web root (the pull script creates one) is never served; Markdown and JSON files carry `X-Robots-Tag: noindex`; `.webp` has its media type and cache lifetime.
+- Smoke test: `lang="en-GB"`, large-preview robots value, `og:locale`, feed link and headline length on every sitemap URL; every blog post linked from three pages;
+  no template page served.
+
 ## v1.10.0 — 2026-11-03
 
 Health blog and news (221 posts), 64 new condition pages for the most-searched diseases, 46 new medicines, 28 new drug classes, and in-depth articles on 52 existing pages. Every claim was checked in two passes against its sources; nothing is clinically reviewed.

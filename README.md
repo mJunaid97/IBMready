@@ -148,6 +148,7 @@ python3 tools/build-content.py
 cd tools/qa && npm ci && npx playwright install chromium && cd ../..
 python3 tools/package-site.py --site-url https://anatomynexus.com --pretty --prerender --zip
 python3 tools/qa/serve.py --dir dist --port 8124        # emulates the production URL rules
+python3 tools/qa/seo_audit.py dist                       # page-by-page SEO audit of the package (titles, canonicals, schema, sitemaps, internal links)
 ```
 
 `dist/` is the site as deployed: every page prerendered to static HTML at its clean URL
@@ -255,7 +256,7 @@ brand/                the Anatomy Nexus logo package: masters, print files, favi
 data/                 built atlas (hd, lite), compiled content, ATTRIBUTION.md
 content/              editable content sources
 tools/                pipeline: build-content.py (+ taxonomy.py), build-silhouettes.mjs (+ derived/), verification/ (QA printers and validators), package-site.py, prerender.mjs, render-previews.mjs,
-                      check-references.py, release.py, terminology/ (LOINC and RxNorm ingestion), qa/ (smoke test, engine-test.mjs, serve.py)
+                      check-references.py, release.py, terminology/ (LOINC and RxNorm ingestion), qa/ (smoke test, engine-test.mjs, seo_audit.py, serve.py)
 vendor/three/         three.js r186 (minified core + the addons used)
 ARCHITECTURE.md       entity model and how sections connect · SEO.md the search architecture · CLINICAL.md the clinical layer
 ```

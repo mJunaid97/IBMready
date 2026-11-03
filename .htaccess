@@ -9,6 +9,8 @@ DirectoryIndex index.html
 
 <IfModule mod_rewrite.c>
   RewriteEngine On
+  # the pull script (hostinger-pull.sh) keeps a .git directory in the web root: nothing inside it is ever served
+  RewriteRule (^|/)\.git(/|$) - [R=404,L]
 
   # ---- HTTPS and one canonical host, in one hop (Hostinger terminates TLS on a proxy: check the forwarded header too)
   RewriteCond %{HTTPS} !=on
@@ -32,6 +34,7 @@ ErrorDocument 404 /404.html
   AddType application/json .json
   AddType application/javascript .js .mjs
   AddType image/svg+xml .svg
+  AddType image/webp .webp
   AddType application/manifest+json .webmanifest
   AddType application/wasm .wasm
   AddType application/xml .xml
@@ -58,13 +61,18 @@ ErrorDocument 404 /404.html
   ExpiresByType model/gltf-binary "access plus 30 days"
   ExpiresByType image/jpeg "access plus 30 days"
   ExpiresByType image/png "access plus 30 days"
+  ExpiresByType image/webp "access plus 30 days"
   ExpiresByType image/svg+xml "access plus 30 days"
   ExpiresByType font/woff2 "access plus 365 days"
   ExpiresByType image/x-icon "access plus 30 days"
   ExpiresByType application/xml "access plus 1 hour"
 </IfModule>
 <IfModule mod_headers.c>
-  <FilesMatch "\.(glb|jpg|png|woff2|ico)$">
+  # the Markdown documents and the JSON data files are served for readers and for the pages' own scripts; they are not pages and stay out of search results
+  <FilesMatch "\.(md|json)$">
+    Header set X-Robots-Tag "noindex"
+  </FilesMatch>
+  <FilesMatch "\.(glb|jpg|png|webp|woff2|ico)$">
     Header set Cache-Control "public, max-age=2592000, immutable"
   </FilesMatch>
   <FilesMatch "\.(js|mjs|css|json)$">

@@ -7,9 +7,12 @@
  * Title pattern: "[Entity]: [Descriptor] | Anatomy Nexus" (at most 65 characters; a long descriptor is shortened to its
  * leading topics, then dropped). Descriptions are complete statements of at most 160 characters.
  */
-import { SITE, BRAND, canonical, paths, url, esc } from './site.js';
+import { SITE, BRAND, CONFIG, canonical, paths, url, esc } from './site.js';
 
 export const MAX_TITLE = 65;
+/** What an indexable page tells search engines about its snippet: no length limit on text, large image previews (the 3D
+ *  preview image is the reason to click), no limit on video previews. A noindex page keeps its directive as given. */
+export const SNIPPET_RULES = 'max-snippet:-1,max-image-preview:large,max-video-preview:-1';
 export function seoTitle(name, descriptor) {
   const full = descriptor ? `${name}: ${descriptor} | ${BRAND}` : `${name} | ${BRAND}`;
   if (full.length <= MAX_TITLE) return full;
@@ -60,7 +63,7 @@ export function organizationNode() {
   return { '@type': 'Organization', '@id': ORG_ID(), name: SITE.organization?.name || BRAND, url: canonical(''), logo: { '@type': 'ImageObject', url: canonical(SITE.organization?.logo || 'site/icon-512.png') }, ...(SITE.organization?.sameAs?.length ? { sameAs: SITE.organization.sameAs } : {}), ...(SITE.contact?.email ? { email: SITE.contact.email } : {}) };
 }
 export function websiteNode() {
-  return { '@type': 'WebSite', '@id': SITE_ID(), url: canonical(''), name: BRAND, description: SITE.description, inLanguage: 'en', publisher: { '@id': ORG_ID() },
+  return { '@type': 'WebSite', '@id': SITE_ID(), url: canonical(''), name: BRAND, description: SITE.description, inLanguage: 'en-GB', publisher: { '@id': ORG_ID() },
     potentialAction: { '@type': 'SearchAction', target: { '@type': 'EntryPoint', urlTemplate: canonical(paths.dir('search')) + '?q={search_term_string}' }, 'query-input': 'required name=search_term_string' } };
 }
 function breadcrumbNode(items) {
@@ -79,7 +82,7 @@ export function absolute(href) {
 /** The page-level node every content page carries: author, publisher, dates, review status and structured citations. */
 export function webPageNode({ path, title, description, type = 'MedicalWebPage', entityId, updated, references, reviewed }) {
   const pageUrl = canonical(path);
-  const node = { '@type': type, '@id': pageUrl, url: pageUrl, name: title, description, inLanguage: 'en', isPartOf: { '@id': SITE_ID() },
+  const node = { '@type': type, '@id': pageUrl, url: pageUrl, name: title, description, inLanguage: 'en-GB', isPartOf: { '@id': SITE_ID() },
     author: { '@type': 'Organization', name: SITE.editorial?.author || BRAND, url: canonical(paths.dir('about')) }, publisher: { '@id': ORG_ID() } };
   if (entityId) { node.about = { '@id': entityId }; node.mainEntity = { '@id': entityId }; }
   if (updated) node.dateModified = updated;
@@ -101,12 +104,19 @@ export function applyMeta({ title, description, path, robots = 'index,follow', t
   document.title = title;
   const desc = metaDescription(description || SITE.description);
   setMeta('meta[name="description"]', { name: 'description', content: desc });
-  setMeta('meta[name="robots"]', { name: 'robots', content: robots });
+  setMeta('meta[name="robots"]', { name: 'robots', content: /^\s*noindex/i.test(robots) || /max-image-preview/i.test(robots) ? robots : `${robots},${SNIPPET_RULES}` });
   let c = document.head.querySelector('link[rel="canonical"]');
   if (!c) { c = document.createElement('link'); c.rel = 'canonical'; document.head.appendChild(c); }
   c.href = canonical(path);
+  // the health blog's RSS feed is written by the production packager, so it is announced on every page of a production build (feed readers and crawlers find it from any page)
+  if (CONFIG.siteUrl) {
+    let f = document.head.querySelector('link[rel="alternate"][type="application/rss+xml"]');
+    if (!f) { f = document.createElement('link'); f.rel = 'alternate'; f.type = 'application/rss+xml'; f.title = `${BRAND} health blog`; document.head.appendChild(f); }
+    f.href = canonical('feed.xml');
+  }
   const img = absolute(image || 'site/og-cover.png');
   setMeta('meta[property="og:type"]', { property: 'og:type', content: type });
+  setMeta('meta[property="og:locale"]', { property: 'og:locale', content: 'en_GB' });
   setMeta('meta[property="og:site_name"]', { property: 'og:site_name', content: BRAND });
   setMeta('meta[property="og:title"]', { property: 'og:title', content: title });
   setMeta('meta[property="og:description"]', { property: 'og:description', content: desc });

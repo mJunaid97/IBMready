@@ -473,6 +473,25 @@ function articleHtml(e) {
     ${(a.sections || []).map(x => `<h2>${esc(x.heading)}</h2>${prose(x.body)}`).join('')}
     ${a.faqs?.length ? `<h2>Frequently asked questions</h2><div class="faq">${a.faqs.map(f => `<h3>${esc(f.q)}</h3>${prose(f.a)}`).join('')}</div>` : ''}`;
 }
+/** "More guides and news" under every post: the next and the previous post on the same subject (posts are ordered by kind, then by the first
+ *  page they link to), then the posts that share the most linked pages with this one. Every post gets links in from its neighbours, so none depends
+ *  on the hub alone, and a reader always has a next step. Chosen from the data, so it is baked into the prerendered HTML. */
+const POST_LINK_FIELDS = ['conditions', 'medications', 'tests', 'symptoms', 'health', 'drugClasses'];
+const postKey = (p) => { for (const f of POST_LINK_FIELDS) { const id = p.links?.[f]?.[0]; if (id) return `${f}:${id}`; } return 'zz'; };
+export function relatedPostsHtml(e, typeData, max = 4) {
+  const posts = Object.values(typeData.items).filter(p => p.seo?.index !== false);
+  const order = posts.slice().sort((a, b) => String(a.kind).localeCompare(String(b.kind)) || postKey(a).localeCompare(postKey(b)) || a.name.localeCompare(b.name));
+  const at = order.findIndex(p => p.id === e.id);
+  const picked = [];
+  const take = (p) => { if (p && p.id !== e.id && picked.length < max && !picked.some(x => x.id === p.id)) picked.push(p); };
+  if (at >= 0 && order.length > 2) { take(order[(at + 1) % order.length]); take(order[(at - 1 + order.length) % order.length]); }
+  const mine = new Set(POST_LINK_FIELDS.flatMap(f => (e.links?.[f] || []).map(id => `${f}:${id}`)));
+  const shared = (p) => POST_LINK_FIELDS.reduce((n, f) => n + (p.links?.[f] || []).filter(id => mine.has(`${f}:${id}`)).length, 0);
+  posts.filter(p => p.id !== e.id).map(p => ({ p, n: shared(p) })).filter(x => x.n > 0)
+    .sort((a, b) => b.n - a.n || String(b.p.published).localeCompare(String(a.p.published)) || a.p.name.localeCompare(b.p.name)).forEach(x => take(x.p));
+  if (!picked.length) return '';
+  return `<section class="more-posts"><h2>More guides and news</h2><ul class="rel-list">${picked.map(p => `<li><a href="${entityLink('blog', p.id)}">${esc(p.name)}</a> <span class="muted">${p.kind === 'news' ? 'Health news' : 'Guide'} · ${esc(dateText(p.published))}</span></li>`).join('')}</ul></section>`;
+}
 function bylineHtml(e) {
   const kind = e.kind === 'news' ? 'Health news' : 'Guide';
   return `<p class="byline"><span class="badge${e.kind === 'news' ? ' live' : ''}">${kind}</span> Published <time datetime="${esc(e.published)}">${esc(dateText(e.published))}</time>${e.updated && e.updated !== e.published ? ` · sources checked <time datetime="${esc(e.updated)}">${esc(dateText(e.updated))}</time>` : ''}</p>`;
@@ -570,7 +589,7 @@ export async function renderDetail(type) {
       <div>
         ${T[type](e, ctx)}
         ${articleHtml(e)}
-        ${type === 'blog' ? '' : connectedHtml(groups, clinical, e.name)}
+        ${type === 'blog' ? relatedPostsHtml(e, typeData) : connectedHtml(groups, clinical, e.name)}
         ${DISCLAIMER[type] ? `<div class="callout"><b>Educational content.</b> ${esc(DISCLAIMER[type])}</div>` : ''}
       </div>
       <aside class="aside">
@@ -619,6 +638,21 @@ const FACET_LABEL = {
   kind: { receptor: 'Receptor', enzyme: 'Enzyme', transporter: 'Transporter', 'ion channel': 'Ion channel', pathway: 'Pathway', protein: 'Protein', other: 'Other' },
 };
 const FACET_ORDER = { radiation: ['none', 'low', 'moderate'], depth: ['full', 'standard'], emergency: ['true', 'false'], topic: ['conditions', 'medicines', 'tests', 'symptoms', 'health'] };
+/** What a hub is called in search results. The title leads with what people type ("medicines A-Z", "health conditions A-Z") and the three things the page is for;
+ *  the description is a complete statement with the count of pages behind it. Types not listed keep "[Name]: A–Z Guide". The on-page introduction is separate. */
+const HUB_SEO = {
+  conditions:   { title: 'Health Conditions A–Z: Symptoms & Treatment', description: (n) => `Plain-English pages on ${n} health conditions: causes, symptoms, tests, treatment and when to get help, each with its sources and a 3D view of the body part.` },
+  symptoms:     { title: 'Symptoms A–Z: Causes & When to Get Help', description: (n) => `Pages on ${n} common symptoms, from headache to chest pain: causes, warning signs that need urgent care and when to see a doctor, with sources.` },
+  tests:        { title: 'Medical Tests A–Z: What They Show & Results', description: (n) => `Plain-English guides to ${n} medical tests: what each measures, why it is done, how it is carried out, how results are read and what it cannot tell you.` },
+  medications:  { title: 'Medicines A–Z: Uses, Side Effects & Interactions', description: (n) => `Plain-English pages on ${n} medicines: what each is for, how it works, side effects, interactions and cautions, with sources. Not prescribing advice.` },
+  biomarkers:   { title: 'Biomarkers A–Z: What Test Results Mean' },
+  imaging:      { title: 'Medical Imaging A–Z: X-ray, CT, MRI & Ultrasound' },
+  procedures:   { title: 'Medical Procedures A–Z: Steps, Recovery & Risks' },
+  'drug-classes': { title: 'Drug Classes A–Z: How Medicines Work' },
+  targets:      { title: 'Drug Targets A–Z: Receptors, Enzymes & Pathways' },
+  physiology:   { title: 'Human Physiology A–Z: How the Body Works' },
+  blog:         { title: 'Health News & Plain-English Guides' },
+};
 /** A blog post's topics, read from the kinds of page it links to (conditions, medicines, tests and scans, symptoms, health and lifestyle). */
 const BLOG_TOPIC_OF = { conditions: 'conditions', medications: 'medicines', drugClasses: 'medicines', drugClass: 'medicines', tests: 'tests', biomarkers: 'tests', imaging: 'tests', procedures: 'tests', symptoms: 'symptoms', health: 'health', physiology: 'health', firstAid: 'health' };
 const RESERVED_PARAMS = new Set(['cat', 'q', 'system', 'id']);
@@ -654,7 +688,7 @@ export async function renderIndex(type) {
   };
   const plural = type === 'blog' ? 'articles' : TT.name.toLowerCase();
   const filterBy = type === 'blog' ? 'title or topic' : 'name, alias or abbreviation';
-  const hubDescription = () => type === 'blog' ? 'Plain-English guides and health news, summarised from the NHS, NICE, UKHSA and WHO, with the sources linked on every article.' : typeData.meta.about || TT.blurb;     // after load(): the data decides
+  const hubDescription = () => type === 'blog' ? 'Plain-English guides and health news, summarised from the NHS, NICE, UKHSA and WHO, with the sources linked on every article.' : (HUB_SEO[type]?.description?.(items.length)) || typeData.meta.about || TT.blurb;     // after load(): the data decides
   const countText = (n, total, filtered) => !filtered ? `Showing all ${total} ${plural}` : n === 0 ? `No ${plural} match the current filters` : `Showing ${n} of ${total} ${plural}`;
   if (!PRERENDERED) {
     await load();
@@ -664,7 +698,7 @@ export async function renderIndex(type) {
     const priority = (typeData.meta.priority || []).map(id => typeData.items[id]).filter(Boolean);
     const systemsHere = data.atlas.systems.filter(s => items.some(e => systemsOf(e).includes(s.id)));
     const crumbs = [{ name: 'Home', href: link.home() }, { name: TT.name }];
-    const path = paths.dir(TT.dir); const title = type === 'blog' ? `Health Blog: Guides & News | ${SITE.name}` : `${TT.name}: ${type === 'first-aid' ? 'Step-by-Step Guides' : type === 'health' ? 'Lifestyle & the Body' : 'A–Z Guide'} | ${SITE.name}`;
+    const path = paths.dir(TT.dir); const title = `${HUB_SEO[type]?.title || `${TT.name}: ${type === 'first-aid' ? 'Step-by-Step Guides' : type === 'health' ? 'Lifestyle & the Body' : 'A–Z Guide'}`} | ${SITE.name}`;
     applyMeta({ title, description: hubDescription(), path, breadcrumbs: crumbs, jsonld: [webPageNode({ path, title, description: metaDescription(hubDescription()), type: 'CollectionPage', updated: typeData.meta.updated }),
       { '@type': 'ItemList', name: `${TT.name} on ${SITE.name}`, numberOfItems: items.length, itemListElement: items.map((e, i) => ({ '@type': 'ListItem', position: i + 1, name: e.name, url: canonical(entityPath(type, e.id)) })) }] });
     const tools = type === 'medications' || type === 'drug-classes' ? `<p class="actions"><a class="btn btn-primary" href="${link.checker()}">Drug Interaction Checker</a><a class="btn" href="${link.medicationClasses()}">Classes by therapeutic area</a><a class="btn" href="${link.compare()}">Comparisons</a><a class="btn" href="${link.tools()}">All clinical tools</a></p>` : type === 'tests' || type === 'biomarkers' ? `<p class="actions"><a class="btn btn-primary" href="${link.testCategories()}">Browse the ${SITE.counts?.testCategories || 36} test categories</a><a class="btn" href="${link.compare()}">Compare tests and markers</a></p>` : '';

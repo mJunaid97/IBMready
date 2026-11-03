@@ -320,7 +320,7 @@ def derive_meta_description(summary):
 # The descriptor each section appends to a page title ("[Name]: [Descriptor] | Anatomy Nexus"); mirrors TYPES[*].descriptor in site/site.js.
 # site/seo.js shortens the descriptor to fit 65 characters but cannot shorten a name, and the smoke test fails a longer title.
 TITLE_DESCRIPTORS = {"physiology": "How It Works", "symptoms": "Causes & When to Seek Help", "conditions": "Causes, Symptoms & Treatment", "tests": "Purpose, Procedure & Results",
-                     "imaging": "How It Works, Uses & Risks", "procedures": "Steps, Recovery & Risks", "medications": "Uses, Mechanism & Side Effects", "drug-classes": "Mechanism, Uses & Examples",
+                     "imaging": "How It Works, Uses & Risks", "procedures": "Steps, Recovery & Risks", "medications": "Uses, Side Effects & How It Works", "drug-classes": "Examples, Uses & How They Work",
                      "biomarkers": "What It Measures & Why It Changes", "targets": "Receptors, Enzymes & Pathways", "first-aid": "What to Do Step by Step", "health": "Effects on the Body & Guidance"}
 def page_title_len(name, descriptor, brand="Anatomy Nexus", limit=65):
     """Length of the page title site/seo.js seoTitle() would build (the same shortening rules)."""
@@ -340,7 +340,8 @@ def validate_blog(eid, e, errors):
     if e.get("kind") not in ("news", "guide"): errors.append(f"{where}: kind must be 'news' or 'guide'")
     # the page <title> is "<name> | Anatomy Nexus" and must fit 65 characters; a longer on-page headline goes in `headline`
     if not (15 <= len(e.get("name", "")) <= 49): errors.append(f"{where}: name is the page title and must be 15 to 49 characters (it is {len(e.get('name', ''))}); put a longer on-page headline in `headline`")
-    if e.get("headline") and not (15 <= len(e["headline"]) <= 120): errors.append(f"{where}: headline must be 15 to 120 characters")
+    # the headline is also the Article / NewsArticle `headline` in structured data, which Google truncates after 110 characters
+    if e.get("headline") and not (15 <= len(e["headline"]) <= 110): errors.append(f"{where}: headline must be 15 to 110 characters")
     for f in ("published", "updated"):
         if not DATE_RE.match(str(e.get(f, ""))): errors.append(f"{where}: {f} must be a YYYY-MM-DD date")
     summ = e.get("summary", "")

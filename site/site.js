@@ -33,8 +33,8 @@ export const TYPES = {
   tests:          { name: 'Medical tests', singular: 'Medical test',     dir: 'tests',        page: 'test.html',       field: 'tests',       icon: 'tests',       descriptor: 'Purpose, Procedure & Results',   blurb: 'Blood, urine, heart and lung tests: what they measure, how they are done and how results are read.' },
   imaging:        { name: 'Imaging',       singular: 'Imaging study',    dir: 'imaging',      page: 'study.html',      field: 'imaging',     icon: 'imaging',     descriptor: 'How It Works, Uses & Risks',     blurb: 'X-ray, CT, MRI, ultrasound, PET, mammography and fluoroscopy: how each works and what it shows.' },
   procedures:     { name: 'Procedures',    singular: 'Procedure',        dir: 'procedures',   page: 'procedure.html',  field: 'procedures',  icon: 'procedures',  descriptor: 'Steps, Recovery & Risks',        blurb: 'Operations and procedures step by step, with the anatomy involved, recovery and risks.' },
-  medications:    { name: 'Medications',   singular: 'Medication',       dir: 'medications',  page: 'medication.html', field: 'medications', icon: 'medications', descriptor: 'Uses, Mechanism & Side Effects', blurb: 'How common medicines work in the body, what they are for and what to watch for. Education, not prescribing.' },
-  'drug-classes': { name: 'Drug classes',  singular: 'Drug class',       dir: 'drug-classes', page: 'class.html',      field: 'drugClass',   icon: 'drug-classes', descriptor: 'Mechanism, Uses & Examples',    blurb: 'Families of medicines that share a mechanism: what they target in the body, which conditions they treat and their members.' },
+  medications:    { name: 'Medications',   singular: 'Medication',       dir: 'medications',  page: 'medication.html', field: 'medications', icon: 'medications', descriptor: 'Uses, Side Effects & How It Works', blurb: 'How common medicines work in the body, what they are for and what to watch for. Education, not prescribing.' },
+  'drug-classes': { name: 'Drug classes',  singular: 'Drug class',       dir: 'drug-classes', page: 'class.html',      field: 'drugClass',   icon: 'drug-classes', descriptor: 'Examples, Uses & How They Work',    blurb: 'Families of medicines that share a mechanism: what they target in the body, which conditions they treat and their members.' },
   biomarkers:     { name: 'Biomarkers',    singular: 'Biomarker',        dir: 'biomarkers',   page: 'biomarker.html',  field: 'biomarkers',  icon: 'biomarkers',  descriptor: 'What It Measures & Why It Changes', blurb: 'The substances tests measure: what each is, which organ makes or clears it, why a result may be higher or lower and what distorts it.' },
   targets:        { name: 'Drug targets',  singular: 'Biological target', dir: 'targets',     page: 'target.html',     field: 'targets',     icon: 'targets',     descriptor: 'Receptors, Enzymes & Pathways',  blurb: 'The receptors, enzymes, channels and pathways medicines act on: what each does in the body, where it is found and which medicines change it.' },
   'first-aid':    { name: 'First aid',     singular: 'First aid topic',  dir: 'first-aid',    page: 'topic.html',      field: 'firstAid',    icon: 'first-aid',   descriptor: 'What to Do Step by Step',        blurb: 'CPR, choking, bleeding, burns, fractures, fainting, seizures and more, aligned with resuscitation guidelines.' },
@@ -309,11 +309,13 @@ export function emptyHtml(title, text, actionsHtml = '', icon = 'search') {
 }
 
 /** Click-to-load 3D view: a static preview image with a button that swaps in the explorer iframe (progressive enhancement:
- *  without scripts the button is a link to the explorer). Keeps the 13 MB model off article pages until it is wanted. */
+ *  without scripts the button is a link to the explorer). Keeps the 13 MB model off article pages until it is wanted.
+ *  The preview is the largest thing above the fold on every page that has one, so it loads first (no loading="lazy": that made it
+ *  the last-loaded largest contentful paint, 1.5 s late on a slow phone). */
 export function facadeHtml(hash, name) {
   if (!hash) return '';
   return `<figure class="facade" data-embed="${esc(link.embed(hash))}">
-    <img src="${esc(link.preview(hash))}" width="1200" height="630" alt="3D model of the ${esc(name)} in the ${esc(BRAND)} anatomy atlas" loading="lazy" decoding="async">
+    <img src="${esc(link.preview(hash))}" width="1200" height="630" alt="3D model of the ${esc(name)} in the ${esc(BRAND)} anatomy atlas" fetchpriority="high" decoding="async">
     <figcaption><span>Interactive 3D model: ${esc(name)}. Orbit, zoom and click the structures.</span><a class="btn btn-primary facade-load" href="${esc(link.explorer(hash))}">${iconSvg('explorer')}Load the 3D model</a></figcaption>
   </figure>`;
 }
