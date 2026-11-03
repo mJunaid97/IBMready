@@ -1,0 +1,433 @@
+[
+ {
+  "where": "summary",
+  "sentence": "A cholesterol test reports total, HDL and non-HDL cholesterol plus triglycerides, and doctors read them with other risk factors.",
+  "basis": "excerpt",
+  "urls": [
+   "https://www.nhs.uk/conditions/high-cholesterol/cholesterol-levels/",
+   "https://labtestsonline.org.uk/tests/lipid-profile",
+   "https://labtestsonline.org.uk/tests/non-hdl-cholesterol-test"
+  ],
+  "note": "NHS: standard test reports total, HDL, non-HDL; triglycerides measured alongside"
+ },
+ {
+  "where": "body[0]",
+  "sentence": "A lipid profile measures lipids in the blood, such as cholesterol and triglycerides.",
+  "basis": "excerpt",
+  "urls": [
+   "https://labtestsonline.org.uk/tests/lipid-profile"
+  ],
+  "note": "LTO: measures levels of specific lipids such as cholesterol and triglycerides"
+ },
+ {
+  "where": "body[0]",
+  "sentence": "The sample is taken from a vein in the arm, sometimes after fasting.",
+  "basis": "excerpt",
+  "urls": [
+   "https://labtestsonline.org.uk/tests/lipid-profile"
+  ],
+  "note": "LTO"
+ },
+ {
+  "where": "body[0]",
+  "sentence": "A standard test reports total cholesterol, HDL cholesterol and non-HDL cholesterol, and triglycerides are usually measured alongside them.",
+  "basis": "excerpt",
+  "urls": [
+   "https://www.nhs.uk/conditions/high-cholesterol/cholesterol-levels/",
+   "https://www.bhf.org.uk/informationsupport/risk-factors/high-cholesterol/understanding-your-cholesterol-levels"
+  ],
+  "note": "NHS/BHF blended summary"
+ },
+ {
+  "where": "body[0]",
+  "sentence": "NHS laboratories usually calculate LDL cholesterol from total cholesterol, HDL and triglycerides rather than measuring it directly.",
+  "basis": "excerpt",
+  "urls": [
+   "https://www.nhs.uk/conditions/high-cholesterol/cholesterol-levels/",
+   "https://www.bhf.org.uk/informationsupport/risk-factors/high-cholesterol/understanding-your-cholesterol-levels"
+  ],
+  "note": "blended summary | edited after second pass"
+ },
+ {
+  "where": "body[0]",
+  "sentence": "Total cholesterol is the combined figure, covering both good and bad cholesterol together.",
+  "basis": "excerpt",
+  "urls": [
+   "https://labtestsonline.org.uk/tests/lipid-profile"
+  ],
+  "note": "added after second pass: Total cholesterol is the combined figure, including both good and bad cholesterol"
+ },
+ {
+  "where": "body[0]",
+  "sentence": "NICE guidance dropped routine fasting for a lipid profile, according to one NHS laboratory.",
+  "basis": "excerpt",
+  "urls": [
+   "https://pathology.uhsussex.nhs.uk/pug/biochemistry-immunology/biochemistry-tests/390-lipid-profile"
+  ],
+  "note": "added after second pass: NICE CG181 (now replaced by NG238) recommended patients no longer have to fast for routine lipid profile"
+ },
+ {
+  "where": "body[1]",
+  "sentence": "HDL is generally treated as the protective part of the total, and a low HDL counts as a risk marker.",
+  "basis": "excerpt",
+  "urls": [
+   "https://labtestsonline.org.uk/tests/lipid-profile"
+  ],
+  "note": "blended search summary (LTO lipid page and a PMC article); second pass to confirm"
+ },
+ {
+  "where": "body[1]",
+  "sentence": "Non-HDL cholesterol is total cholesterol minus HDL.",
+  "basis": "excerpt",
+  "urls": [
+   "https://labtestsonline.org.uk/tests/non-hdl-cholesterol-test"
+  ],
+  "note": "LTO"
+ },
+ {
+  "where": "body[1]",
+  "sentence": "It captures the combined harmful types of cholesterol, and some NHS laboratories prefer it to LDL when samples are not fasting.",
+  "basis": "excerpt",
+  "urls": [
+   "https://labtestsonline.org.uk/tests/non-hdl-cholesterol-test"
+  ],
+  "note": "LTO: includes more than LDL, can be more informative | edited after second pass"
+ },
+ {
+  "where": "body[1]",
+  "sentence": "Lab Tests Online UK notes that non-HDL does not need a fasting sample, which makes it practical.",
+  "basis": "excerpt",
+  "urls": [
+   "https://labtestsonline.org.uk/tests/non-hdl-cholesterol-test"
+  ],
+  "note": "LTO: non-HDL does not require fasting"
+ },
+ {
+  "where": "body[1]",
+  "sentence": "Triglycerides are a type of fat in the blood.",
+  "basis": "excerpt",
+  "urls": [
+   "https://labtestsonline.org.uk/tests/lipid-profile"
+  ],
+  "note": "LTO"
+ },
+ {
+  "where": "body[1]",
+  "sentence": "Fasting is no longer routinely required, though some laboratories ask for a fasting repeat when a non-fasting triglyceride result is very high.",
+  "basis": "excerpt",
+  "urls": [
+   "https://www.nhs.uk/conditions/high-cholesterol/cholesterol-levels/",
+   "https://www.bhf.org.uk/informationsupport/risk-factors/high-cholesterol/understanding-your-cholesterol-levels"
+  ],
+  "note": "blended summary | edited after second pass"
+ },
+ {
+  "where": "body[1]",
+  "sentence": "The BHF gives healthy cholesterol targets and says the goal is lower after a heart attack or stroke.",
+  "basis": "excerpt",
+  "urls": [
+   "https://www.nhs.uk/conditions/high-cholesterol/cholesterol-levels/"
+  ],
+  "note": "NHS cholesterol levels page (blended summary) | edited after second pass"
+ },
+ {
+  "where": "body[1]",
+  "sentence": "Sources differ slightly on where they place the line for triglycerides, and laboratories differ in their reference ranges.",
+  "basis": "excerpt",
+  "urls": [
+   "https://www.bhf.org.uk/informationsupport/risk-factors/high-cholesterol/understanding-your-cholesterol-levels",
+   "https://www.heartuk.org.uk/cholesterol/understanding-your-cholesterol-test-results-"
+  ],
+  "note": "BHF and HEART UK give different non-fasting limits"
+ },
+ {
+  "where": "body[1]",
+  "sentence": "For that reason the laboratory report shows the range used for each result.",
+  "basis": "excerpt",
+  "urls": [
+   "https://labtestsonline.org.uk/tests/lipid-profile"
+  ],
+  "note": "author wording of the same point"
+ },
+ {
+  "where": "body[2]",
+  "sentence": "Doctors use the cholesterol result with age, blood pressure and health conditions to estimate the risk of cardiovascular disease.",
+  "basis": "excerpt",
+  "urls": [
+   "https://www.nhs.uk/conditions/high-cholesterol/cholesterol-levels/"
+  ],
+  "note": "NHS"
+ },
+ {
+  "where": "body[2]",
+  "sentence": "The QRISK tool estimates cardiovascular risk and helps decide whether treatment is needed.",
+  "basis": "excerpt",
+  "urls": [
+   "https://www.nottsapc.nhs.uk/media/0aod5fib/final-hyperlipidaemia-guidelines.pdf"
+  ],
+  "note": "Notts pathway: QRISK can be used to help decide if treatment is required"
+ },
+ {
+  "where": "body[2]",
+  "sentence": "For people who already have cardiovascular disease, pathways move to secondary prevention, which does not use QRISK.",
+  "basis": "excerpt",
+  "urls": [
+   "https://www.nottsapc.nhs.uk/media/0aod5fib/final-hyperlipidaemia-guidelines.pdf",
+   "https://www.england.nhs.uk/north-west/wp-content/uploads/sites/48/2024/07/Lifespan-Pathway-for-Lipids-2024_08.04.24-1.pdf"
+  ],
+  "note": "pathway: for people at high risk QRISK3 not needed; second pass to confirm | edited after second pass"
+ },
+ {
+  "where": "body[2]",
+  "sentence": "People can ask their GP, or may be offered a test at a pharmacy or through an NHS Health Check in England.",
+  "basis": "excerpt",
+  "urls": [
+   "https://www.nhs.uk/conditions/high-cholesterol/cholesterol-levels/",
+   "https://www.bhf.org.uk/informationsupport/risk-factors/high-cholesterol/understanding-your-cholesterol-levels"
+  ],
+  "note": "blended summary | edited after second pass"
+ },
+ {
+  "where": "body[3]",
+  "sentence": "People at higher risk are offered support with lifestyle changes such as diet, exercise, stopping smoking and managing weight.",
+  "basis": "excerpt",
+  "urls": [
+   "https://www.england.nhs.uk/north-west/wp-content/uploads/sites/48/2024/07/Lifespan-Pathway-for-Lipids-2024_08.04.24-1.pdf",
+   "https://www.nottsapc.nhs.uk/media/0aod5fib/final-hyperlipidaemia-guidelines.pdf"
+  ],
+  "note": "pathway text | edited after second pass"
+ },
+ {
+  "where": "body[3]",
+  "sentence": "In primary prevention, lifestyle support is given for a few months before the level is reassessed.",
+  "basis": "excerpt",
+  "urls": [
+   "https://www.england.nhs.uk/north-west/wp-content/uploads/sites/48/2024/07/Lifespan-Pathway-for-Lipids-2024_08.04.24-1.pdf",
+   "https://www.nottsapc.nhs.uk/media/0aod5fib/final-hyperlipidaemia-guidelines.pdf"
+  ],
+  "note": "pathway: 3-6 months of lifestyle optimisation, then evaluation"
+ },
+ {
+  "where": "body[3]",
+  "sentence": "Pathways list atorvastatin as the usual first statin for primary prevention, with a higher starting dose for people who already have cardiovascular disease.",
+  "basis": "excerpt",
+  "urls": [
+   "https://www.england.nhs.uk/north-west/wp-content/uploads/sites/48/2024/07/Lifespan-Pathway-for-Lipids-2024_08.04.24-1.pdf",
+   "https://www.nottsapc.nhs.uk/media/0aod5fib/final-hyperlipidaemia-guidelines.pdf"
+  ],
+  "note": "pathway | edited after second pass"
+ },
+ {
+  "where": "body[3]",
+  "sentence": "Ezetimibe is a second-line option if the aim is not reached.",
+  "basis": "excerpt",
+  "urls": [
+   "https://www.nottsapc.nhs.uk/media/0aod5fib/final-hyperlipidaemia-guidelines.pdf"
+  ],
+  "note": "pathway"
+ },
+ {
+  "where": "body[3]",
+  "sentence": "Someone who has side effects on a high-intensity statin can be offered a lower dose or another statin.",
+  "basis": "excerpt",
+  "urls": [
+   "https://www.nottsapc.nhs.uk/media/0aod5fib/final-hyperlipidaemia-guidelines.pdf"
+  ],
+  "note": "pathway"
+ },
+ {
+  "where": "body[3]",
+  "sentence": "The test is repeated after treatment starts to see whether the level has fallen.",
+  "basis": "excerpt",
+  "urls": [
+   "https://www.nottsapc.nhs.uk/media/0aod5fib/final-hyperlipidaemia-guidelines.pdf"
+  ],
+  "note": "pathway: repeat test about 3 months after starting"
+ },
+ {
+  "where": "body[4]",
+  "sentence": "The BHF explains that extra cholesterol can build up as fatty material in the arteries and narrow them.",
+  "basis": "excerpt",
+  "urls": [
+   "https://www.bhf.org.uk/informationsupport/risk-factors/high-cholesterol"
+  ],
+  "note": "BHF (blended summary) | edited after second pass"
+ },
+ {
+  "where": "body[4]",
+  "sentence": "That gradual build-up raises the risk of heart attack and stroke.",
+  "basis": "excerpt",
+  "urls": [
+   "https://www.bhf.org.uk/informationsupport/risk-factors/high-cholesterol",
+   "https://swlimo.southwestlondon.icb.nhs.uk/clinical-guidance/cardiovascular/lipid-management/"
+  ],
+  "note": "BHF / SWL (blended summary)"
+ },
+ {
+  "where": "body[4]",
+  "sentence": "Having more risk factors, such as smoking or high blood pressure, raises the overall risk further.",
+  "basis": "excerpt",
+  "urls": [
+   "https://swlimo.southwestlondon.icb.nhs.uk/clinical-guidance/cardiovascular/lipid-management/"
+  ],
+  "note": "SW London ICB (blended summary) | edited after second pass"
+ },
+ {
+  "where": "body[4]",
+  "sentence": "Most people with high cholesterol have no symptoms.",
+  "basis": "excerpt",
+  "urls": [
+   "https://www.bhf.org.uk/informationsupport/conditions/familial-hypercholesterolaemia",
+   "https://www.bhf.org.uk/informationsupport/risk-factors/high-cholesterol"
+  ],
+  "note": "BHF (blended summary)"
+ },
+ {
+  "where": "body[4]",
+  "sentence": "The BHF lists lumps on the tendons, yellow lumps around the eyelids and a pale ring around the iris as possible signs, though many people have none.",
+  "basis": "excerpt",
+  "urls": [
+   "https://www.bhf.org.uk/informationsupport/conditions/familial-hypercholesterolaemia"
+  ],
+  "note": "added after second pass: BHF FH: tendon lumps, eyelid lumps, pale ring around iris; signs appear only after long time and some never get any"
+ },
+ {
+  "where": "body[5]",
+  "sentence": "Familial hypercholesterolaemia is an inherited form of high cholesterol.",
+  "basis": "excerpt",
+  "urls": [
+   "https://www.bhf.org.uk/informationsupport/conditions/familial-hypercholesterolaemia",
+   "https://swlimo.southwestlondon.icb.nhs.uk/clinical-guidance/cardiovascular/lipid-management/"
+  ],
+  "note": "BHF / SWL"
+ },
+ {
+  "where": "body[5]",
+  "sentence": "In familial hypercholesterolaemia the high cholesterol is usually present from birth.",
+  "basis": "excerpt",
+  "urls": [
+   "https://swlimo.southwestlondon.icb.nhs.uk/clinical-guidance/cardiovascular/lipid-management/"
+  ],
+  "note": "SWL (blended summary) | edited after second pass"
+ },
+ {
+  "where": "body[5]",
+  "sentence": "The BHF says a heart attack or stroke at a younger age, or relatives with early heart disease, can point to it.",
+  "basis": "excerpt",
+  "urls": [
+   "https://www.bhf.org.uk/informationsupport/conditions/familial-hypercholesterolaemia"
+  ],
+  "note": "BHF (blended summary) | edited after second pass"
+ },
+ {
+  "where": "body[5]",
+  "sentence": "The BHF says that if one parent has familial hypercholesterolaemia, a child has a 1 in 2 chance of also having it.",
+  "basis": "excerpt",
+  "urls": [
+   "https://www.bhf.org.uk/informationsupport/conditions/familial-hypercholesterolaemia"
+  ],
+  "note": "added after second pass: If one parent has FH, there is a 50% chance their son or daughter may also have it"
+ },
+ {
+  "where": "body[6]",
+  "sentence": "NHS guidance says statins may be offered to people at higher risk of cardiovascular disease when healthy lifestyle changes have not helped or are unlikely to help on their own.",
+  "basis": "excerpt",
+  "urls": [
+   "https://www.nhs.uk/medicines/statins/"
+  ],
+  "note": "NHS statins page (blended summary)"
+ },
+ {
+  "where": "body[6]",
+  "sentence": "They are also used in people who already have heart disease and in people with inherited high cholesterol.",
+  "basis": "excerpt",
+  "urls": [
+   "https://www.nhs.uk/medicines/statins/"
+  ],
+  "note": "NHS (blended summary)"
+ },
+ {
+  "where": "body[6]",
+  "sentence": "If statins are unsuitable, other cholesterol-lowering medicines can be offered.",
+  "basis": "excerpt",
+  "urls": [
+   "https://www.nhs.uk/medicines/statins/",
+   "https://swlimo.southwestlondon.icb.nhs.uk/clinical-guidance/cardiovascular/lipid-management/"
+  ],
+  "note": "blended summary"
+ },
+ {
+  "where": "body[6]",
+  "sentence": "Targets may be lower for people with conditions such as diabetes or cardiovascular disease, according to NHS 111 Wales.",
+  "basis": "excerpt",
+  "urls": [
+   "https://111.wales.nhs.uk/encyclopaedia/c/article/cholesterol,high"
+  ],
+  "note": "added after second pass: Levels to aim for might be different depending on age and conditions such as diabetes or cardiovascular disease"
+ },
+ {
+  "where": "body[6]",
+  "sentence": "The NHS says some people should not take statins, including those with severe liver disease and those who are pregnant or trying to conceive.",
+  "basis": "excerpt",
+  "urls": [
+   "https://www.nhs.uk/medicines/statins/"
+  ],
+  "note": "added after second pass: NHS lists severe liver disease, pregnancy or trying to conceive as reasons not to take statins"
+ },
+ {
+  "where": "body[6]",
+  "sentence": "The NHS says higher risk can be shown by a QRISK assessment, by conditions such as diabetes, chronic kidney disease or familial hypercholesterolaemia, or by being aged 85 or over.",
+  "basis": "excerpt",
+  "urls": [
+   "https://www.nhs.uk/medicines/statins/"
+  ],
+  "note": "added after second pass: Higher risk can be shown by a QRISK assessment, conditions such as diabetes, CKD or FH, or being aged 85 or over"
+ },
+ {
+  "where": "body[6]",
+  "sentence": "The BHF says most people have no side effects from statins.",
+  "basis": "excerpt",
+  "urls": [
+   "https://www.bhf.org.uk/informationsupport/treatments/medicine/statins"
+  ],
+  "note": "added after second pass: Another BHF page says most people have no side effects from statins"
+ },
+ {
+  "where": "keyPoints[0]",
+  "sentence": "A standard cholesterol test reports total cholesterol, HDL cholesterol and non-HDL cholesterol, and triglycerides are usually measured with them.",
+  "basis": "excerpt",
+  "urls": [
+   "https://www.nhs.uk/conditions/high-cholesterol/cholesterol-levels/",
+   "https://www.bhf.org.uk/informationsupport/risk-factors/high-cholesterol/understanding-your-cholesterol-levels"
+  ],
+  "note": "NHS/BHF blended summary"
+ },
+ {
+  "where": "keyPoints[1]",
+  "sentence": "Non-HDL cholesterol is total cholesterol minus HDL, and it covers all the harmful types together.",
+  "basis": "excerpt",
+  "urls": [
+   "https://labtestsonline.org.uk/tests/non-hdl-cholesterol-test"
+  ],
+  "note": "LTO: non-HDL is total minus HDL; includes more than LDL"
+ },
+ {
+  "where": "keyPoints[2]",
+  "sentence": "Doctors use cholesterol results with age, blood pressure and health conditions to estimate the risk of cardiovascular disease.",
+  "basis": "excerpt",
+  "urls": [
+   "https://www.nhs.uk/conditions/high-cholesterol/cholesterol-levels/"
+  ],
+  "note": "NHS: GP uses cholesterol with other factors to estimate risk"
+ },
+ {
+  "where": "keyPoints[3]",
+  "sentence": "Where treatment is needed, guidance recommends lifestyle support and often a statin, with the test repeated afterwards.",
+  "basis": "excerpt",
+  "urls": [
+   "https://www.nottsapc.nhs.uk/media/0aod5fib/final-hyperlipidaemia-guidelines.pdf",
+   "https://www.england.nhs.uk/north-west/wp-content/uploads/sites/48/2024/07/Lifespan-Pathway-for-Lipids-2024_08.04.24-1.pdf"
+  ],
+  "note": "NHS pathways (blended summary)"
+ }
+]
