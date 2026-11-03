@@ -1,0 +1,370 @@
+{
+ "id": "tramadol",
+ "searchesUsed": 8,
+ "counts": {
+  "supported": 34,
+  "textbook": 0,
+  "unsupported": 13,
+  "wrong": 1,
+  "unsafe": 0,
+  "unchecked": 0
+ },
+ "claims": [
+  {
+   "id": "c01",
+   "classification": "supported",
+   "evidence": "s0 opioids group: NHS: strong painkiller from group called opioids",
+   "url": "https://www.nhs.uk/medicines/tramadol/about-tramadol/",
+   "action": "kept"
+  },
+  {
+   "id": "c02",
+   "classification": "wrong",
+   "evidence": "s0 moderately severe: NHS says moderate to severe pain; 'moderately severe' understates",
+   "url": "https://www.nhs.uk/medicines/tramadol/about-tramadol/",
+   "action": "edited",
+   "newSentence": "The NHS describes it as a strong painkiller used to treat moderate to severe pain."
+  },
+  {
+   "id": "c03",
+   "classification": "unsupported",
+   "evidence": "s0 surgery/joint pain: Not in retrieved NHS text (NHS: severe pain if weaker painkillers do not help)",
+   "url": "https://www.nhs.uk/medicines/tramadol/about-tramadol/",
+   "action": "edited",
+   "newSentence": "A doctor may also prescribe it for severe pain when weaker painkillers do not help."
+  },
+  {
+   "id": "c04",
+   "classification": "supported",
+   "evidence": "s0 onset/wears off: NHS: 30-60 min; wears off after 4-6 hours; slow-release longer to start",
+   "url": "https://www.nhs.uk/medicines/tramadol/common-questions-about-tramadol/",
+   "action": "edited",
+   "newSentence": "The NHS says standard forms usually start to ease pain within about 30 to 60 minutes, and the relief wears off after 4 to 6 hours."
+  },
+  {
+   "id": "c05",
+   "classification": "supported",
+   "evidence": "s1 serotonin: Tramadol increases serotonin in brain, hence interacts with certain antidepressants (NHS About + Royal Devon, blended)",
+   "url": "https://www.nhs.uk/medicines/tramadol/about-tramadol/",
+   "action": "kept"
+  },
+  {
+   "id": "c06",
+   "classification": "supported",
+   "evidence": "s1 too much signs: Very sleepy, sick, dizzy, difficulty breathing, unconscious; amount varies",
+   "url": "https://www.nhs.uk/medicines/tramadol/how-and-when-to-take-tramadol/",
+   "action": "edited",
+   "newSentence": "The NHS lists warning signs of taking too much ..."
+  },
+  {
+   "id": "c07",
+   "classification": "unsupported",
+   "evidence": "s1 999/A&E, not drive alone: 'Not drive alone' not retrieved; 999 for overdose only from an unnamed NHS opioid leaflet, so replaced by 'seek help immediately'",
+   "url": "https://www.nhs.uk/medicines/tramadol/how-and-when-to-take-tramadol/",
+   "action": "edited",
+   "newSentence": "... help should be sought immediately if too much may have been taken."
+  },
+  {
+   "id": "c08",
+   "classification": "supported",
+   "evidence": "s2 common effects: Headache, nausea/vomiting, constipation, dry mouth, sweating, sleepy, dizzy; more than 1 in 100",
+   "url": "https://www.nhs.uk/medicines/tramadol/side-effects-of-tramadol/",
+   "action": "edited",
+   "newSentence": "The NHS says common side effects, which affect more than 1 in 100 people, include ..."
+  },
+  {
+   "id": "c09",
+   "classification": "unsupported",
+   "evidence": "s2 serious fewer than 1 in 100: Not retrieved; only 'common = more than 1 in 100'",
+   "url": "https://www.nhs.uk/medicines/tramadol/side-effects-of-tramadol/",
+   "action": "removed"
+  },
+  {
+   "id": "c10",
+   "classification": "supported",
+   "evidence": "s2 seizure/breathing 999: Call 999: seizure, breathing difficulties, severe allergic reaction",
+   "url": "https://www.nhs.uk/medicines/tramadol/side-effects-of-tramadol/",
+   "action": "edited",
+   "newSentence": "The NHS says to call 999 for a seizure (fit), breathing difficulties, or signs of a severe allergic reaction ..."
+  },
+  {
+   "id": "c11",
+   "classification": "unsupported",
+   "evidence": "s2 allergic reaction details: 'Rare' and lips/mouth/throat/tongue not retrieved; retrieved: facial swelling or trouble breathing",
+   "url": "https://www.nhs.uk/medicines/tramadol/side-effects-of-tramadol/",
+   "action": "edited",
+   "newSentence": "... severe allergic reaction such as facial swelling or trouble breathing."
+  },
+  {
+   "id": "c12",
+   "classification": "unsupported",
+   "evidence": "s2 serotonin syndrome symptoms: Symptom list not retrieved; only 'do not take next dose, seek urgent medical help' (Royal Devon). NHS 999 wording not found; NHS warns MDMA/cocaine/amphetamines/LSD/antidepressants raise risk",
+   "url": "https://www.royaldevon.nhs.uk/media/0lpbk3hy/information-for-patients-prescribed-tramadol-rd-18-266-004.pdf",
+   "action": "edited",
+   "newSentence": "A Royal Devon NHS leaflet says that anyone with symptoms of serotonin toxicity should not take the next dose and should seek urgent medical help."
+  },
+  {
+   "id": "c13",
+   "classification": "supported",
+   "evidence": "s2 non-emergency 111: Call 111 or doctor for dizziness/weakness, hallucinations, confusion, difficulty passing urine",
+   "url": "https://www.nhs.uk/medicines/tramadol/side-effects-of-tramadol/",
+   "action": "edited",
+   "newSentence": "It says to call 111 or a doctor for dizziness or weakness ..., hallucinations, confusion, or difficulty passing urine."
+  },
+  {
+   "id": "c14",
+   "classification": "supported",
+   "evidence": "s3 addicted possible: NHS: possible to become addicted",
+   "url": "https://www.nhs.uk/medicines/tramadol/common-questions-about-tramadol/",
+   "action": "kept"
+  },
+  {
+   "id": "c15",
+   "classification": "supported",
+   "evidence": "s3 signs: Hard to stop / need more than necessary",
+   "url": "https://www.nhs.uk/medicines/tramadol/common-questions-about-tramadol/",
+   "action": "kept"
+  },
+  {
+   "id": "c16",
+   "classification": "unsupported",
+   "evidence": "s3 withdrawal symptom list: Only 'stopping can bring withdrawal symptoms' retrieved; list not retrieved",
+   "url": "https://www.nhs.uk/medicines/tramadol/common-questions-about-tramadol/",
+   "action": "edited",
+   "newSentence": "Stopping can bring on withdrawal symptoms."
+  },
+  {
+   "id": "c17",
+   "classification": "unsupported",
+   "evidence": "s3 leaflet extra symptoms + don't stop suddenly: Symptom list not retrieved; advice against stopping suddenly and discuss with doctor or pharmacist retrieved (Royal Devon)",
+   "url": "https://www.royaldevon.nhs.uk/media/0lpbk3hy/information-for-patients-prescribed-tramadol-rd-18-266-004.pdf",
+   "action": "edited",
+   "newSentence": "A Royal Devon NHS leaflet advises against stopping tramadol suddenly and says anyone who wants to stop should discuss it with a doctor or pharmacist."
+  },
+  {
+   "id": "c18",
+   "classification": "supported",
+   "evidence": "s3 talk to doctor / plan: NHS: speak to doctor before stopping if taken more than a few weeks; treatment plans set how and when to stop; tolerance",
+   "url": "https://www.nhs.uk/medicines/tramadol/common-questions-about-tramadol/",
+   "action": "edited",
+   "newSentence": "The NHS says that people who have taken tramadol for more than a few weeks should speak to a doctor before stopping ..."
+  },
+  {
+   "id": "c19",
+   "classification": "supported",
+   "evidence": "s4 MAOIs: Hertfordshire NHS guide and MedlinePlus: no MAOIs; 'treat depression or Parkinson's' not retrieved",
+   "url": "https://extranet.enherts-tr.nhs.uk/sorce/apps/Prescribing/prescribingguide3/CnsHT/Cnsdrugs/tramadol_guidelines%5B1%5Doct%2005.doc",
+   "action": "edited",
+   "newSentence": "Prescribing guidance from an NHS trust says tramadol should not be given to people taking monoamine oxidase inhibitors (MAOIs), a type of antidepressant."
+  },
+  {
+   "id": "c20",
+   "classification": "unsupported",
+   "evidence": "s4 SSRIs/TCAs/triptans/St John's wort trust guideline: Only an old (2005) trust document; triptans not re-retrieved; replaced by NHS serotonin warning and MedlinePlus St John's wort/tryptophan",
+   "url": "https://extranet.enherts-tr.nhs.uk/sorce/apps/Prescribing/prescribingguide3/CnsHT/Cnsdrugs/tramadol_guidelines%5B1%5Doct%2005.doc",
+   "action": "edited",
+   "newSentence": "MedlinePlus, a US source, says St John's wort and tryptophan may interact with tramadol."
+  },
+  {
+   "id": "c21",
+   "classification": "supported",
+   "evidence": "s4 weaken list: NHS: carbamazepine, buprenorphine, ondansetron, rifampicin weaken/shorten effect; 'list not complete' not retrieved",
+   "url": "https://www.nhs.uk/medicines/tramadol/taking-tramadol-with-other-medicines-and-herbal-supplements/",
+   "action": "edited",
+   "newSentence": "The NHS says carbamazepine, buprenorphine, ondansetron and rifampicin can weaken or shorten the effect of tramadol ..."
+  },
+  {
+   "id": "c22",
+   "classification": "supported",
+   "evidence": "s4 alcohol: Best not to drink alcohol; more side effects like sleepy",
+   "url": "https://www.nhs.uk/medicines/tramadol/taking-tramadol-with-other-medicines-and-herbal-supplements/",
+   "action": "kept"
+  },
+  {
+   "id": "c23",
+   "classification": "supported",
+   "evidence": "s4 driving: Do not drive, cycle, use tools if sleepy, dizzy, clumsy; blurred vision/concentration",
+   "url": "https://www.nhs.uk/medicines/tramadol/side-effects-of-tramadol/",
+   "action": "edited"
+  },
+  {
+   "id": "c24",
+   "classification": "supported",
+   "evidence": "s5 development: Not known to cause problems with baby's development; more studies needed",
+   "url": "https://www.nhs.uk/medicines/tramadol/pregnancy-breastfeeding-and-fertility-while-taking-tramadol/",
+   "action": "kept"
+  },
+  {
+   "id": "c25",
+   "classification": "supported",
+   "evidence": "s5 newborn withdrawal: Baby might have withdrawal symptoms if taken at end of pregnancy; feeding/breathing detail not retrieved",
+   "url": "https://www.nhs.uk/medicines/tramadol/pregnancy-breastfeeding-and-fertility-while-taking-tramadol/",
+   "action": "edited"
+  },
+  {
+   "id": "c26",
+   "classification": "unsupported",
+   "evidence": "s5 breastfeeding healthy baby: NHS now says small amounts in milk, unlikely to cause side effects; 'if baby healthy' wording not retrieved; other NHS leaflets advise against",
+   "url": "https://www.nhs.uk/medicines/tramadol/pregnancy-breastfeeding-and-fertility-while-taking-tramadol/",
+   "action": "edited"
+  },
+  {
+   "id": "c27",
+   "classification": "supported",
+   "evidence": "s5 SPS: SPS: short term with caution and monitoring, lowest dose, under 2 months most at risk; 'watch drowsiness' not re-retrieved",
+   "url": "https://sps.nhs.uk/articles/using-codeine-dihydrocodeine-or-tramadol-during-breastfeeding/",
+   "action": "edited"
+  },
+  {
+   "id": "c28",
+   "classification": "supported",
+   "evidence": "s5 epilepsy/addiction history: NHS who-can-take lists seizure/fit condition and addiction; Hertfordshire guide says avoid in epilepsy, great caution with addiction history",
+   "url": "https://www.nhs.uk/medicines/tramadol/who-can-and-cannot-take-tramadol/",
+   "action": "edited",
+   "newSentence": "Replaced by NHS list of groups who may not be able to take tramadol."
+  },
+  {
+   "id": "c29",
+   "classification": "supported",
+   "evidence": "faq0 addicted: as above",
+   "url": "https://www.nhs.uk/medicines/tramadol/common-questions-about-tramadol/",
+   "action": "kept"
+  },
+  {
+   "id": "c30",
+   "classification": "supported",
+   "evidence": "faq0 signs: as above",
+   "url": "https://www.nhs.uk/medicines/tramadol/common-questions-about-tramadol/",
+   "action": "edited"
+  },
+  {
+   "id": "c31",
+   "classification": "unsupported",
+   "evidence": "faq0 withdrawal examples: Example list not retrieved",
+   "url": "https://www.nhs.uk/medicines/tramadol/common-questions-about-tramadol/",
+   "action": "edited",
+   "newSentence": "Stopping can bring withdrawal symptoms."
+  },
+  {
+   "id": "c32",
+   "classification": "supported",
+   "evidence": "faq0 talk to doctor: speak to doctor before stopping",
+   "url": "https://www.nhs.uk/medicines/tramadol/common-questions-about-tramadol/",
+   "action": "edited"
+  },
+  {
+   "id": "c33",
+   "classification": "supported",
+   "evidence": "faq1 999 list: as side effects",
+   "url": "https://www.nhs.uk/medicines/tramadol/side-effects-of-tramadol/",
+   "action": "edited"
+  },
+  {
+   "id": "c34",
+   "classification": "supported",
+   "evidence": "faq1 too much: as how-and-when",
+   "url": "https://www.nhs.uk/medicines/tramadol/how-and-when-to-take-tramadol/",
+   "action": "removed"
+  },
+  {
+   "id": "c35",
+   "classification": "supported",
+   "evidence": "faq1 doctor/111: as side effects",
+   "url": "https://www.nhs.uk/medicines/tramadol/side-effects-of-tramadol/",
+   "action": "edited"
+  },
+  {
+   "id": "c36",
+   "classification": "supported",
+   "evidence": "faq2 serotonin: as above",
+   "url": "https://www.nhs.uk/medicines/tramadol/about-tramadol/",
+   "action": "edited"
+  },
+  {
+   "id": "c37",
+   "classification": "supported",
+   "evidence": "faq2 MAOI NHS: Hertfordshire/MedlinePlus (NHS page not directly returned this pass)",
+   "url": "https://extranet.enherts-tr.nhs.uk/sorce/apps/Prescribing/prescribingguide3/CnsHT/Cnsdrugs/tramadol_guidelines%5B1%5Doct%2005.doc",
+   "action": "edited"
+  },
+  {
+   "id": "c38",
+   "classification": "unsupported",
+   "evidence": "faq2 trust list: Old trust document only",
+   "url": "https://extranet.enherts-tr.nhs.uk/sorce/apps/Prescribing/prescribingguide3/CnsHT/Cnsdrugs/tramadol_guidelines%5B1%5Doct%2005.doc",
+   "action": "removed"
+  },
+  {
+   "id": "c39",
+   "classification": "supported",
+   "evidence": "faq3 alcohol: as above",
+   "url": "https://www.nhs.uk/medicines/tramadol/taking-tramadol-with-other-medicines-and-herbal-supplements/",
+   "action": "kept"
+  },
+  {
+   "id": "c40",
+   "classification": "supported",
+   "evidence": "faq3 driving: as above",
+   "url": "https://www.nhs.uk/medicines/tramadol/side-effects-of-tramadol/",
+   "action": "kept"
+  },
+  {
+   "id": "c41",
+   "classification": "unsupported",
+   "evidence": "faq3 pharmacist or GP can advise: Generic signposting not in retrieved NHS text for this item",
+   "url": "https://www.nhs.uk/medicines/tramadol/taking-tramadol-with-other-medicines-and-herbal-supplements/",
+   "action": "removed"
+  },
+  {
+   "id": "c42",
+   "classification": "supported",
+   "evidence": "kf opioid: moderate to severe pain",
+   "url": "https://www.nhs.uk/medicines/tramadol/about-tramadol/",
+   "action": "edited"
+  },
+  {
+   "id": "c43",
+   "classification": "unsupported",
+   "evidence": "kf controlled drug: Not returned by any NHS search (the search said so explicitly); prescription-only is supported, so value changed to 'Prescription only'. medications.json calls it a controlled drug, no contradiction",
+   "url": "https://www.nhs.uk/medicines/tramadol/",
+   "action": "edited",
+   "newSentence": "Prescription only"
+  },
+  {
+   "id": "c44",
+   "classification": "supported",
+   "evidence": "kf dependence: ",
+   "url": "https://www.nhs.uk/medicines/tramadol/common-questions-about-tramadol/",
+   "action": "kept"
+  },
+  {
+   "id": "c45",
+   "classification": "supported",
+   "evidence": "kf emergency: 999 list; 'A&E' dropped",
+   "url": "https://www.nhs.uk/medicines/tramadol/side-effects-of-tramadol/",
+   "action": "edited"
+  },
+  {
+   "id": "c46",
+   "classification": "supported",
+   "evidence": "kf alcohol: ",
+   "url": "https://www.nhs.uk/medicines/tramadol/taking-tramadol-with-other-medicines-and-herbal-supplements/",
+   "action": "kept"
+  },
+  {
+   "id": "c47",
+   "classification": "supported",
+   "evidence": "kf driving: ",
+   "url": "https://www.nhs.uk/medicines/tramadol/side-effects-of-tramadol/",
+   "action": "kept"
+  },
+  {
+   "id": "c48",
+   "classification": "supported",
+   "evidence": "kf pregnancy: ",
+   "url": "https://www.nhs.uk/medicines/tramadol/pregnancy-breastfeeding-and-fertility-while-taking-tramadol/",
+   "action": "kept"
+  }
+ ],
+ "notes": "Entries are grouped per first-pass sentence (48). Dependence route to care: sourced to NHS (speak to a doctor before stopping if taken more than a few weeks) and Royal Devon (doctor or pharmacist); an NHS pointer to a drug service was NOT retrieved, so none is stated. Serotonin syndrome: only 'seek urgent medical help' (Royal Devon) retrieved; NHS 999 wording not found. Overdose: NHS how-and-when page text supports signs; 999 for overdose appeared only in an unnamed NHS opioid leaflet, so the article says 'help immediately' without a route; a reviewer may want to add the NHS wording. 'Controlled drug' key fact replaced by 'Prescription only' because no retrieved text states controlled status (medications.json does). MAOI line rests on an older Hertfordshire NHS trust guide plus MedlinePlus; the NHS interactions page did not return its MAOI sentence this pass. Epilepsy folded into the NHS 'who may not be able to take' list. Onset/duration sentence kept (NHS 30-60 min, 4-6 h). Article body is about 760 words (sections), about 1,000 with FAQs and key facts. Breastfeeding advice conflicts between NHS sources; article says so."
+}
