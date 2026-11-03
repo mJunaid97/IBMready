@@ -1,0 +1,871 @@
+{
+ "id": "esomeprazole",
+ "searchesUsed": 8,
+ "counts": {
+  "supported": 96,
+  "textbook": 1,
+  "unsupported": 4,
+  "wrong": 0,
+  "unsafe": 0,
+  "unchecked": 0
+ },
+ "claims": [
+  {
+   "id": "c01",
+   "where": "summary",
+   "classification": "supported",
+   "evidence": "Consistent with NHS/emc/MedlinePlus text (see ledger and re-retrieval).",
+   "url": "https://www.nhs.uk/medicines/esomeprazole/about-esomeprazole/",
+   "action": "kept"
+  },
+  {
+   "id": "c02",
+   "where": "summary",
+   "classification": "supported",
+   "evidence": "Consistent with NHS/emc/MedlinePlus text (see ledger and re-retrieval).",
+   "url": "https://www.nhs.uk/medicines/esomeprazole/about-esomeprazole/",
+   "action": "kept"
+  },
+  {
+   "id": "c03",
+   "where": "summary",
+   "classification": "supported",
+   "evidence": "as above",
+   "url": "https://www.nhs.uk/medicines/esomeprazole/common-questions-about-esomeprazole/",
+   "action": "kept"
+  },
+  {
+   "id": "c04",
+   "where": "usedFor[0]",
+   "classification": "supported",
+   "evidence": "Consistent with NHS/emc/MedlinePlus text (see ledger and re-retrieval).",
+   "url": "https://www.nhs.uk/medicines/esomeprazole/about-esomeprazole/",
+   "action": "kept"
+  },
+  {
+   "id": "c05",
+   "where": "usedFor[1]",
+   "classification": "supported",
+   "evidence": "Consistent with NHS/emc/MedlinePlus text (see ledger and re-retrieval).",
+   "url": "https://www.nhs.uk/medicines/esomeprazole/about-esomeprazole/",
+   "action": "kept"
+  },
+  {
+   "id": "c06",
+   "where": "usedFor[2]",
+   "classification": "supported",
+   "evidence": "emc SmPC for Nexium lists prevention of gastric and duodenal ulcers in at-risk patients taking NSAIDs; the earlier source was an unidentified leaflet.",
+   "url": "https://www.medicines.org.uk/emc/product/4657/smpc",
+   "action": "edited",
+   "oldSentence": "Preventing ulcers in people who take NSAID painkillers, as one UK patient leaflet describes.",
+   "newSentence": "Preventing ulcers in people at risk who take NSAID painkillers, as UK prescribing information (emc) describes."
+  },
+  {
+   "id": "c07",
+   "where": "usedFor[3]",
+   "classification": "supported",
+   "evidence": "Consistent with NHS/emc/MedlinePlus text (see ledger and re-retrieval).",
+   "url": "https://www.nhs.uk/medicines/esomeprazole/about-esomeprazole/",
+   "action": "kept"
+  },
+  {
+   "id": "c08",
+   "where": "usedFor[4]",
+   "classification": "supported",
+   "evidence": "Consistent with NHS/emc/MedlinePlus text (see ledger and re-retrieval).",
+   "url": "https://www.nhs.uk/medicines/esomeprazole/about-esomeprazole/",
+   "action": "kept"
+  },
+  {
+   "id": "c09",
+   "where": "howItWorks",
+   "classification": "supported",
+   "evidence": "Consistent with NHS/emc/MedlinePlus text (see ledger and re-retrieval).",
+   "url": "https://www.nhs.uk/medicines/esomeprazole/about-esomeprazole/",
+   "action": "kept"
+  },
+  {
+   "id": "c10",
+   "where": "howItWorks",
+   "classification": "supported",
+   "evidence": "Consistent with NHS/emc/MedlinePlus text (see ledger and re-retrieval).",
+   "url": "https://www.nhs.uk/medicines/esomeprazole/about-esomeprazole/",
+   "action": "kept"
+  },
+  {
+   "id": "c11",
+   "where": "howItWorks",
+   "classification": "supported",
+   "evidence": "Consistent with NHS/emc/MedlinePlus text (see ledger and re-retrieval).",
+   "url": "https://www.nhs.uk/medicines/esomeprazole/about-esomeprazole/",
+   "action": "kept"
+  },
+  {
+   "id": "c12",
+   "where": "onset",
+   "classification": "supported",
+   "evidence": "NHS: feel better within 2-3 days, up to 4 weeks to work fully.",
+   "url": "https://www.nhs.uk/medicines/esomeprazole/common-questions-about-esomeprazole/",
+   "action": "kept"
+  },
+  {
+   "id": "c13",
+   "where": "sideEffects.common[0]",
+   "classification": "supported",
+   "evidence": "NHS: common, more than 1 in 100.",
+   "url": "https://www.nhs.uk/medicines/esomeprazole/side-effects-of-esomeprazole/",
+   "action": "kept"
+  },
+  {
+   "id": "c14",
+   "where": "sideEffects.common[1]",
+   "classification": "supported",
+   "evidence": "NHS: usually mild.",
+   "url": "https://www.nhs.uk/medicines/esomeprazole/side-effects-of-esomeprazole/",
+   "action": "kept"
+  },
+  {
+   "id": "c15",
+   "where": "sideEffects.common[2]",
+   "classification": "supported",
+   "evidence": "NHS side effects.",
+   "url": "https://www.nhs.uk/medicines/esomeprazole/side-effects-of-esomeprazole/",
+   "action": "kept"
+  },
+  {
+   "id": "c16",
+   "where": "sideEffects.serious[0]",
+   "classification": "supported",
+   "evidence": "NHS: call a doctor or 111 straight away if skin yellows, pale poo, darker pee and more tired than usual; draft's 'GP the same day' was not the NHS wording.",
+   "url": "https://www.nhs.uk/medicines/esomeprazole/side-effects-of-esomeprazole/",
+   "action": "edited",
+   "oldSentence": "Yellowing of the skin, pale stools or dark urine can signal liver problems; this needs prompt medical advice from NHS 111 or a GP the same day.",
+   "newSentence": "Yellowing of the skin, pale stools or dark urine can signal liver problems; the NHS says to call a doctor or NHS 111 straight away."
+  },
+  {
+   "id": "c17",
+   "where": "sideEffects.serious[1]",
+   "classification": "supported",
+   "evidence": "Consistent with NHS/emc/MedlinePlus text (see ledger and re-retrieval).",
+   "url": "https://www.nhs.uk/medicines/esomeprazole/about-esomeprazole/",
+   "action": "kept"
+  },
+  {
+   "id": "c18",
+   "where": "sideEffects.serious[1]",
+   "classification": "supported",
+   "evidence": "Consistent with NHS/emc/MedlinePlus text (see ledger and re-retrieval).",
+   "url": "https://www.nhs.uk/medicines/esomeprazole/about-esomeprazole/",
+   "action": "kept"
+  },
+  {
+   "id": "c19",
+   "where": "sideEffects.serious[2]",
+   "classification": "supported",
+   "evidence": "NHS: 'If the diarrhoea does not get better, talk to your doctor'; no 111 route stated for this item.",
+   "url": "https://www.nhs.uk/medicines/esomeprazole/side-effects-of-esomeprazole/",
+   "action": "edited",
+   "oldSentence": "Severe diarrhoea that does not settle needs medical review through a GP or NHS 111.",
+   "newSentence": "The NHS says to talk to a doctor if diarrhoea does not get better."
+  },
+  {
+   "id": "c20",
+   "where": "sideEffects.serious[3]",
+   "classification": "supported",
+   "evidence": "NHS: call 999 now if lips, mouth, throat or tongue suddenly swell, etc.",
+   "url": "https://www.nhs.uk/medicines/esomeprazole/side-effects-of-esomeprazole/",
+   "action": "kept"
+  },
+  {
+   "id": "c21",
+   "where": "sideEffects.serious[4]",
+   "classification": "supported",
+   "evidence": "NHS: after more than 3 months magnesium levels may fall.",
+   "url": "https://www.nhs.uk/medicines/esomeprazole/side-effects-of-esomeprazole/",
+   "action": "kept"
+  },
+  {
+   "id": "c22",
+   "where": "sideEffects.serious[5]",
+   "classification": "supported",
+   "evidence": "NHS side effects page.",
+   "url": "https://www.nhs.uk/medicines/esomeprazole/side-effects-of-esomeprazole/",
+   "action": "kept"
+  },
+  {
+   "id": "c23",
+   "where": "cautions[0]",
+   "classification": "supported",
+   "evidence": "NHS who-can page (author ledger; page confirmed to exist, text not re-retrieved).",
+   "url": "https://www.nhs.uk/medicines/esomeprazole/who-can-and-cannot-take-esomeprazole/",
+   "action": "kept"
+  },
+  {
+   "id": "c24",
+   "where": "cautions[1]",
+   "classification": "supported",
+   "evidence": "NHS who-can page (ledger; not re-retrieved).",
+   "url": "https://www.nhs.uk/medicines/esomeprazole/who-can-and-cannot-take-esomeprazole/",
+   "action": "kept"
+  },
+  {
+   "id": "c25",
+   "where": "cautions[2]",
+   "classification": "supported",
+   "evidence": "emc leaflets list severe liver and severe kidney problems as reasons not to take it; wording across leaflets varies (some say discuss with a doctor), so softened. Allergy item relies on author's ledger (pil.12019), not re-retrieved.",
+   "url": "https://www.medicines.org.uk/emc/files/pil.15051.pdf",
+   "action": "edited",
+   "oldSentence": "One UK patient leaflet says not to take it with an allergy to esomeprazole or other proton pump inhibitors, or with severe liver or severe kidney problems.",
+   "newSentence": "UK emc patient leaflets list an allergy to esomeprazole or other proton pump inhibitors, and severe liver or severe kidney problems, among the reasons for caution before taking it."
+  },
+  {
+   "id": "c26",
+   "where": "cautions[3]",
+   "classification": "supported",
+   "evidence": "NHS lists digoxin and methotrexate (confirmed this pass); remaining names from author's ledger of the same NHS page, not individually re-retrieved.",
+   "url": "https://www.nhs.uk/medicines/esomeprazole/taking-esomeprazole-with-other-medicines-and-herbal-supplements/",
+   "action": "kept"
+  },
+  {
+   "id": "c27",
+   "where": "cautions[4]",
+   "classification": "supported",
+   "evidence": "NHS.",
+   "url": "https://www.nhs.uk/medicines/esomeprazole/taking-esomeprazole-with-other-medicines-and-herbal-supplements/",
+   "action": "kept"
+  },
+  {
+   "id": "c28",
+   "where": "cautions[5]",
+   "classification": "supported",
+   "evidence": "Several emc leaflets say not to take with nelfinavir, an HIV medicine.",
+   "url": "https://www.medicines.org.uk/emc/files/pil.15051.pdf",
+   "action": "edited",
+   "oldSentence": "One UK leaflet says not to take it with a medicine containing nelfinavir.",
+   "newSentence": "UK emc patient leaflets say not to take esomeprazole with a medicine containing nelfinavir, an HIV medicine."
+  },
+  {
+   "id": "c29",
+   "where": "cautions[6]",
+   "classification": "supported",
+   "evidence": "emc leaflets (ledger).",
+   "url": "https://www.medicines.org.uk/emc/files/pil.15051.pdf",
+   "action": "kept"
+  },
+  {
+   "id": "c30",
+   "where": "cautions[7]",
+   "classification": "supported",
+   "evidence": "NHS pregnancy page.",
+   "url": "https://www.nhs.uk/medicines/esomeprazole/pregnancy-breastfeeding-and-fertility-while-taking-esomeprazole/",
+   "action": "kept"
+  },
+  {
+   "id": "c31",
+   "where": "cautions[8]",
+   "classification": "supported",
+   "evidence": "NHS: may be able to take while breastfeeding, check with doctor first, amount probably too small to harm. emc leaflets: not known if it passes into milk, therefore should not be taken. Both reported, no pick.",
+   "url": "https://www.nhs.uk/medicines/esomeprazole/pregnancy-breastfeeding-and-fertility-while-taking-esomeprazole/",
+   "action": "edited",
+   "oldSentence": "Some esomeprazole passes into breast milk, probably in too small an amount to be harmful; the NHS says to check with a doctor first, while one UK leaflet says it should not be taken when breastfeeding.",
+   "newSentence": "The NHS says some esomeprazole passes into breast milk, probably in too small an amount to be harmful, and that a person may be able to take it while breastfeeding after checking with a doctor first; UK emc leaflets say it is not known whether it passes into breast milk and that it should not be taken when breastfeeding."
+  },
+  {
+   "id": "c32",
+   "where": "cautions[9]",
+   "classification": "supported",
+   "evidence": "NHS pregnancy page.",
+   "url": "https://www.nhs.uk/medicines/esomeprazole/pregnancy-breastfeeding-and-fertility-while-taking-esomeprazole/",
+   "action": "kept"
+  },
+  {
+   "id": "c33",
+   "where": "monitoring",
+   "classification": "supported",
+   "evidence": "NHS common questions (author); NHS ICB guidance retrieved describes gradual tapering over several weeks. No routine monitoring tests were retrieved, so none are stated.",
+   "url": "https://www.nhs.uk/medicines/esomeprazole/common-questions-about-esomeprazole/",
+   "action": "edited",
+   "oldSentence": "The NHS advises taking esomeprazole for the shortest time possible and speaking to a doctor before stopping after long-term use, when tapering is recommended.",
+   "newSentence": "The NHS advises taking esomeprazole for the shortest time possible and speaking to a doctor before stopping after long-term use; NHS guidance documents describe gradual tapering."
+  },
+  {
+   "id": "c34",
+   "where": "regimenNote",
+   "classification": "supported",
+   "evidence": "Consistent with NHS/emc/MedlinePlus text (see ledger and re-retrieval).",
+   "url": "https://www.nhs.uk/medicines/esomeprazole/about-esomeprazole/",
+   "action": "kept"
+  },
+  {
+   "id": "c35",
+   "where": "article.sections[0]",
+   "classification": "supported",
+   "evidence": "Consistent with NHS/emc/MedlinePlus text (see ledger and re-retrieval).",
+   "url": "https://www.nhs.uk/medicines/esomeprazole/about-esomeprazole/",
+   "action": "kept"
+  },
+  {
+   "id": "c36",
+   "where": "article.sections[0]",
+   "classification": "supported",
+   "evidence": "Consistent with NHS/emc/MedlinePlus text (see ledger and re-retrieval).",
+   "url": "https://www.nhs.uk/medicines/esomeprazole/about-esomeprazole/",
+   "action": "kept"
+  },
+  {
+   "id": "c37",
+   "where": "article.sections[0]",
+   "classification": "supported",
+   "evidence": "Consistent with NHS/emc/MedlinePlus text (see ledger and re-retrieval).",
+   "url": "https://www.nhs.uk/medicines/esomeprazole/about-esomeprazole/",
+   "action": "kept"
+  },
+  {
+   "id": "c38",
+   "where": "article.sections[0]",
+   "classification": "supported",
+   "evidence": "Consistent with NHS/emc/MedlinePlus text (see ledger and re-retrieval).",
+   "url": "https://www.nhs.uk/medicines/esomeprazole/about-esomeprazole/",
+   "action": "kept"
+  },
+  {
+   "id": "c39",
+   "where": "article.sections[0]",
+   "classification": "supported",
+   "evidence": "emc SmPC for Nexium 20 mg.",
+   "url": "https://www.medicines.org.uk/emc/product/4657/smpc",
+   "action": "edited",
+   "oldSentence": "One UK patient leaflet adds that it can be used to prevent ulcers in people who take NSAID painkillers.",
+   "newSentence": "UK prescribing information (emc) adds that it can be used to prevent ulcers in people at risk who take NSAID painkillers."
+  },
+  {
+   "id": "c40",
+   "where": "article.sections[0]",
+   "classification": "supported",
+   "evidence": "emc lists Nexium and Nexium Control 20 mg (P); prescription-only status of Nexium was not stated in retrieved text, so dropped from prose.",
+   "url": "https://www.medicines.org.uk/emc/product/14465/pil",
+   "action": "edited",
+   "oldSentence": "In the UK, esomeprazole is sold as prescription brands such as Nexium and, in pharmacies, as Nexium Control.",
+   "newSentence": "In the UK, esomeprazole is sold under brand names such as Nexium and, in pharmacies, as Nexium Control."
+  },
+  {
+   "id": "c41",
+   "where": "article.sections[0]",
+   "classification": "supported",
+   "evidence": "Consistent with NHS/emc/MedlinePlus text (see ledger and re-retrieval).",
+   "url": "https://www.nhs.uk/medicines/esomeprazole/about-esomeprazole/",
+   "action": "kept"
+  },
+  {
+   "id": "c42",
+   "where": "article.sections[0]",
+   "classification": "supported",
+   "evidence": "NHS who-can page (ledger).",
+   "url": "https://www.nhs.uk/medicines/esomeprazole/who-can-and-cannot-take-esomeprazole/",
+   "action": "kept"
+  },
+  {
+   "id": "c43",
+   "where": "article.sections[1]",
+   "classification": "supported",
+   "evidence": "Consistent with NHS/emc/MedlinePlus text (see ledger and re-retrieval).",
+   "url": "https://www.nhs.uk/medicines/esomeprazole/about-esomeprazole/",
+   "action": "kept"
+  },
+  {
+   "id": "c44",
+   "where": "article.sections[1]",
+   "classification": "supported",
+   "evidence": "Consistent with NHS/emc/MedlinePlus text (see ledger and re-retrieval).",
+   "url": "https://www.nhs.uk/medicines/esomeprazole/about-esomeprazole/",
+   "action": "kept"
+  },
+  {
+   "id": "c45",
+   "where": "article.sections[1]",
+   "classification": "supported",
+   "evidence": "Consistent with NHS/emc/MedlinePlus text (see ledger and re-retrieval).",
+   "url": "https://www.nhs.uk/medicines/esomeprazole/about-esomeprazole/",
+   "action": "kept"
+  },
+  {
+   "id": "c46",
+   "where": "article.sections[1]",
+   "classification": "supported",
+   "evidence": "NHS common questions.",
+   "url": "https://www.nhs.uk/medicines/esomeprazole/common-questions-about-esomeprazole/",
+   "action": "kept"
+  },
+  {
+   "id": "c47",
+   "where": "article.sections[1]",
+   "classification": "supported",
+   "evidence": "NHS common questions.",
+   "url": "https://www.nhs.uk/medicines/esomeprazole/common-questions-about-esomeprazole/",
+   "action": "kept"
+  },
+  {
+   "id": "c48",
+   "where": "article.sections[1]",
+   "classification": "supported",
+   "evidence": "Consistent with NHS/emc/MedlinePlus text (see ledger and re-retrieval).",
+   "url": "https://www.nhs.uk/medicines/esomeprazole/about-esomeprazole/",
+   "action": "kept"
+  },
+  {
+   "id": "c49",
+   "where": "article.sections[2]",
+   "classification": "supported",
+   "evidence": "NHS: usually mild.",
+   "url": "https://www.nhs.uk/medicines/esomeprazole/side-effects-of-esomeprazole/",
+   "action": "kept"
+  },
+  {
+   "id": "c50",
+   "where": "article.sections[2]",
+   "classification": "supported",
+   "evidence": "NHS side effects.",
+   "url": "https://www.nhs.uk/medicines/esomeprazole/side-effects-of-esomeprazole/",
+   "action": "kept"
+  },
+  {
+   "id": "c51",
+   "where": "article.sections[2]",
+   "classification": "supported",
+   "evidence": "Consistent with NHS/emc/MedlinePlus text (see ledger and re-retrieval).",
+   "url": "https://www.nhs.uk/medicines/esomeprazole/about-esomeprazole/",
+   "action": "kept"
+  },
+  {
+   "id": "c52",
+   "where": "article.sections[2]",
+   "classification": "supported",
+   "evidence": "NHS side effects.",
+   "url": "https://www.nhs.uk/medicines/esomeprazole/side-effects-of-esomeprazole/",
+   "action": "kept"
+  },
+  {
+   "id": "c53",
+   "where": "article.sections[2]",
+   "classification": "supported",
+   "evidence": "Consistent with NHS/emc/MedlinePlus text (see ledger and re-retrieval).",
+   "url": "https://www.nhs.uk/medicines/esomeprazole/about-esomeprazole/",
+   "action": "kept"
+  },
+  {
+   "id": "c54",
+   "where": "article.sections[2]",
+   "classification": "supported",
+   "evidence": "Consistent with NHS/emc/MedlinePlus text (see ledger and re-retrieval).",
+   "url": "https://www.nhs.uk/medicines/esomeprazole/about-esomeprazole/",
+   "action": "kept"
+  },
+  {
+   "id": "c55",
+   "where": "article.sections[2]",
+   "classification": "supported",
+   "evidence": "NHS: subacute cutaneous lupus erythematosus.",
+   "url": "https://www.nhs.uk/medicines/esomeprazole/side-effects-of-esomeprazole/",
+   "action": "edited",
+   "oldSentence": "Joint pain with a rash that is sensitive to sun can point to a rare form of lupus.",
+   "newSentence": "Joint pain with a red skin rash on parts of the body exposed to the sun can point to a rare form of lupus."
+  },
+  {
+   "id": "c56",
+   "where": "article.sections[2]",
+   "classification": "supported",
+   "evidence": "NHS: if the diarrhoea does not get better, talk to your doctor.",
+   "url": "https://www.nhs.uk/medicines/esomeprazole/side-effects-of-esomeprazole/",
+   "action": "edited",
+   "oldSentence": "Severe diarrhoea that does not settle also needs medical review.",
+   "newSentence": "Diarrhoea that does not get better is a reason to talk to a doctor."
+  },
+  {
+   "id": "c57",
+   "where": "article.sections[2]",
+   "classification": "supported",
+   "evidence": "NHS side effects page.",
+   "url": "https://www.nhs.uk/medicines/esomeprazole/side-effects-of-esomeprazole/",
+   "action": "edited",
+   "oldSentence": "Anyone with these signs can contact NHS 111 or a GP the same day.",
+   "newSentence": "For these signs the NHS says to call a doctor or NHS 111 straight away, and to talk to a doctor if diarrhoea does not get better."
+  },
+  {
+   "id": "c58",
+   "where": "article.sections[2]",
+   "classification": "supported",
+   "evidence": "NHS: call 999 now if lips, mouth, throat or tongue suddenly swell, etc.",
+   "url": "https://www.nhs.uk/medicines/esomeprazole/side-effects-of-esomeprazole/",
+   "action": "kept"
+  },
+  {
+   "id": "c59",
+   "where": "article.sections[3]",
+   "classification": "supported",
+   "evidence": "Consistent with NHS/emc/MedlinePlus text (see ledger and re-retrieval).",
+   "url": "https://www.nhs.uk/medicines/esomeprazole/about-esomeprazole/",
+   "action": "kept"
+  },
+  {
+   "id": "c60",
+   "where": "article.sections[3]",
+   "classification": "supported",
+   "evidence": "as above",
+   "url": "https://www.nhs.uk/medicines/esomeprazole/taking-esomeprazole-with-other-medicines-and-herbal-supplements/",
+   "action": "kept"
+  },
+  {
+   "id": "c61",
+   "where": "article.sections[3]",
+   "classification": "supported",
+   "evidence": "NHS: do not take St John's wort while taking esomeprazole.",
+   "url": "https://www.nhs.uk/medicines/esomeprazole/taking-esomeprazole-with-other-medicines-and-herbal-supplements/",
+   "action": "kept"
+  },
+  {
+   "id": "c62",
+   "where": "article.sections[3]",
+   "classification": "supported",
+   "evidence": "Several emc leaflets say so.",
+   "url": "https://www.medicines.org.uk/emc/files/pil.15051.pdf",
+   "action": "edited",
+   "oldSentence": "One UK leaflet says not to take esomeprazole with a medicine containing nelfinavir.",
+   "newSentence": "UK emc patient leaflets say not to take esomeprazole with a medicine containing nelfinavir, an HIV medicine."
+  },
+  {
+   "id": "c63",
+   "where": "article.sections[3]",
+   "classification": "supported",
+   "evidence": "emc leaflets (ledger).",
+   "url": "https://www.medicines.org.uk/emc/files/pil.15051.pdf",
+   "action": "kept"
+  },
+  {
+   "id": "c64",
+   "where": "article.sections[4]",
+   "classification": "supported",
+   "evidence": "NHS who-can page (ledger).",
+   "url": "https://www.nhs.uk/medicines/esomeprazole/who-can-and-cannot-take-esomeprazole/",
+   "action": "kept"
+  },
+  {
+   "id": "c65",
+   "where": "article.sections[4]",
+   "classification": "supported",
+   "evidence": "as above",
+   "url": "https://www.nhs.uk/medicines/esomeprazole/who-can-and-cannot-take-esomeprazole/",
+   "action": "kept"
+  },
+  {
+   "id": "c66",
+   "where": "article.sections[4]",
+   "classification": "supported",
+   "evidence": "See cautions.",
+   "url": "https://www.medicines.org.uk/emc/files/pil.15051.pdf",
+   "action": "edited",
+   "oldSentence": "One UK leaflet says not to take it with an allergy to esomeprazole or other proton pump inhibitors, or with severe liver or severe kidney problems.",
+   "newSentence": "UK emc patient leaflets list an allergy to esomeprazole or other proton pump inhibitors, and severe liver or severe kidney problems, among the reasons for caution before taking it."
+  },
+  {
+   "id": "c67",
+   "where": "article.sections[4]",
+   "classification": "supported",
+   "evidence": "NHS pregnancy page.",
+   "url": "https://www.nhs.uk/medicines/esomeprazole/pregnancy-breastfeeding-and-fertility-while-taking-esomeprazole/",
+   "action": "kept"
+  },
+  {
+   "id": "c68",
+   "where": "article.sections[4]",
+   "classification": "supported",
+   "evidence": "NHS pregnancy page.",
+   "url": "https://www.nhs.uk/medicines/esomeprazole/pregnancy-breastfeeding-and-fertility-while-taking-esomeprazole/",
+   "action": "kept"
+  },
+  {
+   "id": "c69",
+   "where": "article.sections[4]",
+   "classification": "supported",
+   "evidence": "NHS pregnancy page.",
+   "url": "https://www.nhs.uk/medicines/esomeprazole/pregnancy-breastfeeding-and-fertility-while-taking-esomeprazole/",
+   "action": "edited",
+   "oldSentence": "Some esomeprazole passes into breast milk, probably in too small an amount to be harmful, and the NHS says to check with a doctor first.",
+   "newSentence": "The NHS says some esomeprazole passes into breast milk, probably in too small an amount to be harmful, and that a person may be able to take it while breastfeeding after checking with a doctor first."
+  },
+  {
+   "id": "c70",
+   "where": "article.sections[4]",
+   "classification": "supported",
+   "evidence": "emc leaflets, reported without picking between sources.",
+   "url": "https://www.medicines.org.uk/emc/files/pil.15051.pdf",
+   "action": "edited",
+   "oldSentence": "One UK leaflet is stricter and says not to take esomeprazole while breastfeeding.",
+   "newSentence": "UK emc leaflets say it is not known whether esomeprazole passes into breast milk and that it should not be taken when breastfeeding."
+  },
+  {
+   "id": "c71",
+   "where": "article.sections[4]",
+   "classification": "supported",
+   "evidence": "NHS pregnancy page.",
+   "url": "https://www.nhs.uk/medicines/esomeprazole/pregnancy-breastfeeding-and-fertility-while-taking-esomeprazole/",
+   "action": "kept"
+  },
+  {
+   "id": "c72",
+   "where": "article.sections[5]",
+   "classification": "supported",
+   "evidence": "NHS common questions (author ledger); long-term effects confirmed on NHS side effects page.",
+   "url": "https://www.nhs.uk/medicines/esomeprazole/common-questions-about-esomeprazole/",
+   "action": "kept"
+  },
+  {
+   "id": "c73",
+   "where": "article.sections[5]",
+   "classification": "supported",
+   "evidence": "NHS: after more than 3 months magnesium levels may fall.",
+   "url": "https://www.nhs.uk/medicines/esomeprazole/side-effects-of-esomeprazole/",
+   "action": "kept"
+  },
+  {
+   "id": "c74",
+   "where": "article.sections[5]",
+   "classification": "supported",
+   "evidence": "NHS side effects page.",
+   "url": "https://www.nhs.uk/medicines/esomeprazole/side-effects-of-esomeprazole/",
+   "action": "kept"
+  },
+  {
+   "id": "c75",
+   "where": "article.sections[5]",
+   "classification": "unsupported",
+   "evidence": "Not re-retrieved; removed.",
+   "url": "https://www.nhs.uk/medicines/esomeprazole/common-questions-about-esomeprazole/",
+   "action": "removed",
+   "oldSentence": "Usually esomeprazole can be stopped without reducing the amount first."
+  },
+  {
+   "id": "c76",
+   "where": "article.sections[5]",
+   "classification": "supported",
+   "evidence": "Author ledger from NHS common questions; rebound acid secretion after withdrawal confirmed in retrieved guidance.",
+   "url": "https://www.nhs.uk/medicines/esomeprazole/common-questions-about-esomeprazole/",
+   "action": "kept"
+  },
+  {
+   "id": "c77",
+   "where": "article.sections[5]",
+   "classification": "supported",
+   "evidence": "Gradual tapering over several weeks described in NHS ICB guidance retrieved; not on nhs.uk page text I retrieved.",
+   "url": "https://www.nhs.uk/medicines/esomeprazole/common-questions-about-esomeprazole/",
+   "action": "edited",
+   "oldSentence": "Tapering is recommended in that situation.",
+   "newSentence": "NHS guidance documents describe gradual tapering after long-term use."
+  },
+  {
+   "id": "c78",
+   "where": "article.faqs[0].a",
+   "classification": "supported",
+   "evidence": "NHS common questions.",
+   "url": "https://www.nhs.uk/medicines/esomeprazole/common-questions-about-esomeprazole/",
+   "action": "kept"
+  },
+  {
+   "id": "c79",
+   "where": "article.faqs[0].a",
+   "classification": "supported",
+   "evidence": "NHS common questions.",
+   "url": "https://www.nhs.uk/medicines/esomeprazole/common-questions-about-esomeprazole/",
+   "action": "kept"
+  },
+  {
+   "id": "c80",
+   "where": "article.faqs[0].a",
+   "classification": "unsupported",
+   "evidence": "Inference not in any source; removed.",
+   "url": "https://www.nhs.uk/medicines/esomeprazole/",
+   "action": "removed",
+   "oldSentence": "It is used for heartburn, acid reflux and stomach ulcers, so the time to full effect applies to those uses."
+  },
+  {
+   "id": "c81",
+   "where": "article.faqs[0].a",
+   "classification": "unsupported",
+   "evidence": "No retrieved text states this; removed.",
+   "url": "https://www.nhs.uk/medicines/esomeprazole/",
+   "action": "removed",
+   "oldSentence": "Anyone whose symptoms are not improving can ask a pharmacist or GP for advice."
+  },
+  {
+   "id": "c82",
+   "where": "article.faqs[1].a",
+   "classification": "supported",
+   "evidence": "NHS side effects.",
+   "url": "https://www.nhs.uk/medicines/esomeprazole/side-effects-of-esomeprazole/",
+   "action": "kept"
+  },
+  {
+   "id": "c83",
+   "where": "article.faqs[1].a",
+   "classification": "supported",
+   "evidence": "NHS side effects.",
+   "url": "https://www.nhs.uk/medicines/esomeprazole/side-effects-of-esomeprazole/",
+   "action": "kept"
+  },
+  {
+   "id": "c84",
+   "where": "article.faqs[2].a",
+   "classification": "supported",
+   "evidence": "as above",
+   "url": "https://www.nhs.uk/medicines/esomeprazole/common-questions-about-esomeprazole/",
+   "action": "kept"
+  },
+  {
+   "id": "c85",
+   "where": "article.faqs[2].a",
+   "classification": "supported",
+   "evidence": "NHS: after more than 3 months magnesium levels may fall.",
+   "url": "https://www.nhs.uk/medicines/esomeprazole/side-effects-of-esomeprazole/",
+   "action": "kept"
+  },
+  {
+   "id": "c86",
+   "where": "article.faqs[2].a",
+   "classification": "supported",
+   "evidence": "NHS side effects page.",
+   "url": "https://www.nhs.uk/medicines/esomeprazole/side-effects-of-esomeprazole/",
+   "action": "kept"
+  },
+  {
+   "id": "c87",
+   "where": "article.faqs[2].a",
+   "classification": "textbook",
+   "evidence": "Plain textbook statement; no source text.",
+   "url": "https://www.nhs.uk/medicines/esomeprazole/",
+   "action": "kept"
+  },
+  {
+   "id": "c88",
+   "where": "article.faqs[3].a",
+   "classification": "supported",
+   "evidence": "NHS pregnancy page.",
+   "url": "https://www.nhs.uk/medicines/esomeprazole/pregnancy-breastfeeding-and-fertility-while-taking-esomeprazole/",
+   "action": "kept"
+  },
+  {
+   "id": "c89",
+   "where": "article.faqs[3].a",
+   "classification": "supported",
+   "evidence": "NHS pregnancy page.",
+   "url": "https://www.nhs.uk/medicines/esomeprazole/pregnancy-breastfeeding-and-fertility-while-taking-esomeprazole/",
+   "action": "kept"
+  },
+  {
+   "id": "c90",
+   "where": "article.faqs[3].a",
+   "classification": "supported",
+   "evidence": "NHS pregnancy page.",
+   "url": "https://www.nhs.uk/medicines/esomeprazole/pregnancy-breastfeeding-and-fertility-while-taking-esomeprazole/",
+   "action": "edited",
+   "oldSentence": "Some esomeprazole passes into breast milk, probably in too small an amount to be harmful, and the NHS says to check with a doctor first.",
+   "newSentence": "The NHS says some esomeprazole passes into breast milk, probably in too small an amount to be harmful, and that a person may be able to take it while breastfeeding after checking with a doctor first."
+  },
+  {
+   "id": "c91",
+   "where": "article.faqs[3].a",
+   "classification": "supported",
+   "evidence": "emc leaflets.",
+   "url": "https://www.medicines.org.uk/emc/files/pil.15051.pdf",
+   "action": "edited",
+   "oldSentence": "One UK leaflet says not to take it while breastfeeding, so the advice differs between sources.",
+   "newSentence": "UK emc leaflets say it is not known whether esomeprazole passes into breast milk and that it should not be taken when breastfeeding, so the advice differs between sources."
+  },
+  {
+   "id": "c92",
+   "where": "article.faqs[4].a",
+   "classification": "unsupported",
+   "evidence": "Not re-retrieved; removed.",
+   "url": "https://www.nhs.uk/medicines/esomeprazole/common-questions-about-esomeprazole/",
+   "action": "removed",
+   "oldSentence": "Usually esomeprazole can be stopped without reducing the amount first."
+  },
+  {
+   "id": "c93",
+   "where": "article.faqs[4].a",
+   "classification": "supported",
+   "evidence": "Author ledger from NHS common questions; rebound acid secretion after withdrawal confirmed in retrieved guidance.",
+   "url": "https://www.nhs.uk/medicines/esomeprazole/common-questions-about-esomeprazole/",
+   "action": "kept"
+  },
+  {
+   "id": "c94",
+   "where": "article.faqs[4].a",
+   "classification": "supported",
+   "evidence": "Gradual tapering over several weeks described in NHS ICB guidance retrieved; not on nhs.uk page text I retrieved.",
+   "url": "https://www.nhs.uk/medicines/esomeprazole/common-questions-about-esomeprazole/",
+   "action": "edited",
+   "oldSentence": "Tapering is recommended in that situation.",
+   "newSentence": "NHS guidance documents describe gradual tapering after long-term use."
+  },
+  {
+   "id": "c95",
+   "where": "article.keyFacts[0]",
+   "classification": "supported",
+   "evidence": "NHS lists Nexium, Nexium Control, Emozul, Guardium Acid Reflux Control.",
+   "url": "https://www.nhs.uk/medicines/esomeprazole/",
+   "action": "edited",
+   "oldSentence": "Brands include Nexium and Nexium Control in the UK.",
+   "newSentence": "Brands in the UK include Nexium, Nexium Control, Emozul and Guardium Acid Reflux Control."
+  },
+  {
+   "id": "c96",
+   "where": "article.keyFacts[1]",
+   "classification": "supported",
+   "evidence": "Consistent with NHS/emc/MedlinePlus text (see ledger and re-retrieval).",
+   "url": "https://www.nhs.uk/medicines/esomeprazole/about-esomeprazole/",
+   "action": "kept"
+  },
+  {
+   "id": "c97",
+   "where": "article.keyFacts[2]",
+   "classification": "supported",
+   "evidence": "Consistent with NHS/emc/MedlinePlus text (see ledger and re-retrieval).",
+   "url": "https://www.nhs.uk/medicines/esomeprazole/about-esomeprazole/",
+   "action": "kept"
+  },
+  {
+   "id": "c98",
+   "where": "article.keyFacts[3]",
+   "classification": "supported",
+   "evidence": "Consistent with NHS/emc/MedlinePlus text (see ledger and re-retrieval).",
+   "url": "https://www.nhs.uk/medicines/esomeprazole/about-esomeprazole/",
+   "action": "kept"
+  },
+  {
+   "id": "c99",
+   "where": "article.keyFacts[4]",
+   "classification": "supported",
+   "evidence": "Consistent with NHS/emc/MedlinePlus text (see ledger and re-retrieval).",
+   "url": "https://www.nhs.uk/medicines/esomeprazole/about-esomeprazole/",
+   "action": "kept"
+  },
+  {
+   "id": "c100",
+   "where": "article.keyFacts[5]",
+   "classification": "supported",
+   "evidence": "emc Nexium Control (P) leaflet; prescription status of Nexium not stated in retrieved text.",
+   "url": "https://www.medicines.org.uk/emc/product/14465/pil",
+   "action": "edited",
+   "oldSentence": "Prescription brands, and a pharmacy brand for short-term reflux symptoms in adults.",
+   "newSentence": "Brands include Nexium; Nexium Control is a pharmacy brand for short-term reflux symptoms in adults."
+  },
+  {
+   "id": "c101",
+   "where": "article.keyFacts[6]",
+   "classification": "supported",
+   "evidence": "Consistent with NHS/emc/MedlinePlus text (see ledger and re-retrieval).",
+   "url": "https://www.nhs.uk/medicines/esomeprazole/about-esomeprazole/",
+   "action": "kept"
+  }
+ ],
+ "notes": "Search cap 8 used. Not independently re-retrieved (relied on author ledger of NHS who-can-take, other-medicines list beyond digoxin/methotrexate/St John's wort, common-questions page): Most-adults/children, the endoscopy/weight-loss list, cilostazol/antifungals/HIV/phenytoin/rifampicin, 'shortest time possible'. No alcohol content retrieved or stated. Breastfeeding: NHS (may be able to take after checking with doctor; probably too little in milk to harm) vs emc leaflets (not known whether in milk; should not be taken) both reported. Severe diarrhoea reworded to the NHS wording (talk to a doctor); liver/lupus now use NHS 'doctor or 111 straight away'. Removed unsupported 'can be stopped without reducing' and FAQ pharmacist line. Regulatory: Nexium Control title carries (P) (and a GSL version also exists); prescription status for Nexium 40 mg not stated in retrieved text (UK POM is textbook, kept in structural field only); no NHS regulatory statement. Monitoring: no routine tests retrieved; field describes NHS advice only. Nelfinavir and severe liver/kidney supported by emc leaflets (wording varies by leaflet); NSAID prevention supported by emc SmPC 4657. Article word count 670 (sections only)."
+}
