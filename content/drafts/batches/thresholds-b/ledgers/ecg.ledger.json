@@ -1,0 +1,50 @@
+{
+ "id": "ecg",
+ "items": [
+  {
+   "where": "measures[0].meaning",
+   "sentence": "Resting adult heart rate is usually 60-100 beats per minute in sinus rhythm; irregular with no P waves in atrial fibrillation.",
+   "basis": "excerpt",
+   "urls": [
+    "https://www.bhf.org.uk/informationsupport/how-a-healthy-heart-works/your-heart-rate"
+   ],
+   "note": "Search summary: BHF puts a typical adult resting rate at 60-100 bpm and says some people sit outside it; MedlinePlus and AHA agree. 'Sinus rhythm' and the AF half are the unchanged original wording, not re-retrieved."
+  },
+  {
+   "where": "whyOrdered[0]",
+   "sentence": "Chest pain (recorded within 10 minutes of first medical contact when a heart attack is suspected)",
+   "basis": "excerpt",
+   "urls": [
+    "https://www.nice.org.uk/guidance/qs68"
+   ],
+   "note": "Search summary: NICE QS68 covers a 12-lead ECG within 10 minutes of first medical contact (ED arrival or first pre-hospital contact). AHA/ACC 2021 slides say within 10 minutes of arrival (US)."
+  },
+  {
+   "where": "interpretation[0].finding",
+   "sentence": "ST elevation in two contiguous leads",
+   "basis": "excerpt",
+   "urls": [
+    "https://academic.oup.com/eurheartj/article/40/3/237/5079081"
+   ],
+   "note": "Search summary: Fourth Universal Definition (and fifth, 2026) label STEMI on new ST elevation in two contiguous leads."
+  },
+  {
+   "where": "limitations",
+   "sentence": "A ten-second snapshot: intermittent arrhythmias need longer monitoring, and a normal first ECG does not rule out a heart attack.",
+   "basis": "excerpt",
+   "urls": [
+    "https://www.nice.org.uk/guidance/cg95"
+   ],
+   "note": "Search summary: NICE CG95 says do not exclude ACS in people with a normal resting 12-lead ECG. The earlier 'a third of heart attacks' figure was not found in any retrieved text (one NSTEMI study gave 16.3%); removed."
+  },
+  {
+   "where": "cannotTell[0]",
+   "sentence": "Whether a heart attack has occurred when the first tracing is normal (a normal ECG does not exclude one); serial ECGs and troponin are needed",
+   "basis": "excerpt",
+   "urls": [
+    "https://www.nice.org.uk/guidance/cg95"
+   ],
+   "note": "As above; 'serial ECGs and troponin' is unchanged original wording."
+  }
+ ]
+}

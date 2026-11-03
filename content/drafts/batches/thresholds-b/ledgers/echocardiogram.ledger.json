@@ -1,0 +1,23 @@
+{
+ "id": "echocardiogram",
+ "items": [
+  {
+   "where": "measures[0].meaning",
+   "sentence": "The fraction of blood the left ventricle ejects each beat. Sources differ on the lower limit of normal: British Society of Echocardiography reporting categories treat above 55% as normal, while the BHF and NHS England describe 50% or more as normal. Heart failure with reduced ejection fraction is defined as 40% or less.",
+   "basis": "excerpt",
+   "urls": [
+    "https://nwknowledgenow.nhs.uk/wp-content/uploads/2024/02/Echocardiography-Results-Guidance-JPUH.pdf",
+    "https://www.england.nhs.uk/long-read/managing-heart-failure-home-information-for-patients/",
+    "https://www.england.nhs.uk/long-read/heart-failure-with-preserved-ejection-fraction-pathway-support-tool/"
+   ],
+   "note": "NHS guidance sheet reproduces BSE-style bands (normal >55, borderline 50-54, impaired 36-49, severe <35). NHS England glossary: 50% or higher normal. BHF HF page: 40% or less reduced. NHS England HFpEF tool coding table: HFrEF <=40, HFmrEF 41-49. ASE/EACVI limits (52/54) also differ; not stated on page."
+  },
+  {
+   "where": "interpretation[0]",
+   "sentence": "Ejection fraction well below normal -> Significantly reduced pumping; heart-failure treatment is considered",
+   "basis": "excerpt",
+   "urls": [],
+   "note": "Qualitative rewrite of 'Ejection fraction 30% ... start heart-failure treatment'; no number kept."
+  }
+ ]
+}
