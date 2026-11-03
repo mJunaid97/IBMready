@@ -1,0 +1,39 @@
+{
+ "type": "anatomy",
+ "id": "cerebellum",
+ "verdict": "accept-with-edits",
+ "edits": [
+  {
+   "field": "sections",
+   "action": "remove-sentence",
+   "match": "Arterial blood reaches the cerebellum mainly through the posterior inferior cerebellar artery (PICA) and the anterior inferior cerebellar artery (AICA), both of which arise from the vertebrobasilar circulation at the back of the brain and wrap around the brainstem to reach the cerebellar surface.",
+   "replacement": "Arterial blood reaches the cerebellum through three paired arteries of the vertebrobasilar circulation: the superior cerebellar artery (SCA), which supplies the upper surface, the anterior inferior cerebellar artery (AICA) and the posterior inferior cerebellar artery (PICA), all of which wrap around the brainstem to reach the cerebellar surface.",
+   "reason": "WRONG: the cerebellum is supplied by three paired arteries (SCA, AICA, PICA); omitting the superior cerebellar artery and calling PICA/AICA the 'main' supply is incorrect (StatPearls Vertebrobasilar System / Cerebellum)."
+  },
+  {
+   "field": "keyFacts",
+   "action": "remove-item",
+   "match": "Blood supply",
+   "replacement": "",
+   "reason": "WRONG: 'Mainly the posterior inferior and anterior inferior cerebellar arteries' omits the superior cerebellar artery."
+  },
+  {
+   "field": "sections",
+   "action": "remove-sentence",
+   "match": "Investigation begins with history and examination; MRI excludes stroke, tumour, infection or malformation and shows cerebellar shrinkage, often most marked in the vermis.",
+   "replacement": "Investigation begins with history and examination; MRI excludes stroke, tumour, infection or malformation and can show cerebellar shrinkage.",
+   "reason": "UNSUPPORTED: 'often most marked in the vermis' is true of alcohol-related degeneration only and is not in the cited NHS ataxia page."
+  }
+ ],
+ "unverified_urls": [
+  "https://openstax.org/books/anatomy-and-physiology-2e/pages/13-2-the-central-nervous-system",
+  "https://openstax.org/books/anatomy-and-physiology-2e/pages/16-5-the-coordination-and-gait-exams",
+  "https://111.wales.nhs.uk/ataxia/"
+ ],
+ "checked_urls": [
+  "https://www.ncbi.nlm.nih.gov/sites/books/NBK538167/",
+  "https://www.ncbi.nlm.nih.gov/sites/books/NBK540995/",
+  "https://www.ncbi.nlm.nih.gov/sites/books/NBK554381/"
+ ],
+ "notes": "SUPPORTED: three peduncles, SCP output to red nucleus/thalamus, four paired deep nuclei (dentate largest). GENERAL KNOWLEDGE (correct): lobes/fissures, three-layered cortex, vestibulo/spino/cerebrocerebellum, ipsilateral limb ataxia, AICA-labyrinthine relation, metencephalon origin, ataxia signs/causes. Structures ('Cerebellum') valid. References https on approved hosts (111.wales.nhs.uk)."
+}

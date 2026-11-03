@@ -1,0 +1,17 @@
+{
+ "type": "biomarkers",
+ "id": "crp",
+ "verdict": "accept-with-edits",
+ "edits": [
+  {
+   "field": "rangeNote",
+   "action": "remove-sentence",
+   "match": "A standard CRP and a high-sensitivity CRP (hs-CRP) are reported on different scales and are not interchangeable: hs-CRP detects very small rises used to estimate cardiovascular risk, and the risk bands quoted for it come from cardiology guideline bodies rather than from the laboratory's reference interval.",
+   "replacement": "A standard CRP and a high-sensitivity CRP (hs-CRP) are not interchangeable: hs-CRP detects very small rises used to estimate cardiovascular risk, and the risk bands quoted for it come from cardiology guideline bodies rather than from the laboratory's reference interval.",
+   "reason": "UNSUPPORTED: 'reported on different scales' not supported by the cited sources; clause removed."
+  }
+ ],
+ "unverified_urls": [],
+ "checked_urls": [],
+ "notes": "Verdict file generated from the upstream verifier report; every match string was asserted to occur in the current record. URL checks were done in the upstream report and are not repeated here."
+}

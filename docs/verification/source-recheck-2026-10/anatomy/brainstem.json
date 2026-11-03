@@ -1,0 +1,33 @@
+{
+ "type": "anatomy",
+ "id": "brainstem",
+ "verdict": "accept-with-edits",
+ "edits": [
+  {
+   "field": "sections",
+   "action": "remove-sentence",
+   "match": "Brainstem infarcts account for nearly one-third of all ischaemic strokes, causing combinations of double vision, vertigo, facial weakness, difficulty swallowing and limb weakness; MRI shows them best.",
+   "replacement": "Brainstem infarcts cause combinations of double vision, vertigo, facial weakness, difficulty swallowing and limb weakness; MRI shows them best.",
+   "reason": "WRONG/UNSAFE: numeric prevalence figure (forbidden by the anatomy brief) and contradicted by the same StatPearls chapter's epidemiology section (about 11%) and the literature (about 10%)."
+  },
+  {
+   "field": "keyFacts",
+   "action": "remove-item",
+   "match": "Clinical",
+   "replacement": "",
+   "reason": "WRONG: contains the 'nearly a third of ischaemic strokes' figure (actual ~10-11%)."
+  }
+ ],
+ "unverified_urls": [
+  "https://www.nhsinform.scot/illnesses-and-conditions/brain-nerves-and-spinal-cord/brain-stem-death/",
+  "https://medlineplus.gov/ency/imagepages/18007.htm",
+  "https://openstax.org/books/anatomy-and-physiology-2e/pages/13-1-the-embryologic-perspective",
+  "https://openstax.org/books/anatomy-and-physiology/pages/13-2-the-central-nervous-system",
+  "https://www.ncbi.nlm.nih.gov/sites/books/NBK551589/",
+  "https://www.ncbi.nlm.nih.gov/sites/books/NBK551509/"
+ ],
+ "checked_urls": [
+  "https://www.ncbi.nlm.nih.gov/sites/books/NBK560896/"
+ ],
+ "notes": "SUPPORTED/GENERAL KNOWLEDGE: midbrain/pons/medulla, tectum-tegmentum-basis layering, CN IX-XII from medulla, cerebral aqueduct, clivus, tentorial notch, foramen magnum, crossed signs, reticular formation, vesicle derivation (mesencephalon; metencephalon -> pons+cerebellum; myelencephalon -> medulla). Brainstem-death description matches NHS inform (two senior doctors, two sets of tests, ventilator disconnection, vegetative state distinction). Structures valid. References https on approved hosts (one OpenStax 1e link alongside 2e)."
+}

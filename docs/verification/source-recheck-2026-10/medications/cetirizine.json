@@ -1,0 +1,32 @@
+{
+ "type": "medications",
+ "id": "cetirizine",
+ "verdict": "accept-with-edits",
+ "edits": [
+  {
+   "field": "summary",
+   "action": "remove-sentence",
+   "match": "It works within about an hour, is taken once a day and is sold without prescription, but it is the most sedating of the modern antihistamines and is an add-on, never a substitute for adrenaline, in anaphylaxis.",
+   "replacement": "It works within about an hour, is taken once a day and is sold without prescription, but it can cause drowsiness in some people and is an add-on, never a substitute for adrenaline, in anaphylaxis.",
+   "reason": "UNSAFE: 'the most sedating of the modern antihistamines' is an overstated absolute not in the NHS source, which says only that drowsiness is possible although cetirizine is classed as non-drowsy."
+  },
+  {
+   "field": "sideEffects.common",
+   "action": "remove-sentence",
+   "match": "Feeling sleepy or tired is the most common effect (more than 1 in 10 people, and more than with loratadine, desloratadine or fexofenadine)",
+   "replacement": "Feeling sleepy or tired (about 1 in 10 people, and more than with loratadine or fexofenadine)",
+   "reason": "WRONG: the frequency was changed from the pre-patch 'about 1 in 10' to 'more than 1 in 10' and 'the most common effect' added, neither supported by the NHS excerpt; restored to the pre-patch figure."
+  }
+ ],
+ "unverified_urls": [
+  "https://www.nhs.uk/medicines/cetirizine/side-effects-of-cetirizine/",
+  "https://www.nhs.uk/medicines/cetirizine/common-questions-about-cetirizine/",
+  "https://www.nhs.uk/conditions/antihistamines/",
+  "https://medlineplus.gov/druginfo/meds/a623043.html"
+ ],
+ "checked_urls": [
+  "https://www.nhs.uk/medicines/cetirizine/about-cetirizine/",
+  "https://www.nhs.uk/medicines/cetirizine/who-can-and-cannot-take-cetirizine/"
+ ],
+ "notes": "Line-by-line check. NHS excerpts support: headaches, dry mouth, feeling sick, dizziness, diarrhoea; drowsiness possible despite non-drowsy label with driving/cycling avoided; alcohol heightens effects; anaphylaxis very rare. No dose figure added (once a day matches pre-patch 'lasts 24 hours'). Adrenaline-first in anaphylaxis, QT prolongation with withdrawn agents and driving/alcohol cautions predate the patch. Severe itching on stopping after long use and 'use only as long as needed' are NHS common-questions content (general knowledge). Eye drops and IV form (US) are accurate product facts. No protected field changed."
+}

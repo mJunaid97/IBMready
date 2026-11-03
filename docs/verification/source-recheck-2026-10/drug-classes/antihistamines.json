@@ -1,0 +1,32 @@
+{
+ "type": "drug-classes",
+ "id": "antihistamines",
+ "verdict": "accept-with-edits",
+ "edits": [
+  {
+   "field": "summary",
+   "action": "remove-sentence",
+   "match": "Second-generation agents are recommended first for allergic rhinitis and urticaria because they work as well with far fewer effects on the brain; fexofenadine is the least likely of all to cause drowsiness.",
+   "replacement": "Second-generation agents are recommended first for allergic rhinitis and urticaria because they work as well with far fewer effects on the brain.",
+   "reason": "UNSUPPORTED: 'least likely of all' is an absolute not found in any retrieved excerpt (NHS lists fexofenadine among the non-drowsy antihistamines without ranking it)."
+  },
+  {
+   "field": "cautions",
+   "action": "remove-sentence",
+   "match": "Chlorphenamine is best avoided, or used only in low doses, in epilepsy, glaucoma and long QT syndrome",
+   "replacement": "Chlorphenamine may not be suitable for people with epilepsy or primary angle closure glaucoma, who check with a pharmacist or doctor first",
+   "reason": "UNSAFE: 'used only in low doses' is dose advice taken from an uncited local trust leaflet (RUH); the cited NHS chlorphenamine page lists epilepsy and primary angle closure glaucoma as reasons to check first and does not mention long QT syndrome."
+  }
+ ],
+ "unverified_urls": [
+  "https://www.nhs.uk/medicines/antihistamines/",
+  "https://www.nhs.uk/medicines/cetirizine/side-effects-of-cetirizine/",
+  "https://www.ncbi.nlm.nih.gov/sites/books/NBK538188/",
+  "https://www.ncbi.nlm.nih.gov/sites/books/NBK533003/"
+ ],
+ "checked_urls": [
+  "https://www.nhs.uk/medicines/chlorphenamine-including-piriton/who-can-and-cannot-take-chlorphenamine/",
+  "https://www.nhs.uk/medicines/chlorphenamine-including-piriton/about-chlorphenamine/"
+ ],
+ "notes": "Other new items (syringe/spoon, no driving, alcohol, breastfeeding preference, try a different non-drowsy agent) match NHS medicine-page wording; older-adult confusion/falls is standard anticholinergic-burden knowledge. Protected fields unchanged."
+}

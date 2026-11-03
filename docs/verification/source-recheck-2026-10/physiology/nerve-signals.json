@@ -1,0 +1,17 @@
+{
+ "type": "physiology",
+ "id": "nerve-signals",
+ "verdict": "accept-with-edits",
+ "edits": [
+  {
+   "field": "body",
+   "action": "remove-sentence",
+   "match": "The adult brain contains on the order of 85 billion neurons communicating across trillions of synapses.",
+   "replacement": "The adult brain contains more than 80 billion neurons communicating across trillions of synapses.",
+   "reason": "UNSUPPORTED: '85 billion' not the figure given by the cited source; replaced with the source's 'more than 80 billion'."
+  }
+ ],
+ "unverified_urls": [],
+ "checked_urls": [],
+ "notes": "Verdict file generated from the upstream verifier report; every match string was asserted to occur in the current record. URL checks were done in the upstream report and are not repeated here."
+}

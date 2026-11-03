@@ -1,0 +1,35 @@
+{
+ "type": "anatomy",
+ "id": "tongue",
+ "verdict": "accept-with-edits",
+ "edits": [
+  {
+   "field": "sections",
+   "action": "remove-sentence",
+   "match": "The tongue forms early, in the fifth week of embryonic life, when paired lingual swellings appear on the right and left sides of the first pharyngeal arch.",
+   "replacement": "The tongue forms early, at about the fourth week of development, when paired lateral lingual swellings and a midline swelling, the tuberculum impar, appear on the first pharyngeal arch.",
+   "reason": "WRONG: StatPearls (Anatomy, Head and Neck, Tongue; Embryology, Tongue) places the start of tongue development at approximately four weeks of gestation with two lateral swellings and the tuberculum impar; 'fifth week' and omission of the tuberculum impar misstate the source."
+  },
+  {
+   "field": "keyFacts",
+   "action": "remove-item",
+   "match": "Development",
+   "replacement": "",
+   "reason": "WRONG: states 'in the fifth week'; the source says approximately four weeks."
+  }
+ ],
+ "unverified_urls": [
+  "https://www.nhs.uk/conditions/mouth-cancer/symptoms/",
+  "https://www.nhs.uk/conditions/tongue-tie/",
+  "https://medlineplus.gov/ency/article/001053.htm",
+  "https://openstax.org/books/anatomy-and-physiology/pages/23-3-the-mouth-pharynx-and-esophagus",
+  "https://openstax.org/books/anatomy-and-physiology-2e/pages/14-1-sensory-perception",
+  "https://www.ncbi.nlm.nih.gov/sites/books/NBK539696/"
+ ],
+ "checked_urls": [
+  "https://www.ncbi.nlm.nih.gov/sites/books/NBK507782/",
+  "https://www.ncbi.nlm.nih.gov/sites/books/NBK547697/",
+  "https://www.ncbi.nlm.nih.gov/sites/books/NBK545271/"
+ ],
+ "notes": "SUPPORTED: anterior two-thirds from fused lateral swellings (CN V3 sensation), posterior third from later arches (CN IX). GENERAL KNOWLEDGE (correct): genioglossus protrusion/jaw-thrust, hyoglossus depression/retraction, intrinsic muscles, four papilla types (filiform without taste buds; circumvallate in V-row anterior to sulcus terminalis), chorda tympani taste anterior two-thirds, glossopharyngeal posterior third, hypoglossal motor with deviation towards weak side, lingual artery, taste-cell turnover ~10-14 days (OpenStax), lingual lipase activated in stomach. Clinical text matches NHS mouth cancer / tongue-tie pages. Structures valid; references https on approved hosts."
+}

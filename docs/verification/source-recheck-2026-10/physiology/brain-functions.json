@@ -1,0 +1,24 @@
+{
+ "type": "physiology",
+ "id": "brain-functions",
+ "verdict": "accept-with-edits",
+ "edits": [
+  {
+   "field": "keyFacts",
+   "action": "remove-item",
+   "match": "Cerebellum share of brain mass",
+   "replacement": "",
+   "reason": "UNSUPPORTED: '≈10%' of brain mass figure not in the cited sources."
+  },
+  {
+   "field": "body",
+   "action": "remove-sentence",
+   "match": "The cerebellum, about a tenth of the brain's mass and connected to the brainstem mainly through the pons, initiates and times movements using information about balance and body position; it is engaged whenever a learned skill such as playing the piano or hitting a tennis ball is performed, and it builds the automatic programmes that let complex movements run without conscious thought.",
+   "replacement": "The cerebellum, connected to the brainstem mainly through the pons, initiates and times movements using information about balance and body position; it is engaged whenever a learned skill such as playing the piano or hitting a tennis ball is performed, and it builds the automatic programmes that let complex movements run without conscious thought.",
+   "reason": "UNSUPPORTED: 'about a tenth of the brain's mass' not in the cited sources; clause removed, supported remainder kept."
+  }
+ ],
+ "unverified_urls": [],
+ "checked_urls": [],
+ "notes": "Verdict file generated from the upstream verifier report; every match string was asserted to occur in the current record. URL checks were done in the upstream report and are not repeated here."
+}

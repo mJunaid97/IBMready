@@ -1,0 +1,32 @@
+{
+ "type": "drug-classes",
+ "id": "nitrates",
+ "verdict": "accept-with-edits",
+ "edits": [
+  {
+   "field": "cautions",
+   "action": "remove-item",
+   "match": "The spray is used sitting down: a priming spray into the air if unused for over a week, one spray under the tongue with the mouth then closed and breathing through the nose, and a slow rise afterwards",
+   "replacement": "",
+   "reason": "UNSAFE: step-by-step dosing instruction; NHS says 1 or 2 sprays (repeatable after 5 minutes), so 'one spray' is also a wrong dose figure not present pre-patch."
+  },
+  {
+   "field": "cautions",
+   "action": "remove-item",
+   "match": "Surgical teams are told about nitrate use, as they may ask for it to be stopped before an operation",
+   "replacement": "",
+   "reason": "UNSUPPORTED: not on the retrieved NHS GTN pages; nitrates are not routinely stopped before surgery."
+  }
+ ],
+ "unverified_urls": [
+  "https://medlineplus.gov/druginfo/meds/a601086.html",
+  "https://www.nhs.uk/medicines/glyceryl-trinitrate-gtn/side-effects-of-glyceryl-trinitrate-gtn/",
+  "https://www.nhs.uk/medicines/isosorbide-mononitrate-dinitrate/side-effects-of-isosorbide-mononitrate-and-isosorbide-dinitrate/",
+  "https://www.ncbi.nlm.nih.gov/sites/books/NBK482382/",
+  "https://www.ncbi.nlm.nih.gov/sites/books/NBK545149/"
+ ],
+ "checked_urls": [
+  "https://www.nhs.uk/medicines/glyceryl-trinitrate-gtn/how-and-when-to-take-glyceryl-trinitrate-gtn/"
+ ],
+ "notes": "NHS excerpt supports: test spray onto a tissue before first use, one spray into the air if unused for over a week, sit down, rest and rise slowly, check expiry. Headache easing with paracetamol and dizziness/alcohol match NHS side-effect pages (not retrieved). PDE5 contraindication and tolerance mechanism are standard. Protected fields unchanged."
+}

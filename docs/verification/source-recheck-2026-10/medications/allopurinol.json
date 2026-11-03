@@ -1,0 +1,39 @@
+{
+ "type": "medications",
+ "id": "allopurinol",
+ "verdict": "accept-with-edits",
+ "edits": [
+  {
+   "field": "sideEffects.serious",
+   "action": "remove-item",
+   "match": "Aseptic meningitis (rare): stiff neck with a severe headache",
+   "reason": "UNSUPPORTED: not in the NHS side-effects excerpt or the pre-patch record."
+  },
+  {
+   "field": "cautions",
+   "action": "remove-sentence",
+   "match": "Stopping suddenly after long use carries a high risk that gout will return or worsen, so a doctor reduces the dose slowly if it has to be withdrawn",
+   "replacement": "Stopping treatment allows uric acid to build up again so that gout returns, so it is not stopped without medical advice",
+   "reason": "UNSAFE: 'a doctor reduces the dose slowly' is a dose-adjustment instruction with no source (allopurinol is not tapered); 'high risk' overstated."
+  },
+  {
+   "field": "cautions",
+   "action": "remove-sentence",
+   "match": "Started low and increased gradually: US information advises increases no more often than weekly, and the NHS that the dose is raised only if the uric acid level has not fallen far enough",
+   "replacement": "Started at a low dose and increased gradually, because raising the dose too quickly increases the risk of serious skin reactions",
+   "reason": "UNSAFE: 'increases no more often than weekly' is a dose-adjustment frequency not in the pre-patch record (which says every few weeks) and not in the NHS source; replacement is supported by the NHS statement that Stevens-Johnson syndrome is more likely when the dose is increased too quickly."
+  }
+ ],
+ "unverified_urls": [
+  "https://www.nhs.uk/medicines/allopurinol/common-questions-about-allopurinol/",
+  "https://www.nhs.uk/medicines/allopurinol/how-and-when-to-take-allopurinol/",
+  "https://medlineplus.gov/druginfo/meds/a682673.html",
+  "https://www.medlineplus.gov/download/genetics/gene/hla-b.pdf"
+ ],
+ "checked_urls": [
+  "https://www.nhs.uk/medicines/allopurinol/",
+  "https://www.nhs.uk/medicines/allopurinol/who-can-and-cannot-take-allopurinol/",
+  "https://www.nhs.uk/medicines/allopurinol/side-effects-of-allopurinol/"
+ ],
+ "notes": "Line-by-line check. NHS excerpts support: Han Chinese/Thai/Korean origin and kidney/liver problems as reasons to check first, not starting during an attack, nausea/diarrhoea, drowsiness/dizziness/coordination with driving advice, SJS rare and more likely in first 8 weeks or with rapid dose increase, liver problems, anaphylaxis. HLA-B*58:01 wording ('who are screened') predates the patch. Tumour lysis use and IV form are standard (MedlinePlus). Urate targets predate the patch. No protected field changed."
+}
