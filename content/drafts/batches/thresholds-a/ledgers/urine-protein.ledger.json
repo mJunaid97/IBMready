@@ -1,0 +1,67 @@
+{
+ "id": "urine-protein",
+ "pass1": [
+  {
+   "id": "c01",
+   "where": "measures[0].meaning",
+   "sentence": "Below 3 mg/mmol is normal to mildly raised (category A1); 3 to 30 is moderately raised (A2); above 30 is severely raised (A3).",
+   "basis": "excerpt",
+   "urls": [
+    "https://www.nice.org.uk/guidance/ng203/chapter/recommendations",
+    "https://pathology.uhsussex.nhs.uk/pug/biochemistry-immunology/biochemistry-tests/108-albumin-urine"
+   ],
+   "note": "NICE table: A1 <3 normal to mildly increased; A2 3-30 moderately increased; A3 >30 severely increased. 'formerly microalbuminuria' removed: not retrieved."
+  },
+  {
+   "id": "c02",
+   "where": "measures[1].meaning",
+   "sentence": "above 300 mg/mmol is called the nephrotic range in some NHS laboratory guidance",
+   "basis": "excerpt",
+   "urls": [
+    "https://www.nbt.nhs.uk/sites/default/files/document/Investigation%20of%20Proteinuria%20in%20non-pregnant%20adults.pdf"
+   ],
+   "note": "North Bristol NHS Trust: PCR >300 mg/mmol nephrotic range proteinuria; UHB/other trusts agree; Oxford says >350. This is a protein:creatinine ratio."
+  },
+  {
+   "id": "c03",
+   "where": "whyOrdered[4]",
+   "sentence": "Staging chronic kidney disease and informing decisions on kidney-protecting medicines",
+   "basis": "excerpt",
+   "urls": [
+    "https://www.nice.org.uk/guidance/ng203/chapter/recommendations",
+    "https://www.kidney.org/kidney-topics/albuminuria-proteinuria"
+   ],
+   "note": "Specific ACE inhibitor/SGLT2 inhibitor wording and ACR cut-off not confirmed (KDIGO 2024 excerpt cut off), so made general."
+  },
+  {
+   "id": "c04",
+   "where": "limitations",
+   "sentence": "in the UK an ACR of 3 to 70 mg/mmol is usually confirmed with a repeat early-morning sample,",
+   "basis": "excerpt",
+   "urls": [
+    "https://www.ukkidney.org/sites/default/files/education/Albuminuria%20quick%20reference.pdf"
+   ],
+   "note": "UK Kidney Association quick reference: ACR 3-70 repeat on first morning urine; 70+ no repeat."
+  },
+  {
+   "id": "c05",
+   "where": "limitations",
+   "sentence": "and chronic kidney disease is diagnosed only when the abnormality lasts for more than three months.",
+   "basis": "excerpt",
+   "urls": [
+    "https://www.kidney.org/what-s-new-about-new-ckd-guideline"
+   ],
+   "note": "kidney.org: CKD requires abnormalities present more than 3 months."
+  },
+  {
+   "id": "c06",
+   "where": "interpretation[0].finding",
+   "sentence": "ACR persistently 3 or more",
+   "basis": "excerpt",
+   "urls": [
+    "https://www.nice.org.uk/guidance/ng203/chapter/recommendations"
+   ],
+   "note": "NICE: regard a confirmed ACR of 3 mg/mmol or more as clinically important proteinuria (existing sentence, kept with record)."
+  }
+ ]
+}

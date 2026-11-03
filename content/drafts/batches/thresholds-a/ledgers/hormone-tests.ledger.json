@@ -1,0 +1,46 @@
+{
+ "id": "hormone-tests",
+ "pass1": [
+  {
+   "id": "c01",
+   "where": "measures[4].meaning",
+   "sentence": "NICE defines hyperuricaemia as a serum urate of 360 micromol/L or more.",
+   "basis": "excerpt",
+   "urls": [
+    "https://www.nice.org.uk/guidance/ng219/documents/evidence-review-11"
+   ],
+   "note": "Search summary of NICE NG219 evidence: hyperuricaemia defined as serum urate 360 micromol/L (6 mg/dL) or more. Barnsley/Bucks documents say the same."
+  },
+  {
+   "id": "c02",
+   "where": "measures[4].meaning",
+   "sentence": "Its default treatment target in gout is below 360 micromol/L, with below 300 micromol/L suggested for people with tophi, chronic gouty arthritis or ongoing flares;",
+   "basis": "excerpt",
+   "urls": [
+    "https://www.nice.org.uk/guidance/ng219/documents/evidence-review-11"
+   ],
+   "note": "NICE NG219: default <360; lower <300 for tophi, chronic gouty arthritis, flares despite <360."
+  },
+  {
+   "id": "c03",
+   "where": "measures[4].meaning",
+   "sentence": "the British Society for Rheumatology recommends below 300 micromol/L for everyone on urate-lowering treatment.",
+   "basis": "excerpt",
+   "urls": [
+    "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10809909/"
+   ],
+   "note": "Search summary of PMC10809909 (BSR vs NICE): BSR initial target below 300 for all. Attribution to that article is inferred from the title."
+  },
+  {
+   "id": "c04",
+   "where": "interpretation[7]",
+   "sentence": "Supports gout, but the level can be normal during an attack, so it is often repeated some weeks after the attack settles",
+   "basis": "excerpt",
+   "urls": [
+    "https://www.bucksformulary.nhs.uk/docs/Guideline_777FM.pdf",
+    "https://www.nhstaysidecdn.scot.nhs.uk/NHSTaysideWeb/idcplg?IdcService=GET_SECURE_FILE&Rendition=web&RevisionSelectionMethod=LatestReleased&noSaveAs=1&dDocName=prod_372195"
+   ],
+   "note": "Bucks: often normal during attack, repeat 4-6 weeks after; Tayside: 4 weeks."
+  }
+ ]
+}

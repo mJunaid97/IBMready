@@ -1,0 +1,57 @@
+{
+ "id": "kidney-function-tests",
+ "pass1": [
+  {
+   "id": "c01",
+   "where": "measures[1].meaning",
+   "sentence": "A value of 90 or above is normal only if there is no other sign of kidney damage;",
+   "basis": "excerpt",
+   "urls": [
+    "https://www.kidney.org/kidney-topics/stages-chronic-kidney-disease-ckd"
+   ],
+   "note": "kidney.org (KDIGO-based): G1 is eGFR 90 or above AND kidney damage; 90+ alone is not CKD."
+  },
+  {
+   "id": "c02",
+   "where": "measures[1].meaning",
+   "sentence": "a value below 60 for three months or more defines chronic kidney disease,",
+   "basis": "excerpt",
+   "urls": [
+    "https://www.kidney.org/kidney-topics/stages-chronic-kidney-disease-ckd",
+    "https://www.nice.org.uk/guidance/ng203"
+   ],
+   "note": "kidney.org: eGFR below 60 for 3 months or more; existing creatinine-egfr record cites NG203 (>90 days)."
+  },
+  {
+   "id": "c03",
+   "where": "measures[1].meaning",
+   "sentence": "and below 15 is kidney failure.",
+   "basis": "excerpt",
+   "urls": [
+    "https://www.nice.org.uk/guidance/ng203/chapter/recommendations"
+   ],
+   "note": "NICE search summary: an eGFR of less than 15 (category G5) is referred to as kidney failure."
+  },
+  {
+   "id": "c04",
+   "where": "interpretation[1].meaning",
+   "sentence": "Chronic kidney disease, graded from G3a to G5 by the value",
+   "basis": "excerpt",
+   "urls": [
+    "https://www.kidney.org/kidney-topics/stages-chronic-kidney-disease-ckd"
+   ],
+   "note": "kidney.org: G3a eGFR 45-59 ... G5 below 15. G3b/G4 limits not retrieved in pass 1 and not written."
+  },
+  {
+   "id": "c05",
+   "where": "limitations",
+   "sentence": "A substantial share of kidney function can be lost before creatinine leaves the normal range.",
+   "basis": "excerpt",
+   "urls": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC4921524/",
+    "https://www.ncbi.nlm.nih.gov/sites/books/NBK507821/"
+   ],
+   "note": "Reviews (ICU review, StatPearls) say up to about 50% can be lost; figure not UK-guideline, so wording kept qualitative."
+  }
+ ]
+}

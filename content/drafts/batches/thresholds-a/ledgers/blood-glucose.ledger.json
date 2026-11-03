@@ -1,0 +1,86 @@
+{
+ "id": "blood-glucose",
+ "pass1": [
+  {
+   "id": "c01",
+   "where": "measures[0].meaning",
+   "sentence": "After at least 8 hours without food.",
+   "basis": "excerpt",
+   "urls": [
+    "https://labtestsonline.org.uk/tests/glucose-tests"
+   ],
+   "note": "Lab Tests Online UK summary: nothing but water for at least 8 hours (8-10 hours cited). NIDDK says the same (US)."
+  },
+  {
+   "id": "c02",
+   "where": "measures[0].meaning",
+   "sentence": "A fasting level of 7.0 mmol/L or above indicates diabetes and, without symptoms, is confirmed by a second test on another day.",
+   "basis": "excerpt",
+   "urls": [
+    "https://www.diabetes.org.uk/for-professionals/improving-care/clinical-recommendations-for-professionals/diagnosis-ongoing-management-monitoring/new_diagnostic_criteria_for_diabetes"
+   ],
+   "note": "Diabetes UK page: fasting plasma glucose 7.0 or above; without symptoms at least one more result in the diabetic range on another day."
+  },
+  {
+   "id": "c03",
+   "where": "measures[1].meaning",
+   "sentence": "Any time of day; 11.1 mmol/L or above with symptoms suggests diabetes.",
+   "basis": "excerpt",
+   "urls": [
+    "https://www.diabetes.org.uk/for-professionals/improving-care/clinical-recommendations-for-professionals/diagnosis-ongoing-management-monitoring/new_diagnostic_criteria_for_diabetes"
+   ],
+   "note": "Diabetes UK: random venous plasma glucose 11.1 or above; symptomatic cases adequate on one result (trust documents)."
+  },
+  {
+   "id": "c04",
+   "where": "preparation",
+   "sentence": "Fasting tests need at least 8 hours without food, water allowed.",
+   "basis": "excerpt",
+   "urls": [
+    "https://labtestsonline.org.uk/tests/glucose-tests"
+   ],
+   "note": "Reworded from '8-12 hours': 12 hours was not retrieved; a UK hospital glucose tolerance protocol uses 11 hours (a different test)."
+  },
+  {
+   "id": "c05",
+   "where": "interpretation[0]",
+   "sentence": "Impaired fasting glucose on the World Health Organization definition, a form of prediabetes.",
+   "basis": "excerpt",
+   "urls": [
+    "https://www.nice.org.uk/guidance/ph38/chapter/Glossary"
+   ],
+   "note": "NICE PH38 glossary quoting WHO: IFG is fasting plasma glucose 6.1 to 6.9 mmol/l."
+  },
+  {
+   "id": "c06",
+   "where": "interpretation[0]",
+   "sentence": "NICE flags a fasting level of 5.5 to 6.9 mmol/L as high risk of type 2 diabetes, and US sources start at 5.6, so the lower limit depends on the guideline used",
+   "basis": "excerpt",
+   "urls": [
+    "https://www.nice.org.uk/guidance/ph38/chapter/Glossary",
+    "https://medlineplus.gov/ency/article/003482.htm"
+   ],
+   "note": "NICE glossary: high risk = fasting plasma glucose 5.5 to 6.9 or HbA1c 42-47. MedlinePlus: IFG 5.6 to 6.9 (search summary)."
+  },
+  {
+   "id": "c07",
+   "where": "interpretation[1]",
+   "sentence": "Diabetes if confirmed on a second test, or if symptoms are present",
+   "basis": "excerpt",
+   "urls": [
+    "https://www.diabetes.org.uk/for-professionals/improving-care/clinical-recommendations-for-professionals/diagnosis-ongoing-management-monitoring/new_diagnostic_criteria_for_diabetes"
+   ],
+   "note": "Diabetes UK confirmatory rule; symptomatic single-result rule from NHS trust documents (summary blends)."
+  },
+  {
+   "id": "c08",
+   "where": "interpretation[2]",
+   "sentence": "Below 4.0 mmol/L: hypoglycaemia in people with diabetes",
+   "basis": "excerpt",
+   "urls": [
+    "https://111.wales.nhs.uk/encyclopaedia/h/article/hypoglycaemia/"
+   ],
+   "note": "NHS 111 Wales: usually below 4 mmol/L; Leeds Community Healthcare and Guy's and St Thomas' say below 4; UCLH uses 3.6."
+  }
+ ]
+}
