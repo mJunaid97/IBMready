@@ -1,0 +1,602 @@
+{
+ "id": "atorvastatin",
+ "searchesUsed": 8,
+ "counts": {
+  "supported": 31,
+  "textbook": 2,
+  "unsupported": 28,
+  "wrong": 4,
+  "unsafe": 5,
+  "unchecked": 0
+ },
+ "claims": [
+  {
+   "id": "c01",
+   "sentence": "Atorvastatin is a cholesterol-lowering medicine called a statin.",
+   "classification": "supported",
+   "evidence": "NHS/MedlinePlus: statin, lowers cholesterol",
+   "url": "https://www.nhs.uk/medicines/atorvastatin/",
+   "action": "kept"
+  },
+  {
+   "id": "c02",
+   "sentence": "The NHS says it is used to treat high cholesterol.",
+   "classification": "supported",
+   "evidence": "Used to lower high cholesterol",
+   "url": "https://www.nhs.uk/medicines/atorvastatin/",
+   "action": "kept"
+  },
+  {
+   "id": "c03",
+   "sentence": "High cholesterol can cause problems with the heart and blood vessels, known as cardiovascular disease.",
+   "classification": "textbook",
+   "evidence": "Not retrieved this pass; plain undisputed fact",
+   "url": "https://www.nhs.uk/medicines/atorvastatin/",
+   "action": "kept"
+  },
+  {
+   "id": "c04",
+   "sentence": "Atorvastatin is also used to help prevent heart disease, including heart attacks and strokes.",
+   "classification": "supported",
+   "evidence": "MedlinePlus: prescribed to lower cholesterol and reduce heart attack and stroke risk; 'heart disease' wording not retrieved",
+   "url": "https://medlineplus.gov/druginfo/meds/a600045.html",
+   "action": "edited",
+   "newSentence": "Atorvastatin is also used to help prevent heart attacks and strokes."
+  },
+  {
+   "id": "c05",
+   "sentence": "It is only available with a prescription.",
+   "classification": "unsupported",
+   "evidence": "Search said prescription status not stated in results",
+   "url": "https://www.nhs.uk/medicines/atorvastatin/",
+   "action": "removed"
+  },
+  {
+   "id": "c06",
+   "sentence": "Most people with high cholesterol have no symptoms, so they may not feel any difference after starting it.",
+   "classification": "unsupported",
+   "evidence": "Not retrieved; only 'keep taking even if you feel well'",
+   "url": "https://www.nhs.uk/medicines/atorvastatin/how-and-when-to-take-atorvastatin/",
+   "action": "removed"
+  },
+  {
+   "id": "c07",
+   "sentence": "The NHS says most people take a statin every day for the rest of their life.",
+   "classification": "unsupported",
+   "evidence": "Lifelong use not confirmed; NHS text retrieved only said keep taking unless doctor says stop",
+   "url": "https://www.nhs.uk/medicines/atorvastatin/how-and-when-to-take-atorvastatin/",
+   "action": "removed"
+  },
+  {
+   "id": "c08",
+   "sentence": "If someone stops, their cholesterol levels may go up again.",
+   "classification": "supported",
+   "evidence": "If you stop, cholesterol levels may go up again",
+   "url": "https://www.nhs.uk/medicines/atorvastatin/how-and-when-to-take-atorvastatin/",
+   "action": "kept"
+  },
+  {
+   "id": "c09",
+   "sentence": "A doctor decides how much to prescribe, based on why it is needed, the cholesterol level and the other medicines a person takes.",
+   "classification": "supported",
+   "evidence": "Dose depends on why taken, cholesterol levels, other medicines",
+   "url": "https://www.nhs.uk/medicines/atorvastatin/how-and-when-to-take-atorvastatin/",
+   "action": "kept"
+  },
+  {
+   "id": "c10",
+   "sentence": "Atorvastatin works by stopping the liver from making cholesterol, which lowers the amount of cholesterol in the blood.",
+   "classification": "supported",
+   "evidence": "Stops the liver making cholesterol, lowering blood cholesterol",
+   "url": "https://medlineplus.gov/druginfo/meds/a600045.html",
+   "action": "kept"
+  },
+  {
+   "id": "c11",
+   "sentence": "Statins as a group also help the liver to remove LDL cholesterol that is already in the blood.",
+   "classification": "unsupported",
+   "evidence": "Statin mechanism of LDL clearance not found",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c12",
+   "sentence": "LDL is one of the types of cholesterol carried in the blood.",
+   "classification": "textbook",
+   "evidence": "Plain fact",
+   "url": "",
+   "action": "kept"
+  },
+  {
+   "id": "c13",
+   "sentence": "The NHS says cholesterol levels should fall within a few weeks if the medicine is taken regularly as prescribed.",
+   "classification": "supported",
+   "evidence": "NHS: levels should fall within 4 weeks if taken as prescribed; 'few weeks' tightened to source wording",
+   "url": "https://www.nhs.uk/medicines/atorvastatin/how-and-when-to-take-atorvastatin/",
+   "action": "edited",
+   "newSentence": "The NHS says cholesterol levels should fall within 4 weeks if the medicine is taken regularly as prescribed."
+  },
+  {
+   "id": "c14",
+   "sentence": "The NHS says routine liver blood tests are offered during the first year of treatment.",
+   "classification": "supported",
+   "evidence": "First 12 months: a couple of routine liver tests (page within atorvastatin NHS set; blended summary)",
+   "url": "https://www.nhs.uk/medicines/atorvastatin/",
+   "action": "edited",
+   "newSentence": "The NHS says routine liver blood tests are offered during the first 12 months of treatment."
+  },
+  {
+   "id": "c15",
+   "sentence": "The NHS says a person can take atorvastatin with or without food.",
+   "classification": "supported",
+   "evidence": "Can be taken with or without food",
+   "url": "https://www.nhs.uk/medicines/atorvastatin/how-and-when-to-take-atorvastatin/",
+   "action": "kept"
+  },
+  {
+   "id": "c16",
+   "sentence": "The NHS says taking two doses to make up for a missed one is not advised.",
+   "classification": "unsafe",
+   "evidence": "Implies dosing schedule advice; removed",
+   "url": "https://www.nhs.uk/medicines/atorvastatin/how-and-when-to-take-atorvastatin/",
+   "action": "removed"
+  },
+  {
+   "id": "c17",
+   "sentence": "The NHS says people should not reduce the amount they take without talking to a doctor first.",
+   "classification": "unsafe",
+   "evidence": "Dose-related instruction; removed",
+   "url": "https://www.nhs.uk/medicines/atorvastatin/how-and-when-to-take-atorvastatin/",
+   "action": "removed"
+  },
+  {
+   "id": "c18",
+   "sentence": "The NHS lists headache, dizziness, feeling sick, digestive problems, muscle aches and swollen joints, a blocked or runny nose or nosebleeds, and sleep problems as common side effects.",
+   "classification": "unsupported",
+   "evidence": "Retrieved: headache, dizziness, feeling sick, muscle aches with swollen joints, sleep problems; digestive and nose items not retrieved",
+   "url": "https://www.nhs.uk/medicines/atorvastatin/side-effects-of-atorvastatin/",
+   "action": "edited",
+   "newSentence": "The NHS lists headache, dizziness, feeling sick, muscle aches with swollen joints, and sleep problems among the common side effects."
+  },
+  {
+   "id": "c19",
+   "sentence": "Serious side effects are uncommon.",
+   "classification": "unsupported",
+   "evidence": "Retrieved wording: can sometimes cause serious side effects, most of them rare; 'uncommon' not exact",
+   "url": "https://www.nhs.uk/medicines/atorvastatin/side-effects-of-atorvastatin/",
+   "action": "edited",
+   "newSentence": "The NHS says atorvastatin can sometimes cause serious side effects, although most of them are rare."
+  },
+  {
+   "id": "c20",
+   "sentence": "They include inflammation of the liver or pancreas, and inflammation and damage to the muscles.",
+   "classification": "supported",
+   "evidence": "Liver and pancreas inflammation, muscle inflammation and damage",
+   "url": "https://www.nhs.uk/medicines/atorvastatin/side-effects-of-atorvastatin/",
+   "action": "kept"
+  },
+  {
+   "id": "c21",
+   "sentence": "Muscle problems can cause cramps, severe pain and weakness, and sometimes a high temperature and red or brown pee.",
+   "classification": "supported",
+   "evidence": "Cramps, severe pain, weakness, high temperature, red or brown urine",
+   "url": "https://www.nhs.uk/medicines/atorvastatin/side-effects-of-atorvastatin/",
+   "action": "kept"
+  },
+  {
+   "id": "c22",
+   "sentence": "The NHS says anyone taking atorvastatin who thinks they may be having serious side effects should call NHS 111.",
+   "classification": "unsupported",
+   "evidence": "NHS 111 advice not found in retrieved text; retrieved route was 'tell your doctor'",
+   "url": "https://www.nhs.uk/medicines/atorvastatin/side-effects-of-atorvastatin/",
+   "action": "removed"
+  },
+  {
+   "id": "c23",
+   "sentence": "Yellowing of the skin or eyes can point to liver problems, and severe stomach pain can point to inflammation of the pancreas.",
+   "classification": "supported",
+   "evidence": "Hepatitis can cause yellowing of skin and whites of eyes; pancreatitis severe stomach pain",
+   "url": "https://www.nhs.uk/medicines/atorvastatin/side-effects-of-atorvastatin/",
+   "action": "edited",
+   "newSentence": "Inflammation of the liver can cause yellowing of the skin and the whites of the eyes, and inflammation of the pancreas can cause severe stomach pain."
+  },
+  {
+   "id": "c24",
+   "sentence": "A serious allergic reaction is an emergency: sudden swelling of the lips, mouth, throat or tongue, or very fast or difficult breathing, needs a 999 call.",
+   "classification": "supported",
+   "evidence": "999 for sudden swelling of lips, mouth, throat or tongue, or difficulty breathing or swallowing; 'very fast' not retrieved",
+   "url": "https://www.nhs.uk/medicines/atorvastatin/side-effects-of-atorvastatin/",
+   "action": "edited",
+   "newSentence": "The NHS says to call 999 if the lips, mouth, throat or tongue suddenly swell, or if breathing or swallowing becomes difficult."
+  },
+  {
+   "id": "c25",
+   "sentence": "The NHS says not to drive to A&E in that situation.",
+   "classification": "supported",
+   "evidence": "Do not drive to A&E",
+   "url": "https://www.nhs.uk/medicines/atorvastatin/side-effects-of-atorvastatin/",
+   "action": "kept"
+  },
+  {
+   "id": "c26",
+   "sentence": "For other side effects, the NHS says to talk to a doctor first, who can check whether atorvastatin is the cause and may change the amount or the medicine.",
+   "classification": "unsupported",
+   "evidence": "Talk to doctor first to see if atorvastatin is the cause: supported; 'may change amount or medicine' not retrieved",
+   "url": "https://www.nhs.uk/medicines/atorvastatin/side-effects-of-atorvastatin/",
+   "action": "edited",
+   "newSentence": "For other suspected side effects, the NHS says to talk to a doctor first, who can check whether atorvastatin is the cause."
+  },
+  {
+   "id": "c27",
+   "sentence": "If a side effect happens with one statin, it may not happen with another.",
+   "classification": "unsupported",
+   "evidence": "Not retrieved",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c28",
+   "sentence": "Statins can interact with some other medicines, which can raise the risk of serious side effects such as muscle damage.",
+   "classification": "supported",
+   "evidence": "NHS 111 Wales: statins can react with other substances raising risk of serious side effects such as muscle damage",
+   "url": "https://111.wales.nhs.uk/cholesterolloweringmedicines,statins/",
+   "action": "edited",
+   "newSentence": "NHS 111 Wales says statins can react with some other substances, which can raise the risk of serious side effects such as muscle damage."
+  },
+  {
+   "id": "c29",
+   "sentence": "In that case a doctor may prescribe a different statin or a lower amount of the current one.",
+   "classification": "unsupported",
+   "evidence": "Not retrieved",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c30",
+   "sentence": "The NHS says to tell the doctor or pharmacist about any other medicines, herbal remedies, vitamins or supplements being taken.",
+   "classification": "unsupported",
+   "evidence": "Not retrieved",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c31",
+   "sentence": "The NHS says drinking a lot of grapefruit juice can affect how atorvastatin works.",
+   "classification": "supported",
+   "evidence": "Too much grapefruit juice can raise atorvastatin level and increase side effect risk",
+   "url": "https://www.nhs.uk/medicines/atorvastatin/how-and-when-to-take-atorvastatin/",
+   "action": "edited",
+   "newSentence": "The NHS says too much grapefruit juice can raise the level of atorvastatin in the blood and increase the risk of side effects."
+  },
+  {
+   "id": "c32",
+   "sentence": "The British Heart Foundation says grapefruit can be had occasionally with atorvastatin, but not in large quantities.",
+   "classification": "supported",
+   "evidence": "BHF: atorvastatin users can have grapefruit occasionally, not large amounts",
+   "url": "https://www.bhf.org.uk/informationsupport/treatments/statins",
+   "action": "kept"
+  },
+  {
+   "id": "c33",
+   "sentence": "The NHS says people can drink alcohol while taking atorvastatin, but regularly drinking a lot raises the chance of side effects such as liver problems.",
+   "classification": "unsupported",
+   "evidence": "Not retrieved; only 'regularly drinking a lot' as a caution",
+   "url": "https://www.nhs.uk/medicines/atorvastatin/who-can-and-cannot-take-atorvastatin/",
+   "action": "removed"
+  },
+  {
+   "id": "c34",
+   "sentence": "It suggests trying to limit alcohol while taking the medicine.",
+   "classification": "unsupported",
+   "evidence": "Not retrieved",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c35",
+   "sentence": "Regularly drinking large amounts of alcohol is also on the NHS list of reasons a person may not be suitable for atorvastatin.",
+   "classification": "supported",
+   "evidence": "Regularly drinking a lot of alcohol listed as a reason it may not suit",
+   "url": "https://www.nhs.uk/medicines/atorvastatin/who-can-and-cannot-take-atorvastatin/",
+   "action": "kept"
+  },
+  {
+   "id": "c36",
+   "sentence": "The NHS says most adults can take atorvastatin.",
+   "classification": "supported",
+   "evidence": "Most adults can take atorvastatin",
+   "url": "https://www.nhs.uk/medicines/atorvastatin/who-can-and-cannot-take-atorvastatin/",
+   "action": "kept"
+  },
+  {
+   "id": "c37",
+   "sentence": "It may not suit people who have ever had an allergic reaction to atorvastatin or another medicine, or who have liver or kidney problems.",
+   "classification": "wrong",
+   "evidence": "Source says allergic reaction to atorvastatin or another STATIN, not another medicine",
+   "url": "https://www.nhs.uk/medicines/atorvastatin/who-can-and-cannot-take-atorvastatin/",
+   "action": "edited",
+   "newSentence": "It may not suit people who have had an allergic reaction to atorvastatin or another statin, or who have liver or kidney problems."
+  },
+  {
+   "id": "c38",
+   "sentence": "An underactive thyroid, past muscle side effects from a statin and a history of a muscle disorder, including fibromyalgia, are also on the list.",
+   "classification": "unsupported",
+   "evidence": "Underactive thyroid, past statin muscle effects, myasthenia gravis retrieved; fibromyalgia not retrieved",
+   "url": "https://www.nhs.uk/medicines/atorvastatin/who-can-and-cannot-take-atorvastatin/",
+   "action": "edited",
+   "newSentence": "An underactive thyroid, past muscle side effects from a statin and muscle conditions such as myasthenia gravis are also on the list."
+  },
+  {
+   "id": "c39",
+   "sentence": "Sources differ on how firmly they advise against statins in liver disease, so this is a decision for the prescriber.",
+   "classification": "unsupported",
+   "evidence": "No retrieved source showed differing advice on liver disease",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c40",
+   "sentence": "Atorvastatin is not recommended in pregnancy because it can affect how a baby develops.",
+   "classification": "unsupported",
+   "evidence": "NHS advises against in pregnancy; reason (baby's development) not retrieved",
+   "url": "https://www.nhs.uk/medicines/atorvastatin/who-can-and-cannot-take-atorvastatin/",
+   "action": "edited",
+   "newSentence": "The NHS advises against atorvastatin in pregnancy."
+  },
+  {
+   "id": "c41",
+   "sentence": "The NHS advises stopping it some months before trying to conceive, so anyone planning a pregnancy needs to speak to a doctor or pharmacist.",
+   "classification": "supported",
+   "evidence": "Stop some months (3 months) before trying to conceive; instruction clause cut",
+   "url": "https://www.nhs.uk/medicines/atorvastatin/who-can-and-cannot-take-atorvastatin/",
+   "action": "edited",
+   "newSentence": "The NHS advises stopping it some months before trying to conceive."
+  },
+  {
+   "id": "c42",
+   "sentence": "On breastfeeding, the NHS says a person may be able to take it but should check with a pharmacist or doctor first.",
+   "classification": "supported",
+   "evidence": "May be able to take while breastfeeding; check with pharmacist or doctor",
+   "url": "https://www.nhs.uk/medicines/atorvastatin/who-can-and-cannot-take-atorvastatin/",
+   "action": "kept"
+  },
+  {
+   "id": "c43",
+   "sentence": "MedlinePlus, a US source, is stricter and says statins should not be taken while pregnant or breastfeeding.",
+   "classification": "wrong",
+   "evidence": "MedlinePlus not retrieved; the stricter wording came from NHS 111 Wales",
+   "url": "https://111.wales.nhs.uk/cholesterolloweringmedicines,statins/",
+   "action": "edited",
+   "newSentence": "NHS 111 Wales is stricter and says statins should not be taken by anyone who is pregnant or breastfeeding."
+  },
+  {
+   "id": "c44",
+   "sentence": "The NHS says drinking a lot of grapefruit juice can affect how atorvastatin works.",
+   "classification": "supported",
+   "evidence": "Too much grapefruit juice raises atorvastatin level",
+   "url": "https://www.nhs.uk/medicines/atorvastatin/how-and-when-to-take-atorvastatin/",
+   "action": "edited",
+   "newSentence": "The NHS says too much grapefruit juice can raise the level of atorvastatin in the blood."
+  },
+  {
+   "id": "c45",
+   "sentence": "The British Heart Foundation says grapefruit can be had occasionally, but not in large quantities.",
+   "classification": "supported",
+   "evidence": "BHF occasional but not large amounts",
+   "url": "https://www.bhf.org.uk/informationsupport/treatments/statins",
+   "action": "edited",
+   "newSentence": "The British Heart Foundation says grapefruit can be had occasionally, but not in large amounts."
+  },
+  {
+   "id": "c46",
+   "sentence": "The advice differs between statins, and the NHS says grapefruit juice should be avoided with simvastatin.",
+   "classification": "wrong",
+   "evidence": "BHF (not NHS) says simvastatin users avoid grapefruit; other statins not thought affected",
+   "url": "https://www.bhf.org.uk/informationsupport/treatments/statins",
+   "action": "edited",
+   "newSentence": "The British Heart Foundation says the advice differs between statins, and that people taking simvastatin are advised to avoid grapefruit altogether."
+  },
+  {
+   "id": "c47",
+   "sentence": "A pharmacist or doctor can say what suits an individual.",
+   "classification": "unsupported",
+   "evidence": "Generic, not from source",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c48",
+   "sentence": "The NHS says most people take a statin every day for the rest of their life.",
+   "classification": "unsupported",
+   "evidence": "Lifelong use not retrieved",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c49",
+   "sentence": "If it is stopped, cholesterol levels may rise again.",
+   "classification": "supported",
+   "evidence": "Cholesterol may go up again",
+   "url": "https://www.nhs.uk/medicines/atorvastatin/how-and-when-to-take-atorvastatin/",
+   "action": "kept"
+  },
+  {
+   "id": "c50",
+   "sentence": "The NHS says to talk to a doctor before stopping, even when side effects are suspected.",
+   "classification": "supported",
+   "evidence": "Talk to doctor first to see whether it is a side effect",
+   "url": "https://www.nhs.uk/medicines/atorvastatin/side-effects-of-atorvastatin/",
+   "action": "edited",
+   "newSentence": "The NHS says to talk to a doctor first if a side effect is suspected."
+  },
+  {
+   "id": "c51",
+   "sentence": "The doctor may be able to change the amount or the medicine instead.",
+   "classification": "unsupported",
+   "evidence": "Not retrieved",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c52",
+   "sentence": "The NHS lists muscle aches among the common side effects of atorvastatin.",
+   "classification": "supported",
+   "evidence": "Muscle aches with swollen joints among common side effects",
+   "url": "https://www.nhs.uk/medicines/atorvastatin/side-effects-of-atorvastatin/",
+   "action": "edited",
+   "newSentence": "The NHS lists muscle aches with swollen joints among the common side effects of atorvastatin."
+  },
+  {
+   "id": "c53",
+   "sentence": "More serious muscle inflammation and damage is uncommon.",
+   "classification": "unsupported",
+   "evidence": "Retrieved: serious side effects mostly rare, not specific to muscles",
+   "url": "https://www.nhs.uk/medicines/atorvastatin/side-effects-of-atorvastatin/",
+   "action": "edited",
+   "newSentence": "The NHS lists inflammation and damage to the muscles among the serious side effects, most of which are rare."
+  },
+  {
+   "id": "c54",
+   "sentence": "Cramps, severe pain or weakness, sometimes with a high temperature and red or brown pee, are reasons for the NHS to say call NHS 111.",
+   "classification": "unsafe",
+   "evidence": "NHS 111 route not found in retrieved text",
+   "url": "https://www.nhs.uk/medicines/atorvastatin/side-effects-of-atorvastatin/",
+   "action": "edited",
+   "newSentence": "Cramps, severe pain and weakness, sometimes with a high temperature and red or brown pee, are listed as signs of muscle inflammation and damage."
+  },
+  {
+   "id": "c55",
+   "sentence": "For milder aches, a talk with the GP is the usual first step.",
+   "classification": "unsupported",
+   "evidence": "GP as usual first step not retrieved",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c56",
+   "sentence": "The NHS says atorvastatin is not recommended in pregnancy because it can affect how a baby develops.",
+   "classification": "unsupported",
+   "evidence": "Advice against in pregnancy retrieved; reason not retrieved",
+   "url": "https://www.nhs.uk/medicines/atorvastatin/who-can-and-cannot-take-atorvastatin/",
+   "action": "edited",
+   "newSentence": "The NHS advises against atorvastatin in pregnancy."
+  },
+  {
+   "id": "c57",
+   "sentence": "It advises stopping it some months before trying to conceive.",
+   "classification": "supported",
+   "evidence": "Stop some months before trying to conceive",
+   "url": "https://www.nhs.uk/medicines/atorvastatin/who-can-and-cannot-take-atorvastatin/",
+   "action": "kept"
+  },
+  {
+   "id": "c58",
+   "sentence": "Anyone who is pregnant or planning a pregnancy needs to speak to a doctor or pharmacist.",
+   "classification": "unsafe",
+   "evidence": "Instructs individual",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c59",
+   "sentence": "Advice on breastfeeding differs between sources, so that too is best discussed with a pharmacist or doctor.",
+   "classification": "supported",
+   "evidence": "NHS vs NHS 111 Wales differ on breastfeeding",
+   "url": "https://www.nhs.uk/medicines/atorvastatin/who-can-and-cannot-take-atorvastatin/",
+   "action": "edited",
+   "newSentence": "On breastfeeding, the NHS says a person may be able to take it but should check with a pharmacist or doctor first, while NHS 111 Wales says statins should not be taken."
+  },
+  {
+   "id": "c60",
+   "sentence": "The NHS says to skip the missed dose and take the next one at the usual time.",
+   "classification": "wrong",
+   "evidence": "NHS: take as soon as remembered; skip only if already next day; also a dosing schedule",
+   "url": "https://www.nhs.uk/medicines/atorvastatin/how-and-when-to-take-atorvastatin/",
+   "action": "removed"
+  },
+  {
+   "id": "c61",
+   "sentence": "It says taking two doses to make up for a missed one is not advised.",
+   "classification": "unsafe",
+   "evidence": "Dosing advice",
+   "url": "https://www.nhs.uk/medicines/atorvastatin/how-and-when-to-take-atorvastatin/",
+   "action": "removed"
+  },
+  {
+   "id": "c62",
+   "sentence": "Some older leaflets give slightly different wording, so the current NHS page is the one to follow.",
+   "classification": "unsupported",
+   "evidence": "Not retrieved",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c63",
+   "sentence": "A pharmacist can answer questions about missed doses.",
+   "classification": "unsupported",
+   "evidence": "Not retrieved",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c64",
+   "sentence": "A statin, which is a cholesterol-lowering medicine.",
+   "classification": "supported",
+   "evidence": "Statin, cholesterol-lowering",
+   "url": "https://www.nhs.uk/medicines/atorvastatin/",
+   "action": "kept"
+  },
+  {
+   "id": "c65",
+   "sentence": "Prescription only.",
+   "classification": "unsupported",
+   "evidence": "Prescription status not confirmed",
+   "url": "https://www.nhs.uk/medicines/atorvastatin/",
+   "action": "removed"
+  },
+  {
+   "id": "c66",
+   "sentence": "High cholesterol, and helping to prevent heart attacks and strokes.",
+   "classification": "supported",
+   "evidence": "Lower cholesterol; reduce heart attack and stroke risk",
+   "url": "https://medlineplus.gov/druginfo/meds/a600045.html",
+   "action": "kept"
+  },
+  {
+   "id": "c67",
+   "sentence": "Most people take a statin for the rest of their life, the NHS says.",
+   "classification": "unsupported",
+   "evidence": "Lifelong use not retrieved",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c68",
+   "sentence": "Not recommended, because it can affect how a baby develops.",
+   "classification": "unsupported",
+   "evidence": "Reason not retrieved",
+   "url": "https://www.nhs.uk/medicines/atorvastatin/who-can-and-cannot-take-atorvastatin/",
+   "action": "edited",
+   "newSentence": "The NHS advises against it in pregnancy."
+  },
+  {
+   "id": "c69",
+   "sentence": "Sudden swelling of the lips, mouth, throat or tongue, or struggling to breathe: call 999.",
+   "classification": "supported",
+   "evidence": "999 for swelling of lips, mouth, throat, tongue or difficulty breathing or swallowing",
+   "url": "https://www.nhs.uk/medicines/atorvastatin/side-effects-of-atorvastatin/",
+   "action": "edited",
+   "newSentence": "Sudden swelling of the lips, mouth, throat or tongue, or difficulty breathing or swallowing: call 999."
+  },
+  {
+   "id": "c70",
+   "sentence": "The NHS advises against large amounts of grapefruit juice and regular heavy drinking.",
+   "classification": "unsupported",
+   "evidence": "NHS: too much grapefruit juice raises level; 'advises against' heavy drinking overstated",
+   "url": "https://www.nhs.uk/medicines/atorvastatin/how-and-when-to-take-atorvastatin/",
+   "action": "edited",
+   "newSentence": "Too much grapefruit juice can raise the level of atorvastatin in the blood, the NHS says."
+  }
+ ],
+ "notes": "Search summaries blended pages, so URL attribution within nhs.uk/medicines/atorvastatin/ pages is by topic (hub, how-and-when, side-effects, who-can) and not certain for the 12-month liver tests (cited to the hub page). Ledger sentences claiming lifelong use, prescription-only status, NHS 111 for side effects, fibromyalgia, and 'MedlinePlus says no statins in pregnancy' were not found and were cut; the NHS 111 Wales page supplied the stricter pregnancy/breastfeeding wording. BHF statins page said grapefruit/simvastatin. Two sentences counted as textbook (2 of 70). Existing medications.json entry was not inspected for contradictions (file is keyed differently); a human should check it does not say lifelong use or prescription-only unsupported. First-pass 'the NHS says to skip the missed dose' was wrong (NHS: take when remembered unless it is already the next day) and was cut as a dosing schedule. NHS 111 Wales host is not nhs.uk; compiler may give a build note."
+}

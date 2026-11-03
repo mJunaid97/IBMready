@@ -1,0 +1,459 @@
+{
+ "id": "omeprazole",
+ "searchesUsed": 8,
+ "counts": {
+  "supported": 42,
+  "textbook": 1,
+  "unsupported": 16,
+  "wrong": 0,
+  "unsafe": 1,
+  "unchecked": 0
+ },
+ "claims": [
+  {
+   "id": "c01",
+   "classification": "supported",
+   "evidence": "NHS: PPI that lowers stomach acid.",
+   "url": "https://www.nhs.uk/medicines/omeprazole/about-omeprazole/",
+   "action": "kept"
+  },
+  {
+   "id": "c02",
+   "classification": "supported",
+   "evidence": "NHS: used to treat or prevent stomach ulcers, heartburn, GORD.",
+   "url": "https://www.nhs.uk/medicines/omeprazole/about-omeprazole/",
+   "action": "kept"
+  },
+  {
+   "id": "c03",
+   "classification": "supported",
+   "evidence": "NHS: H. pylori infection treated with antibiotics.",
+   "url": "https://www.nhs.uk/medicines/omeprazole/about-omeprazole/",
+   "action": "kept"
+  },
+  {
+   "id": "c04",
+   "classification": "supported",
+   "evidence": "NHS: capsules, tablets and liquid; tablets and capsules swallowed whole with water or squash. Liquid omitted from draft.",
+   "url": "https://www.nhs.uk/medicines/omeprazole/how-and-when-to-take-omeprazole/",
+   "action": "edited",
+   "newSentence": "Omeprazole comes as capsules, tablets and a liquid, and the NHS says tablets and capsules are swallowed whole with water or squash."
+  },
+  {
+   "id": "c05",
+   "classification": "unsafe",
+   "evidence": "Gives a schedule (once a day, first thing). Retrieved text only says usually once a day in the morning; schedule wording removed.",
+   "url": "https://www.nhs.uk/medicines/omeprazole/how-and-when-to-take-omeprazole/",
+   "action": "removed"
+  },
+  {
+   "id": "c06",
+   "classification": "supported",
+   "evidence": "NHS how-and-when summary: tablets sold in pharmacies and supermarkets; capsules prescription only.",
+   "url": "https://www.nhs.uk/medicines/omeprazole/how-and-when-to-take-omeprazole/",
+   "action": "edited",
+   "newSentence": "The NHS says capsules are prescription only, while some tablets can be bought from pharmacies and supermarkets for adults."
+  },
+  {
+   "id": "c07",
+   "classification": "supported",
+   "evidence": "NHS: self-purchased tablets for short-term use; tell doctor if symptoms persist. 'after the short course' not in text.",
+   "url": "https://www.nhs.uk/medicines/omeprazole/how-and-when-to-take-omeprazole/",
+   "action": "edited",
+   "newSentence": "Tablets bought this way are meant for short-term use, and the NHS says to tell a doctor if symptoms persist."
+  },
+  {
+   "id": "c08",
+   "classification": "supported",
+   "evidence": "StatPearls: acts on the parietal cell's final step of acid production.",
+   "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK539786/",
+   "action": "kept"
+  },
+  {
+   "id": "c09",
+   "classification": "supported",
+   "evidence": "Pharmacology abstracts: active form binds the H+/K+ ATPase (gastric proton pump) in parietal cells.",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/2691315/",
+   "action": "kept"
+  },
+  {
+   "id": "c10",
+   "classification": "unsupported",
+   "evidence": "Attributed to StatPearls but StatPearls snippet did not say this; 'builds up inside cells' not in any retrieved text. PubMed abstract supports prodrug/activated in parietal cell/irreversible binding.",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/2691315/",
+   "action": "edited",
+   "newSentence": "A review of its pharmacology says omeprazole is a prodrug, changed to its active form only in the acid-making cells, where it binds irreversibly to the proton pump."
+  },
+  {
+   "id": "c11",
+   "classification": "unsupported",
+   "evidence": "'Lasts longer than the drug stays in blood' is inference; abstract says long-lasting inhibition of acid secretion.",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/2691315/",
+   "action": "edited",
+   "newSentence": "This gives an effective and long-lasting reduction in stomach acid."
+  },
+  {
+   "id": "c12",
+   "classification": "supported",
+   "evidence": "NHS: starts to work within 2 to 3 days, up to 4 weeks to work fully (draft said 'feel better').",
+   "url": "https://www.nhs.uk/medicines/omeprazole/about-omeprazole/",
+   "action": "edited",
+   "newSentence": "The NHS says omeprazole starts to work within 2 to 3 days, but it may take up to 4 weeks to work fully."
+  },
+  {
+   "id": "c13",
+   "classification": "unsupported",
+   "evidence": "No retrieved text says the acid effect builds up over the first days (StatPearls: inhibition within 1 hour, maximum in 2 hours).",
+   "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK539786/",
+   "action": "removed"
+  },
+  {
+   "id": "c14",
+   "classification": "supported",
+   "evidence": "NHS page title: a medicine to treat heartburn and indigestion; 'widely used' not stated.",
+   "url": "https://www.nhs.uk/medicines/omeprazole/",
+   "action": "edited",
+   "newSentence": "The NHS describes omeprazole as a medicine to treat heartburn and indigestion."
+  },
+  {
+   "id": "c15",
+   "classification": "supported",
+   "evidence": "NHS: common (more than 1 in 100): headache, nausea, diarrhoea, stomach pain, constipation. 'More wind' not retrieved; removed.",
+   "url": "https://www.nhs.uk/medicines/omeprazole/side-effects-of-omeprazole/",
+   "action": "edited",
+   "newSentence": "The NHS lists headache, stomach pain, feeling or being sick, constipation and diarrhoea as common side effects."
+  },
+  {
+   "id": "c16",
+   "classification": "supported",
+   "evidence": "NHS: can make you dizzy, sleepy or blurred vision; do not drive, cycle or use machinery or tools until better. Reworded as attributed advice.",
+   "url": "https://www.nhs.uk/medicines/omeprazole/side-effects-of-omeprazole/",
+   "action": "edited",
+   "newSentence": "The NHS says omeprazole can also cause dizziness, sleepiness or blurred vision, and advises against driving, cycling or using machinery or tools until feeling better."
+  },
+  {
+   "id": "c17",
+   "classification": "supported",
+   "evidence": "NHS: common effects are more than 1 in 100; anaphylaxis rare. Follows directly.",
+   "url": "https://www.nhs.uk/medicines/omeprazole/side-effects-of-omeprazole/",
+   "action": "kept"
+  },
+  {
+   "id": "c18",
+   "classification": "unsupported",
+   "evidence": "Draft 'very low B12' and 'weakened bones' not in retrieved text; retrieved: B12 absorption may be affected, fractures after more than a year, rare anaphylaxis.",
+   "url": "https://www.nhs.uk/medicines/omeprazole/side-effects-of-omeprazole/",
+   "action": "edited",
+   "newSentence": "The NHS says omeprazole may affect how the body absorbs vitamin B12, particularly with long use, that taking it for more than a year may raise the chance of bone fractures, and that a serious allergic reaction (anaphylaxis) is possible in rare cases."
+  },
+  {
+   "id": "c19",
+   "classification": "supported",
+   "evidence": "NHS: magnesium in the blood may fall with longer use.",
+   "url": "https://www.nhs.uk/medicines/omeprazole/side-effects-of-omeprazole/",
+   "action": "kept"
+  },
+  {
+   "id": "c20",
+   "classification": "textbook",
+   "evidence": "Plain fact: anaphylaxis is an emergency and UK emergency number is 999 (NHS text said emergency, urgent help; 999 not explicit).",
+   "url": "https://www.nhs.uk/medicines/omeprazole/side-effects-of-omeprazole/",
+   "action": "kept"
+  },
+  {
+   "id": "c21",
+   "classification": "unsupported",
+   "evidence": "Retrieved text does not say omeprazole masks stomach cancer symptoms; NHS only lists symptoms to mention to a doctor.",
+   "url": "https://www.nhs.uk/medicines/omeprazole/common-questions-about-omeprazole/",
+   "action": "removed"
+  },
+  {
+   "id": "c22",
+   "classification": "supported",
+   "evidence": "NHS: speak to your doctor about these symptoms which can be signs of stomach cancer.",
+   "url": "https://www.nhs.uk/medicines/omeprazole/common-questions-about-omeprazole/",
+   "action": "edited",
+   "newSentence": "The NHS says to speak to a doctor about trouble swallowing, feeling or being sick, feeling full very quickly when eating, or losing weight without trying, because these can be signs of stomach cancer."
+  },
+  {
+   "id": "c23",
+   "classification": "unsupported",
+   "evidence": "'GP appointment is the usual route' not in retrieved text for this context; doctor named in previous sentence.",
+   "url": "https://www.nhs.uk/medicines/omeprazole/common-questions-about-omeprazole/",
+   "action": "removed"
+  },
+  {
+   "id": "c24",
+   "classification": "supported",
+   "evidence": "NHS: tell a doctor or pharmacist about other medicines before taking.",
+   "url": "https://www.nhs.uk/medicines/omeprazole/how-and-when-to-take-omeprazole/",
+   "action": "kept"
+  },
+  {
+   "id": "c25",
+   "classification": "supported",
+   "evidence": "SPS and Drug Safety Update: avoid omeprazole/esomeprazole with clopidogrel (MHRA says advice not extended to other PPIs).",
+   "url": "https://www.gov.uk/drug-safety-update/clopidogrel-and-proton-pump-inhibitors-interaction-updated-advice",
+   "action": "kept"
+  },
+  {
+   "id": "c26",
+   "classification": "unsupported",
+   "evidence": "'Study in healthy volunteers' per product information was not retrieved. SPS text: CYP2C19 activates clopidogrel; omeprazole/esomeprazole inhibit it, reducing activated clopidogrel.",
+   "url": "https://sps.nhs.uk/articles/using-clopidogrel-with-proton-pump-inhibitors-ppis/",
+   "action": "edited",
+   "newSentence": "The Specialist Pharmacy Service, part of the NHS, explains that clopidogrel is activated by an enzyme called CYP2C19, and that omeprazole and esomeprazole inhibit this enzyme, which can lower the level of activated clopidogrel."
+  },
+  {
+   "id": "c27",
+   "classification": "supported",
+   "evidence": "Source is SPS (NHS Specialist Pharmacy Service), not an NHS patient page: 'use lansoprazole, pantoprazole or rabeprazole in preference'. Attribution fixed. Note gov.uk says evidence does not support extending the advice beyond omeprazole/esomeprazole.",
+   "url": "https://sps.nhs.uk/articles/using-clopidogrel-with-proton-pump-inhibitors-ppis/",
+   "action": "edited",
+   "newSentence": "The Specialist Pharmacy Service says lansoprazole, pantoprazole or rabeprazole are preferred to omeprazole for people taking clopidogrel."
+  },
+  {
+   "id": "c28",
+   "classification": "unsupported",
+   "evidence": "StatPearls not shown to say this; warfarin/diazepam/phenytoin came from other sources I cannot attribute exactly; citalopram interaction not found in any retrieved text. Cut.",
+   "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK539786/",
+   "action": "removed"
+  },
+  {
+   "id": "c29",
+   "classification": "supported",
+   "evidence": "NHS: alcohol does not interfere with how omeprazole works.",
+   "url": "https://www.nhs.uk/medicines/omeprazole/common-questions-about-omeprazole/",
+   "action": "kept"
+  },
+  {
+   "id": "c30",
+   "classification": "supported",
+   "evidence": "NHS: alcohol makes stomach produce more acid, can irritate lining and worsen symptoms.",
+   "url": "https://www.nhs.uk/medicines/omeprazole/common-questions-about-omeprazole/",
+   "action": "kept"
+  },
+  {
+   "id": "c31",
+   "classification": "supported",
+   "evidence": "NHS: avoid alcohol where possible.",
+   "url": "https://www.nhs.uk/medicines/omeprazole/common-questions-about-omeprazole/",
+   "action": "kept"
+  },
+  {
+   "id": "c32",
+   "classification": "unsupported",
+   "evidence": "'Suitable for most adults and children' not in retrieved text.",
+   "url": "https://www.nhs.uk/medicines/omeprazole/",
+   "action": "removed"
+  },
+  {
+   "id": "c33",
+   "classification": "supported",
+   "evidence": "NHS: people with prior reaction to a PPI, kidney or liver condition or osteoporosis should get advice first (rest of list not captured).",
+   "url": "https://www.nhs.uk/medicines/omeprazole/how-and-when-to-take-omeprazole/",
+   "action": "edited",
+   "newSentence": "The NHS lists kidney conditions, liver conditions, osteoporosis, and a past allergic reaction or serious side effect from omeprazole or another proton pump inhibitor as reasons to check with a doctor or pharmacist before taking it."
+  },
+  {
+   "id": "c34",
+   "classification": "supported",
+   "evidence": "NHS: after more than 1 year doctor regularly checks health to see if you should carry on.",
+   "url": "https://www.nhs.uk/medicines/omeprazole/common-questions-about-omeprazole/",
+   "action": "kept"
+  },
+  {
+   "id": "c35",
+   "classification": "unsupported",
+   "evidence": "SmPC monitoring beyond a year not retrieved (emc SmPC not returned).",
+   "url": "https://www.nhs.uk/medicines/omeprazole/common-questions-about-omeprazole/",
+   "action": "removed"
+  },
+  {
+   "id": "c36",
+   "classification": "supported",
+   "evidence": "NHS: usually can take in pregnancy, check with pharmacist or doctor first.",
+   "url": "https://www.nhs.uk/medicines/omeprazole/pregnancy-breastfeeding-and-fertility-while-taking-omeprazole/",
+   "action": "kept"
+  },
+  {
+   "id": "c37",
+   "classification": "unsupported",
+   "evidence": "NHS suggests managing indigestion without medicine first; 'omeprazole recommended if that does not work' not retrieved.",
+   "url": "https://www.nhs.uk/medicines/omeprazole/pregnancy-breastfeeding-and-fertility-while-taking-omeprazole/",
+   "action": "edited",
+   "newSentence": "It suggests trying to ease indigestion without medicine first."
+  },
+  {
+   "id": "c38",
+   "classification": "supported",
+   "evidence": "NHS: passes into milk in small amounts; OK if doctor or health visitor says baby is healthy.",
+   "url": "https://www.nhs.uk/medicines/omeprazole/pregnancy-breastfeeding-and-fertility-while-taking-omeprazole/",
+   "action": "edited",
+   "newSentence": "On breastfeeding, the NHS says omeprazole passes into breast milk in small amounts, and that it is OK to take while breastfeeding if a doctor or health visitor says the baby is healthy."
+  },
+  {
+   "id": "c39",
+   "classification": "supported",
+   "evidence": "NHS: no clear evidence omeprazole reduces fertility in men or women.",
+   "url": "https://www.nhs.uk/medicines/omeprazole/pregnancy-breastfeeding-and-fertility-while-taking-omeprazole/",
+   "action": "kept"
+  },
+  {
+   "id": "c40",
+   "classification": "supported",
+   "evidence": "FAQ1 s1 as section 1.",
+   "url": "https://www.nhs.uk/medicines/omeprazole/how-and-when-to-take-omeprazole/",
+   "action": "edited",
+   "newSentence": "The NHS says some omeprazole tablets can be bought from pharmacies and supermarkets for adults, while capsules are prescription only."
+  },
+  {
+   "id": "c41",
+   "classification": "unsupported",
+   "evidence": "Draft 'after the short course' not in source; reworded to 'if symptoms persist'.",
+   "url": "https://www.nhs.uk/medicines/omeprazole/how-and-when-to-take-omeprazole/",
+   "action": "edited",
+   "newSentence": "Tablets bought this way are meant for short-term use. The NHS says to tell a doctor if symptoms persist."
+  },
+  {
+   "id": "c42",
+   "classification": "supported",
+   "evidence": "NHS: 2-3 days, up to 4 weeks.",
+   "url": "https://www.nhs.uk/medicines/omeprazole/about-omeprazole/",
+   "action": "edited",
+   "newSentence": "The NHS says omeprazole starts to work within 2 to 3 days, but it may take up to 4 weeks to work fully."
+  },
+  {
+   "id": "c43",
+   "classification": "unsupported",
+   "evidence": "Draft 'not to take longer than stated course without checking with a doctor' not retrieved; replaced with supported short-use and persist wording.",
+   "url": "https://www.nhs.uk/medicines/omeprazole/how-and-when-to-take-omeprazole/",
+   "action": "edited",
+   "newSentence": "Tablets bought from a pharmacy are meant for short-term use, and the NHS says to tell a doctor if symptoms persist."
+  },
+  {
+   "id": "c44",
+   "classification": "supported",
+   "evidence": "NHS alcohol Q&A, as section 4.",
+   "url": "https://www.nhs.uk/medicines/omeprazole/common-questions-about-omeprazole/",
+   "action": "kept"
+  },
+  {
+   "id": "c45",
+   "classification": "supported",
+   "evidence": "NHS alcohol Q&A, as section 4.",
+   "url": "https://www.nhs.uk/medicines/omeprazole/common-questions-about-omeprazole/",
+   "action": "kept"
+  },
+  {
+   "id": "c46",
+   "classification": "supported",
+   "evidence": "NHS alcohol Q&A, as section 4.",
+   "url": "https://www.nhs.uk/medicines/omeprazole/common-questions-about-omeprazole/",
+   "action": "kept"
+  },
+  {
+   "id": "c47",
+   "classification": "supported",
+   "evidence": "NHS alcohol Q&A, as section 4.",
+   "url": "https://www.nhs.uk/medicines/omeprazole/common-questions-about-omeprazole/",
+   "action": "kept"
+  },
+  {
+   "id": "c48",
+   "classification": "unsupported",
+   "evidence": "'low vitamin B12' overstated; NHS says absorption may be affected, esp. long use. Bone fractures and gut infections supported.",
+   "url": "https://www.nhs.uk/medicines/omeprazole/common-questions-about-omeprazole/",
+   "action": "edited",
+   "newSentence": "The NHS says taking omeprazole for more than a year may raise the chance of bone fractures and gut infections."
+  },
+  {
+   "id": "c49",
+   "classification": "supported",
+   "evidence": "NHS: doctor regularly checks after 1 year.",
+   "url": "https://www.nhs.uk/medicines/omeprazole/common-questions-about-omeprazole/",
+   "action": "kept"
+  },
+  {
+   "id": "c50",
+   "classification": "supported",
+   "evidence": "NHS: magnesium may fall with longer use.",
+   "url": "https://www.nhs.uk/medicines/omeprazole/common-questions-about-omeprazole/",
+   "action": "kept"
+  },
+  {
+   "id": "c51",
+   "classification": "unsupported",
+   "evidence": "'Omeprazole can make stomach cancer symptoms harder to notice' not in retrieved text.",
+   "url": "https://www.nhs.uk/medicines/omeprazole/common-questions-about-omeprazole/",
+   "action": "removed"
+  },
+  {
+   "id": "c52",
+   "classification": "supported",
+   "evidence": "NHS lists symptoms to mention to doctor.",
+   "url": "https://www.nhs.uk/medicines/omeprazole/common-questions-about-omeprazole/",
+   "action": "edited",
+   "newSentence": "The NHS says to speak to a doctor about trouble swallowing, feeling or being sick, feeling full very quickly when eating, or losing weight without trying, because these can be signs of stomach cancer."
+  },
+  {
+   "id": "c53",
+   "classification": "unsupported",
+   "evidence": "'GP appointment is the usual route' not in retrieved text.",
+   "url": "https://www.nhs.uk/medicines/omeprazole/common-questions-about-omeprazole/",
+   "action": "removed"
+  },
+  {
+   "id": "c54",
+   "classification": "supported",
+   "evidence": "PPI (NHS).",
+   "url": "https://www.nhs.uk/medicines/omeprazole/about-omeprazole/",
+   "action": "kept"
+  },
+  {
+   "id": "c55",
+   "classification": "supported",
+   "evidence": "Uses (NHS).",
+   "url": "https://www.nhs.uk/medicines/omeprazole/about-omeprazole/",
+   "action": "kept"
+  },
+  {
+   "id": "c56",
+   "classification": "supported",
+   "evidence": "NHS: capsules, tablets, liquid; draft 'swallowed whole' not true of liquid.",
+   "url": "https://www.nhs.uk/medicines/omeprazole/about-omeprazole/",
+   "action": "edited",
+   "newSentence": "Capsules, tablets and liquid"
+  },
+  {
+   "id": "c57",
+   "classification": "supported",
+   "evidence": "NHS: capsules prescription only; some tablets from pharmacies and supermarkets.",
+   "url": "https://www.nhs.uk/medicines/omeprazole/how-and-when-to-take-omeprazole/",
+   "action": "kept"
+  },
+  {
+   "id": "c58",
+   "classification": "supported",
+   "evidence": "NHS: 2-3 days, up to 4 weeks.",
+   "url": "https://www.nhs.uk/medicines/omeprazole/about-omeprazole/",
+   "action": "edited",
+   "newSentence": "Starts to work within days; full effect can take up to four weeks"
+  },
+  {
+   "id": "c59",
+   "classification": "supported",
+   "evidence": "NHS: after more than a year a doctor regularly checks.",
+   "url": "https://www.nhs.uk/medicines/omeprazole/common-questions-about-omeprazole/",
+   "action": "kept"
+  },
+  {
+   "id": "c60",
+   "classification": "supported",
+   "evidence": "NHS: alcohol does not interfere but raises acid; avoid if possible.",
+   "url": "https://www.nhs.uk/medicines/omeprazole/common-questions-about-omeprazole/",
+   "action": "kept"
+  }
+ ],
+ "notes": "Search summaries blend pages, so URL attribution within nhs.uk/medicines/omeprazole/ is by page topic, not verified per sentence. Kidney/liver/osteoporosis list cited to how-and-when page (who-can-and-cannot page was not returned; list incomplete in retrieved text). Alcohol, long-term, cancer-symptom sentences cited to common-questions page (it was returned for those queries). Clopidogrel alternatives are SPS (NHS Specialist Pharmacy Service) guidance, not an NHS patient page; gov.uk DSU says evidence does not support extending the avoid advice beyond omeprazole/esomeprazole. Pregnancy wording: one search summary said 'safe' but that was the summariser; final text uses only 'usually can be taken; check first'. Capsules prescription-only came from one NHS-page summary; another summary said all types available on prescription (compatible). Textbook: one (999 for anaphylaxis). Removed: schedule wording, steady claims about masking cancer symptoms, SmPC monitoring, StatPearls interaction list, citalopram. Search cap of 8 reached."
+}
