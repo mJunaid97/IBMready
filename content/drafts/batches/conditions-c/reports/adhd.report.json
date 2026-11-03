@@ -1,0 +1,1098 @@
+{
+ "id": "adhd",
+ "searchesUsed": 10,
+ "counts": {
+  "supported": 49,
+  "textbook": 4,
+  "unsupported": 61,
+  "wrong": 0,
+  "unsafe": 0,
+  "unchecked": 0
+ },
+ "claims": [
+  {
+   "id": "c001",
+   "sentence": "ADHD is a neurodevelopmental condition that affects attention, activity levels and impulse control.",
+   "where": "definition",
+   "classification": "textbook",
+   "evidence": "Plain definition; retrieved text described ADHD as affecting focus with inattentive, restless, impulsive traits but did not return the word neurodevelopmental.",
+   "url": "https://www.nhs.uk/conditions/adhd-adults/",
+   "action": "kept"
+  },
+  {
+   "id": "c002",
+   "sentence": "ADHD is a neurodevelopmental condition that affects attention, activity levels and impulse control.",
+   "where": "overview",
+   "classification": "textbook",
+   "evidence": "Plain definition; retrieved text described ADHD as affecting focus with inattentive, restless, impulsive traits but did not return the word neurodevelopmental.",
+   "url": "https://www.nhs.uk/conditions/adhd-adults/",
+   "action": "kept"
+  },
+  {
+   "id": "c003",
+   "sentence": "Its symptoms usually start before the age of 12.",
+   "where": "overview",
+   "classification": "supported",
+   "evidence": "Search 1: NHS says symptoms usually start before age 12.",
+   "url": "https://www.nhs.uk/conditions/adhd-adults/",
+   "action": "kept"
+  },
+  {
+   "id": "c004",
+   "sentence": "Management can include lifestyle changes, support at home, school or work, talking therapies and medicines.",
+   "where": "overview",
+   "classification": "supported",
+   "evidence": "NHS adults: managed through lifestyle changes, workplace adjustments, medicines; CBT/mindfulness may be recommended. \"Support at home, school\" not confirmed.",
+   "url": "https://www.nhs.uk/conditions/adhd-adults/",
+   "action": "edited",
+   "newSentence": "The NHS says adult ADHD is managed through lifestyle changes, workplace adjustments or medicines, and talking therapies such as CBT or mindfulness may be recommended."
+  },
+  {
+   "id": "c005",
+   "sentence": "Girls are thought to be recognised less often than boys, and many adults are diagnosed later in life.",
+   "where": "overview",
+   "classification": "unsupported",
+   "evidence": "NICE: under-recognised in girls and women; nothing returned on adults being diagnosed later in life.",
+   "url": "https://www.nice.org.uk/guidance/ng87/resources/attention-deficit-hyperactivity-disorder-diagnosis-and-management-pdf-1837699732933",
+   "action": "edited",
+   "newSentence": "NICE says ADHD is thought to be under-recognised in girls and women."
+  },
+  {
+   "id": "c006",
+   "sentence": "ADHD tends to run in families.",
+   "where": "causes[0]",
+   "classification": "supported",
+   "evidence": "Search 7: NHS says ADHD often runs in families.",
+   "url": "https://www.nhs.uk/conditions/adhd-adults/",
+   "action": "edited",
+   "newSentence": "ADHD often runs in families, and genetic differences may be behind it."
+  },
+  {
+   "id": "c007",
+   "sentence": "The NHS names low birth weight, being born prematurely and epilepsy as other possible links.",
+   "where": "causes[1]",
+   "classification": "supported",
+   "evidence": "Searches 1, 7: NHS lists low birth weight, premature birth, epilepsy as possible links.",
+   "url": "https://www.nhs.uk/conditions/adhd-adults/",
+   "action": "edited",
+   "newSentence": "The NHS lists being born prematurely, low birth weight and epilepsy as other possible links."
+  },
+  {
+   "id": "c008",
+   "sentence": "The exact cause is not known.",
+   "where": "causes[2]",
+   "classification": "supported",
+   "evidence": "Search 7: exact cause unknown.",
+   "url": "https://www.nhs.uk/conditions/adhd-adults/",
+   "action": "kept"
+  },
+  {
+   "id": "c009",
+   "sentence": "A close family member with ADHD",
+   "where": "riskFactors[0]",
+   "classification": "supported",
+   "evidence": "NHS possible links (searches 1, 7).",
+   "url": "https://www.nhs.uk/conditions/adhd-adults/",
+   "action": "kept"
+  },
+  {
+   "id": "c010",
+   "sentence": "Low birth weight",
+   "where": "riskFactors[1]",
+   "classification": "supported",
+   "evidence": "NHS possible links (searches 1, 7).",
+   "url": "https://www.nhs.uk/conditions/adhd-adults/",
+   "action": "kept"
+  },
+  {
+   "id": "c011",
+   "sentence": "Being born prematurely",
+   "where": "riskFactors[2]",
+   "classification": "supported",
+   "evidence": "NHS possible links (searches 1, 7).",
+   "url": "https://www.nhs.uk/conditions/adhd-adults/",
+   "action": "kept"
+  },
+  {
+   "id": "c012",
+   "sentence": "Epilepsy",
+   "where": "riskFactors[3]",
+   "classification": "supported",
+   "evidence": "NHS possible links (searches 1, 7).",
+   "url": "https://www.nhs.uk/conditions/adhd-adults/",
+   "action": "kept"
+  },
+  {
+   "id": "c013",
+   "sentence": "Being easily distracted or forgetful and often losing things",
+   "where": "signs[0]",
+   "classification": "unsupported",
+   "evidence": "Search 1: NHS inform lists easily distracted, losing/misplacing things; \"forgetful\" not returned.",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/adhd/adhd-in-adults/",
+   "action": "edited",
+   "newSentence": "Getting easily distracted"
+  },
+  {
+   "id": "c014",
+   "sentence": "Difficulty organising time",
+   "where": "signs[1]",
+   "classification": "unsupported",
+   "evidence": "Organising time not returned in my searches.",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/adhd/adhd-in-adults/",
+   "action": "removed"
+  },
+  {
+   "id": "c015",
+   "sentence": "Restlessness or a lot of energy, and talking a lot or interrupting conversations",
+   "where": "signs[2]",
+   "classification": "unsupported",
+   "evidence": "Only \"restless and impulsive traits\" returned; talking a lot/interrupting not.",
+   "url": "https://www.nhs.uk/conditions/adhd-adults/",
+   "action": "edited",
+   "newSentence": "Restlessness and impulsive behaviour"
+  },
+  {
+   "id": "c016",
+   "sentence": "Making quick decisions without weighing the consequences",
+   "where": "signs[3]",
+   "classification": "unsupported",
+   "evidence": "Quick decisions without weighing consequences not returned.",
+   "url": "https://www.nhs.uk/conditions/adhd-adults/",
+   "action": "removed"
+  },
+  {
+   "id": "c017",
+   "sentence": "Symptoms that affect studies, work or relationships",
+   "where": "complications[0]",
+   "classification": "supported",
+   "evidence": "Search 9: NHS advises GP if symptoms affect studies, work or relationships.",
+   "url": "https://www.nhs.uk/conditions/adhd-adults/",
+   "action": "kept"
+  },
+  {
+   "id": "c018",
+   "sentence": "Problems at work, which research has linked with inattentive symptoms",
+   "where": "complications[1]",
+   "classification": "unsupported",
+   "evidence": "Ledger-cited PMC8295111 was not returned by my searches.",
+   "url": "https://www.nhs.uk/conditions/adhd-adults/",
+   "action": "removed"
+  },
+  {
+   "id": "c019",
+   "sentence": "Depression or anxiety alongside ADHD",
+   "where": "complications[2]",
+   "classification": "supported",
+   "evidence": "Searches 3, 6, 9: depression/anxiety co-occur.",
+   "url": "https://www.rcpsych.ac.uk/docs/default-source/improving-care/better-mh-policy/college-reports/cr235-adhd-in-adults---good-practice-guidance.pdf",
+   "action": "kept"
+  },
+  {
+   "id": "c020",
+   "sentence": "There is no single test for ADHD.",
+   "where": "diagnosis",
+   "classification": "supported",
+   "evidence": "Search 9: no single test.",
+   "url": "https://www.nhs.uk/conditions/adhd-adults/",
+   "action": "kept"
+  },
+  {
+   "id": "c021",
+   "sentence": "A qualified healthcare professional with training and expertise in ADHD, such as a paediatrician, psychiatrist or clinical psychologist, makes the diagnosis.",
+   "where": "diagnosis",
+   "classification": "unsupported",
+   "evidence": "Search 2 (NICE): specialist psychiatrist, paediatrician or other appropriately qualified professional; \"clinical psychologist\" and \"training and expertise\" wording not returned.",
+   "url": "https://www.nice.org.uk/guidance/ng87/resources/attention-deficit-hyperactivity-disorder-diagnosis-and-management-pdf-1837699732933",
+   "action": "edited",
+   "newSentence": "The NICE guideline says the diagnosis must be made by a specialist psychiatrist, paediatrician or other appropriately qualified healthcare professional."
+  },
+  {
+   "id": "c022",
+   "sentence": "The assessment usually involves a developmental history and questionnaires, and other conditions such as autism, Tourette's syndrome or anxiety are considered too.",
+   "where": "diagnosis",
+   "classification": "unsupported",
+   "evidence": "Search 9: GP considers other conditions (autism, Tourette's, anxiety); \"developmental history and questionnaires\" not supported (RCPsych says not solely on questionnaires).",
+   "url": "https://www.nhs.uk/conditions/adhd-adults/",
+   "action": "edited",
+   "newSentence": "The GP asks about the symptoms and how they affect life, and may consider other conditions that could be causing them, such as autism, Tourette's syndrome or anxiety."
+  },
+  {
+   "id": "c023",
+   "sentence": "For adults, a diagnosis cannot be confirmed unless symptoms have been present since childhood.",
+   "where": "diagnosis",
+   "classification": "supported",
+   "evidence": "Searches 1, 6: NHS Wales and RCPsych: symptoms present since childhood.",
+   "url": "https://111.wales.nhs.uk/encyclopaedia/a/article/adhd",
+   "action": "kept"
+  },
+  {
+   "id": "c024",
+   "sentence": "NICE says a diagnosis should not be made solely on the basis of rating scale or observational data.",
+   "where": "diagnosis",
+   "classification": "supported",
+   "evidence": "Search 4: NICE NG87 direct wording.",
+   "url": "https://www.nice.org.uk/guidance/ng87/chapter/recommendations",
+   "action": "kept"
+  },
+  {
+   "id": "c025",
+   "sentence": "ADHD can be treated using medicine or therapy, and a combination of both is often the best approach.",
+   "where": "treatment",
+   "classification": "unsupported",
+   "evidence": "Search 5: NHS says medicine often first treatment with CBT also helpful; \"combination often best\" not returned.",
+   "url": "https://www.nhs.uk/conditions/adhd-adults/",
+   "action": "removed"
+  },
+  {
+   "id": "c026",
+   "sentence": "Support can include lifestyle changes, support at home and school, and adjustments at work.",
+   "where": "treatment",
+   "classification": "unsupported",
+   "evidence": "\"Support at home and school\" not returned.",
+   "url": "https://www.nhs.uk/conditions/adhd-adults/",
+   "action": "edited",
+   "newSentence": "Support, adjustments and treatment focus on reducing the impact of symptoms."
+  },
+  {
+   "id": "c027",
+   "sentence": "NICE stresses environmental modifications to reduce the impact of symptoms, alongside a structured supportive psychological intervention focused on ADHD.",
+   "where": "treatment",
+   "classification": "unsupported",
+   "evidence": "Search 4: NICE context supports environmental modifications; \"structured supportive psychological intervention\" not returned.",
+   "url": "https://www.nice.org.uk/guidance/ng87/chapter/Context",
+   "action": "edited",
+   "newSentence": "NICE notes that symptoms and impairment may be reduced through environmental modifications, such as a modified school curriculum or choice of employment."
+  },
+  {
+   "id": "c028",
+   "sentence": "Psychological options include psychoeducation, mindfulness and cognitive behavioural therapy (CBT).",
+   "where": "treatment",
+   "classification": "supported",
+   "evidence": "Mindfulness/CBT: NHS (search 4); psychoeducation: European consensus statement (search 3).",
+   "url": "https://www.nhs.uk/conditions/adhd-adults/",
+   "action": "edited",
+   "newSentence": "... talking therapies such as CBT or mindfulness may be recommended."
+  },
+  {
+   "id": "c029",
+   "sentence": "Medicines must be started and monitored by an ADHD specialist, and more than one may need to be tried.",
+   "where": "treatment",
+   "classification": "unsupported",
+   "evidence": "Specialist start/monitor supported (search 4); \"more than one may need to be tried\" not returned.",
+   "url": "https://www.nhs.uk/conditions/adhd-adults/",
+   "action": "edited",
+   "newSentence": "ADHD medicines must be started and monitored by an ADHD specialist."
+  },
+  {
+   "id": "c030",
+   "sentence": "Not everyone needs or wants to take medicine for ADHD.",
+   "where": "treatment",
+   "classification": "unsupported",
+   "evidence": "Not returned in my searches.",
+   "url": "https://www.nhs.uk/conditions/adhd-adults/",
+   "action": "removed"
+  },
+  {
+   "id": "c031",
+   "sentence": "The NHS pages reviewed describe no way of preventing ADHD; the focus is on recognising it and offering support and treatment.",
+   "where": "prevention",
+   "classification": "unsupported",
+   "evidence": "Describes an absence; search 10 found no source on prevention.",
+   "url": "https://www.nhs.uk/conditions/adhd-adults/",
+   "action": "edited",
+   "newSentence": "The exact cause of ADHD is not known, and genetic differences are thought to play a major part. Support, adjustments and treatment focus on reducing the impact of symptoms."
+  },
+  {
+   "id": "c032",
+   "sentence": "If ADHD symptoms are affecting studies, work or relationships, the NHS advises a GP appointment to find out what support is available.",
+   "where": "seekCare",
+   "classification": "supported",
+   "evidence": "Search 9: NHS wording.",
+   "url": "https://www.nhs.uk/conditions/adhd-adults/",
+   "action": "kept"
+  },
+  {
+   "id": "c033",
+   "sentence": "For a child, a worried parent or carer can speak to a teacher or book a GP appointment, and the GP can refer for a specialist assessment if needed.",
+   "where": "seekCare",
+   "classification": "unsupported",
+   "evidence": "Teacher/parent route not returned; NICE: primary care refers to specialist (children).",
+   "url": "https://www.nice.org.uk/guidance/ng87/resources/attention-deficit-hyperactivity-disorder-diagnosis-and-management-pdf-1837699732933",
+   "action": "edited",
+   "newSentence": "For a child, NICE says problems that persist with at least moderate impairment are referred by primary care to a specialist such as a child psychiatrist or paediatrician."
+  },
+  {
+   "id": "c034",
+   "sentence": "If someone is in immediate danger, call 999.",
+   "where": "seekCare",
+   "classification": "supported",
+   "evidence": "Lead evidence: 999 / A&E.",
+   "url": "https://www.nhs.uk/mental-health/feelings-symptoms-behaviours/behaviours/help-for-suicidal-thoughts/",
+   "action": "edited",
+   "newSentence": "If someone is in immediate danger, call 999 or go to A&E."
+  },
+  {
+   "id": "c035",
+   "sentence": "For urgent mental health help, NHS 111 has a mental health option, and Samaritans can be called free on 116 123 at any time.",
+   "where": "seekCare",
+   "classification": "supported",
+   "evidence": "Lead evidence: NHS 111 24 hours, mental health option; Samaritans 116 123 free 24 hours.",
+   "url": "https://www.nhs.uk/mental-health/feelings-symptoms-behaviours/behaviours/help-for-suicidal-thoughts/",
+   "action": "edited",
+   "newSentence": "Split into NHS 111 and Samaritans sentences."
+  },
+  {
+   "id": "c036",
+   "sentence": "ADHD stands for attention deficit hyperactivity disorder.",
+   "where": "sec0",
+   "classification": "supported",
+   "evidence": "Expansion of acronym used in all NHS page titles.",
+   "url": "https://www.nhs.uk/conditions/adhd-adults/",
+   "action": "kept"
+  },
+  {
+   "id": "c037",
+   "sentence": "The NHS describes it as a neurodevelopmental condition that affects attention, activity levels and impulse control.",
+   "where": "sec0",
+   "classification": "textbook",
+   "evidence": "Plain definition; retrieved text described ADHD as affecting focus with inattentive, restless, impulsive traits but did not return the word neurodevelopmental.",
+   "url": "https://www.nhs.uk/conditions/adhd-adults/",
+   "action": "kept"
+  },
+  {
+   "id": "c038",
+   "sentence": "Its symptoms usually start before the age of 12.",
+   "where": "sec0",
+   "classification": "supported",
+   "evidence": "Search 1: NHS says symptoms usually start before age 12.",
+   "url": "https://www.nhs.uk/conditions/adhd-adults/",
+   "action": "kept"
+  },
+  {
+   "id": "c039",
+   "sentence": "Other sources describe ADHD as lifelong, and many adults are diagnosed later in life.",
+   "where": "sec0",
+   "classification": "unsupported",
+   "evidence": "Lifelong supported only by MedlinePlus support guide; \"many adults diagnosed later\" not returned.",
+   "url": "https://magazine.medlineplus.gov/article/adhd-support-toolkit",
+   "action": "edited",
+   "newSentence": "A MedlinePlus support guide describes ADHD as a lifelong journey ..."
+  },
+  {
+   "id": "c040",
+   "sentence": "Many young children are easily distracted, impulsive and full of energy, particularly under the age of 5, and the NHS says this does not mean they have ADHD.",
+   "where": "sec0",
+   "classification": "unsupported",
+   "evidence": "Under-5 NHS statement not returned (only unnamed local guidance on typical development 2-5).",
+   "url": "https://www.nhs.uk/conditions/adhd-adults/",
+   "action": "removed"
+  },
+  {
+   "id": "c041",
+   "sentence": "Tiredness, anxiety or stress can cause similar signs.",
+   "where": "sec0",
+   "classification": "unsupported",
+   "evidence": "Under-5 NHS statement not returned (only unnamed local guidance on typical development 2-5).",
+   "url": "https://www.nhs.uk/conditions/adhd-adults/",
+   "action": "removed"
+  },
+  {
+   "id": "c042",
+   "sentence": "The NHS says ADHD runs in families.",
+   "where": "sec0",
+   "classification": "supported",
+   "evidence": "Search 7: NHS says ADHD often runs in families.",
+   "url": "https://www.nhs.uk/conditions/adhd-adults/",
+   "action": "edited",
+   "newSentence": "ADHD often runs in families, and genetic differences may be behind it."
+  },
+  {
+   "id": "c043",
+   "sentence": "Other possible links include low birth weight, being born prematurely and epilepsy.",
+   "where": "sec0",
+   "classification": "supported",
+   "evidence": "Searches 1, 7: NHS lists low birth weight, premature birth, epilepsy as possible links.",
+   "url": "https://www.nhs.uk/conditions/adhd-adults/",
+   "action": "edited",
+   "newSentence": "The NHS lists being born prematurely, low birth weight and epilepsy as other possible links."
+  },
+  {
+   "id": "c044",
+   "sentence": "The exact cause is not known.",
+   "where": "sec0",
+   "classification": "supported",
+   "evidence": "Search 7: exact cause unknown.",
+   "url": "https://www.nhs.uk/conditions/adhd-adults/",
+   "action": "kept"
+  },
+  {
+   "id": "c045",
+   "sentence": "Girls are thought to be recognised less often than boys, possibly because girls more commonly have inattentive symptoms, which can be harder to recognise.",
+   "where": "sec0",
+   "classification": "supported",
+   "evidence": "Search 2: NICE under-recognised in girls/women; girls more often inattentive.",
+   "url": "https://www.nice.org.uk/guidance/ng87/resources/attention-deficit-hyperactivity-disorder-diagnosis-and-management-pdf-1837699732933",
+   "action": "edited",
+   "newSentence": "NICE says ADHD is thought to be under-recognised in girls and women ... Girls more often show inattentive symptoms, which can be harder to recognise."
+  },
+  {
+   "id": "c046",
+   "sentence": "The NHS groups ADHD symptoms into two kinds: inattentiveness, and hyperactivity and impulsiveness.",
+   "where": "sec1",
+   "classification": "supported",
+   "evidence": "Search 1: inattentive and hyperactive-impulsive types.",
+   "url": "https://www.nhs.uk/conditions/adhd-adults/",
+   "action": "edited",
+   "newSentence": "ADHD symptoms are usually grouped into two kinds: ..."
+  },
+  {
+   "id": "c047",
+   "sentence": "In adults, signs of inattentiveness include being easily distracted or forgetful, struggling to organise time and often losing things.",
+   "where": "sec1",
+   "classification": "unsupported",
+   "evidence": "Forgetful and organising time not returned.",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/adhd/adhd-in-adults/",
+   "action": "edited",
+   "newSentence": "NHS inform lists practical signs of inattentiveness such as getting easily distracted, losing or misplacing things and starting many tasks without finishing them."
+  },
+  {
+   "id": "c048",
+   "sentence": "Signs of hyperactivity and impulsiveness include having a lot of energy or feeling restless, talking a lot or interrupting conversations, and making quick decisions without weighing the consequences.",
+   "where": "sec1",
+   "classification": "unsupported",
+   "evidence": "Only restless and impulsive traits returned.",
+   "url": "https://www.nhs.uk/conditions/adhd-adults/",
+   "action": "edited",
+   "newSentence": "The NHS describes adult ADHD as affecting focus, with inattentive, restless and impulsive traits."
+  },
+  {
+   "id": "c049",
+   "sentence": "In children and young people, ADHD also affects attention, activity levels and impulse control.",
+   "where": "sec1",
+   "classification": "unsupported",
+   "evidence": "Not returned (sentence 52 is the author-flagged inference).",
+   "url": "https://www.nhs.uk/conditions/adhd-adults/",
+   "action": "removed"
+  },
+  {
+   "id": "c050",
+   "sentence": "ADHD affects people in different ways.",
+   "where": "sec1",
+   "classification": "supported",
+   "evidence": "RCPsych resource covers challenges and strengths; NHS: affects people differently (retained).",
+   "url": "https://www.rcpsych.ac.uk/news-and-features/latest-news/detail/2024/03/06/adhd-resource-highly-commended-at-bma-awards",
+   "action": "edited",
+   "newSentence": "ADHD affects people in different ways, and ... information covers both the challenges and the strengths."
+  },
+  {
+   "id": "c051",
+   "sentence": "Some adults also find managing emotions difficult, which one NHS service describes as a common difficulty.",
+   "where": "sec1",
+   "classification": "unsupported",
+   "evidence": "Not returned (sentence 52 is the author-flagged inference).",
+   "url": "https://www.nhs.uk/conditions/adhd-adults/",
+   "action": "removed"
+  },
+  {
+   "id": "c052",
+   "sentence": "Research has found that inattentive symptoms in particular are strongly linked with problems at work.",
+   "where": "sec1",
+   "classification": "unsupported",
+   "evidence": "Not returned (sentence 52 is the author-flagged inference).",
+   "url": "https://www.nhs.uk/conditions/adhd-adults/",
+   "action": "removed"
+  },
+  {
+   "id": "c053",
+   "sentence": "Symptoms that cause real difficulty in daily life are what lead to an assessment.",
+   "where": "sec1",
+   "classification": "unsupported",
+   "evidence": "Not returned (sentence 52 is the author-flagged inference).",
+   "url": "https://www.nhs.uk/conditions/adhd-adults/",
+   "action": "removed"
+  },
+  {
+   "id": "c054",
+   "sentence": "There is no single test for ADHD.",
+   "where": "sec2",
+   "classification": "supported",
+   "evidence": "Search 9: no single test.",
+   "url": "https://www.nhs.uk/conditions/adhd-adults/",
+   "action": "kept"
+  },
+  {
+   "id": "c055",
+   "sentence": "A qualified healthcare professional with training and expertise in ADHD makes the diagnosis, such as a paediatrician, psychiatrist or clinical psychologist.",
+   "where": "sec2",
+   "classification": "unsupported",
+   "evidence": "Search 2 (NICE): specialist psychiatrist, paediatrician or other appropriately qualified professional; \"clinical psychologist\" and \"training and expertise\" wording not returned.",
+   "url": "https://www.nice.org.uk/guidance/ng87/resources/attention-deficit-hyperactivity-disorder-diagnosis-and-management-pdf-1837699732933",
+   "action": "edited",
+   "newSentence": "The NICE guideline says the diagnosis must be made by a specialist psychiatrist, paediatrician or other appropriately qualified healthcare professional."
+  },
+  {
+   "id": "c056",
+   "sentence": "For children, the NHS says the assessment is with one or more ADHD specialists, such as a paediatrician or a child and adolescent psychiatrist.",
+   "where": "sec2",
+   "classification": "unsupported",
+   "evidence": "Child assessment by ADHD specialists: NICE says secondary care specialists; wording \"one or more\" not returned.",
+   "url": "https://www.nice.org.uk/guidance/ng87/resources/attention-deficit-hyperactivity-disorder-diagnosis-and-management-pdf-1837699732933",
+   "action": "edited",
+   "newSentence": "Rewritten to NICE referral wording."
+  },
+  {
+   "id": "c057",
+   "sentence": "A GP cannot formally diagnose ADHD, but can discuss concerns and refer for a specialist assessment if necessary.",
+   "where": "sec2",
+   "classification": "unsupported",
+   "evidence": "For adults not returned; NICE: primary care should not make initial diagnosis in children.",
+   "url": "https://www.nice.org.uk/guidance/ng87/resources/attention-deficit-hyperactivity-disorder-diagnosis-and-management-pdf-1837699732933",
+   "action": "edited",
+   "newSentence": "For children, NICE says primary care practitioners should not make the initial diagnosis or start medication."
+  },
+  {
+   "id": "c058",
+   "sentence": "The assessment usually involves a developmental history and questionnaires.",
+   "where": "sec2",
+   "classification": "unsupported",
+   "evidence": "Developmental history and questionnaires not returned as the NHS assessment.",
+   "url": "https://www.nhs.uk/conditions/adhd-adults/",
+   "action": "removed"
+  },
+  {
+   "id": "c059",
+   "sentence": "Other conditions such as autism, Tourette's syndrome or anxiety are considered too.",
+   "where": "sec2",
+   "classification": "supported",
+   "evidence": "Search 9: GP may consider other conditions.",
+   "url": "https://www.nhs.uk/conditions/adhd-adults/",
+   "action": "edited",
+   "newSentence": "Folded into GP-asks sentence."
+  },
+  {
+   "id": "c060",
+   "sentence": "For adults, the assessment looks at different areas of life, including work and education, and family and friends.",
+   "where": "sec2",
+   "classification": "unsupported",
+   "evidence": "Areas of life: RCPsych criteria span home, work, education, relationships; NHS wording not returned.",
+   "url": "https://www.rcpsych.ac.uk/docs/default-source/improving-care/better-mh-policy/college-reports/cr235-adhd-in-adults---good-practice-guidance.pdf",
+   "action": "removed"
+  },
+  {
+   "id": "c061",
+   "sentence": "An adult diagnosis cannot be confirmed unless symptoms have been present since childhood.",
+   "where": "sec2",
+   "classification": "supported",
+   "evidence": "Searches 1, 6: NHS Wales and RCPsych: symptoms present since childhood.",
+   "url": "https://111.wales.nhs.uk/encyclopaedia/a/article/adhd",
+   "action": "kept"
+  },
+  {
+   "id": "c062",
+   "sentence": "NICE says a diagnosis should not be made solely on the basis of rating scale or observational data.",
+   "where": "sec2",
+   "classification": "supported",
+   "evidence": "Search 4: NICE NG87 direct wording.",
+   "url": "https://www.nice.org.uk/guidance/ng87/chapter/recommendations",
+   "action": "kept"
+  },
+  {
+   "id": "c063",
+   "sentence": "NICE guidance also says the positive and negative impacts of a diagnosis, including stigma and labelling, should be discussed.",
+   "where": "sec2",
+   "classification": "supported",
+   "evidence": "Search 4: NICE stigma and labelling.",
+   "url": "https://www.nice.org.uk/guidance/ng87/chapter/recommendations",
+   "action": "edited",
+   "newSentence": "NICE also says clinicians should discuss the positive and negative impacts of receiving a diagnosis, such as stigma and labelling."
+  },
+  {
+   "id": "c064",
+   "sentence": "ADHD can be treated using medicine or therapy, and a combination of both is often the best approach.",
+   "where": "sec3",
+   "classification": "unsupported",
+   "evidence": "Not returned.",
+   "url": "https://www.nhs.uk/conditions/adhd-adults/",
+   "action": "removed"
+  },
+  {
+   "id": "c065",
+   "sentence": "The NHS says not everyone needs or wants to take medicine to help manage their ADHD symptoms.",
+   "where": "sec3",
+   "classification": "unsupported",
+   "evidence": "Not returned in my searches.",
+   "url": "https://www.nhs.uk/conditions/adhd-adults/",
+   "action": "removed"
+  },
+  {
+   "id": "c066",
+   "sentence": "Management can also include lifestyle changes, support at home and school, and adjustments at work.",
+   "where": "sec3",
+   "classification": "unsupported",
+   "evidence": "Support at home/school not returned.",
+   "url": "https://www.nhs.uk/conditions/adhd-adults/",
+   "action": "edited",
+   "newSentence": "managed through lifestyle changes, workplace adjustments or medicines"
+  },
+  {
+   "id": "c067",
+   "sentence": "NICE stresses the importance of environmental modifications to reduce the impact of ADHD symptoms, alongside a structured supportive psychological intervention focused on ADHD.",
+   "where": "sec3",
+   "classification": "unsupported",
+   "evidence": "See sentence 26.",
+   "url": "https://www.nice.org.uk/guidance/ng87/chapter/Context",
+   "action": "edited",
+   "newSentence": "NICE notes ... environmental modifications ..."
+  },
+  {
+   "id": "c068",
+   "sentence": "Psychoeducation helps a person understand ADHD and its effects, which can make it easier to cope.",
+   "where": "sec3",
+   "classification": "unsupported",
+   "evidence": "Only European consensus (multimodal incl psychoeducation) returned; plain explanation of psychoeducation not.",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2942810/",
+   "action": "edited",
+   "newSentence": "A European consensus statement on adult ADHD advises multimodal treatment made up of psychoeducation, pharmacotherapy, coaching and/or CBT ..."
+  },
+  {
+   "id": "c069",
+   "sentence": "Other psychological options include mindfulness and cognitive behavioural therapy (CBT).",
+   "where": "sec3",
+   "classification": "supported",
+   "evidence": "Mindfulness/CBT: NHS (search 4); psychoeducation: European consensus statement (search 3).",
+   "url": "https://www.nhs.uk/conditions/adhd-adults/",
+   "action": "edited",
+   "newSentence": "... talking therapies such as CBT or mindfulness may be recommended."
+  },
+  {
+   "id": "c070",
+   "sentence": "CBT is a structured programme that helps people identify unhelpful thought patterns and develop techniques for overcoming them.",
+   "where": "sec3",
+   "classification": "unsupported",
+   "evidence": "CBT definition not returned.",
+   "url": "https://www.nhs.uk/conditions/adhd-adults/",
+   "action": "removed"
+  },
+  {
+   "id": "c071",
+   "sentence": "ADHD medicines must be started and monitored by an ADHD specialist.",
+   "where": "sec3",
+   "classification": "supported",
+   "evidence": "Search 4.",
+   "url": "https://www.nhs.uk/conditions/adhd-adults/",
+   "action": "kept"
+  },
+  {
+   "id": "c072",
+   "sentence": "A person may need to try more than one medicine to find out what works.",
+   "where": "sec3",
+   "classification": "unsupported",
+   "evidence": "Not returned in my searches (sentence 77 cited to an unnamed leaflet).",
+   "url": "https://www.nhs.uk/conditions/adhd-adults/",
+   "action": "removed"
+  },
+  {
+   "id": "c073",
+   "sentence": "A GP can take over prescribing only under a shared care agreement between the GP and the specialist.",
+   "where": "sec3",
+   "classification": "supported",
+   "evidence": "Search 9: GP may take over under shared care; it is the GP's decision.",
+   "url": "https://adhduk.co.uk/diagnosis-pathways/",
+   "action": "edited",
+   "newSentence": "The GP may later take over prescribing under a shared care agreement, although this is the GP's decision and not every practice does it."
+  },
+  {
+   "id": "c074",
+   "sentence": "For children, local NHS services describe medicine as something considered only when other support is already in place, and say it is not right for everyone.",
+   "where": "sec3",
+   "classification": "unsupported",
+   "evidence": "Not returned in my searches (sentence 77 cited to an unnamed leaflet).",
+   "url": "https://www.nhs.uk/conditions/adhd-adults/",
+   "action": "removed"
+  },
+  {
+   "id": "c075",
+   "sentence": "Research on whether adding CBT to medicine brings extra benefit has given mixed results.",
+   "where": "sec3",
+   "classification": "unsupported",
+   "evidence": "Not returned in my searches (sentence 77 cited to an unnamed leaflet).",
+   "url": "https://www.nhs.uk/conditions/adhd-adults/",
+   "action": "removed"
+  },
+  {
+   "id": "c076",
+   "sentence": "ADHD affects people in different ways, and described traits can include strengths as well as difficulties.",
+   "where": "sec4",
+   "classification": "supported",
+   "evidence": "RCPsych resource covers challenges and strengths; NHS: affects people differently (retained).",
+   "url": "https://www.rcpsych.ac.uk/news-and-features/latest-news/detail/2024/03/06/adhd-resource-highly-commended-at-bma-awards",
+   "action": "edited",
+   "newSentence": "ADHD affects people in different ways, and ... information covers both the challenges and the strengths."
+  },
+  {
+   "id": "c077",
+   "sentence": "An NHS leaflet lists positive traits that some people with ADHD describe, such as being creative, enthusiastic and able to improvise.",
+   "where": "sec4",
+   "classification": "unsupported",
+   "evidence": "Positive traits: unnamed NHS leaflet not attributable; 2023 thematic analysis returned instead.",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10551976/",
+   "action": "edited",
+   "newSentence": "A 2023 thematic analysis of adults' positive experiences found that being creative, having novel ideas ... were commonly described as strengths."
+  },
+  {
+   "id": "c078",
+   "sentence": "Support after a diagnosis can include tips for managing symptoms, such as using planners, regular exercise, mindfulness and diet.",
+   "where": "sec4",
+   "classification": "unsupported",
+   "evidence": "Not returned in my searches (sentence 77 cited to an unnamed leaflet).",
+   "url": "https://www.nhs.uk/conditions/adhd-adults/",
+   "action": "removed"
+  },
+  {
+   "id": "c079",
+   "sentence": "The NHS says ADHD can be managed through lifestyle changes, workplace adjustments or medicines.",
+   "where": "sec4",
+   "classification": "supported",
+   "evidence": "NHS adults.",
+   "url": "https://www.nhs.uk/conditions/adhd-adults/",
+   "action": "kept"
+  },
+  {
+   "id": "c080",
+   "sentence": "Psychoeducation courses can help people understand ADHD and its effects.",
+   "where": "sec4",
+   "classification": "unsupported",
+   "evidence": "Not returned in my searches (sentence 77 cited to an unnamed leaflet).",
+   "url": "https://www.nhs.uk/conditions/adhd-adults/",
+   "action": "removed"
+  },
+  {
+   "id": "c081",
+   "sentence": "Charities such as ADHD UK and the ADHD Foundation offer information and support.",
+   "where": "sec4",
+   "classification": "unsupported",
+   "evidence": "ADHD UK supported (search 9); ADHD Foundation separate attribution not.",
+   "url": "https://adhduk.co.uk/diagnosis-pathways/",
+   "action": "edited",
+   "newSentence": "ADHD UK provides information and support for anyone affected by ADHD, including a self-screening tool and support groups."
+  },
+  {
+   "id": "c082",
+   "sentence": "For children and young people, the NHS also lists Young Minds.",
+   "where": "sec4",
+   "classification": "unsupported",
+   "evidence": "Not returned in my searches (sentence 77 cited to an unnamed leaflet).",
+   "url": "https://www.nhs.uk/conditions/adhd-adults/",
+   "action": "removed"
+  },
+  {
+   "id": "c083",
+   "sentence": "Other sources describe ADHD as a lifelong condition, so support and treatment aim to help with symptoms and daily life over time.",
+   "where": "sec4",
+   "classification": "unsupported",
+   "evidence": "See 38.",
+   "url": "https://magazine.medlineplus.gov/article/adhd-support-toolkit",
+   "action": "edited",
+   "newSentence": "A MedlinePlus support guide describes ADHD as a lifelong journey."
+  },
+  {
+   "id": "c084",
+   "sentence": "If ADHD symptoms are affecting studies, work or relationships, the NHS advises making a GP appointment to find out what support is available.",
+   "where": "sec5",
+   "classification": "supported",
+   "evidence": "Search 9: NHS wording.",
+   "url": "https://www.nhs.uk/conditions/adhd-adults/",
+   "action": "kept"
+  },
+  {
+   "id": "c085",
+   "sentence": "For a child, a parent or carer who is worried can speak to a teacher or book a GP appointment, especially if they think the child needs additional support.",
+   "where": "sec5",
+   "classification": "unsupported",
+   "evidence": "Teacher/parent route not returned; NICE: primary care refers to specialist (children).",
+   "url": "https://www.nice.org.uk/guidance/ng87/resources/attention-deficit-hyperactivity-disorder-diagnosis-and-management-pdf-1837699732933",
+   "action": "edited",
+   "newSentence": "For a child, NICE says problems that persist with at least moderate impairment are referred by primary care to a specialist such as a child psychiatrist or paediatrician."
+  },
+  {
+   "id": "c086",
+   "sentence": "The GP can discuss concerns and refer for a specialist assessment if necessary.",
+   "where": "sec5",
+   "classification": "unsupported",
+   "evidence": "GP refer: supported for children via NICE; adults via ADHD UK mention of referral.",
+   "url": "https://adhduk.co.uk/diagnosis-pathways/",
+   "action": "edited",
+   "newSentence": "ADHD UK says that if a GP declines a referral, options include asking for a second opinion ..."
+  },
+  {
+   "id": "c087",
+   "sentence": "Depression and anxiety can occur alongside ADHD, and people with ADHD often seek treatment for them, sometimes through NHS Talking Therapies.",
+   "where": "sec5",
+   "classification": "unsupported",
+   "evidence": "Depression/anxiety co-occurrence supported; NHS Talking Therapies not returned.",
+   "url": "https://www.rcpsych.ac.uk/docs/default-source/improving-care/better-mh-policy/college-reports/cr235-adhd-in-adults---good-practice-guidance.pdf",
+   "action": "edited",
+   "newSentence": "Depression and anxiety are among the conditions that can occur alongside ADHD, and people with ADHD often seek treatment for them."
+  },
+  {
+   "id": "c088",
+   "sentence": "If someone is in immediate danger, call 999.",
+   "where": "sec5",
+   "classification": "supported",
+   "evidence": "Lead evidence: 999 / A&E.",
+   "url": "https://www.nhs.uk/mental-health/feelings-symptoms-behaviours/behaviours/help-for-suicidal-thoughts/",
+   "action": "edited",
+   "newSentence": "If someone is in immediate danger, call 999 or go to A&E."
+  },
+  {
+   "id": "c089",
+   "sentence": "For urgent mental health help, NHS 111 has a mental health option, which can be reached by phone or online.",
+   "where": "sec5",
+   "classification": "unsupported",
+   "evidence": "Lead evidence has no phone/online detail.",
+   "url": "https://www.nhs.uk/mental-health/feelings-symptoms-behaviours/behaviours/help-for-suicidal-thoughts/",
+   "action": "edited",
+   "newSentence": "For urgent mental health help, NHS 111 is available 24 hours, and you can choose the mental health option."
+  },
+  {
+   "id": "c090",
+   "sentence": "The Samaritans can be called free on 116 123 at any time, whether or not someone has ADHD.",
+   "where": "sec5",
+   "classification": "supported",
+   "evidence": "Lead evidence: Samaritans 116 123 free 24 hours.",
+   "url": "https://www.nhs.uk/mental-health/feelings-symptoms-behaviours/behaviours/help-for-suicidal-thoughts/",
+   "action": "edited",
+   "newSentence": "Samaritans can be called free on 116 123, open 24 hours every day."
+  },
+  {
+   "id": "c091",
+   "sentence": "The NHS describes ADHD as something that can be treated using medicine or therapy, and a combination of both is often the best approach.",
+   "where": "faq0",
+   "classification": "unsupported",
+   "evidence": "See 24.",
+   "url": "https://www.nhs.uk/conditions/adhd-adults/",
+   "action": "edited",
+   "newSentence": "The NHS says ADHD in adults is managed through lifestyle changes, workplace adjustments or medicines."
+  },
+  {
+   "id": "c092",
+   "sentence": "Other sources describe it as a lifelong condition.",
+   "where": "faq0",
+   "classification": "unsupported",
+   "evidence": "See 38.",
+   "url": "https://magazine.medlineplus.gov/article/adhd-support-toolkit",
+   "action": "edited",
+   "newSentence": "A MedlinePlus support guide describes ADHD as a lifelong journey."
+  },
+  {
+   "id": "c093",
+   "sentence": "Treatment and support therefore aim to help with symptoms and everyday life, and not everyone needs or wants to take medicine.",
+   "where": "faq0",
+   "classification": "unsupported",
+   "evidence": "Not everyone wants medicine not returned.",
+   "url": "https://www.nhs.uk/conditions/adhd-adults/",
+   "action": "edited",
+   "newSentence": "Treatment and support therefore aim to help with symptoms and everyday life, and talking therapies such as CBT or mindfulness may also be recommended."
+  },
+  {
+   "id": "c094",
+   "sentence": "No.",
+   "where": "faq1",
+   "classification": "supported",
+   "evidence": "Plain answer.",
+   "url": "https://www.nhs.uk/conditions/adhd-adults/",
+   "action": "kept"
+  },
+  {
+   "id": "c095",
+   "sentence": "The NHS has separate guidance for adults and for children and young people.",
+   "where": "faq1",
+   "classification": "supported",
+   "evidence": "Both NHS pages exist (results).",
+   "url": "https://www.nhs.uk/conditions/adhd-adults/",
+   "action": "edited",
+   "newSentence": "No, the NHS has separate guidance for adults and for children and young people."
+  },
+  {
+   "id": "c096",
+   "sentence": "Symptoms usually start before the age of 12, but many adults are diagnosed later in life.",
+   "where": "faq1",
+   "classification": "unsupported",
+   "evidence": "Later-life diagnosis not returned.",
+   "url": "https://www.nhs.uk/conditions/adhd-adults/",
+   "action": "edited",
+   "newSentence": "Symptoms usually start before the age of 12, but an adult can still be assessed."
+  },
+  {
+   "id": "c097",
+   "sentence": "For an adult diagnosis, symptoms need to have been present since childhood.",
+   "where": "faq1",
+   "classification": "supported",
+   "evidence": "Searches 1, 6: NHS Wales and RCPsych: symptoms present since childhood.",
+   "url": "https://111.wales.nhs.uk/encyclopaedia/a/article/adhd",
+   "action": "kept"
+  },
+  {
+   "id": "c098",
+   "sentence": "A GP cannot formally diagnose ADHD, but can discuss concerns and refer for a specialist assessment if necessary.",
+   "where": "faq2",
+   "classification": "unsupported",
+   "evidence": "See 56.",
+   "url": "https://www.nice.org.uk/guidance/ng87/resources/attention-deficit-hyperactivity-disorder-diagnosis-and-management-pdf-1837699732933",
+   "action": "edited",
+   "newSentence": "For children, NICE says primary care practitioners should not make the initial diagnosis or start medication."
+  },
+  {
+   "id": "c099",
+   "sentence": "The diagnosis is made by a qualified healthcare professional with training and expertise in ADHD, such as a paediatrician, psychiatrist or clinical psychologist.",
+   "where": "faq2",
+   "classification": "unsupported",
+   "evidence": "Search 2 (NICE): specialist psychiatrist, paediatrician or other appropriately qualified professional; \"clinical psychologist\" and \"training and expertise\" wording not returned.",
+   "url": "https://www.nice.org.uk/guidance/ng87/resources/attention-deficit-hyperactivity-disorder-diagnosis-and-management-pdf-1837699732933",
+   "action": "edited",
+   "newSentence": "The NICE guideline says the diagnosis must be made by a specialist psychiatrist, paediatrician or other appropriately qualified healthcare professional."
+  },
+  {
+   "id": "c100",
+   "sentence": "There is no single test.",
+   "where": "faq2",
+   "classification": "supported",
+   "evidence": "Search 9: no single test.",
+   "url": "https://www.nhs.uk/conditions/adhd-adults/",
+   "action": "kept"
+  },
+  {
+   "id": "c101",
+   "sentence": "The NHS says girls are thought to be recognised less often than boys.",
+   "where": "faq3",
+   "classification": "supported",
+   "evidence": "NICE: under-recognised in girls and women; inattentive.",
+   "url": "https://www.nice.org.uk/guidance/ng87/resources/attention-deficit-hyperactivity-disorder-diagnosis-and-management-pdf-1837699732933",
+   "action": "edited",
+   "newSentence": "NICE says ADHD is thought to be under-recognised in girls and women ..."
+  },
+  {
+   "id": "c102",
+   "sentence": "One possible reason is that girls more commonly have inattentive symptoms, which can be harder to recognise.",
+   "where": "faq3",
+   "classification": "supported",
+   "evidence": "NICE: under-recognised in girls and women; inattentive.",
+   "url": "https://www.nice.org.uk/guidance/ng87/resources/attention-deficit-hyperactivity-disorder-diagnosis-and-management-pdf-1837699732933",
+   "action": "edited",
+   "newSentence": "NICE says ADHD is thought to be under-recognised in girls and women ..."
+  },
+  {
+   "id": "c103",
+   "sentence": "Anyone worried about symptoms, at any age, can start with a GP appointment.",
+   "where": "faq3",
+   "classification": "unsupported",
+   "evidence": "\"At any age\" not returned.",
+   "url": "https://www.nhs.uk/conditions/adhd-adults/",
+   "action": "edited",
+   "newSentence": "Anyone worried about symptoms that affect studies, work or relationships can start with a GP appointment, as the NHS advises."
+  },
+  {
+   "id": "c104",
+   "sentence": "Not necessarily.",
+   "where": "faq4",
+   "classification": "unsupported",
+   "evidence": "Not returned (sentence 52 is the author-flagged inference).",
+   "url": "https://www.nhs.uk/conditions/adhd-adults/",
+   "action": "removed"
+  },
+  {
+   "id": "c105",
+   "sentence": "Many young children are easily distracted, impulsive and full of energy, particularly under the age of 5, and the NHS says this does not mean they have ADHD.",
+   "where": "faq4",
+   "classification": "unsupported",
+   "evidence": "Under-5 NHS statement not returned (only unnamed local guidance on typical development 2-5).",
+   "url": "https://www.nhs.uk/conditions/adhd-adults/",
+   "action": "removed"
+  },
+  {
+   "id": "c106",
+   "sentence": "Tiredness, anxiety or stress can cause similar signs.",
+   "where": "faq4",
+   "classification": "unsupported",
+   "evidence": "Under-5 NHS statement not returned (only unnamed local guidance on typical development 2-5).",
+   "url": "https://www.nhs.uk/conditions/adhd-adults/",
+   "action": "removed"
+  },
+  {
+   "id": "c107",
+   "sentence": "A worried parent or carer can speak to a teacher or book a GP appointment.",
+   "where": "faq4",
+   "classification": "unsupported",
+   "evidence": "Teacher/parent route not returned.",
+   "url": "https://www.nhs.uk/conditions/adhd-adults/",
+   "action": "removed"
+  },
+  {
+   "id": "c108",
+   "sentence": "Also called: Attention deficit hyperactivity disorder (ADHD)",
+   "where": "kf0",
+   "classification": "supported",
+   "evidence": "Page title.",
+   "url": "https://www.nhs.uk/conditions/adhd-adults/",
+   "action": "kept"
+  },
+  {
+   "id": "c109",
+   "sentence": "Type of condition: A neurodevelopmental condition affecting attention, activity levels and impulse control",
+   "where": "kf1",
+   "classification": "textbook",
+   "evidence": "Plain definition; retrieved text described ADHD as affecting focus with inattentive, restless, impulsive traits but did not return the word neurodevelopmental.",
+   "url": "https://www.nhs.uk/conditions/adhd-adults/",
+   "action": "kept"
+  },
+  {
+   "id": "c110",
+   "sentence": "Usually starts: Symptoms usually start before the age of 12",
+   "where": "kf2",
+   "classification": "supported",
+   "evidence": "Search 1.",
+   "url": "https://www.nhs.uk/conditions/adhd-adults/",
+   "action": "kept"
+  },
+  {
+   "id": "c111",
+   "sentence": "Main features: Inattentiveness, and hyperactivity and impulsiveness",
+   "where": "kf3",
+   "classification": "supported",
+   "evidence": "Search 1.",
+   "url": "https://www.nhs.uk/conditions/adhd-adults/",
+   "action": "kept"
+  },
+  {
+   "id": "c112",
+   "sentence": "Usually diagnosed by: An ADHD specialist such as a paediatrician, psychiatrist or clinical psychologist; there is no single test",
+   "where": "kf4",
+   "classification": "unsupported",
+   "evidence": "Clinical psychologist not returned.",
+   "url": "https://www.nice.org.uk/guidance/ng87/resources/attention-deficit-hyperactivity-disorder-diagnosis-and-management-pdf-1837699732933",
+   "action": "edited",
+   "newSentence": "A specialist such as a psychiatrist or paediatrician; there is no single test"
+  },
+  {
+   "id": "c113",
+   "sentence": "Usual approaches: Support and adjustments, talking therapies and medicines, often in combination",
+   "where": "kf5",
+   "classification": "unsupported",
+   "evidence": "\"Often in combination\" not returned.",
+   "url": "https://www.nhs.uk/conditions/adhd-adults/",
+   "action": "edited",
+   "newSentence": "Lifestyle changes, adjustments at work or school, talking therapies and medicines"
+  },
+  {
+   "id": "c114",
+   "sentence": "First step: A GP appointment, which can lead to a specialist referral",
+   "where": "kf6",
+   "classification": "supported",
+   "evidence": "Search 9: GP appointment; referral mentioned.",
+   "url": "https://www.nhs.uk/conditions/adhd-adults/",
+   "action": "edited",
+   "newSentence": "A GP appointment if symptoms affect studies, work or relationships"
+  }
+ ],
+ "notes": "Sourcing remains thin: many statements rest on search-tool summaries that blend pages (e.g. causes and the 2-5 year-old typical development point, not retained). Removed: strengths/planner/exercise tips cited to regional NHS leaflets (replaced by a 2023 thematic analysis and RCPsych), psychoeducation explanation, ADHD Foundation/Young Minds, under-5 passage, the \"real difficulty leads to assessment\" inference, the absence-of-prevention sentence (replaced). Epilepsy link kept: NHS lists epilepsy as a possible link (searches 1 and 7). Terms symptom/diagnosis are fillers. Crisis sentences use lead-supplied evidence. Human check: MedlinePlus \"lifelong journey\" is a support-guide phrase, not a clinical statement; PMC and NICE-via-summary attributions are page-level uncertain; NICE sentence about girls was retrieved from a search summary."
+}
