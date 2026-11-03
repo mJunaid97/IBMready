@@ -1,0 +1,107 @@
+{
+ "slug": "fda-oral-pcsk9-inhibitor-lipfendra",
+ "searchesUsed": 2,
+ "dateConfirmed": false,
+ "dateEvidence": "Search metadata put the FDA announcement about 110 days before 3 Nov 2026 (~mid-July); no snippet printed '17 July 2026'. Check page header manually.",
+ "claims": [
+  {
+   "id": "summary",
+   "classification": "unsupported",
+   "evidence": "Retrieved text confirms approval and 'first oral' claim, but the exact day (17 July) was not shown in retrieved text (only ~mid-July 2026).",
+   "url": "https://www.fda.gov/news-events/press-announcements/fda-approves-first-oral-pcsk9-inhibitor-lower-ldl-cholesterol-adults-high-cholesterol",
+   "fix": "The US FDA approved Lipfendra (enlicitide), which it describes as the first oral therapy that inhibits PCSK9, to lower LDL cholesterol in adults with high cholesterol. (add date only after checking the page)"
+  },
+  {
+   "id": "keyPoints[0]",
+   "classification": "unsupported",
+   "evidence": "Retrieved text confirms approval and 'first oral' claim, but the exact day (17 July) was not shown in retrieved text (only ~mid-July 2026).",
+   "url": "https://www.fda.gov/news-events/press-announcements/fda-approves-first-oral-pcsk9-inhibitor-lower-ldl-cholesterol-adults-high-cholesterol",
+   "fix": "The US FDA approved Lipfendra (enlicitide) in July 2026 and calls it the first oral therapy to inhibit PCSK9."
+  },
+  {
+   "id": "keyPoints[1]",
+   "classification": "supported",
+   "evidence": "Approved as adjunct to diet and exercise to reduce LDL-C in adults with hypercholesterolemia, including HeFH.",
+   "url": "https://www.fda.gov/news-events/press-announcements/fda-approves-first-oral-pcsk9-inhibitor-lower-ldl-cholesterol-adults-high-cholesterol",
+   "fix": null
+  },
+  {
+   "id": "keyPoints[2]",
+   "classification": "supported",
+   "evidence": "Approval rests on two randomized, double-blind, placebo-controlled trials; primary endpoint percent change in LDL-C at Week 24 vs placebo.",
+   "url": "https://www.fda.gov/news-events/press-announcements/fda-approves-first-oral-pcsk9-inhibitor-lower-ldl-cholesterol-adults-high-cholesterol",
+   "fix": null
+  },
+  {
+   "id": "keyPoints[3]",
+   "classification": "textbook",
+   "evidence": "Regulatory jurisdiction statement; not from FDA text but undisputed.",
+   "url": "https://www.fda.gov/news-events/press-announcements/fda-approves-first-oral-pcsk9-inhibitor-lower-ldl-cholesterol-adults-high-cholesterol",
+   "fix": null
+  },
+  {
+   "id": "body[0].s0",
+   "classification": "unsupported",
+   "evidence": "Retrieved text confirms approval and 'first oral' claim, but the exact day (17 July) was not shown in retrieved text (only ~mid-July 2026).",
+   "url": "https://www.fda.gov/news-events/press-announcements/fda-approves-first-oral-pcsk9-inhibitor-lower-ldl-cholesterol-adults-high-cholesterol",
+   "fix": "The US Food and Drug Administration (FDA) approved Lipfendra (enlicitide) in July 2026; it describes it as the first oral therapy that inhibits PCSK9."
+  },
+  {
+   "id": "body[0].s1",
+   "classification": "supported",
+   "evidence": "Adjunct to diet and exercise to lower LDL-C in adults with hypercholesterolemia, including HeFH.",
+   "url": "https://www.fda.gov/news-events/press-announcements/fda-approves-first-oral-pcsk9-inhibitor-lower-ldl-cholesterol-adults-high-cholesterol",
+   "fix": null
+  },
+  {
+   "id": "body[0].s2",
+   "classification": "textbook",
+   "evidence": "FDA title itself says 'Bad Cholesterol'; LDL is commonly called bad cholesterol.",
+   "url": "https://www.fda.gov/drugs/news-events-human-drugs/fda-approves-first-oral-therapy-inhibits-proprotein-convertase-subtilisinkexin-type-9-pcsk9-lower",
+   "fix": null
+  },
+  {
+   "id": "body[0].s3",
+   "classification": "supported",
+   "evidence": "20 mg tablet taken once daily orally.",
+   "url": "https://www.fda.gov/news-events/press-announcements/fda-approves-first-oral-pcsk9-inhibitor-lower-ldl-cholesterol-adults-high-cholesterol",
+   "fix": null
+  },
+  {
+   "id": "body[1].s0",
+   "classification": "unsupported",
+   "evidence": "Retrieved text says PCSK9 inhibitors previously only injectable; no retrieved mention of statins/ezetimibe in the FDA release.",
+   "url": "https://www.fda.gov/news-events/press-announcements/fda-approves-first-oral-pcsk9-inhibitor-lower-ldl-cholesterol-adults-high-cholesterol",
+   "fix": "The FDA notes that PCSK9 inhibitors were previously available only as injections."
+  },
+  {
+   "id": "body[1].s1",
+   "classification": "supported",
+   "evidence": "Two trials; primary endpoint percent change in LDL-C at Week 24 vs placebo.",
+   "url": "https://www.fda.gov/news-events/press-announcements/fda-approves-first-oral-pcsk9-inhibitor-lower-ldl-cholesterol-adults-high-cholesterol",
+   "fix": null
+  },
+  {
+   "id": "body[1].s2",
+   "classification": "unsupported",
+   "evidence": "Retrieved text: two trials in 3,207 adults 'with and without HeFH' on maximally tolerated statins; split into an ASCVD trial and an HeFH-only trial not seen.",
+   "url": "https://www.fda.gov/news-events/press-announcements/fda-approves-first-oral-pcsk9-inhibitor-lower-ldl-cholesterol-adults-high-cholesterol",
+   "fix": "The two trials enrolled adults with hypercholesterolaemia, including some with heterozygous familial hypercholesterolaemia, who were on maximally tolerated statin therapy. (or delete)"
+  },
+  {
+   "id": "body[1].s3",
+   "classification": "supported",
+   "evidence": "Frequency of adverse reactions was similar between Lipfendra and placebo in the first trial.",
+   "url": "https://www.fda.gov/news-events/press-announcements/fda-approves-first-oral-pcsk9-inhibitor-lower-ldl-cholesterol-adults-high-cholesterol",
+   "fix": null
+  },
+  {
+   "id": "body[1].s4",
+   "classification": "textbook",
+   "evidence": "UK regulation separate from FDA.",
+   "url": "https://www.fda.gov/news-events/press-announcements/fda-approves-first-oral-pcsk9-inhibitor-lower-ldl-cholesterol-adults-high-cholesterol",
+   "fix": null
+  }
+ ],
+ "notes": "Only day-level date unconfirmed. Do not repeat 56%/59% figures unless verified from page. Second trial reportedly had more diarrhoea/dizziness; consider noting."
+}

@@ -1,0 +1,93 @@
+{
+ "slug": "nih-extra-year-school-dementia-diagnoses",
+ "searchesUsed": 3,
+ "dateConfirmed": false,
+ "dateEvidence": "Release URL/title retrieved on nih.gov; search tool only said it was ~10 days old (consistent with 23 Oct 2026 but the date itself was not shown). Check the page date manually.",
+ "claims": [
+  {
+   "id": "summary",
+   "classification": "supported",
+   "evidence": "UK reform raising drop-out age by a year reduced AD/ADRD incidence; benefit most pronounced in higher genetic risk; NIH-funded study.",
+   "url": "https://www.nih.gov/news-events/news-releases/extra-year-secondary-school-lowered-dementia-diagnoses-later-life",
+   "fix": null
+  },
+  {
+   "id": "keyPoints[0]",
+   "classification": "unsupported",
+   "evidence": "Release found, but its 23 October date was not shown in retrieved text.",
+   "url": "https://www.nih.gov/news-events/news-releases/extra-year-secondary-school-lowered-dementia-diagnoses-later-life",
+   "fix": "An NIH news release describes an NIH-funded study of schooling and dementia."
+  },
+  {
+   "id": "keyPoints[1]",
+   "classification": "supported",
+   "evidence": "UK reform extended the minimum drop-out age by a year.",
+   "url": "https://www.nih.gov/news-events/news-releases/extra-year-secondary-school-lowered-dementia-diagnoses-later-life",
+   "fix": null
+  },
+  {
+   "id": "keyPoints[2]",
+   "classification": "supported",
+   "evidence": "Reduced dementia incidence up to 50 years later; participants at higher genetic risk benefited most.",
+   "url": "https://www.nih.gov/news-events/news-releases/extra-year-secondary-school-lowered-dementia-diagnoses-later-life",
+   "fix": null
+  },
+  {
+   "id": "keyPoints[3]",
+   "classification": "textbook",
+   "evidence": "NIH is a US agency; not UK guidance.",
+   "url": "https://www.nih.gov/news-events/news-releases/extra-year-secondary-school-lowered-dementia-diagnoses-later-life",
+   "fix": null
+  },
+  {
+   "id": "body[0].s0",
+   "classification": "unsupported",
+   "evidence": "Content matches but release date not confirmed in retrieved text.",
+   "url": "https://www.nih.gov/news-events/news-releases/extra-year-secondary-school-lowered-dementia-diagnoses-later-life",
+   "fix": "An NIH news release describes a study that found an extra year of secondary school was associated with fewer dementia diagnoses later in life."
+  },
+  {
+   "id": "body[0].s1",
+   "classification": "supported",
+   "evidence": "Led by researchers at Univ. of Wisconsin-Madison and USC (Los Angeles); NIH-funded (NIA director quoted). Funder named NIH per release summary.",
+   "url": "https://www.nih.gov/news-events/news-releases/extra-year-secondary-school-lowered-dementia-diagnoses-later-life",
+   "fix": null
+  },
+  {
+   "id": "body[0].s2",
+   "classification": "supported",
+   "evidence": "UK education reform extended minimum drop-out age by a year. 'Natural experiment' is the standard description but not directly quoted.",
+   "url": "https://www.nih.gov/news-events/news-releases/extra-year-secondary-school-lowered-dementia-diagnoses-later-life",
+   "fix": null
+  },
+  {
+   "id": "body[1].s0",
+   "classification": "supported",
+   "evidence": "Participants at higher genetic risk benefited most.",
+   "url": "https://www.nih.gov/news-events/news-releases/extra-year-secondary-school-lowered-dementia-diagnoses-later-life",
+   "fix": null
+  },
+  {
+   "id": "body[1].s1",
+   "classification": "unsupported",
+   "evidence": "Retrieval conflict: one result says release reports reduction 'by .88%'; two summaries say '0.88 percentage points'. 'Large/considerable effect given how low dementia rates were' is supported, 'sizeable' is a paraphrase. Unit unconfirmed.",
+   "url": "https://www.nih.gov/news-events/news-releases/extra-year-secondary-school-lowered-dementia-diagnoses-later-life",
+   "fix": "The release says the extra year reduced Alzheimer's disease and related dementia incidence over 50 years by 0.88% (check the release for whether this is percent or percentage points), which the authors describe as a large effect given how low dementia rates were in the study population."
+  },
+  {
+   "id": "body[1].s2",
+   "classification": "unsupported",
+   "evidence": "No retrieved text says the effect may change as the group ages.",
+   "url": "https://www.nih.gov/news-events/news-releases/extra-year-secondary-school-lowered-dementia-diagnoses-later-life",
+   "fix": null
+  },
+  {
+   "id": "body[1].s3",
+   "classification": "textbook",
+   "evidence": "US agency research news; not UK guidance.",
+   "url": "https://www.nih.gov/news-events/news-releases/extra-year-secondary-school-lowered-dementia-diagnoses-later-life",
+   "fix": null
+  }
+ ],
+ "notes": "Delete body[1].s2 unless confirmed. Verify 0.88 unit and the 23 Oct date on the page directly. Unlike other brief, 'mostly in people at higher genetic risk' in summary is slightly stronger than 'especially pronounced'; consider softening."
+}

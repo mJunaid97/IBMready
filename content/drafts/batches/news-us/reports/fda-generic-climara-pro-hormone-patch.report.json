@@ -1,0 +1,104 @@
+{
+ "id": "fda-generic-climara-pro-hormone-patch",
+ "searchesUsed": 2,
+ "counts": {
+  "supported": 9,
+  "textbook": 2,
+  "unsupported": 0,
+  "wrong": 0,
+  "unsafe": 0,
+  "unchecked": 0
+ },
+ "claims": [
+  {
+   "id": "c01",
+   "sentenceId": "summary",
+   "classification": "supported",
+   "evidence": "FDA: first generic Climara Pro, 0.045 mg/day/0.015 mg estradiol and levonorgestrel weekly patch, Oct 20, 2026.",
+   "url": "https://www.fda.gov/news-events/press-announcements/fda-approves-once-weekly-generic-hormone-therapy-patch-women",
+   "action": "kept"
+  },
+  {
+   "id": "c02",
+   "sentenceId": "keyPoints[0]",
+   "classification": "supported",
+   "evidence": "First generic of Climara Pro, dated October 20, 2026.",
+   "url": "https://www.fda.gov/news-events/press-announcements/fda-approves-once-weekly-generic-hormone-therapy-patch-women",
+   "action": "kept"
+  },
+  {
+   "id": "c03",
+   "sentenceId": "keyPoints[1]",
+   "classification": "supported",
+   "evidence": "Once-weekly estradiol/levonorgestrel patch for women with an intact uterus.",
+   "url": "https://www.fda.gov/news-events/press-announcements/fda-approves-once-weekly-generic-hormone-therapy-patch-women",
+   "action": "kept"
+  },
+  {
+   "id": "c04",
+   "sentenceId": "keyPoints[2]",
+   "classification": "supported",
+   "evidence": "FDA states generic is therapeutically equivalent to Climara Pro.",
+   "url": "https://www.fda.gov/news-events/press-announcements/fda-approves-once-weekly-generic-hormone-therapy-patch-women",
+   "action": "kept"
+  },
+  {
+   "id": "c05",
+   "sentenceId": "keyPoints[3]",
+   "classification": "textbook",
+   "evidence": "Not stated on fda.gov pages retrieved; general fact that UK licensing is separate (MHRA).",
+   "url": "https://www.fda.gov/news-events/press-announcements/fda-approves-once-weekly-generic-hormone-therapy-patch-women",
+   "action": "kept"
+  },
+  {
+   "id": "c06",
+   "sentenceId": "body[0].s0",
+   "classification": "supported",
+   "evidence": "FDA announcement dated Oct 20, 2026 on first generic of Climara Pro.",
+   "url": "https://www.fda.gov/news-events/press-announcements/fda-approves-once-weekly-generic-hormone-therapy-patch-women",
+   "action": "kept"
+  },
+  {
+   "id": "c07",
+   "sentenceId": "body[0].s1",
+   "classification": "supported",
+   "evidence": "Weekly patch, estradiol + levonorgestrel, women with intact uterus (label: transdermal system).",
+   "url": "https://www.fda.gov/news-events/press-announcements/fda-approves-once-weekly-generic-hormone-therapy-patch-women",
+   "action": "kept"
+  },
+  {
+   "id": "c08",
+   "sentenceId": "body[0].s2",
+   "classification": "supported",
+   "evidence": "Therapeutically equivalent to Climara Pro per FDA.",
+   "url": "https://www.fda.gov/news-events/press-announcements/fda-approves-once-weekly-generic-hormone-therapy-patch-women",
+   "action": "kept"
+  },
+  {
+   "id": "c09",
+   "sentenceId": "body[1].s0",
+   "classification": "supported",
+   "evidence": "Press release text (via search summary): progestogen included to reduce risk of endometrial hyperplasia that can occur with estrogen alone, hence intact-uterus limitation. Note: this was in the FDA press release result; the label PDF was not separately quoted.",
+   "url": "https://www.fda.gov/news-events/press-announcements/fda-approves-once-weekly-generic-hormone-therapy-patch-women",
+   "action": "kept"
+  },
+  {
+   "id": "c10",
+   "sentenceId": "body[1].s1",
+   "classification": "supported",
+   "evidence": "Press release quote by Acting FDA Commissioner Kyle Diamantas: 'This approval makes effective treatment more accessible.' 'More affordable' is not a retrieved quote.",
+   "url": "https://www.fda.gov/news-events/press-announcements/fda-approves-once-weekly-generic-hormone-therapy-patch-women",
+   "action": "edited",
+   "newSentence": "The FDA said the approval makes effective treatment more accessible."
+  },
+  {
+   "id": "c11",
+   "sentenceId": "body[1].s2",
+   "classification": "textbook",
+   "evidence": "Not stated on fda.gov pages retrieved; general fact that UK licensing is separate (MHRA). Naming MHRA and NICE is general knowledge, not from FDA.",
+   "url": "https://www.fda.gov/news-events/press-announcements/fda-approves-once-weekly-generic-hormone-therapy-patch-women",
+   "action": "kept"
+  }
+ ],
+ "notes": "Body[1].s1 marked supported but 'affordable' wording is not in retrieved text; fix recommended. Mention that the unit/strength 0.045/0.015 mg/day is available if wanted."
+}
