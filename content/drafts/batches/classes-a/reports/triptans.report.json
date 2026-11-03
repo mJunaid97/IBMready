@@ -1,0 +1,141 @@
+{
+ "id": "triptans",
+ "searchesUsed": 6,
+ "counts": {
+  "supported": 9,
+  "textbook": 1,
+  "unsupported": 5,
+  "wrong": 0,
+  "unsafe": 0,
+  "unchecked": 0
+ },
+ "claims": [
+  {
+   "id": "c01",
+   "where": "summary[2]",
+   "classification": "supported",
+   "evidence": "About page excerpt: comes as tablets, nasal spray or injection. Text kept; cited URL corrected.",
+   "url": "https://www.nhs.uk/medicines/sumatriptan/about-sumatriptan/",
+   "action": "kept"
+  },
+  {
+   "id": "c02",
+   "where": "summary[3]",
+   "classification": "supported",
+   "evidence": "Who-can page: most adults can take it; not officially approved for children; specialist may sometimes prescribe.",
+   "url": "https://www.nhs.uk/medicines/sumatriptan/who-can-and-cannot-take-or-use-sumatriptan/",
+   "action": "kept"
+  },
+  {
+   "id": "c03",
+   "where": "mechanism[1]",
+   "classification": "textbook",
+   "evidence": "NHS about page says triptan acting on serotonin (5-HT) receptors; the 5-HT1 subtype is not in the excerpt.",
+   "url": "https://www.nhs.uk/medicines/sumatriptan/about-sumatriptan/",
+   "action": "edited",
+   "newSentence": "Sumatriptan is a triptan, a type of medicine that acts on serotonin (5-HT) receptors."
+  },
+  {
+   "id": "c04",
+   "where": "mechanism[2]",
+   "classification": "supported",
+   "evidence": "About page: used once an attack has begun; does not prevent migraines.",
+   "url": "https://www.nhs.uk/medicines/sumatriptan/about-sumatriptan/",
+   "action": "kept"
+  },
+  {
+   "id": "c05",
+   "where": "mechanism[3]",
+   "classification": "unsupported",
+   "evidence": "Other-medicines page speaks of sumatriptan and St John's wort / some antidepressants and serotonin syndrome, not triptans generally.",
+   "url": "https://www.nhs.uk/medicines/sumatriptan/taking-sumatriptan-with-other-medicines-and-herbal-supplements/",
+   "action": "edited",
+   "newSentence": "Taking sumatriptan with some antidepressants or St John's wort can raise the risk of serotonin syndrome, a severe side effect."
+  },
+  {
+   "id": "c06",
+   "where": "classEffects[0]",
+   "classification": "unsupported",
+   "evidence": "Side-effects page lists nausea/vomiting, dizziness, tiredness, flushing as common; 'most often' ranking not stated.",
+   "url": "https://www.nhs.uk/medicines/sumatriptan/side-effects-of-sumatriptan/",
+   "action": "edited",
+   "newSentence": "Feeling or being sick and dizziness are among the common side effects the NHS lists."
+  },
+  {
+   "id": "c07",
+   "where": "classEffects[1]",
+   "classification": "supported",
+   "evidence": "Common effects include tiredness and flushing.",
+   "url": "https://www.nhs.uk/medicines/sumatriptan/side-effects-of-sumatriptan/",
+   "action": "kept"
+  },
+  {
+   "id": "c08",
+   "where": "classEffects[2]",
+   "classification": "supported",
+   "evidence": "Nasal spray irritation/taste/nosebleeds; injection-site bruising or swelling.",
+   "url": "https://www.nhs.uk/medicines/sumatriptan/side-effects-of-sumatriptan/",
+   "action": "kept"
+  },
+  {
+   "id": "c09",
+   "where": "classEffects[3]",
+   "classification": "supported",
+   "evidence": "Most people have no side effects or only minor ones; serious effects rare.",
+   "url": "https://www.nhs.uk/medicines/sumatriptan/side-effects-of-sumatriptan/",
+   "action": "kept"
+  },
+  {
+   "id": "c10",
+   "where": "cautions[2]",
+   "classification": "supported",
+   "evidence": "Who-can page: high blood pressure a reason not to use, may be possible if now well controlled.",
+   "url": "https://www.nhs.uk/medicines/sumatriptan/who-can-and-cannot-take-or-use-sumatriptan/",
+   "action": "kept"
+  },
+  {
+   "id": "c11",
+   "where": "cautions[3]",
+   "classification": "unsupported",
+   "evidence": "Who-can page lists ergotamine/other triptans as not to be combined; the 'because raises risk of side effects' reason came from a blended summary.",
+   "url": "https://www.nhs.uk/medicines/sumatriptan/who-can-and-cannot-take-or-use-sumatriptan/",
+   "action": "edited",
+   "newSentence": "The NHS says sumatriptan is not taken together with ergotamine or other triptans."
+  },
+  {
+   "id": "c12",
+   "where": "cautions[4]",
+   "classification": "supported",
+   "evidence": "Returned text: can be used during pregnancy if needed; doctor will discuss risks and benefits (general sumatriptan page, not the who-can page). Text kept; cited URL corrected.",
+   "url": "https://www.nhs.uk/medicines/sumatriptan/",
+   "action": "kept"
+  },
+  {
+   "id": "c13",
+   "where": "cautions[5]",
+   "classification": "unsupported",
+   "evidence": "Side-effects page advises against driving, cycling or machinery if dizzy or drowsy; 'until it has passed' not stated.",
+   "url": "https://www.nhs.uk/medicines/sumatriptan/side-effects-of-sumatriptan/",
+   "action": "edited",
+   "newSentence": "The NHS advises against driving, cycling or using machinery if you feel dizzy or drowsy after sumatriptan."
+  },
+  {
+   "id": "c14",
+   "where": "cautions[6]",
+   "classification": "supported",
+   "evidence": "Call 999 for suspected anaphylaxis or heart attack; NHS 111 for other serious side effects. Text kept; cited URL corrected.",
+   "url": "https://www.nhs.uk/medicines/sumatriptan/side-effects-of-sumatriptan/",
+   "action": "kept"
+  },
+  {
+   "id": "c15",
+   "where": "cautions[7]",
+   "classification": "unsupported",
+   "evidence": "Draft URL not returned; NHS Scotland medication overuse guidance page returned, saying to rationalise acute medication; causal wording not clearly in excerpt.",
+   "url": "https://www.rightdecisions.scot.nhs.uk/borders-ref-help-toolkit/headache/7-medication-overuse-guidance/",
+   "action": "edited",
+   "newSentence": "NHS Scotland guidance on medication overuse in headache recommends rationalising how often acute treatments, including triptans, are used."
+  }
+ ],
+ "notes": "Cited URLs corrected where the excerpt came from a different NHS page. Dose/limit figures from search results were deliberately not used. cautions[4]: search blended two pages, one possibly cautionary; main page wording used."
+}
