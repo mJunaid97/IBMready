@@ -1,0 +1,306 @@
+{
+ "id": "x-ray-what-to-expect",
+ "searchesUsed": 5,
+ "counts": {
+  "supported": 21,
+  "textbook": 0,
+  "unsupported": 14,
+  "wrong": 0,
+  "unsafe": 0,
+  "unchecked": 0
+ },
+ "claims": [
+  {
+   "id": "c01",
+   "sentence": "An X-ray uses a beam of electromagnetic radiation to make an image of the inside of the body.",
+   "classification": "supported",
+   "evidence": "North Cumbria leaflet: X-ray imaging uses a beam of electromagnetic radiation.",
+   "url": "https://www.ncic.nhs.uk/patients-visitors/patient-information-leaflets/my-x-ray-nhs",
+   "action": "kept"
+  },
+  {
+   "id": "c02",
+   "sentence": "According to the NHS, X-rays can produce images of many parts of the body, including bones, teeth, lungs and the digestive system.",
+   "classification": "supported",
+   "evidence": "NHS: X-rays image bones, teeth, lungs and the digestive system.",
+   "url": "https://www.nhs.uk/tests-and-treatments/x-ray/",
+   "action": "kept"
+  },
+  {
+   "id": "c03",
+   "sentence": "They are used, for example, to check for broken bones after an accident.",
+   "classification": "supported",
+   "evidence": "NHS: used to detect problems such as bone fractures.",
+   "url": "https://www.nhs.uk/tests-and-treatments/x-ray/",
+   "action": "kept"
+  },
+  {
+   "id": "c04",
+   "sentence": "A trust leaflet says that specially trained staff check each request first, to confirm the test is the right one for the person and their condition.",
+   "classification": "unsupported",
+   "evidence": "Search could not confirm 'specially trained staff check each request'.",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c05",
+   "sentence": "The health professional who takes X-rays in hospital is called a radiographer.",
+   "classification": "supported",
+   "evidence": "NHS: radiographers are the trained staff who take the images.",
+   "url": "https://www.nhs.uk/tests-and-treatments/x-ray/",
+   "action": "kept"
+  },
+  {
+   "id": "c06",
+   "sentence": "The radiographer positions the person sitting, lying or standing, depending on the part of the body.",
+   "classification": "supported",
+   "evidence": "Newcastle trust: staff may ask you to sit, lie down or stand depending on the part examined; NHS says the radiographer may ask you to move into different positions.",
+   "url": "https://www.nhs.uk/tests-and-treatments/x-ray/",
+   "action": "kept"
+  },
+  {
+   "id": "c07",
+   "sentence": "The X-ray itself takes only a few minutes, according to the NHS.",
+   "classification": "supported",
+   "evidence": "NHS: the X-ray itself should only take a few minutes.",
+   "url": "https://www.nhs.uk/tests-and-treatments/x-ray/",
+   "action": "kept"
+  },
+  {
+   "id": "c08",
+   "sentence": "The NHS says people are asked to remove metal items such as jewellery and zips.",
+   "classification": "supported",
+   "evidence": "NHS: avoid wearing jewellery and clothes containing metal such as zips, as these will need to be removed.",
+   "url": "https://www.nhs.uk/tests-and-treatments/x-ray/",
+   "action": "kept"
+  },
+  {
+   "id": "c09",
+   "sentence": "Some types need fasting for several hours beforehand.",
+   "classification": "supported",
+   "evidence": "A trust says for some specific examinations people are told in advance to avoid eating and drinking for a few hours.",
+   "url": "https://www.southtees.nhs.uk/resources/x-ray-general-advice/",
+   "action": "kept"
+  },
+  {
+   "id": "c10",
+   "sentence": "The NHS lists several related tests, including angiography, which checks blood vessels using a dye injected into the blood.",
+   "classification": "supported",
+   "evidence": "NHS: angiography checks blood vessels using a dye injected into the blood.",
+   "url": "https://www.nhs.uk/tests-and-treatments/x-ray/",
+   "action": "kept"
+  },
+  {
+   "id": "c11",
+   "sentence": "It also lists DEXA scans, which measure bone density, and CT scans, which give more detailed images.",
+   "classification": "supported",
+   "evidence": "NHS: DEXA measures bone strength; CT gives more detailed images.",
+   "url": "https://www.nhs.uk/tests-and-treatments/x-ray/",
+   "action": "kept"
+  },
+  {
+   "id": "c12",
+   "sentence": "Studies of the digestive system use a barium drink or enema, a liquid that shows up on X-ray.",
+   "classification": "supported",
+   "evidence": "NHS: barium swallow involves drinking barium; barium enema puts barium into the bowel via the rectum.",
+   "url": "https://www.nhs.uk/tests-and-treatments/x-ray/",
+   "action": "kept"
+  },
+  {
+   "id": "c13",
+   "sentence": "After a dye or barium test, the NHS says people may be asked to wait for up to 30 minutes so staff can check for a reaction.",
+   "classification": "unsupported",
+   "evidence": "No retrieved text mentions a 30 minute wait after dye or barium.",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c14",
+   "sentence": "The NHS says X-rays are safe and serious complications are rare.",
+   "classification": "unsupported",
+   "evidence": "NHS page retrieved says the cancer risk is thought to be very small and a standard X-ray leaves no after-effects; words 'safe' and 'serious complications are rare' not found.",
+   "url": "https://www.nhs.uk/tests-and-treatments/x-ray/",
+   "action": "edited",
+   "newSentence": "The NHS says a standard X-ray leaves no after-effects and the cancer risk is thought to be very small."
+  },
+  {
+   "id": "c15",
+   "sentence": "It adds that there is a very small risk of cancer linked to having lots of X-rays.",
+   "classification": "unsupported",
+   "evidence": "NHS: cancer risk thought to be very small; link to 'lots of X-rays' not found in retrieved NHS text.",
+   "url": "https://www.nhs.uk/tests-and-treatments/x-ray/",
+   "action": "edited",
+   "newSentence": "The NHS says the risk of cancer from X-rays is thought to be very small."
+  },
+  {
+   "id": "c16",
+   "sentence": "Trust leaflets say staff keep doses as low as possible and that a test goes ahead only when its benefit outweighs the small risk.",
+   "classification": "supported",
+   "evidence": "Worcestershire: doses kept as low as reasonably practicable; Cornwall and Bath leaflets: benefit should outweigh the risk.",
+   "url": "https://doclibrary-rcht.cornwall.nhs.uk/GET/d10358732",
+   "action": "kept"
+  },
+  {
+   "id": "c17",
+   "sentence": "GOV.UK safety advice says that when imaging is properly justified and optimised, the risks from X-ray examinations are far smaller than the risks of the conditions being investigated.",
+   "classification": "supported",
+   "evidence": "GOV.UK: when properly justified and optimised, risks are much less than the risks of the conditions being investigated.",
+   "url": "https://www.gov.uk/government/publications/ionising-radiation-from-medical-imaging-examinations-safety-advice/exposure-to-ionising-radiation-from-medical-imaging-safety-advice",
+   "action": "kept"
+  },
+  {
+   "id": "c18",
+   "sentence": "It describes the added chance of cancer as very small, and says any effect would appear years or decades later.",
+   "classification": "unsupported",
+   "evidence": "GOV.UK retrieved: cancers take decades to appear, especially relevant for older patients; 'very small' not retrieved.",
+   "url": "https://www.gov.uk/government/publications/ionising-radiation-from-medical-imaging-examinations-safety-advice/exposure-to-ionising-radiation-from-medical-imaging-safety-advice",
+   "action": "edited",
+   "newSentence": "GOV.UK safety advice says cancers linked to radiation can take decades to appear."
+  },
+  {
+   "id": "c19",
+   "sentence": "The same advice says children have a higher lifetime risk from X-rays than adults, and that risk is lower for older patients because cancers take a long time to develop.",
+   "classification": "supported",
+   "evidence": "GOV.UK: children have an increased lifetime risk depending on age and sex; risks lower for older patients since cancers take decades.",
+   "url": "https://www.gov.uk/government/publications/ionising-radiation-from-medical-imaging-examinations-safety-advice/exposure-to-ionising-radiation-from-medical-imaging-safety-advice",
+   "action": "kept"
+  },
+  {
+   "id": "c20",
+   "sentence": "These leaflets give their own figures for the risk, and the figures differ between leaflets, so the radiographer or the doctor who requested the test is the person to ask.",
+   "classification": "unsupported",
+   "evidence": "Not retrieved that figures differ; instruction on who to ask is not sourced.",
+   "url": "",
+   "action": "removed"
+  },
+  {
+   "id": "c21",
+   "sentence": "Trusts ask anyone who might be pregnant to tell the team before an X-ray.",
+   "classification": "supported",
+   "evidence": "Retrieved: most leaflets ask people to tell staff if they might be pregnant.",
+   "url": "https://www.gloshospitals.nhs.uk/your-visit/patient-information-leaflets/risks-of-having-x-rays-and-ct-scans-during-pregnancy/",
+   "action": "kept"
+  },
+  {
+   "id": "c22",
+   "sentence": "A Leicester hospitals leaflet says X-rays during pregnancy do not increase the risk of miscarriage, birth defects or developmental problems.",
+   "classification": "unsupported",
+   "evidence": "Retrieved: NHS leaflets say X-rays in pregnancy do not raise miscarriage risk and do not cause birth defects at typical doses; Leicester attribution not exact.",
+   "url": "https://yourhealth.leicestershospitals.nhs.uk/library/csi/imaging/1431-checking-if-you-are-pregnant-before-having-an-x-ray/file",
+   "action": "edited",
+   "newSentence": "NHS trust leaflets say X-rays during pregnancy do not raise the risk of miscarriage and, at typical doses, do not cause birth defects."
+  },
+  {
+   "id": "c23",
+   "sentence": "The main concern it names is a very small increase in the chance that the baby develops cancer in childhood.",
+   "classification": "supported",
+   "evidence": "Retrieved: main concern is a very small increase in childhood cancer risk (Leicester).",
+   "url": "https://yourhealth.leicestershospitals.nhs.uk/library/csi/imaging/1431-checking-if-you-are-pregnant-before-having-an-x-ray/file",
+   "action": "kept"
+  },
+  {
+   "id": "c24",
+   "sentence": "X-rays of the abdomen and pelvis are usually avoided in pregnancy.",
+   "classification": "unsupported",
+   "evidence": "Retrieved: tummy X-rays need special care; 'usually avoided' not retrieved.",
+   "url": "https://www.gloshospitals.nhs.uk/your-visit/patient-information-leaflets/risks-of-having-x-rays-and-ct-scans-during-pregnancy/",
+   "action": "edited",
+   "newSentence": "Trust leaflets say X-rays of the tummy or near the womb need special care during pregnancy."
+  },
+  {
+   "id": "c25",
+   "sentence": "X-rays of parts of the body well away from the abdomen, such as arms and legs, and dental X-rays, do not give any increased risk to an unborn baby, according to the same leaflet.",
+   "classification": "unsupported",
+   "evidence": "Retrieved: a trust leaflet says X-rays away from the tummy, such as head, chest, arms or lower legs, are OK. Dental not confirmed; 'do not give any increased risk' not retrieved.",
+   "url": "https://yourhealth.leicestershospitals.nhs.uk/library/csi/imaging/1431-checking-if-you-are-pregnant-before-having-an-x-ray/file",
+   "action": "edited",
+   "newSentence": "A trust leaflet says X-rays of parts of the body away from the tummy, such as the head, chest, arms or lower legs, are fine to have during pregnancy."
+  },
+  {
+   "id": "c26",
+   "sentence": "When an urgent test is needed, a radiologist and the doctor who asked for it decide together whether it should go ahead.",
+   "classification": "unsupported",
+   "evidence": "Retrieved: a test may go ahead in pregnancy if the health benefit clearly outweighs the small risk to the baby.",
+   "url": "https://www.gloshospitals.nhs.uk/your-visit/patient-information-leaflets/risks-of-having-x-rays-and-ct-scans-during-pregnancy/",
+   "action": "edited",
+   "newSentence": "A test may go ahead during pregnancy if the health benefit clearly outweighs the small radiation risk to the baby."
+  },
+  {
+   "id": "c27",
+   "sentence": "A reporting radiographer or a radiologist, a doctor who specialises in imaging, reviews the X-ray.",
+   "classification": "supported",
+   "evidence": "NHS: images go to a radiologist or specially trained radiographer who reports.",
+   "url": "https://www.nhs.uk/tests-and-treatments/x-ray/",
+   "action": "kept"
+  },
+  {
+   "id": "c28",
+   "sentence": "The report goes to the team that requested the test.",
+   "classification": "supported",
+   "evidence": "Reports go back to the referring clinician.",
+   "url": "https://www.nhs.uk/tests-and-treatments/x-ray/",
+   "action": "kept"
+  },
+  {
+   "id": "c29",
+   "sentence": "The NHS says results may come on the same day or at an appointment a few weeks later, and that a clinician should explain them.",
+   "classification": "supported",
+   "evidence": "NHS: results may be the same day or at an appointment a few weeks after; a healthcare professional should explain them.",
+   "url": "https://www.nhs.uk/tests-and-treatments/x-ray/",
+   "action": "kept"
+  },
+  {
+   "id": "c30",
+   "sentence": "The wait varies with how urgent the X-ray is.",
+   "classification": "unsupported",
+   "evidence": "Trust pages quote different waits (about ten working days to two weeks); urgency link not retrieved.",
+   "url": "",
+   "action": "edited",
+   "newSentence": "Trusts quote different waits for the report, so timings differ between hospitals."
+  },
+  {
+   "id": "c31",
+   "sentence": "An X-ray can produce images of many parts of the body, and the NHS lists fractures, teeth, lungs and the digestive system among them.",
+   "classification": "supported",
+   "evidence": "As claims 2 and 3.",
+   "url": "https://www.nhs.uk/tests-and-treatments/x-ray/",
+   "action": "kept"
+  },
+  {
+   "id": "c32",
+   "sentence": "The NHS describes X-rays as safe, with serious complications rare and a very small cancer risk linked to having lots of them.",
+   "classification": "unsupported",
+   "evidence": "As claims 14 and 15: 'safe' and 'serious complications rare' not confirmed in retrieved NHS text.",
+   "url": "https://www.nhs.uk/tests-and-treatments/x-ray/",
+   "action": "edited",
+   "newSentence": "The NHS says a standard X-ray leaves no after-effects and the cancer risk is thought to be very small."
+  },
+  {
+   "id": "c33",
+   "sentence": "Trust leaflets say X-rays in pregnancy do not raise the risk of miscarriage or birth defects, and that those of the abdomen and pelvis are usually avoided.",
+   "classification": "unsupported",
+   "evidence": "Retrieved: no miscarriage increase and no birth defects at typical doses; tummy X-rays need special care. 'Usually avoided' not retrieved.",
+   "url": "https://www.gloshospitals.nhs.uk/your-visit/patient-information-leaflets/risks-of-having-x-rays-and-ct-scans-during-pregnancy/",
+   "action": "edited",
+   "newSentence": "Trust leaflets say X-rays during pregnancy do not raise the risk of miscarriage, and that X-rays of the tummy or near the womb need special care."
+  },
+  {
+   "id": "c34",
+   "sentence": "Results may be given on the same day or at an appointment some weeks later, depending on the type of X-ray.",
+   "classification": "unsupported",
+   "evidence": "NHS says results may be the same day or at an appointment a few weeks after; dependence on type of X-ray not retrieved.",
+   "url": "https://www.nhs.uk/tests-and-treatments/x-ray/",
+   "action": "edited",
+   "newSentence": "The NHS says results may be given on the same day or at an appointment a few weeks later."
+  },
+  {
+   "id": "c35",
+   "sentence": "An X-ray uses a small beam of radiation to picture bones, lungs and other parts. This guide covers the test, radiation risk, pregnancy and results.",
+   "classification": "supported",
+   "evidence": "NHS and leaflets: X-rays image bones, lungs and other parts; radiation risk, pregnancy and results are covered. Second sentence is a contents summary.",
+   "url": "https://www.nhs.uk/tests-and-treatments/x-ray/",
+   "action": "kept"
+  }
+ ],
+ "notes": "Extra facts: (1) NHS says a standard X-ray leaves no after-effects and people can return to normal activities straight away (https://www.nhs.uk/tests-and-treatments/x-ray/). (2) NHS notes whitish stools for a few days after barium (same page). (3) UK joint position statement says pregnant patients should get relevant imaging while minimising radiation (https://www.rcr.ac.uk/news-policy/latest-updates/imaging-in-pregnancy-for-the-diagnosis-and-staging-of-suspected-cancer-joint-position-statement/). Dental X-ray safety in pregnancy and the 30-minute wait after dye were not found. Search results arrive as summaries, not verbatim page text."
+}
