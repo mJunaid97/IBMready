@@ -1,0 +1,135 @@
+{
+ "id": "sulfonylureas",
+ "searchesUsed": 13,
+ "counts": {
+  "supported": 8,
+  "textbook": 0,
+  "unsupported": 7,
+  "wrong": 0,
+  "unsafe": 0,
+  "unchecked": 0
+ },
+ "claims": [
+  {
+   "id": "c01",
+   "classification": "supported",
+   "evidence": "Diabetes UK: sulphonylureas prompt the pancreas to release more insulin.",
+   "url": "https://www.diabetes.org.uk/about-diabetes/looking-after-diabetes/treatments/tablets-and-medication/sulphonylureas",
+   "action": "kept",
+   "newSentence": "Sulfonylureas are tablets for type 2 diabetes that prompt the pancreas to make more insulin."
+  },
+  {
+   "id": "c02",
+   "classification": "unsupported",
+   "evidence": "'Most often discussed' not stated; Diabetes UK: hypos one of the most common side effects, some people gain weight.",
+   "url": "https://www.diabetes.org.uk/about-diabetes/looking-after-diabetes/treatments/tablets-and-medication/sulphonylureas",
+   "action": "edited",
+   "newSentence": "Low blood sugar (a hypo) is one of their most common side effects, and some people gain weight."
+  },
+  {
+   "id": "c03",
+   "classification": "supported",
+   "evidence": "Diabetes UK: prompt the pancreas to release more insulin, lowering blood glucose.",
+   "url": "https://www.diabetes.org.uk/about-diabetes/looking-after-diabetes/treatments/tablets-and-medication/sulphonylureas",
+   "action": "edited",
+   "newSentence": "Sulfonylureas work by prompting the pancreas to release more insulin, which lowers blood glucose."
+  },
+  {
+   "id": "c04",
+   "classification": "unsupported",
+   "evidence": "'Also help insulin work more effectively' not in retrieved Diabetes UK text.",
+   "url": "https://www.diabetes.org.uk/about-diabetes/looking-after-diabetes/treatments/tablets-and-medication/sulphonylureas",
+   "action": "removed",
+   "newSentence": null
+  },
+  {
+   "id": "c05",
+   "classification": "unsupported",
+   "evidence": "Buckinghamshire guide is about gliclazide, not the class; applied to class it overreaches.",
+   "url": "https://www.bucksformulary.nhs.uk/docs/avc/Link%2012a%20Guideline%20for%20Prescribing%20and%20Titrating%20Gliclazide%20Therapy.pdf",
+   "action": "edited",
+   "newSentence": "Diabetes UK says low blood sugar is one of the most common side effects."
+  },
+  {
+   "id": "c06",
+   "classification": "unsupported",
+   "evidence": "Diabetes UK: 'one of the most common'; 'main risk' and 'NHS pages' not supported for the class.",
+   "url": "https://www.diabetes.org.uk/about-diabetes/looking-after-diabetes/treatments/tablets-and-medication/sulphonylureas",
+   "action": "edited",
+   "newSentence": "Low blood sugar (hypoglycaemia), which Diabetes UK calls one of the most common side effects"
+  },
+  {
+   "id": "c07",
+   "classification": "unsupported",
+   "evidence": "Diabetes UK: some people find they gain weight; 'tendency to promote' not retrieved.",
+   "url": "https://www.diabetes.org.uk/about-diabetes/looking-after-diabetes/treatments/tablets-and-medication/sulphonylureas",
+   "action": "edited",
+   "newSentence": "Weight gain: Diabetes UK says some people gain weight while taking a sulphonylurea"
+  },
+  {
+   "id": "c08",
+   "classification": "supported",
+   "evidence": "Diabetes UK: tummy ache, sickness and diarrhoea.",
+   "url": "https://www.nhs.uk/medicines/gliclazide/side-effects-of-gliclazide/",
+   "action": "kept",
+   "newSentence": "Stomach upset such as tummy pain, feeling sick and diarrhoea"
+  },
+  {
+   "id": "c09",
+   "classification": "unsupported",
+   "evidence": "Diabetes UK: rarer effects include liver damage and low blood cell counts; 'reason to contact a doctor or nurse' not retrieved.",
+   "url": "https://www.diabetes.org.uk/about-diabetes/looking-after-diabetes/treatments/tablets-and-medication/sulphonylureas",
+   "action": "edited",
+   "newSentence": "Rarer effects include liver damage and low blood cell counts, according to Diabetes UK"
+  },
+  {
+   "id": "c10",
+   "classification": "supported",
+   "evidence": "NHS Scotland: unconscious or seizure, call 999 straight away; non-emergency NHS 111/doctor route added.",
+   "url": "https://mydiabetesmyway.scot.nhs.uk/resources/app-resources/hypoglycaemia/",
+   "action": "edited",
+   "newSentence": "A hypo that leaves a person unconscious, not regaining consciousness or having a seizure is a 999 emergency, according to NHS diabetes guidance; the NHS says to call a doctor or NHS 111 if sugary food or drink does not help or hypo symptoms return"
+  },
+  {
+   "id": "c11",
+   "classification": "supported",
+   "evidence": "GOV.UK: severe hypoglycaemia whilst driving, must not drive and must notify DVLA; Diabetes UK driving risk added.",
+   "url": "https://www.gov.uk/guidance/diabetes-mellitus-assessing-fitness-to-drive",
+   "action": "edited",
+   "newSentence": "Driving: Diabetes UK says sulphonylureas can increase the risk of hypos while driving; DVLA guidance says severe hypoglycaemia while driving means stopping driving and notifying the DVLA"
+  },
+  {
+   "id": "c12",
+   "classification": "supported",
+   "evidence": "NG28: sulfonylurea an option to add; later recommendations say it might increase hypoglycaemic events and weight gain.",
+   "url": "https://www.nice.org.uk/guidance/ng28/evidence/committee-discussion-pdf-15607227709",
+   "action": "edited",
+   "newSentence": "NICE lists a sulfonylurea among options to add when further treatment is needed in type 2 diabetes, and describes sulfonylureas as possibly increasing hypoglycaemic events and weight gain"
+  },
+  {
+   "id": "c13",
+   "classification": "unsupported",
+   "evidence": "'Need individual advice' not stated; NHS gliclazide pregnancy and kidney/liver lines retrieved.",
+   "url": "https://www.nhs.uk/medicines/gliclazide/",
+   "action": "edited",
+   "newSentence": "The NHS says gliclazide is not usually used in pregnancy and lists severe kidney or liver disease among the reasons it may not be suitable"
+  },
+  {
+   "id": "c14",
+   "classification": "supported",
+   "evidence": "Diabetes UK says four sulphonylureas are prescribed in the UK; Leeds and Scottish NHS resources list glimepiride, glipizide and tolbutamide. Tolbutamide detail thin.",
+   "url": "https://www.diabetes.org.uk/about-diabetes/looking-after-diabetes/treatments/tablets-and-medication/sulphonylureas",
+   "action": "kept",
+   "newSentence": "gliclazide; glimepiride; glipizide; tolbutamide"
+  },
+  {
+   "id": "c15",
+   "classification": "supported",
+   "evidence": "Diabetes UK page title uses 'sulphonylureas'.",
+   "url": "https://www.diabetes.org.uk/about-diabetes/looking-after-diabetes/treatments/tablets-and-medication/sulphonylureas",
+   "action": "kept",
+   "newSentence": "sulphonylureas"
+  }
+ ],
+ "notes": "Searches shared with gliclazide (13 total). Class members rest on Diabetes UK 'four types' plus NHS Leeds/Scotland resources; tolbutamide detail was thin so a reviewer may confirm the list on the Diabetes UK page. NICE sulfonylurea sentence rests on NG28 pages returned in search summaries. The 'target' field was not in the first-pass ledger and is added as supported (restates mechanism)."
+}

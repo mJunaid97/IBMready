@@ -1,0 +1,87 @@
+{
+ "id": "sglt2-inhibitors",
+ "searchesUsed": 12,
+ "counts": {
+  "supported": 4,
+  "textbook": 1,
+  "unsupported": 4,
+  "wrong": 0,
+  "unsafe": 0,
+  "unchecked": 0
+ },
+ "claims": [
+  {
+   "id": "c01",
+   "classification": "unsupported",
+   "evidence": "\"gliflozins\"/Leeds attribution and \"heart failure or kidney disease\" not retrieved from Leeds; NHS dapagliflozin and CUH retrieved give the uses",
+   "url": "https://www.nhs.uk/medicines/dapagliflozin/about-dapagliflozin/",
+   "action": "edited",
+   "newSentence": "SGLT2 inhibitors are tablets used for type 2 diabetes, heart failure and chronic kidney disease."
+  },
+  {
+   "id": "c02",
+   "classification": "supported",
+   "evidence": "NHS: dapagliflozin makes kidneys remove extra sugar in urine (Leeds/CUH not retrieved for this; reworded to NHS wording)",
+   "url": "https://www.nhs.uk/medicines/dapagliflozin/about-dapagliflozin/",
+   "action": "edited",
+   "newSentence": "They lower blood sugar by acting on the kidneys, as the NHS describes for dapagliflozin."
+  },
+  {
+   "id": "c03",
+   "classification": "textbook",
+   "evidence": "Standard expansion of SGLT2",
+   "url": "https://www.nhs.uk/medicines/dapagliflozin/about-dapagliflozin/",
+   "action": "kept",
+   "newSentence": "SGLT2 stands for sodium-glucose cotransporter-2."
+  },
+  {
+   "id": "c04",
+   "classification": "supported",
+   "evidence": "NHS About page",
+   "url": "https://www.nhs.uk/medicines/dapagliflozin/about-dapagliflozin/",
+   "action": "kept",
+   "newSentence": "The NHS says dapagliflozin, a medicine of this type, makes the kidneys remove extra sugar in the urine, which lowers blood sugar."
+  },
+  {
+   "id": "c05",
+   "classification": "supported",
+   "evidence": "CUH excerpt: benefits apply beyond people with diabetes (original \"all individuals\" wording tightened)",
+   "url": "https://www.cuh.nhs.uk/patient-information/sodium-glucose-cotransporter-2-sglt-2-inhibitors-in-type-2-diabetes/",
+   "action": "edited",
+   "newSentence": "Cambridge University Hospitals says the kidney and heart benefits of these medicines apply beyond people with diabetes."
+  },
+  {
+   "id": "c06",
+   "classification": "unsupported",
+   "evidence": "CUH thrush \"more likely / mostly mild\" not retrieved; Leeds lists thrush as common",
+   "url": "https://www.leedsth.nhs.uk/patients/resources/information-for-people-on-sglt-2-inhibitors/",
+   "action": "edited",
+   "newSentence": "Leeds Teaching Hospitals lists genital fungal infections such as thrush as a common side effect of these medicines"
+  },
+  {
+   "id": "c07",
+   "classification": "unsupported",
+   "evidence": "\"Rare\" and \"even when glucose is normal\" not in retrieved Leeds text (the latter is euglycaemic DKA from a NE London checklist); Leeds retrieved: ketone build-up, warning symptoms",
+   "url": "https://www.leedsth.nhs.uk/patients/resources/information-for-people-on-sglt-2-inhibitors/",
+   "action": "edited",
+   "newSentence": "Leeds Teaching Hospitals says these medicines may cause acids called ketones to build up in the blood (diabetic ketoacidosis), with warning symptoms including stomach pain, feeling sick and vomiting, rapid breathing and dehydration, which need urgent medical help (a doctor or NHS 111 promptly, or 999 in an emergency)"
+  },
+  {
+   "id": "c08",
+   "classification": "unsupported",
+   "evidence": "Leeds named only as sick-day source but retrieval gives an NHS leaflet; CUH not retrieved; \"fever\" not confirmed (infection, diarrhoea and vomiting, flu were)",
+   "url": "https://swlimo.southwestlondon.icb.nhs.uk/wp-content/uploads/SGLT2-inhibitors-and-Heart-Failure-Information-for-patients-relatives-and-carers-V1.0.pdf",
+   "action": "edited",
+   "newSentence": "NHS leaflets describe sick day rules, in which the medicine is stopped temporarily during illness such as infection, diarrhoea and vomiting or flu"
+  },
+  {
+   "id": "c09",
+   "classification": "supported",
+   "evidence": "NHS leaflet/dapagliflozin page: rare genital/perineal infection, emergency treatment; pain, tenderness, redness, fever/malaise (CUH attribution not confirmed)",
+   "url": "https://www.nhs.uk/medicines/dapagliflozin/side-effects-of-dapagliflozin/",
+   "action": "edited",
+   "newSentence": "Severe pain, tenderness, swelling or redness around the genitals or the area between them and the anus, with fever or feeling unwell, can be a rare infection called Fournier gangrene and needs emergency help (call 999)"
+  }
+ ],
+ "notes": "Class page checked with the same 12 searches as dapagliflozin. The Leeds and CUH leaflets were only seen through search summaries (CUH excerpt supports only the \"beyond diabetes\" point). Dropped \"also called gliflozins\" from the summary (kept as alias; plain synonym, unretrieved). Removed the unused \"updated\" key (no entity in content/drug-classes.json has it). The 999 route for ketoacidosis is the site signposting rule; sources say urgent help. Fournier gangrene attribution is to NHS pages rather than CUH."
+}

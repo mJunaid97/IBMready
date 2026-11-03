@@ -1,0 +1,671 @@
+{
+ "id": "ezetimibe",
+ "searchesUsed": 13,
+ "counts": {
+  "supported": 57,
+  "textbook": 3,
+  "unsupported": 17,
+  "wrong": 0,
+  "unsafe": 5,
+  "unchecked": 0
+ },
+ "claims": [
+  {
+   "id": "c01",
+   "classification": "supported",
+   "evidence": "NHS: ezetimibe is prescribed; Heart UK: partly blocks cholesterol absorption in small intestine. 'Prescription-only' not stated verbatim.",
+   "url": "https://www.nhs.uk/medicines/ezetimibe/about-ezetimibe/",
+   "action": "edited",
+   "newSentence": "Ezetimibe is a prescribed cholesterol-lowering medicine that works by reducing how much cholesterol the gut absorbs."
+  },
+  {
+   "id": "c02",
+   "classification": "supported",
+   "evidence": "NHS: prescribed if cannot take statins or statin does not work; can be used alongside statins.",
+   "url": "https://www.nhs.uk/medicines/ezetimibe/about-ezetimibe/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c03",
+   "classification": "unsafe",
+   "evidence": "NHS says contact a doctor or call 111 straight away; 'reported to a doctor' vague route; MedlinePlus part not retrieved.",
+   "url": "https://www.nhs.uk/medicines/ezetimibe/side-effects-of-ezetimibe/",
+   "action": "edited",
+   "newSentence": "Unexplained muscle pain, tenderness or weakness, or yellowing of the skin or eyes, needs a doctor or NHS 111 straight away."
+  },
+  {
+   "id": "c04",
+   "classification": "supported",
+   "evidence": "NHS About page.",
+   "url": "https://www.nhs.uk/medicines/ezetimibe/about-ezetimibe/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c05",
+   "classification": "supported",
+   "evidence": "NHS: prescribed if cannot take statins/statin fails.",
+   "url": "https://www.nhs.uk/medicines/ezetimibe/about-ezetimibe/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c06",
+   "classification": "supported",
+   "evidence": "NHS: used alongside statins; Heart UK: effects add up.",
+   "url": "https://www.heartuk.org.uk/getting-treatment/ezetimibe",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c07",
+   "classification": "supported",
+   "evidence": "TA385 1.1-1.4 as returned; add-on wording tightened to 'remains inadequately controlled'.",
+   "url": "https://www.nice.org.uk/guidance/ta385/chapter/1-recommendations",
+   "action": "edited",
+   "newSentence": "NICE TA385 ... alone when a statin is contraindicated or not tolerated, or added to a statin when cholesterol remains inadequately controlled."
+  },
+  {
+   "id": "c08",
+   "classification": "supported",
+   "evidence": "Heart UK: partially blocks absorption of cholesterol in small intestine.",
+   "url": "https://www.heartuk.org.uk/getting-treatment/ezetimibe",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c09",
+   "classification": "unsupported",
+   "evidence": "Retrieved NHS text did not state this wording.",
+   "url": "https://www.nhs.uk/medicines/ezetimibe/about-ezetimibe/",
+   "action": "removed",
+   "newSentence": null
+  },
+  {
+   "id": "c10",
+   "classification": "supported",
+   "evidence": "Heart UK: works differently from statins; combined because effects add up.",
+   "url": "https://www.heartuk.org.uk/getting-treatment/ezetimibe",
+   "action": "edited",
+   "newSentence": "Heart UK says ezetimibe works in a different way from statins, and that the two are often combined because their effects add up."
+  },
+  {
+   "id": "c11",
+   "classification": "supported",
+   "evidence": "NHS: usually lowers cholesterol within 2 weeks ('if taken as prescribed' qualifier not retrieved).",
+   "url": "https://www.nhs.uk/medicines/ezetimibe/about-ezetimibe/",
+   "action": "edited",
+   "newSentence": "The NHS says ezetimibe usually lowers cholesterol levels within 2 weeks."
+  },
+  {
+   "id": "c12",
+   "classification": "supported",
+   "evidence": "NHS: if you stop, cholesterol may rise again.",
+   "url": "https://www.nhs.uk/medicines/ezetimibe/about-ezetimibe/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c13",
+   "classification": "supported",
+   "evidence": "NHS side effects: abdominal pain, diarrhoea, flatulence, tiredness.",
+   "url": "https://www.nhs.uk/medicines/ezetimibe/side-effects-of-ezetimibe/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c14",
+   "classification": "supported",
+   "evidence": "NHS: common side effects more than 1 in 100.",
+   "url": "https://www.nhs.uk/medicines/ezetimibe/side-effects-of-ezetimibe/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c15",
+   "classification": "supported",
+   "evidence": "Heart UK: most common with a statin are muscle pain, headaches, moderately raised liver enzymes.",
+   "url": "https://www.heartuk.org.uk/getting-treatment/ezetimibe",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c16",
+   "classification": "supported",
+   "evidence": "NHS: no effect on contraception; severe diarrhoea over 24 hours may stop pills working.",
+   "url": "https://www.nhs.uk/medicines/ezetimibe/pregnancy-breastfeeding-and-fertility-while-taking-ezetimibe/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c17",
+   "classification": "unsupported",
+   "evidence": "NHS: unexplained muscle pain, tenderness, weakness or cramps -> doctor/111 straight away. MedlinePlus muscle claim not retrieved.",
+   "url": "https://www.nhs.uk/medicines/ezetimibe/side-effects-of-ezetimibe/",
+   "action": "edited",
+   "newSentence": "Unexplained muscle pain, tenderness, weakness or cramps are listed by the NHS as serious side effects, and the NHS advises contacting a doctor or NHS 111 straight away."
+  },
+  {
+   "id": "c18",
+   "classification": "unsafe",
+   "evidence": "NHS says doctor or 111 straight away, not 'same-day GP'; route mismatched.",
+   "url": "https://www.nhs.uk/medicines/ezetimibe/side-effects-of-ezetimibe/",
+   "action": "edited",
+   "newSentence": "Yellowing of the skin or eyes (with pale poo and dark pee) can be a sign of liver trouble, and severe pain just under the ribs can point to pancreas trouble; the NHS advises contacting a doctor or NHS 111 straight away."
+  },
+  {
+   "id": "c19",
+   "classification": "supported",
+   "evidence": "NHS: swelling/breathing trouble/rash with anaphylaxis -> 999.",
+   "url": "https://www.nhs.uk/medicines/ezetimibe/side-effects-of-ezetimibe/",
+   "action": "edited",
+   "newSentence": "... or a severe rash may be a serious allergic reaction (anaphylaxis) and needs a 999 call."
+  },
+  {
+   "id": "c20",
+   "classification": "supported",
+   "evidence": "NHS who can and cannot take.",
+   "url": "https://www.nhs.uk/medicines/ezetimibe/who-can-and-cannot-take-ezetimibe/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c21",
+   "classification": "supported",
+   "evidence": "NHS: not usually recommended in pregnancy, limited safety information; specialists may prescribe for very high cholesterol.",
+   "url": "https://www.nhs.uk/medicines/ezetimibe/pregnancy-breastfeeding-and-fertility-while-taking-ezetimibe/",
+   "action": "edited",
+   "newSentence": "... mainly because there is limited safety information ..."
+  },
+  {
+   "id": "c22",
+   "classification": "unsafe",
+   "evidence": "Misleading by omission: SmPC says not to be used during lactation, SPS says use with caution; NHS says may be acceptable and doctor may advise against.",
+   "url": "https://www.nhs.uk/medicines/ezetimibe/pregnancy-breastfeeding-and-fertility-while-taking-ezetimibe/",
+   "action": "edited",
+   "newSentence": "On breastfeeding, the NHS says ezetimibe may be acceptable and that a doctor or pharmacist may advise against it; SPS says it can be used with caution, while UK product information says it should not be used during lactation."
+  },
+  {
+   "id": "c23",
+   "classification": "unsupported",
+   "evidence": "Leaflets: with a statin not advised in liver problems, pregnancy or breastfeeding; 'when trying to conceive' not retrieved.",
+   "url": "https://www.medicines.org.uk/emc/product/14259/pil",
+   "action": "edited",
+   "newSentence": "UK patient leaflets advise against combining ezetimibe with a statin in current liver problems, in pregnancy or when breastfeeding, and say ezetimibe alone is not recommended in moderate or severe liver problems."
+  },
+  {
+   "id": "c24",
+   "classification": "unsupported",
+   "evidence": "NHS retrieved text named bezafibrate and colestyramine only; ciclosporin/warfarin come from the ezetimibe SmPC/leaflet, not the NHS list.",
+   "url": "https://www.nhs.uk/medicines/ezetimibe/taking-ezetimibe-with-other-medicines-and-herbal-supplements/",
+   "action": "edited",
+   "newSentence": "The NHS lists other cholesterol-lowering medicines such as bezafibrate and colestyramine as medicines to mention to a doctor before starting ezetimibe."
+  },
+  {
+   "id": "c25",
+   "classification": "unsupported",
+   "evidence": "Not retrieved: only ezetimibe SmPC ciclosporin caution/monitoring seen; combination-product rhabdomyolysis sentence not found.",
+   "url": "https://www.medicines.org.uk/emc/product/14259/smpc",
+   "action": "removed",
+   "newSentence": null
+  },
+  {
+   "id": "c26",
+   "classification": "unsupported",
+   "evidence": "Not retrieved (fibrate/simvastatin sentence); only atorvastatin combination SmPC fibrate 'not recommended' seen.",
+   "url": "https://www.medicines.org.uk/emc/product/14259/smpc",
+   "action": "removed",
+   "newSentence": null
+  },
+  {
+   "id": "c27",
+   "classification": "unsupported",
+   "evidence": "NHS says complementary medicines are not tested in the same way and generally not tested for effects on other medicines; 'not enough information' wording not retrieved.",
+   "url": "https://www.nhs.uk/medicines/ezetimibe/taking-ezetimibe-with-other-medicines-and-herbal-supplements/",
+   "action": "edited",
+   "newSentence": "The NHS says complementary medicines, herbal remedies and supplements are not tested in the same way as pharmacy and prescription medicines, and are generally not tested for their effect on other medicines."
+  },
+  {
+   "id": "c28",
+   "classification": "unsupported",
+   "evidence": "SmPC: liver function tests when combined with a statin, at initiation and per statin schedule; qualifier 'with a statin' was missing.",
+   "url": "https://www.medicines.org.uk/emc/product/14259/smpc",
+   "action": "edited",
+   "newSentence": "When ezetimibe is taken with a statin, UK product information says liver function is checked when treatment starts and then as recommended for the statin."
+  },
+  {
+   "id": "c29",
+   "classification": "textbook",
+   "evidence": "Plain fact.",
+   "url": null,
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c30",
+   "classification": "supported",
+   "evidence": "NHS says ezetimibe is prescribed; explicit 'prescription only' not seen (flagged).",
+   "url": "https://www.nhs.uk/medicines/ezetimibe/about-ezetimibe/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c31",
+   "classification": "supported",
+   "evidence": "emc lists Ezetrol 10mg Tablets SmPC (product 6792); FDA label titled ZETIA.",
+   "url": "https://www.medicines.org.uk/emc/product/6792/smpc",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c32",
+   "classification": "supported",
+   "evidence": "NHS: prescribed; a tablet.",
+   "url": "https://www.nhs.uk/medicines/ezetimibe/about-ezetimibe/",
+   "action": "edited",
+   "newSentence": "... prescribed by a doctor and comes as tablets."
+  },
+  {
+   "id": "c33",
+   "classification": "supported",
+   "evidence": "NHS About.",
+   "url": "https://www.nhs.uk/medicines/ezetimibe/about-ezetimibe/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c34",
+   "classification": "supported",
+   "evidence": "NHS About.",
+   "url": "https://www.nhs.uk/medicines/ezetimibe/about-ezetimibe/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c35",
+   "classification": "supported",
+   "evidence": "TA385 monotherapy where statin contraindicated or not tolerated.",
+   "url": "https://www.nice.org.uk/guidance/ta385/chapter/1-recommendations",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c36",
+   "classification": "supported",
+   "evidence": "TA385 1.4: inadequately controlled despite titration or titration limited by intolerance, and change of statin being considered.",
+   "url": "https://www.nice.org.uk/guidance/ta385/chapter/1-recommendations",
+   "action": "edited",
+   "newSentence": "The same guidance allows it to be added to a statin when cholesterol remains inadequately controlled despite adjusting the statin dose, or when the dose is limited by intolerance, and a change to a different statin is being considered."
+  },
+  {
+   "id": "c37",
+   "classification": "textbook",
+   "evidence": "Plain fact.",
+   "url": null,
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c38",
+   "classification": "supported",
+   "evidence": "NHS: usually for life.",
+   "url": "https://www.nhs.uk/medicines/ezetimibe/about-ezetimibe/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c39",
+   "classification": "supported",
+   "evidence": "Heart UK.",
+   "url": "https://www.heartuk.org.uk/getting-treatment/ezetimibe",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c40",
+   "classification": "unsupported",
+   "evidence": "Not retrieved.",
+   "url": "https://www.nhs.uk/medicines/ezetimibe/about-ezetimibe/",
+   "action": "removed",
+   "newSentence": null
+  },
+  {
+   "id": "c41",
+   "classification": "supported",
+   "evidence": "Heart UK.",
+   "url": "https://www.heartuk.org.uk/getting-treatment/ezetimibe",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c42",
+   "classification": "supported",
+   "evidence": "NHS: usually within 2 weeks.",
+   "url": "https://www.nhs.uk/medicines/ezetimibe/about-ezetimibe/",
+   "action": "edited",
+   "newSentence": "The NHS says ezetimibe usually lowers cholesterol levels within 2 weeks."
+  },
+  {
+   "id": "c43",
+   "classification": "supported",
+   "evidence": "NHS.",
+   "url": "https://www.nhs.uk/medicines/ezetimibe/about-ezetimibe/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c44",
+   "classification": "supported",
+   "evidence": "NHS side effects.",
+   "url": "https://www.nhs.uk/medicines/ezetimibe/side-effects-of-ezetimibe/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c45",
+   "classification": "unsupported",
+   "evidence": "1 in 100 supported; 'a doctor can be seen if they persist' not retrieved.",
+   "url": "https://www.nhs.uk/medicines/ezetimibe/side-effects-of-ezetimibe/",
+   "action": "edited",
+   "newSentence": "The NHS says these common side effects affect more than 1 in 100 people."
+  },
+  {
+   "id": "c46",
+   "classification": "supported",
+   "evidence": "Heart UK.",
+   "url": "https://www.heartuk.org.uk/getting-treatment/ezetimibe",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c47",
+   "classification": "supported",
+   "evidence": "NHS lists muscle, liver/pancreas problems and anaphylaxis as serious/rare.",
+   "url": "https://www.nhs.uk/medicines/ezetimibe/side-effects-of-ezetimibe/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c48",
+   "classification": "unsupported",
+   "evidence": "NHS part supported; MedlinePlus muscle claim not retrieved.",
+   "url": "https://www.nhs.uk/medicines/ezetimibe/side-effects-of-ezetimibe/",
+   "action": "edited",
+   "newSentence": "The NHS lists unexplained muscle pain, tenderness, weakness or cramps as serious ... contact a doctor or NHS 111 straight away."
+  },
+  {
+   "id": "c49",
+   "classification": "unsafe",
+   "evidence": "Route 'same-day GP' not what NHS says (doctor or 111 straight away).",
+   "url": "https://www.nhs.uk/medicines/ezetimibe/side-effects-of-ezetimibe/",
+   "action": "edited",
+   "newSentence": "... the NHS advises contacting a doctor or NHS 111 straight away."
+  },
+  {
+   "id": "c50",
+   "classification": "supported",
+   "evidence": "NHS 999 for anaphylaxis.",
+   "url": "https://www.nhs.uk/medicines/ezetimibe/side-effects-of-ezetimibe/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c51",
+   "classification": "supported",
+   "evidence": "NHS.",
+   "url": "https://www.nhs.uk/medicines/ezetimibe/pregnancy-breastfeeding-and-fertility-while-taking-ezetimibe/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c52",
+   "classification": "unsupported",
+   "evidence": "Ciclosporin/warfarin not in retrieved NHS list; bezafibrate and colestyramine are.",
+   "url": "https://www.nhs.uk/medicines/ezetimibe/taking-ezetimibe-with-other-medicines-and-herbal-supplements/",
+   "action": "edited",
+   "newSentence": "The NHS lists other cholesterol-lowering medicines such as bezafibrate and colestyramine ..."
+  },
+  {
+   "id": "c53",
+   "classification": "supported",
+   "evidence": "SmPC: most with rhabdomyolysis were taking a statin or other agents such as fibrates.",
+   "url": "https://www.medicines.org.uk/emc/product/14259/smpc",
+   "action": "edited",
+   "newSentence": "UK product information says most people who developed rhabdomyolysis after ezetimibe came to market were taking a statin or another medicine linked with a higher risk, such as a fibrate."
+  },
+  {
+   "id": "c54",
+   "classification": "textbook",
+   "evidence": "Plain fact.",
+   "url": null,
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c55",
+   "classification": "unsupported",
+   "evidence": "Not retrieved.",
+   "url": "https://www.medicines.org.uk/emc/product/14259/smpc",
+   "action": "removed",
+   "newSentence": null
+  },
+  {
+   "id": "c56",
+   "classification": "unsupported",
+   "evidence": "Not retrieved.",
+   "url": "https://www.medicines.org.uk/emc/product/14259/smpc",
+   "action": "removed",
+   "newSentence": null
+  },
+  {
+   "id": "c57",
+   "classification": "supported",
+   "evidence": "Leaflets: with a statin not advised in current liver problems.",
+   "url": "https://www.medicines.org.uk/emc/product/14259/pil",
+   "action": "edited",
+   "newSentence": "Merged into the leaflet sentence on liver problems, pregnancy and breastfeeding."
+  },
+  {
+   "id": "c58",
+   "classification": "supported",
+   "evidence": "NHS who can and cannot take.",
+   "url": "https://www.nhs.uk/medicines/ezetimibe/who-can-and-cannot-take-ezetimibe/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c59",
+   "classification": "supported",
+   "evidence": "NHS pregnancy page.",
+   "url": "https://www.nhs.uk/medicines/ezetimibe/pregnancy-breastfeeding-and-fertility-while-taking-ezetimibe/",
+   "action": "edited",
+   "newSentence": "... limited safety information ..."
+  },
+  {
+   "id": "c60",
+   "classification": "unsupported",
+   "evidence": "'Trying to conceive' not retrieved; leaflets say pregnancy and breastfeeding.",
+   "url": "https://www.medicines.org.uk/emc/product/14259/pil",
+   "action": "edited",
+   "newSentence": "UK patient leaflets advise against combining ezetimibe with a statin ... in pregnancy or when breastfeeding."
+  },
+  {
+   "id": "c61",
+   "classification": "supported",
+   "evidence": "NHS: may be acceptable; doctor/pharmacist may advise against.",
+   "url": "https://www.nhs.uk/medicines/ezetimibe/pregnancy-breastfeeding-and-fertility-while-taking-ezetimibe/",
+   "action": "edited",
+   "newSentence": "... may be acceptable and a doctor or pharmacist may advise against it."
+  },
+  {
+   "id": "c62",
+   "classification": "supported",
+   "evidence": "SPS: use with caution and infant monitoring.",
+   "url": "https://sps.nhs.uk/articles/using-lipid-lowering-medicines-during-breastfeeding/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c63",
+   "classification": "unsupported",
+   "evidence": "Qualifier 'with a statin' missing.",
+   "url": "https://www.medicines.org.uk/emc/product/14259/smpc",
+   "action": "edited",
+   "newSentence": "When ezetimibe is taken with a statin, UK product information says liver function is checked ..."
+  },
+  {
+   "id": "c64",
+   "classification": "supported",
+   "evidence": "NHS.",
+   "url": "https://www.nhs.uk/medicines/ezetimibe/about-ezetimibe/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c65",
+   "classification": "supported",
+   "evidence": "TA385.",
+   "url": "https://www.nice.org.uk/guidance/ta385/chapter/1-recommendations",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c66",
+   "classification": "supported",
+   "evidence": "NHS.",
+   "url": "https://www.nhs.uk/medicines/ezetimibe/about-ezetimibe/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c67",
+   "classification": "supported",
+   "evidence": "NHS: used alongside statins.",
+   "url": "https://www.nhs.uk/medicines/ezetimibe/about-ezetimibe/",
+   "action": "edited",
+   "newSentence": "The NHS says ezetimibe can be used alongside a statin for people who need extra help lowering cholesterol."
+  },
+  {
+   "id": "c68",
+   "classification": "supported",
+   "evidence": "TA385 1.4.",
+   "url": "https://www.nice.org.uk/guidance/ta385/chapter/1-recommendations",
+   "action": "edited",
+   "newSentence": "... remains inadequately controlled despite adjusting the statin dose, or when the dose is limited by intolerance."
+  },
+  {
+   "id": "c69",
+   "classification": "supported",
+   "evidence": "Heart UK.",
+   "url": "https://www.heartuk.org.uk/getting-treatment/ezetimibe",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c70",
+   "classification": "unsupported",
+   "evidence": "MedlinePlus muscle claim not retrieved.",
+   "url": "https://www.nhs.uk/medicines/ezetimibe/side-effects-of-ezetimibe/",
+   "action": "edited",
+   "newSentence": "The NHS lists unexplained muscle pain, tenderness, weakness or cramps as serious side effects and advises contacting a doctor or NHS 111 straight away."
+  },
+  {
+   "id": "c71",
+   "classification": "supported",
+   "evidence": "SmPC.",
+   "url": "https://www.medicines.org.uk/emc/product/14259/smpc",
+   "action": "edited",
+   "newSentence": "... were taking a statin or another medicine linked with a higher risk."
+  },
+  {
+   "id": "c72",
+   "classification": "supported",
+   "evidence": "NHS.",
+   "url": "https://www.nhs.uk/medicines/ezetimibe/pregnancy-breastfeeding-and-fertility-while-taking-ezetimibe/",
+   "action": "edited",
+   "newSentence": "... limited safety information ..."
+  },
+  {
+   "id": "c73",
+   "classification": "supported",
+   "evidence": "NHS.",
+   "url": "https://www.nhs.uk/medicines/ezetimibe/pregnancy-breastfeeding-and-fertility-while-taking-ezetimibe/",
+   "action": "edited",
+   "newSentence": "... may be acceptable and ... may advise against it."
+  },
+  {
+   "id": "c74",
+   "classification": "supported",
+   "evidence": "SPS.",
+   "url": "https://sps.nhs.uk/articles/using-lipid-lowering-medicines-during-breastfeeding/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c75",
+   "classification": "supported",
+   "evidence": "NHS.",
+   "url": "https://www.nhs.uk/medicines/ezetimibe/who-can-and-cannot-take-ezetimibe/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c76",
+   "classification": "supported",
+   "evidence": "emc Ezetrol SmPC.",
+   "url": "https://www.medicines.org.uk/emc/product/6792/smpc",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c77",
+   "classification": "supported",
+   "evidence": "NHS prescribed.",
+   "url": "https://www.nhs.uk/medicines/ezetimibe/about-ezetimibe/",
+   "action": "edited",
+   "newSentence": "Cholesterol absorption inhibitor, prescribed as tablets"
+  },
+  {
+   "id": "c78",
+   "classification": "supported",
+   "evidence": "NHS tablet.",
+   "url": "https://www.nhs.uk/medicines/ezetimibe/about-ezetimibe/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c79",
+   "classification": "supported",
+   "evidence": "Heart UK.",
+   "url": "https://www.heartuk.org.uk/getting-treatment/ezetimibe",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c80",
+   "classification": "supported",
+   "evidence": "NHS.",
+   "url": "https://www.nhs.uk/medicines/ezetimibe/about-ezetimibe/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c81",
+   "classification": "supported",
+   "evidence": "NHS.",
+   "url": "https://www.nhs.uk/medicines/ezetimibe/about-ezetimibe/",
+   "action": "kept",
+   "newSentence": null
+  },
+  {
+   "id": "c82",
+   "classification": "unsafe",
+   "evidence": "No route given; MedlinePlus part not retrieved.",
+   "url": "https://www.nhs.uk/medicines/ezetimibe/side-effects-of-ezetimibe/",
+   "action": "edited",
+   "newSentence": "Unexplained muscle pain, tenderness or weakness, and yellowing of the skin or eyes (Needs a doctor or NHS 111 straight away)."
+  }
+ ],
+ "notes": "13 searches shared with the class. Original ledgers were overwritten with final-sentence ledgers; claim ids c01.. follow the first-pass ledger order (82 rows, indices+1). Doubts: (1) 'prescription only' not stated verbatim in retrieved text, NHS says 'prescribed' - regulatory status field kept, human should confirm on the NHS About page or BNF; (2) route 'doctor or NHS 111 straight away' retrieved for muscle pain and yellowing; applied to ribs pain as part of the same NHS serious list, not verbatim; (3) NPC1L1 sentence rests on a PMC review, not an NHS/NICE page, and the molecular steps are described as debated; (4) breastfeeding sources disagree (NHS may be OK, SPS caution, SmPC not during lactation) - all three shown; (5) NG238 sentence from search summary only; (6) 'fewer than 1 in 10,000' and 'severe rash' from search summary of the NHS page; (7) emc leaflets for ezetimibe 10mg were summarised, one summary noted a leaflet heading error about statins - liver/pregnancy leaflet statements relate to combined statin use; (8) urlAliases ezetrol/zetia left unchanged (brands confirmed by emc Ezetrol SmPC and FDA Zetia label); MedlinePlus reference kept but no prose claim relies on it; emc 9278 SmPC reference replaced by 14259 SmPC (retrieved). Textbook sentences: 3 of 82."
+}

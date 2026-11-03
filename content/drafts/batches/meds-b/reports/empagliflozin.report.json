@@ -1,0 +1,663 @@
+{
+ "id": "empagliflozin",
+ "searchesUsed": 11,
+ "counts": {
+  "supported": 44,
+  "textbook": 0,
+  "unsupported": 26,
+  "wrong": 3,
+  "unsafe": 8,
+  "unchecked": 0
+ },
+ "claims": [
+  {
+   "id": "c01",
+   "classification": "supported",
+   "evidence": "NHS title; about page: prescription only",
+   "url": "https://www.nhs.uk/medicines/empagliflozin/about-empagliflozin/",
+   "action": "kept",
+   "newSentence": "Empagliflozin is a prescription medicine used to treat type 2 diabetes, heart failure and chronic kidney disease."
+  },
+  {
+   "id": "c02",
+   "classification": "supported",
+   "evidence": "NHS brand; Gateshead title lists as SGLT2 inhibitor",
+   "url": "https://www.nhs.uk/medicines/empagliflozin/about-empagliflozin/",
+   "action": "kept",
+   "newSentence": "It is a sodium-glucose co-transporter-2 (SGLT2) inhibitor, and its brand name is Jardiance."
+  },
+  {
+   "id": "c03",
+   "classification": "unsupported",
+   "evidence": "Retrieved text does not call UTI/dehydration \"main cautions\"; SmPC: diuretic add-on dehydration; NHS: 999 for suspected DKA",
+   "url": "https://www.medicines.org.uk/emc/product/5441/smpc",
+   "action": "edited",
+   "newSentence": "The main cautions include thrush, dehydration when it is combined with diuretics, and a serious build-up of ketones called diabetic ketoacidosis, which the NHS says needs a 999 call if suspected."
+  },
+  {
+   "id": "c04",
+   "classification": "supported",
+   "evidence": "NHS/MedlinePlus: lowers blood sugar",
+   "url": "https://www.nhs.uk/medicines/empagliflozin/",
+   "action": "kept",
+   "newSentence": "Type 2 diabetes, to lower blood sugar levels"
+  },
+  {
+   "id": "c05",
+   "classification": "supported",
+   "evidence": "TA773/TA929",
+   "url": "https://www.nice.org.uk/guidance/ta773/resources/empagliflozin-for-treating-chronic-heart-failure-with-reduced-ejection-fraction-pdf-82611494690245",
+   "action": "kept",
+   "newSentence": "Heart failure, including symptomatic chronic heart failure as recommended by NICE"
+  },
+  {
+   "id": "c06",
+   "classification": "supported",
+   "evidence": "TA942",
+   "url": "https://www.nice.org.uk/guidance/ta942/resources/empagliflozin-for-treating-chronic-kidney-disease-pdf-82615665176773",
+   "action": "kept",
+   "newSentence": "Chronic kidney disease in adults, as recommended by NICE under specific conditions"
+  },
+  {
+   "id": "c07",
+   "classification": "supported",
+   "evidence": "NHS/Gateshead",
+   "url": "https://www.nhs.uk/medicines/empagliflozin/common-questions-about-empagliflozin/",
+   "action": "kept",
+   "newSentence": "Empagliflozin is a type of medicine known as a sodium-glucose co-transporter-2 (SGLT2) inhibitor."
+  },
+  {
+   "id": "c08",
+   "classification": "supported",
+   "evidence": "NHS/MedlinePlus: kidneys get rid of more glucose",
+   "url": "https://www.nhs.uk/medicines/empagliflozin/common-questions-about-empagliflozin/",
+   "action": "kept",
+   "newSentence": "In diabetes it lowers blood sugar by helping remove extra sugar from the body through the urine."
+  },
+  {
+   "id": "c09",
+   "classification": "supported",
+   "evidence": "NHS: reduces heart workload",
+   "url": "https://www.nhs.uk/medicines/empagliflozin/common-questions-about-empagliflozin/",
+   "action": "kept",
+   "newSentence": "In heart failure it reduces the amount of work the heart has to do."
+  },
+  {
+   "id": "c10",
+   "classification": "unsupported",
+   "evidence": "No retrieved text says how it works in kidney disease (pressure/inflammation)",
+   "url": "https://www.nhs.uk/medicines/empagliflozin/common-questions-about-empagliflozin/",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c11",
+   "classification": "supported",
+   "evidence": "NHS timings",
+   "url": "https://www.nhs.uk/medicines/empagliflozin/common-questions-about-empagliflozin/",
+   "action": "kept",
+   "newSentence": "The NHS says it starts to lower blood sugar after about 1 to 2 hours and may take up to a week to work fully, while in heart failure it can be a month or 2 before symptoms improve."
+  },
+  {
+   "id": "c12",
+   "classification": "supported",
+   "evidence": "NHS lists these",
+   "url": "https://www.nhs.uk/medicines/empagliflozin/side-effects-of-empagliflozin/",
+   "action": "kept",
+   "newSentence": "The NHS lists thrush, needing to pee more often, feeling more thirsty than usual and skin rash as common side effects."
+  },
+  {
+   "id": "c13",
+   "classification": "unsupported",
+   "evidence": "NHS summary: low blood sugar can happen if you skip meals, drink alcohol or take other diabetes medicines; insulin/sulfonylurea named and the early-sign list not retrieved",
+   "url": "https://www.nhs.uk/medicines/empagliflozin/side-effects-of-empagliflozin/",
+   "action": "edited",
+   "newSentence": "The NHS says low blood sugar can happen if meals are skipped, alcohol is drunk or other diabetes medicines are taken."
+  },
+  {
+   "id": "c14",
+   "classification": "unsafe",
+   "evidence": "NHS main page: call 999 if DKA suspected; Diabetes UK: DKA signs call 999 or A&E. Original gave no clear 999 route (\"urgent medical help\"; 999 only if seriously unwell)",
+   "url": "https://www.nhs.uk/medicines/empagliflozin/",
+   "action": "edited",
+   "newSentence": "Diabetic ketoacidosis can make a person feel very thirsty, confused or unusually tired, or give breath that smells sweet, and the NHS says to call 999 if it is suspected; Diabetes UK describes it as a rare side effect."
+  },
+  {
+   "id": "c15",
+   "classification": "unsafe",
+   "evidence": "NHS main page says call 999; NHS side-effects page says tell a doctor or call 111 straight away; Diabetes UK 999 statement not retrieved; misattributed route",
+   "url": "https://www.nhs.uk/medicines/empagliflozin/side-effects-of-empagliflozin/",
+   "action": "edited",
+   "newSentence": "Fournier's gangrene is a rare but serious genital infection that can cause severe pain, tenderness, redness or swelling in the genital area with a high temperature or feeling unwell; the NHS says to call 999 if it is suspected, and its side-effects page says to tell a doctor or call 111 straight away."
+  },
+  {
+   "id": "c16",
+   "classification": "supported",
+   "evidence": "NHS: lips/mouth/throat/tongue swelling, 999",
+   "url": "https://www.nhs.uk/medicines/empagliflozin/side-effects-of-empagliflozin/",
+   "action": "kept",
+   "newSentence": "A serious allergic reaction (anaphylaxis), with swelling of the lips, mouth, throat or tongue or difficulty breathing, needs a 999 call."
+  },
+  {
+   "id": "c17",
+   "classification": "unsafe",
+   "evidence": "NHS: call 111 straight away for dehydration; \"or GP the same day\" and urinary-symptom trigger not retrieved from NHS",
+   "url": "https://www.nhs.uk/medicines/empagliflozin/side-effects-of-empagliflozin/",
+   "action": "edited",
+   "newSentence": "The NHS says to call 111 straight away for signs of dehydration."
+  },
+  {
+   "id": "c18",
+   "classification": "unsupported",
+   "evidence": "NHS: most adults can take it, check with a doctor if 75 or older; \"aged 18 and over\" not retrieved from NHS",
+   "url": "https://www.nhs.uk/medicines/empagliflozin/who-can-and-cannot-take-empagliflozin/",
+   "action": "edited",
+   "newSentence": "The NHS says most adults can take it, and suggests checking with a doctor for people aged 75 or older."
+  },
+  {
+   "id": "c19",
+   "classification": "supported",
+   "evidence": "NHS: not used for type 1",
+   "url": "https://www.nhs.uk/medicines/empagliflozin/who-can-and-cannot-take-empagliflozin/",
+   "action": "kept",
+   "newSentence": "It is not used to treat type 1 diabetes."
+  },
+  {
+   "id": "c20",
+   "classification": "supported",
+   "evidence": "NHS list",
+   "url": "https://www.nhs.uk/medicines/empagliflozin/who-can-and-cannot-take-empagliflozin/",
+   "action": "kept",
+   "newSentence": "The NHS lists a past allergic reaction, low blood pressure, severe kidney or liver disease, frequent urinary tract infections and upcoming surgery as reasons to check with a doctor first."
+  },
+  {
+   "id": "c21",
+   "classification": "unsupported",
+   "evidence": "NHS summary lists diuretics and BP medicines as interacting; \"can cause problems\" not retrieved; SmPC says \"may increase\" risk, original said \"raising\"",
+   "url": "https://www.medicines.org.uk/emc/product/5441/smpc",
+   "action": "edited",
+   "newSentence": "NHS information lists diuretics (water tablets) and blood pressure medicines among medicines that interact with it, and the UK product information says it may add to the diuretic effect of thiazide and loop diuretics and may increase the risk of dehydration and low blood pressure."
+  },
+  {
+   "id": "c22",
+   "classification": "wrong",
+   "evidence": "NHS: breastfeeding \"not usually recommended; not known how much passes into milk\". SmPC \"should not be used\" not retrieved",
+   "url": "https://www.nhs.uk/medicines/empagliflozin/pregnancy-breastfeeding-and-fertility-while-taking-empagliflozin/",
+   "action": "edited",
+   "newSentence": "The NHS says it is not recommended in pregnancy because there is little information about whether it could affect the baby, and not usually recommended while breastfeeding because it is not known how much passes into breast milk."
+  },
+  {
+   "id": "c23",
+   "classification": "unsupported",
+   "evidence": "NHS: may need to stop before operation/recovery because of DKA risk; illness-with-dehydration pause not retrieved",
+   "url": "https://www.nhs.uk/medicines/empagliflozin/common-questions-about-empagliflozin/",
+   "action": "edited",
+   "newSentence": "The NHS says the tablets may need to be stopped before an operation if eating has to stop, and during recovery, because of the risk of diabetic ketoacidosis."
+  },
+  {
+   "id": "c24",
+   "classification": "unsupported",
+   "evidence": "NHS: alcohol OK but raises low blood sugar risk and DKA risk, advises limiting; \"empty stomach\" not retrieved",
+   "url": "https://www.nhs.uk/medicines/empagliflozin/common-questions-about-empagliflozin/",
+   "action": "edited",
+   "newSentence": "The NHS says alcohol can be drunk with it, but alcohol can increase the risk of low blood sugar and of side effects such as diabetic ketoacidosis, so it advises trying to limit how much is drunk."
+  },
+  {
+   "id": "c25",
+   "classification": "unsupported",
+   "evidence": "TA773: specialist should advise on starting (not \"starts\"); monitoring by most appropriate professional",
+   "url": "https://www.nice.org.uk/guidance/ta773/resources/empagliflozin-for-treating-chronic-heart-failure-with-reduced-ejection-fraction-pdf-82611494690245",
+   "action": "edited",
+   "newSentence": "For chronic heart failure with reduced ejection fraction, NICE says a heart failure specialist should advise on starting empagliflozin and monitoring should be done by the most appropriate healthcare professional."
+  },
+  {
+   "id": "c26",
+   "classification": "unsupported",
+   "evidence": "Textbook claim about usual blood tests; not retrieved, not needed",
+   "url": "",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c27",
+   "classification": "supported",
+   "evidence": "NHS title",
+   "url": "https://www.nhs.uk/medicines/empagliflozin/",
+   "action": "kept",
+   "newSentence": "Empagliflozin is used to treat type 2 diabetes, heart failure and chronic kidney disease."
+  },
+  {
+   "id": "c28",
+   "classification": "supported",
+   "evidence": "NHS brand; not for type 1",
+   "url": "https://www.nhs.uk/medicines/empagliflozin/who-can-and-cannot-take-empagliflozin/",
+   "action": "kept",
+   "newSentence": "Its brand name is Jardiance, and it is not used for type 1 diabetes."
+  },
+  {
+   "id": "c29",
+   "classification": "supported",
+   "evidence": "TA773/TA929",
+   "url": "https://www.nice.org.uk/guidance/ta929/chapter/1-Recommendations",
+   "action": "kept",
+   "newSentence": "For heart failure, NICE recommends it as an option for symptomatic chronic heart failure, both with reduced ejection fraction and with preserved or mildly reduced ejection fraction."
+  },
+  {
+   "id": "c30",
+   "classification": "unsupported",
+   "evidence": "TA929: started on advice of HF specialist (not \"starts\")",
+   "url": "https://www.nice.org.uk/guidance/ta929/chapter/1-Recommendations",
+   "action": "edited",
+   "newSentence": "NICE says treatment should start on the advice of a heart failure specialist."
+  },
+  {
+   "id": "c31",
+   "classification": "supported",
+   "evidence": "TA929: least expensive where several options incl. dapagliflozin",
+   "url": "https://www.nice.org.uk/guidance/ta929/chapter/1-Recommendations",
+   "action": "edited",
+   "newSentence": "Where several options are suitable, including dapagliflozin, NICE guidance on preserved or mildly reduced ejection fraction says the least expensive should be used."
+  },
+  {
+   "id": "c32",
+   "classification": "supported",
+   "evidence": "TA942: option for CKD in adults only if add-on to optimised standard care incl. highest tolerated licensed ACEi/ARB unless contraindicated",
+   "url": "https://www.nice.org.uk/guidance/ta942/resources/empagliflozin-for-treating-chronic-kidney-disease-pdf-82615665176773",
+   "action": "edited",
+   "newSentence": "For chronic kidney disease, NICE recommends it for adults only under specific conditions, including as an add-on to optimised standard care with the highest tolerated licensed dose of an ACE inhibitor or ARB, unless those are contraindicated."
+  },
+  {
+   "id": "c33",
+   "classification": "supported",
+   "evidence": "NHS",
+   "url": "https://www.nhs.uk/medicines/empagliflozin/common-questions-about-empagliflozin/",
+   "action": "kept",
+   "newSentence": "Empagliflozin is a sodium-glucose co-transporter-2 (SGLT2) inhibitor."
+  },
+  {
+   "id": "c34",
+   "classification": "supported",
+   "evidence": "NHS",
+   "url": "https://www.nhs.uk/medicines/empagliflozin/common-questions-about-empagliflozin/",
+   "action": "kept",
+   "newSentence": "In diabetes it helps remove extra sugar from the body through the urine, so blood sugar falls."
+  },
+  {
+   "id": "c35",
+   "classification": "unsupported",
+   "evidence": "Heart workload retrieved; kidney \"pressure and inflammation\" not retrieved",
+   "url": "https://www.nhs.uk/medicines/empagliflozin/common-questions-about-empagliflozin/",
+   "action": "edited",
+   "newSentence": "In heart failure it reduces the work the heart has to do."
+  },
+  {
+   "id": "c36",
+   "classification": "supported",
+   "evidence": "NHS",
+   "url": "https://www.nhs.uk/medicines/empagliflozin/common-questions-about-empagliflozin/",
+   "action": "kept",
+   "newSentence": "The NHS says it starts to work after about 1 to 2 hours to lower blood sugar, but it may take up to a week to work fully."
+  },
+  {
+   "id": "c37",
+   "classification": "supported",
+   "evidence": "NHS month or 2",
+   "url": "https://www.nhs.uk/medicines/empagliflozin/common-questions-about-empagliflozin/",
+   "action": "kept",
+   "newSentence": "In heart failure it might be a month or 2 before symptoms improve."
+  },
+  {
+   "id": "c38",
+   "classification": "unsupported",
+   "evidence": "Only the heart-failure version retrieved (still reducing workload even if no change); kidney/slowing-progression claim not retrieved",
+   "url": "https://www.nhs.uk/medicines/empagliflozin/common-questions-about-empagliflozin/",
+   "action": "edited",
+   "newSentence": "In heart failure it might be a month or 2 before symptoms improve, and the NHS says it is still reducing the heart's workload even if no change is noticed."
+  },
+  {
+   "id": "c39",
+   "classification": "supported",
+   "evidence": "NHS weight",
+   "url": "https://www.nhs.uk/medicines/empagliflozin/common-questions-about-empagliflozin/",
+   "action": "kept",
+   "newSentence": "The NHS says it does not make people put on weight, and some people lose weight."
+  },
+  {
+   "id": "c40",
+   "classification": "supported",
+   "evidence": "NHS",
+   "url": "https://www.nhs.uk/medicines/empagliflozin/side-effects-of-empagliflozin/",
+   "action": "kept",
+   "newSentence": "The NHS lists thrush, needing to pee more often, feeling thirstier than usual and skin rash as the common side effects."
+  },
+  {
+   "id": "c41",
+   "classification": "supported",
+   "evidence": "NHS: pharmacist antifungal",
+   "url": "https://www.nhs.uk/medicines/empagliflozin/side-effects-of-empagliflozin/",
+   "action": "kept",
+   "newSentence": "The NHS says a pharmacist can recommend an antifungal treatment for thrush."
+  },
+  {
+   "id": "c42",
+   "classification": "unsupported",
+   "evidence": "Insulin/sulfonylurea specifics and early-sign list not retrieved",
+   "url": "https://www.nhs.uk/medicines/empagliflozin/side-effects-of-empagliflozin/",
+   "action": "edited",
+   "newSentence": "The NHS says low blood sugar can happen if meals are skipped, alcohol is drunk or other diabetes medicines are taken."
+  },
+  {
+   "id": "c43",
+   "classification": "supported",
+   "evidence": "NHS: more serious side effects rare",
+   "url": "https://www.nhs.uk/medicines/empagliflozin/about-empagliflozin/",
+   "action": "kept",
+   "newSentence": "The NHS describes more serious side effects as rare."
+  },
+  {
+   "id": "c44",
+   "classification": "unsafe",
+   "evidence": "No 999 route given for DKA in this sentence (\"urgent medical help is needed\"); NHS main page says call 999",
+   "url": "https://www.nhs.uk/medicines/empagliflozin/",
+   "action": "edited",
+   "newSentence": "Diabetic ketoacidosis, where ketones build up in the body, can cause great thirst, confusion, unusual tiredness or sweet-smelling breath, and the NHS lists feeling or being sick, stomach pain and deeper or faster breathing among other signs. / The NHS says to call 999 if diabetic ketoacidosis, anaphylaxis or Fournier's gangrene is suspected."
+  },
+  {
+   "id": "c45",
+   "classification": "unsafe",
+   "evidence": "NHS main page 999 vs side-effects page 111; \"area between genitals and bottom\" not retrieved",
+   "url": "https://www.nhs.uk/medicines/empagliflozin/side-effects-of-empagliflozin/",
+   "action": "edited",
+   "newSentence": "Fournier's gangrene, a serious genital infection, can cause severe pain, tenderness, redness or swelling in the genital area with a high temperature or feeling unwell, and the NHS side-effects page says to tell a doctor or call 111 straight away."
+  },
+  {
+   "id": "c46",
+   "classification": "supported",
+   "evidence": "NHS",
+   "url": "https://www.nhs.uk/medicines/empagliflozin/side-effects-of-empagliflozin/",
+   "action": "kept",
+   "newSentence": "Sudden swelling of the lips, mouth, throat or tongue, or struggling to breathe, may be anaphylaxis and needs a 999 call."
+  },
+  {
+   "id": "c47",
+   "classification": "unsafe",
+   "evidence": "NHS: 111 straight away for dehydration; urinary-symptom trigger and GP same day not retrieved",
+   "url": "https://www.nhs.uk/medicines/empagliflozin/side-effects-of-empagliflozin/",
+   "action": "edited",
+   "newSentence": "The NHS says to call 111 straight away for signs of dehydration."
+  },
+  {
+   "id": "c48",
+   "classification": "unsupported",
+   "evidence": "NHS summary lists diuretics/BP medicines as interacting; \"can cause problems\" not retrieved",
+   "url": "https://www.nhs.uk/medicines/empagliflozin/who-can-and-cannot-take-empagliflozin/",
+   "action": "edited",
+   "newSentence": "NHS information lists diuretics and medicines that lower blood pressure among medicines that interact with empagliflozin."
+  },
+  {
+   "id": "c49",
+   "classification": "unsupported",
+   "evidence": "SmPC: \"may add to the diuretic effect... may increase the risk\"; original \"raise\" overstated",
+   "url": "https://www.medicines.org.uk/emc/product/5441/smpc",
+   "action": "edited",
+   "newSentence": "The UK product information says it may add to the diuretic effect of thiazide and loop diuretics and may increase the risk of dehydration and low blood pressure."
+  },
+  {
+   "id": "c50",
+   "classification": "unsupported",
+   "evidence": "Insulin/sulfonylurea link not retrieved",
+   "url": "https://www.nhs.uk/medicines/empagliflozin/side-effects-of-empagliflozin/",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c51",
+   "classification": "unsupported",
+   "evidence": "NHS alcohol/low blood sugar supported; \"empty stomach\" not retrieved",
+   "url": "https://www.nhs.uk/medicines/empagliflozin/common-questions-about-empagliflozin/",
+   "action": "edited",
+   "newSentence": "The NHS says people can drink alcohol while taking empagliflozin, but alcohol can increase the risk of low blood sugar levels."
+  },
+  {
+   "id": "c52",
+   "classification": "unsupported",
+   "evidence": "Leaflet DKA risk-factor list (fasting, alcohol, dehydration, insulin cuts) not retrieved",
+   "url": "",
+   "action": "edited",
+   "newSentence": "It advises trying to limit how much alcohol is drunk, because alcohol can increase the risk of side effects such as diabetic ketoacidosis."
+  },
+  {
+   "id": "c53",
+   "classification": "unsupported",
+   "evidence": "Surgery part supported by NHS; illness-with-dehydration pause not retrieved",
+   "url": "https://www.nhs.uk/medicines/empagliflozin/common-questions-about-empagliflozin/",
+   "action": "edited",
+   "newSentence": "The NHS says the tablets may need to be stopped before an operation if eating has to stop, and while recovering afterwards, because of the risk of diabetic ketoacidosis."
+  },
+  {
+   "id": "c54",
+   "classification": "unsupported",
+   "evidence": "\"aged 18 and over\" not retrieved from NHS",
+   "url": "https://www.nhs.uk/medicines/empagliflozin/who-can-and-cannot-take-empagliflozin/",
+   "action": "edited",
+   "newSentence": "The NHS says most adults can take empagliflozin and suggests checking with a doctor for people aged 75 or older."
+  },
+  {
+   "id": "c55",
+   "classification": "supported",
+   "evidence": "NHS",
+   "url": "https://www.nhs.uk/medicines/empagliflozin/who-can-and-cannot-take-empagliflozin/",
+   "action": "kept",
+   "newSentence": "It also lists a past allergic reaction, low blood pressure, severe kidney or liver disease, frequent urinary tract infections and upcoming surgery as reasons for a doctor to check first."
+  },
+  {
+   "id": "c56",
+   "classification": "unsupported",
+   "evidence": "NHS: higher DKA risk, not suitable; \"needing a doctor's judgement\" not retrieved",
+   "url": "https://www.nhs.uk/medicines/empagliflozin/side-effects-of-empagliflozin/",
+   "action": "edited",
+   "newSentence": "The NHS says it is not suitable for people with type 1 diabetes or at higher risk of diabetic ketoacidosis."
+  },
+  {
+   "id": "c57",
+   "classification": "supported",
+   "evidence": "NHS",
+   "url": "https://www.nhs.uk/medicines/empagliflozin/pregnancy-breastfeeding-and-fertility-while-taking-empagliflozin/",
+   "action": "kept",
+   "newSentence": "The NHS says it is not recommended in pregnancy because there is little information about whether it could affect the baby."
+  },
+  {
+   "id": "c58",
+   "classification": "wrong",
+   "evidence": "NHS: breastfeeding not usually recommended; SmPC \"should not be used\" not retrieved",
+   "url": "https://www.nhs.uk/medicines/empagliflozin/pregnancy-breastfeeding-and-fertility-while-taking-empagliflozin/",
+   "action": "edited",
+   "newSentence": "For breastfeeding, the NHS says it is not usually recommended because it is not known how much passes into breast milk, and a doctor may suggest an alternative."
+  },
+  {
+   "id": "c59",
+   "classification": "unsupported",
+   "evidence": "NHS advises against stopping without talking to a doctor; reason (blood sugar rises) not retrieved",
+   "url": "https://www.nhs.uk/medicines/empagliflozin/about-empagliflozin/",
+   "action": "edited",
+   "newSentence": "The NHS advises against stopping it without talking to a doctor first."
+  },
+  {
+   "id": "c60",
+   "classification": "supported",
+   "evidence": "NHS",
+   "url": "https://www.nhs.uk/medicines/empagliflozin/common-questions-about-empagliflozin/",
+   "action": "kept",
+   "newSentence": "The NHS says people can drink alcohol while taking empagliflozin."
+  },
+  {
+   "id": "c61",
+   "classification": "supported",
+   "evidence": "NHS",
+   "url": "https://www.nhs.uk/medicines/empagliflozin/common-questions-about-empagliflozin/",
+   "action": "kept",
+   "newSentence": "However, alcohol can increase the risk of low blood sugar levels."
+  },
+  {
+   "id": "c62",
+   "classification": "unsupported",
+   "evidence": "\"empty stomach\" and usual guidelines not retrieved; NHS advises limiting alcohol",
+   "url": "https://www.nhs.uk/medicines/empagliflozin/common-questions-about-empagliflozin/",
+   "action": "edited",
+   "newSentence": "The NHS advises trying to limit how much alcohol is drunk, because it can increase the risk of side effects such as diabetic ketoacidosis."
+  },
+  {
+   "id": "c63",
+   "classification": "unsupported",
+   "evidence": "Leaflet wording not retrieved; replaced by NHS limit-alcohol/DKA statement",
+   "url": "https://www.nhs.uk/medicines/empagliflozin/common-questions-about-empagliflozin/",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c64",
+   "classification": "supported",
+   "evidence": "NHS",
+   "url": "https://www.nhs.uk/medicines/empagliflozin/common-questions-about-empagliflozin/",
+   "action": "kept",
+   "newSentence": "The NHS says it starts to lower blood sugar after about 1 to 2 hours, though it may take up to a week to work fully."
+  },
+  {
+   "id": "c65",
+   "classification": "supported",
+   "evidence": "NHS",
+   "url": "https://www.nhs.uk/medicines/empagliflozin/common-questions-about-empagliflozin/",
+   "action": "kept",
+   "newSentence": "In heart failure it might be a month or 2 before symptoms improve."
+  },
+  {
+   "id": "c66",
+   "classification": "unsupported",
+   "evidence": "Kidney-disease \"may not feel any different\" not retrieved; heart-failure version retrieved",
+   "url": "https://www.nhs.uk/medicines/empagliflozin/common-questions-about-empagliflozin/",
+   "action": "edited",
+   "newSentence": "The NHS says it is still reducing the heart's workload even if no change is noticed."
+  },
+  {
+   "id": "c67",
+   "classification": "supported",
+   "evidence": "NHS",
+   "url": "https://www.nhs.uk/medicines/empagliflozin/common-questions-about-empagliflozin/",
+   "action": "kept",
+   "newSentence": "The NHS says empagliflozin does not make people put on weight."
+  },
+  {
+   "id": "c68",
+   "classification": "supported",
+   "evidence": "NHS",
+   "url": "https://www.nhs.uk/medicines/empagliflozin/common-questions-about-empagliflozin/",
+   "action": "kept",
+   "newSentence": "Some people find they lose weight."
+  },
+  {
+   "id": "c69",
+   "classification": "supported",
+   "evidence": "NHS",
+   "url": "https://www.nhs.uk/medicines/empagliflozin/pregnancy-breastfeeding-and-fertility-while-taking-empagliflozin/",
+   "action": "kept",
+   "newSentence": "The NHS says empagliflozin is not recommended in pregnancy because there is little information about whether it could affect the baby."
+  },
+  {
+   "id": "c70",
+   "classification": "wrong",
+   "evidence": "NHS: breastfeeding not usually recommended; SmPC \"should not be used\" not retrieved",
+   "url": "https://www.nhs.uk/medicines/empagliflozin/pregnancy-breastfeeding-and-fertility-while-taking-empagliflozin/",
+   "action": "edited",
+   "newSentence": "For breastfeeding, the NHS says it is not usually recommended because it is not known how much passes into breast milk."
+  },
+  {
+   "id": "c71",
+   "classification": "unsupported",
+   "evidence": "NHS: doctor may switch to another medicine if pregnant or planning; wording reshaped",
+   "url": "https://www.nhs.uk/medicines/empagliflozin/pregnancy-breastfeeding-and-fertility-while-taking-empagliflozin/",
+   "action": "edited",
+   "newSentence": "The NHS says that if someone is pregnant or planning a pregnancy, the doctor may switch them to another medicine."
+  },
+  {
+   "id": "c72",
+   "classification": "unsafe",
+   "evidence": "No 999 route for DKA",
+   "url": "https://www.nhs.uk/medicines/empagliflozin/",
+   "action": "edited",
+   "newSentence": "Diabetic ketoacidosis can cause great thirst, confusion, unusual tiredness or sweet-smelling breath, and the NHS says to call 999 if it is suspected."
+  },
+  {
+   "id": "c73",
+   "classification": "unsafe",
+   "evidence": "NHS main page says 999; side-effects page says 111; route stated as NHS/Diabetes UK 999 only",
+   "url": "https://www.nhs.uk/medicines/empagliflozin/",
+   "action": "edited",
+   "newSentence": "Severe pain, tenderness, redness or swelling in the genital area with a high temperature or feeling unwell may be Fournier's gangrene, and the NHS says to call 999 if it is suspected."
+  },
+  {
+   "id": "c74",
+   "classification": "supported",
+   "evidence": "NHS",
+   "url": "https://www.nhs.uk/medicines/empagliflozin/side-effects-of-empagliflozin/",
+   "action": "kept",
+   "newSentence": "Sudden swelling of the lips, mouth, throat or tongue needs a 999 call."
+  },
+  {
+   "id": "c75",
+   "classification": "supported",
+   "evidence": "NHS",
+   "url": "https://www.nhs.uk/medicines/empagliflozin/about-empagliflozin/",
+   "action": "kept",
+   "newSentence": "Also called: Jardiance (brand name)"
+  },
+  {
+   "id": "c76",
+   "classification": "supported",
+   "evidence": "NHS",
+   "url": "https://www.nhs.uk/medicines/empagliflozin/common-questions-about-empagliflozin/",
+   "action": "kept",
+   "newSentence": "Medicine type: SGLT2 inhibitor"
+  },
+  {
+   "id": "c77",
+   "classification": "supported",
+   "evidence": "NHS",
+   "url": "https://www.nhs.uk/medicines/empagliflozin/",
+   "action": "kept",
+   "newSentence": "Used for: Type 2 diabetes, heart failure and chronic kidney disease"
+  },
+  {
+   "id": "c78",
+   "classification": "supported",
+   "evidence": "NHS",
+   "url": "https://www.nhs.uk/medicines/empagliflozin/who-can-and-cannot-take-empagliflozin/",
+   "action": "kept",
+   "newSentence": "Not used for: Type 1 diabetes"
+  },
+  {
+   "id": "c79",
+   "classification": "supported",
+   "evidence": "NHS",
+   "url": "https://www.nhs.uk/medicines/empagliflozin/common-questions-about-empagliflozin/",
+   "action": "kept",
+   "newSentence": "Starts to lower blood sugar: About 1 to 2 hours, up to a week to work fully"
+  },
+  {
+   "id": "c80",
+   "classification": "supported",
+   "evidence": "NHS",
+   "url": "https://www.nhs.uk/medicines/empagliflozin/common-questions-about-empagliflozin/",
+   "action": "kept",
+   "newSentence": "Weight: Does not cause weight gain; some people lose weight"
+  },
+  {
+   "id": "c81",
+   "classification": "supported",
+   "evidence": "NHS",
+   "url": "https://www.nhs.uk/medicines/empagliflozin/pregnancy-breastfeeding-and-fertility-while-taking-empagliflozin/",
+   "action": "kept",
+   "newSentence": "Pregnancy: Not recommended, according to the NHS"
+  }
+ ],
+ "notes": "11 WebSearch calls attempted (1 returned a usage-limit error and was repeated), 2 held in reserve. Search summaries blend pages, so attributions are to the page named in the summary. Doubts: (1) NHS pages differ on Fournier's gangrene (main page: 999; side-effects page: tell doctor or 111 straight away); both are now stated. (2) 'Not suitable at higher DKA risk' and 'usually for life' come from search summaries of NHS pages. (3) Gateshead Health and East Kent Hospitals leaflets are NHS trust pages (not in the usual host list) used for SGLT2-inhibitor class and UTI risk; the UTI sentence could be dropped if the maintainer wants NHS.uk-only sourcing. (4) SmPC statements (thiazide/loop diuretics) came from a search summary of the emc SmPC; the SmPC breastfeeding statement and leaflet DKA risk-factor list were never retrieved and were cut. (5) The ketone/'unsafe' wording of c13/c43/c71 originally lacked a 999 route. (6) Monitoring field is thin (NICE TA773 only). (7) 'updated' key removed: no entity in content/medications.json uses it; docs/authoring/README.md says to set it, so the maintainer should confirm check_batch accepts the fragment without it. (8) Dose/eGFR figures seen in search results were deliberately not used. (9) Doses, cut-offs and schedules: none in published text."
+}

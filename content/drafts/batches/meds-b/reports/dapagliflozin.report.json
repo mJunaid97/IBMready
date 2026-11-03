@@ -1,0 +1,639 @@
+{
+ "id": "dapagliflozin",
+ "searchesUsed": 12,
+ "counts": {
+  "supported": 54,
+  "textbook": 3,
+  "unsupported": 18,
+  "wrong": 3,
+  "unsafe": 0,
+  "unchecked": 0
+ },
+ "claims": [
+  {
+   "id": "c01",
+   "classification": "supported",
+   "evidence": "NHS: used to treat type 2 diabetes, heart failure and CKD",
+   "url": "https://www.nhs.uk/medicines/dapagliflozin/",
+   "action": "kept",
+   "newSentence": "Dapagliflozin is a prescription tablet from the SGLT2 inhibitor group, used for type 2 diabetes, heart failure and chronic kidney disease."
+  },
+  {
+   "id": "c02",
+   "classification": "supported",
+   "evidence": "NHS side effects: thrush, back pain, peeing more",
+   "url": "https://www.nhs.uk/medicines/dapagliflozin/side-effects-of-dapagliflozin/",
+   "action": "kept",
+   "newSentence": "The NHS lists thrush, back pain and passing urine more often as common side effects."
+  },
+  {
+   "id": "c03",
+   "classification": "unsupported",
+   "evidence": "\"Rare\" for DKA not supported (sources give rare only for other serious effects; frequency sources disagree); no emergency route named",
+   "url": "https://www.nhs.uk/medicines/dapagliflozin/side-effects-of-dapagliflozin/",
+   "action": "edited",
+   "newSentence": "Serious effects include diabetic ketoacidosis and allergic reactions, and these need urgent medical help (a doctor or NHS 111 promptly, or 999 in an emergency)."
+  },
+  {
+   "id": "c04",
+   "classification": "supported",
+   "evidence": "NHS About: mainly type 2 diabetes; usually when metformin cannot be taken or no longer controls sugar",
+   "url": "https://www.nhs.uk/medicines/dapagliflozin/about-dapagliflozin/",
+   "action": "kept",
+   "newSentence": "Type 2 diabetes, where the NHS says it is mainly used, usually when metformin cannot be taken or other medicines are not controlling blood sugar well"
+  },
+  {
+   "id": "c05",
+   "classification": "supported",
+   "evidence": "NHS About: reduce risk of heart weakening, ease tiredness",
+   "url": "https://www.nhs.uk/medicines/dapagliflozin/about-dapagliflozin/",
+   "action": "kept",
+   "newSentence": "Heart failure, where the NHS says it can reduce the risk of the heart getting weaker and help symptoms such as tiredness"
+  },
+  {
+   "id": "c06",
+   "classification": "supported",
+   "evidence": "NHS About: slow how fast CKD progresses",
+   "url": "https://www.nhs.uk/medicines/dapagliflozin/about-dapagliflozin/",
+   "action": "kept",
+   "newSentence": "Chronic kidney disease, where the NHS says it helps to slow the rate at which the condition gets worse"
+  },
+  {
+   "id": "c07",
+   "classification": "wrong",
+   "evidence": "TA775 recommends dapagliflozin only for adults meeting eGFR/diabetes/uACR criteria; unqualified sentence misleading",
+   "url": "https://www.nice.org.uk/guidance/ta775/chapter/1-Recommendations",
+   "action": "edited",
+   "newSentence": "NICE recommends dapagliflozin as an add-on to standard care for chronic kidney disease in adults who meet the criteria set out in its guidance (technology appraisal TA775)"
+  },
+  {
+   "id": "c08",
+   "classification": "unsupported",
+   "evidence": "TA679: add-on to optimised standard care for symptomatic HFrEF in adults; no \"specialist advice only\" wording found",
+   "url": "https://www.nice.org.uk/guidance/ta679/resources/dapagliflozin-for-treating-chronic-heart-failure-with-reduced-ejection-fraction-pdf-82609327985605",
+   "action": "edited",
+   "newSentence": "NICE recommends it as an add-on to standard care for symptomatic chronic heart failure with reduced ejection fraction in adults (technology appraisal TA679)"
+  },
+  {
+   "id": "c09",
+   "classification": "supported",
+   "evidence": "TA902: committee recommended dapagliflozin for this indication",
+   "url": "https://www.nice.org.uk/guidance/ta902",
+   "action": "edited",
+   "newSentence": "NICE also recommends it for symptomatic chronic heart failure with preserved or mildly reduced ejection fraction (technology appraisal TA902)"
+  },
+  {
+   "id": "c10",
+   "classification": "textbook",
+   "evidence": "NHS says SGLT2 inhibitor; expansion of abbreviation is standard",
+   "url": "https://www.nhs.uk/medicines/dapagliflozin/about-dapagliflozin/",
+   "action": "kept",
+   "newSentence": "Dapagliflozin is a type of medicine known as a sodium-glucose cotransporter-2 (SGLT2) inhibitor."
+  },
+  {
+   "id": "c11",
+   "classification": "supported",
+   "evidence": "NHS: removes extra sugar in urine",
+   "url": "https://www.nhs.uk/medicines/dapagliflozin/about-dapagliflozin/",
+   "action": "kept",
+   "newSentence": "In type 2 diabetes the NHS says it makes the kidneys remove extra sugar from the body in the urine, which lowers blood sugar."
+  },
+  {
+   "id": "c12",
+   "classification": "supported",
+   "evidence": "NHS: reduces work the heart does",
+   "url": "https://www.nhs.uk/medicines/dapagliflozin/about-dapagliflozin/",
+   "action": "kept",
+   "newSentence": "It can also reduce the amount of work the heart needs to do to pump blood around the body."
+  },
+  {
+   "id": "c13",
+   "classification": "supported",
+   "evidence": "NHS: reduces pressure and swelling in kidneys",
+   "url": "https://www.nhs.uk/medicines/dapagliflozin/about-dapagliflozin/",
+   "action": "kept",
+   "newSentence": "In chronic kidney disease the NHS says it works by reducing pressure and swelling (inflammation) in the kidneys."
+  },
+  {
+   "id": "c14",
+   "classification": "supported",
+   "evidence": "NHS: about 2 hours; up to a week",
+   "url": "https://www.nhs.uk/medicines/dapagliflozin/about-dapagliflozin/",
+   "action": "kept",
+   "newSentence": "The NHS says it starts to work after about 2 hours to reduce blood glucose levels, but it may take up to a week to take full effect."
+  },
+  {
+   "id": "c15",
+   "classification": "unsupported",
+   "evidence": "\"usually mild and short-lived\" not in retrieved text",
+   "url": "https://www.nhs.uk/medicines/dapagliflozin/side-effects-of-dapagliflozin/",
+   "action": "edited",
+   "newSentence": "The NHS lists thrush, back pain and passing urine more often than usual as common side effects"
+  },
+  {
+   "id": "c16",
+   "classification": "unsupported",
+   "evidence": "NHS: low blood sugar with insulin or sulfonylureas such as gliclazide; dizzy or shaky. Warning-sign list (hunger, sweating, confusion) not retrieved",
+   "url": "https://www.nhs.uk/medicines/dapagliflozin/side-effects-of-dapagliflozin/",
+   "action": "edited",
+   "newSentence": "Low blood sugar (hypoglycaemia) can happen when dapagliflozin is taken with other diabetes medicines, including insulin or a sulfonylurea such as gliclazide, and can cause dizziness or shakiness"
+  },
+  {
+   "id": "c17",
+   "classification": "supported",
+   "evidence": "NHS: sleepy/dizzy, avoid driving, cycling, tools/machines",
+   "url": "https://www.nhs.uk/medicines/dapagliflozin/side-effects-of-dapagliflozin/",
+   "action": "kept",
+   "newSentence": "Feeling sleepy or dizzy can occur, and the NHS says driving, cycling or using machinery is best avoided until these symptoms pass"
+  },
+  {
+   "id": "c18",
+   "classification": "unsupported",
+   "evidence": "Symptoms supported (NHS: sick, thirst/tiredness, stomach pain, fruity breath, deep breathing); leaflet says doctor or NHS 111; \"GP same day / 999 if seriously unwell\" wording not retrieved",
+   "url": "https://www.nhs.uk/medicines/dapagliflozin/side-effects-of-dapagliflozin/",
+   "action": "edited",
+   "newSentence": "Diabetic ketoacidosis (a build-up of acids called ketones in the blood) has symptoms such as feeling sick, unusual thirst or tiredness, stomach pain, fruity-smelling breath and faster or deeper breathing, and needs urgent medical help: a doctor or NHS 111 promptly, or 999 in an emergency"
+  },
+  {
+   "id": "c19",
+   "classification": "unsupported",
+   "evidence": "NHS lists anaphylaxis/angioedema with swollen throat or tongue, difficulty breathing; \"lips, mouth\" not retrieved",
+   "url": "https://www.nhs.uk/medicines/dapagliflozin/side-effects-of-dapagliflozin/",
+   "action": "edited",
+   "newSentence": "Swelling of the throat or tongue, or difficulty breathing, can be a serious allergic reaction and needs an emergency 999 call"
+  },
+  {
+   "id": "c20",
+   "classification": "supported",
+   "evidence": "NHS/leaflets: rare genital/perineal infection, emergency (999 route per site rule)",
+   "url": "https://www.nhs.uk/medicines/dapagliflozin/side-effects-of-dapagliflozin/",
+   "action": "edited",
+   "newSentence": "Severe pain, swelling or redness around the genitals or the area between them and the anus, especially with fever or feeling unwell, can be a rare infection called Fournier gangrene and needs emergency help (999)"
+  },
+  {
+   "id": "c21",
+   "classification": "unsupported",
+   "evidence": "NHS: most adults, most children 10+ for T2D supported; \"suitability still checked\" not retrieved",
+   "url": "https://www.nhs.uk/medicines/dapagliflozin/who-can-and-cannot-take-dapagliflozin/",
+   "action": "edited",
+   "newSentence": "Most adults can take dapagliflozin and, for type 2 diabetes, the NHS says most children aged 10 and over can take it"
+  },
+  {
+   "id": "c22",
+   "classification": "wrong",
+   "evidence": "NHS lists \"have low blood pressure (hypotension)\", not \"take medicine for low blood pressure\"",
+   "url": "https://www.nhs.uk/medicines/dapagliflozin/who-can-and-cannot-take-dapagliflozin/",
+   "action": "edited",
+   "newSentence": "The NHS says it may not be suitable for people who have had an allergic reaction to it, have type 1 diabetes, have kidney or liver disease, have low blood pressure or often get urinary tract infections"
+  },
+  {
+   "id": "c23",
+   "classification": "unsupported",
+   "evidence": "NHS: kidney disease supported; surgery not on NHS page (Diabetes UK: may need to stop before an operation)",
+   "url": "https://www.nhs.uk/medicines/dapagliflozin/who-can-and-cannot-take-dapagliflozin/",
+   "action": "edited",
+   "newSentence": "Diabetes UK says treatment may need to be stopped temporarily before an operation, which the prescriber decides"
+  },
+  {
+   "id": "c24",
+   "classification": "supported",
+   "evidence": "NHS: avoid in pregnancy (not enough information); avoid when breastfeeding",
+   "url": "https://www.nhs.uk/medicines/dapagliflozin/who-can-and-cannot-take-dapagliflozin/",
+   "action": "kept",
+   "newSentence": "The NHS advises avoiding dapagliflozin in pregnancy and breastfeeding, because there is not enough information about its effects on the baby"
+  },
+  {
+   "id": "c25",
+   "classification": "supported",
+   "evidence": "NHS leaflets: stop temporarily when unwell with vomiting, diarrhoea, fever, infections; dehydration may harm kidneys; contact GP/NHS 111 if unwell after 48 h (attribution to patient leaflet)",
+   "url": "https://www.nhs.uk/medicines/dapagliflozin/common-questions-about-dapagliflozin/",
+   "action": "edited",
+   "newSentence": "NHS leaflets describe sick day rules, in which dapagliflozin is stopped temporarily during illness with dehydration, such as vomiting, diarrhoea, fever or infections, and a patient leaflet says to contact the GP or NHS 111 if still unwell after 48 hours"
+  },
+  {
+   "id": "c26",
+   "classification": "supported",
+   "evidence": "MedlinePlus: can cause dehydration; drink plenty of water",
+   "url": "https://medlineplus.gov/druginfo/meds/a614015.html",
+   "action": "kept",
+   "newSentence": "MedlinePlus (a US source) says dapagliflozin can cause dehydration and that drinking enough water is important"
+  },
+  {
+   "id": "c27",
+   "classification": "unsupported",
+   "evidence": "\"at least 3 days beforehand\" not in retrieved MedlinePlus text",
+   "url": "https://medlineplus.gov/druginfo/meds/a614015.html",
+   "action": "removed",
+   "newSentence": "Diabetes UK says treatment may need to be stopped temporarily before an operation, which the prescriber decides (replacement, see c23)"
+  },
+  {
+   "id": "c28",
+   "classification": "supported",
+   "evidence": "NHS/Diabetes UK: hypoglycaemia with insulin/sulfonylurea; NHS England leaflet and SmPC: lithium monitored more frequently",
+   "url": "https://www.nhs.uk/medicines/dapagliflozin/side-effects-of-dapagliflozin/",
+   "action": "edited",
+   "newSentence": "Using it with insulin or a sulfonylurea raises the chance of low blood sugar, and lithium levels need closer monitoring if lithium is also taken"
+  },
+  {
+   "id": "c29",
+   "classification": "supported",
+   "evidence": "NHS: alcohol in moderation; speak to doctor before keto/low-carb/low-calorie diet",
+   "url": "https://www.nhs.uk/medicines/dapagliflozin/common-questions-about-dapagliflozin/",
+   "action": "kept",
+   "newSentence": "The NHS says alcohol can be drunk in moderation, and advises speaking to a doctor before starting a low-calorie, reduced-carbohydrate or ketogenic diet"
+  },
+  {
+   "id": "c30",
+   "classification": "supported",
+   "evidence": "NHS: do not stop without talking to doctor; may make condition worse",
+   "url": "https://www.nhs.uk/medicines/dapagliflozin/common-questions-about-dapagliflozin/",
+   "action": "kept",
+   "newSentence": "The NHS says dapagliflozin is not stopped without talking to a doctor first, because diabetes, heart failure or kidney disease may get worse"
+  },
+  {
+   "id": "c31",
+   "classification": "supported",
+   "evidence": "NHS England leaflet / SmPC: lithium concentration monitored more frequently",
+   "url": "https://www.england.nhs.uk/north-west/wp-content/uploads/sites/48/2026/03/38-A4-Dapagliflozin-PIL-for-all-indications-SCN-March-2026.pdf",
+   "action": "edited",
+   "newSentence": "Lithium levels need closer monitoring in people who also take lithium."
+  },
+  {
+   "id": "c32",
+   "classification": "textbook",
+   "evidence": "Prescriber decides further checks is general; combined with SmPC small eGFR fall",
+   "url": "https://www.medicines.org.uk/emc/product/101540/smpc",
+   "action": "edited",
+   "newSentence": "A small fall in kidney function (eGFR) can be seen when treatment starts, and further checks are decided by the prescriber."
+  },
+  {
+   "id": "c33",
+   "classification": "supported",
+   "evidence": "NHS About page (prescription only; mainly T2D; HF and CKD uses; usually needed long term)",
+   "url": "https://www.nhs.uk/medicines/dapagliflozin/about-dapagliflozin/",
+   "action": "kept",
+   "newSentence": "Dapagliflozin is a tablet that the NHS says is available only with a prescription."
+  },
+  {
+   "id": "c34",
+   "classification": "supported",
+   "evidence": "NHS About page (prescription only; mainly T2D; HF and CKD uses; usually needed long term)",
+   "url": "https://www.nhs.uk/medicines/dapagliflozin/about-dapagliflozin/",
+   "action": "kept",
+   "newSentence": "The NHS says it is mainly used to treat type 2 diabetes, usually when metformin cannot be taken or when the current medicine is not controlling blood sugar well."
+  },
+  {
+   "id": "c35",
+   "classification": "supported",
+   "evidence": "Diabetes UK: alone or with metformin, DPP-4 inhibitor, sulphonylurea or insulin",
+   "url": "https://www.diabetes.org.uk/about-diabetes/looking-after-diabetes/treatments/tablets-and-medication/sglt2-inhibitors/dapagliflozin",
+   "action": "kept",
+   "newSentence": "Diabetes UK says it can be taken alone or with metformin, a DPP-4 inhibitor, a sulphonylurea or insulin."
+  },
+  {
+   "id": "c36",
+   "classification": "supported",
+   "evidence": "NHS About page (prescription only; mainly T2D; HF and CKD uses; usually needed long term)",
+   "url": "https://www.nhs.uk/medicines/dapagliflozin/about-dapagliflozin/",
+   "action": "kept",
+   "newSentence": "It is also used for heart failure and chronic kidney disease."
+  },
+  {
+   "id": "c37",
+   "classification": "supported",
+   "evidence": "NHS About page (prescription only; mainly T2D; HF and CKD uses; usually needed long term)",
+   "url": "https://www.nhs.uk/medicines/dapagliflozin/about-dapagliflozin/",
+   "action": "kept",
+   "newSentence": "In heart failure the NHS says it can reduce the risk of the heart getting weaker and help symptoms such as tiredness."
+  },
+  {
+   "id": "c38",
+   "classification": "supported",
+   "evidence": "NHS About page (prescription only; mainly T2D; HF and CKD uses; usually needed long term)",
+   "url": "https://www.nhs.uk/medicines/dapagliflozin/about-dapagliflozin/",
+   "action": "kept",
+   "newSentence": "In chronic kidney disease it helps to slow the rate at which the condition gets worse."
+  },
+  {
+   "id": "c39",
+   "classification": "wrong",
+   "evidence": "Unqualified CKD recommendation and \"specialist advice\" wording not supported by TA775/TA679",
+   "url": "https://www.nice.org.uk/guidance/ta775/chapter/1-Recommendations",
+   "action": "edited",
+   "newSentence": "NICE recommends it as an add-on to standard care for symptomatic chronic heart failure with reduced ejection fraction in adults, and for symptomatic chronic heart failure with preserved or mildly reduced ejection fraction. NICE also recommends it for chronic kidney disease in adults who meet the criteria in its guidance."
+  },
+  {
+   "id": "c40",
+   "classification": "textbook",
+   "evidence": "Standard expansion of SGLT2",
+   "url": "https://www.nhs.uk/medicines/dapagliflozin/about-dapagliflozin/",
+   "action": "kept",
+   "newSentence": "Dapagliflozin is a sodium-glucose cotransporter-2 inhibitor, usually shortened to SGLT2 inhibitor."
+  },
+  {
+   "id": "c41",
+   "classification": "supported",
+   "evidence": "NHS About page",
+   "url": "https://www.nhs.uk/medicines/dapagliflozin/about-dapagliflozin/",
+   "action": "kept",
+   "newSentence": "In type 2 diabetes the NHS says it makes the kidneys remove extra sugar in the urine, which lowers blood sugar."
+  },
+  {
+   "id": "c42",
+   "classification": "supported",
+   "evidence": "NHS About page",
+   "url": "https://www.nhs.uk/medicines/dapagliflozin/about-dapagliflozin/",
+   "action": "kept",
+   "newSentence": "It can also reduce the amount of work the heart needs to do to pump blood around the body."
+  },
+  {
+   "id": "c43",
+   "classification": "supported",
+   "evidence": "NHS About page",
+   "url": "https://www.nhs.uk/medicines/dapagliflozin/about-dapagliflozin/",
+   "action": "kept",
+   "newSentence": "In chronic kidney disease the NHS says it reduces pressure and swelling (inflammation) in the kidneys."
+  },
+  {
+   "id": "c44",
+   "classification": "supported",
+   "evidence": "NHS About page",
+   "url": "https://www.nhs.uk/medicines/dapagliflozin/about-dapagliflozin/",
+   "action": "kept",
+   "newSentence": "The NHS says it starts to work after about 2 hours to lower blood glucose, but it may take up to a week to take full effect."
+  },
+  {
+   "id": "c45",
+   "classification": "supported",
+   "evidence": "MedlinePlus: helps to control your condition but does not cure it",
+   "url": "https://medlineplus.gov/druginfo/meds/a614015.html",
+   "action": "kept",
+   "newSentence": "MedlinePlus says medicines of this kind help to control the condition but do not cure it."
+  },
+  {
+   "id": "c46",
+   "classification": "unsupported",
+   "evidence": "\"usually mild and short-lived\" not retrieved",
+   "url": "https://www.nhs.uk/medicines/dapagliflozin/side-effects-of-dapagliflozin/",
+   "action": "edited",
+   "newSentence": "The NHS lists thrush, back pain and passing urine more often as common side effects."
+  },
+  {
+   "id": "c47",
+   "classification": "unsupported",
+   "evidence": "Warning-sign list not retrieved; dizzy/shaky is",
+   "url": "https://www.nhs.uk/medicines/dapagliflozin/side-effects-of-dapagliflozin/",
+   "action": "edited",
+   "newSentence": "Low blood sugar can happen when it is taken with insulin or a sulfonylurea such as gliclazide, and can cause dizziness or shakiness."
+  },
+  {
+   "id": "c48",
+   "classification": "supported",
+   "evidence": "NHS: avoid driving, cycling, tools or machines until symptoms pass",
+   "url": "https://www.nhs.uk/medicines/dapagliflozin/side-effects-of-dapagliflozin/",
+   "action": "edited",
+   "newSentence": "If a person feels sleepy or dizzy, the NHS says to avoid driving, cycling or using tools or machines until the symptoms pass."
+  },
+  {
+   "id": "c49",
+   "classification": "unsupported",
+   "evidence": "\"Rarer\" not supported; symptom list slightly differs (NHS: thirst, tiredness, deep breathing)",
+   "url": "https://www.nhs.uk/medicines/dapagliflozin/side-effects-of-dapagliflozin/",
+   "action": "edited",
+   "newSentence": "Serious effects include diabetic ketoacidosis, in which acids called ketones build up in the blood, according to Leeds Teaching Hospitals. Symptoms include feeling sick, unusual thirst or tiredness, stomach pain, fruity-smelling breath and faster or deeper breathing."
+  },
+  {
+   "id": "c50",
+   "classification": "unsupported",
+   "evidence": "24 hours supported by NHS; route \"GP same day, 999 if seriously unwell\" not retrieved verbatim (leaflet: doctor or NHS 111)",
+   "url": "https://www.nhs.uk/medicines/dapagliflozin/side-effects-of-dapagliflozin/",
+   "action": "edited",
+   "newSentence": "The NHS says these symptoms usually develop over 24 hours but can come on faster, and they need urgent medical help: a doctor or NHS 111 promptly, or 999 in an emergency."
+  },
+  {
+   "id": "c51",
+   "classification": "unsupported",
+   "evidence": "Leeds text retrieved says ketones build up (DKA); \"even when glucose is normal\" came from a different source (euglycaemic DKA, NE London checklist)",
+   "url": "https://www.leedsth.nhs.uk/patients/resources/information-for-people-on-sglt-2-inhibitors/",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c52",
+   "classification": "unsupported",
+   "evidence": "\"Lips, mouth\" not retrieved; throat/tongue, breathing difficulty and Fournier symptoms supported",
+   "url": "https://www.nhs.uk/medicines/dapagliflozin/side-effects-of-dapagliflozin/",
+   "action": "edited",
+   "newSentence": "Swelling of the throat or tongue, or difficulty breathing, can be a serious allergic reaction and needs a 999 call. Severe pain, tenderness, swelling or redness around the genitals or the area between them and the anus, with fever or feeling unwell, can be a rare infection called Fournier gangrene and needs emergency help (call 999)."
+  },
+  {
+   "id": "c53",
+   "classification": "unsupported",
+   "evidence": "Not retrieved",
+   "url": "https://www.nhs.uk/medicines/dapagliflozin/side-effects-of-dapagliflozin/",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c54",
+   "classification": "supported",
+   "evidence": "NHS common questions/leaflets: temporary stop when unwell with vomiting, diarrhoea, fever, infections (Leeds attribution not confirmed)",
+   "url": "https://www.nhs.uk/medicines/dapagliflozin/common-questions-about-dapagliflozin/",
+   "action": "edited",
+   "newSentence": "NHS leaflets describe sick day rules, in which dapagliflozin is stopped temporarily during illness with dehydration, such as vomiting, diarrhoea, fever or infections."
+  },
+  {
+   "id": "c55",
+   "classification": "supported",
+   "evidence": "A patient leaflet advises GP or NHS 111 if unwell after 48 hours",
+   "url": "https://www.nhs.uk/medicines/dapagliflozin/common-questions-about-dapagliflozin/",
+   "action": "edited",
+   "newSentence": "A patient leaflet says to contact the GP or NHS 111 if still unwell after 48 hours."
+  },
+  {
+   "id": "c56",
+   "classification": "supported",
+   "evidence": "MedlinePlus text",
+   "url": "https://medlineplus.gov/druginfo/meds/a614015.html",
+   "action": "kept",
+   "newSentence": "MedlinePlus, a US source, says the medicine can cause dehydration and that drinking enough water is important."
+  },
+  {
+   "id": "c57",
+   "classification": "supported",
+   "evidence": "NHS: eat and drink normally; alcohol in moderation",
+   "url": "https://www.nhs.uk/medicines/dapagliflozin/common-questions-about-dapagliflozin/",
+   "action": "kept",
+   "newSentence": "The NHS says people can eat and drink normally, and that alcohol can be drunk in moderation."
+  },
+  {
+   "id": "c58",
+   "classification": "supported",
+   "evidence": "NHS: speak to doctor before keto/low-carb/low-calorie diet",
+   "url": "https://www.nhs.uk/medicines/dapagliflozin/common-questions-about-dapagliflozin/",
+   "action": "kept",
+   "newSentence": "It suggests speaking to a doctor before starting a low-calorie, reduced-carbohydrate or ketogenic diet."
+  },
+  {
+   "id": "c59",
+   "classification": "supported",
+   "evidence": "NHS: drug itself does not affect driving; hypos with sulfonylurea/insulin can",
+   "url": "https://www.nhs.uk/medicines/dapagliflozin/common-questions-about-dapagliflozin/",
+   "action": "kept",
+   "newSentence": "The NHS says the medicine itself does not affect the ability to drive, but low blood sugar can, which is possible when it is taken with insulin or a sulfonylurea."
+  },
+  {
+   "id": "c60",
+   "classification": "supported",
+   "evidence": "NHS who-can",
+   "url": "https://www.nhs.uk/medicines/dapagliflozin/who-can-and-cannot-take-dapagliflozin/",
+   "action": "kept",
+   "newSentence": "Most adults can take dapagliflozin, and the NHS says most children aged 10 and over can take it for type 2 diabetes."
+  },
+  {
+   "id": "c61",
+   "classification": "supported",
+   "evidence": "NHS who-can (allergy, type 1, liver, UTIs); kidney disease and low blood pressure added",
+   "url": "https://www.nhs.uk/medicines/dapagliflozin/who-can-and-cannot-take-dapagliflozin/",
+   "action": "edited",
+   "newSentence": "It may not be suitable for people who have had an allergic reaction to it, have type 1 diabetes, have kidney or liver disease, have low blood pressure or often get urinary tract infections."
+  },
+  {
+   "id": "c62",
+   "classification": "unsupported",
+   "evidence": "NHS: kidney disease and pregnancy/breastfeeding supported; \"planned surgery\" not on NHS page",
+   "url": "https://www.nhs.uk/medicines/dapagliflozin/who-can-and-cannot-take-dapagliflozin/",
+   "action": "edited",
+   "newSentence": "The NHS advises avoiding it in pregnancy and breastfeeding, and Diabetes UK says treatment may need to be stopped temporarily before an operation."
+  },
+  {
+   "id": "c63",
+   "classification": "supported",
+   "evidence": "NHS England leaflet / SmPC",
+   "url": "https://www.england.nhs.uk/north-west/wp-content/uploads/sites/48/2026/03/38-A4-Dapagliflozin-PIL-for-all-indications-SCN-March-2026.pdf",
+   "action": "kept",
+   "newSentence": "Lithium levels need close monitoring if both medicines are taken."
+  },
+  {
+   "id": "c64",
+   "classification": "supported",
+   "evidence": "NHS common questions",
+   "url": "https://www.nhs.uk/medicines/dapagliflozin/common-questions-about-dapagliflozin/",
+   "action": "kept",
+   "newSentence": "The NHS says dapagliflozin is not stopped without talking to a doctor first, because diabetes, heart failure or kidney disease may get worse."
+  },
+  {
+   "id": "c65",
+   "classification": "supported",
+   "evidence": "NHS About page (prescription only; mainly T2D; HF and CKD uses; usually needed long term)",
+   "url": "https://www.nhs.uk/medicines/dapagliflozin/about-dapagliflozin/",
+   "action": "kept",
+   "newSentence": "No. The NHS says it is mainly used for type 2 diabetes but is also used for heart failure and chronic kidney disease."
+  },
+  {
+   "id": "c66",
+   "classification": "supported",
+   "evidence": "NHS About page (prescription only; mainly T2D; HF and CKD uses; usually needed long term)",
+   "url": "https://www.nhs.uk/medicines/dapagliflozin/about-dapagliflozin/",
+   "action": "kept",
+   "newSentence": "In heart failure it can reduce the risk of the heart getting weaker, and in kidney disease it helps to slow the rate at which the condition gets worse."
+  },
+  {
+   "id": "c67",
+   "classification": "supported",
+   "evidence": "NHS About page (prescription only; mainly T2D; HF and CKD uses; usually needed long term)",
+   "url": "https://www.nhs.uk/medicines/dapagliflozin/about-dapagliflozin/",
+   "action": "edited",
+   "newSentence": "The NHS says it is usually needed long term."
+  },
+  {
+   "id": "c68",
+   "classification": "supported",
+   "evidence": "NHS common questions",
+   "url": "https://www.nhs.uk/medicines/dapagliflozin/common-questions-about-dapagliflozin/",
+   "action": "kept",
+   "newSentence": "It is not stopped without talking to a doctor first, because diabetes, heart failure or kidney disease may get worse."
+  },
+  {
+   "id": "c69",
+   "classification": "supported",
+   "evidence": "NHS leaflets: sick day rules; wording tightened",
+   "url": "https://www.nhs.uk/medicines/dapagliflozin/common-questions-about-dapagliflozin/",
+   "action": "edited",
+   "newSentence": "They are advice to stop dapagliflozin temporarily during illness with dehydration, such as vomiting, diarrhoea or fever."
+  },
+  {
+   "id": "c70",
+   "classification": "supported",
+   "evidence": "Patient leaflet: 48 hours",
+   "url": "https://www.nhs.uk/medicines/dapagliflozin/common-questions-about-dapagliflozin/",
+   "action": "edited",
+   "newSentence": "A patient leaflet says to contact the GP or NHS 111 if still unwell after 48 hours."
+  },
+  {
+   "id": "c71",
+   "classification": "supported",
+   "evidence": "NHS side effects",
+   "url": "https://www.nhs.uk/medicines/dapagliflozin/side-effects-of-dapagliflozin/",
+   "action": "kept",
+   "newSentence": "The NHS lists thrush as a common side effect."
+  },
+  {
+   "id": "c72",
+   "classification": "unsupported",
+   "evidence": "CUH thrush/mild statement not retrieved; Leeds lists thrush as common",
+   "url": "https://www.cuh.nhs.uk/patient-information/sodium-glucose-cotransporter-2-sglt-2-inhibitors-in-type-2-diabetes/",
+   "action": "edited",
+   "newSentence": "Leeds Teaching Hospitals also lists genital fungal infections such as thrush as a common side effect of SGLT2 inhibitors."
+  },
+  {
+   "id": "c73",
+   "classification": "supported",
+   "evidence": "CUH names Forxiga; NHS pages for group, tablet, prescription only, onset",
+   "url": "https://www.nhs.uk/medicines/dapagliflozin/about-dapagliflozin/",
+   "action": "kept",
+   "newSentence": "Forxiga (UK brand name)"
+  },
+  {
+   "id": "c74",
+   "classification": "supported",
+   "evidence": "CUH names Forxiga; NHS pages for group, tablet, prescription only, onset",
+   "url": "https://www.nhs.uk/medicines/dapagliflozin/about-dapagliflozin/",
+   "action": "kept",
+   "newSentence": "SGLT2 inhibitor (sodium-glucose cotransporter-2 inhibitor)"
+  },
+  {
+   "id": "c75",
+   "classification": "supported",
+   "evidence": "CUH names Forxiga; NHS pages for group, tablet, prescription only, onset",
+   "url": "https://www.nhs.uk/medicines/dapagliflozin/about-dapagliflozin/",
+   "action": "kept",
+   "newSentence": "Tablet"
+  },
+  {
+   "id": "c76",
+   "classification": "supported",
+   "evidence": "CUH names Forxiga; NHS pages for group, tablet, prescription only, onset",
+   "url": "https://www.nhs.uk/medicines/dapagliflozin/about-dapagliflozin/",
+   "action": "kept",
+   "newSentence": "Prescription only (NHS)"
+  },
+  {
+   "id": "c77",
+   "classification": "supported",
+   "evidence": "NHS About page (prescription only; mainly T2D; HF and CKD uses; usually needed long term)",
+   "url": "https://www.nhs.uk/medicines/dapagliflozin/about-dapagliflozin/",
+   "action": "kept",
+   "newSentence": "Type 2 diabetes, heart failure and chronic kidney disease"
+  },
+  {
+   "id": "c78",
+   "classification": "supported",
+   "evidence": "CUH names Forxiga; NHS pages for group, tablet, prescription only, onset",
+   "url": "https://www.nhs.uk/medicines/dapagliflozin/about-dapagliflozin/",
+   "action": "kept",
+   "newSentence": "Starts to work after about 2 hours; up to a week for full effect (NHS)"
+  }
+ ],
+ "notes": "Second pass by an independent verifier, 12 searches (shared with sglt2-inhibitors, which used the same retrievals). Summaries blend pages, so NHS-page attributions are by title. The \"999\" route for DKA and allergy is the site signposting rule; the retrieved NHS leaflet text says doctor or NHS 111 (DKA) and emergency help (Fournier). NICE TA775 is flagged by NICE as under review. Alcohol: NHS common-questions text also mentions unit limits, not used. Frequency of DKA differs between sources so \"rare\" was dropped. The 24-hour and 48-hour figures are source statements, not cut-offs for individual instruction. Lithium monitoring is from NHS England leaflet and emc SmPC (both seen only via search summary)."
+}

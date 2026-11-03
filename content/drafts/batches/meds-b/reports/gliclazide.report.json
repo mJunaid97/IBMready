@@ -1,0 +1,591 @@
+{
+ "id": "gliclazide",
+ "searchesUsed": 13,
+ "counts": {
+  "supported": 41,
+  "textbook": 2,
+  "unsupported": 26,
+  "wrong": 3,
+  "unsafe": 0,
+  "unchecked": 0
+ },
+ "claims": [
+  {
+   "id": "c01",
+   "classification": "supported",
+   "evidence": "Re-retrieved: NHS page title 'Gliclazide: medicine for type 2 diabetes'; About page: a sulfonylurea prescribed for type 2 diabetes.",
+   "url": "https://www.nhs.uk/medicines/gliclazide/",
+   "action": "kept",
+   "newSentence": "Gliclazide is a medicine for type 2 diabetes that belongs to a group called sulfonylureas."
+  },
+  {
+   "id": "c02",
+   "classification": "textbook",
+   "evidence": "Re-retrieved: Plain textbook definition.",
+   "url": "",
+   "action": "kept",
+   "newSentence": "In type 2 diabetes the body does not make or use insulin well enough, so sugar builds up in the blood."
+  },
+  {
+   "id": "c03",
+   "classification": "unsupported",
+   "evidence": "Diabetes UK says standard or slow-release tablets; 'on prescription' not stated in retrieved NHS text.",
+   "url": "https://www.nhs.uk/medicines/gliclazide/about-gliclazide/",
+   "action": "edited",
+   "newSentence": "Diabetes UK says gliclazide comes as standard-release or slow-release tablets."
+  },
+  {
+   "id": "c04",
+   "classification": "supported",
+   "evidence": "Re-retrieved: NHS 'who can take it' summary.",
+   "url": "https://www.nhs.uk/medicines/gliclazide/",
+   "action": "kept",
+   "newSentence": "Most adults and children aged 12 years and over can take it, but the NHS says it is not suitable for everyone."
+  },
+  {
+   "id": "c05",
+   "classification": "unsupported",
+   "evidence": "NHS retrieved text lists porphyria, not 'acute porphyria', and a wider list (type 1, DKA, G6PD).",
+   "url": "https://www.nhs.uk/medicines/gliclazide/",
+   "action": "edited",
+   "newSentence": "The NHS lists type 1 diabetes, a past allergic reaction, diabetic ketoacidosis, severe kidney or liver disease, porphyria and G6PD deficiency among the reasons it may not be suitable."
+  },
+  {
+   "id": "c06",
+   "classification": "unsupported",
+   "evidence": "No retrieved text says treatment is long term or that a doctor is consulted before stopping.",
+   "url": "https://www.nhs.uk/medicines/gliclazide/how-and-when-to-take-gliclazide/",
+   "action": "removed",
+   "newSentence": null
+  },
+  {
+   "id": "c07",
+   "classification": "supported",
+   "evidence": "Re-retrieved: NHS About page; Diabetes UK gliclazide page: helps pancreas make more insulin.",
+   "url": "https://www.nhs.uk/medicines/gliclazide/about-gliclazide/",
+   "action": "kept",
+   "newSentence": "Gliclazide works by prompting the pancreas to make more insulin."
+  },
+  {
+   "id": "c08",
+   "classification": "textbook",
+   "evidence": "Re-retrieved: Plain textbook definition.",
+   "url": "",
+   "action": "kept",
+   "newSentence": "Insulin is a hormone made in the pancreas that helps move sugar from the blood into the body's cells."
+  },
+  {
+   "id": "c09",
+   "classification": "unsupported",
+   "evidence": "The 'also help insulin work more effectively' wording was not in retrieved Diabetes UK text (only 'prompt the pancreas to release more insulin').",
+   "url": "https://www.diabetes.org.uk/about-diabetes/looking-after-diabetes/treatments/tablets-and-medication/sulphonylureas",
+   "action": "removed",
+   "newSentence": null
+  },
+  {
+   "id": "c10",
+   "classification": "supported",
+   "evidence": "Re-retrieved: Bucks formulary guideline: directly stimulates insulin secretion, potential for causing hypoglycaemia.",
+   "url": "https://www.bucksformulary.nhs.uk/docs/avc/Link%2012a%20Guideline%20for%20Prescribing%20and%20Titrating%20Gliclazide%20Therapy.pdf",
+   "action": "kept",
+   "newSentence": "A UK formulary guide says gliclazide directly stimulates insulin release, so it has the potential to cause hypoglycaemia."
+  },
+  {
+   "id": "c11",
+   "classification": "supported",
+   "evidence": "Diabetes UK: tummy ache, sickness and diarrhoea (indigestion not retrieved and dropped).",
+   "url": "https://www.nhs.uk/medicines/gliclazide/side-effects-of-gliclazide/",
+   "action": "edited",
+   "newSentence": "Diabetes UK lists tummy ache, sickness and diarrhoea among the common effects of sulphonylureas."
+  },
+  {
+   "id": "c12",
+   "classification": "supported",
+   "evidence": "Re-retrieved: NHS side effects page: taking with a meal can help.",
+   "url": "https://www.nhs.uk/medicines/gliclazide/side-effects-of-gliclazide/",
+   "action": "kept",
+   "newSentence": "The NHS says taking the tablets with a meal can help with these."
+  },
+  {
+   "id": "c13",
+   "classification": "unsupported",
+   "evidence": "'Makes you hungrier' not retrieved; Diabetes UK says some people gain weight.",
+   "url": "https://www.nhs.uk/medicines/gliclazide/common-questions-about-gliclazide/",
+   "action": "edited",
+   "newSentence": "Diabetes UK says some people gain weight while taking a sulphonylurea."
+  },
+  {
+   "id": "c14",
+   "classification": "unsupported",
+   "evidence": "Retrieved NHS signs: paleness, unusual bleeding/bruising, sore throat, fever; liver: yellowing. Nausea/vomiting not retrieved; 'They' dangling.",
+   "url": "https://www.nhs.uk/medicines/gliclazide/side-effects-of-gliclazide/",
+   "action": "edited",
+   "newSentence": "The NHS lists three rarer, serious problems: an allergic reaction (anaphylaxis), a problem with the blood cells and problems with the liver."
+  },
+  {
+   "id": "c15",
+   "classification": "unsupported",
+   "evidence": "Retrieved NHS anaphylaxis signs: swollen throat or tongue, raised itchy rash, difficulty breathing; 'lips, mouth' not retrieved.",
+   "url": "https://www.nhs.uk/medicines/gliclazide/side-effects-of-gliclazide/",
+   "action": "edited",
+   "newSentence": "The NHS says to call 999 for a suspected anaphylaxis, with signs such as a swollen throat or tongue, a raised itchy rash or difficulty breathing."
+  },
+  {
+   "id": "c16",
+   "classification": "supported",
+   "evidence": "Re-retrieved: NHS side effects summary: any other serious side effect, call NHS 111.",
+   "url": "https://www.nhs.uk/medicines/gliclazide/side-effects-of-gliclazide/",
+   "action": "kept",
+   "newSentence": "For other serious side effects the NHS says to call NHS 111."
+  },
+  {
+   "id": "c17",
+   "classification": "supported",
+   "evidence": "NHS: can cause low blood sugar; Diabetes UK: one of the most common side effects. Wording softened to 'a common side effect'.",
+   "url": "https://www.nhs.uk/medicines/gliclazide/",
+   "action": "edited",
+   "newSentence": "Low blood sugar, called hypoglycaemia or a hypo, is a common side effect of gliclazide."
+  },
+  {
+   "id": "c18",
+   "classification": "supported",
+   "evidence": "Re-retrieved: NHS overview page.",
+   "url": "https://www.nhs.uk/medicines/gliclazide/",
+   "action": "kept",
+   "newSentence": "The NHS says symptoms can include dizziness, feeling sick, being very hungry or being very tired."
+  },
+  {
+   "id": "c19",
+   "classification": "unsupported",
+   "evidence": "Retrieved: NHS says call a doctor or 111 if sugar does not help or symptoms return; 'see a GP if hypos happen often' not retrieved. Non-emergency route corrected.",
+   "url": "https://www.nhs.uk/medicines/gliclazide/",
+   "action": "edited",
+   "newSentence": "The NHS says to call a doctor or NHS 111 if the sugary food or drink does not help or the symptoms return."
+  },
+  {
+   "id": "c20",
+   "classification": "supported",
+   "evidence": "NHS Scotland My Diabetes My Way: unconscious or seizure, call 999 straight away. nhs.uk hypoglycaemia page was retrieved but its 999 wording for unconsciousness was not shown; page attribution to nhs.uk not confirmed. Emergency route kept.",
+   "url": "https://mydiabetesmyway.scot.nhs.uk/resources/app-resources/hypoglycaemia/",
+   "action": "kept",
+   "newSentence": "If a person with a hypo becomes unconscious, does not begin to regain consciousness, or shows signs of a seizure, NHS diabetes guidance says to call 999 straight away."
+  },
+  {
+   "id": "c21",
+   "classification": "supported",
+   "evidence": "Re-retrieved: Royal Devon NHS leaflet: not give anything by mouth, may choke.",
+   "url": "https://www.royaldevon.nhs.uk/media/obhcb0bc/treating-hypos-in-diabetes-rd-21-083-002.pdf",
+   "action": "kept",
+   "newSentence": "NHS hospital guidance says nothing is given by mouth to someone who is unconscious or fitting, because of the risk of choking."
+  },
+  {
+   "id": "c22",
+   "classification": "supported",
+   "evidence": "Re-retrieved: NHS pages: urgent advice, call NHS 111 if taken more than prescribed.",
+   "url": "https://www.nhs.uk/medicines/gliclazide/",
+   "action": "kept",
+   "newSentence": "The NHS says a person who has taken more than the prescribed amount of gliclazide should call NHS 111."
+  },
+  {
+   "id": "c23",
+   "classification": "unsupported",
+   "evidence": "NHS retrieved text advises against driving if sleepy or dizzy; 'stable blood sugar should not affect driving' came from the SmPC, not the NHS.",
+   "url": "https://www.nhs.uk/medicines/gliclazide/about-gliclazide/",
+   "action": "removed",
+   "newSentence": null
+  },
+  {
+   "id": "c24",
+   "classification": "unsupported",
+   "evidence": "Retrieved NHS wording is about feeling sleepy or dizzy, not low blood sugar, and no cycling or tools.",
+   "url": "https://www.nhs.uk/medicines/gliclazide/about-gliclazide/",
+   "action": "edited",
+   "newSentence": "The NHS says that if gliclazide makes a person feel sleepy or dizzy, they should not drive until the symptoms pass."
+  },
+  {
+   "id": "c25",
+   "classification": "supported",
+   "evidence": "GOV.UK: all Group 1 and 2 drivers with an episode of severe hypoglycaemia whilst driving must not drive and must notify DVLA; severe = needs another person's help.",
+   "url": "https://www.gov.uk/guidance/diabetes-mellitus-assessing-fitness-to-drive",
+   "action": "edited",
+   "newSentence": "DVLA guidance says a driver who has an episode of severe hypoglycaemia while driving must stop driving and tell the DVLA, and it defines severe as needing another person's help."
+  },
+  {
+   "id": "c26",
+   "classification": "wrong",
+   "evidence": "Re-check: the NHS says alcohol can be drunk with a warning about more alcohol; it is the manufacturer leaflets that say drinking is not recommended. 'Two NHS pages differ' not supported.",
+   "url": "https://www.nhs.uk/medicines/gliclazide/",
+   "action": "edited",
+   "newSentence": "The NHS says alcohol can be drunk with gliclazide but more alcohol can raise the risk of low blood sugar, while UK manufacturer leaflets say drinking alcohol is not recommended because it can alter diabetes control."
+  },
+  {
+   "id": "c27",
+   "classification": "supported",
+   "evidence": "Re-retrieved: NHS pregnancy statement.",
+   "url": "https://www.nhs.uk/medicines/gliclazide/",
+   "action": "kept",
+   "newSentence": "The NHS says gliclazide is not usually used in pregnancy, and a doctor may offer a different medicine."
+  },
+  {
+   "id": "c28",
+   "classification": "unsupported",
+   "evidence": "Breastfeeding advice supported; 'NHS asks anyone planning a pregnancy to tell their doctor' not retrieved from the NHS.",
+   "url": "https://www.nhs.uk/medicines/gliclazide/",
+   "action": "edited",
+   "newSentence": "The NHS also advises against it during breastfeeding."
+  },
+  {
+   "id": "c29",
+   "classification": "supported",
+   "evidence": "Re-retrieved: NHS who-can-take-it list.",
+   "url": "https://www.nhs.uk/medicines/gliclazide/",
+   "action": "kept",
+   "newSentence": "Severe kidney or liver disease is one reason the NHS says gliclazide may not be suitable."
+  },
+  {
+   "id": "c30",
+   "classification": "unsupported",
+   "evidence": "NHS interactions page names antibiotics and antifungals generally; clarithromycin not retrieved (fluconazole only in leaflets).",
+   "url": "https://www.nhs.uk/medicines/gliclazide/taking-gliclazide-with-other-medicines-and-herbal-supplements/",
+   "action": "edited",
+   "newSentence": "The NHS says some antibiotics and antifungals, steroid tablets, NSAID painkillers and other diabetes medicines can cause low blood sugar when taken with gliclazide."
+  },
+  {
+   "id": "c31",
+   "classification": "supported",
+   "evidence": "Re-retrieved: NHS interactions page.",
+   "url": "https://www.nhs.uk/medicines/gliclazide/taking-gliclazide-with-other-medicines-and-herbal-supplements/",
+   "action": "kept",
+   "newSentence": "It advises checking with a pharmacist or doctor before taking painkillers such as aspirin or ibuprofen."
+  },
+  {
+   "id": "c32",
+   "classification": "supported",
+   "evidence": "Re-retrieved: NHS interactions page.",
+   "url": "https://www.nhs.uk/medicines/gliclazide/taking-gliclazide-with-other-medicines-and-herbal-supplements/",
+   "action": "kept",
+   "newSentence": "It says St John's wort should be avoided, because it may change how the body processes gliclazide."
+  },
+  {
+   "id": "c33",
+   "classification": "unsupported",
+   "evidence": "HbA1c recommendation by the SmPC not retrieved; Buckinghamshire guide says HbA1c cannot show hypoglycaemia.",
+   "url": "https://www.medicines.org.uk/emc/product/13135/smpc",
+   "action": "edited",
+   "newSentence": "A UK formulary guide says HbA1c shows overall diabetes control but cannot show day-to-day swings in blood glucose or hypoglycaemia."
+  },
+  {
+   "id": "c34",
+   "classification": "unsupported",
+   "evidence": "NG28: consider short-term self-monitoring when starting corticosteroids or to confirm suspected hypoglycaemia ('mainly' overstated); different HbA1c aim for hypoglycaemia-associated drugs is supported.",
+   "url": "https://www.nice.org.uk/guidance/ng28/chapter/recommendations",
+   "action": "edited",
+   "newSentence": "NICE advises considering short-term self-monitoring of blood glucose in adults with type 2 diabetes when starting corticosteroids or to confirm suspected hypoglycaemia."
+  },
+  {
+   "id": "c35",
+   "classification": "supported",
+   "evidence": "Replaced by the corrected alcohol wording (see c26).",
+   "url": "https://www.nhs.uk/medicines/gliclazide/",
+   "action": "edited",
+   "newSentence": "The NHS says alcohol can be drunk with gliclazide, but more alcohol can raise the risk of low blood sugar."
+  },
+  {
+   "id": "c36",
+   "classification": "wrong",
+   "evidence": "Two NHS pages differing was not supported; NHS vs manufacturer leaflets differ.",
+   "url": "https://www.nhs.uk/medicines/gliclazide/",
+   "action": "edited",
+   "newSentence": "UK manufacturer leaflets say drinking alcohol is not recommended because it can alter diabetes control."
+  },
+  {
+   "id": "c37",
+   "classification": "supported",
+   "evidence": "NHS: eat or drink something sugary to raise blood sugar quickly.",
+   "url": "https://www.nhs.uk/medicines/gliclazide/",
+   "action": "kept",
+   "newSentence": "Low blood sugar is called a hypo, and the NHS says the usual response is to eat or drink something sugary straight away."
+  },
+  {
+   "id": "c38",
+   "classification": "unsupported",
+   "evidence": "'Hypos that happen often are a reason to see a GP' not retrieved.",
+   "url": "https://www.nhs.uk/medicines/gliclazide/common-questions-about-gliclazide/",
+   "action": "edited",
+   "newSentence": "The NHS says to call a doctor or NHS 111 if sugary food or drink does not help or the symptoms return."
+  },
+  {
+   "id": "c39",
+   "classification": "supported",
+   "evidence": "Re-retrieved: Scottish NHS hypoglycaemia page.",
+   "url": "https://mydiabetesmyway.scot.nhs.uk/resources/app-resources/hypoglycaemia/",
+   "action": "kept",
+   "newSentence": "If the person becomes unconscious, does not begin to regain consciousness, or has signs of a seizure, NHS diabetes guidance says to call 999 straight away."
+  },
+  {
+   "id": "c40",
+   "classification": "supported",
+   "evidence": "Re-retrieved: NHS.",
+   "url": "https://www.nhs.uk/medicines/gliclazide/",
+   "action": "kept",
+   "newSentence": "The NHS says gliclazide is not usually used in pregnancy, and a doctor may offer a different medicine."
+  },
+  {
+   "id": "c41",
+   "classification": "supported",
+   "evidence": "Re-retrieved: NHS summary.",
+   "url": "https://www.nhs.uk/medicines/gliclazide/",
+   "action": "kept",
+   "newSentence": "The same applies during breastfeeding."
+  },
+  {
+   "id": "c42",
+   "classification": "unsupported",
+   "evidence": "See c23: NHS wording is about sleepy/dizzy.",
+   "url": "https://www.nhs.uk/medicines/gliclazide/about-gliclazide/",
+   "action": "edited",
+   "newSentence": "The NHS says that if gliclazide makes a person feel sleepy or dizzy, they should not drive until the symptoms pass."
+  },
+  {
+   "id": "c43",
+   "classification": "supported",
+   "evidence": "Re-retrieved: GOV.UK DVLA diabetes page.",
+   "url": "https://www.gov.uk/guidance/diabetes-mellitus-assessing-fitness-to-drive",
+   "action": "kept",
+   "newSentence": "The DVLA says a driver who has an episode of severe hypoglycaemia while driving must stop driving and tell the DVLA."
+  },
+  {
+   "id": "c44",
+   "classification": "supported",
+   "evidence": "Re-retrieved: NHS: a sulfonylurea.",
+   "url": "https://www.nhs.uk/medicines/gliclazide/",
+   "action": "kept",
+   "newSentence": "Sulfonylureas"
+  },
+  {
+   "id": "c45",
+   "classification": "supported",
+   "evidence": "Re-retrieved: NHS page title.",
+   "url": "https://www.nhs.uk/medicines/gliclazide/",
+   "action": "kept",
+   "newSentence": "Type 2 diabetes"
+  },
+  {
+   "id": "c46",
+   "classification": "supported",
+   "evidence": "Diabetes UK: standard-release or slow-release tablets.",
+   "url": "https://www.nhs.uk/medicines/gliclazide/about-gliclazide/",
+   "action": "kept",
+   "newSentence": "Standard tablets and slow-release tablets"
+  },
+  {
+   "id": "c47",
+   "classification": "supported",
+   "evidence": "Re-retrieved: NHS pages.",
+   "url": "https://www.nhs.uk/medicines/gliclazide/",
+   "action": "kept",
+   "newSentence": "Low blood sugar (a hypo)"
+  },
+  {
+   "id": "c48",
+   "classification": "supported",
+   "evidence": "Re-retrieved: Scottish NHS hypo page; NHS gliclazide page.",
+   "url": "https://mydiabetesmyway.scot.nhs.uk/resources/app-resources/hypoglycaemia/",
+   "action": "kept",
+   "newSentence": "999 if a person with a hypo is unconscious, does not regain consciousness or has a seizure; NHS 111 after taking more than prescribed"
+  },
+  {
+   "id": "c49",
+   "classification": "supported",
+   "evidence": "Re-retrieved: NHS title/About.",
+   "url": "https://www.nhs.uk/medicines/gliclazide/",
+   "action": "kept",
+   "newSentence": "Gliclazide is a sulfonylurea tablet prescribed for type 2 diabetes that prompts the pancreas to make more insulin."
+  },
+  {
+   "id": "c50",
+   "classification": "supported",
+   "evidence": "Combined with the 999 statement; Scotland NHS wording.",
+   "url": "https://mydiabetesmyway.scot.nhs.uk/resources/app-resources/hypoglycaemia/",
+   "action": "kept",
+   "newSentence": "Low blood sugar (a hypo) is the main risk, and NHS diabetes guidance says to call 999 if a person with a hypo is unconscious, does not begin to regain consciousness or has a seizure."
+  },
+  {
+   "id": "c51",
+   "classification": "supported",
+   "evidence": "Re-retrieved: NHS.",
+   "url": "https://www.nhs.uk/medicines/gliclazide/",
+   "action": "kept",
+   "newSentence": "The NHS says it is not usually used in pregnancy."
+  },
+  {
+   "id": "c52",
+   "classification": "supported",
+   "evidence": "Re-retrieved: NHS page title: medicine for type 2 diabetes.",
+   "url": "https://www.nhs.uk/medicines/gliclazide/",
+   "action": "kept",
+   "newSentence": "Type 2 diabetes"
+  },
+  {
+   "id": "c53",
+   "classification": "supported",
+   "evidence": "Re-retrieved: NHS About; Diabetes UK.",
+   "url": "https://www.nhs.uk/medicines/gliclazide/about-gliclazide/",
+   "action": "kept",
+   "newSentence": "Gliclazide prompts the pancreas to make more insulin."
+  },
+  {
+   "id": "c54",
+   "classification": "unsupported",
+   "evidence": "Not in retrieved Diabetes UK text.",
+   "url": "https://www.diabetes.org.uk/about-diabetes/looking-after-diabetes/treatments/tablets-and-medication/sulphonylureas",
+   "action": "removed",
+   "newSentence": null
+  },
+  {
+   "id": "c55",
+   "classification": "supported",
+   "evidence": "Re-retrieved: Bucks formulary.",
+   "url": "https://www.bucksformulary.nhs.uk/docs/avc/Link%2012a%20Guideline%20for%20Prescribing%20and%20Titrating%20Gliclazide%20Therapy.pdf",
+   "action": "kept",
+   "newSentence": "Because it stimulates insulin release directly, a UK formulary guide notes the potential to cause hypoglycaemia."
+  },
+  {
+   "id": "c56",
+   "classification": "supported",
+   "evidence": "Same as c11; indigestion dropped.",
+   "url": "https://www.nhs.uk/medicines/gliclazide/side-effects-of-gliclazide/",
+   "action": "edited",
+   "newSentence": "Tummy ache, sickness and diarrhoea, according to Diabetes UK; the NHS says taking the tablets with a meal can make side effects less likely"
+  },
+  {
+   "id": "c57",
+   "classification": "supported",
+   "evidence": "Re-retrieved: NHS overview.",
+   "url": "https://www.nhs.uk/medicines/gliclazide/",
+   "action": "kept",
+   "newSentence": "Low blood sugar (a hypo): the NHS lists dizziness, feeling sick, being very hungry or very tired as symptoms, and describes eating or drinking something sugary straight away as the usual response"
+  },
+  {
+   "id": "c58",
+   "classification": "unsupported",
+   "evidence": "'Increased hunger' not retrieved.",
+   "url": "https://www.nhs.uk/medicines/gliclazide/common-questions-about-gliclazide/",
+   "action": "edited",
+   "newSentence": "Some people gain weight while taking a sulphonylurea, according to Diabetes UK"
+  },
+  {
+   "id": "c59",
+   "classification": "unsupported",
+   "evidence": "Temporary vision changes not found in retrieved NHS text.",
+   "url": "https://www.nhs.uk/medicines/gliclazide/side-effects-of-gliclazide/",
+   "action": "removed",
+   "newSentence": null
+  },
+  {
+   "id": "c60",
+   "classification": "supported",
+   "evidence": "Re-retrieved: Scottish NHS hypo page; NHS common questions for GP.",
+   "url": "https://mydiabetesmyway.scot.nhs.uk/resources/app-resources/hypoglycaemia/",
+   "action": "kept",
+   "newSentence": "Low blood sugar with unconsciousness, no return to consciousness or signs of a seizure: NHS diabetes guidance says to call 999 straight away; frequent hypos are a reason to see a GP"
+  },
+  {
+   "id": "c61",
+   "classification": "unsupported",
+   "evidence": "Lips/mouth swelling not retrieved; edited to retrieved signs.",
+   "url": "https://www.nhs.uk/medicines/gliclazide/side-effects-of-gliclazide/",
+   "action": "edited",
+   "newSentence": "Signs of a serious allergic reaction (anaphylaxis), such as a swollen throat or tongue, a raised itchy rash or difficulty breathing: the NHS says to call 999"
+  },
+  {
+   "id": "c62",
+   "classification": "unsupported",
+   "evidence": "Nausea/vomiting as liver signs not retrieved.",
+   "url": "https://www.nhs.uk/medicines/gliclazide/side-effects-of-gliclazide/",
+   "action": "edited",
+   "newSentence": "Possible blood cell problems (paleness, unusual bleeding or bruising, sore throat, fever) or liver problems (yellowing of the skin or whites of the eyes): the NHS says to call NHS 111 for other serious side effects"
+  },
+  {
+   "id": "c63",
+   "classification": "supported",
+   "evidence": "Re-retrieved: NHS urgent advice.",
+   "url": "https://www.nhs.uk/medicines/gliclazide/",
+   "action": "kept",
+   "newSentence": "Taking more than the prescribed amount: the NHS says to call NHS 111"
+  },
+  {
+   "id": "c64",
+   "classification": "supported",
+   "evidence": "Re-retrieved: NHS.",
+   "url": "https://www.nhs.uk/medicines/gliclazide/",
+   "action": "kept",
+   "newSentence": "Not usually used in pregnancy or during breastfeeding, according to the NHS; a doctor may offer a different medicine"
+  },
+  {
+   "id": "c65",
+   "classification": "unsupported",
+   "evidence": "'Acute' porphyria not retrieved; wider list found.",
+   "url": "https://www.nhs.uk/medicines/gliclazide/",
+   "action": "edited",
+   "newSentence": "The NHS lists type 1 diabetes, a past allergic reaction, diabetic ketoacidosis, severe kidney or liver disease, porphyria and G6PD deficiency among the reasons it may not be suitable"
+  },
+  {
+   "id": "c66",
+   "classification": "wrong",
+   "evidence": "Two NHS pages differing was not supported (NHS vs manufacturer leaflets).",
+   "url": "https://www.nhs.uk/medicines/gliclazide/",
+   "action": "edited",
+   "newSentence": "Alcohol: the NHS says it can be drunk but more alcohol can raise the risk of low blood sugar, while UK manufacturer leaflets say drinking alcohol is not recommended"
+  },
+  {
+   "id": "c67",
+   "classification": "unsupported",
+   "evidence": "See c23.",
+   "url": "https://www.nhs.uk/medicines/gliclazide/about-gliclazide/",
+   "action": "edited",
+   "newSentence": "Driving: the NHS says not to drive while sleepy or dizzy from gliclazide; Diabetes UK says sulphonylureas can increase the risk of hypos while driving; the DVLA says severe hypoglycaemia while driving means stopping driving and notifying the DVLA"
+  },
+  {
+   "id": "c68",
+   "classification": "unsupported",
+   "evidence": "Clarithromycin not retrieved; miconazole contraindication, ibuprofen/aspirin check and St John's wort retrieved.",
+   "url": "https://www.nhs.uk/medicines/gliclazide/taking-gliclazide-with-other-medicines-and-herbal-supplements/",
+   "action": "edited",
+   "newSentence": "Other medicines: the NHS says some antibiotics and antifungals, NSAID painkillers such as ibuprofen and aspirin, and other diabetes medicines can affect blood sugar, St John's wort should not be taken, and a pharmacist or doctor should be asked about any other medicine; UK prescribing information lists miconazole as a contraindicated combination"
+  },
+  {
+   "id": "c69",
+   "classification": "supported",
+   "evidence": "Re-retrieved: NHS overview.",
+   "url": "https://www.nhs.uk/medicines/gliclazide/",
+   "action": "kept",
+   "newSentence": "The surgeon or doctor is told before an operation, because gliclazide raises the risk of low blood sugar"
+  },
+  {
+   "id": "c70",
+   "classification": "unsupported",
+   "evidence": "See c33.",
+   "url": "https://www.medicines.org.uk/emc/product/13135/smpc",
+   "action": "edited",
+   "newSentence": "A UK formulary guide says HbA1c shows overall diabetes control but cannot show day-to-day swings in blood glucose or hypoglycaemia. NICE advises considering short-term self-monitoring of blood glucose in type 2 diabetes when starting corticosteroids or to confirm suspected hypoglycaemia."
+  },
+  {
+   "id": "c71",
+   "classification": "unsupported",
+   "evidence": "See c33.",
+   "url": "https://www.nice.org.uk/guidance/ng28/chapter/recommendations",
+   "action": "edited",
+   "newSentence": "NICE advises considering short-term self-monitoring of blood glucose in type 2 diabetes when starting corticosteroids or to confirm suspected hypoglycaemia."
+  },
+  {
+   "id": "c72",
+   "classification": "supported",
+   "evidence": "emc SmPC 'Diamicron 30 mg MR Tablets' (Servier) retrieved, compared with Diamicron 80 mg; first pass had marked these textbook without retrieval.",
+   "url": "",
+   "action": "kept",
+   "newSentence": "Diamicron; Diamicron MR"
+  }
+ ],
+ "notes": "Budget: 13 WebSearch calls shared with sulfonylureas. The nhs.uk low-blood-sugar page was returned by title but its excerpt did not give the unconscious/seizure 999 wording; that wording is sourced to NHS Scotland My Diabetes My Way (re-retrieved) and the nothing-by-mouth line to Royal Devon NHS leaflet and other trust leaflets. Several summaries blended pages so attribution of the NHS 'call a doctor or 111 if sugar does not help', 'sleepy or dizzy' driving and surgery lines to a specific nhs.uk sub-page is medium confidence. Diamicron brands confirmed on emc (Diamicron 30 mg MR); a dm+d entry appeared marked discontinued, so a reviewer may prefer to keep only the generic name. Regulatory status 'prescription' relies on the NHS About page; retrieved text did not state it explicitly. Removed non-supported: long-term treatment line, hunger, vision changes, 'insulin works more effectively' line, clarithromycin, 'planning pregnancy' line, the claim that two NHS pages disagree about alcohol (actually NHS vs manufacturer leaflets). Textbook sentences: 2 of the first-pass sentences (plus none newly added); article now about 780 words in sections."
+}
