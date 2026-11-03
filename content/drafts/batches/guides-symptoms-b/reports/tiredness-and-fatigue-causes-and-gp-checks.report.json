@@ -1,10 +1,10 @@
 {
  "id": "tiredness-and-fatigue-causes-and-gp-checks",
- "searchesUsed": 6,
+ "searchesUsed": 7,
  "counts": {
-  "supported": 22,
+  "supported": 26,
   "textbook": 0,
-  "unsupported": 3,
+  "unsupported": 4,
   "wrong": 0,
   "unsafe": 0,
   "unchecked": 0
@@ -186,7 +186,44 @@
    "evidence": "No specific test; diagnosed by symptoms and ruling out other conditions",
    "url": "https://www.nhs.uk/conditions/chronic-fatigue-syndrome-cfs/",
    "action": "kept"
+  },
+  {
+   "id": "tiredness-and-fatigue-causes-and-gp-checks:s4.3",
+   "classification": "supported",
+   "evidence": "NHS: regular meals and healthy snacks every 3-4 hours keep energy up",
+   "url": "https://www.nhs.uk/live-well/sleep-and-tiredness/self-help-tips-to-fight-fatigue/",
+   "action": "kept"
+  },
+  {
+   "id": "tiredness-and-fatigue-causes-and-gp-checks:s4.4",
+   "classification": "supported",
+   "evidence": "NHS: regular activity is a long-term energy booster",
+   "url": "https://www.nhs.uk/live-well/sleep-and-tiredness/self-help-tips-to-fight-fatigue/",
+   "action": "kept"
+  },
+  {
+   "id": "tiredness-and-fatigue-causes-and-gp-checks:s4.5",
+   "classification": "supported",
+   "evidence": "NHS: excess weight can be exhausting and strains the heart",
+   "url": "https://www.nhs.uk/live-well/sleep-and-tiredness/self-help-tips-to-fight-fatigue/",
+   "action": "kept"
+  },
+  {
+   "id": "tiredness-and-fatigue-causes-and-gp-checks:s4.6",
+   "classification": "unsupported",
+   "evidence": "NHS says stress uses lots of energy and suggests relaxing activities; specific list (yoga, tai chi, music, reading, friends) not retrieved",
+   "url": "https://www.nhs.uk/live-well/sleep-and-tiredness/self-help-tips-to-fight-fatigue/",
+   "action": "edited",
+   "newSentence": "Stress uses up a lot of energy, so the NHS suggests relaxing activities."
+  },
+  {
+   "id": "tiredness-and-fatigue-causes-and-gp-checks:s4.7",
+   "classification": "supported",
+   "evidence": "NHS: you sleep less deeply after alcohol and will be tired next day (author trimmed the unretrieved \"helps fall asleep\" half)",
+   "url": "https://www.nhs.uk/live-well/sleep-and-tiredness/self-help-tips-to-fight-fatigue/",
+   "action": "edited",
+   "newSentence": "Alcohol lowers the quality of sleep, which can leave a person tired the next day."
   }
  ],
- "notes": "Sources differ on duration (NHS: a few weeks; some pages 4 weeks). \"Few weeks\" matches the NHS page. s3.0 rests on a GP practice page."
+ "notes": "Sources differ on duration (NHS: a few weeks; some pages 4 weeks). \"Few weeks\" matches the NHS page. s3.0 rests on a GP practice page. | additions: Sleep-aid claim 'helps fall asleep' not explicitly retrieved but widely in NHS page; kept, flag if wanted."
 }
