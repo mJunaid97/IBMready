@@ -1,0 +1,711 @@
+{
+ "id": "hyperthyroidism",
+ "searchesUsed": 13,
+ "counts": {
+  "supported": 60,
+  "textbook": 4,
+  "unsupported": 21,
+  "wrong": 0,
+  "unsafe": 2,
+  "unchecked": 0
+ },
+ "claims": [
+  {
+   "id": "c01",
+   "classification": "supported",
+   "evidence": "NHS symptoms page: symptoms can appear gradually or suddenly and vary in severity",
+   "url": "https://www.nhs.uk/conditions/overactive-thyroid-hyperthyroidism/symptoms/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c02",
+   "classification": "supported",
+   "evidence": "NHS symptoms list: nervousness, anxiety, irritability, mood swings, difficulty sleeping, persistent tiredness",
+   "url": "https://www.nhs.uk/conditions/overactive-thyroid-hyperthyroidism/symptoms/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c03",
+   "classification": "unsupported",
+   "evidence": "Retrieved NHS list gave heat sensitivity and trembling; fast/irregular heartbeat and weight loss were not in retrieved text, so removed",
+   "url": "https://www.nhs.uk/conditions/overactive-thyroid-hyperthyroidism/symptoms/",
+   "action": "edited",
+   "newSentence": "Other changes include sensitivity to heat and a tremor."
+  },
+  {
+   "id": "c04",
+   "classification": "supported",
+   "evidence": "NHS lists swelling in the neck from an enlarged thyroid gland (goitre)",
+   "url": "https://www.nhs.uk/conditions/overactive-thyroid-hyperthyroidism/symptoms/",
+   "action": "edited",
+   "newSentence": "Some people also have swelling in the neck from an enlarged thyroid gland, called a goitre."
+  },
+  {
+   "id": "c05",
+   "classification": "supported",
+   "evidence": "NHS: symptoms can have a number of causes, a blood test can help show whether a thyroid problem is responsible",
+   "url": "https://www.nhs.uk/conditions/overactive-thyroid-hyperthyroidism/symptoms/",
+   "action": "edited",
+   "newSentence": "Because many of these symptoms can have other causes, symptoms alone cannot confirm the diagnosis."
+  },
+  {
+   "id": "c06",
+   "classification": "supported",
+   "evidence": "Geriatric review: apathetic hyperthyroidism lacks tremor and hyperactivity; anorexia more common in older patients (32% v 4%). \"Withdrawal\" not retrieved, apathy used",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3401753/",
+   "action": "edited",
+   "newSentence": "In older adults the picture can look different, with loss of appetite and apathy rather than restlessness."
+  },
+  {
+   "id": "c07",
+   "classification": "supported",
+   "evidence": "Review: apathetic hyperthyroidism can look like depression, apathy, pseudodementia; confusion/dementia often mistaken for age-related change",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3401753/",
+   "action": "edited",
+   "newSentence": "For this reason the condition can be mistaken for depression or dementia in older people."
+  },
+  {
+   "id": "c08",
+   "classification": "supported",
+   "evidence": "NHS: see a GP if you have symptoms or signs of an overactive thyroid (reworded to remove second person; route to care named)",
+   "url": "https://www.nhs.uk/conditions/overactive-thyroid-hyperthyroidism/symptoms/",
+   "action": "edited",
+   "newSentence": "The NHS advises seeing a GP for symptoms or signs of an overactive thyroid."
+  },
+  {
+   "id": "c09",
+   "classification": "supported",
+   "evidence": "NHS: a GP may order a blood test; diagnosis based on symptoms and blood tests",
+   "url": "https://www.nhs.uk/conditions/overactive-thyroid-hyperthyroidism/symptoms/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c10",
+   "classification": "textbook",
+   "evidence": "Graves most common cause (NHS inform); autoimmune nature is textbook",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/glands/overactive-thyroid/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c11",
+   "classification": "unsupported",
+   "evidence": "NHS says about 4 in 5; the \"3 in 4\" figure was not retrieved. (Existing conditions.json causes line says 75%)",
+   "url": "https://www.nhs.uk/conditions/overactive-thyroid-hyperthyroidism/causes/",
+   "action": "edited",
+   "newSentence": "The NHS says about 4 in every 5 people with an overactive thyroid have Graves' disease."
+  },
+  {
+   "id": "c12",
+   "classification": "supported",
+   "evidence": "Toxic nodules and thyroiditis named as causes (amiodarone moved to next sentence)",
+   "url": "https://www.nhs.uk/conditions/overactive-thyroid-hyperthyroidism/causes/",
+   "action": "edited",
+   "newSentence": "Other causes include thyroid nodules and inflammation of the gland called thyroiditis."
+  },
+  {
+   "id": "c13",
+   "classification": "unsupported",
+   "evidence": "NHS: can occasionally happen if taking medicine containing iodine such as amiodarone; \"supplements\" and \"usually those with nodules\" not retrieved",
+   "url": "https://www.nhs.uk/conditions/overactive-thyroid-hyperthyroidism/causes/",
+   "action": "edited",
+   "newSentence": "The NHS says too much iodine, for example from medicines that contain it such as amiodarone, can also trigger an overactive thyroid."
+  },
+  {
+   "id": "c14",
+   "classification": "unsupported",
+   "evidence": "Toxic adenoma only appeared in a non-allowed (arXiv) source; no official retrieval",
+   "url": "",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c15",
+   "classification": "supported",
+   "evidence": "Further tests identify the cause (StatPearls Graves disease: antibody testing plus uptake imaging)",
+   "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK448195/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c16",
+   "classification": "supported",
+   "evidence": "TRAb antibody testing used to diagnose Graves disease (97% sensitivity reported)",
+   "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK448195/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c17",
+   "classification": "supported",
+   "evidence": "In Graves disease uptake is high and diffuse; low in subacute/silent thyroiditis",
+   "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK448195/",
+   "action": "edited",
+   "newSentence": "A radioactive iodine uptake scan can also help, with high uptake typical of Graves' disease and low uptake typical of thyroiditis."
+  },
+  {
+   "id": "c18",
+   "classification": "supported",
+   "evidence": "NHS: a GP may order a blood test",
+   "url": "https://www.nhs.uk/conditions/overactive-thyroid-hyperthyroidism/symptoms/",
+   "action": "edited",
+   "newSentence": "The starting point is a visit to a GP, who may arrange a thyroid function blood test."
+  },
+  {
+   "id": "c19",
+   "classification": "supported",
+   "evidence": "NHS: diagnosis based on symptoms and results of blood tests assessing thyroid function",
+   "url": "https://www.nhs.uk/conditions/overactive-thyroid-hyperthyroidism/symptoms/",
+   "action": "edited",
+   "newSentence": "A diagnosis is based on the symptoms and the results of blood tests that assess how well the thyroid is working."
+  },
+  {
+   "id": "c20",
+   "classification": "supported",
+   "evidence": "Review: TSH is first-line, free T4 measured when TSH abnormal, free T3 added when TSH suppressed",
+   "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12223887/",
+   "action": "edited",
+   "newSentence": "These tests measure thyroid stimulating hormone (TSH) and the thyroid hormones T3 and T4."
+  },
+  {
+   "id": "c21",
+   "classification": "textbook",
+   "evidence": "Low TSH with high thyroid hormones in overt hyperthyroidism; retrieved text gave only the subclinical (normal T4) contrast",
+   "url": "",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c22",
+   "classification": "unsupported",
+   "evidence": "NHS Scotland isotope scan not retrieved; uptake scan and antibody tests retrieved from StatPearls",
+   "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK448195/",
+   "action": "edited",
+   "newSentence": "Other blood tests and a thyroid uptake scan may be used to find the cause."
+  },
+  {
+   "id": "c23",
+   "classification": "unsupported",
+   "evidence": "Search found no source stating when or whether a GP refers to an endocrinologist",
+   "url": "",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c24",
+   "classification": "supported",
+   "evidence": "Review: low TSH with normal free T4 and T3 is subclinical hyperthyroidism",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/33588063/",
+   "action": "edited",
+   "newSentence": "A mild form with a low TSH but normal T3 and T4 is called subclinical hyperthyroidism."
+  },
+  {
+   "id": "c25",
+   "classification": "supported",
+   "evidence": "NHS lists medicine, radioactive iodine and surgery",
+   "url": "https://www.nhs.uk/conditions/overactive-thyroid-hyperthyroidism/treatment/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c26",
+   "classification": "supported",
+   "evidence": "NHS inform calls antithyroid tablets a common first choice; \"the usual first step\" overstated",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/glands/overactive-thyroid/",
+   "action": "edited",
+   "newSentence": "Antithyroid medicines such as carbimazole and propylthiouracil are a common first choice."
+  },
+  {
+   "id": "c27",
+   "classification": "unsafe",
+   "evidence": "Contains a schedule (12 to 18 months) so reworded; \"few months before benefit\" not retrieved. CUH: continued 12-18 months then stopped to see whether it recurs",
+   "url": "https://www.cuh.nhs.uk/patient-information/hyperthyroidism-due-to-graves-disease/",
+   "action": "edited",
+   "newSentence": "They are usually taken for more than a year, and the medicine is then stopped to see whether the condition returns."
+  },
+  {
+   "id": "c28",
+   "classification": "supported",
+   "evidence": "NHS 111 Wales: some people continue for several years or possibly for life",
+   "url": "https://111.wales.nhs.uk/encyclopaedia/t/article/thyroid,overactive/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c29",
+   "classification": "supported",
+   "evidence": "NHS inform text",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/glands/overactive-thyroid/",
+   "action": "edited",
+   "newSentence": "Beta-blockers, such as propranolol or atenolol, can relieve symptoms such as tremor and a rapid heartbeat, but they are not suitable for people with asthma."
+  },
+  {
+   "id": "c30",
+   "classification": "unsupported",
+   "evidence": "UCLH: often a single dose is enough; \"most people need only one\" not stated",
+   "url": "https://www.uclh.nhs.uk/patients-and-visitors/patient-information-pages/radioiodine-therapy",
+   "action": "edited",
+   "newSentence": "Radioactive iodine is a highly effective treatment, and often a single dose is enough."
+  },
+  {
+   "id": "c31",
+   "classification": "supported",
+   "evidence": "UCLH: not suitable in pregnancy or breastfeeding or where eye disease is severe",
+   "url": "https://www.uclh.nhs.uk/patients-and-visitors/patient-information-pages/radioiodine-therapy",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c32",
+   "classification": "unsupported",
+   "evidence": "NHS reserves surgery for these cases; \"only occasionally\" not stated",
+   "url": "https://www.nhs.uk/conditions/overactive-thyroid-hyperthyroidism/treatment/",
+   "action": "edited",
+   "newSentence": "Surgery is reserved for cases such as a large goitre, severe eye problems, when other treatments cannot be used, or when symptoms return."
+  },
+  {
+   "id": "c33",
+   "classification": "supported",
+   "evidence": "NHS 111 Wales: underactive thyroid sometimes temporary, often permanent, needs long-term hormone medicine",
+   "url": "https://111.wales.nhs.uk/encyclopaedia/t/article/thyroid,overactive/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c34",
+   "classification": "unsupported",
+   "evidence": "Lifelong replacement after surgery not retrieved",
+   "url": "",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c35",
+   "classification": "supported",
+   "evidence": "NHS inform/NHS: thyroid eye disease affects people with Graves disease",
+   "url": "https://www.nhs.uk/conditions/overactive-thyroid-hyperthyroidism/complications/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c36",
+   "classification": "supported",
+   "evidence": "NHS complications page: around 1 in 4; NHS inform: around 1 in 20",
+   "url": "https://www.nhs.uk/conditions/overactive-thyroid-hyperthyroidism/complications/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c37",
+   "classification": "supported",
+   "evidence": "NHS inform symptom list",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/glands/overactive-thyroid/",
+   "action": "edited",
+   "newSentence": "Symptoms can include dry and gritty eyes, red eyes, sensitivity to light, watering, blurred or double vision, and bulging eyes."
+  },
+  {
+   "id": "c38",
+   "classification": "unsupported",
+   "evidence": "Not retrieved; leaflet says eye disease may progress after thyroid treated",
+   "url": "",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c39",
+   "classification": "supported",
+   "evidence": "NHS inform",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/glands/overactive-thyroid/",
+   "action": "edited",
+   "newSentence": "Severe disease can cause vision loss, and treatments named by NHS inform include eye drops, sunglasses, corticosteroids, radiotherapy and surgery."
+  },
+  {
+   "id": "c40",
+   "classification": "unsupported",
+   "evidence": "NHS inform: risk greater in smokers, quitting helpful; \"more severe changes\" only from trial protocol",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/glands/overactive-thyroid/",
+   "action": "edited",
+   "newSentence": "Smoking increases the risk of thyroid eye disease, and quitting helps."
+  },
+  {
+   "id": "c41",
+   "classification": "supported",
+   "evidence": "Thyroid UK: eye problems can continue in people who smoke after treatment",
+   "url": "https://thyroiduk.org/if-you-are-hyperthyroid/about-hyperthyroidism/graves-disease/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c42",
+   "classification": "unsafe",
+   "evidence": "Second-person instruction and sudden sight change not stated as emergency by sources; leaflet says contact doctor for urgent advice. Route mapping is site convention. Source attribution among blended results is uncertain",
+   "url": "https://www.uhsussex.nhs.uk/wp-content/uploads/2022/08/Graves-disease.pdf",
+   "action": "edited",
+   "newSentence": "An NHS hospital leaflet advises getting urgent advice from a doctor if the eyes become more prominent and swollen, for example from the GP the same day or NHS 111."
+  },
+  {
+   "id": "c43",
+   "classification": "unsupported",
+   "evidence": "Miscarriage and eclampsia not retrieved; NIDDK: uncontrolled can lead to serious problems for mother and baby",
+   "url": "https://www.niddk.nih.gov/health-information/endocrine-diseases/pregnancy-thyroid-disease",
+   "action": "edited",
+   "newSentence": "Uncontrolled hyperthyroidism in pregnancy can lead to serious problems for the mother and the baby, according to NIDDK."
+  },
+  {
+   "id": "c44",
+   "classification": "unsupported",
+   "evidence": "NIDDK: probably will not need treatment; \"usually not a problem\" overstated",
+   "url": "https://www.niddk.nih.gov/health-information/endocrine-diseases/pregnancy-thyroid-disease",
+   "action": "edited",
+   "newSentence": "NIDDK says a woman with mild hyperthyroidism in pregnancy probably will not need treatment."
+  },
+  {
+   "id": "c45",
+   "classification": "unsupported",
+   "evidence": "NIDDK: antithyroid medicines, PTU most often in first 3 months; \"does not harm the baby\" is unsafe overreach (methimazole carries slightly higher birth-defect risk per NIDDK)",
+   "url": "https://www.niddk.nih.gov/health-information/endocrine-diseases/pregnancy-thyroid-disease",
+   "action": "edited",
+   "newSentence": "NIDDK says more severe cases are typically treated with antithyroid medicines, most often propylthiouracil early in pregnancy."
+  },
+  {
+   "id": "c46",
+   "classification": "supported",
+   "evidence": "UCLH and NIDDK",
+   "url": "https://www.niddk.nih.gov/health-information/endocrine-diseases/pregnancy-thyroid-disease",
+   "action": "edited",
+   "newSentence": "Radioactive iodine is not suitable during pregnancy or breastfeeding, and NIDDK says it can damage the baby's thyroid gland."
+  },
+  {
+   "id": "c47",
+   "classification": "unsupported",
+   "evidence": "Source was a review blend; not retrieved from an official source",
+   "url": "",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c48",
+   "classification": "unsupported",
+   "evidence": "Replaces review-based \"mainstay\" sentence; UK trust guideline suggests growth scans (weeks omitted). Attribution to NNUH among blended results is uncertain",
+   "url": "https://www.nnuh.nhs.uk/publication/download/thyroid-disease-in-pregnancy-v3-6/",
+   "action": "edited",
+   "newSentence": "A UK hospital trust guideline suggests ultrasound scans in later pregnancy to watch the baby's growth when the mother has hyperthyroidism."
+  },
+  {
+   "id": "c49",
+   "classification": "supported",
+   "evidence": "NHS: treatment is usually available (weak, paraphrased summary)",
+   "url": "https://www.nhs.uk/conditions/overactive-thyroid-hyperthyroidism/complications/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c50",
+   "classification": "supported",
+   "evidence": "NHS complications list AF, osteoporosis, heart failure",
+   "url": "https://www.nhs.uk/conditions/overactive-thyroid-hyperthyroidism/complications/",
+   "action": "edited",
+   "newSentence": "The NHS says an overactive thyroid can raise the risk of atrial fibrillation, heart failure and osteoporosis, which weakens the bones."
+  },
+  {
+   "id": "c51",
+   "classification": "supported",
+   "evidence": "NHS: rare, serious, life-threatening thyroid storm when undiagnosed or poorly controlled",
+   "url": "https://www.nhs.uk/conditions/overactive-thyroid-hyperthyroidism/complications/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c52",
+   "classification": "supported",
+   "evidence": "NHS triggers",
+   "url": "https://www.nhs.uk/conditions/overactive-thyroid-hyperthyroidism/complications/",
+   "action": "edited",
+   "newSentence": "The NHS lists triggers such as infection, pregnancy, missed doses of medicine and physical damage to the thyroid."
+  },
+  {
+   "id": "c53",
+   "classification": "supported",
+   "evidence": "NHS warning signs",
+   "url": "https://www.nhs.uk/conditions/overactive-thyroid-hyperthyroidism/complications/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c54",
+   "classification": "unsupported",
+   "evidence": "Surgery to underactive thyroid not retrieved",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/glands/overactive-thyroid/",
+   "action": "edited",
+   "newSentence": "Severe thyroid eye disease can lead to vision loss, and radioactive iodine can leave the thyroid underactive."
+  },
+  {
+   "id": "c55",
+   "classification": "supported",
+   "evidence": "Thyroid storm a medical emergency; 999 is the site route for emergencies",
+   "url": "https://www.nhs.uk/conditions/overactive-thyroid-hyperthyroidism/complications/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c56",
+   "classification": "supported",
+   "evidence": "Thyroid UK: many cases resolve, regular TSH checks needed",
+   "url": "https://thyroiduk.org/if-you-are-hyperthyroid/about-hyperthyroidism/subclinical-hyperthyroidism/",
+   "action": "edited",
+   "newSentence": "A mild form with a low TSH but normal hormone levels, called subclinical hyperthyroidism, is often monitored with regular TSH checks, and Thyroid UK says many cases settle by themselves."
+  },
+  {
+   "id": "c57",
+   "classification": "supported",
+   "evidence": "NHS three treatments",
+   "url": "https://www.nhs.uk/conditions/overactive-thyroid-hyperthyroidism/treatment/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c58",
+   "classification": "supported",
+   "evidence": "NHS 111 Wales",
+   "url": "https://111.wales.nhs.uk/encyclopaedia/t/article/thyroid,overactive/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c59",
+   "classification": "supported",
+   "evidence": "NHS: GP may order blood test",
+   "url": "https://www.nhs.uk/conditions/overactive-thyroid-hyperthyroidism/symptoms/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c60",
+   "classification": "textbook",
+   "evidence": "Definition of over/underactive",
+   "url": "",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c61",
+   "classification": "unsupported",
+   "evidence": "Surgery not retrieved",
+   "url": "https://111.wales.nhs.uk/encyclopaedia/t/article/thyroid,overactive/",
+   "action": "edited",
+   "newSentence": "Radioactive iodine treatment for an overactive thyroid often leads to an underactive thyroid, which is sometimes temporary but often permanent."
+  },
+  {
+   "id": "c62",
+   "classification": "supported",
+   "evidence": "NHS 111 Wales",
+   "url": "https://111.wales.nhs.uk/encyclopaedia/t/article/thyroid,overactive/",
+   "action": "edited",
+   "newSentence": "A permanent underactive thyroid needs long-term thyroid hormone medicine."
+  },
+  {
+   "id": "c63",
+   "classification": "supported",
+   "evidence": "NHS",
+   "url": "https://www.nhs.uk/conditions/overactive-thyroid-hyperthyroidism/complications/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c64",
+   "classification": "supported",
+   "evidence": "NHS",
+   "url": "https://www.nhs.uk/conditions/overactive-thyroid-hyperthyroidism/complications/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c65",
+   "classification": "supported",
+   "evidence": "Emergency; 999",
+   "url": "https://www.nhs.uk/conditions/overactive-thyroid-hyperthyroidism/complications/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c66",
+   "classification": "supported",
+   "evidence": "UCLH",
+   "url": "https://www.uclh.nhs.uk/patients-and-visitors/patient-information-pages/radioiodine-therapy",
+   "action": "edited",
+   "newSentence": "NHS hospital guidance says radioactive iodine is not suitable in pregnancy or breastfeeding."
+  },
+  {
+   "id": "c67",
+   "classification": "supported",
+   "evidence": "UCLH",
+   "url": "https://www.uclh.nhs.uk/patients-and-visitors/patient-information-pages/radioiodine-therapy",
+   "action": "edited",
+   "newSentence": "It is also not suitable where eye disease is severe."
+  },
+  {
+   "id": "c68",
+   "classification": "supported",
+   "evidence": "NHS",
+   "url": "https://www.nhs.uk/conditions/overactive-thyroid-hyperthyroidism/treatment/",
+   "action": "edited",
+   "newSentence": "Surgery is reserved for cases such as a large goitre, severe eye problems, when other treatments cannot be used, or when symptoms return."
+  },
+  {
+   "id": "c69",
+   "classification": "unsupported",
+   "evidence": "Not retrieved",
+   "url": "",
+   "action": "removed",
+   "newSentence": ""
+  },
+  {
+   "id": "c70",
+   "classification": "supported",
+   "evidence": "NHS",
+   "url": "https://www.nhs.uk/conditions/overactive-thyroid-hyperthyroidism/symptoms/",
+   "action": "edited",
+   "newSentence": "Yes, many of its symptoms can have other causes, so symptoms alone cannot confirm it."
+  },
+  {
+   "id": "c71",
+   "classification": "supported",
+   "evidence": "Review",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3401753/",
+   "action": "edited",
+   "newSentence": "In older adults it can be mistaken for depression or dementia."
+  },
+  {
+   "id": "c72",
+   "classification": "supported",
+   "evidence": "NHS",
+   "url": "https://www.nhs.uk/conditions/overactive-thyroid-hyperthyroidism/symptoms/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c73",
+   "classification": "supported",
+   "evidence": "NHS",
+   "url": "https://www.nhs.uk/conditions/overactive-thyroid-hyperthyroidism/symptoms/",
+   "action": "edited",
+   "newSentence": "A thyroid function blood test helps to show whether a thyroid problem is responsible."
+  },
+  {
+   "id": "c74",
+   "classification": "unsupported",
+   "evidence": "NHS page title; thyrotoxicosis not retrieved from official source",
+   "url": "https://www.nhs.uk/conditions/overactive-thyroid-hyperthyroidism/",
+   "action": "edited",
+   "newSentence": "Overactive thyroid or hyperthyroidism"
+  },
+  {
+   "id": "c75",
+   "classification": "supported",
+   "evidence": "NHS",
+   "url": "https://www.nhs.uk/conditions/overactive-thyroid-hyperthyroidism/causes/",
+   "action": "edited",
+   "newSentence": "Graves' disease (about 4 in 5 cases, says the NHS)"
+  },
+  {
+   "id": "c76",
+   "classification": "supported",
+   "evidence": "NHS",
+   "url": "https://www.nhs.uk/conditions/overactive-thyroid-hyperthyroidism/symptoms/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c77",
+   "classification": "supported",
+   "evidence": "NHS",
+   "url": "https://www.nhs.uk/conditions/overactive-thyroid-hyperthyroidism/treatment/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c78",
+   "classification": "supported",
+   "evidence": "NHS inform",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/glands/overactive-thyroid/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c79",
+   "classification": "unsupported",
+   "evidence": "Surgery not retrieved",
+   "url": "https://111.wales.nhs.uk/encyclopaedia/t/article/thyroid,overactive/",
+   "action": "edited",
+   "newSentence": "Radioactive iodine can lead to an underactive thyroid"
+  },
+  {
+   "id": "c80",
+   "classification": "supported",
+   "evidence": "NHS",
+   "url": "https://www.nhs.uk/conditions/overactive-thyroid-hyperthyroidism/complications/",
+   "action": "kept",
+   "newSentence": ""
+  },
+  {
+   "id": "c81",
+   "classification": "supported",
+   "evidence": "Added sentence: NHS causes page",
+   "url": "https://www.nhs.uk/conditions/overactive-thyroid-hyperthyroidism/causes/",
+   "action": "edited",
+   "newSentence": "The NHS describes thyroiditis as swelling of the thyroid, which can cause extra thyroid hormones to be produced."
+  },
+  {
+   "id": "c82",
+   "classification": "supported",
+   "evidence": "Added sentence: StatPearls Graves disease",
+   "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK448195/",
+   "action": "edited",
+   "newSentence": "A recent iodine load, such as from amiodarone or contrast dye, can make an uptake scan unreliable, so an antibody test may be used instead."
+  },
+  {
+   "id": "c83",
+   "classification": "supported",
+   "evidence": "Added sentence: Thyroid UK subclinical page",
+   "url": "https://thyroiduk.org/if-you-are-hyperthyroid/about-hyperthyroidism/subclinical-hyperthyroidism/",
+   "action": "edited",
+   "newSentence": "Thyroid UK says many cases settle by themselves, so regular TSH checks are needed."
+  },
+  {
+   "id": "c84",
+   "classification": "supported",
+   "evidence": "Added sentence: Thyroid UK subclinical page",
+   "url": "https://thyroiduk.org/if-you-are-hyperthyroid/about-hyperthyroidism/subclinical-hyperthyroidism/",
+   "action": "edited",
+   "newSentence": "Thyroid UK also says an undetectable TSH carries a higher risk of progressing to overt hyperthyroidism."
+  },
+  {
+   "id": "c85",
+   "classification": "supported",
+   "evidence": "Added sentence: NHS inform",
+   "url": "https://www.nhsinform.scot/illnesses-and-conditions/glands/overactive-thyroid/",
+   "action": "edited",
+   "newSentence": "NHS inform says becoming pregnant can lead to a relapse of symptoms, especially in someone with a history of Graves' disease."
+  },
+  {
+   "id": "c86",
+   "classification": "supported",
+   "evidence": "Added sentence: Systematic review PMC11695029",
+   "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11695029/",
+   "action": "edited",
+   "newSentence": "Antibodies from a mother with Graves' disease can cross the placenta and affect the baby's thyroid function, according to a systematic review."
+  },
+  {
+   "id": "c87",
+   "classification": "textbook",
+   "evidence": "Added sentence: Textbook definition",
+   "url": "",
+   "action": "edited",
+   "newSentence": "Atrial fibrillation is an irregular and often abnormally fast heart rhythm."
+  }
+ ],
+ "notes": "See final message."
+}
