@@ -1,0 +1,668 @@
+{
+ "id": "lansoprazole",
+ "searchesUsed": 8,
+ "counts": {
+  "supported": 69,
+  "textbook": 2,
+  "unsupported": 0,
+  "wrong": 2,
+  "unsafe": 0,
+  "unchecked": 0
+ },
+ "claims": [
+  {
+   "id": "c01",
+   "classification": "supported",
+   "evidence": "NHS About: lowers stomach acid; indigestion, heartburn, reflux disease, stomach ulcers; PPI class in emc leaflet.",
+   "url": "https://www.nhs.uk/medicines/lansoprazole/about-lansoprazole/",
+   "action": "kept"
+  },
+  {
+   "id": "c02",
+   "classification": "supported",
+   "evidence": "NHS: low magnesium after more than 3 months; more than a year may raise chance of fractures and gut infections; doctor should check regularly. Prescription-only claim removed (not re-retrieved).",
+   "url": "https://www.nhs.uk/medicines/lansoprazole/common-questions-about-lansoprazole/",
+   "action": "edited",
+   "newSentence": "The NHS says a doctor checks regularly on people who continue it for a long time, because of possible side effects such as low magnesium, bone fractures and gut infections."
+  },
+  {
+   "id": "c03",
+   "classification": "supported",
+   "evidence": "NHS About lists this use (gloss of reflux is a plain definition).",
+   "url": "https://www.nhs.uk/medicines/lansoprazole/about-lansoprazole/",
+   "action": "kept"
+  },
+  {
+   "id": "c04",
+   "classification": "textbook",
+   "evidence": "NHS About lists this use (gloss of reflux is a plain definition).",
+   "url": "https://www.nhs.uk/medicines/lansoprazole/about-lansoprazole/",
+   "action": "kept"
+  },
+  {
+   "id": "c05",
+   "classification": "supported",
+   "evidence": "NHS About lists this use (gloss of reflux is a plain definition).",
+   "url": "https://www.nhs.uk/medicines/lansoprazole/about-lansoprazole/",
+   "action": "kept"
+  },
+  {
+   "id": "c06",
+   "classification": "supported",
+   "evidence": "NHS About lists this use (gloss of reflux is a plain definition).",
+   "url": "https://www.nhs.uk/medicines/lansoprazole/about-lansoprazole/",
+   "action": "kept"
+  },
+  {
+   "id": "c07",
+   "classification": "supported",
+   "evidence": "emc leaflet/NHS: proton pump inhibitor.",
+   "url": "https://www.medicines.org.uk/emc/files/pil.14551.pdf",
+   "action": "kept"
+  },
+  {
+   "id": "c08",
+   "classification": "edited",
+   "evidence": "NHS: lowers stomach acid; enzyme wording not re-retrieved so replaced.",
+   "url": "https://www.nhs.uk/medicines/lansoprazole/about-lansoprazole/",
+   "action": "edited",
+   "newSentence": "The NHS says it lowers the amount of acid made in the stomach."
+  },
+  {
+   "id": "c09",
+   "classification": "supported",
+   "evidence": "Follows from NHS use list plus acid lowering (not claimed as textbook).",
+   "url": "https://www.nhs.uk/medicines/lansoprazole/about-lansoprazole/",
+   "action": "kept"
+  },
+  {
+   "id": "c10",
+   "classification": "edited",
+   "evidence": "NHS: start to feel better within 2 to 3 days; up to 4 weeks to work fully.",
+   "url": "https://www.nhs.uk/medicines/lansoprazole/common-questions-about-lansoprazole/",
+   "action": "edited",
+   "newSentence": "The NHS says symptoms usually start to improve within 2 to 3 days, and that it may take up to 4 weeks to work fully."
+  },
+  {
+   "id": "c11",
+   "classification": "edited",
+   "evidence": "Original listed stomach pain, constipation, itchy rash, dry mouth, headache easing after first week; not re-retrieved, removed. Retrieved: headache, feeling sick, diarrhoea.",
+   "url": "https://www.nhs.uk/medicines/lansoprazole/side-effects-of-lansoprazole/",
+   "action": "edited",
+   "newSentence": "The NHS lists headache, feeling sick and diarrhoea among the common side effects"
+  },
+  {
+   "id": "c12",
+   "classification": "removed",
+   "evidence": "Not re-retrieved (stomach pain, constipation).",
+   "url": "https://www.nhs.uk/medicines/lansoprazole/side-effects-of-lansoprazole/",
+   "action": "removed"
+  },
+  {
+   "id": "c13",
+   "classification": "removed",
+   "evidence": "Not re-retrieved (itchy rash, dry mouth).",
+   "url": "https://www.nhs.uk/medicines/lansoprazole/side-effects-of-lansoprazole/",
+   "action": "removed"
+  },
+  {
+   "id": "c14",
+   "classification": "edited",
+   "evidence": "NHS: tend to be mild and go away when you stop.",
+   "url": "https://www.nhs.uk/medicines/lansoprazole/side-effects-of-lansoprazole/",
+   "action": "edited",
+   "newSentence": "The NHS says common side effects tend to be mild and go away when the medicine is stopped"
+  },
+  {
+   "id": "c15",
+   "classification": "supported",
+   "evidence": "NHS: rare, under 1 in 1,000; pancreas/liver signs. Same-day route not stated, reworded to 'prompt contact'.",
+   "url": "https://www.nhs.uk/medicines/lansoprazole/side-effects-of-lansoprazole/",
+   "action": "edited",
+   "newSentence": "The NHS says serious side effects are rare; worsening stomach pain, yellowing of the skin or eyes, or dark urine can signal inflammation of the pancreas or liver, and need prompt contact with a GP or NHS 111"
+  },
+  {
+   "id": "c16",
+   "classification": "supported",
+   "evidence": "NHS: subacute cutaneous lupus signs. Route reworded.",
+   "url": "https://www.nhs.uk/medicines/lansoprazole/side-effects-of-lansoprazole/",
+   "action": "edited",
+   "newSentence": "Joint pain together with a red rash on sun-exposed skin can signal a skin form of lupus, and needs prompt contact with a GP or NHS 111"
+  },
+  {
+   "id": "c17",
+   "classification": "supported",
+   "evidence": "NHS: severe/persistent diarrhoea, inflamed bowel. Route reworded.",
+   "url": "https://www.nhs.uk/medicines/lansoprazole/side-effects-of-lansoprazole/",
+   "action": "edited",
+   "newSentence": "Severe or persistent diarrhoea can signal an inflamed bowel, and needs prompt contact with a GP or NHS 111"
+  },
+  {
+   "id": "c18",
+   "classification": "supported",
+   "evidence": "NHS: call 999 list; added 'or lips' and wording per retrieved text.",
+   "url": "https://www.nhs.uk/medicines/lansoprazole/side-effects-of-lansoprazole/",
+   "action": "edited",
+   "newSentence": "A serious allergic reaction (anaphylaxis) is rare; swelling of the lips, mouth, throat or tongue, fast or difficult breathing, a tight throat, trouble swallowing, blue, grey or pale skin or lips, sudden confusion or fainting needs a 999 call"
+  },
+  {
+   "id": "c19",
+   "classification": "supported",
+   "evidence": "NHS: low magnesium after more than 3 months; tired, confused, dizzy, twitches, shaking, irregular heartbeat; contact doctor or 111.",
+   "url": "https://www.nhs.uk/medicines/lansoprazole/common-questions-about-lansoprazole/",
+   "action": "edited",
+   "newSentence": "If lansoprazole is taken for more than 3 months, blood magnesium may fall, causing tiredness, confusion, dizziness, muscle twitches, shaking or an irregular heartbeat, which needs contact with a doctor or NHS 111"
+  },
+  {
+   "id": "c20",
+   "classification": "supported",
+   "evidence": "NHS: more than a year, fractures and gut infections; B12 removed from this line (retrieved only as reduced absorption, SmPC).",
+   "url": "https://www.nhs.uk/medicines/lansoprazole/common-questions-about-lansoprazole/",
+   "action": "edited",
+   "newSentence": "Use for more than a year may raise the chance of bone fractures and gut infections"
+  },
+  {
+   "id": "c21",
+   "classification": "supported",
+   "evidence": "NHS Who can/cannot: allergy, liver, low B12, endoscopy, pregnancy/breastfeeding. 'Most adults and children' and 'trying for a baby' removed (SmPC says not for children; not retrieved).",
+   "url": "https://www.nhs.uk/medicines/lansoprazole/who-can-and-cannot-take-lansoprazole/",
+   "action": "edited",
+   "newSentence": "The NHS advises telling a doctor first about a past allergic reaction, liver problems, low vitamin B12, an upcoming endoscopy, pregnancy or breastfeeding"
+  },
+  {
+   "id": "c22",
+   "classification": "supported",
+   "evidence": "NHS: may hide problems found at endoscopy.",
+   "url": "https://www.nhs.uk/medicines/lansoprazole/who-can-and-cannot-take-lansoprazole/",
+   "action": "edited",
+   "newSentence": "The NHS says lansoprazole may hide some of the problems that would usually be found during an endoscopy"
+  },
+  {
+   "id": "c23",
+   "classification": "supported",
+   "evidence": "emc leaflet: not if allergic to lansoprazole or ingredients.",
+   "url": "https://www.medicines.org.uk/emc/files/pil.14551.pdf",
+   "action": "kept",
+   "newSentence": "The UK patient leaflet says it should not be taken by people who are allergic to lansoprazole or any of its other ingredients"
+  },
+  {
+   "id": "c24",
+   "classification": "supported",
+   "evidence": "NHS/SmPC: antacids may reduce bioavailability; SmPC gap advice. Timing omitted.",
+   "url": "https://www.nhs.uk/medicines/lansoprazole/taking-lansoprazole-with-other-medicines-and-herbal-supplements/",
+   "action": "edited",
+   "newSentence": "The NHS says antacids can affect how much lansoprazole the body takes in, and the product information advises a gap after taking them"
+  },
+  {
+   "id": "c25",
+   "classification": "supported",
+   "evidence": "NHS: St John's wort may stop it working as well.",
+   "url": "https://www.nhs.uk/medicines/lansoprazole/taking-lansoprazole-with-other-medicines-and-herbal-supplements/",
+   "action": "kept",
+   "newSentence": "The NHS says St John's wort may stop lansoprazole working as well as it should"
+  },
+  {
+   "id": "c26",
+   "classification": "supported",
+   "evidence": "NHS names warfarin, methotrexate, digoxin, tacrolimus; SmPC names ketoconazole, itraconazole, theophylline, atazanavir/HIV. Rifampicin, posaconazole, fluvoxamine not re-retrieved, dropped.",
+   "url": "https://www.medicines.org.uk/emc/product/1714/smpc",
+   "action": "edited",
+   "newSentence": "The NHS and product information list medicines that can interact, including warfarin, methotrexate, digoxin, tacrolimus, itraconazole, ketoconazole, theophylline and some HIV medicines"
+  },
+  {
+   "id": "c27",
+   "classification": "supported",
+   "evidence": "NHS: not enough information on other complementary medicines.",
+   "url": "https://www.nhs.uk/medicines/lansoprazole/taking-lansoprazole-with-other-medicines-and-herbal-supplements/",
+   "action": "kept",
+   "newSentence": "The NHS says there is not enough information to say that other complementary medicines and herbal remedies are fine to take with it"
+  },
+  {
+   "id": "c28",
+   "classification": "supported",
+   "evidence": "NHS common questions: lowers ellaOne effectiveness; regular contraception unaffected; vomiting/severe diarrhoea may stop pill.",
+   "url": "https://www.nhs.uk/medicines/lansoprazole/common-questions-about-lansoprazole/",
+   "action": "edited",
+   "newSentence": "The NHS says it may make the emergency contraceptive ellaOne less effective, and that regular contraceptive pills are not affected unless vomiting or severe diarrhoea stops the pill working"
+  },
+  {
+   "id": "c29",
+   "classification": "wrong",
+   "evidence": "WRONG original ('not ruled out'): retrieved NHS text says alcohol makes stomach produce more acid, irritates lining, worsens symptoms (one retrieval adds 'best to avoid if possible'; not used because summaries conflicted).",
+   "url": "https://www.nhs.uk/medicines/lansoprazole/common-questions-about-lansoprazole/",
+   "action": "edited",
+   "newSentence": "The NHS says alcohol can make the stomach produce more acid than normal, which can irritate the lining and make symptoms worse"
+  },
+  {
+   "id": "c30",
+   "classification": "supported",
+   "evidence": "NHS: omeprazole usually offered; SmPC: preferable to avoid in pregnancy as precaution.",
+   "url": "https://www.nhs.uk/medicines/lansoprazole/pregnancy-breastfeeding-and-fertility-while-taking-lansoprazole/",
+   "action": "edited",
+   "newSentence": "In pregnancy the NHS says a similar medicine, omeprazole, is usually offered instead, and the product information says avoiding lansoprazole in pregnancy is preferable as a precaution"
+  },
+  {
+   "id": "c31",
+   "classification": "wrong",
+   "evidence": "WRONG original ('it can be taken'): NHS says doctor will usually recommend omeprazole or pantoprazole; fertility no evidence of effect.",
+   "url": "https://www.nhs.uk/medicines/lansoprazole/pregnancy-breastfeeding-and-fertility-while-taking-lansoprazole/",
+   "action": "edited",
+   "newSentence": "For breastfeeding, the NHS says a doctor will usually recommend omeprazole or pantoprazole instead, and that there is no evidence lansoprazole affects fertility"
+  },
+  {
+   "id": "c32",
+   "classification": "supported",
+   "evidence": "emc leaflet: dizzy, sleepy or vision effects; care driving.",
+   "url": "https://www.medicines.org.uk/emc/files/pil.14551.pdf",
+   "action": "edited",
+   "newSentence": "The UK patient leaflet says it can cause dizziness or sleepiness, so care is advised before driving or using machinery"
+  },
+  {
+   "id": "c33",
+   "classification": "edited",
+   "evidence": "NHS: doctor should check regularly if continued past a year.",
+   "url": "https://www.nhs.uk/medicines/lansoprazole/common-questions-about-lansoprazole/",
+   "action": "edited",
+   "newSentence": "The NHS says a doctor should check regularly on people who continue lansoprazole beyond a year."
+  },
+  {
+   "id": "c34",
+   "classification": "edited",
+   "evidence": "SmPC: tacrolimus levels checked on start/stop; digoxin levels monitored; INR monitored with warfarin.",
+   "url": "https://www.medicines.org.uk/emc/product/1714/smpc",
+   "action": "edited",
+   "newSentence": "The product information says tacrolimus levels should be checked when lansoprazole is started or stopped, and digoxin levels and warfarin clotting tests (INR) may also be monitored."
+  },
+  {
+   "id": "c35",
+   "classification": "supported",
+   "evidence": "Brand names: emc SmPC Zoton FasTab; MedlinePlus lists Prevacid (brand field).",
+   "url": "https://www.medicines.org.uk/emc/product/1714/smpc",
+   "action": "kept",
+   "newSentence": "brands"
+  },
+  {
+   "id": "c36",
+   "classification": "supported",
+   "evidence": "Matches retrieved NHS/emc text (original article sentences on osteoporosis, B12 deficiency, formulary melt-in-mouth, headache timing, rifampicin/fluvoxamine/posaconazole removed as not retrieved or non-national).",
+   "url": "https://www.nhs.uk/medicines/lansoprazole/about-lansoprazole/",
+   "action": "edited",
+   "newSentence": "Lansoprazole is a medicine that lowers the amount of acid made in the stomach."
+  },
+  {
+   "id": "c37",
+   "classification": "supported",
+   "evidence": "Matches retrieved NHS/emc text (original article sentences on osteoporosis, B12 deficiency, formulary melt-in-mouth, headache timing, rifampicin/fluvoxamine/posaconazole removed as not retrieved or non-national).",
+   "url": "https://www.nhs.uk/medicines/lansoprazole/about-lansoprazole/",
+   "action": "edited",
+   "newSentence": "The NHS says it is used for indigestion, heartburn, reflux disease and stomach ulcers, and occasionally for Zollinger-Ellison syndrome."
+  },
+  {
+   "id": "c38",
+   "classification": "textbook",
+   "evidence": "Matches retrieved NHS/emc text (original article sentences on osteoporosis, B12 deficiency, formulary melt-in-mouth, headache timing, rifampicin/fluvoxamine/posaconazole removed as not retrieved or non-national).",
+   "url": "https://www.nhs.uk/medicines/lansoprazole/about-lansoprazole/",
+   "action": "edited",
+   "newSentence": "Reflux disease is the name for stomach acid repeatedly flowing back up into the gullet."
+  },
+  {
+   "id": "c39",
+   "classification": "supported",
+   "evidence": "Matches retrieved NHS/emc text (original article sentences on osteoporosis, B12 deficiency, formulary melt-in-mouth, headache timing, rifampicin/fluvoxamine/posaconazole removed as not retrieved or non-national).",
+   "url": "https://www.nhs.uk/medicines/lansoprazole/about-lansoprazole/",
+   "action": "edited",
+   "newSentence": "It comes as capsules and as orodispersible tablets, which are made to disperse in the mouth."
+  },
+  {
+   "id": "c40",
+   "classification": "supported",
+   "evidence": "Matches retrieved NHS/emc text (original article sentences on osteoporosis, B12 deficiency, formulary melt-in-mouth, headache timing, rifampicin/fluvoxamine/posaconazole removed as not retrieved or non-national).",
+   "url": "https://www.medicines.org.uk/emc/files/pil.14551.pdf",
+   "action": "edited",
+   "newSentence": "Lansoprazole is a proton pump inhibitor, a medicine that reduces stomach acid."
+  },
+  {
+   "id": "c41",
+   "classification": "supported",
+   "evidence": "Matches retrieved NHS/emc text (original article sentences on osteoporosis, B12 deficiency, formulary melt-in-mouth, headache timing, rifampicin/fluvoxamine/posaconazole removed as not retrieved or non-national).",
+   "url": "https://www.nhs.uk/medicines/lansoprazole/common-questions-about-lansoprazole/",
+   "action": "edited",
+   "newSentence": "The NHS says symptoms usually start to improve within 2 to 3 days."
+  },
+  {
+   "id": "c42",
+   "classification": "supported",
+   "evidence": "Matches retrieved NHS/emc text (original article sentences on osteoporosis, B12 deficiency, formulary melt-in-mouth, headache timing, rifampicin/fluvoxamine/posaconazole removed as not retrieved or non-national).",
+   "url": "https://www.nhs.uk/medicines/lansoprazole/common-questions-about-lansoprazole/",
+   "action": "edited",
+   "newSentence": "It may take up to 4 weeks for lansoprazole to work fully, so some symptoms may remain during this time."
+  },
+  {
+   "id": "c43",
+   "classification": "supported",
+   "evidence": "Matches retrieved NHS/emc text (original article sentences on osteoporosis, B12 deficiency, formulary melt-in-mouth, headache timing, rifampicin/fluvoxamine/posaconazole removed as not retrieved or non-national).",
+   "url": "https://www.nhs.uk/medicines/lansoprazole/side-effects-of-lansoprazole/",
+   "action": "edited",
+   "newSentence": "The NHS lists headache, feeling sick and diarrhoea among the common side effects."
+  },
+  {
+   "id": "c44",
+   "classification": "supported",
+   "evidence": "Matches retrieved NHS/emc text (original article sentences on osteoporosis, B12 deficiency, formulary melt-in-mouth, headache timing, rifampicin/fluvoxamine/posaconazole removed as not retrieved or non-national).",
+   "url": "https://www.nhs.uk/medicines/lansoprazole/side-effects-of-lansoprazole/",
+   "action": "edited",
+   "newSentence": "They tend to be mild and go away when the medicine is stopped."
+  },
+  {
+   "id": "c45",
+   "classification": "supported",
+   "evidence": "Matches retrieved NHS/emc text (original article sentences on osteoporosis, B12 deficiency, formulary melt-in-mouth, headache timing, rifampicin/fluvoxamine/posaconazole removed as not retrieved or non-national).",
+   "url": "https://www.nhs.uk/medicines/lansoprazole/side-effects-of-lansoprazole/",
+   "action": "edited",
+   "newSentence": "Serious side effects are rare, affecting fewer than 1 in 1,000 people according to the NHS."
+  },
+  {
+   "id": "c46",
+   "classification": "supported",
+   "evidence": "Matches retrieved NHS/emc text (original article sentences on osteoporosis, B12 deficiency, formulary melt-in-mouth, headache timing, rifampicin/fluvoxamine/posaconazole removed as not retrieved or non-national).",
+   "url": "https://www.nhs.uk/medicines/lansoprazole/side-effects-of-lansoprazole/",
+   "action": "edited",
+   "newSentence": "Worsening stomach pain, yellowing of the skin or eyes, or dark urine can signal inflammation of the pancreas or liver."
+  },
+  {
+   "id": "c47",
+   "classification": "supported",
+   "evidence": "Matches retrieved NHS/emc text (original article sentences on osteoporosis, B12 deficiency, formulary melt-in-mouth, headache timing, rifampicin/fluvoxamine/posaconazole removed as not retrieved or non-national).",
+   "url": "https://www.nhs.uk/medicines/lansoprazole/side-effects-of-lansoprazole/",
+   "action": "edited",
+   "newSentence": "Joint pain with a red rash on sun-exposed skin can signal a skin form of lupus."
+  },
+  {
+   "id": "c48",
+   "classification": "supported",
+   "evidence": "Matches retrieved NHS/emc text (original article sentences on osteoporosis, B12 deficiency, formulary melt-in-mouth, headache timing, rifampicin/fluvoxamine/posaconazole removed as not retrieved or non-national).",
+   "url": "https://www.nhs.uk/medicines/lansoprazole/side-effects-of-lansoprazole/",
+   "action": "edited",
+   "newSentence": "Severe or persistent diarrhoea can signal an inflamed bowel."
+  },
+  {
+   "id": "c49",
+   "classification": "supported",
+   "evidence": "Matches retrieved NHS/emc text (original article sentences on osteoporosis, B12 deficiency, formulary melt-in-mouth, headache timing, rifampicin/fluvoxamine/posaconazole removed as not retrieved or non-national).",
+   "url": "https://www.nhs.uk/medicines/lansoprazole/side-effects-of-lansoprazole/",
+   "action": "edited",
+   "newSentence": "Any of these needs prompt contact with a GP or NHS 111."
+  },
+  {
+   "id": "c50",
+   "classification": "supported",
+   "evidence": "Matches retrieved NHS/emc text (original article sentences on osteoporosis, B12 deficiency, formulary melt-in-mouth, headache timing, rifampicin/fluvoxamine/posaconazole removed as not retrieved or non-national).",
+   "url": "https://www.nhs.uk/medicines/lansoprazole/side-effects-of-lansoprazole/",
+   "action": "edited",
+   "newSentence": "A serious allergic reaction (anaphylaxis) is rare."
+  },
+  {
+   "id": "c51",
+   "classification": "supported",
+   "evidence": "Matches retrieved NHS/emc text (original article sentences on osteoporosis, B12 deficiency, formulary melt-in-mouth, headache timing, rifampicin/fluvoxamine/posaconazole removed as not retrieved or non-national).",
+   "url": "https://www.nhs.uk/medicines/lansoprazole/side-effects-of-lansoprazole/",
+   "action": "edited",
+   "newSentence": "Swelling of the lips, mouth, throat or tongue, fast or difficult breathing, a tight throat, trouble swallowing, blue, grey or pale skin or lips, sudden confusion or fainting needs a 999 call straight away."
+  },
+  {
+   "id": "c52",
+   "classification": "supported",
+   "evidence": "Matches retrieved NHS/emc text (original article sentences on osteoporosis, B12 deficiency, formulary melt-in-mouth, headache timing, rifampicin/fluvoxamine/posaconazole removed as not retrieved or non-national).",
+   "url": "https://www.nhs.uk/medicines/lansoprazole/taking-lansoprazole-with-other-medicines-and-herbal-supplements/",
+   "action": "edited",
+   "newSentence": "The NHS says antacids can affect how much lansoprazole the body takes in, and St John's wort may stop it working as well as it should."
+  },
+  {
+   "id": "c53",
+   "classification": "supported",
+   "evidence": "Matches retrieved NHS/emc text (original article sentences on osteoporosis, B12 deficiency, formulary melt-in-mouth, headache timing, rifampicin/fluvoxamine/posaconazole removed as not retrieved or non-national).",
+   "url": "https://www.medicines.org.uk/emc/product/1714/smpc",
+   "action": "edited",
+   "newSentence": "Medicines that can interact include warfarin, methotrexate, digoxin, tacrolimus, itraconazole, ketoconazole, theophylline and some HIV medicines."
+  },
+  {
+   "id": "c54",
+   "classification": "supported",
+   "evidence": "Matches retrieved NHS/emc text (original article sentences on osteoporosis, B12 deficiency, formulary melt-in-mouth, headache timing, rifampicin/fluvoxamine/posaconazole removed as not retrieved or non-national).",
+   "url": "https://www.nhs.uk/medicines/lansoprazole/taking-lansoprazole-with-other-medicines-and-herbal-supplements/",
+   "action": "edited",
+   "newSentence": "The NHS says there is not enough information to say that other complementary medicines and herbal remedies are fine to take with it."
+  },
+  {
+   "id": "c55",
+   "classification": "supported",
+   "evidence": "Matches retrieved NHS/emc text (original article sentences on osteoporosis, B12 deficiency, formulary melt-in-mouth, headache timing, rifampicin/fluvoxamine/posaconazole removed as not retrieved or non-national).",
+   "url": "https://www.nhs.uk/medicines/lansoprazole/common-questions-about-lansoprazole/",
+   "action": "edited",
+   "newSentence": "The NHS says alcohol can make the stomach produce more acid than normal, which can irritate the lining and make symptoms worse."
+  },
+  {
+   "id": "c56",
+   "classification": "supported",
+   "evidence": "Matches retrieved NHS/emc text (original article sentences on osteoporosis, B12 deficiency, formulary melt-in-mouth, headache timing, rifampicin/fluvoxamine/posaconazole removed as not retrieved or non-national).",
+   "url": "https://www.nhs.uk/medicines/lansoprazole/common-questions-about-lansoprazole/",
+   "action": "edited",
+   "newSentence": "The NHS says lansoprazole may make the emergency contraceptive ellaOne less effective."
+  },
+  {
+   "id": "c57",
+   "classification": "supported",
+   "evidence": "Matches retrieved NHS/emc text (original article sentences on osteoporosis, B12 deficiency, formulary melt-in-mouth, headache timing, rifampicin/fluvoxamine/posaconazole removed as not retrieved or non-national).",
+   "url": "https://www.nhs.uk/medicines/lansoprazole/common-questions-about-lansoprazole/",
+   "action": "edited",
+   "newSentence": "Regular contraceptive pills are not affected, although vomiting or severe diarrhoea can stop a pill working."
+  },
+  {
+   "id": "c58",
+   "classification": "supported",
+   "evidence": "Matches retrieved NHS/emc text (original article sentences on osteoporosis, B12 deficiency, formulary melt-in-mouth, headache timing, rifampicin/fluvoxamine/posaconazole removed as not retrieved or non-national).",
+   "url": "https://www.nhs.uk/medicines/lansoprazole/who-can-and-cannot-take-lansoprazole/",
+   "action": "edited",
+   "newSentence": "The NHS advises telling a doctor first about a past allergic reaction, liver problems, low vitamin B12, an upcoming endoscopy, pregnancy or breastfeeding."
+  },
+  {
+   "id": "c59",
+   "classification": "supported",
+   "evidence": "Matches retrieved NHS/emc text (original article sentences on osteoporosis, B12 deficiency, formulary melt-in-mouth, headache timing, rifampicin/fluvoxamine/posaconazole removed as not retrieved or non-national).",
+   "url": "https://www.nhs.uk/medicines/lansoprazole/who-can-and-cannot-take-lansoprazole/",
+   "action": "edited",
+   "newSentence": "Lansoprazole may hide some of the problems that would usually be found during an endoscopy."
+  },
+  {
+   "id": "c60",
+   "classification": "supported",
+   "evidence": "Matches retrieved NHS/emc text (original article sentences on osteoporosis, B12 deficiency, formulary melt-in-mouth, headache timing, rifampicin/fluvoxamine/posaconazole removed as not retrieved or non-national).",
+   "url": "https://www.nhs.uk/medicines/lansoprazole/pregnancy-breastfeeding-and-fertility-while-taking-lansoprazole/",
+   "action": "edited",
+   "newSentence": "In pregnancy the NHS says omeprazole is usually offered instead of lansoprazole."
+  },
+  {
+   "id": "c61",
+   "classification": "supported",
+   "evidence": "Matches retrieved NHS/emc text (original article sentences on osteoporosis, B12 deficiency, formulary melt-in-mouth, headache timing, rifampicin/fluvoxamine/posaconazole removed as not retrieved or non-national).",
+   "url": "https://www.nhs.uk/medicines/lansoprazole/pregnancy-breastfeeding-and-fertility-while-taking-lansoprazole/",
+   "action": "edited",
+   "newSentence": "For breastfeeding, a doctor will usually recommend omeprazole or pantoprazole instead."
+  },
+  {
+   "id": "c62",
+   "classification": "supported",
+   "evidence": "Matches retrieved NHS/emc text (original article sentences on osteoporosis, B12 deficiency, formulary melt-in-mouth, headache timing, rifampicin/fluvoxamine/posaconazole removed as not retrieved or non-national).",
+   "url": "https://www.nhs.uk/medicines/lansoprazole/pregnancy-breastfeeding-and-fertility-while-taking-lansoprazole/",
+   "action": "edited",
+   "newSentence": "The NHS says there is no evidence that lansoprazole affects fertility."
+  },
+  {
+   "id": "c63",
+   "classification": "supported",
+   "evidence": "Matches retrieved NHS/emc text (original article sentences on osteoporosis, B12 deficiency, formulary melt-in-mouth, headache timing, rifampicin/fluvoxamine/posaconazole removed as not retrieved or non-national).",
+   "url": "https://www.nhs.uk/medicines/lansoprazole/common-questions-about-lansoprazole/",
+   "action": "edited",
+   "newSentence": "Taking lansoprazole for more than a year may raise the chance of bone fractures and gut infections."
+  },
+  {
+   "id": "c64",
+   "classification": "supported",
+   "evidence": "Matches retrieved NHS/emc text (original article sentences on osteoporosis, B12 deficiency, formulary melt-in-mouth, headache timing, rifampicin/fluvoxamine/posaconazole removed as not retrieved or non-national).",
+   "url": "https://www.nhs.uk/medicines/lansoprazole/side-effects-of-lansoprazole/",
+   "action": "edited",
+   "newSentence": "If it is taken for more than 3 months, blood magnesium may fall, causing tiredness, confusion, dizziness, muscle twitches, shaking or an irregular heartbeat, which needs contact with a doctor or NHS 111."
+  },
+  {
+   "id": "c65",
+   "classification": "supported",
+   "evidence": "Matches retrieved NHS/emc text (original article sentences on osteoporosis, B12 deficiency, formulary melt-in-mouth, headache timing, rifampicin/fluvoxamine/posaconazole removed as not retrieved or non-national).",
+   "url": "https://www.nhs.uk/medicines/lansoprazole/common-questions-about-lansoprazole/",
+   "action": "edited",
+   "newSentence": "A doctor should check regularly on people who continue it."
+  },
+  {
+   "id": "c66",
+   "classification": "supported",
+   "evidence": "Matches retrieved NHS text (FAQ).",
+   "url": "https://www.nhs.uk/medicines/lansoprazole/common-questions-about-lansoprazole/",
+   "action": "edited",
+   "newSentence": "The NHS says symptoms usually start to improve within 2 to 3 days."
+  },
+  {
+   "id": "c67",
+   "classification": "supported",
+   "evidence": "Matches retrieved NHS text (FAQ).",
+   "url": "https://www.nhs.uk/medicines/lansoprazole/common-questions-about-lansoprazole/",
+   "action": "edited",
+   "newSentence": "It may take up to 4 weeks to work fully, so some symptoms may remain during this time."
+  },
+  {
+   "id": "c68",
+   "classification": "supported",
+   "evidence": "Matches retrieved NHS text (FAQ).",
+   "url": "https://www.nhs.uk/medicines/lansoprazole/common-questions-about-lansoprazole/",
+   "action": "edited",
+   "newSentence": "The NHS says alcohol can make the stomach produce more acid than normal."
+  },
+  {
+   "id": "c69",
+   "classification": "supported",
+   "evidence": "Matches retrieved NHS text (FAQ).",
+   "url": "https://www.nhs.uk/medicines/lansoprazole/common-questions-about-lansoprazole/",
+   "action": "edited",
+   "newSentence": "This can irritate the stomach lining and make symptoms worse."
+  },
+  {
+   "id": "c70",
+   "classification": "supported",
+   "evidence": "Matches retrieved NHS text (FAQ).",
+   "url": "https://www.nhs.uk/medicines/lansoprazole/common-questions-about-lansoprazole/",
+   "action": "edited",
+   "newSentence": "The NHS says use for more than a year may raise the chance of bone fractures and gut infections, and blood magnesium may fall after more than 3 months."
+  },
+  {
+   "id": "c71",
+   "classification": "supported",
+   "evidence": "Matches retrieved NHS text (FAQ).",
+   "url": "https://www.nhs.uk/medicines/lansoprazole/common-questions-about-lansoprazole/",
+   "action": "edited",
+   "newSentence": "A doctor should check regularly on people who continue it."
+  },
+  {
+   "id": "c72",
+   "classification": "supported",
+   "evidence": "Matches retrieved NHS text (FAQ).",
+   "url": "https://www.nhs.uk/medicines/lansoprazole/common-questions-about-lansoprazole/",
+   "action": "edited",
+   "newSentence": "The NHS says regular contraceptive pills are not affected."
+  },
+  {
+   "id": "c73",
+   "classification": "supported",
+   "evidence": "Matches retrieved NHS text (FAQ).",
+   "url": "https://www.nhs.uk/medicines/lansoprazole/common-questions-about-lansoprazole/",
+   "action": "edited",
+   "newSentence": "Vomiting or severe diarrhoea can stop a pill working, and lansoprazole may make ellaOne less effective."
+  },
+  {
+   "id": "c74",
+   "classification": "supported",
+   "evidence": "Matches retrieved NHS text (FAQ).",
+   "url": "https://www.nhs.uk/medicines/lansoprazole/pregnancy-breastfeeding-and-fertility-while-taking-lansoprazole/",
+   "action": "edited",
+   "newSentence": "In pregnancy the NHS says omeprazole is usually offered instead of lansoprazole."
+  },
+  {
+   "id": "c75",
+   "classification": "supported",
+   "evidence": "Matches retrieved NHS text (FAQ).",
+   "url": "https://www.nhs.uk/medicines/lansoprazole/pregnancy-breastfeeding-and-fertility-while-taking-lansoprazole/",
+   "action": "edited",
+   "newSentence": "For breastfeeding, a doctor will usually recommend omeprazole or pantoprazole instead."
+  },
+  {
+   "id": "c76",
+   "classification": "supported",
+   "evidence": "keyFact matches retrieved NHS text.",
+   "url": "https://www.nhs.uk/medicines/lansoprazole/about-lansoprazole/",
+   "action": "edited",
+   "newSentence": "Proton pump inhibitor, which lowers stomach acid"
+  },
+  {
+   "id": "c77",
+   "classification": "supported",
+   "evidence": "keyFact matches retrieved NHS text.",
+   "url": "https://www.nhs.uk/medicines/lansoprazole/about-lansoprazole/",
+   "action": "edited",
+   "newSentence": "Indigestion, heartburn, reflux disease and stomach ulcers"
+  },
+  {
+   "id": "c78",
+   "classification": "supported",
+   "evidence": "keyFact matches retrieved NHS text.",
+   "url": "https://www.nhs.uk/medicines/lansoprazole/about-lansoprazole/",
+   "action": "edited",
+   "newSentence": "Capsules and orodispersible tablets"
+  },
+  {
+   "id": "c79",
+   "classification": "supported",
+   "evidence": "keyFact matches retrieved NHS text.",
+   "url": "https://www.nhs.uk/medicines/lansoprazole/about-lansoprazole/",
+   "action": "edited",
+   "newSentence": "Symptoms usually improve within 2 to 3 days; it may take up to 4 weeks to work fully"
+  },
+  {
+   "id": "c80",
+   "classification": "supported",
+   "evidence": "keyFact matches retrieved NHS text.",
+   "url": "https://www.nhs.uk/medicines/lansoprazole/about-lansoprazole/",
+   "action": "edited",
+   "newSentence": "A doctor should check regularly on people who continue it"
+  },
+  {
+   "id": "c81",
+   "classification": "removed",
+   "evidence": "Prescription-only keyFact and \"only available on prescription\" sentence removed: not re-retrieved this pass.",
+   "url": "https://www.nhs.uk/medicines/lansoprazole/about-lansoprazole/",
+   "action": "removed"
+  },
+  {
+   "id": "c82",
+   "classification": "removed",
+   "evidence": "Local formulary sentence (melting tablets for swallowing difficulty) dropped: not national.",
+   "url": "https://www.nhs.uk/medicines/lansoprazole/about-lansoprazole/",
+   "action": "removed"
+  },
+  {
+   "id": "c83",
+   "classification": "supported",
+   "evidence": "Capsules and orodispersible tablets (NHS About).",
+   "url": "https://www.nhs.uk/medicines/lansoprazole/about-lansoprazole/",
+   "action": "edited",
+   "newSentence": "Capsules and orodispersible tablets"
+  }
+ ],
+ "notes": "Search cap of 8 reached. Article is ~560 words (short; padding refused). Regulatory status 'prescription' (and the old 'prescription only' wording) could NOT be re-retrieved in this pass: recent knowledge suggests a pharmacy-only lansoprazole product may exist in the UK, so I removed the prose claims but left the regulatory record from the NHS About page (retrieved by author) for human check. Alcohol: author's 'not ruled out' was contradicted/mixed between retrievals, reworded to the safest shared statement. Breastfeeding original 'it can be taken' replaced with NHS 'omeprazole or pantoprazole usually recommended'. Interaction drugs rifampicin, posaconazole, fluvoxamine not re-retrieved and dropped; ketoconazole, theophylline, atazanavir supported by SmPC. Aliases 'Zoton' dropped. Common side-effect list reduced to what was re-retrieved. Dizziness/driving attributed to emc leaflet via summary (source attribution blended)."
+}
