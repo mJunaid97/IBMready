@@ -1,0 +1,823 @@
+{
+ "id": "pre-eclampsia",
+ "searchesUsed": 11,
+ "counts": {
+  "supported": 61,
+  "textbook": 3,
+  "unsupported": 39,
+  "wrong": 3,
+  "unsafe": 2,
+  "unchecked": 0
+ },
+ "claims": [
+  {
+   "id": "c01",
+   "classification": "supported",
+   "evidence": "[definition] Pre-eclampsia is a condition that can develop in pregnancy, with high  -- Early signs are high blood pressure and protein in urine after 20 weeks (NHS, Tommy's)",
+   "url": "https://www.nhs.uk/conditions/pre-eclampsia/",
+   "action": "kept"
+  },
+  {
+   "id": "c02",
+   "classification": "supported",
+   "evidence": "[overview] Pre-eclampsia is a condition that can develop during pregnancy, and it -- NHS: early signs high BP and protein in urine",
+   "url": "https://www.nhs.uk/conditions/pre-eclampsia/",
+   "action": "kept"
+  },
+  {
+   "id": "c03",
+   "classification": "supported",
+   "evidence": "[overview] The NHS says it is thought to happen when the placenta does not develo -- NHS: cause not fully understood, thought to involve placenta problem; blood vessels wording not retrieved",
+   "url": "https://www.nhs.uk/conditions/pre-eclampsia/",
+   "action": "edited",
+   "newSentence": "see final entity"
+  },
+  {
+   "id": "c04",
+   "classification": "unsupported",
+   "evidence": "[overview] Most cases are mild, but the condition can cause serious problems for  -- Serious complications supported; 'most cases are mild' not in retrieved text",
+   "url": "https://www.nhs.uk/conditions/pre-eclampsia/",
+   "action": "edited",
+   "newSentence": "see final entity"
+  },
+  {
+   "id": "c05",
+   "classification": "supported",
+   "evidence": "[overview] It usually goes away after the birth. -- Improves soon after birth (NHS); always goes away eventually (Action on Pre-eclampsia)",
+   "url": "https://action-on-pre-eclampsia.org.uk/postnatal-recovery-from-pre-eclampsia/",
+   "action": "kept"
+  },
+  {
+   "id": "c06",
+   "classification": "unsupported",
+   "evidence": "[causes[0]] The placenta is thought not to develop properly because of a problem w -- Retrieved text says problem with placenta; 'blood vessels that supply it' not retrieved",
+   "url": "https://www.nhs.uk/conditions/pre-eclampsia/",
+   "action": "edited",
+   "newSentence": "see final entity"
+  },
+  {
+   "id": "c07",
+   "classification": "supported",
+   "evidence": "[causes[1]] The exact cause is not fully understood -- NHS: cause not fully understood",
+   "url": "https://www.nhs.uk/conditions/pre-eclampsia/",
+   "action": "kept"
+  },
+  {
+   "id": "c08",
+   "classification": "supported",
+   "evidence": "[riskFactors[0]] A first pregnancy -- NHS and NHS inform list first pregnancy",
+   "url": "https://www.nhsinform.scot/ready-steady-baby/pregnancy/health-problems-in-pregnancy/pre-eclampsia/",
+   "action": "kept"
+  },
+  {
+   "id": "c09",
+   "classification": "supported",
+   "evidence": "[riskFactors[1]] More than ten years since the last pregnancy -- NHS inform: more than 10 years between pregnancies",
+   "url": "https://www.nhsinform.scot/ready-steady-baby/pregnancy/health-problems-in-pregnancy/pre-eclampsia/",
+   "action": "kept"
+  },
+  {
+   "id": "c10",
+   "classification": "supported",
+   "evidence": "[riskFactors[2]] Pre-eclampsia in an earlier pregnancy -- NHS: previous pre-eclampsia pregnancy",
+   "url": "https://www.nhs.uk/conditions/pre-eclampsia/",
+   "action": "kept"
+  },
+  {
+   "id": "c11",
+   "classification": "supported",
+   "evidence": "[riskFactors[3]] A family history of pre-eclampsia -- NHS summary: close family member (mother or sister)",
+   "url": "https://www.nhs.uk/conditions/pre-eclampsia/",
+   "action": "edited",
+   "newSentence": "see final entity"
+  },
+  {
+   "id": "c12",
+   "classification": "supported",
+   "evidence": "[riskFactors[4]] Existing high blood pressure -- NHS: high blood pressure listed",
+   "url": "https://www.nhs.uk/conditions/pre-eclampsia/",
+   "action": "kept"
+  },
+  {
+   "id": "c13",
+   "classification": "supported",
+   "evidence": "[riskFactors[5]] Diabetes -- NHS: diabetes listed",
+   "url": "https://www.nhs.uk/conditions/pre-eclampsia/",
+   "action": "kept"
+  },
+  {
+   "id": "c14",
+   "classification": "unsupported",
+   "evidence": "[riskFactors[6]] An autoimmune condition such as lupus -- Lupus not listed as risk factor in retrieved NHS text; a research review lists autoimmune disorders only",
+   "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12072551/",
+   "action": "edited",
+   "newSentence": "see final entity"
+  },
+  {
+   "id": "c15",
+   "classification": "supported",
+   "evidence": "[riskFactors[7]] Obesity -- NHS inform: overweight or obese before pregnancy",
+   "url": "https://www.nhsinform.scot/ready-steady-baby/pregnancy/health-problems-in-pregnancy/pre-eclampsia/",
+   "action": "edited",
+   "newSentence": "see final entity"
+  },
+  {
+   "id": "c16",
+   "classification": "supported",
+   "evidence": "[riskFactors[8]] Older age -- NHS trust guidance lists age over 40",
+   "url": "https://apps.worcsacute.nhs.uk/KeyDocumentPortal/Home/DownloadFile/2493",
+   "action": "kept"
+  },
+  {
+   "id": "c17",
+   "classification": "unsupported",
+   "evidence": "[riskFactors[9]] A pregnancy with twins or triplets -- Twins supported by trust guidance/review; triplets not retrieved",
+   "url": "https://www.bhrhospitals.nhs.uk/pre-eclampsia-/",
+   "action": "edited",
+   "newSentence": "see final entity"
+  },
+  {
+   "id": "c18",
+   "classification": "supported",
+   "evidence": "[signs[0]] High blood pressure -- NHS: high blood pressure early sign",
+   "url": "https://www.nhs.uk/conditions/pre-eclampsia/",
+   "action": "kept"
+  },
+  {
+   "id": "c19",
+   "classification": "supported",
+   "evidence": "[signs[1]] Protein in the urine -- NHS: protein in urine early sign",
+   "url": "https://www.nhs.uk/conditions/pre-eclampsia/",
+   "action": "kept"
+  },
+  {
+   "id": "c20",
+   "classification": "supported",
+   "evidence": "[complications[0]] Premature birth -- NHS inform/trust leaflet: earlier delivery, baby may be born early",
+   "url": "https://www.nhsinform.scot/ready-steady-baby/pregnancy/health-problems-in-pregnancy/pre-eclampsia/",
+   "action": "kept"
+  },
+  {
+   "id": "c21",
+   "classification": "unsupported",
+   "evidence": "[complications[1]] Seizures, known as eclampsia, which are rare -- Eclampsia fits supported; 'rare' not stated in retrieved text",
+   "url": "https://action-on-pre-eclampsia.org.uk/what-is-eclampsia/",
+   "action": "edited",
+   "newSentence": "see final entity"
+  },
+  {
+   "id": "c22",
+   "classification": "supported",
+   "evidence": "[complications[2]] Stroke -- NHS treatment: BP medicines reduce complications such as stroke",
+   "url": "https://www.nhs.uk/conditions/pre-eclampsia/treatment/",
+   "action": "kept"
+  },
+  {
+   "id": "c23",
+   "classification": "supported",
+   "evidence": "[complications[3]] Problems with the liver, lungs, kidneys, brain, blood-clotting system  -- NHS inform lists liver, lungs, kidneys, brain, blood-clotting system, heart",
+   "url": "https://www.nhsinform.scot/ready-steady-baby/pregnancy/health-problems-in-pregnancy/pre-eclampsia/",
+   "action": "kept"
+  },
+  {
+   "id": "c24",
+   "classification": "supported",
+   "evidence": "[complications[4]] Slower growth of the baby in the womb -- NHS inform: baby not growing well; trust leaflet: baby may be smaller",
+   "url": "https://www.nhsinform.scot/ready-steady-baby/pregnancy/health-problems-in-pregnancy/pre-eclampsia/",
+   "action": "kept"
+  },
+  {
+   "id": "c25",
+   "classification": "supported",
+   "evidence": "[complications[5]] A higher long-term risk of high blood pressure, stroke and heart disea -- NHS inform: higher later-life risk of high BP, stroke, heart disease",
+   "url": "https://www.nhsinform.scot/ready-steady-baby/pregnancy/health-problems-in-pregnancy/pre-eclampsia/",
+   "action": "kept"
+  },
+  {
+   "id": "c26",
+   "classification": "supported",
+   "evidence": "[diagnosis] Pre-eclampsia is usually picked up through the blood pressure and urin -- NHS: usually found at routine antenatal appointments",
+   "url": "https://www.nhs.uk/conditions/pre-eclampsia/",
+   "action": "kept"
+  },
+  {
+   "id": "c27",
+   "classification": "unsupported",
+   "evidence": "[diagnosis] The NHS describes a dipstick test for protein in the urine, with a lab -- Dipstick/laboratory sequence not in retrieved text",
+   "url": "https://www.nhs.uk/conditions/pre-eclampsia/diagnosis/",
+   "action": "removed"
+  },
+  {
+   "id": "c28",
+   "classification": "unsupported",
+   "evidence": "[diagnosis] NICE recommends offering placental growth factor blood testing to help -- Retrieved text attributes PlGF testing to NHS (may be offered to help rule out), not NICE directly",
+   "url": "https://www.nhs.uk/conditions/pre-eclampsia/diagnosis/",
+   "action": "edited",
+   "newSentence": "see final entity"
+  },
+  {
+   "id": "c29",
+   "classification": "unsupported",
+   "evidence": "[diagnosis] A hospital assessment is recommended if pre-eclampsia is diagnosed. -- Not stated; research summary says earlier diagnoses may need admission for BP treatment and monitoring",
+   "url": "https://www.hra.nhs.uk/planning-and-improving-research/application-summaries/research-summaries/placental-growth-factor-as-diagnostic-test-for-pre-eclampsia-parrot/",
+   "action": "edited",
+   "newSentence": "see final entity"
+  },
+  {
+   "id": "c30",
+   "classification": "wrong",
+   "evidence": "[treatment] The NHS says there is currently no cure for pre-eclampsia, but treatme -- Retrieved NHS text: the only way to cure pre-eclampsia is to deliver the baby; 'no cure' contradicts",
+   "url": "https://www.nhs.uk/conditions/pre-eclampsia/treatment/",
+   "action": "edited",
+   "newSentence": "see final entity"
+  },
+  {
+   "id": "c31",
+   "classification": "unsupported",
+   "evidence": "[treatment] Care usually includes more regular appointments, extra scans to check  -- Regular monitoring and BP medicine supported; 'extra scans' not retrieved",
+   "url": "https://www.nhs.uk/conditions/pre-eclampsia/treatment/",
+   "action": "edited",
+   "newSentence": "see final entity"
+  },
+  {
+   "id": "c32",
+   "classification": "unsupported",
+   "evidence": "[treatment] Severe cases usually need monitoring in hospital, and medicine to prev -- Hospital monitoring/magnesium sulfate for severe cases only in trial summaries; 'usually' not supported",
+   "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3570392/",
+   "action": "edited",
+   "newSentence": "see final entity"
+  },
+  {
+   "id": "c33",
+   "classification": "unsupported",
+   "evidence": "[treatment] Birth is the only way to stop serious complications, and it is often s -- NHS: delivery is the only cure, earlier in severe cases; 'often safer to be born early' not retrieved",
+   "url": "https://www.nhs.uk/conditions/pre-eclampsia/treatment/",
+   "action": "edited",
+   "newSentence": "see final entity"
+  },
+  {
+   "id": "c34",
+   "classification": "supported",
+   "evidence": "[prevention] A midwife or doctor may advise people at higher risk of pre-eclampsia  -- NHS: high-risk people may be advised low-dose aspirin during pregnancy",
+   "url": "https://www.nhs.uk/conditions/pre-eclampsia/",
+   "action": "edited",
+   "newSentence": "see final entity"
+  },
+  {
+   "id": "c35",
+   "classification": "supported",
+   "evidence": "[prevention] NHS trust leaflets say aspirin lowers the chance of pre-eclampsia but  -- Trust leaflet: aspirin will not prevent all cases; Tommy's: slightly reduces risk",
+   "url": "https://www.tommys.org/pregnancy-information/pregnancy-complications/pre-eclampsia-information-and-support",
+   "action": "edited",
+   "newSentence": "see final entity"
+  },
+  {
+   "id": "c36",
+   "classification": "supported",
+   "evidence": "[seekCare] Symptoms such as a severe headache that painkillers do not ease, chang -- NHS: severe headache, vision, swelling need checking immediately; symptoms list",
+   "url": "https://www.nhs.uk/pregnancy/common-symptoms/pregnancy-symptoms-you-need-to-get-help-for/",
+   "action": "kept"
+  },
+  {
+   "id": "c37",
+   "classification": "supported",
+   "evidence": "[seekCare] The NHS advises a pregnant person to call the maternity unit, or NHS 1 -- NHS: call maternity unit if you have number; 111 if recently given birth or cannot reach",
+   "url": "https://www.nhs.uk/conditions/pre-eclampsia/",
+   "action": "kept"
+  },
+  {
+   "id": "c38",
+   "classification": "supported",
+   "evidence": "[seekCare] In an emergency, an ambulance is called on 999. -- NHS: call 999 for life-threatening emergency at any stage of pregnancy (not from trust only)",
+   "url": "https://www.nhs.uk/pregnancy/common-symptoms/pregnancy-symptoms-you-need-to-get-help-for/",
+   "action": "edited",
+   "newSentence": "see final entity"
+  },
+  {
+   "id": "c39",
+   "classification": "supported",
+   "evidence": "[sec0] The NHS says the early signs of pre-eclampsia are high blood pressure  -- NHS early signs",
+   "url": "https://www.nhs.uk/conditions/pre-eclampsia/",
+   "action": "kept"
+  },
+  {
+   "id": "c40",
+   "classification": "unsupported",
+   "evidence": "[sec0] Tommy's notes that a person probably will not notice these changes alo -- NHS says often no noticeable symptoms; Tommy's attribution not retrieved",
+   "url": "https://www.nhs.uk/conditions/pre-eclampsia/symptoms/",
+   "action": "edited",
+   "newSentence": "see final entity"
+  },
+  {
+   "id": "c41",
+   "classification": "supported",
+   "evidence": "[sec0] Later symptoms can include a severe headache that painkillers do not e -- NHS symptom list",
+   "url": "https://www.nhs.uk/conditions/pre-eclampsia/symptoms/",
+   "action": "kept"
+  },
+  {
+   "id": "c42",
+   "classification": "supported",
+   "evidence": "[sec0] Vomiting, persistent heartburn and feeling very unwell are also listed -- NHS: vomiting, heartburn not eased by medicines, feeling very unwell, sudden swelling of face, hands, feet",
+   "url": "https://www.nhs.uk/conditions/pre-eclampsia/symptoms/",
+   "action": "edited",
+   "newSentence": "see final entity"
+  },
+  {
+   "id": "c43",
+   "classification": "supported",
+   "evidence": "[sec0] The NHS says any of these symptoms can be serious and need to be check -- NHS: urgent medical help",
+   "url": "https://www.nhs.uk/conditions/pre-eclampsia/",
+   "action": "kept"
+  },
+  {
+   "id": "c44",
+   "classification": "supported",
+   "evidence": "[sec0] It advises a pregnant person to call the maternity unit if they have t -- NHS: maternity unit if number, else 111 after recent birth",
+   "url": "https://www.nhs.uk/conditions/pre-eclampsia/",
+   "action": "kept"
+  },
+  {
+   "id": "c45",
+   "classification": "supported",
+   "evidence": "[sec0] In an emergency, an ambulance is called on 999. -- NHS pregnancy page: 999 for life-threatening emergency",
+   "url": "https://www.nhs.uk/pregnancy/common-symptoms/pregnancy-symptoms-you-need-to-get-help-for/",
+   "action": "edited",
+   "newSentence": "see final entity"
+  },
+  {
+   "id": "c46",
+   "classification": "supported",
+   "evidence": "[sec0] Action on Pre-eclampsia says symptoms can appear or worsen after the b -- Action: women should be told symptoms and who to contact; NHS: complications may develop days after birth",
+   "url": "https://action-on-pre-eclampsia.org.uk/postnatal-recovery-from-pre-eclampsia/",
+   "action": "edited",
+   "newSentence": "see final entity"
+  },
+  {
+   "id": "c47",
+   "classification": "supported",
+   "evidence": "[sec1] The NHS says the exact cause of pre-eclampsia is not fully understood. -- NHS: cause not fully understood",
+   "url": "https://www.nhs.uk/conditions/pre-eclampsia/",
+   "action": "kept"
+  },
+  {
+   "id": "c48",
+   "classification": "unsupported",
+   "evidence": "[sec1] It is thought to happen when the placenta does not develop properly be -- Placenta problem supported; blood vessels wording not retrieved",
+   "url": "https://www.nhs.uk/conditions/pre-eclampsia/",
+   "action": "edited",
+   "newSentence": "see final entity"
+  },
+  {
+   "id": "c49",
+   "classification": "textbook",
+   "evidence": "[sec1] The placenta is the organ that connects the pregnancy to the pregnant  -- Plain definition of placenta",
+   "url": "https://www.nhs.uk/conditions/pre-eclampsia/",
+   "action": "kept"
+  },
+  {
+   "id": "c50",
+   "classification": "supported",
+   "evidence": "[sec1] NHS sources list several risk factors, including a first pregnancy, mo -- NHS/NHS inform list first pregnancy, >10 years, family member",
+   "url": "https://www.nhsinform.scot/ready-steady-baby/pregnancy/health-problems-in-pregnancy/pre-eclampsia/",
+   "action": "edited",
+   "newSentence": "see final entity"
+  },
+  {
+   "id": "c51",
+   "classification": "supported",
+   "evidence": "[sec1] Pre-eclampsia in an earlier pregnancy, existing high blood pressure an -- NHS lists previous pre-eclampsia, high BP, diabetes",
+   "url": "https://www.nhs.uk/conditions/pre-eclampsia/",
+   "action": "edited",
+   "newSentence": "see final entity"
+  },
+  {
+   "id": "c52",
+   "classification": "unsupported",
+   "evidence": "[sec1] Other factors include an autoimmune condition such as lupus, obesity,  -- Lupus and triplets not retrieved; obesity/older age/twins supported by NHS inform and trust guidance",
+   "url": "https://www.nhsinform.scot/ready-steady-baby/pregnancy/health-problems-in-pregnancy/pre-eclampsia/",
+   "action": "edited",
+   "newSentence": "see final entity"
+  },
+  {
+   "id": "c53",
+   "classification": "unsupported",
+   "evidence": "[sec1] NICE guidance on hypertension in pregnancy describes which factors cou -- NICE factor classification not retrieved from NICE; only trust documents citing it",
+   "url": "https://www.nice.org.uk/guidance/ng133/evidence/appendix-a-summary-of-new-evidence-pdf-13064343518",
+   "action": "removed"
+  },
+  {
+   "id": "c54",
+   "classification": "supported",
+   "evidence": "[sec2] Pre-eclampsia is usually picked up through the blood pressure and urin -- NHS: found at routine appointments",
+   "url": "https://www.nhs.uk/conditions/pre-eclampsia/",
+   "action": "kept"
+  },
+  {
+   "id": "c55",
+   "classification": "unsupported",
+   "evidence": "[sec2] The NHS describes a dipstick test for protein in the urine, with a lab -- Dipstick detail not in retrieved text",
+   "url": "https://www.nhs.uk/conditions/pre-eclampsia/diagnosis/",
+   "action": "removed"
+  },
+  {
+   "id": "c56",
+   "classification": "supported",
+   "evidence": "[sec2] A blood test measuring placental growth factor may be offered to help  -- NHS diagnosis page: PlGF blood test may be offered to help rule out",
+   "url": "https://www.nhs.uk/conditions/pre-eclampsia/diagnosis/",
+   "action": "kept"
+  },
+  {
+   "id": "c57",
+   "classification": "supported",
+   "evidence": "[sec2] The NHS says a low level of placental growth factor could be a sign of -- NHS: low PlGF could be a sign, further tests needed",
+   "url": "https://www.nhs.uk/conditions/pre-eclampsia/diagnosis/",
+   "action": "kept"
+  },
+  {
+   "id": "c58",
+   "classification": "unsupported",
+   "evidence": "[sec2] A hospital assessment is recommended if pre-eclampsia is diagnosed. -- Not stated; replaced by research-summary admission wording",
+   "url": "https://www.nhs.uk/conditions/pre-eclampsia/",
+   "action": "edited",
+   "newSentence": "see final entity"
+  },
+  {
+   "id": "c59",
+   "classification": "unsupported",
+   "evidence": "[sec2] Blood pressure is then measured regularly, and blood and urine tests c -- Not in retrieved text",
+   "url": "https://www.nhs.uk/conditions/pre-eclampsia/",
+   "action": "removed"
+  },
+  {
+   "id": "c60",
+   "classification": "wrong",
+   "evidence": "[sec3] The NHS says there is currently no cure for pre-eclampsia, but treatme -- Retrieved NHS text says delivery is the only cure",
+   "url": "https://www.nhs.uk/conditions/pre-eclampsia/treatment/",
+   "action": "edited",
+   "newSentence": "see final entity"
+  },
+  {
+   "id": "c61",
+   "classification": "unsupported",
+   "evidence": "[sec3] Care usually involves more regular appointments to monitor the conditi -- Regular monitoring supported; extra scans not retrieved",
+   "url": "https://www.nhs.uk/conditions/pre-eclampsia/treatment/",
+   "action": "edited",
+   "newSentence": "see final entity"
+  },
+  {
+   "id": "c62",
+   "classification": "supported",
+   "evidence": "[sec3] Treatment includes medicine, given as tablets or through a drip, to lo -- Trust guidance: medication tablets or drip to lower and control BP",
+   "url": "https://plr.cht.nhs.uk/download/452/Pre-eclampsia%20information%20for%20you%20A4",
+   "action": "kept"
+  },
+  {
+   "id": "c63",
+   "classification": "unsupported",
+   "evidence": "[sec3] If symptoms are not severe, some people may be able to go home, while  -- Retrieved text says earlier diagnoses may need admission; going home when not severe not stated",
+   "url": "https://www.nhs.uk/conditions/pre-eclampsia/",
+   "action": "removed"
+  },
+  {
+   "id": "c64",
+   "classification": "unsafe",
+   "evidence": "[sec3] Medicine to prevent seizures, called eclamptic fits, may be given by i -- Seizure-medicine timing (24 hours) not in retrieved text; clinical detail could mislead",
+   "url": "https://www.nhs.uk/conditions/pre-eclampsia/",
+   "action": "removed"
+  },
+  {
+   "id": "c65",
+   "classification": "unsupported",
+   "evidence": "[sec3] The NHS says giving birth is the only way to stop serious complication -- NHS: normally near term, earlier in severe cases; 'safer early, before 37 weeks' not retrieved",
+   "url": "https://www.nhs.uk/conditions/pre-eclampsia/treatment/",
+   "action": "edited",
+   "newSentence": "see final entity"
+  },
+  {
+   "id": "c66",
+   "classification": "unsupported",
+   "evidence": "[sec3] The timing depends on how far along the pregnancy is and how severe th -- Earlier in more severe cases supported; 'how far along' not stated; PlGF not for timing (SHTG)",
+   "url": "https://www.rightdecisions.scot.nhs.uk/scottish-health-technologies-group-shtg/placental-growth-factor-plgf-based-testing-to-help-diagnose-suspected-preterm-pre-eclampsia",
+   "action": "edited",
+   "newSentence": "see final entity"
+  },
+  {
+   "id": "c67",
+   "classification": "supported",
+   "evidence": "[sec4] The NHS says pre-eclampsia can cause serious complications for the pre -- Premature birth/seizures/stroke supported across NHS pages",
+   "url": "https://www.nhs.uk/conditions/pre-eclampsia/",
+   "action": "kept"
+  },
+  {
+   "id": "c68",
+   "classification": "supported",
+   "evidence": "[sec4] It can also cause problems with the liver, lungs, kidneys, brain, bloo -- NHS inform organ list",
+   "url": "https://www.nhsinform.scot/ready-steady-baby/pregnancy/health-problems-in-pregnancy/pre-eclampsia/",
+   "action": "kept"
+  },
+  {
+   "id": "c69",
+   "classification": "unsupported",
+   "evidence": "[sec4] Eclampsia is a rare seizure disorder linked to the condition that can  -- Eclampsia fits need emergency care; 'rare' and 'treated too late' not retrieved",
+   "url": "https://action-on-pre-eclampsia.org.uk/what-is-eclampsia/",
+   "action": "edited",
+   "newSentence": "see final entity"
+  },
+  {
+   "id": "c70",
+   "classification": "supported",
+   "evidence": "[sec4] Some babies grow more slowly in the womb than expected. -- NHS inform: baby not growing well",
+   "url": "https://www.nhsinform.scot/ready-steady-baby/pregnancy/health-problems-in-pregnancy/pre-eclampsia/",
+   "action": "kept"
+  },
+  {
+   "id": "c71",
+   "classification": "unsupported",
+   "evidence": "[sec4] Most cases are mild, which is one reason regular antenatal checks matt -- 'Most cases are mild' not retrieved",
+   "url": "https://www.nhs.uk/conditions/pre-eclampsia/",
+   "action": "removed"
+  },
+  {
+   "id": "c72",
+   "classification": "supported",
+   "evidence": "[sec4] The NHS and NICE describe low-dose aspirin as an option for people at  -- NHS: high-risk may be advised aspirin; NICE not directly retrieved",
+   "url": "https://www.nhs.uk/conditions/pre-eclampsia/",
+   "action": "edited",
+   "newSentence": "see final entity"
+  },
+  {
+   "id": "c73",
+   "classification": "supported",
+   "evidence": "[sec4] NICE advises it for pregnant people at high risk, and people with more -- Trust guidance (citing NICE): high-risk or more than one moderate factor",
+   "url": "https://apps.worcsacute.nhs.uk/KeyDocumentPortal/Home/DownloadFile/2493",
+   "action": "edited",
+   "newSentence": "see final entity"
+  },
+  {
+   "id": "c74",
+   "classification": "supported",
+   "evidence": "[sec4] NHS trust leaflets say aspirin lowers the chance of pre-eclampsia but  -- Merseyside trust leaflet: will not prevent all cases",
+   "url": "https://sthk.merseywestlancs.nhs.uk/media/.leaflets/6627a0a67f7ad3.06769313.pdf",
+   "action": "kept"
+  },
+  {
+   "id": "c75",
+   "classification": "unsupported",
+   "evidence": "[sec4] Aspirin can raise the chance of bleeding, so the decision is made indi -- Bleeding risk not in retrieved text",
+   "url": "https://www.nhs.uk/conditions/pre-eclampsia/",
+   "action": "removed"
+  },
+  {
+   "id": "c76",
+   "classification": "unsafe",
+   "evidence": "[sec4] People who are concerned about taking aspirin can contact their commun -- Instruction to individual, not in retrieved text",
+   "url": "https://www.nhs.uk/conditions/pre-eclampsia/",
+   "action": "removed"
+  },
+  {
+   "id": "c77",
+   "classification": "supported",
+   "evidence": "[sec5] The NHS says pre-eclampsia usually goes away after the birth. -- NHS: improves soon after birth",
+   "url": "https://www.nhs.uk/conditions/pre-eclampsia/",
+   "action": "kept"
+  },
+  {
+   "id": "c78",
+   "classification": "unsupported",
+   "evidence": "[sec5] People with severe pre-eclampsia may still have complications in the f -- NHS: complications can develop a few days later; 'severe' and 'monitored closely' not retrieved",
+   "url": "https://www.nhs.uk/conditions/pre-eclampsia/treatment/",
+   "action": "edited",
+   "newSentence": "see final entity"
+  },
+  {
+   "id": "c79",
+   "classification": "supported",
+   "evidence": "[sec5] Action on Pre-eclampsia says blood pressure falls straight after birth -- Action: BP falls then peaks days later",
+   "url": "https://action-on-pre-eclampsia.org.uk/postnatal-recovery-from-pre-eclampsia/",
+   "action": "kept"
+  },
+  {
+   "id": "c80",
+   "classification": "unsupported",
+   "evidence": "[sec5] A UK trial description says that in most cases blood pressure returns  -- Trial description not retrieved this pass; Action says may resolve in hours to six months",
+   "url": "https://action-on-pre-eclampsia.org.uk/postnatal-recovery-from-pre-eclampsia/",
+   "action": "edited",
+   "newSentence": "see final entity"
+  },
+  {
+   "id": "c81",
+   "classification": "unsupported",
+   "evidence": "[sec5] A follow-up check with the GP is usually offered about six to eight we -- GP follow-up timing not supported as worded",
+   "url": "https://www.tommys.org/pregnancy-information/pregnancy-complications/pre-eclampsia-information-and-support",
+   "action": "removed"
+  },
+  {
+   "id": "c82",
+   "classification": "unsupported",
+   "evidence": "[sec5] The charity says that for the great majority of mothers the birth reve -- Tommy's: birth resolves symptoms in most, small number continue; 'great majority reverse all effects' not retrieved",
+   "url": "https://www.tommys.org/pregnancy-information/pregnancy-complications/pre-eclampsia-information-and-support",
+   "action": "edited",
+   "newSentence": "see final entity"
+  },
+  {
+   "id": "c83",
+   "classification": "supported",
+   "evidence": "[sec5] Its materials also say women who have had pre-eclampsia have a higher  -- NHS inform: higher later risk",
+   "url": "https://www.nhsinform.scot/ready-steady-baby/pregnancy/health-problems-in-pregnancy/pre-eclampsia/",
+   "action": "edited",
+   "newSentence": "see final entity"
+  },
+  {
+   "id": "c84",
+   "classification": "unsupported",
+   "evidence": "[sec5] The risk is highest in the first year after delivery but continues for -- Timing/decades not retrieved",
+   "url": "https://www.nhsinform.scot/ready-steady-baby/pregnancy/health-problems-in-pregnancy/pre-eclampsia/",
+   "action": "removed"
+  },
+  {
+   "id": "c85",
+   "classification": "wrong",
+   "evidence": "[faq0] The NHS says there is currently no cure for pre-eclampsia, but treatme -- NHS: only way to cure is to deliver the baby",
+   "url": "https://www.nhs.uk/conditions/pre-eclampsia/treatment/",
+   "action": "edited",
+   "newSentence": "see final entity"
+  },
+  {
+   "id": "c86",
+   "classification": "supported",
+   "evidence": "[faq0] Giving birth is the only way to stop serious complications, and the co -- Delivery is only cure; goes away after birth (Action)",
+   "url": "https://action-on-pre-eclampsia.org.uk/postnatal-recovery-from-pre-eclampsia/",
+   "action": "edited",
+   "newSentence": "see final entity"
+  },
+  {
+   "id": "c87",
+   "classification": "unsupported",
+   "evidence": "[faq0] Until then, care usually involves extra appointments and scans, and me -- Extra scans not retrieved; monitoring and BP medicine supported",
+   "url": "https://www.nhs.uk/conditions/pre-eclampsia/treatment/",
+   "action": "edited",
+   "newSentence": "see final entity"
+  },
+  {
+   "id": "c88",
+   "classification": "unsupported",
+   "evidence": "[faq1] Action on Pre-eclampsia says symptoms can appear or worsen after deliv -- Symptoms after delivery: Tommy's/NHS support; 'every mother' wording adjusted to Action 'women should be told'",
+   "url": "https://action-on-pre-eclampsia.org.uk/postnatal-recovery-from-pre-eclampsia/",
+   "action": "edited",
+   "newSentence": "see final entity"
+  },
+  {
+   "id": "c89",
+   "classification": "unsupported",
+   "evidence": "[faq1] Its list includes recurring severe headaches, visual disturbances, nau -- Action's symptom list not retrieved",
+   "url": "https://action-on-pre-eclampsia.org.uk/postnatal-recovery-from-pre-eclampsia/",
+   "action": "removed"
+  },
+  {
+   "id": "c90",
+   "classification": "supported",
+   "evidence": "[faq1] The NHS advises people who have recently given birth and have symptoms -- NHS: 111 after recent birth",
+   "url": "https://www.nhs.uk/conditions/pre-eclampsia/",
+   "action": "kept"
+  },
+  {
+   "id": "c91",
+   "classification": "supported",
+   "evidence": "[faq2] NHS sources list a first pregnancy, more than ten years since the last -- NHS/NHS inform risk factors",
+   "url": "https://www.nhsinform.scot/ready-steady-baby/pregnancy/health-problems-in-pregnancy/pre-eclampsia/",
+   "action": "edited",
+   "newSentence": "see final entity"
+  },
+  {
+   "id": "c92",
+   "classification": "unsupported",
+   "evidence": "[faq2] Pre-eclampsia in an earlier pregnancy, existing high blood pressure, d -- Lupus/triplets not retrieved",
+   "url": "https://www.nhsinform.scot/ready-steady-baby/pregnancy/health-problems-in-pregnancy/pre-eclampsia/",
+   "action": "edited",
+   "newSentence": "see final entity"
+  },
+  {
+   "id": "c93",
+   "classification": "textbook",
+   "evidence": "[faq2] Having a risk factor is not a diagnosis, and the condition is found th -- Plain statement",
+   "url": "https://www.nhs.uk/conditions/pre-eclampsia/",
+   "action": "kept"
+  },
+  {
+   "id": "c94",
+   "classification": "supported",
+   "evidence": "[faq3] The NHS says symptoms can be serious and need to be checked immediatel -- NHS: symptoms need urgent help",
+   "url": "https://www.nhs.uk/conditions/pre-eclampsia/",
+   "action": "edited",
+   "newSentence": "see final entity"
+  },
+  {
+   "id": "c95",
+   "classification": "supported",
+   "evidence": "[faq3] A pregnant person is advised to call the maternity unit if they have t -- NHS: maternity unit if number",
+   "url": "https://www.nhs.uk/conditions/pre-eclampsia/",
+   "action": "kept"
+  },
+  {
+   "id": "c96",
+   "classification": "supported",
+   "evidence": "[faq3] NHS 111 is the route if the person has recently given birth or cannot  -- NHS: 111 route; 999 for life-threatening emergency",
+   "url": "https://www.nhs.uk/pregnancy/common-symptoms/pregnancy-symptoms-you-need-to-get-help-for/",
+   "action": "edited",
+   "newSentence": "see final entity"
+  },
+  {
+   "id": "c97",
+   "classification": "unsupported",
+   "evidence": "[faq4] NHS and NICE sources list existing high blood pressure as a risk facto -- NHS lists high BP; NICE listing not retrieved",
+   "url": "https://www.nhs.uk/conditions/pre-eclampsia/",
+   "action": "edited",
+   "newSentence": "see final entity"
+  },
+  {
+   "id": "c98",
+   "classification": "unsupported",
+   "evidence": "[faq4] NICE guidance counts chronic hypertension among the high-risk factors  -- NICE chronic hypertension classification not retrieved",
+   "url": "https://www.nhs.uk/conditions/pre-eclampsia/",
+   "action": "removed"
+  },
+  {
+   "id": "c99",
+   "classification": "supported",
+   "evidence": "[faq4] People in the high-risk group may be advised to take low-dose aspirin  -- NHS: high-risk may be advised aspirin",
+   "url": "https://www.nhs.uk/conditions/pre-eclampsia/",
+   "action": "edited",
+   "newSentence": "see final entity"
+  },
+  {
+   "id": "c100",
+   "classification": "unsupported",
+   "evidence": "[faq5] Action on Pre-eclampsia says that for the great majority of mothers th -- Not retrieved as worded; Tommy's says symptoms resolve in most cases",
+   "url": "https://www.tommys.org/pregnancy-information/pregnancy-complications/pre-eclampsia-information-and-support",
+   "action": "edited",
+   "newSentence": "see final entity"
+  },
+  {
+   "id": "c101",
+   "classification": "unsupported",
+   "evidence": "[faq5] The charity also says women who have had pre-eclampsia have a higher r -- Higher later risk supported (NHS inform); 'highest first year, decades' not retrieved",
+   "url": "https://www.nhsinform.scot/ready-steady-baby/pregnancy/health-problems-in-pregnancy/pre-eclampsia/",
+   "action": "edited",
+   "newSentence": "see final entity"
+  },
+  {
+   "id": "c102",
+   "classification": "textbook",
+   "evidence": "[kf0] Preeclampsia (the US spelling) -- US spelling of same term",
+   "url": "https://www.nhs.uk/conditions/pre-eclampsia/",
+   "action": "kept"
+  },
+  {
+   "id": "c103",
+   "classification": "supported",
+   "evidence": "[kf1] High blood pressure and protein in the urine -- NHS early signs",
+   "url": "https://www.nhs.uk/conditions/pre-eclampsia/",
+   "action": "kept"
+  },
+  {
+   "id": "c104",
+   "classification": "supported",
+   "evidence": "[kf2] Routine blood pressure and urine checks at antenatal appointments -- NHS routine checks",
+   "url": "https://www.nhs.uk/conditions/pre-eclampsia/",
+   "action": "kept"
+  },
+  {
+   "id": "c105",
+   "classification": "unsupported",
+   "evidence": "[kf3] Not fully understood; thought to involve the placenta's blood vessels -- Placenta supported; blood-vessel wording not retrieved",
+   "url": "https://www.nhs.uk/conditions/pre-eclampsia/",
+   "action": "edited",
+   "newSentence": "see final entity"
+  },
+  {
+   "id": "c106",
+   "classification": "supported",
+   "evidence": "[kf4] Monitoring and blood pressure medicine; birth is the only way to stop  -- NHS: delivery only cure; monitoring and BP medicine",
+   "url": "https://www.nhs.uk/conditions/pre-eclampsia/treatment/",
+   "action": "edited",
+   "newSentence": "see final entity"
+  },
+  {
+   "id": "c107",
+   "classification": "supported",
+   "evidence": "[kf5] Usually goes away after the birth -- Usually improves after birth",
+   "url": "https://www.nhs.uk/conditions/pre-eclampsia/",
+   "action": "kept"
+  },
+  {
+   "id": "c108",
+   "classification": "supported",
+   "evidence": "[kf6] Maternity unit or NHS 111 for symptoms; 999 in an emergency -- NHS: maternity unit/111; 999 for life-threatening emergency",
+   "url": "https://www.nhs.uk/pregnancy/common-symptoms/pregnancy-symptoms-you-need-to-get-help-for/",
+   "action": "edited",
+   "newSentence": "see final entity"
+  }
+ ],
+ "notes": "Retrieval was thin: NHS.uk pages returned only as blended summaries; NICE NG133 recommendations page and RCOG leaflet content not returned, so NICE attributions removed and NG133 reference dropped. 'Call 999' now rests on the NHS pregnancy-symptoms page (life-threatening emergency), not a trust page. Lupus, triplets, 'rare' for eclampsia, 'most cases mild', extra scans, dipstick detail, aspirin bleeding/midwife-contact lines, 24-hour seizure-medicine timing, GP 6-8 week check and clinicaltrials BP sentence were removed or reworded. First-pass 'no cure' contradicts NHS 'only way to cure is to deliver the baby' (classified wrong). Some retrieved statements (older age, twins, autoimmune, tablets/drip, magnesium sulfate, aspirin eligibility) rest on NHS trust documents or research summaries rather than nhs.uk pages and are attributed as such in the text. Human reviewer should check live NHS pages for risk-factor list and the urgent-advice box wording. Final entity validated with check_batch.py (ok)."
+}
