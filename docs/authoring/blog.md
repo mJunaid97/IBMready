@@ -22,7 +22,8 @@ sections, built from the retrieved text of at least two publishers and tied to t
 | `headline` | optional longer on-page headline (15 to 120 characters). |
 | `kind` | `news` or `guide`. |
 | `published` | news: the date of the announcement (`YYYY-MM-DD`); guide: today. `updated`: the date you checked the sources (today). |
-| `summary` | 60 to 400 characters: the whole story in one or two sentences. It becomes the lead paragraph and the meta description, so make it answer the question or state the news. |
+| `summary` | 70 to 400 characters: the whole story in one or two sentences. It becomes the lead paragraph and the search snippet, so make it answer the question or state the news. The snippet is the summary when it is 70 to 160 characters, else its leading whole sentences that fit; the checker fails a summary whose first sentence cannot be shortened to 70 to 160 characters. |
+| `metaDescription` | optional: your own search snippet, 70 to 160 characters, starting with a capital letter (never a digit); add it when the summary is long. |
 | `keyPoints` | 2 to 6 sentences (15 to 260 characters each): the takeaways. |
 | `body` | list of `{"heading", "body"}`; body is plain paragraphs separated by a blank line; no markdown. News: 2 to 3 sections ("What was announced", "Why it matters" or "What it means", optionally "What happens next" only if the announcement says). |
 | `source` | **news only, required**: `{"publisher": "NICE", "title": "exact title of the announcement page", "url": "https://...", "published": "YYYY-MM-DD"}`. It is shown as the "Source" box and added as the first reference. |

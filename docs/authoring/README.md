@@ -77,3 +77,16 @@ Plan the searches first (a table: item, queries, domains). Do the first pass for
 then assemble `fragment.json`, validate, write `BATCH-REPORT.md`, commit and push. If the budget runs short, finish fewer items
 properly instead of many badly: a smaller verified batch is worth more than a larger unverified one. Push early (after the first
 items validate) and again at the end.
+
+## Lessons from the first batches (8 conditions, 8 medicines, 7 news briefs)
+
+* **Use the budget.** Eight 1,500-word condition or medicine pages took about 140 of 200 searches (48 first pass, 92 second pass). The news session stopped at 51 searches with 7 briefs;
+  that left most of its budget unused. Plan the whole session, and keep going until about 190 searches are spent or the topic list is done.
+* **The second pass removes a lot.** It classed 12 to 49 of every 100 first-pass sentences as unsupported or wrong (for example fatty liver 49, influenza 37, naproxen 22). Write the first pass
+  conservatively and from retrieved text only, so less is cut and less of the budget is spent on repairs.
+* **Search summaries blend pages.** Attribute a sentence to a URL only when that page's own excerpt carries it; say so in the ledger note otherwise. BNF pages and NICE CKS were almost never
+  returned, so plan around NHS pages, NICE guidance (NG, CG, TA), MedlinePlus, NIH institutes, CDC, WHO, UKHSA and UK charities.
+* **Ids and aliases.** A new id that equals another page's alias is a compiler error: add a `patch` for the other page that removes that alias. A medicine name that appears in
+  `content/interactions.json` as a plain substance must be reported in `BATCH-REPORT.md` (the maintainer re-points the record); do not edit that file.
+* **Titles and snippets.** A blog `name` is the page title (15 to 49 characters); its summary is the search snippet (70 to 160 characters, a complete statement that starts with a capital letter).
+* **Finish properly.** `check_batch.py` must end with `ok` on your fragment; push early (after the first items validate) and again at the end; end with a short message listing the finished items.

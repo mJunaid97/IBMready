@@ -297,6 +297,25 @@ def validate_article_block(where, art, errors):
     extra = set(art) - {"sections", "faqs", "keyFacts"}
     if extra: errors.append(f"{where}: article has unsupported keys {sorted(extra)}")
 
+def derive_meta_description(summary):
+    """The search snippet of a post: the summary when it is 70 to 160 characters, else its whole leading sentences that fit,
+    else its main clause up to the last semicolon or comma that leaves a substantive statement. None when there is none
+    (the author then writes a `metaDescription`). Mirrors metaDescription() in site/seo.js, which never cuts a sentence with an ellipsis."""
+    s = re.sub(r"\s+", " ", summary or "").strip()
+    if 70 <= len(s) <= 160: return s
+    sentences = re.findall(r"(?:[^.!?]|\.(?=\d))+[.!?]+(?=\s|$)|(?:[^.!?]|\.(?=\d))+$", s)
+    out = ""
+    for sen in sentences:
+        t = (out + " " + sen).strip()
+        if len(t) > 160: break
+        out = t
+    if len(out) >= 70: return out
+    first = sentences[0].strip() if sentences else s
+    for sep in ("; ", ", "):
+        i = first.rfind(sep, 0, 159)
+        if i >= 90: return first[:i].rstrip(" ,;") + "."
+    return None
+
 def validate_blog(eid, e, errors):
     where = f"blog/{eid}"
     if e.get("kind") not in ("news", "guide"): errors.append(f"{where}: kind must be 'news' or 'guide'")
@@ -307,6 +326,12 @@ def validate_blog(eid, e, errors):
         if not DATE_RE.match(str(e.get(f, ""))): errors.append(f"{where}: {f} must be a YYYY-MM-DD date")
     summ = e.get("summary", "")
     if not (60 <= len(summ) <= 400): errors.append(f"{where}: summary must be 60 to 400 characters (it is {len(summ)})")
+    md = e.get("metaDescription")       # the search snippet: written by the author (70 to 160 characters) or derived from the summary
+    if md is None:
+        md = derive_meta_description(summ)
+        if md is None: errors.append(f"{where}: the summary has no opening statement of 70 to 160 characters; shorten its first sentence or add a metaDescription")
+        else: e["metaDescription"] = md
+    if md is not None and not (70 <= len(md) <= 160 and not re.match(r"[a-z0-9]", md)): errors.append(f"{where}: metaDescription must be 70 to 160 characters and start with a capital letter or a quote (it is {len(md)} characters: {md[:30]!r}...)")
     kp = e.get("keyPoints") or []
     if not (2 <= len(kp) <= 6) or not all(isinstance(x, str) and 15 <= len(x) <= 260 for x in kp): errors.append(f"{where}: keyPoints must be 2 to 6 sentences of 15 to 260 characters")
     body = e.get("body")
