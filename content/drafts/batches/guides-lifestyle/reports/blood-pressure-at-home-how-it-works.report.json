@@ -1,0 +1,160 @@
+{
+  "id": "blood-pressure-at-home-how-it-works",
+  "searchesUsed": 9,
+  "counts": {
+    "supported": 6,
+    "textbook": 1,
+    "unsupported": 11,
+    "wrong": 1,
+    "unsafe": 0,
+    "unchecked": 0
+  },
+  "claims": [
+    {
+      "id": "c01",
+      "classification": "unsupported",
+      "evidence": "NHS BP test: can be checked at home with a monitor; cuff on upper arm, sit with back supported. 'Buy' not stated; caffeine/smoking advice came from local leaflets, not the NHS page.",
+      "url": "https://www.nhs.uk/tests-and-treatments/blood-pressure-test/",
+      "action": "edited",
+      "newSentence": "The NHS says blood pressure can be checked at home with a monitor, with the cuff on the upper arm and the person sitting with their back supported; local NHS leaflets also advise avoiding caffeine and smoking beforehand."
+    },
+    {
+      "id": "c02",
+      "classification": "supported",
+      "evidence": "NHS high blood pressure / BHF: usually no symptoms (BHF: in rare cases headaches, chest pain etc.); NHS Health Check says high BP often has no symptoms.",
+      "url": "https://www.nhs.uk/conditions/high-blood-pressure/",
+      "action": "kept"
+    },
+    {
+      "id": "c03",
+      "classification": "textbook",
+      "evidence": "Plain fact; consistent with NHS thresholds written as 140/90 and 135/85 (first number higher).",
+      "url": "https://www.nhs.uk/tests-and-treatments/blood-pressure-test/",
+      "action": "kept"
+    },
+    {
+      "id": "c04",
+      "classification": "supported",
+      "evidence": "Sussex ICB leaflet: wrist devices not recommended; NHS Scotland SHTG: only BIHS-validated upper arm cuff monitors should be used.",
+      "url": "https://int.sussex.ics.nhs.uk/wp-content/uploads/2022/08/BP@Home_PIL_Diary_FINAL.pdf",
+      "action": "kept"
+    },
+    {
+      "id": "c05",
+      "classification": "unsupported",
+      "evidence": "No returned text said a single high reading is usually not a cause for alarm. Essex ICB said the GP or nurse advises how often to check; no mention of 'target'.",
+      "url": "https://www.essex.icb.nhs.uk/health/prevention/live-well/cardiovascular-health/blood-pressure/bp-at-home/",
+      "action": "edited",
+      "newSentence": "A GP or nurse advises how often to check blood pressure at home."
+    },
+    {
+      "id": "c06",
+      "classification": "supported",
+      "evidence": "NHS BP test: shows whether blood pressure is healthy, high or low.",
+      "url": "https://www.nhs.uk/tests-and-treatments/blood-pressure-test/",
+      "action": "kept"
+    },
+    {
+      "id": "c07",
+      "classification": "unsupported",
+      "evidence": "High BP usually no symptoms supported. Low BP dizziness/fainting not in returned text.",
+      "url": "https://www.nhs.uk/conditions/high-blood-pressure/",
+      "action": "edited",
+      "newSentence": "High blood pressure does not usually have any symptoms."
+    },
+    {
+      "id": "c08",
+      "classification": "unsupported",
+      "evidence": "Returned text gives examples such as 140/90 and 135/85 in mmHg; the explanation of top/bottom number was not in returned text.",
+      "url": "https://www.nhs.uk/conditions/high-blood-pressure-hypertension/diagnosis/",
+      "action": "edited",
+      "newSentence": "Readings are given as two numbers, for example 140/90, measured in millimetres of mercury (mmHg)."
+    },
+    {
+      "id": "c09",
+      "classification": "unsupported",
+      "evidence": "NHS BP test: can be done at home with a monitor. 'Own device' / 'can be bought' not stated in returned text.",
+      "url": "https://www.nhs.uk/tests-and-treatments/blood-pressure-test/",
+      "action": "edited",
+      "newSentence": "The NHS says blood pressure can also be checked at home with a monitor."
+    },
+    {
+      "id": "c10",
+      "classification": "supported",
+      "evidence": "NHS England 2021: home blood pressure monitors offered to people with high blood pressure, with readings sent to the GP; later NHS England regional pages describe GP-practice loan schemes.",
+      "url": "https://www.england.nhs.uk/2021/11/nhs-offers-home-blood-pressure-checks-to-save-thousands-of-lives/",
+      "action": "kept"
+    },
+    {
+      "id": "c11",
+      "classification": "supported",
+      "evidence": "NHS diagnosis page: high is 140/90 or higher when checked by a professional, 135/85 or higher at home (NICE: home measure about 5 mmHg lower). Sentence has no numbers, so no numeric issue.",
+      "url": "https://www.nhs.uk/conditions/high-blood-pressure-hypertension/diagnosis/",
+      "action": "kept"
+    },
+    {
+      "id": "c12",
+      "classification": "unsupported",
+      "evidence": "Sussex leaflet: not recommend wrist devices, cuff snug (two fingertips). 'Automatic' and 'finger' not stated in those leaflets.",
+      "url": "https://int.sussex.ics.nhs.uk/wp-content/uploads/2022/08/BP@Home_PIL_Diary_FINAL.pdf",
+      "action": "edited",
+      "newSentence": "Local NHS guides recommend an upper arm monitor with a cuff that fits snugly, and say that wrist devices are not recommended."
+    },
+    {
+      "id": "c13",
+      "classification": "unsupported",
+      "evidence": "Returned: sit five minutes; feet flat on floor (one guide); no caffeine, smoking or exercise within 30 minutes (OUH leaflets, BP UK/BHF-type guides); eating within half an hour appears in one other guide only.",
+      "url": "https://www.ouh.nhs.uk/media/muim12bp/96864bp.pdf",
+      "action": "edited",
+      "newSentence": "Guides describe sitting quietly for about five minutes with feet flat and the back supported, and avoiding caffeine, smoking and exercise for about 30 minutes beforehand."
+    },
+    {
+      "id": "c14",
+      "classification": "unsupported",
+      "evidence": "Essex ICB: many people take two readings morning and evening for a set period; Sussex: seven days, two readings a minute apart; Blood Pressure UK: three readings. Guides differ, so 'usually' overstates.",
+      "url": "https://www.essex.icb.nhs.uk/health/prevention/live-well/cardiovascular-health/blood-pressure/bp-at-home/",
+      "action": "edited",
+      "newSentence": "Guides often suggest taking readings twice in the morning and twice in the evening for about a week, with the average worked out afterwards, although the number of readings differs between guides."
+    },
+    {
+      "id": "c15",
+      "classification": "wrong",
+      "evidence": "The OUH leaflet cited says to take blood pressure AFTER medications; another practice says avoid medication before. Sources conflict, so 'before tablets' is not safe to state. Two readings about one minute apart is supported (OUH, Sussex).",
+      "url": "https://www.ouh.nhs.uk/media/muim12bp/96864bp.pdf",
+      "action": "edited",
+      "newSentence": "Guides advise leaving about a minute between two readings, and the GP or nurse advises on timing around medicines because guides differ."
+    },
+    {
+      "id": "c16",
+      "classification": "supported",
+      "evidence": "Sussex leaflet and NHS Scotland SHTG: use a monitor validated by the British and Irish Hypertension Society.",
+      "url": "https://int.sussex.ics.nhs.uk/wp-content/uploads/2022/08/BP@Home_PIL_Diary_FINAL.pdf",
+      "action": "kept"
+    },
+    {
+      "id": "c17",
+      "classification": "unsupported",
+      "evidence": "Essex ICB says the GP or nurse advises how often to check. 'Target' not stated, and it is a local ICB page not the NHS nationally.",
+      "url": "https://www.essex.icb.nhs.uk/health/prevention/live-well/cardiovascular-health/blood-pressure/bp-at-home/",
+      "action": "edited",
+      "newSentence": "One NHS integrated care board page says the GP or nurse advises how often to check."
+    },
+    {
+      "id": "c18",
+      "classification": "unsupported",
+      "evidence": "No source returned said a single high reading is usually not a cause for alarm. Blood Pressure UK advises re-checking after five minutes if a reading is still high.",
+      "url": "https://www.bloodpressureuk.org/media/bpuk/docs/TESTING-GUIDELINES_2020_web.pdf",
+      "action": "edited",
+      "newSentence": "Blood Pressure UK advises re-checking after resting for five minutes if a reading is still high."
+    },
+    {
+      "id": "c19",
+      "classification": "unsupported",
+      "evidence": "Returned: NHS says call 999 for possible heart attack symptoms (chest pain with sweating, breathlessness); contact NHS 111 about frequent headaches, blurred vision or chest pain that comes and goes; BHF says contact the GP for symptoms. The Essex/Sussex pages were not shown to say 'very high readings need same-day advice'.",
+      "url": "https://www.nhs.uk/conditions/high-blood-pressure/",
+      "action": "edited",
+      "newSentence": "The NHS advises calling 999 for possible heart attack symptoms such as chest pain with sweating or breathlessness, and contacting NHS 111 about frequent headaches, blurred vision or chest pain that comes and goes; the British Heart Foundation advises contacting a GP about symptoms that could be caused by high blood pressure."
+    }
+  ],
+  "notes": "Home-versus-clinic statement (c11) is supported by NHS diagnosis page. Medication-timing advice conflicts between leaflets (c15) so only the one-minute gap is kept. Several original claims leaned on local trust/ICB pages (Sussex, OUH, Essex); where a national statement was not found they are attributed to 'local NHS guides' or removed. Urgency wording in c19 now names routes (999, NHS 111, GP). 9/9 searches used."
+}
