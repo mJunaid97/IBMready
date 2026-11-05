@@ -1,5 +1,15 @@
 # Changelog
 
+## v1.10.5 — 2026-11-05
+
+Found by checking v1.10.4 against the deployed pages, page by page.
+
+- Seven test pages (blood glucose, urine protein, hormone tests, pregnancy test, Holter monitor, pulse oximetry, spirometry) use the older page layout, which had no place for guideline thresholds. v1.10.4 wrote their
+  sourced threshold records and cleared the review queue, but a reader saw none of them. The layout now has a *Guideline thresholds* section with each threshold, its country and its source, and urine protein shows
+  its three ACR bands. The other five of the twelve (kidney function tests, CRP, ECG, echocardiogram, ESR) and the earlier tests already showed theirs.
+- Smoke test: the spirometry, urine protein and blood glucose pages must show their thresholds table, and urine protein its bands.
+- Evidence trail: the news-mhra batch report keeps the follow-up session's addendum (two dropped briefs, aficamten and Inqlexzo, still awaiting a date check).
+
 ## v1.10.4 — 2026-11-03
 
 Every actionable item left in the review queues is cleared, the shoulder joint is written, and the visuals that were not built before are in.

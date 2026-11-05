@@ -224,6 +224,12 @@ if (!(term.loinc && term.cat && term.kind && term.monitors && term.ld)) fail(`te
 await page.goto(detailUrl('tests', 'test.html', 'bnp'), { waitUntil: 'load' }); await rendered();
 const bands = await page.evaluate(() => ({ items: [...document.querySelectorAll('ol.band-strip .band-name')].map(n => n.textContent.trim()), tableRows: document.querySelectorAll('#results table tbody tr, section table tbody tr').length, caption: !!document.querySelector('figure.bands figcaption') }));
 if (!(bands.items.length === 3 && bands.items[0] === 'Heart failure unlikely' && bands.caption)) fail(`threshold bands on the NT-proBNP page: ${JSON.stringify(bands)}`); else ok('threshold bands: the NT-proBNP page shows its three sourced thresholds as an ordered strip');
+// the older layout of the test page shows its sourced thresholds too (blood glucose, urine protein, spirometry and four more were sourced in v1.10.4)
+for (const [id, minRows, bandItems] of [['spirometry', 5, 0], ['urine-protein', 6, 3], ['blood-glucose', 7, 0]]) {
+  await page.goto(detailUrl('tests', 'test.html', id), { waitUntil: 'load' }); await rendered();
+  const th = await page.evaluate(() => { const t = [...document.querySelectorAll('table')].find(x => /Threshold/.test(x.querySelector('thead')?.textContent || '')); return { heading: [...document.querySelectorAll('h2, h3')].some(h => /^Guideline thresholds/.test(h.textContent)), rows: t ? t.querySelectorAll('tbody tr').length : 0, bands: document.querySelectorAll('ol.band-strip .band').length }; });
+  if (!(th.heading && th.rows >= minRows && th.bands === bandItems)) fail(`thresholds on the ${id} page: ${JSON.stringify(th)} (expected a table of at least ${minRows} rows and ${bandItems} bands)`); else ok(`${id} page: ${th.rows} sourced thresholds in a table${th.bands ? ` and ${th.bands} bands` : ''}`);
+}
 // organ pages offer the 3D preview for reuse: HTML with an absolute link back to the page and the licence credit the 3D data requires
 await page.goto(detailUrl('anatomy', 'organ.html', 'heart'), { waitUntil: 'load' }); await rendered();
 const share = await page.evaluate(() => { const ta = document.querySelector('.share textarea.share-code'); return { v: ta ? ta.value : '', btn: !!document.querySelector('.share [data-copy]') }; });

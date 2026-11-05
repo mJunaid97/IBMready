@@ -175,6 +175,12 @@ export function bandsHtml(e) {
   }
   return strips.length ? strips.join('') + '<p class="small muted">Bands are in order of value and not drawn to scale. Each threshold, its country and its source are in the table below.</p>' : '';
 }
+/** The body of the "Guideline thresholds" block of a test page, for both of its layouts: the bands of each scale the test names, the table of its
+ *  sourced threshold records (with country and source) and the note that they are decision points, not reference intervals. Empty without records. */
+function thresholdsBody(e) {
+  const thr = (e.thresholds || []).map(t => [esc(t.name), esc(String(t.value)), esc(t.unit), esc(t.context), `${esc(t.jurisdiction)}${src(t.source)}`]);
+  return thr.length ? `${bandsHtml(e)}${table(['Threshold', 'Value', 'Unit', 'Applies to', 'Country · source'], thr)}<p class="small muted">Clinical decision thresholds come from the named guideline and country; they are not laboratory reference intervals, and they change when guidance changes.</p>` : '';
+}
 function pathwayHtml(steps) {
   if (!steps || !steps.length) return '';
   const node = (s) => { const l = s.link; if (!l) return `<span>${esc(s.label)}</span>`; const href = l.type === 'organs' ? link.organPage(l.id) : l.type === 'systems' ? link.systemPage(l.id) : l.type === 'terms' ? link.term(l.id) : entityLink(l.type, l.id); return `<a href="${href}">${esc(s.label)}</a>`; };
@@ -343,12 +349,12 @@ const T = {
         ${section('Why it is ordered', list(e.whyOrdered))}
         ${section('How it is done', para(e.how) + (e.preparation ? `<p><b>Preparation.</b> ${esc(e.preparation)}</p>` : ''))}
         ${section('Reading the result', kv((e.interpretation || []).map(i => [esc(i.finding), esc(i.meaning)]), ['Finding', 'Usual meaning']) + '<p class="small muted">Reference ranges vary by laboratory, method, age, sex and clinical context; a result is read against the person, not a table.</p>')}
+        ${section('Guideline thresholds', thresholdsBody(e), 'thresholds')}
         ${section('Limitations', para(e.limitations))}${extras}`;
     }
     // Full-depth test page, in the order of the specification (§16): what, why, measures, how, preparation, results, factors, cannot tell, other tests, anatomy, sources
     const q = e.quick || {};
     const compRows = (e.components || []).map(c => [`${c.biomarker ? entityA(clinical, 'biomarkers', c.biomarker) : esc(c.name)}${c.abbreviation ? ` <span class="muted small">${esc(c.abbreviation)}</span>` : ''}${c.biomarker && c.name !== nameOf(clinical, 'biomarkers', c.biomarker) ? `<div class="small muted">${esc(c.name)}</div>` : ''}`, esc(c.measures), esc(c.high || ''), esc(c.low || '')]);
-    const thr = (e.thresholds || []).map(t => [esc(t.name), esc(String(t.value)), esc(t.unit), esc(t.context), `${esc(t.jurisdiction)}${src(t.source)}`]);
     return `${facts}${quickBox([['Type', esc(q.type)], ['Sample', esc(q.sample)], ['Used for', esc(q.usedFor)], ['Measures', esc(q.measures)], ['Result', esc(e.resultType || '')]])}
       ${section('Why is it used?', list(e.whyOrdered), 'why')}
       ${section('What does it measure?', (compRows.length ? table(['Component', 'What it measures', 'A higher value may be seen in', 'A lower value may be seen in'], compRows) : kv((e.measures || []).map(m => [esc(m.item), esc(m.meaning)]), ['Measure', 'What it tells you'])) + '<p class="small muted">A high or low value can be associated with several different situations; the result is interpreted with other results, symptoms, history and clinical findings.</p>', 'measures')}
@@ -356,7 +362,7 @@ const T = {
       ${section('Do I need to prepare?', para(e.preparation), 'preparation')}
       ${section('What do the results generally mean?', kv((e.interpretation || []).map(i => [esc(i.finding), esc(i.meaning)]), ['Finding', 'What it may indicate'])
         + `<div class="callout info"><b>${esc(RANGE_POLICY[e.rangePolicy] || 'Reference range policy')}.</b> ${esc(e.rangeNote || 'Reference ranges vary by laboratory and testing method. Interpret your result using the range supplied by the laboratory that performed the test.')}</div>`
-        + (thr.length ? `<h3>Guideline thresholds</h3>${bandsHtml(e)}${table(['Threshold', 'Value', 'Unit', 'Applies to', 'Country · source'], thr)}<p class="small muted">Clinical decision thresholds come from the named guideline and country; they are not laboratory reference intervals, and they change when guidance changes.</p>` : ''), 'results')}
+        + (e.thresholds?.length ? `<h3>Guideline thresholds</h3>${thresholdsBody(e)}` : ''), 'results')}
       ${section('What can affect the result?', list(e.factors) + (e.medicinesNote ? `<p><b>Medicines.</b> ${esc(e.medicinesNote)}</p>` : ''), 'factors')}
       ${section('What can the test not tell you?', list(e.cannotTell) + para(e.limitations), 'limits')}
       ${(e.links?.related?.length || e.links?.imaging?.length) ? section('Other tests commonly used with it', inlineChips(clinical, 'tests', e.links?.related) + inlineChips(clinical, 'imaging', e.links?.imaging), 'with') : ''}${extras}`;
