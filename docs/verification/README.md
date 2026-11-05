@@ -85,6 +85,8 @@ Counts are the sessions' own, per item report; a few reports are approximate (th
 
 ## Not verified
 
+*This list was written on 1 November. Its second and third items are out of date: the last eleven organ pages are articles with a second pass (v1.10.1), and the twelve test cut-offs are sourced or reworded (v1.10.4, shown on every test page in v1.10.5). The sections below this one say what changed. The first, fourth and fifth items still stand.*
+
 * **Clinical review.** Nobody with a clinical registration has read the site. The site has a medical review policy
   (`/medical-review-policy/`) but no review under it has happened, so `lastReviewed` is never set in the schema and no page says
   "reviewed by".
@@ -120,6 +122,25 @@ Since this file was first written, v1.10.1 wrote and source-checked the last ele
 
 The page fetch tool still cannot reach the publishers from the cloud sandbox (`openstax.org`, `nhs.uk`, `ncbi.nlm.nih.gov`, `resus.org.uk` fail to resolve), so every check runs through search summaries.
 **Allowing those hosts in the environment's network settings is the single change that would let pages be checked page by page.**
+
+## Audit of the author sessions (5 November 2026)
+
+All 44 author sessions started from the maintainer session (43 content batches; news-mhra ran twice) were checked against the repository, the released data and the live site.
+
+* **Finished.** All 44 are idle. The session list still shows three as unfinished (meds-b and meds-c "blocked", conditions-a "review ready"); what they were waiting for is in the released
+  data: each of the 87 medicines has a drug class in the taxonomy, no class sits outside it, and conditions-a's eight conditions are published.
+* **Merged.** The last push to every content branch is dated 3 November, before integration, and none has pushed since. The ledgers, second-pass reports and `BATCH-REPORT.md` of every batch are in
+  `content/drafts/batches/<batch>/`; the working drafts (fragments, per-item final JSON, build scripts) stay on the batch branches, because their text is in `content/*.json`. Two fragments differ from the
+  branch copy on purpose: a placeholder reference title in `classes-b` was replaced by the real one, and a pulse-oximetry note in `thresholds-b` gained "call 999". No author session opened a pull request;
+  the eight open pull requests are Dependabot updates.
+* **Deployed.** Of the 435 items in the ledgers, 428 are in the released data under their own id, 5 under a prefixed drug-class id, and 2 news briefs were dropped on purpose; the planned conditions, medicines,
+  deepened pages, the ten drug-class pages and the shoulder article are all in the `deploy` branch's compiled data. Items the author sessions held back because the retrieved text did not support them
+  (for example poisoning, sun safety and hydration guides; HPV, sepsis and pharmacy news briefs) are listed in each `BATCH-REPORT.md` and were not added.
+* **Tested.** Per batch: `check_batch.py` (the real compiler on a scratch copy), `lint_new_content.py`, and a second pass by a separate subagent. Per release: the QA workflow (content job and smoke job) and the
+  Reference links workflow on the release commit, then the Live site check.
+* **One gap, found and fixed.** Looking at the deployed v1.10.4 pages showed that seven of the twelve test pages with sourced thresholds (blood glucose, urine protein, hormone tests, pregnancy test, Holter monitor,
+  pulse oximetry, spirometry) use the older page layout, which had no section for thresholds: the records were in the data and had cleared the review queue, but a reader saw none of them, and the urine ACR bands
+  never appeared. v1.10.5 shows them on both layouts, with smoke checks for spirometry, urine protein and blood glucose.
 
 ## Tools
 
