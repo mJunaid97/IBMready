@@ -1,0 +1,17 @@
+{
+ "type": "tests",
+ "id": "genetic-testing",
+ "verdict": "accept-with-edits",
+ "edits": [
+  {
+   "field": "how",
+   "action": "remove-sentence",
+   "match": "Direct-to-consumer kits that use a saliva sample are also sold; a worrying result from one of these is checked with an accredited laboratory and a genetic counsellor.",
+   "replacement": "Direct-to-consumer kits that use a saliva sample are also sold; a worrying result from one of these is usually discussed with a doctor or genetic counsellor, who may arrange confirmatory testing.",
+   "reason": "UNSUPPORTED: 'checked with an accredited laboratory' stated as a fixed rule is not in the cited sources; softened."
+  }
+ ],
+ "unverified_urls": [],
+ "checked_urls": [],
+ "notes": "Verdict file generated from the upstream verifier report; every match string was asserted to occur in the current record. URL checks were done in the upstream report and are not repeated here."
+}

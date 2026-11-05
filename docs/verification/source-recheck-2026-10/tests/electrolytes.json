@@ -1,0 +1,17 @@
+{
+ "type": "tests",
+ "id": "electrolytes",
+ "verdict": "accept-with-edits",
+ "edits": [
+  {
+   "field": "what",
+   "action": "remove-sentence",
+   "match": "The panel is one of the most frequently requested hospital tests and is almost always read together with kidney function.",
+   "replacement": "The panel is a commonly requested hospital test and is almost always read together with kidney function.",
+   "reason": "UNSUPPORTED: superlative 'one of the most frequently requested' not supported by the cited sources; softened to 'commonly requested'."
+  }
+ ],
+ "unverified_urls": [],
+ "checked_urls": [],
+ "notes": "Verdict file generated from the upstream verifier report; every match string was asserted to occur in the current record. URL checks were done in the upstream report and are not repeated here."
+}

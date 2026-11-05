@@ -1,0 +1,17 @@
+{
+ "type": "conditions",
+ "id": "pancreatitis",
+ "verdict": "accept-with-edits",
+ "edits": [
+  {
+   "field": "treatment",
+   "action": "remove-sentence",
+   "match": "Treatment in hospital includes fluids and nutrients given through a tube into a vein, painkillers, and antibiotics if an infection develops; most people start to improve within a week.",
+   "replacement": "Treatment in hospital includes fluids given into a vein, nutritional support, painkillers, and antibiotics if an infection develops; most people start to improve within a week.",
+   "reason": "WRONG: 'nutrients given through a tube into a vein' conflicts with the record's own statement that early enteral feeding is favoured; reworded to fluids into a vein plus nutritional support."
+  }
+ ],
+ "unverified_urls": [],
+ "checked_urls": [],
+ "notes": "Verdict file generated from the upstream verifier report; every match string was asserted to occur in the current record. URL checks were done in the upstream report and are not repeated here."
+}

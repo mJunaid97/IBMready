@@ -1,0 +1,39 @@
+{
+ "type": "procedures",
+ "id": "knee-replacement",
+ "verdict": "accept-with-edits",
+ "edits": [
+  {
+   "field": "recovery",
+   "action": "remove-sentence",
+   "match": "Most people who follow their rehabilitation programme resume nearly all normal activities within about three to six weeks, and daily life improves for the great majority.",
+   "replacement": "Daily life improves for the great majority.",
+   "reason": "WRONG: 'nearly all normal activities within three to six weeks' is not in the NHS source and conflicts with the record's own (pre-patch) timeline of walking without aids at about six weeks and driving at 6-8 weeks."
+  },
+  {
+   "field": "risks",
+   "action": "remove-sentence",
+   "match": "Stiffness needing manipulation under anaesthetic or arthroscopy, the most frequent complication; scar tissue can limit bending",
+   "replacement": "Stiffness needing manipulation under anaesthetic or arthroscopy; scar tissue can limit bending",
+   "reason": "UNSUPPORTED: superlative 'the most frequent complication' is not stated by the NHS source, which lists stiffness among several complications."
+  },
+  {
+   "field": "risks",
+   "action": "remove-sentence",
+   "match": "Loosening or wear over time; a small number never feel quite right; inflammation around the new joint in the first year occasionally requires the implant to be changed",
+   "replacement": "Loosening or wear over time; a small number never feel quite right",
+   "reason": "UNSUPPORTED: 'inflammation in the first year requiring implant change' is not in the NHS source or the pre-patch record."
+  }
+ ],
+ "unverified_urls": [
+  "https://www.nhs.uk/conditions/knee-replacement/risks/",
+  "https://medlineplus.gov/ency/patientinstructions/000375.htm",
+  "https://medlineplus.gov/kneereplacement.html",
+  "https://medlineplus.gov/ency/article/007256.htm",
+  "https://www.ncbi.nlm.nih.gov/books/NBK544983/"
+ ],
+ "checked_urls": [
+  "https://www.nhs.uk/tests-and-treatments/knee-replacement/complications/"
+ ],
+ "notes": "NHS excerpts support: blood clots (seek urgent help for chest pain/breathlessness), wound and joint infection possibly needing further surgery, vessel/nerve/ligament damage, numbness of skin usually permanent, persistent stiffness or pain, instability needing further surgery, risk higher with age/health/obesity, swelling common, warning signs of redness/fever/pus, implant lasting ~25 years on average. Deep infection 1% and 2-6 weeks of anticoagulant prophylaxis predate the patch. No protected field (medications) changed."
+}

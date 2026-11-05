@@ -1,0 +1,25 @@
+{
+ "type": "medications",
+ "id": "metoprolol",
+ "verdict": "accept-with-edits",
+ "edits": [
+  {
+   "field": "usedFor",
+   "action": "remove-sentence",
+   "match": "Propranolol for migraine prevention, tremor, anxiety symptoms and thyroid storm; metoprolol itself is among the first-line agents for migraine prevention",
+   "replacement": "Propranolol for migraine prevention, tremor, anxiety symptoms and thyroid storm; metoprolol is also used for migraine prevention",
+   "reason": "UNSAFE: 'among the first-line agents' is an overstated certainty not supported by the NHS source (metoprolol is not a licensed UK migraine preventive); softened to the supported statement that it is used for this."
+  }
+ ],
+ "unverified_urls": [
+  "https://medlineplus.gov/druginfo/meds/a682864.html",
+  "https://www.ncbi.nlm.nih.gov/books/NBK532923/"
+ ],
+ "checked_urls": [
+  "https://www.nhs.uk/medicines/metoprolol/side-effects-of-metoprolol/",
+  "https://www.nhs.uk/medicines/metoprolol/common-questions-about-metoprolol/",
+  "https://www.nhs.uk/medicines/metoprolol/about-metoprolol/",
+  "https://www.nhs.uk/medicines/beta-blockers/"
+ ],
+ "notes": "Line-by-line check. NHS excerpts support: headaches, tiredness, dizziness, nausea, cold hands/feet, slow heartbeat, breathlessness as common effects that ease with time; dizziness at start or after dose increase; alcohol caution; sexual side effects with limited evidence; long-term use safe; tell the anaesthetist; heart-failure warning signs (cough on exertion, swollen ankles, irregular heartbeat); beta-blocker cautions (asthma, uncontrolled heart failure, heart block, low blood pressure). No dose figure added; pre-patch taper instruction ('over one to two weeks') was removed by the writers and replaced with 'reduced gradually' (safer). Clonidine/digoxin/amiodarone interactions, succinate survival benefit in heart failure and modified-release handling are standard StatPearls/BNF content. No protected field changed."
+}

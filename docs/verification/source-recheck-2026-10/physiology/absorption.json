@@ -1,0 +1,17 @@
+{
+ "type": "physiology",
+ "id": "absorption",
+ "verdict": "accept-with-edits",
+ "edits": [
+  {
+   "field": "body",
+   "action": "remove-sentence",
+   "match": "The folds, villi and microvilli give the small intestine an absorbing surface roughly six hundred times its outer surface, and a large complex meal takes about nine hours to pass through it.",
+   "replacement": "",
+   "reason": "UNSUPPORTED: new numeric claims (600-fold surface area, nine-hour transit) not in the cited sources."
+  }
+ ],
+ "unverified_urls": [],
+ "checked_urls": [],
+ "notes": "Verdict file generated from the upstream verifier report; every match string was asserted to occur in the current record. URL checks were done in the upstream report and are not repeated here."
+}

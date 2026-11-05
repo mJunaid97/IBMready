@@ -1,0 +1,17 @@
+{
+ "type": "biomarkers",
+ "id": "vitamin-d-25-oh",
+ "verdict": "accept-with-edits",
+ "edits": [
+  {
+   "field": "what",
+   "action": "remove-sentence",
+   "match": "In the UK most people make enough vitamin D in their skin from sunlight between about late March or early April and the end of September, but from October to early March the sunlight lacks the right wavelength, so the body relies on diet and stores; the NHS and the UK Health Security Agency advise everyone to consider a daily supplement through autumn and winter, and all year round for people who are rarely outdoors (frail, housebound or in care homes), who cover most of their skin outdoors or who have darker skin.",
+   "replacement": "In the UK most people make enough vitamin D in their skin from sunlight between about late March or early April and the end of September, but from October to early March the sunlight lacks the right wavelength, so the body relies on diet and stores; the NHS and Public Health England advise everyone to consider a daily supplement through autumn and winter, and all year round for people who are rarely outdoors (frail, housebound or in care homes), who cover most of their skin outdoors or who have darker skin.",
+   "reason": "WRONG: the cited supplement advice page is from Public Health England, not the UK Health Security Agency; attribution corrected."
+  }
+ ],
+ "unverified_urls": [],
+ "checked_urls": [],
+ "notes": "Verdict file generated from the upstream verifier report; every match string was asserted to occur in the current record. URL checks were done in the upstream report and are not repeated here."
+}

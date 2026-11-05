@@ -1,0 +1,25 @@
+{
+ "type": "drug-classes",
+ "id": "nsaids",
+ "verdict": "accept-with-edits",
+ "edits": [
+  {
+   "field": "cautions",
+   "action": "remove-sentence",
+   "match": "Not taken in late pregnancy; earlier in pregnancy only after discussion with a clinician, and avoided where possible when breastfeeding although only very low concentrations reach breast milk",
+   "replacement": "Not taken in late pregnancy; earlier in pregnancy only after discussion with a clinician, and a pharmacist or doctor is consulted about use when breastfeeding",
+   "reason": "WRONG: NHS states ibuprofen can be taken while breastfeeding (and is a preferred NSAID for it); 'avoided where possible' overstates the class caution."
+  }
+ ],
+ "unverified_urls": [
+  "https://www.nhs.uk/medicines/nsaids/",
+  "https://www.ncbi.nlm.nih.gov/sites/books/NBK547742/",
+  "https://www.ncbi.nlm.nih.gov/sites/books/NBK549795/",
+  "https://www.southtees.nhs.uk/resources/information-for-adult-patients-prescribed-non-steroidal-antiinflammatory-drugs-for-pain/"
+ ],
+ "checked_urls": [
+  "https://www.nhs.uk/medicines/ibuprofen-for-adults/pregnancy-breastfeeding-and-fertility-while-taking-ibuprofen/",
+  "https://sps.nhs.uk/articles/using-nsaids-during-breastfeeding/"
+ ],
+ "notes": "Pregnancy statement consistent with NHS (not usually recommended, especially later in pregnancy). COX-1/COX-2, renal afferent arteriole, prostacyclin, CABG and hypersensitivity content is standard and matches StatPearls (not retrieved). South Tees leaflet not retrieved. Protected fields unchanged."
+}
